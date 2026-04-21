@@ -715,6 +715,18 @@ async function copyFile(from, to) {
   await fs.copyFile(from, to);
 }
 
+async function copyFileIfPresent(from, to) {
+  try {
+    await fs.copyFile(from, to);
+  } catch (error) {
+    if (error?.code === 'ENOENT') {
+      console.warn(`Skipped missing asset: ${from}`);
+      return;
+    }
+    throw error;
+  }
+}
+
 async function buildIndexHtml(versionTag) {
   const template = await fs.readFile(path.join(srcDir, 'index.html'), 'utf8');
   return template
@@ -802,14 +814,14 @@ async function build() {
     copyFile(path.join(srcDir, 'app.js'), path.join(assetsDir, 'app.js')),
     copyFile(path.join(srcDir, 'graph-view.js'), path.join(assetsDir, 'graph-view.js')),
     copyFile(path.join(srcDir, 'style.css'), path.join(assetsDir, 'style.css')),
-    copyFile(path.join(srcDir, 'assets', 'yinfluence-avatar.png'), path.join(assetsDir, 'yinfluence-avatar.png')),
+    copyFileIfPresent(path.join(srcDir, 'assets', 'yinfluence-avatar.png'), path.join(assetsDir, 'yinfluence-avatar.png')),
     fs.writeFile(path.join(dataDir, 'site.json'), siteJson, 'utf8'),
     fs.writeFile(path.join(dataDir, 'graph.json'), graphJson, 'utf8'),
     fs.writeFile(path.join(docsDir, 'index.html'), indexHtml, 'utf8'),
     copyFile(path.join(srcDir, 'app.js'), path.join(docsAssetsDir, 'app.js')),
     copyFile(path.join(srcDir, 'graph-view.js'), path.join(docsAssetsDir, 'graph-view.js')),
     copyFile(path.join(srcDir, 'style.css'), path.join(docsAssetsDir, 'style.css')),
-    copyFile(path.join(srcDir, 'assets', 'yinfluence-avatar.png'), path.join(docsAssetsDir, 'yinfluence-avatar.png')),
+    copyFileIfPresent(path.join(srcDir, 'assets', 'yinfluence-avatar.png'), path.join(docsAssetsDir, 'yinfluence-avatar.png')),
     fs.writeFile(path.join(docsDataDir, 'site.json'), siteJson, 'utf8'),
     fs.writeFile(path.join(docsDataDir, 'graph.json'), graphJson, 'utf8')
   ]);
