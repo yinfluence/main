@@ -2,13 +2,13 @@
   "meta": {
     "title": "颖响力知识图谱",
     "subtitle": "节目、概念、模型、人物、主题之间的可视化连接网络",
-    "nodeCount": 435,
-    "linkCount": 785,
+    "nodeCount": 434,
+    "linkCount": 784,
     "typeCounts": {
       "model": 53,
       "episode": 123,
       "concept": 111,
-      "person": 62,
+      "person": 61,
       "theme": 86
     }
   },
@@ -179,17 +179,6 @@
       "degree": 9
     },
     {
-      "id": "episode:EP020",
-      "key": "EP020",
-      "label": "EP020",
-      "fullLabel": "EP020 · 中年女性崛起的运势真相，九紫离火运的背后危机。｜运势｜中女｜高市早苗｜郑丽文｜宗馥莉｜变化｜",
-      "type": "episode",
-      "route": "episodes/EP020",
-      "summary": "节目把“九紫离火运”当作一种社会隐喻，讨论危机时期为什么中年女性更容易被推向前台，以及这种前台位置为什么既可能带来权力，也可能带来更高暴露和更重责任。",
-      "status": "curated",
-      "degree": 9
-    },
-    {
       "id": "episode:EP037",
       "key": "EP037",
       "label": "EP037",
@@ -351,6 +340,17 @@
       "type": "episode",
       "route": "episodes/EP018",
       "summary": "本期借张雪峰复播后对文科的调整表态，反过来追问“文科到底有没有价值”。节目给出的答案不是简单替文科翻案，而是认为社会长期把理工科当作更稳妥的上升路径，其实只是工业时代的延续性想象；在 AI 持续替代计算、执行和标准化工作的背景下，真正稀缺的反而是感性判断、创造性选择和对未来趋势的超前理解。",
+      "status": "curated",
+      "degree": 8
+    },
+    {
+      "id": "episode:EP020",
+      "key": "EP020",
+      "label": "EP020",
+      "fullLabel": "EP020 · 中年女性崛起的运势真相，九紫离火运的背后危机。｜运势｜中女｜高市早苗｜郑丽文｜宗馥莉｜变化｜",
+      "type": "episode",
+      "route": "episodes/EP020",
+      "summary": "节目把“九紫离火运”当作一种社会隐喻，讨论危机时期为什么中年女性更容易被推向前台，以及这种前台位置为什么既可能带来权力，也可能带来更高暴露和更重责任。",
       "status": "curated",
       "degree": 8
     },
@@ -1554,13 +1554,13 @@
       "degree": 4
     },
     {
-      "id": "person:gao-shi-zaomiao",
-      "key": "gao-shi-zaomiao",
+      "id": "person:sanae-takaichi",
+      "key": "sanae-takaichi",
       "label": "高市早苗",
       "fullLabel": "高市早苗",
       "type": "person",
-      "route": "people/gao-shi-zaomiao",
-      "summary": "高市早苗是日本现任首相，也是近年日本保守派和安全政策讨论中最有辨识度的人物之一。",
+      "route": "people/sanae-takaichi",
+      "summary": "高市早苗是日本现任首相，也是近年日本保守派、安全政策和东亚权力重组讨论中最有辨识度的人物之一。",
       "status": null,
       "degree": 4
     },
@@ -2720,12 +2720,12 @@
       "degree": 2
     },
     {
-      "id": "person:huang-xuncai",
-      "key": "huang-xuncai",
+      "id": "person:lawrence-wong",
+      "key": "lawrence-wong",
       "label": "黄循财",
       "fullLabel": "黄循财",
       "type": "person",
-      "route": "people/huang-xuncai",
+      "route": "people/lawrence-wong",
       "summary": "黄循财是新加坡总理，也是节目讨论新加坡新阶段定位、主动中立和区域安全合作升级时的重要人物。",
       "status": null,
       "degree": 2
@@ -2797,12 +2797,12 @@
       "degree": 2
     },
     {
-      "id": "person:li-hsien-loong",
-      "key": "li-hsien-loong",
+      "id": "person:lee-hsien-loong",
+      "key": "lee-hsien-loong",
       "label": "李显龙",
       "fullLabel": "李显龙",
       "type": "person",
-      "route": "people/li-hsien-loong",
+      "route": "people/lee-hsien-loong",
       "summary": "李显龙是新加坡前总理，也是节目讨论新加坡外交姿态与制度逻辑时最常出现的关键人物。",
       "status": null,
       "degree": 2
@@ -3490,17 +3490,6 @@
       "degree": 1
     },
     {
-      "id": "person:takaichi-sanae",
-      "key": "takaichi-sanae",
-      "label": "高市早苗",
-      "fullLabel": "高市早苗",
-      "type": "person",
-      "route": "people/takaichi-sanae",
-      "summary": "高市早苗是日本现任首相，在颖响力知识库里也常被当作危机时期女性被推到前台的典型。",
-      "status": null,
-      "degree": 1
-    },
-    {
       "id": "model:individuation-three-stage",
       "key": "individuation-three-stage",
       "label": "个体化三阶段模型",
@@ -3897,12 +3886,12 @@
       "degree": 1
     },
     {
-      "id": "person:li-guangyao",
-      "key": "li-guangyao",
+      "id": "person:lee-kuan-yew",
+      "key": "lee-kuan-yew",
       "label": "李光耀",
       "fullLabel": "李光耀",
       "type": "person",
-      "route": "people/li-guangyao",
+      "route": "people/lee-kuan-yew",
       "summary": "李光耀是新加坡建国叙事与小国生存智慧的代表人物，也是节目讨论国家边界感时最重要的参照。",
       "status": null,
       "degree": 1
@@ -4293,12 +4282,12 @@
       "degree": 1
     },
     {
-      "id": "person:su-lin",
-      "key": "su-lin",
+      "id": "person:to-lam",
+      "key": "to-lam",
       "label": "苏林",
       "fullLabel": "苏林",
       "type": "person",
-      "route": "people/su-lin",
+      "route": "people/to-lam",
       "summary": "苏林是越南现任核心领导人，也是节目讨论越南重回一人时代与东南亚再度高风险化时的关键人物。",
       "status": null,
       "degree": 1
@@ -5507,7 +5496,7 @@
     },
     {
       "source": "episode:EP020",
-      "target": "person:gao-shi-zaomiao",
+      "target": "person:sanae-takaichi",
       "kind": "episode-person"
     },
     {
@@ -6097,7 +6086,7 @@
     },
     {
       "source": "episode:EP040",
-      "target": "person:gao-shi-zaomiao",
+      "target": "person:sanae-takaichi",
       "kind": "episode-person"
     },
     {
@@ -6852,7 +6841,7 @@
     },
     {
       "source": "episode:EP064",
-      "target": "person:li-hsien-loong",
+      "target": "person:lee-hsien-loong",
       "kind": "episode-person"
     },
     {
@@ -7462,7 +7451,7 @@
     },
     {
       "source": "episode:EP082",
-      "target": "person:gao-shi-zaomiao",
+      "target": "person:sanae-takaichi",
       "kind": "episode-person"
     },
     {
@@ -8067,12 +8056,12 @@
     },
     {
       "source": "episode:EP104",
-      "target": "person:huang-xuncai",
+      "target": "person:lawrence-wong",
       "kind": "episode-person"
     },
     {
       "source": "episode:EP104",
-      "target": "person:gao-shi-zaomiao",
+      "target": "person:sanae-takaichi",
       "kind": "episode-person"
     },
     {
@@ -8382,17 +8371,17 @@
     },
     {
       "source": "episode:EP116",
-      "target": "person:li-hsien-loong",
+      "target": "person:lee-hsien-loong",
       "kind": "episode-person"
     },
     {
       "source": "episode:EP116",
-      "target": "person:li-guangyao",
+      "target": "person:lee-kuan-yew",
       "kind": "episode-person"
     },
     {
       "source": "episode:EP116",
-      "target": "person:huang-xuncai",
+      "target": "person:lawrence-wong",
       "kind": "episode-person"
     },
     {
@@ -8417,7 +8406,7 @@
     },
     {
       "source": "episode:EP117",
-      "target": "person:su-lin",
+      "target": "person:to-lam",
       "kind": "episode-person"
     },
     {
@@ -8669,11 +8658,6 @@
       "source": "episode:EP099",
       "target": "model:subsidized-adoption-flywheel",
       "kind": "episode-model"
-    },
-    {
-      "source": "episode:EP020",
-      "target": "person:takaichi-sanae",
-      "kind": "episode-person"
     },
     {
       "source": "episode:EP120",

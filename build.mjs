@@ -12,6 +12,8 @@ const docsAssetsDir = path.join(docsDir, 'assets');
 const docsDataDir = path.join(docsDir, 'data');
 const srcDir = path.join(__dirname, 'src');
 const rawDir = path.resolve(__dirname, '../bilibili/raw');
+const keywordDefinitionsPath = path.join(__dirname, 'scripts/keyword-definitions.json');
+const keywordDefinitionsDir = path.join(__dirname, 'scripts/keyword-definitions.d');
 
 async function ensureDir(dir) {
   await fs.mkdir(dir, { recursive: true });
@@ -26,6 +28,29 @@ async function readJsonDir(dir) {
     values.push(JSON.parse(raw));
   }
   return values;
+}
+
+async function readKeywordDefinitions() {
+  const merged = JSON.parse(await fs.readFile(keywordDefinitionsPath, 'utf8').catch(() => '{}'));
+
+  let shardEntries = [];
+  try {
+    shardEntries = await fs.readdir(keywordDefinitionsDir, { withFileTypes: true });
+  } catch (error) {
+    if (error?.code !== 'ENOENT') throw error;
+  }
+
+  const shardFiles = shardEntries
+    .filter((entry) => entry.isFile() && entry.name.endsWith('.json'))
+    .map((entry) => entry.name)
+    .sort((a, b) => a.localeCompare(b, 'en', { numeric: true }));
+
+  for (const file of shardFiles) {
+    const shard = JSON.parse(await fs.readFile(path.join(keywordDefinitionsDir, file), 'utf8'));
+    Object.assign(merged, shard);
+  }
+
+  return merged;
 }
 
 async function buildEpisodeCatalog() {
@@ -88,12 +113,135 @@ function buildReferenceMap(items) {
   return index;
 }
 
-function makeAutoKeywordSummary(name) {
-  return `围绕${name}的节目群入口，用来串联相关案例、争议和延伸讨论。`;
+function resolveKeywordDefinitionFromCollection(keyword, refMap, type) {
+  const found = refMap.get(compactText(keyword.name));
+  if (!found) return null;
+  if (type === 'people') {
+    return {
+      summary: found.summary || `${keyword.name}是节目里反复出现的人物。`,
+      description: found.description || found.summary || ''
+    };
+  }
+  if (type === 'concepts') {
+    return {
+      summary: found.summary || `${keyword.name}是节目里反复出现的概念。`,
+      description: found.definition || found.description || found.summary || ''
+    };
+  }
+  if (type === 'models') {
+    return {
+      summary: found.summary || `${keyword.name}是节目里反复出现的模型。`,
+      description: found.definition || found.application || found.summary || ''
+    };
+  }
+  if (type === 'themes') {
+    return {
+      summary: found.summary || `${keyword.name}是节目里反复出现的主题。`,
+      description: found.description || found.summary || ''
+    };
+  }
+  return {
+    summary: found.summary || `${keyword.name}是节目里反复出现的讨论对象。`,
+    description: found.description || found.definition || found.summary || ''
+  };
 }
 
-function makeAutoKeywordDescription(name) {
-  return `${name}是从节目标签自动沉淀出来的关键词入口。这个页面用于把分散在不同节目里的相关讨论收拢到一起，方便顺着同一主题继续追踪。`;
+function trimSentence(value, max = 120) {
+  const text = String(value || '').replace(/\s+/g, ' ').trim();
+  if (text.length <= max) return text;
+  return `${text.slice(0, max - 1).trim()}…`;
+}
+
+function firstSentence(value, max = 72) {
+  const text = String(value || '').replace(/\s+/g, ' ').trim();
+  if (!text) return '';
+  const [sentence] = text.split(/[。！？]/).map((item) => item.trim()).filter(Boolean);
+  return trimSentence(sentence || text, max);
+}
+
+function keywordAnchor(keyword) {
+  const [anchor] = keyword.episodes || [];
+  if (!anchor) return null;
+
+  const focus = firstSentence(
+    String(anchor.note || '')
+      .replace(/^本期(?:从|把|围绕)?/, '')
+      .replace(/^节目(?:认为|指出|强调|提到|把)?/, '')
+      .trim(),
+    64
+  );
+
+  return {
+    id: anchor.id,
+    focus
+  };
+}
+
+function inferKeywordKind(name) {
+  const text = String(name || '').trim();
+  if (/战争|危机|事件|大选|起火|事故|改革|竞赛|之争|风波|热梗|午餐|封关|兵役|竞逐|变局/.test(text)) {
+    return 'event';
+  }
+  if (/海峡|航线|国家|地区|东南亚|欧洲|美国|日本|伊朗|俄罗斯|新加坡|马来西亚|越南|匈牙利|台湾|海南|中国/.test(text)) {
+    return 'geography';
+  }
+  if (/汽车|集团|公司|医院|大学|学校|平台|品牌|基金|电池|保险公司|白酒|黄金|白银/.test(text)) {
+    return 'entity';
+  }
+  if (/主义|逻辑|答案|平衡|归宗|故乡|基线|分层|风险|自由|时机|权威|秩序|模型|思维|修宪|政治|公平|关系|教育|家风|契约|成长|焦虑|服从|谎言/.test(text)) {
+    return 'concept';
+  }
+  return 'general';
+}
+
+function makeAutoKeywordSummary(keyword, definitions = {}, inheritMaps = {}) {
+  const defined = definitions[keyword.name];
+  if (defined?.summary) return defined.summary;
+  for (const [type, refMap] of Object.entries(inheritMaps)) {
+    const inherited = resolveKeywordDefinitionFromCollection(keyword, refMap, type);
+    if (inherited?.summary) return inherited.summary;
+  }
+  const anchor = keywordAnchor(keyword);
+  switch (inferKeywordKind(keyword.name)) {
+    case 'event':
+      return `${keyword.name}主要指围绕该事件、历史节点或现实冲突展开的讨论。`;
+    case 'geography':
+      return `${keyword.name}主要指围绕这一国家、地区或地缘节点展开的讨论。`;
+    case 'entity':
+      return `${keyword.name}主要作为具体对象关键词出现，用来承接与其直接相关的讨论。`;
+    case 'concept':
+      return `${keyword.name}主要指围绕这一判断、现象或说法展开的讨论。`;
+    default:
+      return `${keyword.name}是本期节目里单独展开的一项对象或说法。`;
+  }
+}
+
+function makeAutoKeywordDescription(keyword, definitions = {}, inheritMaps = {}) {
+  const defined = definitions[keyword.name];
+  if (defined?.description) return defined.description;
+  for (const [type, refMap] of Object.entries(inheritMaps)) {
+    const inherited = resolveKeywordDefinitionFromCollection(keyword, refMap, type);
+    if (inherited?.description) return inherited.description;
+  }
+  const refs = keyword.episodes || [];
+  const recurring = refs.length > 1 ? '当它在多期节目里反复出现时，通常也会牵连出一组相近的问题意识。' : '';
+  const anchor = keywordAnchor(keyword);
+  const anchored = anchor?.id
+    ? `在 ${anchor.id} 这期里${anchor.focus ? `，这个词更多指向${anchor.focus}` : ''}。`
+    : '';
+
+  switch (inferKeywordKind(keyword.name)) {
+    case 'event':
+      return `${keyword.name}通常不是一条孤立新闻，而是被拿来承接与该事件相关的成因、后果和延伸判断。\n\n${anchored}${recurring}`.trim();
+    case 'geography':
+      return `${keyword.name}在这里不只是地理名称，还承接与其相关的政治、经济、社会或地缘判断。\n\n${anchored}${recurring}`.trim();
+    case 'entity':
+      return `${keyword.name}在这里通常指向一个具体机构、品牌、产品或组织，也用来承接围绕它展开的现实问题和结构判断。\n\n${anchored}${recurring}`.trim();
+    case 'concept':
+      return `${keyword.name}在这里通常不是随手一提的标签，而是用来承接围绕这一概念、判断或说法展开的讨论。\n\n${anchored}${recurring}`.trim();
+    default:
+      return `${keyword.name}当前还没有形成更成熟的专题定义，但在这期节目里也不是随手一提的零散标签。\n\n${anchored}${recurring}`.trim();
+  }
 }
 
 const KEYWORD_PARENT_RULES = {
@@ -102,7 +250,7 @@ const KEYWORD_PARENT_RULES = {
   'singapore': ['黄循财', '李显龙', '维文', '组屋'],
   'new-energy-vehicles': ['新能源', '电车', '小米汽车', '雷军', '比亚迪', '王传福', '理想汽车', '李想', '锂电池', '换电'],
   'wahaha': ['宗馥莉', '宗庆后', '哇哈哈'],
-  'xiaomi-auto': ['杂粮汽车', '杂粮', '雷军'],
+  'xiaomi-qiche': ['杂粮汽车', '杂粮', '雷军'],
   'xibei': ['贾国龙', '华与华', '罗永浩', '预制菜'],
   'usa': ['特朗普'],
   'iran': ['哈梅内伊', '玛莎·阿米尼'],
@@ -121,9 +269,10 @@ function buildKeywordCatalog(episodes) {
         keywords.set(key, {
           id: tag,
           name: tag,
-          summary: makeAutoKeywordSummary(tag),
-          description: makeAutoKeywordDescription(tag),
+          summary: '',
+          description: '',
           aliases: [],
+          relatedKeywords: [],
           episodes: []
         });
       }
@@ -138,10 +287,28 @@ function buildKeywordCatalog(episodes) {
 
   for (const keyword of keywords.values()) {
     keyword.episodes.sort((a, b) => a.id.localeCompare(b.id));
-    keyword.summary = makeAutoKeywordSummary(keyword.name);
   }
 
   return [...keywords.values()];
+}
+
+function buildPeopleKeywordCatalog(people) {
+  return people.map((person) => ({
+    id: person.name,
+    name: person.name,
+    entryType: 'person',
+    sourcePersonId: person.id,
+    summary: person.summary || `${person.name}是节目里反复出现的人物。`,
+    description: person.description || person.summary || '',
+    englishName: person.englishName || '',
+    aliases: uniqueList([
+      person.id,
+      person.englishName,
+      ...(person.aliases || [])
+    ]),
+    relatedKeywords: [],
+    episodes: [...(person.episodes || [])].sort((a, b) => a.id.localeCompare(b.id))
+  }));
 }
 
 function mergeKeywordCatalog(autoKeywords, curatedKeywords) {
@@ -149,10 +316,12 @@ function mergeKeywordCatalog(autoKeywords, curatedKeywords) {
   const merged = [];
 
   for (const keyword of curatedKeywords) {
-    const matchKeys = uniqueList([keyword.name, ...(keyword.aliases || [])]).map(canonicalText);
-    const matchedAutos = matchKeys
+    const directMatch = autoByKey.get(canonicalText(keyword.name));
+    const aliasMatches = uniqueList(keyword.aliases || [])
+      .map(canonicalText)
       .map((key) => autoByKey.get(key))
-      .filter(Boolean);
+      .filter((candidate) => candidate && candidate.entryType !== 'person');
+    const matchedAutos = uniqueList([directMatch, ...aliasMatches]).filter(Boolean);
     const base = matchedAutos[0];
 
     for (const matched of matchedAutos) {
@@ -179,6 +348,10 @@ function mergeKeywordCatalog(autoKeywords, curatedKeywords) {
       aliases: uniqueList([
         ...matchedAutos.flatMap((entry) => entry.aliases || []),
         ...(keyword.aliases || [])
+      ]),
+      relatedKeywords: uniqueList([
+        ...matchedAutos.flatMap((entry) => entry.relatedKeywords || []),
+        ...(keyword.relatedKeywords || [])
       ]),
       episodes: [...episodeMap.values()].sort((a, b) => a.id.localeCompare(b.id))
     });
@@ -220,6 +393,121 @@ function applyKeywordParents(keywords) {
       .map((parentId) => byId.get(parentId) || byName.get(canonicalText(parentId)))
       .filter(Boolean)
       .map((parent) => parent.id);
+  }
+
+  return keywords;
+}
+
+function resolveKeywordReference(refMap, value) {
+  return refMap.get(canonicalText(value)) || null;
+}
+
+function applyKeywordRelations(keywords) {
+  const refMap = new Map();
+  const childMap = new Map();
+  const manualRelationMap = new Map();
+  const episodeIdMap = new Map();
+
+  for (const keyword of keywords) {
+    for (const ref of uniqueList([keyword.id, keyword.name, ...(keyword.aliases || [])])) {
+      const key = canonicalText(ref);
+      if (key && !refMap.has(key)) {
+        refMap.set(key, keyword);
+      }
+    }
+    episodeIdMap.set(
+      keyword.id,
+      new Set((keyword.episodes || []).map((entry) => entry.id).filter(Boolean))
+    );
+  }
+
+  for (const keyword of keywords) {
+    for (const relatedValue of keyword.relatedKeywords || []) {
+      const target = resolveKeywordReference(refMap, relatedValue);
+      if (!target || target.id === keyword.id) continue;
+      if (!manualRelationMap.has(keyword.id)) manualRelationMap.set(keyword.id, new Set());
+      if (!manualRelationMap.has(target.id)) manualRelationMap.set(target.id, new Set());
+      manualRelationMap.get(keyword.id).add(target.id);
+      manualRelationMap.get(target.id).add(keyword.id);
+    }
+  }
+
+  for (const keyword of keywords) {
+    for (const parentId of keyword.parents || []) {
+      if (!childMap.has(parentId)) childMap.set(parentId, []);
+      childMap.get(parentId).push(keyword.id);
+    }
+  }
+
+  for (const keyword of keywords) {
+    const relatedScores = new Map();
+    const keywordPool = uniqueList([keyword.name, ...(keyword.aliases || [])])
+      .map(compactText)
+      .filter((value) => value.length >= 2);
+    const keywordEpisodes = episodeIdMap.get(keyword.id) || new Set();
+
+    const addRelatedScore = (targetId, score) => {
+      if (!targetId || targetId === keyword.id) return;
+      relatedScores.set(targetId, Math.max(relatedScores.get(targetId) || 0, score));
+    };
+
+    for (const parentId of keyword.parents || []) {
+      addRelatedScore(parentId, 90);
+    }
+
+    for (const childId of childMap.get(keyword.id) || []) {
+      addRelatedScore(childId, 90);
+    }
+
+    for (const relatedId of manualRelationMap.get(keyword.id) || []) {
+      addRelatedScore(relatedId, 100);
+    }
+
+    for (const other of keywords) {
+      if (other.id === keyword.id) continue;
+
+      const otherPool = uniqueList([other.name, ...(other.aliases || [])])
+        .map(compactText)
+        .filter((value) => value.length >= 2);
+      const otherEpisodes = episodeIdMap.get(other.id) || new Set();
+
+      const lexicalMatch = keywordPool.some((left) => otherPool.some((right) => (
+        left === right ||
+        (left.length >= 2 && right.length >= 2 && (left.includes(right) || right.includes(left)))
+      )));
+      let overlapCount = 0;
+      for (const episodeId of keywordEpisodes) {
+        if (otherEpisodes.has(episodeId)) overlapCount += 1;
+      }
+      const unionCount = new Set([...keywordEpisodes, ...otherEpisodes]).size || 1;
+      const jaccard = overlapCount / unionCount;
+
+      if (lexicalMatch) {
+        addRelatedScore(other.id, 70);
+      }
+
+      if (overlapCount >= 2) {
+        addRelatedScore(other.id, 50 + overlapCount * 8 + jaccard * 20);
+      } else if (overlapCount >= 1 && jaccard >= 0.34) {
+        addRelatedScore(other.id, 42 + jaccard * 20);
+      }
+
+      if (keyword.entryType === 'person' && overlapCount >= 1 && jaccard >= 0.2) {
+        addRelatedScore(other.id, 38 + jaccard * 18);
+      }
+
+      if (other.entryType === 'person' && overlapCount >= 1 && jaccard >= 0.2) {
+        addRelatedScore(other.id, 38 + jaccard * 18);
+      }
+    }
+
+    keyword.relatedKeywords = [...relatedScores.entries()]
+      .sort((a, b) => b[1] - a[1] || a[0].localeCompare(b[0], 'en'))
+      .slice(0, 12)
+      .map(([id]) => resolveKeywordReference(refMap, id))
+      .filter(Boolean)
+      .map((entry) => entry.id)
+      .filter((id, index, list) => list.indexOf(id) === index);
   }
 
   return keywords;
@@ -432,21 +720,41 @@ async function buildIndexHtml(versionTag) {
   return template
     .replace('__BUILD_VERSION_VALUE__', String(versionTag))
     .replace('./assets/style.css', `./assets/style.css?v=${versionTag}`)
-    .replace('./assets/app.js', `./assets/app.js?v=${versionTag}`);
+    .replace('./assets/app.js', `./assets/app.js?v=${versionTag}`)
+    .replace('./assets/yinfluence-avatar.png', `./assets/yinfluence-avatar.png?v=${versionTag}`);
 }
 
 async function build() {
-  const [episodes, concepts, models, people, themes, keywords, rawCatalog] = await Promise.all([
+  const [episodes, concepts, models, people, themes, keywords, rawCatalog, keywordDefinitions] = await Promise.all([
     readJsonDir(path.join(contentDir, 'episodes')),
     readJsonDir(path.join(contentDir, 'concepts')),
     readJsonDir(path.join(contentDir, 'models')),
     readJsonDir(path.join(contentDir, 'people')),
     readJsonDir(path.join(contentDir, 'themes')),
     readJsonDir(path.join(contentDir, 'keywords')),
-    buildEpisodeCatalog()
+    buildEpisodeCatalog(),
+    readKeywordDefinitions()
   ]);
+  const inheritMaps = {
+    people: buildReferenceMap(people),
+    concepts: buildReferenceMap(concepts),
+    models: buildReferenceMap(models),
+    themes: buildReferenceMap(themes)
+  };
   const mergedEpisodes = mergeEpisodeCatalog(rawCatalog, episodes);
-  const mergedKeywords = applyKeywordParents(mergeKeywordCatalog(buildKeywordCatalog(mergedEpisodes), keywords));
+  const peopleKeywords = buildPeopleKeywordCatalog(people);
+  const mergedKeywords = applyKeywordRelations(
+    applyKeywordParents(
+      mergeKeywordCatalog(
+        mergeKeywordCatalog(buildKeywordCatalog(mergedEpisodes), peopleKeywords),
+        keywords
+      ).map((keyword) => ({
+        ...keyword,
+        summary: keywordDefinitions[keyword.name]?.summary || keyword.summary || makeAutoKeywordSummary(keyword, keywordDefinitions, inheritMaps),
+        description: keywordDefinitions[keyword.name]?.description || keyword.description || makeAutoKeywordDescription(keyword, keywordDefinitions, inheritMaps)
+      }))
+    )
+  );
   const graph = buildGraphData({
     episodes: mergedEpisodes,
     concepts,
@@ -494,12 +802,14 @@ async function build() {
     copyFile(path.join(srcDir, 'app.js'), path.join(assetsDir, 'app.js')),
     copyFile(path.join(srcDir, 'graph-view.js'), path.join(assetsDir, 'graph-view.js')),
     copyFile(path.join(srcDir, 'style.css'), path.join(assetsDir, 'style.css')),
+    copyFile(path.join(srcDir, 'assets', 'yinfluence-avatar.png'), path.join(assetsDir, 'yinfluence-avatar.png')),
     fs.writeFile(path.join(dataDir, 'site.json'), siteJson, 'utf8'),
     fs.writeFile(path.join(dataDir, 'graph.json'), graphJson, 'utf8'),
     fs.writeFile(path.join(docsDir, 'index.html'), indexHtml, 'utf8'),
     copyFile(path.join(srcDir, 'app.js'), path.join(docsAssetsDir, 'app.js')),
     copyFile(path.join(srcDir, 'graph-view.js'), path.join(docsAssetsDir, 'graph-view.js')),
     copyFile(path.join(srcDir, 'style.css'), path.join(docsAssetsDir, 'style.css')),
+    copyFile(path.join(srcDir, 'assets', 'yinfluence-avatar.png'), path.join(docsAssetsDir, 'yinfluence-avatar.png')),
     fs.writeFile(path.join(docsDataDir, 'site.json'), siteJson, 'utf8'),
     fs.writeFile(path.join(docsDataDir, 'graph.json'), graphJson, 'utf8')
   ]);
