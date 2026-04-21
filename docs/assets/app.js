@@ -9,7 +9,7 @@ const sidebarClose = document.getElementById('sidebar-close');
 
 let site = null;
 let graphData = null;
-let searchKeyword = '';
+let homeKnowledgeQuery = '';
 let sidebarKeywordQuery = '';
 let keywordIndexQuery = '';
 let episodeIndexQuery = '';
@@ -629,6 +629,52 @@ function getSidebarKeywordMatches() {
     .slice(0, 8);
 }
 
+function getKnowledgeSearchMatches(query) {
+  const trimmedQuery = String(query || '').trim();
+  const normalizedQuery = trimmedQuery.toLowerCase();
+  const keywords = (site?.keywords || []);
+  const keywordMatches = (!trimmedQuery ? keywords.slice(0, 3) : keywords
+    .filter((keyword) => {
+      const haystack = `${keyword.name} ${keyword.summary || ''} ${(keyword.aliases || []).join(' ')}`.toLowerCase();
+      return haystack.includes(normalizedQuery);
+    })
+    .slice(0, 8))
+    .map((keyword) => ({
+      type: 'keyword',
+      id: keyword.id,
+      name: keyword.name,
+      badge: '关键词'
+    }));
+
+  if (!trimmedQuery) return keywordMatches;
+
+  const episodes = (site?.episodes || [])
+    .filter((episode) => episodeMatchesQuery(episode, trimmedQuery))
+    .sort((a, b) => episodeNumberFromId(b.id) - episodeNumberFromId(a.id))
+    .slice(0, 8)
+    .map((episode) => ({
+      type: 'episode',
+      id: episode.id,
+      name: `${episode.id}｜${episode.title}`,
+      badge: '节目'
+    }));
+
+  const concepts = getSidebarReferenceMatches('concept', site?.concepts || [], trimmedQuery, '概念');
+  const models = getSidebarReferenceMatches('model', site?.models || [], trimmedQuery, '模型');
+  const people = getSidebarReferenceMatches('person', site?.people || [], trimmedQuery, '人物');
+  const themes = getSidebarReferenceMatches('theme', site?.themes || [], trimmedQuery, '主题');
+
+  const exactEpisodeId = normalizeEpisodeIdQuery(trimmedQuery);
+  if (exactEpisodeId) {
+    const exact = episodes.find((item) => item.id === exactEpisodeId);
+    if (exact) {
+      return [exact, ...keywordMatches, ...concepts, ...models, ...people, ...themes, ...episodes.filter((item) => item.id !== exactEpisodeId)].slice(0, 10);
+    }
+  }
+
+  return [...keywordMatches, ...concepts, ...models, ...people, ...themes, ...episodes].slice(0, 10);
+}
+
 function getSidebarReferenceMatches(type, collection = [], query, badge) {
   if (!query) return [];
   const normalizedQuery = query.trim().toLowerCase();
@@ -656,68 +702,55 @@ function getSidebarReferenceMatches(type, collection = [], query, badge) {
 }
 
 function getSidebarSearchMatches() {
-  const query = sidebarKeywordQuery.trim();
-  const keywords = getSidebarKeywordMatches().map((keyword) => ({
-    type: 'keyword',
-    id: keyword.id,
-    name: keyword.name,
-    badge: '关键词'
-  }));
+  return getKnowledgeSearchMatches(sidebarKeywordQuery);
+}
 
-  if (!query) return keywords;
+function routeForSearchMatch(match) {
+  return match.type === 'episode' ? routeTo(`episodes/${match.id}`)
+    : match.type === 'keyword' ? routeTo(`keywords/${match.id}`)
+    : match.type === 'concept' ? routeTo(`concepts/${match.id}`)
+    : match.type === 'model' ? routeTo(`models/${match.id}`)
+    : match.type === 'person' ? routeTo(`people/${match.id}`)
+    : routeTo(`themes/${match.id}`);
+}
 
-  const episodes = (site?.episodes || [])
-    .filter((episode) => episodeMatchesQuery(episode, query))
-    .sort((a, b) => episodeNumberFromId(b.id) - episodeNumberFromId(a.id))
-    .slice(0, 8)
-    .map((episode) => ({
-      type: 'episode',
-      id: episode.id,
-      name: `${episode.id}｜${episode.title}`,
-      badge: '节目'
-    }));
+function openFirstSearchMatch(query) {
+  const [firstMatch] = getKnowledgeSearchMatches(query);
+  if (!firstMatch) return;
+  window.location.hash = routeForSearchMatch(firstMatch);
+}
 
-  const concepts = getSidebarReferenceMatches('concept', site?.concepts || [], query, '概念');
-  const models = getSidebarReferenceMatches('model', site?.models || [], query, '模型');
-  const people = getSidebarReferenceMatches('person', site?.people || [], query, '人物');
-  const themes = getSidebarReferenceMatches('theme', site?.themes || [], query, '主题');
+function renderKnowledgeSuggestions({ containerId, titleId, query, emptyMessage, idleTitle = '推荐关键词' }) {
+  const container = document.getElementById(containerId);
+  const heading = document.getElementById(titleId);
+  if (!container || !site) return;
 
-  const exactEpisodeId = normalizeEpisodeIdQuery(query);
-  if (exactEpisodeId) {
-    const exact = episodes.find((item) => item.id === exactEpisodeId);
-    if (exact) {
-      return [exact, ...keywords, ...concepts, ...models, ...people, ...themes, ...episodes.filter((item) => item.id !== exactEpisodeId)].slice(0, 10);
-    }
+  const matches = getKnowledgeSearchMatches(query);
+  if (heading) {
+    heading.textContent = String(query || '').trim() ? '匹配结果' : idleTitle;
   }
 
-  return [...keywords, ...concepts, ...models, ...people, ...themes, ...episodes].slice(0, 10);
+  if (!matches.length) {
+    container.innerHTML = `<div class="sidebar-empty">${escapeHtml(emptyMessage)}</div>`;
+    return;
+  }
+
+  container.innerHTML = matches.map((match) => `
+    <a class="sidebar-suggestion search-suggestion" href="${routeForSearchMatch(match)}">
+      <span>${escapeHtml(match.name)}</span>
+      <span class="count-badge">${escapeHtml(match.badge)}</span>
+    </a>
+  `).join('');
 }
 
 function renderSidebarKeywordSuggestions() {
-  const container = document.getElementById('keyword-suggestions');
-  const heading = document.getElementById('keyword-suggestions-title');
-  if (!container || !site) return;
-  const matches = getSidebarSearchMatches();
-  if (heading) {
-    heading.textContent = sidebarKeywordQuery.trim() ? '匹配结果' : '推荐关键词';
-  }
-  if (!matches.length) {
-    container.innerHTML = `<div class="sidebar-empty">没有匹配的关键词、节目或知识条目</div>`;
-    return;
-  }
-  container.innerHTML = matches.map((keyword) => `
-    <a class="sidebar-suggestion" href="${
-      keyword.type === 'episode' ? routeTo(`episodes/${keyword.id}`)
-        : keyword.type === 'keyword' ? routeTo(`keywords/${keyword.id}`)
-        : keyword.type === 'concept' ? routeTo(`concepts/${keyword.id}`)
-        : keyword.type === 'model' ? routeTo(`models/${keyword.id}`)
-        : keyword.type === 'person' ? routeTo(`people/${keyword.id}`)
-        : routeTo(`themes/${keyword.id}`)
-    }">
-      <span>${escapeHtml(keyword.name)}</span>
-      <span class="count-badge">${escapeHtml(keyword.badge)}</span>
-    </a>
-  `).join('');
+  renderKnowledgeSuggestions({
+    containerId: 'keyword-suggestions',
+    titleId: 'keyword-suggestions-title',
+    query: sidebarKeywordQuery,
+    emptyMessage: '没有匹配的关键词、节目或知识条目',
+    idleTitle: '推荐关键词'
+  });
 }
 
 function renderSidebar() {
@@ -803,11 +836,7 @@ function scrollToSection(id) {
 
 function renderHome(focusSectionId = '') {
   const curatedEpisodes = site.episodes.filter((episode) => episode.curated);
-  const filteredEpisodes = site.episodes.filter((episode) => {
-    if (!searchKeyword) return true;
-    const haystack = `${episode.id} ${episode.title} ${episode.summary || ''}`.toLowerCase();
-    return haystack.includes(searchKeyword.toLowerCase());
-  });
+  const featuredEpisodes = site.episodes;
 
   app.innerHTML = `
     <section class="hero">
@@ -836,11 +865,16 @@ function renderHome(focusSectionId = '') {
           <div class="stat-label">思想模型</div>
         </a>
       </div>
-      <div class="search-box">
-        <input id="search-input" type="text" placeholder="搜索节目编号、标题或摘要">
+      <div class="search-box home-search-box">
+        <div class="search-row">
+          <input id="search-input" type="text" placeholder="搜索知识库：节目、概念、模型、人物、主题，如 EP019 / 特朗普 / 安全阀治理">
+          <button id="search-submit" class="search-submit" type="button">搜索</button>
+        </div>
+        <p id="home-search-title" class="search-subtitle">推荐关键词</p>
+        <div id="home-search-results" class="search-results"></div>
       </div>
       <div class="hero-actions">
-        <a class="hero-action primary" href="#/graph">打开知识图谱</a>
+        <a class="hero-action" href="#/graph">打开知识图谱</a>
         <a class="hero-action" href="#/episodes">先看节目索引</a>
       </div>
     </section>
@@ -930,7 +964,7 @@ function renderHome(focusSectionId = '') {
         <p class="section-note">从 raw 自动扫出的节目目录，已整理节目会优先显示结构化内容。</p>
       </div>
       <div class="grid cards-3">
-        ${filteredEpisodes.slice(0, 3).map((episode) => `
+        ${featuredEpisodes.slice(0, 3).map((episode) => `
           <a class="card" href="${routeTo(`episodes/${episode.id}`)}">
             <p class="card-kicker">${escapeHtml(episode.id)} ${episode.curated ? '· 已整理' : '· 待整理'}</p>
             <h3>${escapeHtml(episode.title)}</h3>
@@ -944,10 +978,32 @@ function renderHome(focusSectionId = '') {
   `;
 
   const searchInput = document.getElementById('search-input');
-  searchInput.value = searchKeyword;
+  const searchSubmit = document.getElementById('search-submit');
+  searchInput.value = homeKnowledgeQuery;
   searchInput.addEventListener('input', (event) => {
-    searchKeyword = event.target.value;
-    renderHome();
+    homeKnowledgeQuery = event.target.value;
+    renderKnowledgeSuggestions({
+      containerId: 'home-search-results',
+      titleId: 'home-search-title',
+      query: homeKnowledgeQuery,
+      emptyMessage: '没有匹配的节目、概念、模型、人物或主题',
+      idleTitle: '推荐关键词'
+    });
+  });
+  searchInput.addEventListener('keydown', (event) => {
+    if (event.key !== 'Enter') return;
+    event.preventDefault();
+    openFirstSearchMatch(homeKnowledgeQuery);
+  });
+  searchSubmit.addEventListener('click', () => {
+    openFirstSearchMatch(homeKnowledgeQuery);
+  });
+  renderKnowledgeSuggestions({
+    containerId: 'home-search-results',
+    titleId: 'home-search-title',
+    query: homeKnowledgeQuery,
+    emptyMessage: '没有匹配的节目、概念、模型、人物或主题',
+    idleTitle: '推荐关键词'
   });
 
   scrollToSection(focusSectionId);
