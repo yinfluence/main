@@ -5,8 +5,11 @@ import { fileURLToPath } from 'url';
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const contentDir = path.join(__dirname, 'content');
 const distDir = path.join(__dirname, 'dist');
+const docsDir = path.join(__dirname, 'docs');
 const assetsDir = path.join(distDir, 'assets');
 const dataDir = path.join(distDir, 'data');
+const docsAssetsDir = path.join(docsDir, 'assets');
+const docsDataDir = path.join(docsDir, 'data');
 const srcDir = path.join(__dirname, 'src');
 const rawDir = path.resolve(__dirname, '../bilibili/raw');
 
@@ -26,7 +29,14 @@ async function readJsonDir(dir) {
 }
 
 async function buildEpisodeCatalog() {
-  const entries = await fs.readdir(rawDir, { withFileTypes: true });
+  let entries = [];
+  try {
+    entries = await fs.readdir(rawDir, { withFileTypes: true });
+  } catch (error) {
+    if (error?.code !== 'ENOENT') throw error;
+    return [];
+  }
+
   const episodes = new Map();
 
   for (const entry of entries) {
@@ -55,8 +65,27 @@ function canonicalText(value) {
   return String(value || '').trim().toLowerCase();
 }
 
+function compactText(value) {
+  return canonicalText(value).replace(/[\s·•・／/\\()（）\-—_]+/g, '');
+}
+
 function uniqueList(values = []) {
   return [...new Set(values.filter(Boolean))];
+}
+
+function buildReferenceMap(items) {
+  const index = new Map();
+
+  for (const item of items) {
+    for (const alias of uniqueList([item.id, item.name, ...(item.aliases || [])])) {
+      const key = compactText(alias);
+      if (key && !index.has(key)) {
+        index.set(key, item);
+      }
+    }
+  }
+
+  return index;
 }
 
 function makeAutoKeywordSummary(name) {
@@ -211,6 +240,189 @@ function mergeEpisodeCatalog(catalog, curatedEpisodes) {
   return [...byId.values()].sort((a, b) => a.id.localeCompare(b.id));
 }
 
+function buildGraphData({ episodes, concepts, models, people, themes }) {
+  const routePrefix = {
+    episode: 'episodes',
+    concept: 'concepts',
+    model: 'models',
+    person: 'people',
+    theme: 'themes'
+  };
+  const graphNodes = new Map();
+  const graphLinks = new Map();
+  const degreeMap = new Map();
+  const peopleByRef = buildReferenceMap(people);
+  const themesByRef = buildReferenceMap(themes);
+
+  function makeNodeId(type, key) {
+    return `${type}:${key}`;
+  }
+
+  function registerNode(type, item, options = {}) {
+    const graphId = makeNodeId(type, item.id);
+    graphNodes.set(graphId, {
+      id: graphId,
+      key: item.id,
+      label: options.label || item.name || item.title || item.id,
+      fullLabel: options.fullLabel || item.title || item.name || item.id,
+      type,
+      route: `${routePrefix[type]}/${item.id}`,
+      summary: options.summary || item.summary || item.definition || '',
+      status: options.status || null,
+      degree: 0
+    });
+  }
+
+  function registerLink(sourceId, targetId, kind) {
+    if (!graphNodes.has(sourceId) || !graphNodes.has(targetId) || sourceId === targetId) return;
+    const [left, right] = [sourceId, targetId].sort();
+    const linkId = `${left}|${right}|${kind}`;
+    if (graphLinks.has(linkId)) return;
+    graphLinks.set(linkId, {
+      source: sourceId,
+      target: targetId,
+      kind
+    });
+  }
+
+  function bumpDegree(nodeId) {
+    degreeMap.set(nodeId, (degreeMap.get(nodeId) || 0) + 1);
+  }
+
+  function resolveEpisodeNode(episodeId) {
+    return graphNodes.get(makeNodeId('episode', episodeId));
+  }
+
+  function resolveNodeByType(type, key) {
+    return graphNodes.get(makeNodeId(type, key));
+  }
+
+  for (const episode of episodes) {
+    registerNode('episode', episode, {
+      label: episode.id,
+      fullLabel: `${episode.id} · ${episode.title}`,
+      summary: episode.summary,
+      status: episode.status || (episode.curated ? 'curated' : 'draft')
+    });
+  }
+
+  for (const concept of concepts) {
+    registerNode('concept', concept, { summary: concept.summary });
+  }
+
+  for (const model of models) {
+    registerNode('model', model, { summary: model.summary });
+  }
+
+  for (const person of people) {
+    registerNode('person', person, { summary: person.summary });
+  }
+
+  for (const theme of themes) {
+    registerNode('theme', theme, { summary: theme.summary });
+  }
+
+  for (const episode of episodes) {
+    const episodeNodeId = makeNodeId('episode', episode.id);
+
+    for (const conceptId of episode.concepts || []) {
+      registerLink(episodeNodeId, makeNodeId('concept', conceptId), 'episode-concept');
+    }
+
+    for (const modelId of episode.models || []) {
+      registerLink(episodeNodeId, makeNodeId('model', modelId), 'episode-model');
+    }
+
+    for (const personName of episode.people || []) {
+      const person = peopleByRef.get(compactText(personName));
+      if (person) {
+        registerLink(episodeNodeId, makeNodeId('person', person.id), 'episode-person');
+      }
+    }
+
+    for (const themeName of episode.themes || []) {
+      const theme = themesByRef.get(compactText(themeName));
+      if (theme) {
+        registerLink(episodeNodeId, makeNodeId('theme', theme.id), 'episode-theme');
+      }
+    }
+  }
+
+  for (const concept of concepts) {
+    for (const episodeRef of concept.episodes || []) {
+      const episodeNode = resolveEpisodeNode(episodeRef.id);
+      const conceptNode = resolveNodeByType('concept', concept.id);
+      if (episodeNode && conceptNode) {
+        registerLink(episodeNode.id, conceptNode.id, 'episode-concept');
+      }
+    }
+  }
+
+  for (const model of models) {
+    for (const episodeRef of model.episodes || []) {
+      const episodeNode = resolveEpisodeNode(episodeRef.id);
+      const modelNode = resolveNodeByType('model', model.id);
+      if (episodeNode && modelNode) {
+        registerLink(episodeNode.id, modelNode.id, 'episode-model');
+      }
+    }
+  }
+
+  for (const person of people) {
+    for (const episodeRef of person.episodes || []) {
+      const episodeNode = resolveEpisodeNode(episodeRef.id);
+      const personNode = resolveNodeByType('person', person.id);
+      if (episodeNode && personNode) {
+        registerLink(episodeNode.id, personNode.id, 'episode-person');
+      }
+    }
+  }
+
+  for (const theme of themes) {
+    for (const episodeRef of theme.episodes || []) {
+      const episodeNode = resolveEpisodeNode(episodeRef.id);
+      const themeNode = resolveNodeByType('theme', theme.id);
+      if (episodeNode && themeNode) {
+        registerLink(episodeNode.id, themeNode.id, 'episode-theme');
+      }
+    }
+  }
+
+  for (const link of graphLinks.values()) {
+    bumpDegree(link.source);
+    bumpDegree(link.target);
+  }
+
+  const nodes = [...graphNodes.values()]
+    .map((node) => ({
+      ...node,
+      degree: degreeMap.get(node.id) || 0
+    }))
+    .sort((a, b) => {
+      const degreeDiff = b.degree - a.degree;
+      if (degreeDiff) return degreeDiff;
+      return a.label.localeCompare(b.label, 'zh-Hans-CN');
+    });
+
+  const links = [...graphLinks.values()];
+  const typeCounts = nodes.reduce((counts, node) => {
+    counts[node.type] = (counts[node.type] || 0) + 1;
+    return counts;
+  }, {});
+
+  return {
+    meta: {
+      title: '颖响力知识图谱',
+      subtitle: '节目、概念、模型、人物、主题之间的可视化连接网络',
+      nodeCount: nodes.length,
+      linkCount: links.length,
+      typeCounts
+    },
+    nodes,
+    links
+  };
+}
+
 async function copyFile(from, to) {
   await fs.copyFile(from, to);
 }
@@ -218,6 +430,7 @@ async function copyFile(from, to) {
 async function buildIndexHtml(versionTag) {
   const template = await fs.readFile(path.join(srcDir, 'index.html'), 'utf8');
   return template
+    .replace('__BUILD_VERSION_VALUE__', String(versionTag))
     .replace('./assets/style.css', `./assets/style.css?v=${versionTag}`)
     .replace('./assets/app.js', `./assets/app.js?v=${versionTag}`);
 }
@@ -234,6 +447,13 @@ async function build() {
   ]);
   const mergedEpisodes = mergeEpisodeCatalog(rawCatalog, episodes);
   const mergedKeywords = applyKeywordParents(mergeKeywordCatalog(buildKeywordCatalog(mergedEpisodes), keywords));
+  const graph = buildGraphData({
+    episodes: mergedEpisodes,
+    concepts,
+    models,
+    people,
+    themes
+  });
   const site = {
     meta: {
       title: '颖响力知识库',
@@ -258,16 +478,30 @@ async function build() {
     keywords: mergedKeywords
   };
 
-  await ensureDir(assetsDir);
-  await ensureDir(dataDir);
+  await Promise.all([
+    ensureDir(assetsDir),
+    ensureDir(dataDir),
+    ensureDir(docsAssetsDir),
+    ensureDir(docsDataDir)
+  ]);
   const assetVersion = Date.now();
   const indexHtml = await buildIndexHtml(assetVersion);
+  const siteJson = JSON.stringify(site, null, 2);
+  const graphJson = JSON.stringify(graph, null, 2);
 
   await Promise.all([
     fs.writeFile(path.join(distDir, 'index.html'), indexHtml, 'utf8'),
     copyFile(path.join(srcDir, 'app.js'), path.join(assetsDir, 'app.js')),
+    copyFile(path.join(srcDir, 'graph-view.js'), path.join(assetsDir, 'graph-view.js')),
     copyFile(path.join(srcDir, 'style.css'), path.join(assetsDir, 'style.css')),
-    fs.writeFile(path.join(dataDir, 'site.json'), JSON.stringify(site, null, 2), 'utf8')
+    fs.writeFile(path.join(dataDir, 'site.json'), siteJson, 'utf8'),
+    fs.writeFile(path.join(dataDir, 'graph.json'), graphJson, 'utf8'),
+    fs.writeFile(path.join(docsDir, 'index.html'), indexHtml, 'utf8'),
+    copyFile(path.join(srcDir, 'app.js'), path.join(docsAssetsDir, 'app.js')),
+    copyFile(path.join(srcDir, 'graph-view.js'), path.join(docsAssetsDir, 'graph-view.js')),
+    copyFile(path.join(srcDir, 'style.css'), path.join(docsAssetsDir, 'style.css')),
+    fs.writeFile(path.join(docsDataDir, 'site.json'), siteJson, 'utf8'),
+    fs.writeFile(path.join(docsDataDir, 'graph.json'), graphJson, 'utf8')
   ]);
 
   console.log(`Built ${site.meta.title}`);
@@ -279,6 +513,8 @@ async function build() {
   console.log(`People: ${site.stats.people}`);
   console.log(`Themes: ${site.stats.themes}`);
   console.log(`Keywords: ${site.stats.keywords}`);
+  console.log(`Graph nodes: ${graph.meta.nodeCount}`);
+  console.log(`Graph links: ${graph.meta.linkCount}`);
 }
 
 build().catch((error) => {
