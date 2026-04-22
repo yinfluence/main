@@ -1592,16 +1592,33 @@ function classifyReferenceItem(type, item) {
     { name: '人成长与社会', pattern: /创伤|个体化|梦想|人机|学习|教育|边界|共振|善意/ }
   ];
 
+  const keywordRules = [
+    { name: '国家与地缘', pattern: /美国|日本|新加坡|伊朗|俄罗斯|欧洲|东亚|东南亚|中东|台海|南海|制裁|战争|外交|地缘|小国|海峡|航线|门罗/ },
+    { name: '房地产与金融', pattern: /房|地产|楼市|房价|地价|债|财政|资产|资本|金融|税|票据|信托|断供|清算|银行|养老金|保险|美元|黄金/ },
+    { name: '科技与产业', pattern: /AI|人工智能|新能源|电车|电池|汽车|芯片|科技|研发|制造|算法|模型|创新|机器人|算力|云|电商/ },
+    { name: '品牌与公司', pattern: /品牌|公司|企业|顾问|创始人|平台|连锁|商业|产品|供应链|营销|带货|主播|零售/ },
+    { name: '教育与学术', pattern: /教育|学校|考试|大学|学术|教授|院士|课堂|学生|举报|课程/ },
+    { name: '文化与媒体', pattern: /文化|文明|语言|电影|文艺|选美|模因|春晚|体育|超级碗|流量|影视|历史叙事/ },
+    { name: '家庭与社会', pattern: /家庭|婚恋|代际|亲密关系|中产|断亲|审美|养老|孩子|故乡|社交|体面|尊严/ },
+    { name: '制度与治理', pattern: /治理|秩序|规则|权威|共同体|组织|信任|协商|制度|合法性|平台治理|官僚/ }
+  ];
+
   const personOverrideKey = item.sourcePersonId || item.id;
   if (type === 'people' && peopleCategoryOverrides[personOverrideKey]) {
     return peopleCategoryOverrides[personOverrideKey];
+  }
+
+  if (type === 'keywords' && isPersonKeyword(item)) {
+    return '人物';
   }
 
   const rules = type === 'people'
     ? peopleRules
     : type === 'models'
       ? modelRules
-      : generalRules;
+      : type === 'keywords'
+        ? keywordRules
+        : generalRules;
   const matched = rules.find((rule) => rule.pattern.test(text));
   return matched ? matched.name : '其他';
 }
@@ -2372,6 +2389,28 @@ function renderKeywordIndex() {
   const tailKeywords = sortedKeywords.filter((keyword) => keywordCount(keyword) === 1);
   const visibleKeywords = sortedKeywords.filter((keyword) => keywordCount(keyword) >= 2);
   const visibleMatches = query ? matches.filter((keyword) => keywordCount(keyword) >= 2) : [];
+  const keywordCategoryOrder = [
+    '人物',
+    '国家与地缘',
+    '房地产与金融',
+    '科技与产业',
+    '品牌与公司',
+    '教育与学术',
+    '文化与媒体',
+    '家庭与社会',
+    '制度与治理',
+    '其他'
+  ];
+  const groupedKeywords = new Map(keywordCategoryOrder.map((name) => [name, []]));
+  visibleKeywords.forEach((keyword) => {
+    const category = classifyReferenceItem('keywords', keyword);
+    if (!groupedKeywords.has(category)) groupedKeywords.set(category, []);
+    groupedKeywords.get(category).push(keyword);
+  });
+  const keywordSections = [...groupedKeywords.entries()]
+    .filter(([, items]) => items.length)
+    .map(([category, items], index) => renderCategorizedReferenceSection(category, items, 'keywords', 'summary', index === 0, 'keywords'))
+    .join('');
 
   app.innerHTML = `
     <section class="detail">
@@ -2387,8 +2426,8 @@ function renderKeywordIndex() {
             <input id="keyword-index-search" type="text" placeholder="搜索关键词，如 房价 / 西贝 / 小米汽车">
           </div>
           <div class="keyword-stats">
-            <span class="chip">核心专题 ${coreKeywords.length}</span>
-            <span class="chip">中频关键词 ${midKeywords.length}</span>
+            <span class="chip">分类浏览 ${keywordSections ? [...groupedKeywords.entries()].filter(([, items]) => items.length).length : 0}</span>
+            <span class="chip">人物 ${groupedKeywords.get('人物')?.length || 0}</span>
             <span class="chip">当前显示 ${visibleKeywords.length}</span>
             <span class="chip">单次关键词暂不显示 ${tailKeywords.length}</span>
           </div>
@@ -2416,15 +2455,7 @@ function renderKeywordIndex() {
               ` : (!visibleMatches.length ? '<div class="empty-state">没有匹配到关键词或节目。</div>' : '<div class="empty-state">没有匹配到节目。</div>')}
             </section>
           </div>
-        ` : `
-          ${renderKeywordGroup('核心专题（3 期及以上）', coreKeywords, {
-            open: true,
-            note: '这些关键词已经形成较明显的节目群，适合作为优先浏览的入口。'
-          })}
-          ${renderKeywordGroup('中频关键词（2 期）', midKeywords, {
-            note: '这些关键词已经跨过单集，开始出现专题串联。'
-          })}
-        `}
+        ` : keywordSections}
       </section>
     </section>
   `;
