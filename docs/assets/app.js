@@ -797,6 +797,30 @@ function chipList(items = []) {
   return `<div class="chip-row">${items.map((item) => `<span class="chip">${escapeHtml(item)}</span>`).join('')}</div>`;
 }
 
+function graphLinkedChipList(items = []) {
+  if (!items.length) return '';
+  const chipMap = {
+    [`节目 ${site.stats.episodes}`]: '#/episodes',
+    [`概念 ${site.stats.concepts}`]: '#/concepts',
+    [`模型 ${site.stats.models}`]: '#/models',
+    [`人物 ${site.stats.people}`]: '#/people',
+    [`主题 ${site.stats.themes}`]: '#/themes',
+    '点击节点看近邻': '#/graph',
+    '双击节点开详情': '#/graph',
+    '滚轮缩放': '#/graph'
+  };
+  return `
+    <div class="chip-row">
+      ${items.map((item) => {
+        const href = chipMap[item];
+        return href
+          ? `<a class="chip" href="${href}">${escapeHtml(item)}</a>`
+          : `<span class="chip">${escapeHtml(item)}</span>`;
+      }).join('')}
+    </div>
+  `;
+}
+
 function keywordCount(keyword) {
   return keyword.episodes?.length || 0;
 }
@@ -2012,22 +2036,26 @@ function renderHome(focusSectionId = '') {
     {
       href: '#/graph',
       value: graphStatValue(),
-      label: '图谱节点'
+      label: '图谱节点',
+      tone: 'graph'
     },
     {
       href: '#/episodes',
       value: site.stats.episodes,
-      label: '节目索引'
+      label: '节目索引',
+      tone: 'episodes'
     },
     {
       href: '#/concepts',
       value: site.stats.concepts,
-      label: '概念卡片'
+      label: '概念卡片',
+      tone: 'concepts'
     },
     {
       href: '#/models',
       value: site.stats.models,
-      label: '思想模型'
+      label: '思想模型',
+      tone: 'models'
     }
   ];
   const visibleStatCards = isMobile
@@ -2045,7 +2073,7 @@ function renderHome(focusSectionId = '') {
       ${visibleStatCards.length ? `
         <div class="stats">
           ${visibleStatCards.map((item) => `
-            <a class="stat-card" href="${item.href}">
+            <a class="stat-card" href="${item.href}" data-stat-tone="${item.tone}">
               <div class="stat-value">${item.value}</div>
               <div class="stat-label">${item.label}</div>
             </a>
@@ -2078,7 +2106,6 @@ function renderHome(focusSectionId = '') {
         <h2 class="section-title">节目索引</h2>
         <a class="section-note" href="#/episodes">查看全部节目</a>
       </div>
-      <p class="section-note">首页优先展示最新节目，完整目录请进入节目索引页查看。</p>
       <div class="grid cards-3">
         ${featuredEpisodes.slice(0, 3).map((episode) => `
           <article class="card" data-episode-href="${routeTo(`episodes/${episode.id}`)}">
@@ -2130,28 +2157,28 @@ function renderHome(focusSectionId = '') {
         <a class="section-note" href="#/graph">进入图谱视图</a>
       </div>
       <div class="grid cards-2">
-        <a class="card graph-preview-card" href="#/graph">
+        <article class="card graph-preview-card" data-card-href="#/graph">
           <p class="card-kicker">Graph View · ${graphData?.meta?.linkCount || 0} 条连接</p>
-          <h3>从节目跳到概念，再跳到人物与主题</h3>
+          <a class="card-primary-link" href="#/graph">
+            <h3>从节目跳到概念，再跳到人物与主题</h3>
+          </a>
           <p>这张图把五类核心节点放进同一个可视化网络里，适合先看结构密度，再回到单条目做细读。</p>
-          <div class="meta-row">
-            <span class="chip">节目 ${site.stats.episodes}</span>
-            <span class="chip">概念 ${site.stats.concepts}</span>
-            <span class="chip">模型 ${site.stats.models}</span>
-            <span class="chip">人物 ${site.stats.people}</span>
-            <span class="chip">主题 ${site.stats.themes}</span>
-          </div>
-        </a>
-        <div class="card">
+          ${graphLinkedChipList([
+            `节目 ${site.stats.episodes}`,
+            `概念 ${site.stats.concepts}`,
+            `模型 ${site.stats.models}`,
+            `人物 ${site.stats.people}`,
+            `主题 ${site.stats.themes}`
+          ])}
+        </article>
+        <article class="card" data-card-href="#/graph">
           <p class="card-kicker">How To Read</p>
-          <h3>先找高连接节点，再顺着局部关系钻进去</h3>
+          <a class="card-primary-link" href="#/graph">
+            <h3>先找高连接节点，再顺着局部关系钻进去</h3>
+          </a>
           <p>图谱适合回答两个问题：哪些主题经常和哪些节目一起出现，以及某个人物或模型究竟被放在什么语境里讲。</p>
-          <div class="meta-row">
-            <span class="chip">点击节点看近邻</span>
-            <span class="chip">双击节点开详情</span>
-            <span class="chip">滚轮缩放</span>
-          </div>
-        </div>
+          ${graphLinkedChipList(['点击节点看近邻', '双击节点开详情', '滚轮缩放'])}
+        </article>
       </div>
     </section>
   `;
@@ -2197,6 +2224,14 @@ function renderHome(focusSectionId = '') {
     card.addEventListener('click', (event) => {
       if (event.target.closest('a, button, input, textarea, select, summary')) return;
       const href = card.dataset.episodeHref;
+      if (!href) return;
+      window.location.hash = href;
+    });
+  });
+  app.querySelectorAll('.card[data-card-href]').forEach((card) => {
+    card.addEventListener('click', (event) => {
+      if (event.target.closest('a, button, input, textarea, select, summary')) return;
+      const href = card.dataset.cardHref;
       if (!href) return;
       window.location.hash = href;
     });
