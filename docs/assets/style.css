@@ -1956,7 +1956,7 @@ body.sidebar-collapsed .detail {
     top: auto;
     left: auto;
     right: 10px;
-    bottom: 108px;
+    bottom: 116px;
     width: 38px;
     height: 38px;
     border: 1px solid rgba(169, 120, 31, 0.22);
@@ -2208,7 +2208,7 @@ body.sidebar-collapsed .detail {
 
   .menu-button {
     right: 8px;
-    bottom: 100px;
+    bottom: 108px;
     width: 38px;
     height: 38px;
   }

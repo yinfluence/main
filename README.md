@@ -13,6 +13,19 @@ npm run build
 npm run serve
 ```
 
+后台启动：
+
+```bash
+npm run serve:bg
+```
+
+常用管理命令：
+
+```bash
+npm run serve:status
+npm run serve:stop
+```
+
 发布方式：
 
 - GitHub Pages 发布源使用 `main` 分支下的 `docs/` 目录。
