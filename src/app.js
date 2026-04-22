@@ -157,6 +157,21 @@ function syncFloatingActionsByScroll(currentScrollY) {
 }
 
 function getProgressSections() {
+  const explicitSections = [...app.querySelectorAll('[data-progress-section="true"]')].filter((section) => {
+    if (!(section instanceof HTMLElement)) return false;
+    const rect = section.getBoundingClientRect();
+    return rect.height > 0;
+  });
+
+  if (explicitSections.length) {
+    const headerSections = [...app.querySelectorAll('.hero, .detail-header')].filter((section) => {
+      if (!(section instanceof HTMLElement)) return false;
+      const rect = section.getBoundingClientRect();
+      return rect.height > 0;
+    });
+    return [...headerSections, ...explicitSections];
+  }
+
   return [...app.querySelectorAll(PROGRESS_SECTION_SELECTOR)].filter((section) => {
     if (!(section instanceof HTMLElement)) return false;
     const rect = section.getBoundingClientRect();
@@ -167,6 +182,10 @@ function getProgressSections() {
 function getSectionProgressLabel(section) {
   if (!(section instanceof HTMLElement)) return '';
   if (section.classList.contains('hero')) return '首页';
+  const explicitLabel = section.dataset.progressLabel?.trim();
+  if (explicitLabel) {
+    return explicitLabel.length > 8 ? `${explicitLabel.slice(0, 8)}…` : explicitLabel;
+  }
   const selectorPriority = ['.detail-title', '.section-title', 'h1', 'h2', 'h3', '.search-subtitle', '.detail-eyebrow'];
   const genericEnglishLabels = new Set(['keywords', 'keyword node', 'mental model', 'concept card', 'theme node']);
   const candidates = selectorPriority.flatMap((selector) => (
@@ -1594,7 +1613,7 @@ function renderCategorizedReferenceSection(title, items, type, descriptionKey = 
   const remainingItems = items.slice(3);
 
   return `
-    <details class="accordion-item keyword-group"${open ? ' open' : ''}>
+    <details class="accordion-item keyword-group" data-progress-section="true" data-progress-label="${escapeHtml(title)}"${open ? ' open' : ''}>
       <summary class="accordion-summary">
         <span>${escapeHtml(title)}</span>
         <span class="keyword-group-count">${items.length}</span>
@@ -1692,7 +1711,7 @@ function renderKeywordGroup(title, keywords, options = {}) {
   if (!keywords.length) return '';
 
   return `
-    <details class="accordion-item keyword-group"${open ? ' open' : ''}>
+    <details class="accordion-item keyword-group" data-progress-section="true" data-progress-label="${escapeHtml(title)}"${open ? ' open' : ''}>
       <summary class="accordion-summary">
         <span>${escapeHtml(title)}</span>
         <span class="keyword-group-count">${keywords.length}</span>
