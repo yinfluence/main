@@ -195,6 +195,7 @@ input {
     0 14px 24px rgba(20, 26, 34, 0.08),
     inset 0 1px 0 rgba(255,255,255,0.92);
   color: rgba(142, 105, 50, 0.76);
+  font-weight: 700;
   transform-origin: right center;
   transition: transform 0.22s ease, opacity 0.22s ease, background 0.22s ease, color 0.22s ease, box-shadow 0.22s ease;
 }
@@ -204,6 +205,7 @@ input {
   min-height: 28px;
   font-size: 12px;
   opacity: 0.86;
+  font-weight: 760;
   transform: scale(0.82);
 }
 
@@ -231,6 +233,7 @@ input {
   text-overflow: ellipsis;
   white-space: nowrap;
   letter-spacing: 0.06em;
+  font-weight: inherit;
 }
 
 body.section-progress-fast .page > * {
