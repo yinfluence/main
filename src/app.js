@@ -1378,7 +1378,7 @@ function renderKeywordList(keywords = []) {
             <h3>${escapeHtml(keyword.name)}</h3>
             <span class="keyword-count-badge">${keywordCount(keyword)} 期</span>
           </div>
-          <p>${escapeHtml(keyword.summary)}</p>
+          <p>${renderLinkedEpisodeText(keyword.summary)}</p>
           <div class="meta-row">
             ${keywordTypeBadge(keyword)}
             ${(keyword.aliases || []).slice(0, 2).map((alias) => `<span class="chip">${escapeHtml(alias)}</span>`).join('')}
@@ -1402,7 +1402,7 @@ function renderNodeList(items = [], type, descriptionKey = 'summary', routeType 
             <h3>${escapeHtml(item.name || item.title || item.id)}</h3>
             <span class="keyword-count-badge">${referenceCount(item)} 次引用</span>
           </div>
-          <p>${escapeHtml(item[descriptionKey] || item.summary || item.definition || item.description || '')}</p>
+          <p>${renderLinkedEpisodeText(item[descriptionKey] || item.summary || item.definition || item.description || '')}</p>
         </a>
       `).join('')}
     </div>
@@ -1482,7 +1482,7 @@ function renderReferenceIndex(config) {
         <a class="back-link" href="#/">← 返回首页</a>
         <p class="detail-eyebrow">${escapeHtml(eyebrow)}</p>
         <h1 class="detail-title">${escapeHtml(title)}</h1>
-        <p class="detail-summary">${escapeHtml(summary)}</p>
+        <p class="detail-summary">${renderLinkedEpisodeText(summary)}</p>
       </div>
       <section class="detail-section">
         <div class="keyword-toolbar">
@@ -1673,7 +1673,7 @@ function renderCategorizedReferenceIndex(config) {
         <a class="back-link" href="#/">← 返回首页</a>
         <p class="detail-eyebrow">${escapeHtml(eyebrow)}</p>
         <h1 class="detail-title">${escapeHtml(title)}</h1>
-        <p class="detail-summary">${escapeHtml(summary)}</p>
+        <p class="detail-summary">${renderLinkedEpisodeText(summary)}</p>
       </div>
       <section class="detail-section">
         <div class="keyword-stats">
@@ -2626,8 +2626,8 @@ function renderHighlightCards(items = []) {
       ${items.map((item) => `
         <a class="list-item" href="${routeTo(`episodes/${item.id}`)}">
           <h3>${escapeHtml(item.id)}｜${escapeHtml(displayEpisodeTitle(item.title))}</h3>
-          <p>${escapeHtml(item.note || item.summary || '待补充')}</p>
-          ${item.summary && item.summary !== item.note ? `<p class="subtle">${escapeHtml(item.summary)}</p>` : ''}
+          <p>${renderLinkedEpisodeText(item.note || item.summary || '待补充')}</p>
+          ${item.summary && item.summary !== item.note ? `<p class="subtle">${renderLinkedEpisodeText(item.summary)}</p>` : ''}
           ${item.mechanism ? `<p class="subtle">机制线：${escapeHtml(item.mechanism)}</p>` : ''}
         </a>
       `).join('')}
@@ -2715,7 +2715,7 @@ function renderConceptDetail(id) {
         ${renderDetailBackRow('#/concepts', '概念')}
         <p class="detail-eyebrow">Concept Card</p>
         <h1 class="detail-title">${escapeHtml(concept.name)}</h1>
-        <p class="detail-summary">${escapeHtml(concept.summary)}</p>
+        <p class="detail-summary">${renderLinkedEpisodeText(concept.summary)}</p>
       </div>
       <section class="detail-section">
         <h2>定义与展开</h2>
@@ -2773,7 +2773,7 @@ function renderModelDetail(id) {
         ${renderDetailBackRow('#/models', '模型')}
         <p class="detail-eyebrow">Mental Model</p>
         <h1 class="detail-title">${escapeHtml(model.name)}</h1>
-        <p class="detail-summary">${escapeHtml(model.summary)}</p>
+        <p class="detail-summary">${renderLinkedEpisodeText(model.summary)}</p>
       </div>
       <section class="detail-section">
         <h2>机制定义</h2>
@@ -2845,7 +2845,7 @@ function renderThemeDetail(id) {
         ${renderDetailBackRow('#/themes', '主题')}
         <p class="detail-eyebrow">Theme Node</p>
         <h1 class="detail-title">${escapeHtml(theme.name)}</h1>
-        <p class="detail-summary">${escapeHtml(theme.summary)}</p>
+        <p class="detail-summary">${renderLinkedEpisodeText(theme.summary)}</p>
       </div>
       <section class="detail-section">
         <h2>主题说明</h2>
@@ -2894,7 +2894,7 @@ function renderKeywordDetail(id) {
         ${renderDetailBackRow('#/keywords', '关键词')}
         <p class="detail-eyebrow">${escapeHtml(keyword.englishName || 'Keyword Node')}</p>
         <h1 class="detail-title">${escapeHtml(keyword.name)}</h1>
-        <p class="detail-summary">${escapeHtml(keyword.summary)}</p>
+        <p class="detail-summary">${renderLinkedEpisodeText(keyword.summary)}</p>
         ${isPersonKeyword(keyword) ? '<div class="meta-row"><span class="chip">人物关键词</span></div>' : ''}
       </div>
       <section class="detail-section">
