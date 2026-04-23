@@ -59,6 +59,8 @@ html {
   scroll-behavior: smooth;
   scroll-padding-top: 20px;
   scrollbar-gutter: stable;
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
 }
 
 body.sidebar-open {
@@ -1845,8 +1847,7 @@ a.section-note:focus-visible {
 }
 
 .home-episode-mobile-transition-strip {
-  display: grid;
-  grid-template-columns: repeat(2, minmax(100%, 100%));
+  display: flex;
   width: 200%;
   will-change: transform;
 }
@@ -1856,6 +1857,8 @@ a.section-note:focus-visible {
 }
 
 .home-episode-mobile-transition-pane {
+  flex: 0 0 50%;
+  width: 50%;
   min-width: 0;
 }
 

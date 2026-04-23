@@ -2531,7 +2531,7 @@ function renderHomeEpisodeMobileTransitionMarkup(outgoingEpisode, incomingEpisod
   const orderedEpisodes = direction > 0
     ? [outgoingEpisode, incomingEpisode]
     : [incomingEpisode, outgoingEpisode];
-  const initialShift = direction > 0 ? '0%' : '-100%';
+  const initialShift = direction > 0 ? '0%' : '-50%';
 
   return `
     <div class="home-episode-mobile-toolbar" aria-hidden="true">
@@ -2745,7 +2745,7 @@ function renderHomeEpisodeCarousel({ direction = 0 } = {}) {
       window.requestAnimationFrame(() => {
         mobileStrip.classList.add('is-animating');
         mobileStrip.style.transform = direction > 0
-          ? 'translate3d(-100%, 0, 0)'
+          ? 'translate3d(-50%, 0, 0)'
           : 'translate3d(0, 0, 0)';
       });
     });
