@@ -1574,6 +1574,25 @@ a.section-note:focus-visible {
   touch-action: pan-y;
 }
 
+.home-episode-mobile-toolbar {
+  display: none;
+}
+
+.home-episode-carousel-track.is-mobile-single {
+  overflow: hidden;
+  touch-action: pan-y;
+}
+
+.home-episode-mobile-single {
+  transform: translate3d(var(--home-episode-drag-offset, 0px), 0, 0);
+  transition: transform 0.28s cubic-bezier(0.22, 1, 0.36, 1);
+  will-change: transform;
+}
+
+.home-episode-carousel-track.is-dragging .home-episode-mobile-single {
+  transition: none;
+}
+
 .home-episode-mobile-strip {
   display: flex;
   gap: var(--home-episode-preview-gap);
@@ -2416,6 +2435,19 @@ article.card:hover {
 .card .meta-row {
   margin-top: auto;
   padding-top: 14px;
+}
+
+.home-episode-card-actions {
+  margin-top: 14px;
+  display: flex;
+}
+
+.home-episode-open-link {
+  min-height: 42px;
+  padding: 0 18px;
+  border-radius: 14px;
+  justify-content: center;
+  font-weight: 650;
 }
 
 .graph-preview-card,
@@ -3973,13 +4005,35 @@ body.page-episode-index #episode-index-results .list-item:active h3 {
       linear-gradient(180deg, rgba(252, 249, 244, 0.98), rgba(246, 240, 232, 0.94));
   }
 
-  body.page-home .section.split > div:first-child .list-item {
-    background: linear-gradient(180deg, rgba(255,255,255,0.92), rgba(247, 242, 236, 0.92));
-  }
+body.page-home .section.split > div:first-child .list-item {
+  background: linear-gradient(180deg, rgba(255,255,255,0.92), rgba(247, 242, 236, 0.92));
+}
 
-  body.page-home .section.split > div:last-child .list-item {
-    background: linear-gradient(180deg, rgba(255,255,255,0.92), rgba(247, 242, 236, 0.92));
-  }
+body.page-home .section.split > div:last-child .list-item {
+  background: linear-gradient(180deg, rgba(255,255,255,0.92), rgba(247, 242, 236, 0.92));
+}
+
+body.page-home .section.split > div .list-item:hover,
+body.page-home .section.split > div .list-item:focus-visible,
+body.page-home .section.split > div .list-item:active {
+  background: linear-gradient(180deg, rgba(42, 53, 70, 0.98), rgba(21, 29, 40, 0.96)) !important;
+  border-color: rgba(233, 209, 172, 0.24) !important;
+  box-shadow:
+    0 20px 32px rgba(20, 26, 34, 0.16),
+    inset 0 1px 0 rgba(255,255,255,0.08);
+}
+
+body.page-home .section.split > div .list-item:hover h3,
+body.page-home .section.split > div .list-item:focus-visible h3,
+body.page-home .section.split > div .list-item:active h3 {
+  color: #f8f4ec !important;
+}
+
+body.page-home .section.split > div .list-item:hover p,
+body.page-home .section.split > div .list-item:focus-visible p,
+body.page-home .section.split > div .list-item:active p {
+  color: rgba(244, 236, 223, 0.84) !important;
+}
 
   body.page-home .floating-actions-menu .menu-button,
   body.page-home .floating-home,
@@ -3993,23 +4047,37 @@ body.page-episode-index #episode-index-results .list-item:active h3 {
   }
 
   .home-episode-carousel-shell.mobile {
-    gap: 10px;
+    grid-template-columns: minmax(0, 1fr);
+    gap: 12px;
     margin: -2px 0 14px;
     touch-action: pan-y;
-    min-height: 468px;
+    min-height: 0;
   }
 
-  .home-episode-carousel-shell.mobile .home-episode-carousel-track {
-    --home-episode-preview-card-width: min(286px, calc(100vw - 116px));
-    --home-episode-preview-gap: 12px;
-    --home-episode-preview-peek: 22px;
+  .home-episode-mobile-toolbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    margin-bottom: 2px;
+    padding: 0 2px;
+    color: rgba(86, 76, 63, 0.78);
+    font-size: 12px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+  }
+
+  .home-episode-mobile-index {
+    font-weight: 700;
+    color: rgba(64, 54, 42, 0.82);
+  }
+
+  .home-episode-mobile-hint {
+    color: rgba(110, 98, 83, 0.72);
   }
 
   .home-episode-carousel-shell.mobile .home-episode-side-button {
-    width: 38px;
-    height: 38px;
-    margin-top: 12px;
-    font-size: 24px;
+    display: none;
   }
 
   .section-title {
@@ -4124,15 +4192,16 @@ body.page-episode-index #episode-index-results .list-item:active h3 {
   }
 
   body.page-home .home-episode-card {
-    padding: 24px 20px 20px;
+    padding: 26px 22px 22px;
   }
 
   .home-episode-carousel-track .home-episode-grid-3 .home-episode-card,
   .home-episode-carousel-track .home-episode-grid-2 .home-episode-card,
   .home-episode-carousel-track .home-episode-grid-1 .home-episode-card,
   .home-episode-mobile-pane .home-episode-card,
-  .home-episode-preview-card {
-    height: 456px;
+  .home-episode-preview-card,
+  .home-episode-mobile-single .home-episode-card {
+    height: 500px;
   }
 
   body.page-home #home-episodes .home-episode-card .card-kicker,
@@ -4142,16 +4211,16 @@ body.page-episode-index #episode-index-results .list-item:active h3 {
   }
 
   body.page-home .home-episode-card .card-primary-link h3 {
-    font-size: 22px;
-    line-height: 1.22;
+    font-size: 24px;
+    line-height: 1.2;
     text-wrap: initial;
   }
 
   body.page-home .home-episode-card > p:not(.card-kicker):not(.inline-label) {
     font-size: 14.5px;
     line-height: 1.74;
-    -webkit-line-clamp: 4;
-    min-height: 8.8em;
+    -webkit-line-clamp: 5;
+    min-height: 9.4em;
   }
 
   .home-episode-preview-title {
@@ -4162,6 +4231,13 @@ body.page-episode-index #episode-index-results .list-item:active h3 {
   body.page-home #home-episodes .home-episode-card .chip {
     font-size: 12.5px;
     padding: 8px 13px;
+  }
+
+  .home-episode-open-link {
+    width: 100%;
+    min-height: 46px;
+    padding: 0 16px;
+    font-size: 15px;
   }
 
   body.page-episode-index #episode-index-results .list {

@@ -914,6 +914,33 @@ function displayEpisodeTitle(title) {
     .trim();
 }
 
+function trimHomeEpisodeSummary(text, maxChars) {
+  if (text.length <= maxChars) return text;
+  const slice = text.slice(0, maxChars);
+  const boundary = Math.max(slice.lastIndexOf('，'), slice.lastIndexOf('、'), slice.lastIndexOf(' '));
+  const trimmed = boundary > maxChars * 0.55 ? slice.slice(0, boundary) : slice;
+  return `${trimmed.trim()}…`;
+}
+
+function summarizeHomeEpisodeSummary(value, { mobile = false } = {}) {
+  const text = String(value || '').replace(/\s+/g, ' ').trim();
+  if (!text) return '待整理';
+  if (!mobile) return text;
+
+  const sentences = text.match(/[^。！？!?]+[。！？!?]?/g)?.map((item) => item.trim()).filter(Boolean) || [text];
+  let summary = sentences[0] || text;
+  const maxChars = Math.max(68, Math.min(132, Math.round(text.length * 0.75)));
+  const minChars = Math.min(maxChars - 8, Math.max(50, Math.round(text.length * 0.52)));
+
+  let index = 1;
+  while (summary.length < minChars && index < sentences.length) {
+    summary = `${summary}${sentences[index]}`;
+    index += 1;
+  }
+
+  return trimHomeEpisodeSummary(summary, maxChars);
+}
+
 function renderLinkedEpisodeText(value) {
   const raw = String(value || '');
   if (!raw) return '';
@@ -2117,7 +2144,7 @@ function scheduleHomeEpisodeAutoAdvance(maxIndex) {
   const waitMs = Math.max(homeEpisodeAutoAdvancePausedUntil - Date.now(), 0);
   homeEpisodeCarouselTimer = window.setTimeout(() => {
     advanceHomeEpisodeCarousel(1, maxIndex);
-  }, Math.max(5000, waitMs));
+  }, Math.max(10000, waitMs));
 }
 
 function pauseHomeEpisodeAutoAdvance(durationMs = 6500) {
@@ -2154,6 +2181,14 @@ function renderSidebarKeywordSuggestions() {
     emptyMessage: '没有匹配的关键词、节目或知识条目',
     idleTitle: '匹配结果'
   });
+}
+
+function navigateToEpisodeFromElement(element) {
+  const episodeCard = element?.closest?.('[data-episode-href]');
+  const href = episodeCard?.dataset?.episodeHref;
+  if (!href) return false;
+  window.location.hash = href;
+  return true;
 }
 
 function renderSidebar() {
@@ -2282,15 +2317,21 @@ function getWrappedHomeEpisodeIndex(index, maxIndex) {
   return index;
 }
 
-function renderHomeEpisodeCardMarkup(episode, { preview = false } = {}) {
+function renderHomeEpisodeCardMarkup(episode, { preview = false, mobileAction = false } = {}) {
+  const summary = summarizeHomeEpisodeSummary(episode.summary, { mobile: mobileAction });
   return `
     <article class="card home-episode-card${preview ? ' is-preview' : ''}" data-episode-href="${routeTo(`episodes/${episode.id}`)}">
       <p class="card-kicker">${escapeHtml(episode.id)} ${episode.curated ? '· 已整理' : '· 待整理'}</p>
       <a class="card-primary-link" href="${routeTo(`episodes/${episode.id}`)}">
         <h3>${escapeHtml(displayEpisodeTitle(episode.title))}</h3>
       </a>
-      <p>${escapeHtml(episode.summary || '待整理')}</p>
+      <p>${escapeHtml(summary)}</p>
       ${linkedChipList('keywords', (episode.tags || []).slice(0, 3), site.keywords)}
+      ${mobileAction ? `
+        <div class="home-episode-card-actions">
+          <a class="back-link home-episode-open-link" href="${routeTo(`episodes/${episode.id}`)}">打开节目</a>
+        </div>
+      ` : ''}
     </article>
   `;
 }
@@ -2320,41 +2361,37 @@ function renderHomeEpisodeCarouselMarkup(homeEpisodeCarousel, featuredEpisodes, 
     : null;
 
   return `
-    <button
-      id="home-episodes-prev"
-      class="home-episode-side-button${homeEpisodeCarousel.maxIndex > 0 ? '' : ' is-disabled'}"
-      type="button"
-      aria-label="显示更新一个节目"
-      ${homeEpisodeCarousel.maxIndex > 0 ? '' : 'disabled'}
-    >‹</button>
     ${showMobilePreview ? `
-      <div class="home-episode-carousel-track is-mobile-preview">
-        <div class="home-episode-mobile-strip">
-          <div class="home-episode-mobile-pane is-prev" aria-hidden="true">
-            ${renderHomeEpisodePreviewPaneMarkup(previousEpisode, 'prev')}
-          </div>
-          <div class="home-episode-mobile-pane is-current">
-            ${renderHomeEpisodeCardMarkup(currentEpisode)}
-          </div>
-          <div class="home-episode-mobile-pane is-next" aria-hidden="true">
-            ${renderHomeEpisodePreviewPaneMarkup(nextEpisode, 'next')}
-          </div>
+      <div class="home-episode-mobile-toolbar" aria-hidden="true">
+        <span class="home-episode-mobile-index">第 ${homeEpisodeCarousel.currentIndex + 1} / ${featuredEpisodes.length} 集</span>
+        <span class="home-episode-mobile-hint">左右滑动切换</span>
+      </div>
+      <div class="home-episode-carousel-track is-mobile-single">
+        <div class="home-episode-mobile-single">
+          ${renderHomeEpisodeCardMarkup(currentEpisode, { mobileAction: true })}
         </div>
       </div>
     ` : `
+      <button
+        id="home-episodes-prev"
+        class="home-episode-side-button${homeEpisodeCarousel.maxIndex > 0 ? '' : ' is-disabled'}"
+        type="button"
+        aria-label="显示更新一个节目"
+        ${homeEpisodeCarousel.maxIndex > 0 ? '' : 'disabled'}
+      >‹</button>
       <div class="home-episode-carousel-track">
         <div class="grid cards-3 home-episode-grid home-episode-grid-${homeEpisodeCarousel.visibleCount}">
           ${homeEpisodeCarousel.visibleEpisodes.map((episode) => renderHomeEpisodeCardMarkup(episode)).join('')}
         </div>
       </div>
+      <button
+        id="home-episodes-next"
+        class="home-episode-side-button${homeEpisodeCarousel.maxIndex > 0 ? '' : ' is-disabled'}"
+        type="button"
+        aria-label="显示更早一个节目"
+        ${homeEpisodeCarousel.maxIndex > 0 ? '' : 'disabled'}
+      >›</button>
     `}
-    <button
-      id="home-episodes-next"
-      class="home-episode-side-button${homeEpisodeCarousel.maxIndex > 0 ? '' : ' is-disabled'}"
-      type="button"
-      aria-label="显示更早一个节目"
-      ${homeEpisodeCarousel.maxIndex > 0 ? '' : 'disabled'}
-    >›</button>
   `;
 }
 
@@ -2371,8 +2408,7 @@ function bindHomeEpisodeCarousel(homeEpisodeCarouselShell, homeEpisodeCarousel, 
   const homeEpisodeCarouselTrack = homeEpisodeCarouselShell.querySelector('.home-episode-carousel-track');
   const hasMobilePreview = isMobile
     && homeEpisodeCarousel.visibleCount === 1
-    && homeEpisodeCarousel.maxIndex > 0
-    && homeEpisodeCarouselTrack?.classList.contains('is-mobile-preview');
+    && homeEpisodeCarousel.maxIndex > 0;
 
   if (homeEpisodeCarousel.maxIndex > 0) {
     let swipeAxis = '';
@@ -2385,22 +2421,9 @@ function bindHomeEpisodeCarousel(homeEpisodeCarouselShell, homeEpisodeCarousel, 
       scheduleHomeEpisodeAutoAdvance(homeEpisodeCarousel.maxIndex);
     };
 
-    const applyMobilePreviewMetrics = () => {
-      if (!(homeEpisodeCarouselTrack instanceof HTMLElement) || !hasMobilePreview) return;
-      const previewPeek = 26;
-      const previewGap = 14;
-      const previewCardWidth = Math.max(homeEpisodeCarouselTrack.getBoundingClientRect().width - previewPeek * 2, 220);
-      homeEpisodeCarouselTrack.style.setProperty('--home-episode-preview-peek', `${previewPeek}px`);
-      homeEpisodeCarouselTrack.style.setProperty('--home-episode-preview-gap', `${previewGap}px`);
-      homeEpisodeCarouselTrack.style.setProperty('--home-episode-preview-card-width', `${previewCardWidth}px`);
-      homeEpisodeCarouselTrack.style.setProperty('--home-episode-drag-offset', '0px');
-    };
-
-    applyMobilePreviewMetrics();
-
     homeEpisodeCarouselShell.addEventListener('pointerdown', (event) => {
       if (hasMobilePreview && event.pointerType === 'touch') return;
-      if (event.target.closest('button, input, textarea, select, summary, .chip')) return;
+      if (event.target.closest('a, button, input, textarea, select, summary, .chip')) return;
       if (!hasMobilePreview && event.target.closest('a')) return;
       if (event.pointerType === 'mouse' && event.button !== 0) return;
       pauseHomeEpisodeAutoAdvance(7000);
@@ -2410,7 +2433,7 @@ function bindHomeEpisodeCarousel(homeEpisodeCarouselShell, homeEpisodeCarousel, 
       homeEpisodeSwipeStartY = event.clientY;
       swipeAxis = '';
       if (hasMobilePreview) {
-        applyMobilePreviewMetrics();
+        homeEpisodeCarouselTrack?.style.setProperty('--home-episode-drag-offset', '0px');
         homeEpisodeCarouselTrack?.classList.add('is-dragging');
         homeEpisodeCarouselShell.setPointerCapture?.(event.pointerId);
       }
@@ -2466,14 +2489,14 @@ function bindHomeEpisodeCarousel(homeEpisodeCarouselShell, homeEpisodeCarousel, 
     if (hasMobilePreview) {
       homeEpisodeCarouselShell.addEventListener('touchstart', (event) => {
         if (event.touches.length !== 1) return;
-        if (event.target.closest('button, input, textarea, select, summary, .chip')) return;
+        if (event.target.closest('a, button, input, textarea, select, summary, .chip')) return;
         const touch = event.touches[0];
         pauseHomeEpisodeAutoAdvance(7000);
         homeEpisodeSwipeTracking = true;
         homeEpisodeSwipeStartX = touch.clientX;
         homeEpisodeSwipeStartY = touch.clientY;
         swipeAxis = '';
-        applyMobilePreviewMetrics();
+        homeEpisodeCarouselTrack?.style.setProperty('--home-episode-drag-offset', '0px');
         homeEpisodeCarouselTrack?.classList.add('is-dragging');
       }, { passive: true });
 
@@ -2507,6 +2530,9 @@ function bindHomeEpisodeCarousel(homeEpisodeCarouselShell, homeEpisodeCarousel, 
           return;
         }
         resetSwipeState();
+        if (Math.abs(deltaX) < 10 && Math.abs(deltaY) < 10 && !event.target.closest('a, button, input, textarea, select, summary, .chip')) {
+          navigateToEpisodeFromElement(event.target);
+        }
       }, { passive: true });
 
       homeEpisodeCarouselShell.addEventListener('touchcancel', () => {
@@ -2800,10 +2826,14 @@ function renderHome(focusSectionId = '') {
 
   app.querySelectorAll('#home-episodes .card[data-episode-href]').forEach((card) => {
     card.addEventListener('click', (event) => {
-      if (event.target.closest('a, button, input, textarea, select, summary')) return;
-      const href = card.dataset.episodeHref;
-      if (!href) return;
-      window.location.hash = href;
+      if (event.target.closest('.chip, button, input, textarea, select, summary')) return;
+      navigateToEpisodeFromElement(event.target);
+    });
+  });
+  app.querySelectorAll('#home-episodes .card[data-episode-href] .card-primary-link, #home-episodes .home-episode-open-link').forEach((link) => {
+    link.addEventListener('click', (event) => {
+      event.preventDefault();
+      navigateToEpisodeFromElement(event.currentTarget);
     });
   });
   if (floatingActionsExpanded) {
