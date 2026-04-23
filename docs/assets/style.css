@@ -65,6 +65,10 @@ html {
 
 body.sidebar-open {
   overflow: hidden;
+  position: fixed;
+  inset: 0;
+  width: 100%;
+  overscroll-behavior: none;
 }
 
 body::before,
@@ -731,6 +735,7 @@ body.section-progress-panel-open .section-progress-panel {
   color: #ece7df;
   border-right: 1px solid rgba(255,255,255,0.06);
   overflow-y: auto;
+  overscroll-behavior: contain;
   z-index: 15;
   transition: transform 0.24s ease, opacity 0.24s ease;
 }

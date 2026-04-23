@@ -156,6 +156,7 @@ let lastHomeMobileLayout = false;
 let mobileViewportResetTimer = 0;
 let hasRenderedRoute = false;
 let lastRenderedHash = window.location.hash || '#/';
+let sidebarLockedScrollY = 0;
 const PERSON_NAV_MIN_REFERENCES = 2;
 const DESKTOP_SIDEBAR_STORAGE_KEY = 'yinfluence-sidebar-collapsed';
 const SNAP_SECTION_SELECTOR = '.hero, .home-search-toolbar, .home-search-section, .section, .detail-header, .detail-section';
@@ -769,8 +770,10 @@ function refreshViewportBehaviors({ resetDock = false } = {}) {
 }
 
 function openSidebar() {
+  sidebarLockedScrollY = window.scrollY;
   sidebar.classList.add('open');
   document.body.classList.add('sidebar-open');
+  document.body.style.top = `-${sidebarLockedScrollY}px`;
   if (sidebarBackdrop) {
     sidebarBackdrop.hidden = false;
   }
@@ -780,9 +783,11 @@ function openSidebar() {
 function closeSidebar() {
   sidebar.classList.remove('open');
   document.body.classList.remove('sidebar-open');
+  document.body.style.removeProperty('top');
   if (sidebarBackdrop) {
     sidebarBackdrop.hidden = true;
   }
+  scrollWindowInstantly(sidebarLockedScrollY, window.scrollX);
   normalizeMobileViewport();
   syncFloatingActionLabels();
 }
@@ -1141,6 +1146,15 @@ function keywordTypeBadge(keyword) {
 function episodeNumberFromId(id) {
   const match = String(id || '').match(/EP(\d+)/i);
   return match ? Number(match[1]) : null;
+}
+
+function newestEpisodeNumber() {
+  return Math.max(
+    0,
+    ...(site?.episodes || [])
+      .map((episode) => episodeNumberFromId(episode?.id))
+      .filter((value) => Number.isFinite(value))
+  );
 }
 
 function parseChineseEpisodeNumber(raw) {
@@ -2433,11 +2447,16 @@ function getHomeEpisodePositionLabel(episode, totalEpisodes) {
 }
 
 function isEpisodeFresh(episode) {
+  if (episode?.recent) return true;
   const sourceTime = episode?.sourceMtime ? new Date(episode.sourceMtime).getTime() : NaN;
   if (Number.isFinite(sourceTime)) {
     return (Date.now() - sourceTime) <= (3 * 24 * 60 * 60 * 1000);
   }
-  return Boolean(episode?.recent);
+  const currentEpisodeNumber = episodeNumberFromId(episode?.id);
+  const latestEpisodeNumber = newestEpisodeNumber();
+  return Number.isFinite(currentEpisodeNumber)
+    && Number.isFinite(latestEpisodeNumber)
+    && currentEpisodeNumber === latestEpisodeNumber;
 }
 
 function renderEpisodeFreshBadge(episode, { compact = false } = {}) {
