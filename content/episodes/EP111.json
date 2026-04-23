@@ -82,7 +82,8 @@
     },
     {
       "platform": "youtube",
-      "url": "https://www.youtube.com/watch?v=GtcX8NqBLkc"
+      "status": "unavailable",
+      "note": "未找到"
     }
   ]
 }

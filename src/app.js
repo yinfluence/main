@@ -230,11 +230,7 @@ function getRouteTransitionKind(previousHash, nextHash) {
   const nextRoute = parseHashRoute(nextHash);
 
   if (previousRoute.section === 'episodes' && previousRoute.id && nextRoute.section === 'episodes' && nextRoute.id) {
-    if (Number.isFinite(previousRoute.episodeNumber) && Number.isFinite(nextRoute.episodeNumber)) {
-      if (nextRoute.episodeNumber > previousRoute.episodeNumber) return 'episode-forward';
-      if (nextRoute.episodeNumber < previousRoute.episodeNumber) return 'episode-backward';
-    }
-    return 'episode-forward';
+    return 'content-static';
   }
 
   return nextRoute.section ? 'content-forward' : 'content-home';
@@ -829,6 +825,7 @@ function renderRouteWithTransition() {
 
   if (
     hasRenderedRoute &&
+    transitionKind !== 'content-static' &&
     typeof document.startViewTransition === 'function' &&
     !window.matchMedia('(prefers-reduced-motion: reduce)').matches
   ) {
@@ -2409,6 +2406,12 @@ function getHomeEpisodeOutgoingIndex(currentIndex, direction, maxIndex) {
     : getWrappedHomeEpisodeIndex(currentIndex + 1, maxIndex);
 }
 
+function getHomeEpisodePositionLabel(episode, totalEpisodes) {
+  if (!episode) return `第 1 / ${totalEpisodes} 集`;
+  const episodeNumber = episodeNumberFromId(episode.id);
+  return `第 ${Number.isFinite(episodeNumber) ? episodeNumber : 1} / ${totalEpisodes} 集`;
+}
+
 function renderHomeEpisodeCardMarkup(episode, { preview = false, mobileAction = false } = {}) {
   const summary = summarizeHomeEpisodeSummary(episode.summary, { mobile: mobileAction });
   return `
@@ -2455,7 +2458,7 @@ function renderHomeEpisodeCarouselMarkup(homeEpisodeCarousel, featuredEpisodes, 
   return `
     ${showMobilePreview ? `
       <div class="home-episode-mobile-toolbar" aria-hidden="true">
-        <span class="home-episode-mobile-index">第 ${homeEpisodeCarousel.currentIndex + 1} / ${featuredEpisodes.length} 集</span>
+        <span class="home-episode-mobile-index">${getHomeEpisodePositionLabel(currentEpisode, featuredEpisodes.length)}</span>
         <span class="home-episode-mobile-hint">左右滑动切换</span>
       </div>
       <div class="home-episode-carousel-viewport">
@@ -2499,7 +2502,7 @@ function renderHomeEpisodeMobileTransitionMarkup(outgoingEpisode, incomingEpisod
 
   return `
     <div class="home-episode-mobile-toolbar" aria-hidden="true">
-      <span class="home-episode-mobile-index">第 ${homeEpisodeCarouselIndex + 1} / ${getHomeFeaturedEpisodes().length} 集</span>
+      <span class="home-episode-mobile-index">${getHomeEpisodePositionLabel(incomingEpisode, getHomeFeaturedEpisodes().length)}</span>
       <span class="home-episode-mobile-hint">左右滑动切换</span>
     </div>
     <div class="home-episode-carousel-viewport is-mobile-transition">
