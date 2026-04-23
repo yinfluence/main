@@ -21,5 +21,15 @@
       "platform": "bilibili",
       "url": "https://www.bilibili.com/video/BV1WGd1BMEFS/?spm_id_from=333.999.0.0"
     }
+  },
+  "EP124": {
+    "bilibili": {
+      "platform": "bilibili",
+      "url": "https://www.bilibili.com/video/BV118oaB3EBc?spm_id_from=333.788.videopod.sections&vd_source=10d2833a281f736d15b299d593c92082"
+    },
+    "youtube": {
+      "platform": "youtube",
+      "url": "https://www.youtube.com/watch?v=8L0Y-LJ93NA"
+    }
   }
 }
