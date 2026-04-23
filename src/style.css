@@ -4077,7 +4077,7 @@ body.page-episode-index #episode-index-results .list-item:active h3 {
     flex-direction: row;
     align-items: flex-start;
     justify-content: flex-start;
-    gap: 8px;
+    gap: 14px;
     width: 100%;
     padding-right: 0;
   }
@@ -4102,7 +4102,7 @@ body.page-episode-index #episode-index-results .list-item:active h3 {
     align-items: flex-start;
     justify-content: center;
     margin-top: 2px;
-    margin-left: -2px;
+    margin-left: 2px;
   }
 
   .hero-title-row.has-mobile-avatar .hero-mobile-avatar {
@@ -4320,12 +4320,12 @@ body.page-episode-index #episode-index-results .list-item:active h3 {
   }
 
   .hero-title-row.has-mobile-avatar {
-    gap: 6px;
+    gap: 10px;
   }
 
   .hero-title-row.has-mobile-avatar .hero-mobile-avatar-link {
     margin-top: 2px;
-    margin-left: -4px;
+    margin-left: 0;
   }
 
   .hero-mobile-avatar {
