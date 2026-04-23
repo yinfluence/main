@@ -4475,8 +4475,8 @@ body.page-home .section.split > div .list-item:active p {
   .home-episode-carousel-shell.mobile .home-episode-carousel-viewport,
   .home-episode-carousel-shell.mobile .home-episode-mobile-transition-pane,
   .home-episode-carousel-shell.mobile .home-episode-mobile-single {
-    height: 540px;
-    min-height: 540px;
+    height: 500px;
+    min-height: 500px;
   }
 
   .home-episode-carousel-shell.mobile .home-episode-mobile-single .home-episode-card,
@@ -4609,7 +4609,7 @@ body.page-home .section.split > div .list-item:active p {
   }
 
   body.page-home .home-episode-card {
-    padding: 28px 24px 24px;
+    padding: 22px 18px 16px;
   }
 
   .home-episode-carousel-track .home-episode-grid-3 .home-episode-card,
@@ -4618,7 +4618,7 @@ body.page-home .section.split > div .list-item:active p {
   .home-episode-mobile-pane .home-episode-card,
   .home-episode-preview-card,
   .home-episode-mobile-single .home-episode-card {
-    height: 540px;
+    height: 500px;
   }
 
   body.page-home #home-episodes .home-episode-card .card-kicker,
@@ -4635,24 +4635,24 @@ body.page-home .section.split > div .list-item:active p {
   }
 
   body.page-home .home-episode-card .card-primary-link + p {
-    margin-top: 8px;
+    margin-top: 6px;
   }
 
   body.page-home #home-episodes .home-episode-card .chip-row {
-    margin-top: 14px;
+    margin-top: 8px;
     min-height: 0;
     max-height: none;
   }
 
   body.page-home #home-episodes .home-episode-card .home-episode-card-actions {
     margin-top: auto;
-    padding-top: 16px;
+    padding-top: 10px;
   }
 
   body.page-home .home-episode-card > p:not(.card-kicker):not(.inline-label) {
     font-size: 15.5px;
-    line-height: 1.76;
-    -webkit-line-clamp: 9;
+    line-height: 1.68;
+    -webkit-line-clamp: 11;
     min-height: 0;
   }
 
@@ -4663,7 +4663,7 @@ body.page-home .section.split > div .list-item:active p {
 
   body.page-home #home-episodes .home-episode-card .chip {
     font-size: 12.5px;
-    padding: 8px 13px;
+    padding: 7px 12px;
   }
 
   body.page-home #home-episodes .home-episode-card .chip-row {

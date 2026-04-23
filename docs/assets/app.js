@@ -1010,8 +1010,8 @@ function summarizeHomeEpisodeSummary(value, { mobile = false } = {}) {
 
   const sentences = text.match(/[^。！？!?]+[。！？!?]?/g)?.map((item) => item.trim()).filter(Boolean) || [text];
   let summary = sentences[0] || text;
-  const maxChars = Math.max(124, Math.min(252, Math.round(text.length * 1.02)));
-  const minChars = Math.min(maxChars - 14, Math.max(96, Math.round(text.length * 0.78)));
+  const maxChars = Math.max(168, Math.min(336, Math.round(text.length * 1.24)));
+  const minChars = Math.min(maxChars - 22, Math.max(132, Math.round(text.length * 0.96)));
 
   let index = 1;
   while (summary.length < minChars && index < sentences.length) {
@@ -2474,11 +2474,6 @@ function renderHomeEpisodeCardMarkup(episode, { preview = false, mobileAction = 
       </a>
       <p>${escapeHtml(summary)}</p>
       ${linkedChipList('keywords', (episode.tags || []).slice(0, 3), site.keywords)}
-      ${mobileAction ? `
-        <div class="home-episode-card-actions">
-          <a class="back-link home-episode-open-link" href="${routeTo(`episodes/${episode.id}`)}">打开节目</a>
-        </div>
-      ` : ''}
     </article>
   `;
 }
