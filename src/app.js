@@ -2412,11 +2412,24 @@ function getHomeEpisodePositionLabel(episode, totalEpisodes) {
   return `第 ${Number.isFinite(episodeNumber) ? episodeNumber : 1} / ${totalEpisodes} 集`;
 }
 
+function isEpisodeFresh(episode) {
+  const sourceTime = episode?.sourceMtime ? new Date(episode.sourceMtime).getTime() : NaN;
+  if (Number.isFinite(sourceTime)) {
+    return (Date.now() - sourceTime) <= (3 * 24 * 60 * 60 * 1000);
+  }
+  return Boolean(episode?.recent);
+}
+
+function renderEpisodeFreshBadge(episode, { compact = false } = {}) {
+  if (!isEpisodeFresh(episode)) return '';
+  return `<span class="episode-fresh-badge${compact ? ' compact' : ''}">新</span>`;
+}
+
 function renderHomeEpisodeCardMarkup(episode, { preview = false, mobileAction = false } = {}) {
   const summary = summarizeHomeEpisodeSummary(episode.summary, { mobile: mobileAction });
   return `
     <article class="card home-episode-card${preview ? ' is-preview' : ''}" data-episode-href="${routeTo(`episodes/${episode.id}`)}">
-      <p class="card-kicker">${escapeHtml(episode.id)} ${episode.curated ? '· 已整理' : '· 待整理'}</p>
+      <p class="card-kicker">${escapeHtml(episode.id)} ${isEpisodeFresh(episode) ? renderEpisodeFreshBadge(episode, { compact: true }) : (episode.curated ? '· 已整理' : '· 待整理')}</p>
       <a class="card-primary-link" href="${routeTo(`episodes/${episode.id}`)}">
         <h3>${escapeHtml(displayEpisodeTitle(episode.title))}</h3>
       </a>
@@ -3411,7 +3424,7 @@ function renderEpisodeDetail(id) {
             <button type="button" class="back-link back-button" data-nav-back="true">← 返回前一页</button>
             <a class="back-link secondary" href="#/">返回首页</a>
           </div>
-          <h1 class="detail-title">${escapeHtml(episode.id)}｜${escapeHtml(displayEpisodeTitle(episode.title))}</h1>
+          <h1 class="detail-title">${escapeHtml(episode.id)}｜${escapeHtml(displayEpisodeTitle(episode.title))}${renderEpisodeFreshBadge(episode)}</h1>
           <p class="detail-summary">这条节目已经进入网页索引，但还没有整理成结构化知识条目。</p>
         </div>
         <section class="detail-section">
@@ -3446,7 +3459,7 @@ function renderEpisodeDetail(id) {
           <button type="button" class="back-link back-button" data-nav-back="true">← 返回前一页</button>
           <a class="back-link secondary" href="#/">返回首页</a>
         </div>
-        <h1 class="detail-title">${escapeHtml(episode.id)}｜${escapeHtml(displayEpisodeTitle(episode.title))}</h1>
+        <h1 class="detail-title">${escapeHtml(episode.id)}｜${escapeHtml(displayEpisodeTitle(episode.title))}${renderEpisodeFreshBadge(episode)}</h1>
         <p class="detail-summary">${escapeHtml(episode.summary)}</p>
         ${renderEpisodeHeaderMeta(episode)}
       </div>

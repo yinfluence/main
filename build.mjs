@@ -72,13 +72,16 @@ async function buildEpisodeCatalog() {
     if (!match) continue;
 
     const [, id, title] = match;
+    const sourcePath = path.join(rawDir, entry.name);
+    const sourceStat = await fs.stat(sourcePath);
     if (!episodes.has(id)) {
       episodes.set(id, {
         id,
         title,
         summary: '待整理',
         curated: false,
-        sourceFile: entry.name
+        sourceFile: entry.name,
+        sourceMtime: sourceStat.mtime.toISOString()
       });
     }
   }
@@ -515,14 +518,17 @@ function applyKeywordRelations(keywords) {
 
 function mergeEpisodeCatalog(catalog, curatedEpisodes) {
   const byId = new Map(catalog.map((episode) => [episode.id, episode]));
+  const recentWindowMs = 3 * 24 * 60 * 60 * 1000;
   for (const episode of curatedEpisodes) {
     const base = byId.get(episode.id) || { id: episode.id, title: episode.title };
     const status = episode.status || 'curated';
+    const recentSource = base.sourceMtime ? new Date(base.sourceMtime).getTime() : NaN;
     byId.set(episode.id, {
       ...base,
       ...episode,
       status,
-      curated: status === 'curated'
+      curated: status === 'curated',
+      recent: Number.isFinite(recentSource) ? (Date.now() - recentSource) <= recentWindowMs : false
     });
   }
   return [...byId.values()].sort((a, b) => a.id.localeCompare(b.id));
