@@ -295,7 +295,7 @@ function updateVisualState(state) {
     node.circleEl.setAttribute('fill', TYPE_META[node.type]?.color || '#888');
     node.circleEl.setAttribute(
       'stroke',
-      isHovered ? '#c45c2b' : isSelected ? '#f5c26b' : isMatch ? '#7c2d12' : 'rgba(255,255,255,0.42)'
+      isHovered ? '#ffbe73' : isSelected ? '#f5d39a' : isMatch ? '#ffd977' : 'rgba(255,239,213,0.34)'
     );
     node.circleEl.setAttribute('stroke-width', isHovered ? '3.2' : isSelected ? '3' : isMatch ? '2.1' : '1');
     node.circleEl.setAttribute('r', String(node.radius + (isHovered ? 2.5 : isSelected ? 2 : 0)));
@@ -450,7 +450,7 @@ function mountGraph(state) {
     node.labelEl = createSvgElement('text', {
       'text-anchor': 'middle',
       'font-size': '11',
-      fill: 'rgba(24,26,22,0.78)'
+      fill: 'rgba(246, 238, 223, 0.84)'
     });
     node.labelEl.textContent = node.label;
 
@@ -470,7 +470,7 @@ function mountGraph(state) {
       source,
       target,
       lineEl: createSvgElement('line', {
-        stroke: 'rgba(32,36,41,0.18)',
+        stroke: 'rgba(255,236,208,0.12)',
         'stroke-width': '1'
       })
     };

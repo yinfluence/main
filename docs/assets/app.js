@@ -25,6 +25,21 @@ const HOME_PLATFORM_LINKS = [
 const WEBSITE_LOG_ENTRIES = [
   {
     date: '2026-04-22',
+    title: '首页恢复可用并收敛轮播与搜索联动',
+    items: [
+      '修复首页脚本重复声明，解除“正在加载知识库...”卡死状态。',
+      '节目索引轮播改为局部更新，按钮、手势与自动轮播统一按一次移动一个节目处理。',
+      '首页节目卡片高度收敛到稳定区间，切换不同节目时下方模块不再被顶着跳动。',
+      '手机版节目索引改成带前后页预览的滑动条，拖动时能看到上一张和下一张的边缘。',
+      '移动端节目索引在拖动和按钮操作期间会暂停自动轮播，避免和用户操作打架。',
+      '首页文字层级从“一套字体打到底”改成标题、卡片标题、正文、辅助说明四层语气，并拉开版块底色。',
+      '自动轮播切换时不再把页面滚回上方，也不会异常带出首页搜索栏。',
+      '首页搜索在输入时会把搜索栏和结果区一起带回可见区，离开原始区域后再自动收起。',
+      '首页卡片与下半区不再延迟到滚动过深才显现，避免用户翻到中段还看到空白。'
+    ]
+  },
+  {
+    date: '2026-04-22',
     title: '首页、关键词页与轮盘交互重做',
     items: [
       '关键词页改成按内容类别浏览，不再按引用量堆成大块。',
@@ -97,6 +112,7 @@ let site = null;
 let graphData = null;
 let homeKnowledgeQuery = '';
 let homeRecommendationSeed = 0;
+let homeEpisodeCarouselIndex = 0;
 let sidebarKeywordQuery = '';
 let keywordIndexQuery = '';
 let episodeIndexQuery = '';
@@ -113,6 +129,14 @@ let lastScrollY = 0;
 let lastSnapAt = 0;
 let pointerIsDown = false;
 let floatingActionsExpanded = true;
+let floatingActionsIdleTimer = 0;
+let homeEpisodeCarouselTimer = 0;
+let homeEpisodeAutoAdvancePausedUntil = 0;
+let homeEpisodeSwipeStartX = 0;
+let homeEpisodeSwipeStartY = 0;
+let homeEpisodeSwipePointerId = null;
+let homeEpisodeSwipeTracking = false;
+let homeEpisodeCarouselAnimating = false;
 let contentRevealObserver = null;
 let suspendSnapUntil = 0;
 let snapAnimationFrame = 0;
@@ -126,6 +150,8 @@ let lastScrollSpeed = 0;
 let sectionProgressPanelOpen = false;
 let sectionProgressActiveIndex = -1;
 let sectionProgressPulseTimer = 0;
+let lastHomeEpisodeVisibleCount = 3;
+let lastHomeMobileLayout = false;
 const PERSON_NAV_MIN_REFERENCES = 2;
 const DESKTOP_SIDEBAR_STORAGE_KEY = 'yinfluence-sidebar-collapsed';
 const SNAP_SECTION_SELECTOR = '.hero, .home-search-toolbar, .home-search-section, .section, .detail-header, .detail-section';
@@ -138,6 +164,10 @@ function isDesktopViewport() {
 
 function isMobileViewport() {
   return window.matchMedia('(max-width: 720px)').matches;
+}
+
+function useMobileHomeLayout() {
+  return window.matchMedia('(max-width: 768px)').matches;
 }
 
 function getDesktopSidebarCollapsedPreference() {
@@ -200,6 +230,16 @@ function setFloatingActionsExpanded(expanded) {
   floatingActionsToggle?.setAttribute('aria-label', expanded ? '收起快捷操作' : '展开快捷操作');
 }
 
+function scheduleFloatingActionsAutoCollapse() {
+  window.clearTimeout(floatingActionsIdleTimer);
+  if (!floatingActionsExpanded) return;
+  floatingActionsIdleTimer = window.setTimeout(() => {
+    if (!floatingActionsExpanded) return;
+    if (document.body.classList.contains('section-progress-panel-open')) return;
+    setFloatingActionsExpanded(false);
+  }, 1400);
+}
+
 function syncBackToTopVisibility() {
   const shouldShow = true;
   backToTopButton?.classList.toggle('visible', shouldShow);
@@ -214,6 +254,7 @@ function syncFloatingActionsByScroll(currentScrollY) {
   const delta = currentScrollY - lastScrollY;
   if (currentScrollY < 72 || delta < -18) {
     setFloatingActionsExpanded(true);
+    scheduleFloatingActionsAutoCollapse();
     return;
   }
 
@@ -380,6 +421,16 @@ function syncSectionProgress() {
 
 function showSectionProgressTemporarily({ blur = false } = {}) {
   if (!sectionProgress || sectionProgress.hidden) return;
+  if (isHomeRoute()) {
+    const homeEpisodesSection = document.getElementById('home-episodes');
+    if (homeEpisodesSection instanceof HTMLElement) {
+      const revealThreshold = Math.max(window.scrollY + homeEpisodesSection.getBoundingClientRect().top - window.innerHeight * 0.42, 96);
+      if (window.scrollY < revealThreshold) {
+        sectionProgress.classList.remove('is-visible');
+        return;
+      }
+    }
+  }
   sectionProgress.classList.add('is-visible');
   if (blur && !sectionProgressPanelOpen) {
     document.body.classList.add('section-progress-fast');
@@ -597,7 +648,15 @@ function setupRevealAnimations() {
   const revealTargets = [...document.querySelectorAll(REVEAL_SELECTOR)].filter((node) => node instanceof HTMLElement);
   if (!revealTargets.length) return;
 
-  const initialViewportBottom = window.innerHeight * 1.02;
+  if (isHomeRoute()) {
+    revealTargets.forEach((node, index) => {
+      node.classList.add('reveal-ready', 'is-visible');
+      node.style.setProperty('--reveal-delay', `${Math.min(index * 24, 120)}ms`);
+    });
+    return;
+  }
+
+  const initialViewportBottom = window.innerHeight * 1.2;
 
   revealTargets.forEach((node, index) => {
     node.classList.add('reveal-ready');
@@ -620,8 +679,8 @@ function setupRevealAnimations() {
       contentRevealObserver?.unobserve(entry.target);
     });
   }, {
-    threshold: 0.12,
-    rootMargin: '0px 0px -8% 0px'
+    threshold: 0.03,
+    rootMargin: '0px 0px 18% 0px'
   });
 
   window.requestAnimationFrame(() => {
@@ -711,6 +770,13 @@ window.addEventListener('hashchange', renderRouteWithTransition);
 window.addEventListener('resize', () => {
   refreshViewportBehaviors();
   scheduleSectionSnap();
+  if (isHomeRoute()) {
+    const nextVisibleCount = homeEpisodeVisibleCount();
+    const nextMobileLayout = useMobileHomeLayout();
+    if (nextVisibleCount !== lastHomeEpisodeVisibleCount || nextMobileLayout !== lastHomeMobileLayout) {
+      renderHome('home-episodes');
+    }
+  }
 });
 window.addEventListener('scroll', () => {
   const currentScrollY = window.scrollY;
@@ -760,6 +826,11 @@ window.addEventListener('resize', () => {
 }, { passive: true });
 floatingActionsToggle?.addEventListener('click', () => {
   setFloatingActionsExpanded(!floatingActionsExpanded);
+  if (floatingActionsExpanded) {
+    scheduleFloatingActionsAutoCollapse();
+  } else {
+    window.clearTimeout(floatingActionsIdleTimer);
+  }
 });
 sectionProgress?.addEventListener('click', () => {
   if (sectionProgress.hidden) return;
@@ -1197,7 +1268,8 @@ function setupStickyToolbarBehavior(toolbar, config) {
   const {
     opacityVariable,
     minimumHideY = isMobileViewport() ? 48 : 72,
-    idleHideDelay = isMobileViewport() ? 1050 : 1200
+    idleHideDelay = isMobileViewport() ? 1050 : 1200,
+    anchorBoundarySelector = ''
   } = config;
   let lastObservedScrollY = window.scrollY;
   let idleHideTimer = 0;
@@ -1209,10 +1281,14 @@ function setupStickyToolbarBehavior(toolbar, config) {
   const measureAnchorScrollY = () => {
     const rect = toolbar.getBoundingClientRect();
     anchorScrollY = window.scrollY + rect.top;
-    anchorVisibleBottom = anchorScrollY + Math.max(
-      rect.height + (isMobileViewport() ? 132 : 168),
-      window.innerHeight * (isMobileViewport() ? 0.34 : 0.28)
-    );
+    const boundary = anchorBoundarySelector ? document.querySelector(anchorBoundarySelector) : null;
+    if (boundary instanceof HTMLElement) {
+      const boundaryRect = boundary.getBoundingClientRect();
+      const boundaryPadding = isMobileViewport() ? 28 : 42;
+      anchorVisibleBottom = window.scrollY + boundaryRect.bottom - boundaryPadding;
+      return;
+    }
+    anchorVisibleBottom = anchorScrollY + rect.height + (isMobileViewport() ? 44 : 56);
   };
 
   const clearIdleHideTimer = () => {
@@ -1237,6 +1313,7 @@ function setupStickyToolbarBehavior(toolbar, config) {
   };
 
   const syncToolbarState = () => {
+    measureAnchorScrollY();
     const currentScrollY = window.scrollY;
     const delta = currentScrollY - lastObservedScrollY;
     const hideThreshold = isMobileViewport() ? 18 : 22;
@@ -1323,6 +1400,7 @@ function setupHomeSearchToolbarBehavior(toolbar) {
     abortController: homeSearchToolbarController,
     opacityVariable: '--home-search-toolbar-opacity',
     minimumHideY: isMobileViewport() ? 34 : 68,
+    anchorBoundarySelector: '.home-search-section',
     assignController(controller) {
       homeSearchToolbarController = controller;
     }
@@ -1998,13 +2076,83 @@ function rerollHomeRecommendations() {
   });
 }
 
+function homeEpisodeVisibleCount() {
+  if (useMobileHomeLayout()) return 1;
+  const shell = document.querySelector('.home-episode-carousel-shell');
+  const homeSection = document.getElementById('home-episodes');
+  const shellWidth = shell instanceof HTMLElement
+    ? shell.getBoundingClientRect().width
+    : (homeSection instanceof HTMLElement ? homeSection.getBoundingClientRect().width : Math.max(app?.getBoundingClientRect?.().width || 0, 0));
+  const buttonWidth = 46;
+  const gapWidth = 16;
+  const availableWidth = Math.max(shellWidth - buttonWidth * 2 - gapWidth * 2, 0);
+
+  if (availableWidth > 0) {
+    if (availableWidth >= 752) return 3;
+    if (availableWidth >= 496) return 2;
+    return 1;
+  }
+  if (window.innerWidth >= 1380) {
+    return 3;
+  }
+  if (window.innerWidth >= 1060) return 2;
+  return 1;
+}
+
+function homeEpisodeCarouselState(episodes = [], visibleCount = homeEpisodeVisibleCount()) {
+  const maxIndex = Math.max(episodes.length - visibleCount, 0);
+  const currentIndex = Math.min(homeEpisodeCarouselIndex, maxIndex);
+  const start = currentIndex;
+  return {
+    visibleCount,
+    maxIndex,
+    currentIndex,
+    visibleEpisodes: episodes.slice(start, start + visibleCount)
+  };
+}
+
+function scheduleHomeEpisodeAutoAdvance(maxIndex) {
+  window.clearTimeout(homeEpisodeCarouselTimer);
+  if (maxIndex <= 0) return;
+  const waitMs = Math.max(homeEpisodeAutoAdvancePausedUntil - Date.now(), 0);
+  homeEpisodeCarouselTimer = window.setTimeout(() => {
+    advanceHomeEpisodeCarousel(1, maxIndex);
+  }, Math.max(5000, waitMs));
+}
+
+function pauseHomeEpisodeAutoAdvance(durationMs = 6500) {
+  homeEpisodeAutoAdvancePausedUntil = Date.now() + durationMs;
+  window.clearTimeout(homeEpisodeCarouselTimer);
+}
+
+function advanceHomeEpisodeCarousel(direction, maxIndex) {
+  if (homeEpisodeCarouselAnimating) return;
+  if (maxIndex <= 0) return;
+  homeEpisodeCarouselAnimating = true;
+  if (direction < 0) {
+    homeEpisodeCarouselIndex = homeEpisodeCarouselIndex <= 0 ? maxIndex : homeEpisodeCarouselIndex - 1;
+  } else {
+    homeEpisodeCarouselIndex = homeEpisodeCarouselIndex >= maxIndex ? 0 : homeEpisodeCarouselIndex + 1;
+  }
+  renderHomeEpisodeCarousel({ direction });
+}
+
 function renderSidebarKeywordSuggestions() {
+  const title = document.getElementById('keyword-suggestions-title');
+  const container = document.getElementById('keyword-suggestions');
+  const query = sidebarKeywordQuery.trim();
+  if (!title || !container) return;
+  if (!query) {
+    title.textContent = '输入后显示匹配结果';
+    container.innerHTML = '';
+    return;
+  }
   renderKnowledgeSuggestions({
     containerId: 'keyword-suggestions',
     titleId: 'keyword-suggestions-title',
     query: sidebarKeywordQuery,
     emptyMessage: '没有匹配的关键词、节目或知识条目',
-    idleTitle: '推荐关键词'
+    idleTitle: '匹配结果'
   });
 }
 
@@ -2028,13 +2176,13 @@ function renderSidebar() {
       <p class="sidebar-title">搜索知识库</p>
       <div class="sidebar-search-wrap">
         <input id="keyword-search-input" class="sidebar-search-input" type="text" placeholder="搜索关键词、节目、概念、模型，如 咽喉杠杆 / 西贝 / EP031">
+        <p id="keyword-suggestions-title" class="sidebar-subtitle">输入后显示匹配结果</p>
+        <div id="keyword-suggestions" class="sidebar-suggestions"></div>
       </div>
     </div>
     <div class="sidebar-section">
-      <a class="sidebar-link sidebar-link-log" href="#/updates">网页日志 <span class="count-badge">${WEBSITE_LOG_ENTRIES.length}</span></a>
-    </div>
-    <div class="sidebar-section">
       <a class="sidebar-link" href="#/graph">知识图谱 <span class="count-badge">${graphStatValue()}</span></a>
+      <a class="sidebar-link sidebar-link-log" href="#/updates">网页日志 <span class="count-badge">${WEBSITE_LOG_ENTRIES.length}</span></a>
     </div>
   `;
 
@@ -2103,17 +2251,343 @@ function scrollToSection(id) {
   });
 }
 
+function revealHomeSearchForQuery() {
+  const toolbar = document.querySelector('.home-search-toolbar');
+  const resultsSection = document.querySelector('.home-search-section');
+  if (!(toolbar instanceof HTMLElement)) return;
+  toolbar.classList.remove('is-hidden-by-scroll', 'is-ghost');
+  toolbar.style.setProperty('--home-search-toolbar-opacity', '1');
+  const toolbarHeight = toolbar.getBoundingClientRect().height;
+  const sectionTop = resultsSection instanceof HTMLElement
+    ? window.scrollY + resultsSection.getBoundingClientRect().top - toolbarHeight - (isMobileViewport() ? 10 : 16)
+    : window.scrollY + toolbar.getBoundingClientRect().top - 18;
+  const top = Math.max(sectionTop, 0);
+  window.clearTimeout(sectionSnapTimer);
+  suspendSnapUntil = Date.now() + 960;
+  scrollWindowInstantly(top, window.scrollX);
+  window.requestAnimationFrame(() => {
+    scrollWindowInstantly(top, window.scrollX);
+    window.dispatchEvent(new Event('scroll'));
+  });
+}
+
+function getHomeFeaturedEpisodes() {
+  return [...site.episodes].sort((a, b) => episodeNumberFromId(b.id) - episodeNumberFromId(a.id));
+}
+
+function getWrappedHomeEpisodeIndex(index, maxIndex) {
+  if (maxIndex <= 0) return 0;
+  if (index < 0) return maxIndex;
+  if (index > maxIndex) return 0;
+  return index;
+}
+
+function renderHomeEpisodeCardMarkup(episode, { preview = false } = {}) {
+  return `
+    <article class="card home-episode-card${preview ? ' is-preview' : ''}" data-episode-href="${routeTo(`episodes/${episode.id}`)}">
+      <p class="card-kicker">${escapeHtml(episode.id)} ${episode.curated ? '· 已整理' : '· 待整理'}</p>
+      <a class="card-primary-link" href="${routeTo(`episodes/${episode.id}`)}">
+        <h3>${escapeHtml(displayEpisodeTitle(episode.title))}</h3>
+      </a>
+      <p>${escapeHtml(episode.summary || '待整理')}</p>
+      ${linkedChipList('keywords', (episode.tags || []).slice(0, 3), site.keywords)}
+    </article>
+  `;
+}
+
+function renderHomeEpisodePreviewPaneMarkup(episode, direction) {
+  return `
+    <article class="home-episode-preview-card" aria-hidden="true" data-preview-direction="${direction}">
+      <span class="home-episode-preview-kicker">${escapeHtml(episode.id)}</span>
+      <span class="home-episode-preview-title">${escapeHtml(displayEpisodeTitle(episode.title))}</span>
+      <span class="home-episode-preview-line short"></span>
+      <span class="home-episode-preview-line"></span>
+      <span class="home-episode-preview-line"></span>
+    </article>
+  `;
+}
+
+function renderHomeEpisodeCarouselMarkup(homeEpisodeCarousel, featuredEpisodes, { mobilePreview = false } = {}) {
+  const showMobilePreview = mobilePreview && homeEpisodeCarousel.visibleCount === 1 && homeEpisodeCarousel.maxIndex > 0;
+  const previousEpisode = showMobilePreview
+    ? featuredEpisodes[getWrappedHomeEpisodeIndex(homeEpisodeCarousel.currentIndex - 1, homeEpisodeCarousel.maxIndex)]
+    : null;
+  const currentEpisode = showMobilePreview
+    ? featuredEpisodes[homeEpisodeCarousel.currentIndex]
+    : null;
+  const nextEpisode = showMobilePreview
+    ? featuredEpisodes[getWrappedHomeEpisodeIndex(homeEpisodeCarousel.currentIndex + 1, homeEpisodeCarousel.maxIndex)]
+    : null;
+
+  return `
+    <button
+      id="home-episodes-prev"
+      class="home-episode-side-button${homeEpisodeCarousel.maxIndex > 0 ? '' : ' is-disabled'}"
+      type="button"
+      aria-label="显示更新一个节目"
+      ${homeEpisodeCarousel.maxIndex > 0 ? '' : 'disabled'}
+    >‹</button>
+    ${showMobilePreview ? `
+      <div class="home-episode-carousel-track is-mobile-preview">
+        <div class="home-episode-mobile-strip">
+          <div class="home-episode-mobile-pane is-prev" aria-hidden="true">
+            ${renderHomeEpisodePreviewPaneMarkup(previousEpisode, 'prev')}
+          </div>
+          <div class="home-episode-mobile-pane is-current">
+            ${renderHomeEpisodeCardMarkup(currentEpisode)}
+          </div>
+          <div class="home-episode-mobile-pane is-next" aria-hidden="true">
+            ${renderHomeEpisodePreviewPaneMarkup(nextEpisode, 'next')}
+          </div>
+        </div>
+      </div>
+    ` : `
+      <div class="home-episode-carousel-track">
+        <div class="grid cards-3 home-episode-grid home-episode-grid-${homeEpisodeCarousel.visibleCount}">
+          ${homeEpisodeCarousel.visibleEpisodes.map((episode) => renderHomeEpisodeCardMarkup(episode)).join('')}
+        </div>
+      </div>
+    `}
+    <button
+      id="home-episodes-next"
+      class="home-episode-side-button${homeEpisodeCarousel.maxIndex > 0 ? '' : ' is-disabled'}"
+      type="button"
+      aria-label="显示更早一个节目"
+      ${homeEpisodeCarousel.maxIndex > 0 ? '' : 'disabled'}
+    >›</button>
+  `;
+}
+
+function bindHomeEpisodeCarousel(homeEpisodeCarouselShell, homeEpisodeCarousel, isMobile) {
+  document.getElementById('home-episodes-prev')?.addEventListener('click', () => {
+    pauseHomeEpisodeAutoAdvance(6000);
+    advanceHomeEpisodeCarousel(-1, homeEpisodeCarousel.maxIndex);
+  });
+  document.getElementById('home-episodes-next')?.addEventListener('click', () => {
+    pauseHomeEpisodeAutoAdvance(6000);
+    advanceHomeEpisodeCarousel(1, homeEpisodeCarousel.maxIndex);
+  });
+
+  const homeEpisodeCarouselTrack = homeEpisodeCarouselShell.querySelector('.home-episode-carousel-track');
+  const hasMobilePreview = isMobile
+    && homeEpisodeCarousel.visibleCount === 1
+    && homeEpisodeCarousel.maxIndex > 0
+    && homeEpisodeCarouselTrack?.classList.contains('is-mobile-preview');
+
+  if (homeEpisodeCarousel.maxIndex > 0) {
+    let swipeAxis = '';
+    const resetSwipeState = () => {
+      homeEpisodeSwipeTracking = false;
+      homeEpisodeSwipePointerId = null;
+      swipeAxis = '';
+      homeEpisodeCarouselTrack?.classList.remove('is-dragging');
+      homeEpisodeCarouselTrack?.style.setProperty('--home-episode-drag-offset', '0px');
+      scheduleHomeEpisodeAutoAdvance(homeEpisodeCarousel.maxIndex);
+    };
+
+    const applyMobilePreviewMetrics = () => {
+      if (!(homeEpisodeCarouselTrack instanceof HTMLElement) || !hasMobilePreview) return;
+      const previewPeek = 26;
+      const previewGap = 14;
+      const previewCardWidth = Math.max(homeEpisodeCarouselTrack.getBoundingClientRect().width - previewPeek * 2, 220);
+      homeEpisodeCarouselTrack.style.setProperty('--home-episode-preview-peek', `${previewPeek}px`);
+      homeEpisodeCarouselTrack.style.setProperty('--home-episode-preview-gap', `${previewGap}px`);
+      homeEpisodeCarouselTrack.style.setProperty('--home-episode-preview-card-width', `${previewCardWidth}px`);
+      homeEpisodeCarouselTrack.style.setProperty('--home-episode-drag-offset', '0px');
+    };
+
+    applyMobilePreviewMetrics();
+
+    homeEpisodeCarouselShell.addEventListener('pointerdown', (event) => {
+      if (hasMobilePreview && event.pointerType === 'touch') return;
+      if (event.target.closest('button, input, textarea, select, summary, .chip')) return;
+      if (!hasMobilePreview && event.target.closest('a')) return;
+      if (event.pointerType === 'mouse' && event.button !== 0) return;
+      pauseHomeEpisodeAutoAdvance(7000);
+      homeEpisodeSwipeTracking = true;
+      homeEpisodeSwipePointerId = event.pointerId;
+      homeEpisodeSwipeStartX = event.clientX;
+      homeEpisodeSwipeStartY = event.clientY;
+      swipeAxis = '';
+      if (hasMobilePreview) {
+        applyMobilePreviewMetrics();
+        homeEpisodeCarouselTrack?.classList.add('is-dragging');
+        homeEpisodeCarouselShell.setPointerCapture?.(event.pointerId);
+      }
+    });
+    homeEpisodeCarouselShell.addEventListener('pointermove', (event) => {
+      if (hasMobilePreview && event.pointerType === 'touch') return;
+      if (!homeEpisodeSwipeTracking || (homeEpisodeSwipePointerId !== null && event.pointerId !== homeEpisodeSwipePointerId)) return;
+      const deltaX = event.clientX - homeEpisodeSwipeStartX;
+      const deltaY = event.clientY - homeEpisodeSwipeStartY;
+      if (!swipeAxis && (Math.abs(deltaX) > 8 || Math.abs(deltaY) > 8)) {
+        swipeAxis = Math.abs(deltaX) > Math.abs(deltaY) * 1.12 ? 'x' : 'y';
+      }
+      if (!hasMobilePreview || swipeAxis !== 'x') return;
+      event.preventDefault();
+      const dragOffset = Math.max(Math.min(deltaX, 88), -88);
+      homeEpisodeCarouselTrack?.style.setProperty('--home-episode-drag-offset', `${dragOffset}px`);
+    });
+    homeEpisodeCarouselShell.addEventListener('pointerup', (event) => {
+      if (hasMobilePreview && event.pointerType === 'touch') return;
+      if (!homeEpisodeSwipeTracking || (homeEpisodeSwipePointerId !== null && event.pointerId !== homeEpisodeSwipePointerId)) return;
+      const deltaX = event.clientX - homeEpisodeSwipeStartX;
+      const deltaY = event.clientY - homeEpisodeSwipeStartY;
+      const activeAxis = swipeAxis || (Math.abs(deltaX) > Math.abs(deltaY) * 1.15 ? 'x' : 'y');
+      if (hasMobilePreview && activeAxis === 'x') {
+        const selection = window.getSelection?.()?.toString()?.trim() || '';
+        if (!selection && Math.abs(deltaX) >= 42) {
+          homeEpisodeCarouselTrack?.style.setProperty('--home-episode-drag-offset', `${deltaX > 0 ? 112 : -112}px`);
+          window.setTimeout(() => {
+            pauseHomeEpisodeAutoAdvance(6500);
+            advanceHomeEpisodeCarousel(deltaX > 0 ? -1 : 1, homeEpisodeCarousel.maxIndex);
+          }, 92);
+          resetSwipeState();
+          return;
+        }
+      }
+      resetSwipeState();
+      if (Math.abs(deltaX) < (isMobile ? 24 : 42)) return;
+      if (activeAxis !== 'x' || Math.abs(deltaX) <= Math.abs(deltaY) * 1.15) return;
+      const selection = window.getSelection?.()?.toString()?.trim() || '';
+      if (selection && !hasMobilePreview) return;
+      advanceHomeEpisodeCarousel(deltaX > 0 ? -1 : 1, homeEpisodeCarousel.maxIndex);
+    });
+    homeEpisodeCarouselShell.addEventListener('pointerleave', () => {
+      if (!hasMobilePreview) {
+        homeEpisodeSwipeTracking = false;
+        homeEpisodeSwipePointerId = null;
+      }
+    });
+    homeEpisodeCarouselShell.addEventListener('pointercancel', () => {
+      resetSwipeState();
+    });
+
+    if (hasMobilePreview) {
+      homeEpisodeCarouselShell.addEventListener('touchstart', (event) => {
+        if (event.touches.length !== 1) return;
+        if (event.target.closest('button, input, textarea, select, summary, .chip')) return;
+        const touch = event.touches[0];
+        pauseHomeEpisodeAutoAdvance(7000);
+        homeEpisodeSwipeTracking = true;
+        homeEpisodeSwipeStartX = touch.clientX;
+        homeEpisodeSwipeStartY = touch.clientY;
+        swipeAxis = '';
+        applyMobilePreviewMetrics();
+        homeEpisodeCarouselTrack?.classList.add('is-dragging');
+      }, { passive: true });
+
+      homeEpisodeCarouselShell.addEventListener('touchmove', (event) => {
+        if (!homeEpisodeSwipeTracking || event.touches.length !== 1) return;
+        const touch = event.touches[0];
+        const deltaX = touch.clientX - homeEpisodeSwipeStartX;
+        const deltaY = touch.clientY - homeEpisodeSwipeStartY;
+        if (!swipeAxis && (Math.abs(deltaX) > 8 || Math.abs(deltaY) > 8)) {
+          swipeAxis = Math.abs(deltaX) > Math.abs(deltaY) * 1.12 ? 'x' : 'y';
+        }
+        if (swipeAxis !== 'x') return;
+        event.preventDefault();
+        const dragOffset = Math.max(Math.min(deltaX, 88), -88);
+        homeEpisodeCarouselTrack?.style.setProperty('--home-episode-drag-offset', `${dragOffset}px`);
+      }, { passive: false });
+
+      homeEpisodeCarouselShell.addEventListener('touchend', (event) => {
+        if (!homeEpisodeSwipeTracking) return;
+        const touch = event.changedTouches[0];
+        const deltaX = touch.clientX - homeEpisodeSwipeStartX;
+        const deltaY = touch.clientY - homeEpisodeSwipeStartY;
+        const activeAxis = swipeAxis || (Math.abs(deltaX) > Math.abs(deltaY) * 1.15 ? 'x' : 'y');
+        if (activeAxis === 'x' && Math.abs(deltaX) >= 42) {
+          homeEpisodeCarouselTrack?.style.setProperty('--home-episode-drag-offset', `${deltaX > 0 ? 112 : -112}px`);
+          window.setTimeout(() => {
+            pauseHomeEpisodeAutoAdvance(6500);
+            advanceHomeEpisodeCarousel(deltaX > 0 ? -1 : 1, homeEpisodeCarousel.maxIndex);
+          }, 92);
+          resetSwipeState();
+          return;
+        }
+        resetSwipeState();
+      }, { passive: true });
+
+      homeEpisodeCarouselShell.addEventListener('touchcancel', () => {
+        resetSwipeState();
+      }, { passive: true });
+    }
+  }
+
+  scheduleHomeEpisodeAutoAdvance(homeEpisodeCarousel.maxIndex);
+}
+
+function renderHomeEpisodeCarousel({ direction = 0 } = {}) {
+  const homeEpisodeCarouselShell = document.querySelector('.home-episode-carousel-shell');
+  if (!(homeEpisodeCarouselShell instanceof HTMLElement)) return;
+  const featuredEpisodes = getHomeFeaturedEpisodes();
+  const homeEpisodeCarousel = homeEpisodeCarouselState(featuredEpisodes);
+  const isMobile = useMobileHomeLayout();
+  lastHomeEpisodeVisibleCount = homeEpisodeCarousel.visibleCount;
+
+  const mount = () => {
+    homeEpisodeCarouselShell.innerHTML = renderHomeEpisodeCarouselMarkup(homeEpisodeCarousel, featuredEpisodes, {
+      mobilePreview: isMobile
+    });
+    bindHomeEpisodeCarousel(homeEpisodeCarouselShell, homeEpisodeCarousel, isMobile);
+  };
+
+  if (!direction) {
+    mount();
+    return;
+  }
+
+  const currentScrollY = window.scrollY;
+  const currentScrollX = window.scrollX;
+  const outgoingTrack = homeEpisodeCarouselShell.querySelector('.home-episode-carousel-track');
+  const outgoingShift = `${direction > 0 ? (isMobile ? -116 : -34) : (isMobile ? 116 : 34)}px`;
+  const incomingShift = `${direction > 0 ? (isMobile ? 116 : 34) : (isMobile ? -116 : -34)}px`;
+  window.clearTimeout(sectionSnapTimer);
+  suspendSnapUntil = Date.now() + 960;
+  lastSnapTargetTop = -1;
+
+  if (!(outgoingTrack instanceof HTMLElement)) {
+    mount();
+    scrollWindowInstantly(currentScrollY, currentScrollX);
+    return;
+  }
+
+  outgoingTrack.style.setProperty('--home-episode-shift', outgoingShift);
+  outgoingTrack.classList.add('is-animating-out');
+
+  window.setTimeout(() => {
+    mount();
+    scrollWindowInstantly(currentScrollY, currentScrollX);
+    window.requestAnimationFrame(() => {
+      scrollWindowInstantly(currentScrollY, currentScrollX);
+    });
+    const incomingTrack = homeEpisodeCarouselShell.querySelector('.home-episode-carousel-track');
+    if (incomingTrack instanceof HTMLElement) {
+      incomingTrack.style.setProperty('--home-episode-shift', incomingShift);
+      incomingTrack.classList.add('is-animating-in');
+      window.requestAnimationFrame(() => {
+        incomingTrack.classList.add('is-animating');
+      });
+      window.setTimeout(() => {
+        incomingTrack.classList.remove('is-animating', 'is-animating-in');
+        incomingTrack.style.removeProperty('--home-episode-shift');
+        homeEpisodeCarouselAnimating = false;
+      }, 280);
+      return;
+    }
+    homeEpisodeCarouselAnimating = false;
+  }, 150);
+}
+
 function renderHome(focusSectionId = '') {
-  const isMobile = window.matchMedia('(max-width: 768px)').matches;
-  const episodesByNewest = [...site.episodes].sort((a, b) => episodeNumberFromId(b.id) - episodeNumberFromId(a.id));
-  const featuredEpisodes = episodesByNewest;
+  const isMobile = useMobileHomeLayout();
+  const featuredEpisodes = getHomeFeaturedEpisodes();
+  const homeEpisodeCarousel = homeEpisodeCarouselState(featuredEpisodes);
+  lastHomeEpisodeVisibleCount = homeEpisodeCarousel.visibleCount;
+  lastHomeMobileLayout = isMobile;
+  const peopleCount = getPeopleKeywords(PERSON_NAV_MIN_REFERENCES).length;
   const statCards = [
-    {
-      href: '#/graph',
-      value: graphStatValue(),
-      label: '图谱节点',
-      tone: 'graph'
-    },
     {
       href: '#/episodes',
       value: site.stats.episodes,
@@ -2131,16 +2605,35 @@ function renderHome(focusSectionId = '') {
       value: site.stats.models,
       label: '思想模型',
       tone: 'models'
+    },
+    {
+      href: '#/people',
+      value: peopleCount,
+      label: '人物',
+      tone: 'people'
     }
   ];
   const visibleStatCards = isMobile
     ? []
     : statCards;
+  const heroFireworksMarkup = !isMobile ? `
+    <div class="hero-fireworks" id="hero-fireworks" aria-hidden="true">
+      <div class="hero-firework-burst burst-center">
+        ${Array.from({ length: 14 }, (_, index) => `<span class="hero-firework-particle center-${index + 1}"></span>`).join('')}
+      </div>
+    </div>
+  ` : '';
 
   app.innerHTML = `
     <section class="hero">
       <div class="hero-title-row">
-        <h1>颖响力 <span>知识库</span></h1>
+        <h1>
+          <button id="hero-title-trigger" class="hero-title-trigger" type="button">
+            <span class="hero-title-primary">颖响力</span>
+            <span class="hero-title-secondary">知识库</span>
+          </button>
+        </h1>
+        ${heroFireworksMarkup}
       </div>
       <div class="hero-platform-links">
         ${HOME_PLATFORM_LINKS.map((link) => renderVideoLinkIcon(link)).join('')}
@@ -2178,20 +2671,14 @@ function renderHome(focusSectionId = '') {
 
     <section id="home-episodes" class="section">
       <div class="section-header">
-        <h2 class="section-title">节目索引</h2>
+        <div class="section-heading-shell">
+          <h2 class="section-title">节目索引</h2>
+        </div>
         <a class="section-note" href="#/episodes">查看全部节目</a>
       </div>
-      <div class="grid cards-3">
-        ${featuredEpisodes.slice(0, 3).map((episode) => `
-          <article class="card" data-episode-href="${routeTo(`episodes/${episode.id}`)}">
-            <p class="card-kicker">${escapeHtml(episode.id)} ${episode.curated ? '· 已整理' : '· 待整理'}</p>
-            <a class="card-primary-link" href="${routeTo(`episodes/${episode.id}`)}">
-              <h3>${escapeHtml(displayEpisodeTitle(episode.title))}</h3>
-            </a>
-            <p>${escapeHtml(episode.summary || '待整理')}</p>
-            ${linkedChipList('keywords', (episode.tags || []).slice(0, 5), site.keywords)}
-          </article>
-        `).join('')}
+      <div class="home-episode-carousel-shell${isMobile ? ' mobile' : ''}">
+        ${renderHomeEpisodeCarouselMarkup(homeEpisodeCarousel, featuredEpisodes, { mobilePreview: isMobile })}
+      </div>
       </div>
     </section>
 
@@ -2246,7 +2733,7 @@ function renderHome(focusSectionId = '') {
             `主题 ${site.stats.themes}`
           ])}
         </article>
-        <article class="card" data-card-href="#/graph">
+        <article class="card graph-guide-card" data-card-href="#/graph">
           <p class="card-kicker">How To Read</p>
           <a class="card-primary-link" href="#/graph">
             <h3>先找高连接节点，再顺着局部关系钻进去</h3>
@@ -2264,6 +2751,9 @@ function renderHome(focusSectionId = '') {
   searchInput.value = homeKnowledgeQuery;
   searchInput.addEventListener('input', (event) => {
     homeKnowledgeQuery = event.target.value;
+    if (homeKnowledgeQuery.trim()) {
+      revealHomeSearchForQuery();
+    }
     renderKnowledgeSuggestions({
       containerId: 'home-search-results',
       titleId: 'home-search-title',
@@ -2291,6 +2781,19 @@ function renderHome(focusSectionId = '') {
     rerollHomeRecommendations();
   });
 
+  const heroTitleTrigger = document.getElementById('hero-title-trigger');
+  const heroFireworks = document.getElementById('hero-fireworks');
+  if (heroTitleTrigger && heroFireworks && !isMobile) {
+    heroTitleTrigger.addEventListener('click', () => {
+      heroFireworks.classList.remove('is-bursting');
+      void heroFireworks.offsetWidth;
+      heroFireworks.classList.add('is-bursting');
+      window.setTimeout(() => {
+        heroFireworks.classList.remove('is-bursting');
+      }, 1100);
+    });
+  }
+
   if (homeSearchToolbar) {
     setupHomeSearchToolbarBehavior(homeSearchToolbar);
   }
@@ -2303,6 +2806,9 @@ function renderHome(focusSectionId = '') {
       window.location.hash = href;
     });
   });
+  if (floatingActionsExpanded) {
+    scheduleFloatingActionsAutoCollapse();
+  }
   app.querySelectorAll('.card[data-card-href]').forEach((card) => {
     card.addEventListener('click', (event) => {
       if (event.target.closest('a, button, input, textarea, select, summary')) return;
@@ -2311,6 +2817,10 @@ function renderHome(focusSectionId = '') {
       window.location.hash = href;
     });
   });
+  const homeEpisodeCarouselShell = document.querySelector('.home-episode-carousel-shell');
+  if (homeEpisodeCarouselShell) {
+    bindHomeEpisodeCarousel(homeEpisodeCarouselShell, homeEpisodeCarousel, isMobile);
+  }
 
   scrollToSection(focusSectionId);
 }
