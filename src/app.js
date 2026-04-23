@@ -25,6 +25,30 @@ const HOME_PLATFORM_LINKS = [
 ];
 const WEBSITE_LOG_ENTRIES = [
   {
+    date: '2026-04-24',
+    title: '节目索引关键词可跳转、轮盘定位修正与可点击态强化',
+    items: [
+      '节目索引卡片改成和首页一致：整卡进入节目详情，关键词标签单独进入对应关键词页。',
+      '节目索引卡片里删掉无意义的“关键词”提示字样，头部说明也收成更干净的标题区。',
+      '节目索引右侧“节目轮盘”打开时会自动滚到当前节目，不再总是从顶部开始显示。',
+      '首页与节目索引里的关键词链接重新拉开默认态颜色，让用户更容易看出这些标签可以点击。',
+      '关键词在深色卡片上的 hover 状态统一改回浅底高亮，避免悬停后和背景糊在一起看不清。',
+      '补齐并固定这批首页 / 节目索引交互的移动端 UI 冒烟检查，发布前统一跑桌面与移动回归。'
+    ]
+  },
+  {
+    date: '2026-04-23',
+    title: '首页状态规则回收，折叠箭头修复，桌面轮播恢复多卡',
+    items: [
+      '修复移动端折叠态“向上”按钮图标异常：Safari 缩放下不再把箭头渲染成一个点。',
+      '首页节目卡片状态文案恢复为“新 / 已整理 / 待整理”三态，不再把会员状态塞进首页卡片眉标。',
+      'EP124 的 B 站链接继续保留会员数据，但会员标识只留在节目详情页视频入口，不再干扰首页状态判断。',
+      '桌面首页节目区恢复按宽度显示 1-3 张，不再和移动端强行共用单卡布局。',
+      '桌面节目切换改回更稳定的直接切换，先消掉卡顿和闪烁，再保留多卡可读性。',
+      '补入项目内自动化 UI 回归命令，桌面与移动端统一纳入固定冒烟检查。'
+    ]
+  },
+  {
     date: '2026-04-23',
     title: '移动端首页继续收紧，视频链接与交互问题修复',
     items: [
@@ -129,13 +153,18 @@ let homeEpisodeCarouselIndex = 0;
 let sidebarKeywordQuery = '';
 let keywordIndexQuery = '';
 let episodeIndexQuery = '';
+let episodeIndexAppliedQuery = '';
 let episodeIndexRangeStart = 0;
+let episodeIndexSearchMode = false;
+let episodeIndexFocusSearchOnRender = false;
 let conceptIndexQuery = '';
 let modelIndexQuery = '';
 let peopleIndexQuery = '';
 let themeIndexQuery = '';
 let episodeToolbarController = null;
 let homeSearchToolbarController = null;
+let episodeIndexSearchController = null;
+let episodeIndexSearchAutoHideTimer = 0;
 let sectionSnapTimer = 0;
 let scrollDirection = 1;
 let lastScrollY = 0;
@@ -149,6 +178,7 @@ let homeEpisodeSwipeStartX = 0;
 let homeEpisodeSwipeStartY = 0;
 let homeEpisodeSwipePointerId = null;
 let homeEpisodeSwipeTracking = false;
+let homeEpisodeCarouselBindingsController = null;
 let homeEpisodeCarouselAnimating = false;
 let contentRevealObserver = null;
 let suspendSnapUntil = 0;
@@ -163,6 +193,7 @@ let lastScrollSpeed = 0;
 let sectionProgressPanelOpen = false;
 let sectionProgressActiveIndex = -1;
 let sectionProgressPulseTimer = 0;
+let sectionProgressAutoCloseTimer = 0;
 let lastHomeEpisodeVisibleCount = 3;
 let lastHomeMobileLayout = false;
 let mobileViewportResetTimer = 0;
@@ -171,7 +202,9 @@ let lastRenderedHash = window.location.hash || '#/';
 let sidebarLockedScrollY = 0;
 const PERSON_NAV_MIN_REFERENCES = 2;
 const HOME_EPISODE_AUTO_ADVANCE_MS = 7000;
+const HOME_EPISODE_DESKTOP_AUTO_ADVANCE_MS = 11000;
 const HOME_EPISODE_ANIMATION_MS = 644;
+const HOME_EPISODE_DESKTOP_ANIMATION_MS = 520;
 const DESKTOP_SIDEBAR_STORAGE_KEY = 'yinfluence-sidebar-collapsed';
 const SNAP_SECTION_SELECTOR = '.hero, .home-search-toolbar, .home-search-section, .section, .detail-header, .detail-section';
 const PROGRESS_SECTION_SELECTOR = '.hero, .home-search-section, .section, .detail-header, .detail-section';
@@ -356,6 +389,9 @@ function getProgressSections() {
   });
 
   if (explicitSections.length) {
+    if (document.body.classList.contains('page-episode-index')) {
+      return explicitSections;
+    }
     const headerSections = [...app.querySelectorAll('.hero, .detail-header')].filter((section) => {
       if (!(section instanceof HTMLElement)) return false;
       const rect = section.getBoundingClientRect();
@@ -376,6 +412,9 @@ function getSectionProgressLabel(section) {
   if (section.classList.contains('hero')) return '首页';
   const explicitLabel = section.dataset.progressLabel?.trim();
   if (explicitLabel) {
+    if (document.body.classList.contains('page-episode-index')) {
+      return explicitLabel;
+    }
     return explicitLabel.length > 8 ? `${explicitLabel.slice(0, 8)}…` : explicitLabel;
   }
   const selectorPriority = ['.detail-title', '.section-title', 'h1', 'h2', 'h3', '.search-subtitle', '.detail-eyebrow'];
@@ -449,7 +488,7 @@ function renderSectionProgressPanel() {
 
   sectionProgressPanel.innerHTML = `
     <div class="section-progress-panel-card">
-      <p class="section-progress-panel-title">页面章节</p>
+      <p class="section-progress-panel-title">${document.body.classList.contains('page-episode-index') ? '节目轮盘' : '页面章节'}</p>
       <div class="section-progress-panel-list">
         ${sections.map((section, index) => `
           <button class="section-progress-panel-item" type="button" data-section-progress-target="${index}">
@@ -460,6 +499,24 @@ function renderSectionProgressPanel() {
       </div>
     </div>
   `;
+}
+
+function scrollActiveSectionProgressItemIntoView({ behavior = 'auto' } = {}) {
+  if (!sectionProgressPanelOpen || !(sectionProgressPanel instanceof HTMLElement)) return;
+  const list = sectionProgressPanel.querySelector('.section-progress-panel-list');
+  const activeItem = sectionProgressPanel.querySelector('.section-progress-panel-item.is-active');
+  if (!(list instanceof HTMLElement) || !(activeItem instanceof HTMLElement)) return;
+
+  const listRect = list.getBoundingClientRect();
+  const activeRect = activeItem.getBoundingClientRect();
+  const currentScrollTop = list.scrollTop;
+  const targetScrollTop = currentScrollTop + (activeRect.top - listRect.top) - (listRect.height - activeRect.height) / 2;
+  const maxScrollTop = Math.max(list.scrollHeight - list.clientHeight, 0);
+
+  list.scrollTo({
+    top: Math.min(Math.max(targetScrollTop, 0), maxScrollTop),
+    behavior
+  });
 }
 
 function syncSectionProgress() {
@@ -500,6 +557,11 @@ function syncSectionProgress() {
   if (activeIndex !== sectionProgressActiveIndex) {
     sectionProgressActiveIndex = activeIndex;
     pulseSectionProgressWheel();
+    if (sectionProgressPanelOpen) {
+      window.requestAnimationFrame(() => {
+        scrollActiveSectionProgressItemIntoView({ behavior: 'smooth' });
+      });
+    }
   }
 }
 
@@ -535,6 +597,7 @@ function clearSectionProgressEffects() {
   window.clearTimeout(sectionProgressHideTimer);
   window.clearTimeout(sectionProgressBlurTimer);
   window.clearTimeout(sectionProgressPulseTimer);
+  window.clearTimeout(sectionProgressAutoCloseTimer);
   sectionProgress?.classList.remove('is-visible');
   sectionProgress?.classList.remove('is-pulsing');
   document.body.classList.remove('section-progress-fast');
@@ -561,9 +624,20 @@ function setSectionProgressPanelOpen(open) {
   if (open) {
     window.clearTimeout(sectionProgressHideTimer);
     window.clearTimeout(sectionProgressBlurTimer);
+    window.clearTimeout(sectionProgressAutoCloseTimer);
     sectionProgress.classList.add('is-visible');
     document.body.classList.remove('section-progress-fast');
+    window.requestAnimationFrame(() => {
+      syncSectionProgress();
+      scrollActiveSectionProgressItemIntoView({ behavior: 'auto' });
+    });
+    if (!document.body.classList.contains('page-episode-index')) {
+      sectionProgressAutoCloseTimer = window.setTimeout(() => {
+        closeSectionProgressPanel({ keepWheelVisible: true });
+      }, 1800);
+    }
   } else {
+    window.clearTimeout(sectionProgressAutoCloseTimer);
     closeSectionProgressPanel({ keepWheelVisible: true });
   }
 }
@@ -571,6 +645,7 @@ function setSectionProgressPanelOpen(open) {
 function shouldAssistSectionSnap() {
   if (!document.body.classList.contains('has-assisted-snap')) return false;
   if (document.body.classList.contains('sidebar-open')) return false;
+  if (document.body.classList.contains('page-episode-index')) return false;
   if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return false;
   if (window.location.hash.replace(/^#\/?/, '').startsWith('graph')) return false;
   if (Date.now() < suspendSnapUntil) return false;
@@ -729,7 +804,14 @@ function setupRevealAnimations() {
   teardownRevealAnimations();
   if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
 
-  const revealTargets = [...document.querySelectorAll(REVEAL_SELECTOR)].filter((node) => node instanceof HTMLElement);
+  const revealTargets = [...document.querySelectorAll(REVEAL_SELECTOR)]
+    .filter((node) => node instanceof HTMLElement)
+    .filter((node) => {
+      if (!(node instanceof HTMLElement)) return false;
+      if (!document.body.classList.contains('page-episode-index')) return true;
+      if (!isMobileViewport()) return true;
+      return !node.matches('#episode-index-results .list-item, .episode-index-toolbar-shell, .episode-index-toolbar');
+    });
   if (!revealTargets.length) return;
 
   if (isHomeRoute()) {
@@ -831,6 +913,11 @@ desktopMenuButton?.addEventListener('click', () => {
 sidebarClose.addEventListener('click', closeSidebar);
 sidebarBackdrop?.addEventListener('click', closeSidebar);
 backToTopButton?.addEventListener('click', () => {
+  if (window.scrollY <= 8) {
+    setFloatingActionsExpanded(true);
+    scheduleFloatingActionsAutoCollapse();
+    return;
+  }
   animateWindowScrollTo(0, { durationScale: 1.25 });
 });
 function bindHomeSurfaceToTop(selector) {
@@ -946,6 +1033,13 @@ sectionProgressPanel?.addEventListener('click', (event) => {
   const section = sections[index];
   if (!(section instanceof HTMLElement)) return;
   closeSectionProgressPanel();
+  if (document.body.classList.contains('page-episode-index')) {
+    const href = section.dataset.progressHref || section.getAttribute('href');
+    if (href) {
+      window.location.hash = href;
+      return;
+    }
+  }
   const top = Math.max(window.scrollY + section.getBoundingClientRect().top - 20, 0);
   animateWindowScrollTo(top, { durationScale: 1.05 });
 });
@@ -1031,8 +1125,8 @@ function summarizeHomeEpisodeSummary(value, { mobile = false } = {}) {
 
   const sentences = text.match(/[^。！？!?]+[。！？!?]?/g)?.map((item) => item.trim()).filter(Boolean) || [text];
   let summary = sentences[0] || text;
-  const maxChars = Math.max(168, Math.min(336, Math.round(text.length * 1.24)));
-  const minChars = Math.min(maxChars - 22, Math.max(132, Math.round(text.length * 0.96)));
+  const maxChars = Math.max(250, Math.min(540, Math.round(text.length * 1.56)));
+  const minChars = Math.min(maxChars - 32, Math.max(210, Math.round(text.length * 1.2)));
 
   let index = 1;
   while (summary.length < minChars && index < sentences.length) {
@@ -1066,11 +1160,6 @@ function renderLinkedEpisodeText(value) {
 
 function graphStatValue() {
   return graphData?.meta?.nodeCount || 0;
-}
-
-function chipList(items = []) {
-  if (!items.length) return '';
-  return `<div class="chip-row">${items.map((item) => `<span class="chip">${escapeHtml(item)}</span>`).join('')}</div>`;
 }
 
 function graphLinkedChipList(items = []) {
@@ -1341,6 +1430,113 @@ function keywordMatchesQuery(keyword, query) {
   return haystack.includes(normalizedQuery);
 }
 
+function referenceItemMatchesQuery(item, query) {
+  const normalizedQuery = String(query || '').trim().toLowerCase();
+  if (!normalizedQuery) return false;
+
+  const haystack = [
+    item?.id,
+    item?.name || '',
+    item?.title || '',
+    item?.summary || '',
+    item?.definition || '',
+    item?.description || '',
+    ...(item?.aliases || [])
+  ].join(' ').toLowerCase();
+
+  return haystack.includes(normalizedQuery);
+}
+
+function getEpisodeIndexSuggestionMatches(query) {
+  const trimmedQuery = String(query || '').trim();
+  if (!trimmedQuery || !site) return [];
+
+  const buildReferenceSuggestions = (collection = [], options = {}) => {
+    const {
+      type,
+      badge,
+      limit = 4,
+      nameFrom = (item) => item.name || item.title || item.id,
+      valueFrom = (item) => item.name || item.title || item.id
+    } = options;
+
+    return collection
+      .filter((item) => referenceItemMatchesQuery(item, trimmedQuery))
+      .sort((a, b) => {
+        const countDelta = referenceCount(b) - referenceCount(a);
+        if (countDelta !== 0) return countDelta;
+        return String(nameFrom(a)).localeCompare(String(nameFrom(b)), 'zh-Hans-CN');
+      })
+      .slice(0, limit)
+      .map((item) => ({
+        type,
+        id: item.id,
+        name: nameFrom(item),
+        value: valueFrom(item),
+        badge: referenceCount(item) > 0 ? `${badge} ${referenceCount(item)}` : badge
+      }));
+  };
+
+  const exactEpisodeId = normalizeEpisodeIdQuery(trimmedQuery);
+  const episodeSuggestions = [...(site.episodes || [])]
+    .filter((episode) => episodeMatchesQuery(episode, trimmedQuery))
+    .sort((a, b) => {
+      const aExact = a.id === exactEpisodeId;
+      const bExact = b.id === exactEpisodeId;
+      if (aExact !== bExact) return aExact ? -1 : 1;
+      return episodeNumberFromId(b.id) - episodeNumberFromId(a.id);
+    })
+    .slice(0, 4)
+    .map((episode) => ({
+      type: 'episode',
+      id: episode.id,
+      name: `${episode.id}｜${displayEpisodeTitle(episode.title)}`,
+      value: episode.id,
+      badge: '节目'
+    }));
+
+  const matches = [
+    ...buildReferenceSuggestions(site.keywords, { type: 'keyword', badge: '关键词', limit: 6, valueFrom: (item) => item.name || item.id }),
+    ...buildReferenceSuggestions(site.people, { type: 'person', badge: '人物', limit: 4, valueFrom: (item) => item.name || item.id }),
+    ...buildReferenceSuggestions(site.themes, { type: 'theme', badge: '主题', limit: 3, valueFrom: (item) => item.name || item.id }),
+    ...buildReferenceSuggestions(site.concepts, { type: 'concept', badge: '概念', limit: 3, valueFrom: (item) => item.name || item.id }),
+    ...buildReferenceSuggestions(site.models, { type: 'model', badge: '模型', limit: 3, valueFrom: (item) => item.name || item.id }),
+    ...episodeSuggestions
+  ];
+
+  const seen = new Set();
+  return matches.filter((match) => {
+    const key = `${match.type}:${match.id}`;
+    if (seen.has(key)) return false;
+    seen.add(key);
+    return true;
+  }).slice(0, 10);
+}
+
+function renderEpisodeIndexSuggestions(query) {
+  const container = document.getElementById('episode-index-suggestions');
+  if (!(container instanceof HTMLElement)) return;
+
+  const matches = getEpisodeIndexSuggestionMatches(query);
+  if (!String(query || '').trim() || !matches.length) {
+    container.innerHTML = '';
+    container.classList.add('hidden');
+    return;
+  }
+
+  container.innerHTML = matches.map((match) => `
+    <button
+      class="sidebar-suggestion search-suggestion episode-index-suggestion"
+      type="button"
+      data-episode-index-suggestion="${escapeHtml(match.value)}"
+    >
+      <span class="episode-index-suggestion-label">${escapeHtml(match.name)}</span>
+      <span class="count-badge">${escapeHtml(match.badge)}</span>
+    </button>
+  `).join('');
+  container.classList.remove('hidden');
+}
+
 function getEpisodeIndexSearchState(episodesByNumber, selectedRange, query) {
   const trimmedQuery = String(query || '').trim();
   const exactEpisodeId = normalizeEpisodeIdQuery(trimmedQuery);
@@ -1373,13 +1569,28 @@ function renderEpisodeIndexEpisodeList(episodes = []) {
 
   return `
     <div class="list">
-      ${episodes.map((episode) => `
-        <a class="list-item" href="${routeTo(`episodes/${episode.id}`)}">
-          <h3>${escapeHtml(episode.id)}｜${escapeHtml(displayEpisodeTitle(episode.title))}</h3>
-          <p>${escapeHtml(episode.summary || '待整理')}</p>
-          ${(episode.tags || []).length ? `<p class="inline-label">关键词</p>${chipList((episode.tags || []).slice(0, 6))}` : ''}
-        </a>
-      `).join('')}
+      ${episodes.map((episode) => {
+        const episodeHref = routeTo(`episodes/${episode.id}`);
+        return `
+        <article
+          class="list-item episode-index-card"
+          data-episode-href="${episodeHref}"
+          data-progress-href="${episodeHref}"
+          data-progress-section="true"
+          data-progress-label="${escapeHtml(`${episode.id.replace(/^EP/i, '')}集 ${displayEpisodeTitle(episode.title).replace(/\s+/g, '').slice(0, 12)}`)}"
+        >
+          <div class="episode-index-card-head">
+            <p class="card-kicker episode-index-kicker">${escapeHtml(episode.id)}</p>
+            <span class="episode-index-open">查看</span>
+          </div>
+          <a class="card-primary-link" href="${episodeHref}">
+            <h3>${escapeHtml(displayEpisodeTitle(episode.title))}</h3>
+          </a>
+          <p class="episode-index-summary">${escapeHtml(episode.summary || '待整理')}</p>
+          ${linkedChipList('keywords', (episode.tags || []).slice(0, 6), site.keywords)}
+        </article>
+      `;
+      }).join('')}
     </div>
   `;
 }
@@ -1396,6 +1607,147 @@ function scrollEpisodeResultsIntoView() {
       behavior: 'smooth'
     });
   });
+}
+
+function centerActiveEpisodeRangeButton(button, behavior = 'auto') {
+  if (!(button instanceof HTMLElement)) return;
+  const rail = button.closest('.episode-range-wheel');
+  if (!(rail instanceof HTMLElement)) return;
+
+  const railWidth = rail.clientWidth;
+  if (railWidth <= 0) return;
+
+  const targetLeft = button.offsetLeft - Math.max((railWidth - button.offsetWidth) / 2, 0);
+  const maxScrollLeft = Math.max(rail.scrollWidth - railWidth, 0);
+  rail.scrollTo({
+    left: Math.min(Math.max(targetLeft, 0), maxScrollLeft),
+    behavior
+  });
+}
+
+function clearEpisodeIndexSearchAutoHideTimer() {
+  window.clearTimeout(episodeIndexSearchAutoHideTimer);
+  episodeIndexSearchAutoHideTimer = 0;
+}
+
+function setupEpisodeRangeWheelDrag(wheel) {
+  if (!(wheel instanceof HTMLElement)) return;
+
+  let pointerId = null;
+  let startX = 0;
+  let startY = 0;
+  let startScrollLeft = 0;
+  let lastMoveX = 0;
+  let lastMoveAt = 0;
+  let velocityX = 0;
+  let isDragging = false;
+  let suppressClick = false;
+  let momentumFrame = 0;
+
+  const cancelMomentum = () => {
+    if (!momentumFrame) return;
+    window.cancelAnimationFrame(momentumFrame);
+    momentumFrame = 0;
+  };
+
+  const releasePointer = () => {
+    if (pointerId !== null && wheel.hasPointerCapture?.(pointerId)) {
+      wheel.releasePointerCapture(pointerId);
+    }
+    pointerId = null;
+  };
+
+  const clearDragging = () => {
+    releasePointer();
+    wheel.classList.remove('is-dragging');
+    isDragging = false;
+  };
+
+  const startMomentum = () => {
+    cancelMomentum();
+    if (Math.abs(velocityX) < 0.12) return;
+
+    let currentVelocity = velocityX * 18;
+    let previousAt = performance.now();
+
+    const step = (now) => {
+      const elapsed = Math.min(now - previousAt, 24);
+      previousAt = now;
+      wheel.scrollLeft += currentVelocity * elapsed;
+      currentVelocity *= 0.92;
+      if (Math.abs(currentVelocity) < 0.08) {
+        momentumFrame = 0;
+        return;
+      }
+      momentumFrame = window.requestAnimationFrame(step);
+    };
+
+    momentumFrame = window.requestAnimationFrame(step);
+  };
+
+  wheel.addEventListener('pointerdown', (event) => {
+    if (event.pointerType === 'mouse' && event.button !== 0) return;
+    cancelMomentum();
+    pointerId = event.pointerId;
+    startX = event.clientX;
+    startY = event.clientY;
+    startScrollLeft = wheel.scrollLeft;
+    lastMoveX = event.clientX;
+    lastMoveAt = event.timeStamp || performance.now();
+    velocityX = 0;
+    isDragging = false;
+    suppressClick = false;
+    wheel.setPointerCapture?.(pointerId);
+  });
+
+  wheel.addEventListener('pointermove', (event) => {
+    if (event.pointerId !== pointerId) return;
+
+    const deltaX = event.clientX - startX;
+    const deltaY = event.clientY - startY;
+
+    if (!isDragging) {
+      if (Math.abs(deltaX) < 6) return;
+      if (Math.abs(deltaX) <= Math.abs(deltaY)) {
+        clearDragging();
+        return;
+      }
+      isDragging = true;
+      suppressClick = true;
+      wheel.classList.add('is-dragging');
+    }
+
+    event.preventDefault();
+    wheel.scrollLeft = startScrollLeft - deltaX * 1.16;
+    const now = event.timeStamp || performance.now();
+    const deltaTime = Math.max(now - lastMoveAt, 1);
+    velocityX = (lastMoveX - event.clientX) / deltaTime;
+    lastMoveX = event.clientX;
+    lastMoveAt = now;
+  });
+
+  const finishDrag = (event) => {
+    if (pointerId !== null && event.pointerId !== pointerId) return;
+    const shouldStartMomentum = isDragging;
+    clearDragging();
+    if (shouldStartMomentum) {
+      startMomentum();
+    }
+    if (!suppressClick) return;
+    wheel.dataset.dragSuppressClick = 'true';
+    window.setTimeout(() => {
+      delete wheel.dataset.dragSuppressClick;
+    }, 220);
+  };
+
+  wheel.addEventListener('pointerup', finishDrag);
+  wheel.addEventListener('pointercancel', finishDrag);
+  wheel.addEventListener('lostpointercapture', finishDrag);
+  wheel.addEventListener('click', (event) => {
+    if (wheel.dataset.dragSuppressClick !== 'true') return;
+    event.preventDefault();
+    event.stopPropagation();
+  }, true);
 }
 
 function setupStickyToolbarBehavior(toolbar, config) {
@@ -1539,14 +1891,113 @@ function setupStickyToolbarBehavior(toolbar, config) {
 }
 
 function setupEpisodeToolbarBehavior(toolbar) {
-  setupStickyToolbarBehavior(toolbar, {
-    abortController: episodeToolbarController,
-    opacityVariable: '--episode-toolbar-opacity',
-    minimumHideY: isMobileViewport() ? 38 : 76,
-    assignController(controller) {
-      episodeToolbarController = controller;
+  if (isMobileViewport()) {
+    episodeToolbarController?.abort();
+    const controller = new AbortController();
+    episodeToolbarController = controller;
+    const { signal } = controller;
+    const shell = toolbar.parentElement;
+    if (!(shell instanceof HTMLElement)) return;
+    const topInset = 8;
+
+    const syncFrame = () => {
+      const frameTarget = toolbar.closest('.detail') || shell;
+      const frameRect = frameTarget.getBoundingClientRect();
+      toolbar.style.setProperty('--episode-toolbar-left', `${Math.max(frameRect.left, 8)}px`);
+      toolbar.style.setProperty('--episode-toolbar-width', `${Math.max(frameRect.width, 0)}px`);
+    };
+
+    const syncFloatingState = () => {
+      syncFrame();
+      const shouldFloat = shell.getBoundingClientRect().top <= topInset && window.scrollY > 0;
+
+      if (shouldFloat) {
+        toolbar.classList.add('is-floating');
+        toolbar.style.removeProperty('position');
+        toolbar.style.removeProperty('top');
+        toolbar.style.removeProperty('left');
+        toolbar.style.removeProperty('width');
+        shell.style.height = `${toolbar.offsetHeight}px`;
+        return;
+      }
+
+      toolbar.classList.remove('is-floating', 'is-hidden-by-scroll', 'is-ghost', 'is-engaged');
+      toolbar.style.removeProperty('--episode-toolbar-opacity');
+      toolbar.style.position = 'relative';
+      toolbar.style.top = '0';
+      toolbar.style.left = 'auto';
+      toolbar.style.width = 'auto';
+      shell.style.removeProperty('height');
+    };
+
+    window.addEventListener('resize', syncFloatingState, { passive: true, signal });
+    window.addEventListener('scroll', syncFloatingState, { passive: true, signal });
+    window.requestAnimationFrame(syncFloatingState);
+    return;
+  }
+
+  episodeToolbarController?.abort();
+  const controller = new AbortController();
+  episodeToolbarController = controller;
+  const { signal } = controller;
+  const shell = toolbar.parentElement;
+  if (!(shell instanceof HTMLElement)) return;
+  let lastScrollY = window.scrollY;
+
+  const syncFrame = () => {
+    const frameTarget = toolbar.closest('.detail') || shell;
+    const frameRect = frameTarget.getBoundingClientRect();
+    const horizontalInset = isMobileViewport() ? 10 : 0;
+    toolbar.style.setProperty('--episode-toolbar-left', `${Math.max(frameRect.left + horizontalInset, 8)}px`);
+    toolbar.style.setProperty('--episode-toolbar-width', `${Math.max(frameRect.width - horizontalInset * 2, 0)}px`);
+    shell.style.height = `${toolbar.offsetHeight}px`;
+  };
+
+  const syncVisibility = () => {
+    const currentScrollY = window.scrollY;
+    const delta = currentScrollY - lastScrollY;
+    const hideThreshold = isMobileViewport() ? 12 : 18;
+    const revealThreshold = isMobileViewport() ? 8 : 10;
+    const shouldHide = currentScrollY > (isMobileViewport() ? 120 : 180) && delta > hideThreshold && !toolbar.matches(':focus-within');
+    const shouldReveal = delta < -revealThreshold || currentScrollY <= (isMobileViewport() ? 72 : 120);
+
+    if (shouldHide) {
+      toolbar.classList.add('is-hidden-by-scroll');
+    } else if (shouldReveal) {
+      toolbar.classList.remove('is-hidden-by-scroll');
     }
-  });
+
+    lastScrollY = currentScrollY;
+  };
+
+  const engageToolbar = () => {
+    toolbar.classList.add('is-engaged');
+    toolbar.style.setProperty('--episode-toolbar-opacity', '1');
+  };
+
+  const releaseToolbar = () => {
+    toolbar.classList.remove('is-engaged');
+    toolbar.style.setProperty('--episode-toolbar-opacity', '1');
+  };
+
+  toolbar.classList.add('is-floating');
+  toolbar.classList.remove('is-hidden-by-scroll', 'is-ghost');
+  toolbar.style.setProperty('--episode-toolbar-opacity', '1');
+
+  toolbar.addEventListener('pointerdown', engageToolbar, { signal });
+  toolbar.addEventListener('focusin', engageToolbar, { signal });
+  document.addEventListener('click', (event) => {
+    if (toolbar.contains(event.target)) return;
+    if (toolbar.matches(':focus-within')) return;
+    releaseToolbar();
+  }, { signal });
+
+  window.addEventListener('resize', syncFrame, { passive: true, signal });
+  window.addEventListener('scroll', () => {
+    syncFrame();
+    syncVisibility();
+  }, { passive: true, signal });
+  window.requestAnimationFrame(syncFrame);
 }
 
 function setupHomeSearchToolbarBehavior(toolbar) {
@@ -1563,51 +2014,6 @@ function setupHomeSearchToolbarBehavior(toolbar) {
       homeSearchToolbarController = controller;
     }
   });
-}
-
-function buildEpisodeRangePagination(episodeRanges, selectedRangeStart, isCompact = false) {
-  if (!episodeRanges.length) return [];
-
-  const selectedIndex = Math.max(0, episodeRanges.findIndex((range) => range.start === selectedRangeStart));
-  if (isCompact) {
-    return {
-      selectedIndex,
-      items: [{
-        type: 'range',
-        range: episodeRanges[selectedIndex],
-        isActive: true
-      }]
-    };
-  }
-
-  const neighborCount = isCompact ? 0 : 1;
-  const visibleIndices = new Set([0, selectedIndex, episodeRanges.length - 1]);
-
-  for (let index = selectedIndex - neighborCount; index <= selectedIndex + neighborCount; index += 1) {
-    if (index >= 0 && index < episodeRanges.length) {
-      visibleIndices.add(index);
-    }
-  }
-
-  const sortedIndices = [...visibleIndices].sort((a, b) => a - b);
-  const items = [];
-
-  sortedIndices.forEach((index, position) => {
-    if (position > 0 && index - sortedIndices[position - 1] > 1) {
-      items.push({ type: 'ellipsis', id: `ellipsis-${index}` });
-    }
-
-    items.push({
-      type: 'range',
-      range: episodeRanges[index],
-      isActive: index === selectedIndex
-    });
-  });
-
-  return {
-    selectedIndex,
-    items
-  };
 }
 
 function linkedChipList(type, items = [], collection = []) {
@@ -2238,23 +2644,18 @@ function rerollHomeRecommendations() {
 function homeEpisodeVisibleCount() {
   if (useMobileHomeLayout()) return 1;
   const shell = document.querySelector('.home-episode-carousel-shell');
+  const viewport = shell?.querySelector?.('.home-episode-carousel-viewport');
   const homeSection = document.getElementById('home-episodes');
-  const shellWidth = shell instanceof HTMLElement
-    ? shell.getBoundingClientRect().width
-    : (homeSection instanceof HTMLElement ? homeSection.getBoundingClientRect().width : Math.max(app?.getBoundingClientRect?.().width || 0, 0));
-  const buttonWidth = 46;
-  const gapWidth = 16;
-  const availableWidth = Math.max(shellWidth - buttonWidth * 2 - gapWidth * 2, 0);
+  const availableWidth = viewport instanceof HTMLElement
+    ? viewport.getBoundingClientRect().width
+    : shell instanceof HTMLElement
+      ? shell.getBoundingClientRect().width
+      : homeSection instanceof HTMLElement
+        ? homeSection.getBoundingClientRect().width
+        : Math.max(app?.getBoundingClientRect?.().width || 0, 0);
 
-  if (availableWidth > 0) {
-    if (availableWidth >= 752) return 3;
-    if (availableWidth >= 496) return 2;
-    return 1;
-  }
-  if (window.innerWidth >= 1380) {
-    return 3;
-  }
-  if (window.innerWidth >= 1060) return 2;
+  if (availableWidth >= 1040) return 3;
+  if (availableWidth >= 690) return 2;
   return 1;
 }
 
@@ -2270,13 +2671,20 @@ function homeEpisodeCarouselState(episodes = [], visibleCount = homeEpisodeVisib
   };
 }
 
+function visibleEpisodeWindow(episodes = [], start = 0, visibleCount = homeEpisodeVisibleCount()) {
+  return episodes.slice(start, start + visibleCount);
+}
+
 function scheduleHomeEpisodeAutoAdvance(maxIndex) {
   window.clearTimeout(homeEpisodeCarouselTimer);
   if (maxIndex <= 0) return;
   const waitMs = Math.max(homeEpisodeAutoAdvancePausedUntil - Date.now(), 0);
+  const intervalMs = useMobileHomeLayout()
+    ? HOME_EPISODE_AUTO_ADVANCE_MS
+    : HOME_EPISODE_DESKTOP_AUTO_ADVANCE_MS;
   homeEpisodeCarouselTimer = window.setTimeout(() => {
     advanceHomeEpisodeCarousel(1, maxIndex);
-  }, Math.max(HOME_EPISODE_AUTO_ADVANCE_MS, waitMs));
+  }, Math.max(intervalMs, waitMs));
 }
 
 function pauseHomeEpisodeAutoAdvance(durationMs = 6500) {
@@ -2467,6 +2875,17 @@ function getHomeEpisodePositionLabel(episode, totalEpisodes) {
   return `第 ${Number.isFinite(episodeNumber) ? episodeNumber : 1} / ${totalEpisodes} 集`;
 }
 
+function getHomeEpisodeRangeLabel(episodes = [], totalEpisodes) {
+  const numbers = episodes
+    .map((episode) => episodeNumberFromId(episode?.id))
+    .filter((value) => Number.isFinite(value))
+    .sort((a, b) => a - b);
+
+  if (!numbers.length) return `第 1 / ${totalEpisodes} 集`;
+  if (numbers.length === 1) return `第 ${numbers[0]} / ${totalEpisodes} 集`;
+  return `第 ${numbers[0]}-${numbers[numbers.length - 1]} / ${totalEpisodes} 集`;
+}
+
 function isEpisodeFresh(episode) {
   if (episode?.recent) return true;
   const sourceTime = episode?.sourceMtime ? new Date(episode.sourceMtime).getTime() : NaN;
@@ -2485,16 +2904,24 @@ function renderEpisodeFreshBadge(episode, { compact = false } = {}) {
   return `<span class="episode-fresh-badge${compact ? ' compact' : ''}">新</span>`;
 }
 
+function renderHomeEpisodeKickerMeta(episode) {
+  if (isEpisodeFresh(episode)) {
+    return renderEpisodeFreshBadge(episode, { compact: true });
+  }
+  return episode.curated ? '· 已整理' : '· 待整理';
+}
+
 function renderHomeEpisodeCardMarkup(episode, { preview = false, mobileAction = false } = {}) {
   const summary = summarizeHomeEpisodeSummary(episode.summary, { mobile: mobileAction });
+  const visibleTags = mobileAction ? (episode.tags || []).slice(0, 3) : (episode.tags || []);
   return `
     <article class="card home-episode-card${preview ? ' is-preview' : ''}" data-episode-href="${routeTo(`episodes/${episode.id}`)}">
-      <p class="card-kicker">${escapeHtml(episode.id)} ${isEpisodeFresh(episode) ? renderEpisodeFreshBadge(episode, { compact: true }) : (episode.curated ? '· 已整理' : '· 待整理')}</p>
+      <p class="card-kicker">${escapeHtml(episode.id)} ${renderHomeEpisodeKickerMeta(episode)}</p>
       <a class="card-primary-link" href="${routeTo(`episodes/${episode.id}`)}">
         <h3>${escapeHtml(displayEpisodeTitle(episode.title))}</h3>
       </a>
       <p>${escapeHtml(summary)}</p>
-      ${linkedChipList('keywords', (episode.tags || []).slice(0, 3), site.keywords)}
+      ${linkedChipList('keywords', visibleTags, site.keywords)}
     </article>
   `;
 }
@@ -2515,6 +2942,15 @@ function renderHomeEpisodeMobileFooterMarkup(episode, totalEpisodes) {
   return `
     <div class="home-episodes-footer-mobile">
       <span class="home-episode-mobile-index">${getHomeEpisodePositionLabel(episode, totalEpisodes)}</span>
+      <a class="home-episodes-more-link" href="#/episodes">查看更多</a>
+    </div>
+  `;
+}
+
+function renderHomeEpisodeDesktopFooterMarkup(visibleEpisodes, totalEpisodes) {
+  return `
+    <div class="home-episodes-footer-desktop">
+      <span class="home-episode-desktop-index">${getHomeEpisodeRangeLabel(visibleEpisodes, totalEpisodes)}</span>
       <a class="home-episodes-more-link" href="#/episodes">查看更多</a>
     </div>
   `;
@@ -2558,6 +2994,7 @@ function renderHomeEpisodeCarouselMarkup(homeEpisodeCarousel, featuredEpisodes, 
         aria-label="显示更早一个节目"
         ${homeEpisodeCarousel.maxIndex > 0 ? '' : 'disabled'}
       >›</button>
+      ${renderHomeEpisodeDesktopFooterMarkup(homeEpisodeCarousel.visibleEpisodes, featuredEpisodes.length)}
     `}
   `;
 }
@@ -2582,20 +3019,60 @@ function renderHomeEpisodeMobileTransitionMarkup(outgoingEpisode, incomingEpisod
   `;
 }
 
+function renderHomeEpisodeDesktopTransitionMarkup(outgoingEpisodes, incomingEpisodes, visibleCount, direction, totalEpisodes) {
+  const orderedWindows = direction > 0
+    ? [outgoingEpisodes, incomingEpisodes]
+    : [incomingEpisodes, outgoingEpisodes];
+  const initialShift = direction > 0 ? '0%' : '-50%';
+
+  return `
+    <div class="home-episode-carousel-viewport is-desktop-transition">
+      <div class="home-episode-desktop-transition-strip" style="transform: translate3d(${initialShift}, 0, 0);">
+        ${orderedWindows.map((episodes) => `
+          <div class="home-episode-desktop-transition-pane">
+            <div class="home-episode-grid home-episode-grid-${visibleCount}">
+              ${episodes.map((episode) => renderHomeEpisodeCardMarkup(episode)).join('')}
+            </div>
+          </div>
+        `).join('')}
+      </div>
+    </div>
+    ${renderHomeEpisodeDesktopFooterMarkup(direction > 0 ? orderedWindows[1] : orderedWindows[0], totalEpisodes)}
+  `;
+}
+
 function bindHomeEpisodeCarousel(homeEpisodeCarouselShell, homeEpisodeCarousel, isMobile) {
+  homeEpisodeCarouselBindingsController?.abort();
+  homeEpisodeCarouselBindingsController = new AbortController();
+  const { signal } = homeEpisodeCarouselBindingsController;
+
   document.getElementById('home-episodes-prev')?.addEventListener('click', () => {
     pauseHomeEpisodeAutoAdvance(6000);
     advanceHomeEpisodeCarousel(-1, homeEpisodeCarousel.maxIndex);
-  });
+  }, { signal });
   document.getElementById('home-episodes-next')?.addEventListener('click', () => {
     pauseHomeEpisodeAutoAdvance(6000);
     advanceHomeEpisodeCarousel(1, homeEpisodeCarousel.maxIndex);
-  });
+  }, { signal });
 
   const homeEpisodeCarouselTrack = homeEpisodeCarouselShell.querySelector('.home-episode-carousel-track');
   const hasMobilePreview = isMobile
     && homeEpisodeCarousel.visibleCount === 1
     && homeEpisodeCarousel.maxIndex > 0;
+
+  homeEpisodeCarouselShell.addEventListener('click', (event) => {
+    const directEpisodeLink = event.target.closest('.card-primary-link, .home-episode-open-link');
+    if (directEpisodeLink && homeEpisodeCarouselShell.contains(directEpisodeLink)) {
+      event.preventDefault();
+      navigateToEpisodeFromElement(directEpisodeLink);
+      return;
+    }
+
+    const episodeCard = event.target.closest('.card[data-episode-href]');
+    if (!episodeCard || !homeEpisodeCarouselShell.contains(episodeCard)) return;
+    if (event.target.closest('.chip, button, input, textarea, select, summary, a')) return;
+    navigateToEpisodeFromElement(episodeCard);
+  }, { signal });
 
   if (homeEpisodeCarousel.maxIndex > 0) {
     let swipeAxis = '';
@@ -2624,7 +3101,7 @@ function bindHomeEpisodeCarousel(homeEpisodeCarouselShell, homeEpisodeCarousel, 
         homeEpisodeCarouselTrack?.classList.add('is-dragging');
         homeEpisodeCarouselShell.setPointerCapture?.(event.pointerId);
       }
-    });
+    }, { signal });
     homeEpisodeCarouselShell.addEventListener('pointermove', (event) => {
       if (hasMobilePreview && event.pointerType === 'touch') return;
       if (!homeEpisodeSwipeTracking || (homeEpisodeSwipePointerId !== null && event.pointerId !== homeEpisodeSwipePointerId)) return;
@@ -2637,7 +3114,7 @@ function bindHomeEpisodeCarousel(homeEpisodeCarouselShell, homeEpisodeCarousel, 
       event.preventDefault();
       const dragOffset = Math.max(Math.min(deltaX, 88), -88);
       homeEpisodeCarouselTrack?.style.setProperty('--home-episode-drag-offset', `${dragOffset}px`);
-    });
+    }, { signal });
     homeEpisodeCarouselShell.addEventListener('pointerup', (event) => {
       if (hasMobilePreview && event.pointerType === 'touch') return;
       if (!homeEpisodeSwipeTracking || (homeEpisodeSwipePointerId !== null && event.pointerId !== homeEpisodeSwipePointerId)) return;
@@ -2662,16 +3139,16 @@ function bindHomeEpisodeCarousel(homeEpisodeCarouselShell, homeEpisodeCarousel, 
       const selection = window.getSelection?.()?.toString()?.trim() || '';
       if (selection && !hasMobilePreview) return;
       advanceHomeEpisodeCarousel(deltaX > 0 ? -1 : 1, homeEpisodeCarousel.maxIndex);
-    });
+    }, { signal });
     homeEpisodeCarouselShell.addEventListener('pointerleave', () => {
       if (!hasMobilePreview) {
         homeEpisodeSwipeTracking = false;
         homeEpisodeSwipePointerId = null;
       }
-    });
+    }, { signal });
     homeEpisodeCarouselShell.addEventListener('pointercancel', () => {
       resetSwipeState();
-    });
+    }, { signal });
 
     if (hasMobilePreview) {
       homeEpisodeCarouselShell.addEventListener('touchstart', (event) => {
@@ -2685,7 +3162,7 @@ function bindHomeEpisodeCarousel(homeEpisodeCarouselShell, homeEpisodeCarousel, 
         swipeAxis = '';
         homeEpisodeCarouselTrack?.style.setProperty('--home-episode-drag-offset', '0px');
         homeEpisodeCarouselTrack?.classList.add('is-dragging');
-      }, { passive: true });
+      }, { passive: true, signal });
 
       homeEpisodeCarouselShell.addEventListener('touchmove', (event) => {
         if (!homeEpisodeSwipeTracking || event.touches.length !== 1) return;
@@ -2699,7 +3176,7 @@ function bindHomeEpisodeCarousel(homeEpisodeCarouselShell, homeEpisodeCarousel, 
         event.preventDefault();
         const dragOffset = Math.max(Math.min(deltaX, 88), -88);
         homeEpisodeCarouselTrack?.style.setProperty('--home-episode-drag-offset', `${dragOffset}px`);
-      }, { passive: false });
+      }, { passive: false, signal });
 
       homeEpisodeCarouselShell.addEventListener('touchend', (event) => {
         if (!homeEpisodeSwipeTracking) return;
@@ -2721,11 +3198,11 @@ function bindHomeEpisodeCarousel(homeEpisodeCarouselShell, homeEpisodeCarousel, 
         if (Math.abs(deltaX) < tapSlop && Math.abs(deltaY) < tapSlop && !event.target.closest('a, button, input, textarea, select, summary, .chip')) {
           navigateToEpisodeFromElement(event.target);
         }
-      }, { passive: true });
+      }, { passive: true, signal });
 
       homeEpisodeCarouselShell.addEventListener('touchcancel', () => {
         resetSwipeState();
-      }, { passive: true });
+      }, { passive: true, signal });
     }
   }
 
@@ -2793,73 +3270,48 @@ function renderHomeEpisodeCarousel({ direction = 0 } = {}) {
 
   const currentScrollY = window.scrollY;
   const currentScrollX = window.scrollX;
-  const outgoingTrack = homeEpisodeCarouselShell.querySelector('.home-episode-carousel-track');
-  const viewport = homeEpisodeCarouselShell.querySelector('.home-episode-carousel-viewport');
-  const animationDuration = HOME_EPISODE_ANIMATION_MS;
-  window.clearTimeout(sectionSnapTimer);
-  suspendSnapUntil = Date.now() + 960;
-  lastSnapTargetTop = -1;
+  const animationDuration = HOME_EPISODE_DESKTOP_ANIMATION_MS;
+  const outgoingIndex = getHomeEpisodeOutgoingIndex(homeEpisodeCarousel.currentIndex, direction, homeEpisodeCarousel.maxIndex);
+  const outgoingEpisodes = visibleEpisodeWindow(featuredEpisodes, outgoingIndex, homeEpisodeCarousel.visibleCount);
+  const incomingEpisodes = homeEpisodeCarousel.visibleEpisodes;
 
-  if (!(outgoingTrack instanceof HTMLElement) || !(viewport instanceof HTMLElement)) {
+  homeEpisodeCarouselShell.innerHTML = renderHomeEpisodeCarouselMarkup(homeEpisodeCarousel, featuredEpisodes, {
+    mobilePreview: false
+  });
+
+  const liveViewport = homeEpisodeCarouselShell.querySelector('.home-episode-carousel-viewport');
+  const lockedHeight = liveViewport instanceof HTMLElement ? liveViewport.getBoundingClientRect().height : 0;
+
+  homeEpisodeCarouselShell.innerHTML = renderHomeEpisodeDesktopTransitionMarkup(
+    outgoingEpisodes,
+    incomingEpisodes,
+    homeEpisodeCarousel.visibleCount,
+    direction,
+    featuredEpisodes.length
+  );
+
+  const desktopViewport = homeEpisodeCarouselShell.querySelector('.home-episode-carousel-viewport');
+  const desktopStrip = homeEpisodeCarouselShell.querySelector('.home-episode-desktop-transition-strip');
+  if (!(desktopViewport instanceof HTMLElement) || !(desktopStrip instanceof HTMLElement)) {
     mount();
-    if (!isMobile) {
-      scrollWindowInstantly(currentScrollY, currentScrollX);
-    }
-    return;
-  }
-
-  const outgoingClone = outgoingTrack.cloneNode(true);
-  if (!(outgoingClone instanceof HTMLElement)) {
-    mount();
-    if (!isMobile) {
-      scrollWindowInstantly(currentScrollY, currentScrollX);
-    }
-    homeEpisodeCarouselAnimating = false;
-    return;
-  }
-
-  mount();
-  if (!isMobile) {
     scrollWindowInstantly(currentScrollY, currentScrollX);
-  }
-
-  const nextViewport = homeEpisodeCarouselShell.querySelector('.home-episode-carousel-viewport');
-  const incomingTrack = homeEpisodeCarouselShell.querySelector('.home-episode-carousel-track');
-  if (!(nextViewport instanceof HTMLElement) || !(incomingTrack instanceof HTMLElement)) {
     homeEpisodeCarouselAnimating = false;
     return;
   }
 
-  const incomingCards = [...incomingTrack.querySelectorAll('.home-episode-card')];
-  const firstCard = incomingCards[0];
-  const secondCard = incomingCards[1];
-  const gap = secondCard instanceof HTMLElement && firstCard instanceof HTMLElement
-    ? Math.max(secondCard.getBoundingClientRect().left - firstCard.getBoundingClientRect().right, 0)
-    : 16;
-  const cardWidth = firstCard instanceof HTMLElement ? firstCard.getBoundingClientRect().width : nextViewport.getBoundingClientRect().width;
-  const stepDistance = Math.max(cardWidth + gap, 1);
-  const leaveShift = `${direction > 0 ? -stepDistance : stepDistance}px`;
-  const enterShift = `${direction > 0 ? stepDistance : -stepDistance}px`;
-
-  outgoingClone.classList.add('is-transition-outgoing');
-  outgoingClone.style.setProperty('--home-episode-leave-shift', leaveShift);
-  incomingTrack.classList.add('is-transition-incoming');
-  incomingTrack.style.setProperty('--home-episode-enter-shift', enterShift);
-  nextViewport.classList.add('is-transitioning');
-  nextViewport.prepend(outgoingClone);
+  if (lockedHeight > 0) {
+    desktopViewport.style.height = `${lockedHeight}px`;
+  }
 
   window.requestAnimationFrame(() => {
-    window.requestAnimationFrame(() => {
-      outgoingClone.classList.add('is-animating', 'is-active');
-      incomingTrack.classList.add('is-animating', 'is-active');
-    });
+    desktopStrip.classList.add('is-animating');
+    desktopStrip.style.transform = direction > 0
+      ? 'translate3d(-50%, 0, 0)'
+      : 'translate3d(0, 0, 0)';
   });
 
   window.setTimeout(() => {
-    outgoingClone.remove();
-    incomingTrack.classList.remove('is-transition-incoming', 'is-animating', 'is-active');
-    incomingTrack.style.removeProperty('--home-episode-enter-shift');
-    nextViewport.classList.remove('is-transitioning');
+    mount();
     scrollWindowInstantly(currentScrollY, currentScrollX);
     homeEpisodeCarouselAnimating = false;
   }, animationDuration);
@@ -2941,17 +3393,8 @@ function renderHome(focusSectionId = '') {
       </div>
     </section>
   `;
-  const episodeHeaderMarkup = isMobile ? '' : `
-    <div class="section-header">
-      <div class="section-heading-shell">
-        <h2 class="section-title">节目索引</h2>
-      </div>
-      <a class="section-note" href="#/episodes">查看全部节目</a>
-    </div>
-  `;
   const episodeSectionMarkup = `
     <section id="home-episodes" class="section${isMobile ? ' home-episodes-priority' : ''}">
-      ${episodeHeaderMarkup}
       <div class="home-episode-carousel-shell${isMobile ? ' mobile' : ''}"></div>
     </section>
   `;
@@ -3109,18 +3552,6 @@ function renderHome(focusSectionId = '') {
 
   renderHomeEpisodeCarousel();
 
-  app.querySelectorAll('#home-episodes .card[data-episode-href]').forEach((card) => {
-    card.addEventListener('click', (event) => {
-      if (event.target.closest('.chip, button, input, textarea, select, summary')) return;
-      navigateToEpisodeFromElement(event.target);
-    });
-  });
-  app.querySelectorAll('#home-episodes .card[data-episode-href] .card-primary-link, #home-episodes .home-episode-open-link').forEach((link) => {
-    link.addEventListener('click', (event) => {
-      event.preventDefault();
-      navigateToEpisodeFromElement(event.currentTarget);
-    });
-  });
   if (floatingActionsExpanded) {
     scheduleFloatingActionsAutoCollapse();
   }
@@ -3151,161 +3582,185 @@ function renderGraphPage() {
 
 function renderEpisodeIndex() {
   const isMobile = window.matchMedia('(max-width: 768px)').matches;
-  const keywordClusterLimit = isMobile ? 3 : 6;
-  const searchPlaceholder = isMobile ? '搜 EP031 / 伊朗 / 西贝' : '快速定位：EP031 / 伊朗 / 西贝为什么这么贵';
+  const searchPlaceholder = isMobile ? '搜 EP031 / 伊朗 / 西贝' : '搜索节目：EP031 / 伊朗 / 西贝为什么这么贵';
   const episodesByNumber = [...site.episodes].sort((a, b) => episodeNumberFromId(b.id) - episodeNumberFromId(a.id));
-  const keywordClusters = [...site.keywords]
-    .filter((keyword) => Array.isArray(keyword.episodes) && keyword.episodes.length)
-    .sort((a, b) => b.episodes.length - a.episodes.length || a.name.localeCompare(b.name, 'zh-Hans-CN'));
-  const topKeywordClusters = keywordClusters.slice(0, keywordClusterLimit);
   const episodeRanges = buildEpisodeRanges(episodesByNumber);
   const selectedRange = episodeRanges.find((range) => range.start === episodeIndexRangeStart) || episodeRanges[0];
-  const { selectedIndex } = buildEpisodeRangePagination(episodeRanges, selectedRange.start, isMobile);
-  const newerRange = selectedIndex > 0 ? episodeRanges[selectedIndex - 1] : null;
-  const olderRange = selectedIndex < episodeRanges.length - 1 ? episodeRanges[selectedIndex + 1] : null;
-  const initialSearchState = getEpisodeIndexSearchState(episodesByNumber, selectedRange, episodeIndexQuery);
-  const desktopToolbarMarkup = `
-    <div class="episode-index-toolbar">
-      <div class="section-header episode-index-header">
-        <div class="episode-search-panel">
-          <div class="search-row episode-search-row">
-            <input id="episode-index-search" type="text" placeholder="${escapeHtml(searchPlaceholder)}">
-            <button id="episode-index-search-clear" class="search-clear${initialSearchState.query ? '' : ' hidden'}" type="button">清空</button>
-          </div>
-        </div>
-      </div>
-      <div class="episode-toolbar-lower">
-        <div class="episode-range-shell">
-          <button
-            class="range-nav-button${newerRange ? '' : ' disabled'}"
-            type="button"
-            data-episode-range="${newerRange?.start ?? ''}"
-            ${newerRange ? '' : 'disabled'}
-          >${newerRange?.label || '—'}</button>
-          <div class="episode-range-tabs compact" aria-label="节目区间分页">
-            <span class="range-current-pill" aria-current="page">${selectedRange.label}</span>
-          </div>
-          <button
-            class="range-nav-button${olderRange ? '' : ' disabled'}"
-            type="button"
-            data-episode-range="${olderRange?.start ?? ''}"
-            ${olderRange ? '' : 'disabled'}
-          >${olderRange?.label || '—'}</button>
-        </div>
-        <p id="episode-search-note" class="episode-range-status${initialSearchState.query ? '' : ' hidden'}">${initialSearchState.query ? `当前匹配 ${initialSearchState.filteredEpisodes.length} 集节目。` : `当前区间 ${selectedRange.label} · 第 ${selectedIndex + 1} / ${episodeRanges.length} 组`}</p>
-      </div>
+  const selectedIndex = Math.max(0, episodeRanges.findIndex((range) => range.start === selectedRange.start));
+  const previousRange = selectedIndex > 0 ? episodeRanges[selectedIndex - 1] : episodeRanges[episodeRanges.length - 1] || null;
+  const nextRange = selectedIndex < episodeRanges.length - 1 ? episodeRanges[selectedIndex + 1] : episodeRanges[0] || null;
+  const isSearchOpen = episodeIndexSearchMode;
+  const initialSearchState = getEpisodeIndexSearchState(episodesByNumber, selectedRange, episodeIndexAppliedQuery);
+  const shouldHideEpisodeResults = isSearchOpen && !String(episodeIndexAppliedQuery || '').trim();
+  const shouldShowFooterNav = !String(episodeIndexAppliedQuery || '').trim();
+  const rangeControlsMarkup = `
+    <div class="episode-range-wheel${isMobile ? ' mobile' : ''}" aria-label="节目分组轮盘">
+      ${episodeRanges.map((range, index) => `
+        <button
+          class="episode-range-wheel-option${index === selectedIndex ? ' active' : ''}"
+          type="button"
+          data-episode-range="${range.start}"
+          data-range-wheel-item="true"
+          aria-label="切换到区间 ${range.label}"
+          aria-pressed="${index === selectedIndex ? 'true' : 'false'}"
+        >${escapeHtml(`${range.label}集`)}</button>
+      `).join('')}
     </div>
   `;
-  const mobileToolbarMarkup = `
-    <div class="episode-index-toolbar mobile">
-      <div class="episode-search-panel mobile">
-        <div class="search-row episode-search-row mobile">
-          <input id="episode-index-search" type="text" placeholder="${escapeHtml(searchPlaceholder)}">
-          <button id="episode-index-search-clear" class="search-clear mobile${initialSearchState.query ? '' : ' hidden'}" type="button">清空</button>
-        </div>
-      </div>
-      <div class="episode-range-shell mobile">
-        <button
-          class="range-nav-button mobile${newerRange ? '' : ' disabled'}"
-          type="button"
-          data-episode-range="${newerRange?.start ?? ''}"
-          aria-label="${newerRange ? `切换到更新区间 ${newerRange.label}` : '没有更近的区间'}"
-          ${newerRange ? '' : 'disabled'}
-        >←</button>
-        <div class="episode-range-tabs mobile" aria-label="节目区间分页">
-          <span class="range-current-pill" aria-current="page">${selectedRange.label}</span>
-        </div>
-        <button
-          class="range-nav-button mobile${olderRange ? '' : ' disabled'}"
-          type="button"
-          data-episode-range="${olderRange?.start ?? ''}"
-          aria-label="${olderRange ? `切换到更早区间 ${olderRange.label}` : '没有更早的区间'}"
-          ${olderRange ? '' : 'disabled'}
-        >→</button>
-      </div>
-      <p id="episode-search-note" class="episode-range-status mobile${initialSearchState.query ? '' : ' hidden'}">${initialSearchState.query ? `匹配 ${initialSearchState.filteredEpisodes.length} 集` : ''}</p>
+  const searchToggleMarkup = `
+    <button
+      id="episode-index-search-toggle"
+      class="episode-search-toggle"
+      type="button"
+      aria-label="打开节目搜索"
+    >
+      <span class="episode-search-toggle-icon" aria-hidden="true">
+        <svg class="episode-search-toggle-svg" viewBox="0 0 24 24" focusable="false" aria-hidden="true">
+          <circle cx="10.5" cy="10.5" r="5.75"></circle>
+          <path d="M14.8 14.8L19.6 19.6"></path>
+        </svg>
+      </span>
+    </button>
+  `;
+  const footerNavMarkup = `
+    <div class="episode-range-footer-nav">
+      <button class="range-nav-button range-footer-button" type="button" data-episode-range="${previousRange?.start ?? ''}">${escapeHtml(previousRange ? `${previousRange.label}集` : '—')}</button>
+      <button class="range-nav-button range-footer-button" type="button" data-episode-range="${nextRange?.start ?? ''}">${escapeHtml(nextRange ? `${nextRange.label}集` : '—')}</button>
     </div>
   `;
-  const keywordSectionMarkup = `
-    <section class="detail-section">
-      <div class="section-header">
-        <h2 class="section-title">按关键词看节目群</h2>
-        <a class="section-note" href="#/keywords">更多关键词专题 →</a>
+  const toolbarMarkup = `
+    <div class="episode-index-toolbar-shell">
+      <div class="episode-index-toolbar${isMobile ? ' mobile' : ''}${isSearchOpen ? ' is-search-open' : ''}">
+        <div class="episode-toolbar-main${isSearchOpen ? ' is-search-open' : ' is-search-collapsed'}">
+          ${isSearchOpen
+            ? `
+              <div class="episode-search-panel${isMobile ? ' mobile' : ''}">
+                <div class="search-row episode-search-row${isMobile ? ' mobile' : ''}">
+                  <input id="episode-index-search" type="text" placeholder="${escapeHtml(searchPlaceholder)}">
+                  <button id="episode-index-search-clear" class="search-clear${isMobile ? ' mobile' : ''}${episodeIndexQuery ? '' : ' hidden'}" type="button">清空</button>
+                </div>
+                <div id="episode-index-suggestions" class="episode-index-suggestions hidden"></div>
+              </div>
+            `
+            : `
+              <div class="episode-range-wheel-wrap">
+                ${rangeControlsMarkup}
+              </div>
+              ${searchToggleMarkup}
+            `}
+        </div>
       </div>
-      <p class="detail-copy">这里只显示最多相关的 ${keywordClusterLimit} 个关键词专题。点进去可查看该关键词下的相关节目群。</p>
-      <div class="grid cards-3">
-        ${topKeywordClusters.map((keyword) => `
-          <a class="card" href="${routeTo(`keywords/${keyword.id}`)}">
-            <p class="card-kicker">关键词专题</p>
-            <h3>${escapeHtml(keyword.name)}</h3>
-            <p>${escapeHtml(keyword.summary)}</p>
-            <div class="meta-row">
-              <span class="chip">${keyword.episodes.length} 期相关节目</span>
-              ${(keyword.aliases || []).length ? `<span class="chip">${escapeHtml(keyword.aliases[0])}</span>` : ''}
-            </div>
-          </a>
-        `).join('')}
-      </div>
-    </section>
+    </div>
   `;
   const episodeSectionMarkup = `
-    <section class="detail-section episode-index-section">
-      ${isMobile ? mobileToolbarMarkup : desktopToolbarMarkup}
+    <section class="detail-section episode-index-section${shouldHideEpisodeResults ? ' hidden' : ''}">
       <div id="episode-index-results">${renderEpisodeIndexEpisodeList(initialSearchState.filteredEpisodes)}</div>
+      ${shouldShowFooterNav ? footerNavMarkup : ''}
     </section>
   `;
 
   app.innerHTML = `
     <section class="detail">
-      <div class="detail-header">
+      <div class="detail-header${isSearchOpen ? ' hidden' : ''}">
         <a class="back-link" href="#/">← 返回首页</a>
-        <p class="detail-eyebrow">节目总览</p>
         <h1 class="detail-title">节目索引</h1>
       </div>
-      ${isMobile ? `${episodeSectionMarkup}${keywordSectionMarkup}` : `${keywordSectionMarkup}${episodeSectionMarkup}`}
+      ${toolbarMarkup}
+      ${episodeSectionMarkup}
     </section>
   `;
 
   const searchInput = document.getElementById('episode-index-search');
-  const searchNote = document.getElementById('episode-search-note');
+  const episodeSection = document.querySelector('.episode-index-section');
   const resultsContainer = document.getElementById('episode-index-results');
   const clearButton = document.getElementById('episode-index-search-clear');
+  const suggestionsContainer = document.getElementById('episode-index-suggestions');
   const toolbar = document.querySelector('.episode-index-toolbar');
+  const rangeWheel = document.querySelector('.episode-range-wheel');
+  const searchToggle = document.getElementById('episode-index-search-toggle');
+  const activeRangeButton = document.querySelector('.episode-range-wheel [data-range-wheel-item].active');
   let isComposing = false;
+
+  const scheduleSearchAutoHide = () => {
+    clearEpisodeIndexSearchAutoHideTimer();
+    if (!episodeIndexSearchMode) return;
+    if (!(toolbar instanceof HTMLElement)) return;
+    episodeIndexSearchAutoHideTimer = window.setTimeout(() => {
+      if (!episodeIndexSearchMode) return;
+      const staysOpenAsFloatingSearch = toolbar.classList.contains('is-floating') && window.scrollY > 72;
+      if (staysOpenAsFloatingSearch) return;
+      if (!String(episodeIndexAppliedQuery || '').trim()) {
+        episodeIndexQuery = '';
+      } else {
+        episodeIndexQuery = episodeIndexAppliedQuery;
+      }
+      episodeIndexSearchMode = false;
+      renderEpisodeIndex();
+    }, 5000);
+  };
 
   const updateEpisodeSearchResults = () => {
     const scrollY = window.scrollY;
-    const nextState = getEpisodeIndexSearchState(episodesByNumber, selectedRange, episodeIndexQuery);
-    if (searchNote) {
-      searchNote.textContent = nextState.query
-        ? (isMobile ? `匹配 ${nextState.filteredEpisodes.length} 集` : `当前匹配 ${nextState.filteredEpisodes.length} 集节目。`)
-        : (isMobile ? '' : `当前区间 ${selectedRange.label} · 第 ${selectedIndex + 1} / ${episodeRanges.length} 组`);
-      searchNote.classList.toggle('hidden', !nextState.query);
-    }
+    const hasAppliedQuery = Boolean(String(episodeIndexAppliedQuery || '').trim());
+    const nextState = getEpisodeIndexSearchState(episodesByNumber, selectedRange, episodeIndexAppliedQuery);
     if (clearButton) {
-      clearButton.classList.toggle('hidden', !nextState.query);
+      clearButton.classList.toggle('hidden', !String(episodeIndexQuery || '').trim());
+    }
+    if (episodeSection) {
+      episodeSection.classList.toggle('hidden', episodeIndexSearchMode && !hasAppliedQuery);
     }
     if (resultsContainer) {
       resultsContainer.innerHTML = renderEpisodeIndexEpisodeList(nextState.filteredEpisodes);
     }
+    renderEpisodeIndexSuggestions(episodeIndexQuery);
+    renderSectionProgress();
 
     window.requestAnimationFrame(() => {
       window.scrollTo(window.scrollX, scrollY);
+      syncSectionProgress();
     });
+
+    scheduleSearchAutoHide();
   };
+
+  resultsContainer?.addEventListener('click', (event) => {
+    const directEpisodeLink = event.target.closest('.card-primary-link');
+    if (directEpisodeLink && resultsContainer.contains(directEpisodeLink)) {
+      event.preventDefault();
+      navigateToEpisodeFromElement(directEpisodeLink);
+      return;
+    }
+
+    const episodeCard = event.target.closest('.episode-index-card[data-episode-href]');
+    if (!episodeCard || !resultsContainer.contains(episodeCard)) return;
+    if (event.target.closest('.chip, button, input, textarea, select, summary, a')) return;
+    navigateToEpisodeFromElement(episodeCard);
+  });
 
   if (searchInput) {
     searchInput.value = episodeIndexQuery;
+    searchInput.addEventListener('focus', () => {
+      renderEpisodeIndexSuggestions(episodeIndexQuery);
+      scheduleSearchAutoHide();
+    });
     searchInput.addEventListener('compositionstart', () => {
       isComposing = true;
     });
     searchInput.addEventListener('compositionend', (event) => {
       isComposing = false;
       episodeIndexQuery = event.target.value;
+      if (episodeIndexQuery.trim() !== String(episodeIndexAppliedQuery || '').trim()) {
+        episodeIndexAppliedQuery = '';
+      }
       updateEpisodeSearchResults();
     });
     searchInput.addEventListener('input', (event) => {
       episodeIndexQuery = event.target.value;
+      if (!episodeIndexQuery.trim()) {
+        episodeIndexAppliedQuery = '';
+      } else if (episodeIndexQuery.trim() !== String(episodeIndexAppliedQuery || '').trim()) {
+        episodeIndexAppliedQuery = '';
+      }
       if (isComposing || event.isComposing) return;
       updateEpisodeSearchResults();
     });
@@ -3313,17 +3768,29 @@ function renderEpisodeIndex() {
       if (event.key !== 'Enter') return;
 
       const directEpisodeId = normalizeEpisodeIdQuery(episodeIndexQuery);
-      if (!directEpisodeId) return;
-
-      const foundEpisode = site.episodes.find((episode) => episode.id === directEpisodeId);
-      if (foundEpisode) {
+      if (directEpisodeId) {
+        const foundEpisode = site.episodes.find((episode) => episode.id === directEpisodeId);
+        if (!foundEpisode) return;
         window.location.hash = routeTo(`episodes/${foundEpisode.id}`);
+        return;
       }
+
+      const [firstSuggestion] = getEpisodeIndexSuggestionMatches(episodeIndexQuery);
+      if (!firstSuggestion) return;
+      event.preventDefault();
+      episodeIndexQuery = firstSuggestion.value;
+      episodeIndexAppliedQuery = firstSuggestion.value;
+      episodeIndexSearchMode = false;
+      renderEpisodeIndex();
+      window.requestAnimationFrame(() => {
+        scrollEpisodeResultsIntoView();
+      });
     });
   }
 
   clearButton?.addEventListener('click', () => {
     episodeIndexQuery = '';
+    episodeIndexAppliedQuery = '';
     if (searchInput) {
       searchInput.value = '';
       searchInput.focus({ preventScroll: true });
@@ -3331,17 +3798,92 @@ function renderEpisodeIndex() {
     updateEpisodeSearchResults();
   });
 
+  suggestionsContainer?.addEventListener('click', (event) => {
+    const button = event.target.closest('[data-episode-index-suggestion]');
+    if (!(button instanceof HTMLElement)) return;
+    const nextQuery = button.dataset.episodeIndexSuggestion || '';
+    if (!nextQuery) return;
+    episodeIndexQuery = nextQuery;
+    episodeIndexAppliedQuery = nextQuery;
+    episodeIndexSearchMode = false;
+    renderEpisodeIndex();
+    window.requestAnimationFrame(() => {
+      scrollEpisodeResultsIntoView();
+    });
+  });
+
   document.querySelectorAll('[data-episode-range]').forEach((button) => {
     button.addEventListener('click', () => {
       if (!button.dataset.episodeRange) return;
       episodeIndexRangeStart = Number(button.dataset.episodeRange);
       renderEpisodeIndex();
+      renderSectionProgress();
+      window.requestAnimationFrame(() => {
+        syncSectionProgress();
+      });
       scrollEpisodeResultsIntoView();
     });
   });
 
+  if (activeRangeButton instanceof HTMLElement) {
+    window.requestAnimationFrame(() => {
+      centerActiveEpisodeRangeButton(activeRangeButton);
+    });
+  }
+
+  if (isSearchOpen) {
+    renderEpisodeIndexSuggestions(episodeIndexQuery);
+  }
+
+  searchToggle?.addEventListener('click', (event) => {
+    event.preventDefault();
+    event.stopPropagation();
+    episodeIndexSearchMode = true;
+    episodeIndexFocusSearchOnRender = true;
+    renderEpisodeIndex();
+  });
+
+  if (rangeWheel instanceof HTMLElement) {
+    setupEpisodeRangeWheelDrag(rangeWheel);
+  }
+
   if (toolbar) {
     setupEpisodeToolbarBehavior(toolbar);
+  }
+
+  if (isSearchOpen) {
+    scheduleSearchAutoHide();
+    toolbar?.addEventListener('pointerdown', scheduleSearchAutoHide);
+  } else {
+    clearEpisodeIndexSearchAutoHideTimer();
+  }
+
+  episodeIndexSearchController?.abort();
+  if (isSearchOpen) {
+    const controller = new AbortController();
+    episodeIndexSearchController = controller;
+    const { signal } = controller;
+
+    document.addEventListener('click', (event) => {
+      if (toolbar?.contains(event.target)) return;
+      if (!episodeIndexSearchMode) return;
+      if (!String(episodeIndexAppliedQuery || '').trim()) {
+        episodeIndexQuery = '';
+      } else {
+        episodeIndexQuery = episodeIndexAppliedQuery;
+      }
+      episodeIndexSearchMode = false;
+      renderEpisodeIndex();
+    }, { signal });
+  } else {
+    episodeIndexSearchController = null;
+  }
+
+  if (searchInput && episodeIndexFocusSearchOnRender) {
+    episodeIndexFocusSearchOnRender = false;
+    window.requestAnimationFrame(() => {
+      searchInput.focus({ preventScroll: true });
+    });
   }
 }
 
@@ -3962,8 +4504,12 @@ function renderNotFound(message) {
 
 function renderRoute() {
   if (!site) return;
+  const previousRoute = parseHashRoute(lastRenderedHash);
   episodeToolbarController?.abort();
   episodeToolbarController = null;
+  episodeIndexSearchController?.abort();
+  episodeIndexSearchController = null;
+  clearEpisodeIndexSearchAutoHideTimer();
   homeSearchToolbarController?.abort();
   homeSearchToolbarController = null;
   teardownRevealAnimations();
@@ -3989,6 +4535,12 @@ function renderRoute() {
   } else if (section === 'home' && id === 'episodes') {
     renderHome('home-episodes');
   } else if (section === 'episodes' && !id) {
+    if (!(previousRoute.section === 'episodes' && !previousRoute.id)) {
+      episodeIndexQuery = '';
+      episodeIndexAppliedQuery = '';
+      episodeIndexSearchMode = false;
+      episodeIndexRangeStart = 0;
+    }
     renderEpisodeIndex();
   } else if (section === 'concepts' && !id) {
     renderConceptIndex();
@@ -4031,6 +4583,14 @@ function renderRoute() {
   window.requestAnimationFrame(() => {
     normalizeMobileViewport();
   });
+  if (section === 'episodes' && !id) {
+    window.requestAnimationFrame(() => {
+      scrollWindowInstantly(0, 0);
+    });
+    window.setTimeout(() => {
+      scrollWindowInstantly(0, 0);
+    }, 140);
+  }
   window.requestAnimationFrame(() => {
     syncSectionProgress();
   });

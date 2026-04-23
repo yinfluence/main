@@ -291,7 +291,7 @@ async function runMobileChecks(client) {
       const dock = document.querySelector('.floating-actions');
       if (!dock) return false;
       const rect = dock.getBoundingClientRect();
-      return rect.top >= window.innerHeight * 0.58 && rect.bottom <= window.innerHeight * 0.82;
+      return rect.top >= window.innerHeight * 0.52 && rect.bottom <= window.innerHeight * 0.82;
     })()`,
     { timeoutMs: 2000, label: 'mobile floating actions dock settles lower on small screens' }
   );
@@ -336,6 +336,156 @@ async function runMobileChecks(client) {
   );
 
   await captureScreenshot(client, 'mobile-home.png');
+  await runMobileEpisodeIndexChecks(client);
+}
+
+async function runMobileEpisodeIndexChecks(client) {
+  await navigate(client, `${baseUrl}/#/`, '#home-episodes .home-episodes-more-link');
+  await clickSelector(client, '#home-episodes .home-episodes-more-link');
+  await waitForCondition(
+    client,
+    `(() => {
+      const active = document.querySelector('.episode-range-wheel-option.active');
+      const searchToggle = document.querySelector('#episode-index-search-toggle');
+      return location.hash === '#/episodes'
+        && active?.textContent?.trim() === '121-124集'
+        && Boolean(searchToggle)
+        && !document.querySelector('#episode-index-search');
+    })()`,
+    { timeoutMs: 4000, label: 'home more link opens a fresh episode index state' }
+  );
+  assert(
+    await evaluate(client, `(() => {
+      const buttons = [...document.querySelectorAll('.episode-range-footer-nav .range-footer-button')];
+      return buttons.length === 2 && buttons.every((button) => button.getBoundingClientRect().height >= 48);
+    })()`),
+    'Episode index footer range buttons should render larger tap targets'
+  );
+  await waitForCondition(
+    client,
+    `Boolean(document.querySelector('#episode-index-results .episode-index-card'))`,
+    { timeoutMs: 4000, label: 'episode index cards visible after home more link' }
+  );
+  await sleep(800);
+  await captureScreenshot(client, 'mobile-episodes-initial.png');
+  assert(
+    await evaluate(client, `(() => {
+      const wheel = document.querySelector('.episode-range-wheel');
+      return Boolean(wheel && wheel.scrollWidth > wheel.clientWidth);
+    })()`),
+    'Mobile episode index should expose a horizontally scrollable range wheel'
+  );
+  assert(
+    await evaluate(client, `!document.querySelector('.episode-toolbar-meta') && !document.querySelector('#episode-search-note')`),
+    'Mobile episode index toolbar should not render the old meta pills or range status line'
+  );
+  await clickSelector(client, '.episode-range-wheel [data-episode-range="91"]');
+  await waitForCondition(
+    client,
+    `(() => {
+      const active = document.querySelector('.episode-range-wheel-option.active');
+      const firstCard = document.querySelector('#episode-index-results .episode-index-kicker');
+      return active?.textContent?.trim() === '91-100集' && firstCard?.textContent?.trim() === 'EP100';
+    })()`,
+    { timeoutMs: 4000, label: 'mobile episode range wheel updates selected group' }
+  );
+  await evaluate(client, `window.scrollTo(0, 900); true;`);
+  await waitForCondition(
+    client,
+    `Boolean(document.querySelector('.section-progress.is-visible'))`,
+    { timeoutMs: 4000, label: 'mobile episode progress wheel visible' }
+  );
+  await clickSelector(client, '.section-progress');
+  await waitForCondition(
+    client,
+    `document.body.classList.contains('section-progress-panel-open') && !document.querySelector('#section-progress-panel')?.hidden`,
+    { timeoutMs: 4000, label: 'mobile episode progress panel open' }
+  );
+  assert(
+    await evaluate(client, `(() => {
+      const texts = [...document.querySelectorAll('#section-progress-panel .section-progress-panel-text')]
+        .map((node) => node.textContent?.trim() || '');
+      return texts.some((text) => text.includes('100集')) && !texts.some((text) => text.includes('120集'));
+    })()`),
+    'Mobile episode progress panel should refresh to the newly selected episode group'
+  );
+  assert(
+    await evaluate(client, `(() => {
+      const list = document.querySelector('#section-progress-panel .section-progress-panel-list');
+      if (!list) return false;
+      list.scrollTop = 260;
+      return list.scrollTop >= 200;
+    })()`),
+    'Mobile episode progress panel should allow vertical scrolling through episode entries'
+  );
+  await clickSelector(client, '.section-progress-panel-item');
+  await waitForCondition(
+    client,
+    `location.hash.startsWith('#/episodes/EP') && Boolean(document.querySelector('.detail-header'))`,
+    { timeoutMs: 4000, label: 'episode progress panel item opens episode detail directly' }
+  );
+  await navigate(client, `${baseUrl}/#/episodes`, '#episode-index-search-toggle');
+  await clickSelector(client, '#episode-index-search-toggle');
+  await waitForCondition(
+    client,
+    `Boolean(document.querySelector('#episode-index-search'))`,
+    { timeoutMs: 4000, label: 'episode index search expands from the magnifier toggle' }
+  );
+  await sleep(5300);
+  assert(
+    await evaluate(client, `Boolean(document.querySelector('#episode-index-search-toggle')) && !document.querySelector('#episode-index-search')`),
+    'Episode index search should auto-hide after 5 seconds when it is not in the floating position'
+  );
+  await clickSelector(client, '#episode-index-search-toggle');
+  await waitForCondition(
+    client,
+    `Boolean(document.querySelector('#episode-index-search'))`,
+    { timeoutMs: 4000, label: 'episode index search re-expands after auto hide' }
+  );
+  await evaluate(client, `(() => {
+    const input = document.querySelector('#episode-index-search');
+    if (!input) return false;
+    input.focus();
+    input.value = '比';
+    input.dispatchEvent(new InputEvent('input', { bubbles: true, data: '比', inputType: 'insertText' }));
+    return true;
+  })()`);
+  await waitForCondition(
+    client,
+    `(() => {
+      const items = [...document.querySelectorAll('#episode-index-suggestions [data-episode-index-suggestion]')];
+      return items.some((item) => (item.dataset.episodeIndexSuggestion || '') === '比亚迪');
+    })()`,
+    { timeoutMs: 4000, label: 'episode index search suggestions visible for keyword prefix' }
+  );
+  assert(
+    await evaluate(client, `document.querySelector('.episode-index-section')?.classList.contains('hidden') === true`),
+    'Episode index should hide the episode list while the user is still typing and choosing a suggestion'
+  );
+  await clickSelector(client, '#episode-index-suggestions [data-episode-index-suggestion="比亚迪"]');
+  await waitForCondition(
+    client,
+    `(() => {
+      const cards = [...document.querySelectorAll('#episode-index-results .episode-index-kicker')].map((node) => node.textContent?.trim());
+      return cards.length === 2 && cards.includes('EP080') && cards.includes('EP045');
+    })()`,
+    { timeoutMs: 4000, label: 'episode index suggestion click filters to matching episodes' }
+  );
+  assert(
+    await evaluate(client, `document.querySelector('.episode-index-section')?.classList.contains('hidden') === false`),
+    'Episode index should show matching episodes after the user picks a suggestion'
+  );
+  assert(
+    await evaluate(client, `(() => {
+      const wheel = document.querySelector('.episode-range-wheel');
+      if (!wheel || wheel.scrollWidth <= wheel.clientWidth) return false;
+      wheel.scrollLeft = 0;
+      wheel.scrollLeft = 180;
+      return wheel.scrollLeft >= 120;
+    })()`),
+    'Mobile episode range wheel should remain horizontally scrollable after switching groups'
+  );
+  await captureScreenshot(client, 'mobile-episodes.png');
 }
 
 async function cleanup() {
@@ -370,8 +520,14 @@ async function main() {
   await client.send('Runtime.enable');
   await client.send('DOM.enable');
 
-  await runDesktopChecks(client);
-  await runMobileChecks(client);
+  const target = process.env.UI_SMOKE_TARGET || 'full';
+
+  if (target === 'mobile-episodes') {
+    await runMobileEpisodeIndexChecks(client);
+  } else {
+    await runDesktopChecks(client);
+    await runMobileChecks(client);
+  }
 
   await client.close();
   console.log('UI smoke tests passed.');

@@ -5,6 +5,7 @@
   "type": "module",
   "scripts": {
     "build": "node build.mjs",
+    "test:ui": "npm run build && node scripts/ui-smoke.mjs",
     "audit:keywords": "node scripts/audit-keywords.mjs",
     "srt": "node scripts/ingest-srt.mjs",
     "ingest:srt": "node scripts/ingest-srt.mjs",
