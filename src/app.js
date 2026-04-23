@@ -2690,6 +2690,7 @@ function bindHomeEpisodeCarousel(homeEpisodeCarouselShell, homeEpisodeCarousel, 
         const touch = event.changedTouches[0];
         const deltaX = touch.clientX - homeEpisodeSwipeStartX;
         const deltaY = touch.clientY - homeEpisodeSwipeStartY;
+        const tapSlop = 18;
         const activeAxis = swipeAxis || (Math.abs(deltaX) > Math.abs(deltaY) * 1.15 ? 'x' : 'y');
         if (activeAxis === 'x' && Math.abs(deltaX) >= 42) {
           homeEpisodeCarouselTrack?.style.setProperty('--home-episode-drag-offset', `${deltaX > 0 ? 112 : -112}px`);
@@ -2701,7 +2702,7 @@ function bindHomeEpisodeCarousel(homeEpisodeCarouselShell, homeEpisodeCarousel, 
           return;
         }
         resetSwipeState();
-        if (Math.abs(deltaX) < 10 && Math.abs(deltaY) < 10 && !event.target.closest('a, button, input, textarea, select, summary, .chip')) {
+        if (Math.abs(deltaX) < tapSlop && Math.abs(deltaY) < tapSlop && !event.target.closest('a, button, input, textarea, select, summary, .chip')) {
           navigateToEpisodeFromElement(event.target);
         }
       }, { passive: true });
