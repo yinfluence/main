@@ -4077,7 +4077,7 @@ body.page-episode-index #episode-index-results .list-item:active h3 {
     flex-direction: row;
     align-items: flex-start;
     justify-content: flex-start;
-    gap: 8px;
+    gap: 14px;
     width: 100%;
     padding-right: 0;
   }
@@ -4102,7 +4102,7 @@ body.page-episode-index #episode-index-results .list-item:active h3 {
     align-items: flex-start;
     justify-content: center;
     margin-top: 2px;
-    margin-left: -2px;
+    margin-left: 2px;
   }
 
   .hero-title-row.has-mobile-avatar .hero-mobile-avatar {
@@ -4320,12 +4320,12 @@ body.page-episode-index #episode-index-results .list-item:active h3 {
   }
 
   .hero-title-row.has-mobile-avatar {
-    gap: 6px;
+    gap: 10px;
   }
 
   .hero-title-row.has-mobile-avatar .hero-mobile-avatar-link {
     margin-top: 2px;
-    margin-left: -4px;
+    margin-left: 0;
   }
 
   .hero-mobile-avatar {
@@ -4475,8 +4475,8 @@ body.page-home .section.split > div .list-item:active p {
   .home-episode-carousel-shell.mobile .home-episode-carousel-viewport,
   .home-episode-carousel-shell.mobile .home-episode-mobile-transition-pane,
   .home-episode-carousel-shell.mobile .home-episode-mobile-single {
-    height: 500px;
-    min-height: 500px;
+    height: 476px;
+    min-height: 476px;
   }
 
   .home-episode-carousel-shell.mobile .home-episode-mobile-single .home-episode-card,
@@ -4609,7 +4609,7 @@ body.page-home .section.split > div .list-item:active p {
   }
 
   body.page-home .home-episode-card {
-    padding: 22px 18px 16px;
+    padding: 20px 16px 14px;
   }
 
   .home-episode-carousel-track .home-episode-grid-3 .home-episode-card,
@@ -4618,7 +4618,7 @@ body.page-home .section.split > div .list-item:active p {
   .home-episode-mobile-pane .home-episode-card,
   .home-episode-preview-card,
   .home-episode-mobile-single .home-episode-card {
-    height: 500px;
+    height: 476px;
   }
 
   body.page-home #home-episodes .home-episode-card .card-kicker,
@@ -4628,31 +4628,27 @@ body.page-home .section.split > div .list-item:active p {
   }
 
   body.page-home .home-episode-card .card-primary-link h3 {
-    font-size: 27px;
-    line-height: 1.16;
+    font-size: 25px;
+    line-height: 1.14;
     text-wrap: initial;
     -webkit-line-clamp: 3;
   }
 
   body.page-home .home-episode-card .card-primary-link + p {
-    margin-top: 6px;
+    margin-top: 4px;
   }
 
   body.page-home #home-episodes .home-episode-card .chip-row {
-    margin-top: 8px;
+    margin-top: 6px;
+    padding-top: 6px;
     min-height: 0;
     max-height: none;
   }
 
-  body.page-home #home-episodes .home-episode-card .home-episode-card-actions {
-    margin-top: auto;
-    padding-top: 10px;
-  }
-
   body.page-home .home-episode-card > p:not(.card-kicker):not(.inline-label) {
     font-size: 15.5px;
-    line-height: 1.68;
-    -webkit-line-clamp: 11;
+    line-height: 1.64;
+    -webkit-line-clamp: 12;
     min-height: 0;
   }
 
