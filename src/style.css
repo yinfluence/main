@@ -378,7 +378,7 @@ input {
     0 14px 24px rgba(20, 26, 34, 0.08),
     inset 0 1px 0 rgba(255,255,255,0.92);
   color: rgba(142, 105, 50, 0.76);
-  font-weight: 700;
+  font-weight: 780;
   transform-origin: right center;
   transition: transform 0.22s ease, opacity 0.22s ease, background 0.22s ease, color 0.22s ease, box-shadow 0.22s ease;
 }
@@ -388,14 +388,14 @@ input {
   min-height: 30px;
   font-size: 12.5px;
   opacity: 0.86;
-  font-weight: 760;
+  font-weight: 820;
   transform: scale(0.86);
 }
 
 .section-progress-item.current {
   min-height: 48px;
   font-size: 15px;
-  font-weight: 700;
+  font-weight: 820;
   color: var(--ink-rich);
   background: linear-gradient(180deg, rgba(255, 252, 247, 0.98), rgba(245, 233, 211, 0.94));
   border-color: rgba(184, 138, 60, 0.28);
@@ -417,6 +417,7 @@ input {
   white-space: nowrap;
   letter-spacing: 0.06em;
   font-weight: inherit;
+  text-shadow: 0 0 0 currentColor;
 }
 
 @keyframes sectionWheelPulse {
@@ -645,6 +646,15 @@ body.section-progress-panel-open .section-progress-panel {
   opacity: 1;
   pointer-events: auto;
   transform: translateY(0) scale(1);
+}
+
+.floating-actions.is-collapsed .floating-actions-menu .back-to-top .floating-action-icon {
+  width: 18px;
+  height: 18px;
+  stroke-width: 2.9;
+  filter: none;
+  vector-effect: non-scaling-stroke;
+  shape-rendering: geometricPrecision;
 }
 
 .floating-actions-menu .menu-button,
@@ -1723,11 +1733,30 @@ body.page-home .section:last-of-type .grid.cards-2 {
 
 .home-episodes-footer-mobile {
   display: flex;
+  flex-wrap: nowrap;
   justify-content: space-between;
   align-items: center;
   gap: 12px;
   margin-top: 6px;
   padding: 0 4px 2px;
+}
+
+.home-episodes-footer-desktop {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+  margin-top: 18px;
+  padding: 0 6px 2px;
+}
+
+.home-episode-desktop-index {
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: rgba(64, 54, 42, 0.82);
+  white-space: nowrap;
 }
 
 .section-heading-shell {
@@ -1762,12 +1791,10 @@ a.section-note:focus-visible {
 }
 
 .home-episode-carousel-shell {
-  display: grid;
-  grid-template-columns: auto minmax(0, 1fr) auto;
-  align-items: stretch;
-  gap: 16px;
-  margin: -4px 0 18px;
-  min-height: 566px;
+  position: relative;
+  display: block;
+  margin: -4px 0 0;
+  min-height: 0;
 }
 
 .home-episode-carousel-viewport {
@@ -1790,7 +1817,8 @@ a.section-note:focus-visible {
   backface-visibility: hidden;
 }
 
-.home-episode-carousel-track .home-episode-grid {
+.home-episode-carousel-track .home-episode-grid,
+.home-episode-desktop-transition-pane .home-episode-grid {
   display: grid;
   gap: 16px;
   align-items: stretch;
@@ -1838,6 +1866,30 @@ a.section-note:focus-visible {
   touch-action: pan-y;
 }
 
+.home-episode-carousel-viewport.is-desktop-transition {
+  overflow: hidden;
+}
+
+.home-episode-desktop-transition-strip {
+  display: flex;
+  width: 200%;
+  will-change: transform;
+}
+
+.home-episode-desktop-transition-strip.is-animating {
+  transition: transform 0.52s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.home-episode-desktop-transition-pane {
+  flex: 0 0 50%;
+  width: 50%;
+  min-width: 0;
+}
+
+.home-episode-desktop-transition-pane .home-episode-grid {
+  width: 100%;
+}
+
 .home-episode-mobile-toolbar {
   display: none;
 }
@@ -1871,6 +1923,18 @@ a.section-note:focus-visible {
   transform: translate3d(var(--home-episode-drag-offset, 0px), 0, 0);
   transition: transform 0.28s cubic-bezier(0.22, 1, 0.36, 1);
   will-change: transform;
+}
+
+body.page-home .home-episode-carousel-shell.mobile .home-episode-mobile-single .home-episode-card,
+body.page-home .home-episode-carousel-shell.mobile .home-episode-mobile-transition-pane .home-episode-card {
+  height: auto;
+}
+
+body.page-home .home-episode-carousel-shell.mobile .home-episode-card > p:not(.card-kicker):not(.inline-label) {
+  max-height: none;
+  display: block;
+  overflow: visible;
+  -webkit-line-clamp: unset;
 }
 
 .home-episode-carousel-track.is-dragging .home-episode-mobile-single {
@@ -1945,42 +2009,53 @@ a.section-note:focus-visible {
   width: 72%;
 }
 
-.home-episode-carousel-track .home-episode-grid-3 {
+.home-episode-carousel-track .home-episode-grid-3,
+.home-episode-desktop-transition-pane .home-episode-grid-3 {
   grid-template-columns: repeat(3, minmax(0, 1fr));
   grid-auto-flow: column;
   grid-auto-columns: minmax(0, 1fr);
 }
 
-.home-episode-carousel-track .home-episode-grid-3 .home-episode-card {
-  height: 514px;
+.home-episode-carousel-track .home-episode-grid-3 .home-episode-card,
+.home-episode-desktop-transition-pane .home-episode-grid-3 .home-episode-card {
+  min-height: 514px;
+  height: auto;
 }
 
-.home-episode-carousel-track .home-episode-grid-2 {
+.home-episode-carousel-track .home-episode-grid-2,
+.home-episode-desktop-transition-pane .home-episode-grid-2 {
   grid-template-columns: repeat(2, minmax(0, 1fr));
   grid-auto-flow: column;
   grid-auto-columns: minmax(0, 1fr);
 }
 
-.home-episode-carousel-track .home-episode-grid-2 .home-episode-card {
-  height: 536px;
+.home-episode-carousel-track .home-episode-grid-2 .home-episode-card,
+.home-episode-desktop-transition-pane .home-episode-grid-2 .home-episode-card {
+  min-height: 536px;
+  height: auto;
 }
 
-.home-episode-carousel-track .home-episode-grid-1 {
+.home-episode-carousel-track .home-episode-grid-1,
+.home-episode-desktop-transition-pane .home-episode-grid-1 {
   grid-template-columns: minmax(0, 1fr);
   grid-auto-flow: column;
   grid-auto-columns: minmax(0, 1fr);
 }
 
-.home-episode-carousel-track .home-episode-grid-1 .home-episode-card {
-  height: 564px;
+.home-episode-carousel-track .home-episode-grid-1 .home-episode-card,
+.home-episode-desktop-transition-pane .home-episode-grid-1 .home-episode-card {
+  min-height: 0;
+  height: auto;
 }
 
 .home-episode-side-button {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  align-self: start;
-  margin-top: 18px;
+  position: absolute;
+  top: 50%;
+  z-index: 2;
+  margin-top: 0;
   width: 46px;
   height: 46px;
   border: 1px solid rgba(184, 138, 60, 0.16);
@@ -1996,6 +2071,16 @@ a.section-note:focus-visible {
   transition: background 0.18s ease, color 0.18s ease, transform 0.18s ease, border-color 0.18s ease, box-shadow 0.18s ease;
 }
 
+#home-episodes-prev {
+  left: -10px;
+  transform: translateY(-50%);
+}
+
+#home-episodes-next {
+  right: -10px;
+  transform: translateY(-50%);
+}
+
 .home-episode-side-button:hover,
 .home-episode-side-button:focus-visible {
   background: linear-gradient(180deg, rgba(95, 67, 38, 0.96), rgba(53, 38, 25, 0.94));
@@ -2004,14 +2089,14 @@ a.section-note:focus-visible {
   box-shadow:
     0 12px 22px rgba(20, 26, 34, 0.12),
     inset 0 1px 0 rgba(255,255,255,0.12);
-  transform: translateY(-1px);
+  transform: translateY(calc(-50% - 1px));
 }
 
 .home-episode-side-button.is-disabled,
 .home-episode-side-button:disabled {
   opacity: 0.36;
   cursor: default;
-  transform: none;
+  transform: translateY(-50%);
   box-shadow:
     inset 0 1px 0 rgba(255,255,255,0.82),
     0 6px 12px rgba(22, 33, 48, 0.03);
@@ -2023,10 +2108,16 @@ body.page-home .home-episode-grid,
 }
 
 body.page-home .home-episode-card {
-  height: 100%;
+  height: auto;
   display: flex;
   flex-direction: column;
   overflow: hidden;
+}
+
+body.page-home .home-episode-card .card-primary-link,
+body.page-home .home-episode-card > p:not(.card-kicker):not(.inline-label),
+body.page-home #home-episodes .home-episode-card .chip-row {
+  min-width: 0;
 }
 
 body.page-home #home-episodes .home-episode-card::before {
@@ -2052,11 +2143,8 @@ body.page-home .home-episode-card .card-primary-link h3 {
 
 body.page-home #home-episodes .home-episode-card > p:not(.card-kicker):not(.inline-label) {
   color: rgba(31, 29, 26, 0.7);
-  display: -webkit-box;
-  -webkit-box-orient: vertical;
-  -webkit-line-clamp: 5;
-  overflow: hidden;
-  text-overflow: ellipsis;
+  display: block;
+  overflow: visible;
 }
 
 body.page-home #home-episodes .home-episode-card .chip {
@@ -2067,11 +2155,11 @@ body.page-home #home-episodes .home-episode-card .chip {
 }
 
 body.page-home #home-episodes .home-episode-card .chip-row {
-  margin-top: auto;
+  margin-top: 14px;
   align-content: flex-start;
-  min-height: 70px;
-  max-height: 70px;
-  overflow: hidden;
+  min-height: 0;
+  max-height: none;
+  overflow: visible;
 }
 
 body.page-home #home-episodes .home-episode-card a.chip:hover,
@@ -4212,8 +4300,8 @@ body.page-episode-index #episode-index-results .list-item:active h3 {
 @media (max-width: 720px) {
   :root {
     --right-dock-gap: 12px;
-    --floating-actions-anchor-offset: 98px;
-    --section-progress-anchor-offset: -104px;
+    --floating-actions-anchor-offset: 86px;
+    --section-progress-anchor-offset: -176px;
   }
 
   .page {
@@ -4235,8 +4323,9 @@ body.page-episode-index #episode-index-results .list-item:active h3 {
   }
 
   .floating-actions {
+    top: 41%;
     gap: 8px;
-    transform: translateY(calc(-50% + 102px));
+    transform: translateY(calc(-50% + var(--floating-actions-anchor-offset)));
   }
 
   .section-progress-item {
@@ -4468,8 +4557,8 @@ body.page-home .section.split > div .list-item:active p {
 
   .home-episode-carousel-shell.mobile {
     grid-template-columns: minmax(0, 1fr);
-    gap: 8px;
-    margin: 0 0 8px;
+    gap: 6px;
+    margin: 0 0 4px;
     touch-action: pan-y;
     min-height: 0;
   }
@@ -4478,12 +4567,13 @@ body.page-home .section.split > div .list-item:active p {
   .home-episode-carousel-shell.mobile .home-episode-mobile-transition-pane,
   .home-episode-carousel-shell.mobile .home-episode-mobile-single {
     height: auto;
-    min-height: 0;
+    min-height: clamp(420px, calc(100svh - 430px), 540px);
   }
 
   .home-episode-carousel-shell.mobile .home-episode-mobile-single .home-episode-card,
   .home-episode-carousel-shell.mobile .home-episode-mobile-transition-pane .home-episode-card {
     height: auto;
+    min-height: clamp(372px, calc(100svh - 484px), 482px);
   }
 
   .home-episode-mobile-index {
@@ -4492,6 +4582,7 @@ body.page-home .section.split > div .list-item:active p {
     letter-spacing: 0.08em;
     text-transform: uppercase;
     color: rgba(64, 54, 42, 0.82);
+    flex: 0 0 auto;
     white-space: nowrap;
   }
 
@@ -4611,15 +4702,14 @@ body.page-home .section.split > div .list-item:active p {
   }
 
   body.page-home .home-episode-card {
-    padding: 20px 16px 14px;
+    padding: 20px 16px 16px;
   }
 
   .home-episode-carousel-track .home-episode-grid-3 .home-episode-card,
   .home-episode-carousel-track .home-episode-grid-2 .home-episode-card,
   .home-episode-carousel-track .home-episode-grid-1 .home-episode-card,
   .home-episode-mobile-pane .home-episode-card,
-  .home-episode-preview-card,
-  .home-episode-mobile-single .home-episode-card {
+  .home-episode-preview-card {
     height: auto;
   }
 
@@ -4637,21 +4727,25 @@ body.page-home .section.split > div .list-item:active p {
   }
 
   body.page-home .home-episode-card .card-primary-link + p {
-    margin-top: 4px;
+    margin-top: 16px;
   }
 
   body.page-home #home-episodes .home-episode-card .chip-row {
-    margin-top: 6px;
-    padding-top: 6px;
+    margin-top: 10px;
+    padding-top: 8px;
     min-height: 0;
     max-height: none;
   }
 
   body.page-home .home-episode-card > p:not(.card-kicker):not(.inline-label) {
-    font-size: 15.5px;
-    line-height: 1.64;
-    -webkit-line-clamp: 12;
+    font-size: 15.8px;
+    line-height: 1.7;
+    flex: 1 1 auto;
     min-height: 0;
+    max-height: none;
+    display: block;
+    overflow: visible;
+    -webkit-line-clamp: unset;
   }
 
   .home-episode-preview-title {
@@ -4665,8 +4759,13 @@ body.page-home .section.split > div .list-item:active p {
   }
 
   body.page-home #home-episodes .home-episode-card .chip-row {
-    min-height: 72px;
-    max-height: 72px;
+    min-height: 54px;
+    max-height: 54px;
+  }
+
+  .home-episodes-footer-mobile {
+    margin-top: 0;
+    padding: 0 2px 2px;
   }
 
   .home-episode-open-link {
@@ -4754,8 +4853,8 @@ body.page-home .section.split > div .list-item:active p {
 @media (max-width: 540px) {
   :root {
     --right-dock-gap: 10px;
-    --floating-actions-anchor-offset: 90px;
-    --section-progress-anchor-offset: -94px;
+    --floating-actions-anchor-offset: 177px;
+    --section-progress-anchor-offset: -208px;
   }
 
   .page {
@@ -4763,6 +4862,8 @@ body.page-home .section.split > div .list-item:active p {
   }
 
   .floating-actions {
+    top: 38%;
+    transform: translateY(calc(-50% + var(--floating-actions-anchor-offset)));
   }
 
   .section-progress-panel {
