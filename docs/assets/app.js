@@ -8,6 +8,7 @@ const menuButton = document.getElementById('menu-button');
 const desktopMenuButton = document.getElementById('desktop-menu-button');
 const sidebarClose = document.getElementById('sidebar-close');
 const backToTopButton = document.getElementById('back-to-top');
+const floatingEpisodeSearchButton = document.getElementById('floating-episode-search');
 const floatingActions = document.getElementById('floating-actions');
 const floatingActionsToggle = document.getElementById('floating-actions-toggle');
 const sectionProgress = document.getElementById('section-progress');
@@ -31,9 +32,13 @@ const WEBSITE_LOG_ENTRIES = [
       '节目索引卡片改成和首页一致：整卡进入节目详情，关键词标签单独进入对应关键词页。',
       '节目索引卡片里删掉无意义的“关键词”提示字样，头部说明也收成更干净的标题区。',
       '节目索引右侧“节目轮盘”打开时会自动滚到当前节目，不再总是从顶部开始显示。',
+      '首页右侧悬浮按钮补入节目搜索放大镜，顺序整理成“导航 / 搜索 / 首页 / 返回顶部”。',
+      '从任意页面调起节目搜索后，如果没有真正进入结果，会回到原页面和原滚动位置，不再先跳到顶部再退回。',
+      '节目索引顶部补上“返回前一页”，避免只剩“返回首页”这一条出口。',
+      '节目索引里的最近三天节目现在也会显示和首页一致的红色“新”标识，三天后自动消失。',
       '首页与节目索引里的关键词链接重新拉开默认态颜色，让用户更容易看出这些标签可以点击。',
       '关键词在深色卡片上的 hover 状态统一改回浅底高亮，避免悬停后和背景糊在一起看不清。',
-      '补齐并固定这批首页 / 节目索引交互的移动端 UI 冒烟检查，发布前统一跑桌面与移动回归。'
+      '节目搜索取消自动收起，改成由用户主动退出；同时补齐并更新这批首页 / 节目索引交互的桌面与移动 UI 冒烟检查。'
     ]
   },
   {
@@ -157,6 +162,10 @@ let episodeIndexAppliedQuery = '';
 let episodeIndexRangeStart = 0;
 let episodeIndexSearchMode = false;
 let episodeIndexFocusSearchOnRender = false;
+let episodeIndexSearchOriginHash = '';
+let episodeIndexSearchOriginScrollX = 0;
+let episodeIndexSearchOriginScrollY = 0;
+let pendingRouteRestore = null;
 let conceptIndexQuery = '';
 let modelIndexQuery = '';
 let peopleIndexQuery = '';
@@ -381,6 +390,54 @@ function syncFloatingActionsByScroll(currentScrollY) {
   }
 }
 
+function clearEpisodeIndexSearchOrigin() {
+  episodeIndexSearchOriginHash = '';
+  episodeIndexSearchOriginScrollX = 0;
+  episodeIndexSearchOriginScrollY = 0;
+}
+
+function restoreEpisodeIndexSearchOrigin() {
+  const originHash = episodeIndexSearchOriginHash || '#/';
+  const originScrollX = episodeIndexSearchOriginScrollX || 0;
+  const originScrollY = episodeIndexSearchOriginScrollY || 0;
+  clearEpisodeIndexSearchOrigin();
+
+  if (originHash === '#/episodes') {
+    episodeIndexQuery = '';
+    episodeIndexAppliedQuery = '';
+    episodeIndexSearchMode = false;
+    renderEpisodeIndex();
+    window.requestAnimationFrame(() => {
+      scrollWindowInstantly(originScrollY, originScrollX);
+    });
+    return;
+  }
+
+  pendingRouteRestore = {
+    hash: originHash,
+    scrollX: originScrollX,
+    scrollY: originScrollY
+  };
+  window.location.hash = originHash;
+}
+
+function openEpisodeIndexSearch() {
+  normalizeMobileViewport({ force: true });
+  closeSidebar();
+  episodeIndexSearchOriginHash = window.location.hash || '#/';
+  episodeIndexSearchOriginScrollX = window.scrollX;
+  episodeIndexSearchOriginScrollY = window.scrollY;
+  episodeIndexQuery = '';
+  episodeIndexAppliedQuery = '';
+  episodeIndexSearchMode = true;
+  episodeIndexFocusSearchOnRender = true;
+  if (window.location.hash === '#/episodes') {
+    renderRoute();
+    return;
+  }
+  window.location.hash = '#/episodes';
+}
+
 function getProgressSections() {
   const explicitSections = [...app.querySelectorAll('[data-progress-section="true"]')].filter((section) => {
     if (!(section instanceof HTMLElement)) return false;
@@ -519,7 +576,7 @@ function scrollActiveSectionProgressItemIntoView({ behavior = 'auto' } = {}) {
   });
 }
 
-function syncSectionProgress() {
+function syncSectionProgress({ reveal = false, blur = false } = {}) {
   if (!sectionProgress || sectionProgress.hidden) return;
 
   const sections = getProgressSections();
@@ -557,6 +614,9 @@ function syncSectionProgress() {
   if (activeIndex !== sectionProgressActiveIndex) {
     sectionProgressActiveIndex = activeIndex;
     pulseSectionProgressWheel();
+    if (reveal && !sectionProgressPanelOpen) {
+      showSectionProgressTemporarily({ blur });
+    }
     if (sectionProgressPanelOpen) {
       window.requestAnimationFrame(() => {
         scrollActiveSectionProgressItemIntoView({ behavior: 'smooth' });
@@ -920,6 +980,10 @@ backToTopButton?.addEventListener('click', () => {
   }
   animateWindowScrollTo(0, { durationScale: 1.25 });
 });
+floatingEpisodeSearchButton?.addEventListener('click', (event) => {
+  event.preventDefault();
+  openEpisodeIndexSearch();
+});
 function bindHomeSurfaceToTop(selector) {
   document.querySelectorAll(selector).forEach((node) => {
     node.addEventListener('click', (event) => {
@@ -980,8 +1044,10 @@ window.addEventListener('scroll', () => {
   }
   syncFloatingActionsByScroll(currentScrollY);
   syncBackToTopVisibility();
-  syncSectionProgress();
-  showSectionProgressTemporarily({ blur: speed > 2.1 && scrollDelta > (isMobileViewport() ? 56 : 72) });
+  syncSectionProgress({
+    reveal: true,
+    blur: speed > 2.1 && scrollDelta > (isMobileViewport() ? 56 : 72)
+  });
   scheduleSectionSnap();
   lastScrollY = currentScrollY;
   lastScrollSampleAt = now;
@@ -1580,7 +1646,7 @@ function renderEpisodeIndexEpisodeList(episodes = []) {
           data-progress-label="${escapeHtml(`${episode.id.replace(/^EP/i, '')}集 ${displayEpisodeTitle(episode.title).replace(/\s+/g, '').slice(0, 12)}`)}"
         >
           <div class="episode-index-card-head">
-            <p class="card-kicker episode-index-kicker">${escapeHtml(episode.id)}</p>
+            <p class="card-kicker episode-index-kicker">${escapeHtml(episode.id)}${renderEpisodeFreshBadge(episode, { compact: true })}</p>
             <span class="episode-index-open">查看</span>
           </div>
           <a class="card-primary-link" href="${episodeHref}">
@@ -3662,7 +3728,10 @@ function renderEpisodeIndex() {
   app.innerHTML = `
     <section class="detail">
       <div class="detail-header${isSearchOpen ? ' hidden' : ''}">
-        <a class="back-link" href="#/">← 返回首页</a>
+        <div class="detail-back-row">
+          <button type="button" class="back-link back-button" data-nav-back="true">← 返回前一页</button>
+          <a class="back-link secondary" href="#/">返回首页</a>
+        </div>
         <h1 class="detail-title">节目索引</h1>
       </div>
       ${toolbarMarkup}
@@ -3683,20 +3752,6 @@ function renderEpisodeIndex() {
 
   const scheduleSearchAutoHide = () => {
     clearEpisodeIndexSearchAutoHideTimer();
-    if (!episodeIndexSearchMode) return;
-    if (!(toolbar instanceof HTMLElement)) return;
-    episodeIndexSearchAutoHideTimer = window.setTimeout(() => {
-      if (!episodeIndexSearchMode) return;
-      const staysOpenAsFloatingSearch = toolbar.classList.contains('is-floating') && window.scrollY > 72;
-      if (staysOpenAsFloatingSearch) return;
-      if (!String(episodeIndexAppliedQuery || '').trim()) {
-        episodeIndexQuery = '';
-      } else {
-        episodeIndexQuery = episodeIndexAppliedQuery;
-      }
-      episodeIndexSearchMode = false;
-      renderEpisodeIndex();
-    }, 5000);
   };
 
   const updateEpisodeSearchResults = () => {
@@ -3771,6 +3826,7 @@ function renderEpisodeIndex() {
       if (directEpisodeId) {
         const foundEpisode = site.episodes.find((episode) => episode.id === directEpisodeId);
         if (!foundEpisode) return;
+        clearEpisodeIndexSearchOrigin();
         window.location.hash = routeTo(`episodes/${foundEpisode.id}`);
         return;
       }
@@ -3781,6 +3837,7 @@ function renderEpisodeIndex() {
       episodeIndexQuery = firstSuggestion.value;
       episodeIndexAppliedQuery = firstSuggestion.value;
       episodeIndexSearchMode = false;
+      clearEpisodeIndexSearchOrigin();
       renderEpisodeIndex();
       window.requestAnimationFrame(() => {
         scrollEpisodeResultsIntoView();
@@ -3806,6 +3863,7 @@ function renderEpisodeIndex() {
     episodeIndexQuery = nextQuery;
     episodeIndexAppliedQuery = nextQuery;
     episodeIndexSearchMode = false;
+    clearEpisodeIndexSearchOrigin();
     renderEpisodeIndex();
     window.requestAnimationFrame(() => {
       scrollEpisodeResultsIntoView();
@@ -3838,6 +3896,8 @@ function renderEpisodeIndex() {
   searchToggle?.addEventListener('click', (event) => {
     event.preventDefault();
     event.stopPropagation();
+    episodeIndexSearchOriginHash = '#/episodes';
+    episodeIndexSearchOriginScrollY = window.scrollY;
     episodeIndexSearchMode = true;
     episodeIndexFocusSearchOnRender = true;
     renderEpisodeIndex();
@@ -3852,8 +3912,7 @@ function renderEpisodeIndex() {
   }
 
   if (isSearchOpen) {
-    scheduleSearchAutoHide();
-    toolbar?.addEventListener('pointerdown', scheduleSearchAutoHide);
+    clearEpisodeIndexSearchAutoHideTimer();
   } else {
     clearEpisodeIndexSearchAutoHideTimer();
   }
@@ -3867,12 +3926,18 @@ function renderEpisodeIndex() {
     document.addEventListener('click', (event) => {
       if (toolbar?.contains(event.target)) return;
       if (!episodeIndexSearchMode) return;
+      const shouldRestoreOrigin = Boolean(episodeIndexSearchOriginHash && !String(episodeIndexAppliedQuery || '').trim());
       if (!String(episodeIndexAppliedQuery || '').trim()) {
         episodeIndexQuery = '';
       } else {
         episodeIndexQuery = episodeIndexAppliedQuery;
+        clearEpisodeIndexSearchOrigin();
       }
       episodeIndexSearchMode = false;
+      if (shouldRestoreOrigin) {
+        restoreEpisodeIndexSearchOrigin();
+        return;
+      }
       renderEpisodeIndex();
     }, { signal });
   } else {
@@ -4535,7 +4600,7 @@ function renderRoute() {
   } else if (section === 'home' && id === 'episodes') {
     renderHome('home-episodes');
   } else if (section === 'episodes' && !id) {
-    if (!(previousRoute.section === 'episodes' && !previousRoute.id)) {
+    if (!(previousRoute.section === 'episodes' && !previousRoute.id) && !episodeIndexFocusSearchOnRender) {
       episodeIndexQuery = '';
       episodeIndexAppliedQuery = '';
       episodeIndexSearchMode = false;
@@ -4580,10 +4645,16 @@ function renderRoute() {
   refreshViewportBehaviors({ resetDock: true });
   lastRenderedHash = window.location.hash || '#/';
   hasRenderedRoute = true;
+  const routeRestore = pendingRouteRestore && pendingRouteRestore.hash === (window.location.hash || '#/')
+    ? pendingRouteRestore
+    : null;
+  if (routeRestore) {
+    pendingRouteRestore = null;
+  }
   window.requestAnimationFrame(() => {
     normalizeMobileViewport();
   });
-  if (section === 'episodes' && !id) {
+  if (section === 'episodes' && !id && !routeRestore) {
     window.requestAnimationFrame(() => {
       scrollWindowInstantly(0, 0);
     });
@@ -4594,6 +4665,14 @@ function renderRoute() {
   window.requestAnimationFrame(() => {
     syncSectionProgress();
   });
+  if (routeRestore) {
+    window.requestAnimationFrame(() => {
+      scrollWindowInstantly(routeRestore.scrollY, routeRestore.scrollX);
+    });
+    window.setTimeout(() => {
+      scrollWindowInstantly(routeRestore.scrollY, routeRestore.scrollX);
+    }, 120);
+  }
 }
 
 async function init() {

@@ -389,6 +389,7 @@ input {
 
 .section-progress-item.prev,
 .section-progress-item.next {
+  min-width: 96px;
   min-height: 30px;
   font-size: 14.5px;
   opacity: 0.86;
@@ -397,6 +398,7 @@ input {
 }
 
 .section-progress-item.current {
+  min-width: 168px;
   min-height: 48px;
   font-size: 18px;
   font-weight: 900;
@@ -426,6 +428,15 @@ input {
   text-shadow:
     0.015em 0 currentColor,
     -0.015em 0 currentColor;
+}
+
+.section-progress-item.prev .section-progress-label,
+.section-progress-item.next .section-progress-label {
+  max-width: 7ch;
+}
+
+.section-progress-item.current .section-progress-label {
+  max-width: 14ch;
 }
 
 @keyframes sectionWheelPulse {
@@ -660,7 +671,7 @@ body.page-episode-index .section-progress-panel-text {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 10px;
+  gap: 14px;
   transition: transform 0.36s cubic-bezier(0.22, 1, 0.36, 1), opacity 0.28s ease, filter 0.28s ease;
 }
 
@@ -677,6 +688,7 @@ body.page-episode-index .section-progress-panel-text {
 }
 
 .floating-actions.is-collapsed .floating-actions-menu .menu-button,
+.floating-actions.is-collapsed .floating-actions-menu .floating-episode-search,
 .floating-actions.is-collapsed .floating-actions-menu .floating-home {
   height: 0;
   min-height: 0;
@@ -706,6 +718,7 @@ body.page-episode-index .section-progress-panel-text {
 }
 
 .floating-actions-menu .menu-button,
+.floating-episode-search,
 .floating-home,
 .back-to-top {
   position: static;
@@ -741,6 +754,7 @@ body.page-episode-index .section-progress-panel-text {
 }
 
 .floating-actions-menu .menu-button,
+.floating-episode-search,
 .floating-home {
   opacity: 1;
   pointer-events: auto;
@@ -752,6 +766,7 @@ body.page-episode-index .section-progress-panel-text {
 }
 
 .floating-actions-menu .menu-button:hover,
+.floating-episode-search:hover,
 .floating-home:hover,
 .back-to-top:hover {
   background: linear-gradient(180deg, rgba(54, 67, 86, 0.98), rgba(26, 35, 49, 0.96));
@@ -763,6 +778,7 @@ body.page-episode-index .section-progress-panel-text {
 }
 
 .floating-actions-menu .menu-button:active,
+.floating-episode-search:active,
 .floating-home:active,
 .back-to-top:active {
   transform: translateY(0);
@@ -2428,6 +2444,7 @@ body.page-home .home-episode-card > p:not(.card-kicker):not(.inline-label) {
   display: inline-flex;
   align-items: center;
   justify-content: center;
+  flex: 0 0 auto;
   width: 56px;
   height: 56px;
   border: 1px solid rgba(161, 143, 121, 0.18);
@@ -4644,6 +4661,7 @@ body.page-episode-index #episode-index-results .list-item:active h3 {
   }
 
   .floating-actions-menu .menu-button,
+  .floating-episode-search,
   .floating-home,
   .back-to-top {
     width: 40px;
@@ -4651,6 +4669,7 @@ body.page-episode-index #episode-index-results .list-item:active h3 {
   }
 
   .floating-actions-menu .menu-button:hover,
+  .floating-episode-search:hover,
   .floating-home:hover,
   .back-to-top:hover,
   .back-to-top:active {
@@ -4738,21 +4757,24 @@ body.page-episode-index #episode-index-results .list-item:active h3 {
 
   .section-progress-item.prev,
   .section-progress-item.next {
+    min-width: 78px;
     min-height: 22px;
     font-size: 12.5px;
   }
 
   .section-progress-item.current {
+    min-width: 124px;
     min-height: 32px;
     font-size: 15px;
   }
 
   .floating-actions-menu {
-    gap: 8px;
+    gap: 12px;
     margin-bottom: 2px;
   }
 
   .floating-actions-menu .menu-button,
+  .floating-episode-search,
   .floating-home,
   .back-to-top {
     width: 38px;
@@ -4936,6 +4958,7 @@ body.page-home .section.split > div .list-item:active p {
 }
 
   body.page-home .floating-actions-menu .menu-button,
+  body.page-home .floating-episode-search,
   body.page-home .floating-home,
   body.page-home .back-to-top {
     background: linear-gradient(180deg, rgba(42, 53, 70, 0.96), rgba(23, 31, 43, 0.94));
@@ -5348,7 +5371,7 @@ body.page-home .section.split > div .list-item:active p {
   }
 
   .episode-toolbar-main.is-search-collapsed {
-    gap: 8px;
+    gap: 0;
   }
 
   .episode-index-toolbar.is-floating {

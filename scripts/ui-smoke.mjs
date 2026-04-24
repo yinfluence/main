@@ -433,14 +433,8 @@ async function runMobileEpisodeIndexChecks(client) {
   );
   await sleep(5300);
   assert(
-    await evaluate(client, `Boolean(document.querySelector('#episode-index-search-toggle')) && !document.querySelector('#episode-index-search')`),
-    'Episode index search should auto-hide after 5 seconds when it is not in the floating position'
-  );
-  await clickSelector(client, '#episode-index-search-toggle');
-  await waitForCondition(
-    client,
-    `Boolean(document.querySelector('#episode-index-search'))`,
-    { timeoutMs: 4000, label: 'episode index search re-expands after auto hide' }
+    await evaluate(client, `Boolean(document.querySelector('#episode-index-search'))`),
+    'Episode index search should stay open until the user dismisses it'
   );
   await evaluate(client, `(() => {
     const input = document.querySelector('#episode-index-search');
