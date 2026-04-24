@@ -345,10 +345,13 @@ async function runMobileEpisodeIndexChecks(client) {
   await waitForCondition(
     client,
     `(() => {
-      const active = document.querySelector('.episode-range-wheel-option.active');
+      const options = [...document.querySelectorAll('.episode-range-wheel-option')];
+      const active = options.find((option) => option.classList.contains('active'));
+      const expected = options[0]?.textContent?.trim();
       const searchToggle = document.querySelector('#episode-index-search-toggle');
       return location.hash === '#/episodes'
-        && active?.textContent?.trim() === '121-124集'
+        && Boolean(expected)
+        && active?.textContent?.trim() === expected
         && Boolean(searchToggle)
         && !document.querySelector('#episode-index-search');
     })()`,

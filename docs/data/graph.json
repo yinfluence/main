@@ -2,11 +2,11 @@
   "meta": {
     "title": "颖响力知识图谱",
     "subtitle": "节目、概念、模型、人物、主题之间的可视化连接网络",
-    "nodeCount": 435,
-    "linkCount": 793,
+    "nodeCount": 436,
+    "linkCount": 801,
     "typeCounts": {
       "model": 53,
-      "episode": 124,
+      "episode": 125,
       "concept": 111,
       "person": 61,
       "theme": 86
@@ -22,7 +22,7 @@
       "route": "models/risk-transfer-chain",
       "summary": "系统不会立刻吞下风险，而是先沿着银行、企业、票据、供应链和普通人之间不断转手、延后和下沉。",
       "status": null,
-      "degree": 32
+      "degree": 33
     },
     {
       "id": "episode:EP001",
@@ -296,6 +296,17 @@
       "type": "theme",
       "route": "themes/maritime-chokepoints-and-route-order",
       "summary": "讨论海峡、运河和关键航道如何把地理位置变成规则、保险、资本和军事的综合权力。",
+      "status": null,
+      "degree": 8
+    },
+    {
+      "id": "model:value-capture",
+      "key": "value-capture",
+      "label": "价值捕获",
+      "fullLabel": "价值捕获",
+      "type": "model",
+      "route": "models/value-capture",
+      "summary": "价值捕获模型强调商业链条中关键不只是创造了价值，而是谁真正留下了价值。",
       "status": null,
       "degree": 8
     },
@@ -586,6 +597,17 @@
       "degree": 8
     },
     {
+      "id": "episode:EP125",
+      "key": "EP125",
+      "label": "EP125",
+      "fullLabel": "EP125 · 35.97亿天价罚单！拼多多为何暴力抗法？幽灵外卖层层转包黑幕，7家平台命运天差地别，背后全拆解。",
+      "type": "episode",
+      "route": "episodes/EP125",
+      "summary": "本期从 35.97 亿元天价罚单切入，讨论的重点并不只是“哪家平台罚得最多”，而是借七家外卖平台的不同处罚结果，把食品安全、平台权力、转单黑产和层层转包的底层机制串成一条链。节目认为，拼多多之所以被顶格重罚，不只是因为问题店铺或交易额，而在于它既主动与转单平台深度合作，又出现了阻挠执法的行为；而整个行业真正可怕的地方，是消费者支付的高价在平台、幽灵店铺和转单系统里被层层截留，最后真正做货的黑作坊只拿到极低成本，食品安全和履约风险则一路向链条末端下沉。",
+      "status": "curated",
+      "degree": 8
+    },
+    {
       "id": "model:subsidy-capital-flywheel",
       "key": "subsidy-capital-flywheel",
       "label": "补贴资本飞轮",
@@ -615,17 +637,6 @@
       "type": "model",
       "route": "models/chokepoint-order-model",
       "summary": "真正决定咽喉通道价值的，不只是地理位置，而是谁定义通行规则、风险定价与法律边界。",
-      "status": null,
-      "degree": 7
-    },
-    {
-      "id": "model:value-capture",
-      "key": "value-capture",
-      "label": "价值捕获",
-      "fullLabel": "价值捕获",
-      "type": "model",
-      "route": "models/value-capture",
-      "summary": "价值捕获模型强调商业链条中关键不只是创造了价值，而是谁真正留下了价值。",
       "status": null,
       "degree": 7
     },
@@ -938,6 +949,17 @@
       "degree": 7
     },
     {
+      "id": "concept:cost-shifting",
+      "key": "cost-shifting",
+      "label": "成本外移",
+      "fullLabel": "成本外移",
+      "type": "concept",
+      "route": "concepts/cost-shifting",
+      "summary": "组织内部的高额非生产性成本，最终会通过价格、规则或风险转嫁给外部承担者。",
+      "status": null,
+      "degree": 6
+    },
+    {
       "id": "theme:great-power-competition-and-strategic-time",
       "key": "great-power-competition-and-strategic-time",
       "label": "大国竞争与战略时间",
@@ -1222,17 +1244,6 @@
       "summary": "本期用三国里的荆州困局去翻译伊朗的地缘处境，核心判断是：伊朗之所以反复成为中东风暴眼，不只是因为它和美国、以色列对抗，而是因为它同时具备天下枢纽与四战之地这两种属性。节目进一步提出，更危险的往往不是正面强敌，而是周边邻国对一个强势近邻的集体戒备；从这个意义上说，庞统式的战略收缩和等待时机，可能比诸葛亮式死守前沿更能保住长期生存空间。",
       "status": "curated",
       "degree": 6
-    },
-    {
-      "id": "concept:cost-shifting",
-      "key": "cost-shifting",
-      "label": "成本外移",
-      "fullLabel": "成本外移",
-      "type": "concept",
-      "route": "concepts/cost-shifting",
-      "summary": "组织内部的高额非生产性成本，最终会通过价格、规则或风险转嫁给外部承担者。",
-      "status": null,
-      "degree": 5
     },
     {
       "id": "model:rule-anchored-small-state-model",
@@ -2126,6 +2137,39 @@
       "degree": 3
     },
     {
+      "id": "theme:platform-labor-and-lived-reality",
+      "key": "platform-labor-and-lived-reality",
+      "label": "平台劳动与真实生存",
+      "fullLabel": "平台劳动与真实生存",
+      "type": "theme",
+      "route": "themes/platform-labor-and-lived-reality",
+      "summary": "关注平台型劳动如何被宣传美化，以及真实生存条件怎样被遮蔽。",
+      "status": null,
+      "degree": 3
+    },
+    {
+      "id": "theme:platform-traffic-and-price-distortion",
+      "key": "platform-traffic-and-price-distortion",
+      "label": "平台流量与价格失真",
+      "fullLabel": "平台流量与价格失真",
+      "type": "theme",
+      "route": "themes/platform-traffic-and-price-distortion",
+      "summary": "当平台把巨量流量集中到极少数节点，价格、信誉和真伪判断都会开始向流量中心倾斜。",
+      "status": null,
+      "degree": 3
+    },
+    {
+      "id": "model:platform-gatekeeping",
+      "key": "platform-gatekeeping",
+      "label": "平台守门结构",
+      "fullLabel": "平台守门结构",
+      "type": "model",
+      "route": "models/platform-gatekeeping",
+      "summary": "平台守门结构说明平台通过流量、规则和处罚权决定谁可见、谁能赚钱、谁被沉默。",
+      "status": null,
+      "degree": 3
+    },
+    {
       "id": "theme:platform-governance-and-folk-discourse",
       "key": "platform-governance-and-folk-discourse",
       "label": "平台治理与民间话语",
@@ -2764,6 +2808,17 @@
       "degree": 2
     },
     {
+      "id": "concept:signal-price-distortion",
+      "key": "signal-price-distortion",
+      "label": "价格信号扭曲",
+      "fullLabel": "价格信号扭曲",
+      "type": "concept",
+      "route": "concepts/signal-price-distortion",
+      "summary": "价格本应用来传递供需信息，若被流量、叙事或行政力量改写，就会误导生产和消费。",
+      "status": null,
+      "degree": 2
+    },
+    {
       "id": "concept:exam-centered-discipline",
       "key": "exam-centered-discipline",
       "label": "考试中心化规训",
@@ -2852,39 +2907,6 @@
       "degree": 2
     },
     {
-      "id": "theme:platform-labor-and-lived-reality",
-      "key": "platform-labor-and-lived-reality",
-      "label": "平台劳动与真实生存",
-      "fullLabel": "平台劳动与真实生存",
-      "type": "theme",
-      "route": "themes/platform-labor-and-lived-reality",
-      "summary": "关注平台型劳动如何被宣传美化，以及真实生存条件怎样被遮蔽。",
-      "status": null,
-      "degree": 2
-    },
-    {
-      "id": "theme:platform-traffic-and-price-distortion",
-      "key": "platform-traffic-and-price-distortion",
-      "label": "平台流量与价格失真",
-      "fullLabel": "平台流量与价格失真",
-      "type": "theme",
-      "route": "themes/platform-traffic-and-price-distortion",
-      "summary": "当平台把巨量流量集中到极少数节点，价格、信誉和真伪判断都会开始向流量中心倾斜。",
-      "status": null,
-      "degree": 2
-    },
-    {
-      "id": "model:platform-gatekeeping",
-      "key": "platform-gatekeeping",
-      "label": "平台守门结构",
-      "fullLabel": "平台守门结构",
-      "type": "model",
-      "route": "models/platform-gatekeeping",
-      "summary": "平台守门结构说明平台通过流量、规则和处罚权决定谁可见、谁能赚钱、谁被沉默。",
-      "status": null,
-      "degree": 2
-    },
-    {
       "id": "theme:automotive-r-and-d-governance",
       "key": "automotive-r-and-d-governance",
       "label": "汽车研发治理与沉默联盟",
@@ -2903,6 +2925,17 @@
       "type": "theme",
       "route": "themes/bounded-social-experimentation",
       "summary": "制度的韧性，不只看能否创新，也看是否允许试错、限定边界和吸收后果。",
+      "status": null,
+      "degree": 2
+    },
+    {
+      "id": "concept:production-risk-outsourcing",
+      "key": "production-risk-outsourcing",
+      "label": "生产端风险外包",
+      "fullLabel": "生产端风险外包",
+      "type": "concept",
+      "route": "concepts/production-risk-outsourcing",
+      "summary": "平台和中间层把库存、投流、合规和现金流风险持续压给生产端。",
       "status": null,
       "degree": 2
     },
@@ -3732,17 +3765,6 @@
       "degree": 1
     },
     {
-      "id": "concept:signal-price-distortion",
-      "key": "signal-price-distortion",
-      "label": "价格信号扭曲",
-      "fullLabel": "价格信号扭曲",
-      "type": "concept",
-      "route": "concepts/signal-price-distortion",
-      "summary": "价格本应用来传递供需信息，若被流量、叙事或行政力量改写，就会误导生产和消费。",
-      "status": null,
-      "degree": 1
-    },
-    {
       "id": "concept:downgrade-equality",
       "key": "downgrade-equality",
       "label": "降标式公平",
@@ -4245,17 +4267,6 @@
       "type": "concept",
       "route": "concepts/aesthetic-compression",
       "summary": "社会越功利和高压，审美、协商与细腻判断越容易被压缩成粗糙标准。",
-      "status": null,
-      "degree": 1
-    },
-    {
-      "id": "concept:production-risk-outsourcing",
-      "key": "production-risk-outsourcing",
-      "label": "生产端风险外包",
-      "fullLabel": "生产端风险外包",
-      "type": "concept",
-      "route": "concepts/production-risk-outsourcing",
-      "summary": "平台和中间层把库存、投流、合规和现金流风险持续压给生产端。",
       "status": null,
       "degree": 1
     },
@@ -8673,6 +8684,46 @@
     {
       "source": "episode:EP124",
       "target": "theme:middle-class-descent-and-stratification",
+      "kind": "episode-theme"
+    },
+    {
+      "source": "episode:EP125",
+      "target": "concept:signal-price-distortion",
+      "kind": "episode-concept"
+    },
+    {
+      "source": "episode:EP125",
+      "target": "concept:cost-shifting",
+      "kind": "episode-concept"
+    },
+    {
+      "source": "episode:EP125",
+      "target": "concept:production-risk-outsourcing",
+      "kind": "episode-concept"
+    },
+    {
+      "source": "episode:EP125",
+      "target": "model:platform-gatekeeping",
+      "kind": "episode-model"
+    },
+    {
+      "source": "episode:EP125",
+      "target": "model:risk-transfer-chain",
+      "kind": "episode-model"
+    },
+    {
+      "source": "episode:EP125",
+      "target": "model:value-capture",
+      "kind": "episode-model"
+    },
+    {
+      "source": "episode:EP125",
+      "target": "theme:platform-traffic-and-price-distortion",
+      "kind": "episode-theme"
+    },
+    {
+      "source": "episode:EP125",
+      "target": "theme:platform-labor-and-lived-reality",
       "kind": "episode-theme"
     },
     {
