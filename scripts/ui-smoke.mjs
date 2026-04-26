@@ -194,6 +194,28 @@ async function clickSelector(client, selector) {
   assert(clicked, `Missing clickable selector: ${selector}`);
 }
 
+async function clickSelectorWithMouse(client, selector) {
+  const rect = await evaluate(client, `(() => {
+    const element = document.querySelector(${JSON.stringify(selector)});
+    if (!element) return null;
+    const rect = element.getBoundingClientRect();
+    const hit = document.elementFromPoint(rect.left + rect.width / 2, rect.top + rect.height / 2);
+    return {
+      x: rect.left + rect.width / 2,
+      y: rect.top + rect.height / 2,
+      width: rect.width,
+      height: rect.height,
+      hitText: hit?.textContent?.trim() || '',
+      hitClass: String(hit?.className || '')
+    };
+  })()`);
+  assert(rect && rect.width > 0 && rect.height > 0, `Missing clickable selector: ${selector}`);
+  assert(rect.y >= 0, `Selector is above the viewport and cannot receive a real mouse click: ${selector}`);
+  await client.send('Input.dispatchMouseEvent', { type: 'mouseMoved', x: rect.x, y: rect.y, button: 'none' });
+  await client.send('Input.dispatchMouseEvent', { type: 'mousePressed', x: rect.x, y: rect.y, button: 'left', clickCount: 1 });
+  await client.send('Input.dispatchMouseEvent', { type: 'mouseReleased', x: rect.x, y: rect.y, button: 'left', clickCount: 1 });
+}
+
 async function captureScreenshot(client, filename) {
   const { data } = await client.send('Page.captureScreenshot', { format: 'png', fromSurface: true });
   await writeFile(path.join(artifactDir, filename), Buffer.from(data, 'base64'));
@@ -520,7 +542,13 @@ async function runMobileEpisodeIndexChecks(client) {
     })()`,
     { timeoutMs: 3000, label: 'mobile episode range toolbar hides after large downward scroll' }
   );
-  await evaluate(client, `window.scrollTo(0, 1040); true;`);
+  await evaluate(client, `(() => {
+    for (const y of [1228, 1206, 1184, 1162, 1140, 1118, 1096, 1074, 1052, 1040]) {
+      window.scrollTo(0, y);
+      window.dispatchEvent(new Event('scroll'));
+    }
+    return true;
+  })()`);
   await waitForCondition(
     client,
     `(() => {
@@ -569,7 +597,7 @@ async function runMobileEpisodeIndexChecks(client) {
     })()`),
     'Mobile episode range toolbar should reappear after a large upward scroll from idle-hidden state'
   );
-  await clickSelector(client, '.episode-range-wheel [data-episode-range="81"]');
+  await clickSelectorWithMouse(client, '.episode-range-wheel [data-episode-range="81"]');
   await waitForCondition(
     client,
     `(() => {

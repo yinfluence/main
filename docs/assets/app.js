@@ -32,7 +32,7 @@ const WEBSITE_LOG_ENTRIES = [
       '新增 EP126 节目页与“三层杠杆”概念，把恒大、许家印和房地产系统性风险接回地产去杠杆、地方财政、强人治理等知识线。',
       'EP121 与 EP126 的 B 站入口均更新为会员节目链接，并写入人工覆盖表，避免后续自动同步把会员入口回退成灰色状态。',
       '视频链接 SOP 修正“暂未上架”和“已下架”的区别，并把纯文字稿导入规则从旧的伪造 .srt 时间轴改为直接保存 .md。',
-      '节目索引顶部工具条恢复为页面流内 sticky：初始位置不再遮住“节目索引”标题，悬浮后大幅下滑会隐藏、大幅上滑会出现、闲置 10 秒自动收起；区间按钮切换后会定位到该区间第一张节目卡，节目卡片也去掉了多余的“查看”胶囊。',
+      '节目索引顶部工具条恢复为页面流内 sticky：初始位置不再遮住“节目索引”标题，悬浮后按同方向累计滚动距离判断大幅下滑隐藏 / 大幅上滑出现，闲置 10 秒自动收起；区间按钮切换后会定位到该区间第一张节目卡，横向轮盘也改为拖动确认后才捕获 pointer，节目卡片去掉了多余的“查看”胶囊。',
       '左侧导航品牌标题固定单行显示，窄屏下通过字号和头像尺寸收敛，不再把“颖响力知识库”折成两行。'
     ]
   },
@@ -1999,7 +1999,6 @@ function setupEpisodeRangeWheelDrag(wheel) {
     velocityX = 0;
     isDragging = false;
     suppressClick = false;
-    wheel.setPointerCapture?.(pointerId);
   });
 
   wheel.addEventListener('pointermove', (event) => {
@@ -2017,6 +2016,7 @@ function setupEpisodeRangeWheelDrag(wheel) {
       isDragging = true;
       suppressClick = true;
       wheel.classList.add('is-dragging');
+      wheel.setPointerCapture?.(pointerId);
     }
 
     event.preventDefault();
@@ -2203,6 +2203,8 @@ function setupEpisodeToolbarBehavior(toolbar) {
   let idleHideTimer = 0;
   let anchorScrollY = 0;
   let stickyTop = 0;
+  let accumulatedScroll = 0;
+  let lastScrollIntent = 0;
 
   const isEngaged = () => toolbar.classList.contains('is-engaged') || toolbar.matches(':focus-within');
 
@@ -2254,16 +2256,29 @@ function setupEpisodeToolbarBehavior(toolbar) {
     const delta = currentScrollY - lastScrollY;
     const hideThreshold = isMobileViewport() ? 64 : 84;
     const revealThreshold = isMobileViewport() ? 42 : 56;
+    const intent = Math.abs(delta) < 1 ? 0 : (delta > 0 ? 1 : -1);
+
+    if (intent === 0) {
+      accumulatedScroll = 0;
+    } else if (intent === lastScrollIntent) {
+      accumulatedScroll += Math.abs(delta);
+    } else {
+      accumulatedScroll = Math.abs(delta);
+      lastScrollIntent = intent;
+    }
 
     if (isAtStaticPosition()) {
       showToolbar();
       clearIdleHideTimer();
-    } else if (delta > hideThreshold && !isEngaged()) {
+      accumulatedScroll = 0;
+    } else if (intent > 0 && accumulatedScroll > hideThreshold && !isEngaged()) {
       hideToolbar();
       clearIdleHideTimer();
-    } else if (delta < -revealThreshold) {
+      accumulatedScroll = 0;
+    } else if (intent < 0 && accumulatedScroll > revealThreshold) {
       showToolbar();
       scheduleIdleHide();
+      accumulatedScroll = 0;
     } else if (!shell.classList.contains('is-hidden-by-scroll')) {
       scheduleIdleHide();
     }
@@ -2309,6 +2324,8 @@ function setupEpisodeToolbarBehavior(toolbar) {
     showToolbar();
     measureAnchor();
     lastScrollY = window.scrollY;
+    accumulatedScroll = 0;
+    lastScrollIntent = 0;
     syncVisibility();
   }, { passive: true, signal });
 
