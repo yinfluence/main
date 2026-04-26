@@ -32,7 +32,7 @@ const WEBSITE_LOG_ENTRIES = [
       '新增 EP126 节目页与“三层杠杆”概念，把恒大、许家印和房地产系统性风险接回地产去杠杆、地方财政、强人治理等知识线。',
       'EP121 与 EP126 的 B 站入口均更新为会员节目链接，并写入人工覆盖表，避免后续自动同步把会员入口回退成灰色状态。',
       '视频链接 SOP 修正“暂未上架”和“已下架”的区别，并把纯文字稿导入规则从旧的伪造 .srt 时间轴改为直接保存 .md。',
-      '节目索引顶部工具条恢复为页面流内 sticky：初始位置不再遮住“节目索引”标题，滚动后再吸顶；区间按钮不再进入不可点击的隐藏态，切换后会定位到该区间第一张节目卡。',
+      '节目索引顶部工具条恢复为页面流内 sticky：初始位置不再遮住“节目索引”标题，悬浮后大幅下滑会隐藏、大幅上滑会出现、闲置 10 秒自动收起；区间按钮切换后会定位到该区间第一张节目卡，节目卡片也去掉了多余的“查看”胶囊。',
       '左侧导航品牌标题固定单行显示，窄屏下通过字号和头像尺寸收敛，不再把“颖响力知识库”折成两行。'
     ]
   },
@@ -1887,7 +1887,6 @@ function renderEpisodeIndexEpisodeList(episodes = []) {
         >
           <div class="episode-index-card-head">
             <p class="card-kicker episode-index-kicker">${escapeHtml(episode.id)}${renderEpisodeFreshBadge(episode, { compact: true })}</p>
-            <span class="episode-index-open">查看</span>
           </div>
           <a class="card-primary-link" href="${episodeHref}">
             <h3>${escapeHtml(displayEpisodeTitle(episode.title))}</h3>
@@ -2198,8 +2197,83 @@ function setupEpisodeToolbarBehavior(toolbar) {
   const controller = new AbortController();
   episodeToolbarController = controller;
   const { signal } = controller;
+  const shell = toolbar.closest('.episode-index-toolbar-shell') || toolbar;
+  const idleHideDelay = 10000;
+  let lastScrollY = window.scrollY;
+  let idleHideTimer = 0;
+  let anchorScrollY = 0;
+  let stickyTop = 0;
+
+  const isEngaged = () => toolbar.classList.contains('is-engaged') || toolbar.matches(':focus-within');
+
+  const clearIdleHideTimer = () => {
+    window.clearTimeout(idleHideTimer);
+    idleHideTimer = 0;
+  };
+
+  const measureAnchor = () => {
+    const shellStyle = getComputedStyle(shell);
+    stickyTop = Number.parseFloat(shellStyle.top) || (isMobileViewport() ? 8 : 14);
+    const wasHidden = shell.classList.contains('is-hidden-by-scroll');
+    if (wasHidden) shell.classList.remove('is-hidden-by-scroll');
+    const rect = shell.getBoundingClientRect();
+    anchorScrollY = Math.max(window.scrollY + rect.top, 0);
+    if (wasHidden && window.scrollY > Math.max(anchorScrollY - stickyTop + 4, 0)) {
+      shell.classList.add('is-hidden-by-scroll');
+    }
+  };
+
+  const isAtStaticPosition = () => {
+    const rect = shell.getBoundingClientRect();
+    if (rect.top > stickyTop + 2) return true;
+    return window.scrollY <= Math.max(anchorScrollY - stickyTop + 2, 0);
+  };
+
+  const showToolbar = () => {
+    shell.classList.remove('is-hidden-by-scroll');
+    toolbar.classList.remove('is-hidden-by-scroll');
+    toolbar.style.setProperty('--episode-toolbar-opacity', '1');
+  };
+
+  const hideToolbar = () => {
+    if (isAtStaticPosition() || isEngaged()) return;
+    shell.classList.add('is-hidden-by-scroll');
+    toolbar.classList.remove('is-hidden-by-scroll');
+  };
+
+  const scheduleIdleHide = () => {
+    clearIdleHideTimer();
+    if (isAtStaticPosition() || isEngaged()) return;
+    idleHideTimer = window.setTimeout(() => {
+      hideToolbar();
+    }, idleHideDelay);
+  };
+
+  const syncVisibility = () => {
+    const currentScrollY = window.scrollY;
+    const delta = currentScrollY - lastScrollY;
+    const hideThreshold = isMobileViewport() ? 64 : 84;
+    const revealThreshold = isMobileViewport() ? 42 : 56;
+
+    if (isAtStaticPosition()) {
+      showToolbar();
+      clearIdleHideTimer();
+    } else if (delta > hideThreshold && !isEngaged()) {
+      hideToolbar();
+      clearIdleHideTimer();
+    } else if (delta < -revealThreshold) {
+      showToolbar();
+      scheduleIdleHide();
+    } else if (!shell.classList.contains('is-hidden-by-scroll')) {
+      scheduleIdleHide();
+    }
+
+    lastScrollY = currentScrollY;
+  };
 
   const engageToolbar = () => {
+    clearIdleHideTimer();
+    showToolbar();
     toolbar.classList.add('is-engaged');
     toolbar.style.setProperty('--episode-toolbar-opacity', '1');
   };
@@ -2207,9 +2281,11 @@ function setupEpisodeToolbarBehavior(toolbar) {
   const releaseToolbar = () => {
     toolbar.classList.remove('is-engaged');
     toolbar.style.setProperty('--episode-toolbar-opacity', '1');
+    scheduleIdleHide();
   };
 
   toolbar.classList.remove('is-floating', 'is-hidden-by-scroll', 'is-ghost');
+  shell.classList.remove('is-hidden-by-scroll');
   toolbar.style.setProperty('--episode-toolbar-opacity', '1');
   toolbar.style.removeProperty('position');
   toolbar.style.removeProperty('top');
@@ -2227,11 +2303,17 @@ function setupEpisodeToolbarBehavior(toolbar) {
   }, { signal });
 
   window.addEventListener('scroll', () => {
-    toolbar.classList.remove('is-hidden-by-scroll');
+    syncVisibility();
   }, { passive: true, signal });
   window.addEventListener('resize', () => {
-    toolbar.classList.remove('is-hidden-by-scroll');
+    showToolbar();
+    measureAnchor();
+    lastScrollY = window.scrollY;
+    syncVisibility();
   }, { passive: true, signal });
+
+  measureAnchor();
+  syncVisibility();
 }
 
 function setupHomeSearchToolbarBehavior(toolbar) {

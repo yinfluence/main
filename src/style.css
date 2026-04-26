@@ -2449,6 +2449,16 @@ body.page-home .home-episode-card > p:not(.card-kicker):not(.inline-label) {
   width: 100%;
   min-height: 0;
   margin-bottom: 10px;
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity 0.24s ease, transform 0.26s ease;
+  will-change: opacity, transform;
+}
+
+.episode-index-toolbar-shell.is-hidden-by-scroll {
+  opacity: 0;
+  transform: translateY(calc(-100% - 18px));
+  pointer-events: none;
 }
 
 .episode-index-toolbar.is-floating {
@@ -4353,20 +4363,6 @@ body.page-episode-index #episode-index-results .list-item:active h3 {
 
 .episode-index-kicker {
   margin: 0;
-}
-
-.episode-index-open {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  min-height: 30px;
-  padding: 0 11px;
-  border-radius: 999px;
-  border: 1px solid rgba(166, 144, 112, 0.16);
-  background: rgba(255, 255, 255, 0.74);
-  color: rgba(53, 47, 40, 0.7);
-  font-size: 12px;
-  font-weight: 600;
 }
 
 .episode-index-summary {

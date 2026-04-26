@@ -473,6 +473,10 @@ async function runMobileEpisodeIndexChecks(client) {
     `Boolean(document.querySelector('#episode-index-results .episode-index-card'))`,
     { timeoutMs: 4000, label: 'episode index cards visible after home more link' }
   );
+  assert(
+    await evaluate(client, `!document.querySelector('#episode-index-results .episode-index-open') && ![...document.querySelectorAll('#episode-index-results .episode-index-card-head')].some((node) => (node.textContent || '').includes('查看'))`),
+    'Episode index cards should rely on whole-card navigation and should not show a separate 查看 label'
+  );
   await sleep(800);
   await captureScreenshot(client, 'mobile-episodes-initial.png');
   assert(
@@ -496,23 +500,74 @@ async function runMobileEpisodeIndexChecks(client) {
     })()`,
     { timeoutMs: 4000, label: 'mobile episode range wheel updates selected group' }
   );
-  await evaluate(client, `window.scrollTo(0, 1250); true;`);
+  await evaluate(client, `(() => {
+    document.documentElement.style.scrollBehavior = 'auto';
+    window.scrollTo(0, 0);
+    window.dispatchEvent(new Event('scroll'));
+    return true;
+  })()`);
   await sleep(180);
+  await evaluate(client, `window.scrollTo(0, 1250); true;`);
+  await waitForCondition(
+    client,
+    `(() => {
+      const shell = document.querySelector('.episode-index-toolbar-shell');
+      if (!shell) return false;
+      const style = getComputedStyle(shell);
+      return shell.classList.contains('is-hidden-by-scroll')
+        && Number(style.opacity) < 0.5
+        && style.pointerEvents === 'none';
+    })()`,
+    { timeoutMs: 3000, label: 'mobile episode range toolbar hides after large downward scroll' }
+  );
   await evaluate(client, `window.scrollTo(0, 1040); true;`);
-  await sleep(220);
-  assert(
-    await evaluate(client, `(() => {
+  await waitForCondition(
+    client,
+    `(() => {
+      const shell = document.querySelector('.episode-index-toolbar-shell');
       const toolbar = document.querySelector('.episode-index-toolbar');
-      if (!toolbar) return false;
+      if (!shell || !toolbar) return false;
       const rect = toolbar.getBoundingClientRect();
       const style = getComputedStyle(toolbar);
+      const shellStyle = getComputedStyle(shell);
       return rect.top >= 0
         && rect.top <= 42
         && rect.bottom > 0
         && Number(style.opacity) > 0.5
-        && style.pointerEvents !== 'none';
+        && Number(shellStyle.opacity) > 0.5
+        && style.pointerEvents !== 'none'
+        && shellStyle.pointerEvents !== 'none';
+    })()`,
+    { timeoutMs: 3000, label: 'mobile episode range toolbar reappears after large upward scroll' }
+  );
+  await sleep(10300);
+  assert(
+    await evaluate(client, `(() => {
+      const shell = document.querySelector('.episode-index-toolbar-shell');
+      if (!shell) return false;
+      const style = getComputedStyle(shell);
+      return shell.classList.contains('is-hidden-by-scroll')
+        && Number(style.opacity) < 0.5
+        && style.pointerEvents === 'none';
     })()`),
-    'Mobile episode range toolbar should reappear as a sticky control when the user scrolls upward'
+    'Mobile episode range toolbar should auto-hide after ten seconds of floating idle time'
+  );
+  await evaluate(client, `window.scrollTo(0, 900); true;`);
+  await sleep(220);
+  assert(
+    await evaluate(client, `(() => {
+      const shell = document.querySelector('.episode-index-toolbar-shell');
+      const toolbar = document.querySelector('.episode-index-toolbar');
+      if (!shell || !toolbar) return false;
+      const rect = toolbar.getBoundingClientRect();
+      const shellStyle = getComputedStyle(shell);
+      return !shell.classList.contains('is-hidden-by-scroll')
+        && rect.top >= 0
+        && rect.top <= 42
+        && Number(shellStyle.opacity) > 0.5
+        && shellStyle.pointerEvents !== 'none';
+    })()`),
+    'Mobile episode range toolbar should reappear after a large upward scroll from idle-hidden state'
   );
   await clickSelector(client, '.episode-range-wheel [data-episode-range="81"]');
   await waitForCondition(
