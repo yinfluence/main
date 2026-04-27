@@ -2,13 +2,13 @@
   "meta": {
     "title": "颖响力知识图谱",
     "subtitle": "节目、概念、模型、人物、主题之间的可视化连接网络",
-    "nodeCount": 438,
-    "linkCount": 814,
+    "nodeCount": 444,
+    "linkCount": 823,
     "typeCounts": {
-      "model": 53,
-      "episode": 126,
-      "concept": 112,
-      "theme": 86,
+      "model": 54,
+      "episode": 127,
+      "concept": 115,
+      "theme": 87,
       "person": 61
     }
   },
@@ -296,6 +296,17 @@
       "type": "episode",
       "route": "episodes/EP124",
       "summary": "本期从广州地铁四期大幅缩水、深圳地铁 18 号线被打回切入，判断中国靠“土地财政 + 基建拉动”维持了几十年的增长模式已经走到尽头。节目真正想讨论的不是某两条地铁为什么被砍，而是转移支付、地方财政和区域发展之间的关系如何发生了反噬：最能造血的一线城市被抽走资源，连刚需项目都开始收缩；而大量缺乏造血能力的三四线城市却继续靠转移支付维持基建与体制工资，形成一种依赖输血、维持表面繁荣、却越来越难产生真实竞争力的结构。",
+      "status": "curated",
+      "degree": 9
+    },
+    {
+      "id": "episode:EP127",
+      "key": "EP127",
+      "label": "EP127",
+      "fullLabel": "EP127 · 我是China，马来西亚必须跪！大闹亚航航班的“伪空姐”：别拿巨婴撒泼绑架中国人的脸面！",
+      "type": "episode",
+      "route": "episodes/EP127",
+      "summary": "本期围绕一名旅客在亚航航班上以“我是 China”和冒称南航空姐为话术大闹客舱的事件，区分真正维权与巨婴式撒泼。节目认为，这不是民族尊严或中外歧视问题，而是个人先破坏公共规则、再用国家身份为自己垫底的伪自信；真正的自信应建立在规则意识、换位思考、开放包容和能在任何空间里安顿自己的归属感上。",
       "status": "curated",
       "degree": 9
     },
@@ -1972,6 +1983,17 @@
       "degree": 3
     },
     {
+      "id": "theme:rule-of-law-boundaries-and-social-trust",
+      "key": "rule-of-law-boundaries-and-social-trust",
+      "label": "法治边界与社会信任",
+      "fullLabel": "法治边界与社会信任",
+      "type": "theme",
+      "route": "themes/rule-of-law-boundaries-and-social-trust",
+      "summary": "关注法律灰区如何影响公众的善意、风险感和彼此信任。",
+      "status": null,
+      "degree": 3
+    },
+    {
       "id": "concept:probabilistic-safety",
       "key": "probabilistic-safety",
       "label": "概率型安全",
@@ -2643,17 +2665,6 @@
       "degree": 2
     },
     {
-      "id": "theme:rule-of-law-boundaries-and-social-trust",
-      "key": "rule-of-law-boundaries-and-social-trust",
-      "label": "法治边界与社会信任",
-      "fullLabel": "法治边界与社会信任",
-      "type": "theme",
-      "route": "themes/rule-of-law-boundaries-and-social-trust",
-      "summary": "关注法律灰区如何影响公众的善意、风险感和彼此信任。",
-      "status": null,
-      "degree": 2
-    },
-    {
       "id": "model:non-monetary-legacy",
       "key": "non-monetary-legacy",
       "label": "非货币遗产",
@@ -2727,6 +2738,17 @@
       "type": "model",
       "route": "models/resonance-channel-model",
       "summary": "共振通道模型说明内容有效性常取决于是否找到目标人群愿意停留的表达入口。",
+      "status": null,
+      "degree": 2
+    },
+    {
+      "id": "theme:homeland-and-civic-belonging",
+      "key": "homeland-and-civic-belonging",
+      "label": "故乡想象与公民归属",
+      "fullLabel": "故乡想象与公民归属",
+      "type": "theme",
+      "route": "themes/homeland-and-civic-belonging",
+      "summary": "讨论血缘故乡、文化记忆与现代公民认同之间的边界如何被重新划分。",
       "status": null,
       "degree": 2
     },
@@ -3138,6 +3160,17 @@
       "degree": 2
     },
     {
+      "id": "model:narrative-instrumentalization",
+      "key": "narrative-instrumentalization",
+      "label": "叙事工具化模型",
+      "fullLabel": "叙事工具化模型",
+      "type": "model",
+      "route": "models/narrative-instrumentalization",
+      "summary": "叙事工具化模型解释叙事的主要功能从解释现实转向组织情绪和划分阵营。",
+      "status": null,
+      "degree": 2
+    },
+    {
       "id": "model:prototype-production-decoupling",
       "key": "prototype-production-decoupling",
       "label": "样机量产脱钩",
@@ -3255,6 +3288,17 @@
       "type": "model",
       "route": "models/asset-preservation-architecture",
       "summary": "资产保全架构强调财富安全取决于来源、法域、时间前置和退出节奏的组合。",
+      "status": null,
+      "degree": 2
+    },
+    {
+      "id": "concept:chosen-homeland",
+      "key": "chosen-homeland",
+      "label": "自选故乡",
+      "fullLabel": "自选故乡",
+      "type": "concept",
+      "route": "concepts/chosen-homeland",
+      "summary": "故乡不必只由血缘和祖籍决定，也可以由长期生活、责任承担和价值创造重新选择。",
       "status": null,
       "degree": 2
     },
@@ -3589,6 +3633,17 @@
       "degree": 1
     },
     {
+      "id": "theme:public-space-and-civic-maturity",
+      "key": "public-space-and-civic-maturity",
+      "label": "公共空间与公民成熟",
+      "fullLabel": "公共空间与公民成熟",
+      "type": "theme",
+      "route": "themes/public-space-and-civic-maturity",
+      "summary": "讨论个体在公共场景里如何同时拥有权利意识、规则意识、义务感和稳定自尊。",
+      "status": null,
+      "degree": 1
+    },
+    {
       "id": "concept:corporate-identity-shift",
       "key": "corporate-identity-shift",
       "label": "公司身份迁移",
@@ -3611,17 +3666,6 @@
       "degree": 1
     },
     {
-      "id": "theme:homeland-and-civic-belonging",
-      "key": "homeland-and-civic-belonging",
-      "label": "故乡想象与公民归属",
-      "fullLabel": "故乡想象与公民归属",
-      "type": "theme",
-      "route": "themes/homeland-and-civic-belonging",
-      "summary": "讨论血缘故乡、文化记忆与现代公民认同之间的边界如何被重新划分。",
-      "status": null,
-      "degree": 1
-    },
-    {
       "id": "concept:partnership-shift",
       "key": "partnership-shift",
       "label": "关系合伙人化",
@@ -3629,6 +3673,17 @@
       "type": "concept",
       "route": "concepts/partnership-shift",
       "summary": "亲密关系在中年、资产和责任变化后，常会从浪漫叙事转向合伙治理。",
+      "status": null,
+      "degree": 1
+    },
+    {
+      "id": "model:rule-bounded-rights-defense",
+      "key": "rule-bounded-rights-defense",
+      "label": "规则边界型维权模型",
+      "fullLabel": "规则边界型维权模型",
+      "type": "model",
+      "route": "models/rule-bounded-rights-defense",
+      "summary": "规则边界型维权模型用权利基础和过程边界区分正当维权与撒泼勒索。",
       "status": null,
       "degree": 1
     },
@@ -3651,6 +3706,17 @@
       "type": "person",
       "route": "people/guo-wei-academic",
       "summary": "郭伟是学术头衔造假与高校官僚化问题中的典型人物节点。",
+      "status": null,
+      "degree": 1
+    },
+    {
+      "id": "concept:national-identity-hostage",
+      "key": "national-identity-hostage",
+      "label": "国家身份绑架",
+      "fullLabel": "国家身份绑架",
+      "type": "concept",
+      "route": "concepts/national-identity-hostage",
+      "summary": "国家身份绑架指个体把私人冲突抬升为国家受辱，用共同体身份替个人行为兜底。",
       "status": null,
       "degree": 1
     },
@@ -3827,6 +3893,17 @@
       "type": "person",
       "route": "people/jin-keyu",
       "summary": "金刻羽是节目里被频繁放在“学术精英身份如何被租借”的讨论中心的人物。",
+      "status": null,
+      "degree": 1
+    },
+    {
+      "id": "concept:giant-infant-rights-defense",
+      "key": "giant-infant-rights-defense",
+      "label": "巨婴式维权",
+      "fullLabel": "巨婴式维权",
+      "type": "concept",
+      "route": "concepts/giant-infant-rights-defense",
+      "summary": "巨婴式维权指个体把个人便利和情绪包装成权利诉求，却拒绝承担规则、义务和公共后果。",
       "status": null,
       "degree": 1
     },
@@ -4381,6 +4458,17 @@
       "degree": 1
     },
     {
+      "id": "concept:pseudo-confidence",
+      "key": "pseudo-confidence",
+      "label": "伪自信",
+      "fullLabel": "伪自信",
+      "type": "concept",
+      "route": "concepts/pseudo-confidence",
+      "summary": "伪自信指看似强硬、实则依赖外界确认和攻击姿态来遮蔽内在不安的状态。",
+      "status": null,
+      "degree": 1
+    },
+    {
       "id": "concept:cultural-plunder",
       "key": "cultural-plunder",
       "label": "文化性掠夺",
@@ -4498,17 +4586,6 @@
       "type": "person",
       "route": "people/xu-huping",
       "summary": "徐湖平是南京博物院争议中被频繁提及的馆方相关人物，也是节目批评机构边界感失守时的重要指向。",
-      "status": null,
-      "degree": 1
-    },
-    {
-      "id": "model:narrative-instrumentalization",
-      "key": "narrative-instrumentalization",
-      "label": "叙事工具化模型",
-      "fullLabel": "叙事工具化模型",
-      "type": "model",
-      "route": "models/narrative-instrumentalization",
-      "summary": "叙事工具化模型解释叙事的主要功能从解释现实转向组织情绪和划分阵营。",
       "status": null,
       "degree": 1
     },
@@ -4773,17 +4850,6 @@
       "type": "concept",
       "route": "concepts/quasi-currency-support",
       "summary": "现金不足时，系统用票据、凭证或替代物支撑交易和价格，形成准货币托市。",
-      "status": null,
-      "degree": 1
-    },
-    {
-      "id": "concept:chosen-homeland",
-      "key": "chosen-homeland",
-      "label": "自选故乡",
-      "fullLabel": "自选故乡",
-      "type": "concept",
-      "route": "concepts/chosen-homeland",
-      "summary": "故乡不必只由血缘和祖籍决定，也可以由长期生活、责任承担和价值创造重新选择。",
       "status": null,
       "degree": 1
     },
@@ -8811,6 +8877,51 @@
     {
       "source": "episode:EP126",
       "target": "theme:founder-power-and-feedback",
+      "kind": "episode-theme"
+    },
+    {
+      "source": "episode:EP127",
+      "target": "concept:giant-infant-rights-defense",
+      "kind": "episode-concept"
+    },
+    {
+      "source": "episode:EP127",
+      "target": "concept:national-identity-hostage",
+      "kind": "episode-concept"
+    },
+    {
+      "source": "episode:EP127",
+      "target": "concept:pseudo-confidence",
+      "kind": "episode-concept"
+    },
+    {
+      "source": "episode:EP127",
+      "target": "concept:chosen-homeland",
+      "kind": "episode-concept"
+    },
+    {
+      "source": "episode:EP127",
+      "target": "model:rule-bounded-rights-defense",
+      "kind": "episode-model"
+    },
+    {
+      "source": "episode:EP127",
+      "target": "model:narrative-instrumentalization",
+      "kind": "episode-model"
+    },
+    {
+      "source": "episode:EP127",
+      "target": "theme:public-space-and-civic-maturity",
+      "kind": "episode-theme"
+    },
+    {
+      "source": "episode:EP127",
+      "target": "theme:rule-of-law-boundaries-and-social-trust",
+      "kind": "episode-theme"
+    },
+    {
+      "source": "episode:EP127",
+      "target": "theme:homeland-and-civic-belonging",
       "kind": "episode-theme"
     },
     {
