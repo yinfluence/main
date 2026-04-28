@@ -2,13 +2,13 @@
   "meta": {
     "title": "颖响力知识图谱",
     "subtitle": "节目、概念、模型、人物、主题之间的可视化连接网络",
-    "nodeCount": 444,
-    "linkCount": 823,
+    "nodeCount": 452,
+    "linkCount": 840,
     "typeCounts": {
-      "model": 54,
-      "episode": 127,
-      "concept": 115,
-      "theme": 87,
+      "model": 56,
+      "episode": 128,
+      "concept": 119,
+      "theme": 88,
       "person": 61
     }
   },
@@ -91,6 +91,17 @@
       "degree": 13
     },
     {
+      "id": "episode:EP124",
+      "key": "EP124",
+      "label": "EP124",
+      "fullLabel": "EP124 · 广深地铁集体被砍！三四线城市疯狂修！中国转移支付的魔幻反噬藏不住了",
+      "type": "episode",
+      "route": "episodes/EP124",
+      "summary": "本期从广州地铁四期大幅缩水、深圳地铁 18 号线被打回切入，判断中国靠“土地财政 + 基建拉动”维持了几十年的增长模式已经走到尽头。节目真正想讨论的不是某两条地铁为什么被砍，而是转移支付、地方财政和区域发展之间的关系如何发生了反噬：最能造血的一线城市被抽走资源，连刚需项目都开始收缩；而大量缺乏造血能力的三四线城市却继续靠转移支付维持基建与体制工资，形成一种依赖输血、维持表面繁荣、却越来越难产生真实竞争力的结构。",
+      "status": "curated",
+      "degree": 13
+    },
+    {
       "id": "episode:EP126",
       "key": "EP126",
       "label": "EP126",
@@ -98,6 +109,17 @@
       "type": "episode",
       "route": "episodes/EP126",
       "summary": "本期不是单独复盘恒大或许家印，而是把房地产系统性风险拆成居民、房企和地方政府三层共同加杠杆的结果。节目认为，地产崩塌的核心不是某个老板突然失误，而是零首付式投机、零资金式房企扩张、土地财政式地方融资彼此强化，再叠加强人老板的一言堂和土地制度反馈缺失，最终让整个行业失去刹车能力。",
+      "status": "curated",
+      "degree": 13
+    },
+    {
+      "id": "episode:EP128",
+      "key": "EP128",
+      "label": "EP128",
+      "fullLabel": "EP128 · 广告越拍越丑的真相：中国社会正在悄悄发生一场大规模“系统回滚”！泛体制人群正在重构整个社会的底层逻辑",
+      "type": "episode",
+      "route": "episodes/EP128",
+      "summary": "本期从汽车广告和品牌叙事越来越“老干部风”切入，提出广告审美变化背后不是广告公司退步，而是核心消费人群发生了迁移：三四线城市里，能稳定维持中产生活的群体越来越集中到公务员、事业编、国企和相关岗位等泛体制人群。节目把这种变化概括为“系统回滚”：社会从市场化打拼、能力赚钱和增长想象，退回到以稳定身份、财政兜底和体制位置为核心的分层逻辑。它进一步讨论中产门槛收窄、身份压倒财富、代际闭环形成，以及创新活力降温、三四线城市空心化和人情关系重新压倒规则关系等后果。",
       "status": "curated",
       "degree": 13
     },
@@ -122,6 +144,17 @@
       "summary": "本期把郁亮放到宝万之争后的万科时间线里，质疑他如何从人畜无害的继承人变成系统性空心化的关键推手。节目更大的判断是：无论交给子女还是交给职业经理人，中国民企最难跨过去的那道坎往往都是继承治理。",
       "status": "curated",
       "degree": 11
+    },
+    {
+      "id": "theme:local-fiscal-stress-and-hidden-debt",
+      "key": "local-fiscal-stress-and-hidden-debt",
+      "label": "地方财政与隐性债务",
+      "fullLabel": "地方财政与隐性债务",
+      "type": "theme",
+      "route": "themes/local-fiscal-stress-and-hidden-debt",
+      "summary": "地方财政吃紧后，系统会通过更复杂的融资、资产包装和风险转移来维持运转。",
+      "status": null,
+      "degree": 10
     },
     {
       "id": "theme:real-estate-deleveraging",
@@ -155,17 +188,6 @@
       "summary": "聚焦新能源车行业如何依靠补贴、融资、渠道黑箱和虚假销售维持增长叙事。",
       "status": null,
       "degree": 10
-    },
-    {
-      "id": "theme:local-fiscal-stress-and-hidden-debt",
-      "key": "local-fiscal-stress-and-hidden-debt",
-      "label": "地方财政与隐性债务",
-      "fullLabel": "地方财政与隐性债务",
-      "type": "theme",
-      "route": "themes/local-fiscal-stress-and-hidden-debt",
-      "summary": "地方财政吃紧后，系统会通过更复杂的融资、资产包装和风险转移来维持运转。",
-      "status": null,
-      "degree": 9
     },
     {
       "id": "model:narrative-leverage",
@@ -289,17 +311,6 @@
       "degree": 9
     },
     {
-      "id": "episode:EP124",
-      "key": "EP124",
-      "label": "EP124",
-      "fullLabel": "EP124 · 广深地铁集体被砍！三四线城市疯狂修！中国转移支付的魔幻反噬藏不住了",
-      "type": "episode",
-      "route": "episodes/EP124",
-      "summary": "本期从广州地铁四期大幅缩水、深圳地铁 18 号线被打回切入，判断中国靠“土地财政 + 基建拉动”维持了几十年的增长模式已经走到尽头。节目真正想讨论的不是某两条地铁为什么被砍，而是转移支付、地方财政和区域发展之间的关系如何发生了反噬：最能造血的一线城市被抽走资源，连刚需项目都开始收缩；而大量缺乏造血能力的三四线城市却继续靠转移支付维持基建与体制工资，形成一种依赖输血、维持表面繁荣、却越来越难产生真实竞争力的结构。",
-      "status": "curated",
-      "degree": 9
-    },
-    {
       "id": "episode:EP127",
       "key": "EP127",
       "label": "EP127",
@@ -309,6 +320,17 @@
       "summary": "本期围绕一名旅客在亚航航班上以“我是 China”和冒称南航空姐为话术大闹客舱的事件，区分真正维权与巨婴式撒泼。节目认为，这不是民族尊严或中外歧视问题，而是个人先破坏公共规则、再用国家身份为自己垫底的伪自信；真正的自信应建立在规则意识、换位思考、开放包容和能在任何空间里安顿自己的归属感上。",
       "status": "curated",
       "degree": 9
+    },
+    {
+      "id": "theme:big-government-and-incentive-reversal",
+      "key": "big-government-and-incentive-reversal",
+      "label": "大政府与激励反转",
+      "fullLabel": "大政府与激励反转",
+      "type": "theme",
+      "route": "themes/big-government-and-incentive-reversal",
+      "summary": "当大政府失去高速增长红利后，原本向前看的发展激励会慢慢转成向后看的收缩与回补。",
+      "status": null,
+      "degree": 8
     },
     {
       "id": "theme:maritime-chokepoints-and-route-order",
@@ -648,17 +670,6 @@
       "type": "model",
       "route": "models/subsidy-capital-flywheel",
       "summary": "补贴资本飞轮解释地方财政、产业基金、企业估值和再融资如何互相放大。",
-      "status": null,
-      "degree": 7
-    },
-    {
-      "id": "theme:big-government-and-incentive-reversal",
-      "key": "big-government-and-incentive-reversal",
-      "label": "大政府与激励反转",
-      "fullLabel": "大政府与激励反转",
-      "type": "theme",
-      "route": "themes/big-government-and-incentive-reversal",
-      "summary": "当大政府失去高速增长红利后，原本向前看的发展激励会慢慢转成向后看的收缩与回补。",
       "status": null,
       "degree": 7
     },
@@ -1389,6 +1400,17 @@
       "degree": 5
     },
     {
+      "id": "theme:middle-class-descent-and-stratification",
+      "key": "middle-class-descent-and-stratification",
+      "label": "中产下坠与分层社会",
+      "fullLabel": "中产下坠与分层社会",
+      "type": "theme",
+      "route": "themes/middle-class-descent-and-stratification",
+      "summary": "当中间层缺乏缓冲带时，经济下行会迅速转成身份下坠、关系断裂和社会分层加固。",
+      "status": null,
+      "degree": 5
+    },
+    {
       "id": "concept:organizational-silence",
       "key": "organizational-silence",
       "label": "组织失声",
@@ -1730,17 +1752,6 @@
       "degree": 4
     },
     {
-      "id": "theme:middle-class-descent-and-stratification",
-      "key": "middle-class-descent-and-stratification",
-      "label": "中产下坠与分层社会",
-      "fullLabel": "中产下坠与分层社会",
-      "type": "theme",
-      "route": "themes/middle-class-descent-and-stratification",
-      "summary": "当中间层缺乏缓冲带时，经济下行会迅速转成身份下坠、关系断裂和社会分层加固。",
-      "status": null,
-      "degree": 4
-    },
-    {
       "id": "episode:EP010",
       "key": "EP010",
       "label": "EP010",
@@ -1939,6 +1950,17 @@
       "degree": 3
     },
     {
+      "id": "theme:planned-systems-and-innovation",
+      "key": "planned-systems-and-innovation",
+      "label": "大计划体制与创新约束",
+      "fullLabel": "大计划体制与创新约束",
+      "type": "theme",
+      "route": "themes/planned-systems-and-innovation",
+      "summary": "讨论统一目标和强组织动员如何带来短期速度，又如何在长期压缩创新、纠错与自发能动性。",
+      "status": null,
+      "degree": 3
+    },
+    {
       "id": "model:proxy-containment-ring",
       "key": "proxy-containment-ring",
       "label": "代理围堵环",
@@ -1990,6 +2012,17 @@
       "type": "theme",
       "route": "themes/rule-of-law-boundaries-and-social-trust",
       "summary": "关注法律灰区如何影响公众的善意、风险感和彼此信任。",
+      "status": null,
+      "degree": 3
+    },
+    {
+      "id": "model:distributed-innovation",
+      "key": "distributed-innovation",
+      "label": "分布式创新",
+      "fullLabel": "分布式创新",
+      "type": "model",
+      "route": "models/distributed-innovation",
+      "summary": "分布式创新强调多中心试错、失败吸收和真实反馈比单一大计划更能产生韧性。",
       "status": null,
       "degree": 3
     },
@@ -2632,17 +2665,6 @@
       "degree": 2
     },
     {
-      "id": "theme:planned-systems-and-innovation",
-      "key": "planned-systems-and-innovation",
-      "label": "大计划体制与创新约束",
-      "fullLabel": "大计划体制与创新约束",
-      "type": "theme",
-      "route": "themes/planned-systems-and-innovation",
-      "summary": "讨论统一目标和强组织动员如何带来短期速度，又如何在长期压缩创新、纠错与自发能动性。",
-      "status": null,
-      "degree": 2
-    },
-    {
       "id": "concept:legal-grey-zone",
       "key": "legal-grey-zone",
       "label": "法律灰区",
@@ -2665,6 +2687,17 @@
       "degree": 2
     },
     {
+      "id": "concept:pan-institutional-middle-class",
+      "key": "pan-institutional-middle-class",
+      "label": "泛体制中产",
+      "fullLabel": "泛体制中产",
+      "type": "concept",
+      "route": "concepts/pan-institutional-middle-class",
+      "summary": "泛体制中产指依靠公务员、事业编、国企及体制相关岗位维持稳定收入、福利和社会体面的中间层。",
+      "status": null,
+      "degree": 2
+    },
+    {
       "id": "model:non-monetary-legacy",
       "key": "non-monetary-legacy",
       "label": "非货币遗产",
@@ -2672,17 +2705,6 @@
       "type": "model",
       "route": "models/non-monetary-legacy",
       "summary": "非货币遗产强调一个人留下的价值，可能是持续改变了多少人的人生轨迹。",
-      "status": null,
-      "degree": 2
-    },
-    {
-      "id": "model:distributed-innovation",
-      "key": "distributed-innovation",
-      "label": "分布式创新",
-      "fullLabel": "分布式创新",
-      "type": "model",
-      "route": "models/distributed-innovation",
-      "summary": "分布式创新强调多中心试错、失败吸收和真实反馈比单一大计划更能产生韧性。",
       "status": null,
       "degree": 2
     },
@@ -2973,6 +2995,17 @@
       "degree": 2
     },
     {
+      "id": "concept:aesthetic-compression",
+      "key": "aesthetic-compression",
+      "label": "审美压缩",
+      "fullLabel": "审美压缩",
+      "type": "concept",
+      "route": "concepts/aesthetic-compression",
+      "summary": "社会越功利和高压，审美、协商与细腻判断越容易被压缩成粗糙标准。",
+      "status": null,
+      "degree": 2
+    },
+    {
       "id": "concept:production-risk-outsourcing",
       "key": "production-risk-outsourcing",
       "label": "生产端风险外包",
@@ -2991,6 +3024,17 @@
       "type": "concept",
       "route": "concepts/sample-production-gap",
       "summary": "送检、展示和量产版本一旦分裂，合格证据就不再能代表消费者真正拿到的产品。",
+      "status": null,
+      "degree": 2
+    },
+    {
+      "id": "theme:institutional-middle-class-and-social-mobility",
+      "key": "institutional-middle-class-and-social-mobility",
+      "label": "体制化中产与社会流动",
+      "fullLabel": "体制化中产与社会流动",
+      "type": "theme",
+      "route": "themes/institutional-middle-class-and-social-mobility",
+      "summary": "讨论稳定岗位、公共财政和身份溢价如何重塑中产结构，并收窄普通人的上升路径。",
       "status": null,
       "degree": 2
     },
@@ -3068,6 +3112,17 @@
       "type": "person",
       "route": "people/vivian-balakrishnan",
       "summary": "维文是新加坡外长，也是节目里最能代表新加坡规则意识、小国生存术和海峡治理逻辑的发言者之一。",
+      "status": null,
+      "degree": 2
+    },
+    {
+      "id": "model:stability-over-growth-trap",
+      "key": "stability-over-growth-trap",
+      "label": "稳定替代增长陷阱",
+      "fullLabel": "稳定替代增长陷阱",
+      "type": "model",
+      "route": "models/stability-over-growth-trap",
+      "summary": "当系统把稳定当作增长的替代品，短期秩序会被保住，长期造血、流动和创新却会被压低。",
       "status": null,
       "degree": 2
     },
@@ -3255,6 +3310,17 @@
       "type": "model",
       "route": "models/attention-commerce-loop",
       "summary": "注意力商业闭环解释内容如何先制造注意力，再把注意力结算为品牌、交易或平台收益。",
+      "status": null,
+      "degree": 2
+    },
+    {
+      "id": "concept:transfer-payment-dependency",
+      "key": "transfer-payment-dependency",
+      "label": "转移支付依赖",
+      "fullLabel": "转移支付依赖",
+      "type": "concept",
+      "route": "concepts/transfer-payment-dependency",
+      "summary": "转移支付依赖指地方运转越来越靠上级财政输血，而不是靠本地产业和税源形成真实闭环。",
       "status": null,
       "degree": 2
     },
@@ -4359,6 +4425,28 @@
       "degree": 1
     },
     {
+      "id": "model:identity-stratification",
+      "key": "identity-stratification",
+      "label": "身份型分层",
+      "fullLabel": "身份型分层",
+      "type": "model",
+      "route": "models/identity-stratification",
+      "summary": "身份型分层说明阶层排序从收入和资产，转向编制、合规位置、圈层资源和稳定预期。",
+      "status": null,
+      "degree": 1
+    },
+    {
+      "id": "concept:identity-over-wealth",
+      "key": "identity-over-wealth",
+      "label": "身份压倒财富",
+      "fullLabel": "身份压倒财富",
+      "type": "concept",
+      "route": "concepts/identity-over-wealth",
+      "summary": "身份压倒财富指稳定身份、编制和圈层位置开始比账面收入更能决定社会评价和生活安全感。",
+      "status": null,
+      "degree": 1
+    },
+    {
       "id": "theme:beauty-industry-and-hollowed-competitions",
       "key": "beauty-industry-and-hollowed-competitions",
       "label": "审美产业与赛事空心化",
@@ -4366,17 +4454,6 @@
       "type": "theme",
       "route": "themes/beauty-industry-and-hollowed-competitions",
       "summary": "关注选美与模特赛事在关系化、头衔化之后如何失去公信力。",
-      "status": null,
-      "degree": 1
-    },
-    {
-      "id": "concept:aesthetic-compression",
-      "key": "aesthetic-compression",
-      "label": "审美压缩",
-      "fullLabel": "审美压缩",
-      "type": "concept",
-      "route": "concepts/aesthetic-compression",
-      "summary": "社会越功利和高压，审美、协商与细腻判断越容易被压缩成粗糙标准。",
       "status": null,
       "degree": 1
     },
@@ -4509,6 +4586,17 @@
       "type": "theme",
       "route": "themes/civilization-power-and-vulnerable-bodies",
       "summary": "讨论一个社会如何对待妇女、儿童和弱者，往往比它如何讲述自己的文明更能暴露制度底色。",
+      "status": null,
+      "degree": 1
+    },
+    {
+      "id": "concept:system-rollback",
+      "key": "system-rollback",
+      "label": "系统回滚",
+      "fullLabel": "系统回滚",
+      "type": "concept",
+      "route": "concepts/system-rollback",
+      "summary": "系统回滚指社会从增长、能力和市场规则导向，退回到安稳、身份和存量兜底导向。",
       "status": null,
       "degree": 1
     },
@@ -8925,6 +9013,71 @@
       "kind": "episode-theme"
     },
     {
+      "source": "episode:EP128",
+      "target": "concept:system-rollback",
+      "kind": "episode-concept"
+    },
+    {
+      "source": "episode:EP128",
+      "target": "concept:pan-institutional-middle-class",
+      "kind": "episode-concept"
+    },
+    {
+      "source": "episode:EP128",
+      "target": "concept:identity-over-wealth",
+      "kind": "episode-concept"
+    },
+    {
+      "source": "episode:EP128",
+      "target": "concept:transfer-payment-dependency",
+      "kind": "episode-concept"
+    },
+    {
+      "source": "episode:EP128",
+      "target": "concept:aesthetic-compression",
+      "kind": "episode-concept"
+    },
+    {
+      "source": "episode:EP128",
+      "target": "model:stability-over-growth-trap",
+      "kind": "episode-model"
+    },
+    {
+      "source": "episode:EP128",
+      "target": "model:identity-stratification",
+      "kind": "episode-model"
+    },
+    {
+      "source": "episode:EP128",
+      "target": "model:distributed-innovation",
+      "kind": "episode-model"
+    },
+    {
+      "source": "episode:EP128",
+      "target": "theme:institutional-middle-class-and-social-mobility",
+      "kind": "episode-theme"
+    },
+    {
+      "source": "episode:EP128",
+      "target": "theme:middle-class-descent-and-stratification",
+      "kind": "episode-theme"
+    },
+    {
+      "source": "episode:EP128",
+      "target": "theme:local-fiscal-stress-and-hidden-debt",
+      "kind": "episode-theme"
+    },
+    {
+      "source": "episode:EP128",
+      "target": "theme:planned-systems-and-innovation",
+      "kind": "episode-theme"
+    },
+    {
+      "source": "episode:EP128",
+      "target": "theme:big-government-and-incentive-reversal",
+      "kind": "episode-theme"
+    },
+    {
       "source": "episode:EP120",
       "target": "concept:active-neutrality",
       "kind": "episode-concept"
@@ -8937,6 +9090,16 @@
     {
       "source": "episode:EP120",
       "target": "concept:chokepoint-leverage",
+      "kind": "episode-concept"
+    },
+    {
+      "source": "episode:EP124",
+      "target": "concept:pan-institutional-middle-class",
+      "kind": "episode-concept"
+    },
+    {
+      "source": "episode:EP124",
+      "target": "concept:transfer-payment-dependency",
       "kind": "episode-concept"
     },
     {
@@ -8957,6 +9120,11 @@
     {
       "source": "episode:EP120",
       "target": "model:rule-anchored-small-state-model",
+      "kind": "episode-model"
+    },
+    {
+      "source": "episode:EP124",
+      "target": "model:stability-over-growth-trap",
       "kind": "episode-model"
     },
     {
@@ -8982,6 +9150,11 @@
     {
       "source": "episode:EP106",
       "target": "theme:crisis-era-power-reallocation",
+      "kind": "episode-theme"
+    },
+    {
+      "source": "episode:EP124",
+      "target": "theme:institutional-middle-class-and-social-mobility",
       "kind": "episode-theme"
     },
     {
