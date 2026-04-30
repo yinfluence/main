@@ -1,6 +1,6 @@
 {
   "id": "EP001",
-  "title": "西贝菜这么贵，原来是因为华与华",
+  "title": "西贝菜这么贵，原来是因为华与华。",
   "summary": "本期借西贝与华与华的关系，讨论高价餐饮背后咨询成本、品牌符号、创始人权力结构与消费者买单之间的连锁关系。",
   "tags": [
     "西贝",
@@ -97,8 +97,7 @@
   "videoLinks": [
     {
       "platform": "bilibili",
-      "status": "unavailable",
-      "note": "已下架"
+      "url": "https://www.bilibili.com/video/BV1oCp1zFEWy/"
     },
     {
       "platform": "youtube",

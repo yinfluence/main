@@ -107,5 +107,197 @@
       "platform": "youtube",
       "url": "https://www.youtube.com/watch?v=BEHBNttZlWU"
     }
+  },
+  "EP069": {
+    "bilibili": {
+      "platform": "bilibili",
+      "url": "https://www.bilibili.com/video/BV16aztBkET9/"
+    }
+  },
+  "EP074": {
+    "bilibili": {
+      "platform": "bilibili",
+      "url": "https://www.bilibili.com/video/BV1GGFNzSEUR/"
+    }
+  },
+  "EP080": {
+    "bilibili": {
+      "platform": "bilibili",
+      "url": "https://www.bilibili.com/video/BV149cjz5Ehu/"
+    }
+  },
+  "EP053": {
+    "bilibili": {
+      "platform": "bilibili",
+      "url": "https://www.bilibili.com/video/BV1yhvtBBEVQ/"
+    }
+  },
+  "EP055": {
+    "bilibili": {
+      "platform": "bilibili",
+      "url": "https://www.bilibili.com/video/BV1TBihBsEX1/"
+    }
+  },
+  "EP062": {
+    "bilibili": {
+      "platform": "bilibili",
+      "url": "https://www.bilibili.com/video/BV1t2roBkEs4/"
+    }
+  },
+  "EP066": {
+    "bilibili": {
+      "platform": "bilibili",
+      "url": "https://www.bilibili.com/video/BV1BbzGBbEEy/"
+    }
+  },
+  "EP067": {
+    "bilibili": {
+      "platform": "bilibili",
+      "url": "https://www.bilibili.com/video/BV1mMzWBkEze/"
+    }
+  },
+  "EP022": {
+    "bilibili": {
+      "platform": "bilibili",
+      "url": "https://www.bilibili.com/video/BV16q1ZBGEPJ/"
+    }
+  },
+  "EP023": {
+    "bilibili": {
+      "platform": "bilibili",
+      "url": "https://www.bilibili.com/video/BV1px1yBVEod/"
+    }
+  },
+  "EP026": {
+    "bilibili": {
+      "platform": "bilibili",
+      "url": "https://www.bilibili.com/video/BV1SDCEBVEHN/"
+    }
+  },
+  "EP028": {
+    "bilibili": {
+      "platform": "bilibili",
+      "url": "https://www.bilibili.com/video/BV1JJC2BMErr/"
+    }
+  },
+  "EP030": {
+    "bilibili": {
+      "platform": "bilibili",
+      "url": "https://www.bilibili.com/video/BV1T2CZBJE9u/"
+    }
+  },
+  "EP035": {
+    "bilibili": {
+      "platform": "bilibili",
+      "url": "https://www.bilibili.com/video/BV1Q3SjBXE2b/"
+    }
+  },
+  "EP037": {
+    "bilibili": {
+      "platform": "bilibili",
+      "url": "https://www.bilibili.com/video/BV1CFS1B9EHD/"
+    }
+  },
+  "EP041": {
+    "bilibili": {
+      "platform": "bilibili",
+      "url": "https://www.bilibili.com/video/BV1r3mABbEYc/"
+    }
+  },
+  "EP001": {
+    "bilibili": {
+      "platform": "bilibili",
+      "url": "https://www.bilibili.com/video/BV1oCp1zFEWy/"
+    }
+  },
+  "EP002": {
+    "bilibili": {
+      "platform": "bilibili",
+      "url": "https://www.bilibili.com/video/BV16KJdzsEUD/"
+    }
+  },
+  "EP003": {
+    "bilibili": {
+      "platform": "bilibili",
+      "url": "https://www.bilibili.com/video/BV1kYJSzkEh5/"
+    }
+  },
+  "EP004": {
+    "bilibili": {
+      "platform": "bilibili",
+      "url": "https://www.bilibili.com/video/BV1ZEnnzpEjP/"
+    }
+  },
+  "EP007": {
+    "bilibili": {
+      "platform": "bilibili",
+      "url": "https://www.bilibili.com/video/BV1vhHgztE9k/"
+    }
+  },
+  "EP008": {
+    "bilibili": {
+      "platform": "bilibili",
+      "url": "https://www.bilibili.com/video/BV1QnxLz5Edo/"
+    }
+  },
+  "EP009": {
+    "bilibili": {
+      "platform": "bilibili",
+      "url": "https://www.bilibili.com/video/BV16YxrzwEtW/"
+    }
+  },
+  "EP010": {
+    "bilibili": {
+      "platform": "bilibili",
+      "url": "https://www.bilibili.com/video/BV1dZ4GzLE3t/"
+    }
+  },
+  "EP011": {
+    "bilibili": {
+      "platform": "bilibili",
+      "url": "https://www.bilibili.com/video/BV1LK46zRERQ/"
+    }
+  },
+  "EP012": {
+    "bilibili": {
+      "platform": "bilibili",
+      "url": "https://www.bilibili.com/video/BV1fkWHziES5/"
+    }
+  },
+  "EP014": {
+    "bilibili": {
+      "platform": "bilibili",
+      "url": "https://www.bilibili.com/video/BV1bJW9zkE9K/"
+    }
+  },
+  "EP016": {
+    "bilibili": {
+      "platform": "bilibili",
+      "url": "https://www.bilibili.com/video/BV12gxAzYEjY/"
+    }
+  },
+  "EP017": {
+    "bilibili": {
+      "platform": "bilibili",
+      "url": "https://www.bilibili.com/video/BV1rosSz9Eab/"
+    }
+  },
+  "EP018": {
+    "bilibili": {
+      "platform": "bilibili",
+      "url": "https://www.bilibili.com/video/BV1paybBFETd/"
+    }
+  },
+  "EP019": {
+    "bilibili": {
+      "platform": "bilibili",
+      "url": "https://www.bilibili.com/video/BV1PX1PBYEg5/"
+    }
+  },
+  "EP021": {
+    "bilibili": {
+      "platform": "bilibili",
+      "url": "https://www.bilibili.com/video/BV1cQ1eB1EpY/"
+    }
   }
 }

@@ -1,6 +1,6 @@
 {
   "id": "EP017",
-  "title": "国航 CA139 客舱起火：锂电池风险到底该怎么理解",
+  "title": "国航CA139锂电池引起的飞机客舱起火，16分钟深度分析起火因素与电池起火背后的两个故事。",
   "status": "curated",
   "summary": "本期借国航 CA139 客舱锂电池起火事件，讨论人们该如何理解电池这种低频但高后果的安全风险。节目核心判断是，锂电池问题既不能被简单归咎于某一次安检或某一个品牌，也不能被当成必须彻底推翻整个系统的绝对灾难，它更像一种概率型风险，需要通过边界管理和渐进改进去处理。",
   "tags": [
@@ -74,8 +74,7 @@
   "videoLinks": [
     {
       "platform": "bilibili",
-      "status": "unavailable",
-      "note": "已下架"
+      "url": "https://www.bilibili.com/video/BV1rosSz9Eab/"
     },
     {
       "platform": "youtube",
