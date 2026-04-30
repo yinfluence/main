@@ -11,6 +11,16 @@
       "url": "https://www.bilibili.com/video/BV1Q9cRzZEA3/?spm_id_from=333.337.search-card.all.click&vd_source=10d2833a281f736d15b299d593c92082"
     }
   },
+  "EP091": {
+    "bilibili": {
+      "platform": "bilibili",
+      "url": "https://www.bilibili.com/video/BV1wyPmzYEZ4?spm_id_from=333.788.videopod.sections&vd_source=10d2833a281f736d15b299d593c92082"
+    },
+    "youtube": {
+      "platform": "youtube",
+      "url": "https://www.youtube.com/watch?v=PC8PiH5UkZQ"
+    }
+  },
   "EP015": {
     "bilibili": {
       "platform": "bilibili",

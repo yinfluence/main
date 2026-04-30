@@ -1,6 +1,6 @@
 {
   "id": "EP091",
-  "title": "语音一句话关掉大灯：电车权限设计为什么会酿成事故",
+  "title": "电车语音关灯致命漏洞！车企拿命测试？｜新能源汽车｜领克Z20｜阅读灯｜大灯｜权限｜安全｜豆包｜谷歌｜人命｜",
   "status": "curated",
   "summary": "本期围绕领克 Z20 语音一句话误关大灯导致撞上护栏的事件，讨论智能电车为什么会在权限和安全边界上出现如此低级却致命的漏洞。节目核心判断是，这不是一个单独的语音识别 bug，而是车机权限、场景验证、OTA 思维和企业安全文化一起失守后的系统性结果。",
   "tags": [
@@ -78,8 +78,7 @@
   "videoLinks": [
     {
       "platform": "bilibili",
-      "status": "unavailable",
-      "note": "已下架"
+      "url": "https://www.bilibili.com/video/BV1wyPmzYEZ4?spm_id_from=333.788.videopod.sections&vd_source=10d2833a281f736d15b299d593c92082"
     },
     {
       "platform": "youtube",
