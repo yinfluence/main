@@ -100,8 +100,7 @@
   "EP129": {
     "bilibili": {
       "platform": "bilibili",
-      "status": "unavailable",
-      "note": "暂未上架"
+      "url": "https://www.bilibili.com/video/BV1Wi9sBVEVe/?spm_id_from=333.1007.top_right_bar_window_dynamic.content.click"
     },
     "youtube": {
       "platform": "youtube",
