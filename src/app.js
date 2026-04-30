@@ -31,6 +31,7 @@ const WEBSITE_LOG_ENTRIES = [
     items: [
       '按 YouTube 标题第一个“｜”之前的主标题统一校正节目标题，避免整理版短标题和公开视频标题不一致。',
       '用 B 站“颖响力”列表重新对照节目，补回 32 期此前误显示为“已下架”的 B 站入口，并写入人工覆盖表。',
+      '首页节目卡片简介恢复固定行数截断，EP128、EP129 的摘要也按 SOP 收回到 2-3 句判断型摘要，避免新节目把首页卡片撑长。',
       '视频维护 SOP 增加标题基准和跨平台对照规则：标题以 YouTube 主标题为准，B 站匹配优先用官方列表和 EP 编号，不再只依赖网页现有标题搜索。'
     ]
   },
@@ -1297,8 +1298,9 @@ function summarizeHomeEpisodeSummary(value, { mobile = false } = {}) {
 
   const sentences = text.match(/[^。！？!?]+[。！？!?]?/g)?.map((item) => item.trim()).filter(Boolean) || [text];
   let summary = sentences[0] || text;
-  const maxChars = Math.max(250, Math.min(540, Math.round(text.length * 1.56)));
-  const minChars = Math.min(maxChars - 32, Math.max(210, Math.round(text.length * 1.2)));
+  const targetChars = Math.round(text.length * 0.75);
+  const maxChars = Math.max(140, Math.min(260, targetChars));
+  const minChars = Math.min(maxChars - 24, Math.max(96, Math.round(maxChars * 0.72)));
 
   let index = 1;
   while (summary.length < minChars && index < sentences.length) {

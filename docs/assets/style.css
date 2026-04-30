@@ -2090,10 +2090,15 @@ body.page-home .home-episode-carousel-shell.mobile .home-episode-mobile-transiti
 }
 
 body.page-home .home-episode-carousel-shell.mobile .home-episode-card > p:not(.card-kicker):not(.inline-label) {
-  max-height: none;
-  display: block;
-  overflow: visible;
-  -webkit-line-clamp: unset;
+  max-height: 8.5em;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 5;
+  overflow: hidden;
+}
+
+body.page-home #home-episodes .home-episode-carousel-shell.mobile .home-episode-card > p:not(.card-kicker):not(.inline-label) {
+  -webkit-line-clamp: 5;
 }
 
 .home-episode-carousel-track.is-dragging .home-episode-mobile-single {
@@ -2302,8 +2307,10 @@ body.page-home .home-episode-card .card-primary-link h3 {
 
 body.page-home #home-episodes .home-episode-card > p:not(.card-kicker):not(.inline-label) {
   color: rgba(31, 29, 26, 0.7);
-  display: block;
-  overflow: visible;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 6;
+  overflow: hidden;
 }
 
 body.page-home #home-episodes .home-episode-card .chip {
@@ -5810,12 +5817,13 @@ body.page-home .section.split > div .list-item:active p {
   body.page-home .home-episode-card > p:not(.card-kicker):not(.inline-label) {
     font-size: 15.8px;
     line-height: 1.7;
-    flex: 1 1 auto;
+    flex: 0 0 auto;
     min-height: 0;
-    max-height: none;
-    display: block;
-    overflow: visible;
-    -webkit-line-clamp: unset;
+    max-height: 8.5em;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 5;
+    overflow: hidden;
   }
 
   .home-episode-preview-title {
