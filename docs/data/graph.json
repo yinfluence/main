@@ -2,11 +2,11 @@
   "meta": {
     "title": "颖响力知识图谱",
     "subtitle": "节目、概念、模型、人物、主题之间的可视化连接网络",
-    "nodeCount": 462,
-    "linkCount": 852,
+    "nodeCount": 463,
+    "linkCount": 862,
     "typeCounts": {
       "model": 58,
-      "episode": 129,
+      "episode": 130,
       "concept": 124,
       "theme": 90,
       "person": 61
@@ -201,6 +201,28 @@
       "degree": 10
     },
     {
+      "id": "episode:EP130",
+      "key": "EP130",
+      "label": "EP130",
+      "fullLabel": "EP130 · 马六甲“收费站”24小时闹剧：印尼的野心与新加坡、马来西亚的坚决反对！【EP130】",
+      "type": "episode",
+      "route": "episodes/EP130",
+      "summary": "本期接着 EP122 对维文讲话的解读，借印尼财长提出“仿照霍尔木兹给马六甲收费”的 24 小时风波，说明新加坡和马来西亚为什么会几乎同步强烈反对。节目核心判断是：马六甲海峡真正值钱的不是一次性过路费，而是长期不收费、可预期、可停靠、可服务的航运秩序；新加坡靠服务费、金融和港口信用吃饭，马来西亚靠港口、灰色贸易和中转利益吃饭，印尼则因为地理与港口条件拿不到对应收益，才会试探性地提出收费。主持人进一步把这件事放进霍尔木兹、影子舰队、灰色贸易和东南亚裂变里看，认为全球航运秩序正在被短期设卡套利逻辑冲击。",
+      "status": "curated",
+      "degree": 10
+    },
+    {
+      "id": "theme:maritime-chokepoints-and-route-order",
+      "key": "maritime-chokepoints-and-route-order",
+      "label": "海峡命门与航运秩序",
+      "fullLabel": "海峡命门与航运秩序",
+      "type": "theme",
+      "route": "themes/maritime-chokepoints-and-route-order",
+      "summary": "讨论海峡、运河和关键航道如何把地理位置变成规则、保险、资本和军事的综合权力。",
+      "status": null,
+      "degree": 9
+    },
+    {
       "id": "model:narrative-leverage",
       "key": "narrative-leverage",
       "label": "叙事杠杆",
@@ -344,13 +366,13 @@
       "degree": 8
     },
     {
-      "id": "theme:maritime-chokepoints-and-route-order",
-      "key": "maritime-chokepoints-and-route-order",
-      "label": "海峡命门与航运秩序",
-      "fullLabel": "海峡命门与航运秩序",
-      "type": "theme",
-      "route": "themes/maritime-chokepoints-and-route-order",
-      "summary": "讨论海峡、运河和关键航道如何把地理位置变成规则、保险、资本和军事的综合权力。",
+      "id": "model:chokepoint-order-model",
+      "key": "chokepoint-order-model",
+      "label": "海峡秩序模型",
+      "fullLabel": "海峡秩序模型",
+      "type": "model",
+      "route": "models/chokepoint-order-model",
+      "summary": "真正决定咽喉通道价值的，不只是地理位置，而是谁定义通行规则、风险定价与法律边界。",
       "status": null,
       "degree": 8
     },
@@ -685,17 +707,6 @@
       "degree": 7
     },
     {
-      "id": "model:chokepoint-order-model",
-      "key": "chokepoint-order-model",
-      "label": "海峡秩序模型",
-      "fullLabel": "海峡秩序模型",
-      "type": "model",
-      "route": "models/chokepoint-order-model",
-      "summary": "真正决定咽喉通道价值的，不只是地理位置，而是谁定义通行规则、风险定价与法律边界。",
-      "status": null,
-      "degree": 7
-    },
-    {
       "id": "model:principal-agent",
       "key": "principal-agent",
       "label": "委托代理问题",
@@ -703,6 +714,28 @@
       "type": "model",
       "route": "models/principal-agent",
       "summary": "委托代理模型解释外部顾问或职业代理人的激励，未必与委托方长期价值一致。",
+      "status": null,
+      "degree": 7
+    },
+    {
+      "id": "theme:singapore-and-small-state-survival",
+      "key": "singapore-and-small-state-survival",
+      "label": "新加坡与小国生存术",
+      "fullLabel": "新加坡与小国生存术",
+      "type": "theme",
+      "route": "themes/singapore-and-small-state-survival",
+      "summary": "讨论新加坡如何把规则、海峡、人才和谨慎外交组合成一套小国长期生存方法。",
+      "status": null,
+      "degree": 7
+    },
+    {
+      "id": "concept:chokepoint-leverage",
+      "key": "chokepoint-leverage",
+      "label": "咽喉杠杆",
+      "fullLabel": "咽喉杠杆",
+      "type": "concept",
+      "route": "concepts/chokepoint-leverage",
+      "summary": "控制海峡、运河和关键通道的人，往往能把地理位置转化成定价权、通行权和规则权。",
       "status": null,
       "degree": 7
     },
@@ -1015,6 +1048,17 @@
       "degree": 6
     },
     {
+      "id": "model:rule-anchored-small-state-model",
+      "key": "rule-anchored-small-state-model",
+      "label": "规则锚定型小国生存",
+      "fullLabel": "规则锚定型小国生存",
+      "type": "model",
+      "route": "models/rule-anchored-small-state-model",
+      "summary": "小国要长期活下来，不能只靠地理好运，更要靠规则信誉、理性政府和可预期的制度自我约束。",
+      "status": null,
+      "degree": 6
+    },
+    {
       "id": "concept:phantom-growth",
       "key": "phantom-growth",
       "label": "幻象增长",
@@ -1059,17 +1103,6 @@
       "degree": 6
     },
     {
-      "id": "theme:singapore-and-small-state-survival",
-      "key": "singapore-and-small-state-survival",
-      "label": "新加坡与小国生存术",
-      "fullLabel": "新加坡与小国生存术",
-      "type": "theme",
-      "route": "themes/singapore-and-small-state-survival",
-      "summary": "讨论新加坡如何把规则、海峡、人才和谨慎外交组合成一套小国长期生存方法。",
-      "status": null,
-      "degree": 6
-    },
-    {
       "id": "theme:ev-safety-and-consumer-testing",
       "key": "ev-safety-and-consumer-testing",
       "label": "新能源安全边界与消费者测试",
@@ -1077,17 +1110,6 @@
       "type": "theme",
       "route": "themes/ev-safety-and-consumer-testing",
       "summary": "讨论新能源车与相关电池系统如何把安全验证不足的代价，转移到真实用户和真实事故里。",
-      "status": null,
-      "degree": 6
-    },
-    {
-      "id": "concept:chokepoint-leverage",
-      "key": "chokepoint-leverage",
-      "label": "咽喉杠杆",
-      "fullLabel": "咽喉杠杆",
-      "type": "concept",
-      "route": "concepts/chokepoint-leverage",
-      "summary": "控制海峡、运河和关键通道的人，往往能把地理位置转化成定价权、通行权和规则权。",
       "status": null,
       "degree": 6
     },
@@ -1312,13 +1334,13 @@
       "degree": 5
     },
     {
-      "id": "model:rule-anchored-small-state-model",
-      "key": "rule-anchored-small-state-model",
-      "label": "规则锚定型小国生存",
-      "fullLabel": "规则锚定型小国生存",
-      "type": "model",
-      "route": "models/rule-anchored-small-state-model",
-      "summary": "小国要长期活下来，不能只靠地理好运，更要靠规则信誉、理性政府和可预期的制度自我约束。",
+      "id": "theme:southeast-asia-fragmentation-and-bloc-competition",
+      "key": "southeast-asia-fragmentation-and-bloc-competition",
+      "label": "东南亚裂变与集团竞争",
+      "fullLabel": "东南亚裂变与集团竞争",
+      "type": "theme",
+      "route": "themes/southeast-asia-fragmentation-and-bloc-competition",
+      "summary": "讨论东南亚如何从缓冲地带变成各方拉扯、重新站队和内部裂变并行发生的高风险区域。",
       "status": null,
       "degree": 5
     },
@@ -1642,17 +1664,6 @@
       "degree": 5
     },
     {
-      "id": "theme:southeast-asia-fragmentation-and-bloc-competition",
-      "key": "southeast-asia-fragmentation-and-bloc-competition",
-      "label": "东南亚裂变与集团竞争",
-      "fullLabel": "东南亚裂变与集团竞争",
-      "type": "theme",
-      "route": "themes/southeast-asia-fragmentation-and-bloc-competition",
-      "summary": "讨论东南亚如何从缓冲地带变成各方拉扯、重新站队和内部裂变并行发生的高风险区域。",
-      "status": null,
-      "degree": 4
-    },
-    {
       "id": "person:sanae-takaichi",
       "key": "sanae-takaichi",
       "label": "高市早苗",
@@ -1770,6 +1781,17 @@
       "type": "theme",
       "route": "themes/state-business-entanglement",
       "summary": "讨论企业如何依赖地方政府、国资平台或关系结构续命，以及这种绑定如何反过来改写企业目标。",
+      "status": null,
+      "degree": 4
+    },
+    {
+      "id": "concept:active-neutrality",
+      "key": "active-neutrality",
+      "label": "主动中立",
+      "fullLabel": "主动中立",
+      "type": "concept",
+      "route": "concepts/active-neutrality",
+      "summary": "真正可持续的中立不是谁都不得罪，而是在坚持规则的前提下主动参与秩序塑造。",
       "status": null,
       "degree": 4
     },
@@ -2324,6 +2346,17 @@
       "degree": 3
     },
     {
+      "id": "person:vivian-balakrishnan",
+      "key": "vivian-balakrishnan",
+      "label": "维文",
+      "fullLabel": "维文",
+      "type": "person",
+      "route": "people/vivian-balakrishnan",
+      "summary": "维文是新加坡外长，也是节目里最能代表新加坡规则意识、小国生存术和海峡治理逻辑的发言者之一。",
+      "status": null,
+      "degree": 3
+    },
+    {
       "id": "concept:future-path-crowding",
       "key": "future-path-crowding",
       "label": "未来路径拥堵",
@@ -2408,17 +2441,6 @@
       "type": "model",
       "route": "models/strategic-timing",
       "summary": "真正决定收益的往往不是是否参与，而是你能否在远早于大众情绪的时点、以合适规模和合适位置进入。",
-      "status": null,
-      "degree": 3
-    },
-    {
-      "id": "concept:active-neutrality",
-      "key": "active-neutrality",
-      "label": "主动中立",
-      "fullLabel": "主动中立",
-      "type": "concept",
-      "route": "concepts/active-neutrality",
-      "summary": "真正可持续的中立不是谁都不得罪，而是在坚持规则的前提下主动参与秩序塑造。",
       "status": null,
       "degree": 3
     },
@@ -2852,6 +2874,17 @@
       "degree": 2
     },
     {
+      "id": "concept:gray-oil-network",
+      "key": "gray-oil-network",
+      "label": "灰色石油网络",
+      "fullLabel": "灰色石油网络",
+      "type": "concept",
+      "route": "concepts/gray-oil-network",
+      "summary": "绕开正规结算和监管的石油流动，会在影子体系中重塑货币、制裁和地缘利益。",
+      "status": null,
+      "degree": 2
+    },
+    {
       "id": "theme:recycling-and-pollution-transfer",
       "key": "recycling-and-pollution-transfer",
       "label": "回收生意与污染转移",
@@ -2958,6 +2991,17 @@
       "type": "person",
       "route": "people/mahsa-amini",
       "summary": "玛莎·阿米尼是伊朗女性，也是节目用来提醒观众不要只盯着统治者而忽略普通人命运的象征性人物。",
+      "status": null,
+      "degree": 2
+    },
+    {
+      "id": "theme:dollar-system-and-gray-trade",
+      "key": "dollar-system-and-gray-trade",
+      "label": "美元体系与灰色贸易",
+      "fullLabel": "美元体系与灰色贸易",
+      "type": "theme",
+      "route": "themes/dollar-system-and-gray-trade",
+      "summary": "讨论石油美元的真实脆弱点，究竟藏在公开统计之外的哪些灰色交易链条里。",
       "status": null,
       "degree": 2
     },
@@ -3112,17 +3156,6 @@
       "type": "concept",
       "route": "concepts/crisis-power-reallocation",
       "summary": "危机会改变谁在前台、谁承担责任、谁保留资源，从而触发权力位置的重新排序。",
-      "status": null,
-      "degree": 2
-    },
-    {
-      "id": "person:vivian-balakrishnan",
-      "key": "vivian-balakrishnan",
-      "label": "维文",
-      "fullLabel": "维文",
-      "type": "person",
-      "route": "people/vivian-balakrishnan",
-      "summary": "维文是新加坡外长，也是节目里最能代表新加坡规则意识、小国生存术和海峡治理逻辑的发言者之一。",
       "status": null,
       "degree": 2
     },
@@ -3974,17 +4007,6 @@
       "degree": 1
     },
     {
-      "id": "concept:gray-oil-network",
-      "key": "gray-oil-network",
-      "label": "灰色石油网络",
-      "fullLabel": "灰色石油网络",
-      "type": "concept",
-      "route": "concepts/gray-oil-network",
-      "summary": "绕开正规结算和监管的石油流动，会在影子体系中重塑货币、制裁和地缘利益。",
-      "status": null,
-      "degree": 1
-    },
-    {
       "id": "concept:inheritance-supply-shock",
       "key": "inheritance-supply-shock",
       "label": "继承供给冲击",
@@ -4234,17 +4256,6 @@
       "type": "person",
       "route": "people/liu-daoyu",
       "summary": "刘道玉是节目用来代表真正教育者气质的重要人物参照。",
-      "status": null,
-      "degree": 1
-    },
-    {
-      "id": "theme:dollar-system-and-gray-trade",
-      "key": "dollar-system-and-gray-trade",
-      "label": "美元体系与灰色贸易",
-      "fullLabel": "美元体系与灰色贸易",
-      "type": "theme",
-      "route": "themes/dollar-system-and-gray-trade",
-      "summary": "讨论石油美元的真实脆弱点，究竟藏在公开统计之外的哪些灰色交易链条里。",
       "status": null,
       "degree": 1
     },
@@ -9245,6 +9256,56 @@
     {
       "source": "episode:EP129",
       "target": "theme:ai-and-human-creativity",
+      "kind": "episode-theme"
+    },
+    {
+      "source": "episode:EP130",
+      "target": "concept:active-neutrality",
+      "kind": "episode-concept"
+    },
+    {
+      "source": "episode:EP130",
+      "target": "concept:chokepoint-leverage",
+      "kind": "episode-concept"
+    },
+    {
+      "source": "episode:EP130",
+      "target": "concept:gray-oil-network",
+      "kind": "episode-concept"
+    },
+    {
+      "source": "episode:EP130",
+      "target": "model:chokepoint-order-model",
+      "kind": "episode-model"
+    },
+    {
+      "source": "episode:EP130",
+      "target": "model:rule-anchored-small-state-model",
+      "kind": "episode-model"
+    },
+    {
+      "source": "episode:EP130",
+      "target": "person:vivian-balakrishnan",
+      "kind": "episode-person"
+    },
+    {
+      "source": "episode:EP130",
+      "target": "theme:maritime-chokepoints-and-route-order",
+      "kind": "episode-theme"
+    },
+    {
+      "source": "episode:EP130",
+      "target": "theme:singapore-and-small-state-survival",
+      "kind": "episode-theme"
+    },
+    {
+      "source": "episode:EP130",
+      "target": "theme:southeast-asia-fragmentation-and-bloc-competition",
+      "kind": "episode-theme"
+    },
+    {
+      "source": "episode:EP130",
+      "target": "theme:dollar-system-and-gray-trade",
       "kind": "episode-theme"
     },
     {
