@@ -2,11 +2,11 @@
   "meta": {
     "title": "颖响力知识图谱",
     "subtitle": "节目、概念、模型、人物、主题之间的可视化连接网络",
-    "nodeCount": 463,
-    "linkCount": 862,
+    "nodeCount": 464,
+    "linkCount": 875,
     "typeCounts": {
       "model": 58,
-      "episode": 130,
+      "episode": 131,
       "concept": 124,
       "theme": 90,
       "person": 61
@@ -22,7 +22,18 @@
       "route": "models/risk-transfer-chain",
       "summary": "系统不会立刻吞下风险，而是先沿着银行、企业、票据、供应链和普通人之间不断转手、延后和下沉。",
       "status": null,
-      "degree": 34
+      "degree": 35
+    },
+    {
+      "id": "model:leverage-backfire",
+      "key": "leverage-backfire",
+      "label": "杠杆反噬",
+      "fullLabel": "杠杆反噬",
+      "type": "model",
+      "route": "models/leverage-backfire",
+      "summary": "杠杆反噬解释上行期放大利润的结构，如何在下行期放大亏损、现金流压力和清偿困难。",
+      "status": null,
+      "degree": 17
     },
     {
       "id": "episode:EP001",
@@ -36,15 +47,15 @@
       "degree": 17
     },
     {
-      "id": "model:leverage-backfire",
-      "key": "leverage-backfire",
-      "label": "杠杆反噬",
-      "fullLabel": "杠杆反噬",
-      "type": "model",
-      "route": "models/leverage-backfire",
-      "summary": "杠杆反噬解释上行期放大利润的结构，如何在下行期放大亏损、现金流压力和清偿困难。",
+      "id": "concept:hidden-debt",
+      "key": "hidden-debt",
+      "label": "隐形债务",
+      "fullLabel": "隐形债务",
+      "type": "concept",
+      "route": "concepts/hidden-debt",
+      "summary": "表外、体外和合作链条里的债务不在显性报表中充分呈现，却会在危机时重新压回主体。",
       "status": null,
-      "degree": 16
+      "degree": 15
     },
     {
       "id": "model:feedback-loops",
@@ -54,17 +65,6 @@
       "type": "model",
       "route": "models/feedback-loops",
       "summary": "反馈回路模型解释老板偏好、顾问强化和组织沉默如何形成自我强化的错误循环。",
-      "status": null,
-      "degree": 14
-    },
-    {
-      "id": "concept:hidden-debt",
-      "key": "hidden-debt",
-      "label": "隐形债务",
-      "fullLabel": "隐形债务",
-      "type": "concept",
-      "route": "concepts/hidden-debt",
-      "summary": "表外、体外和合作链条里的债务不在显性报表中充分呈现，却会在危机时重新压回主体。",
       "status": null,
       "degree": 14
     },
@@ -124,6 +124,17 @@
       "degree": 13
     },
     {
+      "id": "episode:EP131",
+      "key": "EP131",
+      "label": "EP131",
+      "fullLabel": "EP131 · 哪吒汽车暴雷全拆解，撕开国资造车的万亿赌局！揭秘电车烧钱三大黑洞。【EP131】",
+      "type": "episode",
+      "route": "episodes/EP131",
+      "summary": "本期借《焦点访谈》关于哪吒汽车进入破产重整的报道，回到节目此前反复讨论的电车、地方政府、国资和隐性债务关系。节目核心判断是：哪吒不是单纯经营失败，也不是单纯创始人或风投失误，而是地方国资把新能源汽车当成产业升级、招商业绩和未来上市退出工具后，逐步形成的一套财政金融赌局。浙江桐乡、江西宜春和广西南宁分别代表本地扶持、财政局平台入股与产投集团隐性债务化三种地方参与方式；价格战、快速研发迭代和营销费用黑箱则把企业推向持续烧钱。最终 IPO 通道受阻后，国资、车企、供应链和债权人一起被锁进无法体面退出的窟窿。",
+      "status": "curated",
+      "degree": 13
+    },
+    {
       "id": "episode:EP120",
       "key": "EP120",
       "label": "EP120",
@@ -146,6 +157,28 @@
       "degree": 12
     },
     {
+      "id": "theme:local-fiscal-stress-and-hidden-debt",
+      "key": "local-fiscal-stress-and-hidden-debt",
+      "label": "地方财政与隐性债务",
+      "fullLabel": "地方财政与隐性债务",
+      "type": "theme",
+      "route": "themes/local-fiscal-stress-and-hidden-debt",
+      "summary": "地方财政吃紧后，系统会通过更复杂的融资、资产包装和风险转移来维持运转。",
+      "status": null,
+      "degree": 11
+    },
+    {
+      "id": "theme:ev-financialization-and-false-sales",
+      "key": "ev-financialization-and-false-sales",
+      "label": "新能源金融化与虚假销量",
+      "fullLabel": "新能源金融化与虚假销量",
+      "type": "theme",
+      "route": "themes/ev-financialization-and-false-sales",
+      "summary": "聚焦新能源车行业如何依靠补贴、融资、渠道黑箱和虚假销售维持增长叙事。",
+      "status": null,
+      "degree": 11
+    },
+    {
       "id": "episode:EP078",
       "key": "EP078",
       "label": "EP078",
@@ -155,17 +188,6 @@
       "summary": "本期把郁亮放到宝万之争后的万科时间线里，质疑他如何从人畜无害的继承人变成系统性空心化的关键推手。节目更大的判断是：无论交给子女还是交给职业经理人，中国民企最难跨过去的那道坎往往都是继承治理。",
       "status": "curated",
       "degree": 11
-    },
-    {
-      "id": "theme:local-fiscal-stress-and-hidden-debt",
-      "key": "local-fiscal-stress-and-hidden-debt",
-      "label": "地方财政与隐性债务",
-      "fullLabel": "地方财政与隐性债务",
-      "type": "theme",
-      "route": "themes/local-fiscal-stress-and-hidden-debt",
-      "summary": "地方财政吃紧后，系统会通过更复杂的融资、资产包装和风险转移来维持运转。",
-      "status": null,
-      "degree": 10
     },
     {
       "id": "theme:real-estate-deleveraging",
@@ -190,17 +212,6 @@
       "degree": 10
     },
     {
-      "id": "theme:ev-financialization-and-false-sales",
-      "key": "ev-financialization-and-false-sales",
-      "label": "新能源金融化与虚假销量",
-      "fullLabel": "新能源金融化与虚假销量",
-      "type": "theme",
-      "route": "themes/ev-financialization-and-false-sales",
-      "summary": "聚焦新能源车行业如何依靠补贴、融资、渠道黑箱和虚假销售维持增长叙事。",
-      "status": null,
-      "degree": 10
-    },
-    {
       "id": "episode:EP130",
       "key": "EP130",
       "label": "EP130",
@@ -219,6 +230,17 @@
       "type": "theme",
       "route": "themes/maritime-chokepoints-and-route-order",
       "summary": "讨论海峡、运河和关键航道如何把地理位置变成规则、保险、资本和军事的综合权力。",
+      "status": null,
+      "degree": 9
+    },
+    {
+      "id": "theme:ev-collapse-and-exit-risk",
+      "key": "ev-collapse-and-exit-risk",
+      "label": "新能源崩塌与退出风险",
+      "fullLabel": "新能源崩塌与退出风险",
+      "type": "theme",
+      "route": "themes/ev-collapse-and-exit-risk",
+      "summary": "聚焦新能源项目在失速、清算和品牌出清阶段，风险如何向债权人、用户和地方政府层层传导。",
       "status": null,
       "degree": 9
     },
@@ -355,6 +377,17 @@
       "degree": 9
     },
     {
+      "id": "model:subsidy-capital-flywheel",
+      "key": "subsidy-capital-flywheel",
+      "label": "补贴资本飞轮",
+      "fullLabel": "补贴资本飞轮",
+      "type": "model",
+      "route": "models/subsidy-capital-flywheel",
+      "summary": "补贴资本飞轮解释地方财政、产业基金、企业估值和再融资如何互相放大。",
+      "status": null,
+      "degree": 8
+    },
+    {
       "id": "theme:big-government-and-incentive-reversal",
       "key": "big-government-and-incentive-reversal",
       "label": "大政府与激励反转",
@@ -395,17 +428,6 @@
       "type": "model",
       "route": "models/authority-misinfluence",
       "summary": "权威影响模型解释单点权威如何压缩组织独立判断，使成员更容易服从而非纠偏。",
-      "status": null,
-      "degree": 8
-    },
-    {
-      "id": "theme:ev-collapse-and-exit-risk",
-      "key": "ev-collapse-and-exit-risk",
-      "label": "新能源崩塌与退出风险",
-      "fullLabel": "新能源崩塌与退出风险",
-      "type": "theme",
-      "route": "themes/ev-collapse-and-exit-risk",
-      "summary": "聚焦新能源项目在失速、清算和品牌出清阶段，风险如何向债权人、用户和地方政府层层传导。",
       "status": null,
       "degree": 8
     },
@@ -694,17 +716,6 @@
       "summary": "本期从 35.97 亿元天价罚单切入，讨论的重点并不只是“哪家平台罚得最多”，而是借七家外卖平台的不同处罚结果，把食品安全、平台权力、转单黑产和层层转包的底层机制串成一条链。节目认为，拼多多之所以被顶格重罚，不只是因为问题店铺或交易额，而在于它既主动与转单平台深度合作，又出现了阻挠执法的行为；而整个行业真正可怕的地方，是消费者支付的高价在平台、幽灵店铺和转单系统里被层层截留，最后真正做货的黑作坊只拿到极低成本，食品安全和履约风险则一路向链条末端下沉。",
       "status": "curated",
       "degree": 8
-    },
-    {
-      "id": "model:subsidy-capital-flywheel",
-      "key": "subsidy-capital-flywheel",
-      "label": "补贴资本飞轮",
-      "fullLabel": "补贴资本飞轮",
-      "type": "model",
-      "route": "models/subsidy-capital-flywheel",
-      "summary": "补贴资本飞轮解释地方财政、产业基金、企业估值和再融资如何互相放大。",
-      "status": null,
-      "degree": 7
     },
     {
       "id": "model:principal-agent",
@@ -1114,6 +1125,17 @@
       "degree": 6
     },
     {
+      "id": "concept:phantom-sales",
+      "key": "phantom-sales",
+      "label": "虚假销售",
+      "fullLabel": "虚假销售",
+      "type": "concept",
+      "route": "concepts/phantom-sales",
+      "summary": "企业把并不存在的真实终端需求，包装成销量、出海成绩或渠道消化能力，用来维持估值和融资信心。",
+      "status": null,
+      "degree": 6
+    },
+    {
       "id": "concept:balance-sheet-support",
       "key": "balance-sheet-support",
       "label": "资产负债表托底",
@@ -1345,6 +1367,17 @@
       "degree": 5
     },
     {
+      "id": "model:black-box-assetization",
+      "key": "black-box-assetization",
+      "label": "黑箱资产化",
+      "fullLabel": "黑箱资产化",
+      "type": "model",
+      "route": "models/black-box-assetization",
+      "summary": "把本来难以估值、难以穿透甚至本该暴露风险的东西，装进平台、基金或体外结构里，重新包装成可融资、可讲故事、可继续吸钱的资产。",
+      "status": null,
+      "degree": 5
+    },
+    {
       "id": "concept:technical-shortcut",
       "key": "technical-shortcut",
       "label": "技术捷径",
@@ -1367,6 +1400,17 @@
       "degree": 5
     },
     {
+      "id": "concept:unfinished-vehicle",
+      "key": "unfinished-vehicle",
+      "label": "烂尾车",
+      "fullLabel": "烂尾车",
+      "type": "concept",
+      "route": "concepts/unfinished-vehicle",
+      "summary": "交付完成并不等于产品完成，品牌、售后、配件和残值体系先崩时，汽车会变成难以退出的烂尾资产。",
+      "status": null,
+      "degree": 5
+    },
+    {
       "id": "concept:time-asymmetry",
       "key": "time-asymmetry",
       "label": "时间非对称",
@@ -1374,17 +1418,6 @@
       "type": "concept",
       "route": "concepts/time-asymmetry",
       "summary": "真正决定战略胜负的，往往不是一场仗的强弱，而是谁能把时间变成自己的朋友。",
-      "status": null,
-      "degree": 5
-    },
-    {
-      "id": "concept:phantom-sales",
-      "key": "phantom-sales",
-      "label": "虚假销售",
-      "fullLabel": "虚假销售",
-      "type": "concept",
-      "route": "concepts/phantom-sales",
-      "summary": "企业把并不存在的真实终端需求，包装成销量、出海成绩或渠道消化能力，用来维持估值和融资信心。",
       "status": null,
       "degree": 5
     },
@@ -1664,6 +1697,28 @@
       "degree": 5
     },
     {
+      "id": "concept:subsidy-leverage-engine",
+      "key": "subsidy-leverage-engine",
+      "label": "补贴杠杆引擎",
+      "fullLabel": "补贴杠杆引擎",
+      "type": "concept",
+      "route": "concepts/subsidy-leverage-engine",
+      "summary": "财政补贴被当成种子资金，撬动基金、估值、招商和社会资本，形成杠杆引擎。",
+      "status": null,
+      "degree": 4
+    },
+    {
+      "id": "theme:local-government-financialization",
+      "key": "local-government-financialization",
+      "label": "地方政府资本化与补贴杠杆",
+      "fullLabel": "地方政府资本化与补贴杠杆",
+      "type": "theme",
+      "route": "themes/local-government-financialization",
+      "summary": "讨论地方政府如何从传统招商者变成资本玩家，并把补贴、基金和估值故事捆到一起。",
+      "status": null,
+      "degree": 4
+    },
+    {
       "id": "person:sanae-takaichi",
       "key": "sanae-takaichi",
       "label": "高市早苗",
@@ -1686,17 +1741,6 @@
       "degree": 4
     },
     {
-      "id": "model:black-box-assetization",
-      "key": "black-box-assetization",
-      "label": "黑箱资产化",
-      "fullLabel": "黑箱资产化",
-      "type": "model",
-      "route": "models/black-box-assetization",
-      "summary": "把本来难以估值、难以穿透甚至本该暴露风险的东西，装进平台、基金或体外结构里，重新包装成可融资、可讲故事、可继续吸钱的资产。",
-      "status": null,
-      "degree": 4
-    },
-    {
       "id": "person:jia-guolong",
       "key": "jia-guolong",
       "label": "贾国龙",
@@ -1704,17 +1748,6 @@
       "type": "person",
       "route": "people/jia-guolong",
       "summary": "贾国龙是西贝的创始人和核心经营者，也是西贝系列节目里最重要的人物节点。",
-      "status": null,
-      "degree": 4
-    },
-    {
-      "id": "concept:unfinished-vehicle",
-      "key": "unfinished-vehicle",
-      "label": "烂尾车",
-      "fullLabel": "烂尾车",
-      "type": "concept",
-      "route": "concepts/unfinished-vehicle",
-      "summary": "交付完成并不等于产品完成，品牌、售后、配件和残值体系先崩时，汽车会变成难以退出的烂尾资产。",
       "status": null,
       "degree": 4
     },
@@ -1950,17 +1983,6 @@
       "degree": 3
     },
     {
-      "id": "concept:subsidy-leverage-engine",
-      "key": "subsidy-leverage-engine",
-      "label": "补贴杠杆引擎",
-      "fullLabel": "补贴杠杆引擎",
-      "type": "concept",
-      "route": "concepts/subsidy-leverage-engine",
-      "summary": "财政补贴被当成种子资金，撬动基金、估值、招商和社会资本，形成杠杆引擎。",
-      "status": null,
-      "degree": 3
-    },
-    {
       "id": "model:subsidized-adoption-flywheel",
       "key": "subsidized-adoption-flywheel",
       "label": "补贴驱动采纳飞轮",
@@ -2012,17 +2034,6 @@
       "type": "model",
       "route": "models/proxy-containment-ring",
       "summary": "代理围堵环解释大国如何通过盟友、代理人和通道控制分摊成本、封堵对手。",
-      "status": null,
-      "degree": 3
-    },
-    {
-      "id": "theme:local-government-financialization",
-      "key": "local-government-financialization",
-      "label": "地方政府资本化与补贴杠杆",
-      "fullLabel": "地方政府资本化与补贴杠杆",
-      "type": "theme",
-      "route": "themes/local-government-financialization",
-      "summary": "讨论地方政府如何从传统招商者变成资本玩家，并把补贴、基金和估值故事捆到一起。",
       "status": null,
       "degree": 3
     },
@@ -2694,6 +2705,17 @@
       "type": "concept",
       "route": "concepts/planning-lockin",
       "summary": "宏大目标一旦锁定资源和判断，分散试错与旁路探索就会被压缩。",
+      "status": null,
+      "degree": 2
+    },
+    {
+      "id": "concept:price-war-trap",
+      "key": "price-war-trap",
+      "label": "低价竞争陷阱",
+      "fullLabel": "低价竞争陷阱",
+      "type": "concept",
+      "route": "concepts/price-war-trap",
+      "summary": "极致低价可以快速突袭，却可能在长期竞争中压缩技术升级、利润和战略空间。",
       "status": null,
       "degree": 2
     },
@@ -3662,17 +3684,6 @@
       "type": "concept",
       "route": "concepts/moral-capital",
       "summary": "长期为他人承担和创造价值，会形成一种不能即时折现却能改变公共评价的道德资本。",
-      "status": null,
-      "degree": 1
-    },
-    {
-      "id": "concept:price-war-trap",
-      "key": "price-war-trap",
-      "label": "低价竞争陷阱",
-      "fullLabel": "低价竞争陷阱",
-      "type": "concept",
-      "route": "concepts/price-war-trap",
-      "summary": "极致低价可以快速突袭，却可能在长期竞争中压缩技术升级、利润和战略空间。",
       "status": null,
       "degree": 1
     },
@@ -9306,6 +9317,71 @@
     {
       "source": "episode:EP130",
       "target": "theme:dollar-system-and-gray-trade",
+      "kind": "episode-theme"
+    },
+    {
+      "source": "episode:EP131",
+      "target": "concept:hidden-debt",
+      "kind": "episode-concept"
+    },
+    {
+      "source": "episode:EP131",
+      "target": "concept:subsidy-leverage-engine",
+      "kind": "episode-concept"
+    },
+    {
+      "source": "episode:EP131",
+      "target": "concept:phantom-sales",
+      "kind": "episode-concept"
+    },
+    {
+      "source": "episode:EP131",
+      "target": "concept:price-war-trap",
+      "kind": "episode-concept"
+    },
+    {
+      "source": "episode:EP131",
+      "target": "concept:unfinished-vehicle",
+      "kind": "episode-concept"
+    },
+    {
+      "source": "episode:EP131",
+      "target": "model:subsidy-capital-flywheel",
+      "kind": "episode-model"
+    },
+    {
+      "source": "episode:EP131",
+      "target": "model:black-box-assetization",
+      "kind": "episode-model"
+    },
+    {
+      "source": "episode:EP131",
+      "target": "model:risk-transfer-chain",
+      "kind": "episode-model"
+    },
+    {
+      "source": "episode:EP131",
+      "target": "model:leverage-backfire",
+      "kind": "episode-model"
+    },
+    {
+      "source": "episode:EP131",
+      "target": "theme:ev-financialization-and-false-sales",
+      "kind": "episode-theme"
+    },
+    {
+      "source": "episode:EP131",
+      "target": "theme:ev-collapse-and-exit-risk",
+      "kind": "episode-theme"
+    },
+    {
+      "source": "episode:EP131",
+      "target": "theme:local-government-financialization",
+      "kind": "episode-theme"
+    },
+    {
+      "source": "episode:EP131",
+      "target": "theme:local-fiscal-stress-and-hidden-debt",
       "kind": "episode-theme"
     },
     {
