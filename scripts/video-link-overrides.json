@@ -120,8 +120,7 @@
   "EP131": {
     "bilibili": {
       "platform": "bilibili",
-      "status": "unavailable",
-      "note": "暂未找到"
+      "url": "https://www.bilibili.com/video/BV18wREBKEu3/?spm_id_from=333.788.top_right_bar_window_dynamic.content.click"
     },
     "youtube": {
       "platform": "youtube",

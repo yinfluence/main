@@ -2,7 +2,7 @@
   "meta": {
     "title": "颖响力知识库",
     "subtitle": "节目、概念、思想模型的结构化索引",
-    "updatedAt": "2026-05-03T11:01:37.296Z"
+    "updatedAt": "2026-05-03T12:10:59.157Z"
   },
   "stats": {
     "episodes": 131,
@@ -12021,7 +12021,7 @@
           "url": "https://www.youtube.com/watch?v=BEHBNttZlWU"
         }
       ],
-      "recent": true
+      "recent": false
     },
     {
       "id": "EP130",
@@ -12253,8 +12253,7 @@
       "videoLinks": [
         {
           "platform": "bilibili",
-          "status": "unavailable",
-          "note": "暂未找到"
+          "url": "https://www.bilibili.com/video/BV18wREBKEu3/?spm_id_from=333.788.top_right_bar_window_dynamic.content.click"
         },
         {
           "platform": "youtube",
