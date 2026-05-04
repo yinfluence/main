@@ -2,12 +2,12 @@
   "meta": {
     "title": "颖响力知识图谱",
     "subtitle": "节目、概念、模型、人物、主题之间的可视化连接网络",
-    "nodeCount": 464,
-    "linkCount": 875,
+    "nodeCount": 467,
+    "linkCount": 891,
     "typeCounts": {
       "model": 58,
-      "episode": 131,
-      "concept": 124,
+      "episode": 132,
+      "concept": 126,
       "theme": 90,
       "person": 61
     }
@@ -45,6 +45,17 @@
       "summary": "本期借西贝与华与华的关系，讨论高价餐饮背后咨询成本、品牌符号、创始人权力结构与消费者买单之间的连锁关系。",
       "status": "curated",
       "degree": 17
+    },
+    {
+      "id": "episode:EP132",
+      "key": "EP132",
+      "label": "EP132",
+      "fullLabel": "EP132 · 是什么堵死了年轻创业者的草根逆袭之路？解读Manus交易撤销。【EP132】",
+      "type": "episode",
+      "route": "episodes/EP132",
+      "summary": "本期接续 EP057 的 Manus 线索，不再重点复述公司和交易本身，而是讨论 Meta 收购 Manus 被监管否决之后，对中国草根创业者意味着什么。节目承认叫停交易有明确法律依据，但核心判断是：过去三十年支撑无背景年轻人从零到一的美元基金、全球市场和赴美上市/海外并购退出通道正在被堵死；而地方国资基金的考核逻辑更重视国有资产不流失、招商落地、就业税收和可见退出，天然不会为纯软件、早期、无背景的草根项目承担风险。结果是年轻人会更理性地转向考研考公和体制稳定，创新资源从市场能力转向行政关系，真正的颠覆式创新被挤出，只剩依附式创新和表演式创新。",
+      "status": "curated",
+      "degree": 16
     },
     {
       "id": "concept:hidden-debt",
@@ -432,6 +443,17 @@
       "degree": 8
     },
     {
+      "id": "model:institutional-fit",
+      "key": "institutional-fit",
+      "label": "制度适配",
+      "fullLabel": "制度适配",
+      "type": "model",
+      "route": "models/institutional-fit",
+      "summary": "制度适配解释能力能否兑现，取决于组织被放在怎样的法律、资本和治理环境中。",
+      "status": null,
+      "degree": 8
+    },
+    {
       "id": "model:distribution-bias",
       "key": "distribution-bias",
       "label": "资源分配偏置",
@@ -747,17 +769,6 @@
       "type": "concept",
       "route": "concepts/chokepoint-leverage",
       "summary": "控制海峡、运河和关键通道的人，往往能把地理位置转化成定价权、通行权和规则权。",
-      "status": null,
-      "degree": 7
-    },
-    {
-      "id": "model:institutional-fit",
-      "key": "institutional-fit",
-      "label": "制度适配",
-      "fullLabel": "制度适配",
-      "type": "model",
-      "route": "models/institutional-fit",
-      "summary": "制度适配解释能力能否兑现，取决于组织被放在怎样的法律、资本和治理环境中。",
       "status": null,
       "degree": 7
     },
@@ -1708,6 +1719,17 @@
       "degree": 4
     },
     {
+      "id": "theme:planned-systems-and-innovation",
+      "key": "planned-systems-and-innovation",
+      "label": "大计划体制与创新约束",
+      "fullLabel": "大计划体制与创新约束",
+      "type": "theme",
+      "route": "themes/planned-systems-and-innovation",
+      "summary": "讨论统一目标和强组织动员如何带来短期速度，又如何在长期压缩创新、纠错与自发能动性。",
+      "status": null,
+      "degree": 4
+    },
+    {
       "id": "theme:local-government-financialization",
       "key": "local-government-financialization",
       "label": "地方政府资本化与补贴杠杆",
@@ -1715,6 +1737,17 @@
       "type": "theme",
       "route": "themes/local-government-financialization",
       "summary": "讨论地方政府如何从传统招商者变成资本玩家，并把补贴、基金和估值故事捆到一起。",
+      "status": null,
+      "degree": 4
+    },
+    {
+      "id": "model:distributed-innovation",
+      "key": "distributed-innovation",
+      "label": "分布式创新",
+      "fullLabel": "分布式创新",
+      "type": "model",
+      "route": "models/distributed-innovation",
+      "summary": "分布式创新强调多中心试错、失败吸收和真实反馈比单一大计划更能产生韧性。",
       "status": null,
       "degree": 4
     },
@@ -1752,6 +1785,17 @@
       "degree": 4
     },
     {
+      "id": "theme:youth-dreams-and-safe-paths",
+      "key": "youth-dreams-and-safe-paths",
+      "label": "年轻人梦想与安全路径",
+      "fullLabel": "年轻人梦想与安全路径",
+      "type": "theme",
+      "route": "themes/youth-dreams-and-safe-paths",
+      "summary": "关注“稳定”如何成为压制年轻人生命力的主流建议。",
+      "status": null,
+      "degree": 4
+    },
+    {
       "id": "model:platform-gatekeeping",
       "key": "platform-gatekeeping",
       "label": "平台守门结构",
@@ -1770,6 +1814,17 @@
       "type": "model",
       "route": "models/screening-machine",
       "summary": "教育和组织把人当作待筛选样本，而非待生长的人来处理的系统逻辑。",
+      "status": null,
+      "degree": 4
+    },
+    {
+      "id": "concept:future-path-crowding",
+      "key": "future-path-crowding",
+      "label": "未来路径拥堵",
+      "fullLabel": "未来路径拥堵",
+      "type": "concept",
+      "route": "concepts/future-path-crowding",
+      "summary": "所有人都挤向同一条被认为最安全的上升路径时，这条路本身就会因为拥挤而失去原来的安全性。",
       "status": null,
       "degree": 4
     },
@@ -2016,17 +2071,6 @@
       "degree": 3
     },
     {
-      "id": "theme:planned-systems-and-innovation",
-      "key": "planned-systems-and-innovation",
-      "label": "大计划体制与创新约束",
-      "fullLabel": "大计划体制与创新约束",
-      "type": "theme",
-      "route": "themes/planned-systems-and-innovation",
-      "summary": "讨论统一目标和强组织动员如何带来短期速度，又如何在长期压缩创新、纠错与自发能动性。",
-      "status": null,
-      "degree": 3
-    },
-    {
       "id": "model:proxy-containment-ring",
       "key": "proxy-containment-ring",
       "label": "代理围堵环",
@@ -2060,6 +2104,17 @@
       "degree": 3
     },
     {
+      "id": "concept:jurisdiction-arbitrage",
+      "key": "jurisdiction-arbitrage",
+      "label": "法域套利",
+      "fullLabel": "法域套利",
+      "type": "concept",
+      "route": "concepts/jurisdiction-arbitrage",
+      "summary": "企业通过选择更有利法域，获取融资、估值、合规和退出上的制度差价。",
+      "status": null,
+      "degree": 3
+    },
+    {
       "id": "theme:rule-of-law-boundaries-and-social-trust",
       "key": "rule-of-law-boundaries-and-social-trust",
       "label": "法治边界与社会信任",
@@ -2067,17 +2122,6 @@
       "type": "theme",
       "route": "themes/rule-of-law-boundaries-and-social-trust",
       "summary": "关注法律灰区如何影响公众的善意、风险感和彼此信任。",
-      "status": null,
-      "degree": 3
-    },
-    {
-      "id": "model:distributed-innovation",
-      "key": "distributed-innovation",
-      "label": "分布式创新",
-      "fullLabel": "分布式创新",
-      "type": "model",
-      "route": "models/distributed-innovation",
-      "summary": "分布式创新强调多中心试错、失败吸收和真实反馈比单一大计划更能产生韧性。",
       "status": null,
       "degree": 3
     },
@@ -2236,17 +2280,6 @@
       "degree": 3
     },
     {
-      "id": "theme:youth-dreams-and-safe-paths",
-      "key": "youth-dreams-and-safe-paths",
-      "label": "年轻人梦想与安全路径",
-      "fullLabel": "年轻人梦想与安全路径",
-      "type": "theme",
-      "route": "themes/youth-dreams-and-safe-paths",
-      "summary": "关注“稳定”如何成为压制年轻人生命力的主流建议。",
-      "status": null,
-      "degree": 3
-    },
-    {
       "id": "model:platform-legibility-filter",
       "key": "platform-legibility-filter",
       "label": "平台可读性过滤器",
@@ -2313,6 +2346,17 @@
       "degree": 3
     },
     {
+      "id": "theme:institutional-middle-class-and-social-mobility",
+      "key": "institutional-middle-class-and-social-mobility",
+      "label": "体制化中产与社会流动",
+      "fullLabel": "体制化中产与社会流动",
+      "type": "theme",
+      "route": "themes/institutional-middle-class-and-social-mobility",
+      "summary": "讨论稳定岗位、公共财政和身份溢价如何重塑中产结构，并收窄普通人的上升路径。",
+      "status": null,
+      "degree": 3
+    },
+    {
       "id": "theme:narrative-speculation-and-retail-traps",
       "key": "narrative-speculation-and-retail-traps",
       "label": "投资叙事与散户陷阱",
@@ -2368,13 +2412,13 @@
       "degree": 3
     },
     {
-      "id": "concept:future-path-crowding",
-      "key": "future-path-crowding",
-      "label": "未来路径拥堵",
-      "fullLabel": "未来路径拥堵",
-      "type": "concept",
-      "route": "concepts/future-path-crowding",
-      "summary": "所有人都挤向同一条被认为最安全的上升路径时，这条路本身就会因为拥挤而失去原来的安全性。",
+      "id": "model:stability-over-growth-trap",
+      "key": "stability-over-growth-trap",
+      "label": "稳定替代增长陷阱",
+      "fullLabel": "稳定替代增长陷阱",
+      "type": "model",
+      "route": "models/stability-over-growth-trap",
+      "summary": "当系统把稳定当作增长的替代品，短期秩序会被保住，长期造血、流动和创新却会被压低。",
       "status": null,
       "degree": 3
     },
@@ -2731,17 +2775,6 @@
       "degree": 2
     },
     {
-      "id": "concept:jurisdiction-arbitrage",
-      "key": "jurisdiction-arbitrage",
-      "label": "法域套利",
-      "fullLabel": "法域套利",
-      "type": "concept",
-      "route": "concepts/jurisdiction-arbitrage",
-      "summary": "企业通过选择更有利法域，获取融资、估值、合规和退出上的制度差价。",
-      "status": null,
-      "degree": 2
-    },
-    {
       "id": "concept:pan-institutional-middle-class",
       "key": "pan-institutional-middle-class",
       "label": "泛体制中产",
@@ -2804,6 +2837,17 @@
       "type": "theme",
       "route": "themes/public-service-downgrading",
       "summary": "当财政和治理优先考虑控费，公共服务最常见的结果就是标准被整体压低。",
+      "status": null,
+      "degree": 2
+    },
+    {
+      "id": "concept:corporate-identity-shift",
+      "key": "corporate-identity-shift",
+      "label": "公司身份迁移",
+      "fullLabel": "公司身份迁移",
+      "type": "concept",
+      "route": "concepts/corporate-identity-shift",
+      "summary": "公司会通过迁移法律身份、融资主场和制度归属，改变自己被定价和被理解的方式。",
       "status": null,
       "degree": 2
     },
@@ -3028,6 +3072,28 @@
       "degree": 2
     },
     {
+      "id": "model:aspiration-compounding",
+      "key": "aspiration-compounding",
+      "label": "梦想复利模型",
+      "fullLabel": "梦想复利模型",
+      "type": "model",
+      "route": "models/aspiration-compounding",
+      "summary": "梦想复利模型解释长期投入到真实热爱的方向，会让能力、机会和身份彼此放大。",
+      "status": null,
+      "degree": 2
+    },
+    {
+      "id": "concept:dream-extinguishing",
+      "key": "dream-extinguishing",
+      "label": "灭梦式安全感",
+      "fullLabel": "灭梦式安全感",
+      "type": "concept",
+      "route": "concepts/dream-extinguishing",
+      "summary": "以稳定和现实为名过早熄灭年轻人的热爱，会把安全感变成生命力的折损。",
+      "status": null,
+      "degree": 2
+    },
+    {
       "id": "person:pan-shiyi",
       "key": "pan-shiyi",
       "label": "潘石屹",
@@ -3105,17 +3171,6 @@
       "degree": 2
     },
     {
-      "id": "theme:institutional-middle-class-and-social-mobility",
-      "key": "institutional-middle-class-and-social-mobility",
-      "label": "体制化中产与社会流动",
-      "fullLabel": "体制化中产与社会流动",
-      "type": "theme",
-      "route": "themes/institutional-middle-class-and-social-mobility",
-      "summary": "讨论稳定岗位、公共财政和身份溢价如何重塑中产结构，并收窄普通人的上升路径。",
-      "status": null,
-      "degree": 2
-    },
-    {
       "id": "concept:investment-timing-gap",
       "key": "investment-timing-gap",
       "label": "投入兑现时间差",
@@ -3182,17 +3237,6 @@
       "degree": 2
     },
     {
-      "id": "model:stability-over-growth-trap",
-      "key": "stability-over-growth-trap",
-      "label": "稳定替代增长陷阱",
-      "fullLabel": "稳定替代增长陷阱",
-      "type": "model",
-      "route": "models/stability-over-growth-trap",
-      "summary": "当系统把稳定当作增长的替代品，短期秩序会被保住，长期造血、流动和创新却会被压低。",
-      "status": null,
-      "degree": 2
-    },
-    {
       "id": "concept:toxic-recycling",
       "key": "toxic-recycling",
       "label": "污染转移式回收",
@@ -3200,6 +3244,17 @@
       "type": "concept",
       "route": "concepts/toxic-recycling",
       "summary": "回收若只追求拆解收益和补贴套利，污染就会从原行业转移到更弱的地方和人群。",
+      "status": null,
+      "degree": 2
+    },
+    {
+      "id": "concept:system-rollback",
+      "key": "system-rollback",
+      "label": "系统回滚",
+      "fullLabel": "系统回滚",
+      "type": "concept",
+      "route": "concepts/system-rollback",
+      "summary": "系统回滚指社会从增长、能力和市场规则导向，退回到安稳、身份和存量兜底导向。",
       "status": null,
       "degree": 2
     },
@@ -3233,6 +3288,17 @@
       "type": "theme",
       "route": "themes/small-state-balancing",
       "summary": "讨论新加坡这类小国如何在大国竞争中维持安全、合法性和现实利益。",
+      "status": null,
+      "degree": 2
+    },
+    {
+      "id": "person:xiao-hong",
+      "key": "xiao-hong",
+      "label": "肖弘",
+      "fullLabel": "肖弘",
+      "type": "person",
+      "route": "people/xiao-hong",
+      "summary": "肖弘是 Manus 创始人，也是节目讨论中国草根 AI 创业、公司主场和资本退出路径时的关键人物。",
       "status": null,
       "degree": 2
     },
@@ -3446,6 +3512,17 @@
       "degree": 2
     },
     {
+      "id": "theme:ai-capital-and-company-identity",
+      "key": "ai-capital-and-company-identity",
+      "label": "AI创业、资本主场与公司身份",
+      "fullLabel": "AI创业、资本主场与公司身份",
+      "type": "theme",
+      "route": "themes/ai-capital-and-company-identity",
+      "summary": "讨论 AI 创业公司如何在不同法域、资本环境与身份叙事之间重新安排自己的主场。",
+      "status": null,
+      "degree": 2
+    },
+    {
       "id": "theme:ai-and-human-creativity",
       "key": "ai-and-human-creativity",
       "label": "AI替代与人的创造性",
@@ -3530,6 +3607,17 @@
       "type": "concept",
       "route": "concepts/surface-modernity",
       "summary": "把现代化理解成高楼、道路和工程规模，会忽略制度、产业和生活体面的深层现代性。",
+      "status": null,
+      "degree": 1
+    },
+    {
+      "id": "concept:performative-innovation",
+      "key": "performative-innovation",
+      "label": "表演式创新",
+      "fullLabel": "表演式创新",
+      "type": "concept",
+      "route": "concepts/performative-innovation",
+      "summary": "表演式创新指项目主要为了完成指标、包装成果和争取扶持资金，而不以真实突破为中心。",
       "status": null,
       "degree": 1
     },
@@ -3805,17 +3893,6 @@
       "type": "theme",
       "route": "themes/public-space-and-civic-maturity",
       "summary": "讨论个体在公共场景里如何同时拥有权利意识、规则意识、义务感和稳定自尊。",
-      "status": null,
-      "degree": 1
-    },
-    {
-      "id": "concept:corporate-identity-shift",
-      "key": "corporate-identity-shift",
-      "label": "公司身份迁移",
-      "fullLabel": "公司身份迁移",
-      "type": "concept",
-      "route": "concepts/corporate-identity-shift",
-      "summary": "公司会通过迁移法律身份、融资主场和制度归属，改变自己被定价和被理解的方式。",
       "status": null,
       "degree": 1
     },
@@ -4271,28 +4348,6 @@
       "degree": 1
     },
     {
-      "id": "model:aspiration-compounding",
-      "key": "aspiration-compounding",
-      "label": "梦想复利模型",
-      "fullLabel": "梦想复利模型",
-      "type": "model",
-      "route": "models/aspiration-compounding",
-      "summary": "梦想复利模型解释长期投入到真实热爱的方向，会让能力、机会和身份彼此放大。",
-      "status": null,
-      "degree": 1
-    },
-    {
-      "id": "concept:dream-extinguishing",
-      "key": "dream-extinguishing",
-      "label": "灭梦式安全感",
-      "fullLabel": "灭梦式安全感",
-      "type": "concept",
-      "route": "concepts/dream-extinguishing",
-      "summary": "以稳定和现实为名过早熄灭年轻人的热爱，会把安全感变成生命力的折损。",
-      "status": null,
-      "degree": 1
-    },
-    {
       "id": "concept:folk-theory-bundle",
       "key": "folk-theory-bundle",
       "label": "民间理论打包",
@@ -4744,17 +4799,6 @@
       "degree": 1
     },
     {
-      "id": "concept:system-rollback",
-      "key": "system-rollback",
-      "label": "系统回滚",
-      "fullLabel": "系统回滚",
-      "type": "concept",
-      "route": "concepts/system-rollback",
-      "summary": "系统回滚指社会从增长、能力和市场规则导向，退回到安稳、身份和存量兜底导向。",
-      "status": null,
-      "degree": 1
-    },
-    {
       "id": "concept:tainted-asset-shield",
       "key": "tainted-asset-shield",
       "label": "瑕疵资产击穿",
@@ -4773,17 +4817,6 @@
       "type": "theme",
       "route": "themes/consumer-audience-rewrite",
       "summary": "品牌和内容生产者为了继续增长，会主动改写自己想吸引的人以及要卖给他们的身份。",
-      "status": null,
-      "degree": 1
-    },
-    {
-      "id": "person:xiao-hong",
-      "key": "xiao-hong",
-      "label": "肖弘",
-      "fullLabel": "肖弘",
-      "type": "person",
-      "route": "people/xiao-hong",
-      "summary": "肖弘是 Manus 创始人，也是节目讨论中国创业者为何把公司主场迁往新加坡时的关键人物。",
       "status": null,
       "degree": 1
     },
@@ -4883,6 +4916,17 @@
       "type": "person",
       "route": "people/yao-zhenhua",
       "summary": "姚振华是宝能系核心人物，也是观致汽车从良币走向资本废墟过程里的关键推手。",
+      "status": null,
+      "degree": 1
+    },
+    {
+      "id": "concept:dependent-innovation",
+      "key": "dependent-innovation",
+      "label": "依附式创新",
+      "fullLabel": "依附式创新",
+      "type": "concept",
+      "route": "concepts/dependent-innovation",
+      "summary": "依附式创新指项目围绕政府、国企或强关系订单做有限改造，而不是面向真实市场独立突破。",
       "status": null,
       "degree": 1
     },
@@ -5092,17 +5136,6 @@
       "type": "concept",
       "route": "concepts/dignity-pricing",
       "summary": "补贴和分配金额不仅是数字，也在为一个群体的体面和社会位置定价。",
-      "status": null,
-      "degree": 1
-    },
-    {
-      "id": "theme:ai-capital-and-company-identity",
-      "key": "ai-capital-and-company-identity",
-      "label": "AI创业、资本主场与公司身份",
-      "fullLabel": "AI创业、资本主场与公司身份",
-      "type": "theme",
-      "route": "themes/ai-capital-and-company-identity",
-      "summary": "讨论 AI 创业公司如何在不同法域、资本环境与身份叙事之间重新安排自己的主场。",
       "status": null,
       "degree": 1
     },
@@ -9382,6 +9415,86 @@
     {
       "source": "episode:EP131",
       "target": "theme:local-fiscal-stress-and-hidden-debt",
+      "kind": "episode-theme"
+    },
+    {
+      "source": "episode:EP132",
+      "target": "concept:jurisdiction-arbitrage",
+      "kind": "episode-concept"
+    },
+    {
+      "source": "episode:EP132",
+      "target": "concept:corporate-identity-shift",
+      "kind": "episode-concept"
+    },
+    {
+      "source": "episode:EP132",
+      "target": "concept:system-rollback",
+      "kind": "episode-concept"
+    },
+    {
+      "source": "episode:EP132",
+      "target": "concept:dream-extinguishing",
+      "kind": "episode-concept"
+    },
+    {
+      "source": "episode:EP132",
+      "target": "concept:future-path-crowding",
+      "kind": "episode-concept"
+    },
+    {
+      "source": "episode:EP132",
+      "target": "concept:dependent-innovation",
+      "kind": "episode-concept"
+    },
+    {
+      "source": "episode:EP132",
+      "target": "concept:performative-innovation",
+      "kind": "episode-concept"
+    },
+    {
+      "source": "episode:EP132",
+      "target": "model:institutional-fit",
+      "kind": "episode-model"
+    },
+    {
+      "source": "episode:EP132",
+      "target": "model:distributed-innovation",
+      "kind": "episode-model"
+    },
+    {
+      "source": "episode:EP132",
+      "target": "model:stability-over-growth-trap",
+      "kind": "episode-model"
+    },
+    {
+      "source": "episode:EP132",
+      "target": "model:aspiration-compounding",
+      "kind": "episode-model"
+    },
+    {
+      "source": "episode:EP132",
+      "target": "person:xiao-hong",
+      "kind": "episode-person"
+    },
+    {
+      "source": "episode:EP132",
+      "target": "theme:ai-capital-and-company-identity",
+      "kind": "episode-theme"
+    },
+    {
+      "source": "episode:EP132",
+      "target": "theme:youth-dreams-and-safe-paths",
+      "kind": "episode-theme"
+    },
+    {
+      "source": "episode:EP132",
+      "target": "theme:institutional-middle-class-and-social-mobility",
+      "kind": "episode-theme"
+    },
+    {
+      "source": "episode:EP132",
+      "target": "theme:planned-systems-and-innovation",
       "kind": "episode-theme"
     },
     {

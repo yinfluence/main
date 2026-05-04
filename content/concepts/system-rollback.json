@@ -8,6 +8,10 @@
     {
       "id": "EP128",
       "note": "节目直接用“系统回滚”概括核心消费层、阶层划分和社会运行逻辑的转向。"
+    },
+    {
+      "id": "EP132",
+      "note": "节目把创业者转向考研考公、创新资源转向国资和关系体系，视为市场化上升通道回滚的创投版本。"
     }
   ],
   "signals": [
@@ -35,13 +39,22 @@
       "note": "节目直接用“系统回滚”概括核心消费层、阶层划分和社会运行逻辑的转向。",
       "summary": "本期从广告审美转向切入，认为核心消费层从市场化中产转向泛体制中产，社会激励也从增长、能力和市场规则退回到稳定、身份和财政兜底。",
       "mechanism": "市场化机会收缩 -> 公共财政支撑稳定岗位 -> 体制身份成为中产门票 -> 品牌广告转向稳妥审美 -> 阶层流动收窄、代际闭环增强 -> 创新活力和规则关系被进一步压低。"
+    },
+    {
+      "id": "EP132",
+      "title": "是什么堵死了年轻创业者的草根逆袭之路？解读Manus交易撤销。【EP132】",
+      "note": "节目把创业者转向考研考公、创新资源转向国资和关系体系，视为市场化上升通道回滚的创投版本。",
+      "summary": "本期把 Manus 交易撤销放进青年创业和创投生态里看，认为草根创业路径被堵后，稳定岗位会继续替代市场化冒险。",
+      "mechanism": "全球退出通道收缩 -> 草根创业风险收益失衡 -> 地方国资按安全和政绩分配资源 -> 关系与身份压过产品能力 -> 年轻人更理性地转向考研考公。"
     }
   ],
   "relatedConcepts": [
     "pan-institutional-middle-class",
     "identity-over-wealth",
     "transfer-payment-dependency",
-    "aesthetic-compression"
+    "aesthetic-compression",
+    "dependent-innovation",
+    "performative-innovation"
   ],
   "relatedModels": [
     "stability-over-growth-trap",
