@@ -2,11 +2,11 @@
   "meta": {
     "title": "颖响力知识图谱",
     "subtitle": "节目、概念、模型、人物、主题之间的可视化连接网络",
-    "nodeCount": 467,
-    "linkCount": 891,
+    "nodeCount": 468,
+    "linkCount": 906,
     "typeCounts": {
       "model": 58,
-      "episode": 132,
+      "episode": 133,
       "concept": 126,
       "theme": 90,
       "person": 61
@@ -66,6 +66,17 @@
       "route": "concepts/hidden-debt",
       "summary": "表外、体外和合作链条里的债务不在显性报表中充分呈现，却会在危机时重新压回主体。",
       "status": null,
+      "degree": 15
+    },
+    {
+      "id": "episode:EP133",
+      "key": "EP133",
+      "label": "EP133",
+      "fullLabel": "EP133 · 中东再造一个“新加坡”，拆解阿联酋退出欧佩克的野心。【EP133】",
+      "type": "episode",
+      "route": "episodes/EP133",
+      "summary": "本期借阿联酋宣布永久退出欧佩克的消息，讨论它到底是在能源体系里闹内讧，还是在中东旧格局崩塌时主动重写国家路径。节目核心判断是：阿联酋并不满足于继续做沙特主导的阿拉伯兄弟体系成员，也不想只是美国的棋子，而是希望复制新加坡模式，在安全上绑定美国，在政治和经济上保持中立开放，把港口、金融、航运、能源和人才承接能力组合成中东的避险节点。退出欧佩克的意义因此不只是释放石油产能，更是摆脱沙特配额约束、把能源窗口期换成现金与未来产业基石，并在霍尔木兹危机和伊朗受压的时间窗口里争取新的区域位置。",
+      "status": "curated",
       "degree": 15
     },
     {
@@ -212,6 +223,17 @@
       "degree": 10
     },
     {
+      "id": "theme:maritime-chokepoints-and-route-order",
+      "key": "maritime-chokepoints-and-route-order",
+      "label": "海峡命门与航运秩序",
+      "fullLabel": "海峡命门与航运秩序",
+      "type": "theme",
+      "route": "themes/maritime-chokepoints-and-route-order",
+      "summary": "讨论海峡、运河和关键航道如何把地理位置变成规则、保险、资本和军事的综合权力。",
+      "status": null,
+      "degree": 10
+    },
+    {
       "id": "person:donald-trump",
       "key": "donald-trump",
       "label": "特朗普",
@@ -234,13 +256,13 @@
       "degree": 10
     },
     {
-      "id": "theme:maritime-chokepoints-and-route-order",
-      "key": "maritime-chokepoints-and-route-order",
-      "label": "海峡命门与航运秩序",
-      "fullLabel": "海峡命门与航运秩序",
-      "type": "theme",
-      "route": "themes/maritime-chokepoints-and-route-order",
-      "summary": "讨论海峡、运河和关键航道如何把地理位置变成规则、保险、资本和军事的综合权力。",
+      "id": "model:chokepoint-order-model",
+      "key": "chokepoint-order-model",
+      "label": "海峡秩序模型",
+      "fullLabel": "海峡秩序模型",
+      "type": "model",
+      "route": "models/chokepoint-order-model",
+      "summary": "真正决定咽喉通道价值的，不只是地理位置，而是谁定义通行规则、风险定价与法律边界。",
       "status": null,
       "degree": 9
     },
@@ -410,17 +432,6 @@
       "degree": 8
     },
     {
-      "id": "model:chokepoint-order-model",
-      "key": "chokepoint-order-model",
-      "label": "海峡秩序模型",
-      "fullLabel": "海峡秩序模型",
-      "type": "model",
-      "route": "models/chokepoint-order-model",
-      "summary": "真正决定咽喉通道价值的，不只是地理位置，而是谁定义通行规则、风险定价与法律边界。",
-      "status": null,
-      "degree": 8
-    },
-    {
       "id": "model:value-capture",
       "key": "value-capture",
       "label": "价值捕获",
@@ -439,6 +450,28 @@
       "type": "model",
       "route": "models/authority-misinfluence",
       "summary": "权威影响模型解释单点权威如何压缩组织独立判断，使成员更容易服从而非纠偏。",
+      "status": null,
+      "degree": 8
+    },
+    {
+      "id": "theme:singapore-and-small-state-survival",
+      "key": "singapore-and-small-state-survival",
+      "label": "新加坡与小国生存术",
+      "fullLabel": "新加坡与小国生存术",
+      "type": "theme",
+      "route": "themes/singapore-and-small-state-survival",
+      "summary": "讨论新加坡如何把规则、海峡、人才和谨慎外交组合成一套小国长期生存方法。",
+      "status": null,
+      "degree": 8
+    },
+    {
+      "id": "concept:chokepoint-leverage",
+      "key": "chokepoint-leverage",
+      "label": "咽喉杠杆",
+      "fullLabel": "咽喉杠杆",
+      "type": "concept",
+      "route": "concepts/chokepoint-leverage",
+      "summary": "控制海峡、运河和关键通道的人，往往能把地理位置转化成定价权、通行权和规则权。",
       "status": null,
       "degree": 8
     },
@@ -740,6 +773,17 @@
       "degree": 8
     },
     {
+      "id": "model:rule-anchored-small-state-model",
+      "key": "rule-anchored-small-state-model",
+      "label": "规则锚定型小国生存",
+      "fullLabel": "规则锚定型小国生存",
+      "type": "model",
+      "route": "models/rule-anchored-small-state-model",
+      "summary": "小国要长期活下来，不能只靠地理好运，更要靠规则信誉、理性政府和可预期的制度自我约束。",
+      "status": null,
+      "degree": 7
+    },
+    {
       "id": "model:principal-agent",
       "key": "principal-agent",
       "label": "委托代理问题",
@@ -747,28 +791,6 @@
       "type": "model",
       "route": "models/principal-agent",
       "summary": "委托代理模型解释外部顾问或职业代理人的激励，未必与委托方长期价值一致。",
-      "status": null,
-      "degree": 7
-    },
-    {
-      "id": "theme:singapore-and-small-state-survival",
-      "key": "singapore-and-small-state-survival",
-      "label": "新加坡与小国生存术",
-      "fullLabel": "新加坡与小国生存术",
-      "type": "theme",
-      "route": "themes/singapore-and-small-state-survival",
-      "summary": "讨论新加坡如何把规则、海峡、人才和谨慎外交组合成一套小国长期生存方法。",
-      "status": null,
-      "degree": 7
-    },
-    {
-      "id": "concept:chokepoint-leverage",
-      "key": "chokepoint-leverage",
-      "label": "咽喉杠杆",
-      "fullLabel": "咽喉杠杆",
-      "type": "concept",
-      "route": "concepts/chokepoint-leverage",
-      "summary": "控制海峡、运河和关键通道的人，往往能把地理位置转化成定价权、通行权和规则权。",
       "status": null,
       "degree": 7
     },
@@ -1070,17 +1092,6 @@
       "degree": 6
     },
     {
-      "id": "model:rule-anchored-small-state-model",
-      "key": "rule-anchored-small-state-model",
-      "label": "规则锚定型小国生存",
-      "fullLabel": "规则锚定型小国生存",
-      "type": "model",
-      "route": "models/rule-anchored-small-state-model",
-      "summary": "小国要长期活下来，不能只靠地理好运，更要靠规则信誉、理性政府和可预期的制度自我约束。",
-      "status": null,
-      "degree": 6
-    },
-    {
       "id": "concept:phantom-growth",
       "key": "phantom-growth",
       "label": "幻象增长",
@@ -1143,6 +1154,17 @@
       "type": "concept",
       "route": "concepts/phantom-sales",
       "summary": "企业把并不存在的真实终端需求，包装成销量、出海成绩或渠道消化能力，用来维持估值和融资信心。",
+      "status": null,
+      "degree": 6
+    },
+    {
+      "id": "theme:sanctions-and-power-containment",
+      "key": "sanctions-and-power-containment",
+      "label": "制裁、遏制与集团竞争",
+      "fullLabel": "制裁、遏制与集团竞争",
+      "type": "theme",
+      "route": "themes/sanctions-and-power-containment",
+      "summary": "讨论制裁、门罗主义、海峡与联盟如何共同服务于压制对手集团的全球布局。",
       "status": null,
       "degree": 6
     },
@@ -1444,17 +1466,6 @@
       "degree": 5
     },
     {
-      "id": "theme:sanctions-and-power-containment",
-      "key": "sanctions-and-power-containment",
-      "label": "制裁、遏制与集团竞争",
-      "fullLabel": "制裁、遏制与集团竞争",
-      "type": "theme",
-      "route": "themes/sanctions-and-power-containment",
-      "summary": "讨论制裁、门罗主义、海峡与联盟如何共同服务于压制对手集团的全球布局。",
-      "status": null,
-      "degree": 5
-    },
-    {
       "id": "concept:sanction-containment",
       "key": "sanction-containment",
       "label": "制裁遏制",
@@ -1484,6 +1495,17 @@
       "type": "theme",
       "route": "themes/middle-class-descent-and-stratification",
       "summary": "当中间层缺乏缓冲带时，经济下行会迅速转成身份下坠、关系断裂和社会分层加固。",
+      "status": null,
+      "degree": 5
+    },
+    {
+      "id": "concept:active-neutrality",
+      "key": "active-neutrality",
+      "label": "主动中立",
+      "fullLabel": "主动中立",
+      "type": "concept",
+      "route": "concepts/active-neutrality",
+      "summary": "真正可持续的中立不是谁都不得罪，而是在坚持规则的前提下主动参与秩序塑造。",
       "status": null,
       "degree": 5
     },
@@ -1730,6 +1752,17 @@
       "degree": 4
     },
     {
+      "id": "model:proxy-containment-ring",
+      "key": "proxy-containment-ring",
+      "label": "代理围堵环",
+      "fullLabel": "代理围堵环",
+      "type": "model",
+      "route": "models/proxy-containment-ring",
+      "summary": "代理围堵环解释大国如何通过盟友、代理人和通道控制分摊成本、封堵对手。",
+      "status": null,
+      "degree": 4
+    },
+    {
       "id": "theme:local-government-financialization",
       "key": "local-government-financialization",
       "label": "地方政府资本化与补贴杠杆",
@@ -1818,6 +1851,17 @@
       "degree": 4
     },
     {
+      "id": "person:vivian-balakrishnan",
+      "key": "vivian-balakrishnan",
+      "label": "维文",
+      "fullLabel": "维文",
+      "type": "person",
+      "route": "people/vivian-balakrishnan",
+      "summary": "维文是新加坡外长，也是节目里最能代表新加坡规则意识、小国生存术和海峡治理逻辑的发言者之一。",
+      "status": null,
+      "degree": 4
+    },
+    {
       "id": "concept:future-path-crowding",
       "key": "future-path-crowding",
       "label": "未来路径拥堵",
@@ -1851,6 +1895,17 @@
       "degree": 4
     },
     {
+      "id": "model:strategic-timing",
+      "key": "strategic-timing",
+      "label": "战略时机",
+      "fullLabel": "战略时机",
+      "type": "model",
+      "route": "models/strategic-timing",
+      "summary": "真正决定收益的往往不是是否参与，而是你能否在远早于大众情绪的时点、以合适规模和合适位置进入。",
+      "status": null,
+      "degree": 4
+    },
+    {
       "id": "person:zhang-xuefeng",
       "key": "zhang-xuefeng",
       "label": "张雪峰",
@@ -1869,17 +1924,6 @@
       "type": "theme",
       "route": "themes/state-business-entanglement",
       "summary": "讨论企业如何依赖地方政府、国资平台或关系结构续命，以及这种绑定如何反过来改写企业目标。",
-      "status": null,
-      "degree": 4
-    },
-    {
-      "id": "concept:active-neutrality",
-      "key": "active-neutrality",
-      "label": "主动中立",
-      "fullLabel": "主动中立",
-      "type": "concept",
-      "route": "concepts/active-neutrality",
-      "summary": "真正可持续的中立不是谁都不得罪，而是在坚持规则的前提下主动参与秩序塑造。",
       "status": null,
       "degree": 4
     },
@@ -2038,6 +2082,17 @@
       "degree": 3
     },
     {
+      "id": "concept:refuge-premium",
+      "key": "refuge-premium",
+      "label": "避险溢价",
+      "fullLabel": "避险溢价",
+      "type": "concept",
+      "route": "concepts/refuge-premium",
+      "summary": "动荡时期，稳定、守规则、能承接资金和人才的节点会获得额外溢价。",
+      "status": null,
+      "degree": 3
+    },
+    {
       "id": "model:subsidized-adoption-flywheel",
       "key": "subsidized-adoption-flywheel",
       "label": "补贴驱动采纳飞轮",
@@ -2067,17 +2122,6 @@
       "type": "theme",
       "route": "themes/catering-pricing-logic",
       "summary": "讨论餐饮价格背后到底由哪些结构因素共同决定。",
-      "status": null,
-      "degree": 3
-    },
-    {
-      "id": "model:proxy-containment-ring",
-      "key": "proxy-containment-ring",
-      "label": "代理围堵环",
-      "fullLabel": "代理围堵环",
-      "type": "model",
-      "route": "models/proxy-containment-ring",
-      "summary": "代理围堵环解释大国如何通过盟友、代理人和通道控制分摊成本、封堵对手。",
       "status": null,
       "degree": 3
     },
@@ -2280,6 +2324,17 @@
       "degree": 3
     },
     {
+      "id": "theme:dollar-system-and-gray-trade",
+      "key": "dollar-system-and-gray-trade",
+      "label": "美元体系与灰色贸易",
+      "fullLabel": "美元体系与灰色贸易",
+      "type": "theme",
+      "route": "themes/dollar-system-and-gray-trade",
+      "summary": "讨论石油美元的真实脆弱点，究竟藏在公开统计之外的哪些灰色交易链条里。",
+      "status": null,
+      "degree": 3
+    },
+    {
       "id": "model:platform-legibility-filter",
       "key": "platform-legibility-filter",
       "label": "平台可读性过滤器",
@@ -2401,17 +2456,6 @@
       "degree": 3
     },
     {
-      "id": "person:vivian-balakrishnan",
-      "key": "vivian-balakrishnan",
-      "label": "维文",
-      "fullLabel": "维文",
-      "type": "person",
-      "route": "people/vivian-balakrishnan",
-      "summary": "维文是新加坡外长，也是节目里最能代表新加坡规则意识、小国生存术和海峡治理逻辑的发言者之一。",
-      "status": null,
-      "degree": 3
-    },
-    {
       "id": "model:stability-over-growth-trap",
       "key": "stability-over-growth-trap",
       "label": "稳定替代增长陷阱",
@@ -2456,6 +2500,28 @@
       "degree": 3
     },
     {
+      "id": "model:small-state-balancing-model",
+      "key": "small-state-balancing-model",
+      "label": "小国平衡术",
+      "fullLabel": "小国平衡术",
+      "type": "model",
+      "route": "models/small-state-balancing-model",
+      "summary": "小国平衡术解释小国在大国之间维持生存空间，靠位置、合法性和现实利益而非纯姿态。",
+      "status": null,
+      "degree": 3
+    },
+    {
+      "id": "theme:small-state-balancing",
+      "key": "small-state-balancing",
+      "label": "小国平衡与地缘生存",
+      "fullLabel": "小国平衡与地缘生存",
+      "type": "theme",
+      "route": "themes/small-state-balancing",
+      "summary": "讨论新加坡这类小国如何在大国竞争中维持安全、合法性和现实利益。",
+      "status": null,
+      "degree": 3
+    },
+    {
       "id": "concept:information-cocoon-breach",
       "key": "information-cocoon-breach",
       "label": "信息茧房破口",
@@ -2485,17 +2551,6 @@
       "type": "concept",
       "route": "concepts/ceremonial-formalism",
       "summary": "组织越来越依赖场面、仪式和整齐感来证明自己有效，而真实目标和真实功能却被持续挤到后面。",
-      "status": null,
-      "degree": 3
-    },
-    {
-      "id": "model:strategic-timing",
-      "key": "strategic-timing",
-      "label": "战略时机",
-      "fullLabel": "战略时机",
-      "type": "model",
-      "route": "models/strategic-timing",
-      "summary": "真正决定收益的往往不是是否参与，而是你能否在远早于大众情绪的时点、以合适规模和合适位置进入。",
       "status": null,
       "degree": 3
     },
@@ -2683,17 +2738,6 @@
       "type": "theme",
       "route": "themes/liquor-financialization-and-table-culture",
       "summary": "讨论白酒如何从饮用品变成金融品，又如何因为餐桌权力结构变化而失去旧的消费基础。",
-      "status": null,
-      "degree": 2
-    },
-    {
-      "id": "concept:refuge-premium",
-      "key": "refuge-premium",
-      "label": "避险溢价",
-      "fullLabel": "避险溢价",
-      "type": "concept",
-      "route": "concepts/refuge-premium",
-      "summary": "动荡时期，稳定、守规则、能承接资金和人才的节点会获得额外溢价。",
       "status": null,
       "degree": 2
     },
@@ -3061,17 +3105,6 @@
       "degree": 2
     },
     {
-      "id": "theme:dollar-system-and-gray-trade",
-      "key": "dollar-system-and-gray-trade",
-      "label": "美元体系与灰色贸易",
-      "fullLabel": "美元体系与灰色贸易",
-      "type": "theme",
-      "route": "themes/dollar-system-and-gray-trade",
-      "summary": "讨论石油美元的真实脆弱点，究竟藏在公开统计之外的哪些灰色交易链条里。",
-      "status": null,
-      "degree": 2
-    },
-    {
       "id": "model:aspiration-compounding",
       "key": "aspiration-compounding",
       "label": "梦想复利模型",
@@ -3156,6 +3189,17 @@
       "type": "concept",
       "route": "concepts/production-risk-outsourcing",
       "summary": "平台和中间层把库存、投流、合规和现金流风险持续压给生产端。",
+      "status": null,
+      "degree": 2
+    },
+    {
+      "id": "concept:time-window-reading",
+      "key": "time-window-reading",
+      "label": "时间窗口阅读",
+      "fullLabel": "时间窗口阅读",
+      "type": "concept",
+      "route": "concepts/time-window-reading",
+      "summary": "同一动作在不同周期中的意义不同，判断决策必须先看它发生在哪个时间窗口。",
       "status": null,
       "degree": 2
     },
@@ -3266,28 +3310,6 @@
       "type": "concept",
       "route": "concepts/cash-optionality",
       "summary": "现金在高波动时期的核心价值，是保留等待、谈判、退出和重新进入的选择权。",
-      "status": null,
-      "degree": 2
-    },
-    {
-      "id": "model:small-state-balancing-model",
-      "key": "small-state-balancing-model",
-      "label": "小国平衡术",
-      "fullLabel": "小国平衡术",
-      "type": "model",
-      "route": "models/small-state-balancing-model",
-      "summary": "小国平衡术解释小国在大国之间维持生存空间，靠位置、合法性和现实利益而非纯姿态。",
-      "status": null,
-      "degree": 2
-    },
-    {
-      "id": "theme:small-state-balancing",
-      "key": "small-state-balancing",
-      "label": "小国平衡与地缘生存",
-      "fullLabel": "小国平衡与地缘生存",
-      "type": "theme",
-      "route": "themes/small-state-balancing",
-      "summary": "讨论新加坡这类小国如何在大国竞争中维持安全、合法性和现实利益。",
       "status": null,
       "degree": 2
     },
@@ -4674,17 +4696,6 @@
       "type": "theme",
       "route": "themes/time-horizon-and-foresight",
       "summary": "讨论人物与企业如何在不同周期里提前摆放自己，而不是等结果发生后再被动解释。",
-      "status": null,
-      "degree": 1
-    },
-    {
-      "id": "concept:time-window-reading",
-      "key": "time-window-reading",
-      "label": "时间窗口阅读",
-      "fullLabel": "时间窗口阅读",
-      "type": "concept",
-      "route": "concepts/time-window-reading",
-      "summary": "同一动作在不同周期中的意义不同，判断决策必须先看它发生在哪个时间窗口。",
       "status": null,
       "degree": 1
     },
@@ -9495,6 +9506,81 @@
     {
       "source": "episode:EP132",
       "target": "theme:planned-systems-and-innovation",
+      "kind": "episode-theme"
+    },
+    {
+      "source": "episode:EP133",
+      "target": "concept:active-neutrality",
+      "kind": "episode-concept"
+    },
+    {
+      "source": "episode:EP133",
+      "target": "concept:chokepoint-leverage",
+      "kind": "episode-concept"
+    },
+    {
+      "source": "episode:EP133",
+      "target": "concept:refuge-premium",
+      "kind": "episode-concept"
+    },
+    {
+      "source": "episode:EP133",
+      "target": "concept:time-window-reading",
+      "kind": "episode-concept"
+    },
+    {
+      "source": "episode:EP133",
+      "target": "model:rule-anchored-small-state-model",
+      "kind": "episode-model"
+    },
+    {
+      "source": "episode:EP133",
+      "target": "model:small-state-balancing-model",
+      "kind": "episode-model"
+    },
+    {
+      "source": "episode:EP133",
+      "target": "model:chokepoint-order-model",
+      "kind": "episode-model"
+    },
+    {
+      "source": "episode:EP133",
+      "target": "model:proxy-containment-ring",
+      "kind": "episode-model"
+    },
+    {
+      "source": "episode:EP133",
+      "target": "model:strategic-timing",
+      "kind": "episode-model"
+    },
+    {
+      "source": "episode:EP133",
+      "target": "person:vivian-balakrishnan",
+      "kind": "episode-person"
+    },
+    {
+      "source": "episode:EP133",
+      "target": "theme:singapore-and-small-state-survival",
+      "kind": "episode-theme"
+    },
+    {
+      "source": "episode:EP133",
+      "target": "theme:small-state-balancing",
+      "kind": "episode-theme"
+    },
+    {
+      "source": "episode:EP133",
+      "target": "theme:maritime-chokepoints-and-route-order",
+      "kind": "episode-theme"
+    },
+    {
+      "source": "episode:EP133",
+      "target": "theme:sanctions-and-power-containment",
+      "kind": "episode-theme"
+    },
+    {
+      "source": "episode:EP133",
+      "target": "theme:dollar-system-and-gray-trade",
       "kind": "episode-theme"
     },
     {

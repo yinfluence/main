@@ -138,6 +138,16 @@
       "url": "https://www.youtube.com/watch?v=ZF2UCgHVa7Y"
     }
   },
+  "EP133": {
+    "bilibili": {
+      "platform": "bilibili",
+      "url": "https://www.bilibili.com/video/BV14kRqBDEwj/?spm_id_from=333.1387.homepage.video_card.click"
+    },
+    "youtube": {
+      "platform": "youtube",
+      "url": "https://www.youtube.com/watch?v=bAbCZOiVe-E"
+    }
+  },
   "EP069": {
     "bilibili": {
       "platform": "bilibili",
