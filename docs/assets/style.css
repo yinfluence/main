@@ -3203,6 +3203,14 @@ body.page-home .home-episode-card > p:not(.card-kicker):not(.inline-label) {
   overflow: hidden;
 }
 
+.home-search-results-panel .search-subtitle-row {
+  padding: 12px 20px 0;
+}
+
+.home-search-results-panel .search-subtitle {
+  margin: 0 0 8px;
+}
+
 .home-search-toolbar.is-ghost {
   background: rgba(255, 252, 247, 0.48);
   border-color: rgba(169, 120, 31, 0.08);
