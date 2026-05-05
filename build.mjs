@@ -526,13 +526,13 @@ function mergeEpisodeCatalog(catalog, curatedEpisodes) {
   for (const episode of curatedEpisodes) {
     const base = byId.get(episode.id) || { id: episode.id, title: episode.title };
     const status = episode.status || 'curated';
-    const recentSource = base.sourceMtime ? new Date(base.sourceMtime).getTime() : NaN;
+    const publishedTime = episode.publishedAt ? new Date(episode.publishedAt).getTime() : NaN;
     byId.set(episode.id, {
       ...base,
       ...episode,
       status,
       curated: status === 'curated',
-      recent: Number.isFinite(recentSource) ? (Date.now() - recentSource) <= recentWindowMs : false
+      recent: Number.isFinite(publishedTime) ? (Date.now() - publishedTime) <= recentWindowMs : false
     });
   }
   return [...byId.values()].sort((a, b) => a.id.localeCompare(b.id));

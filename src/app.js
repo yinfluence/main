@@ -27,6 +27,24 @@ const HOME_PLATFORM_LINKS = [
 const WEBSITE_LOG_ENTRIES = [
   {
     date: '2026-05-05',
+    title: '全量节目 YouTube 发布时间校准',
+    items: [
+      '全量检查 133 集节目 YouTube 链接，并从 YouTube 页面元数据写入每集真实公开视频发布时间。',
+      '“新”标识改为按节目 `publishedAt` 判断，不再依赖本地字幕或整理文件的修改时间。',
+      '本地、GitHub Pages 和 yinfluence.org 后续只要使用同一份 repo 数据构建，就会得到一致的“新”标识。'
+    ]
+  },
+  {
+    date: '2026-05-05',
+    title: '小轮盘章节菜单交互修正',
+    items: [
+      '点击小轮盘打开“页面章节”或“节目轮盘”后，章节菜单会保持打开等待选择，不再自动消失。',
+      '章节菜单打开时小轮盘本体会立即隐藏，避免覆盖当前高亮项和菜单文字。',
+      '从节目轮盘进入节目详情、或从章节菜单跳转内容后，菜单与小轮盘会一起收起，路由切换时也不会立刻闪回遮挡内容。'
+    ]
+  },
+  {
+    date: '2026-05-05',
     title: 'EP133 入库、首页推荐随机化与 Pages 发布修复',
     items: [
       '新增 EP133 节目页，把阿联酋退出欧佩克拆成“中东新加坡”路线：安全靠美国兜底，经济上承接港口、金融、航运、能源和人才。',
@@ -264,7 +282,7 @@ let lastScrollSpeed = 0;
 let sectionProgressPanelOpen = false;
 let sectionProgressActiveIndex = -1;
 let sectionProgressPulseTimer = 0;
-let sectionProgressAutoCloseTimer = 0;
+let sectionProgressSuppressUntil = 0;
 let lastHomeEpisodeVisibleCount = 3;
 let lastHomeMobileLayout = false;
 let mobileViewportResetTimer = 0;
@@ -711,6 +729,11 @@ function syncSectionProgress({ reveal = false, blur = false } = {}) {
 
 function showSectionProgressTemporarily({ blur = false } = {}) {
   if (!sectionProgress || sectionProgress.hidden) return;
+  if (performance.now() < sectionProgressSuppressUntil) {
+    sectionProgress.classList.remove('is-visible');
+    document.body.classList.remove('section-progress-fast');
+    return;
+  }
   if (isHomeRoute()) {
     const homeEpisodesSection = document.getElementById('home-episodes');
     if (homeEpisodesSection instanceof HTMLElement) {
@@ -741,10 +764,14 @@ function clearSectionProgressEffects() {
   window.clearTimeout(sectionProgressHideTimer);
   window.clearTimeout(sectionProgressBlurTimer);
   window.clearTimeout(sectionProgressPulseTimer);
-  window.clearTimeout(sectionProgressAutoCloseTimer);
   sectionProgress?.classList.remove('is-visible');
   sectionProgress?.classList.remove('is-pulsing');
   document.body.classList.remove('section-progress-fast');
+}
+
+function suppressSectionProgressTemporarily(durationMs = 900) {
+  sectionProgressSuppressUntil = Math.max(sectionProgressSuppressUntil, performance.now() + durationMs);
+  clearSectionProgressEffects();
 }
 
 function closeSectionProgressPanel({ keepWheelVisible = false } = {}) {
@@ -766,23 +793,14 @@ function setSectionProgressPanelOpen(open) {
   if (!sectionProgressPanel) return;
   sectionProgressPanel.hidden = !open;
   if (open) {
-    window.clearTimeout(sectionProgressHideTimer);
-    window.clearTimeout(sectionProgressBlurTimer);
-    window.clearTimeout(sectionProgressAutoCloseTimer);
-    sectionProgress.classList.add('is-visible');
-    document.body.classList.remove('section-progress-fast');
+    sectionProgressSuppressUntil = 0;
+    clearSectionProgressEffects();
     window.requestAnimationFrame(() => {
       syncSectionProgress();
       scrollActiveSectionProgressItemIntoView({ behavior: 'auto' });
     });
-    if (!document.body.classList.contains('page-episode-index')) {
-      sectionProgressAutoCloseTimer = window.setTimeout(() => {
-        closeSectionProgressPanel({ keepWheelVisible: true });
-      }, 1800);
-    }
   } else {
-    window.clearTimeout(sectionProgressAutoCloseTimer);
-    closeSectionProgressPanel({ keepWheelVisible: true });
+    closeSectionProgressPanel();
   }
 }
 
@@ -1217,10 +1235,11 @@ sectionProgressPanel?.addEventListener('click', (event) => {
   const section = sections[index];
   if (!(section instanceof HTMLElement)) return;
   closeSectionProgressPanel();
-  clearSectionProgressEffects();
+  suppressSectionProgressTemporarily();
   if (document.body.classList.contains('page-episode-index')) {
     const href = section.dataset.progressHref || section.getAttribute('href');
     if (href) {
+      suppressSectionProgressTemporarily(1200);
       window.location.hash = href;
       return;
     }
@@ -3194,7 +3213,7 @@ function navigateToEpisodeFromElement(element) {
   const href = episodeCard?.dataset?.episodeHref;
   if (!href) return false;
   closeSectionProgressPanel();
-  clearSectionProgressEffects();
+  suppressSectionProgressTemporarily(1200);
   window.location.hash = href;
   return true;
 }
@@ -3357,9 +3376,9 @@ function getHomeEpisodeRangeLabel(episodes = [], totalEpisodes) {
 
 function isEpisodeFresh(episode) {
   if (episode?.recent) return true;
-  const sourceTime = episode?.sourceMtime ? new Date(episode.sourceMtime).getTime() : NaN;
-  if (Number.isFinite(sourceTime)) {
-    return (Date.now() - sourceTime) <= (3 * 24 * 60 * 60 * 1000);
+  const publishedTime = episode?.publishedAt ? new Date(episode.publishedAt).getTime() : NaN;
+  if (Number.isFinite(publishedTime)) {
+    return (Date.now() - publishedTime) <= (3 * 24 * 60 * 60 * 1000);
   }
   const currentEpisodeNumber = episodeNumberFromId(episode?.id);
   const latestEpisodeNumber = newestEpisodeNumber();

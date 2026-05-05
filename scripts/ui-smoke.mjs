@@ -463,6 +463,43 @@ async function runMobileChecks(client) {
     })()`),
     'Mobile concept detail should load the SOP template without dropping the accordion or evidence controls'
   );
+  await evaluate(client, `window.scrollTo(0, 900); true;`);
+  await waitForCondition(
+    client,
+    `Boolean(document.querySelector('.section-progress.is-visible'))`,
+    { timeoutMs: 4000, label: 'mobile concept progress wheel visible before opening panel' }
+  );
+  await clickSelector(client, '.section-progress');
+  await waitForCondition(
+    client,
+    `document.body.classList.contains('section-progress-panel-open') && !document.querySelector('#section-progress-panel')?.hidden`,
+    { timeoutMs: 4000, label: 'mobile concept progress panel open' }
+  );
+  await sleep(2200);
+  assert(
+    await evaluate(client, `(() => {
+      const panel = document.querySelector('#section-progress-panel');
+      const wheel = document.querySelector('.section-progress');
+      return document.body.classList.contains('section-progress-panel-open')
+        && panel
+        && !panel.hidden
+        && wheel
+        && !wheel.classList.contains('is-visible');
+    })()`),
+    'Mobile concept progress panel should stay open without the small wheel covering it'
+  );
+  await evaluate(client, `document.dispatchEvent(new MouseEvent('click', { bubbles: true, clientX: 8, clientY: 8 })); true;`);
+  await waitForCondition(
+    client,
+    `(() => {
+      const panel = document.querySelector('#section-progress-panel');
+      const wheel = document.querySelector('.section-progress');
+      return !document.body.classList.contains('section-progress-panel-open')
+        && (!panel || panel.hidden)
+        && (!wheel || !wheel.classList.contains('is-visible'));
+    })()`,
+    { timeoutMs: 4000, label: 'mobile concept progress panel closes from outside tap' }
+  );
 }
 
 async function runMobileEpisodeIndexChecks(client) {
@@ -635,6 +672,13 @@ async function runMobileEpisodeIndexChecks(client) {
     client,
     `document.body.classList.contains('section-progress-panel-open') && !document.querySelector('#section-progress-panel')?.hidden`,
     { timeoutMs: 4000, label: 'mobile episode progress panel open' }
+  );
+  assert(
+    await evaluate(client, `(() => {
+      const wheel = document.querySelector('.section-progress');
+      return Boolean(wheel && !wheel.classList.contains('is-visible'));
+    })()`),
+    'Mobile episode progress panel should hide the small wheel while waiting for a selection'
   );
   assert(
     await evaluate(client, `(() => {
