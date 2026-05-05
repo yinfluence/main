@@ -205,7 +205,7 @@ let site = null;
 let graphData = null;
 const expandedKnowledgeEpisodeSections = new Set();
 let homeKnowledgeQuery = '';
-let homeRecommendationSeed = 0;
+let homeRecommendationSeed = Math.floor(Math.random() * 1000000);
 let homeEpisodeCarouselIndex = 0;
 let sidebarKeywordQuery = '';
 let keywordIndexQuery = '';
@@ -1493,6 +1493,83 @@ function getRecommendedKeywords(limit = 3) {
 
 function referenceCount(item) {
   return item.episodes?.length || 0;
+}
+
+function referenceLatestEpisodeNumber(item) {
+  const episodeRefs = Array.isArray(item?.episodes) ? item.episodes : [];
+  const latest = episodeRefs
+    .map((entry) => episodeNumberFromId(typeof entry === 'string' ? entry : entry?.id))
+    .filter((value) => Number.isFinite(value))
+    .sort((a, b) => b - a)[0];
+  return latest || 0;
+}
+
+function seededHomeRandom(salt = 0) {
+  let seed = (Math.abs(homeRecommendationSeed) + salt) % 2147483647;
+  if (seed <= 0) seed += 2147483646;
+  return () => {
+    seed = (seed * 16807) % 2147483647;
+    return (seed - 1) / 2147483646;
+  };
+}
+
+function pickRecommendedReferences(items = [], limit = 3, salt = 0) {
+  const pool = [...items].filter((item) => item?.id && item?.name && item?.summary);
+  const picked = [];
+  const random = seededHomeRandom(salt + pool.length * 37);
+  const maxEpisodeNumber = Math.max(...pool.map((item) => referenceLatestEpisodeNumber(item)), 1);
+
+  while (pool.length && picked.length < limit) {
+    const weights = pool.map((item) => {
+      const referenceWeight = Math.pow(referenceCount(item) + 1, 1.12);
+      const recencyWeight = 1 + (referenceLatestEpisodeNumber(item) / maxEpisodeNumber) * 1.8;
+      return referenceWeight * recencyWeight;
+    });
+    const totalWeight = weights.reduce((sum, weight) => sum + weight, 0);
+    let threshold = random() * totalWeight;
+    let chosenIndex = 0;
+
+    for (let index = 0; index < pool.length; index += 1) {
+      threshold -= weights[index];
+      if (threshold <= 0) {
+        chosenIndex = index;
+        break;
+      }
+    }
+
+    picked.push(pool.splice(chosenIndex, 1)[0]);
+  }
+
+  return picked;
+}
+
+function getRecommendedConcepts(limit = 3) {
+  return pickRecommendedReferences(site?.concepts || [], limit, 101);
+}
+
+function getRecommendedModels(limit = 3) {
+  return pickRecommendedReferences(site?.models || [], limit, 307);
+}
+
+function renderHomeReferenceCards(type, items = []) {
+  return items.map((item) => `
+    <a class="list-item" href="${routeTo(`${type}/${item.id}`)}">
+      <h3>${escapeHtml(item.name)}</h3>
+      <p>${escapeHtml(item.summary)}</p>
+    </a>
+  `).join('');
+}
+
+function updateHomeReferenceRecommendations() {
+  const conceptContainer = document.getElementById('home-recommended-concepts');
+  if (conceptContainer) {
+    conceptContainer.innerHTML = renderHomeReferenceCards('concepts', getRecommendedConcepts(3));
+  }
+
+  const modelContainer = document.getElementById('home-recommended-models');
+  if (modelContainer) {
+    modelContainer.innerHTML = renderHomeReferenceCards('models', getRecommendedModels(3));
+  }
 }
 
 function isPersonKeyword(keyword) {
@@ -3015,6 +3092,7 @@ function rerollHomeRecommendations() {
     emptyMessage: '没有匹配的节目、概念、模型、人物或主题',
     idleTitle: '推荐关键词'
   });
+  updateHomeReferenceRecommendations();
 }
 
 function homeEpisodeVisibleCount() {
@@ -3769,7 +3847,7 @@ function renderHome(focusSectionId = '') {
       <div class="home-search-results-panel">
         <div class="search-subtitle-row">
           <p id="home-search-title" class="search-subtitle">推荐关键词</p>
-          <button id="home-search-reroll" class="search-reroll" type="button" aria-label="换一换推荐关键词">
+          <button id="home-search-reroll" class="search-reroll" type="button" aria-label="换一换首页推荐">
             <span class="search-reroll-icon" aria-hidden="true">↻</span>
             <span>换一换</span>
           </button>
@@ -3793,13 +3871,8 @@ function renderHome(focusSectionId = '') {
           <h2 class="section-title">概念入口</h2>
           <a class="section-note" href="#/concepts">查看全部概念</a>
         </div>
-        <div class="list">
-          ${site.concepts.slice(0, 3).map((concept) => `
-            <a class="list-item" href="${routeTo(`concepts/${concept.id}`)}">
-              <h3>${escapeHtml(concept.name)}</h3>
-              <p>${escapeHtml(concept.summary)}</p>
-            </a>
-          `).join('')}
+        <div id="home-recommended-concepts" class="list">
+          ${renderHomeReferenceCards('concepts', getRecommendedConcepts(3))}
         </div>
       </div>
       <div>
@@ -3807,13 +3880,8 @@ function renderHome(focusSectionId = '') {
           <h2 class="section-title">思想模型</h2>
           <a class="section-note" href="#/models">查看全部模型</a>
         </div>
-        <div class="list">
-          ${site.models.slice(0, 3).map((model) => `
-            <a class="list-item" href="${routeTo(`models/${model.id}`)}">
-              <h3>${escapeHtml(model.name)}</h3>
-              <p>${escapeHtml(model.summary)}</p>
-            </a>
-          `).join('')}
+        <div id="home-recommended-models" class="list">
+          ${renderHomeReferenceCards('models', getRecommendedModels(3))}
         </div>
       </div>
     </section>
