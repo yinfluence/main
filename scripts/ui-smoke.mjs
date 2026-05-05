@@ -659,6 +659,16 @@ async function runMobileEpisodeIndexChecks(client) {
     `location.hash.startsWith('#/episodes/EP') && Boolean(document.querySelector('.detail-header'))`,
     { timeoutMs: 4000, label: 'episode progress panel item opens episode detail directly' }
   );
+  assert(
+    await evaluate(client, `(() => {
+      const panel = document.querySelector('#section-progress-panel');
+      const wheel = document.querySelector('.section-progress');
+      return !document.body.classList.contains('section-progress-panel-open')
+        && (!panel || panel.hidden)
+        && (!wheel || !wheel.classList.contains('is-visible'));
+    })()`),
+    'Episode progress panel and wheel should disappear after opening an episode detail'
+  );
   await navigate(client, `${baseUrl}/#/episodes`, '#episode-index-search-toggle');
   await clickSelector(client, '#episode-index-search-toggle');
   await waitForCondition(

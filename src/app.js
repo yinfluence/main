@@ -1211,11 +1211,13 @@ sectionProgress?.addEventListener('click', () => {
 sectionProgressPanel?.addEventListener('click', (event) => {
   const target = event.target.closest('[data-section-progress-target]');
   if (!(target instanceof HTMLElement)) return;
+  event.preventDefault();
   const index = Number(target.dataset.sectionProgressTarget);
   const sections = getProgressSections();
   const section = sections[index];
   if (!(section instanceof HTMLElement)) return;
   closeSectionProgressPanel();
+  clearSectionProgressEffects();
   if (document.body.classList.contains('page-episode-index')) {
     const href = section.dataset.progressHref || section.getAttribute('href');
     if (href) {
@@ -3191,6 +3193,8 @@ function navigateToEpisodeFromElement(element) {
   const episodeCard = element?.closest?.('[data-episode-href]');
   const href = episodeCard?.dataset?.episodeHref;
   if (!href) return false;
+  closeSectionProgressPanel();
+  clearSectionProgressEffects();
   window.location.hash = href;
   return true;
 }
