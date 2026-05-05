@@ -27,6 +27,15 @@ const HOME_PLATFORM_LINKS = [
 const WEBSITE_LOG_ENTRIES = [
   {
     date: '2026-05-05',
+    title: '首页搜索栏吸顶与显隐边界修正',
+    items: [
+      '首页搜索栏在自身原始位置进入视口、或仍处于搜索区域吸顶范围内时会强制保持可见，不再出现顶部区域搜索栏消失的问题。',
+      '滚过搜索区域进入后续内容区后，搜索栏恢复原有行为：下滑和闲置会收起，上滑时临时显示。',
+      '补充紧凑桌面视口与滚动边界 UI 回归，覆盖顶部可见、滚过搜索区隐藏、上滑显示后闲置再隐藏三类场景。'
+    ]
+  },
+  {
+    date: '2026-05-05',
     title: '全量节目 YouTube 发布时间校准',
     items: [
       '全量检查 133 集节目 YouTube 链接，并从 YouTube 页面元数据写入每集真实公开视频发布时间。',
@@ -455,9 +464,8 @@ function setFloatingActionsExpanded(expanded) {
 function scheduleFloatingActionsAutoCollapse() {
   window.clearTimeout(floatingActionsIdleTimer);
   if (!floatingActionsExpanded) return;
-  const collapseDelay = isMobileViewport() && isHomeRoute() && window.scrollY < 72
-    ? 10000
-    : 1400;
+  if (isHomeRoute() && window.scrollY < 96) return;
+  const collapseDelay = 1400;
   floatingActionsIdleTimer = window.setTimeout(() => {
     if (!floatingActionsExpanded) return;
     if (document.body.classList.contains('section-progress-panel-open')) return;
@@ -988,17 +996,17 @@ function setupRevealAnimations() {
   const initialViewportBottom = window.innerHeight * 1.2;
 
   revealTargets.forEach((node, index) => {
-    node.classList.add('reveal-ready');
-    node.style.setProperty('--reveal-delay', `${Math.min(index * 36, 220)}ms`);
-
     const rect = node.getBoundingClientRect();
     const isInitiallyVisible = rect.top < initialViewportBottom && rect.bottom > 0;
     if (isInitiallyVisible) {
       node.classList.add('is-visible');
+      return;
     }
+    node.classList.add('reveal-ready');
+    node.style.setProperty('--reveal-delay', `${Math.min(index * 36, 220)}ms`);
   });
 
-  const deferredTargets = revealTargets.filter((node) => !node.classList.contains('is-visible'));
+  const deferredTargets = revealTargets.filter((node) => node.classList.contains('reveal-ready'));
   if (!deferredTargets.length) return;
 
   contentRevealObserver = new IntersectionObserver((entries) => {
@@ -2195,31 +2203,78 @@ function setupStickyToolbarBehavior(toolbar, config) {
     anchorBoundarySelector = '',
     revealAfterSelector = '',
     revealOffset = 0,
-    fixedOverlay = false
+    fixedOverlay = false,
+    keepVisibleWhenPinned = false
   } = config;
   let lastObservedScrollY = window.scrollY;
   let idleHideTimer = 0;
   let anchorScrollY = 0;
   let anchorVisibleBottom = 0;
   let revealAfterScrollY = 0;
+  let fixedOverlayActivated = false;
+  let naturalAnchorScrollY = 0;
 
   const isEngaged = () => toolbar.dataset.engaged === 'true' || toolbar.matches(':focus-within');
 
-  const measureAnchorScrollY = () => {
+  const getTranslateY = (transform) => {
+    if (!transform || transform === 'none') return 0;
+    const matrix3d = transform.match(/^matrix3d\((.+)\)$/);
+    if (matrix3d) {
+      const values = matrix3d[1].split(',').map((value) => Number.parseFloat(value.trim()));
+      return Number.isFinite(values[13]) ? values[13] : 0;
+    }
+    const matrix = transform.match(/^matrix\((.+)\)$/);
+    if (matrix) {
+      const values = matrix[1].split(',').map((value) => Number.parseFloat(value.trim()));
+      return Number.isFinite(values[5]) ? values[5] : 0;
+    }
+    return 0;
+  };
+
+  const getToolbarMetrics = () => {
     const rect = toolbar.getBoundingClientRect();
-    anchorScrollY = fixedOverlay ? 0 : window.scrollY + rect.top;
+    const style = getComputedStyle(toolbar);
+    return {
+      rect,
+      style,
+      layoutTop: rect.top - getTranslateY(style.transform)
+    };
+  };
+
+  const getAnchorVisibleBottom = (rect) => {
     const boundary = anchorBoundarySelector ? document.querySelector(anchorBoundarySelector) : null;
     if (boundary instanceof HTMLElement) {
       const boundaryRect = boundary.getBoundingClientRect();
       const boundaryPadding = isMobileViewport() ? 28 : 42;
-      anchorVisibleBottom = window.scrollY + boundaryRect.bottom - boundaryPadding;
-    } else {
-      anchorVisibleBottom = fixedOverlay ? 0 : anchorScrollY + rect.height + (isMobileViewport() ? 44 : 56);
+      return window.scrollY + boundaryRect.bottom - boundaryPadding;
     }
+    return fixedOverlay ? 0 : naturalAnchorScrollY + rect.height + (isMobileViewport() ? 44 : 56);
+  };
+
+  const refreshNaturalAnchorScrollY = () => {
+    if (fixedOverlay) {
+      naturalAnchorScrollY = 0;
+      return;
+    }
+    const { style, layoutTop } = getToolbarMetrics();
+    const stickyTop = Number.parseFloat(style.top) || 0;
+    if (!naturalAnchorScrollY || window.scrollY <= minimumHideY || layoutTop > stickyTop + 2) {
+      naturalAnchorScrollY = Math.max(window.scrollY + layoutTop, 0);
+    }
+  };
+
+  const measureAnchorScrollY = () => {
+    const { rect } = getToolbarMetrics();
+    refreshNaturalAnchorScrollY();
+    anchorScrollY = naturalAnchorScrollY;
+    anchorVisibleBottom = getAnchorVisibleBottom(rect);
     const revealTarget = revealAfterSelector ? document.querySelector(revealAfterSelector) : null;
     if (revealTarget instanceof HTMLElement) {
       const revealRect = revealTarget.getBoundingClientRect();
-      revealAfterScrollY = Math.max(window.scrollY + revealRect.top - revealOffset, 0);
+      const fixedRevealOffset = fixedOverlay
+        ? Math.max(revealOffset, window.innerHeight - rect.height - 96)
+        : revealOffset;
+      revealAfterScrollY = Math.max(window.scrollY + revealRect.top - fixedRevealOffset, 0);
       return;
     }
     revealAfterScrollY = 0;
@@ -2230,15 +2285,33 @@ function setupStickyToolbarBehavior(toolbar, config) {
     idleHideTimer = 0;
   };
 
+  const isProtectedVisiblePosition = () => {
+    if (!keepVisibleWhenPinned) return false;
+    const { rect, style } = getToolbarMetrics();
+    const stickyTop = Number.parseFloat(style.top) || 0;
+    const toolbarHeight = toolbar.offsetHeight || rect.height;
+    refreshNaturalAnchorScrollY();
+    const naturalTop = naturalAnchorScrollY;
+    const naturalBottom = naturalTop + toolbarHeight;
+    const boundaryBottom = getAnchorVisibleBottom(rect);
+    const naturalSlotVisible = naturalBottom > window.scrollY && naturalTop < window.scrollY + window.innerHeight;
+    const pinnedWithinSearchBoundary = window.scrollY > minimumHideY
+      && window.scrollY >= naturalTop - stickyTop - 2
+      && window.scrollY <= boundaryBottom;
+    return naturalSlotVisible || pinnedWithinSearchBoundary;
+  };
+
   const scheduleIdleHide = () => {
     clearIdleHideTimer();
     if (isEngaged()) return;
+    if (isProtectedVisiblePosition()) return;
     if (toolbar.classList.contains('is-hidden-by-scroll')) return;
     if (window.scrollY <= minimumHideY) return;
     if (window.scrollY < revealAfterScrollY) return;
     if (window.scrollY <= anchorVisibleBottom) return;
     idleHideTimer = window.setTimeout(() => {
       if (isEngaged()) return;
+      if (isProtectedVisiblePosition()) return;
       if (window.scrollY <= minimumHideY) return;
       if (window.scrollY < revealAfterScrollY) return;
       if (window.scrollY <= anchorVisibleBottom) return;
@@ -2251,15 +2324,35 @@ function setupStickyToolbarBehavior(toolbar, config) {
   const syncToolbarState = () => {
     measureAnchorScrollY();
     const currentScrollY = window.scrollY;
+    const beforeRevealGate = !isEngaged() && currentScrollY < revealAfterScrollY;
+
+    if (fixedOverlay) {
+      if (isEngaged() || currentScrollY > 24) {
+        fixedOverlayActivated = true;
+      }
+      const shouldHide = !fixedOverlayActivated && !isEngaged();
+      if (!shouldHide) {
+        clearIdleHideTimer();
+      }
+      toolbar.classList.remove('is-hidden-by-scroll', 'is-ghost');
+      toolbar.classList.toggle('is-engaged', isEngaged());
+      toolbar.style.setProperty(opacityVariable, shouldHide ? '0' : '1');
+      toolbar.style.pointerEvents = shouldHide ? 'none' : 'auto';
+      lastObservedScrollY = currentScrollY;
+      return;
+    }
+
     const delta = currentScrollY - lastObservedScrollY;
     const hideThreshold = isMobileViewport() ? 18 : 22;
     const revealThreshold = isMobileViewport() ? 10 : 14;
     const returnToAnchorThreshold = isMobileViewport() ? 28 : 36;
     const canHide = currentScrollY > minimumHideY && !isEngaged();
+    const isProtectedVisible = isProtectedVisiblePosition();
     let shouldHide = toolbar.classList.contains('is-hidden-by-scroll');
-    const beforeRevealGate = !isEngaged() && currentScrollY < revealAfterScrollY;
 
-    if (beforeRevealGate) {
+    if (isProtectedVisible) {
+      shouldHide = false;
+    } else if (beforeRevealGate) {
       shouldHide = true;
     } else if (currentScrollY <= Math.max(anchorVisibleBottom, anchorScrollY - returnToAnchorThreshold)) {
       shouldHide = false;
@@ -2271,7 +2364,7 @@ function setupStickyToolbarBehavior(toolbar, config) {
       shouldHide = false;
     }
 
-    if (shouldHide || isEngaged() || currentScrollY <= minimumHideY) {
+    if (shouldHide || isProtectedVisible || isEngaged() || currentScrollY <= minimumHideY) {
       clearIdleHideTimer();
     }
 
@@ -2280,7 +2373,7 @@ function setupStickyToolbarBehavior(toolbar, config) {
     toolbar.classList.toggle('is-ghost', !beforeRevealGate && !shouldHide && !isEngaged() && currentScrollY > minimumHideY);
     toolbar.style.setProperty(opacityVariable, shouldHide ? '0' : (isEngaged() || currentScrollY <= minimumHideY ? '1' : '0.86'));
 
-    if (!shouldHide && !isEngaged() && currentScrollY > minimumHideY) {
+    if (!shouldHide && !isProtectedVisible && !isEngaged() && currentScrollY > minimumHideY) {
       scheduleIdleHide();
     }
 
@@ -2321,6 +2414,9 @@ function setupStickyToolbarBehavior(toolbar, config) {
 
   measureAnchorScrollY();
   syncToolbarState();
+  signal.addEventListener('abort', () => {
+    clearIdleHideTimer();
+  });
 }
 
 function setupEpisodeToolbarBehavior(toolbar) {
@@ -2474,6 +2570,7 @@ function setupHomeSearchToolbarBehavior(toolbar) {
     revealAfterSelector: useFloatOnlyMobileSearch ? '.home-search-section' : '',
     revealOffset: useFloatOnlyMobileSearch ? 72 : 0,
     fixedOverlay: useFloatOnlyMobileSearch,
+    keepVisibleWhenPinned: true,
     assignController(controller) {
       homeSearchToolbarController = controller;
     }
@@ -5224,13 +5321,16 @@ function renderRoute() {
     renderNotFound('页面不存在');
   }
 
+  if (!preRenderTopReset && !routeRestore) {
+    scrollWindowInstantly(0, 0);
+  }
   setupRevealAnimations();
   renderSectionProgress();
   closeSidebar();
   window.clearTimeout(sectionSnapTimer);
   suspendSnapUntil = Date.now() + 420;
   lastSnapTargetTop = -1;
-  if (!preRenderTopReset) {
+  if (!preRenderTopReset && routeRestore) {
     scrollWindowInstantly(0, 0);
   }
   lastScrollY = 0;

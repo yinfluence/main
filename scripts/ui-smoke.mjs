@@ -335,6 +335,34 @@ async function runDesktopChecks(client) {
     await evaluate(client, `!document.querySelector('#home-episodes .home-episode-card .card-kicker')?.textContent.includes('会员')`),
     'Desktop home kicker should keep curated/new status instead of member text'
   );
+  assert(
+    await evaluate(client, `(() => {
+      const row = document.querySelector('.home-search-results-panel .search-subtitle-row');
+      if (!row) return false;
+      const panelRect = document.querySelector('.home-search-results-panel')?.getBoundingClientRect();
+      const titleRect = document.querySelector('#home-search-title')?.getBoundingClientRect();
+      return Boolean(panelRect && titleRect && titleRect.left - panelRect.left >= 18);
+    })()`),
+    'Homepage recommendation title should keep a comfortable left inset inside the panel'
+  );
+  assert(
+    await evaluate(client, `(() => {
+      const title = document.querySelector('#home-search-title');
+      const suggestion = document.querySelector('#home-search-results .search-suggestion span:first-child');
+      if (!title || !suggestion) return false;
+      const titleStyle = getComputedStyle(title);
+      const suggestionStyle = getComputedStyle(suggestion);
+      const titleMarkerStyle = getComputedStyle(title, '::before');
+      const titleLetterSpacing = titleStyle.letterSpacing === 'normal'
+        ? 0
+        : Number.parseFloat(titleStyle.letterSpacing);
+      return Number.parseFloat(titleStyle.fontSize) >= Number.parseFloat(suggestionStyle.fontSize) + 2
+        && Number.parseFloat(titleStyle.fontWeight) >= 850
+        && titleLetterSpacing === 0
+        && Number.parseFloat(titleMarkerStyle.width) >= 3;
+    })()`),
+    'Homepage recommendation title should read as a strong section heading, not another keyword row'
+  );
 
   const before = await getText(client, '#home-episodes .home-episode-card .card-kicker');
   await clickSelector(client, '#home-episodes-next');
@@ -362,7 +390,121 @@ async function runDesktopChecks(client) {
 
   await navigate(client, `${baseUrl}/#/`, '#home-episodes .home-episode-card');
   await captureScreenshot(client, 'desktop-home.png');
+  await sleep(1700);
+  assert(
+    await evaluate(client, `(() => {
+      const dock = document.querySelector('.floating-actions');
+      const search = document.querySelector('.floating-actions-menu .floating-episode-search');
+      if (!dock || !search || window.scrollY > 96) return false;
+      const rect = search.getBoundingClientRect();
+      const style = getComputedStyle(search);
+      return !dock.classList.contains('is-collapsed')
+        && rect.width >= 40
+        && rect.height >= 40
+        && Number(style.opacity) > 0.95
+        && style.pointerEvents !== 'none';
+    })()`),
+    'Desktop fixed search action should remain visible after homepage top settles'
+  );
+  await setViewport(client, { width: 794, height: 386, mobile: false });
+  await navigate(client, `${baseUrl}/#/`, '.home-search-toolbar');
+  await evaluate(client, `(() => {
+    const root = document.documentElement;
+    const previousScrollBehavior = root.style.scrollBehavior;
+    root.style.scrollBehavior = 'auto';
+    window.scrollTo(0, 0);
+    window.dispatchEvent(new Event('scroll'));
+    root.style.scrollBehavior = previousScrollBehavior;
+    return true;
+  })()`);
+  await sleep(900);
+  assert(
+    await evaluate(client, `(() => {
+      const toolbar = document.querySelector('.home-search-toolbar');
+      if (!toolbar) return false;
+      const rect = toolbar.getBoundingClientRect();
+      const style = getComputedStyle(toolbar);
+      return !toolbar.classList.contains('is-hidden-by-scroll')
+        && Number(style.opacity) >= 0.95
+        && style.pointerEvents !== 'none'
+        && rect.top < window.innerHeight
+        && rect.bottom > 0;
+    })()`),
+    'Compact desktop home top should still show the homepage search toolbar'
+  );
+  await evaluate(client, `(() => {
+    const root = document.documentElement;
+    const previousScrollBehavior = root.style.scrollBehavior;
+    root.style.scrollBehavior = 'auto';
+    window.scrollTo(0, 960);
+    window.dispatchEvent(new Event('scroll'));
+    root.style.scrollBehavior = previousScrollBehavior;
+    return true;
+  })()`);
+  await waitForCondition(
+    client,
+    `(() => {
+      const toolbar = document.querySelector('.home-search-toolbar');
+      const searchSection = document.querySelector('.home-search-section');
+      if (!toolbar) return false;
+      const style = getComputedStyle(toolbar);
+      return searchSection?.getBoundingClientRect().bottom < 0
+        && toolbar.classList.contains('is-hidden-by-scroll')
+        && style.pointerEvents === 'none';
+    })()`,
+    { timeoutMs: 4000, label: 'desktop home search toolbar hides below search area' }
+  );
+  await evaluate(client, `(() => {
+    const root = document.documentElement;
+    const previousScrollBehavior = root.style.scrollBehavior;
+    root.style.scrollBehavior = 'auto';
+    window.scrollTo(0, Math.max(window.scrollY - 140, 0));
+    window.dispatchEvent(new Event('scroll'));
+    root.style.scrollBehavior = previousScrollBehavior;
+    return true;
+  })()`);
+  await waitForCondition(
+    client,
+    `(() => {
+      const toolbar = document.querySelector('.home-search-toolbar');
+      const searchSection = document.querySelector('.home-search-section');
+      if (!toolbar) return false;
+      const style = getComputedStyle(toolbar);
+      return searchSection?.getBoundingClientRect().bottom < 0
+        && !toolbar.classList.contains('is-hidden-by-scroll')
+        && Number(style.opacity) >= 0.45
+        && style.pointerEvents !== 'none';
+    })()`,
+    { timeoutMs: 2000, label: 'desktop home search toolbar reappears while scrolling upward below search area' }
+  );
+  await waitForCondition(
+    client,
+    `(() => {
+      const toolbar = document.querySelector('.home-search-toolbar');
+      const searchSection = document.querySelector('.home-search-section');
+      if (!toolbar) return false;
+      const style = getComputedStyle(toolbar);
+      return searchSection?.getBoundingClientRect().bottom < 0
+        && toolbar.classList.contains('is-hidden-by-scroll')
+        && style.pointerEvents === 'none';
+    })()`,
+    { timeoutMs: 4000, label: 'desktop home search toolbar idle-hides again below fixed search area' }
+  );
+  await setViewport(client, { width: 1212, height: 1400, mobile: false });
+  await navigate(client, `${baseUrl}/#/`, '#home-episodes .home-episode-card');
   await runKnowledgeDetailChecks(client);
+
+  await navigate(client, `${baseUrl}/#/models`, '.detail-header');
+  assert(
+    await evaluate(client, `(() => {
+      const header = document.querySelector('.detail-header');
+      const title = document.querySelector('.detail-header .detail-title');
+      return Boolean(header && title)
+        && title.textContent?.trim() === '思想模型'
+        && !header.classList.contains('reveal-ready');
+    })()`),
+    'Model index header should render immediately without reveal flicker'
+  );
 
   await navigate(client, `${baseUrl}/#/episodes/EP124`, '.detail-header');
   await waitForCondition(
@@ -447,6 +589,46 @@ async function runMobileChecks(client) {
   );
 
   await captureScreenshot(client, 'mobile-home.png');
+  await evaluate(client, `(() => {
+    const target = document.querySelector('.home-search-section');
+    const targetTop = window.scrollY + target.getBoundingClientRect().top;
+    window.scrollTo(0, Math.max(targetTop - window.innerHeight + 190, 0));
+    window.dispatchEvent(new Event('scroll'));
+    return true;
+  })()`);
+  await sleep(180);
+  assert(
+    await evaluate(client, `(() => {
+      const toolbar = document.querySelector('.home-search-toolbar-float-only');
+      if (!toolbar) return false;
+      const rect = toolbar.getBoundingClientRect();
+      const style = getComputedStyle(toolbar);
+      return !toolbar.classList.contains('is-hidden-by-scroll')
+        && Number(style.opacity) > 0.95
+        && style.pointerEvents !== 'none'
+        && rect.top >= 0
+        && rect.top <= 24;
+    })()`),
+    'Mobile fixed home search bar should stay visible once it reaches the fixed position'
+  );
+  await evaluate(client, `(() => {
+    window.scrollTo(0, Math.max(window.scrollY - 180, 0));
+    window.dispatchEvent(new Event('scroll'));
+    return true;
+  })()`);
+  await sleep(180);
+  assert(
+    await evaluate(client, `(() => {
+      const toolbar = document.querySelector('.home-search-toolbar-float-only');
+      if (!toolbar) return false;
+      const style = getComputedStyle(toolbar);
+      return window.scrollY > 24
+        && !toolbar.classList.contains('is-hidden-by-scroll')
+        && Number(style.opacity) > 0.95
+        && style.pointerEvents !== 'none';
+    })()`),
+    'Mobile fixed home search bar should not flicker off while scrolling back upward before the page top'
+  );
   await runMobileEpisodeIndexChecks(client);
   await navigate(client, `${baseUrl}/#/concepts/credential-rent`, '.detail-header');
   await waitForCondition(
