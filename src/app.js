@@ -26,6 +26,15 @@ const HOME_PLATFORM_LINKS = [
 ];
 const WEBSITE_LOG_ENTRIES = [
   {
+    date: '2026-05-06',
+    title: '节目详情正文 EP 内链修复',
+    items: [
+      '节目详情页的摘要、话题折叠项、核心观点和延展区统一接入 EP 内联链接渲染，正文里出现 EP132、EP057 这类节目编号时可以直接跳转到对应节目。',
+      '网页日志条目和关键词分组说明也同步支持 EP 内链，继续保留整张节目卡片里的纯文本摘要，避免卡片链接里嵌套链接导致点击冲突。',
+      'SOP 增加节目引用内链规范：所有非卡片正文里的 EPxxx 引用必须可点击，构建后要确认 docs 站点同步更新。'
+    ]
+  },
+  {
     date: '2026-05-05',
     title: '首页搜索栏吸顶与显隐边界修正',
     items: [
@@ -3075,7 +3084,7 @@ function renderKeywordGroup(title, keywords, options = {}) {
         <span class="keyword-group-count">${keywords.length}</span>
       </summary>
       <div class="accordion-content">
-        ${note ? `<p class="detail-copy">${escapeHtml(note)}</p>` : ''}
+        ${note ? `<p class="detail-copy">${renderLinkedEpisodeText(note)}</p>` : ''}
         ${renderKeywordList(keywords)}
       </div>
     </details>
@@ -3397,7 +3406,7 @@ function renderWebsiteLog() {
               <p class="inline-label">${escapeHtml(entry.date)}</p>
               <h3>${escapeHtml(entry.title)}</h3>
               <ul>
-                ${entry.items.map((item) => `<li>${escapeHtml(item)}</li>`).join('')}
+                ${entry.items.map((item) => `<li>${renderLinkedEpisodeText(item)}</li>`).join('')}
               </ul>
             </article>
           `).join('')}
@@ -4592,24 +4601,24 @@ function renderEpisodeDetail(id) {
           <a class="back-link secondary" href="#/">返回首页</a>
         </div>
         <h1 class="detail-title">${escapeHtml(episode.id)}｜${escapeHtml(displayEpisodeTitle(episode.title))}${renderEpisodeFreshBadge(episode)}</h1>
-        <p class="detail-summary">${escapeHtml(episode.summary)}</p>
+        <p class="detail-summary">${renderLinkedEpisodeText(episode.summary)}</p>
         ${renderEpisodeHeaderMeta(episode)}
       </div>
 
       <section class="detail-section">
         <h2>话题</h2>
-        ${accordionItem('事件背景', `<p>${escapeHtml(episode.topic.background)}</p>`, true)}
-        ${accordionItem('核心矛盾', `<ul>${episode.topic.conflicts.map((item) => `<li>${escapeHtml(item)}</li>`).join('')}</ul>`)}
-        ${accordionItem('讨论边界', `<ul>${episode.topic.boundaries.map((item) => `<li>${escapeHtml(item)}</li>`).join('')}</ul>`)}
-        ${accordionItem('机制推演', `<p>${escapeHtml(episode.topic.mechanism)}</p>`)}
-        ${accordionItem('延展话题', `<ul>${episode.topic.extensions.map((item) => `<li>${escapeHtml(item)}</li>`).join('')}</ul>`)}
+        ${accordionItem('事件背景', renderParagraphText(episode.topic.background), true)}
+        ${accordionItem('核心矛盾', renderLinkedEpisodeList(episode.topic.conflicts))}
+        ${accordionItem('讨论边界', renderLinkedEpisodeList(episode.topic.boundaries))}
+        ${accordionItem('机制推演', renderParagraphText(episode.topic.mechanism))}
+        ${accordionItem('延展话题', renderLinkedEpisodeList(episode.topic.extensions))}
       </section>
 
       <section class="detail-section">
         <h2>核心观点</h2>
         ${episode.viewpoints.map((viewpoint, index) => accordionItem(
           viewpoint.title,
-          `<p>${escapeHtml(viewpoint.body)}</p>`,
+          renderParagraphText(viewpoint.body),
           index === 0
         )).join('')}
       </section>
@@ -4647,7 +4656,7 @@ function renderEpisodeDetail(id) {
 
       <section class="detail-section">
         <h2>延展</h2>
-        <ul>${episode.extensions.map((item) => `<li>${escapeHtml(item)}</li>`).join('')}</ul>
+        ${renderLinkedEpisodeList(episode.extensions)}
         ${hasTailLinks ? `
           ${(episode.people || []).length ? `<h3>关联人物</h3>${relatedPeopleChips}` : ''}
           ${(episode.themes || []).length ? `<h3>关联主题</h3>${relatedThemeChips}` : ''}
@@ -4691,6 +4700,10 @@ function renderThemesIndex() {
 }
 
 function renderDetailList(items = []) {
+  return renderLinkedEpisodeList(items);
+}
+
+function renderLinkedEpisodeList(items = []) {
   if (!items.length) return '<p class="subtle">待补充。</p>';
   return `<ul>${items.map((item) => `<li>${renderLinkedEpisodeText(item)}</li>`).join('')}</ul>`;
 }
