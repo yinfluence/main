@@ -36,6 +36,7 @@ Issue types:
   missing_refs          topic.extensions has no valid EPxxx reference.
   bad_heading           topic.extensions heading is not a short, concrete "关于xxx" title.
   duplicate_heading     topic.extensions repeats the same heading inside one episode.
+  extension_count       topic.extensions must contain 2-5 theme lines per episode.
   single_ref_extension  topic.extensions item cites fewer than two external episodes.
   no_related_episodes  topic.extensions exists but relatedEpisodes is empty.
   orphan_related       relatedEpisodes contains an EP that is not explained in topic.extensions.
@@ -101,8 +102,16 @@ const abstractHeadingTerms = [
   '收费样板',
   '区域拒止',
   '内容流水线',
+  '内容工业',
   '苦难美颜',
-  '平台遮蔽'
+  '平台遮蔽',
+  '女性接盘',
+  '资产信托',
+  '东南亚结构',
+  '太空竞赛结构',
+  '欧洲拆雷',
+  '地产人物',
+  '潘张'
 ];
 
 function auditHeading(value) {
@@ -232,6 +241,14 @@ function auditEpisode(episode, validIds) {
 
   if (!topicExtensions.length) {
     return issues;
+  }
+
+  if (topicExtensions.length < 2 || topicExtensions.length > 5) {
+    issues.push({
+      id: episode.id,
+      type: 'extension_count',
+      detail: `topic.extensions has ${topicExtensions.length} item(s); expected 2-5 theme lines`
+    });
   }
 
   const seenHeadings = new Set();
