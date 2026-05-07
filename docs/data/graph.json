@@ -2,14 +2,14 @@
   "meta": {
     "title": "颖响力知识图谱",
     "subtitle": "节目、概念、模型、人物、主题之间的可视化连接网络",
-    "nodeCount": 468,
-    "linkCount": 906,
+    "nodeCount": 475,
+    "linkCount": 928,
     "typeCounts": {
-      "model": 58,
-      "episode": 133,
-      "concept": 126,
-      "theme": 90,
-      "person": 61
+      "model": 59,
+      "episode": 134,
+      "concept": 129,
+      "theme": 91,
+      "person": 62
     }
   },
   "nodes": [
@@ -55,7 +55,7 @@
       "route": "episodes/EP132",
       "summary": "本期接续 EP057 的 Manus 线索，不再重点复述公司和交易本身，而是讨论 Meta 收购 Manus 被监管否决之后，对中国草根创业者意味着什么。节目承认叫停交易有明确法律依据，但核心判断是：过去三十年支撑无背景年轻人从零到一的美元基金、全球市场和赴美上市/海外并购退出通道正在被堵死；而地方国资基金的考核逻辑更重视国有资产不流失、招商落地、就业税收和可见退出，天然不会为纯软件、早期、无背景的草根项目承担风险。结果是年轻人会更理性地转向考研考公和体制稳定，创新资源从市场能力转向行政关系，真正的颠覆式创新被挤出，只剩依附式创新和表演式创新。",
       "status": "curated",
-      "degree": 16
+      "degree": 17
     },
     {
       "id": "concept:hidden-debt",
@@ -88,6 +88,17 @@
       "route": "models/feedback-loops",
       "summary": "反馈回路模型解释老板偏好、顾问强化和组织沉默如何形成自我强化的错误循环。",
       "status": null,
+      "degree": 14
+    },
+    {
+      "id": "episode:EP128",
+      "key": "EP128",
+      "label": "EP128",
+      "fullLabel": "EP128 · 广告越拍越丑的真相：中国社会正在悄悄发生一场大规模“系统回滚”！泛体制人群正在重构整个社会的底层逻辑。【EP128】",
+      "type": "episode",
+      "route": "episodes/EP128",
+      "summary": "本期从汽车广告和品牌叙事越来越“老干部风”切入，判断广告审美变化背后不是广告公司退步，而是核心消费人群正在向公务员、事业编、国企及相关岗位等泛体制人群迁移。节目把这种变化概括为“系统回滚”：社会从市场化打拼、能力赚钱和增长想象，退回到以稳定身份、财政兜底和体制位置为核心的分层逻辑。它进一步讨论中产门槛收窄、身份压倒财富、代际闭环形成，以及创新活力降温、三四线城市空心化和人情关系重新压倒规则关系等后果。",
+      "status": "curated",
       "degree": 14
     },
     {
@@ -135,13 +146,13 @@
       "degree": 13
     },
     {
-      "id": "episode:EP128",
-      "key": "EP128",
-      "label": "EP128",
-      "fullLabel": "EP128 · 广告越拍越丑的真相：中国社会正在悄悄发生一场大规模“系统回滚”！泛体制人群正在重构整个社会的底层逻辑。【EP128】",
+      "id": "episode:EP129",
+      "key": "EP129",
+      "label": "EP129",
+      "fullLabel": "EP129 · 华谊破产、爱奇艺没落，100万审批红线撕开的真相：我们正在从观众，变成垃圾场里的淘金者。【EP129】",
       "type": "episode",
-      "route": "episodes/EP128",
-      "summary": "本期从汽车广告和品牌叙事越来越“老干部风”切入，判断广告审美变化背后不是广告公司退步，而是核心消费人群正在向公务员、事业编、国企及相关岗位等泛体制人群迁移。节目把这种变化概括为“系统回滚”：社会从市场化打拼、能力赚钱和增长想象，退回到以稳定身份、财政兜底和体制位置为核心的分层逻辑。它进一步讨论中产门槛收窄、身份压倒财富、代际闭环形成，以及创新活力降温、三四线城市空心化和人情关系重新压倒规则关系等后果。",
+      "route": "episodes/EP129",
+      "summary": "本期从华谊兄弟被申请破产和爱奇艺长视频业务失速谈起，反对把问题简单归因为乱投资、商誉爆雷或长视频成本高。节目真正要拆的是内容行业的制度成本落差：高合规成本的电影、电视剧和重点网剧要走完整备案审查流程，低合规成本的普通微短剧则更依赖平台自审，可以快速生产、上线和试错。节目借凯文·凯利《失控》和“蒙娜丽莎”比喻说明，短剧与 AI 短剧的繁荣不是单纯自由创作的胜利，而是平台用海量低质生产和用户注意力筛出少数可传播作品的失控逻辑。",
       "status": "curated",
       "degree": 13
     },
@@ -157,6 +168,17 @@
       "degree": 13
     },
     {
+      "id": "episode:EP134",
+      "key": "EP134",
+      "label": "EP134",
+      "fullLabel": "EP134 · 躺平不是摆烂，是当代年轻人最隐蔽的弱者武器！主动内移民到躺平国？【EP134】",
+      "type": "episode",
+      "route": "episodes/EP134",
+      "summary": "本期从劳动节前后“反躺平”宣传升温切入，讨论躺平为什么不只是年轻人摆烂，而是一种更隐蔽的退出式抵抗。节目把躺平解释成“内移民”：年轻人不进行地理迁移，而是从主流劳动赛道、消费循环、身份规训和线下关系中主动绝缘，形成一个治理系统难以穿透的“躺平国”。它真正引发焦虑的地方，不在于个体懒惰，而在于网格化、数据化和前置预判体系突然遇到一群没有代表、没有组织、没有数据反馈、也没有可谈判对象的人。",
+      "status": "curated",
+      "degree": 13
+    },
+    {
       "id": "episode:EP120",
       "key": "EP120",
       "label": "EP120",
@@ -164,17 +186,6 @@
       "type": "episode",
       "route": "episodes/EP120",
       "summary": "本期围绕匈牙利大选展开，核心判断不是单纯的选举轮替，而是欧洲内部一次典型的“拆雷”成功。节目认为，这场胜利首先是年轻选民推动下的民意回归，其次才是地缘政治牌局里的再分配：欧盟拆掉了内部的一颗雷，俄罗斯和特朗普阵营则失去了一张能持续撬动欧洲裂缝的牌。",
-      "status": "curated",
-      "degree": 12
-    },
-    {
-      "id": "episode:EP129",
-      "key": "EP129",
-      "label": "EP129",
-      "fullLabel": "EP129 · 华谊破产、爱奇艺没落，100万审批红线撕开的真相：我们正在从观众，变成垃圾场里的淘金者。【EP129】",
-      "type": "episode",
-      "route": "episodes/EP129",
-      "summary": "本期从华谊兄弟被申请破产和爱奇艺长视频业务失速谈起，反对把问题简单归因为乱投资、商誉爆雷或长视频成本高。节目真正要拆的是内容行业的制度成本落差：高合规成本的电影、电视剧和重点网剧要走完整备案审查流程，低合规成本的普通微短剧则更依赖平台自审，可以快速生产、上线和试错。节目借凯文·凯利《失控》和“蒙娜丽莎”比喻说明，短剧与 AI 短剧的繁荣不是单纯自由创作的胜利，而是平台用海量低质生产和用户注意力筛出少数可传播作品的失控逻辑。",
       "status": "curated",
       "degree": 12
     },
@@ -245,6 +256,17 @@
       "degree": 10
     },
     {
+      "id": "episode:EP006",
+      "key": "EP006",
+      "label": "EP006",
+      "fullLabel": "EP006 · 张雪峰被封背后真相，张彪子与户子被封结果有什么区别？",
+      "type": "episode",
+      "route": "episodes/EP006",
+      "summary": "本期延续 EP005，但把张雪峰放到完全不同的位置上理解。节目借《西游记》里“灵感大王”的比喻，认为张雪峰并不是需要被彻底抹去的对手，而是一个擅长贩卖预期、替更大体系完成疏导和分流功能的中间人，因此他更像一次越位后的暂时性整肃，而不是永久消失。",
+      "status": "curated",
+      "degree": 10
+    },
+    {
       "id": "episode:EP130",
       "key": "EP130",
       "label": "EP130",
@@ -286,17 +308,6 @@
       "route": "models/narrative-leverage",
       "summary": "通过一个足够大的故事，把原本有限的资源、信用和注意力撬成更大的资本、销量或支持度。",
       "status": null,
-      "degree": 9
-    },
-    {
-      "id": "episode:EP006",
-      "key": "EP006",
-      "label": "EP006",
-      "fullLabel": "EP006 · 张雪峰被封背后真相，张彪子与户子被封结果有什么区别？",
-      "type": "episode",
-      "route": "episodes/EP006",
-      "summary": "本期延续 EP005，但把张雪峰放到完全不同的位置上理解。节目借《西游记》里“灵感大王”的比喻，认为张雪峰并不是需要被彻底抹去的对手，而是一个擅长贩卖预期、替更大体系完成疏导和分流功能的中间人，因此他更像一次越位后的暂时性整肃，而不是永久消失。",
-      "status": "curated",
       "degree": 9
     },
     {
@@ -509,6 +520,17 @@
       "degree": 8
     },
     {
+      "id": "episode:EP005",
+      "key": "EP005",
+      "label": "EP005",
+      "fullLabel": "EP005 · 户晨风，张雪峰被封禁的底层逻辑是什么？有什么区别？",
+      "type": "episode",
+      "route": "episodes/EP005",
+      "summary": "本期把户晨风的永久性封禁理解成一次“破壁式表达”被强力中断。节目认为，户晨风真正危险的地方，不是喊了多少激进口号，而是他用直播和连线这种普通年轻人最能感知的形式，把原本隔着信息茧房的阶层差异、生活落差和不满情绪直接具象化了。",
+      "status": "curated",
+      "degree": 8
+    },
+    {
       "id": "episode:EP008",
       "key": "EP008",
       "label": "EP008",
@@ -582,6 +604,17 @@
       "type": "episode",
       "route": "episodes/EP030",
       "summary": "节目把医生降薪放回“三明医改”的大框架里，认为其核心不是医疗理想，而是通过标准化降标、药品压价和年薪制来实现医保结余，但这套机制一旦脱离高治理能力地区就会迅速走样。",
+      "status": "curated",
+      "degree": 8
+    },
+    {
+      "id": "episode:EP032",
+      "key": "EP032",
+      "label": "EP032",
+      "fullLabel": "EP032 · 峰哥全网禁关，互联网三大理论会消失吗？全新视角拆解民间三论。",
+      "type": "episode",
+      "route": "episodes/EP032",
+      "summary": "本期围绕“峰哥亡命天涯”遭遇平台清理，讨论互联网上被称作“民间三论”的话语空间会不会随账号和切片一起消失。节目主线不是替这些理论做学理辩护，而是把它们看成经济压力、性别焦虑、阶层落差和平台分发共同催生的民间解释包：平台可以压住符号和传播入口，却很难直接消灭这些理论背后被感知到的社会情绪。",
       "status": "curated",
       "degree": 8
     },
@@ -806,17 +839,6 @@
       "degree": 7
     },
     {
-      "id": "episode:EP005",
-      "key": "EP005",
-      "label": "EP005",
-      "fullLabel": "EP005 · 户晨风，张雪峰被封禁的底层逻辑是什么？有什么区别？",
-      "type": "episode",
-      "route": "episodes/EP005",
-      "summary": "本期把户晨风的永久性封禁理解成一次“破壁式表达”被强力中断。节目认为，户晨风真正危险的地方，不是喊了多少激进口号，而是他用直播和连线这种普通年轻人最能感知的形式，把原本隔着信息茧房的阶层差异、生活落差和不满情绪直接具象化了。",
-      "status": "curated",
-      "degree": 7
-    },
-    {
       "id": "episode:EP009",
       "key": "EP009",
       "label": "EP009",
@@ -868,17 +890,6 @@
       "type": "episode",
       "route": "episodes/EP031",
       "summary": "本期不是在问碧桂园能不能靠重组活下来，而是在问债权人到底还能拿回什么。节目借境外重组方案指出：台面上的债务数字只是前台，真正把碧桂园拖进泥潭的，是高杠杆扩张、森林城市这类跨境沉没项目，以及大量留在体外平台和合作链条里的隐形窟窿。",
-      "status": "curated",
-      "degree": 7
-    },
-    {
-      "id": "episode:EP032",
-      "key": "EP032",
-      "label": "EP032",
-      "fullLabel": "EP032 · 峰哥全网禁关，互联网三大理论会消失吗？全新视角拆解民间三论。",
-      "type": "episode",
-      "route": "episodes/EP032",
-      "summary": "本期围绕“峰哥亡命天涯”遭遇平台清理，讨论互联网上被称作“民间三论”的话语空间会不会随账号和切片一起消失。节目主线不是替这些理论做学理辩护，而是把它们看成经济压力、性别焦虑、阶层落差和平台分发共同催生的民间解释包：平台可以压住符号和传播入口，却很难直接消灭这些理论背后被感知到的社会情绪。",
       "status": "curated",
       "degree": 7
     },
@@ -1044,6 +1055,17 @@
       "type": "episode",
       "route": "episodes/EP105",
       "summary": "节目把主流财经内容定义为“情绪价值博主”生意，主张真正的财经表达应该谈战略、周期和进入时点，而不是用每天涨跌帮观众短暂获得刺激和参与感。",
+      "status": "curated",
+      "degree": 7
+    },
+    {
+      "id": "episode:EP111",
+      "key": "EP111",
+      "label": "EP111",
+      "fullLabel": "EP111 · 张雪夺冠刷屏：别用 “时代没机会”，掐灭年轻人的追梦底气。",
+      "type": "episode",
+      "route": "episodes/EP111",
+      "summary": "本期借张雪从湘西修车学徒到世界机车赛冠军的经历，正面反驳“普通人没机会了，所以最好尽早放弃梦想”的流行叙事。节目承认时代机会分配不均，但坚持认为，机会不是被动等来的，而是靠持续投入、行动和不肯被安全路径说服出来的；过早把年轻人送进一个自己根本不想要的“稳定位置”，很可能比失败更早杀死一个人。",
       "status": "curated",
       "degree": 7
     },
@@ -1345,17 +1367,6 @@
       "degree": 6
     },
     {
-      "id": "episode:EP111",
-      "key": "EP111",
-      "label": "EP111",
-      "fullLabel": "EP111 · 张雪夺冠刷屏：别用 “时代没机会”，掐灭年轻人的追梦底气。",
-      "type": "episode",
-      "route": "episodes/EP111",
-      "summary": "本期借张雪从湘西修车学徒到世界机车赛冠军的经历，正面反驳“普通人没机会了，所以最好尽早放弃梦想”的流行叙事。节目承认时代机会分配不均，但坚持认为，机会不是被动等来的，而是靠持续投入、行动和不肯被安全路径说服出来的；过早把年轻人送进一个自己根本不想要的“稳定位置”，很可能比失败更早杀死一个人。",
-      "status": "curated",
-      "degree": 6
-    },
-    {
       "id": "episode:EP114",
       "key": "EP114",
       "label": "EP114",
@@ -1376,6 +1387,17 @@
       "summary": "本期用三国里的荆州困局去翻译伊朗的地缘处境，核心判断是：伊朗之所以反复成为中东风暴眼，不只是因为它和美国、以色列对抗，而是因为它同时具备天下枢纽与四战之地这两种属性。节目进一步提出，更危险的往往不是正面强敌，而是周边邻国对一个强势近邻的集体戒备；从这个意义上说，庞统式的战略收缩和等待时机，可能比诸葛亮式死守前沿更能保住长期生存空间。",
       "status": "curated",
       "degree": 6
+    },
+    {
+      "id": "model:opaque-withdrawal-governance",
+      "key": "opaque-withdrawal-governance",
+      "label": "不可读退出治理模型",
+      "fullLabel": "不可读退出治理模型",
+      "type": "model",
+      "route": "models/opaque-withdrawal-governance",
+      "summary": "当个体通过低参与、低反馈和关系绝缘退出主流系统时，治理系统会失去预判对象。",
+      "status": null,
+      "degree": 5
     },
     {
       "id": "theme:founder-power-and-feedback",
@@ -1444,6 +1466,28 @@
       "degree": 5
     },
     {
+      "id": "theme:youth-dreams-and-safe-paths",
+      "key": "youth-dreams-and-safe-paths",
+      "label": "年轻人梦想与安全路径",
+      "fullLabel": "年轻人梦想与安全路径",
+      "type": "theme",
+      "route": "themes/youth-dreams-and-safe-paths",
+      "summary": "关注“稳定”如何成为压制年轻人生命力的主流建议。",
+      "status": null,
+      "degree": 5
+    },
+    {
+      "id": "theme:youth-withdrawal-and-lying-flat",
+      "key": "youth-withdrawal-and-lying-flat",
+      "label": "年轻人退出与躺平",
+      "fullLabel": "年轻人退出与躺平",
+      "type": "theme",
+      "route": "themes/youth-withdrawal-and-lying-flat",
+      "summary": "讨论年轻人在主流机会、劳动回报和身份路径收缩后，如何通过低欲望、退出和躺平保留有限主体性。",
+      "status": null,
+      "degree": 5
+    },
+    {
       "id": "concept:time-asymmetry",
       "key": "time-asymmetry",
       "label": "时间非对称",
@@ -1451,6 +1495,17 @@
       "type": "concept",
       "route": "concepts/time-asymmetry",
       "summary": "真正决定战略胜负的，往往不是一场仗的强弱，而是谁能把时间变成自己的朋友。",
+      "status": null,
+      "degree": 5
+    },
+    {
+      "id": "concept:future-path-crowding",
+      "key": "future-path-crowding",
+      "label": "未来路径拥堵",
+      "fullLabel": "未来路径拥堵",
+      "type": "concept",
+      "route": "concepts/future-path-crowding",
+      "summary": "所有人都挤向同一条被认为最安全的上升路径时，这条路本身就会因为拥挤而失去原来的安全性。",
       "status": null,
       "degree": 5
     },
@@ -1583,6 +1638,17 @@
       "type": "episode",
       "route": "episodes/EP028",
       "summary": "本期在官方调查报告出来之后，重新审视“云南野孩”事件，认为它不是一眼就能下结论的虐待个案，而是一次围绕自由养育、自然教育和法律边界的复杂冲突。节目强调，孩子并非失语失智，核心矛盾更像是父母尤其母亲以“自然”为名采取了一种半懂不懂的教育方式，它在道德上引人不适、在法律上踩到边缘，却并没有越过明显的虐待红线。",
+      "status": "curated",
+      "degree": 5
+    },
+    {
+      "id": "episode:EP043",
+      "key": "EP043",
+      "label": "EP043",
+      "fullLabel": "EP043 · 全网最忙vs最闲五人组，《芳华》解读背后的思潮点燃了什么？狗屁大哥，叫什么魂……",
+      "type": "episode",
+      "route": "episodes/EP043",
+      "summary": "本期把“最忙五人组”和“最闲五人组”并置，进一步延伸到《芳华》解读热潮，试图说明一个共同问题：无论体制内还是体制外，普通人都在承受越来越高的压抑，而这种压抑一部分表现为对荒诞现实的讽刺，另一部分则表现为对旧时代的误读式招魂。节目强调，这不是简单的怀旧，而是一种没有真正处理创伤、反而把创伤包装成热血记忆的循环。",
       "status": "curated",
       "degree": 5
     },
@@ -1818,13 +1884,13 @@
       "degree": 4
     },
     {
-      "id": "theme:youth-dreams-and-safe-paths",
-      "key": "youth-dreams-and-safe-paths",
-      "label": "年轻人梦想与安全路径",
-      "fullLabel": "年轻人梦想与安全路径",
-      "type": "theme",
-      "route": "themes/youth-dreams-and-safe-paths",
-      "summary": "关注“稳定”如何成为压制年轻人生命力的主流建议。",
+      "id": "model:platform-legibility-filter",
+      "key": "platform-legibility-filter",
+      "label": "平台可读性过滤器",
+      "fullLabel": "平台可读性过滤器",
+      "type": "model",
+      "route": "models/platform-legibility-filter",
+      "summary": "平台会优先处理那些被识别为可能外溢、聚众或失控的表达形态。",
       "status": null,
       "degree": 4
     },
@@ -1836,6 +1902,17 @@
       "type": "model",
       "route": "models/platform-gatekeeping",
       "summary": "平台守门结构说明平台通过流量、规则和处罚权决定谁可见、谁能赚钱、谁被沉默。",
+      "status": null,
+      "degree": 4
+    },
+    {
+      "id": "theme:platform-governance-and-folk-discourse",
+      "key": "platform-governance-and-folk-discourse",
+      "label": "平台治理与民间话语",
+      "fullLabel": "平台治理与民间话语",
+      "type": "theme",
+      "route": "themes/platform-governance-and-folk-discourse",
+      "summary": "讨论平台如何识别、容忍、限制和清理具有高传播性的民间表达。",
       "status": null,
       "degree": 4
     },
@@ -1862,13 +1939,13 @@
       "degree": 4
     },
     {
-      "id": "concept:future-path-crowding",
-      "key": "future-path-crowding",
-      "label": "未来路径拥堵",
-      "fullLabel": "未来路径拥堵",
-      "type": "concept",
-      "route": "concepts/future-path-crowding",
-      "summary": "所有人都挤向同一条被认为最安全的上升路径时，这条路本身就会因为拥挤而失去原来的安全性。",
+      "id": "model:stability-over-growth-trap",
+      "key": "stability-over-growth-trap",
+      "label": "稳定替代增长陷阱",
+      "fullLabel": "稳定替代增长陷阱",
+      "type": "model",
+      "route": "models/stability-over-growth-trap",
+      "summary": "当系统把稳定当作增长的替代品，短期秩序会被保住，长期造血、流动和创新却会被压低。",
       "status": null,
       "degree": 4
     },
@@ -1891,6 +1968,17 @@
       "type": "theme",
       "route": "themes/ev-design-and-technology-shortcuts",
       "summary": "讨论新能源品牌如何在设计、技术和产品叙事上追求速成，并为此埋下长期反噬。",
+      "status": null,
+      "degree": 4
+    },
+    {
+      "id": "concept:information-cocoon-breach",
+      "key": "information-cocoon-breach",
+      "label": "信息茧房破口",
+      "fullLabel": "信息茧房破口",
+      "type": "concept",
+      "route": "concepts/information-cocoon-breach",
+      "summary": "让原本封闭的人群第一次看见自身位置、差异和现实结构的传播裂缝。",
       "status": null,
       "degree": 4
     },
@@ -2069,6 +2157,17 @@
       "summary": "本期把焦点从茅台移向整个白酒行业，指出行业真正的问题不只是销量下滑，而是四条旧支柱同时松动：企业领导层难以长期沉淀、年份酒叙事高度黑箱、传统男权酒桌规则正在失效，而依附茅台的酱酒金融逻辑也越来越像割韭菜。",
       "status": "curated",
       "degree": 4
+    },
+    {
+      "id": "model:safety-valve-governance",
+      "key": "safety-valve-governance",
+      "label": "安全阀治理模型",
+      "fullLabel": "安全阀治理模型",
+      "type": "model",
+      "route": "models/safety-valve-governance",
+      "summary": "安全阀治理模型解释体系会容纳分流焦虑的中间人，并在其越位时进行收束。",
+      "status": null,
+      "degree": 3
     },
     {
       "id": "concept:safety-attention-shift",
@@ -2335,17 +2434,6 @@
       "degree": 3
     },
     {
-      "id": "model:platform-legibility-filter",
-      "key": "platform-legibility-filter",
-      "label": "平台可读性过滤器",
-      "fullLabel": "平台可读性过滤器",
-      "type": "model",
-      "route": "models/platform-legibility-filter",
-      "summary": "平台会优先处理那些被识别为可能外溢、聚众或失控的表达形态。",
-      "status": null,
-      "degree": 3
-    },
-    {
       "id": "theme:platform-labor-and-lived-reality",
       "key": "platform-labor-and-lived-reality",
       "label": "平台劳动与真实生存",
@@ -2364,17 +2452,6 @@
       "type": "theme",
       "route": "themes/platform-traffic-and-price-distortion",
       "summary": "当平台把巨量流量集中到极少数节点，价格、信誉和真伪判断都会开始向流量中心倾斜。",
-      "status": null,
-      "degree": 3
-    },
-    {
-      "id": "theme:platform-governance-and-folk-discourse",
-      "key": "platform-governance-and-folk-discourse",
-      "label": "平台治理与民间话语",
-      "fullLabel": "平台治理与民间话语",
-      "type": "theme",
-      "route": "themes/platform-governance-and-folk-discourse",
-      "summary": "讨论平台如何识别、容忍、限制和清理具有高传播性的民间表达。",
       "status": null,
       "degree": 3
     },
@@ -2456,17 +2533,6 @@
       "degree": 3
     },
     {
-      "id": "model:stability-over-growth-trap",
-      "key": "stability-over-growth-trap",
-      "label": "稳定替代增长陷阱",
-      "fullLabel": "稳定替代增长陷阱",
-      "type": "model",
-      "route": "models/stability-over-growth-trap",
-      "summary": "当系统把稳定当作增长的替代品，短期秩序会被保住，长期造血、流动和创新却会被压低。",
-      "status": null,
-      "degree": 3
-    },
-    {
       "id": "concept:pragmatic-legitimacy",
       "key": "pragmatic-legitimacy",
       "label": "务实合法性",
@@ -2518,17 +2584,6 @@
       "type": "theme",
       "route": "themes/small-state-balancing",
       "summary": "讨论新加坡这类小国如何在大国竞争中维持安全、合法性和现实利益。",
-      "status": null,
-      "degree": 3
-    },
-    {
-      "id": "concept:information-cocoon-breach",
-      "key": "information-cocoon-breach",
-      "label": "信息茧房破口",
-      "fullLabel": "信息茧房破口",
-      "type": "concept",
-      "route": "concepts/information-cocoon-breach",
-      "summary": "让原本封闭的人群第一次看见自身位置、差异和现实结构的传播裂缝。",
       "status": null,
       "degree": 3
     },
@@ -2632,17 +2687,6 @@
       "degree": 3
     },
     {
-      "id": "episode:EP043",
-      "key": "EP043",
-      "label": "EP043",
-      "fullLabel": "EP043 · 全网最忙vs最闲五人组，《芳华》解读背后的思潮点燃了什么？狗屁大哥，叫什么魂……",
-      "type": "episode",
-      "route": "episodes/EP043",
-      "summary": "本期把“最忙五人组”和“最闲五人组”并置，进一步延伸到《芳华》解读热潮，试图说明一个共同问题：无论体制内还是体制外，普通人都在承受越来越高的压抑，而这种压抑一部分表现为对荒诞现实的讽刺，另一部分则表现为对旧时代的误读式招魂。节目强调，这不是简单的怀旧，而是一种没有真正处理创伤、反而把创伤包装成热血记忆的循环。",
-      "status": "curated",
-      "degree": 3
-    },
-    {
       "id": "episode:EP056",
       "key": "EP056",
       "label": "EP056",
@@ -2718,17 +2762,6 @@
       "summary": "本期借美军高成本营救一名 F-15E 飞行员的事件，讨论的不是“值不值”这道算术题，而是两套完全不同的国家逻辑。节目认为，一套逻辑把人、装备和战争都折算成数字，最后只算性价比；另一套逻辑则把国家与公民之间的双向契约、生命不可替代性与长期信用视为真正的核心资产。主持人的结论很明确：美军看似花大钱救一个人，实际是在给全部军人与社会兑现国家信用。",
       "status": "curated",
       "degree": 3
-    },
-    {
-      "id": "model:safety-valve-governance",
-      "key": "safety-valve-governance",
-      "label": "安全阀治理模型",
-      "fullLabel": "安全阀治理模型",
-      "type": "model",
-      "route": "models/safety-valve-governance",
-      "summary": "安全阀治理模型解释体系会容纳分流焦虑的中间人，并在其越位时进行收束。",
-      "status": null,
-      "degree": 2
     },
     {
       "id": "theme:liquor-financialization-and-table-culture",
@@ -3156,6 +3189,17 @@
       "type": "theme",
       "route": "themes/automotive-r-and-d-governance",
       "summary": "讨论汽车研发体系里的送检量产落差、师徒网络、权威压制和系统性失真。",
+      "status": null,
+      "degree": 2
+    },
+    {
+      "id": "concept:weapons-of-the-weak",
+      "key": "weapons-of-the-weak",
+      "label": "弱者的武器",
+      "fullLabel": "弱者的武器",
+      "type": "concept",
+      "route": "concepts/weapons-of-the-weak",
+      "summary": "日常、隐蔽、匿名、非组织化的微观抵抗，比公开对抗更难被传统治理手段处理。",
       "status": null,
       "degree": 2
     },
@@ -4414,6 +4458,17 @@
       "degree": 1
     },
     {
+      "id": "concept:internal-migration",
+      "key": "internal-migration",
+      "label": "内移民",
+      "fullLabel": "内移民",
+      "type": "concept",
+      "route": "concepts/internal-migration",
+      "summary": "不发生地理迁移，而是从主流劳动、消费、身份和关系规则中退出。",
+      "status": null,
+      "degree": 1
+    },
+    {
       "id": "theme:deglobalization-and-cultural-fragmentation",
       "key": "deglobalization-and-cultural-fragmentation",
       "label": "逆全球化与文化碎片化",
@@ -4733,6 +4788,17 @@
       "degree": 1
     },
     {
+      "id": "concept:lying-flat-country",
+      "key": "lying-flat-country",
+      "label": "躺平国",
+      "fullLabel": "躺平国",
+      "type": "concept",
+      "route": "concepts/lying-flat-country",
+      "summary": "大量绝缘个体以相似生存逻辑和价值判断形成的无形退出共同体。",
+      "status": null,
+      "degree": 1
+    },
+    {
       "id": "person:tian-pujun",
       "key": "tian-pujun",
       "label": "田朴珺",
@@ -5026,6 +5092,17 @@
       "type": "person",
       "route": "people/mark-zuckerberg",
       "summary": "扎克伯格是 Meta 创始人，在这些节目里主要作为全球资本与平台方视角的代表人物出现。",
+      "status": null,
+      "degree": 1
+    },
+    {
+      "id": "person:james-scott",
+      "key": "james-scott",
+      "label": "詹姆斯·斯科特",
+      "fullLabel": "詹姆斯·斯科特",
+      "type": "person",
+      "route": "people/james-scott",
+      "summary": "詹姆斯·斯科特是《弱者的武器》作者，在 EP134 中被用来解释躺平作为日常、隐蔽、非组织化抵抗的意义。",
       "status": null,
       "degree": 1
     },
@@ -9584,6 +9661,71 @@
       "kind": "episode-theme"
     },
     {
+      "source": "episode:EP134",
+      "target": "concept:internal-migration",
+      "kind": "episode-concept"
+    },
+    {
+      "source": "episode:EP134",
+      "target": "concept:lying-flat-country",
+      "kind": "episode-concept"
+    },
+    {
+      "source": "episode:EP134",
+      "target": "concept:weapons-of-the-weak",
+      "kind": "episode-concept"
+    },
+    {
+      "source": "episode:EP134",
+      "target": "concept:information-cocoon-breach",
+      "kind": "episode-concept"
+    },
+    {
+      "source": "episode:EP134",
+      "target": "concept:future-path-crowding",
+      "kind": "episode-concept"
+    },
+    {
+      "source": "episode:EP134",
+      "target": "model:opaque-withdrawal-governance",
+      "kind": "episode-model"
+    },
+    {
+      "source": "episode:EP134",
+      "target": "model:platform-legibility-filter",
+      "kind": "episode-model"
+    },
+    {
+      "source": "episode:EP134",
+      "target": "model:safety-valve-governance",
+      "kind": "episode-model"
+    },
+    {
+      "source": "episode:EP134",
+      "target": "model:stability-over-growth-trap",
+      "kind": "episode-model"
+    },
+    {
+      "source": "episode:EP134",
+      "target": "person:james-scott",
+      "kind": "episode-person"
+    },
+    {
+      "source": "episode:EP134",
+      "target": "theme:youth-withdrawal-and-lying-flat",
+      "kind": "episode-theme"
+    },
+    {
+      "source": "episode:EP134",
+      "target": "theme:platform-governance-and-folk-discourse",
+      "kind": "episode-theme"
+    },
+    {
+      "source": "episode:EP134",
+      "target": "theme:youth-dreams-and-safe-paths",
+      "kind": "episode-theme"
+    },
+    {
       "source": "episode:EP120",
       "target": "concept:active-neutrality",
       "kind": "episode-concept"
@@ -9609,6 +9751,11 @@
       "kind": "episode-concept"
     },
     {
+      "source": "episode:EP043",
+      "target": "concept:weapons-of-the-weak",
+      "kind": "episode-concept"
+    },
+    {
       "source": "episode:EP120",
       "target": "model:chokepoint-order-model",
       "kind": "episode-model"
@@ -9616,6 +9763,26 @@
     {
       "source": "episode:EP105",
       "target": "model:non-monetary-legacy",
+      "kind": "episode-model"
+    },
+    {
+      "source": "episode:EP005",
+      "target": "model:opaque-withdrawal-governance",
+      "kind": "episode-model"
+    },
+    {
+      "source": "episode:EP006",
+      "target": "model:opaque-withdrawal-governance",
+      "kind": "episode-model"
+    },
+    {
+      "source": "episode:EP032",
+      "target": "model:opaque-withdrawal-governance",
+      "kind": "episode-model"
+    },
+    {
+      "source": "episode:EP129",
+      "target": "model:opaque-withdrawal-governance",
       "kind": "episode-model"
     },
     {
@@ -9691,6 +9858,26 @@
     {
       "source": "episode:EP120",
       "target": "theme:singapore-and-small-state-survival",
+      "kind": "episode-theme"
+    },
+    {
+      "source": "episode:EP043",
+      "target": "theme:youth-withdrawal-and-lying-flat",
+      "kind": "episode-theme"
+    },
+    {
+      "source": "episode:EP111",
+      "target": "theme:youth-withdrawal-and-lying-flat",
+      "kind": "episode-theme"
+    },
+    {
+      "source": "episode:EP128",
+      "target": "theme:youth-withdrawal-and-lying-flat",
+      "kind": "episode-theme"
+    },
+    {
+      "source": "episode:EP132",
+      "target": "theme:youth-withdrawal-and-lying-flat",
       "kind": "episode-theme"
     }
   ]
