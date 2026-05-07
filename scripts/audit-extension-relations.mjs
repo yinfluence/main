@@ -34,6 +34,9 @@ Checks content/episodes/* topic.extensions for explicit cross-episode relation n
 
 Issue types:
   missing_refs          topic.extensions has no valid EPxxx reference.
+  bad_heading           topic.extensions heading is not a short, concrete "关于xxx" title.
+  duplicate_heading     topic.extensions repeats the same heading inside one episode.
+  single_ref_extension  topic.extensions item cites fewer than two external episodes.
   no_related_episodes  topic.extensions exists but relatedEpisodes is empty.
   orphan_related       relatedEpisodes contains an EP that is not explained in topic.extensions.
   weak_relation        an EP is mentioned, but the sentence is too generic to explain the relationship.
@@ -59,6 +62,74 @@ function compactText(value) {
   return String(value || '').replace(/\s+/g, '');
 }
 
+function getExtensionHeading(value) {
+  const match = String(value || '').trim().match(/^([^：:]+)[：:]/);
+  return match ? match[1].trim() : '';
+}
+
+const abstractHeadingTerms = [
+  '边界',
+  '底盘',
+  '命门',
+  '顺序',
+  '教训',
+  '止贪',
+  '黑箱',
+  '飞轮',
+  '闭环',
+  '传压',
+  '外溢',
+  '成型',
+  '裂变',
+  '分野',
+  '背书',
+  '退潮',
+  '保全',
+  '路线',
+  '法则',
+  '神话',
+  '错觉',
+  '错位',
+  '门槛',
+  '身份货币',
+  '工具热潮',
+  '前台化',
+  '续命',
+  '出清通道',
+  '压力下沉',
+  '压力外包',
+  '收费样板',
+  '区域拒止',
+  '内容流水线',
+  '苦难美颜',
+  '平台遮蔽'
+];
+
+function auditHeading(value) {
+  const heading = getExtensionHeading(value);
+  if (!heading) {
+    return 'missing heading before colon';
+  }
+  if (!heading.startsWith('关于')) {
+    return `heading must start with 关于: ${heading}`;
+  }
+
+  const core = heading.slice('关于'.length).trim();
+  if (!core) {
+    return 'heading has empty 关于 target';
+  }
+  if ([...core].length > 6) {
+    return `heading is too long: ${heading}`;
+  }
+
+  const abstractTerm = abstractHeadingTerms.find((term) => core.includes(term));
+  if (abstractTerm) {
+    return `heading uses abstract term "${abstractTerm}": ${heading}`;
+  }
+
+  return null;
+}
+
 function hasRelationExplanation(text, episodeId) {
   const compact = compactText(text);
   if (!compact.includes(episodeId) || compact.length < 48) return false;
@@ -72,14 +143,17 @@ function hasRelationExplanation(text, episodeId) {
     '承接',
     '延续',
     '补充',
+    '补足',
     '验证',
     '落到',
     '放进',
     '放到',
     '形成',
+    '合起来',
     '连接',
     '回到',
     '对应',
+    '问',
     '同属',
     '作为',
     '前置',
@@ -106,10 +180,18 @@ function hasRelationExplanation(text, episodeId) {
     '而',
     '则',
     '通过',
+    '在',
+    '需要',
     '从',
     '把',
     '用',
+    '也',
+    '当',
+    '还有',
     '可以',
+    '是',
+    '不是',
+    '能',
     '会',
     '让',
     '显示',
@@ -150,6 +232,37 @@ function auditEpisode(episode, validIds) {
 
   if (!topicExtensions.length) {
     return issues;
+  }
+
+  const seenHeadings = new Set();
+  for (const extension of topicExtensions) {
+    const heading = getExtensionHeading(extension);
+    const extensionRefs = collectEpisodeRefs(extension).filter((ref) => ref !== episode.id);
+    const headingIssue = auditHeading(extension);
+    if (headingIssue) {
+      issues.push({
+        id: episode.id,
+        type: 'bad_heading',
+        detail: headingIssue
+      });
+    }
+    if (extensionRefs.length < 2) {
+      issues.push({
+        id: episode.id,
+        type: 'single_ref_extension',
+        detail: `${heading || 'topic.extensions item'} cites ${extensionRefs.length} external episode(s); group related episodes into a theme line`
+      });
+    }
+    if (heading && seenHeadings.has(heading)) {
+      issues.push({
+        id: episode.id,
+        type: 'duplicate_heading',
+        detail: `topic.extensions repeats heading: ${heading}`
+      });
+    }
+    if (heading) {
+      seenHeadings.add(heading);
+    }
   }
 
   if (!relatedEpisodes.length) {
