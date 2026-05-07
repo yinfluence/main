@@ -143,7 +143,7 @@ function auditHeading(value) {
 function expectedExtensionCount(relatedCount) {
   if (relatedCount >= 8) return 5;
   if (relatedCount >= 6) return 4;
-  if (relatedCount >= 4) return 3;
+  if (relatedCount >= 3) return 3;
   return 2;
 }
 
