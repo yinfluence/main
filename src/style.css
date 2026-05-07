@@ -3633,10 +3633,16 @@ a.chip:active {
   fill: #ffffff;
 }
 
-.media-chip:hover {
+.media-chip:hover,
+.media-chip:focus-visible {
   transform: translateY(-1px);
   filter: saturate(1.06);
   box-shadow: 0 14px 28px rgba(22, 33, 48, 0.18);
+}
+
+.media-chip:focus-visible {
+  outline: 2px solid rgba(0, 161, 214, 0.24);
+  outline-offset: 3px;
 }
 
 .media-chip.unavailable:hover {
@@ -3645,16 +3651,34 @@ a.chip:active {
   box-shadow: 0 6px 14px rgba(22, 33, 48, 0.08);
 }
 
-.media-chip.bilibili:hover {
-  background: linear-gradient(180deg, rgba(0, 161, 214, 0.92), rgba(0, 128, 184, 0.92));
-  border-color: rgba(255,255,255,0.3);
-  color: #ffffff;
+.media-chip.bilibili:not(.member-only):not(.unavailable):hover,
+.media-chip.bilibili:not(.member-only):not(.unavailable):focus-visible {
+  background: linear-gradient(180deg, #ffffff, #f2fbff);
+  border-color: rgba(0, 161, 214, 0.42);
+  color: #0079aa;
   box-shadow:
-    0 14px 28px rgba(0, 128, 184, 0.22),
-    inset 0 1px 0 rgba(255,255,255,0.18);
+    0 16px 30px rgba(0, 126, 174, 0.18),
+    inset 0 1px 0 rgba(255,255,255,0.96);
 }
 
-.media-chip.youtube:hover {
+.media-chip.member-only:hover,
+.media-chip.member-only:focus-visible {
+  background: linear-gradient(180deg, #ffffff, #fff8df);
+  border-color: rgba(201, 155, 26, 0.52);
+  color: #8a6100;
+  box-shadow:
+    0 16px 30px rgba(148, 105, 13, 0.2),
+    inset 0 1px 0 rgba(255,255,255,0.96);
+}
+
+.media-chip.member-only:hover .media-chip-badge,
+.media-chip.member-only:focus-visible .media-chip-badge {
+  background: linear-gradient(180deg, #f7d66b, #c99b1a);
+  color: #3b3327;
+}
+
+.media-chip.youtube:not(.unavailable):hover,
+.media-chip.youtube:not(.unavailable):focus-visible {
   background: linear-gradient(180deg, #ff2a20, #d70d06);
   border-color: rgba(255,255,255,0.18);
   color: #ffffff;
