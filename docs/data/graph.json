@@ -2,12 +2,12 @@
   "meta": {
     "title": "颖响力知识图谱",
     "subtitle": "节目、概念、模型、人物、主题之间的可视化连接网络",
-    "nodeCount": 475,
-    "linkCount": 928,
+    "nodeCount": 479,
+    "linkCount": 941,
     "typeCounts": {
-      "model": 59,
-      "episode": 134,
-      "concept": 129,
+      "model": 60,
+      "episode": 135,
+      "concept": 131,
       "theme": 91,
       "person": 62
     }
@@ -179,6 +179,17 @@
       "degree": 13
     },
     {
+      "id": "episode:EP135",
+      "key": "EP135",
+      "label": "EP135",
+      "fullLabel": "EP135 · 红场阅兵取消重装备方阵！俄乌战争彻底反转，我们正在看未来战争预演。【EP135】",
+      "type": "episode",
+      "route": "episodes/EP135",
+      "summary": "本期借俄罗斯胜利日阅兵取消地面重装备方阵切入，把俄乌战争解释成一场未来战争预演。节目认为，低空、低成本、长航程无人机正在把传统战略纵深变成负担，固定炼油厂、弹药库、铁路枢纽和大型军工厂反而成为可被持续点名的高价值目标；乌克兰的优势不只是无人机多，而是把战时生产、前线反馈、社会动员和欧洲支持组合成了更分布式的战争系统。",
+      "status": "curated",
+      "degree": 13
+    },
+    {
       "id": "episode:EP120",
       "key": "EP120",
       "label": "EP120",
@@ -197,6 +208,17 @@
       "type": "theme",
       "route": "themes/local-fiscal-stress-and-hidden-debt",
       "summary": "地方财政吃紧后，系统会通过更复杂的融资、资产包装和风险转移来维持运转。",
+      "status": null,
+      "degree": 11
+    },
+    {
+      "id": "person:donald-trump",
+      "key": "donald-trump",
+      "label": "特朗普",
+      "fullLabel": "特朗普",
+      "type": "person",
+      "route": "people/donald-trump",
+      "summary": "特朗普是美国政治人物，现任美国总统，也是这些节目里反复出现的关键地缘角色之一。",
       "status": null,
       "degree": 11
     },
@@ -241,17 +263,6 @@
       "type": "theme",
       "route": "themes/maritime-chokepoints-and-route-order",
       "summary": "讨论海峡、运河和关键航道如何把地理位置变成规则、保险、资本和军事的综合权力。",
-      "status": null,
-      "degree": 10
-    },
-    {
-      "id": "person:donald-trump",
-      "key": "donald-trump",
-      "label": "特朗普",
-      "fullLabel": "特朗普",
-      "type": "person",
-      "route": "people/donald-trump",
-      "summary": "特朗普是美国政治人物，现任美国总统，也是这些节目里反复出现的关键地缘角色之一。",
       "status": null,
       "degree": 10
     },
@@ -806,6 +817,17 @@
       "degree": 8
     },
     {
+      "id": "theme:great-power-competition-and-strategic-time",
+      "key": "great-power-competition-and-strategic-time",
+      "label": "大国竞争与战略时间",
+      "fullLabel": "大国竞争与战略时间",
+      "type": "theme",
+      "route": "themes/great-power-competition-and-strategic-time",
+      "summary": "讨论战争、联盟和国家战略如何被时间窗口、社会成本和长期定力重新塑形。",
+      "status": null,
+      "degree": 7
+    },
+    {
       "id": "model:rule-anchored-small-state-model",
       "key": "rule-anchored-small-state-model",
       "label": "规则锚定型小国生存",
@@ -824,6 +846,17 @@
       "type": "model",
       "route": "models/principal-agent",
       "summary": "委托代理模型解释外部顾问或职业代理人的激励，未必与委托方长期价值一致。",
+      "status": null,
+      "degree": 7
+    },
+    {
+      "id": "theme:sanctions-and-power-containment",
+      "key": "sanctions-and-power-containment",
+      "label": "制裁、遏制与集团竞争",
+      "fullLabel": "制裁、遏制与集团竞争",
+      "type": "theme",
+      "route": "themes/sanctions-and-power-containment",
+      "summary": "讨论制裁、门罗主义、海峡与联盟如何共同服务于压制对手集团的全球布局。",
       "status": null,
       "degree": 7
     },
@@ -1103,17 +1136,6 @@
       "degree": 6
     },
     {
-      "id": "theme:great-power-competition-and-strategic-time",
-      "key": "great-power-competition-and-strategic-time",
-      "label": "大国竞争与战略时间",
-      "fullLabel": "大国竞争与战略时间",
-      "type": "theme",
-      "route": "themes/great-power-competition-and-strategic-time",
-      "summary": "讨论战争、联盟和国家战略如何被时间窗口、社会成本和长期定力重新塑形。",
-      "status": null,
-      "degree": 6
-    },
-    {
       "id": "concept:phantom-growth",
       "key": "phantom-growth",
       "label": "幻象增长",
@@ -1180,13 +1202,13 @@
       "degree": 6
     },
     {
-      "id": "theme:sanctions-and-power-containment",
-      "key": "sanctions-and-power-containment",
-      "label": "制裁、遏制与集团竞争",
-      "fullLabel": "制裁、遏制与集团竞争",
-      "type": "theme",
-      "route": "themes/sanctions-and-power-containment",
-      "summary": "讨论制裁、门罗主义、海峡与联盟如何共同服务于压制对手集团的全球布局。",
+      "id": "concept:sanction-containment",
+      "key": "sanction-containment",
+      "label": "制裁遏制",
+      "fullLabel": "制裁遏制",
+      "type": "concept",
+      "route": "concepts/sanction-containment",
+      "summary": "制裁的真正作用常常不是逼对手立刻认输，而是长期压低其外延空间、联动能力和做大速度。",
       "status": null,
       "degree": 6
     },
@@ -1411,6 +1433,17 @@
       "degree": 5
     },
     {
+      "id": "model:proxy-containment-ring",
+      "key": "proxy-containment-ring",
+      "label": "代理围堵环",
+      "fullLabel": "代理围堵环",
+      "type": "model",
+      "route": "models/proxy-containment-ring",
+      "summary": "代理围堵环解释大国如何通过盟友、代理人和通道控制分摊成本、封堵对手。",
+      "status": null,
+      "degree": 5
+    },
+    {
       "id": "theme:southeast-asia-fragmentation-and-bloc-competition",
       "key": "southeast-asia-fragmentation-and-bloc-competition",
       "label": "东南亚裂变与集团竞争",
@@ -1418,6 +1451,17 @@
       "type": "theme",
       "route": "themes/southeast-asia-fragmentation-and-bloc-competition",
       "summary": "讨论东南亚如何从缓冲地带变成各方拉扯、重新站队和内部裂变并行发生的高风险区域。",
+      "status": null,
+      "degree": 5
+    },
+    {
+      "id": "model:distributed-innovation",
+      "key": "distributed-innovation",
+      "label": "分布式创新",
+      "fullLabel": "分布式创新",
+      "type": "model",
+      "route": "models/distributed-innovation",
+      "summary": "分布式创新强调多中心试错、失败吸收和真实反馈比单一大计划更能产生韧性。",
       "status": null,
       "degree": 5
     },
@@ -1517,17 +1561,6 @@
       "type": "model",
       "route": "models/political-embedded-enterprise",
       "summary": "企业一旦把自身命运深嵌进地方政府或国资体系，短期会更能续命，长期却更容易沦为政策工具。",
-      "status": null,
-      "degree": 5
-    },
-    {
-      "id": "concept:sanction-containment",
-      "key": "sanction-containment",
-      "label": "制裁遏制",
-      "fullLabel": "制裁遏制",
-      "type": "concept",
-      "route": "concepts/sanction-containment",
-      "summary": "制裁的真正作用常常不是逼对手立刻认输，而是长期压低其外延空间、联动能力和做大速度。",
       "status": null,
       "degree": 5
     },
@@ -1818,17 +1851,6 @@
       "degree": 4
     },
     {
-      "id": "model:proxy-containment-ring",
-      "key": "proxy-containment-ring",
-      "label": "代理围堵环",
-      "fullLabel": "代理围堵环",
-      "type": "model",
-      "route": "models/proxy-containment-ring",
-      "summary": "代理围堵环解释大国如何通过盟友、代理人和通道控制分摊成本、封堵对手。",
-      "status": null,
-      "degree": 4
-    },
-    {
       "id": "theme:local-government-financialization",
       "key": "local-government-financialization",
       "label": "地方政府资本化与补贴杠杆",
@@ -1836,17 +1858,6 @@
       "type": "theme",
       "route": "themes/local-government-financialization",
       "summary": "讨论地方政府如何从传统招商者变成资本玩家，并把补贴、基金和估值故事捆到一起。",
-      "status": null,
-      "degree": 4
-    },
-    {
-      "id": "model:distributed-innovation",
-      "key": "distributed-innovation",
-      "label": "分布式创新",
-      "fullLabel": "分布式创新",
-      "type": "model",
-      "route": "models/distributed-innovation",
-      "summary": "分布式创新强调多中心试错、失败吸收和真实反馈比单一大计划更能产生韧性。",
       "status": null,
       "degree": 4
     },
@@ -2221,6 +2232,17 @@
       "type": "theme",
       "route": "themes/catering-pricing-logic",
       "summary": "讨论餐饮价格背后到底由哪些结构因素共同决定。",
+      "status": null,
+      "degree": 3
+    },
+    {
+      "id": "concept:price-war-trap",
+      "key": "price-war-trap",
+      "label": "低价竞争陷阱",
+      "fullLabel": "低价竞争陷阱",
+      "type": "concept",
+      "route": "concepts/price-war-trap",
+      "summary": "极致低价可以快速突袭，却可能在长期竞争中压缩技术升级、利润和战略空间。",
       "status": null,
       "degree": 3
     },
@@ -2830,13 +2852,13 @@
       "degree": 2
     },
     {
-      "id": "concept:price-war-trap",
-      "key": "price-war-trap",
-      "label": "低价竞争陷阱",
-      "fullLabel": "低价竞争陷阱",
-      "type": "concept",
-      "route": "concepts/price-war-trap",
-      "summary": "极致低价可以快速突袭，却可能在长期竞争中压缩技术升级、利润和战略空间。",
+      "id": "theme:price-war-and-precision-competition",
+      "key": "price-war-and-precision-competition",
+      "label": "低价竞争与精准打击",
+      "fullLabel": "低价竞争与精准打击",
+      "type": "theme",
+      "route": "themes/price-war-and-precision-competition",
+      "summary": "讨论卷低价与做精准高价值打击之间的差别，以及两种竞争逻辑背后的阶层思维。",
       "status": null,
       "degree": 2
     },
@@ -3182,6 +3204,17 @@
       "degree": 2
     },
     {
+      "id": "person:vladimir-putin",
+      "key": "vladimir-putin",
+      "label": "普京",
+      "fullLabel": "普京",
+      "type": "person",
+      "route": "people/vladimir-putin",
+      "summary": "普京是节目讨论俄罗斯战争体制、长期执政和接班风险时无法绕开的核心人物。",
+      "status": null,
+      "degree": 2
+    },
+    {
       "id": "theme:automotive-r-and-d-governance",
       "key": "automotive-r-and-d-governance",
       "label": "汽车研发治理与沉默联盟",
@@ -3486,6 +3519,17 @@
       "type": "concept",
       "route": "concepts/bounded-experimentation",
       "summary": "试验可以存在，但必须有范围、预算、反馈和退出标准，不能把整个系统押上去试错。",
+      "status": null,
+      "degree": 2
+    },
+    {
+      "id": "theme:war-system-and-succession-risk",
+      "key": "war-system-and-succession-risk",
+      "label": "战争体制与接班风险",
+      "fullLabel": "战争体制与接班风险",
+      "type": "theme",
+      "route": "themes/war-system-and-succession-risk",
+      "summary": "讨论战争国家在长期高压运转下，如何同时面临兵员枯竭、内部老化与接班断层。",
       "status": null,
       "degree": 2
     },
@@ -3842,17 +3886,6 @@
       "degree": 1
     },
     {
-      "id": "theme:price-war-and-precision-competition",
-      "key": "price-war-and-precision-competition",
-      "label": "低价竞争与精准打击",
-      "fullLabel": "低价竞争与精准打击",
-      "type": "theme",
-      "route": "themes/price-war-and-precision-competition",
-      "summary": "讨论卷低价与做精准高价值打击之间的差别，以及两种竞争逻辑背后的阶层思维。",
-      "status": null,
-      "degree": 1
-    },
-    {
       "id": "person:dong-yuhui",
       "key": "dong-yuhui",
       "label": "董宇辉",
@@ -3882,6 +3915,28 @@
       "type": "concept",
       "route": "concepts/truth-indifferent-rhetoric",
       "summary": "话术若只追求立场效果和情绪动员，就会对真假本身变得冷漠。",
+      "status": null,
+      "degree": 1
+    },
+    {
+      "id": "concept:distributed-war-industry",
+      "key": "distributed-war-industry",
+      "label": "分布式战时工业",
+      "fullLabel": "分布式战时工业",
+      "type": "concept",
+      "route": "concepts/distributed-war-industry",
+      "summary": "战时生产越能分散到多主体、多地点和快速反馈链条里，越不容易被固定打击瘫痪。",
+      "status": null,
+      "degree": 1
+    },
+    {
+      "id": "model:distributed-warfare-system",
+      "key": "distributed-warfare-system",
+      "label": "分布式战争系统",
+      "fullLabel": "分布式战争系统",
+      "type": "model",
+      "route": "models/distributed-warfare-system",
+      "summary": "分布式战争系统解释无人装备、分散生产、前线反馈和外部供给如何组合成长期战争优势。",
       "status": null,
       "degree": 1
     },
@@ -4568,17 +4623,6 @@
       "degree": 1
     },
     {
-      "id": "person:vladimir-putin",
-      "key": "vladimir-putin",
-      "label": "普京",
-      "fullLabel": "普京",
-      "type": "person",
-      "route": "people/vladimir-putin",
-      "summary": "普京是节目讨论俄罗斯战争体制、长期执政和接班风险时无法绕开的核心人物。",
-      "status": null,
-      "degree": 1
-    },
-    {
       "id": "theme:intimate-relationships-and-asset-repricing",
       "key": "intimate-relationships-and-asset-repricing",
       "label": "亲密关系与资产再定价",
@@ -5107,13 +5151,13 @@
       "degree": 1
     },
     {
-      "id": "theme:war-system-and-succession-risk",
-      "key": "war-system-and-succession-risk",
-      "label": "战争体制与接班风险",
-      "fullLabel": "战争体制与接班风险",
-      "type": "theme",
-      "route": "themes/war-system-and-succession-risk",
-      "summary": "讨论战争国家在长期高压运转下，如何同时面临兵员枯竭、内部老化与接班断层。",
+      "id": "concept:strategic-depth-inversion",
+      "key": "strategic-depth-inversion",
+      "label": "战略纵深反转",
+      "fullLabel": "战略纵深反转",
+      "type": "concept",
+      "route": "concepts/strategic-depth-inversion",
+      "summary": "长航程无人系统让传统纵深从缓冲优势变成固定资产暴露和防护成本。",
       "status": null,
       "degree": 1
     },
@@ -9723,6 +9767,71 @@
     {
       "source": "episode:EP134",
       "target": "theme:youth-dreams-and-safe-paths",
+      "kind": "episode-theme"
+    },
+    {
+      "source": "episode:EP135",
+      "target": "concept:strategic-depth-inversion",
+      "kind": "episode-concept"
+    },
+    {
+      "source": "episode:EP135",
+      "target": "concept:distributed-war-industry",
+      "kind": "episode-concept"
+    },
+    {
+      "source": "episode:EP135",
+      "target": "concept:price-war-trap",
+      "kind": "episode-concept"
+    },
+    {
+      "source": "episode:EP135",
+      "target": "concept:sanction-containment",
+      "kind": "episode-concept"
+    },
+    {
+      "source": "episode:EP135",
+      "target": "model:distributed-warfare-system",
+      "kind": "episode-model"
+    },
+    {
+      "source": "episode:EP135",
+      "target": "model:distributed-innovation",
+      "kind": "episode-model"
+    },
+    {
+      "source": "episode:EP135",
+      "target": "model:proxy-containment-ring",
+      "kind": "episode-model"
+    },
+    {
+      "source": "episode:EP135",
+      "target": "person:vladimir-putin",
+      "kind": "episode-person"
+    },
+    {
+      "source": "episode:EP135",
+      "target": "person:donald-trump",
+      "kind": "episode-person"
+    },
+    {
+      "source": "episode:EP135",
+      "target": "theme:war-system-and-succession-risk",
+      "kind": "episode-theme"
+    },
+    {
+      "source": "episode:EP135",
+      "target": "theme:price-war-and-precision-competition",
+      "kind": "episode-theme"
+    },
+    {
+      "source": "episode:EP135",
+      "target": "theme:sanctions-and-power-containment",
+      "kind": "episode-theme"
+    },
+    {
+      "source": "episode:EP135",
+      "target": "theme:great-power-competition-and-strategic-time",
       "kind": "episode-theme"
     },
     {
