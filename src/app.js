@@ -307,6 +307,7 @@ let pointerIsDown = false;
 let floatingActionsExpanded = false;
 let floatingActionsIdleTimer = 0;
 let homeEpisodeCarouselTimer = 0;
+let homeEpisodeCarouselAnimationTimer = 0;
 let homeEpisodeAutoAdvancePausedUntil = 0;
 let homeEpisodeSwipeStartX = 0;
 let homeEpisodeSwipeStartY = 0;
@@ -3310,6 +3311,18 @@ function pauseHomeEpisodeAutoAdvance(durationMs = 6500) {
   window.clearTimeout(homeEpisodeCarouselTimer);
 }
 
+function resetHomeEpisodeCarouselRuntime() {
+  window.clearTimeout(homeEpisodeCarouselTimer);
+  window.clearTimeout(homeEpisodeCarouselAnimationTimer);
+  homeEpisodeCarouselTimer = 0;
+  homeEpisodeCarouselAnimationTimer = 0;
+  homeEpisodeCarouselBindingsController?.abort();
+  homeEpisodeCarouselBindingsController = null;
+  homeEpisodeCarouselAnimating = false;
+  homeEpisodeSwipeTracking = false;
+  homeEpisodeSwipePointerId = null;
+}
+
 function advanceHomeEpisodeCarousel(direction, maxIndex) {
   if (homeEpisodeCarouselAnimating) return;
   if (maxIndex <= 0) return;
@@ -3840,7 +3853,10 @@ function bindHomeEpisodeCarousel(homeEpisodeCarouselShell, homeEpisodeCarousel, 
 
 function renderHomeEpisodeCarousel({ direction = 0 } = {}) {
   const homeEpisodeCarouselShell = document.querySelector('.home-episode-carousel-shell');
-  if (!(homeEpisodeCarouselShell instanceof HTMLElement)) return;
+  if (!(homeEpisodeCarouselShell instanceof HTMLElement)) {
+    resetHomeEpisodeCarouselRuntime();
+    return;
+  }
   const featuredEpisodes = getHomeFeaturedEpisodes();
   const homeEpisodeCarousel = homeEpisodeCarouselState(featuredEpisodes);
   const isMobile = useMobileHomeLayout();
@@ -3854,9 +3870,15 @@ function renderHomeEpisodeCarousel({ direction = 0 } = {}) {
   };
 
   if (!direction) {
+    window.clearTimeout(homeEpisodeCarouselAnimationTimer);
+    homeEpisodeCarouselAnimationTimer = 0;
+    homeEpisodeCarouselAnimating = false;
     mount();
     return;
   }
+
+  window.clearTimeout(homeEpisodeCarouselAnimationTimer);
+  homeEpisodeCarouselAnimationTimer = 0;
 
   if (isMobile) {
     const currentScrollY = window.scrollY;
@@ -3889,10 +3911,11 @@ function renderHomeEpisodeCarousel({ direction = 0 } = {}) {
       });
     });
 
-    window.setTimeout(() => {
+    homeEpisodeCarouselAnimationTimer = window.setTimeout(() => {
       mount();
       scrollWindowInstantly(currentScrollY, currentScrollX);
       homeEpisodeCarouselAnimating = false;
+      homeEpisodeCarouselAnimationTimer = 0;
     }, animationDuration);
     return;
   }
@@ -3939,10 +3962,11 @@ function renderHomeEpisodeCarousel({ direction = 0 } = {}) {
       : 'translate3d(0, 0, 0)';
   });
 
-  window.setTimeout(() => {
+  homeEpisodeCarouselAnimationTimer = window.setTimeout(() => {
     mount();
     scrollWindowInstantly(currentScrollY, currentScrollX);
     homeEpisodeCarouselAnimating = false;
+    homeEpisodeCarouselAnimationTimer = 0;
   }, animationDuration);
 }
 
@@ -5287,6 +5311,7 @@ function renderRoute() {
   clearEpisodeIndexSearchAutoHideTimer();
   homeSearchToolbarController?.abort();
   homeSearchToolbarController = null;
+  resetHomeEpisodeCarouselRuntime();
   teardownRevealAnimations();
   cancelSnapAnimation();
   closeSectionProgressPanel();
