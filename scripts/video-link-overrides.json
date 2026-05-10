@@ -2,8 +2,7 @@
   "EP136": {
     "bilibili": {
       "platform": "bilibili",
-      "status": "unavailable",
-      "note": "暂未上架"
+      "url": "https://www.bilibili.com/video/BV1L9R9BEEST/?spm_id_from=333.1387.homepage.video_card.click"
     },
     "youtube": {
       "platform": "youtube",
