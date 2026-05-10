@@ -1,4 +1,15 @@
 {
+  "EP136": {
+    "bilibili": {
+      "platform": "bilibili",
+      "status": "unavailable",
+      "note": "暂未上架"
+    },
+    "youtube": {
+      "platform": "youtube",
+      "url": "https://www.youtube.com/watch?v=bmax8-VCGOI"
+    }
+  },
   "EP135": {
     "bilibili": {
       "platform": "bilibili",

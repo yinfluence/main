@@ -2,14 +2,14 @@
   "meta": {
     "title": "颖响力知识图谱",
     "subtitle": "节目、概念、模型、人物、主题之间的可视化连接网络",
-    "nodeCount": 479,
-    "linkCount": 941,
+    "nodeCount": 483,
+    "linkCount": 959,
     "typeCounts": {
-      "model": 60,
-      "episode": 135,
-      "concept": 131,
-      "theme": 91,
-      "person": 62
+      "model": 61,
+      "episode": 136,
+      "concept": 133,
+      "person": 62,
+      "theme": 91
     }
   },
   "nodes": [
@@ -190,6 +190,28 @@
       "degree": 13
     },
     {
+      "id": "episode:EP136",
+      "key": "EP136",
+      "label": "EP136",
+      "fullLabel": "EP136 · 影子舰队凭什么构架全球灰色贸易网络？1.5亿运力，改写世界贸易与货币规则！【EP136】",
+      "type": "episode",
+      "route": "episodes/EP136",
+      "summary": "本期把灰色贸易从美元、黄金和大国战略拉回到最具体的运输工具：影子舰队。节目认为，影子舰队不是单一国家海军，也不是有统一指挥的海盗组织，而是一套脱离西方保险、认证、定位和船东透明规则的平行航运网络。它通过老旧油轮、换旗换名、AIS 静默、船对船转运、原产地文件和离岸服务，把被制裁的石油重新洗进全球贸易，并进一步支撑起绕开 SWIFT 的结算闭环。",
+      "status": "curated",
+      "degree": 13
+    },
+    {
+      "id": "person:donald-trump",
+      "key": "donald-trump",
+      "label": "特朗普",
+      "fullLabel": "特朗普",
+      "type": "person",
+      "route": "people/donald-trump",
+      "summary": "特朗普是美国政治人物，现任美国总统，也是这些节目里反复出现的关键地缘角色之一。",
+      "status": null,
+      "degree": 12
+    },
+    {
       "id": "episode:EP120",
       "key": "EP120",
       "label": "EP120",
@@ -197,6 +219,17 @@
       "type": "episode",
       "route": "episodes/EP120",
       "summary": "本期围绕匈牙利大选展开，核心判断不是单纯的选举轮替，而是欧洲内部一次典型的“拆雷”成功。节目认为，这场胜利首先是年轻选民推动下的民意回归，其次才是地缘政治牌局里的再分配：欧盟拆掉了内部的一颗雷，俄罗斯和特朗普阵营则失去了一张能持续撬动欧洲裂缝的牌。",
+      "status": "curated",
+      "degree": 12
+    },
+    {
+      "id": "episode:EP130",
+      "key": "EP130",
+      "label": "EP130",
+      "fullLabel": "EP130 · 马六甲“收费站”24小时闹剧：印尼的野心与新加坡、马来西亚的坚决反对！【EP130】",
+      "type": "episode",
+      "route": "episodes/EP130",
+      "summary": "本期接着 EP122 对维文讲话的解读，借印尼财长提出“仿照霍尔木兹给马六甲收费”的 24 小时风波，说明新加坡和马来西亚为什么会几乎同步强烈反对。节目核心判断是：马六甲海峡真正值钱的不是一次性过路费，而是长期不收费、可预期、可停靠、可服务的航运秩序；新加坡靠服务费、金融和港口信用吃饭，马来西亚靠港口、灰色贸易和中转利益吃饭，印尼则因为地理与港口条件拿不到对应收益，才会试探性地提出收费。主持人进一步把这件事放进霍尔木兹、影子舰队、灰色贸易和东南亚裂变里看，认为全球航运秩序正在被短期设卡套利逻辑冲击。",
       "status": "curated",
       "degree": 12
     },
@@ -212,13 +245,13 @@
       "degree": 11
     },
     {
-      "id": "person:donald-trump",
-      "key": "donald-trump",
-      "label": "特朗普",
-      "fullLabel": "特朗普",
-      "type": "person",
-      "route": "people/donald-trump",
-      "summary": "特朗普是美国政治人物，现任美国总统，也是这些节目里反复出现的关键地缘角色之一。",
+      "id": "theme:maritime-chokepoints-and-route-order",
+      "key": "maritime-chokepoints-and-route-order",
+      "label": "海峡命门与航运秩序",
+      "fullLabel": "海峡命门与航运秩序",
+      "type": "theme",
+      "route": "themes/maritime-chokepoints-and-route-order",
+      "summary": "讨论海峡、运河和关键航道如何把地理位置变成规则、保险、资本和军事的综合权力。",
       "status": null,
       "degree": 11
     },
@@ -256,13 +289,13 @@
       "degree": 10
     },
     {
-      "id": "theme:maritime-chokepoints-and-route-order",
-      "key": "maritime-chokepoints-and-route-order",
-      "label": "海峡命门与航运秩序",
-      "fullLabel": "海峡命门与航运秩序",
-      "type": "theme",
-      "route": "themes/maritime-chokepoints-and-route-order",
-      "summary": "讨论海峡、运河和关键航道如何把地理位置变成规则、保险、资本和军事的综合权力。",
+      "id": "model:chokepoint-order-model",
+      "key": "chokepoint-order-model",
+      "label": "海峡秩序模型",
+      "fullLabel": "海峡秩序模型",
+      "type": "model",
+      "route": "models/chokepoint-order-model",
+      "summary": "真正决定咽喉通道价值的，不只是地理位置，而是谁定义通行规则、风险定价与法律边界。",
       "status": null,
       "degree": 10
     },
@@ -276,28 +309,6 @@
       "summary": "本期延续 EP005，但把张雪峰放到完全不同的位置上理解。节目借《西游记》里“灵感大王”的比喻，认为张雪峰并不是需要被彻底抹去的对手，而是一个擅长贩卖预期、替更大体系完成疏导和分流功能的中间人，因此他更像一次越位后的暂时性整肃，而不是永久消失。",
       "status": "curated",
       "degree": 10
-    },
-    {
-      "id": "episode:EP130",
-      "key": "EP130",
-      "label": "EP130",
-      "fullLabel": "EP130 · 马六甲“收费站”24小时闹剧：印尼的野心与新加坡、马来西亚的坚决反对！【EP130】",
-      "type": "episode",
-      "route": "episodes/EP130",
-      "summary": "本期接着 EP122 对维文讲话的解读，借印尼财长提出“仿照霍尔木兹给马六甲收费”的 24 小时风波，说明新加坡和马来西亚为什么会几乎同步强烈反对。节目核心判断是：马六甲海峡真正值钱的不是一次性过路费，而是长期不收费、可预期、可停靠、可服务的航运秩序；新加坡靠服务费、金融和港口信用吃饭，马来西亚靠港口、灰色贸易和中转利益吃饭，印尼则因为地理与港口条件拿不到对应收益，才会试探性地提出收费。主持人进一步把这件事放进霍尔木兹、影子舰队、灰色贸易和东南亚裂变里看，认为全球航运秩序正在被短期设卡套利逻辑冲击。",
-      "status": "curated",
-      "degree": 10
-    },
-    {
-      "id": "model:chokepoint-order-model",
-      "key": "chokepoint-order-model",
-      "label": "海峡秩序模型",
-      "fullLabel": "海峡秩序模型",
-      "type": "model",
-      "route": "models/chokepoint-order-model",
-      "summary": "真正决定咽喉通道价值的，不只是地理位置，而是谁定义通行规则、风险定价与法律边界。",
-      "status": null,
-      "degree": 9
     },
     {
       "id": "theme:ev-collapse-and-exit-risk",
@@ -318,6 +329,17 @@
       "type": "model",
       "route": "models/narrative-leverage",
       "summary": "通过一个足够大的故事，把原本有限的资源、信用和注意力撬成更大的资本、销量或支持度。",
+      "status": null,
+      "degree": 9
+    },
+    {
+      "id": "concept:chokepoint-leverage",
+      "key": "chokepoint-leverage",
+      "label": "咽喉杠杆",
+      "fullLabel": "咽喉杠杆",
+      "type": "concept",
+      "route": "concepts/chokepoint-leverage",
+      "summary": "控制海峡、运河和关键通道的人，往往能把地理位置转化成定价权、通行权和规则权。",
       "status": null,
       "degree": 9
     },
@@ -487,13 +509,13 @@
       "degree": 8
     },
     {
-      "id": "concept:chokepoint-leverage",
-      "key": "chokepoint-leverage",
-      "label": "咽喉杠杆",
-      "fullLabel": "咽喉杠杆",
-      "type": "concept",
-      "route": "concepts/chokepoint-leverage",
-      "summary": "控制海峡、运河和关键通道的人，往往能把地理位置转化成定价权、通行权和规则权。",
+      "id": "theme:sanctions-and-power-containment",
+      "key": "sanctions-and-power-containment",
+      "label": "制裁、遏制与集团竞争",
+      "fullLabel": "制裁、遏制与集团竞争",
+      "type": "theme",
+      "route": "themes/sanctions-and-power-containment",
+      "summary": "讨论制裁、门罗主义、海峡与联盟如何共同服务于压制对手集团的全球布局。",
       "status": null,
       "degree": 8
     },
@@ -850,13 +872,13 @@
       "degree": 7
     },
     {
-      "id": "theme:sanctions-and-power-containment",
-      "key": "sanctions-and-power-containment",
-      "label": "制裁、遏制与集团竞争",
-      "fullLabel": "制裁、遏制与集团竞争",
-      "type": "theme",
-      "route": "themes/sanctions-and-power-containment",
-      "summary": "讨论制裁、门罗主义、海峡与联盟如何共同服务于压制对手集团的全球布局。",
+      "id": "concept:sanction-containment",
+      "key": "sanction-containment",
+      "label": "制裁遏制",
+      "fullLabel": "制裁遏制",
+      "type": "concept",
+      "route": "concepts/sanction-containment",
+      "summary": "制裁的真正作用常常不是逼对手立刻认输，而是长期压低其外延空间、联动能力和做大速度。",
       "status": null,
       "degree": 7
     },
@@ -1136,6 +1158,28 @@
       "degree": 6
     },
     {
+      "id": "model:proxy-containment-ring",
+      "key": "proxy-containment-ring",
+      "label": "代理围堵环",
+      "fullLabel": "代理围堵环",
+      "type": "model",
+      "route": "models/proxy-containment-ring",
+      "summary": "代理围堵环解释大国如何通过盟友、代理人和通道控制分摊成本、封堵对手。",
+      "status": null,
+      "degree": 6
+    },
+    {
+      "id": "theme:southeast-asia-fragmentation-and-bloc-competition",
+      "key": "southeast-asia-fragmentation-and-bloc-competition",
+      "label": "东南亚裂变与集团竞争",
+      "fullLabel": "东南亚裂变与集团竞争",
+      "type": "theme",
+      "route": "themes/southeast-asia-fragmentation-and-bloc-competition",
+      "summary": "讨论东南亚如何从缓冲地带变成各方拉扯、重新站队和内部裂变并行发生的高风险区域。",
+      "status": null,
+      "degree": 6
+    },
+    {
       "id": "concept:phantom-growth",
       "key": "phantom-growth",
       "label": "幻象增长",
@@ -1202,17 +1246,6 @@
       "degree": 6
     },
     {
-      "id": "concept:sanction-containment",
-      "key": "sanction-containment",
-      "label": "制裁遏制",
-      "fullLabel": "制裁遏制",
-      "type": "concept",
-      "route": "concepts/sanction-containment",
-      "summary": "制裁的真正作用常常不是逼对手立刻认输，而是长期压低其外延空间、联动能力和做大速度。",
-      "status": null,
-      "degree": 6
-    },
-    {
       "id": "concept:balance-sheet-support",
       "key": "balance-sheet-support",
       "label": "资产负债表托底",
@@ -1242,6 +1275,17 @@
       "type": "episode",
       "route": "episodes/EP012",
       "summary": "本期把万科放回“亲爹华润变后爹深圳地铁”的时间线里，讨论一家公司为什么会从中国好儿子变成后爸毁灭者。节目认为，辛杰被带走和深圳地铁持续输血的疲态，意味着万科的续命链条本身已经变成新的风险源。",
+      "status": "curated",
+      "degree": 6
+    },
+    {
+      "id": "episode:EP019",
+      "key": "EP019",
+      "label": "EP019",
+      "fullLabel": "EP019 · 制裁，与小Lin说有不同的底层逻辑，那些被制裁最最严重的国家，都怎么样了?",
+      "type": "episode",
+      "route": "episodes/EP019",
+      "summary": "本期以对小Lin制裁视频的反驳为切口，提出一个更偏地缘结构的判断：制裁的核心并不是短期胁迫某个国家立刻让步，而是长期压低对手集团的总实力、外延空间与联合作战能力。按照这一逻辑，制裁是否“成功”不能只看单次政策有没有逼出结果，而要看它是否阻止了竞争集团成长为真正的全球性对手。",
       "status": "curated",
       "degree": 6
     },
@@ -1389,6 +1433,17 @@
       "degree": 6
     },
     {
+      "id": "episode:EP107",
+      "key": "EP107",
+      "label": "EP107",
+      "fullLabel": "EP107 · 未来12个月美元黄金怎么走？看懂川普的石油美元棋局，你就全明白了。【EP107】",
+      "type": "episode",
+      "route": "episodes/EP107",
+      "summary": "本期围绕美元、黄金与石油美元体系，提出一个强判断：真正侵蚀美元霸权的不是公开数据里的去美元化，而是藏在统计之外的灰色石油网络；特朗普真正想做的，也不是战略收缩，而是用代理围堵重新堵上这个漏洞。",
+      "status": "curated",
+      "degree": 6
+    },
+    {
       "id": "episode:EP114",
       "key": "EP114",
       "label": "EP114",
@@ -1429,28 +1484,6 @@
       "type": "theme",
       "route": "themes/founder-power-and-feedback",
       "summary": "讨论强创始人结构如何影响组织内部的信息流动与纠偏能力。",
-      "status": null,
-      "degree": 5
-    },
-    {
-      "id": "model:proxy-containment-ring",
-      "key": "proxy-containment-ring",
-      "label": "代理围堵环",
-      "fullLabel": "代理围堵环",
-      "type": "model",
-      "route": "models/proxy-containment-ring",
-      "summary": "代理围堵环解释大国如何通过盟友、代理人和通道控制分摊成本、封堵对手。",
-      "status": null,
-      "degree": 5
-    },
-    {
-      "id": "theme:southeast-asia-fragmentation-and-bloc-competition",
-      "key": "southeast-asia-fragmentation-and-bloc-competition",
-      "label": "东南亚裂变与集团竞争",
-      "fullLabel": "东南亚裂变与集团竞争",
-      "type": "theme",
-      "route": "themes/southeast-asia-fragmentation-and-bloc-competition",
-      "summary": "讨论东南亚如何从缓冲地带变成各方拉扯、重新站队和内部裂变并行发生的高风险区域。",
       "status": null,
       "degree": 5
     },
@@ -1616,17 +1649,6 @@
       "type": "episode",
       "route": "episodes/EP014",
       "summary": "本期把“学生连排便都要被时间表和焦虑卡住”当成一个极端但有代表性的切口，指出应试教育的问题不只是卷分数，而是整套学校生活都被考试驱动，最终同时伤害了学生的身体、精神和主体性，把人训练成只会服从标准答案的可管理材料。",
-      "status": "curated",
-      "degree": 5
-    },
-    {
-      "id": "episode:EP019",
-      "key": "EP019",
-      "label": "EP019",
-      "fullLabel": "EP019 · 制裁，与小Lin说有不同的底层逻辑，那些被制裁最最严重的国家，都怎么样了?",
-      "type": "episode",
-      "route": "episodes/EP019",
-      "summary": "本期以对小Lin制裁视频的反驳为切口，提出一个更偏地缘结构的判断：制裁的核心并不是短期胁迫某个国家立刻让步，而是长期压低对手集团的总实力、外延空间与联合作战能力。按照这一逻辑，制裁是否“成功”不能只看单次政策有没有逼出结果，而要看它是否阻止了竞争集团成长为真正的全球性对手。",
       "status": "curated",
       "degree": 5
     },
@@ -1895,6 +1917,17 @@
       "degree": 4
     },
     {
+      "id": "theme:dollar-system-and-gray-trade",
+      "key": "dollar-system-and-gray-trade",
+      "label": "美元体系与灰色贸易",
+      "fullLabel": "美元体系与灰色贸易",
+      "type": "theme",
+      "route": "themes/dollar-system-and-gray-trade",
+      "summary": "讨论石油美元的真实脆弱点，究竟藏在公开统计之外的哪些灰色交易链条里。",
+      "status": null,
+      "degree": 4
+    },
+    {
       "id": "model:platform-legibility-filter",
       "key": "platform-legibility-filter",
       "label": "平台可读性过滤器",
@@ -2115,17 +2148,6 @@
       "degree": 4
     },
     {
-      "id": "episode:EP107",
-      "key": "EP107",
-      "label": "EP107",
-      "fullLabel": "EP107 · 未来12个月美元黄金怎么走？看懂川普的石油美元棋局，你就全明白了。【EP107】",
-      "type": "episode",
-      "route": "episodes/EP107",
-      "summary": "本期围绕美元、黄金与石油美元体系，提出一个强判断：真正侵蚀美元霸权的不是公开数据里的去美元化，而是藏在统计之外的灰色石油网络；特朗普真正想做的，也不是战略收缩，而是用代理围堵重新堵上这个漏洞。",
-      "status": "curated",
-      "degree": 4
-    },
-    {
       "id": "episode:EP110",
       "key": "EP110",
       "label": "EP110",
@@ -2335,6 +2357,17 @@
       "degree": 3
     },
     {
+      "id": "concept:gray-oil-network",
+      "key": "gray-oil-network",
+      "label": "灰色石油网络",
+      "fullLabel": "灰色石油网络",
+      "type": "concept",
+      "route": "concepts/gray-oil-network",
+      "summary": "绕开正规结算和监管的石油流动，会在影子体系中重塑货币、制裁和地缘利益。",
+      "status": null,
+      "degree": 3
+    },
+    {
       "id": "model:technology-wave-cycle",
       "key": "technology-wave-cycle",
       "label": "技术浪潮周期",
@@ -2441,17 +2474,6 @@
       "type": "person",
       "route": "people/luo-yonghao",
       "summary": "罗永浩是中国互联网与消费电子领域的创业者、直播带货人物和公共表达者，在这些节目里主要作为外部参照人物出现。",
-      "status": null,
-      "degree": 3
-    },
-    {
-      "id": "theme:dollar-system-and-gray-trade",
-      "key": "dollar-system-and-gray-trade",
-      "label": "美元体系与灰色贸易",
-      "fullLabel": "美元体系与灰色贸易",
-      "type": "theme",
-      "route": "themes/dollar-system-and-gray-trade",
-      "summary": "讨论石油美元的真实脆弱点，究竟藏在公开统计之外的哪些灰色交易链条里。",
       "status": null,
       "degree": 3
     },
@@ -2628,6 +2650,28 @@
       "type": "concept",
       "route": "concepts/ceremonial-formalism",
       "summary": "组织越来越依赖场面、仪式和整齐感来证明自己有效，而真实目标和真实功能却被持续挤到后面。",
+      "status": null,
+      "degree": 3
+    },
+    {
+      "id": "concept:shadow-fleet",
+      "key": "shadow-fleet",
+      "label": "影子舰队",
+      "fullLabel": "影子舰队",
+      "type": "concept",
+      "route": "concepts/shadow-fleet",
+      "summary": "影子舰队是绕开西方保险、认证、定位和船东透明规则的平行航运网络。",
+      "status": null,
+      "degree": 3
+    },
+    {
+      "id": "model:sanction-parallel-market",
+      "key": "sanction-parallel-market",
+      "label": "制裁平行市场模型",
+      "fullLabel": "制裁平行市场模型",
+      "type": "model",
+      "route": "models/sanction-parallel-market",
+      "summary": "制裁如果没有消灭需求，就会把交易推向更高风险、更高利润、更难监管的平行市场。",
       "status": null,
       "degree": 3
     },
@@ -3006,6 +3050,17 @@
       "degree": 2
     },
     {
+      "id": "concept:sea-laundering",
+      "key": "sea-laundering",
+      "label": "海上洗白",
+      "fullLabel": "海上洗白",
+      "type": "concept",
+      "route": "concepts/sea-laundering",
+      "summary": "海上洗白是用静默航行、船对船转运、混油和原产地文件重写来抹掉货物来源的灰色操作。",
+      "status": null,
+      "degree": 2
+    },
+    {
       "id": "person:he-qi",
       "key": "he-qi",
       "label": "何旗",
@@ -3035,17 +3090,6 @@
       "type": "person",
       "route": "people/lawrence-wong",
       "summary": "黄循财是新加坡总理，也是节目讨论新加坡新阶段定位、主动中立和区域安全合作升级时的重要人物。",
-      "status": null,
-      "degree": 2
-    },
-    {
-      "id": "concept:gray-oil-network",
-      "key": "gray-oil-network",
-      "label": "灰色石油网络",
-      "fullLabel": "灰色石油网络",
-      "type": "concept",
-      "route": "concepts/gray-oil-network",
-      "summary": "绕开正规结算和监管的石油流动，会在影子体系中重塑货币、制裁和地缘利益。",
       "status": null,
       "degree": 2
     },
@@ -9835,6 +9879,71 @@
       "kind": "episode-theme"
     },
     {
+      "source": "episode:EP136",
+      "target": "concept:shadow-fleet",
+      "kind": "episode-concept"
+    },
+    {
+      "source": "episode:EP136",
+      "target": "concept:sea-laundering",
+      "kind": "episode-concept"
+    },
+    {
+      "source": "episode:EP136",
+      "target": "concept:gray-oil-network",
+      "kind": "episode-concept"
+    },
+    {
+      "source": "episode:EP136",
+      "target": "concept:sanction-containment",
+      "kind": "episode-concept"
+    },
+    {
+      "source": "episode:EP136",
+      "target": "concept:chokepoint-leverage",
+      "kind": "episode-concept"
+    },
+    {
+      "source": "episode:EP136",
+      "target": "model:sanction-parallel-market",
+      "kind": "episode-model"
+    },
+    {
+      "source": "episode:EP136",
+      "target": "model:proxy-containment-ring",
+      "kind": "episode-model"
+    },
+    {
+      "source": "episode:EP136",
+      "target": "model:chokepoint-order-model",
+      "kind": "episode-model"
+    },
+    {
+      "source": "episode:EP136",
+      "target": "person:donald-trump",
+      "kind": "episode-person"
+    },
+    {
+      "source": "episode:EP136",
+      "target": "theme:dollar-system-and-gray-trade",
+      "kind": "episode-theme"
+    },
+    {
+      "source": "episode:EP136",
+      "target": "theme:maritime-chokepoints-and-route-order",
+      "kind": "episode-theme"
+    },
+    {
+      "source": "episode:EP136",
+      "target": "theme:sanctions-and-power-containment",
+      "kind": "episode-theme"
+    },
+    {
+      "source": "episode:EP136",
+      "target": "theme:southeast-asia-fragmentation-and-bloc-competition",
+      "kind": "episode-theme"
+    },
+    {
       "source": "episode:EP120",
       "target": "concept:active-neutrality",
       "kind": "episode-concept"
@@ -9852,6 +9961,21 @@
     {
       "source": "episode:EP124",
       "target": "concept:pan-institutional-middle-class",
+      "kind": "episode-concept"
+    },
+    {
+      "source": "episode:EP130",
+      "target": "concept:sea-laundering",
+      "kind": "episode-concept"
+    },
+    {
+      "source": "episode:EP107",
+      "target": "concept:shadow-fleet",
+      "kind": "episode-concept"
+    },
+    {
+      "source": "episode:EP130",
+      "target": "concept:shadow-fleet",
       "kind": "episode-concept"
     },
     {
@@ -9902,6 +10026,16 @@
     {
       "source": "episode:EP120",
       "target": "model:rule-anchored-small-state-model",
+      "kind": "episode-model"
+    },
+    {
+      "source": "episode:EP019",
+      "target": "model:sanction-parallel-market",
+      "kind": "episode-model"
+    },
+    {
+      "source": "episode:EP107",
+      "target": "model:sanction-parallel-market",
       "kind": "episode-model"
     },
     {

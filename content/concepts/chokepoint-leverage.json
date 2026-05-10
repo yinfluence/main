@@ -36,6 +36,10 @@
     {
       "id": "EP133",
       "note": "节目把阿联酋的霍尔木兹外侧港口和能源通道，视为其跳出旧石油联盟约束的重要咽喉资产。"
+    },
+    {
+      "id": "EP136",
+      "note": "节目把马六甲附近的船对船转运和海上洗白，视为灰色贸易利用咽喉通道的操作现场。"
     }
   ],
   "signals": [
@@ -91,6 +95,11 @@
       "note": "节目借印尼马六甲收费试探说明，咽喉位置如果不能转化成服务与规则，就会退化成危险的设卡冲动。",
       "summary": "本期把马六甲收费风波拆成三国收益结构：新加坡靠服务和信用吃饭，马来西亚靠港口与中转利益吃饭，印尼则因为沿岸条件限制而难以把最长海岸线转成大型港口收益。正因如此，印尼的设卡冲动和新马的反对共同说明，咽喉杠杆的关键不是位置本身，而是能不能围绕位置长出可持续秩序。",
       "mechanism": "马六甲地理命门存在 -> 新加坡把它转成服务、金融、维修和补给体系 -> 马来西亚也在通畅航运中获得港口与中转好处 -> 印尼因浅岸和港口条件不足难以分到同等收益 -> 直接收费提议出现 -> 新马反对说明真正的命门价值来自长期秩序而非短期设卡。"
+    },
+    {
+      "id": "EP136",
+      "title": "影子舰队凭什么构架全球灰色贸易网络？1.5亿运力，改写世界贸易与货币规则！【EP136】",
+      "note": "节目把马六甲附近的船对船转运和海上洗白，视为灰色贸易利用咽喉通道的操作现场。"
     }
   ],
   "relatedConcepts": [
@@ -99,14 +108,17 @@
     "pressure-backfire",
     "sanction-containment",
     "gray-oil-network",
-    "youth-mobilization"
+    "youth-mobilization",
+    "shadow-fleet",
+    "sea-laundering"
   ],
   "relatedModels": [
     "chokepoint-order-model",
     "proxy-containment-ring",
     "regional-denial-model",
     "rule-anchored-small-state-model",
-    "time-arbitrage-model"
+    "time-arbitrage-model",
+    "sanction-parallel-market"
   ],
   "relatedThemes": [
     "海峡命门与航运秩序",
