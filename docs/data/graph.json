@@ -2,12 +2,12 @@
   "meta": {
     "title": "颖响力知识图谱",
     "subtitle": "节目、概念、模型、人物、主题之间的可视化连接网络",
-    "nodeCount": 483,
-    "linkCount": 959,
+    "nodeCount": 487,
+    "linkCount": 971,
     "typeCounts": {
-      "model": 61,
-      "episode": 136,
-      "concept": 133,
+      "model": 62,
+      "episode": 137,
+      "concept": 135,
       "person": 62,
       "theme": 91
     }
@@ -230,6 +230,17 @@
       "type": "episode",
       "route": "episodes/EP130",
       "summary": "本期接着 EP122 对维文讲话的解读，借印尼财长提出“仿照霍尔木兹给马六甲收费”的 24 小时风波，说明新加坡和马来西亚为什么会几乎同步强烈反对。节目核心判断是：马六甲海峡真正值钱的不是一次性过路费，而是长期不收费、可预期、可停靠、可服务的航运秩序；新加坡靠服务费、金融和港口信用吃饭，马来西亚靠港口、灰色贸易和中转利益吃饭，印尼则因为地理与港口条件拿不到对应收益，才会试探性地提出收费。主持人进一步把这件事放进霍尔木兹、影子舰队、灰色贸易和东南亚裂变里看，认为全球航运秩序正在被短期设卡套利逻辑冲击。",
+      "status": "curated",
+      "degree": 12
+    },
+    {
+      "id": "episode:EP137",
+      "key": "EP137",
+      "label": "EP137",
+      "fullLabel": "EP137 · 你坐的无人出租车安全吗？武汉萝卜快跑事故，给所有人提了致命醒！【EP137】",
+      "type": "episode",
+      "route": "episodes/EP137",
+      "summary": "本期从武汉萝卜快跑大面积趴窝的节目叙述切入，讨论全无人自动驾驶出租车为什么不是简单的“车会不会开”问题，而是城市交通、云端控制、监管权力和安全兜底共同组成的系统问题。节目核心判断是，集中式车队架构虽然便宜、好管、可追溯，但一旦云端与车辆失联或发生分歧，单车自主兜底就会被最高控制权压住，进而把单点故障放大成车队级、城市级风险。",
       "status": "curated",
       "degree": 12
     },
@@ -872,6 +883,17 @@
       "degree": 7
     },
     {
+      "id": "theme:ev-safety-and-consumer-testing",
+      "key": "ev-safety-and-consumer-testing",
+      "label": "新能源安全边界与消费者测试",
+      "fullLabel": "新能源安全边界与消费者测试",
+      "type": "theme",
+      "route": "themes/ev-safety-and-consumer-testing",
+      "summary": "讨论新能源车与相关电池系统如何把安全验证不足的代价，转移到真实用户和真实事故里。",
+      "status": null,
+      "degree": 7
+    },
+    {
       "id": "concept:sanction-containment",
       "key": "sanction-containment",
       "label": "制裁遏制",
@@ -1180,6 +1202,17 @@
       "degree": 6
     },
     {
+      "id": "model:distributed-innovation",
+      "key": "distributed-innovation",
+      "label": "分布式创新",
+      "fullLabel": "分布式创新",
+      "type": "model",
+      "route": "models/distributed-innovation",
+      "summary": "分布式创新强调多中心试错、失败吸收和真实反馈比单一大计划更能产生韧性。",
+      "status": null,
+      "degree": 6
+    },
+    {
       "id": "concept:phantom-growth",
       "key": "phantom-growth",
       "label": "幻象增长",
@@ -1220,17 +1253,6 @@
       "type": "person",
       "route": "people/wang-shi",
       "summary": "王石是中国地产与企业家叙事中的标志性人物，也是节目讨论地产人物退场、资产变化与中年权力重组时的重要案例。",
-      "status": null,
-      "degree": 6
-    },
-    {
-      "id": "theme:ev-safety-and-consumer-testing",
-      "key": "ev-safety-and-consumer-testing",
-      "label": "新能源安全边界与消费者测试",
-      "fullLabel": "新能源安全边界与消费者测试",
-      "type": "theme",
-      "route": "themes/ev-safety-and-consumer-testing",
-      "summary": "讨论新能源车与相关电池系统如何把安全验证不足的代价，转移到真实用户和真实事故里。",
       "status": null,
       "degree": 6
     },
@@ -1488,13 +1510,13 @@
       "degree": 5
     },
     {
-      "id": "model:distributed-innovation",
-      "key": "distributed-innovation",
-      "label": "分布式创新",
-      "fullLabel": "分布式创新",
-      "type": "model",
-      "route": "models/distributed-innovation",
-      "summary": "分布式创新强调多中心试错、失败吸收和真实反馈比单一大计划更能产生韧性。",
+      "id": "theme:planned-systems-and-innovation",
+      "key": "planned-systems-and-innovation",
+      "label": "大计划体制与创新约束",
+      "fullLabel": "大计划体制与创新约束",
+      "type": "theme",
+      "route": "themes/planned-systems-and-innovation",
+      "summary": "讨论统一目标和强组织动员如何带来短期速度，又如何在长期压缩创新、纠错与自发能动性。",
       "status": null,
       "degree": 5
     },
@@ -1583,6 +1605,17 @@
       "type": "concept",
       "route": "concepts/future-path-crowding",
       "summary": "所有人都挤向同一条被认为最安全的上升路径时，这条路本身就会因为拥挤而失去原来的安全性。",
+      "status": null,
+      "degree": 5
+    },
+    {
+      "id": "concept:consumer-testbed",
+      "key": "consumer-testbed",
+      "label": "消费者测试场",
+      "fullLabel": "消费者测试场",
+      "type": "concept",
+      "route": "concepts/consumer-testbed",
+      "summary": "企业把本该在研发和验证阶段承担的安全成本，转移到首批消费者、公共道路和真实事故里去消化。",
       "status": null,
       "degree": 5
     },
@@ -1862,17 +1895,6 @@
       "degree": 4
     },
     {
-      "id": "theme:planned-systems-and-innovation",
-      "key": "planned-systems-and-innovation",
-      "label": "大计划体制与创新约束",
-      "fullLabel": "大计划体制与创新约束",
-      "type": "theme",
-      "route": "themes/planned-systems-and-innovation",
-      "summary": "讨论统一目标和强组织动员如何带来短期速度，又如何在长期压缩创新、纠错与自发能动性。",
-      "status": null,
-      "degree": 4
-    },
-    {
       "id": "theme:local-government-financialization",
       "key": "local-government-financialization",
       "label": "地方政府资本化与补贴杠杆",
@@ -1880,6 +1902,17 @@
       "type": "theme",
       "route": "themes/local-government-financialization",
       "summary": "讨论地方政府如何从传统招商者变成资本玩家，并把补贴、基金和估值故事捆到一起。",
+      "status": null,
+      "degree": 4
+    },
+    {
+      "id": "concept:probabilistic-safety",
+      "key": "probabilistic-safety",
+      "label": "概率型安全",
+      "fullLabel": "概率型安全",
+      "type": "concept",
+      "route": "concepts/probabilistic-safety",
+      "summary": "风险不是每次都会爆发，但一旦触发就后果极重，因此最容易被组织和用户一起低估。",
       "status": null,
       "degree": 4
     },
@@ -1990,17 +2023,6 @@
       "type": "model",
       "route": "models/stability-over-growth-trap",
       "summary": "当系统把稳定当作增长的替代品，短期秩序会被保住，长期造血、流动和创新却会被压低。",
-      "status": null,
-      "degree": 4
-    },
-    {
-      "id": "concept:consumer-testbed",
-      "key": "consumer-testbed",
-      "label": "消费者测试场",
-      "fullLabel": "消费者测试场",
-      "type": "concept",
-      "route": "concepts/consumer-testbed",
-      "summary": "企业把本该在研发和验证阶段承担的安全成本，转移到首批消费者、公共道路和真实事故里去消化。",
       "status": null,
       "degree": 4
     },
@@ -2225,6 +2247,17 @@
       "degree": 3
     },
     {
+      "id": "model:bounded-social-experiment",
+      "key": "bounded-social-experiment",
+      "label": "边界化社会试验",
+      "fullLabel": "边界化社会试验",
+      "type": "model",
+      "route": "models/bounded-social-experiment",
+      "summary": "边界化社会试验强调制度创新必须有可承受范围、反馈机制和退出标准。",
+      "status": null,
+      "degree": 3
+    },
+    {
       "id": "model:subsidized-adoption-flywheel",
       "key": "subsidized-adoption-flywheel",
       "label": "补贴驱动采纳飞轮",
@@ -2309,17 +2342,6 @@
       "type": "theme",
       "route": "themes/rule-of-law-boundaries-and-social-trust",
       "summary": "关注法律灰区如何影响公众的善意、风险感和彼此信任。",
-      "status": null,
-      "degree": 3
-    },
-    {
-      "id": "concept:probabilistic-safety",
-      "key": "probabilistic-safety",
-      "label": "概率型安全",
-      "fullLabel": "概率型安全",
-      "type": "concept",
-      "route": "concepts/probabilistic-safety",
-      "summary": "风险不是每次都会爆发，但一旦触发就后果极重，因此最容易被组织和用户一起低估。",
       "status": null,
       "degree": 3
     },
@@ -2496,6 +2518,17 @@
       "type": "theme",
       "route": "themes/platform-traffic-and-price-distortion",
       "summary": "当平台把巨量流量集中到极少数节点，价格、信誉和真伪判断都会开始向流量中心倾斜。",
+      "status": null,
+      "degree": 3
+    },
+    {
+      "id": "theme:automotive-r-and-d-governance",
+      "key": "automotive-r-and-d-governance",
+      "label": "汽车研发治理与沉默联盟",
+      "fullLabel": "汽车研发治理与沉默联盟",
+      "type": "theme",
+      "route": "themes/automotive-r-and-d-governance",
+      "summary": "讨论汽车研发体系里的送检量产落差、师徒网络、权威压制和系统性失真。",
       "status": null,
       "degree": 3
     },
@@ -2731,6 +2764,17 @@
       "degree": 3
     },
     {
+      "id": "theme:ai-and-human-creativity",
+      "key": "ai-and-human-creativity",
+      "label": "AI替代与人的创造性",
+      "fullLabel": "AI替代与人的创造性",
+      "type": "theme",
+      "route": "themes/ai-and-human-creativity",
+      "summary": "关注自动化扩张之后，人类该如何重新定义自己的不可替代价值。",
+      "status": null,
+      "degree": 3
+    },
+    {
       "id": "episode:EP017",
       "key": "EP017",
       "label": "EP017",
@@ -2841,17 +2885,6 @@
       "degree": 2
     },
     {
-      "id": "model:bounded-social-experiment",
-      "key": "bounded-social-experiment",
-      "label": "边界化社会试验",
-      "fullLabel": "边界化社会试验",
-      "type": "model",
-      "route": "models/bounded-social-experiment",
-      "summary": "边界化社会试验强调制度创新必须有可承受范围、反馈机制和退出标准。",
-      "status": null,
-      "degree": 2
-    },
-    {
       "id": "concept:standard-answer-cage",
       "key": "standard-answer-cage",
       "label": "标准答案牢笼",
@@ -2859,6 +2892,17 @@
       "type": "concept",
       "route": "concepts/standard-answer-cage",
       "summary": "复杂问题被压缩成唯一正确答案后，人会失去提问、迁移和面对不确定性的能力。",
+      "status": null,
+      "degree": 2
+    },
+    {
+      "id": "concept:standard-labor-replacement",
+      "key": "standard-labor-replacement",
+      "label": "标准劳动力替代",
+      "fullLabel": "标准劳动力替代",
+      "type": "concept",
+      "route": "concepts/standard-labor-replacement",
+      "summary": "自动化最先替代可重复、可规训、可量化的标准岗位，而这些岗位往往属于普通人。",
       "status": null,
       "degree": 2
     },
@@ -3255,17 +3299,6 @@
       "type": "person",
       "route": "people/vladimir-putin",
       "summary": "普京是节目讨论俄罗斯战争体制、长期执政和接班风险时无法绕开的核心人物。",
-      "status": null,
-      "degree": 2
-    },
-    {
-      "id": "theme:automotive-r-and-d-governance",
-      "key": "automotive-r-and-d-governance",
-      "label": "汽车研发治理与沉默联盟",
-      "fullLabel": "汽车研发治理与沉默联盟",
-      "type": "theme",
-      "route": "themes/automotive-r-and-d-governance",
-      "summary": "讨论汽车研发体系里的送检量产落差、师徒网络、权威压制和系统性失真。",
       "status": null,
       "degree": 2
     },
@@ -3677,17 +3710,6 @@
       "degree": 2
     },
     {
-      "id": "theme:ai-and-human-creativity",
-      "key": "ai-and-human-creativity",
-      "label": "AI替代与人的创造性",
-      "fullLabel": "AI替代与人的创造性",
-      "type": "theme",
-      "route": "themes/ai-and-human-creativity",
-      "summary": "关注自动化扩张之后，人类该如何重新定义自己的不可替代价值。",
-      "status": null,
-      "degree": 2
-    },
-    {
       "id": "episode:EP085",
       "key": "EP085",
       "label": "EP085",
@@ -3739,17 +3761,6 @@
       "type": "model",
       "route": "models/boundary-governance",
       "summary": "边界治理模型主张在不适、争议和明确伤害之间，先界定边界而非急于二分善恶。",
-      "status": null,
-      "degree": 1
-    },
-    {
-      "id": "concept:standard-labor-replacement",
-      "key": "standard-labor-replacement",
-      "label": "标准劳动力替代",
-      "fullLabel": "标准劳动力替代",
-      "type": "concept",
-      "route": "concepts/standard-labor-replacement",
-      "summary": "自动化最先替代可重复、可规训、可量化的标准岗位，而这些岗位往往属于普通人。",
       "status": null,
       "degree": 1
     },
@@ -4256,6 +4267,28 @@
       "type": "concept",
       "route": "concepts/cosmetic-war-imagery",
       "summary": "战争角色被拍成精致、洁净、可嗑的人设时，残酷现实会被化妆品式视觉吞掉。",
+      "status": null,
+      "degree": 1
+    },
+    {
+      "id": "concept:centralized-control-failure",
+      "key": "centralized-control-failure",
+      "label": "集中式控制反噬",
+      "fullLabel": "集中式控制反噬",
+      "type": "concept",
+      "route": "concepts/centralized-control-failure",
+      "summary": "权力、决策和兜底都集中到一个中心后，系统会更好管理，也更容易把单点故障放大成整体故障。",
+      "status": null,
+      "degree": 1
+    },
+    {
+      "id": "model:centralized-control-backfire",
+      "key": "centralized-control-backfire",
+      "label": "集中式控制反噬模型",
+      "fullLabel": "集中式控制反噬模型",
+      "type": "model",
+      "route": "models/centralized-control-backfire",
+      "summary": "集中控制把监管便利和低成本做出来，也会把失效点集中到同一个中心节点上。",
       "status": null,
       "degree": 1
     },
@@ -4960,6 +4993,17 @@
       "type": "theme",
       "route": "themes/civilization-power-and-vulnerable-bodies",
       "summary": "讨论一个社会如何对待妇女、儿童和弱者，往往比它如何讲述自己的文明更能暴露制度底色。",
+      "status": null,
+      "degree": 1
+    },
+    {
+      "id": "concept:system-fallback",
+      "key": "system-fallback",
+      "label": "系统兜底",
+      "fullLabel": "系统兜底",
+      "type": "concept",
+      "route": "concepts/system-fallback",
+      "summary": "复杂系统不能只靠一个大脑或一层控制，必须在异常状态下保留可执行的多层接管和降级能力。",
       "status": null,
       "degree": 1
     },
@@ -9941,6 +9985,66 @@
     {
       "source": "episode:EP136",
       "target": "theme:southeast-asia-fragmentation-and-bloc-competition",
+      "kind": "episode-theme"
+    },
+    {
+      "source": "episode:EP137",
+      "target": "concept:centralized-control-failure",
+      "kind": "episode-concept"
+    },
+    {
+      "source": "episode:EP137",
+      "target": "concept:system-fallback",
+      "kind": "episode-concept"
+    },
+    {
+      "source": "episode:EP137",
+      "target": "concept:consumer-testbed",
+      "kind": "episode-concept"
+    },
+    {
+      "source": "episode:EP137",
+      "target": "concept:probabilistic-safety",
+      "kind": "episode-concept"
+    },
+    {
+      "source": "episode:EP137",
+      "target": "concept:standard-labor-replacement",
+      "kind": "episode-concept"
+    },
+    {
+      "source": "episode:EP137",
+      "target": "model:centralized-control-backfire",
+      "kind": "episode-model"
+    },
+    {
+      "source": "episode:EP137",
+      "target": "model:bounded-social-experiment",
+      "kind": "episode-model"
+    },
+    {
+      "source": "episode:EP137",
+      "target": "model:distributed-innovation",
+      "kind": "episode-model"
+    },
+    {
+      "source": "episode:EP137",
+      "target": "theme:ev-safety-and-consumer-testing",
+      "kind": "episode-theme"
+    },
+    {
+      "source": "episode:EP137",
+      "target": "theme:automotive-r-and-d-governance",
+      "kind": "episode-theme"
+    },
+    {
+      "source": "episode:EP137",
+      "target": "theme:planned-systems-and-innovation",
+      "kind": "episode-theme"
+    },
+    {
+      "source": "episode:EP137",
+      "target": "theme:ai-and-human-creativity",
       "kind": "episode-theme"
     },
     {
