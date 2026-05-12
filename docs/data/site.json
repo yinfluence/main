@@ -2,7 +2,7 @@
   "meta": {
     "title": "颖响力知识库",
     "subtitle": "节目、概念、思想模型的结构化索引",
-    "updatedAt": "2026-05-12T17:12:13.789Z"
+    "updatedAt": "2026-05-12T17:34:38.505Z"
   },
   "stats": {
     "episodes": 138,
@@ -61839,6 +61839,9 @@
     {
       "kind": "product",
       "asOf": "2026-05-12",
+      "aliases": [
+        "凯文·凯利《失控》"
+      ],
       "sources": [
         {
           "title": "Kevin Kelly: Out of Control",
@@ -61890,7 +61893,6 @@
       ],
       "id": "凯文凯利《失控》",
       "name": "凯文凯利《失控》",
-      "aliases": [],
       "relatedKeywords": [
         "免费审核员",
         "分层审核制度",

@@ -1593,15 +1593,23 @@ function getInlineReferencePopupSummary(item = {}) {
   return trimInlineReferencePopupText(text);
 }
 
-function addInlineReferenceCandidate(candidates, seenLabels, label, route, type, source = 'name', item = null) {
+function inlineReferenceCandidatePriority(candidate) {
+  if (candidate.source === 'name') return 100;
+  if (candidate.type === 'keywords') return 80;
+  if (candidate.type === 'models') return 70;
+  if (candidate.type === 'concepts') return 60;
+  if (candidate.type === 'themes') return 50;
+  return 0;
+}
+
+function addInlineReferenceCandidate(candidates, labelIndex, label, route, type, source = 'name', item = null) {
   const text = String(label || '').trim();
   if (!isReadableReferenceAlias(text, source, item)) return;
   if (!/[^\x00-\x7F]/.test(text) && text.length < 3) return;
   const labelKey = text.toLowerCase();
   const routeKey = inlineReferenceRouteKey(route);
-  if (!labelKey || !routeKey || seenLabels.has(labelKey)) return;
-  seenLabels.add(labelKey);
-  candidates.push({
+  if (!labelKey || !routeKey) return;
+  const candidate = {
     label: text,
     labelLower: labelKey,
     route,
@@ -1610,20 +1618,29 @@ function addInlineReferenceCandidate(candidates, seenLabels, label, route, type,
     source,
     title: item?.name || item?.title || text,
     summary: getInlineReferencePopupSummary(item || {})
-  });
+  };
+  const existingIndex = labelIndex.get(labelKey);
+  if (typeof existingIndex === 'number') {
+    const existing = candidates[existingIndex];
+    if (inlineReferenceCandidatePriority(existing) >= inlineReferenceCandidatePriority(candidate)) return;
+    candidates[existingIndex] = candidate;
+    return;
+  }
+  labelIndex.set(labelKey, candidates.length);
+  candidates.push(candidate);
 }
 
 function getInlineKnowledgeReferenceCandidates() {
   if (!site) return [];
   if (inlineKnowledgeReferenceCache) return inlineKnowledgeReferenceCache;
   const candidates = [];
-  const seenLabels = new Set();
+  const labelIndex = new Map();
   const addCollection = (collection = [], type, routeType = type) => {
     for (const item of collection || []) {
       const route = routeTo(`${routeType}/${item.id}`);
-      addInlineReferenceCandidate(candidates, seenLabels, item.name || item.title, route, type, 'name', item);
+      addInlineReferenceCandidate(candidates, labelIndex, item.name || item.title, route, type, 'name', item);
       for (const alias of item.aliases || []) {
-        addInlineReferenceCandidate(candidates, seenLabels, alias, route, type, 'alias', item);
+        addInlineReferenceCandidate(candidates, labelIndex, alias, route, type, 'alias', item);
       }
     }
   };
@@ -1833,6 +1850,7 @@ function closeInlineEpisodePopup(reference = activeInlineEpisodeRef) {
   reference.classList.remove('is-popup-open');
   const popup = getInlineEpisodePopupElement();
   popup.classList.remove('is-visible');
+  popup.classList.remove('is-placed');
   popup.style.visibility = '';
   popup.style.left = '';
   popup.style.top = '';
@@ -1851,6 +1869,7 @@ function positionInlineEpisodePopup(reference) {
   if (!(titleNode instanceof HTMLElement) || !(summaryNode instanceof HTMLElement)) return;
   titleNode.textContent = title;
   summaryNode.textContent = summary;
+  popup.classList.remove('is-placed');
 
   closeInlineEpisodePopup(activeInlineEpisodeRef);
   reference.classList.add('is-popup-open');
@@ -1897,6 +1916,11 @@ function positionInlineEpisodePopup(reference) {
   popup.style.visibility = '';
 
   activeInlineEpisodeRef = reference;
+  window.requestAnimationFrame(() => {
+    if (activeInlineEpisodeRef === reference) {
+      popup.classList.add('is-placed');
+    }
+  });
 }
 
 function graphStatValue() {

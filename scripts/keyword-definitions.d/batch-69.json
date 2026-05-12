@@ -462,6 +462,9 @@
   "凯文凯利《失控》": {
     "kind": "product",
     "asOf": "2026-05-12",
+    "aliases": [
+      "凯文·凯利《失控》"
+    ],
     "sources": [
       {
         "title": "Kevin Kelly: Out of Control",
