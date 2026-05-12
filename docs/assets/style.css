@@ -3951,7 +3951,7 @@ article.list-item[data-list-item-href]:hover .inline-knowledge-link:focus-visibl
 }
 
 .inline-episode-global-popup.is-visible.is-placed {
-  animation: inlinePopupEnter 400ms ease-out both;
+  animation: inlinePopupEnter 300ms ease-out both;
 }
 
 .inline-episode-global-popup strong {
