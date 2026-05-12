@@ -5668,6 +5668,7 @@ body.page-knowledge-detail {
   }
 
   .home-search-toolbar.mobile {
+    position: static;
     top: 8px;
     padding: 6px;
     border-radius: 14px;

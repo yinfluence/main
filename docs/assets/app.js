@@ -3712,13 +3712,11 @@ function visibleEpisodeWindow(episodes = [], start = 0, visibleCount = homeEpiso
 function scheduleHomeEpisodeAutoAdvance(maxIndex) {
   window.clearTimeout(homeEpisodeCarouselTimer);
   if (maxIndex <= 0) return;
+  if (useMobileHomeLayout()) return;
   const waitMs = Math.max(homeEpisodeAutoAdvancePausedUntil - Date.now(), 0);
-  const intervalMs = useMobileHomeLayout()
-    ? HOME_EPISODE_AUTO_ADVANCE_MS
-    : HOME_EPISODE_DESKTOP_AUTO_ADVANCE_MS;
   homeEpisodeCarouselTimer = window.setTimeout(() => {
     advanceHomeEpisodeCarousel(1, maxIndex);
-  }, Math.max(intervalMs, waitMs));
+  }, Math.max(HOME_EPISODE_DESKTOP_AUTO_ADVANCE_MS, waitMs));
 }
 
 function pauseHomeEpisodeAutoAdvance(durationMs = 6500) {
@@ -4387,6 +4385,7 @@ function renderHomeEpisodeCarousel({ direction = 0 } = {}) {
 
 function renderHome(focusSectionId = '') {
   const isMobile = useMobileHomeLayout();
+  homeEpisodeCarouselIndex = 0;
   const featuredEpisodes = getHomeFeaturedEpisodes();
   lastHomeMobileLayout = isMobile;
   const peopleCount = getPeopleKeywords(PERSON_NAV_MIN_REFERENCES).length;
@@ -4440,7 +4439,7 @@ function renderHome(focusSectionId = '') {
     </a>
   ` : '';
   const homeSearchToolbarMarkup = `
-    <div class="home-search-toolbar${isMobile ? ' mobile home-search-toolbar-float-only' : ''}">
+    <div class="home-search-toolbar${isMobile ? ' mobile' : ''}">
       <div class="search-row">
         <input id="search-input" type="text" placeholder="搜索知识库：节目、概念、模型、人物、主题，如 EP019 / 特朗普 / 安全阀治理">
         <button id="search-submit" class="search-submit" type="button">搜索</button>
@@ -4604,7 +4603,7 @@ function renderHome(focusSectionId = '') {
     });
   }
 
-  if (homeSearchToolbar) {
+  if (homeSearchToolbar && !isMobile) {
     setupHomeSearchToolbarBehavior(homeSearchToolbar);
   }
 
