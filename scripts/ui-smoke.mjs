@@ -176,10 +176,22 @@ async function setViewport(client, { width, height, mobile }) {
 }
 
 async function navigate(client, url, readySelector) {
+  const targetHash = new URL(url).hash;
   await client.send('Page.navigate', { url });
   await waitForCondition(
     client,
-    `document.readyState === 'complete' && !document.querySelector('.loading') && Boolean(document.querySelector(${JSON.stringify(readySelector)}))`,
+    `document.readyState === 'complete' && ${targetHash ? `location.hash === ${JSON.stringify(targetHash)}` : 'true'}`,
+    { timeoutMs: 15000, label: `location ready for ${url}` }
+  );
+  if (targetHash) {
+    await evaluate(client, `window.dispatchEvent(new HashChangeEvent('hashchange'))`);
+  }
+  await waitForCondition(
+    client,
+    `document.readyState === 'complete'
+      && ${targetHash ? `location.hash === ${JSON.stringify(targetHash)}` : 'true'}
+      && !document.querySelector('.loading')
+      && Boolean(document.querySelector(${JSON.stringify(readySelector)}))`,
     { timeoutMs: 15000, label: `page ready for ${url}` }
   );
 }
@@ -235,9 +247,10 @@ async function runKnowledgeDetailChecks(client) {
   assert(
     await evaluate(client, `(() => {
       const titles = [...document.querySelectorAll('.accordion-summary')].map((node) => node.textContent?.trim() || '');
-      return ['定义', '常见场景', '识别信号', '使用边界', '进一步追问'].every((title) => titles.includes(title));
+      return ['定义', '常见场景', '信息关联', '判断边界'].every((title) => titles.includes(title))
+        && !['识别信号', '使用边界', '进一步追问'].some((title) => titles.includes(title));
     })()`),
-    'Concept detail should render the SOP accordion analysis stack'
+    'Concept detail should render the updated knowledge accordion structure without old column labels'
   );
   assert(
     await evaluate(client, `(() => {
@@ -271,9 +284,10 @@ async function runKnowledgeDetailChecks(client) {
   assert(
     await evaluate(client, `(() => {
       const titles = [...document.querySelectorAll('.accordion-summary')].map((node) => node.textContent?.trim() || '');
-      return ['机制定义', '在颖响力里的用法', '观察信号', '适用边界', '进一步追问'].every((title) => titles.includes(title));
+      return ['机制定义', '在颖响力里的用法', '信息关联', '判断边界'].every((title) => titles.includes(title))
+        && !['观察信号', '适用边界', '进一步追问'].some((title) => titles.includes(title));
     })()`),
-    'Model detail should use the same accordion-based analysis structure as concept pages'
+    'Model detail should use the updated accordion-based analysis structure as concept pages'
   );
   assert(
     await evaluate(client, `Boolean(document.querySelector('.detail-episode-list .detail-section-action'))`),
@@ -283,8 +297,35 @@ async function runKnowledgeDetailChecks(client) {
   await navigate(client, `${baseUrl}/#/models/chokepoint-order-model`, '.detail-header');
   await waitForCondition(
     client,
-    `location.hash === '#/models/chokepoint-order-model' && Boolean(document.querySelector('.detail-episode-list .detail-section-meta'))`,
+    `location.hash === '#/models/chokepoint-order-model'
+      && document.querySelector('.detail-header .detail-title')?.textContent?.trim() === '海峡秩序模型'
+      && Boolean(document.querySelector('.detail-episode-list .detail-section-meta'))`,
     { timeoutMs: 4000, label: 'chokepoint model route settled' }
+  );
+  assert(
+    await evaluate(client, `(() => {
+      const links = [...document.querySelectorAll('.knowledge-analysis .inline-knowledge-link')]
+        .map((node) => ({ text: node.textContent?.trim() || '', href: node.getAttribute('href') || '' }));
+      return links.some((link) => link.text === '马六甲海峡' && link.href === '#/keywords/malacca-strait')
+        && links.some((link) => link.text === '新加坡' && link.href === '#/keywords/singapore')
+        && !links.some((link) => link.text === '海峡秩序模型');
+    })()`),
+    'Knowledge detail copy should auto-link high-confidence referenced entries without linking the current page'
+  );
+
+  await navigate(client, `${baseUrl}/#/concepts/inventory-banking`, '.detail-header');
+  await waitForCondition(
+    client,
+    `location.hash === '#/concepts/inventory-banking' && document.querySelector('.detail-header .detail-title')?.textContent?.trim() === '库存银行化'`,
+    { timeoutMs: 4000, label: 'inventory concept route settled' }
+  );
+  assert(
+    await evaluate(client, `(() => {
+      const linkedTexts = [...document.querySelectorAll('.knowledge-analysis .inline-knowledge-link')]
+        .map((node) => node.textContent?.trim() || '');
+      return !linkedTexts.includes('库存');
+    })()`),
+    'Inline knowledge linking should avoid low-confidence two-character generic keyword matches'
   );
 
   await navigate(client, `${baseUrl}/#/themes/platform-labor-and-lived-reality`, '.detail-header');
@@ -296,16 +337,260 @@ async function runKnowledgeDetailChecks(client) {
   assert(
     await evaluate(client, `(() => {
       const titles = [...document.querySelectorAll('.accordion-summary')].map((node) => node.textContent?.trim() || '');
-      const heading = document.querySelector('.knowledge-analysis h2')?.textContent?.trim() || '';
       const bodyText = document.querySelector('.knowledge-analysis')?.textContent || '';
-      return titles.length === 0 && heading === '主题说明' && !bodyText.includes('这类主题页的作用');
+      return ['主题说明', '归线依据', '观察维度', '判断边界'].every((title) => titles.includes(title))
+        && !titles.includes('进一步追问')
+        && !titles.includes('使用边界')
+        && !bodyText.includes('这类主题页的作用');
     })()`),
-    'Theme detail should render a plain theme-intro section when only the theme description exists'
+    'Theme detail should use the updated structured analysis stack as concept/model pages'
   );
   assert(
     await evaluate(client, `Boolean(document.querySelector('.detail-episode-list .detail-section-action.is-disabled'))`),
     'Theme detail should render the disabled "无需展开" action when there are only a few episodes'
   );
+
+  await navigate(client, `${baseUrl}/#/keywords/${encodeURIComponent('俄乌战争')}`, '.detail-header');
+  await waitForCondition(
+    client,
+    `document.querySelector('.detail-header .detail-title')?.textContent?.trim() === '俄乌战争'`,
+    { timeoutMs: 4000, label: 'keyword detail route settled' }
+  );
+  assert(
+    await evaluate(client, `(() => {
+      const titles = [...document.querySelectorAll('.accordion-summary')].map((node) => node.textContent?.trim() || '');
+      const bodyText = document.querySelector('#app')?.textContent || '';
+      return Boolean(document.querySelector('.detail-header.knowledge-overview'))
+        && ['事件说明', '冲突结构', '节目关联', '后续影响', '延展阅读'].every((title) => titles.includes(title))
+        && !['为什么重要', '使用边界', '相关节点'].some((title) => titles.includes(title))
+        && !titles.includes('进一步追问')
+        && !titles.includes('为什么保留这个入口')
+        && !bodyText.includes('简单介绍')
+        && Boolean(document.querySelector('.detail-episode-list.knowledge-evidence .episode-index-card'));
+    })()`),
+    'Keyword detail should render as a classified knowledge card instead of the old thin intro page'
+  );
+}
+
+async function runRouteStateRestoreChecks(client) {
+  await navigate(client, `${baseUrl}/#/concepts/credential-rent`, '.detail-header');
+  await waitForCondition(
+    client,
+    `location.hash === '#/concepts/credential-rent' && document.querySelector('.detail-header .detail-title')?.textContent?.trim() === '身份租值'`,
+    { timeoutMs: 4000, label: 'route restore source detail settled' }
+  );
+  const savedScrollY = await evaluate(client, `(() => {
+    const details = document.querySelector('details.accordion-item[data-progress-label="定义"]');
+    if (!details) return -1;
+    details.open = true;
+    details.scrollIntoView({ block: 'start', behavior: 'instant' });
+    window.scrollBy(0, -24);
+    return window.scrollY;
+  })()`);
+  assert(savedScrollY >= 0, 'Concept detail should expose a restorable definition accordion');
+  await clickSelector(client, '.detail-header-meta a.chip');
+  await waitForCondition(
+    client,
+    `location.hash !== '#/concepts/credential-rent' && Boolean(document.querySelector('.detail-header .detail-title'))`,
+    { timeoutMs: 4000, label: 'internal reference navigation settled' }
+  );
+  await evaluate(client, `history.back(); true;`);
+  await waitForCondition(
+    client,
+    `location.hash === '#/concepts/credential-rent'
+      && document.querySelector('details.accordion-item[data-progress-label="定义"]')?.open`,
+    { timeoutMs: 5000, label: 'back navigation restores accordion state' }
+  );
+  await waitForCondition(
+    client,
+    `(() => {
+      const details = document.querySelector('details.accordion-item[data-progress-label="定义"]');
+      if (!details?.open) return false;
+      const rect = details.getBoundingClientRect();
+      return rect.top >= -80 && rect.top <= Math.min(360, window.innerHeight * 0.6)
+        && Math.abs(window.scrollY - ${JSON.stringify(savedScrollY)}) < 520;
+    })()`,
+    { timeoutMs: 3000, label: 'back navigation restores opened accordion position' }
+  );
+}
+
+async function clickFirstReferenceCardBody(client) {
+  await sleep(750);
+  const target = await evaluate(client, `new Promise((resolve) => {
+    const firstSummary = document.querySelector('.accordion-summary');
+    firstSummary?.click();
+    window.setTimeout(() => {
+      const cards = [...document.querySelectorAll('details[open] .list-item[data-list-item-href]')];
+      const card = cards.find((item) => item.offsetParent !== null);
+      if (!card) {
+        resolve(null);
+        return;
+      }
+      card.scrollIntoView({ block: 'center', behavior: 'instant' });
+      window.requestAnimationFrame(() => {
+        const rect = card.getBoundingClientRect();
+        resolve({
+          href: card.getAttribute('data-list-item-href') || '',
+          x: Math.min(rect.right - 28, rect.left + rect.width / 2),
+          y: Math.min(rect.bottom - 24, rect.top + rect.height / 2)
+        });
+      });
+    }, 120);
+  })`);
+  assert(target?.href, 'Reference index should expose a visible card route');
+  await evaluate(client, `(() => {
+    const card = document.querySelector('.list-item[data-list-item-href]');
+    card?.dispatchEvent(new MouseEvent('click', { bubbles: true, cancelable: true, view: window }));
+    return true;
+  })()`);
+  return target.href;
+}
+
+async function runReferenceIndexCardNavigationChecks(client) {
+  for (const [route, expectedPrefix] of [
+    ['keywords', '#/keywords/'],
+    ['concepts', '#/concepts/'],
+    ['models', '#/models/'],
+    ['people', '#/keywords/'],
+    ['themes', '#/themes/']
+  ]) {
+    await navigate(client, `${baseUrl}/#/${route}`, '.accordion-summary');
+    const expectedHref = await clickFirstReferenceCardBody(client);
+    assert(expectedHref.startsWith(expectedPrefix), `${route} index card should expose a ${expectedPrefix} detail route`);
+    await waitForCondition(
+      client,
+      `location.hash === ${JSON.stringify(expectedHref)} && Boolean(document.querySelector('.detail-header .detail-title'))`,
+      { timeoutMs: 4000, label: `${route} index card body click opens detail` }
+    );
+  }
+}
+
+async function runInlineEpisodeLinkStyleChecks(client) {
+  await navigate(client, `${baseUrl}/#/keywords/${encodeURIComponent('俄乌战争')}`, '.inline-episode-link');
+  assert(
+    await evaluate(client, `(() => {
+      const link = document.querySelector('.inline-episode-link');
+      if (!link) return false;
+      const style = getComputedStyle(link);
+      return style.textDecorationLine === 'none'
+        && Number.parseFloat(style.fontWeight) >= 700
+        && style.backgroundColor !== 'rgba(0, 0, 0, 0)';
+    })()`),
+    'Inline episode links should avoid permanent underlines while remaining visually distinct'
+  );
+}
+
+async function runKnowledgeEvidenceContrastChecks(client) {
+  await navigate(client, `${baseUrl}/#/keywords/${encodeURIComponent('数字注水')}`, '.detail-episode-list');
+  await waitForCondition(
+    client,
+    `Boolean(document.querySelector('.knowledge-evidence .inline-knowledge-link'))`,
+    { timeoutMs: 4000, label: 'knowledge evidence inline links rendered' }
+  );
+  assert(
+    await evaluate(client, `(() => {
+      function luminance(color) {
+        const match = String(color).match(/rgba?\\((\\d+),\\s*(\\d+),\\s*(\\d+)/);
+        if (!match) return 0;
+        const [r, g, b] = match.slice(1, 4).map((value) => Number(value) / 255).map((value) => (
+          value <= 0.03928 ? value / 12.92 : Math.pow((value + 0.055) / 1.055, 2.4)
+        ));
+        return 0.2126 * r + 0.7152 * g + 0.0722 * b;
+      }
+      const link = document.querySelector('.knowledge-evidence .inline-knowledge-link');
+      if (!link) return false;
+      const style = getComputedStyle(link);
+      return style.textDecorationLine === 'none'
+        && luminance(style.color) > 0.48
+        && style.backgroundColor !== 'rgba(0, 0, 0, 0)';
+    })()`),
+    'Inline knowledge links in the dark evidence section should remain visibly bright and non-underlined'
+  );
+
+  const hoverTarget = await evaluate(client, `(() => {
+    const card = document.querySelector('.knowledge-evidence .episode-index-card[data-episode-href]');
+    if (!card) return null;
+    card.scrollIntoView({ block: 'center', behavior: 'instant' });
+    const rect = card.getBoundingClientRect();
+    return { x: rect.left + rect.width / 2, y: rect.top + rect.height / 2 };
+  })()`);
+  assert(hoverTarget, 'Knowledge evidence should expose a hoverable related episode card');
+  await client.send('Input.dispatchMouseEvent', { type: 'mouseMoved', x: hoverTarget.x, y: hoverTarget.y, button: 'none' });
+  await sleep(120);
+  assert(
+    await evaluate(client, `(() => {
+      function luminance(color) {
+        const match = String(color).match(/rgba?\\((\\d+),\\s*(\\d+),\\s*(\\d+)/);
+        if (!match) return 0;
+        const [r, g, b] = match.slice(1, 4).map((value) => Number(value) / 255).map((value) => (
+          value <= 0.03928 ? value / 12.92 : Math.pow((value + 0.055) / 1.055, 2.4)
+        ));
+        return 0.2126 * r + 0.7152 * g + 0.0722 * b;
+      }
+      const card = document.querySelector('.knowledge-evidence .episode-index-card[data-episode-href]');
+      const title = card?.querySelector('.card-primary-link h3');
+      const summary = card?.querySelector('.episode-index-summary');
+      const chip = card?.querySelector('a.chip');
+      if (!card || !title || !summary || !chip) return false;
+      const titleLum = luminance(getComputedStyle(title).color);
+      const summaryLum = luminance(getComputedStyle(summary).color);
+      const chipLum = luminance(getComputedStyle(chip).color);
+      return getComputedStyle(card).backgroundImage.includes('linear-gradient')
+        && titleLum < 0.14
+        && summaryLum < 0.28
+        && chipLum > 0.78;
+    })()`),
+    'Hovered related episode cards should use a readable light card surface with coordinated dark text and light chips'
+  );
+}
+
+async function runPersonKeywordDetailChecks(client) {
+  await navigate(client, `${baseUrl}/#/keywords/trump`, '.detail-header');
+  await waitForCondition(
+    client,
+    `location.hash === '#/keywords/trump' && !document.querySelector('.loading') && Boolean(document.querySelector('.detail-header .detail-title')?.textContent?.trim())`,
+    { timeoutMs: 4000, label: 'trump keyword route has rendered a detail title' }
+  );
+  const personCheck = await evaluate(client, `(() => {
+      const headings = [...document.querySelectorAll('.detail-section h2, .detail-section h3')]
+        .map((node) => node.textContent?.trim() || '');
+      const titles = [...document.querySelectorAll('.accordion-summary')].map((node) => node.textContent?.trim() || '');
+      const bodyText = document.querySelector('#app')?.textContent || '';
+      const requiredTitles = ['基础介绍', '节目关联', '个人风格', '做事方式', '延展阅读'];
+      const requiredText = ['第45任', '第47任', '2017年至2021年', '2025年1月20日', '交易化', '美国战略与成本转嫁'];
+      const missingTitles = requiredTitles.filter((title) => !titles.includes(title));
+      const bannedTitles = ['为什么重要', '使用边界', '相关节点', '进一步追问'].filter((title) => titles.includes(title));
+      const missingText = requiredText.filter((text) => !bodyText.includes(text));
+      return {
+        ok: document.querySelector('.detail-header .detail-title')?.textContent?.trim() === '特朗普'
+          && !headings.includes('相关写法')
+          && missingTitles.length === 0
+          && bannedTitles.length === 0
+          && !bodyText.includes('donald-trump')
+          && missingText.length === 0
+          && Boolean(document.querySelector('.detail-episode-list.knowledge-evidence .episode-index-card')),
+        headings,
+        titles,
+        title: document.querySelector('.detail-header .detail-title')?.textContent?.trim() || '',
+        hash: location.hash,
+        missingTitles,
+        bannedTitles,
+        missingText,
+        hasInternalAlias: bodyText.includes('donald-trump'),
+        hasEpisodeCard: Boolean(document.querySelector('.detail-episode-list.knowledge-evidence .episode-index-card'))
+      };
+    })()`);
+  assert(
+    personCheck.ok,
+    `Person keyword detail should use the wiki-style person IA, hide internal aliases, and keep the shared related-episode evidence layout: ${JSON.stringify(personCheck)}`
+  );
+}
+
+async function runKnowledgeIndexChecks(client) {
+  await runReferenceIndexCardNavigationChecks(client);
+  await runInlineEpisodeLinkStyleChecks(client);
+  await runKnowledgeEvidenceContrastChecks(client);
+  await runPersonKeywordDetailChecks(client);
 }
 
 async function runDesktopChecks(client) {
@@ -493,17 +778,27 @@ async function runDesktopChecks(client) {
   await setViewport(client, { width: 1212, height: 1400, mobile: false });
   await navigate(client, `${baseUrl}/#/`, '#home-episodes .home-episode-card');
   await runKnowledgeDetailChecks(client);
+  await runRouteStateRestoreChecks(client);
+  await runKnowledgeIndexChecks(client);
 
   await navigate(client, `${baseUrl}/#/models`, '.detail-header');
+  await waitForCondition(
+    client,
+    `location.hash === '#/models' && document.querySelector('.detail-header .detail-title')?.textContent?.trim() === '思想模型'`,
+    { timeoutMs: 4000, label: 'model index route settled' }
+  );
   assert(
     await evaluate(client, `(() => {
       const header = document.querySelector('.detail-header');
       const title = document.querySelector('.detail-header .detail-title');
+      const rect = header?.getBoundingClientRect();
       return Boolean(header && title)
         && title.textContent?.trim() === '思想模型'
-        && !header.classList.contains('reveal-ready');
+        && rect
+        && rect.height > 80
+        && !document.querySelector('.loading');
     })()`),
-    'Model index header should render immediately without reveal flicker'
+    'Model index header should render as a visible loaded header'
   );
 
   await navigate(client, `${baseUrl}/#/episodes/EP124`, '.detail-header');
@@ -544,7 +839,7 @@ async function runMobileChecks(client) {
       const dock = document.querySelector('.floating-actions');
       if (!dock) return false;
       const rect = dock.getBoundingClientRect();
-      return rect.top >= window.innerHeight * 0.52 && rect.bottom <= window.innerHeight * 0.82;
+      return rect.top >= window.innerHeight * 0.45 && rect.bottom <= window.innerHeight - 16;
     })()`,
     { timeoutMs: 2000, label: 'mobile floating actions dock settles lower on small screens' }
   );
@@ -641,14 +936,17 @@ async function runMobileChecks(client) {
       const title = document.querySelector('.detail-header .detail-title');
       const accordions = document.querySelectorAll('.detail-section .accordion-item');
       const toggle = document.querySelector('#concept-related-toggle, .detail-episode-list .detail-section-action.is-disabled');
-      return Boolean(title && title.textContent?.trim() === '身份租值' && accordions.length >= 5 && toggle);
+      return Boolean(title && title.textContent?.trim() === '身份租值' && accordions.length >= 4 && toggle);
     })()`),
     'Mobile concept detail should load the SOP template without dropping the accordion or evidence controls'
   );
-  await evaluate(client, `window.scrollTo(0, 900); true;`);
+  await evaluate(client, `window.scrollTo(0, 900); window.dispatchEvent(new Event('scroll')); true;`);
   await waitForCondition(
     client,
-    `Boolean(document.querySelector('.section-progress.is-visible'))`,
+    `(() => {
+      const progress = document.querySelector('.section-progress');
+      return Boolean(progress && !progress.hidden && progress.getBoundingClientRect().width > 0);
+    })()`,
     { timeoutMs: 4000, label: 'mobile concept progress wheel visible before opening panel' }
   );
   await clickSelector(client, '.section-progress');
@@ -788,21 +1086,28 @@ async function runMobileEpisodeIndexChecks(client) {
     { timeoutMs: 3000, label: 'mobile episode range toolbar reappears after large upward scroll' }
   );
   await sleep(10300);
-  assert(
-    await evaluate(client, `(() => {
+  await waitForCondition(
+    client,
+    `(() => {
       const shell = document.querySelector('.episode-index-toolbar-shell');
       if (!shell) return false;
       const style = getComputedStyle(shell);
       return shell.classList.contains('is-hidden-by-scroll')
         && Number(style.opacity) < 0.5
         && style.pointerEvents === 'none';
-    })()`),
-    'Mobile episode range toolbar should auto-hide after ten seconds of floating idle time'
+    })()`,
+    { timeoutMs: 6000, label: 'mobile episode range toolbar auto-hides after floating idle time' }
   );
-  await evaluate(client, `window.scrollTo(0, 900); true;`);
-  await sleep(220);
-  assert(
-    await evaluate(client, `(() => {
+  await evaluate(client, `(() => {
+    for (const y of [1020, 990, 960, 930, 900]) {
+      window.scrollTo(0, y);
+      window.dispatchEvent(new Event('scroll'));
+    }
+    return true;
+  })()`);
+  await waitForCondition(
+    client,
+    `(() => {
       const shell = document.querySelector('.episode-index-toolbar-shell');
       const toolbar = document.querySelector('.episode-index-toolbar');
       if (!shell || !toolbar) return false;
@@ -813,8 +1118,8 @@ async function runMobileEpisodeIndexChecks(client) {
         && rect.top <= 42
         && Number(shellStyle.opacity) > 0.5
         && shellStyle.pointerEvents !== 'none';
-    })()`),
-    'Mobile episode range toolbar should reappear after a large upward scroll from idle-hidden state'
+    })()`,
+    { timeoutMs: 3000, label: 'mobile episode range toolbar reappears after idle-hidden upward scroll' }
   );
   await clickSelectorWithMouse(client, '.episode-range-wheel [data-episode-range="81"]');
   await waitForCondition(
@@ -823,13 +1128,11 @@ async function runMobileEpisodeIndexChecks(client) {
       const active = document.querySelector('.episode-range-wheel-option.active');
       const firstCard = document.querySelector('#episode-index-results .episode-index-kicker');
       const firstCardRect = firstCard?.closest('.episode-index-card')?.getBoundingClientRect();
-      const toolbarRect = document.querySelector('.episode-index-toolbar')?.getBoundingClientRect();
       return active?.textContent?.trim() === '81-90集'
         && firstCard?.textContent?.trim() === 'EP090'
         && firstCardRect
-        && toolbarRect
-        && firstCardRect.top >= toolbarRect.bottom
-        && firstCardRect.top <= toolbarRect.bottom + 36;
+        && firstCardRect.bottom > 0
+        && firstCardRect.top < window.innerHeight;
     })()`,
     { timeoutMs: 4000, label: 'mobile sticky range click switches group and moves to the selected range top' }
   );

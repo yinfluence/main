@@ -1765,7 +1765,10 @@ body.page-home .section:last-of-type .card {
     linear-gradient(180deg, rgba(248, 249, 252, 0.94), rgba(239, 242, 247, 0.92));
 }
 
-body.page-home .home-search-section .search-subtitle,
+body.page-home .home-search-section .search-subtitle {
+  color: var(--ink-rich);
+}
+
 body.page-home .home-search-section .search-reroll {
   color: rgba(74, 69, 63, 0.84);
 }
@@ -3204,11 +3207,27 @@ body.page-home .home-episode-card > p:not(.card-kicker):not(.inline-label) {
 }
 
 .home-search-results-panel .search-subtitle-row {
-  padding: 12px 20px 0;
+  padding: 16px 20px 2px;
 }
 
 .home-search-results-panel .search-subtitle {
   margin: 0 0 8px;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 21px;
+  font-weight: 900;
+  line-height: 1.1;
+  letter-spacing: 0;
+}
+
+.home-search-results-panel .search-subtitle::before {
+  content: "";
+  width: 4px;
+  height: 20px;
+  flex: 0 0 auto;
+  border-radius: 999px;
+  background: linear-gradient(180deg, rgba(178, 137, 75, 0.96), rgba(142, 105, 50, 0.78));
 }
 
 .home-search-toolbar.is-ghost {
@@ -3729,16 +3748,90 @@ a.chip:active {
   letter-spacing: 0.02em;
 }
 
-.inline-episode-link {
-  color: var(--accent);
-  text-decoration: underline;
-  text-decoration-thickness: 1.5px;
-  text-underline-offset: 2px;
+.inline-episode-link,
+.inline-knowledge-link {
+  display: inline-block;
+  margin: 0 0.05em;
+  padding: 0 0.16em;
+  border-radius: 6px;
+  font-weight: 760;
+  text-decoration: none;
+  transition: background 0.16s ease, color 0.16s ease, box-shadow 0.16s ease, transform 0.16s ease;
 }
 
-.inline-episode-link:hover {
-  color: #3f4b5d;
-  text-decoration-thickness: 2px;
+.inline-episode-link {
+  background: rgba(184, 138, 60, 0.1);
+  color: #6f4d1f;
+}
+
+.inline-knowledge-link {
+  background: rgba(35, 48, 66, 0.08);
+  color: #27364a;
+  box-shadow: inset 0 -1px 0 rgba(184, 138, 60, 0.28);
+}
+
+.inline-episode-link:hover,
+.inline-episode-link:focus-visible,
+.inline-knowledge-link:hover,
+.inline-knowledge-link:focus-visible {
+  background: rgba(35, 48, 66, 0.1);
+  color: #27364a;
+  box-shadow: inset 0 -1px 0 rgba(39, 54, 74, 0.22);
+}
+
+.inline-knowledge-link:hover,
+.inline-knowledge-link:focus-visible {
+  background: rgba(184, 138, 60, 0.13);
+  color: #6f4d1f;
+}
+
+.inline-episode-link:focus-visible,
+.inline-knowledge-link:focus-visible {
+  outline: 2px solid rgba(184, 138, 60, 0.28);
+  outline-offset: 2px;
+}
+
+.inline-episode-link:active,
+.inline-knowledge-link:active {
+  transform: translateY(1px);
+}
+
+.knowledge-evidence .inline-episode-link,
+.knowledge-evidence .inline-knowledge-link,
+article.list-item:hover .inline-episode-link,
+article.list-item:hover .inline-knowledge-link,
+article.list-item[data-list-item-href]:hover .inline-episode-link,
+article.list-item[data-list-item-href]:hover .inline-knowledge-link,
+article.list-item[data-list-item-href]:focus-within .inline-episode-link,
+article.list-item[data-list-item-href]:focus-within .inline-knowledge-link,
+article.list-item[data-episode-href]:hover .inline-episode-link,
+article.list-item[data-episode-href]:hover .inline-knowledge-link,
+article.list-item[data-episode-href]:focus-within .inline-episode-link,
+article.list-item[data-episode-href]:focus-within .inline-knowledge-link {
+  background: rgba(243, 206, 146, 0.18);
+  color: #ffe0a3 !important;
+  box-shadow:
+    inset 0 -1px 0 rgba(255, 228, 176, 0.72),
+    0 0 0 1px rgba(255, 228, 176, 0.1);
+}
+
+.knowledge-evidence .inline-episode-link:hover,
+.knowledge-evidence .inline-episode-link:focus-visible,
+.knowledge-evidence .inline-knowledge-link:hover,
+.knowledge-evidence .inline-knowledge-link:focus-visible,
+article.list-item:hover .inline-episode-link:hover,
+article.list-item:hover .inline-episode-link:focus-visible,
+article.list-item:hover .inline-knowledge-link:hover,
+article.list-item:hover .inline-knowledge-link:focus-visible,
+article.list-item[data-list-item-href]:hover .inline-episode-link:hover,
+article.list-item[data-list-item-href]:hover .inline-episode-link:focus-visible,
+article.list-item[data-list-item-href]:hover .inline-knowledge-link:hover,
+article.list-item[data-list-item-href]:hover .inline-knowledge-link:focus-visible {
+  background: rgba(255, 239, 211, 0.96);
+  color: #51320e !important;
+  box-shadow:
+    inset 0 -1px 0 rgba(112, 72, 20, 0.24),
+    0 0 0 1px rgba(255, 232, 190, 0.34);
 }
 
 .inline-episode-ref {
@@ -3792,11 +3885,14 @@ a.chip:active {
   transition: background 0.18s ease, border-color 0.18s ease, transform 0.18s ease, box-shadow 0.18s ease;
 }
 
-.list-item[data-episode-href] {
+.list-item[data-episode-href],
+.list-item[data-list-item-href] {
   cursor: pointer;
 }
 
-a.list-item:hover {
+a.list-item:hover,
+article.list-item[data-list-item-href]:hover,
+article.list-item[data-list-item-href]:focus-within {
   background: linear-gradient(180deg, rgba(39, 49, 64, 0.98), rgba(22, 30, 42, 0.96));
   border-color: rgba(207, 182, 140, 0.22);
   box-shadow: 0 20px 32px rgba(20, 26, 34, 0.14);
@@ -3816,6 +3912,8 @@ a.card:hover h2,
 article.card:hover h3,
 article.card:hover h2,
 a.list-item:hover h3,
+article.list-item[data-list-item-href]:hover h3,
+article.list-item[data-list-item-href]:focus-within h3,
 article.list-item[data-episode-href]:hover h3,
 article.list-item[data-episode-href]:focus-within h3,
 a.search-suggestion:hover {
@@ -3829,6 +3927,10 @@ a.card:hover .card-kicker,
 article.card:hover .card-kicker,
 a.list-item:hover .keyword-count-badge,
 a.list-item:hover .count-badge,
+article.list-item[data-list-item-href]:hover p,
+article.list-item[data-list-item-href]:focus-within p,
+article.list-item[data-list-item-href]:hover .keyword-count-badge,
+article.list-item[data-list-item-href]:focus-within .keyword-count-badge,
 article.list-item[data-episode-href]:hover p,
 article.list-item[data-episode-href]:focus-within p,
 article.list-item[data-episode-href]:hover .card-kicker,
@@ -3840,6 +3942,8 @@ a.search-suggestion:hover .count-badge {
 a.card:hover .chip,
 article.card:hover .chip,
 a.list-item:hover .chip,
+article.list-item[data-list-item-href]:hover .chip,
+article.list-item[data-list-item-href]:focus-within .chip,
 article.list-item[data-episode-href]:hover .chip,
 article.list-item[data-episode-href]:focus-within .chip {
   background: rgba(255,255,255,0.08);
@@ -4500,11 +4604,11 @@ body.page-episode-index #episode-index-results .list-item:active h3 {
 
 .knowledge-evidence article.list-item.episode-index-card[data-episode-href]:hover,
 .knowledge-evidence article.list-item.episode-index-card[data-episode-href]:focus-within {
-  background: linear-gradient(180deg, rgba(44, 56, 74, 0.98), rgba(30, 40, 56, 0.99)) !important;
-  border-color: rgba(241, 221, 186, 0.26) !important;
+  background: linear-gradient(180deg, rgba(255, 252, 246, 0.998), rgba(246, 236, 219, 0.995)) !important;
+  border-color: rgba(232, 202, 151, 0.52) !important;
   box-shadow:
-    0 22px 34px rgba(10, 14, 20, 0.22),
-    inset 0 1px 0 rgba(255,255,255,0.06) !important;
+    0 22px 36px rgba(10, 14, 20, 0.24),
+    inset 0 1px 0 rgba(255,255,255,0.92) !important;
 }
 
 .detail-episode-list .episode-index-card:hover h3,
@@ -4538,7 +4642,7 @@ body.page-episode-index #episode-index-results .list-item:active h3 {
 
 .knowledge-evidence article.list-item.episode-index-card[data-episode-href]:hover .card-primary-link h3,
 .knowledge-evidence article.list-item.episode-index-card[data-episode-href]:focus-within .card-primary-link h3 {
-  color: #fff7ea !important;
+  color: #17120d !important;
 }
 
 .knowledge-evidence .episode-index-summary {
@@ -4547,12 +4651,12 @@ body.page-episode-index #episode-index-results .list-item:active h3 {
 
 .knowledge-evidence article.list-item.episode-index-card[data-episode-href]:hover .episode-index-summary,
 .knowledge-evidence article.list-item.episode-index-card[data-episode-href]:focus-within .episode-index-summary {
-  color: rgba(236, 223, 201, 0.84) !important;
+  color: rgba(48, 39, 29, 0.82) !important;
 }
 
 .knowledge-evidence article.list-item.episode-index-card[data-episode-href]:hover .episode-index-kicker,
 .knowledge-evidence article.list-item.episode-index-card[data-episode-href]:focus-within .episode-index-kicker {
-  color: rgba(236, 216, 182, 0.78) !important;
+  color: rgba(112, 82, 37, 0.78) !important;
 }
 
 .knowledge-evidence .chip-row {
@@ -4581,12 +4685,12 @@ body.page-episode-index #episode-index-results .list-item:active h3 {
 
 .knowledge-evidence article.list-item.episode-index-card[data-episode-href]:hover a.chip,
 .knowledge-evidence article.list-item.episode-index-card[data-episode-href]:focus-within a.chip {
-  background: linear-gradient(180deg, rgba(255, 247, 232, 0.98), rgba(238, 216, 170, 0.95)) !important;
-  border-color: rgba(228, 195, 137, 0.4) !important;
-  color: rgba(90, 58, 13, 0.98) !important;
+  background: linear-gradient(180deg, rgba(53, 66, 86, 0.98), rgba(33, 44, 61, 0.99)) !important;
+  border-color: rgba(184, 138, 60, 0.34) !important;
+  color: #fff0d3 !important;
   box-shadow:
-    inset 0 1px 0 rgba(255,255,255,0.94),
-    0 6px 14px rgba(10, 14, 20, 0.14) !important;
+    inset 0 1px 0 rgba(255,255,255,0.08),
+    0 7px 14px rgba(10, 14, 20, 0.18) !important;
 }
 
 .knowledge-evidence article.list-item.episode-index-card[data-episode-href]:hover a.chip:hover,
@@ -4670,11 +4774,11 @@ body.page-knowledge-detail {
 
   .knowledge-evidence article.list-item[data-episode-href]:hover,
   .knowledge-evidence article.list-item[data-episode-href]:focus-within {
-    background: linear-gradient(180deg, rgba(46, 58, 76, 0.98), rgba(32, 42, 58, 0.99));
-    border-color: rgba(241, 221, 186, 0.26);
+    background: linear-gradient(180deg, rgba(255, 252, 246, 0.998), rgba(246, 236, 219, 0.995));
+    border-color: rgba(232, 202, 151, 0.52);
     box-shadow:
       0 22px 34px rgba(10, 14, 20, 0.22),
-      inset 0 1px 0 rgba(255,255,255,0.06);
+      inset 0 1px 0 rgba(255,255,255,0.92);
   }
 
   .knowledge-evidence .episode-index-kicker {
@@ -4683,28 +4787,39 @@ body.page-knowledge-detail {
 
   .knowledge-evidence .card-primary-link h3,
   .knowledge-evidence .card-primary-link:hover h3,
-  .knowledge-evidence .card-primary-link:focus-visible h3,
-  .knowledge-evidence article.list-item[data-episode-href]:hover .card-primary-link h3,
-  .knowledge-evidence article.list-item[data-episode-href]:focus-within .card-primary-link h3 {
+  .knowledge-evidence .card-primary-link:focus-visible h3 {
     color: #fff6e7;
     text-decoration-color: rgba(255, 233, 196, 0.92);
   }
 
-  .knowledge-evidence .episode-index-summary,
-  .knowledge-evidence article.list-item[data-episode-href]:hover .episode-index-summary,
-  .knowledge-evidence article.list-item[data-episode-href]:focus-within .episode-index-summary {
+  .knowledge-evidence article.list-item[data-episode-href]:hover .card-primary-link h3,
+  .knowledge-evidence article.list-item[data-episode-href]:focus-within .card-primary-link h3 {
+    color: #17120d;
+  }
+
+  .knowledge-evidence .episode-index-summary {
     color: rgba(236, 223, 201, 0.84);
   }
 
-  .knowledge-evidence a.chip,
-  .knowledge-evidence article.list-item[data-episode-href]:hover a.chip,
-  .knowledge-evidence article.list-item[data-episode-href]:focus-within a.chip {
+  .knowledge-evidence article.list-item[data-episode-href]:hover .episode-index-summary,
+  .knowledge-evidence article.list-item[data-episode-href]:focus-within .episode-index-summary {
+    color: rgba(48, 39, 29, 0.82);
+  }
+
+  .knowledge-evidence a.chip {
     background: linear-gradient(180deg, rgba(255, 247, 232, 0.98), rgba(238, 216, 170, 0.95));
     border-color: rgba(228, 195, 137, 0.4);
     color: rgba(90, 58, 13, 0.98);
     box-shadow:
       inset 0 1px 0 rgba(255,255,255,0.94),
       0 6px 14px rgba(10, 14, 20, 0.14);
+  }
+
+  .knowledge-evidence article.list-item[data-episode-href]:hover a.chip,
+  .knowledge-evidence article.list-item[data-episode-href]:focus-within a.chip {
+    background: linear-gradient(180deg, rgba(53, 66, 86, 0.98), rgba(33, 44, 61, 0.99));
+    border-color: rgba(184, 138, 60, 0.34);
+    color: #fff0d3;
   }
 
   .knowledge-evidence a.chip:hover,

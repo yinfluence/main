@@ -2,13 +2,13 @@
   "meta": {
     "title": "颖响力知识图谱",
     "subtitle": "节目、概念、模型、人物、主题之间的可视化连接网络",
-    "nodeCount": 487,
-    "linkCount": 971,
+    "nodeCount": 486,
+    "linkCount": 968,
     "typeCounts": {
       "model": 62,
       "episode": 137,
       "concept": 135,
-      "person": 62,
+      "person": 61,
       "theme": 91
     }
   },
@@ -36,17 +36,6 @@
       "degree": 17
     },
     {
-      "id": "episode:EP001",
-      "key": "EP001",
-      "label": "EP001",
-      "fullLabel": "EP001 · 西贝菜这么贵，原来是因为华与华。",
-      "type": "episode",
-      "route": "episodes/EP001",
-      "summary": "本期借西贝与华与华的关系，讨论高价餐饮背后咨询成本、品牌符号、创始人权力结构与消费者买单之间的连锁关系。",
-      "status": "curated",
-      "degree": 17
-    },
-    {
       "id": "episode:EP132",
       "key": "EP132",
       "label": "EP132",
@@ -56,6 +45,17 @@
       "summary": "本期接续 EP057 的 Manus 线索，不再重点复述公司和交易本身，而是讨论 Meta 收购 Manus 被监管否决之后，对中国草根创业者意味着什么。节目承认叫停交易有明确法律依据，但核心判断是：过去三十年支撑无背景年轻人从零到一的美元基金、全球市场和赴美上市/海外并购退出通道正在被堵死；而地方国资基金的考核逻辑更重视国有资产不流失、招商落地、就业税收和可见退出，天然不会为纯软件、早期、无背景的草根项目承担风险。结果是年轻人会更理性地转向考研考公和体制稳定，创新资源从市场能力转向行政关系，真正的颠覆式创新被挤出，只剩依附式创新和表演式创新。",
       "status": "curated",
       "degree": 17
+    },
+    {
+      "id": "episode:EP001",
+      "key": "EP001",
+      "label": "EP001",
+      "fullLabel": "EP001 · 西贝菜这么贵，原来是因为华与华。",
+      "type": "episode",
+      "route": "episodes/EP001",
+      "summary": "本期借西贝与华与华的关系，讨论高价餐饮背后咨询成本、品牌符号、创始人权力结构与消费者买单之间的连锁关系。",
+      "status": "curated",
+      "degree": 16
     },
     {
       "id": "concept:hidden-debt",
@@ -207,19 +207,8 @@
       "fullLabel": "特朗普",
       "type": "person",
       "route": "people/donald-trump",
-      "summary": "特朗普是美国政治人物，现任美国总统，也是这些节目里反复出现的关键地缘角色之一。",
+      "summary": "特朗普是美国共和党政治人物、第45任与第47任美国总统，节目借他观察美国战略收缩、成本转嫁和规则重定价。",
       "status": null,
-      "degree": 12
-    },
-    {
-      "id": "episode:EP120",
-      "key": "EP120",
-      "label": "EP120",
-      "fullLabel": "EP120 · 匈牙利大选欧尔班败选！是人民的巨大胜利，也是四大国家集团拆雷埋雷的终极博弈。【EP120】",
-      "type": "episode",
-      "route": "episodes/EP120",
-      "summary": "本期围绕匈牙利大选展开，核心判断不是单纯的选举轮替，而是欧洲内部一次典型的“拆雷”成功。节目认为，这场胜利首先是年轻选民推动下的民意回归，其次才是地缘政治牌局里的再分配：欧盟拆掉了内部的一颗雷，俄罗斯和特朗普阵营则失去了一张能持续撬动欧洲裂缝的牌。",
-      "status": "curated",
       "degree": 12
     },
     {
@@ -285,6 +274,17 @@
       "type": "episode",
       "route": "episodes/EP078",
       "summary": "本期把郁亮放到宝万之争后的万科时间线里，质疑他如何从人畜无害的继承人变成系统性空心化的关键推手。节目更大的判断是：无论交给子女还是交给职业经理人，中国民企最难跨过去的那道坎往往都是继承治理。",
+      "status": "curated",
+      "degree": 11
+    },
+    {
+      "id": "episode:EP120",
+      "key": "EP120",
+      "label": "EP120",
+      "fullLabel": "EP120 · 匈牙利大选欧尔班败选！是人民的巨大胜利，也是四大国家集团拆雷埋雷的终极博弈。【EP120】",
+      "type": "episode",
+      "route": "episodes/EP120",
+      "summary": "本期围绕匈牙利大选展开，核心判断不是单纯的选举轮替，而是欧洲内部一次典型的“拆雷”成功。节目认为，这场胜利首先是年轻选民推动下的民意回归，其次才是地缘政治牌局里的再分配：欧盟拆掉了内部的一颗雷，俄罗斯和特朗普阵营则失去了一张能持续撬动欧洲裂缝的牌。",
       "status": "curated",
       "degree": 11
     },
@@ -406,17 +406,6 @@
       "type": "episode",
       "route": "episodes/EP062",
       "summary": "本期继续沿着小米汽车这条线，把焦点从单次事故转向粉丝结构、品牌态度和市场分层。节目核心判断是，小米汽车之所以像“丐帮”，不只是因为粉丝多，而是因为品牌一边需要大量普通用户替自己完成市场教育和产品验证，一边又公开承认更成熟、更坚固的版本会优先留给欧洲市场。",
-      "status": "curated",
-      "degree": 9
-    },
-    {
-      "id": "episode:EP065",
-      "key": "EP065",
-      "label": "EP065",
-      "fullLabel": "EP065 · 西贝贾国龙的不服，鸡贼or活该？还是对时代的不尊重？",
-      "type": "episode",
-      "route": "episodes/EP065",
-      "summary": "回到西贝与贾国龙本人，讨论创始人姿态、时代变化与品牌失速之间的关系。",
       "status": "curated",
       "degree": 9
     },
@@ -703,6 +692,17 @@
       "type": "episode",
       "route": "episodes/EP061",
       "summary": "本期从豪宅市场逆势坚挺切入，反对把它理解成楼市整体回暖。节目核心判断是：豪宅之所以稳，不是因为地产重新健康了，而是因为这个市场盘子小、富人把房产当金融工具、房企需要报表、地方政府需要地价，几方利益短期恰好在这里重合。",
+      "status": "curated",
+      "degree": 8
+    },
+    {
+      "id": "episode:EP065",
+      "key": "EP065",
+      "label": "EP065",
+      "fullLabel": "EP065 · 西贝贾国龙的不服，鸡贼or活该？还是对时代的不尊重？",
+      "type": "episode",
+      "route": "episodes/EP065",
+      "summary": "回到西贝与贾国龙本人，讨论创始人姿态、时代变化与品牌失速之间的关系。",
       "status": "curated",
       "degree": 8
     },
@@ -1252,7 +1252,7 @@
       "fullLabel": "王石",
       "type": "person",
       "route": "people/wang-shi",
-      "summary": "王石是中国地产与企业家叙事中的标志性人物，也是节目讨论地产人物退场、资产变化与中年权力重组时的重要案例。",
+      "summary": "王石是万科创始人、董事会名誉主席，节目借他观察地产企业家退场、万科继承治理和资产关系再定价。",
       "status": null,
       "degree": 6
     },
@@ -1373,7 +1373,7 @@
       "fullLabel": "EP047 · 中国“首父”的百子团，震惊美国。富豪徐波具有中国特色的工厂式育儿新模式。",
       "type": "episode",
       "route": "episodes/EP047",
-      "summary": "节目借徐波“百子团”事件讨论新钱阶层如何把财富、技术和代孕产业链结合成一种繁殖工程，并进一步追问：当孩子被当成资源、家族工具和未来权力筹码时，人和爱会怎样被抽空。",
+      "summary": "节目借徐波“百子团”事件讨论新钱阶层如何把财富、技术和代孕产业链结合成一种繁殖工程，并把问题推到：当孩子被当成资源、家族工具和未来权力筹码时，人和爱会怎样被抽空。",
       "status": "curated",
       "degree": 6
     },
@@ -1923,7 +1923,7 @@
       "fullLabel": "高市早苗",
       "type": "person",
       "route": "people/sanae-takaichi",
-      "summary": "高市早苗是日本现任首相，也是近年日本保守派、安全政策和东亚权力重组讨论中最有辨识度的人物之一。",
+      "summary": "高市早苗是日本首相、自由民主党政治人物，节目借她观察日本安全前台化、外压反噬和东亚秩序重排。",
       "status": null,
       "degree": 4
     },
@@ -1945,7 +1945,7 @@
       "fullLabel": "贾国龙",
       "type": "person",
       "route": "people/jia-guolong",
-      "summary": "贾国龙是西贝的创始人和核心经营者，也是西贝系列节目里最重要的人物节点。",
+      "summary": "贾国龙是西贝餐饮集团创始人、董事长，节目借他观察连锁餐饮的创始人权威、品牌溢价和标准化供给争议。",
       "status": null,
       "degree": 4
     },
@@ -2005,17 +2005,6 @@
       "degree": 4
     },
     {
-      "id": "person:vivian-balakrishnan",
-      "key": "vivian-balakrishnan",
-      "label": "维文",
-      "fullLabel": "维文",
-      "type": "person",
-      "route": "people/vivian-balakrishnan",
-      "summary": "维文是新加坡外长，也是节目里最能代表新加坡规则意识、小国生存术和海峡治理逻辑的发言者之一。",
-      "status": null,
-      "degree": 4
-    },
-    {
       "id": "model:stability-over-growth-trap",
       "key": "stability-over-growth-trap",
       "label": "稳定替代增长陷阱",
@@ -2066,7 +2055,7 @@
       "fullLabel": "张雪峰",
       "type": "person",
       "route": "people/zhang-xuefeng",
-      "summary": "张雪峰是教育焦虑市场中最典型的中介型人物之一。",
+      "summary": "张雪峰（张子彪，1984-2026）是考研与升学规划领域的公众人物，节目借他观察教育焦虑、安全阀和稳定路径叙事。",
       "status": null,
       "degree": 4
     },
@@ -2374,7 +2363,7 @@
       "fullLabel": "户晨风",
       "type": "person",
       "route": "people/hu-chenfeng",
-      "summary": "户晨风是中国互联网语境里以直播、连线和强烈个人表达风格出名的争议人物，也是节目里反复出现的民间“破壁型表达者”。",
+      "summary": "户晨风是中国网络内容创作者和直播博主，节目借他观察破壁式表达、阶层差异可见化和平台治理边界。",
       "status": null,
       "degree": 3
     },
@@ -2484,7 +2473,7 @@
       "fullLabel": "雷军",
       "type": "person",
       "route": "people/lei-jun",
-      "summary": "雷军是小米创始人，也是颖响力新能源汽车批评线索里最重要的创始人符号之一。",
+      "summary": "雷军是小米集团创始人、董事长兼 CEO，节目借他观察创始人 IP、粉丝动员和速成工程进入汽车产业后的风险。",
       "status": null,
       "degree": 3
     },
@@ -2495,7 +2484,7 @@
       "fullLabel": "罗永浩",
       "type": "person",
       "route": "people/luo-yonghao",
-      "summary": "罗永浩是中国互联网与消费电子领域的创业者、直播带货人物和公共表达者，在这些节目里主要作为外部参照人物出现。",
+      "summary": "罗永浩是锤子科技创始人、创业者和直播电商公众人物，节目借他触发西贝争议中的外部质询和价格重估。",
       "status": null,
       "degree": 3
     },
@@ -2606,6 +2595,17 @@
       "type": "theme",
       "route": "themes/authoritarian-succession-and-state-fragility",
       "summary": "讨论强人、神权或高压体制在接班时刻如何暴露出最深的制度脆弱点。",
+      "status": null,
+      "degree": 3
+    },
+    {
+      "id": "person:vivian-balakrishnan",
+      "key": "vivian-balakrishnan",
+      "label": "维文",
+      "fullLabel": "维文",
+      "type": "person",
+      "route": "people/vivian-balakrishnan",
+      "summary": "维文是新加坡外交部长，节目借他的海峡通行发言说明小国如何用国际法和长期信用保护命门。",
       "status": null,
       "degree": 3
     },
@@ -2737,7 +2737,7 @@
       "fullLabel": "宗馥莉",
       "type": "person",
       "route": "people/zong-fuli",
-      "summary": "宗馥莉是娃哈哈相关节目中的核心人物之一，也经常被用来讨论二代接班与危机中的前台承担。",
+      "summary": "宗馥莉曾任娃哈哈集团副董事长、总经理和董事长，节目借她观察二代接班、旧账反噬和危机中的前台承担。",
       "status": null,
       "degree": 3
     },
@@ -2748,7 +2748,7 @@
       "fullLabel": "宗庆后",
       "type": "person",
       "route": "people/zong-qinghou",
-      "summary": "宗庆后是娃哈哈创始人，也是节目讨论原始积累、家族治理和未完成交棒时无法绕开的起点人物。",
+      "summary": "宗庆后是娃哈哈集团创始人和上一代民营消费品牌代表，节目借他追溯强创始人成功、旧账累积和交棒失序的源头。",
       "status": null,
       "degree": 3
     },
@@ -3078,7 +3078,7 @@
       "fullLabel": "哈梅内伊",
       "type": "person",
       "route": "people/ali-khamenei",
-      "summary": "哈梅内伊是伊朗最高领袖，也是节目讨论伊朗体制、继承问题和中东秩序裂缝时的核心人物。",
+      "summary": "阿里·哈梅内伊曾任伊朗最高领袖，节目借其遇袭身亡后的接班问题观察神权体制、内鬼疑云和威权继承裂缝。",
       "status": null,
       "degree": 2
     },
@@ -3111,18 +3111,7 @@
       "fullLabel": "何旗",
       "type": "person",
       "route": "people/he-qi",
-      "summary": "何旗是节目里“故事型增长企业家”的代表人物，被用来说明地方债时代新型骗局如何生长。",
-      "status": null,
-      "degree": 2
-    },
-    {
-      "id": "person:hua-yu-hua",
-      "key": "hua-yu-hua",
-      "label": "华与华",
-      "fullLabel": "华与华",
-      "type": "person",
-      "route": "people/hua-yu-hua",
-      "summary": "华与华是一家中国品牌战略与营销咨询公司，在西贝系列节目里主要作为外部顾问和品牌方法提供者出现。",
+      "summary": "何旗是上海均和集团创始人和董事长，节目借他观察地方债时代故事型企业家、空转贸易和风险转嫁链条。",
       "status": null,
       "degree": 2
     },
@@ -3133,7 +3122,7 @@
       "fullLabel": "黄循财",
       "type": "person",
       "route": "people/lawrence-wong",
-      "summary": "黄循财是新加坡总理，也是节目讨论新加坡新阶段定位、主动中立和区域安全合作升级时的重要人物。",
+      "summary": "黄循财是新加坡总理兼财政部长，节目借他观察新加坡主动中立、国家身份边界和小国规则选择。",
       "status": null,
       "degree": 2
     },
@@ -3221,7 +3210,7 @@
       "fullLabel": "李显龙",
       "type": "person",
       "route": "people/lee-hsien-loong",
-      "summary": "李显龙是新加坡前总理，也是节目讨论新加坡外交姿态与制度逻辑时最常出现的关键人物。",
+      "summary": "李显龙是新加坡前总理、现任国务资政，节目借他理解新加坡务实外交、国家身份边界和小国平衡逻辑。",
       "status": null,
       "degree": 2
     },
@@ -3232,7 +3221,7 @@
       "fullLabel": "马斯克",
       "type": "person",
       "route": "people/elon-musk",
-      "summary": "马斯克是科技资本、商业航天和 AI 叙事中反复出现的关键人物，也是节目用来观察美国技术体系的一个窗口。",
+      "summary": "马斯克是特斯拉和SpaceX等公司的核心科技企业家，节目借他观察技术资本叙事、AI泡沫和美国商业航天与国家体系的并行关系。",
       "status": null,
       "degree": 2
     },
@@ -3243,7 +3232,7 @@
       "fullLabel": "玛莎·阿米尼",
       "type": "person",
       "route": "people/mahsa-amini",
-      "summary": "玛莎·阿米尼是伊朗女性，也是节目用来提醒观众不要只盯着统治者而忽略普通人命运的象征性人物。",
+      "summary": "玛莎·阿米尼是 2022 年死于伊朗道德警察羁押后的库尔德裔伊朗女性，节目借她提醒观众把伊朗权力叙事重新拉回普通人的生命代价。",
       "status": null,
       "degree": 2
     },
@@ -3276,7 +3265,7 @@
       "fullLabel": "潘石屹",
       "type": "person",
       "route": "people/pan-shiyi",
-      "summary": "潘石屹是 SOHO 中国创始人之一，也是节目讨论房地产企业家如何用时间感、前瞻性和退出纪律保全资产的核心人物。",
+      "summary": "潘石屹是 SOHO 中国联合创始人，节目借他讨论地产企业家如何在时间窗口、资本架构和退出纪律中处理周期风险。",
       "status": null,
       "degree": 2
     },
@@ -3298,7 +3287,7 @@
       "fullLabel": "普京",
       "type": "person",
       "route": "people/vladimir-putin",
-      "summary": "普京是节目讨论俄罗斯战争体制、长期执政和接班风险时无法绕开的核心人物。",
+      "summary": "普京是俄罗斯总统，节目借他讨论战争体制、长期执政、接班真空和战略纵深在无人机时代的反转。",
       "status": null,
       "degree": 2
     },
@@ -3386,7 +3375,7 @@
       "fullLabel": "王传福",
       "type": "person",
       "route": "people/wang-chuanfu",
-      "summary": "王传福是比亚迪创始人，也是节目里“迪王”金融化扩张叙事背后的关键人物。",
+      "summary": "王传福是比亚迪创始人、董事长兼总裁，节目借他观察头部新能源车企怎样把制造能力、销量叙事和供应链金融接成扩张系统。",
       "status": null,
       "degree": 2
     },
@@ -3397,7 +3386,7 @@
       "fullLabel": "王健林",
       "type": "person",
       "route": "people/wang-jianlin",
-      "summary": "王健林是万达的核心人物，也是地产旧秩序中最有代表性的企业家之一。",
+      "summary": "王健林是大连万达集团长期董事长，节目借他观察旧地产企业家在政银地扩张时代形成、又在资本期限反噬中退潮的过程。",
       "status": null,
       "degree": 2
     },
@@ -3474,7 +3463,7 @@
       "fullLabel": "肖弘",
       "type": "person",
       "route": "people/xiao-hong",
-      "summary": "肖弘是 Manus 创始人，也是节目讨论中国草根 AI 创业、公司主场和资本退出路径时的关键人物。",
+      "summary": "肖弘是 Manus 背后的 AI 创业者，节目借他观察中国创始人、公司法域、全球资本和草根创业退出通道如何重新绑定。",
       "status": null,
       "degree": 2
     },
@@ -3518,7 +3507,7 @@
       "fullLabel": "许家印",
       "type": "person",
       "route": "people/xu-jiayin",
-      "summary": "许家印是恒大创始人，也是节目讨论地产高杠杆、强人治理和财富保全失效时最典型的案例人物。",
+      "summary": "许家印是中国恒大集团创办人、原董事会主席，节目借他观察地产高杠杆、一言堂治理和财富保全工具被穿透。",
       "status": null,
       "degree": 2
     },
@@ -3815,7 +3804,7 @@
       "fullLabel": "蔡国强",
       "type": "person",
       "route": "people/cai-guoqiang",
-      "summary": "蔡国强是以烟花与大场面装置著称的艺术家，在颖响力知识库里更多代表一种宏大 spectacle 的组织能力。",
+      "summary": "蔡国强是以火药、烟火和大型公共艺术项目著称的当代艺术家，节目借他观察宏大艺术怎样被品牌增长焦虑调用。",
       "status": null,
       "degree": 1
     },
@@ -3947,7 +3936,7 @@
       "fullLabel": "董宇辉",
       "type": "person",
       "route": "people/dong-yuhui",
-      "summary": "董宇辉是直播带货与文化人设结合最鲜明的人物之一，在知识库里主要对应流量、文化光环和价格定义权。",
+      "summary": "董宇辉是直播电商领域的头部公众人物，节目借他观察文化人设、粉丝身份和超级流量如何改写商品价格信号。",
       "status": null,
       "degree": 1
     },
@@ -3958,7 +3947,7 @@
       "fullLabel": "段永平",
       "type": "person",
       "route": "people/duan-yongping",
-      "summary": "段永平是节目中用来对照另一种人生选择与价值排序的重要企业家人物。",
+      "summary": "段永平是步步高 / BBK 创始人和投资人，节目借他对照王石，讨论成年人如何按价值排序承担选择后果。",
       "status": null,
       "degree": 1
     },
@@ -4035,7 +4024,7 @@
       "fullLabel": "峰哥亡命天涯",
       "type": "person",
       "route": "people/fengge-wangmingtianya",
-      "summary": "峰哥亡命天涯是互联网上“民间三论”传播链条中的关键人物节点。",
+      "summary": "峰哥亡命天涯是中文互联网内容创作者，节目借他讨论民间三论、平台清理和情绪解释包的传播机制。",
       "status": null,
       "degree": 1
     },
@@ -4134,7 +4123,7 @@
       "fullLabel": "郭伟",
       "type": "person",
       "route": "people/guo-wei-academic",
-      "summary": "郭伟是学术头衔造假与高校官僚化问题中的典型人物节点。",
+      "summary": "郭伟是曾以江苏科技大学首席科学家、博导身份进入舆论的学术争议人物，节目借他观察高校人才引进和学术官僚系统怎样托举空壳履历。",
       "status": null,
       "degree": 1
     },
@@ -4167,7 +4156,7 @@
       "fullLabel": "哈耶克",
       "type": "person",
       "route": "people/friedrich-hayek",
-      "summary": "哈耶克是节目讨论分散知识、制度边界与大计划失败时的重要思想参照。",
+      "summary": "哈耶克是奥地利出生的英国经济学家和1974年诺贝尔经济学奖共同得主，节目借他的分散知识观批评举国式大计划对真实创新的压制。",
       "status": null,
       "degree": 1
     },
@@ -4189,7 +4178,7 @@
       "fullLabel": "海边的西塞罗",
       "type": "person",
       "route": "people/haibian-de-xisailuo",
-      "summary": "海边的西塞罗是节目借以进入《论扯淡》讨论的重要写作者节点。",
+      "summary": "海边的西塞罗是中文互联网写作者和公众号作者，节目借其文章进入《论扯淡》、中式逻辑和工具化历史叙事的讨论。",
       "status": null,
       "degree": 1
     },
@@ -4233,7 +4222,7 @@
       "fullLabel": "何润东",
       "type": "person",
       "route": "people/he-rundong",
-      "summary": "何润东是被节目拿来和当下古偶男主作对照的演员节点。",
+      "summary": "何润东是华语影视演员，节目借他在《楚汉传奇》中的项羽形象反照流量影视里角色真实感被人设维护挤压的问题。",
       "status": null,
       "degree": 1
     },
@@ -4255,7 +4244,7 @@
       "fullLabel": "胡志明",
       "type": "person",
       "route": "people/ho-chi-minh",
-      "summary": "胡志明是越南革命政治的标志性人物，也是节目用来对照越南历史合法性来源的重要坐标。",
+      "summary": "胡志明是越南革命和建国叙事的核心人物，节目借他作为越南强人政治与历史合法性讨论的起点。",
       "status": null,
       "degree": 1
     },
@@ -4354,7 +4343,7 @@
       "fullLabel": "金刻羽",
       "type": "person",
       "route": "people/jin-keyu",
-      "summary": "金刻羽是节目里被频繁放在“学术精英身份如何被租借”的讨论中心的人物。",
+      "summary": "金刻羽是香港科技大学金融学教授，节目借她在保利德夜宴叙事中的位置观察学术名片、官商想象和融资背书如何互相增信。",
       "status": null,
       "degree": 1
     },
@@ -4464,7 +4453,7 @@
       "fullLabel": "黎笋",
       "type": "person",
       "route": "people/le-duan",
-      "summary": "黎笋是越南强人政治历史中的关键人物，也是节目用来警告越南重回个人集权逻辑的重要镜像。",
+      "summary": "黎笋是越南共产党长期最高领导人，节目借他作为苏林时代重回强人政治的历史镜像。",
       "status": null,
       "degree": 1
     },
@@ -4475,7 +4464,7 @@
       "fullLabel": "李斌",
       "type": "person",
       "route": "people/li-bin",
-      "summary": "李斌是蔚来创始人，也是节目里“换电金融化”叙事最核心的创业者形象。",
+      "summary": "李斌是蔚来创始人、董事长兼 CEO，节目借他观察换电如何从用户体验延展成资产包、体外平台和地方资金结构。",
       "status": null,
       "degree": 1
     },
@@ -4486,7 +4475,7 @@
       "fullLabel": "李飞飞",
       "type": "person",
       "route": "people/li-feifei",
-      "summary": "李飞飞是节目讨论教育与 AI 时代错位时的重要参照人物。",
+      "summary": "李飞飞是斯坦福人工智能学者、ImageNet 重要推动者和 World Labs 联合创始人兼 CEO，节目借她讨论旧教育体系与 AI 时代人才尺度的错位。",
       "status": null,
       "degree": 1
     },
@@ -4497,7 +4486,7 @@
       "fullLabel": "李光耀",
       "type": "person",
       "route": "people/lee-kuan-yew",
-      "summary": "李光耀是新加坡建国叙事与小国生存智慧的代表人物，也是节目讨论国家边界感时最重要的参照。",
+      "summary": "李光耀是新加坡建国总理，节目借他说明新加坡国家身份必须压过祖籍血缘和族群浪漫化。",
       "status": null,
       "degree": 1
     },
@@ -4508,7 +4497,7 @@
       "fullLabel": "李想",
       "type": "person",
       "route": "people/li-xiang",
-      "summary": "李想是理想汽车创始人，也是中国新能源汽车创业者中最具个人风格和话语影响力的人物之一。",
+      "summary": "李想是理想汽车创始人、董事长兼CEO，节目借他观察增程路线、家庭场景营销和创始人话语如何塑造新能源品牌信众结构。",
       "status": null,
       "degree": 1
     },
@@ -4519,7 +4508,7 @@
       "fullLabel": "李新野",
       "type": "person",
       "route": "people/li-xinye",
-      "summary": "李新野是节目用来讨论财富二代人格扭曲的重要样本人物。",
+      "summary": "李新野是《人妻约会指南》的署名作者，节目借他讨论富裕二代的代际怨恨、自我神话和关系算法化。",
       "status": null,
       "degree": 1
     },
@@ -4530,7 +4519,7 @@
       "fullLabel": "李亚鹏",
       "type": "person",
       "route": "people/li-yapeng",
-      "summary": "李亚鹏是演员，也是节目里用来重新讨论“成功标准”的人物。",
+      "summary": "李亚鹏是演员转型的创业者和公益行动者，节目借嫣然天使儿童医院重新讨论商业成败之外的公共价值。",
       "status": null,
       "degree": 1
     },
@@ -4541,7 +4530,7 @@
       "fullLabel": "刘道玉",
       "type": "person",
       "route": "people/liu-daoyu",
-      "summary": "刘道玉是节目用来代表真正教育者气质的重要人物参照。",
+      "summary": "刘道玉是武汉大学原校长和高等教育改革人物，节目借他作为“好校长”与学生主体性的正面参照。",
       "status": null,
       "degree": 1
     },
@@ -4574,7 +4563,7 @@
       "fullLabel": "穆杰塔巴·哈梅内伊",
       "type": "person",
       "route": "people/mujtaba-khamenei",
-      "summary": "穆杰塔巴·哈梅内伊是节目里被讨论的伊朗潜在接班人，其上位被视为神权体制向血缘继承滑动的重要信号。",
+      "summary": "穆杰塔巴·哈梅内伊是阿里·哈梅内伊之子，2026 年被任命为伊朗最高领袖，节目借他观察神权共和国滑向血缘继承的合法性危机。",
       "status": null,
       "degree": 1
     },
@@ -4618,7 +4607,7 @@
       "fullLabel": "庞增和",
       "type": "person",
       "route": "people/pang-zenghe",
-      "summary": "庞增和是《江南春》相关捐赠与产权争议中的关键家族人物，也是节目讨论文化资产如何被迫离开私人语境的重要切口。",
+      "summary": "庞增和是南京博物院《江南春》相关受赠文物事件中的捐赠者人物，节目借他观察私人文化资产转为公产后的产权、托管和文明语境问题。",
       "status": null,
       "degree": 1
     },
@@ -4893,7 +4882,7 @@
       "fullLabel": "苏林",
       "type": "person",
       "route": "people/to-lam",
-      "summary": "苏林是越南现任核心领导人，也是节目讨论越南重回一人时代与东南亚再度高风险化时的关键人物。",
+      "summary": "苏林是越共中央总书记兼越南国家主席，节目借他的一肩挑讨论越南从集体领导回到强人时代的风险。",
       "status": null,
       "degree": 1
     },
@@ -4926,7 +4915,7 @@
       "fullLabel": "田朴珺",
       "type": "person",
       "route": "people/tian-pujun",
-      "summary": "田朴珺是节目讨论伴侣关系合伙人化、女性主体性与资产再定价时的关键人物。",
+      "summary": "田朴珺是演员、制片人和写作者，节目借她与王石的公共关系讨论伴侣关系如何随资产、权力和自我叙事再定价。",
       "status": null,
       "degree": 1
     },
@@ -5036,7 +5025,7 @@
       "fullLabel": "辛杰",
       "type": "person",
       "route": "people/xin-jie",
-      "summary": "辛杰是深圳地铁关键负责人，也是节目观察万科还能不能继续被输血的切入口人物。",
+      "summary": "辛杰曾任深圳地铁和万科关键负责人，节目借他观察万科续命链条、地方国资输血和风险责任转移。",
       "status": null,
       "degree": 1
     },
@@ -5058,7 +5047,7 @@
       "fullLabel": "徐波",
       "type": "person",
       "route": "people/xu-bo",
-      "summary": "徐波是多益网络创始人，在本知识库里主要对应“新钱如何把财富推向极端繁殖幻想”。",
+      "summary": "徐波是多益网络创始人兼董事长，节目借围绕他的“百子团”争议观察新钱、代孕技术和家族工程想象如何失去伦理边界。",
       "status": null,
       "degree": 1
     },
@@ -5069,7 +5058,7 @@
       "fullLabel": "徐湖平",
       "type": "person",
       "route": "people/xu-huping",
-      "summary": "徐湖平是南京博物院争议中被频繁提及的馆方相关人物，也是节目批评机构边界感失守时的重要指向。",
+      "summary": "徐湖平是南京博物院原常务副院长、院长，节目借他观察公共文博机构在《江南春》事件中如何面对产权、透明度和托管责任。",
       "status": null,
       "degree": 1
     },
@@ -5113,7 +5102,7 @@
       "fullLabel": "杨振宁",
       "type": "person",
       "route": "people/yang-zhenning",
-      "summary": "杨振宁在节目里被当作“高于单一理工执行逻辑”的参照人物。",
+      "summary": "杨振宁是已故理论物理学家、1957 年诺贝尔物理学奖得主，节目借他观察 AI 时代教育选择中的高层次判断。",
       "status": null,
       "degree": 1
     },
@@ -5124,7 +5113,7 @@
       "fullLabel": "姚振华",
       "type": "person",
       "route": "people/yao-zhenhua",
-      "summary": "姚振华是宝能系核心人物，也是观致汽车从良币走向资本废墟过程里的关键推手。",
+      "summary": "姚振华是宝能集团核心人物，节目借他和观致汽车讨论金融化资本如何把汽车良币拖入销量、残值和清算博弈。",
       "status": null,
       "degree": 1
     },
@@ -5157,7 +5146,7 @@
       "fullLabel": "于东来",
       "type": "person",
       "route": "people/yu-donglai",
-      "summary": "于东来是胖东来创始人，也是节目讨论企业如何在中国环境里主动分散财富、保住灵魂时的少见正面案例。",
+      "summary": "于东来是胖东来创始人，节目借他观察企业如何通过分散利益和克制扩张来降低外部觊觎与政企绑定风险。",
       "status": null,
       "degree": 1
     },
@@ -5168,7 +5157,7 @@
       "fullLabel": "余承东",
       "type": "person",
       "route": "people/yu-chengdong",
-      "summary": "余承东是华为终端与汽车业务最强势的公共面孔，也是节目里“老大嘴”式营销角色的现实投影。",
+      "summary": "余承东是华为常务董事、产品投资评审委员会主任、终端BG董事长，节目借他观察强前台营销人物如何为华为汽车叙事承担情绪动员和品牌人格化功能。",
       "status": null,
       "degree": 1
     },
@@ -5179,7 +5168,7 @@
       "fullLabel": "余海军",
       "type": "person",
       "route": "people/yu-haijun",
-      "summary": "余海军是保利德事件中的核心人物，在知识库里代表“土老板如何借关系和场面完成资本包装”。",
+      "summary": "余海军是宝利德控股创始人，节目借他观察豪车经销商如何把场面、关系和精英名片包装成资本信用。",
       "status": null,
       "degree": 1
     },
@@ -5201,7 +5190,7 @@
       "fullLabel": "郁亮",
       "type": "person",
       "route": "people/yu-liang",
-      "summary": "郁亮是万科前台最核心的职业经理人之一，也是节目指认为万科系统性空心化的重要推手。",
+      "summary": "郁亮曾长期任万科核心管理层，节目借他观察职业经理人继承、内部金融平台和万科空心化风险。",
       "status": null,
       "degree": 1
     },
@@ -5223,7 +5212,7 @@
       "fullLabel": "扎克伯格",
       "type": "person",
       "route": "people/mark-zuckerberg",
-      "summary": "扎克伯格是 Meta 创始人，在这些节目里主要作为全球资本与平台方视角的代表人物出现。",
+      "summary": "扎克伯格是 Meta 创始人、董事长兼 CEO，节目借他代表全球科技平台如何重新定价 AI 初创公司的团队、产品和退出路径。",
       "status": null,
       "degree": 1
     },
@@ -5234,7 +5223,7 @@
       "fullLabel": "詹姆斯·斯科特",
       "type": "person",
       "route": "people/james-scott",
-      "summary": "詹姆斯·斯科特是《弱者的武器》作者，在 EP134 中被用来解释躺平作为日常、隐蔽、非组织化抵抗的意义。",
+      "summary": "詹姆斯·斯科特是研究弱者日常抵抗和国家可读性的学者，节目借《弱者的武器》解释躺平的非组织化抵抗意义。",
       "status": null,
       "degree": 1
     },
@@ -5256,7 +5245,7 @@
       "fullLabel": "张欣",
       "type": "person",
       "route": "people/zhang-xin",
-      "summary": "张欣是 SOHO 中国联合创始人之一，也是节目理解潘石屹财富架构、全球资本视野和家族信托安排时不可绕开的关键人物。",
+      "summary": "张欣是 SOHO 中国联合创始人，节目借她说明潘石屹路径中的全球资本架构、法域意识和能力互补。",
       "status": null,
       "degree": 1
     },
@@ -5267,7 +5256,7 @@
       "fullLabel": "张雪",
       "type": "person",
       "route": "people/zhang-xue-racer",
-      "summary": "张雪是被节目用来反驳“普通人没机会了”的关键故事人物。",
+      "summary": "张雪是从修车学徒走向摩托车创业和赛道制造的人物，节目借他的经历反驳“普通人已经没有机会”的灭梦叙事。",
       "status": null,
       "degree": 1
     },
@@ -5278,7 +5267,7 @@
       "fullLabel": "赵克长",
       "type": "person",
       "route": "people/zhao-kechang",
-      "summary": "赵克长是节目用来代表跨学科好课堂的关键教师人物。",
+      "summary": "赵克长是节目里的北大《地震概论》教师入口，节目借这门课讨论跨学科教育和复杂系统意识被压窄的问题。",
       "status": null,
       "degree": 1
     },
@@ -5289,7 +5278,7 @@
       "fullLabel": "郑丽文",
       "type": "person",
       "route": "people/zheng-liwen",
-      "summary": "郑丽文是节目中被拿来说明危机时刻女性力量被重新看见的政治人物。",
+      "summary": "郑丽文是台湾政治人物、中国国民党主席，节目借她观察危机政治中的女性前台化和承压位置变化。",
       "status": null,
       "degree": 1
     },
@@ -5366,7 +5355,7 @@
       "fullLabel": "Bad Bunny",
       "type": "person",
       "route": "people/bad-bunny",
-      "summary": "Bad Bunny 是近年拉丁流行文化代表人物，也是节目用来观察文化再属地化的重要样本。",
+      "summary": "Bad Bunny 是波多黎各音乐人，节目借他的超级碗中场秀观察拉丁文化如何从边缘语言进入北美主舞台。",
       "status": null,
       "degree": 1
     }
@@ -5420,11 +5409,6 @@
     {
       "source": "episode:EP001",
       "target": "person:jia-guolong",
-      "kind": "episode-person"
-    },
-    {
-      "source": "episode:EP001",
-      "target": "person:hua-yu-hua",
       "kind": "episode-person"
     },
     {
@@ -7455,11 +7439,6 @@
     {
       "source": "episode:EP065",
       "target": "person:jia-guolong",
-      "kind": "episode-person"
-    },
-    {
-      "source": "episode:EP065",
-      "target": "person:hua-yu-hua",
       "kind": "episode-person"
     },
     {
@@ -10151,11 +10130,6 @@
       "source": "episode:EP099",
       "target": "model:subsidized-adoption-flywheel",
       "kind": "episode-model"
-    },
-    {
-      "source": "episode:EP120",
-      "target": "person:vivian-balakrishnan",
-      "kind": "episode-person"
     },
     {
       "source": "episode:EP078",

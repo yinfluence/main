@@ -1,16 +1,81 @@
 {
   "id": "xiao-hong",
   "name": "肖弘",
-  "summary": "肖弘是 Manus 创始人，也是节目讨论中国草根 AI 创业、公司主场和资本退出路径时的关键人物。",
-  "description": "肖弘是 Manus 创始人，在节目里不只是一个 AI 创业者名字，而是“创始人来自中国，但公司价值需要在另一套制度和资本环境里兑现”的代表性人物。围绕他的讨论通常会延伸到法域选择、资本主场、公司身份、美元基金退出路径和普通年轻人还能否靠产品能力创业等问题。",
+  "kind": "person",
+  "asOf": "2026-05-11",
+  "summary": "肖弘是 Manus 背后的 AI 创业者，节目借他观察中国创始人、公司法域、全球资本和草根创业退出通道如何重新绑定。",
+  "description": "肖弘（Red Xiao Hong）是 AI agent Manus 相关创业公司 Butterfly Effect 的创始人兼 CEO，公开报道也将他称为 Manus CEO。外部事实层面，Manus 是带有中国创业背景、后来以新加坡为基地的通用 AI agent 平台；节目语境里，肖弘不是被写成单纯的技术天才，而是被放在“产品能力如何通过法域、资本和退出路径兑现价值”的问题线上。",
+  "basicIntro": "肖弘是 AI 创业者，公开报道显示他是 Butterfly Effect 创始人兼 CEO，并在 Manus 与 Meta 交易报道中以 Manus CEO 身份出现。AP 报道称 Manus 是有中国背景、以新加坡为基地的通用 AI agent 平台；2025 年底 Meta 宣布收购 Manus，2026 年 4 月中国监管部门阻止该项外国收购并要求各方撤回交易。",
+  "programRole": "节目使用肖弘，是为了把一个年轻 AI 创业者放回制度环境里看：同样的产品和团队，放在国内资金、地方国资、美元基金、新加坡法域和美国大厂退出通道里，会被完全不同地定价。肖弘由此成为草根创业能否靠能力获得第一张门票的现实锚点。",
+  "programAssociations": [
+    {
+      "title": "公司主场与全球资本",
+      "episodes": [
+        "EP057"
+      ],
+      "note": "EP057 从 Meta 收购 Manus 的传闻切入，具体写到肖弘和团队迁往新加坡、清理国内办公室和公司身份重组。节目借肖弘说明，被全球资本认真对待的不只是中国创始人的技术能力，而是公司是否进入一个更容易融资、雇人、签约和退出的制度主场。"
+    },
+    {
+      "title": "草根创业退出通道",
+      "episodes": [
+        "EP132"
+      ],
+      "note": "EP132 接续 Manus 交易被否决后的后果，明确把肖弘当作普通出身、靠产品能力跑进全球创投体系的样本。节目关心的是：当美元基金、海外并购和赴美上市这些退出路径收缩后，今天的年轻创业者是否还能拿到第一笔钱，并以能力而不是关系进入创新分配。"
+    }
+  ],
+  "styleNotes": [
+    "节目里的肖弘带有产品创业者色彩：他被关注不是因为个人表达强势，而是因为 Manus 让外界重新看见 AI agent 的产品化可能。",
+    "他的案例同时带有迁移感：个人背景、工程团队、公司注册地和资本市场不再天然重合，节目正是从这种错位里读出制度含义。",
+    "肖弘不是被节目神化成孤胆英雄，而是被放在一条更冷的链条里：能力必须找到可兑现的法域和资本结构，才可能变成公司价值。"
+  ],
+  "methodNotes": [
+    "先用 AI agent 产品形成全球可识别的能力标签，使一个小团队能被大平台和资本市场快速看见。",
+    "通过新加坡公司身份和国际化运营，降低跨境资本、人才和客户理解成本，让产品不只停留在国内叙事里。",
+    "在节目归纳里，肖弘路径依赖的是早期风险资本和海外退出想象；这套机制一旦收缩，后来的草根创业者就更难复制同样的起步方式。"
+  ],
+  "extensionNotes": [
+    {
+      "title": "Manus 与 AI agent",
+      "note": "肖弘词条最直接延展到 Manus 本身：节目关心 AI agent 不只是技术演示，而是能否形成可被全球资本收购和整合的产品能力。"
+    },
+    {
+      "title": "新加坡公司身份",
+      "note": "EP057 把肖弘放到新加坡法域里理解，适合继续看小国如何用法治、资本和人才流动承接跨境创业。"
+    },
+    {
+      "title": "美元基金退出通道",
+      "note": "EP132 的重点是交易被否决后的制度后果，读者可沿美元基金、海外并购、国资基金和草根创业门票继续展开。"
+    },
+    {
+      "title": "AI 时代教育",
+      "note": "EP057 和 EP058 连读时，肖弘不只是创业样本，也反向追问教育体系能否培养会提问、会试错、会做产品的人。"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Chinese AI agent Manus transcends chatbots, founder of start-up Butterfly Effect says - South China Morning Post",
+      "url": "https://www.scmp.com/tech/tech-trends/article/3301864/chinese-ai-agent-manus-transcends-chatbots-founder-start-butterfly-effect-says",
+      "note": "核对肖弘为 Butterfly Effect 创始人兼 CEO、Manus 作为 AI agent 产品的公开身份。"
+    },
+    {
+      "title": "Meta buys startup Manus in latest move to advance its artificial intelligence efforts - AP News",
+      "url": "https://apnews.com/article/meta-manus-purchase-ai-agents-aaf01029923011a403ceeb949cf3db5e",
+      "note": "核对 Manus 为有中国背景、以新加坡为基地的通用 AI agent 平台，以及肖弘在交易报道中的 Manus CEO 身份。"
+    },
+    {
+      "title": "China blocks Meta from acquiring startup Manus as global AI rivalry deepens - AP News",
+      "url": "https://apnews.com/article/china-meta-manus-ai-acquisition-5f8012791f86f719a24a3ebac06d9b0a",
+      "note": "核对 2026 年 4 月中国监管部门阻止 Meta 收购 Manus 并要求撤回交易的高风险事实。"
+    }
+  ],
   "episodes": [
     {
       "id": "EP057",
-      "note": "节目以肖弘和 Manus 为例，讨论公司为何要转成“新加坡公司”才能进入全球资本视野。"
+      "note": "节目以肖弘和 Manus 为切口，讨论 AI 公司为何把公司身份和资本主场转向新加坡。"
     },
     {
       "id": "EP132",
-      "note": "节目把肖弘当作草根创业路径样本，讨论当美元退出和跨境并购通道收缩后，同类年轻人是否还能获得第一笔启动资金。"
+      "note": "节目把肖弘当作草根创业路径样本，分析跨境退出通道收缩后年轻创业者的资金门票问题。"
     }
   ]
 }

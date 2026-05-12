@@ -105,6 +105,22 @@ function uniqueList(values = []) {
   return [...new Set(values.filter(Boolean))];
 }
 
+function hasStructuredKeywordDefinition(definition = {}) {
+  return Boolean(
+    definition.kind
+      || definition.asOf
+      || definition.basicIntro
+      || definition.programRole
+      || definition.mechanismNotes?.length
+      || definition.programAssociations?.length
+      || definition.signalNotes?.length
+      || definition.styleNotes?.length
+      || definition.methodNotes?.length
+      || definition.extensionNotes?.length
+      || definition.sources?.length
+  );
+}
+
 function buildReferenceMap(items) {
   const index = new Map();
 
@@ -182,6 +198,33 @@ function keywordAnchor(keyword) {
     id: anchor.id,
     focus
   };
+}
+
+function normalizeKeywordProgramEpisodes(keywords) {
+  for (const keyword of keywords) {
+    const episodeMap = new Map(
+      (keyword.episodes || [])
+        .filter((entry) => entry?.id)
+        .map((entry) => [entry.id, entry])
+    );
+
+    for (const association of keyword.programAssociations || []) {
+      const associationText = String(association?.note || association?.body || '').trim();
+      const title = String(association?.title || '').trim();
+      for (const rawId of association?.episodes || []) {
+        const id = String(rawId || '').trim();
+        if (!/^EP\d{3}$/.test(id) || episodeMap.has(id)) continue;
+        const note = associationText
+          ? trimSentence(`${title ? `${title}：` : ''}${associationText}`, 150)
+          : `${id} 与${keyword.name}的节目讨论相关。`;
+        episodeMap.set(id, { id, note });
+      }
+    }
+
+    keyword.episodes = [...episodeMap.values()].sort((a, b) => a.id.localeCompare(b.id));
+  }
+
+  return keywords;
 }
 
 function inferKeywordKind(name) {
@@ -300,22 +343,36 @@ function buildKeywordCatalog(episodes) {
 }
 
 function buildPeopleKeywordCatalog(people) {
-  return people.map((person) => ({
-    id: person.name,
-    name: person.name,
-    entryType: 'person',
-    sourcePersonId: person.id,
-    summary: person.summary || `${person.name}是节目里反复出现的人物。`,
-    description: person.description || person.summary || '',
-    englishName: person.englishName || '',
-    aliases: uniqueList([
-      person.id,
-      person.englishName,
-      ...(person.aliases || [])
-    ]),
-    relatedKeywords: [],
-    episodes: [...(person.episodes || [])].sort((a, b) => a.id.localeCompare(b.id))
-  }));
+  return people.map((person) => {
+    const {
+      id,
+      name,
+      englishName,
+      summary,
+      description,
+      aliases,
+      episodes,
+      ...extraFields
+    } = person;
+
+    return {
+      ...extraFields,
+      id: name,
+      name,
+      entryType: 'person',
+      sourcePersonId: id,
+      summary: summary || `${name}是节目里反复出现的人物。`,
+      description: description || summary || '',
+      englishName: englishName || '',
+      aliases: uniqueList([
+        id,
+        englishName,
+        ...(aliases || [])
+      ]),
+      relatedKeywords: [],
+      episodes: [...(episodes || [])].sort((a, b) => a.id.localeCompare(b.id))
+    };
+  });
 }
 
 function mergeKeywordCatalog(autoKeywords, curatedKeywords) {
@@ -349,7 +406,7 @@ function mergeKeywordCatalog(autoKeywords, curatedKeywords) {
       });
     }
 
-    merged.push({
+    const mergedKeyword = {
       ...base,
       ...keyword,
       aliases: uniqueList([
@@ -361,7 +418,14 @@ function mergeKeywordCatalog(autoKeywords, curatedKeywords) {
         ...(keyword.relatedKeywords || [])
       ]),
       episodes: [...episodeMap.values()].sort((a, b) => a.id.localeCompare(b.id))
-    });
+    };
+
+    if (mergedKeyword.kind && mergedKeyword.kind !== 'person') {
+      delete mergedKeyword.entryType;
+      delete mergedKeyword.sourcePersonId;
+    }
+
+    merged.push(mergedKeyword);
   }
 
   for (const keyword of autoByKey.values()) {
@@ -787,14 +851,30 @@ async function build() {
   const peopleKeywords = buildPeopleKeywordCatalog(people);
   const mergedKeywords = applyKeywordRelations(
     applyKeywordParents(
-      mergeKeywordCatalog(
-        mergeKeywordCatalog(buildKeywordCatalog(mergedEpisodes), peopleKeywords),
-        keywords
-      ).map((keyword) => ({
-        ...keyword,
-        summary: keywordDefinitions[keyword.name]?.summary || keyword.summary || makeAutoKeywordSummary(keyword, keywordDefinitions, inheritMaps),
-        description: keywordDefinitions[keyword.name]?.description || keyword.description || makeAutoKeywordDescription(keyword, keywordDefinitions, inheritMaps)
-      }))
+      normalizeKeywordProgramEpisodes(
+        mergeKeywordCatalog(
+          mergeKeywordCatalog(buildKeywordCatalog(mergedEpisodes), peopleKeywords),
+          keywords
+        ).map((keyword) => {
+          const definition = keywordDefinitions[keyword.name] || {};
+          const preferStructuredDefinition = hasStructuredKeywordDefinition(definition);
+          const mergedKeyword = {
+            ...definition,
+            ...keyword,
+            summary: preferStructuredDefinition
+              ? (definition.summary || keyword.summary || makeAutoKeywordSummary(keyword, keywordDefinitions, inheritMaps))
+              : (keyword.summary || definition.summary || makeAutoKeywordSummary(keyword, keywordDefinitions, inheritMaps)),
+            description: preferStructuredDefinition
+              ? (definition.description || keyword.description || makeAutoKeywordDescription(keyword, keywordDefinitions, inheritMaps))
+              : (keyword.description || definition.description || makeAutoKeywordDescription(keyword, keywordDefinitions, inheritMaps))
+          };
+          return {
+            ...mergedKeyword,
+            aliases: uniqueList([...(definition.aliases || []), ...(keyword.aliases || [])]),
+            relatedKeywords: uniqueList([...(definition.relatedKeywords || []), ...(keyword.relatedKeywords || [])])
+          };
+        })
+      )
     )
   );
   const graph = buildGraphData({

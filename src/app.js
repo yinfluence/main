@@ -26,6 +26,15 @@ const HOME_PLATFORM_LINKS = [
 ];
 const WEBSITE_LOG_ENTRIES = [
   {
+    date: '2026-05-12',
+    title: '关键词体系全量重写与审计',
+    items: [
+      '完成 752 个关键词页面的类型归类、结构化介绍、节目关联和延展阅读整理，人物、地缘、机构、产品、事件、机制、概念、主题、资产和常规词按统一标准展示。',
+      '修复关键词页与相关节目区断裂问题，构建时会把节目关联里的 EP 自动同步到相关节目列表，并新增审计规则防止回退。',
+      '清理旧模板口吻和后台维护语气，概念、模型和主题详情页改用“信息关联”“判断边界”等读者向栏目。'
+    ]
+  },
+  {
     date: '2026-05-11',
     title: '新增 EP137 无人出租车安全整理',
     items: [
@@ -302,6 +311,7 @@ if ('scrollRestoration' in window.history) {
 
 let site = null;
 let graphData = null;
+let inlineKnowledgeReferenceCache = null;
 const expandedKnowledgeEpisodeSections = new Set();
 let homeKnowledgeQuery = '';
 let homeRecommendationSeed = Math.floor(Math.random() * 1000000);
@@ -317,6 +327,7 @@ let episodeIndexSearchOriginHash = '';
 let episodeIndexSearchOriginScrollX = 0;
 let episodeIndexSearchOriginScrollY = 0;
 let pendingRouteRestore = null;
+let isApplyingRouteState = false;
 let conceptIndexQuery = '';
 let modelIndexQuery = '';
 let peopleIndexQuery = '';
@@ -589,6 +600,55 @@ function restoreEpisodeIndexSearchOrigin() {
     scrollY: originScrollY
   };
   window.location.hash = originHash;
+}
+
+function getCurrentHash() {
+  return window.location.hash || '#/';
+}
+
+function accordionStateLabel(details) {
+  if (!(details instanceof HTMLDetailsElement)) return '';
+  return details.dataset.progressLabel || details.querySelector(':scope > summary')?.textContent?.trim() || '';
+}
+
+function collectOpenAccordionLabels() {
+  return [...document.querySelectorAll('details.accordion-item')]
+    .filter((details) => details.open)
+    .map(accordionStateLabel)
+    .filter(Boolean);
+}
+
+function collectRouteViewState(hash = getCurrentHash()) {
+  return {
+    hash,
+    scrollX: window.scrollX || 0,
+    scrollY: window.scrollY || 0,
+    openAccordions: collectOpenAccordionLabels()
+  };
+}
+
+function saveCurrentRouteViewState() {
+  if (isApplyingRouteState || !hasRenderedRoute) return;
+  const state = collectRouteViewState();
+  try {
+    window.history.replaceState({
+      ...(window.history.state || {}),
+      yinfluenceViewState: state
+    }, '', window.location.href);
+  } catch {
+    // Hash navigation should keep working even when history state is unavailable.
+  }
+}
+
+function restoreRouteViewState(state) {
+  if (!state?.openAccordions?.length) return;
+  const openLabels = new Set(state.openAccordions);
+  document.querySelectorAll('details.accordion-item').forEach((details) => {
+    const label = accordionStateLabel(details);
+    if (label) {
+      details.open = openLabels.has(label);
+    }
+  });
 }
 
 function openEpisodeIndexSearch() {
@@ -1293,6 +1353,8 @@ document.addEventListener('focusout', (event) => {
     closeInlineEpisodePopup(reference);
   });
 });
+app.addEventListener('click', handleListItemNavigationClick);
+app.addEventListener('click', handleInlineKnowledgeNavigationState, { capture: true });
 sectionProgress?.addEventListener('click', () => {
   if (sectionProgress.hidden) return;
   setSectionProgressPanelOpen(!sectionProgressPanelOpen);
@@ -1385,6 +1447,187 @@ function displayEpisodeTitle(title) {
     .trim();
 }
 
+function inlineReferenceRouteKey(route) {
+  return String(route || '').replace(/^#\/?/, '').split('/').map(decodeRoutePart).join(':').toLowerCase();
+}
+
+function currentInlineReferenceRouteKey() {
+  const { section, id } = parseHashRoute(window.location.hash);
+  return section && id ? `${section}:${id}`.toLowerCase() : '';
+}
+
+function countInlineReferenceChars(value) {
+  return [...String(value || '').trim()].length;
+}
+
+function hasRichInlineReferenceContent(item = {}) {
+  return Boolean(
+    item.kind ||
+    item.entryType ||
+    item.sourcePersonId ||
+    item.basicIntro ||
+    item.programRole ||
+    item.nodeRole ||
+    item.positionNotes ||
+    item.objectRole ||
+    item.conflictNotes ||
+    item.mechanismNotes ||
+    item.assetRole ||
+    item.programAssociations?.length ||
+    item.extensionNotes?.length
+  );
+}
+
+function isHighConfidenceShortInlineReference(item = {}) {
+  const kind = item.kind || item.entryType || '';
+  const episodeCount = Array.isArray(item.episodes) ? item.episodes.length : 0;
+  return Boolean(
+    item.sourcePersonId ||
+    ['person', 'geography', 'organization', 'product', 'event', 'asset', 'theme'].includes(kind) ||
+    episodeCount > 1
+  );
+}
+
+function isReadableReferenceAlias(value, source = 'name', item = null) {
+  const text = String(value || '').trim();
+  const charCount = countInlineReferenceChars(text);
+  const isNonAscii = /[^\x00-\x7F]/.test(text);
+  const allowShortCuratedName = source === 'name'
+    && isNonAscii
+    && charCount >= 2
+    && hasRichInlineReferenceContent(item || {})
+    && isHighConfidenceShortInlineReference(item || {});
+  if ((!allowShortCuratedName && charCount < 3) || charCount > 36) return false;
+  if (/^EP\d{3}$/i.test(text)) return false;
+  if (/^[a-z0-9]+(?:-[a-z0-9]+)+$/i.test(text)) return false;
+  if (/^[\d\s._-]+$/.test(text)) return false;
+  if (source === 'alias' && charCount < 4 && /[^\x00-\x7F]/.test(text)) return false;
+  return !/[\n\r]/.test(text);
+}
+
+function addInlineReferenceCandidate(candidates, seenLabels, label, route, type, source = 'name', item = null) {
+  const text = String(label || '').trim();
+  if (!isReadableReferenceAlias(text, source, item)) return;
+  if (!/[^\x00-\x7F]/.test(text) && text.length < 3) return;
+  const labelKey = text.toLowerCase();
+  const routeKey = inlineReferenceRouteKey(route);
+  if (!labelKey || !routeKey || seenLabels.has(labelKey)) return;
+  seenLabels.add(labelKey);
+  candidates.push({
+    label: text,
+    labelLower: labelKey,
+    route,
+    routeKey,
+    type,
+    source
+  });
+}
+
+function getInlineKnowledgeReferenceCandidates() {
+  if (!site) return [];
+  if (inlineKnowledgeReferenceCache) return inlineKnowledgeReferenceCache;
+  const candidates = [];
+  const seenLabels = new Set();
+  const addCollection = (collection = [], type, routeType = type) => {
+    for (const item of collection || []) {
+      const route = routeTo(`${routeType}/${item.id}`);
+      addInlineReferenceCandidate(candidates, seenLabels, item.name || item.title, route, type, 'name', item);
+      for (const alias of item.aliases || []) {
+        addInlineReferenceCandidate(candidates, seenLabels, alias, route, type, 'alias', item);
+      }
+    }
+  };
+
+  addCollection(site?.concepts, 'concepts');
+  addCollection(site?.models, 'models');
+  addCollection(site?.themes, 'themes');
+  addCollection(site?.keywords, 'keywords');
+
+  inlineKnowledgeReferenceCache = candidates.sort((a, b) => b.label.length - a.label.length || a.label.localeCompare(b.label, 'zh-Hans-CN'));
+  return inlineKnowledgeReferenceCache;
+}
+
+function isAsciiAlphaNumeric(value) {
+  return /^[a-z0-9]$/i.test(value || '');
+}
+
+function hasInlineAsciiBoundaries(raw, start, end) {
+  return !isAsciiAlphaNumeric(raw[start - 1]) && !isAsciiAlphaNumeric(raw[end]);
+}
+
+function hasInlineMatchOverlap(match, selected) {
+  return selected.some((item) => match.start < item.end && match.end > item.start);
+}
+
+function inlineMatchPriority(match) {
+  if (match.kind === 'episode') return 4;
+  if (match.source === 'name') return 3;
+  if (match.type === 'models' || match.type === 'concepts') return 2;
+  return 1;
+}
+
+function collectInlineTextMatches(raw) {
+  const matches = [];
+  const currentRouteKey = currentInlineReferenceRouteKey();
+  raw.replace(/\bEP\d{3}\b/g, (match, offset) => {
+    const episode = episodeById(match);
+    if (episode) {
+      matches.push({
+        start: offset,
+        end: offset + match.length,
+        label: match,
+        kind: 'episode',
+        route: routeTo(`episodes/${match}`),
+        title: `${match}｜${displayEpisodeTitle(episode.title)}`,
+        summary: episode.summary || ''
+      });
+    }
+    return match;
+  });
+
+  const lowerRaw = raw.toLowerCase();
+  for (const candidate of getInlineKnowledgeReferenceCandidates()) {
+    if (candidate.routeKey === currentRouteKey) continue;
+    const isAsciiLabel = !/[^\x00-\x7F]/.test(candidate.label);
+    let index = lowerRaw.indexOf(candidate.labelLower);
+    while (index >= 0) {
+      const end = index + candidate.label.length;
+      if (isAsciiLabel && !hasInlineAsciiBoundaries(raw, index, end)) {
+        index = lowerRaw.indexOf(candidate.labelLower, index + 1);
+        continue;
+      }
+      matches.push({
+        start: index,
+        end,
+        label: raw.slice(index, index + candidate.label.length),
+        kind: 'knowledge',
+        route: candidate.route,
+        type: candidate.type,
+        routeKey: candidate.routeKey,
+        source: candidate.source
+      });
+      index = lowerRaw.indexOf(candidate.labelLower, index + Math.max(1, candidate.label.length));
+    }
+  }
+
+  const selected = [];
+  const selectedReferenceRoutes = new Set();
+  const bySpecificity = (a, b) => {
+    const lengthDelta = (b.end - b.start) - (a.end - a.start);
+    if (lengthDelta) return lengthDelta;
+    const priorityDelta = inlineMatchPriority(b) - inlineMatchPriority(a);
+    if (priorityDelta) return priorityDelta;
+    return a.start - b.start;
+  };
+  for (const match of matches.sort(bySpecificity)) {
+    if (match.kind === 'knowledge' && selectedReferenceRoutes.has(match.routeKey)) continue;
+    if (hasInlineMatchOverlap(match, selected)) continue;
+    selected.push(match);
+    if (match.kind === 'knowledge') selectedReferenceRoutes.add(match.routeKey);
+  }
+  return selected.sort((a, b) => a.start - b.start);
+}
+
 function trimHomeEpisodeSummary(text, maxChars) {
   if (text.length <= maxChars) return text;
   const slice = text.slice(0, maxChars);
@@ -1420,15 +1663,15 @@ function renderLinkedEpisodeText(value) {
   let cursor = 0;
   let html = '';
 
-  raw.replace(/\bEP\d{3}\b/g, (match, offset) => {
-    html += escapeHtml(raw.slice(cursor, offset));
-    const episode = episodeById(match);
-    html += episode
-      ? `<span class="inline-episode-ref" data-popup-title="${escapeHtml(`${match}｜${displayEpisodeTitle(episode.title)}`)}" data-popup-summary="${escapeHtml(episode.summary || '')}"><a class="inline-episode-link" href="${routeTo(`episodes/${match}`)}">${escapeHtml(match)}</a></span>`
-      : escapeHtml(match);
-    cursor = offset + match.length;
-    return match;
-  });
+  for (const match of collectInlineTextMatches(raw)) {
+    html += escapeHtml(raw.slice(cursor, match.start));
+    if (match.kind === 'episode') {
+      html += `<span class="inline-episode-ref" data-popup-title="${escapeHtml(match.title)}" data-popup-summary="${escapeHtml(match.summary)}"><a class="inline-episode-link" href="${match.route}">${escapeHtml(match.label)}</a></span>`;
+    } else {
+      html += `<a class="inline-knowledge-link" data-ref-type="${escapeHtml(match.type)}" href="${match.route}">${escapeHtml(match.label)}</a>`;
+    }
+    cursor = match.end;
+  }
 
   html += escapeHtml(raw.slice(cursor));
   return html;
@@ -2789,7 +3032,7 @@ function renderKeywordList(keywords = []) {
             </a>
             <span class="keyword-count-badge">${keywordCount(keyword)} 期</span>
           </div>
-          <p>${renderLinkedEpisodeText(keyword.summary)}</p>
+          <p>${escapeHtml(keyword.summary)}</p>
           <div class="meta-row">
             ${keywordTypeBadge(keyword)}
             ${(keyword.aliases || []).slice(0, 2).map((alias) => `<span class="chip">${escapeHtml(alias)}</span>`).join('')}
@@ -2815,7 +3058,7 @@ function renderNodeList(items = [], type, descriptionKey = 'summary', routeType 
             </a>
             <span class="keyword-count-badge">${referenceCount(item)} 次引用</span>
           </div>
-          <p>${renderLinkedEpisodeText(item[descriptionKey] || item.summary || item.definition || item.description || '')}</p>
+          <p>${escapeHtml(item[descriptionKey] || item.summary || item.definition || item.description || '')}</p>
         </article>
       `).join('')}
     </div>
@@ -3030,7 +3273,7 @@ function renderCategorizedReferenceSection(title, items, type, descriptionKey = 
         <span class="keyword-group-count">${items.length}</span>
       </summary>
       <div class="accordion-content">
-        ${renderNodeList(topItems, type, descriptionKey)}
+        ${renderNodeList(topItems, type, descriptionKey, routeType)}
         ${remainingItems.length ? `
           <details class="accordion-item nested-accordion">
             <summary class="accordion-summary">
@@ -3045,6 +3288,25 @@ function renderCategorizedReferenceSection(title, items, type, descriptionKey = 
       </div>
     </details>
   `;
+}
+
+function handleListItemNavigationClick(event) {
+  const item = event.target.closest('.list-item[data-list-item-href]');
+  if (!(item instanceof HTMLElement) || !app.contains(item)) return;
+  if (event.target.closest('a, button, input, textarea, select, summary, label')) return;
+  const href = item.getAttribute('data-list-item-href');
+  if (!href) return;
+  event.preventDefault();
+  saveCurrentRouteViewState();
+  window.location.hash = href;
+}
+
+function handleInlineKnowledgeNavigationState(event) {
+  const link = event.target.closest('.inline-knowledge-link, .inline-episode-link, a.chip, .card-primary-link');
+  if (!(link instanceof HTMLAnchorElement) || !app.contains(link)) return;
+  const href = link.getAttribute('href') || '';
+  if (!href.startsWith('#/')) return;
+  saveCurrentRouteViewState();
 }
 
 function renderCategorizedReferenceIndex(config) {
@@ -3111,20 +3373,6 @@ function renderCategorizedReferenceIndex(config) {
     </section>
   `;
 
-  app.querySelectorAll('.list-item[data-list-item-href]').forEach((item) => {
-    item.addEventListener('click', (event) => {
-      const directLink = event.target.closest('.card-primary-link');
-      if (directLink) {
-        event.preventDefault();
-        const href = directLink.getAttribute('href');
-        if (href) window.location.hash = href;
-        return;
-      }
-      if (event.target.closest('a, button, input, textarea, select, summary')) return;
-      const href = item.getAttribute('data-list-item-href');
-      if (href) window.location.hash = href;
-    });
-  });
 }
 
 function renderKeywordGroup(title, keywords, options = {}) {
@@ -4781,13 +5029,13 @@ function renderDetailList(items = []) {
 }
 
 function renderLinkedEpisodeList(items = []) {
-  if (!items.length) return '<p class="subtle">待补充。</p>';
+  if (!items.length) return '';
   return `<ul>${items.map((item) => `<li>${renderLinkedEpisodeText(item)}</li>`).join('')}</ul>`;
 }
 
 function renderParagraphText(value) {
   const raw = String(value || '').trim();
-  if (!raw) return '<p class="subtle">待补充。</p>';
+  if (!raw) return '';
   return raw
     .split(/\n{2,}/)
     .map((paragraph) => `<p>${renderLinkedEpisodeText(paragraph.trim())}</p>`)
@@ -4795,13 +5043,13 @@ function renderParagraphText(value) {
 }
 
 function renderHighlightCards(items = []) {
-  if (!items.length) return '<p class="subtle">待补充。</p>';
+  if (!items.length) return '';
   return `
     <div class="list">
       ${items.map((item) => `
         <a class="list-item" href="${routeTo(`episodes/${item.id}`)}">
           <h3>${escapeHtml(item.id)}｜${escapeHtml(displayEpisodeTitle(item.title))}</h3>
-          <p>${renderLinkedEpisodeText(item.note || item.summary || '待补充')}</p>
+          <p>${renderLinkedEpisodeText(item.note || item.summary || '')}</p>
           ${item.summary && item.summary !== item.note ? `<p class="subtle">${renderLinkedEpisodeText(item.summary)}</p>` : ''}
           ${item.mechanism ? `<p class="subtle">机制线：${escapeHtml(item.mechanism)}</p>` : ''}
         </a>
@@ -4889,12 +5137,598 @@ function buildRelatedEpisodeEntries(references = [], overrides = []) {
     .sort((a, b) => episodeNumberFromId(b.id) - episodeNumberFromId(a.id));
 }
 
+function collectReferencedItemsFromEpisodes(episodes = [], field, collection = [], options = {}) {
+  const limit = options.limit || 6;
+  const counts = new Map();
+  const firstSeen = new Map();
+
+  for (const episode of episodes || []) {
+    const values = episode?.[field] || [];
+    for (const value of values) {
+      const found = options.resolve
+        ? options.resolve(value)
+        : collection.find((item) => normalizeValue(item.id) === normalizeValue(value) || normalizeValue(item.name) === normalizeValue(value));
+      if (!found) continue;
+      const id = found.id;
+      counts.set(id, (counts.get(id) || 0) + 1);
+      if (!firstSeen.has(id)) firstSeen.set(id, firstSeen.size);
+    }
+  }
+
+  return [...counts.entries()]
+    .sort((a, b) => b[1] - a[1] || firstSeen.get(a[0]) - firstSeen.get(b[0]))
+    .slice(0, limit)
+    .map(([id]) => id);
+}
+
+function mergeReferenceIds(...groups) {
+  const ids = [];
+  const seen = new Set();
+  for (const group of groups) {
+    for (const value of group || []) {
+      const id = String(value || '').trim();
+      if (!id || seen.has(id)) continue;
+      seen.add(id);
+      ids.push(id);
+    }
+  }
+  return ids;
+}
+
+function renderEpisodeAngleBlocks(episodes = [], emptyText = '') {
+  const items = episodes
+    .filter((episode) => episode?.id && episode.relationNote)
+    .slice(0, 4);
+
+  if (!items.length) return emptyText ? `<p class="subtle">${escapeHtml(emptyText)}</p>` : '';
+
+  return items.map((episode) => `
+    <div class="concept-scene-block">
+      <h3>${escapeHtml(episode.id)}</h3>
+      <p>${renderLinkedEpisodeText(episode.relationNote)}</p>
+    </div>
+  `).join('');
+}
+
+function renderDiscussionAngles(angles = []) {
+  const items = (angles || [])
+    .map((angle) => ({
+      title: String(angle?.title || '').trim(),
+      note: String(angle?.note || '').trim(),
+      episodeIds: Array.isArray(angle?.episodeIds) ? angle.episodeIds : []
+    }))
+    .filter((angle) => angle.title && angle.note);
+
+  if (!items.length) return '';
+
+  return items.map((angle) => `
+    <div class="concept-scene-block">
+      <h3>${escapeHtml(angle.title)}</h3>
+      <p>${renderLinkedEpisodeText(angle.note)}</p>
+      ${angle.episodeIds.length ? `<p class="subtle">关联节目：${angle.episodeIds.map((id) => `<a class="inline-episode-link" href="${routeTo(`episodes/${id}`)}">${escapeHtml(id)}</a>`).join(' ')}</p>` : ''}
+    </div>
+  `).join('');
+}
+
+function buildKeywordReferenceGroups(keyword, relatedEpisodes = []) {
+  const inferredConcepts = collectReferencedItemsFromEpisodes(relatedEpisodes, 'concepts', site.concepts);
+  const inferredModels = collectReferencedItemsFromEpisodes(relatedEpisodes, 'models', site.models);
+  const inferredThemes = collectReferencedItemsFromEpisodes(relatedEpisodes, 'themes', site.themes);
+  const inferredPeople = collectReferencedItemsFromEpisodes(relatedEpisodes, 'people', site.keywords, {
+    resolve: (value) => findKeywordByReference(value)
+  });
+
+  return [
+    { title: '相关概念', type: 'concepts', items: mergeReferenceIds(keyword.relatedConcepts, keyword.canonicalRefs?.conceptId ? [keyword.canonicalRefs.conceptId] : [], inferredConcepts), collection: site.concepts },
+    { title: '相关模型', type: 'models', items: mergeReferenceIds(keyword.relatedModels, keyword.canonicalRefs?.modelId ? [keyword.canonicalRefs.modelId] : [], inferredModels), collection: site.models },
+    { title: '相关主题', type: 'themes', items: mergeReferenceIds(keyword.relatedThemes, keyword.canonicalRefs?.themeId ? [keyword.canonicalRefs.themeId] : [], inferredThemes), collection: site.themes },
+    { title: isPersonKeyword(keyword) ? '相关对象' : '相关人物', type: 'keywords', items: mergeReferenceIds(keyword.relatedPeople, inferredPeople), collection: site.keywords }
+  ];
+}
+
+function buildThemeReferenceGroups(theme, relatedEpisodes = []) {
+  return [
+    { title: '相关概念', type: 'concepts', items: mergeReferenceIds(theme.relatedConcepts, collectReferencedItemsFromEpisodes(relatedEpisodes, 'concepts', site.concepts)), collection: site.concepts },
+    { title: '相关模型', type: 'models', items: mergeReferenceIds(theme.relatedModels, collectReferencedItemsFromEpisodes(relatedEpisodes, 'models', site.models)), collection: site.models },
+    { title: '相关人物', type: 'keywords', items: mergeReferenceIds(theme.relatedPeople, collectReferencedItemsFromEpisodes(relatedEpisodes, 'people', site.keywords, { resolve: (value) => findKeywordByReference(value) })), collection: site.keywords },
+    { title: '邻近主题', type: 'themes', items: theme.relatedThemes || [], collection: site.themes }
+  ];
+}
+
+function referenceNamesForGroup(groups = [], title, limit = 4) {
+  const group = groups.find((item) => item.title === title);
+  if (!group?.items?.length) return [];
+  return group.items
+    .map((id) => {
+      if (group.type === 'keywords') {
+        return findKeywordByReference(id)?.name || '';
+      }
+      return group.collection?.find((item) => normalizeValue(item.id) === normalizeValue(id) || normalizeValue(item.name) === normalizeValue(id))?.name || '';
+    })
+    .filter(Boolean)
+    .filter((name, index, list) => list.indexOf(name) === index)
+    .slice(0, limit);
+}
+
+function formatNameSeries(names = []) {
+  return names.map((name) => `「${name}」`).join('、');
+}
+
+function isReferenceInCollection(collection = [], value) {
+  const normalized = normalizeValue(value);
+  if (!normalized) return false;
+  return collection.some((item) => {
+    const aliases = item.aliases || [];
+    return (
+      normalizeValue(item.id) === normalized ||
+      normalizeValue(item.name) === normalized ||
+      aliases.some((alias) => normalizeValue(alias) === normalized)
+    );
+  });
+}
+
+function inferKeywordKind(keyword) {
+  const explicitKind = String(keyword?.kind || '').trim();
+  const kindAliases = {
+    person: 'person',
+    people: 'person',
+    人物: 'person',
+    geography: 'geography',
+    geo: 'geography',
+    地缘: 'geography',
+    地点: 'geography',
+    organization: 'organization',
+    institution: 'organization',
+    company: 'organization',
+    公司: 'organization',
+    机构: 'organization',
+    平台: 'organization',
+    product: 'product',
+    technology: 'product',
+    tech: 'product',
+    产品: 'product',
+    技术: 'product',
+    event: 'event',
+    事件: 'event',
+    战事: 'event',
+    风波: 'event',
+    concept: 'concept',
+    概念: 'concept',
+    mechanism: 'mechanism',
+    机制: 'mechanism',
+    model: 'mechanism',
+    模型: 'mechanism',
+    '机制/概念词': 'mechanism',
+    '机制/概念': 'mechanism',
+    asset: 'asset',
+    finance: 'asset',
+    commodity: 'asset',
+    金融资产: 'asset',
+    大宗商品: 'asset',
+    '金融资产/大宗商品': 'asset',
+    theme: 'theme',
+    主题: 'theme',
+    general: 'general',
+    常规: 'general'
+  };
+  if (kindAliases[explicitKind]) return kindAliases[explicitKind];
+
+  const name = String(keyword?.name || keyword?.id || '').trim();
+  const id = String(keyword?.id || '').trim();
+  const text = [name, id, ...(keyword?.aliases || [])].join(' ');
+
+  if (isPersonKeyword(keyword)) return 'person';
+  if (keyword?.canonicalRefs?.conceptId || isReferenceInCollection(site?.concepts || [], name) || isReferenceInCollection(site?.concepts || [], id)) return 'concept';
+  if (keyword?.canonicalRefs?.modelId || isReferenceInCollection(site?.models || [], name) || isReferenceInCollection(site?.models || [], id)) return 'mechanism';
+  if (/(战争|危机|事件|大选|风波|事故|改革|阅兵|总动员|冲突|封关|起火|趴窝|退欧|收费站)/.test(text)) return 'event';
+  if (/(海峡|航线|国家|地区|东南亚|中东|欧洲|美国|日本|伊朗|俄罗斯|新加坡|马来西亚|越南|匈牙利|台湾|海南|中国|乌克兰|阿联酋|富查伊拉|港口|港\b)/.test(text)) return 'geography';
+  if (/(公司|集团|平台|银行|大学|学校|医院|政府|监管|法院|地铁|联盟|组织|海合会|爱奇艺|华谊|百度|西贝|万科|亚航|OpenAI|OPEC)/i.test(text)) return 'organization';
+  if (/(汽车|出租车|短剧|L4|AI|无人机|产品|品牌|机器人|云端大脑|大模型|电池|芯片)/i.test(text)) return 'product';
+  if (keyword?.canonicalRefs?.themeId || isReferenceInCollection(site?.themes || [], name) || isReferenceInCollection(site?.themes || [], id)) return 'theme';
+  if (/(黄金|白银|比特币|石油美元|美元|货币|资产|大宗商品|贵金属|原油|股票|债券|ETF)/i.test(text)) return 'asset';
+  if (/(模型|机制|逻辑|结构|系统|闭环|秩序|规则|冗余|控制|分布式|集中式|银行化|金融化|注水|灰色|制裁|库存|躺平|自由|公平|权威|风险|契约|治理)/.test(text)) return 'mechanism';
+  return 'general';
+}
+
+function keywordKindConfig(kind) {
+  const configs = {
+    person: {
+      badge: '人物关键词',
+      definitionTitle: '基础介绍',
+      sceneTitle: '节目关联',
+      signalTitle: '个人风格'
+    },
+    geography: {
+      badge: '地缘/地点关键词',
+      definitionTitle: '基础介绍',
+      sceneTitle: '节目关联',
+      signalTitle: '常见场景'
+    },
+    organization: {
+      badge: '公司/机构关键词',
+      definitionTitle: '对象说明',
+      sceneTitle: '节目关联',
+      signalTitle: '常见场景'
+    },
+    product: {
+      badge: '产品/技术关键词',
+      definitionTitle: '对象说明',
+      sceneTitle: '节目关联',
+      signalTitle: '常见场景'
+    },
+    event: {
+      badge: '事件关键词',
+      definitionTitle: '事件说明',
+      sceneTitle: '节目关联',
+      signalTitle: '常见场景'
+    },
+    concept: {
+      badge: '概念词关键词',
+      definitionTitle: '概念说明',
+      sceneTitle: '节目关联',
+      signalTitle: '常见场景'
+    },
+    mechanism: {
+      badge: '机制词关键词',
+      definitionTitle: '机制说明',
+      sceneTitle: '节目关联',
+      signalTitle: '常见场景'
+    },
+    theme: {
+      badge: '主题词关键词',
+      definitionTitle: '主题说明',
+      sceneTitle: '节目关联',
+      signalTitle: '常见场景'
+    },
+    asset: {
+      badge: '金融资产/商品关键词',
+      definitionTitle: '资产说明',
+      sceneTitle: '节目关联',
+      signalTitle: '常见场景'
+    },
+    general: {
+      badge: '常规关键词',
+      definitionTitle: '基础介绍',
+      sceneTitle: '节目关联',
+      signalTitle: '常见场景'
+    }
+  };
+  return configs[kind] || configs.general;
+}
+
+function renderKeywordDefinitionContent(keyword) {
+  return `
+    ${renderParagraphText(keyword.description)}
+    ${keyword.scopeNote ? `<h3>站内用法</h3>${renderParagraphText(keyword.scopeNote)}` : ''}
+  `;
+}
+
+function renderKeywordSceneContent(keyword, relatedEpisodes = []) {
+  const discussionContent = renderDiscussionAngles(keyword.discussionAngles);
+  if (discussionContent) return discussionContent;
+  return renderEpisodeAngleBlocks(relatedEpisodes, '');
+}
+
+function renderKeywordSignalContent(keyword, referenceGroups = [], relatedEpisodes = [], kind = inferKeywordKind(keyword)) {
+  const conceptNames = referenceNamesForGroup(referenceGroups, '相关概念');
+  const modelNames = referenceNamesForGroup(referenceGroups, '相关模型');
+  const themeNames = referenceNamesForGroup(referenceGroups, '相关主题');
+  const personOrObjectNames = referenceNamesForGroup(referenceGroups, isPersonKeyword(keyword) ? '相关对象' : '相关人物');
+  const relatedNames = (keyword.relatedKeywords || [])
+    .map((reference) => findKeywordByReference(reference)?.name || '')
+    .filter(Boolean)
+    .filter((name, index, list) => list.indexOf(name) === index)
+    .slice(0, 5);
+  const signals = [];
+
+  if (isPersonKeyword(keyword)) {
+    signals.push(`节目提到${keyword.name}时，重点通常不在履历，而在这个人代表的权力风格、产业位置或秩序选择。`);
+  } else if (kind === 'geography') {
+    signals.push(`节目提到${keyword.name}时，常常是在讨论通道、边界、港口、海峡、资源或小国/大国之间的规则位置。`);
+  } else if (kind === 'organization') {
+    signals.push(`节目提到${keyword.name}时，通常要看它处在产业链、监管链或公共规则中的哪个位置。`);
+  } else if (kind === 'product') {
+    signals.push(`节目提到${keyword.name}时，重点通常在技术路线、运营系统、用户风险或规模化后的公共后果。`);
+  } else if (kind === 'event') {
+    signals.push(`节目提到${keyword.name}时，重点通常不在事件经过，而在它暴露了什么冲突结构和长期后果。`);
+  } else if (kind === 'mechanism' || kind === 'concept') {
+    signals.push(`节目提到${keyword.name}时，通常是在把具体案例提炼成一种现象、机制或判断工具。`);
+  } else {
+    signals.push(`当节目把${keyword.name}反复放进不同案例里讨论时，它通常已经不是普通标签，而是在承担一条稳定的理解线索。`);
+  }
+  if (relatedNames.length) {
+    signals.push(`它经常和 ${formatNameSeries(relatedNames)} 同时出现，这些相邻词能帮助判断它落在哪个具体语境里。`);
+  }
+  if (conceptNames.length) {
+    signals.push(`如果要看现象层解释，可以继续点 ${formatNameSeries(conceptNames)}。`);
+  }
+  if (modelNames.length) {
+    signals.push(`如果节目用它解释机制或因果链，通常会靠近 ${formatNameSeries(modelNames)} 这些模型。`);
+  }
+  if (themeNames.length) {
+    signals.push(`如果要按跨节目问题线阅读，可以接到 ${formatNameSeries(themeNames)}。`);
+  }
+  if (personOrObjectNames.length) {
+    signals.push(`和它一起出现的人物或对象包括 ${formatNameSeries(personOrObjectNames)}，这些节点常常提供具体案例。`);
+  }
+  if (relatedEpisodes.length >= 2) {
+    signals.push(`同一个词出现在 ${relatedEpisodes.map((episode) => episode.id).slice(0, 4).join('、')} 等节目里时，适合横向比较它在不同事件中的角色变化。`);
+  }
+
+  return renderDetailList(signals);
+}
+
+function shouldDisplayKeywordAlias(keyword, alias) {
+  const text = String(alias || '').trim();
+  if (!text) return false;
+  if (normalizeValue(text) === normalizeValue(keyword.name)) return false;
+  const looksLikeInternalSlug = /^[a-z0-9][a-z0-9-]+$/i.test(text) && /[a-z]/i.test(text);
+  if (looksLikeInternalSlug && normalizeValue(text) === normalizeValue(keyword.id)) return false;
+  return true;
+}
+
+function displayKeywordAliases(keyword) {
+  if (isPersonKeyword(keyword)) return [];
+  return (keyword.aliases || [])
+    .filter((alias) => shouldDisplayKeywordAlias(keyword, alias))
+    .filter((alias, index, list) => list.findIndex((item) => normalizeValue(item) === normalizeValue(alias)) === index);
+}
+
+function renderKeywordRelationContent(keyword, aliases = []) {
+  const blocks = [];
+  if (aliases.length) {
+    blocks.push(`
+      <div class="concept-scene-block">
+        <h3>相关写法</h3>
+        ${renderKeywordAliasLinks(aliases)}
+      </div>
+    `);
+  }
+  if (keyword.relatedKeywords?.length) {
+    blocks.push(`
+      <div class="concept-scene-block">
+        <h3>相邻关键词</h3>
+        ${renderRelatedKeywordLinks(keyword.relatedKeywords)}
+      </div>
+    `);
+  }
+  if (keyword.parents?.length) {
+    blocks.push(`
+      <div class="concept-scene-block">
+        <h3>上位入口</h3>
+        ${renderRelatedKeywordLinks(keyword.parents)}
+      </div>
+    `);
+  }
+  return blocks.join('');
+}
+
+function normalizeKeywordNoteBlocks(items = []) {
+  return (items || [])
+    .map((item) => {
+      if (typeof item === 'string') {
+        return {
+          title: '',
+          note: item.trim()
+        };
+      }
+      return {
+        title: String(item?.title || item?.line || '').trim(),
+        note: String(item?.note || item?.body || '').trim(),
+        episodes: Array.isArray(item?.episodes) ? item.episodes.filter(Boolean) : []
+      };
+    })
+    .filter((item) => item.note);
+}
+
+function renderKeywordNoteBlocks(items = [], emptyText = '', options = {}) {
+  const blocks = normalizeKeywordNoteBlocks(items);
+  if (!blocks.length) {
+    return emptyText ? `<p class="subtle">${escapeHtml(emptyText)}</p>` : '';
+  }
+  const showEpisodes = options.showEpisodes !== false;
+
+  return blocks.map((block) => `
+    <div class="concept-scene-block">
+      ${block.title ? `<h3>${escapeHtml(block.title)}</h3>` : ''}
+      <p>${renderLinkedEpisodeText(block.note)}</p>
+      ${showEpisodes && block.episodes?.length ? `<p class="subtle">关联节目：${block.episodes.map((id) => `<a class="inline-episode-link" href="${routeTo(`episodes/${id}`)}">${escapeHtml(id)}</a>`).join(' ')}</p>` : ''}
+    </div>
+  `).join('');
+}
+
+function renderKeywordFieldContent(value) {
+  if (Array.isArray(value)) return renderDetailList(value);
+  return renderParagraphText(value);
+}
+
+function hasKeywordFieldContent(value) {
+  if (Array.isArray(value)) {
+    return value.some((item) => {
+      if (typeof item === 'string') return item.trim();
+      return String(item?.note || item?.body || item?.title || item?.line || '').trim();
+    });
+  }
+  return String(value || '').trim();
+}
+
+function renderOptionalKeywordFieldContent(value) {
+  if (!hasKeywordFieldContent(value)) return '';
+  return renderKeywordFieldContent(value);
+}
+
+function renderKeywordDescriptionWithExtra(keyword, extraField) {
+  const extra = keyword[extraField];
+  const extraContent = extra ? renderKeywordFieldContent(extra) : '';
+  return `${renderParagraphText(keyword.description)}${extraContent}`;
+}
+
+function renderKeywordProgramAssociations(keyword, relatedEpisodes = []) {
+  const groupedAssociations = renderKeywordNoteBlocks(keyword.programAssociations, '', { showEpisodes: false });
+  if (groupedAssociations) return groupedAssociations;
+  return renderKeywordSceneContent(keyword, relatedEpisodes);
+}
+
+function renderKeywordSignalSection(keyword, fallbackContent) {
+  if (keyword.signalNotes) return renderKeywordFieldContent(keyword.signalNotes);
+  return fallbackContent;
+}
+
+function renderKeywordExtensionSection(keyword, aliases = []) {
+  const extensionBlocks = renderKeywordNoteBlocks(keyword.extensionNotes, '');
+  if (extensionBlocks) return extensionBlocks;
+  const relationContent = renderKeywordRelationContent(keyword, aliases);
+  return relationContent || '';
+}
+
+function renderPersonKeywordBasicIntro(keyword) {
+  return renderParagraphText(keyword.basicIntro || keyword.description);
+}
+
+function renderPersonKeywordProgramContent(keyword, relatedEpisodes = []) {
+  const intro = keyword.programRole ? renderParagraphText(keyword.programRole) : '';
+  const groupedAssociations = renderKeywordNoteBlocks(keyword.programAssociations, '', { showEpisodes: false });
+  const episodeAssociations = groupedAssociations || renderEpisodeAngleBlocks(relatedEpisodes, '');
+  return `${intro}${episodeAssociations}`;
+}
+
+function renderPersonKeywordExtensionContent(keyword) {
+  const extensionBlocks = renderKeywordNoteBlocks(keyword.extensionNotes, '');
+  if (extensionBlocks) return extensionBlocks;
+  if (keyword.relatedKeywords?.length) return renderRelatedKeywordLinks(keyword.relatedKeywords);
+  return '';
+}
+
+function buildKeywordAnalysisSections(keyword, relatedEpisodes = [], referenceGroups = [], keywordKind = inferKeywordKind(keyword), keywordConfig = keywordKindConfig(keywordKind), aliases = []) {
+  if (keywordKind === 'person') {
+    return [
+      { title: '基础介绍', content: renderPersonKeywordBasicIntro(keyword) },
+      { title: '节目关联', content: renderPersonKeywordProgramContent(keyword, relatedEpisodes) },
+      { title: '个人风格', content: renderOptionalKeywordFieldContent(keyword.styleNotes) },
+      { title: '做事方式', content: renderOptionalKeywordFieldContent(keyword.methodNotes) },
+      { title: '延展阅读', content: renderPersonKeywordExtensionContent(keyword) }
+    ];
+  }
+
+  const fallbackSignals = renderKeywordSignalContent(keyword, referenceGroups, relatedEpisodes, keywordKind);
+  const commonProgramSection = { title: keywordConfig.sceneTitle, content: renderKeywordProgramAssociations(keyword, relatedEpisodes) };
+  const commonExtensionSection = { title: '延展阅读', content: renderKeywordExtensionSection(keyword, aliases) };
+
+  if (keywordKind === 'geography') {
+    return [
+      { title: '基础介绍', content: renderKeywordDescriptionWithExtra(keyword, 'nodeRole') },
+      commonProgramSection,
+      { title: '影响方式', content: renderOptionalKeywordFieldContent(keyword.impactNotes) },
+      { title: '常见场景', content: renderKeywordSignalSection(keyword, fallbackSignals) },
+      commonExtensionSection
+    ];
+  }
+
+  if (keywordKind === 'organization') {
+    return [
+      { title: '对象说明', content: renderKeywordDescriptionWithExtra(keyword, 'positionNotes') },
+      commonProgramSection,
+      { title: '暴露问题', content: renderOptionalKeywordFieldContent(keyword.exposureNotes) },
+      { title: '常见场景', content: renderKeywordSignalSection(keyword, fallbackSignals) },
+      commonExtensionSection
+    ];
+  }
+
+  if (keywordKind === 'product') {
+    return [
+      { title: '对象说明', content: renderKeywordDescriptionWithExtra(keyword, 'objectRole') },
+      commonProgramSection,
+      { title: '现实后果', content: renderOptionalKeywordFieldContent(keyword.consequenceNotes) },
+      { title: '常见场景', content: renderKeywordSignalSection(keyword, fallbackSignals) },
+      commonExtensionSection
+    ];
+  }
+
+  if (keywordKind === 'event') {
+    return [
+      { title: '事件说明', content: renderParagraphText(keyword.description) },
+      { title: '冲突结构', content: renderOptionalKeywordFieldContent(keyword.conflictNotes) },
+      commonProgramSection,
+      { title: '后续影响', content: renderOptionalKeywordFieldContent(keyword.aftermathNotes) },
+      { title: '常见场景', content: renderKeywordSignalSection(keyword, fallbackSignals) },
+      commonExtensionSection
+    ];
+  }
+
+  if (keywordKind === 'concept' || keywordKind === 'mechanism' || keywordKind === 'theme') {
+    return [
+      { title: keywordConfig.definitionTitle, content: renderKeywordDescriptionWithExtra(keyword, 'mechanismNotes') },
+      commonProgramSection,
+      { title: '常见场景', content: renderKeywordSignalSection(keyword, fallbackSignals) },
+      commonExtensionSection
+    ];
+  }
+
+  if (keywordKind === 'asset') {
+    return [
+      { title: '资产说明', content: renderKeywordDescriptionWithExtra(keyword, 'assetRole') },
+      commonProgramSection,
+      { title: '风险结构', content: renderOptionalKeywordFieldContent(keyword.riskNotes) },
+      { title: '常见场景', content: renderKeywordSignalSection(keyword, fallbackSignals) },
+      commonExtensionSection
+    ];
+  }
+
+  return [
+    { title: keywordConfig.definitionTitle, content: renderKeywordDefinitionContent(keyword) },
+    commonProgramSection,
+    { title: keywordConfig.signalTitle, content: renderKeywordSignalSection(keyword, fallbackSignals) },
+    commonExtensionSection
+  ];
+}
+
+function makeDefaultThemeWhy(theme, relatedEpisodes = []) {
+  if (relatedEpisodes.length >= 2) {
+    return `${theme.name}之所以值得作为主题保留，是因为它把 ${relatedEpisodes.map((episode) => episode.id).slice(0, 4).join('、')} 这些节目放进同一条问题线里。读者从这里进入，不是看单期推荐，而是看同一种现实结构怎样在不同案例里反复出现。`;
+  }
+  if (relatedEpisodes.length === 1) {
+    return `${theme.name}目前先由 ${relatedEpisodes[0].id} 提供主锚点。这个主题页用于保留一条可继续扩展的问题线，后续出现同类节目时可以继续累积到这里。`;
+  }
+  return `${theme.name}用于承接一组长期问题，而不是替代单个概念或模型。它的作用是把分散节目组织成一条更容易继续阅读的主题线。`;
+}
+
+function makeDefaultThemeObservationLenses(theme, referenceGroups = [], relatedEpisodes = []) {
+  const conceptNames = referenceNamesForGroup(referenceGroups, '相关概念');
+  const modelNames = referenceNamesForGroup(referenceGroups, '相关模型');
+  const personNames = referenceNamesForGroup(referenceGroups, '相关人物');
+  const lenses = [];
+
+  if (conceptNames.length) {
+    lenses.push(`先看 ${formatNameSeries(conceptNames)}，它们说明这个主题里反复出现的现象和判断。`);
+  }
+  if (modelNames.length) {
+    lenses.push(`再看 ${formatNameSeries(modelNames)}，它们负责解释这些现象背后的机制和因果链。`);
+  }
+  if (personNames.length) {
+    lenses.push(`人物入口 ${formatNameSeries(personNames)} 可以帮助读者把抽象主题落回具体行动者和案例。`);
+  }
+  if (relatedEpisodes.length) {
+    lenses.push(`最后回到相关节目，比较同一问题在不同场景里怎样变形、重复或升级。`);
+  }
+
+  return renderDetailList(lenses.length ? lenses : [
+    `把它当作一条跨节目阅读线：先看具体案例，再回到概念、模型和人物节点判断它为什么会反复出现。`
+  ]);
+}
+
+function makeDefaultThemeBoundary(theme) {
+  return [
+    `${theme.name}不是百科式总论，也不负责替代单个概念、模型或人物页。`,
+    `当页面上方已经出现更精确的概念或模型时，机制解释应优先进入那些节点；主题页只负责把节目放进同一条问题线。`
+  ];
+}
+
 function buildProgressAccordionAttrs(label) {
   return `data-progress-section="true" data-progress-label="${escapeHtml(label)}"`;
 }
 
 function renderRelatedEpisodeCards(episodes = []) {
-  if (!episodes.length) return '<p class="subtle">待补充。</p>';
+  if (!episodes.length) return '';
   return `
     <div class="list">
       ${episodes.map((episode) => {
@@ -5126,7 +5960,7 @@ function renderConceptDetail(id) {
         <p>${renderLinkedEpisodeText(pattern.body)}</p>
       </div>
     `).join('')
-    : '<p class="subtle">待补充。</p>';
+    : '';
 
   app.innerHTML = `
     <section class="detail">
@@ -5147,14 +5981,13 @@ function renderConceptDetail(id) {
           title: '定义',
           content: `
           ${renderParagraphText(concept.definition)}
-          <h3>为什么重要</h3>
+          <h3>节目里的作用</h3>
           ${renderParagraphText(concept.importance)}
         `
         },
         { title: '常见场景', content: sceneContent },
-        { title: '识别信号', content: renderDetailList(concept.signals) },
-        { title: '使用边界', content: renderDetailList(concept.boundaries) },
-        { title: '进一步追问', content: renderDetailList(concept.questions) }
+        { title: '信息关联', content: renderDetailList(concept.signals) },
+        { title: '判断边界', content: renderDetailList(concept.boundaries) }
       ])}
       ${renderKnowledgeRelatedEpisodesSection('concepts', concept.id, relatedEpisodes)}
     </section>
@@ -5192,13 +6025,12 @@ function renderModelDetail(id) {
           title: '机制定义',
           content: `
             ${renderParagraphText(model.definition)}
-            ${modelContext ? `<h3>为什么重要</h3>${renderParagraphText(modelContext)}` : ''}
+            ${modelContext ? `<h3>节目里的作用</h3>${renderParagraphText(modelContext)}` : ''}
           `
         },
         { title: '在颖响力里的用法', content: renderParagraphText(model.application) },
-        { title: '观察信号', content: renderDetailList(model.signals) },
-        { title: '适用边界', content: renderDetailList(model.boundaries) },
-        { title: '进一步追问', content: renderDetailList(model.questions) }
+        { title: '信息关联', content: renderDetailList(model.signals) },
+        { title: '判断边界', content: renderDetailList(model.boundaries) }
       ])}
       ${renderKnowledgeRelatedEpisodesSection('models', model.id, relatedEpisodes)}
     </section>
@@ -5229,18 +6061,23 @@ function renderThemeDetail(id) {
   }
 
   const relatedEpisodes = buildRelatedEpisodeEntries(resolveKnowledgeEpisodeRelations(theme));
+  const referenceGroups = buildThemeReferenceGroups(theme, relatedEpisodes);
   const themeDescription = stripThemeBoilerplate(theme.description) || stripAnchorSentence(theme.description) || String(theme.description || '').trim();
   const observationContent = Array.isArray(theme.observationLenses)
     ? renderDetailList(theme.observationLenses)
     : renderParagraphText(theme.observationLenses);
+  const themeWhyContent = theme.whyThisThemeMatters
+    ? renderParagraphText(theme.whyThisThemeMatters)
+    : `
+      ${renderParagraphText(makeDefaultThemeWhy(theme, relatedEpisodes))}
+      ${renderEpisodeAngleBlocks(relatedEpisodes, '')}
+    `;
   const themeAnalysisSections = [
     { title: '主题说明', content: renderParagraphText(themeDescription) },
-    theme.whyThisThemeMatters ? { title: '归线依据', content: renderParagraphText(theme.whyThisThemeMatters) } : null,
-    theme.observationLenses ? { title: '观察维度', content: observationContent } : null,
-    theme.boundaries ? { title: '使用边界', content: renderDetailList(theme.boundaries) } : null,
-    theme.questions ? { title: '进一步追问', content: renderDetailList(theme.questions) } : null
+    { title: '归线依据', content: themeWhyContent },
+    { title: '观察维度', content: theme.observationLenses ? observationContent : makeDefaultThemeObservationLenses(theme, referenceGroups, relatedEpisodes) },
+    { title: '判断边界', content: theme.boundaries ? renderDetailList(theme.boundaries) : renderDetailList(makeDefaultThemeBoundary(theme)) }
   ].filter(Boolean);
-  const shouldUseStaticThemeIntro = themeAnalysisSections.length === 1 && themeAnalysisSections[0].title === '主题说明';
 
   app.innerHTML = `
     <section class="detail">
@@ -5249,16 +6086,9 @@ function renderThemeDetail(id) {
         <p class="detail-eyebrow">Theme Node</p>
         <h1 class="detail-title">${escapeHtml(theme.name)}</h1>
         <p class="detail-summary">${renderLinkedEpisodeText(theme.summary)}</p>
-        ${renderKnowledgeReferenceHeaderSection([
-          { title: '相关概念', type: 'concepts', items: theme.relatedConcepts, collection: site.concepts },
-          { title: '相关模型', type: 'models', items: theme.relatedModels, collection: site.models },
-          { title: '相关人物', type: 'keywords', items: theme.relatedPeople, collection: site.keywords },
-          { title: '邻近主题', type: 'themes', items: theme.relatedThemes, collection: site.themes }
-        ])}
+        ${renderKnowledgeReferenceHeaderSection(referenceGroups)}
       </div>
-      ${shouldUseStaticThemeIntro
-        ? renderKnowledgeStaticSection('主题说明', themeAnalysisSections[0].content)
-        : renderKnowledgeAnalysisSection(themeAnalysisSections)}
+      ${renderKnowledgeAnalysisSection(themeAnalysisSections)}
       ${renderKnowledgeRelatedEpisodesSection('themes', theme.id, relatedEpisodes)}
     </section>
   `;
@@ -5280,42 +6110,28 @@ function renderKeywordDetail(id) {
     return;
   }
 
-  const relatedEpisodes = (keyword.episodes || [])
-    .map((entry) => {
-      const episode = site.episodes.find((item) => item.id === entry.id);
-      return episode ? { ...entry, title: episode.title } : null;
-    })
-    .filter(Boolean)
-    .sort((a, b) => episodeNumberFromId(b.id) - episodeNumberFromId(a.id));
+  const relatedEpisodes = buildRelatedEpisodeEntries(keyword.episodes || []);
+  const referenceGroups = buildKeywordReferenceGroups(keyword, relatedEpisodes);
+  const keywordKind = inferKeywordKind(keyword);
+  const keywordConfig = keywordKindConfig(keywordKind);
+  const aliases = displayKeywordAliases(keyword);
 
   app.innerHTML = `
     <section class="detail">
-      <div class="detail-header">
+      <div class="detail-header knowledge-overview">
         ${renderDetailBackRow('#/keywords', '关键词')}
         <p class="detail-eyebrow">${escapeHtml(keyword.englishName || 'Keyword Node')}</p>
         <h1 class="detail-title">${escapeHtml(keyword.name)}</h1>
         <p class="detail-summary">${renderLinkedEpisodeText(keyword.summary)}</p>
-        ${isPersonKeyword(keyword) ? '<div class="meta-row"><span class="chip">人物关键词</span></div>' : ''}
+        <div class="meta-row"><span class="chip">${escapeHtml(keywordConfig.badge)}</span></div>
+        ${renderKnowledgeReferenceHeaderSection(referenceGroups)}
       </div>
-      <section class="detail-section">
-        <h2>简单介绍</h2>
-        ${renderParagraphText(keyword.description)}
-        ${keyword.aliases?.length ? `<h3>相关写法</h3>${renderKeywordAliasLinks(keyword.aliases)}` : ''}
-        ${keyword.relatedKeywords?.length ? `<h3>相关关键词</h3>${renderRelatedKeywordLinks(keyword.relatedKeywords)}` : ''}
-      </section>
-      <section class="detail-section">
-        <h2>相关节目</h2>
-        <div class="list">
-          ${relatedEpisodes.map((entry) => `
-            <a class="list-item" href="${routeTo(`episodes/${entry.id}`)}">
-              <h3>${escapeHtml(entry.id)}｜${escapeHtml(entry.title)}</h3>
-              <p>${renderLinkedEpisodeText(entry.note)}</p>
-            </a>
-          `).join('')}
-        </div>
-      </section>
+      ${renderKnowledgeAnalysisSection(buildKeywordAnalysisSections(keyword, relatedEpisodes, referenceGroups, keywordKind, keywordConfig, aliases))}
+      ${renderKnowledgeRelatedEpisodesSection('keywords', keyword.id, relatedEpisodes)}
     </section>
   `;
+
+  bindKnowledgeEpisodeSection('keywords', keyword.id, () => renderKeywordDetail(keyword.id));
 }
 
 function renderNotFound(message) {
@@ -5348,8 +6164,11 @@ function renderRoute() {
   const [section, id] = parts;
   const currentHash = window.location.hash || '#/';
   const transitionKind = getRouteTransitionKind(lastRenderedHash, currentHash);
+  const historyRestore = window.history.state?.yinfluenceViewState;
   const routeRestore = pendingRouteRestore && pendingRouteRestore.hash === currentHash
     ? pendingRouteRestore
+    : historyRestore?.hash === currentHash
+      ? historyRestore
     : null;
   const usesViewTransition = (
     hasRenderedRoute &&
@@ -5361,7 +6180,7 @@ function renderRoute() {
   document.body.classList.toggle('has-assisted-snap', section !== 'graph');
   document.body.classList.toggle('page-home', !section);
   document.body.classList.toggle('page-episode-index', section === 'episodes' && !id);
-  document.body.classList.toggle('page-knowledge-detail', ['concepts', 'models', 'themes'].includes(section) && !!id);
+  document.body.classList.toggle('page-knowledge-detail', ['concepts', 'models', 'themes', 'keywords'].includes(section) && !!id);
   document.body.classList.toggle('page-reference-detail', ['concepts', 'models', 'themes', 'keywords', 'people'].includes(section) && !!id);
 
   if (preRenderTopReset) {
@@ -5410,6 +6229,14 @@ function renderRoute() {
     renderKeywordDetail(id);
   } else {
     renderNotFound('页面不存在');
+  }
+
+  if (routeRestore) {
+    isApplyingRouteState = true;
+    restoreRouteViewState(routeRestore);
+    window.requestAnimationFrame(() => {
+      isApplyingRouteState = false;
+    });
   }
 
   if (!preRenderTopReset && !routeRestore) {

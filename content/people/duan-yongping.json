@@ -1,12 +1,66 @@
 {
   "id": "duan-yongping",
   "name": "段永平",
-  "summary": "段永平是节目中用来对照另一种人生选择与价值排序的重要企业家人物。",
-  "description": "段永平是中国企业家和投资人，因创办步步高并长期活跃于投资领域而被公众熟知。在这些节目里，段永平主要被提及于：EP059 中节目借段永平与王石的对照，讨论成年人如何在不同人生价值之间作出清醒选择。 这类人物页的作用，不只是告诉读者名字本身，而是让读者一眼看清他在节目讨论里到底承接了什么问题线，以及为什么这个名字值得被单独留下。",
+  "kind": "person",
+  "asOf": "2026-05-11",
+  "summary": "段永平是步步高 / BBK 创始人和投资人，节目借他对照王石，讨论成年人如何按价值排序承担选择后果。",
+  "description": "段永平是中国企业家和投资人，外部资料通常将他与步步高 / BBK、OPPO、vivo 及长期投资联系在一起。节目语境里，段永平不是被写成完整商业传记，而是在 EP059 中与王石并置，作为“知道代价以后仍按自己价值排序去选”的成年人样本。",
+  "basicIntro": "段永平是企业家、投资人，Bloomberg 资料将他列为 BBK Electronics 的 Chairman / Founder；公开科技报道也把他与步步高体系以及 OPPO、vivo 等手机品牌的形成联系起来。SCMP 2025 年报道还称他是 PDD 的早期投资人，说明他的公共身份横跨消费电子创业和长期投资两个领域。",
+  "programRole": "节目使用段永平，是为了让王石与田朴珺这期不只停留在亲密关系八卦。段永平被放进“成年人选择”的问题里：一个人可以清楚知道路径会带来什么后果，仍然按自己的价值排序承担它。",
+  "programAssociations": [
+    {
+      "title": "成年人选择与价值排序",
+      "episodes": [
+        "EP059"
+      ],
+      "note": "EP059 主要讨论王石与田朴珺的关系如何在万科阴影、资产变化和中年权力再排序中重构；节目随后借王石、段永平和一些家族案例说明，成熟的自我不是不知道代价就冲，而是在知道后果之后仍愿意选择。段永平在这里承担的是价值排序参照，而不是节目主线人物。"
+    }
+  ],
+  "styleNotes": [
+    "节目里的段永平呈现为低调、长期主义的企业家和投资人形象，适合与更高曝光度的地产人物形成反差。",
+    "他的节目功能不是证明某种选择更高明，而是提醒读者：成年人选择的核心在于自知和承担，而不是外界围观时的输赢评价。",
+    "段永平线索带有克制感，节目没有展开其商业细节，而是抓取他作为人生路径和价值排序参照的部分。"
+  ],
+  "methodNotes": [
+    "通过消费电子创业和后续投资积累，让个人公共形象从企业经营延伸到长期资本判断。",
+    "在节目对照中，他代表一种较少被短期舆论牵引的行动方式：先确认自己要什么，再承受这个排序带来的后果。",
+    "作为 EP059 的辅助人物，他的方法意义不在具体公司操作，而在为亲密关系和资产再定价讨论提供另一种人生选择尺度。"
+  ],
+  "extensionNotes": [
+    {
+      "title": "王石与田朴珺",
+      "note": "段永平在 EP059 中是辅助对照，读者应回到王石和田朴珺的关系再定价主线理解这一期。"
+    },
+    {
+      "title": "步步高 / BBK",
+      "note": "段永平的外部身份连接消费电子创业史，能帮助读者理解他为什么常被作为长期主义企业家参照。"
+    },
+    {
+      "title": "成年人选择",
+      "note": "EP059 借段永平强调选择不是情绪冲动，而是知道代价后仍按价值排序行动。"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Duan Yong Ping, BBK Electronics Corp Ltd: Profile and Biography - Bloomberg Markets",
+      "url": "https://www.bloomberg.com/profile/person/5960191",
+      "note": "核对段永平为 BBK Electronics Chairman / Founder 的公开身份。"
+    },
+    {
+      "title": "PDD's Chinese-American billionaire investor Duan Yongping heaps praise on Temu - South China Morning Post",
+      "url": "https://www.scmp.com/tech/big-tech/article/3293630/pdds-chinese-american-billionaire-investor-duan-yongping-heaps-praise-temu",
+      "note": "核对段永平作为企业家、投资人及 PDD 早期投资人的公开身份背景。"
+    },
+    {
+      "title": "BBK Electronics: Meet the company that owns OnePlus, OPPO, Vivo, and Realme - Android Central",
+      "url": "https://www.androidcentral.com/bbk-electronics-history-oneplus-oppo-vivo-realme",
+      "note": "辅助核对段永平与 BBK、OPPO、vivo 等消费电子品牌形成之间的公开关联。"
+    }
+  ],
   "episodes": [
     {
       "id": "EP059",
-      "note": "节目借段永平与王石的对照，讨论成年人如何在不同人生价值之间作出清醒选择。"
+      "note": "节目借段永平与王石等案例，讨论成年人如何按价值排序做选择并承担代价。"
     }
   ]
 }

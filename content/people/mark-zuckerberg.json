@@ -1,12 +1,61 @@
 {
   "id": "mark-zuckerberg",
   "name": "扎克伯格",
-  "summary": "扎克伯格是 Meta 创始人，在这些节目里主要作为全球资本与平台方视角的代表人物出现。",
-  "description": "扎克伯格在节目里并不是人物传记主角，而是大型科技平台、全球资本和并购能力的象征。围绕他的提及，通常是为了说明一家创业公司在进入全球大厂视野后，会被怎样的资本与组织逻辑重新定价。 在当前节目脉络里，最直接的锚点是 EP057：节目把 Meta 与扎克伯格放进 Manus 传闻中，作为全球资本重新定价创业公司的参照对象。",
+  "kind": "person",
+  "asOf": "2026-05-11",
+  "summary": "扎克伯格是 Meta 创始人、董事长兼 CEO，节目借他代表全球科技平台如何重新定价 AI 初创公司的团队、产品和退出路径。",
+  "description": "扎克伯格（Mark Zuckerberg）是 Meta 的创始人、董事长兼首席执行官。Meta 官方资料称，他 2004 年创办 Facebook，并负责公司整体方向和产品战略。节目语境里，扎克伯格不是传记主角，而是 Manus 进入全球平台视野时的资本和组织参照。",
+  "basicIntro": "扎克伯格是美国科技企业家，Meta 官方投资者资料将他列为 Founder, Chairman and Chief Executive Officer。Facebook 由他于 2004 年创办，后来成为 Meta 旗下核心社交平台之一；公开资料显示，他仍是 Meta 的关键创始人型管理者。",
+  "programRole": "节目使用扎克伯格，是为了让 Manus 这类 AI 初创公司从“某个产品被看见”进入“大平台为什么愿意买人、买团队、买法域和买未来能力”的问题里。扎克伯格在这里承担的是全球平台买方和资本定价者的角色。",
+  "programAssociations": [
+    {
+      "title": "平台买方与创业公司定价",
+      "episodes": [
+        "EP057"
+      ],
+      "note": "EP057 把 Meta 和扎克伯格放进 Manus 收购传闻中，先说明 Meta 可能看中的不是一个单点功能，而是肖弘、团队和下一轮 AI agent 能力路径；随后节目用这个买方视角反衬国内大厂常见的压价、复制和挖人逻辑。扎克伯格因此成为全球平台如何给 AI 创业公司重估价值的节目锚点。"
+    }
+  ],
+  "styleNotes": [
+    "节目里的扎克伯格不是社交媒体争议人物，而是创始人型平台权力的代表：平台可以通过收购把外部创新吸进自己的增长框架。",
+    "他的出现让 Manus 讨论从民族情绪转向公司定价，重点变成谁有能力识别并吸收下一代 AI 产品团队。",
+    "扎克伯格线索带有强买方视角：对创业者而言，被 Meta 看见意味着进入全球估值体系，也意味着公司命运会被大平台战略重新定义。"
+  ],
+  "methodNotes": [
+    "通过 Meta 的平台规模和资金能力，把外部 AI agent 团队纳入自身 AI 战略，而不是只依靠内部研发排队。",
+    "用收购或整合方式压缩技术追赶时间，使创业公司的产品能力被重新打包为 Meta AI、消费产品和商业产品的一部分。",
+    "在节目归纳里，扎克伯格代表的不是单次交易，而是大型平台把创业者、团队和法域结构一并纳入估值的能力。"
+  ],
+  "extensionNotes": [
+    {
+      "title": "Meta 与平台资本",
+      "note": "扎克伯格在 EP057 中主要通过 Meta 出场，适合继续看大平台如何用收购吸收外部 AI 能力。"
+    },
+    {
+      "title": "Manus 收购线",
+      "note": "扎克伯格与肖弘、Manus 同读时，重点是创业公司在全球买方眼中被如何定价，而不是人物八卦。"
+    },
+    {
+      "title": "AI 创业退出路径",
+      "note": "EP057 到 EP132 之间的变化说明，大厂买方、美元退出和监管边界会共同决定草根创业能否兑现价值。"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Meta Investor Relations: Mark Zuckerberg",
+      "url": "https://investor.atmeta.com/leadership-and-governance/person-details/default.aspx",
+      "note": "核对扎克伯格为 Meta 创始人、董事长兼 CEO，以及 2004 年创办 Facebook 的官方表述。"
+    },
+    {
+      "title": "Mark Zuckerberg - Encyclopaedia Britannica",
+      "url": "https://www.britannica.com/money/Mark-Zuckerberg",
+      "note": "辅助核对扎克伯格作为 Facebook/Meta 创始人和科技企业家的公开人物基础背景。"
+    }
+  ],
   "episodes": [
     {
       "id": "EP057",
-      "note": "节目把 Meta 与扎克伯格放进 Manus 传闻中，作为全球资本重新定价创业公司的参照对象。"
+      "note": "节目把 Meta 与扎克伯格放进 Manus 传闻中，作为全球平台重新定价 AI 创业公司的参照。"
     }
   ]
 }
