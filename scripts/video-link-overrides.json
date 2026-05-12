@@ -2,8 +2,8 @@
   "EP138": {
     "bilibili": {
       "platform": "bilibili",
-      "status": "unavailable",
-      "note": "B站暂未上架"
+      "url": "https://www.bilibili.com/video/BV11y5s6JEJk/?spm_id_from=333.1007.top_right_bar_window_dynamic.content.click",
+      "access": "member"
     },
     "youtube": {
       "platform": "youtube",
