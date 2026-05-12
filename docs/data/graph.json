@@ -2,12 +2,12 @@
   "meta": {
     "title": "颖响力知识图谱",
     "subtitle": "节目、概念、模型、人物、主题之间的可视化连接网络",
-    "nodeCount": 486,
-    "linkCount": 968,
+    "nodeCount": 492,
+    "linkCount": 981,
     "typeCounts": {
-      "model": 62,
-      "episode": 137,
-      "concept": 135,
+      "model": 64,
+      "episode": 138,
+      "concept": 138,
       "person": 61,
       "theme": 91
     }
@@ -22,7 +22,7 @@
       "route": "models/risk-transfer-chain",
       "summary": "系统不会立刻吞下风险，而是先沿着银行、企业、票据、供应链和普通人之间不断转手、延后和下沉。",
       "status": null,
-      "degree": 35
+      "degree": 36
     },
     {
       "id": "model:leverage-backfire",
@@ -322,6 +322,17 @@
       "degree": 10
     },
     {
+      "id": "episode:EP138",
+      "key": "EP138",
+      "label": "EP138",
+      "fullLabel": "EP138 · 五粮液的大洗澡，散户真的看得懂吗？三大核心乱象把A股玩的明明白白！【EP138】｜左右逢源式操控｜内循环式蓄水池｜散户自愿买单｜抽逃上市公司资金｜利润调节器｜",
+      "type": "episode",
+      "route": "episodes/EP138",
+      "summary": "本期从五粮液财务业绩大幅调整切入，认为它不是简单的数字变化，而是国企换届切割、经销商利润蓄水池和 A 股惩戒失效共同显影。节目把这件事拆成三层：新任管理层通过一次性压低历史业绩为后续增长铺台阶，白酒经销商体系长期充当可调节利润的内循环水库，而市场和监管又很难形成足够惩罚，最后让普通散户在看似公开的报表里承担信息和规则劣势。",
+      "status": "curated",
+      "degree": 10
+    },
+    {
       "id": "theme:ev-collapse-and-exit-risk",
       "key": "ev-collapse-and-exit-risk",
       "label": "新能源崩塌与退出风险",
@@ -417,6 +428,17 @@
       "type": "episode",
       "route": "episodes/EP066",
       "summary": "本期以观致汽车破产和姚振华实名举报为切口，回顾观致如何从曾经最像“认真造车”的良币，走到被资本改造成劣币、最终只剩残值争夺的结局。节目核心判断是，观致的失败并不只是产品卖得慢，而是良币基因在中国新能源和资本市场里根本无法独自存活，一旦被野蛮资本接手，又会迅速失去原本唯一值钱的东西。",
+      "status": "curated",
+      "degree": 9
+    },
+    {
+      "id": "episode:EP076",
+      "key": "EP076",
+      "label": "EP076",
+      "fullLabel": "EP076 · 今天的黄金白银，无论涨跌对散户来说都是陷阱。",
+      "type": "episode",
+      "route": "episodes/EP076",
+      "summary": "节目认为今天的黄金白银市场对绝大多数散户都是陷阱，不只是因为方向难判，更因为普通人接触不到真正高信用、低贪婪的主平台，只能在层层转手的平台风险和错误时机里反复亏损。",
       "status": "curated",
       "degree": 9
     },
@@ -729,17 +751,6 @@
       "degree": 8
     },
     {
-      "id": "episode:EP076",
-      "key": "EP076",
-      "label": "EP076",
-      "fullLabel": "EP076 · 今天的黄金白银，无论涨跌对散户来说都是陷阱。",
-      "type": "episode",
-      "route": "episodes/EP076",
-      "summary": "节目认为今天的黄金白银市场对绝大多数散户都是陷阱，不只是因为方向难判，更因为普通人接触不到真正高信用、低贪婪的主平台，只能在层层转手的平台风险和错误时机里反复亏损。",
-      "status": "curated",
-      "degree": 8
-    },
-    {
       "id": "episode:EP079",
       "key": "EP079",
       "label": "EP079",
@@ -802,6 +813,17 @@
       "type": "episode",
       "route": "episodes/EP104",
       "summary": "本期把黄循财访日和新日关系升级，解释成东亚与东南亚秩序重组中的一个标志性时刻。节目最核心的判断是：新加坡并没有简单“抛弃中立”，而是在从旧式被动中立转向更主动、更规则导向的中立；它之所以不能成为“亚洲瑞士”，是因为马六甲海峡的位置决定了它不可能在大国对抗中长期只做旁观者。",
+      "status": "curated",
+      "degree": 8
+    },
+    {
+      "id": "episode:EP105",
+      "key": "EP105",
+      "label": "EP105",
+      "fullLabel": "EP105 · 为什么不做一个“正常”的财经博主。如果你厌倦了追涨杀跌，不如静下心一看。【EP105】",
+      "type": "episode",
+      "route": "episodes/EP105",
+      "summary": "节目把主流财经内容定义为“情绪价值博主”生意，主张真正的财经表达应该谈战略、周期和进入时点，而不是用每天涨跌帮观众短暂获得刺激和参与感。",
       "status": "curated",
       "degree": 8
     },
@@ -1121,17 +1143,6 @@
       "type": "episode",
       "route": "episodes/EP102",
       "summary": "节目把带货博主造假无恙、反诈老陈反被限流封禁视为平台治理的真实逻辑暴露：平台保护的不是事实和消费者，而是谁更能持续带来高额流量与交易额。",
-      "status": "curated",
-      "degree": 7
-    },
-    {
-      "id": "episode:EP105",
-      "key": "EP105",
-      "label": "EP105",
-      "fullLabel": "EP105 · 为什么不做一个“正常”的财经博主。如果你厌倦了追涨杀跌，不如静下心一看。【EP105】",
-      "type": "episode",
-      "route": "episodes/EP105",
-      "summary": "节目把主流财经内容定义为“情绪价值博主”生意，主张真正的财经表达应该谈战略、周期和进入时点，而不是用每天涨跌帮观众短暂获得刺激和参与感。",
       "status": "curated",
       "degree": 7
     },
@@ -1631,6 +1642,17 @@
       "degree": 5
     },
     {
+      "id": "theme:state-business-entanglement",
+      "key": "state-business-entanglement",
+      "label": "政企嵌入与企业存续",
+      "fullLabel": "政企嵌入与企业存续",
+      "type": "theme",
+      "route": "themes/state-business-entanglement",
+      "summary": "讨论企业如何依赖地方政府、国资平台或关系结构续命，以及这种绑定如何反过来改写企业目标。",
+      "status": null,
+      "degree": 5
+    },
+    {
       "id": "model:institutional-formalism-spiral",
       "key": "institutional-formalism-spiral",
       "label": "制度形式主义螺旋",
@@ -1884,6 +1906,17 @@
       "degree": 5
     },
     {
+      "id": "episode:EP112",
+      "key": "EP112",
+      "label": "EP112",
+      "fullLabel": "EP112 · 茅台是披着白酒外衣的「微型央行」！3000亿到万亿的杠杆盘，一场不能失手的拆弹行动。【EP112】",
+      "type": "episode",
+      "route": "episodes/EP112",
+      "summary": "本期把茅台解释成一种披着白酒外衣的准货币系统：酒不只是被喝掉，而是被经销商、囤货者和投资人当成类似存款与抵押物的资产来运作；这次渠道改革的核心，也不是简单数字化，而是茅台在拆一颗自己养大的金融炸弹。",
+      "status": "curated",
+      "degree": 5
+    },
+    {
       "id": "concept:subsidy-leverage-engine",
       "key": "subsidy-leverage-engine",
       "label": "补贴杠杆引擎",
@@ -2005,6 +2038,17 @@
       "degree": 4
     },
     {
+      "id": "theme:narrative-speculation-and-retail-traps",
+      "key": "narrative-speculation-and-retail-traps",
+      "label": "投资叙事与散户陷阱",
+      "fullLabel": "投资叙事与散户陷阱",
+      "type": "theme",
+      "route": "themes/narrative-speculation-and-retail-traps",
+      "summary": "当市场热点先由故事驱动、再由散户接棒时，普通人最容易在高潮处接到最后一棒。",
+      "status": null,
+      "degree": 4
+    },
+    {
       "id": "model:stability-over-growth-trap",
       "key": "stability-over-growth-trap",
       "label": "稳定替代增长陷阱",
@@ -2056,17 +2100,6 @@
       "type": "person",
       "route": "people/zhang-xuefeng",
       "summary": "张雪峰（张子彪，1984-2026）是考研与升学规划领域的公众人物，节目借他观察教育焦虑、安全阀和稳定路径叙事。",
-      "status": null,
-      "degree": 4
-    },
-    {
-      "id": "theme:state-business-entanglement",
-      "key": "state-business-entanglement",
-      "label": "政企嵌入与企业存续",
-      "fullLabel": "政企嵌入与企业存续",
-      "type": "theme",
-      "route": "themes/state-business-entanglement",
-      "summary": "讨论企业如何依赖地方政府、国资平台或关系结构续命，以及这种绑定如何反过来改写企业目标。",
       "status": null,
       "degree": 4
     },
@@ -2170,17 +2203,6 @@
       "degree": 4
     },
     {
-      "id": "episode:EP112",
-      "key": "EP112",
-      "label": "EP112",
-      "fullLabel": "EP112 · 茅台是披着白酒外衣的「微型央行」！3000亿到万亿的杠杆盘，一场不能失手的拆弹行动。【EP112】",
-      "type": "episode",
-      "route": "episodes/EP112",
-      "summary": "本期把茅台解释成一种披着白酒外衣的准货币系统：酒不只是被喝掉，而是被经销商、囤货者和投资人当成类似存款与抵押物的资产来运作；这次渠道改革的核心，也不是简单数字化，而是茅台在拆一颗自己养大的金融炸弹。",
-      "status": "curated",
-      "degree": 4
-    },
-    {
       "id": "episode:EP113",
       "key": "EP113",
       "label": "EP113",
@@ -2221,6 +2243,17 @@
       "type": "concept",
       "route": "concepts/safety-attention-shift",
       "summary": "品牌用舒适、家庭和情绪卖点吸引注意力，可能让用户忽略安全和技术底线。",
+      "status": null,
+      "degree": 3
+    },
+    {
+      "id": "theme:liquor-financialization-and-table-culture",
+      "key": "liquor-financialization-and-table-culture",
+      "label": "白酒金融化与餐桌秩序",
+      "fullLabel": "白酒金融化与餐桌秩序",
+      "type": "theme",
+      "route": "themes/liquor-financialization-and-table-culture",
+      "summary": "讨论白酒如何从饮用品变成金融品，又如何因为餐桌权力结构变化而失去旧的消费基础。",
       "status": null,
       "degree": 3
     },
@@ -2276,6 +2309,17 @@
       "type": "theme",
       "route": "themes/catering-pricing-logic",
       "summary": "讨论餐饮价格背后到底由哪些结构因素共同决定。",
+      "status": null,
+      "degree": 3
+    },
+    {
+      "id": "model:discipline-failure-loop",
+      "key": "discipline-failure-loop",
+      "label": "惩戒失效循环模型",
+      "fullLabel": "惩戒失效循环模型",
+      "type": "model",
+      "route": "models/discipline-failure-loop",
+      "summary": "违规成本过低时，市场会把规则破坏重新包装成交易机会，反过来奖励下一次违规。",
       "status": null,
       "degree": 3
     },
@@ -2551,17 +2595,6 @@
       "type": "theme",
       "route": "themes/institutional-middle-class-and-social-mobility",
       "summary": "讨论稳定岗位、公共财政和身份溢价如何重塑中产结构，并收窄普通人的上升路径。",
-      "status": null,
-      "degree": 3
-    },
-    {
-      "id": "theme:narrative-speculation-and-retail-traps",
-      "key": "narrative-speculation-and-retail-traps",
-      "label": "投资叙事与散户陷阱",
-      "fullLabel": "投资叙事与散户陷阱",
-      "type": "theme",
-      "route": "themes/narrative-speculation-and-retail-traps",
-      "summary": "当市场热点先由故事驱动、再由散户接棒时，普通人最容易在高潮处接到最后一棒。",
       "status": null,
       "degree": 3
     },
@@ -2872,17 +2905,6 @@
       "summary": "本期借美军高成本营救一名 F-15E 飞行员的事件，讨论的不是“值不值”这道算术题，而是两套完全不同的国家逻辑。节目认为，一套逻辑把人、装备和战争都折算成数字，最后只算性价比；另一套逻辑则把国家与公民之间的双向契约、生命不可替代性与长期信用视为真正的核心资产。主持人的结论很明确：美军看似花大钱救一个人，实际是在给全部军人与社会兑现国家信用。",
       "status": "curated",
       "degree": 3
-    },
-    {
-      "id": "theme:liquor-financialization-and-table-culture",
-      "key": "liquor-financialization-and-table-culture",
-      "label": "白酒金融化与餐桌秩序",
-      "fullLabel": "白酒金融化与餐桌秩序",
-      "type": "theme",
-      "route": "themes/liquor-financialization-and-table-culture",
-      "summary": "讨论白酒如何从饮用品变成金融品，又如何因为餐桌权力结构变化而失去旧的消费基础。",
-      "status": null,
-      "degree": 2
     },
     {
       "id": "concept:standard-answer-cage",
@@ -3215,6 +3237,17 @@
       "degree": 2
     },
     {
+      "id": "model:profit-reservoir-cycle",
+      "key": "profit-reservoir-cycle",
+      "label": "利润蓄水池循环模型",
+      "fullLabel": "利润蓄水池循环模型",
+      "type": "model",
+      "route": "models/profit-reservoir-cycle",
+      "summary": "企业通过渠道、库存、回款和确认节奏蓄放利润，让业绩在不同周期之间重新分配。",
+      "status": null,
+      "degree": 2
+    },
+    {
       "id": "person:elon-musk",
       "key": "elon-musk",
       "label": "马斯克",
@@ -3343,6 +3376,17 @@
       "type": "concept",
       "route": "concepts/time-window-reading",
       "summary": "同一动作在不同周期中的意义不同，判断决策必须先看它发生在哪个时间窗口。",
+      "status": null,
+      "degree": 2
+    },
+    {
+      "id": "theme:data-cosmetics-and-false-prosperity",
+      "key": "data-cosmetics-and-false-prosperity",
+      "label": "数据粉饰与虚假繁荣",
+      "fullLabel": "数据粉饰与虚假繁荣",
+      "type": "theme",
+      "route": "themes/data-cosmetics-and-false-prosperity",
+      "summary": "讨论地方政府、企业与市场如何用账面数据制造景气感，却把真实风险继续藏在黑箱里。",
       "status": null,
       "degree": 2
     },
@@ -4711,6 +4755,17 @@
       "degree": 1
     },
     {
+      "id": "concept:channel-profit-reservoir",
+      "key": "channel-profit-reservoir",
+      "label": "渠道利润蓄水池",
+      "fullLabel": "渠道利润蓄水池",
+      "type": "concept",
+      "route": "concepts/channel-profit-reservoir",
+      "summary": "渠道利润蓄水池指企业把经销商、库存、回款和确认节奏做成可调节利润的缓冲层。",
+      "status": null,
+      "degree": 1
+    },
+    {
       "id": "concept:authority-internalization",
       "key": "authority-internalization",
       "label": "权威内化",
@@ -4865,13 +4920,13 @@
       "degree": 1
     },
     {
-      "id": "theme:data-cosmetics-and-false-prosperity",
-      "key": "data-cosmetics-and-false-prosperity",
-      "label": "数据粉饰与虚假繁荣",
-      "fullLabel": "数据粉饰与虚假繁荣",
-      "type": "theme",
-      "route": "themes/data-cosmetics-and-false-prosperity",
-      "summary": "讨论地方政府、企业与市场如何用账面数据制造景气感，却把真实风险继续藏在黑箱里。",
+      "id": "concept:market-discipline-failure",
+      "key": "market-discipline-failure",
+      "label": "市场惩戒失效",
+      "fullLabel": "市场惩戒失效",
+      "type": "concept",
+      "route": "concepts/market-discipline-failure",
+      "summary": "市场惩戒失效指规则被明显挑战后，法律、监管、审计和价格反应都没有让违规者付出足够代价。",
       "status": null,
       "degree": 1
     },
@@ -5114,6 +5169,17 @@
       "type": "person",
       "route": "people/yao-zhenhua",
       "summary": "姚振华是宝能集团核心人物，节目借他和观致汽车讨论金融化资本如何把汽车良币拖入销量、残值和清算博弈。",
+      "status": null,
+      "degree": 1
+    },
+    {
+      "id": "concept:earnings-big-bath",
+      "key": "earnings-big-bath",
+      "label": "业绩大洗澡",
+      "fullLabel": "业绩大洗澡",
+      "type": "concept",
+      "route": "concepts/earnings-big-bath",
+      "summary": "业绩大洗澡指企业把历史问题一次性集中确认，把旧账压低成新任期或新叙事的低起点。",
       "status": null,
       "degree": 1
     },
@@ -10027,6 +10093,56 @@
       "kind": "episode-theme"
     },
     {
+      "source": "episode:EP138",
+      "target": "concept:earnings-big-bath",
+      "kind": "episode-concept"
+    },
+    {
+      "source": "episode:EP138",
+      "target": "concept:channel-profit-reservoir",
+      "kind": "episode-concept"
+    },
+    {
+      "source": "episode:EP138",
+      "target": "concept:market-discipline-failure",
+      "kind": "episode-concept"
+    },
+    {
+      "source": "episode:EP138",
+      "target": "model:profit-reservoir-cycle",
+      "kind": "episode-model"
+    },
+    {
+      "source": "episode:EP138",
+      "target": "model:discipline-failure-loop",
+      "kind": "episode-model"
+    },
+    {
+      "source": "episode:EP138",
+      "target": "model:risk-transfer-chain",
+      "kind": "episode-model"
+    },
+    {
+      "source": "episode:EP138",
+      "target": "theme:liquor-financialization-and-table-culture",
+      "kind": "episode-theme"
+    },
+    {
+      "source": "episode:EP138",
+      "target": "theme:data-cosmetics-and-false-prosperity",
+      "kind": "episode-theme"
+    },
+    {
+      "source": "episode:EP138",
+      "target": "theme:narrative-speculation-and-retail-traps",
+      "kind": "episode-theme"
+    },
+    {
+      "source": "episode:EP138",
+      "target": "theme:state-business-entanglement",
+      "kind": "episode-theme"
+    },
+    {
       "source": "episode:EP120",
       "target": "concept:active-neutrality",
       "kind": "episode-concept"
@@ -10077,6 +10193,16 @@
       "kind": "episode-model"
     },
     {
+      "source": "episode:EP076",
+      "target": "model:discipline-failure-loop",
+      "kind": "episode-model"
+    },
+    {
+      "source": "episode:EP105",
+      "target": "model:discipline-failure-loop",
+      "kind": "episode-model"
+    },
+    {
       "source": "episode:EP105",
       "target": "model:non-monetary-legacy",
       "kind": "episode-model"
@@ -10099,6 +10225,11 @@
     {
       "source": "episode:EP129",
       "target": "model:opaque-withdrawal-governance",
+      "kind": "episode-model"
+    },
+    {
+      "source": "episode:EP112",
+      "target": "model:profit-reservoir-cycle",
       "kind": "episode-model"
     },
     {

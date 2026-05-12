@@ -1,4 +1,15 @@
 {
+  "EP138": {
+    "bilibili": {
+      "platform": "bilibili",
+      "status": "unavailable",
+      "note": "B站暂未上架"
+    },
+    "youtube": {
+      "platform": "youtube",
+      "url": "https://www.youtube.com/watch?v=UK4Vvzz9UkQ"
+    }
+  },
   "EP137": {
     "bilibili": {
       "platform": "bilibili",

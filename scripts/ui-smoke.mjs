@@ -465,6 +465,70 @@ async function runReferenceIndexCardNavigationChecks(client) {
   }
 }
 
+async function runKeywordKindGroupingChecks(client) {
+  await navigate(client, `${baseUrl}/#/keywords`, '.keyword-group .accordion-summary');
+  const groupingCheck = await evaluate(client, `(() => {
+    const labels = [...document.querySelectorAll('.keyword-group > .accordion-summary span:first-child')]
+      .map((node) => node.textContent?.trim() || '');
+    const expected = ['人物', '地理位置', '公司机构', '产品技术', '资产商品', '事件', '机制', '概念', '主题', '通用类'];
+    const oldLabels = ['国家与地缘', '房地产与金融', '科技与产业', '品牌与公司', '教育与学术', '文化与媒体', '家庭与社会', '制度与治理', '其他'];
+    const matchingPrefix = labels.slice(0, expected.length);
+    return {
+      labels,
+      matchingPrefix,
+      missing: expected.filter((label) => !labels.includes(label)),
+      oldPresent: oldLabels.filter((label) => labels.includes(label)),
+      orderOk: expected.every((label, index) => matchingPrefix[index] === label)
+    };
+  })()`);
+  assert(
+    groupingCheck.missing.length === 0 && groupingCheck.oldPresent.length === 0 && groupingCheck.orderOk,
+    `Keyword index should use the ten kind groups instead of the old topic buckets: ${JSON.stringify(groupingCheck)}`
+  );
+
+  await navigate(client, `${baseUrl}/#/keywords?kind=product`, '.keyword-group[data-keyword-kind-group="product"]');
+  await waitForCondition(
+    client,
+    `location.hash === '#/keywords?kind=product'
+      && document.querySelector('.keyword-group[data-keyword-kind-group="product"]')?.open`,
+    { timeoutMs: 4000, label: 'keyword kind query opens product group' }
+  );
+  const productGroupCheck = await evaluate(client, `(() => {
+    const group = document.querySelector('.keyword-group[data-keyword-kind-group="product"]');
+    const directItems = group ? [...group.querySelectorAll(':scope > .accordion-content > .list > .keyword-list-item')] : [];
+    const more = group?.querySelector(':scope > .accordion-content > .keyword-group-more');
+    return {
+      directItems: directItems.length,
+      hasMore: Boolean(more),
+      moreText: more?.querySelector('.accordion-summary')?.textContent?.trim() || ''
+    };
+  })()`);
+  assert(
+    productGroupCheck.directItems === 3 && productGroupCheck.hasMore,
+    `Keyword kind groups should preview three entries and hide the rest behind "展开更多": ${JSON.stringify(productGroupCheck)}`
+  );
+
+  await navigate(client, `${baseUrl}/#/keywords/${encodeURIComponent('无人机')}`, '.keyword-kind-chip');
+  const detailChipCheck = await evaluate(client, `(() => {
+    const chip = document.querySelector('.keyword-kind-chip');
+    return {
+      text: chip?.textContent?.trim() || '',
+      href: chip?.getAttribute('href') || ''
+    };
+  })()`);
+  assert(
+    detailChipCheck.text === '产品技术' && detailChipCheck.href === '#/keywords?kind=product',
+    `Keyword detail type chip should link back to its kind group: ${JSON.stringify(detailChipCheck)}`
+  );
+  await clickSelector(client, '.keyword-kind-chip');
+  await waitForCondition(
+    client,
+    `location.hash === '#/keywords?kind=product'
+      && document.querySelector('.keyword-group[data-keyword-kind-group="product"]')?.open`,
+    { timeoutMs: 4000, label: 'keyword detail type chip opens matching keyword group' }
+  );
+}
+
 async function runInlineEpisodeLinkStyleChecks(client) {
   await navigate(client, `${baseUrl}/#/keywords/${encodeURIComponent('俄乌战争')}`, '.inline-episode-link');
   assert(
@@ -587,6 +651,7 @@ async function runPersonKeywordDetailChecks(client) {
 }
 
 async function runKnowledgeIndexChecks(client) {
+  await runKeywordKindGroupingChecks(client);
   await runReferenceIndexCardNavigationChecks(client);
   await runInlineEpisodeLinkStyleChecks(client);
   await runKnowledgeEvidenceContrastChecks(client);

@@ -244,6 +244,59 @@ function inferKeywordKind(name) {
   return 'general';
 }
 
+const KEYWORD_KIND_OVERRIDES = {
+  房地产: 'asset',
+  地价: 'asset',
+  工业用地: 'asset',
+  美元基金: 'asset',
+  能源设施: 'asset',
+  茶票: 'mechanism',
+  跨境电商: 'mechanism',
+  跨境贸易: 'mechanism',
+  航运: 'mechanism',
+  垃圾焚烧: 'mechanism',
+  资源回收: 'mechanism',
+  公务员理财: 'mechanism',
+  买房: 'mechanism',
+  卖房: 'mechanism',
+  涨薪: 'mechanism',
+  美国政治: 'concept',
+  商学院: 'concept',
+  二代企业: 'concept',
+  大学生: 'concept',
+  唇腭裂: 'concept',
+  校长: 'concept',
+  张老师: 'concept',
+  散户: 'concept',
+  五色旗: 'concept',
+  AI基建: 'product',
+  古偶: 'product',
+  纪录片: 'product',
+  外卖: 'product',
+  直播平台: 'organization',
+  杭州学校: 'organization',
+  广深地铁: 'organization',
+  故宫南迁文物: 'event',
+  国际模特大赛: 'event',
+  欢乐跑: 'event',
+  马拉松: 'event',
+  选美: 'event',
+  选美冠军: 'event',
+  自燃: 'event',
+  重装备方阵: 'event',
+  C级赛事: 'event'
+};
+
+const KEYWORD_KIND_OVERRIDE_BY_KEY = new Map(
+  Object.entries(KEYWORD_KIND_OVERRIDES).map(([name, kind]) => [compactText(name), kind])
+);
+
+function applyKeywordKindOverride(keyword) {
+  const keys = uniqueList([keyword?.name, keyword?.id, ...(keyword?.aliases || [])]).map(compactText);
+  const [kind] = keys.map((key) => KEYWORD_KIND_OVERRIDE_BY_KEY.get(key)).filter(Boolean);
+  return kind || keyword.kind;
+}
+
 function makeAutoKeywordSummary(keyword, definitions = {}, inheritMaps = {}) {
   const defined = definitions[keyword.name];
   if (defined?.summary) return defined.summary;
@@ -870,6 +923,7 @@ async function build() {
           };
           return {
             ...mergedKeyword,
+            kind: applyKeywordKindOverride(mergedKeyword),
             aliases: uniqueList([...(definition.aliases || []), ...(keyword.aliases || [])]),
             relatedKeywords: uniqueList([...(definition.relatedKeywords || []), ...(keyword.relatedKeywords || [])])
           };

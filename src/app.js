@@ -27,9 +27,27 @@ const HOME_PLATFORM_LINKS = [
 const WEBSITE_LOG_ENTRIES = [
   {
     date: '2026-05-12',
+    title: '新增 EP138 五粮液业绩大洗澡整理',
+    items: [
+      '新增 EP138《五粮液的大洗澡，散户真的看得懂吗？三大核心乱象把A股玩的明明白白！【EP138】》，B 站按用户反馈标记为暂未上架，并写入 YouTube 入口。',
+      '本期把五粮液整理为任期切割、渠道利润蓄水池和 A 股惩戒失效三条主线，延展话题接回 EP112、EP119、EP114、EP076、EP105 等节目。',
+      '新增“业绩大洗澡”“渠道利润蓄水池”“市场惩戒失效”和对应模型，用来承接白酒经销商、上市公司报表与散户买单结构。'
+    ]
+  },
+  {
+    date: '2026-05-12',
+    title: '关键词分类入口改为十种类型',
+    items: [
+      '关键词首页改为人物、地理位置、公司机构、产品技术、资产商品、事件、机制、概念、主题和通用类十个可展开入口。',
+      '关键词详情页的类型标签现在可以点击返回关键词页，并自动展开对应类型。',
+      '把一批高确定性错分词从通用类调整到更合适的类型，避免通用类变成未审核兜底。'
+    ]
+  },
+  {
+    date: '2026-05-12',
     title: '关键词体系全量重写与审计',
     items: [
-      '完成 752 个关键词页面的类型归类、结构化介绍、节目关联和延展阅读整理，人物、地缘、机构、产品、事件、机制、概念、主题、资产和常规词按统一标准展示。',
+      '完成 752 个关键词页面的类型归类、结构化介绍、节目关联和延展阅读整理，人物、地理位置、公司机构、产品技术、事件、机制、概念、主题、资产商品和通用类按统一标准展示。',
       '修复关键词页与相关节目区断裂问题，构建时会把节目关联里的 EP 自动同步到相关节目列表，并新增审计规则防止回退。',
       '清理旧模板口吻和后台维护语气，概念、模型和主题详情页改用“信息关联”“判断边界”等读者向栏目。'
     ]
@@ -437,12 +455,14 @@ function normalizeMobileViewport({ force = false } = {}) {
 
 function parseHashRoute(hashValue) {
   const hash = String(hashValue || '').replace(/^#\/?/, '');
-  const parts = hash ? hash.split('/').map(decodeRoutePart) : [];
+  const [pathPart = '', queryString = ''] = hash.split('?');
+  const parts = pathPart ? pathPart.split('/').map(decodeRoutePart) : [];
   const [section = '', id = ''] = parts;
 
   return {
     section,
     id,
+    query: Object.fromEntries(new URLSearchParams(queryString)),
     episodeNumber: section === 'episodes' && id ? episodeNumberFromId(id) : NaN
   };
 }
@@ -1427,6 +1447,16 @@ function routeTo(path) {
   return `#/${encodedPath}`;
 }
 
+function routeWithQuery(path, params = {}) {
+  const query = new URLSearchParams();
+  for (const [key, value] of Object.entries(params)) {
+    if (value === undefined || value === null || value === '') continue;
+    query.set(key, String(value));
+  }
+  const queryString = query.toString();
+  return queryString ? `${routeTo(path)}?${queryString}` : routeTo(path);
+}
+
 function dataUrl(file) {
   const version = window.__BUILD_VERSION__;
   return version ? `./data/${file}?v=${encodeURIComponent(version)}` : `./data/${file}`;
@@ -1921,14 +1951,112 @@ function isPersonKeyword(keyword) {
   return keyword?.entryType === 'person';
 }
 
+const KEYWORD_KIND_ORDER = [
+  'person',
+  'geography',
+  'organization',
+  'product',
+  'asset',
+  'event',
+  'mechanism',
+  'concept',
+  'theme',
+  'general'
+];
+
+const KEYWORD_KIND_LABELS = {
+  person: '人物',
+  geography: '地理位置',
+  organization: '公司机构',
+  product: '产品技术',
+  event: '事件',
+  mechanism: '机制',
+  concept: '概念',
+  theme: '主题',
+  asset: '资产商品',
+  general: '通用类'
+};
+
+function compactKeywordKindKey(value) {
+  return normalizeValue(value).replace(/[\s·•・／/\\()（）\-—_]+/g, '');
+}
+
+const KEYWORD_KIND_OVERRIDES = new Map(Object.entries({
+  房地产: 'asset',
+  地价: 'asset',
+  工业用地: 'asset',
+  美元基金: 'asset',
+  能源设施: 'asset',
+  茶票: 'mechanism',
+  跨境电商: 'mechanism',
+  跨境贸易: 'mechanism',
+  航运: 'mechanism',
+  垃圾焚烧: 'mechanism',
+  资源回收: 'mechanism',
+  公务员理财: 'mechanism',
+  买房: 'mechanism',
+  卖房: 'mechanism',
+  涨薪: 'mechanism',
+  美国政治: 'concept',
+  商学院: 'concept',
+  二代企业: 'concept',
+  大学生: 'concept',
+  唇腭裂: 'concept',
+  校长: 'concept',
+  张老师: 'concept',
+  散户: 'concept',
+  五色旗: 'concept',
+  AI基建: 'product',
+  古偶: 'product',
+  纪录片: 'product',
+  外卖: 'product',
+  直播平台: 'organization',
+  杭州学校: 'organization',
+  广深地铁: 'organization',
+  故宫南迁文物: 'event',
+  国际模特大赛: 'event',
+  欢乐跑: 'event',
+  马拉松: 'event',
+  选美: 'event',
+  选美冠军: 'event',
+  自燃: 'event',
+  重装备方阵: 'event',
+  C级赛事: 'event'
+}).map(([name, kind]) => [compactKeywordKindKey(name), kind]));
+
+function keywordKindOverride(keyword) {
+  const refs = [keyword?.name, keyword?.id, ...(keyword?.aliases || [])]
+    .map(compactKeywordKindKey)
+    .filter(Boolean);
+  for (const ref of refs) {
+    const kind = KEYWORD_KIND_OVERRIDES.get(ref);
+    if (kind) return kind;
+  }
+  return '';
+}
+
+function normalizeKeywordKind(kind) {
+  const normalized = String(kind || '').trim();
+  return KEYWORD_KIND_ORDER.includes(normalized) ? normalized : '';
+}
+
 function getPeopleKeywords(minReferences = 0) {
   return [...(site?.keywords || [])]
     .filter((keyword) => isPersonKeyword(keyword) && keywordCount(keyword) >= minReferences)
     .sort((a, b) => keywordCount(b) - keywordCount(a) || (a.name || '').localeCompare(b.name || '', 'zh-Hans-CN'));
 }
 
-function keywordTypeBadge(keyword) {
-  return isPersonKeyword(keyword) ? '<span class="chip">人物</span>' : '';
+function keywordKindRoute(kind) {
+  return routeWithQuery('keywords', { kind });
+}
+
+function keywordTypeBadge(keyword, options = {}) {
+  const kind = inferKeywordKind(keyword);
+  const label = keywordKindConfig(kind).badge;
+  if (options.link) {
+    return `<a class="chip keyword-kind-chip" href="${keywordKindRoute(kind)}" aria-label="查看${escapeHtml(label)}分类">${escapeHtml(label)}</a>`;
+  }
+  return `<span class="chip keyword-kind-chip">${escapeHtml(label)}</span>`;
 }
 
 function episodeNumberFromId(id) {
@@ -3376,18 +3504,31 @@ function renderCategorizedReferenceIndex(config) {
 }
 
 function renderKeywordGroup(title, keywords, options = {}) {
-  const { note = '', open = false } = options;
+  const { note = '', open = false, kind = '', previewCount = 3 } = options;
   if (!keywords.length) return '';
+  const topKeywords = keywords.slice(0, previewCount);
+  const remainingKeywords = keywords.slice(previewCount);
 
   return `
-    <details class="accordion-item keyword-group" data-progress-section="true" data-progress-label="${escapeHtml(title)}"${open ? ' open' : ''}>
+    <details class="accordion-item keyword-group" data-progress-section="true" data-progress-label="${escapeHtml(title)}"${kind ? ` data-keyword-kind-group="${escapeHtml(kind)}"` : ''}${open ? ' open' : ''}>
       <summary class="accordion-summary">
         <span>${escapeHtml(title)}</span>
         <span class="keyword-group-count">${keywords.length}</span>
       </summary>
       <div class="accordion-content">
         ${note ? `<p class="detail-copy">${renderLinkedEpisodeText(note)}</p>` : ''}
-        ${renderKeywordList(keywords)}
+        ${renderKeywordList(topKeywords)}
+        ${remainingKeywords.length ? `
+          <details class="accordion-item nested-accordion keyword-group-more">
+            <summary class="accordion-summary">
+              <span>展开更多</span>
+              <span class="keyword-group-count">${remainingKeywords.length}</span>
+            </summary>
+            <div class="accordion-content">
+              ${renderKeywordList(remainingKeywords)}
+            </div>
+          </details>
+        ` : ''}
       </div>
     </details>
   `;
@@ -4826,27 +4967,19 @@ function renderConceptIndex() {
 function renderKeywordIndex() {
   const sortedKeywords = [...site.keywords].sort((a, b) => keywordCount(b) - keywordCount(a) || a.name.localeCompare(b.name, 'zh-Hans-CN'));
   const visibleKeywords = sortedKeywords.filter((keyword) => keywordCount(keyword) >= 2);
-  const keywordCategoryOrder = [
-    '人物',
-    '国家与地缘',
-    '房地产与金融',
-    '科技与产业',
-    '品牌与公司',
-    '教育与学术',
-    '文化与媒体',
-    '家庭与社会',
-    '制度与治理',
-    '其他'
-  ];
-  const groupedKeywords = new Map(keywordCategoryOrder.map((name) => [name, []]));
+  const selectedKind = normalizeKeywordKind(parseHashRoute(window.location.hash).query.kind);
+  const groupedKeywords = new Map(KEYWORD_KIND_ORDER.map((kind) => [kind, []]));
   visibleKeywords.forEach((keyword) => {
-    const category = classifyReferenceItem('keywords', keyword);
-    if (!groupedKeywords.has(category)) groupedKeywords.set(category, []);
-    groupedKeywords.get(category).push(keyword);
+    const kind = normalizeKeywordKind(inferKeywordKind(keyword)) || 'general';
+    if (!groupedKeywords.has(kind)) groupedKeywords.set(kind, []);
+    groupedKeywords.get(kind).push(keyword);
   });
   const keywordSections = [...groupedKeywords.entries()]
     .filter(([, items]) => items.length)
-    .map(([category, items]) => renderCategorizedReferenceSection(category, items, 'keywords', 'summary', false, 'keywords'))
+    .map(([kind, items]) => renderKeywordGroup(keywordKindConfig(kind).badge, items, {
+      kind,
+      open: selectedKind ? kind === selectedKind : false
+    }))
     .join('');
 
   app.innerHTML = `
@@ -4855,13 +4988,23 @@ function renderKeywordIndex() {
         <a class="back-link" href="#/">← 返回首页</a>
         <p class="detail-eyebrow">Keywords</p>
         <h1 class="detail-title">关键词</h1>
-        <p class="detail-summary">这里整理的是已经形成稳定讨论线的关键词入口，适合按人物、公司、品牌、产品或议题继续往下找相关节目。</p>
+        <p class="detail-summary">这里整理的是已经形成稳定讨论线的关键词入口。当前按人物、地理位置、公司机构、产品技术、资产商品、事件、机制、概念、主题和通用类十种写法类型归档。</p>
       </div>
       <section class="detail-section">
         ${keywordSections}
       </section>
     </section>
   `;
+
+  if (selectedKind) {
+    window.requestAnimationFrame(() => {
+      const group = app.querySelector(`[data-keyword-kind-group="${selectedKind}"]`);
+      if (!(group instanceof HTMLDetailsElement)) return;
+      group.open = true;
+      const top = Math.max(window.scrollY + group.getBoundingClientRect().top - 24, 0);
+      scrollWindowInstantly(top, 0);
+    });
+  }
 }
 
 function renderModelIndex() {
@@ -5268,6 +5411,9 @@ function isReferenceInCollection(collection = [], value) {
 }
 
 function inferKeywordKind(keyword) {
+  const overrideKind = keywordKindOverride(keyword);
+  if (overrideKind) return overrideKind;
+
   const explicitKind = String(keyword?.kind || '').trim();
   const kindAliases = {
     person: 'person',
@@ -5277,17 +5423,20 @@ function inferKeywordKind(keyword) {
     geo: 'geography',
     地缘: 'geography',
     地点: 'geography',
+    地理位置: 'geography',
     organization: 'organization',
     institution: 'organization',
     company: 'organization',
     公司: 'organization',
     机构: 'organization',
+    公司机构: 'organization',
     平台: 'organization',
     product: 'product',
     technology: 'product',
     tech: 'product',
     产品: 'product',
     技术: 'product',
+    产品技术: 'product',
     event: 'event',
     事件: 'event',
     战事: 'event',
@@ -5305,11 +5454,13 @@ function inferKeywordKind(keyword) {
     commodity: 'asset',
     金融资产: 'asset',
     大宗商品: 'asset',
+    资产商品: 'asset',
     '金融资产/大宗商品': 'asset',
     theme: 'theme',
     主题: 'theme',
     general: 'general',
-    常规: 'general'
+    常规: 'general',
+    通用类: 'general'
   };
   if (kindAliases[explicitKind]) return kindAliases[explicitKind];
 
@@ -5333,61 +5484,61 @@ function inferKeywordKind(keyword) {
 function keywordKindConfig(kind) {
   const configs = {
     person: {
-      badge: '人物关键词',
+      badge: KEYWORD_KIND_LABELS.person,
       definitionTitle: '基础介绍',
       sceneTitle: '节目关联',
       signalTitle: '个人风格'
     },
     geography: {
-      badge: '地缘/地点关键词',
+      badge: KEYWORD_KIND_LABELS.geography,
       definitionTitle: '基础介绍',
       sceneTitle: '节目关联',
       signalTitle: '常见场景'
     },
     organization: {
-      badge: '公司/机构关键词',
+      badge: KEYWORD_KIND_LABELS.organization,
       definitionTitle: '对象说明',
       sceneTitle: '节目关联',
       signalTitle: '常见场景'
     },
     product: {
-      badge: '产品/技术关键词',
+      badge: KEYWORD_KIND_LABELS.product,
       definitionTitle: '对象说明',
       sceneTitle: '节目关联',
       signalTitle: '常见场景'
     },
     event: {
-      badge: '事件关键词',
+      badge: KEYWORD_KIND_LABELS.event,
       definitionTitle: '事件说明',
       sceneTitle: '节目关联',
       signalTitle: '常见场景'
     },
     concept: {
-      badge: '概念词关键词',
+      badge: KEYWORD_KIND_LABELS.concept,
       definitionTitle: '概念说明',
       sceneTitle: '节目关联',
       signalTitle: '常见场景'
     },
     mechanism: {
-      badge: '机制词关键词',
+      badge: KEYWORD_KIND_LABELS.mechanism,
       definitionTitle: '机制说明',
       sceneTitle: '节目关联',
       signalTitle: '常见场景'
     },
     theme: {
-      badge: '主题词关键词',
+      badge: KEYWORD_KIND_LABELS.theme,
       definitionTitle: '主题说明',
       sceneTitle: '节目关联',
       signalTitle: '常见场景'
     },
     asset: {
-      badge: '金融资产/商品关键词',
+      badge: KEYWORD_KIND_LABELS.asset,
       definitionTitle: '资产说明',
       sceneTitle: '节目关联',
       signalTitle: '常见场景'
     },
     general: {
-      badge: '常规关键词',
+      badge: KEYWORD_KIND_LABELS.general,
       definitionTitle: '基础介绍',
       sceneTitle: '节目关联',
       signalTitle: '常见场景'
@@ -6123,7 +6274,7 @@ function renderKeywordDetail(id) {
         <p class="detail-eyebrow">${escapeHtml(keyword.englishName || 'Keyword Node')}</p>
         <h1 class="detail-title">${escapeHtml(keyword.name)}</h1>
         <p class="detail-summary">${renderLinkedEpisodeText(keyword.summary)}</p>
-        <div class="meta-row"><span class="chip">${escapeHtml(keywordConfig.badge)}</span></div>
+        <div class="meta-row">${keywordTypeBadge(keyword, { link: true })}</div>
         ${renderKnowledgeReferenceHeaderSection(referenceGroups)}
       </div>
       ${renderKnowledgeAnalysisSection(buildKeywordAnalysisSections(keyword, relatedEpisodes, referenceGroups, keywordKind, keywordConfig, aliases))}
@@ -6159,9 +6310,8 @@ function renderRoute() {
   closeSectionProgressPanel();
   clearSectionProgressEffects();
   destroyGraphView();
-  const hash = window.location.hash.replace(/^#\/?/, '');
-  const parts = hash ? hash.split('/').map(decodeRoutePart) : [];
-  const [section, id] = parts;
+  const currentRoute = parseHashRoute(window.location.hash);
+  const { section, id } = currentRoute;
   const currentHash = window.location.hash || '#/';
   const transitionKind = getRouteTransitionKind(lastRenderedHash, currentHash);
   const historyRestore = window.history.state?.yinfluenceViewState;
