@@ -864,12 +864,13 @@ function syncSectionProgress({ reveal = false, blur = false } = {}) {
     item.classList.toggle('is-active', index === activeIndex);
   });
 
+  if (reveal && !sectionProgressPanelOpen) {
+    showSectionProgressTemporarily({ blur });
+  }
+
   if (activeIndex !== sectionProgressActiveIndex) {
     sectionProgressActiveIndex = activeIndex;
     pulseSectionProgressWheel();
-    if (reveal && !sectionProgressPanelOpen) {
-      showSectionProgressTemporarily({ blur });
-    }
     if (sectionProgressPanelOpen) {
       window.requestAnimationFrame(() => {
         scrollActiveSectionProgressItemIntoView({ behavior: 'smooth' });
