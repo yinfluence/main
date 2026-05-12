@@ -397,14 +397,14 @@ let lastRenderedHash = window.location.hash || '#/';
 let sidebarLockedScrollY = 0;
 let activeInlineEpisodeRef = null;
 let inlineEpisodePopupElement = null;
-let inlineKnowledgePopupTimer = 0;
-let pendingInlineKnowledgePopupRef = null;
+let inlinePopupTimer = 0;
+let pendingInlinePopupRef = null;
 const PERSON_NAV_MIN_REFERENCES = 2;
 const HOME_EPISODE_AUTO_ADVANCE_MS = 7000;
 const HOME_EPISODE_DESKTOP_AUTO_ADVANCE_MS = 11000;
 const HOME_EPISODE_ANIMATION_MS = 644;
 const HOME_EPISODE_DESKTOP_ANIMATION_MS = 520;
-const INLINE_KNOWLEDGE_POPUP_DELAY_MS = 1500;
+const INLINE_POPUP_DELAY_MS = 500;
 const DESKTOP_SIDEBAR_STORAGE_KEY = 'yinfluence-sidebar-collapsed';
 const SNAP_SECTION_SELECTOR = '.hero, .home-search-toolbar, .home-search-section, .section, .detail-header, .detail-section';
 const PROGRESS_SECTION_SELECTOR = '.hero, .home-search-section, .section, .detail-header, .detail-section';
@@ -1796,43 +1796,39 @@ function handleInlinePopupEnter(event) {
   if (window.matchMedia('(hover: none) and (pointer: coarse)').matches) return;
   const reference = findInlinePopupReference(event.target, true);
   if (!(reference instanceof HTMLElement)) return;
-  if (reference.classList.contains('inline-episode-ref')) {
-    positionInlineEpisodePopup(reference);
-    return;
-  }
-  scheduleInlineKnowledgePopup(reference);
+  scheduleInlinePopup(reference);
 }
 
 function handleInlinePopupLeave(event) {
   if (window.matchMedia('(hover: none) and (pointer: coarse)').matches) return;
   const reference = findInlinePopupReference(event.target, true);
   if (!(reference instanceof HTMLElement)) return;
-  clearInlineKnowledgePopupTimer();
+  clearInlinePopupTimer();
   window.requestAnimationFrame(() => {
     if (reference.matches(':hover')) return;
     closeInlineEpisodePopup(reference);
   });
 }
 
-function clearInlineKnowledgePopupTimer() {
-  window.clearTimeout(inlineKnowledgePopupTimer);
-  inlineKnowledgePopupTimer = 0;
-  pendingInlineKnowledgePopupRef = null;
+function clearInlinePopupTimer() {
+  window.clearTimeout(inlinePopupTimer);
+  inlinePopupTimer = 0;
+  pendingInlinePopupRef = null;
 }
 
-function scheduleInlineKnowledgePopup(reference) {
-  clearInlineKnowledgePopupTimer();
-  pendingInlineKnowledgePopupRef = reference;
-  inlineKnowledgePopupTimer = window.setTimeout(() => {
-    inlineKnowledgePopupTimer = 0;
-    if (!(reference instanceof HTMLElement) || pendingInlineKnowledgePopupRef !== reference) return;
-    pendingInlineKnowledgePopupRef = null;
+function scheduleInlinePopup(reference) {
+  clearInlinePopupTimer();
+  pendingInlinePopupRef = reference;
+  inlinePopupTimer = window.setTimeout(() => {
+    inlinePopupTimer = 0;
+    if (!(reference instanceof HTMLElement) || pendingInlinePopupRef !== reference) return;
+    pendingInlinePopupRef = null;
     positionInlineEpisodePopup(reference);
-  }, INLINE_KNOWLEDGE_POPUP_DELAY_MS);
+  }, INLINE_POPUP_DELAY_MS);
 }
 
 function closeInlineEpisodePopup(reference = activeInlineEpisodeRef) {
-  clearInlineKnowledgePopupTimer();
+  clearInlinePopupTimer();
   if (!(reference instanceof HTMLElement)) return;
   reference.classList.remove('is-popup-open');
   const popup = getInlineEpisodePopupElement();
