@@ -27,6 +27,15 @@ const HOME_PLATFORM_LINKS = [
 const WEBSITE_LOG_ENTRIES = [
   {
     date: '2026-05-12',
+    title: '知识图谱节点展开交互重做',
+    items: [
+      '知识图谱改为点击节点先锁定并慢慢展开相邻节点，再次点击同一节点才进入详情页，避免误跳转。',
+      '高连接节点会按连接数扩大展开范围，相邻节点围绕中心节点形成更清晰的展开带，底图同步压暗，减少重叠和干扰。',
+      '从展开节点进入详情页后，浏览器返回会恢复到刚才的图谱展开状态；拖拽节点时焦点也会保持在正在拖动的节点上。'
+    ]
+  },
+  {
+    date: '2026-05-12',
     title: '新增 EP138 五粮液业绩大洗澡整理',
     items: [
       '新增 EP138《五粮液的大洗澡，散户真的看得懂吗？三大核心乱象把A股玩的明明白白！【EP138】》，B 站入口按会员视频写入，并补齐 YouTube 入口。',
@@ -408,7 +417,7 @@ const INLINE_POPUP_DELAY_MS = 300;
 const DESKTOP_SIDEBAR_STORAGE_KEY = 'yinfluence-sidebar-collapsed';
 const SNAP_SECTION_SELECTOR = '.hero, .home-search-toolbar, .home-search-section, .section, .detail-header, .detail-section';
 const PROGRESS_SECTION_SELECTOR = '.hero, .home-search-section, .section, .detail-header, .detail-section';
-const REVEAL_SELECTOR = '.hero, .home-search-toolbar, .home-search-section, .section, .detail-header, .detail-section, .card, .list-item, .graph-panel-card, .graph-canvas-card';
+const REVEAL_SELECTOR = '.hero, .home-search-toolbar, .home-search-section, .section, .detail-header, .detail-section, .card, .list-item';
 const DEFAULT_VIEWPORT_CONTENT = 'width=device-width, initial-scale=1.0, viewport-fit=cover';
 
 function isDesktopViewport() {
@@ -707,7 +716,11 @@ function getProgressSections() {
   });
 
   if (explicitSections.length) {
-    if (document.body.classList.contains('page-episode-index')) {
+    if (
+      document.body.classList.contains('page-episode-index')
+        || document.body.classList.contains('page-updates')
+        || document.body.classList.contains('page-keyword-index')
+    ) {
       return explicitSections;
     }
     const headerSections = [...app.querySelectorAll('.hero, .detail-header')].filter((section) => {
@@ -730,7 +743,10 @@ function getSectionProgressLabel(section) {
   if (section.classList.contains('hero')) return '首页';
   const explicitLabel = section.dataset.progressLabel?.trim();
   if (explicitLabel) {
-    if (document.body.classList.contains('page-episode-index')) {
+    if (
+      document.body.classList.contains('page-episode-index')
+        || document.body.classList.contains('page-keyword-index')
+    ) {
       return explicitLabel;
     }
     return explicitLabel.length > 8 ? `${explicitLabel.slice(0, 8)}…` : explicitLabel;
@@ -806,7 +822,7 @@ function renderSectionProgressPanel() {
 
   sectionProgressPanel.innerHTML = `
     <div class="section-progress-panel-card">
-      <p class="section-progress-panel-title">${document.body.classList.contains('page-episode-index') ? '节目轮盘' : '页面章节'}</p>
+      <p class="section-progress-panel-title">${getSectionProgressPanelTitle()}</p>
       <div class="section-progress-panel-list">
         ${sections.map((section, index) => `
           <button class="section-progress-panel-item" type="button" data-section-progress-target="${index}">
@@ -817,6 +833,13 @@ function renderSectionProgressPanel() {
       </div>
     </div>
   `;
+}
+
+function getSectionProgressPanelTitle() {
+  if (document.body.classList.contains('page-episode-index')) return '节目轮盘';
+  if (document.body.classList.contains('page-updates')) return '日志日期';
+  if (document.body.classList.contains('page-keyword-index')) return '关键词目录';
+  return '页面章节';
 }
 
 function scrollActiveSectionProgressItemIntoView({ behavior = 'auto' } = {}) {
@@ -1385,6 +1408,14 @@ window.addEventListener('resize', () => {
   renderSectionProgress();
   syncSectionProgress();
 }, { passive: true });
+document.addEventListener('toggle', (event) => {
+  if (!(event.target instanceof HTMLDetailsElement)) return;
+  if (!app.contains(event.target)) return;
+  window.requestAnimationFrame(() => {
+    renderSectionProgress();
+    syncSectionProgress();
+  });
+}, true);
 floatingActionsToggle?.addEventListener('click', () => {
   setFloatingActionsExpanded(!floatingActionsExpanded);
   if (floatingActionsExpanded) {
@@ -1935,8 +1966,9 @@ function graphLinkedChipList(items = []) {
     [`模型 ${site.stats.models}`]: '#/models',
     [`人物 ${site.stats.people}`]: '#/people',
     [`主题 ${site.stats.themes}`]: '#/themes',
-    '点击节点看近邻': '#/graph',
-    '双击节点开详情': '#/graph',
+    '点击节点展开': '#/graph',
+    '再次点击进详情': '#/graph',
+    '返回恢复展开': '#/graph',
     '滚轮缩放': '#/graph'
   };
   return `
@@ -3633,35 +3665,476 @@ function renderCategorizedReferenceIndex(config) {
 
 }
 
-function renderKeywordGroup(title, keywords, options = {}) {
-  const { note = '', open = false, kind = '', previewCount = 3 } = options;
-  if (!keywords.length) return '';
-  const topKeywords = keywords.slice(0, previewCount);
-  const remainingKeywords = keywords.slice(previewCount);
+const KEYWORD_INDEX_LEAF_LIMIT = 8;
+
+function renderKeywordTopGroup(title, kindEntries, options = {}) {
+  const { open = false, selectedKind = '' } = options;
+  const totalCount = kindEntries.reduce((sum, [, items]) => sum + items.length, 0);
 
   return `
-    <details class="accordion-item keyword-group" data-progress-section="true" data-progress-label="${escapeHtml(title)}"${kind ? ` data-keyword-kind-group="${escapeHtml(kind)}"` : ''}${open ? ' open' : ''}>
+    <details class="accordion-item keyword-group keyword-top-group" data-progress-section="true" data-progress-label="${escapeHtml(title)}"${open ? ' open' : ''}>
+      <summary class="accordion-summary">
+        <span>${escapeHtml(title)}</span>
+        <span class="keyword-group-count">${totalCount}</span>
+      </summary>
+      <div class="accordion-content">
+        <div class="keyword-kind-list">
+          ${kindEntries.map(([kind, keywords]) => renderKeywordGroup(keywordKindConfig(kind).badge, keywords, {
+            kind,
+            open: selectedKind ? kind === selectedKind : false
+          })).join('')}
+        </div>
+      </div>
+    </details>
+  `;
+}
+
+function renderKeywordGroup(title, keywords, options = {}) {
+  const { note = '', open = false, kind = '' } = options;
+  if (!keywords.length) return '';
+  const subgroupEntries = groupKeywordsForIndex(kind, keywords);
+
+  return `
+    <details class="accordion-item nested-accordion keyword-kind-group" data-progress-section="true" data-progress-label="${escapeHtml(title)}"${kind ? ` data-keyword-kind-group="${escapeHtml(kind)}"` : ''}${open ? ' open' : ''}>
       <summary class="accordion-summary">
         <span>${escapeHtml(title)}</span>
         <span class="keyword-group-count">${keywords.length}</span>
       </summary>
       <div class="accordion-content">
         ${note ? `<p class="detail-copy">${renderLinkedEpisodeText(note)}</p>` : ''}
-        ${renderKeywordList(topKeywords)}
-        ${remainingKeywords.length ? `
-          <details class="accordion-item nested-accordion keyword-group-more">
-            <summary class="accordion-summary">
-              <span>展开更多</span>
-              <span class="keyword-group-count">${remainingKeywords.length}</span>
-            </summary>
-            <div class="accordion-content">
-              ${renderKeywordList(remainingKeywords)}
-            </div>
-          </details>
-        ` : ''}
+        <div class="keyword-subgroup-list">
+          ${subgroupEntries.map(([subgroupTitle, subgroupKeywords]) => renderKeywordSubgroup(subgroupTitle, subgroupKeywords, kind)).join('')}
+        </div>
       </div>
     </details>
   `;
+}
+
+function renderKeywordSubgroup(title, keywords = [], kind = '') {
+  const shouldSplit = keywords.length > KEYWORD_INDEX_LEAF_LIMIT;
+
+  return `
+    <details class="accordion-item nested-accordion keyword-subgroup" data-progress-section="true" data-progress-label="${escapeHtml(title)}">
+      <summary class="accordion-summary">
+        <span>${escapeHtml(title)}</span>
+        <span class="keyword-group-count">${keywords.length}</span>
+      </summary>
+      <div class="accordion-content">
+        ${shouldSplit ? `
+          <div class="keyword-leaf-list">
+            ${splitKeywordLeafGroups(title, keywords, kind).map(([leafTitle, leafKeywords]) => `
+              <details class="accordion-item nested-accordion keyword-leaf-group" data-progress-section="true" data-progress-label="${escapeHtml(leafTitle)}">
+                <summary class="accordion-summary">
+                  <span>${escapeHtml(leafTitle)}</span>
+                  <span class="keyword-group-count">${leafKeywords.length}</span>
+                </summary>
+                <div class="accordion-content">
+                  ${renderKeywordList(leafKeywords)}
+                </div>
+              </details>
+            `).join('')}
+          </div>
+        ` : renderKeywordList(keywords)}
+      </div>
+    </details>
+  `;
+}
+
+function splitKeywordLeafGroups(parentTitle, keywords = [], kind = '') {
+  if (keywords.length <= KEYWORD_INDEX_LEAF_LIMIT) return [['全部', keywords]];
+
+  const rules = keywordLeafGroupRules(parentTitle, kind);
+  const fallbackTitle = keywordLeafFallbackTitle(parentTitle, kind);
+  const grouped = new Map([...rules.map((rule) => rule.name), fallbackTitle].map((name) => [name, []]));
+
+  for (const keyword of keywords) {
+    const text = keywordIndexText(keyword);
+    const matched = rules.find((rule) => keywordIndexRuleMatches(rule, keyword, text));
+    grouped.get(matched?.name || fallbackTitle).push(keyword);
+  }
+
+  return [...grouped.entries()]
+    .filter(([, items]) => items.length)
+    .flatMap(([title, items]) => splitOversizedKeywordLeafGroup(title, items, kind));
+}
+
+function splitOversizedKeywordLeafGroup(title, keywords = [], kind = '') {
+  if (keywords.length <= KEYWORD_INDEX_LEAF_LIMIT) return [[title, keywords]];
+
+  const refinements = keywordLeafRefinementRules(title, kind);
+  if (refinements.length) {
+    const fallbackTitle = `${title}其他`;
+    const grouped = new Map([...refinements.map((rule) => rule.name), fallbackTitle].map((name) => [name, []]));
+    for (const keyword of keywords) {
+      const text = keywordIndexText(keyword);
+      const matched = refinements.find((rule) => keywordIndexRuleMatches(rule, keyword, text));
+      grouped.get(matched?.name || fallbackTitle).push(keyword);
+    }
+    const refined = [...grouped.entries()].filter(([, items]) => items.length);
+    if (refined.length > 1) {
+      return refined.flatMap(([refinedTitle, items]) => splitOversizedKeywordLeafGroup(refinedTitle, items, kind));
+    }
+  }
+
+  return [[title, keywords]];
+}
+
+function keywordIndexText(keyword) {
+  return [
+    keyword?.name || '',
+    keyword?.summary || '',
+    keyword?.description || '',
+    ...(keyword?.aliases || []),
+    ...(keyword?.episodes || []).map((episode) => episode?.note || '')
+  ].join(' ');
+}
+
+function keywordIndexNameText(keyword) {
+  return [
+    keyword?.name || '',
+    ...(keyword?.aliases || [])
+  ].join(' ');
+}
+
+function keywordIndexRuleMatches(rule, keyword, text = keywordIndexText(keyword)) {
+  const target = rule.scope === 'name' ? keywordIndexNameText(keyword) : text;
+  return rule.pattern.test(target);
+}
+
+function keywordLeafFallbackTitle(parentTitle, kind = '') {
+  const fallbacks = {
+    person: '其他人物',
+    geography: '其他地理节点',
+    organization: '其他组织节点',
+    product: '其他产品技术',
+    asset: '其他资产',
+    event: '其他事件',
+    mechanism: '其他机制',
+    concept: '其他概念',
+    theme: '其他主题',
+    general: '其他入口'
+  };
+  return fallbacks[kind] || `${parentTitle}其他`;
+}
+
+function keywordLeafGroupRules(parentTitle, kind = '') {
+  const byParent = {
+    国家机构与公共部门: [
+      { name: '地方政府与财政', pattern: /地方|财政|城投|债|转移支付|土地|税|公共成本/ },
+      { name: '国资与公共平台', pattern: /国资|国企|国有|平台|地铁|轨道|公共资产|托底/ },
+      { name: '监管司法与规则', pattern: /监管|法院|司法|法律|规则|处罚|审计|问责|合规/ },
+      { name: '公共服务现场', pattern: /学校|医院|午餐|教育|医疗|公共服务|民生|养老/ }
+    ],
+    金融杠杆与资产机制: [
+      { name: '债务融资', pattern: /债|融资|城投|贷款|利息|偿付|债券|隐性债务|地方债/ },
+      { name: '地产土地', pattern: /房|地产|土地|地价|楼市|住房|按揭|首付/ },
+      { name: '保险信托', pattern: /保险|信托|保单|承保|赔付|家族信托/ },
+      { name: '价格交易', pattern: /价格|股|散户|交易|市场|惩戒|点差|K线|投机/ },
+      { name: '报表利润', pattern: /报表|利润|业绩|会计|开票|发票|确认|大洗澡|蓄水池/ },
+      { name: '库存渠道', pattern: /库存|经销|渠道|压货|销量|零公里|回款|白条/ },
+      { name: '货币结算', pattern: /美元|货币|结算|石油美元|信用|储备|比特币/ },
+      { name: '清算退出', pattern: /清算|退出|破产|断供|出清|风险转移|损失/ }
+    ],
+    产业生产与渠道机制: [
+      { name: '汽车销量渠道', pattern: /汽车|电车|销量|经销|零公里|4S|渠道|库存/ },
+      { name: '研发量产验证', pattern: /研发|量产|样机|测试|验证|安全|设计|技术路线/ },
+      { name: '供应链制造', pattern: /供应链|制造|生产|工厂|代工|芯片|电池|产业链/ },
+      { name: '补贴与地方招商', pattern: /补贴|地方|招商|产业基金|政府|园区|项目/ },
+      { name: '回收污染与外部成本', pattern: /回收|污染|外部成本|环保|废料|转移/ }
+    ],
+    制度财政与公共概念: [
+      { name: '国资与公有资产', pattern: /国资|国有|国企|公共资产|国有资产流失|国家出资/ },
+      { name: '地方财政与债务', pattern: /地方|财政|债务|城投|转移支付|土地财政|隐性债务/ },
+      { name: '税费与公共成本', pattern: /税|税负|费用|罚款|收费|公共成本|民生/ },
+      { name: '体制身份与稳定', pattern: /体制|编制|身份|稳定|泛体制|公务员|中产/ },
+      { name: '法律监管与合法性', pattern: /法律|监管|合法性|规则|国际法|问责|权威/ },
+      { name: '公共服务与教育', pattern: /公共|学校|教育|学生|午餐|大学|课堂|课程/ }
+    ],
+    资产金融与交易概念: [
+      { name: '散户交易', pattern: /散户|交易|平台|K线|追涨|点差|投机/ },
+      { name: '价格信用', pattern: /价格|信用|信仰|预期|估值|市场|繁荣/ },
+      { name: '资产负债', pattern: /资产|负债|房|地价|抵押|财富|家庭资产/ },
+      { name: '货币美元', pattern: /美元|货币|结算|石油美元|储备|黄金|白银/ },
+      { name: '报表利润', pattern: /报表|利润|业绩|开票|财务|数字|粉饰/ }
+    ],
+    海峡港口与航线: [
+      { name: '关键海峡', pattern: /海峡|马六甲|霍尔木兹|台海|南海|咽喉/ },
+      { name: '港口中转', pattern: /港口|富查伊拉|港\b|中转|转运|补给/ },
+      { name: '航运保险', pattern: /航线|航运|保险|护航|运费|通行|船|舰队/ },
+      { name: '岛链海域', pattern: /岛链|海域|东亚|第一岛链|区域拒止/ }
+    ],
+    国际秩序与大国博弈: [
+      { name: '大国竞争', pattern: /大国|美国|中国|俄罗斯|欧洲|竞争|博弈/ },
+      { name: '小国生存', pattern: /小国|新加坡|阿联酋|中立|主权|规则/ },
+      { name: '战争制裁', pattern: /战争|制裁|安全|围堵|区域拒止|冲突/ },
+      { name: '通道秩序', pattern: /海峡|航线|能源|石油|港口|通道|秩序/ }
+    ],
+    企业家与资本人物: [
+      { name: '地产企业家', pattern: /地产|房企|万科|万达|许家印|王石|潘石屹|宝能/ },
+      { name: '消费品牌人物', pattern: /西贝|娃哈哈|白酒|餐饮|品牌|宗|贾国龙|罗永浩/ },
+      { name: '科技创业者', pattern: /科技|AI|汽车|小米|雷军|马斯克|李斌|王传福/ },
+      { name: '资本与投资人物', pattern: /资本|投资|股权|接班|董事长|控制权/ }
+    ],
+    汽车与交通产品: [
+      { name: '整车产品', pattern: /汽车|小米汽车|新能源汽车|电车|出租车|无人车/ },
+      { name: '补能电池', pattern: /电池|换电|充电|锂电|电源|充电宝/ },
+      { name: '智能安全部件', pattern: /智驾|电控门|云端|安全|传感器|算法/ }
+    ],
+    教育文化与认知概念: [
+      { name: '教育课堂', pattern: /教育|学校|大学|课堂|课程|考试|学生|学术/ },
+      { name: '文化审美', pattern: /文化|审美|文明|艺术|电影|选美|历史/ },
+      { name: '认知权威', pattern: /认知|权威|自由|语言|判断|标准答案|人格/ }
+    ],
+    平台治理与组织机制: [
+      { name: '平台流量', pattern: /平台|流量|算法|推荐|内容|直播|短剧|分发/ },
+      { name: '监管可读性', pattern: /治理|监管|网格|数据|可读|控制|规则|审查/ },
+      { name: '组织反馈', pattern: /组织|反馈|权威|沉默|代理|创始人|管理/ }
+    ],
+    地方政府与财政: [
+      { name: '地方财政债务', pattern: /地方债|隐性债|财政|城投|债务|偿付|土地财政|转移支付/ },
+      { name: '国资平台托底', pattern: /国资|国企|国有|地铁|轨道|万科|房企|托底|平台|公共资产/ },
+      { name: '产业补贴招商', pattern: /补贴|招商|产业|项目|园区|新能源|汽车|哪吒|基金|投资/ },
+      { name: '税费公共支出', pattern: /税|税负|收费|罚款|公共服务|午餐|养老|民生|支出/ },
+      { name: '地方金融通道', pattern: /金交所|金融|票据|信托|银行|融资|贷款|交易所/ }
+    ],
+    地方财政债务: [
+      { name: '政府城投平台', pattern: /地方政府|金交所|深圳地铁|城投公司|地方国资|浙金中心/, scope: 'name' },
+      { name: '房企债务主体', pattern: /万科|恒大|均和集团/, scope: 'name' },
+      { name: '新能源融资主体', pattern: /哪吒汽车|蔚来/, scope: 'name' }
+    ],
+    金融资产: [
+      { name: '地方债务资金', pattern: /地方债|隐性债|隐形债务|地方资金|土地财政|补贴杠杆|地方财政补贴负面清单|体外平台/, scope: 'name' },
+      { name: '地产交易压力', pattern: /买房|断供|法拍房|零首付|七年贷款/, scope: 'name' },
+      { name: '清算退出', pattern: /清算|清盘|破产|硬着陆|崩塌/, scope: 'name' },
+      { name: '房企财务工具', pattern: /房企假盈利|国资接盘|资产包|证券化/, scope: 'name' },
+      { name: '汽车渠道库存', pattern: /零公里二手车|售后|维修|虚假销售/, scope: 'name' },
+      { name: '补贴产能项目', pattern: /补贴|国资造车|过剩产能|产业基金|产业园骗局|海外出口|虚假贸易/, scope: 'name' },
+      { name: '价格交易机制', pattern: /价格发现|价格战|对赌|良币劣币|收费站/, scope: 'name' },
+      { name: '风险现金流', pattern: /杠杆|安全冗余|系统性风险|现金流|身份背书|中产转换/, scope: 'name' },
+      { name: '航运制裁金融', pattern: /航运|国家制裁/, scope: 'name' }
+    ],
+    关键海峡: [
+      { name: '海峡与港口', pattern: /马六甲海峡|霍尔木兹海峡|台海|洋浦港/, scope: 'name' },
+      { name: '沿岸与中转国家', pattern: /新加坡|伊朗|阿联酋|马来西亚|沙特|越南|印尼/, scope: 'name' },
+      { name: '大国与岛链', pattern: /美国|东亚|日本|第一岛链|格陵兰/, scope: 'name' },
+      { name: '地缘参照节点', pattern: /荆州|瑞士/, scope: 'name' }
+    ],
+    制度公共: [
+      { name: '公共财政', pattern: /财政|税|债务|转移支付|公共成本|地方|政府|收费/ },
+      { name: '国资制度', pattern: /国资|国有|国企|公有|国家|资产|公共资产/ },
+      { name: '法律规则', pattern: /法律|国际法|规则|监管|合法性|边界|主权|权威/ },
+      { name: '公共服务', pattern: /公共服务|教育|学校|午餐|养老|医疗|民生|学生/ },
+      { name: '身份秩序', pattern: /体制|编制|身份|稳定|中产|权威|大政府/ }
+    ],
+    国资与公有资产: [
+      { name: '国资债务清偿', pattern: /隐性债务|国有资产|清偿率|现金就是权力/, scope: 'name' },
+      { name: '创业继承资本', pattern: /资本逻辑|草根创业|二代企业|继承人/, scope: 'name' },
+      { name: '技术市场预期', pattern: /烂尾车|散户|预期|技术泡沫/, scope: 'name' },
+      { name: '体制中产身份', pattern: /泛体制中产|体制身份/, scope: 'name' }
+    ],
+    保险信托: [
+      { name: '风险与制裁', pattern: /区域拒止|灰色贸易|影子舰队|制裁|灰色石油/, scope: 'name' },
+      { name: '保险信托财富', pattern: /保险|家族信托|家族治理|财富保全|离岸架构/, scope: 'name' },
+      { name: '产业回收风险', pattern: /电池回收/, scope: 'name' }
+    ],
+    价格交易: [
+      { name: '流量平台交易', pattern: /抖音流量|跨境电商|流量霸权|流量治理|直播带货/, scope: 'name' },
+      { name: '价格品牌信号', pattern: /激励反转|分红|价格信号|品牌失速|白酒金融化|品牌神话|造神/, scope: 'name' },
+      { name: '投资持股博弈', pattern: /志愿填报|创投|国有资产流失|时间价值|投机情绪|员工持股|资本博弈/, scope: 'name' }
+    ],
+    价格交易信号: [
+      { name: '流量直播交易', pattern: /抖音流量|跨境电商|流量霸权|流量治理|直播带货/, scope: 'name' },
+      { name: '品牌资本信号', pattern: /分红|价格信号|品牌失速|品牌神话|造神/, scope: 'name' },
+      { name: '投资持股选择', pattern: /志愿填报|创投|国有资产流失|时间价值|投机情绪|员工持股|资本博弈/, scope: 'name' }
+    ],
+    制度公共: [
+      { name: '财政公共服务', pattern: /大政府|公共服务|税负|基建神话|医生降薪/, scope: 'name' },
+      { name: '阶层中产', pattern: /阶层差异|中产|中产阶级|中位数|财富|资本|新钱|阶层固化|自选故乡/, scope: 'name' },
+      { name: '规则权威', pattern: /国际法|避险港|权威|法律边界|公共规则/, scope: 'name' },
+      { name: '文化个体叙事', pattern: /广告审美|谎言|认祖归宗|社会实验|虚假繁荣|文化与文明|自发能动性|自我|尊严|父母角色/, scope: 'name' }
+    ]
+  };
+
+  if (byParent[parentTitle]) return byParent[parentTitle];
+
+  const byKind = {
+    organization: [
+      { name: '公共部门', pattern: /政府|国资|监管|法院|财政|公共|地铁|学校|医院/ },
+      { name: '商业公司', pattern: /公司|集团|企业|品牌|万科|西贝|娃哈哈|比亚迪|万达/ },
+      { name: '平台渠道', pattern: /平台|经销|渠道|电商|直播|供应链|外卖/ },
+      { name: '国际组织', pattern: /东盟|欧盟|联盟|OPEC|欧佩克|海合会/ }
+    ],
+    mechanism: [
+      { name: '金融资产', pattern: /债|资产|金融|价格|保险|信托|报表|利润|货币|市场/ },
+      { name: '产业渠道', pattern: /产业|生产|制造|经销|渠道|供应链|研发|销量/ },
+      { name: '治理组织', pattern: /治理|组织|平台|监管|权威|控制|数据|规则/ },
+      { name: '社会文化', pattern: /家庭|教育|年轻人|文化|审美|身份|叙事/ },
+      { name: '地缘安全', pattern: /地缘|制裁|战争|海峡|航运|安全|能源/ }
+    ],
+    concept: [
+      { name: '制度公共', pattern: /制度|财政|国资|税|债务|公共|体制|监管|法律/ },
+      { name: '资产交易', pattern: /资产|金融|散户|价格|市场|美元|报表|信用/ },
+      { name: '社会家庭', pattern: /家庭|中产|阶层|年轻人|身份|代际|亲密/ },
+      { name: '教育文化', pattern: /教育|文化|认知|审美|历史|语言|学术/ },
+      { name: '国际规则', pattern: /国际|地缘|主权|小国|海峡|秩序|战争/ }
+    ],
+    theme: [
+      { name: '国际安全', pattern: /国际|地缘|战争|制裁|小国|大国|海峡/ },
+      { name: '地产财政', pattern: /地产|地方|财政|债|土地|税|风险/ },
+      { name: '产业技术', pattern: /产业|技术|AI|电车|制造|电池|研发/ },
+      { name: '社会成长', pattern: /家庭|成长|年轻人|教育|中产|养老|个人/ },
+      { name: '平台文化', pattern: /平台|媒体|文化|流量|内容|审美|叙事/ }
+    ]
+  };
+
+  return byKind[kind] || [];
+}
+
+function keywordLeafRefinementRules(title, kind = '') {
+  if (/其他/.test(title)) return keywordLeafGroupRules('', kind);
+  return keywordLeafGroupRules(title, kind);
+}
+
+function groupKeywordsForIndex(kind, keywords = []) {
+  const normalizedKind = normalizeKeywordKind(kind) || 'general';
+  const order = keywordIndexSubgroupOrder(normalizedKind);
+  const grouped = new Map(order.map((label) => [label, []]));
+
+  for (const keyword of keywords) {
+    const group = classifyKeywordIndexSubgroup(normalizedKind, keyword);
+    if (!grouped.has(group)) grouped.set(group, []);
+    grouped.get(group).push(keyword);
+  }
+
+  return [...grouped.entries()]
+    .filter(([, items]) => items.length)
+    .sort((a, b) => {
+      const aOrder = order.indexOf(a[0]);
+      const bOrder = order.indexOf(b[0]);
+      if (aOrder !== -1 || bOrder !== -1) {
+        if (aOrder === -1) return 1;
+        if (bOrder === -1) return -1;
+        return aOrder - bOrder;
+      }
+      const countDelta = b[1].length - a[1].length;
+      if (countDelta) return countDelta;
+      return a[0].localeCompare(b[0], 'zh-Hans-CN');
+    });
+}
+
+function classifyKeywordIndexSubgroup(kind, keyword) {
+  if (kind === 'person') return classifyReferenceItem('people', keyword);
+
+  const text = [
+    keyword?.name || '',
+    keyword?.summary || '',
+    keyword?.description || '',
+    ...(keyword?.aliases || []),
+    ...(keyword?.episodes || []).map((episode) => episode?.note || '')
+  ].join(' ');
+
+  const rules = keywordIndexSubgroupRules(kind);
+  const matched = rules.find((rule) => keywordIndexRuleMatches(rule, keyword, text));
+  return matched?.name || keywordIndexFallbackSubgroup(kind);
+}
+
+function keywordIndexSubgroupOrder(kind) {
+  const orders = {
+    person: ['国家领导人', '地缘政治人物', '企业家与资本人物', '科技产业人物', '教育学术人物', '媒体文化人物', '其他'],
+    geography: ['国家与地区', '海峡港口与航线', '城市与地方节点', '地缘文明与区域', '其他地理节点'],
+    organization: ['国家机构与公共部门', '公司与商业组织', '平台与渠道组织', '区域组织与联盟', '学校与文化机构', '其他组织'],
+    product: ['汽车与交通产品', '能源与电池技术', 'AI 与数字内容', '消费品与餐饮产品', '住房与城市产品', '其他产品技术'],
+    asset: ['地产与土地资产', '贵金属与大宗商品', '货币与结算资产', '文化与替代资产', '其他资产'],
+    event: ['战争与地缘冲突', '政策与制度节点', '企业与资本风波', '教育文化争议', '市场异动', '其他事件'],
+    mechanism: ['金融杠杆与资产机制', '产业生产与渠道机制', '平台治理与组织机制', '地缘安全与制裁机制', '社会家庭与教育机制', '认知叙事与文化机制', '其他机制'],
+    concept: ['制度财政与公共概念', '资产金融与交易概念', '社会阶层与家庭概念', '教育文化与认知概念', '地缘规则与国际概念', '技术产业与平台概念', '其他概念'],
+    theme: ['国际秩序与大国博弈', '地方财政与地产退潮', '产业技术与制造业', '社会家庭与个人成长', '平台媒体与文化生产', '教育与年轻人路径', '其他主题'],
+    general: ['劳动与公共服务', '地方消费与文旅', '教育生活场景', '其他通用词']
+  };
+  return orders[kind] || orders.general;
+}
+
+function keywordIndexFallbackSubgroup(kind) {
+  const fallbacks = {
+    geography: '其他地理节点',
+    organization: '其他组织',
+    product: '其他产品技术',
+    asset: '其他资产',
+    event: '其他事件',
+    mechanism: '其他机制',
+    concept: '其他概念',
+    theme: '其他主题',
+    general: '其他通用词'
+  };
+  return fallbacks[kind] || '其他';
+}
+
+function keywordIndexSubgroupRules(kind) {
+  const rules = {
+    geography: [
+      { name: '海峡港口与航线', pattern: /海峡|港口|航线|通道|咽喉|海运|马六甲|霍尔木兹|富查伊拉|南海|台海/ },
+      { name: '城市与地方节点', pattern: /城市|地方|佛山|海南|深圳|武汉|三四线|珠三角|县城|小镇|港\b/ },
+      { name: '地缘文明与区域', pattern: /东亚|东南亚|中东|欧洲|海湾|波斯|区域|文明|半岛|岛链/ },
+      { name: '国家与地区', pattern: /国家|美国|日本|新加坡|伊朗|俄罗斯|乌克兰|阿联酋|沙特|马来西亚|中国|台湾|越南|匈牙利/ }
+    ],
+    organization: [
+      { name: '国家机构与公共部门', pattern: /政府|地方政府|国资|监管|法院|央行|财政|公共|地铁|医院|部委|公立/ },
+      { name: '区域组织与联盟', pattern: /东盟|欧盟|联盟|OPEC|欧佩克|海合会|组织|共同体|集团国家/ },
+      { name: '平台与渠道组织', pattern: /平台|经销商|渠道|直播|电商|拼多多|B站|YouTube|爱奇艺|外卖|4S|供应链/ },
+      { name: '学校与文化机构', pattern: /大学|学校|学院|故宫|博物馆|赛事|选美|教育机构/ },
+      { name: '公司与商业组织', pattern: /公司|集团|企业|品牌|咨询|万科|西贝|娃哈哈|比亚迪|万达|华与华|OpenAI|小米/ }
+    ],
+    product: [
+      { name: '汽车与交通产品', pattern: /汽车|出租车|车门|换电|智驾|无人车|萝卜快跑|小米汽车|新能源车|电控门|车/ },
+      { name: '能源与电池技术', pattern: /电池|锂电|充电|能源|光伏|芯片|算力|回收|电源/ },
+      { name: 'AI 与数字内容', pattern: /AI|大模型|短剧|云端|算法|数字|机器人|纪录片|直播|平台|古偶/ },
+      { name: '住房与城市产品', pattern: /组屋|住房|地产|公共住房|城市|楼盘/ },
+      { name: '消费品与餐饮产品', pattern: /白酒|年份酒|预制菜|餐饮|充电宝|消费品|外卖|酒/ }
+    ],
+    asset: [
+      { name: '地产与土地资产', pattern: /房|地产|地价|土地|楼市|住房/ },
+      { name: '贵金属与大宗商品', pattern: /黄金|白银|铜|石油|原油|贵金属|大宗商品/ },
+      { name: '货币与结算资产', pattern: /美元|石油美元|比特币|货币|结算|储备|信用/ },
+      { name: '文化与替代资产', pattern: /蒙娜丽莎|艺术|文化|藏品|作品/ }
+    ],
+    event: [
+      { name: '战争与地缘冲突', pattern: /战争|冲突|太平洋|俄乌|阅兵|重装备|入侵|战场/ },
+      { name: '政策与制度节点', pattern: /封关|政策|制度|改革|试点|自由贸易港/ },
+      { name: '企业与资本风波', pattern: /宝万|辞职|股债|债|股|控制权|资本|危机|风波/ },
+      { name: '教育文化争议', pattern: /北大|神课|选美|赛事|冠军|马拉松|欢乐跑|野孩|举报|文化/ },
+      { name: '市场异动', pattern: /双杀|暴跌|上涨|行情|价格|交易|股债/ }
+    ],
+    mechanism: [
+      { name: '金融杠杆与资产机制', pattern: /债|杠杆|保险|信托|资产|金融|价格|首付|银行|清算|收益|货币|资本|库存|利润|报表|市场惩戒/ },
+      { name: '产业生产与渠道机制', pattern: /产业|生产|制造|经销|渠道|供应链|销量|零公里|研发|量产|回收|电池|技术|补贴/ },
+      { name: '平台治理与组织机制', pattern: /平台|治理|组织|网格|数据|监管|权威|反馈|控制|集中式|分布式|算法|流量|规则/ },
+      { name: '地缘安全与制裁机制', pattern: /制裁|海峡|航运|区域拒止|战争|地缘|灰色贸易|影子|能源|通道|安全|主权/ },
+      { name: '社会家庭与教育机制', pattern: /家庭|教育|学校|孩子|年轻人|中产|代际|婚姻|亲密|躺平|午餐|劳动|养老/ },
+      { name: '认知叙事与文化机制', pattern: /叙事|文化|审美|模因|历史|语言|认知|身份|体面|尊严|信任|道德|意义/ }
+    ],
+    concept: [
+      { name: '制度财政与公共概念', pattern: /国有|财政|税|债务|公共|制度|政府|监管|合法性|权威|体制|编制|转移支付/ },
+      { name: '资产金融与交易概念', pattern: /资产|金融|散户|交易|价格|市场|繁荣|税负|美元|保险|地价|利润|报表|信用/ },
+      { name: '社会阶层与家庭概念', pattern: /家庭|亲属|断亲|中产|阶层|年轻人|小镇|婆罗门|代际|婚恋|故乡|身份|稳定/ },
+      { name: '教育文化与认知概念', pattern: /教育|学校|学术|文化|文明|历史|语言|审美|认知|自由|权威|课程|学生/ },
+      { name: '地缘规则与国际概念', pattern: /国际|地缘|主权|中立|门罗|法律|国家|海峡|通行|小国|秩序|战争/ },
+      { name: '技术产业与平台概念', pattern: /技术|AI|平台|产业|制造|电车|算法|数据|创新|云|内容|流量/ }
+    ],
+    theme: [
+      { name: '国际秩序与大国博弈', pattern: /大国|国际|地缘|战争|制裁|小国|新加坡|中东|东亚|海峡|安全|秩序/ },
+      { name: '地方财政与地产退潮', pattern: /地方|财政|地产|房|债|土地|万科|公共|城市|风险|税/ },
+      { name: '产业技术与制造业', pattern: /制造|产业|技术|AI|电车|电池|研发|汽车|新能源|算力|创新/ },
+      { name: '社会家庭与个人成长', pattern: /家庭|个人|成长|亲密|代际|女性|养老|中产|身份|故乡|关系/ },
+      { name: '平台媒体与文化生产', pattern: /平台|媒体|文化|流量|内容|短剧|电影|审美|模因|叙事|传播/ },
+      { name: '教育与年轻人路径', pattern: /教育|年轻人|学校|考试|学术|学生|稳定|路径|职业|大学/ }
+    ],
+    general: [
+      { name: '劳动与公共服务', pattern: /外卖|劳动|配送|公共|服务|午餐|供餐/ },
+      { name: '地方消费与文旅', pattern: /文旅|旅游|地方|消费|城市|包装/ },
+      { name: '教育生活场景', pattern: /学生|学校|午餐|生活|教育/ }
+    ]
+  };
+  return rules[kind] || [];
 }
 
 function getSidebarKeywordMatches() {
@@ -3945,7 +4418,6 @@ function renderSidebar() {
     <div class="sidebar-section">
       <a class="sidebar-link" href="#/graph">知识图谱 <span class="count-badge">${graphStatValue()}</span></a>
       <a class="sidebar-link sidebar-link-log" href="#/updates">网页日志 <span class="count-badge">${WEBSITE_LOG_ENTRIES.length}</span></a>
-      <a class="sidebar-link sidebar-link-simulator" href="./simulators/real-estate-tycoon/">模拟器测试 <span class="count-badge">Beta</span></a>
     </div>
   `;
 
@@ -3986,6 +4458,7 @@ function renderSidebar() {
 }
 
 function renderWebsiteLog() {
+  const groups = groupWebsiteLogEntriesByMonth(WEBSITE_LOG_ENTRIES);
   app.innerHTML = `
     <section class="detail">
       <div class="detail-header">
@@ -3994,20 +4467,98 @@ function renderWebsiteLog() {
         <h1 class="detail-title">网页日志</h1>
       </div>
       <section class="detail-section">
-        <div class="list">
-          ${WEBSITE_LOG_ENTRIES.map((entry) => `
-            <article class="list-item website-log-entry">
-              <p class="inline-label">${escapeHtml(entry.date)}</p>
-              <h3>${escapeHtml(entry.title)}</h3>
-              <ul>
-                ${entry.items.map((item) => `<li>${renderLinkedEpisodeText(item)}</li>`).join('')}
-              </ul>
-            </article>
+        <div class="website-log-list">
+          ${groups.map((monthGroup, monthIndex) => `
+            <details class="website-log-month">
+              <summary>
+                <span class="website-log-month-title">${escapeHtml(monthGroup.monthLabel)}</span>
+                <span class="website-log-month-count">${monthGroup.entriesCount} 条更新</span>
+              </summary>
+              <div class="website-log-month-body">
+                ${monthGroup.dates.map((dateGroup, dateIndex) => `
+                  <details
+                    class="website-log-date-group"
+                    data-progress-section="true"
+                    data-progress-label="${escapeHtml(formatWebsiteLogProgressDate(dateGroup.date))}"
+                  >
+                    <summary>
+                      <span class="website-log-date-title">${escapeHtml(dateGroup.dateLabel)}</span>
+                      <span class="website-log-date-count">${dateGroup.entries.length} 条</span>
+                    </summary>
+                    <div class="website-log-date-body">
+                      ${dateGroup.entries.map((entry) => `
+                        <article class="list-item website-log-entry">
+                          <h3>${escapeHtml(entry.title)}</h3>
+                          <ul>
+                            ${(entry.items || []).map((item) => `<li>${escapeHtml(item)}</li>`).join('')}
+                          </ul>
+                        </article>
+                      `).join('')}
+                    </div>
+                  </details>
+                `).join('')}
+              </div>
+            </details>
           `).join('')}
         </div>
       </section>
     </section>
   `;
+}
+
+function groupWebsiteLogEntriesByMonth(entries = []) {
+  return entries.reduce((monthGroups, entry) => {
+    const date = String(entry?.date || '').trim();
+    const monthKey = date.match(/^(\d{4})-(\d{2})-/)?.slice(1, 3).join('-') || date || 'unknown';
+    const lastMonth = monthGroups[monthGroups.length - 1];
+    const currentMonth = lastMonth?.monthKey === monthKey
+      ? lastMonth
+      : {
+          monthKey,
+          monthLabel: formatWebsiteLogMonth(date),
+          entriesCount: 0,
+          dates: []
+        };
+
+    if (currentMonth !== lastMonth) {
+      monthGroups.push(currentMonth);
+    }
+
+    const lastDate = currentMonth.dates[currentMonth.dates.length - 1];
+    if (lastDate?.date === date) {
+      lastDate.entries.push(entry);
+    } else {
+      currentMonth.dates.push({
+        date,
+        dateLabel: formatWebsiteLogDateHeading(date),
+        entries: [entry]
+      });
+    }
+
+    currentMonth.entriesCount += 1;
+    return monthGroups;
+  }, []);
+}
+
+function formatWebsiteLogProgressDate(date) {
+  const match = String(date || '').match(/^(\d{4})-(\d{2})-(\d{2})$/);
+  if (!match) return String(date || '').trim();
+  const [, , month, day] = match;
+  return `${Number(month)}月${Number(day)}日`;
+}
+
+function formatWebsiteLogMonth(date) {
+  const match = String(date || '').match(/^(\d{4})-(\d{2})-/);
+  if (!match) return String(date || '未标日期').trim();
+  const [, year, month] = match;
+  return `${year}年${Number(month)}月`;
+}
+
+function formatWebsiteLogDateHeading(date) {
+  const match = String(date || '').match(/^(\d{4})-(\d{2})-(\d{2})$/);
+  if (!match) return String(date || '未标日期').trim();
+  const [, , month, day] = match;
+  return `${Number(month)}月${Number(day)}日`;
 }
 
 function scrollToSection(id) {
@@ -4669,7 +5220,7 @@ function renderHome(focusSectionId = '') {
             <h3>先找高连接节点，再顺着局部关系钻进去</h3>
           </a>
           <p>图谱适合回答两个问题：哪些主题经常和哪些节目一起出现，以及某个人物或模型究竟被放在什么语境里讲。</p>
-          ${graphLinkedChipList(['点击节点看近邻', '双击节点开详情', '滚轮缩放'])}
+        ${graphLinkedChipList(['点击节点展开', '再次点击进详情', '返回恢复展开'])}
         </article>
       </div>
     </section>
@@ -5131,12 +5682,18 @@ function renderKeywordIndex() {
     if (!groupedKeywords.has(kind)) groupedKeywords.set(kind, []);
     groupedKeywords.get(kind).push(keyword);
   });
-  const keywordSections = [...groupedKeywords.entries()]
-    .filter(([, items]) => items.length)
-    .map(([kind, items]) => renderKeywordGroup(keywordKindConfig(kind).badge, items, {
-      kind,
-      open: selectedKind ? kind === selectedKind : false
-    }))
+  const keywordSections = keywordIndexTopGroups()
+    .map((group) => {
+      const kindEntries = group.kinds
+        .map((kind) => [kind, groupedKeywords.get(kind) || []])
+        .filter(([, items]) => items.length);
+      if (!kindEntries.length) return '';
+      return renderKeywordTopGroup(group.title, kindEntries, {
+        open: selectedKind ? group.kinds.includes(selectedKind) : false,
+        selectedKind
+      });
+    })
+    .filter(Boolean)
     .join('');
 
   app.innerHTML = `
@@ -5145,7 +5702,7 @@ function renderKeywordIndex() {
         <a class="back-link" href="#/">← 返回首页</a>
         <p class="detail-eyebrow">Keywords</p>
         <h1 class="detail-title">关键词</h1>
-        <p class="detail-summary">这里整理的是已经形成稳定讨论线的关键词入口。当前按人物、地理位置、公司机构、产品技术、资产商品、事件、机制、概念、主题和通用类十种写法类型归档。</p>
+        <p class="detail-summary">这里整理的是已经形成稳定讨论线的关键词入口。先按人物机构、地区事件、产业资产、概念机制和长期主题收起，展开后再进入更细的关键词分组。</p>
       </div>
       <section class="detail-section">
         ${keywordSections}
@@ -5162,6 +5719,16 @@ function renderKeywordIndex() {
       scrollWindowInstantly(top, 0);
     });
   }
+}
+
+function keywordIndexTopGroups() {
+  return [
+    { title: '人物机构', kinds: ['person', 'organization'] },
+    { title: '地区事件', kinds: ['geography', 'event'] },
+    { title: '产业资产', kinds: ['product', 'asset'] },
+    { title: '概念机制', kinds: ['mechanism', 'concept'] },
+    { title: '长期主题', kinds: ['theme', 'general'] }
+  ];
 }
 
 function renderModelIndex() {
@@ -6486,9 +7053,11 @@ function renderRoute() {
   document.body.classList.toggle('has-assisted-snap', section !== 'graph');
   document.body.classList.toggle('page-home', !section);
   document.body.classList.toggle('page-episode-index', section === 'episodes' && !id);
+  document.body.classList.toggle('page-keyword-index', section === 'keywords' && !id);
   document.body.classList.toggle('page-knowledge-detail', ['concepts', 'models', 'themes', 'keywords'].includes(section) && !!id);
   document.body.classList.toggle('page-reference-detail', ['concepts', 'models', 'themes', 'keywords', 'people'].includes(section) && !!id);
   document.body.classList.toggle('page-updates', section === 'updates');
+  document.body.classList.toggle('page-graph', section === 'graph');
 
   if (preRenderTopReset) {
     scrollWindowInstantly(0, 0);
