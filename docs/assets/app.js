@@ -397,11 +397,14 @@ let lastRenderedHash = window.location.hash || '#/';
 let sidebarLockedScrollY = 0;
 let activeInlineEpisodeRef = null;
 let inlineEpisodePopupElement = null;
+let inlineKnowledgePopupTimer = 0;
+let pendingInlineKnowledgePopupRef = null;
 const PERSON_NAV_MIN_REFERENCES = 2;
 const HOME_EPISODE_AUTO_ADVANCE_MS = 7000;
 const HOME_EPISODE_DESKTOP_AUTO_ADVANCE_MS = 11000;
 const HOME_EPISODE_ANIMATION_MS = 644;
 const HOME_EPISODE_DESKTOP_ANIMATION_MS = 520;
+const INLINE_KNOWLEDGE_POPUP_DELAY_MS = 1500;
 const DESKTOP_SIDEBAR_STORAGE_KEY = 'yinfluence-sidebar-collapsed';
 const SNAP_SECTION_SELECTOR = '.hero, .home-search-toolbar, .home-search-section, .section, .detail-header, .detail-section';
 const PROGRESS_SECTION_SELECTOR = '.hero, .home-search-section, .section, .detail-header, .detail-section';
@@ -1390,28 +1393,17 @@ floatingActionsToggle?.addEventListener('click', () => {
     window.clearTimeout(floatingActionsIdleTimer);
   }
 });
-document.addEventListener('pointerenter', (event) => {
-  if (window.matchMedia('(hover: none) and (pointer: coarse)').matches) return;
-  const reference = event.target.closest('.inline-episode-ref');
-  if (!(reference instanceof HTMLElement)) return;
-  positionInlineEpisodePopup(reference);
-}, true);
-document.addEventListener('pointerleave', (event) => {
-  if (window.matchMedia('(hover: none) and (pointer: coarse)').matches) return;
-  const reference = event.target.closest('.inline-episode-ref');
-  if (!(reference instanceof HTMLElement)) return;
-  window.requestAnimationFrame(() => {
-    if (reference.matches(':hover')) return;
-    closeInlineEpisodePopup(reference);
-  });
-}, true);
+document.addEventListener('pointerenter', handleInlinePopupEnter, true);
+document.addEventListener('mouseenter', handleInlinePopupEnter, true);
+document.addEventListener('pointerleave', handleInlinePopupLeave, true);
+document.addEventListener('mouseleave', handleInlinePopupLeave, true);
 document.addEventListener('focusin', (event) => {
-  const reference = event.target.closest('.inline-episode-ref');
+  const reference = findInlinePopupReference(event.target, true);
   if (!(reference instanceof HTMLElement)) return;
   positionInlineEpisodePopup(reference);
 });
 document.addEventListener('focusout', (event) => {
-  const reference = event.target.closest('.inline-episode-ref');
+  const reference = findInlinePopupReference(event.target, true);
   if (!(reference instanceof HTMLElement)) return;
   window.requestAnimationFrame(() => {
     if (reference.contains(document.activeElement)) return;
@@ -1580,6 +1572,27 @@ function isReadableReferenceAlias(value, source = 'name', item = null) {
   return !/[\n\r]/.test(text);
 }
 
+function trimInlineReferencePopupText(text, maxChars = 132) {
+  if (text.length <= maxChars) return text;
+  const slice = text.slice(0, maxChars);
+  const boundary = Math.max(slice.lastIndexOf('。'), slice.lastIndexOf('，'), slice.lastIndexOf('、'), slice.lastIndexOf(' '));
+  const trimmed = boundary > maxChars * 0.55 ? slice.slice(0, boundary + 1) : slice;
+  return `${trimmed.trim()}…`;
+}
+
+function getInlineReferencePopupSummary(item = {}) {
+  const text = String(
+    item.summary ||
+    item.description ||
+    item.definition ||
+    item.application ||
+    item.context ||
+    ''
+  ).replace(/\s+/g, ' ').trim();
+  if (!text) return '';
+  return trimInlineReferencePopupText(text);
+}
+
 function addInlineReferenceCandidate(candidates, seenLabels, label, route, type, source = 'name', item = null) {
   const text = String(label || '').trim();
   if (!isReadableReferenceAlias(text, source, item)) return;
@@ -1594,7 +1607,9 @@ function addInlineReferenceCandidate(candidates, seenLabels, label, route, type,
     route,
     routeKey,
     type,
-    source
+    source,
+    title: item?.name || item?.title || text,
+    summary: getInlineReferencePopupSummary(item || {})
   });
 }
 
@@ -1679,7 +1694,9 @@ function collectInlineTextMatches(raw) {
         route: candidate.route,
         type: candidate.type,
         routeKey: candidate.routeKey,
-        source: candidate.source
+        source: candidate.source,
+        title: candidate.title,
+        summary: candidate.summary
       });
       index = lowerRaw.indexOf(candidate.labelLower, index + Math.max(1, candidate.label.length));
     }
@@ -1743,7 +1760,10 @@ function renderLinkedEpisodeText(value) {
     if (match.kind === 'episode') {
       html += `<span class="inline-episode-ref" data-popup-title="${escapeHtml(match.title)}" data-popup-summary="${escapeHtml(match.summary)}"><a class="inline-episode-link" href="${match.route}">${escapeHtml(match.label)}</a></span>`;
     } else {
-      html += `<a class="inline-knowledge-link" data-ref-type="${escapeHtml(match.type)}" href="${match.route}">${escapeHtml(match.label)}</a>`;
+      const popupAttrs = match.summary
+        ? ` data-popup-title="${escapeHtml(match.title || match.label)}" data-popup-summary="${escapeHtml(match.summary)}"`
+        : '';
+      html += `<a class="inline-knowledge-link" data-ref-type="${escapeHtml(match.type)}" href="${match.route}"${popupAttrs}>${escapeHtml(match.label)}</a>`;
     }
     cursor = match.end;
   }
@@ -1763,7 +1783,56 @@ function getInlineEpisodePopupElement() {
   return popup;
 }
 
+function findInlinePopupReference(target, includeKnowledge = false) {
+  if (!(target instanceof Element)) return null;
+  const selector = includeKnowledge
+    ? '.inline-episode-ref, .inline-knowledge-link[data-popup-summary]'
+    : '.inline-episode-ref';
+  const reference = target.closest(selector);
+  return reference instanceof HTMLElement ? reference : null;
+}
+
+function handleInlinePopupEnter(event) {
+  if (window.matchMedia('(hover: none) and (pointer: coarse)').matches) return;
+  const reference = findInlinePopupReference(event.target, true);
+  if (!(reference instanceof HTMLElement)) return;
+  if (reference.classList.contains('inline-episode-ref')) {
+    positionInlineEpisodePopup(reference);
+    return;
+  }
+  scheduleInlineKnowledgePopup(reference);
+}
+
+function handleInlinePopupLeave(event) {
+  if (window.matchMedia('(hover: none) and (pointer: coarse)').matches) return;
+  const reference = findInlinePopupReference(event.target, true);
+  if (!(reference instanceof HTMLElement)) return;
+  clearInlineKnowledgePopupTimer();
+  window.requestAnimationFrame(() => {
+    if (reference.matches(':hover')) return;
+    closeInlineEpisodePopup(reference);
+  });
+}
+
+function clearInlineKnowledgePopupTimer() {
+  window.clearTimeout(inlineKnowledgePopupTimer);
+  inlineKnowledgePopupTimer = 0;
+  pendingInlineKnowledgePopupRef = null;
+}
+
+function scheduleInlineKnowledgePopup(reference) {
+  clearInlineKnowledgePopupTimer();
+  pendingInlineKnowledgePopupRef = reference;
+  inlineKnowledgePopupTimer = window.setTimeout(() => {
+    inlineKnowledgePopupTimer = 0;
+    if (!(reference instanceof HTMLElement) || pendingInlineKnowledgePopupRef !== reference) return;
+    pendingInlineKnowledgePopupRef = null;
+    positionInlineEpisodePopup(reference);
+  }, INLINE_KNOWLEDGE_POPUP_DELAY_MS);
+}
+
 function closeInlineEpisodePopup(reference = activeInlineEpisodeRef) {
+  clearInlineKnowledgePopupTimer();
   if (!(reference instanceof HTMLElement)) return;
   reference.classList.remove('is-popup-open');
   const popup = getInlineEpisodePopupElement();
