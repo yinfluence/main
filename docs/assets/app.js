@@ -333,6 +333,8 @@ let inlineKnowledgeReferenceCache = null;
 const expandedKnowledgeEpisodeSections = new Set();
 let homeKnowledgeQuery = '';
 let homeRecommendationSeed = Math.floor(Math.random() * 1000000);
+let homeConceptRecommendationSeed = Math.floor(Math.random() * 1000000);
+let homeModelRecommendationSeed = Math.floor(Math.random() * 1000000);
 let homeEpisodeCarouselIndex = 0;
 let sidebarKeywordQuery = '';
 let keywordIndexQuery = '';
@@ -1922,8 +1924,8 @@ function referenceLatestEpisodeNumber(item) {
   return latest || 0;
 }
 
-function seededHomeRandom(salt = 0) {
-  let seed = (Math.abs(homeRecommendationSeed) + salt) % 2147483647;
+function seededHomeRandom(seedValue = homeRecommendationSeed, salt = 0) {
+  let seed = (Math.abs(seedValue) + salt) % 2147483647;
   if (seed <= 0) seed += 2147483646;
   return () => {
     seed = (seed * 16807) % 2147483647;
@@ -1931,10 +1933,10 @@ function seededHomeRandom(salt = 0) {
   };
 }
 
-function pickRecommendedReferences(items = [], limit = 3, salt = 0) {
+function pickRecommendedReferences(items = [], limit = 3, salt = 0, seedValue = homeRecommendationSeed) {
   const pool = [...items].filter((item) => item?.id && item?.name && item?.summary);
   const picked = [];
-  const random = seededHomeRandom(salt + pool.length * 37);
+  const random = seededHomeRandom(seedValue, salt + pool.length * 37);
   const maxEpisodeNumber = Math.max(...pool.map((item) => referenceLatestEpisodeNumber(item)), 1);
 
   while (pool.length && picked.length < limit) {
@@ -1962,11 +1964,11 @@ function pickRecommendedReferences(items = [], limit = 3, salt = 0) {
 }
 
 function getRecommendedConcepts(limit = 3) {
-  return pickRecommendedReferences(site?.concepts || [], limit, 101);
+  return pickRecommendedReferences(site?.concepts || [], limit, 101, homeConceptRecommendationSeed);
 }
 
 function getRecommendedModels(limit = 3) {
-  return pickRecommendedReferences(site?.models || [], limit, 307);
+  return pickRecommendedReferences(site?.models || [], limit, 307, homeModelRecommendationSeed);
 }
 
 function renderHomeReferenceCards(type, items = []) {
@@ -1978,14 +1980,14 @@ function renderHomeReferenceCards(type, items = []) {
   `).join('');
 }
 
-function updateHomeReferenceRecommendations() {
+function updateHomeReferenceRecommendations(target = 'all') {
   const conceptContainer = document.getElementById('home-recommended-concepts');
-  if (conceptContainer) {
+  if (conceptContainer && (target === 'all' || target === 'concepts')) {
     conceptContainer.innerHTML = renderHomeReferenceCards('concepts', getRecommendedConcepts(3));
   }
 
   const modelContainer = document.getElementById('home-recommended-models');
-  if (modelContainer) {
+  if (modelContainer && (target === 'all' || target === 'models')) {
     modelContainer.innerHTML = renderHomeReferenceCards('models', getRecommendedModels(3));
   }
 }
@@ -3204,10 +3206,6 @@ function renderKeywordList(keywords = []) {
             <span class="keyword-count-badge">${keywordCount(keyword)} 期</span>
           </div>
           <p>${escapeHtml(keyword.summary)}</p>
-          <div class="meta-row">
-            ${keywordTypeBadge(keyword)}
-            ${(keyword.aliases || []).slice(0, 2).map((alias) => `<span class="chip">${escapeHtml(alias)}</span>`).join('')}
-          </div>
         </article>
       `).join('')}
     </div>
@@ -3715,7 +3713,18 @@ function rerollHomeRecommendations() {
     emptyMessage: '没有匹配的节目、概念、模型、人物或主题',
     idleTitle: '推荐关键词'
   });
-  updateHomeReferenceRecommendations();
+}
+
+function rerollHomeReferenceRecommendations(type) {
+  if (type === 'concepts') {
+    homeConceptRecommendationSeed = Math.floor(Math.random() * 1000000);
+    updateHomeReferenceRecommendations('concepts');
+    return;
+  }
+  if (type === 'models') {
+    homeModelRecommendationSeed = Math.floor(Math.random() * 1000000);
+    updateHomeReferenceRecommendations('models');
+  }
 }
 
 function homeEpisodeVisibleCount() {
@@ -4521,6 +4530,12 @@ function renderHome(focusSectionId = '') {
         <div id="home-recommended-concepts" class="list">
           ${renderHomeReferenceCards('concepts', getRecommendedConcepts(3))}
         </div>
+        <div class="home-reference-footer">
+          <button class="search-reroll home-reference-reroll" type="button" data-home-reference-reroll="concepts" aria-label="换一换概念推荐">
+            <span class="search-reroll-icon" aria-hidden="true">↻</span>
+            <span>换一换</span>
+          </button>
+        </div>
       </div>
       <div>
         <div class="section-header">
@@ -4529,6 +4544,12 @@ function renderHome(focusSectionId = '') {
         </div>
         <div id="home-recommended-models" class="list">
           ${renderHomeReferenceCards('models', getRecommendedModels(3))}
+        </div>
+        <div class="home-reference-footer">
+          <button class="search-reroll home-reference-reroll" type="button" data-home-reference-reroll="models" aria-label="换一换模型推荐">
+            <span class="search-reroll-icon" aria-hidden="true">↻</span>
+            <span>换一换</span>
+          </button>
         </div>
       </div>
     </section>
@@ -4631,6 +4652,11 @@ function renderHome(focusSectionId = '') {
   });
   document.getElementById('home-search-reroll')?.addEventListener('click', () => {
     rerollHomeRecommendations();
+  });
+  app.querySelectorAll('[data-home-reference-reroll]').forEach((button) => {
+    button.addEventListener('click', () => {
+      rerollHomeReferenceRecommendations(button.dataset.homeReferenceReroll);
+    });
   });
 
   const heroTitleTrigger = document.getElementById('hero-title-trigger');
@@ -6057,11 +6083,12 @@ function renderKnowledgeReferenceHeaderSection(groups = []) {
   if (!markup) return '';
 
   return `
-    <div class="detail-header-meta">
+    <details class="detail-header-meta detail-reference-disclosure">
+      <summary class="detail-reference-summary">相关内容</summary>
       <div class="detail-compact-reference-grid">
         ${markup}
       </div>
-    </div>
+    </details>
   `;
 }
 
@@ -6313,10 +6340,8 @@ function renderKeywordDetail(id) {
     <section class="detail">
       <div class="detail-header knowledge-overview">
         ${renderDetailBackRow('#/keywords', '关键词')}
-        <p class="detail-eyebrow">${escapeHtml(keyword.englishName || 'Keyword Node')}</p>
         <h1 class="detail-title">${escapeHtml(keyword.name)}</h1>
         <p class="detail-summary">${renderLinkedEpisodeText(keyword.summary)}</p>
-        <div class="meta-row">${keywordTypeBadge(keyword, { link: true })}</div>
         ${renderKnowledgeReferenceHeaderSection(referenceGroups)}
       </div>
       ${renderKnowledgeAnalysisSection(buildKeywordAnalysisSections(keyword, relatedEpisodes, referenceGroups, keywordKind, keywordConfig, aliases))}
@@ -6374,6 +6399,7 @@ function renderRoute() {
   document.body.classList.toggle('page-episode-index', section === 'episodes' && !id);
   document.body.classList.toggle('page-knowledge-detail', ['concepts', 'models', 'themes', 'keywords'].includes(section) && !!id);
   document.body.classList.toggle('page-reference-detail', ['concepts', 'models', 'themes', 'keywords', 'people'].includes(section) && !!id);
+  document.body.classList.toggle('page-updates', section === 'updates');
 
   if (preRenderTopReset) {
     scrollWindowInstantly(0, 0);
