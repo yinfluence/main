@@ -384,9 +384,9 @@ let sectionProgressPanelOpen = false;
 let sectionProgressActiveIndex = -1;
 let sectionProgressPulseTimer = 0;
 let sectionProgressSuppressUntil = 0;
-let sectionProgressRevealAccumulatedScroll = 0;
-let sectionProgressRevealDirection = 0;
-let sectionProgressRevealStartY = window.scrollY || 0;
+let sectionProgressFastScrollBurst = 0;
+let sectionProgressFastScrollDirection = 0;
+let sectionProgressFastScrollLastAt = performance.now();
 let lastHomeEpisodeVisibleCount = 3;
 let lastHomeMobileLayout = false;
 let mobileViewportResetTimer = 0;
@@ -912,8 +912,9 @@ function showSectionProgressTemporarily({ blur = false } = {}) {
   sectionProgressHideTimer = window.setTimeout(() => {
     if (sectionProgressPanelOpen) return;
     sectionProgress.classList.remove('is-visible');
-    sectionProgressRevealAccumulatedScroll = 0;
-    sectionProgressRevealStartY = window.scrollY || 0;
+    sectionProgressFastScrollBurst = 0;
+    sectionProgressFastScrollDirection = 0;
+    sectionProgressFastScrollLastAt = performance.now();
   }, blur ? 1280 : 980);
 }
 
@@ -923,8 +924,9 @@ function clearSectionProgressEffects() {
   window.clearTimeout(sectionProgressPulseTimer);
   sectionProgress?.classList.remove('is-visible');
   sectionProgress?.classList.remove('is-pulsing');
-  sectionProgressRevealAccumulatedScroll = 0;
-  sectionProgressRevealStartY = window.scrollY || 0;
+  sectionProgressFastScrollBurst = 0;
+  sectionProgressFastScrollDirection = 0;
+  sectionProgressFastScrollLastAt = performance.now();
   document.body.classList.remove('section-progress-fast');
 }
 
@@ -1306,25 +1308,32 @@ window.addEventListener('scroll', () => {
   if (scrollIntent) scrollDirection = scrollIntent;
   const speed = scrollDelta / elapsed;
   lastScrollSpeed = speed;
-  if (now - lastScrollSampleAt > 520 || (scrollIntent && scrollIntent !== sectionProgressRevealDirection)) {
-    sectionProgressRevealAccumulatedScroll = 0;
-    sectionProgressRevealStartY = lastScrollY;
-  }
-  if (scrollIntent) {
-    sectionProgressRevealDirection = scrollIntent;
-    sectionProgressRevealAccumulatedScroll += scrollDelta;
-  }
-  const sectionProgressRevealThreshold = isMobileViewport() ? 280 : 340;
-  const sectionProgressFastRevealThreshold = isMobileViewport() ? 164 : 208;
-  const sectionProgressRevealDistance = Math.max(
-    sectionProgressRevealAccumulatedScroll,
-    Math.abs(currentScrollY - sectionProgressRevealStartY)
+  const isProgrammaticSnapScroll = Boolean(snapAnimationFrame) || (lastSnapTargetTop >= 0 && Date.now() < suspendSnapUntil);
+  const sectionProgressFastSampleMinDelta = isMobileViewport() ? 20 : 24;
+  const sectionProgressFastSampleMinSpeed = isMobileViewport() ? 2.4 : 2.6;
+  const sectionProgressFastBurstThreshold = isMobileViewport() ? 220 : 280;
+  const isFastSectionProgressSample = Boolean(
+    scrollIntent &&
+      !isProgrammaticSnapScroll &&
+      scrollDelta >= sectionProgressFastSampleMinDelta &&
+      speed >= sectionProgressFastSampleMinSpeed
   );
-  const hasFastSectionProgressGesture = speed > 2.1 && scrollDelta >= sectionProgressFastRevealThreshold;
+  if (
+    !isFastSectionProgressSample ||
+    now - sectionProgressFastScrollLastAt > 220 ||
+    (scrollIntent && scrollIntent !== sectionProgressFastScrollDirection)
+  ) {
+    sectionProgressFastScrollBurst = 0;
+  }
+  if (isFastSectionProgressSample) {
+    sectionProgressFastScrollDirection = scrollIntent;
+    sectionProgressFastScrollBurst += scrollDelta;
+    sectionProgressFastScrollLastAt = now;
+  }
+  const hasFastSectionProgressGesture = sectionProgressFastScrollBurst >= sectionProgressFastBurstThreshold;
   const shouldRevealSectionProgress = Boolean(
     sectionProgressPanelOpen
       || hasFastSectionProgressGesture
-      || sectionProgressRevealDistance >= sectionProgressRevealThreshold
   );
   if (lastSnapTargetTop >= 0 && Math.abs(currentScrollY - lastSnapTargetTop) > window.innerHeight * 0.7) {
     lastSnapTargetTop = -1;
@@ -1336,8 +1345,9 @@ window.addEventListener('scroll', () => {
     blur: hasFastSectionProgressGesture
   });
   if (shouldRevealSectionProgress && !sectionProgressPanelOpen) {
-    sectionProgressRevealAccumulatedScroll = 0;
-    sectionProgressRevealStartY = currentScrollY;
+    sectionProgressFastScrollBurst = 0;
+    sectionProgressFastScrollDirection = 0;
+    sectionProgressFastScrollLastAt = now;
   }
   scheduleSectionSnap();
   lastScrollY = currentScrollY;
