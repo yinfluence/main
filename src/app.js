@@ -422,6 +422,8 @@ const HOME_EPISODE_AUTO_ADVANCE_MS = 7000;
 const HOME_EPISODE_DESKTOP_AUTO_ADVANCE_MS = 11000;
 const HOME_EPISODE_ANIMATION_MS = 644;
 const HOME_EPISODE_DESKTOP_ANIMATION_MS = 520;
+const HOME_EPISODE_TAG_LIMIT = 8;
+const HOME_EPISODE_MOBILE_TAG_LIMIT = 3;
 const INLINE_POPUP_DELAY_MS = 300;
 const DESKTOP_SIDEBAR_STORAGE_KEY = 'yinfluence-sidebar-collapsed';
 const SNAP_SECTION_SELECTOR = '.hero, .home-search-toolbar, .home-search-section, .section, .detail-header, .detail-section';
@@ -1301,6 +1303,9 @@ bindHomeSurfaceToTop('#floating-home');
 bindHomeSurfaceToTop('.brand-home, .brand-avatar-link');
 function renderRouteWithTransition() {
   const nextHash = window.location.hash || '#/';
+  if (hasRenderedRoute && nextHash === lastRenderedHash) {
+    return;
+  }
   const transitionKind = getRouteTransitionKind(lastRenderedHash, nextHash);
 
   if (
@@ -4301,15 +4306,12 @@ function rerollHomeReferenceRecommendations(type) {
 function homeEpisodeVisibleCount() {
   if (useMobileHomeLayout()) return 1;
   const shell = document.querySelector('.home-episode-carousel-shell');
-  const viewport = shell?.querySelector?.('.home-episode-carousel-viewport');
   const homeSection = document.getElementById('home-episodes');
-  const availableWidth = viewport instanceof HTMLElement
-    ? viewport.getBoundingClientRect().width
-    : shell instanceof HTMLElement
-      ? shell.getBoundingClientRect().width
-      : homeSection instanceof HTMLElement
-        ? homeSection.getBoundingClientRect().width
-        : Math.max(app?.getBoundingClientRect?.().width || 0, 0);
+  const availableWidth = shell instanceof HTMLElement
+    ? shell.getBoundingClientRect().width
+    : homeSection instanceof HTMLElement
+      ? homeSection.getBoundingClientRect().width
+      : Math.max(app?.getBoundingClientRect?.().width || 0, 0);
 
   if (availableWidth >= 1040) return 3;
   if (availableWidth >= 690) return 2;
@@ -4661,7 +4663,8 @@ function renderHomeEpisodeKickerMeta(episode) {
 
 function renderHomeEpisodeCardMarkup(episode, { preview = false, mobileAction = false } = {}) {
   const summary = summarizeHomeEpisodeSummary(episode.summary, { mobile: mobileAction });
-  const visibleTags = mobileAction ? (episode.tags || []).slice(0, 3) : (episode.tags || []);
+  const tagLimit = mobileAction ? HOME_EPISODE_MOBILE_TAG_LIMIT : HOME_EPISODE_TAG_LIMIT;
+  const visibleTags = (episode.tags || []).slice(0, tagLimit);
   return `
     <article class="card home-episode-card${preview ? ' is-preview' : ''}" data-episode-href="${routeTo(`episodes/${episode.id}`)}">
       <p class="card-kicker">${escapeHtml(episode.id)} ${renderHomeEpisodeKickerMeta(episode)}</p>
