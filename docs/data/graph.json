@@ -2,12 +2,12 @@
   "meta": {
     "title": "颖响力知识图谱",
     "subtitle": "节目、概念、模型、人物、主题之间的可视化连接网络",
-    "nodeCount": 492,
-    "linkCount": 981,
+    "nodeCount": 495,
+    "linkCount": 995,
     "typeCounts": {
-      "model": 64,
-      "episode": 138,
-      "concept": 138,
+      "model": 65,
+      "episode": 139,
+      "concept": 139,
       "person": 61,
       "theme": 91
     }
@@ -22,7 +22,7 @@
       "route": "models/risk-transfer-chain",
       "summary": "系统不会立刻吞下风险，而是先沿着银行、企业、票据、供应链和普通人之间不断转手、延后和下沉。",
       "status": null,
-      "degree": 36
+      "degree": 37
     },
     {
       "id": "model:leverage-backfire",
@@ -98,6 +98,17 @@
       "type": "episode",
       "route": "episodes/EP128",
       "summary": "本期从汽车广告和品牌叙事越来越“老干部风”切入，判断广告审美变化背后不是广告公司退步，而是核心消费人群正在向公务员、事业编、国企及相关岗位等泛体制人群迁移。节目把这种变化概括为“系统回滚”：社会从市场化打拼、能力赚钱和增长想象，退回到以稳定身份、财政兜底和体制位置为核心的分层逻辑。它进一步讨论中产门槛收窄、身份压倒财富、代际闭环形成，以及创新活力降温、三四线城市空心化和人情关系重新压倒规则关系等后果。",
+      "status": "curated",
+      "degree": 14
+    },
+    {
+      "id": "episode:EP139",
+      "key": "EP139",
+      "label": "EP139",
+      "fullLabel": "EP139 · 耿同学打假撕开真相：从985顶尖学者到车企电池，全行业造假潜规则！【EP139】",
+      "type": "episode",
+      "route": "episodes/EP139",
+      "summary": "本期从耿同学举报学术造假切入，不重复图片复用和数据篡改细节，而是把论文造假与产业研发里的参数造假放进同一套 KPI 逻辑里分析。节目认为，真正危险的不是几篇论文翻车，而是指标先被定死、真实实验达不到时，组织选择改数据、锁显示、改测试，让结果看起来达标。它借某车企超充电池温度显示锁死在 71 度的案例，说明当技术卖点、营销节奏和绩效考核压过安全边界时，风险会从论文、实验室和发布会进入真实产品，最后由消费者和纳税人承担。",
       "status": "curated",
       "degree": 14
     },
@@ -531,6 +542,17 @@
       "degree": 8
     },
     {
+      "id": "theme:ev-safety-and-consumer-testing",
+      "key": "ev-safety-and-consumer-testing",
+      "label": "新能源安全边界与消费者测试",
+      "fullLabel": "新能源安全边界与消费者测试",
+      "type": "theme",
+      "route": "themes/ev-safety-and-consumer-testing",
+      "summary": "讨论新能源车与相关电池系统如何把安全验证不足的代价，转移到真实用户和真实事故里。",
+      "status": null,
+      "degree": 8
+    },
+    {
       "id": "theme:sanctions-and-power-containment",
       "key": "sanctions-and-power-containment",
       "label": "制裁、遏制与集团竞争",
@@ -905,17 +927,6 @@
       "degree": 7
     },
     {
-      "id": "theme:ev-safety-and-consumer-testing",
-      "key": "ev-safety-and-consumer-testing",
-      "label": "新能源安全边界与消费者测试",
-      "fullLabel": "新能源安全边界与消费者测试",
-      "type": "theme",
-      "route": "themes/ev-safety-and-consumer-testing",
-      "summary": "讨论新能源车与相关电池系统如何把安全验证不足的代价，转移到真实用户和真实事故里。",
-      "status": null,
-      "degree": 7
-    },
-    {
       "id": "concept:sanction-containment",
       "key": "sanction-containment",
       "label": "制裁遏制",
@@ -1268,6 +1279,17 @@
       "degree": 6
     },
     {
+      "id": "concept:consumer-testbed",
+      "key": "consumer-testbed",
+      "label": "消费者测试场",
+      "fullLabel": "消费者测试场",
+      "type": "concept",
+      "route": "concepts/consumer-testbed",
+      "summary": "企业把本该在研发和验证阶段承担的安全成本，转移到首批消费者、公共道路和真实事故里去消化。",
+      "status": null,
+      "degree": 6
+    },
+    {
       "id": "concept:phantom-sales",
       "key": "phantom-sales",
       "label": "虚假销售",
@@ -1286,6 +1308,17 @@
       "type": "concept",
       "route": "concepts/balance-sheet-support",
       "summary": "通过维持估值、价格和名义成交，先保住报表与抵押体系，再把真实压力向后延。",
+      "status": null,
+      "degree": 6
+    },
+    {
+      "id": "concept:organizational-silence",
+      "key": "organizational-silence",
+      "label": "组织失声",
+      "fullLabel": "组织失声",
+      "type": "concept",
+      "route": "concepts/organizational-silence",
+      "summary": "组织内部真实反馈消失后，成员会等待权威表态，而不是主动修正错误。",
       "status": null,
       "degree": 6
     },
@@ -1532,6 +1565,17 @@
       "degree": 5
     },
     {
+      "id": "concept:probabilistic-safety",
+      "key": "probabilistic-safety",
+      "label": "概率型安全",
+      "fullLabel": "概率型安全",
+      "type": "concept",
+      "route": "concepts/probabilistic-safety",
+      "summary": "风险不是每次都会爆发，但一旦触发就后果极重，因此最容易被组织和用户一起低估。",
+      "status": null,
+      "degree": 5
+    },
+    {
       "id": "model:black-box-assetization",
       "key": "black-box-assetization",
       "label": "黑箱资产化",
@@ -1620,17 +1664,6 @@
       "degree": 5
     },
     {
-      "id": "concept:consumer-testbed",
-      "key": "consumer-testbed",
-      "label": "消费者测试场",
-      "fullLabel": "消费者测试场",
-      "type": "concept",
-      "route": "concepts/consumer-testbed",
-      "summary": "企业把本该在研发和验证阶段承担的安全成本，转移到首批消费者、公共道路和真实事故里去消化。",
-      "status": null,
-      "degree": 5
-    },
-    {
       "id": "model:political-embedded-enterprise",
       "key": "political-embedded-enterprise",
       "label": "政企嵌入企业模型",
@@ -1682,17 +1715,6 @@
       "type": "concept",
       "route": "concepts/active-neutrality",
       "summary": "真正可持续的中立不是谁都不得罪，而是在坚持规则的前提下主动参与秩序塑造。",
-      "status": null,
-      "degree": 5
-    },
-    {
-      "id": "concept:organizational-silence",
-      "key": "organizational-silence",
-      "label": "组织失声",
-      "fullLabel": "组织失声",
-      "type": "concept",
-      "route": "concepts/organizational-silence",
-      "summary": "组织内部真实反馈消失后，成员会等待权威表态，而不是主动修正错误。",
       "status": null,
       "degree": 5
     },
@@ -1939,17 +1961,6 @@
       "degree": 4
     },
     {
-      "id": "concept:probabilistic-safety",
-      "key": "probabilistic-safety",
-      "label": "概率型安全",
-      "fullLabel": "概率型安全",
-      "type": "concept",
-      "route": "concepts/probabilistic-safety",
-      "summary": "风险不是每次都会爆发，但一旦触发就后果极重，因此最容易被组织和用户一起低估。",
-      "status": null,
-      "degree": 4
-    },
-    {
       "id": "person:sanae-takaichi",
       "key": "sanae-takaichi",
       "label": "高市早苗",
@@ -2023,6 +2034,17 @@
       "type": "theme",
       "route": "themes/platform-governance-and-folk-discourse",
       "summary": "讨论平台如何识别、容忍、限制和清理具有高传播性的民间表达。",
+      "status": null,
+      "degree": 4
+    },
+    {
+      "id": "theme:automotive-r-and-d-governance",
+      "key": "automotive-r-and-d-governance",
+      "label": "汽车研发治理与沉默联盟",
+      "fullLabel": "汽车研发治理与沉默联盟",
+      "type": "theme",
+      "route": "themes/automotive-r-and-d-governance",
+      "summary": "讨论汽车研发体系里的送检量产落差、师徒网络、权威压制和系统性失真。",
       "status": null,
       "degree": 4
     },
@@ -2555,17 +2577,6 @@
       "degree": 3
     },
     {
-      "id": "theme:automotive-r-and-d-governance",
-      "key": "automotive-r-and-d-governance",
-      "label": "汽车研发治理与沉默联盟",
-      "fullLabel": "汽车研发治理与沉默联盟",
-      "type": "theme",
-      "route": "themes/automotive-r-and-d-governance",
-      "summary": "讨论汽车研发体系里的送检量产落差、师徒网络、权威压制和系统性失真。",
-      "status": null,
-      "degree": 3
-    },
-    {
       "id": "model:human-machine-differentiation",
       "key": "human-machine-differentiation",
       "label": "人机差异化模型",
@@ -2584,6 +2595,28 @@
       "type": "concept",
       "route": "concepts/credential-rent",
       "summary": "一个人的学历、文化、头衔或圈层，不再只是背景，而被当成能持续换钱、换信任和换资源的租值来源。",
+      "status": null,
+      "degree": 3
+    },
+    {
+      "id": "theme:data-cosmetics-and-false-prosperity",
+      "key": "data-cosmetics-and-false-prosperity",
+      "label": "数据粉饰与虚假繁荣",
+      "fullLabel": "数据粉饰与虚假繁荣",
+      "type": "theme",
+      "route": "themes/data-cosmetics-and-false-prosperity",
+      "summary": "讨论地方政府、企业与市场如何用账面数据制造景气感，却把真实风险继续藏在黑箱里。",
+      "status": null,
+      "degree": 3
+    },
+    {
+      "id": "concept:sample-production-gap",
+      "key": "sample-production-gap",
+      "label": "送检量产分裂",
+      "fullLabel": "送检量产分裂",
+      "type": "concept",
+      "route": "concepts/sample-production-gap",
+      "summary": "送检、展示和量产版本一旦分裂，合格证据就不再能代表消费者真正拿到的产品。",
       "status": null,
       "degree": 3
     },
@@ -2705,6 +2738,17 @@
       "type": "concept",
       "route": "concepts/cult-branding",
       "summary": "用户从购买者变成主动辩护、传播和站队的信众时，品牌就进入信众化阶段。",
+      "status": null,
+      "degree": 3
+    },
+    {
+      "id": "model:prototype-production-decoupling",
+      "key": "prototype-production-decoupling",
+      "label": "样机量产脱钩",
+      "fullLabel": "样机量产脱钩",
+      "type": "model",
+      "route": "models/prototype-production-decoupling",
+      "summary": "样机量产脱钩解释送检、展示和量产之间的标准落差如何制造真实安全风险。",
       "status": null,
       "degree": 3
     },
@@ -3127,6 +3171,28 @@
       "degree": 2
     },
     {
+      "id": "concept:compliance-cost-gap",
+      "key": "compliance-cost-gap",
+      "label": "合规成本落差",
+      "fullLabel": "合规成本落差",
+      "type": "concept",
+      "route": "concepts/compliance-cost-gap",
+      "summary": "不同制度路径让同一市场里的生产者承担完全不同的时间、资金和不确定性成本。",
+      "status": null,
+      "degree": 2
+    },
+    {
+      "id": "model:regulatory-cost-arbitrage",
+      "key": "regulatory-cost-arbitrage",
+      "label": "合规成本套利模型",
+      "fullLabel": "合规成本套利模型",
+      "type": "model",
+      "route": "models/regulatory-cost-arbitrage",
+      "summary": "当同一市场存在多条监管路径，低合规成本路径会获得更高试错频率和更强替代能力。",
+      "status": null,
+      "degree": 2
+    },
+    {
       "id": "person:he-qi",
       "key": "he-qi",
       "label": "何旗",
@@ -3380,28 +3446,6 @@
       "degree": 2
     },
     {
-      "id": "theme:data-cosmetics-and-false-prosperity",
-      "key": "data-cosmetics-and-false-prosperity",
-      "label": "数据粉饰与虚假繁荣",
-      "fullLabel": "数据粉饰与虚假繁荣",
-      "type": "theme",
-      "route": "themes/data-cosmetics-and-false-prosperity",
-      "summary": "讨论地方政府、企业与市场如何用账面数据制造景气感，却把真实风险继续藏在黑箱里。",
-      "status": null,
-      "degree": 2
-    },
-    {
-      "id": "concept:sample-production-gap",
-      "key": "sample-production-gap",
-      "label": "送检量产分裂",
-      "fullLabel": "送检量产分裂",
-      "type": "concept",
-      "route": "concepts/sample-production-gap",
-      "summary": "送检、展示和量产版本一旦分裂，合格证据就不再能代表消费者真正拿到的产品。",
-      "status": null,
-      "degree": 2
-    },
-    {
       "id": "concept:investment-timing-gap",
       "key": "investment-timing-gap",
       "label": "投入兑现时间差",
@@ -3567,13 +3611,13 @@
       "degree": 2
     },
     {
-      "id": "model:prototype-production-decoupling",
-      "key": "prototype-production-decoupling",
-      "label": "样机量产脱钩",
-      "fullLabel": "样机量产脱钩",
-      "type": "model",
-      "route": "models/prototype-production-decoupling",
-      "summary": "样机量产脱钩解释送检、展示和量产之间的标准落差如何制造真实安全风险。",
+      "id": "theme:academic-bureaucracy-and-knowledge-decline",
+      "key": "academic-bureaucracy-and-knowledge-decline",
+      "label": "学术官僚化与知识退化",
+      "fullLabel": "学术官僚化与知识退化",
+      "type": "theme",
+      "route": "themes/academic-bureaucracy-and-knowledge-decline",
+      "summary": "讨论当高校越来越像官场时，课堂、研究和学问如何被不断挤压。",
       "status": null,
       "degree": 2
     },
@@ -4234,28 +4278,6 @@
       "type": "concept",
       "route": "concepts/overseas-sink-project",
       "summary": "跨境大项目若依赖旧周期资金和宏大叙事，外部条件反转后会变成难以止损的资产黑洞。",
-      "status": null,
-      "degree": 1
-    },
-    {
-      "id": "concept:compliance-cost-gap",
-      "key": "compliance-cost-gap",
-      "label": "合规成本落差",
-      "fullLabel": "合规成本落差",
-      "type": "concept",
-      "route": "concepts/compliance-cost-gap",
-      "summary": "不同制度路径让同一市场里的生产者承担完全不同的时间、资金和不确定性成本。",
-      "status": null,
-      "degree": 1
-    },
-    {
-      "id": "model:regulatory-cost-arbitrage",
-      "key": "regulatory-cost-arbitrage",
-      "label": "合规成本套利模型",
-      "fullLabel": "合规成本套利模型",
-      "type": "model",
-      "route": "models/regulatory-cost-arbitrage",
-      "summary": "当同一市场存在多条监管路径，低合规成本路径会获得更高试错频率和更强替代能力。",
       "status": null,
       "degree": 1
     },
@@ -5129,17 +5151,6 @@
       "degree": 1
     },
     {
-      "id": "theme:academic-bureaucracy-and-knowledge-decline",
-      "key": "academic-bureaucracy-and-knowledge-decline",
-      "label": "学术官僚化与知识退化",
-      "fullLabel": "学术官僚化与知识退化",
-      "type": "theme",
-      "route": "themes/academic-bureaucracy-and-knowledge-decline",
-      "summary": "讨论当高校越来越像官场时，课堂、研究和学问如何被不断挤压。",
-      "status": null,
-      "degree": 1
-    },
-    {
       "id": "concept:academic-shell-game",
       "key": "academic-shell-game",
       "label": "学术空壳化",
@@ -5371,6 +5382,17 @@
       "degree": 1
     },
     {
+      "id": "concept:metric-locking",
+      "key": "metric-locking",
+      "label": "指标锁死",
+      "fullLabel": "指标锁死",
+      "type": "concept",
+      "route": "concepts/metric-locking",
+      "summary": "指标锁死指组织先把达标数字定成必须成立的结果，再让测试、显示和汇报口径围着这个数字改写。",
+      "status": null,
+      "degree": 1
+    },
+    {
       "id": "concept:housing-tax-wedge",
       "key": "housing-tax-wedge",
       "label": "住房税楔",
@@ -5422,6 +5444,17 @@
       "type": "person",
       "route": "people/bad-bunny",
       "summary": "Bad Bunny 是波多黎各音乐人，节目借他的超级碗中场秀观察拉丁文化如何从边缘语言进入北美主舞台。",
+      "status": null,
+      "degree": 1
+    },
+    {
+      "id": "model:kpi-fraud-equilibrium",
+      "key": "kpi-fraud-equilibrium",
+      "label": "KPI造假均衡",
+      "fullLabel": "KPI造假均衡",
+      "type": "model",
+      "route": "models/kpi-fraud-equilibrium",
+      "summary": "KPI造假均衡解释当达标收益高于真实反馈、造假成本低于合规成本时，整个系统会奖励看起来达标。",
       "status": null,
       "degree": 1
     }
@@ -10140,6 +10173,76 @@
     {
       "source": "episode:EP138",
       "target": "theme:state-business-entanglement",
+      "kind": "episode-theme"
+    },
+    {
+      "source": "episode:EP139",
+      "target": "concept:metric-locking",
+      "kind": "episode-concept"
+    },
+    {
+      "source": "episode:EP139",
+      "target": "concept:compliance-cost-gap",
+      "kind": "episode-concept"
+    },
+    {
+      "source": "episode:EP139",
+      "target": "concept:organizational-silence",
+      "kind": "episode-concept"
+    },
+    {
+      "source": "episode:EP139",
+      "target": "concept:consumer-testbed",
+      "kind": "episode-concept"
+    },
+    {
+      "source": "episode:EP139",
+      "target": "concept:probabilistic-safety",
+      "kind": "episode-concept"
+    },
+    {
+      "source": "episode:EP139",
+      "target": "concept:sample-production-gap",
+      "kind": "episode-concept"
+    },
+    {
+      "source": "episode:EP139",
+      "target": "model:kpi-fraud-equilibrium",
+      "kind": "episode-model"
+    },
+    {
+      "source": "episode:EP139",
+      "target": "model:prototype-production-decoupling",
+      "kind": "episode-model"
+    },
+    {
+      "source": "episode:EP139",
+      "target": "model:risk-transfer-chain",
+      "kind": "episode-model"
+    },
+    {
+      "source": "episode:EP139",
+      "target": "model:regulatory-cost-arbitrage",
+      "kind": "episode-model"
+    },
+    {
+      "source": "episode:EP139",
+      "target": "theme:academic-bureaucracy-and-knowledge-decline",
+      "kind": "episode-theme"
+    },
+    {
+      "source": "episode:EP139",
+      "target": "theme:automotive-r-and-d-governance",
+      "kind": "episode-theme"
+    },
+    {
+      "source": "episode:EP139",
+      "target": "theme:ev-safety-and-consumer-testing",
+      "kind": "episode-theme"
+    },
+    {
+      "source": "episode:EP139",
+      "target": "theme:data-cosmetics-and-false-prosperity",
       "kind": "episode-theme"
     },
     {
