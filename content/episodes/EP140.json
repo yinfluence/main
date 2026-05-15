@@ -113,7 +113,8 @@
   "videoLinks": [
     {
       "platform": "bilibili",
-      "url": "https://www.bilibili.com/video/BV1dF5d6DEu1/?spm_id_from=333.788.top_right_bar_window_dynamic.content.click"
+      "url": "https://www.bilibili.com/video/BV1dF5d6DEu1/?spm_id_from=333.788.top_right_bar_window_dynamic.content.click",
+      "access": "member"
     },
     {
       "platform": "youtube",

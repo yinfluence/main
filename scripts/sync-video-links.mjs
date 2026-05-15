@@ -10,6 +10,7 @@ const bilibiliSeasonPath = path.resolve(rootDir, '../bilibili/raw/season_episode
 const overridesPath = path.join(__dirname, 'video-link-overrides.json');
 
 const YOUTUBE_CHANNEL_URL = 'https://www.youtube.com/@%E9%A2%96%E5%93%8D%E5%8A%9B/videos';
+const BILIBILI_MEMBER_TEXT_PATTERN = /会员|会员专属|搬后会员发|充电专属/;
 
 function normalizeTitle(value) {
   return String(value || '')
@@ -34,6 +35,11 @@ function extractPrimaryTitle(value) {
 function extractEpisodeNumber(value) {
   const match = String(value || '').match(/\b(?:EP|PE)\s*0*(\d{1,3})\b/i);
   return match ? `EP${match[1].padStart(3, '0')}` : '';
+}
+
+function extractBvid(value) {
+  const match = String(value || '').match(/BV[a-zA-Z0-9]{10}/);
+  return match ? match[0] : '';
 }
 
 function extractInitialData(html) {
@@ -237,6 +243,81 @@ function findMatch(episode, itemsByEpisodeId, normalizedItems) {
   return null;
 }
 
+function findSeasonEntryFromViewData(viewData, bvid) {
+  const sections = viewData?.ugc_season?.sections || [];
+  for (const section of sections) {
+    for (const episode of section.episodes || []) {
+      if (String(episode?.bvid || '').toLowerCase() === String(bvid || '').toLowerCase()) {
+        return episode;
+      }
+    }
+  }
+  return null;
+}
+
+function inferBilibiliAccessFromViewData(viewData, bvid) {
+  const seasonEntry = findSeasonEntryFromViewData(viewData, bvid);
+  const textFields = [
+    viewData?.title,
+    viewData?.desc,
+    ...(viewData?.pages || []).map((page) => page?.part),
+    seasonEntry?.title,
+    seasonEntry?.page?.part,
+    seasonEntry?.arc?.title,
+    ...(seasonEntry?.pages || []).map((page) => page?.part)
+  ].filter(Boolean);
+
+  if (
+    viewData?.is_upower_exclusive === true ||
+    viewData?.is_upower_exclusive_with_qa === true ||
+    seasonEntry?.attribute === 8 ||
+    textFields.some((field) => BILIBILI_MEMBER_TEXT_PATTERN.test(String(field)))
+  ) {
+    return 'member';
+  }
+
+  return 'public';
+}
+
+async function fetchBilibiliViewData(bvid, cache) {
+  if (cache.has(bvid)) {
+    return cache.get(bvid);
+  }
+
+  const response = await fetch(`https://api.bilibili.com/x/web-interface/view?bvid=${encodeURIComponent(bvid)}`, {
+    headers: {
+      'user-agent': 'Mozilla/5.0'
+    }
+  });
+
+  if (!response.ok) {
+    throw new Error(`B 站会员状态检查失败：${bvid} HTTP ${response.status}`);
+  }
+
+  const payload = await response.json();
+  if (payload?.code !== 0 || !payload?.data) {
+    throw new Error(`B 站会员状态检查失败：${bvid} ${payload?.message || '无有效数据'}`);
+  }
+
+  cache.set(bvid, payload.data);
+  return payload.data;
+}
+
+async function resolveManualBilibiliLink(link, cache) {
+  if (!link?.url || link.status || link.platform !== 'bilibili' || link.access === 'member') {
+    return link;
+  }
+
+  const bvid = extractBvid(link.url);
+  if (!bvid) {
+    throw new Error(`人工 B 站链接无法识别 BV 号，不能确认会员状态：${link.url}`);
+  }
+
+  const viewData = await fetchBilibiliViewData(bvid, cache);
+  const access = inferBilibiliAccessFromViewData(viewData, bvid);
+  return access === 'member' ? { ...link, access: 'member' } : link;
+}
+
 async function main() {
   const [inventoryRaw, seasonRaw, overridesRaw, episodeFiles] = await Promise.all([
     fs.readFile(bilibiliInventoryPath, 'utf8'),
@@ -279,17 +360,33 @@ async function main() {
     bilibiliAvailable: 0,
     bilibiliMember: 0,
     bilibiliUnavailable: 0,
+    bilibiliManualAccessChecked: 0,
     youtubeAvailable: 0,
     youtubeUnavailable: 0
   };
+  const bilibiliViewCache = new Map();
+  let overridesChanged = false;
 
   for (const episode of episodes) {
     const bilibiliMatch = findMatch(episode.data, bilibiliByEpisodeId, normalizedBilibili);
     const youtubeMatch = findMatch(episode.data, youtubeByEpisodeId, normalizedYoutube);
     const override = overrides[episode.data.id] || {};
-    const bilibiliLink = override.bilibili
-      ? override.bilibili
-      : bilibiliMatch
+    let bilibiliLink;
+
+    if (override.bilibili) {
+      bilibiliLink = await resolveManualBilibiliLink(override.bilibili, bilibiliViewCache);
+      if (override.bilibili.url && !override.bilibili.status && override.bilibili.access !== 'member') {
+        summary.bilibiliManualAccessChecked += 1;
+      }
+      if (bilibiliLink.access !== override.bilibili.access) {
+        overrides[episode.data.id] = {
+          ...override,
+          bilibili: bilibiliLink
+        };
+        overridesChanged = true;
+      }
+    } else {
+      bilibiliLink = bilibiliMatch
         ? {
             platform: 'bilibili',
             url: bilibiliMatch.url,
@@ -300,6 +397,7 @@ async function main() {
             status: 'unavailable',
             note: '已下架'
           };
+    }
 
     const youtubeLink = override.youtube
       ? override.youtube
@@ -324,6 +422,10 @@ async function main() {
     else summary.youtubeUnavailable += 1;
 
     await fs.writeFile(episode.fullPath, `${JSON.stringify(episode.data, null, 2)}\n`, 'utf8');
+  }
+
+  if (overridesChanged) {
+    await fs.writeFile(overridesPath, `${JSON.stringify(overrides, null, 2)}\n`, 'utf8');
   }
 
   console.log('视频链接同步完成');

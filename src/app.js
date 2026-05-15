@@ -29,7 +29,7 @@ const WEBSITE_LOG_ENTRIES = [
     date: '2026-05-15',
     title: '新增 EP140 新加坡国家信用与组屋租约整理',
     items: [
-      '新增 EP140《黄循财劳动节落泪真相！全网疯传的新加坡崩盘论，全是谣言！【EP140】》，B 站入口按普通视频写入，并补齐 YouTube 入口。',
+      '新增 EP140《黄循财劳动节落泪真相！全网疯传的新加坡崩盘论，全是谣言！【EP140】》，B 站入口按会员视频写入，并补齐 YouTube 入口。',
       '本期把黄循财劳动节讲话落泪还原为中东撤离公民来信场景，接回国家信用、人本契约和李光耀建国责任线。',
       '新增“土地循环住房”和“组屋”知识节点，把 EP140 接入新加坡小国生存术、人的价值与国家信用、住房税负与收入分配等主题。'
     ]
@@ -882,6 +882,10 @@ function scrollActiveSectionProgressItemIntoView({ behavior = 'auto' } = {}) {
 
 function syncSectionProgress({ reveal = false, blur = false } = {}) {
   if (!sectionProgress || sectionProgress.hidden) return;
+  if (sectionProgressPanelOpen) {
+    sectionProgress.classList.remove('is-visible');
+    document.body.classList.remove('section-progress-fast');
+  }
 
   const sections = getProgressSections();
   if (sections.length < 2) return;
@@ -5152,7 +5156,7 @@ function renderHome(focusSectionId = '') {
     </a>
   ` : '';
   const homeSearchToolbarMarkup = `
-    <div class="home-search-toolbar${isMobile ? ' mobile' : ''}">
+    <div class="home-search-toolbar${isMobile ? ' mobile home-search-toolbar-float-only' : ''}">
       <div class="search-row">
         <input id="search-input" type="text" placeholder="搜索知识库：节目、概念、模型、人物、主题，如 EP019 / 特朗普 / 安全阀治理">
         <button id="search-submit" class="search-submit" type="button">搜索</button>
@@ -5333,11 +5337,22 @@ function renderHome(focusSectionId = '') {
     });
   }
 
-  if (homeSearchToolbar && !isMobile) {
+  if (homeSearchToolbar) {
     setupHomeSearchToolbarBehavior(homeSearchToolbar);
   }
 
   renderHomeEpisodeCarousel();
+  app.querySelectorAll('.home-episodes-more-link').forEach((link) => {
+    link.addEventListener('click', (event) => {
+      event.preventDefault();
+      episodeIndexQuery = '';
+      episodeIndexAppliedQuery = '';
+      episodeIndexSearchMode = false;
+      episodeIndexFocusSearchOnRender = false;
+      episodeIndexRangeStart = 0;
+      window.location.hash = '#/episodes';
+    });
+  });
 
   if (floatingActionsExpanded) {
     scheduleFloatingActionsAutoCollapse();
@@ -7019,6 +7034,9 @@ function renderKeywordDetail(id) {
         ${renderDetailBackRow('#/keywords', '关键词')}
         <h1 class="detail-title">${escapeHtml(keyword.name)}</h1>
         <p class="detail-summary">${renderLinkedEpisodeText(keyword.summary)}</p>
+        <div class="chip-row">
+          ${keywordTypeBadge(keyword, { link: true })}
+        </div>
         ${renderKnowledgeReferenceHeaderSection(referenceGroups)}
       </div>
       ${renderKnowledgeAnalysisSection(buildKeywordAnalysisSections(keyword, relatedEpisodes, referenceGroups, keywordKind, keywordConfig, aliases))}

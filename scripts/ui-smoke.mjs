@@ -877,6 +877,17 @@ async function runDesktopChecks(client) {
     'EP124 detail page should show the bilibili member badge'
   );
 
+  await navigate(client, `${baseUrl}/#/episodes/EP140`, '.detail-header');
+  await waitForCondition(
+    client,
+    `location.hash === '#/episodes/EP140' && Boolean(document.querySelector('.media-chip.member-only .media-chip-badge'))`,
+    { timeoutMs: 4000, label: 'ep140 detail route settled' }
+  );
+  assert(
+    await evaluate(client, `Boolean(document.querySelector('.media-chip.member-only .media-chip-badge'))`),
+    'EP140 detail page should show the bilibili member badge'
+  );
+
   await captureScreenshot(client, 'desktop-ep124-detail.png');
 }
 

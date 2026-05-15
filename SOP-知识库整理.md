@@ -618,9 +618,10 @@ B 站链接匹配必须先用官方 B 站列表 / 合集和 YouTube 主标题做
 
 1. 先用 EP 编号匹配 B 站标题里的 `【EPxxx】`。
 2. 没有 EP 编号时，用 YouTube 主标题和 B 站标题的主标题做规范化匹配。
-3. 如果 B 站条目标记为 `充电专属`，写入 `"access": "member"`。
-4. 只要找到确定链接，就同时更新 `content/episodes/EPxxx.json` 和 `scripts/video-link-overrides.json`。
-5. 只有检查过官方列表 / 投稿页 / 充电专属入口仍没有确定结果后，才能保留或写入 `status: "unavailable"` + `note: "已下架"`。
+3. 对新节目或人工给出的 B 站链接，必须直接查 BV 对应的 `https://api.bilibili.com/x/web-interface/view?bvid=...` 响应，不能只看页面颜色或当前覆盖表。
+4. 如果响应里 `is_upower_exclusive === true`、合集匹配条目的 `attribute === 8`，或 B 站条目标记为 `充电专属`，写入 `"access": "member"`。
+5. 只要找到确定链接，就同时更新 `content/episodes/EPxxx.json` 和 `scripts/video-link-overrides.json`；会员节目覆盖表不能只写 `url`，必须同步写 `access: "member"`。
+6. 只有检查过官方列表 / 投稿页 / 充电专属入口仍没有确定结果后，才能保留或写入 `status: "unavailable"` + `note: "已下架"`。
 
 ### 当前协作输入边界
 
@@ -635,6 +636,15 @@ B 站链接匹配必须先用官方 B 站列表 / 合集和 YouTube 主标题做
 3. 完整字幕或纯文字稿
    - NotebookLM、手工转写、闪电说、其他 ASR 产出的纯文字都可以
    - 只要没有标准时间轴，就保存为 `.md`，不要伪造 `.srt`
+
+用户提供 B 站链接后的硬规则：
+
+1. 不允许把“用户给了链接”直接等同于普通节目。
+2. 第一动作必须提取 BV 号，并查 `https://api.bilibili.com/x/web-interface/view?bvid=...`。
+3. 必须明确判断这条链接是会员节目还是非会员节目，再写入网页数据。
+4. 如果接口里 `is_upower_exclusive === true`，或合集里当前 `bvid` 对应条目 `attribute === 8`，必须按会员节目处理。
+5. 会员节目必须同时写入 `content/episodes/EPxxx.json` 和 `scripts/video-link-overrides.json` 的 `"access": "member"`。
+6. 只有完成上述检查后，才允许在网页日志里写“普通视频”或“会员视频”；不能凭页面外观、旧覆盖表或主观记忆判断。
 
 整理者收到这三项后，必须自动完成：
 
@@ -716,6 +726,7 @@ B 站不是直接硬抓网页前台结果，而是优先使用本地已经保存
 - `../bilibili/raw/subtitle_inventory.json`
 - `../bilibili/raw/season_episodes.json`
 - `scripts/video-link-overrides.json`
+- B 站单条视频接口：`https://api.bilibili.com/x/web-interface/view?bvid=...`
 
 判别顺序固定为：
 
@@ -753,6 +764,8 @@ B 站会员态不是靠颜色猜，是靠数据或明确文本线索判断。
 
 目前判定依据：
 
+- 单条视频接口里的 `is_upower_exclusive === true`
+- 单条视频接口 `ugc_season.sections[].episodes[]` 中，匹配当前 `bvid` 的条目 `attribute === 8`
 - `season_episodes.json` 里的 `attribute === 8`
 - 标题或分 P 名里明确出现：
   - `会员`
