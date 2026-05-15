@@ -2,12 +2,12 @@
   "meta": {
     "title": "颖响力知识图谱",
     "subtitle": "节目、概念、模型、人物、主题之间的可视化连接网络",
-    "nodeCount": 495,
-    "linkCount": 995,
+    "nodeCount": 497,
+    "linkCount": 1007,
     "typeCounts": {
       "model": 65,
-      "episode": 139,
-      "concept": 139,
+      "episode": 140,
+      "concept": 140,
       "person": 61,
       "theme": 91
     }
@@ -245,6 +245,17 @@
       "degree": 12
     },
     {
+      "id": "episode:EP140",
+      "key": "EP140",
+      "label": "EP140",
+      "fullLabel": "EP140 · 黄循财劳动节落泪真相！全网疯传的新加坡崩盘论，全是谣言！【EP140】",
+      "type": "episode",
+      "route": "episodes/EP140",
+      "summary": "本期从“黄循财劳动节落泪等于新加坡崩盘”的剪辑谣言切入，把原场景还原为一次关于中东撤离、新加坡公民被接回国和劳动者面对 AI 冲击的讲话。节目认为，黄循财落泪不是国家失控，而是新加坡国家信用最具体的展示：护照背后不是抽象口号，而是关键时刻国家愿意把公民接回家的承诺。后半段再把这套执政逻辑接到组屋 99 年租约，说明新加坡住房制度不是房产投机盛宴，而是在土地稀缺城市国家里用公开租约、更新机制和兜底承诺维持代际公平。",
+      "status": "curated",
+      "degree": 12
+    },
+    {
       "id": "theme:local-fiscal-stress-and-hidden-debt",
       "key": "local-fiscal-stress-and-hidden-debt",
       "label": "地方财政与隐性债务",
@@ -344,6 +355,17 @@
       "degree": 10
     },
     {
+      "id": "theme:singapore-and-small-state-survival",
+      "key": "singapore-and-small-state-survival",
+      "label": "新加坡与小国生存术",
+      "fullLabel": "新加坡与小国生存术",
+      "type": "theme",
+      "route": "themes/singapore-and-small-state-survival",
+      "summary": "讨论新加坡如何把规则、海峡、人才和谨慎外交组合成一套小国长期生存方法。",
+      "status": null,
+      "degree": 9
+    },
+    {
       "id": "theme:ev-collapse-and-exit-risk",
       "key": "ev-collapse-and-exit-risk",
       "label": "新能源崩塌与退出风险",
@@ -373,6 +395,17 @@
       "type": "concept",
       "route": "concepts/chokepoint-leverage",
       "summary": "控制海峡、运河和关键通道的人，往往能把地理位置转化成定价权、通行权和规则权。",
+      "status": null,
+      "degree": 9
+    },
+    {
+      "id": "model:institutional-fit",
+      "key": "institutional-fit",
+      "label": "制度适配",
+      "fullLabel": "制度适配",
+      "type": "model",
+      "route": "models/institutional-fit",
+      "summary": "制度适配解释能力能否兑现，取决于组织被放在怎样的法律、资本和治理环境中。",
       "status": null,
       "degree": 9
     },
@@ -509,6 +542,17 @@
       "degree": 8
     },
     {
+      "id": "model:rule-anchored-small-state-model",
+      "key": "rule-anchored-small-state-model",
+      "label": "规则锚定型小国生存",
+      "fullLabel": "规则锚定型小国生存",
+      "type": "model",
+      "route": "models/rule-anchored-small-state-model",
+      "summary": "小国要长期活下来，不能只靠地理好运，更要靠规则信誉、理性政府和可预期的制度自我约束。",
+      "status": null,
+      "degree": 8
+    },
+    {
       "id": "model:value-capture",
       "key": "value-capture",
       "label": "价值捕获",
@@ -531,17 +575,6 @@
       "degree": 8
     },
     {
-      "id": "theme:singapore-and-small-state-survival",
-      "key": "singapore-and-small-state-survival",
-      "label": "新加坡与小国生存术",
-      "fullLabel": "新加坡与小国生存术",
-      "type": "theme",
-      "route": "themes/singapore-and-small-state-survival",
-      "summary": "讨论新加坡如何把规则、海峡、人才和谨慎外交组合成一套小国长期生存方法。",
-      "status": null,
-      "degree": 8
-    },
-    {
       "id": "theme:ev-safety-and-consumer-testing",
       "key": "ev-safety-and-consumer-testing",
       "label": "新能源安全边界与消费者测试",
@@ -560,17 +593,6 @@
       "type": "theme",
       "route": "themes/sanctions-and-power-containment",
       "summary": "讨论制裁、门罗主义、海峡与联盟如何共同服务于压制对手集团的全球布局。",
-      "status": null,
-      "degree": 8
-    },
-    {
-      "id": "model:institutional-fit",
-      "key": "institutional-fit",
-      "label": "制度适配",
-      "fullLabel": "制度适配",
-      "type": "model",
-      "route": "models/institutional-fit",
-      "summary": "制度适配解释能力能否兑现，取决于组织被放在怎样的法律、资本和治理环境中。",
       "status": null,
       "degree": 8
     },
@@ -901,17 +923,6 @@
       "type": "theme",
       "route": "themes/great-power-competition-and-strategic-time",
       "summary": "讨论战争、联盟和国家战略如何被时间窗口、社会成本和长期定力重新塑形。",
-      "status": null,
-      "degree": 7
-    },
-    {
-      "id": "model:rule-anchored-small-state-model",
-      "key": "rule-anchored-small-state-model",
-      "label": "规则锚定型小国生存",
-      "fullLabel": "规则锚定型小国生存",
-      "type": "model",
-      "route": "models/rule-anchored-small-state-model",
-      "summary": "小国要长期活下来，不能只靠地理好运，更要靠规则信誉、理性政府和可预期的制度自我约束。",
       "status": null,
       "degree": 7
     },
@@ -2082,6 +2093,28 @@
       "degree": 4
     },
     {
+      "id": "concept:pragmatic-legitimacy",
+      "key": "pragmatic-legitimacy",
+      "label": "务实合法性",
+      "fullLabel": "务实合法性",
+      "type": "concept",
+      "route": "concepts/pragmatic-legitimacy",
+      "summary": "政权或共同体的稳定感，常来自普通人能持续获得可感的生活改善和秩序保障。",
+      "status": null,
+      "degree": 4
+    },
+    {
+      "id": "theme:small-state-balancing",
+      "key": "small-state-balancing",
+      "label": "小国平衡与地缘生存",
+      "fullLabel": "小国平衡与地缘生存",
+      "type": "theme",
+      "route": "themes/small-state-balancing",
+      "summary": "讨论新加坡这类小国如何在大国竞争中维持安全、合法性和现实利益。",
+      "status": null,
+      "degree": 4
+    },
+    {
       "id": "theme:ev-design-and-technology-shortcuts",
       "key": "ev-design-and-technology-shortcuts",
       "label": "新能源设计抄近路与技术捷径",
@@ -2434,6 +2467,17 @@
       "degree": 3
     },
     {
+      "id": "person:lawrence-wong",
+      "key": "lawrence-wong",
+      "label": "黄循财",
+      "fullLabel": "黄循财",
+      "type": "person",
+      "route": "people/lawrence-wong",
+      "summary": "黄循财是新加坡总理兼财政部长，节目借他观察新加坡主动中立、国家身份边界和国家信用履约。",
+      "status": null,
+      "degree": 3
+    },
+    {
       "id": "concept:gray-oil-network",
       "key": "gray-oil-network",
       "label": "灰色石油网络",
@@ -2676,17 +2720,6 @@
       "degree": 3
     },
     {
-      "id": "concept:pragmatic-legitimacy",
-      "key": "pragmatic-legitimacy",
-      "label": "务实合法性",
-      "fullLabel": "务实合法性",
-      "type": "concept",
-      "route": "concepts/pragmatic-legitimacy",
-      "summary": "政权或共同体的稳定感，常来自普通人能持续获得可感的生活改善和秩序保障。",
-      "status": null,
-      "degree": 3
-    },
-    {
       "id": "theme:cash-optionality-and-liquidity-anxiety",
       "key": "cash-optionality-and-liquidity-anxiety",
       "label": "现金为王与流动性焦虑",
@@ -2716,17 +2749,6 @@
       "type": "model",
       "route": "models/small-state-balancing-model",
       "summary": "小国平衡术解释小国在大国之间维持生存空间，靠位置、合法性和现实利益而非纯姿态。",
-      "status": null,
-      "degree": 3
-    },
-    {
-      "id": "theme:small-state-balancing",
-      "key": "small-state-balancing",
-      "label": "小国平衡与地缘生存",
-      "fullLabel": "小国平衡与地缘生存",
-      "type": "theme",
-      "route": "themes/small-state-balancing",
-      "summary": "讨论新加坡这类小国如何在大国竞争中维持安全、合法性和现实利益。",
       "status": null,
       "degree": 3
     },
@@ -2782,6 +2804,17 @@
       "type": "model",
       "route": "models/sanction-parallel-market",
       "summary": "制裁如果没有消灭需求，就会把交易推向更高风险、更高利润、更难监管的平行市场。",
+      "status": null,
+      "degree": 3
+    },
+    {
+      "id": "theme:housing-burden-and-income-distribution",
+      "key": "housing-burden-and-income-distribution",
+      "label": "住房税负与收入分配",
+      "fullLabel": "住房税负与收入分配",
+      "type": "theme",
+      "route": "themes/housing-burden-and-income-distribution",
+      "summary": "讨论住房、税负和可支配收入之间的关系，尤其关注中低收入群体被抽走了多少上升空间。",
       "status": null,
       "degree": 3
     },
@@ -3127,6 +3160,17 @@
       "degree": 2
     },
     {
+      "id": "model:human-contract-model",
+      "key": "human-contract-model",
+      "label": "国家信用契约模型",
+      "fullLabel": "国家信用契约模型",
+      "type": "model",
+      "route": "models/human-contract-model",
+      "summary": "国家信用契约模型解释国家对个体生命的兜底能力如何转化为长期制度信用。",
+      "status": null,
+      "degree": 2
+    },
+    {
       "id": "concept:state-share-time-bomb",
       "key": "state-share-time-bomb",
       "label": "国资定时炸弹",
@@ -3204,17 +3248,6 @@
       "degree": 2
     },
     {
-      "id": "person:lawrence-wong",
-      "key": "lawrence-wong",
-      "label": "黄循财",
-      "fullLabel": "黄循财",
-      "type": "person",
-      "route": "people/lawrence-wong",
-      "summary": "黄循财是新加坡总理兼财政部长，节目借他观察新加坡主动中立、国家身份边界和小国规则选择。",
-      "status": null,
-      "degree": 2
-    },
-    {
       "id": "theme:recycling-and-pollution-transfer",
       "key": "recycling-and-pollution-transfer",
       "label": "回收生意与污染转移",
@@ -3288,6 +3321,17 @@
       "type": "theme",
       "route": "themes/elder-support-and-distributive-justice",
       "summary": "一个社会如何对待老去的普通人，往往最能看出它的分配偏好和文明程度。",
+      "status": null,
+      "degree": 2
+    },
+    {
+      "id": "person:lee-kuan-yew",
+      "key": "lee-kuan-yew",
+      "label": "李光耀",
+      "fullLabel": "李光耀",
+      "type": "person",
+      "route": "people/lee-kuan-yew",
+      "summary": "李光耀是新加坡建国总理，节目借他说明新加坡国家身份、国家责任和小国生存决心怎样压过祖籍血缘与软弱叙事。",
       "status": null,
       "degree": 2
     },
@@ -3387,6 +3431,28 @@
       "type": "person",
       "route": "people/vladimir-putin",
       "summary": "普京是俄罗斯总统，节目借他讨论战争体制、长期执政、接班真空和战略纵深在无人机时代的反转。",
+      "status": null,
+      "degree": 2
+    },
+    {
+      "id": "concept:human-centered-contract",
+      "key": "human-centered-contract",
+      "label": "人本契约",
+      "fullLabel": "人本契约",
+      "type": "concept",
+      "route": "concepts/human-centered-contract",
+      "summary": "国家信用不仅来自实力，也来自关键时刻愿不愿为具体个体生命履约。",
+      "status": null,
+      "degree": 2
+    },
+    {
+      "id": "theme:human-value-and-state-credit",
+      "key": "human-value-and-state-credit",
+      "label": "人的价值与国家信用",
+      "fullLabel": "人的价值与国家信用",
+      "type": "theme",
+      "route": "themes/human-value-and-state-credit",
+      "summary": "讨论国家究竟把个体视为成本、工具，还是视为必须兑现承诺的对象。",
       "status": null,
       "degree": 2
     },
@@ -3695,17 +3761,6 @@
       "type": "concept",
       "route": "concepts/middle-class-hard-landing",
       "summary": "高负债中产一旦失速，下坠往往同时摧毁资产、体面、关系和自我认同。",
-      "status": null,
-      "degree": 2
-    },
-    {
-      "id": "theme:housing-burden-and-income-distribution",
-      "key": "housing-burden-and-income-distribution",
-      "label": "住房税负与收入分配",
-      "fullLabel": "住房税负与收入分配",
-      "type": "theme",
-      "route": "themes/housing-burden-and-income-distribution",
-      "summary": "讨论住房、税负和可支配收入之间的关系，尤其关注中低收入群体被抽走了多少上升空间。",
       "status": null,
       "degree": 2
     },
@@ -4227,17 +4282,6 @@
       "degree": 1
     },
     {
-      "id": "model:human-contract-model",
-      "key": "human-contract-model",
-      "label": "国家信用契约模型",
-      "fullLabel": "国家信用契约模型",
-      "type": "model",
-      "route": "models/human-contract-model",
-      "summary": "国家信用契约模型解释国家对个体生命的兜底能力如何转化为长期制度信用。",
-      "status": null,
-      "degree": 1
-    },
-    {
       "id": "person:friedrich-hayek",
       "key": "friedrich-hayek",
       "label": "哈耶克",
@@ -4546,17 +4590,6 @@
       "degree": 1
     },
     {
-      "id": "person:lee-kuan-yew",
-      "key": "lee-kuan-yew",
-      "label": "李光耀",
-      "fullLabel": "李光耀",
-      "type": "person",
-      "route": "people/lee-kuan-yew",
-      "summary": "李光耀是新加坡建国总理，节目借他说明新加坡国家身份必须压过祖籍血缘和族群浪漫化。",
-      "status": null,
-      "degree": 1
-    },
-    {
       "id": "person:li-xiang",
       "key": "li-xiang",
       "label": "李想",
@@ -4799,28 +4832,6 @@
       "degree": 1
     },
     {
-      "id": "concept:human-centered-contract",
-      "key": "human-centered-contract",
-      "label": "人本契约",
-      "fullLabel": "人本契约",
-      "type": "concept",
-      "route": "concepts/human-centered-contract",
-      "summary": "国家信用不仅来自实力，也来自关键时刻愿不愿为具体个体生命履约。",
-      "status": null,
-      "degree": 1
-    },
-    {
-      "id": "theme:human-value-and-state-credit",
-      "key": "human-value-and-state-credit",
-      "label": "人的价值与国家信用",
-      "fullLabel": "人的价值与国家信用",
-      "type": "theme",
-      "route": "themes/human-value-and-state-credit",
-      "summary": "讨论国家究竟把个体视为成本、工具，还是视为必须兑现承诺的对象。",
-      "status": null,
-      "degree": 1
-    },
-    {
       "id": "theme:evaluation-and-moral-capital",
       "key": "evaluation-and-moral-capital",
       "label": "人物评价与道德资本",
@@ -5004,6 +5015,17 @@
       "type": "concept",
       "route": "concepts/conditional-love-loop",
       "summary": "亲情以爱之名附带控制和评价，下一代若未消化，就会继续复制这套关系。",
+      "status": null,
+      "degree": 1
+    },
+    {
+      "id": "concept:land-recycling-housing",
+      "key": "land-recycling-housing",
+      "label": "土地循环住房",
+      "fullLabel": "土地循环住房",
+      "type": "concept",
+      "route": "concepts/land-recycling-housing",
+      "summary": "土地循环住房指在土地稀缺的城市国家里，用有限租约和更新机制让住房资源跨代流动，而不是永久沉淀给先到的一代。",
       "status": null,
       "degree": 1
     },
@@ -10243,6 +10265,66 @@
     {
       "source": "episode:EP139",
       "target": "theme:data-cosmetics-and-false-prosperity",
+      "kind": "episode-theme"
+    },
+    {
+      "source": "episode:EP140",
+      "target": "concept:human-centered-contract",
+      "kind": "episode-concept"
+    },
+    {
+      "source": "episode:EP140",
+      "target": "concept:land-recycling-housing",
+      "kind": "episode-concept"
+    },
+    {
+      "source": "episode:EP140",
+      "target": "concept:pragmatic-legitimacy",
+      "kind": "episode-concept"
+    },
+    {
+      "source": "episode:EP140",
+      "target": "model:human-contract-model",
+      "kind": "episode-model"
+    },
+    {
+      "source": "episode:EP140",
+      "target": "model:institutional-fit",
+      "kind": "episode-model"
+    },
+    {
+      "source": "episode:EP140",
+      "target": "model:rule-anchored-small-state-model",
+      "kind": "episode-model"
+    },
+    {
+      "source": "episode:EP140",
+      "target": "person:lawrence-wong",
+      "kind": "episode-person"
+    },
+    {
+      "source": "episode:EP140",
+      "target": "person:lee-kuan-yew",
+      "kind": "episode-person"
+    },
+    {
+      "source": "episode:EP140",
+      "target": "theme:singapore-and-small-state-survival",
+      "kind": "episode-theme"
+    },
+    {
+      "source": "episode:EP140",
+      "target": "theme:small-state-balancing",
+      "kind": "episode-theme"
+    },
+    {
+      "source": "episode:EP140",
+      "target": "theme:human-value-and-state-credit",
+      "kind": "episode-theme"
+    },
+    {
+      "source": "episode:EP140",
+      "target": "theme:housing-burden-and-income-distribution",
       "kind": "episode-theme"
     },
     {

@@ -1,4 +1,14 @@
 {
+  "EP140": {
+    "bilibili": {
+      "platform": "bilibili",
+      "url": "https://www.bilibili.com/video/BV1dF5d6DEu1/?spm_id_from=333.788.top_right_bar_window_dynamic.content.click"
+    },
+    "youtube": {
+      "platform": "youtube",
+      "url": "https://www.youtube.com/watch?v=k1-Jd3CDtLQ"
+    }
+  },
   "EP139": {
     "bilibili": {
       "platform": "bilibili",
