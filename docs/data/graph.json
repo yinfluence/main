@@ -2,11 +2,11 @@
   "meta": {
     "title": "颖响力知识图谱",
     "subtitle": "节目、概念、模型、人物、主题之间的可视化连接网络",
-    "nodeCount": 497,
-    "linkCount": 1007,
+    "nodeCount": 498,
+    "linkCount": 1012,
     "typeCounts": {
       "model": 65,
-      "episode": 140,
+      "episode": 141,
       "concept": 140,
       "person": 61,
       "theme": 91
@@ -355,6 +355,17 @@
       "degree": 10
     },
     {
+      "id": "model:value-capture",
+      "key": "value-capture",
+      "label": "价值捕获",
+      "fullLabel": "价值捕获",
+      "type": "model",
+      "route": "models/value-capture",
+      "summary": "价值捕获模型强调商业链条中关键不只是创造了价值，而是谁真正留下了价值。",
+      "status": null,
+      "degree": 9
+    },
+    {
       "id": "theme:singapore-and-small-state-survival",
       "key": "singapore-and-small-state-survival",
       "label": "新加坡与小国生存术",
@@ -549,17 +560,6 @@
       "type": "model",
       "route": "models/rule-anchored-small-state-model",
       "summary": "小国要长期活下来，不能只靠地理好运，更要靠规则信誉、理性政府和可预期的制度自我约束。",
-      "status": null,
-      "degree": 8
-    },
-    {
-      "id": "model:value-capture",
-      "key": "value-capture",
-      "label": "价值捕获",
-      "fullLabel": "价值捕获",
-      "type": "model",
-      "route": "models/value-capture",
-      "summary": "价值捕获模型强调商业链条中关键不只是创造了价值，而是谁真正留下了价值。",
       "status": null,
       "degree": 8
     },
@@ -1950,6 +1950,17 @@
       "degree": 5
     },
     {
+      "id": "episode:EP141",
+      "key": "EP141",
+      "label": "EP141",
+      "fullLabel": "EP141 · “别让三星跑了”！丢了中国市场照样全球第一！它摸透了中国市场3个扎心秘密。【EP141】｜李嘉诚｜潘石屹｜Manus｜内卷陷阱｜零和博弈｜NAND｜OLED｜",
+      "type": "episode",
+      "route": "episodes/EP141",
+      "summary": "本期把“别让三星跑了”这句反讽口号放回“别让李嘉诚跑了”“别让潘石屹跑了”“别让马斯克跑了”的句式语境，认为三星家电退出中国只是表象，真正核心是它彻底摸透了中国消费市场的三个扎心秘密：第一，看穿手机和家电终端市场只剩“杀价内卷”的零和博弈，主动让出中低端、不再陪玩；第二，用利润格局证明出货量第一不等于利润第一——中国黑电净利润不到 5%、智能手机国产品牌净利润 3% 到 5%，而三星整体营业利润率 15% 以上、半导体超 30%；第三，从 C 端品牌转身 B 端产业巨头，把筹码全压在 DRAM、NAND、OLED 这些高壁垒环节，让中国终端品牌不管在前台怎么血拼，最终都要给三星交份子钱。节目最后判断：三星不是扎在中国市场上的剑，而是一面镜子，照出“不肯做长期逆周期研发、只靠假研发卷低价”的产业短板——把全球终端市场都卷下来，也只是给上游巨头做嫁衣。",
+      "status": "curated",
+      "degree": 5
+    },
+    {
       "id": "concept:subsidy-leverage-engine",
       "key": "subsidy-leverage-engine",
       "label": "补贴杠杆引擎",
@@ -1968,6 +1979,17 @@
       "type": "theme",
       "route": "themes/local-government-financialization",
       "summary": "讨论地方政府如何从传统招商者变成资本玩家，并把补贴、基金和估值故事捆到一起。",
+      "status": null,
+      "degree": 4
+    },
+    {
+      "id": "concept:price-war-trap",
+      "key": "price-war-trap",
+      "label": "低价竞争陷阱",
+      "fullLabel": "低价竞争陷阱",
+      "type": "concept",
+      "route": "concepts/price-war-trap",
+      "summary": "极致低价可以快速突袭，却可能在长期竞争中压缩技术升级、利润和战略空间。",
       "status": null,
       "degree": 4
     },
@@ -2379,13 +2401,13 @@
       "degree": 3
     },
     {
-      "id": "concept:price-war-trap",
-      "key": "price-war-trap",
-      "label": "低价竞争陷阱",
-      "fullLabel": "低价竞争陷阱",
-      "type": "concept",
-      "route": "concepts/price-war-trap",
-      "summary": "极致低价可以快速突袭，却可能在长期竞争中压缩技术升级、利润和战略空间。",
+      "id": "theme:price-war-and-precision-competition",
+      "key": "price-war-and-precision-competition",
+      "label": "低价竞争与精准打击",
+      "fullLabel": "低价竞争与精准打击",
+      "type": "theme",
+      "route": "themes/price-war-and-precision-competition",
+      "summary": "讨论卷低价与做精准高价值打击之间的差别，以及两种竞争逻辑背后的阶层思维。",
       "status": null,
       "degree": 3
     },
@@ -2595,6 +2617,28 @@
       "type": "person",
       "route": "people/luo-yonghao",
       "summary": "罗永浩是锤子科技创始人、创业者和直播电商公众人物，节目借他触发西贝争议中的外部质询和价格重估。",
+      "status": null,
+      "degree": 3
+    },
+    {
+      "id": "person:elon-musk",
+      "key": "elon-musk",
+      "label": "马斯克",
+      "fullLabel": "马斯克",
+      "type": "person",
+      "route": "people/elon-musk",
+      "summary": "马斯克是特斯拉和SpaceX等公司的核心科技企业家，节目借他观察技术资本叙事、AI泡沫和美国商业航天与国家体系的并行关系。",
+      "status": null,
+      "degree": 3
+    },
+    {
+      "id": "person:pan-shiyi",
+      "key": "pan-shiyi",
+      "label": "潘石屹",
+      "fullLabel": "潘石屹",
+      "type": "person",
+      "route": "people/pan-shiyi",
+      "summary": "潘石屹是 SOHO 中国联合创始人，节目借他讨论地产企业家如何在时间窗口、资本架构和退出纪律中处理周期风险。",
       "status": null,
       "degree": 3
     },
@@ -3039,17 +3083,6 @@
       "degree": 2
     },
     {
-      "id": "theme:price-war-and-precision-competition",
-      "key": "price-war-and-precision-competition",
-      "label": "低价竞争与精准打击",
-      "fullLabel": "低价竞争与精准打击",
-      "type": "theme",
-      "route": "themes/price-war-and-precision-competition",
-      "summary": "讨论卷低价与做精准高价值打击之间的差别，以及两种竞争逻辑背后的阶层思维。",
-      "status": null,
-      "degree": 2
-    },
-    {
       "id": "concept:legal-grey-zone",
       "key": "legal-grey-zone",
       "label": "法律灰区",
@@ -3358,17 +3391,6 @@
       "degree": 2
     },
     {
-      "id": "person:elon-musk",
-      "key": "elon-musk",
-      "label": "马斯克",
-      "fullLabel": "马斯克",
-      "type": "person",
-      "route": "people/elon-musk",
-      "summary": "马斯克是特斯拉和SpaceX等公司的核心科技企业家，节目借他观察技术资本叙事、AI泡沫和美国商业航天与国家体系的并行关系。",
-      "status": null,
-      "degree": 2
-    },
-    {
       "id": "person:mahsa-amini",
       "key": "mahsa-amini",
       "label": "玛莎·阿米尼",
@@ -3398,17 +3420,6 @@
       "type": "concept",
       "route": "concepts/dream-extinguishing",
       "summary": "以稳定和现实为名过早熄灭年轻人的热爱，会把安全感变成生命力的折损。",
-      "status": null,
-      "degree": 2
-    },
-    {
-      "id": "person:pan-shiyi",
-      "key": "pan-shiyi",
-      "label": "潘石屹",
-      "fullLabel": "潘石屹",
-      "type": "person",
-      "route": "people/pan-shiyi",
-      "summary": "潘石屹是 SOHO 中国联合创始人，节目借他讨论地产企业家如何在时间窗口、资本架构和退出纪律中处理周期风险。",
       "status": null,
       "degree": 2
     },
@@ -10325,6 +10336,31 @@
     {
       "source": "episode:EP140",
       "target": "theme:housing-burden-and-income-distribution",
+      "kind": "episode-theme"
+    },
+    {
+      "source": "episode:EP141",
+      "target": "concept:price-war-trap",
+      "kind": "episode-concept"
+    },
+    {
+      "source": "episode:EP141",
+      "target": "model:value-capture",
+      "kind": "episode-model"
+    },
+    {
+      "source": "episode:EP141",
+      "target": "person:pan-shiyi",
+      "kind": "episode-person"
+    },
+    {
+      "source": "episode:EP141",
+      "target": "person:elon-musk",
+      "kind": "episode-person"
+    },
+    {
+      "source": "episode:EP141",
+      "target": "theme:price-war-and-precision-competition",
       "kind": "episode-theme"
     },
     {
