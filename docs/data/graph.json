@@ -2,11 +2,11 @@
   "meta": {
     "title": "颖响力知识图谱",
     "subtitle": "节目、概念、模型、人物、主题之间的可视化连接网络",
-    "nodeCount": 498,
-    "linkCount": 1012,
+    "nodeCount": 499,
+    "linkCount": 1020,
     "typeCounts": {
       "model": 65,
-      "episode": 141,
+      "episode": 142,
       "concept": 140,
       "person": 61,
       "theme": 91
@@ -355,6 +355,17 @@
       "degree": 10
     },
     {
+      "id": "model:subsidy-capital-flywheel",
+      "key": "subsidy-capital-flywheel",
+      "label": "补贴资本飞轮",
+      "fullLabel": "补贴资本飞轮",
+      "type": "model",
+      "route": "models/subsidy-capital-flywheel",
+      "summary": "补贴资本飞轮解释地方财政、产业基金、企业估值和再融资如何互相放大。",
+      "status": null,
+      "degree": 9
+    },
+    {
       "id": "model:value-capture",
       "key": "value-capture",
       "label": "价值捕获",
@@ -529,17 +540,6 @@
       "summary": "本期围绕一名旅客在亚航航班上以“我是 China”和冒称南航空姐为话术大闹客舱的事件，区分真正维权与巨婴式撒泼。节目认为，这不是民族尊严或中外歧视问题，而是个人先破坏公共规则、再用国家身份为自己垫底的伪自信；真正的自信应建立在规则意识、换位思考、开放包容和能在任何空间里安顿自己的归属感上。",
       "status": "curated",
       "degree": 9
-    },
-    {
-      "id": "model:subsidy-capital-flywheel",
-      "key": "subsidy-capital-flywheel",
-      "label": "补贴资本飞轮",
-      "fullLabel": "补贴资本飞轮",
-      "type": "model",
-      "route": "models/subsidy-capital-flywheel",
-      "summary": "补贴资本飞轮解释地方财政、产业基金、企业估值和再融资如何互相放大。",
-      "status": null,
-      "degree": 8
     },
     {
       "id": "theme:big-government-and-incentive-reversal",
@@ -912,6 +912,17 @@
       "type": "episode",
       "route": "episodes/EP125",
       "summary": "本期从 35.97 亿元天价罚单切入，讨论的重点并不只是“哪家平台罚得最多”，而是借七家外卖平台的不同处罚结果，把食品安全、平台权力、转单黑产和层层转包的底层机制串成一条链。节目认为，拼多多之所以被顶格重罚，不只是因为问题店铺或交易额，而在于它既主动与转单平台深度合作，又出现了阻挠执法的行为；而整个行业真正可怕的地方，是消费者支付的高价在平台、幽灵店铺和转单系统里被层层截留，最后真正做货的黑作坊只拿到极低成本，食品安全和履约风险则一路向链条末端下沉。",
+      "status": "curated",
+      "degree": 8
+    },
+    {
+      "id": "episode:EP142",
+      "key": "EP142",
+      "label": "EP142",
+      "fullLabel": "EP142 · 宇树的高达与追觅的崩老头，他们玩的不是科技，是科技叙事！是爽文短剧！【EP142】｜载人机甲GD01｜王兴兴｜影视道具｜政府展示中心｜IPO估值锚｜引导基金｜俞浩｜天空工场｜",
+      "type": "episode",
+      "route": "episodes/EP142",
+      "summary": "本期把宇树发布 390 万一台的载人机甲 GD01 和追觅俞浩的天空工场基金放在同一条主线上分析，认为这两位年轻创业者真正在做的不是硬科技，而是把硬科技包装成爽文短剧——一种为政府引导基金、IPO 估值和新媒体话题量身定制的科技叙事。第一层戳穿 GD01 的核心难点不在两条腿走路或量产，量产难度低于一辆 10 万元新能源车，整个产品的真正用户不是工厂也不是消费者，而是文旅景区、科技馆和各地政府展示中心；它在公司层面的作用是给冲科创板的宇树打上“定义未来人机交互平台型工厂”标签，把原本 450 亿的估值锚拉到几百亿乃至上千亿。第二层把俞浩的玩法定位成把宇树这套展示型科技做成标准化流水线：天空工场基金里他只出 20%，剩下 80% 来自各地政府引导基金，再拆成 200 个事业部对标 200 条有话题的赛道，每个事业部都做漂亮可演示的产品，估值起来以后再用 51% 控股回追觅总公司合并报表，把扫地机器人公司硬撑成万亿科技巨头。最后一层把这种打法的源头追到当年清华控股——以身份和上市渠道交换 51% 股权、三四年从百亿做到千亿的经典剧本，并指出真正问题不是某一个人某一家公司，而是引导基金成为最大 LP、IPO 成为唯一退出、硬科技成为最政治正确赛道的产业生态——皇帝的新衣会一件接一件被做出来。",
       "status": "curated",
       "degree": 8
     },
@@ -1312,6 +1323,17 @@
       "degree": 6
     },
     {
+      "id": "theme:state-business-entanglement",
+      "key": "state-business-entanglement",
+      "label": "政企嵌入与企业存续",
+      "fullLabel": "政企嵌入与企业存续",
+      "type": "theme",
+      "route": "themes/state-business-entanglement",
+      "summary": "讨论企业如何依赖地方政府、国资平台或关系结构续命，以及这种绑定如何反过来改写企业目标。",
+      "status": null,
+      "degree": 6
+    },
+    {
       "id": "concept:balance-sheet-support",
       "key": "balance-sheet-support",
       "label": "资产负债表托底",
@@ -1664,6 +1686,17 @@
       "degree": 5
     },
     {
+      "id": "theme:narrative-speculation-and-retail-traps",
+      "key": "narrative-speculation-and-retail-traps",
+      "label": "投资叙事与散户陷阱",
+      "fullLabel": "投资叙事与散户陷阱",
+      "type": "theme",
+      "route": "themes/narrative-speculation-and-retail-traps",
+      "summary": "当市场热点先由故事驱动、再由散户接棒时，普通人最容易在高潮处接到最后一棒。",
+      "status": null,
+      "degree": 5
+    },
+    {
       "id": "concept:future-path-crowding",
       "key": "future-path-crowding",
       "label": "未来路径拥堵",
@@ -1682,17 +1715,6 @@
       "type": "model",
       "route": "models/political-embedded-enterprise",
       "summary": "企业一旦把自身命运深嵌进地方政府或国资体系，短期会更能续命，长期却更容易沦为政策工具。",
-      "status": null,
-      "degree": 5
-    },
-    {
-      "id": "theme:state-business-entanglement",
-      "key": "state-business-entanglement",
-      "label": "政企嵌入与企业存续",
-      "fullLabel": "政企嵌入与企业存续",
-      "type": "theme",
-      "route": "themes/state-business-entanglement",
-      "summary": "讨论企业如何依赖地方政府、国资平台或关系结构续命，以及这种绑定如何反过来改写企业目标。",
       "status": null,
       "degree": 5
     },
@@ -1994,6 +2016,17 @@
       "degree": 4
     },
     {
+      "id": "concept:premium-narrative",
+      "key": "premium-narrative",
+      "label": "高价叙事",
+      "fullLabel": "高价叙事",
+      "type": "concept",
+      "route": "concepts/premium-narrative",
+      "summary": "企业用定位、符号、方法论和品牌故事为高价格建立解释框架。",
+      "status": null,
+      "degree": 4
+    },
+    {
       "id": "person:sanae-takaichi",
       "key": "sanae-takaichi",
       "label": "高市早苗",
@@ -2089,17 +2122,6 @@
       "type": "model",
       "route": "models/screening-machine",
       "summary": "教育和组织把人当作待筛选样本，而非待生长的人来处理的系统逻辑。",
-      "status": null,
-      "degree": 4
-    },
-    {
-      "id": "theme:narrative-speculation-and-retail-traps",
-      "key": "narrative-speculation-and-retail-traps",
-      "label": "投资叙事与散户陷阱",
-      "fullLabel": "投资叙事与散户陷阱",
-      "type": "theme",
-      "route": "themes/narrative-speculation-and-retail-traps",
-      "summary": "当市场热点先由故事驱动、再由散户接棒时，普通人最容易在高潮处接到最后一棒。",
       "status": null,
       "degree": 4
     },
@@ -2456,17 +2478,6 @@
       "degree": 3
     },
     {
-      "id": "concept:premium-narrative",
-      "key": "premium-narrative",
-      "label": "高价叙事",
-      "fullLabel": "高价叙事",
-      "type": "concept",
-      "route": "concepts/premium-narrative",
-      "summary": "企业用定位、符号、方法论和品牌故事为高价格建立解释框架。",
-      "status": null,
-      "degree": 3
-    },
-    {
       "id": "concept:route-substitution-illusion",
       "key": "route-substitution-illusion",
       "label": "航线替代幻觉",
@@ -2808,6 +2819,17 @@
       "degree": 3
     },
     {
+      "id": "model:narrative-instrumentalization",
+      "key": "narrative-instrumentalization",
+      "label": "叙事工具化模型",
+      "fullLabel": "叙事工具化模型",
+      "type": "model",
+      "route": "models/narrative-instrumentalization",
+      "summary": "叙事工具化模型解释叙事的主要功能从解释现实转向组织情绪和划分阵营。",
+      "status": null,
+      "degree": 3
+    },
+    {
       "id": "model:prototype-production-decoupling",
       "key": "prototype-production-decoupling",
       "label": "样机量产脱钩",
@@ -2859,6 +2881,17 @@
       "type": "theme",
       "route": "themes/housing-burden-and-income-distribution",
       "summary": "讨论住房、税负和可支配收入之间的关系，尤其关注中低收入群体被抽走了多少上升空间。",
+      "status": null,
+      "degree": 3
+    },
+    {
+      "id": "theme:capital-packaging-and-credential-borrowing",
+      "key": "capital-packaging-and-credential-borrowing",
+      "label": "资本包装与身份背书",
+      "fullLabel": "资本包装与身份背书",
+      "type": "theme",
+      "route": "themes/capital-packaging-and-credential-borrowing",
+      "summary": "项目、企业和人物通过借用更高等级的身份和场面来获得额外信用。",
       "status": null,
       "degree": 3
     },
@@ -3046,6 +3079,17 @@
       "type": "concept",
       "route": "concepts/standard-labor-replacement",
       "summary": "自动化最先替代可重复、可规训、可量化的标准岗位，而这些岗位往往属于普通人。",
+      "status": null,
+      "degree": 2
+    },
+    {
+      "id": "concept:performative-innovation",
+      "key": "performative-innovation",
+      "label": "表演式创新",
+      "fullLabel": "表演式创新",
+      "type": "concept",
+      "route": "concepts/performative-innovation",
+      "summary": "表演式创新指项目主要为了完成指标、包装成果和争取扶持资金，而不以真实突破为中心。",
       "status": null,
       "degree": 2
     },
@@ -3677,17 +3721,6 @@
       "degree": 2
     },
     {
-      "id": "model:narrative-instrumentalization",
-      "key": "narrative-instrumentalization",
-      "label": "叙事工具化模型",
-      "fullLabel": "叙事工具化模型",
-      "type": "model",
-      "route": "models/narrative-instrumentalization",
-      "summary": "叙事工具化模型解释叙事的主要功能从解释现实转向组织情绪和划分阵营。",
-      "status": null,
-      "degree": 2
-    },
-    {
       "id": "theme:academic-bureaucracy-and-knowledge-decline",
       "key": "academic-bureaucracy-and-knowledge-decline",
       "label": "学术官僚化与知识退化",
@@ -3754,6 +3787,17 @@
       "degree": 2
     },
     {
+      "id": "concept:expectation-selling",
+      "key": "expectation-selling",
+      "label": "预期贩卖",
+      "fullLabel": "预期贩卖",
+      "type": "concept",
+      "route": "concepts/expectation-selling",
+      "summary": "通过出售可理解、可规划、可购买的未来想象，中间人获得影响力和收益。",
+      "status": null,
+      "degree": 2
+    },
+    {
       "id": "theme:war-system-and-succession-risk",
       "key": "war-system-and-succession-risk",
       "label": "战争体制与接班风险",
@@ -3794,17 +3838,6 @@
       "type": "concept",
       "route": "concepts/transfer-payment-dependency",
       "summary": "转移支付依赖指地方运转越来越靠上级财政输血，而不是靠本地产业和税源形成真实闭环。",
-      "status": null,
-      "degree": 2
-    },
-    {
-      "id": "theme:capital-packaging-and-credential-borrowing",
-      "key": "capital-packaging-and-credential-borrowing",
-      "label": "资本包装与身份背书",
-      "fullLabel": "资本包装与身份背书",
-      "type": "theme",
-      "route": "themes/capital-packaging-and-credential-borrowing",
-      "summary": "项目、企业和人物通过借用更高等级的身份和场面来获得额外信用。",
       "status": null,
       "degree": 2
     },
@@ -3915,17 +3948,6 @@
       "type": "concept",
       "route": "concepts/surface-modernity",
       "summary": "把现代化理解成高楼、道路和工程规模，会忽略制度、产业和生活体面的深层现代性。",
-      "status": null,
-      "degree": 1
-    },
-    {
-      "id": "concept:performative-innovation",
-      "key": "performative-innovation",
-      "label": "表演式创新",
-      "fullLabel": "表演式创新",
-      "type": "concept",
-      "route": "concepts/performative-innovation",
-      "summary": "表演式创新指项目主要为了完成指标、包装成果和争取扶持资金，而不以真实突破为中心。",
       "status": null,
       "degree": 1
     },
@@ -5301,17 +5323,6 @@
       "type": "person",
       "route": "people/yu-liang",
       "summary": "郁亮曾长期任万科核心管理层，节目借他观察职业经理人继承、内部金融平台和万科空心化风险。",
-      "status": null,
-      "degree": 1
-    },
-    {
-      "id": "concept:expectation-selling",
-      "key": "expectation-selling",
-      "label": "预期贩卖",
-      "fullLabel": "预期贩卖",
-      "type": "concept",
-      "route": "concepts/expectation-selling",
-      "summary": "通过出售可理解、可规划、可购买的未来想象，中间人获得影响力和收益。",
       "status": null,
       "degree": 1
     },
@@ -10361,6 +10372,46 @@
     {
       "source": "episode:EP141",
       "target": "theme:price-war-and-precision-competition",
+      "kind": "episode-theme"
+    },
+    {
+      "source": "episode:EP142",
+      "target": "concept:performative-innovation",
+      "kind": "episode-concept"
+    },
+    {
+      "source": "episode:EP142",
+      "target": "concept:premium-narrative",
+      "kind": "episode-concept"
+    },
+    {
+      "source": "episode:EP142",
+      "target": "concept:expectation-selling",
+      "kind": "episode-concept"
+    },
+    {
+      "source": "episode:EP142",
+      "target": "model:narrative-instrumentalization",
+      "kind": "episode-model"
+    },
+    {
+      "source": "episode:EP142",
+      "target": "model:subsidy-capital-flywheel",
+      "kind": "episode-model"
+    },
+    {
+      "source": "episode:EP142",
+      "target": "theme:state-business-entanglement",
+      "kind": "episode-theme"
+    },
+    {
+      "source": "episode:EP142",
+      "target": "theme:capital-packaging-and-credential-borrowing",
+      "kind": "episode-theme"
+    },
+    {
+      "source": "episode:EP142",
+      "target": "theme:narrative-speculation-and-retail-traps",
       "kind": "episode-theme"
     },
     {
