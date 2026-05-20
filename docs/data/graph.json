@@ -2,12 +2,12 @@
   "meta": {
     "title": "颖响力知识图谱",
     "subtitle": "节目、概念、模型、人物、主题之间的可视化连接网络",
-    "nodeCount": 499,
-    "linkCount": 1020,
+    "nodeCount": 504,
+    "linkCount": 1031,
     "typeCounts": {
-      "model": 65,
-      "episode": 142,
-      "concept": 140,
+      "model": 66,
+      "episode": 143,
+      "concept": 143,
       "person": 61,
       "theme": 91
     }
@@ -307,6 +307,17 @@
       "type": "episode",
       "route": "episodes/EP120",
       "summary": "本期围绕匈牙利大选展开，核心判断不是单纯的选举轮替，而是欧洲内部一次典型的“拆雷”成功。节目认为，这场胜利首先是年轻选民推动下的民意回归，其次才是地缘政治牌局里的再分配：欧盟拆掉了内部的一颗雷，俄罗斯和特朗普阵营则失去了一张能持续撬动欧洲裂缝的牌。",
+      "status": "curated",
+      "degree": 11
+    },
+    {
+      "id": "episode:EP143",
+      "key": "EP143",
+      "label": "EP143",
+      "fullLabel": "EP143 · 迪士尼父亲崩溃事件：清晰的产权意识与合格的家庭教育【EP143】",
+      "type": "episode",
+      "route": "episodes/EP143",
+      "summary": "本期围绕上海迪士尼五一期间一位父亲因为优速通用户优先进场、自己排队两小时仍未轮到而在工作人员面前崩溃大吼的视频，反对当下舆论两派——既不是讨论迪士尼搞阶级分化，也不是骂这位父亲玻璃心。节目把事件主线推到两件被普遍混淆的事：第一，优速通不是迪士尼独家发明，而是全球主题公园通行几十年的价格差异策略，其商业逻辑是让 15%-20% 的高付费用户为基础门票交叉补贴，否则普通游客的票价会更贵；第二，迪士尼是花钱建园、雇人运营、租地经营的私人商业场所，不是公共空间，产权归迪士尼，规则由产权方定，类比清真餐厅不让外带、汉族餐馆在回族聚居区只要不主动挑衅同样有权卖猪肉，宗教与个人情绪都不能凌驾在产权之上。但节目真正的落点在第三件事——全程站在父亲身边的孩子。父亲用大吼大叫向孩子示范了一套最危险的人生算法：规则不满足我时，闹得更凶就能让规则让步；得不到的东西就是不公平、就是别人的错；遇到问题不需要理性沟通，只需要情绪发泄。节目把这套示范定义为巨婴养成路径，并对照自己带孩子排队、解释规则、接受规则的真实做法，主张真正的勇敢是认清规则之后选择接受、努力改变或远离，而不是在规则面前撒泼耍赖。最后把视野拉回商业社会底层逻辑：清晰的产权边界是整个市场运行的基础，尊重别人的产权就是保护自己的产权。",
       "status": "curated",
       "degree": 11
     },
@@ -2016,6 +2027,17 @@
       "degree": 4
     },
     {
+      "id": "theme:rule-of-law-boundaries-and-social-trust",
+      "key": "rule-of-law-boundaries-and-social-trust",
+      "label": "法治边界与社会信任",
+      "fullLabel": "法治边界与社会信任",
+      "type": "theme",
+      "route": "themes/rule-of-law-boundaries-and-social-trust",
+      "summary": "关注法律灰区如何影响公众的善意、风险感和彼此信任。",
+      "status": null,
+      "degree": 4
+    },
+    {
       "id": "concept:premium-narrative",
       "key": "premium-narrative",
       "label": "高价叙事",
@@ -2412,6 +2434,17 @@
       "degree": 3
     },
     {
+      "id": "theme:growth-and-family-boundaries",
+      "key": "growth-and-family-boundaries",
+      "label": "成长与亲情边界",
+      "fullLabel": "成长与亲情边界",
+      "type": "theme",
+      "route": "themes/growth-and-family-boundaries",
+      "summary": "关注个体如何在亲情、权威和自我之间逐步建立成熟边界。",
+      "status": null,
+      "degree": 3
+    },
+    {
       "id": "model:discipline-failure-loop",
       "key": "discipline-failure-loop",
       "label": "惩戒失效循环模型",
@@ -2463,17 +2496,6 @@
       "type": "concept",
       "route": "concepts/jurisdiction-arbitrage",
       "summary": "企业通过选择更有利法域，获取融资、估值、合规和退出上的制度差价。",
-      "status": null,
-      "degree": 3
-    },
-    {
-      "id": "theme:rule-of-law-boundaries-and-social-trust",
-      "key": "rule-of-law-boundaries-and-social-trust",
-      "label": "法治边界与社会信任",
-      "fullLabel": "法治边界与社会信任",
-      "type": "theme",
-      "route": "themes/rule-of-law-boundaries-and-social-trust",
-      "summary": "关注法律灰区如何影响公众的善意、风险感和彼此信任。",
       "status": null,
       "degree": 3
     },
@@ -3061,6 +3083,17 @@
       "degree": 3
     },
     {
+      "id": "model:boundary-governance",
+      "key": "boundary-governance",
+      "label": "边界治理模型",
+      "fullLabel": "边界治理模型",
+      "type": "model",
+      "route": "models/boundary-governance",
+      "summary": "边界治理模型主张在不适、争议和明确伤害之间，先界定边界而非急于二分善恶。",
+      "status": null,
+      "degree": 2
+    },
+    {
       "id": "concept:standard-answer-cage",
       "key": "standard-answer-cage",
       "label": "标准答案牢笼",
@@ -3101,17 +3134,6 @@
       "type": "model",
       "route": "models/wealth-power-reproduction",
       "summary": "财富权力再生产解释财富如何借婚姻、生育、身份和关系重新转化为下一代权力。",
-      "status": null,
-      "degree": 2
-    },
-    {
-      "id": "theme:growth-and-family-boundaries",
-      "key": "growth-and-family-boundaries",
-      "label": "成长与亲情边界",
-      "fullLabel": "成长与亲情边界",
-      "type": "theme",
-      "route": "themes/growth-and-family-boundaries",
-      "summary": "关注个体如何在亲情、权威和自我之间逐步建立成熟边界。",
       "status": null,
       "degree": 2
     },
@@ -3204,6 +3226,17 @@
       "degree": 2
     },
     {
+      "id": "theme:public-space-and-civic-maturity",
+      "key": "public-space-and-civic-maturity",
+      "label": "公共空间与公民成熟",
+      "fullLabel": "公共空间与公民成熟",
+      "type": "theme",
+      "route": "themes/public-space-and-civic-maturity",
+      "summary": "讨论个体在公共场景里如何同时拥有权利意识、规则意识、义务感和稳定自尊。",
+      "status": null,
+      "degree": 2
+    },
+    {
       "id": "concept:corporate-identity-shift",
       "key": "corporate-identity-shift",
       "label": "公司身份迁移",
@@ -3233,6 +3266,17 @@
       "type": "theme",
       "route": "themes/homeland-and-civic-belonging",
       "summary": "讨论血缘故乡、文化记忆与现代公民认同之间的边界如何被重新划分。",
+      "status": null,
+      "degree": 2
+    },
+    {
+      "id": "model:rule-bounded-rights-defense",
+      "key": "rule-bounded-rights-defense",
+      "label": "规则边界型维权模型",
+      "fullLabel": "规则边界型维权模型",
+      "type": "model",
+      "route": "models/rule-bounded-rights-defense",
+      "summary": "规则边界型维权模型用权利基础和过程边界区分正当维权与撒泼勒索。",
       "status": null,
       "degree": 2
     },
@@ -3354,6 +3398,17 @@
       "type": "concept",
       "route": "concepts/signal-price-distortion",
       "summary": "价格本应用来传递供需信息，若被流量、叙事或行政力量改写，就会误导生产和消费。",
+      "status": null,
+      "degree": 2
+    },
+    {
+      "id": "concept:giant-infant-rights-defense",
+      "key": "giant-infant-rights-defense",
+      "label": "巨婴式维权",
+      "fullLabel": "巨婴式维权",
+      "type": "concept",
+      "route": "concepts/giant-infant-rights-defense",
+      "summary": "巨婴式维权指个体把个人便利和情绪包装成权利诉求，却拒绝承担规则、义务和公共后果。",
       "status": null,
       "degree": 2
     },
@@ -3629,6 +3684,17 @@
       "type": "concept",
       "route": "concepts/crisis-power-reallocation",
       "summary": "危机会改变谁在前台、谁承担责任、谁保留资源，从而触发权力位置的重新排序。",
+      "status": null,
+      "degree": 2
+    },
+    {
+      "id": "concept:pseudo-confidence",
+      "key": "pseudo-confidence",
+      "label": "伪自信",
+      "fullLabel": "伪自信",
+      "type": "concept",
+      "route": "concepts/pseudo-confidence",
+      "summary": "伪自信指看似强硬、实则依赖外界确认和攻击姿态来遮蔽内在不安的状态。",
       "status": null,
       "degree": 2
     },
@@ -3930,17 +3996,6 @@
       "degree": 1
     },
     {
-      "id": "model:boundary-governance",
-      "key": "boundary-governance",
-      "label": "边界治理模型",
-      "fullLabel": "边界治理模型",
-      "type": "model",
-      "route": "models/boundary-governance",
-      "summary": "边界治理模型主张在不适、争议和明确伤害之间，先界定边界而非急于二分善恶。",
-      "status": null,
-      "degree": 1
-    },
-    {
       "id": "concept:surface-modernity",
       "key": "surface-modernity",
       "label": "表层现代化",
@@ -3996,6 +4051,17 @@
       "degree": 1
     },
     {
+      "id": "model:property-defined-rule-domain",
+      "key": "property-defined-rule-domain",
+      "label": "产权定义规则域模型",
+      "fullLabel": "产权定义规则域模型",
+      "type": "model",
+      "route": "models/property-defined-rule-domain",
+      "summary": "产权定义规则域模型解释：一个空间里谁有权定规则、规则的合法范围在哪里、不接受规则的正确退出路径，都由这个空间的产权归属决定。",
+      "status": null,
+      "degree": 1
+    },
+    {
       "id": "theme:property-rights-and-cultural-plunder",
       "key": "property-rights-and-cultural-plunder",
       "label": "产权失序与文化掠夺",
@@ -4003,6 +4069,17 @@
       "type": "theme",
       "route": "themes/property-rights-and-cultural-plunder",
       "summary": "讨论当产权边界被模糊、托管责任被滥用时，文化资产如何从传承物变成可被随意处置的对象。",
+      "status": null,
+      "degree": 1
+    },
+    {
+      "id": "concept:property-boundary-literacy",
+      "key": "property-boundary-literacy",
+      "label": "产权意识",
+      "fullLabel": "产权意识",
+      "type": "concept",
+      "route": "concepts/property-boundary-literacy",
+      "summary": "产权意识指能够清晰区分公共场所与私人商业场所，并据此判断谁有权定规则、什么时候规则可以被挑战。",
       "status": null,
       "degree": 1
     },
@@ -4227,17 +4304,6 @@
       "degree": 1
     },
     {
-      "id": "theme:public-space-and-civic-maturity",
-      "key": "public-space-and-civic-maturity",
-      "label": "公共空间与公民成熟",
-      "fullLabel": "公共空间与公民成熟",
-      "type": "theme",
-      "route": "themes/public-space-and-civic-maturity",
-      "summary": "讨论个体在公共场景里如何同时拥有权利意识、规则意识、义务感和稳定自尊。",
-      "status": null,
-      "degree": 1
-    },
-    {
       "id": "theme:charity-and-moral-capital",
       "key": "charity-and-moral-capital",
       "label": "公益、善意与商业失灵",
@@ -4267,17 +4333,6 @@
       "type": "concept",
       "route": "concepts/audience-filter-labor",
       "summary": "用户以为自己在消费内容，实际上也在用停留、滑动、点赞和关注替平台筛选内容。",
-      "status": null,
-      "degree": 1
-    },
-    {
-      "id": "model:rule-bounded-rights-defense",
-      "key": "rule-bounded-rights-defense",
-      "label": "规则边界型维权模型",
-      "fullLabel": "规则边界型维权模型",
-      "type": "model",
-      "route": "models/rule-bounded-rights-defense",
-      "summary": "规则边界型维权模型用权利基础和过程边界区分正当维权与撒泼勒索。",
       "status": null,
       "degree": 1
     },
@@ -4469,6 +4524,17 @@
       "degree": 1
     },
     {
+      "id": "concept:cross-subsidy-pricing",
+      "key": "cross-subsidy-pricing",
+      "label": "交叉补贴式价格差异",
+      "fullLabel": "交叉补贴式价格差异",
+      "type": "concept",
+      "route": "concepts/cross-subsidy-pricing",
+      "summary": "交叉补贴式价格差异指在总容量有限的场景里，让一小部分高付费用户的超额利润反向补贴基础门票，使普通消费者实际受益。",
+      "status": null,
+      "degree": 1
+    },
+    {
       "id": "concept:succession-vacuum",
       "key": "succession-vacuum",
       "label": "接班人真空",
@@ -4487,17 +4553,6 @@
       "type": "person",
       "route": "people/jin-keyu",
       "summary": "金刻羽是香港科技大学金融学教授，节目借她在保利德夜宴叙事中的位置观察学术名片、官商想象和融资背书如何互相增信。",
-      "status": null,
-      "degree": 1
-    },
-    {
-      "id": "concept:giant-infant-rights-defense",
-      "key": "giant-infant-rights-defense",
-      "label": "巨婴式维权",
-      "fullLabel": "巨婴式维权",
-      "type": "concept",
-      "route": "concepts/giant-infant-rights-defense",
-      "summary": "巨婴式维权指个体把个人便利和情绪包装成权利诉求，却拒绝承担规则、义务和公共后果。",
       "status": null,
       "degree": 1
     },
@@ -4821,6 +4876,17 @@
       "degree": 1
     },
     {
+      "id": "concept:rule-breaking-parenting",
+      "key": "rule-breaking-parenting",
+      "label": "破规示范型育儿",
+      "fullLabel": "破规示范型育儿",
+      "type": "concept",
+      "route": "concepts/rule-breaking-parenting",
+      "summary": "破规示范型育儿指父母为了不让孩子受委屈，当众挑战或破坏公共规则，把巨婴算法当作家庭教育灌进孩子心里。",
+      "status": null,
+      "degree": 1
+    },
+    {
       "id": "theme:intimate-relationships-and-asset-repricing",
       "key": "intimate-relationships-and-asset-repricing",
       "label": "亲密关系与资产再定价",
@@ -5059,17 +5125,6 @@
       "type": "concept",
       "route": "concepts/land-recycling-housing",
       "summary": "土地循环住房指在土地稀缺的城市国家里，用有限租约和更新机制让住房资源跨代流动，而不是永久沉淀给先到的一代。",
-      "status": null,
-      "degree": 1
-    },
-    {
-      "id": "concept:pseudo-confidence",
-      "key": "pseudo-confidence",
-      "label": "伪自信",
-      "fullLabel": "伪自信",
-      "type": "concept",
-      "route": "concepts/pseudo-confidence",
-      "summary": "伪自信指看似强硬、实则依赖外界确认和攻击姿态来遮蔽内在不安的状态。",
       "status": null,
       "degree": 1
     },
@@ -10412,6 +10467,61 @@
     {
       "source": "episode:EP142",
       "target": "theme:narrative-speculation-and-retail-traps",
+      "kind": "episode-theme"
+    },
+    {
+      "source": "episode:EP143",
+      "target": "concept:giant-infant-rights-defense",
+      "kind": "episode-concept"
+    },
+    {
+      "source": "episode:EP143",
+      "target": "concept:pseudo-confidence",
+      "kind": "episode-concept"
+    },
+    {
+      "source": "episode:EP143",
+      "target": "concept:property-boundary-literacy",
+      "kind": "episode-concept"
+    },
+    {
+      "source": "episode:EP143",
+      "target": "concept:cross-subsidy-pricing",
+      "kind": "episode-concept"
+    },
+    {
+      "source": "episode:EP143",
+      "target": "concept:rule-breaking-parenting",
+      "kind": "episode-concept"
+    },
+    {
+      "source": "episode:EP143",
+      "target": "model:rule-bounded-rights-defense",
+      "kind": "episode-model"
+    },
+    {
+      "source": "episode:EP143",
+      "target": "model:boundary-governance",
+      "kind": "episode-model"
+    },
+    {
+      "source": "episode:EP143",
+      "target": "model:property-defined-rule-domain",
+      "kind": "episode-model"
+    },
+    {
+      "source": "episode:EP143",
+      "target": "theme:public-space-and-civic-maturity",
+      "kind": "episode-theme"
+    },
+    {
+      "source": "episode:EP143",
+      "target": "theme:rule-of-law-boundaries-and-social-trust",
+      "kind": "episode-theme"
+    },
+    {
+      "source": "episode:EP143",
+      "target": "theme:growth-and-family-boundaries",
       "kind": "episode-theme"
     },
     {
