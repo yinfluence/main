@@ -2,11 +2,11 @@
   "meta": {
     "title": "颖响力知识图谱",
     "subtitle": "节目、概念、模型、人物、主题之间的可视化连接网络",
-    "nodeCount": 504,
-    "linkCount": 1031,
+    "nodeCount": 505,
+    "linkCount": 1047,
     "typeCounts": {
       "model": 66,
-      "episode": 143,
+      "episode": 144,
       "concept": 143,
       "person": 61,
       "theme": 91
@@ -54,6 +54,17 @@
       "type": "episode",
       "route": "episodes/EP001",
       "summary": "本期借西贝与华与华的关系，讨论高价餐饮背后咨询成本、品牌符号、创始人权力结构与消费者买单之间的连锁关系。",
+      "status": "curated",
+      "degree": 16
+    },
+    {
+      "id": "episode:EP144",
+      "key": "EP144",
+      "label": "EP144",
+      "fullLabel": "EP144 · 普京访华聚焦哪些重点议题？帝国时代贸易马车困局如何打破！东南亚会是下一个引爆点？【EP144】",
+      "type": "episode",
+      "route": "episodes/EP144",
+      "summary": "本期借普京 5 月 19-20 日访华切入，把当下的俄罗斯放进一张“三面被围”的地图里看：西边欧盟正在变成铁板一块，南边伊朗这条生命线被美英联军和霍尔木兹封锁一同压住，东边只剩中国一个可以长期依靠的伙伴。节目从 5 月 9 日红场阅兵的反常现象起手——一辆重型坦克、一架步兵战车、一发远程导弹都没有出场，地面只剩徒步方阵，加上一个史无前例的“烈士遗孀方阵”，几十名俄乌战争阵亡者的妻子穿着丈夫军服走过红场，节目认为这更像集体葬礼而不是阅兵。背后是俄罗斯能用的重装备已经全部送往前线、军工系统在乌克兰无人机和分布式工厂模式下被反向消耗的现实。第二块是政治孤立：执政 15 年的匈牙利欧尔班败选，意味着俄罗斯在欧盟内部最后一道裂痕被焊死；同时川普的“新门罗主义”逼着欧盟自建 5 万人快速反应部队、把军费推向 GDP 2%，一个团结军事化的欧洲对俄罗斯是噩梦。第三块是南部生命线：美英联军对伊朗持续接近两个月的空中打击 + 伊朗封锁霍尔木兹 + 美军两个航母中队压境，可能切断俄罗斯绕过制裁的能源与零部件通道，北高加索的阿塞拜疆、格鲁吉亚、亚美尼亚也可能彻底倒向西方。节目把这一切串成一个《帝国时代》比喻——俄罗斯原来全球铺设的贸易马车线路被一道道墙切短，现在只剩中俄这条短线，只能靠加车、加频次维持。由此推出普京这次带 6 位副总理、8 位部长、1 位央行行长来华的真实诉求：扩大中俄贸易规模、推动“西伯利亚力量二号”天然气管道（年输 500 亿立方米）、半导体/AI/工业软件/航空航天等卡脖子技术研发合作、本币结算与金融体系互嵌。结尾把视野推向未来：欧洲和中东之后，全球地缘焦点将转向东南亚、南亚和中亚的部分地区，以及古巴这种独立经济体，这些会是中俄美下一轮掰手腕的核心通道。最后落到一条个人判断——在这个变化剧烈的时代，财富积累的关键是信息而不是经验，过去 40 年的经验该被扔掉，世界要重新被解读。",
       "status": "curated",
       "degree": 16
     },
@@ -120,6 +131,17 @@
       "type": "model",
       "route": "models/path-dependence",
       "summary": "路径依赖解释早期技术和叙事选择一旦成功，就会反过来限制后续转向更优路径。",
+      "status": null,
+      "degree": 13
+    },
+    {
+      "id": "person:donald-trump",
+      "key": "donald-trump",
+      "label": "特朗普",
+      "fullLabel": "特朗普",
+      "type": "person",
+      "route": "people/donald-trump",
+      "summary": "特朗普是美国共和党政治人物、第45任与第47任美国总统，节目借他观察美国战略收缩、成本转嫁和规则重定价。",
       "status": null,
       "degree": 13
     },
@@ -210,17 +232,6 @@
       "summary": "本期把灰色贸易从美元、黄金和大国战略拉回到最具体的运输工具：影子舰队。节目认为，影子舰队不是单一国家海军，也不是有统一指挥的海盗组织，而是一套脱离西方保险、认证、定位和船东透明规则的平行航运网络。它通过老旧油轮、换旗换名、AIS 静默、船对船转运、原产地文件和离岸服务，把被制裁的石油重新洗进全球贸易，并进一步支撑起绕开 SWIFT 的结算闭环。",
       "status": "curated",
       "degree": 13
-    },
-    {
-      "id": "person:donald-trump",
-      "key": "donald-trump",
-      "label": "特朗普",
-      "fullLabel": "特朗普",
-      "type": "person",
-      "route": "people/donald-trump",
-      "summary": "特朗普是美国共和党政治人物、第45任与第47任美国总统，节目借他观察美国战略收缩、成本转嫁和规则重定价。",
-      "status": null,
-      "degree": 12
     },
     {
       "id": "episode:EP130",
@@ -344,6 +355,17 @@
       "degree": 10
     },
     {
+      "id": "concept:chokepoint-leverage",
+      "key": "chokepoint-leverage",
+      "label": "咽喉杠杆",
+      "fullLabel": "咽喉杠杆",
+      "type": "concept",
+      "route": "concepts/chokepoint-leverage",
+      "summary": "控制海峡、运河和关键通道的人，往往能把地理位置转化成定价权、通行权和规则权。",
+      "status": null,
+      "degree": 10
+    },
+    {
       "id": "episode:EP006",
       "key": "EP006",
       "label": "EP006",
@@ -421,13 +443,13 @@
       "degree": 9
     },
     {
-      "id": "concept:chokepoint-leverage",
-      "key": "chokepoint-leverage",
-      "label": "咽喉杠杆",
-      "fullLabel": "咽喉杠杆",
-      "type": "concept",
-      "route": "concepts/chokepoint-leverage",
-      "summary": "控制海峡、运河和关键通道的人，往往能把地理位置转化成定价权、通行权和规则权。",
+      "id": "theme:sanctions-and-power-containment",
+      "key": "sanctions-and-power-containment",
+      "label": "制裁、遏制与集团竞争",
+      "fullLabel": "制裁、遏制与集团竞争",
+      "type": "theme",
+      "route": "themes/sanctions-and-power-containment",
+      "summary": "讨论制裁、门罗主义、海峡与联盟如何共同服务于压制对手集团的全球布局。",
       "status": null,
       "degree": 9
     },
@@ -553,6 +575,17 @@
       "degree": 9
     },
     {
+      "id": "theme:great-power-competition-and-strategic-time",
+      "key": "great-power-competition-and-strategic-time",
+      "label": "大国竞争与战略时间",
+      "fullLabel": "大国竞争与战略时间",
+      "type": "theme",
+      "route": "themes/great-power-competition-and-strategic-time",
+      "summary": "讨论战争、联盟和国家战略如何被时间窗口、社会成本和长期定力重新塑形。",
+      "status": null,
+      "degree": 8
+    },
+    {
       "id": "theme:big-government-and-incentive-reversal",
       "key": "big-government-and-incentive-reversal",
       "label": "大政府与激励反转",
@@ -597,13 +630,13 @@
       "degree": 8
     },
     {
-      "id": "theme:sanctions-and-power-containment",
-      "key": "sanctions-and-power-containment",
-      "label": "制裁、遏制与集团竞争",
-      "fullLabel": "制裁、遏制与集团竞争",
-      "type": "theme",
-      "route": "themes/sanctions-and-power-containment",
-      "summary": "讨论制裁、门罗主义、海峡与联盟如何共同服务于压制对手集团的全球布局。",
+      "id": "concept:sanction-containment",
+      "key": "sanction-containment",
+      "label": "制裁遏制",
+      "fullLabel": "制裁遏制",
+      "type": "concept",
+      "route": "concepts/sanction-containment",
+      "summary": "制裁的真正作用常常不是逼对手立刻认输，而是长期压低其外延空间、联动能力和做大速度。",
       "status": null,
       "degree": 8
     },
@@ -938,13 +971,35 @@
       "degree": 8
     },
     {
-      "id": "theme:great-power-competition-and-strategic-time",
-      "key": "great-power-competition-and-strategic-time",
-      "label": "大国竞争与战略时间",
-      "fullLabel": "大国竞争与战略时间",
+      "id": "model:proxy-containment-ring",
+      "key": "proxy-containment-ring",
+      "label": "代理围堵环",
+      "fullLabel": "代理围堵环",
+      "type": "model",
+      "route": "models/proxy-containment-ring",
+      "summary": "代理围堵环解释大国如何通过盟友、代理人和通道控制分摊成本、封堵对手。",
+      "status": null,
+      "degree": 7
+    },
+    {
+      "id": "theme:southeast-asia-fragmentation-and-bloc-competition",
+      "key": "southeast-asia-fragmentation-and-bloc-competition",
+      "label": "东南亚裂变与集团竞争",
+      "fullLabel": "东南亚裂变与集团竞争",
       "type": "theme",
-      "route": "themes/great-power-competition-and-strategic-time",
-      "summary": "讨论战争、联盟和国家战略如何被时间窗口、社会成本和长期定力重新塑形。",
+      "route": "themes/southeast-asia-fragmentation-and-bloc-competition",
+      "summary": "讨论东南亚如何从缓冲地带变成各方拉扯、重新站队和内部裂变并行发生的高风险区域。",
+      "status": null,
+      "degree": 7
+    },
+    {
+      "id": "model:regional-denial-model",
+      "key": "regional-denial-model",
+      "label": "区域拒止模型",
+      "fullLabel": "区域拒止模型",
+      "type": "model",
+      "route": "models/regional-denial-model",
+      "summary": "真正有效的区域拒止，不是无上限扩张，而是把对手压在若干区域里，阻止其形成全球联动能力。",
       "status": null,
       "degree": 7
     },
@@ -956,17 +1011,6 @@
       "type": "model",
       "route": "models/principal-agent",
       "summary": "委托代理模型解释外部顾问或职业代理人的激励，未必与委托方长期价值一致。",
-      "status": null,
-      "degree": 7
-    },
-    {
-      "id": "concept:sanction-containment",
-      "key": "sanction-containment",
-      "label": "制裁遏制",
-      "fullLabel": "制裁遏制",
-      "type": "concept",
-      "route": "concepts/sanction-containment",
-      "summary": "制裁的真正作用常常不是逼对手立刻认输，而是长期压低其外延空间、联动能力和做大速度。",
       "status": null,
       "degree": 7
     },
@@ -1235,28 +1279,6 @@
       "degree": 6
     },
     {
-      "id": "model:proxy-containment-ring",
-      "key": "proxy-containment-ring",
-      "label": "代理围堵环",
-      "fullLabel": "代理围堵环",
-      "type": "model",
-      "route": "models/proxy-containment-ring",
-      "summary": "代理围堵环解释大国如何通过盟友、代理人和通道控制分摊成本、封堵对手。",
-      "status": null,
-      "degree": 6
-    },
-    {
-      "id": "theme:southeast-asia-fragmentation-and-bloc-competition",
-      "key": "southeast-asia-fragmentation-and-bloc-competition",
-      "label": "东南亚裂变与集团竞争",
-      "fullLabel": "东南亚裂变与集团竞争",
-      "type": "theme",
-      "route": "themes/southeast-asia-fragmentation-and-bloc-competition",
-      "summary": "讨论东南亚如何从缓冲地带变成各方拉扯、重新站队和内部裂变并行发生的高风险区域。",
-      "status": null,
-      "degree": 6
-    },
-    {
       "id": "model:distributed-innovation",
       "key": "distributed-innovation",
       "label": "分布式创新",
@@ -1275,17 +1297,6 @@
       "type": "concept",
       "route": "concepts/phantom-growth",
       "summary": "系统通过报表、交易、融资和场面把增长做出来，但真实产业和真实利润并没有同步长出来。",
-      "status": null,
-      "degree": 6
-    },
-    {
-      "id": "model:regional-denial-model",
-      "key": "regional-denial-model",
-      "label": "区域拒止模型",
-      "fullLabel": "区域拒止模型",
-      "type": "model",
-      "route": "models/regional-denial-model",
-      "summary": "真正有效的区域拒止，不是无上限扩张，而是把对手压在若干区域里，阻止其形成全球联动能力。",
       "status": null,
       "degree": 6
     },
@@ -1660,6 +1671,17 @@
       "type": "concept",
       "route": "concepts/unfinished-vehicle",
       "summary": "交付完成并不等于产品完成，品牌、售后、配件和残值体系先崩时，汽车会变成难以退出的烂尾资产。",
+      "status": null,
+      "degree": 5
+    },
+    {
+      "id": "theme:dollar-system-and-gray-trade",
+      "key": "dollar-system-and-gray-trade",
+      "label": "美元体系与灰色贸易",
+      "fullLabel": "美元体系与灰色贸易",
+      "type": "theme",
+      "route": "themes/dollar-system-and-gray-trade",
+      "summary": "讨论石油美元的真实脆弱点，究竟藏在公开统计之外的哪些灰色交易链条里。",
       "status": null,
       "degree": 5
     },
@@ -2071,6 +2093,17 @@
       "degree": 4
     },
     {
+      "id": "concept:gray-oil-network",
+      "key": "gray-oil-network",
+      "label": "灰色石油网络",
+      "fullLabel": "灰色石油网络",
+      "type": "concept",
+      "route": "concepts/gray-oil-network",
+      "summary": "绕开正规结算和监管的石油流动，会在影子体系中重塑货币、制裁和地缘利益。",
+      "status": null,
+      "degree": 4
+    },
+    {
       "id": "person:jia-guolong",
       "key": "jia-guolong",
       "label": "贾国龙",
@@ -2078,17 +2111,6 @@
       "type": "person",
       "route": "people/jia-guolong",
       "summary": "贾国龙是西贝餐饮集团创始人、董事长，节目借他观察连锁餐饮的创始人权威、品牌溢价和标准化供给争议。",
-      "status": null,
-      "degree": 4
-    },
-    {
-      "id": "theme:dollar-system-and-gray-trade",
-      "key": "dollar-system-and-gray-trade",
-      "label": "美元体系与灰色贸易",
-      "fullLabel": "美元体系与灰色贸易",
-      "type": "theme",
-      "route": "themes/dollar-system-and-gray-trade",
-      "summary": "讨论石油美元的真实脆弱点，究竟藏在公开统计之外的哪些灰色交易链条里。",
       "status": null,
       "degree": 4
     },
@@ -2221,6 +2243,17 @@
       "type": "person",
       "route": "people/zhang-xuefeng",
       "summary": "张雪峰（张子彪，1984-2026）是考研与升学规划领域的公众人物，节目借他观察教育焦虑、安全阀和稳定路径叙事。",
+      "status": null,
+      "degree": 4
+    },
+    {
+      "id": "model:sanction-parallel-market",
+      "key": "sanction-parallel-market",
+      "label": "制裁平行市场模型",
+      "fullLabel": "制裁平行市场模型",
+      "type": "model",
+      "route": "models/sanction-parallel-market",
+      "summary": "制裁如果没有消灭需求，就会把交易推向更高风险、更高利润、更难监管的平行市场。",
       "status": null,
       "degree": 4
     },
@@ -2533,17 +2566,6 @@
       "degree": 3
     },
     {
-      "id": "concept:gray-oil-network",
-      "key": "gray-oil-network",
-      "label": "灰色石油网络",
-      "fullLabel": "灰色石油网络",
-      "type": "concept",
-      "route": "concepts/gray-oil-network",
-      "summary": "绕开正规结算和监管的石油流动，会在影子体系中重塑货币、制裁和地缘利益。",
-      "status": null,
-      "degree": 3
-    },
-    {
       "id": "model:technology-wave-cycle",
       "key": "technology-wave-cycle",
       "label": "技术浪潮周期",
@@ -2694,6 +2716,17 @@
       "type": "theme",
       "route": "themes/platform-traffic-and-price-distortion",
       "summary": "当平台把巨量流量集中到极少数节点，价格、信誉和真伪判断都会开始向流量中心倾斜。",
+      "status": null,
+      "degree": 3
+    },
+    {
+      "id": "person:vladimir-putin",
+      "key": "vladimir-putin",
+      "label": "普京",
+      "fullLabel": "普京",
+      "type": "person",
+      "route": "people/vladimir-putin",
+      "summary": "普京是俄罗斯总统，节目借他讨论战争体制、长期执政、接班真空和战略纵深在无人机时代的反转。",
       "status": null,
       "degree": 3
     },
@@ -2885,13 +2918,13 @@
       "degree": 3
     },
     {
-      "id": "model:sanction-parallel-market",
-      "key": "sanction-parallel-market",
-      "label": "制裁平行市场模型",
-      "fullLabel": "制裁平行市场模型",
-      "type": "model",
-      "route": "models/sanction-parallel-market",
-      "summary": "制裁如果没有消灭需求，就会把交易推向更高风险、更高利润、更难监管的平行市场。",
+      "id": "theme:war-system-and-succession-risk",
+      "key": "war-system-and-succession-risk",
+      "label": "战争体制与接班风险",
+      "fullLabel": "战争体制与接班风险",
+      "type": "theme",
+      "route": "themes/war-system-and-succession-risk",
+      "summary": "讨论战争国家在长期高压运转下，如何同时面临兵员枯竭、内部老化与接班断层。",
       "status": null,
       "degree": 3
     },
@@ -3178,6 +3211,28 @@
       "type": "model",
       "route": "models/non-monetary-legacy",
       "summary": "非货币遗产强调一个人留下的价值，可能是持续改变了多少人的人生轨迹。",
+      "status": null,
+      "degree": 2
+    },
+    {
+      "id": "concept:distributed-war-industry",
+      "key": "distributed-war-industry",
+      "label": "分布式战时工业",
+      "fullLabel": "分布式战时工业",
+      "type": "concept",
+      "route": "concepts/distributed-war-industry",
+      "summary": "战时生产越能分散到多主体、多地点和快速反馈链条里，越不容易被固定打击瘫痪。",
+      "status": null,
+      "degree": 2
+    },
+    {
+      "id": "model:distributed-warfare-system",
+      "key": "distributed-warfare-system",
+      "label": "分布式战争系统",
+      "fullLabel": "分布式战争系统",
+      "type": "model",
+      "route": "models/distributed-warfare-system",
+      "summary": "分布式战争系统解释无人装备、分散生产、前线反馈和外部供给如何组合成长期战争优势。",
       "status": null,
       "degree": 2
     },
@@ -3534,17 +3589,6 @@
       "degree": 2
     },
     {
-      "id": "person:vladimir-putin",
-      "key": "vladimir-putin",
-      "label": "普京",
-      "fullLabel": "普京",
-      "type": "person",
-      "route": "people/vladimir-putin",
-      "summary": "普京是俄罗斯总统，节目借他讨论战争体制、长期执政、接班真空和战略纵深在无人机时代的反转。",
-      "status": null,
-      "degree": 2
-    },
-    {
       "id": "concept:human-centered-contract",
       "key": "human-centered-contract",
       "label": "人本契约",
@@ -3864,13 +3908,13 @@
       "degree": 2
     },
     {
-      "id": "theme:war-system-and-succession-risk",
-      "key": "war-system-and-succession-risk",
-      "label": "战争体制与接班风险",
-      "fullLabel": "战争体制与接班风险",
-      "type": "theme",
-      "route": "themes/war-system-and-succession-risk",
-      "summary": "讨论战争国家在长期高压运转下，如何同时面临兵员枯竭、内部老化与接班断层。",
+      "id": "concept:strategic-depth-inversion",
+      "key": "strategic-depth-inversion",
+      "label": "战略纵深反转",
+      "fullLabel": "战略纵深反转",
+      "type": "concept",
+      "route": "concepts/strategic-depth-inversion",
+      "summary": "长航程无人系统让传统纵深从缓冲优势变成固定资产暴露和防护成本。",
       "status": null,
       "degree": 2
     },
@@ -4212,28 +4256,6 @@
       "type": "concept",
       "route": "concepts/truth-indifferent-rhetoric",
       "summary": "话术若只追求立场效果和情绪动员，就会对真假本身变得冷漠。",
-      "status": null,
-      "degree": 1
-    },
-    {
-      "id": "concept:distributed-war-industry",
-      "key": "distributed-war-industry",
-      "label": "分布式战时工业",
-      "fullLabel": "分布式战时工业",
-      "type": "concept",
-      "route": "concepts/distributed-war-industry",
-      "summary": "战时生产越能分散到多主体、多地点和快速反馈链条里，越不容易被固定打击瘫痪。",
-      "status": null,
-      "degree": 1
-    },
-    {
-      "id": "model:distributed-warfare-system",
-      "key": "distributed-warfare-system",
-      "label": "分布式战争系统",
-      "fullLabel": "分布式战争系统",
-      "type": "model",
-      "route": "models/distributed-warfare-system",
-      "summary": "分布式战争系统解释无人装备、分散生产、前线反馈和外部供给如何组合成长期战争优势。",
       "status": null,
       "degree": 1
     },
@@ -5400,17 +5422,6 @@
       "type": "person",
       "route": "people/james-scott",
       "summary": "詹姆斯·斯科特是研究弱者日常抵抗和国家可读性的学者，节目借《弱者的武器》解释躺平的非组织化抵抗意义。",
-      "status": null,
-      "degree": 1
-    },
-    {
-      "id": "concept:strategic-depth-inversion",
-      "key": "strategic-depth-inversion",
-      "label": "战略纵深反转",
-      "fullLabel": "战略纵深反转",
-      "type": "concept",
-      "route": "concepts/strategic-depth-inversion",
-      "summary": "长航程无人系统让传统纵深从缓冲优势变成固定资产暴露和防护成本。",
       "status": null,
       "degree": 1
     },
@@ -10522,6 +10533,86 @@
     {
       "source": "episode:EP143",
       "target": "theme:growth-and-family-boundaries",
+      "kind": "episode-theme"
+    },
+    {
+      "source": "episode:EP144",
+      "target": "concept:strategic-depth-inversion",
+      "kind": "episode-concept"
+    },
+    {
+      "source": "episode:EP144",
+      "target": "concept:distributed-war-industry",
+      "kind": "episode-concept"
+    },
+    {
+      "source": "episode:EP144",
+      "target": "concept:sanction-containment",
+      "kind": "episode-concept"
+    },
+    {
+      "source": "episode:EP144",
+      "target": "concept:gray-oil-network",
+      "kind": "episode-concept"
+    },
+    {
+      "source": "episode:EP144",
+      "target": "concept:chokepoint-leverage",
+      "kind": "episode-concept"
+    },
+    {
+      "source": "episode:EP144",
+      "target": "model:distributed-warfare-system",
+      "kind": "episode-model"
+    },
+    {
+      "source": "episode:EP144",
+      "target": "model:proxy-containment-ring",
+      "kind": "episode-model"
+    },
+    {
+      "source": "episode:EP144",
+      "target": "model:sanction-parallel-market",
+      "kind": "episode-model"
+    },
+    {
+      "source": "episode:EP144",
+      "target": "model:regional-denial-model",
+      "kind": "episode-model"
+    },
+    {
+      "source": "episode:EP144",
+      "target": "person:vladimir-putin",
+      "kind": "episode-person"
+    },
+    {
+      "source": "episode:EP144",
+      "target": "person:donald-trump",
+      "kind": "episode-person"
+    },
+    {
+      "source": "episode:EP144",
+      "target": "theme:war-system-and-succession-risk",
+      "kind": "episode-theme"
+    },
+    {
+      "source": "episode:EP144",
+      "target": "theme:great-power-competition-and-strategic-time",
+      "kind": "episode-theme"
+    },
+    {
+      "source": "episode:EP144",
+      "target": "theme:sanctions-and-power-containment",
+      "kind": "episode-theme"
+    },
+    {
+      "source": "episode:EP144",
+      "target": "theme:dollar-system-and-gray-trade",
+      "kind": "episode-theme"
+    },
+    {
+      "source": "episode:EP144",
+      "target": "theme:southeast-asia-fragmentation-and-bloc-competition",
       "kind": "episode-theme"
     },
     {
