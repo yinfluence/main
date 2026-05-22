@@ -517,7 +517,7 @@ function animateFocus(center, satellites) {
         el.style.pointerEvents = 'auto';
         return;
       }
-      el.setAttribute('opacity', 0.9 - 0.78 * e);
+      el.setAttribute('opacity', 0.9 - 0.85 * e);
       el.style.pointerEvents = 'none'; // dimmed skeletons must not intercept satellite clicks
     });
     skeletonLabels.forEach((el, i) => {
@@ -527,7 +527,8 @@ function animateFocus(center, satellites) {
         el.style.pointerEvents = 'auto';
         return;
       }
-      el.setAttribute('opacity', 0.9 - 0.82 * e);
+      // Hide background labels entirely so the focused fan-out reads clearly.
+      el.setAttribute('opacity', 0.9 - 0.9 * e);
       el.style.pointerEvents = 'none';
     });
 
