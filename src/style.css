@@ -3753,6 +3753,27 @@ a.chip:active {
   margin-top: 10px;
 }
 
+.episode-publish-meta {
+  margin: 6px 0 4px;
+  font-size: 13px;
+  color: var(--color-text-muted, #6b7280);
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  align-items: baseline;
+}
+
+.episode-publish-relative {
+  color: var(--color-text-muted, #6b7280);
+  opacity: 0.85;
+}
+
+.episode-kicker-time {
+  color: var(--color-text-muted, #6b7280);
+  font-weight: normal;
+  margin-left: 4px;
+}
+
 .media-chip {
   position: relative;
   display: inline-flex;

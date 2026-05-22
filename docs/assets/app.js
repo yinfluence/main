@@ -1,4 +1,4 @@
-import { destroyGraphView, renderGraphView } from './graph-view.js?v=1779456434836';
+import { destroyGraphView, renderGraphView } from './graph-view.js?v=1779466957347';
 
 const app = document.getElementById('app');
 const sidebar = document.getElementById('sidebar');
@@ -25,6 +25,24 @@ const HOME_PLATFORM_LINKS = [
   }
 ];
 const WEBSITE_LOG_ENTRIES = [
+  {
+    date: '2026-05-22',
+    title: '节目发布时间显示',
+    items: [
+      '节目详情页标题下新增发布时间一行，按 `publishedAt` 字段显示绝对日期，例如“发布于 2026-04-10”。',
+      '同一行附带相对时间描述，今天、昨天、前天会用自然语言，再远一点会写成几天前、几周前、几个月前、几年前发布。',
+      '首页节目卡片的 EP 编号旁也接入同一相对时间，未达到“新”徽章阈值时不再显示“已整理／待整理”状态文字。'
+    ]
+  },
+  {
+    date: '2026-05-22',
+    title: '知识图谱重做为同心环 V2',
+    items: [
+      '知识图谱整体替换为同心环 V2 布局，中心节点向外按连接强度排列，相邻节点和卫星标签都围绕中心节点排开，减少重叠。',
+      '图谱页面布局调整：搜索移到左上、图例移到右下，去掉底部冗余使用提示；卫星标签放大到 15px 加粗，沿径向向外排版并交错偏移避免相互压字。',
+      '聚焦模式下，隐藏被压暗的骨架标签；鼠标悬停时，会把命中节点提到顶层，并只压暗与其包围盒重叠的邻居，避免大面积闪烁触发头痛。'
+    ]
+  },
   {
     date: '2026-05-15',
     title: '新增 EP140 新加坡国家信用与组屋租约整理',
@@ -3313,9 +3331,17 @@ function renderVideoLinkIcon(link) {
 function renderEpisodeHeaderMeta(episode) {
   const videoLinks = Array.isArray(episode.videoLinks) ? episode.videoLinks : [];
   const tags = episode.tags || [];
-  if (!videoLinks.length && !tags.length) return '';
+  const absoluteDate = formatAbsolutePublishDate(episode.publishedAt);
+  const relativeText = formatRelativePublishTime(episode.publishedAt);
+  if (!videoLinks.length && !tags.length && !absoluteDate) return '';
 
   return `
+    ${absoluteDate ? `
+      <p class="episode-publish-meta">
+        <span class="episode-publish-date">发布于 ${escapeHtml(absoluteDate)}</span>
+        ${relativeText ? `<span class="episode-publish-relative">· ${escapeHtml(relativeText)}</span>` : ''}
+      </p>
+    ` : ''}
     ${tags.length ? `
       <div class="chip-row episode-header-meta">
         ${renderLinkedChipItems('keywords', tags, site.keywords)}
@@ -4667,10 +4693,41 @@ function renderEpisodeFreshBadge(episode, { compact = false } = {}) {
   return `<span class="episode-fresh-badge${compact ? ' compact' : ''}">新</span>`;
 }
 
+function formatRelativePublishTime(publishedAt) {
+  if (!publishedAt) return '';
+  const time = new Date(publishedAt).getTime();
+  if (!Number.isFinite(time)) return '';
+  const now = Date.now();
+  const diffMs = now - time;
+  if (diffMs < 0) return '即将发布';
+  const day = 24 * 60 * 60 * 1000;
+  const diffDays = Math.floor(diffMs / day);
+  if (diffDays === 0) return '今天发布';
+  if (diffDays === 1) return '昨天发布';
+  if (diffDays === 2) return '前天发布';
+  if (diffDays < 7) return `${diffDays} 天前发布`;
+  if (diffDays < 30) return `${Math.floor(diffDays / 7)} 周前发布`;
+  if (diffDays < 365) return `${Math.floor(diffDays / 30)} 个月前发布`;
+  return `${Math.floor(diffDays / 365)} 年前发布`;
+}
+
+function formatAbsolutePublishDate(publishedAt) {
+  if (!publishedAt) return '';
+  const date = new Date(publishedAt);
+  if (Number.isNaN(date.getTime())) return '';
+  const y = date.getFullYear();
+  const m = String(date.getMonth() + 1).padStart(2, '0');
+  const d = String(date.getDate()).padStart(2, '0');
+  return `${y}-${m}-${d}`;
+}
+
 function renderHomeEpisodeKickerMeta(episode) {
+  const relativeText = formatRelativePublishTime(episode.publishedAt);
   if (isEpisodeFresh(episode)) {
-    return renderEpisodeFreshBadge(episode, { compact: true });
+    const badge = renderEpisodeFreshBadge(episode, { compact: true });
+    return relativeText ? `${badge} <span class="episode-kicker-time">· ${escapeHtml(relativeText)}</span>` : badge;
   }
+  if (relativeText) return `<span class="episode-kicker-time">· ${escapeHtml(relativeText)}</span>`;
   return episode.curated ? '· 已整理' : '· 待整理';
 }
 
