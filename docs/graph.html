@@ -475,12 +475,12 @@ function animateFocus(center, satellites) {
 
     const t = document.createElementNS(NS, 'text');
     t.setAttribute('text-anchor', 'middle');
-    t.setAttribute('font-size', 12);
+    t.setAttribute('font-size', 15);
     t.setAttribute('font-weight', '600');
     t.setAttribute('fill', '#2e2418');
     t.setAttribute('paint-order', 'stroke');
     t.setAttribute('stroke', 'rgba(251,247,239,0.98)');
-    t.setAttribute('stroke-width', 3.2);
+    t.setAttribute('stroke-width', 4);
     t.textContent = node.label;
     t.style.cursor = 'pointer';
     t.addEventListener('click', (e) => { e.stopPropagation(); focusNode(node.id); });
