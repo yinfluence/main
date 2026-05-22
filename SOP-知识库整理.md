@@ -501,6 +501,22 @@ SOP 修改权限：
 - 是否出现禁用栏目名：“为什么重要”“使用边界”“相关节点”“进一步追问”？
 - 是否能让不了解该词的读者获得基础理解，同时看懂它和颖响力节目的联系？
 
+## 双向引用同步规则（concepts / models / themes）
+
+新节目写入时，最常见的隐性缺陷是**单向引用断裂**：
+`content/episodes/EPxxx.json` 的 `concepts / models / themes` 数组里写了 `moral-capital` 这种 ID，但对应的 `content/concepts/moral-capital.json` 的 `episodes` 数组里没有把 `EPxxx` 写回去。
+结果：图谱链接是双向的（build 时两边都注册），但**概念/模型/主题详情页**只渲染该词条 JSON 里的 `episodes` 数组——前台会出现"该概念明明被 EP145 用了，详情页却只列 EP070"的断裂。
+
+硬规则：
+
+- 节目 JSON 的 `concepts / models / themes` 里每写一个 ID，**必须同步**到对应词条 JSON 的 `episodes` 数组里。落库前自检，不能依赖构建脚本兜底。
+- 同步条目格式：`{ "id": "EPxxx", "note": "这期怎样使用该 concept/model/theme，1-2 句话" }`。`note` 不许留空——空 `note` 等于把读者推回去翻原 EP，违背了"详情页要替读者回答'为什么和这一期相关'"的目的。
+- 概念/模型/主题 JSON 的 `episodes` 数组按 EP 编号升序排列。
+- 一次性历史同步（2026-05-22 已完成）补的是空 `note` 占位条目，**必须后续逐条回写真实 `note`**；不是补完就完事。回写顺序按 EP 新旧倒序、按 `note` 空缺数量优先。
+- 审计命令：`python3 -c "...扫 episode.<field> vs <kind>/<id>.episodes 缺漏..."`（参考 `/tmp/sync_backlinks.py`）。每次新写一期节目，落库前跑一次审计，缺漏数应为 0。
+
+为什么不让 build 脚本自动合并：build 里合并出来的"相关 EP"没有 `note`，前台无从展示"为什么相关"。`note` 是人工策展，必须沉淀回源 JSON，不能放进运行时。
+
 ## 节目条目字段规范
 
 每个节目 JSON 至少包含：
