@@ -5370,16 +5370,8 @@ function renderHome(focusSectionId = '') {
 }
 
 function renderGraphPage() {
-  if (!graphData) {
-    renderNotFound('知识图谱数据尚未生成，请先执行构建。');
-    return;
-  }
-
-  renderGraphView({
-    container: app,
-    graph: graphData,
-    toHash: routeTo
-  });
+  // 知识图谱已替换为独立页面 (./graph.html)
+  window.location.replace('./graph.html');
 }
 
 function renderEpisodeIndex() {
