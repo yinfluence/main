@@ -635,44 +635,17 @@ function navigate(routeOrNode) {
   window.location.href = './index.html#/' + route;
 }
 
-// === Hover emphasis: raise hovered element to top, dim everyone else ===
-const HOVER_DIM_RATIO = 0.25;
+// === Hover emphasis: only raise hovered element to top (no opacity changes — avoids flicker) ===
 function emphasizeHover(nodeId) {
-  clearHoverEmphasis();
   if (!nodeId) return;
   const layers = [nodeLayer, labelLayer, satelliteLayer];
   for (const layer of layers) {
     if (!layer) continue;
-    const all = layer.querySelectorAll('[data-node-id]');
-    for (const el of all) {
-      if (el.dataset.hoverSaved == null) {
-        el.dataset.hoverSaved = el.getAttribute('opacity') || '1';
-      }
-    }
-    for (const el of all) {
-      const op = +el.dataset.hoverSaved;
-      if (el.dataset.nodeId === nodeId) {
-        el.setAttribute('opacity', 1);
-        layer.appendChild(el); // raise to top of layer
-      } else {
-        el.setAttribute('opacity', op * HOVER_DIM_RATIO);
-      }
-    }
+    const matches = layer.querySelectorAll(`[data-node-id="${CSS.escape(nodeId)}"]`);
+    for (const el of matches) layer.appendChild(el);
   }
 }
-function clearHoverEmphasis() {
-  const layers = [nodeLayer, labelLayer, satelliteLayer];
-  for (const layer of layers) {
-    if (!layer) continue;
-    const all = layer.querySelectorAll('[data-node-id]');
-    for (const el of all) {
-      if (el.dataset.hoverSaved != null) {
-        el.setAttribute('opacity', el.dataset.hoverSaved);
-        delete el.dataset.hoverSaved;
-      }
-    }
-  }
-}
+function clearHoverEmphasis() { /* no-op: nothing was dimmed */ }
 function onHoverEnter(node, event) {
   showTooltip(node, event);
   emphasizeHover(node.id);
