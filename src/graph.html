@@ -249,14 +249,15 @@ function render() {
     c.setAttribute('stroke-width', 1.2);
     c.setAttribute('opacity', 0.9);
     c.setAttribute('data-id', n.id);
+    c.setAttribute('data-node-id', n.id);
     c.style.cursor = 'pointer';
     c.addEventListener('click', (e) => {
       e.stopPropagation();
       if (focusedId === n.id) navigate(n); else focusNode(n.id);
     });
-    c.addEventListener('mouseenter', (e) => showTooltip(n, e));
+    c.addEventListener('mouseenter', (e) => onHoverEnter(n, e));
     c.addEventListener('mousemove', (e) => moveTooltip(e));
-    c.addEventListener('mouseleave', hideTooltip);
+    c.addEventListener('mouseleave', onHoverLeave);
     nodeLayer.appendChild(c);
     n._domCircle = c;
 
@@ -271,14 +272,15 @@ function render() {
     t.setAttribute('stroke', 'rgba(251,247,239,0.98)');
     t.setAttribute('stroke-width', 3.6);
     t.textContent = n.label;
+    t.setAttribute('data-node-id', n.id);
     t.style.cursor = 'pointer';
     t.addEventListener('click', (e) => {
       e.stopPropagation();
       if (focusedId === n.id) navigate(n); else focusNode(n.id);
     });
-    t.addEventListener('mouseenter', (e) => showTooltip(n, e));
+    t.addEventListener('mouseenter', (e) => onHoverEnter(n, e));
     t.addEventListener('mousemove', (e) => moveTooltip(e));
-    t.addEventListener('mouseleave', hideTooltip);
+    t.addEventListener('mouseleave', onHoverLeave);
     labelLayer.appendChild(t);
     n._domLabel = t;
   }
@@ -348,11 +350,12 @@ function ensurePromotedCenter(node) {
   c.setAttribute('fill', TYPE_COLOR[node.type] || '#888');
   c.setAttribute('stroke', '#fff'); c.setAttribute('stroke-width', 1.4);
   c.setAttribute('data-id', node.id);
+  c.setAttribute('data-node-id', node.id);
   c.style.cursor = 'pointer';
   c.addEventListener('click', (e) => { e.stopPropagation(); navigate(node); });
-  c.addEventListener('mouseenter', (e) => showTooltip(node, e));
+  c.addEventListener('mouseenter', (e) => onHoverEnter(node, e));
   c.addEventListener('mousemove', (e) => moveTooltip(e));
-  c.addEventListener('mouseleave', hideTooltip);
+  c.addEventListener('mouseleave', onHoverLeave);
   nodeLayer.appendChild(c);
   node._domCircle = c;
   const t = document.createElementNS(NS, 'text');
@@ -363,11 +366,12 @@ function ensurePromotedCenter(node) {
   t.setAttribute('paint-order', 'stroke');
   t.setAttribute('stroke', 'rgba(251,247,239,0.98)'); t.setAttribute('stroke-width', 3.6);
   t.textContent = node.label;
+  t.setAttribute('data-node-id', node.id);
   t.style.cursor = 'pointer';
   t.addEventListener('click', (e) => { e.stopPropagation(); navigate(node); });
-  t.addEventListener('mouseenter', (e) => showTooltip(node, e));
+  t.addEventListener('mouseenter', (e) => onHoverEnter(node, e));
   t.addEventListener('mousemove', (e) => moveTooltip(e));
-  t.addEventListener('mouseleave', hideTooltip);
+  t.addEventListener('mouseleave', onHoverLeave);
   labelLayer.appendChild(t);
   node._domLabel = t;
 }
@@ -415,8 +419,8 @@ function focusNode(id) {
   const N = satelliteNodes.length;
   const baseR = Math.min(W, H) * 0.17;
   const ringGap = Math.min(W, H) * 0.075;
-  // Per-ring capacity scales with circumference
-  const labelGap = 60;
+  // Per-ring capacity scales with circumference; bigger labelGap = lower density
+  const labelGap = 110;
   const ringCaps = [];
   let total = 0;
   for (let r = 0; r < 6 && total < N; r++) {
@@ -462,15 +466,16 @@ function animateFocus(center, satellites) {
     c.setAttribute('fill', TYPE_COLOR[node.type] || '#888');
     c.setAttribute('stroke', '#fff'); c.setAttribute('stroke-width', 1.0);
     c.setAttribute('opacity', 0);
+    c.setAttribute('data-node-id', node.id);
     c.style.cursor = 'pointer';
     c.addEventListener('click', (e) => {
       e.stopPropagation();
       // Click satellite → it becomes the new center; second click on the now-centered circle navigates.
       focusNode(node.id);
     });
-    c.addEventListener('mouseenter', (e) => showTooltip(node, e));
+    c.addEventListener('mouseenter', (e) => onHoverEnter(node, e));
     c.addEventListener('mousemove', (e) => moveTooltip(e));
-    c.addEventListener('mouseleave', hideTooltip);
+    c.addEventListener('mouseleave', onHoverLeave);
     satelliteLayer.appendChild(c);
 
     const t = document.createElementNS(NS, 'text');
@@ -482,11 +487,12 @@ function animateFocus(center, satellites) {
     t.setAttribute('stroke', 'rgba(251,247,239,0.98)');
     t.setAttribute('stroke-width', 4);
     t.textContent = node.label;
+    t.setAttribute('data-node-id', node.id);
     t.style.cursor = 'pointer';
     t.addEventListener('click', (e) => { e.stopPropagation(); focusNode(node.id); });
-    t.addEventListener('mouseenter', (e) => showTooltip(node, e));
+    t.addEventListener('mouseenter', (e) => onHoverEnter(node, e));
     t.addEventListener('mousemove', (e) => moveTooltip(e));
-    t.addEventListener('mouseleave', hideTooltip);
+    t.addEventListener('mouseleave', onHoverLeave);
     t.setAttribute('opacity', 0);
     satelliteLayer.appendChild(t);
 
@@ -549,7 +555,7 @@ function animateFocus(center, satellites) {
       const llen = Math.hypot(ldx, ldy) || 1;
       const lnx = ldx / llen;
       const lny = ldy / llen;
-      const loff = s.node.baseRadius + 14 + ((i % 2) ? 14 : 0);
+      const loff = s.node.baseRadius + 18;
       s.label.setAttribute('x', tx + lnx * loff);
       s.label.setAttribute('y', ty + lny * loff + 5);
       s.label.setAttribute('text-anchor', lnx > 0.3 ? 'start' : (lnx < -0.3 ? 'end' : 'middle'));
@@ -627,6 +633,53 @@ function navigate(routeOrNode) {
   const route = typeof routeOrNode === 'string' ? routeOrNode : routeOrNode?.route;
   if (!route) return;
   window.location.href = './index.html#/' + route;
+}
+
+// === Hover emphasis: raise hovered element to top, dim everyone else ===
+const HOVER_DIM_RATIO = 0.25;
+function emphasizeHover(nodeId) {
+  clearHoverEmphasis();
+  if (!nodeId) return;
+  const layers = [nodeLayer, labelLayer, satelliteLayer];
+  for (const layer of layers) {
+    if (!layer) continue;
+    const all = layer.querySelectorAll('[data-node-id]');
+    for (const el of all) {
+      if (el.dataset.hoverSaved == null) {
+        el.dataset.hoverSaved = el.getAttribute('opacity') || '1';
+      }
+    }
+    for (const el of all) {
+      const op = +el.dataset.hoverSaved;
+      if (el.dataset.nodeId === nodeId) {
+        el.setAttribute('opacity', 1);
+        layer.appendChild(el); // raise to top of layer
+      } else {
+        el.setAttribute('opacity', op * HOVER_DIM_RATIO);
+      }
+    }
+  }
+}
+function clearHoverEmphasis() {
+  const layers = [nodeLayer, labelLayer, satelliteLayer];
+  for (const layer of layers) {
+    if (!layer) continue;
+    const all = layer.querySelectorAll('[data-node-id]');
+    for (const el of all) {
+      if (el.dataset.hoverSaved != null) {
+        el.setAttribute('opacity', el.dataset.hoverSaved);
+        delete el.dataset.hoverSaved;
+      }
+    }
+  }
+}
+function onHoverEnter(node, event) {
+  showTooltip(node, event);
+  emphasizeHover(node.id);
+}
+function onHoverLeave() {
+  hideTooltip();
+  clearHoverEmphasis();
 }
 
 function moveTooltip(event) {
