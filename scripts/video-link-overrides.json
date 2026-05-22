@@ -2,8 +2,8 @@
   "EP145": {
     "bilibili": {
       "platform": "bilibili",
-      "status": "unavailable",
-      "note": "暂未上架"
+      "url": "https://www.bilibili.com/video/BV1tgLx64EEG/?spm_id_from=333.337.top_right_bar_window_dynamic.content.click",
+      "access": "member"
     },
     "youtube": {
       "platform": "youtube",
