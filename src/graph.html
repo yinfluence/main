@@ -541,8 +541,16 @@ function animateFocus(center, satellites) {
       s.circle.setAttribute('cx', tx);
       s.circle.setAttribute('cy', ty);
       s.circle.setAttribute('opacity', local);
-      s.label.setAttribute('x', tx);
-      s.label.setAttribute('y', ty + s.node.baseRadius + 10);
+      // Label placed radially outward from source so it never overlaps its circle.
+      const ldx = tx - center.x;
+      const ldy = ty - center.y;
+      const llen = Math.hypot(ldx, ldy) || 1;
+      const lnx = ldx / llen;
+      const lny = ldy / llen;
+      const loff = s.node.baseRadius + 14;
+      s.label.setAttribute('x', tx + lnx * loff);
+      s.label.setAttribute('y', ty + lny * loff + 5);
+      s.label.setAttribute('text-anchor', lnx > 0.3 ? 'start' : (lnx < -0.3 ? 'end' : 'middle'));
       s.label.setAttribute('opacity', local * 0.95);
       s.edge.setAttribute('x2', tx);
       s.edge.setAttribute('y2', ty);
