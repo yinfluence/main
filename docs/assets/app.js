@@ -1,4 +1,4 @@
-import { destroyGraphView, renderGraphView } from './graph-view.js?v=1779544939691';
+import { destroyGraphView, renderGraphView } from './graph-view.js?v=1779545028615';
 
 const app = document.getElementById('app');
 const sidebar = document.getElementById('sidebar');
@@ -6987,11 +6987,11 @@ function renderEpisodeTopNavigation(episodeId) {
 
   return `
     <div class="episode-neighbor-row">
-      ${previousEpisode
-        ? `<a class="back-link secondary episode-neighbor-link" href="${routeTo(`episodes/${previousEpisode.id}`)}">← 上一集 ${escapeHtml(previousEpisode.id)}</a>`
-        : '<span class="episode-neighbor-spacer" aria-hidden="true"></span>'}
       ${nextEpisode
-        ? `<a class="back-link secondary episode-neighbor-link next" href="${routeTo(`episodes/${nextEpisode.id}`)}">下一集 ${escapeHtml(nextEpisode.id)} →</a>`
+        ? `<a class="back-link secondary episode-neighbor-link" href="${routeTo(`episodes/${nextEpisode.id}`)}">← 下一集 ${escapeHtml(nextEpisode.id)}</a>`
+        : '<span class="episode-neighbor-spacer" aria-hidden="true"></span>'}
+      ${previousEpisode
+        ? `<a class="back-link secondary episode-neighbor-link next" href="${routeTo(`episodes/${previousEpisode.id}`)}">上一集 ${escapeHtml(previousEpisode.id)} →</a>`
         : '<span class="episode-neighbor-spacer" aria-hidden="true"></span>'}
     </div>
   `;
