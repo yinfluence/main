@@ -1,0 +1,62 @@
+{
+  "id": "mattias-grafstrom",
+  "name": "格拉夫斯特伦",
+  "englishName": "Mattias Grafström",
+  "kind": "person",
+  "asOf": "2026-05-23",
+  "sources": [
+    {
+      "title": "Mattias Grafström - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Mattias_Grafstr%C3%B6m",
+      "note": "核对全名、瑞典/荷兰国籍、FIFA 任职轨迹"
+    },
+    {
+      "title": "Mattias Grafström formally appointed as FIFA Secretary General",
+      "url": "https://inside.fifa.com/organisation/news/mattias-grafstroem-formally-appointed-as-fifa-secretary-general",
+      "note": "核对其 2023 年 10 月任秘书长 ad interim、2024 年 5 月 15 日 FIFA 理事会正式任命"
+    }
+  ],
+  "summary": "格拉夫斯特伦是瑞典/荷兰背景的足球行政人物、FIFA 现任秘书长(2024 年正式任),节目里他是 FIFA 在华推广动作的执行代表。",
+  "description": "格拉夫斯特伦(Mattias Grafström)是瑞典-荷兰双重背景的足球组织行政人物。2016 年因凡蒂诺当选 FIFA 主席后被引入 FIFA 任办公室主任(Chief of Staff),2019 年升任足球事务副秘书长,2023 年 10 月接替萨穆拉出任秘书长 ad interim,2024 年 5 月 15 日由 FIFA 理事会正式任命为秘书长。节目语境里,他是 FIFA 一线对外交易的执行枢纽。",
+  "basicIntro": "格拉夫斯特伦持瑞典与荷兰双重国籍,长期在足球组织内从事行政与法律事务工作。2016 年 2 月因凡蒂诺当选 FIFA 主席后随即引入,任 FIFA Chief of Staff(主席办公室主任),2019 年升任 Deputy Secretary General (Football)(足球事务副秘书长),2023 年 10 月在萨穆拉(Fatma Samoura)宣布离任后接任秘书长 ad interim,2024 年 5 月 15 日由 FIFA 理事会在曼谷会议上正式任命为秘书长。",
+  "programRole": "节目使用格拉夫斯特伦,重点是 FIFA 一线交易执行端的人物锚点——他是因凡蒂诺多年的'大管家',从 UEFA 时期就跟随主席,EP146 里随温格一起访华,被节目读作 FIFA 商业-推广交易在中国落地的执行代表。",
+  "programAssociations": [
+    {
+      "title": "FIFA 在华交易的执行端",
+      "episodes": [
+        "EP146"
+      ],
+      "note": "EP146 里他 2026 年 5 月 12 日与温格联袂访华,与国家体育总局副局长张家胜、中国足协主席宋凯开会,谈青少年足球。节目把这次访问放回他作为因凡蒂诺多年大管家的角色读:执行端他来谈、形象端温格来站台、决策端因凡蒂诺在背后,三人分工构成 FIFA 一笔标志性在华交易的完整动作面。"
+    }
+  ],
+  "styleNotes": [
+    "幕僚出身:从 UEFA 时期就跟随因凡蒂诺,长期在主席办公室与法律/行政岗位工作,公开姿态低调。",
+    "执行型:相较温格的公共形象端,他承担实际谈判、合约与组织协调,媒体露面少但权重高。",
+    "西方法律背景:瑞典/荷兰国籍叠加足球组织内部成长路径,在 FIFA 多元国别政治中是因凡蒂诺信任的近身位。"
+  ],
+  "methodNotes": [
+    "把主席办公室主任 → 副秘书长 → 秘书长这条内部晋升路径走通,典型的 FIFA 内部'信任近臣'升迁模型。",
+    "EP146 里他与温格的分工:他承担与官员开会、谈合作框架,温格承担 U14 训练场亮相、形象层面;两人合起来一次访问解决两件事。",
+    "FIFA 一线对外交易(转播权、赞助权、合作框架)在他任内继续走保密合约路径,公开信息高度受限。"
+  ],
+  "extensionNotes": [
+    {
+      "title": "因凡蒂诺",
+      "note": "格拉夫斯特伦的所有职务都由因凡蒂诺主导设立或提拔,从 UEFA 时期就是同一班底,可沿这条线看 FIFA 内部决策中枢。"
+    },
+    {
+      "title": "温格",
+      "note": "EP146 里两人是 FIFA 在华访问的执行-形象分工组合,可对照看 FIFA 在重点市场的标准动作。"
+    },
+    {
+      "title": "FIFA 在华转播权交易",
+      "note": "EP146 把他的访华与同期央视拿下转播权放在同一时间窗口讨论,他是这套交易的执行端代表。"
+    }
+  ],
+  "episodes": [
+    {
+      "id": "EP146",
+      "note": "节目把他 2026 年 5 月与温格联袂访华、第一站去中国足协而非央视,作为 FIFA 商业-推广交易在中国落地的执行端代表。"
+    }
+  ]
+}
