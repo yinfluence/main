@@ -1,4 +1,4 @@
-import { destroyGraphView, renderGraphView } from './graph-view.js?v=1779466957347';
+import { destroyGraphView, renderGraphView } from './graph-view.js?v=1779544939691';
 
 const app = document.getElementById('app');
 const sidebar = document.getElementById('sidebar');
@@ -25,6 +25,16 @@ const HOME_PLATFORM_LINKS = [
   }
 ];
 const WEBSITE_LOG_ENTRIES = [
+  {
+    date: '2026-05-22',
+    title: '车圈笑傲江湖地图实验页',
+    items: [
+      '新增 `experiments/jianghu-map.html`，把电车圈车企对应到金庸笔下门派人物，共 12 派——节目原话 7 派（华山·岳不群=华为、日月神教·东方不败=理想、丐帮帮主=小米、嵩山派·左冷禅=蔚来、福威镖局=比亚迪、刘正风=观致、恒山派=小鹏），金庸全集扩展 5 派（姑苏慕容·慕容复=哪吒、桃花岛·黄药师=特斯拉、白驼山·欧阳锋=恒大、星宿派·丁春秋=宁德时代、大轮明王·鸠摩智=领克）。',
+      '底图采用北宋王希孟《千里江山图》（Wikimedia 公版），人物头像用京剧脸谱及手游/动漫立绘嵌入，点击头像从右侧抽屉弹出讽刺骨架与对应 EP 链接，点击抽屉外或按 ESC 关闭。',
+      '节目详情页关键词条带最前面，对涉及笑傲江湖讨论的 15 期节目（EP013/015/017/035/039/041/050/055/062/066/067/074/080/091/131）新增朱红色"笑傲江湖" chip，点击跳转到地图页。',
+      '节目详情页顶部的"返回前一页 / 返回首页"与"上一集 / 下一集"两行位置对调——上级导航在上、同级导航在下，更符合层级直觉。'
+    ]
+  },
   {
     date: '2026-05-22',
     title: '节目发布时间显示',
@@ -1841,6 +1851,28 @@ function summarizeHomeEpisodeSummary(value, { mobile = false } = {}) {
   return trimHomeEpisodeSummary(summary, maxChars);
 }
 
+const JIANGHU_TERMS = [
+  '岳不群','华山派','左冷禅','嵩山派','东方不败','任我行','日月神教',
+  '丐帮','帮主','福威镖局','刘正风','恒山派','慕容复','姑苏慕容',
+  '黄药师','桃花岛','欧阳锋','白驼山','丁春秋','星宿派','鸠摩智','大轮明王'
+];
+const JIANGHU_TERMS_RE = new RegExp('(' + JIANGHU_TERMS.sort((a,b)=>b.length-a.length).map(t=>t.replace(/[.*+?^${}()|[\]\\]/g,'\\$&')).join('|') + ')','g');
+
+function highlightJianghuTerms(html) {
+  if (!html || typeof html !== 'string') return html;
+  // 按 <a>...</a> 段拆分,只处理非链接部分,避免嵌套 a
+  const parts = html.split(/(<a[\s>][^]*?<\/a>)/g);
+  return parts.map((part) => {
+    if (part.startsWith('<a')) return part;
+    // 也避免 HTML 标签内部:按标签分段
+    const sub = part.split(/(<[^>]+>)/g);
+    return sub.map((s) => {
+      if (s.startsWith('<')) return s;
+      return s.replace(JIANGHU_TERMS_RE, '<a class="jianghu-term" href="experiments/jianghu-map.html" title="车圈笑傲江湖地图" style="color:#a02818;border-bottom:1px dashed #a02818;text-decoration:none;font-weight:500">$1</a>');
+    }).join('');
+  }).join('');
+}
+
 function renderLinkedEpisodeText(value) {
   const raw = String(value || '');
   if (!raw) return '';
@@ -1862,7 +1894,7 @@ function renderLinkedEpisodeText(value) {
   }
 
   html += escapeHtml(raw.slice(cursor));
-  return html;
+  return highlightJianghuTerms(html);
 }
 
 function getInlineEpisodePopupElement() {
@@ -3275,7 +3307,8 @@ function renderLinkedChipItems(type, items = [], collection = []) {
     if (!target) {
       return '';
     }
-    return `<a class="chip" href="${routeTo(`${targetType}/${target.id}`)}">${escapeHtml(found.name || found.title || found.id)}</a>`;
+    const name = found.name || found.title || found.id;
+    return `<a class="chip" href="${routeTo(`${targetType}/${target.id}`)}">${escapeHtml(name)}</a>`;
   }).filter(Boolean).join('');
 }
 
@@ -3328,12 +3361,70 @@ function renderVideoLinkIcon(link) {
   `;
 }
 
+const JIANGHU_EPISODES = new Set([
+  'EP013','EP015','EP017','EP035','EP039','EP041',
+  'EP050','EP055','EP062','EP066','EP067','EP074','EP080',
+  'EP091','EP131'
+]);
+
+// keyword 中文名 → 江湖对照(派系/人物/出处)
+const JIANGHU_KEYWORDS = {
+  '华为': { sect: '华山派', role: '岳不群', source: '笑傲江湖', ep: 'EP050' },
+  '问界': { sect: '华山派', role: '岳不群', source: '笑傲江湖', ep: 'EP050' },
+  '余承东': { sect: '华山派', role: '岳不群', source: '笑傲江湖', ep: 'EP050' },
+  '理想汽车': { sect: '日月神教', role: '东方不败 / 任我行', source: '笑傲江湖', ep: 'EP055' },
+  '理想': { sect: '日月神教', role: '东方不败 / 任我行', source: '笑傲江湖', ep: 'EP055' },
+  '李想': { sect: '日月神教', role: '东方不败 / 任我行', source: '笑傲江湖', ep: 'EP055' },
+  '小米汽车': { sect: '丐帮', role: '帮主', source: '笑傲江湖', ep: 'EP062' },
+  '小米': { sect: '丐帮', role: '帮主', source: '笑傲江湖', ep: 'EP062' },
+  '雷军': { sect: '丐帮', role: '帮主', source: '笑傲江湖', ep: 'EP062' },
+  '蔚来': { sect: '嵩山派', role: '左冷禅', source: '笑傲江湖', ep: 'EP067' },
+  '蔚来汽车': { sect: '嵩山派', role: '左冷禅', source: '笑傲江湖', ep: 'EP067' },
+  '李斌': { sect: '嵩山派', role: '左冷禅', source: '笑傲江湖', ep: 'EP067' },
+  '比亚迪': { sect: '福威镖局', role: '辟邪剑谱源头家族', source: '笑傲江湖', ep: 'EP080' },
+  '王传福': { sect: '福威镖局', role: '辟邪剑谱源头家族', source: '笑傲江湖', ep: 'EP080' },
+  '观致': { sect: '衡山派', role: '刘正风', source: '笑傲江湖', ep: 'EP066' },
+  '观致汽车': { sect: '衡山派', role: '刘正风', source: '笑傲江湖', ep: 'EP066' },
+  '小鹏': { sect: '恒山派', role: '', source: '笑傲江湖', ep: 'EP074' },
+  '小鹏汽车': { sect: '恒山派', role: '', source: '笑傲江湖', ep: 'EP074' },
+  '哪吒': { sect: '姑苏慕容氏', role: '慕容复', source: '天龙八部', ep: 'EP131', guess: true },
+  '哪吒汽车': { sect: '姑苏慕容氏', role: '慕容复', source: '天龙八部', ep: 'EP131', guess: true },
+  '方运舟': { sect: '姑苏慕容氏', role: '慕容复', source: '天龙八部', ep: 'EP131', guess: true },
+  '特斯拉': { sect: '桃花岛', role: '黄药师', source: '射雕英雄传', guess: true },
+  '恒大': { sect: '白驼山', role: '欧阳锋', source: '射雕英雄传', ep: 'EP035', guess: true },
+  '恒大汽车': { sect: '白驼山', role: '欧阳锋', source: '射雕英雄传', ep: 'EP035', guess: true },
+  '许家印': { sect: '白驼山', role: '欧阳锋', source: '射雕英雄传', ep: 'EP035', guess: true },
+  '宁德时代': { sect: '星宿派', role: '丁春秋', source: '天龙八部', ep: 'EP039', guess: true },
+  '曾毓群': { sect: '星宿派', role: '丁春秋', source: '天龙八部', ep: 'EP039', guess: true },
+  '领克': { sect: '大轮明王', role: '鸠摩智', source: '天龙八部', ep: 'EP091', guess: true },
+  '吉利': { sect: '大轮明王', role: '鸠摩智', source: '天龙八部', ep: 'EP091', guess: true }
+};
+
+function getJianghuByName(name) {
+  if (!name) return null;
+  return JIANGHU_KEYWORDS[String(name).trim()] || null;
+}
+
+function renderJianghuChip(episodeId) {
+  if (!JIANGHU_EPISODES.has(episodeId)) return '';
+  return `<a class="chip jianghu-chip" href="experiments/jianghu-map.html" title="查看车圈笑傲江湖地图" style="background:#a02818;color:#f5ecd0;border-color:#7a1f12;font-weight:600">笑傲江湖</a>`;
+}
+
+function renderJianghuKeywordBadge(name) {
+  const jh = getJianghuByName(name);
+  if (!jh) return '';
+  const label = jh.role ? `${jh.sect}·${jh.role}` : jh.sect;
+  return `<a class="jianghu-badge" href="experiments/jianghu-map.html" title="点击查看车圈笑傲江湖地图" style="display:inline-block;font-size:11px;line-height:1.4;padding:2px 7px;margin-left:6px;background:rgba(160,40,24,.12);color:#7a1f12;border:1px solid rgba(122,31,18,.35);border-radius:3px;text-decoration:none;font-weight:500;vertical-align:middle">江湖 · ${escapeHtml(label)}</a>`;
+}
+
+
 function renderEpisodeHeaderMeta(episode) {
   const videoLinks = Array.isArray(episode.videoLinks) ? episode.videoLinks : [];
   const tags = episode.tags || [];
   const absoluteDate = formatAbsolutePublishDate(episode.publishedAt);
   const relativeText = formatRelativePublishTime(episode.publishedAt);
-  if (!videoLinks.length && !tags.length && !absoluteDate) return '';
+  const jianghuChip = renderJianghuChip(episode.id);
+  if (!videoLinks.length && !tags.length && !absoluteDate && !jianghuChip) return '';
 
   return `
     ${absoluteDate ? `
@@ -3342,8 +3433,9 @@ function renderEpisodeHeaderMeta(episode) {
         ${relativeText ? `<span class="episode-publish-relative">· ${escapeHtml(relativeText)}</span>` : ''}
       </p>
     ` : ''}
-    ${tags.length ? `
+    ${(tags.length || jianghuChip) ? `
       <div class="chip-row episode-header-meta">
+        ${jianghuChip}
         ${renderLinkedChipItems('keywords', tags, site.keywords)}
       </div>
     ` : ''}
