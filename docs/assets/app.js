@@ -1,4 +1,4 @@
-import { destroyGraphView, renderGraphView } from './graph-view.js?v=1779545028615';
+import { destroyGraphView, renderGraphView } from './graph-view.js?v=1779545199744';
 
 const app = document.getElementById('app');
 const sidebar = document.getElementById('sidebar');
@@ -6984,14 +6984,19 @@ function renderRelatedKeywordLinks(references = []) {
 
 function renderEpisodeTopNavigation(episodeId) {
   const { previousEpisode, nextEpisode } = getEpisodeNeighbors(episodeId);
+  const ordered = orderedEpisodes();
+  const firstEpisode = ordered[0] || null;
+  const lastEpisode = ordered[ordered.length - 1] || null;
+  const leftEpisode = nextEpisode || firstEpisode;
+  const rightEpisode = previousEpisode || lastEpisode;
 
   return `
     <div class="episode-neighbor-row">
-      ${nextEpisode
-        ? `<a class="back-link secondary episode-neighbor-link" href="${routeTo(`episodes/${nextEpisode.id}`)}">← 下一集 ${escapeHtml(nextEpisode.id)}</a>`
+      ${leftEpisode && leftEpisode.id !== episodeId
+        ? `<a class="back-link secondary episode-neighbor-link" href="${routeTo(`episodes/${leftEpisode.id}`)}">← 下一集 ${escapeHtml(leftEpisode.id)}</a>`
         : '<span class="episode-neighbor-spacer" aria-hidden="true"></span>'}
-      ${previousEpisode
-        ? `<a class="back-link secondary episode-neighbor-link next" href="${routeTo(`episodes/${previousEpisode.id}`)}">上一集 ${escapeHtml(previousEpisode.id)} →</a>`
+      ${rightEpisode && rightEpisode.id !== episodeId
+        ? `<a class="back-link secondary episode-neighbor-link next" href="${routeTo(`episodes/${rightEpisode.id}`)}">上一集 ${escapeHtml(rightEpisode.id)} →</a>`
         : '<span class="episode-neighbor-spacer" aria-hidden="true"></span>'}
     </div>
   `;
