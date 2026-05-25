@@ -2,13 +2,13 @@
   "meta": {
     "title": "颖响力知识图谱",
     "subtitle": "节目、概念、模型、人物、主题之间的可视化连接网络",
-    "nodeCount": 506,
-    "linkCount": 1059,
+    "nodeCount": 511,
+    "linkCount": 1079,
     "typeCounts": {
       "model": 66,
-      "episode": 145,
+      "episode": 147,
       "concept": 143,
-      "person": 61,
+      "person": 64,
       "theme": 91
     }
   },
@@ -344,6 +344,17 @@
       "degree": 11
     },
     {
+      "id": "episode:EP146",
+      "key": "EP146",
+      "label": "EP146",
+      "fullLabel": "EP146 · 1.1亿买四届世界杯？数学题都算不对的央视神话，民粹却嗨翻了。【EP146】",
+      "type": "episode",
+      "route": "episodes/EP146",
+      "summary": "央视 5 月 15 日官宣拿下 2026-2031 年四届世界杯转播权,社交媒体一片砍价封神。节目把它拆成三层:网传 6000 万美元单届价与 1.1 亿美元四届打包价在数学上互相冲突,主持人倾向 6000 万真、打包价假,目的是压低本届广告商预期;FIFA 秘书长格拉夫斯特伦和温格此前先到中国足协而非央视、温格亲自指导 U14 国少队,财政部同步宣布 5 亿元校园足球投入,三件事时间紧密耦合;最关键的一层是这本就是商业谈判,被包装成民族胜利后让央视垄断稳赚不赔,普通观众照样熬夜、看广告、充会员,所谓自豪感是给垄断方做义务宣传。节目落点是体育归体育、商业归商业。",
+      "status": "curated",
+      "degree": 11
+    },
+    {
       "id": "theme:real-estate-deleveraging",
       "key": "real-estate-deleveraging",
       "label": "房地产去杠杆与风险出清",
@@ -362,6 +373,17 @@
       "type": "model",
       "route": "models/chokepoint-order-model",
       "summary": "真正决定咽喉通道价值的，不只是地理位置，而是谁定义通行规则、风险定价与法律边界。",
+      "status": null,
+      "degree": 10
+    },
+    {
+      "id": "model:narrative-leverage",
+      "key": "narrative-leverage",
+      "label": "叙事杠杆",
+      "fullLabel": "叙事杠杆",
+      "type": "model",
+      "route": "models/narrative-leverage",
+      "summary": "通过一个足够大的故事，把原本有限的资源、信用和注意力撬成更大的资本、销量或支持度。",
       "status": null,
       "degree": 10
     },
@@ -421,6 +443,17 @@
       "degree": 9
     },
     {
+      "id": "model:authority-misinfluence",
+      "key": "authority-misinfluence",
+      "label": "权威影响",
+      "fullLabel": "权威影响",
+      "type": "model",
+      "route": "models/authority-misinfluence",
+      "summary": "权威影响模型解释单点权威如何压缩组织独立判断，使成员更容易服从而非纠偏。",
+      "status": null,
+      "degree": 9
+    },
+    {
       "id": "theme:singapore-and-small-state-survival",
       "key": "singapore-and-small-state-survival",
       "label": "新加坡与小国生存术",
@@ -439,17 +472,6 @@
       "type": "theme",
       "route": "themes/ev-collapse-and-exit-risk",
       "summary": "聚焦新能源项目在失速、清算和品牌出清阶段，风险如何向债权人、用户和地方政府层层传导。",
-      "status": null,
-      "degree": 9
-    },
-    {
-      "id": "model:narrative-leverage",
-      "key": "narrative-leverage",
-      "label": "叙事杠杆",
-      "fullLabel": "叙事杠杆",
-      "type": "model",
-      "route": "models/narrative-leverage",
-      "summary": "通过一个足够大的故事，把原本有限的资源、信用和注意力撬成更大的资本、销量或支持度。",
       "status": null,
       "degree": 9
     },
@@ -586,6 +608,17 @@
       "degree": 9
     },
     {
+      "id": "episode:EP147",
+      "key": "EP147",
+      "label": "EP147",
+      "fullLabel": "EP147 · 最荒诞的大外宣翻车！《监狱来的妈妈》想展示法治文明，却得罪三种人，成就自残式的舆论狂欢！",
+      "type": "episode",
+      "route": "episodes/EP147",
+      "summary": "电影《监狱来的妈妈》因家暴题材和国外获奖被全网围攻，主持人不替电影辩解，而是拆这场舆论狂欢精准踩中的三种人：第一种是对影视圈本就充满敌意的人，他们要的不是讨论片子方向对错，而是要演员导演听话、自我审查、不发声；第二种是反女权群体，他们被家暴话题点燃；但真正吊诡的是中国女权早已离开家暴议题转向特权式摆拍，所以女权也想踩这片一脚；第三种也是最关键的——主持人以退役电影投资人身份指出，监狱题材根本不是民间能拍的，能拍的只有体制内或与公检法体系有关的影视公司，所以这本质是一部大外宣，目的是对外展示中国监狱有人权、刑满释放有社会关爱。然而基本盘内部因为对手盘消失开始不断抬高境外势力的判定标准，结果把自家大外宣读成了抹黑中国、家丑外扬、有 NGO 背景。节目的落点不是为电影翻案，而是把这场内部互戕作为对手盘缺失时代的标本。",
+      "status": "curated",
+      "degree": 9
+    },
+    {
       "id": "theme:great-power-competition-and-strategic-time",
       "key": "great-power-competition-and-strategic-time",
       "label": "大国竞争与战略时间",
@@ -615,17 +648,6 @@
       "type": "model",
       "route": "models/rule-anchored-small-state-model",
       "summary": "小国要长期活下来，不能只靠地理好运，更要靠规则信誉、理性政府和可预期的制度自我约束。",
-      "status": null,
-      "degree": 8
-    },
-    {
-      "id": "model:authority-misinfluence",
-      "key": "authority-misinfluence",
-      "label": "权威影响",
-      "fullLabel": "权威影响",
-      "type": "model",
-      "route": "models/authority-misinfluence",
-      "summary": "权威影响模型解释单点权威如何压缩组织独立判断，使成员更容易服从而非纠偏。",
       "status": null,
       "degree": 8
     },
@@ -982,6 +1004,17 @@
       "degree": 8
     },
     {
+      "id": "concept:cost-shifting",
+      "key": "cost-shifting",
+      "label": "成本外移",
+      "fullLabel": "成本外移",
+      "type": "concept",
+      "route": "concepts/cost-shifting",
+      "summary": "组织内部的高额非生产性成本，最终会通过价格、规则或风险转嫁给外部承担者。",
+      "status": null,
+      "degree": 7
+    },
+    {
       "id": "model:proxy-containment-ring",
       "key": "proxy-containment-ring",
       "label": "代理围堵环",
@@ -1022,6 +1055,17 @@
       "type": "model",
       "route": "models/principal-agent",
       "summary": "委托代理模型解释外部顾问或职业代理人的激励，未必与委托方长期价值一致。",
+      "status": null,
+      "degree": 7
+    },
+    {
+      "id": "theme:state-business-entanglement",
+      "key": "state-business-entanglement",
+      "label": "政企嵌入与企业存续",
+      "fullLabel": "政企嵌入与企业存续",
+      "type": "theme",
+      "route": "themes/state-business-entanglement",
+      "summary": "讨论企业如何依赖地方政府、国资平台或关系结构续命，以及这种绑定如何反过来改写企业目标。",
       "status": null,
       "degree": 7
     },
@@ -1279,17 +1323,6 @@
       "degree": 7
     },
     {
-      "id": "concept:cost-shifting",
-      "key": "cost-shifting",
-      "label": "成本外移",
-      "fullLabel": "成本外移",
-      "type": "concept",
-      "route": "concepts/cost-shifting",
-      "summary": "组织内部的高额非生产性成本，最终会通过价格、规则或风险转嫁给外部承担者。",
-      "status": null,
-      "degree": 6
-    },
-    {
       "id": "model:distributed-innovation",
       "key": "distributed-innovation",
       "label": "分布式创新",
@@ -1367,13 +1400,13 @@
       "degree": 6
     },
     {
-      "id": "theme:state-business-entanglement",
-      "key": "state-business-entanglement",
-      "label": "政企嵌入与企业存续",
-      "fullLabel": "政企嵌入与企业存续",
-      "type": "theme",
-      "route": "themes/state-business-entanglement",
-      "summary": "讨论企业如何依赖地方政府、国资平台或关系结构续命，以及这种绑定如何反过来改写企业目标。",
+      "id": "model:narrative-instrumentalization",
+      "key": "narrative-instrumentalization",
+      "label": "叙事工具化模型",
+      "fullLabel": "叙事工具化模型",
+      "type": "model",
+      "route": "models/narrative-instrumentalization",
+      "summary": "叙事工具化模型解释叙事的主要功能从解释现实转向组织情绪和划分阵营。",
       "status": null,
       "degree": 6
     },
@@ -1715,6 +1748,17 @@
       "type": "theme",
       "route": "themes/youth-dreams-and-safe-paths",
       "summary": "关注“稳定”如何成为压制年轻人生命力的主流建议。",
+      "status": null,
+      "degree": 5
+    },
+    {
+      "id": "theme:platform-governance-and-folk-discourse",
+      "key": "platform-governance-and-folk-discourse",
+      "label": "平台治理与民间话语",
+      "fullLabel": "平台治理与民间话语",
+      "type": "theme",
+      "route": "themes/platform-governance-and-folk-discourse",
+      "summary": "讨论平台如何识别、容忍、限制和清理具有高传播性的民间表达。",
       "status": null,
       "degree": 5
     },
@@ -2203,17 +2247,6 @@
       "degree": 4
     },
     {
-      "id": "theme:platform-governance-and-folk-discourse",
-      "key": "platform-governance-and-folk-discourse",
-      "label": "平台治理与民间话语",
-      "fullLabel": "平台治理与民间话语",
-      "type": "theme",
-      "route": "themes/platform-governance-and-folk-discourse",
-      "summary": "讨论平台如何识别、容忍、限制和清理具有高传播性的民间表达。",
-      "status": null,
-      "degree": 4
-    },
-    {
       "id": "theme:automotive-r-and-d-governance",
       "key": "automotive-r-and-d-governance",
       "label": "汽车研发治理与沉默联盟",
@@ -2287,17 +2320,6 @@
       "type": "concept",
       "route": "concepts/information-cocoon-breach",
       "summary": "让原本封闭的人群第一次看见自身位置、差异和现实结构的传播裂缝。",
-      "status": null,
-      "degree": 4
-    },
-    {
-      "id": "model:narrative-instrumentalization",
-      "key": "narrative-instrumentalization",
-      "label": "叙事工具化模型",
-      "fullLabel": "叙事工具化模型",
-      "type": "model",
-      "route": "models/narrative-instrumentalization",
-      "summary": "叙事工具化模型解释叙事的主要功能从解释现实转向组织情绪和划分阵营。",
       "status": null,
       "degree": 4
     },
@@ -2599,6 +2621,17 @@
       "degree": 3
     },
     {
+      "id": "concept:national-identity-hostage",
+      "key": "national-identity-hostage",
+      "label": "国家身份绑架",
+      "fullLabel": "国家身份绑架",
+      "type": "concept",
+      "route": "concepts/national-identity-hostage",
+      "summary": "国家身份绑架指个体把私人冲突抬升为国家受辱，用共同体身份替个人行为兜底。",
+      "status": null,
+      "degree": 3
+    },
+    {
       "id": "person:hu-chenfeng",
       "key": "hu-chenfeng",
       "label": "户晨风",
@@ -2694,6 +2727,17 @@
       "type": "theme",
       "route": "themes/price-support-and-balance-sheet",
       "summary": "讨论价格、估值和票面成交如何被维持住，以便先保住报表、抵押物和融资条件。",
+      "status": null,
+      "degree": 3
+    },
+    {
+      "id": "concept:signal-price-distortion",
+      "key": "signal-price-distortion",
+      "label": "价格信号扭曲",
+      "fullLabel": "价格信号扭曲",
+      "type": "concept",
+      "route": "concepts/signal-price-distortion",
+      "summary": "价格本应用来传递供需信息，若被流量、叙事或行政力量改写，就会误导生产和消费。",
       "status": null,
       "degree": 3
     },
@@ -2907,6 +2951,17 @@
       "degree": 3
     },
     {
+      "id": "theme:new-media-political-mobilization",
+      "key": "new-media-political-mobilization",
+      "label": "新媒体政治动员",
+      "fullLabel": "新媒体政治动员",
+      "type": "theme",
+      "route": "themes/new-media-political-mobilization",
+      "summary": "候选人和政治叙事不再必须依附旧媒体，而可以直接通过新媒体组织情绪、认同和支持。",
+      "status": null,
+      "degree": 3
+    },
+    {
       "id": "concept:cult-branding",
       "key": "cult-branding",
       "label": "信众化品牌",
@@ -2947,6 +3002,17 @@
       "type": "concept",
       "route": "concepts/hidden-labor-subsidy",
       "summary": "项目看似低成本，实际靠基层人员、志愿者和公共部门的隐形时间来补贴。",
+      "status": null,
+      "degree": 3
+    },
+    {
+      "id": "theme:film-industry-and-traffic-logic",
+      "key": "film-industry-and-traffic-logic",
+      "label": "影视工业与流量逻辑",
+      "fullLabel": "影视工业与流量逻辑",
+      "type": "theme",
+      "route": "themes/film-industry-and-traffic-logic",
+      "summary": "关注影视生产如何越来越服从人设、粉丝和宣发流量，而非角色与作品本身。",
       "status": null,
       "degree": 3
     },
@@ -3215,6 +3281,17 @@
       "degree": 2
     },
     {
+      "id": "theme:bullshit-politics-and-historical-narratives",
+      "key": "bullshit-politics-and-historical-narratives",
+      "label": "扯淡政治与历史叙事",
+      "fullLabel": "扯淡政治与历史叙事",
+      "type": "theme",
+      "route": "themes/bullshit-politics-and-historical-narratives",
+      "summary": "讨论对真相冷漠的话术如何进入历史解释和身份动员。",
+      "status": null,
+      "degree": 2
+    },
+    {
       "id": "concept:planning-lockin",
       "key": "planning-lockin",
       "label": "大计划锁定",
@@ -3369,6 +3446,17 @@
       "degree": 2
     },
     {
+      "id": "concept:audience-filter-labor",
+      "key": "audience-filter-labor",
+      "label": "观众筛选劳动",
+      "fullLabel": "观众筛选劳动",
+      "type": "concept",
+      "route": "concepts/audience-filter-labor",
+      "summary": "用户以为自己在消费内容，实际上也在用停留、滑动、点赞和关注替平台筛选内容。",
+      "status": null,
+      "degree": 2
+    },
+    {
       "id": "model:rule-bounded-rights-defense",
       "key": "rule-bounded-rights-defense",
       "label": "规则边界型维权模型",
@@ -3490,17 +3578,6 @@
       "degree": 2
     },
     {
-      "id": "concept:signal-price-distortion",
-      "key": "signal-price-distortion",
-      "label": "价格信号扭曲",
-      "fullLabel": "价格信号扭曲",
-      "type": "concept",
-      "route": "concepts/signal-price-distortion",
-      "summary": "价格本应用来传递供需信息，若被流量、叙事或行政力量改写，就会误导生产和消费。",
-      "status": null,
-      "degree": 2
-    },
-    {
       "id": "concept:giant-infant-rights-defense",
       "key": "giant-infant-rights-defense",
       "label": "巨婴式维权",
@@ -3611,6 +3688,17 @@
       "degree": 2
     },
     {
+      "id": "theme:content-regulation-and-short-drama",
+      "key": "content-regulation-and-short-drama",
+      "label": "内容监管与短剧崛起",
+      "fullLabel": "内容监管与短剧崛起",
+      "type": "theme",
+      "route": "themes/content-regulation-and-short-drama",
+      "summary": "讨论长剧、电影、网剧和短剧在不同审核路径下如何重新竞争。",
+      "status": null,
+      "degree": 2
+    },
+    {
       "id": "theme:brand-symbol-and-value",
       "key": "brand-symbol-and-value",
       "label": "品牌符号与价值感知",
@@ -3618,6 +3706,17 @@
       "type": "theme",
       "route": "themes/brand-symbol-and-value",
       "summary": "讨论品牌符号如何塑造用户对价格、品质和价值的判断。",
+      "status": null,
+      "degree": 2
+    },
+    {
+      "id": "concept:platform-double-standard",
+      "key": "platform-double-standard",
+      "label": "平台双标",
+      "fullLabel": "平台双标",
+      "type": "concept",
+      "route": "concepts/platform-double-standard",
+      "summary": "平台执行规则时若按账号商业价值区别处理，治理就会变成选择性守门。",
       "status": null,
       "degree": 2
     },
@@ -3897,17 +3996,6 @@
       "degree": 2
     },
     {
-      "id": "theme:film-industry-and-traffic-logic",
-      "key": "film-industry-and-traffic-logic",
-      "label": "影视工业与流量逻辑",
-      "fullLabel": "影视工业与流量逻辑",
-      "type": "theme",
-      "route": "themes/film-industry-and-traffic-logic",
-      "summary": "关注影视生产如何越来越服从人设、粉丝和宣发流量，而非角色与作品本身。",
-      "status": null,
-      "degree": 2
-    },
-    {
       "id": "concept:user-funded-testing",
       "key": "user-funded-testing",
       "label": "用户代偿测试",
@@ -4161,17 +4249,6 @@
       "degree": 1
     },
     {
-      "id": "theme:bullshit-politics-and-historical-narratives",
-      "key": "bullshit-politics-and-historical-narratives",
-      "label": "扯淡政治与历史叙事",
-      "fullLabel": "扯淡政治与历史叙事",
-      "type": "theme",
-      "route": "themes/bullshit-politics-and-historical-narratives",
-      "summary": "讨论对真相冷漠的话术如何进入历史解释和身份动员。",
-      "status": null,
-      "degree": 1
-    },
-    {
       "id": "concept:city-soul-gap",
       "key": "city-soul-gap",
       "label": "城市灵魂落差",
@@ -4326,6 +4403,17 @@
       "degree": 1
     },
     {
+      "id": "person:mattias-grafstrom",
+      "key": "mattias-grafstrom",
+      "label": "格拉夫斯特伦",
+      "fullLabel": "格拉夫斯特伦",
+      "type": "person",
+      "route": "people/mattias-grafstrom",
+      "summary": "格拉夫斯特伦是瑞典/荷兰背景的足球行政人物、FIFA 现任秘书长(2024 年正式任),节目里他是 FIFA 在华推广动作的执行代表。",
+      "status": null,
+      "degree": 1
+    },
+    {
       "id": "model:individuation-three-stage",
       "key": "individuation-three-stage",
       "label": "个体化三阶段模型",
@@ -4370,17 +4458,6 @@
       "degree": 1
     },
     {
-      "id": "concept:audience-filter-labor",
-      "key": "audience-filter-labor",
-      "label": "观众筛选劳动",
-      "fullLabel": "观众筛选劳动",
-      "type": "concept",
-      "route": "concepts/audience-filter-labor",
-      "summary": "用户以为自己在消费内容，实际上也在用停留、滑动、点赞和关注替平台筛选内容。",
-      "status": null,
-      "degree": 1
-    },
-    {
       "id": "model:rule-charity-bridge",
       "key": "rule-charity-bridge",
       "label": "规则善意桥接模型",
@@ -4399,17 +4476,6 @@
       "type": "person",
       "route": "people/guo-wei-academic",
       "summary": "郭伟是曾以江苏科技大学首席科学家、博导身份进入舆论的学术争议人物，节目借他观察高校人才引进和学术官僚系统怎样托举空壳履历。",
-      "status": null,
-      "degree": 1
-    },
-    {
-      "id": "concept:national-identity-hostage",
-      "key": "national-identity-hostage",
-      "label": "国家身份绑架",
-      "fullLabel": "国家身份绑架",
-      "type": "concept",
-      "route": "concepts/national-identity-hostage",
-      "summary": "国家身份绑架指个体把私人冲突抬升为国家受辱，用共同体身份替个人行为兜底。",
       "status": null,
       "degree": 1
     },
@@ -4799,17 +4865,6 @@
       "degree": 1
     },
     {
-      "id": "theme:content-regulation-and-short-drama",
-      "key": "content-regulation-and-short-drama",
-      "label": "内容监管与短剧崛起",
-      "fullLabel": "内容监管与短剧崛起",
-      "type": "theme",
-      "route": "themes/content-regulation-and-short-drama",
-      "summary": "讨论长剧、电影、网剧和短剧在不同审核路径下如何重新竞争。",
-      "status": null,
-      "degree": 1
-    },
-    {
       "id": "concept:internal-migration",
       "key": "internal-migration",
       "label": "内移民",
@@ -4883,17 +4938,6 @@
       "type": "concept",
       "route": "concepts/platform-meme-template",
       "summary": "能被低成本复刻、改写和接龙的开放框架，是平台热梗扩散的关键接口。",
-      "status": null,
-      "degree": 1
-    },
-    {
-      "id": "concept:platform-double-standard",
-      "key": "platform-double-standard",
-      "label": "平台双标",
-      "fullLabel": "平台双标",
-      "type": "concept",
-      "route": "concepts/platform-double-standard",
-      "summary": "平台执行规则时若按账号商业价值区别处理，治理就会变成选择性守门。",
       "status": null,
       "degree": 1
     },
@@ -5162,6 +5206,17 @@
       "degree": 1
     },
     {
+      "id": "person:arsene-wenger",
+      "key": "arsene-wenger",
+      "label": "温格",
+      "fullLabel": "温格",
+      "type": "person",
+      "route": "people/arsene-wenger",
+      "summary": "温格是法国足球教练、英超阿森纳 1996-2018 年主帅,2019 年起任 FIFA 全球足球发展总监,节目借他观察 FIFA 在中国市场的推广动作。",
+      "status": null,
+      "degree": 1
+    },
+    {
       "id": "concept:cultural-plunder",
       "key": "cultural-plunder",
       "label": "文化性掠夺",
@@ -5246,17 +5301,6 @@
       "type": "person",
       "route": "people/xin-jie",
       "summary": "辛杰曾任深圳地铁和万科关键负责人，节目借他观察万科续命链条、地方国资输血和风险责任转移。",
-      "status": null,
-      "degree": 1
-    },
-    {
-      "id": "theme:new-media-political-mobilization",
-      "key": "new-media-political-mobilization",
-      "label": "新媒体政治动员",
-      "fullLabel": "新媒体政治动员",
-      "type": "theme",
-      "route": "themes/new-media-political-mobilization",
-      "summary": "候选人和政治叙事不再必须依附旧媒体，而可以直接通过新媒体组织情绪、认同和支持。",
       "status": null,
       "degree": 1
     },
@@ -5356,6 +5400,17 @@
       "type": "theme",
       "route": "themes/pandemic-wealth-and-public-costs",
       "summary": "公共危机产生的超额财富，往往会被更快地资本化和分配，而公共代价却留在普通人身上。",
+      "status": null,
+      "degree": 1
+    },
+    {
+      "id": "person:gianni-infantino",
+      "key": "gianni-infantino",
+      "label": "因凡蒂诺",
+      "fullLabel": "因凡蒂诺",
+      "type": "person",
+      "route": "people/gianni-infantino",
+      "summary": "因凡蒂诺是瑞士法律背景的体育组织行政人物、FIFA 现任主席(2016 年起),节目里他是 FIFA 在华推广动作的最终决策者。",
       "status": null,
       "degree": 1
     },
@@ -10684,6 +10739,106 @@
     {
       "source": "episode:EP145",
       "target": "theme:education-and-ai-misalignment",
+      "kind": "episode-theme"
+    },
+    {
+      "source": "episode:EP146",
+      "target": "concept:cost-shifting",
+      "kind": "episode-concept"
+    },
+    {
+      "source": "episode:EP146",
+      "target": "concept:national-identity-hostage",
+      "kind": "episode-concept"
+    },
+    {
+      "source": "episode:EP146",
+      "target": "concept:signal-price-distortion",
+      "kind": "episode-concept"
+    },
+    {
+      "source": "episode:EP146",
+      "target": "model:narrative-instrumentalization",
+      "kind": "episode-model"
+    },
+    {
+      "source": "episode:EP146",
+      "target": "model:narrative-leverage",
+      "kind": "episode-model"
+    },
+    {
+      "source": "episode:EP146",
+      "target": "person:arsene-wenger",
+      "kind": "episode-person"
+    },
+    {
+      "source": "episode:EP146",
+      "target": "person:mattias-grafstrom",
+      "kind": "episode-person"
+    },
+    {
+      "source": "episode:EP146",
+      "target": "person:gianni-infantino",
+      "kind": "episode-person"
+    },
+    {
+      "source": "episode:EP146",
+      "target": "theme:state-business-entanglement",
+      "kind": "episode-theme"
+    },
+    {
+      "source": "episode:EP146",
+      "target": "theme:new-media-political-mobilization",
+      "kind": "episode-theme"
+    },
+    {
+      "source": "episode:EP146",
+      "target": "theme:bullshit-politics-and-historical-narratives",
+      "kind": "episode-theme"
+    },
+    {
+      "source": "episode:EP147",
+      "target": "concept:platform-double-standard",
+      "kind": "episode-concept"
+    },
+    {
+      "source": "episode:EP147",
+      "target": "concept:national-identity-hostage",
+      "kind": "episode-concept"
+    },
+    {
+      "source": "episode:EP147",
+      "target": "concept:audience-filter-labor",
+      "kind": "episode-concept"
+    },
+    {
+      "source": "episode:EP147",
+      "target": "model:narrative-instrumentalization",
+      "kind": "episode-model"
+    },
+    {
+      "source": "episode:EP147",
+      "target": "model:authority-misinfluence",
+      "kind": "episode-model"
+    },
+    {
+      "source": "episode:EP147",
+      "target": "theme:film-industry-and-traffic-logic",
+      "kind": "episode-theme"
+    },
+    {
+      "source": "episode:EP147",
+      "target": "theme:content-regulation-and-short-drama",
+      "kind": "episode-theme"
+    },
+    {
+      "source": "episode:EP147",
+      "target": "theme:new-media-political-mobilization",
+      "kind": "episode-theme"
+    },
+    {
+      "source": "episode:EP147",
+      "target": "theme:platform-governance-and-folk-discourse",
       "kind": "episode-theme"
     },
     {
