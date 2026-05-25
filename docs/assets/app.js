@@ -1,4 +1,4 @@
-import { destroyGraphView, renderGraphView } from './graph-view.js?v=1779741227085';
+import { destroyGraphView, renderGraphView } from './graph-view.js?v=1779742259450';
 
 const app = document.getElementById('app');
 const sidebar = document.getElementById('sidebar');
