@@ -1,5 +1,9 @@
 {
   "EP147": {
+    "bilibili": {
+      "platform": "bilibili",
+      "url": "https://www.bilibili.com/video/BV1diGE6CE59/?spm_id_from=333.1387.homepage.video_card.click"
+    },
     "youtube": {
       "platform": "youtube",
       "url": "https://www.youtube.com/watch?v=QcSlw8y9M7k"
