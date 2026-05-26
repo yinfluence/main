@@ -123,12 +123,21 @@ function layoutSkeleton() {
   const TOP_CONCEPTS = 22;
   const TOP_THEMES = 28;
 
-  const models = nodes.filter(n => n.type === 'model').slice();
-  models.sort((a, b) => (b.degree || 0) - (a.degree || 0));
-  const concepts = nodes.filter(n => n.type === 'concept').slice();
-  concepts.sort((a, b) => (b.degree || 0) - (a.degree || 0));
-  const themes = nodes.filter(n => n.type === 'theme').slice();
-  themes.sort((a, b) => (b.degree || 0) - (a.degree || 0));
+  // Reset skeleton flag so re-layout (resize) re-samples freshly
+  for (const n of nodes) n.skeleton = false;
+
+  // Fisher-Yates shuffle for unbiased random sampling
+  const shuffle = (arr) => {
+    for (let i = arr.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [arr[i], arr[j]] = [arr[j], arr[i]];
+    }
+    return arr;
+  };
+
+  const models = shuffle(nodes.filter(n => n.type === 'model').slice());
+  const concepts = shuffle(nodes.filter(n => n.type === 'concept').slice());
+  const themes = shuffle(nodes.filter(n => n.type === 'theme').slice());
 
   const skeletonModels = models.slice(0, TOP_MODELS);
   const skeletonConcepts = concepts.slice(0, TOP_CONCEPTS);
@@ -251,10 +260,14 @@ function render() {
     c.setAttribute('data-id', n.id);
     c.setAttribute('data-node-id', n.id);
     c.style.cursor = 'pointer';
-    c.addEventListener('click', (e) => {
+    const onCircleHit = (e) => {
       e.stopPropagation();
+      e.preventDefault();
+      window._suppressClickReset = performance.now();
       if (focusedId === n.id) navigate(n); else focusNode(n.id);
-    });
+    };
+    c.addEventListener('pointerdown', onCircleHit);
+    c.addEventListener('mousedown', onCircleHit);
     c.addEventListener('mouseenter', (e) => onHoverEnter(n, e));
     c.addEventListener('mousemove', (e) => moveTooltip(e));
     c.addEventListener('mouseleave', onHoverLeave);
@@ -274,10 +287,8 @@ function render() {
     t.textContent = n.label;
     t.setAttribute('data-node-id', n.id);
     t.style.cursor = 'pointer';
-    t.addEventListener('click', (e) => {
-      e.stopPropagation();
-      if (focusedId === n.id) navigate(n); else focusNode(n.id);
-    });
+    t.addEventListener('pointerdown', onCircleHit);
+    t.addEventListener('mousedown', onCircleHit);
     t.addEventListener('mouseenter', (e) => onHoverEnter(n, e));
     t.addEventListener('mousemove', (e) => moveTooltip(e));
     t.addEventListener('mouseleave', onHoverLeave);
@@ -352,7 +363,9 @@ function ensurePromotedCenter(node) {
   c.setAttribute('data-id', node.id);
   c.setAttribute('data-node-id', node.id);
   c.style.cursor = 'pointer';
-  c.addEventListener('click', (e) => { e.stopPropagation(); navigate(node); });
+  const onPromotedHit = (e) => { e.stopPropagation(); e.preventDefault(); window._suppressClickReset = performance.now(); navigate(node); };
+  c.addEventListener('pointerdown', onPromotedHit);
+  c.addEventListener('mousedown', onPromotedHit);
   c.addEventListener('mouseenter', (e) => onHoverEnter(node, e));
   c.addEventListener('mousemove', (e) => moveTooltip(e));
   c.addEventListener('mouseleave', onHoverLeave);
@@ -368,7 +381,8 @@ function ensurePromotedCenter(node) {
   t.textContent = node.label;
   t.setAttribute('data-node-id', node.id);
   t.style.cursor = 'pointer';
-  t.addEventListener('click', (e) => { e.stopPropagation(); navigate(node); });
+  t.addEventListener('pointerdown', onPromotedHit);
+  t.addEventListener('mousedown', onPromotedHit);
   t.addEventListener('mouseenter', (e) => onHoverEnter(node, e));
   t.addEventListener('mousemove', (e) => moveTooltip(e));
   t.addEventListener('mouseleave', onHoverLeave);
@@ -468,11 +482,14 @@ function animateFocus(center, satellites) {
     c.setAttribute('opacity', 0);
     c.setAttribute('data-node-id', node.id);
     c.style.cursor = 'pointer';
-    c.addEventListener('click', (e) => {
+    const onSatHit = (e) => {
       e.stopPropagation();
-      // Click satellite → it becomes the new center; second click on the now-centered circle navigates.
-      focusNode(node.id);
-    });
+      e.preventDefault();
+      window._suppressClickReset = performance.now();
+      if (focusedId === node.id) navigate(node); else focusNode(node.id);
+    };
+    c.addEventListener('pointerdown', onSatHit);
+    c.addEventListener('mousedown', onSatHit);
     c.addEventListener('mouseenter', (e) => onHoverEnter(node, e));
     c.addEventListener('mousemove', (e) => moveTooltip(e));
     c.addEventListener('mouseleave', onHoverLeave);
@@ -489,7 +506,8 @@ function animateFocus(center, satellites) {
     t.textContent = node.label;
     t.setAttribute('data-node-id', node.id);
     t.style.cursor = 'pointer';
-    t.addEventListener('click', (e) => { e.stopPropagation(); focusNode(node.id); });
+    t.addEventListener('pointerdown', onSatHit);
+    t.addEventListener('mousedown', onSatHit);
     t.addEventListener('mouseenter', (e) => onHoverEnter(node, e));
     t.addEventListener('mousemove', (e) => moveTooltip(e));
     t.addEventListener('mouseleave', onHoverLeave);
@@ -694,6 +712,17 @@ function moveTooltip(event) {
   tooltip.style.top = (event.clientY + 14) + 'px';
 }
 function hideTooltip() { tooltip.style.opacity = 0; }
+
+// Fallback: Chrome sometimes misses mouseleave on SVG elements whose position changes mid-animation.
+// Globally check on mousemove whether cursor is over any [data-node-id] element; if not, hide tooltip.
+window.addEventListener('mousemove', (e) => {
+  if (+tooltip.style.opacity === 0) return;
+  const el = e.target;
+  if (!el || !(el.closest && el.closest('[data-node-id]'))) {
+    hideTooltip();
+    clearHoverEmphasis();
+  }
+});
 function escapeHtml(s) { return String(s).replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c])); }
 
 // === Pan / zoom ===
@@ -753,7 +782,9 @@ function attachInteraction() {
   }, { passive: false });
 
   svg.addEventListener('click', (e) => {
-    if (e.target.tagName !== 'circle' && focusedId) resetFocus();
+    const tag = e.target.tagName;
+    const recentFocus = window._suppressClickReset && (performance.now() - window._suppressClickReset) < 400;
+    if (tag !== 'circle' && tag !== 'text' && focusedId && !recentFocus) resetFocus();
   });
 
   window.addEventListener('keydown', (e) => {
