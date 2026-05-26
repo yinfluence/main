@@ -1,4 +1,4 @@
-import { destroyGraphView, renderGraphView } from './graph-view.js?v=1779742259450';
+import { destroyGraphView, renderGraphView } from './graph-view.js';
 
 const app = document.getElementById('app');
 const sidebar = document.getElementById('sidebar');
@@ -25,6 +25,17 @@ const HOME_PLATFORM_LINKS = [
   }
 ];
 const WEBSITE_LOG_ENTRIES = [
+  {
+    date: '2026-05-26',
+    title: '新增 EP148 德国华人迷奸案与应试教育人格批判',
+    items: [
+      '新增 EP148《德国华人迷奸8人组！专挑中国女留学生和熟人下手！4500人围观的罪恶背后根源。》，YouTube 入口已写入，B 站暂未上架。',
+      '本期把哈工大、慕尼黑工大、北大医学部背景的"德国老司机驾校"团伙作为应试教育产出精致利己主义者的极端样本，串起跨境药物链条、群内攀比与 4500 人围观三条线。',
+      '新增 5 个高价值关键词词条：张大鹏（团伙头目）、蒋中仪（同居女友受害样本）、邵之廷（医学顾问角色）、德国老司机驾校（加密群组织）、精致利己主义（节目反复使用的人格概念）。',
+      '把 EP148 反向回填到 civilization-power-and-vulnerable-bodies、exam-centered-education-and-person-formation 两个主题，exam-centered-discipline、child-toolification、organizational-silence 三个概念，以及 screening-machine 模型。',
+      'SOP 新增 9.2.1 节硬规则：每期新 EP 带来的核心人物 / 组织 / 概念词必须独立写 content/keywords/*.json 词条，并按 kind 类型字段写满，不允许只丢进 tags 让构建脚本生成空页。'
+    ]
+  },
   {
     date: '2026-05-22',
     title: '车圈笑傲江湖地图实验页',
