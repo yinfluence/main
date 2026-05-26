@@ -4816,16 +4816,28 @@ function renderEpisodeFreshBadge(episode, { compact = false } = {}) {
   return `<span class="episode-fresh-badge${compact ? ' compact' : ''}">新</span>`;
 }
 
+function shanghaiCalendarDayIndex(date) {
+  const parts = new Intl.DateTimeFormat('en-CA', {
+    timeZone: 'Asia/Shanghai',
+    year: 'numeric',
+    month: '2-digit',
+    day: '2-digit',
+  }).formatToParts(date).reduce((acc, p) => {
+    if (p.type !== 'literal') acc[p.type] = p.value;
+    return acc;
+  }, {});
+  return Date.UTC(Number(parts.year), Number(parts.month) - 1, Number(parts.day)) / 86400000;
+}
+
 function formatRelativePublishTime(publishedAt) {
   if (!publishedAt) return '';
-  const time = new Date(publishedAt).getTime();
+  const published = new Date(publishedAt);
+  const time = published.getTime();
   if (!Number.isFinite(time)) return '';
-  const now = Date.now();
-  const diffMs = now - time;
-  if (diffMs < 0) return '即将发布';
-  const day = 24 * 60 * 60 * 1000;
-  const diffDays = Math.floor(diffMs / day);
-  if (diffDays === 0) return '今天发布';
+  const now = new Date();
+  if (time > now.getTime()) return '即将发布';
+  const diffDays = shanghaiCalendarDayIndex(now) - shanghaiCalendarDayIndex(published);
+  if (diffDays <= 0) return '今天发布';
   if (diffDays === 1) return '昨天发布';
   if (diffDays === 2) return '前天发布';
   if (diffDays < 7) return `${diffDays} 天前发布`;
