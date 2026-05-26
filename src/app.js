@@ -4835,9 +4835,9 @@ function formatRelativePublishTime(publishedAt) {
   const time = published.getTime();
   if (!Number.isFinite(time)) return '';
   const now = new Date();
-  if (time > now.getTime()) return '即将发布';
   const diffDays = shanghaiCalendarDayIndex(now) - shanghaiCalendarDayIndex(published);
-  if (diffDays <= 0) return '今天发布';
+  if (diffDays < 0) return '即将发布';
+  if (diffDays === 0) return '今天发布';
   if (diffDays === 1) return '昨天发布';
   if (diffDays === 2) return '前天发布';
   if (diffDays < 7) return `${diffDays} 天前发布`;
