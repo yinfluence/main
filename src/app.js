@@ -27,6 +27,17 @@ const HOME_PLATFORM_LINKS = [
 const WEBSITE_LOG_ENTRIES = [
   {
     date: '2026-05-26',
+    title: '知识图谱交互修复与骨架节点随机抽样',
+    items: [
+      '修复节点点击无响应问题：原本用 click 事件，节点呼吸动画下 mousedown 与 mouseup 经常不在同一元素导致 click 不触发；现改用 pointerdown + mousedown 双绑定。',
+      '修复点击节点后展开瞬间被撤销的问题：focusNode 会把节点 snap 回 home 位置，松手时光标落在空白处，svg 的"点空白处复位"逻辑被误触发；新增 400ms 抑制窗口隔离。',
+      '修复 Chrome 上鼠标移开后悬浮介绍卡不消失：Chrome 在 SVG 节点位置变动时偶发丢失 mouseleave，加全局 mousemove 兜底，鼠标不在节点上就强制关闭 tooltip。',
+      '骨架节点选取规则从"按连接数取前 N"改为 Fisher-Yates 随机抽样：每次刷新页面，14 个思想模型 / 22 个概念 / 28 个主题都是从全集里随机抽取，避免高 degree 节点垄断展示。',
+      '悬浮介绍卡智能定位：靠近屏幕右/下边缘时自动翻转到光标另一侧，并限制最大高度为视口 70%，超长摘要可滚动查看，不再被裁掉。'
+    ]
+  },
+  {
+    date: '2026-05-26',
     title: '新增 EP148 德国华人迷奸案与应试教育人格批判',
     items: [
       '新增 EP148《德国华人迷奸8人组！专挑中国女留学生和熟人下手！4500人围观的罪恶背后根源。》，YouTube 入口已写入，B 站暂未上架。',

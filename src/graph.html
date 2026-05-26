@@ -11,7 +11,7 @@
   .hint { position: fixed; bottom: 18px; left: 18px; background: rgba(255,255,255,0.86); border-radius: 14px; padding: 10px 14px; font-size: 12.5px; color: #6a5d4d; box-shadow: 0 2px 10px rgba(60,40,20,0.08); max-width: 420px; }
   .title-bar { position: fixed; top: 18px; right: 18px; background: rgba(255,255,255,0.86); border-radius: 14px; padding: 10px 16px; font-size: 13px; color: #443a31; box-shadow: 0 2px 10px rgba(60,40,20,0.08); }
   .title-bar a { color: #7c5c1a; text-decoration: none; margin-left: 10px; }
-  .tooltip { position: fixed; pointer-events: none; background: #fff; border-radius: 10px; padding: 10px 14px; font-size: 13px; box-shadow: 0 4px 14px rgba(60,40,20,0.14); max-width: 280px; opacity: 0; transition: opacity .12s; }
+  .tooltip { position: fixed; pointer-events: none; background: #fff; border-radius: 10px; padding: 10px 14px; font-size: 13px; box-shadow: 0 4px 14px rgba(60,40,20,0.14); max-width: 320px; max-height: 70vh; overflow-y: auto; opacity: 0; transition: opacity .12s; }
   .tooltip h4 { margin: 0 0 4px 0; font-size: 14px; }
   .tooltip .meta { font-size: 11.5px; color: #8b7d6a; margin-bottom: 6px; }
   .tooltip .summary { font-size: 12px; line-height: 1.5; color: #5a4f40; }
@@ -639,13 +639,26 @@ function resetFocus() {
 }
 
 // === Tooltip ===
+function positionTooltip(event) {
+  // Smart placement: flip to other side of cursor if tooltip would go off-screen
+  const margin = 12;
+  const tw = tooltip.offsetWidth || 280;
+  const th = tooltip.offsetHeight || 80;
+  let left = event.clientX + 14;
+  let top = event.clientY + 14;
+  if (left + tw + margin > window.innerWidth) left = event.clientX - tw - 14;
+  if (top + th + margin > window.innerHeight) top = event.clientY - th - 14;
+  if (left < margin) left = margin;
+  if (top < margin) top = margin;
+  tooltip.style.left = left + 'px';
+  tooltip.style.top = top + 'px';
+}
 function showTooltip(node, event) {
   tooltip.innerHTML = `<h4>${escapeHtml(node.fullLabel || node.label)}</h4>
     <div class="meta">${TYPE_LABEL[node.type] || node.type} · ${node.degree || 0} 条连接</div>
     ${node.summary ? `<div class="summary">${escapeHtml(node.summary)}</div>` : ''}`;
-  tooltip.style.left = (event.clientX + 14) + 'px';
-  tooltip.style.top = (event.clientY + 14) + 'px';
   tooltip.style.opacity = 1;
+  positionTooltip(event);
 }
 function navigate(routeOrNode) {
   const route = typeof routeOrNode === 'string' ? routeOrNode : routeOrNode?.route;
@@ -708,8 +721,7 @@ function onHoverLeave() {
 }
 
 function moveTooltip(event) {
-  tooltip.style.left = (event.clientX + 14) + 'px';
-  tooltip.style.top = (event.clientY + 14) + 'px';
+  positionTooltip(event);
 }
 function hideTooltip() { tooltip.style.opacity = 0; }
 
