@@ -2,7 +2,7 @@
   "meta": {
     "title": "颖响力知识库",
     "subtitle": "节目、概念、思想模型的结构化索引",
-    "updatedAt": "2026-05-26T11:54:57.656Z"
+    "updatedAt": "2026-05-26T12:18:32.679Z"
   },
   "stats": {
     "episodes": 148,
@@ -14453,8 +14453,7 @@
       "videoLinks": [
         {
           "platform": "bilibili",
-          "status": "unavailable",
-          "note": "暂未上架"
+          "url": "https://www.bilibili.com/video/BV1fBGo6dESu/?spm_id_from=333.788.top_right_bar_window_dynamic.content.click"
         },
         {
           "platform": "youtube",
