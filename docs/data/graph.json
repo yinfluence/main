@@ -2,13 +2,13 @@
   "meta": {
     "title": "颖响力知识图谱",
     "subtitle": "节目、概念、模型、人物、主题之间的可视化连接网络",
-    "nodeCount": 512,
-    "linkCount": 1085,
+    "nodeCount": 515,
+    "linkCount": 1097,
     "typeCounts": {
       "model": 66,
-      "episode": 148,
-      "concept": 143,
-      "person": 64,
+      "episode": 149,
+      "concept": 144,
+      "person": 65,
       "theme": 91
     }
   },
@@ -278,6 +278,17 @@
       "degree": 12
     },
     {
+      "id": "episode:EP149",
+      "key": "EP149",
+      "label": "EP149",
+      "fullLabel": "EP149 · 中新关系大裂痕？李显龙绕开北京访华真相：新加坡投资超级项目与东南亚变局。",
+      "type": "episode",
+      "route": "episodes/EP149",
+      "summary": "节目从国内自媒体炒作的\"李显龙绕开北京、中新关系出现大裂痕\"切入，先拆穿谣言：李显龙本就没打算去北京开高层会谈，他要的是下沉到中国经济里亲眼考察实况。顺着五天行程——广西看西部陆海新通道与平陆运河、上海看人工智能与外资总部——节目把这趟定性为务实低调的经济考察，目的是为黄循财政府的下一步和新加坡的投资方向提供依据。再把\"分散投资风险\"接到菲律宾选边站和东南亚动荡上，落点是小国在中美博弈下如何靠平衡与规则保住生存空间。",
+      "status": "curated",
+      "degree": 12
+    },
+    {
       "id": "theme:local-fiscal-stress-and-hidden-debt",
       "key": "local-fiscal-stress-and-hidden-debt",
       "label": "地方财政与隐性债务",
@@ -296,6 +307,17 @@
       "type": "theme",
       "route": "themes/maritime-chokepoints-and-route-order",
       "summary": "讨论海峡、运河和关键航道如何把地理位置变成规则、保险、资本和军事的综合权力。",
+      "status": null,
+      "degree": 11
+    },
+    {
+      "id": "model:chokepoint-order-model",
+      "key": "chokepoint-order-model",
+      "label": "海峡秩序模型",
+      "fullLabel": "海峡秩序模型",
+      "type": "model",
+      "route": "models/chokepoint-order-model",
+      "summary": "真正决定咽喉通道价值的，不只是地理位置，而是谁定义通行规则、风险定价与法律边界。",
       "status": null,
       "degree": 11
     },
@@ -366,13 +388,13 @@
       "degree": 10
     },
     {
-      "id": "model:chokepoint-order-model",
-      "key": "chokepoint-order-model",
-      "label": "海峡秩序模型",
-      "fullLabel": "海峡秩序模型",
-      "type": "model",
-      "route": "models/chokepoint-order-model",
-      "summary": "真正决定咽喉通道价值的，不只是地理位置，而是谁定义通行规则、风险定价与法律边界。",
+      "id": "theme:singapore-and-small-state-survival",
+      "key": "singapore-and-small-state-survival",
+      "label": "新加坡与小国生存术",
+      "fullLabel": "新加坡与小国生存术",
+      "type": "theme",
+      "route": "themes/singapore-and-small-state-survival",
+      "summary": "讨论新加坡如何把规则、海峡、人才和谨慎外交组合成一套小国长期生存方法。",
       "status": null,
       "degree": 10
     },
@@ -432,6 +454,17 @@
       "degree": 9
     },
     {
+      "id": "model:rule-anchored-small-state-model",
+      "key": "rule-anchored-small-state-model",
+      "label": "规则锚定型小国生存",
+      "fullLabel": "规则锚定型小国生存",
+      "type": "model",
+      "route": "models/rule-anchored-small-state-model",
+      "summary": "小国要长期活下来，不能只靠地理好运，更要靠规则信誉、理性政府和可预期的制度自我约束。",
+      "status": null,
+      "degree": 9
+    },
+    {
       "id": "model:value-capture",
       "key": "value-capture",
       "label": "价值捕获",
@@ -450,17 +483,6 @@
       "type": "model",
       "route": "models/authority-misinfluence",
       "summary": "权威影响模型解释单点权威如何压缩组织独立判断，使成员更容易服从而非纠偏。",
-      "status": null,
-      "degree": 9
-    },
-    {
-      "id": "theme:singapore-and-small-state-survival",
-      "key": "singapore-and-small-state-survival",
-      "label": "新加坡与小国生存术",
-      "fullLabel": "新加坡与小国生存术",
-      "type": "theme",
-      "route": "themes/singapore-and-small-state-survival",
-      "summary": "讨论新加坡如何把规则、海峡、人才和谨慎外交组合成一套小国长期生存方法。",
       "status": null,
       "degree": 9
     },
@@ -641,13 +663,24 @@
       "degree": 8
     },
     {
-      "id": "model:rule-anchored-small-state-model",
-      "key": "rule-anchored-small-state-model",
-      "label": "规则锚定型小国生存",
-      "fullLabel": "规则锚定型小国生存",
+      "id": "model:proxy-containment-ring",
+      "key": "proxy-containment-ring",
+      "label": "代理围堵环",
+      "fullLabel": "代理围堵环",
       "type": "model",
-      "route": "models/rule-anchored-small-state-model",
-      "summary": "小国要长期活下来，不能只靠地理好运，更要靠规则信誉、理性政府和可预期的制度自我约束。",
+      "route": "models/proxy-containment-ring",
+      "summary": "代理围堵环解释大国如何通过盟友、代理人和通道控制分摊成本、封堵对手。",
+      "status": null,
+      "degree": 8
+    },
+    {
+      "id": "theme:southeast-asia-fragmentation-and-bloc-competition",
+      "key": "southeast-asia-fragmentation-and-bloc-competition",
+      "label": "东南亚裂变与集团竞争",
+      "fullLabel": "东南亚裂变与集团竞争",
+      "type": "theme",
+      "route": "themes/southeast-asia-fragmentation-and-bloc-competition",
+      "summary": "讨论东南亚如何从缓冲地带变成各方拉扯、重新站队和内部裂变并行发生的高风险区域。",
       "status": null,
       "degree": 8
     },
@@ -1011,28 +1044,6 @@
       "type": "concept",
       "route": "concepts/cost-shifting",
       "summary": "组织内部的高额非生产性成本，最终会通过价格、规则或风险转嫁给外部承担者。",
-      "status": null,
-      "degree": 7
-    },
-    {
-      "id": "model:proxy-containment-ring",
-      "key": "proxy-containment-ring",
-      "label": "代理围堵环",
-      "fullLabel": "代理围堵环",
-      "type": "model",
-      "route": "models/proxy-containment-ring",
-      "summary": "代理围堵环解释大国如何通过盟友、代理人和通道控制分摊成本、封堵对手。",
-      "status": null,
-      "degree": 7
-    },
-    {
-      "id": "theme:southeast-asia-fragmentation-and-bloc-competition",
-      "key": "southeast-asia-fragmentation-and-bloc-competition",
-      "label": "东南亚裂变与集团竞争",
-      "fullLabel": "东南亚裂变与集团竞争",
-      "type": "theme",
-      "route": "themes/southeast-asia-fragmentation-and-bloc-competition",
-      "summary": "讨论东南亚如何从缓冲地带变成各方拉扯、重新站队和内部裂变并行发生的高风险区域。",
       "status": null,
       "degree": 7
     },
@@ -1418,6 +1429,17 @@
       "type": "model",
       "route": "models/narrative-instrumentalization",
       "summary": "叙事工具化模型解释叙事的主要功能从解释现实转向组织情绪和划分阵营。",
+      "status": null,
+      "degree": 6
+    },
+    {
+      "id": "concept:active-neutrality",
+      "key": "active-neutrality",
+      "label": "主动中立",
+      "fullLabel": "主动中立",
+      "type": "concept",
+      "route": "concepts/active-neutrality",
+      "summary": "真正可持续的中立不是谁都不得罪，而是在坚持规则的前提下主动参与秩序塑造。",
       "status": null,
       "degree": 6
     },
@@ -1818,6 +1840,17 @@
       "degree": 5
     },
     {
+      "id": "concept:pragmatic-legitimacy",
+      "key": "pragmatic-legitimacy",
+      "label": "务实合法性",
+      "fullLabel": "务实合法性",
+      "type": "concept",
+      "route": "concepts/pragmatic-legitimacy",
+      "summary": "政权或共同体的稳定感，常来自普通人能持续获得可感的生活改善和秩序保障。",
+      "status": null,
+      "degree": 5
+    },
+    {
       "id": "person:zhang-xuefeng",
       "key": "zhang-xuefeng",
       "label": "张雪峰",
@@ -1858,17 +1891,6 @@
       "type": "theme",
       "route": "themes/middle-class-descent-and-stratification",
       "summary": "当中间层缺乏缓冲带时，经济下行会迅速转成身份下坠、关系断裂和社会分层加固。",
-      "status": null,
-      "degree": 5
-    },
-    {
-      "id": "concept:active-neutrality",
-      "key": "active-neutrality",
-      "label": "主动中立",
-      "fullLabel": "主动中立",
-      "type": "concept",
-      "route": "concepts/active-neutrality",
-      "summary": "真正可持续的中立不是谁都不得罪，而是在坚持规则的前提下主动参与秩序塑造。",
       "status": null,
       "degree": 5
     },
@@ -2203,6 +2225,17 @@
       "degree": 4
     },
     {
+      "id": "person:lawrence-wong",
+      "key": "lawrence-wong",
+      "label": "黄循财",
+      "fullLabel": "黄循财",
+      "type": "person",
+      "route": "people/lawrence-wong",
+      "summary": "黄循财是新加坡总理兼财政部长，节目借他观察新加坡主动中立、国家身份边界和国家信用履约。",
+      "status": null,
+      "degree": 4
+    },
+    {
       "id": "concept:gray-oil-network",
       "key": "gray-oil-network",
       "label": "灰色石油网络",
@@ -2302,13 +2335,13 @@
       "degree": 4
     },
     {
-      "id": "concept:pragmatic-legitimacy",
-      "key": "pragmatic-legitimacy",
-      "label": "务实合法性",
-      "fullLabel": "务实合法性",
-      "type": "concept",
-      "route": "concepts/pragmatic-legitimacy",
-      "summary": "政权或共同体的稳定感，常来自普通人能持续获得可感的生活改善和秩序保障。",
+      "id": "model:small-state-balancing-model",
+      "key": "small-state-balancing-model",
+      "label": "小国平衡术",
+      "fullLabel": "小国平衡术",
+      "type": "model",
+      "route": "models/small-state-balancing-model",
+      "summary": "小国平衡术解释小国在大国之间维持生存空间，靠位置、合法性和现实利益而非纯姿态。",
       "status": null,
       "degree": 4
     },
@@ -2665,17 +2698,6 @@
       "degree": 3
     },
     {
-      "id": "person:lawrence-wong",
-      "key": "lawrence-wong",
-      "label": "黄循财",
-      "fullLabel": "黄循财",
-      "type": "person",
-      "route": "people/lawrence-wong",
-      "summary": "黄循财是新加坡总理兼财政部长，节目借他观察新加坡主动中立、国家身份边界和国家信用履约。",
-      "status": null,
-      "degree": 3
-    },
-    {
       "id": "model:technology-wave-cycle",
       "key": "technology-wave-cycle",
       "label": "技术浪潮周期",
@@ -2782,6 +2804,17 @@
       "type": "person",
       "route": "people/lei-jun",
       "summary": "雷军是小米集团创始人、董事长兼 CEO，节目借他观察创始人 IP、粉丝动员和速成工程进入汽车产业后的风险。",
+      "status": null,
+      "degree": 3
+    },
+    {
+      "id": "person:lee-hsien-loong",
+      "key": "lee-hsien-loong",
+      "label": "李显龙",
+      "fullLabel": "李显龙",
+      "type": "person",
+      "route": "people/lee-hsien-loong",
+      "summary": "李显龙是新加坡前总理、现任国务资政，节目借他理解新加坡务实外交、国家身份边界和小国平衡逻辑。",
       "status": null,
       "degree": 3
     },
@@ -2958,17 +2991,6 @@
       "type": "theme",
       "route": "themes/hidden-costs",
       "summary": "讨论消费者支付的价格中，有多少是在承担企业内部看不见的成本。",
-      "status": null,
-      "degree": 3
-    },
-    {
-      "id": "model:small-state-balancing-model",
-      "key": "small-state-balancing-model",
-      "label": "小国平衡术",
-      "fullLabel": "小国平衡术",
-      "type": "model",
-      "route": "models/small-state-balancing-model",
-      "summary": "小国平衡术解释小国在大国之间维持生存空间，靠位置、合法性和现实利益而非纯姿态。",
       "status": null,
       "degree": 3
     },
@@ -3651,17 +3673,6 @@
       "type": "person",
       "route": "people/lee-kuan-yew",
       "summary": "李光耀是新加坡建国总理，节目借他说明新加坡国家身份、国家责任和小国生存决心怎样压过祖籍血缘与软弱叙事。",
-      "status": null,
-      "degree": 2
-    },
-    {
-      "id": "person:lee-hsien-loong",
-      "key": "lee-hsien-loong",
-      "label": "李显龙",
-      "fullLabel": "李显龙",
-      "type": "person",
-      "route": "people/lee-hsien-loong",
-      "summary": "李显龙是新加坡前总理、现任国务资政，节目借他理解新加坡务实外交、国家身份边界和小国平衡逻辑。",
       "status": null,
       "degree": 2
     },
@@ -4414,6 +4425,17 @@
       "degree": 1
     },
     {
+      "id": "concept:investment-diversification-hedge",
+      "key": "investment-diversification-hedge",
+      "label": "分散投资对冲",
+      "fullLabel": "分散投资对冲",
+      "type": "concept",
+      "route": "concepts/investment-diversification-hedge",
+      "summary": "把投资、产能和合作关系分散到多个国家或对象，是在不确定环境里分担风险，而不是和谁脱钩。",
+      "status": null,
+      "degree": 1
+    },
+    {
       "id": "concept:aesthetic-decline-by-abundance",
       "key": "aesthetic-decline-by-abundance",
       "label": "丰裕导致的审美滑坡",
@@ -4850,6 +4872,17 @@
       "type": "person",
       "route": "people/liu-daoyu",
       "summary": "刘道玉是武汉大学原校长和高等教育改革人物，节目借他作为“好校长”与学生主体性的正面参照。",
+      "status": null,
+      "degree": 1
+    },
+    {
+      "id": "person:ferdinand-marcos-jr",
+      "key": "ferdinand-marcos-jr",
+      "label": "马科斯",
+      "fullLabel": "马科斯",
+      "type": "person",
+      "route": "people/ferdinand-marcos-jr",
+      "summary": "马科斯是菲律宾现任总统，节目借他在台海问题上的表态，观察东南亚国家在中美博弈下被迫选边站的压力。",
       "status": null,
       "degree": 1
     },
@@ -10880,6 +10913,66 @@
     {
       "source": "episode:EP148",
       "target": "theme:exam-centered-education-and-person-formation",
+      "kind": "episode-theme"
+    },
+    {
+      "source": "episode:EP149",
+      "target": "concept:active-neutrality",
+      "kind": "episode-concept"
+    },
+    {
+      "source": "episode:EP149",
+      "target": "concept:pragmatic-legitimacy",
+      "kind": "episode-concept"
+    },
+    {
+      "source": "episode:EP149",
+      "target": "concept:investment-diversification-hedge",
+      "kind": "episode-concept"
+    },
+    {
+      "source": "episode:EP149",
+      "target": "model:small-state-balancing-model",
+      "kind": "episode-model"
+    },
+    {
+      "source": "episode:EP149",
+      "target": "model:rule-anchored-small-state-model",
+      "kind": "episode-model"
+    },
+    {
+      "source": "episode:EP149",
+      "target": "model:chokepoint-order-model",
+      "kind": "episode-model"
+    },
+    {
+      "source": "episode:EP149",
+      "target": "model:proxy-containment-ring",
+      "kind": "episode-model"
+    },
+    {
+      "source": "episode:EP149",
+      "target": "person:lee-hsien-loong",
+      "kind": "episode-person"
+    },
+    {
+      "source": "episode:EP149",
+      "target": "person:lawrence-wong",
+      "kind": "episode-person"
+    },
+    {
+      "source": "episode:EP149",
+      "target": "person:ferdinand-marcos-jr",
+      "kind": "episode-person"
+    },
+    {
+      "source": "episode:EP149",
+      "target": "theme:singapore-and-small-state-survival",
+      "kind": "episode-theme"
+    },
+    {
+      "source": "episode:EP149",
+      "target": "theme:southeast-asia-fragmentation-and-bloc-competition",
       "kind": "episode-theme"
     },
     {
