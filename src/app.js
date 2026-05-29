@@ -26,6 +26,14 @@ const HOME_PLATFORM_LINKS = [
 ];
 const WEBSITE_LOG_ENTRIES = [
   {
+    date: '2026-05-29',
+    title: '修正 EP147 B 站会员标记并全库核对会员状态',
+    items: [
+      'EP147《监狱来的妈妈》此前 B 站被误标为普通视频，经接口 is_upower_exclusive 核实为充电会员视频，现已改为金色会员入口（content/episodes 与 video-link-overrides 同步）。',
+      '借 api.bilibili.com 的 view 接口对全部 135 条 B 站链接逐条核对会员状态，确认只有 EP147 存在"会员误标普通"，其余条目标记与接口一致。'
+    ]
+  },
+  {
     date: '2026-05-28',
     title: '新增 EP149 李显龙绕开北京访华与东南亚选边变局',
     items: [
