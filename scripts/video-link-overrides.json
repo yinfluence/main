@@ -2,8 +2,7 @@
   "EP150": {
     "bilibili": {
       "platform": "bilibili",
-      "status": "unavailable",
-      "note": "暂未上架"
+      "url": "https://www.bilibili.com/video/BV1haVt6wEGS/"
     },
     "youtube": {
       "platform": "youtube",
