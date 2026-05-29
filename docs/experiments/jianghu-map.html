@@ -1,0 +1,506 @@
+<!doctype html>
+<html lang="zh-cn">
+<head>
+<meta charset="utf-8">
+<title>车圈笑傲江湖 · 江湖地图</title>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<style>
+  :root{
+    --paper:#ebe0c7;
+    --paper-2:#e0d3b3;
+    --ink:#1a1410;
+    --ink-mid:#4a3d28;
+    --ink-soft:#6b5538;
+    --vermilion:#a02818;
+    --seal:#7a1f12;
+    --gold:#8a6f3a;
+    --water:#6b7c8e;
+  }
+  *{box-sizing:border-box}
+  html,body{margin:0;background:#ede2c8}
+  body{
+    color:var(--ink);
+    font-family:"STKaiti","KaiTi","Songti SC","Noto Serif SC",serif;
+    line-height:1.7;
+  }
+  .stage{
+    min-height:100vh;
+    background:linear-gradient(180deg, #f0e6d2 0%, #e8dcc0 100%);
+    padding:0;
+  }
+  .wrap{max-width:none;margin:0;padding:0}
+
+  /* 打开即看地图:隐藏标题/图例/说明 */
+  header,.legend,.ai-note{display:none}
+  .scroll-wrap{padding:0}
+  h1{
+    font-size:32px;margin:0;letter-spacing:14px;
+    text-indent:14px;font-weight:400;
+    color:var(--ink);
+  }
+  h1::before,h1::after{
+    content:"";display:inline-block;width:50px;height:1px;
+    background:var(--gold);vertical-align:middle;margin:0 18px;
+  }
+  .sub-title{
+    color:var(--ink-soft);font-size:13px;margin-top:8px;letter-spacing:6px;
+  }
+
+  /* 卷轴 */
+  .scroll-wrap{
+    position:relative;
+    padding:24px 0;
+  }
+  /* 卷轴上下木轴 */
+  .rod{
+    height:24px;
+    background:
+      linear-gradient(180deg, #3d2f1c 0%, #6b5230 20%, #8b6b3a 50%, #6b5230 80%, #3d2f1c 100%);
+    border-radius:3px;
+    box-shadow:0 4px 12px rgba(0,0,0,.5), inset 0 0 8px rgba(0,0,0,.3);
+    position:relative;
+  }
+  .rod::before,.rod::after{
+    content:"";position:absolute;top:50%;width:36px;height:36px;border-radius:50%;
+    background:radial-gradient(circle at 30% 30%, #b89760 0%, #8b6b3a 40%, #4d3a1f 100%);
+    transform:translateY(-50%);
+    box-shadow:0 2px 8px rgba(0,0,0,.5);
+  }
+  .rod::before{left:-12px}
+  .rod::after{right:-12px}
+
+  /* 宣纸主体 */
+  .paper{
+    background:
+      radial-gradient(ellipse at 20% 30%, rgba(122,40,24,.04) 0%, transparent 40%),
+      radial-gradient(ellipse at 85% 70%, rgba(122,40,24,.03) 0%, transparent 50%),
+      linear-gradient(180deg, #ede2c8 0%, #e5d8b8 50%, #ede2c8 100%);
+    position:relative;
+    box-shadow:0 4px 24px rgba(0,0,0,.4), inset 0 0 80px rgba(120,90,50,.18);
+  }
+  .paper::before{
+    /* 纸纹噪点 */
+    content:"";position:absolute;inset:0;
+    background-image:
+      radial-gradient(circle at 10% 20%, rgba(80,50,20,.04) 0, transparent 1px),
+      radial-gradient(circle at 70% 40%, rgba(80,50,20,.03) 0, transparent 1px),
+      radial-gradient(circle at 40% 80%, rgba(80,50,20,.05) 0, transparent 1px);
+    background-size:5px 5px, 7px 7px, 11px 11px;
+    pointer-events:none;
+    opacity:0.6;
+  }
+
+  /* 地图 */
+  .map-box{
+    position:relative;
+    aspect-ratio:2/1;
+    overflow:hidden;
+    background:#1a1410;
+  }
+  .map-bg{
+    position:absolute;inset:0;width:100%;height:100%;
+    object-fit:cover;
+    object-position:30% 50%;
+    display:block;
+    filter:sepia(0.08) contrast(0.92) brightness(1.05) saturate(0.9);
+    opacity:0.85;
+  }
+  /* 让画面看起来像长卷:下方加一层米黄渐变让节点区域更好读 */
+  .map-box::after{
+    content:"";position:absolute;inset:0;
+    background:
+      linear-gradient(180deg, rgba(237,226,200,.35) 0%, rgba(237,226,200,.1) 30%, rgba(237,226,200,.1) 70%, rgba(237,226,200,.5) 100%),
+      radial-gradient(ellipse at 50% 50%, transparent 30%, rgba(237,226,200,.3) 90%);
+    pointer-events:none;
+    z-index:1;
+  }
+  .pins{z-index:2}
+  svg.map{position:absolute;inset:0;width:100%;height:100%;display:block;pointer-events:none}
+
+  /* 落点 */
+  .pins{position:absolute;inset:0;pointer-events:none}
+  .pin{
+    position:absolute;transform:translate(-50%,-50%);
+    pointer-events:auto;cursor:pointer;
+    text-decoration:none;color:var(--ink);
+    display:flex;flex-direction:column;align-items:center;
+    transition:transform .25s;
+    width:88px;
+  }
+  .pin:hover{transform:translate(-50%,-50%) scale(1.08)}
+  .pin .face{
+    width:72px;height:72px;border-radius:50%;
+    background:#f5ecd0;
+    box-shadow:
+      0 4px 14px rgba(0,0,0,.45),
+      0 0 0 2px #7a1f12,
+      0 0 0 5px #f5ecd0,
+      0 0 0 6px #7a1f12;
+    overflow:hidden;
+    position:relative;
+    transform:rotate(-2deg);
+  }
+  .pin .face img{
+    width:100%;height:100%;object-fit:cover;
+    display:block;
+    filter:sepia(0.15) contrast(1.05);
+  }
+  .pin.guess .face{
+    box-shadow:
+      0 3px 10px rgba(0,0,0,.35),
+      0 0 0 2px #5d4528,
+      0 0 0 5px #ede2c8,
+      0 0 0 6px #5d4528;
+    opacity:0.85;
+  }
+  .pin.guess .face img{filter:sepia(0.4) contrast(0.95) saturate(0.6)}
+  .pin .name-tag{
+    margin-top:8px;
+    background:
+      linear-gradient(180deg, #f5ecd0 0%, #e5d4a8 100%);
+    padding:3px 10px 4px;
+    border:1px solid #7a1f12;
+    box-shadow:0 2px 4px rgba(0,0,0,.2);
+    text-align:center;
+    min-width:78px;
+    position:relative;
+  }
+  .pin.guess .name-tag{border-color:#5d4528;background:#ede2c8}
+  .pin .name-tag .sect{
+    display:block;
+    font-family:"STKaiti","KaiTi",serif;
+    font-size:13px;font-weight:700;
+    color:#7a1f12;
+    letter-spacing:2px;
+    line-height:1.2;
+  }
+  .pin.guess .name-tag .sect{color:#5d4528}
+  .pin .name-tag .real{
+    display:block;
+    font-size:10px;color:var(--ink-soft);
+    letter-spacing:1px;line-height:1.3;
+    margin-top:1px;
+  }
+  .pin .badge-g{
+    position:absolute;top:-6px;right:-8px;
+    background:#5d4528;color:#ede2c8;
+    font-size:9px;padding:1px 5px;
+    border-radius:2px;letter-spacing:1px;
+  }
+
+  /* 详情抽屉 */
+  .drawer{
+    position:fixed;top:0;right:-460px;width:440px;height:100vh;
+    background:linear-gradient(180deg, #ede2c8 0%, #e5d8b8 100%);
+    border-left:3px double var(--gold);
+    box-shadow:-12px 0 40px rgba(0,0,0,.5);
+    padding:48px 36px 36px;overflow:auto;
+    transition:right .3s cubic-bezier(.4,.2,.2,1);
+    z-index:100;
+    color:var(--ink);
+  }
+  .drawer.open{right:0}
+  .drawer .close{
+    position:absolute;top:14px;right:18px;
+    background:none;border:none;font-size:28px;cursor:pointer;color:var(--ink-soft);
+    line-height:1;
+  }
+  .drawer .d-seal{
+    display:inline-flex;align-items:center;justify-content:center;
+    width:46px;height:46px;
+    background:radial-gradient(circle at 30% 30%, #c8412c 0%, #a02818 50%, #7a1f12 100%);
+    color:#f5ecd0;
+    font-family:"STKaiti","KaiTi",serif;
+    font-size:22px;font-weight:700;
+    border-radius:3px;
+    box-shadow:inset 0 0 0 2px #f5ecd0, inset 0 0 0 3px #7a1f12;
+    margin-bottom:8px;
+    transform:rotate(-3deg);
+  }
+  .drawer .d-tag{
+    display:block;font-size:13px;color:var(--vermilion);
+    letter-spacing:3px;margin-bottom:6px;
+  }
+  .drawer h3{
+    margin:0 0 4px;font-size:30px;letter-spacing:4px;
+    font-family:"STKaiti","KaiTi",serif;font-weight:700;
+  }
+  .drawer .real-line{
+    margin:14px 0;padding:10px 0;
+    border-top:1px solid var(--ink-soft);border-bottom:1px solid var(--ink-soft);
+    color:var(--ink-mid);font-size:15px;letter-spacing:1px;
+  }
+  .drawer p{font-size:15px;color:var(--ink-mid);margin:0 0 16px;line-height:1.9}
+  .drawer .ep-link{
+    display:inline-block;padding:8px 18px;
+    background:var(--ink);color:#ede2c8;
+    text-decoration:none;letter-spacing:2px;
+    border-radius:2px;font-size:14px;
+  }
+  .drawer .ep-link:hover{background:var(--vermilion)}
+  .drawer .ep-list{display:flex;flex-direction:column;gap:8px}
+  .drawer .ep-list .ep-link{align-self:flex-start}
+  .drawer .guess-note{
+    margin-top:22px;padding:10px 14px;
+    background:rgba(122,31,18,.08);
+    border-left:3px solid var(--vermilion);
+    font-size:12px;color:var(--seal);line-height:1.7;
+  }
+
+  /* 图例和说明 */
+  .legend{
+    text-align:center;margin-top:24px;
+    color:#a08d62;font-size:13px;letter-spacing:3px;
+  }
+  .legend span{margin:0 14px}
+  .legend .ico{display:inline-block;width:14px;height:14px;border-radius:2px;vertical-align:-2px;margin-right:6px}
+  .legend .ico1{background:#a02818}
+  .legend .ico2{background:#3d3320;border:1px solid #c0a878}
+
+  .ai-note{
+    margin:32px auto 0;max-width:760px;
+    padding:18px 22px;
+    background:rgba(40,30,20,.4);
+    border:1px solid #4a3a20;color:#bfa978;
+    font-size:13px;line-height:1.9;
+  }
+  .ai-note h4{margin:0 0 8px;color:#e0c890;letter-spacing:2px;font-size:14px}
+  .ai-note code{background:rgba(0,0,0,.3);padding:2px 8px;color:#d4c090;font-family:"SF Mono",monospace;font-size:11.5px}
+</style>
+</head>
+<body>
+<div class="stage">
+<div class="wrap">
+
+  <header>
+    <h1>车圈笑傲江湖</h1>
+    <div class="sub-title">江 湖 全 景 卷 · 卷 一</div>
+  </header>
+
+  <div class="scroll-wrap">
+    <div class="rod"></div>
+
+    <div class="paper">
+      <div class="map-box">
+
+        <img class="map-bg" src="assets/jianghu/map-bg.jpg" alt="">
+
+        <svg class="map" viewBox="0 0 1600 900" preserveAspectRatio="xMidYMid slice" style="display:none">
+          <defs>
+            <!-- 墨晕滤镜:让边缘有水墨晕染感 -->
+            <filter id="inkBleed" x="-20%" y="-20%" width="140%" height="140%">
+              <feGaussianBlur stdDeviation="6" result="blur"/>
+              <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" seed="5" result="noise"/>
+              <feDisplacementMap in="blur" in2="noise" scale="8"/>
+            </filter>
+            <filter id="softBlur"><feGaussianBlur stdDeviation="14"/></filter>
+            <filter id="mistBlur"><feGaussianBlur stdDeviation="30"/></filter>
+
+            <!-- 远山渐变 -->
+            <linearGradient id="mountain1" x1="0" x2="0" y1="0" y2="1">
+              <stop offset="0%" stop-color="#6b5d42" stop-opacity="0.7"/>
+              <stop offset="100%" stop-color="#6b5d42" stop-opacity="0.1"/>
+            </linearGradient>
+            <linearGradient id="mountain2" x1="0" x2="0" y1="0" y2="1">
+              <stop offset="0%" stop-color="#3d3320" stop-opacity="0.55"/>
+              <stop offset="100%" stop-color="#3d3320" stop-opacity="0"/>
+            </linearGradient>
+            <linearGradient id="mountain3" x1="0" x2="0" y1="0" y2="1">
+              <stop offset="0%" stop-color="#2a2010" stop-opacity="0.45"/>
+              <stop offset="100%" stop-color="#2a2010" stop-opacity="0"/>
+            </linearGradient>
+
+            <radialGradient id="mist1">
+              <stop offset="0%" stop-color="#f5ecd0" stop-opacity="0.7"/>
+              <stop offset="100%" stop-color="#f5ecd0" stop-opacity="0"/>
+            </radialGradient>
+          </defs>
+
+          <!-- 最远山(最浅,顶部一带,模糊) -->
+          <path d="M 0 240 Q 80 180 180 220 Q 300 160 400 220 Q 540 170 680 240 Q 820 180 960 230 Q 1100 170 1280 230 Q 1440 180 1600 220 L 1600 320 L 0 320 Z"
+                fill="url(#mountain3)" filter="url(#softBlur)"/>
+
+          <!-- 中远山 -->
+          <path d="M 0 320 Q 120 270 240 310 Q 380 250 500 320 Q 640 280 780 330 Q 920 270 1080 320 Q 1240 270 1400 320 Q 1500 290 1600 310 L 1600 420 L 0 420 Z"
+                fill="url(#mountain2)" filter="url(#softBlur)"/>
+
+          <!-- 近山(略具山形,但仍是墨团) -->
+          <path d="M 0 440 Q 100 380 200 420 Q 320 360 440 430 Q 580 380 720 440 Q 860 380 1000 430 Q 1140 380 1280 440 Q 1440 400 1600 430 L 1600 520 L 0 520 Z"
+                fill="url(#mountain1)" filter="url(#inkBleed)"/>
+
+          <!-- 雾气团块 -->
+          <ellipse cx="200" cy="380" rx="240" ry="50" fill="url(#mist1)" filter="url(#mistBlur)"/>
+          <ellipse cx="700" cy="420" rx="280" ry="55" fill="url(#mist1)" filter="url(#mistBlur)"/>
+          <ellipse cx="1200" cy="390" rx="260" ry="50" fill="url(#mist1)" filter="url(#mistBlur)"/>
+
+          <!-- 大江(横贯中部) -->
+          <path d="M 0 580 Q 200 555 400 590 Q 600 625 800 580 Q 1000 545 1200 590 Q 1400 625 1600 595"
+                stroke="#7a8a9c" stroke-width="3" fill="none" opacity="0.6"/>
+          <path d="M 0 590 Q 200 565 400 600 Q 600 635 800 590 Q 1000 555 1200 600 Q 1400 635 1600 605"
+                stroke="#9babbe" stroke-width="1.4" fill="none" opacity="0.5"/>
+          <path d="M 0 600 Q 200 575 400 610 Q 600 645 800 600 Q 1000 565 1200 610 Q 1400 645 1600 615"
+                stroke="#7a8a9c" stroke-width="2" fill="none" opacity="0.35"/>
+
+          <!-- 大字落款:江 -->
+          <text x="80" y="650" font-family="STKaiti,KaiTi" font-size="120" fill="#2a2010" opacity="0.08" font-weight="700">江</text>
+          <text x="1380" y="780" font-family="STKaiti,KaiTi" font-size="160" fill="#2a2010" opacity="0.07" font-weight="700">湖</text>
+
+          <!-- 远岸土地(下方) -->
+          <path d="M 0 720 Q 200 700 400 720 Q 600 740 800 720 Q 1000 700 1200 720 Q 1400 740 1600 720 L 1600 900 L 0 900 Z"
+                fill="#7a6038" opacity="0.18"/>
+          <path d="M 0 760 Q 300 745 600 760 Q 900 775 1200 760 Q 1450 750 1600 760 L 1600 900 L 0 900 Z"
+                fill="#5a4528" opacity="0.22"/>
+
+          <!-- 卷顶标题 -->
+          <text x="800" y="50" text-anchor="middle" font-family="STKaiti,KaiTi" font-size="22" fill="#6b5538" letter-spacing="12" opacity="0.65">— 江 湖 风 云 录 —</text>
+
+          <!-- 右下角印 -->
+          <g transform="translate(1520,830)">
+            <rect x="-26" y="-26" width="52" height="52" fill="#a02818" rx="3"/>
+            <text y="6" text-anchor="middle" font-family="STKaiti,KaiTi" font-size="20" fill="#f5ecd0" font-weight="700">颖</text>
+          </g>
+        </svg>
+
+        <!-- 派系节点(12 派,卡通/动漫风) -->
+        <div class="pins">
+          <!-- 节目原话(7 派) -->
+          <a class="pin" data-key="huashan" style="left:80%;top:18%">
+            <span class="face"><img src="assets/jianghu/huashan.jpg" alt="" loading="lazy"></span>
+            <span class="name-tag"><span class="sect">华山派·岳不群</span><span class="real">华为·余承东</span></span>
+          </a>
+          <a class="pin" data-key="songshan" style="left:48%;top:22%">
+            <span class="face"><img src="assets/jianghu/songshan.jpg" alt="" loading="lazy"></span>
+            <span class="name-tag"><span class="sect">嵩山派·左冷禅</span><span class="real">蔚来·李斌</span></span>
+          </a>
+          <a class="pin" data-key="hengshan" style="left:16%;top:24%">
+            <span class="face"><img src="assets/jianghu/hengshan.jpg" alt="" loading="lazy"></span>
+            <span class="name-tag"><span class="sect">恒山派</span><span class="real">小鹏</span></span>
+          </a>
+
+          <a class="pin" data-key="riyue" style="left:92%;top:40%">
+            <span class="face"><img src="assets/jianghu/riyue.jpg" alt="" loading="lazy"></span>
+            <span class="name-tag"><span class="sect">日月神教·东方不败</span><span class="real">理想·李想</span></span>
+          </a>
+
+          <a class="pin" data-key="liangbi" style="left:34%;top:48%">
+            <span class="face"><img src="assets/jianghu/liangbi.jpg" alt="" loading="lazy"></span>
+            <span class="name-tag"><span class="sect">刘正风</span><span class="real">观致</span></span>
+          </a>
+
+          <a class="pin" data-key="gaibang" style="left:60%;top:82%">
+            <span class="face"><img src="assets/jianghu/gaibang.jpg" alt="" loading="lazy"></span>
+            <span class="name-tag"><span class="sect">丐帮·帮主</span><span class="real">小米·雷军</span></span>
+          </a>
+          <a class="pin" data-key="biaoju" style="left:78%;top:86%">
+            <span class="face"><img src="assets/jianghu/biaoju.png" alt="" loading="lazy"></span>
+            <span class="name-tag"><span class="sect">福威镖局</span><span class="real">比亚迪·王传福</span></span>
+          </a>
+
+          <!-- 金庸全集扩展(5 派) -->
+          <a class="pin" data-key="muroong" style="left:14%;top:62%">
+            <span class="face"><img src="assets/jianghu/nezha.jpg" alt="" loading="lazy"></span>
+            <span class="name-tag"><span class="sect">姑苏慕容·慕容复</span><span class="real">哪吒·方运舟</span></span>
+          </a>
+          <a class="pin" data-key="haiwai" style="left:94%;top:64%">
+            <span class="face"><img src="assets/jianghu/haiwai.jpg" alt="" loading="lazy"></span>
+            <span class="name-tag"><span class="sect">桃花岛·黄药师</span><span class="real">特斯拉</span></span>
+          </a>
+          <a class="pin" data-key="hengda" style="left:7%;top:46%">
+            <span class="face"><img src="assets/jianghu/hengda.jpg" alt="" loading="lazy"></span>
+            <span class="name-tag"><span class="sect">白驼山·欧阳锋</span><span class="real">恒大·许家印</span></span>
+          </a>
+          <a class="pin" data-key="catl" style="left:42%;top:82%">
+            <span class="face"><img src="assets/jianghu/catl.jpg" alt="" loading="lazy"></span>
+            <span class="name-tag"><span class="sect">星宿派·丁春秋</span><span class="real">宁德时代·曾毓群</span></span>
+          </a>
+          <a class="pin" data-key="linke" style="left:30%;top:14%">
+            <span class="face"><img src="assets/jianghu/linke.jpg" alt="" loading="lazy"></span>
+            <span class="name-tag"><span class="sect">大轮明王·鸠摩智</span><span class="real">领克·吉利</span></span>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="rod"></div>
+  </div>
+
+  <div class="legend">
+    <span><span class="ico ico1"></span>节目原话对照(7)</span>
+    <span><span class="ico ico2"></span>金庸全集扩展(5)</span>
+    <span>· 共 12 派 · 点头像看故事 ·</span>
+  </div>
+
+  <div class="ai-note">
+    <h4>这一版的变化(诚实交代)</h4>
+    12 派分两层:<br>
+    · <b>节目原话(7)</b>:华山派·岳不群、日月神教·东方不败、丐帮帮主、嵩山派·左冷禅、福威镖局、刘正风、恒山派 — 都是 EP 标题或 summary 里出现过的<br>
+    · <b>金庸全集扩展(5)</b>:慕容复、黄药师、欧阳锋、丁春秋、鸠摩智 — 节目讨论过这些车企但没明说武侠对照,按讽刺骨架从金庸全集找的著名角色<br><br>
+    人物图来自手游立绘 / 同人画 / 官方插画,卡通风。其中 <b>慕容复 / 刘正风 / 鸠摩智 / 恒山派</b> 这几张不是完美单人立绘 (慕容复在金庸圈卡通圈很少有人画) ,如果哪张你觉得不行告诉我换。
+  </div>
+
+</div>
+</div>
+
+<!-- 详情抽屉 -->
+<aside class="drawer" id="drawer">
+  <button class="close" onclick="closeDrawer()">×</button>
+  <div id="drawer-content"></div>
+</aside>
+
+<script>
+const DATA = {
+  // 节目原话(7 派)
+  huashan: {tag:"华山派",seal:"岳",name:"岳不群",real:"华为 / 问界 · 余承东",ep:"EP050",epTitle:"车圈的'岳不群'到底是谁",body:"君子剑的厉害,不在于剑法,而在于把借来的招式重新命名成自家心法,然后让一个前台人物替整个组织承担情绪动员。真正的内功是营销纪律和话术统一,不是后台工程。",guess:false},
+  riyue: {tag:"日月神教",seal:"东",name:"东方不败 / 任我行",real:"理想汽车 · 李想",ep:"EP055",epTitle:"电车圈'日月神教'摇摇欲坠",body:"邪派武功也是早期捷径——增程让你快速登顶,代价是后续选择被锁死。同一人既是东方不败也是任我行,因为信众化品牌的本质就是教主即教派。",guess:false},
+  gaibang: {tag:"丐帮·帮主",seal:"帮",name:"帮主",real:"小米汽车 · 雷军",ep:"EP062",epTitle:"电车圈的'丐帮'是谁",body:"丐帮人多势众,问题是袋子里装的是信徒的买命钱。粉丝替品牌做市场教育和产品验证,品牌却公开承认更成熟、更坚固的版本会优先留给欧洲市场。这是江湖最古老的分层。",guess:false},
+  songshan: {tag:"嵩山派·左冷禅",seal:"左",name:"左冷禅",real:"蔚来 · 李斌",ep:"EP067",epTitle:"电车圈左冷禅,车不过是单程票",body:"左冷禅一辈子算计的不是练剑,是并派。蔚来的换电也不只是换电——电池、换电站、地方资金被装进体外平台,做成可融资、可估值、可吸金的资产化体系。车不过是这场局的入场券。",guess:false},
+  biaoju: {tag:"福威镖局",seal:"镖",name:"福威镖局(辟邪剑谱源头家族)",real:"比亚迪 · 王传福",ep:"EP080",epTitle:"电车圈'福威镖局'是谁",body:"福威镖局是江湖最大秘籍的源头家族。比亚迪靠刀片电池、4S 网络、海外渠道、零公里二手车,把销量与估值维持成难以穿透的系统。头部地位下,积累的是更大的黑箱。注:福威镖局是家族不是门派,节目借的是'辟邪剑谱源头'意象。",guess:false},
+  liangbi: {tag:"刘正风",seal:"刘",name:"刘正风(衡山派长老)",real:"观致汽车",ep:"EP066",epTitle:"观致破产,劣币驱逐良币",body:"刘正风和魔教曲洋因《笑傲江湖曲》结为知音,被五岳与魔教两边夹杀。观致也一样——认真造车的良币在野蛮资本+野蛮市场两边都不被容许,最后只剩残值争抢。",guess:false},
+  hengshan: {tag:"恒山派",seal:"恒",name:"恒山派(尼姑山门)",real:"小鹏汽车",ep:"EP074",epTitle:"电车圈'恒山派'科技情趣价值创造者",body:"节目用恒山派讽刺小鹏——'宅男收割机+科技情趣'配上'一群女出家人'是反讽。但讽刺含量适中:小鹏相对克制、不抢盟主,围绕智能驾驶+超充+飞行汽车搭生态,在逆风里活下来。",guess:false},
+
+  // 金庸全集扩展(5 派,非节目原话,按讽刺骨架推测)
+  muroong: {tag:"姑苏慕容氏·燕子坞",seal:"慕",name:"慕容复",real:"哪吒汽车 · 方运舟",ep:"EP131",epTitle:"哪吒汽车暴雷全拆解",body:"慕容复以'复国'为旗号,四处合纵连横、找各方资源,自我包装成姑苏慕容氏贵公子,最后破产疯掉沦为给孩子分糖果的笑柄。哪吒/恒大/威马/赛麟/拜腾/高合——以'造车救国'为名讲故事,找地方政府投资,烧光跑路。骗补阵营都可归入。",guess:true},
+  haiwai: {tag:"桃花岛·东邪",seal:"东",name:"黄药师",real:"特斯拉",ep:"",epTitle:"(节目未明示)",body:"桃花岛主,五绝之一,孤傲海外岛主,自创武功体系,不入中原门派但是行业参照系。特斯拉在中国电车圈本来就是异类——不参与派系内斗,但定价始终是江湖标尺。推测对照。",guess:true},
+  hengda: {tag:"白驼山·西毒",seal:"锋",name:"欧阳锋",real:"恒大汽车 · 许家印",eps:[{id:"EP015",title:"恒大造车初探"},{id:"EP035",title:"恒大暴雷与车圈余波"}],body:"欧阳锋逆练《九阴真经》走火入魔。恒大也一样——地产资本进车圈讲产业故事,借融资飞轮吸地、吸钱、吸股权,最后清算只剩土地和残值。地产逆练造车魂,武功反噬自身。",guess:true},
+  catl: {tag:"星宿派",seal:"丁",name:"丁春秋(星宿老仙)",real:"宁德时代 · 曾毓群",ep:"EP039",epTitle:"宁德时代龙头压低工人议价",body:"星宿派的核心是化功大法+毒功+徒弟拍马屁神功。宁德时代靠电池技术垄断+严苛组织等级+象征性加薪应对结构性不公,把行业繁荣的红利截流给上层,把成本转给基层工人。",guess:true},
+  linke: {tag:"大轮明王",seal:"鸠",name:"鸠摩智",real:"领克 · 吉利",ep:"EP091",epTitle:"领克语音关大灯致命漏洞",body:"鸠摩智贪学少林七十二绝技,内力反噬几乎致死,被段誉北冥神功吸走才解脱。领克为追求'智能体验'把不该开放的车机权限交给语音系统,本该防护的机制反向失效——贪多绝技反噬自身的当代翻版。",guess:true},
+};
+function openDrawer(key){
+  const d = DATA[key]; if(!d) return;
+  const el = document.getElementById('drawer-content');
+  let epHtml = '';
+  if (d.eps && d.eps.length) {
+    epHtml = '<div class="ep-list">' + d.eps.map(e =>
+      `<a class="ep-link" href="/#/episodes/${e.id}">${e.id} · ${e.title} →</a>`
+    ).join('') + '</div>';
+  } else if (d.ep) {
+    epHtml = `<a class="ep-link" href="/#/episodes/${d.ep}">${d.ep} · ${d.epTitle} →</a>`;
+  }
+  el.innerHTML = `
+    <div class="d-seal">${d.seal}</div>
+    <span class="d-tag">${d.tag}</span>
+    <h3>${d.name}</h3>
+    <div class="real-line">${d.real}</div>
+    <p>${d.body}</p>
+    ${epHtml}
+    ${d.guess ? `<div class="guess-note">推测型对照:本派系节目未明确给出武侠隐喻,根据叙事逻辑补全,仅供参考。</div>` : ''}
+  `;
+  document.getElementById('drawer').classList.add('open');
+}
+function closeDrawer(){document.getElementById('drawer').classList.remove('open')}
+document.querySelectorAll('.pin').forEach(n=>{
+  n.addEventListener('click',e=>{e.preventDefault();e.stopPropagation();openDrawer(n.dataset.key)});
+});
+document.addEventListener('click',e=>{
+  const drawer=document.getElementById('drawer');
+  if(!drawer.classList.contains('open'))return;
+  if(drawer.contains(e.target))return;
+  if(e.target.closest('.pin'))return;
+  closeDrawer();
+});
+document.addEventListener('keydown',e=>{
+  if(e.key==='Escape')closeDrawer();
+});
+</script>
+</body>
+</html>

@@ -1,0 +1,751 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<title>知识图谱 V2 · 同心环骨架</title>
+<style>
+  html, body { margin: 0; padding: 0; height: 100%; background: #fbf7ef; font-family: -apple-system, "PingFang SC", sans-serif; color: #443a31; overflow: hidden; }
+  #stage { width: 100vw; height: 100vh; display: block; cursor: default; }
+  .legend { position: fixed; top: 18px; left: 18px; background: rgba(255,255,255,0.86); border-radius: 14px; padding: 12px 16px; font-size: 13px; line-height: 1.7; pointer-events: none; box-shadow: 0 2px 10px rgba(60,40,20,0.08); }
+  .legend .dot { display: inline-block; width: 10px; height: 10px; border-radius: 50%; vertical-align: middle; margin-right: 6px; }
+  .hint { position: fixed; bottom: 18px; left: 18px; background: rgba(255,255,255,0.86); border-radius: 14px; padding: 10px 14px; font-size: 12.5px; color: #6a5d4d; box-shadow: 0 2px 10px rgba(60,40,20,0.08); max-width: 420px; }
+  .title-bar { position: fixed; top: 18px; right: 18px; background: rgba(255,255,255,0.86); border-radius: 14px; padding: 10px 16px; font-size: 13px; color: #443a31; box-shadow: 0 2px 10px rgba(60,40,20,0.08); }
+  .title-bar a { color: #7c5c1a; text-decoration: none; margin-left: 10px; }
+  .tooltip { position: fixed; pointer-events: none; background: #fff; border-radius: 10px; padding: 10px 14px; font-size: 13px; box-shadow: 0 4px 14px rgba(60,40,20,0.14); max-width: 280px; opacity: 0; transition: opacity .12s; }
+  .tooltip h4 { margin: 0 0 4px 0; font-size: 14px; }
+  .tooltip .meta { font-size: 11.5px; color: #8b7d6a; margin-bottom: 6px; }
+  .tooltip .summary { font-size: 12px; line-height: 1.5; color: #5a4f40; }
+  .search-box { position: fixed; top: 18px; left: 50%; transform: translateX(-50%); z-index: 5; width: 380px; background: rgba(255,255,255,0.94); border-radius: 14px; padding: 8px 12px; box-shadow: 0 3px 14px rgba(60,40,20,0.10); }
+  .search-box input { width: 100%; box-sizing: border-box; border: 0; outline: none; padding: 6px 8px; font-size: 14px; background: transparent; color: #2e2418; }
+  .search-box #search-results { max-height: 320px; overflow-y: auto; margin-top: 6px; }
+  .search-box .row { padding: 7px 10px; cursor: pointer; border-radius: 8px; font-size: 13px; display: flex; align-items: center; gap: 8px; }
+  .search-box .row:hover { background: rgba(124,92,26,0.08); }
+  .search-box .row .typedot { width: 8px; height: 8px; border-radius: 50%; flex: none; }
+  .search-box .row .label { flex: 1; color: #2e2418; }
+  .search-box .row .meta { font-size: 11px; color: #8b7d6a; }
+</style>
+</head>
+<body>
+<div class="search-box">
+  <input id="search-input" type="text" placeholder="搜索任何概念 / 模型 / 主题 / 节目 / 人物…" autocomplete="off" />
+  <div id="search-results"></div>
+</div>
+<div class="legend">
+  <div><span class="dot" style="background:#7c5c1a"></span>概念</div>
+  <div><span class="dot" style="background:#1f6e4a"></span>思想模型</div>
+  <div><span class="dot" style="background:#5b3aa6"></span>主题</div>
+  <div><span class="dot" style="background:#284b63"></span>节目</div>
+  <div><span class="dot" style="background:#b34e2a"></span>人物</div>
+</div>
+<div class="title-bar">
+  知识图谱 V2 · 同心环骨架
+  <a href="../index.html#/graph">回到旧版</a>
+</div>
+<div class="hint">点任意节点 → 相关节目飞出；点空白回到骨架；按 Esc 重置；滚轮缩放，拖拽平移。</div>
+<svg id="stage"></svg>
+<div class="tooltip" id="tooltip"></div>
+
+<script>
+const TYPE_COLOR = {
+  concept: '#7c5c1a',
+  model: '#1f6e4a',
+  theme: '#5b3aa6',
+  episode: '#284b63',
+  person: '#b34e2a'
+};
+const TYPE_LABEL = { concept: '概念', model: '思想模型', theme: '主题', episode: '节目', person: '人物' };
+
+const svg = document.getElementById('stage');
+const tooltip = document.getElementById('tooltip');
+const NS = 'http://www.w3.org/2000/svg';
+
+let W = window.innerWidth;
+let H = window.innerHeight;
+let cx = W / 2;
+let cy = H / 2;
+
+let nodes = [];
+let links = [];
+let nodeById = new Map();
+let adjacency = new Map();
+
+let viewTransform = { x: 0, y: 0, k: 1 };
+let viewportG;
+let bgLayer, edgeLayer, nodeLayer, labelLayer, satelliteLayer;
+
+let focusedId = null;
+let animationFrame = null;
+
+async function init() {
+  const r = await fetch('../data/graph.json');
+  const data = await r.json();
+  nodes = data.nodes;
+  links = data.links;
+  for (const n of nodes) nodeById.set(n.id, n);
+  for (const l of links) {
+    if (!adjacency.has(l.source)) adjacency.set(l.source, new Set());
+    if (!adjacency.has(l.target)) adjacency.set(l.target, new Set());
+    adjacency.get(l.source).add(l.target);
+    adjacency.get(l.target).add(l.source);
+  }
+  layoutSkeleton();
+  buildSVG();
+  render();
+  attachInteraction();
+  attachSearch();
+}
+
+// === Layout ===
+function layoutSkeleton() {
+  // Skeleton = top-degree concepts + models + themes, on 3 concentric rings
+  // Episodes & persons hidden by default (revealed on focus as satellites)
+  const innerR = Math.min(W, H) * 0.18;
+  const midR = Math.min(W, H) * 0.31;
+  const outerR = Math.min(W, H) * 0.44;
+
+  const placeRing = (items, radius, startAngle = -Math.PI / 2) => {
+    items.sort((a, b) => (b.degree || 0) - (a.degree || 0));
+    const n = items.length;
+    items.forEach((node, i) => {
+      // Organic jitter: angle wobble ±18% of slot, radius wobble ±8%
+      const slot = (Math.PI * 2) / n;
+      const jA = (hashFloat(node.id + 'a') - 0.5) * slot * 0.36;
+      const jR = (hashFloat(node.id + 'r') - 0.5) * radius * 0.16;
+      const angle = startAngle + i * slot + jA;
+      const r = radius + jR;
+      node.x = cx + Math.cos(angle) * r;
+      node.y = cy + Math.sin(angle) * r;
+      node.skeleton = true;
+      node.baseRadius = 4 + Math.sqrt(node.degree || 1) * 1.6;
+    });
+  };
+
+  const TOP_MODELS = 14;
+  const TOP_CONCEPTS = 22;
+  const TOP_THEMES = 28;
+
+  const models = nodes.filter(n => n.type === 'model').slice();
+  models.sort((a, b) => (b.degree || 0) - (a.degree || 0));
+  const concepts = nodes.filter(n => n.type === 'concept').slice();
+  concepts.sort((a, b) => (b.degree || 0) - (a.degree || 0));
+  const themes = nodes.filter(n => n.type === 'theme').slice();
+  themes.sort((a, b) => (b.degree || 0) - (a.degree || 0));
+
+  const skeletonModels = models.slice(0, TOP_MODELS);
+  const skeletonConcepts = concepts.slice(0, TOP_CONCEPTS);
+  const skeletonThemes = themes.slice(0, TOP_THEMES);
+
+  placeRing(skeletonModels, innerR);
+  placeRing(skeletonConcepts, midR);
+  placeRing(skeletonThemes, outerR);
+
+  // Non-skeleton nodes: park them off-screen, will be flown in as satellites
+  for (const n of nodes) {
+    if (!n.skeleton) {
+      n.x = cx;
+      n.y = cy;
+      n.parked = true;
+      n.baseRadius = 3 + Math.sqrt(n.degree || 1) * 1.0;
+    }
+    // Per-node breathing (cheap sine drift, no physics)
+    n._phaseX = hashFloat(n.id + 'px') * Math.PI * 2;
+    n._phaseY = hashFloat(n.id + 'py') * Math.PI * 2;
+    n._freqX = 0.00040 + hashFloat(n.id + 'fx') * 0.00035; // 0.4-0.75 rad/ms
+    n._freqY = 0.00040 + hashFloat(n.id + 'fy') * 0.00035;
+    n._ampX = 8 + hashFloat(n.id + 'ax') * 10;  // 8-18 px drift
+    n._ampY = 8 + hashFloat(n.id + 'ay') * 10;
+    n._homeX = n.x;
+    n._homeY = n.y;
+  }
+}
+
+// Deterministic 0..1 hash so the same node always gets same phase/jitter
+function hashFloat(s) {
+  let h = 2166136261;
+  for (let i = 0; i < s.length; i++) { h ^= s.charCodeAt(i); h = Math.imul(h, 16777619); }
+  return (h >>> 0) / 4294967295;
+}
+
+// === SVG construction ===
+function buildSVG() {
+  svg.setAttribute('width', W);
+  svg.setAttribute('height', H);
+  viewportG = document.createElementNS(NS, 'g');
+  viewportG.setAttribute('class', 'viewport');
+  svg.appendChild(viewportG);
+
+  bgLayer = document.createElementNS(NS, 'g'); viewportG.appendChild(bgLayer);
+  edgeLayer = document.createElementNS(NS, 'g'); viewportG.appendChild(edgeLayer);
+  satelliteLayer = document.createElementNS(NS, 'g'); viewportG.appendChild(satelliteLayer);
+  nodeLayer = document.createElementNS(NS, 'g'); viewportG.appendChild(nodeLayer);
+  labelLayer = document.createElementNS(NS, 'g'); viewportG.appendChild(labelLayer);
+
+  // Faint ring guides
+  for (const r of [Math.min(W, H) * 0.18, Math.min(W, H) * 0.31, Math.min(W, H) * 0.44]) {
+    const c = document.createElementNS(NS, 'circle');
+    c.setAttribute('cx', cx); c.setAttribute('cy', cy); c.setAttribute('r', r);
+    c.setAttribute('fill', 'none'); c.setAttribute('stroke', 'rgba(100,80,50,0.05)'); c.setAttribute('stroke-dasharray', '2 8');
+    bgLayer.appendChild(c);
+  }
+}
+
+// === Derive concept↔model and concept↔theme chord links via shared episodes ===
+let derivedEdges = [];
+function buildDerivedEdges() {
+  derivedEdges = [];
+  const skel = nodes.filter(n => n.skeleton);
+  const skelIds = new Set(skel.map(n => n.id));
+  // For each skeleton node, episode set
+  const epSet = new Map();
+  for (const n of skel) {
+    const neigh = adjacency.get(n.id) || new Set();
+    const eps = new Set();
+    for (const id of neigh) if (id.startsWith('episode:')) eps.add(id);
+    epSet.set(n.id, eps);
+  }
+  // Pairs across types (model-concept, concept-theme, model-theme)
+  const pairs = [];
+  for (let i = 0; i < skel.length; i++) {
+    for (let j = i + 1; j < skel.length; j++) {
+      const a = skel[i], b = skel[j];
+      if (a.type === b.type) continue;
+      const ea = epSet.get(a.id), eb = epSet.get(b.id);
+      let shared = 0;
+      const smaller = ea.size < eb.size ? ea : eb;
+      const bigger = ea.size < eb.size ? eb : ea;
+      for (const x of smaller) if (bigger.has(x)) shared++;
+      if (shared >= 2) pairs.push({ a, b, shared });
+    }
+  }
+  pairs.sort((p, q) => q.shared - p.shared);
+  derivedEdges = pairs.slice(0, 70);
+}
+
+// === Render skeleton ===
+function render() {
+  nodeLayer.innerHTML = '';
+  labelLayer.innerHTML = '';
+  edgeLayer.innerHTML = '';
+
+  buildDerivedEdges();
+  // Draw chord lines (faint) for cross-type co-occurrence
+  for (const e of derivedEdges) {
+    const ln = document.createElementNS(NS, 'line');
+    ln.setAttribute('x1', e.a.x); ln.setAttribute('y1', e.a.y);
+    ln.setAttribute('x2', e.b.x); ln.setAttribute('y2', e.b.y);
+    ln.setAttribute('stroke', '#7c5c1a');
+    ln.setAttribute('stroke-opacity', Math.min(0.22, 0.05 + e.shared * 0.025));
+    ln.setAttribute('stroke-width', 0.6);
+    edgeLayer.appendChild(ln);
+    e._dom = ln;
+  }
+
+  for (const n of nodes) {
+    if (!n.skeleton) continue;
+    const c = document.createElementNS(NS, 'circle');
+    c.setAttribute('cx', n.x); c.setAttribute('cy', n.y);
+    c.setAttribute('r', n.baseRadius);
+    c.setAttribute('fill', TYPE_COLOR[n.type] || '#888');
+    c.setAttribute('stroke', '#fff');
+    c.setAttribute('stroke-width', 1.2);
+    c.setAttribute('opacity', 0.9);
+    c.setAttribute('data-id', n.id);
+    c.style.cursor = 'pointer';
+    c.addEventListener('click', (e) => {
+      e.stopPropagation();
+      if (focusedId === n.id) navigate(n); else focusNode(n.id);
+    });
+    c.addEventListener('mouseenter', (e) => showTooltip(n, e));
+    c.addEventListener('mousemove', (e) => moveTooltip(e));
+    c.addEventListener('mouseleave', hideTooltip);
+    nodeLayer.appendChild(c);
+    n._domCircle = c;
+
+    const t = document.createElementNS(NS, 'text');
+    t.setAttribute('x', n.x);
+    t.setAttribute('y', n.y + n.baseRadius + 12);
+    t.setAttribute('text-anchor', 'middle');
+    t.setAttribute('font-size', 13);
+    t.setAttribute('font-weight', '600');
+    t.setAttribute('fill', '#2e2418');
+    t.setAttribute('paint-order', 'stroke');
+    t.setAttribute('stroke', 'rgba(251,247,239,0.98)');
+    t.setAttribute('stroke-width', 3.6);
+    t.textContent = n.label;
+    t.style.cursor = 'pointer';
+    t.addEventListener('click', (e) => {
+      e.stopPropagation();
+      if (focusedId === n.id) navigate(n); else focusNode(n.id);
+    });
+    t.addEventListener('mouseenter', (e) => showTooltip(n, e));
+    t.addEventListener('mousemove', (e) => moveTooltip(e));
+    t.addEventListener('mouseleave', hideTooltip);
+    labelLayer.appendChild(t);
+    n._domLabel = t;
+  }
+  startBreathing();
+}
+
+// === Breathing: cheap sine drift, throttled to ~30fps, paused when tab hidden ===
+let breathingFrame = null;
+let breathingLastT = 0;
+const BREATHE_INTERVAL = 33; // ms — ~30fps
+function startBreathing() {
+  cancelAnimationFrame(breathingFrame);
+  breathingLastT = 0;
+  const skeletonNodes = nodes.filter(n => n.skeleton);
+  const tick = (t) => {
+    if (document.hidden) {
+      breathingFrame = requestAnimationFrame(tick);
+      return;
+    }
+    if (t - breathingLastT < BREATHE_INTERVAL) {
+      breathingFrame = requestAnimationFrame(tick);
+      return;
+    }
+    breathingLastT = t;
+    for (const n of skeletonNodes) {
+      if (!n._domCircle) continue;
+      const dx = Math.sin(t * n._freqX + n._phaseX) * n._ampX;
+      const dy = Math.cos(t * n._freqY + n._phaseY) * n._ampY;
+      n.x = n._homeX + dx;
+      n.y = n._homeY + dy;
+      n._domCircle.setAttribute('cx', n.x);
+      n._domCircle.setAttribute('cy', n.y);
+      if (n._domLabel) {
+        n._domLabel.setAttribute('x', n.x);
+        n._domLabel.setAttribute('y', n.y + n.baseRadius + 12);
+      }
+    }
+    for (const e of derivedEdges) {
+      if (!e._dom) continue;
+      e._dom.setAttribute('x1', e.a.x); e._dom.setAttribute('y1', e.a.y);
+      e._dom.setAttribute('x2', e.b.x); e._dom.setAttribute('y2', e.b.y);
+    }
+    breathingFrame = requestAnimationFrame(tick);
+  };
+  breathingFrame = requestAnimationFrame(tick);
+}
+// Pause/resume on tab visibility
+document.addEventListener('visibilitychange', () => {
+  if (document.hidden) {
+    cancelAnimationFrame(breathingFrame);
+  } else if (!focusedId) {
+    startBreathing();
+  }
+});
+
+// === Focus a node: fly in its connected episodes as satellites ===
+function ensurePromotedCenter(node) {
+  if (node.skeleton && node._domCircle) return;
+  // Non-skeleton (search-promoted or satellite-clicked): render a temp center
+  node._homeX = cx; node._homeY = cy;
+  node.x = cx; node.y = cy;
+  document.querySelectorAll('.promoted-center').forEach(el => el.remove());
+  const c = document.createElementNS(NS, 'circle');
+  c.setAttribute('class', 'promoted-center');
+  c.setAttribute('cx', cx); c.setAttribute('cy', cy);
+  c.setAttribute('r', node.baseRadius || 9);
+  c.setAttribute('fill', TYPE_COLOR[node.type] || '#888');
+  c.setAttribute('stroke', '#fff'); c.setAttribute('stroke-width', 1.4);
+  c.setAttribute('data-id', node.id);
+  c.style.cursor = 'pointer';
+  c.addEventListener('click', (e) => { e.stopPropagation(); navigate(node); });
+  c.addEventListener('mouseenter', (e) => showTooltip(node, e));
+  c.addEventListener('mousemove', (e) => moveTooltip(e));
+  c.addEventListener('mouseleave', hideTooltip);
+  nodeLayer.appendChild(c);
+  node._domCircle = c;
+  const t = document.createElementNS(NS, 'text');
+  t.setAttribute('class', 'promoted-center');
+  t.setAttribute('x', cx); t.setAttribute('y', cy + (node.baseRadius || 9) + 12);
+  t.setAttribute('text-anchor', 'middle'); t.setAttribute('font-size', 13);
+  t.setAttribute('font-weight', '600'); t.setAttribute('fill', '#2e2418');
+  t.setAttribute('paint-order', 'stroke');
+  t.setAttribute('stroke', 'rgba(251,247,239,0.98)'); t.setAttribute('stroke-width', 3.6);
+  t.textContent = node.label;
+  t.style.cursor = 'pointer';
+  t.addEventListener('click', (e) => { e.stopPropagation(); navigate(node); });
+  t.addEventListener('mouseenter', (e) => showTooltip(node, e));
+  t.addEventListener('mousemove', (e) => moveTooltip(e));
+  t.addEventListener('mouseleave', hideTooltip);
+  labelLayer.appendChild(t);
+  node._domLabel = t;
+}
+
+function focusNode(id) {
+  const targetNode = nodeById.get(id);
+  if (!targetNode) return;
+  ensurePromotedCenter(targetNode);
+  focusedId = id;
+  // Freeze breathing: snap every skeleton node back to home
+  cancelAnimationFrame(breathingFrame);
+  breathingFrame = null;
+  for (const n of nodes) {
+    if (!n.skeleton) continue;
+    n.x = n._homeX; n.y = n._homeY;
+    if (n._domCircle) { n._domCircle.setAttribute('cx', n.x); n._domCircle.setAttribute('cy', n.y); }
+    if (n._domLabel) { n._domLabel.setAttribute('x', n.x); n._domLabel.setAttribute('y', n.y + n.baseRadius + 12); }
+  }
+  for (const e of derivedEdges) {
+    if (!e._dom) continue;
+    e._dom.setAttribute('x1', e.a.x); e._dom.setAttribute('y1', e.a.y);
+    e._dom.setAttribute('x2', e.b.x); e._dom.setAttribute('y2', e.b.y);
+  }
+  const center = nodeById.get(id);
+  if (!center) return;
+  // Pan viewport so the focused node sits at screen center (smoothly)
+  panToCenter(center);
+
+  // Determine satellites: directly connected episodes (and connected persons)
+  const neighborIds = adjacency.get(id) || new Set();
+  const satellites = [...neighborIds]
+    .map(nid => nodeById.get(nid))
+    .filter(n => n && (n.type === 'episode' || n.type === 'person'));
+
+  // If centered node IS an episode, satellites are its concepts/models/themes
+  let satelliteNodes;
+  if (center.type === 'episode') {
+    satelliteNodes = [...neighborIds].map(nid => nodeById.get(nid)).filter(Boolean);
+  } else {
+    satelliteNodes = satellites;
+  }
+
+  // Clean mechanical fan-out: episodes spread on concentric rings around source.
+  // No semantic clustering, no other-skeleton highlighting — just open and read.
+  const N = satelliteNodes.length;
+  const baseR = Math.min(W, H) * 0.17;
+  const ringGap = Math.min(W, H) * 0.075;
+  // Per-ring capacity scales with circumference
+  const labelGap = 60;
+  const ringCaps = [];
+  let total = 0;
+  for (let r = 0; r < 6 && total < N; r++) {
+    const radius = baseR + r * ringGap;
+    const cap = Math.max(6, Math.floor((Math.PI * 2 * radius) / labelGap));
+    ringCaps.push(cap);
+    total += cap;
+  }
+  // Outward direction = away from canvas center
+  const outwardAngle = Math.atan2(center.y - cy, center.x - cx) || -Math.PI / 2;
+  let cursor = 0;
+  for (let r = 0; r < ringCaps.length && cursor < N; r++) {
+    const take = Math.min(ringCaps[r], N - cursor);
+    const radius = baseR + r * ringGap;
+    // Alternate ring starting orientation so rings don't all line up at the same angle
+    const startAngle = outwardAngle - Math.PI + r * 0.4;
+    for (let k = 0; k < take; k++) {
+      const node = satelliteNodes[cursor + k];
+      const angle = startAngle + (k / take) * Math.PI * 2;
+      node._satelliteTargetX = center.x + Math.cos(angle) * radius;
+      node._satelliteTargetY = center.y + Math.sin(angle) * radius;
+    }
+    cursor += take;
+  }
+  // Clear any leftover co-occurrence state
+  center._coCount = null;
+
+  animateFocus(center, satelliteNodes);
+}
+
+function animateFocus(center, satellites) {
+  cancelAnimationFrame(animationFrame);
+  const duration = 700;
+  const start = performance.now();
+
+  // Prepare satellite DOM
+  satelliteLayer.innerHTML = '';
+  edgeLayer.innerHTML = '';
+  const satEls = satellites.map(node => {
+    const c = document.createElementNS(NS, 'circle');
+    c.setAttribute('cx', center.x); c.setAttribute('cy', center.y);
+    c.setAttribute('r', node.baseRadius);
+    c.setAttribute('fill', TYPE_COLOR[node.type] || '#888');
+    c.setAttribute('stroke', '#fff'); c.setAttribute('stroke-width', 1.0);
+    c.setAttribute('opacity', 0);
+    c.style.cursor = 'pointer';
+    c.addEventListener('click', (e) => {
+      e.stopPropagation();
+      // Click satellite → it becomes the new center; second click on the now-centered circle navigates.
+      focusNode(node.id);
+    });
+    c.addEventListener('mouseenter', (e) => showTooltip(node, e));
+    c.addEventListener('mousemove', (e) => moveTooltip(e));
+    c.addEventListener('mouseleave', hideTooltip);
+    satelliteLayer.appendChild(c);
+
+    const t = document.createElementNS(NS, 'text');
+    t.setAttribute('text-anchor', 'middle');
+    t.setAttribute('font-size', 12);
+    t.setAttribute('font-weight', '600');
+    t.setAttribute('fill', '#2e2418');
+    t.setAttribute('paint-order', 'stroke');
+    t.setAttribute('stroke', 'rgba(251,247,239,0.98)');
+    t.setAttribute('stroke-width', 3.2);
+    t.textContent = node.label;
+    t.style.cursor = 'pointer';
+    t.addEventListener('click', (e) => { e.stopPropagation(); focusNode(node.id); });
+    t.addEventListener('mouseenter', (e) => showTooltip(node, e));
+    t.addEventListener('mousemove', (e) => moveTooltip(e));
+    t.addEventListener('mouseleave', hideTooltip);
+    t.setAttribute('opacity', 0);
+    satelliteLayer.appendChild(t);
+
+    const edge = document.createElementNS(NS, 'line');
+    edge.setAttribute('x1', center.x); edge.setAttribute('y1', center.y);
+    edge.setAttribute('x2', center.x); edge.setAttribute('y2', center.y);
+    edge.setAttribute('stroke', TYPE_COLOR[node.type] || '#888');
+    edge.setAttribute('stroke-opacity', 0);
+    edge.setAttribute('stroke-width', 0.8);
+    edgeLayer.appendChild(edge);
+
+    return { node, circle: c, label: t, edge };
+  });
+
+  // Uniform dim for all non-center skeleton — no highlighting, no extra connector lines
+  const skeletonCircles = nodeLayer.querySelectorAll('circle');
+  const skeletonLabels = labelLayer.querySelectorAll('text');
+  const easeCubicOut = (t) => 1 - Math.pow(1 - t, 3);
+
+  const step = (now) => {
+    const p = Math.min(1, (now - start) / duration);
+    const e = easeCubicOut(p);
+
+    skeletonCircles.forEach((el) => {
+      const id = el.getAttribute('data-id');
+      if (id === center.id) {
+        el.setAttribute('opacity', 1);
+        el.style.pointerEvents = 'auto';
+        return;
+      }
+      el.setAttribute('opacity', 0.9 - 0.78 * e);
+      el.style.pointerEvents = 'none'; // dimmed skeletons must not intercept satellite clicks
+    });
+    skeletonLabels.forEach((el, i) => {
+      const id = skeletonCircles[i]?.getAttribute('data-id');
+      if (id === center.id) {
+        el.setAttribute('opacity', 1);
+        el.style.pointerEvents = 'auto';
+        return;
+      }
+      el.setAttribute('opacity', 0.9 - 0.82 * e);
+      el.style.pointerEvents = 'none';
+    });
+
+    // Satellites fly out
+    satEls.forEach((s, i) => {
+      const stagger = Math.min(0.5, i * 0.025);
+      const local = Math.max(0, Math.min(1, (p - stagger) / (1 - stagger)));
+      const le = easeCubicOut(local);
+      const tx = center.x + (s.node._satelliteTargetX - center.x) * le;
+      const ty = center.y + (s.node._satelliteTargetY - center.y) * le;
+      s.circle.setAttribute('cx', tx);
+      s.circle.setAttribute('cy', ty);
+      s.circle.setAttribute('opacity', local);
+      s.label.setAttribute('x', tx);
+      s.label.setAttribute('y', ty + s.node.baseRadius + 10);
+      s.label.setAttribute('opacity', local * 0.95);
+      s.edge.setAttribute('x2', tx);
+      s.edge.setAttribute('y2', ty);
+      s.edge.setAttribute('stroke-opacity', local * 0.35);
+    });
+
+    if (p < 1) animationFrame = requestAnimationFrame(step);
+  };
+  animationFrame = requestAnimationFrame(step);
+}
+
+function resetFocus() {
+  focusedId = null;
+  cancelAnimationFrame(animationFrame);
+  satelliteLayer.innerHTML = '';
+  edgeLayer.innerHTML = '';
+  document.querySelectorAll('.promoted-center').forEach(el => el.remove());
+  // Pan back to default framing
+  cancelAnimationFrame(panFrame);
+  const panStartX = viewTransform.x, panStartY = viewTransform.y;
+  const panDuration = 420;
+  const panT0 = performance.now();
+  const panEase = (t) => 1 - Math.pow(1 - t, 3);
+  const panStep = (now) => {
+    const p = Math.min(1, (now - panT0) / panDuration);
+    const e = panEase(p);
+    viewTransform.x = panStartX * (1 - e);
+    viewTransform.y = panStartY * (1 - e);
+    applyViewTransform();
+    if (p < 1) panFrame = requestAnimationFrame(panStep);
+  };
+  panFrame = requestAnimationFrame(panStep);
+  // Restore derived chord lines (they were cleared with edgeLayer)
+  for (const e of derivedEdges) {
+    const ln = document.createElementNS(NS, 'line');
+    ln.setAttribute('x1', e.a.x); ln.setAttribute('y1', e.a.y);
+    ln.setAttribute('x2', e.b.x); ln.setAttribute('y2', e.b.y);
+    ln.setAttribute('stroke', '#7c5c1a');
+    ln.setAttribute('stroke-opacity', Math.min(0.22, 0.05 + e.shared * 0.025));
+    ln.setAttribute('stroke-width', 0.6);
+    edgeLayer.appendChild(ln);
+    e._dom = ln;
+  }
+  // Resume breathing
+  startBreathing();
+  const skeletonCircles = nodeLayer.querySelectorAll('circle');
+  const skeletonLabels = labelLayer.querySelectorAll('text');
+  // Restore pointer events on all skeletons
+  skeletonCircles.forEach(el => { el.style.pointerEvents = 'auto'; });
+  skeletonLabels.forEach(el => { el.style.pointerEvents = 'auto'; });
+  const duration = 320;
+  const start = performance.now();
+  const step = (now) => {
+    const p = Math.min(1, (now - start) / duration);
+    skeletonCircles.forEach(el => el.setAttribute('opacity', 0.2 + 0.7 * p));
+    skeletonLabels.forEach(el => el.setAttribute('opacity', 0.15 + 0.75 * p));
+    if (p < 1) animationFrame = requestAnimationFrame(step);
+  };
+  animationFrame = requestAnimationFrame(step);
+}
+
+// === Tooltip ===
+function showTooltip(node, event) {
+  tooltip.innerHTML = `<h4>${escapeHtml(node.fullLabel || node.label)}</h4>
+    <div class="meta">${TYPE_LABEL[node.type] || node.type} · ${node.degree || 0} 条连接</div>
+    ${node.summary ? `<div class="summary">${escapeHtml(node.summary)}</div>` : ''}`;
+  tooltip.style.left = (event.clientX + 14) + 'px';
+  tooltip.style.top = (event.clientY + 14) + 'px';
+  tooltip.style.opacity = 1;
+}
+function navigate(routeOrNode) {
+  const route = typeof routeOrNode === 'string' ? routeOrNode : routeOrNode?.route;
+  if (!route) return;
+  window.location.href = '../index.html#/' + route;
+}
+
+function moveTooltip(event) {
+  tooltip.style.left = (event.clientX + 14) + 'px';
+  tooltip.style.top = (event.clientY + 14) + 'px';
+}
+function hideTooltip() { tooltip.style.opacity = 0; }
+function escapeHtml(s) { return String(s).replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c])); }
+
+// === Pan / zoom ===
+function applyViewTransform() {
+  viewportG.setAttribute('transform', `translate(${viewTransform.x},${viewTransform.y}) scale(${viewTransform.k})`);
+}
+
+let panFrame = null;
+function panToCenter(node) {
+  cancelAnimationFrame(panFrame);
+  const k = viewTransform.k;
+  const targetX = cx - (node._homeX ?? node.x) * k;
+  const targetY = cy - (node._homeY ?? node.y) * k;
+  const startX = viewTransform.x, startY = viewTransform.y;
+  const dx = targetX - startX, dy = targetY - startY;
+  if (Math.abs(dx) < 1 && Math.abs(dy) < 1) return;
+  const duration = 520;
+  const t0 = performance.now();
+  const ease = (t) => 1 - Math.pow(1 - t, 3);
+  const step = (now) => {
+    const p = Math.min(1, (now - t0) / duration);
+    const e = ease(p);
+    viewTransform.x = startX + dx * e;
+    viewTransform.y = startY + dy * e;
+    applyViewTransform();
+    if (p < 1) panFrame = requestAnimationFrame(step);
+  };
+  panFrame = requestAnimationFrame(step);
+}
+
+function attachInteraction() {
+  let dragging = false;
+  let dragStart = null;
+  svg.addEventListener('mousedown', (e) => {
+    if (e.target.tagName === 'circle') return;
+    dragging = true;
+    dragStart = { x: e.clientX - viewTransform.x, y: e.clientY - viewTransform.y };
+  });
+  window.addEventListener('mousemove', (e) => {
+    if (!dragging) return;
+    viewTransform.x = e.clientX - dragStart.x;
+    viewTransform.y = e.clientY - dragStart.y;
+    applyViewTransform();
+  });
+  window.addEventListener('mouseup', () => { dragging = false; });
+
+  svg.addEventListener('wheel', (e) => {
+    e.preventDefault();
+    const factor = e.deltaY < 0 ? 1.1 : 0.9;
+    const newK = Math.max(0.3, Math.min(3.5, viewTransform.k * factor));
+    // Zoom toward cursor
+    const mx = e.clientX, my = e.clientY;
+    viewTransform.x = mx - (mx - viewTransform.x) * (newK / viewTransform.k);
+    viewTransform.y = my - (my - viewTransform.y) * (newK / viewTransform.k);
+    viewTransform.k = newK;
+    applyViewTransform();
+  }, { passive: false });
+
+  svg.addEventListener('click', (e) => {
+    if (e.target.tagName !== 'circle' && focusedId) resetFocus();
+  });
+
+  window.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && focusedId) resetFocus();
+  });
+
+  window.addEventListener('resize', () => {
+    W = window.innerWidth; H = window.innerHeight;
+    cx = W / 2; cy = H / 2;
+    svg.setAttribute('width', W); svg.setAttribute('height', H);
+    layoutSkeleton();
+    bgLayer.innerHTML = '';
+    for (const r of [Math.min(W, H) * 0.13, Math.min(W, H) * 0.27, Math.min(W, H) * 0.42]) {
+      const c = document.createElementNS(NS, 'circle');
+      c.setAttribute('cx', cx); c.setAttribute('cy', cy); c.setAttribute('r', r);
+      c.setAttribute('fill', 'none'); c.setAttribute('stroke', 'rgba(100,80,50,0.06)'); c.setAttribute('stroke-dasharray', '2 6');
+      bgLayer.appendChild(c);
+    }
+    render();
+    if (focusedId) focusNode(focusedId);
+  });
+}
+
+// === Search ===
+function attachSearch() {
+  const input = document.getElementById('search-input');
+  const results = document.getElementById('search-results');
+  let lastQuery = '';
+  const render = (q) => {
+    results.innerHTML = '';
+    if (!q) return;
+    const lq = q.toLowerCase();
+    const matched = nodes
+      .filter(n => (n.label || '').toLowerCase().includes(lq) || (n.fullLabel || '').toLowerCase().includes(lq))
+      .sort((a, b) => (b.degree || 0) - (a.degree || 0))
+      .slice(0, 14);
+    for (const n of matched) {
+      const row = document.createElement('div');
+      row.className = 'row';
+      row.innerHTML = `<span class="typedot" style="background:${TYPE_COLOR[n.type] || '#888'}"></span><span class="label">${escapeHtml(n.fullLabel || n.label)}</span><span class="meta">${TYPE_LABEL[n.type] || n.type} · ${n.degree || 0}</span>`;
+      row.addEventListener('click', () => {
+        input.value = '';
+        results.innerHTML = '';
+        focusByAnyId(n.id);
+      });
+      results.appendChild(row);
+    }
+  };
+  input.addEventListener('input', (e) => {
+    const q = e.target.value.trim();
+    if (q !== lastQuery) { lastQuery = q; render(q); }
+  });
+  input.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') { input.value = ''; results.innerHTML = ''; input.blur(); }
+  });
+}
+
+// Alias kept for search box
+function focusByAnyId(id) { focusNode(id); }
+
+init();
+</script>
+</body>
+</html>

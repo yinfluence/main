@@ -1,0 +1,212 @@
+<!doctype html>
+<html lang="zh-cn">
+<head>
+<meta charset="utf-8">
+<title>车圈笑傲江湖 · 版本三 · 一级入口</title>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<style>
+  :root{
+    --paper:#f5efe4;
+    --ink:#1a1a1a;
+    --ink-soft:#5d4e37;
+    --vermilion:#a93226;
+    --seal:#8b3a1f;
+    --line:#c9bfa9;
+  }
+  *{box-sizing:border-box}
+  body{
+    margin:0;background:var(--paper);color:var(--ink);
+    font-family:"Songti SC","Noto Serif SC","Source Han Serif SC",serif;
+    line-height:1.8;
+  }
+  .wrap{max-width:880px;margin:0 auto;padding:48px 24px 80px}
+  header{border-bottom:1px solid var(--line);padding-bottom:24px;margin-bottom:24px}
+  h1{font-size:32px;margin:0 0 8px;letter-spacing:6px}
+  h1 .seal{
+    display:inline-block;background:var(--vermilion);color:var(--paper);
+    font-size:14px;padding:4px 8px;margin-left:12px;letter-spacing:2px;
+    vertical-align:middle;border-radius:2px;
+  }
+  .lede{color:var(--ink-soft);font-size:15px;margin:0}
+
+  .preface{
+    background:#fbf7ed;
+    border:1px solid var(--line);
+    padding:20px 24px;
+    margin:28px 0 36px;
+    font-size:15px;
+    color:var(--ink-soft);
+    position:relative;
+  }
+  .preface::before{
+    content:"江湖序";
+    position:absolute;top:-12px;left:20px;
+    background:var(--paper);
+    padding:0 10px;font-size:13px;color:var(--vermilion);letter-spacing:3px;
+  }
+
+  section.faction{
+    border-top:1px solid var(--line);
+    padding:28px 0;
+    display:grid;
+    grid-template-columns:160px 1fr;
+    gap:24px;
+  }
+  section.faction:last-of-type{border-bottom:1px solid var(--line)}
+  .fac-side{
+    text-align:left;
+  }
+  .fac-tag{
+    display:inline-block;
+    background:var(--vermilion);color:var(--paper);
+    font-size:12px;padding:3px 10px;letter-spacing:2px;
+    margin-bottom:8px;
+  }
+  .fac-name{
+    font-size:24px;letter-spacing:3px;margin:0;
+  }
+  .fac-role{font-size:13px;color:var(--ink-soft);margin:4px 0 0}
+  .fac-real{
+    font-size:14px;color:var(--seal);margin-top:10px;
+    border-top:1px dashed var(--line);padding-top:10px;
+  }
+  .fac-main p{margin:0 0 14px;font-size:15px}
+  .ep-row{margin-top:14px}
+  .ep-pill{
+    display:inline-block;
+    font-size:13px;
+    border:1px solid var(--ink);padding:4px 12px;
+    text-decoration:none;color:var(--ink);
+    letter-spacing:1px;margin-right:8px;
+  }
+  .ep-pill:hover{background:var(--ink);color:var(--paper)}
+  .ep-pill .num{color:var(--vermilion);font-weight:700;margin-right:6px}
+
+  .closing{
+    margin-top:48px;text-align:center;
+    color:var(--ink-soft);font-size:14px;
+    letter-spacing:2px;
+  }
+  .closing .stamp{
+    display:inline-block;border:2px solid var(--vermilion);
+    color:var(--vermilion);padding:8px 18px;letter-spacing:6px;
+    font-size:14px;margin-top:12px;
+  }
+
+  @media (max-width:640px){
+    section.faction{grid-template-columns:1fr;gap:8px}
+    .fac-real{border-top:none;padding-top:0;margin-top:6px}
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <h1>车圈笑傲江湖 <span class="seal">版本三 · 一级入口</span></h1>
+    <p class="lede">想象首页有一个大入口写着「车圈笑傲江湖」,点进来就是这一页。叙事感最强,可作为节目的一级分类。</p>
+  </header>
+
+  <div class="preface">
+    电车这门生意,从来不是产品对产品的较量。它是融资飞轮 ✕ 营销叙事 ✕ 粉丝动员 ✕ 地方政府的多方混战。
+    谁能把"借来的东西"重新命名成自己的创新,谁能把"风险"重新命名成"信仰",谁就在这场江湖里立得住。
+    颖响力借《笑傲江湖》的门派和人物,把这场博弈讲清楚。
+  </div>
+
+  <section class="faction">
+    <div class="fac-side">
+      <span class="fac-tag">华山派</span>
+      <h2 class="fac-name">岳不群</h2>
+      <p class="fac-role">名门正派 · 君子剑</p>
+      <p class="fac-real">华为 / 问界<br>余承东</p>
+    </div>
+    <div class="fac-main">
+      <p>"君子剑"的厉害,不在于剑法,在于把借来的招式命名成自家心法,然后让一个前台人物替整个组织承担情绪动员。 真正的内功是营销纪律和话术统一,不是后台工程。</p>
+      <div class="ep-row">
+        <a class="ep-pill" href="/#/episodes/EP050"><span class="num">EP050</span>车圈的"岳不群"到底是谁</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="faction">
+    <div class="fac-side">
+      <span class="fac-tag">日月神教</span>
+      <h2 class="fac-name">东方不败 / 任我行</h2>
+      <p class="fac-role">教主 · 葵花宝典</p>
+      <p class="fac-real">理想汽车<br>李想</p>
+    </div>
+    <div class="fac-main">
+      <p>葵花宝典是邪派武功也是早期捷径——增程让你快速登顶,代价是后续选择被锁死。 同一人既是东方不败也是任我行,因为信众化品牌的本质就是教主即教派。</p>
+      <div class="ep-row">
+        <a class="ep-pill" href="/#/episodes/EP055"><span class="num">EP055</span>电车圈"日月神教"摇摇欲坠</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="faction">
+    <div class="fac-side">
+      <span class="fac-tag">丐帮</span>
+      <h2 class="fac-name">帮主</h2>
+      <p class="fac-role">九袋长老 · 打狗棒</p>
+      <p class="fac-real">小米汽车<br>雷军</p>
+    </div>
+    <div class="fac-main">
+      <p>丐帮人多势众,问题是"袋子"里装的是信徒的买命钱。 粉丝替品牌做市场教育和产品验证,品牌却公开承认更成熟、更坚固的版本会优先留给欧洲市场。 这是江湖最古老的分层。</p>
+      <div class="ep-row">
+        <a class="ep-pill" href="/#/episodes/EP062"><span class="num">EP062</span>电车圈的"丐帮"是谁</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="faction">
+    <div class="fac-side">
+      <span class="fac-tag">嵩山派</span>
+      <h2 class="fac-name">左冷禅</h2>
+      <p class="fac-role">五岳并派 · 体外资产</p>
+      <p class="fac-real">蔚来<br>李斌</p>
+    </div>
+    <div class="fac-main">
+      <p>左冷禅一辈子算计五岳并派,从来不是为了练剑。 蔚来的换电也不只是换电——电池、换电站、地方资金被装进体外平台,做成可融资、可估值、可吸金的资产化体系。 车不过是这场局的入场券。</p>
+      <div class="ep-row">
+        <a class="ep-pill" href="/#/episodes/EP067"><span class="num">EP067</span>电车圈左冷禅,车不过是单程票</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="faction">
+    <div class="fac-side">
+      <span class="fac-tag">江湖镖局</span>
+      <h2 class="fac-name">福威镖局</h2>
+      <p class="fac-role">总镖头 · 辟邪剑谱</p>
+      <p class="fac-real">比亚迪<br>王传福</p>
+    </div>
+    <div class="fac-main">
+      <p>福威镖局的辟邪剑谱,是江湖最大悬念。 比亚迪靠刀片电池、4S 网络、海外渠道、零公里二手车,把销量与估值维持成难以穿透的系统。 头部地位下,积累的是更大的黑箱。</p>
+      <div class="ep-row">
+        <a class="ep-pill" href="/#/episodes/EP080"><span class="num">EP080</span>电车圈"福威镖局"是谁</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="faction">
+    <div class="fac-side">
+      <span class="fac-tag">江湖良币</span>
+      <h2 class="fac-name">无门无派</h2>
+      <p class="fac-role">侠义在江湖 · 不进任何派</p>
+      <p class="fac-real">观致汽车<br>姚振华(实名举报)</p>
+    </div>
+    <div class="fac-main">
+      <p>江湖良币没有名字,因为这种基因在补贴/销量驱动的市场里活不下来。 一旦被野蛮资本接手,又会迅速失去原本唯一值钱的东西——认真造车的初心。 良币之死,是这场江湖最难提的一笔。</p>
+      <div class="ep-row">
+        <a class="ep-pill" href="/#/episodes/EP066"><span class="num">EP066</span>观致破产,劣币驱逐良币</a>
+      </div>
+    </div>
+  </section>
+
+  <div class="closing">
+    本卷收录 6 派,均出自节目原话。<br>
+    <span class="stamp">颖响力 · 江湖卷一</span>
+  </div>
+
+</div>
+</body>
+</html>
