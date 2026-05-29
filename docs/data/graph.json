@@ -2,11 +2,11 @@
   "meta": {
     "title": "颖响力知识图谱",
     "subtitle": "节目、概念、模型、人物、主题之间的可视化连接网络",
-    "nodeCount": 515,
-    "linkCount": 1097,
+    "nodeCount": 516,
+    "linkCount": 1101,
     "typeCounts": {
       "model": 66,
-      "episode": 149,
+      "episode": 150,
       "concept": 144,
       "person": 65,
       "theme": 91
@@ -300,6 +300,17 @@
       "degree": 11
     },
     {
+      "id": "theme:real-estate-deleveraging",
+      "key": "real-estate-deleveraging",
+      "label": "房地产去杠杆与风险出清",
+      "fullLabel": "房地产去杠杆与风险出清",
+      "type": "theme",
+      "route": "themes/real-estate-deleveraging",
+      "summary": "讨论房地产在下行周期里如何通过断供、重组、展期和资产处置逐步暴露风险。",
+      "status": null,
+      "degree": 11
+    },
+    {
       "id": "theme:maritime-chokepoints-and-route-order",
       "key": "maritime-chokepoints-and-route-order",
       "label": "海峡命门与航运秩序",
@@ -375,17 +386,6 @@
       "summary": "央视官宣拿下 2026-2031 年四届世界杯转播权,社交媒体一片砍价封神。节目拆三层:网传 6000 万美元单届价与 1.1 亿美元四届打包价数学上互相冲突,主持人倾向 6000 万真、打包价假,目的是压低本届广告商预期;FIFA 秘书长和温格先到中国足协而非央视、温格指导 U14,财政部同步宣布 5 亿元校园足球投入,三件事时间紧密耦合;最关键的一层是,这本就是商业谈判,被包装成民族胜利后让央视垄断稳赚不赔,观众照样熬夜看广告充会员,自豪感成了义务宣传。落点是体育归体育、商业归商业。",
       "status": "curated",
       "degree": 11
-    },
-    {
-      "id": "theme:real-estate-deleveraging",
-      "key": "real-estate-deleveraging",
-      "label": "房地产去杠杆与风险出清",
-      "fullLabel": "房地产去杠杆与风险出清",
-      "type": "theme",
-      "route": "themes/real-estate-deleveraging",
-      "summary": "讨论房地产在下行周期里如何通过断供、重组、展期和资产处置逐步暴露风险。",
-      "status": null,
-      "degree": 10
     },
     {
       "id": "theme:singapore-and-small-state-survival",
@@ -2401,6 +2401,17 @@
       "degree": 4
     },
     {
+      "id": "theme:housing-burden-and-income-distribution",
+      "key": "housing-burden-and-income-distribution",
+      "label": "住房税负与收入分配",
+      "fullLabel": "住房税负与收入分配",
+      "type": "theme",
+      "route": "themes/housing-burden-and-income-distribution",
+      "summary": "讨论住房、税负和可支配收入之间的关系，尤其关注中低收入群体被抽走了多少上升空间。",
+      "status": null,
+      "degree": 4
+    },
+    {
       "id": "episode:EP010",
       "key": "EP010",
       "label": "EP010",
@@ -2518,6 +2529,17 @@
       "type": "episode",
       "route": "episodes/EP119",
       "summary": "本期把焦点从茅台移向整个白酒行业，指出行业真正的问题不只是销量下滑，而是四条旧支柱同时松动：企业领导层难以长期沉淀、年份酒叙事高度黑箱、传统男权酒桌规则正在失效，而依附茅台的酱酒金融逻辑也越来越像割韭菜。",
+      "status": "curated",
+      "degree": 4
+    },
+    {
+      "id": "episode:EP150",
+      "key": "EP150",
+      "label": "EP150",
+      "fullLabel": "EP150 · 学区房投资属性崩塌！现在买房等于自残式消费，老思维注定被时代收割。",
+      "type": "episode",
+      "route": "episodes/EP150",
+      "summary": "本期从三四月房地产小阳春切入，点出这波回暖主要靠学区房撑起，再追问学区房会不会是下一个更大的雷。节目以南京七个核心区取消学位锁定的2026招生新政为案例，拆解取消锁定后学位供给翻倍、存量房东连夜挂牌的连锁反应，并把它接到学龄人口断崖：出生人口从1500多万跌到792万，名校开始面临学生荒，教育系统只能放开学位流动自救。落点是学区房的资产逻辑被彻底改写——从稳赚不赔的存钱，变成没有保底的自残式消费，像当年被网约车击穿的出租车牌照，未来或将沦为最危险的资产。",
       "status": "curated",
       "degree": 4
     },
@@ -2661,6 +2683,17 @@
       "type": "concept",
       "route": "concepts/jurisdiction-arbitrage",
       "summary": "企业通过选择更有利法域，获取融资、估值、合规和退出上的制度差价。",
+      "status": null,
+      "degree": 3
+    },
+    {
+      "id": "model:layered-market",
+      "key": "layered-market",
+      "label": "分层市场",
+      "fullLabel": "分层市场",
+      "type": "model",
+      "route": "models/layered-market",
+      "summary": "分层市场说明同一大市场内部，不同层级拥有不同价格、流动性和预期。",
       "status": null,
       "degree": 3
     },
@@ -3083,17 +3116,6 @@
       "degree": 3
     },
     {
-      "id": "theme:housing-burden-and-income-distribution",
-      "key": "housing-burden-and-income-distribution",
-      "label": "住房税负与收入分配",
-      "fullLabel": "住房税负与收入分配",
-      "type": "theme",
-      "route": "themes/housing-burden-and-income-distribution",
-      "summary": "讨论住房、税负和可支配收入之间的关系，尤其关注中低收入群体被抽走了多少上升空间。",
-      "status": null,
-      "degree": 3
-    },
-    {
       "id": "theme:capital-packaging-and-credential-borrowing",
       "key": "capital-packaging-and-credential-borrowing",
       "label": "资本包装与身份背书",
@@ -3413,17 +3435,6 @@
       "degree": 2
     },
     {
-      "id": "model:layered-market",
-      "key": "layered-market",
-      "label": "分层市场",
-      "fullLabel": "分层市场",
-      "type": "model",
-      "route": "models/layered-market",
-      "summary": "分层市场说明同一大市场内部，不同层级拥有不同价格、流动性和预期。",
-      "status": null,
-      "degree": 2
-    },
-    {
       "id": "concept:industrial-education-lag",
       "key": "industrial-education-lag",
       "label": "工业时代教育惯性",
@@ -3618,6 +3629,17 @@
       "type": "theme",
       "route": "themes/recycling-and-pollution-transfer",
       "summary": "聚焦所谓循环经济如何在补贴和套利驱动下，把风险从台面上的产品转移到看不见的废弃物和弱监管地区。",
+      "status": null,
+      "degree": 2
+    },
+    {
+      "id": "concept:inheritance-supply-shock",
+      "key": "inheritance-supply-shock",
+      "label": "继承供给冲击",
+      "fullLabel": "继承供给冲击",
+      "type": "concept",
+      "route": "concepts/inheritance-supply-shock",
+      "summary": "老一代集中退出时，沉睡的存量资产会重新进入市场，形成供给冲击。",
       "status": null,
       "degree": 2
     },
@@ -4630,17 +4652,6 @@
       "type": "model",
       "route": "models/centralized-control-backfire",
       "summary": "集中控制把监管便利和低成本做出来，也会把失效点集中到同一个中心节点上。",
-      "status": null,
-      "degree": 1
-    },
-    {
-      "id": "concept:inheritance-supply-shock",
-      "key": "inheritance-supply-shock",
-      "label": "继承供给冲击",
-      "fullLabel": "继承供给冲击",
-      "type": "concept",
-      "route": "concepts/inheritance-supply-shock",
-      "summary": "老一代集中退出时，沉睡的存量资产会重新进入市场，形成供给冲击。",
       "status": null,
       "degree": 1
     },
@@ -10973,6 +10984,26 @@
     {
       "source": "episode:EP149",
       "target": "theme:southeast-asia-fragmentation-and-bloc-competition",
+      "kind": "episode-theme"
+    },
+    {
+      "source": "episode:EP150",
+      "target": "concept:inheritance-supply-shock",
+      "kind": "episode-concept"
+    },
+    {
+      "source": "episode:EP150",
+      "target": "model:layered-market",
+      "kind": "episode-model"
+    },
+    {
+      "source": "episode:EP150",
+      "target": "theme:real-estate-deleveraging",
+      "kind": "episode-theme"
+    },
+    {
+      "source": "episode:EP150",
+      "target": "theme:housing-burden-and-income-distribution",
       "kind": "episode-theme"
     },
     {

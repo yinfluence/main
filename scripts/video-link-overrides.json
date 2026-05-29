@@ -1,4 +1,15 @@
 {
+  "EP150": {
+    "bilibili": {
+      "platform": "bilibili",
+      "status": "unavailable",
+      "note": "暂未上架"
+    },
+    "youtube": {
+      "platform": "youtube",
+      "url": "https://www.youtube.com/watch?v=yb8dCEPc8Eg"
+    }
+  },
   "EP149": {
     "bilibili": {
       "platform": "bilibili",
