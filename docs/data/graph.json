@@ -2,11 +2,11 @@
   "meta": {
     "title": "颖响力知识图谱",
     "subtitle": "节目、概念、模型、人物、主题之间的可视化连接网络",
-    "nodeCount": 516,
-    "linkCount": 1101,
+    "nodeCount": 517,
+    "linkCount": 1109,
     "typeCounts": {
       "model": 66,
-      "episode": 150,
+      "episode": 151,
       "concept": 144,
       "person": 65,
       "theme": 91
@@ -685,6 +685,17 @@
       "degree": 8
     },
     {
+      "id": "model:principal-agent",
+      "key": "principal-agent",
+      "label": "委托代理问题",
+      "fullLabel": "委托代理问题",
+      "type": "model",
+      "route": "models/principal-agent",
+      "summary": "委托代理模型解释外部顾问或职业代理人的激励，未必与委托方长期价值一致。",
+      "status": null,
+      "degree": 8
+    },
+    {
       "id": "theme:ev-safety-and-consumer-testing",
       "key": "ev-safety-and-consumer-testing",
       "label": "新能源安全边界与消费者测试",
@@ -714,6 +725,17 @@
       "type": "model",
       "route": "models/distribution-bias",
       "summary": "系统会优先保护更强势、更有组织和更能讲故事的环节，而把成本和压力慢慢压向更弱的一端。",
+      "status": null,
+      "degree": 8
+    },
+    {
+      "id": "concept:organizational-silence",
+      "key": "organizational-silence",
+      "label": "组织失声",
+      "fullLabel": "组织失声",
+      "type": "concept",
+      "route": "concepts/organizational-silence",
+      "summary": "组织内部真实反馈消失后，成员会等待权威表态，而不是主动修正错误。",
       "status": null,
       "degree": 8
     },
@@ -1037,6 +1059,17 @@
       "degree": 8
     },
     {
+      "id": "episode:EP151",
+      "key": "EP151",
+      "label": "EP151",
+      "fullLabel": "EP151 · 耿同学做了最正确的事，但他的打假毫无意义！拆解中国学术圈的生存闭环",
+      "type": "episode",
+      "route": "episodes/EP151",
+      "summary": "本期是 EP139 耿同学打假的续篇，主持人以非圈内人但常年和院士、老师团队打交道的视角，判断耿同学个人处境相当危险，对行业却几乎改变不了什么。节目把中国学术体系拆成一个上层元老院加下层阶级体系：院士在顶，杰青、大中小帽子一级一级往下，每级还卡年龄，越级几乎不可能。落点是真正的病灶不是造假，而是这套结党、剥削、逆淘汰的生存闭环——最会经营关系而非最懂学术的人一代代上位，造假只是这套机制里最小的一环。",
+      "status": "curated",
+      "degree": 8
+    },
+    {
       "id": "concept:cost-shifting",
       "key": "cost-shifting",
       "label": "成本外移",
@@ -1059,17 +1092,6 @@
       "degree": 7
     },
     {
-      "id": "model:principal-agent",
-      "key": "principal-agent",
-      "label": "委托代理问题",
-      "fullLabel": "委托代理问题",
-      "type": "model",
-      "route": "models/principal-agent",
-      "summary": "委托代理模型解释外部顾问或职业代理人的激励，未必与委托方长期价值一致。",
-      "status": null,
-      "degree": 7
-    },
-    {
       "id": "theme:state-business-entanglement",
       "key": "state-business-entanglement",
       "label": "政企嵌入与企业存续",
@@ -1077,17 +1099,6 @@
       "type": "theme",
       "route": "themes/state-business-entanglement",
       "summary": "讨论企业如何依赖地方政府、国资平台或关系结构续命，以及这种绑定如何反过来改写企业目标。",
-      "status": null,
-      "degree": 7
-    },
-    {
-      "id": "concept:organizational-silence",
-      "key": "organizational-silence",
-      "label": "组织失声",
-      "fullLabel": "组织失声",
-      "type": "concept",
-      "route": "concepts/organizational-silence",
-      "summary": "组织内部真实反馈消失后，成员会等待权威表态，而不是主动修正错误。",
       "status": null,
       "degree": 7
     },
@@ -1378,6 +1389,17 @@
       "degree": 6
     },
     {
+      "id": "model:screening-machine",
+      "key": "screening-machine",
+      "label": "筛选机器模型",
+      "fullLabel": "筛选机器模型",
+      "type": "model",
+      "route": "models/screening-machine",
+      "summary": "教育和组织把人当作待筛选样本，而非待生长的人来处理的系统逻辑。",
+      "status": null,
+      "degree": 6
+    },
+    {
       "id": "model:time-arbitrage-model",
       "key": "time-arbitrage-model",
       "label": "时间套利模型",
@@ -1429,6 +1451,17 @@
       "type": "model",
       "route": "models/narrative-instrumentalization",
       "summary": "叙事工具化模型解释叙事的主要功能从解释现实转向组织情绪和划分阵营。",
+      "status": null,
+      "degree": 6
+    },
+    {
+      "id": "model:institutional-formalism-spiral",
+      "key": "institutional-formalism-spiral",
+      "label": "制度形式主义螺旋",
+      "fullLabel": "制度形式主义螺旋",
+      "type": "model",
+      "route": "models/institutional-formalism-spiral",
+      "summary": "组织一旦开始依赖仪式、排名、头衔和场面来证明自己有效，就会不断加码这些外壳，同时越来越失去真正解决问题的能力。",
       "status": null,
       "degree": 6
     },
@@ -1796,17 +1829,6 @@
       "degree": 5
     },
     {
-      "id": "model:screening-machine",
-      "key": "screening-machine",
-      "label": "筛选机器模型",
-      "fullLabel": "筛选机器模型",
-      "type": "model",
-      "route": "models/screening-machine",
-      "summary": "教育和组织把人当作待筛选样本，而非待生长的人来处理的系统逻辑。",
-      "status": null,
-      "degree": 5
-    },
-    {
       "id": "concept:time-asymmetry",
       "key": "time-asymmetry",
       "label": "时间非对称",
@@ -1869,17 +1891,6 @@
       "type": "model",
       "route": "models/political-embedded-enterprise",
       "summary": "企业一旦把自身命运深嵌进地方政府或国资体系，短期会更能续命，长期却更容易沦为政策工具。",
-      "status": null,
-      "degree": 5
-    },
-    {
-      "id": "model:institutional-formalism-spiral",
-      "key": "institutional-formalism-spiral",
-      "label": "制度形式主义螺旋",
-      "fullLabel": "制度形式主义螺旋",
-      "type": "model",
-      "route": "models/institutional-formalism-spiral",
-      "summary": "组织一旦开始依赖仪式、排名、头衔和场面来证明自己有效，就会不断加码这些外壳，同时越来越失去真正解决问题的能力。",
       "status": null,
       "degree": 5
     },
@@ -2324,6 +2335,17 @@
       "degree": 4
     },
     {
+      "id": "concept:credential-rent",
+      "key": "credential-rent",
+      "label": "身份租值",
+      "fullLabel": "身份租值",
+      "type": "concept",
+      "route": "concepts/credential-rent",
+      "summary": "一个人的学历、文化、头衔或圈层，不再只是背景，而被当成能持续换钱、换信任和换资源的租值来源。",
+      "status": null,
+      "degree": 4
+    },
+    {
       "id": "model:stability-over-growth-trap",
       "key": "stability-over-growth-trap",
       "label": "稳定替代增长陷阱",
@@ -2606,6 +2628,17 @@
       "type": "model",
       "route": "models/subsidized-adoption-flywheel",
       "summary": "补贴驱动采纳飞轮解释平台如何用补贴换取使用量，再把使用量包装成增长证据。",
+      "status": null,
+      "degree": 3
+    },
+    {
+      "id": "model:wealth-power-reproduction",
+      "key": "wealth-power-reproduction",
+      "label": "财富权力再生产",
+      "fullLabel": "财富权力再生产",
+      "type": "model",
+      "route": "models/wealth-power-reproduction",
+      "summary": "财富权力再生产解释财富如何借婚姻、生育、身份和关系重新转化为下一代权力。",
       "status": null,
       "degree": 3
     },
@@ -2918,17 +2951,6 @@
       "degree": 3
     },
     {
-      "id": "concept:credential-rent",
-      "key": "credential-rent",
-      "label": "身份租值",
-      "fullLabel": "身份租值",
-      "type": "concept",
-      "route": "concepts/credential-rent",
-      "summary": "一个人的学历、文化、头衔或圈层，不再只是背景，而被当成能持续换钱、换信任和换资源的租值来源。",
-      "status": null,
-      "degree": 3
-    },
-    {
       "id": "theme:data-cosmetics-and-false-prosperity",
       "key": "data-cosmetics-and-false-prosperity",
       "label": "数据粉饰与虚假繁荣",
@@ -3046,6 +3068,17 @@
       "type": "concept",
       "route": "concepts/cult-branding",
       "summary": "用户从购买者变成主动辩护、传播和站队的信众时，品牌就进入信众化阶段。",
+      "status": null,
+      "degree": 3
+    },
+    {
+      "id": "theme:academic-bureaucracy-and-knowledge-decline",
+      "key": "academic-bureaucracy-and-knowledge-decline",
+      "label": "学术官僚化与知识退化",
+      "fullLabel": "学术官僚化与知识退化",
+      "type": "theme",
+      "route": "themes/academic-bureaucracy-and-knowledge-decline",
+      "summary": "讨论当高校越来越像官场时，课堂、研究和学问如何被不断挤压。",
       "status": null,
       "degree": 3
     },
@@ -3332,17 +3365,6 @@
       "type": "concept",
       "route": "concepts/performative-innovation",
       "summary": "表演式创新指项目主要为了完成指标、包装成果和争取扶持资金，而不以真实突破为中心。",
-      "status": null,
-      "degree": 2
-    },
-    {
-      "id": "model:wealth-power-reproduction",
-      "key": "wealth-power-reproduction",
-      "label": "财富权力再生产",
-      "fullLabel": "财富权力再生产",
-      "type": "model",
-      "route": "models/wealth-power-reproduction",
-      "summary": "财富权力再生产解释财富如何借婚姻、生育、身份和关系重新转化为下一代权力。",
       "status": null,
       "degree": 2
     },
@@ -3864,6 +3886,17 @@
       "degree": 2
     },
     {
+      "id": "concept:market-discipline-failure",
+      "key": "market-discipline-failure",
+      "label": "市场惩戒失效",
+      "fullLabel": "市场惩戒失效",
+      "type": "concept",
+      "route": "concepts/market-discipline-failure",
+      "summary": "市场惩戒失效指规则被明显挑战后，法律、监管、审计和价格反应都没有让违规者付出足够代价。",
+      "status": null,
+      "degree": 2
+    },
+    {
       "id": "concept:investment-timing-gap",
       "key": "investment-timing-gap",
       "label": "投入兑现时间差",
@@ -4036,17 +4069,6 @@
       "type": "person",
       "route": "people/xu-jiayin",
       "summary": "许家印是中国恒大集团创办人、原董事会主席，节目借他观察地产高杠杆、一言堂治理和财富保全工具被穿透。",
-      "status": null,
-      "degree": 2
-    },
-    {
-      "id": "theme:academic-bureaucracy-and-knowledge-decline",
-      "key": "academic-bureaucracy-and-knowledge-decline",
-      "label": "学术官僚化与知识退化",
-      "fullLabel": "学术官僚化与知识退化",
-      "type": "theme",
-      "route": "themes/academic-bureaucracy-and-knowledge-decline",
-      "summary": "讨论当高校越来越像官场时，课堂、研究和学问如何被不断挤压。",
       "status": null,
       "degree": 2
     },
@@ -5191,17 +5213,6 @@
       "type": "theme",
       "route": "themes/time-horizon-and-foresight",
       "summary": "讨论人物与企业如何在不同周期里提前摆放自己，而不是等结果发生后再被动解释。",
-      "status": null,
-      "degree": 1
-    },
-    {
-      "id": "concept:market-discipline-failure",
-      "key": "market-discipline-failure",
-      "label": "市场惩戒失效",
-      "fullLabel": "市场惩戒失效",
-      "type": "concept",
-      "route": "concepts/market-discipline-failure",
-      "summary": "市场惩戒失效指规则被明显挑战后，法律、监管、审计和价格反应都没有让违规者付出足够代价。",
       "status": null,
       "degree": 1
     },
@@ -11004,6 +11015,46 @@
     {
       "source": "episode:EP150",
       "target": "theme:housing-burden-and-income-distribution",
+      "kind": "episode-theme"
+    },
+    {
+      "source": "episode:EP151",
+      "target": "concept:credential-rent",
+      "kind": "episode-concept"
+    },
+    {
+      "source": "episode:EP151",
+      "target": "concept:market-discipline-failure",
+      "kind": "episode-concept"
+    },
+    {
+      "source": "episode:EP151",
+      "target": "concept:organizational-silence",
+      "kind": "episode-concept"
+    },
+    {
+      "source": "episode:EP151",
+      "target": "model:screening-machine",
+      "kind": "episode-model"
+    },
+    {
+      "source": "episode:EP151",
+      "target": "model:wealth-power-reproduction",
+      "kind": "episode-model"
+    },
+    {
+      "source": "episode:EP151",
+      "target": "model:principal-agent",
+      "kind": "episode-model"
+    },
+    {
+      "source": "episode:EP151",
+      "target": "model:institutional-formalism-spiral",
+      "kind": "episode-model"
+    },
+    {
+      "source": "episode:EP151",
+      "target": "theme:academic-bureaucracy-and-knowledge-decline",
       "kind": "episode-theme"
     },
     {

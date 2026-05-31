@@ -3024,3 +3024,38 @@ git push yinfluence-origin main
 3. `git push yinfluence-origin main`
 
 只有远端更新，才算真正进入部署链路。
+
+## 常见坑与规避（AI 执行防错清单）
+
+这一节记录实际整理中反复发生的执行坑，照做可绕过，不要再踩。
+
+### 1. 不要并行炸一堆 bash 探查目录
+
+- 坑：一次性发十几条并行 bash 探查目录，输出会乱序拼接、互相 cancel，极易误判成"项目损坏 / 有重复目录"。本项目结构完整，先怀疑自己的操作，不要先怀疑环境。
+- 规避：探查用串行、小批；一条命令尽量自带清晰分隔标记（`echo "=== X ==="`）。结果存疑就单条复跑一次确认。
+
+### 2. Read 和 Edit 不要放进同一并行批次
+
+- 坑：把"读文件"和"改同一文件"放进同一批工具调用，Edit 会因为文件还没真正读到而报 `File has not been read yet`。
+- 规避：先 Read 完成，下一批再 Edit。
+
+### 3. Edit 的 old_string 不要按"文件结尾"猜
+
+- 坑：很多节点 JSON 的 `episodes` 数组在文件中间，后面还有 `signals / boundaries` 等字段。用"数组 + `]` + `}`"当 old_string 会匹配不到。
+- 规避：用数组里最后一个 `note` 的真实唯一文本当锚点，在它后面插入新条目，不要用文件尾部结构去猜。
+
+### 4. node 校验 JSON 用绝对路径或确认 cwd
+
+- 坑：`node -e "require('./content/...')"` 在 cwd 不对或文件名不存在时直接抛栈、污染输出。
+- 规避：校验合法性统一用 `node -e "JSON.parse(require('fs').readFileSync(process.argv[1],'utf8'))" <abs-path>`，或先确认 `pwd` 在 `网页/`。
+
+### 5. 不要用 git stash 试 baseline
+
+- 坑：`git stash push -- <file>` 带上不存在的文件会报错，且 `stash pop` 可能提示 entry kept、让人误以为改动丢了。
+- 规避：要确认某个失败是不是自己引入，用 `git stash` 之外的方式——直接看该失败是否引用了本次文件；或 `git diff --stat` 看影响面。本项目里 `npm run test:ui` 的关键词分组失败是 pre-existing，与新增节目无关，不要反复用 stash 去验证。
+
+### 6. 数量基准（避免少写）
+
+- 关键词 `tags`：纯口播分析期一般 8-12 个，叙事/人物/事件密集期可到 15-20；硬规则仍是 `tags 数 = 词条数`，一个不漏。
+- `concepts`：一般 3-6 个；`models`：一般 2-4 个。优先复用既有节点（如组织失声、委托代理、制度形式主义螺旋、筛选机器），不够再新建。
+- 新建词条必须手写满该 kind 的字段，绝不留 build 自动 stub。
