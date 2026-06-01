@@ -2,7 +2,7 @@
   "meta": {
     "title": "颖响力知识库",
     "subtitle": "节目、概念、思想模型的结构化索引",
-    "updatedAt": "2026-06-01T11:50:55.583Z"
+    "updatedAt": "2026-06-01T14:20:02.600Z"
   },
   "stats": {
     "episodes": 152,
@@ -14680,7 +14680,7 @@
           "url": "https://www.youtube.com/watch?v=yb8dCEPc8Eg"
         }
       ],
-      "recent": true
+      "recent": false
     },
     {
       "id": "EP151",
@@ -14887,8 +14887,8 @@
       "videoLinks": [
         {
           "platform": "bilibili",
-          "status": "unavailable",
-          "note": "暂未上架"
+          "url": "https://www.bilibili.com/video/BV1J6V96QELv/",
+          "access": "member"
         },
         {
           "platform": "youtube",

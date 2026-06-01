@@ -97,8 +97,8 @@
   "videoLinks": [
     {
       "platform": "bilibili",
-      "status": "unavailable",
-      "note": "暂未上架"
+      "url": "https://www.bilibili.com/video/BV1J6V96QELv/",
+      "access": "member"
     },
     {
       "platform": "youtube",
