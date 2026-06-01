@@ -1,3 +1,18 @@
+# 工作记录 · 2026-06-01 EP152 漳州杨梅泡药入库
+
+新节目 EP152《出口欧盟规规矩矩，内销全是科技狠活！漳州杨梅双标背后的真相》。用户提供 YouTube 链接 + 纯文字稿，B 站暂未上架。
+
+- `content/episodes/EP152.json`：summary + topic(background/conflicts/boundaries/mechanism/extensions) + 6 条 viewpoints（合规硬上限 6，已把"性价比逼出泡药"与"果农升级不划算"合并）+ 3 条 extensions。videoLinks：bilibili `status: unavailable / note: 暂未上架`、youtube `bCy491aOyHk`。
+- 视频链接：`scripts/video-link-overrides.json` 顶部新增 EP152，B 站暂未上架、YouTube 已填。B 站后续上架后需把灰色改真实链接并按情况补 `access: member`。
+- 新建概念 `content/concepts/malevolence-self-fulfilling.json`（性恶预设的自我实现）。
+- 新建模型 `content/models/ex-post-accountability-governance.json`（事后追责治理 / 法治 vs 管制）。
+- 复用并反向回填 EP152 到既有节点 episodes：themes(rule-of-law-boundaries-and-social-trust、hidden-costs、performative-governance-and-ritual-display)、concepts(compliance-cost-gap、cost-shifting)、models(regulatory-cost-arbitrage、risk-transfer-chain)。
+- 9 个 tags 全部建独立关键词词条（3 个 opus agent 并行起草、主线审）：杨梅泡药(event)、食品安全(general)、科技狠活(concept)、冷链成本(mechanism)、事后追责(mechanism)、法治与管制(concept)、性恶论(concept)、利维坦(concept)、选择性执法(mechanism)。sources 均空、节目语境归因、无编造 URL、无繁体。
+- 验证：`npm run build` 通过（152 episodes、0 warning）；`audit:keywords` 本期 9 词条 + EP152 零告警（其余告警均为 EP139/142/144/148 等既有问题）；繁体扫描 0 命中；EP152 在 site.json 渲染正常（9 tags、3+3+3 关联、视频状态正确）。
+- 已知：`npm run test:ui` 在"关键词首页 5 组 vs 10 组"断言处失败——已对比 HEAD 版 site.json 确认该断言在本次改动前就失败（首页固定 5 组是 SOP:137 现行设计），与 EP152 无关，未在本任务内修改测试。
+
+---
+
 # 工作记录 · 2026-05-26 viewpoints 数量收紧整合
 
 用户反馈"核心观点不能太多"。修订 SOP-知识库整理.md:609：viewpoints 数量从 6-9 条、硬上限 10，收紧为 **4-6 条、硬上限 6**。要求超标节目按"整合不是删除"原则压缩——合并同方向判断、把 mechanism 切片回流、案例下沉到 topic 或单条 body 内部。

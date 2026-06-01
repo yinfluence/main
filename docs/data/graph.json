@@ -2,12 +2,12 @@
   "meta": {
     "title": "颖响力知识图谱",
     "subtitle": "节目、概念、模型、人物、主题之间的可视化连接网络",
-    "nodeCount": 517,
-    "linkCount": 1109,
+    "nodeCount": 520,
+    "linkCount": 1118,
     "typeCounts": {
-      "model": 66,
-      "episode": 151,
-      "concept": 144,
+      "model": 67,
+      "episode": 152,
+      "concept": 145,
       "person": 65,
       "theme": 91
     }
@@ -22,7 +22,7 @@
       "route": "models/risk-transfer-chain",
       "summary": "系统不会立刻吞下风险，而是先沿着银行、企业、票据、供应链和普通人之间不断转手、延后和下沉。",
       "status": null,
-      "degree": 37
+      "degree": 38
     },
     {
       "id": "model:leverage-backfire",
@@ -641,6 +641,28 @@
       "degree": 9
     },
     {
+      "id": "episode:EP152",
+      "key": "EP152",
+      "label": "EP152",
+      "fullLabel": "EP152 · 出口欧盟规规矩矩，内销全是科技狠活！漳州杨梅双标背后的真相",
+      "type": "episode",
+      "route": "episodes/EP152",
+      "summary": "本期借福建漳州杨梅泡药事件，拒绝停在骂黑心商人和骂监管不力的层面，把它当成观察社会底层逻辑的样本。第一层拆开为什么会泡药：杨梅采摘期短、常温只能放一两天，全程冷链成本翻几倍，消费者要便宜又要新鲜，违禁保鲜剂几块钱泡几百斤、损耗从50%降到5%，性价比高到无人能挡，于是果农、收购商、超市、平台沿整条链系统性违规又集体装看不见。第二层拆开为什么越管越管不住：监管要人、人要经费，经费最终摊进杨梅价格，监管又永远落后于新添加剂，最后只能选择性执法、监管变成生意。落点是治理模式跑偏——我们迷信基于性恶论的事前管制，把政府当防贼的保姆，却放弃了事后追责的力量；杨梅出口欧盟规规矩矩，正因为事后索赔代价无人承受得起。真正有效的是法治而非管制，而我们整个社会困在性恶论、利维坦放大恶、越管越恶的自我实现死循环里。",
+      "status": "curated",
+      "degree": 9
+    },
+    {
+      "id": "concept:cost-shifting",
+      "key": "cost-shifting",
+      "label": "成本外移",
+      "fullLabel": "成本外移",
+      "type": "concept",
+      "route": "concepts/cost-shifting",
+      "summary": "组织内部的高额非生产性成本，最终会通过价格、规则或风险转嫁给外部承担者。",
+      "status": null,
+      "degree": 8
+    },
+    {
       "id": "theme:great-power-competition-and-strategic-time",
       "key": "great-power-competition-and-strategic-time",
       "label": "大国竞争与战略时间",
@@ -1068,17 +1090,6 @@
       "summary": "本期是 EP139 耿同学打假的续篇，主持人以非圈内人但常年和院士、老师团队打交道的视角，判断耿同学个人处境相当危险，对行业却几乎改变不了什么。节目把中国学术体系拆成一个上层元老院加下层阶级体系：院士在顶，杰青、大中小帽子一级一级往下，每级还卡年龄，越级几乎不可能。落点是真正的病灶不是造假，而是这套结党、剥削、逆淘汰的生存闭环——最会经营关系而非最懂学术的人一代代上位，造假只是这套机制里最小的一环。",
       "status": "curated",
       "degree": 8
-    },
-    {
-      "id": "concept:cost-shifting",
-      "key": "cost-shifting",
-      "label": "成本外移",
-      "fullLabel": "成本外移",
-      "type": "concept",
-      "route": "concepts/cost-shifting",
-      "summary": "组织内部的高额非生产性成本，最终会通过价格、规则或风险转嫁给外部承担者。",
-      "status": null,
-      "degree": 7
     },
     {
       "id": "model:regional-denial-model",
@@ -1741,6 +1752,17 @@
       "degree": 5
     },
     {
+      "id": "theme:rule-of-law-boundaries-and-social-trust",
+      "key": "rule-of-law-boundaries-and-social-trust",
+      "label": "法治边界与社会信任",
+      "fullLabel": "法治边界与社会信任",
+      "type": "theme",
+      "route": "themes/rule-of-law-boundaries-and-social-trust",
+      "summary": "关注法律灰区如何影响公众的善意、风险感和彼此信任。",
+      "status": null,
+      "degree": 5
+    },
+    {
       "id": "concept:probabilistic-safety",
       "key": "probabilistic-safety",
       "label": "概率型安全",
@@ -2181,17 +2203,6 @@
       "degree": 4
     },
     {
-      "id": "theme:rule-of-law-boundaries-and-social-trust",
-      "key": "rule-of-law-boundaries-and-social-trust",
-      "label": "法治边界与社会信任",
-      "fullLabel": "法治边界与社会信任",
-      "type": "theme",
-      "route": "themes/rule-of-law-boundaries-and-social-trust",
-      "summary": "关注法律灰区如何影响公众的善意、风险感和彼此信任。",
-      "status": null,
-      "degree": 4
-    },
-    {
       "id": "concept:premium-narrative",
       "key": "premium-narrative",
       "label": "高价叙事",
@@ -2353,6 +2364,17 @@
       "type": "model",
       "route": "models/stability-over-growth-trap",
       "summary": "当系统把稳定当作增长的替代品，短期秩序会被保住，长期造血、流动和创新却会被压低。",
+      "status": null,
+      "degree": 4
+    },
+    {
+      "id": "theme:hidden-costs",
+      "key": "hidden-costs",
+      "label": "消费者为哪些隐性成本买单",
+      "fullLabel": "消费者为哪些隐性成本买单",
+      "type": "theme",
+      "route": "themes/hidden-costs",
+      "summary": "讨论消费者支付的价格中，有多少是在承担企业内部看不见的成本。",
       "status": null,
       "degree": 4
     },
@@ -2753,6 +2775,28 @@
       "degree": 3
     },
     {
+      "id": "concept:compliance-cost-gap",
+      "key": "compliance-cost-gap",
+      "label": "合规成本落差",
+      "fullLabel": "合规成本落差",
+      "type": "concept",
+      "route": "concepts/compliance-cost-gap",
+      "summary": "不同制度路径让同一市场里的生产者承担完全不同的时间、资金和不确定性成本。",
+      "status": null,
+      "degree": 3
+    },
+    {
+      "id": "model:regulatory-cost-arbitrage",
+      "key": "regulatory-cost-arbitrage",
+      "label": "合规成本套利模型",
+      "fullLabel": "合规成本套利模型",
+      "type": "model",
+      "route": "models/regulatory-cost-arbitrage",
+      "summary": "当同一市场存在多条监管路径，低合规成本路径会获得更高试错频率和更强替代能力。",
+      "status": null,
+      "degree": 3
+    },
+    {
       "id": "person:hu-chenfeng",
       "key": "hu-chenfeng",
       "label": "户晨风",
@@ -3039,17 +3083,6 @@
       "degree": 3
     },
     {
-      "id": "theme:hidden-costs",
-      "key": "hidden-costs",
-      "label": "消费者为哪些隐性成本买单",
-      "fullLabel": "消费者为哪些隐性成本买单",
-      "type": "theme",
-      "route": "themes/hidden-costs",
-      "summary": "讨论消费者支付的价格中，有多少是在承担企业内部看不见的成本。",
-      "status": null,
-      "degree": 3
-    },
-    {
       "id": "theme:new-media-political-mobilization",
       "key": "new-media-political-mobilization",
       "label": "新媒体政治动员",
@@ -3068,6 +3101,17 @@
       "type": "concept",
       "route": "concepts/cult-branding",
       "summary": "用户从购买者变成主动辩护、传播和站队的信众时，品牌就进入信众化阶段。",
+      "status": null,
+      "degree": 3
+    },
+    {
+      "id": "theme:performative-governance-and-ritual-display",
+      "key": "performative-governance-and-ritual-display",
+      "label": "形式主义治理与仪式表演",
+      "fullLabel": "形式主义治理与仪式表演",
+      "type": "theme",
+      "route": "themes/performative-governance-and-ritual-display",
+      "summary": "关注治理如何通过热闹、仪式和可见动作来替代真正的问题解决。",
       "status": null,
       "degree": 3
     },
@@ -3611,28 +3655,6 @@
       "degree": 2
     },
     {
-      "id": "concept:compliance-cost-gap",
-      "key": "compliance-cost-gap",
-      "label": "合规成本落差",
-      "fullLabel": "合规成本落差",
-      "type": "concept",
-      "route": "concepts/compliance-cost-gap",
-      "summary": "不同制度路径让同一市场里的生产者承担完全不同的时间、资金和不确定性成本。",
-      "status": null,
-      "degree": 2
-    },
-    {
-      "id": "model:regulatory-cost-arbitrage",
-      "key": "regulatory-cost-arbitrage",
-      "label": "合规成本套利模型",
-      "fullLabel": "合规成本套利模型",
-      "type": "model",
-      "route": "models/regulatory-cost-arbitrage",
-      "summary": "当同一市场存在多条监管路径，低合规成本路径会获得更高试错频率和更强替代能力。",
-      "status": null,
-      "degree": 2
-    },
-    {
       "id": "person:he-qi",
       "key": "he-qi",
       "label": "何旗",
@@ -4047,17 +4069,6 @@
       "type": "theme",
       "route": "themes/new-money-and-family-projection",
       "summary": "当新钱缺少历史层次和价值边界时，最容易把财富投向夸张的家族、身份和延续想象。",
-      "status": null,
-      "degree": 2
-    },
-    {
-      "id": "theme:performative-governance-and-ritual-display",
-      "key": "performative-governance-and-ritual-display",
-      "label": "形式主义治理与仪式表演",
-      "fullLabel": "形式主义治理与仪式表演",
-      "type": "theme",
-      "route": "themes/performative-governance-and-ritual-display",
-      "summary": "关注治理如何通过热闹、仪式和可见动作来替代真正的问题解决。",
       "status": null,
       "degree": 2
     },
@@ -5217,6 +5228,17 @@
       "degree": 1
     },
     {
+      "id": "model:ex-post-accountability-governance",
+      "key": "ex-post-accountability-governance",
+      "label": "事后追责治理模型",
+      "fullLabel": "事后追责治理模型",
+      "type": "model",
+      "route": "models/ex-post-accountability-governance",
+      "summary": "治理可以选择事前管制每个人，也可以选择给自由、事后对违规者施加无法承受的代价；后者往往比前者更省成本也更有效。",
+      "status": null,
+      "degree": 1
+    },
+    {
       "id": "person:to-lam",
       "key": "to-lam",
       "label": "苏林",
@@ -5367,6 +5389,17 @@
       "type": "person",
       "route": "people/xin-jie",
       "summary": "辛杰曾任深圳地铁和万科关键负责人，节目借他观察万科续命链条、地方国资输血和风险责任转移。",
+      "status": null,
+      "degree": 1
+    },
+    {
+      "id": "concept:malevolence-self-fulfilling",
+      "key": "malevolence-self-fulfilling",
+      "label": "性恶预设的自我实现",
+      "fullLabel": "性恶预设的自我实现",
+      "type": "concept",
+      "route": "concepts/malevolence-self-fulfilling",
+      "summary": "当一个社会集体假定人性本恶并据此层层设防，这种防备本身会催生出它所恐惧的不信任，把假设变成现实。",
       "status": null,
       "degree": 1
     },
@@ -11055,6 +11088,51 @@
     {
       "source": "episode:EP151",
       "target": "theme:academic-bureaucracy-and-knowledge-decline",
+      "kind": "episode-theme"
+    },
+    {
+      "source": "episode:EP152",
+      "target": "concept:compliance-cost-gap",
+      "kind": "episode-concept"
+    },
+    {
+      "source": "episode:EP152",
+      "target": "concept:cost-shifting",
+      "kind": "episode-concept"
+    },
+    {
+      "source": "episode:EP152",
+      "target": "concept:malevolence-self-fulfilling",
+      "kind": "episode-concept"
+    },
+    {
+      "source": "episode:EP152",
+      "target": "model:regulatory-cost-arbitrage",
+      "kind": "episode-model"
+    },
+    {
+      "source": "episode:EP152",
+      "target": "model:risk-transfer-chain",
+      "kind": "episode-model"
+    },
+    {
+      "source": "episode:EP152",
+      "target": "model:ex-post-accountability-governance",
+      "kind": "episode-model"
+    },
+    {
+      "source": "episode:EP152",
+      "target": "theme:rule-of-law-boundaries-and-social-trust",
+      "kind": "episode-theme"
+    },
+    {
+      "source": "episode:EP152",
+      "target": "theme:hidden-costs",
+      "kind": "episode-theme"
+    },
+    {
+      "source": "episode:EP152",
+      "target": "theme:performative-governance-and-ritual-display",
       "kind": "episode-theme"
     },
     {
