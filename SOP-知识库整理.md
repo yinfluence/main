@@ -2917,6 +2917,26 @@ npm run dev
 - 生产分支：`main`
 - Cloudflare Workers Builds 读取仓库里的 `docs/`
 
+### 推送到哪个 remote（反复踩坑，必须先看）
+
+本地配了 3 个 remote，只有一个是对的。推错会 403，线上不更新，人却以为推成功了：
+
+- `origin` → `ziqiguo02-prog/main`：**错的**。当前 Git 凭据是 yinfluence 账号，对这个仓库没有写权限，`git push origin` 会报 `403 / Permission denied`。
+- `yinfluence-origin`（和 `yinfluence`）→ `yinfluence/main`：**对的**，就是部署 yinfluence.org 的仓库。本地 `main` 的上游也是 `yinfluence-origin/main`。
+
+唯一正确的推送命令：
+
+```bash
+git push yinfluence-origin main
+```
+
+硬规则：
+
+- 永远显式写 `git push yinfluence-origin main`。不要用裸 `git push`，也不要 `git push origin`——裸 push 走哪个 remote 取决于配置，别赌。
+- 推送前先核一眼：`git branch -vv`，确认当前 `main` 的上游是 `yinfluence-origin/main`（不是 origin）。
+- 推送后看输出里有 `-> main` 且无 403，再去 yinfluence.org 强刷验证。若看到 `Permission to ziqiguo02-prog/main.git denied`，就是推错 remote 了，改用 `yinfluence-origin`。
+- `git add` 要显式列本任务文件，不要 `git add -A`——仓库里常有用户既有改动（如 `docs/simulators/` 的 README）和 `.omx/`、`.superpowers/` 等无关目录，全 add 会把它们一起提交。
+
 所以发布的关键不是只改本地文件，而是：
 
 1. 本地把内容和页面改好
@@ -2933,9 +2953,9 @@ npm run dev
 
 ```bash
 npm run build
-git add -A
+git add <本次任务涉及的具体文件>   # 不要 git add -A，避免带上用户既有改动与无关目录
 git commit -m "<符合 Lore 协议的提交信息>"
-git push yinfluence-origin main
+git push yinfluence-origin main      # 只推这个 remote，不要 origin、不要裸 push
 ```
 
 发布前额外硬规则：
