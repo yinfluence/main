@@ -542,5 +542,15 @@
       "platform": "bilibili",
       "url": "https://www.bilibili.com/video/BV12sB2BKEoD/"
     }
+  },
+  "EP153": {
+    "bilibili": {
+      "platform": "bilibili",
+      "url": "https://www.bilibili.com/video/BV1CJVi6GEUA/"
+    },
+    "youtube": {
+      "platform": "youtube",
+      "url": "https://www.youtube.com/watch?v=cGQXpkj5ImE"
+    }
   }
 }

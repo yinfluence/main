@@ -2,11 +2,11 @@
   "meta": {
     "title": "颖响力知识图谱",
     "subtitle": "节目、概念、模型、人物、主题之间的可视化连接网络",
-    "nodeCount": 520,
-    "linkCount": 1118,
+    "nodeCount": 521,
+    "linkCount": 1129,
     "typeCounts": {
       "model": 67,
-      "episode": 152,
+      "episode": 153,
       "concept": 145,
       "person": 65,
       "theme": 91
@@ -388,6 +388,17 @@
       "degree": 11
     },
     {
+      "id": "episode:EP153",
+      "key": "EP153",
+      "label": "EP153",
+      "fullLabel": "EP153 · 华山派的“T病毒”，伟大定律指引空间堆叠泡药三尸脑神丹，辟邪剑谱洗脑行业自骟成就千年超车梦",
+      "type": "episode",
+      "route": "episodes/EP153",
+      "summary": "本期借华山派宣布“T定律”（即韬定律）这一桥段，拆解一种被包装成民族复兴突破的半导体路线。节目把制程比作盖楼：先进制程是把砖做小，3D空间堆叠是往上摞层，而堆叠的真实瓶颈是散热和良品率——层数越多良率越低，最终只能做出温度极高、良率个位数的样品去做汇报、做论文。节目认为T定律真正释放的信号，是未来多年拿不到更先进光刻机、连DUV都被荷兰断供，于是被迫改走堆叠这条“辟邪剑谱”式的自宫路线。落点是：用黑话堆出黑箱，再借民族复兴大旗和举国体制裹挟行业，让圈外情绪去推圈内人，把绕路说成弯道超车，实则是别人炸了高速、自己在山路上开越野车。",
+      "status": "curated",
+      "degree": 11
+    },
+    {
       "id": "theme:singapore-and-small-state-survival",
       "key": "singapore-and-small-state-survival",
       "label": "新加坡与小国生存术",
@@ -417,6 +428,17 @@
       "type": "concept",
       "route": "concepts/chokepoint-leverage",
       "summary": "控制海峡、运河和关键通道的人，往往能把地理位置转化成定价权、通行权和规则权。",
+      "status": null,
+      "degree": 10
+    },
+    {
+      "id": "theme:sanctions-and-power-containment",
+      "key": "sanctions-and-power-containment",
+      "label": "制裁、遏制与集团竞争",
+      "fullLabel": "制裁、遏制与集团竞争",
+      "type": "theme",
+      "route": "themes/sanctions-and-power-containment",
+      "summary": "讨论制裁、门罗主义、海峡与联盟如何共同服务于压制对手集团的全球布局。",
       "status": null,
       "degree": 10
     },
@@ -498,13 +520,13 @@
       "degree": 9
     },
     {
-      "id": "theme:sanctions-and-power-containment",
-      "key": "sanctions-and-power-containment",
-      "label": "制裁、遏制与集团竞争",
-      "fullLabel": "制裁、遏制与集团竞争",
-      "type": "theme",
-      "route": "themes/sanctions-and-power-containment",
-      "summary": "讨论制裁、门罗主义、海峡与联盟如何共同服务于压制对手集团的全球布局。",
+      "id": "concept:sanction-containment",
+      "key": "sanction-containment",
+      "label": "制裁遏制",
+      "fullLabel": "制裁遏制",
+      "type": "concept",
+      "route": "concepts/sanction-containment",
+      "summary": "制裁的真正作用常常不是逼对手立刻认输，而是长期压低其外延空间、联动能力和做大速度。",
       "status": null,
       "degree": 9
     },
@@ -725,17 +747,6 @@
       "type": "theme",
       "route": "themes/ev-safety-and-consumer-testing",
       "summary": "讨论新能源车与相关电池系统如何把安全验证不足的代价，转移到真实用户和真实事故里。",
-      "status": null,
-      "degree": 8
-    },
-    {
-      "id": "concept:sanction-containment",
-      "key": "sanction-containment",
-      "label": "制裁遏制",
-      "fullLabel": "制裁遏制",
-      "type": "concept",
-      "route": "concepts/sanction-containment",
-      "summary": "制裁的真正作用常常不是逼对手立刻认输，而是长期压低其外延空间、联动能力和做大速度。",
       "status": null,
       "degree": 8
     },
@@ -1103,6 +1114,17 @@
       "degree": 7
     },
     {
+      "id": "model:narrative-instrumentalization",
+      "key": "narrative-instrumentalization",
+      "label": "叙事工具化模型",
+      "fullLabel": "叙事工具化模型",
+      "type": "model",
+      "route": "models/narrative-instrumentalization",
+      "summary": "叙事工具化模型解释叙事的主要功能从解释现实转向组织情绪和划分阵营。",
+      "status": null,
+      "degree": 7
+    },
+    {
       "id": "theme:state-business-entanglement",
       "key": "state-business-entanglement",
       "label": "政企嵌入与企业存续",
@@ -1367,6 +1389,17 @@
       "degree": 7
     },
     {
+      "id": "theme:planned-systems-and-innovation",
+      "key": "planned-systems-and-innovation",
+      "label": "大计划体制与创新约束",
+      "fullLabel": "大计划体制与创新约束",
+      "type": "theme",
+      "route": "themes/planned-systems-and-innovation",
+      "summary": "讨论统一目标和强组织动员如何带来短期速度，又如何在长期压缩创新、纠错与自发能动性。",
+      "status": null,
+      "degree": 6
+    },
+    {
       "id": "model:distributed-innovation",
       "key": "distributed-innovation",
       "label": "分布式创新",
@@ -1385,6 +1418,17 @@
       "type": "concept",
       "route": "concepts/phantom-growth",
       "summary": "系统通过报表、交易、融资和场面把增长做出来，但真实产业和真实利润并没有同步长出来。",
+      "status": null,
+      "degree": 6
+    },
+    {
+      "id": "concept:technical-shortcut",
+      "key": "technical-shortcut",
+      "label": "技术捷径",
+      "fullLabel": "技术捷径",
+      "type": "concept",
+      "route": "concepts/technical-shortcut",
+      "summary": "更快落地的技术选择能带来早期优势，也可能在后期变成难以摆脱的路径包袱。",
       "status": null,
       "degree": 6
     },
@@ -1451,17 +1495,6 @@
       "type": "concept",
       "route": "concepts/phantom-sales",
       "summary": "企业把并不存在的真实终端需求，包装成销量、出海成绩或渠道消化能力，用来维持估值和融资信心。",
-      "status": null,
-      "degree": 6
-    },
-    {
-      "id": "model:narrative-instrumentalization",
-      "key": "narrative-instrumentalization",
-      "label": "叙事工具化模型",
-      "fullLabel": "叙事工具化模型",
-      "type": "model",
-      "route": "models/narrative-instrumentalization",
-      "summary": "叙事工具化模型解释叙事的主要功能从解释现实转向组织情绪和划分阵营。",
       "status": null,
       "degree": 6
     },
@@ -1741,17 +1774,6 @@
       "degree": 5
     },
     {
-      "id": "theme:planned-systems-and-innovation",
-      "key": "planned-systems-and-innovation",
-      "label": "大计划体制与创新约束",
-      "fullLabel": "大计划体制与创新约束",
-      "type": "theme",
-      "route": "themes/planned-systems-and-innovation",
-      "summary": "讨论统一目标和强组织动员如何带来短期速度，又如何在长期压缩创新、纠错与自发能动性。",
-      "status": null,
-      "degree": 5
-    },
-    {
       "id": "theme:rule-of-law-boundaries-and-social-trust",
       "key": "rule-of-law-boundaries-and-social-trust",
       "label": "法治边界与社会信任",
@@ -1781,17 +1803,6 @@
       "type": "model",
       "route": "models/black-box-assetization",
       "summary": "把本来难以估值、难以穿透甚至本该暴露风险的东西，装进平台、基金或体外结构里，重新包装成可融资、可讲故事、可继续吸钱的资产。",
-      "status": null,
-      "degree": 5
-    },
-    {
-      "id": "concept:technical-shortcut",
-      "key": "technical-shortcut",
-      "label": "技术捷径",
-      "fullLabel": "技术捷径",
-      "type": "concept",
-      "route": "concepts/technical-shortcut",
-      "summary": "更快落地的技术选择能带来早期优势，也可能在后期变成难以摆脱的路径包袱。",
       "status": null,
       "degree": 5
     },
@@ -1891,6 +1902,17 @@
       "type": "concept",
       "route": "concepts/pragmatic-legitimacy",
       "summary": "政权或共同体的稳定感，常来自普通人能持续获得可感的生活改善和秩序保障。",
+      "status": null,
+      "degree": 5
+    },
+    {
+      "id": "theme:ev-design-and-technology-shortcuts",
+      "key": "ev-design-and-technology-shortcuts",
+      "label": "新能源设计抄近路与技术捷径",
+      "fullLabel": "新能源设计抄近路与技术捷径",
+      "type": "theme",
+      "route": "themes/ev-design-and-technology-shortcuts",
+      "summary": "讨论新能源品牌如何在设计、技术和产品叙事上追求速成，并为此埋下长期反噬。",
       "status": null,
       "degree": 5
     },
@@ -2269,6 +2291,17 @@
       "degree": 4
     },
     {
+      "id": "model:technology-wave-cycle",
+      "key": "technology-wave-cycle",
+      "label": "技术浪潮周期",
+      "fullLabel": "技术浪潮周期",
+      "type": "model",
+      "route": "models/technology-wave-cycle",
+      "summary": "技术浪潮周期强调方向正确还不够，资本、基础设施、真实应用和时间窗口必须对齐。",
+      "status": null,
+      "degree": 4
+    },
+    {
       "id": "person:jia-guolong",
       "key": "jia-guolong",
       "label": "贾国龙",
@@ -2357,6 +2390,17 @@
       "degree": 4
     },
     {
+      "id": "concept:sample-production-gap",
+      "key": "sample-production-gap",
+      "label": "送检量产分裂",
+      "fullLabel": "送检量产分裂",
+      "type": "concept",
+      "route": "concepts/sample-production-gap",
+      "summary": "送检、展示和量产版本一旦分裂，合格证据就不再能代表消费者真正拿到的产品。",
+      "status": null,
+      "degree": 4
+    },
+    {
       "id": "model:stability-over-growth-trap",
       "key": "stability-over-growth-trap",
       "label": "稳定替代增长陷阱",
@@ -2401,17 +2445,6 @@
       "degree": 4
     },
     {
-      "id": "theme:ev-design-and-technology-shortcuts",
-      "key": "ev-design-and-technology-shortcuts",
-      "label": "新能源设计抄近路与技术捷径",
-      "fullLabel": "新能源设计抄近路与技术捷径",
-      "type": "theme",
-      "route": "themes/ev-design-and-technology-shortcuts",
-      "summary": "讨论新能源品牌如何在设计、技术和产品叙事上追求速成，并为此埋下长期反噬。",
-      "status": null,
-      "degree": 4
-    },
-    {
       "id": "concept:information-cocoon-breach",
       "key": "information-cocoon-breach",
       "label": "信息茧房破口",
@@ -2419,6 +2452,17 @@
       "type": "concept",
       "route": "concepts/information-cocoon-breach",
       "summary": "让原本封闭的人群第一次看见自身位置、差异和现实结构的传播裂缝。",
+      "status": null,
+      "degree": 4
+    },
+    {
+      "id": "model:prototype-production-decoupling",
+      "key": "prototype-production-decoupling",
+      "label": "样机量产脱钩",
+      "fullLabel": "样机量产脱钩",
+      "type": "model",
+      "route": "models/prototype-production-decoupling",
+      "summary": "样机量产脱钩解释送检、展示和量产之间的标准落差如何制造真实安全风险。",
       "status": null,
       "degree": 4
     },
@@ -2643,6 +2687,17 @@
       "degree": 3
     },
     {
+      "id": "concept:performative-innovation",
+      "key": "performative-innovation",
+      "label": "表演式创新",
+      "fullLabel": "表演式创新",
+      "type": "concept",
+      "route": "concepts/performative-innovation",
+      "summary": "表演式创新指项目主要为了完成指标、包装成果和争取扶持资金，而不以真实突破为中心。",
+      "status": null,
+      "degree": 3
+    },
+    {
       "id": "model:subsidized-adoption-flywheel",
       "key": "subsidized-adoption-flywheel",
       "label": "补贴驱动采纳飞轮",
@@ -2804,17 +2859,6 @@
       "type": "person",
       "route": "people/hu-chenfeng",
       "summary": "户晨风是中国网络内容创作者和直播博主，节目借他观察破壁式表达、阶层差异可见化和平台治理边界。",
-      "status": null,
-      "degree": 3
-    },
-    {
-      "id": "model:technology-wave-cycle",
-      "key": "technology-wave-cycle",
-      "label": "技术浪潮周期",
-      "fullLabel": "技术浪潮周期",
-      "type": "model",
-      "route": "models/technology-wave-cycle",
-      "summary": "技术浪潮周期强调方向正确还不够，资本、基础设施、真实应用和时间窗口必须对齐。",
       "status": null,
       "degree": 3
     },
@@ -3006,17 +3050,6 @@
       "degree": 3
     },
     {
-      "id": "concept:sample-production-gap",
-      "key": "sample-production-gap",
-      "label": "送检量产分裂",
-      "fullLabel": "送检量产分裂",
-      "type": "concept",
-      "route": "concepts/sample-production-gap",
-      "summary": "送检、展示和量产版本一旦分裂，合格证据就不再能代表消费者真正拿到的产品。",
-      "status": null,
-      "degree": 3
-    },
-    {
       "id": "theme:institutional-middle-class-and-social-mobility",
       "key": "institutional-middle-class-and-social-mobility",
       "label": "体制化中产与社会流动",
@@ -3123,17 +3156,6 @@
       "type": "theme",
       "route": "themes/academic-bureaucracy-and-knowledge-decline",
       "summary": "讨论当高校越来越像官场时，课堂、研究和学问如何被不断挤压。",
-      "status": null,
-      "degree": 3
-    },
-    {
-      "id": "model:prototype-production-decoupling",
-      "key": "prototype-production-decoupling",
-      "label": "样机量产脱钩",
-      "fullLabel": "样机量产脱钩",
-      "type": "model",
-      "route": "models/prototype-production-decoupling",
-      "summary": "样机量产脱钩解释送检、展示和量产之间的标准落差如何制造真实安全风险。",
       "status": null,
       "degree": 3
     },
@@ -3398,17 +3420,6 @@
       "type": "concept",
       "route": "concepts/standard-labor-replacement",
       "summary": "自动化最先替代可重复、可规训、可量化的标准岗位，而这些岗位往往属于普通人。",
-      "status": null,
-      "degree": 2
-    },
-    {
-      "id": "concept:performative-innovation",
-      "key": "performative-innovation",
-      "label": "表演式创新",
-      "fullLabel": "表演式创新",
-      "type": "concept",
-      "route": "concepts/performative-innovation",
-      "summary": "表演式创新指项目主要为了完成指标、包装成果和争取扶持资金，而不以真实突破为中心。",
       "status": null,
       "degree": 2
     },
@@ -4080,6 +4091,17 @@
       "type": "person",
       "route": "people/xu-jiayin",
       "summary": "许家印是中国恒大集团创办人、原董事会主席，节目借他观察地产高杠杆、一言堂治理和财富保全工具被穿透。",
+      "status": null,
+      "degree": 2
+    },
+    {
+      "id": "concept:dependent-innovation",
+      "key": "dependent-innovation",
+      "label": "依附式创新",
+      "fullLabel": "依附式创新",
+      "type": "concept",
+      "route": "concepts/dependent-innovation",
+      "summary": "依附式创新指项目围绕政府、国企或强关系订单做有限改造，而不是面向真实市场独立突破。",
       "status": null,
       "degree": 2
     },
@@ -5477,17 +5499,6 @@
       "type": "concept",
       "route": "concepts/earnings-big-bath",
       "summary": "业绩大洗澡指企业把历史问题一次性集中确认，把旧账压低成新任期或新叙事的低起点。",
-      "status": null,
-      "degree": 1
-    },
-    {
-      "id": "concept:dependent-innovation",
-      "key": "dependent-innovation",
-      "label": "依附式创新",
-      "fullLabel": "依附式创新",
-      "type": "concept",
-      "route": "concepts/dependent-innovation",
-      "summary": "依附式创新指项目围绕政府、国企或强关系订单做有限改造，而不是面向真实市场独立突破。",
       "status": null,
       "degree": 1
     },
@@ -11133,6 +11144,61 @@
     {
       "source": "episode:EP152",
       "target": "theme:performative-governance-and-ritual-display",
+      "kind": "episode-theme"
+    },
+    {
+      "source": "episode:EP153",
+      "target": "concept:technical-shortcut",
+      "kind": "episode-concept"
+    },
+    {
+      "source": "episode:EP153",
+      "target": "concept:sample-production-gap",
+      "kind": "episode-concept"
+    },
+    {
+      "source": "episode:EP153",
+      "target": "concept:performative-innovation",
+      "kind": "episode-concept"
+    },
+    {
+      "source": "episode:EP153",
+      "target": "concept:sanction-containment",
+      "kind": "episode-concept"
+    },
+    {
+      "source": "episode:EP153",
+      "target": "concept:dependent-innovation",
+      "kind": "episode-concept"
+    },
+    {
+      "source": "episode:EP153",
+      "target": "model:prototype-production-decoupling",
+      "kind": "episode-model"
+    },
+    {
+      "source": "episode:EP153",
+      "target": "model:narrative-instrumentalization",
+      "kind": "episode-model"
+    },
+    {
+      "source": "episode:EP153",
+      "target": "model:technology-wave-cycle",
+      "kind": "episode-model"
+    },
+    {
+      "source": "episode:EP153",
+      "target": "theme:planned-systems-and-innovation",
+      "kind": "episode-theme"
+    },
+    {
+      "source": "episode:EP153",
+      "target": "theme:sanctions-and-power-containment",
+      "kind": "episode-theme"
+    },
+    {
+      "source": "episode:EP153",
+      "target": "theme:ev-design-and-technology-shortcuts",
       "kind": "episode-theme"
     },
     {
