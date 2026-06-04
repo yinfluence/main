@@ -2,11 +2,11 @@
   "meta": {
     "title": "颖响力知识图谱",
     "subtitle": "节目、概念、模型、人物、主题之间的可视化连接网络",
-    "nodeCount": 521,
-    "linkCount": 1129,
+    "nodeCount": 522,
+    "linkCount": 1143,
     "typeCounts": {
       "model": 67,
-      "episode": 153,
+      "episode": 154,
       "concept": 145,
       "person": 65,
       "theme": 91
@@ -102,6 +102,17 @@
       "degree": 14
     },
     {
+      "id": "person:donald-trump",
+      "key": "donald-trump",
+      "label": "特朗普",
+      "fullLabel": "特朗普",
+      "type": "person",
+      "route": "people/donald-trump",
+      "summary": "特朗普是美国共和党政治人物、第45任与第47任美国总统，节目借他观察美国战略收缩、成本转嫁和规则重定价。",
+      "status": null,
+      "degree": 14
+    },
+    {
       "id": "episode:EP128",
       "key": "EP128",
       "label": "EP128",
@@ -124,6 +135,17 @@
       "degree": 14
     },
     {
+      "id": "episode:EP154",
+      "key": "EP154",
+      "label": "EP154",
+      "fullLabel": "EP154 · 赫格塞斯新加坡香会“围栏论”真相（上）：川普的全球建墙计划，已修到东亚，围墙就划到中国家门口",
+      "type": "episode",
+      "route": "episodes/EP154",
+      "summary": "本期聚焦在新加坡举行的香格里拉对话会上美国国防部长赫格塞斯（节目读作赫塞斯）的发言。多数解读抓住他“中美关系比许多年来都好”“建立建设性战略稳定关系”这些软话，认为美方在降调求稳；节目判断这只是开场白烟雾弹，真正重逾千钧的是后半段那个被轻描淡写的词——围栏。节目拆解：围栏听起来像两个邻居互建篱笆、互不越界，但关键在边界划在哪、由谁来划、红线由谁定。赫格塞斯已经给了答案——美国是太平洋国家，对整个太平洋的稳定有优先战略意图，战略以第一岛链威慑为中心。于是这道围栏其实是一堵划在东亚家门口的高墙，链上所有国家和地区（尤其台湾）都被定为不可逾越的红线。节目把它接进川普的新门罗主义：建墙加打击灰色贸易，把墙推到对方家门口，逼沿线国家选边；美军则收拳后撤、集中后方，让价值观一致的盟友增加军费顶到前线守墙，自己手持大棒、轻声说话。墙不只是军事墙，还有贸易墙——新的芯片政策按算力服务对象切割，把分割从物理层推进到信息层，叠加中东的亚伯拉罕协议，最终指向两个互不相通的全球化。落点是：东南亚成了最后一段未定边界，香会就是美国逼这些骑墙国家表态选边的场，下集再谈各国到底怎么选。",
+      "status": "curated",
+      "degree": 14
+    },
+    {
       "id": "model:path-dependence",
       "key": "path-dependence",
       "label": "路径依赖",
@@ -131,17 +153,6 @@
       "type": "model",
       "route": "models/path-dependence",
       "summary": "路径依赖解释早期技术和叙事选择一旦成功，就会反过来限制后续转向更优路径。",
-      "status": null,
-      "degree": 13
-    },
-    {
-      "id": "person:donald-trump",
-      "key": "donald-trump",
-      "label": "特朗普",
-      "fullLabel": "特朗普",
-      "type": "person",
-      "route": "people/donald-trump",
-      "summary": "特朗普是美国共和党政治人物、第45任与第47任美国总统，节目借他观察美国战略收缩、成本转嫁和规则重定价。",
       "status": null,
       "degree": 13
     },
@@ -344,6 +355,28 @@
       "degree": 11
     },
     {
+      "id": "concept:chokepoint-leverage",
+      "key": "chokepoint-leverage",
+      "label": "咽喉杠杆",
+      "fullLabel": "咽喉杠杆",
+      "type": "concept",
+      "route": "concepts/chokepoint-leverage",
+      "summary": "控制海峡、运河和关键通道的人，往往能把地理位置转化成定价权、通行权和规则权。",
+      "status": null,
+      "degree": 11
+    },
+    {
+      "id": "theme:sanctions-and-power-containment",
+      "key": "sanctions-and-power-containment",
+      "label": "制裁、遏制与集团竞争",
+      "fullLabel": "制裁、遏制与集团竞争",
+      "type": "theme",
+      "route": "themes/sanctions-and-power-containment",
+      "summary": "讨论制裁、门罗主义、海峡与联盟如何共同服务于压制对手集团的全球布局。",
+      "status": null,
+      "degree": 11
+    },
+    {
       "id": "episode:EP078",
       "key": "EP078",
       "label": "EP078",
@@ -421,24 +454,13 @@
       "degree": 10
     },
     {
-      "id": "concept:chokepoint-leverage",
-      "key": "chokepoint-leverage",
-      "label": "咽喉杠杆",
-      "fullLabel": "咽喉杠杆",
+      "id": "concept:sanction-containment",
+      "key": "sanction-containment",
+      "label": "制裁遏制",
+      "fullLabel": "制裁遏制",
       "type": "concept",
-      "route": "concepts/chokepoint-leverage",
-      "summary": "控制海峡、运河和关键通道的人，往往能把地理位置转化成定价权、通行权和规则权。",
-      "status": null,
-      "degree": 10
-    },
-    {
-      "id": "theme:sanctions-and-power-containment",
-      "key": "sanctions-and-power-containment",
-      "label": "制裁、遏制与集团竞争",
-      "fullLabel": "制裁、遏制与集团竞争",
-      "type": "theme",
-      "route": "themes/sanctions-and-power-containment",
-      "summary": "讨论制裁、门罗主义、海峡与联盟如何共同服务于压制对手集团的全球布局。",
+      "route": "concepts/sanction-containment",
+      "summary": "制裁的真正作用常常不是逼对手立刻认输，而是长期压低其外延空间、联动能力和做大速度。",
       "status": null,
       "degree": 10
     },
@@ -472,6 +494,39 @@
       "type": "model",
       "route": "models/subsidy-capital-flywheel",
       "summary": "补贴资本飞轮解释地方财政、产业基金、企业估值和再融资如何互相放大。",
+      "status": null,
+      "degree": 9
+    },
+    {
+      "id": "theme:great-power-competition-and-strategic-time",
+      "key": "great-power-competition-and-strategic-time",
+      "label": "大国竞争与战略时间",
+      "fullLabel": "大国竞争与战略时间",
+      "type": "theme",
+      "route": "themes/great-power-competition-and-strategic-time",
+      "summary": "讨论战争、联盟和国家战略如何被时间窗口、社会成本和长期定力重新塑形。",
+      "status": null,
+      "degree": 9
+    },
+    {
+      "id": "model:proxy-containment-ring",
+      "key": "proxy-containment-ring",
+      "label": "代理围堵环",
+      "fullLabel": "代理围堵环",
+      "type": "model",
+      "route": "models/proxy-containment-ring",
+      "summary": "代理围堵环解释大国如何通过盟友、代理人和通道控制分摊成本、封堵对手。",
+      "status": null,
+      "degree": 9
+    },
+    {
+      "id": "theme:southeast-asia-fragmentation-and-bloc-competition",
+      "key": "southeast-asia-fragmentation-and-bloc-competition",
+      "label": "东南亚裂变与集团竞争",
+      "fullLabel": "东南亚裂变与集团竞争",
+      "type": "theme",
+      "route": "themes/southeast-asia-fragmentation-and-bloc-competition",
+      "summary": "讨论东南亚如何从缓冲地带变成各方拉扯、重新站队和内部裂变并行发生的高风险区域。",
       "status": null,
       "degree": 9
     },
@@ -516,17 +571,6 @@
       "type": "theme",
       "route": "themes/ev-collapse-and-exit-risk",
       "summary": "聚焦新能源项目在失速、清算和品牌出清阶段，风险如何向债权人、用户和地方政府层层传导。",
-      "status": null,
-      "degree": 9
-    },
-    {
-      "id": "concept:sanction-containment",
-      "key": "sanction-containment",
-      "label": "制裁遏制",
-      "fullLabel": "制裁遏制",
-      "type": "concept",
-      "route": "concepts/sanction-containment",
-      "summary": "制裁的真正作用常常不是逼对手立刻认输，而是长期压低其外延空间、联动能力和做大速度。",
       "status": null,
       "degree": 9
     },
@@ -685,17 +729,6 @@
       "degree": 8
     },
     {
-      "id": "theme:great-power-competition-and-strategic-time",
-      "key": "great-power-competition-and-strategic-time",
-      "label": "大国竞争与战略时间",
-      "fullLabel": "大国竞争与战略时间",
-      "type": "theme",
-      "route": "themes/great-power-competition-and-strategic-time",
-      "summary": "讨论战争、联盟和国家战略如何被时间窗口、社会成本和长期定力重新塑形。",
-      "status": null,
-      "degree": 8
-    },
-    {
       "id": "theme:big-government-and-incentive-reversal",
       "key": "big-government-and-incentive-reversal",
       "label": "大政府与激励反转",
@@ -707,24 +740,13 @@
       "degree": 8
     },
     {
-      "id": "model:proxy-containment-ring",
-      "key": "proxy-containment-ring",
-      "label": "代理围堵环",
-      "fullLabel": "代理围堵环",
+      "id": "model:regional-denial-model",
+      "key": "regional-denial-model",
+      "label": "区域拒止模型",
+      "fullLabel": "区域拒止模型",
       "type": "model",
-      "route": "models/proxy-containment-ring",
-      "summary": "代理围堵环解释大国如何通过盟友、代理人和通道控制分摊成本、封堵对手。",
-      "status": null,
-      "degree": 8
-    },
-    {
-      "id": "theme:southeast-asia-fragmentation-and-bloc-competition",
-      "key": "southeast-asia-fragmentation-and-bloc-competition",
-      "label": "东南亚裂变与集团竞争",
-      "fullLabel": "东南亚裂变与集团竞争",
-      "type": "theme",
-      "route": "themes/southeast-asia-fragmentation-and-bloc-competition",
-      "summary": "讨论东南亚如何从缓冲地带变成各方拉扯、重新站队和内部裂变并行发生的高风险区域。",
+      "route": "models/regional-denial-model",
+      "summary": "真正有效的区域拒止，不是无上限扩张，而是把对手压在若干区域里，阻止其形成全球联动能力。",
       "status": null,
       "degree": 8
     },
@@ -1103,17 +1125,6 @@
       "degree": 8
     },
     {
-      "id": "model:regional-denial-model",
-      "key": "regional-denial-model",
-      "label": "区域拒止模型",
-      "fullLabel": "区域拒止模型",
-      "type": "model",
-      "route": "models/regional-denial-model",
-      "summary": "真正有效的区域拒止，不是无上限扩张，而是把对手压在若干区域里，阻止其形成全球联动能力。",
-      "status": null,
-      "degree": 7
-    },
-    {
       "id": "model:narrative-instrumentalization",
       "key": "narrative-instrumentalization",
       "label": "叙事工具化模型",
@@ -1132,6 +1143,17 @@
       "type": "theme",
       "route": "themes/state-business-entanglement",
       "summary": "讨论企业如何依赖地方政府、国资平台或关系结构续命，以及这种绑定如何反过来改写企业目标。",
+      "status": null,
+      "degree": 7
+    },
+    {
+      "id": "concept:active-neutrality",
+      "key": "active-neutrality",
+      "label": "主动中立",
+      "fullLabel": "主动中立",
+      "type": "concept",
+      "route": "concepts/active-neutrality",
+      "summary": "真正可持续的中立不是谁都不得罪，而是在坚持规则的前提下主动参与秩序塑造。",
       "status": null,
       "degree": 7
     },
@@ -1433,6 +1455,17 @@
       "degree": 6
     },
     {
+      "id": "theme:dollar-system-and-gray-trade",
+      "key": "dollar-system-and-gray-trade",
+      "label": "美元体系与灰色贸易",
+      "fullLabel": "美元体系与灰色贸易",
+      "type": "theme",
+      "route": "themes/dollar-system-and-gray-trade",
+      "summary": "讨论石油美元的真实脆弱点，究竟藏在公开统计之外的哪些灰色交易链条里。",
+      "status": null,
+      "degree": 6
+    },
+    {
       "id": "theme:youth-withdrawal-and-lying-flat",
       "key": "youth-withdrawal-and-lying-flat",
       "label": "年轻人退出与躺平",
@@ -1506,17 +1539,6 @@
       "type": "model",
       "route": "models/institutional-formalism-spiral",
       "summary": "组织一旦开始依赖仪式、排名、头衔和场面来证明自己有效，就会不断加码这些外壳，同时越来越失去真正解决问题的能力。",
-      "status": null,
-      "degree": 6
-    },
-    {
-      "id": "concept:active-neutrality",
-      "key": "active-neutrality",
-      "label": "主动中立",
-      "fullLabel": "主动中立",
-      "type": "concept",
-      "route": "concepts/active-neutrality",
-      "summary": "真正可持续的中立不是谁都不得罪，而是在坚持规则的前提下主动参与秩序塑造。",
       "status": null,
       "degree": 6
     },
@@ -1829,17 +1851,6 @@
       "degree": 5
     },
     {
-      "id": "theme:dollar-system-and-gray-trade",
-      "key": "dollar-system-and-gray-trade",
-      "label": "美元体系与灰色贸易",
-      "fullLabel": "美元体系与灰色贸易",
-      "type": "theme",
-      "route": "themes/dollar-system-and-gray-trade",
-      "summary": "讨论石油美元的真实脆弱点，究竟藏在公开统计之外的哪些灰色交易链条里。",
-      "status": null,
-      "degree": 5
-    },
-    {
       "id": "theme:youth-dreams-and-safe-paths",
       "key": "youth-dreams-and-safe-paths",
       "label": "年轻人梦想与安全路径",
@@ -1906,6 +1917,17 @@
       "degree": 5
     },
     {
+      "id": "model:small-state-balancing-model",
+      "key": "small-state-balancing-model",
+      "label": "小国平衡术",
+      "fullLabel": "小国平衡术",
+      "type": "model",
+      "route": "models/small-state-balancing-model",
+      "summary": "小国平衡术解释小国在大国之间维持生存空间，靠位置、合法性和现实利益而非纯姿态。",
+      "status": null,
+      "degree": 5
+    },
+    {
       "id": "theme:ev-design-and-technology-shortcuts",
       "key": "ev-design-and-technology-shortcuts",
       "label": "新能源设计抄近路与技术捷径",
@@ -1913,6 +1935,17 @@
       "type": "theme",
       "route": "themes/ev-design-and-technology-shortcuts",
       "summary": "讨论新能源品牌如何在设计、技术和产品叙事上追求速成，并为此埋下长期反噬。",
+      "status": null,
+      "degree": 5
+    },
+    {
+      "id": "model:strategic-timing",
+      "key": "strategic-timing",
+      "label": "战略时机",
+      "fullLabel": "战略时机",
+      "type": "model",
+      "route": "models/strategic-timing",
+      "summary": "真正决定收益的往往不是是否参与，而是你能否在远早于大众情绪的时点、以合适规模和合适位置进入。",
       "status": null,
       "degree": 5
     },
@@ -2225,6 +2258,17 @@
       "degree": 4
     },
     {
+      "id": "theme:east-asia-security-realignment",
+      "key": "east-asia-security-realignment",
+      "label": "东亚安全重组与日本转向",
+      "fullLabel": "东亚安全重组与日本转向",
+      "type": "theme",
+      "route": "themes/east-asia-security-realignment",
+      "summary": "讨论日本重新前台化、台海压力外溢，以及东亚安全合作为何越来越难保持模糊。",
+      "status": null,
+      "degree": 4
+    },
+    {
       "id": "concept:premium-narrative",
       "key": "premium-narrative",
       "label": "高价叙事",
@@ -2423,17 +2467,6 @@
       "degree": 4
     },
     {
-      "id": "model:small-state-balancing-model",
-      "key": "small-state-balancing-model",
-      "label": "小国平衡术",
-      "fullLabel": "小国平衡术",
-      "type": "model",
-      "route": "models/small-state-balancing-model",
-      "summary": "小国平衡术解释小国在大国之间维持生存空间，靠位置、合法性和现实利益而非纯姿态。",
-      "status": null,
-      "degree": 4
-    },
-    {
       "id": "theme:small-state-balancing",
       "key": "small-state-balancing",
       "label": "小国平衡与地缘生存",
@@ -2463,17 +2496,6 @@
       "type": "model",
       "route": "models/prototype-production-decoupling",
       "summary": "样机量产脱钩解释送检、展示和量产之间的标准落差如何制造真实安全风险。",
-      "status": null,
-      "degree": 4
-    },
-    {
-      "id": "model:strategic-timing",
-      "key": "strategic-timing",
-      "label": "战略时机",
-      "fullLabel": "战略时机",
-      "type": "model",
-      "route": "models/strategic-timing",
-      "summary": "真正决定收益的往往不是是否参与，而是你能否在远早于大众情绪的时点、以合适规模和合适位置进入。",
       "status": null,
       "degree": 4
     },
@@ -2771,17 +2793,6 @@
       "type": "concept",
       "route": "concepts/battery-assetization",
       "summary": "电池被从零部件改造成可估值、可抵押、可融资、可讲收益故事的资产包。",
-      "status": null,
-      "degree": 3
-    },
-    {
-      "id": "theme:east-asia-security-realignment",
-      "key": "east-asia-security-realignment",
-      "label": "东亚安全重组与日本转向",
-      "fullLabel": "东亚安全重组与日本转向",
-      "type": "theme",
-      "route": "themes/east-asia-security-realignment",
-      "summary": "讨论日本重新前台化、台海压力外溢，以及东亚安全合作为何越来越难保持模糊。",
       "status": null,
       "degree": 3
     },
@@ -3200,6 +3211,17 @@
       "type": "concept",
       "route": "concepts/shadow-fleet",
       "summary": "影子舰队是绕开西方保险、认证、定位和船东透明规则的平行航运网络。",
+      "status": null,
+      "degree": 3
+    },
+    {
+      "id": "concept:strategic-depth-inversion",
+      "key": "strategic-depth-inversion",
+      "label": "战略纵深反转",
+      "fullLabel": "战略纵深反转",
+      "type": "concept",
+      "route": "concepts/strategic-depth-inversion",
+      "summary": "长航程无人系统让传统纵深从缓冲优势变成固定资产暴露和防护成本。",
       "status": null,
       "degree": 3
     },
@@ -4146,17 +4168,6 @@
       "type": "concept",
       "route": "concepts/expectation-selling",
       "summary": "通过出售可理解、可规划、可购买的未来想象，中间人获得影响力和收益。",
-      "status": null,
-      "degree": 2
-    },
-    {
-      "id": "concept:strategic-depth-inversion",
-      "key": "strategic-depth-inversion",
-      "label": "战略纵深反转",
-      "fullLabel": "战略纵深反转",
-      "type": "concept",
-      "route": "concepts/strategic-depth-inversion",
-      "summary": "长航程无人系统让传统纵深从缓冲优势变成固定资产暴露和防护成本。",
       "status": null,
       "degree": 2
     },
@@ -11199,6 +11210,76 @@
     {
       "source": "episode:EP153",
       "target": "theme:ev-design-and-technology-shortcuts",
+      "kind": "episode-theme"
+    },
+    {
+      "source": "episode:EP154",
+      "target": "concept:chokepoint-leverage",
+      "kind": "episode-concept"
+    },
+    {
+      "source": "episode:EP154",
+      "target": "concept:strategic-depth-inversion",
+      "kind": "episode-concept"
+    },
+    {
+      "source": "episode:EP154",
+      "target": "concept:active-neutrality",
+      "kind": "episode-concept"
+    },
+    {
+      "source": "episode:EP154",
+      "target": "concept:sanction-containment",
+      "kind": "episode-concept"
+    },
+    {
+      "source": "episode:EP154",
+      "target": "model:proxy-containment-ring",
+      "kind": "episode-model"
+    },
+    {
+      "source": "episode:EP154",
+      "target": "model:regional-denial-model",
+      "kind": "episode-model"
+    },
+    {
+      "source": "episode:EP154",
+      "target": "model:small-state-balancing-model",
+      "kind": "episode-model"
+    },
+    {
+      "source": "episode:EP154",
+      "target": "model:strategic-timing",
+      "kind": "episode-model"
+    },
+    {
+      "source": "episode:EP154",
+      "target": "person:donald-trump",
+      "kind": "episode-person"
+    },
+    {
+      "source": "episode:EP154",
+      "target": "theme:east-asia-security-realignment",
+      "kind": "episode-theme"
+    },
+    {
+      "source": "episode:EP154",
+      "target": "theme:great-power-competition-and-strategic-time",
+      "kind": "episode-theme"
+    },
+    {
+      "source": "episode:EP154",
+      "target": "theme:sanctions-and-power-containment",
+      "kind": "episode-theme"
+    },
+    {
+      "source": "episode:EP154",
+      "target": "theme:southeast-asia-fragmentation-and-bloc-competition",
+      "kind": "episode-theme"
+    },
+    {
+      "source": "episode:EP154",
+      "target": "theme:dollar-system-and-gray-trade",
       "kind": "episode-theme"
     },
     {

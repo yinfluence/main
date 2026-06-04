@@ -1,4 +1,15 @@
 {
+  "EP154": {
+    "bilibili": {
+      "platform": "bilibili",
+      "url": "https://www.bilibili.com/video/BV1zL7R6aEvP/",
+      "access": "member"
+    },
+    "youtube": {
+      "platform": "youtube",
+      "url": "https://www.youtube.com/watch?v=_9hmYBlsB9Y"
+    }
+  },
   "EP152": {
     "bilibili": {
       "platform": "bilibili",
