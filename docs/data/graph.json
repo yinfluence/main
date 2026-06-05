@@ -2,13 +2,13 @@
   "meta": {
     "title": "颖响力知识图谱",
     "subtitle": "节目、概念、模型、人物、主题之间的可视化连接网络",
-    "nodeCount": 522,
-    "linkCount": 1143,
+    "nodeCount": 523,
+    "linkCount": 1157,
     "typeCounts": {
       "model": 67,
-      "episode": 154,
-      "concept": 145,
+      "episode": 155,
       "person": 65,
+      "concept": 145,
       "theme": 91
     }
   },
@@ -69,6 +69,17 @@
       "degree": 16
     },
     {
+      "id": "person:donald-trump",
+      "key": "donald-trump",
+      "label": "特朗普",
+      "fullLabel": "特朗普",
+      "type": "person",
+      "route": "people/donald-trump",
+      "summary": "特朗普是美国共和党政治人物、第45任与第47任美国总统，节目借他观察美国战略收缩、成本转嫁和规则重定价。",
+      "status": null,
+      "degree": 15
+    },
+    {
       "id": "concept:hidden-debt",
       "key": "hidden-debt",
       "label": "隐形债务",
@@ -102,17 +113,6 @@
       "degree": 14
     },
     {
-      "id": "person:donald-trump",
-      "key": "donald-trump",
-      "label": "特朗普",
-      "fullLabel": "特朗普",
-      "type": "person",
-      "route": "people/donald-trump",
-      "summary": "特朗普是美国共和党政治人物、第45任与第47任美国总统，节目借他观察美国战略收缩、成本转嫁和规则重定价。",
-      "status": null,
-      "degree": 14
-    },
-    {
       "id": "episode:EP128",
       "key": "EP128",
       "label": "EP128",
@@ -142,6 +142,17 @@
       "type": "episode",
       "route": "episodes/EP154",
       "summary": "本期聚焦香格里拉对话会上美国国防部长赫格塞斯（节目读作赫塞斯）的发言。多数解读抓住他“中美关系比多年来都好”的软话，认为他在降调求稳；节目判断这只是开场烟雾弹，真正的关键词是后半段的“围栏”。围栏听着像邻居互建篱笆，但赫格塞斯已把边界划在第一岛链，所谓围栏其实是划在东亚家门口的高墙，链上地区都成不可逾越的红线。节目把它接进川普的新门罗主义——建墙加打击灰色贸易，美军收拳后撤、让盟友顶前线守墙，手持大棒、轻声说话。落点是：东南亚是最后一段未定边界，香会就是逼骑墙国家选边的场，下集再谈各国怎么选。",
+      "status": "curated",
+      "degree": 14
+    },
+    {
+      "id": "episode:EP155",
+      "key": "EP155",
+      "label": "EP155",
+      "fullLabel": "EP155 · 赫格塞斯新加坡香会“围栏论”真相（下）：依赖时代结束！第一岛链守墙人名单出炉！新加坡是东南亚核心",
+      "type": "episode",
+      "route": "episodes/EP155",
+      "summary": "围栏论上集划了墙，本集回答谁建、谁守。节目抓住比围栏论更狠的一句——美国只要利益对齐的真盟友，依赖时代已结束，搭便车到头。它把70年单向保护改写成守墙合同：四步——划定第一岛链、盟友对齐共守、多出钱者优先、偷懒者被弃。欧洲被逼自付军费就是亚太的明天。节目沿岛链点名分工（自陈是个人判断、当花絮听）：日本北段总司令、新加坡东南亚枢纽兼守马六甲、韩国牵北、菲律宾南段基地、澳洲大后方，越南决定墙的南界。本质是收紧拳头、把防务成本转嫁盟友，逼两头下注的东南亚选边，换时间优势备战。",
       "status": "curated",
       "degree": 14
     },
@@ -245,6 +256,17 @@
       "degree": 13
     },
     {
+      "id": "concept:chokepoint-leverage",
+      "key": "chokepoint-leverage",
+      "label": "咽喉杠杆",
+      "fullLabel": "咽喉杠杆",
+      "type": "concept",
+      "route": "concepts/chokepoint-leverage",
+      "summary": "控制海峡、运河和关键通道的人，往往能把地理位置转化成定价权、通行权和规则权。",
+      "status": null,
+      "degree": 12
+    },
+    {
       "id": "episode:EP130",
       "key": "EP130",
       "label": "EP130",
@@ -344,6 +366,17 @@
       "degree": 11
     },
     {
+      "id": "theme:singapore-and-small-state-survival",
+      "key": "singapore-and-small-state-survival",
+      "label": "新加坡与小国生存术",
+      "fullLabel": "新加坡与小国生存术",
+      "type": "theme",
+      "route": "themes/singapore-and-small-state-survival",
+      "summary": "讨论新加坡如何把规则、海峡、人才和谨慎外交组合成一套小国长期生存方法。",
+      "status": null,
+      "degree": 11
+    },
+    {
       "id": "theme:ev-financialization-and-false-sales",
       "key": "ev-financialization-and-false-sales",
       "label": "新能源金融化与虚假销量",
@@ -351,17 +384,6 @@
       "type": "theme",
       "route": "themes/ev-financialization-and-false-sales",
       "summary": "聚焦新能源车行业如何依靠补贴、融资、渠道黑箱和虚假销售维持增长叙事。",
-      "status": null,
-      "degree": 11
-    },
-    {
-      "id": "concept:chokepoint-leverage",
-      "key": "chokepoint-leverage",
-      "label": "咽喉杠杆",
-      "fullLabel": "咽喉杠杆",
-      "type": "concept",
-      "route": "concepts/chokepoint-leverage",
-      "summary": "控制海峡、运河和关键通道的人，往往能把地理位置转化成定价权、通行权和规则权。",
       "status": null,
       "degree": 11
     },
@@ -432,13 +454,35 @@
       "degree": 11
     },
     {
-      "id": "theme:singapore-and-small-state-survival",
-      "key": "singapore-and-small-state-survival",
-      "label": "新加坡与小国生存术",
-      "fullLabel": "新加坡与小国生存术",
+      "id": "theme:great-power-competition-and-strategic-time",
+      "key": "great-power-competition-and-strategic-time",
+      "label": "大国竞争与战略时间",
+      "fullLabel": "大国竞争与战略时间",
       "type": "theme",
-      "route": "themes/singapore-and-small-state-survival",
-      "summary": "讨论新加坡如何把规则、海峡、人才和谨慎外交组合成一套小国长期生存方法。",
+      "route": "themes/great-power-competition-and-strategic-time",
+      "summary": "讨论战争、联盟和国家战略如何被时间窗口、社会成本和长期定力重新塑形。",
+      "status": null,
+      "degree": 10
+    },
+    {
+      "id": "model:proxy-containment-ring",
+      "key": "proxy-containment-ring",
+      "label": "代理围堵环",
+      "fullLabel": "代理围堵环",
+      "type": "model",
+      "route": "models/proxy-containment-ring",
+      "summary": "代理围堵环解释大国如何通过盟友、代理人和通道控制分摊成本、封堵对手。",
+      "status": null,
+      "degree": 10
+    },
+    {
+      "id": "theme:southeast-asia-fragmentation-and-bloc-competition",
+      "key": "southeast-asia-fragmentation-and-bloc-competition",
+      "label": "东南亚裂变与集团竞争",
+      "fullLabel": "东南亚裂变与集团竞争",
+      "type": "theme",
+      "route": "themes/southeast-asia-fragmentation-and-bloc-competition",
+      "summary": "讨论东南亚如何从缓冲地带变成各方拉扯、重新站队和内部裂变并行发生的高风险区域。",
       "status": null,
       "degree": 10
     },
@@ -498,35 +542,13 @@
       "degree": 9
     },
     {
-      "id": "theme:great-power-competition-and-strategic-time",
-      "key": "great-power-competition-and-strategic-time",
-      "label": "大国竞争与战略时间",
-      "fullLabel": "大国竞争与战略时间",
-      "type": "theme",
-      "route": "themes/great-power-competition-and-strategic-time",
-      "summary": "讨论战争、联盟和国家战略如何被时间窗口、社会成本和长期定力重新塑形。",
-      "status": null,
-      "degree": 9
-    },
-    {
-      "id": "model:proxy-containment-ring",
-      "key": "proxy-containment-ring",
-      "label": "代理围堵环",
-      "fullLabel": "代理围堵环",
-      "type": "model",
-      "route": "models/proxy-containment-ring",
-      "summary": "代理围堵环解释大国如何通过盟友、代理人和通道控制分摊成本、封堵对手。",
-      "status": null,
-      "degree": 9
-    },
-    {
-      "id": "theme:southeast-asia-fragmentation-and-bloc-competition",
-      "key": "southeast-asia-fragmentation-and-bloc-competition",
-      "label": "东南亚裂变与集团竞争",
-      "fullLabel": "东南亚裂变与集团竞争",
-      "type": "theme",
-      "route": "themes/southeast-asia-fragmentation-and-bloc-competition",
-      "summary": "讨论东南亚如何从缓冲地带变成各方拉扯、重新站队和内部裂变并行发生的高风险区域。",
+      "id": "concept:cost-shifting",
+      "key": "cost-shifting",
+      "label": "成本外移",
+      "fullLabel": "成本外移",
+      "type": "concept",
+      "route": "concepts/cost-shifting",
+      "summary": "组织内部的高额非生产性成本，最终会通过价格、规则或风险转嫁给外部承担者。",
       "status": null,
       "degree": 9
     },
@@ -549,6 +571,17 @@
       "type": "model",
       "route": "models/value-capture",
       "summary": "价值捕获模型强调商业链条中关键不只是创造了价值，而是谁真正留下了价值。",
+      "status": null,
+      "degree": 9
+    },
+    {
+      "id": "model:regional-denial-model",
+      "key": "regional-denial-model",
+      "label": "区域拒止模型",
+      "fullLabel": "区域拒止模型",
+      "type": "model",
+      "route": "models/regional-denial-model",
+      "summary": "真正有效的区域拒止，不是无上限扩张，而是把对手压在若干区域里，阻止其形成全球联动能力。",
       "status": null,
       "degree": 9
     },
@@ -718,17 +751,6 @@
       "degree": 9
     },
     {
-      "id": "concept:cost-shifting",
-      "key": "cost-shifting",
-      "label": "成本外移",
-      "fullLabel": "成本外移",
-      "type": "concept",
-      "route": "concepts/cost-shifting",
-      "summary": "组织内部的高额非生产性成本，最终会通过价格、规则或风险转嫁给外部承担者。",
-      "status": null,
-      "degree": 8
-    },
-    {
       "id": "theme:big-government-and-incentive-reversal",
       "key": "big-government-and-incentive-reversal",
       "label": "大政府与激励反转",
@@ -736,17 +758,6 @@
       "type": "theme",
       "route": "themes/big-government-and-incentive-reversal",
       "summary": "当大政府失去高速增长红利后，原本向前看的发展激励会慢慢转成向后看的收缩与回补。",
-      "status": null,
-      "degree": 8
-    },
-    {
-      "id": "model:regional-denial-model",
-      "key": "regional-denial-model",
-      "label": "区域拒止模型",
-      "fullLabel": "区域拒止模型",
-      "type": "model",
-      "route": "models/regional-denial-model",
-      "summary": "真正有效的区域拒止，不是无上限扩张，而是把对手压在若干区域里，阻止其形成全球联动能力。",
       "status": null,
       "degree": 8
     },
@@ -769,6 +780,17 @@
       "type": "theme",
       "route": "themes/ev-safety-and-consumer-testing",
       "summary": "讨论新能源车与相关电池系统如何把安全验证不足的代价，转移到真实用户和真实事故里。",
+      "status": null,
+      "degree": 8
+    },
+    {
+      "id": "concept:active-neutrality",
+      "key": "active-neutrality",
+      "label": "主动中立",
+      "fullLabel": "主动中立",
+      "type": "concept",
+      "route": "concepts/active-neutrality",
+      "summary": "真正可持续的中立不是谁都不得罪，而是在坚持规则的前提下主动参与秩序塑造。",
       "status": null,
       "degree": 8
     },
@@ -1147,17 +1169,6 @@
       "degree": 7
     },
     {
-      "id": "concept:active-neutrality",
-      "key": "active-neutrality",
-      "label": "主动中立",
-      "fullLabel": "主动中立",
-      "type": "concept",
-      "route": "concepts/active-neutrality",
-      "summary": "真正可持续的中立不是谁都不得罪，而是在坚持规则的前提下主动参与秩序塑造。",
-      "status": null,
-      "degree": 7
-    },
-    {
       "id": "episode:EP003",
       "key": "EP003",
       "label": "EP003",
@@ -1521,6 +1532,17 @@
       "degree": 6
     },
     {
+      "id": "model:small-state-balancing-model",
+      "key": "small-state-balancing-model",
+      "label": "小国平衡术",
+      "fullLabel": "小国平衡术",
+      "type": "model",
+      "route": "models/small-state-balancing-model",
+      "summary": "小国平衡术解释小国在大国之间维持生存空间，靠位置、合法性和现实利益而非纯姿态。",
+      "status": null,
+      "degree": 6
+    },
+    {
       "id": "concept:phantom-sales",
       "key": "phantom-sales",
       "label": "虚假销售",
@@ -1528,6 +1550,17 @@
       "type": "concept",
       "route": "concepts/phantom-sales",
       "summary": "企业把并不存在的真实终端需求，包装成销量、出海成绩或渠道消化能力，用来维持估值和融资信心。",
+      "status": null,
+      "degree": 6
+    },
+    {
+      "id": "model:strategic-timing",
+      "key": "strategic-timing",
+      "label": "战略时机",
+      "fullLabel": "战略时机",
+      "type": "model",
+      "route": "models/strategic-timing",
+      "summary": "真正决定收益的往往不是是否参与，而是你能否在远早于大众情绪的时点、以合适规模和合适位置进入。",
       "status": null,
       "degree": 6
     },
@@ -1796,6 +1829,17 @@
       "degree": 5
     },
     {
+      "id": "theme:east-asia-security-realignment",
+      "key": "east-asia-security-realignment",
+      "label": "东亚安全重组与日本转向",
+      "fullLabel": "东亚安全重组与日本转向",
+      "type": "theme",
+      "route": "themes/east-asia-security-realignment",
+      "summary": "讨论日本重新前台化、台海压力外溢，以及东亚安全合作为何越来越难保持模糊。",
+      "status": null,
+      "degree": 5
+    },
+    {
       "id": "theme:rule-of-law-boundaries-and-social-trust",
       "key": "rule-of-law-boundaries-and-social-trust",
       "label": "法治边界与社会信任",
@@ -1917,13 +1961,13 @@
       "degree": 5
     },
     {
-      "id": "model:small-state-balancing-model",
-      "key": "small-state-balancing-model",
-      "label": "小国平衡术",
-      "fullLabel": "小国平衡术",
-      "type": "model",
-      "route": "models/small-state-balancing-model",
-      "summary": "小国平衡术解释小国在大国之间维持生存空间，靠位置、合法性和现实利益而非纯姿态。",
+      "id": "theme:small-state-balancing",
+      "key": "small-state-balancing",
+      "label": "小国平衡与地缘生存",
+      "fullLabel": "小国平衡与地缘生存",
+      "type": "theme",
+      "route": "themes/small-state-balancing",
+      "summary": "讨论新加坡这类小国如何在大国竞争中维持安全、合法性和现实利益。",
       "status": null,
       "degree": 5
     },
@@ -1935,17 +1979,6 @@
       "type": "theme",
       "route": "themes/ev-design-and-technology-shortcuts",
       "summary": "讨论新能源品牌如何在设计、技术和产品叙事上追求速成，并为此埋下长期反噬。",
-      "status": null,
-      "degree": 5
-    },
-    {
-      "id": "model:strategic-timing",
-      "key": "strategic-timing",
-      "label": "战略时机",
-      "fullLabel": "战略时机",
-      "type": "model",
-      "route": "models/strategic-timing",
-      "summary": "真正决定收益的往往不是是否参与，而是你能否在远早于大众情绪的时点、以合适规模和合适位置进入。",
       "status": null,
       "degree": 5
     },
@@ -2258,17 +2291,6 @@
       "degree": 4
     },
     {
-      "id": "theme:east-asia-security-realignment",
-      "key": "east-asia-security-realignment",
-      "label": "东亚安全重组与日本转向",
-      "fullLabel": "东亚安全重组与日本转向",
-      "type": "theme",
-      "route": "themes/east-asia-security-realignment",
-      "summary": "讨论日本重新前台化、台海压力外溢，以及东亚安全合作为何越来越难保持模糊。",
-      "status": null,
-      "degree": 4
-    },
-    {
       "id": "concept:premium-narrative",
       "key": "premium-narrative",
       "label": "高价叙事",
@@ -2463,17 +2485,6 @@
       "type": "theme",
       "route": "themes/hidden-costs",
       "summary": "讨论消费者支付的价格中，有多少是在承担企业内部看不见的成本。",
-      "status": null,
-      "degree": 4
-    },
-    {
-      "id": "theme:small-state-balancing",
-      "key": "small-state-balancing",
-      "label": "小国平衡与地缘生存",
-      "fullLabel": "小国平衡与地缘生存",
-      "type": "theme",
-      "route": "themes/small-state-balancing",
-      "summary": "讨论新加坡这类小国如何在大国竞争中维持安全、合法性和现实利益。",
       "status": null,
       "degree": 4
     },
@@ -3600,6 +3611,17 @@
       "degree": 2
     },
     {
+      "id": "concept:partnership-shift",
+      "key": "partnership-shift",
+      "label": "关系合伙人化",
+      "fullLabel": "关系合伙人化",
+      "type": "concept",
+      "route": "concepts/partnership-shift",
+      "summary": "亲密关系在中年、资产和责任变化后，常会从浪漫叙事转向合伙治理。",
+      "status": null,
+      "degree": 2
+    },
+    {
       "id": "concept:audience-filter-labor",
       "key": "audience-filter-labor",
       "label": "观众筛选劳动",
@@ -4586,17 +4608,6 @@
       "type": "theme",
       "route": "themes/charity-and-moral-capital",
       "summary": "一个人即便在资本世界里不断失败，也可能在公共世界里留下真正深厚的价值。",
-      "status": null,
-      "degree": 1
-    },
-    {
-      "id": "concept:partnership-shift",
-      "key": "partnership-shift",
-      "label": "关系合伙人化",
-      "fullLabel": "关系合伙人化",
-      "type": "concept",
-      "route": "concepts/partnership-shift",
-      "summary": "亲密关系在中年、资产和责任变化后，常会从浪漫叙事转向合伙治理。",
       "status": null,
       "degree": 1
     },
@@ -11280,6 +11291,76 @@
     {
       "source": "episode:EP154",
       "target": "theme:dollar-system-and-gray-trade",
+      "kind": "episode-theme"
+    },
+    {
+      "source": "episode:EP155",
+      "target": "concept:partnership-shift",
+      "kind": "episode-concept"
+    },
+    {
+      "source": "episode:EP155",
+      "target": "concept:cost-shifting",
+      "kind": "episode-concept"
+    },
+    {
+      "source": "episode:EP155",
+      "target": "concept:active-neutrality",
+      "kind": "episode-concept"
+    },
+    {
+      "source": "episode:EP155",
+      "target": "concept:chokepoint-leverage",
+      "kind": "episode-concept"
+    },
+    {
+      "source": "episode:EP155",
+      "target": "model:proxy-containment-ring",
+      "kind": "episode-model"
+    },
+    {
+      "source": "episode:EP155",
+      "target": "model:small-state-balancing-model",
+      "kind": "episode-model"
+    },
+    {
+      "source": "episode:EP155",
+      "target": "model:regional-denial-model",
+      "kind": "episode-model"
+    },
+    {
+      "source": "episode:EP155",
+      "target": "model:strategic-timing",
+      "kind": "episode-model"
+    },
+    {
+      "source": "episode:EP155",
+      "target": "person:donald-trump",
+      "kind": "episode-person"
+    },
+    {
+      "source": "episode:EP155",
+      "target": "theme:east-asia-security-realignment",
+      "kind": "episode-theme"
+    },
+    {
+      "source": "episode:EP155",
+      "target": "theme:southeast-asia-fragmentation-and-bloc-competition",
+      "kind": "episode-theme"
+    },
+    {
+      "source": "episode:EP155",
+      "target": "theme:singapore-and-small-state-survival",
+      "kind": "episode-theme"
+    },
+    {
+      "source": "episode:EP155",
+      "target": "theme:great-power-competition-and-strategic-time",
+      "kind": "episode-theme"
+    },
+    {
+      "source": "episode:EP155",
+      "target": "theme:small-state-balancing",
       "kind": "episode-theme"
     },
     {
