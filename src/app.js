@@ -5378,7 +5378,7 @@ function renderHome(focusSectionId = '') {
     </a>
   ` : '';
   const homeSearchToolbarMarkup = `
-    <div class="home-search-toolbar${isMobile ? ' mobile home-search-toolbar-float-only' : ''}">
+    <div class="home-search-toolbar${isMobile ? ' mobile' : ''}">
       <div class="search-row">
         <input id="search-input" type="text" placeholder="搜索知识库：节目、概念、模型、人物、主题，如 EP019 / 特朗普 / 安全阀治理">
         <button id="search-submit" class="search-submit" type="button">搜索</button>
@@ -5559,7 +5559,7 @@ function renderHome(focusSectionId = '') {
     });
   }
 
-  if (homeSearchToolbar) {
+  if (homeSearchToolbar && !isMobile) {
     setupHomeSearchToolbarBehavior(homeSearchToolbar);
   }
 
