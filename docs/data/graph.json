@@ -2,13 +2,13 @@
   "meta": {
     "title": "颖响力知识图谱",
     "subtitle": "节目、概念、模型、人物、主题之间的可视化连接网络",
-    "nodeCount": 523,
-    "linkCount": 1157,
+    "nodeCount": 526,
+    "linkCount": 1168,
     "typeCounts": {
-      "model": 67,
-      "episode": 155,
+      "model": 68,
+      "episode": 156,
       "person": 65,
-      "concept": 145,
+      "concept": 146,
       "theme": 91
     }
   },
@@ -450,6 +450,17 @@
       "type": "episode",
       "route": "episodes/EP153",
       "summary": "本期借华山派宣布“T定律”（即韬定律）这一桥段，拆解一种被包装成民族复兴突破的半导体路线。节目把制程比作盖楼：先进制程是把砖做小，3D空间堆叠是往上摞层，而堆叠的真实瓶颈是散热和良品率——层数越多良率越低，最终只能做出温度极高、良率个位数的样品去做汇报、做论文。节目认为T定律真正释放的信号，是未来多年拿不到更先进光刻机、连DUV都被荷兰断供，于是被迫改走堆叠这条“辟邪剑谱”式的自宫路线。落点是：用黑话堆出黑箱，再借民族复兴大旗和举国体制裹挟行业，让圈外情绪去推圈内人，把绕路说成弯道超车，实则是别人炸了高速、自己在山路上开越野车。",
+      "status": "curated",
+      "degree": 11
+    },
+    {
+      "id": "episode:EP157",
+      "key": "EP157",
+      "label": "EP157",
+      "fullLabel": "EP157 · 如果现代教育是合法的“文化洗钱”工具，那么中产阶级为什么不选择更具性价比的方式，进行代际传承？",
+      "type": "episode",
+      "route": "episodes/EP157",
+      "summary": "高考季里，节目把矛头对准张雪峰式的目的论教育观，提出一个更尖锐的判断：对中产家庭来说，现在的教育、高考和考公，本质上是一场合法的文化洗钱——用几百万学区房、补习班和留学，把父母的财富和地位洗成孩子的文凭，再换回下一代的财富与阶层。节目认为这场游戏的规则是为富人定的，中产用全部身家去和别人的零花钱竞争，越卷越容易输；真正划算的反而是投入极低的底层。落点不是劝人躺平，而是劝中产换赛道：把钱从分数焦虑里拿出来，从目的论转向决定论，去发现孩子的天赋，让家风成为真正的传承。",
       "status": "curated",
       "degree": 11
     },
@@ -1147,6 +1158,17 @@
       "degree": 8
     },
     {
+      "id": "model:screening-machine",
+      "key": "screening-machine",
+      "label": "筛选机器模型",
+      "fullLabel": "筛选机器模型",
+      "type": "model",
+      "route": "models/screening-machine",
+      "summary": "教育和组织把人当作待筛选样本，而非待生长的人来处理的系统逻辑。",
+      "status": null,
+      "degree": 7
+    },
+    {
       "id": "model:narrative-instrumentalization",
       "key": "narrative-instrumentalization",
       "label": "叙事工具化模型",
@@ -1488,17 +1510,6 @@
       "degree": 6
     },
     {
-      "id": "model:screening-machine",
-      "key": "screening-machine",
-      "label": "筛选机器模型",
-      "fullLabel": "筛选机器模型",
-      "type": "model",
-      "route": "models/screening-machine",
-      "summary": "教育和组织把人当作待筛选样本，而非待生长的人来处理的系统逻辑。",
-      "status": null,
-      "degree": 6
-    },
-    {
       "id": "model:time-arbitrage-model",
       "key": "time-arbitrage-model",
       "label": "时间套利模型",
@@ -1565,6 +1576,17 @@
       "degree": 6
     },
     {
+      "id": "person:zhang-xuefeng",
+      "key": "zhang-xuefeng",
+      "label": "张雪峰",
+      "fullLabel": "张雪峰",
+      "type": "person",
+      "route": "people/zhang-xuefeng",
+      "summary": "张雪峰（张子彪，1984-2026）是考研与升学规划领域的公众人物，节目借他观察教育焦虑、安全阀和稳定路径叙事。",
+      "status": null,
+      "degree": 6
+    },
+    {
       "id": "model:institutional-formalism-spiral",
       "key": "institutional-formalism-spiral",
       "label": "制度形式主义螺旋",
@@ -1572,6 +1594,17 @@
       "type": "model",
       "route": "models/institutional-formalism-spiral",
       "summary": "组织一旦开始依赖仪式、排名、头衔和场面来证明自己有效，就会不断加码这些外壳，同时越来越失去真正解决问题的能力。",
+      "status": null,
+      "degree": 6
+    },
+    {
+      "id": "theme:middle-class-descent-and-stratification",
+      "key": "middle-class-descent-and-stratification",
+      "label": "中产下坠与分层社会",
+      "fullLabel": "中产下坠与分层社会",
+      "type": "theme",
+      "route": "themes/middle-class-descent-and-stratification",
+      "summary": "当中间层缺乏缓冲带时，经济下行会迅速转成身份下坠、关系断裂和社会分层加固。",
       "status": null,
       "degree": 6
     },
@@ -1884,6 +1917,17 @@
       "degree": 5
     },
     {
+      "id": "theme:exam-centered-education-and-person-formation",
+      "key": "exam-centered-education-and-person-formation",
+      "label": "考试中心教育与人成形",
+      "fullLabel": "考试中心教育与人成形",
+      "type": "theme",
+      "route": "themes/exam-centered-education-and-person-formation",
+      "summary": "关注学校如何把人塑造成服从考试和权威的对象。",
+      "status": null,
+      "degree": 5
+    },
+    {
       "id": "concept:unfinished-vehicle",
       "key": "unfinished-vehicle",
       "label": "烂尾车",
@@ -1983,17 +2027,6 @@
       "degree": 5
     },
     {
-      "id": "person:zhang-xuefeng",
-      "key": "zhang-xuefeng",
-      "label": "张雪峰",
-      "fullLabel": "张雪峰",
-      "type": "person",
-      "route": "people/zhang-xuefeng",
-      "summary": "张雪峰（张子彪，1984-2026）是考研与升学规划领域的公众人物，节目借他观察教育焦虑、安全阀和稳定路径叙事。",
-      "status": null,
-      "degree": 5
-    },
-    {
       "id": "model:political-embedded-enterprise",
       "key": "political-embedded-enterprise",
       "label": "政企嵌入企业模型",
@@ -2001,17 +2034,6 @@
       "type": "model",
       "route": "models/political-embedded-enterprise",
       "summary": "企业一旦把自身命运深嵌进地方政府或国资体系，短期会更能续命，长期却更容易沦为政策工具。",
-      "status": null,
-      "degree": 5
-    },
-    {
-      "id": "theme:middle-class-descent-and-stratification",
-      "key": "middle-class-descent-and-stratification",
-      "label": "中产下坠与分层社会",
-      "fullLabel": "中产下坠与分层社会",
-      "type": "theme",
-      "route": "themes/middle-class-descent-and-stratification",
-      "summary": "当中间层缺乏缓冲带时，经济下行会迅速转成身份下坠、关系断裂和社会分层加固。",
       "status": null,
       "degree": 5
     },
@@ -2258,6 +2280,17 @@
       "degree": 4
     },
     {
+      "id": "model:wealth-power-reproduction",
+      "key": "wealth-power-reproduction",
+      "label": "财富权力再生产",
+      "fullLabel": "财富权力再生产",
+      "type": "model",
+      "route": "models/wealth-power-reproduction",
+      "summary": "财富权力再生产解释财富如何借婚姻、生育、身份和关系重新转化为下一代权力。",
+      "status": null,
+      "degree": 4
+    },
+    {
       "id": "model:discipline-failure-loop",
       "key": "discipline-failure-loop",
       "label": "惩戒失效循环模型",
@@ -2390,17 +2423,6 @@
       "degree": 4
     },
     {
-      "id": "theme:exam-centered-education-and-person-formation",
-      "key": "exam-centered-education-and-person-formation",
-      "label": "考试中心教育与人成形",
-      "fullLabel": "考试中心教育与人成形",
-      "type": "theme",
-      "route": "themes/exam-centered-education-and-person-formation",
-      "summary": "关注学校如何把人塑造成服从考试和权威的对象。",
-      "status": null,
-      "degree": 4
-    },
-    {
       "id": "model:platform-legibility-filter",
       "key": "platform-legibility-filter",
       "label": "平台可读性过滤器",
@@ -2463,6 +2485,17 @@
       "type": "concept",
       "route": "concepts/sample-production-gap",
       "summary": "送检、展示和量产版本一旦分裂，合格证据就不再能代表消费者真正拿到的产品。",
+      "status": null,
+      "degree": 4
+    },
+    {
+      "id": "theme:institutional-middle-class-and-social-mobility",
+      "key": "institutional-middle-class-and-social-mobility",
+      "label": "体制化中产与社会流动",
+      "fullLabel": "体制化中产与社会流动",
+      "type": "theme",
+      "route": "themes/institutional-middle-class-and-social-mobility",
+      "summary": "讨论稳定岗位、公共财政和身份溢价如何重塑中产结构，并收窄普通人的上升路径。",
       "status": null,
       "degree": 4
     },
@@ -2742,17 +2775,6 @@
       "degree": 3
     },
     {
-      "id": "model:wealth-power-reproduction",
-      "key": "wealth-power-reproduction",
-      "label": "财富权力再生产",
-      "fullLabel": "财富权力再生产",
-      "type": "model",
-      "route": "models/wealth-power-reproduction",
-      "summary": "财富权力再生产解释财富如何借婚姻、生育、身份和关系重新转化为下一代权力。",
-      "status": null,
-      "degree": 3
-    },
-    {
       "id": "theme:financial-content-and-long-termism",
       "key": "financial-content-and-long-termism",
       "label": "财经表达与长期主义",
@@ -2819,6 +2841,17 @@
       "degree": 3
     },
     {
+      "id": "concept:pan-institutional-middle-class",
+      "key": "pan-institutional-middle-class",
+      "label": "泛体制中产",
+      "fullLabel": "泛体制中产",
+      "type": "concept",
+      "route": "concepts/pan-institutional-middle-class",
+      "summary": "泛体制中产指依靠公务员、事业编、国企及体制相关岗位维持稳定收入、福利和社会体面的中间层。",
+      "status": null,
+      "degree": 3
+    },
+    {
       "id": "model:layered-market",
       "key": "layered-market",
       "label": "分层市场",
@@ -2837,6 +2870,17 @@
       "type": "concept",
       "route": "concepts/symbol-mismatch",
       "summary": "品牌符号、价格带和实际体验不一致时，用户会感到叙事与产品之间的违和。",
+      "status": null,
+      "degree": 3
+    },
+    {
+      "id": "concept:industrial-education-lag",
+      "key": "industrial-education-lag",
+      "label": "工业时代教育惯性",
+      "fullLabel": "工业时代教育惯性",
+      "type": "concept",
+      "route": "concepts/industrial-education-lag",
+      "summary": "教育仍按工业化时代的标准岗位培养人，而外部世界已经转向更不确定的能力结构。",
       "status": null,
       "degree": 3
     },
@@ -3072,17 +3116,6 @@
       "degree": 3
     },
     {
-      "id": "theme:institutional-middle-class-and-social-mobility",
-      "key": "institutional-middle-class-and-social-mobility",
-      "label": "体制化中产与社会流动",
-      "fullLabel": "体制化中产与社会流动",
-      "type": "theme",
-      "route": "themes/institutional-middle-class-and-social-mobility",
-      "summary": "讨论稳定岗位、公共财政和身份溢价如何重塑中产结构，并收窄普通人的上升路径。",
-      "status": null,
-      "degree": 3
-    },
-    {
       "id": "model:exit-liquidation-waterfall",
       "key": "exit-liquidation-waterfall",
       "label": "退出清算瀑布",
@@ -3244,6 +3277,17 @@
       "type": "theme",
       "route": "themes/war-system-and-succession-risk",
       "summary": "讨论战争国家在长期高压运转下，如何同时面临兵员枯竭、内部老化与接班断层。",
+      "status": null,
+      "degree": 3
+    },
+    {
+      "id": "concept:middle-class-hard-landing",
+      "key": "middle-class-hard-landing",
+      "label": "中产硬着陆",
+      "fullLabel": "中产硬着陆",
+      "type": "concept",
+      "route": "concepts/middle-class-hard-landing",
+      "summary": "高负债中产一旦失速，下坠往往同时摧毁资产、体面、关系和自我认同。",
       "status": null,
       "degree": 3
     },
@@ -3501,17 +3545,6 @@
       "degree": 2
     },
     {
-      "id": "concept:pan-institutional-middle-class",
-      "key": "pan-institutional-middle-class",
-      "label": "泛体制中产",
-      "fullLabel": "泛体制中产",
-      "type": "concept",
-      "route": "concepts/pan-institutional-middle-class",
-      "summary": "泛体制中产指依靠公务员、事业编、国企及体制相关岗位维持稳定收入、福利和社会体面的中间层。",
-      "status": null,
-      "degree": 2
-    },
-    {
       "id": "model:non-monetary-legacy",
       "key": "non-monetary-legacy",
       "label": "非货币遗产",
@@ -3541,17 +3574,6 @@
       "type": "model",
       "route": "models/distributed-warfare-system",
       "summary": "分布式战争系统解释无人装备、分散生产、前线反馈和外部供给如何组合成长期战争优势。",
-      "status": null,
-      "degree": 2
-    },
-    {
-      "id": "concept:industrial-education-lag",
-      "key": "industrial-education-lag",
-      "label": "工业时代教育惯性",
-      "fullLabel": "工业时代教育惯性",
-      "type": "concept",
-      "route": "concepts/industrial-education-lag",
-      "summary": "教育仍按工业化时代的标准岗位培养人，而外部世界已经转向更不确定的能力结构。",
       "status": null,
       "degree": 2
     },
@@ -4190,17 +4212,6 @@
       "type": "concept",
       "route": "concepts/expectation-selling",
       "summary": "通过出售可理解、可规划、可购买的未来想象，中间人获得影响力和收益。",
-      "status": null,
-      "degree": 2
-    },
-    {
-      "id": "concept:middle-class-hard-landing",
-      "key": "middle-class-hard-landing",
-      "label": "中产硬着陆",
-      "fullLabel": "中产硬着陆",
-      "type": "concept",
-      "route": "concepts/middle-class-hard-landing",
-      "summary": "高负债中产一旦失速，下坠往往同时摧毁资产、体面、关系和自我认同。",
       "status": null,
       "degree": 2
     },
@@ -4997,6 +5008,17 @@
       "degree": 1
     },
     {
+      "id": "model:teleological-vs-deterministic-parenting",
+      "key": "teleological-vs-deterministic-parenting",
+      "label": "目的论与决定论育儿",
+      "fullLabel": "目的论与决定论育儿",
+      "type": "model",
+      "route": "models/teleological-vs-deterministic-parenting",
+      "summary": "用未来目的倒推现在投入的目的论育儿，对比用孩子既有天赋与兴趣往前推演的决定论育儿。",
+      "status": null,
+      "degree": 1
+    },
+    {
       "id": "person:mujtaba-khamenei",
       "key": "mujtaba-khamenei",
       "label": "穆杰塔巴·哈梅内伊",
@@ -5356,6 +5378,17 @@
       "type": "person",
       "route": "people/arsene-wenger",
       "summary": "温格是法国足球教练、英超阿森纳 1996-2018 年主帅,2019 年起任 FIFA 全球足球发展总监,节目借他观察 FIFA 在中国市场的推广动作。",
+      "status": null,
+      "degree": 1
+    },
+    {
+      "id": "concept:cultural-money-laundering",
+      "key": "cultural-money-laundering",
+      "label": "文化洗钱",
+      "fullLabel": "文化洗钱",
+      "type": "concept",
+      "route": "concepts/cultural-money-laundering",
+      "summary": "文化洗钱指家庭通过高额教育支出，把财富和社会地位转换成孩子的教育成果，再换回下一代的财富与阶层。",
       "status": null,
       "degree": 1
     },
@@ -11361,6 +11394,61 @@
     {
       "source": "episode:EP155",
       "target": "theme:small-state-balancing",
+      "kind": "episode-theme"
+    },
+    {
+      "source": "episode:EP157",
+      "target": "concept:cultural-money-laundering",
+      "kind": "episode-concept"
+    },
+    {
+      "source": "episode:EP157",
+      "target": "concept:middle-class-hard-landing",
+      "kind": "episode-concept"
+    },
+    {
+      "source": "episode:EP157",
+      "target": "concept:pan-institutional-middle-class",
+      "kind": "episode-concept"
+    },
+    {
+      "source": "episode:EP157",
+      "target": "concept:industrial-education-lag",
+      "kind": "episode-concept"
+    },
+    {
+      "source": "episode:EP157",
+      "target": "model:wealth-power-reproduction",
+      "kind": "episode-model"
+    },
+    {
+      "source": "episode:EP157",
+      "target": "model:screening-machine",
+      "kind": "episode-model"
+    },
+    {
+      "source": "episode:EP157",
+      "target": "model:teleological-vs-deterministic-parenting",
+      "kind": "episode-model"
+    },
+    {
+      "source": "episode:EP157",
+      "target": "person:zhang-xuefeng",
+      "kind": "episode-person"
+    },
+    {
+      "source": "episode:EP157",
+      "target": "theme:exam-centered-education-and-person-formation",
+      "kind": "episode-theme"
+    },
+    {
+      "source": "episode:EP157",
+      "target": "theme:institutional-middle-class-and-social-mobility",
+      "kind": "episode-theme"
+    },
+    {
+      "source": "episode:EP157",
+      "target": "theme:middle-class-descent-and-stratification",
       "kind": "episode-theme"
     },
     {
