@@ -2,13 +2,13 @@
   "meta": {
     "title": "颖响力知识图谱",
     "subtitle": "节目、概念、模型、人物、主题之间的可视化连接网络",
-    "nodeCount": 530,
-    "linkCount": 1183,
+    "nodeCount": 534,
+    "linkCount": 1196,
     "typeCounts": {
-      "model": 69,
-      "episode": 157,
+      "model": 70,
+      "episode": 158,
       "person": 65,
-      "concept": 148,
+      "concept": 150,
       "theme": 91
     }
   },
@@ -267,6 +267,28 @@
       "degree": 13
     },
     {
+      "id": "episode:EP156",
+      "key": "EP156",
+      "label": "EP156",
+      "fullLabel": "EP156 · 老中产吸干财富，新中产锁定基本盘。香港不再是避风港？新加坡或成最大赢家？",
+      "type": "episode",
+      "route": "episodes/EP156",
+      "summary": "节目把5月以来一串看似孤立的金融事件串成一条线：富途、老虎被罚没22亿、八部门两年整治非法跨境券商，香港银行倒查内地账户、要求声明资金并非来自大陆，再到国务院837号令把个人、技术、人才一并纳入对外投资监管。核心判断是：这是一次对老中产和高净值人群境外财富的系统性回收——学特朗普“建墙”，逼两头跑的人要么留在国内受严格监管、要么彻底离开。与此同时，围绕公共体系、靠国家拨款和国企流动的新中产正在长出来，因为他们更稳定可控。落点是老中产去新加坡是相对安全的选择，而新旧中产的置换会用五到十年逐步完成。",
+      "status": "curated",
+      "degree": 13
+    },
+    {
+      "id": "theme:singapore-and-small-state-survival",
+      "key": "singapore-and-small-state-survival",
+      "label": "新加坡与小国生存术",
+      "fullLabel": "新加坡与小国生存术",
+      "type": "theme",
+      "route": "themes/singapore-and-small-state-survival",
+      "summary": "讨论新加坡如何把规则、海峡、人才和谨慎外交组合成一套小国长期生存方法。",
+      "status": null,
+      "degree": 12
+    },
+    {
       "id": "concept:chokepoint-leverage",
       "key": "chokepoint-leverage",
       "label": "咽喉杠杆",
@@ -373,17 +395,6 @@
       "type": "model",
       "route": "models/chokepoint-order-model",
       "summary": "真正决定咽喉通道价值的，不只是地理位置，而是谁定义通行规则、风险定价与法律边界。",
-      "status": null,
-      "degree": 11
-    },
-    {
-      "id": "theme:singapore-and-small-state-survival",
-      "key": "singapore-and-small-state-survival",
-      "label": "新加坡与小国生存术",
-      "fullLabel": "新加坡与小国生存术",
-      "type": "theme",
-      "route": "themes/singapore-and-small-state-survival",
-      "summary": "讨论新加坡如何把规则、海峡、人才和谨慎外交组合成一套小国长期生存方法。",
       "status": null,
       "degree": 11
     },
@@ -817,6 +828,17 @@
       "degree": 8
     },
     {
+      "id": "theme:middle-class-descent-and-stratification",
+      "key": "middle-class-descent-and-stratification",
+      "label": "中产下坠与分层社会",
+      "fullLabel": "中产下坠与分层社会",
+      "type": "theme",
+      "route": "themes/middle-class-descent-and-stratification",
+      "summary": "当中间层缺乏缓冲带时，经济下行会迅速转成身份下坠、关系断裂和社会分层加固。",
+      "status": null,
+      "degree": 8
+    },
+    {
       "id": "concept:active-neutrality",
       "key": "active-neutrality",
       "label": "主动中立",
@@ -1202,17 +1224,6 @@
       "degree": 7
     },
     {
-      "id": "theme:middle-class-descent-and-stratification",
-      "key": "middle-class-descent-and-stratification",
-      "label": "中产下坠与分层社会",
-      "fullLabel": "中产下坠与分层社会",
-      "type": "theme",
-      "route": "themes/middle-class-descent-and-stratification",
-      "summary": "当中间层缺乏缓冲带时，经济下行会迅速转成身份下坠、关系断裂和社会分层加固。",
-      "status": null,
-      "degree": 7
-    },
-    {
       "id": "episode:EP003",
       "key": "EP003",
       "label": "EP003",
@@ -1543,6 +1554,17 @@
       "degree": 6
     },
     {
+      "id": "theme:institutional-middle-class-and-social-mobility",
+      "key": "institutional-middle-class-and-social-mobility",
+      "label": "体制化中产与社会流动",
+      "fullLabel": "体制化中产与社会流动",
+      "type": "theme",
+      "route": "themes/institutional-middle-class-and-social-mobility",
+      "summary": "讨论稳定岗位、公共财政和身份溢价如何重塑中产结构，并收窄普通人的上升路径。",
+      "status": null,
+      "degree": 6
+    },
+    {
       "id": "person:wang-shi",
       "key": "wang-shi",
       "label": "王石",
@@ -1550,6 +1572,17 @@
       "type": "person",
       "route": "people/wang-shi",
       "summary": "王石是万科创始人、董事会名誉主席，节目借他观察地产企业家退场、万科继承治理和资产关系再定价。",
+      "status": null,
+      "degree": 6
+    },
+    {
+      "id": "model:stability-over-growth-trap",
+      "key": "stability-over-growth-trap",
+      "label": "稳定替代增长陷阱",
+      "fullLabel": "稳定替代增长陷阱",
+      "type": "model",
+      "route": "models/stability-over-growth-trap",
+      "summary": "当系统把稳定当作增长的替代品，短期秩序会被保住，长期造血、流动和创新却会被压低。",
       "status": null,
       "degree": 6
     },
@@ -1895,6 +1928,17 @@
       "degree": 5
     },
     {
+      "id": "concept:pan-institutional-middle-class",
+      "key": "pan-institutional-middle-class",
+      "label": "泛体制中产",
+      "fullLabel": "泛体制中产",
+      "type": "concept",
+      "route": "concepts/pan-institutional-middle-class",
+      "summary": "泛体制中产指依靠公务员、事业编、国企及体制相关岗位维持稳定收入、福利和社会体面的中间层。",
+      "status": null,
+      "degree": 5
+    },
+    {
       "id": "concept:probabilistic-safety",
       "key": "probabilistic-safety",
       "label": "概率型安全",
@@ -2005,17 +2049,6 @@
       "degree": 5
     },
     {
-      "id": "theme:institutional-middle-class-and-social-mobility",
-      "key": "institutional-middle-class-and-social-mobility",
-      "label": "体制化中产与社会流动",
-      "fullLabel": "体制化中产与社会流动",
-      "type": "theme",
-      "route": "themes/institutional-middle-class-and-social-mobility",
-      "summary": "讨论稳定岗位、公共财政和身份溢价如何重塑中产结构，并收窄普通人的上升路径。",
-      "status": null,
-      "degree": 5
-    },
-    {
       "id": "theme:narrative-speculation-and-retail-traps",
       "key": "narrative-speculation-and-retail-traps",
       "label": "投资叙事与散户陷阱",
@@ -2034,17 +2067,6 @@
       "type": "concept",
       "route": "concepts/future-path-crowding",
       "summary": "所有人都挤向同一条被认为最安全的上升路径时，这条路本身就会因为拥挤而失去原来的安全性。",
-      "status": null,
-      "degree": 5
-    },
-    {
-      "id": "model:stability-over-growth-trap",
-      "key": "stability-over-growth-trap",
-      "label": "稳定替代增长陷阱",
-      "fullLabel": "稳定替代增长陷阱",
-      "type": "model",
-      "route": "models/stability-over-growth-trap",
-      "summary": "当系统把稳定当作增长的替代品，短期秩序会被保住，长期造血、流动和创新却会被压低。",
       "status": null,
       "degree": 5
     },
@@ -2089,6 +2111,17 @@
       "type": "model",
       "route": "models/political-embedded-enterprise",
       "summary": "企业一旦把自身命运深嵌进地方政府或国资体系，短期会更能续命，长期却更容易沦为政策工具。",
+      "status": null,
+      "degree": 5
+    },
+    {
+      "id": "concept:middle-class-hard-landing",
+      "key": "middle-class-hard-landing",
+      "label": "中产硬着陆",
+      "fullLabel": "中产硬着陆",
+      "type": "concept",
+      "route": "concepts/middle-class-hard-landing",
+      "summary": "高负债中产一旦失速，下坠往往同时摧毁资产、体面、关系和自我认同。",
       "status": null,
       "degree": 5
     },
@@ -2324,6 +2357,17 @@
       "degree": 5
     },
     {
+      "id": "concept:refuge-premium",
+      "key": "refuge-premium",
+      "label": "避险溢价",
+      "fullLabel": "避险溢价",
+      "type": "concept",
+      "route": "concepts/refuge-premium",
+      "summary": "动荡时期，稳定、守规则、能承接资金和人才的节点会获得额外溢价。",
+      "status": null,
+      "degree": 4
+    },
+    {
       "id": "concept:subsidy-leverage-engine",
       "key": "subsidy-leverage-engine",
       "label": "补贴杠杆引擎",
@@ -2379,13 +2423,13 @@
       "degree": 4
     },
     {
-      "id": "concept:pan-institutional-middle-class",
-      "key": "pan-institutional-middle-class",
-      "label": "泛体制中产",
-      "fullLabel": "泛体制中产",
+      "id": "concept:jurisdiction-arbitrage",
+      "key": "jurisdiction-arbitrage",
+      "label": "法域套利",
+      "fullLabel": "法域套利",
       "type": "concept",
-      "route": "concepts/pan-institutional-middle-class",
-      "summary": "泛体制中产指依靠公务员、事业编、国企及体制相关岗位维持稳定收入、福利和社会体面的中间层。",
+      "route": "concepts/jurisdiction-arbitrage",
+      "summary": "企业通过选择更有利法域，获取融资、估值、合规和退出上的制度差价。",
       "status": null,
       "degree": 4
     },
@@ -2588,17 +2632,6 @@
       "degree": 4
     },
     {
-      "id": "concept:middle-class-hard-landing",
-      "key": "middle-class-hard-landing",
-      "label": "中产硬着陆",
-      "fullLabel": "中产硬着陆",
-      "type": "concept",
-      "route": "concepts/middle-class-hard-landing",
-      "summary": "高负债中产一旦失速，下坠往往同时摧毁资产、体面、关系和自我认同。",
-      "status": null,
-      "degree": 4
-    },
-    {
       "id": "theme:housing-burden-and-income-distribution",
       "key": "housing-burden-and-income-distribution",
       "label": "住房税负与收入分配",
@@ -2775,17 +2808,6 @@
       "degree": 3
     },
     {
-      "id": "concept:refuge-premium",
-      "key": "refuge-premium",
-      "label": "避险溢价",
-      "fullLabel": "避险溢价",
-      "type": "concept",
-      "route": "concepts/refuge-premium",
-      "summary": "动荡时期，稳定、守规则、能承接资金和人才的节点会获得额外溢价。",
-      "status": null,
-      "degree": 3
-    },
-    {
       "id": "model:bounded-social-experiment",
       "key": "bounded-social-experiment",
       "label": "边界化社会试验",
@@ -2881,17 +2903,6 @@
       "type": "concept",
       "route": "concepts/battery-assetization",
       "summary": "电池被从零部件改造成可估值、可抵押、可融资、可讲收益故事的资产包。",
-      "status": null,
-      "degree": 3
-    },
-    {
-      "id": "concept:jurisdiction-arbitrage",
-      "key": "jurisdiction-arbitrage",
-      "label": "法域套利",
-      "fullLabel": "法域套利",
-      "type": "concept",
-      "route": "concepts/jurisdiction-arbitrage",
-      "summary": "企业通过选择更有利法域，获取融资、估值、合规和退出上的制度差价。",
       "status": null,
       "degree": 3
     },
@@ -3332,6 +3343,28 @@
       "type": "theme",
       "route": "themes/capital-packaging-and-credential-borrowing",
       "summary": "项目、企业和人物通过借用更高等级的身份和场面来获得额外信用。",
+      "status": null,
+      "degree": 3
+    },
+    {
+      "id": "theme:capital-exit-and-cross-border-harvest",
+      "key": "capital-exit-and-cross-border-harvest",
+      "label": "资本博弈与美元退出",
+      "fullLabel": "资本博弈与美元退出",
+      "type": "theme",
+      "route": "themes/capital-exit-and-cross-border-harvest",
+      "summary": "危机、停牌或重组时期，真正被争夺的往往不是公司本身，而是跨法域的退出通道和美元化收益。",
+      "status": null,
+      "degree": 3
+    },
+    {
+      "id": "model:asset-preservation-architecture",
+      "key": "asset-preservation-architecture",
+      "label": "资产保全架构",
+      "fullLabel": "资产保全架构",
+      "type": "model",
+      "route": "models/asset-preservation-architecture",
+      "summary": "资产保全架构强调财富安全取决于来源、法域、时间前置和退出节奏的组合。",
       "status": null,
       "degree": 3
     },
@@ -4249,28 +4282,6 @@
       "degree": 2
     },
     {
-      "id": "theme:capital-exit-and-cross-border-harvest",
-      "key": "capital-exit-and-cross-border-harvest",
-      "label": "资本博弈与美元退出",
-      "fullLabel": "资本博弈与美元退出",
-      "type": "theme",
-      "route": "themes/capital-exit-and-cross-border-harvest",
-      "summary": "危机、停牌或重组时期，真正被争夺的往往不是公司本身，而是跨法域的退出通道和美元化收益。",
-      "status": null,
-      "degree": 2
-    },
-    {
-      "id": "model:asset-preservation-architecture",
-      "key": "asset-preservation-architecture",
-      "label": "资产保全架构",
-      "fullLabel": "资产保全架构",
-      "type": "model",
-      "route": "models/asset-preservation-architecture",
-      "summary": "资产保全架构强调财富安全取决于来源、法域、时间前置和退出节奏的组合。",
-      "status": null,
-      "degree": 2
-    },
-    {
       "id": "concept:chosen-homeland",
       "key": "chosen-homeland",
       "label": "自选故乡",
@@ -4355,6 +4366,17 @@
       "type": "theme",
       "route": "themes/wealth-reproduction-and-ethical-boundaries",
       "summary": "当财富试图直接进入生育、家族和下一代塑造时，伦理边界会受到最猛烈的冲击。",
+      "status": null,
+      "degree": 1
+    },
+    {
+      "id": "concept:wealth-repatriation-squeeze",
+      "key": "wealth-repatriation-squeeze",
+      "label": "财富回收挤压",
+      "fullLabel": "财富回收挤压",
+      "type": "concept",
+      "route": "concepts/wealth-repatriation-squeeze",
+      "summary": "财富回收挤压指国家通过收紧跨境通道、倒查境外账户和扩大对外投资监管，把高净值人群游离在监管外的境外财富重新定住、纳入体系并施加补税与缩水压力。",
       "status": null,
       "degree": 1
     },
@@ -5514,6 +5536,17 @@
       "degree": 1
     },
     {
+      "id": "model:middle-class-replacement-cycle",
+      "key": "middle-class-replacement-cycle",
+      "label": "新旧中产置换",
+      "fullLabel": "新旧中产置换",
+      "type": "model",
+      "route": "models/middle-class-replacement-cycle",
+      "summary": "新旧中产置换解释一个社会怎样用更可控的体制型中产，替换掉靠市场打拼、财富外流不可控的老中产，从而把财富和消费重新锚定在国内。",
+      "status": null,
+      "degree": 1
+    },
+    {
       "id": "concept:malevolence-self-fulfilling",
       "key": "malevolence-self-fulfilling",
       "label": "性恶预设的自我实现",
@@ -5807,6 +5840,17 @@
       "type": "concept",
       "route": "concepts/quasi-currency-support",
       "summary": "现金不足时，系统用票据、凭证或替代物支撑交易和价格，形成准货币托市。",
+      "status": null,
+      "degree": 1
+    },
+    {
+      "id": "concept:capital-wall",
+      "key": "capital-wall",
+      "label": "资本筑墙",
+      "fullLabel": "资本筑墙",
+      "type": "concept",
+      "route": "concepts/capital-wall",
+      "summary": "资本筑墙指国家像特朗普建实体墙一样，用监管在资金、技术、人才的跨境流动上立起高墙，逼资产与中国有联系的人在“留下受管”和“离开别回”之间选边。",
       "status": null,
       "degree": 1
     },
@@ -11438,6 +11482,71 @@
     {
       "source": "episode:EP155",
       "target": "theme:small-state-balancing",
+      "kind": "episode-theme"
+    },
+    {
+      "source": "episode:EP156",
+      "target": "concept:wealth-repatriation-squeeze",
+      "kind": "episode-concept"
+    },
+    {
+      "source": "episode:EP156",
+      "target": "concept:capital-wall",
+      "kind": "episode-concept"
+    },
+    {
+      "source": "episode:EP156",
+      "target": "concept:jurisdiction-arbitrage",
+      "kind": "episode-concept"
+    },
+    {
+      "source": "episode:EP156",
+      "target": "concept:refuge-premium",
+      "kind": "episode-concept"
+    },
+    {
+      "source": "episode:EP156",
+      "target": "concept:middle-class-hard-landing",
+      "kind": "episode-concept"
+    },
+    {
+      "source": "episode:EP156",
+      "target": "concept:pan-institutional-middle-class",
+      "kind": "episode-concept"
+    },
+    {
+      "source": "episode:EP156",
+      "target": "model:middle-class-replacement-cycle",
+      "kind": "episode-model"
+    },
+    {
+      "source": "episode:EP156",
+      "target": "model:asset-preservation-architecture",
+      "kind": "episode-model"
+    },
+    {
+      "source": "episode:EP156",
+      "target": "model:stability-over-growth-trap",
+      "kind": "episode-model"
+    },
+    {
+      "source": "episode:EP156",
+      "target": "theme:capital-exit-and-cross-border-harvest",
+      "kind": "episode-theme"
+    },
+    {
+      "source": "episode:EP156",
+      "target": "theme:singapore-and-small-state-survival",
+      "kind": "episode-theme"
+    },
+    {
+      "source": "episode:EP156",
+      "target": "theme:institutional-middle-class-and-social-mobility",
+      "kind": "episode-theme"
+    },
+    {
+      "source": "episode:EP156",
+      "target": "theme:middle-class-descent-and-stratification",
       "kind": "episode-theme"
     },
     {
