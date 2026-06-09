@@ -2,13 +2,13 @@
   "meta": {
     "title": "颖响力知识图谱",
     "subtitle": "节目、概念、模型、人物、主题之间的可视化连接网络",
-    "nodeCount": 526,
-    "linkCount": 1168,
+    "nodeCount": 530,
+    "linkCount": 1183,
     "typeCounts": {
-      "model": 68,
-      "episode": 156,
+      "model": 69,
+      "episode": 157,
       "person": 65,
-      "concept": 146,
+      "concept": 148,
       "theme": 91
     }
   },
@@ -98,6 +98,17 @@
       "type": "episode",
       "route": "episodes/EP133",
       "summary": "本期借阿联酋宣布永久退出欧佩克的消息，讨论它到底是在能源体系里闹内讧，还是在中东旧格局崩塌时主动重写国家路径。节目核心判断是：阿联酋并不满足于继续做沙特主导的阿拉伯兄弟体系成员，也不想只是美国的棋子，而是希望复制新加坡模式，在安全上绑定美国，在政治和经济上保持中立开放，把港口、金融、航运、能源和人才承接能力组合成中东的避险节点。退出欧佩克的意义因此不只是释放石油产能，更是摆脱沙特配额约束、把能源窗口期换成现金与未来产业基石，并在霍尔木兹危机和伊朗受压的时间窗口里争取新的区域位置。",
+      "status": "curated",
+      "degree": 15
+    },
+    {
+      "id": "episode:EP158",
+      "key": "EP158",
+      "label": "EP158",
+      "fullLabel": "EP158 · 裁掉1000人涨100亿市值！这才是AI最可怕的地方。戳破科技向善的谎言！",
+      "type": "episode",
+      "route": "episodes/EP158",
+      "summary": "节目从一段流传的演讲切入：某蔬菜配送公司前COO宣讲，靠AI把销售额从几亿做到十几亿、员工从3800人砍到2000多，还称这是“科技向善”。主持人戳破谎言——多数企业的AI转型与技术革命无关，只是通缩下用更少人干同样活的管理优化，而资本市场恰恰奖励消灭就业。核心判断是：这场以AI为名的大裁员正在系统性消灭私营中产，外卖网约车这张安全网也已被挤爆，社会滑向只剩顶端与底层、多数人沦为“无用阶级”的困局。落点不是贩卖焦虑，而是劝人降杠杆、存生存费、别全职跑外卖，并点明问题不是科技太快，而是分配太落后。",
       "status": "curated",
       "degree": 15
     },
@@ -465,6 +476,17 @@
       "degree": 11
     },
     {
+      "id": "concept:cost-shifting",
+      "key": "cost-shifting",
+      "label": "成本外移",
+      "fullLabel": "成本外移",
+      "type": "concept",
+      "route": "concepts/cost-shifting",
+      "summary": "组织内部的高额非生产性成本，最终会通过价格、规则或风险转嫁给外部承担者。",
+      "status": null,
+      "degree": 10
+    },
+    {
       "id": "theme:great-power-competition-and-strategic-time",
       "key": "great-power-competition-and-strategic-time",
       "label": "大国竞争与战略时间",
@@ -549,17 +571,6 @@
       "type": "model",
       "route": "models/subsidy-capital-flywheel",
       "summary": "补贴资本飞轮解释地方财政、产业基金、企业估值和再融资如何互相放大。",
-      "status": null,
-      "degree": 9
-    },
-    {
-      "id": "concept:cost-shifting",
-      "key": "cost-shifting",
-      "label": "成本外移",
-      "fullLabel": "成本外移",
-      "type": "concept",
-      "route": "concepts/cost-shifting",
-      "summary": "组织内部的高额非生产性成本，最终会通过价格、规则或风险转嫁给外部承担者。",
       "status": null,
       "degree": 9
     },
@@ -791,6 +802,17 @@
       "type": "theme",
       "route": "themes/ev-safety-and-consumer-testing",
       "summary": "讨论新能源车与相关电池系统如何把安全验证不足的代价，转移到真实用户和真实事故里。",
+      "status": null,
+      "degree": 8
+    },
+    {
+      "id": "model:narrative-instrumentalization",
+      "key": "narrative-instrumentalization",
+      "label": "叙事工具化模型",
+      "fullLabel": "叙事工具化模型",
+      "type": "model",
+      "route": "models/narrative-instrumentalization",
+      "summary": "叙事工具化模型解释叙事的主要功能从解释现实转向组织情绪和划分阵营。",
       "status": null,
       "degree": 8
     },
@@ -1169,17 +1191,6 @@
       "degree": 7
     },
     {
-      "id": "model:narrative-instrumentalization",
-      "key": "narrative-instrumentalization",
-      "label": "叙事工具化模型",
-      "fullLabel": "叙事工具化模型",
-      "type": "model",
-      "route": "models/narrative-instrumentalization",
-      "summary": "叙事工具化模型解释叙事的主要功能从解释现实转向组织情绪和划分阵营。",
-      "status": null,
-      "degree": 7
-    },
-    {
       "id": "theme:state-business-entanglement",
       "key": "state-business-entanglement",
       "label": "政企嵌入与企业存续",
@@ -1187,6 +1198,17 @@
       "type": "theme",
       "route": "themes/state-business-entanglement",
       "summary": "讨论企业如何依赖地方政府、国资平台或关系结构续命，以及这种绑定如何反过来改写企业目标。",
+      "status": null,
+      "degree": 7
+    },
+    {
+      "id": "theme:middle-class-descent-and-stratification",
+      "key": "middle-class-descent-and-stratification",
+      "label": "中产下坠与分层社会",
+      "fullLabel": "中产下坠与分层社会",
+      "type": "theme",
+      "route": "themes/middle-class-descent-and-stratification",
+      "summary": "当中间层缺乏缓冲带时，经济下行会迅速转成身份下坠、关系断裂和社会分层加固。",
       "status": null,
       "degree": 7
     },
@@ -1598,17 +1620,6 @@
       "degree": 6
     },
     {
-      "id": "theme:middle-class-descent-and-stratification",
-      "key": "middle-class-descent-and-stratification",
-      "label": "中产下坠与分层社会",
-      "fullLabel": "中产下坠与分层社会",
-      "type": "theme",
-      "route": "themes/middle-class-descent-and-stratification",
-      "summary": "当中间层缺乏缓冲带时，经济下行会迅速转成身份下坠、关系断裂和社会分层加固。",
-      "status": null,
-      "degree": 6
-    },
-    {
       "id": "concept:balance-sheet-support",
       "key": "balance-sheet-support",
       "label": "资产负债表托底",
@@ -1906,6 +1917,17 @@
       "degree": 5
     },
     {
+      "id": "model:technology-wave-cycle",
+      "key": "technology-wave-cycle",
+      "label": "技术浪潮周期",
+      "fullLabel": "技术浪潮周期",
+      "type": "model",
+      "route": "models/technology-wave-cycle",
+      "summary": "技术浪潮周期强调方向正确还不够，资本、基础设施、真实应用和时间窗口必须对齐。",
+      "status": null,
+      "degree": 5
+    },
+    {
       "id": "concept:delayed-price-discovery",
       "key": "delayed-price-discovery",
       "label": "价格发现延迟",
@@ -1950,6 +1972,17 @@
       "degree": 5
     },
     {
+      "id": "theme:platform-labor-and-lived-reality",
+      "key": "platform-labor-and-lived-reality",
+      "label": "平台劳动与真实生存",
+      "fullLabel": "平台劳动与真实生存",
+      "type": "theme",
+      "route": "themes/platform-labor-and-lived-reality",
+      "summary": "关注平台型劳动如何被宣传美化，以及真实生存条件怎样被遮蔽。",
+      "status": null,
+      "degree": 5
+    },
+    {
       "id": "theme:platform-governance-and-folk-discourse",
       "key": "platform-governance-and-folk-discourse",
       "label": "平台治理与民间话语",
@@ -1972,6 +2005,17 @@
       "degree": 5
     },
     {
+      "id": "theme:institutional-middle-class-and-social-mobility",
+      "key": "institutional-middle-class-and-social-mobility",
+      "label": "体制化中产与社会流动",
+      "fullLabel": "体制化中产与社会流动",
+      "type": "theme",
+      "route": "themes/institutional-middle-class-and-social-mobility",
+      "summary": "讨论稳定岗位、公共财政和身份溢价如何重塑中产结构，并收窄普通人的上升路径。",
+      "status": null,
+      "degree": 5
+    },
+    {
       "id": "theme:narrative-speculation-and-retail-traps",
       "key": "narrative-speculation-and-retail-traps",
       "label": "投资叙事与散户陷阱",
@@ -1990,6 +2034,17 @@
       "type": "concept",
       "route": "concepts/future-path-crowding",
       "summary": "所有人都挤向同一条被认为最安全的上升路径时，这条路本身就会因为拥挤而失去原来的安全性。",
+      "status": null,
+      "degree": 5
+    },
+    {
+      "id": "model:stability-over-growth-trap",
+      "key": "stability-over-growth-trap",
+      "label": "稳定替代增长陷阱",
+      "fullLabel": "稳定替代增长陷阱",
+      "type": "model",
+      "route": "models/stability-over-growth-trap",
+      "summary": "当系统把稳定当作增长的替代品，短期秩序会被保住，长期造血、流动和创新却会被压低。",
       "status": null,
       "degree": 5
     },
@@ -2324,6 +2379,17 @@
       "degree": 4
     },
     {
+      "id": "concept:pan-institutional-middle-class",
+      "key": "pan-institutional-middle-class",
+      "label": "泛体制中产",
+      "fullLabel": "泛体制中产",
+      "type": "concept",
+      "route": "concepts/pan-institutional-middle-class",
+      "summary": "泛体制中产指依靠公务员、事业编、国企及体制相关岗位维持稳定收入、福利和社会体面的中间层。",
+      "status": null,
+      "degree": 4
+    },
+    {
       "id": "concept:premium-narrative",
       "key": "premium-narrative",
       "label": "高价叙事",
@@ -2390,17 +2456,6 @@
       "degree": 4
     },
     {
-      "id": "model:technology-wave-cycle",
-      "key": "technology-wave-cycle",
-      "label": "技术浪潮周期",
-      "fullLabel": "技术浪潮周期",
-      "type": "model",
-      "route": "models/technology-wave-cycle",
-      "summary": "技术浪潮周期强调方向正确还不够，资本、基础设施、真实应用和时间窗口必须对齐。",
-      "status": null,
-      "degree": 4
-    },
-    {
       "id": "person:jia-guolong",
       "key": "jia-guolong",
       "label": "贾国龙",
@@ -2434,17 +2489,6 @@
       "degree": 4
     },
     {
-      "id": "theme:platform-labor-and-lived-reality",
-      "key": "platform-labor-and-lived-reality",
-      "label": "平台劳动与真实生存",
-      "fullLabel": "平台劳动与真实生存",
-      "type": "theme",
-      "route": "themes/platform-labor-and-lived-reality",
-      "summary": "关注平台型劳动如何被宣传美化，以及真实生存条件怎样被遮蔽。",
-      "status": null,
-      "degree": 4
-    },
-    {
       "id": "model:platform-gatekeeping",
       "key": "platform-gatekeeping",
       "label": "平台守门结构",
@@ -2467,6 +2511,17 @@
       "degree": 4
     },
     {
+      "id": "model:human-machine-differentiation",
+      "key": "human-machine-differentiation",
+      "label": "人机差异化模型",
+      "fullLabel": "人机差异化模型",
+      "type": "model",
+      "route": "models/human-machine-differentiation",
+      "summary": "当机器越来越擅长标准化任务时，人类价值必须转向不可轻易复制的判断与创造。",
+      "status": null,
+      "degree": 4
+    },
+    {
       "id": "concept:credential-rent",
       "key": "credential-rent",
       "label": "身份租值",
@@ -2485,28 +2540,6 @@
       "type": "concept",
       "route": "concepts/sample-production-gap",
       "summary": "送检、展示和量产版本一旦分裂，合格证据就不再能代表消费者真正拿到的产品。",
-      "status": null,
-      "degree": 4
-    },
-    {
-      "id": "theme:institutional-middle-class-and-social-mobility",
-      "key": "institutional-middle-class-and-social-mobility",
-      "label": "体制化中产与社会流动",
-      "fullLabel": "体制化中产与社会流动",
-      "type": "theme",
-      "route": "themes/institutional-middle-class-and-social-mobility",
-      "summary": "讨论稳定岗位、公共财政和身份溢价如何重塑中产结构，并收窄普通人的上升路径。",
-      "status": null,
-      "degree": 4
-    },
-    {
-      "id": "model:stability-over-growth-trap",
-      "key": "stability-over-growth-trap",
-      "label": "稳定替代增长陷阱",
-      "fullLabel": "稳定替代增长陷阱",
-      "type": "model",
-      "route": "models/stability-over-growth-trap",
-      "summary": "当系统把稳定当作增长的替代品，短期秩序会被保住，长期造血、流动和创新却会被压低。",
       "status": null,
       "degree": 4
     },
@@ -2551,6 +2584,17 @@
       "type": "model",
       "route": "models/sanction-parallel-market",
       "summary": "制裁如果没有消灭需求，就会把交易推向更高风险、更高利润、更难监管的平行市场。",
+      "status": null,
+      "degree": 4
+    },
+    {
+      "id": "concept:middle-class-hard-landing",
+      "key": "middle-class-hard-landing",
+      "label": "中产硬着陆",
+      "fullLabel": "中产硬着陆",
+      "type": "concept",
+      "route": "concepts/middle-class-hard-landing",
+      "summary": "高负债中产一旦失速，下坠往往同时摧毁资产、体面、关系和自我认同。",
       "status": null,
       "degree": 4
     },
@@ -2753,6 +2797,17 @@
       "degree": 3
     },
     {
+      "id": "concept:standard-labor-replacement",
+      "key": "standard-labor-replacement",
+      "label": "标准劳动力替代",
+      "fullLabel": "标准劳动力替代",
+      "type": "concept",
+      "route": "concepts/standard-labor-replacement",
+      "summary": "自动化最先替代可重复、可规训、可量化的标准岗位，而这些岗位往往属于普通人。",
+      "status": null,
+      "degree": 3
+    },
+    {
       "id": "concept:performative-innovation",
       "key": "performative-innovation",
       "label": "表演式创新",
@@ -2837,17 +2892,6 @@
       "type": "concept",
       "route": "concepts/jurisdiction-arbitrage",
       "summary": "企业通过选择更有利法域，获取融资、估值、合规和退出上的制度差价。",
-      "status": null,
-      "degree": 3
-    },
-    {
-      "id": "concept:pan-institutional-middle-class",
-      "key": "pan-institutional-middle-class",
-      "label": "泛体制中产",
-      "fullLabel": "泛体制中产",
-      "type": "concept",
-      "route": "concepts/pan-institutional-middle-class",
-      "summary": "泛体制中产指依靠公务员、事业编、国企及体制相关岗位维持稳定收入、福利和社会体面的中间层。",
       "status": null,
       "degree": 3
     },
@@ -3094,13 +3138,13 @@
       "degree": 3
     },
     {
-      "id": "model:human-machine-differentiation",
-      "key": "human-machine-differentiation",
-      "label": "人机差异化模型",
-      "fullLabel": "人机差异化模型",
-      "type": "model",
-      "route": "models/human-machine-differentiation",
-      "summary": "当机器越来越擅长标准化任务时，人类价值必须转向不可轻易复制的判断与创造。",
+      "id": "theme:human-value-and-state-credit",
+      "key": "human-value-and-state-credit",
+      "label": "人的价值与国家信用",
+      "fullLabel": "人的价值与国家信用",
+      "type": "theme",
+      "route": "themes/human-value-and-state-credit",
+      "summary": "讨论国家究竟把个体视为成本、工具，还是视为必须兑现承诺的对象。",
       "status": null,
       "degree": 3
     },
@@ -3277,17 +3321,6 @@
       "type": "theme",
       "route": "themes/war-system-and-succession-risk",
       "summary": "讨论战争国家在长期高压运转下，如何同时面临兵员枯竭、内部老化与接班断层。",
-      "status": null,
-      "degree": 3
-    },
-    {
-      "id": "concept:middle-class-hard-landing",
-      "key": "middle-class-hard-landing",
-      "label": "中产硬着陆",
-      "fullLabel": "中产硬着陆",
-      "type": "concept",
-      "route": "concepts/middle-class-hard-landing",
-      "summary": "高负债中产一旦失速，下坠往往同时摧毁资产、体面、关系和自我认同。",
       "status": null,
       "degree": 3
     },
@@ -3486,17 +3519,6 @@
       "type": "concept",
       "route": "concepts/standard-answer-cage",
       "summary": "复杂问题被压缩成唯一正确答案后，人会失去提问、迁移和面对不确定性的能力。",
-      "status": null,
-      "degree": 2
-    },
-    {
-      "id": "concept:standard-labor-replacement",
-      "key": "standard-labor-replacement",
-      "label": "标准劳动力替代",
-      "fullLabel": "标准劳动力替代",
-      "type": "concept",
-      "route": "concepts/standard-labor-replacement",
-      "summary": "自动化最先替代可重复、可规训、可量化的标准岗位，而这些岗位往往属于普通人。",
       "status": null,
       "degree": 2
     },
@@ -3904,17 +3926,6 @@
       "type": "concept",
       "route": "concepts/human-centered-contract",
       "summary": "国家信用不仅来自实力，也来自关键时刻愿不愿为具体个体生命履约。",
-      "status": null,
-      "degree": 2
-    },
-    {
-      "id": "theme:human-value-and-state-credit",
-      "key": "human-value-and-state-credit",
-      "label": "人的价值与国家信用",
-      "fullLabel": "人的价值与国家信用",
-      "type": "theme",
-      "route": "themes/human-value-and-state-credit",
-      "summary": "讨论国家究竟把个体视为成本、工具，还是视为必须兑现承诺的对象。",
       "status": null,
       "degree": 2
     },
@@ -4355,6 +4366,17 @@
       "type": "theme",
       "route": "themes/wealth-inheritance-and-relational-distortion",
       "summary": "关注财富传递过程中，关系、人格和价值观如何一起失真。",
+      "status": null,
+      "degree": 1
+    },
+    {
+      "id": "model:job-elimination-spiral",
+      "key": "job-elimination-spiral",
+      "label": "裁员死亡螺旋",
+      "fullLabel": "裁员死亡螺旋",
+      "type": "model",
+      "route": "models/job-elimination-spiral",
+      "summary": "裁员死亡螺旋解释当资本市场奖励消灭就业时，企业会陷入比谁裁得更快的竞赛，裁员压低消费、消费萎缩又触发下一轮裁员，形成越裁越穷的自我强化循环。",
       "status": null,
       "degree": 1
     },
@@ -4817,6 +4839,17 @@
       "type": "concept",
       "route": "concepts/invoice-economy",
       "summary": "空壳公司、虚开发票和税收返还能堆出漂亮数字，却未必创造真实商品、服务和财富。",
+      "status": null,
+      "degree": 1
+    },
+    {
+      "id": "concept:tech-for-good-veneer",
+      "key": "tech-for-good-veneer",
+      "label": "科技向善遮羞布",
+      "fullLabel": "科技向善遮羞布",
+      "type": "concept",
+      "route": "concepts/tech-for-good-veneer",
+      "summary": "科技向善遮羞布指企业把以降本为目的的裁员和自动化，包装成“科技向善”“为下一代”的道德叙事，用价值话语掩盖财富向少数人集中的事实。",
       "status": null,
       "degree": 1
     },
@@ -5422,6 +5455,17 @@
       "type": "concept",
       "route": "concepts/cultural-reterritorialization",
       "summary": "全球舞台不再只输出统一中心文化，地方身份和圈层表达正在重新抢回位置。",
+      "status": null,
+      "degree": 1
+    },
+    {
+      "id": "concept:useless-class",
+      "key": "useless-class",
+      "label": "无用阶级",
+      "fullLabel": "无用阶级",
+      "type": "concept",
+      "route": "concepts/useless-class",
+      "summary": "无用阶级指在AI与自动化大规模替代劳动后，既无法进入高门槛顶端工作、又被挤出中低端岗位，从生产者沦为系统中“多余的人”的庞大群体。",
       "status": null,
       "degree": 1
     },
@@ -11449,6 +11493,81 @@
     {
       "source": "episode:EP157",
       "target": "theme:middle-class-descent-and-stratification",
+      "kind": "episode-theme"
+    },
+    {
+      "source": "episode:EP158",
+      "target": "concept:tech-for-good-veneer",
+      "kind": "episode-concept"
+    },
+    {
+      "source": "episode:EP158",
+      "target": "concept:useless-class",
+      "kind": "episode-concept"
+    },
+    {
+      "source": "episode:EP158",
+      "target": "concept:cost-shifting",
+      "kind": "episode-concept"
+    },
+    {
+      "source": "episode:EP158",
+      "target": "concept:standard-labor-replacement",
+      "kind": "episode-concept"
+    },
+    {
+      "source": "episode:EP158",
+      "target": "concept:middle-class-hard-landing",
+      "kind": "episode-concept"
+    },
+    {
+      "source": "episode:EP158",
+      "target": "concept:pan-institutional-middle-class",
+      "kind": "episode-concept"
+    },
+    {
+      "source": "episode:EP158",
+      "target": "model:job-elimination-spiral",
+      "kind": "episode-model"
+    },
+    {
+      "source": "episode:EP158",
+      "target": "model:narrative-instrumentalization",
+      "kind": "episode-model"
+    },
+    {
+      "source": "episode:EP158",
+      "target": "model:technology-wave-cycle",
+      "kind": "episode-model"
+    },
+    {
+      "source": "episode:EP158",
+      "target": "model:human-machine-differentiation",
+      "kind": "episode-model"
+    },
+    {
+      "source": "episode:EP158",
+      "target": "model:stability-over-growth-trap",
+      "kind": "episode-model"
+    },
+    {
+      "source": "episode:EP158",
+      "target": "theme:middle-class-descent-and-stratification",
+      "kind": "episode-theme"
+    },
+    {
+      "source": "episode:EP158",
+      "target": "theme:institutional-middle-class-and-social-mobility",
+      "kind": "episode-theme"
+    },
+    {
+      "source": "episode:EP158",
+      "target": "theme:platform-labor-and-lived-reality",
+      "kind": "episode-theme"
+    },
+    {
+      "source": "episode:EP158",
+      "target": "theme:human-value-and-state-credit",
       "kind": "episode-theme"
     },
     {

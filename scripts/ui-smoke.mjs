@@ -328,10 +328,10 @@ async function runKnowledgeDetailChecks(client) {
     'Inline knowledge linking should avoid low-confidence two-character generic keyword matches'
   );
 
-  await navigate(client, `${baseUrl}/#/themes/platform-labor-and-lived-reality`, '.detail-header');
+  await navigate(client, `${baseUrl}/#/themes/pandemic-wealth-and-public-costs`, '.detail-header');
   await waitForCondition(
     client,
-    `location.hash === '#/themes/platform-labor-and-lived-reality' && document.querySelector('.detail-header .detail-title')?.textContent?.trim() === '平台劳动与真实生存'`,
+    `location.hash === '#/themes/pandemic-wealth-and-public-costs' && document.querySelector('.detail-header .detail-title')?.textContent?.trim() === '疫情财富与公共代价'`,
     { timeoutMs: 4000, label: 'theme detail route settled' }
   );
   assert(
