@@ -585,5 +585,26 @@
       "platform": "youtube",
       "url": "https://www.youtube.com/watch?v=sOlaoAc6yPI"
     }
+  },
+  "EP159": {
+    "bilibili": {
+      "platform": "bilibili",
+      "url": "https://www.bilibili.com/video/BV19rEZ6NEhE/"
+    },
+    "youtube": {
+      "platform": "youtube",
+      "url": "https://www.youtube.com/watch?v=9drBxvPhnGo"
+    }
+  },
+  "EP160": {
+    "bilibili": {
+      "platform": "bilibili",
+      "url": "https://www.bilibili.com/video/BV1TBEB6iEg9/",
+      "access": "member"
+    },
+    "youtube": {
+      "platform": "youtube",
+      "url": "https://www.youtube.com/watch?v=LMVlEgip8GM"
+    }
   }
 }

@@ -1,0 +1,35 @@
+{
+  "id": "chen-zhensheng",
+  "name": "陈振声",
+  "kind": "person",
+  "asOf": "2026-06-12",
+  "sources": [
+    {
+      "title": "Speech by Minister for Defence Mr Chan Chun Sing at the IISS Shangri-La Dialogue 2026 - Ministry of Defence Singapore",
+      "url": "https://www.mindef.gov.sg/news-and-events/latest-releases/20jan26-speech/",
+      "note": "核对身份与现任职务：陈振声（Chan Chun Sing）为新加坡国防部长（Minister for Defence），并以该身份出席 2026 年香格里拉对话会。"
+    },
+    {
+      "title": "Not pro or anti US or China, but pro Asean: Chan Chun Sing draws applause at 2026 Shangri-La Dialogue - Mothership.SG",
+      "url": "https://mothership.sg/2026/05/pro-asean-chan-chun-sing-sld/",
+      "note": "核对本届发言立场：陈振声在 2026 年香会（5 月 29-31 日）公开表态新加坡不亲美也不亲华，而是亲东盟，并主张维护航行自由与国际规则。"
+    }
+  ],
+  "summary": "陈振声是新加坡现任国防部长，在颖响力里是 2026 年香格里拉对话会上那句“内病外治”的发言者，节目借他推断小国如何不点名敲打区域强权。",
+  "description": "陈振声（Chan Chun Sing）是新加坡现任国防部长，2026 年以该身份出席并在第 23 届香格里拉对话会（2026 年 5 月 29-31 日，新加坡）代表新加坡发言。公开报道里，他在会上的定调是新加坡“不亲美也不亲华，而是亲东盟”，强调维护航行自由、坚持国际原则与规则，是典型的小国务实中立姿态。在颖响力语境里，节目抓住他那句“一个国家绝不该用对外政策转移国内治理矛盾、想赢得国际尊重第一步是先取信于民”，用排除法推断这话不点名敲打的是东大——需要说明的是，这层“指向东大”的解读是节目自己的推断，不是陈振声本人的点名定性。",
+  "episodes": [
+    {
+      "id": "EP160",
+      "note": "本期以陈振声在香会的“内病外治”发言为由头，用排除法推断他不点名敲打的是东大，并据此推演新加坡转向模糊制衡、东南亚成为下一个地缘震中。"
+    }
+  ],
+  "aliases": [
+    "Chan Chun Sing"
+  ],
+  "relatedKeywords": [
+    "新加坡",
+    "香格里拉对话会",
+    "内病外治",
+    "模糊制衡"
+  ]
+}

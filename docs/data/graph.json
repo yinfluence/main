@@ -2,13 +2,13 @@
   "meta": {
     "title": "颖响力知识图谱",
     "subtitle": "节目、概念、模型、人物、主题之间的可视化连接网络",
-    "nodeCount": 534,
-    "linkCount": 1196,
+    "nodeCount": 537,
+    "linkCount": 1219,
     "typeCounts": {
       "model": 70,
-      "episode": 158,
+      "episode": 160,
+      "concept": 151,
       "person": 65,
-      "concept": 150,
       "theme": 91
     }
   },
@@ -47,6 +47,17 @@
       "degree": 17
     },
     {
+      "id": "concept:hidden-debt",
+      "key": "hidden-debt",
+      "label": "隐形债务",
+      "fullLabel": "隐形债务",
+      "type": "concept",
+      "route": "concepts/hidden-debt",
+      "summary": "表外、体外和合作链条里的债务不在显性报表中充分呈现，却会在危机时重新压回主体。",
+      "status": null,
+      "degree": 16
+    },
+    {
       "id": "episode:EP001",
       "key": "EP001",
       "label": "EP001",
@@ -76,17 +87,6 @@
       "type": "person",
       "route": "people/donald-trump",
       "summary": "特朗普是美国共和党政治人物、第45任与第47任美国总统，节目借他观察美国战略收缩、成本转嫁和规则重定价。",
-      "status": null,
-      "degree": 15
-    },
-    {
-      "id": "concept:hidden-debt",
-      "key": "hidden-debt",
-      "label": "隐形债务",
-      "fullLabel": "隐形债务",
-      "type": "concept",
-      "route": "concepts/hidden-debt",
-      "summary": "表外、体外和合作链条里的债务不在显性报表中充分呈现，却会在危机时重新压回主体。",
       "status": null,
       "degree": 15
     },
@@ -168,6 +168,17 @@
       "degree": 14
     },
     {
+      "id": "episode:EP159",
+      "key": "EP159",
+      "label": "EP159",
+      "fullLabel": "EP159 · 追觅是恒大？是贾跃亭？35分钟深度揭秘，追觅万亿不是梦！硬科技创业的阴暗面！",
+      "type": "episode",
+      "route": "episodes/EP159",
+      "summary": "节目接着 EP142 再聊追觅：五月预测的问题六月果然爆发。主持人先拆掉两个类比——追觅不是恒大，恒大是主业造假融资填窟窿；也不是乐视，贾跃亭是拿主业带副业做生态。追觅主业扫地机器人没动，真正复刻的是清华控股：主业单列，另建天空工场两百个事业部，自己出两成、政府引导基金出八成，按下一轮基金的标准反向设计公司，做成一级级 PPT，最后买壳上市把政府基金装回，地方政府、创始人和俞浩一起解套。落点不在俞浩个人，而在这套地方自融会不会被当典型叫停，以及没底子的年轻创业者以后还拿不拿得到第一笔钱。",
+      "status": "curated",
+      "degree": 14
+    },
+    {
       "id": "model:path-dependence",
       "key": "path-dependence",
       "label": "路径依赖",
@@ -175,6 +186,17 @@
       "type": "model",
       "route": "models/path-dependence",
       "summary": "路径依赖解释早期技术和叙事选择一旦成功，就会反过来限制后续转向更优路径。",
+      "status": null,
+      "degree": 13
+    },
+    {
+      "id": "theme:singapore-and-small-state-survival",
+      "key": "singapore-and-small-state-survival",
+      "label": "新加坡与小国生存术",
+      "fullLabel": "新加坡与小国生存术",
+      "type": "theme",
+      "route": "themes/singapore-and-small-state-survival",
+      "summary": "讨论新加坡如何把规则、海峡、人才和谨慎外交组合成一套小国长期生存方法。",
       "status": null,
       "degree": 13
     },
@@ -278,17 +300,6 @@
       "degree": 13
     },
     {
-      "id": "theme:singapore-and-small-state-survival",
-      "key": "singapore-and-small-state-survival",
-      "label": "新加坡与小国生存术",
-      "fullLabel": "新加坡与小国生存术",
-      "type": "theme",
-      "route": "themes/singapore-and-small-state-survival",
-      "summary": "讨论新加坡如何把规则、海峡、人才和谨慎外交组合成一套小国长期生存方法。",
-      "status": null,
-      "degree": 12
-    },
-    {
       "id": "concept:chokepoint-leverage",
       "key": "chokepoint-leverage",
       "label": "咽喉杠杆",
@@ -355,6 +366,28 @@
       "degree": 12
     },
     {
+      "id": "concept:cost-shifting",
+      "key": "cost-shifting",
+      "label": "成本外移",
+      "fullLabel": "成本外移",
+      "type": "concept",
+      "route": "concepts/cost-shifting",
+      "summary": "组织内部的高额非生产性成本，最终会通过价格、规则或风险转嫁给外部承担者。",
+      "status": null,
+      "degree": 11
+    },
+    {
+      "id": "theme:great-power-competition-and-strategic-time",
+      "key": "great-power-competition-and-strategic-time",
+      "label": "大国竞争与战略时间",
+      "fullLabel": "大国竞争与战略时间",
+      "type": "theme",
+      "route": "themes/great-power-competition-and-strategic-time",
+      "summary": "讨论战争、联盟和国家战略如何被时间窗口、社会成本和长期定力重新塑形。",
+      "status": null,
+      "degree": 11
+    },
+    {
       "id": "theme:local-fiscal-stress-and-hidden-debt",
       "key": "local-fiscal-stress-and-hidden-debt",
       "label": "地方财政与隐性债务",
@@ -362,6 +395,17 @@
       "type": "theme",
       "route": "themes/local-fiscal-stress-and-hidden-debt",
       "summary": "地方财政吃紧后，系统会通过更复杂的融资、资产包装和风险转移来维持运转。",
+      "status": null,
+      "degree": 11
+    },
+    {
+      "id": "theme:southeast-asia-fragmentation-and-bloc-competition",
+      "key": "southeast-asia-fragmentation-and-bloc-competition",
+      "label": "东南亚裂变与集团竞争",
+      "fullLabel": "东南亚裂变与集团竞争",
+      "type": "theme",
+      "route": "themes/southeast-asia-fragmentation-and-bloc-competition",
+      "summary": "讨论东南亚如何从缓冲地带变成各方拉扯、重新站队和内部裂变并行发生的高风险区域。",
       "status": null,
       "degree": 11
     },
@@ -406,6 +450,17 @@
       "type": "theme",
       "route": "themes/ev-financialization-and-false-sales",
       "summary": "聚焦新能源车行业如何依靠补贴、融资、渠道黑箱和虚假销售维持增长叙事。",
+      "status": null,
+      "degree": 11
+    },
+    {
+      "id": "model:narrative-leverage",
+      "key": "narrative-leverage",
+      "label": "叙事杠杆",
+      "fullLabel": "叙事杠杆",
+      "type": "model",
+      "route": "models/narrative-leverage",
+      "summary": "通过一个足够大的故事，把原本有限的资源、信用和注意力撬成更大的资本、销量或支持度。",
       "status": null,
       "degree": 11
     },
@@ -487,24 +542,13 @@
       "degree": 11
     },
     {
-      "id": "concept:cost-shifting",
-      "key": "cost-shifting",
-      "label": "成本外移",
-      "fullLabel": "成本外移",
-      "type": "concept",
-      "route": "concepts/cost-shifting",
-      "summary": "组织内部的高额非生产性成本，最终会通过价格、规则或风险转嫁给外部承担者。",
-      "status": null,
-      "degree": 10
-    },
-    {
-      "id": "theme:great-power-competition-and-strategic-time",
-      "key": "great-power-competition-and-strategic-time",
-      "label": "大国竞争与战略时间",
-      "fullLabel": "大国竞争与战略时间",
-      "type": "theme",
-      "route": "themes/great-power-competition-and-strategic-time",
-      "summary": "讨论战争、联盟和国家战略如何被时间窗口、社会成本和长期定力重新塑形。",
+      "id": "model:subsidy-capital-flywheel",
+      "key": "subsidy-capital-flywheel",
+      "label": "补贴资本飞轮",
+      "fullLabel": "补贴资本飞轮",
+      "type": "model",
+      "route": "models/subsidy-capital-flywheel",
+      "summary": "补贴资本飞轮解释地方财政、产业基金、企业估值和再融资如何互相放大。",
       "status": null,
       "degree": 10
     },
@@ -520,24 +564,13 @@
       "degree": 10
     },
     {
-      "id": "theme:southeast-asia-fragmentation-and-bloc-competition",
-      "key": "southeast-asia-fragmentation-and-bloc-competition",
-      "label": "东南亚裂变与集团竞争",
-      "fullLabel": "东南亚裂变与集团竞争",
-      "type": "theme",
-      "route": "themes/southeast-asia-fragmentation-and-bloc-competition",
-      "summary": "讨论东南亚如何从缓冲地带变成各方拉扯、重新站队和内部裂变并行发生的高风险区域。",
-      "status": null,
-      "degree": 10
-    },
-    {
-      "id": "model:narrative-leverage",
-      "key": "narrative-leverage",
-      "label": "叙事杠杆",
-      "fullLabel": "叙事杠杆",
+      "id": "model:rule-anchored-small-state-model",
+      "key": "rule-anchored-small-state-model",
+      "label": "规则锚定型小国生存",
+      "fullLabel": "规则锚定型小国生存",
       "type": "model",
-      "route": "models/narrative-leverage",
-      "summary": "通过一个足够大的故事，把原本有限的资源、信用和注意力撬成更大的资本、销量或支持度。",
+      "route": "models/rule-anchored-small-state-model",
+      "summary": "小国要长期活下来，不能只靠地理好运，更要靠规则信誉、理性政府和可预期的制度自我约束。",
       "status": null,
       "degree": 10
     },
@@ -573,28 +606,6 @@
       "summary": "本期从五粮液财务业绩大幅调整切入，认为它不是简单的数字变化，而是国企换届切割、经销商利润蓄水池和 A 股惩戒失效共同显影。节目把这件事拆成三层：新任管理层通过一次性压低历史业绩为后续增长铺台阶，白酒经销商体系长期充当可调节利润的内循环水库，而市场和监管又很难形成足够惩罚，最后让普通散户在看似公开的报表里承担信息和规则劣势。",
       "status": "curated",
       "degree": 10
-    },
-    {
-      "id": "model:subsidy-capital-flywheel",
-      "key": "subsidy-capital-flywheel",
-      "label": "补贴资本飞轮",
-      "fullLabel": "补贴资本飞轮",
-      "type": "model",
-      "route": "models/subsidy-capital-flywheel",
-      "summary": "补贴资本飞轮解释地方财政、产业基金、企业估值和再融资如何互相放大。",
-      "status": null,
-      "degree": 9
-    },
-    {
-      "id": "model:rule-anchored-small-state-model",
-      "key": "rule-anchored-small-state-model",
-      "label": "规则锚定型小国生存",
-      "fullLabel": "规则锚定型小国生存",
-      "type": "model",
-      "route": "models/rule-anchored-small-state-model",
-      "summary": "小国要长期活下来，不能只靠地理好运，更要靠规则信誉、理性政府和可预期的制度自我约束。",
-      "status": null,
-      "degree": 9
     },
     {
       "id": "model:value-capture",
@@ -648,6 +659,17 @@
       "type": "model",
       "route": "models/institutional-fit",
       "summary": "制度适配解释能力能否兑现，取决于组织被放在怎样的法律、资本和治理环境中。",
+      "status": null,
+      "degree": 9
+    },
+    {
+      "id": "concept:active-neutrality",
+      "key": "active-neutrality",
+      "label": "主动中立",
+      "fullLabel": "主动中立",
+      "type": "concept",
+      "route": "concepts/active-neutrality",
+      "summary": "真正可持续的中立不是谁都不得罪，而是在坚持规则的前提下主动参与秩序塑造。",
       "status": null,
       "degree": 9
     },
@@ -762,6 +784,17 @@
       "degree": 9
     },
     {
+      "id": "episode:EP142",
+      "key": "EP142",
+      "label": "EP142",
+      "fullLabel": "EP142 · 宇树的高达与追觅的崩老头，他们玩的不是科技，是科技叙事！是爽文短剧！【EP142】｜载人机甲GD01｜王兴兴｜影视道具｜政府展示中心｜IPO估值锚｜引导基金｜俞浩｜天空工场｜",
+      "type": "episode",
+      "route": "episodes/EP142",
+      "summary": "本期把宇树发布 390 万一台的载人机甲 GD01 和追觅俞浩的天空工场基金放在同一条主线上，认为两位年轻创业者做的不是硬科技，而是为政府引导基金、IPO 估值和新媒体话题量身定制的科技叙事——把硬科技包装成爽文短剧。GD01 的真正用户不是工厂或消费者，而是文旅景区、科技馆和政府展示中心；俞浩把展示型科技做成标准化流水线，自己只出 20%、80% 来自各地引导基金，再用 200 个事业部对标 200 条赛道。落点是真正的问题在引导基金当 LP、IPO 当唯一退出的产业生态。",
+      "status": "curated",
+      "degree": 9
+    },
+    {
       "id": "episode:EP147",
       "key": "EP147",
       "label": "EP147",
@@ -828,6 +861,17 @@
       "degree": 8
     },
     {
+      "id": "theme:state-business-entanglement",
+      "key": "state-business-entanglement",
+      "label": "政企嵌入与企业存续",
+      "fullLabel": "政企嵌入与企业存续",
+      "type": "theme",
+      "route": "themes/state-business-entanglement",
+      "summary": "讨论企业如何依赖地方政府、国资平台或关系结构续命，以及这种绑定如何反过来改写企业目标。",
+      "status": null,
+      "degree": 8
+    },
+    {
       "id": "theme:middle-class-descent-and-stratification",
       "key": "middle-class-descent-and-stratification",
       "label": "中产下坠与分层社会",
@@ -835,17 +879,6 @@
       "type": "theme",
       "route": "themes/middle-class-descent-and-stratification",
       "summary": "当中间层缺乏缓冲带时，经济下行会迅速转成身份下坠、关系断裂和社会分层加固。",
-      "status": null,
-      "degree": 8
-    },
-    {
-      "id": "concept:active-neutrality",
-      "key": "active-neutrality",
-      "label": "主动中立",
-      "fullLabel": "主动中立",
-      "type": "concept",
-      "route": "concepts/active-neutrality",
-      "summary": "真正可持续的中立不是谁都不得罪，而是在坚持规则的前提下主动参与秩序塑造。",
       "status": null,
       "degree": 8
     },
@@ -1180,17 +1213,6 @@
       "degree": 8
     },
     {
-      "id": "episode:EP142",
-      "key": "EP142",
-      "label": "EP142",
-      "fullLabel": "EP142 · 宇树的高达与追觅的崩老头，他们玩的不是科技，是科技叙事！是爽文短剧！【EP142】｜载人机甲GD01｜王兴兴｜影视道具｜政府展示中心｜IPO估值锚｜引导基金｜俞浩｜天空工场｜",
-      "type": "episode",
-      "route": "episodes/EP142",
-      "summary": "本期把宇树发布 390 万一台的载人机甲 GD01 和追觅俞浩的天空工场基金放在同一条主线上，认为两位年轻创业者做的不是硬科技，而是为政府引导基金、IPO 估值和新媒体话题量身定制的科技叙事——把硬科技包装成爽文短剧。GD01 的真正用户不是工厂或消费者，而是文旅景区、科技馆和政府展示中心；俞浩把展示型科技做成标准化流水线，自己只出 20%、80% 来自各地引导基金，再用 200 个事业部对标 200 条赛道。落点是真正的问题在引导基金当 LP、IPO 当唯一退出的产业生态。",
-      "status": "curated",
-      "degree": 8
-    },
-    {
       "id": "episode:EP151",
       "key": "EP151",
       "label": "EP151",
@@ -1198,6 +1220,17 @@
       "type": "episode",
       "route": "episodes/EP151",
       "summary": "本期是 EP139 耿同学打假的续篇，主持人以非圈内人但常年和院士、老师团队打交道的视角，判断耿同学个人处境相当危险，对行业却几乎改变不了什么。节目把中国学术体系拆成一个上层元老院加下层阶级体系：院士在顶，杰青、大中小帽子一级一级往下，每级还卡年龄，越级几乎不可能。落点是真正的病灶不是造假，而是这套结党、剥削、逆淘汰的生存闭环——最会经营关系而非最懂学术的人一代代上位，造假只是这套机制里最小的一环。",
+      "status": "curated",
+      "degree": 8
+    },
+    {
+      "id": "episode:EP160",
+      "key": "EP160",
+      "label": "EP160",
+      "fullLabel": "EP160 · 新加坡防长陈振声“内病外治”骂的是谁？美国还是中国？东南亚格局将如何演变？",
+      "type": "episode",
+      "route": "episodes/EP160",
+      "summary": "刚结束的第23届香格里拉对话会上，新加坡防长陈振声抛出一句重话：一个国家绝不该用对外政策转移国内治理矛盾，想赢得国际尊重，第一步永远是先取信于民。多数媒体说这是在骂美国，节目用排除法反驳——美国内外政策本就分离，新加坡治理又是亚洲第一，剩下不点名敲打的只能是东大。随后节目展开战略沙盘推演：若新加坡把东大定位成搅动区域的源头，它会从模糊平衡转向模糊制衡，外交绑美、经济去依赖、内政防渗透，东大则冷处理、分化东盟、固化海域。落点是东南亚正取代东北亚，成为世界地缘的下一个震中。",
       "status": "curated",
       "degree": 8
     },
@@ -1213,13 +1246,13 @@
       "degree": 7
     },
     {
-      "id": "theme:state-business-entanglement",
-      "key": "state-business-entanglement",
-      "label": "政企嵌入与企业存续",
-      "fullLabel": "政企嵌入与企业存续",
-      "type": "theme",
-      "route": "themes/state-business-entanglement",
-      "summary": "讨论企业如何依赖地方政府、国资平台或关系结构续命，以及这种绑定如何反过来改写企业目标。",
+      "id": "model:small-state-balancing-model",
+      "key": "small-state-balancing-model",
+      "label": "小国平衡术",
+      "fullLabel": "小国平衡术",
+      "type": "model",
+      "route": "models/small-state-balancing-model",
+      "summary": "小国平衡术解释小国在大国之间维持生存空间，靠位置、合法性和现实利益而非纯姿态。",
       "status": null,
       "degree": 7
     },
@@ -1532,6 +1565,17 @@
       "degree": 6
     },
     {
+      "id": "theme:youth-dreams-and-safe-paths",
+      "key": "youth-dreams-and-safe-paths",
+      "label": "年轻人梦想与安全路径",
+      "fullLabel": "年轻人梦想与安全路径",
+      "type": "theme",
+      "route": "themes/youth-dreams-and-safe-paths",
+      "summary": "关注“稳定”如何成为压制年轻人生命力的主流建议。",
+      "status": null,
+      "degree": 6
+    },
+    {
       "id": "theme:youth-withdrawal-and-lying-flat",
       "key": "youth-withdrawal-and-lying-flat",
       "label": "年轻人退出与躺平",
@@ -1598,13 +1642,13 @@
       "degree": 6
     },
     {
-      "id": "model:small-state-balancing-model",
-      "key": "small-state-balancing-model",
-      "label": "小国平衡术",
-      "fullLabel": "小国平衡术",
-      "type": "model",
-      "route": "models/small-state-balancing-model",
-      "summary": "小国平衡术解释小国在大国之间维持生存空间，靠位置、合法性和现实利益而非纯姿态。",
+      "id": "theme:small-state-balancing",
+      "key": "small-state-balancing",
+      "label": "小国平衡与地缘生存",
+      "fullLabel": "小国平衡与地缘生存",
+      "type": "theme",
+      "route": "themes/small-state-balancing",
+      "summary": "讨论新加坡这类小国如何在大国竞争中维持安全、合法性和现实利益。",
       "status": null,
       "degree": 6
     },
@@ -1638,6 +1682,17 @@
       "type": "person",
       "route": "people/zhang-xuefeng",
       "summary": "张雪峰（张子彪，1984-2026）是考研与升学规划领域的公众人物，节目借他观察教育焦虑、安全阀和稳定路径叙事。",
+      "status": null,
+      "degree": 6
+    },
+    {
+      "id": "model:political-embedded-enterprise",
+      "key": "political-embedded-enterprise",
+      "label": "政企嵌入企业模型",
+      "fullLabel": "政企嵌入企业模型",
+      "type": "model",
+      "route": "models/political-embedded-enterprise",
+      "summary": "企业一旦把自身命运深嵌进地方政府或国资体系，短期会更能续命，长期却更容易沦为政策工具。",
       "status": null,
       "degree": 6
     },
@@ -1906,6 +1961,17 @@
       "degree": 5
     },
     {
+      "id": "theme:local-government-financialization",
+      "key": "local-government-financialization",
+      "label": "地方政府资本化与补贴杠杆",
+      "fullLabel": "地方政府资本化与补贴杠杆",
+      "type": "theme",
+      "route": "themes/local-government-financialization",
+      "summary": "讨论地方政府如何从传统招商者变成资本玩家，并把补贴、基金和估值故事捆到一起。",
+      "status": null,
+      "degree": 5
+    },
+    {
       "id": "theme:east-asia-security-realignment",
       "key": "east-asia-security-realignment",
       "label": "东亚安全重组与日本转向",
@@ -2005,17 +2071,6 @@
       "degree": 5
     },
     {
-      "id": "theme:youth-dreams-and-safe-paths",
-      "key": "youth-dreams-and-safe-paths",
-      "label": "年轻人梦想与安全路径",
-      "fullLabel": "年轻人梦想与安全路径",
-      "type": "theme",
-      "route": "themes/youth-dreams-and-safe-paths",
-      "summary": "关注“稳定”如何成为压制年轻人生命力的主流建议。",
-      "status": null,
-      "degree": 5
-    },
-    {
       "id": "theme:platform-labor-and-lived-reality",
       "key": "platform-labor-and-lived-reality",
       "label": "平台劳动与真实生存",
@@ -2082,17 +2137,6 @@
       "degree": 5
     },
     {
-      "id": "theme:small-state-balancing",
-      "key": "small-state-balancing",
-      "label": "小国平衡与地缘生存",
-      "fullLabel": "小国平衡与地缘生存",
-      "type": "theme",
-      "route": "themes/small-state-balancing",
-      "summary": "讨论新加坡这类小国如何在大国竞争中维持安全、合法性和现实利益。",
-      "status": null,
-      "degree": 5
-    },
-    {
       "id": "theme:ev-design-and-technology-shortcuts",
       "key": "ev-design-and-technology-shortcuts",
       "label": "新能源设计抄近路与技术捷径",
@@ -2100,17 +2144,6 @@
       "type": "theme",
       "route": "themes/ev-design-and-technology-shortcuts",
       "summary": "讨论新能源品牌如何在设计、技术和产品叙事上追求速成，并为此埋下长期反噬。",
-      "status": null,
-      "degree": 5
-    },
-    {
-      "id": "model:political-embedded-enterprise",
-      "key": "political-embedded-enterprise",
-      "label": "政企嵌入企业模型",
-      "fullLabel": "政企嵌入企业模型",
-      "type": "model",
-      "route": "models/political-embedded-enterprise",
-      "summary": "企业一旦把自身命运深嵌进地方政府或国资体系，短期会更能续命，长期却更容易沦为政策工具。",
       "status": null,
       "degree": 5
     },
@@ -2368,6 +2401,17 @@
       "degree": 4
     },
     {
+      "id": "concept:performative-innovation",
+      "key": "performative-innovation",
+      "label": "表演式创新",
+      "fullLabel": "表演式创新",
+      "type": "concept",
+      "route": "concepts/performative-innovation",
+      "summary": "表演式创新指项目主要为了完成指标、包装成果和争取扶持资金，而不以真实突破为中心。",
+      "status": null,
+      "degree": 4
+    },
+    {
       "id": "concept:subsidy-leverage-engine",
       "key": "subsidy-leverage-engine",
       "label": "补贴杠杆引擎",
@@ -2397,17 +2441,6 @@
       "type": "model",
       "route": "models/discipline-failure-loop",
       "summary": "违规成本过低时，市场会把规则破坏重新包装成交易机会，反过来奖励下一次违规。",
-      "status": null,
-      "degree": 4
-    },
-    {
-      "id": "theme:local-government-financialization",
-      "key": "local-government-financialization",
-      "label": "地方政府资本化与补贴杠杆",
-      "fullLabel": "地方政府资本化与补贴杠杆",
-      "type": "theme",
-      "route": "themes/local-government-financialization",
-      "summary": "讨论地方政府如何从传统招商者变成资本玩家，并把补贴、基金和估值故事捆到一起。",
       "status": null,
       "degree": 4
     },
@@ -2588,6 +2621,17 @@
       "degree": 4
     },
     {
+      "id": "model:exit-liquidation-waterfall",
+      "key": "exit-liquidation-waterfall",
+      "label": "退出清算瀑布",
+      "fullLabel": "退出清算瀑布",
+      "type": "model",
+      "route": "models/exit-liquidation-waterfall",
+      "summary": "产业项目一旦崩塌，价值会迅速收缩到土地、壳和残余设备，并按优先级把损失一层层向下压。",
+      "status": null,
+      "degree": 4
+    },
+    {
       "id": "theme:hidden-costs",
       "key": "hidden-costs",
       "label": "消费者为哪些隐性成本买单",
@@ -2595,6 +2639,17 @@
       "type": "theme",
       "route": "themes/hidden-costs",
       "summary": "讨论消费者支付的价格中，有多少是在承担企业内部看不见的成本。",
+      "status": null,
+      "degree": 4
+    },
+    {
+      "id": "theme:new-media-political-mobilization",
+      "key": "new-media-political-mobilization",
+      "label": "新媒体政治动员",
+      "fullLabel": "新媒体政治动员",
+      "type": "theme",
+      "route": "themes/new-media-political-mobilization",
+      "summary": "候选人和政治叙事不再必须依附旧媒体，而可以直接通过新媒体组织情绪、认同和支持。",
       "status": null,
       "degree": 4
     },
@@ -2639,6 +2694,17 @@
       "type": "theme",
       "route": "themes/housing-burden-and-income-distribution",
       "summary": "讨论住房、税负和可支配收入之间的关系，尤其关注中低收入群体被抽走了多少上升空间。",
+      "status": null,
+      "degree": 4
+    },
+    {
+      "id": "theme:capital-packaging-and-credential-borrowing",
+      "key": "capital-packaging-and-credential-borrowing",
+      "label": "资本包装与身份背书",
+      "fullLabel": "资本包装与身份背书",
+      "type": "theme",
+      "route": "themes/capital-packaging-and-credential-borrowing",
+      "summary": "项目、企业和人物通过借用更高等级的身份和场面来获得额外信用。",
       "status": null,
       "degree": 4
     },
@@ -2826,17 +2892,6 @@
       "type": "concept",
       "route": "concepts/standard-labor-replacement",
       "summary": "自动化最先替代可重复、可规训、可量化的标准岗位，而这些岗位往往属于普通人。",
-      "status": null,
-      "degree": 3
-    },
-    {
-      "id": "concept:performative-innovation",
-      "key": "performative-innovation",
-      "label": "表演式创新",
-      "fullLabel": "表演式创新",
-      "type": "concept",
-      "route": "concepts/performative-innovation",
-      "summary": "表演式创新指项目主要为了完成指标、包装成果和争取扶持资金，而不以真实突破为中心。",
       "status": null,
       "degree": 3
     },
@@ -3171,17 +3226,6 @@
       "degree": 3
     },
     {
-      "id": "model:exit-liquidation-waterfall",
-      "key": "exit-liquidation-waterfall",
-      "label": "退出清算瀑布",
-      "fullLabel": "退出清算瀑布",
-      "type": "model",
-      "route": "models/exit-liquidation-waterfall",
-      "summary": "产业项目一旦崩塌，价值会迅速收缩到土地、壳和残余设备，并按优先级把损失一层层向下压。",
-      "status": null,
-      "degree": 3
-    },
-    {
       "id": "concept:pressure-backfire",
       "key": "pressure-backfire",
       "label": "外压反噬",
@@ -3222,17 +3266,6 @@
       "type": "theme",
       "route": "themes/cash-optionality-and-liquidity-anxiety",
       "summary": "在高波动和低信任时期，流动性比账面资产更能决定一个人和机构的安全感。",
-      "status": null,
-      "degree": 3
-    },
-    {
-      "id": "theme:new-media-political-mobilization",
-      "key": "new-media-political-mobilization",
-      "label": "新媒体政治动员",
-      "fullLabel": "新媒体政治动员",
-      "type": "theme",
-      "route": "themes/new-media-political-mobilization",
-      "summary": "候选人和政治叙事不再必须依附旧媒体，而可以直接通过新媒体组织情绪、认同和支持。",
       "status": null,
       "degree": 3
     },
@@ -3314,6 +3347,17 @@
       "degree": 3
     },
     {
+      "id": "concept:expectation-selling",
+      "key": "expectation-selling",
+      "label": "预期贩卖",
+      "fullLabel": "预期贩卖",
+      "type": "concept",
+      "route": "concepts/expectation-selling",
+      "summary": "通过出售可理解、可规划、可购买的未来想象，中间人获得影响力和收益。",
+      "status": null,
+      "degree": 3
+    },
+    {
       "id": "concept:strategic-depth-inversion",
       "key": "strategic-depth-inversion",
       "label": "战略纵深反转",
@@ -3332,17 +3376,6 @@
       "type": "theme",
       "route": "themes/war-system-and-succession-risk",
       "summary": "讨论战争国家在长期高压运转下，如何同时面临兵员枯竭、内部老化与接班断层。",
-      "status": null,
-      "degree": 3
-    },
-    {
-      "id": "theme:capital-packaging-and-credential-borrowing",
-      "key": "capital-packaging-and-credential-borrowing",
-      "label": "资本包装与身份背书",
-      "fullLabel": "资本包装与身份背书",
-      "type": "theme",
-      "route": "themes/capital-packaging-and-credential-borrowing",
-      "summary": "项目、企业和人物通过借用更高等级的身份和场面来获得额外信用。",
       "status": null,
       "degree": 3
     },
@@ -4249,13 +4282,13 @@
       "degree": 2
     },
     {
-      "id": "concept:expectation-selling",
-      "key": "expectation-selling",
-      "label": "预期贩卖",
-      "fullLabel": "预期贩卖",
+      "id": "concept:metric-locking",
+      "key": "metric-locking",
+      "label": "指标锁死",
+      "fullLabel": "指标锁死",
       "type": "concept",
-      "route": "concepts/expectation-selling",
-      "summary": "通过出售可理解、可规划、可购买的未来想象，中间人获得影响力和收益。",
+      "route": "concepts/metric-locking",
+      "summary": "指标锁死指组织先把达标数字定成必须成立的结果，再让测试、显示和汇报口径围着这个数字改写。",
       "status": null,
       "degree": 2
     },
@@ -4278,6 +4311,17 @@
       "type": "concept",
       "route": "concepts/transfer-payment-dependency",
       "summary": "转移支付依赖指地方运转越来越靠上级财政输血，而不是靠本地产业和税源形成真实闭环。",
+      "status": null,
+      "degree": 2
+    },
+    {
+      "id": "concept:self-dealing-incubation-loop",
+      "key": "self-dealing-incubation-loop",
+      "label": "自融孵化闭环",
+      "fullLabel": "自融孵化闭环",
+      "type": "concept",
+      "route": "concepts/self-dealing-incubation-loop",
+      "summary": "同一个操盘主体把早期孵化、下一轮接盘和最终上市装回串成闭环，自己投自己、自己接自己，最后让各方一起解套。",
       "status": null,
       "degree": 2
     },
@@ -5796,17 +5840,6 @@
       "type": "concept",
       "route": "concepts/direct-transfer-consumption",
       "summary": "现金直接到普通人手里，会进入日常消费毛细血管，形成朴素但真实的循环。",
-      "status": null,
-      "degree": 1
-    },
-    {
-      "id": "concept:metric-locking",
-      "key": "metric-locking",
-      "label": "指标锁死",
-      "fullLabel": "指标锁死",
-      "type": "concept",
-      "route": "concepts/metric-locking",
-      "summary": "指标锁死指组织先把达标数字定成必须成立的结果，再让测试、显示和汇报口径围着这个数字改写。",
       "status": null,
       "degree": 1
     },
@@ -11680,6 +11713,116 @@
       "kind": "episode-theme"
     },
     {
+      "source": "episode:EP159",
+      "target": "concept:self-dealing-incubation-loop",
+      "kind": "episode-concept"
+    },
+    {
+      "source": "episode:EP159",
+      "target": "concept:performative-innovation",
+      "kind": "episode-concept"
+    },
+    {
+      "source": "episode:EP159",
+      "target": "concept:expectation-selling",
+      "kind": "episode-concept"
+    },
+    {
+      "source": "episode:EP159",
+      "target": "concept:metric-locking",
+      "kind": "episode-concept"
+    },
+    {
+      "source": "episode:EP159",
+      "target": "concept:hidden-debt",
+      "kind": "episode-concept"
+    },
+    {
+      "source": "episode:EP159",
+      "target": "model:subsidy-capital-flywheel",
+      "kind": "episode-model"
+    },
+    {
+      "source": "episode:EP159",
+      "target": "model:political-embedded-enterprise",
+      "kind": "episode-model"
+    },
+    {
+      "source": "episode:EP159",
+      "target": "model:narrative-leverage",
+      "kind": "episode-model"
+    },
+    {
+      "source": "episode:EP159",
+      "target": "model:exit-liquidation-waterfall",
+      "kind": "episode-model"
+    },
+    {
+      "source": "episode:EP159",
+      "target": "theme:state-business-entanglement",
+      "kind": "episode-theme"
+    },
+    {
+      "source": "episode:EP159",
+      "target": "theme:capital-packaging-and-credential-borrowing",
+      "kind": "episode-theme"
+    },
+    {
+      "source": "episode:EP159",
+      "target": "theme:local-government-financialization",
+      "kind": "episode-theme"
+    },
+    {
+      "source": "episode:EP159",
+      "target": "theme:new-media-political-mobilization",
+      "kind": "episode-theme"
+    },
+    {
+      "source": "episode:EP159",
+      "target": "theme:youth-dreams-and-safe-paths",
+      "kind": "episode-theme"
+    },
+    {
+      "source": "episode:EP160",
+      "target": "concept:cost-shifting",
+      "kind": "episode-concept"
+    },
+    {
+      "source": "episode:EP160",
+      "target": "concept:active-neutrality",
+      "kind": "episode-concept"
+    },
+    {
+      "source": "episode:EP160",
+      "target": "model:small-state-balancing-model",
+      "kind": "episode-model"
+    },
+    {
+      "source": "episode:EP160",
+      "target": "model:rule-anchored-small-state-model",
+      "kind": "episode-model"
+    },
+    {
+      "source": "episode:EP160",
+      "target": "theme:singapore-and-small-state-survival",
+      "kind": "episode-theme"
+    },
+    {
+      "source": "episode:EP160",
+      "target": "theme:small-state-balancing",
+      "kind": "episode-theme"
+    },
+    {
+      "source": "episode:EP160",
+      "target": "theme:southeast-asia-fragmentation-and-bloc-competition",
+      "kind": "episode-theme"
+    },
+    {
+      "source": "episode:EP160",
+      "target": "theme:great-power-competition-and-strategic-time",
+      "kind": "episode-theme"
+    },
+    {
       "source": "episode:EP120",
       "target": "concept:active-neutrality",
       "kind": "episode-concept"
@@ -11702,6 +11845,11 @@
     {
       "source": "episode:EP130",
       "target": "concept:sea-laundering",
+      "kind": "episode-concept"
+    },
+    {
+      "source": "episode:EP142",
+      "target": "concept:self-dealing-incubation-loop",
       "kind": "episode-concept"
     },
     {
