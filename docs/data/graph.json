@@ -2,13 +2,13 @@
   "meta": {
     "title": "颖响力知识图谱",
     "subtitle": "节目、概念、模型、人物、主题之间的可视化连接网络",
-    "nodeCount": 537,
-    "linkCount": 1219,
+    "nodeCount": 538,
+    "linkCount": 1228,
     "typeCounts": {
       "model": 70,
-      "episode": 160,
-      "concept": 151,
+      "episode": 161,
       "person": 65,
+      "concept": 151,
       "theme": 91
     }
   },
@@ -22,7 +22,7 @@
       "route": "models/risk-transfer-chain",
       "summary": "系统不会立刻吞下风险，而是先沿着银行、企业、票据、供应链和普通人之间不断转手、延后和下沉。",
       "status": null,
-      "degree": 38
+      "degree": 39
     },
     {
       "id": "model:leverage-backfire",
@@ -45,6 +45,17 @@
       "summary": "本期借 Meta 收购 Manus 被监管否决，讨论这件事对中国草根创业者意味着什么。节目承认叫停交易有明确法律依据，但核心判断是：过去三十年支撑无背景年轻人从零到一的美元基金、全球市场和赴美上市、海外并购退出通道正在被堵死；地方国资基金的考核逻辑重视国有资产不流失、招商落地和可见退出，天然不会为纯软件、早期、无背景的草根项目承担风险。结果是年轻人理性地转向考研考公，创新资源从市场能力转向行政关系，真正的颠覆式创新被挤出，只剩依附式和表演式创新。",
       "status": "curated",
       "degree": 17
+    },
+    {
+      "id": "person:donald-trump",
+      "key": "donald-trump",
+      "label": "特朗普",
+      "fullLabel": "特朗普",
+      "type": "person",
+      "route": "people/donald-trump",
+      "summary": "特朗普是美国共和党政治人物、第45任与第47任美国总统，节目借他观察美国战略收缩、成本转嫁和规则重定价。",
+      "status": null,
+      "degree": 16
     },
     {
       "id": "concept:hidden-debt",
@@ -78,17 +89,6 @@
       "summary": "本期借普京访华切入，把当下俄罗斯放进\"三面被围\"的地图：西边欧盟在欧尔班败选和川普新门罗主义下变成铁板一块，南边伊朗这条绕过制裁的生命线被美英联军和霍尔木兹封锁压住，东边只剩中国。节目从红场阅兵重装备全无、只有\"烈士遗孀方阵\"起手，用《帝国时代》贸易马车比喻俄罗斯被切短的全球贸易线。由此推出普京带 6 副总理、8 部长、1 央行行长来华的真实诉求：扩大贸易、推动西伯利亚力量二号、卡脖子技术合作、本币结算。落点是下一轮大国博弈的核心通道将是东南亚、南亚、中亚和古巴。",
       "status": "curated",
       "degree": 16
-    },
-    {
-      "id": "person:donald-trump",
-      "key": "donald-trump",
-      "label": "特朗普",
-      "fullLabel": "特朗普",
-      "type": "person",
-      "route": "people/donald-trump",
-      "summary": "特朗普是美国共和党政治人物、第45任与第47任美国总统，节目借他观察美国战略收缩、成本转嫁和规则重定价。",
-      "status": null,
-      "degree": 15
     },
     {
       "id": "episode:EP133",
@@ -817,6 +817,17 @@
       "degree": 9
     },
     {
+      "id": "episode:EP161",
+      "key": "EP161",
+      "label": "EP161",
+      "fullLabel": "EP161 · 买黄金为中国背债？一个视频说明白黄金、美元、石油",
+      "type": "episode",
+      "route": "episodes/EP161",
+      "summary": "节目重提三个月前讲过的黄金逻辑，反驳把金价涨跌归于美元反比、战争避险或美联储加息的主流说法——这些理由连之前的暴涨都解释不了。核心判断是：黄金从1800美元冲到4000多美元，根因是灰色贸易。离岸人民币在灰色石油和商品贸易里需要稳定背书，弃美元改用黄金，各国央行为此大量囤金，才有这轮爆发式上涨。随后特朗普沿巴拿马、委内瑞拉、伊朗切断灰色贸易，金价失去支撑转入阴跌，美元顺势回流走强。落点很重：国内突然铺天盖地推黄金投资，本质是帮囤金最多的央行向散户转嫁阴跌风险，也就是为国背债。",
+      "status": "curated",
+      "degree": 9
+    },
+    {
       "id": "theme:big-government-and-incentive-reversal",
       "key": "big-government-and-incentive-reversal",
       "label": "大政府与激励反转",
@@ -1235,6 +1246,17 @@
       "degree": 8
     },
     {
+      "id": "theme:dollar-system-and-gray-trade",
+      "key": "dollar-system-and-gray-trade",
+      "label": "美元体系与灰色贸易",
+      "fullLabel": "美元体系与灰色贸易",
+      "type": "theme",
+      "route": "themes/dollar-system-and-gray-trade",
+      "summary": "讨论石油美元的真实脆弱点，究竟藏在公开统计之外的哪些灰色交易链条里。",
+      "status": null,
+      "degree": 7
+    },
+    {
       "id": "model:screening-machine",
       "key": "screening-machine",
       "label": "筛选机器模型",
@@ -1554,17 +1576,6 @@
       "degree": 6
     },
     {
-      "id": "theme:dollar-system-and-gray-trade",
-      "key": "dollar-system-and-gray-trade",
-      "label": "美元体系与灰色贸易",
-      "fullLabel": "美元体系与灰色贸易",
-      "type": "theme",
-      "route": "themes/dollar-system-and-gray-trade",
-      "summary": "讨论石油美元的真实脆弱点，究竟藏在公开统计之外的哪些灰色交易链条里。",
-      "status": null,
-      "degree": 6
-    },
-    {
       "id": "theme:youth-dreams-and-safe-paths",
       "key": "youth-dreams-and-safe-paths",
       "label": "年轻人梦想与安全路径",
@@ -1605,6 +1616,17 @@
       "type": "theme",
       "route": "themes/institutional-middle-class-and-social-mobility",
       "summary": "讨论稳定岗位、公共财政和身份溢价如何重塑中产结构，并收窄普通人的上升路径。",
+      "status": null,
+      "degree": 6
+    },
+    {
+      "id": "theme:narrative-speculation-and-retail-traps",
+      "key": "narrative-speculation-and-retail-traps",
+      "label": "投资叙事与散户陷阱",
+      "fullLabel": "投资叙事与散户陷阱",
+      "type": "theme",
+      "route": "themes/narrative-speculation-and-retail-traps",
+      "summary": "当市场热点先由故事驱动、再由散户接棒时，普通人最容易在高潮处接到最后一棒。",
       "status": null,
       "degree": 6
     },
@@ -1939,6 +1961,17 @@
       "degree": 6
     },
     {
+      "id": "concept:refuge-premium",
+      "key": "refuge-premium",
+      "label": "避险溢价",
+      "fullLabel": "避险溢价",
+      "type": "concept",
+      "route": "concepts/refuge-premium",
+      "summary": "动荡时期，稳定、守规则、能承接资金和人才的节点会获得额外溢价。",
+      "status": null,
+      "degree": 5
+    },
+    {
       "id": "model:opaque-withdrawal-governance",
       "key": "opaque-withdrawal-governance",
       "label": "不可读退出治理模型",
@@ -2027,6 +2060,17 @@
       "degree": 5
     },
     {
+      "id": "concept:gray-oil-network",
+      "key": "gray-oil-network",
+      "label": "灰色石油网络",
+      "fullLabel": "灰色石油网络",
+      "type": "concept",
+      "route": "concepts/gray-oil-network",
+      "summary": "绕开正规结算和监管的石油流动，会在影子体系中重塑货币、制裁和地缘利益。",
+      "status": null,
+      "degree": 5
+    },
+    {
       "id": "model:technology-wave-cycle",
       "key": "technology-wave-cycle",
       "label": "技术浪潮周期",
@@ -2104,17 +2148,6 @@
       "degree": 5
     },
     {
-      "id": "theme:narrative-speculation-and-retail-traps",
-      "key": "narrative-speculation-and-retail-traps",
-      "label": "投资叙事与散户陷阱",
-      "fullLabel": "投资叙事与散户陷阱",
-      "type": "theme",
-      "route": "themes/narrative-speculation-and-retail-traps",
-      "summary": "当市场热点先由故事驱动、再由散户接棒时，普通人最容易在高潮处接到最后一棒。",
-      "status": null,
-      "degree": 5
-    },
-    {
       "id": "concept:future-path-crowding",
       "key": "future-path-crowding",
       "label": "未来路径拥堵",
@@ -2144,6 +2177,17 @@
       "type": "theme",
       "route": "themes/ev-design-and-technology-shortcuts",
       "summary": "讨论新能源品牌如何在设计、技术和产品叙事上追求速成，并为此埋下长期反噬。",
+      "status": null,
+      "degree": 5
+    },
+    {
+      "id": "model:sanction-parallel-market",
+      "key": "sanction-parallel-market",
+      "label": "制裁平行市场模型",
+      "fullLabel": "制裁平行市场模型",
+      "type": "model",
+      "route": "models/sanction-parallel-market",
+      "summary": "制裁如果没有消灭需求，就会把交易推向更高风险、更高利润、更难监管的平行市场。",
       "status": null,
       "degree": 5
     },
@@ -2390,17 +2434,6 @@
       "degree": 5
     },
     {
-      "id": "concept:refuge-premium",
-      "key": "refuge-premium",
-      "label": "避险溢价",
-      "fullLabel": "避险溢价",
-      "type": "concept",
-      "route": "concepts/refuge-premium",
-      "summary": "动荡时期，稳定、守规则、能承接资金和人才的节点会获得额外溢价。",
-      "status": null,
-      "degree": 4
-    },
-    {
       "id": "concept:performative-innovation",
       "key": "performative-innovation",
       "label": "表演式创新",
@@ -2518,17 +2551,6 @@
       "type": "person",
       "route": "people/lawrence-wong",
       "summary": "黄循财是新加坡总理兼财政部长，节目借他观察新加坡主动中立、国家身份边界和国家信用履约。",
-      "status": null,
-      "degree": 4
-    },
-    {
-      "id": "concept:gray-oil-network",
-      "key": "gray-oil-network",
-      "label": "灰色石油网络",
-      "fullLabel": "灰色石油网络",
-      "type": "concept",
-      "route": "concepts/gray-oil-network",
-      "summary": "绕开正规结算和监管的石油流动，会在影子体系中重塑货币、制裁和地缘利益。",
       "status": null,
       "degree": 4
     },
@@ -2676,13 +2698,13 @@
       "degree": 4
     },
     {
-      "id": "model:sanction-parallel-market",
-      "key": "sanction-parallel-market",
-      "label": "制裁平行市场模型",
-      "fullLabel": "制裁平行市场模型",
-      "type": "model",
-      "route": "models/sanction-parallel-market",
-      "summary": "制裁如果没有消灭需求，就会把交易推向更高风险、更高利润、更难监管的平行市场。",
+      "id": "concept:expectation-selling",
+      "key": "expectation-selling",
+      "label": "预期贩卖",
+      "fullLabel": "预期贩卖",
+      "type": "concept",
+      "route": "concepts/expectation-selling",
+      "summary": "通过出售可理解、可规划、可购买的未来想象，中间人获得影响力和收益。",
       "status": null,
       "degree": 4
     },
@@ -3343,17 +3365,6 @@
       "type": "concept",
       "route": "concepts/shadow-fleet",
       "summary": "影子舰队是绕开西方保险、认证、定位和船东透明规则的平行航运网络。",
-      "status": null,
-      "degree": 3
-    },
-    {
-      "id": "concept:expectation-selling",
-      "key": "expectation-selling",
-      "label": "预期贩卖",
-      "fullLabel": "预期贩卖",
-      "type": "concept",
-      "route": "concepts/expectation-selling",
-      "summary": "通过出售可理解、可规划、可购买的未来想象，中间人获得影响力和收益。",
       "status": null,
       "degree": 3
     },
@@ -4311,6 +4322,17 @@
       "type": "concept",
       "route": "concepts/transfer-payment-dependency",
       "summary": "转移支付依赖指地方运转越来越靠上级财政输血，而不是靠本地产业和税源形成真实闭环。",
+      "status": null,
+      "degree": 2
+    },
+    {
+      "id": "concept:quasi-currency-support",
+      "key": "quasi-currency-support",
+      "label": "准货币托市",
+      "fullLabel": "准货币托市",
+      "type": "concept",
+      "route": "concepts/quasi-currency-support",
+      "summary": "现金不足时，系统用票据、凭证或替代物支撑交易和价格，形成准货币托市。",
       "status": null,
       "degree": 2
     },
@@ -5862,17 +5884,6 @@
       "type": "concept",
       "route": "concepts/attention-trading",
       "summary": "创作者把观众的焦虑、兴奋和参与感换成流量、带货、课程或影响力收益。",
-      "status": null,
-      "degree": 1
-    },
-    {
-      "id": "concept:quasi-currency-support",
-      "key": "quasi-currency-support",
-      "label": "准货币托市",
-      "fullLabel": "准货币托市",
-      "type": "concept",
-      "route": "concepts/quasi-currency-support",
-      "summary": "现金不足时，系统用票据、凭证或替代物支撑交易和价格，形成准货币托市。",
       "status": null,
       "degree": 1
     },
@@ -11820,6 +11831,51 @@
     {
       "source": "episode:EP160",
       "target": "theme:great-power-competition-and-strategic-time",
+      "kind": "episode-theme"
+    },
+    {
+      "source": "episode:EP161",
+      "target": "concept:gray-oil-network",
+      "kind": "episode-concept"
+    },
+    {
+      "source": "episode:EP161",
+      "target": "concept:quasi-currency-support",
+      "kind": "episode-concept"
+    },
+    {
+      "source": "episode:EP161",
+      "target": "concept:refuge-premium",
+      "kind": "episode-concept"
+    },
+    {
+      "source": "episode:EP161",
+      "target": "concept:expectation-selling",
+      "kind": "episode-concept"
+    },
+    {
+      "source": "episode:EP161",
+      "target": "model:risk-transfer-chain",
+      "kind": "episode-model"
+    },
+    {
+      "source": "episode:EP161",
+      "target": "model:sanction-parallel-market",
+      "kind": "episode-model"
+    },
+    {
+      "source": "episode:EP161",
+      "target": "person:donald-trump",
+      "kind": "episode-person"
+    },
+    {
+      "source": "episode:EP161",
+      "target": "theme:dollar-system-and-gray-trade",
+      "kind": "episode-theme"
+    },
+    {
+      "source": "episode:EP161",
+      "target": "theme:narrative-speculation-and-retail-traps",
       "kind": "episode-theme"
     },
     {
