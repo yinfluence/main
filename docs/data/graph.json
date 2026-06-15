@@ -2,13 +2,13 @@
   "meta": {
     "title": "颖响力知识图谱",
     "subtitle": "节目、概念、模型、人物、主题之间的可视化连接网络",
-    "nodeCount": 538,
-    "linkCount": 1228,
+    "nodeCount": 540,
+    "linkCount": 1237,
     "typeCounts": {
       "model": 70,
-      "episode": 161,
+      "episode": 162,
       "person": 65,
-      "concept": 151,
+      "concept": 152,
       "theme": 91
     }
   },
@@ -124,6 +124,17 @@
       "degree": 14
     },
     {
+      "id": "theme:singapore-and-small-state-survival",
+      "key": "singapore-and-small-state-survival",
+      "label": "新加坡与小国生存术",
+      "fullLabel": "新加坡与小国生存术",
+      "type": "theme",
+      "route": "themes/singapore-and-small-state-survival",
+      "summary": "讨论新加坡如何把规则、海峡、人才和谨慎外交组合成一套小国长期生存方法。",
+      "status": null,
+      "degree": 14
+    },
+    {
       "id": "episode:EP128",
       "key": "EP128",
       "label": "EP128",
@@ -186,17 +197,6 @@
       "type": "model",
       "route": "models/path-dependence",
       "summary": "路径依赖解释早期技术和叙事选择一旦成功，就会反过来限制后续转向更优路径。",
-      "status": null,
-      "degree": 13
-    },
-    {
-      "id": "theme:singapore-and-small-state-survival",
-      "key": "singapore-and-small-state-survival",
-      "label": "新加坡与小国生存术",
-      "fullLabel": "新加坡与小国生存术",
-      "type": "theme",
-      "route": "themes/singapore-and-small-state-survival",
-      "summary": "讨论新加坡如何把规则、海峡、人才和谨慎外交组合成一套小国长期生存方法。",
       "status": null,
       "degree": 13
     },
@@ -300,6 +300,17 @@
       "degree": 13
     },
     {
+      "id": "theme:great-power-competition-and-strategic-time",
+      "key": "great-power-competition-and-strategic-time",
+      "label": "大国竞争与战略时间",
+      "fullLabel": "大国竞争与战略时间",
+      "type": "theme",
+      "route": "themes/great-power-competition-and-strategic-time",
+      "summary": "讨论战争、联盟和国家战略如何被时间窗口、社会成本和长期定力重新塑形。",
+      "status": null,
+      "degree": 12
+    },
+    {
       "id": "concept:chokepoint-leverage",
       "key": "chokepoint-leverage",
       "label": "咽喉杠杆",
@@ -377,17 +388,6 @@
       "degree": 11
     },
     {
-      "id": "theme:great-power-competition-and-strategic-time",
-      "key": "great-power-competition-and-strategic-time",
-      "label": "大国竞争与战略时间",
-      "fullLabel": "大国竞争与战略时间",
-      "type": "theme",
-      "route": "themes/great-power-competition-and-strategic-time",
-      "summary": "讨论战争、联盟和国家战略如何被时间窗口、社会成本和长期定力重新塑形。",
-      "status": null,
-      "degree": 11
-    },
-    {
       "id": "theme:local-fiscal-stress-and-hidden-debt",
       "key": "local-fiscal-stress-and-hidden-debt",
       "label": "地方财政与隐性债务",
@@ -417,6 +417,17 @@
       "type": "theme",
       "route": "themes/real-estate-deleveraging",
       "summary": "讨论房地产在下行周期里如何通过断供、重组、展期和资产处置逐步暴露风险。",
+      "status": null,
+      "degree": 11
+    },
+    {
+      "id": "model:rule-anchored-small-state-model",
+      "key": "rule-anchored-small-state-model",
+      "label": "规则锚定型小国生存",
+      "fullLabel": "规则锚定型小国生存",
+      "type": "model",
+      "route": "models/rule-anchored-small-state-model",
+      "summary": "小国要长期活下来，不能只靠地理好运，更要靠规则信誉、理性政府和可预期的制度自我约束。",
       "status": null,
       "degree": 11
     },
@@ -564,17 +575,6 @@
       "degree": 10
     },
     {
-      "id": "model:rule-anchored-small-state-model",
-      "key": "rule-anchored-small-state-model",
-      "label": "规则锚定型小国生存",
-      "fullLabel": "规则锚定型小国生存",
-      "type": "model",
-      "route": "models/rule-anchored-small-state-model",
-      "summary": "小国要长期活下来，不能只靠地理好运，更要靠规则信誉、理性政府和可预期的制度自我约束。",
-      "status": null,
-      "degree": 10
-    },
-    {
       "id": "concept:sanction-containment",
       "key": "sanction-containment",
       "label": "制裁遏制",
@@ -582,6 +582,17 @@
       "type": "concept",
       "route": "concepts/sanction-containment",
       "summary": "制裁的真正作用常常不是逼对手立刻认输，而是长期压低其外延空间、联动能力和做大速度。",
+      "status": null,
+      "degree": 10
+    },
+    {
+      "id": "concept:active-neutrality",
+      "key": "active-neutrality",
+      "label": "主动中立",
+      "fullLabel": "主动中立",
+      "type": "concept",
+      "route": "concepts/active-neutrality",
+      "summary": "真正可持续的中立不是谁都不得罪，而是在坚持规则的前提下主动参与秩序塑造。",
       "status": null,
       "degree": 10
     },
@@ -659,17 +670,6 @@
       "type": "model",
       "route": "models/institutional-fit",
       "summary": "制度适配解释能力能否兑现，取决于组织被放在怎样的法律、资本和治理环境中。",
-      "status": null,
-      "degree": 9
-    },
-    {
-      "id": "concept:active-neutrality",
-      "key": "active-neutrality",
-      "label": "主动中立",
-      "fullLabel": "主动中立",
-      "type": "concept",
-      "route": "concepts/active-neutrality",
-      "summary": "真正可持续的中立不是谁都不得罪，而是在坚持规则的前提下主动参与秩序塑造。",
       "status": null,
       "degree": 9
     },
@@ -828,6 +828,17 @@
       "degree": 9
     },
     {
+      "id": "episode:EP162",
+      "key": "EP162",
+      "label": "EP162",
+      "fullLabel": "EP162 · 新加坡为何能“中朝韩”三连访？维文半岛外交背后有何隐情？",
+      "type": "episode",
+      "route": "episodes/EP162",
+      "summary": "本期从新加坡外长维文五天连访中国、朝鲜、韩国切入，先解释一个反常现象：全世界多数国家只能在朝韩之间二选一，唯独新加坡能同时深交两边。节目把答案落到 1975 年先后只隔一个月与韩、朝建交的历史，以及新加坡在半岛没有领土和霸权诉求、只做沟通协调的绝对中立身份。再把三连访拆成层层加深的三层逻辑：为 2027 年东盟轮值主席国提前卡位话语权、试探美朝破冰当超级中间人、以及靠区域和平与自由贸易立国的生存底线。落点是小国不靠体量靠智慧和格局，用穿梭外交把自己经营成各方都需要、都不愿破坏的存在。",
+      "status": "curated",
+      "degree": 9
+    },
+    {
       "id": "theme:big-government-and-incentive-reversal",
       "key": "big-government-and-incentive-reversal",
       "label": "大政府与激励反转",
@@ -846,6 +857,17 @@
       "type": "model",
       "route": "models/principal-agent",
       "summary": "委托代理模型解释外部顾问或职业代理人的激励，未必与委托方长期价值一致。",
+      "status": null,
+      "degree": 8
+    },
+    {
+      "id": "model:small-state-balancing-model",
+      "key": "small-state-balancing-model",
+      "label": "小国平衡术",
+      "fullLabel": "小国平衡术",
+      "type": "model",
+      "route": "models/small-state-balancing-model",
+      "summary": "小国平衡术解释小国在大国之间维持生存空间，靠位置、合法性和现实利益而非纯姿态。",
       "status": null,
       "degree": 8
     },
@@ -1268,13 +1290,13 @@
       "degree": 7
     },
     {
-      "id": "model:small-state-balancing-model",
-      "key": "small-state-balancing-model",
-      "label": "小国平衡术",
-      "fullLabel": "小国平衡术",
-      "type": "model",
-      "route": "models/small-state-balancing-model",
-      "summary": "小国平衡术解释小国在大国之间维持生存空间，靠位置、合法性和现实利益而非纯姿态。",
+      "id": "theme:small-state-balancing",
+      "key": "small-state-balancing",
+      "label": "小国平衡与地缘生存",
+      "fullLabel": "小国平衡与地缘生存",
+      "type": "theme",
+      "route": "themes/small-state-balancing",
+      "summary": "讨论新加坡这类小国如何在大国竞争中维持安全、合法性和现实利益。",
       "status": null,
       "degree": 7
     },
@@ -1543,6 +1565,17 @@
       "degree": 6
     },
     {
+      "id": "theme:east-asia-security-realignment",
+      "key": "east-asia-security-realignment",
+      "label": "东亚安全重组与日本转向",
+      "fullLabel": "东亚安全重组与日本转向",
+      "type": "theme",
+      "route": "themes/east-asia-security-realignment",
+      "summary": "讨论日本重新前台化、台海压力外溢，以及东亚安全合作为何越来越难保持模糊。",
+      "status": null,
+      "degree": 6
+    },
+    {
       "id": "model:distributed-innovation",
       "key": "distributed-innovation",
       "label": "分布式创新",
@@ -1660,17 +1693,6 @@
       "type": "concept",
       "route": "concepts/consumer-testbed",
       "summary": "企业把本该在研发和验证阶段承担的安全成本，转移到首批消费者、公共道路和真实事故里去消化。",
-      "status": null,
-      "degree": 6
-    },
-    {
-      "id": "theme:small-state-balancing",
-      "key": "small-state-balancing",
-      "label": "小国平衡与地缘生存",
-      "fullLabel": "小国平衡与地缘生存",
-      "type": "theme",
-      "route": "themes/small-state-balancing",
-      "summary": "讨论新加坡这类小国如何在大国竞争中维持安全、合法性和现实利益。",
       "status": null,
       "degree": 6
     },
@@ -2001,17 +2023,6 @@
       "type": "theme",
       "route": "themes/local-government-financialization",
       "summary": "讨论地方政府如何从传统招商者变成资本玩家，并把补贴、基金和估值故事捆到一起。",
-      "status": null,
-      "degree": 5
-    },
-    {
-      "id": "theme:east-asia-security-realignment",
-      "key": "east-asia-security-realignment",
-      "label": "东亚安全重组与日本转向",
-      "fullLabel": "东亚安全重组与日本转向",
-      "type": "theme",
-      "route": "themes/east-asia-security-realignment",
-      "summary": "讨论日本重新前台化、台海压力外溢，以及东亚安全合作为何越来越难保持模糊。",
       "status": null,
       "degree": 5
     },
@@ -2654,6 +2665,17 @@
       "degree": 4
     },
     {
+      "id": "person:vivian-balakrishnan",
+      "key": "vivian-balakrishnan",
+      "label": "维文",
+      "fullLabel": "维文",
+      "type": "person",
+      "route": "people/vivian-balakrishnan",
+      "summary": "维文是新加坡外交部长，节目借他的海峡通行发言说明小国如何用国际法和长期信用保护命门。",
+      "status": null,
+      "degree": 4
+    },
+    {
       "id": "theme:hidden-costs",
       "key": "hidden-costs",
       "label": "消费者为哪些隐性成本买单",
@@ -3266,17 +3288,6 @@
       "type": "theme",
       "route": "themes/authoritarian-succession-and-state-fragility",
       "summary": "讨论强人、神权或高压体制在接班时刻如何暴露出最深的制度脆弱点。",
-      "status": null,
-      "degree": 3
-    },
-    {
-      "id": "person:vivian-balakrishnan",
-      "key": "vivian-balakrishnan",
-      "label": "维文",
-      "fullLabel": "维文",
-      "type": "person",
-      "route": "people/vivian-balakrishnan",
-      "summary": "维文是新加坡外交部长，节目借他的海峡通行发言说明小国如何用国际法和长期信用保护命门。",
       "status": null,
       "degree": 3
     },
@@ -4520,6 +4531,17 @@
       "type": "concept",
       "route": "concepts/property-boundary-literacy",
       "summary": "产权意识指能够清晰区分公共场所与私人商业场所，并据此判断谁有权定规则、什么时候规则可以被挑战。",
+      "status": null,
+      "degree": 1
+    },
+    {
+      "id": "concept:super-intermediary",
+      "key": "super-intermediary",
+      "label": "超级中间人",
+      "fullLabel": "超级中间人",
+      "type": "concept",
+      "route": "concepts/super-intermediary",
+      "summary": "在僵持的对立各方之间，靠绝对中立和独家信任渠道居中传话、对齐底线、递台阶的角色，本身不站队、不谋利，只做信息和沟通的枢纽。",
       "status": null,
       "degree": 1
     },
@@ -11879,6 +11901,41 @@
       "kind": "episode-theme"
     },
     {
+      "source": "episode:EP162",
+      "target": "concept:active-neutrality",
+      "kind": "episode-concept"
+    },
+    {
+      "source": "episode:EP162",
+      "target": "concept:super-intermediary",
+      "kind": "episode-concept"
+    },
+    {
+      "source": "episode:EP162",
+      "target": "model:small-state-balancing-model",
+      "kind": "episode-model"
+    },
+    {
+      "source": "episode:EP162",
+      "target": "model:rule-anchored-small-state-model",
+      "kind": "episode-model"
+    },
+    {
+      "source": "episode:EP162",
+      "target": "person:vivian-balakrishnan",
+      "kind": "episode-person"
+    },
+    {
+      "source": "episode:EP162",
+      "target": "theme:small-state-balancing",
+      "kind": "episode-theme"
+    },
+    {
+      "source": "episode:EP162",
+      "target": "theme:great-power-competition-and-strategic-time",
+      "kind": "episode-theme"
+    },
+    {
       "source": "episode:EP120",
       "target": "concept:active-neutrality",
       "kind": "episode-concept"
@@ -12019,6 +12076,11 @@
       "kind": "episode-theme"
     },
     {
+      "source": "episode:EP162",
+      "target": "theme:east-asia-security-realignment",
+      "kind": "episode-theme"
+    },
+    {
       "source": "episode:EP124",
       "target": "theme:institutional-middle-class-and-social-mobility",
       "kind": "episode-theme"
@@ -12050,6 +12112,11 @@
     },
     {
       "source": "episode:EP120",
+      "target": "theme:singapore-and-small-state-survival",
+      "kind": "episode-theme"
+    },
+    {
+      "source": "episode:EP162",
       "target": "theme:singapore-and-small-state-survival",
       "kind": "episode-theme"
     },
