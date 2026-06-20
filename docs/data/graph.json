@@ -2,13 +2,13 @@
   "meta": {
     "title": "颖响力知识图谱",
     "subtitle": "节目、概念、模型、人物、主题之间的可视化连接网络",
-    "nodeCount": 548,
-    "linkCount": 1261,
+    "nodeCount": 551,
+    "linkCount": 1271,
     "typeCounts": {
       "model": 70,
-      "episode": 164,
+      "episode": 165,
       "person": 65,
-      "concept": 158,
+      "concept": 160,
       "theme": 91
     }
   },
@@ -597,6 +597,28 @@
       "degree": 10
     },
     {
+      "id": "model:authority-misinfluence",
+      "key": "authority-misinfluence",
+      "label": "权威影响",
+      "fullLabel": "权威影响",
+      "type": "model",
+      "route": "models/authority-misinfluence",
+      "summary": "权威影响模型解释单点权威如何压缩组织独立判断，使成员更容易服从而非纠偏。",
+      "status": null,
+      "degree": 10
+    },
+    {
+      "id": "model:narrative-instrumentalization",
+      "key": "narrative-instrumentalization",
+      "label": "叙事工具化模型",
+      "fullLabel": "叙事工具化模型",
+      "type": "model",
+      "route": "models/narrative-instrumentalization",
+      "summary": "叙事工具化模型解释叙事的主要功能从解释现实转向组织情绪和划分阵营。",
+      "status": null,
+      "degree": 10
+    },
+    {
       "id": "concept:sanction-containment",
       "key": "sanction-containment",
       "label": "制裁遏制",
@@ -641,6 +663,17 @@
       "degree": 10
     },
     {
+      "id": "episode:EP165",
+      "key": "EP165",
+      "label": "EP165",
+      "fullLabel": "EP165 · 从亩产万斤到高中生火箭：为什么越\"严谨\"的数据越容易骗人？",
+      "type": "episode",
+      "route": "episodes/EP165",
+      "summary": "黑龙江五个高二学生\"手搓火箭\"在青海冷湖发射成功，被自媒体捧成中国少年天才吊打西方。节目指出，发射场、空域审批、固体发动机、燃料其实都靠商业机构冷湖实验室托底，学生主要做整体设计和参数调整，更像夏令营走标准工业流程。节目借此批判对数据和科学的盲目崇拜：理科生的吹牛套着数据外壳、顶着科学帽子，建立在虚假前提上的严谨推导反而偏差最大，类比当年钱学森用光合作用算亩产上限、被宣传拿去给\"亩产万斤\"背书。落点是自卑与自大本是一体两面，都靠跟人比，真正的自信是平视自己平视他人，普通人要保留一点质疑能力。",
+      "status": "curated",
+      "degree": 10
+    },
+    {
       "id": "model:value-capture",
       "key": "value-capture",
       "label": "价值捕获",
@@ -663,17 +696,6 @@
       "degree": 9
     },
     {
-      "id": "model:authority-misinfluence",
-      "key": "authority-misinfluence",
-      "label": "权威影响",
-      "fullLabel": "权威影响",
-      "type": "model",
-      "route": "models/authority-misinfluence",
-      "summary": "权威影响模型解释单点权威如何压缩组织独立判断，使成员更容易服从而非纠偏。",
-      "status": null,
-      "degree": 9
-    },
-    {
       "id": "model:small-state-balancing-model",
       "key": "small-state-balancing-model",
       "label": "小国平衡术",
@@ -692,17 +714,6 @@
       "type": "theme",
       "route": "themes/ev-collapse-and-exit-risk",
       "summary": "聚焦新能源项目在失速、清算和品牌出清阶段，风险如何向债权人、用户和地方政府层层传导。",
-      "status": null,
-      "degree": 9
-    },
-    {
-      "id": "model:narrative-instrumentalization",
-      "key": "narrative-instrumentalization",
-      "label": "叙事工具化模型",
-      "fullLabel": "叙事工具化模型",
-      "type": "model",
-      "route": "models/narrative-instrumentalization",
-      "summary": "叙事工具化模型解释叙事的主要功能从解释现实转向组织情绪和划分阵营。",
       "status": null,
       "degree": 9
     },
@@ -1301,6 +1312,17 @@
       "degree": 7
     },
     {
+      "id": "theme:platform-governance-and-folk-discourse",
+      "key": "platform-governance-and-folk-discourse",
+      "label": "平台治理与民间话语",
+      "fullLabel": "平台治理与民间话语",
+      "type": "theme",
+      "route": "themes/platform-governance-and-folk-discourse",
+      "summary": "讨论平台如何识别、容忍、限制和清理具有高传播性的民间表达。",
+      "status": null,
+      "degree": 7
+    },
+    {
       "id": "model:screening-machine",
       "key": "screening-machine",
       "label": "筛选机器模型",
@@ -1675,17 +1697,6 @@
       "degree": 6
     },
     {
-      "id": "theme:platform-governance-and-folk-discourse",
-      "key": "platform-governance-and-folk-discourse",
-      "label": "平台治理与民间话语",
-      "fullLabel": "平台治理与民间话语",
-      "type": "theme",
-      "route": "themes/platform-governance-and-folk-discourse",
-      "summary": "讨论平台如何识别、容忍、限制和清理具有高传播性的民间表达。",
-      "status": null,
-      "degree": 6
-    },
-    {
       "id": "model:time-arbitrage-model",
       "key": "time-arbitrage-model",
       "label": "时间套利模型",
@@ -1748,6 +1759,17 @@
       "type": "concept",
       "route": "concepts/consumer-testbed",
       "summary": "企业把本该在研发和验证阶段承担的安全成本，转移到首批消费者、公共道路和真实事故里去消化。",
+      "status": null,
+      "degree": 6
+    },
+    {
+      "id": "theme:new-media-political-mobilization",
+      "key": "new-media-political-mobilization",
+      "label": "新媒体政治动员",
+      "fullLabel": "新媒体政治动员",
+      "type": "theme",
+      "route": "themes/new-media-political-mobilization",
+      "summary": "候选人和政治叙事不再必须依附旧媒体，而可以直接通过新媒体组织情绪、认同和支持。",
       "status": null,
       "degree": 6
     },
@@ -2210,17 +2232,6 @@
       "type": "concept",
       "route": "concepts/pragmatic-legitimacy",
       "summary": "政权或共同体的稳定感，常来自普通人能持续获得可感的生活改善和秩序保障。",
-      "status": null,
-      "degree": 5
-    },
-    {
-      "id": "theme:new-media-political-mobilization",
-      "key": "new-media-political-mobilization",
-      "label": "新媒体政治动员",
-      "fullLabel": "新媒体政治动员",
-      "type": "theme",
-      "route": "themes/new-media-political-mobilization",
-      "summary": "候选人和政治叙事不再必须依附旧媒体，而可以直接通过新媒体组织情绪、认同和支持。",
       "status": null,
       "degree": 5
     },
@@ -3028,6 +3039,17 @@
       "degree": 3
     },
     {
+      "id": "theme:bullshit-politics-and-historical-narratives",
+      "key": "bullshit-politics-and-historical-narratives",
+      "label": "扯淡政治与历史叙事",
+      "fullLabel": "扯淡政治与历史叙事",
+      "type": "theme",
+      "route": "themes/bullshit-politics-and-historical-narratives",
+      "summary": "讨论对真相冷漠的话术如何进入历史解释和身份动员。",
+      "status": null,
+      "degree": 3
+    },
+    {
       "id": "theme:growth-and-family-boundaries",
       "key": "growth-and-family-boundaries",
       "label": "成长与亲情边界",
@@ -3068,6 +3090,17 @@
       "type": "model",
       "route": "models/layered-market",
       "summary": "分层市场说明同一大市场内部，不同层级拥有不同价格、流动性和预期。",
+      "status": null,
+      "degree": 3
+    },
+    {
+      "id": "model:individuation-three-stage",
+      "key": "individuation-three-stage",
+      "label": "个体化三阶段模型",
+      "fullLabel": "个体化三阶段模型",
+      "type": "model",
+      "route": "models/individuation-three-stage",
+      "summary": "个体化三阶段模型把成长理解为依次消化亲情、权威和自我，而非一次性觉醒。",
       "status": null,
       "degree": 3
     },
@@ -3354,6 +3387,17 @@
       "type": "theme",
       "route": "themes/authoritarian-succession-and-state-fragility",
       "summary": "讨论强人、神权或高压体制在接班时刻如何暴露出最深的制度脆弱点。",
+      "status": null,
+      "degree": 3
+    },
+    {
+      "id": "concept:pseudo-confidence",
+      "key": "pseudo-confidence",
+      "label": "伪自信",
+      "fullLabel": "伪自信",
+      "type": "concept",
+      "route": "concepts/pseudo-confidence",
+      "summary": "伪自信指看似强硬、实则依赖外界确认和攻击姿态来遮蔽内在不安的状态。",
       "status": null,
       "degree": 3
     },
@@ -3666,17 +3710,6 @@
       "degree": 2
     },
     {
-      "id": "theme:bullshit-politics-and-historical-narratives",
-      "key": "bullshit-politics-and-historical-narratives",
-      "label": "扯淡政治与历史叙事",
-      "fullLabel": "扯淡政治与历史叙事",
-      "type": "theme",
-      "route": "themes/bullshit-politics-and-historical-narratives",
-      "summary": "讨论对真相冷漠的话术如何进入历史解释和身份动员。",
-      "status": null,
-      "degree": 2
-    },
-    {
       "id": "concept:planning-lockin",
       "key": "planning-lockin",
       "label": "大计划锁定",
@@ -3695,6 +3728,17 @@
       "type": "concept",
       "route": "concepts/moral-capital",
       "summary": "长期为他人承担和创造价值，会形成一种不能即时折现却能改变公共评价的道德资本。",
+      "status": null,
+      "degree": 2
+    },
+    {
+      "id": "concept:truth-indifferent-rhetoric",
+      "key": "truth-indifferent-rhetoric",
+      "label": "对真相冷漠的话术",
+      "fullLabel": "对真相冷漠的话术",
+      "type": "concept",
+      "route": "concepts/truth-indifferent-rhetoric",
+      "summary": "话术若只追求立场效果和情绪动员，就会对真假本身变得冷漠。",
       "status": null,
       "degree": 2
     },
@@ -3739,17 +3783,6 @@
       "type": "model",
       "route": "models/distributed-warfare-system",
       "summary": "分布式战争系统解释无人装备、分散生产、前线反馈和外部供给如何组合成长期战争优势。",
-      "status": null,
-      "degree": 2
-    },
-    {
-      "id": "model:individuation-three-stage",
-      "key": "individuation-three-stage",
-      "label": "个体化三阶段模型",
-      "fullLabel": "个体化三阶段模型",
-      "type": "model",
-      "route": "models/individuation-three-stage",
-      "summary": "个体化三阶段模型把成长理解为依次消化亲情、权威和自我，而非一次性觉醒。",
       "status": null,
       "degree": 2
     },
@@ -4212,17 +4245,6 @@
       "type": "concept",
       "route": "concepts/crisis-power-reallocation",
       "summary": "危机会改变谁在前台、谁承担责任、谁保留资源，从而触发权力位置的重新排序。",
-      "status": null,
-      "degree": 2
-    },
-    {
-      "id": "concept:pseudo-confidence",
-      "key": "pseudo-confidence",
-      "label": "伪自信",
-      "fullLabel": "伪自信",
-      "type": "concept",
-      "route": "concepts/pseudo-confidence",
-      "summary": "伪自信指看似强硬、实则依赖外界确认和攻击姿态来遮蔽内在不安的状态。",
       "status": null,
       "degree": 2
     },
@@ -4718,17 +4740,6 @@
       "type": "person",
       "route": "people/duan-yongping",
       "summary": "段永平是步步高 / BBK 创始人和投资人，节目借他对照王石，讨论成年人如何按价值排序承担选择后果。",
-      "status": null,
-      "degree": 1
-    },
-    {
-      "id": "concept:truth-indifferent-rhetoric",
-      "key": "truth-indifferent-rhetoric",
-      "label": "对真相冷漠的话术",
-      "fullLabel": "对真相冷漠的话术",
-      "type": "concept",
-      "route": "concepts/truth-indifferent-rhetoric",
-      "summary": "话术若只追求立场效果和情绪动员，就会对真假本身变得冷漠。",
       "status": null,
       "degree": 1
     },
@@ -5536,6 +5547,17 @@
       "degree": 1
     },
     {
+      "id": "concept:data-fetishism",
+      "key": "data-fetishism",
+      "label": "数据崇拜",
+      "fullLabel": "数据崇拜",
+      "type": "concept",
+      "route": "concepts/data-fetishism",
+      "summary": "把数据、表格、术语和科学帽子当成真理本身，只要有数字有来源就信。",
+      "status": null,
+      "degree": 1
+    },
+    {
       "id": "person:to-lam",
       "key": "to-lam",
       "label": "苏林",
@@ -5730,6 +5752,17 @@
       "type": "concept",
       "route": "concepts/malevolence-self-fulfilling",
       "summary": "当一个社会集体假定人性本恶并据此层层设防，这种防备本身会催生出它所恐惧的不信任，把假设变成现实。",
+      "status": null,
+      "degree": 1
+    },
+    {
+      "id": "concept:false-premise-rigor",
+      "key": "false-premise-rigor",
+      "label": "虚假前提的严谨偏差",
+      "fullLabel": "虚假前提的严谨偏差",
+      "type": "concept",
+      "route": "concepts/false-premise-rigor",
+      "summary": "前提被造假时，越严谨的推导越把谎言推得像真的、越难戳破。",
       "status": null,
       "degree": 1
     },
@@ -12141,6 +12174,56 @@
     {
       "source": "episode:EP164",
       "target": "theme:deglobalization-and-cultural-fragmentation",
+      "kind": "episode-theme"
+    },
+    {
+      "source": "episode:EP165",
+      "target": "concept:data-fetishism",
+      "kind": "episode-concept"
+    },
+    {
+      "source": "episode:EP165",
+      "target": "concept:false-premise-rigor",
+      "kind": "episode-concept"
+    },
+    {
+      "source": "episode:EP165",
+      "target": "concept:truth-indifferent-rhetoric",
+      "kind": "episode-concept"
+    },
+    {
+      "source": "episode:EP165",
+      "target": "concept:pseudo-confidence",
+      "kind": "episode-concept"
+    },
+    {
+      "source": "episode:EP165",
+      "target": "model:narrative-instrumentalization",
+      "kind": "episode-model"
+    },
+    {
+      "source": "episode:EP165",
+      "target": "model:individuation-three-stage",
+      "kind": "episode-model"
+    },
+    {
+      "source": "episode:EP165",
+      "target": "model:authority-misinfluence",
+      "kind": "episode-model"
+    },
+    {
+      "source": "episode:EP165",
+      "target": "theme:platform-governance-and-folk-discourse",
+      "kind": "episode-theme"
+    },
+    {
+      "source": "episode:EP165",
+      "target": "theme:new-media-political-mobilization",
+      "kind": "episode-theme"
+    },
+    {
+      "source": "episode:EP165",
+      "target": "theme:bullshit-politics-and-historical-narratives",
       "kind": "episode-theme"
     },
     {
