@@ -2,13 +2,13 @@
   "meta": {
     "title": "颖响力知识图谱",
     "subtitle": "节目、概念、模型、人物、主题之间的可视化连接网络",
-    "nodeCount": 544,
-    "linkCount": 1249,
+    "nodeCount": 548,
+    "linkCount": 1261,
     "typeCounts": {
       "model": 70,
-      "episode": 163,
+      "episode": 164,
       "person": 65,
-      "concept": 155,
+      "concept": 158,
       "theme": 91
     }
   },
@@ -91,6 +91,17 @@
       "degree": 16
     },
     {
+      "id": "theme:singapore-and-small-state-survival",
+      "key": "singapore-and-small-state-survival",
+      "label": "新加坡与小国生存术",
+      "fullLabel": "新加坡与小国生存术",
+      "type": "theme",
+      "route": "themes/singapore-and-small-state-survival",
+      "summary": "讨论新加坡如何把规则、海峡、人才和谨慎外交组合成一套小国长期生存方法。",
+      "status": null,
+      "degree": 15
+    },
+    {
       "id": "episode:EP133",
       "key": "EP133",
       "label": "EP133",
@@ -120,17 +131,6 @@
       "type": "model",
       "route": "models/feedback-loops",
       "summary": "反馈回路模型解释老板偏好、顾问强化和组织沉默如何形成自我强化的错误循环。",
-      "status": null,
-      "degree": 14
-    },
-    {
-      "id": "theme:singapore-and-small-state-survival",
-      "key": "singapore-and-small-state-survival",
-      "label": "新加坡与小国生存术",
-      "fullLabel": "新加坡与小国生存术",
-      "type": "theme",
-      "route": "themes/singapore-and-small-state-survival",
-      "summary": "讨论新加坡如何把规则、海峡、人才和谨慎外交组合成一套小国长期生存方法。",
       "status": null,
       "degree": 14
     },
@@ -311,6 +311,17 @@
       "degree": 12
     },
     {
+      "id": "model:rule-anchored-small-state-model",
+      "key": "rule-anchored-small-state-model",
+      "label": "规则锚定型小国生存",
+      "fullLabel": "规则锚定型小国生存",
+      "type": "model",
+      "route": "models/rule-anchored-small-state-model",
+      "summary": "小国要长期活下来，不能只靠地理好运，更要靠规则信誉、理性政府和可预期的制度自我约束。",
+      "status": null,
+      "degree": 12
+    },
+    {
       "id": "concept:chokepoint-leverage",
       "key": "chokepoint-leverage",
       "label": "咽喉杠杆",
@@ -388,6 +399,17 @@
       "degree": 12
     },
     {
+      "id": "episode:EP164",
+      "key": "EP164",
+      "label": "EP164",
+      "fullLabel": "EP164 · 别再拿\"坡县\"\"印家坡\"当梗了！污名化友邦换流量，既可悲又下作！",
+      "type": "episode",
+      "route": "episodes/EP164",
+      "summary": "本期从中文自媒体对新加坡的污名化切进来：先是骂它经济完蛋、组屋崩盘、沦为\"坡县\"，这套说不下去了，又改口说它被印度人占领、变成\"印加坡\"。节目判断这两套叙事换汤不换药，根子都是羡慕嫉妒恨——羡慕它人均GDP和组屋、嫉妒它是跑得最好的华人国家、恨它独立自主不认朝贡叙事。节目反驳说，新加坡的成功恰恰来自李光耀当年选择多元立国而非建华人国家，它还实打实帮过中国搞苏州工业园区。落点是：战狼自媒体连帮过自己的友邦都咬，咬到寒心，终会招致反噬。",
+      "status": "curated",
+      "degree": 12
+    },
+    {
       "id": "concept:cost-shifting",
       "key": "cost-shifting",
       "label": "成本外移",
@@ -428,17 +450,6 @@
       "type": "theme",
       "route": "themes/real-estate-deleveraging",
       "summary": "讨论房地产在下行周期里如何通过断供、重组、展期和资产处置逐步暴露风险。",
-      "status": null,
-      "degree": 11
-    },
-    {
-      "id": "model:rule-anchored-small-state-model",
-      "key": "rule-anchored-small-state-model",
-      "label": "规则锚定型小国生存",
-      "fullLabel": "规则锚定型小国生存",
-      "type": "model",
-      "route": "models/rule-anchored-small-state-model",
-      "summary": "小国要长期活下来，不能只靠地理好运，更要靠规则信誉、理性政府和可预期的制度自我约束。",
       "status": null,
       "degree": 11
     },
@@ -663,6 +674,17 @@
       "degree": 9
     },
     {
+      "id": "model:small-state-balancing-model",
+      "key": "small-state-balancing-model",
+      "label": "小国平衡术",
+      "fullLabel": "小国平衡术",
+      "type": "model",
+      "route": "models/small-state-balancing-model",
+      "summary": "小国平衡术解释小国在大国之间维持生存空间，靠位置、合法性和现实利益而非纯姿态。",
+      "status": null,
+      "degree": 9
+    },
+    {
       "id": "theme:ev-collapse-and-exit-risk",
       "key": "ev-collapse-and-exit-risk",
       "label": "新能源崩塌与退出风险",
@@ -670,6 +692,17 @@
       "type": "theme",
       "route": "themes/ev-collapse-and-exit-risk",
       "summary": "聚焦新能源项目在失速、清算和品牌出清阶段，风险如何向债权人、用户和地方政府层层传导。",
+      "status": null,
+      "degree": 9
+    },
+    {
+      "id": "model:narrative-instrumentalization",
+      "key": "narrative-instrumentalization",
+      "label": "叙事工具化模型",
+      "fullLabel": "叙事工具化模型",
+      "type": "model",
+      "route": "models/narrative-instrumentalization",
+      "summary": "叙事工具化模型解释叙事的主要功能从解释现实转向组织情绪和划分阵营。",
       "status": null,
       "degree": 9
     },
@@ -872,17 +905,6 @@
       "degree": 8
     },
     {
-      "id": "model:small-state-balancing-model",
-      "key": "small-state-balancing-model",
-      "label": "小国平衡术",
-      "fullLabel": "小国平衡术",
-      "type": "model",
-      "route": "models/small-state-balancing-model",
-      "summary": "小国平衡术解释小国在大国之间维持生存空间，靠位置、合法性和现实利益而非纯姿态。",
-      "status": null,
-      "degree": 8
-    },
-    {
       "id": "theme:ev-safety-and-consumer-testing",
       "key": "ev-safety-and-consumer-testing",
       "label": "新能源安全边界与消费者测试",
@@ -890,17 +912,6 @@
       "type": "theme",
       "route": "themes/ev-safety-and-consumer-testing",
       "summary": "讨论新能源车与相关电池系统如何把安全验证不足的代价，转移到真实用户和真实事故里。",
-      "status": null,
-      "degree": 8
-    },
-    {
-      "id": "model:narrative-instrumentalization",
-      "key": "narrative-instrumentalization",
-      "label": "叙事工具化模型",
-      "fullLabel": "叙事工具化模型",
-      "type": "model",
-      "route": "models/narrative-instrumentalization",
-      "summary": "叙事工具化模型解释叙事的主要功能从解释现实转向组织情绪和划分阵营。",
       "status": null,
       "degree": 8
     },
@@ -2170,6 +2181,17 @@
       "degree": 5
     },
     {
+      "id": "person:vivian-balakrishnan",
+      "key": "vivian-balakrishnan",
+      "label": "维文",
+      "fullLabel": "维文",
+      "type": "person",
+      "route": "people/vivian-balakrishnan",
+      "summary": "维文是新加坡外交部长，节目借他的海峡通行发言说明小国如何用国际法和长期信用保护命门。",
+      "status": null,
+      "degree": 5
+    },
+    {
       "id": "concept:future-path-crowding",
       "key": "future-path-crowding",
       "label": "未来路径拥堵",
@@ -2188,6 +2210,17 @@
       "type": "concept",
       "route": "concepts/pragmatic-legitimacy",
       "summary": "政权或共同体的稳定感，常来自普通人能持续获得可感的生活改善和秩序保障。",
+      "status": null,
+      "degree": 5
+    },
+    {
+      "id": "theme:new-media-political-mobilization",
+      "key": "new-media-political-mobilization",
+      "label": "新媒体政治动员",
+      "fullLabel": "新媒体政治动员",
+      "type": "theme",
+      "route": "themes/new-media-political-mobilization",
+      "summary": "候选人和政治叙事不再必须依附旧媒体，而可以直接通过新媒体组织情绪、认同和支持。",
       "status": null,
       "degree": 5
     },
@@ -2687,13 +2720,13 @@
       "degree": 4
     },
     {
-      "id": "person:vivian-balakrishnan",
-      "key": "vivian-balakrishnan",
-      "label": "维文",
-      "fullLabel": "维文",
-      "type": "person",
-      "route": "people/vivian-balakrishnan",
-      "summary": "维文是新加坡外交部长，节目借他的海峡通行发言说明小国如何用国际法和长期信用保护命门。",
+      "id": "concept:pressure-backfire",
+      "key": "pressure-backfire",
+      "label": "外压反噬",
+      "fullLabel": "外压反噬",
+      "type": "concept",
+      "route": "concepts/pressure-backfire",
+      "summary": "外部施压本想压制对象，却可能反向提供动员资源、受害叙事和上位机会。",
       "status": null,
       "degree": 4
     },
@@ -2705,17 +2738,6 @@
       "type": "theme",
       "route": "themes/hidden-costs",
       "summary": "讨论消费者支付的价格中，有多少是在承担企业内部看不见的成本。",
-      "status": null,
-      "degree": 4
-    },
-    {
-      "id": "theme:new-media-political-mobilization",
-      "key": "new-media-political-mobilization",
-      "label": "新媒体政治动员",
-      "fullLabel": "新媒体政治动员",
-      "type": "theme",
-      "route": "themes/new-media-political-mobilization",
-      "summary": "候选人和政治叙事不再必须依附旧媒体，而可以直接通过新媒体组织情绪、认同和支持。",
       "status": null,
       "degree": 4
     },
@@ -3215,6 +3237,17 @@
       "degree": 3
     },
     {
+      "id": "person:lee-kuan-yew",
+      "key": "lee-kuan-yew",
+      "label": "李光耀",
+      "fullLabel": "李光耀",
+      "type": "person",
+      "route": "people/lee-kuan-yew",
+      "summary": "李光耀是新加坡建国总理，节目借他说明新加坡国家身份、国家责任和小国生存决心怎样压过祖籍血缘与软弱叙事。",
+      "status": null,
+      "degree": 3
+    },
+    {
       "id": "person:lee-hsien-loong",
       "key": "lee-hsien-loong",
       "label": "李显龙",
@@ -3310,17 +3343,6 @@
       "type": "theme",
       "route": "themes/data-cosmetics-and-false-prosperity",
       "summary": "讨论地方政府、企业与市场如何用账面数据制造景气感，却把真实风险继续藏在黑箱里。",
-      "status": null,
-      "degree": 3
-    },
-    {
-      "id": "concept:pressure-backfire",
-      "key": "pressure-backfire",
-      "label": "外压反噬",
-      "fullLabel": "外压反噬",
-      "type": "concept",
-      "route": "concepts/pressure-backfire",
-      "summary": "外部施压本想压制对象，却可能反向提供动员资源、受害叙事和上位机会。",
       "status": null,
       "degree": 3
     },
@@ -3952,17 +3974,6 @@
       "degree": 2
     },
     {
-      "id": "person:lee-kuan-yew",
-      "key": "lee-kuan-yew",
-      "label": "李光耀",
-      "fullLabel": "李光耀",
-      "type": "person",
-      "route": "people/lee-kuan-yew",
-      "summary": "李光耀是新加坡建国总理，节目借他说明新加坡国家身份、国家责任和小国生存决心怎样压过祖籍血缘与软弱叙事。",
-      "status": null,
-      "degree": 2
-    },
-    {
       "id": "model:profit-reservoir-cycle",
       "key": "profit-reservoir-cycle",
       "label": "利润蓄水池循环模型",
@@ -4014,6 +4025,17 @@
       "type": "theme",
       "route": "themes/content-regulation-and-short-drama",
       "summary": "讨论长剧、电影、网剧和短剧在不同审核路径下如何重新竞争。",
+      "status": null,
+      "degree": 2
+    },
+    {
+      "id": "theme:deglobalization-and-cultural-fragmentation",
+      "key": "deglobalization-and-cultural-fragmentation",
+      "label": "逆全球化与文化碎片化",
+      "fullLabel": "逆全球化与文化碎片化",
+      "type": "theme",
+      "route": "themes/deglobalization-and-cultural-fragmentation",
+      "summary": "讨论全球舞台如何从英语中心和统一审美，转向更地方化、更圈层化的表达竞争。",
       "status": null,
       "degree": 2
     },
@@ -4579,6 +4601,17 @@
       "degree": 1
     },
     {
+      "id": "concept:tributary-mindset",
+      "key": "tributary-mindset",
+      "label": "朝贡思维",
+      "fullLabel": "朝贡思维",
+      "type": "concept",
+      "route": "concepts/tributary-mindset",
+      "summary": "朝贡思维指在大国崛起叙事下，期待周边富裕小国“万国来朝、进贡、祭祖”，把对方当成应归附的藩属或飞地。",
+      "status": null,
+      "degree": 1
+    },
+    {
       "id": "concept:city-soul-gap",
       "key": "city-soul-gap",
       "label": "城市灵魂落差",
@@ -4696,6 +4729,17 @@
       "type": "concept",
       "route": "concepts/truth-indifferent-rhetoric",
       "summary": "话术若只追求立场效果和情绪动员，就会对真假本身变得冷漠。",
+      "status": null,
+      "degree": 1
+    },
+    {
+      "id": "concept:multiethnic-nation-building",
+      "key": "multiethnic-nation-building",
+      "label": "多元立国",
+      "fullLabel": "多元立国",
+      "type": "concept",
+      "route": "concepts/multiethnic-nation-building",
+      "summary": "多元立国指新加坡建国时放弃建华人国家、选择各族同为“新加坡人”的多元化路线，以此换取团结与发展。",
       "status": null,
       "degree": 1
     },
@@ -4916,6 +4960,17 @@
       "type": "model",
       "route": "models/centralized-control-backfire",
       "summary": "集中控制把监管便利和低成本做出来，也会把失效点集中到同一个中心节点上。",
+      "status": null,
+      "degree": 1
+    },
+    {
+      "id": "concept:envy-driven-smear",
+      "key": "envy-driven-smear",
+      "label": "嫉妒驱动的污名化",
+      "fullLabel": "嫉妒驱动的污名化",
+      "type": "concept",
+      "route": "concepts/envy-driven-smear",
+      "summary": "嫉妒驱动的污名化指因为追不上、得不到，就转而用谣言和贬低去摧毁对方，从而获得心理平衡。",
       "status": null,
       "degree": 1
     },
@@ -5224,17 +5279,6 @@
       "type": "concept",
       "route": "concepts/internal-migration",
       "summary": "不发生地理迁移，而是从主流劳动、消费、身份和关系规则中退出。",
-      "status": null,
-      "degree": 1
-    },
-    {
-      "id": "theme:deglobalization-and-cultural-fragmentation",
-      "key": "deglobalization-and-cultural-fragmentation",
-      "label": "逆全球化与文化碎片化",
-      "fullLabel": "逆全球化与文化碎片化",
-      "type": "theme",
-      "route": "themes/deglobalization-and-cultural-fragmentation",
-      "summary": "讨论全球舞台如何从英语中心和统一审美，转向更地方化、更圈层化的表达竞争。",
       "status": null,
       "degree": 1
     },
@@ -12037,6 +12081,66 @@
     {
       "source": "episode:EP163",
       "target": "theme:performative-governance-and-ritual-display",
+      "kind": "episode-theme"
+    },
+    {
+      "source": "episode:EP164",
+      "target": "concept:envy-driven-smear",
+      "kind": "episode-concept"
+    },
+    {
+      "source": "episode:EP164",
+      "target": "concept:multiethnic-nation-building",
+      "kind": "episode-concept"
+    },
+    {
+      "source": "episode:EP164",
+      "target": "concept:tributary-mindset",
+      "kind": "episode-concept"
+    },
+    {
+      "source": "episode:EP164",
+      "target": "concept:pressure-backfire",
+      "kind": "episode-concept"
+    },
+    {
+      "source": "episode:EP164",
+      "target": "model:rule-anchored-small-state-model",
+      "kind": "episode-model"
+    },
+    {
+      "source": "episode:EP164",
+      "target": "model:small-state-balancing-model",
+      "kind": "episode-model"
+    },
+    {
+      "source": "episode:EP164",
+      "target": "model:narrative-instrumentalization",
+      "kind": "episode-model"
+    },
+    {
+      "source": "episode:EP164",
+      "target": "person:lee-kuan-yew",
+      "kind": "episode-person"
+    },
+    {
+      "source": "episode:EP164",
+      "target": "person:vivian-balakrishnan",
+      "kind": "episode-person"
+    },
+    {
+      "source": "episode:EP164",
+      "target": "theme:singapore-and-small-state-survival",
+      "kind": "episode-theme"
+    },
+    {
+      "source": "episode:EP164",
+      "target": "theme:new-media-political-mobilization",
+      "kind": "episode-theme"
+    },
+    {
+      "source": "episode:EP164",
+      "target": "theme:deglobalization-and-cultural-fragmentation",
       "kind": "episode-theme"
     },
     {
