@@ -2,13 +2,13 @@
   "meta": {
     "title": "颖响力知识图谱",
     "subtitle": "节目、概念、模型、人物、主题之间的可视化连接网络",
-    "nodeCount": 540,
-    "linkCount": 1237,
+    "nodeCount": 544,
+    "linkCount": 1249,
     "typeCounts": {
       "model": 70,
-      "episode": 162,
+      "episode": 163,
       "person": 65,
-      "concept": 152,
+      "concept": 155,
       "theme": 91
     }
   },
@@ -373,6 +373,17 @@
       "type": "episode",
       "route": "episodes/EP149",
       "summary": "节目从国内自媒体炒作的\"李显龙绕开北京、中新关系出现大裂痕\"切入，先拆穿谣言：李显龙本就没打算去北京开高层会谈，他要的是下沉到中国经济里亲眼考察实况。顺着五天行程——广西看西部陆海新通道与平陆运河、上海看人工智能与外资总部——节目把这趟定性为务实低调的经济考察，目的是为黄循财政府的下一步和新加坡的投资方向提供依据。再把\"分散投资风险\"接到菲律宾选边站和东南亚动荡上，落点是小国在中美博弈下如何靠平衡与规则保住生存空间。",
+      "status": "curated",
+      "degree": 12
+    },
+    {
+      "id": "episode:EP163",
+      "key": "EP163",
+      "label": "EP163",
+      "fullLabel": "EP163 · 鹅腿阿姨事件四个切片解读！炒美股的爹不如卖鹅腿的妈！",
+      "type": "episode",
+      "route": "episodes/EP163",
+      "summary": "本期借鹅腿阿姨从清北爆红十余年、搬到国贸两天就被识破的反转，切出四个剖面。第一刀切清华鹅腿群里集体发嗲的截图，判断这批最顶尖的学子精神上还没断奶，卡在试母阶段就进了社会。第二刀切排队投喂时的名校自豪感，指出那是一种群体自我驯化——把鹅腿供成身份火炬，再用道德解释权把阿姨收编进自己的校园叙事。第三刀切互联网制造骗子的流行说法，反驳骗子和信息不对称从来都在，真正的病是没人教会我们自我分辨。第四刀切监管，主张造假治理的出路不是保姆式的事前筛查，而是不论链条多长都追到底、罚到倾家荡产的事后追责。",
       "status": "curated",
       "degree": 12
     },
@@ -1576,6 +1587,17 @@
       "degree": 6
     },
     {
+      "id": "theme:rule-of-law-boundaries-and-social-trust",
+      "key": "rule-of-law-boundaries-and-social-trust",
+      "label": "法治边界与社会信任",
+      "fullLabel": "法治边界与社会信任",
+      "type": "theme",
+      "route": "themes/rule-of-law-boundaries-and-social-trust",
+      "summary": "关注法律灰区如何影响公众的善意、风险感和彼此信任。",
+      "status": null,
+      "degree": 6
+    },
+    {
       "id": "model:distributed-innovation",
       "key": "distributed-innovation",
       "label": "分布式创新",
@@ -1609,6 +1631,17 @@
       "degree": 6
     },
     {
+      "id": "theme:exam-centered-education-and-person-formation",
+      "key": "exam-centered-education-and-person-formation",
+      "label": "考试中心教育与人成形",
+      "fullLabel": "考试中心教育与人成形",
+      "type": "theme",
+      "route": "themes/exam-centered-education-and-person-formation",
+      "summary": "关注学校如何把人塑造成服从考试和权威的对象。",
+      "status": null,
+      "degree": 6
+    },
+    {
       "id": "theme:youth-dreams-and-safe-paths",
       "key": "youth-dreams-and-safe-paths",
       "label": "年轻人梦想与安全路径",
@@ -1627,6 +1660,17 @@
       "type": "theme",
       "route": "themes/youth-withdrawal-and-lying-flat",
       "summary": "讨论年轻人在主流机会、劳动回报和身份路径收缩后，如何通过低欲望、退出和躺平保留有限主体性。",
+      "status": null,
+      "degree": 6
+    },
+    {
+      "id": "theme:platform-governance-and-folk-discourse",
+      "key": "platform-governance-and-folk-discourse",
+      "label": "平台治理与民间话语",
+      "fullLabel": "平台治理与民间话语",
+      "type": "theme",
+      "route": "themes/platform-governance-and-folk-discourse",
+      "summary": "讨论平台如何识别、容忍、限制和清理具有高传播性的民间表达。",
       "status": null,
       "degree": 6
     },
@@ -2027,17 +2071,6 @@
       "degree": 5
     },
     {
-      "id": "theme:rule-of-law-boundaries-and-social-trust",
-      "key": "rule-of-law-boundaries-and-social-trust",
-      "label": "法治边界与社会信任",
-      "fullLabel": "法治边界与社会信任",
-      "type": "theme",
-      "route": "themes/rule-of-law-boundaries-and-social-trust",
-      "summary": "关注法律灰区如何影响公众的善意、风险感和彼此信任。",
-      "status": null,
-      "degree": 5
-    },
-    {
       "id": "concept:pan-institutional-middle-class",
       "key": "pan-institutional-middle-class",
       "label": "泛体制中产",
@@ -2104,17 +2137,6 @@
       "degree": 5
     },
     {
-      "id": "theme:exam-centered-education-and-person-formation",
-      "key": "exam-centered-education-and-person-formation",
-      "label": "考试中心教育与人成形",
-      "fullLabel": "考试中心教育与人成形",
-      "type": "theme",
-      "route": "themes/exam-centered-education-and-person-formation",
-      "summary": "关注学校如何把人塑造成服从考试和权威的对象。",
-      "status": null,
-      "degree": 5
-    },
-    {
       "id": "concept:unfinished-vehicle",
       "key": "unfinished-vehicle",
       "label": "烂尾车",
@@ -2133,17 +2155,6 @@
       "type": "theme",
       "route": "themes/platform-labor-and-lived-reality",
       "summary": "关注平台型劳动如何被宣传美化，以及真实生存条件怎样被遮蔽。",
-      "status": null,
-      "degree": 5
-    },
-    {
-      "id": "theme:platform-governance-and-folk-discourse",
-      "key": "platform-governance-and-folk-discourse",
-      "label": "平台治理与民间话语",
-      "fullLabel": "平台治理与民间话语",
-      "type": "theme",
-      "route": "themes/platform-governance-and-folk-discourse",
-      "summary": "讨论平台如何识别、容忍、限制和清理具有高传播性的民间表达。",
       "status": null,
       "degree": 5
     },
@@ -2511,6 +2522,17 @@
       "degree": 4
     },
     {
+      "id": "concept:symbol-mismatch",
+      "key": "symbol-mismatch",
+      "label": "符号错配",
+      "fullLabel": "符号错配",
+      "type": "concept",
+      "route": "concepts/symbol-mismatch",
+      "summary": "品牌符号、价格带和实际体验不一致时，用户会感到叙事与产品之间的违和。",
+      "status": null,
+      "degree": 4
+    },
+    {
       "id": "concept:premium-narrative",
       "key": "premium-narrative",
       "label": "高价叙事",
@@ -2705,6 +2727,17 @@
       "type": "concept",
       "route": "concepts/information-cocoon-breach",
       "summary": "让原本封闭的人群第一次看见自身位置、差异和现实结构的传播裂缝。",
+      "status": null,
+      "degree": 4
+    },
+    {
+      "id": "theme:performative-governance-and-ritual-display",
+      "key": "performative-governance-and-ritual-display",
+      "label": "形式主义治理与仪式表演",
+      "fullLabel": "形式主义治理与仪式表演",
+      "type": "theme",
+      "route": "themes/performative-governance-and-ritual-display",
+      "summary": "关注治理如何通过热闹、仪式和可见动作来替代真正的问题解决。",
       "status": null,
       "degree": 4
     },
@@ -3017,17 +3050,6 @@
       "degree": 3
     },
     {
-      "id": "concept:symbol-mismatch",
-      "key": "symbol-mismatch",
-      "label": "符号错配",
-      "fullLabel": "符号错配",
-      "type": "concept",
-      "route": "concepts/symbol-mismatch",
-      "summary": "品牌符号、价格带和实际体验不一致时，用户会感到叙事与产品之间的违和。",
-      "status": null,
-      "degree": 3
-    },
-    {
       "id": "concept:industrial-education-lag",
       "key": "industrial-education-lag",
       "label": "工业时代教育惯性",
@@ -3160,6 +3182,17 @@
       "degree": 3
     },
     {
+      "id": "concept:giant-infant-rights-defense",
+      "key": "giant-infant-rights-defense",
+      "label": "巨婴式维权",
+      "fullLabel": "巨婴式维权",
+      "type": "concept",
+      "route": "concepts/giant-infant-rights-defense",
+      "summary": "巨婴式维权指个体把个人便利和情绪包装成权利诉求，却拒绝承担规则、义务和公共后果。",
+      "status": null,
+      "degree": 3
+    },
+    {
       "id": "concept:exam-centered-discipline",
       "key": "exam-centered-discipline",
       "label": "考试中心化规训",
@@ -3259,6 +3292,17 @@
       "degree": 3
     },
     {
+      "id": "model:identity-stratification",
+      "key": "identity-stratification",
+      "label": "身份型分层",
+      "fullLabel": "身份型分层",
+      "type": "model",
+      "route": "models/identity-stratification",
+      "summary": "身份型分层说明阶层排序从收入和资产，转向编制、合规位置、圈层资源和稳定预期。",
+      "status": null,
+      "degree": 3
+    },
+    {
       "id": "theme:data-cosmetics-and-false-prosperity",
       "key": "data-cosmetics-and-false-prosperity",
       "label": "数据粉饰与虚假繁荣",
@@ -3310,17 +3354,6 @@
       "type": "concept",
       "route": "concepts/cult-branding",
       "summary": "用户从购买者变成主动辩护、传播和站队的信众时，品牌就进入信众化阶段。",
-      "status": null,
-      "degree": 3
-    },
-    {
-      "id": "theme:performative-governance-and-ritual-display",
-      "key": "performative-governance-and-ritual-display",
-      "label": "形式主义治理与仪式表演",
-      "fullLabel": "形式主义治理与仪式表演",
-      "type": "theme",
-      "route": "themes/performative-governance-and-ritual-display",
-      "summary": "关注治理如何通过热闹、仪式和可见动作来替代真正的问题解决。",
       "status": null,
       "degree": 3
     },
@@ -3688,6 +3721,17 @@
       "degree": 2
     },
     {
+      "id": "model:individuation-three-stage",
+      "key": "individuation-three-stage",
+      "label": "个体化三阶段模型",
+      "fullLabel": "个体化三阶段模型",
+      "type": "model",
+      "route": "models/individuation-three-stage",
+      "summary": "个体化三阶段模型把成长理解为依次消化亲情、权威和自我，而非一次性觉醒。",
+      "status": null,
+      "degree": 2
+    },
+    {
       "id": "theme:public-service-downgrading",
       "key": "public-service-downgrading",
       "label": "公共服务降标与治理后果",
@@ -3886,17 +3930,6 @@
       "degree": 2
     },
     {
-      "id": "concept:giant-infant-rights-defense",
-      "key": "giant-infant-rights-defense",
-      "label": "巨婴式维权",
-      "fullLabel": "巨婴式维权",
-      "type": "concept",
-      "route": "concepts/giant-infant-rights-defense",
-      "summary": "巨婴式维权指个体把个人便利和情绪包装成权利诉求，却拒绝承担规则、义务和公共后果。",
-      "status": null,
-      "degree": 2
-    },
-    {
       "id": "concept:inventory-banking",
       "key": "inventory-banking",
       "label": "库存银行化",
@@ -4040,17 +4073,6 @@
       "degree": 2
     },
     {
-      "id": "model:identity-stratification",
-      "key": "identity-stratification",
-      "label": "身份型分层",
-      "fullLabel": "身份型分层",
-      "type": "model",
-      "route": "models/identity-stratification",
-      "summary": "身份型分层说明阶层排序从收入和资产，转向编制、合规位置、圈层资源和稳定预期。",
-      "status": null,
-      "degree": 2
-    },
-    {
       "id": "concept:aesthetic-compression",
       "key": "aesthetic-compression",
       "label": "审美压缩",
@@ -4091,6 +4113,17 @@
       "type": "concept",
       "route": "concepts/market-discipline-failure",
       "summary": "市场惩戒失效指规则被明显挑战后，法律、监管、审计和价格反应都没有让违规者付出足够代价。",
+      "status": null,
+      "degree": 2
+    },
+    {
+      "id": "model:ex-post-accountability-governance",
+      "key": "ex-post-accountability-governance",
+      "label": "事后追责治理模型",
+      "fullLabel": "事后追责治理模型",
+      "type": "model",
+      "route": "models/ex-post-accountability-governance",
+      "summary": "治理可以选择事前管制每个人，也可以选择给自由、事后对违规者施加无法承受的代价；后者往往比前者更省成本也更有效。",
       "status": null,
       "degree": 2
     },
@@ -4623,6 +4656,17 @@
       "degree": 1
     },
     {
+      "id": "concept:moral-interpretive-authority",
+      "key": "moral-interpretive-authority",
+      "label": "道德解释权",
+      "fullLabel": "道德解释权",
+      "type": "concept",
+      "route": "concepts/moral-interpretive-authority",
+      "summary": "一个群体自认有资格替他人和外部事物定义意义、判定对错，把别人收编进自己的叙事里。",
+      "status": null,
+      "degree": 1
+    },
+    {
       "id": "person:dong-yuhui",
       "key": "dong-yuhui",
       "label": "董宇辉",
@@ -4652,6 +4696,17 @@
       "type": "concept",
       "route": "concepts/truth-indifferent-rhetoric",
       "summary": "话术若只追求立场效果和情绪动员，就会对真假本身变得冷漠。",
+      "status": null,
+      "degree": 1
+    },
+    {
+      "id": "concept:outsourced-discernment",
+      "key": "outsourced-discernment",
+      "label": "分辨外包",
+      "fullLabel": "分辨外包",
+      "type": "concept",
+      "route": "concepts/outsourced-discernment",
+      "summary": "个体放弃自我分辨好坏的能力，默认有监管机构替自己事先筛查，自己只管享受结果。",
       "status": null,
       "degree": 1
     },
@@ -4718,17 +4773,6 @@
       "type": "person",
       "route": "people/mattias-grafstrom",
       "summary": "格拉夫斯特伦是瑞典/荷兰背景的足球行政人物、FIFA 现任秘书长(2024 年正式任),节目里他是 FIFA 在华推广动作的执行代表。",
-      "status": null,
-      "degree": 1
-    },
-    {
-      "id": "model:individuation-three-stage",
-      "key": "individuation-three-stage",
-      "label": "个体化三阶段模型",
-      "fullLabel": "个体化三阶段模型",
-      "type": "model",
-      "route": "models/individuation-three-stage",
-      "summary": "个体化三阶段模型把成长理解为依次消化亲情、权威和自我，而非一次性觉醒。",
       "status": null,
       "degree": 1
     },
@@ -5327,6 +5371,17 @@
       "degree": 1
     },
     {
+      "id": "concept:collective-self-domestication",
+      "key": "collective-self-domestication",
+      "label": "群体自我驯化",
+      "fullLabel": "群体自我驯化",
+      "type": "concept",
+      "route": "concepts/collective-self-domestication",
+      "summary": "一个群体靠贬低外圈、强化内部认同来确立优越地位，把成员自愿地圈进一套自我安抚的逻辑里。",
+      "status": null,
+      "degree": 1
+    },
+    {
       "id": "theme:evaluation-and-moral-capital",
       "key": "evaluation-and-moral-capital",
       "label": "人物评价与道德资本",
@@ -5433,17 +5488,6 @@
       "type": "theme",
       "route": "themes/time-horizon-and-foresight",
       "summary": "讨论人物与企业如何在不同周期里提前摆放自己，而不是等结果发生后再被动解释。",
-      "status": null,
-      "degree": 1
-    },
-    {
-      "id": "model:ex-post-accountability-governance",
-      "key": "ex-post-accountability-governance",
-      "label": "事后追责治理模型",
-      "fullLabel": "事后追责治理模型",
-      "type": "model",
-      "route": "models/ex-post-accountability-governance",
-      "summary": "治理可以选择事前管制每个人，也可以选择给自由、事后对违规者施加无法承受的代价；后者往往比前者更省成本也更有效。",
       "status": null,
       "degree": 1
     },
@@ -11933,6 +11977,66 @@
     {
       "source": "episode:EP162",
       "target": "theme:great-power-competition-and-strategic-time",
+      "kind": "episode-theme"
+    },
+    {
+      "source": "episode:EP163",
+      "target": "concept:collective-self-domestication",
+      "kind": "episode-concept"
+    },
+    {
+      "source": "episode:EP163",
+      "target": "concept:moral-interpretive-authority",
+      "kind": "episode-concept"
+    },
+    {
+      "source": "episode:EP163",
+      "target": "concept:outsourced-discernment",
+      "kind": "episode-concept"
+    },
+    {
+      "source": "episode:EP163",
+      "target": "concept:symbol-mismatch",
+      "kind": "episode-concept"
+    },
+    {
+      "source": "episode:EP163",
+      "target": "concept:giant-infant-rights-defense",
+      "kind": "episode-concept"
+    },
+    {
+      "source": "episode:EP163",
+      "target": "model:individuation-three-stage",
+      "kind": "episode-model"
+    },
+    {
+      "source": "episode:EP163",
+      "target": "model:ex-post-accountability-governance",
+      "kind": "episode-model"
+    },
+    {
+      "source": "episode:EP163",
+      "target": "model:identity-stratification",
+      "kind": "episode-model"
+    },
+    {
+      "source": "episode:EP163",
+      "target": "theme:exam-centered-education-and-person-formation",
+      "kind": "episode-theme"
+    },
+    {
+      "source": "episode:EP163",
+      "target": "theme:rule-of-law-boundaries-and-social-trust",
+      "kind": "episode-theme"
+    },
+    {
+      "source": "episode:EP163",
+      "target": "theme:platform-governance-and-folk-discourse",
+      "kind": "episode-theme"
+    },
+    {
+      "source": "episode:EP163",
+      "target": "theme:performative-governance-and-ritual-display",
       "kind": "episode-theme"
     },
     {
