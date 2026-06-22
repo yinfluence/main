@@ -2,13 +2,13 @@
   "meta": {
     "title": "颖响力知识图谱",
     "subtitle": "节目、概念、模型、人物、主题之间的可视化连接网络",
-    "nodeCount": 551,
-    "linkCount": 1271,
+    "nodeCount": 557,
+    "linkCount": 1283,
     "typeCounts": {
-      "model": 70,
-      "episode": 165,
+      "model": 72,
+      "episode": 166,
       "person": 65,
-      "concept": 160,
+      "concept": 163,
       "theme": 91
     }
   },
@@ -406,6 +406,17 @@
       "type": "episode",
       "route": "episodes/EP164",
       "summary": "本期从中文自媒体对新加坡的污名化切进来：先是骂它经济完蛋、组屋崩盘、沦为\"坡县\"，这套说不下去了，又改口说它被印度人占领、变成\"印加坡\"。节目判断这两套叙事换汤不换药，根子都是羡慕嫉妒恨——羡慕它人均GDP和组屋、嫉妒它是跑得最好的华人国家、恨它独立自主不认朝贡叙事。节目反驳说，新加坡的成功恰恰来自李光耀当年选择多元立国而非建华人国家，它还实打实帮过中国搞苏州工业园区。落点是：战狼自媒体连帮过自己的友邦都咬，咬到寒心，终会招致反噬。",
+      "status": "curated",
+      "degree": 12
+    },
+    {
+      "id": "episode:EP166",
+      "key": "EP166",
+      "label": "EP166",
+      "fullLabel": "EP166 · 山姆被市监总局约谈后，还能去吗？火速换帅背后真相！",
+      "type": "episode",
+      "route": "episodes/EP166",
+      "summary": "山姆中国被市场监管总局约谈、又火速换掉采购与品控负责人，冲上全网热搜。节目判断，约谈不等于品控崩塌：山姆是国内商超顶流，自带放大镜，同样的食安问题在它身上被无限放大；真正的病根是五年门店翻倍、狂奔百店，管理和品控没跟上的后遗症。它的东西比普通超市好，但远不是零添加净土，合规只是及格线，会员卡图的是超出及格线的放心。所以约谈对消费者反而是好事，倒逼这家赚得太顺的企业把品控做高而不是做低。落点是别把信任交给任何品牌：能去还得去，有 Costco 优先 Costco，但进了门仍要看配料表、独立思考。",
       "status": "curated",
       "degree": 12
     },
@@ -1301,6 +1312,17 @@
       "degree": 8
     },
     {
+      "id": "theme:rule-of-law-boundaries-and-social-trust",
+      "key": "rule-of-law-boundaries-and-social-trust",
+      "label": "法治边界与社会信任",
+      "fullLabel": "法治边界与社会信任",
+      "type": "theme",
+      "route": "themes/rule-of-law-boundaries-and-social-trust",
+      "summary": "关注法律灰区如何影响公众的善意、风险感和彼此信任。",
+      "status": null,
+      "degree": 7
+    },
+    {
       "id": "theme:dollar-system-and-gray-trade",
       "key": "dollar-system-and-gray-trade",
       "label": "美元体系与灰色贸易",
@@ -1616,17 +1638,6 @@
       "type": "theme",
       "route": "themes/east-asia-security-realignment",
       "summary": "讨论日本重新前台化、台海压力外溢，以及东亚安全合作为何越来越难保持模糊。",
-      "status": null,
-      "degree": 6
-    },
-    {
-      "id": "theme:rule-of-law-boundaries-and-social-trust",
-      "key": "rule-of-law-boundaries-and-social-trust",
-      "label": "法治边界与社会信任",
-      "fullLabel": "法治边界与社会信任",
-      "type": "theme",
-      "route": "themes/rule-of-law-boundaries-and-social-trust",
-      "summary": "关注法律灰区如何影响公众的善意、风险感和彼此信任。",
       "status": null,
       "degree": 6
     },
@@ -2115,6 +2126,17 @@
       "degree": 5
     },
     {
+      "id": "concept:symbol-mismatch",
+      "key": "symbol-mismatch",
+      "label": "符号错配",
+      "fullLabel": "符号错配",
+      "type": "concept",
+      "route": "concepts/symbol-mismatch",
+      "summary": "品牌符号、价格带和实际体验不一致时，用户会感到叙事与产品之间的违和。",
+      "status": null,
+      "degree": 5
+    },
+    {
       "id": "concept:probabilistic-safety",
       "key": "probabilistic-safety",
       "label": "概率型安全",
@@ -2122,6 +2144,17 @@
       "type": "concept",
       "route": "concepts/probabilistic-safety",
       "summary": "风险不是每次都会爆发，但一旦触发就后果极重，因此最容易被组织和用户一起低估。",
+      "status": null,
+      "degree": 5
+    },
+    {
+      "id": "concept:premium-narrative",
+      "key": "premium-narrative",
+      "label": "高价叙事",
+      "fullLabel": "高价叙事",
+      "type": "concept",
+      "route": "concepts/premium-narrative",
+      "summary": "企业用定位、符号、方法论和品牌故事为高价格建立解释框架。",
       "status": null,
       "degree": 5
     },
@@ -2566,28 +2599,6 @@
       "degree": 4
     },
     {
-      "id": "concept:symbol-mismatch",
-      "key": "symbol-mismatch",
-      "label": "符号错配",
-      "fullLabel": "符号错配",
-      "type": "concept",
-      "route": "concepts/symbol-mismatch",
-      "summary": "品牌符号、价格带和实际体验不一致时，用户会感到叙事与产品之间的违和。",
-      "status": null,
-      "degree": 4
-    },
-    {
-      "id": "concept:premium-narrative",
-      "key": "premium-narrative",
-      "label": "高价叙事",
-      "fullLabel": "高价叙事",
-      "type": "concept",
-      "route": "concepts/premium-narrative",
-      "summary": "企业用定位、符号、方法论和品牌故事为高价格建立解释框架。",
-      "status": null,
-      "degree": 4
-    },
-    {
       "id": "person:sanae-takaichi",
       "key": "sanae-takaichi",
       "label": "高市早苗",
@@ -2815,6 +2826,17 @@
       "type": "theme",
       "route": "themes/capital-packaging-and-credential-borrowing",
       "summary": "项目、企业和人物通过借用更高等级的身份和场面来获得额外信用。",
+      "status": null,
+      "degree": 4
+    },
+    {
+      "id": "theme:capital-exit-and-cross-border-harvest",
+      "key": "capital-exit-and-cross-border-harvest",
+      "label": "资本博弈与美元退出",
+      "fullLabel": "资本博弈与美元退出",
+      "type": "theme",
+      "route": "themes/capital-exit-and-cross-border-harvest",
+      "summary": "危机、停牌或重组时期，真正被争夺的往往不是公司本身，而是跨法域的退出通道和美元化收益。",
       "status": null,
       "degree": 4
     },
@@ -3325,6 +3347,17 @@
       "degree": 3
     },
     {
+      "id": "theme:brand-symbol-and-value",
+      "key": "brand-symbol-and-value",
+      "label": "品牌符号与价值感知",
+      "fullLabel": "品牌符号与价值感知",
+      "type": "theme",
+      "route": "themes/brand-symbol-and-value",
+      "summary": "讨论品牌符号如何塑造用户对价格、品质和价值的判断。",
+      "status": null,
+      "degree": 3
+    },
+    {
       "id": "theme:platform-traffic-and-price-distortion",
       "key": "platform-traffic-and-price-distortion",
       "label": "平台流量与价格失真",
@@ -3365,6 +3398,17 @@
       "type": "model",
       "route": "models/identity-stratification",
       "summary": "身份型分层说明阶层排序从收入和资产，转向编制、合规位置、圈层资源和稳定预期。",
+      "status": null,
+      "degree": 3
+    },
+    {
+      "id": "model:ex-post-accountability-governance",
+      "key": "ex-post-accountability-governance",
+      "label": "事后追责治理模型",
+      "fullLabel": "事后追责治理模型",
+      "type": "model",
+      "route": "models/ex-post-accountability-governance",
+      "summary": "治理可以选择事前管制每个人，也可以选择给自由、事后对违规者施加无法承受的代价；后者往往比前者更省成本也更有效。",
       "status": null,
       "degree": 3
     },
@@ -3497,17 +3541,6 @@
       "type": "theme",
       "route": "themes/war-system-and-succession-risk",
       "summary": "讨论战争国家在长期高压运转下，如何同时面临兵员枯竭、内部老化与接班断层。",
-      "status": null,
-      "degree": 3
-    },
-    {
-      "id": "theme:capital-exit-and-cross-border-harvest",
-      "key": "capital-exit-and-cross-border-harvest",
-      "label": "资本博弈与美元退出",
-      "fullLabel": "资本博弈与美元退出",
-      "type": "theme",
-      "route": "themes/capital-exit-and-cross-border-harvest",
-      "summary": "危机、停牌或重组时期，真正被争夺的往往不是公司本身，而是跨法域的退出通道和美元化收益。",
       "status": null,
       "degree": 3
     },
@@ -3761,6 +3794,17 @@
       "type": "model",
       "route": "models/non-monetary-legacy",
       "summary": "非货币遗产强调一个人留下的价值，可能是持续改变了多少人的人生轨迹。",
+      "status": null,
+      "degree": 2
+    },
+    {
+      "id": "concept:outsourced-discernment",
+      "key": "outsourced-discernment",
+      "label": "分辨外包",
+      "fullLabel": "分辨外包",
+      "type": "concept",
+      "route": "concepts/outsourced-discernment",
+      "summary": "个体放弃自我分辨好坏的能力，默认有监管机构替自己事先筛查，自己只管享受结果。",
       "status": null,
       "degree": 2
     },
@@ -4073,17 +4117,6 @@
       "degree": 2
     },
     {
-      "id": "theme:brand-symbol-and-value",
-      "key": "brand-symbol-and-value",
-      "label": "品牌符号与价值感知",
-      "fullLabel": "品牌符号与价值感知",
-      "type": "theme",
-      "route": "themes/brand-symbol-and-value",
-      "summary": "讨论品牌符号如何塑造用户对价格、品质和价值的判断。",
-      "status": null,
-      "degree": 2
-    },
-    {
       "id": "concept:platform-double-standard",
       "key": "platform-double-standard",
       "label": "平台双标",
@@ -4168,17 +4201,6 @@
       "type": "concept",
       "route": "concepts/market-discipline-failure",
       "summary": "市场惩戒失效指规则被明显挑战后，法律、监管、审计和价格反应都没有让违规者付出足够代价。",
-      "status": null,
-      "degree": 2
-    },
-    {
-      "id": "model:ex-post-accountability-governance",
-      "key": "ex-post-accountability-governance",
-      "label": "事后追责治理模型",
-      "fullLabel": "事后追责治理模型",
-      "type": "model",
-      "route": "models/ex-post-accountability-governance",
-      "summary": "治理可以选择事前管制每个人，也可以选择给自由、事后对违规者施加无法承受的代价；后者往往比前者更省成本也更有效。",
       "status": null,
       "degree": 2
     },
@@ -4722,6 +4744,17 @@
       "degree": 1
     },
     {
+      "id": "concept:prominence-amplification",
+      "key": "prominence-amplification",
+      "label": "顶流放大镜",
+      "fullLabel": "顶流放大镜",
+      "type": "concept",
+      "route": "concepts/prominence-amplification",
+      "summary": "同样的问题，发生在关注度最高的头部对象身上会被无限放大；热度不等于问题更严重，只是更显眼。",
+      "status": null,
+      "degree": 1
+    },
+    {
       "id": "person:dong-yuhui",
       "key": "dong-yuhui",
       "label": "董宇辉",
@@ -4751,17 +4784,6 @@
       "type": "concept",
       "route": "concepts/multiethnic-nation-building",
       "summary": "多元立国指新加坡建国时放弃建华人国家、选择各族同为“新加坡人”的多元化路线，以此换取团结与发展。",
-      "status": null,
-      "degree": 1
-    },
-    {
-      "id": "concept:outsourced-discernment",
-      "key": "outsourced-discernment",
-      "label": "分辨外包",
-      "fullLabel": "分辨外包",
-      "type": "concept",
-      "route": "concepts/outsourced-discernment",
-      "summary": "个体放弃自我分辨好坏的能力，默认有监管机构替自己事先筛查，自己只管享受结果。",
       "status": null,
       "degree": 1
     },
@@ -4905,6 +4927,17 @@
       "type": "concept",
       "route": "concepts/overseas-sink-project",
       "summary": "跨境大项目若依赖旧周期资金和宏大叙事，外部条件反转后会变成难以止损的资产黑洞。",
+      "status": null,
+      "degree": 1
+    },
+    {
+      "id": "concept:compliance-floor",
+      "key": "compliance-floor",
+      "label": "合规及格线",
+      "fullLabel": "合规及格线",
+      "type": "concept",
+      "route": "concepts/compliance-floor",
+      "summary": "合规只是法律强制的最低底线，不等于优质；当消费者为更高品质付溢价，仅做到合规就是变相缩水。",
       "status": null,
       "degree": 1
     },
@@ -5151,6 +5184,17 @@
       "degree": 1
     },
     {
+      "id": "model:growth-outpaces-controls",
+      "key": "growth-outpaces-controls",
+      "label": "扩张超速失控模型",
+      "fullLabel": "扩张超速失控模型",
+      "type": "model",
+      "route": "models/growth-outpaces-controls",
+      "summary": "企业门店或规模狂奔的速度，超过供应链、管理和品控的吸纳能力时，质量问题会作为后遗症集中爆发，而不是品牌一夜变质。",
+      "status": null,
+      "degree": 1
+    },
+    {
       "id": "person:le-duan",
       "key": "le-duan",
       "label": "黎笋",
@@ -5213,6 +5257,17 @@
       "type": "person",
       "route": "people/li-yapeng",
       "summary": "李亚鹏是演员转型的创业者和公益行动者，节目借嫣然天使儿童医院重新讨论商业成败之外的公共价值。",
+      "status": null,
+      "degree": 1
+    },
+    {
+      "id": "concept:clean-label-myth",
+      "key": "clean-label-myth",
+      "label": "零添加迷思",
+      "fullLabel": "零添加迷思",
+      "type": "concept",
+      "route": "concepts/clean-label-myth",
+      "summary": "把某个高端品牌想象成完全无添加、绝对干净的净土，是一种消费者自造的误区；再好的品牌也有两极分化的产品。",
       "status": null,
       "degree": 1
     },
@@ -6027,6 +6082,17 @@
       "type": "concept",
       "route": "concepts/attention-trading",
       "summary": "创作者把观众的焦虑、兴奋和参与感换成流量、带货、课程或影响力收益。",
+      "status": null,
+      "degree": 1
+    },
+    {
+      "id": "model:capital-entry-window",
+      "key": "capital-entry-window",
+      "label": "资本进场窗口模型",
+      "fullLabel": "资本进场窗口模型",
+      "type": "model",
+      "route": "models/capital-entry-window",
+      "summary": "资本最容易进入的是缺钱、虚弱的企业；强盈利、强话语权、强后台的企业即使被人眼红，短期也很难被资本切入。",
       "status": null,
       "degree": 1
     },
@@ -12224,6 +12290,66 @@
     {
       "source": "episode:EP165",
       "target": "theme:bullshit-politics-and-historical-narratives",
+      "kind": "episode-theme"
+    },
+    {
+      "source": "episode:EP166",
+      "target": "concept:outsourced-discernment",
+      "kind": "episode-concept"
+    },
+    {
+      "source": "episode:EP166",
+      "target": "concept:premium-narrative",
+      "kind": "episode-concept"
+    },
+    {
+      "source": "episode:EP166",
+      "target": "concept:symbol-mismatch",
+      "kind": "episode-concept"
+    },
+    {
+      "source": "episode:EP166",
+      "target": "concept:compliance-floor",
+      "kind": "episode-concept"
+    },
+    {
+      "source": "episode:EP166",
+      "target": "concept:prominence-amplification",
+      "kind": "episode-concept"
+    },
+    {
+      "source": "episode:EP166",
+      "target": "concept:clean-label-myth",
+      "kind": "episode-concept"
+    },
+    {
+      "source": "episode:EP166",
+      "target": "model:ex-post-accountability-governance",
+      "kind": "episode-model"
+    },
+    {
+      "source": "episode:EP166",
+      "target": "model:growth-outpaces-controls",
+      "kind": "episode-model"
+    },
+    {
+      "source": "episode:EP166",
+      "target": "model:capital-entry-window",
+      "kind": "episode-model"
+    },
+    {
+      "source": "episode:EP166",
+      "target": "theme:brand-symbol-and-value",
+      "kind": "episode-theme"
+    },
+    {
+      "source": "episode:EP166",
+      "target": "theme:rule-of-law-boundaries-and-social-trust",
+      "kind": "episode-theme"
+    },
+    {
+      "source": "episode:EP166",
+      "target": "theme:capital-exit-and-cross-border-harvest",
       "kind": "episode-theme"
     },
     {
