@@ -657,5 +657,16 @@
       "platform": "youtube",
       "url": "https://www.youtube.com/watch?v=LMVlEgip8GM"
     }
+  },
+  "EP167": {
+    "bilibili": {
+      "platform": "bilibili",
+      "url": "https://www.bilibili.com/video/BV1jFjf6KEGm/",
+      "access": "member"
+    },
+    "youtube": {
+      "platform": "youtube",
+      "url": "https://www.youtube.com/watch?v=JDES-wxV4V8"
+    }
   }
 }

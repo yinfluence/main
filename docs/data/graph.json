@@ -2,13 +2,13 @@
   "meta": {
     "title": "颖响力知识图谱",
     "subtitle": "节目、概念、模型、人物、主题之间的可视化连接网络",
-    "nodeCount": 557,
-    "linkCount": 1283,
+    "nodeCount": 565,
+    "linkCount": 1294,
     "typeCounts": {
-      "model": 72,
-      "episode": 166,
+      "model": 74,
+      "episode": 167,
       "person": 65,
-      "concept": 163,
+      "concept": 168,
       "theme": 91
     }
   },
@@ -190,6 +190,17 @@
       "degree": 14
     },
     {
+      "id": "theme:great-power-competition-and-strategic-time",
+      "key": "great-power-competition-and-strategic-time",
+      "label": "大国竞争与战略时间",
+      "fullLabel": "大国竞争与战略时间",
+      "type": "theme",
+      "route": "themes/great-power-competition-and-strategic-time",
+      "summary": "讨论战争、联盟和国家战略如何被时间窗口、社会成本和长期定力重新塑形。",
+      "status": null,
+      "degree": 13
+    },
+    {
       "id": "model:path-dependence",
       "key": "path-dependence",
       "label": "路径依赖",
@@ -298,17 +309,6 @@
       "summary": "节目把5月以来一串看似孤立的金融事件串成一条线：富途、老虎被罚没22亿、八部门两年整治非法跨境券商，香港银行倒查内地账户、要求声明资金并非来自大陆，再到国务院837号令把个人、技术、人才一并纳入对外投资监管。核心判断是：这是一次对老中产和高净值人群境外财富的系统性回收——学特朗普“建墙”，逼两头跑的人要么留在国内受严格监管、要么彻底离开。与此同时，围绕公共体系、靠国家拨款和国企流动的新中产正在长出来，因为他们更稳定可控。落点是老中产去新加坡是相对安全的选择，而新旧中产的置换会用五到十年逐步完成。",
       "status": "curated",
       "degree": 13
-    },
-    {
-      "id": "theme:great-power-competition-and-strategic-time",
-      "key": "great-power-competition-and-strategic-time",
-      "label": "大国竞争与战略时间",
-      "fullLabel": "大国竞争与战略时间",
-      "type": "theme",
-      "route": "themes/great-power-competition-and-strategic-time",
-      "summary": "讨论战争、联盟和国家战略如何被时间窗口、社会成本和长期定力重新塑形。",
-      "status": null,
-      "degree": 12
     },
     {
       "id": "model:rule-anchored-small-state-model",
@@ -509,6 +509,17 @@
       "degree": 11
     },
     {
+      "id": "model:narrative-instrumentalization",
+      "key": "narrative-instrumentalization",
+      "label": "叙事工具化模型",
+      "fullLabel": "叙事工具化模型",
+      "type": "model",
+      "route": "models/narrative-instrumentalization",
+      "summary": "叙事工具化模型解释叙事的主要功能从解释现实转向组织情绪和划分阵营。",
+      "status": null,
+      "degree": 11
+    },
+    {
       "id": "theme:sanctions-and-power-containment",
       "key": "sanctions-and-power-containment",
       "label": "制裁、遏制与集团竞争",
@@ -586,6 +597,17 @@
       "degree": 11
     },
     {
+      "id": "episode:EP167",
+      "key": "EP167",
+      "label": "EP167",
+      "fullLabel": "EP167 · 莫斯科烈焰焚城，石油雨里嗅出的不只是战争苦涩，更是大国悲鸣",
+      "type": "episode",
+      "route": "episodes/EP167",
+      "summary": "本期久违地把镜头转回俄乌战争：乌克兰一次性派出约600架无人机，击穿防空最密集的莫斯科，把首都最大的卡波特尼亚炼油厂彻底炸毁，第二天市民头上下起石油雨。节目判断，这不是又一次提振士气的象征性反击，而是战争进入战略反攻的标志——乌克兰靠FP2无人机的AI末端制导，在信号被干扰时仍能自主识别目标，专挑防空最强的地方打。更深一层，AI和无人机正在拉平大国与小国在常规战争里的差距，小国也能打到大国首都；而把战争锁在电视和宣传里的强人体制，会随石油雨落到公民头上而失去最后的信念。",
+      "status": "curated",
+      "degree": 11
+    },
+    {
       "id": "model:subsidy-capital-flywheel",
       "key": "subsidy-capital-flywheel",
       "label": "补贴资本飞轮",
@@ -615,17 +637,6 @@
       "type": "model",
       "route": "models/authority-misinfluence",
       "summary": "权威影响模型解释单点权威如何压缩组织独立判断，使成员更容易服从而非纠偏。",
-      "status": null,
-      "degree": 10
-    },
-    {
-      "id": "model:narrative-instrumentalization",
-      "key": "narrative-instrumentalization",
-      "label": "叙事工具化模型",
-      "fullLabel": "叙事工具化模型",
-      "type": "model",
-      "route": "models/narrative-instrumentalization",
-      "summary": "叙事工具化模型解释叙事的主要功能从解释现实转向组织情绪和划分阵营。",
       "status": null,
       "degree": 10
     },
@@ -2687,6 +2698,17 @@
       "degree": 4
     },
     {
+      "id": "person:vladimir-putin",
+      "key": "vladimir-putin",
+      "label": "普京",
+      "fullLabel": "普京",
+      "type": "person",
+      "route": "people/vladimir-putin",
+      "summary": "普京是俄罗斯总统，节目借他讨论战争体制、长期执政、接班真空和战略纵深在无人机时代的反转。",
+      "status": null,
+      "degree": 4
+    },
+    {
       "id": "theme:automotive-r-and-d-governance",
       "key": "automotive-r-and-d-governance",
       "label": "汽车研发治理与沉默联盟",
@@ -2804,6 +2826,28 @@
       "type": "concept",
       "route": "concepts/expectation-selling",
       "summary": "通过出售可理解、可规划、可购买的未来想象，中间人获得影响力和收益。",
+      "status": null,
+      "degree": 4
+    },
+    {
+      "id": "concept:strategic-depth-inversion",
+      "key": "strategic-depth-inversion",
+      "label": "战略纵深反转",
+      "fullLabel": "战略纵深反转",
+      "type": "concept",
+      "route": "concepts/strategic-depth-inversion",
+      "summary": "长航程无人系统让传统纵深从缓冲优势变成固定资产暴露和防护成本。",
+      "status": null,
+      "degree": 4
+    },
+    {
+      "id": "theme:war-system-and-succession-risk",
+      "key": "war-system-and-succession-risk",
+      "label": "战争体制与接班风险",
+      "fullLabel": "战争体制与接班风险",
+      "type": "theme",
+      "route": "themes/war-system-and-succession-risk",
+      "summary": "讨论战争国家在长期高压运转下，如何同时面临兵员枯竭、内部老化与接班断层。",
       "status": null,
       "degree": 4
     },
@@ -3105,6 +3149,28 @@
       "degree": 3
     },
     {
+      "id": "concept:distributed-war-industry",
+      "key": "distributed-war-industry",
+      "label": "分布式战时工业",
+      "fullLabel": "分布式战时工业",
+      "type": "concept",
+      "route": "concepts/distributed-war-industry",
+      "summary": "战时生产越能分散到多主体、多地点和快速反馈链条里，越不容易被固定打击瘫痪。",
+      "status": null,
+      "degree": 3
+    },
+    {
+      "id": "model:distributed-warfare-system",
+      "key": "distributed-warfare-system",
+      "label": "分布式战争系统",
+      "fullLabel": "分布式战争系统",
+      "type": "model",
+      "route": "models/distributed-warfare-system",
+      "summary": "分布式战争系统解释无人装备、分散生产、前线反馈和外部供给如何组合成长期战争优势。",
+      "status": null,
+      "degree": 3
+    },
+    {
       "id": "model:layered-market",
       "key": "layered-market",
       "label": "分层市场",
@@ -3369,17 +3435,6 @@
       "degree": 3
     },
     {
-      "id": "person:vladimir-putin",
-      "key": "vladimir-putin",
-      "label": "普京",
-      "fullLabel": "普京",
-      "type": "person",
-      "route": "people/vladimir-putin",
-      "summary": "普京是俄罗斯总统，节目借他讨论战争体制、长期执政、接班真空和战略纵深在无人机时代的反转。",
-      "status": null,
-      "degree": 3
-    },
-    {
       "id": "theme:human-value-and-state-credit",
       "key": "human-value-and-state-credit",
       "label": "人的价值与国家信用",
@@ -3519,28 +3574,6 @@
       "type": "concept",
       "route": "concepts/shadow-fleet",
       "summary": "影子舰队是绕开西方保险、认证、定位和船东透明规则的平行航运网络。",
-      "status": null,
-      "degree": 3
-    },
-    {
-      "id": "concept:strategic-depth-inversion",
-      "key": "strategic-depth-inversion",
-      "label": "战略纵深反转",
-      "fullLabel": "战略纵深反转",
-      "type": "concept",
-      "route": "concepts/strategic-depth-inversion",
-      "summary": "长航程无人系统让传统纵深从缓冲优势变成固定资产暴露和防护成本。",
-      "status": null,
-      "degree": 3
-    },
-    {
-      "id": "theme:war-system-and-succession-risk",
-      "key": "war-system-and-succession-risk",
-      "label": "战争体制与接班风险",
-      "fullLabel": "战争体制与接班风险",
-      "type": "theme",
-      "route": "themes/war-system-and-succession-risk",
-      "summary": "讨论战争国家在长期高压运转下，如何同时面临兵员枯竭、内部老化与接班断层。",
       "status": null,
       "degree": 3
     },
@@ -3805,28 +3838,6 @@
       "type": "concept",
       "route": "concepts/outsourced-discernment",
       "summary": "个体放弃自我分辨好坏的能力，默认有监管机构替自己事先筛查，自己只管享受结果。",
-      "status": null,
-      "degree": 2
-    },
-    {
-      "id": "concept:distributed-war-industry",
-      "key": "distributed-war-industry",
-      "label": "分布式战时工业",
-      "fullLabel": "分布式战时工业",
-      "type": "concept",
-      "route": "concepts/distributed-war-industry",
-      "summary": "战时生产越能分散到多主体、多地点和快速反馈链条里，越不容易被固定打击瘫痪。",
-      "status": null,
-      "degree": 2
-    },
-    {
-      "id": "model:distributed-warfare-system",
-      "key": "distributed-warfare-system",
-      "label": "分布式战争系统",
-      "fullLabel": "分布式战争系统",
-      "type": "model",
-      "route": "models/distributed-warfare-system",
-      "summary": "分布式战争系统解释无人装备、分散生产、前线反馈和外部供给如何组合成长期战争优势。",
       "status": null,
       "degree": 2
     },
@@ -4718,6 +4729,17 @@
       "type": "model",
       "route": "models/trauma-loop",
       "summary": "创伤循环模型解释未被理解和处理的伤害，会以怀旧、灌输和错误想象反复回流。",
+      "status": null,
+      "degree": 1
+    },
+    {
+      "id": "concept:great-small-power-leveling",
+      "key": "great-small-power-leveling",
+      "label": "大国小国差距拉平",
+      "fullLabel": "大国小国差距拉平",
+      "type": "concept",
+      "route": "concepts/great-small-power-leveling",
+      "summary": "在不敢动用核武的常规战争里，AI和无人机让小国靠生产与研发能力反超，甚至打到大国本土。",
       "status": null,
       "degree": 1
     },
@@ -5998,6 +6020,28 @@
       "degree": 1
     },
     {
+      "id": "model:strategic-counteroffensive-turning-point",
+      "key": "strategic-counteroffensive-turning-point",
+      "label": "战略反攻拐点",
+      "fullLabel": "战略反攻拐点",
+      "type": "model",
+      "route": "models/strategic-counteroffensive-turning-point",
+      "summary": "战略反攻拐点解释一场长期战争如何从被动防守、互相僵持走到能打进对方腹地的反攻，并以打到对方首都作为战争接近结束的信号。",
+      "status": null,
+      "degree": 1
+    },
+    {
+      "id": "concept:war-insulation-collapse",
+      "key": "war-insulation-collapse",
+      "label": "战争隔离叙事破产",
+      "fullLabel": "战争隔离叙事破产",
+      "type": "concept",
+      "route": "concepts/war-insulation-collapse",
+      "summary": "强人体制把战争隔离在电视和宣传里，一旦战火落到公民身边，官方叙事就失去信念支撑。",
+      "status": null,
+      "degree": 1
+    },
+    {
       "id": "person:zhang-xin",
       "key": "zhang-xin",
       "label": "张欣",
@@ -6119,6 +6163,17 @@
       "degree": 1
     },
     {
+      "id": "concept:ai-terminal-guidance",
+      "key": "ai-terminal-guidance",
+      "label": "AI末端制导",
+      "fullLabel": "AI末端制导",
+      "type": "concept",
+      "route": "concepts/ai-terminal-guidance",
+      "summary": "无人机在末端被干扰、丢失信号和GPS时，改用机载AI自主识别目标完成攻击。",
+      "status": null,
+      "degree": 1
+    },
+    {
       "id": "person:bad-bunny",
       "key": "bad-bunny",
       "label": "Bad Bunny",
@@ -6139,6 +6194,39 @@
       "summary": "KPI造假均衡解释当达标收益高于真实反馈、造假成本低于合规成本时，整个系统会奖励看起来达标。",
       "status": null,
       "degree": 1
+    },
+    {
+      "id": "concept:scarcity-narrative-gap",
+      "key": "scarcity-narrative-gap",
+      "label": "稀缺叙事背离",
+      "fullLabel": "稀缺叙事背离",
+      "type": "concept",
+      "route": "concepts/scarcity-narrative-gap",
+      "summary": "供给被掐断的恐慌叙事，常常和真实供需、真实价格严重背离，背离本身才是该追问的信号。",
+      "status": null,
+      "degree": 0
+    },
+    {
+      "id": "concept:new-media-politician",
+      "key": "new-media-politician",
+      "label": "新媒体政治人物",
+      "fullLabel": "新媒体政治人物",
+      "type": "concept",
+      "route": "concepts/new-media-politician",
+      "summary": "靠新媒体直接连接受众、绕过传统组织和选举路径崛起的新型权力人物。",
+      "status": null,
+      "degree": 0
+    },
+    {
+      "id": "model:regime-replacement-playbook",
+      "key": "regime-replacement-playbook",
+      "label": "政权更替剧本",
+      "fullLabel": "政权更替剧本",
+      "type": "model",
+      "route": "models/regime-replacement-playbook",
+      "summary": "不颠覆整套政权，只反复换掉最高领导人、直到换出一个能合作的为止的低成本施压剧本。",
+      "status": null,
+      "degree": 0
     }
   ],
   "links": [
@@ -12350,6 +12438,61 @@
     {
       "source": "episode:EP166",
       "target": "theme:capital-exit-and-cross-border-harvest",
+      "kind": "episode-theme"
+    },
+    {
+      "source": "episode:EP167",
+      "target": "concept:strategic-depth-inversion",
+      "kind": "episode-concept"
+    },
+    {
+      "source": "episode:EP167",
+      "target": "concept:distributed-war-industry",
+      "kind": "episode-concept"
+    },
+    {
+      "source": "episode:EP167",
+      "target": "concept:ai-terminal-guidance",
+      "kind": "episode-concept"
+    },
+    {
+      "source": "episode:EP167",
+      "target": "concept:great-small-power-leveling",
+      "kind": "episode-concept"
+    },
+    {
+      "source": "episode:EP167",
+      "target": "concept:war-insulation-collapse",
+      "kind": "episode-concept"
+    },
+    {
+      "source": "episode:EP167",
+      "target": "model:distributed-warfare-system",
+      "kind": "episode-model"
+    },
+    {
+      "source": "episode:EP167",
+      "target": "model:narrative-instrumentalization",
+      "kind": "episode-model"
+    },
+    {
+      "source": "episode:EP167",
+      "target": "model:strategic-counteroffensive-turning-point",
+      "kind": "episode-model"
+    },
+    {
+      "source": "episode:EP167",
+      "target": "person:vladimir-putin",
+      "kind": "episode-person"
+    },
+    {
+      "source": "episode:EP167",
+      "target": "theme:great-power-competition-and-strategic-time",
+      "kind": "episode-theme"
+    },
+    {
+      "source": "episode:EP167",
+      "target": "theme:war-system-and-succession-risk",
       "kind": "episode-theme"
     },
     {
