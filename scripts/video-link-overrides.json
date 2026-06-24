@@ -668,5 +668,15 @@
       "platform": "youtube",
       "url": "https://www.youtube.com/watch?v=JDES-wxV4V8"
     }
+  },
+  "EP168": {
+    "bilibili": {
+      "platform": "bilibili",
+      "url": "https://www.bilibili.com/video/BV1PC7u62EdG/"
+    },
+    "youtube": {
+      "platform": "youtube",
+      "url": "https://www.youtube.com/watch?v=W4Y9Z5kbjpU"
+    }
   }
 }

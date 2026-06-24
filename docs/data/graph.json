@@ -2,12 +2,12 @@
   "meta": {
     "title": "颖响力知识图谱",
     "subtitle": "节目、概念、模型、人物、主题之间的可视化连接网络",
-    "nodeCount": 565,
-    "linkCount": 1294,
+    "nodeCount": 566,
+    "linkCount": 1308,
     "typeCounts": {
       "model": 74,
-      "episode": 167,
       "person": 65,
+      "episode": 168,
       "concept": 168,
       "theme": 91
     }
@@ -36,6 +36,17 @@
       "degree": 17
     },
     {
+      "id": "person:donald-trump",
+      "key": "donald-trump",
+      "label": "特朗普",
+      "fullLabel": "特朗普",
+      "type": "person",
+      "route": "people/donald-trump",
+      "summary": "特朗普是美国共和党政治人物、第45任与第47任美国总统，节目借他观察美国战略收缩、成本转嫁和规则重定价。",
+      "status": null,
+      "degree": 17
+    },
+    {
       "id": "episode:EP132",
       "key": "EP132",
       "label": "EP132",
@@ -45,17 +56,6 @@
       "summary": "本期借 Meta 收购 Manus 被监管否决，讨论这件事对中国草根创业者意味着什么。节目承认叫停交易有明确法律依据，但核心判断是：过去三十年支撑无背景年轻人从零到一的美元基金、全球市场和赴美上市、海外并购退出通道正在被堵死；地方国资基金的考核逻辑重视国有资产不流失、招商落地和可见退出，天然不会为纯软件、早期、无背景的草根项目承担风险。结果是年轻人理性地转向考研考公，创新资源从市场能力转向行政关系，真正的颠覆式创新被挤出，只剩依附式和表演式创新。",
       "status": "curated",
       "degree": 17
-    },
-    {
-      "id": "person:donald-trump",
-      "key": "donald-trump",
-      "label": "特朗普",
-      "fullLabel": "特朗普",
-      "type": "person",
-      "route": "people/donald-trump",
-      "summary": "特朗普是美国共和党政治人物、第45任与第47任美国总统，节目借他观察美国战略收缩、成本转嫁和规则重定价。",
-      "status": null,
-      "degree": 16
     },
     {
       "id": "concept:hidden-debt",
@@ -124,6 +124,17 @@
       "degree": 15
     },
     {
+      "id": "theme:great-power-competition-and-strategic-time",
+      "key": "great-power-competition-and-strategic-time",
+      "label": "大国竞争与战略时间",
+      "fullLabel": "大国竞争与战略时间",
+      "type": "theme",
+      "route": "themes/great-power-competition-and-strategic-time",
+      "summary": "讨论战争、联盟和国家战略如何被时间窗口、社会成本和长期定力重新塑形。",
+      "status": null,
+      "degree": 14
+    },
+    {
       "id": "model:feedback-loops",
       "key": "feedback-loops",
       "label": "反馈回路",
@@ -190,15 +201,15 @@
       "degree": 14
     },
     {
-      "id": "theme:great-power-competition-and-strategic-time",
-      "key": "great-power-competition-and-strategic-time",
-      "label": "大国竞争与战略时间",
-      "fullLabel": "大国竞争与战略时间",
-      "type": "theme",
-      "route": "themes/great-power-competition-and-strategic-time",
-      "summary": "讨论战争、联盟和国家战略如何被时间窗口、社会成本和长期定力重新塑形。",
-      "status": null,
-      "degree": 13
+      "id": "episode:EP168",
+      "key": "EP168",
+      "label": "EP168",
+      "fullLabel": "EP168 · 美伊协议谁赢了？油价为何没涨到300美元？",
+      "type": "episode",
+      "route": "episodes/EP168",
+      "summary": "本期重读美伊协议，主播给出和「美国出大问题、川普认输、伊朗大胜」主流叙事相反的解读。判断协议不是川普着急收场的认输，而是委内瑞拉模式的2.0版：美国要的从来不是颠覆政权，而是打掉最高领导人、换一个能谈的，脏活交给以色列，没换到合适的就先签协议、做时间的朋友。油价没涨到200至300美元，也不是世界真缺油，而是需求被高估、美国趁机卖委内瑞拉的油去库存。真正被盯住的是灰色贸易，逼伊朗回到SWIFT和美元体系，才是开战的本源动机。落点是别用旧政客逻辑看川普这种新媒体政治人物，中期选举对他没那么重要。",
+      "status": "curated",
+      "degree": 14
     },
     {
       "id": "model:path-dependence",
@@ -208,6 +219,17 @@
       "type": "model",
       "route": "models/path-dependence",
       "summary": "路径依赖解释早期技术和叙事选择一旦成功，就会反过来限制后续转向更优路径。",
+      "status": null,
+      "degree": 13
+    },
+    {
+      "id": "concept:chokepoint-leverage",
+      "key": "chokepoint-leverage",
+      "label": "咽喉杠杆",
+      "fullLabel": "咽喉杠杆",
+      "type": "concept",
+      "route": "concepts/chokepoint-leverage",
+      "summary": "控制海峡、运河和关键通道的人，往往能把地理位置转化成定价权、通行权和规则权。",
       "status": null,
       "degree": 13
     },
@@ -322,13 +344,13 @@
       "degree": 12
     },
     {
-      "id": "concept:chokepoint-leverage",
-      "key": "chokepoint-leverage",
-      "label": "咽喉杠杆",
-      "fullLabel": "咽喉杠杆",
-      "type": "concept",
-      "route": "concepts/chokepoint-leverage",
-      "summary": "控制海峡、运河和关键通道的人，往往能把地理位置转化成定价权、通行权和规则权。",
+      "id": "theme:maritime-chokepoints-and-route-order",
+      "key": "maritime-chokepoints-and-route-order",
+      "label": "海峡命门与航运秩序",
+      "fullLabel": "海峡命门与航运秩序",
+      "type": "theme",
+      "route": "themes/maritime-chokepoints-and-route-order",
+      "summary": "讨论海峡、运河和关键航道如何把地理位置变成规则、保险、资本和军事的综合权力。",
       "status": null,
       "degree": 12
     },
@@ -432,6 +454,17 @@
       "degree": 11
     },
     {
+      "id": "model:proxy-containment-ring",
+      "key": "proxy-containment-ring",
+      "label": "代理围堵环",
+      "fullLabel": "代理围堵环",
+      "type": "model",
+      "route": "models/proxy-containment-ring",
+      "summary": "代理围堵环解释大国如何通过盟友、代理人和通道控制分摊成本、封堵对手。",
+      "status": null,
+      "degree": 11
+    },
+    {
       "id": "theme:local-fiscal-stress-and-hidden-debt",
       "key": "local-fiscal-stress-and-hidden-debt",
       "label": "地方财政与隐性债务",
@@ -461,17 +494,6 @@
       "type": "theme",
       "route": "themes/real-estate-deleveraging",
       "summary": "讨论房地产在下行周期里如何通过断供、重组、展期和资产处置逐步暴露风险。",
-      "status": null,
-      "degree": 11
-    },
-    {
-      "id": "theme:maritime-chokepoints-and-route-order",
-      "key": "maritime-chokepoints-and-route-order",
-      "label": "海峡命门与航运秩序",
-      "fullLabel": "海峡命门与航运秩序",
-      "type": "theme",
-      "route": "themes/maritime-chokepoints-and-route-order",
-      "summary": "讨论海峡、运河和关键航道如何把地理位置变成规则、保险、资本和军事的综合权力。",
       "status": null,
       "degree": 11
     },
@@ -527,6 +549,17 @@
       "type": "theme",
       "route": "themes/sanctions-and-power-containment",
       "summary": "讨论制裁、门罗主义、海峡与联盟如何共同服务于压制对手集团的全球布局。",
+      "status": null,
+      "degree": 11
+    },
+    {
+      "id": "concept:sanction-containment",
+      "key": "sanction-containment",
+      "label": "制裁遏制",
+      "fullLabel": "制裁遏制",
+      "type": "concept",
+      "route": "concepts/sanction-containment",
+      "summary": "制裁的真正作用常常不是逼对手立刻认输，而是长期压低其外延空间、联动能力和做大速度。",
       "status": null,
       "degree": 11
     },
@@ -619,17 +652,6 @@
       "degree": 10
     },
     {
-      "id": "model:proxy-containment-ring",
-      "key": "proxy-containment-ring",
-      "label": "代理围堵环",
-      "fullLabel": "代理围堵环",
-      "type": "model",
-      "route": "models/proxy-containment-ring",
-      "summary": "代理围堵环解释大国如何通过盟友、代理人和通道控制分摊成本、封堵对手。",
-      "status": null,
-      "degree": 10
-    },
-    {
       "id": "model:authority-misinfluence",
       "key": "authority-misinfluence",
       "label": "权威影响",
@@ -637,17 +659,6 @@
       "type": "model",
       "route": "models/authority-misinfluence",
       "summary": "权威影响模型解释单点权威如何压缩组织独立判断，使成员更容易服从而非纠偏。",
-      "status": null,
-      "degree": 10
-    },
-    {
-      "id": "concept:sanction-containment",
-      "key": "sanction-containment",
-      "label": "制裁遏制",
-      "fullLabel": "制裁遏制",
-      "type": "concept",
-      "route": "concepts/sanction-containment",
-      "summary": "制裁的真正作用常常不是逼对手立刻认输，而是长期压低其外延空间、联动能力和做大速度。",
       "status": null,
       "degree": 10
     },
@@ -923,6 +934,17 @@
       "type": "theme",
       "route": "themes/big-government-and-incentive-reversal",
       "summary": "当大政府失去高速增长红利后，原本向前看的发展激励会慢慢转成向后看的收缩与回补。",
+      "status": null,
+      "degree": 8
+    },
+    {
+      "id": "theme:dollar-system-and-gray-trade",
+      "key": "dollar-system-and-gray-trade",
+      "label": "美元体系与灰色贸易",
+      "fullLabel": "美元体系与灰色贸易",
+      "type": "theme",
+      "route": "themes/dollar-system-and-gray-trade",
+      "summary": "讨论石油美元的真实脆弱点，究竟藏在公开统计之外的哪些灰色交易链条里。",
       "status": null,
       "degree": 8
     },
@@ -1334,17 +1356,6 @@
       "degree": 7
     },
     {
-      "id": "theme:dollar-system-and-gray-trade",
-      "key": "dollar-system-and-gray-trade",
-      "label": "美元体系与灰色贸易",
-      "fullLabel": "美元体系与灰色贸易",
-      "type": "theme",
-      "route": "themes/dollar-system-and-gray-trade",
-      "summary": "讨论石油美元的真实脆弱点，究竟藏在公开统计之外的哪些灰色交易链条里。",
-      "status": null,
-      "degree": 7
-    },
-    {
       "id": "theme:platform-governance-and-folk-discourse",
       "key": "platform-governance-and-folk-discourse",
       "label": "平台治理与民间话语",
@@ -1367,6 +1378,17 @@
       "degree": 7
     },
     {
+      "id": "model:time-arbitrage-model",
+      "key": "time-arbitrage-model",
+      "label": "时间套利模型",
+      "fullLabel": "时间套利模型",
+      "type": "model",
+      "route": "models/time-arbitrage-model",
+      "summary": "真正高明的行动，不是只比现在谁更强，而是比谁更懂得利用时间差、窗口差和成本差。",
+      "status": null,
+      "degree": 7
+    },
+    {
       "id": "theme:small-state-balancing",
       "key": "small-state-balancing",
       "label": "小国平衡与地缘生存",
@@ -1374,6 +1396,17 @@
       "type": "theme",
       "route": "themes/small-state-balancing",
       "summary": "讨论新加坡这类小国如何在大国竞争中维持安全、合法性和现实利益。",
+      "status": null,
+      "degree": 7
+    },
+    {
+      "id": "theme:new-media-political-mobilization",
+      "key": "new-media-political-mobilization",
+      "label": "新媒体政治动员",
+      "fullLabel": "新媒体政治动员",
+      "type": "theme",
+      "route": "themes/new-media-political-mobilization",
+      "summary": "候选人和政治叙事不再必须依附旧媒体，而可以直接通过新媒体组织情绪、认同和支持。",
       "status": null,
       "degree": 7
     },
@@ -1675,6 +1708,17 @@
       "degree": 6
     },
     {
+      "id": "concept:gray-oil-network",
+      "key": "gray-oil-network",
+      "label": "灰色石油网络",
+      "fullLabel": "灰色石油网络",
+      "type": "concept",
+      "route": "concepts/gray-oil-network",
+      "summary": "绕开正规结算和监管的石油流动，会在影子体系中重塑货币、制裁和地缘利益。",
+      "status": null,
+      "degree": 6
+    },
+    {
       "id": "concept:technical-shortcut",
       "key": "technical-shortcut",
       "label": "技术捷径",
@@ -1715,17 +1759,6 @@
       "type": "theme",
       "route": "themes/youth-withdrawal-and-lying-flat",
       "summary": "讨论年轻人在主流机会、劳动回报和身份路径收缩后，如何通过低欲望、退出和躺平保留有限主体性。",
-      "status": null,
-      "degree": 6
-    },
-    {
-      "id": "model:time-arbitrage-model",
-      "key": "time-arbitrage-model",
-      "label": "时间套利模型",
-      "fullLabel": "时间套利模型",
-      "type": "model",
-      "route": "models/time-arbitrage-model",
-      "summary": "真正高明的行动，不是只比现在谁更强，而是比谁更懂得利用时间差、窗口差和成本差。",
       "status": null,
       "degree": 6
     },
@@ -1785,17 +1818,6 @@
       "degree": 6
     },
     {
-      "id": "theme:new-media-political-mobilization",
-      "key": "new-media-political-mobilization",
-      "label": "新媒体政治动员",
-      "fullLabel": "新媒体政治动员",
-      "type": "theme",
-      "route": "themes/new-media-political-mobilization",
-      "summary": "候选人和政治叙事不再必须依附旧媒体，而可以直接通过新媒体组织情绪、认同和支持。",
-      "status": null,
-      "degree": 6
-    },
-    {
       "id": "concept:phantom-sales",
       "key": "phantom-sales",
       "label": "虚假销售",
@@ -1836,6 +1858,17 @@
       "type": "model",
       "route": "models/political-embedded-enterprise",
       "summary": "企业一旦把自身命运深嵌进地方政府或国资体系，短期会更能续命，长期却更容易沦为政策工具。",
+      "status": null,
+      "degree": 6
+    },
+    {
+      "id": "model:sanction-parallel-market",
+      "key": "sanction-parallel-market",
+      "label": "制裁平行市场模型",
+      "fullLabel": "制裁平行市场模型",
+      "type": "model",
+      "route": "models/sanction-parallel-market",
+      "summary": "制裁如果没有消灭需求，就会把交易推向更高风险、更高利润、更难监管的平行市场。",
       "status": null,
       "degree": 6
     },
@@ -2181,17 +2214,6 @@
       "degree": 5
     },
     {
-      "id": "concept:gray-oil-network",
-      "key": "gray-oil-network",
-      "label": "灰色石油网络",
-      "fullLabel": "灰色石油网络",
-      "type": "concept",
-      "route": "concepts/gray-oil-network",
-      "summary": "绕开正规结算和监管的石油流动，会在影子体系中重塑货币、制裁和地缘利益。",
-      "status": null,
-      "degree": 5
-    },
-    {
       "id": "model:technology-wave-cycle",
       "key": "technology-wave-cycle",
       "label": "技术浪潮周期",
@@ -2287,17 +2309,6 @@
       "type": "theme",
       "route": "themes/ev-design-and-technology-shortcuts",
       "summary": "讨论新能源品牌如何在设计、技术和产品叙事上追求速成，并为此埋下长期反噬。",
-      "status": null,
-      "degree": 5
-    },
-    {
-      "id": "model:sanction-parallel-market",
-      "key": "sanction-parallel-market",
-      "label": "制裁平行市场模型",
-      "fullLabel": "制裁平行市场模型",
-      "type": "model",
-      "route": "models/sanction-parallel-market",
-      "summary": "制裁如果没有消灭需求，就会把交易推向更高风险、更高利润、更难监管的平行市场。",
       "status": null,
       "degree": 5
     },
@@ -5767,6 +5778,17 @@
       "degree": 1
     },
     {
+      "id": "concept:scarcity-narrative-gap",
+      "key": "scarcity-narrative-gap",
+      "label": "稀缺叙事背离",
+      "fullLabel": "稀缺叙事背离",
+      "type": "concept",
+      "route": "concepts/scarcity-narrative-gap",
+      "summary": "供给被掐断的恐慌叙事，常常和真实供需、真实价格严重背离，背离本身才是该追问的信号。",
+      "status": null,
+      "degree": 1
+    },
+    {
       "id": "concept:system-fallback",
       "key": "system-fallback",
       "label": "系统兜底",
@@ -5818,6 +5840,17 @@
       "type": "model",
       "route": "models/middle-class-replacement-cycle",
       "summary": "新旧中产置换解释一个社会怎样用更可控的体制型中产，替换掉靠市场打拼、财富外流不可控的老中产，从而把财富和消费重新锚定在国内。",
+      "status": null,
+      "degree": 1
+    },
+    {
+      "id": "concept:new-media-politician",
+      "key": "new-media-politician",
+      "label": "新媒体政治人物",
+      "fullLabel": "新媒体政治人物",
+      "type": "concept",
+      "route": "concepts/new-media-politician",
+      "summary": "靠新媒体直接连接受众、绕过传统组织和选举路径崛起的新型权力人物。",
       "status": null,
       "degree": 1
     },
@@ -6097,6 +6130,17 @@
       "degree": 1
     },
     {
+      "id": "model:regime-replacement-playbook",
+      "key": "regime-replacement-playbook",
+      "label": "政权更替剧本",
+      "fullLabel": "政权更替剧本",
+      "type": "model",
+      "route": "models/regime-replacement-playbook",
+      "summary": "不颠覆整套政权，只反复换掉最高领导人、直到换出一个能合作的为止的低成本施压剧本。",
+      "status": null,
+      "degree": 1
+    },
+    {
       "id": "concept:direct-transfer-consumption",
       "key": "direct-transfer-consumption",
       "label": "直达型消费",
@@ -6194,39 +6238,6 @@
       "summary": "KPI造假均衡解释当达标收益高于真实反馈、造假成本低于合规成本时，整个系统会奖励看起来达标。",
       "status": null,
       "degree": 1
-    },
-    {
-      "id": "concept:scarcity-narrative-gap",
-      "key": "scarcity-narrative-gap",
-      "label": "稀缺叙事背离",
-      "fullLabel": "稀缺叙事背离",
-      "type": "concept",
-      "route": "concepts/scarcity-narrative-gap",
-      "summary": "供给被掐断的恐慌叙事，常常和真实供需、真实价格严重背离，背离本身才是该追问的信号。",
-      "status": null,
-      "degree": 0
-    },
-    {
-      "id": "concept:new-media-politician",
-      "key": "new-media-politician",
-      "label": "新媒体政治人物",
-      "fullLabel": "新媒体政治人物",
-      "type": "concept",
-      "route": "concepts/new-media-politician",
-      "summary": "靠新媒体直接连接受众、绕过传统组织和选举路径崛起的新型权力人物。",
-      "status": null,
-      "degree": 0
-    },
-    {
-      "id": "model:regime-replacement-playbook",
-      "key": "regime-replacement-playbook",
-      "label": "政权更替剧本",
-      "fullLabel": "政权更替剧本",
-      "type": "model",
-      "route": "models/regime-replacement-playbook",
-      "summary": "不颠覆整套政权，只反复换掉最高领导人、直到换出一个能合作的为止的低成本施压剧本。",
-      "status": null,
-      "degree": 0
     }
   ],
   "links": [
@@ -12493,6 +12504,76 @@
     {
       "source": "episode:EP167",
       "target": "theme:war-system-and-succession-risk",
+      "kind": "episode-theme"
+    },
+    {
+      "source": "episode:EP168",
+      "target": "concept:gray-oil-network",
+      "kind": "episode-concept"
+    },
+    {
+      "source": "episode:EP168",
+      "target": "concept:chokepoint-leverage",
+      "kind": "episode-concept"
+    },
+    {
+      "source": "episode:EP168",
+      "target": "concept:sanction-containment",
+      "kind": "episode-concept"
+    },
+    {
+      "source": "episode:EP168",
+      "target": "concept:scarcity-narrative-gap",
+      "kind": "episode-concept"
+    },
+    {
+      "source": "episode:EP168",
+      "target": "concept:new-media-politician",
+      "kind": "episode-concept"
+    },
+    {
+      "source": "episode:EP168",
+      "target": "model:sanction-parallel-market",
+      "kind": "episode-model"
+    },
+    {
+      "source": "episode:EP168",
+      "target": "model:proxy-containment-ring",
+      "kind": "episode-model"
+    },
+    {
+      "source": "episode:EP168",
+      "target": "model:time-arbitrage-model",
+      "kind": "episode-model"
+    },
+    {
+      "source": "episode:EP168",
+      "target": "model:regime-replacement-playbook",
+      "kind": "episode-model"
+    },
+    {
+      "source": "episode:EP168",
+      "target": "person:donald-trump",
+      "kind": "episode-person"
+    },
+    {
+      "source": "episode:EP168",
+      "target": "theme:dollar-system-and-gray-trade",
+      "kind": "episode-theme"
+    },
+    {
+      "source": "episode:EP168",
+      "target": "theme:maritime-chokepoints-and-route-order",
+      "kind": "episode-theme"
+    },
+    {
+      "source": "episode:EP168",
+      "target": "theme:new-media-political-mobilization",
+      "kind": "episode-theme"
+    },
+    {
+      "source": "episode:EP168",
+      "target": "theme:great-power-competition-and-strategic-time",
       "kind": "episode-theme"
     },
     {

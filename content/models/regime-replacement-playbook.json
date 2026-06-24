@@ -1,0 +1,42 @@
+{
+  "id": "regime-replacement-playbook",
+  "name": "政权更替剧本",
+  "summary": "不颠覆整套政权，只反复换掉最高领导人、直到换出一个能合作的为止的低成本施压剧本。",
+  "definition": "这是节目从委内瑞拉1.0总结、再套到伊朗2.0的一套打法：目标不是推翻政权、扶反对派或重建民主，而是定点打掉最高领导人，逼出一批想上位的势力彼此竞争，从中挑一个愿意按己方条件合作的扶上来。这次不合适就再换一批、再试，脏活交给代理人去做。它把「征服一个大国」拆成可以多轮重复、慢慢迭代的换头工程，而不是一次性的全面战争。",
+  "application": "主要用来解释美国对伊朗的真实意图，以及为什么协议会拖这么久、又能随时翻脸：仗早就停了，拖的是在等一个能合作的世俗势力，没等到就先签协议、下次再来。它也回头解释了委内瑞拉模式本身。",
+  "sourceLabel": "颖响力模型：政权更替剧本",
+  "sourcePath": "/Users/ziqiguo/Documents/Diary/GoldenVault/md/topic/personal/sources/people/颖响力/网页/content/models/regime-replacement-playbook.json",
+  "episodes": [
+    {
+      "id": "EP168",
+      "note": "节目用委内瑞拉1.0到伊朗2.0的换头逻辑，解释美伊协议只是多轮施压里的过渡一步，而非美国认输。"
+    }
+  ],
+  "signals": [
+    "打击精确指向最高领导人，而非全面占领国土",
+    "战斗早停、谈判却长期拖延，实质在挑选能合作的代理人",
+    "一份协议随时可签可撕，被当成可重复的中间步骤"
+  ],
+  "boundaries": [
+    "这是节目对美方意图的推演框架，不是已公开证实的官方战略。",
+    "剧本能否走通取决于目标国内部是否真有可扶持的合作势力，伊朗世俗势力始终上不来就是反例。"
+  ],
+  "questions": [
+    "换到合适的人之前，这套剧本能拖多久才算失败？",
+    "代理人和发起方目标不一致时，剧本会不会失控？",
+    "目标国若始终换不出合作势力，剧本怎么收场？"
+  ],
+  "context": "在颖响力的大国博弈与战略时间讨论里，它和时间套利模型、代理围堵环互补，解释强国如何用低成本、长周期的方式处理一个不愿登陆征服的大国。",
+  "episodeHighlights": [],
+  "relatedConcepts": [
+    "new-media-politician"
+  ],
+  "relatedModels": [
+    "time-arbitrage-model",
+    "proxy-containment-ring"
+  ],
+  "relatedThemes": [],
+  "relatedPeople": [
+    "donald-trump"
+  ]
+}
