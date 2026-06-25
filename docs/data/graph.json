@@ -2,13 +2,13 @@
   "meta": {
     "title": "颖响力知识图谱",
     "subtitle": "节目、概念、模型、人物、主题之间的可视化连接网络",
-    "nodeCount": 566,
-    "linkCount": 1308,
+    "nodeCount": 570,
+    "linkCount": 1324,
     "typeCounts": {
-      "model": 74,
+      "model": 75,
       "person": 65,
-      "episode": 168,
-      "concept": 168,
+      "episode": 169,
+      "concept": 170,
       "theme": 91
     }
   },
@@ -87,6 +87,17 @@
       "type": "episode",
       "route": "episodes/EP144",
       "summary": "本期借普京访华切入，把当下俄罗斯放进\"三面被围\"的地图：西边欧盟在欧尔班败选和川普新门罗主义下变成铁板一块，南边伊朗这条绕过制裁的生命线被美英联军和霍尔木兹封锁压住，东边只剩中国。节目从红场阅兵重装备全无、只有\"烈士遗孀方阵\"起手，用《帝国时代》贸易马车比喻俄罗斯被切短的全球贸易线。由此推出普京带 6 副总理、8 部长、1 央行行长来华的真实诉求：扩大贸易、推动西伯利亚力量二号、卡脖子技术合作、本币结算。落点是下一轮大国博弈的核心通道将是东南亚、南亚、中亚和古巴。",
+      "status": "curated",
+      "degree": 16
+    },
+    {
+      "id": "episode:EP169",
+      "key": "EP169",
+      "label": "EP169",
+      "fullLabel": "EP169 · 合肥模式底层逻辑拆解：个人投资的4个实用方法 + 1个核心秘籍",
+      "type": "episode",
+      "route": "episodes/EP169",
+      "summary": "合肥被称为中国最牛风投城市，但各地城投照抄大多抄出一身债和产能过剩。节目认为合肥模式真正可学的不是城市打法，而是背后的投资逻辑，并把它拆成普通人能用的四个显性方法：逆周期抄底不追热点、赌整条产业链而非单家公司、长期陪跑成熟才退出、只投自己接得住的赛道。节目强调真正抄不走的是第五个隐性秘籍——政府能把权力直接变成补贴、报表和销售额，而普通人没有权力，唯一对应物是信息上的确定性。它的落点是：只有当你掌握别人没有的确定信息、能像一级市场那样看清企业命脉时，欧印和加杠杆才不是赌博。",
       "status": "curated",
       "degree": 16
     },
@@ -443,6 +454,17 @@
       "degree": 12
     },
     {
+      "id": "model:subsidy-capital-flywheel",
+      "key": "subsidy-capital-flywheel",
+      "label": "补贴资本飞轮",
+      "fullLabel": "补贴资本飞轮",
+      "type": "model",
+      "route": "models/subsidy-capital-flywheel",
+      "summary": "补贴资本飞轮解释地方财政、产业基金、企业估值和再融资如何互相放大。",
+      "status": null,
+      "degree": 11
+    },
+    {
       "id": "concept:cost-shifting",
       "key": "cost-shifting",
       "label": "成本外移",
@@ -641,17 +663,6 @@
       "degree": 11
     },
     {
-      "id": "model:subsidy-capital-flywheel",
-      "key": "subsidy-capital-flywheel",
-      "label": "补贴资本飞轮",
-      "fullLabel": "补贴资本飞轮",
-      "type": "model",
-      "route": "models/subsidy-capital-flywheel",
-      "summary": "补贴资本飞轮解释地方财政、产业基金、企业估值和再融资如何互相放大。",
-      "status": null,
-      "degree": 10
-    },
-    {
       "id": "model:authority-misinfluence",
       "key": "authority-misinfluence",
       "label": "权威影响",
@@ -747,6 +758,17 @@
       "type": "theme",
       "route": "themes/ev-collapse-and-exit-risk",
       "summary": "聚焦新能源项目在失速、清算和品牌出清阶段，风险如何向债权人、用户和地方政府层层传导。",
+      "status": null,
+      "degree": 9
+    },
+    {
+      "id": "theme:state-business-entanglement",
+      "key": "state-business-entanglement",
+      "label": "政企嵌入与企业存续",
+      "fullLabel": "政企嵌入与企业存续",
+      "type": "theme",
+      "route": "themes/state-business-entanglement",
+      "summary": "讨论企业如何依赖地方政府、国资平台或关系结构续命，以及这种绑定如何反过来改写企业目标。",
       "status": null,
       "degree": 9
     },
@@ -967,17 +989,6 @@
       "type": "theme",
       "route": "themes/ev-safety-and-consumer-testing",
       "summary": "讨论新能源车与相关电池系统如何把安全验证不足的代价，转移到真实用户和真实事故里。",
-      "status": null,
-      "degree": 8
-    },
-    {
-      "id": "theme:state-business-entanglement",
-      "key": "state-business-entanglement",
-      "label": "政企嵌入与企业存续",
-      "fullLabel": "政企嵌入与企业存续",
-      "type": "theme",
-      "route": "themes/state-business-entanglement",
-      "summary": "讨论企业如何依赖地方政府、国资平台或关系结构续命，以及这种绑定如何反过来改写企业目标。",
       "status": null,
       "degree": 8
     },
@@ -1389,6 +1400,17 @@
       "degree": 7
     },
     {
+      "id": "theme:narrative-speculation-and-retail-traps",
+      "key": "narrative-speculation-and-retail-traps",
+      "label": "投资叙事与散户陷阱",
+      "fullLabel": "投资叙事与散户陷阱",
+      "type": "theme",
+      "route": "themes/narrative-speculation-and-retail-traps",
+      "summary": "当市场热点先由故事驱动、再由散户接棒时，普通人最容易在高潮处接到最后一棒。",
+      "status": null,
+      "degree": 7
+    },
+    {
       "id": "theme:small-state-balancing",
       "key": "small-state-balancing",
       "label": "小国平衡与地缘生存",
@@ -1407,6 +1429,17 @@
       "type": "theme",
       "route": "themes/new-media-political-mobilization",
       "summary": "候选人和政治叙事不再必须依附旧媒体，而可以直接通过新媒体组织情绪、认同和支持。",
+      "status": null,
+      "degree": 7
+    },
+    {
+      "id": "model:strategic-timing",
+      "key": "strategic-timing",
+      "label": "战略时机",
+      "fullLabel": "战略时机",
+      "type": "model",
+      "route": "models/strategic-timing",
+      "summary": "真正决定收益的往往不是是否参与，而是你能否在远早于大众情绪的时点、以合适规模和合适位置进入。",
       "status": null,
       "degree": 7
     },
@@ -1675,6 +1708,17 @@
       "degree": 6
     },
     {
+      "id": "theme:local-government-financialization",
+      "key": "local-government-financialization",
+      "label": "地方政府资本化与补贴杠杆",
+      "fullLabel": "地方政府资本化与补贴杠杆",
+      "type": "theme",
+      "route": "themes/local-government-financialization",
+      "summary": "讨论地方政府如何从传统招商者变成资本玩家，并把补贴、基金和估值故事捆到一起。",
+      "status": null,
+      "degree": 6
+    },
+    {
       "id": "theme:east-asia-security-realignment",
       "key": "east-asia-security-realignment",
       "label": "东亚安全重组与日本转向",
@@ -1693,6 +1737,17 @@
       "type": "model",
       "route": "models/distributed-innovation",
       "summary": "分布式创新强调多中心试错、失败吸收和真实反馈比单一大计划更能产生韧性。",
+      "status": null,
+      "degree": 6
+    },
+    {
+      "id": "model:black-box-assetization",
+      "key": "black-box-assetization",
+      "label": "黑箱资产化",
+      "fullLabel": "黑箱资产化",
+      "type": "model",
+      "route": "models/black-box-assetization",
+      "summary": "把本来难以估值、难以穿透甚至本该暴露风险的东西，装进平台、基金或体外结构里，重新包装成可融资、可讲故事、可继续吸钱的资产。",
       "status": null,
       "degree": 6
     },
@@ -1774,17 +1829,6 @@
       "degree": 6
     },
     {
-      "id": "theme:narrative-speculation-and-retail-traps",
-      "key": "narrative-speculation-and-retail-traps",
-      "label": "投资叙事与散户陷阱",
-      "fullLabel": "投资叙事与散户陷阱",
-      "type": "theme",
-      "route": "themes/narrative-speculation-and-retail-traps",
-      "summary": "当市场热点先由故事驱动、再由散户接棒时，普通人最容易在高潮处接到最后一棒。",
-      "status": null,
-      "degree": 6
-    },
-    {
       "id": "person:wang-shi",
       "key": "wang-shi",
       "label": "王石",
@@ -1825,17 +1869,6 @@
       "type": "concept",
       "route": "concepts/phantom-sales",
       "summary": "企业把并不存在的真实终端需求，包装成销量、出海成绩或渠道消化能力，用来维持估值和融资信心。",
-      "status": null,
-      "degree": 6
-    },
-    {
-      "id": "model:strategic-timing",
-      "key": "strategic-timing",
-      "label": "战略时机",
-      "fullLabel": "战略时机",
-      "type": "model",
-      "route": "models/strategic-timing",
-      "summary": "真正决定收益的往往不是是否参与，而是你能否在远早于大众情绪的时点、以合适规模和合适位置进入。",
       "status": null,
       "degree": 6
     },
@@ -2126,6 +2159,17 @@
       "degree": 5
     },
     {
+      "id": "concept:subsidy-leverage-engine",
+      "key": "subsidy-leverage-engine",
+      "label": "补贴杠杆引擎",
+      "fullLabel": "补贴杠杆引擎",
+      "type": "concept",
+      "route": "concepts/subsidy-leverage-engine",
+      "summary": "财政补贴被当成种子资金，撬动基金、估值、招商和社会资本，形成杠杆引擎。",
+      "status": null,
+      "degree": 5
+    },
+    {
       "id": "model:opaque-withdrawal-governance",
       "key": "opaque-withdrawal-governance",
       "label": "不可读退出治理模型",
@@ -2144,17 +2188,6 @@
       "type": "theme",
       "route": "themes/founder-power-and-feedback",
       "summary": "讨论强创始人结构如何影响组织内部的信息流动与纠偏能力。",
-      "status": null,
-      "degree": 5
-    },
-    {
-      "id": "theme:local-government-financialization",
-      "key": "local-government-financialization",
-      "label": "地方政府资本化与补贴杠杆",
-      "fullLabel": "地方政府资本化与补贴杠杆",
-      "type": "theme",
-      "route": "themes/local-government-financialization",
-      "summary": "讨论地方政府如何从传统招商者变成资本玩家，并把补贴、基金和估值故事捆到一起。",
       "status": null,
       "degree": 5
     },
@@ -2199,17 +2232,6 @@
       "type": "concept",
       "route": "concepts/premium-narrative",
       "summary": "企业用定位、符号、方法论和品牌故事为高价格建立解释框架。",
-      "status": null,
-      "degree": 5
-    },
-    {
-      "id": "model:black-box-assetization",
-      "key": "black-box-assetization",
-      "label": "黑箱资产化",
-      "fullLabel": "黑箱资产化",
-      "type": "model",
-      "route": "models/black-box-assetization",
-      "summary": "把本来难以估值、难以穿透甚至本该暴露风险的东西，装进平台、基金或体外结构里，重新包装成可融资、可讲故事、可继续吸钱的资产。",
       "status": null,
       "degree": 5
     },
@@ -2566,17 +2588,6 @@
       "degree": 4
     },
     {
-      "id": "concept:subsidy-leverage-engine",
-      "key": "subsidy-leverage-engine",
-      "label": "补贴杠杆引擎",
-      "fullLabel": "补贴杠杆引擎",
-      "type": "concept",
-      "route": "concepts/subsidy-leverage-engine",
-      "summary": "财政补贴被当成种子资金，撬动基金、估值、招商和社会资本，形成杠杆引擎。",
-      "status": null,
-      "degree": 4
-    },
-    {
       "id": "model:wealth-power-reproduction",
       "key": "wealth-power-reproduction",
       "label": "财富权力再生产",
@@ -2584,6 +2595,17 @@
       "type": "model",
       "route": "models/wealth-power-reproduction",
       "summary": "财富权力再生产解释财富如何借婚姻、生育、身份和关系重新转化为下一代权力。",
+      "status": null,
+      "degree": 4
+    },
+    {
+      "id": "theme:financial-content-and-long-termism",
+      "key": "financial-content-and-long-termism",
+      "label": "财经表达与长期主义",
+      "fullLabel": "财经表达与长期主义",
+      "type": "theme",
+      "route": "themes/financial-content-and-long-termism",
+      "summary": "真正有价值的财经内容应该帮助人建立周期、战略和时机意识，而不是只卖每天的情绪波动。",
       "status": null,
       "degree": 4
     },
@@ -3094,17 +3116,6 @@
       "degree": 3
     },
     {
-      "id": "theme:financial-content-and-long-termism",
-      "key": "financial-content-and-long-termism",
-      "label": "财经表达与长期主义",
-      "fullLabel": "财经表达与长期主义",
-      "type": "theme",
-      "route": "themes/financial-content-and-long-termism",
-      "summary": "真正有价值的财经内容应该帮助人建立周期、战略和时机意识，而不是只卖每天的情绪波动。",
-      "status": null,
-      "degree": 3
-    },
-    {
       "id": "theme:catering-pricing-logic",
       "key": "catering-pricing-logic",
       "label": "餐饮行业定价逻辑",
@@ -3490,6 +3501,17 @@
       "degree": 3
     },
     {
+      "id": "model:crisis-selection",
+      "key": "crisis-selection",
+      "label": "危机筛选",
+      "fullLabel": "危机筛选",
+      "type": "model",
+      "route": "models/crisis-selection",
+      "summary": "危机筛选解释危机如何把旧中心筛下去，并把边缘角色推向前台。",
+      "status": null,
+      "degree": 3
+    },
+    {
       "id": "theme:authoritarian-succession-and-state-fragility",
       "key": "authoritarian-succession-and-state-fragility",
       "label": "威权继承与国家裂缝",
@@ -3519,6 +3541,17 @@
       "type": "theme",
       "route": "themes/cash-optionality-and-liquidity-anxiety",
       "summary": "在高波动和低信任时期，流动性比账面资产更能决定一个人和机构的安全感。",
+      "status": null,
+      "degree": 3
+    },
+    {
+      "id": "concept:cash-optionality",
+      "key": "cash-optionality",
+      "label": "现金选择权",
+      "fullLabel": "现金选择权",
+      "type": "concept",
+      "route": "concepts/cash-optionality",
+      "summary": "现金在高波动时期的核心价值，是保留等待、谈判、退出和重新进入的选择权。",
       "status": null,
       "degree": 3
     },
@@ -3618,6 +3651,17 @@
       "type": "concept",
       "route": "concepts/money-time-price",
       "summary": "钱的价值不只由数量决定，更由期限、还款压力和附带条件决定。",
+      "status": null,
+      "degree": 3
+    },
+    {
+      "id": "concept:self-dealing-incubation-loop",
+      "key": "self-dealing-incubation-loop",
+      "label": "自融孵化闭环",
+      "fullLabel": "自融孵化闭环",
+      "type": "concept",
+      "route": "concepts/self-dealing-incubation-loop",
+      "summary": "同一个操盘主体把早期孵化、下一轮接盘和最终上市装回串成闭环，自己投自己、自己接自己，最后让各方一起解套。",
       "status": null,
       "degree": 3
     },
@@ -3849,6 +3893,17 @@
       "type": "concept",
       "route": "concepts/outsourced-discernment",
       "summary": "个体放弃自我分辨好坏的能力，默认有监管机构替自己事先筛查，自己只管享受结果。",
+      "status": null,
+      "degree": 2
+    },
+    {
+      "id": "concept:investment-diversification-hedge",
+      "key": "investment-diversification-hedge",
+      "label": "分散投资对冲",
+      "fullLabel": "分散投资对冲",
+      "type": "concept",
+      "route": "concepts/investment-diversification-hedge",
+      "summary": "把投资、产能和合作关系分散到多个国家或对象，是在不确定环境里分担风险，而不是和谁脱钩。",
       "status": null,
       "degree": 2
     },
@@ -4205,6 +4260,17 @@
       "degree": 2
     },
     {
+      "id": "theme:time-horizon-and-foresight",
+      "key": "time-horizon-and-foresight",
+      "label": "时间尺度与资产前瞻",
+      "fullLabel": "时间尺度与资产前瞻",
+      "type": "theme",
+      "route": "themes/time-horizon-and-foresight",
+      "summary": "讨论人物与企业如何在不同周期里提前摆放自己，而不是等结果发生后再被动解释。",
+      "status": null,
+      "degree": 2
+    },
+    {
       "id": "concept:time-window-reading",
       "key": "time-window-reading",
       "label": "时间窗口阅读",
@@ -4260,17 +4326,6 @@
       "degree": 2
     },
     {
-      "id": "model:crisis-selection",
-      "key": "crisis-selection",
-      "label": "危机筛选",
-      "fullLabel": "危机筛选",
-      "type": "model",
-      "route": "models/crisis-selection",
-      "summary": "危机筛选解释危机如何把旧中心筛下去，并把边缘角色推向前台。",
-      "status": null,
-      "degree": 2
-    },
-    {
       "id": "theme:crisis-era-power-reallocation",
       "key": "crisis-era-power-reallocation",
       "label": "危机时代的权力重排",
@@ -4322,17 +4377,6 @@
       "type": "concept",
       "route": "concepts/system-rollback",
       "summary": "系统回滚指社会从增长、能力和市场规则导向，退回到安稳、身份和存量兜底导向。",
-      "status": null,
-      "degree": 2
-    },
-    {
-      "id": "concept:cash-optionality",
-      "key": "cash-optionality",
-      "label": "现金选择权",
-      "fullLabel": "现金选择权",
-      "type": "concept",
-      "route": "concepts/cash-optionality",
-      "summary": "现金在高波动时期的核心价值，是保留等待、谈判、退出和重新进入的选择权。",
       "status": null,
       "degree": 2
     },
@@ -4465,17 +4509,6 @@
       "type": "concept",
       "route": "concepts/quasi-currency-support",
       "summary": "现金不足时，系统用票据、凭证或替代物支撑交易和价格，形成准货币托市。",
-      "status": null,
-      "degree": 2
-    },
-    {
-      "id": "concept:self-dealing-incubation-loop",
-      "key": "self-dealing-incubation-loop",
-      "label": "自融孵化闭环",
-      "fullLabel": "自融孵化闭环",
-      "type": "concept",
-      "route": "concepts/self-dealing-incubation-loop",
-      "summary": "同一个操盘主体把早期孵化、下一轮接盘和最终上市装回串成闭环，自己投自己、自己接自己，最后让各方一起解套。",
       "status": null,
       "degree": 2
     },
@@ -4839,17 +4872,6 @@
       "type": "concept",
       "route": "concepts/dual-track-review-system",
       "summary": "同一类内容因为投资规模、平台主推程度和发行路径不同，进入不同审核通道。",
-      "status": null,
-      "degree": 1
-    },
-    {
-      "id": "concept:investment-diversification-hedge",
-      "key": "investment-diversification-hedge",
-      "label": "分散投资对冲",
-      "fullLabel": "分散投资对冲",
-      "type": "concept",
-      "route": "concepts/investment-diversification-hedge",
-      "summary": "把投资、产能和合作关系分散到多个国家或对象，是在不确定环境里分担风险，而不是和谁脱钩。",
       "status": null,
       "degree": 1
     },
@@ -5382,6 +5404,17 @@
       "degree": 1
     },
     {
+      "id": "concept:circle-of-competence",
+      "key": "circle-of-competence",
+      "label": "能力圈",
+      "fullLabel": "能力圈",
+      "type": "concept",
+      "route": "concepts/circle-of-competence",
+      "summary": "只投自己真正能接得住、能看懂的赛道，而不是看起来更美好、却根本不熟悉的行业。",
+      "status": null,
+      "degree": 1
+    },
+    {
       "id": "person:pang-zenghe",
       "key": "pang-zenghe",
       "label": "庞增和",
@@ -5624,17 +5657,6 @@
       "degree": 1
     },
     {
-      "id": "theme:time-horizon-and-foresight",
-      "key": "time-horizon-and-foresight",
-      "label": "时间尺度与资产前瞻",
-      "fullLabel": "时间尺度与资产前瞻",
-      "type": "theme",
-      "route": "themes/time-horizon-and-foresight",
-      "summary": "讨论人物与企业如何在不同周期里提前摆放自己，而不是等结果发生后再被动解释。",
-      "status": null,
-      "degree": 1
-    },
-    {
       "id": "concept:data-fetishism",
       "key": "data-fetishism",
       "label": "数据崇拜",
@@ -5855,6 +5877,17 @@
       "degree": 1
     },
     {
+      "id": "concept:information-edge",
+      "key": "information-edge",
+      "label": "信息优势",
+      "fullLabel": "信息优势",
+      "type": "concept",
+      "route": "concepts/information-edge",
+      "summary": "投资真正的优势来自别人没有的确定信息，而不是公开可见的故事和情绪。",
+      "status": null,
+      "degree": 1
+    },
+    {
       "id": "concept:malevolence-self-fulfilling",
       "key": "malevolence-self-fulfilling",
       "label": "性恶预设的自我实现",
@@ -5950,6 +5983,17 @@
       "type": "concept",
       "route": "concepts/earnings-big-bath",
       "summary": "业绩大洗澡指企业把历史问题一次性集中确认，把旧账压低成新任期或新叙事的低起点。",
+      "status": null,
+      "degree": 1
+    },
+    {
+      "id": "model:primary-market-logic",
+      "key": "primary-market-logic",
+      "label": "一级市场逻辑投二级市场",
+      "fullLabel": "一级市场逻辑投二级市场",
+      "type": "model",
+      "route": "models/primary-market-logic",
+      "summary": "用一级市场逻辑投二级市场，指不靠公开博弈，而是凭别人没有的信息、资源和对企业命脉的掌控，在确定性极高时才重仓下注。",
       "status": null,
       "degree": 1
     },
@@ -12574,6 +12618,86 @@
     {
       "source": "episode:EP168",
       "target": "theme:great-power-competition-and-strategic-time",
+      "kind": "episode-theme"
+    },
+    {
+      "source": "episode:EP169",
+      "target": "concept:investment-diversification-hedge",
+      "kind": "episode-concept"
+    },
+    {
+      "source": "episode:EP169",
+      "target": "concept:cash-optionality",
+      "kind": "episode-concept"
+    },
+    {
+      "source": "episode:EP169",
+      "target": "concept:subsidy-leverage-engine",
+      "kind": "episode-concept"
+    },
+    {
+      "source": "episode:EP169",
+      "target": "concept:self-dealing-incubation-loop",
+      "kind": "episode-concept"
+    },
+    {
+      "source": "episode:EP169",
+      "target": "concept:circle-of-competence",
+      "kind": "episode-concept"
+    },
+    {
+      "source": "episode:EP169",
+      "target": "concept:information-edge",
+      "kind": "episode-concept"
+    },
+    {
+      "source": "episode:EP169",
+      "target": "model:crisis-selection",
+      "kind": "episode-model"
+    },
+    {
+      "source": "episode:EP169",
+      "target": "model:strategic-timing",
+      "kind": "episode-model"
+    },
+    {
+      "source": "episode:EP169",
+      "target": "model:subsidy-capital-flywheel",
+      "kind": "episode-model"
+    },
+    {
+      "source": "episode:EP169",
+      "target": "model:black-box-assetization",
+      "kind": "episode-model"
+    },
+    {
+      "source": "episode:EP169",
+      "target": "model:primary-market-logic",
+      "kind": "episode-model"
+    },
+    {
+      "source": "episode:EP169",
+      "target": "theme:local-government-financialization",
+      "kind": "episode-theme"
+    },
+    {
+      "source": "episode:EP169",
+      "target": "theme:state-business-entanglement",
+      "kind": "episode-theme"
+    },
+    {
+      "source": "episode:EP169",
+      "target": "theme:narrative-speculation-and-retail-traps",
+      "kind": "episode-theme"
+    },
+    {
+      "source": "episode:EP169",
+      "target": "theme:time-horizon-and-foresight",
+      "kind": "episode-theme"
+    },
+    {
+      "source": "episode:EP169",
+      "target": "theme:financial-content-and-long-termism",
       "kind": "episode-theme"
     },
     {
