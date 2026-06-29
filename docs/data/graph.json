@@ -2,13 +2,13 @@
   "meta": {
     "title": "颖响力知识图谱",
     "subtitle": "节目、概念、模型、人物、主题之间的可视化连接网络",
-    "nodeCount": 570,
-    "linkCount": 1324,
+    "nodeCount": 575,
+    "linkCount": 1347,
     "typeCounts": {
       "model": 75,
       "person": 65,
-      "episode": 169,
-      "concept": 170,
+      "concept": 172,
+      "episode": 172,
       "theme": 91
     }
   },
@@ -47,6 +47,17 @@
       "degree": 17
     },
     {
+      "id": "concept:hidden-debt",
+      "key": "hidden-debt",
+      "label": "隐形债务",
+      "fullLabel": "隐形债务",
+      "type": "concept",
+      "route": "concepts/hidden-debt",
+      "summary": "表外、体外和合作链条里的债务不在显性报表中充分呈现，却会在危机时重新压回主体。",
+      "status": null,
+      "degree": 17
+    },
+    {
       "id": "episode:EP132",
       "key": "EP132",
       "label": "EP132",
@@ -58,13 +69,13 @@
       "degree": 17
     },
     {
-      "id": "concept:hidden-debt",
-      "key": "hidden-debt",
-      "label": "隐形债务",
-      "fullLabel": "隐形债务",
-      "type": "concept",
-      "route": "concepts/hidden-debt",
-      "summary": "表外、体外和合作链条里的债务不在显性报表中充分呈现，却会在危机时重新压回主体。",
+      "id": "theme:singapore-and-small-state-survival",
+      "key": "singapore-and-small-state-survival",
+      "label": "新加坡与小国生存术",
+      "fullLabel": "新加坡与小国生存术",
+      "type": "theme",
+      "route": "themes/singapore-and-small-state-survival",
+      "summary": "讨论新加坡如何把规则、海峡、人才和谨慎外交组合成一套小国长期生存方法。",
       "status": null,
       "degree": 16
     },
@@ -100,17 +111,6 @@
       "summary": "合肥被称为中国最牛风投城市，但各地城投照抄大多抄出一身债和产能过剩。节目认为合肥模式真正可学的不是城市打法，而是背后的投资逻辑，并把它拆成普通人能用的四个显性方法：逆周期抄底不追热点、赌整条产业链而非单家公司、长期陪跑成熟才退出、只投自己接得住的赛道。节目强调真正抄不走的是第五个隐性秘籍——政府能把权力直接变成补贴、报表和销售额，而普通人没有权力，唯一对应物是信息上的确定性。它的落点是：只有当你掌握别人没有的确定信息、能像一级市场那样看清企业命脉时，欧印和加杠杆才不是赌博。",
       "status": "curated",
       "degree": 16
-    },
-    {
-      "id": "theme:singapore-and-small-state-survival",
-      "key": "singapore-and-small-state-survival",
-      "label": "新加坡与小国生存术",
-      "fullLabel": "新加坡与小国生存术",
-      "type": "theme",
-      "route": "themes/singapore-and-small-state-survival",
-      "summary": "讨论新加坡如何把规则、海峡、人才和谨慎外交组合成一套小国长期生存方法。",
-      "status": null,
-      "degree": 15
     },
     {
       "id": "episode:EP133",
@@ -344,6 +344,28 @@
       "degree": 13
     },
     {
+      "id": "model:subsidy-capital-flywheel",
+      "key": "subsidy-capital-flywheel",
+      "label": "补贴资本飞轮",
+      "fullLabel": "补贴资本飞轮",
+      "type": "model",
+      "route": "models/subsidy-capital-flywheel",
+      "summary": "补贴资本飞轮解释地方财政、产业基金、企业估值和再融资如何互相放大。",
+      "status": null,
+      "degree": 12
+    },
+    {
+      "id": "concept:cost-shifting",
+      "key": "cost-shifting",
+      "label": "成本外移",
+      "fullLabel": "成本外移",
+      "type": "concept",
+      "route": "concepts/cost-shifting",
+      "summary": "组织内部的高额非生产性成本，最终会通过价格、规则或风险转嫁给外部承担者。",
+      "status": null,
+      "degree": 12
+    },
+    {
       "id": "model:rule-anchored-small-state-model",
       "key": "rule-anchored-small-state-model",
       "label": "规则锚定型小国生存",
@@ -362,6 +384,28 @@
       "type": "theme",
       "route": "themes/maritime-chokepoints-and-route-order",
       "summary": "讨论海峡、运河和关键航道如何把地理位置变成规则、保险、资本和军事的综合权力。",
+      "status": null,
+      "degree": 12
+    },
+    {
+      "id": "theme:ev-financialization-and-false-sales",
+      "key": "ev-financialization-and-false-sales",
+      "label": "新能源金融化与虚假销量",
+      "fullLabel": "新能源金融化与虚假销量",
+      "type": "theme",
+      "route": "themes/ev-financialization-and-false-sales",
+      "summary": "聚焦新能源车行业如何依靠补贴、融资、渠道黑箱和虚假销售维持增长叙事。",
+      "status": null,
+      "degree": 12
+    },
+    {
+      "id": "model:narrative-instrumentalization",
+      "key": "narrative-instrumentalization",
+      "label": "叙事工具化模型",
+      "fullLabel": "叙事工具化模型",
+      "type": "model",
+      "route": "models/narrative-instrumentalization",
+      "summary": "叙事工具化模型解释叙事的主要功能从解释现实转向组织情绪和划分阵营。",
       "status": null,
       "degree": 12
     },
@@ -454,28 +498,6 @@
       "degree": 12
     },
     {
-      "id": "model:subsidy-capital-flywheel",
-      "key": "subsidy-capital-flywheel",
-      "label": "补贴资本飞轮",
-      "fullLabel": "补贴资本飞轮",
-      "type": "model",
-      "route": "models/subsidy-capital-flywheel",
-      "summary": "补贴资本飞轮解释地方财政、产业基金、企业估值和再融资如何互相放大。",
-      "status": null,
-      "degree": 11
-    },
-    {
-      "id": "concept:cost-shifting",
-      "key": "cost-shifting",
-      "label": "成本外移",
-      "fullLabel": "成本外移",
-      "type": "concept",
-      "route": "concepts/cost-shifting",
-      "summary": "组织内部的高额非生产性成本，最终会通过价格、规则或风险转嫁给外部承担者。",
-      "status": null,
-      "degree": 11
-    },
-    {
       "id": "model:proxy-containment-ring",
       "key": "proxy-containment-ring",
       "label": "代理围堵环",
@@ -531,13 +553,13 @@
       "degree": 11
     },
     {
-      "id": "theme:ev-financialization-and-false-sales",
-      "key": "ev-financialization-and-false-sales",
-      "label": "新能源金融化与虚假销量",
-      "fullLabel": "新能源金融化与虚假销量",
-      "type": "theme",
-      "route": "themes/ev-financialization-and-false-sales",
-      "summary": "聚焦新能源车行业如何依靠补贴、融资、渠道黑箱和虚假销售维持增长叙事。",
+      "id": "model:authority-misinfluence",
+      "key": "authority-misinfluence",
+      "label": "权威影响",
+      "fullLabel": "权威影响",
+      "type": "model",
+      "route": "models/authority-misinfluence",
+      "summary": "权威影响模型解释单点权威如何压缩组织独立判断，使成员更容易服从而非纠偏。",
       "status": null,
       "degree": 11
     },
@@ -549,17 +571,6 @@
       "type": "model",
       "route": "models/narrative-leverage",
       "summary": "通过一个足够大的故事，把原本有限的资源、信用和注意力撬成更大的资本、销量或支持度。",
-      "status": null,
-      "degree": 11
-    },
-    {
-      "id": "model:narrative-instrumentalization",
-      "key": "narrative-instrumentalization",
-      "label": "叙事工具化模型",
-      "fullLabel": "叙事工具化模型",
-      "type": "model",
-      "route": "models/narrative-instrumentalization",
-      "summary": "叙事工具化模型解释叙事的主要功能从解释现实转向组织情绪和划分阵营。",
       "status": null,
       "degree": 11
     },
@@ -663,13 +674,13 @@
       "degree": 11
     },
     {
-      "id": "model:authority-misinfluence",
-      "key": "authority-misinfluence",
-      "label": "权威影响",
-      "fullLabel": "权威影响",
-      "type": "model",
-      "route": "models/authority-misinfluence",
-      "summary": "权威影响模型解释单点权威如何压缩组织独立判断，使成员更容易服从而非纠偏。",
+      "id": "theme:ev-collapse-and-exit-risk",
+      "key": "ev-collapse-and-exit-risk",
+      "label": "新能源崩塌与退出风险",
+      "fullLabel": "新能源崩塌与退出风险",
+      "type": "theme",
+      "route": "themes/ev-collapse-and-exit-risk",
+      "summary": "聚焦新能源项目在失速、清算和品牌出清阶段，风险如何向债权人、用户和地方政府层层传导。",
       "status": null,
       "degree": 10
     },
@@ -747,17 +758,6 @@
       "type": "model",
       "route": "models/small-state-balancing-model",
       "summary": "小国平衡术解释小国在大国之间维持生存空间，靠位置、合法性和现实利益而非纯姿态。",
-      "status": null,
-      "degree": 9
-    },
-    {
-      "id": "theme:ev-collapse-and-exit-risk",
-      "key": "ev-collapse-and-exit-risk",
-      "label": "新能源崩塌与退出风险",
-      "fullLabel": "新能源崩塌与退出风险",
-      "type": "theme",
-      "route": "themes/ev-collapse-and-exit-risk",
-      "summary": "聚焦新能源项目在失速、清算和品牌出清阶段，风险如何向债权人、用户和地方政府层层传导。",
       "status": null,
       "degree": 9
     },
@@ -949,6 +949,17 @@
       "degree": 9
     },
     {
+      "id": "episode:EP170",
+      "key": "EP170",
+      "label": "EP170",
+      "fullLabel": "EP170 · 车圈福威镖局凛冬已至！世界第一还是灭门？谁是青城派？谁是背后的余沧海？",
+      "type": "episode",
+      "route": "episodes/EP170",
+      "summary": "本期是“福威镖局”隐喻的续集，借《笑傲江湖》里林震南镖局被灭门的桥段，拆解一家喊出“五年成为世界第一”的头部电车企业。节目判断这句口号是说给股东的虚势：国内销量随行业下滑一成多，靠存疑的海外销量和供应链金融硬撑，渗透率破六成也只是油车跌得更狠的“跟差生比差”。真正让它活着的不是产品力，而是替体系养着大量镖师、分号和家庭，就业、消费、上供都压在它身上。节目落点是“福在前、威在后”：利益是上面恩赐、可代管的，世界第一的虚名却属于上面；一旦失去被利用价值，等着它的不是灭门，而是换了名字的“合营”。",
+      "status": "curated",
+      "degree": 9
+    },
+    {
       "id": "theme:big-government-and-incentive-reversal",
       "key": "big-government-and-incentive-reversal",
       "label": "大政府与激励反转",
@@ -989,6 +1000,17 @@
       "type": "theme",
       "route": "themes/ev-safety-and-consumer-testing",
       "summary": "讨论新能源车与相关电池系统如何把安全验证不足的代价，转移到真实用户和真实事故里。",
+      "status": null,
+      "degree": 8
+    },
+    {
+      "id": "model:strategic-timing",
+      "key": "strategic-timing",
+      "label": "战略时机",
+      "fullLabel": "战略时机",
+      "type": "model",
+      "route": "models/strategic-timing",
+      "summary": "真正决定收益的往往不是是否参与，而是你能否在远早于大众情绪的时点、以合适规模和合适位置进入。",
       "status": null,
       "degree": 8
     },
@@ -1356,6 +1378,17 @@
       "degree": 8
     },
     {
+      "id": "episode:EP172",
+      "key": "EP172",
+      "label": "EP172",
+      "fullLabel": "EP172 · 《抓特务》翻车不冤：别拿\"特务\"二字消费大众记忆和社会情绪！",
+      "type": "episode",
+      "route": "episodes/EP172",
+      "summary": "前两天冯小刚新片《抓特务》上映即票房口碑双扑街、骂声一片，连带站台的韩红也挨了骂，本期拆解这场翻车为何一点不冤。核心判断有三层：片名直接踩中一代人关于「特务」的历史创伤和当下扣帽子话术的情绪雷点，把观众挡在门外；冯小刚从《芳华》起就靠年代滤镜加情绪消费两头通吃，吃中老年怀旧红利和年轻人信息差，《抓特务》不过是同一套复制粘贴；宣发又把公益口碑拉满的韩红推出来背书、喊北京人「走个面」，是道德绑架。落点是这次翻车其实是好事，说明观众在变清醒，不再为情怀标签和怀旧滤镜买单，靠情绪消费赚钱终究走不远。",
+      "status": "curated",
+      "degree": 8
+    },
+    {
       "id": "theme:rule-of-law-boundaries-and-social-trust",
       "key": "rule-of-law-boundaries-and-social-trust",
       "label": "法治边界与社会信任",
@@ -1363,6 +1396,17 @@
       "type": "theme",
       "route": "themes/rule-of-law-boundaries-and-social-trust",
       "summary": "关注法律灰区如何影响公众的善意、风险感和彼此信任。",
+      "status": null,
+      "degree": 7
+    },
+    {
+      "id": "concept:phantom-growth",
+      "key": "phantom-growth",
+      "label": "幻象增长",
+      "fullLabel": "幻象增长",
+      "type": "concept",
+      "route": "concepts/phantom-growth",
+      "summary": "系统通过报表、交易、融资和场面把增长做出来，但真实产业和真实利润并没有同步长出来。",
       "status": null,
       "degree": 7
     },
@@ -1433,13 +1477,13 @@
       "degree": 7
     },
     {
-      "id": "model:strategic-timing",
-      "key": "strategic-timing",
-      "label": "战略时机",
-      "fullLabel": "战略时机",
-      "type": "model",
-      "route": "models/strategic-timing",
-      "summary": "真正决定收益的往往不是是否参与，而是你能否在远早于大众情绪的时点、以合适规模和合适位置进入。",
+      "id": "concept:phantom-sales",
+      "key": "phantom-sales",
+      "label": "虚假销售",
+      "fullLabel": "虚假销售",
+      "type": "concept",
+      "route": "concepts/phantom-sales",
+      "summary": "企业把并不存在的真实终端需求，包装成销量、出海成绩或渠道消化能力，用来维持估值和融资信心。",
       "status": null,
       "degree": 7
     },
@@ -1752,17 +1796,6 @@
       "degree": 6
     },
     {
-      "id": "concept:phantom-growth",
-      "key": "phantom-growth",
-      "label": "幻象增长",
-      "fullLabel": "幻象增长",
-      "type": "concept",
-      "route": "concepts/phantom-growth",
-      "summary": "系统通过报表、交易、融资和场面把增长做出来，但真实产业和真实利润并没有同步长出来。",
-      "status": null,
-      "degree": 6
-    },
-    {
       "id": "concept:gray-oil-network",
       "key": "gray-oil-network",
       "label": "灰色石油网络",
@@ -1858,17 +1891,6 @@
       "type": "concept",
       "route": "concepts/consumer-testbed",
       "summary": "企业把本该在研发和验证阶段承担的安全成本，转移到首批消费者、公共道路和真实事故里去消化。",
-      "status": null,
-      "degree": 6
-    },
-    {
-      "id": "concept:phantom-sales",
-      "key": "phantom-sales",
-      "label": "虚假销售",
-      "fullLabel": "虚假销售",
-      "type": "concept",
-      "route": "concepts/phantom-sales",
-      "summary": "企业把并不存在的真实终端需求，包装成销量、出海成绩或渠道消化能力，用来维持估值和融资信心。",
       "status": null,
       "degree": 6
     },
@@ -2144,6 +2166,17 @@
       "type": "episode",
       "route": "episodes/EP148",
       "summary": "法兰克福警方在路特斯跑车德国总部当场抓获一名 IT 主管，揭出一个由八名中国高学历精英组成、在 Telegram 加密群里运行四年的迷奸团伙，外围围观群高达 4500 人、长期活跃超两千。主持人不煽情，而是把这群哈工大、慕尼黑工大、北大医学部背景的施暴者放回应试教育体系，追问为何从分数逻辑里赢出来的青年才俊会把同胞女性当成可量化的猎物。节目把跨境药物链、群内竞赛式攀比、对熟人甚至女友的施暴和数千华人围观放在一起，落点是把这桩刑事案当作精致利己主义在海外华人社群显形的标本。",
+      "status": "curated",
+      "degree": 6
+    },
+    {
+      "id": "episode:EP171",
+      "key": "EP171",
+      "label": "EP171",
+      "fullLabel": "EP171 · 中新苏州工业园区深度复盘。李光耀的远见，新加坡超前规划成就今日苏州！",
+      "type": "episode",
+      "route": "episodes/EP171",
+      "summary": "本期复盘中新合作的标杆——苏州工业园区，回答一个被辉煌掩盖的问题：这个常年位居全国开发区榜首的园区，当年到底是怎么来的。节目拆成三条线：邓公南巡后地方政府求发展的招商热、苏州市长追车三问击败无锡抢下项目的争夺战，以及新加坡为何不远千里入局——不是单纯赚钱，而是为几十年双边绑定布局。最核心的落点是新加坡的前瞻性：花 3000 万做整体规划、把 8 平方公里土地垫高 70 公分，硬扛住 1998 特大洪水。节目用它对照中国当年先招商后建厂的急功近利，点出长期主义与短期思维的格局差距，也强调这是苏州的开放诚意和新加坡远见共同成就的双向结果。",
       "status": "curated",
       "degree": 6
     },
@@ -2709,6 +2742,28 @@
       "degree": 4
     },
     {
+      "id": "person:lee-kuan-yew",
+      "key": "lee-kuan-yew",
+      "label": "李光耀",
+      "fullLabel": "李光耀",
+      "type": "person",
+      "route": "people/lee-kuan-yew",
+      "summary": "李光耀是新加坡建国总理，节目借他说明新加坡国家身份、国家责任和小国生存决心怎样压过祖籍血缘与软弱叙事。",
+      "status": null,
+      "degree": 4
+    },
+    {
+      "id": "person:lee-hsien-loong",
+      "key": "lee-hsien-loong",
+      "label": "李显龙",
+      "fullLabel": "李显龙",
+      "type": "person",
+      "route": "people/lee-hsien-loong",
+      "summary": "李显龙是新加坡前总理、现任国务资政，节目借他理解新加坡务实外交、国家身份边界和小国平衡逻辑。",
+      "status": null,
+      "degree": 4
+    },
+    {
       "id": "model:platform-legibility-filter",
       "key": "platform-legibility-filter",
       "label": "平台可读性过滤器",
@@ -2848,6 +2903,17 @@
       "type": "model",
       "route": "models/prototype-production-decoupling",
       "summary": "样机量产脱钩解释送检、展示和量产之间的标准落差如何制造真实安全风险。",
+      "status": null,
+      "degree": 4
+    },
+    {
+      "id": "theme:film-industry-and-traffic-logic",
+      "key": "film-industry-and-traffic-logic",
+      "label": "影视工业与流量逻辑",
+      "fullLabel": "影视工业与流量逻辑",
+      "type": "theme",
+      "route": "themes/film-industry-and-traffic-logic",
+      "summary": "关注影视生产如何越来越服从人设、粉丝和宣发流量，而非角色与作品本身。",
       "status": null,
       "degree": 4
     },
@@ -3149,6 +3215,28 @@
       "degree": 3
     },
     {
+      "id": "concept:planning-lockin",
+      "key": "planning-lockin",
+      "label": "大计划锁定",
+      "fullLabel": "大计划锁定",
+      "type": "concept",
+      "route": "concepts/planning-lockin",
+      "summary": "宏大目标一旦锁定资源和判断，分散试错与旁路探索就会被压缩。",
+      "status": null,
+      "degree": 3
+    },
+    {
+      "id": "concept:moral-capital",
+      "key": "moral-capital",
+      "label": "道德资本",
+      "fullLabel": "道德资本",
+      "type": "concept",
+      "route": "concepts/moral-capital",
+      "summary": "长期为他人承担和创造价值，会形成一种不能即时折现却能改变公共评价的道德资本。",
+      "status": null,
+      "degree": 3
+    },
+    {
       "id": "theme:price-war-and-precision-competition",
       "key": "price-war-and-precision-competition",
       "label": "低价竞争与精准打击",
@@ -3380,28 +3468,6 @@
       "degree": 3
     },
     {
-      "id": "person:lee-kuan-yew",
-      "key": "lee-kuan-yew",
-      "label": "李光耀",
-      "fullLabel": "李光耀",
-      "type": "person",
-      "route": "people/lee-kuan-yew",
-      "summary": "李光耀是新加坡建国总理，节目借他说明新加坡国家身份、国家责任和小国生存决心怎样压过祖籍血缘与软弱叙事。",
-      "status": null,
-      "degree": 3
-    },
-    {
-      "id": "person:lee-hsien-loong",
-      "key": "lee-hsien-loong",
-      "label": "李显龙",
-      "fullLabel": "李显龙",
-      "type": "person",
-      "route": "people/lee-hsien-loong",
-      "summary": "李显龙是新加坡前总理、现任国务资政，节目借他理解新加坡务实外交、国家身份边界和小国平衡逻辑。",
-      "status": null,
-      "degree": 3
-    },
-    {
       "id": "person:luo-yonghao",
       "key": "luo-yonghao",
       "label": "罗永浩",
@@ -3501,6 +3567,17 @@
       "degree": 3
     },
     {
+      "id": "person:wang-chuanfu",
+      "key": "wang-chuanfu",
+      "label": "王传福",
+      "fullLabel": "王传福",
+      "type": "person",
+      "route": "people/wang-chuanfu",
+      "summary": "王传福是比亚迪创始人、董事长兼总裁，节目借他观察头部新能源车企怎样把制造能力、销量叙事和供应链金融接成扩张系统。",
+      "status": null,
+      "degree": 3
+    },
+    {
       "id": "model:crisis-selection",
       "key": "crisis-selection",
       "label": "危机筛选",
@@ -3596,17 +3673,6 @@
       "type": "concept",
       "route": "concepts/hidden-labor-subsidy",
       "summary": "项目看似低成本，实际靠基层人员、志愿者和公共部门的隐形时间来补贴。",
-      "status": null,
-      "degree": 3
-    },
-    {
-      "id": "theme:film-industry-and-traffic-logic",
-      "key": "film-industry-and-traffic-logic",
-      "label": "影视工业与流量逻辑",
-      "fullLabel": "影视工业与流量逻辑",
-      "type": "theme",
-      "route": "themes/film-industry-and-traffic-logic",
-      "summary": "关注影视生产如何越来越服从人设、粉丝和宣发流量，而非角色与作品本身。",
       "status": null,
       "degree": 3
     },
@@ -3831,24 +3897,35 @@
       "degree": 2
     },
     {
-      "id": "concept:planning-lockin",
-      "key": "planning-lockin",
-      "label": "大计划锁定",
-      "fullLabel": "大计划锁定",
-      "type": "concept",
-      "route": "concepts/planning-lockin",
-      "summary": "宏大目标一旦锁定资源和判断，分散试错与旁路探索就会被压缩。",
+      "id": "theme:trauma-memory-and-generational-loop",
+      "key": "trauma-memory-and-generational-loop",
+      "label": "创伤记忆与代际循环",
+      "fullLabel": "创伤记忆与代际循环",
+      "type": "theme",
+      "route": "themes/trauma-memory-and-generational-loop",
+      "summary": "讨论旧创伤如何在新的现实压力下被误读、怀旧和再次传递。",
       "status": null,
       "degree": 2
     },
     {
-      "id": "concept:moral-capital",
-      "key": "moral-capital",
-      "label": "道德资本",
-      "fullLabel": "道德资本",
+      "id": "concept:trauma-nostalgia",
+      "key": "trauma-nostalgia",
+      "label": "创伤式怀旧",
+      "fullLabel": "创伤式怀旧",
       "type": "concept",
-      "route": "concepts/moral-capital",
-      "summary": "长期为他人承担和创造价值，会形成一种不能即时折现却能改变公共评价的道德资本。",
+      "route": "concepts/trauma-nostalgia",
+      "summary": "旧伤未被理解时，曾经造成伤害的年代会被重新包装成热血、激情和答案。",
+      "status": null,
+      "degree": 2
+    },
+    {
+      "id": "model:trauma-loop",
+      "key": "trauma-loop",
+      "label": "创伤循环模型",
+      "fullLabel": "创伤循环模型",
+      "type": "model",
+      "route": "models/trauma-loop",
+      "summary": "创伤循环模型解释未被理解和处理的伤害，会以怀旧、灌输和错误想象反复回流。",
       "status": null,
       "degree": 2
     },
@@ -3937,6 +4014,17 @@
       "type": "concept",
       "route": "concepts/corporate-identity-shift",
       "summary": "公司会通过迁移法律身份、融资主场和制度归属，改变自己被定价和被理解的方式。",
+      "status": null,
+      "degree": 2
+    },
+    {
+      "id": "theme:charity-and-moral-capital",
+      "key": "charity-and-moral-capital",
+      "label": "公益、善意与商业失灵",
+      "fullLabel": "公益、善意与商业失灵",
+      "type": "theme",
+      "route": "themes/charity-and-moral-capital",
+      "summary": "一个人即便在资本世界里不断失败，也可能在公共世界里留下真正深厚的价值。",
       "status": null,
       "degree": 2
     },
@@ -4300,17 +4388,6 @@
       "type": "concept",
       "route": "concepts/investment-timing-gap",
       "summary": "资本和基础设施先投入，真实应用价值后兑现，中间的时间差会制造估值、现金流和耐心风险。",
-      "status": null,
-      "degree": 2
-    },
-    {
-      "id": "person:wang-chuanfu",
-      "key": "wang-chuanfu",
-      "label": "王传福",
-      "fullLabel": "王传福",
-      "type": "person",
-      "route": "people/wang-chuanfu",
-      "summary": "王传福是比亚迪创始人、董事长兼总裁，节目借他观察头部新能源车企怎样把制造能力、销量叙事和供应链金融接成扩张系统。",
       "status": null,
       "degree": 2
     },
@@ -4744,39 +4821,6 @@
       "degree": 1
     },
     {
-      "id": "theme:trauma-memory-and-generational-loop",
-      "key": "trauma-memory-and-generational-loop",
-      "label": "创伤记忆与代际循环",
-      "fullLabel": "创伤记忆与代际循环",
-      "type": "theme",
-      "route": "themes/trauma-memory-and-generational-loop",
-      "summary": "讨论旧创伤如何在新的现实压力下被误读、怀旧和再次传递。",
-      "status": null,
-      "degree": 1
-    },
-    {
-      "id": "concept:trauma-nostalgia",
-      "key": "trauma-nostalgia",
-      "label": "创伤式怀旧",
-      "fullLabel": "创伤式怀旧",
-      "type": "concept",
-      "route": "concepts/trauma-nostalgia",
-      "summary": "旧伤未被理解时，曾经造成伤害的年代会被重新包装成热血、激情和答案。",
-      "status": null,
-      "degree": 1
-    },
-    {
-      "id": "model:trauma-loop",
-      "key": "trauma-loop",
-      "label": "创伤循环模型",
-      "fullLabel": "创伤循环模型",
-      "type": "model",
-      "route": "models/trauma-loop",
-      "summary": "创伤循环模型解释未被理解和处理的伤害，会以怀旧、灌输和错误想象反复回流。",
-      "status": null,
-      "degree": 1
-    },
-    {
       "id": "concept:great-small-power-leveling",
       "key": "great-small-power-leveling",
       "label": "大国小国差距拉平",
@@ -4916,17 +4960,6 @@
       "type": "concept",
       "route": "concepts/toolified-history",
       "summary": "历史被拿来组织当下身份、敌我和情绪时，就从理解过去变成动员工具。",
-      "status": null,
-      "degree": 1
-    },
-    {
-      "id": "theme:charity-and-moral-capital",
-      "key": "charity-and-moral-capital",
-      "label": "公益、善意与商业失灵",
-      "fullLabel": "公益、善意与商业失灵",
-      "type": "theme",
-      "route": "themes/charity-and-moral-capital",
-      "summary": "一个人即便在资本世界里不断失败，也可能在公共世界里留下真正深厚的价值。",
       "status": null,
       "degree": 1
     },
@@ -5965,6 +5998,17 @@
       "degree": 1
     },
     {
+      "id": "concept:employment-reservoir",
+      "key": "employment-reservoir",
+      "label": "养人蓄水池",
+      "fullLabel": "养人蓄水池",
+      "type": "concept",
+      "route": "concepts/employment-reservoir",
+      "summary": "一家企业被体系保留下来的真正理由，往往不是它能不能盈利，而是它替社会养着大量员工、家庭和消费链条。",
+      "status": null,
+      "degree": 1
+    },
+    {
       "id": "person:yao-zhenhua",
       "key": "yao-zhenhua",
       "label": "姚振华",
@@ -6137,6 +6181,17 @@
       "type": "person",
       "route": "people/zhang-xue-racer",
       "summary": "张雪是从修车学徒走向摩托车创业和赛道制造的人物，节目借他的经历反驳“普通人已经没有机会”的灭梦叙事。",
+      "status": null,
+      "degree": 1
+    },
+    {
+      "id": "concept:long-termism",
+      "key": "long-termism",
+      "label": "长期主义",
+      "fullLabel": "长期主义",
+      "type": "concept",
+      "route": "concepts/long-termism",
+      "summary": "以几十年甚至百年为尺度做决策，前期为长远格局多花成本、多做规划，而不是被短期利益和政绩驱动。",
       "status": null,
       "degree": 1
     },
@@ -12701,6 +12756,111 @@
       "kind": "episode-theme"
     },
     {
+      "source": "episode:EP170",
+      "target": "concept:phantom-sales",
+      "kind": "episode-concept"
+    },
+    {
+      "source": "episode:EP170",
+      "target": "concept:phantom-growth",
+      "kind": "episode-concept"
+    },
+    {
+      "source": "episode:EP170",
+      "target": "concept:cost-shifting",
+      "kind": "episode-concept"
+    },
+    {
+      "source": "episode:EP170",
+      "target": "concept:hidden-debt",
+      "kind": "episode-concept"
+    },
+    {
+      "source": "episode:EP170",
+      "target": "concept:employment-reservoir",
+      "kind": "episode-concept"
+    },
+    {
+      "source": "episode:EP170",
+      "target": "model:subsidy-capital-flywheel",
+      "kind": "episode-model"
+    },
+    {
+      "source": "episode:EP170",
+      "target": "person:wang-chuanfu",
+      "kind": "episode-person"
+    },
+    {
+      "source": "episode:EP170",
+      "target": "theme:ev-financialization-and-false-sales",
+      "kind": "episode-theme"
+    },
+    {
+      "source": "episode:EP170",
+      "target": "theme:ev-collapse-and-exit-risk",
+      "kind": "episode-theme"
+    },
+    {
+      "source": "episode:EP171",
+      "target": "concept:planning-lockin",
+      "kind": "episode-concept"
+    },
+    {
+      "source": "episode:EP171",
+      "target": "concept:long-termism",
+      "kind": "episode-concept"
+    },
+    {
+      "source": "episode:EP171",
+      "target": "model:strategic-timing",
+      "kind": "episode-model"
+    },
+    {
+      "source": "episode:EP171",
+      "target": "person:lee-kuan-yew",
+      "kind": "episode-person"
+    },
+    {
+      "source": "episode:EP171",
+      "target": "person:lee-hsien-loong",
+      "kind": "episode-person"
+    },
+    {
+      "source": "episode:EP171",
+      "target": "theme:singapore-and-small-state-survival",
+      "kind": "episode-theme"
+    },
+    {
+      "source": "episode:EP172",
+      "target": "concept:trauma-nostalgia",
+      "kind": "episode-concept"
+    },
+    {
+      "source": "episode:EP172",
+      "target": "concept:moral-capital",
+      "kind": "episode-concept"
+    },
+    {
+      "source": "episode:EP172",
+      "target": "model:narrative-instrumentalization",
+      "kind": "episode-model"
+    },
+    {
+      "source": "episode:EP172",
+      "target": "model:authority-misinfluence",
+      "kind": "episode-model"
+    },
+    {
+      "source": "episode:EP172",
+      "target": "model:trauma-loop",
+      "kind": "episode-model"
+    },
+    {
+      "source": "episode:EP172",
+      "target": "theme:trauma-memory-and-generational-loop",
+      "kind": "episode-theme"
+    },
+    {
       "source": "episode:EP120",
       "target": "concept:active-neutrality",
       "kind": "episode-concept"
@@ -12836,6 +12996,11 @@
       "kind": "episode-theme"
     },
     {
+      "source": "episode:EP172",
+      "target": "theme:charity-and-moral-capital",
+      "kind": "episode-theme"
+    },
+    {
       "source": "episode:EP106",
       "target": "theme:crisis-era-power-reallocation",
       "kind": "episode-theme"
@@ -12843,6 +13008,11 @@
     {
       "source": "episode:EP162",
       "target": "theme:east-asia-security-realignment",
+      "kind": "episode-theme"
+    },
+    {
+      "source": "episode:EP172",
+      "target": "theme:film-industry-and-traffic-logic",
       "kind": "episode-theme"
     },
     {
