@@ -2,14 +2,14 @@
   "meta": {
     "title": "颖响力知识图谱",
     "subtitle": "节目、概念、模型、人物、主题之间的可视化连接网络",
-    "nodeCount": 575,
-    "linkCount": 1347,
+    "nodeCount": 581,
+    "linkCount": 1365,
     "typeCounts": {
-      "model": 75,
+      "model": 76,
       "person": 65,
-      "concept": 172,
-      "episode": 172,
-      "theme": 91
+      "theme": 91,
+      "concept": 175,
+      "episode": 174
     }
   },
   "nodes": [
@@ -25,6 +25,17 @@
       "degree": 39
     },
     {
+      "id": "person:donald-trump",
+      "key": "donald-trump",
+      "label": "特朗普",
+      "fullLabel": "特朗普",
+      "type": "person",
+      "route": "people/donald-trump",
+      "summary": "特朗普是美国共和党政治人物、第45任与第47任美国总统，节目借他观察美国战略收缩、成本转嫁和规则重定价。",
+      "status": null,
+      "degree": 18
+    },
+    {
       "id": "model:leverage-backfire",
       "key": "leverage-backfire",
       "label": "杠杆反噬",
@@ -36,13 +47,13 @@
       "degree": 17
     },
     {
-      "id": "person:donald-trump",
-      "key": "donald-trump",
-      "label": "特朗普",
-      "fullLabel": "特朗普",
-      "type": "person",
-      "route": "people/donald-trump",
-      "summary": "特朗普是美国共和党政治人物、第45任与第47任美国总统，节目借他观察美国战略收缩、成本转嫁和规则重定价。",
+      "id": "theme:singapore-and-small-state-survival",
+      "key": "singapore-and-small-state-survival",
+      "label": "新加坡与小国生存术",
+      "fullLabel": "新加坡与小国生存术",
+      "type": "theme",
+      "route": "themes/singapore-and-small-state-survival",
+      "summary": "讨论新加坡如何把规则、海峡、人才和谨慎外交组合成一套小国长期生存方法。",
       "status": null,
       "degree": 17
     },
@@ -67,17 +78,6 @@
       "summary": "本期借 Meta 收购 Manus 被监管否决，讨论这件事对中国草根创业者意味着什么。节目承认叫停交易有明确法律依据，但核心判断是：过去三十年支撑无背景年轻人从零到一的美元基金、全球市场和赴美上市、海外并购退出通道正在被堵死；地方国资基金的考核逻辑重视国有资产不流失、招商落地和可见退出，天然不会为纯软件、早期、无背景的草根项目承担风险。结果是年轻人理性地转向考研考公，创新资源从市场能力转向行政关系，真正的颠覆式创新被挤出，只剩依附式和表演式创新。",
       "status": "curated",
       "degree": 17
-    },
-    {
-      "id": "theme:singapore-and-small-state-survival",
-      "key": "singapore-and-small-state-survival",
-      "label": "新加坡与小国生存术",
-      "fullLabel": "新加坡与小国生存术",
-      "type": "theme",
-      "route": "themes/singapore-and-small-state-survival",
-      "summary": "讨论新加坡如何把规则、海峡、人才和谨慎外交组合成一套小国长期生存方法。",
-      "status": null,
-      "degree": 16
     },
     {
       "id": "episode:EP001",
@@ -230,6 +230,17 @@
       "type": "model",
       "route": "models/path-dependence",
       "summary": "路径依赖解释早期技术和叙事选择一旦成功，就会反过来限制后续转向更优路径。",
+      "status": null,
+      "degree": 13
+    },
+    {
+      "id": "model:narrative-instrumentalization",
+      "key": "narrative-instrumentalization",
+      "label": "叙事工具化模型",
+      "fullLabel": "叙事工具化模型",
+      "type": "model",
+      "route": "models/narrative-instrumentalization",
+      "summary": "叙事工具化模型解释叙事的主要功能从解释现实转向组织情绪和划分阵营。",
       "status": null,
       "degree": 13
     },
@@ -399,13 +410,13 @@
       "degree": 12
     },
     {
-      "id": "model:narrative-instrumentalization",
-      "key": "narrative-instrumentalization",
-      "label": "叙事工具化模型",
-      "fullLabel": "叙事工具化模型",
-      "type": "model",
-      "route": "models/narrative-instrumentalization",
-      "summary": "叙事工具化模型解释叙事的主要功能从解释现实转向组织情绪和划分阵营。",
+      "id": "theme:sanctions-and-power-containment",
+      "key": "sanctions-and-power-containment",
+      "label": "制裁、遏制与集团竞争",
+      "fullLabel": "制裁、遏制与集团竞争",
+      "type": "theme",
+      "route": "themes/sanctions-and-power-containment",
+      "summary": "讨论制裁、门罗主义、海峡与联盟如何共同服务于压制对手集团的全球布局。",
       "status": null,
       "degree": 12
     },
@@ -575,17 +586,6 @@
       "degree": 11
     },
     {
-      "id": "theme:sanctions-and-power-containment",
-      "key": "sanctions-and-power-containment",
-      "label": "制裁、遏制与集团竞争",
-      "fullLabel": "制裁、遏制与集团竞争",
-      "type": "theme",
-      "route": "themes/sanctions-and-power-containment",
-      "summary": "讨论制裁、门罗主义、海峡与联盟如何共同服务于压制对手集团的全球布局。",
-      "status": null,
-      "degree": 11
-    },
-    {
       "id": "concept:sanction-containment",
       "key": "sanction-containment",
       "label": "制裁遏制",
@@ -729,6 +729,17 @@
       "degree": 10
     },
     {
+      "id": "episode:EP173",
+      "key": "EP173",
+      "label": "EP173",
+      "fullLabel": "EP173 · 《给阿嬷的情书》是统战电影吗？新加坡热映是\"破防\"还是破例？",
+      "type": "episode",
+      "route": "episodes/EP173",
+      "summary": "东大潮汕片《给阿嬷的情书》在新加坡热映，从限映八场一路加到破例五十场，被一些华文媒体贴上统战标签。本期判断新加坡不是守不住华语政策而破防，而是用堵不如疏的破例：与其行政禁止把观众逼去别的平台，不如让市场消化。节目进而借这部电影追问根到底是什么——落叶归根不如落地生根，真正的根是对自己好、能生活下去的地方，而不是祖先故土。对那个把潮汕话当文化的女孩，节目指出她的狂热其实是对客家母系的反抗，是一场没完成的精神弑母。落点是：它确实带统战色彩，却仍是部好电影，去掉那层滤镜照样能看。",
+      "status": "curated",
+      "degree": 10
+    },
+    {
       "id": "model:value-capture",
       "key": "value-capture",
       "label": "价值捕获",
@@ -736,6 +747,17 @@
       "type": "model",
       "route": "models/value-capture",
       "summary": "价值捕获模型强调商业链条中关键不只是创造了价值，而是谁真正留下了价值。",
+      "status": null,
+      "degree": 9
+    },
+    {
+      "id": "theme:dollar-system-and-gray-trade",
+      "key": "dollar-system-and-gray-trade",
+      "label": "美元体系与灰色贸易",
+      "fullLabel": "美元体系与灰色贸易",
+      "type": "theme",
+      "route": "themes/dollar-system-and-gray-trade",
+      "summary": "讨论石油美元的真实脆弱点，究竟藏在公开统计之外的哪些灰色交易链条里。",
       "status": null,
       "degree": 9
     },
@@ -967,17 +989,6 @@
       "type": "theme",
       "route": "themes/big-government-and-incentive-reversal",
       "summary": "当大政府失去高速增长红利后，原本向前看的发展激励会慢慢转成向后看的收缩与回补。",
-      "status": null,
-      "degree": 8
-    },
-    {
-      "id": "theme:dollar-system-and-gray-trade",
-      "key": "dollar-system-and-gray-trade",
-      "label": "美元体系与灰色贸易",
-      "fullLabel": "美元体系与灰色贸易",
-      "type": "theme",
-      "route": "themes/dollar-system-and-gray-trade",
-      "summary": "讨论石油美元的真实脆弱点，究竟藏在公开统计之外的哪些灰色交易链条里。",
       "status": null,
       "degree": 8
     },
@@ -1389,6 +1400,17 @@
       "degree": 8
     },
     {
+      "id": "episode:EP174",
+      "key": "EP174",
+      "label": "EP174",
+      "fullLabel": "EP174 · 上任仅45天雷霆反腐，伊拉克总理斩断石油灰色贸易，助力川普布局中东",
+      "type": "episode",
+      "route": "episodes/EP174",
+      "summary": "国际焦点还在伊朗和霍尔木兹海峡时，本期把视角移到伊拉克。政治素人出身、商人背景的新总理扎伊迪上台仅四十五天，就在六月二十八号发动雷霆反腐，查抄上亿现金、黄金和枪支，逮捕名单近一百二十人。节目判断这场反腐表面是清国内腐败，实质是斩断以石油为核心的灰色贸易：伊拉克油田与伊朗连通、混油后连生物标谱都改了，成了伊朗规避制裁的通道。扎伊迪切断这条线、把石油体系接入美国公司和美元结算，正是川普建墙分敌我、打击灰色贸易回归美元这套战略在海湾推进的一环。落点是海湾国家正一个个站队，黄金走势也随灰色贸易多寡而定。",
+      "status": "curated",
+      "degree": 8
+    },
+    {
       "id": "theme:rule-of-law-boundaries-and-social-trust",
       "key": "rule-of-law-boundaries-and-social-trust",
       "label": "法治边界与社会信任",
@@ -1407,6 +1429,17 @@
       "type": "concept",
       "route": "concepts/phantom-growth",
       "summary": "系统通过报表、交易、融资和场面把增长做出来，但真实产业和真实利润并没有同步长出来。",
+      "status": null,
+      "degree": 7
+    },
+    {
+      "id": "concept:gray-oil-network",
+      "key": "gray-oil-network",
+      "label": "灰色石油网络",
+      "fullLabel": "灰色石油网络",
+      "type": "concept",
+      "route": "concepts/gray-oil-network",
+      "summary": "绕开正规结算和监管的石油流动，会在影子体系中重塑货币、制裁和地缘利益。",
       "status": null,
       "degree": 7
     },
@@ -1484,6 +1517,17 @@
       "type": "concept",
       "route": "concepts/phantom-sales",
       "summary": "企业把并不存在的真实终端需求，包装成销量、出海成绩或渠道消化能力，用来维持估值和融资信心。",
+      "status": null,
+      "degree": 7
+    },
+    {
+      "id": "model:sanction-parallel-market",
+      "key": "sanction-parallel-market",
+      "label": "制裁平行市场模型",
+      "fullLabel": "制裁平行市场模型",
+      "type": "model",
+      "route": "models/sanction-parallel-market",
+      "summary": "制裁如果没有消灭需求，就会把交易推向更高风险、更高利润、更难监管的平行市场。",
       "status": null,
       "degree": 7
     },
@@ -1796,17 +1840,6 @@
       "degree": 6
     },
     {
-      "id": "concept:gray-oil-network",
-      "key": "gray-oil-network",
-      "label": "灰色石油网络",
-      "fullLabel": "灰色石油网络",
-      "type": "concept",
-      "route": "concepts/gray-oil-network",
-      "summary": "绕开正规结算和监管的石油流动，会在影子体系中重塑货币、制裁和地缘利益。",
-      "status": null,
-      "degree": 6
-    },
-    {
       "id": "concept:technical-shortcut",
       "key": "technical-shortcut",
       "label": "技术捷径",
@@ -1913,17 +1946,6 @@
       "type": "model",
       "route": "models/political-embedded-enterprise",
       "summary": "企业一旦把自身命运深嵌进地方政府或国资体系，短期会更能续命，长期却更容易沦为政策工具。",
-      "status": null,
-      "degree": 6
-    },
-    {
-      "id": "model:sanction-parallel-market",
-      "key": "sanction-parallel-market",
-      "label": "制裁平行市场模型",
-      "fullLabel": "制裁平行市场模型",
-      "type": "model",
-      "route": "models/sanction-parallel-market",
-      "summary": "制裁如果没有消灭需求，就会把交易推向更高风险、更高利润、更难监管的平行市场。",
       "status": null,
       "degree": 6
     },
@@ -2302,6 +2324,17 @@
       "degree": 5
     },
     {
+      "id": "person:lee-hsien-loong",
+      "key": "lee-hsien-loong",
+      "label": "李显龙",
+      "fullLabel": "李显龙",
+      "type": "person",
+      "route": "people/lee-hsien-loong",
+      "summary": "李显龙是新加坡前总理、现任国务资政，节目借他理解新加坡务实外交、国家身份边界和小国平衡逻辑。",
+      "status": null,
+      "degree": 5
+    },
+    {
       "id": "theme:platform-labor-and-lived-reality",
       "key": "platform-labor-and-lived-reality",
       "label": "平台劳动与真实生存",
@@ -2610,6 +2643,17 @@
       "degree": 5
     },
     {
+      "id": "model:safety-valve-governance",
+      "key": "safety-valve-governance",
+      "label": "安全阀治理模型",
+      "fullLabel": "安全阀治理模型",
+      "type": "model",
+      "route": "models/safety-valve-governance",
+      "summary": "安全阀治理模型解释体系会容纳分流焦虑的中间人，并在其越位时进行收束。",
+      "status": null,
+      "degree": 4
+    },
+    {
       "id": "concept:performative-innovation",
       "key": "performative-innovation",
       "label": "表演式创新",
@@ -2639,6 +2683,17 @@
       "type": "theme",
       "route": "themes/financial-content-and-long-termism",
       "summary": "真正有价值的财经内容应该帮助人建立周期、战略和时机意识，而不是只卖每天的情绪波动。",
+      "status": null,
+      "degree": 4
+    },
+    {
+      "id": "theme:bullshit-politics-and-historical-narratives",
+      "key": "bullshit-politics-and-historical-narratives",
+      "label": "扯淡政治与历史叙事",
+      "fullLabel": "扯淡政治与历史叙事",
+      "type": "theme",
+      "route": "themes/bullshit-politics-and-historical-narratives",
+      "summary": "讨论对真相冷漠的话术如何进入历史解释和身份动员。",
       "status": null,
       "degree": 4
     },
@@ -2749,17 +2804,6 @@
       "type": "person",
       "route": "people/lee-kuan-yew",
       "summary": "李光耀是新加坡建国总理，节目借他说明新加坡国家身份、国家责任和小国生存决心怎样压过祖籍血缘与软弱叙事。",
-      "status": null,
-      "degree": 4
-    },
-    {
-      "id": "person:lee-hsien-loong",
-      "key": "lee-hsien-loong",
-      "label": "李显龙",
-      "fullLabel": "李显龙",
-      "type": "person",
-      "route": "people/lee-hsien-loong",
-      "summary": "李显龙是新加坡前总理、现任国务资政，节目借他理解新加坡务实外交、国家身份边界和小国平衡逻辑。",
       "status": null,
       "degree": 4
     },
@@ -3116,17 +3160,6 @@
       "degree": 4
     },
     {
-      "id": "model:safety-valve-governance",
-      "key": "safety-valve-governance",
-      "label": "安全阀治理模型",
-      "fullLabel": "安全阀治理模型",
-      "type": "model",
-      "route": "models/safety-valve-governance",
-      "summary": "安全阀治理模型解释体系会容纳分流焦虑的中间人，并在其越位时进行收束。",
-      "status": null,
-      "degree": 3
-    },
-    {
       "id": "concept:safety-attention-shift",
       "key": "safety-attention-shift",
       "label": "安全注意力转移",
@@ -3189,17 +3222,6 @@
       "type": "theme",
       "route": "themes/catering-pricing-logic",
       "summary": "讨论餐饮价格背后到底由哪些结构因素共同决定。",
-      "status": null,
-      "degree": 3
-    },
-    {
-      "id": "theme:bullshit-politics-and-historical-narratives",
-      "key": "bullshit-politics-and-historical-narratives",
-      "label": "扯淡政治与历史叙事",
-      "fullLabel": "扯淡政治与历史叙事",
-      "type": "theme",
-      "route": "themes/bullshit-politics-and-historical-narratives",
-      "summary": "讨论对真相冷漠的话术如何进入历史解释和身份动员。",
       "status": null,
       "degree": 3
     },
@@ -3314,6 +3336,17 @@
       "degree": 3
     },
     {
+      "id": "theme:homeland-and-civic-belonging",
+      "key": "homeland-and-civic-belonging",
+      "label": "故乡想象与公民归属",
+      "fullLabel": "故乡想象与公民归属",
+      "type": "theme",
+      "route": "themes/homeland-and-civic-belonging",
+      "summary": "讨论血缘故乡、文化记忆与现代公民认同之间的边界如何被重新划分。",
+      "status": null,
+      "degree": 3
+    },
+    {
       "id": "concept:national-identity-hostage",
       "key": "national-identity-hostage",
       "label": "国家身份绑架",
@@ -3321,6 +3354,17 @@
       "type": "concept",
       "route": "concepts/national-identity-hostage",
       "summary": "国家身份绑架指个体把私人冲突抬升为国家受辱，用共同体身份替个人行为兜底。",
+      "status": null,
+      "degree": 3
+    },
+    {
+      "id": "concept:sea-laundering",
+      "key": "sea-laundering",
+      "label": "海上洗白",
+      "fullLabel": "海上洗白",
+      "type": "concept",
+      "route": "concepts/sea-laundering",
+      "summary": "海上洗白是用静默航行、船对船转运、混油和原产地文件重写来抹掉货物来源的灰色操作。",
       "status": null,
       "degree": 3
     },
@@ -3486,6 +3530,17 @@
       "type": "person",
       "route": "people/elon-musk",
       "summary": "马斯克是特斯拉和SpaceX等公司的核心科技企业家，节目借他观察技术资本叙事、AI泡沫和美国商业航天与国家体系的并行关系。",
+      "status": null,
+      "degree": 3
+    },
+    {
+      "id": "theme:deglobalization-and-cultural-fragmentation",
+      "key": "deglobalization-and-cultural-fragmentation",
+      "label": "逆全球化与文化碎片化",
+      "fullLabel": "逆全球化与文化碎片化",
+      "type": "theme",
+      "route": "themes/deglobalization-and-cultural-fragmentation",
+      "summary": "讨论全球舞台如何从英语中心和统一审美，转向更地方化、更圈层化的表达竞争。",
       "status": null,
       "degree": 3
     },
@@ -4040,17 +4095,6 @@
       "degree": 2
     },
     {
-      "id": "theme:homeland-and-civic-belonging",
-      "key": "homeland-and-civic-belonging",
-      "label": "故乡想象与公民归属",
-      "fullLabel": "故乡想象与公民归属",
-      "type": "theme",
-      "route": "themes/homeland-and-civic-belonging",
-      "summary": "讨论血缘故乡、文化记忆与现代公民认同之间的边界如何被重新划分。",
-      "status": null,
-      "degree": 2
-    },
-    {
       "id": "concept:partnership-shift",
       "key": "partnership-shift",
       "label": "关系合伙人化",
@@ -4135,17 +4179,6 @@
       "type": "theme",
       "route": "themes/hainan-free-port-and-development-reality",
       "summary": "讨论海南封关、自贸港想象与现实条件之间的落差，以及为什么政策口号难以自动变成结构优势。",
-      "status": null,
-      "degree": 2
-    },
-    {
-      "id": "concept:sea-laundering",
-      "key": "sea-laundering",
-      "label": "海上洗白",
-      "fullLabel": "海上洗白",
-      "type": "concept",
-      "route": "concepts/sea-laundering",
-      "summary": "海上洗白是用静默航行、船对船转运、混油和原产地文件重写来抹掉货物来源的灰色操作。",
       "status": null,
       "degree": 2
     },
@@ -4267,17 +4300,6 @@
       "type": "theme",
       "route": "themes/content-regulation-and-short-drama",
       "summary": "讨论长剧、电影、网剧和短剧在不同审核路径下如何重新竞争。",
-      "status": null,
-      "degree": 2
-    },
-    {
-      "id": "theme:deglobalization-and-cultural-fragmentation",
-      "key": "deglobalization-and-cultural-fragmentation",
-      "label": "逆全球化与文化碎片化",
-      "fullLabel": "逆全球化与文化碎片化",
-      "type": "theme",
-      "route": "themes/deglobalization-and-cultural-fragmentation",
-      "summary": "讨论全球舞台如何从英语中心和统一审美，转向更地方化、更圈层化的表达竞争。",
       "status": null,
       "degree": 2
     },
@@ -4421,6 +4443,17 @@
       "type": "concept",
       "route": "concepts/crisis-power-reallocation",
       "summary": "危机会改变谁在前台、谁承担责任、谁保留资源，从而触发权力位置的重新排序。",
+      "status": null,
+      "degree": 2
+    },
+    {
+      "id": "concept:cultural-reterritorialization",
+      "key": "cultural-reterritorialization",
+      "label": "文化再属地化",
+      "fullLabel": "文化再属地化",
+      "type": "concept",
+      "route": "concepts/cultural-reterritorialization",
+      "summary": "全球舞台不再只输出统一中心文化，地方身份和圈层表达正在重新抢回位置。",
       "status": null,
       "degree": 2
     },
@@ -5129,6 +5162,17 @@
       "degree": 1
     },
     {
+      "id": "model:wall-and-gray-trade-crackdown",
+      "key": "wall-and-gray-trade-crackdown",
+      "label": "建墙与打灰模型",
+      "fullLabel": "建墙与打灰模型",
+      "type": "model",
+      "route": "models/wall-and-gray-trade-crackdown",
+      "summary": "建墙与打灰模型把川普的全球策略概括为两条隐藏逻辑：建墙分清敌我盟友、打击灰色贸易逼交易回归美元。",
+      "status": null,
+      "degree": 1
+    },
+    {
       "id": "concept:downgrade-equality",
       "key": "downgrade-equality",
       "label": "降标式公平",
@@ -5169,6 +5213,17 @@
       "type": "person",
       "route": "people/jin-keyu",
       "summary": "金刻羽是香港科技大学金融学教授，节目借她在保利德夜宴叙事中的位置观察学术名片、官商想象和融资背书如何互相增信。",
+      "status": null,
+      "degree": 1
+    },
+    {
+      "id": "concept:symbolic-matricide",
+      "key": "symbolic-matricide",
+      "label": "精神弑母",
+      "fullLabel": "精神弑母",
+      "type": "concept",
+      "route": "concepts/symbolic-matricide",
+      "summary": "精神弑母指人要先在精神上吃掉母系带来的文化、再吐出来给予尊重，才能长成拥有自我的人。",
       "status": null,
       "degree": 1
     },
@@ -5371,6 +5426,17 @@
       "degree": 1
     },
     {
+      "id": "concept:rooting-in-place",
+      "key": "rooting-in-place",
+      "label": "落地生根胜过落叶归根",
+      "fullLabel": "落地生根胜过落叶归根",
+      "type": "concept",
+      "route": "concepts/rooting-in-place",
+      "summary": "一个人的根不在祖先生活过的故土，而在对自己好、能真正生活下去的地方。",
+      "status": null,
+      "degree": 1
+    },
+    {
       "id": "person:ferdinand-marcos-jr",
       "key": "ferdinand-marcos-jr",
       "label": "马科斯",
@@ -5565,6 +5631,17 @@
       "type": "concept",
       "route": "concepts/channel-profit-reservoir",
       "summary": "渠道利润蓄水池指企业把经销商、库存、回款和确认节奏做成可调节利润的缓冲层。",
+      "status": null,
+      "degree": 1
+    },
+    {
+      "id": "concept:globalization-as-disclosure",
+      "key": "globalization-as-disclosure",
+      "label": "全球化即公开披露",
+      "fullLabel": "全球化即公开披露",
+      "type": "concept",
+      "route": "concepts/globalization-as-disclosure",
+      "summary": "全球化的本质是各国把生产、消费和价格公开披露，形成像上市公司体系那样透明的市场；灰色贸易就是绕开披露、退回不透明的国与国交易。",
       "status": null,
       "degree": 1
     },
@@ -5807,17 +5884,6 @@
       "type": "concept",
       "route": "concepts/civilization-culture-split",
       "summary": "拥有古老文化符号，不等于形成了保护弱者、约束权力和尊重个体的文明结构。",
-      "status": null,
-      "degree": 1
-    },
-    {
-      "id": "concept:cultural-reterritorialization",
-      "key": "cultural-reterritorialization",
-      "label": "文化再属地化",
-      "fullLabel": "文化再属地化",
-      "type": "concept",
-      "route": "concepts/cultural-reterritorialization",
-      "summary": "全球舞台不再只输出统一中心文化，地方身份和圈层表达正在重新抢回位置。",
       "status": null,
       "degree": 1
     },
@@ -12858,6 +12924,96 @@
     {
       "source": "episode:EP172",
       "target": "theme:trauma-memory-and-generational-loop",
+      "kind": "episode-theme"
+    },
+    {
+      "source": "episode:EP173",
+      "target": "concept:cultural-reterritorialization",
+      "kind": "episode-concept"
+    },
+    {
+      "source": "episode:EP173",
+      "target": "concept:rooting-in-place",
+      "kind": "episode-concept"
+    },
+    {
+      "source": "episode:EP173",
+      "target": "concept:symbolic-matricide",
+      "kind": "episode-concept"
+    },
+    {
+      "source": "episode:EP173",
+      "target": "model:narrative-instrumentalization",
+      "kind": "episode-model"
+    },
+    {
+      "source": "episode:EP173",
+      "target": "model:safety-valve-governance",
+      "kind": "episode-model"
+    },
+    {
+      "source": "episode:EP173",
+      "target": "person:lee-hsien-loong",
+      "kind": "episode-person"
+    },
+    {
+      "source": "episode:EP173",
+      "target": "theme:homeland-and-civic-belonging",
+      "kind": "episode-theme"
+    },
+    {
+      "source": "episode:EP173",
+      "target": "theme:singapore-and-small-state-survival",
+      "kind": "episode-theme"
+    },
+    {
+      "source": "episode:EP173",
+      "target": "theme:deglobalization-and-cultural-fragmentation",
+      "kind": "episode-theme"
+    },
+    {
+      "source": "episode:EP173",
+      "target": "theme:bullshit-politics-and-historical-narratives",
+      "kind": "episode-theme"
+    },
+    {
+      "source": "episode:EP174",
+      "target": "concept:gray-oil-network",
+      "kind": "episode-concept"
+    },
+    {
+      "source": "episode:EP174",
+      "target": "concept:sea-laundering",
+      "kind": "episode-concept"
+    },
+    {
+      "source": "episode:EP174",
+      "target": "concept:globalization-as-disclosure",
+      "kind": "episode-concept"
+    },
+    {
+      "source": "episode:EP174",
+      "target": "model:sanction-parallel-market",
+      "kind": "episode-model"
+    },
+    {
+      "source": "episode:EP174",
+      "target": "model:wall-and-gray-trade-crackdown",
+      "kind": "episode-model"
+    },
+    {
+      "source": "episode:EP174",
+      "target": "person:donald-trump",
+      "kind": "episode-person"
+    },
+    {
+      "source": "episode:EP174",
+      "target": "theme:dollar-system-and-gray-trade",
+      "kind": "episode-theme"
+    },
+    {
+      "source": "episode:EP174",
+      "target": "theme:sanctions-and-power-containment",
       "kind": "episode-theme"
     },
     {
