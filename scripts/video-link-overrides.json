@@ -1,4 +1,26 @@
 {
+  "EP176": {
+    "bilibili": {
+      "platform": "bilibili",
+      "url": "https://www.bilibili.com/video/BV18oMu6eEXu/",
+      "access": "member"
+    },
+    "youtube": {
+      "platform": "youtube",
+      "url": "https://www.youtube.com/watch?v=4stf2WztcLM"
+    }
+  },
+  "EP175": {
+    "bilibili": {
+      "platform": "bilibili",
+      "url": "https://www.bilibili.com/video/BV1M7TW6eEQC/",
+      "access": "member"
+    },
+    "youtube": {
+      "platform": "youtube",
+      "url": "https://www.youtube.com/watch?v=95XKxDROj_Q"
+    }
+  },
   "EP169": {
     "bilibili": {
       "platform": "bilibili",

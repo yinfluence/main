@@ -2,14 +2,14 @@
   "meta": {
     "title": "颖响力知识图谱",
     "subtitle": "节目、概念、模型、人物、主题之间的可视化连接网络",
-    "nodeCount": 581,
-    "linkCount": 1365,
+    "nodeCount": 585,
+    "linkCount": 1378,
     "typeCounts": {
-      "model": 76,
+      "model": 77,
       "person": 65,
       "theme": 91,
-      "concept": 175,
-      "episode": 174
+      "concept": 176,
+      "episode": 176
     }
   },
   "nodes": [
@@ -36,17 +36,6 @@
       "degree": 18
     },
     {
-      "id": "model:leverage-backfire",
-      "key": "leverage-backfire",
-      "label": "杠杆反噬",
-      "fullLabel": "杠杆反噬",
-      "type": "model",
-      "route": "models/leverage-backfire",
-      "summary": "杠杆反噬解释上行期放大利润的结构，如何在下行期放大亏损、现金流压力和清偿困难。",
-      "status": null,
-      "degree": 17
-    },
-    {
       "id": "theme:singapore-and-small-state-survival",
       "key": "singapore-and-small-state-survival",
       "label": "新加坡与小国生存术",
@@ -54,6 +43,17 @@
       "type": "theme",
       "route": "themes/singapore-and-small-state-survival",
       "summary": "讨论新加坡如何把规则、海峡、人才和谨慎外交组合成一套小国长期生存方法。",
+      "status": null,
+      "degree": 18
+    },
+    {
+      "id": "model:leverage-backfire",
+      "key": "leverage-backfire",
+      "label": "杠杆反噬",
+      "fullLabel": "杠杆反噬",
+      "type": "model",
+      "route": "models/leverage-backfire",
+      "summary": "杠杆反噬解释上行期放大利润的结构，如何在下行期放大亏损、现金流压力和清偿困难。",
       "status": null,
       "degree": 17
     },
@@ -223,6 +223,17 @@
       "degree": 14
     },
     {
+      "id": "model:subsidy-capital-flywheel",
+      "key": "subsidy-capital-flywheel",
+      "label": "补贴资本飞轮",
+      "fullLabel": "补贴资本飞轮",
+      "type": "model",
+      "route": "models/subsidy-capital-flywheel",
+      "summary": "补贴资本飞轮解释地方财政、产业基金、企业估值和再融资如何互相放大。",
+      "status": null,
+      "degree": 13
+    },
+    {
       "id": "model:path-dependence",
       "key": "path-dependence",
       "label": "路径依赖",
@@ -230,6 +241,17 @@
       "type": "model",
       "route": "models/path-dependence",
       "summary": "路径依赖解释早期技术和叙事选择一旦成功，就会反过来限制后续转向更优路径。",
+      "status": null,
+      "degree": 13
+    },
+    {
+      "id": "theme:ev-financialization-and-false-sales",
+      "key": "ev-financialization-and-false-sales",
+      "label": "新能源金融化与虚假销量",
+      "fullLabel": "新能源金融化与虚假销量",
+      "type": "theme",
+      "route": "themes/ev-financialization-and-false-sales",
+      "summary": "聚焦新能源车行业如何依靠补贴、融资、渠道黑箱和虚假销售维持增长叙事。",
       "status": null,
       "degree": 13
     },
@@ -355,17 +377,6 @@
       "degree": 13
     },
     {
-      "id": "model:subsidy-capital-flywheel",
-      "key": "subsidy-capital-flywheel",
-      "label": "补贴资本飞轮",
-      "fullLabel": "补贴资本飞轮",
-      "type": "model",
-      "route": "models/subsidy-capital-flywheel",
-      "summary": "补贴资本飞轮解释地方财政、产业基金、企业估值和再融资如何互相放大。",
-      "status": null,
-      "degree": 12
-    },
-    {
       "id": "concept:cost-shifting",
       "key": "cost-shifting",
       "label": "成本外移",
@@ -395,17 +406,6 @@
       "type": "theme",
       "route": "themes/maritime-chokepoints-and-route-order",
       "summary": "讨论海峡、运河和关键航道如何把地理位置变成规则、保险、资本和军事的综合权力。",
-      "status": null,
-      "degree": 12
-    },
-    {
-      "id": "theme:ev-financialization-and-false-sales",
-      "key": "ev-financialization-and-false-sales",
-      "label": "新能源金融化与虚假销量",
-      "fullLabel": "新能源金融化与虚假销量",
-      "type": "theme",
-      "route": "themes/ev-financialization-and-false-sales",
-      "summary": "聚焦新能源车行业如何依靠补贴、融资、渠道黑箱和虚假销售维持增长叙事。",
       "status": null,
       "degree": 12
     },
@@ -575,6 +575,17 @@
       "degree": 11
     },
     {
+      "id": "theme:ev-collapse-and-exit-risk",
+      "key": "ev-collapse-and-exit-risk",
+      "label": "新能源崩塌与退出风险",
+      "fullLabel": "新能源崩塌与退出风险",
+      "type": "theme",
+      "route": "themes/ev-collapse-and-exit-risk",
+      "summary": "聚焦新能源项目在失速、清算和品牌出清阶段，风险如何向债权人、用户和地方政府层层传导。",
+      "status": null,
+      "degree": 11
+    },
+    {
       "id": "model:narrative-leverage",
       "key": "narrative-leverage",
       "label": "叙事杠杆",
@@ -672,17 +683,6 @@
       "summary": "本期久违地把镜头转回俄乌战争：乌克兰一次性派出约600架无人机，击穿防空最密集的莫斯科，把首都最大的卡波特尼亚炼油厂彻底炸毁，第二天市民头上下起石油雨。节目判断，这不是又一次提振士气的象征性反击，而是战争进入战略反攻的标志——乌克兰靠FP2无人机的AI末端制导，在信号被干扰时仍能自主识别目标，专挑防空最强的地方打。更深一层，AI和无人机正在拉平大国与小国在常规战争里的差距，小国也能打到大国首都；而把战争锁在电视和宣传里的强人体制，会随石油雨落到公民头上而失去最后的信念。",
       "status": "curated",
       "degree": 11
-    },
-    {
-      "id": "theme:ev-collapse-and-exit-risk",
-      "key": "ev-collapse-and-exit-risk",
-      "label": "新能源崩塌与退出风险",
-      "fullLabel": "新能源崩塌与退出风险",
-      "type": "theme",
-      "route": "themes/ev-collapse-and-exit-risk",
-      "summary": "聚焦新能源项目在失速、清算和品牌出清阶段，风险如何向债权人、用户和地方政府层层传导。",
-      "status": null,
-      "degree": 10
     },
     {
       "id": "concept:active-neutrality",
@@ -1785,6 +1785,17 @@
       "degree": 7
     },
     {
+      "id": "episode:EP175",
+      "key": "EP175",
+      "label": "EP175",
+      "fullLabel": "EP175 · 从新加坡制冷暴富到欧洲高温慌！李光耀用“冷气”逆天改命，马斯克狂赞！",
+      "type": "episode",
+      "route": "episodes/EP175",
+      "summary": "本期从欧洲热浪切入：南欧多地逼近四十五度，冷气普及率却只有两成，一款中国卡扣式空调被抢到两千欧还断货，映出欧洲卡在白左环保观、老建筑和短暂高温之间的两难。节目由此对照新加坡——李光耀建国之初就把冷气化当国策，马斯克近日在 X 上称他天才。作者的主判断是：这不是小家电琐事，而是第一性原理的样本。热带最根本的约束是高温压垮工作效率、打断作息，李光耀抓住这一点，用全民而非分层的冷气化去解决，让新加坡成为热带唯一的发达国家。落点是什么才算伟人：为所有普通人、而不是为既得利益集团做对决策，才配得上这个词。",
+      "status": "curated",
+      "degree": 7
+    },
+    {
       "id": "theme:planned-systems-and-innovation",
       "key": "planned-systems-and-innovation",
       "label": "大计划体制与创新约束",
@@ -1913,6 +1924,17 @@
       "type": "model",
       "route": "models/stability-over-growth-trap",
       "summary": "当系统把稳定当作增长的替代品，短期秩序会被保住，长期造血、流动和创新却会被压低。",
+      "status": null,
+      "degree": 6
+    },
+    {
+      "id": "concept:pragmatic-legitimacy",
+      "key": "pragmatic-legitimacy",
+      "label": "务实合法性",
+      "fullLabel": "务实合法性",
+      "type": "concept",
+      "route": "concepts/pragmatic-legitimacy",
+      "summary": "政权或共同体的稳定感，常来自普通人能持续获得可感的生活改善和秩序保障。",
       "status": null,
       "degree": 6
     },
@@ -2126,6 +2148,17 @@
       "degree": 6
     },
     {
+      "id": "episode:EP083",
+      "key": "EP083",
+      "label": "EP083",
+      "fullLabel": "EP083 · 新加坡又全民发钱了！东方大国呢？为什么说祖屋与商品房背后是中低层人群税负的巨大差异？",
+      "type": "episode",
+      "route": "episodes/EP083",
+      "summary": "本期借新加坡新一轮普惠补贴和组屋制度，讨论中低收入群体真正承受的不是一句“该不该养懒汉”，而是收入、住房和税负怎么被重新分配。节目核心判断是：组屋与商品房的差异，本质上是政府在住房里究竟拿走多少居民未来收入的差异。",
+      "status": "curated",
+      "degree": 6
+    },
+    {
       "id": "episode:EP095",
       "key": "EP095",
       "label": "EP095",
@@ -2247,6 +2280,17 @@
       "degree": 5
     },
     {
+      "id": "concept:price-war-trap",
+      "key": "price-war-trap",
+      "label": "低价竞争陷阱",
+      "fullLabel": "低价竞争陷阱",
+      "type": "concept",
+      "route": "concepts/price-war-trap",
+      "summary": "极致低价可以快速突袭，却可能在长期竞争中压缩技术升级、利润和战略空间。",
+      "status": null,
+      "degree": 5
+    },
+    {
       "id": "concept:pan-institutional-middle-class",
       "key": "pan-institutional-middle-class",
       "label": "泛体制中产",
@@ -2324,6 +2368,17 @@
       "degree": 5
     },
     {
+      "id": "person:lee-kuan-yew",
+      "key": "lee-kuan-yew",
+      "label": "李光耀",
+      "fullLabel": "李光耀",
+      "type": "person",
+      "route": "people/lee-kuan-yew",
+      "summary": "李光耀是新加坡建国总理，节目借他说明新加坡国家身份、国家责任和小国生存决心怎样压过祖籍血缘与软弱叙事。",
+      "status": null,
+      "degree": 5
+    },
+    {
       "id": "person:lee-hsien-loong",
       "key": "lee-hsien-loong",
       "label": "李显龙",
@@ -2375,17 +2430,6 @@
       "type": "concept",
       "route": "concepts/future-path-crowding",
       "summary": "所有人都挤向同一条被认为最安全的上升路径时，这条路本身就会因为拥挤而失去原来的安全性。",
-      "status": null,
-      "degree": 5
-    },
-    {
-      "id": "concept:pragmatic-legitimacy",
-      "key": "pragmatic-legitimacy",
-      "label": "务实合法性",
-      "fullLabel": "务实合法性",
-      "type": "concept",
-      "route": "concepts/pragmatic-legitimacy",
-      "summary": "政权或共同体的稳定感，常来自普通人能持续获得可感的生活改善和秩序保障。",
       "status": null,
       "degree": 5
     },
@@ -2555,17 +2599,6 @@
       "degree": 5
     },
     {
-      "id": "episode:EP083",
-      "key": "EP083",
-      "label": "EP083",
-      "fullLabel": "EP083 · 新加坡又全民发钱了！东方大国呢？为什么说祖屋与商品房背后是中低层人群税负的巨大差异？",
-      "type": "episode",
-      "route": "episodes/EP083",
-      "summary": "本期借新加坡新一轮普惠补贴和组屋制度，讨论中低收入群体真正承受的不是一句“该不该养懒汉”，而是收入、住房和税负怎么被重新分配。节目核心判断是：组屋与商品房的差异，本质上是政府在住房里究竟拿走多少居民未来收入的差异。",
-      "status": "curated",
-      "degree": 5
-    },
-    {
       "id": "episode:EP087",
       "key": "EP087",
       "label": "EP087",
@@ -2595,6 +2628,17 @@
       "type": "episode",
       "route": "episodes/EP096",
       "summary": "本期把新加坡放在一个更长的五到十年周期里评估，认为它既不是被夸大的神话，也不只是短期避风港，而是一个同时拥有六大引擎和三大隐忧的高阶节点国家。节目总结的新加坡优势包括资本与家族办公室、中东外溢资金、航运枢纽、香港外溢、能源定价中心和人才迁移，而最大风险则在于东亚前线化、出口依赖过高以及芯片与 AI 话语权仍然不足。",
+      "status": "curated",
+      "degree": 5
+    },
+    {
+      "id": "episode:EP098",
+      "key": "EP098",
+      "label": "EP098",
+      "fullLabel": "EP098 · “飞天小摩托”沙希德跟拼多多竟是一个商业模式？深度拆解什么是真正的“富人思维”。",
+      "type": "episode",
+      "route": "episodes/EP098",
+      "summary": "伊朗沙希德 136 无人机被叫做空中小摩托，单架成本约 2 万美元，逼对手用 200 万美元的导弹去拦，成本不对称比技术参数更厉害。很多博主把它跟拼多多并列称为新时代第一性原理。节目同意这套逻辑前期有效，但定性为穷人的第一性原理：筹码全压在便宜上，靠突袭抢局部胜利，长期则被低利润、对手找到更廉价拦截手段反噬，一旦拦截成本低于生产成本就破产，拼多多眼下的压力就是商业版。富人的第一性原理参照特朗普式定点清除，不介意单次花大钱，但要求这一手改写整个牌局。企业层面真正可持续的优势是全链路自有品牌。",
       "status": "curated",
       "degree": 5
     },
@@ -2709,17 +2753,6 @@
       "degree": 4
     },
     {
-      "id": "concept:price-war-trap",
-      "key": "price-war-trap",
-      "label": "低价竞争陷阱",
-      "fullLabel": "低价竞争陷阱",
-      "type": "concept",
-      "route": "concepts/price-war-trap",
-      "summary": "极致低价可以快速突袭，却可能在长期竞争中压缩技术升级、利润和战略空间。",
-      "status": null,
-      "degree": 4
-    },
-    {
       "id": "concept:jurisdiction-arbitrage",
       "key": "jurisdiction-arbitrage",
       "label": "法域套利",
@@ -2797,13 +2830,13 @@
       "degree": 4
     },
     {
-      "id": "person:lee-kuan-yew",
-      "key": "lee-kuan-yew",
-      "label": "李光耀",
-      "fullLabel": "李光耀",
+      "id": "person:elon-musk",
+      "key": "elon-musk",
+      "label": "马斯克",
+      "fullLabel": "马斯克",
       "type": "person",
-      "route": "people/lee-kuan-yew",
-      "summary": "李光耀是新加坡建国总理，节目借他说明新加坡国家身份、国家责任和小国生存决心怎样压过祖籍血缘与软弱叙事。",
+      "route": "people/elon-musk",
+      "summary": "马斯克是特斯拉和SpaceX等公司的核心科技企业家，节目借他观察技术资本叙事、AI泡沫和美国商业航天与国家体系的并行关系。",
       "status": null,
       "degree": 4
     },
@@ -2848,6 +2881,17 @@
       "type": "theme",
       "route": "themes/automotive-r-and-d-governance",
       "summary": "讨论汽车研发体系里的送检量产落差、师徒网络、权威压制和系统性失真。",
+      "status": null,
+      "degree": 4
+    },
+    {
+      "id": "theme:human-value-and-state-credit",
+      "key": "human-value-and-state-credit",
+      "label": "人的价值与国家信用",
+      "fullLabel": "人的价值与国家信用",
+      "type": "theme",
+      "route": "themes/human-value-and-state-credit",
+      "summary": "讨论国家究竟把个体视为成本、工具，还是视为必须兑现承诺的对象。",
       "status": null,
       "degree": 4
     },
@@ -3105,17 +3149,6 @@
       "degree": 4
     },
     {
-      "id": "episode:EP098",
-      "key": "EP098",
-      "label": "EP098",
-      "fullLabel": "EP098 · “飞天小摩托”沙希德跟拼多多竟是一个商业模式？深度拆解什么是真正的“富人思维”。",
-      "type": "episode",
-      "route": "episodes/EP098",
-      "summary": "伊朗沙希德 136 无人机被叫做空中小摩托，单架成本约 2 万美元，逼对手用 200 万美元的导弹去拦，成本不对称比技术参数更厉害。很多博主把它跟拼多多并列称为新时代第一性原理。节目同意这套逻辑前期有效，但定性为穷人的第一性原理：筹码全压在便宜上，靠突袭抢局部胜利，长期则被低利润、对手找到更廉价拦截手段反噬，一旦拦截成本低于生产成本就破产，拼多多眼下的压力就是商业版。富人的第一性原理参照特朗普式定点清除，不介意单次花大钱，但要求这一手改写整个牌局。企业层面真正可持续的优势是全链路自有品牌。",
-      "status": "curated",
-      "degree": 4
-    },
-    {
       "id": "episode:EP110",
       "key": "EP110",
       "label": "EP110",
@@ -3156,6 +3189,17 @@
       "type": "episode",
       "route": "episodes/EP150",
       "summary": "本期从三四月房地产小阳春切入，点出这波回暖主要靠学区房撑起，再追问学区房会不会是下一个更大的雷。节目以南京七个核心区取消学位锁定的2026招生新政为案例，拆解取消锁定后学位供给翻倍、存量房东连夜挂牌的连锁反应，并把它接到学龄人口断崖：出生人口从1500多万跌到792万，名校开始面临学生荒，教育系统只能放开学位流动自救。落点是学区房的资产逻辑被彻底改写——从稳赚不赔的存钱，变成没有保底的自残式消费，像当年被网约车击穿的出租车牌照，未来或将沦为最危险的资产。",
+      "status": "curated",
+      "degree": 4
+    },
+    {
+      "id": "episode:EP176",
+      "key": "EP176",
+      "label": "EP176",
+      "fullLabel": "EP176 · 6月车企销量出炉！繁荣背后暗藏危机，新能源“国家队”光环褪去，车企开始自负盈亏",
+      "type": "episode",
+      "route": "episodes/EP176",
+      "summary": "7 月初车企 6 月和上半年销量集体出炉，媒体大吹全线暴涨：比亚迪单月破 40 万、零跑近翻倍领跑新势力。本期不凑热闹、专给数字：表面全面上涨，实则半年目标集体大欠账——多数完成率只卡在三到四成，仅极氪约六成及格。作者判断行业规模越来越大、根基却越来越虚：销量靠低价换规模加挣补贴堆出来，而低价是没门槛的死循环，赢在价格也输在价格，利润被榨干就没钱反哺研发。出海也不是救命稻草，而要另掏几百亿建厂、面对反补贴税和贸易保护。落点是国家战略从新能源转向 AI 算力，车企政策奶被断、只能自负盈亏。",
       "status": "curated",
       "degree": 4
     },
@@ -3523,17 +3567,6 @@
       "degree": 3
     },
     {
-      "id": "person:elon-musk",
-      "key": "elon-musk",
-      "label": "马斯克",
-      "fullLabel": "马斯克",
-      "type": "person",
-      "route": "people/elon-musk",
-      "summary": "马斯克是特斯拉和SpaceX等公司的核心科技企业家，节目借他观察技术资本叙事、AI泡沫和美国商业航天与国家体系的并行关系。",
-      "status": null,
-      "degree": 3
-    },
-    {
       "id": "theme:deglobalization-and-cultural-fragmentation",
       "key": "deglobalization-and-cultural-fragmentation",
       "label": "逆全球化与文化碎片化",
@@ -3574,17 +3607,6 @@
       "type": "theme",
       "route": "themes/platform-traffic-and-price-distortion",
       "summary": "当平台把巨量流量集中到极少数节点，价格、信誉和真伪判断都会开始向流量中心倾斜。",
-      "status": null,
-      "degree": 3
-    },
-    {
-      "id": "theme:human-value-and-state-credit",
-      "key": "human-value-and-state-credit",
-      "label": "人的价值与国家信用",
-      "fullLabel": "人的价值与国家信用",
-      "type": "theme",
-      "route": "themes/human-value-and-state-credit",
-      "summary": "讨论国家究竟把个体视为成本、工具，还是视为必须兑现承诺的对象。",
       "status": null,
       "degree": 3
     },
@@ -3985,6 +4007,17 @@
       "degree": 2
     },
     {
+      "id": "model:first-principle-thinking",
+      "key": "first-principle-thinking",
+      "label": "第一性原理决策模型",
+      "fullLabel": "第一性原理决策模型",
+      "type": "model",
+      "route": "models/first-principle-thinking",
+      "summary": "第一性原理决策模型解释领导者怎样把复杂局面拆回最根本约束，再集中资源去解决它。",
+      "status": null,
+      "degree": 2
+    },
+    {
       "id": "concept:truth-indifferent-rhetoric",
       "key": "truth-indifferent-rhetoric",
       "label": "对真相冷漠的话术",
@@ -4311,6 +4344,17 @@
       "type": "concept",
       "route": "concepts/platform-double-standard",
       "summary": "平台执行规则时若按账号商业价值区别处理，治理就会变成选择性守门。",
+      "status": null,
+      "degree": 2
+    },
+    {
+      "id": "concept:universal-provision",
+      "key": "universal-provision",
+      "label": "全民普惠",
+      "fullLabel": "全民普惠",
+      "type": "concept",
+      "route": "concepts/universal-provision",
+      "summary": "把一项关键公共品做成全体国民都能享受，而不是按阶层分配的治理选择。",
       "status": null,
       "degree": 2
     },
@@ -13017,6 +13061,56 @@
       "kind": "episode-theme"
     },
     {
+      "source": "episode:EP175",
+      "target": "concept:pragmatic-legitimacy",
+      "kind": "episode-concept"
+    },
+    {
+      "source": "episode:EP175",
+      "target": "concept:universal-provision",
+      "kind": "episode-concept"
+    },
+    {
+      "source": "episode:EP175",
+      "target": "model:first-principle-thinking",
+      "kind": "episode-model"
+    },
+    {
+      "source": "episode:EP175",
+      "target": "person:lee-kuan-yew",
+      "kind": "episode-person"
+    },
+    {
+      "source": "episode:EP175",
+      "target": "person:elon-musk",
+      "kind": "episode-person"
+    },
+    {
+      "source": "episode:EP175",
+      "target": "theme:singapore-and-small-state-survival",
+      "kind": "episode-theme"
+    },
+    {
+      "source": "episode:EP175",
+      "target": "theme:human-value-and-state-credit",
+      "kind": "episode-theme"
+    },
+    {
+      "source": "episode:EP176",
+      "target": "concept:price-war-trap",
+      "kind": "episode-concept"
+    },
+    {
+      "source": "episode:EP176",
+      "target": "model:subsidy-capital-flywheel",
+      "kind": "episode-model"
+    },
+    {
+      "source": "episode:EP176",
+      "target": "theme:ev-financialization-and-false-sales",
+      "kind": "episode-theme"
+    },
+    {
       "source": "episode:EP120",
       "target": "concept:active-neutrality",
       "kind": "episode-concept"
@@ -13062,6 +13156,11 @@
       "kind": "episode-concept"
     },
     {
+      "source": "episode:EP083",
+      "target": "concept:universal-provision",
+      "kind": "episode-concept"
+    },
+    {
       "source": "episode:EP043",
       "target": "concept:weapons-of-the-weak",
       "kind": "episode-concept"
@@ -13079,6 +13178,11 @@
     {
       "source": "episode:EP105",
       "target": "model:discipline-failure-loop",
+      "kind": "episode-model"
+    },
+    {
+      "source": "episode:EP098",
+      "target": "model:first-principle-thinking",
       "kind": "episode-model"
     },
     {
@@ -13164,6 +13268,11 @@
     {
       "source": "episode:EP162",
       "target": "theme:east-asia-security-realignment",
+      "kind": "episode-theme"
+    },
+    {
+      "source": "episode:EP176",
+      "target": "theme:ev-collapse-and-exit-risk",
       "kind": "episode-theme"
     },
     {
