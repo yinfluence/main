@@ -2,14 +2,14 @@
   "meta": {
     "title": "颖响力知识图谱",
     "subtitle": "节目、概念、模型、人物、主题之间的可视化连接网络",
-    "nodeCount": 585,
-    "linkCount": 1378,
+    "nodeCount": 588,
+    "linkCount": 1385,
     "typeCounts": {
       "model": 77,
       "person": 65,
       "theme": 91,
-      "concept": 176,
-      "episode": 176
+      "concept": 178,
+      "episode": 177
     }
   },
   "nodes": [
@@ -157,6 +157,17 @@
       "degree": 14
     },
     {
+      "id": "model:narrative-instrumentalization",
+      "key": "narrative-instrumentalization",
+      "label": "叙事工具化模型",
+      "fullLabel": "叙事工具化模型",
+      "type": "model",
+      "route": "models/narrative-instrumentalization",
+      "summary": "叙事工具化模型解释叙事的主要功能从解释现实转向组织情绪和划分阵营。",
+      "status": null,
+      "degree": 14
+    },
+    {
       "id": "episode:EP128",
       "key": "EP128",
       "label": "EP128",
@@ -234,6 +245,17 @@
       "degree": 13
     },
     {
+      "id": "theme:maritime-chokepoints-and-route-order",
+      "key": "maritime-chokepoints-and-route-order",
+      "label": "海峡命门与航运秩序",
+      "fullLabel": "海峡命门与航运秩序",
+      "type": "theme",
+      "route": "themes/maritime-chokepoints-and-route-order",
+      "summary": "讨论海峡、运河和关键航道如何把地理位置变成规则、保险、资本和军事的综合权力。",
+      "status": null,
+      "degree": 13
+    },
+    {
       "id": "model:path-dependence",
       "key": "path-dependence",
       "label": "路径依赖",
@@ -252,17 +274,6 @@
       "type": "theme",
       "route": "themes/ev-financialization-and-false-sales",
       "summary": "聚焦新能源车行业如何依靠补贴、融资、渠道黑箱和虚假销售维持增长叙事。",
-      "status": null,
-      "degree": 13
-    },
-    {
-      "id": "model:narrative-instrumentalization",
-      "key": "narrative-instrumentalization",
-      "label": "叙事工具化模型",
-      "fullLabel": "叙事工具化模型",
-      "type": "model",
-      "route": "models/narrative-instrumentalization",
-      "summary": "叙事工具化模型解释叙事的主要功能从解释现实转向组织情绪和划分阵营。",
       "status": null,
       "degree": 13
     },
@@ -388,6 +399,17 @@
       "degree": 12
     },
     {
+      "id": "theme:southeast-asia-fragmentation-and-bloc-competition",
+      "key": "southeast-asia-fragmentation-and-bloc-competition",
+      "label": "东南亚裂变与集团竞争",
+      "fullLabel": "东南亚裂变与集团竞争",
+      "type": "theme",
+      "route": "themes/southeast-asia-fragmentation-and-bloc-competition",
+      "summary": "讨论东南亚如何从缓冲地带变成各方拉扯、重新站队和内部裂变并行发生的高风险区域。",
+      "status": null,
+      "degree": 12
+    },
+    {
       "id": "model:rule-anchored-small-state-model",
       "key": "rule-anchored-small-state-model",
       "label": "规则锚定型小国生存",
@@ -395,17 +417,6 @@
       "type": "model",
       "route": "models/rule-anchored-small-state-model",
       "summary": "小国要长期活下来，不能只靠地理好运，更要靠规则信誉、理性政府和可预期的制度自我约束。",
-      "status": null,
-      "degree": 12
-    },
-    {
-      "id": "theme:maritime-chokepoints-and-route-order",
-      "key": "maritime-chokepoints-and-route-order",
-      "label": "海峡命门与航运秩序",
-      "fullLabel": "海峡命门与航运秩序",
-      "type": "theme",
-      "route": "themes/maritime-chokepoints-and-route-order",
-      "summary": "讨论海峡、运河和关键航道如何把地理位置变成规则、保险、资本和军事的综合权力。",
       "status": null,
       "degree": 12
     },
@@ -527,17 +538,6 @@
       "type": "theme",
       "route": "themes/local-fiscal-stress-and-hidden-debt",
       "summary": "地方财政吃紧后，系统会通过更复杂的融资、资产包装和风险转移来维持运转。",
-      "status": null,
-      "degree": 11
-    },
-    {
-      "id": "theme:southeast-asia-fragmentation-and-bloc-competition",
-      "key": "southeast-asia-fragmentation-and-bloc-competition",
-      "label": "东南亚裂变与集团竞争",
-      "fullLabel": "东南亚裂变与集团竞争",
-      "type": "theme",
-      "route": "themes/southeast-asia-fragmentation-and-bloc-competition",
-      "summary": "讨论东南亚如何从缓冲地带变成各方拉扯、重新站队和内部裂变并行发生的高风险区域。",
       "status": null,
       "degree": 11
     },
@@ -1532,6 +1532,17 @@
       "degree": 7
     },
     {
+      "id": "model:institutional-formalism-spiral",
+      "key": "institutional-formalism-spiral",
+      "label": "制度形式主义螺旋",
+      "fullLabel": "制度形式主义螺旋",
+      "type": "model",
+      "route": "models/institutional-formalism-spiral",
+      "summary": "组织一旦开始依赖仪式、排名、头衔和场面来证明自己有效，就会不断加码这些外壳，同时越来越失去真正解决问题的能力。",
+      "status": null,
+      "degree": 7
+    },
+    {
       "id": "episode:EP003",
       "key": "EP003",
       "label": "EP003",
@@ -1796,6 +1807,17 @@
       "degree": 7
     },
     {
+      "id": "episode:EP177",
+      "key": "EP177",
+      "label": "EP177",
+      "fullLabel": "EP177 · 东南亚火药桶之印尼篇：货币暴跌+军人入政！印尼激进改革，新马地缘风险升温！",
+      "type": "episode",
+      "route": "episodes/EP177",
+      "summary": "本期开启东南亚火药桶系列，第一篇拆印尼：印尼盾年内暴跌超 8%、击穿 18000 关口，破 1997 年金融风暴纪录，物价体感涨三成，中产快速消失。作者判断这不是常规经济波动，而是货币信用崩塌叠加治理危机——总统普拉博沃以极致激进推改革，全国营养餐实为大基建换壳的国家工程，顶层构想宏大、基层执行拉垮，腐败与学生食物中毒把民生工程变成民怨源；更被低估的是军人入政让体制退回苏哈托老路。落点是内部不稳正外溢为马六甲征税等地缘冒险，新加坡与马来西亚首当其冲，未来一年半是观察窗口。",
+      "status": "curated",
+      "degree": 7
+    },
+    {
       "id": "theme:planned-systems-and-innovation",
       "key": "planned-systems-and-innovation",
       "label": "大计划体制与创新约束",
@@ -1972,13 +1994,13 @@
       "degree": 6
     },
     {
-      "id": "model:institutional-formalism-spiral",
-      "key": "institutional-formalism-spiral",
-      "label": "制度形式主义螺旋",
-      "fullLabel": "制度形式主义螺旋",
-      "type": "model",
-      "route": "models/institutional-formalism-spiral",
-      "summary": "组织一旦开始依赖仪式、排名、头衔和场面来证明自己有效，就会不断加码这些外壳，同时越来越失去真正解决问题的能力。",
+      "id": "concept:middle-class-hard-landing",
+      "key": "middle-class-hard-landing",
+      "label": "中产硬着陆",
+      "fullLabel": "中产硬着陆",
+      "type": "concept",
+      "route": "concepts/middle-class-hard-landing",
+      "summary": "高负债中产一旦失速，下坠往往同时摧毁资产、体面、关系和自我认同。",
       "status": null,
       "degree": 6
     },
@@ -2441,17 +2463,6 @@
       "type": "theme",
       "route": "themes/ev-design-and-technology-shortcuts",
       "summary": "讨论新能源品牌如何在设计、技术和产品叙事上追求速成，并为此埋下长期反噬。",
-      "status": null,
-      "degree": 5
-    },
-    {
-      "id": "concept:middle-class-hard-landing",
-      "key": "middle-class-hard-landing",
-      "label": "中产硬着陆",
-      "fullLabel": "中产硬着陆",
-      "type": "concept",
-      "route": "concepts/middle-class-hard-landing",
-      "summary": "高负债中产一旦失速，下坠往往同时摧毁资产、体面、关系和自我认同。",
       "status": null,
       "degree": 5
     },
@@ -5151,6 +5162,17 @@
       "degree": 1
     },
     {
+      "id": "concept:currency-credit-collapse",
+      "key": "currency-credit-collapse",
+      "label": "货币信用崩塌",
+      "fullLabel": "货币信用崩塌",
+      "type": "concept",
+      "route": "concepts/currency-credit-collapse",
+      "summary": "一国货币持续贬值的根源不是外部汇率压力，而是市场对该国财政纪律和治理能力的信心彻底流失。",
+      "status": null,
+      "degree": 1
+    },
+    {
       "id": "concept:centralized-control-failure",
       "key": "centralized-control-failure",
       "label": "集中式控制反噬",
@@ -5851,6 +5873,17 @@
       "type": "concept",
       "route": "concepts/lying-flat-country",
       "summary": "大量绝缘个体以相似生存逻辑和价值判断形成的无形退出共同体。",
+      "status": null,
+      "degree": 1
+    },
+    {
+      "id": "concept:authoritarian-regression",
+      "key": "authoritarian-regression",
+      "label": "体制复古",
+      "fullLabel": "体制复古",
+      "type": "concept",
+      "route": "concepts/authoritarian-regression",
+      "summary": "一个国家在危机压力下重新启用旧威权体制的组织方式，例如让军队重返行政与商业体系。",
       "status": null,
       "degree": 1
     },
@@ -13108,6 +13141,41 @@
     {
       "source": "episode:EP176",
       "target": "theme:ev-financialization-and-false-sales",
+      "kind": "episode-theme"
+    },
+    {
+      "source": "episode:EP177",
+      "target": "concept:currency-credit-collapse",
+      "kind": "episode-concept"
+    },
+    {
+      "source": "episode:EP177",
+      "target": "concept:authoritarian-regression",
+      "kind": "episode-concept"
+    },
+    {
+      "source": "episode:EP177",
+      "target": "concept:middle-class-hard-landing",
+      "kind": "episode-concept"
+    },
+    {
+      "source": "episode:EP177",
+      "target": "model:institutional-formalism-spiral",
+      "kind": "episode-model"
+    },
+    {
+      "source": "episode:EP177",
+      "target": "model:narrative-instrumentalization",
+      "kind": "episode-model"
+    },
+    {
+      "source": "episode:EP177",
+      "target": "theme:southeast-asia-fragmentation-and-bloc-competition",
+      "kind": "episode-theme"
+    },
+    {
+      "source": "episode:EP177",
+      "target": "theme:maritime-chokepoints-and-route-order",
       "kind": "episode-theme"
     },
     {
