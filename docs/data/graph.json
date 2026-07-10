@@ -2,14 +2,14 @@
   "meta": {
     "title": "颖响力知识图谱",
     "subtitle": "节目、概念、模型、人物、主题之间的可视化连接网络",
-    "nodeCount": 590,
-    "linkCount": 1391,
+    "nodeCount": 592,
+    "linkCount": 1397,
     "typeCounts": {
       "model": 77,
-      "person": 65,
       "theme": 91,
-      "concept": 179,
-      "episode": 178
+      "person": 65,
+      "concept": 180,
+      "episode": 179
     }
   },
   "nodes": [
@@ -25,17 +25,6 @@
       "degree": 39
     },
     {
-      "id": "person:donald-trump",
-      "key": "donald-trump",
-      "label": "特朗普",
-      "fullLabel": "特朗普",
-      "type": "person",
-      "route": "people/donald-trump",
-      "summary": "特朗普是美国共和党政治人物、第45任与第47任美国总统，节目借他观察美国战略收缩、成本转嫁和规则重定价。",
-      "status": null,
-      "degree": 18
-    },
-    {
       "id": "theme:singapore-and-small-state-survival",
       "key": "singapore-and-small-state-survival",
       "label": "新加坡与小国生存术",
@@ -43,6 +32,17 @@
       "type": "theme",
       "route": "themes/singapore-and-small-state-survival",
       "summary": "讨论新加坡如何把规则、海峡、人才和谨慎外交组合成一套小国长期生存方法。",
+      "status": null,
+      "degree": 19
+    },
+    {
+      "id": "person:donald-trump",
+      "key": "donald-trump",
+      "label": "特朗普",
+      "fullLabel": "特朗普",
+      "type": "person",
+      "route": "people/donald-trump",
+      "summary": "特朗普是美国共和党政治人物、第45任与第47任美国总统，节目借他观察美国战略收缩、成本转嫁和规则重定价。",
       "status": null,
       "degree": 18
     },
@@ -1433,6 +1433,17 @@
       "degree": 8
     },
     {
+      "id": "episode:EP175",
+      "key": "EP175",
+      "label": "EP175",
+      "fullLabel": "EP175 · 从新加坡制冷暴富到欧洲高温慌！李光耀用“冷气”逆天改命，马斯克狂赞！",
+      "type": "episode",
+      "route": "episodes/EP175",
+      "summary": "本期从欧洲热浪切入：南欧多地逼近四十五度，冷气普及率却只有两成，一款中国卡扣式空调被抢到两千欧还断货，映出欧洲卡在白左环保观、老建筑和短暂高温之间的两难。节目由此对照新加坡——李光耀建国之初就把冷气化当国策，马斯克近日在 X 上称他天才。作者的主判断是：这不是小家电琐事，而是第一性原理的样本。热带最根本的约束是高温压垮工作效率、打断作息，李光耀抓住这一点，用全民而非分层的冷气化去解决，让新加坡成为热带唯一的发达国家。落点是什么才算伟人：为所有普通人、而不是为既得利益集团做对决策，才配得上这个词。",
+      "status": "curated",
+      "degree": 8
+    },
+    {
       "id": "concept:phantom-growth",
       "key": "phantom-growth",
       "label": "幻象增长",
@@ -1495,6 +1506,17 @@
       "type": "theme",
       "route": "themes/narrative-speculation-and-retail-traps",
       "summary": "当市场热点先由故事驱动、再由散户接棒时，普通人最容易在高潮处接到最后一棒。",
+      "status": null,
+      "degree": 7
+    },
+    {
+      "id": "concept:pragmatic-legitimacy",
+      "key": "pragmatic-legitimacy",
+      "label": "务实合法性",
+      "fullLabel": "务实合法性",
+      "type": "concept",
+      "route": "concepts/pragmatic-legitimacy",
+      "summary": "政权或共同体的稳定感，常来自普通人能持续获得可感的生活改善和秩序保障。",
       "status": null,
       "degree": 7
     },
@@ -1796,17 +1818,6 @@
       "degree": 7
     },
     {
-      "id": "episode:EP175",
-      "key": "EP175",
-      "label": "EP175",
-      "fullLabel": "EP175 · 从新加坡制冷暴富到欧洲高温慌！李光耀用“冷气”逆天改命，马斯克狂赞！",
-      "type": "episode",
-      "route": "episodes/EP175",
-      "summary": "本期从欧洲热浪切入：南欧多地逼近四十五度，冷气普及率却只有两成，一款中国卡扣式空调被抢到两千欧还断货，映出欧洲卡在白左环保观、老建筑和短暂高温之间的两难。节目由此对照新加坡——李光耀建国之初就把冷气化当国策，马斯克近日在 X 上称他天才。作者的主判断是：这不是小家电琐事，而是第一性原理的样本。热带最根本的约束是高温压垮工作效率、打断作息，李光耀抓住这一点，用全民而非分层的冷气化去解决，让新加坡成为热带唯一的发达国家。落点是什么才算伟人：为所有普通人、而不是为既得利益集团做对决策，才配得上这个词。",
-      "status": "curated",
-      "degree": 7
-    },
-    {
       "id": "episode:EP177",
       "key": "EP177",
       "label": "EP177",
@@ -1906,6 +1917,17 @@
       "degree": 6
     },
     {
+      "id": "person:lee-kuan-yew",
+      "key": "lee-kuan-yew",
+      "label": "李光耀",
+      "fullLabel": "李光耀",
+      "type": "person",
+      "route": "people/lee-kuan-yew",
+      "summary": "李光耀是新加坡建国总理，节目借他说明新加坡国家身份、国家责任和小国生存决心怎样压过祖籍血缘与软弱叙事。",
+      "status": null,
+      "degree": 6
+    },
+    {
       "id": "theme:youth-dreams-and-safe-paths",
       "key": "youth-dreams-and-safe-paths",
       "label": "年轻人梦想与安全路径",
@@ -1957,17 +1979,6 @@
       "type": "model",
       "route": "models/stability-over-growth-trap",
       "summary": "当系统把稳定当作增长的替代品，短期秩序会被保住，长期造血、流动和创新却会被压低。",
-      "status": null,
-      "degree": 6
-    },
-    {
-      "id": "concept:pragmatic-legitimacy",
-      "key": "pragmatic-legitimacy",
-      "label": "务实合法性",
-      "fullLabel": "务实合法性",
-      "type": "concept",
-      "route": "concepts/pragmatic-legitimacy",
-      "summary": "政权或共同体的稳定感，常来自普通人能持续获得可感的生活改善和秩序保障。",
       "status": null,
       "degree": 6
     },
@@ -2390,17 +2401,6 @@
       "degree": 5
     },
     {
-      "id": "person:lee-kuan-yew",
-      "key": "lee-kuan-yew",
-      "label": "李光耀",
-      "fullLabel": "李光耀",
-      "type": "person",
-      "route": "people/lee-kuan-yew",
-      "summary": "李光耀是新加坡建国总理，节目借他说明新加坡国家身份、国家责任和小国生存决心怎样压过祖籍血缘与软弱叙事。",
-      "status": null,
-      "degree": 5
-    },
-    {
       "id": "person:lee-hsien-loong",
       "key": "lee-hsien-loong",
       "label": "李显龙",
@@ -2705,6 +2705,17 @@
       "type": "episode",
       "route": "episodes/EP178",
       "summary": "LV 起诉新茶饮品牌茉莉奶白商标侵权，网上吵成两派。节目不站队，先拆三个流传最广的误区：著作权登记只是时间戳，挡不住商标侵权指控；古代纹样人人可用，但不等于可以和别人的注册商标撞脸；茉莉奶白整套视觉刻意对标奢侈品调性，本质是搭品牌便车。节目进一步点出真正决定案子走向的两个胜负手——驰名商标的跨品类保护与反不正当竞争，和文化归属没有半点关系。落点是这件事里最要不得的操作：把普通知识产权纠纷炒成民族情绪，挟民意为侵权背书，最终只会被舆论反噬——商业社会的底层逻辑是规则和信用。",
+      "status": "curated",
+      "degree": 5
+    },
+    {
+      "id": "episode:EP179",
+      "key": "EP179",
+      "label": "EP179",
+      "fullLabel": "EP179 · 新加坡冷气覆盖率90%，为啥中小学教室不装空调？真不是某大V说的没钱。",
+      "type": "episode",
+      "route": "episodes/EP179",
+      "summary": "新加坡冷气覆盖率极高，商场地铁写字楼无处不冷气，中小学普通教室却不准装空调，有中文圈大 V 说是因为穷。节目查了新加坡教育官网和当地讨论后判断：这根本不是钱的事，而是一整套提前设计的治理逻辑——教育上让孩子从小适应热带气候、培养耐受力；建筑上用绿色标准和被动降温从根源解决闷热；健康上靠自然通风减少密集教室的交叉感染；作息上七点半到校、下午两点放学，避开最热时段还顺手错开通勤高峰。落点是新加坡真正的法宝不是地理位置和运气，而是把细节扣到极致的战略规划能力和抗住舒适诱惑的定力。",
       "status": "curated",
       "degree": 5
     },
@@ -3343,6 +3354,17 @@
       "type": "theme",
       "route": "themes/price-war-and-precision-competition",
       "summary": "讨论卷低价与做精准高价值打击之间的差别，以及两种竞争逻辑背后的阶层思维。",
+      "status": null,
+      "degree": 3
+    },
+    {
+      "id": "model:first-principle-thinking",
+      "key": "first-principle-thinking",
+      "label": "第一性原理决策模型",
+      "fullLabel": "第一性原理决策模型",
+      "type": "model",
+      "route": "models/first-principle-thinking",
+      "summary": "第一性原理决策模型解释领导者怎样把复杂局面拆回最根本约束，再集中资源去解决它。",
       "status": null,
       "degree": 3
     },
@@ -4029,17 +4051,6 @@
       "degree": 2
     },
     {
-      "id": "model:first-principle-thinking",
-      "key": "first-principle-thinking",
-      "label": "第一性原理决策模型",
-      "fullLabel": "第一性原理决策模型",
-      "type": "model",
-      "route": "models/first-principle-thinking",
-      "summary": "第一性原理决策模型解释领导者怎样把复杂局面拆回最根本约束，再集中资源去解决它。",
-      "status": null,
-      "degree": 2
-    },
-    {
       "id": "concept:truth-indifferent-rhetoric",
       "key": "truth-indifferent-rhetoric",
       "label": "对真相冷漠的话术",
@@ -4377,6 +4388,17 @@
       "type": "concept",
       "route": "concepts/platform-double-standard",
       "summary": "平台执行规则时若按账号商业价值区别处理，治理就会变成选择性守门。",
+      "status": null,
+      "degree": 2
+    },
+    {
+      "id": "concept:anticipatory-governance",
+      "key": "anticipatory-governance",
+      "label": "前瞻治理",
+      "fullLabel": "前瞻治理",
+      "type": "concept",
+      "route": "concepts/anticipatory-governance",
+      "summary": "在问题形成之前就把它设计掉，而不是等矛盾积累、民怨爆发后再修补的治理方式。",
       "status": null,
       "degree": 2
     },
@@ -13132,6 +13154,11 @@
     },
     {
       "source": "episode:EP175",
+      "target": "concept:anticipatory-governance",
+      "kind": "episode-concept"
+    },
+    {
+      "source": "episode:EP175",
       "target": "model:first-principle-thinking",
       "kind": "episode-model"
     },
@@ -13228,6 +13255,31 @@
     {
       "source": "episode:EP178",
       "target": "theme:rule-of-law-boundaries-and-social-trust",
+      "kind": "episode-theme"
+    },
+    {
+      "source": "episode:EP179",
+      "target": "concept:anticipatory-governance",
+      "kind": "episode-concept"
+    },
+    {
+      "source": "episode:EP179",
+      "target": "concept:pragmatic-legitimacy",
+      "kind": "episode-concept"
+    },
+    {
+      "source": "episode:EP179",
+      "target": "model:first-principle-thinking",
+      "kind": "episode-model"
+    },
+    {
+      "source": "episode:EP179",
+      "target": "person:lee-kuan-yew",
+      "kind": "episode-person"
+    },
+    {
+      "source": "episode:EP179",
+      "target": "theme:singapore-and-small-state-survival",
       "kind": "episode-theme"
     },
     {

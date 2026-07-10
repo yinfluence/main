@@ -750,5 +750,16 @@
       "platform": "youtube",
       "url": "https://www.youtube.com/watch?v=nlOOTGUU8hg"
     }
+  },
+  "EP179": {
+    "bilibili": {
+      "platform": "bilibili",
+      "url": "https://www.bilibili.com/video/BV1BBME6BEzp/",
+      "access": "member"
+    },
+    "youtube": {
+      "platform": "youtube",
+      "url": "https://www.youtube.com/watch?v=nbUALOX-hLo"
+    }
   }
 }
