@@ -2,14 +2,14 @@
   "meta": {
     "title": "颖响力知识图谱",
     "subtitle": "节目、概念、模型、人物、主题之间的可视化连接网络",
-    "nodeCount": 588,
-    "linkCount": 1385,
+    "nodeCount": 590,
+    "linkCount": 1391,
     "typeCounts": {
       "model": 77,
       "person": 65,
       "theme": 91,
-      "concept": 178,
-      "episode": 177
+      "concept": 179,
+      "episode": 178
     }
   },
   "nodes": [
@@ -113,6 +113,17 @@
       "degree": 16
     },
     {
+      "id": "model:narrative-instrumentalization",
+      "key": "narrative-instrumentalization",
+      "label": "叙事工具化模型",
+      "fullLabel": "叙事工具化模型",
+      "type": "model",
+      "route": "models/narrative-instrumentalization",
+      "summary": "叙事工具化模型解释叙事的主要功能从解释现实转向组织情绪和划分阵营。",
+      "status": null,
+      "degree": 15
+    },
+    {
       "id": "episode:EP133",
       "key": "EP133",
       "label": "EP133",
@@ -153,17 +164,6 @@
       "type": "model",
       "route": "models/feedback-loops",
       "summary": "反馈回路模型解释老板偏好、顾问强化和组织沉默如何形成自我强化的错误循环。",
-      "status": null,
-      "degree": 14
-    },
-    {
-      "id": "model:narrative-instrumentalization",
-      "key": "narrative-instrumentalization",
-      "label": "叙事工具化模型",
-      "fullLabel": "叙事工具化模型",
-      "type": "model",
-      "route": "models/narrative-instrumentalization",
-      "summary": "叙事工具化模型解释叙事的主要功能从解释现实转向组织情绪和划分阵营。",
       "status": null,
       "degree": 14
     },
@@ -993,6 +993,17 @@
       "degree": 8
     },
     {
+      "id": "theme:rule-of-law-boundaries-and-social-trust",
+      "key": "rule-of-law-boundaries-and-social-trust",
+      "label": "法治边界与社会信任",
+      "fullLabel": "法治边界与社会信任",
+      "type": "theme",
+      "route": "themes/rule-of-law-boundaries-and-social-trust",
+      "summary": "关注法律灰区如何影响公众的善意、风险感和彼此信任。",
+      "status": null,
+      "degree": 8
+    },
+    {
       "id": "model:principal-agent",
       "key": "principal-agent",
       "label": "委托代理问题",
@@ -1176,6 +1187,17 @@
       "type": "episode",
       "route": "episodes/EP035",
       "summary": "本期围绕恒大汽车核心子公司被广州国资接盘后的清算顺序展开，讨论一家曾经光鲜的新能源汽车项目在破产时究竟还剩下什么。节目核心判断是，所谓技术、PPT、生产线和产业神话在清算阶段都不值钱，真正还能被争抢的往往只剩地、壳和少量残余资产，而普通债权人与末端参与者承担最大损失。",
+      "status": "curated",
+      "degree": 8
+    },
+    {
+      "id": "episode:EP041",
+      "key": "EP041",
+      "label": "EP041",
+      "fullLabel": "EP041 · 电车遥遥领先的“致敬”与全面抄袭，能让中国设计成为头部？“速成车”喂养下大倒退的新一代消费者。",
+      "type": "episode",
+      "route": "episodes/EP041",
+      "summary": "本期从新能源设计“遥遥领先”的流行说法切入，反驳中国电车设计已经天然领先欧美的乐观判断。节目核心意思是，很多所谓设计创新，本质上更接近在成熟油车和跑车外形上快速拼装、局部改写的速成做法；一旦对原理和边界理解不够，这些“致敬式设计”就会从审美问题滑向真实的安全问题。",
       "status": "curated",
       "degree": 8
     },
@@ -1411,17 +1433,6 @@
       "degree": 8
     },
     {
-      "id": "theme:rule-of-law-boundaries-and-social-trust",
-      "key": "rule-of-law-boundaries-and-social-trust",
-      "label": "法治边界与社会信任",
-      "fullLabel": "法治边界与社会信任",
-      "type": "theme",
-      "route": "themes/rule-of-law-boundaries-and-social-trust",
-      "summary": "关注法律灰区如何影响公众的善意、风险感和彼此信任。",
-      "status": null,
-      "degree": 7
-    },
-    {
       "id": "concept:phantom-growth",
       "key": "phantom-growth",
       "label": "幻象增长",
@@ -1605,17 +1616,6 @@
       "type": "episode",
       "route": "episodes/EP031",
       "summary": "本期不是在问碧桂园能不能靠重组活下来，而是在问债权人到底还能拿回什么。节目借境外重组方案指出：台面上的债务数字只是前台，真正把碧桂园拖进泥潭的，是高杠杆扩张、森林城市这类跨境沉没项目，以及大量留在体外平台和合作链条里的隐形窟窿。",
-      "status": "curated",
-      "degree": 7
-    },
-    {
-      "id": "episode:EP041",
-      "key": "EP041",
-      "label": "EP041",
-      "fullLabel": "EP041 · 电车遥遥领先的“致敬”与全面抄袭，能让中国设计成为头部？“速成车”喂养下大倒退的新一代消费者。",
-      "type": "episode",
-      "route": "episodes/EP041",
-      "summary": "本期从新能源设计“遥遥领先”的流行说法切入，反驳中国电车设计已经天然领先欧美的乐观判断。节目核心意思是，很多所谓设计创新，本质上更接近在成熟油车和跑车外形上快速拼装、局部改写的速成做法；一旦对原理和边界理解不够，这些“致敬式设计”就会从审美问题滑向真实的安全问题。",
       "status": "curated",
       "degree": 7
     },
@@ -1858,6 +1858,17 @@
       "type": "model",
       "route": "models/distributed-innovation",
       "summary": "分布式创新强调多中心试错、失败吸收和真实反馈比单一大计划更能产生韧性。",
+      "status": null,
+      "degree": 6
+    },
+    {
+      "id": "concept:premium-narrative",
+      "key": "premium-narrative",
+      "label": "高价叙事",
+      "fullLabel": "高价叙事",
+      "type": "concept",
+      "route": "concepts/premium-narrative",
+      "summary": "企业用定位、符号、方法论和品牌故事为高价格建立解释框架。",
       "status": null,
       "degree": 6
     },
@@ -2346,17 +2357,6 @@
       "degree": 5
     },
     {
-      "id": "concept:premium-narrative",
-      "key": "premium-narrative",
-      "label": "高价叙事",
-      "fullLabel": "高价叙事",
-      "type": "concept",
-      "route": "concepts/premium-narrative",
-      "summary": "企业用定位、符号、方法论和品牌故事为高价格建立解释框架。",
-      "status": null,
-      "degree": 5
-    },
-    {
       "id": "model:technology-wave-cycle",
       "key": "technology-wave-cycle",
       "label": "技术浪潮周期",
@@ -2698,6 +2698,17 @@
       "degree": 5
     },
     {
+      "id": "episode:EP178",
+      "key": "EP178",
+      "label": "EP178",
+      "fullLabel": "EP178 · LV告茉莉奶白：著作权不是免死金牌，别拿老祖宗洗地！别拿民粹当挡箭牌！",
+      "type": "episode",
+      "route": "episodes/EP178",
+      "summary": "LV 起诉新茶饮品牌茉莉奶白商标侵权，网上吵成两派。节目不站队，先拆三个流传最广的误区：著作权登记只是时间戳，挡不住商标侵权指控；古代纹样人人可用，但不等于可以和别人的注册商标撞脸；茉莉奶白整套视觉刻意对标奢侈品调性，本质是搭品牌便车。节目进一步点出真正决定案子走向的两个胜负手——驰名商标的跨品类保护与反不正当竞争，和文化归属没有半点关系。落点是这件事里最要不得的操作：把普通知识产权纠纷炒成民族情绪，挟民意为侵权背书，最终只会被舆论反噬——商业社会的底层逻辑是规则和信用。",
+      "status": "curated",
+      "degree": 5
+    },
+    {
       "id": "model:safety-valve-governance",
       "key": "safety-valve-governance",
       "label": "安全阀治理模型",
@@ -2848,6 +2859,17 @@
       "type": "person",
       "route": "people/elon-musk",
       "summary": "马斯克是特斯拉和SpaceX等公司的核心科技企业家，节目借他观察技术资本叙事、AI泡沫和美国商业航天与国家体系的并行关系。",
+      "status": null,
+      "degree": 4
+    },
+    {
+      "id": "theme:brand-symbol-and-value",
+      "key": "brand-symbol-and-value",
+      "label": "品牌符号与价值感知",
+      "fullLabel": "品牌符号与价值感知",
+      "type": "theme",
+      "route": "themes/brand-symbol-and-value",
+      "summary": "讨论品牌符号如何塑造用户对价格、品质和价值的判断。",
       "status": null,
       "degree": 4
     },
@@ -3600,17 +3622,6 @@
       "degree": 3
     },
     {
-      "id": "theme:brand-symbol-and-value",
-      "key": "brand-symbol-and-value",
-      "label": "品牌符号与价值感知",
-      "fullLabel": "品牌符号与价值感知",
-      "type": "theme",
-      "route": "themes/brand-symbol-and-value",
-      "summary": "讨论品牌符号如何塑造用户对价格、品质和价值的判断。",
-      "status": null,
-      "degree": 3
-    },
-    {
       "id": "theme:platform-traffic-and-price-distortion",
       "key": "platform-traffic-and-price-distortion",
       "label": "平台流量与价格失真",
@@ -4344,6 +4355,17 @@
       "type": "theme",
       "route": "themes/content-regulation-and-short-drama",
       "summary": "讨论长剧、电影、网剧和短剧在不同审核路径下如何重新竞争。",
+      "status": null,
+      "degree": 2
+    },
+    {
+      "id": "concept:brand-free-riding",
+      "key": "brand-free-riding",
+      "label": "品牌搭便车",
+      "fullLabel": "品牌搭便车",
+      "type": "concept",
+      "route": "concepts/brand-free-riding",
+      "summary": "后发品牌刻意模仿知名品牌的标识、视觉或调性，用最低成本借取对方积累的商誉给自己抬身价。",
       "status": null,
       "degree": 2
     },
@@ -7796,6 +7818,11 @@
     {
       "source": "episode:EP041",
       "target": "concept:safety-attention-shift",
+      "kind": "episode-concept"
+    },
+    {
+      "source": "episode:EP041",
+      "target": "concept:brand-free-riding",
       "kind": "episode-concept"
     },
     {
@@ -13176,6 +13203,31 @@
     {
       "source": "episode:EP177",
       "target": "theme:maritime-chokepoints-and-route-order",
+      "kind": "episode-theme"
+    },
+    {
+      "source": "episode:EP178",
+      "target": "concept:premium-narrative",
+      "kind": "episode-concept"
+    },
+    {
+      "source": "episode:EP178",
+      "target": "concept:brand-free-riding",
+      "kind": "episode-concept"
+    },
+    {
+      "source": "episode:EP178",
+      "target": "model:narrative-instrumentalization",
+      "kind": "episode-model"
+    },
+    {
+      "source": "episode:EP178",
+      "target": "theme:brand-symbol-and-value",
+      "kind": "episode-theme"
+    },
+    {
+      "source": "episode:EP178",
+      "target": "theme:rule-of-law-boundaries-and-social-trust",
       "kind": "episode-theme"
     },
     {
