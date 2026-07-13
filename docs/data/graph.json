@@ -2,14 +2,14 @@
   "meta": {
     "title": "颖响力知识图谱",
     "subtitle": "节目、概念、模型、人物、主题之间的可视化连接网络",
-    "nodeCount": 596,
-    "linkCount": 1411,
+    "nodeCount": 601,
+    "linkCount": 1421,
     "typeCounts": {
       "model": 77,
-      "person": 65,
       "theme": 91,
-      "concept": 183,
-      "episode": 180
+      "person": 65,
+      "concept": 187,
+      "episode": 181
     }
   },
   "nodes": [
@@ -25,17 +25,6 @@
       "degree": 39
     },
     {
-      "id": "person:donald-trump",
-      "key": "donald-trump",
-      "label": "特朗普",
-      "fullLabel": "特朗普",
-      "type": "person",
-      "route": "people/donald-trump",
-      "summary": "特朗普是美国共和党政治人物、第45任与第47任美国总统，节目借他观察美国战略收缩、成本转嫁和规则重定价。",
-      "status": null,
-      "degree": 19
-    },
-    {
       "id": "theme:singapore-and-small-state-survival",
       "key": "singapore-and-small-state-survival",
       "label": "新加坡与小国生存术",
@@ -43,6 +32,17 @@
       "type": "theme",
       "route": "themes/singapore-and-small-state-survival",
       "summary": "讨论新加坡如何把规则、海峡、人才和谨慎外交组合成一套小国长期生存方法。",
+      "status": null,
+      "degree": 20
+    },
+    {
+      "id": "person:donald-trump",
+      "key": "donald-trump",
+      "label": "特朗普",
+      "fullLabel": "特朗普",
+      "type": "person",
+      "route": "people/donald-trump",
+      "summary": "特朗普是美国共和党政治人物、第45任与第47任美国总统，节目借他观察美国战略收缩、成本转嫁和规则重定价。",
       "status": null,
       "degree": 19
     },
@@ -168,6 +168,17 @@
       "degree": 14
     },
     {
+      "id": "model:path-dependence",
+      "key": "path-dependence",
+      "label": "路径依赖",
+      "fullLabel": "路径依赖",
+      "type": "model",
+      "route": "models/path-dependence",
+      "summary": "路径依赖解释早期技术和叙事选择一旦成功，就会反过来限制后续转向更优路径。",
+      "status": null,
+      "degree": 14
+    },
+    {
       "id": "episode:EP128",
       "key": "EP128",
       "label": "EP128",
@@ -256,6 +267,17 @@
       "degree": 13
     },
     {
+      "id": "theme:southeast-asia-fragmentation-and-bloc-competition",
+      "key": "southeast-asia-fragmentation-and-bloc-competition",
+      "label": "东南亚裂变与集团竞争",
+      "fullLabel": "东南亚裂变与集团竞争",
+      "type": "theme",
+      "route": "themes/southeast-asia-fragmentation-and-bloc-competition",
+      "summary": "讨论东南亚如何从缓冲地带变成各方拉扯、重新站队和内部裂变并行发生的高风险区域。",
+      "status": null,
+      "degree": 13
+    },
+    {
       "id": "theme:maritime-chokepoints-and-route-order",
       "key": "maritime-chokepoints-and-route-order",
       "label": "海峡命门与航运秩序",
@@ -263,17 +285,6 @@
       "type": "theme",
       "route": "themes/maritime-chokepoints-and-route-order",
       "summary": "讨论海峡、运河和关键航道如何把地理位置变成规则、保险、资本和军事的综合权力。",
-      "status": null,
-      "degree": 13
-    },
-    {
-      "id": "model:path-dependence",
-      "key": "path-dependence",
-      "label": "路径依赖",
-      "fullLabel": "路径依赖",
-      "type": "model",
-      "route": "models/path-dependence",
-      "summary": "路径依赖解释早期技术和叙事选择一旦成功，就会反过来限制后续转向更优路径。",
       "status": null,
       "degree": 13
     },
@@ -428,17 +439,6 @@
       "type": "model",
       "route": "models/proxy-containment-ring",
       "summary": "代理围堵环解释大国如何通过盟友、代理人和通道控制分摊成本、封堵对手。",
-      "status": null,
-      "degree": 12
-    },
-    {
-      "id": "theme:southeast-asia-fragmentation-and-bloc-competition",
-      "key": "southeast-asia-fragmentation-and-bloc-competition",
-      "label": "东南亚裂变与集团竞争",
-      "fullLabel": "东南亚裂变与集团竞争",
-      "type": "theme",
-      "route": "themes/southeast-asia-fragmentation-and-bloc-competition",
-      "summary": "讨论东南亚如何从缓冲地带变成各方拉扯、重新站队和内部裂变并行发生的高风险区域。",
       "status": null,
       "degree": 12
     },
@@ -758,6 +758,17 @@
       "type": "episode",
       "route": "episodes/EP173",
       "summary": "东大潮汕片《给阿嬷的情书》在新加坡热映，从限映八场一路加到破例五十场，被一些华文媒体贴上统战标签。本期判断新加坡不是守不住华语政策而破防，而是用堵不如疏的破例：与其行政禁止把观众逼去别的平台，不如让市场消化。节目进而借这部电影追问根到底是什么——落叶归根不如落地生根，真正的根是对自己好、能生活下去的地方，而不是祖先故土。对那个把潮汕话当文化的女孩，节目指出她的狂热其实是对客家母系的反抗，是一场没完成的精神弑母。落点是：它确实带统战色彩，却仍是部好电影，去掉那层滤镜照样能看。",
+      "status": "curated",
+      "degree": 10
+    },
+    {
+      "id": "episode:EP181",
+      "key": "EP181",
+      "label": "EP181",
+      "fullLabel": "EP181 · 东南亚火药桶之大马篇：表面政坛大乱，实则铁桶威权？困住马来西亚成为发达国家的3个致命死穴！",
+      "type": "episode",
+      "route": "episodes/EP181",
+      "summary": "东南亚火药桶系列第二期讲马来西亚，节目把它和印尼写成镜面：印尼表面威权稳固、内里派系乱成一团，马来西亚政坛表面吵翻天，底下马来人的国家这条红线和九位苏丹轮值的君主联邦制却纹丝不动。安华的大联合政府面合心不合，票仓被自家分裂出的同心党掏空，只能拖着不敢大选；经济上大基建留下逼近GDP八成的债务，燃油补贴又因油价暴涨翻了五到十倍，固打制还把上百万中产人才推给新加坡。节目判断马来西亚不会崩盘，但也永远突破不了中等收入陷阱——根基太稳，恰恰锁死了上限。",
       "status": "curated",
       "degree": 10
     },
@@ -1477,6 +1488,17 @@
       "degree": 7
     },
     {
+      "id": "person:lee-kuan-yew",
+      "key": "lee-kuan-yew",
+      "label": "李光耀",
+      "fullLabel": "李光耀",
+      "type": "person",
+      "route": "people/lee-kuan-yew",
+      "summary": "李光耀是新加坡建国总理，节目借他说明新加坡国家身份、国家责任和小国生存决心怎样压过祖籍血缘与软弱叙事。",
+      "status": null,
+      "degree": 7
+    },
+    {
       "id": "theme:platform-governance-and-folk-discourse",
       "key": "platform-governance-and-folk-discourse",
       "label": "平台治理与民间话语",
@@ -1517,6 +1539,17 @@
       "type": "theme",
       "route": "themes/narrative-speculation-and-retail-traps",
       "summary": "当市场热点先由故事驱动、再由散户接棒时，普通人最容易在高潮处接到最后一棒。",
+      "status": null,
+      "degree": 7
+    },
+    {
+      "id": "model:stability-over-growth-trap",
+      "key": "stability-over-growth-trap",
+      "label": "稳定替代增长陷阱",
+      "fullLabel": "稳定替代增长陷阱",
+      "type": "model",
+      "route": "models/stability-over-growth-trap",
+      "summary": "当系统把稳定当作增长的替代品，短期秩序会被保住，长期造血、流动和创新却会被压低。",
       "status": null,
       "degree": 7
     },
@@ -1928,17 +1961,6 @@
       "degree": 6
     },
     {
-      "id": "person:lee-kuan-yew",
-      "key": "lee-kuan-yew",
-      "label": "李光耀",
-      "fullLabel": "李光耀",
-      "type": "person",
-      "route": "people/lee-kuan-yew",
-      "summary": "李光耀是新加坡建国总理，节目借他说明新加坡国家身份、国家责任和小国生存决心怎样压过祖籍血缘与软弱叙事。",
-      "status": null,
-      "degree": 6
-    },
-    {
       "id": "theme:youth-dreams-and-safe-paths",
       "key": "youth-dreams-and-safe-paths",
       "label": "年轻人梦想与安全路径",
@@ -1979,17 +2001,6 @@
       "type": "person",
       "route": "people/wang-shi",
       "summary": "王石是万科创始人、董事会名誉主席，节目借他观察地产企业家退场、万科继承治理和资产关系再定价。",
-      "status": null,
-      "degree": 6
-    },
-    {
-      "id": "model:stability-over-growth-trap",
-      "key": "stability-over-growth-trap",
-      "label": "稳定替代增长陷阱",
-      "fullLabel": "稳定替代增长陷阱",
-      "type": "model",
-      "route": "models/stability-over-growth-trap",
-      "summary": "当系统把稳定当作增长的替代品，短期秩序会被保住，长期造血、流动和创新却会被压低。",
       "status": null,
       "degree": 6
     },
@@ -4260,6 +4271,17 @@
       "degree": 2
     },
     {
+      "id": "concept:overseas-sink-project",
+      "key": "overseas-sink-project",
+      "label": "海外沉没项目",
+      "fullLabel": "海外沉没项目",
+      "type": "concept",
+      "route": "concepts/overseas-sink-project",
+      "summary": "跨境大项目若依赖旧周期资金和宏大叙事，外部条件反转后会变成难以止损的资产黑洞。",
+      "status": null,
+      "degree": 2
+    },
+    {
       "id": "person:he-qi",
       "key": "he-qi",
       "label": "何旗",
@@ -4843,6 +4865,17 @@
       "degree": 1
     },
     {
+      "id": "concept:surface-chaos-deep-order",
+      "key": "surface-chaos-deep-order",
+      "label": "表面乱局深层秩序",
+      "fullLabel": "表面乱局深层秩序",
+      "type": "concept",
+      "route": "concepts/surface-chaos-deep-order",
+      "summary": "政坛看起来吵翻天，其实所有争斗都锁在不可触碰的底层规则之内，乱只发生在上层分权，根基纹丝不动。",
+      "status": null,
+      "degree": 1
+    },
+    {
       "id": "theme:wealth-reproduction-and-ethical-boundaries",
       "key": "wealth-reproduction-and-ethical-boundaries",
       "label": "财富繁殖与伦理边界",
@@ -5129,6 +5162,17 @@
       "degree": 1
     },
     {
+      "id": "concept:welfare-ratchet",
+      "key": "welfare-ratchet",
+      "label": "福利棘轮",
+      "fullLabel": "福利棘轮",
+      "type": "concept",
+      "route": "concepts/welfare-ratchet",
+      "summary": "补贴和福利只能加不能减：经济做好选民不加分，砍福利一定下台，政客被锁进透支未来的短期维稳。",
+      "status": null,
+      "degree": 1
+    },
+    {
       "id": "person:mattias-grafstrom",
       "key": "mattias-grafstrom",
       "label": "格拉夫斯特伦",
@@ -5191,17 +5235,6 @@
       "type": "person",
       "route": "people/haibian-de-xisailuo",
       "summary": "海边的西塞罗是中文互联网写作者和公众号作者，节目借其文章进入《论扯淡》、中式逻辑和工具化历史叙事的讨论。",
-      "status": null,
-      "degree": 1
-    },
-    {
-      "id": "concept:overseas-sink-project",
-      "key": "overseas-sink-project",
-      "label": "海外沉没项目",
-      "fullLabel": "海外沉没项目",
-      "type": "concept",
-      "route": "concepts/overseas-sink-project",
-      "summary": "跨境大项目若依赖旧周期资金和宏大叙事，外部条件反转后会变成难以止损的资产黑洞。",
       "status": null,
       "degree": 1
     },
@@ -5844,6 +5877,17 @@
       "degree": 1
     },
     {
+      "id": "concept:talent-siphon",
+      "key": "talent-siphon",
+      "label": "人才虹吸",
+      "fullLabel": "人才虹吸",
+      "type": "concept",
+      "route": "concepts/talent-siphon",
+      "summary": "一国用高工资和开放机会，持续吸走邻国被制度排斥的中产人才——培养成本留在母国，产出回报归了邻国。",
+      "status": null,
+      "degree": 1
+    },
+    {
       "id": "theme:evaluation-and-moral-capital",
       "key": "evaluation-and-moral-capital",
       "label": "人物评价与道德资本",
@@ -6478,6 +6522,17 @@
       "type": "concept",
       "route": "concepts/direct-transfer-consumption",
       "summary": "现金直接到普通人手里，会进入日常消费毛细血管，形成朴素但真实的循环。",
+      "status": null,
+      "degree": 1
+    },
+    {
+      "id": "concept:middle-income-trap",
+      "key": "middle-income-trap",
+      "label": "中等收入陷阱",
+      "fullLabel": "中等收入陷阱",
+      "type": "concept",
+      "route": "concepts/middle-income-trap",
+      "summary": "一个经济体长期卡在中等收入区间：低端优势已经用完，高端跃迁又被制度或人才短板锁死，上不去也掉不下来。",
       "status": null,
       "degree": 1
     },
@@ -13394,6 +13449,56 @@
     {
       "source": "episode:EP180",
       "target": "theme:dollar-system-and-gray-trade",
+      "kind": "episode-theme"
+    },
+    {
+      "source": "episode:EP181",
+      "target": "concept:surface-chaos-deep-order",
+      "kind": "episode-concept"
+    },
+    {
+      "source": "episode:EP181",
+      "target": "concept:talent-siphon",
+      "kind": "episode-concept"
+    },
+    {
+      "source": "episode:EP181",
+      "target": "concept:welfare-ratchet",
+      "kind": "episode-concept"
+    },
+    {
+      "source": "episode:EP181",
+      "target": "concept:middle-income-trap",
+      "kind": "episode-concept"
+    },
+    {
+      "source": "episode:EP181",
+      "target": "concept:overseas-sink-project",
+      "kind": "episode-concept"
+    },
+    {
+      "source": "episode:EP181",
+      "target": "model:stability-over-growth-trap",
+      "kind": "episode-model"
+    },
+    {
+      "source": "episode:EP181",
+      "target": "model:path-dependence",
+      "kind": "episode-model"
+    },
+    {
+      "source": "episode:EP181",
+      "target": "person:lee-kuan-yew",
+      "kind": "episode-person"
+    },
+    {
+      "source": "episode:EP181",
+      "target": "theme:southeast-asia-fragmentation-and-bloc-competition",
+      "kind": "episode-theme"
+    },
+    {
+      "source": "episode:EP181",
+      "target": "theme:singapore-and-small-state-survival",
       "kind": "episode-theme"
     },
     {
