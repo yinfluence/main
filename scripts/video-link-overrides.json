@@ -761,5 +761,15 @@
       "platform": "youtube",
       "url": "https://www.youtube.com/watch?v=nbUALOX-hLo"
     }
+  },
+  "EP180": {
+    "bilibili": {
+      "platform": "bilibili",
+      "url": "https://www.bilibili.com/video/BV1mjNn6SEqQ/"
+    },
+    "youtube": {
+      "platform": "youtube",
+      "url": "https://www.youtube.com/watch?v=efPx0KLMT8A"
+    }
   }
 }
