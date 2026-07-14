@@ -2,14 +2,14 @@
   "meta": {
     "title": "颖响力知识图谱",
     "subtitle": "节目、概念、模型、人物、主题之间的可视化连接网络",
-    "nodeCount": 601,
-    "linkCount": 1421,
+    "nodeCount": 603,
+    "linkCount": 1428,
     "typeCounts": {
       "model": 77,
-      "theme": 91,
       "person": 65,
-      "concept": 187,
-      "episode": 181
+      "theme": 91,
+      "concept": 188,
+      "episode": 182
     }
   },
   "nodes": [
@@ -25,6 +25,17 @@
       "degree": 39
     },
     {
+      "id": "person:donald-trump",
+      "key": "donald-trump",
+      "label": "特朗普",
+      "fullLabel": "特朗普",
+      "type": "person",
+      "route": "people/donald-trump",
+      "summary": "特朗普是美国共和党政治人物、第45任与第47任美国总统，节目借他观察美国战略收缩、成本转嫁和规则重定价。",
+      "status": null,
+      "degree": 20
+    },
+    {
       "id": "theme:singapore-and-small-state-survival",
       "key": "singapore-and-small-state-survival",
       "label": "新加坡与小国生存术",
@@ -34,17 +45,6 @@
       "summary": "讨论新加坡如何把规则、海峡、人才和谨慎外交组合成一套小国长期生存方法。",
       "status": null,
       "degree": 20
-    },
-    {
-      "id": "person:donald-trump",
-      "key": "donald-trump",
-      "label": "特朗普",
-      "fullLabel": "特朗普",
-      "type": "person",
-      "route": "people/donald-trump",
-      "summary": "特朗普是美国共和党政治人物、第45任与第47任美国总统，节目借他观察美国战略收缩、成本转嫁和规则重定价。",
-      "status": null,
-      "degree": 19
     },
     {
       "id": "model:leverage-backfire",
@@ -78,6 +78,17 @@
       "summary": "本期借 Meta 收购 Manus 被监管否决，讨论这件事对中国草根创业者意味着什么。节目承认叫停交易有明确法律依据，但核心判断是：过去三十年支撑无背景年轻人从零到一的美元基金、全球市场和赴美上市、海外并购退出通道正在被堵死；地方国资基金的考核逻辑重视国有资产不流失、招商落地和可见退出，天然不会为纯软件、早期、无背景的草根项目承担风险。结果是年轻人理性地转向考研考公，创新资源从市场能力转向行政关系，真正的颠覆式创新被挤出，只剩依附式和表演式创新。",
       "status": "curated",
       "degree": 17
+    },
+    {
+      "id": "model:narrative-instrumentalization",
+      "key": "narrative-instrumentalization",
+      "label": "叙事工具化模型",
+      "fullLabel": "叙事工具化模型",
+      "type": "model",
+      "route": "models/narrative-instrumentalization",
+      "summary": "叙事工具化模型解释叙事的主要功能从解释现实转向组织情绪和划分阵营。",
+      "status": null,
+      "degree": 16
     },
     {
       "id": "episode:EP001",
@@ -120,17 +131,6 @@
       "type": "theme",
       "route": "themes/great-power-competition-and-strategic-time",
       "summary": "讨论战争、联盟和国家战略如何被时间窗口、社会成本和长期定力重新塑形。",
-      "status": null,
-      "degree": 15
-    },
-    {
-      "id": "model:narrative-instrumentalization",
-      "key": "narrative-instrumentalization",
-      "label": "叙事工具化模型",
-      "fullLabel": "叙事工具化模型",
-      "type": "model",
-      "route": "models/narrative-instrumentalization",
-      "summary": "叙事工具化模型解释叙事的主要功能从解释现实转向组织情绪和划分阵营。",
       "status": null,
       "degree": 15
     },
@@ -274,6 +274,17 @@
       "type": "theme",
       "route": "themes/southeast-asia-fragmentation-and-bloc-competition",
       "summary": "讨论东南亚如何从缓冲地带变成各方拉扯、重新站队和内部裂变并行发生的高风险区域。",
+      "status": null,
+      "degree": 13
+    },
+    {
+      "id": "model:rule-anchored-small-state-model",
+      "key": "rule-anchored-small-state-model",
+      "label": "规则锚定型小国生存",
+      "fullLabel": "规则锚定型小国生存",
+      "type": "model",
+      "route": "models/rule-anchored-small-state-model",
+      "summary": "小国要长期活下来，不能只靠地理好运，更要靠规则信誉、理性政府和可预期的制度自我约束。",
       "status": null,
       "degree": 13
     },
@@ -439,17 +450,6 @@
       "type": "model",
       "route": "models/proxy-containment-ring",
       "summary": "代理围堵环解释大国如何通过盟友、代理人和通道控制分摊成本、封堵对手。",
-      "status": null,
-      "degree": 12
-    },
-    {
-      "id": "model:rule-anchored-small-state-model",
-      "key": "rule-anchored-small-state-model",
-      "label": "规则锚定型小国生存",
-      "fullLabel": "规则锚定型小国生存",
-      "type": "model",
-      "route": "models/rule-anchored-small-state-model",
-      "summary": "小国要长期活下来，不能只靠地理好运，更要靠规则信誉、理性政府和可预期的制度自我约束。",
       "status": null,
       "degree": 12
     },
@@ -773,6 +773,17 @@
       "degree": 10
     },
     {
+      "id": "theme:rule-of-law-boundaries-and-social-trust",
+      "key": "rule-of-law-boundaries-and-social-trust",
+      "label": "法治边界与社会信任",
+      "fullLabel": "法治边界与社会信任",
+      "type": "theme",
+      "route": "themes/rule-of-law-boundaries-and-social-trust",
+      "summary": "关注法律灰区如何影响公众的善意、风险感和彼此信任。",
+      "status": null,
+      "degree": 9
+    },
+    {
       "id": "model:value-capture",
       "key": "value-capture",
       "label": "价值捕获",
@@ -1011,17 +1022,6 @@
       "type": "theme",
       "route": "themes/big-government-and-incentive-reversal",
       "summary": "当大政府失去高速增长红利后，原本向前看的发展激励会慢慢转成向后看的收缩与回补。",
-      "status": null,
-      "degree": 8
-    },
-    {
-      "id": "theme:rule-of-law-boundaries-and-social-trust",
-      "key": "rule-of-law-boundaries-and-social-trust",
-      "label": "法治边界与社会信任",
-      "fullLabel": "法治边界与社会信任",
-      "type": "theme",
-      "route": "themes/rule-of-law-boundaries-and-social-trust",
-      "summary": "关注法律灰区如何影响公众的善意、风险感和彼此信任。",
       "status": null,
       "degree": 8
     },
@@ -1873,6 +1873,17 @@
       "degree": 7
     },
     {
+      "id": "episode:EP182",
+      "key": "EP182",
+      "label": "EP182",
+      "fullLabel": "EP182 · 从巴拉圭脏踢到美国改规则：世界杯两场球，戳破了大小国的规则真相！",
+      "type": "episode",
+      "route": "episodes/EP182",
+      "summary": "世界杯打到淘汰赛，节目挑出两场球讲同一个道理：法国对巴拉圭，世界第33的巴拉圭全场13次犯规零黄牌，靠小动作和挑衅想激怒对手骗红牌；美国对比利时，川普给国际足联打电话，硬是让吃了红牌的巴洛贡缓期禁赛上场，开了世界杯几十年判罚先河。结果一个赢了小便宜输掉口碑，一个改了规则照样被比利时四比一踢翻。节目判断，小国钻空子成不了强者，大国破坏自己定的规则会被规则反噬，足球能当世界第一运动，靠的正是场上那点公平。",
+      "status": "curated",
+      "degree": 7
+    },
+    {
       "id": "theme:planned-systems-and-innovation",
       "key": "planned-systems-and-innovation",
       "label": "大计划体制与创新约束",
@@ -2467,6 +2478,17 @@
       "degree": 5
     },
     {
+      "id": "concept:pressure-backfire",
+      "key": "pressure-backfire",
+      "label": "外压反噬",
+      "fullLabel": "外压反噬",
+      "type": "concept",
+      "route": "concepts/pressure-backfire",
+      "summary": "外部施压本想压制对象，却可能反向提供动员资源、受害叙事和上位机会。",
+      "status": null,
+      "degree": 5
+    },
+    {
       "id": "person:vivian-balakrishnan",
       "key": "vivian-balakrishnan",
       "label": "维文",
@@ -3024,17 +3046,6 @@
       "type": "model",
       "route": "models/exit-liquidation-waterfall",
       "summary": "产业项目一旦崩塌，价值会迅速收缩到土地、壳和残余设备，并按优先级把损失一层层向下压。",
-      "status": null,
-      "degree": 4
-    },
-    {
-      "id": "concept:pressure-backfire",
-      "key": "pressure-backfire",
-      "label": "外压反噬",
-      "fullLabel": "外压反噬",
-      "type": "concept",
-      "route": "concepts/pressure-backfire",
-      "summary": "外部施压本想压制对象，却可能反向提供动员资源、受害叙事和上位机会。",
       "status": null,
       "degree": 4
     },
@@ -4634,6 +4645,17 @@
       "degree": 2
     },
     {
+      "id": "concept:new-media-politician",
+      "key": "new-media-politician",
+      "label": "新媒体政治人物",
+      "fullLabel": "新媒体政治人物",
+      "type": "concept",
+      "route": "concepts/new-media-politician",
+      "summary": "靠新媒体直接连接受众、绕过传统组织和选举路径崛起的新型权力人物。",
+      "status": null,
+      "degree": 2
+    },
+    {
       "id": "theme:ev-tech-route",
       "key": "ev-tech-route",
       "label": "新能源技术路线与路径锁定",
@@ -6196,17 +6218,6 @@
       "degree": 1
     },
     {
-      "id": "concept:new-media-politician",
-      "key": "new-media-politician",
-      "label": "新媒体政治人物",
-      "fullLabel": "新媒体政治人物",
-      "type": "concept",
-      "route": "concepts/new-media-politician",
-      "summary": "靠新媒体直接连接受众、绕过传统组织和选举路径崛起的新型权力人物。",
-      "status": null,
-      "degree": 1
-    },
-    {
       "id": "concept:information-edge",
       "key": "information-edge",
       "label": "信息优势",
@@ -6577,6 +6588,17 @@
       "type": "concept",
       "route": "concepts/capital-wall",
       "summary": "资本筑墙指国家像特朗普建实体墙一样，用监管在资金、技术、人才的跨境流动上立起高墙，逼资产与中国有联系的人在“留下受管”和“离开别回”之间选边。",
+      "status": null,
+      "degree": 1
+    },
+    {
+      "id": "concept:rule-gaming-backfire",
+      "key": "rule-gaming-backfire",
+      "label": "钻规则反噬",
+      "fullLabel": "钻规则反噬",
+      "type": "concept",
+      "route": "concepts/rule-gaming-backfire",
+      "summary": "靠钻规则空子或动用特权改规则获取短期收益，最终赔上信任、口碑和长期竞争力的现象。",
       "status": null,
       "degree": 1
     },
@@ -13499,6 +13521,41 @@
     {
       "source": "episode:EP181",
       "target": "theme:singapore-and-small-state-survival",
+      "kind": "episode-theme"
+    },
+    {
+      "source": "episode:EP182",
+      "target": "concept:rule-gaming-backfire",
+      "kind": "episode-concept"
+    },
+    {
+      "source": "episode:EP182",
+      "target": "concept:pressure-backfire",
+      "kind": "episode-concept"
+    },
+    {
+      "source": "episode:EP182",
+      "target": "concept:new-media-politician",
+      "kind": "episode-concept"
+    },
+    {
+      "source": "episode:EP182",
+      "target": "model:rule-anchored-small-state-model",
+      "kind": "episode-model"
+    },
+    {
+      "source": "episode:EP182",
+      "target": "model:narrative-instrumentalization",
+      "kind": "episode-model"
+    },
+    {
+      "source": "episode:EP182",
+      "target": "person:donald-trump",
+      "kind": "episode-person"
+    },
+    {
+      "source": "episode:EP182",
+      "target": "theme:rule-of-law-boundaries-and-social-trust",
       "kind": "episode-theme"
     },
     {

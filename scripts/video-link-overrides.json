@@ -781,5 +781,12 @@
       "platform": "youtube",
       "url": "https://www.youtube.com/watch?v=9wPokWTTBHo"
     }
+  },
+  "EP182": {
+    "bilibili": {
+      "platform": "bilibili",
+      "url": "https://www.bilibili.com/video/BV1bBNy6XEin/",
+      "access": "member"
+    }
   }
 }
