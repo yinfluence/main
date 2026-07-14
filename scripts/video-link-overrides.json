@@ -787,6 +787,10 @@
       "platform": "bilibili",
       "url": "https://www.bilibili.com/video/BV1bBNy6XEin/",
       "access": "member"
+    },
+    "youtube": {
+      "platform": "youtube",
+      "url": "https://www.youtube.com/watch?v=Hy3LIWBmDDE"
     }
   }
 }
