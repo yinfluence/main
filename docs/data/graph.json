@@ -2,14 +2,14 @@
   "meta": {
     "title": "颖响力知识图谱",
     "subtitle": "节目、概念、模型、人物、主题之间的可视化连接网络",
-    "nodeCount": 603,
-    "linkCount": 1428,
+    "nodeCount": 606,
+    "linkCount": 1434,
     "typeCounts": {
       "model": 77,
-      "person": 65,
       "theme": 91,
-      "concept": 188,
-      "episode": 182
+      "person": 65,
+      "concept": 190,
+      "episode": 183
     }
   },
   "nodes": [
@@ -25,17 +25,6 @@
       "degree": 39
     },
     {
-      "id": "person:donald-trump",
-      "key": "donald-trump",
-      "label": "特朗普",
-      "fullLabel": "特朗普",
-      "type": "person",
-      "route": "people/donald-trump",
-      "summary": "特朗普是美国共和党政治人物、第45任与第47任美国总统，节目借他观察美国战略收缩、成本转嫁和规则重定价。",
-      "status": null,
-      "degree": 20
-    },
-    {
       "id": "theme:singapore-and-small-state-survival",
       "key": "singapore-and-small-state-survival",
       "label": "新加坡与小国生存术",
@@ -43,6 +32,17 @@
       "type": "theme",
       "route": "themes/singapore-and-small-state-survival",
       "summary": "讨论新加坡如何把规则、海峡、人才和谨慎外交组合成一套小国长期生存方法。",
+      "status": null,
+      "degree": 21
+    },
+    {
+      "id": "person:donald-trump",
+      "key": "donald-trump",
+      "label": "特朗普",
+      "fullLabel": "特朗普",
+      "type": "person",
+      "route": "people/donald-trump",
+      "summary": "特朗普是美国共和党政治人物、第45任与第47任美国总统，节目借他观察美国战略收缩、成本转嫁和规则重定价。",
       "status": null,
       "degree": 20
     },
@@ -707,6 +707,17 @@
       "degree": 10
     },
     {
+      "id": "model:institutional-fit",
+      "key": "institutional-fit",
+      "label": "制度适配",
+      "fullLabel": "制度适配",
+      "type": "model",
+      "route": "models/institutional-fit",
+      "summary": "制度适配解释能力能否兑现，取决于组织被放在怎样的法律、资本和治理环境中。",
+      "status": null,
+      "degree": 10
+    },
+    {
       "id": "concept:active-neutrality",
       "key": "active-neutrality",
       "label": "主动中立",
@@ -824,17 +835,6 @@
       "type": "theme",
       "route": "themes/state-business-entanglement",
       "summary": "讨论企业如何依赖地方政府、国资平台或关系结构续命，以及这种绑定如何反过来改写企业目标。",
-      "status": null,
-      "degree": 9
-    },
-    {
-      "id": "model:institutional-fit",
-      "key": "institutional-fit",
-      "label": "制度适配",
-      "fullLabel": "制度适配",
-      "type": "model",
-      "route": "models/institutional-fit",
-      "summary": "制度适配解释能力能否兑现，取决于组织被放在怎样的法律、资本和治理环境中。",
       "status": null,
       "degree": 9
     },
@@ -1033,6 +1033,17 @@
       "type": "concept",
       "route": "concepts/gray-oil-network",
       "summary": "绕开正规结算和监管的石油流动，会在影子体系中重塑货币、制裁和地缘利益。",
+      "status": null,
+      "degree": 8
+    },
+    {
+      "id": "person:lee-kuan-yew",
+      "key": "lee-kuan-yew",
+      "label": "李光耀",
+      "fullLabel": "李光耀",
+      "type": "person",
+      "route": "people/lee-kuan-yew",
+      "summary": "李光耀是新加坡建国总理，节目借他说明新加坡国家身份、国家责任和小国生存决心怎样压过祖籍血缘与软弱叙事。",
       "status": null,
       "degree": 8
     },
@@ -1484,17 +1495,6 @@
       "type": "concept",
       "route": "concepts/phantom-growth",
       "summary": "系统通过报表、交易、融资和场面把增长做出来，但真实产业和真实利润并没有同步长出来。",
-      "status": null,
-      "degree": 7
-    },
-    {
-      "id": "person:lee-kuan-yew",
-      "key": "lee-kuan-yew",
-      "label": "李光耀",
-      "fullLabel": "李光耀",
-      "type": "person",
-      "route": "people/lee-kuan-yew",
-      "summary": "李光耀是新加坡建国总理，节目借他说明新加坡国家身份、国家责任和小国生存决心怎样压过祖籍血缘与软弱叙事。",
       "status": null,
       "degree": 7
     },
@@ -2309,6 +2309,17 @@
       "type": "episode",
       "route": "episodes/EP171",
       "summary": "本期复盘中新合作的标杆——苏州工业园区，回答一个被辉煌掩盖的问题：这个常年位居全国开发区榜首的园区，当年到底是怎么来的。节目拆成三条线：邓公南巡后地方政府求发展的招商热、苏州市长追车三问击败无锡抢下项目的争夺战，以及新加坡为何不远千里入局——不是单纯赚钱，而是为几十年双边绑定布局。最核心的落点是新加坡的前瞻性：花 3000 万做整体规划、把 8 平方公里土地垫高 70 公分，硬扛住 1998 特大洪水。节目用它对照中国当年先招商后建厂的急功近利，点出长期主义与短期思维的格局差距，也强调这是苏州的开放诚意和新加坡远见共同成就的双向结果。",
+      "status": "curated",
+      "degree": 6
+    },
+    {
+      "id": "episode:EP183",
+      "key": "EP183",
+      "label": "EP183",
+      "fullLabel": "EP183 · 中新苏州工业园区续集。李光耀的遗憾，新加坡合作毁于苏州关门打狗？",
+      "type": "episode",
+      "route": "episodes/EP183",
+      "summary": "上一期 EP171 讲了苏州工业园区的诞生，这一期接着讲它后来的波折：开发主体中新集团的股权从新加坡持股65%一路调整为中方65%，再稀释到今天的25%左右，李光耀也在回忆录里留下打70分、惩罚性试验这样的评价。节目复盘这场变局的三个成因：苏州一市两强的同质竞争让园区被自家兄弟截胡，新加坡管理软件在中国行政体制下水土不服，以及李光耀主动提出股权置换来止损。落点是替关门打狗翻案——这不是苏州设局逼退，而是双方都没预料到的制度错配，2009年李光耀亲口说选择苏州是正确的。",
       "status": "curated",
       "degree": 6
     },
@@ -4755,6 +4766,17 @@
       "degree": 2
     },
     {
+      "id": "concept:long-termism",
+      "key": "long-termism",
+      "label": "长期主义",
+      "fullLabel": "长期主义",
+      "type": "concept",
+      "route": "concepts/long-termism",
+      "summary": "以几十年甚至百年为尺度做决策，前期为长远格局多花成本、多做规划，而不是被短期利益和政绩驱动。",
+      "status": null,
+      "degree": 2
+    },
+    {
       "id": "concept:metric-locking",
       "key": "metric-locking",
       "label": "指标锁死",
@@ -6086,6 +6108,17 @@
       "degree": 1
     },
     {
+      "id": "concept:homogeneous-competition",
+      "key": "homogeneous-competition",
+      "label": "同质竞争",
+      "fullLabel": "同质竞争",
+      "type": "concept",
+      "route": "concepts/homogeneous-competition",
+      "summary": "同一行政区或同一市场里，两个功能重叠的主体争夺同一批资源时，胜负往往由谁获得体制支持决定，而不是谁质量更好。",
+      "status": null,
+      "degree": 1
+    },
+    {
       "id": "concept:land-recycling-housing",
       "key": "land-recycling-housing",
       "label": "土地循环住房",
@@ -6471,17 +6504,6 @@
       "degree": 1
     },
     {
-      "id": "concept:long-termism",
-      "key": "long-termism",
-      "label": "长期主义",
-      "fullLabel": "长期主义",
-      "type": "concept",
-      "route": "concepts/long-termism",
-      "summary": "以几十年甚至百年为尺度做决策，前期为长远格局多花成本、多做规划，而不是被短期利益和政绩驱动。",
-      "status": null,
-      "degree": 1
-    },
-    {
       "id": "person:zhao-kechang",
       "key": "zhao-kechang",
       "label": "赵克长",
@@ -6533,6 +6555,17 @@
       "type": "concept",
       "route": "concepts/direct-transfer-consumption",
       "summary": "现金直接到普通人手里，会进入日常消费毛细血管，形成朴素但真实的循环。",
+      "status": null,
+      "degree": 1
+    },
+    {
+      "id": "concept:institutional-software-transfer",
+      "key": "institutional-software-transfer",
+      "label": "制度软件移植",
+      "fullLabel": "制度软件移植",
+      "type": "concept",
+      "route": "concepts/institutional-software-transfer",
+      "summary": "把治理体系拆成硬件与软件两层：土地、规划、基建可以整体搬运，管理制度背后的人的意识和行政逻辑却难以跨体制移植。",
       "status": null,
       "degree": 1
     },
@@ -13556,6 +13589,36 @@
     {
       "source": "episode:EP182",
       "target": "theme:rule-of-law-boundaries-and-social-trust",
+      "kind": "episode-theme"
+    },
+    {
+      "source": "episode:EP183",
+      "target": "concept:long-termism",
+      "kind": "episode-concept"
+    },
+    {
+      "source": "episode:EP183",
+      "target": "concept:homogeneous-competition",
+      "kind": "episode-concept"
+    },
+    {
+      "source": "episode:EP183",
+      "target": "concept:institutional-software-transfer",
+      "kind": "episode-concept"
+    },
+    {
+      "source": "episode:EP183",
+      "target": "model:institutional-fit",
+      "kind": "episode-model"
+    },
+    {
+      "source": "episode:EP183",
+      "target": "person:lee-kuan-yew",
+      "kind": "episode-person"
+    },
+    {
+      "source": "episode:EP183",
+      "target": "theme:singapore-and-small-state-survival",
       "kind": "episode-theme"
     },
     {
