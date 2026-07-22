@@ -27,6 +27,19 @@ const HOME_PLATFORM_LINKS = [
 const WEBSITE_LOG_ENTRIES = [
   {
     date: '2026-07-22',
+    title: '新增 EP187 电车圈18亿巨亏撕开真相，华删派气宗躺赢，剑宗小厮自宫造车，还要含泪背所有的锅。',
+    items: [
+      '新增 EP187《电车圈18亿巨亏撕开真相，华删派气宗躺赢，剑宗小厮自宫造车，还要含泪背所有的锅。》，B 站经接口 is_upower_exclusive=false、合集 attribute=0 核实为普通视频（蓝色入口），YouTube 入口正常（标题取｜前主标题、按 SOP 转简体，尾巴关键词进 tags），两条链接写入 videoLinks 并同步 video-link-overrides，publishedAt 取 B 站 pubdate 2026-07-21。',
+      '本期字幕首次由整理者自行获取：经 B 站 AI 字幕接口下载 696 条字幕并转为标准 SRT 存入 raw/；同时验证了 yt-dlp --cookies-from-browser chrome 可直接列出并下载 B 站 ai-zh 字幕轨，后续新节目可自助获取字幕。',
+      '本期沿用笑傲江湖化名体系（承接 EP153 华山派、EP080/EP170 福威镖局）拆华山派与剑宗小厮的合作模式：三笔前置供奉（硬件款、2% 授权费、8% 渠道费，单车 13-14 万先行落袋）旱涝保收，两层隔离墙（法律股权切割、地方政府对赌切割）片叶不沾身；对比苹果代工与苏联加盟共和国两种参照。化名影射与数字口径已在节目页边界注明。',
+      '新增概念页：前置抽成（upfront-rent-extraction）、责任隔离墙（liability-firewall）、依附型企业（dependent-enterprise）。',
+      '新增关键词词条：依附型车企（概念）、供奉（概念）、隔离墙（机制）、苏联加盟共和国（概念）。',
+      '回填到已有节点：概念 生产端风险外包；模型 风险转移链条；主题 新能源崩塌与退出风险、政企嵌入与企业存续；关键词 华山派、福威镖局、韬定律、新能源汽车。',
+      '相关节目串联 EP080、EP125、EP131、EP153、EP170、EP176，把华山派芯片韬定律、福威镖局车圈线和风险下沉线接到本期。'
+    ]
+  },
+  {
+    date: '2026-07-22',
     title: '新增 EP186 百年大火里的选择题：人命、效率与一个国家的出路……',
     items: [
       '新增 EP186《百年大火里的选择题：人命、效率与一个国家的出路……》，B 站经接口 is_upower_exclusive=false、合集 attribute=0 核实为普通视频（蓝色入口），YouTube 入口正常（标题按 SOP 取｜前主标题并转简体），两条链接写入 videoLinks 并同步 video-link-overrides，publishedAt 取 B 站 pubdate 2026-07-20。',

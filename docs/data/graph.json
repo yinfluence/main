@@ -2,14 +2,14 @@
   "meta": {
     "title": "颖响力知识图谱",
     "subtitle": "节目、概念、模型、人物、主题之间的可视化连接网络",
-    "nodeCount": 617,
-    "linkCount": 1462,
+    "nodeCount": 621,
+    "linkCount": 1469,
     "typeCounts": {
       "model": 77,
       "theme": 91,
       "person": 65,
-      "concept": 198,
-      "episode": 186
+      "concept": 201,
+      "episode": 187
     }
   },
   "nodes": [
@@ -22,7 +22,7 @@
       "route": "models/risk-transfer-chain",
       "summary": "系统不会立刻吞下风险，而是先沿着银行、企业、票据、供应链和普通人之间不断转手、延后和下沉。",
       "status": null,
-      "degree": 39
+      "degree": 40
     },
     {
       "id": "theme:singapore-and-small-state-survival",
@@ -454,6 +454,17 @@
       "degree": 12
     },
     {
+      "id": "theme:ev-collapse-and-exit-risk",
+      "key": "ev-collapse-and-exit-risk",
+      "label": "新能源崩塌与退出风险",
+      "fullLabel": "新能源崩塌与退出风险",
+      "type": "theme",
+      "route": "themes/ev-collapse-and-exit-risk",
+      "summary": "聚焦新能源项目在失速、清算和品牌出清阶段，风险如何向债权人、用户和地方政府层层传导。",
+      "status": null,
+      "degree": 12
+    },
+    {
       "id": "episode:EP130",
       "key": "EP130",
       "label": "EP130",
@@ -597,17 +608,6 @@
       "degree": 11
     },
     {
-      "id": "theme:ev-collapse-and-exit-risk",
-      "key": "ev-collapse-and-exit-risk",
-      "label": "新能源崩塌与退出风险",
-      "fullLabel": "新能源崩塌与退出风险",
-      "type": "theme",
-      "route": "themes/ev-collapse-and-exit-risk",
-      "summary": "聚焦新能源项目在失速、清算和品牌出清阶段，风险如何向债权人、用户和地方政府层层传导。",
-      "status": null,
-      "degree": 11
-    },
-    {
       "id": "model:narrative-leverage",
       "key": "narrative-leverage",
       "label": "叙事杠杆",
@@ -729,6 +729,17 @@
       "degree": 10
     },
     {
+      "id": "theme:state-business-entanglement",
+      "key": "state-business-entanglement",
+      "label": "政企嵌入与企业存续",
+      "fullLabel": "政企嵌入与企业存续",
+      "type": "theme",
+      "route": "themes/state-business-entanglement",
+      "summary": "讨论企业如何依赖地方政府、国资平台或关系结构续命，以及这种绑定如何反过来改写企业目标。",
+      "status": null,
+      "degree": 10
+    },
+    {
       "id": "model:institutional-fit",
       "key": "institutional-fit",
       "label": "制度适配",
@@ -846,17 +857,6 @@
       "type": "model",
       "route": "models/small-state-balancing-model",
       "summary": "小国平衡术解释小国在大国之间维持生存空间，靠位置、合法性和现实利益而非纯姿态。",
-      "status": null,
-      "degree": 9
-    },
-    {
-      "id": "theme:state-business-entanglement",
-      "key": "state-business-entanglement",
-      "label": "政企嵌入与企业存续",
-      "fullLabel": "政企嵌入与企业存续",
-      "type": "theme",
-      "route": "themes/state-business-entanglement",
-      "summary": "讨论企业如何依赖地方政府、国资平台或关系结构续命，以及这种绑定如何反过来改写企业目标。",
       "status": null,
       "degree": 9
     },
@@ -1935,6 +1935,17 @@
       "type": "episode",
       "route": "episodes/EP186",
       "summary": "1911 年纽约三角内衣厂大火烧死 146 名年轻女工：逃生门被老板锁死、云梯只够到七楼、两位老板无罪释放还靠保险赚了 3 万美元。这期用这场大火讲美国怎么走出镀金时代——独立调查委员会催生 61 条安全法律，目击者帕金斯二十年后作为首位女性内阁成员把工时、最低工资和社会保障写进罗斯福新政，在苏联式革命和法西斯化之间蹚出第三条路：把钱还给工人、培育国内消费市场。落点是那条红线——生命与尊严永远排在效率前面，而今天的社会似乎又走到了同样的十字路口。",
+      "status": "curated",
+      "degree": 7
+    },
+    {
+      "id": "episode:EP187",
+      "key": "EP187",
+      "label": "EP187",
+      "fullLabel": "EP187 · 电车圈18亿巨亏撕开真相，华删派气宗躺赢，剑宗小厮自宫造车，还要含泪背所有的锅。",
+      "type": "episode",
+      "route": "episodes/EP187",
+      "summary": "某车企公布半年预亏 15 到 18 亿，旗下某界交付量却涨了 10%、还霸着豪华 SUV 销冠——卖得越多亏得越多。这期沿用笑傲江湖的化名拆华山派与剑宗小厮的合作模式：硬件采购、技术授权费、渠道服务费三笔前置刚性供奉，单车 13 到 14 万先进气宗的兜，收益挂销量、与车企盈亏脱钩；法律股权与地方政府对赌两层隔离墙，把重资产、价格战、出海受限的全部风险焊在小厮身上。节目判断这不是苹果代工模式，更像苏联与加盟共和国——依附型车企的处境，是所有制造业小老板的缩影。",
       "status": "curated",
       "degree": 7
     },
@@ -3798,6 +3809,17 @@
       "degree": 3
     },
     {
+      "id": "concept:production-risk-outsourcing",
+      "key": "production-risk-outsourcing",
+      "label": "生产端风险外包",
+      "fullLabel": "生产端风险外包",
+      "type": "concept",
+      "route": "concepts/production-risk-outsourcing",
+      "summary": "平台和中间层把库存、投流、合规和现金流风险持续压给生产端。",
+      "status": null,
+      "degree": 3
+    },
+    {
       "id": "concept:market-discipline-failure",
       "key": "market-discipline-failure",
       "label": "市场惩戒失效",
@@ -4586,17 +4608,6 @@
       "type": "concept",
       "route": "concepts/aesthetic-compression",
       "summary": "社会越功利和高压，审美、协商与细腻判断越容易被压缩成粗糙标准。",
-      "status": null,
-      "degree": 2
-    },
-    {
-      "id": "concept:production-risk-outsourcing",
-      "key": "production-risk-outsourcing",
-      "label": "生产端风险外包",
-      "fullLabel": "生产端风险外包",
-      "type": "concept",
-      "route": "concepts/production-risk-outsourcing",
-      "summary": "平台和中间层把库存、投流、合规和现金流风险持续压给生产端。",
       "status": null,
       "degree": 2
     },
@@ -5932,6 +5943,17 @@
       "degree": 1
     },
     {
+      "id": "concept:upfront-rent-extraction",
+      "key": "upfront-rent-extraction",
+      "label": "前置抽成",
+      "fullLabel": "前置抽成",
+      "type": "concept",
+      "route": "concepts/upfront-rent-extraction",
+      "summary": "平台或技术方在合作方见到利润之前，先按销量刚性抽走硬件款、授权费和渠道费——收益挂销量、与对方盈亏彻底脱钩。",
+      "status": null,
+      "degree": 1
+    },
+    {
       "id": "theme:intimate-relationships-and-asset-repricing",
       "key": "intimate-relationships-and-asset-repricing",
       "label": "亲密关系与资产再定价",
@@ -6482,6 +6504,17 @@
       "degree": 1
     },
     {
+      "id": "concept:dependent-enterprise",
+      "key": "dependent-enterprise",
+      "label": "依附型企业",
+      "fullLabel": "依附型企业",
+      "type": "concept",
+      "route": "concepts/dependent-enterprise",
+      "summary": "靠巨头授权生存的企业：只有使用权没有所有权、没有独立出海权、可替代性随同类依附者增加而归零，却承接巨头不要的全部风险。",
+      "status": null,
+      "degree": 1
+    },
+    {
       "id": "theme:pandemic-wealth-and-public-costs",
       "key": "pandemic-wealth-and-public-costs",
       "label": "疫情财富与公共代价",
@@ -6555,6 +6588,17 @@
       "type": "person",
       "route": "people/yu-liang",
       "summary": "郁亮曾长期任万科核心管理层，节目借他观察职业经理人继承、内部金融平台和万科空心化风险。",
+      "status": null,
+      "degree": 1
+    },
+    {
+      "id": "concept:liability-firewall",
+      "key": "liability-firewall",
+      "label": "责任隔离墙",
+      "fullLabel": "责任隔离墙",
+      "type": "concept",
+      "route": "concepts/liability-firewall",
+      "summary": "强势方通过不持股、不担保、不当协议主体，把债务、对赌和经营风险全部隔在墙外，自己片叶不沾身。",
       "status": null,
       "degree": 1
     },
@@ -13880,6 +13924,41 @@
     {
       "source": "episode:EP186",
       "target": "theme:rule-of-law-boundaries-and-social-trust",
+      "kind": "episode-theme"
+    },
+    {
+      "source": "episode:EP187",
+      "target": "concept:upfront-rent-extraction",
+      "kind": "episode-concept"
+    },
+    {
+      "source": "episode:EP187",
+      "target": "concept:liability-firewall",
+      "kind": "episode-concept"
+    },
+    {
+      "source": "episode:EP187",
+      "target": "concept:dependent-enterprise",
+      "kind": "episode-concept"
+    },
+    {
+      "source": "episode:EP187",
+      "target": "concept:production-risk-outsourcing",
+      "kind": "episode-concept"
+    },
+    {
+      "source": "episode:EP187",
+      "target": "model:risk-transfer-chain",
+      "kind": "episode-model"
+    },
+    {
+      "source": "episode:EP187",
+      "target": "theme:ev-collapse-and-exit-risk",
+      "kind": "episode-theme"
+    },
+    {
+      "source": "episode:EP187",
+      "target": "theme:state-business-entanglement",
       "kind": "episode-theme"
     },
     {

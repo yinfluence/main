@@ -834,5 +834,15 @@
       "platform": "youtube",
       "url": "https://www.youtube.com/watch?v=R-n-ykmRG4o"
     }
+  },
+  "EP187": {
+    "bilibili": {
+      "platform": "bilibili",
+      "url": "https://www.bilibili.com/video/BV1hZKh6xEnV/"
+    },
+    "youtube": {
+      "platform": "youtube",
+      "url": "https://www.youtube.com/watch?v=pPbhSNbzI24"
+    }
   }
 }
