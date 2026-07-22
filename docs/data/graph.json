@@ -2,14 +2,14 @@
   "meta": {
     "title": "颖响力知识图谱",
     "subtitle": "节目、概念、模型、人物、主题之间的可视化连接网络",
-    "nodeCount": 613,
-    "linkCount": 1455,
+    "nodeCount": 617,
+    "linkCount": 1462,
     "typeCounts": {
       "model": 77,
       "theme": 91,
       "person": 65,
-      "concept": 195,
-      "episode": 185
+      "concept": 198,
+      "episode": 186
     }
   },
   "nodes": [
@@ -553,6 +553,17 @@
       "degree": 11
     },
     {
+      "id": "theme:rule-of-law-boundaries-and-social-trust",
+      "key": "rule-of-law-boundaries-and-social-trust",
+      "label": "法治边界与社会信任",
+      "fullLabel": "法治边界与社会信任",
+      "type": "theme",
+      "route": "themes/rule-of-law-boundaries-and-social-trust",
+      "summary": "关注法律灰区如何影响公众的善意、风险感和彼此信任。",
+      "status": null,
+      "degree": 11
+    },
+    {
       "id": "theme:real-estate-deleveraging",
       "key": "real-estate-deleveraging",
       "label": "房地产去杠杆与风险出清",
@@ -705,17 +716,6 @@
       "summary": "香港超过瑞士和新加坡成为全球第一大离岸财富管理中心，财经媒体一片造势，这期泼了盆冷水：这不是全球资本涌向香港，而是东大财富溢出的集散地。节目拆开资金来源——内地占六成，主力是后知后觉的中小老板和围绕公务体系的新中产，台湾资金和回流的灰色贸易资金补足其余；再点破认知误区：把钱挪到香港只是从一个棋盘跳进另一个监管更快的棋盘，监管备好的框迟早统一收网。落点是资产安全从来不靠挪位置，靠的是干净的底子、清晰的架构和个人格局。",
       "status": "curated",
       "degree": 11
-    },
-    {
-      "id": "theme:rule-of-law-boundaries-and-social-trust",
-      "key": "rule-of-law-boundaries-and-social-trust",
-      "label": "法治边界与社会信任",
-      "fullLabel": "法治边界与社会信任",
-      "type": "theme",
-      "route": "themes/rule-of-law-boundaries-and-social-trust",
-      "summary": "关注法律灰区如何影响公众的善意、风险感和彼此信任。",
-      "status": null,
-      "degree": 10
     },
     {
       "id": "theme:dollar-system-and-gray-trade",
@@ -1928,6 +1928,17 @@
       "degree": 7
     },
     {
+      "id": "episode:EP186",
+      "key": "EP186",
+      "label": "EP186",
+      "fullLabel": "EP186 · 百年大火里的选择题：人命、效率与一个国家的出路……",
+      "type": "episode",
+      "route": "episodes/EP186",
+      "summary": "1911 年纽约三角内衣厂大火烧死 146 名年轻女工：逃生门被老板锁死、云梯只够到七楼、两位老板无罪释放还靠保险赚了 3 万美元。这期用这场大火讲美国怎么走出镀金时代——独立调查委员会催生 61 条安全法律，目击者帕金斯二十年后作为首位女性内阁成员把工时、最低工资和社会保障写进罗斯福新政，在苏联式革命和法西斯化之间蹚出第三条路：把钱还给工人、培育国内消费市场。落点是那条红线——生命与尊严永远排在效率前面，而今天的社会似乎又走到了同样的十字路口。",
+      "status": "curated",
+      "degree": 7
+    },
+    {
       "id": "concept:refuge-premium",
       "key": "refuge-premium",
       "label": "避险溢价",
@@ -2522,6 +2533,17 @@
       "degree": 5
     },
     {
+      "id": "model:ex-post-accountability-governance",
+      "key": "ex-post-accountability-governance",
+      "label": "事后追责治理模型",
+      "fullLabel": "事后追责治理模型",
+      "type": "model",
+      "route": "models/ex-post-accountability-governance",
+      "summary": "治理可以选择事前管制每个人，也可以选择给自由、事后对违规者施加无法承受的代价；后者往往比前者更省成本也更有效。",
+      "status": null,
+      "degree": 5
+    },
+    {
       "id": "concept:pressure-backfire",
       "key": "pressure-backfire",
       "label": "外压反噬",
@@ -3083,17 +3105,6 @@
       "degree": 4
     },
     {
-      "id": "model:ex-post-accountability-governance",
-      "key": "ex-post-accountability-governance",
-      "label": "事后追责治理模型",
-      "fullLabel": "事后追责治理模型",
-      "type": "model",
-      "route": "models/ex-post-accountability-governance",
-      "summary": "治理可以选择事前管制每个人，也可以选择给自由、事后对违规者施加无法承受的代价；后者往往比前者更省成本也更有效。",
-      "status": null,
-      "degree": 4
-    },
-    {
       "id": "concept:sample-production-gap",
       "key": "sample-production-gap",
       "label": "送检量产分裂",
@@ -3567,6 +3578,17 @@
       "degree": 3
     },
     {
+      "id": "model:human-contract-model",
+      "key": "human-contract-model",
+      "label": "国家信用契约模型",
+      "fullLabel": "国家信用契约模型",
+      "type": "model",
+      "route": "models/human-contract-model",
+      "summary": "国家信用契约模型解释国家对个体生命的兜底能力如何转化为长期制度信用。",
+      "status": null,
+      "degree": 3
+    },
+    {
       "id": "concept:sea-laundering",
       "key": "sea-laundering",
       "label": "海上洗白",
@@ -3772,6 +3794,17 @@
       "type": "theme",
       "route": "themes/platform-traffic-and-price-distortion",
       "summary": "当平台把巨量流量集中到极少数节点，价格、信誉和真伪判断都会开始向流量中心倾斜。",
+      "status": null,
+      "degree": 3
+    },
+    {
+      "id": "concept:market-discipline-failure",
+      "key": "market-discipline-failure",
+      "label": "市场惩戒失效",
+      "fullLabel": "市场惩戒失效",
+      "type": "concept",
+      "route": "concepts/market-discipline-failure",
+      "summary": "市场惩戒失效指规则被明显挑战后，法律、监管、审计和价格反应都没有让违规者付出足够代价。",
       "status": null,
       "degree": 3
     },
@@ -4304,17 +4337,6 @@
       "degree": 2
     },
     {
-      "id": "model:human-contract-model",
-      "key": "human-contract-model",
-      "label": "国家信用契约模型",
-      "fullLabel": "国家信用契约模型",
-      "type": "model",
-      "route": "models/human-contract-model",
-      "summary": "国家信用契约模型解释国家对个体生命的兜底能力如何转化为长期制度信用。",
-      "status": null,
-      "degree": 2
-    },
-    {
       "id": "concept:state-share-time-bomb",
       "key": "state-share-time-bomb",
       "label": "国资定时炸弹",
@@ -4597,17 +4619,6 @@
       "type": "concept",
       "route": "concepts/time-window-reading",
       "summary": "同一动作在不同周期中的意义不同，判断决策必须先看它发生在哪个时间窗口。",
-      "status": null,
-      "degree": 2
-    },
-    {
-      "id": "concept:market-discipline-failure",
-      "key": "market-discipline-failure",
-      "label": "市场惩戒失效",
-      "fullLabel": "市场惩戒失效",
-      "type": "concept",
-      "route": "concepts/market-discipline-failure",
-      "summary": "市场惩戒失效指规则被明显挑战后，法律、监管、审计和价格反应都没有让违规者付出足够代价。",
       "status": null,
       "degree": 2
     },
@@ -5283,6 +5294,17 @@
       "degree": 1
     },
     {
+      "id": "concept:wage-demand-loop",
+      "key": "wage-demand-loop",
+      "label": "工资需求循环",
+      "fullLabel": "工资需求循环",
+      "type": "concept",
+      "route": "concepts/wage-demand-loop",
+      "summary": "工人的工资既是企业的成本，也是整个经济的购买力；把工资压到底，毁掉的是消费市场和经济循环本身。",
+      "status": null,
+      "degree": 1
+    },
+    {
       "id": "model:rule-charity-bridge",
       "key": "rule-charity-bridge",
       "label": "规则善意桥接模型",
@@ -5686,6 +5708,17 @@
       "type": "person",
       "route": "people/li-yapeng",
       "summary": "李亚鹏是演员转型的创业者和公益行动者，节目借嫣然天使儿童医院重新讨论商业成败之外的公共价值。",
+      "status": null,
+      "degree": 1
+    },
+    {
+      "id": "concept:pendulum-trap",
+      "key": "pendulum-trap",
+      "label": "两极摇摆困局",
+      "fullLabel": "两极摇摆困局",
+      "type": "concept",
+      "route": "concepts/pendulum-trap",
+      "summary": "社会在不公的自由与低效的监管之间来回摆动，两头挨打的都是普通人；破局靠的不是选边，而是一条生命尊严优先的红线。",
       "status": null,
       "degree": 1
     },
@@ -6379,6 +6412,17 @@
       "type": "concept",
       "route": "concepts/academic-shell-game",
       "summary": "学术头衔、行政位置和包装替代真实教学研究时，大学会出现知识空壳化。",
+      "status": null,
+      "degree": 1
+    },
+    {
+      "id": "concept:blood-written-rules",
+      "key": "blood-written-rules",
+      "label": "血写的规则",
+      "fullLabel": "血写的规则",
+      "type": "concept",
+      "route": "concepts/blood-written-rules",
+      "summary": "习以为常的安全规范不是天生的官僚条文，而是灾难死亡换来的制度沉淀；忘掉来历，红线就会被当成可优化的成本。",
       "status": null,
       "degree": 1
     },
@@ -13801,6 +13845,41 @@
     {
       "source": "episode:EP185",
       "target": "theme:singapore-and-small-state-survival",
+      "kind": "episode-theme"
+    },
+    {
+      "source": "episode:EP186",
+      "target": "concept:blood-written-rules",
+      "kind": "episode-concept"
+    },
+    {
+      "source": "episode:EP186",
+      "target": "concept:wage-demand-loop",
+      "kind": "episode-concept"
+    },
+    {
+      "source": "episode:EP186",
+      "target": "concept:pendulum-trap",
+      "kind": "episode-concept"
+    },
+    {
+      "source": "episode:EP186",
+      "target": "concept:market-discipline-failure",
+      "kind": "episode-concept"
+    },
+    {
+      "source": "episode:EP186",
+      "target": "model:human-contract-model",
+      "kind": "episode-model"
+    },
+    {
+      "source": "episode:EP186",
+      "target": "model:ex-post-accountability-governance",
+      "kind": "episode-model"
+    },
+    {
+      "source": "episode:EP186",
+      "target": "theme:rule-of-law-boundaries-and-social-trust",
       "kind": "episode-theme"
     },
     {
