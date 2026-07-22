@@ -66,8 +66,7 @@
   "videoLinks": [
     {
       "platform": "bilibili",
-      "url": "https://www.bilibili.com/video/BV18oMu6eEXu/",
-      "access": "member"
+      "url": "https://www.bilibili.com/video/BV18oMu6eEXu/"
     },
     {
       "platform": "youtube",

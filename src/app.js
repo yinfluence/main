@@ -27,6 +27,15 @@ const HOME_PLATFORM_LINKS = [
 const WEBSITE_LOG_ENTRIES = [
   {
     date: '2026-07-22',
+    title: '会员状态修正：EP162 转充电专属、EP176 转普通；新增 AI 字幕自助获取脚本',
+    items: [
+      '经 B 站接口复核发现两期视频的充电专属状态发生漂移：EP162 库里标普通、实际 is_upower_exclusive=true，改为金色会员入口；EP176 库里标会员、实际已转普通视频，改为蓝色普通入口。两期均已同步 video-link-overrides，防止后续批量同步回退。',
+      '新增 scripts/fetch-ai-subtitle.py：通过 wbi 签名接口后台直接获取 B 站 AI 字幕（ai-zh）并转标准 SRT，普通视频无需浏览器和人工抓包；充电专属视频在账号无充电权限时接口不返回字幕轨，属已知限制。',
+      '用该链路补齐 8 期历史原始字幕入 raw/（EP125、EP143、EP144、EP146、EP156、EP158、EP171、EP176）；其余 6 期（EP135、EP138、EP145、EP152、EP154、EP162）为充电专属，待账号充电后再补。'
+    ]
+  },
+  {
+    date: '2026-07-22',
     title: '新增 EP187 电车圈18亿巨亏撕开真相，华删派气宗躺赢，剑宗小厮自宫造车，还要含泪背所有的锅。',
     items: [
       '新增 EP187《电车圈18亿巨亏撕开真相，华删派气宗躺赢，剑宗小厮自宫造车，还要含泪背所有的锅。》，B 站经接口 is_upower_exclusive=false、合集 attribute=0 核实为普通视频（蓝色入口），YouTube 入口正常（标题取｜前主标题、按 SOP 转简体，尾巴关键词进 tags），两条链接写入 videoLinks 并同步 video-link-overrides，publishedAt 取 B 站 pubdate 2026-07-21。',

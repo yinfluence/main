@@ -2,8 +2,7 @@
   "EP176": {
     "bilibili": {
       "platform": "bilibili",
-      "url": "https://www.bilibili.com/video/BV18oMu6eEXu/",
-      "access": "member"
+      "url": "https://www.bilibili.com/video/BV18oMu6eEXu/"
     },
     "youtube": {
       "platform": "youtube",
@@ -843,6 +842,13 @@
     "youtube": {
       "platform": "youtube",
       "url": "https://www.youtube.com/watch?v=pPbhSNbzI24"
+    }
+  },
+  "EP162": {
+    "bilibili": {
+      "platform": "bilibili",
+      "url": "https://www.bilibili.com/video/BV1RKJV65EJX/",
+      "access": "member"
     }
   }
 }

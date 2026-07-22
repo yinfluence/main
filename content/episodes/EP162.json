@@ -8,7 +8,8 @@
   "videoLinks": [
     {
       "platform": "bilibili",
-      "url": "https://www.bilibili.com/video/BV1RKJV65EJX/"
+      "url": "https://www.bilibili.com/video/BV1RKJV65EJX/",
+      "access": "member"
     }
   ],
   "tags": [
