@@ -2,14 +2,14 @@
   "meta": {
     "title": "颖响力知识图谱",
     "subtitle": "节目、概念、模型、人物、主题之间的可视化连接网络",
-    "nodeCount": 606,
-    "linkCount": 1434,
+    "nodeCount": 609,
+    "linkCount": 1444,
     "typeCounts": {
       "model": 77,
       "theme": 91,
       "person": 65,
-      "concept": 190,
-      "episode": 183
+      "concept": 192,
+      "episode": 184
     }
   },
   "nodes": [
@@ -696,6 +696,17 @@
       "degree": 11
     },
     {
+      "id": "theme:rule-of-law-boundaries-and-social-trust",
+      "key": "rule-of-law-boundaries-and-social-trust",
+      "label": "法治边界与社会信任",
+      "fullLabel": "法治边界与社会信任",
+      "type": "theme",
+      "route": "themes/rule-of-law-boundaries-and-social-trust",
+      "summary": "关注法律灰区如何影响公众的善意、风险感和彼此信任。",
+      "status": null,
+      "degree": 10
+    },
+    {
       "id": "theme:dollar-system-and-gray-trade",
       "key": "dollar-system-and-gray-trade",
       "label": "美元体系与灰色贸易",
@@ -784,15 +795,15 @@
       "degree": 10
     },
     {
-      "id": "theme:rule-of-law-boundaries-and-social-trust",
-      "key": "rule-of-law-boundaries-and-social-trust",
-      "label": "法治边界与社会信任",
-      "fullLabel": "法治边界与社会信任",
-      "type": "theme",
-      "route": "themes/rule-of-law-boundaries-and-social-trust",
-      "summary": "关注法律灰区如何影响公众的善意、风险感和彼此信任。",
-      "status": null,
-      "degree": 9
+      "id": "episode:EP184",
+      "key": "EP184",
+      "label": "EP184",
+      "fullLabel": "EP184 · 霸占他人车位为何不能执法只能“找单位”？长沙彭女士“威风”谁给的？",
+      "type": "episode",
+      "route": "episodes/EP184",
+      "summary": "长沙彭女士占用他人车位，六轮协查调解全部无效，单位一出意见立马道歉，这期从这个反差切入。节目拆出三层问题：公职人员怕单位不怕法律，几十年前的单位制保护重新生效，成了法律都打不破的高墙；物权法写得再清楚，交警管不进小区、物业没有执法权、民警只能调解，产权人行使不了自己的权利；协查通告的措辞偏袒，暴露出县城婆罗门与普通人两个群体的认知割裂。落点是一个警告：这不是一起停车纠纷，而是社会撕裂刚刚开始的信号。",
+      "status": "curated",
+      "degree": 10
     },
     {
       "id": "model:value-capture",
@@ -1532,6 +1543,17 @@
       "degree": 7
     },
     {
+      "id": "theme:institutional-middle-class-and-social-mobility",
+      "key": "institutional-middle-class-and-social-mobility",
+      "label": "体制化中产与社会流动",
+      "fullLabel": "体制化中产与社会流动",
+      "type": "theme",
+      "route": "themes/institutional-middle-class-and-social-mobility",
+      "summary": "讨论稳定岗位、公共财政和身份溢价如何重塑中产结构，并收窄普通人的上升路径。",
+      "status": null,
+      "degree": 7
+    },
+    {
       "id": "theme:narrative-speculation-and-retail-traps",
       "key": "narrative-speculation-and-retail-traps",
       "label": "投资叙事与散户陷阱",
@@ -1917,6 +1939,17 @@
       "degree": 6
     },
     {
+      "id": "concept:pan-institutional-middle-class",
+      "key": "pan-institutional-middle-class",
+      "label": "泛体制中产",
+      "fullLabel": "泛体制中产",
+      "type": "concept",
+      "route": "concepts/pan-institutional-middle-class",
+      "summary": "泛体制中产指依靠公务员、事业编、国企及体制相关岗位维持稳定收入、福利和社会体面的中间层。",
+      "status": null,
+      "degree": 6
+    },
+    {
       "id": "model:distributed-innovation",
       "key": "distributed-innovation",
       "label": "分布式创新",
@@ -1990,17 +2023,6 @@
       "type": "theme",
       "route": "themes/youth-withdrawal-and-lying-flat",
       "summary": "讨论年轻人在主流机会、劳动回报和身份路径收缩后，如何通过低欲望、退出和躺平保留有限主体性。",
-      "status": null,
-      "degree": 6
-    },
-    {
-      "id": "theme:institutional-middle-class-and-social-mobility",
-      "key": "institutional-middle-class-and-social-mobility",
-      "label": "体制化中产与社会流动",
-      "fullLabel": "体制化中产与社会流动",
-      "type": "theme",
-      "route": "themes/institutional-middle-class-and-social-mobility",
-      "summary": "讨论稳定岗位、公共财政和身份溢价如何重塑中产结构，并收窄普通人的上升路径。",
       "status": null,
       "degree": 6
     },
@@ -2375,17 +2397,6 @@
       "type": "concept",
       "route": "concepts/price-war-trap",
       "summary": "极致低价可以快速突袭，却可能在长期竞争中压缩技术升级、利润和战略空间。",
-      "status": null,
-      "degree": 5
-    },
-    {
-      "id": "concept:pan-institutional-middle-class",
-      "key": "pan-institutional-middle-class",
-      "label": "泛体制中产",
-      "fullLabel": "泛体制中产",
-      "type": "concept",
-      "route": "concepts/pan-institutional-middle-class",
-      "summary": "泛体制中产指依靠公务员、事业编、国企及体制相关岗位维持稳定收入、福利和社会体面的中间层。",
       "status": null,
       "degree": 5
     },
@@ -3028,6 +3039,17 @@
       "degree": 4
     },
     {
+      "id": "model:identity-stratification",
+      "key": "identity-stratification",
+      "label": "身份型分层",
+      "fullLabel": "身份型分层",
+      "type": "model",
+      "route": "models/identity-stratification",
+      "summary": "身份型分层说明阶层排序从收入和资产，转向编制、合规位置、圈层资源和稳定预期。",
+      "status": null,
+      "degree": 4
+    },
+    {
       "id": "concept:credential-rent",
       "key": "credential-rent",
       "label": "身份租值",
@@ -3035,6 +3057,17 @@
       "type": "concept",
       "route": "concepts/credential-rent",
       "summary": "一个人的学历、文化、头衔或圈层，不再只是背景，而被当成能持续换钱、换信任和换资源的租值来源。",
+      "status": null,
+      "degree": 4
+    },
+    {
+      "id": "model:ex-post-accountability-governance",
+      "key": "ex-post-accountability-governance",
+      "label": "事后追责治理模型",
+      "fullLabel": "事后追责治理模型",
+      "type": "model",
+      "route": "models/ex-post-accountability-governance",
+      "summary": "治理可以选择事前管制每个人，也可以选择给自由、事后对违规者施加无法承受的代价；后者往往比前者更省成本也更有效。",
       "status": null,
       "degree": 4
     },
@@ -3490,6 +3523,17 @@
       "degree": 3
     },
     {
+      "id": "model:rule-bounded-rights-defense",
+      "key": "rule-bounded-rights-defense",
+      "label": "规则边界型维权模型",
+      "fullLabel": "规则边界型维权模型",
+      "type": "model",
+      "route": "models/rule-bounded-rights-defense",
+      "summary": "规则边界型维权模型用权利基础和过程边界区分正当维权与撒泼勒索。",
+      "status": null,
+      "degree": 3
+    },
+    {
       "id": "concept:national-identity-hostage",
       "key": "national-identity-hostage",
       "label": "国家身份绑架",
@@ -3695,28 +3739,6 @@
       "type": "theme",
       "route": "themes/platform-traffic-and-price-distortion",
       "summary": "当平台把巨量流量集中到极少数节点，价格、信誉和真伪判断都会开始向流量中心倾斜。",
-      "status": null,
-      "degree": 3
-    },
-    {
-      "id": "model:identity-stratification",
-      "key": "identity-stratification",
-      "label": "身份型分层",
-      "fullLabel": "身份型分层",
-      "type": "model",
-      "route": "models/identity-stratification",
-      "summary": "身份型分层说明阶层排序从收入和资产，转向编制、合规位置、圈层资源和稳定预期。",
-      "status": null,
-      "degree": 3
-    },
-    {
-      "id": "model:ex-post-accountability-governance",
-      "key": "ex-post-accountability-governance",
-      "label": "事后追责治理模型",
-      "fullLabel": "事后追责治理模型",
-      "type": "model",
-      "route": "models/ex-post-accountability-governance",
-      "summary": "治理可以选择事前管制每个人，也可以选择给自由、事后对违规者施加无法承受的代价；后者往往比前者更省成本也更有效。",
       "status": null,
       "degree": 3
     },
@@ -4062,6 +4084,28 @@
       "degree": 2
     },
     {
+      "id": "model:property-defined-rule-domain",
+      "key": "property-defined-rule-domain",
+      "label": "产权定义规则域模型",
+      "fullLabel": "产权定义规则域模型",
+      "type": "model",
+      "route": "models/property-defined-rule-domain",
+      "summary": "产权定义规则域模型解释：一个空间里谁有权定规则、规则的合法范围在哪里、不接受规则的正确退出路径，都由这个空间的产权归属决定。",
+      "status": null,
+      "degree": 2
+    },
+    {
+      "id": "concept:property-boundary-literacy",
+      "key": "property-boundary-literacy",
+      "label": "产权意识",
+      "fullLabel": "产权意识",
+      "type": "concept",
+      "route": "concepts/property-boundary-literacy",
+      "summary": "产权意识指能够清晰区分公共场所与私人商业场所，并据此判断谁有权定规则、什么时候规则可以被挑战。",
+      "status": null,
+      "degree": 2
+    },
+    {
       "id": "theme:trauma-memory-and-generational-loop",
       "key": "trauma-memory-and-generational-loop",
       "label": "创伤记忆与代际循环",
@@ -4223,17 +4267,6 @@
       "type": "concept",
       "route": "concepts/audience-filter-labor",
       "summary": "用户以为自己在消费内容，实际上也在用停留、滑动、点赞和关注替平台筛选内容。",
-      "status": null,
-      "degree": 2
-    },
-    {
-      "id": "model:rule-bounded-rights-defense",
-      "key": "rule-bounded-rights-defense",
-      "label": "规则边界型维权模型",
-      "fullLabel": "规则边界型维权模型",
-      "type": "model",
-      "route": "models/rule-bounded-rights-defense",
-      "summary": "规则边界型维权模型用权利基础和过程边界区分正当维权与撒泼勒索。",
       "status": null,
       "degree": 2
     },
@@ -4986,17 +5019,6 @@
       "degree": 1
     },
     {
-      "id": "model:property-defined-rule-domain",
-      "key": "property-defined-rule-domain",
-      "label": "产权定义规则域模型",
-      "fullLabel": "产权定义规则域模型",
-      "type": "model",
-      "route": "models/property-defined-rule-domain",
-      "summary": "产权定义规则域模型解释：一个空间里谁有权定规则、规则的合法范围在哪里、不接受规则的正确退出路径，都由这个空间的产权归属决定。",
-      "status": null,
-      "degree": 1
-    },
-    {
       "id": "theme:property-rights-and-cultural-plunder",
       "key": "property-rights-and-cultural-plunder",
       "label": "产权失序与文化掠夺",
@@ -5004,17 +5026,6 @@
       "type": "theme",
       "route": "themes/property-rights-and-cultural-plunder",
       "summary": "讨论当产权边界被模糊、托管责任被滥用时，文化资产如何从传承物变成可被随意处置的对象。",
-      "status": null,
-      "degree": 1
-    },
-    {
-      "id": "concept:property-boundary-literacy",
-      "key": "property-boundary-literacy",
-      "label": "产权意识",
-      "fullLabel": "产权意识",
-      "type": "concept",
-      "route": "concepts/property-boundary-literacy",
-      "summary": "产权意识指能够清晰区分公共场所与私人商业场所，并据此判断谁有权定规则、什么时候规则可以被挑战。",
       "status": null,
       "degree": 1
     },
@@ -5103,6 +5114,17 @@
       "type": "concept",
       "route": "concepts/proxy-sponsor-shift",
       "summary": "代理人战争中真正出钱撑盘的后台换了人，所有旁观者原本的获利位置和敌我关系随之被迫重写。",
+      "status": null,
+      "degree": 1
+    },
+    {
+      "id": "concept:danwei-revival",
+      "key": "danwei-revival",
+      "label": "单位制回潮",
+      "fullLabel": "单位制回潮",
+      "type": "concept",
+      "route": "concepts/danwei-revival",
+      "summary": "法律失灵的场合里，单位重新成为约束公职人员的最有效抓手，也重新成为护着自己人的保护壳。",
       "status": null,
       "degree": 1
     },
@@ -6544,6 +6566,17 @@
       "type": "model",
       "route": "models/regime-replacement-playbook",
       "summary": "不颠覆整套政权，只反复换掉最高领导人、直到换出一个能合作的为止的低成本施压剧本。",
+      "status": null,
+      "degree": 1
+    },
+    {
+      "id": "concept:enforcement-vacuum",
+      "key": "enforcement-vacuum",
+      "label": "执法真空",
+      "fullLabel": "执法真空",
+      "type": "concept",
+      "route": "concepts/enforcement-vacuum",
+      "summary": "产权和法律都清晰，却没有任何一方有权强制执行，权利人只能自认损失或两败俱伤的空档地带。",
       "status": null,
       "degree": 1
     },
@@ -13619,6 +13652,56 @@
     {
       "source": "episode:EP183",
       "target": "theme:singapore-and-small-state-survival",
+      "kind": "episode-theme"
+    },
+    {
+      "source": "episode:EP184",
+      "target": "concept:danwei-revival",
+      "kind": "episode-concept"
+    },
+    {
+      "source": "episode:EP184",
+      "target": "concept:enforcement-vacuum",
+      "kind": "episode-concept"
+    },
+    {
+      "source": "episode:EP184",
+      "target": "concept:property-boundary-literacy",
+      "kind": "episode-concept"
+    },
+    {
+      "source": "episode:EP184",
+      "target": "concept:pan-institutional-middle-class",
+      "kind": "episode-concept"
+    },
+    {
+      "source": "episode:EP184",
+      "target": "model:property-defined-rule-domain",
+      "kind": "episode-model"
+    },
+    {
+      "source": "episode:EP184",
+      "target": "model:rule-bounded-rights-defense",
+      "kind": "episode-model"
+    },
+    {
+      "source": "episode:EP184",
+      "target": "model:ex-post-accountability-governance",
+      "kind": "episode-model"
+    },
+    {
+      "source": "episode:EP184",
+      "target": "model:identity-stratification",
+      "kind": "episode-model"
+    },
+    {
+      "source": "episode:EP184",
+      "target": "theme:rule-of-law-boundaries-and-social-trust",
+      "kind": "episode-theme"
+    },
+    {
+      "source": "episode:EP184",
+      "target": "theme:institutional-middle-class-and-social-mobility",
       "kind": "episode-theme"
     },
     {
