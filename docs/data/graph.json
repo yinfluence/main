@@ -2,14 +2,14 @@
   "meta": {
     "title": "颖响力知识图谱",
     "subtitle": "节目、概念、模型、人物、主题之间的可视化连接网络",
-    "nodeCount": 609,
-    "linkCount": 1444,
+    "nodeCount": 613,
+    "linkCount": 1455,
     "typeCounts": {
       "model": 77,
       "theme": 91,
       "person": 65,
-      "concept": 192,
-      "episode": 184
+      "concept": 195,
+      "episode": 185
     }
   },
   "nodes": [
@@ -33,7 +33,7 @@
       "route": "themes/singapore-and-small-state-survival",
       "summary": "讨论新加坡如何把规则、海峡、人才和谨慎外交组合成一套小国长期生存方法。",
       "status": null,
-      "degree": 21
+      "degree": 22
     },
     {
       "id": "person:donald-trump",
@@ -692,6 +692,17 @@
       "type": "episode",
       "route": "episodes/EP167",
       "summary": "本期久违地把镜头转回俄乌战争：乌克兰一次性派出约600架无人机，击穿防空最密集的莫斯科，把首都最大的卡波特尼亚炼油厂彻底炸毁，第二天市民头上下起石油雨。节目判断，这不是又一次提振士气的象征性反击，而是战争进入战略反攻的标志——乌克兰靠FP2无人机的AI末端制导，在信号被干扰时仍能自主识别目标，专挑防空最强的地方打。更深一层，AI和无人机正在拉平大国与小国在常规战争里的差距，小国也能打到大国首都；而把战争锁在电视和宣传里的强人体制，会随石油雨落到公民头上而失去最后的信念。",
+      "status": "curated",
+      "degree": 11
+    },
+    {
+      "id": "episode:EP185",
+      "key": "EP185",
+      "label": "EP185",
+      "fullLabel": "EP185 · 香港超瑞士、新加坡成全球离岸财富第一？实则只是东大诸多财富的溢出集散地。",
+      "type": "episode",
+      "route": "episodes/EP185",
+      "summary": "香港超过瑞士和新加坡成为全球第一大离岸财富管理中心，财经媒体一片造势，这期泼了盆冷水：这不是全球资本涌向香港，而是东大财富溢出的集散地。节目拆开资金来源——内地占六成，主力是后知后觉的中小老板和围绕公务体系的新中产，台湾资金和回流的灰色贸易资金补足其余；再点破认知误区：把钱挪到香港只是从一个棋盘跳进另一个监管更快的棋盘，监管备好的框迟早统一收网。落点是资产安全从来不靠挪位置，靠的是干净的底子、清晰的架构和个人格局。",
       "status": "curated",
       "degree": 11
     },
@@ -1499,6 +1510,17 @@
       "degree": 8
     },
     {
+      "id": "concept:pan-institutional-middle-class",
+      "key": "pan-institutional-middle-class",
+      "label": "泛体制中产",
+      "fullLabel": "泛体制中产",
+      "type": "concept",
+      "route": "concepts/pan-institutional-middle-class",
+      "summary": "泛体制中产指依靠公务员、事业编、国企及体制相关岗位维持稳定收入、福利和社会体面的中间层。",
+      "status": null,
+      "degree": 7
+    },
+    {
       "id": "concept:phantom-growth",
       "key": "phantom-growth",
       "label": "幻象增长",
@@ -1906,6 +1928,17 @@
       "degree": 7
     },
     {
+      "id": "concept:refuge-premium",
+      "key": "refuge-premium",
+      "label": "避险溢价",
+      "fullLabel": "避险溢价",
+      "type": "concept",
+      "route": "concepts/refuge-premium",
+      "summary": "动荡时期，稳定、守规则、能承接资金和人才的节点会获得额外溢价。",
+      "status": null,
+      "degree": 6
+    },
+    {
       "id": "theme:planned-systems-and-innovation",
       "key": "planned-systems-and-innovation",
       "label": "大计划体制与创新约束",
@@ -1935,17 +1968,6 @@
       "type": "theme",
       "route": "themes/east-asia-security-realignment",
       "summary": "讨论日本重新前台化、台海压力外溢，以及东亚安全合作为何越来越难保持模糊。",
-      "status": null,
-      "degree": 6
-    },
-    {
-      "id": "concept:pan-institutional-middle-class",
-      "key": "pan-institutional-middle-class",
-      "label": "泛体制中产",
-      "fullLabel": "泛体制中产",
-      "type": "concept",
-      "route": "concepts/pan-institutional-middle-class",
-      "summary": "泛体制中产指依靠公务员、事业编、国企及体制相关岗位维持稳定收入、福利和社会体面的中间层。",
       "status": null,
       "degree": 6
     },
@@ -2346,17 +2368,6 @@
       "degree": 6
     },
     {
-      "id": "concept:refuge-premium",
-      "key": "refuge-premium",
-      "label": "避险溢价",
-      "fullLabel": "避险溢价",
-      "type": "concept",
-      "route": "concepts/refuge-premium",
-      "summary": "动荡时期，稳定、守规则、能承接资金和人才的节点会获得额外溢价。",
-      "status": null,
-      "degree": 5
-    },
-    {
       "id": "concept:subsidy-leverage-engine",
       "key": "subsidy-leverage-engine",
       "label": "补贴杠杆引擎",
@@ -2489,6 +2500,17 @@
       "degree": 5
     },
     {
+      "id": "model:identity-stratification",
+      "key": "identity-stratification",
+      "label": "身份型分层",
+      "fullLabel": "身份型分层",
+      "type": "model",
+      "route": "models/identity-stratification",
+      "summary": "身份型分层说明阶层排序从收入和资产，转向编制、合规位置、圈层资源和稳定预期。",
+      "status": null,
+      "degree": 5
+    },
+    {
       "id": "concept:time-asymmetry",
       "key": "time-asymmetry",
       "label": "时间非对称",
@@ -2562,6 +2584,17 @@
       "type": "theme",
       "route": "themes/war-system-and-succession-risk",
       "summary": "讨论战争国家在长期高压运转下，如何同时面临兵员枯竭、内部老化与接班断层。",
+      "status": null,
+      "degree": 5
+    },
+    {
+      "id": "theme:capital-exit-and-cross-border-harvest",
+      "key": "capital-exit-and-cross-border-harvest",
+      "label": "资本博弈与美元退出",
+      "fullLabel": "资本博弈与美元退出",
+      "type": "theme",
+      "route": "themes/capital-exit-and-cross-border-harvest",
+      "summary": "危机、停牌或重组时期，真正被争夺的往往不是公司本身，而是跨法域的退出通道和美元化收益。",
       "status": null,
       "degree": 5
     },
@@ -3039,17 +3072,6 @@
       "degree": 4
     },
     {
-      "id": "model:identity-stratification",
-      "key": "identity-stratification",
-      "label": "身份型分层",
-      "fullLabel": "身份型分层",
-      "type": "model",
-      "route": "models/identity-stratification",
-      "summary": "身份型分层说明阶层排序从收入和资产，转向编制、合规位置、圈层资源和稳定预期。",
-      "status": null,
-      "degree": 4
-    },
-    {
       "id": "concept:credential-rent",
       "key": "credential-rent",
       "label": "身份租值",
@@ -3182,13 +3204,13 @@
       "degree": 4
     },
     {
-      "id": "theme:capital-exit-and-cross-border-harvest",
-      "key": "capital-exit-and-cross-border-harvest",
-      "label": "资本博弈与美元退出",
-      "fullLabel": "资本博弈与美元退出",
-      "type": "theme",
-      "route": "themes/capital-exit-and-cross-border-harvest",
-      "summary": "危机、停牌或重组时期，真正被争夺的往往不是公司本身，而是跨法域的退出通道和美元化收益。",
+      "id": "model:asset-preservation-architecture",
+      "key": "asset-preservation-architecture",
+      "label": "资产保全架构",
+      "fullLabel": "资产保全架构",
+      "type": "model",
+      "route": "models/asset-preservation-architecture",
+      "summary": "资产保全架构强调财富安全取决于来源、法域、时间前置和退出节奏的组合。",
       "status": null,
       "degree": 4
     },
@@ -3644,6 +3666,17 @@
       "degree": 3
     },
     {
+      "id": "theme:trust-and-asset-preservation",
+      "key": "trust-and-asset-preservation",
+      "label": "家族信托与资产保全",
+      "fullLabel": "家族信托与资产保全",
+      "type": "theme",
+      "route": "themes/trust-and-asset-preservation",
+      "summary": "讨论信托、离岸架构、上市与退出动作如何共同决定财富能不能穿越周期。",
+      "status": null,
+      "degree": 3
+    },
+    {
       "id": "theme:price-support-and-balance-sheet",
       "key": "price-support-and-balance-sheet",
       "label": "价格托底与账面维稳",
@@ -3875,17 +3908,6 @@
       "degree": 3
     },
     {
-      "id": "model:asset-preservation-architecture",
-      "key": "asset-preservation-architecture",
-      "label": "资产保全架构",
-      "fullLabel": "资产保全架构",
-      "type": "model",
-      "route": "models/asset-preservation-architecture",
-      "summary": "资产保全架构强调财富安全取决于来源、法域、时间前置和退出节奏的组合。",
-      "status": null,
-      "degree": 3
-    },
-    {
       "id": "concept:asset-disposal-channel",
       "key": "asset-disposal-channel",
       "label": "资产处置通道",
@@ -4080,6 +4102,17 @@
       "type": "concept",
       "route": "concepts/standard-answer-cage",
       "summary": "复杂问题被压缩成唯一正确答案后，人会失去提问、迁移和面对不确定性的能力。",
+      "status": null,
+      "degree": 2
+    },
+    {
+      "id": "concept:wealth-repatriation-squeeze",
+      "key": "wealth-repatriation-squeeze",
+      "label": "财富回收挤压",
+      "fullLabel": "财富回收挤压",
+      "type": "concept",
+      "route": "concepts/wealth-repatriation-squeeze",
+      "summary": "财富回收挤压指国家通过收紧跨境通道、倒查境外账户和扩大对外投资监管，把高净值人群游离在监管外的境外财富重新定住、纳入体系并施加补税与缩水压力。",
       "status": null,
       "degree": 2
     },
@@ -4366,17 +4399,6 @@
       "type": "concept",
       "route": "concepts/inheritance-supply-shock",
       "summary": "老一代集中退出时，沉睡的存量资产会重新进入市场，形成供给冲击。",
-      "status": null,
-      "degree": 2
-    },
-    {
-      "id": "theme:trust-and-asset-preservation",
-      "key": "trust-and-asset-preservation",
-      "label": "家族信托与资产保全",
-      "fullLabel": "家族信托与资产保全",
-      "type": "theme",
-      "route": "themes/trust-and-asset-preservation",
-      "summary": "讨论信托、离岸架构、上市与退出动作如何共同决定财富能不能穿越周期。",
       "status": null,
       "degree": 2
     },
@@ -4964,17 +4986,6 @@
       "degree": 1
     },
     {
-      "id": "concept:wealth-repatriation-squeeze",
-      "key": "wealth-repatriation-squeeze",
-      "label": "财富回收挤压",
-      "fullLabel": "财富回收挤压",
-      "type": "concept",
-      "route": "concepts/wealth-repatriation-squeeze",
-      "summary": "财富回收挤压指国家通过收紧跨境通道、倒查境外账户和扩大对外投资监管，把高净值人群游离在监管外的境外财富重新定住、纳入体系并施加补税与缩水压力。",
-      "status": null,
-      "degree": 1
-    },
-    {
       "id": "theme:wealth-inheritance-and-relational-distortion",
       "key": "wealth-inheritance-and-relational-distortion",
       "label": "财富继承与关系扭曲",
@@ -4982,6 +4993,17 @@
       "type": "theme",
       "route": "themes/wealth-inheritance-and-relational-distortion",
       "summary": "关注财富传递过程中，关系、人格和价值观如何一起失真。",
+      "status": null,
+      "degree": 1
+    },
+    {
+      "id": "concept:wealth-spillover-hub",
+      "key": "wealth-spillover-hub",
+      "label": "财富溢出集散地",
+      "fullLabel": "财富溢出集散地",
+      "type": "concept",
+      "route": "concepts/wealth-spillover-hub",
+      "summary": "一个金融节点的繁荣不是因为全球资本看好它，而是因为它恰好承接了某个大经济体溢出和回流的钱。",
       "status": null,
       "degree": 1
     },
@@ -6020,6 +6042,17 @@
       "degree": 1
     },
     {
+      "id": "concept:identity-bounded-choice",
+      "key": "identity-bounded-choice",
+      "label": "身份约束型选择",
+      "fullLabel": "身份约束型选择",
+      "type": "concept",
+      "route": "concepts/identity-bounded-choice",
+      "summary": "一类人因身份限制和认知边界，放弃客观最优选项、集中涌向够近够熟的次优选项，反而让次优节点畸形繁荣。",
+      "status": null,
+      "degree": 1
+    },
+    {
       "id": "theme:beauty-industry-and-hollowed-competitions",
       "key": "beauty-industry-and-hollowed-competitions",
       "label": "审美产业与赛事空心化",
@@ -6599,6 +6632,17 @@
       "type": "concept",
       "route": "concepts/institutional-software-transfer",
       "summary": "把治理体系拆成硬件与软件两层：土地、规划、基建可以整体搬运，管理制度背后的人的意识和行政逻辑却难以跨体制移植。",
+      "status": null,
+      "degree": 1
+    },
+    {
+      "id": "concept:middle-class-reservoir",
+      "key": "middle-class-reservoir",
+      "label": "中产蓄水池",
+      "fullLabel": "中产蓄水池",
+      "type": "concept",
+      "route": "concepts/middle-class-reservoir",
+      "summary": "中产财富在好年景蓄水、缓冲社会矛盾，在系统缺水时被反向抽回补给主河道——节目认为这是全球共性，不是某一国的问题。",
       "status": null,
       "degree": 1
     },
@@ -13702,6 +13746,61 @@
     {
       "source": "episode:EP184",
       "target": "theme:institutional-middle-class-and-social-mobility",
+      "kind": "episode-theme"
+    },
+    {
+      "source": "episode:EP185",
+      "target": "concept:wealth-spillover-hub",
+      "kind": "episode-concept"
+    },
+    {
+      "source": "episode:EP185",
+      "target": "concept:identity-bounded-choice",
+      "kind": "episode-concept"
+    },
+    {
+      "source": "episode:EP185",
+      "target": "concept:middle-class-reservoir",
+      "kind": "episode-concept"
+    },
+    {
+      "source": "episode:EP185",
+      "target": "concept:wealth-repatriation-squeeze",
+      "kind": "episode-concept"
+    },
+    {
+      "source": "episode:EP185",
+      "target": "concept:refuge-premium",
+      "kind": "episode-concept"
+    },
+    {
+      "source": "episode:EP185",
+      "target": "concept:pan-institutional-middle-class",
+      "kind": "episode-concept"
+    },
+    {
+      "source": "episode:EP185",
+      "target": "model:asset-preservation-architecture",
+      "kind": "episode-model"
+    },
+    {
+      "source": "episode:EP185",
+      "target": "model:identity-stratification",
+      "kind": "episode-model"
+    },
+    {
+      "source": "episode:EP185",
+      "target": "theme:capital-exit-and-cross-border-harvest",
+      "kind": "episode-theme"
+    },
+    {
+      "source": "episode:EP185",
+      "target": "theme:trust-and-asset-preservation",
+      "kind": "episode-theme"
+    },
+    {
+      "source": "episode:EP185",
+      "target": "theme:singapore-and-small-state-survival",
       "kind": "episode-theme"
     },
     {
