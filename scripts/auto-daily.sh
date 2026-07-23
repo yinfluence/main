@@ -1,11 +1,13 @@
 #!/bin/bash
-# 颖响力网页每日自动更新 —— 开机触发 + 电脑开着时定期轮询，发现新一期就全自动整理上线。
-# 由 ~/Library/LaunchAgents/com.yingxiangli.daily-auto.plist 在登录时 + 每隔数小时调用。
+# 颖响力网页每日自动更新 —— 北京 20:10 起进入扫描窗口，10 分钟一次重扫，发现新一期就全自动整理上线。
+# 由 ~/Library/LaunchAgents/com.yingxiangli.daily-auto.plist 在登录时 + 每天英国本地 12:10/13:10 调用
+#（两个本地时间点是为了 BST/GMT 都能对准北京 20:10 = UTC 12:10；打偏的那个会被窗口判断或锁挡掉）。
 #
-# 设计（同时满足"别重复空转"和"尽快同步"）：
-#   - 每次触发都查一次 B 站 UP 投稿有没有新 EP（很轻，无新增秒退、不花 token、不打扰）
-#   - 有新增才唤起 claude 按 SOP 整理上线并通知；已整理的期天然幂等、不会重复处理
-#   - 15 分钟最小间隔防抖，应对短时间多次开机/登录
+# 设计（2026-07-23 与用户确认）：
+#   - UP 发布规律：北京 19-21 点窗口为主（30 期实测 19 点档 10 期、20 点档 18 期、EP188 实际 20:50）
+#   - 窗口模式：UTC 12:05–14:30（北京 20:05–22:30）内触发 → 每 10 分钟扫一次，发现新期整理后退出
+#   - 窗口外触发（开机 RunAtLoad 等）→ 只扫一次，作为漏网补捞
+#   - 全程持锁：已有实例在扫描或整理中，后来的触发直接退出，不重复扫、不重复整理
 
 set -uo pipefail
 export PATH="/opt/homebrew/bin:/Users/ziqiguo/.local/bin:/Library/Frameworks/Python.framework/Versions/3.13/bin:/usr/bin:/bin:/usr/sbin:/sbin"
@@ -15,45 +17,84 @@ cd "$WEB" || exit 1
 mkdir -p logs
 TODAY=$(date +%Y-%m-%d)
 STAMP="logs/.last-scan-epoch"
+LOCK="logs/.auto-daily.lock"
 LOG="logs/auto-daily-$TODAY.log"
-MIN_GAP=900   # 15 分钟防抖
+MIN_GAP=300   # 窗口外触发的防抖（5 分钟）
 
 notify() { osascript -e "display notification \"$2\" with title \"$1\" sound name \"$3\"" 2>/dev/null || true; }
 log() { echo "$(date '+%H:%M:%S') $*" >> "$LOG"; }
 
-# 防抖：距上次扫描不足 15 分钟就跳过（应对短时间多次触发）
-NOW=$(date +%s)
-if [[ -f "$STAMP" ]]; then
-  LAST=$(cat "$STAMP" 2>/dev/null || echo 0)
-  if (( NOW - LAST < MIN_GAP )); then
-    exit 0
-  fi
+# 全程锁：已经有实例在做（扫描循环中 / claude 整理中）就不再进来
+if ! mkdir "$LOCK" 2>/dev/null; then
+  exit 0
 fi
-echo "$NOW" > "$STAMP"
+trap 'rmdir "$LOCK" 2>/dev/null' EXIT
 
-log "=== 扫描新一期 ==="
-python3 scripts/scan-new-episodes.py --dry-run >> "$LOG" 2>&1
-CODE=$?
+# 一天只有一期：库里最新一期的 publishedAt 已是今天（UTC）→ 当天收工，不再扫
+today_done() {
+  local latest pub
+  latest=$(ls content/episodes/EP*.json 2>/dev/null | sort | tail -1)
+  [[ -z "$latest" ]] && return 1
+  pub=$(python3 -c "import json,sys;print(json.load(open(sys.argv[1])).get('publishedAt','')[:10])" "$latest" 2>/dev/null)
+  [[ "$pub" == "$(date -u +%Y-%m-%d)" ]]
+}
+if today_done; then
+  exit 0
+fi
 
-case $CODE in
-  0)
-    log "发现新一期，唤起 claude 整理上线"
-    claude -p "$(cat "$WEB/scripts/daily-agent-prompt.md")" \
-      --dangerously-skip-permissions >> "$LOG" 2>&1
-    if [[ $? -eq 0 ]] && grep -q "SUMMARY:" "$LOG"; then
-      SUM=$(grep "SUMMARY:" "$LOG" | tail -1 | sed 's/^.*SUMMARY: *//')
-      log "整理完成：$SUM"
-      notify "颖响力网页 ✅" "已自动上线：$SUM" "Glass"
-    else
-      log "整理未确认成功（无 SUMMARY 标记）"
-      notify "颖响力网页 ⚠️" "整理可能未完成，请看 logs/auto-daily-$TODAY.log" "Basso"
-    fi
-    ;;
-  10)
-    # 无新一期：秒退、静默，不打扰
-    ;;
-  *)
-    log "扫描出错 code=$CODE（cookie 过期 / 充电失效 / 风控 / 网络？）"
-    notify "颖响力网页 ⚠️" "扫描失败 code=$CODE，请看 logs/" "Basso"
-    ;;
-esac
+# 一次扫描 + 发现新期则整理。返回 0=已处理新期，10=无新期，其他=出错
+scan_once() {
+  echo "$(date +%s)" > "$STAMP"
+  log "=== 扫描新一期 ==="
+  python3 scripts/scan-new-episodes.py --dry-run >> "$LOG" 2>&1
+  local CODE=$?
+  case $CODE in
+    0)
+      log "发现新一期，唤起 claude 整理上线"
+      claude -p "$(cat "$WEB/scripts/daily-agent-prompt.md")" \
+        --dangerously-skip-permissions >> "$LOG" 2>&1
+      if [[ $? -eq 0 ]] && grep -q "SUMMARY:" "$LOG"; then
+        local SUM
+        SUM=$(grep "SUMMARY:" "$LOG" | tail -1 | sed 's/^.*SUMMARY: *//')
+        log "整理完成：$SUM"
+        notify "颖响力网页 ✅" "已自动上线：$SUM" "Glass"
+      else
+        log "整理未确认成功（无 SUMMARY 标记）"
+        notify "颖响力网页 ⚠️" "整理可能未完成，请看 logs/auto-daily-$TODAY.log" "Basso"
+      fi
+      return 0
+      ;;
+    10) return 10 ;;
+    *)
+      log "扫描出错 code=$CODE（cookie 过期 / 充电失效 / 风控 / 网络？）"
+      notify "颖响力网页 ⚠️" "扫描失败 code=$CODE，请看 logs/" "Basso"
+      return $CODE
+      ;;
+  esac
+}
+
+# 用 UTC 分钟数判断是否在发布窗口内（北京 20:05–22:30 = UTC 12:05–14:30）
+UTC_MIN=$(( $(date -u +%H | sed 's/^0//') * 60 + $(date -u +%M | sed 's/^0//') ))
+WIN_START=$(( 12 * 60 + 5 ))
+WIN_END=$(( 14 * 60 + 30 ))
+
+if (( UTC_MIN >= WIN_START && UTC_MIN < WIN_END )); then
+  # 窗口模式：10 分钟一轮，扫到新期（或出错）就停，最晚到窗口结束
+  while :; do
+    scan_once
+    CODE=$?
+    (( CODE != 10 )) && break
+    today_done && break
+    sleep 600
+    UTC_MIN=$(( $(date -u +%H | sed 's/^0//') * 60 + $(date -u +%M | sed 's/^0//') ))
+    (( UTC_MIN >= WIN_END || UTC_MIN < WIN_START )) && break
+  done
+else
+  # 窗口外（开机等）：防抖后单次补捞
+  NOW=$(date +%s)
+  if [[ -f "$STAMP" ]]; then
+    LAST=$(cat "$STAMP" 2>/dev/null || echo 0)
+    (( NOW - LAST < MIN_GAP )) && exit 0
+  fi
+  scan_once
+fi
