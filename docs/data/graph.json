@@ -2,14 +2,14 @@
   "meta": {
     "title": "颖响力知识图谱",
     "subtitle": "节目、概念、模型、人物、主题之间的可视化连接网络",
-    "nodeCount": 621,
-    "linkCount": 1469,
+    "nodeCount": 623,
+    "linkCount": 1479,
     "typeCounts": {
       "model": 77,
       "theme": 91,
       "person": 65,
-      "concept": 201,
-      "episode": 187
+      "concept": 202,
+      "episode": 188
     }
   },
   "nodes": [
@@ -33,7 +33,7 @@
       "route": "themes/singapore-and-small-state-survival",
       "summary": "讨论新加坡如何把规则、海峡、人才和谨慎外交组合成一套小国长期生存方法。",
       "status": null,
-      "degree": 22
+      "degree": 23
     },
     {
       "id": "person:donald-trump",
@@ -630,6 +630,17 @@
       "degree": 11
     },
     {
+      "id": "concept:active-neutrality",
+      "key": "active-neutrality",
+      "label": "主动中立",
+      "fullLabel": "主动中立",
+      "type": "concept",
+      "route": "concepts/active-neutrality",
+      "summary": "真正可持续的中立不是谁都不得罪，而是在坚持规则的前提下主动参与秩序塑造。",
+      "status": null,
+      "degree": 11
+    },
+    {
       "id": "episode:EP078",
       "key": "EP078",
       "label": "EP078",
@@ -751,17 +762,6 @@
       "degree": 10
     },
     {
-      "id": "concept:active-neutrality",
-      "key": "active-neutrality",
-      "label": "主动中立",
-      "fullLabel": "主动中立",
-      "type": "concept",
-      "route": "concepts/active-neutrality",
-      "summary": "真正可持续的中立不是谁都不得罪，而是在坚持规则的前提下主动参与秩序塑造。",
-      "status": null,
-      "degree": 10
-    },
-    {
       "id": "episode:EP006",
       "key": "EP006",
       "label": "EP006",
@@ -824,6 +824,17 @@
       "type": "episode",
       "route": "episodes/EP184",
       "summary": "长沙彭女士占用他人车位，六轮协查调解全部无效，单位一出意见立马道歉，这期从这个反差切入。节目拆出三层问题：公职人员怕单位不怕法律，几十年前的单位制保护重新生效，成了法律都打不破的高墙；物权法写得再清楚，交警管不进小区、物业没有执法权、民警只能调解，产权人行使不了自己的权利；协查通告的措辞偏袒，暴露出县城婆罗门与普通人两个群体的认知割裂。落点是一个警告：这不是一起停车纠纷，而是社会撕裂刚刚开始的信号。",
+      "status": "curated",
+      "degree": 10
+    },
+    {
+      "id": "episode:EP188",
+      "key": "EP188",
+      "label": "EP188",
+      "fullLabel": "EP188 · 新加坡家族办公室五年暴涨6倍？解决富豪传承死穴，老钱跨越百年的底层逻辑！",
+      "type": "episode",
+      "route": "episodes/EP188",
+      "summary": "本期从新加坡单一家族办公室五年从400家涨到2750家切入，把家族办公室从富豪的炒股团队重新定义为解决代际传承死穴的制度工具：血缘筛选保证不了后代能力，长子继承制只防资产分割、防不住财富流失，唯一出路是所有权与经营权彻底分割——家族握住所有权和收益权，投资、信托、税务、合规全部交给专业团队。节目再解释老钱为什么扎堆新加坡、瑞士：顶级家族要的是脱离任何大国国运周期的中立法域，与小国对干净长钱的需求双向奔赴。落点是家族办公室确立了老钱与新钱的真正区别——用制度对抗人性与周期的传承逻辑。",
       "status": "curated",
       "degree": 10
     },
@@ -1510,6 +1521,17 @@
       "degree": 8
     },
     {
+      "id": "concept:refuge-premium",
+      "key": "refuge-premium",
+      "label": "避险溢价",
+      "fullLabel": "避险溢价",
+      "type": "concept",
+      "route": "concepts/refuge-premium",
+      "summary": "动荡时期，稳定、守规则、能承接资金和人才的节点会获得额外溢价。",
+      "status": null,
+      "degree": 7
+    },
+    {
       "id": "concept:pan-institutional-middle-class",
       "key": "pan-institutional-middle-class",
       "label": "泛体制中产",
@@ -1948,17 +1970,6 @@
       "summary": "某车企公布半年预亏 15 到 18 亿，旗下某界交付量却涨了 10%、还霸着豪华 SUV 销冠——卖得越多亏得越多。这期沿用笑傲江湖的化名拆华山派与剑宗小厮的合作模式：硬件采购、技术授权费、渠道服务费三笔前置刚性供奉，单车 13 到 14 万先进气宗的兜，收益挂销量、与车企盈亏脱钩；法律股权与地方政府对赌两层隔离墙，把重资产、价格战、出海受限的全部风险焊在小厮身上。节目判断这不是苹果代工模式，更像苏联与加盟共和国——依附型车企的处境，是所有制造业小老板的缩影。",
       "status": "curated",
       "degree": 7
-    },
-    {
-      "id": "concept:refuge-premium",
-      "key": "refuge-premium",
-      "label": "避险溢价",
-      "fullLabel": "避险溢价",
-      "type": "concept",
-      "route": "concepts/refuge-premium",
-      "summary": "动荡时期，稳定、守规则、能承接资金和人才的节点会获得额外溢价。",
-      "status": null,
-      "degree": 6
     },
     {
       "id": "theme:planned-systems-and-innovation",
@@ -2632,6 +2643,17 @@
       "degree": 5
     },
     {
+      "id": "model:asset-preservation-architecture",
+      "key": "asset-preservation-architecture",
+      "label": "资产保全架构",
+      "fullLabel": "资产保全架构",
+      "type": "model",
+      "route": "models/asset-preservation-architecture",
+      "summary": "资产保全架构强调财富安全取决于来源、法域、时间前置和退出节奏的组合。",
+      "status": null,
+      "degree": 5
+    },
+    {
       "id": "episode:EP014",
       "key": "EP014",
       "label": "EP014",
@@ -3006,6 +3028,50 @@
       "degree": 4
     },
     {
+      "id": "concept:family-succession-fracture",
+      "key": "family-succession-fracture",
+      "label": "继承性断裂",
+      "fullLabel": "继承性断裂",
+      "type": "concept",
+      "route": "concepts/family-succession-fracture",
+      "summary": "创始人把企业交给下一代时，如果旧账、旧怨和利益结构没有被提前制度化处理，接班很容易从交棒变成脆断。",
+      "status": null,
+      "degree": 4
+    },
+    {
+      "id": "model:succession-governance",
+      "key": "succession-governance",
+      "label": "继承治理模型",
+      "fullLabel": "继承治理模型",
+      "type": "model",
+      "route": "models/succession-governance",
+      "summary": "企业交班真正难的，不是把头衔交出去，而是把旧账、旧利益和旧工具提前制度化处理掉。",
+      "status": null,
+      "degree": 4
+    },
+    {
+      "id": "theme:family-succession-and-governance",
+      "key": "family-succession-and-governance",
+      "label": "家族企业继承与治理断裂",
+      "fullLabel": "家族企业继承与治理断裂",
+      "type": "theme",
+      "route": "themes/family-succession-and-governance",
+      "summary": "讨论创始人家族、接班方式与旧利益安排如何把企业从经营问题推向治理问题。",
+      "status": null,
+      "degree": 4
+    },
+    {
+      "id": "theme:trust-and-asset-preservation",
+      "key": "trust-and-asset-preservation",
+      "label": "家族信托与资产保全",
+      "fullLabel": "家族信托与资产保全",
+      "type": "theme",
+      "route": "themes/trust-and-asset-preservation",
+      "summary": "讨论信托、离岸架构、上市与退出动作如何共同决定财富能不能穿越周期。",
+      "status": null,
+      "degree": 4
+    },
+    {
       "id": "person:jia-guolong",
       "key": "jia-guolong",
       "label": "贾国龙",
@@ -3222,17 +3288,6 @@
       "type": "theme",
       "route": "themes/capital-packaging-and-credential-borrowing",
       "summary": "项目、企业和人物通过借用更高等级的身份和场面来获得额外信用。",
-      "status": null,
-      "degree": 4
-    },
-    {
-      "id": "model:asset-preservation-architecture",
-      "key": "asset-preservation-architecture",
-      "label": "资产保全架构",
-      "fullLabel": "资产保全架构",
-      "type": "model",
-      "route": "models/asset-preservation-architecture",
-      "summary": "资产保全架构强调财富安全取决于来源、法域、时间前置和退出节奏的组合。",
       "status": null,
       "degree": 4
     },
@@ -3666,50 +3721,6 @@
       "degree": 3
     },
     {
-      "id": "concept:family-succession-fracture",
-      "key": "family-succession-fracture",
-      "label": "继承性断裂",
-      "fullLabel": "继承性断裂",
-      "type": "concept",
-      "route": "concepts/family-succession-fracture",
-      "summary": "创始人把企业交给下一代时，如果旧账、旧怨和利益结构没有被提前制度化处理，接班很容易从交棒变成脆断。",
-      "status": null,
-      "degree": 3
-    },
-    {
-      "id": "model:succession-governance",
-      "key": "succession-governance",
-      "label": "继承治理模型",
-      "fullLabel": "继承治理模型",
-      "type": "model",
-      "route": "models/succession-governance",
-      "summary": "企业交班真正难的，不是把头衔交出去，而是把旧账、旧利益和旧工具提前制度化处理掉。",
-      "status": null,
-      "degree": 3
-    },
-    {
-      "id": "theme:family-succession-and-governance",
-      "key": "family-succession-and-governance",
-      "label": "家族企业继承与治理断裂",
-      "fullLabel": "家族企业继承与治理断裂",
-      "type": "theme",
-      "route": "themes/family-succession-and-governance",
-      "summary": "讨论创始人家族、接班方式与旧利益安排如何把企业从经营问题推向治理问题。",
-      "status": null,
-      "degree": 3
-    },
-    {
-      "id": "theme:trust-and-asset-preservation",
-      "key": "trust-and-asset-preservation",
-      "label": "家族信托与资产保全",
-      "fullLabel": "家族信托与资产保全",
-      "type": "theme",
-      "route": "themes/trust-and-asset-preservation",
-      "summary": "讨论信托、离岸架构、上市与退出动作如何共同决定财富能不能穿越周期。",
-      "status": null,
-      "degree": 3
-    },
-    {
       "id": "theme:price-support-and-balance-sheet",
       "key": "price-support-and-balance-sheet",
       "label": "价格托底与账面维稳",
@@ -3816,6 +3827,17 @@
       "type": "concept",
       "route": "concepts/production-risk-outsourcing",
       "summary": "平台和中间层把库存、投流、合规和现金流风险持续压给生产端。",
+      "status": null,
+      "degree": 3
+    },
+    {
+      "id": "theme:time-horizon-and-foresight",
+      "key": "time-horizon-and-foresight",
+      "label": "时间尺度与资产前瞻",
+      "fullLabel": "时间尺度与资产前瞻",
+      "type": "theme",
+      "route": "themes/time-horizon-and-foresight",
+      "summary": "讨论人物与企业如何在不同周期里提前摆放自己，而不是等结果发生后再被动解释。",
       "status": null,
       "degree": 3
     },
@@ -4608,17 +4630,6 @@
       "type": "concept",
       "route": "concepts/aesthetic-compression",
       "summary": "社会越功利和高压，审美、协商与细腻判断越容易被压缩成粗糙标准。",
-      "status": null,
-      "degree": 2
-    },
-    {
-      "id": "theme:time-horizon-and-foresight",
-      "key": "time-horizon-and-foresight",
-      "label": "时间尺度与资产前瞻",
-      "fullLabel": "时间尺度与资产前瞻",
-      "type": "theme",
-      "route": "themes/time-horizon-and-foresight",
-      "summary": "讨论人物与企业如何在不同周期里提前摆放自己，而不是等结果发生后再被动解释。",
       "status": null,
       "degree": 2
     },
@@ -6170,6 +6181,17 @@
       "type": "concept",
       "route": "concepts/random-walk-arrogance",
       "summary": "在上升周期中撞上好运的人，容易把随机红利误读成自己掌握了世界规律。",
+      "status": null,
+      "degree": 1
+    },
+    {
+      "id": "concept:ownership-management-separation",
+      "key": "ownership-management-separation",
+      "label": "所有权与经营权分割",
+      "fullLabel": "所有权与经营权分割",
+      "type": "concept",
+      "route": "concepts/ownership-management-separation",
+      "summary": "家族握住资产所有权和收益权，把投资、信托、税务、运营全部交给专业团队，用制度代替血缘完成传承，这是家族办公室的底层逻辑。",
       "status": null,
       "degree": 1
     },
@@ -13959,6 +13981,56 @@
     {
       "source": "episode:EP187",
       "target": "theme:state-business-entanglement",
+      "kind": "episode-theme"
+    },
+    {
+      "source": "episode:EP188",
+      "target": "concept:ownership-management-separation",
+      "kind": "episode-concept"
+    },
+    {
+      "source": "episode:EP188",
+      "target": "concept:family-succession-fracture",
+      "kind": "episode-concept"
+    },
+    {
+      "source": "episode:EP188",
+      "target": "concept:refuge-premium",
+      "kind": "episode-concept"
+    },
+    {
+      "source": "episode:EP188",
+      "target": "concept:active-neutrality",
+      "kind": "episode-concept"
+    },
+    {
+      "source": "episode:EP188",
+      "target": "model:asset-preservation-architecture",
+      "kind": "episode-model"
+    },
+    {
+      "source": "episode:EP188",
+      "target": "model:succession-governance",
+      "kind": "episode-model"
+    },
+    {
+      "source": "episode:EP188",
+      "target": "theme:trust-and-asset-preservation",
+      "kind": "episode-theme"
+    },
+    {
+      "source": "episode:EP188",
+      "target": "theme:family-succession-and-governance",
+      "kind": "episode-theme"
+    },
+    {
+      "source": "episode:EP188",
+      "target": "theme:singapore-and-small-state-survival",
+      "kind": "episode-theme"
+    },
+    {
+      "source": "episode:EP188",
+      "target": "theme:time-horizon-and-foresight",
       "kind": "episode-theme"
     },
     {

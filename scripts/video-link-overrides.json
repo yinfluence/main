@@ -850,5 +850,15 @@
       "url": "https://www.bilibili.com/video/BV1RKJV65EJX/",
       "access": "member"
     }
+  },
+  "EP188": {
+    "bilibili": {
+      "platform": "bilibili",
+      "url": "https://www.bilibili.com/video/BV1vvg468EpC/"
+    },
+    "youtube": {
+      "platform": "youtube",
+      "url": "https://www.youtube.com/watch?v=fZsJDcquR4w"
+    }
   }
 }
