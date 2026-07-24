@@ -2,14 +2,14 @@
   "meta": {
     "title": "颖响力知识图谱",
     "subtitle": "节目、概念、模型、人物、主题之间的可视化连接网络",
-    "nodeCount": 623,
-    "linkCount": 1479,
+    "nodeCount": 625,
+    "linkCount": 1488,
     "typeCounts": {
       "model": 77,
       "theme": 91,
       "person": 65,
-      "concept": 202,
-      "episode": 188
+      "concept": 203,
+      "episode": 189
     }
   },
   "nodes": [
@@ -80,6 +80,17 @@
       "degree": 17
     },
     {
+      "id": "theme:great-power-competition-and-strategic-time",
+      "key": "great-power-competition-and-strategic-time",
+      "label": "大国竞争与战略时间",
+      "fullLabel": "大国竞争与战略时间",
+      "type": "theme",
+      "route": "themes/great-power-competition-and-strategic-time",
+      "summary": "讨论战争、联盟和国家战略如何被时间窗口、社会成本和长期定力重新塑形。",
+      "status": null,
+      "degree": 16
+    },
+    {
       "id": "model:narrative-instrumentalization",
       "key": "narrative-instrumentalization",
       "label": "叙事工具化模型",
@@ -124,17 +135,6 @@
       "degree": 16
     },
     {
-      "id": "theme:great-power-competition-and-strategic-time",
-      "key": "great-power-competition-and-strategic-time",
-      "label": "大国竞争与战略时间",
-      "fullLabel": "大国竞争与战略时间",
-      "type": "theme",
-      "route": "themes/great-power-competition-and-strategic-time",
-      "summary": "讨论战争、联盟和国家战略如何被时间窗口、社会成本和长期定力重新塑形。",
-      "status": null,
-      "degree": 15
-    },
-    {
       "id": "episode:EP133",
       "key": "EP133",
       "label": "EP133",
@@ -175,6 +175,17 @@
       "type": "model",
       "route": "models/path-dependence",
       "summary": "路径依赖解释早期技术和叙事选择一旦成功，就会反过来限制后续转向更优路径。",
+      "status": null,
+      "degree": 14
+    },
+    {
+      "id": "concept:chokepoint-leverage",
+      "key": "chokepoint-leverage",
+      "label": "咽喉杠杆",
+      "fullLabel": "咽喉杠杆",
+      "type": "concept",
+      "route": "concepts/chokepoint-leverage",
+      "summary": "控制海峡、运河和关键通道的人，往往能把地理位置转化成定价权、通行权和规则权。",
       "status": null,
       "degree": 14
     },
@@ -307,17 +318,6 @@
       "type": "theme",
       "route": "themes/ev-financialization-and-false-sales",
       "summary": "聚焦新能源车行业如何依靠补贴、融资、渠道黑箱和虚假销售维持增长叙事。",
-      "status": null,
-      "degree": 13
-    },
-    {
-      "id": "concept:chokepoint-leverage",
-      "key": "chokepoint-leverage",
-      "label": "咽喉杠杆",
-      "fullLabel": "咽喉杠杆",
-      "type": "concept",
-      "route": "concepts/chokepoint-leverage",
-      "summary": "控制海峡、运河和关键通道的人，往往能把地理位置转化成定价权、通行权和规则权。",
       "status": null,
       "degree": 13
     },
@@ -597,6 +597,17 @@
       "degree": 11
     },
     {
+      "id": "theme:dollar-system-and-gray-trade",
+      "key": "dollar-system-and-gray-trade",
+      "label": "美元体系与灰色贸易",
+      "fullLabel": "美元体系与灰色贸易",
+      "type": "theme",
+      "route": "themes/dollar-system-and-gray-trade",
+      "summary": "讨论石油美元的真实脆弱点，究竟藏在公开统计之外的哪些灰色交易链条里。",
+      "status": null,
+      "degree": 11
+    },
+    {
       "id": "model:authority-misinfluence",
       "key": "authority-misinfluence",
       "label": "权威影响",
@@ -729,13 +740,13 @@
       "degree": 11
     },
     {
-      "id": "theme:dollar-system-and-gray-trade",
-      "key": "dollar-system-and-gray-trade",
-      "label": "美元体系与灰色贸易",
-      "fullLabel": "美元体系与灰色贸易",
-      "type": "theme",
-      "route": "themes/dollar-system-and-gray-trade",
-      "summary": "讨论石油美元的真实脆弱点，究竟藏在公开统计之外的哪些灰色交易链条里。",
+      "id": "model:regional-denial-model",
+      "key": "regional-denial-model",
+      "label": "区域拒止模型",
+      "fullLabel": "区域拒止模型",
+      "type": "model",
+      "route": "models/regional-denial-model",
+      "summary": "真正有效的区域拒止，不是无上限扩张，而是把对手压在若干区域里，阻止其形成全球联动能力。",
       "status": null,
       "degree": 10
     },
@@ -839,6 +850,17 @@
       "degree": 10
     },
     {
+      "id": "concept:gray-oil-network",
+      "key": "gray-oil-network",
+      "label": "灰色石油网络",
+      "fullLabel": "灰色石油网络",
+      "type": "concept",
+      "route": "concepts/gray-oil-network",
+      "summary": "绕开正规结算和监管的石油流动，会在影子体系中重塑货币、制裁和地缘利益。",
+      "status": null,
+      "degree": 9
+    },
+    {
       "id": "model:value-capture",
       "key": "value-capture",
       "label": "价值捕获",
@@ -846,17 +868,6 @@
       "type": "model",
       "route": "models/value-capture",
       "summary": "价值捕获模型强调商业链条中关键不只是创造了价值，而是谁真正留下了价值。",
-      "status": null,
-      "degree": 9
-    },
-    {
-      "id": "model:regional-denial-model",
-      "key": "regional-denial-model",
-      "label": "区域拒止模型",
-      "fullLabel": "区域拒止模型",
-      "type": "model",
-      "route": "models/regional-denial-model",
-      "summary": "真正有效的区域拒止，不是无上限扩张，而是把对手压在若干区域里，阻止其形成全球联动能力。",
       "status": null,
       "degree": 9
     },
@@ -1048,6 +1059,17 @@
       "degree": 9
     },
     {
+      "id": "episode:EP189",
+      "key": "EP189",
+      "label": "EP189",
+      "fullLabel": "EP189 · 某国为何能短时间大幅减少石油进口？断崖领先的石油进口国背后谋划的真相！",
+      "type": "episode",
+      "route": "episodes/EP189",
+      "summary": "本期从一组对不上的数据切入：石油进口量断崖式世界第一的某国，日均消耗近1500万桶，却在美以与伊朗军事行动展开、霍尔木兹海峡被封后三四个月内减少三成多。节目逐一排除短期油价、新能源替代、动用战略储备三种主流解释，给出核心判断：这个国家的真实需求本来就只有进口量的三分之二，多出的部分多年来一直在转成战备储油；海峡一封，它只是停止增储、退回真实需求，所以进口暴跌而工业毫发无伤。落点是战备的时间尺度——台海一旦升级成中大型战争，石油要按两年而不是120天来储。",
+      "status": "curated",
+      "degree": 9
+    },
+    {
       "id": "theme:big-government-and-incentive-reversal",
       "key": "big-government-and-incentive-reversal",
       "label": "大政府与激励反转",
@@ -1059,17 +1081,6 @@
       "degree": 8
     },
     {
-      "id": "concept:gray-oil-network",
-      "key": "gray-oil-network",
-      "label": "灰色石油网络",
-      "fullLabel": "灰色石油网络",
-      "type": "concept",
-      "route": "concepts/gray-oil-network",
-      "summary": "绕开正规结算和监管的石油流动，会在影子体系中重塑货币、制裁和地缘利益。",
-      "status": null,
-      "degree": 8
-    },
-    {
       "id": "person:lee-kuan-yew",
       "key": "lee-kuan-yew",
       "label": "李光耀",
@@ -1077,6 +1088,17 @@
       "type": "person",
       "route": "people/lee-kuan-yew",
       "summary": "李光耀是新加坡建国总理，节目借他说明新加坡国家身份、国家责任和小国生存决心怎样压过祖籍血缘与软弱叙事。",
+      "status": null,
+      "degree": 8
+    },
+    {
+      "id": "model:time-arbitrage-model",
+      "key": "time-arbitrage-model",
+      "label": "时间套利模型",
+      "fullLabel": "时间套利模型",
+      "type": "model",
+      "route": "models/time-arbitrage-model",
+      "summary": "真正高明的行动，不是只比现在谁更强，而是比谁更懂得利用时间差、窗口差和成本差。",
       "status": null,
       "degree": 8
     },
@@ -1532,6 +1554,17 @@
       "degree": 7
     },
     {
+      "id": "theme:east-asia-security-realignment",
+      "key": "east-asia-security-realignment",
+      "label": "东亚安全重组与日本转向",
+      "fullLabel": "东亚安全重组与日本转向",
+      "type": "theme",
+      "route": "themes/east-asia-security-realignment",
+      "summary": "讨论日本重新前台化、台海压力外溢，以及东亚安全合作为何越来越难保持模糊。",
+      "status": null,
+      "degree": 7
+    },
+    {
       "id": "concept:pan-institutional-middle-class",
       "key": "pan-institutional-middle-class",
       "label": "泛体制中产",
@@ -1572,17 +1605,6 @@
       "type": "model",
       "route": "models/screening-machine",
       "summary": "教育和组织把人当作待筛选样本，而非待生长的人来处理的系统逻辑。",
-      "status": null,
-      "degree": 7
-    },
-    {
-      "id": "model:time-arbitrage-model",
-      "key": "time-arbitrage-model",
-      "label": "时间套利模型",
-      "fullLabel": "时间套利模型",
-      "type": "model",
-      "route": "models/time-arbitrage-model",
-      "summary": "真正高明的行动，不是只比现在谁更强，而是比谁更懂得利用时间差、窗口差和成本差。",
       "status": null,
       "degree": 7
     },
@@ -1994,17 +2016,6 @@
       "degree": 6
     },
     {
-      "id": "theme:east-asia-security-realignment",
-      "key": "east-asia-security-realignment",
-      "label": "东亚安全重组与日本转向",
-      "fullLabel": "东亚安全重组与日本转向",
-      "type": "theme",
-      "route": "themes/east-asia-security-realignment",
-      "summary": "讨论日本重新前台化、台海压力外溢，以及东亚安全合作为何越来越难保持模糊。",
-      "status": null,
-      "degree": 6
-    },
-    {
       "id": "model:distributed-innovation",
       "key": "distributed-innovation",
       "label": "分布式创新",
@@ -2078,6 +2089,17 @@
       "type": "theme",
       "route": "themes/youth-withdrawal-and-lying-flat",
       "summary": "讨论年轻人在主流机会、劳动回报和身份路径收缩后，如何通过低欲望、退出和躺平保留有限主体性。",
+      "status": null,
+      "degree": 6
+    },
+    {
+      "id": "concept:time-asymmetry",
+      "key": "time-asymmetry",
+      "label": "时间非对称",
+      "fullLabel": "时间非对称",
+      "type": "concept",
+      "route": "concepts/time-asymmetry",
+      "summary": "真正决定战略胜负的，往往不是一场仗的强弱，而是谁能把时间变成自己的朋友。",
       "status": null,
       "degree": 6
     },
@@ -2540,17 +2562,6 @@
       "type": "model",
       "route": "models/identity-stratification",
       "summary": "身份型分层说明阶层排序从收入和资产，转向编制、合规位置、圈层资源和稳定预期。",
-      "status": null,
-      "degree": 5
-    },
-    {
-      "id": "concept:time-asymmetry",
-      "key": "time-asymmetry",
-      "label": "时间非对称",
-      "fullLabel": "时间非对称",
-      "type": "concept",
-      "route": "concepts/time-asymmetry",
-      "summary": "真正决定战略胜负的，往往不是一场仗的强弱，而是谁能把时间变成自己的朋友。",
       "status": null,
       "degree": 5
     },
@@ -6643,6 +6654,17 @@
       "type": "person",
       "route": "people/james-scott",
       "summary": "詹姆斯·斯科特是研究弱者日常抵抗和国家可读性的学者，节目借《弱者的武器》解释躺平的非组织化抵抗意义。",
+      "status": null,
+      "degree": 1
+    },
+    {
+      "id": "concept:wartime-oil-stockpiling",
+      "key": "wartime-oil-stockpiling",
+      "label": "战备储油",
+      "fullLabel": "战备储油",
+      "type": "concept",
+      "route": "concepts/wartime-oil-stockpiling",
+      "summary": "石油进口国把进口量长期维持在真实需求之上，用溢出部分悄悄积累战时储备；危机来临只需停止增储，进口骤降而生产不受伤。",
       "status": null,
       "degree": 1
     },
@@ -14031,6 +14053,51 @@
     {
       "source": "episode:EP188",
       "target": "theme:time-horizon-and-foresight",
+      "kind": "episode-theme"
+    },
+    {
+      "source": "episode:EP189",
+      "target": "concept:wartime-oil-stockpiling",
+      "kind": "episode-concept"
+    },
+    {
+      "source": "episode:EP189",
+      "target": "concept:gray-oil-network",
+      "kind": "episode-concept"
+    },
+    {
+      "source": "episode:EP189",
+      "target": "concept:time-asymmetry",
+      "kind": "episode-concept"
+    },
+    {
+      "source": "episode:EP189",
+      "target": "concept:chokepoint-leverage",
+      "kind": "episode-concept"
+    },
+    {
+      "source": "episode:EP189",
+      "target": "model:time-arbitrage-model",
+      "kind": "episode-model"
+    },
+    {
+      "source": "episode:EP189",
+      "target": "model:regional-denial-model",
+      "kind": "episode-model"
+    },
+    {
+      "source": "episode:EP189",
+      "target": "theme:great-power-competition-and-strategic-time",
+      "kind": "episode-theme"
+    },
+    {
+      "source": "episode:EP189",
+      "target": "theme:east-asia-security-realignment",
+      "kind": "episode-theme"
+    },
+    {
+      "source": "episode:EP189",
+      "target": "theme:dollar-system-and-gray-trade",
       "kind": "episode-theme"
     },
     {
