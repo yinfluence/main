@@ -99,21 +99,41 @@ function extractYoutubeConfig(html) {
   return { key, version, visitor };
 }
 
+function extractVideoFromRichItem(item) {
+  // 旧结构（2026-07 之前）：richItemRenderer.content.videoRenderer
+  const renderer = item?.richItemRenderer?.content?.videoRenderer;
+  if (renderer?.videoId && renderer?.title?.runs?.[0]?.text) {
+    return {
+      id: renderer.videoId,
+      title: renderer.title.runs[0].text,
+      description: (renderer.descriptionSnippet?.runs || []).map((run) => run.text || '').join(''),
+      url: `https://www.youtube.com/watch?v=${renderer.videoId}`
+    };
+  }
+
+  // 新结构（2026-07 频道页改版）：richItemRenderer.content.lockupViewModel
+  const lockup = item?.richItemRenderer?.content?.lockupViewModel;
+  const lockupTitle = lockup?.metadata?.lockupMetadataViewModel?.title?.content;
+  if (lockup?.contentId && lockup?.contentType === 'LOCKUP_CONTENT_TYPE_VIDEO' && lockupTitle) {
+    return {
+      id: lockup.contentId,
+      title: lockupTitle,
+      description: '',
+      url: `https://www.youtube.com/watch?v=${lockup.contentId}`
+    };
+  }
+
+  return null;
+}
+
 function extractVideosFromInitialData(data) {
   const contents = data?.contents?.twoColumnBrowseResultsRenderer?.tabs?.[0]?.tabRenderer?.content?.richGridRenderer?.contents || [];
   const videos = [];
   let continuation = '';
 
   for (const item of contents) {
-    const renderer = item?.richItemRenderer?.content?.videoRenderer;
-    if (renderer?.videoId && renderer?.title?.runs?.[0]?.text) {
-      videos.push({
-        id: renderer.videoId,
-        title: renderer.title.runs[0].text,
-        description: (renderer.descriptionSnippet?.runs || []).map((run) => run.text || '').join(''),
-        url: `https://www.youtube.com/watch?v=${renderer.videoId}`
-      });
-    }
+    const video = extractVideoFromRichItem(item);
+    if (video) videos.push(video);
 
     const token = item?.continuationItemRenderer?.continuationEndpoint?.continuationCommand?.token;
     if (token) continuation = token;
@@ -128,15 +148,8 @@ function extractVideosFromContinuation(data) {
   let continuation = '';
 
   for (const item of items) {
-    const renderer = item?.richItemRenderer?.content?.videoRenderer;
-    if (renderer?.videoId && renderer?.title?.runs?.[0]?.text) {
-      videos.push({
-        id: renderer.videoId,
-        title: renderer.title.runs[0].text,
-        description: (renderer.descriptionSnippet?.runs || []).map((run) => run.text || '').join(''),
-        url: `https://www.youtube.com/watch?v=${renderer.videoId}`
-      });
-    }
+    const video = extractVideoFromRichItem(item);
+    if (video) videos.push(video);
 
     const token = item?.continuationItemRenderer?.continuationEndpoint?.continuationCommand?.token;
     if (token) continuation = token;
@@ -399,6 +412,7 @@ async function main() {
           };
     }
 
+    const existingYoutube = (episode.data.videoLinks || []).find((link) => link?.platform === 'youtube' && link?.url);
     const youtubeLink = override.youtube
       ? override.youtube
       : youtubeMatch
@@ -406,11 +420,14 @@ async function main() {
             platform: 'youtube',
             url: youtubeMatch.url
           }
-        : {
-            platform: 'youtube',
-            status: 'unavailable',
-            note: '未找到'
-          };
+        : existingYoutube
+          // 防回退：抓取端失效（如 2026-07 lockupViewModel 改版）时不得把已有链接抹成未找到
+          ? existingYoutube
+          : {
+              platform: 'youtube',
+              status: 'unavailable',
+              note: '未找到'
+            };
 
     episode.data.videoLinks = [bilibiliLink, youtubeLink];
 

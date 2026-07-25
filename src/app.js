@@ -26,6 +26,14 @@ const HOME_PLATFORM_LINKS = [
 ];
 const WEBSITE_LOG_ENTRIES = [
   {
+    date: '2026-07-25',
+    title: 'EP189 补 YouTube 入口；修复 YouTube 频道页改版导致的链接同步失效',
+    items: [
+      'EP189 的 YouTube 版本已于本日上传，链接补入 videoLinks 并同步 video-link-overrides；节目页现为 B 站金色会员入口 + YouTube 入口双链。',
+      '修复 scripts/sync-video-links.mjs：YouTube 频道页 2026-07 改版后视频条目从 videoRenderer 换成 lockupViewModel，旧脚本一条视频都识别不到，会把全部 YouTube 链接误写成未找到。现兼容两种结构，并加防回退保护——抓取端失效时保留既有 YouTube 链接，不再抹成"未找到"。'
+    ]
+  },
+  {
     date: '2026-07-24',
     title: '新增 EP189 某国为何能短时间大幅减少石油进口？断崖领先的石油进口国背后谋划的真相！',
     items: [
