@@ -30,6 +30,7 @@ const WEBSITE_LOG_ENTRIES = [
     title: 'EP189 补 YouTube 入口；修复 YouTube 频道页改版导致的链接同步失效',
     items: [
       'EP189 的 YouTube 版本已于本日上传，链接补入 videoLinks 并同步 video-link-overrides；节目页现为 B 站金色会员入口 + YouTube 入口双链。',
+      '全库链接体检发现 EP162 也缺 YouTube 入口（7-22 会员状态修正时未同步补上），经频道页与 oembed 双重核实后补入，现全部 189 期 YouTube 入口齐全。',
       '修复 scripts/sync-video-links.mjs：YouTube 频道页 2026-07 改版后视频条目从 videoRenderer 换成 lockupViewModel，旧脚本一条视频都识别不到，会把全部 YouTube 链接误写成未找到。现兼容两种结构，并加防回退保护——抓取端失效时保留既有 YouTube 链接，不再抹成"未找到"。'
     ]
   },
