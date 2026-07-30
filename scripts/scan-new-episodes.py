@@ -26,33 +26,109 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 WEB = os.path.dirname(HERE)
 RAW = os.path.normpath(os.path.join(WEB, '..', 'bilibili', 'raw'))
 YTDLP = os.path.expanduser('~/bilibili-downloader/.venv/bin/yt-dlp')
+# Chrome 导出不可用时的兜底：手工存一份长效 cookie 在这里（Netscape 格式，同 yt-dlp --cookies 输出）
+COOKIE_FALLBACK = os.path.join(HERE, '.bili-cookies.txt')
 MIXIN_TAB = [46,47,18,2,53,8,23,32,15,50,10,31,58,3,45,35,27,43,5,49,33,9,42,19,
              29,28,14,39,12,38,41,13,37,48,7,16,24,55,40,61,26,17,0,1,60,51,30,4,
              22,25,54,21,56,59,6,63,57,62,11,36,20,34,44,52]
+
+
+class BiliError(Exception):
+    """请求 B 站失败。带一句人看得懂的原因，不要抛裸 traceback 到日志里。"""
 
 
 def curl_json(url, cookies, referer='https://www.bilibili.com/'):
     cmd = ['curl', '-s', '-H', f'User-Agent: {UA}', '-H', f'Referer: {referer}', url]
     if cookies:
         cmd[1:1] = ['-b', cookies]
-    out = subprocess.run(cmd, capture_output=True, text=True, timeout=60).stdout
-    return json.loads(out)
+    api = url.split('?')[0]
+    try:
+        out = subprocess.run(cmd, capture_output=True, text=True, timeout=60).stdout
+    except subprocess.TimeoutExpired:
+        raise BiliError(f'请求超时 60s: {api}')
+    try:
+        return json.loads(out)
+    except json.JSONDecodeError:
+        # 风控时 B 站回的是 HTML 而不是 JSON。裸 JSONDecodeError 在日志里看不出是什么事
+        raise BiliError(f'返回不是 JSON（风控？）: {api} -> {out.strip()[:80]!r}')
+
+
+def cookie_has_session(path):
+    """cookie 文件里得有 bilibili 域的 SESSDATA，没有就等于没登录，别拿去问 B 站。"""
+    try:
+        with open(path, encoding='utf-8', errors='ignore') as f:
+            for line in f:
+                p = line.split('\t')
+                if len(p) >= 7 and 'bilibili.com' in p[0] and p[5] == 'SESSDATA' and p[6].strip():
+                    return True
+    except OSError:
+        pass
+    return False
 
 
 def export_cookies():
+    """从 Chrome 现导一份 cookie。
+
+    注意 Chrome 运行时把 cookie 变更先留在内存，过一会儿才落到磁盘的 Cookies 库，
+    而 yt-dlp 读的正是磁盘那份，所以导出来的 SESSDATA 可能已经被轮换掉了。
+    先删旧文件：否则 yt-dlp 失败时会静默复用上一次留在 /tmp 的过期 cookie。
+    """
     dest = os.path.join(tempfile.gettempdir(), 'bili_cookies_scan.txt')
-    subprocess.run([YTDLP, '--cookies-from-browser', 'chrome', '--cookies', dest,
-                    '--simulate', '--quiet', '--no-update',
-                    'https://www.bilibili.com/video/BV1hZKh6xEnV/'],
-                   capture_output=True, text=True, timeout=120)
-    return dest if os.path.exists(dest) else None
+    try:
+        os.remove(dest)
+    except OSError:
+        pass
+    r = subprocess.run([YTDLP, '--cookies-from-browser', 'chrome', '--cookies', dest,
+                        '--simulate', '--quiet', '--no-update',
+                        'https://www.bilibili.com/video/BV1hZKh6xEnV/'],
+                       capture_output=True, text=True, timeout=120)
+    if r.returncode != 0:
+        print(f'WARN: yt-dlp 导 cookie 失败 code={r.returncode} '
+              f'{(r.stderr or "").strip()[:160]}', file=sys.stderr)
+        return None
+    if not (os.path.exists(dest) and cookie_has_session(dest)):
+        print('WARN: 导出的 cookie 里没有 bilibili SESSDATA', file=sys.stderr)
+        return None
+    return dest
 
 
 def wbi_mixin(cookies):
     nav = curl_json('https://api.bilibili.com/x/web-interface/nav', cookies)
-    w = nav['data']['wbi_img']
+    d = nav.get('data') or {}
+    w = d.get('wbi_img') or {}
+    if not w.get('img_url'):
+        raise BiliError(f'nav 没给 wbi_img: code={nav.get("code")} {nav.get("message")}')
     raw = w['img_url'].split('/')[-1].split('.')[0] + w['sub_url'].split('/')[-1].split('.')[0]
-    return ''.join(raw[i] for i in MIXIN_TAB)[:32], nav['data'].get('isLogin')
+    return ''.join(raw[i] for i in MIXIN_TAB)[:32], d.get('isLogin')
+
+
+def login_cookies(explicit=None, tries=3, gap=25):
+    """拿一份 B 站认的 cookie，返回 (cookies, mixin)；拿不到返回 (None, None)。
+
+    2026-07-29/30 连续三次扫描全栽在这里：人在 Chrome 里明明登录着，导出的却是
+    已轮换的旧 SESSDATA，脚本当场判死退出，EP190 就这样漏掉了。所以一次失败不算数，
+    隔 gap 秒重导给 Chrome 落盘的时间，都不行再退到手工存的长效 cookie。
+    """
+    for i in range(1, tries + 1):
+        c = explicit or export_cookies()
+        if c:
+            mixin, is_login = wbi_mixin(c)
+            if is_login:
+                if i > 1:
+                    print(f'（第 {i} 次导 cookie 才拿到有效登录态）')
+                return c, mixin
+            print(f'WARN: 第 {i}/{tries} 次拿到的 cookie 未登录', file=sys.stderr)
+        if explicit or i == tries:
+            break
+        time.sleep(gap)
+
+    if not explicit and os.path.exists(COOKIE_FALLBACK):
+        mixin, is_login = wbi_mixin(COOKIE_FALLBACK)
+        if is_login:
+            print('（Chrome 导出不可用，改用长效 cookie）')
+            return COOKIE_FALLBACK, mixin
+        print(f'WARN: 长效 cookie {COOKIE_FALLBACK} 也失效了', file=sys.stderr)
+    return None, None
 
 
 def wbi_sign(params, mixin):
@@ -62,12 +138,39 @@ def wbi_sign(params, mixin):
     return q + '&w_rid=' + hashlib.md5((q + mixin).encode()).hexdigest()
 
 
+def is_draft(d):
+    """这一期是不是还没整理。
+
+    判 summary 而不是判 status：早期 53 期是手工建的，压根没有 status 字段，
+    拿 status 当判据会把它们全当成新期重新整理一遍。
+    """
+    return d.get('status') == 'draft' or (d.get('summary') or '').strip() in ('', '待整理')
+
+
 def local_eps():
-    eps = set()
-    for f in os.listdir(os.path.join(WEB, 'content', 'episodes')):
+    """已经整理好的期号。草稿不算。
+
+    备料那步会先落一个 summary='待整理' 的骨架再交给整理者。以前这里只看文件名，
+    于是整理一卡死，下次扫描就把草稿当"已收录"，这一期永久冻在待整理状态，
+    网站上挂着空壳还没人知道 —— 比直接漏掉更难发现。所以草稿要能被重新拾起。
+    """
+    eps, drafts = set(), []
+    base = os.path.join(WEB, 'content', 'episodes')
+    for f in os.listdir(base):
         m = re.match(r'(EP\d+)\.json$', f)
-        if m:
+        if not m:
+            continue
+        try:
+            with open(os.path.join(base, f), encoding='utf-8') as fh:
+                d = json.load(fh) or {}
+        except (OSError, json.JSONDecodeError):
+            d = {}          # 读不出来的按草稿处理，宁可多扫一遍也别静默漏掉
+        if is_draft(d):
+            drafts.append(m.group(1))
+        else:
             eps.add(m.group(1))
+    if drafts:
+        print(f'注意：{len(drafts)} 期还停在草稿，本次会重新整理: {", ".join(sorted(drafts))}')
     return eps
 
 
@@ -85,13 +188,11 @@ def main():
     ap.add_argument('--pages', type=int, default=1, help='抓 UP 投稿前 N 页（默认 1，每页 25）')
     args = ap.parse_args()
 
-    cookies = args.cookies or export_cookies()
+    cookies, mixin = login_cookies(args.cookies)
     if not cookies:
-        print('ERROR: cookie 导出失败（Chrome 未登录 B 站？）', file=sys.stderr)
-        return 1
-    mixin, is_login = wbi_mixin(cookies)
-    if not is_login:
-        print('ERROR: B 站未登录，cookie 可能过期', file=sys.stderr)
+        print('ERROR: 拿不到有效的 B 站登录态（重试过 3 次，长效 cookie 也没救回来）。'
+              '去 Chrome 打开一次 bilibili.com 刷新登录态，'
+              f'或把长效 cookie 存到 {COOKIE_FALLBACK}', file=sys.stderr)
         return 1
 
     have = local_eps()
@@ -171,4 +272,8 @@ def main():
 
 
 if __name__ == '__main__':
-    sys.exit(main())
+    try:
+        sys.exit(main())
+    except BiliError as e:
+        print(f'ERROR: {e}', file=sys.stderr)
+        sys.exit(1)

@@ -1,3 +1,23 @@
+# 工作记录 · 2026-07-30 EP190 入库 + 每日自动化止损重建
+
+用户问「影响力不是已经更新了吗，之前那个检查脚本为什么没检查」。查下来脚本每天都按时跑了，是连续三次静默失败：7-29 的 12:10 和 13:10、7-30 的 12:10 全部卡在 `isLogin=false`。EP190 因此晚了一天。
+
+**根因两条，叠加。** 一是 cookie：Chrome 里人明明登录着，但 yt-dlp 读的是磁盘上的 Cookies 库，Chrome 运行时新 SESSDATA 还留在内存，导出的是已轮换的旧值。决定性对照——同一时刻同一网络同一 UA，12:10 那份 cookie 问 `nav` 返回 `-101 未登录`，重新导一份返回 `isLogin=true`（长坡漫道）。二是窗口：原窗口北京 20:05 起，而 UP 从 EP177（07-06）起已改成北京 19:00 发，19 点档全靠一次「窗口外单扫」捡漏，单扫失败就没有第二次。
+
+**为什么两天没人知道**：失败走 `display notification`，请求被系统静默丢弃而 `osascript` 照样返回 0。实测弹窗能看见，但用户要求不弹窗，改成落盘。
+
+- 时区订正：英国 BST 与北京差 **7 小时不是 8**。用 `zoneinfo` 重算最近 12 期 `publishedAt`，10 期是 UTC 11:00 整 = 北京 19:00。B 站页面按浏览器时区渲染成 12:00，按 +8 算就会误读成 20:00。用户在北京 19:26 已看到视频，也反证不可能是 20:00 发。
+- `scripts/scan-new-episodes.py`：新增 `BiliError`（风控返回 HTML 时给人话而不是裸 `JSONDecodeError`）、`cookie_has_session()` 校验、`export_cookies()` 先删旧临时文件并检查 yt-dlp 返回码（原来只判文件存在，失败会静默复用过期 cookie）、`login_cookies()` 隔 25 秒重导最多 3 次 + 长效 cookie `scripts/.bili-cookies.txt` 兜底、`local_eps()` 改为只认整理完成的期号。
+- `local_eps()` 的判据是 `summary` 不是 `status`：早期 53 期根本没有 `status` 字段，按 `status` 判会把它们全当草稿重新整理一遍（改之前实测确认过这个坑）。
+- `scripts/auto-daily.sh`：`notify()` 改为写 `logs/status.json` + `logs/status-history.jsonl`（含 `consecutive_failures`）；锁带 PID 和出生时间、僵死或超 2 小时自动清理；`watch_agent()` 看护整理进程（日志 15 分钟无增长判卡死、总时长 60 分钟判超时，`kill_tree` 连子进程一起杀）；`scan_with_retry()` 失败隔 5 分钟重试最多 2 次；`SUMMARY` 只在本次输出里找（原来 grep 整天日志，同日第二次失败会捡到上次的标记误判成功）；`today_done()` 不再被草稿骗到。
+- 调度：`~/Library/LaunchAgents/com.yingxiangli.daily-auto.plist` 启动点定为英国本地 `12:10 / 12:20 / 13:10 / 13:20`（按用户要求对齐北京 20:10 与 20:20，冬夏各一套）+ `16:00 / 18:00` 当天补救点。窗口起点 UTC 10:50（北京 18:50），密集扫描靠窗口内 10 分钟一轮循环。曾加过 `10:50 / 11:50` 两个更早的点，用户要求删除。
+- 新增 `scripts/test-scan-cookies.py` 与 `scripts/test-auto-daily.sh`，`npm run test:auto` 一键跑，38 项断言覆盖失败路径：cookie 重试与兜底、风控 HTML、僵死锁三种情形、卡死检测与误杀防护、重试上限、收工判断不被草稿骗。测试全在临时目录跑，不碰真实 `logs/`、不真去 B 站、不唤起 claude。
+- EP190 是修完脚本后**由脚本自己跑完的**（用户要求不手工代做）：12:36 扫到 → 下字幕 23KB → 唤起 claude 整理 24 分钟 → 13:00 上线，commit `1a8c286`。
+- 验证：`npm run test:auto` 38/38；真实 `--dry-run` 返回 10（无新期，本地 190 期）；线上 `yinfluence.github.io/main/data/site.json` 已含 EP190 且 `episodes=190`；远端与本地 HEAD 哈希一致；`launchctl print` 确认 6 个启动点已注册。
+- 已知：`npm run test:ui` 关键词分组断言仍失败。`sop/06:268` 已把它记为 pre-existing 并明确要求不要反复用 stash 去验证，与本次无关。
+
+---
+
 # 工作记录 · 2026-06-01 EP152 漳州杨梅泡药入库
 
 新节目 EP152《出口欧盟规规矩矩，内销全是科技狠活！漳州杨梅双标背后的真相》。用户提供 YouTube 链接 + 纯文字稿，B 站暂未上架。
