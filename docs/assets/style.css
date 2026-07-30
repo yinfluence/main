@@ -5260,13 +5260,21 @@ body.page-knowledge-detail {
 
 .mechanism-chain li {
   position: relative;
-  padding: 7px 13px 8px;
+  display: flex;
+  align-items: flex-start;
+  gap: 13px;
+  padding: 8px 14px 9px;
   margin: 0 0 15px;
-  line-height: 1.7;
+  line-height: 1.75;
   background: rgba(255, 253, 249, 0.72);
   border: 1px solid var(--line);
   border-left: 2px solid rgba(184, 138, 60, 0.45);
   border-radius: 7px;
+}
+
+.mechanism-step-body {
+  flex: 1 1 auto;
+  min-width: 0;
 }
 
 .mechanism-chain li:last-child {
@@ -5275,8 +5283,10 @@ body.page-knowledge-detail {
 }
 
 .mechanism-step-title {
-  margin-right: 8px;
-  padding-right: 9px;
+  flex: 0 0 auto;
+  box-sizing: content-box;
+  min-width: 5em;
+  padding-right: 12px;
   border-right: 1px solid rgba(184, 138, 60, 0.32);
   color: var(--gold-deep);
   font-weight: 600;
@@ -5334,12 +5344,16 @@ body.page-knowledge-detail {
 }
 
 @media (max-width: 720px) {
+  .mechanism-chain li {
+    display: block;
+  }
+
   .mechanism-step-title {
     display: block;
-    margin-right: 0;
+    min-width: 0;
     padding-right: 0;
     border-right: 0;
-    margin-bottom: 2px;
+    margin-bottom: 3px;
     white-space: normal;
   }
 
