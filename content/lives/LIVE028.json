@@ -14,12 +14,14 @@
     {
       "platform": "bilibili",
       "url": "https://www.bilibili.com/video/BV1kj3H6cEZD/",
-      "access": "member"
+      "access": "member",
+      "label": "21点场"
     },
     {
       "platform": "bilibili",
       "url": "https://www.bilibili.com/video/BV1kj3H6cE6s/",
-      "access": "member"
+      "access": "member",
+      "label": "23点场"
     }
   ],
   "tags": [

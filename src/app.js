@@ -3786,11 +3786,15 @@ function renderVideoLinkIcon(link) {
   const isUnavailable = normalizeValue(link?.status) === 'unavailable' || !url;
   const unavailableText = String(link?.note || '已下架').trim();
 
+  // 同一场直播被切成两段上传时，两条链接都挂在一期上。
+  // 没有场次标签就会渲染成两个一模一样的图标，读者分不清哪个是哪段。
+  const segmentLabel = String(link?.label || '').trim();
+
   const platforms = {
     bilibili: {
       label: isMemberOnly ? 'Bilibili 会员' : 'Bilibili',
       className: 'bilibili',
-      content: `<span class="media-chip-text media-chip-text-bilibili">bilibili</span>`
+      content: `<span class="media-chip-text media-chip-text-bilibili">bilibili${segmentLabel ? ` · ${escapeHtml(segmentLabel)}` : ''}</span>`
     },
     youtube: {
       label: 'YouTube',
