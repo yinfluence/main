@@ -5272,6 +5272,18 @@ body.page-knowledge-detail {
   border-left-color: var(--gold-deep);
 }
 
+.viewpoint-card,
+.mechanism-chain li {
+  transition: background 0.18s ease, border-color 0.18s ease;
+}
+
+.viewpoint-card:hover,
+.mechanism-chain li:hover {
+  background: rgba(246, 235, 216, 0.85);
+  border-color: rgba(184, 138, 60, 0.34);
+  border-left-color: var(--gold-deep);
+}
+
 .viewpoint-card-title {
   margin: 0 0 4px;
   font-size: 1.02em;
