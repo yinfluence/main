@@ -6830,6 +6830,7 @@ function renderLiveDetail(id) {
   app.innerHTML = `
     <section class="detail">
       <div class="detail-header">
+        ${renderLiveTopNavigation(live.id)}
         <div class="back-row">
           <button type="button" class="back-link back-button" data-nav-back="true">← 返回前一页</button>
           <a class="back-link secondary" href="#/lives">返回直播回顾</a>
@@ -7820,6 +7821,30 @@ function renderEpisodeTopNavigation(episodeId) {
         : '<span class="episode-neighbor-spacer" aria-hidden="true"></span>'}
       ${rightEpisode && rightEpisode.id !== episodeId
         ? `<a class="back-link secondary episode-neighbor-link next" href="${routeTo(`episodes/${rightEpisode.id}`)}">上一集 ${escapeHtml(rightEpisode.id)} →</a>`
+        : '<span class="episode-neighbor-spacer" aria-hidden="true"></span>'}
+    </div>
+  `;
+}
+
+// 跟节目那套一模一样：左边去更新的一场，右边去更早的一场。
+// 到头了就补一个占位，不让另一侧的按钮跑偏。
+function renderLiveTopNavigation(liveId) {
+  const ordered = [...(site.lives || [])].sort(
+    (a, b) => liveNumberFromId(a.id) - liveNumberFromId(b.id)
+  );
+  const index = ordered.findIndex((item) => item.id === liveId);
+  if (index < 0) return '';
+
+  const newer = ordered[index + 1] || null;   // 编号更大 = 更新的一场
+  const older = ordered[index - 1] || null;
+
+  return `
+    <div class="episode-neighbor-row">
+      ${newer
+        ? `<a class="back-link secondary episode-neighbor-link" href="${routeTo(`lives/${newer.id}`)}">← 下一场 ${escapeHtml(newer.id)}</a>`
+        : '<span class="episode-neighbor-spacer" aria-hidden="true"></span>'}
+      ${older
+        ? `<a class="back-link secondary episode-neighbor-link next" href="${routeTo(`lives/${older.id}`)}">上一场 ${escapeHtml(older.id)} →</a>`
         : '<span class="episode-neighbor-spacer" aria-hidden="true"></span>'}
     </div>
   `;
