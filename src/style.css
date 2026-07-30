@@ -5252,6 +5252,103 @@ body.page-knowledge-detail {
   margin-top: 14px;
 }
 
+.mechanism-chain {
+  margin: 16px 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.mechanism-chain li {
+  position: relative;
+  padding: 7px 13px 8px;
+  margin: 0 0 15px;
+  line-height: 1.7;
+  background: rgba(255, 253, 249, 0.72);
+  border: 1px solid var(--line);
+  border-left: 2px solid rgba(184, 138, 60, 0.45);
+  border-radius: 7px;
+}
+
+.mechanism-chain li:last-child {
+  margin-bottom: 0;
+  border-left-color: var(--gold-deep);
+}
+
+.mechanism-step-title {
+  margin-right: 8px;
+  padding-right: 9px;
+  border-right: 1px solid rgba(184, 138, 60, 0.32);
+  color: var(--gold-deep);
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.mechanism-chain li:not(:last-child)::after {
+  content: '↓';
+  position: absolute;
+  left: 18px;
+  bottom: -14px;
+  color: rgba(184, 138, 60, 0.7);
+  font-size: 12px;
+  line-height: 1;
+}
+
+.live-mechanism-foot {
+  margin-top: 26px;
+  padding-top: 20px;
+  border-top: 1px dashed rgba(184, 138, 60, 0.26);
+}
+
+.live-mechanism-foot .accordion-item {
+  border-color: rgba(184, 138, 60, 0.2);
+  background: rgba(255, 253, 249, 0.6);
+}
+
+.mechanism-chain-plain {
+  margin: 14px 0 0;
+}
+
+.mechanism-chain-plain li,
+.mechanism-chain-plain li:last-child {
+  padding: 0 0 0 17px;
+  margin: 0 0 9px;
+  background: none;
+  border: 0;
+  border-radius: 0;
+}
+
+.mechanism-chain-plain li:last-child {
+  margin-bottom: 0;
+}
+
+.mechanism-chain-plain li::before {
+  content: '→';
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: rgba(184, 138, 60, 0.65);
+}
+
+.mechanism-chain-plain li:not(:last-child)::after {
+  content: none;
+}
+
+@media (max-width: 720px) {
+  .mechanism-step-title {
+    display: block;
+    margin-right: 0;
+    padding-right: 0;
+    border-right: 0;
+    margin-bottom: 2px;
+    white-space: normal;
+  }
+
+  .mechanism-chain-plain .mechanism-step-title {
+    display: inline;
+    margin-right: 6px;
+  }
+}
+
 .split {
   display: grid;
   grid-template-columns: 1.1fr 0.9fr;

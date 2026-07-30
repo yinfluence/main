@@ -27,6 +27,21 @@ const HOME_PLATFORM_LINKS = [
 const WEBSITE_LOG_ENTRIES = [
   {
     date: '2026-07-30',
+    title: '机制推演改成带小主题的链条；全库清破折号、隐去主播人称',
+    items: [
+      '机制推演换了呈现方式。原来是一整段用箭头串起来的文字，挤成一坨读不动，现在每一步单独成块，左侧金色竖边，块与块之间一个向下箭头，光看小主题就能读出整条脉络。',
+      '节目 164 期的机制链逐步补上小主题，写法是机制动作而不是事件名，例如 EP145 的「偷换问题 → 两问混成一问 → 账算到个人 → 读书无用有了说法 → 老路子失灵 → 学者失位」。另有 26 期本来每步就是短语（如「高咨询费投入」），本身已经是脉络，保持原样不加标题。',
+      '直播 28 期新增机制推演区块，放在页面最后。小主题直接用该场的话题分类，例如 LIVE028 的「产业观察 → 社会心理 → 资本与公司 → 国家路径 → 文化与规则」，与上面的话题分段一一对应。',
+      'EP146 到 EP153 这 8 期的机制链原本用全角箭头，前端识别不了，一并统一成半角并补上小主题。',
+      '全库破折号 401 处清零，改成断句。破折号串出来的长句是阅读负担最大的一处。',
+      '正文不再出现指主播的人称。「主持人」206 处全部隐去，句子仍以主播为逻辑主语但字面不出现，例如「是主持人朋友家孩子的真实经历」改成「是朋友家孩子的亲身经历」。隐去后语义会丢的地方改用「节目」「这期」承接。这条规则同时写进 sop/05a，并覆盖了 sop/08 里 boundaries 不动的旧例外。',
+      '「知识库保留为节目语境下的故事案例」这类元叙述套话 40 处清理，统一改成「本页按观点收」这种说法。',
+      '顺带修掉几个转写错字与编辑残留：撤头撤委（彻头彻尾）、优素通（优速通）、「要提醒的是，：」，以及 5 处开头缺主语的残句。',
+      'EP143、EP145、EP186、LIVE010、LIVE028 五期做了逐句改写试点，长句比例从 66% 降到 17% 上下，摘要与事件背景合并成整段、不再分点铺开。'
+    ]
+  },
+  {
+    date: '2026-07-30',
     title: '新增 EP190 新加坡内阁改组解析：财权、人事、东盟、就业，看懂执政走向！',
     items: [
       '新增 EP190《新加坡内阁改组解析：财权、人事、东盟、就业，看懂执政走向！》，B 站经接口核实为普通视频（蓝色入口），YouTube 入口正常，两条链接写入 videoLinks 并同步 video-link-overrides，publishedAt 取 B 站 pubdate 2026-07-30。字幕经 AI 字幕自助链路获取入 raw/。',
@@ -6507,7 +6522,7 @@ function renderEpisodeDetail(id) {
         ${accordionItem('事件背景', renderParagraphText(episode.topic.background), true)}
         ${accordionItem('核心矛盾', renderLinkedEpisodeList(episode.topic.conflicts))}
         ${accordionItem('讨论边界', renderLinkedEpisodeList(episode.topic.boundaries))}
-        ${accordionItem('机制推演', renderParagraphText(episode.topic.mechanism))}
+        ${accordionItem('机制推演', renderMechanismChain(episode.topic.mechanism))}
         ${accordionItem('延展话题', renderLinkedEpisodeList(episode.topic.extensions))}
       </section>
 
@@ -6872,10 +6887,11 @@ function renderLiveDetail(id) {
         </section>
       ` : ''}
 
-      ${(live.boundaries || []).length ? `
+      ${live.mechanism ? `
         <section class="detail-section">
-          <h2>整理边界</h2>
-          <ul class="live-boundary-list">${live.boundaries.map((item) => `<li>${renderLiveText(item)}</li>`).join('')}</ul>
+          <h2>机制推演</h2>
+          <p class="subtle">这一场的主线怎么一步步推下来的。</p>
+          ${renderMechanismChain(live.mechanism, renderLiveText)}
         </section>
       ` : ''}
 
@@ -6921,6 +6937,26 @@ function renderParagraphText(value) {
     .split(/\n{2,}/)
     .map((paragraph) => `<p>${renderLinkedEpisodeText(paragraph.trim())}</p>`)
     .join('');
+}
+
+function renderMechanismChain(value, renderText = renderLinkedEpisodeText, variant = '') {
+  const raw = String(value || '').trim();
+  if (!raw) return '';
+  const steps = raw
+    .split(/\s*->\s*/)
+    .map((step) => step.trim().replace(/[。；]$/, ''))
+    .filter(Boolean);
+  if (steps.length < 2) return renderParagraphText(raw);
+  const cls = variant === 'plain' ? 'mechanism-chain mechanism-chain-plain' : 'mechanism-chain';
+  return `<ol class="${cls}">${steps
+    .map((step) => {
+      const titled = step.match(/^([^，。：；！？]{2,10})：\s*(.+)$/s);
+      if (!titled) return `<li>${renderText(step)}</li>`;
+      return `<li><span class="mechanism-step-title">${renderText(
+        titled[1]
+      )}</span>${renderText(titled[2])}</li>`;
+    })
+    .join('')}</ol>`;
 }
 
 function renderHighlightCards(items = []) {
