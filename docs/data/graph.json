@@ -2,14 +2,14 @@
   "meta": {
     "title": "颖响力知识图谱",
     "subtitle": "节目、概念、模型、人物、主题之间的可视化连接网络",
-    "nodeCount": 653,
-    "linkCount": 2382,
+    "nodeCount": 656,
+    "linkCount": 2394,
     "typeCounts": {
       "model": 77,
       "live": 28,
       "theme": 91,
-      "episode": 189,
-      "concept": 203,
+      "episode": 190,
+      "concept": 205,
       "person": 65
     }
   },
@@ -301,6 +301,17 @@
       "degree": 25
     },
     {
+      "id": "theme:singapore-and-small-state-survival",
+      "key": "singapore-and-small-state-survival",
+      "label": "新加坡与小国生存术",
+      "fullLabel": "新加坡与小国生存术",
+      "type": "theme",
+      "route": "themes/singapore-and-small-state-survival",
+      "summary": "讨论新加坡如何把规则、海峡、人才和谨慎外交组合成一套小国长期生存方法。",
+      "status": null,
+      "degree": 25
+    },
+    {
       "id": "episode:EP156",
       "key": "EP156",
       "label": "EP156",
@@ -332,17 +343,6 @@
       "summary": "去年流出去一万亿美元，二零一五年只走了六千多亿。",
       "status": "curated",
       "degree": 25
-    },
-    {
-      "id": "theme:singapore-and-small-state-survival",
-      "key": "singapore-and-small-state-survival",
-      "label": "新加坡与小国生存术",
-      "fullLabel": "新加坡与小国生存术",
-      "type": "theme",
-      "route": "themes/singapore-and-small-state-survival",
-      "summary": "讨论新加坡如何把规则、海峡、人才和谨慎外交组合成一套小国长期生存方法。",
-      "status": null,
-      "degree": 24
     },
     {
       "id": "theme:middle-class-descent-and-stratification",
@@ -521,6 +521,17 @@
       "degree": 20
     },
     {
+      "id": "model:strategic-timing",
+      "key": "strategic-timing",
+      "label": "战略时机",
+      "fullLabel": "战略时机",
+      "type": "model",
+      "route": "models/strategic-timing",
+      "summary": "真正决定收益的往往不是是否参与，而是你能否在远早于大众情绪的时点、以合适规模和合适位置进入。",
+      "status": null,
+      "degree": 20
+    },
+    {
       "id": "episode:EP128",
       "key": "EP128",
       "label": "EP128",
@@ -550,17 +561,6 @@
       "type": "theme",
       "route": "themes/ev-financialization-and-false-sales",
       "summary": "聚焦新能源车行业如何依靠补贴、融资、渠道黑箱和虚假销售维持增长叙事。",
-      "status": null,
-      "degree": 19
-    },
-    {
-      "id": "model:strategic-timing",
-      "key": "strategic-timing",
-      "label": "战略时机",
-      "fullLabel": "战略时机",
-      "type": "model",
-      "route": "models/strategic-timing",
-      "summary": "真正决定收益的往往不是是否参与，而是你能否在远早于大众情绪的时点、以合适规模和合适位置进入。",
       "status": null,
       "degree": 19
     },
@@ -730,6 +730,17 @@
       "degree": 16
     },
     {
+      "id": "theme:southeast-asia-fragmentation-and-bloc-competition",
+      "key": "southeast-asia-fragmentation-and-bloc-competition",
+      "label": "东南亚裂变与集团竞争",
+      "fullLabel": "东南亚裂变与集团竞争",
+      "type": "theme",
+      "route": "themes/southeast-asia-fragmentation-and-bloc-competition",
+      "summary": "讨论东南亚如何从缓冲地带变成各方拉扯、重新站队和内部裂变并行发生的高风险区域。",
+      "status": null,
+      "degree": 16
+    },
+    {
       "id": "theme:narrative-speculation-and-retail-traps",
       "key": "narrative-speculation-and-retail-traps",
       "label": "投资叙事与散户陷阱",
@@ -829,17 +840,6 @@
       "degree": 15
     },
     {
-      "id": "theme:southeast-asia-fragmentation-and-bloc-competition",
-      "key": "southeast-asia-fragmentation-and-bloc-competition",
-      "label": "东南亚裂变与集团竞争",
-      "fullLabel": "东南亚裂变与集团竞争",
-      "type": "theme",
-      "route": "themes/southeast-asia-fragmentation-and-bloc-competition",
-      "summary": "讨论东南亚如何从缓冲地带变成各方拉扯、重新站队和内部裂变并行发生的高风险区域。",
-      "status": null,
-      "degree": 15
-    },
-    {
       "id": "concept:gray-oil-network",
       "key": "gray-oil-network",
       "label": "灰色石油网络",
@@ -913,6 +913,17 @@
       "type": "model",
       "route": "models/feedback-loops",
       "summary": "反馈回路模型解释老板偏好、顾问强化和组织沉默如何形成自我强化的错误循环。",
+      "status": null,
+      "degree": 14
+    },
+    {
+      "id": "model:rule-anchored-small-state-model",
+      "key": "rule-anchored-small-state-model",
+      "label": "规则锚定型小国生存",
+      "fullLabel": "规则锚定型小国生存",
+      "type": "model",
+      "route": "models/rule-anchored-small-state-model",
+      "summary": "小国要长期活下来，不能只靠地理好运，更要靠规则信誉、理性政府和可预期的制度自我约束。",
       "status": null,
       "degree": 14
     },
@@ -1034,17 +1045,6 @@
       "type": "theme",
       "route": "themes/rule-of-law-boundaries-and-social-trust",
       "summary": "关注法律灰区如何影响公众的善意、风险感和彼此信任。",
-      "status": null,
-      "degree": 13
-    },
-    {
-      "id": "model:rule-anchored-small-state-model",
-      "key": "rule-anchored-small-state-model",
-      "label": "规则锚定型小国生存",
-      "fullLabel": "规则锚定型小国生存",
-      "type": "model",
-      "route": "models/rule-anchored-small-state-model",
-      "summary": "小国要长期活下来，不能只靠地理好运，更要靠规则信誉、理性政府和可预期的制度自我约束。",
       "status": null,
       "degree": 13
     },
@@ -1368,6 +1368,17 @@
       "degree": 12
     },
     {
+      "id": "episode:EP190",
+      "key": "EP190",
+      "label": "EP190",
+      "fullLabel": "EP190 · 新加坡内阁改组解析：财权、人事、东盟、就业，看懂执政走向！",
+      "type": "episode",
+      "route": "episodes/EP190",
+      "summary": "新加坡新一轮内阁改组7月生效，总理黄循财上任两年仍兼任财政部长。\n\n外界读成不肯放权，这里给出另一套解释：财政是小国的生命线，地缘动荡和AI产业升级又逼着整套框架重排，梯队没长成之前不是不想放，是不敢放。\n\n新人破格进内阁也不是个人揽权，是人民行动党的梯队制在赶2035年的交接班时间表。\n\n贸工部改名能源、贸易与工业部并设双部长，是给2027年东盟主席国任期提前配架构；黄志明时隔六年重返内阁专管就业和职场转型，则说明未来几年的头等大事落在民生。",
+      "status": "curated",
+      "degree": 12
+    },
+    {
       "id": "model:authority-misinfluence",
       "key": "authority-misinfluence",
       "label": "权威影响",
@@ -1397,6 +1408,17 @@
       "type": "concept",
       "route": "concepts/sanction-containment",
       "summary": "制裁的真正作用常常不是逼对手立刻认输，而是长期压低其外延空间、联动能力和做大速度。",
+      "status": null,
+      "degree": 11
+    },
+    {
+      "id": "model:institutional-fit",
+      "key": "institutional-fit",
+      "label": "制度适配",
+      "fullLabel": "制度适配",
+      "type": "model",
+      "route": "models/institutional-fit",
+      "summary": "制度适配解释能力能否兑现，取决于组织被放在怎样的法律、资本和治理环境中。",
       "status": null,
       "degree": 11
     },
@@ -1584,17 +1606,6 @@
       "type": "model",
       "route": "models/political-embedded-enterprise",
       "summary": "企业一旦把自身命运深嵌进地方政府或国资体系，短期会更能续命，长期却更容易沦为政策工具。",
-      "status": null,
-      "degree": 10
-    },
-    {
-      "id": "model:institutional-fit",
-      "key": "institutional-fit",
-      "label": "制度适配",
-      "fullLabel": "制度适配",
-      "type": "model",
-      "route": "models/institutional-fit",
-      "summary": "制度适配解释能力能否兑现，取决于组织被放在怎样的法律、资本和治理环境中。",
       "status": null,
       "degree": 10
     },
@@ -2127,6 +2138,17 @@
       "degree": 8
     },
     {
+      "id": "concept:pragmatic-legitimacy",
+      "key": "pragmatic-legitimacy",
+      "label": "务实合法性",
+      "fullLabel": "务实合法性",
+      "type": "concept",
+      "route": "concepts/pragmatic-legitimacy",
+      "summary": "政权或共同体的稳定感，常来自普通人能持续获得可感的生活改善和秩序保障。",
+      "status": null,
+      "degree": 8
+    },
+    {
       "id": "theme:ev-safety-and-consumer-testing",
       "key": "ev-safety-and-consumer-testing",
       "label": "新能源安全边界与消费者测试",
@@ -2600,17 +2622,6 @@
       "degree": 7
     },
     {
-      "id": "concept:pragmatic-legitimacy",
-      "key": "pragmatic-legitimacy",
-      "label": "务实合法性",
-      "fullLabel": "务实合法性",
-      "type": "concept",
-      "route": "concepts/pragmatic-legitimacy",
-      "summary": "政权或共同体的稳定感，常来自普通人能持续获得可感的生活改善和秩序保障。",
-      "status": null,
-      "degree": 7
-    },
-    {
       "id": "concept:consumer-testbed",
       "key": "consumer-testbed",
       "label": "消费者测试场",
@@ -2948,6 +2959,28 @@
       "type": "concept",
       "route": "concepts/exam-centered-discipline",
       "summary": "学校生活、身体节奏和人格评价都围绕考试排名组织起来时，教育会退化为规训系统。",
+      "status": null,
+      "degree": 6
+    },
+    {
+      "id": "person:lee-hsien-loong",
+      "key": "lee-hsien-loong",
+      "label": "李显龙",
+      "fullLabel": "李显龙",
+      "type": "person",
+      "route": "people/lee-hsien-loong",
+      "summary": "李显龙是新加坡前总理、现任国务资政，节目借他理解新加坡务实外交、国家身份边界和小国平衡逻辑。",
+      "status": null,
+      "degree": 6
+    },
+    {
+      "id": "theme:human-value-and-state-credit",
+      "key": "human-value-and-state-credit",
+      "label": "人的价值与国家信用",
+      "fullLabel": "人的价值与国家信用",
+      "type": "theme",
+      "route": "themes/human-value-and-state-credit",
+      "summary": "讨论国家究竟把个体视为成本、工具，还是视为必须兑现承诺的对象。",
       "status": null,
       "degree": 6
     },
@@ -3403,6 +3436,17 @@
       "degree": 5
     },
     {
+      "id": "person:lawrence-wong",
+      "key": "lawrence-wong",
+      "label": "黄循财",
+      "fullLabel": "黄循财",
+      "type": "person",
+      "route": "people/lawrence-wong",
+      "summary": "黄循财是新加坡总理兼财政部长，节目借他观察新加坡主动中立、国家身份边界和国家信用履约。",
+      "status": null,
+      "degree": 5
+    },
+    {
       "id": "theme:family-succession-and-governance",
       "key": "family-succession-and-governance",
       "label": "家族企业继承与治理断裂",
@@ -3436,17 +3480,6 @@
       "degree": 5
     },
     {
-      "id": "person:lee-hsien-loong",
-      "key": "lee-hsien-loong",
-      "label": "李显龙",
-      "fullLabel": "李显龙",
-      "type": "person",
-      "route": "people/lee-hsien-loong",
-      "summary": "李显龙是新加坡前总理、现任国务资政，节目借他理解新加坡务实外交、国家身份边界和小国平衡逻辑。",
-      "status": null,
-      "degree": 5
-    },
-    {
       "id": "theme:platform-labor-and-lived-reality",
       "key": "platform-labor-and-lived-reality",
       "label": "平台劳动与真实生存",
@@ -3476,17 +3509,6 @@
       "type": "concept",
       "route": "concepts/authority-internalization",
       "summary": "外部权威被吸收到人格内部后，个体会在家庭、职场和亲密关系中自动低位化。",
-      "status": null,
-      "degree": 5
-    },
-    {
-      "id": "theme:human-value-and-state-credit",
-      "key": "human-value-and-state-credit",
-      "label": "人的价值与国家信用",
-      "fullLabel": "人的价值与国家信用",
-      "type": "theme",
-      "route": "themes/human-value-and-state-credit",
-      "summary": "讨论国家究竟把个体视为成本、工具，还是视为必须兑现承诺的对象。",
       "status": null,
       "degree": 5
     },
@@ -3997,17 +4019,6 @@
       "degree": 4
     },
     {
-      "id": "person:lawrence-wong",
-      "key": "lawrence-wong",
-      "label": "黄循财",
-      "fullLabel": "黄循财",
-      "type": "person",
-      "route": "people/lawrence-wong",
-      "summary": "黄循财是新加坡总理兼财政部长，节目借他观察新加坡主动中立、国家身份边界和国家信用履约。",
-      "status": null,
-      "degree": 4
-    },
-    {
       "id": "person:jia-guolong",
       "key": "jia-guolong",
       "label": "贾国龙",
@@ -4103,6 +4114,17 @@
       "type": "theme",
       "route": "themes/automotive-r-and-d-governance",
       "summary": "讨论汽车研发体系里的送检量产落差、师徒网络、权威压制和系统性失真。",
+      "status": null,
+      "degree": 4
+    },
+    {
+      "id": "concept:anticipatory-governance",
+      "key": "anticipatory-governance",
+      "label": "前瞻治理",
+      "fullLabel": "前瞻治理",
+      "type": "concept",
+      "route": "concepts/anticipatory-governance",
+      "summary": "在问题形成之前就把它设计掉，而不是等矛盾积累、民怨爆发后再修补的治理方式。",
       "status": null,
       "degree": 4
     },
@@ -4840,17 +4862,6 @@
       "type": "concept",
       "route": "concepts/platform-double-standard",
       "summary": "平台执行规则时若按账号商业价值区别处理，治理就会变成选择性守门。",
-      "status": null,
-      "degree": 3
-    },
-    {
-      "id": "concept:anticipatory-governance",
-      "key": "anticipatory-governance",
-      "label": "前瞻治理",
-      "fullLabel": "前瞻治理",
-      "type": "concept",
-      "route": "concepts/anticipatory-governance",
-      "summary": "在问题形成之前就把它设计掉，而不是等矛盾积累、民怨爆发后再修补的治理方式。",
       "status": null,
       "degree": 3
     },
@@ -6362,6 +6373,17 @@
       "degree": 1
     },
     {
+      "id": "concept:skill-mismatch",
+      "key": "skill-mismatch",
+      "label": "技能错位",
+      "fullLabel": "技能错位",
+      "type": "concept",
+      "route": "concepts/skill-mismatch",
+      "summary": "产业换代的速度超过在职劳动者更新技能的速度，岗位在增加，能接住的人却接不上。",
+      "status": null,
+      "degree": 1
+    },
+    {
       "id": "model:inheritance-distortion-model",
       "key": "inheritance-distortion-model",
       "label": "继承扭曲模型",
@@ -6820,6 +6842,17 @@
       "type": "concept",
       "route": "concepts/ownership-management-separation",
       "summary": "家族握住资产所有权和收益权，把投资、信托、税务、运营全部交给专业团队，用制度代替血缘完成传承，这是家族办公室的底层逻辑。",
+      "status": null,
+      "degree": 1
+    },
+    {
+      "id": "concept:leadership-pipeline",
+      "key": "leadership-pipeline",
+      "label": "梯队接班制",
+      "fullLabel": "梯队接班制",
+      "type": "concept",
+      "route": "concepts/leadership-pipeline",
+      "summary": "把接班做成一套按代际排期的梯队制度，而不是让在位者临时指定继任者。",
       "status": null,
       "degree": 1
     },
@@ -14407,6 +14440,66 @@
     {
       "source": "episode:EP189",
       "target": "theme:dollar-system-and-gray-trade",
+      "kind": "episode-theme"
+    },
+    {
+      "source": "episode:EP190",
+      "target": "concept:leadership-pipeline",
+      "kind": "episode-concept"
+    },
+    {
+      "source": "episode:EP190",
+      "target": "concept:skill-mismatch",
+      "kind": "episode-concept"
+    },
+    {
+      "source": "episode:EP190",
+      "target": "concept:anticipatory-governance",
+      "kind": "episode-concept"
+    },
+    {
+      "source": "episode:EP190",
+      "target": "concept:pragmatic-legitimacy",
+      "kind": "episode-concept"
+    },
+    {
+      "source": "episode:EP190",
+      "target": "model:rule-anchored-small-state-model",
+      "kind": "episode-model"
+    },
+    {
+      "source": "episode:EP190",
+      "target": "model:strategic-timing",
+      "kind": "episode-model"
+    },
+    {
+      "source": "episode:EP190",
+      "target": "model:institutional-fit",
+      "kind": "episode-model"
+    },
+    {
+      "source": "episode:EP190",
+      "target": "person:lawrence-wong",
+      "kind": "episode-person"
+    },
+    {
+      "source": "episode:EP190",
+      "target": "person:lee-hsien-loong",
+      "kind": "episode-person"
+    },
+    {
+      "source": "episode:EP190",
+      "target": "theme:singapore-and-small-state-survival",
+      "kind": "episode-theme"
+    },
+    {
+      "source": "episode:EP190",
+      "target": "theme:southeast-asia-fragmentation-and-bloc-competition",
+      "kind": "episode-theme"
+    },
+    {
+      "source": "episode:EP190",
+      "target": "theme:human-value-and-state-credit",
       "kind": "episode-theme"
     },
     {
