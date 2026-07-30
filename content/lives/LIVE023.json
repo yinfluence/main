@@ -13,7 +13,8 @@
   "videoLinks": [
     {
       "platform": "bilibili",
-      "url": "https://www.bilibili.com/video/BV1nzNB6ZERc/"
+      "url": "https://www.bilibili.com/video/BV1nzNB6ZERc/",
+      "access": "member"
     }
   ],
   "tags": [
@@ -151,7 +152,7 @@
         "所以蒋方舟、贾浅浅、彭女士、董小姐这几位的家世都不算牛，有一个算一个",
         "说法是上天的通道开了，总不能只有自家人飞升，关闭之前还有人能用",
         "拿范进中举里胡屠户那段作比：跟你不是一波的，你要同他拱手作揖平起平坐，那就坏了规矩。[EP092](episodes/EP092) 讲过这层小镇婆罗门的自我认定",
-        "报出来的在他看来只是万分之一。**剩下那些还好好活着，因为没有人敢把所有人都查一遍**。[财富权力再生产](models/wealth-power-reproduction)最难打断的就是这条通道"
+        "报出来的只是万分之一。**剩下那些还好好活着，因为没有人敢把所有人都查一遍**。[财富权力再生产](models/wealth-power-reproduction)最难打断的就是这条通道"
       ]
     },
     {

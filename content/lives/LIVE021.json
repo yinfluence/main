@@ -13,7 +13,8 @@
   "videoLinks": [
     {
       "platform": "bilibili",
-      "url": "https://www.bilibili.com/video/BV12KMG6KEfM/"
+      "url": "https://www.bilibili.com/video/BV12KMG6KEfM/",
+      "access": "member"
     }
   ],
   "tags": [
@@ -78,7 +79,7 @@
         "为什么必须卷。**因为提不了单位价值**，做不出特斯拉和英伟达那种东西，只能把利润让出去",
         "给的比喻很直白：**你早上本来该吃两个煎饼果子，现在只吃一个**，那一个被欧洲人、非洲人或者美国人吃了",
         "全产业链也救不了这件事。芯片这些做到六七十分，九十分以上的还在别人那儿。剩下那十分补不上，[同质竞争](concepts/homogeneous-competition)就只能往价格里卷",
-        "所以把这套叫寄生经济。[EP125](episodes/EP125) 讲的拼多多逻辑，在他看来就是这套国家策略在企业身上的投影，也是[低价竞争陷阱](concepts/price-war-trap)"
+        "所以把这套叫寄生经济。[EP125](episodes/EP125) 讲的拼多多逻辑，就是这套国家策略在企业身上的投影，也是[低价竞争陷阱](concepts/price-war-trap)"
       ]
     },
     {

@@ -13,7 +13,8 @@
   "videoLinks": [
     {
       "platform": "bilibili",
-      "url": "https://www.bilibili.com/video/BV1jFRPB3EKv/"
+      "url": "https://www.bilibili.com/video/BV1jFRPB3EKv/",
+      "access": "member"
     }
   ],
   "tags": [
@@ -214,7 +215,7 @@
       "summary": "有位观众问漫剧编剧还有没有前途，给出一个反过来的判断。",
       "points": [
         "**理科已经走到边际**，很难再拿到超越边际的东西，这是给的前提",
-        "AI 和这一整套体系在他看来是给文科搭工具，能用起来的是文科生和文理兼修的人",
+        "AI 和这一整套体系是给文科搭的工具，能用起来的是文科生和文理兼修的人",
         "AI 最容易替代的恰恰是理科那种具体操作的思维，[标准化劳动替代](concepts/standard-labor-replacement)先切的是这一层",
         "短时间内替代不了的是你怎么形成观点、怎么搭出自己的体系，[人机分工](models/human-machine-differentiation)的界线画在这儿",
         "落到编剧身上：**你从一个编剧变成编剧队的队长**，甚至可以自己去拍",

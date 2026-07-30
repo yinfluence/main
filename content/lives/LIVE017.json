@@ -13,7 +13,8 @@
   "videoLinks": [
     {
       "platform": "bilibili",
-      "url": "https://www.bilibili.com/video/BV13Z7x63EQB/"
+      "url": "https://www.bilibili.com/video/BV13Z7x63EQB/",
+      "access": "member"
     }
   ],
   "tags": [
@@ -132,7 +133,7 @@
       "summary": "B 公司老板放话说五年后要做世界第一。主播说这句话不是说给消费者听的。",
       "points": [
         "讲了自己当年跟地方政府打交道的经验：**你跟他讲道理，他跟你耍流氓；你跟他耍流氓，他跟你讲道理**",
-        "所以那句世界第一，在他看来是在跟 V 耍一点小流氓",
+        "所以那句世界第一，是在跟 V 耍一点小流氓",
         "潜台词是：我要当老大，你得帮我，**因为威本来就是你的，不是我的**",
         "这类表态归到一个模式里：公司越到出问题的时候，越要喊我要成为第一。[表演式创新](concepts/performative-innovation)的话术版本就是这一句",
         "当年地产也是这样，一个说宇宙第一，一个说中国第一，[EP015](episodes/EP015) 讲过地方债和电车怎么绑在一起",

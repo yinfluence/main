@@ -13,7 +13,8 @@
   "videoLinks": [
     {
       "platform": "bilibili",
-      "url": "https://www.bilibili.com/video/BV1w8526gEcR/"
+      "url": "https://www.bilibili.com/video/BV1w8526gEcR/",
+      "access": "member"
     }
   ],
   "tags": [

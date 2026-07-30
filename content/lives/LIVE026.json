@@ -13,7 +13,8 @@
   "videoLinks": [
     {
       "platform": "bilibili",
-      "url": "https://www.bilibili.com/video/BV1yv336ME1s/"
+      "url": "https://www.bilibili.com/video/BV1yv336ME1s/",
+      "access": "member"
     }
   ],
   "tags": [
@@ -94,7 +95,7 @@
     {
       "chapter": "长期主义：讲规矩的人在算什么账",
       "title": "输得起，才玩得久",
-      "summary": "给那些被嘲笑的欧美做法换了个解释。政治正确、配额、白左议程，在他看来都是拿钱做的社会测试。",
+      "summary": "给那些被嘲笑的欧美做法换了个解释。政治正确、配额、白左议程，都是拿钱做的社会测试。",
       "points": [
         "**什么是对的不该由谁宣布，只能测**。左的试右的试，三十年后看哪家企业真变好。[有限试验](concepts/bounded-experimentation)要的就是这三十年的对照",
         "测试是有钱人才玩得起的。**反正输一次没关系**，我不会一直输，模型侧叫[边界化社会试验](models/bounded-social-experiment)",

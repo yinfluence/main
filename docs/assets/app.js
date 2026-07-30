@@ -5187,7 +5187,25 @@ function revealHomeSearchForQuery() {
 }
 
 function getHomeFeaturedEpisodes() {
-  return [...site.episodes].sort((a, b) => episodeNumberFromId(b.id) - episodeNumberFromId(a.id));
+  // 首页同时收节目和直播回放，按发布时间倒序，新的排在最前面
+  const episodes = (site.episodes || []).map((episode) => ({ ...episode, kind: 'episode' }));
+  const lives = (site.lives || []).map((live) => ({
+    ...live,
+    kind: 'live',
+    title: live.mainThread || live.title || '',
+    summary: live.oneLiner || live.summary || '',
+    tags: live.tags || [],
+  }));
+  return [...episodes, ...lives].sort((a, b) => {
+    const ta = new Date(a.publishedAt || 0).getTime();
+    const tb = new Date(b.publishedAt || 0).getTime();
+    if (tb !== ta) return tb - ta;
+    return String(b.id).localeCompare(String(a.id));
+  });
+}
+
+function homeCardRoute(item) {
+  return item?.kind === 'live' ? `lives/${item.id}` : `episodes/${item.id}`;
 }
 
 function getWrappedHomeEpisodeIndex(index, maxIndex) {
@@ -5203,21 +5221,27 @@ function getHomeEpisodeOutgoingIndex(currentIndex, direction, maxIndex) {
     : getWrappedHomeEpisodeIndex(currentIndex + 1, maxIndex);
 }
 
+function homeFeaturedPosition(item) {
+  // 混排之后编号不再连续，位置按它在列表里的次序算
+  const list = getHomeFeaturedEpisodes();
+  const index = list.findIndex((entry) => entry?.id === item?.id);
+  return index >= 0 ? index + 1 : 1;
+}
+
 function getHomeEpisodePositionLabel(episode, totalEpisodes) {
-  if (!episode) return `第 1 / ${totalEpisodes} 集`;
-  const episodeNumber = episodeNumberFromId(episode.id);
-  return `第 ${Number.isFinite(episodeNumber) ? episodeNumber : 1} / ${totalEpisodes} 集`;
+  if (!episode) return `第 1 / ${totalEpisodes} 条`;
+  return `第 ${homeFeaturedPosition(episode)} / ${totalEpisodes} 条`;
 }
 
 function getHomeEpisodeRangeLabel(episodes = [], totalEpisodes) {
   const numbers = episodes
-    .map((episode) => episodeNumberFromId(episode?.id))
+    .map((episode) => homeFeaturedPosition(episode))
     .filter((value) => Number.isFinite(value))
     .sort((a, b) => a - b);
 
-  if (!numbers.length) return `第 1 / ${totalEpisodes} 集`;
-  if (numbers.length === 1) return `第 ${numbers[0]} / ${totalEpisodes} 集`;
-  return `第 ${numbers[0]}-${numbers[numbers.length - 1]} / ${totalEpisodes} 集`;
+  if (!numbers.length) return `第 1 / ${totalEpisodes} 条`;
+  if (numbers.length === 1) return `第 ${numbers[0]} / ${totalEpisodes} 条`;
+  return `第 ${numbers[0]}-${numbers[numbers.length - 1]} / ${totalEpisodes} 条`;
 }
 
 function isEpisodeFresh(episode) {
@@ -5293,9 +5317,9 @@ function renderHomeEpisodeCardMarkup(episode, { preview = false, mobileAction = 
   const tagLimit = mobileAction ? HOME_EPISODE_MOBILE_TAG_LIMIT : HOME_EPISODE_TAG_LIMIT;
   const visibleTags = (episode.tags || []).slice(0, tagLimit);
   return `
-    <article class="card home-episode-card${preview ? ' is-preview' : ''}" data-episode-href="${routeTo(`episodes/${episode.id}`)}">
+    <article class="card home-episode-card${preview ? ' is-preview' : ''}" data-episode-href="${routeTo(homeCardRoute(episode))}">
       <p class="card-kicker">${escapeHtml(episode.id)} ${renderHomeEpisodeKickerMeta(episode)}</p>
-      <a class="card-primary-link" href="${routeTo(`episodes/${episode.id}`)}">
+      <a class="card-primary-link" href="${routeTo(homeCardRoute(episode))}">
         <h3>${escapeHtml(displayEpisodeTitle(episode.title))}</h3>
       </a>
       <p>${escapeHtml(summary)}</p>
