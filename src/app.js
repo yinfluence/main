@@ -844,6 +844,7 @@ let keywordIndexQuery = '';
 let episodeIndexQuery = '';
 let episodeIndexAppliedQuery = '';
 let episodeIndexRangeStart = 0;
+let liveIndexRangeStart = 0;
 let episodeIndexSearchMode = false;
 let episodeIndexFocusSearchOnRender = false;
 let episodeIndexSearchOriginHash = '';
@@ -1214,6 +1215,7 @@ function getProgressSections() {
   if (explicitSections.length) {
     if (
       document.body.classList.contains('page-episode-index')
+        || document.body.classList.contains('page-live-index')
         || document.body.classList.contains('page-updates')
         || document.body.classList.contains('page-keyword-index')
     ) {
@@ -1241,6 +1243,7 @@ function getSectionProgressLabel(section) {
   if (explicitLabel) {
     if (
       document.body.classList.contains('page-episode-index')
+        || document.body.classList.contains('page-live-index')
         || document.body.classList.contains('page-keyword-index')
     ) {
       return explicitLabel;
@@ -1333,6 +1336,7 @@ function renderSectionProgressPanel() {
 
 function getSectionProgressPanelTitle() {
   if (document.body.classList.contains('page-episode-index')) return '节目轮盘';
+  if (document.body.classList.contains('page-live-index')) return '直播轮盘';
   if (document.body.classList.contains('page-updates')) return '日志日期';
   if (document.body.classList.contains('page-keyword-index')) return '关键词目录';
   return '页面章节';
@@ -4991,6 +4995,7 @@ function renderSidebar() {
       </div>
       <a class="sidebar-link" href="#/">首页 <span class="count-badge">Home</span></a>
       <a class="sidebar-link" href="#/episodes">节目 <span class="count-badge">${site.stats.episodes}</span></a>
+      <a class="sidebar-link" href="#/lives">直播回顾 <span class="count-badge">${site.stats.lives || 0}</span></a>
       <a class="sidebar-link" href="#/concepts">概念 <span class="count-badge">${site.stats.concepts}</span></a>
       <a class="sidebar-link" href="#/models">模型 <span class="count-badge">${site.stats.models}</span></a>
       <a class="sidebar-link" href="#/people">人物 <span class="count-badge">${peopleCount}</span></a>
@@ -6502,6 +6507,314 @@ function renderEpisodeDetail(id) {
           ` : ''}
         ` : ''}
       </section>
+      ${renderLiveMentions(episode)}
+    </section>
+  `;
+}
+
+const LIVE_LINK_TYPE_LABELS = {
+  episodes: '节目',
+  concepts: '概念',
+  models: '模型',
+  themes: '主题',
+  keywords: '关键词'
+};
+
+function getLives() {
+  return Array.isArray(site.lives) ? site.lives : [];
+}
+
+function findLiveLinkTarget(link) {
+  const collections = {
+    episodes: site.episodes,
+    lives: getLives(),
+    concepts: site.concepts,
+    models: site.models,
+    themes: site.themes,
+    keywords: site.keywords
+  };
+  const collection = collections[link?.type];
+  if (!Array.isArray(collection)) return null;
+  return collection.find((item) => item.id === link.id) || null;
+}
+
+// 直播正文里的显式内链：[显示文字](models/path-dependence)
+// 只解析写在数据里的链接，不做全局关键词自动匹配，避免正文被高亮淹没。
+function renderLiveText(value) {
+  const escaped = escapeHtml(String(value || ''));
+  const linked = escaped.replace(/\[([^\]]+)\]\((episodes|lives|concepts|models|themes|keywords)\/([A-Za-z0-9_-]+)\)/g, (match, label, type, id) => {
+    const target = findLiveLinkTarget({ type, id });
+    if (!target) return label;
+    const hint = type === 'episodes' ? displayEpisodeTitle(target.title) : (target.summary || target.name || '');
+    return `<a class="live-inline-link" href="${routeTo(`${type}/${id}`)}" title="${escapeHtml(hint)}">${label}</a>`;
+  });
+  return linked.replace(/\*\*([^*]+)\*\*/g, '<strong class="live-emphasis">$1</strong>');
+}
+
+function renderLiveSegment(segment, index) {
+  const body = `
+    ${segment.summary ? `<p class="live-segment-summary">${renderLiveText(segment.summary)}</p>` : ''}
+    ${(segment.points || []).length ? `<ul class="live-segment-points">${segment.points.map((point) => `<li>${renderLiveText(point)}</li>`).join('')}</ul>` : ''}
+  `;
+  return accordionItem(`${String(index + 1).padStart(2, '0')}　${segment.title}`, body);
+}
+
+function liveMetaLine(live) {
+  const parts = [];
+  if (live.liveDate) parts.push(`直播 ${live.liveDate}`);
+  if (live.durationMinutes) parts.push(`${live.durationMinutes} 分钟`);
+  if ((live.segments || []).length) parts.push(`${live.segments.length} 个话题`);
+  return parts.join(' · ');
+}
+
+const CHAPTER_NUMERALS = ['1', '2', '3', '4', '5', '6', '7', '8'];
+
+function groupLiveChapters(segments = []) {
+  const chapters = [];
+  segments.forEach((segment) => {
+    const name = segment.chapter || '话题';
+    const last = chapters[chapters.length - 1];
+    if (last && last.name === name) {
+      last.segments.push(segment);
+      return;
+    }
+    chapters.push({ name, segments: [segment] });
+  });
+  return chapters;
+}
+
+function renderLiveChapters(live) {
+  const segments = live.segments || [];
+  const chapters = groupLiveChapters(segments);
+  let counter = 0;
+  return chapters.map((chapter, index) => {
+    const body = chapter.segments.map((segment) => renderLiveSegment(segment, counter++)).join('');
+    return `
+      <details class="live-chapter">
+        <summary class="live-chapter-head">
+          <span class="live-chapter-index">${CHAPTER_NUMERALS[index] || index + 1}</span>
+          <span class="live-chapter-title">${escapeHtml(chapter.name)}</span>
+          <span class="live-chapter-count">${chapter.segments.length} 节</span>
+        </summary>
+        <div class="live-chapter-body">${body}</div>
+      </details>
+    `;
+  }).join('');
+}
+
+function renderLiveMentions(item, title = '直播里聊过') {
+  const mentions = Array.isArray(item && item.liveMentions) ? item.liveMentions : [];
+  if (!mentions.length) return '';
+
+  const card = (mention) => `
+    <a class="list-item live-mention" href="${routeTo(`lives/${mention.id}`)}">
+      <h3>${escapeHtml(mention.id)}｜${escapeHtml(mention.mainThread)}</h3>
+      ${mention.sourceTitle ? `<p class="subtle">在「${escapeHtml(mention.sourceTitle)}」里提到</p>` : ''}
+      ${mention.note ? `<p>${escapeHtml(mention.note)}</p>` : ''}
+    </a>
+  `;
+  const visible = mentions.slice(0, 3);
+  const rest = mentions.slice(3);
+
+  return `
+    <section class="detail-section">
+      <h2>${escapeHtml(title)}</h2>
+      <div class="list">${visible.map(card).join('')}</div>
+      ${rest.length ? `
+        <details class="live-mention-more">
+          <summary>还有 ${rest.length} 场直播提到过</summary>
+          <div class="list">${rest.map(card).join('')}</div>
+        </details>
+      ` : ''}
+    </section>
+  `;
+}
+
+function liveNumberFromId(id) {
+  const match = /LIVE(\d+)/i.exec(String(id || ''));
+  return match ? Number(match[1]) : Number.NaN;
+}
+
+// 直播每组 5 期，节目是 10 期。直播单场信息量更大，一屏放 5 张卡刚好。
+function buildLiveRanges(lives = [], step = 5) {
+  const numbers = lives.map((live) => liveNumberFromId(live.id)).filter((value) => Number.isFinite(value));
+  const max = numbers.length ? Math.max(...numbers) : 0;
+  const ranges = [];
+  for (let start = 1; start <= max; start += step) {
+    const end = Math.min(start + step - 1, max);
+    // 空区间不进轮盘，避免点进去是一片空白
+    if (!numbers.some((value) => value >= start && value <= end)) continue;
+    ranges.push({ start, end, label: `${start}-${end}` });
+  }
+  return ranges.reverse();
+}
+
+function renderLiveIndexList(lives = []) {
+  if (!lives.length) return '<div class="empty-state">这一组还没有整理好的直播回顾。</div>';
+  return `
+    <div class="list">
+      ${lives.map((live) => {
+        const href = routeTo(`lives/${live.id}`);
+        const label = `${live.id.replace(/^LIVE/i, '')}场 ${String(live.mainThread || live.title).replace(/\s+/g, '').slice(0, 12)}`;
+        return `
+        <a
+          class="list-item"
+          href="${href}"
+          data-progress-href="${href}"
+          data-progress-section="true"
+          data-progress-label="${escapeHtml(label)}"
+        >
+          <h3>${escapeHtml(live.id)}｜${escapeHtml(live.mainThread || live.title)}</h3>
+          <p class="subtle">${escapeHtml(liveMetaLine(live))}</p>
+          <p>${escapeHtml(live.oneLiner || live.summary || '')}</p>
+        </a>
+      `;
+      }).join('')}
+    </div>
+  `;
+}
+
+function renderLiveIndex() {
+  const isMobile = window.matchMedia('(max-width: 768px)').matches;
+  const lives = [...getLives()].sort((a, b) => liveNumberFromId(b.id) - liveNumberFromId(a.id));
+  const ranges = buildLiveRanges(lives);
+  const selectedRange = ranges.find((range) => range.start === liveIndexRangeStart) || ranges[0];
+  const selectedIndex = Math.max(0, ranges.findIndex((range) => range.start === selectedRange?.start));
+  const previousRange = selectedIndex > 0 ? ranges[selectedIndex - 1] : ranges[ranges.length - 1] || null;
+  const nextRange = selectedIndex < ranges.length - 1 ? ranges[selectedIndex + 1] : ranges[0] || null;
+  const visibleLives = selectedRange
+    ? lives.filter((live) => {
+      const number = liveNumberFromId(live.id);
+      return number >= selectedRange.start && number <= selectedRange.end;
+    })
+    : lives;
+
+  const wheelMarkup = ranges.length > 1 ? `
+    <div class="episode-index-toolbar-shell">
+      <div class="episode-index-toolbar${isMobile ? ' mobile' : ''}">
+        <div class="episode-toolbar-main is-search-collapsed">
+          <div class="episode-range-wheel-wrap">
+            <div class="episode-range-wheel${isMobile ? ' mobile' : ''}" aria-label="直播分组轮盘">
+              ${ranges.map((range, index) => `
+                <button
+                  class="episode-range-wheel-option${index === selectedIndex ? ' active' : ''}"
+                  type="button"
+                  data-live-range="${range.start}"
+                  data-range-wheel-item="true"
+                  aria-label="切换到区间 ${range.label}"
+                  aria-pressed="${index === selectedIndex ? 'true' : 'false'}"
+                >${escapeHtml(`${range.label}场`)}</button>
+              `).join('')}
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  ` : '';
+
+  const footerNavMarkup = ranges.length > 1 ? `
+    <div class="episode-range-footer-nav">
+      <button class="range-nav-button range-footer-button" type="button" data-live-range="${previousRange?.start ?? ''}">${escapeHtml(previousRange ? `${previousRange.label}场` : '—')}</button>
+      <button class="range-nav-button range-footer-button" type="button" data-live-range="${nextRange?.start ?? ''}">${escapeHtml(nextRange ? `${nextRange.label}场` : '—')}</button>
+    </div>
+  ` : '';
+
+  app.innerHTML = `
+    <section class="detail">
+      <div class="detail-header">
+        <a class="back-link" href="#/">← 返回首页</a>
+        <p class="detail-eyebrow">Live Replays</p>
+        <h1 class="detail-title">直播回顾</h1>
+        <p class="detail-summary">直播是一周视频回顾加读评加聊天，一场往往覆盖多个互不相干的话题。这里把每一场按话题拆开收录，每个话题各自串回相关的节目、概念与模型，所以既可以整场读，也可以只挑一个话题读。</p>
+      </div>
+      ${wheelMarkup}
+      <section class="detail-section episode-index-section">
+        ${renderLiveIndexList(visibleLives)}
+        ${footerNavMarkup}
+      </section>
+    </section>
+  `;
+
+  app.querySelectorAll('[data-live-range]').forEach((button) => {
+    button.addEventListener('click', () => {
+      const value = Number(button.dataset.liveRange);
+      if (!Number.isFinite(value)) return;
+      liveIndexRangeStart = value;
+      renderLiveIndex();
+      window.requestAnimationFrame(() => {
+        const active = app.querySelector('.episode-range-wheel-option.active');
+        if (active instanceof HTMLElement) centerActiveEpisodeRangeButton(active, 'smooth');
+        syncSectionProgress({ reveal: true });
+      });
+    });
+  });
+
+  const wheel = app.querySelector('.episode-range-wheel');
+  if (wheel instanceof HTMLElement) {
+    setupEpisodeRangeWheelDrag(wheel);
+    window.requestAnimationFrame(() => {
+      const active = wheel.querySelector('.episode-range-wheel-option.active');
+      if (active instanceof HTMLElement) centerActiveEpisodeRangeButton(active);
+    });
+  }
+}
+
+// 多数直播用的是「一周视频回顾」这个通用投稿名，没有信息量；
+// 只有加更场之类会带真正的内容标题，那种才值得在页面上露出来。
+function isLiveOriginalTitleMeaningful(live) {
+  const title = String(live?.title || '').trim();
+  if (!title) return false;
+  if (title === String(live?.mainThread || '').trim()) return false;
+  return !/一周视频回顾|读评|深度分析/.test(title);
+}
+
+function renderLiveDetail(id) {
+  const live = getLives().find((item) => item.id === id);
+  if (!live) {
+    renderNotFound('直播回顾不存在');
+    return;
+  }
+
+  const linkedTagChips = renderLinkedChipItems('keywords', live.tags || [], site.keywords);
+
+  app.innerHTML = `
+    <section class="detail">
+      <div class="detail-header">
+        <div class="back-row">
+          <button type="button" class="back-link back-button" data-nav-back="true">← 返回前一页</button>
+          <a class="back-link secondary" href="#/lives">返回直播回顾</a>
+        </div>
+        <p class="detail-eyebrow">Live Replay${live.sessionLabel ? ` · ${escapeHtml(live.sessionLabel)}` : ''}</p>
+        <h1 class="detail-title">${escapeHtml(live.id)}｜${escapeHtml(live.mainThread || live.title)}</h1>
+        ${isLiveOriginalTitleMeaningful(live) ? `<p class="live-original-title">本场原标题：${escapeHtml(live.title)}</p>` : ''}
+        <div class="detail-summary live-detail-summary">${String(live.summary || '').split(/\n{2,}/).filter(Boolean).map((paragraph) => `<p>${escapeHtml(paragraph.trim())}</p>`).join('')}</div>
+        <p class="episode-publish-meta"><span class="episode-publish-date">${escapeHtml(liveMetaLine(live))}</span></p>
+        ${linkedTagChips ? `<div class="chip-row episode-header-meta">${linkedTagChips}</div>` : ''}
+        ${(live.videoLinks || []).length ? `<div class="chip-row episode-video-links">${live.videoLinks.map((link) => renderVideoLinkIcon(link)).join('')}</div>` : ''}
+      </div>
+
+      <section class="detail-section">
+        <h2>话题分段</h2>
+        <p class="subtle">先按大话题分组，每个大话题下面再拆成小节。点开哪一节读哪一节，段里的串联指向知识库已有的节目和节点。</p>
+        ${renderLiveChapters(live)}
+      </section>
+
+
+      ${(live.audienceThreads || []).length ? `
+        <section class="detail-section">
+          <h2>直播间问答</h2>
+          <p class="subtle">观众在弹幕里问的，主播当场答的，这里保留他给出的完整说法。</p>
+          ${live.audienceThreads.map((thread, index) => accordionItem(thread.prompt, String(thread.reply || '').split(/\n{2,}/).filter(Boolean).map((paragraph) => `<p>${renderLiveText(paragraph.trim())}</p>`).join(''), index === 0)).join('')}
+        </section>
+      ` : ''}
+
+      ${(live.boundaries || []).length ? `
+        <section class="detail-section">
+          <h2>整理边界</h2>
+          <ul class="live-boundary-list">${live.boundaries.map((item) => `<li>${renderLiveText(item)}</li>`).join('')}</ul>
+        </section>
+      ` : ''}
+
     </section>
   `;
 }
@@ -7508,6 +7821,7 @@ function renderConceptDetail(id) {
         { title: '判断边界', content: renderDetailList(concept.boundaries) }
       ])}
       ${renderKnowledgeRelatedEpisodesSection('concepts', concept.id, relatedEpisodes)}
+      ${renderLiveMentions(concept)}
     </section>
   `;
 
@@ -7551,6 +7865,7 @@ function renderModelDetail(id) {
         { title: '判断边界', content: renderDetailList(model.boundaries) }
       ])}
       ${renderKnowledgeRelatedEpisodesSection('models', model.id, relatedEpisodes)}
+      ${renderLiveMentions(model)}
     </section>
   `;
 
@@ -7608,6 +7923,7 @@ function renderThemeDetail(id) {
       </div>
       ${renderKnowledgeAnalysisSection(themeAnalysisSections)}
       ${renderKnowledgeRelatedEpisodesSection('themes', theme.id, relatedEpisodes)}
+      ${renderLiveMentions(theme)}
     </section>
   `;
 
@@ -7698,6 +8014,7 @@ function renderRoute() {
   document.body.classList.toggle('has-assisted-snap', section !== 'graph');
   document.body.classList.toggle('page-home', !section);
   document.body.classList.toggle('page-episode-index', section === 'episodes' && !id);
+  document.body.classList.toggle('page-live-index', section === 'lives' && !id);
   document.body.classList.toggle('page-keyword-index', section === 'keywords' && !id);
   document.body.classList.toggle('page-knowledge-detail', ['concepts', 'models', 'themes', 'keywords'].includes(section) && !!id);
   document.body.classList.toggle('page-reference-detail', ['concepts', 'models', 'themes', 'keywords', 'people'].includes(section) && !!id);
@@ -7726,6 +8043,11 @@ function renderRoute() {
       episodeIndexRangeStart = 0;
     }
     renderEpisodeIndex();
+  } else if (section === 'lives' && !id) {
+    if (!(previousRoute.section === 'lives' && !previousRoute.id)) liveIndexRangeStart = 0;
+    renderLiveIndex();
+  } else if (section === 'lives' && id) {
+    renderLiveDetail(id);
   } else if (section === 'concepts' && !id) {
     renderConceptIndex();
   } else if (section === 'models' && !id) {

@@ -3753,6 +3753,14 @@ a.chip:active {
   margin-top: 10px;
 }
 
+/* 加更场那类带内容标题的直播，把原标题露出来；通用投稿名不显示 */
+.live-original-title {
+  margin: 0 0 10px;
+  font-size: 14px;
+  line-height: 1.7;
+  color: var(--color-text-muted, #6b7280);
+}
+
 .episode-publish-meta {
   margin: 6px 0 4px;
   font-size: 13px;
@@ -6438,4 +6446,187 @@ body.page-home .section.split > div .list-item:active p {
   .back-link:hover {
     transform: none;
   }
+}
+
+/* 直播回顾：话题分段与串联 */
+.live-segment-summary {
+  margin-top: 14px;
+  color: rgba(52, 43, 33, 0.9);
+}
+
+.live-segment-points {
+  margin-top: 12px;
+  padding-left: 20px;
+}
+
+.live-segment-points li {
+  margin-bottom: 8px;
+  line-height: 1.75;
+}
+
+.live-segment-links {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px;
+  margin-top: 18px;
+  padding-top: 14px;
+  border-top: 1px dashed rgba(164, 144, 116, 0.22);
+}
+
+.live-segment-links-title {
+  font-size: 11px;
+  letter-spacing: 0.1em;
+  color: rgba(118, 96, 68, 0.6);
+}
+
+a.chip.live-segment-link {
+  padding: 5px 11px;
+  font-size: 11.5px;
+}
+
+.live-detail-summary p {
+  margin: 0 0 10px;
+}
+
+.live-detail-summary p:last-child {
+  margin-bottom: 0;
+}
+
+/* 直播正文里的显式内链 */
+a.live-inline-link {
+  color: rgba(140, 92, 22, 0.96);
+  text-decoration: none;
+  border-bottom: 1px solid rgba(184, 138, 60, 0.42);
+  padding-bottom: 1px;
+  transition: color 0.16s ease, border-color 0.16s ease;
+}
+
+a.live-inline-link:hover {
+  color: rgba(118, 77, 19, 1);
+  border-bottom-color: rgba(184, 138, 60, 0.9);
+}
+
+.live-boundary-list {
+  margin: 14px 0 0;
+  padding-left: 20px;
+}
+
+.live-boundary-list li {
+  margin-bottom: 8px;
+  line-height: 1.75;
+  color: rgba(72, 60, 46, 0.86);
+}
+
+/* 直播正文里的重点 */
+.live-emphasis {
+  font-weight: 700;
+  color: rgba(34, 27, 19, 0.98);
+  background: linear-gradient(180deg, transparent 60%, rgba(214, 176, 92, 0.34) 60%);
+  padding: 0 1px;
+}
+
+.live-segment-points li {
+  color: rgba(60, 50, 38, 0.82);
+}
+
+/* 节目页与知识节点页上的直播反链 */
+.live-mention h3 {
+  color: rgba(118, 77, 19, 0.96);
+}
+
+.live-mention-more {
+  margin-top: 12px;
+}
+
+.live-mention-more summary {
+  cursor: pointer;
+  font-size: 12.5px;
+  color: rgba(118, 96, 68, 0.8);
+}
+
+/* 直播话题的两层结构 */
+.live-chapter {
+  margin-top: 26px;
+}
+
+.live-chapter:first-of-type {
+  margin-top: 18px;
+}
+
+.live-chapter-head {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 15px 18px;
+  border-radius: 14px;
+  background: linear-gradient(180deg, rgba(255, 252, 245, 0.96), rgba(246, 238, 224, 0.92));
+  border: 1px solid rgba(164, 144, 116, 0.2);
+  cursor: pointer;
+  list-style: none;
+  transition: background 0.18s ease, border-color 0.18s ease;
+}
+
+.live-chapter-head::-webkit-details-marker {
+  display: none;
+}
+
+.live-chapter-head:hover {
+  border-color: rgba(184, 138, 60, 0.42);
+}
+
+.live-chapter[open] > .live-chapter-head {
+  background: linear-gradient(180deg, rgba(247, 235, 214, 0.96), rgba(240, 226, 202, 0.92));
+  border-color: rgba(184, 138, 60, 0.36);
+}
+
+.live-chapter-head::after {
+  content: '';
+  width: 8px;
+  height: 8px;
+  margin-left: 4px;
+  border-right: 1.6px solid rgba(118, 96, 68, 0.7);
+  border-bottom: 1.6px solid rgba(118, 96, 68, 0.7);
+  transform: rotate(45deg) translate(-2px, -2px);
+  transition: transform 0.18s ease;
+  flex: 0 0 auto;
+}
+
+.live-chapter[open] > .live-chapter-head::after {
+  transform: rotate(-135deg) translate(-2px, -2px);
+}
+
+.live-chapter-body {
+  padding: 10px 0 4px 12px;
+  margin-left: 10px;
+  border-left: 1px solid rgba(164, 144, 116, 0.22);
+}
+
+.live-chapter-index {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 22px;
+  height: 22px;
+  border-radius: 999px;
+  background: rgba(184, 138, 60, 0.16);
+  color: rgba(118, 77, 19, 0.96);
+  font-size: 12px;
+  font-weight: 700;
+  flex: 0 0 auto;
+}
+
+.live-chapter-title {
+  margin: 0;
+  font-size: 17px;
+  font-weight: 700;
+  color: rgba(38, 30, 22, 0.95);
+}
+
+.live-chapter-count {
+  margin-left: auto;
+  padding-right: 2px;
+  font-size: 11.5px;
+  color: rgba(118, 96, 68, 0.66);
+  flex: 0 0 auto;
 }

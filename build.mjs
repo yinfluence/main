@@ -356,6 +356,87 @@ const KEYWORD_PARENT_RULES = {
   'russia': ['普京']
 };
 
+const LIVE_INLINE_LINK = /\[([^\]]+)\]\((episodes|concepts|models|themes)\/([A-Za-z0-9_-]+)\)/g;
+
+function stripLiveMarkup(text) {
+  return String(text || '')
+    .replace(/\[([^\]]+)\]\((?:episodes|concepts|models|themes|lives|keywords)\/[A-Za-z0-9_-]+\)/g, '$1')
+    .replace(/\*\*([^*]+)\*\*/g, '$1')
+    .trim();
+}
+
+// 直播是单向引用节目和知识节点的，这里把引用倒过来，
+// 让节目页、概念页也能看到哪几场直播聊过它。只写进 site.json，不落回 content/。
+function buildLiveBacklinks(lives = []) {
+  const buckets = {
+    episodes: new Map(),
+    concepts: new Map(),
+    models: new Map(),
+    themes: new Map()
+  };
+
+  function add(type, id, mention) {
+    const bucket = buckets[type];
+    if (!bucket || !id) return;
+    if (!bucket.has(id)) bucket.set(id, []);
+    const list = bucket.get(id);
+    const existing = list.find((entry) => entry.id === mention.id);
+    if (existing) {
+      // 正文里的引用带上下文，比顶层数组的兜底条目更有信息量
+      if (!existing.note && mention.note) Object.assign(existing, mention);
+      return;
+    }
+    list.push(mention);
+  }
+
+  for (const live of lives) {
+    const base = {
+      id: live.id,
+      mainThread: live.mainThread || live.title || live.id,
+      liveDate: live.liveDate || '',
+      sessionLabel: live.sessionLabel || ''
+    };
+
+    function scanText(text, sourceTitle) {
+      const raw = String(text || '');
+      for (const match of raw.matchAll(LIVE_INLINE_LINK)) {
+        const [, , type, id] = match;
+        add(type, id, { ...base, sourceTitle, note: stripLiveMarkup(raw) });
+      }
+    }
+
+    for (const segment of live.segments || []) {
+      scanText(segment.summary, segment.title);
+      for (const point of segment.points || []) scanText(point, segment.title);
+    }
+    for (const thread of live.audienceThreads || []) {
+      scanText(thread.reply, thread.prompt);
+    }
+
+    for (const id of live.relatedEpisodes || []) add('episodes', id, { ...base, sourceTitle: '', note: '' });
+    for (const id of live.concepts || []) add('concepts', id, { ...base, sourceTitle: '', note: '' });
+    for (const id of live.models || []) add('models', id, { ...base, sourceTitle: '', note: '' });
+    for (const id of live.themes || []) add('themes', id, { ...base, sourceTitle: '', note: '' });
+  }
+
+  for (const bucket of Object.values(buckets)) {
+    for (const list of bucket.values()) {
+      list.sort((a, b) => String(b.liveDate).localeCompare(String(a.liveDate)));
+    }
+  }
+
+  return buckets;
+}
+
+function applyLiveBacklinks(collection = [], bucket) {
+  if (!bucket) return collection;
+  for (const item of collection) {
+    const mentions = bucket.get(item.id);
+    if (mentions && mentions.length) item.liveMentions = mentions;
+  }
+  return collection;
+}
+
 function buildKeywordCatalog(episodes) {
   const keywords = new Map();
 
@@ -651,9 +732,10 @@ function mergeEpisodeCatalog(catalog, curatedEpisodes) {
   return [...byId.values()].sort((a, b) => a.id.localeCompare(b.id));
 }
 
-function buildGraphData({ episodes, concepts, models, people, themes }) {
+function buildGraphData({ episodes, lives = [], concepts, models, people, themes }) {
   const routePrefix = {
     episode: 'episodes',
+    live: 'lives',
     concept: 'concepts',
     model: 'models',
     person: 'people',
@@ -717,6 +799,15 @@ function buildGraphData({ episodes, concepts, models, people, themes }) {
     });
   }
 
+  for (const live of lives) {
+    registerNode('live', live, {
+      label: live.id,
+      fullLabel: `${live.id} · ${live.mainThread || live.title || ''}`.trim(),
+      summary: live.oneLiner || live.summary || '',
+      status: live.status || 'curated'
+    });
+  }
+
   for (const concept of concepts) {
     registerNode('concept', concept, { summary: concept.summary });
   }
@@ -756,6 +847,41 @@ function buildGraphData({ episodes, concepts, models, people, themes }) {
       if (theme) {
         registerLink(episodeNodeId, makeNodeId('theme', theme.id), 'episode-theme');
       }
+    }
+  }
+
+  for (const live of lives) {
+    const liveNodeId = makeNodeId('live', live.id);
+    const targets = new Set();
+
+    for (const id of live.relatedEpisodes || []) targets.add(`episodes/${id}`);
+    for (const id of live.concepts || []) targets.add(`concepts/${id}`);
+    for (const id of live.models || []) targets.add(`models/${id}`);
+    for (const id of live.themes || []) targets.add(`themes/${id}`);
+
+    const bodies = [];
+    for (const segment of live.segments || []) {
+      bodies.push(segment.summary || '');
+      bodies.push(...(segment.points || []));
+    }
+    for (const thread of live.audienceThreads || []) bodies.push(thread.reply || '');
+    for (const body of bodies) {
+      for (const match of String(body).matchAll(LIVE_INLINE_LINK)) {
+        targets.add(`${match[2]}/${match[3]}`);
+      }
+    }
+
+    const nodeTypeByRoute = {
+      episodes: 'episode',
+      concepts: 'concept',
+      models: 'model',
+      themes: 'theme'
+    };
+    for (const target of targets) {
+      const [route, id] = target.split('/');
+      const type = nodeTypeByRoute[route];
+      if (!type) continue;
+      registerLink(liveNodeId, makeNodeId(type, id), `live-${type}`);
     }
   }
 
@@ -860,8 +986,9 @@ async function buildIndexHtml(versionTag) {
 }
 
 async function build() {
-  const [episodes, concepts, models, people, themes, keywords, rawCatalog, keywordDefinitions] = await Promise.all([
+  const [episodes, lives, concepts, models, people, themes, keywords, rawCatalog, keywordDefinitions] = await Promise.all([
     readJsonDir(path.join(contentDir, 'episodes')),
+    readJsonDir(path.join(contentDir, 'lives')),
     readJsonDir(path.join(contentDir, 'concepts')),
     readJsonDir(path.join(contentDir, 'models')),
     readJsonDir(path.join(contentDir, 'people')),
@@ -907,8 +1034,15 @@ async function build() {
       )
     )
   );
+  const liveBacklinks = buildLiveBacklinks(lives);
+  applyLiveBacklinks(mergedEpisodes, liveBacklinks.episodes);
+  applyLiveBacklinks(concepts, liveBacklinks.concepts);
+  applyLiveBacklinks(models, liveBacklinks.models);
+  applyLiveBacklinks(themes, liveBacklinks.themes);
+
   const graph = buildGraphData({
     episodes: mergedEpisodes,
+    lives,
     concepts,
     models,
     people,
@@ -924,6 +1058,7 @@ async function build() {
       episodes: mergedEpisodes.length,
       curatedEpisodes: mergedEpisodes.filter((episode) => episode.curated).length,
       draftEpisodes: mergedEpisodes.filter((episode) => episode.status === 'draft').length,
+      lives: lives.length,
       concepts: concepts.length,
       models: models.length,
       people: people.length,
@@ -931,6 +1066,7 @@ async function build() {
       keywords: mergedKeywords.length
     },
     episodes: mergedEpisodes,
+    lives: [...lives].sort((a, b) => String(b.id).localeCompare(String(a.id))),
     concepts: concepts.sort((a, b) => a.name.localeCompare(b.name, 'zh-Hans-CN')),
     models: models.sort((a, b) => a.name.localeCompare(b.name, 'zh-Hans-CN')),
     people: people.sort((a, b) => a.name.localeCompare(b.name, 'zh-Hans-CN')),
@@ -970,6 +1106,7 @@ async function build() {
   console.log(`Episodes: ${site.stats.episodes}`);
   console.log(`Curated episodes: ${site.stats.curatedEpisodes}`);
   console.log(`Draft episodes: ${site.stats.draftEpisodes}`);
+  console.log(`Lives: ${site.stats.lives}`);
   console.log(`Concepts: ${site.stats.concepts}`);
   console.log(`Models: ${site.stats.models}`);
   console.log(`People: ${site.stats.people}`);

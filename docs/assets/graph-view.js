@@ -2,13 +2,14 @@ const D3_URL = 'https://cdn.jsdelivr.net/npm/d3@7/dist/d3.min.js';
 
 const TYPE_META = {
   episode: { label: '节目', color: '#284b63' },
+  live: { label: '直播', color: '#a06a1f' },
   concept: { label: '概念', color: '#7c5c1a' },
   model: { label: '模型', color: '#33673b' },
   person: { label: '人物', color: '#9f3f2d' },
   theme: { label: '主题', color: '#6b4fa1' }
 };
 
-const TYPE_ORDER = ['episode', 'concept', 'model', 'person', 'theme'];
+const TYPE_ORDER = ['episode', 'live', 'concept', 'model', 'person', 'theme'];
 const CORE_TYPES = new Set(['concept', 'model', 'person']);
 const LABEL_DEGREE_THRESHOLD = 10;
 const COMPACT_LINK_DISTANCE = 34;
@@ -998,7 +999,7 @@ function mountGraphWithD3(state, d3) {
   state.simulation = d3.forceSimulation(state.nodes)
     .force('link', d3.forceLink(state.links)
       .id((node) => node.id)
-      .distance((link) => link.source.type === 'episode' || link.target.type === 'episode' ? COMPACT_EPISODE_LINK_DISTANCE : COMPACT_LINK_DISTANCE)
+      .distance((link) => ['episode', 'live'].includes(link.source.type) || ['episode', 'live'].includes(link.target.type) ? COMPACT_EPISODE_LINK_DISTANCE : COMPACT_LINK_DISTANCE)
       .strength(0.18))
     .force('charge', d3.forceManyBody().strength(-38).distanceMax(210))
     .force('center', d3.forceCenter(state.width * 0.52, state.height * 0.52))
