@@ -6537,11 +6537,7 @@ function renderEpisodeDetail(id) {
 
       <section class="detail-section">
         <h2>核心观点</h2>
-        ${episode.viewpoints.map((viewpoint, index) => accordionItem(
-          viewpoint.title,
-          renderParagraphText(viewpoint.body),
-          index === 0
-        )).join('')}
+        ${renderViewpoints(episode.viewpoints)}
       </section>
 
       ${hasKnowledgeLinks ? `
@@ -6945,6 +6941,33 @@ function renderParagraphText(value) {
   return raw
     .split(/\n{2,}/)
     .map((paragraph) => `<p>${renderLinkedEpisodeText(paragraph.trim())}</p>`)
+    .join('');
+}
+
+function renderViewpoints(viewpoints = []) {
+  if (!viewpoints.length) return '';
+  const groups = [];
+  for (const vp of viewpoints) {
+    const name = String(vp.group || '').trim();
+    const last = groups[groups.length - 1];
+    if (last && last.name === name) last.items.push(vp);
+    else groups.push({ name, items: [vp] });
+  }
+  const grouped = groups.some((g) => g.name);
+  let seq = 0;
+  return groups
+    .map((group) => {
+      const body = group.items
+        .map((vp) => accordionItem(vp.title, renderParagraphText(vp.body), seq++ === 0))
+        .join('');
+      if (!grouped || !group.name) return body;
+      return `
+        <div class="viewpoint-group">
+          <p class="viewpoint-group-name">${escapeHtml(group.name)}</p>
+          ${body}
+        </div>
+      `;
+    })
     .join('');
 }
 
