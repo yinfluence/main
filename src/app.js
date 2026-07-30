@@ -6946,36 +6946,21 @@ function renderParagraphText(value) {
 
 function renderViewpoints(viewpoints = []) {
   if (!viewpoints.length) return '';
-  const groups = [];
-  for (const vp of viewpoints) {
-    const name = String(vp.group || '').trim();
-    const last = groups[groups.length - 1];
-    if (last && last.name === name) last.items.push(vp);
-    else groups.push({ name, items: [vp] });
-  }
-  const grouped = groups.some((g) => g.name);
-  if (!grouped) {
+  if (viewpoints.length > 4) {
     return viewpoints
       .map((vp, index) => accordionItem(vp.title, renderParagraphText(vp.body), index === 0))
       .join('');
   }
-  return groups
-    .map((group) => `
-      <div class="viewpoint-group">
-        ${group.name ? `<p class="viewpoint-group-name">${escapeHtml(group.name)}</p>` : ''}
-        ${group.items
-          .map(
-            (vp) => `
-          <div class="viewpoint-card">
-            <h3 class="viewpoint-card-title">${renderLinkedEpisodeText(vp.title)}</h3>
-            <p class="viewpoint-card-body">${renderLinkedEpisodeText(vp.body)}</p>
-          </div>
-        `
-          )
-          .join('')}
-      </div>
-    `)
-    .join('');
+  return `<div class="viewpoint-list">${viewpoints
+    .map(
+      (vp) => `
+    <div class="viewpoint-card">
+      <h3 class="viewpoint-card-title">${renderLinkedEpisodeText(vp.title)}</h3>
+      <p class="viewpoint-card-body">${renderLinkedEpisodeText(vp.body)}</p>
+    </div>
+  `
+    )
+    .join('')}</div>`;
 }
 
 function renderMechanismChain(value, renderText = renderLinkedEpisodeText, variant = '') {

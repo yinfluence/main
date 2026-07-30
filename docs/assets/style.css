@@ -5252,32 +5252,42 @@ body.page-knowledge-detail {
   margin-top: 14px;
 }
 
-.viewpoint-group {
-  margin-top: 26px;
-}
-
-.viewpoint-group:first-of-type {
+.viewpoint-list {
   margin-top: 16px;
-}
-
-.viewpoint-group-name {
-  margin: 0 0 4px;
-  color: var(--muted-strong);
-  font-size: 0.82em;
-  font-weight: 600;
-  letter-spacing: 0.1em;
+  counter-reset: viewpoint;
 }
 
 .viewpoint-card {
-  padding: 13px 0 14px;
-  border-top: 1px solid var(--line);
+  position: relative;
+  counter-increment: viewpoint;
+  padding: 0 0 20px 34px;
+}
+
+.viewpoint-card:last-child {
+  padding-bottom: 0;
+}
+
+.viewpoint-card::before {
+  content: counter(viewpoint);
+  position: absolute;
+  left: 0;
+  top: 1px;
+  width: 23px;
+  height: 23px;
+  border-radius: 50%;
+  background: var(--gold-soft);
+  color: var(--gold-deep);
+  font-size: 13px;
+  font-weight: 600;
+  line-height: 23px;
+  text-align: center;
 }
 
 .viewpoint-card-title {
   margin: 0 0 5px;
-  font-size: 1.02em;
+  font-size: 1.05em;
   font-weight: 600;
-  line-height: 1.5;
+  line-height: 1.55;
 }
 
 .viewpoint-card-body {
