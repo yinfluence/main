@@ -5208,6 +5208,13 @@ function homeCardRoute(item) {
   return item?.kind === 'live' ? `lives/${item.id}` : `episodes/${item.id}`;
 }
 
+// 首页把节目和直播混在一起，用中文前缀比 EP/LIVE 更容易一眼分清
+function homeCardLabel(item) {
+  const id = String(item?.id || '');
+  if (item?.kind === 'live') return `直播${id.replace(/^LIVE/i, '')}`;
+  return `节目${id.replace(/^EP/i, '')}`;
+}
+
 function getWrappedHomeEpisodeIndex(index, maxIndex) {
   if (maxIndex <= 0) return 0;
   if (index < 0) return maxIndex;
@@ -5318,7 +5325,7 @@ function renderHomeEpisodeCardMarkup(episode, { preview = false, mobileAction = 
   const visibleTags = (episode.tags || []).slice(0, tagLimit);
   return `
     <article class="card home-episode-card${preview ? ' is-preview' : ''}" data-episode-href="${routeTo(homeCardRoute(episode))}">
-      <p class="card-kicker">${escapeHtml(episode.id)} ${renderHomeEpisodeKickerMeta(episode)}</p>
+      <p class="card-kicker">${escapeHtml(homeCardLabel(episode))} ${renderHomeEpisodeKickerMeta(episode)}</p>
       <a class="card-primary-link" href="${routeTo(homeCardRoute(episode))}">
         <h3>${escapeHtml(displayEpisodeTitle(episode.title))}</h3>
       </a>
@@ -5331,7 +5338,7 @@ function renderHomeEpisodeCardMarkup(episode, { preview = false, mobileAction = 
 function renderHomeEpisodePreviewPaneMarkup(episode, direction) {
   return `
     <article class="home-episode-preview-card" aria-hidden="true" data-preview-direction="${direction}">
-      <span class="home-episode-preview-kicker">${escapeHtml(episode.id)}</span>
+      <span class="home-episode-preview-kicker">${escapeHtml(homeCardLabel(episode))}</span>
       <span class="home-episode-preview-title">${escapeHtml(displayEpisodeTitle(episode.title))}</span>
       <span class="home-episode-preview-line short"></span>
       <span class="home-episode-preview-line"></span>
