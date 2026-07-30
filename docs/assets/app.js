@@ -6954,20 +6954,27 @@ function renderViewpoints(viewpoints = []) {
     else groups.push({ name, items: [vp] });
   }
   const grouped = groups.some((g) => g.name);
-  let seq = 0;
+  if (!grouped) {
+    return viewpoints
+      .map((vp, index) => accordionItem(vp.title, renderParagraphText(vp.body), index === 0))
+      .join('');
+  }
   return groups
-    .map((group) => {
-      const body = group.items
-        .map((vp) => accordionItem(vp.title, renderParagraphText(vp.body), seq++ === 0))
-        .join('');
-      if (!grouped || !group.name) return body;
-      return `
-        <div class="viewpoint-group">
-          <p class="viewpoint-group-name">${escapeHtml(group.name)}</p>
-          ${body}
-        </div>
-      `;
-    })
+    .map((group) => `
+      <div class="viewpoint-group">
+        ${group.name ? `<p class="viewpoint-group-name">${escapeHtml(group.name)}</p>` : ''}
+        ${group.items
+          .map(
+            (vp) => `
+          <div class="viewpoint-card">
+            <h3 class="viewpoint-card-title">${renderLinkedEpisodeText(vp.title)}</h3>
+            <p class="viewpoint-card-body">${renderLinkedEpisodeText(vp.body)}</p>
+          </div>
+        `
+          )
+          .join('')}
+      </div>
+    `)
     .join('');
 }
 
