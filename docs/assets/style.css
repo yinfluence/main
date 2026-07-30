@@ -4398,6 +4398,15 @@ article.card:hover a.chip:active {
   font-weight: 430;
 }
 
+/* 概要过长时按意思分段，一段一个意思，避免整块文字压过来 */
+.detail-summary p {
+  margin: 0 0 10px;
+}
+
+.detail-summary p:last-child {
+  margin-bottom: 0;
+}
+
 .detail-header-meta {
   margin-top: 14px;
 }

@@ -4025,7 +4025,7 @@ function renderReferenceIndex(config) {
         <a class="back-link" href="#/">← 返回首页</a>
         <p class="detail-eyebrow">${escapeHtml(eyebrow)}</p>
         <h1 class="detail-title">${escapeHtml(title)}</h1>
-        <p class="detail-summary">${renderLinkedEpisodeText(summary)}</p>
+        <div class="detail-summary">${String(summary || '').split(/\n{2,}/).filter(Boolean).map((paragraph) => `<p>${renderLinkedEpisodeText(paragraph.trim())}</p>`).join('')}</div>
       </div>
       <section class="detail-section">
         <div class="keyword-toolbar">
@@ -4252,7 +4252,7 @@ function renderCategorizedReferenceIndex(config) {
         <a class="back-link" href="#/">← 返回首页</a>
         <p class="detail-eyebrow">${escapeHtml(eyebrow)}</p>
         <h1 class="detail-title">${escapeHtml(title)}</h1>
-        <p class="detail-summary">${renderLinkedEpisodeText(summary)}</p>
+        <div class="detail-summary">${String(summary || '').split(/\n{2,}/).filter(Boolean).map((paragraph) => `<p>${renderLinkedEpisodeText(paragraph.trim())}</p>`).join('')}</div>
       </div>
       <section class="detail-section">
         ${sections || '<div class="empty-state">当前没有满足条件的条目。</div>'}
@@ -6435,7 +6435,7 @@ function renderEpisodeDetail(id) {
           <a class="back-link secondary" href="#/">返回首页</a>
         </div>
         <h1 class="detail-title">${escapeHtml(episode.id)}｜${escapeHtml(displayEpisodeTitle(episode.title))}${renderEpisodeFreshBadge(episode)}</h1>
-        <p class="detail-summary">${renderLinkedEpisodeText(episode.summary)}</p>
+        <div class="detail-summary">${String(episode.summary || '').split(/\n{2,}/).filter(Boolean).map((paragraph) => `<p>${renderLinkedEpisodeText(paragraph.trim())}</p>`).join('')}</div>
         ${renderEpisodeHeaderMeta(episode)}
       </div>
 
