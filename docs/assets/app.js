@@ -5193,7 +5193,7 @@ function getHomeFeaturedEpisodes() {
     ...live,
     kind: 'live',
     title: live.mainThread || live.title || '',
-    summary: live.oneLiner || live.summary || '',
+    summary: live.summary || live.oneLiner || '',
     tags: live.tags || [],
   }));
   return [...episodes, ...lives].sort((a, b) => {
