@@ -30,7 +30,8 @@ if ! mkdir "$LOCK" 2>/dev/null; then
 fi
 trap 'rmdir "$LOCK" 2>/dev/null' EXIT
 
-# 一天只有一期：库里最新一期的 publishedAt 已是今天（UTC）→ 当天收工，不再扫
+# 一天只有一期：库里最新一期的 publishedAt 已是今天（UTC）→ 节目当天收工，不再扫
+# 注意这只管节目。直播由 scan_lives 独立判断，不受这个开关影响
 today_done() {
   local latest pub
   latest=$(ls content/episodes/EP*.json 2>/dev/null | sort | tail -1)
@@ -73,6 +74,30 @@ scan_once() {
   esac
 }
 
+# 直播回放的扫描。跟节目是两条独立的线：
+#   - 节目在北京 19-21 点发，直播回放次日凌晨到清晨才传（28 场实测集中在 UTC 15-17 点，
+#     即北京 23:00-01:00，另有少量 UTC 22-23 点）。所以节目那个窗口一场都扫不到
+#   - 直播一周两场（周三、周六），不需要高频扫，每次 auto-daily 被唤起时顺带扫一次就够
+#   - 只备料不整理：下字幕、生成转写稿、写 pending-lives.json，然后通知。
+#     整理要逐句通读两三万字转写稿，按 sop/08 是主线程的活，不交给无人值守的 agent
+scan_lives() {
+  log "=== 扫描新直播 ==="
+  python3 scripts/scan-new-lives.py >> "$LOG" 2>&1
+  local CODE=$?
+  case $CODE in
+    0)
+      local N
+      N=$(python3 -c "import json;print(len(json.load(open('workbench/pending-lives.json'))))" 2>/dev/null || echo "?")
+      log "发现 $N 场新直播，字幕与转写稿已备好，等待整理"
+      notify "颖响力直播 🎙" "发现 $N 场新直播，转写稿已备好，等你来整理" "Glass"
+      ;;
+    10) log "无新直播" ;;
+    *)  log "直播扫描出错 code=$CODE"
+        notify "颖响力直播 ⚠️" "直播扫描失败 code=$CODE，请看 logs/" "Basso" ;;
+  esac
+  return 0
+}
+
 # 用 UTC 分钟数判断是否在发布窗口内（北京 20:05–22:30 = UTC 12:05–14:30）
 UTC_MIN=$(( $(date -u +%H | sed 's/^0//') * 60 + $(date -u +%M | sed 's/^0//') ))
 WIN_START=$(( 12 * 60 + 5 ))
@@ -94,7 +119,10 @@ else
   NOW=$(date +%s)
   if [[ -f "$STAMP" ]]; then
     LAST=$(cat "$STAMP" 2>/dev/null || echo 0)
-    (( NOW - LAST < MIN_GAP )) && exit 0
+    (( NOW - LAST < MIN_GAP )) && { scan_lives; exit 0; }
   fi
   scan_once
 fi
+
+# 节目那边处理完（或没新期）之后，顺带扫一次直播
+scan_lives
