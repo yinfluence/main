@@ -2,11 +2,11 @@
   "meta": {
     "title": "颖响力知识图谱",
     "subtitle": "节目、概念、模型、人物、主题之间的可视化连接网络",
-    "nodeCount": 652,
-    "linkCount": 2354,
+    "nodeCount": 653,
+    "linkCount": 2382,
     "typeCounts": {
       "model": 77,
-      "live": 27,
+      "live": 28,
       "theme": 91,
       "episode": 189,
       "concept": 203,
@@ -23,7 +23,7 @@
       "route": "models/risk-transfer-chain",
       "summary": "系统不会立刻吞下风险，而是先沿着银行、企业、票据、供应链和普通人之间不断转手、延后和下沉。",
       "status": null,
-      "degree": 42
+      "degree": 43
     },
     {
       "id": "live:LIVE002",
@@ -279,6 +279,17 @@
       "degree": 28
     },
     {
+      "id": "live:LIVE028",
+      "key": "LIVE028",
+      "label": "LIVE028",
+      "fullLabel": "LIVE028 · 开着国产电车出境第二天，车机被锁了三十个小时！那辆车到底算不算你的",
+      "type": "live",
+      "route": "lives/LIVE028",
+      "summary": "空调打不开，扶手箱打不开，导航没了，得把护照行驶证传回国内等对方放行。",
+      "status": "curated",
+      "degree": 28
+    },
+    {
       "id": "theme:great-power-competition-and-strategic-time",
       "key": "great-power-competition-and-strategic-time",
       "label": "大国竞争与战略时间",
@@ -297,6 +308,17 @@
       "type": "episode",
       "route": "episodes/EP156",
       "summary": "把5月以来一串看似孤立的金融事件串成一条线。富途、老虎被罚没22亿，八部门两年整治非法跨境券商。香港银行倒查内地账户，要求声明资金并非来自大陆。国务院837号令把个人、技术、人才一并纳入对外投资监管。\n\n核心判断是一次对老中产和高净值人群境外财富的系统性回收。学特朗普“建墙”，逼两头跑的人做选择。要么留在国内受严格监管，要么彻底离开。\n\n另一边，围绕公共体系、靠国家拨款和国企流动的新中产正在长出来。原因是他们更稳定可控。\n\n落点是老中产去新加坡是相对安全的选择。新旧中产的置换会用五到十年逐步完成。",
+      "status": "curated",
+      "degree": 25
+    },
+    {
+      "id": "episode:EP169",
+      "key": "EP169",
+      "label": "EP169",
+      "fullLabel": "EP169 · 合肥模式底层逻辑拆解：个人投资的4个实用方法 + 1个核心秘籍",
+      "type": "episode",
+      "route": "episodes/EP169",
+      "summary": "合肥被称为中国最牛风投城市。各地城投照抄，大多抄出一身债和产能过剩。\n\n真正可学的不是城市打法，是背后的投资逻辑。拆成普通人能用的四个显性方法。逆周期抄底不追热点。赌整条产业链，而不是单家公司。长期陪跑，成熟才退出。只投自己接得住的赛道。\n\n真正抄不走的是第五个隐性秘籍。政府能把权力直接变成补贴、报表和销售额。普通人没有权力，唯一的对应物是信息上的确定性。\n\n落点是掌握别人没有的确定信息，能像一级市场那样看清企业命脉。到那一步，欧印和加杠杆才不是赌博。",
       "status": "curated",
       "degree": 25
     },
@@ -334,17 +356,6 @@
       "degree": 24
     },
     {
-      "id": "episode:EP169",
-      "key": "EP169",
-      "label": "EP169",
-      "fullLabel": "EP169 · 合肥模式底层逻辑拆解：个人投资的4个实用方法 + 1个核心秘籍",
-      "type": "episode",
-      "route": "episodes/EP169",
-      "summary": "合肥被称为中国最牛风投城市。各地城投照抄，大多抄出一身债和产能过剩。\n\n真正可学的不是城市打法，是背后的投资逻辑。拆成普通人能用的四个显性方法。逆周期抄底不追热点。赌整条产业链，而不是单家公司。长期陪跑，成熟才退出。只投自己接得住的赛道。\n\n真正抄不走的是第五个隐性秘籍。政府能把权力直接变成补贴、报表和销售额。普通人没有权力，唯一的对应物是信息上的确定性。\n\n落点是掌握别人没有的确定信息，能像一级市场那样看清企业命脉。到那一步，欧印和加杠杆才不是赌博。",
-      "status": "curated",
-      "degree": 24
-    },
-    {
       "id": "episode:EP154",
       "key": "EP154",
       "label": "EP154",
@@ -353,6 +364,17 @@
       "route": "episodes/EP154",
       "summary": "本期聚焦香格里拉对话会上美国国防部长赫格塞斯（节目读作赫塞斯）的发言。多数解读抓住他“中美关系比多年来都好”的软话，认为他在降调求稳；判断是这只是开场烟雾弹，真正的关键词是后半段的“围栏”。围栏听着像邻居互建篱笆，但赫格塞斯已把边界划在第一岛链，所谓围栏其实是划在东亚家门口的高墙，链上地区都成不可逾越的红线。把它接进川普的新门罗主义——建墙加打击灰色贸易，美军收拳后撤、让盟友顶前线守墙，手持大棒、轻声说话。落点是：东南亚是最后一段未定边界，香会就是逼骑墙国家选边的场，下集再谈各国怎么选。",
       "status": "curated",
+      "degree": 24
+    },
+    {
+      "id": "concept:hidden-debt",
+      "key": "hidden-debt",
+      "label": "隐形债务",
+      "fullLabel": "隐形债务",
+      "type": "concept",
+      "route": "concepts/hidden-debt",
+      "summary": "表外、体外和合作链条里的债务不在显性报表中充分呈现，却会在危机时重新压回主体。",
+      "status": null,
       "degree": 23
     },
     {
@@ -363,17 +385,6 @@
       "type": "theme",
       "route": "themes/dollar-system-and-gray-trade",
       "summary": "讨论石油美元的真实脆弱点，究竟藏在公开统计之外的哪些灰色交易链条里。",
-      "status": null,
-      "degree": 22
-    },
-    {
-      "id": "concept:hidden-debt",
-      "key": "hidden-debt",
-      "label": "隐形债务",
-      "fullLabel": "隐形债务",
-      "type": "concept",
-      "route": "concepts/hidden-debt",
-      "summary": "表外、体外和合作链条里的债务不在显性报表中充分呈现，却会在危机时重新压回主体。",
       "status": null,
       "degree": 22
     },
@@ -398,6 +409,28 @@
       "summary": "灰色贸易的油三四十，按正常价签就是八十一百，这中间差着三成。",
       "status": "curated",
       "degree": 22
+    },
+    {
+      "id": "model:path-dependence",
+      "key": "path-dependence",
+      "label": "路径依赖",
+      "fullLabel": "路径依赖",
+      "type": "model",
+      "route": "models/path-dependence",
+      "summary": "路径依赖解释早期技术和叙事选择一旦成功，就会反过来限制后续转向更优路径。",
+      "status": null,
+      "degree": 21
+    },
+    {
+      "id": "episode:EP131",
+      "key": "EP131",
+      "label": "EP131",
+      "fullLabel": "EP131 · 哪吒汽车暴雷全拆解，撕开国资造车的万亿赌局！揭秘电车烧钱三大黑洞。【EP131】",
+      "type": "episode",
+      "route": "episodes/EP131",
+      "summary": "《焦点访谈》报道哪吒汽车破产重整。借这条新闻回到电车、地方政府、国资和隐性债务的关系。\n\n哪吒不是单纯经营失败，也不是创始人或风投失误。地方国资把新能源汽车当成产业升级、招商业绩和未来 IPO 的退出工具。这才逐步形成了一套财政金融赌局。\n\n桐乡、宜春和南宁分别代表三种参与方式。分别是本地扶持、财政局平台入股、产投集团隐性债务化。价格战、研发迭代和营销黑箱，则把企业推向持续烧钱。\n\nIPO 通道一断，国资、车企、供应链和债权人一起被锁进无法体面退出的窟窿。",
+      "status": "curated",
+      "degree": 21
     },
     {
       "id": "episode:EP157",
@@ -455,17 +488,6 @@
       "degree": 20
     },
     {
-      "id": "model:path-dependence",
-      "key": "path-dependence",
-      "label": "路径依赖",
-      "fullLabel": "路径依赖",
-      "type": "model",
-      "route": "models/path-dependence",
-      "summary": "路径依赖解释早期技术和叙事选择一旦成功，就会反过来限制后续转向更优路径。",
-      "status": null,
-      "degree": 20
-    },
-    {
       "id": "person:donald-trump",
       "key": "donald-trump",
       "label": "特朗普",
@@ -510,17 +532,6 @@
       "degree": 20
     },
     {
-      "id": "episode:EP131",
-      "key": "EP131",
-      "label": "EP131",
-      "fullLabel": "EP131 · 哪吒汽车暴雷全拆解，撕开国资造车的万亿赌局！揭秘电车烧钱三大黑洞。【EP131】",
-      "type": "episode",
-      "route": "episodes/EP131",
-      "summary": "《焦点访谈》报道哪吒汽车破产重整。借这条新闻回到电车、地方政府、国资和隐性债务的关系。\n\n哪吒不是单纯经营失败，也不是创始人或风投失误。地方国资把新能源汽车当成产业升级、招商业绩和未来 IPO 的退出工具。这才逐步形成了一套财政金融赌局。\n\n桐乡、宜春和南宁分别代表三种参与方式。分别是本地扶持、财政局平台入股、产投集团隐性债务化。价格战、研发迭代和营销黑箱，则把企业推向持续烧钱。\n\nIPO 通道一断，国资、车企、供应链和债权人一起被锁进无法体面退出的窟窿。",
-      "status": "curated",
-      "degree": 20
-    },
-    {
       "id": "episode:EP136",
       "key": "EP136",
       "label": "EP136",
@@ -530,6 +541,17 @@
       "summary": "把灰色贸易从美元、黄金和大国战略拉回到最具体的运输工具：影子舰队。影子舰队不是单一国家海军，也不是有统一指挥的海盗组织，而是一套脱离西方保险、认证、定位和船东透明规则的平行航运网络。它通过老旧油轮、换旗换名、AIS 静默、船对船转运、原产地文件和离岸服务，把被制裁的石油重新洗进全球贸易，并进一步支撑起绕开 SWIFT 的结算闭环。",
       "status": "curated",
       "degree": 20
+    },
+    {
+      "id": "theme:ev-financialization-and-false-sales",
+      "key": "ev-financialization-and-false-sales",
+      "label": "新能源金融化与虚假销量",
+      "fullLabel": "新能源金融化与虚假销量",
+      "type": "theme",
+      "route": "themes/ev-financialization-and-false-sales",
+      "summary": "聚焦新能源车行业如何依靠补贴、融资、渠道黑箱和虚假销售维持增长叙事。",
+      "status": null,
+      "degree": 19
     },
     {
       "id": "model:strategic-timing",
@@ -587,17 +609,6 @@
       "degree": 19
     },
     {
-      "id": "theme:ev-financialization-and-false-sales",
-      "key": "ev-financialization-and-false-sales",
-      "label": "新能源金融化与虚假销量",
-      "fullLabel": "新能源金融化与虚假销量",
-      "type": "theme",
-      "route": "themes/ev-financialization-and-false-sales",
-      "summary": "聚焦新能源车行业如何依靠补贴、融资、渠道黑箱和虚假销售维持增长叙事。",
-      "status": null,
-      "degree": 18
-    },
-    {
       "id": "episode:EP134",
       "key": "EP134",
       "label": "EP134",
@@ -605,6 +616,17 @@
       "type": "episode",
       "route": "episodes/EP134",
       "summary": "从劳动节前后“反躺平”宣传升温切入，讨论躺平为什么不只是年轻人摆烂，而是一种更隐蔽的退出式抵抗。把躺平解释成“内移民”：年轻人不进行地理迁移，而是从主流劳动赛道、消费循环、身份规训和线下关系中主动绝缘，形成一个治理系统难以穿透的“躺平国”。它真正引发焦虑的地方，不在于个体懒惰，而在于网格化、数据化和前置预判体系突然遇到一群没有代表、没有组织、没有数据反馈、也没有可谈判对象的人。",
+      "status": "curated",
+      "degree": 18
+    },
+    {
+      "id": "episode:EP139",
+      "key": "EP139",
+      "label": "EP139",
+      "fullLabel": "EP139 · 耿同学打假撕开真相：从985顶尖学者到车企电池，全行业造假潜规则！【EP139】",
+      "type": "episode",
+      "route": "episodes/EP139",
+      "summary": "耿同学举报学术造假。这里不重复图片复用和数据篡改的细节。要把论文造假与产业研发里的参数造假，放进同一套 KPI 逻辑里看。\n\n真正危险的不是几篇论文翻车。而是指标先被定死。真实实验达不到时，组织选择改数据、锁显示、改测试，让结果看起来达标。\n\n某车企超充电池的温度显示被锁死在 71 度。技术卖点、营销节奏和绩效考核一旦压过安全边界，风险就会外溢。它从论文、实验室和发布会进入真实产品，最后由消费者和纳税人承担。",
       "status": "curated",
       "degree": 18
     },
@@ -671,17 +693,6 @@
       "type": "episode",
       "route": "episodes/EP133",
       "summary": "阿联酋宣布永久退出欧佩克。这是在能源体系里闹内讧，还是在中东旧格局崩塌时主动重写国家路径？\n\n核心判断是，阿联酋不满足于做沙特主导的阿拉伯兄弟体系成员。它也不想只当美国的棋子。它希望复制新加坡模式：安全上绑定美国，政治和经济上保持中立开放。\n\n再把港口、金融、航运、能源和人才承接能力，组合成中东的避险节点。\n\n退出欧佩克的意义因此不只是释放石油产能。更是摆脱沙特配额约束，把能源窗口期换成现金与未来产业基石。也是在霍尔木兹危机和伊朗受压的窗口里，争取新的区域位置。",
-      "status": "curated",
-      "degree": 17
-    },
-    {
-      "id": "episode:EP139",
-      "key": "EP139",
-      "label": "EP139",
-      "fullLabel": "EP139 · 耿同学打假撕开真相：从985顶尖学者到车企电池，全行业造假潜规则！【EP139】",
-      "type": "episode",
-      "route": "episodes/EP139",
-      "summary": "耿同学举报学术造假。这里不重复图片复用和数据篡改的细节。要把论文造假与产业研发里的参数造假，放进同一套 KPI 逻辑里看。\n\n真正危险的不是几篇论文翻车。而是指标先被定死。真实实验达不到时，组织选择改数据、锁显示、改测试，让结果看起来达标。\n\n某车企超充电池的温度显示被锁死在 71 度。技术卖点、营销节奏和绩效考核一旦压过安全边界，风险就会外溢。它从论文、实验室和发布会进入真实产品，最后由消费者和纳税人承担。",
       "status": "curated",
       "degree": 17
     },
@@ -906,6 +917,17 @@
       "degree": 14
     },
     {
+      "id": "theme:state-business-entanglement",
+      "key": "state-business-entanglement",
+      "label": "政企嵌入与企业存续",
+      "fullLabel": "政企嵌入与企业存续",
+      "type": "theme",
+      "route": "themes/state-business-entanglement",
+      "summary": "讨论企业如何依赖地方政府、国资平台或关系结构续命，以及这种绑定如何反过来改写企业目标。",
+      "status": null,
+      "degree": 14
+    },
+    {
       "id": "episode:EP042",
       "key": "EP042",
       "label": "EP042",
@@ -994,6 +1016,17 @@
       "degree": 14
     },
     {
+      "id": "theme:local-government-financialization",
+      "key": "local-government-financialization",
+      "label": "地方政府资本化与补贴杠杆",
+      "fullLabel": "地方政府资本化与补贴杠杆",
+      "type": "theme",
+      "route": "themes/local-government-financialization",
+      "summary": "讨论地方政府如何从传统招商者变成资本玩家，并把补贴、基金和估值故事捆到一起。",
+      "status": null,
+      "degree": 13
+    },
+    {
       "id": "theme:rule-of-law-boundaries-and-social-trust",
       "key": "rule-of-law-boundaries-and-social-trust",
       "label": "法治边界与社会信任",
@@ -1016,13 +1049,13 @@
       "degree": 13
     },
     {
-      "id": "theme:state-business-entanglement",
-      "key": "state-business-entanglement",
-      "label": "政企嵌入与企业存续",
-      "fullLabel": "政企嵌入与企业存续",
+      "id": "theme:ev-collapse-and-exit-risk",
+      "key": "ev-collapse-and-exit-risk",
+      "label": "新能源崩塌与退出风险",
+      "fullLabel": "新能源崩塌与退出风险",
       "type": "theme",
-      "route": "themes/state-business-entanglement",
-      "summary": "讨论企业如何依赖地方政府、国资平台或关系结构续命，以及这种绑定如何反过来改写企业目标。",
+      "route": "themes/ev-collapse-and-exit-risk",
+      "summary": "聚焦新能源项目在失速、清算和品牌出清阶段，风险如何向债权人、用户和地方政府层层传导。",
       "status": null,
       "degree": 13
     },
@@ -1093,6 +1126,17 @@
       "degree": 13
     },
     {
+      "id": "episode:EP137",
+      "key": "EP137",
+      "label": "EP137",
+      "fullLabel": "EP137 · 你坐的无人出租车安全吗？武汉萝卜快跑事故，给所有人提了致命醒！【EP137】",
+      "type": "episode",
+      "route": "episodes/EP137",
+      "summary": "武汉萝卜快跑大面积趴窝。全无人自动驾驶出租车不是简单的“车会不会开”问题。\n\n它是城市交通、云端控制、监管权力和安全兜底共同组成的系统问题。\n\n核心判断是，集中式车队架构便宜、好管、可追溯。但一旦云端与车辆失联或发生分歧，单车自主兜底就会被最高控制权压住。单点故障因此被放大成车队级、城市级的风险。",
+      "status": "curated",
+      "degree": 13
+    },
+    {
       "id": "episode:EP164",
       "key": "EP164",
       "label": "EP164",
@@ -1100,6 +1144,17 @@
       "type": "episode",
       "route": "episodes/EP164",
       "summary": "从中文自媒体对新加坡的污名化切进来：先是骂它经济完蛋、组屋崩盘、沦为\"坡县\"，这套说不下去了，又改口说它被印度人占领、变成\"印加坡\"。判断是这两套叙事换汤不换药，根子都是羡慕嫉妒恨——羡慕它人均GDP和组屋、嫉妒它是跑得最好的华人国家、恨它独立自主不认朝贡叙事。反驳的是，说，新加坡的成功恰恰来自李光耀当年选择多元立国而非建华人国家，它还实打实帮过中国搞苏州工业园区。落点是：战狼自媒体连帮过自己的友邦都咬，咬到寒心，终会招致反噬。",
+      "status": "curated",
+      "degree": 13
+    },
+    {
+      "id": "episode:EP170",
+      "key": "EP170",
+      "label": "EP170",
+      "fullLabel": "EP170 · 车圈福威镖局凛冬已至！世界第一还是灭门？谁是青城派？谁是背后的余沧海？",
+      "type": "episode",
+      "route": "episodes/EP170",
+      "summary": "本期是“福威镖局”隐喻的续集，借《笑傲江湖》里林震南镖局被灭门的桥段，拆解一家喊出“五年成为世界第一”的头部电车企业。判断是这句口号是说给股东的虚势：国内销量随行业下滑一成多，靠存疑的海外销量和供应链金融硬撑，渗透率破六成也只是油车跌得更狠的“跟差生比差”。真正让它活着的不是产品力，而是替体系养着大量镖师、分号和家庭，就业、消费、上供都压在它身上。落点是“福在前、威在后”：利益是上面恩赐、可代管的，世界第一的虚名却属于上面；一旦失去被利用价值，等着它的不是灭门，而是换了名字的“合营”。",
       "status": "curated",
       "degree": 13
     },
@@ -1115,6 +1170,17 @@
       "degree": 13
     },
     {
+      "id": "episode:EP184",
+      "key": "EP184",
+      "label": "EP184",
+      "fullLabel": "EP184 · 霸占他人车位为何不能执法只能“找单位”？长沙彭女士“威风”谁给的？",
+      "type": "episode",
+      "route": "episodes/EP184",
+      "summary": "长沙彭女士占用他人车位。六轮协查调解全部无效，单位一出意见立马道歉。从这个反差切入，拆出三层问题。\n\n第一层，公职人员怕单位不怕法律。几十年前的单位制保护重新生效，成了法律都打不破的高墙。\n\n第二层，物权法写得再清楚也没用。交警管不进小区，物业没有执法权，民警只能调解。产权人行使不了自己的权利。\n\n第三层，协查通告的措辞偏袒。它暴露出县城婆罗门与普通人两个群体的认知割裂。\n\n落点是一个警告。这不是一起停车纠纷，而是社会撕裂刚刚开始的信号。",
+      "status": "curated",
+      "degree": 13
+    },
+    {
       "id": "episode:EP187",
       "key": "EP187",
       "label": "EP187",
@@ -1124,17 +1190,6 @@
       "summary": "某车企公布半年预亏 15 到 18 亿。旗下某界交付量却涨了 10%，还霸着豪华 SUV 销冠。卖得越多，亏得越多。\n\n这期沿用笑傲江湖的化名，拆华山派与剑宗小厮的合作模式。硬件采购、技术授权费、渠道服务费，是三笔前置刚性供奉。单车 13 到 14 万先进气宗的兜。收益挂销量，与车企盈亏脱钩。\n\n法律股权与地方政府对赌是两层隔离墙。重资产、价格战、出海受限的全部风险，被焊在小厮身上。\n\n判断是这不是苹果代工模式，更像苏联与加盟共和国。依附型车企的处境，是所有制造业小老板的缩影。",
       "status": "curated",
       "degree": 13
-    },
-    {
-      "id": "theme:local-government-financialization",
-      "key": "local-government-financialization",
-      "label": "地方政府资本化与补贴杠杆",
-      "fullLabel": "地方政府资本化与补贴杠杆",
-      "type": "theme",
-      "route": "themes/local-government-financialization",
-      "summary": "讨论地方政府如何从传统招商者变成资本玩家，并把补贴、基金和估值故事捆到一起。",
-      "status": null,
-      "degree": 12
     },
     {
       "id": "theme:real-estate-deleveraging",
@@ -1159,13 +1214,13 @@
       "degree": 12
     },
     {
-      "id": "theme:ev-collapse-and-exit-risk",
-      "key": "ev-collapse-and-exit-risk",
-      "label": "新能源崩塌与退出风险",
-      "fullLabel": "新能源崩塌与退出风险",
-      "type": "theme",
-      "route": "themes/ev-collapse-and-exit-risk",
-      "summary": "聚焦新能源项目在失速、清算和品牌出清阶段，风险如何向债权人、用户和地方政府层层传导。",
+      "id": "model:black-box-assetization",
+      "key": "black-box-assetization",
+      "label": "黑箱资产化",
+      "fullLabel": "黑箱资产化",
+      "type": "model",
+      "route": "models/black-box-assetization",
+      "summary": "把本来难以估值、难以穿透甚至本该暴露风险的东西，装进平台、基金或体外结构里，重新包装成可融资、可讲故事、可继续吸钱的资产。",
       "status": null,
       "degree": 12
     },
@@ -1269,17 +1324,6 @@
       "degree": 12
     },
     {
-      "id": "episode:EP137",
-      "key": "EP137",
-      "label": "EP137",
-      "fullLabel": "EP137 · 你坐的无人出租车安全吗？武汉萝卜快跑事故，给所有人提了致命醒！【EP137】",
-      "type": "episode",
-      "route": "episodes/EP137",
-      "summary": "武汉萝卜快跑大面积趴窝。全无人自动驾驶出租车不是简单的“车会不会开”问题。\n\n它是城市交通、云端控制、监管权力和安全兜底共同组成的系统问题。\n\n核心判断是，集中式车队架构便宜、好管、可追溯。但一旦云端与车辆失联或发生分歧，单车自主兜底就会被最高控制权压住。单点故障因此被放大成车队级、城市级的风险。",
-      "status": "curated",
-      "degree": 12
-    },
-    {
       "id": "episode:EP140",
       "key": "EP140",
       "label": "EP140",
@@ -1313,28 +1357,6 @@
       "degree": 12
     },
     {
-      "id": "episode:EP170",
-      "key": "EP170",
-      "label": "EP170",
-      "fullLabel": "EP170 · 车圈福威镖局凛冬已至！世界第一还是灭门？谁是青城派？谁是背后的余沧海？",
-      "type": "episode",
-      "route": "episodes/EP170",
-      "summary": "本期是“福威镖局”隐喻的续集，借《笑傲江湖》里林震南镖局被灭门的桥段，拆解一家喊出“五年成为世界第一”的头部电车企业。判断是这句口号是说给股东的虚势：国内销量随行业下滑一成多，靠存疑的海外销量和供应链金融硬撑，渗透率破六成也只是油车跌得更狠的“跟差生比差”。真正让它活着的不是产品力，而是替体系养着大量镖师、分号和家庭，就业、消费、上供都压在它身上。落点是“福在前、威在后”：利益是上面恩赐、可代管的，世界第一的虚名却属于上面；一旦失去被利用价值，等着它的不是灭门，而是换了名字的“合营”。",
-      "status": "curated",
-      "degree": 12
-    },
-    {
-      "id": "episode:EP184",
-      "key": "EP184",
-      "label": "EP184",
-      "fullLabel": "EP184 · 霸占他人车位为何不能执法只能“找单位”？长沙彭女士“威风”谁给的？",
-      "type": "episode",
-      "route": "episodes/EP184",
-      "summary": "长沙彭女士占用他人车位。六轮协查调解全部无效，单位一出意见立马道歉。从这个反差切入，拆出三层问题。\n\n第一层，公职人员怕单位不怕法律。几十年前的单位制保护重新生效，成了法律都打不破的高墙。\n\n第二层，物权法写得再清楚也没用。交警管不进小区，物业没有执法权，民警只能调解。产权人行使不了自己的权利。\n\n第三层，协查通告的措辞偏袒。它暴露出县城婆罗门与普通人两个群体的认知割裂。\n\n落点是一个警告。这不是一起停车纠纷，而是社会撕裂刚刚开始的信号。",
-      "status": "curated",
-      "degree": 12
-    },
-    {
       "id": "episode:EP188",
       "key": "EP188",
       "label": "EP188",
@@ -1344,17 +1366,6 @@
       "summary": "新加坡单一家族办公室五年从400家涨到2750家。家族办公室不是富豪的炒股团队，而是解决代际传承死穴的制度工具。\n\n血缘筛选保证不了后代能力。长子继承制只防资产分割，防不住财富流失。唯一出路是所有权与经营权彻底分割。家族握住所有权和收益权，投资、信托、税务、合规全部交给专业团队。\n\n再解释老钱为什么扎堆新加坡、瑞士。顶级家族要的是脱离任何大国国运周期的中立法域。这与小国对干净长钱的需求双向奔赴。\n\n落点是家族办公室确立了老钱与新钱的真正区别。区别在用制度对抗人性与周期的传承逻辑。",
       "status": "curated",
       "degree": 12
-    },
-    {
-      "id": "model:black-box-assetization",
-      "key": "black-box-assetization",
-      "label": "黑箱资产化",
-      "fullLabel": "黑箱资产化",
-      "type": "model",
-      "route": "models/black-box-assetization",
-      "summary": "把本来难以估值、难以穿透甚至本该暴露风险的东西，装进平台、基金或体外结构里，重新包装成可融资、可讲故事、可继续吸钱的资产。",
-      "status": null,
-      "degree": 11
     },
     {
       "id": "model:authority-misinfluence",
@@ -1368,6 +1379,17 @@
       "degree": 11
     },
     {
+      "id": "theme:data-cosmetics-and-false-prosperity",
+      "key": "data-cosmetics-and-false-prosperity",
+      "label": "数据粉饰与虚假繁荣",
+      "fullLabel": "数据粉饰与虚假繁荣",
+      "type": "theme",
+      "route": "themes/data-cosmetics-and-false-prosperity",
+      "summary": "讨论地方政府、企业与市场如何用账面数据制造景气感，却把真实风险继续藏在黑箱里。",
+      "status": null,
+      "degree": 11
+    },
+    {
       "id": "concept:sanction-containment",
       "key": "sanction-containment",
       "label": "制裁遏制",
@@ -1376,6 +1398,17 @@
       "route": "concepts/sanction-containment",
       "summary": "制裁的真正作用常常不是逼对手立刻认输，而是长期压低其外延空间、联动能力和做大速度。",
       "status": null,
+      "degree": 11
+    },
+    {
+      "id": "episode:EP062",
+      "key": "EP062",
+      "label": "EP062",
+      "fullLabel": "EP062 · 电车圈的“丐帮”是谁？帮主 9+plus“袋子”里装的都是信徒的“买命钱”。",
+      "type": "episode",
+      "route": "episodes/EP062",
+      "summary": "继续沿着小米汽车这条线，把焦点从单次事故转向粉丝结构、品牌态度和市场分层。\n\n小米汽车之所以像“丐帮”，不只是因为粉丝多。而是品牌一边需要大量普通用户，替自己完成市场教育和产品验证。\n\n另一边又公开承认，更成熟、更坚固的版本会优先留给欧洲市场。",
+      "status": "curated",
       "degree": 11
     },
     {
@@ -1533,17 +1566,6 @@
       "degree": 10
     },
     {
-      "id": "theme:data-cosmetics-and-false-prosperity",
-      "key": "data-cosmetics-and-false-prosperity",
-      "label": "数据粉饰与虚假繁荣",
-      "fullLabel": "数据粉饰与虚假繁荣",
-      "type": "theme",
-      "route": "themes/data-cosmetics-and-false-prosperity",
-      "summary": "讨论地方政府、企业与市场如何用账面数据制造景气感，却把真实风险继续藏在黑箱里。",
-      "status": null,
-      "degree": 10
-    },
-    {
       "id": "model:small-state-balancing-model",
       "key": "small-state-balancing-model",
       "label": "小国平衡术",
@@ -1551,6 +1573,17 @@
       "type": "model",
       "route": "models/small-state-balancing-model",
       "summary": "小国平衡术解释小国在大国之间维持生存空间，靠位置、合法性和现实利益而非纯姿态。",
+      "status": null,
+      "degree": 10
+    },
+    {
+      "id": "model:political-embedded-enterprise",
+      "key": "political-embedded-enterprise",
+      "label": "政企嵌入企业模型",
+      "fullLabel": "政企嵌入企业模型",
+      "type": "model",
+      "route": "models/political-embedded-enterprise",
+      "summary": "企业一旦把自身命运深嵌进地方政府或国资体系，短期会更能续命，长期却更容易沦为政策工具。",
       "status": null,
       "degree": 10
     },
@@ -1584,17 +1617,6 @@
       "type": "episode",
       "route": "episodes/EP057",
       "summary": "本期借 Manus 与 Meta 的收购传闻，讨论一家中国创始人主导的 AI 公司为什么最后要以“新加坡公司”的姿态进入全球资本视野。核心判断不是“中国 AI 出海成功”，而是如果融资、法律结构和人才环境仍被本土估值逻辑卡住，真正想做大的公司就会主动把身份和主场迁到更适合兑现价值的地方。",
-      "status": "curated",
-      "degree": 10
-    },
-    {
-      "id": "episode:EP062",
-      "key": "EP062",
-      "label": "EP062",
-      "fullLabel": "EP062 · 电车圈的“丐帮”是谁？帮主 9+plus“袋子”里装的都是信徒的“买命钱”。",
-      "type": "episode",
-      "route": "episodes/EP062",
-      "summary": "继续沿着小米汽车这条线，把焦点从单次事故转向粉丝结构、品牌态度和市场分层。\n\n小米汽车之所以像“丐帮”，不只是因为粉丝多。而是品牌一边需要大量普通用户，替自己完成市场教育和产品验证。\n\n另一边又公开承认，更成熟、更坚固的版本会优先留给欧洲市场。",
       "status": "curated",
       "degree": 10
     },
@@ -1775,17 +1797,6 @@
       "degree": 9
     },
     {
-      "id": "model:political-embedded-enterprise",
-      "key": "political-embedded-enterprise",
-      "label": "政企嵌入企业模型",
-      "fullLabel": "政企嵌入企业模型",
-      "type": "model",
-      "route": "models/political-embedded-enterprise",
-      "summary": "企业一旦把自身命运深嵌进地方政府或国资体系，短期会更能续命，长期却更容易沦为政策工具。",
-      "status": null,
-      "degree": 9
-    },
-    {
       "id": "concept:quasi-currency-support",
       "key": "quasi-currency-support",
       "label": "准货币托市",
@@ -1837,6 +1848,17 @@
       "type": "episode",
       "route": "episodes/EP020",
       "summary": "去年起进入九紫离火运,据称中年女性会走到前台。主持人不真算命,而用这套框架解释一个现象:女性走到前台首先是因为男性后退。社会进入转型与危机周期,很多原本有成就的男士心理上感到盛宴已过,有的迷茫,有的资产缩水选择躺平,女性反而在这一刻接过控制权。日本高市早苗、台湾郑丽文、宗馥莉被推上娃哈哈前台,都属同一类时代选择。但前台不等于胜利——你进入牌局操盘,不代表一定赢钱,做得好会被当时代代表,做得不好会受到比男性更严厉的鞭挞。最后落到外识变,内守心安八个字。",
+      "status": "curated",
+      "degree": 9
+    },
+    {
+      "id": "episode:EP035",
+      "key": "EP035",
+      "label": "EP035",
+      "fullLabel": "EP035 · 恒大汽车大结局，0.7%清偿比例让债权人崩溃！电车科技皆假象核心资产空空如也，广州国资如何兜底？",
+      "type": "episode",
+      "route": "episodes/EP035",
+      "summary": "本期围绕恒大汽车核心子公司被广州国资接盘后的清算顺序展开，讨论一家曾经光鲜的新能源汽车项目在破产时究竟还剩下什么。核心判断是，所谓技术、PPT、生产线和产业神话在清算阶段都不值钱，真正还能被争抢的往往只剩地、壳和少量残余资产，而普通债权人与末端参与者承担最大损失。",
       "status": "curated",
       "degree": 9
     },
@@ -2050,6 +2072,17 @@
       "degree": 8
     },
     {
+      "id": "concept:technical-shortcut",
+      "key": "technical-shortcut",
+      "label": "技术捷径",
+      "fullLabel": "技术捷径",
+      "type": "concept",
+      "route": "concepts/technical-shortcut",
+      "summary": "更快落地的技术选择能带来早期优势，也可能在后期变成难以摆脱的路径包袱。",
+      "status": null,
+      "degree": 8
+    },
+    {
       "id": "person:lee-kuan-yew",
       "key": "lee-kuan-yew",
       "label": "李光耀",
@@ -2215,17 +2248,6 @@
       "degree": 8
     },
     {
-      "id": "episode:EP035",
-      "key": "EP035",
-      "label": "EP035",
-      "fullLabel": "EP035 · 恒大汽车大结局，0.7%清偿比例让债权人崩溃！电车科技皆假象核心资产空空如也，广州国资如何兜底？",
-      "type": "episode",
-      "route": "episodes/EP035",
-      "summary": "本期围绕恒大汽车核心子公司被广州国资接盘后的清算顺序展开，讨论一家曾经光鲜的新能源汽车项目在破产时究竟还剩下什么。核心判断是，所谓技术、PPT、生产线和产业神话在清算阶段都不值钱，真正还能被争抢的往往只剩地、壳和少量残余资产，而普通债权人与末端参与者承担最大损失。",
-      "status": "curated",
-      "degree": 8
-    },
-    {
       "id": "episode:EP044",
       "key": "EP044",
       "label": "EP044",
@@ -2303,6 +2325,17 @@
       "degree": 8
     },
     {
+      "id": "episode:EP091",
+      "key": "EP091",
+      "label": "EP091",
+      "fullLabel": "EP091 · 电车语音关灯致命漏洞！车企拿命测试？",
+      "type": "episode",
+      "route": "episodes/EP091",
+      "summary": "本期围绕领克 Z20 语音一句话误关大灯导致撞上护栏的事件，讨论智能电车为什么会在权限和安全边界上出现如此低级却致命的漏洞。核心判断是，这不是一个单独的语音识别 bug，而是车机权限、场景验证、OTA 思维和企业安全文化一起失守后的系统性结果。",
+      "status": "curated",
+      "degree": 8
+    },
+    {
       "id": "episode:EP093",
       "key": "EP093",
       "label": "EP093",
@@ -2310,6 +2343,17 @@
       "type": "episode",
       "route": "episodes/EP093",
       "summary": "零首付、超长车贷、低月供，这些是新能源的促销手段。要放回库存压力和销量失速的大背景里看。它们为什么不是福利，更像陷阱。\n\n这些方案真正服务的不是消费者。而是车企在补贴退潮和库存高压下，继续维持销量与现金流。\n\n被精准瞄准的，是那些最在意面子、最容易高估自己还款能力的年轻用户。",
+      "status": "curated",
+      "degree": 8
+    },
+    {
+      "id": "episode:EP102",
+      "key": "EP102",
+      "label": "EP102",
+      "fullLabel": "EP102 · 中国社会逃不开的双标游戏：为什么造假者无恙，说真话的人却被封杀？",
+      "type": "episode",
+      "route": "episodes/EP102",
+      "summary": "千万粉博主香宜被新京报实锤。他在悉尼大学花 750 美元雇模特冒充教授，为 DHA 背书。产品卖了约 1000 万。此前代言号称营养价值高十倍的驼奶粉，被打假后仍正常直播。\n\n平台对他网开一面，对指正者反诈老陈却直接封号。董宇辉直播间 80 块三只的麻黄鸡被举报悄悄下架，也没人道歉。\n\n结论很硬：平台保护的不是事实，也不是消费者。谁能持续带来高额交易额，谁就是大熊猫。刺儿头被钉在耻辱柱。\n\n从某度竞价把魏则西送进虚假医院，到电车厂用魔幻车机掩盖安全问题。都是同一套顺我者昌逆我者亡的逻辑。",
       "status": "curated",
       "degree": 8
     },
@@ -2402,6 +2446,17 @@
       "degree": 8
     },
     {
+      "id": "episode:EP176",
+      "key": "EP176",
+      "label": "EP176",
+      "fullLabel": "EP176 · 6月车企销量出炉！繁荣背后暗藏危机，新能源“国家队”光环褪去，车企开始自负盈亏",
+      "type": "episode",
+      "route": "episodes/EP176",
+      "summary": "7 月初车企 6 月和上半年销量集体出炉，媒体大吹全线暴涨：比亚迪单月破 40 万、零跑近翻倍领跑新势力。本期不凑热闹、专给数字：表面全面上涨，实则半年目标集体大欠账——多数完成率只卡在三到四成，仅极氪约六成及格。作者判断行业规模越来越大、根基却越来越虚：销量靠低价换规模加挣补贴堆出来，而低价是没门槛的死循环，赢在价格也输在价格，利润被榨干就没钱反哺研发。出海也不是救命稻草，而要另掏几百亿建厂、面对反补贴税和贸易保护。落点是国家战略从新能源转向 AI 算力，车企政策奶被断、只能自负盈亏。",
+      "status": "curated",
+      "degree": 8
+    },
+    {
       "id": "episode:EP183",
       "key": "EP183",
       "label": "EP183",
@@ -2442,17 +2497,6 @@
       "type": "concept",
       "route": "concepts/price-war-trap",
       "summary": "极致低价可以快速突袭，却可能在长期竞争中压缩技术升级、利润和战略空间。",
-      "status": null,
-      "degree": 7
-    },
-    {
-      "id": "concept:technical-shortcut",
-      "key": "technical-shortcut",
-      "label": "技术捷径",
-      "fullLabel": "技术捷径",
-      "type": "concept",
-      "route": "concepts/technical-shortcut",
-      "summary": "更快落地的技术选择能带来早期优势，也可能在后期变成难以摆脱的路径包袱。",
       "status": null,
       "degree": 7
     },
@@ -2585,6 +2629,17 @@
       "type": "theme",
       "route": "themes/small-state-balancing",
       "summary": "讨论新加坡这类小国如何在大国竞争中维持安全、合法性和现实利益。",
+      "status": null,
+      "degree": 7
+    },
+    {
+      "id": "model:primary-market-logic",
+      "key": "primary-market-logic",
+      "label": "一级市场逻辑投二级市场",
+      "fullLabel": "一级市场逻辑投二级市场",
+      "type": "model",
+      "route": "models/primary-market-logic",
+      "summary": "用一级市场逻辑投二级市场，指不靠公开博弈，而是凭别人没有的信息、资源和对企业命脉的掌控，在确定性极高时才重仓下注。",
       "status": null,
       "degree": 7
     },
@@ -2765,17 +2820,6 @@
       "degree": 7
     },
     {
-      "id": "episode:EP091",
-      "key": "EP091",
-      "label": "EP091",
-      "fullLabel": "EP091 · 电车语音关灯致命漏洞！车企拿命测试？",
-      "type": "episode",
-      "route": "episodes/EP091",
-      "summary": "本期围绕领克 Z20 语音一句话误关大灯导致撞上护栏的事件，讨论智能电车为什么会在权限和安全边界上出现如此低级却致命的漏洞。核心判断是，这不是一个单独的语音识别 bug，而是车机权限、场景验证、OTA 思维和企业安全文化一起失守后的系统性结果。",
-      "status": "curated",
-      "degree": 7
-    },
-    {
       "id": "episode:EP092",
       "key": "EP092",
       "label": "EP092",
@@ -2798,17 +2842,6 @@
       "degree": 7
     },
     {
-      "id": "episode:EP102",
-      "key": "EP102",
-      "label": "EP102",
-      "fullLabel": "EP102 · 中国社会逃不开的双标游戏：为什么造假者无恙，说真话的人却被封杀？",
-      "type": "episode",
-      "route": "episodes/EP102",
-      "summary": "千万粉博主香宜被新京报实锤。他在悉尼大学花 750 美元雇模特冒充教授，为 DHA 背书。产品卖了约 1000 万。此前代言号称营养价值高十倍的驼奶粉，被打假后仍正常直播。\n\n平台对他网开一面，对指正者反诈老陈却直接封号。董宇辉直播间 80 块三只的麻黄鸡被举报悄悄下架，也没人道歉。\n\n结论很硬：平台保护的不是事实，也不是消费者。谁能持续带来高额交易额，谁就是大熊猫。刺儿头被钉在耻辱柱。\n\n从某度竞价把魏则西送进虚假医院，到电车厂用魔幻车机掩盖安全问题。都是同一套顺我者昌逆我者亡的逻辑。",
-      "status": "curated",
-      "degree": 7
-    },
-    {
       "id": "episode:EP111",
       "key": "EP111",
       "label": "EP111",
@@ -2816,17 +2849,6 @@
       "type": "episode",
       "route": "episodes/EP111",
       "summary": "张雪从湘西修车学徒做到世界机车赛冠军。借这段经历正面反驳一种流行叙事：普通人没机会了，所以最好尽早放弃梦想。\n\n时代机会分配不均是事实。但机会不是被动等来的。它靠持续投入、行动，和不肯被安全路径说服。\n\n过早把年轻人送进一个他根本不想要的“稳定位置”，很可能比失败更早杀死一个人。",
-      "status": "curated",
-      "degree": 7
-    },
-    {
-      "id": "episode:EP176",
-      "key": "EP176",
-      "label": "EP176",
-      "fullLabel": "EP176 · 6月车企销量出炉！繁荣背后暗藏危机，新能源“国家队”光环褪去，车企开始自负盈亏",
-      "type": "episode",
-      "route": "episodes/EP176",
-      "summary": "7 月初车企 6 月和上半年销量集体出炉，媒体大吹全线暴涨：比亚迪单月破 40 万、零跑近翻倍领跑新势力。本期不凑热闹、专给数字：表面全面上涨，实则半年目标集体大欠账——多数完成率只卡在三到四成，仅极氪约六成及格。作者判断行业规模越来越大、根基却越来越虚：销量靠低价换规模加挣补贴堆出来，而低价是没门槛的死循环，赢在价格也输在价格，利润被榨干就没钱反哺研发。出海也不是救命稻草，而要另掏几百亿建厂、面对反补贴税和贸易保护。落点是国家战略从新能源转向 AI 算力，车企政策奶被断、只能自负盈亏。",
       "status": "curated",
       "degree": 7
     },
@@ -2941,6 +2963,17 @@
       "degree": 6
     },
     {
+      "id": "concept:data-fetishism",
+      "key": "data-fetishism",
+      "label": "数据崇拜",
+      "fullLabel": "数据崇拜",
+      "type": "concept",
+      "route": "concepts/data-fetishism",
+      "summary": "把数据、表格、术语和科学帽子当成真理本身，只要有数字有来源就信。",
+      "status": null,
+      "degree": 6
+    },
+    {
       "id": "person:wang-shi",
       "key": "wang-shi",
       "label": "王石",
@@ -2985,13 +3018,13 @@
       "degree": 6
     },
     {
-      "id": "model:primary-market-logic",
-      "key": "primary-market-logic",
-      "label": "一级市场逻辑投二级市场",
-      "fullLabel": "一级市场逻辑投二级市场",
-      "type": "model",
-      "route": "models/primary-market-logic",
-      "summary": "用一级市场逻辑投二级市场，指不靠公开博弈，而是凭别人没有的信息、资源和对企业命脉的掌控，在确定性极高时才重仓下注。",
+      "id": "concept:dependent-enterprise",
+      "key": "dependent-enterprise",
+      "label": "依附型企业",
+      "fullLabel": "依附型企业",
+      "type": "concept",
+      "route": "concepts/dependent-enterprise",
+      "summary": "靠巨头授权生存的企业：只有使用权没有所有权、没有独立出海权、可替代性随同类依附者增加而归零，却承接巨头不要的全部风险。",
       "status": null,
       "degree": 6
     },
@@ -3480,17 +3513,6 @@
       "degree": 5
     },
     {
-      "id": "concept:data-fetishism",
-      "key": "data-fetishism",
-      "label": "数据崇拜",
-      "fullLabel": "数据崇拜",
-      "type": "concept",
-      "route": "concepts/data-fetishism",
-      "summary": "把数据、表格、术语和科学帽子当成真理本身，只要有数字有来源就信。",
-      "status": null,
-      "degree": 5
-    },
-    {
       "id": "model:exit-liquidation-waterfall",
       "key": "exit-liquidation-waterfall",
       "label": "退出清算瀑布",
@@ -3553,17 +3575,6 @@
       "type": "concept",
       "route": "concepts/new-media-politician",
       "summary": "靠新媒体直接连接受众、绕过传统组织和选举路径崛起的新型权力人物。",
-      "status": null,
-      "degree": 5
-    },
-    {
-      "id": "concept:dependent-enterprise",
-      "key": "dependent-enterprise",
-      "label": "依附型企业",
-      "fullLabel": "依附型企业",
-      "type": "concept",
-      "route": "concepts/dependent-enterprise",
-      "summary": "靠巨头授权生存的企业：只有使用权没有所有权、没有独立出海权、可替代性随同类依附者增加而归零，却承接巨头不要的全部风险。",
       "status": null,
       "degree": 5
     },
@@ -3850,6 +3861,28 @@
       "type": "model",
       "route": "models/bounded-social-experiment",
       "summary": "边界化社会试验强调制度创新必须有可承受范围、反馈机制和退出标准。",
+      "status": null,
+      "degree": 4
+    },
+    {
+      "id": "model:boundary-governance",
+      "key": "boundary-governance",
+      "label": "边界治理模型",
+      "fullLabel": "边界治理模型",
+      "type": "model",
+      "route": "models/boundary-governance",
+      "summary": "边界治理模型主张在不适、争议和明确伤害之间，先界定边界而非急于二分善恶。",
+      "status": null,
+      "degree": 4
+    },
+    {
+      "id": "model:subsidized-adoption-flywheel",
+      "key": "subsidized-adoption-flywheel",
+      "label": "补贴驱动采纳飞轮",
+      "fullLabel": "补贴驱动采纳飞轮",
+      "type": "model",
+      "route": "models/subsidized-adoption-flywheel",
+      "summary": "补贴驱动采纳飞轮解释平台如何用补贴换取使用量，再把使用量包装成增长证据。",
       "status": null,
       "degree": 4
     },
@@ -4415,17 +4448,6 @@
       "degree": 3
     },
     {
-      "id": "model:boundary-governance",
-      "key": "boundary-governance",
-      "label": "边界治理模型",
-      "fullLabel": "边界治理模型",
-      "type": "model",
-      "route": "models/boundary-governance",
-      "summary": "边界治理模型主张在不适、争议和明确伤害之间，先界定边界而非急于二分善恶。",
-      "status": null,
-      "degree": 3
-    },
-    {
       "id": "concept:surface-alliance-hedging",
       "key": "surface-alliance-hedging",
       "label": "表面结盟对冲",
@@ -4433,17 +4455,6 @@
       "type": "concept",
       "route": "concepts/surface-alliance-hedging",
       "summary": "对外维持亲如兄弟的同盟姿态，实际收缩支持、两头下注，把姿态做给利益更大的第三方看。",
-      "status": null,
-      "degree": 3
-    },
-    {
-      "id": "model:subsidized-adoption-flywheel",
-      "key": "subsidized-adoption-flywheel",
-      "label": "补贴驱动采纳飞轮",
-      "fullLabel": "补贴驱动采纳飞轮",
-      "type": "model",
-      "route": "models/subsidized-adoption-flywheel",
-      "summary": "补贴驱动采纳飞轮解释平台如何用补贴换取使用量，再把使用量包装成增长证据。",
       "status": null,
       "degree": 3
     },
@@ -18727,6 +18738,146 @@
       "source": "live:LIVE027",
       "target": "concept:homogeneous-competition",
       "kind": "live-concept"
+    },
+    {
+      "source": "live:LIVE028",
+      "target": "episode:EP035",
+      "kind": "live-episode"
+    },
+    {
+      "source": "live:LIVE028",
+      "target": "episode:EP091",
+      "kind": "live-episode"
+    },
+    {
+      "source": "live:LIVE028",
+      "target": "episode:EP102",
+      "kind": "live-episode"
+    },
+    {
+      "source": "live:LIVE028",
+      "target": "episode:EP131",
+      "kind": "live-episode"
+    },
+    {
+      "source": "live:LIVE028",
+      "target": "episode:EP137",
+      "kind": "live-episode"
+    },
+    {
+      "source": "live:LIVE028",
+      "target": "episode:EP139",
+      "kind": "live-episode"
+    },
+    {
+      "source": "live:LIVE028",
+      "target": "episode:EP154",
+      "kind": "live-episode"
+    },
+    {
+      "source": "live:LIVE028",
+      "target": "episode:EP169",
+      "kind": "live-episode"
+    },
+    {
+      "source": "live:LIVE028",
+      "target": "episode:EP170",
+      "kind": "live-episode"
+    },
+    {
+      "source": "live:LIVE028",
+      "target": "episode:EP176",
+      "kind": "live-episode"
+    },
+    {
+      "source": "live:LIVE028",
+      "target": "episode:EP184",
+      "kind": "live-episode"
+    },
+    {
+      "source": "live:LIVE028",
+      "target": "concept:dependent-enterprise",
+      "kind": "live-concept"
+    },
+    {
+      "source": "live:LIVE028",
+      "target": "concept:data-fetishism",
+      "kind": "live-concept"
+    },
+    {
+      "source": "live:LIVE028",
+      "target": "concept:technical-shortcut",
+      "kind": "live-concept"
+    },
+    {
+      "source": "live:LIVE028",
+      "target": "concept:hidden-debt",
+      "kind": "live-concept"
+    },
+    {
+      "source": "live:LIVE028",
+      "target": "model:black-box-assetization",
+      "kind": "live-model"
+    },
+    {
+      "source": "live:LIVE028",
+      "target": "model:political-embedded-enterprise",
+      "kind": "live-model"
+    },
+    {
+      "source": "live:LIVE028",
+      "target": "model:risk-transfer-chain",
+      "kind": "live-model"
+    },
+    {
+      "source": "live:LIVE028",
+      "target": "model:primary-market-logic",
+      "kind": "live-model"
+    },
+    {
+      "source": "live:LIVE028",
+      "target": "model:boundary-governance",
+      "kind": "live-model"
+    },
+    {
+      "source": "live:LIVE028",
+      "target": "model:subsidized-adoption-flywheel",
+      "kind": "live-model"
+    },
+    {
+      "source": "live:LIVE028",
+      "target": "model:path-dependence",
+      "kind": "live-model"
+    },
+    {
+      "source": "live:LIVE028",
+      "target": "theme:ev-financialization-and-false-sales",
+      "kind": "live-theme"
+    },
+    {
+      "source": "live:LIVE028",
+      "target": "theme:local-government-financialization",
+      "kind": "live-theme"
+    },
+    {
+      "source": "live:LIVE028",
+      "target": "theme:state-business-entanglement",
+      "kind": "live-theme"
+    },
+    {
+      "source": "live:LIVE028",
+      "target": "theme:ev-collapse-and-exit-risk",
+      "kind": "live-theme"
+    },
+    {
+      "source": "live:LIVE028",
+      "target": "theme:data-cosmetics-and-false-prosperity",
+      "kind": "live-theme"
+    },
+    {
+      "source": "live:LIVE028",
+      "target": "episode:EP062",
+      "kind": "live-episode"
     },
     {
       "source": "episode:EP120",
