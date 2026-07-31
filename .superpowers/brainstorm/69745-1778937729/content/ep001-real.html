@@ -1,0 +1,149 @@
+<h2>EP001 真实字幕 + 提炼 + 延展（段 5 完整示例）</h2>
+<p class="subtitle">不再画抽象图。这是网页页面最终可能的真实样式，用 EP001「皇帝的新衣」那段的真字幕做完整 mockup。</p>
+
+<style>
+  .episode-page { background:#faf6ec; padding:24px 28px; border-radius:8px; max-width:880px; }
+  .ep-header { border-bottom:2px solid #5a4a2e; padding-bottom:14px; margin-bottom:18px; }
+  .ep-header h2 { margin:0; font-size:22px; color:#222; }
+  .ep-header .meta { font-size:12.5px; color:#7c5c1a; margin-top:4px; }
+
+  .seg-stepper { display:flex; gap:8px; margin:18px 0 22px 0; flex-wrap:wrap; }
+  .seg-step { padding:6px 12px; background:#fff; border:1px solid #d8c9a0; border-radius:14px; font-size:12px; color:#7c5c1a; cursor:pointer; }
+  .seg-step.active { background:#5a4a2e; color:#fff; border-color:#5a4a2e; font-weight:bold; }
+  .seg-step.key { border-color:#c79235; border-width:2px; }
+
+  .segment { display:grid; grid-template-columns: 1fr 320px; gap:24px; margin-top:18px; }
+  @media (max-width:820px) { .segment { grid-template-columns:1fr; } }
+
+  .seg-main h3 { font-size:18px; margin:0 0 4px 0; color:#5a4a2e; display:flex; align-items:center; gap:8px; }
+  .seg-main .badge-key { background:#c79235; color:#fff; font-size:10.5px; padding:2px 8px; border-radius:3px; }
+  .seg-main .seg-claim { font-size:14px; color:#222; line-height:1.65; margin:8px 0 18px 0; padding:10px 14px; background:#fff; border-left:4px solid #5a4a2e; font-style:italic; }
+  .seg-main .seg-claim b { color:#9c6d1f; font-style:normal; }
+
+  .subtitle-block { background:#fff; padding:14px 18px; border-radius:6px; font-size:13.5px; line-height:1.85; color:#333; border:1px solid #e8dfc6; }
+  .subtitle-block .ts { color:#aaa; font-size:11px; margin-right:6px; vertical-align:1px; }
+  .subtitle-block mark { background:#fff4cc; padding:1px 3px; border-radius:2px; }
+  .subtitle-block mark.metaphor { background:#ffe7b3; border-bottom:2px solid #c79235; }
+  .subtitle-block mark.key-claim { background:#d4e8c4; border-bottom:2px solid #33673b; }
+  .subtitle-block mark.character { background:#f5d8d3; border-bottom:2px solid #9f3f2d; }
+
+  .legend { display:flex; gap:14px; font-size:11.5px; margin:10px 0 12px 0; flex-wrap:wrap; }
+  .legend span { display:inline-flex; align-items:center; gap:5px; }
+  .legend .swatch { width:14px; height:10px; border-radius:2px; display:inline-block; }
+
+  .sidecards { display:flex; flex-direction:column; gap:12px; }
+  .scard { background:#fff; border-radius:6px; padding:11px 14px; font-size:12.5px; border-left:4px solid #ccc; line-height:1.55; }
+  .scard h4 { margin:0 0 6px 0; font-size:12px; color:#666; font-weight:bold; text-transform:uppercase; letter-spacing:0.5px; }
+  .scard.viewpoint { border-left-color:#33673b; }
+  .scard.viewpoint h4 { color:#33673b; }
+  .scard.viewpoint p { margin:0; color:#222; }
+  .scard.related { border-left-color:#7c5c1a; }
+  .scard.related h4 { color:#7c5c1a; }
+  .scard.related a { display:block; color:#7c5c1a; text-decoration:none; padding:3px 0; }
+  .scard.related a:hover { text-decoration:underline; }
+  .scard.related .why { font-size:11px; color:#888; margin-top:2px; }
+  .scard.model { border-left-color:#284b63; }
+  .scard.model h4 { color:#284b63; }
+  .scard.model .tag { display:inline-block; background:#e9eef3; color:#284b63; padding:2px 8px; border-radius:3px; font-size:11.5px; margin:2px 4px 2px 0; }
+  .scard.boundary { border-left-color:#9c6d1f; background:#fdf8eb; }
+  .scard.boundary h4 { color:#9c6d1f; }
+  .scard.note { border-left-color:#c79235; background:#fff9e6; }
+  .scard.note h4 { color:#9c6d1f; }
+  .scard.note p { font-style:italic; }
+</style>
+
+<div class="episode-page">
+  <div class="ep-header">
+    <h2>EP001 · 西贝菜这么贵，原来是因为华与华</h2>
+    <div class="meta">2025-09-16 · 时长 5:31 · 8 个段落 · 当前阅读：段 5 / 8</div>
+  </div>
+
+  <!-- 段落导航条：8 段对应讲者实际讲述顺序 -->
+  <div class="seg-stepper">
+    <div class="seg-step">1·开场设问</div>
+    <div class="seg-step">2·咨询费</div>
+    <div class="seg-step">3·超级符号</div>
+    <div class="seg-step">4·帝王思维</div>
+    <div class="seg-step active key">5·★皇帝的新衣</div>
+    <div class="seg-step">6·商业模式</div>
+    <div class="seg-step">7·总结因果</div>
+    <div class="seg-step">8·反问收尾</div>
+  </div>
+
+  <!-- 段5 完整内容 -->
+  <div class="segment">
+    <!-- 左侧主栏：字幕 + 高亮 + 论点提炼 -->
+    <div class="seg-main">
+      <h3>段 5 · 皇帝的新衣 <span class="badge-key">★ 核心隐喻</span></h3>
+      <div class="seg-claim">
+        <b>讲者的核心思考工具</b>：用「皇帝的新衣」这个童话，把前面三个原因（咨询费 / 符号 low / 老板专权）<b>串成一个结构</b>——皇帝（贾老板）穿没有的衣服（虚高定位），裁缝（华与华）明知道但不说，臣子（员工）不敢说。
+      </div>
+
+      <div class="legend">
+        <span><span class="swatch" style="background:#ffe7b3;border-bottom:2px solid #c79235;"></span>★ 核心隐喻句</span>
+        <span><span class="swatch" style="background:#d4e8c4;border-bottom:2px solid #33673b;"></span>关键论点句</span>
+        <span><span class="swatch" style="background:#f5d8d3;border-bottom:2px solid #9f3f2d;"></span>人物 / 角色</span>
+      </div>
+
+      <div class="subtitle-block">
+        <span class="ts">02:38</span>那 <mark class="character">华与华</mark> 是个什么样的人呢，你看他们抱着那个状态唉让我想起了什么，<mark class="metaphor">让我想起了一个童话故事，这个童话故事里边儿就有两个裁缝，那俩裁缝啊也就是这个状态，那俩裁缝干嘛的呢，就给皇帝设计新装的</mark>。<br><br>
+        <span class="ts">02:59</span>唉他们啊就给皇帝设计这样的衣服，那样的衣服啊，红衣服白衣服格子衣服对不对，然后还有透明衣服。<br><br>
+        <span class="ts">03:08</span>唉当他们设计的各种衣服的时候，你看那些大臣们敢说话吗，<mark class="key-claim">这些臣子们不敢说话，那这些普通的居民敢说话吗，也没人敢说话</mark>，最后啊听说只有那么一个小孩说了句真话，童话故事是这么说的。<br><br>
+        <span class="ts">03:22</span>但是现实生活中呢，<mark class="metaphor">我觉得华与华就扮演了这么一个角色</mark>。<mark class="key-claim">他深知 <mark class="character">贾老板</mark> 喜欢的是什么，他也深知贾老板这个企业欠缺什么，可是他不说呀，他为了挣钱</mark>，他比谁都聪明。<br><br>
+        <span class="ts">03:36</span>这两个啊多好的裁缝啊，他们就要的就是贾老板把你的利润拿出来哎，把你那个成本涨上去，把你的东西卖得更贵，然后呢把你的利润给我，我替你干嘛，<mark class="key-claim">我替你做衣服啊，多漂亮的超级符号</mark>。
+      </div>
+
+      <div style="margin-top:14px;font-size:12px;color:#888;">
+        ↑ 这是段 5 的完整字幕原文。<b>3 种高亮</b>有不同含义：金色＝核心隐喻、绿色＝关键论点、红色＝人物/角色。点任一高亮 → 右侧对应卡片自动滚到。
+      </div>
+    </div>
+
+    <!-- 右侧栏：观点 + 模型 + 跨期 + 边界 + 批注 -->
+    <div class="sidecards">
+
+      <div class="scard viewpoint">
+        <h4>讲者观点（viewpoint）</h4>
+        <p>顾问未必总是纠偏者，也可能成为迎合者。当顾问服务的重点从"纠偏"变成"确认"，顾问就不只是专业服务方，而是开始参与塑造权力结构。</p>
+      </div>
+
+      <div class="scard model">
+        <h4>讲者使用的思维模型</h4>
+        <span class="tag">authority-misinfluence</span>
+        <span class="tag">principal-agent</span>
+        <span class="tag">organizational-silence</span>
+        <p style="margin:8px 0 0 0;color:#666;font-size:11.5px;">「皇帝的新衣」其实是 <b>权威误导</b> + <b>委托代理失灵</b> + <b>组织失语</b> 三者的民间表达。</p>
+      </div>
+
+      <div class="scard related">
+        <h4>跨期延展 (3)</h4>
+        <a href="#"><b>→ EP065</b> 贾国龙的不服 <div class="why">同一条「老板强势→顾问确认→内部失语」的链条，发展成品牌失速</div></a>
+        <a href="#"><b>→ EP002</b> 西贝预制菜与资本逻辑 <div class="why">从「咨询费转嫁」推到「预制菜效率」，同一种成本-叙事关系</div></a>
+        <a href="#"><b>→ EP071</b> 直播间的价格与身份 <div class="why">消费者为何愿为「符号 / 帝王叙事」买单</div></a>
+      </div>
+
+      <div class="scard boundary">
+        <h4>⚠ 讲者没讲到（边界外）</h4>
+        <p>① 童话里的"小孩"现实中是谁？媒体、监管、竞争对手 —— 讲者把"沉默"画成铁律，但现实有反例（这次罗永浩 = 小孩）。<br>
+        ② 把华与华定义为"骗子"是修辞强势 —— 也许他们真的相信自己的方法论。</p>
+      </div>
+
+      <div class="scard note">
+        <h4>✎ 你的批注</h4>
+        <p>"皇帝的新衣"既是讲者的解释工具，也是<b>修辞陷阱</b>——把复杂商业咨询简化成"愚弄"，听起来痛快但简化掉了博弈细节。</p>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<div style="margin-top:24px;padding:14px 18px;background:#33673b;color:#fff;border-radius:8px;">
+  <p style="margin:0 0 8px 0;font-weight:bold;">这次的关键变化：</p>
+  <ul style="margin:0;padding-left:22px;font-size:13px;line-height:1.8;">
+    <li><b>字幕原文是主角</b> —— 中间一整块完整字幕，按讲者实际话语保留</li>
+    <li><b>3 种行内高亮</b> —— 隐喻金 / 论点绿 / 人物红，扫一眼就看到讲者怎么思考</li>
+    <li><b>右侧 5 张卡片</b> —— 讲者观点、思维模型、跨期延展、边界外、你的批注</li>
+    <li><b>顶部 8 段导航</b> —— 完整 EP001 真实段落（不是我编的 3 段）</li>
+    <li><b>整体仍然"一条线"</b> —— 你 1→2→3...→8 顺着读，就是讲者的思考路径</li>
+  </ul>
+  <p style="margin:12px 0 0 0;font-size:13px;">告诉我：<b>这一次方向对了吗？</b> 如果对了，我们再聊 1）整页要不要做全 EP001 8 段，2）"思维地图"作为第二视图（汇总跨期连接）是不是这上面的延伸，3）字幕高亮规则、卡片样式细节。</p>
+</div>

@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+  body { margin:0; padding:0; background:#0d0d0e; color:#e5e5e5; font-family:-apple-system,BlinkMacSystemFont,'PingFang SC','Helvetica Neue',sans-serif; }
+  .wrap { padding:22px 28px 30px; }
+  h2 { margin:0 0 4px 0; font-size:21px; font-weight:500; color:#f5f5f5; }
+  .sub { margin:0 0 16px 0; font-size:12.5px; color:#888; }
+
+  .route-card { background:#141416; border-radius:12px; padding:18px 16px 8px; box-shadow:0 4px 24px rgba(0,0,0,0.4); position:relative; }
+  .route-card svg { display:block; width:100%; height:auto; }
+  .legend { display:flex; gap:14px; font-size:11.5px; padding:6px 8px 10px; flex-wrap:wrap; }
+  .legend .row { display:flex; align-items:center; gap:5px; color:#999; }
+  .legend .dot { width:9px; height:9px; border-radius:50%; }
+
+  .feedback { margin-top:20px; padding:14px 18px; background:#1a1a1c; border-radius:10px; border:1px solid rgba(255,255,255,0.06); }
+  .feedback p { margin:0; font-size:13px; color:#ddd; line-height:1.7; }
+  .feedback b { color:#c4b5fd; }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<h2>EP001 · 逻辑路线 + 节点辐射（Obsidian 风格）</h2>
+<p class="sub">横向主轴 = 讲者讲述的 8 段 · 每段节点向外辐射延展节点 · 段 5 ★ 是核心隐喻段（特殊高亮）</p>
+
+<div class="route-card">
+  <svg viewBox="0 0 1180 620" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+      <radialGradient id="g-ep"><stop offset="0%" stop-color="#c4b5fd"/><stop offset="65%" stop-color="#8b5cf6"/><stop offset="100%" stop-color="#5b21b6"/></radialGradient>
+      <radialGradient id="g-key"><stop offset="0%" stop-color="#fef3c7"/><stop offset="55%" stop-color="#fbbf24"/><stop offset="100%" stop-color="#b45309"/></radialGradient>
+      <radialGradient id="g-c"><stop offset="0%" stop-color="#bae6fd"/><stop offset="100%" stop-color="#0284c7"/></radialGradient>
+      <radialGradient id="g-m"><stop offset="0%" stop-color="#bbf7d0"/><stop offset="100%" stop-color="#16a34a"/></radialGradient>
+      <radialGradient id="g-p"><stop offset="0%" stop-color="#fed7aa"/><stop offset="100%" stop-color="#ea580c"/></radialGradient>
+      <radialGradient id="g-r"><stop offset="0%" stop-color="#ddd6fe" stop-opacity="0.9"/><stop offset="100%" stop-color="#7c3aed" stop-opacity="0.75"/></radialGradient>
+
+      <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+        <feGaussianBlur stdDeviation="3" result="b"/>
+        <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+      </filter>
+      <filter id="glow-strong" x="-50%" y="-50%" width="200%" height="200%">
+        <feGaussianBlur stdDeviation="5.5" result="b"/>
+        <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+      </filter>
+      <linearGradient id="route-grad" x1="0" y1="0" x2="1" y2="0">
+        <stop offset="0%" stop-color="#a78bfa" stop-opacity="0.35"/>
+        <stop offset="50%" stop-color="#fbbf24" stop-opacity="0.65"/>
+        <stop offset="100%" stop-color="#a78bfa" stop-opacity="0.35"/>
+      </linearGradient>
+    </defs>
+
+    <!-- 主轴底光晕带 -->
+    <path d="M 70 320 Q 300 305 590 320 T 1110 320" stroke="url(#route-grad)" stroke-width="14" fill="none" opacity="0.18" filter="url(#glow)"/>
+    <!-- 主轴 -->
+    <path d="M 70 320 Q 300 305 590 320 T 1110 320" stroke="url(#route-grad)" stroke-width="2.5" fill="none"/>
+
+    <!-- 段节点之间的连线点缀（小箭头/小圆） -->
+    <g fill="rgba(196,181,253,0.4)">
+      <circle cx="170" cy="318" r="1.4"/><circle cx="200" cy="316" r="1.4"/>
+      <circle cx="290" cy="314" r="1.4"/><circle cx="320" cy="313" r="1.4"/>
+      <circle cx="410" cy="313" r="1.4"/><circle cx="440" cy="314" r="1.4"/>
+      <circle cx="530" cy="316" r="1.4"/><circle cx="560" cy="318" r="1.4"/>
+      <circle cx="650" cy="319" r="1.4"/><circle cx="680" cy="320" r="1.4"/>
+      <circle cx="770" cy="320" r="1.4"/><circle cx="800" cy="320" r="1.4"/>
+      <circle cx="890" cy="319" r="1.4"/><circle cx="920" cy="318" r="1.4"/>
+      <circle cx="1010" cy="316" r="1.4"/><circle cx="1040" cy="315" r="1.4"/>
+    </g>
+
+    <!-- ============ 段 1: 开场设问 (x=140) ============ -->
+    <g>
+      <!-- 上方延展线 + 节点 -->
+      <line x1="140" y1="304" x2="120" y2="180" stroke="rgba(125,211,252,0.2)" stroke-width="0.9"/>
+      <circle cx="120" cy="180" r="7" fill="url(#g-c)" filter="url(#glow)"/>
+      <text x="120" y="165" text-anchor="middle" font-size="10.5" fill="#bae6fd">设问框架</text>
+
+      <!-- 下方延展 -->
+      <line x1="140" y1="336" x2="100" y2="460" stroke="rgba(253,186,116,0.18)" stroke-width="0.9"/>
+      <circle cx="100" cy="460" r="7" fill="url(#g-p)" filter="url(#glow)"/>
+      <text x="100" y="478" text-anchor="middle" font-size="10.5" fill="#fed7aa">罗永浩</text>
+
+      <!-- 段节点 -->
+      <circle cx="140" cy="320" r="16" fill="url(#g-ep)" filter="url(#glow)"/>
+      <text x="140" y="318" text-anchor="middle" font-size="9" font-weight="600" fill="#fff">1</text>
+      <text x="140" y="356" text-anchor="middle" font-size="11" fill="#e5e5e5">开场设问</text>
+      <text x="140" y="370" text-anchor="middle" font-size="9.5" fill="#888">"凭什么这么贵"</text>
+    </g>
+
+    <!-- ============ 段 2: 咨询费 (x=260) ============ -->
+    <g>
+      <line x1="252" y1="306" x2="220" y2="170" stroke="rgba(125,211,252,0.22)" stroke-width="1"/>
+      <circle cx="220" cy="170" r="8" fill="url(#g-c)" filter="url(#glow)"/>
+      <text x="220" y="155" text-anchor="middle" font-size="10.5" fill="#bae6fd">成本转移</text>
+
+      <line x1="268" y1="306" x2="300" y2="120" stroke="rgba(187,247,208,0.22)" stroke-width="1"/>
+      <circle cx="300" cy="120" r="8" fill="url(#g-m)" filter="url(#glow)"/>
+      <text x="300" y="105" text-anchor="middle" font-size="10.5" fill="#bbf7d0">委托代理</text>
+
+      <line x1="260" y1="338" x2="260" y2="475" stroke="rgba(196,181,253,0.22)" stroke-width="1"/>
+      <circle cx="260" cy="475" r="8" fill="url(#g-r)" filter="url(#glow)"/>
+      <text x="260" y="495" text-anchor="middle" font-size="10.5" fill="#ddd6fe">→ EP002</text>
+      <text x="260" y="507" text-anchor="middle" font-size="9" fill="#888">预制菜</text>
+
+      <circle cx="260" cy="316" r="16" fill="url(#g-ep)" filter="url(#glow)"/>
+      <text x="260" y="314" text-anchor="middle" font-size="9" font-weight="600" fill="#fff">2</text>
+      <text x="260" y="352" text-anchor="middle" font-size="11" fill="#e5e5e5">咨询费</text>
+      <text x="260" y="366" text-anchor="middle" font-size="9.5" fill="#888">6000万 / 10年</text>
+    </g>
+
+    <!-- ============ 段 3: 超级符号 (x=380) ============ -->
+    <g>
+      <line x1="380" y1="299" x2="380" y2="170" stroke="rgba(125,211,252,0.22)" stroke-width="1"/>
+      <circle cx="380" cy="170" r="8" fill="url(#g-c)" filter="url(#glow)"/>
+      <text x="380" y="155" text-anchor="middle" font-size="10.5" fill="#bae6fd">符号失真</text>
+
+      <line x1="392" y1="328" x2="430" y2="465" stroke="rgba(196,181,253,0.2)" stroke-width="1"/>
+      <circle cx="430" cy="465" r="8" fill="url(#g-r)" filter="url(#glow)"/>
+      <text x="430" y="485" text-anchor="middle" font-size="10.5" fill="#ddd6fe">→ EP004</text>
+      <text x="430" y="497" text-anchor="middle" font-size="9" fill="#888">学生午餐</text>
+
+      <line x1="368" y1="328" x2="340" y2="430" stroke="rgba(255,255,255,0.15)" stroke-width="0.8" stroke-dasharray="3,2"/>
+      <circle cx="340" cy="430" r="7" fill="none" stroke="rgba(255,255,255,0.25)" stroke-width="1.3" stroke-dasharray="2,1.5"/>
+      <text x="340" y="450" text-anchor="middle" font-size="10" fill="#888" font-style="italic">未谈</text>
+      <text x="340" y="462" text-anchor="middle" font-size="9" fill="#666">食材/租金</text>
+
+      <circle cx="380" cy="315" r="16" fill="url(#g-ep)" filter="url(#glow)"/>
+      <text x="380" y="313" text-anchor="middle" font-size="9" font-weight="600" fill="#fff">3</text>
+      <text x="380" y="351" text-anchor="middle" font-size="11" fill="#e5e5e5">超级符号</text>
+      <text x="380" y="365" text-anchor="middle" font-size="9.5" fill="#888">"红白格 low"</text>
+    </g>
+
+    <!-- ============ 段 4: 帝王思维 (x=500) ============ -->
+    <g>
+      <line x1="500" y1="300" x2="500" y2="170" stroke="rgba(125,211,252,0.22)" stroke-width="1"/>
+      <circle cx="500" cy="170" r="8" fill="url(#g-c)" filter="url(#glow)"/>
+      <text x="500" y="155" text-anchor="middle" font-size="10.5" fill="#bae6fd">组织失语</text>
+
+      <line x1="500" y1="332" x2="500" y2="465" stroke="rgba(253,186,116,0.22)" stroke-width="1"/>
+      <circle cx="500" cy="465" r="8" fill="url(#g-p)" filter="url(#glow)"/>
+      <text x="500" y="485" text-anchor="middle" font-size="10.5" fill="#fed7aa">贾国龙</text>
+
+      <circle cx="500" cy="316" r="16" fill="url(#g-ep)" filter="url(#glow)"/>
+      <text x="500" y="314" text-anchor="middle" font-size="9" font-weight="600" fill="#fff">4</text>
+      <text x="500" y="352" text-anchor="middle" font-size="11" fill="#e5e5e5">帝王思维</text>
+      <text x="500" y="366" text-anchor="middle" font-size="9.5" fill="#888">"巡店没人敢说"</text>
+    </g>
+
+    <!-- ============ 段 5: ★皇帝的新衣 (x=620) — 特殊高亮 ============ -->
+    <g>
+      <!-- 强光晕背景 -->
+      <circle cx="620" cy="320" r="46" fill="rgba(251,191,36,0.06)" filter="url(#glow-strong)"/>
+      <circle cx="620" cy="320" r="34" fill="none" stroke="rgba(251,191,36,0.35)" stroke-width="1"/>
+      <circle cx="620" cy="320" r="42" fill="none" stroke="rgba(251,191,36,0.15)" stroke-width="1"/>
+
+      <line x1="608" y1="302" x2="560" y2="160" stroke="rgba(187,247,208,0.3)" stroke-width="1.2"/>
+      <circle cx="560" cy="160" r="9" fill="url(#g-m)" filter="url(#glow)"/>
+      <text x="560" y="145" text-anchor="middle" font-size="10.5" fill="#bbf7d0">权威误导</text>
+
+      <line x1="632" y1="302" x2="680" y2="135" stroke="rgba(187,247,208,0.3)" stroke-width="1.2"/>
+      <circle cx="680" cy="135" r="9" fill="url(#g-m)" filter="url(#glow)"/>
+      <text x="680" y="120" text-anchor="middle" font-size="10.5" fill="#bbf7d0">委托代理失灵</text>
+
+      <line x1="620" y1="340" x2="620" y2="470" stroke="rgba(253,186,116,0.3)" stroke-width="1.2"/>
+      <circle cx="620" cy="470" r="9" fill="url(#g-p)" filter="url(#glow)"/>
+      <text x="620" y="490" text-anchor="middle" font-size="10.5" fill="#fed7aa">华与华</text>
+      <text x="620" y="502" text-anchor="middle" font-size="9" fill="#888">(裁缝)</text>
+
+      <!-- 段节点（金色发光） -->
+      <circle cx="620" cy="320" r="22" fill="url(#g-key)" filter="url(#glow-strong)"/>
+      <text x="620" y="316" text-anchor="middle" font-size="11" font-weight="700" fill="#fff">★ 5</text>
+      <text x="620" y="328" text-anchor="middle" font-size="8" fill="#fef3c7">CORE</text>
+      <text x="620" y="365" text-anchor="middle" font-size="12.5" font-weight="600" fill="#fbbf24">皇帝的新衣</text>
+      <text x="620" y="380" text-anchor="middle" font-size="10" fill="#a3a3a3">讲者的核心隐喻 · 串起 1-4</text>
+    </g>
+
+    <!-- ============ 段 6: 商业模式 (x=740) ============ -->
+    <g>
+      <line x1="740" y1="305" x2="740" y2="170" stroke="rgba(125,211,252,0.22)" stroke-width="1"/>
+      <circle cx="740" cy="170" r="8" fill="url(#g-c)" filter="url(#glow)"/>
+      <text x="740" y="155" text-anchor="middle" font-size="10.5" fill="#bae6fd">迎合式顾问</text>
+
+      <line x1="752" y1="333" x2="790" y2="460" stroke="rgba(253,186,116,0.18)" stroke-width="0.9"/>
+      <circle cx="790" cy="460" r="7" fill="url(#g-p)" filter="url(#glow)" opacity="0.7"/>
+      <text x="790" y="478" text-anchor="middle" font-size="10" fill="#fed7aa">华与华</text>
+
+      <circle cx="740" cy="320" r="16" fill="url(#g-ep)" filter="url(#glow)"/>
+      <text x="740" y="318" text-anchor="middle" font-size="9" font-weight="600" fill="#fff">6</text>
+      <text x="740" y="356" text-anchor="middle" font-size="11" fill="#e5e5e5">商业模式</text>
+      <text x="740" y="370" text-anchor="middle" font-size="9.5" fill="#888">"机场广告给帝王看"</text>
+    </g>
+
+    <!-- ============ 段 7: 总结因果 (x=860) ============ -->
+    <g>
+      <line x1="860" y1="305" x2="880" y2="170" stroke="rgba(187,247,208,0.25)" stroke-width="1"/>
+      <circle cx="880" cy="170" r="8" fill="url(#g-m)" filter="url(#glow)"/>
+      <text x="880" y="155" text-anchor="middle" font-size="10.5" fill="#bbf7d0">价值捕获</text>
+
+      <line x1="860" y1="336" x2="860" y2="430" stroke="rgba(255,255,255,0.15)" stroke-width="0.8" stroke-dasharray="3,2"/>
+      <circle cx="860" cy="430" r="7" fill="none" stroke="rgba(255,255,255,0.25)" stroke-width="1.3" stroke-dasharray="2,1.5"/>
+      <text x="860" y="450" text-anchor="middle" font-size="10" fill="#888" font-style="italic">未谈</text>
+      <text x="860" y="462" text-anchor="middle" font-size="9" fill="#666">消费者心理</text>
+
+      <circle cx="860" cy="320" r="16" fill="url(#g-ep)" filter="url(#glow)"/>
+      <text x="860" y="318" text-anchor="middle" font-size="9" font-weight="600" fill="#fff">7</text>
+      <text x="860" y="356" text-anchor="middle" font-size="11" fill="#e5e5e5">总结因果</text>
+      <text x="860" y="370" text-anchor="middle" font-size="9.5" fill="#888">"成本→消费者"</text>
+    </g>
+
+    <!-- ============ 段 8: 反问收尾 (x=980) ============ -->
+    <g>
+      <line x1="980" y1="305" x2="980" y2="175" stroke="rgba(125,211,252,0.2)" stroke-width="0.9"/>
+      <circle cx="980" cy="175" r="7" fill="url(#g-c)" filter="url(#glow)"/>
+      <text x="980" y="160" text-anchor="middle" font-size="10.5" fill="#bae6fd">延展接口</text>
+
+      <line x1="990" y1="335" x2="1020" y2="455" stroke="rgba(196,181,253,0.22)" stroke-width="1"/>
+      <circle cx="1020" cy="455" r="8" fill="url(#g-r)" filter="url(#glow)"/>
+      <text x="1020" y="475" text-anchor="middle" font-size="10.5" fill="#ddd6fe">→ EP065</text>
+      <text x="1020" y="487" text-anchor="middle" font-size="9" fill="#888">贾国龙不服</text>
+
+      <line x1="975" y1="336" x2="940" y2="465" stroke="rgba(196,181,253,0.22)" stroke-width="1"/>
+      <circle cx="940" cy="465" r="8" fill="url(#g-r)" filter="url(#glow)"/>
+      <text x="940" y="485" text-anchor="middle" font-size="10.5" fill="#ddd6fe">→ EP071</text>
+      <text x="940" y="497" text-anchor="middle" font-size="9" fill="#888">直播间价格</text>
+
+      <circle cx="980" cy="320" r="16" fill="url(#g-ep)" filter="url(#glow)"/>
+      <text x="980" y="318" text-anchor="middle" font-size="9" font-weight="600" fill="#fff">8</text>
+      <text x="980" y="356" text-anchor="middle" font-size="11" fill="#e5e5e5">反问收尾</text>
+      <text x="980" y="370" text-anchor="middle" font-size="9.5" fill="#888">"你们自己想"</text>
+    </g>
+
+    <!-- 主轴方向箭头 -->
+    <g fill="#888">
+      <text x="55" y="324" font-size="10" text-anchor="end">逻辑路线</text>
+      <polygon points="1115,320 1110,316 1110,324" fill="rgba(196,181,253,0.5)"/>
+    </g>
+
+    <!-- 顶部标题 -->
+    <text x="70" y="40" font-size="14" fill="#e5e5e5" font-weight="500">EP001 · 西贝菜这么贵</text>
+    <text x="70" y="56" font-size="10.5" fill="#888">5:31 · 158 字幕条 · 8 段逻辑流</text>
+  </svg>
+
+  <div class="legend">
+    <div class="row"><span class="dot" style="background:#8b5cf6;"></span>段节点（讲述顺序）</div>
+    <div class="row"><span class="dot" style="background:#fbbf24;"></span>★ 核心隐喻段</div>
+    <div class="row"><span class="dot" style="background:#0284c7;"></span>概念</div>
+    <div class="row"><span class="dot" style="background:#16a34a;"></span>模型</div>
+    <div class="row"><span class="dot" style="background:#ea580c;"></span>人物</div>
+    <div class="row"><span class="dot" style="background:#7c3aed;opacity:0.75"></span>跨期延展</div>
+    <div class="row"><span style="display:inline-block;width:9px;height:9px;border-radius:50%;border:1.5px dashed rgba(255,255,255,0.35);"></span>未讲到（边界外）</div>
+  </div>
+</div>
+
+<div class="feedback">
+  <p><b>这次的关键</b>：横向主轴 = 讲者讲的 8 段逻辑路线（紫色发光节点串成一条线），每段向上下辐射延展节点。段 5 ★「皇帝的新衣」用金色 + 强光晕标记，因为它是讲者把前面 4 段串起来的核心隐喻。整体保持 Obsidian 深色发光质感。</p>
+  <p style="margin-top:10px;"><b>是不是这样？</b> 路线在 + 节点辐射在 + 深色发光质感都在。如果对了，下一步：① 点段节点 → 弹出字幕+论点（侧边栏 or 模态）② 默认是 single-episode 视图，缩小后 → 跨期全宇宙图谱（每个 episode 是一条这样的"路线"，他们之间通过共享概念/人物互联）③ 节点的具体交互（hover/click/drag）。</p>
+</div>
+
+</div>
+</body>
+</html>

@@ -1,0 +1,124 @@
+
+> yingxiangli-kb@0.1.0 audit:keywords
+> node scripts/audit-keywords.mjs
+
+remaining_auto_keywords	103
+EP001	贾国龙	thin
+EP001	罗永浩	thin
+EP002	预制菜	thin
+EP004	标准化供餐	meta
+EP005	户晨风	thin
+EP005	张雪峰	person-underbuilt
+EP007	地产时代	meta
+EP007	地方政府	meta
+EP007	万达	meta
+EP007	隐性债务	meta
+EP008	城投公司	meta
+EP008	地方债	meta
+EP008	均和集团	meta
+EP009	宗馥莉	weak-person-sources
+EP010	国有资产	meta
+EP010	家族信托	meta
+EP012	宝万之争	meta
+EP012	地方风险	meta
+EP012	万科	meta
+EP012	王石	weak-person-sources
+EP013	雷军	weak-person-sources
+EP014	应试教育	meta
+EP015	换电	meta
+EP015	零公里二手车	meta
+EP017	锂电池	meta
+EP018	AI	meta
+EP019	特朗普	person-has-signal-notes
+EP022	李新野	person-underbuilt,weak-person-sources
+EP023	形式主义	meta
+EP024	大学生	meta
+EP025	补贴	meta
+EP026	权威	meta
+EP030	标准化	meta
+EP031	霸王条款	meta
+EP031	佛山	meta
+EP032	峰哥亡命天涯	banned-content
+EP040	美国	meta
+EP041	安全设计	meta
+EP043	创伤循环	meta
+EP045	比亚迪	meta
+EP045	王传福	weak-person-sources
+EP047	百子团	meta,banned-content
+EP047	代孕	meta,banned-content
+EP047	家族工程	banned-content
+EP047	新钱	banned-content
+EP047	育儿工具化	banned-content
+EP049	大模型	meta
+EP050	余承东	weak-person-sources
+EP051	海南封关	meta
+EP051	制造业	meta
+EP053	博物馆伦理	meta
+EP053	庞增和	person-underbuilt
+EP053	徐湖平	person-underbuilt
+EP054	举国体制	meta
+EP056	区域拒止	meta
+EP056	太平洋战争	meta
+EP057	扎克伯格	weak-person-sources
+EP058	李飞飞	weak-person-sources
+EP059	女性崛起	meta
+EP061	保值增值	meta
+EP061	崩塌	meta
+EP062	安全分层	meta
+EP063	断亲	meta
+EP064	李显龙	weak-person-sources
+EP067	地方资金	meta
+EP067	李斌	weak-person-sources
+EP068	小镇婆罗门	meta
+EP071	董宇辉	weak-person-sources
+EP077	北冰洋航线	meta
+EP078	博商资管	meta
+EP080	刀片电池	meta
+EP081	波多黎各	meta
+EP084	标准劳动力	meta
+EP085	俄罗斯	meta
+EP087	国际法	meta
+EP092	爱泼斯坦案	meta
+EP092	波斯	meta
+EP095	兵役	meta
+EP099	补贴杠杆	meta
+EP099	地方财政补贴负面清单	meta
+EP101	碧桂园	meta
+EP103	安全基线	meta
+EP105	财富	meta
+EP105	财经博主	meta
+EP106	地方财政	meta
+EP108	版权风险	meta
+EP111	张雪	person-underbuilt
+EP112	白酒	meta
+EP112	年份酒	meta
+EP116	李光耀	weak-person-sources
+EP116	认祖归宗	meta
+EP116	小国平衡	meta
+EP117	胡志明	weak-person-sources
+EP118	标准答案	meta
+EP118	赵克长	person-underbuilt
+EP119	白酒金融化	meta
+EP120	彼得马扎尔	meta
+EP123	大国博弈	meta
+EP123	庞统	meta
+EP123	诸葛亮	meta
+EP126	恒大	meta
+EP126	系统性风险	meta
+EP131	哪吒汽车	meta
+source_issues	15
+SOURCE	content/people/dong-yuhui.json	董宇辉	person-source-weak-sources
+SOURCE	content/people/fengge-wangmingtianya.json	峰哥亡命天涯	person-source-banned-content
+SOURCE	content/people/ho-chi-minh.json	胡志明	person-source-weak-sources
+SOURCE	content/people/hua-yu-hua.json	华与华	non-person-in-people-dir:organization
+SOURCE	content/people/lee-hsien-loong.json	李显龙	person-source-weak-sources
+SOURCE	content/people/lee-kuan-yew.json	李光耀	person-source-weak-sources
+SOURCE	content/people/lei-jun.json	雷军	person-source-weak-sources
+SOURCE	content/people/li-bin.json	李斌	person-source-weak-sources
+SOURCE	content/people/li-feifei.json	李飞飞	person-source-weak-sources
+SOURCE	content/people/li-xinye.json	李新野	person-source-weak-sources
+SOURCE	content/people/mark-zuckerberg.json	扎克伯格	person-source-weak-sources
+SOURCE	content/people/wang-chuanfu.json	王传福	person-source-weak-sources
+SOURCE	content/people/wang-shi.json	王石	person-source-weak-sources
+SOURCE	content/people/yu-chengdong.json	余承东	person-source-weak-sources
+SOURCE	content/people/zong-fuli.json	宗馥莉	person-source-weak-sources

@@ -1,0 +1,132 @@
+<h2>8 个真实成品网页（不再画草图，直接打开看）</h2>
+<p class="subtitle">分 4 类。每个链接都能直接打开看真实成品。你边看边记下"有感觉"的 2-3 个，回来告诉我，我再针对性出方案。</p>
+
+<style>
+  .ref-section { margin-top:24px; padding:16px 18px; background:#faf6ec; border-radius:8px; }
+  .ref-section h3 { margin:0 0 6px 0; color:#5a4a2e; }
+  .ref-section .ref-sub { font-size:12.5px; color:#7c5c1a; margin:0 0 12px 0; font-style:italic; }
+  .ref-item { display:flex; gap:14px; padding:12px 0; border-bottom:1px solid #e8dfc6; }
+  .ref-item:last-child { border-bottom:none; }
+  .ref-thumb { flex:0 0 90px; height:65px; border-radius:6px; display:flex; align-items:center; justify-content:center; font-size:11px; color:#fff; text-align:center; line-height:1.2; }
+  .ref-body { flex:1; }
+  .ref-body h4 { margin:0 0 2px 0; font-size:14px; }
+  .ref-body h4 a { color:#284b63; text-decoration:underline; }
+  .ref-body .meta { font-size:11px; color:#888; margin:0 0 6px 0; }
+  .ref-body p { margin:0 0 4px 0; font-size:12.5px; line-height:1.55; color:#333; }
+  .ref-body .relevance { font-size:12px; color:#5a4a2e; background:#fff; padding:6px 10px; border-left:3px solid #c79235; margin-top:6px; }
+</style>
+
+<!-- 类 1: Scrollytelling 长卷叙事 -->
+<div class="ref-section">
+  <h3>① 长卷滚动叙事（Scrollytelling）</h3>
+  <p class="ref-sub">滚动鼠标，故事/字幕逐段展开，旁边动画/插画/数据同步变化。完全抛弃"鸟瞰地图"，改成"沉浸阅读"。</p>
+
+  <div class="ref-item">
+    <div class="ref-thumb" style="background:linear-gradient(135deg,#1a3a5c,#0a1929);"><span>NYT<br>Snow Fall</span></div>
+    <div class="ref-body">
+      <h4><a href="https://www.nytimes.com/projects/2012/snow-fall/" target="_blank">NYT · Snow Fall: The Avalanche at Tunnel Creek</a></h4>
+      <p class="meta">2012 · 普利策奖 · scrollytelling 开山之作</p>
+      <p>主文字是叙述。滚到某段时，背景自动变成雪山视频/卫星地图/受难者照片，关键时刻嵌入小动画。读完一气呵成，但每段都有视觉重量。</p>
+      <p class="relevance"><b>对你项目的意义</b>：节目逐段播放/字幕逐段呈现，每讲到某个论点时，右侧/背景自动浮出延展卡片、相关人物、跨期跳转链接。</p>
+    </div>
+  </div>
+
+  <div class="ref-item">
+    <div class="ref-thumb" style="background:linear-gradient(135deg,#e8a838,#c0392b);"><span>The<br>Pudding</span></div>
+    <div class="ref-body">
+      <h4><a href="https://pudding.cool/" target="_blank">The Pudding · 数据故事合集</a></h4>
+      <p class="meta">数据可视化 + 解释性叙事的代表</p>
+      <p>每篇文章都是"边读边看图变化"。比如解释一首流行歌怎么火、电影台词的性别分布。可点击的图表穿插在文字里。<b>推荐看</b>：<a href="https://pudding.cool/2017/03/film-dialogue/" target="_blank">Film Dialogue by Gender</a></p>
+      <p class="relevance"><b>对你项目的意义</b>：把"颖响力一期节目"做成一篇可滚动的解释文章——讲到段1，展示段1 的论点和延展；讲到段2，自动滚到段2 的画面。</p>
+    </div>
+  </div>
+</div>
+
+<!-- 类 2: Genius 风格字幕注释 -->
+<div class="ref-section">
+  <h3>② 字幕/讲稿 + 行内注释（Genius 风格）</h3>
+  <p class="ref-sub">把节目字幕完整摊开，关键的句子带高亮，点击高亮句子 → 弹出"延展、批注、跨期关联"。最贴近你最初说的"通过字幕看到他的思考"。</p>
+
+  <div class="ref-item">
+    <div class="ref-thumb" style="background:linear-gradient(135deg,#ffff64,#fdd835);color:#000;"><span>Genius<br>Lyrics</span></div>
+    <div class="ref-body">
+      <h4><a href="https://genius.com/Kendrick-lamar-humble-lyrics" target="_blank">Genius · 歌词注释（示例：Kendrick Lamar - HUMBLE）</a></h4>
+      <p class="meta">最经典的"逐句注释"产品</p>
+      <p>左侧是完整歌词，某些句子有黄色高亮。点击高亮句 → 右侧滑出注释面板，解释这句话隐喻什么、用了什么典故、来自哪里。多人可以协作注释。</p>
+      <p class="relevance"><b>对你项目的意义</b>：颖响力字幕完整呈现，他讲的关键论点句高亮，点高亮句 → 右侧滑出 viewpoint 解读、跨期跳转、你的批注、边界外提示。<b>这个可能是最贴近你描述的形态</b>。</p>
+    </div>
+  </div>
+
+  <div class="ref-item">
+    <div class="ref-thumb" style="background:linear-gradient(135deg,#f5e9c8,#d4b76a);color:#3a2f1a;"><span>Tufte<br>CSS</span></div>
+    <div class="ref-body">
+      <h4><a href="https://edwardtufte.github.io/tufte-css/" target="_blank">Tufte CSS · 边栏注释样式</a></h4>
+      <p class="meta">学术写作的"主文 + 旁注"经典样式</p>
+      <p>主文在左侧约 60%宽，右侧固定栏放小字旁注、引用、延伸阅读。读主文不会被打断，但延展信息触手可及。</p>
+      <p class="relevance"><b>对你项目的意义</b>：节目字幕在中间主栏，右侧栏永远在显示当前段的批注/延展/边界提示——不需要点击就能扫到。</p>
+    </div>
+  </div>
+</div>
+
+<!-- 类 3: Explorable Explanations 可交互解释 -->
+<div class="ref-section">
+  <h3>③ 可探索式解释（Explorable Explanations）</h3>
+  <p class="ref-sub">读着文章，遇到一个概念时可以点一下、拖一下、试一下，立刻看到"如果换个参数会怎样"。Bret Victor 流派。</p>
+
+  <div class="ref-item">
+    <div class="ref-thumb" style="background:linear-gradient(135deg,#5b8dbf,#284b63);"><span>Parable<br>Polygons</span></div>
+    <div class="ref-body">
+      <h4><a href="https://ncase.me/polygons/" target="_blank">Nicky Case · The Parable of the Polygons</a></h4>
+      <p class="meta">解释"温和的偏见如何形成种族隔离"的可交互文章</p>
+      <p>读着文字，到关键点时出现一个可拖动的小模型——你拖参数 → 看结果变化。文字 + 模型 + 解释三合一。结尾整页都在动。</p>
+      <p class="relevance"><b>对你项目的意义</b>：节目讲"高咨询费 → 高定价 → 消费者买单"时，可以做一个小滑块让你拖"咨询费占比"，看价格怎么变。把抽象论点变成可玩的逻辑。</p>
+    </div>
+  </div>
+
+  <div class="ref-item">
+    <div class="ref-thumb" style="background:linear-gradient(135deg,#9c6d1f,#5a4a2e);"><span>Distill<br>.pub</span></div>
+    <div class="ref-body">
+      <h4><a href="https://distill.pub/2017/momentum/" target="_blank">Distill · Why Momentum Really Works</a></h4>
+      <p class="meta">学术论文 + 交互可视化的极致</p>
+      <p>读到某段时旁边的图自动跟着滚到对应状态，你可以悬停看更多细节。"边读边变"是核心。</p>
+      <p class="relevance"><b>对你项目的意义</b>：偏技术，但展示了"文字+图同步"的最高水准。可借鉴互动手感。</p>
+    </div>
+  </div>
+</div>
+
+<!-- 类 4: Canvas / 卡片墙 -->
+<div class="ref-section">
+  <h3>④ 卡片白板（Heptabase / Scrintal 风格）</h3>
+  <p class="ref-sub">每段/每论点/每延展都是一张可拖动的卡片。卡片散在白板上，用线连接。可缩放视野——远景看整体、近景看一张卡。</p>
+
+  <div class="ref-item">
+    <div class="ref-thumb" style="background:linear-gradient(135deg,#7c5c1a,#33673b);"><span>Heptabase<br>Whiteboard</span></div>
+    <div class="ref-body">
+      <h4><a href="https://heptabase.com/" target="_blank">Heptabase · 视觉笔记</a></h4>
+      <p class="meta">卡片 + 白板 + 连线的代表产品</p>
+      <p>主页有 demo 视频。每个想法是一张卡片，可以拖到白板任意位置，画线连接，分组聚类。你能"放大看一张卡的内容、缩小看整张白板"。<b>看完 demo</b> 你会理解为什么这种"自由布局 + 卡片"很受欢迎。</p>
+      <p class="relevance"><b>对你项目的意义</b>：每期节目是一张大卡，里面套 N 张小卡（论点、延展、批注）。整个网站是一张可漫游的白板。但读"线性逻辑"会变弱。</p>
+    </div>
+  </div>
+
+  <div class="ref-item">
+    <div class="ref-thumb" style="background:linear-gradient(135deg,#5a4a2e,#9c6d1f);"><span>Bret Victor<br>Brighter</span></div>
+    <div class="ref-body">
+      <h4><a href="https://worrydream.com/TenBrighterIdeas/" target="_blank">Bret Victor · Ten Brighter Ideas</a></h4>
+      <p class="meta">10 个关于"省能源"的事实，每个都能玩</p>
+      <p>这是 Bret Victor 最经典的 explorable explanation 早期实例。每个事实里嵌入可改的数字——你改一个数字，全文其他相关数字自动变。"文章不是死的"。</p>
+      <p class="relevance"><b>对你项目的意义</b>：颖响力的论点可以是"活的"——你改"咨询费投入"，文中"消费者支付的溢价"自动重算。但你的内容可能没这么数据化，参考价值偏概念层。</p>
+    </div>
+  </div>
+</div>
+
+<!-- 询问 -->
+<div style="margin-top:28px;padding:18px 20px;background:#33673b;color:#fff;border-radius:8px;">
+  <p style="margin:0 0 10px 0;font-weight:bold;font-size:14.5px;">看完之后回来告诉我：</p>
+  <ol style="margin:0;padding-left:22px;font-size:13.5px;line-height:1.85;">
+    <li>哪 <b>2-3 个</b> 让你有"<i>对，就是这种感觉</i>"的反应？</li>
+    <li>哪些一眼就 <b>排除</b>？</li>
+    <li>看完之后，有没有 <b>新的关键词/想法</b> 冒出来？（哪怕只是一个词，比如"我喜欢那种'随滚动展开'的感觉"、"我想要那种'点开就有'的注释"）</li>
+  </ol>
+  <p style="margin:14px 0 0 0;font-size:12.5px;opacity:0.92;">不用每个都打开看完，找到 2-3 个有感觉的就够了。如果都不对劲，也直接说。</p>
+</div>

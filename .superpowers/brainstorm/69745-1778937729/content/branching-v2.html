@@ -1,0 +1,313 @@
+<h2>修订版 · 密集但有秩序</h2>
+<p class="subtitle">"乱"的根源已修：树干改平直、叶片改等角度对齐、上下分区按语义。隐喻不限于叶子。</p>
+
+<!-- 主版本：扇形等角对齐 -->
+<div class="mockup">
+  <div class="mockup-header">V2-A · 扇形等角对齐（推荐）</div>
+  <div class="mockup-body" style="background:#faf6ec;padding:0;">
+    <svg viewBox="0 0 820 420" style="width:100%;height:420px;font-family:'PingFang SC',sans-serif;">
+      <rect width="820" height="420" fill="#faf6ec"/>
+
+      <!-- 顶部信息 -->
+      <text x="30" y="28" font-size="14" font-weight="bold" fill="#222">EP001 · 西贝菜这么贵，原来是因为华与华</text>
+      <text x="30" y="44" font-size="10" fill="#666">主轴 3 段 · 每段上半圆=讲者讲的论点 · 下半圆=延展/批注/边界</text>
+
+      <!-- 图例 -->
+      <g transform="translate(540,18)" font-size="9.5">
+        <circle cx="0" cy="6" r="4" fill="#33673b"/><text x="9" y="9" fill="#222">论点</text>
+        <circle cx="60" cy="6" r="4" fill="#7c5c1a"/><text x="69" y="9" fill="#222">跨期延展</text>
+        <circle cx="142" cy="6" r="4" fill="#c79235" stroke="#9c6d1f" stroke-width="0.7"/><text x="151" y="9" fill="#222">你的批注</text>
+        <circle cx="222" cy="6" r="4" fill="none" stroke="#999" stroke-dasharray="2,1.5"/><text x="231" y="9" fill="#666">边界外/未讲</text>
+      </g>
+
+      <!-- 平直主轴 -->
+      <line x1="60" y1="220" x2="780" y2="220" stroke="#5a4a2e" stroke-width="4" stroke-linecap="round"/>
+      <!-- 段标记 -->
+      <text x="35" y="225" font-size="10" fill="#888" text-anchor="end">主轴 →</text>
+
+      <!-- 段1：定价之谜 (cx=180) -->
+      <g transform="translate(180,220)">
+        <!-- 引导环（淡） -->
+        <circle r="90" fill="none" stroke="#e8dfc6" stroke-width="0.5" stroke-dasharray="2,3"/>
+        <!-- 段节点 -->
+        <circle r="22" fill="#fff" stroke="#5a4a2e" stroke-width="2.5"/>
+        <text y="-2" text-anchor="middle" font-size="10" font-weight="bold" fill="#222">段 1</text>
+        <text y="11" text-anchor="middle" font-size="9" fill="#5a4a2e">定价之谜</text>
+
+        <!-- 上半圆：3 个论点位（135°/90°/45°，等角 45°间隔） -->
+        <!-- 论点 1: 北偏西 (135°) -->
+        <line x1="-15" y1="-15" x2="-50" y2="-65" stroke="#33673b" stroke-width="1.5"/>
+        <circle cx="-50" cy="-65" r="5" fill="#33673b"/>
+        <text x="-56" y="-72" text-anchor="end" font-size="9.5" fill="#222">咨询费=终端成本</text>
+
+        <!-- 论点 2: 正北 (90°) -->
+        <line x1="0" y1="-22" x2="0" y2="-80" stroke="#33673b" stroke-width="1.5"/>
+        <circle cx="0" cy="-80" r="5" fill="#33673b"/>
+        <text x="0" y="-90" text-anchor="middle" font-size="9.5" fill="#222">不只是食材</text>
+
+        <!-- 论点 3: 北偏东 (45°) -->
+        <line x1="15" y1="-15" x2="50" y2="-65" stroke="#33673b" stroke-width="1.5"/>
+        <circle cx="50" cy="-65" r="5" fill="#33673b"/>
+        <text x="56" y="-72" text-anchor="start" font-size="9.5" fill="#222">长期失真累积</text>
+
+        <!-- 下半圆：3 个延展位（225°/270°/315°） -->
+        <!-- 跨期延展：南偏西 (225°) -->
+        <line x1="-15" y1="15" x2="-50" y2="65" stroke="#7c5c1a" stroke-width="1.2" stroke-dasharray="4,2"/>
+        <circle cx="-50" cy="65" r="5" fill="#7c5c1a"/>
+        <text x="-56" y="72" text-anchor="end" font-size="9" fill="#7c5c1a" font-style="italic">→ EP002 预制菜</text>
+
+        <!-- 你的批注：正南 (270°) -->
+        <line x1="0" y1="22" x2="0" y2="80" stroke="#c79235" stroke-width="1.2"/>
+        <circle cx="0" cy="80" r="5" fill="#c79235" stroke="#9c6d1f" stroke-width="0.8"/>
+        <text x="0" y="95" text-anchor="middle" font-size="9" fill="#9c6d1f">"为何消费者买账?"</text>
+
+        <!-- 边界外：南偏东 (315°) -->
+        <line x1="15" y1="15" x2="50" y2="65" stroke="#999" stroke-width="1" stroke-dasharray="2,2"/>
+        <circle cx="50" cy="65" r="5" fill="none" stroke="#999" stroke-width="1.2" stroke-dasharray="2,1.5"/>
+        <text x="56" y="72" text-anchor="start" font-size="9" fill="#888" font-style="italic">未讲：成本结构</text>
+      </g>
+
+      <!-- 段2：品牌符号 (cx=430) -->
+      <g transform="translate(430,220)">
+        <circle r="90" fill="none" stroke="#e8dfc6" stroke-width="0.5" stroke-dasharray="2,3"/>
+        <circle r="22" fill="#fff" stroke="#5a4a2e" stroke-width="2.5"/>
+        <text y="-2" text-anchor="middle" font-size="10" font-weight="bold" fill="#222">段 2</text>
+        <text y="11" text-anchor="middle" font-size="9" fill="#5a4a2e">品牌符号</text>
+
+        <!-- 上半圆 4 个论点（135/105/75/45） -->
+        <line x1="-15" y1="-15" x2="-55" y2="-60" stroke="#33673b" stroke-width="1.5"/>
+        <circle cx="-55" cy="-60" r="5" fill="#33673b"/>
+        <text x="-60" y="-67" text-anchor="end" font-size="9.5" fill="#222">符号-价格错位</text>
+
+        <line x1="-6" y1="-21" x2="-20" y2="-78" stroke="#33673b" stroke-width="1.5"/>
+        <circle cx="-20" cy="-78" r="5" fill="#33673b"/>
+        <text x="-22" y="-85" text-anchor="end" font-size="9.5" fill="#222">红白格"低价感"</text>
+
+        <line x1="6" y1="-21" x2="20" y2="-78" stroke="#33673b" stroke-width="1.5"/>
+        <circle cx="20" cy="-78" r="5" fill="#33673b"/>
+        <text x="22" y="-85" text-anchor="start" font-size="9.5" fill="#222">符号是反向证据</text>
+
+        <line x1="15" y1="-15" x2="55" y2="-60" stroke="#33673b" stroke-width="1.5"/>
+        <circle cx="55" cy="-60" r="5" fill="#33673b"/>
+        <text x="60" y="-67" text-anchor="start" font-size="9.5" fill="#222">气质 vs 定位</text>
+
+        <!-- 下半圆 4 个延展（225/255/285/315） -->
+        <line x1="-15" y1="15" x2="-55" y2="60" stroke="#7c5c1a" stroke-width="1.2" stroke-dasharray="4,2"/>
+        <circle cx="-55" cy="60" r="5" fill="#7c5c1a"/>
+        <text x="-60" y="67" text-anchor="end" font-size="9" fill="#7c5c1a" font-style="italic">→ EP004 学生午餐</text>
+
+        <line x1="-6" y1="22" x2="-20" y2="78" stroke="#c79235" stroke-width="1.2"/>
+        <circle cx="-20" cy="78" r="5" fill="#c79235" stroke="#9c6d1f" stroke-width="0.8"/>
+        <text x="-22" y="92" text-anchor="end" font-size="9" fill="#9c6d1f">"符号能反向定位?"</text>
+
+        <line x1="6" y1="22" x2="20" y2="78" stroke="#c79235" stroke-width="1.2"/>
+        <circle cx="20" cy="78" r="5" fill="#c79235" stroke="#9c6d1f" stroke-width="0.8"/>
+        <text x="22" y="92" text-anchor="start" font-size="9" fill="#9c6d1f">"品牌符号有审美寿命?"</text>
+
+        <line x1="15" y1="15" x2="55" y2="60" stroke="#999" stroke-width="1" stroke-dasharray="2,2"/>
+        <circle cx="55" cy="60" r="5" fill="none" stroke="#999" stroke-width="1.2" stroke-dasharray="2,1.5"/>
+        <text x="60" y="67" text-anchor="start" font-size="9" fill="#888" font-style="italic">未讲：心理机制</text>
+      </g>
+
+      <!-- 段3：组织失语 (cx=680) -->
+      <g transform="translate(680,220)">
+        <circle r="90" fill="none" stroke="#e8dfc6" stroke-width="0.5" stroke-dasharray="2,3"/>
+        <circle r="22" fill="#fff" stroke="#5a4a2e" stroke-width="2.5"/>
+        <text y="-2" text-anchor="middle" font-size="10" font-weight="bold" fill="#222">段 3</text>
+        <text y="11" text-anchor="middle" font-size="9" fill="#5a4a2e">组织失语</text>
+
+        <!-- 上半圆 3 个论点（135/90/45） -->
+        <line x1="-15" y1="-15" x2="-50" y2="-65" stroke="#33673b" stroke-width="1.5"/>
+        <circle cx="-50" cy="-65" r="5" fill="#33673b"/>
+        <text x="-56" y="-72" text-anchor="end" font-size="9.5" fill="#222">老板强→反馈失</text>
+
+        <line x1="0" y1="-22" x2="0" y2="-80" stroke="#33673b" stroke-width="1.5"/>
+        <circle cx="0" cy="-80" r="5" fill="#33673b"/>
+        <text x="0" y="-90" text-anchor="middle" font-size="9.5" fill="#222">顾问=迎合者</text>
+
+        <line x1="15" y1="-15" x2="50" y2="-65" stroke="#33673b" stroke-width="1.5"/>
+        <circle cx="50" cy="-65" r="5" fill="#33673b"/>
+        <text x="56" y="-72" text-anchor="start" font-size="9.5" fill="#222">成本转给消费者</text>
+
+        <!-- 下半圆 3 个延展（225/270/315） -->
+        <line x1="-15" y1="15" x2="-50" y2="65" stroke="#7c5c1a" stroke-width="1.2" stroke-dasharray="4,2"/>
+        <circle cx="-50" cy="65" r="5" fill="#7c5c1a"/>
+        <text x="-56" y="72" text-anchor="end" font-size="9" fill="#7c5c1a" font-style="italic">→ EP065 贾国龙不服</text>
+
+        <line x1="0" y1="22" x2="0" y2="80" stroke="#c79235" stroke-width="1.2"/>
+        <circle cx="0" cy="80" r="5" fill="#c79235" stroke="#9c6d1f" stroke-width="0.8"/>
+        <text x="0" y="95" text-anchor="middle" font-size="9" fill="#9c6d1f">"权力-真相反向"</text>
+
+        <line x1="15" y1="15" x2="50" y2="65" stroke="#999" stroke-width="1" stroke-dasharray="2,2"/>
+        <circle cx="50" cy="65" r="5" fill="none" stroke="#999" stroke-width="1.2" stroke-dasharray="2,1.5"/>
+        <text x="56" y="72" text-anchor="start" font-size="9" fill="#888" font-style="italic">未谈：内部反馈机制</text>
+      </g>
+
+      <!-- 底部交互提示 -->
+      <text x="30" y="405" font-size="9" fill="#888" font-style="italic">点任一节点 → 展开字幕原文 / viewpoint 解读 / 跳转</text>
+    </svg>
+  </div>
+</div>
+
+<!-- 对比版：上下严格分区 -->
+<div class="mockup" style="margin-top:24px;">
+  <div class="mockup-header">V2-B · 上下严格分区（最规整）</div>
+  <div class="mockup-body" style="background:#faf6ec;padding:0;">
+    <svg viewBox="0 0 820 360" style="width:100%;height:360px;font-family:'PingFang SC',sans-serif;">
+      <rect width="820" height="360" fill="#faf6ec"/>
+
+      <text x="30" y="28" font-size="14" font-weight="bold" fill="#222">EP001 · 西贝菜这么贵</text>
+      <text x="30" y="44" font-size="10" fill="#666">上区固定放讲者讲的论点 · 下区固定放延展/批注/边界 · 完全对齐</text>
+
+      <!-- 上区水平虚线引导 -->
+      <line x1="60" y1="90" x2="780" y2="90" stroke="#33673b" stroke-width="0.5" stroke-dasharray="3,3" opacity="0.5"/>
+      <text x="35" y="93" font-size="9" fill="#33673b" text-anchor="end">论点区</text>
+
+      <!-- 主轴 -->
+      <line x1="60" y1="180" x2="780" y2="180" stroke="#5a4a2e" stroke-width="4" stroke-linecap="round"/>
+
+      <!-- 下区水平虚线 -->
+      <line x1="60" y1="270" x2="780" y2="270" stroke="#7c5c1a" stroke-width="0.5" stroke-dasharray="3,3" opacity="0.5"/>
+      <text x="35" y="273" font-size="9" fill="#7c5c1a" text-anchor="end">延展区</text>
+
+      <!-- 段1 (cx=180) -->
+      <g transform="translate(180,180)">
+        <circle r="20" fill="#fff" stroke="#5a4a2e" stroke-width="2.5"/>
+        <text y="-2" text-anchor="middle" font-size="10" font-weight="bold" fill="#222">段1</text>
+        <text y="11" text-anchor="middle" font-size="8.5" fill="#5a4a2e">定价之谜</text>
+
+        <!-- 上：3 个论点卡（水平排列对齐） -->
+        <g transform="translate(0,-90)">
+          <rect x="-78" y="-12" width="50" height="22" rx="3" fill="#eaf2eb" stroke="#33673b" stroke-width="0.8"/>
+          <text x="-53" y="2" text-anchor="middle" font-size="8.5" fill="#222">咨询费</text>
+          <text x="-53" y="11" text-anchor="middle" font-size="7" fill="#5a704a">=终端成本</text>
+
+          <rect x="-25" y="-12" width="50" height="22" rx="3" fill="#eaf2eb" stroke="#33673b" stroke-width="0.8"/>
+          <text x="0" y="2" text-anchor="middle" font-size="8.5" fill="#222">不只食材</text>
+
+          <rect x="28" y="-12" width="50" height="22" rx="3" fill="#eaf2eb" stroke="#33673b" stroke-width="0.8"/>
+          <text x="53" y="2" text-anchor="middle" font-size="8.5" fill="#222">长期失真</text>
+        </g>
+        <line x1="0" y1="-22" x2="0" y2="-78" stroke="#33673b" stroke-width="1" opacity="0.5"/>
+
+        <!-- 下：3 个延展卡 -->
+        <g transform="translate(0,90)">
+          <rect x="-78" y="-12" width="50" height="22" rx="3" fill="#f7efde" stroke="#7c5c1a" stroke-width="0.8" stroke-dasharray="3,2"/>
+          <text x="-53" y="0" text-anchor="middle" font-size="8" fill="#7c5c1a">→ EP002</text>
+          <text x="-53" y="9" text-anchor="middle" font-size="7" fill="#7c5c1a">预制菜</text>
+
+          <rect x="-25" y="-12" width="50" height="22" rx="3" fill="#f9eccc" stroke="#c79235" stroke-width="0.8"/>
+          <text x="0" y="0" text-anchor="middle" font-size="8" fill="#9c6d1f">"消费者</text>
+          <text x="0" y="9" text-anchor="middle" font-size="8" fill="#9c6d1f">买账?"</text>
+
+          <rect x="28" y="-12" width="50" height="22" rx="3" fill="#fff" stroke="#999" stroke-width="0.8" stroke-dasharray="2,1.5"/>
+          <text x="53" y="0" text-anchor="middle" font-size="8" fill="#888">未讲</text>
+          <text x="53" y="9" text-anchor="middle" font-size="7" fill="#888">成本结构</text>
+        </g>
+        <line x1="0" y1="22" x2="0" y2="78" stroke="#7c5c1a" stroke-width="1" opacity="0.5"/>
+      </g>
+
+      <!-- 段2 (cx=430) -->
+      <g transform="translate(430,180)">
+        <circle r="20" fill="#fff" stroke="#5a4a2e" stroke-width="2.5"/>
+        <text y="-2" text-anchor="middle" font-size="10" font-weight="bold" fill="#222">段2</text>
+        <text y="11" text-anchor="middle" font-size="8.5" fill="#5a4a2e">品牌符号</text>
+
+        <g transform="translate(0,-90)">
+          <rect x="-105" y="-12" width="50" height="22" rx="3" fill="#eaf2eb" stroke="#33673b" stroke-width="0.8"/>
+          <text x="-80" y="2" text-anchor="middle" font-size="8" fill="#222">符号-价格</text>
+          <text x="-80" y="11" text-anchor="middle" font-size="7" fill="#5a704a">错位</text>
+          <rect x="-52" y="-12" width="50" height="22" rx="3" fill="#eaf2eb" stroke="#33673b" stroke-width="0.8"/>
+          <text x="-27" y="2" text-anchor="middle" font-size="8" fill="#222">红白格</text>
+          <text x="-27" y="11" text-anchor="middle" font-size="7" fill="#5a704a">"低价感"</text>
+          <rect x="1" y="-12" width="50" height="22" rx="3" fill="#eaf2eb" stroke="#33673b" stroke-width="0.8"/>
+          <text x="26" y="2" text-anchor="middle" font-size="8" fill="#222">反向证据</text>
+          <rect x="54" y="-12" width="50" height="22" rx="3" fill="#eaf2eb" stroke="#33673b" stroke-width="0.8"/>
+          <text x="79" y="2" text-anchor="middle" font-size="8" fill="#222">气质≠定位</text>
+        </g>
+        <line x1="0" y1="-22" x2="0" y2="-78" stroke="#33673b" stroke-width="1" opacity="0.5"/>
+
+        <g transform="translate(0,90)">
+          <rect x="-78" y="-12" width="50" height="22" rx="3" fill="#f7efde" stroke="#7c5c1a" stroke-width="0.8" stroke-dasharray="3,2"/>
+          <text x="-53" y="0" text-anchor="middle" font-size="8" fill="#7c5c1a">→ EP004</text>
+          <text x="-53" y="9" text-anchor="middle" font-size="7" fill="#7c5c1a">学生午餐</text>
+          <rect x="-25" y="-12" width="50" height="22" rx="3" fill="#f9eccc" stroke="#c79235" stroke-width="0.8"/>
+          <text x="0" y="0" text-anchor="middle" font-size="8" fill="#9c6d1f">"反向</text>
+          <text x="0" y="9" text-anchor="middle" font-size="8" fill="#9c6d1f">定位?"</text>
+          <rect x="28" y="-12" width="50" height="22" rx="3" fill="#fff" stroke="#999" stroke-width="0.8" stroke-dasharray="2,1.5"/>
+          <text x="53" y="0" text-anchor="middle" font-size="8" fill="#888">未讲</text>
+          <text x="53" y="9" text-anchor="middle" font-size="7" fill="#888">心理机制</text>
+        </g>
+        <line x1="0" y1="22" x2="0" y2="78" stroke="#7c5c1a" stroke-width="1" opacity="0.5"/>
+      </g>
+
+      <!-- 段3 (cx=680) -->
+      <g transform="translate(680,180)">
+        <circle r="20" fill="#fff" stroke="#5a4a2e" stroke-width="2.5"/>
+        <text y="-2" text-anchor="middle" font-size="10" font-weight="bold" fill="#222">段3</text>
+        <text y="11" text-anchor="middle" font-size="8.5" fill="#5a4a2e">组织失语</text>
+
+        <g transform="translate(0,-90)">
+          <rect x="-78" y="-12" width="50" height="22" rx="3" fill="#eaf2eb" stroke="#33673b" stroke-width="0.8"/>
+          <text x="-53" y="0" text-anchor="middle" font-size="8" fill="#222">老板强</text>
+          <text x="-53" y="9" text-anchor="middle" font-size="7" fill="#5a704a">→反馈失</text>
+          <rect x="-25" y="-12" width="50" height="22" rx="3" fill="#eaf2eb" stroke="#33673b" stroke-width="0.8"/>
+          <text x="0" y="2" text-anchor="middle" font-size="8.5" fill="#222">顾问迎合</text>
+          <rect x="28" y="-12" width="50" height="22" rx="3" fill="#eaf2eb" stroke="#33673b" stroke-width="0.8"/>
+          <text x="53" y="2" text-anchor="middle" font-size="8.5" fill="#222">成本转移</text>
+        </g>
+        <line x1="0" y1="-22" x2="0" y2="-78" stroke="#33673b" stroke-width="1" opacity="0.5"/>
+
+        <g transform="translate(0,90)">
+          <rect x="-78" y="-12" width="50" height="22" rx="3" fill="#f7efde" stroke="#7c5c1a" stroke-width="0.8" stroke-dasharray="3,2"/>
+          <text x="-53" y="0" text-anchor="middle" font-size="8" fill="#7c5c1a">→ EP065</text>
+          <text x="-53" y="9" text-anchor="middle" font-size="7" fill="#7c5c1a">贾国龙</text>
+          <rect x="-25" y="-12" width="50" height="22" rx="3" fill="#f9eccc" stroke="#c79235" stroke-width="0.8"/>
+          <text x="0" y="0" text-anchor="middle" font-size="8" fill="#9c6d1f">"权力</text>
+          <text x="0" y="9" text-anchor="middle" font-size="8" fill="#9c6d1f">反向"</text>
+          <rect x="28" y="-12" width="50" height="22" rx="3" fill="#fff" stroke="#999" stroke-width="0.8" stroke-dasharray="2,1.5"/>
+          <text x="53" y="0" text-anchor="middle" font-size="8" fill="#888">未谈</text>
+          <text x="53" y="9" text-anchor="middle" font-size="7" fill="#888">反馈机制</text>
+        </g>
+        <line x1="0" y1="22" x2="0" y2="78" stroke="#7c5c1a" stroke-width="1" opacity="0.5"/>
+      </g>
+
+      <!-- 图例 -->
+      <g transform="translate(540,30)" font-size="9">
+        <rect x="0" y="0" width="14" height="10" fill="#eaf2eb" stroke="#33673b" stroke-width="0.8"/>
+        <text x="18" y="9" fill="#222">论点</text>
+        <rect x="58" y="0" width="14" height="10" fill="#f7efde" stroke="#7c5c1a" stroke-dasharray="2,1"/>
+        <text x="76" y="9" fill="#222">跨期</text>
+        <rect x="116" y="0" width="14" height="10" fill="#f9eccc" stroke="#c79235"/>
+        <text x="134" y="9" fill="#222">批注</text>
+        <rect x="174" y="0" width="14" height="10" fill="#fff" stroke="#999" stroke-dasharray="2,1.5"/>
+        <text x="192" y="9" fill="#666">未讲</text>
+      </g>
+    </svg>
+  </div>
+</div>
+
+<!-- 对比说明 -->
+<div style="margin-top:20px;padding:14px 18px;background:#f4efe6;border-radius:8px;">
+  <p style="margin:0 0 10px 0;"><b>两个版本的差异</b>：</p>
+  <ul style="margin:0;padding-left:20px;font-size:13px;line-height:1.7;">
+    <li><b>V2-A 扇形等角对齐</b>：上下半圆放射，等角间隔，有"有机感"也有秩序。视觉张力更强、密度更高。<b>★ 我推荐</b>。</li>
+    <li><b>V2-B 上下严格分区</b>：论点全在上方一条水平线、延展全在下方一条水平线，对齐到极致。最规整、最易扫读、但牺牲了"枝叶"的生命感。</li>
+  </ul>
+  <p style="margin:10px 0 0 0;">两个都是 6-8 片的密度——区别只在"叶子怎么排"。</p>
+</div>
+
+<div class="options" style="margin-top:20px;">
+  <div class="option" data-choice="v2a" onclick="toggleSelect(this)">
+    <div class="letter">A</div>
+    <div class="content"><h3>V2-A 扇形对齐</h3><p>有机 + 有秩序</p></div>
+  </div>
+  <div class="option" data-choice="v2b" onclick="toggleSelect(this)">
+    <div class="letter">B</div>
+    <div class="content"><h3>V2-B 上下分区</h3><p>极致规整</p></div>
+  </div>
+  <div class="option" data-choice="mix" onclick="toggleSelect(this)">
+    <div class="letter">C</div>
+    <div class="content"><h3>都不对，再调</h3><p>告诉我哪里还乱</p></div>
+  </div>
+</div>

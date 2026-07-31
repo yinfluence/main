@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+  body { margin:0; padding:0; background:#0d0d0e; color:#e5e5e5; font-family:-apple-system,BlinkMacSystemFont,'PingFang SC','Helvetica Neue',sans-serif; }
+  .wrap { padding:24px 28px; }
+  h2 { margin:0 0 4px 0; font-size:22px; font-weight:500; color:#f5f5f5; }
+  .sub { margin:0 0 18px 0; font-size:13px; color:#888; }
+  .container { display:grid; grid-template-columns: 1fr 320px; gap:20px; }
+  @media (max-width:900px) { .container { grid-template-columns:1fr; } }
+
+  .graph-wrap { background:#141416; border-radius:12px; overflow:hidden; position:relative; min-height:560px; box-shadow:0 4px 24px rgba(0,0,0,0.4); }
+  .graph-wrap svg { display:block; width:100%; height:560px; }
+
+  .legend { position:absolute; bottom:14px; left:14px; background:rgba(20,20,22,0.85); backdrop-filter:blur(8px); padding:10px 14px; border-radius:8px; font-size:11.5px; border:1px solid rgba(255,255,255,0.08); }
+  .legend .row { display:flex; align-items:center; gap:6px; margin:3px 0; }
+  .legend .dot { width:10px; height:10px; border-radius:50%; }
+  .legend .label { color:#bbb; }
+
+  .toolbar { position:absolute; top:14px; right:14px; display:flex; gap:6px; }
+  .toolbar button { background:rgba(255,255,255,0.06); color:#ccc; border:1px solid rgba(255,255,255,0.08); padding:6px 12px; font-size:11.5px; border-radius:6px; cursor:pointer; }
+  .toolbar button:hover { background:rgba(255,255,255,0.1); }
+  .toolbar button.active { background:rgba(167,139,250,0.18); color:#c4b5fd; border-color:rgba(167,139,250,0.35); }
+
+  /* 右侧节点 detail panel */
+  .panel { background:#141416; border-radius:12px; padding:18px 20px; min-height:540px; box-shadow:0 4px 24px rgba(0,0,0,0.4); }
+  .panel .pin { display:inline-block; padding:3px 8px; background:rgba(167,139,250,0.15); color:#c4b5fd; font-size:10.5px; border-radius:3px; letter-spacing:0.5px; text-transform:uppercase; }
+  .panel h3 { margin:8px 0 4px 0; font-size:17px; font-weight:600; color:#f5f5f5; }
+  .panel .meta { font-size:11.5px; color:#888; margin-bottom:14px; }
+  .panel .sec { margin-top:16px; }
+  .panel .sec-title { font-size:10.5px; text-transform:uppercase; letter-spacing:0.7px; color:#888; margin-bottom:8px; font-weight:500; }
+  .panel .quote { background:rgba(255,255,255,0.025); border-left:2px solid #c4b5fd; padding:10px 13px; border-radius:0 5px 5px 0; font-size:12.5px; line-height:1.6; color:#d0d0d0; font-style:italic; }
+  .panel .quote .ts { color:#666; font-size:10.5px; margin-right:5px; font-style:normal; }
+  .panel .point { font-size:13px; line-height:1.65; color:#d8d8d8; margin:6px 0; }
+  .panel .tag { display:inline-block; padding:3px 8px; background:rgba(125,211,252,0.12); color:#7dd3fc; border:1px solid rgba(125,211,252,0.2); border-radius:10px; font-size:10.5px; margin:2px 4px 2px 0; }
+  .panel .link-row { display:flex; align-items:center; gap:8px; padding:7px 9px; margin:4px 0; background:rgba(255,255,255,0.02); border-radius:5px; font-size:12px; cursor:pointer; }
+  .panel .link-row:hover { background:rgba(255,255,255,0.05); }
+  .panel .link-row .dot { width:8px; height:8px; border-radius:50%; flex-shrink:0; }
+  .panel .link-row .label { color:#e0e0e0; }
+  .panel .link-row .why { font-size:10.5px; color:#777; margin-left:auto; }
+  .panel .boundary { background:rgba(252,165,165,0.05); border-left:2px solid #f87171; padding:9px 12px; font-size:12px; color:#fca5a5; border-radius:0 5px 5px 0; line-height:1.55; }
+
+  /* SVG glow filters defined inline */
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<h2>EP001 · 知识图谱（Obsidian 风格）</h2>
+<p class="sub">中心节点 = EP001 节目本身 · 一阶邻居 = 概念/模型/人物/相关期 · 点节点 → 右侧面板展开字幕和延展</p>
+
+<div class="container">
+
+  <!-- 左侧：图谱 -->
+  <div class="graph-wrap">
+    <div class="toolbar">
+      <button class="active">全局视图</button>
+      <button>聚焦模式</button>
+      <button>+ 展开二阶</button>
+    </div>
+
+    <svg viewBox="0 0 700 560" xmlns="http://www.w3.org/2000/svg">
+      <defs>
+        <!-- 节点发光 -->
+        <radialGradient id="g-ep" cx="50%" cy="50%">
+          <stop offset="0%" stop-color="#c4b5fd" stop-opacity="1"/>
+          <stop offset="60%" stop-color="#8b5cf6" stop-opacity="1"/>
+          <stop offset="100%" stop-color="#5b21b6" stop-opacity="0.85"/>
+        </radialGradient>
+        <radialGradient id="g-concept" cx="50%" cy="50%">
+          <stop offset="0%" stop-color="#bae6fd" stop-opacity="1"/>
+          <stop offset="100%" stop-color="#0284c7" stop-opacity="0.95"/>
+        </radialGradient>
+        <radialGradient id="g-model" cx="50%" cy="50%">
+          <stop offset="0%" stop-color="#bbf7d0" stop-opacity="1"/>
+          <stop offset="100%" stop-color="#16a34a" stop-opacity="0.95"/>
+        </radialGradient>
+        <radialGradient id="g-person" cx="50%" cy="50%">
+          <stop offset="0%" stop-color="#fed7aa" stop-opacity="1"/>
+          <stop offset="100%" stop-color="#ea580c" stop-opacity="0.95"/>
+        </radialGradient>
+        <radialGradient id="g-related" cx="50%" cy="50%">
+          <stop offset="0%" stop-color="#ddd6fe" stop-opacity="0.85"/>
+          <stop offset="100%" stop-color="#7c3aed" stop-opacity="0.7"/>
+        </radialGradient>
+
+        <filter id="glow-strong" x="-50%" y="-50%" width="200%" height="200%">
+          <feGaussianBlur stdDeviation="4" result="b"/>
+          <feMerge>
+            <feMergeNode in="b"/>
+            <feMergeNode in="SourceGraphic"/>
+          </feMerge>
+        </filter>
+        <filter id="glow-soft" x="-50%" y="-50%" width="200%" height="200%">
+          <feGaussianBlur stdDeviation="2.5" result="b"/>
+          <feMerge>
+            <feMergeNode in="b"/>
+            <feMergeNode in="SourceGraphic"/>
+          </feMerge>
+        </filter>
+      </defs>
+
+      <!-- 连线层（最底） -->
+      <g stroke-linecap="round" fill="none">
+        <!-- EP001 → 概念 -->
+        <path d="M 350 280 L 165 130" stroke="rgba(125,211,252,0.18)" stroke-width="1"/>
+        <path d="M 350 280 L 240 90" stroke="rgba(125,211,252,0.22)" stroke-width="1.2"/>
+        <path d="M 350 280 L 470 95" stroke="rgba(125,211,252,0.18)" stroke-width="1"/>
+        <path d="M 350 280 L 565 165" stroke="rgba(125,211,252,0.22)" stroke-width="1.2"/>
+        <!-- EP001 → 模型 -->
+        <path d="M 350 280 L 600 280" stroke="rgba(187,247,208,0.22)" stroke-width="1.2"/>
+        <path d="M 350 280 L 555 410" stroke="rgba(187,247,208,0.2)" stroke-width="1"/>
+        <!-- EP001 → 人物 -->
+        <path d="M 350 280 L 110 280" stroke="rgba(253,186,116,0.22)" stroke-width="1.2"/>
+        <path d="M 350 280 L 145 410" stroke="rgba(253,186,116,0.2)" stroke-width="1"/>
+        <path d="M 350 280 L 240 480" stroke="rgba(253,186,116,0.18)" stroke-width="1"/>
+        <!-- EP001 → 相关期 -->
+        <path d="M 350 280 L 385 490" stroke="rgba(196,181,253,0.22)" stroke-width="1.4"/>
+        <path d="M 350 280 L 500 480" stroke="rgba(196,181,253,0.18)" stroke-width="1.1"/>
+
+        <!-- 邻居之间的横向连接（呈现"网状"） -->
+        <path d="M 240 90 L 470 95" stroke="rgba(255,255,255,0.06)" stroke-width="0.7"/>
+        <path d="M 240 90 L 165 130" stroke="rgba(255,255,255,0.07)" stroke-width="0.7"/>
+        <path d="M 470 95 L 565 165" stroke="rgba(255,255,255,0.07)" stroke-width="0.7"/>
+        <path d="M 565 165 L 600 280" stroke="rgba(255,255,255,0.07)" stroke-width="0.7"/>
+        <path d="M 110 280 L 145 410" stroke="rgba(255,255,255,0.06)" stroke-width="0.7"/>
+        <path d="M 145 410 L 240 480" stroke="rgba(255,255,255,0.06)" stroke-width="0.7"/>
+        <path d="M 240 480 L 385 490" stroke="rgba(255,255,255,0.07)" stroke-width="0.7"/>
+        <path d="M 385 490 L 500 480" stroke="rgba(255,255,255,0.07)" stroke-width="0.7"/>
+        <path d="M 500 480 L 555 410" stroke="rgba(255,255,255,0.06)" stroke-width="0.7"/>
+        <path d="M 110 280 L 165 130" stroke="rgba(255,255,255,0.05)" stroke-width="0.7"/>
+      </g>
+
+      <!-- 概念节点（蓝色） -->
+      <g filter="url(#glow-soft)">
+        <circle cx="165" cy="130" r="9" fill="url(#g-concept)"/>
+        <circle cx="240" cy="90" r="11" fill="url(#g-concept)"/>
+        <circle cx="470" cy="95" r="9" fill="url(#g-concept)"/>
+        <circle cx="565" cy="165" r="10" fill="url(#g-concept)"/>
+      </g>
+      <g font-size="11" fill="#bae6fd" font-family="-apple-system,sans-serif">
+        <text x="165" y="115" text-anchor="middle">符号失真</text>
+        <text x="240" y="75" text-anchor="middle">成本转移</text>
+        <text x="470" y="80" text-anchor="middle">组织失语</text>
+        <text x="585" y="160" text-anchor="start">迎合式顾问</text>
+      </g>
+
+      <!-- 模型节点（绿色） -->
+      <g filter="url(#glow-soft)">
+        <circle cx="600" cy="280" r="10" fill="url(#g-model)"/>
+        <circle cx="555" cy="410" r="9" fill="url(#g-model)"/>
+      </g>
+      <g font-size="11" fill="#bbf7d0">
+        <text x="615" y="284" text-anchor="start">委托代理</text>
+        <text x="570" y="425" text-anchor="start">价值捕获</text>
+      </g>
+
+      <!-- 人物节点（橙色） -->
+      <g filter="url(#glow-soft)">
+        <circle cx="110" cy="280" r="11" fill="url(#g-person)"/>
+        <circle cx="145" cy="410" r="10" fill="url(#g-person)"/>
+        <circle cx="240" cy="480" r="9" fill="url(#g-person)"/>
+      </g>
+      <g font-size="11" fill="#fed7aa">
+        <text x="92" y="284" text-anchor="end">贾国龙</text>
+        <text x="127" y="424" text-anchor="end">华与华</text>
+        <text x="225" y="495" text-anchor="end">罗永浩</text>
+      </g>
+
+      <!-- 跨期节点（淡紫） -->
+      <g filter="url(#glow-soft)">
+        <circle cx="385" cy="490" r="10" fill="url(#g-related)"/>
+        <circle cx="500" cy="480" r="9" fill="url(#g-related)"/>
+      </g>
+      <g font-size="11" fill="#ddd6fe">
+        <text x="385" y="510" text-anchor="middle">EP065 · 贾国龙不服</text>
+        <text x="500" y="500" text-anchor="middle">EP002 · 预制菜</text>
+      </g>
+
+      <!-- 中心：EP001 节点（最大、发强光） -->
+      <g filter="url(#glow-strong)">
+        <circle cx="350" cy="280" r="6" fill="#c4b5fd" opacity="0.25"/>
+        <circle cx="350" cy="280" r="22" fill="url(#g-ep)"/>
+      </g>
+      <text x="350" y="278" text-anchor="middle" font-size="11" font-weight="600" fill="#fff">EP001</text>
+      <text x="350" y="291" text-anchor="middle" font-size="9" fill="#e9d5ff">西贝/华与华</text>
+
+      <!-- "聚焦"光晕 -->
+      <circle cx="350" cy="280" r="34" fill="none" stroke="rgba(196,181,253,0.25)" stroke-width="1"/>
+      <circle cx="350" cy="280" r="42" fill="none" stroke="rgba(196,181,253,0.12)" stroke-width="1"/>
+    </svg>
+
+    <div class="legend">
+      <div class="row"><span class="dot" style="background:#8b5cf6;"></span><span class="label">节目（episode）</span></div>
+      <div class="row"><span class="dot" style="background:#0284c7;"></span><span class="label">概念</span></div>
+      <div class="row"><span class="dot" style="background:#16a34a;"></span><span class="label">模型</span></div>
+      <div class="row"><span class="dot" style="background:#ea580c;"></span><span class="label">人物</span></div>
+      <div class="row"><span class="dot" style="background:#7c3aed;opacity:0.7"></span><span class="label">相关节目</span></div>
+    </div>
+  </div>
+
+  <!-- 右侧：选中节点的展开面板（这里展示 EP001 选中的样子） -->
+  <div class="panel">
+    <span class="pin">● 当前选中</span>
+    <h3>EP001 · 西贝菜这么贵</h3>
+    <div class="meta">2025-09-16 · 5:31 · 8 个段落</div>
+
+    <div class="sec">
+      <div class="sec-title">★ 核心思考工具</div>
+      <div class="quote">
+        <span class="ts">02:43</span>让我想起了一个童话故事，这个童话故事里边儿就有两个裁缝……我觉得 <b style="color:#fbbf24;">华与华就扮演了这么一个角色，他深知贾老板欠缺什么，可是他不说</b>。
+      </div>
+      <p class="point" style="margin-top:8px;">用「皇帝的新衣」把咨询费+符号 low+老板专权<b>串成一个结构</b>。这是讲者的核心思维模型。</p>
+    </div>
+
+    <div class="sec">
+      <div class="sec-title">关联模型</div>
+      <span class="tag">委托代理</span>
+      <span class="tag">权威误导</span>
+      <span class="tag">组织失语</span>
+      <span class="tag">价值捕获</span>
+    </div>
+
+    <div class="sec">
+      <div class="sec-title">跨期延展</div>
+      <div class="link-row">
+        <span class="dot" style="background:#7c3aed;"></span>
+        <span class="label">EP065 · 贾国龙不服</span>
+        <span class="why">同一条链条 →品牌失速</span>
+      </div>
+      <div class="link-row">
+        <span class="dot" style="background:#7c3aed;"></span>
+        <span class="label">EP002 · 预制菜</span>
+        <span class="why">咨询费 →资本效率</span>
+      </div>
+      <div class="link-row">
+        <span class="dot" style="background:#7c3aed;"></span>
+        <span class="label">EP071 · 直播间价格</span>
+        <span class="why">消费者为何买单</span>
+      </div>
+    </div>
+
+    <div class="sec">
+      <div class="sec-title">⚠ 讲者没讲到（边界外）</div>
+      <div class="boundary">童话里的"小孩"现实中是谁？讲者把"沉默"画成铁律，但罗永浩就是这次的小孩——破例的存在。</div>
+    </div>
+  </div>
+
+</div>
+
+<!-- 反馈卡 -->
+<div style="margin-top:22px;padding:14px 18px;background:#1a1a1c;border-radius:10px;border:1px solid rgba(255,255,255,0.06);">
+  <p style="margin:0 0 8px 0;font-size:13px;color:#e5e5e5;"><b style="color:#c4b5fd;">这次的关键变化</b>：</p>
+  <ul style="margin:0;padding-left:20px;font-size:12.5px;line-height:1.85;color:#bbb;">
+    <li><b>深色背景 + 发光节点</b> —— Obsidian 经典质感，节点用 radial gradient + glow filter</li>
+    <li><b>EP001 中心、辐射 11 个邻居</b> —— 4 个概念 / 2 个模型 / 3 个人物 / 2 个相关期</li>
+    <li><b>节点类型用颜色编码</b> —— 紫=节目、蓝=概念、绿=模型、橙=人物、淡紫=相关期</li>
+    <li><b>邻居之间也有横向细线</b> —— 形成网状感，不是单纯辐射</li>
+    <li><b>点节点 → 右侧 panel 展开</b> —— 这里展示 EP001 被选中的状态：金句、模型 tag、跨期延展、边界外</li>
+    <li><b>切换 "全局/聚焦/+二阶"</b> —— 工具栏可换视图模式</li>
+  </ul>
+  <p style="margin:14px 0 0 0;font-size:13px;color:#e5e5e5;">告诉我：<b style="color:#c4b5fd;">视觉这次对了吗？</b> 如果对了，下一步聊：① 默认进入页面看到什么（图谱在左、字幕在右？还是图谱主、点节点弹字幕？）② 节点的具体交互（hover/click/双击不同表现？）③ 跨期"宇宙地图"是不是这个的全局放大版？</p>
+</div>
+
+</div>
+</body>
+</html>

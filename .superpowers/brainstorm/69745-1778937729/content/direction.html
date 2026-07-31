@@ -1,0 +1,127 @@
+<h2>哪一种"思想可视化"方向最接近你想要的？</h2>
+<p class="subtitle">这是 4 种业界常见的"把一个人的思考过程画出来"的思路。先选最贴近的方向，后面我们再细化。</p>
+
+<div class="cards">
+  <div class="card" data-choice="a" onclick="toggleSelect(this)">
+    <div class="card-image" style="padding:18px;background:#f4efe6;">
+      <svg viewBox="0 0 220 130" style="width:100%;height:120px;">
+        <circle cx="110" cy="65" r="9" fill="#284b63"/>
+        <circle cx="55" cy="35" r="6" fill="#7c5c1a"/>
+        <circle cx="50" cy="95" r="6" fill="#33673b"/>
+        <circle cx="170" cy="40" r="6" fill="#9f3f2d"/>
+        <circle cx="175" cy="100" r="6" fill="#6b4fa1"/>
+        <circle cx="30" cy="65" r="4" fill="#7c5c1a"/>
+        <circle cx="195" cy="65" r="4" fill="#9f3f2d"/>
+        <circle cx="100" cy="15" r="4" fill="#6b4fa1"/>
+        <circle cx="105" cy="115" r="4" fill="#33673b"/>
+        <line x1="110" y1="65" x2="55" y2="35" stroke="#999" stroke-width="0.7"/>
+        <line x1="110" y1="65" x2="50" y2="95" stroke="#999" stroke-width="0.7"/>
+        <line x1="110" y1="65" x2="170" y2="40" stroke="#999" stroke-width="0.7"/>
+        <line x1="110" y1="65" x2="175" y2="100" stroke="#999" stroke-width="0.7"/>
+        <line x1="55" y1="35" x2="30" y2="65" stroke="#bbb" stroke-width="0.5"/>
+        <line x1="170" y1="40" x2="195" y2="65" stroke="#bbb" stroke-width="0.5"/>
+        <line x1="55" y1="35" x2="100" y2="15" stroke="#bbb" stroke-width="0.5"/>
+        <line x1="50" y1="95" x2="105" y2="115" stroke="#bbb" stroke-width="0.5"/>
+      </svg>
+    </div>
+    <div class="card-body">
+      <h3>A. 概念图谱（Obsidian / 你现在的 graph-view）</h3>
+      <p><b>视角</b>：跨多期节目，看「概念—模型—人物」如何串联。<br>
+         <b>能回答</b>：他常用哪些思维工具？哪些主题反复出现？<br>
+         <b>不擅长</b>：单期里"他怎么想清楚这一个问题"的过程感。</p>
+    </div>
+  </div>
+
+  <div class="card" data-choice="b" onclick="toggleSelect(this)">
+    <div class="card-image" style="padding:18px;background:#f4efe6;">
+      <svg viewBox="0 0 220 130" style="width:100%;height:120px;">
+        <rect x="10" y="55" width="40" height="20" rx="3" fill="#284b63"/>
+        <rect x="65" y="20" width="40" height="20" rx="3" fill="#7c5c1a"/>
+        <rect x="65" y="55" width="40" height="20" rx="3" fill="#7c5c1a"/>
+        <rect x="65" y="90" width="40" height="20" rx="3" fill="#7c5c1a"/>
+        <rect x="120" y="10" width="40" height="14" rx="3" fill="#bcae8a"/>
+        <rect x="120" y="28" width="40" height="14" rx="3" fill="#bcae8a"/>
+        <rect x="120" y="55" width="40" height="14" rx="3" fill="#bcae8a"/>
+        <rect x="120" y="73" width="40" height="14" rx="3" fill="#bcae8a"/>
+        <rect x="120" y="90" width="40" height="14" rx="3" fill="#bcae8a"/>
+        <rect x="120" y="108" width="40" height="14" rx="3" fill="#bcae8a"/>
+        <line x1="50" y1="65" x2="65" y2="30" stroke="#666"/>
+        <line x1="50" y1="65" x2="65" y2="65" stroke="#666"/>
+        <line x1="50" y1="65" x2="65" y2="100" stroke="#666"/>
+        <line x1="105" y1="30" x2="120" y2="17" stroke="#888" stroke-width="0.7"/>
+        <line x1="105" y1="30" x2="120" y2="35" stroke="#888" stroke-width="0.7"/>
+        <line x1="105" y1="65" x2="120" y2="62" stroke="#888" stroke-width="0.7"/>
+        <line x1="105" y1="65" x2="120" y2="80" stroke="#888" stroke-width="0.7"/>
+        <line x1="105" y1="100" x2="120" y2="97" stroke="#888" stroke-width="0.7"/>
+        <line x1="105" y1="100" x2="120" y2="115" stroke="#888" stroke-width="0.7"/>
+      </svg>
+    </div>
+    <div class="card-body">
+      <h3>B. 思维路径树（reasoning tree / mind map）</h3>
+      <p><b>视角</b>：单期一棵树——主题→分了哪几块→每块的论点→证据/案例。<br>
+         <b>能回答</b>：他是怎么把这个问题"切开"的？逻辑层次是什么？<br>
+         <b>典型代表</b>：XMind / Markmap / Roam 大纲。直观、好读。</p>
+    </div>
+  </div>
+
+  <div class="card" data-choice="c" onclick="toggleSelect(this)">
+    <div class="card-image" style="padding:18px;background:#f4efe6;">
+      <svg viewBox="0 0 220 130" style="width:100%;height:120px;">
+        <rect x="80" y="8" width="60" height="22" rx="3" fill="#284b63"/>
+        <text x="110" y="22" text-anchor="middle" fill="#fff" font-size="9">主张</text>
+        <rect x="20" y="50" width="55" height="18" rx="3" fill="#33673b"/>
+        <text x="47" y="62" text-anchor="middle" fill="#fff" font-size="8">支持理由</text>
+        <rect x="83" y="50" width="55" height="18" rx="3" fill="#33673b"/>
+        <text x="110" y="62" text-anchor="middle" fill="#fff" font-size="8">支持理由</text>
+        <rect x="146" y="50" width="55" height="18" rx="3" fill="#9f3f2d"/>
+        <text x="173" y="62" text-anchor="middle" fill="#fff" font-size="8">反对/反驳</text>
+        <rect x="20" y="88" width="55" height="14" rx="3" fill="#bcae8a"/>
+        <rect x="20" y="106" width="55" height="14" rx="3" fill="#bcae8a"/>
+        <rect x="83" y="88" width="55" height="14" rx="3" fill="#bcae8a"/>
+        <rect x="146" y="88" width="55" height="14" rx="3" fill="#bcae8a"/>
+        <line x1="110" y1="30" x2="47" y2="50" stroke="#666"/>
+        <line x1="110" y1="30" x2="110" y2="50" stroke="#666"/>
+        <line x1="110" y1="30" x2="173" y2="50" stroke="#666" stroke-dasharray="3,2"/>
+        <line x1="47" y1="68" x2="47" y2="88" stroke="#888"/>
+        <line x1="47" y1="68" x2="47" y2="106" stroke="#888"/>
+        <line x1="110" y1="68" x2="110" y2="88" stroke="#888"/>
+        <line x1="173" y1="68" x2="173" y2="88" stroke="#888"/>
+      </svg>
+    </div>
+    <div class="card-body">
+      <h3>C. 论证图（argument map / Kialo / Rationale）</h3>
+      <p><b>视角</b>：把整期当成一组主张——「主张 ↔ 支持理由 ↔ 反对/反驳 ↔ 证据」。<br>
+         <b>能回答</b>：他的论证强不强？哪些点没被反驳？哪里逻辑跳了？<br>
+         <b>典型代表</b>：Kialo 辩论图、Rationale 软件、Bret Victor 的可推理写作。</p>
+    </div>
+  </div>
+
+  <div class="card" data-choice="d" onclick="toggleSelect(this)">
+    <div class="card-image" style="padding:18px;background:#f4efe6;">
+      <svg viewBox="0 0 220 130" style="width:100%;height:120px;">
+        <circle cx="110" cy="65" r="55" fill="none" stroke="#bbb" stroke-width="1" stroke-dasharray="3,2"/>
+        <path d="M 110 65 L 110 10 A 55 55 0 0 1 162 50 Z" fill="#284b63" opacity="0.7"/>
+        <path d="M 110 65 L 162 50 A 55 55 0 0 1 158 85 Z" fill="#7c5c1a" opacity="0.7"/>
+        <path d="M 110 65 L 158 85 A 55 55 0 0 1 130 115 Z" fill="#33673b" opacity="0.6"/>
+        <text x="135" y="35" fill="#fff" font-size="7">讲到</text>
+        <text x="148" y="68" fill="#fff" font-size="7">讲到</text>
+        <text x="135" y="98" fill="#fff" font-size="7">提到</text>
+        <text x="75" y="35" fill="#888" font-size="7">遗漏？</text>
+        <text x="65" y="70" fill="#888" font-size="7">边界外</text>
+        <text x="75" y="100" fill="#888" font-size="7">未覆盖</text>
+        <circle cx="110" cy="65" r="3" fill="#000"/>
+        <text x="110" y="62" text-anchor="middle" fill="#fff" font-size="6">主题</text>
+      </svg>
+    </div>
+    <div class="card-body">
+      <h3>D. 覆盖地图（territory map / 留白可视化）</h3>
+      <p><b>视角</b>：先画出"这个问题的完整领土"，再把讲者实际覆盖到的部分高亮，剩下的留白就是<b>遗漏</b>和<b>边界外</b>。<br>
+         <b>能回答</b>：他没讲什么？盲区在哪？这正是你提到的"遗漏 / 边界 / 没覆盖"。<br>
+         <b>典型代表</b>：Tufte 的小型多重、Information is Beautiful、Wardley Map。</p>
+    </div>
+  </div>
+</div>
+
+<div style="margin-top:24px;padding:14px 18px;background:#f4efe6;border-radius:8px;">
+  <p style="margin:0;"><b>💡 小提示</b>：四个方向并不互斥，最终可能是 <b>主方向 + 一两个辅助视图</b>。先选一个你最有"对，就是这个感觉"的方向作为主轴。</p>
+</div>
