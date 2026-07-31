@@ -2,14 +2,14 @@
   "meta": {
     "title": "颖响力知识图谱",
     "subtitle": "节目、概念、模型、人物、主题之间的可视化连接网络",
-    "nodeCount": 657,
-    "linkCount": 2394,
+    "nodeCount": 660,
+    "linkCount": 2407,
     "typeCounts": {
       "model": 77,
       "live": 28,
-      "theme": 91,
+      "theme": 92,
       "episode": 191,
-      "concept": 205,
+      "concept": 207,
       "person": 65
     }
   },
@@ -23,7 +23,7 @@
       "route": "models/risk-transfer-chain",
       "summary": "系统不会立刻吞下风险，而是先沿着银行、企业、票据、供应链和普通人之间不断转手、延后和下沉。",
       "status": null,
-      "degree": 43
+      "degree": 44
     },
     {
       "id": "live:LIVE002",
@@ -829,6 +829,17 @@
       "degree": 16
     },
     {
+      "id": "concept:cost-shifting",
+      "key": "cost-shifting",
+      "label": "成本外移",
+      "fullLabel": "成本外移",
+      "type": "concept",
+      "route": "concepts/cost-shifting",
+      "summary": "组织内部的高额非生产性成本，最终会通过价格、规则或风险转嫁给外部承担者。",
+      "status": null,
+      "degree": 15
+    },
+    {
       "id": "model:proxy-containment-ring",
       "key": "proxy-containment-ring",
       "label": "代理围堵环",
@@ -884,17 +895,6 @@
       "degree": 15
     },
     {
-      "id": "concept:cost-shifting",
-      "key": "cost-shifting",
-      "label": "成本外移",
-      "fullLabel": "成本外移",
-      "type": "concept",
-      "route": "concepts/cost-shifting",
-      "summary": "组织内部的高额非生产性成本，最终会通过价格、规则或风险转嫁给外部承担者。",
-      "status": null,
-      "degree": 14
-    },
-    {
       "id": "theme:local-fiscal-stress-and-hidden-debt",
       "key": "local-fiscal-stress-and-hidden-debt",
       "label": "地方财政与隐性债务",
@@ -902,6 +902,17 @@
       "type": "theme",
       "route": "themes/local-fiscal-stress-and-hidden-debt",
       "summary": "地方财政吃紧后，系统会通过更复杂的融资、资产包装和风险转移来维持运转。",
+      "status": null,
+      "degree": 14
+    },
+    {
+      "id": "theme:rule-of-law-boundaries-and-social-trust",
+      "key": "rule-of-law-boundaries-and-social-trust",
+      "label": "法治边界与社会信任",
+      "fullLabel": "法治边界与社会信任",
+      "type": "theme",
+      "route": "themes/rule-of-law-boundaries-and-social-trust",
+      "summary": "关注法律灰区如何影响公众的善意、风险感和彼此信任。",
       "status": null,
       "degree": 14
     },
@@ -972,6 +983,17 @@
       "degree": 14
     },
     {
+      "id": "episode:EP137",
+      "key": "EP137",
+      "label": "EP137",
+      "fullLabel": "EP137 · 你坐的无人出租车安全吗？武汉萝卜快跑事故，给所有人提了致命醒！【EP137】",
+      "type": "episode",
+      "route": "episodes/EP137",
+      "summary": "武汉萝卜快跑大面积趴窝。全无人自动驾驶出租车不是简单的“车会不会开”问题。它是城市交通、云端控制、监管权力和安全兜底共同组成的系统问题。核心判断是，集中式车队架构便宜、好管、可追溯。但一旦云端与车辆失联或发生分歧，单车自主兜底就会被最高控制权压住。单点故障因此被放大成车队级、城市级的风险。",
+      "status": "curated",
+      "degree": 14
+    },
+    {
       "id": "episode:EP145",
       "key": "EP145",
       "label": "EP145",
@@ -1034,17 +1056,6 @@
       "type": "theme",
       "route": "themes/local-government-financialization",
       "summary": "讨论地方政府如何从传统招商者变成资本玩家，并把补贴、基金和估值故事捆到一起。",
-      "status": null,
-      "degree": 13
-    },
-    {
-      "id": "theme:rule-of-law-boundaries-and-social-trust",
-      "key": "rule-of-law-boundaries-and-social-trust",
-      "label": "法治边界与社会信任",
-      "fullLabel": "法治边界与社会信任",
-      "type": "theme",
-      "route": "themes/rule-of-law-boundaries-and-social-trust",
-      "summary": "关注法律灰区如何影响公众的善意、风险感和彼此信任。",
       "status": null,
       "degree": 13
     },
@@ -1122,17 +1133,6 @@
       "type": "episode",
       "route": "episodes/EP120",
       "summary": "本期围绕匈牙利大选展开。核心判断不是单纯的选举轮替，而是欧洲内部一次典型的“拆雷”成功。这场胜利首先是年轻选民推动下的民意回归。其次才是地缘政治牌局里的再分配。欧盟拆掉了内部的一颗雷。俄罗斯和特朗普阵营则失去了一张能持续撬动欧洲裂缝的牌。",
-      "status": "curated",
-      "degree": 13
-    },
-    {
-      "id": "episode:EP137",
-      "key": "EP137",
-      "label": "EP137",
-      "fullLabel": "EP137 · 你坐的无人出租车安全吗？武汉萝卜快跑事故，给所有人提了致命醒！【EP137】",
-      "type": "episode",
-      "route": "episodes/EP137",
-      "summary": "武汉萝卜快跑大面积趴窝。全无人自动驾驶出租车不是简单的“车会不会开”问题。它是城市交通、云端控制、监管权力和安全兜底共同组成的系统问题。核心判断是，集中式车队架构便宜、好管、可追溯。但一旦云端与车辆失联或发生分歧，单车自主兜底就会被最高控制权压住。单点故障因此被放大成车队级、城市级的风险。",
       "status": "curated",
       "degree": 13
     },
@@ -1529,6 +1529,17 @@
       "type": "episode",
       "route": "episodes/EP186",
       "summary": "1911 年三角内衣厂大火烧死 146 名女工。逃生门被锁着，消防云梯只够到七楼。两个老板无罪释放，还从保险赚了 3 万美元。事后的独立调查委员会催出 61 条安全法律。目击者帕金斯二十年后成了美国首位女内阁成员。她把工时、最低工资和社保写进罗斯福新政。\n\n那是苏联式革命和法西斯之间的第三条路。做法是把钱还给工人，养起消费市场。这场火烧出一条红线，人命和尊严排在效率前面。今天好像又站在同一路口。",
+      "status": "curated",
+      "degree": 11
+    },
+    {
+      "id": "episode:EP191",
+      "key": "EP191",
+      "label": "EP191",
+      "fullLabel": "EP191 · 开国产电车自驾巴黎，刚出国就被远程锁机？带娃被困30小时的所有权困局！",
+      "type": "episode",
+      "route": "episodes/EP191",
+      "summary": "一位车主带着孩子开国产电车自驾去巴黎。7 月 16 日从霍尔果斯出境进入哈萨克斯坦，第二天车机就弹出全屏解封申请。导航、音乐、电控储物箱和油箱盖全部停摆。交完购车发票、护照签证和通关文件，等了三十多个小时才解锁。厂家回应说这不是锁车，是车辆定位在海外触发内置安全机制，属于行业普遍做法。本期不接受这个说法。电子围栏挡的不是盗抢，是零公里二手车流向海外，成本却让正常车主承担。更要紧的是那份没人细读的智能驾驶协议。油车买到的是行驶权利，智能车买到的是一份可以被远程收回的许可。",
       "status": "curated",
       "degree": 11
     },
@@ -1962,6 +1973,17 @@
       "degree": 9
     },
     {
+      "id": "episode:EP091",
+      "key": "EP091",
+      "label": "EP091",
+      "fullLabel": "EP091 · 电车语音关灯致命漏洞！车企拿命测试？",
+      "type": "episode",
+      "route": "episodes/EP091",
+      "summary": "本期围绕领克 Z20 的一起事故展开。语音一句话误关大灯，车撞上护栏。智能电车为什么会在权限和安全边界上出现如此低级却致命的漏洞。核心判断是，这不是一个单独的语音识别 bug。它是车机权限、场景验证、OTA 思维和企业安全文化一起失守后的系统性结果。",
+      "status": "curated",
+      "degree": 9
+    },
+    {
       "id": "episode:EP097",
       "key": "EP097",
       "label": "EP097",
@@ -2343,17 +2365,6 @@
       "type": "episode",
       "route": "episodes/EP079",
       "summary": "房票在各地流通、折价出售、被中介热炒。这不是楼市重新启动的信号。它是地方政府在现金吃紧、房价承压时的一种工具。用票据代替部分现金，稳住账面价格，继续拖延出清。落回一句很硬的判断：在这种环境里，现金比房票更有权力。",
-      "status": "curated",
-      "degree": 8
-    },
-    {
-      "id": "episode:EP091",
-      "key": "EP091",
-      "label": "EP091",
-      "fullLabel": "EP091 · 电车语音关灯致命漏洞！车企拿命测试？",
-      "type": "episode",
-      "route": "episodes/EP091",
-      "summary": "本期围绕领克 Z20 的一起事故展开。语音一句话误关大灯，车撞上护栏。智能电车为什么会在权限和安全边界上出现如此低级却致命的漏洞。核心判断是，这不是一个单独的语音识别 bug。它是车机权限、场景验证、OTA 思维和企业安全文化一起失守后的系统性结果。",
       "status": "curated",
       "degree": 8
     },
@@ -3029,6 +3040,17 @@
       "degree": 6
     },
     {
+      "id": "theme:hidden-costs",
+      "key": "hidden-costs",
+      "label": "消费者为哪些隐性成本买单",
+      "fullLabel": "消费者为哪些隐性成本买单",
+      "type": "theme",
+      "route": "themes/hidden-costs",
+      "summary": "讨论消费者支付的价格中，有多少是在承担企业内部看不见的成本。",
+      "status": null,
+      "degree": 6
+    },
+    {
       "id": "theme:ev-design-and-technology-shortcuts",
       "key": "ev-design-and-technology-shortcuts",
       "label": "新能源设计抄近路与技术捷径",
@@ -3575,17 +3597,6 @@
       "type": "concept",
       "route": "concepts/cash-optionality",
       "summary": "现金在高波动时期的核心价值，是保留等待、谈判、退出和重新进入的选择权。",
-      "status": null,
-      "degree": 5
-    },
-    {
-      "id": "theme:hidden-costs",
-      "key": "hidden-costs",
-      "label": "消费者为哪些隐性成本买单",
-      "fullLabel": "消费者为哪些隐性成本买单",
-      "type": "theme",
-      "route": "themes/hidden-costs",
-      "summary": "讨论消费者支付的价格中，有多少是在承担企业内部看不见的成本。",
       "status": null,
       "degree": 5
     },
@@ -4492,6 +4503,28 @@
       "degree": 3
     },
     {
+      "id": "model:property-defined-rule-domain",
+      "key": "property-defined-rule-domain",
+      "label": "产权定义规则域模型",
+      "fullLabel": "产权定义规则域模型",
+      "type": "model",
+      "route": "models/property-defined-rule-domain",
+      "summary": "产权定义规则域模型解释：一个空间里谁有权定规则、规则的合法范围在哪里、不接受规则的正确退出路径，都由这个空间的产权归属决定。",
+      "status": null,
+      "degree": 3
+    },
+    {
+      "id": "concept:property-boundary-literacy",
+      "key": "property-boundary-literacy",
+      "label": "产权意识",
+      "fullLabel": "产权意识",
+      "type": "concept",
+      "route": "concepts/property-boundary-literacy",
+      "summary": "产权意识指能够清晰区分公共场所与私人商业场所，并据此判断谁有权定规则、什么时候规则可以被挑战。",
+      "status": null,
+      "degree": 3
+    },
+    {
       "id": "theme:growth-and-family-boundaries",
       "key": "growth-and-family-boundaries",
       "label": "成长与亲情边界",
@@ -5119,6 +5152,17 @@
       "degree": 3
     },
     {
+      "id": "theme:smart-products-and-ownership-boundaries",
+      "key": "smart-products-and-ownership-boundaries",
+      "label": "智能产品与所有权边界",
+      "fullLabel": "智能产品与所有权边界",
+      "type": "theme",
+      "route": "themes/smart-products-and-ownership-boundaries",
+      "summary": "讨论商品联网之后，方向盘和开关之外那层控制权归谁，买断和许可的界线被挪到了哪里。",
+      "status": null,
+      "degree": 3
+    },
+    {
       "id": "concept:attention-trading",
       "key": "attention-trading",
       "label": "注意力交易",
@@ -5280,28 +5324,6 @@
       "type": "theme",
       "route": "themes/wealth-inheritance-and-relational-distortion",
       "summary": "关注财富传递过程中，关系、人格和价值观如何一起失真。",
-      "status": null,
-      "degree": 2
-    },
-    {
-      "id": "model:property-defined-rule-domain",
-      "key": "property-defined-rule-domain",
-      "label": "产权定义规则域模型",
-      "fullLabel": "产权定义规则域模型",
-      "type": "model",
-      "route": "models/property-defined-rule-domain",
-      "summary": "产权定义规则域模型解释：一个空间里谁有权定规则、规则的合法范围在哪里、不接受规则的正确退出路径，都由这个空间的产权归属决定。",
-      "status": null,
-      "degree": 2
-    },
-    {
-      "id": "concept:property-boundary-literacy",
-      "key": "property-boundary-literacy",
-      "label": "产权意识",
-      "fullLabel": "产权意识",
-      "type": "concept",
-      "route": "concepts/property-boundary-literacy",
-      "summary": "产权意识指能够清晰区分公共场所与私人商业场所，并据此判断谁有权定规则、什么时候规则可以被挑战。",
       "status": null,
       "degree": 2
     },
@@ -5500,6 +5522,28 @@
       "type": "theme",
       "route": "themes/recycling-and-pollution-transfer",
       "summary": "聚焦所谓循环经济如何在补贴和套利驱动下，把风险从台面上的产品转移到看不见的废弃物和弱监管地区。",
+      "status": null,
+      "degree": 2
+    },
+    {
+      "id": "concept:centralized-control-failure",
+      "key": "centralized-control-failure",
+      "label": "集中式控制反噬",
+      "fullLabel": "集中式控制反噬",
+      "type": "concept",
+      "route": "concepts/centralized-control-failure",
+      "summary": "权力、决策和兜底都集中到一个中心后，系统会更好管理，也更容易把单点故障放大成整体故障。",
+      "status": null,
+      "degree": 2
+    },
+    {
+      "id": "model:centralized-control-backfire",
+      "key": "centralized-control-backfire",
+      "label": "集中式控制反噬模型",
+      "fullLabel": "集中式控制反噬模型",
+      "type": "model",
+      "route": "models/centralized-control-backfire",
+      "summary": "集中控制把监管便利和低成本做出来，也会把失效点集中到同一个中心节点上。",
       "status": null,
       "degree": 2
     },
@@ -6340,28 +6384,6 @@
       "degree": 1
     },
     {
-      "id": "concept:centralized-control-failure",
-      "key": "centralized-control-failure",
-      "label": "集中式控制反噬",
-      "fullLabel": "集中式控制反噬",
-      "type": "concept",
-      "route": "concepts/centralized-control-failure",
-      "summary": "权力、决策和兜底都集中到一个中心后，系统会更好管理，也更容易把单点故障放大成整体故障。",
-      "status": null,
-      "degree": 1
-    },
-    {
-      "id": "model:centralized-control-backfire",
-      "key": "centralized-control-backfire",
-      "label": "集中式控制反噬模型",
-      "fullLabel": "集中式控制反噬模型",
-      "type": "model",
-      "route": "models/centralized-control-backfire",
-      "summary": "集中控制把监管便利和低成本做出来，也会把失效点集中到同一个中心节点上。",
-      "status": null,
-      "degree": 1
-    },
-    {
       "id": "concept:envy-driven-smear",
       "key": "envy-driven-smear",
       "label": "嫉妒驱动的污名化",
@@ -6769,6 +6791,17 @@
       "degree": 1
     },
     {
+      "id": "concept:commercial-geofence",
+      "key": "commercial-geofence",
+      "label": "商业电子围栏",
+      "fullLabel": "商业电子围栏",
+      "type": "concept",
+      "route": "concepts/commercial-geofence",
+      "summary": "厂商用定位划出一条地理边界，越过它商品就自动降级，划线的依据是自家渠道利益而不是安全。",
+      "status": null,
+      "degree": 1
+    },
+    {
       "id": "concept:social-currency-pressure",
       "key": "social-currency-pressure",
       "label": "社交货币压力",
@@ -6985,6 +7018,17 @@
       "type": "person",
       "route": "people/xu-huping",
       "summary": "徐湖平是南京博物院原常务副院长、院长，节目借他观察公共文博机构在《江南春》事件中如何面对产权、透明度和托管责任。",
+      "status": null,
+      "degree": 1
+    },
+    {
+      "id": "concept:licensed-ownership",
+      "key": "licensed-ownership",
+      "label": "许可式所有权",
+      "fullLabel": "许可式所有权",
+      "type": "concept",
+      "route": "concepts/licensed-ownership",
+      "summary": "付的是买断价，拿到的却是一份能被远程收回的使用许可，一部分处置权始终留在卖方手里。",
       "status": null,
       "degree": 1
     },
@@ -7229,17 +7273,6 @@
       "summary": "Bad Bunny 是波多黎各音乐人，节目借他的超级碗中场秀观察拉丁文化如何从边缘语言进入北美主舞台。",
       "status": null,
       "degree": 1
-    },
-    {
-      "id": "episode:EP191",
-      "key": "EP191",
-      "label": "EP191",
-      "fullLabel": "EP191 · 开国产电车自驾巴黎，刚出国就被远程锁机？带娃被困30小时的所有权困局！",
-      "type": "episode",
-      "route": "episodes/EP191",
-      "summary": "待整理",
-      "status": "draft",
-      "degree": 0
     }
   ],
   "links": [
@@ -10134,6 +10167,11 @@
       "kind": "episode-theme"
     },
     {
+      "source": "episode:EP091",
+      "target": "theme:smart-products-and-ownership-boundaries",
+      "kind": "episode-theme"
+    },
+    {
       "source": "episode:EP092",
       "target": "concept:civilization-culture-split",
       "kind": "episode-concept"
@@ -11911,6 +11949,11 @@
     {
       "source": "episode:EP137",
       "target": "theme:ai-and-human-creativity",
+      "kind": "episode-theme"
+    },
+    {
+      "source": "episode:EP137",
+      "target": "theme:smart-products-and-ownership-boundaries",
       "kind": "episode-theme"
     },
     {
@@ -14511,6 +14554,61 @@
     {
       "source": "episode:EP190",
       "target": "theme:human-value-and-state-credit",
+      "kind": "episode-theme"
+    },
+    {
+      "source": "episode:EP191",
+      "target": "concept:licensed-ownership",
+      "kind": "episode-concept"
+    },
+    {
+      "source": "episode:EP191",
+      "target": "concept:commercial-geofence",
+      "kind": "episode-concept"
+    },
+    {
+      "source": "episode:EP191",
+      "target": "concept:centralized-control-failure",
+      "kind": "episode-concept"
+    },
+    {
+      "source": "episode:EP191",
+      "target": "concept:property-boundary-literacy",
+      "kind": "episode-concept"
+    },
+    {
+      "source": "episode:EP191",
+      "target": "concept:cost-shifting",
+      "kind": "episode-concept"
+    },
+    {
+      "source": "episode:EP191",
+      "target": "model:centralized-control-backfire",
+      "kind": "episode-model"
+    },
+    {
+      "source": "episode:EP191",
+      "target": "model:property-defined-rule-domain",
+      "kind": "episode-model"
+    },
+    {
+      "source": "episode:EP191",
+      "target": "model:risk-transfer-chain",
+      "kind": "episode-model"
+    },
+    {
+      "source": "episode:EP191",
+      "target": "theme:smart-products-and-ownership-boundaries",
+      "kind": "episode-theme"
+    },
+    {
+      "source": "episode:EP191",
+      "target": "theme:rule-of-law-boundaries-and-social-trust",
+      "kind": "episode-theme"
+    },
+    {
+      "source": "episode:EP191",
+      "target": "theme:hidden-costs",
       "kind": "episode-theme"
     },
     {
