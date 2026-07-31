@@ -5242,6 +5242,33 @@ body.page-knowledge-detail {
   color: var(--accent);
 }
 
+.viewpoint-angle {
+  display: inline-block;
+  margin-right: 12px;
+  padding-right: 12px;
+  border-right: 1px solid rgba(184, 138, 60, 0.32);
+  color: var(--gold-deep);
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+@media (max-width: 720px) {
+  .viewpoint-angle {
+    display: block;
+    margin-right: 0;
+    padding-right: 0;
+    border-right: none;
+    margin-bottom: 4px;
+    font-size: 0.9em;
+  }
+}
+
+.accordion-intro {
+  margin: 0 0 0.9rem;
+  color: var(--text-muted, #6b6257);
+  line-height: 1.75;
+}
+
 .accordion-content {
   padding: 0 18px 18px;
   border-top: 1px solid rgba(22, 33, 48, 0.06);

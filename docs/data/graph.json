@@ -4505,11 +4505,11 @@
     {
       "id": "model:property-defined-rule-domain",
       "key": "property-defined-rule-domain",
-      "label": "产权定义规则域模型",
-      "fullLabel": "产权定义规则域模型",
+      "label": "产权定规则",
+      "fullLabel": "产权定规则",
       "type": "model",
       "route": "models/property-defined-rule-domain",
-      "summary": "产权定义规则域模型解释：一个空间里谁有权定规则、规则的合法范围在哪里、不接受规则的正确退出路径，都由这个空间的产权归属决定。",
+      "summary": "说的是：一个空间里谁有权定规则、规则的合法范围在哪里、不接受规则的正确退出路径，都由这个空间的产权归属决定。",
       "status": null,
       "degree": 3
     },
@@ -5526,21 +5526,10 @@
       "degree": 2
     },
     {
-      "id": "concept:centralized-control-failure",
-      "key": "centralized-control-failure",
-      "label": "集中式控制反噬",
-      "fullLabel": "集中式控制反噬",
-      "type": "concept",
-      "route": "concepts/centralized-control-failure",
-      "summary": "权力、决策和兜底都集中到一个中心后，系统会更好管理，也更容易把单点故障放大成整体故障。",
-      "status": null,
-      "degree": 2
-    },
-    {
       "id": "model:centralized-control-backfire",
       "key": "centralized-control-backfire",
-      "label": "集中式控制反噬模型",
-      "fullLabel": "集中式控制反噬模型",
+      "label": "集中控制反噬",
+      "fullLabel": "集中控制反噬",
       "type": "model",
       "route": "models/centralized-control-backfire",
       "summary": "集中控制把监管便利和低成本做出来，也会把失效点集中到同一个中心节点上。",
@@ -6028,6 +6017,17 @@
       "type": "concept",
       "route": "concepts/middle-income-trap",
       "summary": "一个经济体长期卡在中等收入区间：低端优势已经用完，高端跃迁又被制度或人才短板锁死，上不去也掉不下来。",
+      "status": null,
+      "degree": 2
+    },
+    {
+      "id": "concept:centralized-control-failure",
+      "key": "centralized-control-failure",
+      "label": "中心失灵",
+      "fullLabel": "中心失灵",
+      "type": "concept",
+      "route": "concepts/centralized-control-failure",
+      "summary": "权力、决策和兜底都集中到一个中心后，系统会更好管理，也更容易把单点故障放大成整体故障。",
       "status": null,
       "degree": 2
     },

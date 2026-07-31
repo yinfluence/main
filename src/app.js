@@ -2001,6 +2001,7 @@ window.addEventListener('resize', () => {
 document.addEventListener('toggle', (event) => {
   if (!(event.target instanceof HTMLDetailsElement)) return;
   if (!app.contains(event.target)) return;
+  saveCurrentRouteViewState();
   window.requestAnimationFrame(() => {
     renderSectionProgress();
     syncSectionProgress();
@@ -2294,6 +2295,15 @@ function inlineMatchPriority(match) {
   return 1;
 }
 
+const INLINE_REFERENCE_TYPE_LABELS = {
+  episodes: '节目',
+  lives: '直播',
+  concepts: '概念',
+  models: '模型',
+  themes: '主题',
+  keywords: '关键词'
+};
+
 function collectInlineTextMatches(raw) {
   const matches = [];
   const currentRouteKey = currentInlineReferenceRouteKey();
@@ -2420,8 +2430,10 @@ function renderLinkedEpisodeText(value) {
     if (match.kind === 'episode') {
       html += `<span class="inline-episode-ref" data-popup-title="${escapeHtml(match.title)}" data-popup-summary="${escapeHtml(match.summary)}"><a class="inline-episode-link" href="${match.route}">${escapeHtml(match.label)}</a></span>`;
     } else {
+      const typeLabel = INLINE_REFERENCE_TYPE_LABELS[match.type] || '';
+      const popupTitle = `${typeLabel ? `${typeLabel}：` : ''}${match.title || match.label}`;
       const popupAttrs = match.summary
-        ? ` data-popup-title="${escapeHtml(match.title || match.label)}" data-popup-summary="${escapeHtml(match.summary)}"`
+        ? ` data-popup-title="${escapeHtml(popupTitle)}" data-popup-summary="${escapeHtml(match.summary)}"`
         : '';
       html += `<a class="inline-knowledge-link" data-ref-type="${escapeHtml(match.type)}" href="${match.route}"${popupAttrs}>${escapeHtml(match.label)}</a>`;
     }
@@ -6541,7 +6553,8 @@ function renderEpisodeDetail(id) {
     .sort((a, b) => episodeNumberFromId(b.id) - episodeNumberFromId(a.id));
   const relatedPeopleChips = linkedChipList('keywords', episode.people, site.keywords);
   const relatedThemeChips = linkedChipList('themes', episode.themes, site.themes);
-  const hasKnowledgeLinks = relatedConcepts.length || relatedModels.length;
+  const inlineKnowledge = episode.inlineKnowledge === true;
+  const hasKnowledgeLinks = !inlineKnowledge && (relatedConcepts.length || relatedModels.length);
   const hasTailLinks = (episode.people || []).length || (episode.themes || []).length || relatedEpisodes.length;
 
   app.innerHTML = `
@@ -6559,17 +6572,28 @@ function renderEpisodeDetail(id) {
 
       <section class="detail-section">
         <h2>话题</h2>
-        ${accordionItem('事件背景', renderParagraphText(episode.topic.background), true)}
-        ${accordionItem('核心矛盾', renderLinkedEpisodeList(episode.topic.conflicts))}
-        ${accordionItem('讨论边界', renderLinkedEpisodeList(episode.topic.boundaries))}
+        ${accordionItem('事件背景', renderParagraphText(episode.topic.background))}
+        ${accordionItem('核心矛盾', `${episode.topic.conflictsIntro ? `<p class="accordion-intro">${renderLinkedEpisodeText(episode.topic.conflictsIntro)}</p>` : ''}${renderLinkedEpisodeList(episode.topic.conflicts)}`)}
         ${accordionItem('机制推演', renderMechanismChain(episode.topic.mechanism))}
         ${accordionItem('延展话题', renderLinkedEpisodeList(episode.topic.extensions))}
       </section>
 
       <section class="detail-section">
         <h2>核心观点</h2>
-        ${renderViewpoints(episode.viewpoints)}
+        ${renderViewpoints(episode.viewpoints, episode.viewpointsIntro)}
       </section>
+
+      ${(episode.unsaid || []).length ? `
+        <section class="detail-section">
+          <h2>画龙点睛</h2>
+          ${episode.unsaid.map((item) => `
+            <details class="accordion-item">
+              <summary class="accordion-summary">${escapeHtml(item.title)}</summary>
+              <div class="accordion-content">${renderParagraphText(item.body)}</div>
+            </details>
+          `).join('')}
+        </section>
+      ` : ''}
 
       ${hasKnowledgeLinks ? `
         <section class="detail-section split">
@@ -6602,6 +6626,7 @@ function renderEpisodeDetail(id) {
         </section>
       ` : ''}
 
+      ${inlineKnowledge ? '' : `
       <section class="detail-section">
         <h2>延展</h2>
         ${renderLinkedEpisodeList(episode.extensions)}
@@ -6621,7 +6646,8 @@ function renderEpisodeDetail(id) {
           ` : ''}
         ` : ''}
       </section>
-      ${renderLiveMentions(episode)}
+      `}
+      ${inlineKnowledge ? '' : renderLiveMentions(episode)}
     </section>
   `;
 }
@@ -6975,23 +7001,21 @@ function renderParagraphText(value) {
     .join('');
 }
 
-function renderViewpoints(viewpoints = []) {
+function renderViewpointAngle(vp) {
+  return vp?.angle ? `<span class="viewpoint-angle">${escapeHtml(vp.angle)}</span>` : '';
+}
+
+function renderViewpoints(viewpoints = [], intro = '') {
   if (!viewpoints.length) return '';
-  if (viewpoints.length > 4) {
-    return viewpoints
-      .map((vp, index) => accordionItem(vp.title, renderParagraphText(vp.body), index === 0))
-      .join('');
-  }
-  return `<div class="viewpoint-list">${viewpoints
-    .map(
-      (vp) => `
-    <div class="viewpoint-card">
-      <h3 class="viewpoint-card-title">${renderLinkedEpisodeText(vp.title)}</h3>
-      <p class="viewpoint-card-body">${renderLinkedEpisodeText(vp.body)}</p>
-    </div>
-  `
-    )
-    .join('')}</div>`;
+  const introHtml = intro ? `<p class="accordion-intro">${renderLinkedEpisodeText(intro)}</p>` : '';
+  return introHtml + viewpoints
+    .map((vp) => `
+      <details class="accordion-item">
+        <summary class="accordion-summary">${renderViewpointAngle(vp)}${escapeHtml(vp.title)}</summary>
+        <div class="accordion-content">${renderParagraphText(vp.body)}</div>
+      </details>
+    `)
+    .join('');
 }
 
 function renderMechanismChain(value, renderText = renderLinkedEpisodeText, variant = '') {
