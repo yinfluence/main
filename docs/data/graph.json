@@ -3,7 +3,7 @@
     "title": "颖响力知识图谱",
     "subtitle": "节目、概念、模型、人物、主题之间的可视化连接网络",
     "nodeCount": 661,
-    "linkCount": 2408,
+    "linkCount": 2407,
     "typeCounts": {
       "model": 77,
       "live": 28,
@@ -1731,17 +1731,6 @@
       "degree": 9
     },
     {
-      "id": "theme:big-government-and-incentive-reversal",
-      "key": "big-government-and-incentive-reversal",
-      "label": "大政府与激励反转",
-      "fullLabel": "大政府与激励反转",
-      "type": "theme",
-      "route": "themes/big-government-and-incentive-reversal",
-      "summary": "当大政府失去高速增长红利后，原本向前看的发展激励会慢慢转成向后看的收缩与回补。",
-      "status": null,
-      "degree": 9
-    },
-    {
       "id": "concept:premium-narrative",
       "key": "premium-narrative",
       "label": "高价叙事",
@@ -1859,17 +1848,6 @@
       "type": "episode",
       "route": "episodes/EP014",
       "summary": "把“学生连排便都要被时间表和焦虑卡住”当成一个极端但有代表性的切口。应试教育的问题不只是卷分数。整套学校生活都被考试驱动，最后同时伤害学生的身体、精神和主体性。人被训练成只会服从标准答案的可管理材料。",
-      "status": "curated",
-      "degree": 9
-    },
-    {
-      "id": "episode:EP020",
-      "key": "EP020",
-      "label": "EP020",
-      "fullLabel": "EP020 · 中年女性崛起的运势真相，九紫离火运的背后危机。",
-      "type": "episode",
-      "route": "episodes/EP020",
-      "summary": "去年起进入九紫离火运，据称中年女性走到前台。不真算命，只借这套框架解释一个现象。女性走到前台，首先因为男性后退。社会进入转型与危机期，很多有成就的男士感到盛宴已过。有的迷茫，有的资产缩水躺平。女性反而在这时接过控制权。日本高市早苗、台湾郑丽文、宗馥莉上娃哈哈前台，属同一类选择。但前台不等于胜利，进牌局操盘不代表一定赢钱。做得好被当时代代表，做得不好受比男性更严厉的鞭挞。落到外识变、内守心安八个字。",
       "status": "curated",
       "degree": 9
     },
@@ -2072,6 +2050,17 @@
       "degree": 8
     },
     {
+      "id": "theme:big-government-and-incentive-reversal",
+      "key": "big-government-and-incentive-reversal",
+      "label": "大政府与激励反转",
+      "fullLabel": "大政府与激励反转",
+      "type": "theme",
+      "route": "themes/big-government-and-incentive-reversal",
+      "summary": "当大政府失去高速增长红利后，原本向前看的发展激励会慢慢转成向后看的收缩与回补。",
+      "status": null,
+      "degree": 8
+    },
+    {
       "id": "theme:east-asia-security-realignment",
       "key": "east-asia-security-realignment",
       "label": "东亚安全重组与日本转向",
@@ -2244,6 +2233,17 @@
       "type": "episode",
       "route": "episodes/EP018",
       "summary": "借张雪峰复播后对文科的调整表态，反过来追问文科到底有没有价值。答案不是简单替文科翻案。社会长期把理工科当成更稳妥的上升路径，这其实只是工业时代的延续性想象。AI 正在持续替代计算、执行和标准化工作。真正稀缺的反而是感性判断、创造性选择，以及对未来趋势的超前理解。",
+      "status": "curated",
+      "degree": 8
+    },
+    {
+      "id": "episode:EP020",
+      "key": "EP020",
+      "label": "EP020",
+      "fullLabel": "EP020 · 中年女性崛起的运势真相，九紫离火运的背后危机。",
+      "type": "episode",
+      "route": "episodes/EP020",
+      "summary": "去年起进入九紫离火运，据称中年女性走到前台。不真算命，只借这套框架解释一个现象。女性走到前台，首先因为男性后退。社会进入转型与危机期，很多有成就的男士感到盛宴已过。有的迷茫，有的资产缩水躺平。女性反而在这时接过控制权。日本高市早苗、台湾郑丽文、宗馥莉上娃哈哈前台，属同一类选择。但前台不等于胜利，进牌局操盘不代表一定赢钱。做得好被当时代代表，做得不好受比男性更严厉的鞭挞。落到外识变、内守心安八个字。",
       "status": "curated",
       "degree": 8
     },
@@ -8005,11 +8005,6 @@
     {
       "source": "episode:EP020",
       "target": "theme:crisis-era-power-reallocation",
-      "kind": "episode-theme"
-    },
-    {
-      "source": "episode:EP020",
-      "target": "theme:big-government-and-incentive-reversal",
       "kind": "episode-theme"
     },
     {
