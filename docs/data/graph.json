@@ -2,13 +2,13 @@
   "meta": {
     "title": "颖响力知识图谱",
     "subtitle": "节目、概念、模型、人物、主题之间的可视化连接网络",
-    "nodeCount": 656,
+    "nodeCount": 657,
     "linkCount": 2394,
     "typeCounts": {
       "model": 77,
       "live": 28,
       "theme": 91,
-      "episode": 190,
+      "episode": 191,
       "concept": 205,
       "person": 65
     }
@@ -7229,6 +7229,17 @@
       "summary": "Bad Bunny 是波多黎各音乐人，节目借他的超级碗中场秀观察拉丁文化如何从边缘语言进入北美主舞台。",
       "status": null,
       "degree": 1
+    },
+    {
+      "id": "episode:EP191",
+      "key": "EP191",
+      "label": "EP191",
+      "fullLabel": "EP191 · 开国产电车自驾巴黎，刚出国就被远程锁机？带娃被困30小时的所有权困局！",
+      "type": "episode",
+      "route": "episodes/EP191",
+      "summary": "待整理",
+      "status": "draft",
+      "degree": 0
     }
   ],
   "links": [
