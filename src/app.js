@@ -6936,7 +6936,6 @@ function renderLiveDetail(id) {
 
       <section class="detail-section">
         <h2>话题分段</h2>
-        <p class="subtle">先按大话题分组，每个大话题下面再拆成小节。点开哪一节读哪一节，段里的串联指向知识库已有的节目和节点。</p>
         ${renderLiveChapters(live)}
       </section>
 
@@ -6944,18 +6943,10 @@ function renderLiveDetail(id) {
       ${(live.audienceThreads || []).length ? `
         <section class="detail-section">
           <h2>直播间问答</h2>
-          <p class="subtle">观众在弹幕里问的，主播当场答的，这里保留他给出的完整说法。</p>
           ${live.audienceThreads.map((thread) => accordionItem(thread.prompt, String(thread.reply || '').split(/\n{2,}/).filter(Boolean).map((paragraph) => `<p>${renderLiveText(paragraph.trim())}</p>`).join(''), false)).join('')}
         </section>
       ` : ''}
 
-      ${live.mechanism ? `
-        <section class="detail-section">
-          <h2>机制推演</h2>
-          <p class="subtle">这一场的主线怎么一步步推下来的。</p>
-          ${renderMechanismChain(live.mechanism, renderLiveText)}
-        </section>
-      ` : ''}
 
     </section>
   `;
