@@ -83,3 +83,29 @@ print('   条数分布', dict(cnt))
 print('   重复标题', {k:v for k,v in dup.items() if len(v)>1} or '无')
 print('   body 超 145 字', longs or '无')
 print('   body 不足 100 字', shorts or '无')
+
+# 2026-08-02 加。以前这两项没人量：summary 只被检查非空，tags 压根不检查，
+# 于是简介写超一倍、标签在页面上一个都不显示，两种情况都能全项通过。
+print('== 简介字数（sop/05a 200-250）==')
+out = []
+for p in eps:
+    d = json.load(io.open(p, encoding='utf-8'))
+    n = len(re.sub(r'\s', '', d.get('summary') or ''))
+    if n < 200 or n > 250: out.append((d['id'], n))
+print('   ', f'{len(out)} 期超区间: {out[:12]}' if out else '全部在区间内')
+
+print('== 标签能不能显示（tags 要有 content/keywords 词条）==')
+names = set()
+for p in glob.glob('content/keywords/*.json'):
+    k = json.load(io.open(p, encoding='utf-8'))
+    if k.get('name'): names.add(k['name'])
+    for a in k.get('aliases', []): names.add(a)
+empty, partial = [], 0
+for p in eps + sorted(glob.glob('content/lives/LIVE*.json')):
+    d = json.load(io.open(p, encoding='utf-8'))
+    tags = d.get('tags') or []
+    miss = [t for t in tags if t not in names]
+    if tags and len(miss) == len(tags): empty.append(d['id'])
+    elif miss: partial += 1
+print('   ', f'一个标签都显示不出来: {empty}' if empty else '每期至少有一个标签能显示')
+print('   ', f'{partial} 期有部分标签没词条（不阻断，见 audit-lives 的提示清单）')

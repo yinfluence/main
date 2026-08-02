@@ -20,6 +20,10 @@
 import argparse, hashlib, json, os, re, subprocess, sys, tempfile, time, urllib.parse
 
 UP_MID = 91741174
+# 节目有时先发 YouTube，B 站晚几个小时甚至一整天。2026-08-02 的 EP192 就是这样，
+# 当天 YouTube 已经上线，B 站一直没有投稿，只盯 B 站的扫描每十分钟报一次「无新一期」，
+# 日志干净得看不出任何问题。RSS 不要 cookie、不受 B 站风控影响，同时也是一条兜底通道。
+YT_CHANNEL = 'UCLELZILGdldscrt7VggJaRQ'
 UA = ('Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 '
       '(KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36')
 HERE = os.path.dirname(os.path.abspath(__file__))
@@ -174,6 +178,32 @@ def local_eps():
     return eps
 
 
+def youtube_eps():
+    """抓 YouTube 频道 RSS，返回 {EPxxx: {...}}。拿不到就返回空，不让它拖垮整次扫描。"""
+    url = f'https://www.youtube.com/feeds/videos.xml?channel_id={YT_CHANNEL}'
+    try:
+        r = subprocess.run(['curl', '-s', '--max-time', '30', '-H', f'User-Agent: {UA}', url],
+                           capture_output=True, text=True, timeout=45)
+    except subprocess.TimeoutExpired:
+        print('WARN: YouTube RSS 超时，本次只按 B 站判断', file=sys.stderr)
+        return {}
+    out = {}
+    for block in re.findall(r'<entry>(.*?)</entry>', r.stdout, re.S):
+        title = re.search(r'<title>(.*?)</title>', block, re.S)
+        vid = re.search(r'<yt:videoId>(.*?)</yt:videoId>', block)
+        pub = re.search(r'<published>(.*?)</published>', block)
+        if not (title and vid):
+            continue
+        ep = ep_from_title(title.group(1))
+        if ep:
+            out[ep] = {'bvid': None, 'title': title.group(1).strip(),
+                       'youtube_id': vid.group(1),
+                       'published': pub.group(1) if pub else None}
+    if not out:
+        print('WARN: YouTube RSS 没解析出任何 EP 号', file=sys.stderr)
+    return out
+
+
 def ep_from_title(title):
     m = re.search(r'[【\[]\s*(?:EP|PE)\s*(\d+)\s*[】\]]', title, re.I)
     if not m:
@@ -212,22 +242,44 @@ def main():
                 videos.setdefault(ep, v)
         time.sleep(2)
 
+    # YouTube 那条线单独扫一次再并进来。B 站有的以 B 站为准，只在 YouTube 上的补进来，
+    # 否则先发 YouTube 的那几期会一直报「无新一期」（2026-08-02 EP192 的教训）
+    yt = youtube_eps()
+    for ep, info in yt.items():
+        videos.setdefault(ep, info)
+
     new_eps = sorted(e for e in videos if e not in have)
     if not new_eps:
-        print(f'无新一期。本地 {len(have)} 期，UP 投稿最新 {max(videos) if videos else "?"} 已收录。')
+        newest = max(videos) if videos else '?'
+        print(f'无新一期。本地 {len(have)} 期，两个平台最新都是 {newest}，已收录。')
         return 10
 
     print(f'发现 {len(new_eps)} 个新一期: {", ".join(new_eps)}')
     if args.dry_run:
         for ep in new_eps:
             v = videos[ep]
-            print(f'  {ep} | {v["bvid"]} | {v["title"][:44]}')
+            src = v['bvid'] if v.get('bvid') else f'YouTube {v.get("youtube_id")}（B 站还没发）'
+            print(f'  {ep} | {src} | {v["title"][:44]}')
         return 0
 
     pending = []
     for ep in new_eps:
         v = videos[ep]
-        bvid = v['bvid']
+        bvid = v.get('bvid')
+        if not bvid:
+            # 只在 YouTube 上。B 站字幕接口用不上，转写和整理交给对话里的整理者，
+            # 这里只负责把它报出来，别让它继续隐身
+            yid = v.get('youtube_id')
+            pending.append({
+                'ep': ep, 'bvid': None, 'title': v['title'], 'main_title': v['title'],
+                'member': False, 'pubdate_iso': v.get('published'),
+                'subtitle_ok': False, 'draft_ok': False,
+                'source': 'youtube',
+                'youtube_url': f'https://www.youtube.com/watch?v={yid}',
+                'subtitle_err': ['B 站尚无投稿，需从 YouTube 取字幕'],
+            })
+            print(f'  {ep} | 只在 YouTube 上，B 站还没发 | https://www.youtube.com/watch?v={yid}')
+            continue
         # 会员判断 + 发布时间
         view = curl_json(f'https://api.bilibili.com/x/web-interface/view?bvid={bvid}', cookies)
         vd = view.get('data') or {}

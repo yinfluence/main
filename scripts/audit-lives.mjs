@@ -24,11 +24,17 @@ const RULES = {
   segmentsMin: 6,
   segmentsMax: 12,
   pointsMin: 4,
-  pointsMax: 8,
+  // 硬上限 4（用户 2026-07-31 定）。这里曾经是 8，跟 sop/08 的规定对不上，
+  // 于是 SOP 改了脚本没改，一屏七八个点照样过检
+  pointsMax: 4,
   emphasisMax: 3,
   linkedPointsMin: 2,
   threadReplyMin: 180,
-  labelTailMax: 3
+  labelTailMax: 3,
+  // summary 的区间在 sop/05a，直播沿用节目的规矩。以前这里只检查字段非空，
+  // 于是 LIVE029 写了 543 字（超上限一倍多）还是六道全过
+  summaryMin: 200,
+  summaryMax: 250
 };
 
 // 贴标签式收尾：每段末尾挂一个概念标签升华一下，是最典型的 AI 文风。
@@ -49,13 +55,29 @@ function fail(live, message) {
   problems.push(`${live}: ${message}`);
 }
 
-const [lives, episodes, concepts, models, themes] = await Promise.all([
+// 提示跟失败分开：历史上积了几百个没建词条的 tag，全判失败会把真问题淹掉。
+// 提示不影响退出码，但每次都打出来，别让它悄悄躺着
+const warnings = [];
+function warn(live, message) {
+  warnings.push(`${live}: ${message}`);
+}
+
+const [lives, episodes, concepts, models, themes, keywords] = await Promise.all([
   readJsonDir(path.join(contentDir, 'lives')),
   readJsonDir(path.join(contentDir, 'episodes')),
   readJsonDir(path.join(contentDir, 'concepts')),
   readJsonDir(path.join(contentDir, 'models')),
-  readJsonDir(path.join(contentDir, 'themes'))
+  readJsonDir(path.join(contentDir, 'themes')),
+  readJsonDir(path.join(contentDir, 'keywords'))
 ]);
+
+// 前端按 name 匹配标签，库里没有词条的 tag 在卡片上根本不渲染。
+// 别名也算命中，否则同一个词换个说法就被判成没词条
+const keywordNames = new Set();
+for (const item of keywords) {
+  if (item.name) keywordNames.add(item.name);
+  for (const alias of item.aliases || []) keywordNames.add(alias);
+}
 
 const known = {
   episodes: new Set(episodes.map((item) => item.id)),
@@ -63,7 +85,7 @@ const known = {
   models: new Set(models.map((item) => item.id)),
   themes: new Set(themes.map((item) => item.id)),
   lives: new Set(lives.map((item) => item.id)),
-  keywords: null
+  keywords: new Set(keywords.map((item) => item.id))
 };
 
 for (const live of lives.sort((a, b) => a.id.localeCompare(b.id))) {
@@ -80,6 +102,24 @@ for (const live of lives.sort((a, b) => a.id.localeCompare(b.id))) {
     if (!live[field]) fail(id, `缺字段 ${field}`);
   }
   if (!(live.boundaries || []).length) fail(id, '缺整理边界');
+
+  // 简介字数。字段非空不等于合规，sop/05a 的区间对直播同样有效
+  const summaryLen = (live.summary || '').replace(/\s/g, '').length;
+  if (summaryLen && (summaryLen < RULES.summaryMin || summaryLen > RULES.summaryMax)) {
+    fail(id, `简介 ${summaryLen} 字，超出 ${RULES.summaryMin} 到 ${RULES.summaryMax}`);
+  }
+
+  // 标签能不能显示。tags 里没有对应关键词词条的词，前端一个都不渲染，
+  // 全不命中就等于这一期在首页和详情页上没有标签
+  const tags = live.tags || [];
+  const missTags = tags.filter((tag) => !keywordNames.has(tag));
+  if (!tags.length) {
+    fail(id, '没有 tags');
+  } else if (missTags.length === tags.length) {
+    fail(id, `${tags.length} 个 tag 在关键词库里一个都没有，页面上不会显示标签`);
+  } else if (missTags.length) {
+    warn(id, `${missTags.length}/${tags.length} 个 tag 没有词条，不显示: ${missTags.join(' / ')}`);
+  }
 
   const segments = live.segments || [];
   if (segments.length < RULES.segmentsMin || segments.length > RULES.segmentsMax) {
@@ -149,10 +189,14 @@ for (const live of lives.sort((a, b) => a.id.localeCompare(b.id))) {
 
 const linkCount = lives.reduce((sum, live) => sum + [...JSON.stringify(live).matchAll(INLINE_LINK)].length, 0);
 console.log(`审计 ${lives.length} 期直播，句内链接 ${linkCount} 个`);
+if (warnings.length) {
+  console.log(`\n提示 ${warnings.length} 条（不阻断，但该补词条）：`);
+  for (const item of warnings) console.log(`  · ${item}`);
+}
 if (problems.length) {
   console.log(`\n发现 ${problems.length} 个问题：`);
   for (const problem of problems) console.log(`  - ${problem}`);
   process.exitCode = 1;
 } else {
-  console.log('六道机器检查全部通过');
+  console.log('\n八道机器检查全部通过');
 }
