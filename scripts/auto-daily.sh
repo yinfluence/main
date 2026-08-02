@@ -93,9 +93,10 @@ print('' if draft else (d.get('publishedAt') or '')[:10])
 " "$latest" 2>/dev/null)
   [[ "$pub" == "$(date -u +%Y-%m-%d)" ]]
 }
-if today_done; then
-  exit 0
-fi
+# 收工只收节目那条线，不能直接 exit —— 那样直播当天一次都扫不到。
+# 2026-08-01 就是这么漏的：注释早写着"直播不受这个开关影响"，代码却是裸 exit 0。
+EPISODES_DONE=0
+today_done && EPISODES_DONE=1
 
 # 整理进程的看护参数。没有这层的话 claude 一挂住就是无限等，而且全程占着锁 ——
 # 后面每次 launchd 触发都被挡掉，整个自动化静默死亡（2026-07-30 之前就是这样）。
@@ -244,6 +245,12 @@ scan_with_retry() {
     sleep "$RETRY_GAP"
   done
 }
+
+# 节目当天已收工：跳过节目那条线，但直播还得扫（两条线独立，上传时段也不重叠）
+if (( EPISODES_DONE )); then
+  scan_lives
+  exit 0
+fi
 
 if (( UTC_MIN >= WIN_START && UTC_MIN < WIN_END )); then
   # 窗口模式：10 分钟一轮，扫到新期（或出错）就停，最晚到窗口结束

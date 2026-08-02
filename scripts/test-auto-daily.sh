@@ -93,8 +93,15 @@ TODAY=$(date -u +%Y-%m-%d)
 mk() { python3 -c "
 import json,sys;json.dump(json.loads(sys.argv[2]),open(sys.argv[1],'w'),ensure_ascii=False)" \
   "$T/content/episodes/EP999.json" "$1"; }
+# 收工场景会走到 scan_lives，给它一个假的扫描器（返回 10=无新直播），别真去 B 站
+mkdir -p "$T/scripts"
+printf '%s\n' 'import sys' 'print("无新场次（假扫描器）")' 'sys.exit(10)' > "$T/scripts/scan-new-lives.py"
 mk "{\"status\":\"curated\",\"summary\":\"真内容\",\"publishedAt\":\"${TODAY}T11:00:00.000Z\"}"
-chk "今天的完成品 -> 收工不再扫" "$(gate)" ""
+rm -f "$T/logs/"auto-daily-*.log
+chk "今天的完成品 -> 收工不再扫节目" "$(gate)" ""
+# 2026-08-01 漏掉一场直播就是因为这里以前是裸 exit 0：节目收工当天直播一次都扫不到
+grep -q "扫描新直播" "$T/logs/"auto-daily-*.log 2>/dev/null \
+  && ok "节目收工当天仍然扫直播" || no "节目收工当天仍然扫直播"
 mk "{\"status\":\"draft\",\"summary\":\"待整理\",\"publishedAt\":\"${TODAY}T11:00:00.000Z\"}"
 chk "草稿带今天时间 -> 仍放行重试" "$(gate)" "GOT_THROUGH"
 mk "{\"status\":\"curated\",\"summary\":\"\",\"publishedAt\":\"${TODAY}T11:00:00.000Z\"}"
