@@ -2,13 +2,13 @@
   "meta": {
     "title": "颖响力知识图谱",
     "subtitle": "节目、概念、模型、人物、主题之间的可视化连接网络",
-    "nodeCount": 662,
-    "linkCount": 2432,
+    "nodeCount": 663,
+    "linkCount": 2447,
     "typeCounts": {
       "model": 77,
       "live": 29,
       "theme": 92,
-      "episode": 191,
+      "episode": 192,
       "concept": 208,
       "person": 65
     }
@@ -378,6 +378,17 @@
       "degree": 24
     },
     {
+      "id": "theme:dollar-system-and-gray-trade",
+      "key": "dollar-system-and-gray-trade",
+      "label": "美元体系与灰色贸易",
+      "fullLabel": "美元体系与灰色贸易",
+      "type": "theme",
+      "route": "themes/dollar-system-and-gray-trade",
+      "summary": "讨论石油美元的真实脆弱点，究竟藏在公开统计之外的哪些灰色交易链条里。",
+      "status": null,
+      "degree": 23
+    },
+    {
       "id": "concept:hidden-debt",
       "key": "hidden-debt",
       "label": "隐形债务",
@@ -387,17 +398,6 @@
       "summary": "表外、体外和合作链条里的债务不在显性报表中充分呈现，却会在危机时重新压回主体。",
       "status": null,
       "degree": 23
-    },
-    {
-      "id": "theme:dollar-system-and-gray-trade",
-      "key": "dollar-system-and-gray-trade",
-      "label": "美元体系与灰色贸易",
-      "fullLabel": "美元体系与灰色贸易",
-      "type": "theme",
-      "route": "themes/dollar-system-and-gray-trade",
-      "summary": "讨论石油美元的真实脆弱点，究竟藏在公开统计之外的哪些灰色交易链条里。",
-      "status": null,
-      "degree": 22
     },
     {
       "id": "episode:EP144",
@@ -440,6 +440,17 @@
       "type": "model",
       "route": "models/path-dependence",
       "summary": "路径依赖解释早期技术和叙事选择一旦成功，就会反过来限制后续转向更优路径。",
+      "status": null,
+      "degree": 21
+    },
+    {
+      "id": "concept:chokepoint-leverage",
+      "key": "chokepoint-leverage",
+      "label": "咽喉杠杆",
+      "fullLabel": "咽喉杠杆",
+      "type": "concept",
+      "route": "concepts/chokepoint-leverage",
+      "summary": "控制海峡、运河和关键通道的人，往往能把地理位置转化成定价权、通行权和规则权。",
       "status": null,
       "degree": 21
     },
@@ -532,17 +543,6 @@
       "degree": 20
     },
     {
-      "id": "concept:chokepoint-leverage",
-      "key": "chokepoint-leverage",
-      "label": "咽喉杠杆",
-      "fullLabel": "咽喉杠杆",
-      "type": "concept",
-      "route": "concepts/chokepoint-leverage",
-      "summary": "控制海峡、运河和关键通道的人，往往能把地理位置转化成定价权、通行权和规则权。",
-      "status": null,
-      "degree": 20
-    },
-    {
       "id": "model:strategic-timing",
       "key": "strategic-timing",
       "label": "战略时机",
@@ -631,6 +631,17 @@
       "degree": 19
     },
     {
+      "id": "model:value-capture",
+      "key": "value-capture",
+      "label": "价值捕获",
+      "fullLabel": "价值捕获",
+      "type": "model",
+      "route": "models/value-capture",
+      "summary": "价值捕获模型强调商业链条中关键不只是创造了价值，而是谁真正留下了价值。",
+      "status": null,
+      "degree": 18
+    },
+    {
       "id": "episode:EP139",
       "key": "EP139",
       "label": "EP139",
@@ -653,6 +664,17 @@
       "degree": 18
     },
     {
+      "id": "model:subsidy-capital-flywheel",
+      "key": "subsidy-capital-flywheel",
+      "label": "补贴资本飞轮",
+      "fullLabel": "补贴资本飞轮",
+      "type": "model",
+      "route": "models/subsidy-capital-flywheel",
+      "summary": "补贴资本飞轮解释地方财政、产业基金、企业估值和再融资如何互相放大。",
+      "status": null,
+      "degree": 17
+    },
+    {
       "id": "concept:pan-institutional-middle-class",
       "key": "pan-institutional-middle-class",
       "label": "泛体制中产",
@@ -671,17 +693,6 @@
       "type": "model",
       "route": "models/leverage-backfire",
       "summary": "杠杆反噬解释上行期放大利润的结构，如何在下行期放大亏损、现金流压力和清偿困难。",
-      "status": null,
-      "degree": 17
-    },
-    {
-      "id": "model:value-capture",
-      "key": "value-capture",
-      "label": "价值捕获",
-      "fullLabel": "价值捕获",
-      "type": "model",
-      "route": "models/value-capture",
-      "summary": "价值捕获模型强调商业链条中关键不只是创造了价值，而是谁真正留下了价值。",
       "status": null,
       "degree": 17
     },
@@ -728,17 +739,6 @@
       "summary": "接着 EP142 再聊追觅，五月预测的问题六月爆发了。追觅不是恒大，也不是乐视。主业扫地机器人没动，复刻的是清华控股。主业单列，另建天空工场两百个事业部，自己出两成，政府引导基金出八成。按下一轮基金的标准反设计公司，做成一级级 PPT。最后买壳上市把政府基金装回，地方政府、创始人、俞浩一起解套。落点不在俞浩个人，在这套地方自融会不会被当典型叫停。另一个悬念是没底子的年轻创业者还拿不拿得到第一笔钱。",
       "status": "curated",
       "degree": 17
-    },
-    {
-      "id": "model:subsidy-capital-flywheel",
-      "key": "subsidy-capital-flywheel",
-      "label": "补贴资本飞轮",
-      "fullLabel": "补贴资本飞轮",
-      "type": "model",
-      "route": "models/subsidy-capital-flywheel",
-      "summary": "补贴资本飞轮解释地方财政、产业基金、企业估值和再融资如何互相放大。",
-      "status": null,
-      "degree": 16
     },
     {
       "id": "concept:cost-shifting",
@@ -917,6 +917,17 @@
       "degree": 15
     },
     {
+      "id": "episode:EP192",
+      "key": "EP192",
+      "label": "EP192",
+      "fullLabel": "EP192 · 梁文锋说漏嘴的算力乱象！揭露中国AI行业的真实浪费与困境。",
+      "type": "episode",
+      "route": "episodes/EP192",
+      "summary": "梁文锋一场四小时的内部闭门会文字稿被放了出来。他是量化出身，不靠情怀也不屑对投资人吹牛，这份稿子的可信度比一般的投资人会议高。稿子里最硬的三处，一是算力的账，四张华山派的卡才抵一张英伟达 B 卡，手里一万六千张只折合四五千张，远远不够；二是不够之后只能走别的路子，灰色算力贸易第一次有了明确口径；三是国内七八家都在做同一件事，卡和算力中心的需求被一起做大，这条产业链跟当年的电车长得一模一样。最后问的是这场泄露为什么发生在今天，答案指向月之暗面爆火之后老大地位的松动。",
+      "status": "curated",
+      "degree": 15
+    },
+    {
       "id": "theme:local-fiscal-stress-and-hidden-debt",
       "key": "local-fiscal-stress-and-hidden-debt",
       "label": "地方财政与隐性债务",
@@ -924,6 +935,17 @@
       "type": "theme",
       "route": "themes/local-fiscal-stress-and-hidden-debt",
       "summary": "地方财政吃紧后，系统会通过更复杂的融资、资产包装和风险转移来维持运转。",
+      "status": null,
+      "degree": 14
+    },
+    {
+      "id": "theme:local-government-financialization",
+      "key": "local-government-financialization",
+      "label": "地方政府资本化与补贴杠杆",
+      "fullLabel": "地方政府资本化与补贴杠杆",
+      "type": "theme",
+      "route": "themes/local-government-financialization",
+      "summary": "讨论地方政府如何从传统招商者变成资本玩家，并把补贴、基金和估值故事捆到一起。",
       "status": null,
       "degree": 14
     },
@@ -1069,17 +1091,6 @@
       "summary": "东南亚火药桶系列第二期讲马来西亚，和印尼互为镜面。印尼表面威权稳固内里乱，马来西亚表面吵翻天底下稳。撑住底盘的是马来人的国家这条红线，和九位苏丹轮值的君主联邦制。安华的大联合政府面合心不合。票仓被自家分裂的同心党掏空，只能拖着不敢大选。大基建留下逼近GDP八成的债务，燃油补贴因油价暴涨翻了五到十倍。固打制把上百万中产人才推给新加坡。它不会崩盘，也永远突破不了中等收入陷阱。根基太稳，锁死了上限。",
       "status": "curated",
       "degree": 14
-    },
-    {
-      "id": "theme:local-government-financialization",
-      "key": "local-government-financialization",
-      "label": "地方政府资本化与补贴杠杆",
-      "fullLabel": "地方政府资本化与补贴杠杆",
-      "type": "theme",
-      "route": "themes/local-government-financialization",
-      "summary": "讨论地方政府如何从传统招商者变成资本玩家，并把补贴、基金和估值故事捆到一起。",
-      "status": null,
-      "degree": 13
     },
     {
       "id": "theme:ev-collapse-and-exit-risk",
@@ -1401,6 +1412,17 @@
       "degree": 12
     },
     {
+      "id": "model:technology-wave-cycle",
+      "key": "technology-wave-cycle",
+      "label": "技术浪潮周期",
+      "fullLabel": "技术浪潮周期",
+      "type": "model",
+      "route": "models/technology-wave-cycle",
+      "summary": "技术浪潮周期强调方向正确还不够，资本、基础设施、真实应用和时间窗口必须对齐。",
+      "status": null,
+      "degree": 11
+    },
+    {
       "id": "model:authority-misinfluence",
       "key": "authority-misinfluence",
       "label": "权威影响",
@@ -1566,13 +1588,13 @@
       "degree": 10
     },
     {
-      "id": "model:technology-wave-cycle",
-      "key": "technology-wave-cycle",
-      "label": "技术浪潮周期",
-      "fullLabel": "技术浪潮周期",
-      "type": "model",
-      "route": "models/technology-wave-cycle",
-      "summary": "技术浪潮周期强调方向正确还不够，资本、基础设施、真实应用和时间窗口必须对齐。",
+      "id": "theme:planned-systems-and-innovation",
+      "key": "planned-systems-and-innovation",
+      "label": "大计划体制与创新约束",
+      "fullLabel": "大计划体制与创新约束",
+      "type": "theme",
+      "route": "themes/planned-systems-and-innovation",
+      "summary": "讨论统一目标和强组织动员如何带来短期速度，又如何在长期压缩创新、纠错与自发能动性。",
       "status": null,
       "degree": 10
     },
@@ -1606,6 +1628,17 @@
       "type": "concept",
       "route": "concepts/retail-platform-risk",
       "summary": "散户投资不仅面对标的涨跌，还面对平台信用、对冲、托管和退出风险。",
+      "status": null,
+      "degree": 10
+    },
+    {
+      "id": "model:principal-agent",
+      "key": "principal-agent",
+      "label": "委托代理问题",
+      "fullLabel": "委托代理问题",
+      "type": "model",
+      "route": "models/principal-agent",
+      "summary": "委托代理模型解释外部顾问或职业代理人的激励，未必与委托方长期价值一致。",
       "status": null,
       "degree": 10
     },
@@ -1731,13 +1764,13 @@
       "degree": 9
     },
     {
-      "id": "theme:planned-systems-and-innovation",
-      "key": "planned-systems-and-innovation",
-      "label": "大计划体制与创新约束",
-      "fullLabel": "大计划体制与创新约束",
-      "type": "theme",
-      "route": "themes/planned-systems-and-innovation",
-      "summary": "讨论统一目标和强组织动员如何带来短期速度，又如何在长期压缩创新、纠错与自发能动性。",
+      "id": "concept:subsidy-leverage-engine",
+      "key": "subsidy-leverage-engine",
+      "label": "补贴杠杆引擎",
+      "fullLabel": "补贴杠杆引擎",
+      "type": "concept",
+      "route": "concepts/subsidy-leverage-engine",
+      "summary": "财政补贴被当成种子资金，撬动基金、估值、招商和社会资本，形成杠杆引擎。",
       "status": null,
       "degree": 9
     },
@@ -1782,17 +1815,6 @@
       "type": "model",
       "route": "models/time-arbitrage-model",
       "summary": "真正高明的行动，不是只比现在谁更强，而是比谁更懂得利用时间差、窗口差和成本差。",
-      "status": null,
-      "degree": 9
-    },
-    {
-      "id": "model:principal-agent",
-      "key": "principal-agent",
-      "label": "委托代理问题",
-      "fullLabel": "委托代理问题",
-      "type": "model",
-      "route": "models/principal-agent",
-      "summary": "委托代理模型解释外部顾问或职业代理人的激励，未必与委托方长期价值一致。",
       "status": null,
       "degree": 9
     },
@@ -2046,17 +2068,6 @@
       "type": "concept",
       "route": "concepts/performative-innovation",
       "summary": "表演式创新指项目主要为了完成指标、包装成果和争取扶持资金，而不以真实突破为中心。",
-      "status": null,
-      "degree": 8
-    },
-    {
-      "id": "concept:subsidy-leverage-engine",
-      "key": "subsidy-leverage-engine",
-      "label": "补贴杠杆引擎",
-      "fullLabel": "补贴杠杆引擎",
-      "type": "concept",
-      "route": "concepts/subsidy-leverage-engine",
-      "summary": "财政补贴被当成种子资金，撬动基金、估值、招商和社会资本，形成杠杆引擎。",
       "status": null,
       "degree": 8
     },
@@ -2710,6 +2721,17 @@
       "degree": 7
     },
     {
+      "id": "concept:expectation-selling",
+      "key": "expectation-selling",
+      "label": "预期贩卖",
+      "fullLabel": "预期贩卖",
+      "type": "concept",
+      "route": "concepts/expectation-selling",
+      "summary": "通过出售可理解、可规划、可购买的未来想象，中间人获得影响力和收益。",
+      "status": null,
+      "degree": 7
+    },
+    {
       "id": "model:institutional-formalism-spiral",
       "key": "institutional-formalism-spiral",
       "label": "制度形式主义螺旋",
@@ -2728,6 +2750,17 @@
       "type": "concept",
       "route": "concepts/transfer-payment-dependency",
       "summary": "转移支付依赖指地方运转越来越靠上级财政输血，而不是靠本地产业和税源形成真实闭环。",
+      "status": null,
+      "degree": 7
+    },
+    {
+      "id": "theme:ai-capital-and-company-identity",
+      "key": "ai-capital-and-company-identity",
+      "label": "AI创业、资本主场与公司身份",
+      "fullLabel": "AI创业、资本主场与公司身份",
+      "type": "theme",
+      "route": "themes/ai-capital-and-company-identity",
+      "summary": "讨论 AI 创业公司如何在不同法域、资本环境与身份叙事之间重新安排自己的主场。",
       "status": null,
       "degree": 7
     },
@@ -3128,17 +3161,6 @@
       "degree": 6
     },
     {
-      "id": "concept:expectation-selling",
-      "key": "expectation-selling",
-      "label": "预期贩卖",
-      "fullLabel": "预期贩卖",
-      "type": "concept",
-      "route": "concepts/expectation-selling",
-      "summary": "通过出售可理解、可规划、可购买的未来想象，中间人获得影响力和收益。",
-      "status": null,
-      "degree": 6
-    },
-    {
       "id": "person:zhang-xuefeng",
       "key": "zhang-xuefeng",
       "label": "张雪峰",
@@ -3194,13 +3216,13 @@
       "degree": 6
     },
     {
-      "id": "theme:ai-capital-and-company-identity",
-      "key": "ai-capital-and-company-identity",
-      "label": "AI创业、资本主场与公司身份",
-      "fullLabel": "AI创业、资本主场与公司身份",
+      "id": "theme:ai-bubble-and-compute-demand",
+      "key": "ai-bubble-and-compute-demand",
+      "label": "AI泡沫与算力需求制造",
+      "fullLabel": "AI泡沫与算力需求制造",
       "type": "theme",
-      "route": "themes/ai-capital-and-company-identity",
-      "summary": "讨论 AI 创业公司如何在不同法域、资本环境与身份叙事之间重新安排自己的主场。",
+      "route": "themes/ai-bubble-and-compute-demand",
+      "summary": "讨论 AI 热潮如何被资本、工具和基础设施共同推高，又如何反过来制造新的算力消费需求。",
       "status": null,
       "degree": 6
     },
@@ -3656,6 +3678,17 @@
       "degree": 5
     },
     {
+      "id": "concept:dependent-innovation",
+      "key": "dependent-innovation",
+      "label": "依附式创新",
+      "fullLabel": "依附式创新",
+      "type": "concept",
+      "route": "concepts/dependent-innovation",
+      "summary": "依附式创新指项目围绕政府、国企或强关系订单做有限改造，而不是面向真实市场独立突破。",
+      "status": null,
+      "degree": 5
+    },
+    {
       "id": "concept:wartime-oil-stockpiling",
       "key": "wartime-oil-stockpiling",
       "label": "战备储油",
@@ -3729,17 +3762,6 @@
       "type": "concept",
       "route": "concepts/self-dealing-incubation-loop",
       "summary": "同一个操盘主体把早期孵化、下一轮接盘和最终上市装回串成闭环，自己投自己、自己接自己，最后让各方一起解套。",
-      "status": null,
-      "degree": 5
-    },
-    {
-      "id": "theme:ai-bubble-and-compute-demand",
-      "key": "ai-bubble-and-compute-demand",
-      "label": "AI泡沫与算力需求制造",
-      "fullLabel": "AI泡沫与算力需求制造",
-      "type": "theme",
-      "route": "themes/ai-bubble-and-compute-demand",
-      "summary": "讨论 AI 热潮如何被资本、工具和基础设施共同推高，又如何反过来制造新的算力消费需求。",
       "status": null,
       "degree": 5
     },
@@ -4239,6 +4261,17 @@
       "degree": 4
     },
     {
+      "id": "concept:homogeneous-competition",
+      "key": "homogeneous-competition",
+      "label": "同质竞争",
+      "fullLabel": "同质竞争",
+      "type": "concept",
+      "route": "concepts/homogeneous-competition",
+      "summary": "同一行政区或同一市场里，两个功能重叠的主体争夺同一批资源时，胜负往往由谁获得体制支持决定，而不是谁质量更好。",
+      "status": null,
+      "degree": 4
+    },
+    {
       "id": "theme:authoritarian-succession-and-state-fragility",
       "key": "authoritarian-succession-and-state-fragility",
       "label": "威权继承与国家裂缝",
@@ -4283,17 +4316,6 @@
       "degree": 4
     },
     {
-      "id": "concept:dependent-innovation",
-      "key": "dependent-innovation",
-      "label": "依附式创新",
-      "fullLabel": "依附式创新",
-      "type": "concept",
-      "route": "concepts/dependent-innovation",
-      "summary": "依附式创新指项目围绕政府、国企或强关系订单做有限改造，而不是面向真实市场独立突破。",
-      "status": null,
-      "degree": 4
-    },
-    {
       "id": "concept:appeasing-consultant",
       "key": "appeasing-consultant",
       "label": "迎合型顾问",
@@ -4312,6 +4334,17 @@
       "type": "theme",
       "route": "themes/film-industry-and-traffic-logic",
       "summary": "关注影视生产如何越来越服从人设、粉丝和宣发流量，而非角色与作品本身。",
+      "status": null,
+      "degree": 4
+    },
+    {
+      "id": "concept:liability-firewall",
+      "key": "liability-firewall",
+      "label": "责任隔离墙",
+      "fullLabel": "责任隔离墙",
+      "type": "concept",
+      "route": "concepts/liability-firewall",
+      "summary": "强势方通过不持股、不担保、不当协议主体，把债务、对赌和经营风险全部隔在墙外，自己片叶不沾身。",
       "status": null,
       "degree": 4
     },
@@ -4998,17 +5031,6 @@
       "degree": 3
     },
     {
-      "id": "concept:homogeneous-competition",
-      "key": "homogeneous-competition",
-      "label": "同质竞争",
-      "fullLabel": "同质竞争",
-      "type": "concept",
-      "route": "concepts/homogeneous-competition",
-      "summary": "同一行政区或同一市场里，两个功能重叠的主体争夺同一批资源时，胜负往往由谁获得体制支持决定，而不是谁质量更好。",
-      "status": null,
-      "degree": 3
-    },
-    {
       "id": "person:wang-chuanfu",
       "key": "wang-chuanfu",
       "label": "王传福",
@@ -5159,17 +5181,6 @@
       "type": "concept",
       "route": "concepts/bounded-experimentation",
       "summary": "试验可以存在，但必须有范围、预算、反馈和退出标准，不能把整个系统押上去试错。",
-      "status": null,
-      "degree": 3
-    },
-    {
-      "id": "concept:liability-firewall",
-      "key": "liability-firewall",
-      "label": "责任隔离墙",
-      "fullLabel": "责任隔离墙",
-      "type": "concept",
-      "route": "concepts/liability-firewall",
-      "summary": "强势方通过不持股、不担保、不当协议主体，把债务、对赌和经营风险全部隔在墙外，自己片叶不沾身。",
       "status": null,
       "degree": 3
     },
@@ -14629,6 +14640,76 @@
       "kind": "episode-theme"
     },
     {
+      "source": "episode:EP192",
+      "target": "concept:chokepoint-leverage",
+      "kind": "episode-concept"
+    },
+    {
+      "source": "episode:EP192",
+      "target": "concept:liability-firewall",
+      "kind": "episode-concept"
+    },
+    {
+      "source": "episode:EP192",
+      "target": "concept:dependent-innovation",
+      "kind": "episode-concept"
+    },
+    {
+      "source": "episode:EP192",
+      "target": "concept:expectation-selling",
+      "kind": "episode-concept"
+    },
+    {
+      "source": "episode:EP192",
+      "target": "concept:homogeneous-competition",
+      "kind": "episode-concept"
+    },
+    {
+      "source": "episode:EP192",
+      "target": "model:subsidy-capital-flywheel",
+      "kind": "episode-model"
+    },
+    {
+      "source": "episode:EP192",
+      "target": "model:value-capture",
+      "kind": "episode-model"
+    },
+    {
+      "source": "episode:EP192",
+      "target": "model:technology-wave-cycle",
+      "kind": "episode-model"
+    },
+    {
+      "source": "episode:EP192",
+      "target": "model:principal-agent",
+      "kind": "episode-model"
+    },
+    {
+      "source": "episode:EP192",
+      "target": "theme:ai-bubble-and-compute-demand",
+      "kind": "episode-theme"
+    },
+    {
+      "source": "episode:EP192",
+      "target": "theme:ai-capital-and-company-identity",
+      "kind": "episode-theme"
+    },
+    {
+      "source": "episode:EP192",
+      "target": "theme:dollar-system-and-gray-trade",
+      "kind": "episode-theme"
+    },
+    {
+      "source": "episode:EP192",
+      "target": "theme:local-government-financialization",
+      "kind": "episode-theme"
+    },
+    {
+      "source": "episode:EP192",
+      "target": "theme:planned-systems-and-innovation",
+      "kind": "episode-theme"
+    },
+    {
       "source": "live:LIVE001",
       "target": "episode:EP090",
       "kind": "live-episode"
@@ -19261,6 +19342,11 @@
     {
       "source": "episode:EP130",
       "target": "concept:shadow-fleet",
+      "kind": "episode-concept"
+    },
+    {
+      "source": "episode:EP192",
+      "target": "concept:subsidy-leverage-engine",
       "kind": "episode-concept"
     },
     {
