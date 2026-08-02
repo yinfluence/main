@@ -2,11 +2,11 @@
   "meta": {
     "title": "颖响力知识图谱",
     "subtitle": "节目、概念、模型、人物、主题之间的可视化连接网络",
-    "nodeCount": 661,
-    "linkCount": 2407,
+    "nodeCount": 662,
+    "linkCount": 2432,
     "typeCounts": {
       "model": 77,
-      "live": 28,
+      "live": 29,
       "theme": 92,
       "episode": 191,
       "concept": 208,
@@ -345,6 +345,17 @@
       "degree": 25
     },
     {
+      "id": "live:LIVE029",
+      "key": "LIVE029",
+      "label": "LIVE029",
+      "fullLabel": "LIVE029 · 出国这条路只开了不到三十年，九月十五号新规执行，以后出去可能就没有回头路",
+      "type": "live",
+      "route": "lives/LIVE029",
+      "summary": "拿旅游签证过去看看能不能留下，九月之后这就落在违规那条线上。",
+      "status": "curated",
+      "degree": 25
+    },
+    {
       "id": "theme:middle-class-descent-and-stratification",
       "key": "middle-class-descent-and-stratification",
       "label": "中产下坠与分层社会",
@@ -400,6 +411,17 @@
       "degree": 22
     },
     {
+      "id": "episode:EP157",
+      "key": "EP157",
+      "label": "EP157",
+      "fullLabel": "EP157 · 如果现代教育是合法的“文化洗钱”工具，那么中产阶级为什么不选择更具性价比的方式，进行代际传承？",
+      "type": "episode",
+      "route": "episodes/EP157",
+      "summary": "高考季里，把矛头对准张雪峰式的目的论教育观。对中产家庭来说，教育、高考和考公是一场合法的文化洗钱。几百万学区房、补习班和留学，把父母的财富和地位洗成文凭。再用文凭换回下一代的财富与阶层。\n\n这场游戏的规则是为富人定的。中产用全部身家和别人的零花钱竞争，越卷越容易输。真正划算的反而是投入极低的底层。出路不是躺平，是换赛道。把钱从分数焦虑里拿出来，从目的论转向决定论。发现孩子的天赋，让家风成为传承。",
+      "status": "curated",
+      "degree": 22
+    },
+    {
       "id": "live:LIVE008",
       "key": "LIVE008",
       "label": "LIVE008",
@@ -422,6 +444,17 @@
       "degree": 21
     },
     {
+      "id": "episode:EP128",
+      "key": "EP128",
+      "label": "EP128",
+      "fullLabel": "EP128 · 广告越拍越丑的真相：中国社会正在悄悄发生一场大规模“系统回滚”！泛体制人群正在重构整个社会的底层逻辑。【EP128】",
+      "type": "episode",
+      "route": "episodes/EP128",
+      "summary": "从汽车广告和品牌叙事越来越“老干部风”切入。广告审美变化的背后不是广告公司退步。核心消费人群正在向公务员、事业编、国企及相关岗位等泛体制人群迁移。这被概括为“系统回滚”。社会从市场化打拼、能力赚钱和增长想象里退出来。新的分层逻辑以稳定身份、财政兜底和体制位置为核心。后果包括中产门槛收窄、身份压倒财富、代际闭环形成。也包括创新活力降温、三四线城市空心化和人情关系重新压倒规则关系。",
+      "status": "curated",
+      "degree": 21
+    },
+    {
       "id": "episode:EP131",
       "key": "EP131",
       "label": "EP131",
@@ -429,17 +462,6 @@
       "type": "episode",
       "route": "episodes/EP131",
       "summary": "《焦点访谈》报道哪吒破产重整。借这条新闻回到电车、地方政府、国资和隐性债务。哪吒不是单纯经营失败，也不是创始人或风投失误。地方国资把新能源车当成产业升级、招商业绩和 IPO 退出工具。于是成了一套财政金融赌局。桐乡、宜春、南宁代表三种参与方式。本地扶持、财政局平台入股、产投集团隐性债务化。价格战、研发迭代、营销黑箱把企业推向烧钱。IPO 一断，国资、车企、供应链和债权人一起被锁进窟窿，无法退出。",
-      "status": "curated",
-      "degree": 21
-    },
-    {
-      "id": "episode:EP157",
-      "key": "EP157",
-      "label": "EP157",
-      "fullLabel": "EP157 · 如果现代教育是合法的“文化洗钱”工具，那么中产阶级为什么不选择更具性价比的方式，进行代际传承？",
-      "type": "episode",
-      "route": "episodes/EP157",
-      "summary": "高考季里，把矛头对准张雪峰式的目的论教育观。对中产家庭来说，教育、高考和考公是一场合法的文化洗钱。几百万学区房、补习班和留学，把父母的财富和地位洗成文凭。再用文凭换回下一代的财富与阶层。\n\n这场游戏的规则是为富人定的。中产用全部身家和别人的零花钱竞争，越卷越容易输。真正划算的反而是投入极低的底层。出路不是躺平，是换赛道。把钱从分数焦虑里拿出来，从目的论转向决定论。发现孩子的天赋，让家风成为传承。",
       "status": "curated",
       "degree": 21
     },
@@ -532,13 +554,13 @@
       "degree": 20
     },
     {
-      "id": "episode:EP128",
-      "key": "EP128",
-      "label": "EP128",
-      "fullLabel": "EP128 · 广告越拍越丑的真相：中国社会正在悄悄发生一场大规模“系统回滚”！泛体制人群正在重构整个社会的底层逻辑。【EP128】",
+      "id": "episode:EP132",
+      "key": "EP132",
+      "label": "EP132",
+      "fullLabel": "EP132 · 是什么堵死了年轻创业者的草根逆袭之路？解读Manus交易撤销。【EP132】",
       "type": "episode",
-      "route": "episodes/EP128",
-      "summary": "从汽车广告和品牌叙事越来越“老干部风”切入。广告审美变化的背后不是广告公司退步。核心消费人群正在向公务员、事业编、国企及相关岗位等泛体制人群迁移。这被概括为“系统回滚”。社会从市场化打拼、能力赚钱和增长想象里退出来。新的分层逻辑以稳定身份、财政兜底和体制位置为核心。后果包括中产门槛收窄、身份压倒财富、代际闭环形成。也包括创新活力降温、三四线城市空心化和人情关系重新压倒规则关系。",
+      "route": "episodes/EP132",
+      "summary": "Meta 收购 Manus 被监管否决。叫停交易有明确法律依据。过去三十年支撑无背景年轻人从零到一的通道正在被堵死。通道是美元基金、全球市场、赴美上市和海外并购退出。地方国资基金的考核逻辑重视国有资产不流失、招商落地和可见退出。它天然不为纯软件、早期、无背景的草根项目承担风险。年轻人于是理性地转向考研考公。创新资源从市场能力转向行政关系。真正的颠覆式创新被挤出，只剩依附式和表演式创新。",
       "status": "curated",
       "degree": 20
     },
@@ -565,13 +587,13 @@
       "degree": 19
     },
     {
-      "id": "episode:EP132",
-      "key": "EP132",
-      "label": "EP132",
-      "fullLabel": "EP132 · 是什么堵死了年轻创业者的草根逆袭之路？解读Manus交易撤销。【EP132】",
+      "id": "episode:EP134",
+      "key": "EP134",
+      "label": "EP134",
+      "fullLabel": "EP134 · 躺平不是摆烂，是当代年轻人最隐蔽的弱者武器！主动内移民到躺平国？【EP134】",
       "type": "episode",
-      "route": "episodes/EP132",
-      "summary": "Meta 收购 Manus 被监管否决。叫停交易有明确法律依据。过去三十年支撑无背景年轻人从零到一的通道正在被堵死。通道是美元基金、全球市场、赴美上市和海外并购退出。地方国资基金的考核逻辑重视国有资产不流失、招商落地和可见退出。它天然不为纯软件、早期、无背景的草根项目承担风险。年轻人于是理性地转向考研考公。创新资源从市场能力转向行政关系。真正的颠覆式创新被挤出，只剩依附式和表演式创新。",
+      "route": "episodes/EP134",
+      "summary": "从劳动节前后“反躺平”宣传升温切入。躺平不只是年轻人摆烂，更是一种隐蔽的退出式抵抗。节目把躺平解释成“内移民”。年轻人不进行地理迁移。他们从主流劳动赛道、消费循环、身份规训和线下关系中主动绝缘。这样就形成一个治理系统难以穿透的“躺平国”。它真正引发焦虑的地方不在于个体懒惰。而在于网格化、数据化和前置预判体系突然遇到一群人。这群人没有代表、没有组织、没有数据反馈，也没有可谈判对象。",
       "status": "curated",
       "degree": 19
     },
@@ -607,17 +629,6 @@
       "summary": "重提三个月前的黄金逻辑，反驳美元反比、战争避险和美联储加息三种说法。它们连暴涨都解释不了。真正的推手是灰色贸易。离岸人民币在灰色石油和商品贸易里需要背书，弃美元改用黄金。各国央行为此大量囤金，金价才从1800美元冲到4000多美元。\n\n随后特朗普沿巴拿马、委内瑞拉、伊朗切断灰贸。金价失去支撑转入阴跌，美元顺势回流走强。国内突然推黄金投资，本质是帮囤金最多的央行向散户转嫁风险。也就是为国背债。",
       "status": "curated",
       "degree": 19
-    },
-    {
-      "id": "episode:EP134",
-      "key": "EP134",
-      "label": "EP134",
-      "fullLabel": "EP134 · 躺平不是摆烂，是当代年轻人最隐蔽的弱者武器！主动内移民到躺平国？【EP134】",
-      "type": "episode",
-      "route": "episodes/EP134",
-      "summary": "从劳动节前后“反躺平”宣传升温切入。躺平不只是年轻人摆烂，更是一种隐蔽的退出式抵抗。节目把躺平解释成“内移民”。年轻人不进行地理迁移。他们从主流劳动赛道、消费循环、身份规训和线下关系中主动绝缘。这样就形成一个治理系统难以穿透的“躺平国”。它真正引发焦虑的地方不在于个体懒惰。而在于网格化、数据化和前置预判体系突然遇到一群人。这群人没有代表、没有组织、没有数据反馈，也没有可谈判对象。",
-      "status": "curated",
-      "degree": 18
     },
     {
       "id": "episode:EP139",
@@ -730,6 +741,17 @@
       "degree": 16
     },
     {
+      "id": "concept:cost-shifting",
+      "key": "cost-shifting",
+      "label": "成本外移",
+      "fullLabel": "成本外移",
+      "type": "concept",
+      "route": "concepts/cost-shifting",
+      "summary": "组织内部的高额非生产性成本，最终会通过价格、规则或风险转嫁给外部承担者。",
+      "status": null,
+      "degree": 16
+    },
+    {
       "id": "theme:southeast-asia-fragmentation-and-bloc-competition",
       "key": "southeast-asia-fragmentation-and-bloc-competition",
       "label": "东南亚裂变与集团竞争",
@@ -829,17 +851,6 @@
       "degree": 16
     },
     {
-      "id": "concept:cost-shifting",
-      "key": "cost-shifting",
-      "label": "成本外移",
-      "fullLabel": "成本外移",
-      "type": "concept",
-      "route": "concepts/cost-shifting",
-      "summary": "组织内部的高额非生产性成本，最终会通过价格、规则或风险转嫁给外部承担者。",
-      "status": null,
-      "degree": 15
-    },
-    {
       "id": "model:proxy-containment-ring",
       "key": "proxy-containment-ring",
       "label": "代理围堵环",
@@ -847,6 +858,17 @@
       "type": "model",
       "route": "models/proxy-containment-ring",
       "summary": "代理围堵环解释大国如何通过盟友、代理人和通道控制分摊成本、封堵对手。",
+      "status": null,
+      "degree": 15
+    },
+    {
+      "id": "theme:rule-of-law-boundaries-and-social-trust",
+      "key": "rule-of-law-boundaries-and-social-trust",
+      "label": "法治边界与社会信任",
+      "fullLabel": "法治边界与社会信任",
+      "type": "theme",
+      "route": "themes/rule-of-law-boundaries-and-social-trust",
+      "summary": "关注法律灰区如何影响公众的善意、风险感和彼此信任。",
       "status": null,
       "degree": 15
     },
@@ -902,17 +924,6 @@
       "type": "theme",
       "route": "themes/local-fiscal-stress-and-hidden-debt",
       "summary": "地方财政吃紧后，系统会通过更复杂的融资、资产包装和风险转移来维持运转。",
-      "status": null,
-      "degree": 14
-    },
-    {
-      "id": "theme:rule-of-law-boundaries-and-social-trust",
-      "key": "rule-of-law-boundaries-and-social-trust",
-      "label": "法治边界与社会信任",
-      "fullLabel": "法治边界与社会信任",
-      "type": "theme",
-      "route": "themes/rule-of-law-boundaries-and-social-trust",
-      "summary": "关注法律灰区如何影响公众的善意、风险感和彼此信任。",
       "status": null,
       "degree": 14
     },
@@ -1379,6 +1390,17 @@
       "degree": 12
     },
     {
+      "id": "episode:EP191",
+      "key": "EP191",
+      "label": "EP191",
+      "fullLabel": "EP191 · 开国产电车自驾巴黎，刚出国就被远程锁机？带娃被困30小时的所有权困局！",
+      "type": "episode",
+      "route": "episodes/EP191",
+      "summary": "一位车主带着孩子开国产电车自驾去巴黎。7 月 16 日从霍尔果斯出境进入哈萨克斯坦，第二天车机就弹出全屏解封申请。导航、音乐、电控储物箱和油箱盖全部停摆。交完购车发票、护照签证和通关文件，等了三十多个小时才解锁。厂家回应说这不是锁车，是车辆定位在海外触发了内置安全机制，属于行业普遍做法。可这道电子围栏挡的不是盗抢，是零公里二手车流向海外，成本却让正常车主担着。买车时那份没人细读的智能驾驶协议里还有一层。油车买了就是你的，智能车买到的是一份许可，对方随时能收回。",
+      "status": "curated",
+      "degree": 12
+    },
+    {
       "id": "model:authority-misinfluence",
       "key": "authority-misinfluence",
       "label": "权威影响",
@@ -1529,17 +1551,6 @@
       "type": "episode",
       "route": "episodes/EP186",
       "summary": "1911 年三角内衣厂大火烧死 146 名女工。逃生门被锁着，消防云梯只够到七楼。两个老板无罪释放，还从保险赚了 3 万美元。事后的独立调查委员会催出 61 条安全法律。目击者帕金斯二十年后成了美国首位女内阁成员。她把工时、最低工资和社保写进罗斯福新政。\n\n那是苏联式革命和法西斯之间的第三条路。做法是把钱还给工人，养起消费市场。这场火烧出一条红线，人命和尊严排在效率前面。今天好像又站在同一路口。",
-      "status": "curated",
-      "degree": 11
-    },
-    {
-      "id": "episode:EP191",
-      "key": "EP191",
-      "label": "EP191",
-      "fullLabel": "EP191 · 开国产电车自驾巴黎，刚出国就被远程锁机？带娃被困30小时的所有权困局！",
-      "type": "episode",
-      "route": "episodes/EP191",
-      "summary": "一位车主带着孩子开国产电车自驾去巴黎。7 月 16 日从霍尔果斯出境进入哈萨克斯坦，第二天车机就弹出全屏解封申请。导航、音乐、电控储物箱和油箱盖全部停摆。交完购车发票、护照签证和通关文件，等了三十多个小时才解锁。厂家回应说这不是锁车，是车辆定位在海外触发了内置安全机制，属于行业普遍做法。可这道电子围栏挡的不是盗抢，是零公里二手车流向海外，成本却让正常车主担着。买车时那份没人细读的智能驾驶协议里还有一层。油车买了就是你的，智能车买到的是一份许可，对方随时能收回。",
       "status": "curated",
       "degree": 11
     },
@@ -2116,6 +2127,17 @@
       "degree": 8
     },
     {
+      "id": "theme:youth-dreams-and-safe-paths",
+      "key": "youth-dreams-and-safe-paths",
+      "label": "年轻人梦想与安全路径",
+      "fullLabel": "年轻人梦想与安全路径",
+      "type": "theme",
+      "route": "themes/youth-dreams-and-safe-paths",
+      "summary": "关注“稳定”如何成为压制年轻人生命力的主流建议。",
+      "status": null,
+      "degree": 8
+    },
+    {
       "id": "theme:platform-governance-and-folk-discourse",
       "key": "platform-governance-and-folk-discourse",
       "label": "平台治理与民间话语",
@@ -2424,6 +2446,17 @@
       "degree": 8
     },
     {
+      "id": "episode:EP111",
+      "key": "EP111",
+      "label": "EP111",
+      "fullLabel": "EP111 · 张雪夺冠刷屏：别用 “时代没机会”，掐灭年轻人的追梦底气。",
+      "type": "episode",
+      "route": "episodes/EP111",
+      "summary": "张雪从湘西修车学徒做到世界机车赛冠军。借这段经历正面反驳一种流行叙事，说普通人没机会了，所以最好尽早放弃梦想。时代机会分配不均是事实。但机会不是被动等来的。它靠持续投入、行动，和不肯被安全路径说服。过早把年轻人送进一个他根本不想要的“稳定位置”，很可能比失败更早杀死一个人。",
+      "status": "curated",
+      "degree": 8
+    },
+    {
       "id": "episode:EP114",
       "key": "EP114",
       "label": "EP114",
@@ -2534,6 +2567,17 @@
       "degree": 7
     },
     {
+      "id": "concept:jurisdiction-arbitrage",
+      "key": "jurisdiction-arbitrage",
+      "label": "法域套利",
+      "fullLabel": "法域套利",
+      "type": "concept",
+      "route": "concepts/jurisdiction-arbitrage",
+      "summary": "企业通过选择更有利法域，获取融资、估值、合规和退出上的制度差价。",
+      "status": null,
+      "degree": 7
+    },
+    {
       "id": "model:succession-governance",
       "key": "succession-governance",
       "label": "继承治理模型",
@@ -2563,17 +2607,6 @@
       "type": "theme",
       "route": "themes/deglobalization-and-cultural-fragmentation",
       "summary": "讨论全球舞台如何从英语中心和统一审美，转向更地方化、更圈层化的表达竞争。",
-      "status": null,
-      "degree": 7
-    },
-    {
-      "id": "theme:youth-dreams-and-safe-paths",
-      "key": "youth-dreams-and-safe-paths",
-      "label": "年轻人梦想与安全路径",
-      "fullLabel": "年轻人梦想与安全路径",
-      "type": "theme",
-      "route": "themes/youth-dreams-and-safe-paths",
-      "summary": "关注“稳定”如何成为压制年轻人生命力的主流建议。",
       "status": null,
       "degree": 7
     },
@@ -2618,6 +2651,17 @@
       "type": "concept",
       "route": "concepts/market-discipline-failure",
       "summary": "市场惩戒失效指规则被明显挑战后，法律、监管、审计和价格反应都没有让违规者付出足够代价。",
+      "status": null,
+      "degree": 7
+    },
+    {
+      "id": "model:ex-post-accountability-governance",
+      "key": "ex-post-accountability-governance",
+      "label": "事后追责治理模型",
+      "fullLabel": "事后追责治理模型",
+      "type": "model",
+      "route": "models/ex-post-accountability-governance",
+      "summary": "治理可以选择事前管制每个人，也可以选择给自由、事后对违规者施加无法承受的代价；后者往往比前者更省成本也更有效。",
       "status": null,
       "degree": 7
     },
@@ -2864,15 +2908,15 @@
       "degree": 7
     },
     {
-      "id": "episode:EP111",
-      "key": "EP111",
-      "label": "EP111",
-      "fullLabel": "EP111 · 张雪夺冠刷屏：别用 “时代没机会”，掐灭年轻人的追梦底气。",
-      "type": "episode",
-      "route": "episodes/EP111",
-      "summary": "张雪从湘西修车学徒做到世界机车赛冠军。借这段经历正面反驳一种流行叙事，说普通人没机会了，所以最好尽早放弃梦想。时代机会分配不均是事实。但机会不是被动等来的。它靠持续投入、行动，和不肯被安全路径说服。过早把年轻人送进一个他根本不想要的“稳定位置”，很可能比失败更早杀死一个人。",
-      "status": "curated",
-      "degree": 7
+      "id": "theme:financial-content-and-long-termism",
+      "key": "financial-content-and-long-termism",
+      "label": "财经表达与长期主义",
+      "fullLabel": "财经表达与长期主义",
+      "type": "theme",
+      "route": "themes/financial-content-and-long-termism",
+      "summary": "真正有价值的财经内容应该帮助人建立周期、战略和时机意识，而不是只卖每天的情绪波动。",
+      "status": null,
+      "degree": 6
     },
     {
       "id": "theme:bullshit-politics-and-historical-narratives",
@@ -2893,17 +2937,6 @@
       "type": "model",
       "route": "models/discipline-failure-loop",
       "summary": "违规成本过低时，市场会把规则破坏重新包装成交易机会，反过来奖励下一次违规。",
-      "status": null,
-      "degree": 6
-    },
-    {
-      "id": "concept:jurisdiction-arbitrage",
-      "key": "jurisdiction-arbitrage",
-      "label": "法域套利",
-      "fullLabel": "法域套利",
-      "type": "concept",
-      "route": "concepts/jurisdiction-arbitrage",
-      "summary": "企业通过选择更有利法域，获取融资、估值、合规和退出上的制度差价。",
       "status": null,
       "degree": 6
     },
@@ -2996,13 +3029,13 @@
       "degree": 6
     },
     {
-      "id": "model:ex-post-accountability-governance",
-      "key": "ex-post-accountability-governance",
-      "label": "事后追责治理模型",
-      "fullLabel": "事后追责治理模型",
-      "type": "model",
-      "route": "models/ex-post-accountability-governance",
-      "summary": "治理可以选择事前管制每个人，也可以选择给自由、事后对违规者施加无法承受的代价；后者往往比前者更省成本也更有效。",
+      "id": "concept:identity-bounded-choice",
+      "key": "identity-bounded-choice",
+      "label": "身份约束型选择",
+      "fullLabel": "身份约束型选择",
+      "type": "concept",
+      "route": "concepts/identity-bounded-choice",
+      "summary": "一类人因身份限制和认知边界，放弃客观最优选项、集中涌向够近够熟的次优选项，反而让次优节点畸形繁荣。",
       "status": null,
       "degree": 6
     },
@@ -3392,17 +3425,6 @@
       "degree": 5
     },
     {
-      "id": "theme:financial-content-and-long-termism",
-      "key": "financial-content-and-long-termism",
-      "label": "财经表达与长期主义",
-      "fullLabel": "财经表达与长期主义",
-      "type": "theme",
-      "route": "themes/financial-content-and-long-termism",
-      "summary": "真正有价值的财经内容应该帮助人建立周期、战略和时机意识，而不是只卖每天的情绪波动。",
-      "status": null,
-      "degree": 5
-    },
-    {
       "id": "theme:founder-power-and-feedback",
       "key": "founder-power-and-feedback",
       "label": "创始人权力与组织反馈",
@@ -3432,6 +3454,17 @@
       "type": "model",
       "route": "models/distributed-warfare-system",
       "summary": "分布式战争系统解释无人装备、分散生产、前线反馈和外部供给如何组合成长期战争优势。",
+      "status": null,
+      "degree": 5
+    },
+    {
+      "id": "theme:homeland-and-civic-belonging",
+      "key": "homeland-and-civic-belonging",
+      "label": "故乡想象与公民归属",
+      "fullLabel": "故乡想象与公民归属",
+      "type": "theme",
+      "route": "themes/homeland-and-civic-belonging",
+      "summary": "讨论血缘故乡、文化记忆与现代公民认同之间的边界如何被重新划分。",
       "status": null,
       "degree": 5
     },
@@ -3502,6 +3535,17 @@
       "degree": 5
     },
     {
+      "id": "concept:dream-extinguishing",
+      "key": "dream-extinguishing",
+      "label": "灭梦式安全感",
+      "fullLabel": "灭梦式安全感",
+      "type": "concept",
+      "route": "concepts/dream-extinguishing",
+      "summary": "以稳定和现实为名过早熄灭年轻人的热爱，会把安全感变成生命力的折损。",
+      "status": null,
+      "degree": 5
+    },
+    {
       "id": "theme:platform-labor-and-lived-reality",
       "key": "platform-labor-and-lived-reality",
       "label": "平台劳动与真实生存",
@@ -3524,6 +3568,17 @@
       "degree": 5
     },
     {
+      "id": "concept:anticipatory-governance",
+      "key": "anticipatory-governance",
+      "label": "前瞻治理",
+      "fullLabel": "前瞻治理",
+      "type": "concept",
+      "route": "concepts/anticipatory-governance",
+      "summary": "在问题形成之前就把它设计掉，而不是等矛盾积累、民怨爆发后再修补的治理方式。",
+      "status": null,
+      "degree": 5
+    },
+    {
       "id": "concept:authority-internalization",
       "key": "authority-internalization",
       "label": "权威内化",
@@ -3531,17 +3586,6 @@
       "type": "concept",
       "route": "concepts/authority-internalization",
       "summary": "外部权威被吸收到人格内部后，个体会在家庭、职场和亲密关系中自动低位化。",
-      "status": null,
-      "degree": 5
-    },
-    {
-      "id": "concept:identity-bounded-choice",
-      "key": "identity-bounded-choice",
-      "label": "身份约束型选择",
-      "fullLabel": "身份约束型选择",
-      "type": "concept",
-      "route": "concepts/identity-bounded-choice",
-      "summary": "一类人因身份限制和认知边界，放弃客观最优选项、集中涌向够近够熟的次优选项，反而让次优节点畸形繁荣。",
       "status": null,
       "degree": 5
     },
@@ -3641,6 +3685,17 @@
       "type": "theme",
       "route": "themes/war-system-and-succession-risk",
       "summary": "讨论战争国家在长期高压运转下，如何同时面临兵员枯竭、内部老化与接班断层。",
+      "status": null,
+      "degree": 5
+    },
+    {
+      "id": "concept:long-termism",
+      "key": "long-termism",
+      "label": "长期主义",
+      "fullLabel": "长期主义",
+      "type": "concept",
+      "route": "concepts/long-termism",
+      "summary": "以几十年甚至百年为尺度做决策，前期为长远格局多花成本、多做规划，而不是被短期利益和政绩驱动。",
       "status": null,
       "degree": 5
     },
@@ -3931,6 +3986,17 @@
       "degree": 4
     },
     {
+      "id": "concept:trauma-nostalgia",
+      "key": "trauma-nostalgia",
+      "label": "创伤式怀旧",
+      "fullLabel": "创伤式怀旧",
+      "type": "concept",
+      "route": "concepts/trauma-nostalgia",
+      "summary": "旧伤未被理解时，曾经造成伤害的年代会被重新包装成热血、激情和答案。",
+      "status": null,
+      "degree": 4
+    },
+    {
       "id": "concept:planning-lockin",
       "key": "planning-lockin",
       "label": "大计划锁定",
@@ -3964,6 +4030,17 @@
       "degree": 4
     },
     {
+      "id": "model:non-monetary-legacy",
+      "key": "non-monetary-legacy",
+      "label": "非货币遗产",
+      "fullLabel": "非货币遗产",
+      "type": "model",
+      "route": "models/non-monetary-legacy",
+      "summary": "非货币遗产强调一个人留下的价值，可能是持续改变了多少人的人生轨迹。",
+      "status": null,
+      "degree": 4
+    },
+    {
       "id": "concept:distributed-war-industry",
       "key": "distributed-war-industry",
       "label": "分布式战时工业",
@@ -3986,13 +4063,13 @@
       "degree": 4
     },
     {
-      "id": "theme:homeland-and-civic-belonging",
-      "key": "homeland-and-civic-belonging",
-      "label": "故乡想象与公民归属",
-      "fullLabel": "故乡想象与公民归属",
-      "type": "theme",
-      "route": "themes/homeland-and-civic-belonging",
-      "summary": "讨论血缘故乡、文化记忆与现代公民认同之间的边界如何被重新划分。",
+      "id": "model:individuation-three-stage",
+      "key": "individuation-three-stage",
+      "label": "个体化三阶段模型",
+      "fullLabel": "个体化三阶段模型",
+      "type": "model",
+      "route": "models/individuation-three-stage",
+      "summary": "个体化三阶段模型把成长理解为依次消化亲情、权威和自我，而非一次性觉醒。",
       "status": null,
       "degree": 4
     },
@@ -4063,17 +4140,6 @@
       "degree": 4
     },
     {
-      "id": "concept:dream-extinguishing",
-      "key": "dream-extinguishing",
-      "label": "灭梦式安全感",
-      "fullLabel": "灭梦式安全感",
-      "type": "concept",
-      "route": "concepts/dream-extinguishing",
-      "summary": "以稳定和现实为名过早熄灭年轻人的热爱，会把安全感变成生命力的折损。",
-      "status": null,
-      "degree": 4
-    },
-    {
       "id": "theme:brand-symbol-and-value",
       "key": "brand-symbol-and-value",
       "label": "品牌符号与价值感知",
@@ -4125,17 +4191,6 @@
       "type": "theme",
       "route": "themes/automotive-r-and-d-governance",
       "summary": "讨论汽车研发体系里的送检量产落差、师徒网络、权威压制和系统性失真。",
-      "status": null,
-      "degree": 4
-    },
-    {
-      "id": "concept:anticipatory-governance",
-      "key": "anticipatory-governance",
-      "label": "前瞻治理",
-      "fullLabel": "前瞻治理",
-      "type": "concept",
-      "route": "concepts/anticipatory-governance",
-      "summary": "在问题形成之前就把它设计掉，而不是等矛盾积累、民怨爆发后再修补的治理方式。",
       "status": null,
       "degree": 4
     },
@@ -4257,17 +4312,6 @@
       "type": "theme",
       "route": "themes/film-industry-and-traffic-logic",
       "summary": "关注影视生产如何越来越服从人设、粉丝和宣发流量，而非角色与作品本身。",
-      "status": null,
-      "degree": 4
-    },
-    {
-      "id": "concept:long-termism",
-      "key": "long-termism",
-      "label": "长期主义",
-      "fullLabel": "长期主义",
-      "type": "concept",
-      "route": "concepts/long-termism",
-      "summary": "以几十年甚至百年为尺度做决策，前期为长远格局多花成本、多做规划，而不是被短期利益和政绩驱动。",
       "status": null,
       "degree": 4
     },
@@ -4536,17 +4580,6 @@
       "degree": 3
     },
     {
-      "id": "concept:trauma-nostalgia",
-      "key": "trauma-nostalgia",
-      "label": "创伤式怀旧",
-      "fullLabel": "创伤式怀旧",
-      "type": "concept",
-      "route": "concepts/trauma-nostalgia",
-      "summary": "旧伤未被理解时，曾经造成伤害的年代会被重新包装成热血、激情和答案。",
-      "status": null,
-      "degree": 3
-    },
-    {
       "id": "concept:danwei-revival",
       "key": "danwei-revival",
       "label": "单位制回潮",
@@ -4602,17 +4635,6 @@
       "degree": 3
     },
     {
-      "id": "model:non-monetary-legacy",
-      "key": "non-monetary-legacy",
-      "label": "非货币遗产",
-      "fullLabel": "非货币遗产",
-      "type": "model",
-      "route": "models/non-monetary-legacy",
-      "summary": "非货币遗产强调一个人留下的价值，可能是持续改变了多少人的人生轨迹。",
-      "status": null,
-      "degree": 3
-    },
-    {
       "id": "model:layered-market",
       "key": "layered-market",
       "label": "分层市场",
@@ -4631,17 +4653,6 @@
       "type": "concept",
       "route": "concepts/investment-diversification-hedge",
       "summary": "把投资、产能和合作关系分散到多个国家或对象，是在不确定环境里分担风险，而不是和谁脱钩。",
-      "status": null,
-      "degree": 3
-    },
-    {
-      "id": "model:individuation-three-stage",
-      "key": "individuation-three-stage",
-      "label": "个体化三阶段模型",
-      "fullLabel": "个体化三阶段模型",
-      "type": "model",
-      "route": "models/individuation-three-stage",
-      "summary": "个体化三阶段模型把成长理解为依次消化亲情、权威和自我，而非一次性觉醒。",
       "status": null,
       "degree": 3
     },
@@ -4741,6 +4752,17 @@
       "type": "model",
       "route": "models/regulatory-cost-arbitrage",
       "summary": "当同一市场存在多条监管路径，低合规成本路径会获得更高试错频率和更强替代能力。",
+      "status": null,
+      "degree": 3
+    },
+    {
+      "id": "concept:compliance-floor",
+      "key": "compliance-floor",
+      "label": "合规及格线",
+      "fullLabel": "合规及格线",
+      "type": "concept",
+      "route": "concepts/compliance-floor",
+      "summary": "合规只是法律强制的最低底线，不等于优质；当消费者为更高品质付溢价，仅做到合规就是变相缩水。",
       "status": null,
       "degree": 3
     },
@@ -4851,6 +4873,17 @@
       "type": "person",
       "route": "people/luo-yonghao",
       "summary": "罗永浩是锤子科技创始人、创业者和直播电商公众人物，节目借他触发西贝争议中的外部质询和价格重估。",
+      "status": null,
+      "degree": 3
+    },
+    {
+      "id": "model:aspiration-compounding",
+      "key": "aspiration-compounding",
+      "label": "梦想复利模型",
+      "fullLabel": "梦想复利模型",
+      "type": "model",
+      "route": "models/aspiration-compounding",
+      "summary": "梦想复利模型解释长期投入到真实热爱的方向，会让能力、机会和身份彼此放大。",
       "status": null,
       "degree": 3
     },
@@ -5262,6 +5295,17 @@
       "degree": 3
     },
     {
+      "id": "episode:EP085",
+      "key": "EP085",
+      "label": "EP085",
+      "fullLabel": "EP085 · 新加坡遣返东大女网红与俄罗斯旅游死亡事件！跨境旅游到底该去哪？",
+      "type": "episode",
+      "route": "episodes/EP085",
+      "summary": "把新加坡遣返东大女网红，和俄罗斯旅游事故放在一起讨论。结论很朴素，免签不是权利。出国旅游也不该被政治叙事绑架。很多争议并不来自对方国家“特别针对”。而来自旅客对边检主权、旅游风险和基本常识缺乏理解。相比之下，把去交战国或基础设施差的国家包装成“为国旅游”。这才是真正对个体安全的轻慢。",
+      "status": "curated",
+      "degree": 3
+    },
+    {
       "id": "episode:EP086",
       "key": "EP086",
       "label": "EP086",
@@ -5493,17 +5537,6 @@
       "degree": 2
     },
     {
-      "id": "concept:compliance-floor",
-      "key": "compliance-floor",
-      "label": "合规及格线",
-      "fullLabel": "合规及格线",
-      "type": "concept",
-      "route": "concepts/compliance-floor",
-      "summary": "合规只是法律强制的最低底线，不等于优质；当消费者为更高品质付溢价，仅做到合规就是变相缩水。",
-      "status": null,
-      "degree": 2
-    },
-    {
       "id": "person:he-qi",
       "key": "he-qi",
       "label": "何旗",
@@ -5603,6 +5636,17 @@
       "degree": 2
     },
     {
+      "id": "theme:travel-politics-and-border-screening",
+      "key": "travel-politics-and-border-screening",
+      "label": "跨境旅游、边检与主权筛查",
+      "fullLabel": "跨境旅游、边检与主权筛查",
+      "type": "theme",
+      "route": "themes/travel-politics-and-border-screening",
+      "summary": "讨论免签、遣返、旅游安全和政治叙事如何改变普通人对跨境旅行的判断。",
+      "status": null,
+      "degree": 2
+    },
+    {
       "id": "model:growth-outpaces-controls",
       "key": "growth-outpaces-controls",
       "label": "扩张超速失控模型",
@@ -5643,17 +5687,6 @@
       "type": "person",
       "route": "people/mahsa-amini",
       "summary": "玛莎·阿米尼是 2022 年死于伊朗道德警察羁押后的库尔德裔伊朗女性，节目借她提醒观众把伊朗权力叙事重新拉回普通人的生命代价。",
-      "status": null,
-      "degree": 2
-    },
-    {
-      "id": "model:aspiration-compounding",
-      "key": "aspiration-compounding",
-      "label": "梦想复利模型",
-      "fullLabel": "梦想复利模型",
-      "type": "model",
-      "route": "models/aspiration-compounding",
-      "summary": "梦想复利模型解释长期投入到真实热爱的方向，会让能力、机会和身份彼此放大。",
       "status": null,
       "degree": 2
     },
@@ -5764,6 +5797,17 @@
       "type": "concept",
       "route": "concepts/three-layer-leverage",
       "summary": "居民、企业和地方政府同时用未来现金流为当下扩张融资，风险会从单点违约升级成系统踩踏。",
+      "status": null,
+      "degree": 2
+    },
+    {
+      "id": "concept:screening-sovereignty",
+      "key": "screening-sovereignty",
+      "label": "筛查主权",
+      "fullLabel": "筛查主权",
+      "type": "concept",
+      "route": "concepts/screening-sovereignty",
+      "summary": "免签提供便利，不等于放弃边境筛查；国家仍保留最终入境裁量权。",
       "status": null,
       "degree": 2
     },
@@ -6051,17 +6095,6 @@
       "route": "concepts/ai-terminal-guidance",
       "summary": "无人机在末端被干扰、丢失信号和GPS时，改用机载AI自主识别目标完成攻击。",
       "status": null,
-      "degree": 2
-    },
-    {
-      "id": "episode:EP085",
-      "key": "EP085",
-      "label": "EP085",
-      "fullLabel": "EP085 · 新加坡遣返东大女网红与俄罗斯旅游死亡事件！跨境旅游到底该去哪？",
-      "type": "episode",
-      "route": "episodes/EP085",
-      "summary": "把新加坡遣返东大女网红，和俄罗斯旅游事故放在一起讨论。结论很朴素，免签不是权利。出国旅游也不该被政治叙事绑架。很多争议并不来自对方国家“特别针对”。而来自旅客对边检主权、旅游风险和基本常识缺乏理解。相比之下，把去交战国或基础设施差的国家包装成“为国旅游”。这才是真正对个体安全的轻慢。",
-      "status": "curated",
       "degree": 2
     },
     {
@@ -6483,17 +6516,6 @@
       "degree": 1
     },
     {
-      "id": "theme:travel-politics-and-border-screening",
-      "key": "travel-politics-and-border-screening",
-      "label": "跨境旅游、边检与主权筛查",
-      "fullLabel": "跨境旅游、边检与主权筛查",
-      "type": "theme",
-      "route": "themes/travel-politics-and-border-screening",
-      "summary": "讨论免签、遣返、旅游安全和政治叙事如何改变普通人对跨境旅行的判断。",
-      "status": null,
-      "degree": 1
-    },
-    {
       "id": "concept:cross-disciplinary-window",
       "key": "cross-disciplinary-window",
       "label": "跨学科窗口",
@@ -6787,17 +6809,6 @@
       "type": "concept",
       "route": "concepts/panic-premium",
       "summary": "价格被恐慌、跟风和错过焦虑推高时，超出基本面的部分就是情绪溢价。",
-      "status": null,
-      "degree": 1
-    },
-    {
-      "id": "concept:screening-sovereignty",
-      "key": "screening-sovereignty",
-      "label": "筛查主权",
-      "fullLabel": "筛查主权",
-      "type": "concept",
-      "route": "concepts/screening-sovereignty",
-      "summary": "免签提供便利，不等于放弃边境筛查；国家仍保留最终入境裁量权。",
       "status": null,
       "degree": 1
     },
@@ -19086,6 +19097,131 @@
       "source": "live:LIVE028",
       "target": "episode:EP062",
       "kind": "live-episode"
+    },
+    {
+      "source": "live:LIVE029",
+      "target": "episode:EP191",
+      "kind": "live-episode"
+    },
+    {
+      "source": "live:LIVE029",
+      "target": "episode:EP132",
+      "kind": "live-episode"
+    },
+    {
+      "source": "live:LIVE029",
+      "target": "episode:EP085",
+      "kind": "live-episode"
+    },
+    {
+      "source": "live:LIVE029",
+      "target": "episode:EP157",
+      "kind": "live-episode"
+    },
+    {
+      "source": "live:LIVE029",
+      "target": "episode:EP134",
+      "kind": "live-episode"
+    },
+    {
+      "source": "live:LIVE029",
+      "target": "episode:EP128",
+      "kind": "live-episode"
+    },
+    {
+      "source": "live:LIVE029",
+      "target": "episode:EP111",
+      "kind": "live-episode"
+    },
+    {
+      "source": "live:LIVE029",
+      "target": "concept:compliance-floor",
+      "kind": "live-concept"
+    },
+    {
+      "source": "live:LIVE029",
+      "target": "concept:identity-bounded-choice",
+      "kind": "live-concept"
+    },
+    {
+      "source": "live:LIVE029",
+      "target": "concept:screening-sovereignty",
+      "kind": "live-concept"
+    },
+    {
+      "source": "live:LIVE029",
+      "target": "concept:jurisdiction-arbitrage",
+      "kind": "live-concept"
+    },
+    {
+      "source": "live:LIVE029",
+      "target": "concept:dream-extinguishing",
+      "kind": "live-concept"
+    },
+    {
+      "source": "live:LIVE029",
+      "target": "concept:anticipatory-governance",
+      "kind": "live-concept"
+    },
+    {
+      "source": "live:LIVE029",
+      "target": "concept:cost-shifting",
+      "kind": "live-concept"
+    },
+    {
+      "source": "live:LIVE029",
+      "target": "concept:long-termism",
+      "kind": "live-concept"
+    },
+    {
+      "source": "live:LIVE029",
+      "target": "concept:trauma-nostalgia",
+      "kind": "live-concept"
+    },
+    {
+      "source": "live:LIVE029",
+      "target": "model:ex-post-accountability-governance",
+      "kind": "live-model"
+    },
+    {
+      "source": "live:LIVE029",
+      "target": "model:individuation-three-stage",
+      "kind": "live-model"
+    },
+    {
+      "source": "live:LIVE029",
+      "target": "model:non-monetary-legacy",
+      "kind": "live-model"
+    },
+    {
+      "source": "live:LIVE029",
+      "target": "model:aspiration-compounding",
+      "kind": "live-model"
+    },
+    {
+      "source": "live:LIVE029",
+      "target": "theme:travel-politics-and-border-screening",
+      "kind": "live-theme"
+    },
+    {
+      "source": "live:LIVE029",
+      "target": "theme:rule-of-law-boundaries-and-social-trust",
+      "kind": "live-theme"
+    },
+    {
+      "source": "live:LIVE029",
+      "target": "theme:youth-dreams-and-safe-paths",
+      "kind": "live-theme"
+    },
+    {
+      "source": "live:LIVE029",
+      "target": "theme:financial-content-and-long-termism",
+      "kind": "live-theme"
+    },
+    {
+      "source": "live:LIVE029",
+      "target": "theme:homeland-and-civic-belonging",
+      "kind": "live-theme"
     },
     {
       "source": "episode:EP120",
