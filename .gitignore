@@ -4,3 +4,4 @@ dist/
 workbench/
 .local/
 logs/
+scripts/__pycache__/
