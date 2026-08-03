@@ -20,12 +20,16 @@ if [ -n "$(git status --porcelain -- docs/ content/ src/ scripts/ package.json)"
   fail "上列文件未提交（含新建/staged），先按 SOP 显式 add + commit"
 fi
 
-# 2. build 校验：重跑 build，若 docs/ 出现 diff，说明 commit 的 docs 是旧的
+# 2. build 校验：重跑 build，若 docs/ 出现实质 diff，说明 commit 的 docs 是旧的。
+#    build 每次都会更新 updatedAt 和 ?v= 缓存版本号，这类纯时间戳差异忽略并还原。
 npm run build >/dev/null 2>&1 || fail "npm run build 出错"
-if [ -n "$(git status --porcelain -- docs/)" ]; then
+REAL_DIFF=$(git diff -- docs/ | grep -E '^[+-]' | grep -vE '^[+-][+-]' \
+  | grep -vE 'updatedAt|__BUILD_VERSION__|\?v=[0-9]+' || true)
+if [ -n "$REAL_DIFF" ] || [ -n "$(git status --porcelain -- docs/ | grep '^??' || true)" ]; then
   git status --short -- docs/
-  fail "build 后 docs/ 有变化，说明 commit 前忘了 build。把上列文件 add + commit 后重跑"
+  fail "build 后 docs/ 有实质变化，说明 commit 前忘了 build。把上列文件 add + commit 后重跑"
 fi
+git checkout -- docs/ 2>/dev/null   # 还原纯时间戳噪音，保持工作区与 HEAD 一致
 
 LOCAL_HEAD=$(git rev-parse HEAD)
 
