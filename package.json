@@ -18,6 +18,7 @@
     "serve:stop": "bash scripts/serve-background.sh stop",
     "serve:status": "bash scripts/serve-background.sh status",
     "dev": "node build.mjs && python3 -m http.server 4310 -d dist",
-    "test:auto": "python3 scripts/test-scan-cookies.py && bash scripts/test-auto-daily.sh"
+    "test:auto": "python3 scripts/test-scan-cookies.py && bash scripts/test-auto-daily.sh",
+    "ship": "bash scripts/publish.sh"
   }
 }
