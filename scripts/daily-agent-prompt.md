@@ -31,13 +31,10 @@
 
 8. 构建：`npm run build`，确认 Episodes 数 +1、无报错。
 
-9. 发布：`git add` 只列本任务涉及的具体文件（不要 `git add -A`，避免带上 logs/ 和无关改动），`git commit`（信息按既有风格：`新增 EPxxx 标题摘要,新建/回填...并更新网页日志`，末尾 Co-Authored-By: Claude Fable 5 <noreply@anthropic.com>），`git push yinfluence-origin main`。
+9. 发布：`git add` 只列本任务涉及的具体文件（不要 `git add -A`，避免带上 logs/ 和无关改动），`git commit`（信息按既有风格：`新增 EPxxx 标题摘要,新建/回填...并更新网页日志`，末尾 Co-Authored-By: Claude Fable 5 <noreply@anthropic.com>），然后跑 `npm run ship`——这是发布唯一入口，禁止手打 push / wrangler / curl 拼流程。
 
-10. 三步验证上线（缺一不可，不要只看命令输出就说成功）：
-    - `git log --oneline -2` 确认 commit 在 HEAD；
-    - `git ls-remote yinfluence-origin main` 的哈希 == `git rev-parse HEAD`；
-    - 轮询 `curl -s "https://yinfluence.org/data/site.json?v=<新哈希>"`，确认 `stats.episodes` +1 且新 EP 出现（Cloudflare 有部署延迟，可等几轮）。
+10. 上线判定只有一个标准：`npm run ship` 的最后一行是 `PUBLISH OK`。看到它才算上线。看到 `PUBLISH FAILED` 或脚本非零退出 = 没上线，打印 `FAILED: 原因` 停止。不要自己另做验证，不要根据任何其他命令的输出下"已上线"的结论。
 
-11. 结束时打印一行以 `SUMMARY:` 开头的总结，例如：`SUMMARY: EP188 已上线（影射类，边界已按惯例处理）` 或 `SUMMARY: 无新一期`。若任何步骤失败，打印 `FAILED: 原因` 并停止，不要带病上线。
+11. 结束时打印一行以 `SUMMARY:` 开头的总结，例如：`SUMMARY: EP188 已上线（影射类，边界已按惯例处理）` 或 `SUMMARY: 无新一期`。只有第 10 步看到 `PUBLISH OK` 才允许写"已上线"。注意：外层脚本会独立复核线上数据，SUMMARY 说了"已上线"而线上不一致会被判失败重跑——如实报告是唯一通过路径。
 
 约束重述：只处理真正新增的期；发布只 push 本任务文件；影射类必写边界声明；字幕错字必校对；三步验证全过才算上线。

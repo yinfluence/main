@@ -146,6 +146,21 @@ watch_agent() {
   return 0
 }
 
+# 独立复核线上：yinfluence.org 的 site.json 必须与本地 HEAD 里 committed 的版本
+# 逐字节一致（md5）。不信 agent 的任何输出。轮询 6 次给 CDN 传播时间。
+# 用 git show 而不是工作区文件：agent 失败时工作区可能残留脏改动。
+verify_online() {
+  local LOCAL_MD5 ONLINE_MD5 i
+  LOCAL_MD5=$(cd "$WEB" && git show HEAD:docs/data/site.json 2>/dev/null | md5 -q) || return 1
+  for i in 1 2 3 4 5 6; do
+    ONLINE_MD5=$(curl -s --max-time 15 "https://yinfluence.org/data/site.json?nc=$(date +%s)$RANDOM" | md5 -q)
+    [[ "$ONLINE_MD5" == "$LOCAL_MD5" ]] && return 0
+    sleep 20
+  done
+  log "线上复核失败：线上 md5 $ONLINE_MD5 != 本地 HEAD $LOCAL_MD5"
+  return 1
+}
+
 # 一次扫描 + 发现新期则整理。
 # 返回 0=已整理上线，10=无新期，20=整理失败但可以重试，其他=扫描出错
 scan_once() {
@@ -171,9 +186,17 @@ scan_once() {
       if [[ $ACODE -eq 0 ]] && tail -n +$((BEFORE + 1)) "$LOG" | grep -q "SUMMARY:"; then
         local SUM
         SUM=$(tail -n +$((BEFORE + 1)) "$LOG" | grep "SUMMARY:" | tail -1 | sed 's/^.*SUMMARY: *//')
-        log "整理完成：$SUM"
-        notify "颖响力网页 ✅" "已自动上线：$SUM" "Glass"
-        return 0
+        # SUMMARY 只是 LLM 的自我报告，不作数。2026-08-03 事故：Cloudflare 断链，
+        # agent push 完就报"已上线"，线上其实还是旧版。上线判定只认独立复核：
+        # 线上 site.json 内容必须与本地 committed 版本逐字节一致。
+        if verify_online; then
+          log "整理完成且线上复核通过：$SUM"
+          notify "颖响力网页 ✅" "已自动上线：$SUM" "Glass"
+          return 0
+        fi
+        log "agent 报告成功（$SUM）但线上复核失败——按失败处理，走重试"
+        notify "颖响力网页 ⚠️" "agent 自称上线但线上未更新，准备重试" "Basso"
+        return 20
       fi
       if [[ $ACODE -ne 124 ]]; then
         # 124 是 watch_agent 杀的，那条路已经记过状态了，别重复记
