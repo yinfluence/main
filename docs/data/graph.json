@@ -2,13 +2,13 @@
   "meta": {
     "title": "颖响力知识图谱",
     "subtitle": "节目、概念、模型、人物、主题之间的可视化连接网络",
-    "nodeCount": 663,
-    "linkCount": 2447,
+    "nodeCount": 664,
+    "linkCount": 2460,
     "typeCounts": {
       "model": 77,
       "live": 29,
       "theme": 92,
-      "episode": 192,
+      "episode": 193,
       "concept": 208,
       "person": 65
     }
@@ -763,6 +763,17 @@
       "degree": 16
     },
     {
+      "id": "theme:rule-of-law-boundaries-and-social-trust",
+      "key": "rule-of-law-boundaries-and-social-trust",
+      "label": "法治边界与社会信任",
+      "fullLabel": "法治边界与社会信任",
+      "type": "theme",
+      "route": "themes/rule-of-law-boundaries-and-social-trust",
+      "summary": "关注法律灰区如何影响公众的善意、风险感和彼此信任。",
+      "status": null,
+      "degree": 16
+    },
+    {
       "id": "theme:narrative-speculation-and-retail-traps",
       "key": "narrative-speculation-and-retail-traps",
       "label": "投资叙事与散户陷阱",
@@ -858,17 +869,6 @@
       "type": "model",
       "route": "models/proxy-containment-ring",
       "summary": "代理围堵环解释大国如何通过盟友、代理人和通道控制分摊成本、封堵对手。",
-      "status": null,
-      "degree": 15
-    },
-    {
-      "id": "theme:rule-of-law-boundaries-and-social-trust",
-      "key": "rule-of-law-boundaries-and-social-trust",
-      "label": "法治边界与社会信任",
-      "fullLabel": "法治边界与社会信任",
-      "type": "theme",
-      "route": "themes/rule-of-law-boundaries-and-social-trust",
-      "summary": "关注法律灰区如何影响公众的善意、风险感和彼此信任。",
       "status": null,
       "degree": 15
     },
@@ -1210,6 +1210,17 @@
       "type": "episode",
       "route": "episodes/EP187",
       "summary": "某车企公布半年预亏 15 到 18 亿。旗下某界交付量却涨 10%，还霸着豪华 SUV 销冠。卖得越多，亏得越多。沿用笑傲江湖那套化名，说的是华山派与剑宗小厮的合作模式。\n\n硬件采购、技术授权费、渠道服务费是三笔前置供奉。单车 13 到 14 万先进气宗的兜。收益挂销量，与车企盈亏脱钩。重资产、价格战、出海受限的风险全焊在小厮身上。这不是苹果代工模式，更像苏联与加盟共和国。依附型车企是制造业小老板的缩影。",
+      "status": "curated",
+      "degree": 13
+    },
+    {
+      "id": "episode:EP193",
+      "key": "EP193",
+      "label": "EP193",
+      "fullLabel": "EP193 · 贫困生不配喝9.9元的咖啡？聊聊助学金认定背后的人性bug与制度漏洞",
+      "type": "episode",
+      "route": "episodes/EP193",
+      "summary": "一个女生拿了贫困补贴，每天早晨喝一杯 9.9 元的瑞幸，被人连着取证三十多天之后举报骗补。节目不认这套算法。每月三百块的咖啡不构成奢侈消费，用苦行僧的样子去框贫困生，是拿刻板印象绑架弱势群体，还会逼出更多虚假。私下盯梢取证这件事本身也不值得表扬，它先拆掉的是人和人之间的信任。真正该问的是审核机制，福利部门只核表格合不合规，不去看这个家庭是不是真的出了状况。福利如果只保一个不饿死，那就还停在施粥的年代。",
       "status": "curated",
       "degree": 13
     },
@@ -2171,6 +2182,17 @@
       "degree": 8
     },
     {
+      "id": "model:screening-machine",
+      "key": "screening-machine",
+      "label": "筛选机器模型",
+      "fullLabel": "筛选机器模型",
+      "type": "model",
+      "route": "models/screening-machine",
+      "summary": "教育和组织把人当作待筛选样本，而非待生长的人来处理的系统逻辑。",
+      "status": null,
+      "degree": 8
+    },
+    {
       "id": "model:identity-stratification",
       "key": "identity-stratification",
       "label": "身份型分层",
@@ -2200,6 +2222,17 @@
       "type": "theme",
       "route": "themes/ev-safety-and-consumer-testing",
       "summary": "讨论新能源车与相关电池系统如何把安全验证不足的代价，转移到真实用户和真实事故里。",
+      "status": null,
+      "degree": 8
+    },
+    {
+      "id": "model:institutional-formalism-spiral",
+      "key": "institutional-formalism-spiral",
+      "label": "制度形式主义螺旋",
+      "fullLabel": "制度形式主义螺旋",
+      "type": "model",
+      "route": "models/institutional-formalism-spiral",
+      "summary": "组织一旦开始依赖仪式、排名、头衔和场面来证明自己有效，就会不断加码这些外壳，同时越来越失去真正解决问题的能力。",
       "status": null,
       "degree": 8
     },
@@ -2622,13 +2655,13 @@
       "degree": 7
     },
     {
-      "id": "model:screening-machine",
-      "key": "screening-machine",
-      "label": "筛选机器模型",
-      "fullLabel": "筛选机器模型",
-      "type": "model",
-      "route": "models/screening-machine",
-      "summary": "教育和组织把人当作待筛选样本，而非待生长的人来处理的系统逻辑。",
+      "id": "theme:human-value-and-state-credit",
+      "key": "human-value-and-state-credit",
+      "label": "人的价值与国家信用",
+      "fullLabel": "人的价值与国家信用",
+      "type": "theme",
+      "route": "themes/human-value-and-state-credit",
+      "summary": "讨论国家究竟把个体视为成本、工具，还是视为必须兑现承诺的对象。",
       "status": null,
       "degree": 7
     },
@@ -2728,17 +2761,6 @@
       "type": "concept",
       "route": "concepts/expectation-selling",
       "summary": "通过出售可理解、可规划、可购买的未来想象，中间人获得影响力和收益。",
-      "status": null,
-      "degree": 7
-    },
-    {
-      "id": "model:institutional-formalism-spiral",
-      "key": "institutional-formalism-spiral",
-      "label": "制度形式主义螺旋",
-      "fullLabel": "制度形式主义螺旋",
-      "type": "model",
-      "route": "models/institutional-formalism-spiral",
-      "summary": "组织一旦开始依赖仪式、排名、头衔和场面来证明自己有效，就会不断加码这些外壳，同时越来越失去真正解决问题的能力。",
       "status": null,
       "degree": 7
     },
@@ -3047,17 +3069,6 @@
       "type": "person",
       "route": "people/lee-hsien-loong",
       "summary": "李显龙是新加坡前总理、现任国务资政，节目借他理解新加坡务实外交、国家身份边界和小国平衡逻辑。",
-      "status": null,
-      "degree": 6
-    },
-    {
-      "id": "theme:human-value-and-state-credit",
-      "key": "human-value-and-state-credit",
-      "label": "人的价值与国家信用",
-      "fullLabel": "人的价值与国家信用",
-      "type": "theme",
-      "route": "themes/human-value-and-state-credit",
-      "summary": "讨论国家究竟把个体视为成本、工具，还是视为必须兑现承诺的对象。",
       "status": null,
       "degree": 6
     },
@@ -3487,6 +3498,17 @@
       "type": "theme",
       "route": "themes/homeland-and-civic-belonging",
       "summary": "讨论血缘故乡、文化记忆与现代公民认同之间的边界如何被重新划分。",
+      "status": null,
+      "degree": 5
+    },
+    {
+      "id": "model:human-contract-model",
+      "key": "human-contract-model",
+      "label": "国家信用契约模型",
+      "fullLabel": "国家信用契约模型",
+      "type": "model",
+      "route": "models/human-contract-model",
+      "summary": "国家信用契约模型解释国家对个体生命的兜底能力如何转化为长期制度信用。",
       "status": null,
       "degree": 5
     },
@@ -4118,13 +4140,13 @@
       "degree": 4
     },
     {
-      "id": "model:human-contract-model",
-      "key": "human-contract-model",
-      "label": "国家信用契约模型",
-      "fullLabel": "国家信用契约模型",
-      "type": "model",
-      "route": "models/human-contract-model",
-      "summary": "国家信用契约模型解释国家对个体生命的兜底能力如何转化为长期制度信用。",
+      "id": "concept:compliance-floor",
+      "key": "compliance-floor",
+      "label": "合规及格线",
+      "fullLabel": "合规及格线",
+      "type": "concept",
+      "route": "concepts/compliance-floor",
+      "summary": "合规只是法律强制的最低底线，不等于优质；当消费者为更高品质付溢价，仅做到合规就是变相缩水。",
       "status": null,
       "degree": 4
     },
@@ -4624,6 +4646,17 @@
       "degree": 3
     },
     {
+      "id": "concept:moral-interpretive-authority",
+      "key": "moral-interpretive-authority",
+      "label": "道德解释权",
+      "fullLabel": "道德解释权",
+      "type": "concept",
+      "route": "concepts/moral-interpretive-authority",
+      "summary": "一个群体自认有资格替他人和外部事物定义意义、判定对错，把别人收编进自己的叙事里。",
+      "status": null,
+      "degree": 3
+    },
+    {
       "id": "theme:price-war-and-precision-competition",
       "key": "price-war-and-precision-competition",
       "label": "低价竞争与精准打击",
@@ -4712,6 +4745,17 @@
       "degree": 3
     },
     {
+      "id": "theme:public-service-downgrading",
+      "key": "public-service-downgrading",
+      "label": "公共服务降标与治理后果",
+      "fullLabel": "公共服务降标与治理后果",
+      "type": "theme",
+      "route": "themes/public-service-downgrading",
+      "summary": "当财政和治理优先考虑控费，公共服务最常见的结果就是标准被整体压低。",
+      "status": null,
+      "degree": 3
+    },
+    {
       "id": "theme:public-space-and-civic-maturity",
       "key": "public-space-and-civic-maturity",
       "label": "公共空间与公民成熟",
@@ -4785,17 +4829,6 @@
       "type": "model",
       "route": "models/regulatory-cost-arbitrage",
       "summary": "当同一市场存在多条监管路径，低合规成本路径会获得更高试错频率和更强替代能力。",
-      "status": null,
-      "degree": 3
-    },
-    {
-      "id": "concept:compliance-floor",
-      "key": "compliance-floor",
-      "label": "合规及格线",
-      "fullLabel": "合规及格线",
-      "type": "concept",
-      "route": "concepts/compliance-floor",
-      "summary": "合规只是法律强制的最低底线，不等于优质；当消费者为更高品质付溢价，仅做到合规就是变相缩水。",
       "status": null,
       "degree": 3
     },
@@ -4972,6 +5005,17 @@
       "type": "theme",
       "route": "themes/intimate-relationships-and-asset-repricing",
       "summary": "讨论伴侣关系如何随着财富、权力和人生阶段变化，从情感叙事走向现实协商。",
+      "status": null,
+      "degree": 3
+    },
+    {
+      "id": "concept:universal-provision",
+      "key": "universal-provision",
+      "label": "全民普惠",
+      "fullLabel": "全民普惠",
+      "type": "concept",
+      "route": "concepts/universal-provision",
+      "summary": "把一项关键公共品做成全体国民都能享受，而不是按阶层分配的治理选择。",
       "status": null,
       "degree": 3
     },
@@ -5438,17 +5482,6 @@
       "degree": 2
     },
     {
-      "id": "concept:moral-interpretive-authority",
-      "key": "moral-interpretive-authority",
-      "label": "道德解释权",
-      "fullLabel": "道德解释权",
-      "type": "concept",
-      "route": "concepts/moral-interpretive-authority",
-      "summary": "一个群体自认有资格替他人和外部事物定义意义、判定对错，把别人收编进自己的叙事里。",
-      "status": null,
-      "degree": 2
-    },
-    {
       "id": "concept:prominence-amplification",
       "key": "prominence-amplification",
       "label": "顶流放大镜",
@@ -5478,17 +5511,6 @@
       "type": "concept",
       "route": "concepts/welfare-ratchet",
       "summary": "补贴和福利只能加不能减：经济做好选民不加分，砍福利一定下台，政客被锁进透支未来的短期维稳。",
-      "status": null,
-      "degree": 2
-    },
-    {
-      "id": "theme:public-service-downgrading",
-      "key": "public-service-downgrading",
-      "label": "公共服务降标与治理后果",
-      "fullLabel": "公共服务降标与治理后果",
-      "type": "theme",
-      "route": "themes/public-service-downgrading",
-      "summary": "当财政和治理优先考虑控费，公共服务最常见的结果就是标准被整体压低。",
       "status": null,
       "degree": 2
     },
@@ -5581,6 +5603,17 @@
       "degree": 2
     },
     {
+      "id": "concept:envy-driven-smear",
+      "key": "envy-driven-smear",
+      "label": "嫉妒驱动的污名化",
+      "fullLabel": "嫉妒驱动的污名化",
+      "type": "concept",
+      "route": "concepts/envy-driven-smear",
+      "summary": "嫉妒驱动的污名化指因为追不上、得不到，就转而用谣言和贬低去摧毁对方，从而获得心理平衡。",
+      "status": null,
+      "degree": 2
+    },
+    {
       "id": "concept:inheritance-supply-shock",
       "key": "inheritance-supply-shock",
       "label": "继承供给冲击",
@@ -5603,6 +5636,17 @@
       "degree": 2
     },
     {
+      "id": "concept:downgrade-equality",
+      "key": "downgrade-equality",
+      "label": "降标式公平",
+      "fullLabel": "降标式公平",
+      "type": "concept",
+      "route": "concepts/downgrade-equality",
+      "summary": "用整体降标换取覆盖面和成本控制时，公平可能变成低标准统一。",
+      "status": null,
+      "degree": 2
+    },
+    {
       "id": "concept:succession-vacuum",
       "key": "succession-vacuum",
       "label": "接班人真空",
@@ -5621,6 +5665,17 @@
       "type": "concept",
       "route": "concepts/audience-retargeting",
       "summary": "品牌在原有用户见顶后，改写目标受众、审美和叙事，以寻找新的增长来源。",
+      "status": null,
+      "degree": 2
+    },
+    {
+      "id": "concept:aestheticized-precarity",
+      "key": "aestheticized-precarity",
+      "label": "苦难审美化",
+      "fullLabel": "苦难审美化",
+      "type": "concept",
+      "route": "concepts/aestheticized-precarity",
+      "summary": "把危险、疲惫和不稳定劳动拍成自由、松弛和好看生活，是对苦难的审美化处理。",
       "status": null,
       "degree": 2
     },
@@ -5654,6 +5709,17 @@
       "type": "theme",
       "route": "themes/travel-politics-and-border-screening",
       "summary": "讨论免签、遣返、旅游安全和政治叙事如何改变普通人对跨境旅行的判断。",
+      "status": null,
+      "degree": 2
+    },
+    {
+      "id": "theme:cross-disciplinary-education-and-report-culture",
+      "key": "cross-disciplinary-education-and-report-culture",
+      "label": "跨学科教育与举报文化",
+      "fullLabel": "跨学科教育与举报文化",
+      "type": "theme",
+      "route": "themes/cross-disciplinary-education-and-report-culture",
+      "summary": "关注大学课堂为何越来越难容纳真正有启发性的跨学科教学。",
       "status": null,
       "degree": 2
     },
@@ -5753,17 +5819,6 @@
       "type": "concept",
       "route": "concepts/channel-profit-reservoir",
       "summary": "渠道利润蓄水池指企业把经销商、库存、回款和确认节奏做成可调节利润的缓冲层。",
-      "status": null,
-      "degree": 2
-    },
-    {
-      "id": "concept:universal-provision",
-      "key": "universal-provision",
-      "label": "全民普惠",
-      "fullLabel": "全民普惠",
-      "type": "concept",
-      "route": "concepts/universal-provision",
-      "summary": "把一项关键公共品做成全体国民都能享受，而不是按阶层分配的治理选择。",
       "status": null,
       "degree": 2
     },
@@ -6428,17 +6483,6 @@
       "degree": 1
     },
     {
-      "id": "concept:envy-driven-smear",
-      "key": "envy-driven-smear",
-      "label": "嫉妒驱动的污名化",
-      "fullLabel": "嫉妒驱动的污名化",
-      "type": "concept",
-      "route": "concepts/envy-driven-smear",
-      "summary": "嫉妒驱动的污名化指因为追不上、得不到，就转而用谣言和贬低去摧毁对方，从而获得心理平衡。",
-      "status": null,
-      "degree": 1
-    },
-    {
       "id": "concept:skill-mismatch",
       "key": "skill-mismatch",
       "label": "技能错位",
@@ -6457,17 +6501,6 @@
       "type": "model",
       "route": "models/inheritance-distortion-model",
       "summary": "继承扭曲模型解释财富、关系和人格问题一起传递时，继承会变成复制伤害而非接续。",
-      "status": null,
-      "degree": 1
-    },
-    {
-      "id": "concept:downgrade-equality",
-      "key": "downgrade-equality",
-      "label": "降标式公平",
-      "fullLabel": "降标式公平",
-      "type": "concept",
-      "route": "concepts/downgrade-equality",
-      "summary": "用整体降标换取覆盖面和成本控制时，公平可能变成低标准统一。",
       "status": null,
       "degree": 1
     },
@@ -6516,17 +6549,6 @@
       "degree": 1
     },
     {
-      "id": "concept:aestheticized-precarity",
-      "key": "aestheticized-precarity",
-      "label": "苦难审美化",
-      "fullLabel": "苦难审美化",
-      "type": "concept",
-      "route": "concepts/aestheticized-precarity",
-      "summary": "把危险、疲惫和不稳定劳动拍成自由、松弛和好看生活，是对苦难的审美化处理。",
-      "status": null,
-      "degree": 1
-    },
-    {
       "id": "concept:cross-disciplinary-window",
       "key": "cross-disciplinary-window",
       "label": "跨学科窗口",
@@ -6534,17 +6556,6 @@
       "type": "concept",
       "route": "concepts/cross-disciplinary-window",
       "summary": "好课堂能打开学科之间的通道，让学生看到真实问题如何跨越单一答案框架。",
-      "status": null,
-      "degree": 1
-    },
-    {
-      "id": "theme:cross-disciplinary-education-and-report-culture",
-      "key": "cross-disciplinary-education-and-report-culture",
-      "label": "跨学科教育与举报文化",
-      "fullLabel": "跨学科教育与举报文化",
-      "type": "theme",
-      "route": "themes/cross-disciplinary-education-and-report-culture",
-      "summary": "关注大学课堂为何越来越难容纳真正有启发性的跨学科教学。",
       "status": null,
       "degree": 1
     },
@@ -14707,6 +14718,71 @@
     {
       "source": "episode:EP192",
       "target": "theme:planned-systems-and-innovation",
+      "kind": "episode-theme"
+    },
+    {
+      "source": "episode:EP193",
+      "target": "concept:aestheticized-precarity",
+      "kind": "episode-concept"
+    },
+    {
+      "source": "episode:EP193",
+      "target": "concept:moral-interpretive-authority",
+      "kind": "episode-concept"
+    },
+    {
+      "source": "episode:EP193",
+      "target": "concept:compliance-floor",
+      "kind": "episode-concept"
+    },
+    {
+      "source": "episode:EP193",
+      "target": "concept:downgrade-equality",
+      "kind": "episode-concept"
+    },
+    {
+      "source": "episode:EP193",
+      "target": "concept:universal-provision",
+      "kind": "episode-concept"
+    },
+    {
+      "source": "episode:EP193",
+      "target": "concept:envy-driven-smear",
+      "kind": "episode-concept"
+    },
+    {
+      "source": "episode:EP193",
+      "target": "model:institutional-formalism-spiral",
+      "kind": "episode-model"
+    },
+    {
+      "source": "episode:EP193",
+      "target": "model:screening-machine",
+      "kind": "episode-model"
+    },
+    {
+      "source": "episode:EP193",
+      "target": "model:human-contract-model",
+      "kind": "episode-model"
+    },
+    {
+      "source": "episode:EP193",
+      "target": "theme:cross-disciplinary-education-and-report-culture",
+      "kind": "episode-theme"
+    },
+    {
+      "source": "episode:EP193",
+      "target": "theme:rule-of-law-boundaries-and-social-trust",
+      "kind": "episode-theme"
+    },
+    {
+      "source": "episode:EP193",
+      "target": "theme:human-value-and-state-credit",
+      "kind": "episode-theme"
+    },
+    {
+      "source": "episode:EP193",
+      "target": "theme:public-service-downgrading",
       "kind": "episode-theme"
     },
     {
