@@ -54,7 +54,7 @@ for i in 1 2 3 4 5 6; do
   echo "  第 $i 次检查：线上内容与本地不一致，20 秒后重试..."
   sleep 20
 done
-[ "$ONLINE_MD5" = "$LOCAL_MD5" ] || fail "等了 2 分钟，线上 site.json 内容仍与本地不一致（md5 $ONLINE_MD5 != $LOCAL_MD5）"
+[ "$ONLINE_MD5" = "$LOCAL_MD5" ] || fail "等了 2 分钟，线上 site.json 内容仍与本地不一致（md5 ${ONLINE_MD5} != ${LOCAL_MD5}）"
 
 echo ""
 echo "✅ PUBLISH OK: 线上 yinfluence.org 已确认 $LOCAL_EPS 期（md5 一致），commit $LOCAL_HEAD"

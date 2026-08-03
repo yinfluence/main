@@ -194,21 +194,21 @@ scan_once() {
           notify "颖响力网页 ✅" "已自动上线：$SUM" "Glass"
           return 0
         fi
-        log "agent 报告成功（$SUM）但线上复核失败——按失败处理，走重试"
+        log "agent 报告成功（${SUM}）但线上复核失败——按失败处理，走重试"
         notify "颖响力网页 ⚠️" "agent 自称上线但线上未更新，准备重试" "Basso"
         return 20
       fi
       if [[ $ACODE -ne 124 ]]; then
         # 124 是 watch_agent 杀的，那条路已经记过状态了，别重复记
-        log "整理未确认成功（claude code=$ACODE，本次输出里没有 SUMMARY 标记）"
-        notify "颖响力网页 ⚠️" "整理未完成（code=$ACODE），准备重试" "Basso"
+        log "整理未确认成功（claude code=${ACODE}，本次输出里没有 SUMMARY 标记）"
+        notify "颖响力网页 ⚠️" "整理未完成（code=${ACODE}），准备重试" "Basso"
       fi
       return 20   # 交给调用方决定要不要重试。草稿还在盘上，重扫会重新拾起
       ;;
     10) return 10 ;;
     *)
-      log "扫描出错 code=$CODE（cookie 过期 / 充电失效 / 风控 / 网络？）"
-      notify "颖响力网页 ⚠️" "扫描失败 code=$CODE，请看 logs/" "Basso"
+      log "扫描出错 code=${CODE}（cookie 过期 / 充电失效 / 风控 / 网络？）"
+      notify "颖响力网页 ⚠️" "扫描失败 code=${CODE}，请看 logs/" "Basso"
       return $CODE
       ;;
   esac
@@ -233,7 +233,7 @@ scan_lives() {
       ;;
     10) log "无新直播" ;;
     *)  log "直播扫描出错 code=$CODE"
-        notify "颖响力直播 ⚠️" "直播扫描失败 code=$CODE，请看 logs/" "Basso" ;;
+        notify "颖响力直播 ⚠️" "直播扫描失败 code=${CODE}，请看 logs/" "Basso" ;;
   esac
   return 0
 }
