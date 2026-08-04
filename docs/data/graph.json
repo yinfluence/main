@@ -2,14 +2,14 @@
   "meta": {
     "title": "颖响力知识图谱",
     "subtitle": "节目、概念、模型、人物、主题之间的可视化连接网络",
-    "nodeCount": 664,
-    "linkCount": 2460,
+    "nodeCount": 668,
+    "linkCount": 2469,
     "typeCounts": {
-      "model": 77,
+      "model": 78,
       "live": 29,
       "theme": 92,
-      "episode": 193,
-      "concept": 208,
+      "episode": 194,
+      "concept": 210,
       "person": 65
     }
   },
@@ -23,7 +23,7 @@
       "route": "models/risk-transfer-chain",
       "summary": "系统不会立刻吞下风险，而是先沿着银行、企业、票据、供应链和普通人之间不断转手、延后和下沉。",
       "status": null,
-      "degree": 44
+      "degree": 45
     },
     {
       "id": "live:LIVE002",
@@ -356,6 +356,17 @@
       "degree": 25
     },
     {
+      "id": "concept:hidden-debt",
+      "key": "hidden-debt",
+      "label": "隐形债务",
+      "fullLabel": "隐形债务",
+      "type": "concept",
+      "route": "concepts/hidden-debt",
+      "summary": "表外、体外和合作链条里的债务不在显性报表中充分呈现，却会在危机时重新压回主体。",
+      "status": null,
+      "degree": 24
+    },
+    {
       "id": "theme:middle-class-descent-and-stratification",
       "key": "middle-class-descent-and-stratification",
       "label": "中产下坠与分层社会",
@@ -385,17 +396,6 @@
       "type": "theme",
       "route": "themes/dollar-system-and-gray-trade",
       "summary": "讨论石油美元的真实脆弱点，究竟藏在公开统计之外的哪些灰色交易链条里。",
-      "status": null,
-      "degree": 23
-    },
-    {
-      "id": "concept:hidden-debt",
-      "key": "hidden-debt",
-      "label": "隐形债务",
-      "fullLabel": "隐形债务",
-      "type": "concept",
-      "route": "concepts/hidden-debt",
-      "summary": "表外、体外和合作链条里的债务不在显性报表中充分呈现，却会在危机时重新压回主体。",
       "status": null,
       "degree": 23
     },
@@ -873,6 +873,17 @@
       "degree": 15
     },
     {
+      "id": "theme:local-fiscal-stress-and-hidden-debt",
+      "key": "local-fiscal-stress-and-hidden-debt",
+      "label": "地方财政与隐性债务",
+      "fullLabel": "地方财政与隐性债务",
+      "type": "theme",
+      "route": "themes/local-fiscal-stress-and-hidden-debt",
+      "summary": "地方财政吃紧后，系统会通过更复杂的融资、资产包装和风险转移来维持运转。",
+      "status": null,
+      "degree": 15
+    },
+    {
       "id": "concept:gray-oil-network",
       "key": "gray-oil-network",
       "label": "灰色石油网络",
@@ -926,17 +937,6 @@
       "summary": "梁文锋一场四小时的内部闭门会文字稿被放了出来。他是量化出身，不靠情怀也不屑对投资人吹牛，这份稿子的可信度比一般的投资人会议高。稿子里最硬的三处，一是算力的账，四张华山派的卡才抵一张英伟达 B 卡，手里一万六千张只折合四五千张，远远不够；二是不够之后只能走别的路子，灰色算力贸易第一次有了明确口径；三是国内七八家都在做同一件事，卡和算力中心的需求被一起做大，这条产业链跟当年的电车长得一模一样。最后问的是这场泄露为什么发生在今天，答案指向月之暗面爆火之后老大地位的松动。",
       "status": "curated",
       "degree": 15
-    },
-    {
-      "id": "theme:local-fiscal-stress-and-hidden-debt",
-      "key": "local-fiscal-stress-and-hidden-debt",
-      "label": "地方财政与隐性债务",
-      "fullLabel": "地方财政与隐性债务",
-      "type": "theme",
-      "route": "themes/local-fiscal-stress-and-hidden-debt",
-      "summary": "地方财政吃紧后，系统会通过更复杂的融资、资产包装和风险转移来维持运转。",
-      "status": null,
-      "degree": 14
     },
     {
       "id": "theme:local-government-financialization",
@@ -2072,6 +2072,17 @@
       "degree": 9
     },
     {
+      "id": "episode:EP194",
+      "key": "EP194",
+      "label": "EP194",
+      "fullLabel": "EP194 · 银行重启五年期存单真相：不是利率要涨，是全民化债，是一场悄无声息的财富转移",
+      "type": "episode",
+      "route": "episodes/EP194",
+      "summary": "工农中建四大行把停了近半年的五年期大额存单重新上架，国有大行统一给到 1.6%。市面把它读成银行提前锁定成本、看好后续加息。这个逻辑正好搞反了。只有预判利率长期往下走，才会急着把当前的资金成本锁死。三年期 1.5%、五年期 1.6%，多存两年只多五个基点，等于想锁住这笔钱五年，又不肯为那两年付钱。往下还有两层。储户拿 1.6% 的利息，银行拿这笔钱去置换地方债，化债的成本摊到了每个存钱的人头上。1.6 到 1.8 这个数字还是一把尺子，任何号称稳定四个点以上的产品都要先拿它量一遍。",
+      "status": "curated",
+      "degree": 9
+    },
+    {
       "id": "concept:performative-innovation",
       "key": "performative-innovation",
       "label": "表演式创新",
@@ -2200,6 +2211,17 @@
       "type": "model",
       "route": "models/identity-stratification",
       "summary": "身份型分层说明阶层排序从收入和资产，转向编制、合规位置、圈层资源和稳定预期。",
+      "status": null,
+      "degree": 8
+    },
+    {
+      "id": "theme:time-horizon-and-foresight",
+      "key": "time-horizon-and-foresight",
+      "label": "时间尺度与资产前瞻",
+      "fullLabel": "时间尺度与资产前瞻",
+      "type": "theme",
+      "route": "themes/time-horizon-and-foresight",
+      "summary": "讨论人物与企业如何在不同周期里提前摆放自己，而不是等结果发生后再被动解释。",
       "status": null,
       "degree": 8
     },
@@ -2600,6 +2622,17 @@
       "degree": 7
     },
     {
+      "id": "theme:financial-content-and-long-termism",
+      "key": "financial-content-and-long-termism",
+      "label": "财经表达与长期主义",
+      "fullLabel": "财经表达与长期主义",
+      "type": "theme",
+      "route": "themes/financial-content-and-long-termism",
+      "summary": "真正有价值的财经内容应该帮助人建立周期、战略和时机意识，而不是只卖每天的情绪波动。",
+      "status": null,
+      "degree": 7
+    },
+    {
       "id": "concept:price-war-trap",
       "key": "price-war-trap",
       "label": "低价竞争陷阱",
@@ -2662,17 +2695,6 @@
       "type": "theme",
       "route": "themes/human-value-and-state-credit",
       "summary": "讨论国家究竟把个体视为成本、工具，还是视为必须兑现承诺的对象。",
-      "status": null,
-      "degree": 7
-    },
-    {
-      "id": "theme:time-horizon-and-foresight",
-      "key": "time-horizon-and-foresight",
-      "label": "时间尺度与资产前瞻",
-      "fullLabel": "时间尺度与资产前瞻",
-      "type": "theme",
-      "route": "themes/time-horizon-and-foresight",
-      "summary": "讨论人物与企业如何在不同周期里提前摆放自己，而不是等结果发生后再被动解释。",
       "status": null,
       "degree": 7
     },
@@ -2961,17 +2983,6 @@
       "summary": "3 月 13 号地方财政补贴负面清单出台。地方政府不能再随意发补贴、搞税收返还。舆论叫好，称反内卷。这里不站这一边，镜头拉到地方十几年变形的玩法。从修路盖楼拼税收的招商，变成一亿财政做基金撬几百亿项目。或者用补贴绑销售，把估值乘几十倍冲资本市场退出。地方早已不是服务者，而是隐形合伙人。经营好就共赢，不好就接盘烂尾，电车是最典型案例。中央收走的是撬资本故事的启动权。但抓与放的窗口可能从未真正出现。",
       "status": "curated",
       "degree": 7
-    },
-    {
-      "id": "theme:financial-content-and-long-termism",
-      "key": "financial-content-and-long-termism",
-      "label": "财经表达与长期主义",
-      "fullLabel": "财经表达与长期主义",
-      "type": "theme",
-      "route": "themes/financial-content-and-long-termism",
-      "summary": "真正有价值的财经内容应该帮助人建立周期、战略和时机意识，而不是只卖每天的情绪波动。",
-      "status": null,
-      "degree": 6
     },
     {
       "id": "theme:bullshit-politics-and-historical-narratives",
@@ -4305,6 +4316,17 @@
       "degree": 4
     },
     {
+      "id": "theme:cash-optionality-and-liquidity-anxiety",
+      "key": "cash-optionality-and-liquidity-anxiety",
+      "label": "现金为王与流动性焦虑",
+      "fullLabel": "现金为王与流动性焦虑",
+      "type": "theme",
+      "route": "themes/cash-optionality-and-liquidity-anxiety",
+      "summary": "在高波动和低信任时期，流动性比账面资产更能决定一个人和机构的安全感。",
+      "status": null,
+      "degree": 4
+    },
+    {
       "id": "concept:information-cocoon-breach",
       "key": "information-cocoon-breach",
       "label": "信息茧房破口",
@@ -5126,17 +5148,6 @@
       "type": "concept",
       "route": "concepts/system-rollback",
       "summary": "系统回滚指社会从增长、能力和市场规则导向，退回到安稳、身份和存量兜底导向。",
-      "status": null,
-      "degree": 3
-    },
-    {
-      "id": "theme:cash-optionality-and-liquidity-anxiety",
-      "key": "cash-optionality-and-liquidity-anxiety",
-      "label": "现金为王与流动性焦虑",
-      "fullLabel": "现金为王与流动性焦虑",
-      "type": "theme",
-      "route": "themes/cash-optionality-and-liquidity-anxiety",
-      "summary": "在高波动和低信任时期，流动性比账面资产更能决定一个人和机构的安全感。",
       "status": null,
       "degree": 3
     },
@@ -6274,6 +6285,17 @@
       "degree": 1
     },
     {
+      "id": "concept:deposit-funded-debt-rollover",
+      "key": "deposit-funded-debt-rollover",
+      "label": "存款补贴化债",
+      "fullLabel": "存款补贴化债",
+      "type": "concept",
+      "route": "concepts/deposit-funded-debt-rollover",
+      "summary": "居民的低息存款被银行拿去置换地方的高息旧债，化债省下来的利息，实际由存钱的人用被压低的收益承担。",
+      "status": null,
+      "degree": 1
+    },
+    {
       "id": "concept:intergenerational-resentment",
       "key": "intergenerational-resentment",
       "label": "代际怨恨继承",
@@ -6369,6 +6391,17 @@
       "type": "person",
       "route": "people/mattias-grafstrom",
       "summary": "格拉夫斯特伦是瑞典/荷兰背景的足球行政人物、FIFA 现任秘书长(2024 年正式任),节目里他是 FIFA 在华推广动作的执行代表。",
+      "status": null,
+      "degree": 1
+    },
+    {
+      "id": "model:follower-advantage-collapse",
+      "key": "follower-advantage-collapse",
+      "label": "跟随者失效",
+      "fullLabel": "跟随者失效",
+      "type": "model",
+      "route": "models/follower-advantage-collapse",
+      "summary": "增量时代跟着别人走最划算，进入存量博弈之后，同一批跟随者从红利分享者变成成本承担者。",
       "status": null,
       "degree": 1
     },
@@ -6996,6 +7029,17 @@
       "type": "concept",
       "route": "concepts/cultural-plunder",
       "summary": "产权和语境被强行切断时，文化资产的损失不只是物件流转，而是文明私人基础被抽空。",
+      "status": null,
+      "degree": 1
+    },
+    {
+      "id": "concept:risk-free-anchor",
+      "key": "risk-free-anchor",
+      "label": "无风险利率锚",
+      "fullLabel": "无风险利率锚",
+      "type": "concept",
+      "route": "concepts/risk-free-anchor",
+      "summary": "本金几乎零风险的那个收益率，是市面上所有资产定价的起点，它一往下走，高收益产品的可疑程度就同步上升。",
       "status": null,
       "degree": 1
     },
@@ -14783,6 +14827,51 @@
     {
       "source": "episode:EP193",
       "target": "theme:public-service-downgrading",
+      "kind": "episode-theme"
+    },
+    {
+      "source": "episode:EP194",
+      "target": "concept:hidden-debt",
+      "kind": "episode-concept"
+    },
+    {
+      "source": "episode:EP194",
+      "target": "concept:risk-free-anchor",
+      "kind": "episode-concept"
+    },
+    {
+      "source": "episode:EP194",
+      "target": "concept:deposit-funded-debt-rollover",
+      "kind": "episode-concept"
+    },
+    {
+      "source": "episode:EP194",
+      "target": "model:risk-transfer-chain",
+      "kind": "episode-model"
+    },
+    {
+      "source": "episode:EP194",
+      "target": "model:follower-advantage-collapse",
+      "kind": "episode-model"
+    },
+    {
+      "source": "episode:EP194",
+      "target": "theme:local-fiscal-stress-and-hidden-debt",
+      "kind": "episode-theme"
+    },
+    {
+      "source": "episode:EP194",
+      "target": "theme:cash-optionality-and-liquidity-anxiety",
+      "kind": "episode-theme"
+    },
+    {
+      "source": "episode:EP194",
+      "target": "theme:time-horizon-and-foresight",
+      "kind": "episode-theme"
+    },
+    {
+      "source": "episode:EP194",
+      "target": "theme:financial-content-and-long-termism",
       "kind": "episode-theme"
     },
     {
