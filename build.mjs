@@ -72,16 +72,15 @@ async function buildEpisodeCatalog() {
     if (!match) continue;
 
     const [, id, title] = match;
-    const sourcePath = path.join(rawDir, entry.name);
-    const sourceStat = await fs.stat(sourcePath);
+    // 不写 sourceFile / sourceMtime。这两个字段前端和脚本都不读，却会让本地和
+    // Cloudflare 的构建产物天然不同——raw 目录在 git 仓库外，CI 里读不到，
+    // 本地 192 期带这两个字段、线上 0 期带。发布的 md5 终点校验因此永远不可能通过。
     if (!episodes.has(id)) {
       episodes.set(id, {
         id,
         title,
         summary: '待整理',
-        curated: false,
-        sourceFile: entry.name,
-        sourceMtime: sourceStat.mtime.toISOString()
+        curated: false
       });
     }
   }

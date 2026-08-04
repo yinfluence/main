@@ -43,18 +43,24 @@ REMOTE_HEAD=$(git ls-remote yinfluence-origin main | cut -f1)
 # 5. 直推 Cloudflare（自动构建断链，deploy 是必做不是兜底）
 npx wrangler deploy || fail "wrangler deploy 出错（若报 not authenticated，让用户跑: ! npx wrangler login）"
 
-# 6. 终点验证：线上 site.json 的 md5 必须等于本地文件（内容级比对，期数只是展示）
-LOCAL_MD5=$(md5 -q docs/data/site.json) || fail "本地 site.json 读取失败"
+# 6. 终点验证：线上 site.json 的内容必须等于本地文件（期数只是展示）
+#    比对走 site-json-md5.py，它会先剔除 meta.updatedAt 再算 md5。线上那份由
+#    Cloudflare 拿到 commit 后自己构建，时间戳必然比本地晚，裸 md5 永远对不上。
+#    除这一个字段外所有内容照旧全比。
+LOCAL_MD5=$(./scripts/site-json-md5.py < docs/data/site.json) \
+  || fail "本地 site.json 读取或解析失败"
 LOCAL_EPS=$(python3 -c "import json; print(len(json.load(open('docs/data/site.json'))['episodes']))") \
   || fail "本地 site.json 解析失败"
 ONLINE_MD5=""
 for i in 1 2 3 4 5 6; do
-  ONLINE_MD5=$(curl -s --max-time 15 "https://yinfluence.org/data/site.json?nc=$(date +%s)$RANDOM" | md5 -q)
-  [ "$ONLINE_MD5" = "$LOCAL_MD5" ] && break
+  ONLINE_MD5=$(curl -s --max-time 15 "https://yinfluence.org/data/site.json?nc=$(date +%s)$RANDOM" \
+    | ./scripts/site-json-md5.py || true)
+  [ -n "$ONLINE_MD5" ] && [ "$ONLINE_MD5" = "$LOCAL_MD5" ] && break
   echo "  第 $i 次检查：线上内容与本地不一致，20 秒后重试..."
   sleep 20
 done
-[ "$ONLINE_MD5" = "$LOCAL_MD5" ] || fail "等了 2 分钟，线上 site.json 内容仍与本地不一致（md5 ${ONLINE_MD5} != ${LOCAL_MD5}）"
+[ -n "$ONLINE_MD5" ] && [ "$ONLINE_MD5" = "$LOCAL_MD5" ] \
+  || fail "等了 2 分钟，线上 site.json 内容仍与本地不一致（${ONLINE_MD5:-拉取失败} != ${LOCAL_MD5}）"
 
 echo ""
-echo "✅ PUBLISH OK: 线上 yinfluence.org 已确认 $LOCAL_EPS 期（md5 一致），commit $LOCAL_HEAD"
+echo "✅ PUBLISH OK: 线上 yinfluence.org 已确认 $LOCAL_EPS 期（内容一致），commit $LOCAL_HEAD"

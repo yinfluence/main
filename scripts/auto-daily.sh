@@ -113,26 +113,42 @@ kill_tree() {
   kill -KILL "$pid" 2>/dev/null
 }
 
-# 盯着整理进程：日志停止增长太久，或者总时长超上限，就杀掉并记状态。
+# 整理进程是不是还活着，看两个信号，任一在动就算活着：
+#   1. 日志字节增长
+#   2. content/ 和 docs/ 下最新的文件改动时间
+# 只看日志会必然误杀：claude -p 是 headless 模式，全程不往 stdout 写东西，只在
+# 最后一次性输出，而整理一期实际要 20 到 40 分钟。2026-07-31、08-03、08-04 连着
+# 三次都是这么被杀的，7-31 那次是靠人工每分钟往日志写一行心跳才兜过去的。
+# content/ 和 docs/ 里最新一次文件改动的 unix 时间。取最大值而不是数文件个数：
+# 计数会随时间窗口滑动而变化，真卡死时反倒像是有活动。
+agent_activity_stamp() {
+  find "$WEB/content" "$WEB/docs" -type f -exec stat -f '%m' {} + 2>/dev/null \
+    | sort -rn | head -1
+}
+
+# 盯着整理进程：两个活性信号都停太久，或者总时长超上限，就杀掉并记状态。
 # 返回 0=正常结束，1=被我们杀掉
 watch_agent() {
-  local pid=$1 start last_size last_change now size mins
+  local pid=$1 start last_size last_files last_change now size files mins
   start=$(date +%s)
   last_size=$(wc -c < "$LOG" 2>/dev/null || echo 0)
+  last_files=$(agent_activity_stamp)
   last_change=$start
   while kill -0 "$pid" 2>/dev/null; do
     sleep 30
     now=$(date +%s)
     size=$(wc -c < "$LOG" 2>/dev/null || echo 0)
-    if [[ "$size" != "$last_size" ]]; then
+    files=$(agent_activity_stamp)
+    if [[ "$size" != "$last_size" || "$files" != "$last_files" ]]; then
       last_size=$size
+      last_files=$files
       last_change=$now
     fi
     if (( now - last_change >= AGENT_STALL_LIMIT )); then
       mins=$(( (now - last_change) / 60 ))
-      log "整理卡死：日志 $mins 分钟没有新输出，杀掉 pid=$pid"
+      log "整理卡死：日志和文件改动都停了 $mins 分钟，杀掉 pid=$pid"
       kill_tree "$pid"
-      notify "颖响力网页 ⚠️" "整理卡死已终止（日志 $mins 分钟无输出）。草稿留在 content/episodes/，下次扫描会重新拾起" "Basso"
+      notify "颖响力网页 ⚠️" "整理卡死已终止（$mins 分钟没有任何写入）。草稿留在 content/episodes/，下次扫描会重新拾起" "Basso"
       return 1
     fi
     if (( now - start >= AGENT_HARD_LIMIT )); then
@@ -147,17 +163,20 @@ watch_agent() {
 }
 
 # 独立复核线上：yinfluence.org 的 site.json 必须与本地 HEAD 里 committed 的版本
-# 逐字节一致（md5）。不信 agent 的任何输出。轮询 6 次给 CDN 传播时间。
+# 内容一致。不信 agent 的任何输出。轮询 6 次给 CDN 传播时间。
 # 用 git show 而不是工作区文件：agent 失败时工作区可能残留脏改动。
+# 比对前剔除 meta.updatedAt：每次 build 都会刷新它，线上那份由 Cloudflare 自己
+# 构建，时间戳必然不同。除它以外所有字段照旧全比，严格程度不降。
 verify_online() {
   local LOCAL_MD5 ONLINE_MD5 i
-  LOCAL_MD5=$(cd "$WEB" && git show HEAD:docs/data/site.json 2>/dev/null | md5 -q) || return 1
+  LOCAL_MD5=$(cd "$WEB" && git show HEAD:docs/data/site.json 2>/dev/null | "$WEB/scripts/site-json-md5.py") || return 1
+  [[ -n "$LOCAL_MD5" ]] || return 1
   for i in 1 2 3 4 5 6; do
-    ONLINE_MD5=$(curl -s --max-time 15 "https://yinfluence.org/data/site.json?nc=$(date +%s)$RANDOM" | md5 -q)
-    [[ "$ONLINE_MD5" == "$LOCAL_MD5" ]] && return 0
+    ONLINE_MD5=$(curl -s --max-time 15 "https://yinfluence.org/data/site.json?nc=$(date +%s)$RANDOM" | "$WEB/scripts/site-json-md5.py")
+    [[ -n "$ONLINE_MD5" && "$ONLINE_MD5" == "$LOCAL_MD5" ]] && return 0
     sleep 20
   done
-  log "线上复核失败：线上 md5 $ONLINE_MD5 != 本地 HEAD $LOCAL_MD5"
+  log "线上复核失败：线上 $ONLINE_MD5 != 本地 HEAD $LOCAL_MD5（已忽略 updatedAt）"
   return 1
 }
 
