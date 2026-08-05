@@ -901,6 +901,10 @@
       "platform": "bilibili",
       "url": "https://www.bilibili.com/video/BV1LPuP6bEkF/",
       "access": "member"
+    },
+    "youtube": {
+      "platform": "youtube",
+      "url": "https://www.youtube.com/watch?v=rVqykGKFIbE"
     }
   }
 }
