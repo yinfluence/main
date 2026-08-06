@@ -255,6 +255,12 @@ scan_once() {
     *)
       log "扫描出错 code=${CODE}（cookie 过期 / 充电失效 / 风控 / 网络？）"
       notify "颖响力网页 ⚠️" "扫描失败 code=${CODE}，请看 logs/" "Basso"
+      # 这条路径不重试也不整理，直接返回，所以它就是终局，必须弹。
+      # 7-29 静默失败两天没人发现，正是死在这里：cookie 过期扫不到，一声不响。
+      popup "颖响力网页 ⚠️ 扫描失败" "扫不到新一期，code=${CODE}。
+
+常见原因：B 站 cookie 过期、充电专属失效、风控、网络。
+日志：logs/auto-daily-$TODAY.log" "error"
       return $CODE
       ;;
   esac
