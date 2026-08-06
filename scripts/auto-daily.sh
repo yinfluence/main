@@ -54,6 +54,30 @@ with open(os.path.join(d, 'status-history.jsonl'), 'a', encoding='utf-8') as f:
     f.write(json.dumps(rec, ensure_ascii=False) + '\n')
 PY
 }
+
+# 用户 2026-08-06 要求：节目整理好并上线后要有弹窗，别再只靠翻 status.json。
+# 只用 display dialog，不用 display notification——7-29 到 7-30 的教训是横幅被系统
+# 静默丢掉而 osascript 照样返回 0。dialog 是这台机器上实测确定看得见的通道。
+# 后台起（&）所以不阻塞脚本；giving up after 1800 保证没人在电脑前时半小时自动收掉，
+# 不会留一个 osascript 进程和一块挡屏的窗一直挂着。
+# 只在两个终局状态弹：上线复核通过、以及重试用尽彻底放弃。中间的重试仍然只落盘，
+# 否则一轮失败会连弹好几次，回到"太吵"的老问题。
+popup() {
+  local title="$1" msg="$2" level="${3:-ok}"
+  osascript - "$title" "$msg" "$level" >/dev/null 2>&1 <<'AS' &
+on run argv
+  set t to item 1 of argv
+  set m to item 2 of argv
+  activate
+  if (item 3 of argv) is "error" then
+    display dialog m with title t buttons {"知道了"} default button 1 with icon caution giving up after 1800
+  else
+    display dialog m with title t buttons {"知道了"} default button 1 with icon note giving up after 1800
+  end if
+end run
+AS
+  disown 2>/dev/null || true
+}
 log() { echo "$(date '+%H:%M:%S') $*" >> "$LOG"; }
 
 # 全程锁：已经有实例在做（扫描循环中 / claude 整理中）就不再进来。
@@ -211,6 +235,9 @@ scan_once() {
         if verify_online; then
           log "整理完成且线上复核通过：$SUM"
           notify "颖响力网页 ✅" "已自动上线：$SUM" "Glass"
+          popup "颖响力网页 ✅ 新一期已上线" "$SUM
+
+线上已复核一致，可以直接看网页。"
           return 0
         fi
         log "agent 报告成功（${SUM}）但线上复核失败——按失败处理，走重试"
@@ -280,6 +307,9 @@ scan_with_retry() {
     if (( RETRIES >= RETRY_MAX )); then
       log "整理连续失败 $((RETRIES + 1)) 次，放弃本轮。草稿留在盘上，下次触发会重新拾起"
       notify "颖响力网页 ⚠️" "整理失败 $((RETRIES + 1)) 次已放弃，草稿留在 content/episodes/，下次触发重试" "Basso"
+      popup "颖响力网页 ⚠️ 这一期没上线" "连续失败 $((RETRIES + 1)) 次，本轮放弃。
+
+草稿还在 content/episodes/，下次触发会重新拾起。要现在看原因：logs/auto-daily-$TODAY.log" "error"
       return 20
     fi
     RETRIES=$((RETRIES + 1))
