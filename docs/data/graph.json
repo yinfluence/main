@@ -2,14 +2,14 @@
   "meta": {
     "title": "颖响力知识图谱",
     "subtitle": "节目、概念、模型、人物、主题之间的可视化连接网络",
-    "nodeCount": 668,
-    "linkCount": 2469,
+    "nodeCount": 672,
+    "linkCount": 2479,
     "typeCounts": {
-      "model": 78,
+      "model": 79,
       "live": 29,
       "theme": 92,
-      "episode": 194,
-      "concept": 210,
+      "episode": 195,
+      "concept": 212,
       "person": 65
     }
   },
@@ -642,6 +642,17 @@
       "degree": 18
     },
     {
+      "id": "theme:institutional-middle-class-and-social-mobility",
+      "key": "institutional-middle-class-and-social-mobility",
+      "label": "体制化中产与社会流动",
+      "fullLabel": "体制化中产与社会流动",
+      "type": "theme",
+      "route": "themes/institutional-middle-class-and-social-mobility",
+      "summary": "讨论稳定岗位、公共财政和身份溢价如何重塑中产结构，并收窄普通人的上升路径。",
+      "status": null,
+      "degree": 18
+    },
+    {
       "id": "episode:EP139",
       "key": "EP139",
       "label": "EP139",
@@ -693,17 +704,6 @@
       "type": "model",
       "route": "models/leverage-backfire",
       "summary": "杠杆反噬解释上行期放大利润的结构，如何在下行期放大亏损、现金流压力和清偿困难。",
-      "status": null,
-      "degree": 17
-    },
-    {
-      "id": "theme:institutional-middle-class-and-social-mobility",
-      "key": "institutional-middle-class-and-social-mobility",
-      "label": "体制化中产与社会流动",
-      "fullLabel": "体制化中产与社会流动",
-      "type": "theme",
-      "route": "themes/institutional-middle-class-and-social-mobility",
-      "summary": "讨论稳定岗位、公共财政和身份溢价如何重塑中产结构，并收窄普通人的上升路径。",
       "status": null,
       "degree": 17
     },
@@ -1764,6 +1764,17 @@
       "degree": 10
     },
     {
+      "id": "episode:EP195",
+      "key": "EP195",
+      "label": "EP195",
+      "fullLabel": "EP195 · 竹知了“不能提”的是华删派与岳不群的终极野心！",
+      "type": "episode",
+      "route": "episodes/EP195",
+      "summary": "竹知了这件事很多人看不懂。几毛钱的竹玩具，摇起来那声哇哇被配上发布会画面，视频成片被投诉下架，热度反而更高。好好的市场不抢，非要去告玩梗的人，图的是什么。拿性价比和市场份额这套尺子量华山派，永远量不出结果，它玩的从一开始就不是普通的商业游戏。先画圈子，界限划得越清楚越好，选它的人和还在看性价比的人不是一类。再故意定高价、故意特立独行，看不懂的人自己就走。最里面一层是登顶。左冷禅要的是五岳联盟的盟主，还在江湖这个游戏里玩。岳不群要的是五派合一，从此没人能跟他讨价还价，也没人能随便调侃他。",
+      "status": "curated",
+      "degree": 10
+    },
+    {
       "id": "concept:standard-labor-replacement",
       "key": "standard-labor-replacement",
       "label": "标准劳动力替代",
@@ -1815,6 +1826,28 @@
       "type": "theme",
       "route": "themes/exam-centered-education-and-person-formation",
       "summary": "关注学校如何把人塑造成服从考试和权威的对象。",
+      "status": null,
+      "degree": 9
+    },
+    {
+      "id": "theme:platform-governance-and-folk-discourse",
+      "key": "platform-governance-and-folk-discourse",
+      "label": "平台治理与民间话语",
+      "fullLabel": "平台治理与民间话语",
+      "type": "theme",
+      "route": "themes/platform-governance-and-folk-discourse",
+      "summary": "讨论平台如何识别、容忍、限制和清理具有高传播性的民间表达。",
+      "status": null,
+      "degree": 9
+    },
+    {
+      "id": "model:identity-stratification",
+      "key": "identity-stratification",
+      "label": "身份型分层",
+      "fullLabel": "身份型分层",
+      "type": "model",
+      "route": "models/identity-stratification",
+      "summary": "身份型分层说明阶层排序从收入和资产，转向编制、合规位置、圈层资源和稳定预期。",
       "status": null,
       "degree": 9
     },
@@ -2171,17 +2204,6 @@
       "degree": 8
     },
     {
-      "id": "theme:platform-governance-and-folk-discourse",
-      "key": "platform-governance-and-folk-discourse",
-      "label": "平台治理与民间话语",
-      "fullLabel": "平台治理与民间话语",
-      "type": "theme",
-      "route": "themes/platform-governance-and-folk-discourse",
-      "summary": "讨论平台如何识别、容忍、限制和清理具有高传播性的民间表达。",
-      "status": null,
-      "degree": 8
-    },
-    {
       "id": "model:human-machine-differentiation",
       "key": "human-machine-differentiation",
       "label": "人机差异化模型",
@@ -2200,17 +2222,6 @@
       "type": "model",
       "route": "models/screening-machine",
       "summary": "教育和组织把人当作待筛选样本，而非待生长的人来处理的系统逻辑。",
-      "status": null,
-      "degree": 8
-    },
-    {
-      "id": "model:identity-stratification",
-      "key": "identity-stratification",
-      "label": "身份型分层",
-      "fullLabel": "身份型分层",
-      "type": "model",
-      "route": "models/identity-stratification",
-      "summary": "身份型分层说明阶层排序从收入和资产，转向编制、合规位置、圈层资源和稳定预期。",
       "status": null,
       "degree": 8
     },
@@ -3601,6 +3612,17 @@
       "degree": 5
     },
     {
+      "id": "theme:brand-symbol-and-value",
+      "key": "brand-symbol-and-value",
+      "label": "品牌符号与价值感知",
+      "fullLabel": "品牌符号与价值感知",
+      "type": "theme",
+      "route": "themes/brand-symbol-and-value",
+      "summary": "讨论品牌符号如何塑造用户对价格、品质和价值的判断。",
+      "status": null,
+      "degree": 5
+    },
+    {
       "id": "theme:platform-labor-and-lived-reality",
       "key": "platform-labor-and-lived-reality",
       "label": "平台劳动与真实生存",
@@ -4195,17 +4217,6 @@
       "degree": 4
     },
     {
-      "id": "theme:brand-symbol-and-value",
-      "key": "brand-symbol-and-value",
-      "label": "品牌符号与价值感知",
-      "fullLabel": "品牌符号与价值感知",
-      "type": "theme",
-      "route": "themes/brand-symbol-and-value",
-      "summary": "讨论品牌符号如何塑造用户对价格、品质和价值的判断。",
-      "status": null,
-      "degree": 4
-    },
-    {
       "id": "model:platform-legibility-filter",
       "key": "platform-legibility-filter",
       "label": "平台可读性过滤器",
@@ -4257,6 +4268,17 @@
       "type": "concept",
       "route": "concepts/weapons-of-the-weak",
       "summary": "日常、隐蔽、匿名、非组织化的微观抵抗，比公开对抗更难被传统治理手段处理。",
+      "status": null,
+      "degree": 4
+    },
+    {
+      "id": "concept:identity-over-wealth",
+      "key": "identity-over-wealth",
+      "label": "身份压倒财富",
+      "fullLabel": "身份压倒财富",
+      "type": "concept",
+      "route": "concepts/identity-over-wealth",
+      "summary": "身份压倒财富指稳定身份、编制和圈层位置开始比账面收入更能决定社会评价和生活安全感。",
       "status": null,
       "degree": 4
     },
@@ -4327,6 +4349,17 @@
       "degree": 4
     },
     {
+      "id": "theme:consumer-audience-rewrite",
+      "key": "consumer-audience-rewrite",
+      "label": "消费客群重写",
+      "fullLabel": "消费客群重写",
+      "type": "theme",
+      "route": "themes/consumer-audience-rewrite",
+      "summary": "品牌和内容生产者为了继续增长，会主动改写自己想吸引的人以及要卖给他们的身份。",
+      "status": null,
+      "degree": 4
+    },
+    {
       "id": "concept:information-cocoon-breach",
       "key": "information-cocoon-breach",
       "label": "信息茧房破口",
@@ -4334,6 +4367,17 @@
       "type": "concept",
       "route": "concepts/information-cocoon-breach",
       "summary": "让原本封闭的人群第一次看见自身位置、差异和现实结构的传播裂缝。",
+      "status": null,
+      "degree": 4
+    },
+    {
+      "id": "concept:cult-branding",
+      "key": "cult-branding",
+      "label": "信众化品牌",
+      "fullLabel": "信众化品牌",
+      "type": "concept",
+      "route": "concepts/cult-branding",
+      "summary": "用户从购买者变成主动辩护、传播和站队的信众时，品牌就进入信众化阶段。",
       "status": null,
       "degree": 4
     },
@@ -5075,17 +5119,6 @@
       "degree": 3
     },
     {
-      "id": "concept:identity-over-wealth",
-      "key": "identity-over-wealth",
-      "label": "身份压倒财富",
-      "fullLabel": "身份压倒财富",
-      "type": "concept",
-      "route": "concepts/identity-over-wealth",
-      "summary": "身份压倒财富指稳定身份、编制和圈层位置开始比账面收入更能决定社会评价和生活安全感。",
-      "status": null,
-      "degree": 3
-    },
-    {
       "id": "concept:production-risk-outsourcing",
       "key": "production-risk-outsourcing",
       "label": "生产端风险外包",
@@ -5152,17 +5185,6 @@
       "degree": 3
     },
     {
-      "id": "theme:consumer-audience-rewrite",
-      "key": "consumer-audience-rewrite",
-      "label": "消费客群重写",
-      "fullLabel": "消费客群重写",
-      "type": "theme",
-      "route": "themes/consumer-audience-rewrite",
-      "summary": "品牌和内容生产者为了继续增长，会主动改写自己想吸引的人以及要卖给他们的身份。",
-      "status": null,
-      "degree": 3
-    },
-    {
       "id": "model:middle-class-replacement-cycle",
       "key": "middle-class-replacement-cycle",
       "label": "新旧中产置换",
@@ -5170,17 +5192,6 @@
       "type": "model",
       "route": "models/middle-class-replacement-cycle",
       "summary": "新旧中产置换解释一个社会怎样用更可控的体制型中产，替换掉靠市场打拼、财富外流不可控的老中产，从而把财富和消费重新锚定在国内。",
-      "status": null,
-      "degree": 3
-    },
-    {
-      "id": "concept:cult-branding",
-      "key": "cult-branding",
-      "label": "信众化品牌",
-      "fullLabel": "信众化品牌",
-      "type": "concept",
-      "route": "concepts/cult-branding",
-      "summary": "用户从购买者变成主动辩护、传播和站队的信众时，品牌就进入信众化阶段。",
       "status": null,
       "degree": 3
     },
@@ -6384,6 +6395,17 @@
       "degree": 1
     },
     {
+      "id": "model:symbol-ascension",
+      "key": "symbol-ascension",
+      "label": "符号登顶",
+      "fullLabel": "符号登顶",
+      "type": "model",
+      "route": "models/symbol-ascension",
+      "summary": "不在现有的比价体系里争第一，而是先划界限、再筛人、最后把自己变成不能被议价也不能被调侃的符号。",
+      "status": null,
+      "degree": 1
+    },
+    {
       "id": "person:mattias-grafstrom",
       "key": "mattias-grafstrom",
       "label": "格拉夫斯特伦",
@@ -6842,6 +6864,17 @@
       "type": "concept",
       "route": "concepts/rule-breaking-parenting",
       "summary": "破规示范型育儿指父母为了不让孩子受委屈，当众挑战或破坏公共规则，把巨婴算法当作家庭教育灌进孩子心里。",
+      "status": null,
+      "degree": 1
+    },
+    {
+      "id": "concept:pre-emptive-screening",
+      "key": "pre-emptive-screening",
+      "label": "前置筛选",
+      "fullLabel": "前置筛选",
+      "type": "concept",
+      "route": "concepts/pre-emptive-screening",
+      "summary": "故意设一道门槛或者故意留一个破绽，让不想要的人在接触之前自己走掉，省下后面全部的说服成本。",
       "status": null,
       "degree": 1
     },
@@ -7326,6 +7359,17 @@
       "type": "concept",
       "route": "concepts/housing-tax-wedge",
       "summary": "高房价通过土地、税费和配套体系提前抽走居民未来收入，形成隐形住房税楔。",
+      "status": null,
+      "degree": 1
+    },
+    {
+      "id": "concept:solemnity",
+      "key": "solemnity",
+      "label": "庄严",
+      "fullLabel": "庄严",
+      "type": "concept",
+      "route": "concepts/solemnity",
+      "summary": "有一样东西不能拿来交换，也不能议价，更不能随便调侃，面对它的第一反应是敬畏而不是划算。",
       "status": null,
       "degree": 1
     },
@@ -14872,6 +14916,56 @@
     {
       "source": "episode:EP194",
       "target": "theme:financial-content-and-long-termism",
+      "kind": "episode-theme"
+    },
+    {
+      "source": "episode:EP195",
+      "target": "concept:pre-emptive-screening",
+      "kind": "episode-concept"
+    },
+    {
+      "source": "episode:EP195",
+      "target": "concept:solemnity",
+      "kind": "episode-concept"
+    },
+    {
+      "source": "episode:EP195",
+      "target": "concept:identity-over-wealth",
+      "kind": "episode-concept"
+    },
+    {
+      "source": "episode:EP195",
+      "target": "concept:cult-branding",
+      "kind": "episode-concept"
+    },
+    {
+      "source": "episode:EP195",
+      "target": "model:identity-stratification",
+      "kind": "episode-model"
+    },
+    {
+      "source": "episode:EP195",
+      "target": "model:symbol-ascension",
+      "kind": "episode-model"
+    },
+    {
+      "source": "episode:EP195",
+      "target": "theme:consumer-audience-rewrite",
+      "kind": "episode-theme"
+    },
+    {
+      "source": "episode:EP195",
+      "target": "theme:brand-symbol-and-value",
+      "kind": "episode-theme"
+    },
+    {
+      "source": "episode:EP195",
+      "target": "theme:platform-governance-and-folk-discourse",
+      "kind": "episode-theme"
+    },
+    {
+      "source": "episode:EP195",
+      "target": "theme:institutional-middle-class-and-social-mobility",
       "kind": "episode-theme"
     },
     {
