@@ -10,7 +10,7 @@ HERE="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 SRC="$HERE/auto-daily.sh"
 T="$(mktemp -d -t auto-daily-test)"
 trap 'rm -rf "$T"' EXIT
-mkdir -p "$T/logs" "$T/content/episodes"
+mkdir -p "$T/logs" "$T/content/episodes" "$T/scripts"
 FAILS=0
 ok() { echo "PASS  $1"; }
 no() { echo "FAIL  $1  <- ${2:-}"; FAILS=$((FAILS+1)); }
@@ -22,6 +22,10 @@ sed -e "s|^WEB=.*|WEB=\"$T\"|" -e '/^if (( UTC_MIN >= WIN_START/,$d' "$SRC" > "$
 # 2026-08-07 跑 test:auto 时它真弹了，用户以为线上出事。假警报会把真警报稀释掉，
 # 比不弹更糟——popup 是 08-06 才加的，加的时候漏了这里。后定义的函数覆盖先定义的。
 printf '%s\n' 'popup() { :; }' >> "$T/lib.sh"
+# lib.sh 顶层直接调 backfill_links（回补必须赶在窗口循环之前），所以每一次 source
+# 都会真的执行它。这里先给个「没得补」的假脚本，否则 python3 找不到文件就报错，
+# 往 status.json 写一条失败记录，把第 1 节的 consecutive_failures 断言污染掉。
+printf '%s\n' 'import sys' 'print("链接都齐了（假脚本）")' 'sys.exit(10)' > "$T/scripts/backfill-video-links.py"
 # 判据统一是"有没有被放行"：闸门（锁、today_done）拦住就 exit 0，标记不会打印
 gate() { ( source "$T/lib.sh" >/dev/null 2>&1; echo GOT_THROUGH ); }
 ST="$T/logs/status.json"
@@ -156,6 +160,16 @@ rm -f "$T/logs/"auto-daily-*.log
 gate >/dev/null 2>&1
 grep -q "回补缺失的视频链接" "$T/logs/"auto-daily-*.log 2>/dev/null \
   && ok "节目收工当天仍然回补链接" || no "节目收工当天仍然回补链接"
+
+# 非收工日：回补必须在进窗口循环之前就跑完。
+# lib.sh 正好截断在窗口判断那一行，所以这条断言等价于「回补的调用点在窗口之前」。
+# 放在循环之后等于没跑：这台机器睡着时 sleep 600 不推进，2026-08-07 实测
+# 12:13 进窗口后卡到 13:28，75 分钟里循环之后的代码一行都没轮到。
+mk "{\"status\":\"curated\",\"summary\":\"真内容\",\"publishedAt\":\"2020-01-01T11:00:00.000Z\"}"
+rm -f "$T/logs/"auto-daily-*.log
+gate >/dev/null 2>&1
+grep -q "回补缺失的视频链接" "$T/logs/"auto-daily-*.log 2>/dev/null \
+  && ok "非收工日也在进窗口前回补" || no "非收工日也在进窗口前回补"
 
 echo
 [[ $FAILS -eq 0 ]] && echo "全部通过" || echo "$FAILS 项失败"
