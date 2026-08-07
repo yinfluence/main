@@ -8,6 +8,10 @@
     {
       "platform": "bilibili",
       "url": "https://www.bilibili.com/video/BV1eouJ6MEbL/"
+    },
+    {
+      "platform": "youtube",
+      "url": "https://www.youtube.com/watch?v=alDjwAhrM8g"
     }
   ],
   "tags": [

@@ -2,7 +2,7 @@
   "meta": {
     "title": "颖响力知识库",
     "subtitle": "节目、概念、思想模型的结构化索引",
-    "updatedAt": "2026-08-06T11:34:18.374Z"
+    "updatedAt": "2026-08-07T12:38:16.624Z"
   },
   "stats": {
     "episodes": 195,
@@ -23629,7 +23629,7 @@
         "跟随不再有红利之后，靠什么判断自己是不是已经站在被分摊的那一端？"
       ],
       "inlineKnowledge": true,
-      "recent": true
+      "recent": false
     },
     {
       "id": "EP195",
@@ -23642,6 +23642,10 @@
         {
           "platform": "bilibili",
           "url": "https://www.bilibili.com/video/BV1eouJ6MEbL/"
+        },
+        {
+          "platform": "youtube",
+          "url": "https://www.youtube.com/watch?v=alDjwAhrM8g"
         }
       ],
       "tags": [
