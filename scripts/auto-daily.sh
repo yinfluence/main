@@ -290,6 +290,72 @@ scan_lives() {
   return 0
 }
 
+# 第三条线：给已收录的期回补另一个平台的链接（2026-08-07 加）。
+# 跟节目、直播一样是独立的一条线，因为它问的是另一个问题：不是「有没有新的一期」，
+# 而是「已有的一期全不全」。scan_once 只判 EP 号在不在本地，判完就再也不回头看，
+# 所以 B 站先发、YouTube 晚 28 分钟上线的 EP195 那条链接永远没人补（EP189、EP194
+# 同样的死法，前两次都是用户发现后人工补的）。
+#
+# 补链接是纯机械活，不需要 LLM，所以整条路径（补 → build → commit → ship → 复核）
+# 全自动走完，不唤起 claude。
+backfill_links() {
+  log "=== 回补缺失的视频链接 ==="
+  local BEFORE CODE EPS DIRTY
+  BEFORE=$(wc -l < "$LOG" 2>/dev/null || echo 0)
+  python3 scripts/backfill-video-links.py >> "$LOG" 2>&1
+  CODE=$?
+  (( CODE == 10 )) && return 0    # 链接都齐，正常情况下每天走的就是这条
+  if (( CODE != 0 )); then
+    log "链接回补出错 code=$CODE"
+    notify "颖响力网页 ⚠️" "视频链接回补失败 code=${CODE}，请看 logs/" "Basso"
+    return 0                      # 补不了不影响节目和直播那两条线
+  fi
+
+  EPS=$(tail -n +$((BEFORE + 1)) "$LOG" | sed -n 's/^已补 [0-9]* 期的链接: //p' | tail -1)
+  log "补了链接：${EPS:-?}，开始上线"
+
+  # 上线前先确认工作区里除了刚补的 episode JSON 没有别的脏东西。
+  # ship 传的是工作区文件，别人没提交完的半成品会跟着一起推上线。
+  DIRTY=$(git status --porcelain -- docs/ content/ src/ scripts/ package.json \
+          | grep -v '^ M content/episodes/EP[0-9]*\.json$' || true)
+  if [[ -n "$DIRTY" ]]; then
+    log "工作区还有其他未提交改动，链接已补但不自动上线：$(echo "$DIRTY" | tr '\n' ' ')"
+    notify "颖响力网页 ⚠️" "已补 ${EPS:-?} 的链接，但工作区不干净没自动上线，需要人工处理" "Basso"
+    return 0
+  fi
+
+  if ! npm run build >> "$LOG" 2>&1; then
+    log "链接补完 build 失败，改动留在工作区"
+    notify "颖响力网页 ⚠️" "补了 ${EPS:-?} 的链接但 build 失败，改动留在工作区" "Basso"
+    return 0
+  fi
+  git add content/episodes docs >> "$LOG" 2>&1
+  git commit -q -m "自动回补 ${EPS:-视频} 的平台链接
+
+由 scripts/backfill-video-links.py 在每日自动化里发现并补上：这些期收录时
+另一个平台还没发布，scan-new-episodes 此后只认 EP 号不再回头看，链接就一直缺着。" >> "$LOG" 2>&1
+  if ! npm run ship >> "$LOG" 2>&1; then
+    log "链接已 commit 但 ship 失败，线上仍是旧版"
+    notify "颖响力网页 ⚠️" "补了 ${EPS:-?} 的链接并已 commit，但 ship 失败，线上还是旧的" "Basso"
+    popup "颖响力网页 ⚠️ 链接没推上线" "已补 ${EPS:-?} 的视频链接并 commit，但发布失败。
+
+线上还是旧版。日志：logs/auto-daily-$TODAY.log" "error"
+    return 0
+  fi
+  # ship 内部已经比过线上 md5，这里再独立复核一次（不信任何命令回执，同 scan_once）
+  if verify_online; then
+    log "链接回补已上线并复核通过：$EPS"
+    notify "颖响力网页 ✅" "已自动补上 ${EPS:-?} 的视频链接并上线" "Glass"
+    popup "颖响力网页 ✅ 视频链接已补上" "${EPS:-?} 缺的平台链接已自动补全并上线。
+
+线上已复核一致。"
+  else
+    log "链接已 ship 但线上复核不通过"
+    notify "颖响力网页 ⚠️" "补了 ${EPS:-?} 的链接，ship 报成功但线上复核不一致" "Basso"
+  fi
+  return 0
+}
+
 # 用 UTC 分钟数判断是否在发布窗口内（北京 18:50–22:30 = UTC 10:50–14:30）
 UTC_MIN=$(( $(date -u +%H | sed 's/^0//') * 60 + $(date -u +%M | sed 's/^0//') ))
 WIN_START=$(( 10 * 60 + 50 ))
@@ -324,8 +390,11 @@ scan_with_retry() {
   done
 }
 
-# 节目当天已收工：跳过节目那条线，但直播还得扫（两条线独立，上传时段也不重叠）
+# 节目当天已收工：跳过节目那条线，但直播还得扫（两条线独立，上传时段也不重叠）。
+# 链接回补也必须在这里跑——EP195 正是死在这个分支：B 站版当天 11:03 收录后
+# today_done 就变真，之后所有触发点都走这条路，而 YouTube 版 11:31 才上线。
 if (( EPISODES_DONE )); then
+  backfill_links
   scan_lives
   exit 0
 fi
@@ -351,5 +420,7 @@ else
   scan_with_retry
 fi
 
-# 节目那边处理完（或没新期）之后，顺带扫一次直播
+# 节目那边处理完（或没新期）之后，回补链接并顺带扫一次直播。
+# 回补放在节目之后：新整理上线的那期链接本来就是齐的，它补的是更早的期。
+backfill_links
 scan_lives

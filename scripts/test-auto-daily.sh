@@ -18,6 +18,10 @@ chk() { [[ "$2" == "$3" ]] && ok "$1" || no "$1" "期望 [$3] 实得 [$2]"; }
 
 # 两种切法：lib 到函数定义结束（含 scan_with_retry），gate 用来测 source 时的闸门逻辑
 sed -e "s|^WEB=.*|WEB=\"$T\"|" -e '/^if (( UTC_MIN >= WIN_START/,$d' "$SRC" > "$T/lib.sh"
+# popup 会真的弹一个 macOS 对话框，而第 4 节演的就是「整理连续失败 3 次」。
+# 2026-08-07 跑 test:auto 时它真弹了，用户以为线上出事。假警报会把真警报稀释掉，
+# 比不弹更糟——popup 是 08-06 才加的，加的时候漏了这里。后定义的函数覆盖先定义的。
+printf '%s\n' 'popup() { :; }' >> "$T/lib.sh"
 # 判据统一是"有没有被放行"：闸门（锁、today_done）拦住就 exit 0，标记不会打印
 gate() { ( source "$T/lib.sh" >/dev/null 2>&1; echo GOT_THROUGH ); }
 ST="$T/logs/status.json"
@@ -93,9 +97,11 @@ TODAY=$(date -u +%Y-%m-%d)
 mk() { python3 -c "
 import json,sys;json.dump(json.loads(sys.argv[2]),open(sys.argv[1],'w'),ensure_ascii=False)" \
   "$T/content/episodes/EP999.json" "$1"; }
-# 收工场景会走到 scan_lives，给它一个假的扫描器（返回 10=无新直播），别真去 B 站
+# 收工场景会走到 scan_lives 和 backfill_links，两个都给假脚本（返回 10=没事可做），
+# 别真去 B 站也别真 build/ship
 mkdir -p "$T/scripts"
 printf '%s\n' 'import sys' 'print("无新场次（假扫描器）")' 'sys.exit(10)' > "$T/scripts/scan-new-lives.py"
+printf '%s\n' 'import sys' 'print("链接都齐了（假脚本）")' 'sys.exit(10)' > "$T/scripts/backfill-video-links.py"
 mk "{\"status\":\"curated\",\"summary\":\"真内容\",\"publishedAt\":\"${TODAY}T11:00:00.000Z\"}"
 rm -f "$T/logs/"auto-daily-*.log
 chk "今天的完成品 -> 收工不再扫节目" "$(gate)" ""
@@ -108,6 +114,48 @@ mk "{\"status\":\"curated\",\"summary\":\"\",\"publishedAt\":\"${TODAY}T11:00:00
 chk "summary 空 -> 仍放行重试" "$(gate)" "GOT_THROUGH"
 mk "{\"status\":\"curated\",\"summary\":\"真内容\",\"publishedAt\":\"2020-01-01T11:00:00.000Z\"}"
 chk "旧日期 -> 继续扫今天的" "$(gate)" "GOT_THROUGH"
+
+echo
+echo "===== 6. 视频链接回补（EP195 的死法：EP 号已在本地，另一个平台的链接没人补）====="
+FAKE_BACKFILL="$T/scripts/backfill-video-links.py"
+mkbf() { printf '%s\n' "$@" > "$FAKE_BACKFILL"; }
+
+mkbf 'import sys' 'print("链接都齐了（假脚本）")' 'sys.exit(10)'
+rm -f "$T/logs/"auto-daily-*.log
+OUT=$( source "$T/lib.sh" >/dev/null 2>&1; backfill_links; echo "code=$?" )
+chk "链接齐全时返回 0" "$OUT" "code=0"
+# 齐全还去 build/commit/ship 的话，每天都会推一个空提交上线
+grep -q "开始上线" "$T/logs/"auto-daily-*.log 2>/dev/null \
+  && no "链接齐全不该触发上线" || ok "链接齐全不该触发上线"
+
+# 回补是第三条线，它失败不能连累节目和直播（B 站 cookie 过期时就会走这条）
+mkbf 'import sys' 'sys.stderr.write("boom\n")' 'sys.exit(1)'
+rm -f "$T/logs/"auto-daily-*.log
+OUT=$( source "$T/lib.sh" >/dev/null 2>&1; backfill_links; echo "code=$?" )
+chk "回补出错仍返回 0（不拖垮另外两条线）" "$OUT" "code=0"
+python3 -c "
+import json,sys;d=json.load(open('$ST'))
+sys.exit(0 if d['level']=='error' and '回补' in d['message'] else 1)" \
+  && ok "回补失败写进 status.json" || no "回补失败写进 status.json"
+
+# 补到了链接但工作区还有别人的半成品：ship 传的是工作区文件，这时候不许上线
+mkbf 'import sys' 'print("已补 1 期的链接: EP999")' 'sys.exit(0)'
+rm -f "$T/logs/"auto-daily-*.log
+OUT=$( source "$T/lib.sh" >/dev/null 2>&1
+  git() { [[ "$1" == "status" ]] && echo " M src/app.js"; return 0; }
+  backfill_links; echo "code=$?" )
+chk "工作区不干净时返回 0" "$OUT" "code=0"
+grep -q "不自动上线" "$T/logs/"auto-daily-*.log 2>/dev/null \
+  && ok "工作区不干净则不上线" || no "工作区不干净则不上线"
+
+# 收工分支必须也回补——EP195 正是死在这里：B 站版 11:03 收录后 today_done 就为真，
+# 当天剩下的触发点全走这条路，而 YouTube 版 11:31 才上线。这条断言在旧代码下必然失败。
+mkbf 'import sys' 'print("链接都齐了（假脚本）")' 'sys.exit(10)'
+mk "{\"status\":\"curated\",\"summary\":\"真内容\",\"publishedAt\":\"${TODAY}T11:00:00.000Z\"}"
+rm -f "$T/logs/"auto-daily-*.log
+gate >/dev/null 2>&1
+grep -q "回补缺失的视频链接" "$T/logs/"auto-daily-*.log 2>/dev/null \
+  && ok "节目收工当天仍然回补链接" || no "节目收工当天仍然回补链接"
 
 echo
 [[ $FAILS -eq 0 ]] && echo "全部通过" || echo "$FAILS 项失败"
