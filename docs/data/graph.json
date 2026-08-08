@@ -2,14 +2,14 @@
   "meta": {
     "title": "颖响力知识图谱",
     "subtitle": "节目、概念、模型、人物、主题之间的可视化连接网络",
-    "nodeCount": 672,
-    "linkCount": 2479,
+    "nodeCount": 676,
+    "linkCount": 2487,
     "typeCounts": {
-      "model": 79,
+      "model": 80,
       "live": 29,
       "theme": 92,
-      "episode": 195,
-      "concept": 212,
+      "episode": 196,
+      "concept": 214,
       "person": 65
     }
   },
@@ -686,6 +686,17 @@
       "degree": 17
     },
     {
+      "id": "theme:rule-of-law-boundaries-and-social-trust",
+      "key": "rule-of-law-boundaries-and-social-trust",
+      "label": "法治边界与社会信任",
+      "fullLabel": "法治边界与社会信任",
+      "type": "theme",
+      "route": "themes/rule-of-law-boundaries-and-social-trust",
+      "summary": "关注法律灰区如何影响公众的善意、风险感和彼此信任。",
+      "status": null,
+      "degree": 17
+    },
+    {
       "id": "concept:pan-institutional-middle-class",
       "key": "pan-institutional-middle-class",
       "label": "泛体制中产",
@@ -759,17 +770,6 @@
       "type": "theme",
       "route": "themes/southeast-asia-fragmentation-and-bloc-competition",
       "summary": "讨论东南亚如何从缓冲地带变成各方拉扯、重新站队和内部裂变并行发生的高风险区域。",
-      "status": null,
-      "degree": 16
-    },
-    {
-      "id": "theme:rule-of-law-boundaries-and-social-trust",
-      "key": "rule-of-law-boundaries-and-social-trust",
-      "label": "法治边界与社会信任",
-      "fullLabel": "法治边界与社会信任",
-      "type": "theme",
-      "route": "themes/rule-of-law-boundaries-and-social-trust",
-      "summary": "关注法律灰区如何影响公众的善意、风险感和彼此信任。",
       "status": null,
       "degree": 16
     },
@@ -1456,6 +1456,17 @@
       "degree": 11
     },
     {
+      "id": "model:principal-agent",
+      "key": "principal-agent",
+      "label": "委托代理问题",
+      "fullLabel": "委托代理问题",
+      "type": "model",
+      "route": "models/principal-agent",
+      "summary": "委托代理模型解释外部顾问或职业代理人的激励，未必与委托方长期价值一致。",
+      "status": null,
+      "degree": 11
+    },
+    {
       "id": "concept:sanction-containment",
       "key": "sanction-containment",
       "label": "制裁遏制",
@@ -1639,17 +1650,6 @@
       "type": "concept",
       "route": "concepts/retail-platform-risk",
       "summary": "散户投资不仅面对标的涨跌，还面对平台信用、对冲、托管和退出风险。",
-      "status": null,
-      "degree": 10
-    },
-    {
-      "id": "model:principal-agent",
-      "key": "principal-agent",
-      "label": "委托代理问题",
-      "fullLabel": "委托代理问题",
-      "type": "model",
-      "route": "models/principal-agent",
-      "summary": "委托代理模型解释外部顾问或职业代理人的激励，未必与委托方长期价值一致。",
       "status": null,
       "degree": 10
     },
@@ -2607,6 +2607,17 @@
       "type": "episode",
       "route": "episodes/EP183",
       "summary": "EP171 讲苏州工业园区怎么诞生，后来的波折在这里。中新集团的股权从新加坡持股65%调整为中方65%。后来又稀释到今天的25%左右。李光耀在回忆录里留下70分、惩罚性试验的评价。苏州一市两强的同质竞争，让园区被自家兄弟截胡。新加坡的管理软件在中国行政体制下水土不服。李光耀主动提出股权置换止损。所谓关门打狗其实是个误会。不是苏州设局逼退，是双方都没料到的制度错配。2009年李光耀说选择苏州是正确的。",
+      "status": "curated",
+      "degree": 8
+    },
+    {
+      "id": "episode:EP196",
+      "key": "EP196",
+      "label": "EP196",
+      "fullLabel": "EP196 · 韩红争议撕开公募慈善遮羞布：拒绝个人救助，合规只是表象，背后藏着圈层利益输送",
+      "type": "episode",
+      "route": "episodes/EP196",
+      "summary": "韩红基金会又一次被推上风口，传出启动了调查，真假无从查证。真正该看的是公募慈善这套模式本身。捐款来自千千万万普通人，钱汇上去之后，受益方却变成了一个个机构、一个个合作方。公募机构给的理由是合规，说个人需求属于私益求助，不在服务范围内。可法律从没禁止公募机构救助个人，规范只要求捐款不能限定唯一受益人。封死个人通道的真实原因是趋利避害，对接机构是长期稳定的合作，能稳住圈层资源、持续赚运营经费，帮扶个人零散繁琐又无利可图。几亿几十亿的爱心钱趴在账上空转，走投无路的人只能去民间平台一笔一笔地求。",
       "status": "curated",
       "degree": 8
     },
@@ -3733,6 +3744,17 @@
       "degree": 5
     },
     {
+      "id": "theme:performative-governance-and-ritual-display",
+      "key": "performative-governance-and-ritual-display",
+      "label": "形式主义治理与仪式表演",
+      "fullLabel": "形式主义治理与仪式表演",
+      "type": "theme",
+      "route": "themes/performative-governance-and-ritual-display",
+      "summary": "关注治理如何通过热闹、仪式和可见动作来替代真正的问题解决。",
+      "status": null,
+      "degree": 5
+    },
+    {
       "id": "concept:dependent-innovation",
       "key": "dependent-innovation",
       "label": "依附式创新",
@@ -3740,6 +3762,17 @@
       "type": "concept",
       "route": "concepts/dependent-innovation",
       "summary": "依附式创新指项目围绕政府、国企或强关系订单做有限改造，而不是面向真实市场独立突破。",
+      "status": null,
+      "degree": 5
+    },
+    {
+      "id": "concept:liability-firewall",
+      "key": "liability-firewall",
+      "label": "责任隔离墙",
+      "fullLabel": "责任隔离墙",
+      "type": "concept",
+      "route": "concepts/liability-firewall",
+      "summary": "强势方通过不持股、不担保、不当协议主体，把债务、对赌和经营风险全部隔在墙外，自己片叶不沾身。",
       "status": null,
       "degree": 5
     },
@@ -4151,6 +4184,17 @@
       "degree": 4
     },
     {
+      "id": "theme:charity-and-moral-capital",
+      "key": "charity-and-moral-capital",
+      "label": "公益、善意与商业失灵",
+      "fullLabel": "公益、善意与商业失灵",
+      "type": "theme",
+      "route": "themes/charity-and-moral-capital",
+      "summary": "一个人即便在资本世界里不断失败，也可能在公共世界里留下真正深厚的价值。",
+      "status": null,
+      "degree": 4
+    },
+    {
       "id": "concept:relationship-insurance",
       "key": "relationship-insurance",
       "label": "关系保险",
@@ -4382,17 +4426,6 @@
       "degree": 4
     },
     {
-      "id": "theme:performative-governance-and-ritual-display",
-      "key": "performative-governance-and-ritual-display",
-      "label": "形式主义治理与仪式表演",
-      "fullLabel": "形式主义治理与仪式表演",
-      "type": "theme",
-      "route": "themes/performative-governance-and-ritual-display",
-      "summary": "关注治理如何通过热闹、仪式和可见动作来替代真正的问题解决。",
-      "status": null,
-      "degree": 4
-    },
-    {
       "id": "model:prototype-production-decoupling",
       "key": "prototype-production-decoupling",
       "label": "样机量产脱钩",
@@ -4422,17 +4455,6 @@
       "type": "theme",
       "route": "themes/film-industry-and-traffic-logic",
       "summary": "关注影视生产如何越来越服从人设、粉丝和宣发流量，而非角色与作品本身。",
-      "status": null,
-      "degree": 4
-    },
-    {
-      "id": "concept:liability-firewall",
-      "key": "liability-firewall",
-      "label": "责任隔离墙",
-      "fullLabel": "责任隔离墙",
-      "type": "concept",
-      "route": "concepts/liability-firewall",
-      "summary": "强势方通过不持股、不担保、不当协议主体，把债务、对赌和经营风险全部隔在墙外，自己片叶不沾身。",
       "status": null,
       "degree": 4
     },
@@ -4840,17 +4862,6 @@
       "type": "concept",
       "route": "concepts/corporate-identity-shift",
       "summary": "公司会通过迁移法律身份、融资主场和制度归属，改变自己被定价和被理解的方式。",
-      "status": null,
-      "degree": 3
-    },
-    {
-      "id": "theme:charity-and-moral-capital",
-      "key": "charity-and-moral-capital",
-      "label": "公益、善意与商业失灵",
-      "fullLabel": "公益、善意与商业失灵",
-      "type": "theme",
-      "route": "themes/charity-and-moral-capital",
-      "summary": "一个人即便在资本世界里不断失败，也可能在公共世界里留下真正深厚的价值。",
       "status": null,
       "degree": 3
     },
@@ -6208,6 +6219,17 @@
       "degree": 1
     },
     {
+      "id": "concept:standardized-exclusion",
+      "key": "standardized-exclusion",
+      "label": "标准化排除",
+      "fullLabel": "标准化排除",
+      "type": "concept",
+      "route": "concepts/standardized-exclusion",
+      "summary": "救助和福利只认得出标准化、群体化的困难，突发的、个别的绝境因为填不进表格，被整套体系筛掉。",
+      "status": null,
+      "degree": 1
+    },
+    {
       "id": "concept:surface-chaos-deep-order",
       "key": "surface-chaos-deep-order",
       "label": "表面乱局深层秩序",
@@ -6479,6 +6501,17 @@
       "type": "person",
       "route": "people/haibian-de-xisailuo",
       "summary": "海边的西塞罗是中文互联网写作者和公众号作者，节目借其文章进入《论扯淡》、中式逻辑和工具化历史叙事的讨论。",
+      "status": null,
+      "degree": 1
+    },
+    {
+      "id": "concept:compliance-refusal",
+      "key": "compliance-refusal",
+      "label": "合规式拒绝",
+      "fullLabel": "合规式拒绝",
+      "type": "concept",
+      "route": "concepts/compliance-refusal",
+      "summary": "把法律没有禁止的事说成规则不允许，用合规两个字挡住请求，既不必解释动机，也不必承担拒绝的后果。",
       "status": null,
       "degree": 1
     },
@@ -6897,6 +6930,17 @@
       "type": "concept",
       "route": "concepts/panic-premium",
       "summary": "价格被恐慌、跟风和错过焦虑推高时，超出基本面的部分就是情绪溢价。",
+      "status": null,
+      "degree": 1
+    },
+    {
+      "id": "model:circle-grant-loop",
+      "key": "circle-grant-loop",
+      "label": "圈层拨付闭环",
+      "fullLabel": "圈层拨付闭环",
+      "type": "model",
+      "route": "models/circle-grant-loop",
+      "summary": "有分配权的机构只跟固定的几家合作方对接，钱在这个圈子里循环，各方互相依赖、互相出具文件，圈外的人连申请的入口都没有。",
       "status": null,
       "degree": 1
     },
@@ -14966,6 +15010,46 @@
     {
       "source": "episode:EP195",
       "target": "theme:institutional-middle-class-and-social-mobility",
+      "kind": "episode-theme"
+    },
+    {
+      "source": "episode:EP196",
+      "target": "concept:compliance-refusal",
+      "kind": "episode-concept"
+    },
+    {
+      "source": "episode:EP196",
+      "target": "concept:standardized-exclusion",
+      "kind": "episode-concept"
+    },
+    {
+      "source": "episode:EP196",
+      "target": "concept:liability-firewall",
+      "kind": "episode-concept"
+    },
+    {
+      "source": "episode:EP196",
+      "target": "model:principal-agent",
+      "kind": "episode-model"
+    },
+    {
+      "source": "episode:EP196",
+      "target": "model:circle-grant-loop",
+      "kind": "episode-model"
+    },
+    {
+      "source": "episode:EP196",
+      "target": "theme:charity-and-moral-capital",
+      "kind": "episode-theme"
+    },
+    {
+      "source": "episode:EP196",
+      "target": "theme:rule-of-law-boundaries-and-social-trust",
+      "kind": "episode-theme"
+    },
+    {
+      "source": "episode:EP196",
+      "target": "theme:performative-governance-and-ritual-display",
       "kind": "episode-theme"
     },
     {

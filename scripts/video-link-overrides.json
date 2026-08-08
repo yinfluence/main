@@ -912,5 +912,16 @@
       "platform": "bilibili",
       "url": "https://www.bilibili.com/video/BV1eouJ6MEbL/"
     }
+  },
+  "EP196": {
+    "bilibili": {
+      "platform": "bilibili",
+      "url": "https://www.bilibili.com/video/BV14Duu6aE2e/",
+      "access": "member"
+    },
+    "youtube": {
+      "platform": "youtube",
+      "url": "https://www.youtube.com/watch?v=mdOZPg3_wKc"
+    }
   }
 }
