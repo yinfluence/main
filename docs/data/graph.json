@@ -2,11 +2,11 @@
   "meta": {
     "title": "颖响力知识图谱",
     "subtitle": "节目、概念、模型、人物、主题之间的可视化连接网络",
-    "nodeCount": 676,
-    "linkCount": 2487,
+    "nodeCount": 677,
+    "linkCount": 2518,
     "typeCounts": {
       "model": 80,
-      "live": 29,
+      "live": 30,
       "theme": 92,
       "episode": 196,
       "concept": 214,
@@ -180,6 +180,17 @@
       "degree": 31
     },
     {
+      "id": "live:LIVE031",
+      "key": "LIVE031",
+      "label": "LIVE031",
+      "fullLabel": "LIVE031 · 香港保险要交税了，交出去的其实是后台数据，县里现在也看得见你那笔钱",
+      "type": "live",
+      "route": "lives/LIVE031",
+      "summary": "未申报资产的获刑线刚从三十万提到三百万，有人还没高兴完。",
+      "status": "curated",
+      "degree": 31
+    },
+    {
       "id": "live:LIVE012",
       "key": "LIVE012",
       "label": "LIVE012",
@@ -298,7 +309,18 @@
       "route": "themes/great-power-competition-and-strategic-time",
       "summary": "讨论战争、联盟和国家战略如何被时间窗口、社会成本和长期定力重新塑形。",
       "status": null,
-      "degree": 25
+      "degree": 26
+    },
+    {
+      "id": "episode:EP156",
+      "key": "EP156",
+      "label": "EP156",
+      "fullLabel": "EP156 · 老中产吸干财富，新中产锁定基本盘。香港不再是避风港？新加坡或成最大赢家？",
+      "type": "episode",
+      "route": "episodes/EP156",
+      "summary": "5月以来一串孤立的金融事件被串成一条线。富途、老虎被罚没22亿，八部门整治非法跨境券商。香港银行倒查内地账户。国务院837号令把个人、技术、人才纳入对外投资监管。\n\n对老中产和高净值人群境外财富的回收。学特朗普“建墙”，逼两头跑的人选边。要么留国内受严管，要么彻底离开。另一边，靠国家拨款和国企流动的新中产正在长出来，因为更稳定可控。老中产去新加坡相对安全，置换会用五到十年完成。",
+      "status": "curated",
+      "degree": 26
     },
     {
       "id": "theme:singapore-and-small-state-survival",
@@ -312,14 +334,14 @@
       "degree": 25
     },
     {
-      "id": "episode:EP156",
-      "key": "EP156",
-      "label": "EP156",
-      "fullLabel": "EP156 · 老中产吸干财富，新中产锁定基本盘。香港不再是避风港？新加坡或成最大赢家？",
-      "type": "episode",
-      "route": "episodes/EP156",
-      "summary": "5月以来一串孤立的金融事件被串成一条线。富途、老虎被罚没22亿，八部门整治非法跨境券商。香港银行倒查内地账户。国务院837号令把个人、技术、人才纳入对外投资监管。\n\n对老中产和高净值人群境外财富的回收。学特朗普“建墙”，逼两头跑的人选边。要么留国内受严管，要么彻底离开。另一边，靠国家拨款和国企流动的新中产正在长出来，因为更稳定可控。老中产去新加坡相对安全，置换会用五到十年完成。",
-      "status": "curated",
+      "id": "theme:middle-class-descent-and-stratification",
+      "key": "middle-class-descent-and-stratification",
+      "label": "中产下坠与分层社会",
+      "fullLabel": "中产下坠与分层社会",
+      "type": "theme",
+      "route": "themes/middle-class-descent-and-stratification",
+      "summary": "当中间层缺乏缓冲带时，经济下行会迅速转成身份下坠、关系断裂和社会分层加固。",
+      "status": null,
       "degree": 25
     },
     {
@@ -356,6 +378,17 @@
       "degree": 25
     },
     {
+      "id": "theme:dollar-system-and-gray-trade",
+      "key": "dollar-system-and-gray-trade",
+      "label": "美元体系与灰色贸易",
+      "fullLabel": "美元体系与灰色贸易",
+      "type": "theme",
+      "route": "themes/dollar-system-and-gray-trade",
+      "summary": "讨论石油美元的真实脆弱点，究竟藏在公开统计之外的哪些灰色交易链条里。",
+      "status": null,
+      "degree": 24
+    },
+    {
       "id": "concept:hidden-debt",
       "key": "hidden-debt",
       "label": "隐形债务",
@@ -363,17 +396,6 @@
       "type": "concept",
       "route": "concepts/hidden-debt",
       "summary": "表外、体外和合作链条里的债务不在显性报表中充分呈现，却会在危机时重新压回主体。",
-      "status": null,
-      "degree": 24
-    },
-    {
-      "id": "theme:middle-class-descent-and-stratification",
-      "key": "middle-class-descent-and-stratification",
-      "label": "中产下坠与分层社会",
-      "fullLabel": "中产下坠与分层社会",
-      "type": "theme",
-      "route": "themes/middle-class-descent-and-stratification",
-      "summary": "当中间层缺乏缓冲带时，经济下行会迅速转成身份下坠、关系断裂和社会分层加固。",
       "status": null,
       "degree": 24
     },
@@ -389,15 +411,15 @@
       "degree": 24
     },
     {
-      "id": "theme:dollar-system-and-gray-trade",
-      "key": "dollar-system-and-gray-trade",
-      "label": "美元体系与灰色贸易",
-      "fullLabel": "美元体系与灰色贸易",
-      "type": "theme",
-      "route": "themes/dollar-system-and-gray-trade",
-      "summary": "讨论石油美元的真实脆弱点，究竟藏在公开统计之外的哪些灰色交易链条里。",
+      "id": "concept:chokepoint-leverage",
+      "key": "chokepoint-leverage",
+      "label": "咽喉杠杆",
+      "fullLabel": "咽喉杠杆",
+      "type": "concept",
+      "route": "concepts/chokepoint-leverage",
+      "summary": "控制海峡、运河和关键通道的人，往往能把地理位置转化成定价权、通行权和规则权。",
       "status": null,
-      "degree": 23
+      "degree": 22
     },
     {
       "id": "episode:EP144",
@@ -433,6 +455,17 @@
       "degree": 22
     },
     {
+      "id": "theme:maritime-chokepoints-and-route-order",
+      "key": "maritime-chokepoints-and-route-order",
+      "label": "海峡命门与航运秩序",
+      "fullLabel": "海峡命门与航运秩序",
+      "type": "theme",
+      "route": "themes/maritime-chokepoints-and-route-order",
+      "summary": "讨论海峡、运河和关键航道如何把地理位置变成规则、保险、资本和军事的综合权力。",
+      "status": null,
+      "degree": 21
+    },
+    {
       "id": "model:path-dependence",
       "key": "path-dependence",
       "label": "路径依赖",
@@ -440,17 +473,6 @@
       "type": "model",
       "route": "models/path-dependence",
       "summary": "路径依赖解释早期技术和叙事选择一旦成功，就会反过来限制后续转向更优路径。",
-      "status": null,
-      "degree": 21
-    },
-    {
-      "id": "concept:chokepoint-leverage",
-      "key": "chokepoint-leverage",
-      "label": "咽喉杠杆",
-      "fullLabel": "咽喉杠杆",
-      "type": "concept",
-      "route": "concepts/chokepoint-leverage",
-      "summary": "控制海峡、运河和关键通道的人，往往能把地理位置转化成定价权、通行权和规则权。",
       "status": null,
       "degree": 21
     },
@@ -508,17 +530,6 @@
       "summary": "五百万起的剧本，一轮轮滚到六个亿的盘子，每加一个人就溢价一次。",
       "status": "curated",
       "degree": 21
-    },
-    {
-      "id": "theme:maritime-chokepoints-and-route-order",
-      "key": "maritime-chokepoints-and-route-order",
-      "label": "海峡命门与航运秩序",
-      "fullLabel": "海峡命门与航运秩序",
-      "type": "theme",
-      "route": "themes/maritime-chokepoints-and-route-order",
-      "summary": "讨论海峡、运河和关键航道如何把地理位置变成规则、保险、资本和军事的综合权力。",
-      "status": null,
-      "degree": 20
     },
     {
       "id": "person:donald-trump",
@@ -631,6 +642,17 @@
       "degree": 19
     },
     {
+      "id": "episode:EP185",
+      "key": "EP185",
+      "label": "EP185",
+      "fullLabel": "EP185 · 香港超瑞士、新加坡成全球离岸财富第一？实则只是东大诸多财富的溢出集散地。",
+      "type": "episode",
+      "route": "episodes/EP185",
+      "summary": "香港超过瑞士和新加坡，成为全球第一大离岸财富管理中心。财经媒体一片造势，可这盆冷水得泼。这不是全球资本涌向香港，而是东大财富溢出的集散地。拆开资金来源，内地占六成。主力是后知后觉的中小老板，和围绕公务体系的新中产。台湾资金和回流的灰色贸易资金补足其余。把钱挪到香港，只是从一个棋盘跳进另一个监管更快的棋盘。监管备好的框，迟早统一收网。资产安全从来不靠挪位置。靠的是干净的底子、清晰的架构和个人格局。",
+      "status": "curated",
+      "degree": 19
+    },
+    {
       "id": "model:value-capture",
       "key": "value-capture",
       "label": "价值捕获",
@@ -660,17 +682,6 @@
       "type": "episode",
       "route": "episodes/EP139",
       "summary": "耿同学举报学术造假。不重复图片复用和数据篡改的细节。要把论文造假和产业研发里的参数造假，放进同一套 KPI 逻辑里看。真正危险的不是几篇论文翻车，而是指标先被定死。真实实验达不到时，组织就改数据、锁显示、改测试，让结果看起来达标。某车企超充电池的温度显示被锁死在 71 度。技术卖点、营销节奏和绩效考核一旦压过安全边界，风险就会外溢。它从论文、实验室和发布会进入真实产品，最后由消费者和纳税人承担。",
-      "status": "curated",
-      "degree": 18
-    },
-    {
-      "id": "episode:EP185",
-      "key": "EP185",
-      "label": "EP185",
-      "fullLabel": "EP185 · 香港超瑞士、新加坡成全球离岸财富第一？实则只是东大诸多财富的溢出集散地。",
-      "type": "episode",
-      "route": "episodes/EP185",
-      "summary": "香港超过瑞士和新加坡，成为全球第一大离岸财富管理中心。财经媒体一片造势，可这盆冷水得泼。这不是全球资本涌向香港，而是东大财富溢出的集散地。拆开资金来源，内地占六成。主力是后知后觉的中小老板，和围绕公务体系的新中产。台湾资金和回流的灰色贸易资金补足其余。把钱挪到香港，只是从一个棋盘跳进另一个监管更快的棋盘。监管备好的框，迟早统一收网。资产安全从来不靠挪位置。靠的是干净的底子、清晰的架构和个人格局。",
       "status": "curated",
       "degree": 18
     },
@@ -752,6 +763,28 @@
       "degree": 17
     },
     {
+      "id": "episode:EP180",
+      "key": "EP180",
+      "label": "EP180",
+      "fullLabel": "EP180 · 俄乌惨烈互捅！四方博弈暗流涌动，谁是地堡老头真正的敌人？",
+      "type": "episode",
+      "route": "episodes/EP180",
+      "summary": "俄乌战争像两个互捅的血人。乌克兰无人机在俄罗斯纵深来去自如，炸掉约一成炼油产能。克里米亚的炼油设施和油轮被逐个点名。俄罗斯用多型导弹饱和攻击基辅。乌克兰的重点目标却早被炸完，经济全靠欧盟输血吊命。\n\n重点是东大态度之变。川普撤盘后，接手乌克兰的欧盟正是东大最大的贸易顺差来源。继续挺俄等于把欧盟变成敌人。于是东大表面亲如兄弟，实际处处收手。再叠加油价下行掏空俄财政，预测年底前战争出现阶段性结果。",
+      "status": "curated",
+      "degree": 17
+    },
+    {
+      "id": "episode:EP189",
+      "key": "EP189",
+      "label": "EP189",
+      "fullLabel": "EP189 · 某国为何能短时间大幅减少石油进口？断崖领先的石油进口国背后谋划的真相！",
+      "type": "episode",
+      "route": "episodes/EP189",
+      "summary": "石油进口量断崖式世界第一的某国，日均消耗近1500万桶。美以与伊朗军事行动展开、霍尔木兹海峡被封后，进口在三四个月内减少三成多。排除三种主流解释，短期油价、新能源替代和动用战略储备。它的真实需求本来就只有进口量的三分之二。多出的部分多年来一直在转成战备储油。海峡一封，它只是停止增储，退回真实需求。所以进口暴跌，工业毫发无伤。台海一旦升级成中大型战争，石油要按两年来储，而不是120天。",
+      "status": "curated",
+      "degree": 17
+    },
+    {
       "id": "concept:cost-shifting",
       "key": "cost-shifting",
       "label": "成本外移",
@@ -770,6 +803,17 @@
       "type": "theme",
       "route": "themes/southeast-asia-fragmentation-and-bloc-competition",
       "summary": "讨论东南亚如何从缓冲地带变成各方拉扯、重新站队和内部裂变并行发生的高风险区域。",
+      "status": null,
+      "degree": 16
+    },
+    {
+      "id": "concept:gray-oil-network",
+      "key": "gray-oil-network",
+      "label": "灰色石油网络",
+      "fullLabel": "灰色石油网络",
+      "type": "concept",
+      "route": "concepts/gray-oil-network",
+      "summary": "绕开正规结算和监管的石油流动，会在影子体系中重塑货币、制裁和地缘利益。",
       "status": null,
       "degree": 16
     },
@@ -840,24 +884,13 @@
       "degree": 16
     },
     {
-      "id": "episode:EP180",
-      "key": "EP180",
-      "label": "EP180",
-      "fullLabel": "EP180 · 俄乌惨烈互捅！四方博弈暗流涌动，谁是地堡老头真正的敌人？",
+      "id": "episode:EP168",
+      "key": "EP168",
+      "label": "EP168",
+      "fullLabel": "EP168 · 美伊协议谁赢了？油价为何没涨到300美元？",
       "type": "episode",
-      "route": "episodes/EP180",
-      "summary": "俄乌战争像两个互捅的血人。乌克兰无人机在俄罗斯纵深来去自如，炸掉约一成炼油产能。克里米亚的炼油设施和油轮被逐个点名。俄罗斯用多型导弹饱和攻击基辅。乌克兰的重点目标却早被炸完，经济全靠欧盟输血吊命。\n\n重点是东大态度之变。川普撤盘后，接手乌克兰的欧盟正是东大最大的贸易顺差来源。继续挺俄等于把欧盟变成敌人。于是东大表面亲如兄弟，实际处处收手。再叠加油价下行掏空俄财政，预测年底前战争出现阶段性结果。",
-      "status": "curated",
-      "degree": 16
-    },
-    {
-      "id": "episode:EP189",
-      "key": "EP189",
-      "label": "EP189",
-      "fullLabel": "EP189 · 某国为何能短时间大幅减少石油进口？断崖领先的石油进口国背后谋划的真相！",
-      "type": "episode",
-      "route": "episodes/EP189",
-      "summary": "石油进口量断崖式世界第一的某国，日均消耗近1500万桶。美以与伊朗军事行动展开、霍尔木兹海峡被封后，进口在三四个月内减少三成多。排除三种主流解释，短期油价、新能源替代和动用战略储备。它的真实需求本来就只有进口量的三分之二。多出的部分多年来一直在转成战备储油。海峡一封，它只是停止增储，退回真实需求。所以进口暴跌，工业毫发无伤。台海一旦升级成中大型战争，石油要按两年来储，而不是120天。",
+      "route": "episodes/EP168",
+      "summary": "重读美伊协议，解读和主流叙事相反。主流叙事是美国出问题、川普认输、伊朗大胜。这份协议不是认输，是委内瑞拉模式的 2.0 版。美国要的从来就是打掉最高领导人，换一个能谈的。脏活交给以色列。\n\n没换到合适的，就先签协议，做时间的朋友。油价没涨到 200 至 300 美元，说明需求本来就被高估了。美国还趁机卖委内瑞拉的油去库存。真正被盯住的是灰色贸易，逼伊朗回SWIFT和美元体系才是开战动机。",
       "status": "curated",
       "degree": 16
     },
@@ -884,17 +917,6 @@
       "degree": 15
     },
     {
-      "id": "concept:gray-oil-network",
-      "key": "gray-oil-network",
-      "label": "灰色石油网络",
-      "fullLabel": "灰色石油网络",
-      "type": "concept",
-      "route": "concepts/gray-oil-network",
-      "summary": "绕开正规结算和监管的石油流动，会在影子体系中重塑货币、制裁和地缘利益。",
-      "status": null,
-      "degree": 15
-    },
-    {
       "id": "episode:EP123",
       "key": "EP123",
       "label": "EP123",
@@ -913,17 +935,6 @@
       "type": "episode",
       "route": "episodes/EP146",
       "summary": "央视拿下 2026 到 2031 年四届世界杯转播权，社交媒体一片砍价封神。网传 6000 万美元单届价和 1.1 亿四届打包价，数学冲突。倾向单届价真、打包价假，为的是压低本届广告商预期。三件事咬得紧。FIFA 秘书长和温格先去足协不是央视。温格指导 U14，财政部同步宣布 5 亿元校园足球投入。本是商业谈判，被包装成民族胜利。央视垄断稳赚不赔，观众照样熬夜看广告充会员。体育归体育，商业归商业。",
-      "status": "curated",
-      "degree": 15
-    },
-    {
-      "id": "episode:EP168",
-      "key": "EP168",
-      "label": "EP168",
-      "fullLabel": "EP168 · 美伊协议谁赢了？油价为何没涨到300美元？",
-      "type": "episode",
-      "route": "episodes/EP168",
-      "summary": "重读美伊协议，解读和主流叙事相反。主流叙事是美国出问题、川普认输、伊朗大胜。这份协议不是认输，是委内瑞拉模式的 2.0 版。美国要的从来就是打掉最高领导人，换一个能谈的。脏活交给以色列。\n\n没换到合适的，就先签协议，做时间的朋友。油价没涨到 200 至 300 美元，说明需求本来就被高估了。美国还趁机卖委内瑞拉的油去库存。真正被盯住的是灰色贸易，逼伊朗回SWIFT和美元体系才是开战动机。",
       "status": "curated",
       "degree": 15
     },
@@ -1093,6 +1104,17 @@
       "degree": 14
     },
     {
+      "id": "model:chokepoint-order-model",
+      "key": "chokepoint-order-model",
+      "label": "海峡秩序模型",
+      "fullLabel": "海峡秩序模型",
+      "type": "model",
+      "route": "models/chokepoint-order-model",
+      "summary": "真正决定咽喉通道价值的，不只是地理位置，而是谁定义通行规则、风险定价与法律边界。",
+      "status": null,
+      "degree": 13
+    },
+    {
       "id": "theme:ev-collapse-and-exit-risk",
       "key": "ev-collapse-and-exit-risk",
       "label": "新能源崩塌与退出风险",
@@ -1159,6 +1181,17 @@
       "degree": 13
     },
     {
+      "id": "episode:EP130",
+      "key": "EP130",
+      "label": "EP130",
+      "fullLabel": "EP130 · 马六甲“收费站”24小时闹剧：印尼的野心与新加坡、马来西亚的坚决反对！【EP130】",
+      "type": "episode",
+      "route": "episodes/EP130",
+      "summary": "印尼财长提出仿照霍尔木兹给马六甲收费，风波持续 24 小时。新加坡和马来西亚几乎同步反对。马六甲真正值钱的不是一次性过路费。而是长期不收费、可预期、可停靠、可服务的航运秩序。新加坡靠服务费、金融和港口信用吃饭，马来西亚靠港口、灰色贸易和中转利益吃饭。印尼因地理和港口条件拿不到对应收益，才会试探性提出收费。把它放进霍尔木兹、影子舰队和东南亚裂变里看。全球航运秩序正在被短期设卡套利逻辑冲击。",
+      "status": "curated",
+      "degree": 13
+    },
+    {
       "id": "episode:EP164",
       "key": "EP164",
       "label": "EP164",
@@ -1214,6 +1247,17 @@
       "degree": 13
     },
     {
+      "id": "episode:EP188",
+      "key": "EP188",
+      "label": "EP188",
+      "fullLabel": "EP188 · 新加坡家族办公室五年暴涨6倍？解决富豪传承死穴，老钱跨越百年的底层逻辑！",
+      "type": "episode",
+      "route": "episodes/EP188",
+      "summary": "新加坡单一家族办公室五年从400家涨到2750家。它不是富豪的炒股团队，是解决代际传承死穴的制度工具。血缘筛选保证不了后代能力。长子继承制只防资产分割，防不住财富流失。唯一出路是所有权与经营权彻底分割。家族握住所有权和收益权，投资、信托、税务、合规交给专业团队。老钱扎堆新加坡、瑞士，是要脱离大国国运周期的中立法域。这与小国对干净长钱的需求双向奔赴。老钱和新钱的真正区别就在这儿，用制度对抗人性和周期。",
+      "status": "curated",
+      "degree": 13
+    },
+    {
       "id": "episode:EP193",
       "key": "EP193",
       "label": "EP193",
@@ -1232,17 +1276,6 @@
       "type": "theme",
       "route": "themes/real-estate-deleveraging",
       "summary": "讨论房地产在下行周期里如何通过断供、重组、展期和资产处置逐步暴露风险。",
-      "status": null,
-      "degree": 12
-    },
-    {
-      "id": "model:chokepoint-order-model",
-      "key": "chokepoint-order-model",
-      "label": "海峡秩序模型",
-      "fullLabel": "海峡秩序模型",
-      "type": "model",
-      "route": "models/chokepoint-order-model",
-      "summary": "真正决定咽喉通道价值的，不只是地理位置，而是谁定义通行规则、风险定价与法律边界。",
       "status": null,
       "degree": 12
     },
@@ -1346,17 +1379,6 @@
       "degree": 12
     },
     {
-      "id": "episode:EP130",
-      "key": "EP130",
-      "label": "EP130",
-      "fullLabel": "EP130 · 马六甲“收费站”24小时闹剧：印尼的野心与新加坡、马来西亚的坚决反对！【EP130】",
-      "type": "episode",
-      "route": "episodes/EP130",
-      "summary": "印尼财长提出仿照霍尔木兹给马六甲收费，风波持续 24 小时。新加坡和马来西亚几乎同步反对。马六甲真正值钱的不是一次性过路费。而是长期不收费、可预期、可停靠、可服务的航运秩序。新加坡靠服务费、金融和港口信用吃饭，马来西亚靠港口、灰色贸易和中转利益吃饭。印尼因地理和港口条件拿不到对应收益，才会试探性提出收费。把它放进霍尔木兹、影子舰队和东南亚裂变里看。全球航运秩序正在被短期设卡套利逻辑冲击。",
-      "status": "curated",
-      "degree": 12
-    },
-    {
       "id": "episode:EP140",
       "key": "EP140",
       "label": "EP140",
@@ -1386,17 +1408,6 @@
       "type": "episode",
       "route": "episodes/EP149",
       "summary": "国内自媒体炒作李显龙绕开北京、中新关系出现大裂痕。这是谣言。李显龙本就没打算去北京开高层会谈，他要的是下沉到中国经济里亲眼考察实况。五天行程，广西看西部陆海新通道与平陆运河，上海看人工智能与外资总部。这趟是务实低调的经济考察。目的是为黄循财政府的下一步和新加坡的投资方向提供依据。再把分散投资风险接到菲律宾选边站和东南亚动荡上。小国夹在中美之间，靠的是平衡和规则。",
-      "status": "curated",
-      "degree": 12
-    },
-    {
-      "id": "episode:EP188",
-      "key": "EP188",
-      "label": "EP188",
-      "fullLabel": "EP188 · 新加坡家族办公室五年暴涨6倍？解决富豪传承死穴，老钱跨越百年的底层逻辑！",
-      "type": "episode",
-      "route": "episodes/EP188",
-      "summary": "新加坡单一家族办公室五年从400家涨到2750家。它不是富豪的炒股团队，是解决代际传承死穴的制度工具。血缘筛选保证不了后代能力。长子继承制只防资产分割，防不住财富流失。唯一出路是所有权与经营权彻底分割。家族握住所有权和收益权，投资、信托、税务、合规交给专业团队。老钱扎堆新加坡、瑞士，是要脱离大国国运周期的中立法域。这与小国对干净长钱的需求双向奔赴。老钱和新钱的真正区别就在这儿，用制度对抗人性和周期。",
       "status": "curated",
       "degree": 12
     },
@@ -2149,6 +2160,17 @@
       "degree": 8
     },
     {
+      "id": "concept:jurisdiction-arbitrage",
+      "key": "jurisdiction-arbitrage",
+      "label": "法域套利",
+      "fullLabel": "法域套利",
+      "type": "concept",
+      "route": "concepts/jurisdiction-arbitrage",
+      "summary": "企业通过选择更有利法域，获取融资、估值、合规和退出上的制度差价。",
+      "status": null,
+      "degree": 8
+    },
+    {
       "id": "model:distributed-innovation",
       "key": "distributed-innovation",
       "label": "分布式创新",
@@ -2189,6 +2211,17 @@
       "type": "person",
       "route": "people/lee-kuan-yew",
       "summary": "李光耀是新加坡建国总理，节目借他说明新加坡国家身份、国家责任和小国生存决心怎样压过祖籍血缘与软弱叙事。",
+      "status": null,
+      "degree": 8
+    },
+    {
+      "id": "theme:deglobalization-and-cultural-fragmentation",
+      "key": "deglobalization-and-cultural-fragmentation",
+      "label": "逆全球化与文化碎片化",
+      "fullLabel": "逆全球化与文化碎片化",
+      "type": "theme",
+      "route": "themes/deglobalization-and-cultural-fragmentation",
+      "summary": "讨论全球舞台如何从英语中心和统一审美，转向更地方化、更圈层化的表达竞争。",
       "status": null,
       "degree": 8
     },
@@ -2237,6 +2270,17 @@
       "degree": 8
     },
     {
+      "id": "concept:time-asymmetry",
+      "key": "time-asymmetry",
+      "label": "时间非对称",
+      "fullLabel": "时间非对称",
+      "type": "concept",
+      "route": "concepts/time-asymmetry",
+      "summary": "真正决定战略胜负的，往往不是一场仗的强弱，而是谁能把时间变成自己的朋友。",
+      "status": null,
+      "degree": 8
+    },
+    {
       "id": "concept:pragmatic-legitimacy",
       "key": "pragmatic-legitimacy",
       "label": "务实合法性",
@@ -2244,6 +2288,17 @@
       "type": "concept",
       "route": "concepts/pragmatic-legitimacy",
       "summary": "政权或共同体的稳定感，常来自普通人能持续获得可感的生活改善和秩序保障。",
+      "status": null,
+      "degree": 8
+    },
+    {
+      "id": "theme:small-state-balancing",
+      "key": "small-state-balancing",
+      "label": "小国平衡与地缘生存",
+      "fullLabel": "小国平衡与地缘生存",
+      "type": "theme",
+      "route": "themes/small-state-balancing",
+      "summary": "讨论新加坡这类小国如何在大国竞争中维持安全、合法性和现实利益。",
       "status": null,
       "degree": 8
     },
@@ -2666,17 +2721,6 @@
       "degree": 7
     },
     {
-      "id": "concept:jurisdiction-arbitrage",
-      "key": "jurisdiction-arbitrage",
-      "label": "法域套利",
-      "fullLabel": "法域套利",
-      "type": "concept",
-      "route": "concepts/jurisdiction-arbitrage",
-      "summary": "企业通过选择更有利法域，获取融资、估值、合规和退出上的制度差价。",
-      "status": null,
-      "degree": 7
-    },
-    {
       "id": "model:succession-governance",
       "key": "succession-governance",
       "label": "继承治理模型",
@@ -2699,17 +2743,6 @@
       "degree": 7
     },
     {
-      "id": "theme:deglobalization-and-cultural-fragmentation",
-      "key": "deglobalization-and-cultural-fragmentation",
-      "label": "逆全球化与文化碎片化",
-      "fullLabel": "逆全球化与文化碎片化",
-      "type": "theme",
-      "route": "themes/deglobalization-and-cultural-fragmentation",
-      "summary": "讨论全球舞台如何从英语中心和统一审美，转向更地方化、更圈层化的表达竞争。",
-      "status": null,
-      "degree": 7
-    },
-    {
       "id": "theme:human-value-and-state-credit",
       "key": "human-value-and-state-credit",
       "label": "人的价值与国家信用",
@@ -2717,17 +2750,6 @@
       "type": "theme",
       "route": "themes/human-value-and-state-credit",
       "summary": "讨论国家究竟把个体视为成本、工具，还是视为必须兑现承诺的对象。",
-      "status": null,
-      "degree": 7
-    },
-    {
-      "id": "concept:time-asymmetry",
-      "key": "time-asymmetry",
-      "label": "时间非对称",
-      "fullLabel": "时间非对称",
-      "type": "concept",
-      "route": "concepts/time-asymmetry",
-      "summary": "真正决定战略胜负的，往往不是一场仗的强弱，而是谁能把时间变成自己的朋友。",
       "status": null,
       "degree": 7
     },
@@ -2776,17 +2798,6 @@
       "degree": 7
     },
     {
-      "id": "theme:small-state-balancing",
-      "key": "small-state-balancing",
-      "label": "小国平衡与地缘生存",
-      "fullLabel": "小国平衡与地缘生存",
-      "type": "theme",
-      "route": "themes/small-state-balancing",
-      "summary": "讨论新加坡这类小国如何在大国竞争中维持安全、合法性和现实利益。",
-      "status": null,
-      "degree": 7
-    },
-    {
       "id": "model:primary-market-logic",
       "key": "primary-market-logic",
       "label": "一级市场逻辑投二级市场",
@@ -2816,6 +2827,28 @@
       "type": "concept",
       "route": "concepts/transfer-payment-dependency",
       "summary": "转移支付依赖指地方运转越来越靠上级财政输血，而不是靠本地产业和税源形成真实闭环。",
+      "status": null,
+      "degree": 7
+    },
+    {
+      "id": "theme:capital-exit-and-cross-border-harvest",
+      "key": "capital-exit-and-cross-border-harvest",
+      "label": "资本博弈与美元退出",
+      "fullLabel": "资本博弈与美元退出",
+      "type": "theme",
+      "route": "themes/capital-exit-and-cross-border-harvest",
+      "summary": "危机、停牌或重组时期，真正被争夺的往往不是公司本身，而是跨法域的退出通道和美元化收益。",
+      "status": null,
+      "degree": 7
+    },
+    {
+      "id": "model:asset-preservation-architecture",
+      "key": "asset-preservation-architecture",
+      "label": "资产保全架构",
+      "fullLabel": "资产保全架构",
+      "type": "model",
+      "route": "models/asset-preservation-architecture",
+      "summary": "资产保全架构强调财富安全取决于来源、法域、时间前置和退出节奏的组合。",
       "status": null,
       "degree": 7
     },
@@ -3073,6 +3106,17 @@
       "degree": 6
     },
     {
+      "id": "theme:trust-and-asset-preservation",
+      "key": "trust-and-asset-preservation",
+      "label": "家族信托与资产保全",
+      "fullLabel": "家族信托与资产保全",
+      "type": "theme",
+      "route": "themes/trust-and-asset-preservation",
+      "summary": "讨论信托、离岸架构、上市与退出动作如何共同决定财富能不能穿越周期。",
+      "status": null,
+      "degree": 6
+    },
+    {
       "id": "concept:delayed-price-discovery",
       "key": "delayed-price-discovery",
       "label": "价格发现延迟",
@@ -3223,28 +3267,6 @@
       "type": "model",
       "route": "models/regime-replacement-playbook",
       "summary": "不颠覆整套政权，只反复换掉最高领导人、直到换出一个能合作的为止的低成本施压剧本。",
-      "status": null,
-      "degree": 6
-    },
-    {
-      "id": "theme:capital-exit-and-cross-border-harvest",
-      "key": "capital-exit-and-cross-border-harvest",
-      "label": "资本博弈与美元退出",
-      "fullLabel": "资本博弈与美元退出",
-      "type": "theme",
-      "route": "themes/capital-exit-and-cross-border-harvest",
-      "summary": "危机、停牌或重组时期，真正被争夺的往往不是公司本身，而是跨法域的退出通道和美元化收益。",
-      "status": null,
-      "degree": 6
-    },
-    {
-      "id": "model:asset-preservation-architecture",
-      "key": "asset-preservation-architecture",
-      "label": "资产保全架构",
-      "fullLabel": "资产保全架构",
-      "type": "model",
-      "route": "models/asset-preservation-architecture",
-      "summary": "资产保全架构强调财富安全取决于来源、法域、时间前置和退出节奏的组合。",
       "status": null,
       "degree": 6
     },
@@ -3590,13 +3612,13 @@
       "degree": 5
     },
     {
-      "id": "theme:trust-and-asset-preservation",
-      "key": "trust-and-asset-preservation",
-      "label": "家族信托与资产保全",
-      "fullLabel": "家族信托与资产保全",
-      "type": "theme",
-      "route": "themes/trust-and-asset-preservation",
-      "summary": "讨论信托、离岸架构、上市与退出动作如何共同决定财富能不能穿越周期。",
+      "id": "model:wall-and-gray-trade-crackdown",
+      "key": "wall-and-gray-trade-crackdown",
+      "label": "建墙与打灰模型",
+      "fullLabel": "建墙与打灰模型",
+      "type": "model",
+      "route": "models/wall-and-gray-trade-crackdown",
+      "summary": "建墙与打灰模型把川普的全球策略概括为两条隐藏逻辑：建墙分清敌我盟友、打击灰色贸易逼交易回归美元。",
       "status": null,
       "degree": 5
     },
@@ -3821,6 +3843,17 @@
       "degree": 5
     },
     {
+      "id": "concept:middle-class-reservoir",
+      "key": "middle-class-reservoir",
+      "label": "中产蓄水池",
+      "fullLabel": "中产蓄水池",
+      "type": "concept",
+      "route": "concepts/middle-class-reservoir",
+      "summary": "中产财富在好年景蓄水、缓冲社会矛盾，在系统缺水时被反向抽回补给主河道——节目认为这是全球共性，不是某一国的问题。",
+      "status": null,
+      "degree": 5
+    },
+    {
       "id": "theme:capital-packaging-and-credential-borrowing",
       "key": "capital-packaging-and-credential-borrowing",
       "label": "资本包装与身份背书",
@@ -3839,6 +3872,17 @@
       "type": "model",
       "route": "models/capital-entry-window",
       "summary": "资本最容易进入的是缺钱、虚弱的企业；强盈利、强话语权、强后台的企业即使被人眼红，短期也很难被资本切入。",
+      "status": null,
+      "degree": 5
+    },
+    {
+      "id": "concept:asset-disposal-channel",
+      "key": "asset-disposal-channel",
+      "label": "资产处置通道",
+      "fullLabel": "资产处置通道",
+      "type": "concept",
+      "route": "concepts/asset-disposal-channel",
+      "summary": "旧出清通道承载不了风险时，系统会发明新的资产处置路径来争取流动性。",
       "status": null,
       "degree": 5
     },
@@ -4239,17 +4283,6 @@
       "degree": 4
     },
     {
-      "id": "model:wall-and-gray-trade-crackdown",
-      "key": "wall-and-gray-trade-crackdown",
-      "label": "建墙与打灰模型",
-      "fullLabel": "建墙与打灰模型",
-      "type": "model",
-      "route": "models/wall-and-gray-trade-crackdown",
-      "summary": "建墙与打灰模型把川普的全球策略概括为两条隐藏逻辑：建墙分清敌我盟友、打击灰色贸易逼交易回归美元。",
-      "status": null,
-      "degree": 4
-    },
-    {
       "id": "person:elon-musk",
       "key": "elon-musk",
       "label": "马斯克",
@@ -4404,6 +4437,17 @@
       "degree": 4
     },
     {
+      "id": "model:middle-class-replacement-cycle",
+      "key": "middle-class-replacement-cycle",
+      "label": "新旧中产置换",
+      "fullLabel": "新旧中产置换",
+      "type": "model",
+      "route": "models/middle-class-replacement-cycle",
+      "summary": "新旧中产置换解释一个社会怎样用更可控的体制型中产，替换掉靠市场打拼、财富外流不可控的老中产，从而把财富和消费重新锚定在国内。",
+      "status": null,
+      "degree": 4
+    },
+    {
       "id": "concept:information-cocoon-breach",
       "key": "information-cocoon-breach",
       "label": "信息茧房破口",
@@ -4470,17 +4514,6 @@
       "degree": 4
     },
     {
-      "id": "concept:middle-class-reservoir",
-      "key": "middle-class-reservoir",
-      "label": "中产蓄水池",
-      "fullLabel": "中产蓄水池",
-      "type": "concept",
-      "route": "concepts/middle-class-reservoir",
-      "summary": "中产财富在好年景蓄水、缓冲社会矛盾，在系统缺水时被反向抽回补给主河道——节目认为这是全球共性，不是某一国的问题。",
-      "status": null,
-      "degree": 4
-    },
-    {
       "id": "theme:housing-burden-and-income-distribution",
       "key": "housing-burden-and-income-distribution",
       "label": "住房税负与收入分配",
@@ -4488,17 +4521,6 @@
       "type": "theme",
       "route": "themes/housing-burden-and-income-distribution",
       "summary": "讨论住房、税负和可支配收入之间的关系，尤其关注中低收入群体被抽走了多少上升空间。",
-      "status": null,
-      "degree": 4
-    },
-    {
-      "id": "concept:asset-disposal-channel",
-      "key": "asset-disposal-channel",
-      "label": "资产处置通道",
-      "fullLabel": "资产处置通道",
-      "type": "concept",
-      "route": "concepts/asset-disposal-channel",
-      "summary": "旧出清通道承载不了风险时，系统会发明新的资产处置路径来争取流动性。",
       "status": null,
       "degree": 4
     },
@@ -4675,6 +4697,17 @@
       "type": "concept",
       "route": "concepts/surface-alliance-hedging",
       "summary": "对外维持亲如兄弟的同盟姿态，实际收缩支持、两头下注，把姿态做给利益更大的第三方看。",
+      "status": null,
+      "degree": 3
+    },
+    {
+      "id": "concept:wealth-repatriation-squeeze",
+      "key": "wealth-repatriation-squeeze",
+      "label": "财富回收挤压",
+      "fullLabel": "财富回收挤压",
+      "type": "concept",
+      "route": "concepts/wealth-repatriation-squeeze",
+      "summary": "财富回收挤压指国家通过收紧跨境通道、倒查境外账户和扩大对外投资监管，把高净值人群游离在监管外的境外财富重新定住、纳入体系并施加补税与缩水压力。",
       "status": null,
       "degree": 3
     },
@@ -4987,6 +5020,17 @@
       "degree": 3
     },
     {
+      "id": "theme:travel-politics-and-border-screening",
+      "key": "travel-politics-and-border-screening",
+      "label": "跨境旅游、边检与主权筛查",
+      "fullLabel": "跨境旅游、边检与主权筛查",
+      "type": "theme",
+      "route": "themes/travel-politics-and-border-screening",
+      "summary": "讨论免签、遣返、旅游安全和政治叙事如何改变普通人对跨境旅行的判断。",
+      "status": null,
+      "degree": 3
+    },
+    {
       "id": "person:lei-jun",
       "key": "lei-jun",
       "label": "雷军",
@@ -5097,6 +5141,17 @@
       "degree": 3
     },
     {
+      "id": "concept:globalization-as-disclosure",
+      "key": "globalization-as-disclosure",
+      "label": "全球化即公开披露",
+      "fullLabel": "全球化即公开披露",
+      "type": "concept",
+      "route": "concepts/globalization-as-disclosure",
+      "summary": "全球化的本质是各国把生产、消费和价格公开披露，形成像上市公司体系那样透明的市场；灰色贸易就是绕开披露、退回不透明的国与国交易。",
+      "status": null,
+      "degree": 3
+    },
+    {
       "id": "concept:collective-self-domestication",
       "key": "collective-self-domestication",
       "label": "群体自我驯化",
@@ -5192,17 +5247,6 @@
       "type": "concept",
       "route": "concepts/system-rollback",
       "summary": "系统回滚指社会从增长、能力和市场规则导向，退回到安稳、身份和存量兜底导向。",
-      "status": null,
-      "degree": 3
-    },
-    {
-      "id": "model:middle-class-replacement-cycle",
-      "key": "middle-class-replacement-cycle",
-      "label": "新旧中产置换",
-      "fullLabel": "新旧中产置换",
-      "type": "model",
-      "route": "models/middle-class-replacement-cycle",
-      "summary": "新旧中产置换解释一个社会怎样用更可控的体制型中产，替换掉靠市场打拼、财富外流不可控的老中产，从而把财富和消费重新锚定在国内。",
       "status": null,
       "degree": 3
     },
@@ -5438,17 +5482,6 @@
       "degree": 2
     },
     {
-      "id": "concept:wealth-repatriation-squeeze",
-      "key": "wealth-repatriation-squeeze",
-      "label": "财富回收挤压",
-      "fullLabel": "财富回收挤压",
-      "type": "concept",
-      "route": "concepts/wealth-repatriation-squeeze",
-      "summary": "财富回收挤压指国家通过收紧跨境通道、倒查境外账户和扩大对外投资监管，把高净值人群游离在监管外的境外财富重新定住、纳入体系并施加补税与缩水压力。",
-      "status": null,
-      "degree": 2
-    },
-    {
       "id": "theme:wealth-inheritance-and-relational-distortion",
       "key": "wealth-inheritance-and-relational-distortion",
       "label": "财富继承与关系扭曲",
@@ -5544,6 +5577,17 @@
       "type": "concept",
       "route": "concepts/welfare-ratchet",
       "summary": "补贴和福利只能加不能减：经济做好选民不加分，砍福利一定下台，政客被锁进透支未来的短期维稳。",
+      "status": null,
+      "degree": 2
+    },
+    {
+      "id": "model:follower-advantage-collapse",
+      "key": "follower-advantage-collapse",
+      "label": "跟随者失效",
+      "fullLabel": "跟随者失效",
+      "type": "model",
+      "route": "models/follower-advantage-collapse",
+      "summary": "增量时代跟着别人走最划算，进入存量博弈之后，同一批跟随者从红利分享者变成成本承担者。",
       "status": null,
       "degree": 2
     },
@@ -5735,17 +5779,6 @@
       "degree": 2
     },
     {
-      "id": "theme:travel-politics-and-border-screening",
-      "key": "travel-politics-and-border-screening",
-      "label": "跨境旅游、边检与主权筛查",
-      "fullLabel": "跨境旅游、边检与主权筛查",
-      "type": "theme",
-      "route": "themes/travel-politics-and-border-screening",
-      "summary": "讨论免签、遣返、旅游安全和政治叙事如何改变普通人对跨境旅行的判断。",
-      "status": null,
-      "degree": 2
-    },
-    {
       "id": "theme:cross-disciplinary-education-and-report-culture",
       "key": "cross-disciplinary-education-and-report-culture",
       "label": "跨学科教育与举报文化",
@@ -5856,17 +5889,6 @@
       "degree": 2
     },
     {
-      "id": "concept:globalization-as-disclosure",
-      "key": "globalization-as-disclosure",
-      "label": "全球化即公开披露",
-      "fullLabel": "全球化即公开披露",
-      "type": "concept",
-      "route": "concepts/globalization-as-disclosure",
-      "summary": "全球化的本质是各国把生产、消费和价格公开披露，形成像上市公司体系那样透明的市场；灰色贸易就是绕开披露、退回不透明的国与国交易。",
-      "status": null,
-      "degree": 2
-    },
-    {
       "id": "concept:human-centered-contract",
       "key": "human-centered-contract",
       "label": "人本契约",
@@ -5918,6 +5940,17 @@
       "type": "concept",
       "route": "concepts/time-window-reading",
       "summary": "同一动作在不同周期中的意义不同，判断决策必须先看它发生在哪个时间窗口。",
+      "status": null,
+      "degree": 2
+    },
+    {
+      "id": "concept:ownership-management-separation",
+      "key": "ownership-management-separation",
+      "label": "所有权与经营权分割",
+      "fullLabel": "所有权与经营权分割",
+      "type": "concept",
+      "route": "concepts/ownership-management-separation",
+      "summary": "家族握住资产所有权和收益权，把投资、信托、税务、运营全部交给专业团队，用制度代替血缘完成传承，这是家族办公室的底层逻辑。",
       "status": null,
       "degree": 2
     },
@@ -6017,6 +6050,17 @@
       "type": "concept",
       "route": "concepts/system-fallback",
       "summary": "复杂系统不能只靠一个大脑或一层控制，必须在异常状态下保留可执行的多层接管和降级能力。",
+      "status": null,
+      "degree": 2
+    },
+    {
+      "id": "concept:tainted-asset-shield",
+      "key": "tainted-asset-shield",
+      "label": "瑕疵资产击穿",
+      "fullLabel": "瑕疵资产击穿",
+      "type": "concept",
+      "route": "concepts/tainted-asset-shield",
+      "summary": "资产来源若带有旧瑕疵，信托、保险和离岸结构也可能被追穿。",
       "status": null,
       "degree": 2
     },
@@ -6435,17 +6479,6 @@
       "type": "person",
       "route": "people/mattias-grafstrom",
       "summary": "格拉夫斯特伦是瑞典/荷兰背景的足球行政人物、FIFA 现任秘书长(2024 年正式任),节目里他是 FIFA 在华推广动作的执行代表。",
-      "status": null,
-      "degree": 1
-    },
-    {
-      "id": "model:follower-advantage-collapse",
-      "key": "follower-advantage-collapse",
-      "label": "跟随者失效",
-      "fullLabel": "跟随者失效",
-      "type": "model",
-      "route": "models/follower-advantage-collapse",
-      "summary": "增量时代跟着别人走最划算，进入存量博弈之后，同一批跟随者从红利分享者变成成本承担者。",
       "status": null,
       "degree": 1
     },
@@ -7022,17 +7055,6 @@
       "degree": 1
     },
     {
-      "id": "concept:ownership-management-separation",
-      "key": "ownership-management-separation",
-      "label": "所有权与经营权分割",
-      "fullLabel": "所有权与经营权分割",
-      "type": "concept",
-      "route": "concepts/ownership-management-separation",
-      "summary": "家族握住资产所有权和收益权，把投资、信托、税务、运营全部交给专业团队，用制度代替血缘完成传承，这是家族办公室的底层逻辑。",
-      "status": null,
-      "degree": 1
-    },
-    {
       "id": "concept:leadership-pipeline",
       "key": "leadership-pipeline",
       "label": "梯队接班制",
@@ -7128,17 +7150,6 @@
       "type": "concept",
       "route": "concepts/scarcity-narrative-gap",
       "summary": "供给被掐断的恐慌叙事，常常和真实供需、真实价格严重背离，背离本身才是该追问的信号。",
-      "status": null,
-      "degree": 1
-    },
-    {
-      "id": "concept:tainted-asset-shield",
-      "key": "tainted-asset-shield",
-      "label": "瑕疵资产击穿",
-      "fullLabel": "瑕疵资产击穿",
-      "type": "concept",
-      "route": "concepts/tainted-asset-shield",
-      "summary": "资产来源若带有旧瑕疵，信托、保险和离岸结构也可能被追穿。",
       "status": null,
       "degree": 1
     },
@@ -19645,6 +19656,161 @@
     {
       "source": "live:LIVE029",
       "target": "theme:homeland-and-civic-belonging",
+      "kind": "live-theme"
+    },
+    {
+      "source": "live:LIVE031",
+      "target": "episode:EP185",
+      "kind": "live-episode"
+    },
+    {
+      "source": "live:LIVE031",
+      "target": "episode:EP188",
+      "kind": "live-episode"
+    },
+    {
+      "source": "live:LIVE031",
+      "target": "episode:EP156",
+      "kind": "live-episode"
+    },
+    {
+      "source": "live:LIVE031",
+      "target": "episode:EP168",
+      "kind": "live-episode"
+    },
+    {
+      "source": "live:LIVE031",
+      "target": "episode:EP189",
+      "kind": "live-episode"
+    },
+    {
+      "source": "live:LIVE031",
+      "target": "episode:EP130",
+      "kind": "live-episode"
+    },
+    {
+      "source": "live:LIVE031",
+      "target": "episode:EP180",
+      "kind": "live-episode"
+    },
+    {
+      "source": "live:LIVE031",
+      "target": "concept:middle-class-reservoir",
+      "kind": "live-concept"
+    },
+    {
+      "source": "live:LIVE031",
+      "target": "concept:wealth-repatriation-squeeze",
+      "kind": "live-concept"
+    },
+    {
+      "source": "live:LIVE031",
+      "target": "concept:globalization-as-disclosure",
+      "kind": "live-concept"
+    },
+    {
+      "source": "live:LIVE031",
+      "target": "concept:tainted-asset-shield",
+      "kind": "live-concept"
+    },
+    {
+      "source": "live:LIVE031",
+      "target": "concept:asset-disposal-channel",
+      "kind": "live-concept"
+    },
+    {
+      "source": "live:LIVE031",
+      "target": "concept:ownership-management-separation",
+      "kind": "live-concept"
+    },
+    {
+      "source": "live:LIVE031",
+      "target": "concept:chokepoint-leverage",
+      "kind": "live-concept"
+    },
+    {
+      "source": "live:LIVE031",
+      "target": "concept:gray-oil-network",
+      "kind": "live-concept"
+    },
+    {
+      "source": "live:LIVE031",
+      "target": "concept:time-asymmetry",
+      "kind": "live-concept"
+    },
+    {
+      "source": "live:LIVE031",
+      "target": "concept:jurisdiction-arbitrage",
+      "kind": "live-concept"
+    },
+    {
+      "source": "live:LIVE031",
+      "target": "model:asset-preservation-architecture",
+      "kind": "live-model"
+    },
+    {
+      "source": "live:LIVE031",
+      "target": "model:follower-advantage-collapse",
+      "kind": "live-model"
+    },
+    {
+      "source": "live:LIVE031",
+      "target": "model:middle-class-replacement-cycle",
+      "kind": "live-model"
+    },
+    {
+      "source": "live:LIVE031",
+      "target": "model:wall-and-gray-trade-crackdown",
+      "kind": "live-model"
+    },
+    {
+      "source": "live:LIVE031",
+      "target": "model:chokepoint-order-model",
+      "kind": "live-model"
+    },
+    {
+      "source": "live:LIVE031",
+      "target": "theme:trust-and-asset-preservation",
+      "kind": "live-theme"
+    },
+    {
+      "source": "live:LIVE031",
+      "target": "theme:middle-class-descent-and-stratification",
+      "kind": "live-theme"
+    },
+    {
+      "source": "live:LIVE031",
+      "target": "theme:dollar-system-and-gray-trade",
+      "kind": "live-theme"
+    },
+    {
+      "source": "live:LIVE031",
+      "target": "theme:maritime-chokepoints-and-route-order",
+      "kind": "live-theme"
+    },
+    {
+      "source": "live:LIVE031",
+      "target": "theme:great-power-competition-and-strategic-time",
+      "kind": "live-theme"
+    },
+    {
+      "source": "live:LIVE031",
+      "target": "theme:deglobalization-and-cultural-fragmentation",
+      "kind": "live-theme"
+    },
+    {
+      "source": "live:LIVE031",
+      "target": "theme:small-state-balancing",
+      "kind": "live-theme"
+    },
+    {
+      "source": "live:LIVE031",
+      "target": "theme:capital-exit-and-cross-border-harvest",
+      "kind": "live-theme"
+    },
+    {
+      "source": "live:LIVE031",
+      "target": "theme:travel-politics-and-border-screening",
       "kind": "live-theme"
     },
     {
