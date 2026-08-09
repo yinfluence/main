@@ -2,13 +2,13 @@
   "meta": {
     "title": "颖响力知识图谱",
     "subtitle": "节目、概念、模型、人物、主题之间的可视化连接网络",
-    "nodeCount": 677,
-    "linkCount": 2518,
+    "nodeCount": 678,
+    "linkCount": 2545,
     "typeCounts": {
       "model": 80,
-      "live": 30,
-      "theme": 92,
+      "live": 31,
       "episode": 196,
+      "theme": 92,
       "concept": 214,
       "person": 65
     }
@@ -301,6 +301,28 @@
       "degree": 28
     },
     {
+      "id": "episode:EP156",
+      "key": "EP156",
+      "label": "EP156",
+      "fullLabel": "EP156 · 老中产吸干财富，新中产锁定基本盘。香港不再是避风港？新加坡或成最大赢家？",
+      "type": "episode",
+      "route": "episodes/EP156",
+      "summary": "5月以来一串孤立的金融事件被串成一条线。富途、老虎被罚没22亿，八部门整治非法跨境券商。香港银行倒查内地账户。国务院837号令把个人、技术、人才纳入对外投资监管。\n\n对老中产和高净值人群境外财富的回收。学特朗普“建墙”，逼两头跑的人选边。要么留国内受严管，要么彻底离开。另一边，靠国家拨款和国企流动的新中产正在长出来，因为更稳定可控。老中产去新加坡相对安全，置换会用五到十年完成。",
+      "status": "curated",
+      "degree": 27
+    },
+    {
+      "id": "live:LIVE030",
+      "key": "LIVE030",
+      "label": "LIVE030",
+      "fullLabel": "LIVE030 · 四拨人都站错了位置，县城小老板以为自己是中产，中产以为自己是社会底层",
+      "type": "live",
+      "route": "lives/LIVE030",
+      "summary": "五年期存单给你一点六，这个数字一出来，复利这件事就不成立了。",
+      "status": "curated",
+      "degree": 27
+    },
+    {
       "id": "theme:great-power-competition-and-strategic-time",
       "key": "great-power-competition-and-strategic-time",
       "label": "大国竞争与战略时间",
@@ -312,14 +334,14 @@
       "degree": 26
     },
     {
-      "id": "episode:EP156",
-      "key": "EP156",
-      "label": "EP156",
-      "fullLabel": "EP156 · 老中产吸干财富，新中产锁定基本盘。香港不再是避风港？新加坡或成最大赢家？",
-      "type": "episode",
-      "route": "episodes/EP156",
-      "summary": "5月以来一串孤立的金融事件被串成一条线。富途、老虎被罚没22亿，八部门整治非法跨境券商。香港银行倒查内地账户。国务院837号令把个人、技术、人才纳入对外投资监管。\n\n对老中产和高净值人群境外财富的回收。学特朗普“建墙”，逼两头跑的人选边。要么留国内受严管，要么彻底离开。另一边，靠国家拨款和国企流动的新中产正在长出来，因为更稳定可控。老中产去新加坡相对安全，置换会用五到十年完成。",
-      "status": "curated",
+      "id": "theme:middle-class-descent-and-stratification",
+      "key": "middle-class-descent-and-stratification",
+      "label": "中产下坠与分层社会",
+      "fullLabel": "中产下坠与分层社会",
+      "type": "theme",
+      "route": "themes/middle-class-descent-and-stratification",
+      "summary": "当中间层缺乏缓冲带时，经济下行会迅速转成身份下坠、关系断裂和社会分层加固。",
+      "status": null,
       "degree": 26
     },
     {
@@ -334,13 +356,13 @@
       "degree": 25
     },
     {
-      "id": "theme:middle-class-descent-and-stratification",
-      "key": "middle-class-descent-and-stratification",
-      "label": "中产下坠与分层社会",
-      "fullLabel": "中产下坠与分层社会",
-      "type": "theme",
-      "route": "themes/middle-class-descent-and-stratification",
-      "summary": "当中间层缺乏缓冲带时，经济下行会迅速转成身份下坠、关系断裂和社会分层加固。",
+      "id": "concept:hidden-debt",
+      "key": "hidden-debt",
+      "label": "隐形债务",
+      "fullLabel": "隐形债务",
+      "type": "concept",
+      "route": "concepts/hidden-debt",
+      "summary": "表外、体外和合作链条里的债务不在显性报表中充分呈现，却会在危机时重新压回主体。",
       "status": null,
       "degree": 25
     },
@@ -385,17 +407,6 @@
       "type": "theme",
       "route": "themes/dollar-system-and-gray-trade",
       "summary": "讨论石油美元的真实脆弱点，究竟藏在公开统计之外的哪些灰色交易链条里。",
-      "status": null,
-      "degree": 24
-    },
-    {
-      "id": "concept:hidden-debt",
-      "key": "hidden-debt",
-      "label": "隐形债务",
-      "fullLabel": "隐形债务",
-      "type": "concept",
-      "route": "concepts/hidden-debt",
-      "summary": "表外、体外和合作链条里的债务不在显性报表中充分呈现，却会在危机时重新压回主体。",
       "status": null,
       "degree": 24
     },
@@ -587,6 +598,17 @@
       "degree": 20
     },
     {
+      "id": "theme:institutional-middle-class-and-social-mobility",
+      "key": "institutional-middle-class-and-social-mobility",
+      "label": "体制化中产与社会流动",
+      "fullLabel": "体制化中产与社会流动",
+      "type": "theme",
+      "route": "themes/institutional-middle-class-and-social-mobility",
+      "summary": "讨论稳定岗位、公共财政和身份溢价如何重塑中产结构，并收窄普通人的上升路径。",
+      "status": null,
+      "degree": 19
+    },
+    {
       "id": "theme:ev-financialization-and-false-sales",
       "key": "ev-financialization-and-false-sales",
       "label": "新能源金融化与虚假销量",
@@ -653,6 +675,28 @@
       "degree": 19
     },
     {
+      "id": "model:subsidy-capital-flywheel",
+      "key": "subsidy-capital-flywheel",
+      "label": "补贴资本飞轮",
+      "fullLabel": "补贴资本飞轮",
+      "type": "model",
+      "route": "models/subsidy-capital-flywheel",
+      "summary": "补贴资本飞轮解释地方财政、产业基金、企业估值和再融资如何互相放大。",
+      "status": null,
+      "degree": 18
+    },
+    {
+      "id": "concept:pan-institutional-middle-class",
+      "key": "pan-institutional-middle-class",
+      "label": "泛体制中产",
+      "fullLabel": "泛体制中产",
+      "type": "concept",
+      "route": "concepts/pan-institutional-middle-class",
+      "summary": "泛体制中产指依靠公务员、事业编、国企及体制相关岗位维持稳定收入、福利和社会体面的中间层。",
+      "status": null,
+      "degree": 18
+    },
+    {
       "id": "model:value-capture",
       "key": "value-capture",
       "label": "价值捕获",
@@ -660,17 +704,6 @@
       "type": "model",
       "route": "models/value-capture",
       "summary": "价值捕获模型强调商业链条中关键不只是创造了价值，而是谁真正留下了价值。",
-      "status": null,
-      "degree": 18
-    },
-    {
-      "id": "theme:institutional-middle-class-and-social-mobility",
-      "key": "institutional-middle-class-and-social-mobility",
-      "label": "体制化中产与社会流动",
-      "fullLabel": "体制化中产与社会流动",
-      "type": "theme",
-      "route": "themes/institutional-middle-class-and-social-mobility",
-      "summary": "讨论稳定岗位、公共财政和身份溢价如何重塑中产结构，并收窄普通人的上升路径。",
       "status": null,
       "degree": 18
     },
@@ -686,17 +719,6 @@
       "degree": 18
     },
     {
-      "id": "model:subsidy-capital-flywheel",
-      "key": "subsidy-capital-flywheel",
-      "label": "补贴资本飞轮",
-      "fullLabel": "补贴资本飞轮",
-      "type": "model",
-      "route": "models/subsidy-capital-flywheel",
-      "summary": "补贴资本飞轮解释地方财政、产业基金、企业估值和再融资如何互相放大。",
-      "status": null,
-      "degree": 17
-    },
-    {
       "id": "theme:rule-of-law-boundaries-and-social-trust",
       "key": "rule-of-law-boundaries-and-social-trust",
       "label": "法治边界与社会信任",
@@ -704,17 +726,6 @@
       "type": "theme",
       "route": "themes/rule-of-law-boundaries-and-social-trust",
       "summary": "关注法律灰区如何影响公众的善意、风险感和彼此信任。",
-      "status": null,
-      "degree": 17
-    },
-    {
-      "id": "concept:pan-institutional-middle-class",
-      "key": "pan-institutional-middle-class",
-      "label": "泛体制中产",
-      "fullLabel": "泛体制中产",
-      "type": "concept",
-      "route": "concepts/pan-institutional-middle-class",
-      "summary": "泛体制中产指依靠公务员、事业编、国企及体制相关岗位维持稳定收入、福利和社会体面的中间层。",
       "status": null,
       "degree": 17
     },
@@ -792,6 +803,17 @@
       "type": "concept",
       "route": "concepts/cost-shifting",
       "summary": "组织内部的高额非生产性成本，最终会通过价格、规则或风险转嫁给外部承担者。",
+      "status": null,
+      "degree": 16
+    },
+    {
+      "id": "theme:local-fiscal-stress-and-hidden-debt",
+      "key": "local-fiscal-stress-and-hidden-debt",
+      "label": "地方财政与隐性债务",
+      "fullLabel": "地方财政与隐性债务",
+      "type": "theme",
+      "route": "themes/local-fiscal-stress-and-hidden-debt",
+      "summary": "地方财政吃紧后，系统会通过更复杂的融资、资产包装和风险转移来维持运转。",
       "status": null,
       "degree": 16
     },
@@ -895,6 +917,17 @@
       "degree": 16
     },
     {
+      "id": "episode:EP192",
+      "key": "EP192",
+      "label": "EP192",
+      "fullLabel": "EP192 · 梁文锋说漏嘴的算力乱象！揭露中国AI行业的真实浪费与困境。",
+      "type": "episode",
+      "route": "episodes/EP192",
+      "summary": "梁文锋一场四小时的内部闭门会文字稿被放了出来。他是量化出身，不靠情怀也不屑对投资人吹牛，这份稿子的可信度比一般的投资人会议高。稿子里最硬的三处，一是算力的账，四张华山派的卡才抵一张英伟达 B 卡，手里一万六千张只折合四五千张，远远不够；二是不够之后只能走别的路子，灰色算力贸易第一次有了明确口径；三是国内七八家都在做同一件事，卡和算力中心的需求被一起做大，这条产业链跟当年的电车长得一模一样。最后问的是这场泄露为什么发生在今天，答案指向月之暗面爆火之后老大地位的松动。",
+      "status": "curated",
+      "degree": 16
+    },
+    {
       "id": "model:proxy-containment-ring",
       "key": "proxy-containment-ring",
       "label": "代理围堵环",
@@ -906,13 +939,13 @@
       "degree": 15
     },
     {
-      "id": "theme:local-fiscal-stress-and-hidden-debt",
-      "key": "local-fiscal-stress-and-hidden-debt",
-      "label": "地方财政与隐性债务",
-      "fullLabel": "地方财政与隐性债务",
+      "id": "theme:local-government-financialization",
+      "key": "local-government-financialization",
+      "label": "地方政府资本化与补贴杠杆",
+      "fullLabel": "地方政府资本化与补贴杠杆",
       "type": "theme",
-      "route": "themes/local-fiscal-stress-and-hidden-debt",
-      "summary": "地方财政吃紧后，系统会通过更复杂的融资、资产包装和风险转移来维持运转。",
+      "route": "themes/local-government-financialization",
+      "summary": "讨论地方政府如何从传统招商者变成资本玩家，并把补贴、基金和估值故事捆到一起。",
       "status": null,
       "degree": 15
     },
@@ -937,28 +970,6 @@
       "summary": "央视拿下 2026 到 2031 年四届世界杯转播权，社交媒体一片砍价封神。网传 6000 万美元单届价和 1.1 亿四届打包价，数学冲突。倾向单届价真、打包价假，为的是压低本届广告商预期。三件事咬得紧。FIFA 秘书长和温格先去足协不是央视。温格指导 U14，财政部同步宣布 5 亿元校园足球投入。本是商业谈判，被包装成民族胜利。央视垄断稳赚不赔，观众照样熬夜看广告充会员。体育归体育，商业归商业。",
       "status": "curated",
       "degree": 15
-    },
-    {
-      "id": "episode:EP192",
-      "key": "EP192",
-      "label": "EP192",
-      "fullLabel": "EP192 · 梁文锋说漏嘴的算力乱象！揭露中国AI行业的真实浪费与困境。",
-      "type": "episode",
-      "route": "episodes/EP192",
-      "summary": "梁文锋一场四小时的内部闭门会文字稿被放了出来。他是量化出身，不靠情怀也不屑对投资人吹牛，这份稿子的可信度比一般的投资人会议高。稿子里最硬的三处，一是算力的账，四张华山派的卡才抵一张英伟达 B 卡，手里一万六千张只折合四五千张，远远不够；二是不够之后只能走别的路子，灰色算力贸易第一次有了明确口径；三是国内七八家都在做同一件事，卡和算力中心的需求被一起做大，这条产业链跟当年的电车长得一模一样。最后问的是这场泄露为什么发生在今天，答案指向月之暗面爆火之后老大地位的松动。",
-      "status": "curated",
-      "degree": 15
-    },
-    {
-      "id": "theme:local-government-financialization",
-      "key": "local-government-financialization",
-      "label": "地方政府资本化与补贴杠杆",
-      "fullLabel": "地方政府资本化与补贴杠杆",
-      "type": "theme",
-      "route": "themes/local-government-financialization",
-      "summary": "讨论地方政府如何从传统招商者变成资本玩家，并把补贴、基金和估值故事捆到一起。",
-      "status": null,
-      "degree": 14
     },
     {
       "id": "model:feedback-loops",
@@ -1122,6 +1133,17 @@
       "type": "theme",
       "route": "themes/ev-collapse-and-exit-risk",
       "summary": "聚焦新能源项目在失速、清算和品牌出清阶段，风险如何向债权人、用户和地方政府层层传导。",
+      "status": null,
+      "degree": 13
+    },
+    {
+      "id": "model:narrative-leverage",
+      "key": "narrative-leverage",
+      "label": "叙事杠杆",
+      "fullLabel": "叙事杠杆",
+      "type": "model",
+      "route": "models/narrative-leverage",
+      "summary": "通过一个足够大的故事，把原本有限的资源、信用和注意力撬成更大的资本、销量或支持度。",
       "status": null,
       "degree": 13
     },
@@ -1302,17 +1324,6 @@
       "degree": 12
     },
     {
-      "id": "model:narrative-leverage",
-      "key": "narrative-leverage",
-      "label": "叙事杠杆",
-      "fullLabel": "叙事杠杆",
-      "type": "model",
-      "route": "models/narrative-leverage",
-      "summary": "通过一个足够大的故事，把原本有限的资源、信用和注意力撬成更大的资本、销量或支持度。",
-      "status": null,
-      "degree": 12
-    },
-    {
       "id": "model:sanction-parallel-market",
       "key": "sanction-parallel-market",
       "label": "制裁平行市场模型",
@@ -1432,6 +1443,17 @@
       "summary": "一位车主带着孩子开国产电车自驾去巴黎。7 月 16 日从霍尔果斯出境进入哈萨克斯坦，第二天车机就弹出全屏解封申请。导航、音乐、电控储物箱和油箱盖全部停摆。交完购车发票、护照签证和通关文件，等了三十多个小时才解锁。厂家回应说这不是锁车，是车辆定位在海外触发了内置安全机制，属于行业普遍做法。可这道电子围栏挡的不是盗抢，是零公里二手车流向海外，成本却让正常车主担着。买车时那份没人细读的智能驾驶协议里还有一层。油车买了就是你的，智能车买到的是一份许可，对方随时能收回。",
       "status": "curated",
       "degree": 12
+    },
+    {
+      "id": "theme:planned-systems-and-innovation",
+      "key": "planned-systems-and-innovation",
+      "label": "大计划体制与创新约束",
+      "fullLabel": "大计划体制与创新约束",
+      "type": "theme",
+      "route": "themes/planned-systems-and-innovation",
+      "summary": "讨论统一目标和强组织动员如何带来短期速度，又如何在长期压缩创新、纠错与自发能动性。",
+      "status": null,
+      "degree": 11
     },
     {
       "id": "model:technology-wave-cycle",
@@ -1610,6 +1632,17 @@
       "degree": 11
     },
     {
+      "id": "episode:EP195",
+      "key": "EP195",
+      "label": "EP195",
+      "fullLabel": "EP195 · 竹知了“不能提”的是华删派与岳不群的终极野心！",
+      "type": "episode",
+      "route": "episodes/EP195",
+      "summary": "竹知了这件事很多人看不懂。几毛钱的竹玩具，摇起来那声哇哇被配上发布会画面，视频成片被投诉下架，热度反而更高。好好的市场不抢，非要去告玩梗的人，图的是什么。拿性价比和市场份额这套尺子量华山派，永远量不出结果，它玩的从一开始就不是普通的商业游戏。先画圈子，界限划得越清楚越好，选它的人和还在看性价比的人不是一类。再故意定高价、故意特立独行，看不懂的人自己就走。最里面一层是登顶。左冷禅要的是五岳联盟的盟主，还在江湖这个游戏里玩。岳不群要的是五派合一，从此没人能跟他讨价还价，也没人能随便调侃他。",
+      "status": "curated",
+      "degree": 11
+    },
+    {
       "id": "concept:refuge-premium",
       "key": "refuge-premium",
       "label": "避险溢价",
@@ -1621,13 +1654,13 @@
       "degree": 10
     },
     {
-      "id": "theme:planned-systems-and-innovation",
-      "key": "planned-systems-and-innovation",
-      "label": "大计划体制与创新约束",
-      "fullLabel": "大计划体制与创新约束",
-      "type": "theme",
-      "route": "themes/planned-systems-and-innovation",
-      "summary": "讨论统一目标和强组织动员如何带来短期速度，又如何在长期压缩创新、纠错与自发能动性。",
+      "id": "concept:subsidy-leverage-engine",
+      "key": "subsidy-leverage-engine",
+      "label": "补贴杠杆引擎",
+      "fullLabel": "补贴杠杆引擎",
+      "type": "concept",
+      "route": "concepts/subsidy-leverage-engine",
+      "summary": "财政补贴被当成种子资金，撬动基金、估值、招商和社会资本，形成杠杆引擎。",
       "status": null,
       "degree": 10
     },
@@ -1661,6 +1694,17 @@
       "type": "concept",
       "route": "concepts/retail-platform-risk",
       "summary": "散户投资不仅面对标的涨跌，还面对平台信用、对冲、托管和退出风险。",
+      "status": null,
+      "degree": 10
+    },
+    {
+      "id": "model:identity-stratification",
+      "key": "identity-stratification",
+      "label": "身份型分层",
+      "fullLabel": "身份型分层",
+      "type": "model",
+      "route": "models/identity-stratification",
+      "summary": "身份型分层说明阶层排序从收入和资产，转向编制、合规位置、圈层资源和稳定预期。",
       "status": null,
       "degree": 10
     },
@@ -1775,17 +1819,6 @@
       "degree": 10
     },
     {
-      "id": "episode:EP195",
-      "key": "EP195",
-      "label": "EP195",
-      "fullLabel": "EP195 · 竹知了“不能提”的是华删派与岳不群的终极野心！",
-      "type": "episode",
-      "route": "episodes/EP195",
-      "summary": "竹知了这件事很多人看不懂。几毛钱的竹玩具，摇起来那声哇哇被配上发布会画面，视频成片被投诉下架，热度反而更高。好好的市场不抢，非要去告玩梗的人，图的是什么。拿性价比和市场份额这套尺子量华山派，永远量不出结果，它玩的从一开始就不是普通的商业游戏。先画圈子，界限划得越清楚越好，选它的人和还在看性价比的人不是一类。再故意定高价、故意特立独行，看不懂的人自己就走。最里面一层是登顶。左冷禅要的是五岳联盟的盟主，还在江湖这个游戏里玩。岳不群要的是五派合一，从此没人能跟他讨价还价，也没人能随便调侃他。",
-      "status": "curated",
-      "degree": 10
-    },
-    {
       "id": "concept:standard-labor-replacement",
       "key": "standard-labor-replacement",
       "label": "标准劳动力替代",
@@ -1793,17 +1826,6 @@
       "type": "concept",
       "route": "concepts/standard-labor-replacement",
       "summary": "自动化最先替代可重复、可规训、可量化的标准岗位，而这些岗位往往属于普通人。",
-      "status": null,
-      "degree": 9
-    },
-    {
-      "id": "concept:subsidy-leverage-engine",
-      "key": "subsidy-leverage-engine",
-      "label": "补贴杠杆引擎",
-      "fullLabel": "补贴杠杆引擎",
-      "type": "concept",
-      "route": "concepts/subsidy-leverage-engine",
-      "summary": "财政补贴被当成种子资金，撬动基金、估值、招商和社会资本，形成杠杆引擎。",
       "status": null,
       "degree": 9
     },
@@ -1848,17 +1870,6 @@
       "type": "theme",
       "route": "themes/platform-governance-and-folk-discourse",
       "summary": "讨论平台如何识别、容忍、限制和清理具有高传播性的民间表达。",
-      "status": null,
-      "degree": 9
-    },
-    {
-      "id": "model:identity-stratification",
-      "key": "identity-stratification",
-      "label": "身份型分层",
-      "fullLabel": "身份型分层",
-      "type": "model",
-      "route": "models/identity-stratification",
-      "summary": "身份型分层说明阶层排序从收入和资产，转向编制、合规位置、圈层资源和稳定预期。",
       "status": null,
       "degree": 9
     },
@@ -2072,6 +2083,17 @@
       "degree": 9
     },
     {
+      "id": "episode:EP106",
+      "key": "EP106",
+      "label": "EP106",
+      "fullLabel": "EP106 · 地方附加税来了：是“新包干”还是“新负担”？为什么中国在大政府逻辑下，改革越改越“闷”？【EP106】",
+      "type": "episode",
+      "route": "episodes/EP106",
+      "summary": "中国经济这几年闷得说不出，政策对不上点。真因不在地方债，在人。巨大、聪明、有权力的政府群体是动力还是阻碍。中国从来不是守夜人式小政府，得深度绑定经济。改革开放的包干制让地方官像销售经理，拉订单跑贷款。后来机制逆转，推进变风险，协助变考核，放变抓。地方政府退化为风险管理者，借债透支未来，罚款倒查十年。附加税三合一约 1 万亿留给地方，算小幅返权。但 1 到 2 月亏空已达 1 万亿，窗口可能已过。",
+      "status": "curated",
+      "degree": 9
+    },
+    {
       "id": "episode:EP107",
       "key": "EP107",
       "label": "EP107",
@@ -2123,6 +2145,17 @@
       "type": "episode",
       "route": "episodes/EP194",
       "summary": "工农中建四大行把停了近半年的五年期大额存单重新上架，国有大行统一给到 1.6%。市面把它读成银行提前锁定成本、看好后续加息。这个逻辑正好搞反了。只有预判利率长期往下走，才会急着把当前的资金成本锁死。三年期 1.5%、五年期 1.6%，多存两年只多五个基点，等于想锁住这笔钱五年，又不肯为那两年付钱。往下还有两层。储户拿 1.6% 的利息，银行拿这笔钱去置换地方债，化债的成本摊到了每个存钱的人头上。1.6 到 1.8 这个数字还是一把尺子，任何号称稳定四个点以上的产品都要先拿它量一遍。",
+      "status": "curated",
+      "degree": 9
+    },
+    {
+      "id": "episode:EP196",
+      "key": "EP196",
+      "label": "EP196",
+      "fullLabel": "EP196 · 韩红争议撕开公募慈善遮羞布：拒绝个人救助，合规只是表象，背后藏着圈层利益输送",
+      "type": "episode",
+      "route": "episodes/EP196",
+      "summary": "韩红基金会又一次被推上风口，传出启动了调查，真假无从查证。真正该看的是公募慈善这套模式本身。捐款来自千千万万普通人，钱汇上去之后，受益方却变成了一个个机构、一个个合作方。公募机构给的理由是合规，说个人需求属于私益求助，不在服务范围内。可法律从没禁止公募机构救助个人，规范只要求捐款不能限定唯一受益人。封死个人通道的真实原因是趋利避害，对接机构是长期稳定的合作，能稳住圈层资源、持续赚运营经费，帮扶个人零散繁琐又无利可图。几亿几十亿的爱心钱趴在账上空转，走投无路的人只能去民间平台一笔一笔地求。",
       "status": "curated",
       "degree": 9
     },
@@ -2567,17 +2600,6 @@
       "degree": 8
     },
     {
-      "id": "episode:EP106",
-      "key": "EP106",
-      "label": "EP106",
-      "fullLabel": "EP106 · 地方附加税来了：是“新包干”还是“新负担”？为什么中国在大政府逻辑下，改革越改越“闷”？【EP106】",
-      "type": "episode",
-      "route": "episodes/EP106",
-      "summary": "中国经济这几年闷得说不出，政策对不上点。真因不在地方债，在人。巨大、聪明、有权力的政府群体是动力还是阻碍。中国从来不是守夜人式小政府，得深度绑定经济。改革开放的包干制让地方官像销售经理，拉订单跑贷款。后来机制逆转，推进变风险，协助变考核，放变抓。地方政府退化为风险管理者，借债透支未来，罚款倒查十年。附加税三合一约 1 万亿留给地方，算小幅返权。但 1 到 2 月亏空已达 1 万亿，窗口可能已过。",
-      "status": "curated",
-      "degree": 8
-    },
-    {
       "id": "episode:EP111",
       "key": "EP111",
       "label": "EP111",
@@ -2662,17 +2684,6 @@
       "type": "episode",
       "route": "episodes/EP183",
       "summary": "EP171 讲苏州工业园区怎么诞生，后来的波折在这里。中新集团的股权从新加坡持股65%调整为中方65%。后来又稀释到今天的25%左右。李光耀在回忆录里留下70分、惩罚性试验的评价。苏州一市两强的同质竞争，让园区被自家兄弟截胡。新加坡的管理软件在中国行政体制下水土不服。李光耀主动提出股权置换止损。所谓关门打狗其实是个误会。不是苏州设局逼退，是双方都没料到的制度错配。2009年李光耀说选择苏州是正确的。",
-      "status": "curated",
-      "degree": 8
-    },
-    {
-      "id": "episode:EP196",
-      "key": "EP196",
-      "label": "EP196",
-      "fullLabel": "EP196 · 韩红争议撕开公募慈善遮羞布：拒绝个人救助，合规只是表象，背后藏着圈层利益输送",
-      "type": "episode",
-      "route": "episodes/EP196",
-      "summary": "韩红基金会又一次被推上风口，传出启动了调查，真假无从查证。真正该看的是公募慈善这套模式本身。捐款来自千千万万普通人，钱汇上去之后，受益方却变成了一个个机构、一个个合作方。公募机构给的理由是合规，说个人需求属于私益求助，不在服务范围内。可法律从没禁止公募机构救助个人，规范只要求捐款不能限定唯一受益人。封死个人通道的真实原因是趋利避害，对接机构是长期稳定的合作，能稳住圈层资源、持续赚运营经费，帮扶个人零散繁琐又无利可图。几亿几十亿的爱心钱趴在账上空转，走投无路的人只能去民间平台一笔一笔地求。",
       "status": "curated",
       "degree": 8
     },
@@ -2860,6 +2871,17 @@
       "type": "theme",
       "route": "themes/ai-capital-and-company-identity",
       "summary": "讨论 AI 创业公司如何在不同法域、资本环境与身份叙事之间重新安排自己的主场。",
+      "status": null,
+      "degree": 7
+    },
+    {
+      "id": "theme:ai-bubble-and-compute-demand",
+      "key": "ai-bubble-and-compute-demand",
+      "label": "AI泡沫与算力需求制造",
+      "fullLabel": "AI泡沫与算力需求制造",
+      "type": "theme",
+      "route": "themes/ai-bubble-and-compute-demand",
+      "summary": "讨论 AI 热潮如何被资本、工具和基础设施共同推高，又如何反过来制造新的算力消费需求。",
       "status": null,
       "degree": 7
     },
@@ -3161,6 +3183,17 @@
       "degree": 6
     },
     {
+      "id": "concept:credential-rent",
+      "key": "credential-rent",
+      "label": "身份租值",
+      "fullLabel": "身份租值",
+      "type": "concept",
+      "route": "concepts/credential-rent",
+      "summary": "一个人的学历、文化、头衔或圈层，不再只是背景，而被当成能持续换钱、换信任和换资源的租值来源。",
+      "status": null,
+      "degree": 6
+    },
+    {
       "id": "concept:data-fetishism",
       "key": "data-fetishism",
       "label": "数据崇拜",
@@ -3190,6 +3223,17 @@
       "type": "concept",
       "route": "concepts/future-path-crowding",
       "summary": "所有人都挤向同一条被认为最安全的上升路径时，这条路本身就会因为拥挤而失去原来的安全性。",
+      "status": null,
+      "degree": 6
+    },
+    {
+      "id": "concept:cash-optionality",
+      "key": "cash-optionality",
+      "label": "现金选择权",
+      "fullLabel": "现金选择权",
+      "type": "concept",
+      "route": "concepts/cash-optionality",
+      "summary": "现金在高波动时期的核心价值，是保留等待、谈判、退出和重新进入的选择权。",
       "status": null,
       "degree": 6
     },
@@ -3271,6 +3315,17 @@
       "degree": 6
     },
     {
+      "id": "concept:middle-class-reservoir",
+      "key": "middle-class-reservoir",
+      "label": "中产蓄水池",
+      "fullLabel": "中产蓄水池",
+      "type": "concept",
+      "route": "concepts/middle-class-reservoir",
+      "summary": "中产财富在好年景蓄水、缓冲社会矛盾，在系统缺水时被反向抽回补给主河道——节目认为这是全球共性，不是某一国的问题。",
+      "status": null,
+      "degree": 6
+    },
+    {
       "id": "concept:balance-sheet-support",
       "key": "balance-sheet-support",
       "label": "资产负债表托底",
@@ -3278,17 +3333,6 @@
       "type": "concept",
       "route": "concepts/balance-sheet-support",
       "summary": "通过维持估值、价格和名义成交，先保住报表与抵押体系，再把真实压力向后延。",
-      "status": null,
-      "degree": 6
-    },
-    {
-      "id": "theme:ai-bubble-and-compute-demand",
-      "key": "ai-bubble-and-compute-demand",
-      "label": "AI泡沫与算力需求制造",
-      "fullLabel": "AI泡沫与算力需求制造",
-      "type": "theme",
-      "route": "themes/ai-bubble-and-compute-demand",
-      "summary": "讨论 AI 热潮如何被资本、工具和基础设施共同推高，又如何反过来制造新的算力消费需求。",
       "status": null,
       "degree": 6
     },
@@ -3546,6 +3590,17 @@
       "degree": 5
     },
     {
+      "id": "theme:charity-and-moral-capital",
+      "key": "charity-and-moral-capital",
+      "label": "公益、善意与商业失灵",
+      "fullLabel": "公益、善意与商业失灵",
+      "type": "theme",
+      "route": "themes/charity-and-moral-capital",
+      "summary": "一个人即便在资本世界里不断失败，也可能在公共世界里留下真正深厚的价值。",
+      "status": null,
+      "degree": 5
+    },
+    {
       "id": "theme:homeland-and-civic-belonging",
       "key": "homeland-and-civic-belonging",
       "label": "故乡想象与公民归属",
@@ -3700,17 +3755,6 @@
       "degree": 5
     },
     {
-      "id": "concept:credential-rent",
-      "key": "credential-rent",
-      "label": "身份租值",
-      "fullLabel": "身份租值",
-      "type": "concept",
-      "route": "concepts/credential-rent",
-      "summary": "一个人的学历、文化、头衔或圈层，不再只是背景，而被当成能持续换钱、换信任和换资源的租值来源。",
-      "status": null,
-      "degree": 5
-    },
-    {
       "id": "model:exit-liquidation-waterfall",
       "key": "exit-liquidation-waterfall",
       "label": "退出清算瀑布",
@@ -3744,13 +3788,13 @@
       "degree": 5
     },
     {
-      "id": "concept:cash-optionality",
-      "key": "cash-optionality",
-      "label": "现金选择权",
-      "fullLabel": "现金选择权",
-      "type": "concept",
-      "route": "concepts/cash-optionality",
-      "summary": "现金在高波动时期的核心价值，是保留等待、谈判、退出和重新进入的选择权。",
+      "id": "theme:cash-optionality-and-liquidity-anxiety",
+      "key": "cash-optionality-and-liquidity-anxiety",
+      "label": "现金为王与流动性焦虑",
+      "fullLabel": "现金为王与流动性焦虑",
+      "type": "theme",
+      "route": "themes/cash-optionality-and-liquidity-anxiety",
+      "summary": "在高波动和低信任时期，流动性比账面资产更能决定一个人和机构的安全感。",
       "status": null,
       "degree": 5
     },
@@ -3839,17 +3883,6 @@
       "type": "concept",
       "route": "concepts/long-termism",
       "summary": "以几十年甚至百年为尺度做决策，前期为长远格局多花成本、多做规划，而不是被短期利益和政绩驱动。",
-      "status": null,
-      "degree": 5
-    },
-    {
-      "id": "concept:middle-class-reservoir",
-      "key": "middle-class-reservoir",
-      "label": "中产蓄水池",
-      "fullLabel": "中产蓄水池",
-      "type": "concept",
-      "route": "concepts/middle-class-reservoir",
-      "summary": "中产财富在好年景蓄水、缓冲社会矛盾，在系统缺水时被反向抽回补给主河道——节目认为这是全球共性，不是某一国的问题。",
       "status": null,
       "degree": 5
     },
@@ -4228,17 +4261,6 @@
       "degree": 4
     },
     {
-      "id": "theme:charity-and-moral-capital",
-      "key": "charity-and-moral-capital",
-      "label": "公益、善意与商业失灵",
-      "fullLabel": "公益、善意与商业失灵",
-      "type": "theme",
-      "route": "themes/charity-and-moral-capital",
-      "summary": "一个人即便在资本世界里不断失败，也可能在公共世界里留下真正深厚的价值。",
-      "status": null,
-      "degree": 4
-    },
-    {
       "id": "concept:relationship-insurance",
       "key": "relationship-insurance",
       "label": "关系保险",
@@ -4415,17 +4437,6 @@
       "degree": 4
     },
     {
-      "id": "theme:cash-optionality-and-liquidity-anxiety",
-      "key": "cash-optionality-and-liquidity-anxiety",
-      "label": "现金为王与流动性焦虑",
-      "fullLabel": "现金为王与流动性焦虑",
-      "type": "theme",
-      "route": "themes/cash-optionality-and-liquidity-anxiety",
-      "summary": "在高波动和低信任时期，流动性比账面资产更能决定一个人和机构的安全感。",
-      "status": null,
-      "degree": 4
-    },
-    {
       "id": "theme:consumer-audience-rewrite",
       "key": "consumer-audience-rewrite",
       "label": "消费客群重写",
@@ -4521,6 +4532,17 @@
       "type": "theme",
       "route": "themes/housing-burden-and-income-distribution",
       "summary": "讨论住房、税负和可支配收入之间的关系，尤其关注中低收入群体被抽走了多少上升空间。",
+      "status": null,
+      "degree": 4
+    },
+    {
+      "id": "concept:money-time-price",
+      "key": "money-time-price",
+      "label": "资金的时间价格",
+      "fullLabel": "资金的时间价格",
+      "type": "concept",
+      "route": "concepts/money-time-price",
+      "summary": "钱的价值不只由数量决定，更由期限、还款压力和附带条件决定。",
       "status": null,
       "degree": 4
     },
@@ -5174,6 +5196,17 @@
       "degree": 3
     },
     {
+      "id": "theme:evaluation-and-moral-capital",
+      "key": "evaluation-and-moral-capital",
+      "label": "人物评价与道德资本",
+      "fullLabel": "人物评价与道德资本",
+      "type": "theme",
+      "route": "themes/evaluation-and-moral-capital",
+      "summary": "一个人是否值得被尊重，不能只看商业成绩，还要看他留下了怎样的公共价值。",
+      "status": null,
+      "degree": 3
+    },
+    {
       "id": "theme:bounded-social-experimentation",
       "key": "bounded-social-experimentation",
       "label": "社会实验与制度弹性",
@@ -5350,17 +5383,6 @@
       "degree": 3
     },
     {
-      "id": "concept:money-time-price",
-      "key": "money-time-price",
-      "label": "资金的时间价格",
-      "fullLabel": "资金的时间价格",
-      "type": "concept",
-      "route": "concepts/money-time-price",
-      "summary": "钱的价值不只由数量决定，更由期限、还款压力和附带条件决定。",
-      "status": null,
-      "degree": 3
-    },
-    {
       "id": "concept:chosen-homeland",
       "key": "chosen-homeland",
       "label": "自选故乡",
@@ -5533,6 +5555,17 @@
       "type": "model",
       "route": "models/trauma-loop",
       "summary": "创伤循环模型解释未被理解和处理的伤害，会以怀旧、灌输和错误想象反复回流。",
+      "status": null,
+      "degree": 2
+    },
+    {
+      "id": "concept:deposit-funded-debt-rollover",
+      "key": "deposit-funded-debt-rollover",
+      "label": "存款补贴化债",
+      "fullLabel": "存款补贴化债",
+      "type": "concept",
+      "route": "concepts/deposit-funded-debt-rollover",
+      "summary": "居民的低息存款被银行拿去置换地方的高息旧债，化债省下来的利息，实际由存钱的人用被压低的收益承担。",
       "status": null,
       "degree": 2
     },
@@ -5889,6 +5922,17 @@
       "degree": 2
     },
     {
+      "id": "model:circle-grant-loop",
+      "key": "circle-grant-loop",
+      "label": "圈层拨付闭环",
+      "fullLabel": "圈层拨付闭环",
+      "type": "model",
+      "route": "models/circle-grant-loop",
+      "summary": "有分配权的机构只跟固定的几家合作方对接，钱在这个圈子里循环，各方互相依赖、互相出具文件，圈外的人连申请的入口都没有。",
+      "status": null,
+      "degree": 2
+    },
+    {
       "id": "concept:human-centered-contract",
       "key": "human-centered-contract",
       "label": "人本契约",
@@ -5896,17 +5940,6 @@
       "type": "concept",
       "route": "concepts/human-centered-contract",
       "summary": "国家信用不仅来自实力，也来自关键时刻愿不愿为具体个体生命履约。",
-      "status": null,
-      "degree": 2
-    },
-    {
-      "id": "theme:evaluation-and-moral-capital",
-      "key": "evaluation-and-moral-capital",
-      "label": "人物评价与道德资本",
-      "fullLabel": "人物评价与道德资本",
-      "type": "theme",
-      "route": "themes/evaluation-and-moral-capital",
-      "summary": "一个人是否值得被尊重，不能只看商业成绩，还要看他留下了怎样的公共价值。",
       "status": null,
       "degree": 2
     },
@@ -6039,6 +6072,17 @@
       "type": "theme",
       "route": "themes/civilization-power-and-vulnerable-bodies",
       "summary": "讨论一个社会如何对待妇女、儿童和弱者，往往比它如何讲述自己的文明更能暴露制度底色。",
+      "status": null,
+      "degree": 2
+    },
+    {
+      "id": "concept:risk-free-anchor",
+      "key": "risk-free-anchor",
+      "label": "无风险利率锚",
+      "fullLabel": "无风险利率锚",
+      "type": "concept",
+      "route": "concepts/risk-free-anchor",
+      "summary": "本金几乎零风险的那个收益率，是市面上所有资产定价的起点，它一往下走，高收益产品的可疑程度就同步上升。",
       "status": null,
       "degree": 2
     },
@@ -6358,17 +6402,6 @@
       "type": "model",
       "route": "models/city-three-stage-model",
       "summary": "城市三阶段模型把城市价值分为外表、实力和灵魂，反对只用建设体量评判城市。",
-      "status": null,
-      "degree": 1
-    },
-    {
-      "id": "concept:deposit-funded-debt-rollover",
-      "key": "deposit-funded-debt-rollover",
-      "label": "存款补贴化债",
-      "fullLabel": "存款补贴化债",
-      "type": "concept",
-      "route": "concepts/deposit-funded-debt-rollover",
-      "summary": "居民的低息存款被银行拿去置换地方的高息旧债，化债省下来的利息，实际由存钱的人用被压低的收益承担。",
       "status": null,
       "degree": 1
     },
@@ -6967,17 +7000,6 @@
       "degree": 1
     },
     {
-      "id": "model:circle-grant-loop",
-      "key": "circle-grant-loop",
-      "label": "圈层拨付闭环",
-      "fullLabel": "圈层拨付闭环",
-      "type": "model",
-      "route": "models/circle-grant-loop",
-      "summary": "有分配权的机构只跟固定的几家合作方对接，钱在这个圈子里循环，各方互相依赖、互相出具文件，圈外的人连申请的入口都没有。",
-      "status": null,
-      "degree": 1
-    },
-    {
       "id": "concept:commercial-geofence",
       "key": "commercial-geofence",
       "label": "商业电子围栏",
@@ -7128,17 +7150,6 @@
       "type": "concept",
       "route": "concepts/cultural-plunder",
       "summary": "产权和语境被强行切断时，文化资产的损失不只是物件流转，而是文明私人基础被抽空。",
-      "status": null,
-      "degree": 1
-    },
-    {
-      "id": "concept:risk-free-anchor",
-      "key": "risk-free-anchor",
-      "label": "无风险利率锚",
-      "fullLabel": "无风险利率锚",
-      "type": "concept",
-      "route": "concepts/risk-free-anchor",
-      "summary": "本金几乎零风险的那个收益率，是市面上所有资产定价的起点，它一往下走，高收益产品的可疑程度就同步上升。",
       "status": null,
       "degree": 1
     },
@@ -19657,6 +19668,141 @@
       "source": "live:LIVE029",
       "target": "theme:homeland-and-civic-belonging",
       "kind": "live-theme"
+    },
+    {
+      "source": "live:LIVE030",
+      "target": "episode:EP196",
+      "kind": "live-episode"
+    },
+    {
+      "source": "live:LIVE030",
+      "target": "episode:EP195",
+      "kind": "live-episode"
+    },
+    {
+      "source": "live:LIVE030",
+      "target": "episode:EP156",
+      "kind": "live-episode"
+    },
+    {
+      "source": "live:LIVE030",
+      "target": "episode:EP106",
+      "kind": "live-episode"
+    },
+    {
+      "source": "live:LIVE030",
+      "target": "episode:EP192",
+      "kind": "live-episode"
+    },
+    {
+      "source": "live:LIVE030",
+      "target": "concept:middle-class-reservoir",
+      "kind": "live-concept"
+    },
+    {
+      "source": "live:LIVE030",
+      "target": "concept:money-time-price",
+      "kind": "live-concept"
+    },
+    {
+      "source": "live:LIVE030",
+      "target": "concept:cash-optionality",
+      "kind": "live-concept"
+    },
+    {
+      "source": "live:LIVE030",
+      "target": "concept:risk-free-anchor",
+      "kind": "live-concept"
+    },
+    {
+      "source": "live:LIVE030",
+      "target": "concept:deposit-funded-debt-rollover",
+      "kind": "live-concept"
+    },
+    {
+      "source": "live:LIVE030",
+      "target": "concept:hidden-debt",
+      "kind": "live-concept"
+    },
+    {
+      "source": "live:LIVE030",
+      "target": "concept:subsidy-leverage-engine",
+      "kind": "live-concept"
+    },
+    {
+      "source": "live:LIVE030",
+      "target": "concept:credential-rent",
+      "kind": "live-concept"
+    },
+    {
+      "source": "live:LIVE030",
+      "target": "concept:pan-institutional-middle-class",
+      "kind": "live-concept"
+    },
+    {
+      "source": "live:LIVE030",
+      "target": "model:identity-stratification",
+      "kind": "live-model"
+    },
+    {
+      "source": "live:LIVE030",
+      "target": "model:circle-grant-loop",
+      "kind": "live-model"
+    },
+    {
+      "source": "live:LIVE030",
+      "target": "model:subsidy-capital-flywheel",
+      "kind": "live-model"
+    },
+    {
+      "source": "live:LIVE030",
+      "target": "theme:middle-class-descent-and-stratification",
+      "kind": "live-theme"
+    },
+    {
+      "source": "live:LIVE030",
+      "target": "theme:local-fiscal-stress-and-hidden-debt",
+      "kind": "live-theme"
+    },
+    {
+      "source": "live:LIVE030",
+      "target": "theme:institutional-middle-class-and-social-mobility",
+      "kind": "live-theme"
+    },
+    {
+      "source": "live:LIVE030",
+      "target": "theme:charity-and-moral-capital",
+      "kind": "live-theme"
+    },
+    {
+      "source": "live:LIVE030",
+      "target": "theme:ai-bubble-and-compute-demand",
+      "kind": "live-theme"
+    },
+    {
+      "source": "live:LIVE030",
+      "target": "theme:local-government-financialization",
+      "kind": "live-theme"
+    },
+    {
+      "source": "live:LIVE030",
+      "target": "theme:cash-optionality-and-liquidity-anxiety",
+      "kind": "live-theme"
+    },
+    {
+      "source": "live:LIVE030",
+      "target": "theme:planned-systems-and-innovation",
+      "kind": "live-theme"
+    },
+    {
+      "source": "live:LIVE030",
+      "target": "theme:evaluation-and-moral-capital",
+      "kind": "live-theme"
+    },
+    {
+      "source": "live:LIVE030",
+      "target": "model:narrative-leverage",
+      "kind": "live-model"
     },
     {
       "source": "live:LIVE031",
