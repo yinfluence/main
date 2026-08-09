@@ -20,9 +20,17 @@ const DOMAINS = [
 
 const RULES = {
   chaptersMin: 3,
-  chaptersMax: 6,
+  // 上限 5，不是 6。12 节的上限除以每组至少 2 节，6 个大话题只可能排成
+  // 全 2 节的等分，主线再重要也多不出一节。LIVE031 第一版就是这么排成
+  // [2,2,2,2,2,2] 的，31 期里唯一一个全等分
+  chaptersMax: 5,
   segmentsMin: 6,
   segmentsMax: 12,
+  // 每个大话题 2 到 3 节。1 节撑不成一个话题，4 节以上就该拆
+  sectionsPerChapterMin: 2,
+  sectionsPerChapterMax: 3,
+  // 上面两条从 LIVE030 起强制，之前的是存量，按批清理，见 sop/08
+  structureRuleFrom: 30,
   pointsMin: 4,
   // 硬上限 4（用户 2026-07-31 定）。这里曾经是 8，跟 sop/08 的规定对不上，
   // 于是 SOP 改了脚本没改，一屏七八个点照样过检
@@ -137,8 +145,21 @@ for (const live of lives.sort((a, b) => a.id.localeCompare(b.id))) {
     if (!chapter) chapters.push({ name, count: 1 });
     else chapter.count += 1;
   }
+  // 结构规则对存量期只提示，对 LIVE030 之后的新期阻断
+  const liveNum = Number(id.replace('LIVE', ''));
+  const structural = Number.isFinite(liveNum) && liveNum >= RULES.structureRuleFrom ? fail : warn;
   if (chapters.length < RULES.chaptersMin || chapters.length > RULES.chaptersMax) {
-    fail(id, `大话题 ${chapters.length} 个，超出 ${RULES.chaptersMin} 到 ${RULES.chaptersMax}`);
+    structural(id, `大话题 ${chapters.length} 个，超出 ${RULES.chaptersMin} 到 ${RULES.chaptersMax}`);
+  }
+  const badSpread = chapters.filter(
+    (item) => item.count < RULES.sectionsPerChapterMin || item.count > RULES.sectionsPerChapterMax
+  );
+  if (badSpread.length) {
+    const shape = chapters.map((item) => item.count).join(',');
+    structural(id, `每个大话题该有 ${RULES.sectionsPerChapterMin} 到 ${RULES.sectionsPerChapterMax} 节，实际分布 [${shape}]：${badSpread.map((item) => `${item.name} ${item.count} 节`).join('、')}`);
+  }
+  if (chapters.length && chapters.every((item) => item.count === chapters[0].count) && chapters.length >= 4) {
+    structural(id, `${chapters.length} 个大话题各 ${chapters[0].count} 节，等分说明没有分出主线`);
   }
   // 大话题必须是内容主题，不能拿位置或动作当名字
   const POSITIONAL = /散场|开场|收尾|最后聊|随便聊|聊了会儿|其他|杂谈|番外/;

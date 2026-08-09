@@ -3,7 +3,7 @@
     "title": "颖响力知识图谱",
     "subtitle": "节目、概念、模型、人物、主题之间的可视化连接网络",
     "nodeCount": 678,
-    "linkCount": 2545,
+    "linkCount": 2550,
     "typeCounts": {
       "model": 80,
       "live": 31,
@@ -147,6 +147,17 @@
       "degree": 33
     },
     {
+      "id": "live:LIVE031",
+      "key": "LIVE031",
+      "label": "LIVE031",
+      "fullLabel": "LIVE031 · 香港保险要交税了，交出去的其实是后台数据，县里现在也看得见你那笔钱",
+      "type": "live",
+      "route": "lives/LIVE031",
+      "summary": "未申报资产的获刑线刚从三十万提到三百万，有人还没高兴完。",
+      "status": "curated",
+      "degree": 33
+    },
+    {
       "id": "live:LIVE011",
       "key": "LIVE011",
       "label": "LIVE011",
@@ -180,17 +191,6 @@
       "degree": 31
     },
     {
-      "id": "live:LIVE031",
-      "key": "LIVE031",
-      "label": "LIVE031",
-      "fullLabel": "LIVE031 · 香港保险要交税了，交出去的其实是后台数据，县里现在也看得见你那笔钱",
-      "type": "live",
-      "route": "lives/LIVE031",
-      "summary": "未申报资产的获刑线刚从三十万提到三百万，有人还没高兴完。",
-      "status": "curated",
-      "degree": 31
-    },
-    {
       "id": "live:LIVE012",
       "key": "LIVE012",
       "label": "LIVE012",
@@ -220,6 +220,17 @@
       "type": "live",
       "route": "lives/LIVE022",
       "summary": "他在那儿淘过五十年前的版画，还背回来一件当年出口的瓷器。",
+      "status": "curated",
+      "degree": 30
+    },
+    {
+      "id": "live:LIVE030",
+      "key": "LIVE030",
+      "label": "LIVE030",
+      "fullLabel": "LIVE030 · 四拨人都站错了位置，县城小老板以为自己是中产，中产以为自己是社会底层",
+      "type": "live",
+      "route": "lives/LIVE030",
+      "summary": "五年期存单给你一点六，这个数字一出来，复利这件事就不成立了。",
       "status": "curated",
       "degree": 30
     },
@@ -312,17 +323,6 @@
       "degree": 27
     },
     {
-      "id": "live:LIVE030",
-      "key": "LIVE030",
-      "label": "LIVE030",
-      "fullLabel": "LIVE030 · 四拨人都站错了位置，县城小老板以为自己是中产，中产以为自己是社会底层",
-      "type": "live",
-      "route": "lives/LIVE030",
-      "summary": "五年期存单给你一点六，这个数字一出来，复利这件事就不成立了。",
-      "status": "curated",
-      "degree": 27
-    },
-    {
       "id": "theme:great-power-competition-and-strategic-time",
       "key": "great-power-competition-and-strategic-time",
       "label": "大国竞争与战略时间",
@@ -343,6 +343,17 @@
       "summary": "当中间层缺乏缓冲带时，经济下行会迅速转成身份下坠、关系断裂和社会分层加固。",
       "status": null,
       "degree": 26
+    },
+    {
+      "id": "theme:dollar-system-and-gray-trade",
+      "key": "dollar-system-and-gray-trade",
+      "label": "美元体系与灰色贸易",
+      "fullLabel": "美元体系与灰色贸易",
+      "type": "theme",
+      "route": "themes/dollar-system-and-gray-trade",
+      "summary": "讨论石油美元的真实脆弱点，究竟藏在公开统计之外的哪些灰色交易链条里。",
+      "status": null,
+      "degree": 25
     },
     {
       "id": "theme:singapore-and-small-state-survival",
@@ -398,17 +409,6 @@
       "summary": "拿旅游签证过去看看能不能留下，九月之后这就落在违规那条线上。",
       "status": "curated",
       "degree": 25
-    },
-    {
-      "id": "theme:dollar-system-and-gray-trade",
-      "key": "dollar-system-and-gray-trade",
-      "label": "美元体系与灰色贸易",
-      "fullLabel": "美元体系与灰色贸易",
-      "type": "theme",
-      "route": "themes/dollar-system-and-gray-trade",
-      "summary": "讨论石油美元的真实脆弱点，究竟藏在公开统计之外的哪些灰色交易链条里。",
-      "status": null,
-      "degree": 24
     },
     {
       "id": "episode:EP154",
@@ -741,6 +741,17 @@
       "degree": 17
     },
     {
+      "id": "concept:middle-class-hard-landing",
+      "key": "middle-class-hard-landing",
+      "label": "中产硬着陆",
+      "fullLabel": "中产硬着陆",
+      "type": "concept",
+      "route": "concepts/middle-class-hard-landing",
+      "summary": "高负债中产一旦失速，下坠往往同时摧毁资产、体面、关系和自我认同。",
+      "status": null,
+      "degree": 17
+    },
+    {
       "id": "episode:EP133",
       "key": "EP133",
       "label": "EP133",
@@ -858,17 +869,6 @@
       "type": "theme",
       "route": "themes/sanctions-and-power-containment",
       "summary": "讨论制裁、门罗主义、海峡与联盟如何共同服务于压制对手集团的全球布局。",
-      "status": null,
-      "degree": 16
-    },
-    {
-      "id": "concept:middle-class-hard-landing",
-      "key": "middle-class-hard-landing",
-      "label": "中产硬着陆",
-      "fullLabel": "中产硬着陆",
-      "type": "concept",
-      "route": "concepts/middle-class-hard-landing",
-      "summary": "高负债中产一旦失速，下坠往往同时摧毁资产、体面、关系和自我认同。",
       "status": null,
       "degree": 16
     },
@@ -2358,6 +2358,17 @@
       "degree": 8
     },
     {
+      "id": "concept:transfer-payment-dependency",
+      "key": "transfer-payment-dependency",
+      "label": "转移支付依赖",
+      "fullLabel": "转移支付依赖",
+      "type": "concept",
+      "route": "concepts/transfer-payment-dependency",
+      "summary": "转移支付依赖指地方运转越来越靠上级财政输血，而不是靠本地产业和税源形成真实闭环。",
+      "status": null,
+      "degree": 8
+    },
+    {
       "id": "model:distribution-bias",
       "key": "distribution-bias",
       "label": "资源分配偏置",
@@ -2827,17 +2838,6 @@
       "type": "concept",
       "route": "concepts/expectation-selling",
       "summary": "通过出售可理解、可规划、可购买的未来想象，中间人获得影响力和收益。",
-      "status": null,
-      "degree": 7
-    },
-    {
-      "id": "concept:transfer-payment-dependency",
-      "key": "transfer-payment-dependency",
-      "label": "转移支付依赖",
-      "fullLabel": "转移支付依赖",
-      "type": "concept",
-      "route": "concepts/transfer-payment-dependency",
-      "summary": "转移支付依赖指地方运转越来越靠上级财政输血，而不是靠本地产业和税源形成真实闭环。",
       "status": null,
       "degree": 7
     },
@@ -4866,6 +4866,17 @@
       "degree": 3
     },
     {
+      "id": "concept:welfare-ratchet",
+      "key": "welfare-ratchet",
+      "label": "福利棘轮",
+      "fullLabel": "福利棘轮",
+      "type": "concept",
+      "route": "concepts/welfare-ratchet",
+      "summary": "补贴和福利只能加不能减：经济做好选民不加分，砍福利一定下台，政客被锁进透支未来的短期维稳。",
+      "status": null,
+      "degree": 3
+    },
+    {
       "id": "concept:toolified-history",
       "key": "toolified-history",
       "label": "工具化历史",
@@ -5603,17 +5614,6 @@
       "degree": 2
     },
     {
-      "id": "concept:welfare-ratchet",
-      "key": "welfare-ratchet",
-      "label": "福利棘轮",
-      "fullLabel": "福利棘轮",
-      "type": "concept",
-      "route": "concepts/welfare-ratchet",
-      "summary": "补贴和福利只能加不能减：经济做好选民不加分，砍福利一定下台，政客被锁进透支未来的短期维稳。",
-      "status": null,
-      "degree": 2
-    },
-    {
       "id": "model:follower-advantage-collapse",
       "key": "follower-advantage-collapse",
       "label": "跟随者失效",
@@ -5676,6 +5676,17 @@
       "type": "concept",
       "route": "concepts/overseas-sink-project",
       "summary": "跨境大项目若依赖旧周期资金和宏大叙事，外部条件反转后会变成难以止损的资产黑洞。",
+      "status": null,
+      "degree": 2
+    },
+    {
+      "id": "concept:compliance-refusal",
+      "key": "compliance-refusal",
+      "label": "合规式拒绝",
+      "fullLabel": "合规式拒绝",
+      "type": "concept",
+      "route": "concepts/compliance-refusal",
+      "summary": "把法律没有禁止的事说成规则不允许，用合规两个字挡住请求，既不必解释动机，也不必承担拒绝的后果。",
       "status": null,
       "degree": 2
     },
@@ -6567,17 +6578,6 @@
       "type": "person",
       "route": "people/haibian-de-xisailuo",
       "summary": "海边的西塞罗是中文互联网写作者和公众号作者，节目借其文章进入《论扯淡》、中式逻辑和工具化历史叙事的讨论。",
-      "status": null,
-      "degree": 1
-    },
-    {
-      "id": "concept:compliance-refusal",
-      "key": "compliance-refusal",
-      "label": "合规式拒绝",
-      "fullLabel": "合规式拒绝",
-      "type": "concept",
-      "route": "concepts/compliance-refusal",
-      "summary": "把法律没有禁止的事说成规则不允许，用合规两个字挡住请求，既不必解释动机，也不必承担拒绝的后果。",
       "status": null,
       "degree": 1
     },
@@ -19801,8 +19801,23 @@
     },
     {
       "source": "live:LIVE030",
+      "target": "concept:transfer-payment-dependency",
+      "kind": "live-concept"
+    },
+    {
+      "source": "live:LIVE030",
+      "target": "theme:dollar-system-and-gray-trade",
+      "kind": "live-theme"
+    },
+    {
+      "source": "live:LIVE030",
       "target": "model:narrative-leverage",
       "kind": "live-model"
+    },
+    {
+      "source": "live:LIVE030",
+      "target": "concept:compliance-refusal",
+      "kind": "live-concept"
     },
     {
       "source": "live:LIVE031",
@@ -19958,6 +19973,16 @@
       "source": "live:LIVE031",
       "target": "theme:travel-politics-and-border-screening",
       "kind": "live-theme"
+    },
+    {
+      "source": "live:LIVE031",
+      "target": "concept:welfare-ratchet",
+      "kind": "live-concept"
+    },
+    {
+      "source": "live:LIVE031",
+      "target": "concept:middle-class-hard-landing",
+      "kind": "live-concept"
     },
     {
       "source": "episode:EP120",
