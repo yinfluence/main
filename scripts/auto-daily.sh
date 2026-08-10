@@ -125,7 +125,10 @@ today_done && EPISODES_DONE=1
 # 整理进程的看护参数。没有这层的话 claude 一挂住就是无限等，而且全程占着锁 ——
 # 后面每次 launchd 触发都被挡掉，整个自动化静默死亡（2026-07-30 之前就是这样）。
 AGENT_HARD_LIMIT=3600   # 整理最长 60 分钟（EP190 实测 24 分钟，留一倍余量）
-AGENT_STALL_LIMIT=900   # 日志连续 15 分钟没有新字节就判卡死
+# 2026-08-10 从 900 提到 1500：EP197 那次 agent 起了后台轮询下字幕、然后前台阻塞
+# 等待，整整 8 分半钟四个监测目录一个字节都没写，叠上前面读 SOP 的时间正好踩满 15
+# 分钟被杀。硬上限 3600 仍在，所以最坏情况只是多等 10 分钟，不会无限挂。
+AGENT_STALL_LIMIT=1500  # 四个活性信号全停 25 分钟才判卡死
 
 # claude 自己会拉一堆子进程，只杀父进程的话子进程会继续跑并接着写文件
 kill_tree() {
@@ -137,16 +140,32 @@ kill_tree() {
   kill -KILL "$pid" 2>/dev/null
 }
 
-# 整理进程是不是还活着，看两个信号，任一在动就算活着：
+# 整理进程是不是还活着，看这些信号，任一在动就算活着：
 #   1. 日志字节增长
-#   2. content/ 和 docs/ 下最新的文件改动时间
+#   2. content/、docs/ 下最新的文件改动时间（整理后半程）
+#   3. workbench/ 和 ../bilibili/ 下最新的文件改动时间（备料期：下音频、转写、存字幕）
+#   4. claude 自己的 session jsonl（它每一次工具调用都往里追加一行）
 # 只看日志会必然误杀：claude -p 是 headless 模式，全程不往 stdout 写东西，只在
 # 最后一次性输出，而整理一期实际要 20 到 40 分钟。2026-07-31、08-03、08-04 连着
 # 三次都是这么被杀的，7-31 那次是靠人工每分钟往日志写一行心跳才兜过去的。
-# content/ 和 docs/ 里最新一次文件改动的 unix 时间。取最大值而不是数文件个数：
-# 计数会随时间窗口滑动而变化，真卡死时反倒像是有活动。
+#
+# 2026-08-10 EP197 又栽了一次，加了信号 3 和 4 才补上：那次 agent 从头到尾活着，
+# 15 分钟里跑了 169 条记录、35 次 Bash、11 次 Read，但备料写的是 workbench/ 和
+# ../bilibili/raw/，一个字节都不落在 content/ 和 docs/ 里，两个老信号同时是死线。
+# 信号 4 是唯一能覆盖"纯读、不写盘"那段的：agent 在读 SOP、读转写稿时不产出任何
+# 文件，jsonl 却一直在长（那次长到 743KB）。
+#
+# 取最大值而不是数文件个数：计数会随时间窗口滑动而变化，真卡死时反倒像是有活动。
+# logs/ 不能进来 —— 本脚本自己一直在写它，加进去这个信号就永远是活的。
+
+# Claude Code 用 cwd 的路径当 session 目录名，非字母数字字符全换成横线。
+# 2026-08-10 在本机核对过，与 ~/.claude/projects/ 下的实际目录名逐字符一致。
+AGENT_SESSION_DIR="$HOME/.claude/projects/$(printf '%s' "$WEB" | sed 's/[^a-zA-Z0-9]/-/g')"
+
 agent_activity_stamp() {
-  find "$WEB/content" "$WEB/docs" -type f -exec stat -f '%m' {} + 2>/dev/null \
+  find "$WEB/content" "$WEB/docs" "$WEB/workbench" \
+       "$(dirname "$WEB")/bilibili" "$AGENT_SESSION_DIR" \
+       -type f -exec stat -f '%m' {} + 2>/dev/null \
     | sort -rn | head -1
 }
 
