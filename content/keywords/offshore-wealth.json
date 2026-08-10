@@ -44,7 +44,10 @@
     "offshore-rmb",
     "xianggang",
     "singapore",
-    "switzerland"
+    "switzerland",
+    "crs",
+    "offshore-trust",
+    "hong-kong-national-security-law"
   ],
   "sources": [],
   "episodes": [
@@ -55,6 +58,10 @@
     {
       "id": "EP188",
       "note": "本期把家族办公室讲成离岸财富体系最顶层的定制形态：全球多元配置、跨境合规、以百年为尺度脱离单一国家周期。"
+    },
+    {
+      "id": "EP197",
+      "note": "离岸财富的隐身功能在这期被判定失效，CRS 交出底数之后，离岸只剩配置和法域两项真实功能。"
     }
   ]
 }

@@ -35,7 +35,10 @@
   "relatedKeywords": [
     "singapore",
     "dubai",
-    "ziben-guanzhi"
+    "ziben-guanzhi",
+    "crs",
+    "hong-kong-national-security-law",
+    "hong-kong-insurance"
   ],
   "episodes": [
     {
@@ -49,6 +52,10 @@
     {
       "id": "EP188",
       "note": "本期判断香港处在大国体系之内、缺乏顶级家族要的中立性，这是它与新加坡家族办公室生态分化的根本逻辑。"
+    },
+    {
+      "id": "EP197",
+      "note": "节目判断香港从避风港变成资产透明柜，依据是 CRS 交换底数加上国安法写明的资产冻结与充公条款。"
     }
   ]
 }
