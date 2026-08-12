@@ -933,5 +933,15 @@
       "platform": "youtube",
       "url": "https://www.youtube.com/watch?v=y6sP93hEqTA"
     }
+  },
+  "EP198": {
+    "bilibili": {
+      "platform": "bilibili",
+      "url": "https://www.bilibili.com/video/BV11juC6XEL7/"
+    },
+    "youtube": {
+      "platform": "youtube",
+      "url": "https://www.youtube.com/watch?v=3PUD7KqxoUk"
+    }
   }
 }

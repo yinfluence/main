@@ -2,14 +2,14 @@
   "meta": {
     "title": "颖响力知识图谱",
     "subtitle": "节目、概念、模型、人物、主题之间的可视化连接网络",
-    "nodeCount": 682,
-    "linkCount": 2559,
+    "nodeCount": 686,
+    "linkCount": 2567,
     "typeCounts": {
-      "model": 81,
+      "model": 82,
       "live": 31,
       "theme": 92,
-      "episode": 197,
-      "concept": 216,
+      "episode": 198,
+      "concept": 218,
       "person": 65
     }
   },
@@ -686,6 +686,17 @@
       "degree": 18
     },
     {
+      "id": "theme:rule-of-law-boundaries-and-social-trust",
+      "key": "rule-of-law-boundaries-and-social-trust",
+      "label": "法治边界与社会信任",
+      "fullLabel": "法治边界与社会信任",
+      "type": "theme",
+      "route": "themes/rule-of-law-boundaries-and-social-trust",
+      "summary": "关注法律灰区如何影响公众的善意、风险感和彼此信任。",
+      "status": null,
+      "degree": 18
+    },
+    {
       "id": "concept:pan-institutional-middle-class",
       "key": "pan-institutional-middle-class",
       "label": "泛体制中产",
@@ -719,13 +730,13 @@
       "degree": 18
     },
     {
-      "id": "theme:rule-of-law-boundaries-and-social-trust",
-      "key": "rule-of-law-boundaries-and-social-trust",
-      "label": "法治边界与社会信任",
-      "fullLabel": "法治边界与社会信任",
-      "type": "theme",
-      "route": "themes/rule-of-law-boundaries-and-social-trust",
-      "summary": "关注法律灰区如何影响公众的善意、风险感和彼此信任。",
+      "id": "concept:cost-shifting",
+      "key": "cost-shifting",
+      "label": "成本外移",
+      "fullLabel": "成本外移",
+      "type": "concept",
+      "route": "concepts/cost-shifting",
+      "summary": "组织内部的高额非生产性成本，最终会通过价格、规则或风险转嫁给外部承担者。",
       "status": null,
       "degree": 17
     },
@@ -805,17 +816,6 @@
       "summary": "石油进口量断崖式世界第一的某国，日均消耗近1500万桶。美以与伊朗军事行动展开、霍尔木兹海峡被封后，进口在三四个月内减少三成多。排除三种主流解释，短期油价、新能源替代和动用战略储备。它的真实需求本来就只有进口量的三分之二。多出的部分多年来一直在转成战备储油。海峡一封，它只是停止增储，退回真实需求。所以进口暴跌，工业毫发无伤。台海一旦升级成中大型战争，石油要按两年来储，而不是120天。",
       "status": "curated",
       "degree": 17
-    },
-    {
-      "id": "concept:cost-shifting",
-      "key": "cost-shifting",
-      "label": "成本外移",
-      "fullLabel": "成本外移",
-      "type": "concept",
-      "route": "concepts/cost-shifting",
-      "summary": "组织内部的高额非生产性成本，最终会通过价格、规则或风险转嫁给外部承担者。",
-      "status": null,
-      "degree": 16
     },
     {
       "id": "theme:local-fiscal-stress-and-hidden-debt",
@@ -2325,6 +2325,17 @@
       "degree": 8
     },
     {
+      "id": "model:ex-post-accountability-governance",
+      "key": "ex-post-accountability-governance",
+      "label": "事后追责治理模型",
+      "fullLabel": "事后追责治理模型",
+      "type": "model",
+      "route": "models/ex-post-accountability-governance",
+      "summary": "治理可以选择事前管制每个人，也可以选择给自由、事后对违规者施加无法承受的代价；后者往往比前者更省成本也更有效。",
+      "status": null,
+      "degree": 8
+    },
+    {
       "id": "concept:pragmatic-legitimacy",
       "key": "pragmatic-legitimacy",
       "label": "务实合法性",
@@ -2732,6 +2743,17 @@
       "degree": 8
     },
     {
+      "id": "episode:EP198",
+      "key": "EP198",
+      "label": "EP198",
+      "fullLabel": "EP198 · 从韩杰案到防御性医疗，为什么我们正在走向两败俱伤的医患困局？",
+      "type": "episode",
+      "route": "episodes/EP198",
+      "summary": "江西一名儿科医生凌晨接诊两岁患儿，诊断肠梗阻收进住院，交班下班后患儿病情恶化，转院途中死亡。医院赔了一百四十六万，承担八成半责任，首诊医生被以医疗事故罪判了一年，缓刑一年，三年内不得从医。争议不在该不该罚，在罚到哪一步。漏做一项腹股沟查体是过失，把它认成刑法里的严重不负责任，中间还少了尸检这一环，用民事的可能性推出了刑事的确定性。这条线一旦划开，医生最理性的选择就变成自保。检查越开越多，能转诊就转诊，话只说最坏的一面。患者越追责，医生越退缩，先被卡住的是基层医院和最危重的那批人。",
+      "status": "curated",
+      "degree": 8
+    },
+    {
       "id": "model:opaque-withdrawal-governance",
       "key": "opaque-withdrawal-governance",
       "label": "不可读退出治理模型",
@@ -2827,17 +2849,6 @@
       "type": "concept",
       "route": "concepts/market-discipline-failure",
       "summary": "市场惩戒失效指规则被明显挑战后，法律、监管、审计和价格反应都没有让违规者付出足够代价。",
-      "status": null,
-      "degree": 7
-    },
-    {
-      "id": "model:ex-post-accountability-governance",
-      "key": "ex-post-accountability-governance",
-      "label": "事后追责治理模型",
-      "fullLabel": "事后追责治理模型",
-      "type": "model",
-      "route": "models/ex-post-accountability-governance",
-      "summary": "治理可以选择事前管制每个人，也可以选择给自由、事后对违规者施加无法承受的代价；后者往往比前者更省成本也更有效。",
       "status": null,
       "degree": 7
     },
@@ -4239,6 +4250,17 @@
       "degree": 4
     },
     {
+      "id": "concept:legal-grey-zone",
+      "key": "legal-grey-zone",
+      "label": "法律灰区",
+      "fullLabel": "法律灰区",
+      "type": "concept",
+      "route": "concepts/legal-grey-zone",
+      "summary": "事实、责任和伤害都不够清晰，却必须被社会和制度处理的边界地带。",
+      "status": null,
+      "degree": 4
+    },
+    {
       "id": "model:non-monetary-legacy",
       "key": "non-monetary-legacy",
       "label": "非货币遗产",
@@ -4279,6 +4301,17 @@
       "type": "model",
       "route": "models/individuation-three-stage",
       "summary": "个体化三阶段模型把成长理解为依次消化亲情、权威和自我，而非一次性觉醒。",
+      "status": null,
+      "degree": 4
+    },
+    {
+      "id": "theme:public-service-downgrading",
+      "key": "public-service-downgrading",
+      "label": "公共服务降标与治理后果",
+      "fullLabel": "公共服务降标与治理后果",
+      "type": "theme",
+      "route": "themes/public-service-downgrading",
+      "summary": "当财政和治理优先考虑控费，公共服务最常见的结果就是标准被整体压低。",
       "status": null,
       "degree": 4
     },
@@ -4844,17 +4877,6 @@
       "degree": 3
     },
     {
-      "id": "concept:legal-grey-zone",
-      "key": "legal-grey-zone",
-      "label": "法律灰区",
-      "fullLabel": "法律灰区",
-      "type": "concept",
-      "route": "concepts/legal-grey-zone",
-      "summary": "事实、责任和伤害都不够清晰，却必须被社会和制度处理的边界地带。",
-      "status": null,
-      "degree": 3
-    },
-    {
       "id": "model:layered-market",
       "key": "layered-market",
       "label": "分层市场",
@@ -4906,17 +4928,6 @@
       "type": "concept",
       "route": "concepts/industrial-education-lag",
       "summary": "教育仍按工业化时代的标准岗位培养人，而外部世界已经转向更不确定的能力结构。",
-      "status": null,
-      "degree": 3
-    },
-    {
-      "id": "theme:public-service-downgrading",
-      "key": "public-service-downgrading",
-      "label": "公共服务降标与治理后果",
-      "fullLabel": "公共服务降标与治理后果",
-      "type": "theme",
-      "route": "themes/public-service-downgrading",
-      "summary": "当财政和治理优先考虑控费，公共服务最常见的结果就是标准被整体压低。",
       "status": null,
       "degree": 3
     },
@@ -6483,6 +6494,17 @@
       "degree": 1
     },
     {
+      "id": "concept:defensive-medicine",
+      "key": "defensive-medicine",
+      "label": "防御性医疗",
+      "fullLabel": "防御性医疗",
+      "type": "concept",
+      "route": "concepts/defensive-medicine",
+      "summary": "医生不再围着病人的病情转，而是围着追责风险转，先想怎么做才不担责，再想怎么做对病人好。",
+      "status": null,
+      "degree": 1
+    },
+    {
       "id": "concept:stratified-pricing-market",
       "key": "stratified-pricing-market",
       "label": "分层定价市场",
@@ -7429,6 +7451,17 @@
       "degree": 1
     },
     {
+      "id": "concept:evidentiary-downgrade",
+      "key": "evidentiary-downgrade",
+      "label": "证据标准降格",
+      "fullLabel": "证据标准降格",
+      "type": "concept",
+      "route": "concepts/evidentiary-downgrade",
+      "summary": "一份按民事标准做出来的结论，被原样搬去支撑刑事定罪，可能性变成了确定性。",
+      "status": null,
+      "degree": 1
+    },
+    {
       "id": "person:zheng-liwen",
       "key": "zheng-liwen",
       "label": "郑丽文",
@@ -7469,6 +7502,17 @@
       "type": "concept",
       "route": "concepts/solemnity",
       "summary": "有一样东西不能拿来交换，也不能议价，更不能随便调侃，面对它的第一反应是敬畏而不是划算。",
+      "status": null,
+      "degree": 1
+    },
+    {
+      "id": "model:accountability-defense-spiral",
+      "key": "accountability-defense-spiral",
+      "label": "追责自保螺旋",
+      "fullLabel": "追责自保螺旋",
+      "type": "model",
+      "route": "models/accountability-defense-spiral",
+      "summary": "追责越重，从业者越自保；越自保，服务越差，被服务的一方越要追责，两边都在做对的选择，合起来一路向下。",
       "status": null,
       "degree": 1
     },
@@ -15161,6 +15205,46 @@
     {
       "source": "episode:EP197",
       "target": "theme:middle-class-descent-and-stratification",
+      "kind": "episode-theme"
+    },
+    {
+      "source": "episode:EP198",
+      "target": "concept:defensive-medicine",
+      "kind": "episode-concept"
+    },
+    {
+      "source": "episode:EP198",
+      "target": "concept:evidentiary-downgrade",
+      "kind": "episode-concept"
+    },
+    {
+      "source": "episode:EP198",
+      "target": "concept:legal-grey-zone",
+      "kind": "episode-concept"
+    },
+    {
+      "source": "episode:EP198",
+      "target": "concept:cost-shifting",
+      "kind": "episode-concept"
+    },
+    {
+      "source": "episode:EP198",
+      "target": "model:accountability-defense-spiral",
+      "kind": "episode-model"
+    },
+    {
+      "source": "episode:EP198",
+      "target": "model:ex-post-accountability-governance",
+      "kind": "episode-model"
+    },
+    {
+      "source": "episode:EP198",
+      "target": "theme:rule-of-law-boundaries-and-social-trust",
+      "kind": "episode-theme"
+    },
+    {
+      "source": "episode:EP198",
+      "target": "theme:public-service-downgrading",
       "kind": "episode-theme"
     },
     {
