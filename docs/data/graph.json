@@ -2,11 +2,11 @@
   "meta": {
     "title": "颖响力知识图谱",
     "subtitle": "节目、概念、模型、人物、主题之间的可视化连接网络",
-    "nodeCount": 686,
-    "linkCount": 2567,
+    "nodeCount": 687,
+    "linkCount": 2598,
     "typeCounts": {
       "model": 82,
-      "live": 31,
+      "live": 32,
       "theme": 92,
       "episode": 198,
       "concept": 218,
@@ -23,7 +23,7 @@
       "route": "models/risk-transfer-chain",
       "summary": "系统不会立刻吞下风险，而是先沿着银行、企业、票据、供应链和普通人之间不断转手、延后和下沉。",
       "status": null,
-      "degree": 45
+      "degree": 46
     },
     {
       "id": "live:LIVE002",
@@ -191,6 +191,17 @@
       "degree": 31
     },
     {
+      "id": "live:LIVE032",
+      "key": "LIVE032",
+      "label": "LIVE032",
+      "fullLabel": "LIVE032 · 北方大城市楼市又放开，可买了房你也只是等同于京爷，等同于就是不是",
+      "type": "live",
+      "route": "lives/LIVE032",
+      "summary": "三百万的房子降五万还有人问，现在得降五十万八十万才走得掉。",
+      "status": "curated",
+      "degree": 31
+    },
+    {
       "id": "live:LIVE012",
       "key": "LIVE012",
       "label": "LIVE012",
@@ -268,6 +279,17 @@
       "degree": 29
     },
     {
+      "id": "theme:middle-class-descent-and-stratification",
+      "key": "middle-class-descent-and-stratification",
+      "label": "中产下坠与分层社会",
+      "fullLabel": "中产下坠与分层社会",
+      "type": "theme",
+      "route": "themes/middle-class-descent-and-stratification",
+      "summary": "当中间层缺乏缓冲带时，经济下行会迅速转成身份下坠、关系断裂和社会分层加固。",
+      "status": null,
+      "degree": 28
+    },
+    {
       "id": "live:LIVE010",
       "key": "LIVE010",
       "label": "LIVE010",
@@ -312,17 +334,6 @@
       "degree": 28
     },
     {
-      "id": "theme:middle-class-descent-and-stratification",
-      "key": "middle-class-descent-and-stratification",
-      "label": "中产下坠与分层社会",
-      "fullLabel": "中产下坠与分层社会",
-      "type": "theme",
-      "route": "themes/middle-class-descent-and-stratification",
-      "summary": "当中间层缺乏缓冲带时，经济下行会迅速转成身份下坠、关系断裂和社会分层加固。",
-      "status": null,
-      "degree": 27
-    },
-    {
       "id": "episode:EP156",
       "key": "EP156",
       "label": "EP156",
@@ -345,6 +356,17 @@
       "degree": 26
     },
     {
+      "id": "concept:hidden-debt",
+      "key": "hidden-debt",
+      "label": "隐形债务",
+      "fullLabel": "隐形债务",
+      "type": "concept",
+      "route": "concepts/hidden-debt",
+      "summary": "表外、体外和合作链条里的债务不在显性报表中充分呈现，却会在危机时重新压回主体。",
+      "status": null,
+      "degree": 26
+    },
+    {
       "id": "theme:dollar-system-and-gray-trade",
       "key": "dollar-system-and-gray-trade",
       "label": "美元体系与灰色贸易",
@@ -363,17 +385,6 @@
       "type": "theme",
       "route": "themes/singapore-and-small-state-survival",
       "summary": "讨论新加坡如何把规则、海峡、人才和谨慎外交组合成一套小国长期生存方法。",
-      "status": null,
-      "degree": 25
-    },
-    {
-      "id": "concept:hidden-debt",
-      "key": "hidden-debt",
-      "label": "隐形债务",
-      "fullLabel": "隐形债务",
-      "type": "concept",
-      "route": "concepts/hidden-debt",
-      "summary": "表外、体外和合作链条里的债务不在显性报表中充分呈现，却会在危机时重新压回主体。",
       "status": null,
       "degree": 25
     },
@@ -598,6 +609,17 @@
       "degree": 20
     },
     {
+      "id": "theme:rule-of-law-boundaries-and-social-trust",
+      "key": "rule-of-law-boundaries-and-social-trust",
+      "label": "法治边界与社会信任",
+      "fullLabel": "法治边界与社会信任",
+      "type": "theme",
+      "route": "themes/rule-of-law-boundaries-and-social-trust",
+      "summary": "关注法律灰区如何影响公众的善意、风险感和彼此信任。",
+      "status": null,
+      "degree": 19
+    },
+    {
       "id": "theme:institutional-middle-class-and-social-mobility",
       "key": "institutional-middle-class-and-social-mobility",
       "label": "体制化中产与社会流动",
@@ -686,17 +708,6 @@
       "degree": 18
     },
     {
-      "id": "theme:rule-of-law-boundaries-and-social-trust",
-      "key": "rule-of-law-boundaries-and-social-trust",
-      "label": "法治边界与社会信任",
-      "fullLabel": "法治边界与社会信任",
-      "type": "theme",
-      "route": "themes/rule-of-law-boundaries-and-social-trust",
-      "summary": "关注法律灰区如何影响公众的善意、风险感和彼此信任。",
-      "status": null,
-      "degree": 18
-    },
-    {
       "id": "concept:pan-institutional-middle-class",
       "key": "pan-institutional-middle-class",
       "label": "泛体制中产",
@@ -708,6 +719,17 @@
       "degree": 18
     },
     {
+      "id": "model:leverage-backfire",
+      "key": "leverage-backfire",
+      "label": "杠杆反噬",
+      "fullLabel": "杠杆反噬",
+      "type": "model",
+      "route": "models/leverage-backfire",
+      "summary": "杠杆反噬解释上行期放大利润的结构，如何在下行期放大亏损、现金流压力和清偿困难。",
+      "status": null,
+      "degree": 18
+    },
+    {
       "id": "model:value-capture",
       "key": "value-capture",
       "label": "价值捕获",
@@ -715,6 +737,17 @@
       "type": "model",
       "route": "models/value-capture",
       "summary": "价值捕获模型强调商业链条中关键不只是创造了价值，而是谁真正留下了价值。",
+      "status": null,
+      "degree": 18
+    },
+    {
+      "id": "concept:middle-class-hard-landing",
+      "key": "middle-class-hard-landing",
+      "label": "中产硬着陆",
+      "fullLabel": "中产硬着陆",
+      "type": "concept",
+      "route": "concepts/middle-class-hard-landing",
+      "summary": "高负债中产一旦失速，下坠往往同时摧毁资产、体面、关系和自我认同。",
       "status": null,
       "degree": 18
     },
@@ -737,28 +770,6 @@
       "type": "concept",
       "route": "concepts/cost-shifting",
       "summary": "组织内部的高额非生产性成本，最终会通过价格、规则或风险转嫁给外部承担者。",
-      "status": null,
-      "degree": 17
-    },
-    {
-      "id": "model:leverage-backfire",
-      "key": "leverage-backfire",
-      "label": "杠杆反噬",
-      "fullLabel": "杠杆反噬",
-      "type": "model",
-      "route": "models/leverage-backfire",
-      "summary": "杠杆反噬解释上行期放大利润的结构，如何在下行期放大亏损、现金流压力和清偿困难。",
-      "status": null,
-      "degree": 17
-    },
-    {
-      "id": "concept:middle-class-hard-landing",
-      "key": "middle-class-hard-landing",
-      "label": "中产硬着陆",
-      "fullLabel": "中产硬着陆",
-      "type": "concept",
-      "route": "concepts/middle-class-hard-landing",
-      "summary": "高负债中产一旦失速，下坠往往同时摧毁资产、体面、关系和自我认同。",
       "status": null,
       "degree": 17
     },
@@ -1005,6 +1016,17 @@
       "degree": 14
     },
     {
+      "id": "model:balance-sheet-maintenance",
+      "key": "balance-sheet-maintenance",
+      "label": "资产负债表维持",
+      "fullLabel": "资产负债表维持",
+      "type": "model",
+      "route": "models/balance-sheet-maintenance",
+      "summary": "当系统进入压力期，各方优先做的不是立刻出清，而是先保住估值、抵押物和报表表面完整。",
+      "status": null,
+      "degree": 14
+    },
+    {
       "id": "episode:EP042",
       "key": "EP042",
       "label": "EP042",
@@ -1115,6 +1137,28 @@
       "degree": 14
     },
     {
+      "id": "episode:EP193",
+      "key": "EP193",
+      "label": "EP193",
+      "fullLabel": "EP193 · 贫困生不配喝9.9元的咖啡？聊聊助学金认定背后的人性bug与制度漏洞",
+      "type": "episode",
+      "route": "episodes/EP193",
+      "summary": "一个女生拿了贫困补贴，每天早晨喝一杯 9.9 元的瑞幸，被人连着取证三十多天之后举报骗补。节目不认这套算法。每月三百块的咖啡不构成奢侈消费，用苦行僧的样子去框贫困生，是拿刻板印象绑架弱势群体，还会逼出更多虚假。私下盯梢取证这件事本身也不值得表扬，它先拆掉的是人和人之间的信任。真正该问的是审核机制，福利部门只核表格合不合规，不去看这个家庭是不是真的出了状况。福利如果只保一个不饿死，那就还停在施粥的年代。",
+      "status": "curated",
+      "degree": 14
+    },
+    {
+      "id": "theme:real-estate-deleveraging",
+      "key": "real-estate-deleveraging",
+      "label": "房地产去杠杆与风险出清",
+      "fullLabel": "房地产去杠杆与风险出清",
+      "type": "theme",
+      "route": "themes/real-estate-deleveraging",
+      "summary": "讨论房地产在下行周期里如何通过断供、重组、展期和资产处置逐步暴露风险。",
+      "status": null,
+      "degree": 13
+    },
+    {
       "id": "model:chokepoint-order-model",
       "key": "chokepoint-order-model",
       "label": "海峡秩序模型",
@@ -1144,17 +1188,6 @@
       "type": "model",
       "route": "models/narrative-leverage",
       "summary": "通过一个足够大的故事，把原本有限的资源、信用和注意力撬成更大的资本、销量或支持度。",
-      "status": null,
-      "degree": 13
-    },
-    {
-      "id": "model:balance-sheet-maintenance",
-      "key": "balance-sheet-maintenance",
-      "label": "资产负债表维持",
-      "fullLabel": "资产负债表维持",
-      "type": "model",
-      "route": "models/balance-sheet-maintenance",
-      "summary": "当系统进入压力期，各方优先做的不是立刻出清，而是先保住估值、抵押物和报表表面完整。",
       "status": null,
       "degree": 13
     },
@@ -1278,28 +1311,6 @@
       "summary": "新加坡单一家族办公室五年从400家涨到2750家。它不是富豪的炒股团队，是解决代际传承死穴的制度工具。血缘筛选保证不了后代能力。长子继承制只防资产分割，防不住财富流失。唯一出路是所有权与经营权彻底分割。家族握住所有权和收益权，投资、信托、税务、合规交给专业团队。老钱扎堆新加坡、瑞士，是要脱离大国国运周期的中立法域。这与小国对干净长钱的需求双向奔赴。老钱和新钱的真正区别就在这儿，用制度对抗人性和周期。",
       "status": "curated",
       "degree": 13
-    },
-    {
-      "id": "episode:EP193",
-      "key": "EP193",
-      "label": "EP193",
-      "fullLabel": "EP193 · 贫困生不配喝9.9元的咖啡？聊聊助学金认定背后的人性bug与制度漏洞",
-      "type": "episode",
-      "route": "episodes/EP193",
-      "summary": "一个女生拿了贫困补贴，每天早晨喝一杯 9.9 元的瑞幸，被人连着取证三十多天之后举报骗补。节目不认这套算法。每月三百块的咖啡不构成奢侈消费，用苦行僧的样子去框贫困生，是拿刻板印象绑架弱势群体，还会逼出更多虚假。私下盯梢取证这件事本身也不值得表扬，它先拆掉的是人和人之间的信任。真正该问的是审核机制，福利部门只核表格合不合规，不去看这个家庭是不是真的出了状况。福利如果只保一个不饿死，那就还停在施粥的年代。",
-      "status": "curated",
-      "degree": 13
-    },
-    {
-      "id": "theme:real-estate-deleveraging",
-      "key": "real-estate-deleveraging",
-      "label": "房地产去杠杆与风险出清",
-      "fullLabel": "房地产去杠杆与风险出清",
-      "type": "theme",
-      "route": "themes/real-estate-deleveraging",
-      "summary": "讨论房地产在下行周期里如何通过断供、重组、展期和资产处置逐步暴露风险。",
-      "status": null,
-      "degree": 12
     },
     {
       "id": "model:black-box-assetization",
@@ -1474,6 +1485,17 @@
       "type": "model",
       "route": "models/authority-misinfluence",
       "summary": "权威影响模型解释单点权威如何压缩组织独立判断，使成员更容易服从而非纠偏。",
+      "status": null,
+      "degree": 11
+    },
+    {
+      "id": "model:identity-stratification",
+      "key": "identity-stratification",
+      "label": "身份型分层",
+      "fullLabel": "身份型分层",
+      "type": "model",
+      "route": "models/identity-stratification",
+      "summary": "身份型分层说明阶层排序从收入和资产，转向编制、合规位置、圈层资源和稳定预期。",
       "status": null,
       "degree": 11
     },
@@ -1698,17 +1720,6 @@
       "degree": 10
     },
     {
-      "id": "model:identity-stratification",
-      "key": "identity-stratification",
-      "label": "身份型分层",
-      "fullLabel": "身份型分层",
-      "type": "model",
-      "route": "models/identity-stratification",
-      "summary": "身份型分层说明阶层排序从收入和资产，转向编制、合规位置、圈层资源和稳定预期。",
-      "status": null,
-      "degree": 10
-    },
-    {
       "id": "model:small-state-balancing-model",
       "key": "small-state-balancing-model",
       "label": "小国平衡术",
@@ -1749,6 +1760,17 @@
       "type": "episode",
       "route": "episodes/EP057",
       "summary": "从 Manus 与 Meta 的收购传闻切入。讨论的是一家中国创始人主导的 AI 公司。它为什么最后要以“新加坡公司”的姿态进入全球资本视野。核心判断不是“中国 AI 出海成功”。融资、法律结构和人才环境如果仍被本土估值逻辑卡住，真正想做大的公司就会主动迁走。它会把身份和主场搬到更适合兑现价值的地方。",
+      "status": "curated",
+      "degree": 10
+    },
+    {
+      "id": "episode:EP088",
+      "key": "EP088",
+      "label": "EP088",
+      "fullLabel": "EP088 · 上海楼市沪七条有用吗？中国社会恐怖的“税”“涨”“拖”三字诀，解析财经政策背后真相。",
+      "type": "episode",
+      "route": "episodes/EP088",
+      "summary": "上海楼市沪七条的功能是托而不救、托而不解。松动二三线居民来沪买房的门槛，让交易数字别太难看。想卖房跑路、想置换改善的人依然卖不动。像只让吃饭不让排泄的小貔貅。日本三支箭管用，是家庭部门用 30 年把负债表压平。中国楼市八支箭也难找回头路。普通人接下来面对三个字。税压在中小私营业主身上，再传到员工。涨是水电煤气和消费品普涨先于资产反转。托是地价估值被国企互拍撑着走。下行的时候，现金比房子更像权利。",
       "status": "curated",
       "degree": 10
     },
@@ -1819,6 +1841,17 @@
       "degree": 10
     },
     {
+      "id": "episode:EP194",
+      "key": "EP194",
+      "label": "EP194",
+      "fullLabel": "EP194 · 银行重启五年期存单真相：不是利率要涨，是全民化债，是一场悄无声息的财富转移",
+      "type": "episode",
+      "route": "episodes/EP194",
+      "summary": "工农中建四大行把停了近半年的五年期大额存单重新上架，国有大行统一给到 1.6%。市面把它读成银行提前锁定成本、看好后续加息。这个逻辑正好搞反了。只有预判利率长期往下走，才会急着把当前的资金成本锁死。三年期 1.5%、五年期 1.6%，多存两年只多五个基点，等于想锁住这笔钱五年，又不肯为那两年付钱。往下还有两层。储户拿 1.6% 的利息，银行拿这笔钱去置换地方债，化债的成本摊到了每个存钱的人头上。1.6 到 1.8 这个数字还是一把尺子，任何号称稳定四个点以上的产品都要先拿它量一遍。",
+      "status": "curated",
+      "degree": 10
+    },
+    {
       "id": "concept:standard-labor-replacement",
       "key": "standard-labor-replacement",
       "label": "标准劳动力替代",
@@ -1870,6 +1903,17 @@
       "type": "theme",
       "route": "themes/platform-governance-and-folk-discourse",
       "summary": "讨论平台如何识别、容忍、限制和清理具有高传播性的民间表达。",
+      "status": null,
+      "degree": 9
+    },
+    {
+      "id": "model:screening-machine",
+      "key": "screening-machine",
+      "label": "筛选机器模型",
+      "fullLabel": "筛选机器模型",
+      "type": "model",
+      "route": "models/screening-machine",
+      "summary": "教育和组织把人当作待筛选样本，而非待生长的人来处理的系统逻辑。",
       "status": null,
       "degree": 9
     },
@@ -2039,17 +2083,6 @@
       "degree": 9
     },
     {
-      "id": "episode:EP088",
-      "key": "EP088",
-      "label": "EP088",
-      "fullLabel": "EP088 · 上海楼市沪七条有用吗？中国社会恐怖的“税”“涨”“拖”三字诀，解析财经政策背后真相。",
-      "type": "episode",
-      "route": "episodes/EP088",
-      "summary": "上海楼市沪七条的功能是托而不救、托而不解。松动二三线居民来沪买房的门槛，让交易数字别太难看。想卖房跑路、想置换改善的人依然卖不动。像只让吃饭不让排泄的小貔貅。日本三支箭管用，是家庭部门用 30 年把负债表压平。中国楼市八支箭也难找回头路。普通人接下来面对三个字。税压在中小私营业主身上，再传到员工。涨是水电煤气和消费品普涨先于资产反转。托是地价估值被国企互拍撑着走。下行的时候，现金比房子更像权利。",
-      "status": "curated",
-      "degree": 9
-    },
-    {
       "id": "episode:EP091",
       "key": "EP091",
       "label": "EP091",
@@ -2138,17 +2171,6 @@
       "degree": 9
     },
     {
-      "id": "episode:EP194",
-      "key": "EP194",
-      "label": "EP194",
-      "fullLabel": "EP194 · 银行重启五年期存单真相：不是利率要涨，是全民化债，是一场悄无声息的财富转移",
-      "type": "episode",
-      "route": "episodes/EP194",
-      "summary": "工农中建四大行把停了近半年的五年期大额存单重新上架，国有大行统一给到 1.6%。市面把它读成银行提前锁定成本、看好后续加息。这个逻辑正好搞反了。只有预判利率长期往下走，才会急着把当前的资金成本锁死。三年期 1.5%、五年期 1.6%，多存两年只多五个基点，等于想锁住这笔钱五年，又不肯为那两年付钱。往下还有两层。储户拿 1.6% 的利息，银行拿这笔钱去置换地方债，化债的成本摊到了每个存钱的人头上。1.6 到 1.8 这个数字还是一把尺子，任何号称稳定四个点以上的产品都要先拿它量一遍。",
-      "status": "curated",
-      "degree": 9
-    },
-    {
       "id": "episode:EP196",
       "key": "EP196",
       "label": "EP196",
@@ -2167,6 +2189,17 @@
       "type": "episode",
       "route": "episodes/EP197",
       "summary": "香港储蓄型保险要交个税了。保单分红和预缴保费产生的利息，统一按 20% 征收。北京和杭州据说已经有了落地案例。只盯着这 20% 就看浅了。往前数还有离岸信托的个税征管、跨境券商的整顿、新出台的出入境管理条例。这些动作合起来才是一条完整的链。真正要命的不是税率，是保险公司要把账目对税务单位公开。境外资产从一个自己心里有底的黑箱，变成一张别人看得见的名单。今天落地的是个税，明天可以是别的税、别的费、别的核查。把钱搬到境外就能隐身的红利期已经结束，这只是第一回合。",
+      "status": "curated",
+      "degree": 9
+    },
+    {
+      "id": "episode:EP198",
+      "key": "EP198",
+      "label": "EP198",
+      "fullLabel": "EP198 · 从韩杰案到防御性医疗，为什么我们正在走向两败俱伤的医患困局？",
+      "type": "episode",
+      "route": "episodes/EP198",
+      "summary": "江西一名儿科医生凌晨接诊两岁患儿，诊断肠梗阻收进住院，交班下班后患儿病情恶化，转院途中死亡。医院赔了一百四十六万，承担八成半责任，首诊医生被以医疗事故罪判了一年，缓刑一年，三年内不得从医。争议不在该不该罚，在罚到哪一步。漏做一项腹股沟查体是过失，把它认成刑法里的严重不负责任，中间还少了尸检这一环，用民事的可能性推出了刑事的确定性。这条线一旦划开，医生最理性的选择就变成自保。检查越开越多，能转诊就转诊，话只说最坏的一面。患者越追责，医生越退缩，先被卡住的是基层医院和最危重的那批人。",
       "status": "curated",
       "degree": 9
     },
@@ -2281,6 +2314,17 @@
       "degree": 8
     },
     {
+      "id": "theme:human-value-and-state-credit",
+      "key": "human-value-and-state-credit",
+      "label": "人的价值与国家信用",
+      "fullLabel": "人的价值与国家信用",
+      "type": "theme",
+      "route": "themes/human-value-and-state-credit",
+      "summary": "讨论国家究竟把个体视为成本、工具，还是视为必须兑现承诺的对象。",
+      "status": null,
+      "degree": 8
+    },
+    {
       "id": "model:human-machine-differentiation",
       "key": "human-machine-differentiation",
       "label": "人机差异化模型",
@@ -2288,17 +2332,6 @@
       "type": "model",
       "route": "models/human-machine-differentiation",
       "summary": "当机器越来越擅长标准化任务时，人类价值必须转向不可轻易复制的判断与创造。",
-      "status": null,
-      "degree": 8
-    },
-    {
-      "id": "model:screening-machine",
-      "key": "screening-machine",
-      "label": "筛选机器模型",
-      "fullLabel": "筛选机器模型",
-      "type": "model",
-      "route": "models/screening-machine",
-      "summary": "教育和组织把人当作待筛选样本，而非待生长的人来处理的系统逻辑。",
       "status": null,
       "degree": 8
     },
@@ -2556,6 +2589,17 @@
       "degree": 8
     },
     {
+      "id": "episode:EP052",
+      "key": "EP052",
+      "label": "EP052",
+      "fullLabel": "EP052 · 中国中产阶级“斩杀线”与K型消费真相。",
+      "type": "episode",
+      "route": "episodes/EP052",
+      "summary": "“斩杀线”是网游术语，围殴BOSS，血量到线一次清空。被搬来形容中产跌落，现实更残酷。中国没有个人破产制度，连带责任穿透一切。3000万资产处理不好，可能反负3000万。这不是斩杀线，是宰杀线。叠加不甘归零的人性，越亏越加仓，清算在更低位置。斩杀有三轮。先是资产归零，再是自信崩塌，最后夫妻父子的链接也断了。K型消费真正做的是把中段直接蒸发掉。就像胖子生病，先没的是肚子。及时止损，别用脸接地。",
+      "status": "curated",
+      "degree": 8
+    },
+    {
       "id": "episode:EP060",
       "key": "EP060",
       "label": "EP060",
@@ -2743,17 +2787,6 @@
       "degree": 8
     },
     {
-      "id": "episode:EP198",
-      "key": "EP198",
-      "label": "EP198",
-      "fullLabel": "EP198 · 从韩杰案到防御性医疗，为什么我们正在走向两败俱伤的医患困局？",
-      "type": "episode",
-      "route": "episodes/EP198",
-      "summary": "江西一名儿科医生凌晨接诊两岁患儿，诊断肠梗阻收进住院，交班下班后患儿病情恶化，转院途中死亡。医院赔了一百四十六万，承担八成半责任，首诊医生被以医疗事故罪判了一年，缓刑一年，三年内不得从医。争议不在该不该罚，在罚到哪一步。漏做一项腹股沟查体是过失，把它认成刑法里的严重不负责任，中间还少了尸检这一环，用民事的可能性推出了刑事的确定性。这条线一旦划开，医生最理性的选择就变成自保。检查越开越多，能转诊就转诊，话只说最坏的一面。患者越追责，医生越退缩，先被卡住的是基层医院和最危重的那批人。",
-      "status": "curated",
-      "degree": 8
-    },
-    {
       "id": "model:opaque-withdrawal-governance",
       "key": "opaque-withdrawal-governance",
       "label": "不可读退出治理模型",
@@ -2820,6 +2853,17 @@
       "degree": 7
     },
     {
+      "id": "concept:delayed-price-discovery",
+      "key": "delayed-price-discovery",
+      "label": "价格发现延迟",
+      "fullLabel": "价格发现延迟",
+      "type": "concept",
+      "route": "concepts/delayed-price-discovery",
+      "summary": "真实价格本来应该尽快显现，但被托价、缓冲、票据和关系安排一层层往后拖，市场只剩名义稳定。",
+      "status": null,
+      "degree": 7
+    },
+    {
       "id": "theme:education-and-ai-misalignment",
       "key": "education-and-ai-misalignment",
       "label": "教育与AI时代错位",
@@ -2831,13 +2875,13 @@
       "degree": 7
     },
     {
-      "id": "theme:human-value-and-state-credit",
-      "key": "human-value-and-state-credit",
-      "label": "人的价值与国家信用",
-      "fullLabel": "人的价值与国家信用",
-      "type": "theme",
-      "route": "themes/human-value-and-state-credit",
-      "summary": "讨论国家究竟把个体视为成本、工具，还是视为必须兑现承诺的对象。",
+      "id": "concept:credential-rent",
+      "key": "credential-rent",
+      "label": "身份租值",
+      "fullLabel": "身份租值",
+      "type": "concept",
+      "route": "concepts/credential-rent",
+      "summary": "一个人的学历、文化、头衔或圈层，不再只是背景，而被当成能持续换钱、换信任和换资源的租值来源。",
       "status": null,
       "degree": 7
     },
@@ -2860,6 +2904,17 @@
       "type": "concept",
       "route": "concepts/useless-class",
       "summary": "无用阶级指在AI与自动化大规模替代劳动后，既无法进入高门槛顶端工作、又被挤出中低端岗位，从生产者沦为系统中“多余的人”的庞大群体。",
+      "status": null,
+      "degree": 7
+    },
+    {
+      "id": "concept:cash-optionality",
+      "key": "cash-optionality",
+      "label": "现金选择权",
+      "fullLabel": "现金选择权",
+      "type": "concept",
+      "route": "concepts/cash-optionality",
+      "summary": "现金在高波动时期的核心价值，是保留等待、谈判、退出和重新进入的选择权。",
       "status": null,
       "degree": 7
     },
@@ -2974,6 +3029,17 @@
       "degree": 7
     },
     {
+      "id": "episode:EP029",
+      "key": "EP029",
+      "label": "EP029",
+      "fullLabel": "EP029 · 银行直供房海啸冲击中国楼市，房价筑底？还是爆雷新开始？",
+      "type": "episode",
+      "route": "episodes/EP029",
+      "summary": "银行直供房成了新热词。银行与断供业主协商结束贷款关系。产权先转到银行名下，再以低于市场价 10%-20% 出售。原因是法拍通道不够用。估算银行手里的断供房有 600 到 900 万套。法拍房存量只有 14 万套。银行流动性紧张，只能绕开法拍直接处置。便宜 20% 不代表抄底，这只是第一轮下跌。后续要看万科、碧桂园的风险释放，再往后是国有地产。参照日本经验，房价可能跌到高点的 30%，筑底动辄十年。",
+      "status": "curated",
+      "degree": 7
+    },
+    {
       "id": "episode:EP031",
       "key": "EP031",
       "label": "EP031",
@@ -3003,17 +3069,6 @@
       "type": "episode",
       "route": "episodes/EP047",
       "summary": "《华尔街日报》披露，多益网络创始人徐波在美国靠代孕有超过100个孩子。孩子由保姆带，他视频远程指挥。美国法官感叹，这哪里是育儿，是在搞人力资源储备。徐波属于新钱，辍学少年靠《梦幻西游》起家，聪明却没底蕴没底线。原始积累完成后没公共价值出口，只能用最原始的繁殖逻辑掌控世界。老钱靠长周期家族筛选，新钱靠大量繁殖，后代素质必崩。父母能做的不是给路标，而是帮孩子多看见几扇门。爱是爱加目送，不是养儿防老。",
-      "status": "curated",
-      "degree": 7
-    },
-    {
-      "id": "episode:EP052",
-      "key": "EP052",
-      "label": "EP052",
-      "fullLabel": "EP052 · 中国中产阶级“斩杀线”与K型消费真相。",
-      "type": "episode",
-      "route": "episodes/EP052",
-      "summary": "“斩杀线”是网游术语，围殴BOSS，血量到线一次清空。被搬来形容中产跌落，现实更残酷。中国没有个人破产制度，连带责任穿透一切。3000万资产处理不好，可能反负3000万。这不是斩杀线，是宰杀线。叠加不甘归零的人性，越亏越加仓，清算在更低位置。斩杀有三轮。先是资产归零，再是自信崩塌，最后夫妻父子的链接也断了。K型消费真正做的是把中段直接蒸发掉。就像胖子生病，先没的是肚子。及时止损，别用脸接地。",
       "status": "curated",
       "degree": 7
     },
@@ -3095,6 +3150,17 @@
       "degree": 7
     },
     {
+      "id": "episode:EP150",
+      "key": "EP150",
+      "label": "EP150",
+      "fullLabel": "EP150 · 学区房投资属性崩塌！现在买房等于自残式消费，老思维注定被时代收割。",
+      "type": "episode",
+      "route": "episodes/EP150",
+      "summary": "三四月不少城市楼市回暖，主要推力是学区房。它会不会是下一个更大的雷。案例是南京七个核心区取消学位锁定的2026招生新政。取消后学位供给翻倍，存量房东连夜挂牌。\n\n再往下是学龄人口断崖，出生人口从1500多万跌到792万。名校开始面临学生荒，教育系统只能放开学位流动自救。学区房的资产逻辑因此被改写，从稳赚不赔的存钱变成没有保底的自残式消费。它可能重演出租车牌照被网约车击穿的那一幕。",
+      "status": "curated",
+      "degree": 7
+    },
+    {
       "id": "theme:bullshit-politics-and-historical-narratives",
       "key": "bullshit-politics-and-historical-narratives",
       "label": "扯淡政治与历史叙事",
@@ -3161,17 +3227,6 @@
       "degree": 6
     },
     {
-      "id": "concept:delayed-price-discovery",
-      "key": "delayed-price-discovery",
-      "label": "价格发现延迟",
-      "fullLabel": "价格发现延迟",
-      "type": "concept",
-      "route": "concepts/delayed-price-discovery",
-      "summary": "真实价格本来应该尽快显现，但被托价、缓冲、票据和关系安排一层层往后拖，市场只剩名义稳定。",
-      "status": null,
-      "degree": 6
-    },
-    {
       "id": "concept:exam-centered-discipline",
       "key": "exam-centered-discipline",
       "label": "考试中心化规训",
@@ -3205,17 +3260,6 @@
       "degree": 6
     },
     {
-      "id": "concept:credential-rent",
-      "key": "credential-rent",
-      "label": "身份租值",
-      "fullLabel": "身份租值",
-      "type": "concept",
-      "route": "concepts/credential-rent",
-      "summary": "一个人的学历、文化、头衔或圈层，不再只是背景，而被当成能持续换钱、换信任和换资源的租值来源。",
-      "status": null,
-      "degree": 6
-    },
-    {
       "id": "concept:data-fetishism",
       "key": "data-fetishism",
       "label": "数据崇拜",
@@ -3223,6 +3267,17 @@
       "type": "concept",
       "route": "concepts/data-fetishism",
       "summary": "把数据、表格、术语和科学帽子当成真理本身，只要有数字有来源就信。",
+      "status": null,
+      "degree": 6
+    },
+    {
+      "id": "model:exit-liquidation-waterfall",
+      "key": "exit-liquidation-waterfall",
+      "label": "退出清算瀑布",
+      "fullLabel": "退出清算瀑布",
+      "type": "model",
+      "route": "models/exit-liquidation-waterfall",
+      "summary": "产业项目一旦崩塌，价值会迅速收缩到土地、壳和残余设备，并按优先级把损失一层层向下压。",
       "status": null,
       "degree": 6
     },
@@ -3249,13 +3304,13 @@
       "degree": 6
     },
     {
-      "id": "concept:cash-optionality",
-      "key": "cash-optionality",
-      "label": "现金选择权",
-      "fullLabel": "现金选择权",
-      "type": "concept",
-      "route": "concepts/cash-optionality",
-      "summary": "现金在高波动时期的核心价值，是保留等待、谈判、退出和重新进入的选择权。",
+      "id": "theme:cash-optionality-and-liquidity-anxiety",
+      "key": "cash-optionality-and-liquidity-anxiety",
+      "label": "现金为王与流动性焦虑",
+      "fullLabel": "现金为王与流动性焦虑",
+      "type": "theme",
+      "route": "themes/cash-optionality-and-liquidity-anxiety",
+      "summary": "在高波动和低信任时期，流动性比账面资产更能决定一个人和机构的安全感。",
       "status": null,
       "degree": 6
     },
@@ -3403,17 +3458,6 @@
       "degree": 6
     },
     {
-      "id": "episode:EP029",
-      "key": "EP029",
-      "label": "EP029",
-      "fullLabel": "EP029 · 银行直供房海啸冲击中国楼市，房价筑底？还是爆雷新开始？",
-      "type": "episode",
-      "route": "episodes/EP029",
-      "summary": "银行直供房成了新热词。银行与断供业主协商结束贷款关系。产权先转到银行名下，再以低于市场价 10%-20% 出售。原因是法拍通道不够用。估算银行手里的断供房有 600 到 900 万套。法拍房存量只有 14 万套。银行流动性紧张，只能绕开法拍直接处置。便宜 20% 不代表抄底，这只是第一轮下跌。后续要看万科、碧桂园的风险释放，再往后是国有地产。参照日本经验，房价可能跌到高点的 30%，筑底动辄十年。",
-      "status": "curated",
-      "degree": 6
-    },
-    {
       "id": "episode:EP036",
       "key": "EP036",
       "label": "EP036",
@@ -3557,17 +3601,6 @@
       "degree": 6
     },
     {
-      "id": "episode:EP150",
-      "key": "EP150",
-      "label": "EP150",
-      "fullLabel": "EP150 · 学区房投资属性崩塌！现在买房等于自残式消费，老思维注定被时代收割。",
-      "type": "episode",
-      "route": "episodes/EP150",
-      "summary": "三四月不少城市楼市回暖，主要推力是学区房。它会不会是下一个更大的雷。案例是南京七个核心区取消学位锁定的2026招生新政。取消后学位供给翻倍，存量房东连夜挂牌。\n\n再往下是学龄人口断崖，出生人口从1500多万跌到792万。名校开始面临学生荒，教育系统只能放开学位流动自救。学区房的资产逻辑因此被改写，从稳赚不赔的存钱变成没有保底的自残式消费。它可能重演出租车牌照被网约车击穿的那一幕。",
-      "status": "curated",
-      "degree": 6
-    },
-    {
       "id": "model:safety-valve-governance",
       "key": "safety-valve-governance",
       "label": "安全阀治理模型",
@@ -3608,6 +3641,17 @@
       "type": "model",
       "route": "models/distributed-warfare-system",
       "summary": "分布式战争系统解释无人装备、分散生产、前线反馈和外部供给如何组合成长期战争优势。",
+      "status": null,
+      "degree": 5
+    },
+    {
+      "id": "theme:public-service-downgrading",
+      "key": "public-service-downgrading",
+      "label": "公共服务降标与治理后果",
+      "fullLabel": "公共服务降标与治理后果",
+      "type": "theme",
+      "route": "themes/public-service-downgrading",
+      "summary": "当财政和治理优先考虑控费，公共服务最常见的结果就是标准被整体压低。",
       "status": null,
       "degree": 5
     },
@@ -3777,17 +3821,6 @@
       "degree": 5
     },
     {
-      "id": "model:exit-liquidation-waterfall",
-      "key": "exit-liquidation-waterfall",
-      "label": "退出清算瀑布",
-      "fullLabel": "退出清算瀑布",
-      "type": "model",
-      "route": "models/exit-liquidation-waterfall",
-      "summary": "产业项目一旦崩塌，价值会迅速收缩到土地、壳和残余设备，并按优先级把损失一层层向下压。",
-      "status": null,
-      "degree": 5
-    },
-    {
       "id": "concept:pressure-backfire",
       "key": "pressure-backfire",
       "label": "外压反噬",
@@ -3806,17 +3839,6 @@
       "type": "person",
       "route": "people/vivian-balakrishnan",
       "summary": "维文是新加坡外交部长，节目借他的海峡通行发言说明小国如何用国际法和长期信用保护命门。",
-      "status": null,
-      "degree": 5
-    },
-    {
-      "id": "theme:cash-optionality-and-liquidity-anxiety",
-      "key": "cash-optionality-and-liquidity-anxiety",
-      "label": "现金为王与流动性焦虑",
-      "fullLabel": "现金为王与流动性焦虑",
-      "type": "theme",
-      "route": "themes/cash-optionality-and-liquidity-anxiety",
-      "summary": "在高波动和低信任时期，流动性比账面资产更能决定一个人和机构的安全感。",
       "status": null,
       "degree": 5
     },
@@ -3905,6 +3927,17 @@
       "type": "concept",
       "route": "concepts/long-termism",
       "summary": "以几十年甚至百年为尺度做决策，前期为长远格局多花成本、多做规划，而不是被短期利益和政绩驱动。",
+      "status": null,
+      "degree": 5
+    },
+    {
+      "id": "theme:housing-burden-and-income-distribution",
+      "key": "housing-burden-and-income-distribution",
+      "label": "住房税负与收入分配",
+      "fullLabel": "住房税负与收入分配",
+      "type": "theme",
+      "route": "themes/housing-burden-and-income-distribution",
+      "summary": "讨论住房、税负和可支配收入之间的关系，尤其关注中低收入群体被抽走了多少上升空间。",
       "status": null,
       "degree": 5
     },
@@ -4305,17 +4338,6 @@
       "degree": 4
     },
     {
-      "id": "theme:public-service-downgrading",
-      "key": "public-service-downgrading",
-      "label": "公共服务降标与治理后果",
-      "fullLabel": "公共服务降标与治理后果",
-      "type": "theme",
-      "route": "themes/public-service-downgrading",
-      "summary": "当财政和治理优先考虑控费，公共服务最常见的结果就是标准被整体压低。",
-      "status": null,
-      "degree": 4
-    },
-    {
       "id": "concept:relationship-insurance",
       "key": "relationship-insurance",
       "label": "关系保险",
@@ -4576,17 +4598,6 @@
       "type": "concept",
       "route": "concepts/institutional-software-transfer",
       "summary": "把治理体系拆成硬件与软件两层：土地、规划、基建可以整体搬运，管理制度背后的人的意识和行政逻辑却难以跨体制移植。",
-      "status": null,
-      "degree": 4
-    },
-    {
-      "id": "theme:housing-burden-and-income-distribution",
-      "key": "housing-burden-and-income-distribution",
-      "label": "住房税负与收入分配",
-      "fullLabel": "住房税负与收入分配",
-      "type": "theme",
-      "route": "themes/housing-burden-and-income-distribution",
-      "summary": "讨论住房、税负和可支配收入之间的关系，尤其关注中低收入群体被抽走了多少上升空间。",
       "status": null,
       "degree": 4
     },
@@ -4910,6 +4921,17 @@
       "degree": 3
     },
     {
+      "id": "model:follower-advantage-collapse",
+      "key": "follower-advantage-collapse",
+      "label": "跟随者失效",
+      "fullLabel": "跟随者失效",
+      "type": "model",
+      "route": "models/follower-advantage-collapse",
+      "summary": "增量时代跟着别人走最划算，进入存量博弈之后，同一批跟随者从红利分享者变成成本承担者。",
+      "status": null,
+      "degree": 3
+    },
+    {
       "id": "concept:toolified-history",
       "key": "toolified-history",
       "label": "工具化历史",
@@ -5005,6 +5027,17 @@
       "type": "person",
       "route": "people/hu-chenfeng",
       "summary": "户晨风是中国网络内容创作者和直播博主，节目借他观察破壁式表达、阶层差异可见化和平台治理边界。",
+      "status": null,
+      "degree": 3
+    },
+    {
+      "id": "concept:inheritance-supply-shock",
+      "key": "inheritance-supply-shock",
+      "label": "继承供给冲击",
+      "fullLabel": "继承供给冲击",
+      "type": "concept",
+      "route": "concepts/inheritance-supply-shock",
+      "summary": "老一代集中退出时，沉睡的存量资产会重新进入市场，形成供给冲击。",
       "status": null,
       "degree": 3
     },
@@ -5636,6 +5669,17 @@
       "degree": 2
     },
     {
+      "id": "concept:defensive-medicine",
+      "key": "defensive-medicine",
+      "label": "防御性医疗",
+      "fullLabel": "防御性医疗",
+      "type": "concept",
+      "route": "concepts/defensive-medicine",
+      "summary": "医生不再围着病人的病情转，而是围着追责风险转，先想怎么做才不担责，再想怎么做对病人好。",
+      "status": null,
+      "degree": 2
+    },
+    {
       "id": "concept:outsourced-discernment",
       "key": "outsourced-discernment",
       "label": "分辨外包",
@@ -5647,13 +5691,13 @@
       "degree": 2
     },
     {
-      "id": "model:follower-advantage-collapse",
-      "key": "follower-advantage-collapse",
-      "label": "跟随者失效",
-      "fullLabel": "跟随者失效",
-      "type": "model",
-      "route": "models/follower-advantage-collapse",
-      "summary": "增量时代跟着别人走最划算，进入存量博弈之后，同一批跟随者从红利分享者变成成本承担者。",
+      "id": "concept:stratified-pricing-market",
+      "key": "stratified-pricing-market",
+      "label": "分层定价市场",
+      "fullLabel": "分层定价市场",
+      "type": "concept",
+      "route": "concepts/stratified-pricing-market",
+      "summary": "同一市场内部，不同层级的买家、资产和预期可能运行完全不同的价格逻辑。",
       "status": null,
       "degree": 2
     },
@@ -5764,17 +5808,6 @@
       "type": "concept",
       "route": "concepts/envy-driven-smear",
       "summary": "嫉妒驱动的污名化指因为追不上、得不到，就转而用谣言和贬低去摧毁对方，从而获得心理平衡。",
-      "status": null,
-      "degree": 2
-    },
-    {
-      "id": "concept:inheritance-supply-shock",
-      "key": "inheritance-supply-shock",
-      "label": "继承供给冲击",
-      "fullLabel": "继承供给冲击",
-      "type": "concept",
-      "route": "concepts/inheritance-supply-shock",
-      "summary": "老一代集中退出时，沉睡的存量资产会重新进入市场，形成供给冲击。",
       "status": null,
       "degree": 2
     },
@@ -6252,6 +6285,17 @@
       "degree": 2
     },
     {
+      "id": "concept:policy-stalling",
+      "key": "policy-stalling",
+      "label": "政策拖延术",
+      "fullLabel": "政策拖延术",
+      "type": "concept",
+      "route": "concepts/policy-stalling",
+      "summary": "政策不断微调，不是为了真正解决结构问题，而是为了证明自己在行动、同时尽量把问题往后拖。",
+      "status": null,
+      "degree": 2
+    },
+    {
       "id": "concept:enforcement-vacuum",
       "key": "enforcement-vacuum",
       "label": "执法真空",
@@ -6292,6 +6336,17 @@
       "type": "concept",
       "route": "concepts/centralized-control-failure",
       "summary": "权力、决策和兜底都集中到一个中心后，系统会更好管理，也更容易把单点故障放大成整体故障。",
+      "status": null,
+      "degree": 2
+    },
+    {
+      "id": "model:accountability-defense-spiral",
+      "key": "accountability-defense-spiral",
+      "label": "追责自保螺旋",
+      "fullLabel": "追责自保螺旋",
+      "type": "model",
+      "route": "models/accountability-defense-spiral",
+      "summary": "追责越重，从业者越自保；越自保，服务越差，被服务的一方越要追责，两边都在做对的选择，合起来一路向下。",
       "status": null,
       "degree": 2
     },
@@ -6490,28 +6545,6 @@
       "type": "concept",
       "route": "concepts/multiethnic-nation-building",
       "summary": "多元立国指新加坡建国时放弃建华人国家、选择各族同为“新加坡人”的多元化路线，以此换取团结与发展。",
-      "status": null,
-      "degree": 1
-    },
-    {
-      "id": "concept:defensive-medicine",
-      "key": "defensive-medicine",
-      "label": "防御性医疗",
-      "fullLabel": "防御性医疗",
-      "type": "concept",
-      "route": "concepts/defensive-medicine",
-      "summary": "医生不再围着病人的病情转，而是围着追责风险转，先想怎么做才不担责，再想怎么做对病人好。",
-      "status": null,
-      "degree": 1
-    },
-    {
-      "id": "concept:stratified-pricing-market",
-      "key": "stratified-pricing-market",
-      "label": "分层定价市场",
-      "fullLabel": "分层定价市场",
-      "type": "concept",
-      "route": "concepts/stratified-pricing-market",
-      "summary": "同一市场内部，不同层级的买家、资产和预期可能运行完全不同的价格逻辑。",
       "status": null,
       "degree": 1
     },
@@ -7473,17 +7506,6 @@
       "degree": 1
     },
     {
-      "id": "concept:policy-stalling",
-      "key": "policy-stalling",
-      "label": "政策拖延术",
-      "fullLabel": "政策拖延术",
-      "type": "concept",
-      "route": "concepts/policy-stalling",
-      "summary": "政策不断微调，不是为了真正解决结构问题，而是为了证明自己在行动、同时尽量把问题往后拖。",
-      "status": null,
-      "degree": 1
-    },
-    {
       "id": "concept:housing-tax-wedge",
       "key": "housing-tax-wedge",
       "label": "住房税楔",
@@ -7502,17 +7524,6 @@
       "type": "concept",
       "route": "concepts/solemnity",
       "summary": "有一样东西不能拿来交换，也不能议价，更不能随便调侃，面对它的第一反应是敬畏而不是划算。",
-      "status": null,
-      "degree": 1
-    },
-    {
-      "id": "model:accountability-defense-spiral",
-      "key": "accountability-defense-spiral",
-      "label": "追责自保螺旋",
-      "fullLabel": "追责自保螺旋",
-      "type": "model",
-      "route": "models/accountability-defense-spiral",
-      "summary": "追责越重，从业者越自保；越自保，服务越差，被服务的一方越要追责，两边都在做对的选择，合起来一路向下。",
       "status": null,
       "degree": 1
     },
@@ -20156,6 +20167,161 @@
       "source": "live:LIVE031",
       "target": "concept:middle-class-hard-landing",
       "kind": "live-concept"
+    },
+    {
+      "source": "live:LIVE032",
+      "target": "episode:EP193",
+      "kind": "live-episode"
+    },
+    {
+      "source": "live:LIVE032",
+      "target": "episode:EP198",
+      "kind": "live-episode"
+    },
+    {
+      "source": "live:LIVE032",
+      "target": "episode:EP194",
+      "kind": "live-episode"
+    },
+    {
+      "source": "live:LIVE032",
+      "target": "episode:EP150",
+      "kind": "live-episode"
+    },
+    {
+      "source": "live:LIVE032",
+      "target": "episode:EP088",
+      "kind": "live-episode"
+    },
+    {
+      "source": "live:LIVE032",
+      "target": "episode:EP052",
+      "kind": "live-episode"
+    },
+    {
+      "source": "live:LIVE032",
+      "target": "episode:EP029",
+      "kind": "live-episode"
+    },
+    {
+      "source": "live:LIVE032",
+      "target": "concept:policy-stalling",
+      "kind": "live-concept"
+    },
+    {
+      "source": "live:LIVE032",
+      "target": "concept:delayed-price-discovery",
+      "kind": "live-concept"
+    },
+    {
+      "source": "live:LIVE032",
+      "target": "concept:cash-optionality",
+      "kind": "live-concept"
+    },
+    {
+      "source": "live:LIVE032",
+      "target": "concept:credential-rent",
+      "kind": "live-concept"
+    },
+    {
+      "source": "live:LIVE032",
+      "target": "concept:middle-class-hard-landing",
+      "kind": "live-concept"
+    },
+    {
+      "source": "live:LIVE032",
+      "target": "concept:inheritance-supply-shock",
+      "kind": "live-concept"
+    },
+    {
+      "source": "live:LIVE032",
+      "target": "concept:hidden-debt",
+      "kind": "live-concept"
+    },
+    {
+      "source": "live:LIVE032",
+      "target": "concept:stratified-pricing-market",
+      "kind": "live-concept"
+    },
+    {
+      "source": "live:LIVE032",
+      "target": "concept:defensive-medicine",
+      "kind": "live-concept"
+    },
+    {
+      "source": "live:LIVE032",
+      "target": "model:follower-advantage-collapse",
+      "kind": "live-model"
+    },
+    {
+      "source": "live:LIVE032",
+      "target": "model:identity-stratification",
+      "kind": "live-model"
+    },
+    {
+      "source": "live:LIVE032",
+      "target": "model:leverage-backfire",
+      "kind": "live-model"
+    },
+    {
+      "source": "live:LIVE032",
+      "target": "model:risk-transfer-chain",
+      "kind": "live-model"
+    },
+    {
+      "source": "live:LIVE032",
+      "target": "model:exit-liquidation-waterfall",
+      "kind": "live-model"
+    },
+    {
+      "source": "live:LIVE032",
+      "target": "model:balance-sheet-maintenance",
+      "kind": "live-model"
+    },
+    {
+      "source": "live:LIVE032",
+      "target": "model:screening-machine",
+      "kind": "live-model"
+    },
+    {
+      "source": "live:LIVE032",
+      "target": "model:accountability-defense-spiral",
+      "kind": "live-model"
+    },
+    {
+      "source": "live:LIVE032",
+      "target": "theme:real-estate-deleveraging",
+      "kind": "live-theme"
+    },
+    {
+      "source": "live:LIVE032",
+      "target": "theme:middle-class-descent-and-stratification",
+      "kind": "live-theme"
+    },
+    {
+      "source": "live:LIVE032",
+      "target": "theme:cash-optionality-and-liquidity-anxiety",
+      "kind": "live-theme"
+    },
+    {
+      "source": "live:LIVE032",
+      "target": "theme:housing-burden-and-income-distribution",
+      "kind": "live-theme"
+    },
+    {
+      "source": "live:LIVE032",
+      "target": "theme:public-service-downgrading",
+      "kind": "live-theme"
+    },
+    {
+      "source": "live:LIVE032",
+      "target": "theme:rule-of-law-boundaries-and-social-trust",
+      "kind": "live-theme"
+    },
+    {
+      "source": "live:LIVE032",
+      "target": "theme:human-value-and-state-credit",
+      "kind": "live-theme"
     },
     {
       "source": "episode:EP120",
