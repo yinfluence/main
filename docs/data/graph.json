@@ -2,14 +2,14 @@
   "meta": {
     "title": "颖响力知识图谱",
     "subtitle": "节目、概念、模型、人物、主题之间的可视化连接网络",
-    "nodeCount": 687,
-    "linkCount": 2598,
+    "nodeCount": 690,
+    "linkCount": 2608,
     "typeCounts": {
       "model": 82,
       "live": 32,
       "theme": 92,
-      "episode": 198,
-      "concept": 218,
+      "episode": 199,
+      "concept": 220,
       "person": 65
     }
   },
@@ -356,6 +356,17 @@
       "degree": 26
     },
     {
+      "id": "theme:singapore-and-small-state-survival",
+      "key": "singapore-and-small-state-survival",
+      "label": "新加坡与小国生存术",
+      "fullLabel": "新加坡与小国生存术",
+      "type": "theme",
+      "route": "themes/singapore-and-small-state-survival",
+      "summary": "讨论新加坡如何把规则、海峡、人才和谨慎外交组合成一套小国长期生存方法。",
+      "status": null,
+      "degree": 26
+    },
+    {
       "id": "concept:hidden-debt",
       "key": "hidden-debt",
       "label": "隐形债务",
@@ -374,17 +385,6 @@
       "type": "theme",
       "route": "themes/dollar-system-and-gray-trade",
       "summary": "讨论石油美元的真实脆弱点，究竟藏在公开统计之外的哪些灰色交易链条里。",
-      "status": null,
-      "degree": 25
-    },
-    {
-      "id": "theme:singapore-and-small-state-survival",
-      "key": "singapore-and-small-state-survival",
-      "label": "新加坡与小国生存术",
-      "fullLabel": "新加坡与小国生存术",
-      "type": "theme",
-      "route": "themes/singapore-and-small-state-survival",
-      "summary": "讨论新加坡如何把规则、海峡、人才和谨慎外交组合成一套小国长期生存方法。",
       "status": null,
       "degree": 25
     },
@@ -554,6 +554,17 @@
       "degree": 21
     },
     {
+      "id": "theme:rule-of-law-boundaries-and-social-trust",
+      "key": "rule-of-law-boundaries-and-social-trust",
+      "label": "法治边界与社会信任",
+      "fullLabel": "法治边界与社会信任",
+      "type": "theme",
+      "route": "themes/rule-of-law-boundaries-and-social-trust",
+      "summary": "关注法律灰区如何影响公众的善意、风险感和彼此信任。",
+      "status": null,
+      "degree": 20
+    },
+    {
       "id": "person:donald-trump",
       "key": "donald-trump",
       "label": "特朗普",
@@ -607,17 +618,6 @@
       "summary": "把灰色贸易从美元、黄金和大国战略，拉回到最具体的运输工具，影子舰队。它不是单一国家海军，也不是有统一指挥的海盗组织。它是一套脱离西方保险、认证、定位和船东透明规则的平行航运网络。老旧油轮、换旗换名、AIS 静默、船对船转运、原产地文件和离岸服务都在其中。被制裁的石油由此重新洗进全球贸易。它还进一步支撑起绕开 SWIFT 的结算闭环。",
       "status": "curated",
       "degree": 20
-    },
-    {
-      "id": "theme:rule-of-law-boundaries-and-social-trust",
-      "key": "rule-of-law-boundaries-and-social-trust",
-      "label": "法治边界与社会信任",
-      "fullLabel": "法治边界与社会信任",
-      "type": "theme",
-      "route": "themes/rule-of-law-boundaries-and-social-trust",
-      "summary": "关注法律灰区如何影响公众的善意、风险感和彼此信任。",
-      "status": null,
-      "degree": 19
     },
     {
       "id": "theme:institutional-middle-class-and-social-mobility",
@@ -1848,6 +1848,17 @@
       "type": "episode",
       "route": "episodes/EP194",
       "summary": "工农中建四大行把停了近半年的五年期大额存单重新上架，国有大行统一给到 1.6%。市面把它读成银行提前锁定成本、看好后续加息。这个逻辑正好搞反了。只有预判利率长期往下走，才会急着把当前的资金成本锁死。三年期 1.5%、五年期 1.6%，多存两年只多五个基点，等于想锁住这笔钱五年，又不肯为那两年付钱。往下还有两层。储户拿 1.6% 的利息，银行拿这笔钱去置换地方债，化债的成本摊到了每个存钱的人头上。1.6 到 1.8 这个数字还是一把尺子，任何号称稳定四个点以上的产品都要先拿它量一遍。",
+      "status": "curated",
+      "degree": 10
+    },
+    {
+      "id": "episode:EP199",
+      "key": "EP199",
+      "label": "EP199",
+      "fullLabel": "EP199 · 新加坡樟宜海滩赶海风波！中国人组团爆桶遭民众抵制，真的只是个人素质问题吗？",
+      "type": "episode",
+      "route": "episodes/EP199",
+      "summary": "十几个人夜里组队去樟宜海滩，带着桶和耙子挖了一整晚，装满七八桶螃蟹贝类，拉到牛车水的中餐馆做成一桌菜，再把视频发上网。新加坡本地社群炸了锅，选区议员出面批评，帮忙加工的餐馆被刷了差评。争议卡在一个事实上，樟宜海滩不是海洋保护区，捡的也不是保护物种，这群人确实没违法。可法条没写的地方还有一套规矩，写在当地人心里。潮间带在那里是拿来看的自然景观，不是免费海鲜仓库。国土就那么大，海岸线摊到人均少得可怜，禁不住十几个人地毯式搜刮一遍。把这件事说成素质差或者种族歧视，两边都没说到点上。",
       "status": "curated",
       "degree": 10
     },
@@ -4239,6 +4250,28 @@
       "degree": 4
     },
     {
+      "id": "model:property-defined-rule-domain",
+      "key": "property-defined-rule-domain",
+      "label": "产权定规则",
+      "fullLabel": "产权定规则",
+      "type": "model",
+      "route": "models/property-defined-rule-domain",
+      "summary": "说的是：一个空间里谁有权定规则、规则的合法范围在哪里、不接受规则的正确退出路径，都由这个空间的产权归属决定。",
+      "status": null,
+      "degree": 4
+    },
+    {
+      "id": "concept:property-boundary-literacy",
+      "key": "property-boundary-literacy",
+      "label": "产权意识",
+      "fullLabel": "产权意识",
+      "type": "concept",
+      "route": "concepts/property-boundary-literacy",
+      "summary": "产权意识指能够清晰区分公共场所与私人商业场所，并据此判断谁有权定规则、什么时候规则可以被挑战。",
+      "status": null,
+      "degree": 4
+    },
+    {
       "id": "concept:trauma-nostalgia",
       "key": "trauma-nostalgia",
       "label": "创伤式怀旧",
@@ -4338,6 +4371,17 @@
       "degree": 4
     },
     {
+      "id": "theme:public-space-and-civic-maturity",
+      "key": "public-space-and-civic-maturity",
+      "label": "公共空间与公民成熟",
+      "fullLabel": "公共空间与公民成熟",
+      "type": "theme",
+      "route": "themes/public-space-and-civic-maturity",
+      "summary": "讨论个体在公共场景里如何同时拥有权利意识、规则意识、义务感和稳定自尊。",
+      "status": null,
+      "degree": 4
+    },
+    {
       "id": "concept:relationship-insurance",
       "key": "relationship-insurance",
       "label": "关系保险",
@@ -4360,6 +4404,17 @@
       "degree": 4
     },
     {
+      "id": "model:regulatory-cost-arbitrage",
+      "key": "regulatory-cost-arbitrage",
+      "label": "合规成本套利模型",
+      "fullLabel": "合规成本套利模型",
+      "type": "model",
+      "route": "models/regulatory-cost-arbitrage",
+      "summary": "当同一市场存在多条监管路径，低合规成本路径会获得更高试错频率和更强替代能力。",
+      "status": null,
+      "degree": 4
+    },
+    {
       "id": "concept:compliance-floor",
       "key": "compliance-floor",
       "label": "合规及格线",
@@ -4378,6 +4433,17 @@
       "type": "person",
       "route": "people/jia-guolong",
       "summary": "贾国龙是西贝餐饮集团创始人、董事长，节目借他观察连锁餐饮的创始人权威、品牌溢价和标准化供给争议。",
+      "status": null,
+      "degree": 4
+    },
+    {
+      "id": "concept:giant-infant-rights-defense",
+      "key": "giant-infant-rights-defense",
+      "label": "巨婴式维权",
+      "fullLabel": "巨婴式维权",
+      "type": "concept",
+      "route": "concepts/giant-infant-rights-defense",
+      "summary": "巨婴式维权指个体把个人便利和情绪包装成权利诉求，却拒绝承担规则、义务和公共后果。",
       "status": null,
       "degree": 4
     },
@@ -4602,6 +4668,17 @@
       "degree": 4
     },
     {
+      "id": "model:attention-commerce-loop",
+      "key": "attention-commerce-loop",
+      "label": "注意力商业闭环",
+      "fullLabel": "注意力商业闭环",
+      "type": "model",
+      "route": "models/attention-commerce-loop",
+      "summary": "注意力商业闭环解释内容如何先制造注意力，再把注意力结算为品牌、交易或平台收益。",
+      "status": null,
+      "degree": 4
+    },
+    {
       "id": "concept:money-time-price",
       "key": "money-time-price",
       "label": "资金的时间价格",
@@ -4800,28 +4877,6 @@
       "degree": 3
     },
     {
-      "id": "model:property-defined-rule-domain",
-      "key": "property-defined-rule-domain",
-      "label": "产权定规则",
-      "fullLabel": "产权定规则",
-      "type": "model",
-      "route": "models/property-defined-rule-domain",
-      "summary": "说的是：一个空间里谁有权定规则、规则的合法范围在哪里、不接受规则的正确退出路径，都由这个空间的产权归属决定。",
-      "status": null,
-      "degree": 3
-    },
-    {
-      "id": "concept:property-boundary-literacy",
-      "key": "property-boundary-literacy",
-      "label": "产权意识",
-      "fullLabel": "产权意识",
-      "type": "concept",
-      "route": "concepts/property-boundary-literacy",
-      "summary": "产权意识指能够清晰区分公共场所与私人商业场所，并据此判断谁有权定规则、什么时候规则可以被挑战。",
-      "status": null,
-      "degree": 3
-    },
-    {
       "id": "theme:growth-and-family-boundaries",
       "key": "growth-and-family-boundaries",
       "label": "成长与亲情边界",
@@ -4954,17 +5009,6 @@
       "degree": 3
     },
     {
-      "id": "theme:public-space-and-civic-maturity",
-      "key": "public-space-and-civic-maturity",
-      "label": "公共空间与公民成熟",
-      "fullLabel": "公共空间与公民成熟",
-      "type": "theme",
-      "route": "themes/public-space-and-civic-maturity",
-      "summary": "讨论个体在公共场景里如何同时拥有权利意识、规则意识、义务感和稳定自尊。",
-      "status": null,
-      "degree": 3
-    },
-    {
       "id": "concept:corporate-identity-shift",
       "key": "corporate-identity-shift",
       "label": "公司身份迁移",
@@ -5005,17 +5049,6 @@
       "type": "concept",
       "route": "concepts/child-toolification",
       "summary": "孩子被降格为家族延续、权力布局、身份展示或欲望满足的工具时，养育就失去主体性。",
-      "status": null,
-      "degree": 3
-    },
-    {
-      "id": "model:regulatory-cost-arbitrage",
-      "key": "regulatory-cost-arbitrage",
-      "label": "合规成本套利模型",
-      "fullLabel": "合规成本套利模型",
-      "type": "model",
-      "route": "models/regulatory-cost-arbitrage",
-      "summary": "当同一市场存在多条监管路径，低合规成本路径会获得更高试错频率和更强替代能力。",
       "status": null,
       "degree": 3
     },
@@ -5093,17 +5126,6 @@
       "type": "concept",
       "route": "concepts/symbolic-matricide",
       "summary": "精神弑母指人要先在精神上吃掉母系带来的文化、再吐出来给予尊重，才能长成拥有自我的人。",
-      "status": null,
-      "degree": 3
-    },
-    {
-      "id": "concept:giant-infant-rights-defense",
-      "key": "giant-infant-rights-defense",
-      "label": "巨婴式维权",
-      "fullLabel": "巨婴式维权",
-      "type": "concept",
-      "route": "concepts/giant-infant-rights-defense",
-      "summary": "巨婴式维权指个体把个人便利和情绪包装成权利诉求，却拒绝承担规则、义务和公共后果。",
       "status": null,
       "degree": 3
     },
@@ -5445,17 +5467,6 @@
       "type": "concept",
       "route": "concepts/attention-trading",
       "summary": "创作者把观众的焦虑、兴奋和参与感换成流量、带货、课程或影响力收益。",
-      "status": null,
-      "degree": 3
-    },
-    {
-      "id": "model:attention-commerce-loop",
-      "key": "attention-commerce-loop",
-      "label": "注意力商业闭环",
-      "fullLabel": "注意力商业闭环",
-      "type": "model",
-      "route": "models/attention-commerce-loop",
-      "summary": "注意力商业闭环解释内容如何先制造注意力，再把注意力结算为品牌、交易或平台收益。",
       "status": null,
       "degree": 3
     },
@@ -6615,6 +6626,17 @@
       "degree": 1
     },
     {
+      "id": "concept:consensus-redline",
+      "key": "consensus-redline",
+      "label": "共识红线",
+      "fullLabel": "共识红线",
+      "type": "concept",
+      "route": "concepts/consensus-redline",
+      "summary": "一个地方真正管住行为的有两套规矩，写在纸上的法条，和写在当地人心里的共识，后者没有条文却照样有惩罚。",
+      "status": null,
+      "degree": 1
+    },
+    {
       "id": "model:rule-charity-bridge",
       "key": "rule-charity-bridge",
       "label": "规则善意桥接模型",
@@ -6710,6 +6732,17 @@
       "type": "concept",
       "route": "concepts/currency-credit-collapse",
       "summary": "一国货币持续贬值的根源不是外部汇率压力，而是市场对该国财政纪律和治理能力的信心彻底流失。",
+      "status": null,
+      "degree": 1
+    },
+    {
+      "id": "concept:collective-action-threshold",
+      "key": "collective-action-threshold",
+      "label": "集体行动阈值",
+      "fullLabel": "集体行动阈值",
+      "type": "concept",
+      "route": "concepts/collective-action-threshold",
+      "summary": "同一个动作，参与人数越过某个点，性质就从个人行为变成有组织的活动，管理方的反应也随之从劝一句跳到应激处置。",
       "status": null,
       "degree": 1
     },
@@ -15256,6 +15289,56 @@
     {
       "source": "episode:EP198",
       "target": "theme:public-service-downgrading",
+      "kind": "episode-theme"
+    },
+    {
+      "source": "episode:EP199",
+      "target": "concept:consensus-redline",
+      "kind": "episode-concept"
+    },
+    {
+      "source": "episode:EP199",
+      "target": "concept:collective-action-threshold",
+      "kind": "episode-concept"
+    },
+    {
+      "source": "episode:EP199",
+      "target": "concept:property-boundary-literacy",
+      "kind": "episode-concept"
+    },
+    {
+      "source": "episode:EP199",
+      "target": "concept:giant-infant-rights-defense",
+      "kind": "episode-concept"
+    },
+    {
+      "source": "episode:EP199",
+      "target": "model:property-defined-rule-domain",
+      "kind": "episode-model"
+    },
+    {
+      "source": "episode:EP199",
+      "target": "model:regulatory-cost-arbitrage",
+      "kind": "episode-model"
+    },
+    {
+      "source": "episode:EP199",
+      "target": "model:attention-commerce-loop",
+      "kind": "episode-model"
+    },
+    {
+      "source": "episode:EP199",
+      "target": "theme:public-space-and-civic-maturity",
+      "kind": "episode-theme"
+    },
+    {
+      "source": "episode:EP199",
+      "target": "theme:singapore-and-small-state-survival",
+      "kind": "episode-theme"
+    },
+    {
+      "source": "episode:EP199",
+      "target": "theme:rule-of-law-boundaries-and-social-trust",
       "kind": "episode-theme"
     },
     {
