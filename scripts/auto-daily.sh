@@ -16,6 +16,11 @@
 
 set -uo pipefail
 export PATH="/opt/homebrew/bin:/Users/ziqiguo/.local/bin:/Library/Frameworks/Python.framework/Versions/3.13/bin:/usr/bin:/bin:/usr/sbin:/sbin"
+# launchd 不带 LANG，sed 会退化成按字节处理多字节字符。项目路径里有「颖响力」和「网页」
+# 两段中文，按字节算出来的 session 目录名多出 10 个横线，指向一个不存在的目录，信号 4
+# 因此从 2026-08-10 加上那天起就没生效过（在终端里核对当然是对的，终端有 LANG）。
+# 2026-08-14 EP199 那次误杀就是这么来的：读 SOP 26 分钟不写盘，唯一能救它的信号是坏的。
+export LC_ALL=en_US.UTF-8
 
 WEB="/Users/ziqiguo/Documents/Diary/GoldenVault/md/topic/personal/sources/people/颖响力/网页"
 cd "$WEB" || exit 1
@@ -161,6 +166,11 @@ kill_tree() {
 # Claude Code 用 cwd 的路径当 session 目录名，非字母数字字符全换成横线。
 # 2026-08-10 在本机核对过，与 ~/.claude/projects/ 下的实际目录名逐字符一致。
 AGENT_SESSION_DIR="$HOME/.claude/projects/$(printf '%s' "$WEB" | sed 's/[^a-zA-Z0-9]/-/g')"
+# 算错了就当场说出来。信号 4 一旦悄悄指向不存在的目录，看门狗会把纯读不写盘的正常整理
+# 判成卡死，而日志上只留一句"卡死"，看不出是检测坏了 —— 2026-08-10 到 08-14 就是这样。
+if [[ ! -d "$AGENT_SESSION_DIR" ]]; then
+  log "WARN: agent session 目录不存在（$AGENT_SESSION_DIR），信号 4 失效，卡死判定会偏严"
+fi
 
 agent_activity_stamp() {
   find "$WEB/content" "$WEB/docs" "$WEB/workbench" \
