@@ -30,8 +30,11 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 WEB = os.path.dirname(HERE)
 RAW = os.path.normpath(os.path.join(WEB, '..', 'bilibili', 'raw'))
 YTDLP = os.path.expanduser('~/bilibili-downloader/.venv/bin/yt-dlp')
-# Chrome 导出不可用时的兜底：手工存一份长效 cookie 在这里（Netscape 格式，同 yt-dlp --cookies 输出）
+# Chrome 导出不可用时的兜底：一份长效 cookie 存在这里（Netscape 格式，同 yt-dlp --cookies 输出）
 COOKIE_FALLBACK = os.path.join(HERE, '.bili-cookies.txt')
+# yt-dlp 在这台机器上只解得开 Chrome 里一小部分 cookie（296/3765），SESSDATA 恰好在解不开
+# 那批里，2026-08-13 因此连挂 6 次。这个脚本自己走钥匙串解密，用来现刷上面那份兜底 cookie。
+COOKIE_DUMPER = os.path.join(HERE, 'dump-chrome-cookies.py')
 MIXIN_TAB = [46,47,18,2,53,8,23,32,15,50,10,31,58,3,45,35,27,43,5,49,33,9,42,19,
              29,28,14,39,12,38,41,13,37,48,7,16,24,55,40,61,26,17,0,1,60,51,30,4,
              22,25,54,21,56,59,6,63,57,62,11,36,20,34,44,52]
@@ -96,6 +99,27 @@ def export_cookies():
     return dest
 
 
+def refresh_fallback():
+    """从 Chrome 的 cookie 库现解一份，覆盖 COOKIE_FALLBACK。成功返回 True。
+
+    走 macOS 钥匙串拿 Chrome Safe Storage 密钥。钥匙串没解锁或没授权时会失败，
+    那只是少了一条自愈通道，不该让整次扫描炸掉，所以这里吞掉所有异常。
+    """
+    if not os.path.exists(COOKIE_DUMPER):
+        return False
+    try:
+        r = subprocess.run([sys.executable, COOKIE_DUMPER, COOKIE_FALLBACK],
+                           capture_output=True, text=True, timeout=120)
+    except (OSError, subprocess.SubprocessError) as e:
+        print(f'WARN: 现解 cookie 没跑起来 {e}', file=sys.stderr)
+        return False
+    if r.returncode != 0:
+        print(f'WARN: 现解 cookie 失败 {(r.stderr or r.stdout or "").strip()[:160]}',
+              file=sys.stderr)
+        return False
+    return os.path.exists(COOKIE_FALLBACK) and cookie_has_session(COOKIE_FALLBACK)
+
+
 def wbi_mixin(cookies):
     nav = curl_json('https://api.bilibili.com/x/web-interface/nav', cookies)
     d = nav.get('data') or {}
@@ -132,6 +156,15 @@ def login_cookies(explicit=None, tries=3, gap=25):
             print('（Chrome 导出不可用，改用长效 cookie）')
             return COOKIE_FALLBACK, mixin
         print(f'WARN: 长效 cookie {COOKIE_FALLBACK} 也失效了', file=sys.stderr)
+
+    # 兜底的兜底：B 站会轮换 SESSDATA，存下来的那份迟早过期。趁人还在 Chrome 里登录着，
+    # 直接从 Chrome 的 cookie 库现解一份，免得每次轮换都要人来手工补。
+    if not explicit and refresh_fallback():
+        mixin, is_login = wbi_mixin(COOKIE_FALLBACK)
+        if is_login:
+            print('（从 Chrome cookie 库现解了一份新的长效 cookie）')
+            return COOKIE_FALLBACK, mixin
+        print('WARN: 现解出来的 cookie 也没登录态，Chrome 里大概真的掉登录了', file=sys.stderr)
     return None, None
 
 

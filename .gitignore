@@ -5,3 +5,4 @@ workbench/
 .local/
 logs/
 scripts/__pycache__/
+scripts/.bili-cookies.txt

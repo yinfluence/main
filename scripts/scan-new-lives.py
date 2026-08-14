@@ -120,7 +120,12 @@ def srt_to_transcript(paths, out_path):
 
 def download_subs(bvid, workdir):
     os.makedirs(workdir, exist_ok=True)
-    cmd = [YTDLP, '--cookies-from-browser', 'chrome', '--write-subs',
+    # yt-dlp 现导在这台机器上解不出 SESSDATA（2026-08-13），
+    # scan-new-episodes.py 维护的那份长效 cookie 有就直接喂给它。
+    fallback = os.path.join(HERE, '.bili-cookies.txt')
+    auth = (['--cookies', fallback] if os.path.exists(fallback)
+            else ['--cookies-from-browser', 'chrome'])
+    cmd = [YTDLP] + auth + ['--write-subs',
            '--sub-langs', 'ai-zh', '--skip-download', '--no-update',
            '-o', '%(id)s.%(ext)s', f'https://www.bilibili.com/video/{bvid}/']
     subprocess.run(cmd, cwd=workdir, capture_output=True, text=True, timeout=300)

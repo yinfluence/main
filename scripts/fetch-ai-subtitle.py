@@ -16,6 +16,9 @@ import argparse, hashlib, json, os, subprocess, sys, tempfile, time, urllib.pars
 UA = ('Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 '
       '(KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36')
 YTDLP = os.path.expanduser('~/bilibili-downloader/.venv/bin/yt-dlp')
+# scan-new-episodes.py 维护的那份长效 cookie。yt-dlp 现导在这台机器上解不出 SESSDATA，
+# 有现成的就先用现成的，别每次都去碰那条已知不灵的路。
+COOKIE_FALLBACK = os.path.join(os.path.dirname(os.path.abspath(__file__)), '.bili-cookies.txt')
 MIXIN_TAB = [46,47,18,2,53,8,23,32,15,50,10,31,58,3,45,35,27,43,5,49,33,9,42,19,
              29,28,14,39,12,38,41,13,37,48,7,16,24,55,40,61,26,17,0,1,60,51,30,4,
              22,25,54,21,56,59,6,63,57,62,11,36,20,34,44,52]
@@ -29,7 +32,23 @@ def http_get_json(url, cookies, referer='https://www.bilibili.com/'):
     return json.loads(r.stdout)
 
 
+def has_session(path):
+    """cookie 文件里得有 bilibili 域的 SESSDATA，没有就等于没登录。"""
+    try:
+        with open(path) as f:
+            for line in f:
+                p = line.rstrip('\n').split('\t')
+                if (len(p) >= 7 and 'bilibili.com' in p[0]
+                        and p[5] == 'SESSDATA' and p[6].strip()):
+                    return True
+    except OSError:
+        pass
+    return False
+
+
 def export_cookies(dest):
+    if has_session(COOKIE_FALLBACK):
+        return COOKIE_FALLBACK
     subprocess.run([YTDLP, '--cookies-from-browser', 'chrome', '--cookies', dest,
                     '--simulate', '--quiet', '--no-update',
                     'https://www.bilibili.com/video/BV1hZKh6xEnV/'],
