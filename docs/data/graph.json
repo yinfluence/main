@@ -2,14 +2,14 @@
   "meta": {
     "title": "颖响力知识图谱",
     "subtitle": "节目、概念、模型、人物、主题之间的可视化连接网络",
-    "nodeCount": 690,
-    "linkCount": 2608,
+    "nodeCount": 694,
+    "linkCount": 2619,
     "typeCounts": {
       "model": 82,
       "live": 32,
       "theme": 92,
-      "episode": 199,
-      "concept": 220,
+      "episode": 200,
+      "concept": 223,
       "person": 65
     }
   },
@@ -246,6 +246,17 @@
       "degree": 30
     },
     {
+      "id": "theme:middle-class-descent-and-stratification",
+      "key": "middle-class-descent-and-stratification",
+      "label": "中产下坠与分层社会",
+      "fullLabel": "中产下坠与分层社会",
+      "type": "theme",
+      "route": "themes/middle-class-descent-and-stratification",
+      "summary": "当中间层缺乏缓冲带时，经济下行会迅速转成身份下坠、关系断裂和社会分层加固。",
+      "status": null,
+      "degree": 29
+    },
+    {
       "id": "live:LIVE001",
       "key": "LIVE001",
       "label": "LIVE001",
@@ -277,17 +288,6 @@
       "summary": "大哥丢掉那家公司的那天，才是该压上全部的时候。",
       "status": "curated",
       "degree": 29
-    },
-    {
-      "id": "theme:middle-class-descent-and-stratification",
-      "key": "middle-class-descent-and-stratification",
-      "label": "中产下坠与分层社会",
-      "fullLabel": "中产下坠与分层社会",
-      "type": "theme",
-      "route": "themes/middle-class-descent-and-stratification",
-      "summary": "当中间层缺乏缓冲带时，经济下行会迅速转成身份下坠、关系断裂和社会分层加固。",
-      "status": null,
-      "degree": 28
     },
     {
       "id": "live:LIVE010",
@@ -620,6 +620,17 @@
       "degree": 20
     },
     {
+      "id": "model:leverage-backfire",
+      "key": "leverage-backfire",
+      "label": "杠杆反噬",
+      "fullLabel": "杠杆反噬",
+      "type": "model",
+      "route": "models/leverage-backfire",
+      "summary": "杠杆反噬解释上行期放大利润的结构，如何在下行期放大亏损、现金流压力和清偿困难。",
+      "status": null,
+      "degree": 19
+    },
+    {
       "id": "theme:institutional-middle-class-and-social-mobility",
       "key": "institutional-middle-class-and-social-mobility",
       "label": "体制化中产与社会流动",
@@ -638,6 +649,17 @@
       "type": "theme",
       "route": "themes/ev-financialization-and-false-sales",
       "summary": "聚焦新能源车行业如何依靠补贴、融资、渠道黑箱和虚假销售维持增长叙事。",
+      "status": null,
+      "degree": 19
+    },
+    {
+      "id": "concept:middle-class-hard-landing",
+      "key": "middle-class-hard-landing",
+      "label": "中产硬着陆",
+      "fullLabel": "中产硬着陆",
+      "type": "concept",
+      "route": "concepts/middle-class-hard-landing",
+      "summary": "高负债中产一旦失速，下坠往往同时摧毁资产、体面、关系和自我认同。",
       "status": null,
       "degree": 19
     },
@@ -719,17 +741,6 @@
       "degree": 18
     },
     {
-      "id": "model:leverage-backfire",
-      "key": "leverage-backfire",
-      "label": "杠杆反噬",
-      "fullLabel": "杠杆反噬",
-      "type": "model",
-      "route": "models/leverage-backfire",
-      "summary": "杠杆反噬解释上行期放大利润的结构，如何在下行期放大亏损、现金流压力和清偿困难。",
-      "status": null,
-      "degree": 18
-    },
-    {
       "id": "model:value-capture",
       "key": "value-capture",
       "label": "价值捕获",
@@ -737,17 +748,6 @@
       "type": "model",
       "route": "models/value-capture",
       "summary": "价值捕获模型强调商业链条中关键不只是创造了价值，而是谁真正留下了价值。",
-      "status": null,
-      "degree": 18
-    },
-    {
-      "id": "concept:middle-class-hard-landing",
-      "key": "middle-class-hard-landing",
-      "label": "中产硬着陆",
-      "fullLabel": "中产硬着陆",
-      "type": "concept",
-      "route": "concepts/middle-class-hard-landing",
-      "summary": "高负债中产一旦失速，下坠往往同时摧毁资产、体面、关系和自我认同。",
       "status": null,
       "degree": 18
     },
@@ -994,6 +994,17 @@
       "degree": 14
     },
     {
+      "id": "theme:real-estate-deleveraging",
+      "key": "real-estate-deleveraging",
+      "label": "房地产去杠杆与风险出清",
+      "fullLabel": "房地产去杠杆与风险出清",
+      "type": "theme",
+      "route": "themes/real-estate-deleveraging",
+      "summary": "讨论房地产在下行周期里如何通过断供、重组、展期和资产处置逐步暴露风险。",
+      "status": null,
+      "degree": 14
+    },
+    {
       "id": "model:rule-anchored-small-state-model",
       "key": "rule-anchored-small-state-model",
       "label": "规则锚定型小国生存",
@@ -1146,17 +1157,6 @@
       "summary": "一个女生拿了贫困补贴，每天早晨喝一杯 9.9 元的瑞幸，被人连着取证三十多天之后举报骗补。节目不认这套算法。每月三百块的咖啡不构成奢侈消费，用苦行僧的样子去框贫困生，是拿刻板印象绑架弱势群体，还会逼出更多虚假。私下盯梢取证这件事本身也不值得表扬，它先拆掉的是人和人之间的信任。真正该问的是审核机制，福利部门只核表格合不合规，不去看这个家庭是不是真的出了状况。福利如果只保一个不饿死，那就还停在施粥的年代。",
       "status": "curated",
       "degree": 14
-    },
-    {
-      "id": "theme:real-estate-deleveraging",
-      "key": "real-estate-deleveraging",
-      "label": "房地产去杠杆与风险出清",
-      "fullLabel": "房地产去杠杆与风险出清",
-      "type": "theme",
-      "route": "themes/real-estate-deleveraging",
-      "summary": "讨论房地产在下行周期里如何通过断供、重组、展期和资产处置逐步暴露风险。",
-      "status": null,
-      "degree": 13
     },
     {
       "id": "model:chokepoint-order-model",
@@ -1320,6 +1320,17 @@
       "type": "model",
       "route": "models/black-box-assetization",
       "summary": "把本来难以估值、难以穿透甚至本该暴露风险的东西，装进平台、基金或体外结构里，重新包装成可融资、可讲故事、可继续吸钱的资产。",
+      "status": null,
+      "degree": 12
+    },
+    {
+      "id": "model:identity-stratification",
+      "key": "identity-stratification",
+      "label": "身份型分层",
+      "fullLabel": "身份型分层",
+      "type": "model",
+      "route": "models/identity-stratification",
+      "summary": "身份型分层说明阶层排序从收入和资产，转向编制、合规位置、圈层资源和稳定预期。",
       "status": null,
       "degree": 12
     },
@@ -1489,17 +1500,6 @@
       "degree": 11
     },
     {
-      "id": "model:identity-stratification",
-      "key": "identity-stratification",
-      "label": "身份型分层",
-      "fullLabel": "身份型分层",
-      "type": "model",
-      "route": "models/identity-stratification",
-      "summary": "身份型分层说明阶层排序从收入和资产，转向编制、合规位置、圈层资源和稳定预期。",
-      "status": null,
-      "degree": 11
-    },
-    {
       "id": "theme:data-cosmetics-and-false-prosperity",
       "key": "data-cosmetics-and-false-prosperity",
       "label": "数据粉饰与虚假繁荣",
@@ -1661,6 +1661,17 @@
       "type": "episode",
       "route": "episodes/EP195",
       "summary": "竹知了这件事很多人看不懂。几毛钱的竹玩具，摇起来那声哇哇被配上发布会画面，视频成片被投诉下架，热度反而更高。好好的市场不抢，非要去告玩梗的人，图的是什么。拿性价比和市场份额这套尺子量华山派，永远量不出结果，它玩的从一开始就不是普通的商业游戏。先画圈子，界限划得越清楚越好，选它的人和还在看性价比的人不是一类。再故意定高价、故意特立独行，看不懂的人自己就走。最里面一层是登顶。左冷禅要的是五岳联盟的盟主，还在江湖这个游戏里玩。岳不群要的是五派合一，从此没人能跟他讨价还价，也没人能随便调侃他。",
+      "status": "curated",
+      "degree": 11
+    },
+    {
+      "id": "episode:EP200",
+      "key": "EP200",
+      "label": "EP200",
+      "fullLabel": "EP200 · 楼市新政再抄底？放弃买房的执念吧！这不是周期，是时代的结束",
+      "type": "episode",
+      "route": "episodes/EP200",
+      "summary": "北方那座最大的城市又出楼市新政，五环以外全面放松，五环以内交满一年社保就能买。同样的松绑上海、广州、深圳早就落地过，市场并没有热起来。被搅活的是地方政府手里的流动性。当年是大水漫灌，直接往需求端砸钱。这一轮只是把捆了好几年的绳子解开一根，解除限制和新增刺激不是一个量级。撑起过去四十年普涨的那几个条件，今天一个都不成立。进城的人买完了，杠杆加不动了，房子不缺了，身份也买不到了，塌下去就不会再回来。中产最大的问题出在心态上，认定上涨是常态、下跌是插曲，于是拿着旧逻辑一次次上车。",
       "status": "curated",
       "degree": 11
     },
@@ -2292,6 +2303,17 @@
       "degree": 8
     },
     {
+      "id": "concept:delayed-price-discovery",
+      "key": "delayed-price-discovery",
+      "label": "价格发现延迟",
+      "fullLabel": "价格发现延迟",
+      "type": "concept",
+      "route": "concepts/delayed-price-discovery",
+      "summary": "真实价格本来应该尽快显现，但被托价、缓冲、票据和关系安排一层层往后拖，市场只剩名义稳定。",
+      "status": null,
+      "degree": 8
+    },
+    {
       "id": "person:lee-kuan-yew",
       "key": "lee-kuan-yew",
       "label": "李光耀",
@@ -2864,17 +2886,6 @@
       "degree": 7
     },
     {
-      "id": "concept:delayed-price-discovery",
-      "key": "delayed-price-discovery",
-      "label": "价格发现延迟",
-      "fullLabel": "价格发现延迟",
-      "type": "concept",
-      "route": "concepts/delayed-price-discovery",
-      "summary": "真实价格本来应该尽快显现，但被托价、缓冲、票据和关系安排一层层往后拖，市场只剩名义稳定。",
-      "status": null,
-      "degree": 7
-    },
-    {
       "id": "theme:education-and-ai-misalignment",
       "key": "education-and-ai-misalignment",
       "label": "教育与AI时代错位",
@@ -3414,6 +3425,17 @@
       "degree": 6
     },
     {
+      "id": "theme:housing-burden-and-income-distribution",
+      "key": "housing-burden-and-income-distribution",
+      "label": "住房税负与收入分配",
+      "fullLabel": "住房税负与收入分配",
+      "type": "theme",
+      "route": "themes/housing-burden-and-income-distribution",
+      "summary": "讨论住房、税负和可支配收入之间的关系，尤其关注中低收入群体被抽走了多少上升空间。",
+      "status": null,
+      "degree": 6
+    },
+    {
       "id": "concept:balance-sheet-support",
       "key": "balance-sheet-support",
       "label": "资产负债表托底",
@@ -3942,17 +3964,6 @@
       "degree": 5
     },
     {
-      "id": "theme:housing-burden-and-income-distribution",
-      "key": "housing-burden-and-income-distribution",
-      "label": "住房税负与收入分配",
-      "fullLabel": "住房税负与收入分配",
-      "type": "theme",
-      "route": "themes/housing-burden-and-income-distribution",
-      "summary": "讨论住房、税负和可支配收入之间的关系，尤其关注中低收入群体被抽走了多少上升空间。",
-      "status": null,
-      "degree": 5
-    },
-    {
       "id": "theme:capital-packaging-and-credential-borrowing",
       "key": "capital-packaging-and-credential-borrowing",
       "label": "资本包装与身份背书",
@@ -4345,6 +4356,17 @@
       "type": "concept",
       "route": "concepts/distributed-war-industry",
       "summary": "战时生产越能分散到多主体、多地点和快速反馈链条里，越不容易被固定打击瘫痪。",
+      "status": null,
+      "degree": 4
+    },
+    {
+      "id": "model:layered-market",
+      "key": "layered-market",
+      "label": "分层市场",
+      "fullLabel": "分层市场",
+      "type": "model",
+      "route": "models/layered-market",
+      "summary": "分层市场说明同一大市场内部，不同层级拥有不同价格、流动性和预期。",
       "status": null,
       "degree": 4
     },
@@ -4939,17 +4961,6 @@
       "type": "concept",
       "route": "concepts/truth-indifferent-rhetoric",
       "summary": "话术若只追求立场效果和情绪动员，就会对真假本身变得冷漠。",
-      "status": null,
-      "degree": 3
-    },
-    {
-      "id": "model:layered-market",
-      "key": "layered-market",
-      "label": "分层市场",
-      "fullLabel": "分层市场",
-      "type": "model",
-      "route": "models/layered-market",
-      "summary": "分层市场说明同一大市场内部，不同层级拥有不同价格、流动性和预期。",
       "status": null,
       "degree": 3
     },
@@ -6516,6 +6527,17 @@
       "degree": 1
     },
     {
+      "id": "concept:stock-housing-era",
+      "key": "stock-housing-era",
+      "label": "存量房时代",
+      "fullLabel": "存量房时代",
+      "type": "concept",
+      "route": "concepts/stock-housing-era",
+      "summary": "新房不再是市场主角，成交主要发生在已经建好的房子之间，缺的不再是房子，是能卖得掉的那一小部分好房子。",
+      "status": null,
+      "degree": 1
+    },
+    {
       "id": "concept:intergenerational-resentment",
       "key": "intergenerational-resentment",
       "label": "代际怨恨继承",
@@ -7121,6 +7143,17 @@
       "degree": 1
     },
     {
+      "id": "concept:status-maintenance-debt",
+      "key": "status-maintenance-debt",
+      "label": "人设维持型负债",
+      "fullLabel": "人设维持型负债",
+      "type": "concept",
+      "route": "concepts/status-maintenance-debt",
+      "summary": "债务不再服务于经营和资产，而是用来维持一个人在社会关系里的身份，一旦还清，身份也就没了。",
+      "status": null,
+      "degree": 1
+    },
+    {
       "id": "concept:commercial-geofence",
       "key": "commercial-geofence",
       "label": "商业电子围栏",
@@ -7172,6 +7205,17 @@
       "type": "concept",
       "route": "concepts/uncontrolled-production-logic",
       "summary": "当生产门槛极低时，系统不再靠少数专业创作者保证质量，而是靠海量产出后的筛选找到少数可用作品。",
+      "status": null,
+      "degree": 1
+    },
+    {
+      "id": "concept:deregulation-as-rescue",
+      "key": "deregulation-as-rescue",
+      "label": "松绑式救市",
+      "fullLabel": "松绑式救市",
+      "type": "concept",
+      "route": "concepts/deregulation-as-rescue",
+      "summary": "不投放新的购买力，只把过去加上的资格限制一条条解开，靠放宽准入把新买家放进场，换来成交和流动性。",
       "status": null,
       "degree": 1
     },
@@ -15339,6 +15383,61 @@
     {
       "source": "episode:EP199",
       "target": "theme:rule-of-law-boundaries-and-social-trust",
+      "kind": "episode-theme"
+    },
+    {
+      "source": "episode:EP200",
+      "target": "concept:deregulation-as-rescue",
+      "kind": "episode-concept"
+    },
+    {
+      "source": "episode:EP200",
+      "target": "concept:stock-housing-era",
+      "kind": "episode-concept"
+    },
+    {
+      "source": "episode:EP200",
+      "target": "concept:status-maintenance-debt",
+      "kind": "episode-concept"
+    },
+    {
+      "source": "episode:EP200",
+      "target": "concept:delayed-price-discovery",
+      "kind": "episode-concept"
+    },
+    {
+      "source": "episode:EP200",
+      "target": "concept:middle-class-hard-landing",
+      "kind": "episode-concept"
+    },
+    {
+      "source": "episode:EP200",
+      "target": "model:layered-market",
+      "kind": "episode-model"
+    },
+    {
+      "source": "episode:EP200",
+      "target": "model:identity-stratification",
+      "kind": "episode-model"
+    },
+    {
+      "source": "episode:EP200",
+      "target": "model:leverage-backfire",
+      "kind": "episode-model"
+    },
+    {
+      "source": "episode:EP200",
+      "target": "theme:real-estate-deleveraging",
+      "kind": "episode-theme"
+    },
+    {
+      "source": "episode:EP200",
+      "target": "theme:middle-class-descent-and-stratification",
+      "kind": "episode-theme"
+    },
+    {
+      "source": "episode:EP200",
+      "target": "theme:housing-burden-and-income-distribution",
       "kind": "episode-theme"
     },
     {
