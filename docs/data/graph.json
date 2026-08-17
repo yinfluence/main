@@ -2,11 +2,11 @@
   "meta": {
     "title": "颖响力知识图谱",
     "subtitle": "节目、概念、模型、人物、主题之间的可视化连接网络",
-    "nodeCount": 694,
-    "linkCount": 2619,
+    "nodeCount": 695,
+    "linkCount": 2654,
     "typeCounts": {
       "model": 82,
-      "live": 32,
+      "live": 33,
       "theme": 92,
       "episode": 200,
       "concept": 223,
@@ -23,7 +23,7 @@
       "route": "models/risk-transfer-chain",
       "summary": "系统不会立刻吞下风险，而是先沿着银行、企业、票据、供应链和普通人之间不断转手、延后和下沉。",
       "status": null,
-      "degree": 46
+      "degree": 47
     },
     {
       "id": "live:LIVE002",
@@ -136,6 +136,17 @@
       "degree": 37
     },
     {
+      "id": "live:LIVE033",
+      "key": "LIVE033",
+      "label": "LIVE033",
+      "fullLabel": "LIVE033 · 吉隆坡的酒桌不聊石油改聊算力卡，实则真正在等着接盘的是地方政府",
+      "type": "live",
+      "route": "lives/LIVE033",
+      "summary": "一百个亿的项目掏二三十亿就能开工，剩下的钱从你买的那份理财里出。",
+      "status": "curated",
+      "degree": 35
+    },
+    {
       "id": "live:LIVE024",
       "key": "LIVE024",
       "label": "LIVE024",
@@ -202,6 +213,17 @@
       "degree": 31
     },
     {
+      "id": "theme:middle-class-descent-and-stratification",
+      "key": "middle-class-descent-and-stratification",
+      "label": "中产下坠与分层社会",
+      "fullLabel": "中产下坠与分层社会",
+      "type": "theme",
+      "route": "themes/middle-class-descent-and-stratification",
+      "summary": "当中间层缺乏缓冲带时，经济下行会迅速转成身份下坠、关系断裂和社会分层加固。",
+      "status": null,
+      "degree": 30
+    },
+    {
       "id": "live:LIVE012",
       "key": "LIVE012",
       "label": "LIVE012",
@@ -246,17 +268,6 @@
       "degree": 30
     },
     {
-      "id": "theme:middle-class-descent-and-stratification",
-      "key": "middle-class-descent-and-stratification",
-      "label": "中产下坠与分层社会",
-      "fullLabel": "中产下坠与分层社会",
-      "type": "theme",
-      "route": "themes/middle-class-descent-and-stratification",
-      "summary": "当中间层缺乏缓冲带时，经济下行会迅速转成身份下坠、关系断裂和社会分层加固。",
-      "status": null,
-      "degree": 29
-    },
-    {
       "id": "live:LIVE001",
       "key": "LIVE001",
       "label": "LIVE001",
@@ -288,6 +299,17 @@
       "summary": "大哥丢掉那家公司的那天，才是该压上全部的时候。",
       "status": "curated",
       "degree": 29
+    },
+    {
+      "id": "episode:EP156",
+      "key": "EP156",
+      "label": "EP156",
+      "fullLabel": "EP156 · 老中产吸干财富，新中产锁定基本盘。香港不再是避风港？新加坡或成最大赢家？",
+      "type": "episode",
+      "route": "episodes/EP156",
+      "summary": "5月以来一串孤立的金融事件被串成一条线。富途、老虎被罚没22亿，八部门整治非法跨境券商。香港银行倒查内地账户。国务院837号令把个人、技术、人才纳入对外投资监管。\n\n对老中产和高净值人群境外财富的回收。学特朗普“建墙”，逼两头跑的人选边。要么留国内受严管，要么彻底离开。另一边，靠国家拨款和国企流动的新中产正在长出来，因为更稳定可控。老中产去新加坡相对安全，置换会用五到十年完成。",
+      "status": "curated",
+      "degree": 28
     },
     {
       "id": "live:LIVE010",
@@ -334,14 +356,14 @@
       "degree": 28
     },
     {
-      "id": "episode:EP156",
-      "key": "EP156",
-      "label": "EP156",
-      "fullLabel": "EP156 · 老中产吸干财富，新中产锁定基本盘。香港不再是避风港？新加坡或成最大赢家？",
-      "type": "episode",
-      "route": "episodes/EP156",
-      "summary": "5月以来一串孤立的金融事件被串成一条线。富途、老虎被罚没22亿，八部门整治非法跨境券商。香港银行倒查内地账户。国务院837号令把个人、技术、人才纳入对外投资监管。\n\n对老中产和高净值人群境外财富的回收。学特朗普“建墙”，逼两头跑的人选边。要么留国内受严管，要么彻底离开。另一边，靠国家拨款和国企流动的新中产正在长出来，因为更稳定可控。老中产去新加坡相对安全，置换会用五到十年完成。",
-      "status": "curated",
+      "id": "concept:hidden-debt",
+      "key": "hidden-debt",
+      "label": "隐形债务",
+      "fullLabel": "隐形债务",
+      "type": "concept",
+      "route": "concepts/hidden-debt",
+      "summary": "表外、体外和合作链条里的债务不在显性报表中充分呈现，却会在危机时重新压回主体。",
+      "status": null,
       "degree": 27
     },
     {
@@ -352,6 +374,17 @@
       "type": "theme",
       "route": "themes/great-power-competition-and-strategic-time",
       "summary": "讨论战争、联盟和国家战略如何被时间窗口、社会成本和长期定力重新塑形。",
+      "status": null,
+      "degree": 26
+    },
+    {
+      "id": "theme:dollar-system-and-gray-trade",
+      "key": "dollar-system-and-gray-trade",
+      "label": "美元体系与灰色贸易",
+      "fullLabel": "美元体系与灰色贸易",
+      "type": "theme",
+      "route": "themes/dollar-system-and-gray-trade",
+      "summary": "讨论石油美元的真实脆弱点，究竟藏在公开统计之外的哪些灰色交易链条里。",
       "status": null,
       "degree": 26
     },
@@ -367,28 +400,6 @@
       "degree": 26
     },
     {
-      "id": "concept:hidden-debt",
-      "key": "hidden-debt",
-      "label": "隐形债务",
-      "fullLabel": "隐形债务",
-      "type": "concept",
-      "route": "concepts/hidden-debt",
-      "summary": "表外、体外和合作链条里的债务不在显性报表中充分呈现，却会在危机时重新压回主体。",
-      "status": null,
-      "degree": 26
-    },
-    {
-      "id": "theme:dollar-system-and-gray-trade",
-      "key": "dollar-system-and-gray-trade",
-      "label": "美元体系与灰色贸易",
-      "fullLabel": "美元体系与灰色贸易",
-      "type": "theme",
-      "route": "themes/dollar-system-and-gray-trade",
-      "summary": "讨论石油美元的真实脆弱点，究竟藏在公开统计之外的哪些灰色交易链条里。",
-      "status": null,
-      "degree": 25
-    },
-    {
       "id": "episode:EP169",
       "key": "EP169",
       "label": "EP169",
@@ -397,7 +408,7 @@
       "route": "episodes/EP169",
       "summary": "合肥被称为中国最牛风投城市。各地城投照抄，多数抄出一身债和产能过剩。可学的不是城市打法，是背后的投资逻辑。四个显性方法是逆周期抄底不追热点，赌产业链不赌单家公司。还有长期陪跑到成熟才退出，只投接得住的赛道。抄不走的是第五个隐性秘籍。政府能把权力直接变成补贴、报表和销售额。普通人没权力，唯一对应物是信息确定性。普通人要掌握的是别人没有的确定信息，像一级市场那样看清命脉。到那一步，欧印和加杠杆才不是赌博。",
       "status": "curated",
-      "degree": 25
+      "degree": 26
     },
     {
       "id": "live:LIVE009",
@@ -441,6 +452,17 @@
       "route": "concepts/chokepoint-leverage",
       "summary": "控制海峡、运河和关键通道的人，往往能把地理位置转化成定价权、通行权和规则权。",
       "status": null,
+      "degree": 23
+    },
+    {
+      "id": "episode:EP131",
+      "key": "EP131",
+      "label": "EP131",
+      "fullLabel": "EP131 · 哪吒汽车暴雷全拆解，撕开国资造车的万亿赌局！揭秘电车烧钱三大黑洞。【EP131】",
+      "type": "episode",
+      "route": "episodes/EP131",
+      "summary": "《焦点访谈》报道哪吒破产重整。借这条新闻回到电车、地方政府、国资和隐性债务。哪吒不是单纯经营失败，也不是创始人或风投失误。地方国资把新能源车当成产业升级、招商业绩和 IPO 退出工具。于是成了一套财政金融赌局。桐乡、宜春、南宁代表三种参与方式。本地扶持、财政局平台入股、产投集团隐性债务化。价格战、研发迭代、营销黑箱把企业推向烧钱。IPO 一断，国资、车企、供应链和债权人一起被锁进窟窿，无法退出。",
+      "status": "curated",
       "degree": 22
     },
     {
@@ -510,13 +532,13 @@
       "degree": 21
     },
     {
-      "id": "episode:EP131",
-      "key": "EP131",
-      "label": "EP131",
-      "fullLabel": "EP131 · 哪吒汽车暴雷全拆解，撕开国资造车的万亿赌局！揭秘电车烧钱三大黑洞。【EP131】",
+      "id": "episode:EP136",
+      "key": "EP136",
+      "label": "EP136",
+      "fullLabel": "EP136 · 影子舰队凭什么构架全球灰色贸易网络？1.5亿运力，改写世界贸易与货币规则！【EP136】",
       "type": "episode",
-      "route": "episodes/EP131",
-      "summary": "《焦点访谈》报道哪吒破产重整。借这条新闻回到电车、地方政府、国资和隐性债务。哪吒不是单纯经营失败，也不是创始人或风投失误。地方国资把新能源车当成产业升级、招商业绩和 IPO 退出工具。于是成了一套财政金融赌局。桐乡、宜春、南宁代表三种参与方式。本地扶持、财政局平台入股、产投集团隐性债务化。价格战、研发迭代、营销黑箱把企业推向烧钱。IPO 一断，国资、车企、供应链和债权人一起被锁进窟窿，无法退出。",
+      "route": "episodes/EP136",
+      "summary": "把灰色贸易从美元、黄金和大国战略，拉回到最具体的运输工具，影子舰队。它不是单一国家海军，也不是有统一指挥的海盗组织。它是一套脱离西方保险、认证、定位和船东透明规则的平行航运网络。老旧油轮、换旗换名、AIS 静默、船对船转运、原产地文件和离岸服务都在其中。被制裁的石油由此重新洗进全球贸易。它还进一步支撑起绕开 SWIFT 的结算闭环。",
       "status": "curated",
       "degree": 21
     },
@@ -605,17 +627,6 @@
       "type": "episode",
       "route": "episodes/EP132",
       "summary": "Meta 收购 Manus 被监管否决。叫停交易有明确法律依据。过去三十年支撑无背景年轻人从零到一的通道正在被堵死。通道是美元基金、全球市场、赴美上市和海外并购退出。地方国资基金的考核逻辑重视国有资产不流失、招商落地和可见退出。它天然不为纯软件、早期、无背景的草根项目承担风险。年轻人于是理性地转向考研考公。创新资源从市场能力转向行政关系。真正的颠覆式创新被挤出，只剩依附式和表演式创新。",
-      "status": "curated",
-      "degree": 20
-    },
-    {
-      "id": "episode:EP136",
-      "key": "EP136",
-      "label": "EP136",
-      "fullLabel": "EP136 · 影子舰队凭什么构架全球灰色贸易网络？1.5亿运力，改写世界贸易与货币规则！【EP136】",
-      "type": "episode",
-      "route": "episodes/EP136",
-      "summary": "把灰色贸易从美元、黄金和大国战略，拉回到最具体的运输工具，影子舰队。它不是单一国家海军，也不是有统一指挥的海盗组织。它是一套脱离西方保险、认证、定位和船东透明规则的平行航运网络。老旧油轮、换旗换名、AIS 静默、船对船转运、原产地文件和离岸服务都在其中。被制裁的石油由此重新洗进全球贸易。它还进一步支撑起绕开 SWIFT 的结算闭环。",
       "status": "curated",
       "degree": 20
     },
@@ -774,6 +785,39 @@
       "degree": 17
     },
     {
+      "id": "theme:local-fiscal-stress-and-hidden-debt",
+      "key": "local-fiscal-stress-and-hidden-debt",
+      "label": "地方财政与隐性债务",
+      "fullLabel": "地方财政与隐性债务",
+      "type": "theme",
+      "route": "themes/local-fiscal-stress-and-hidden-debt",
+      "summary": "地方财政吃紧后，系统会通过更复杂的融资、资产包装和风险转移来维持运转。",
+      "status": null,
+      "degree": 17
+    },
+    {
+      "id": "theme:southeast-asia-fragmentation-and-bloc-competition",
+      "key": "southeast-asia-fragmentation-and-bloc-competition",
+      "label": "东南亚裂变与集团竞争",
+      "fullLabel": "东南亚裂变与集团竞争",
+      "type": "theme",
+      "route": "themes/southeast-asia-fragmentation-and-bloc-competition",
+      "summary": "讨论东南亚如何从缓冲地带变成各方拉扯、重新站队和内部裂变并行发生的高风险区域。",
+      "status": null,
+      "degree": 17
+    },
+    {
+      "id": "concept:gray-oil-network",
+      "key": "gray-oil-network",
+      "label": "灰色石油网络",
+      "fullLabel": "灰色石油网络",
+      "type": "concept",
+      "route": "concepts/gray-oil-network",
+      "summary": "绕开正规结算和监管的石油流动，会在影子体系中重塑货币、制裁和地缘利益。",
+      "status": null,
+      "degree": 17
+    },
+    {
       "id": "episode:EP133",
       "key": "EP133",
       "label": "EP133",
@@ -781,6 +825,17 @@
       "type": "episode",
       "route": "episodes/EP133",
       "summary": "阿联酋宣布永久退出欧佩克。这是在能源体系里闹内讧，还是在中东旧格局崩塌时主动重写国家路径？阿联酋不满足于做沙特主导的兄弟体系成员。它也不想只当美国的棋子。它希望复制新加坡模式，安全上绑定美国，政治和经济上保持中立开放。再把港口、金融、航运、能源和人才组合成中东的避险节点。退出欧佩克因此不只是释放产能。更是摆脱沙特配额约束，把能源窗口期换成现金与未来产业基石。",
+      "status": "curated",
+      "degree": 17
+    },
+    {
+      "id": "episode:EP153",
+      "key": "EP153",
+      "label": "EP153",
+      "fullLabel": "EP153 · 华山派的“T病毒”，伟大定律指引空间堆叠泡药三尸脑神丹，辟邪剑谱洗脑行业自骟成就千年超车梦",
+      "type": "episode",
+      "route": "episodes/EP153",
+      "summary": "华山派宣布“T定律”。这是一条被包装成民族复兴突破的半导体路线。制程好比盖楼，先进制程是把砖做小，3D空间堆叠是往上摞层。堆叠的真实瓶颈是散热和良品率，层数越多良率越低。T定律真正释放的信号，是未来多年拿不到更先进光刻机。于是被迫改走堆叠这条“辟邪剑谱”式的自宫路线。用黑话堆出黑箱，再借民族复兴的大旗裹挟整个行业。把绕路说成弯道超车，实则是别人炸了高速，自己在山路上开越野车。",
       "status": "curated",
       "degree": 17
     },
@@ -829,35 +884,24 @@
       "degree": 17
     },
     {
-      "id": "theme:local-fiscal-stress-and-hidden-debt",
-      "key": "local-fiscal-stress-and-hidden-debt",
-      "label": "地方财政与隐性债务",
-      "fullLabel": "地方财政与隐性债务",
-      "type": "theme",
-      "route": "themes/local-fiscal-stress-and-hidden-debt",
-      "summary": "地方财政吃紧后，系统会通过更复杂的融资、资产包装和风险转移来维持运转。",
-      "status": null,
-      "degree": 16
+      "id": "episode:EP192",
+      "key": "EP192",
+      "label": "EP192",
+      "fullLabel": "EP192 · 梁文锋说漏嘴的算力乱象！揭露中国AI行业的真实浪费与困境。",
+      "type": "episode",
+      "route": "episodes/EP192",
+      "summary": "梁文锋一场四小时的内部闭门会文字稿被放了出来。他是量化出身，不靠情怀也不屑对投资人吹牛，这份稿子的可信度比一般的投资人会议高。稿子里最硬的三处，一是算力的账，四张华山派的卡才抵一张英伟达 B 卡，手里一万六千张只折合四五千张，远远不够；二是不够之后只能走别的路子，灰色算力贸易第一次有了明确口径；三是国内七八家都在做同一件事，卡和算力中心的需求被一起做大，这条产业链跟当年的电车长得一模一样。最后问的是这场泄露为什么发生在今天，答案指向月之暗面爆火之后老大地位的松动。",
+      "status": "curated",
+      "degree": 17
     },
     {
-      "id": "theme:southeast-asia-fragmentation-and-bloc-competition",
-      "key": "southeast-asia-fragmentation-and-bloc-competition",
-      "label": "东南亚裂变与集团竞争",
-      "fullLabel": "东南亚裂变与集团竞争",
+      "id": "theme:local-government-financialization",
+      "key": "local-government-financialization",
+      "label": "地方政府资本化与补贴杠杆",
+      "fullLabel": "地方政府资本化与补贴杠杆",
       "type": "theme",
-      "route": "themes/southeast-asia-fragmentation-and-bloc-competition",
-      "summary": "讨论东南亚如何从缓冲地带变成各方拉扯、重新站队和内部裂变并行发生的高风险区域。",
-      "status": null,
-      "degree": 16
-    },
-    {
-      "id": "concept:gray-oil-network",
-      "key": "gray-oil-network",
-      "label": "灰色石油网络",
-      "fullLabel": "灰色石油网络",
-      "type": "concept",
-      "route": "concepts/gray-oil-network",
-      "summary": "绕开正规结算和监管的石油流动，会在影子体系中重塑货币、制裁和地缘利益。",
+      "route": "themes/local-government-financialization",
+      "summary": "讨论地方政府如何从传统招商者变成资本玩家，并把补贴、基金和估值故事捆到一起。",
       "status": null,
       "degree": 16
     },
@@ -906,17 +950,6 @@
       "degree": 16
     },
     {
-      "id": "episode:EP153",
-      "key": "EP153",
-      "label": "EP153",
-      "fullLabel": "EP153 · 华山派的“T病毒”，伟大定律指引空间堆叠泡药三尸脑神丹，辟邪剑谱洗脑行业自骟成就千年超车梦",
-      "type": "episode",
-      "route": "episodes/EP153",
-      "summary": "华山派宣布“T定律”。这是一条被包装成民族复兴突破的半导体路线。制程好比盖楼，先进制程是把砖做小，3D空间堆叠是往上摞层。堆叠的真实瓶颈是散热和良品率，层数越多良率越低。T定律真正释放的信号，是未来多年拿不到更先进光刻机。于是被迫改走堆叠这条“辟邪剑谱”式的自宫路线。用黑话堆出黑箱，再借民族复兴的大旗裹挟整个行业。把绕路说成弯道超车，实则是别人炸了高速，自己在山路上开越野车。",
-      "status": "curated",
-      "degree": 16
-    },
-    {
       "id": "episode:EP168",
       "key": "EP168",
       "label": "EP168",
@@ -924,17 +957,6 @@
       "type": "episode",
       "route": "episodes/EP168",
       "summary": "重读美伊协议，解读和主流叙事相反。主流叙事是美国出问题、川普认输、伊朗大胜。这份协议不是认输，是委内瑞拉模式的 2.0 版。美国要的从来就是打掉最高领导人，换一个能谈的。脏活交给以色列。\n\n没换到合适的，就先签协议，做时间的朋友。油价没涨到 200 至 300 美元，说明需求本来就被高估了。美国还趁机卖委内瑞拉的油去库存。真正被盯住的是灰色贸易，逼伊朗回SWIFT和美元体系才是开战动机。",
-      "status": "curated",
-      "degree": 16
-    },
-    {
-      "id": "episode:EP192",
-      "key": "EP192",
-      "label": "EP192",
-      "fullLabel": "EP192 · 梁文锋说漏嘴的算力乱象！揭露中国AI行业的真实浪费与困境。",
-      "type": "episode",
-      "route": "episodes/EP192",
-      "summary": "梁文锋一场四小时的内部闭门会文字稿被放了出来。他是量化出身，不靠情怀也不屑对投资人吹牛，这份稿子的可信度比一般的投资人会议高。稿子里最硬的三处，一是算力的账，四张华山派的卡才抵一张英伟达 B 卡，手里一万六千张只折合四五千张，远远不够；二是不够之后只能走别的路子，灰色算力贸易第一次有了明确口径；三是国内七八家都在做同一件事，卡和算力中心的需求被一起做大，这条产业链跟当年的电车长得一模一样。最后问的是这场泄露为什么发生在今天，答案指向月之暗面爆火之后老大地位的松动。",
       "status": "curated",
       "degree": 16
     },
@@ -950,17 +972,6 @@
       "degree": 15
     },
     {
-      "id": "theme:local-government-financialization",
-      "key": "local-government-financialization",
-      "label": "地方政府资本化与补贴杠杆",
-      "fullLabel": "地方政府资本化与补贴杠杆",
-      "type": "theme",
-      "route": "themes/local-government-financialization",
-      "summary": "讨论地方政府如何从传统招商者变成资本玩家，并把补贴、基金和估值故事捆到一起。",
-      "status": null,
-      "degree": 15
-    },
-    {
       "id": "episode:EP123",
       "key": "EP123",
       "label": "EP123",
@@ -972,6 +983,17 @@
       "degree": 15
     },
     {
+      "id": "episode:EP126",
+      "key": "EP126",
+      "label": "EP126",
+      "fullLabel": "EP126 · 成也强人败也一言堂，恒大许家印们的双面人生与崩塌之路！从零首付到零资金，三层杠杆如何炸穿全行业。【EP126】",
+      "type": "episode",
+      "route": "episodes/EP126",
+      "summary": "不单独复盘恒大或许家印。把房地产系统性风险，拆成居民、房企和地方政府三层共同加杠杆的结果。地产崩塌的核心不是某个老板突然失误。而是零首付式投机、零资金式房企扩张、土地财政式地方融资彼此强化。再叠加强人老板的一言堂和土地制度反馈缺失，整个行业最终失去了刹车能力。",
+      "status": "curated",
+      "degree": 15
+    },
+    {
       "id": "episode:EP146",
       "key": "EP146",
       "label": "EP146",
@@ -979,6 +1001,17 @@
       "type": "episode",
       "route": "episodes/EP146",
       "summary": "央视拿下 2026 到 2031 年四届世界杯转播权，社交媒体一片砍价封神。网传 6000 万美元单届价和 1.1 亿四届打包价，数学冲突。倾向单届价真、打包价假，为的是压低本届广告商预期。三件事咬得紧。FIFA 秘书长和温格先去足协不是央视。温格指导 U14，财政部同步宣布 5 亿元校园足球投入。本是商业谈判，被包装成民族胜利。央视垄断稳赚不赔，观众照样熬夜看广告充会员。体育归体育，商业归商业。",
+      "status": "curated",
+      "degree": 15
+    },
+    {
+      "id": "episode:EP181",
+      "key": "EP181",
+      "label": "EP181",
+      "fullLabel": "EP181 · 东南亚火药桶之大马篇：表面政坛大乱，实则铁桶威权？困住马来西亚成为发达国家的3个致命死穴！",
+      "type": "episode",
+      "route": "episodes/EP181",
+      "summary": "东南亚火药桶系列第二期讲马来西亚，和印尼互为镜面。印尼表面威权稳固内里乱，马来西亚表面吵翻天底下稳。撑住底盘的是马来人的国家这条红线，和九位苏丹轮值的君主联邦制。安华的大联合政府面合心不合。票仓被自家分裂的同心党掏空，只能拖着不敢大选。大基建留下逼近GDP八成的债务，燃油补贴因油价暴涨翻了五到十倍。固打制把上百万中产人才推给新加坡。它不会崩盘，也永远突破不了中等收入陷阱。根基太稳，锁死了上限。",
       "status": "curated",
       "degree": 15
     },
@@ -1060,17 +1093,6 @@
       "degree": 14
     },
     {
-      "id": "episode:EP126",
-      "key": "EP126",
-      "label": "EP126",
-      "fullLabel": "EP126 · 成也强人败也一言堂，恒大许家印们的双面人生与崩塌之路！从零首付到零资金，三层杠杆如何炸穿全行业。【EP126】",
-      "type": "episode",
-      "route": "episodes/EP126",
-      "summary": "不单独复盘恒大或许家印。把房地产系统性风险，拆成居民、房企和地方政府三层共同加杠杆的结果。地产崩塌的核心不是某个老板突然失误。而是零首付式投机、零资金式房企扩张、土地财政式地方融资彼此强化。再叠加强人老板的一言堂和土地制度反馈缺失，整个行业最终失去了刹车能力。",
-      "status": "curated",
-      "degree": 14
-    },
-    {
       "id": "episode:EP129",
       "key": "EP129",
       "label": "EP129",
@@ -1137,13 +1159,24 @@
       "degree": 14
     },
     {
-      "id": "episode:EP181",
-      "key": "EP181",
-      "label": "EP181",
-      "fullLabel": "EP181 · 东南亚火药桶之大马篇：表面政坛大乱，实则铁桶威权？困住马来西亚成为发达国家的3个致命死穴！",
+      "id": "episode:EP170",
+      "key": "EP170",
+      "label": "EP170",
+      "fullLabel": "EP170 · 车圈福威镖局凛冬已至！世界第一还是灭门？谁是青城派？谁是背后的余沧海？",
       "type": "episode",
-      "route": "episodes/EP181",
-      "summary": "东南亚火药桶系列第二期讲马来西亚，和印尼互为镜面。印尼表面威权稳固内里乱，马来西亚表面吵翻天底下稳。撑住底盘的是马来人的国家这条红线，和九位苏丹轮值的君主联邦制。安华的大联合政府面合心不合。票仓被自家分裂的同心党掏空，只能拖着不敢大选。大基建留下逼近GDP八成的债务，燃油补贴因油价暴涨翻了五到十倍。固打制把上百万中产人才推给新加坡。它不会崩盘，也永远突破不了中等收入陷阱。根基太稳，锁死了上限。",
+      "route": "episodes/EP170",
+      "summary": "接着福威镖局那个隐喻往下讲。借《笑傲江湖》里林震南镖局被灭门的桥段，拆一家喊出五年世界第一的头部电车企业。这句口号是说给股东听的。国内销量随行业下滑一成多，靠存疑的海外销量和供应链金融硬撑。\n\n真正让它活着的不是产品力，而是替体系养着大量镖师、分号和家庭。就业、消费、上供都压在它身上。福在前，威在后。利益是上面恩赐、可代管的，虚名却属于上面。一旦失去被利用价值，等着它的是换了名字的合营。",
+      "status": "curated",
+      "degree": 14
+    },
+    {
+      "id": "episode:EP187",
+      "key": "EP187",
+      "label": "EP187",
+      "fullLabel": "EP187 · 电车圈18亿巨亏撕开真相，华删派气宗躺赢，剑宗小厮自宫造车，还要含泪背所有的锅。",
+      "type": "episode",
+      "route": "episodes/EP187",
+      "summary": "某车企公布半年预亏 15 到 18 亿。旗下某界交付量却涨 10%，还霸着豪华 SUV 销冠。卖得越多，亏得越多。沿用笑傲江湖那套化名，说的是华山派与剑宗小厮的合作模式。\n\n硬件采购、技术授权费、渠道服务费是三笔前置供奉。单车 13 到 14 万先进气宗的兜。收益挂销量，与车企盈亏脱钩。重资产、价格战、出海受限的风险全焊在小厮身上。这不是苹果代工模式，更像苏联与加盟共和国。依附型车企是制造业小老板的缩影。",
       "status": "curated",
       "degree": 14
     },
@@ -1166,6 +1199,17 @@
       "type": "model",
       "route": "models/chokepoint-order-model",
       "summary": "真正决定咽喉通道价值的，不只是地理位置，而是谁定义通行规则、风险定价与法律边界。",
+      "status": null,
+      "degree": 13
+    },
+    {
+      "id": "model:black-box-assetization",
+      "key": "black-box-assetization",
+      "label": "黑箱资产化",
+      "fullLabel": "黑箱资产化",
+      "type": "model",
+      "route": "models/black-box-assetization",
+      "summary": "把本来难以估值、难以穿透甚至本该暴露风险的东西，装进平台、基金或体外结构里，重新包装成可融资、可讲故事、可继续吸钱的资产。",
       "status": null,
       "degree": 13
     },
@@ -1258,17 +1302,6 @@
       "degree": 13
     },
     {
-      "id": "episode:EP170",
-      "key": "EP170",
-      "label": "EP170",
-      "fullLabel": "EP170 · 车圈福威镖局凛冬已至！世界第一还是灭门？谁是青城派？谁是背后的余沧海？",
-      "type": "episode",
-      "route": "episodes/EP170",
-      "summary": "接着福威镖局那个隐喻往下讲。借《笑傲江湖》里林震南镖局被灭门的桥段，拆一家喊出五年世界第一的头部电车企业。这句口号是说给股东听的。国内销量随行业下滑一成多，靠存疑的海外销量和供应链金融硬撑。\n\n真正让它活着的不是产品力，而是替体系养着大量镖师、分号和家庭。就业、消费、上供都压在它身上。福在前，威在后。利益是上面恩赐、可代管的，虚名却属于上面。一旦失去被利用价值，等着它的是换了名字的合营。",
-      "status": "curated",
-      "degree": 13
-    },
-    {
       "id": "episode:EP174",
       "key": "EP174",
       "label": "EP174",
@@ -1291,17 +1324,6 @@
       "degree": 13
     },
     {
-      "id": "episode:EP187",
-      "key": "EP187",
-      "label": "EP187",
-      "fullLabel": "EP187 · 电车圈18亿巨亏撕开真相，华删派气宗躺赢，剑宗小厮自宫造车，还要含泪背所有的锅。",
-      "type": "episode",
-      "route": "episodes/EP187",
-      "summary": "某车企公布半年预亏 15 到 18 亿。旗下某界交付量却涨 10%，还霸着豪华 SUV 销冠。卖得越多，亏得越多。沿用笑傲江湖那套化名，说的是华山派与剑宗小厮的合作模式。\n\n硬件采购、技术授权费、渠道服务费是三笔前置供奉。单车 13 到 14 万先进气宗的兜。收益挂销量，与车企盈亏脱钩。重资产、价格战、出海受限的风险全焊在小厮身上。这不是苹果代工模式，更像苏联与加盟共和国。依附型车企是制造业小老板的缩影。",
-      "status": "curated",
-      "degree": 13
-    },
-    {
       "id": "episode:EP188",
       "key": "EP188",
       "label": "EP188",
@@ -1311,17 +1333,6 @@
       "summary": "新加坡单一家族办公室五年从400家涨到2750家。它不是富豪的炒股团队，是解决代际传承死穴的制度工具。血缘筛选保证不了后代能力。长子继承制只防资产分割，防不住财富流失。唯一出路是所有权与经营权彻底分割。家族握住所有权和收益权，投资、信托、税务、合规交给专业团队。老钱扎堆新加坡、瑞士，是要脱离大国国运周期的中立法域。这与小国对干净长钱的需求双向奔赴。老钱和新钱的真正区别就在这儿，用制度对抗人性和周期。",
       "status": "curated",
       "degree": 13
-    },
-    {
-      "id": "model:black-box-assetization",
-      "key": "black-box-assetization",
-      "label": "黑箱资产化",
-      "fullLabel": "黑箱资产化",
-      "type": "model",
-      "route": "models/black-box-assetization",
-      "summary": "把本来难以估值、难以穿透甚至本该暴露风险的东西，装进平台、基金或体外结构里，重新包装成可融资、可讲故事、可继续吸钱的资产。",
-      "status": null,
-      "degree": 12
     },
     {
       "id": "model:identity-stratification",
@@ -1342,6 +1353,17 @@
       "type": "concept",
       "route": "concepts/phantom-sales",
       "summary": "企业把并不存在的真实终端需求，包装成销量、出海成绩或渠道消化能力，用来维持估值和融资信心。",
+      "status": null,
+      "degree": 12
+    },
+    {
+      "id": "concept:sanction-containment",
+      "key": "sanction-containment",
+      "label": "制裁遏制",
+      "fullLabel": "制裁遏制",
+      "type": "concept",
+      "route": "concepts/sanction-containment",
+      "summary": "制裁的真正作用常常不是逼对手立刻认输，而是长期压低其外延空间、联动能力和做大速度。",
       "status": null,
       "degree": 12
     },
@@ -1467,6 +1489,28 @@
       "degree": 12
     },
     {
+      "id": "episode:EP195",
+      "key": "EP195",
+      "label": "EP195",
+      "fullLabel": "EP195 · 竹知了“不能提”的是华删派与岳不群的终极野心！",
+      "type": "episode",
+      "route": "episodes/EP195",
+      "summary": "竹知了这件事很多人看不懂。几毛钱的竹玩具，摇起来那声哇哇被配上发布会画面，视频成片被投诉下架，热度反而更高。好好的市场不抢，非要去告玩梗的人，图的是什么。拿性价比和市场份额这套尺子量华山派，永远量不出结果，它玩的从一开始就不是普通的商业游戏。先画圈子，界限划得越清楚越好，选它的人和还在看性价比的人不是一类。再故意定高价、故意特立独行，看不懂的人自己就走。最里面一层是登顶。左冷禅要的是五岳联盟的盟主，还在江湖这个游戏里玩。岳不群要的是五派合一，从此没人能跟他讨价还价，也没人能随便调侃他。",
+      "status": "curated",
+      "degree": 12
+    },
+    {
+      "id": "episode:EP200",
+      "key": "EP200",
+      "label": "EP200",
+      "fullLabel": "EP200 · 楼市新政再抄底？放弃买房的执念吧！这不是周期，是时代的结束",
+      "type": "episode",
+      "route": "episodes/EP200",
+      "summary": "北方那座最大的城市又出楼市新政，五环以外全面放松，五环以内交满一年社保就能买。同样的松绑上海、广州、深圳早就落地过，市场并没有热起来。被搅活的是地方政府手里的流动性。当年是大水漫灌，直接往需求端砸钱。这一轮只是把捆了好几年的绳子解开一根，解除限制和新增刺激不是一个量级。撑起过去四十年普涨的那几个条件，今天一个都不成立。进城的人买完了，杠杆加不动了，房子不缺了，身份也买不到了，塌下去就不会再回来。中产最大的问题出在心态上，认定上涨是常态、下跌是插曲，于是拿着旧逻辑一次次上车。",
+      "status": "curated",
+      "degree": 12
+    },
+    {
       "id": "theme:planned-systems-and-innovation",
       "key": "planned-systems-and-innovation",
       "label": "大计划体制与创新约束",
@@ -1522,17 +1566,6 @@
       "degree": 11
     },
     {
-      "id": "concept:sanction-containment",
-      "key": "sanction-containment",
-      "label": "制裁遏制",
-      "fullLabel": "制裁遏制",
-      "type": "concept",
-      "route": "concepts/sanction-containment",
-      "summary": "制裁的真正作用常常不是逼对手立刻认输，而是长期压低其外延空间、联动能力和做大速度。",
-      "status": null,
-      "degree": 11
-    },
-    {
       "id": "model:institutional-fit",
       "key": "institutional-fit",
       "label": "制度适配",
@@ -1562,6 +1595,17 @@
       "type": "episode",
       "route": "episodes/EP105",
       "summary": "有人问为什么不靠追涨杀跌赚钱。市面上的财经博主都是情绪博主，做的不是财经，是满足短期情绪。玩的是钱不是财富。博主不笨，是时代进了博弈论里的穷途困境。连三个月都看不清，长期目标被普遍抛弃。财经表达应该谈战略、周期和时点。龙虾红利期拆出三波人。第一波开发者和第三波拿工具干活的都赚钱，只有第二波跟风的必输。与其看工具书不如看哲学和文学理解人性，推荐凯文凯利《失控》。留给后代的是家风和思维，不是钱。",
+      "status": "curated",
+      "degree": 11
+    },
+    {
+      "id": "episode:EP117",
+      "key": "EP117",
+      "label": "EP117",
+      "fullLabel": "EP117 · 东南亚，一个新的巴尔干火药桶已经成型，越南政坛惊天变局大约就是核心标志性事件。越南为何重回 “一人” 时代？【EP117】",
+      "type": "episode",
+      "route": "episodes/EP117",
+      "summary": "越南政坛的最新变化，被放大成整个东南亚格局变化的信号。苏林一肩挑不是越南内部小事。它是东南亚正在变成新“巴尔干火药桶”的标志性事件。越南变局的旁边，还有美国拆灰色贸易链和东盟站位失衡。加上越南从集体领导回到强人时代，这个地区未来的风险会明显上升。",
       "status": "curated",
       "degree": 11
     },
@@ -1654,28 +1698,6 @@
       "degree": 11
     },
     {
-      "id": "episode:EP195",
-      "key": "EP195",
-      "label": "EP195",
-      "fullLabel": "EP195 · 竹知了“不能提”的是华删派与岳不群的终极野心！",
-      "type": "episode",
-      "route": "episodes/EP195",
-      "summary": "竹知了这件事很多人看不懂。几毛钱的竹玩具，摇起来那声哇哇被配上发布会画面，视频成片被投诉下架，热度反而更高。好好的市场不抢，非要去告玩梗的人，图的是什么。拿性价比和市场份额这套尺子量华山派，永远量不出结果，它玩的从一开始就不是普通的商业游戏。先画圈子，界限划得越清楚越好，选它的人和还在看性价比的人不是一类。再故意定高价、故意特立独行，看不懂的人自己就走。最里面一层是登顶。左冷禅要的是五岳联盟的盟主，还在江湖这个游戏里玩。岳不群要的是五派合一，从此没人能跟他讨价还价，也没人能随便调侃他。",
-      "status": "curated",
-      "degree": 11
-    },
-    {
-      "id": "episode:EP200",
-      "key": "EP200",
-      "label": "EP200",
-      "fullLabel": "EP200 · 楼市新政再抄底？放弃买房的执念吧！这不是周期，是时代的结束",
-      "type": "episode",
-      "route": "episodes/EP200",
-      "summary": "北方那座最大的城市又出楼市新政，五环以外全面放松，五环以内交满一年社保就能买。同样的松绑上海、广州、深圳早就落地过，市场并没有热起来。被搅活的是地方政府手里的流动性。当年是大水漫灌，直接往需求端砸钱。这一轮只是把捆了好几年的绳子解开一根，解除限制和新增刺激不是一个量级。撑起过去四十年普涨的那几个条件，今天一个都不成立。进城的人买完了，杠杆加不动了，房子不缺了，身份也买不到了，塌下去就不会再回来。中产最大的问题出在心态上，认定上涨是常态、下跌是插曲，于是拿着旧逻辑一次次上车。",
-      "status": "curated",
-      "degree": 11
-    },
-    {
       "id": "concept:refuge-premium",
       "key": "refuge-premium",
       "label": "避险溢价",
@@ -1683,6 +1705,17 @@
       "type": "concept",
       "route": "concepts/refuge-premium",
       "summary": "动荡时期，稳定、守规则、能承接资金和人才的节点会获得额外溢价。",
+      "status": null,
+      "degree": 10
+    },
+    {
+      "id": "concept:standard-labor-replacement",
+      "key": "standard-labor-replacement",
+      "label": "标准劳动力替代",
+      "fullLabel": "标准劳动力替代",
+      "type": "concept",
+      "route": "concepts/standard-labor-replacement",
+      "summary": "自动化最先替代可重复、可规训、可量化的标准岗位，而这些岗位往往属于普通人。",
       "status": null,
       "degree": 10
     },
@@ -1797,17 +1830,6 @@
       "degree": 10
     },
     {
-      "id": "episode:EP117",
-      "key": "EP117",
-      "label": "EP117",
-      "fullLabel": "EP117 · 东南亚，一个新的巴尔干火药桶已经成型，越南政坛惊天变局大约就是核心标志性事件。越南为何重回 “一人” 时代？【EP117】",
-      "type": "episode",
-      "route": "episodes/EP117",
-      "summary": "越南政坛的最新变化，被放大成整个东南亚格局变化的信号。苏林一肩挑不是越南内部小事。它是东南亚正在变成新“巴尔干火药桶”的标志性事件。越南变局的旁边，还有美国拆灰色贸易链和东盟站位失衡。加上越南从集体领导回到强人时代，这个地区未来的风险会明显上升。",
-      "status": "curated",
-      "degree": 10
-    },
-    {
       "id": "episode:EP118",
       "key": "EP118",
       "label": "EP118",
@@ -1874,13 +1896,13 @@
       "degree": 10
     },
     {
-      "id": "concept:standard-labor-replacement",
-      "key": "standard-labor-replacement",
-      "label": "标准劳动力替代",
-      "fullLabel": "标准劳动力替代",
+      "id": "concept:jurisdiction-arbitrage",
+      "key": "jurisdiction-arbitrage",
+      "label": "法域套利",
+      "fullLabel": "法域套利",
       "type": "concept",
-      "route": "concepts/standard-labor-replacement",
-      "summary": "自动化最先替代可重复、可规训、可量化的标准岗位，而这些岗位往往属于普通人。",
+      "route": "concepts/jurisdiction-arbitrage",
+      "summary": "企业通过选择更有利法域，获取融资、估值、合规和退出上的制度差价。",
       "status": null,
       "degree": 9
     },
@@ -1903,6 +1925,17 @@
       "type": "concept",
       "route": "concepts/state-share-time-bomb",
       "summary": "早年未理顺的国资份额，在企业做大和创始人退场后会变成难以拆除的治理炸弹。",
+      "status": null,
+      "degree": 9
+    },
+    {
+      "id": "concept:phantom-growth",
+      "key": "phantom-growth",
+      "label": "幻象增长",
+      "fullLabel": "幻象增长",
+      "type": "concept",
+      "route": "concepts/phantom-growth",
+      "summary": "系统通过报表、交易、融资和场面把增长做出来，但真实产业和真实利润并没有同步长出来。",
       "status": null,
       "degree": 9
     },
@@ -2259,17 +2292,6 @@
       "degree": 8
     },
     {
-      "id": "concept:jurisdiction-arbitrage",
-      "key": "jurisdiction-arbitrage",
-      "label": "法域套利",
-      "fullLabel": "法域套利",
-      "type": "concept",
-      "route": "concepts/jurisdiction-arbitrage",
-      "summary": "企业通过选择更有利法域，获取融资、估值、合规和退出上的制度差价。",
-      "status": null,
-      "degree": 8
-    },
-    {
       "id": "model:distributed-innovation",
       "key": "distributed-innovation",
       "label": "分布式创新",
@@ -2277,17 +2299,6 @@
       "type": "model",
       "route": "models/distributed-innovation",
       "summary": "分布式创新强调多中心试错、失败吸收和真实反馈比单一大计划更能产生韧性。",
-      "status": null,
-      "degree": 8
-    },
-    {
-      "id": "concept:phantom-growth",
-      "key": "phantom-growth",
-      "label": "幻象增长",
-      "fullLabel": "幻象增长",
-      "type": "concept",
-      "route": "concepts/phantom-growth",
-      "summary": "系统通过报表、交易、融资和场面把增长做出来，但真实产业和真实利润并没有同步长出来。",
       "status": null,
       "degree": 8
     },
@@ -2486,6 +2497,17 @@
       "type": "model",
       "route": "models/distribution-bias",
       "summary": "系统会优先保护更强势、更有组织和更能讲故事的环节，而把成本和压力慢慢压向更弱的一端。",
+      "status": null,
+      "degree": 8
+    },
+    {
+      "id": "theme:ai-bubble-and-compute-demand",
+      "key": "ai-bubble-and-compute-demand",
+      "label": "AI泡沫与算力需求制造",
+      "fullLabel": "AI泡沫与算力需求制造",
+      "type": "theme",
+      "route": "themes/ai-bubble-and-compute-demand",
+      "summary": "讨论 AI 热潮如何被资本、工具和基础设施共同推高，又如何反过来制造新的算力消费需求。",
       "status": null,
       "degree": 8
     },
@@ -2985,17 +3007,6 @@
       "degree": 7
     },
     {
-      "id": "theme:ai-bubble-and-compute-demand",
-      "key": "ai-bubble-and-compute-demand",
-      "label": "AI泡沫与算力需求制造",
-      "fullLabel": "AI泡沫与算力需求制造",
-      "type": "theme",
-      "route": "themes/ai-bubble-and-compute-demand",
-      "summary": "讨论 AI 热潮如何被资本、工具和基础设施共同推高，又如何反过来制造新的算力消费需求。",
-      "status": null,
-      "degree": 7
-    },
-    {
       "id": "episode:EP003",
       "key": "EP003",
       "label": "EP003",
@@ -3388,6 +3399,17 @@
       "type": "concept",
       "route": "concepts/shadow-fleet",
       "summary": "影子舰队是绕开西方保险、认证、定位和船东透明规则的平行航运网络。",
+      "status": null,
+      "degree": 6
+    },
+    {
+      "id": "concept:liability-firewall",
+      "key": "liability-firewall",
+      "label": "责任隔离墙",
+      "fullLabel": "责任隔离墙",
+      "type": "concept",
+      "route": "concepts/liability-firewall",
+      "summary": "强势方通过不持股、不担保、不当协议主体，把债务、对赌和经营风险全部隔在墙外，自己片叶不沾身。",
       "status": null,
       "degree": 6
     },
@@ -3909,17 +3931,6 @@
       "degree": 5
     },
     {
-      "id": "concept:liability-firewall",
-      "key": "liability-firewall",
-      "label": "责任隔离墙",
-      "fullLabel": "责任隔离墙",
-      "type": "concept",
-      "route": "concepts/liability-firewall",
-      "summary": "强势方通过不持股、不担保、不当协议主体，把债务、对赌和经营风险全部隔在墙外，自己片叶不沾身。",
-      "status": null,
-      "degree": 5
-    },
-    {
       "id": "concept:wartime-oil-stockpiling",
       "key": "wartime-oil-stockpiling",
       "label": "战备储油",
@@ -4162,6 +4173,17 @@
       "degree": 5
     },
     {
+      "id": "episode:EP113",
+      "key": "EP113",
+      "label": "EP113",
+      "fullLabel": "EP113 · 阿尔忒弥斯2号升空：历史似在重演！美苏争霸里，大约写着中美太空竞赛的结局。【EP113】",
+      "type": "episode",
+      "route": "episodes/EP113",
+      "summary": "阿尔忒弥斯 2 号送 4 名宇航员绕月 10 天，色调复古像阿波罗。美国走 NASA 加 SpaceX 军民商双轮驱动。像能解体的火车头，遇悬崖可以各自带技术撤离。苏联举国体制起步快，火车头却坚硬不可控。美国建在个人喜爱和利益驱动上，苏联建在集体意志和螺丝钉服从上。苏联曾为庆典强发问题航天器，今天东方大国巨型火箭也失败。可怕的不是失败，是能动性缺失。叠加三分之二魔咒，这轮竞赛结局或许早已写好。",
+      "status": "curated",
+      "degree": 5
+    },
+    {
       "id": "episode:EP119",
       "key": "EP119",
       "label": "EP119",
@@ -4393,6 +4415,17 @@
       "degree": 4
     },
     {
+      "id": "model:follower-advantage-collapse",
+      "key": "follower-advantage-collapse",
+      "label": "跟随者失效",
+      "fullLabel": "跟随者失效",
+      "type": "model",
+      "route": "models/follower-advantage-collapse",
+      "summary": "增量时代跟着别人走最划算，进入存量博弈之后，同一批跟随者从红利分享者变成成本承担者。",
+      "status": null,
+      "degree": 4
+    },
+    {
       "id": "theme:public-space-and-civic-maturity",
       "key": "public-space-and-civic-maturity",
       "label": "公共空间与公民成熟",
@@ -4558,6 +4591,17 @@
       "degree": 4
     },
     {
+      "id": "concept:production-risk-outsourcing",
+      "key": "production-risk-outsourcing",
+      "label": "生产端风险外包",
+      "fullLabel": "生产端风险外包",
+      "type": "concept",
+      "route": "concepts/production-risk-outsourcing",
+      "summary": "平台和中间层把库存、投流、合规和现金流风险持续压给生产端。",
+      "status": null,
+      "degree": 4
+    },
+    {
       "id": "concept:sample-production-gap",
       "key": "sample-production-gap",
       "label": "送检量产分裂",
@@ -4712,6 +4756,17 @@
       "degree": 4
     },
     {
+      "id": "concept:chosen-homeland",
+      "key": "chosen-homeland",
+      "label": "自选故乡",
+      "fullLabel": "自选故乡",
+      "type": "concept",
+      "route": "concepts/chosen-homeland",
+      "summary": "故乡不必只由血缘和祖籍决定，也可以由长期生活、责任承担和价值创造重新选择。",
+      "status": null,
+      "degree": 4
+    },
+    {
       "id": "episode:EP010",
       "key": "EP010",
       "label": "EP010",
@@ -4818,17 +4873,6 @@
       "type": "episode",
       "route": "episodes/EP110",
       "summary": "把“酱板鸭”热梗拆成一套完整的传播工业链。先是社交货币、开放式模板、AI 降低创作门槛。再叠加平台的 AB 测试和公域推流加权。最终一个本来高度偶然的梗，被做成看似“全民自发”的爆发事件。实则高度依赖平台筛选和概率测试。",
-      "status": "curated",
-      "degree": 4
-    },
-    {
-      "id": "episode:EP113",
-      "key": "EP113",
-      "label": "EP113",
-      "fullLabel": "EP113 · 阿尔忒弥斯2号升空：历史似在重演！美苏争霸里，大约写着中美太空竞赛的结局。【EP113】",
-      "type": "episode",
-      "route": "episodes/EP113",
-      "summary": "阿尔忒弥斯 2 号送 4 名宇航员绕月 10 天，色调复古像阿波罗。美国走 NASA 加 SpaceX 军民商双轮驱动。像能解体的火车头，遇悬崖可以各自带技术撤离。苏联举国体制起步快，火车头却坚硬不可控。美国建在个人喜爱和利益驱动上，苏联建在集体意志和螺丝钉服从上。苏联曾为庆典强发问题航天器，今天东方大国巨型火箭也失败。可怕的不是失败，是能动性缺失。叠加三分之二魔咒，这轮竞赛结局或许早已写好。",
       "status": "curated",
       "degree": 4
     },
@@ -4983,17 +5027,6 @@
       "type": "concept",
       "route": "concepts/welfare-ratchet",
       "summary": "补贴和福利只能加不能减：经济做好选民不加分，砍福利一定下台，政客被锁进透支未来的短期维稳。",
-      "status": null,
-      "degree": 3
-    },
-    {
-      "id": "model:follower-advantage-collapse",
-      "key": "follower-advantage-collapse",
-      "label": "跟随者失效",
-      "fullLabel": "跟随者失效",
-      "type": "model",
-      "route": "models/follower-advantage-collapse",
-      "summary": "增量时代跟着别人走最划算，进入存量博弈之后，同一批跟随者从红利分享者变成成本承担者。",
       "status": null,
       "degree": 3
     },
@@ -5306,6 +5339,17 @@
       "degree": 3
     },
     {
+      "id": "concept:three-layer-leverage",
+      "key": "three-layer-leverage",
+      "label": "三层杠杆",
+      "fullLabel": "三层杠杆",
+      "type": "concept",
+      "route": "concepts/three-layer-leverage",
+      "summary": "居民、企业和地方政府同时用未来现金流为当下扩张融资，风险会从单点违约升级成系统踩踏。",
+      "status": null,
+      "degree": 3
+    },
+    {
       "id": "theme:bounded-social-experimentation",
       "key": "bounded-social-experimentation",
       "label": "社会实验与制度弹性",
@@ -5317,13 +5361,13 @@
       "degree": 3
     },
     {
-      "id": "concept:production-risk-outsourcing",
-      "key": "production-risk-outsourcing",
-      "label": "生产端风险外包",
-      "fullLabel": "生产端风险外包",
+      "id": "concept:investment-timing-gap",
+      "key": "investment-timing-gap",
+      "label": "投入兑现时间差",
+      "fullLabel": "投入兑现时间差",
       "type": "concept",
-      "route": "concepts/production-risk-outsourcing",
-      "summary": "平台和中间层把库存、投流、合规和现金流风险持续压给生产端。",
+      "route": "concepts/investment-timing-gap",
+      "summary": "资本和基础设施先投入，真实应用价值后兑现，中间的时间差会制造估值、现金流和耐心风险。",
       "status": null,
       "degree": 3
     },
@@ -5478,17 +5522,6 @@
       "type": "concept",
       "route": "concepts/attention-trading",
       "summary": "创作者把观众的焦虑、兴奋和参与感换成流量、带货、课程或影响力收益。",
-      "status": null,
-      "degree": 3
-    },
-    {
-      "id": "concept:chosen-homeland",
-      "key": "chosen-homeland",
-      "label": "自选故乡",
-      "fullLabel": "自选故乡",
-      "type": "concept",
-      "route": "concepts/chosen-homeland",
-      "summary": "故乡不必只由血缘和祖籍决定，也可以由长期生活、责任承担和价值创造重新选择。",
       "status": null,
       "degree": 3
     },
@@ -6043,17 +6076,6 @@
       "degree": 2
     },
     {
-      "id": "concept:three-layer-leverage",
-      "key": "three-layer-leverage",
-      "label": "三层杠杆",
-      "fullLabel": "三层杠杆",
-      "type": "concept",
-      "route": "concepts/three-layer-leverage",
-      "summary": "居民、企业和地方政府同时用未来现金流为当下扩张融资，风险会从单点违约升级成系统踩踏。",
-      "status": null,
-      "degree": 2
-    },
-    {
       "id": "concept:screening-sovereignty",
       "key": "screening-sovereignty",
       "label": "筛查主权",
@@ -6094,17 +6116,6 @@
       "type": "concept",
       "route": "concepts/authoritarian-regression",
       "summary": "一个国家在危机压力下重新启用旧威权体制的组织方式，例如让军队重返行政与商业体系。",
-      "status": null,
-      "degree": 2
-    },
-    {
-      "id": "concept:investment-timing-gap",
-      "key": "investment-timing-gap",
-      "label": "投入兑现时间差",
-      "fullLabel": "投入兑现时间差",
-      "type": "concept",
-      "route": "concepts/investment-timing-gap",
-      "summary": "资本和基础设施先投入，真实应用价值后兑现，中间的时间差会制造估值、现金流和耐心风险。",
       "status": null,
       "degree": 2
     },
@@ -20503,6 +20514,181 @@
     {
       "source": "live:LIVE032",
       "target": "theme:human-value-and-state-credit",
+      "kind": "live-theme"
+    },
+    {
+      "source": "live:LIVE033",
+      "target": "episode:EP117",
+      "kind": "live-episode"
+    },
+    {
+      "source": "live:LIVE033",
+      "target": "episode:EP153",
+      "kind": "live-episode"
+    },
+    {
+      "source": "live:LIVE033",
+      "target": "episode:EP192",
+      "kind": "live-episode"
+    },
+    {
+      "source": "live:LIVE033",
+      "target": "episode:EP131",
+      "kind": "live-episode"
+    },
+    {
+      "source": "live:LIVE033",
+      "target": "episode:EP169",
+      "kind": "live-episode"
+    },
+    {
+      "source": "live:LIVE033",
+      "target": "episode:EP170",
+      "kind": "live-episode"
+    },
+    {
+      "source": "live:LIVE033",
+      "target": "episode:EP113",
+      "kind": "live-episode"
+    },
+    {
+      "source": "live:LIVE033",
+      "target": "episode:EP156",
+      "kind": "live-episode"
+    },
+    {
+      "source": "live:LIVE033",
+      "target": "episode:EP187",
+      "kind": "live-episode"
+    },
+    {
+      "source": "live:LIVE033",
+      "target": "episode:EP195",
+      "kind": "live-episode"
+    },
+    {
+      "source": "live:LIVE033",
+      "target": "episode:EP126",
+      "kind": "live-episode"
+    },
+    {
+      "source": "live:LIVE033",
+      "target": "episode:EP136",
+      "kind": "live-episode"
+    },
+    {
+      "source": "live:LIVE033",
+      "target": "episode:EP181",
+      "kind": "live-episode"
+    },
+    {
+      "source": "live:LIVE033",
+      "target": "episode:EP200",
+      "kind": "live-episode"
+    },
+    {
+      "source": "live:LIVE033",
+      "target": "concept:chokepoint-leverage",
+      "kind": "live-concept"
+    },
+    {
+      "source": "live:LIVE033",
+      "target": "concept:gray-oil-network",
+      "kind": "live-concept"
+    },
+    {
+      "source": "live:LIVE033",
+      "target": "concept:sanction-containment",
+      "kind": "live-concept"
+    },
+    {
+      "source": "live:LIVE033",
+      "target": "concept:three-layer-leverage",
+      "kind": "live-concept"
+    },
+    {
+      "source": "live:LIVE033",
+      "target": "concept:liability-firewall",
+      "kind": "live-concept"
+    },
+    {
+      "source": "live:LIVE033",
+      "target": "concept:phantom-growth",
+      "kind": "live-concept"
+    },
+    {
+      "source": "live:LIVE033",
+      "target": "concept:hidden-debt",
+      "kind": "live-concept"
+    },
+    {
+      "source": "live:LIVE033",
+      "target": "concept:production-risk-outsourcing",
+      "kind": "live-concept"
+    },
+    {
+      "source": "live:LIVE033",
+      "target": "concept:investment-timing-gap",
+      "kind": "live-concept"
+    },
+    {
+      "source": "live:LIVE033",
+      "target": "concept:jurisdiction-arbitrage",
+      "kind": "live-concept"
+    },
+    {
+      "source": "live:LIVE033",
+      "target": "concept:standard-labor-replacement",
+      "kind": "live-concept"
+    },
+    {
+      "source": "live:LIVE033",
+      "target": "concept:chosen-homeland",
+      "kind": "live-concept"
+    },
+    {
+      "source": "live:LIVE033",
+      "target": "model:black-box-assetization",
+      "kind": "live-model"
+    },
+    {
+      "source": "live:LIVE033",
+      "target": "model:risk-transfer-chain",
+      "kind": "live-model"
+    },
+    {
+      "source": "live:LIVE033",
+      "target": "model:follower-advantage-collapse",
+      "kind": "live-model"
+    },
+    {
+      "source": "live:LIVE033",
+      "target": "theme:ai-bubble-and-compute-demand",
+      "kind": "live-theme"
+    },
+    {
+      "source": "live:LIVE033",
+      "target": "theme:dollar-system-and-gray-trade",
+      "kind": "live-theme"
+    },
+    {
+      "source": "live:LIVE033",
+      "target": "theme:southeast-asia-fragmentation-and-bloc-competition",
+      "kind": "live-theme"
+    },
+    {
+      "source": "live:LIVE033",
+      "target": "theme:local-government-financialization",
+      "kind": "live-theme"
+    },
+    {
+      "source": "live:LIVE033",
+      "target": "theme:local-fiscal-stress-and-hidden-debt",
+      "kind": "live-theme"
+    },
+    {
+      "source": "live:LIVE033",
+      "target": "theme:middle-class-descent-and-stratification",
       "kind": "live-theme"
     },
     {
