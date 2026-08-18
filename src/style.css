@@ -6858,3 +6858,41 @@ a.live-inline-link:hover {
   color: rgba(118, 96, 68, 0.66);
   flex: 0 0 auto;
 }
+
+/* 如何定义和提问：思路一层，原话一层，底色跟马司库一致 */
+.inquiry-asks {
+  background: rgba(156, 59, 50, 0.12);
+  border-radius: 4px;
+  padding: 10px 14px;
+  font-size: 14.5px;
+  line-height: 1.9;
+  color: var(--ink);
+}
+
+.inquiry-asks strong {
+  color: #7a2a24;
+  font-weight: 600;
+}
+
+.inquiry-ask-list li {
+  margin-bottom: 0.85rem;
+}
+
+.inquiry-ask-list li:last-child {
+  margin-bottom: 0;
+}
+
+.inquiry-lead,
+.inquiry-q {
+  display: block;
+}
+
+.inquiry-lead {
+  color: var(--muted);
+  margin-bottom: 0.2rem;
+}
+
+.inquiry-q {
+  color: var(--ink);
+  font-weight: 600;
+}
