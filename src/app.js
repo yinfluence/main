@@ -27,6 +27,16 @@ const HOME_PLATFORM_LINKS = [
 const WEBSITE_LOG_ENTRIES = [
   {
     date: '2026-08-18',
+    title: '下线「如何定义和提问」板块与两个小游戏',
+    items: [
+      '「如何定义和提问」整块撤掉。EP199、EP200、EP201 三期的 inquiry 数据、详情页的渲染函数和七组样式全部删除，站点数据重建之后没有残留。方法文档 sop/10 和 sop/10b 留着，板块的设计没有问题，撤掉的原因是产出质量。',
+      '两个小游戏一并删除。地产大亨的源码和产物在 src/simulators 与 docs/simulators，伊朗维稳地缘推演在 docs/game。车圈笑傲江湖地图保留，它在 docs/experiments 下，正文里有内链指过去。图谱页用的 d3 力导向模拟跟游戏无关，没有动。',
+      'EP199 和 EP201 两期正文做了一轮去 AI 味。EP199 五条核心观点的方向词此前整批丢失，详情页标题左边一直空着，这次全部补回。清掉的写法里有自造小对子和格言式收尾，还有一处把推断写成了事实。',
+      '去 AI 味脚本补了三条规则。原来只匹配「不是…，是」这一种形式，介词变体、倒装和反而式全部漏网。补完之后回扫这两期，又查出四处。'
+    ]
+  },
+  {
+    date: '2026-08-18',
     title: '新增 EP201，泰航拒载不是歧视，是有人先破了航空安保的关',
     items: [
       'EP201 上线，入口是泰国航空 TG674 从曼谷飞北京，二十二名跟拍艺人的粉丝和代拍先闯贵宾室、再冲廊桥，机组临时关闭舱门，泰航整批拒载。判断是三件性质不同的事被裹成一团，拒载依据的是有人先破了航空安保的最后一道核检，安保人员那个拉眼角的手势是个人职业素养不合格，饭圈那条灰色链条才是节目要拆的第三层。B 站是普通视频不是充电专属，YouTube 同日已发布，覆盖表和节目 JSON 两条链接都齐。',
@@ -6744,8 +6754,6 @@ function renderEpisodeDetail(id) {
         ${renderViewpoints(episode.viewpoints, episode.viewpointsIntro)}
       </section>
 
-      ${renderInquiry(episode.inquiry)}
-
       ${(episode.unsaid || []).length ? `
         <section class="detail-section">
           <h2>画龙点睛</h2>
@@ -7170,30 +7178,6 @@ function renderViewpoints(viewpoints = [], intro = '') {
       </details>
     `)
     .join('');
-}
-
-// tag 加 title 连起来读成一句判断，think 是整段想法，问句一律是字幕原话。见 sop/10。
-function renderInquiry(inquiry) {
-  const rows = inquiry?.questions || [];
-  if (!rows.length) return '';
-  const core = inquiry.core
-    ? `<p class="accordion-intro">${renderLinkedEpisodeText(inquiry.core)}</p>`
-    : '';
-  return `
-      <section class="detail-section">
-        <h2>如何定义和提问</h2>
-        ${core}
-        ${rows.map((row) => `
-          <details class="accordion-item">
-            <summary class="accordion-summary">${row.tag ? `<span class="viewpoint-angle">${escapeHtml(row.tag)}</span>` : ''}${escapeHtml(row.title)}</summary>
-            <div class="accordion-content">
-              <p>${renderLinkedEpisodeText(row.think)}</p>
-              ${row.thinking ? `<div class="inquiry-asks"><strong>如何思考：</strong>${renderLinkedEpisodeText(row.thinking)}</div>` : ''}
-            </div>
-          </details>
-        `).join('')}
-      </section>
-  `;
 }
 
 function renderMechanismChain(value, renderText = renderLinkedEpisodeText, variant = '') {
