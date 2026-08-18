@@ -26,6 +26,20 @@ const HOME_PLATFORM_LINKS = [
 ];
 const WEBSITE_LOG_ENTRIES = [
   {
+    date: '2026-08-18',
+    title: '新增 EP201，泰航拒载不是歧视，是有人先破了航空安保的关',
+    items: [
+      'EP201 上线，入口是泰国航空 TG674 从曼谷飞北京，二十二名跟拍艺人的粉丝和代拍先闯贵宾室、再冲廊桥，机组临时关闭舱门，泰航整批拒载。判断是三件性质不同的事被裹成一团，拒载依据的是有人先破了航空安保的最后一道核检，安保人员那个拉眼角的手势是个人职业素养不合格，饭圈那条灰色链条才是节目要拆的第三层。B 站是普通视频不是充电专属，YouTube 同日已发布，覆盖表和节目 JSON 两条链接都齐。',
+      '五条核心观点分别落在承运权利、安保防线、定性尺度、追责边界和人气生产。最硬的两处，一处是关卡能靠人多冲过去就不算关卡，粉丝算的是不就拍张照、安保算的是万一，两套账根本不通用；另一处是挤爆机场的人气本来就是公司自己排出来的，代拍在末端倒卖行程和照片，追的从来不是明星，是能卖出价的那张图。',
+      '字幕校正了一批同音错字。太行转成泰航、巨载和剧载转成拒载、登基转成登机、机祖和基鲁转成机组、跟盘转成跟拍、维鲁艺人转成围堵艺人、首饰转成手势、歧视性动物转成歧视性动作、拳击旅客转成全机旅客、竞调转成尽调、让子弹先分一会儿转成让子弹先飞一会儿。饭圈那两个被转成姬圈代掰和几圈太派的词，按公认写法收成代拍和私生饭。',
+      '附件十七那段做了事实核对。节目说国际民航公约附件十七明确规定航空公司有权拒绝运输潜在威胁人员，按公开条文，附件十七给的是扰乱行为旅客的定义和各国应建立的安保标准，具体的拒载权写在各家航司的运输总条件和当地法律里。正文按分开的口径写，讨论边界里说明了节目把两者合并表述这件事。泰国航空和素万那普机场的基础事实核到维基百科，两个词条都配了来源。',
+      '新建两个概念。人气制造讲公开场面上的热度不是自己聚起来的，是运营方放风组织出来，再当成实力证据卖给品牌方，制造一场拥挤比买同等曝光便宜得多。情绪抢跑讲完整事实还没出来情绪就完成了站队，问题不在结论错了，在下结论的时点被提前，掐断的片段永远比完整监控传得快。',
+      '集体行动阈值、巨婴式维权、国家身份绑架和血写的规则四个既有概念回填了本期，模型全部复用，注意力商业闭环、叙事工具化、合规成本套利和风险转移链条各接一段。公共空间与公民成熟、法治边界与社会信任、影视工业与流量逻辑三个主题也回填了本期。',
+      '新建八个关键词词条，分别是泰国航空、素万那普机场、航空安保、饭圈、代拍、私生饭、艺人经纪公司和拉眼角，其中泰国航空和素万那普机场配了可核对的外部来源。民族主义、公序良俗、流量密码、法不责众四个既有词条补了本期的节目关联和相关词，十二个标签全部命中关键词库。',
+      '延展串了八期旧节目。EP127 那位在亚航客舱喊我是 China 的旅客和 EP199 的赶海团搬出古老传统，跟这次先破规矩再抬身份是同一套动作；EP143 的迪士尼父亲和 EP163 的鹅腿阿姨都把个人情绪直接换算成了正当理由；EP109 的粉底液将军和 EP172 的抓特务讲内容怎样让位于流量，这次热度不是拍出来的是挤出来的；EP146 里央视砍价封神把国家认同换成广告溢价，和这次一个手势被抬成一个国家的态度是同一个动作的两种用法；EP186 用三角内衣厂大火追出消防规则的来历，航空安保那套核检同样不是凭空写出来的。',
+    ]
+  },
+  {
     date: '2026-08-17',
     title: '新增 LIVE033，吉隆坡的酒桌不聊石油改聊算力卡',
     items: [
@@ -6730,6 +6744,8 @@ function renderEpisodeDetail(id) {
         ${renderViewpoints(episode.viewpoints, episode.viewpointsIntro)}
       </section>
 
+      ${renderInquiry(episode.inquiry)}
+
       ${(episode.unsaid || []).length ? `
         <section class="detail-section">
           <h2>画龙点睛</h2>
@@ -7154,6 +7170,30 @@ function renderViewpoints(viewpoints = [], intro = '') {
       </details>
     `)
     .join('');
+}
+
+// tag 加 title 连起来读成一句判断，think 是整段想法，问句一律是字幕原话。见 sop/10。
+function renderInquiry(inquiry) {
+  const rows = inquiry?.questions || [];
+  if (!rows.length) return '';
+  const core = inquiry.core
+    ? `<p class="accordion-intro">${renderLinkedEpisodeText(inquiry.core)}</p>`
+    : '';
+  return `
+      <section class="detail-section">
+        <h2>如何定义和提问</h2>
+        ${core}
+        ${rows.map((row) => `
+          <details class="accordion-item">
+            <summary class="accordion-summary">${row.tag ? `<span class="viewpoint-angle">${escapeHtml(row.tag)}</span>` : ''}${escapeHtml(row.title)}</summary>
+            <div class="accordion-content">
+              <p>${renderLinkedEpisodeText(row.think)}</p>
+              ${row.thinking ? `<div class="inquiry-asks"><strong>如何思考：</strong>${renderLinkedEpisodeText(row.thinking)}</div>` : ''}
+            </div>
+          </details>
+        `).join('')}
+      </section>
+  `;
 }
 
 function renderMechanismChain(value, renderText = renderLinkedEpisodeText, variant = '') {

@@ -964,5 +964,15 @@
       "platform": "youtube",
       "url": "https://www.youtube.com/watch?v=Kbml94lJhH8"
     }
+  },
+  "EP201": {
+    "bilibili": {
+      "platform": "bilibili",
+      "url": "https://www.bilibili.com/video/BV1m68g6DEWR/"
+    },
+    "youtube": {
+      "platform": "youtube",
+      "url": "https://www.youtube.com/watch?v=oQNmd54BpCs"
+    }
   }
 }

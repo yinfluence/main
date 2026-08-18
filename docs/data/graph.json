@@ -2,14 +2,14 @@
   "meta": {
     "title": "颖响力知识图谱",
     "subtitle": "节目、概念、模型、人物、主题之间的可视化连接网络",
-    "nodeCount": 695,
-    "linkCount": 2654,
+    "nodeCount": 698,
+    "linkCount": 2667,
     "typeCounts": {
       "model": 82,
       "live": 33,
       "theme": 92,
-      "episode": 200,
-      "concept": 223,
+      "episode": 201,
+      "concept": 225,
       "person": 65
     }
   },
@@ -23,7 +23,7 @@
       "route": "models/risk-transfer-chain",
       "summary": "系统不会立刻吞下风险，而是先沿着银行、企业、票据、供应链和普通人之间不断转手、延后和下沉。",
       "status": null,
-      "degree": 47
+      "degree": 48
     },
     {
       "id": "live:LIVE002",
@@ -499,6 +499,17 @@
       "degree": 22
     },
     {
+      "id": "theme:rule-of-law-boundaries-and-social-trust",
+      "key": "rule-of-law-boundaries-and-social-trust",
+      "label": "法治边界与社会信任",
+      "fullLabel": "法治边界与社会信任",
+      "type": "theme",
+      "route": "themes/rule-of-law-boundaries-and-social-trust",
+      "summary": "关注法律灰区如何影响公众的善意、风险感和彼此信任。",
+      "status": null,
+      "degree": 21
+    },
+    {
       "id": "theme:maritime-chokepoints-and-route-order",
       "key": "maritime-chokepoints-and-route-order",
       "label": "海峡命门与航运秩序",
@@ -517,6 +528,17 @@
       "type": "model",
       "route": "models/path-dependence",
       "summary": "路径依赖解释早期技术和叙事选择一旦成功，就会反过来限制后续转向更优路径。",
+      "status": null,
+      "degree": 21
+    },
+    {
+      "id": "model:narrative-instrumentalization",
+      "key": "narrative-instrumentalization",
+      "label": "叙事工具化模型",
+      "fullLabel": "叙事工具化模型",
+      "type": "model",
+      "route": "models/narrative-instrumentalization",
+      "summary": "叙事工具化模型解释叙事的主要功能从解释现实转向组织情绪和划分阵营。",
       "status": null,
       "degree": 21
     },
@@ -576,17 +598,6 @@
       "degree": 21
     },
     {
-      "id": "theme:rule-of-law-boundaries-and-social-trust",
-      "key": "rule-of-law-boundaries-and-social-trust",
-      "label": "法治边界与社会信任",
-      "fullLabel": "法治边界与社会信任",
-      "type": "theme",
-      "route": "themes/rule-of-law-boundaries-and-social-trust",
-      "summary": "关注法律灰区如何影响公众的善意、风险感和彼此信任。",
-      "status": null,
-      "degree": 20
-    },
-    {
       "id": "person:donald-trump",
       "key": "donald-trump",
       "label": "特朗普",
@@ -594,17 +605,6 @@
       "type": "person",
       "route": "people/donald-trump",
       "summary": "特朗普是美国共和党政治人物、第45任与第47任美国总统，节目借他观察美国战略收缩、成本转嫁和规则重定价。",
-      "status": null,
-      "degree": 20
-    },
-    {
-      "id": "model:narrative-instrumentalization",
-      "key": "narrative-instrumentalization",
-      "label": "叙事工具化模型",
-      "fullLabel": "叙事工具化模型",
-      "type": "model",
-      "route": "models/narrative-instrumentalization",
-      "summary": "叙事工具化模型解释叙事的主要功能从解释现实转向组织情绪和划分阵营。",
       "status": null,
       "degree": 20
     },
@@ -1335,6 +1335,17 @@
       "degree": 13
     },
     {
+      "id": "episode:EP201",
+      "key": "EP201",
+      "label": "EP201",
+      "fullLabel": "EP201 · 泰航拒载22中国人事件深度复盘：粉丝越界、安保失礼与饭圈生态的三层真相",
+      "type": "episode",
+      "route": "episodes/EP201",
+      "summary": "曼谷飞北京的航班上，一位艺人坐头等舱，二十二名买了普通舱票的粉丝和代拍一路跟到贵宾室，又在登机口没验票就挤进廊桥，机组临时关了舱门，泰航最后拒绝这批人登机。混乱里一名安保人员做出拉眼角的动作，视频传上网，舆论立刻转向种族歧视。两件事被搅成一件，拒载的依据是有人先破了航空安保的最后一道关，安保的手势是个人职业素养不合格，各自追责就够了。再往下扒，粉丝为什么次次都能拿到艺人的航班信息，答案在经纪公司、机场内部人和代拍这条跑了很多年的灰色链条上。",
+      "status": "curated",
+      "degree": 13
+    },
+    {
       "id": "model:identity-stratification",
       "key": "identity-stratification",
       "label": "身份型分层",
@@ -1506,7 +1517,7 @@
       "fullLabel": "EP200 · 楼市新政再抄底？放弃买房的执念吧！这不是周期，是时代的结束",
       "type": "episode",
       "route": "episodes/EP200",
-      "summary": "北方那座最大的城市又出楼市新政，五环以外全面放松，五环以内交满一年社保就能买。同样的松绑上海、广州、深圳早就落地过，市场并没有热起来。被搅活的是地方政府手里的流动性。当年是大水漫灌，直接往需求端砸钱。这一轮只是把捆了好几年的绳子解开一根，解除限制和新增刺激不是一个量级。撑起过去四十年普涨的那几个条件，今天一个都不成立。进城的人买完了，杠杆加不动了，房子不缺了，身份也买不到了，塌下去就不会再回来。中产最大的问题出在心态上，认定上涨是常态、下跌是插曲，于是拿着旧逻辑一次次上车。",
+      "summary": "北方那座最大的城市又出楼市新政，五环以外全面放松，五环以内交满一年社保就能买。消息一出，江浙沪那边的朋友已经出手，北方的朋友追着问是不是要触底反弹。同样的松绑上海广州深圳早就落地过，市场并没有热起来，这一轮真正被搅活的是地方政府手里的流动性，门槛降下来是需要有人接着往里填。更要紧的是撑起过去四十年普涨的那几个条件，今天一个都不在，塌下去不会自己长回来。最难的地方在心态，认定上涨是常态、下跌只是插曲，于是一次次上车。",
       "status": "curated",
       "degree": 12
     },
@@ -3711,6 +3722,17 @@
       "degree": 5
     },
     {
+      "id": "theme:public-space-and-civic-maturity",
+      "key": "public-space-and-civic-maturity",
+      "label": "公共空间与公民成熟",
+      "fullLabel": "公共空间与公民成熟",
+      "type": "theme",
+      "route": "themes/public-space-and-civic-maturity",
+      "summary": "讨论个体在公共场景里如何同时拥有权利意识、规则意识、义务感和稳定自尊。",
+      "status": null,
+      "degree": 5
+    },
+    {
       "id": "theme:charity-and-moral-capital",
       "key": "charity-and-moral-capital",
       "label": "公益、善意与商业失灵",
@@ -3729,6 +3751,17 @@
       "type": "theme",
       "route": "themes/homeland-and-civic-belonging",
       "summary": "讨论血缘故乡、文化记忆与现代公民认同之间的边界如何被重新划分。",
+      "status": null,
+      "degree": 5
+    },
+    {
+      "id": "concept:national-identity-hostage",
+      "key": "national-identity-hostage",
+      "label": "国家身份绑架",
+      "fullLabel": "国家身份绑架",
+      "type": "concept",
+      "route": "concepts/national-identity-hostage",
+      "summary": "国家身份绑架指个体把私人冲突抬升为国家受辱，用共同体身份替个人行为兜底。",
       "status": null,
       "degree": 5
     },
@@ -3766,6 +3799,17 @@
       "degree": 5
     },
     {
+      "id": "model:regulatory-cost-arbitrage",
+      "key": "regulatory-cost-arbitrage",
+      "label": "合规成本套利模型",
+      "fullLabel": "合规成本套利模型",
+      "type": "model",
+      "route": "models/regulatory-cost-arbitrage",
+      "summary": "当同一市场存在多条监管路径，低合规成本路径会获得更高试错频率和更强替代能力。",
+      "status": null,
+      "degree": 5
+    },
+    {
       "id": "person:lawrence-wong",
       "key": "lawrence-wong",
       "label": "黄循财",
@@ -3795,6 +3839,17 @@
       "type": "model",
       "route": "models/wall-and-gray-trade-crackdown",
       "summary": "建墙与打灰模型把川普的全球策略概括为两条隐藏逻辑：建墙分清敌我盟友、打击灰色贸易逼交易回归美元。",
+      "status": null,
+      "degree": 5
+    },
+    {
+      "id": "concept:giant-infant-rights-defense",
+      "key": "giant-infant-rights-defense",
+      "label": "巨婴式维权",
+      "fullLabel": "巨婴式维权",
+      "type": "concept",
+      "route": "concepts/giant-infant-rights-defense",
+      "summary": "巨婴式维权指个体把个人便利和情绪包装成权利诉求，却拒绝承担规则、义务和公共后果。",
       "status": null,
       "degree": 5
     },
@@ -3931,6 +3986,17 @@
       "degree": 5
     },
     {
+      "id": "theme:film-industry-and-traffic-logic",
+      "key": "film-industry-and-traffic-logic",
+      "label": "影视工业与流量逻辑",
+      "fullLabel": "影视工业与流量逻辑",
+      "type": "theme",
+      "route": "themes/film-industry-and-traffic-logic",
+      "summary": "关注影视生产如何越来越服从人设、粉丝和宣发流量，而非角色与作品本身。",
+      "status": null,
+      "degree": 5
+    },
+    {
       "id": "concept:wartime-oil-stockpiling",
       "key": "wartime-oil-stockpiling",
       "label": "战备储油",
@@ -3971,6 +4037,17 @@
       "type": "concept",
       "route": "concepts/long-termism",
       "summary": "以几十年甚至百年为尺度做决策，前期为长远格局多花成本、多做规划，而不是被短期利益和政绩驱动。",
+      "status": null,
+      "degree": 5
+    },
+    {
+      "id": "model:attention-commerce-loop",
+      "key": "attention-commerce-loop",
+      "label": "注意力商业闭环",
+      "fullLabel": "注意力商业闭环",
+      "type": "model",
+      "route": "models/attention-commerce-loop",
+      "summary": "注意力商业闭环解释内容如何先制造注意力，再把注意力结算为品牌、交易或平台收益。",
       "status": null,
       "degree": 5
     },
@@ -4426,17 +4503,6 @@
       "degree": 4
     },
     {
-      "id": "theme:public-space-and-civic-maturity",
-      "key": "public-space-and-civic-maturity",
-      "label": "公共空间与公民成熟",
-      "fullLabel": "公共空间与公民成熟",
-      "type": "theme",
-      "route": "themes/public-space-and-civic-maturity",
-      "summary": "讨论个体在公共场景里如何同时拥有权利意识、规则意识、义务感和稳定自尊。",
-      "status": null,
-      "degree": 4
-    },
-    {
       "id": "concept:relationship-insurance",
       "key": "relationship-insurance",
       "label": "关系保险",
@@ -4444,28 +4510,6 @@
       "type": "concept",
       "route": "concepts/relationship-insurance",
       "summary": "企业不是靠产品和现金流先保命，而是先靠关系、站队和嵌入地方体系给自己买生存保险。",
-      "status": null,
-      "degree": 4
-    },
-    {
-      "id": "concept:national-identity-hostage",
-      "key": "national-identity-hostage",
-      "label": "国家身份绑架",
-      "fullLabel": "国家身份绑架",
-      "type": "concept",
-      "route": "concepts/national-identity-hostage",
-      "summary": "国家身份绑架指个体把私人冲突抬升为国家受辱，用共同体身份替个人行为兜底。",
-      "status": null,
-      "degree": 4
-    },
-    {
-      "id": "model:regulatory-cost-arbitrage",
-      "key": "regulatory-cost-arbitrage",
-      "label": "合规成本套利模型",
-      "fullLabel": "合规成本套利模型",
-      "type": "model",
-      "route": "models/regulatory-cost-arbitrage",
-      "summary": "当同一市场存在多条监管路径，低合规成本路径会获得更高试错频率和更强替代能力。",
       "status": null,
       "degree": 4
     },
@@ -4488,17 +4532,6 @@
       "type": "person",
       "route": "people/jia-guolong",
       "summary": "贾国龙是西贝餐饮集团创始人、董事长，节目借他观察连锁餐饮的创始人权威、品牌溢价和标准化供给争议。",
-      "status": null,
-      "degree": 4
-    },
-    {
-      "id": "concept:giant-infant-rights-defense",
-      "key": "giant-infant-rights-defense",
-      "label": "巨婴式维权",
-      "fullLabel": "巨婴式维权",
-      "type": "concept",
-      "route": "concepts/giant-infant-rights-defense",
-      "summary": "巨婴式维权指个体把个人便利和情绪包装成权利诉求，却拒绝承担规则、义务和公共后果。",
       "status": null,
       "degree": 4
     },
@@ -4712,17 +4745,6 @@
       "degree": 4
     },
     {
-      "id": "theme:film-industry-and-traffic-logic",
-      "key": "film-industry-and-traffic-logic",
-      "label": "影视工业与流量逻辑",
-      "fullLabel": "影视工业与流量逻辑",
-      "type": "theme",
-      "route": "themes/film-industry-and-traffic-logic",
-      "summary": "关注影视生产如何越来越服从人设、粉丝和宣发流量，而非角色与作品本身。",
-      "status": null,
-      "degree": 4
-    },
-    {
       "id": "concept:institutional-software-transfer",
       "key": "institutional-software-transfer",
       "label": "制度软件移植",
@@ -4730,17 +4752,6 @@
       "type": "concept",
       "route": "concepts/institutional-software-transfer",
       "summary": "把治理体系拆成硬件与软件两层：土地、规划、基建可以整体搬运，管理制度背后的人的意识和行政逻辑却难以跨体制移植。",
-      "status": null,
-      "degree": 4
-    },
-    {
-      "id": "model:attention-commerce-loop",
-      "key": "attention-commerce-loop",
-      "label": "注意力商业闭环",
-      "fullLabel": "注意力商业闭环",
-      "type": "model",
-      "route": "models/attention-commerce-loop",
-      "summary": "注意力商业闭环解释内容如何先制造注意力，再把注意力结算为品牌、交易或平台收益。",
       "status": null,
       "degree": 4
     },
@@ -5449,6 +5460,17 @@
       "degree": 3
     },
     {
+      "id": "concept:blood-written-rules",
+      "key": "blood-written-rules",
+      "label": "血写的规则",
+      "fullLabel": "血写的规则",
+      "type": "concept",
+      "route": "concepts/blood-written-rules",
+      "summary": "习以为常的安全规范不是天生的官僚条文，而是灾难死亡换来的制度沉淀；忘掉来历，红线就会被当成可优化的成本。",
+      "status": null,
+      "degree": 3
+    },
+    {
       "id": "concept:earnings-big-bath",
       "key": "earnings-big-bath",
       "label": "业绩大洗澡",
@@ -5841,6 +5863,17 @@
       "type": "theme",
       "route": "themes/recycling-and-pollution-transfer",
       "summary": "聚焦所谓循环经济如何在补贴和套利驱动下，把风险从台面上的产品转移到看不见的废弃物和弱监管地区。",
+      "status": null,
+      "degree": 2
+    },
+    {
+      "id": "concept:collective-action-threshold",
+      "key": "collective-action-threshold",
+      "label": "集体行动阈值",
+      "fullLabel": "集体行动阈值",
+      "type": "concept",
+      "route": "concepts/collective-action-threshold",
+      "summary": "同一个动作，参与人数越过某个点，性质就从个人行为变成有组织的活动，管理方的反应也随之从劝一句跳到应激处置。",
       "status": null,
       "degree": 2
     },
@@ -6270,17 +6303,6 @@
       "type": "person",
       "route": "people/xu-jiayin",
       "summary": "许家印是中国恒大集团创办人、原董事会主席，节目借他观察地产高杠杆、一言堂治理和财富保全工具被穿透。",
-      "status": null,
-      "degree": 2
-    },
-    {
-      "id": "concept:blood-written-rules",
-      "key": "blood-written-rules",
-      "label": "血写的规则",
-      "fullLabel": "血写的规则",
-      "type": "concept",
-      "route": "concepts/blood-written-rules",
-      "summary": "习以为常的安全规范不是天生的官僚条文，而是灾难死亡换来的制度沉淀；忘掉来历，红线就会被当成可优化的成本。",
       "status": null,
       "degree": 2
     },
@@ -6769,17 +6791,6 @@
       "degree": 1
     },
     {
-      "id": "concept:collective-action-threshold",
-      "key": "collective-action-threshold",
-      "label": "集体行动阈值",
-      "fullLabel": "集体行动阈值",
-      "type": "concept",
-      "route": "concepts/collective-action-threshold",
-      "summary": "同一个动作，参与人数越过某个点，性质就从个人行为变成有组织的活动，管理方的反应也随之从劝一句跳到应激处置。",
-      "status": null,
-      "degree": 1
-    },
-    {
       "id": "concept:skill-mismatch",
       "key": "skill-mismatch",
       "label": "技能错位",
@@ -7143,6 +7154,17 @@
       "degree": 1
     },
     {
+      "id": "concept:emotion-front-running",
+      "key": "emotion-front-running",
+      "label": "情绪抢跑",
+      "fullLabel": "情绪抢跑",
+      "type": "concept",
+      "route": "concepts/emotion-front-running",
+      "summary": "完整事实还没出来，情绪先被点燃、站队先完成，等反转来了，跟着上头的人只剩挨打脸。",
+      "status": null,
+      "degree": 1
+    },
+    {
       "id": "concept:panic-premium",
       "key": "panic-premium",
       "label": "情绪溢价",
@@ -7150,6 +7172,17 @@
       "type": "concept",
       "route": "concepts/panic-premium",
       "summary": "价格被恐慌、跟风和错过焦虑推高时，超出基本面的部分就是情绪溢价。",
+      "status": null,
+      "degree": 1
+    },
+    {
+      "id": "concept:manufactured-popularity",
+      "key": "manufactured-popularity",
+      "label": "人气制造",
+      "fullLabel": "人气制造",
+      "type": "concept",
+      "route": "concepts/manufactured-popularity",
+      "summary": "公开场面上的热度不是自己聚起来的，是运营方放风、组织、安排出来的，做出来之后再当成实力证据卖给品牌方和平台。",
       "status": null,
       "degree": 1
     },
@@ -15449,6 +15482,71 @@
     {
       "source": "episode:EP200",
       "target": "theme:housing-burden-and-income-distribution",
+      "kind": "episode-theme"
+    },
+    {
+      "source": "episode:EP201",
+      "target": "concept:collective-action-threshold",
+      "kind": "episode-concept"
+    },
+    {
+      "source": "episode:EP201",
+      "target": "concept:giant-infant-rights-defense",
+      "kind": "episode-concept"
+    },
+    {
+      "source": "episode:EP201",
+      "target": "concept:national-identity-hostage",
+      "kind": "episode-concept"
+    },
+    {
+      "source": "episode:EP201",
+      "target": "concept:blood-written-rules",
+      "kind": "episode-concept"
+    },
+    {
+      "source": "episode:EP201",
+      "target": "concept:manufactured-popularity",
+      "kind": "episode-concept"
+    },
+    {
+      "source": "episode:EP201",
+      "target": "concept:emotion-front-running",
+      "kind": "episode-concept"
+    },
+    {
+      "source": "episode:EP201",
+      "target": "model:attention-commerce-loop",
+      "kind": "episode-model"
+    },
+    {
+      "source": "episode:EP201",
+      "target": "model:narrative-instrumentalization",
+      "kind": "episode-model"
+    },
+    {
+      "source": "episode:EP201",
+      "target": "model:regulatory-cost-arbitrage",
+      "kind": "episode-model"
+    },
+    {
+      "source": "episode:EP201",
+      "target": "model:risk-transfer-chain",
+      "kind": "episode-model"
+    },
+    {
+      "source": "episode:EP201",
+      "target": "theme:public-space-and-civic-maturity",
+      "kind": "episode-theme"
+    },
+    {
+      "source": "episode:EP201",
+      "target": "theme:rule-of-law-boundaries-and-social-trust",
+      "kind": "episode-theme"
+    },
+    {
+      "source": "episode:EP201",
+      "target": "theme:film-industry-and-traffic-logic",
       "kind": "episode-theme"
     },
     {
