@@ -15,6 +15,7 @@
    - 严格按 `sop/05a` 精修 `content/episodes/EPxxx.json`：`summary`(200–250字)、`topic`(background/conflicts/boundaries/mechanism 150–250字5-6步/extensions 每条80–130字)、`viewpoints`(4–6条，每条body 80–150字)、根 `extensions`(每条30–80字)。
    - `publishedAt` 用 B 站 pubdate（scan 清单里的 `pubdate_iso`）。
    - 抽 `concepts`/`models`（优先复用现有节点，不够再新建）、`people`/`themes`；`tags` 里每个词都要在 `content/keywords/` 有词条，没有就按 `sop/01` 对应 kind 建满字段，不留 stub。
+   - `thinking`（思考与分析）：动笔前先读 `sop/11-思考方式提取.md` 全文，过一遍里面的总纲、立意标准、落地句原料、禁令清单和逐字标尺，然后才许写。格式：引子一句（立读者自己的问题）+ 三段，每段一个「从 X 看 Y」的角度，Y 必须够得上国运、治理、文明、人性的量级，段内三到四层，每段至少一个跨时空对照（历史、他国、公共常识），落地句只用公共经验、不用本期细节，本期内容每段至多留一个影子，段尾收一句对每个人都适用的判断。全文直白判断句，无比喻、无对仗、无口诀式总结、无「他」指作者、不复述节目内容。写完过 sop/11 的验收四问，任何一问不过就重写，不许带病落盘。
    - 双向回填：写进 concepts/models/themes/keywords 的每个节点，把本期 EPxxx 加进其 `episodes` 数组并写 note。
    - `relatedEpisodes`：从命中的节点反查相关期。
 
@@ -27,7 +28,7 @@
 
 6. 网页日志：在 `src/app.js` 的 `WEBSITE_LOG_ENTRIES` 顶部加本期条目（date=今天、title、items 列出本期改了什么：新增/回填了哪些概念词条、会员否、相关节目串联）。
 
-7. 自检：跑 `sop/05b` 的字数自检脚本逐项量，全部落区间；grep 繁体字扫描本期新增文件，发现混入立即转简体；确认 `tags` 数 = 关键词词条命中数。任一不过先修再继续。
+7. 自检：跑 `sop/05b` 的字数自检脚本逐项量，全部落区间；`thinking` 对照 `sop/11` 的验收四问逐问自查（角度讲清了吗、每个角度几层、拔高到通用了吗、总结出道理了吗）；grep 繁体字扫描本期新增文件，发现混入立即转简体；确认 `tags` 数 = 关键词词条命中数。任一不过先修再继续。
 
 8. 构建：`npm run build`，确认 Episodes 数 +1、无报错。
 
