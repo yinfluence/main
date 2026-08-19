@@ -26,6 +26,15 @@ const HOME_PLATFORM_LINKS = [
 ];
 const WEBSITE_LOG_ENTRIES = [
   {
+    date: '2026-08-20',
+    title: '新增思考与分析栏目，EP193 到 EP201 九期上线',
+    items: [
+      '节目详情页新增「思考与分析」，位置在核心观点之后，标题可整块折叠，展开是三四段文字。这一栏不复述节目内容，写的是从这期抽出来的分析角度，每段一个「从 X 看 Y」的角度，Y 要够得上国运或者文明这一级，配跨时空的对照，段尾给一句对每个人都适用的判断。',
+      '首批九期从 EP193 到 EP201。方法和全部判例沉淀在 sop/11-思考方式提取.md，含逐字标尺、禁令清单和自动流程，后续各期照此补齐。',
+      '同日修正 LIVE033 观众问答里被字幕听错的称呼，术语表补了两条同音误转。'
+    ]
+  },
+  {
     date: '2026-08-19',
     title: 'LIVE033 弹幕里的尹总改回颖总',
     items: [
@@ -6761,6 +6770,17 @@ function renderEpisodeDetail(id) {
         <h2>核心观点</h2>
         ${renderViewpoints(episode.viewpoints, episode.viewpointsIntro)}
       </section>
+
+      ${(episode.thinking || []).length ? `
+        <section class="detail-section">
+          <details class="thinking-fold">
+            <summary class="thinking-fold-summary"><h2>思考与分析</h2></summary>
+            <div class="thinking-fold-body">
+              ${episode.thinking.map((para) => `<p>${renderLinkedEpisodeText(para)}</p>`).join('')}
+            </div>
+          </details>
+        </section>
+      ` : ''}
 
       ${(episode.unsaid || []).length ? `
         <section class="detail-section">

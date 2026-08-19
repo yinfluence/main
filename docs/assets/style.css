@@ -6861,8 +6861,43 @@ a.live-inline-link:hover {
 
 /* 如何定义和提问：思路一层，原话一层，底色跟马司库一致 */
 
+.thinking-fold-summary {
+  list-style: none;
+  cursor: pointer;
+}
 
+.thinking-fold-summary::-webkit-details-marker {
+  display: none;
+}
 
+.thinking-fold-summary h2 {
+  display: inline-block;
+  margin-bottom: 0;
+}
 
+.thinking-fold-summary::after {
+  content: '▾';
+  float: right;
+  color: #5e5549;
+  font-weight: 700;
+  font-size: 18px;
+  margin-top: 10px;
+}
 
+.thinking-fold[open] > .thinking-fold-summary::after {
+  content: '▴';
+}
+
+.thinking-fold-body {
+  margin-top: 16px;
+}
+
+.thinking-fold-body p {
+  margin: 0;
+  line-height: 1.9;
+}
+
+.thinking-fold-body p + p {
+  margin-top: 14px;
+}
 
