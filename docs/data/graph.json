@@ -2,13 +2,13 @@
   "meta": {
     "title": "颖响力知识图谱",
     "subtitle": "节目、概念、模型、人物、主题之间的可视化连接网络",
-    "nodeCount": 698,
-    "linkCount": 2667,
+    "nodeCount": 699,
+    "linkCount": 2674,
     "typeCounts": {
       "model": 82,
       "live": 33,
       "theme": 92,
-      "episode": 201,
+      "episode": 202,
       "concept": 225,
       "person": 65
     }
@@ -455,6 +455,17 @@
       "degree": 23
     },
     {
+      "id": "model:narrative-instrumentalization",
+      "key": "narrative-instrumentalization",
+      "label": "叙事工具化模型",
+      "fullLabel": "叙事工具化模型",
+      "type": "model",
+      "route": "models/narrative-instrumentalization",
+      "summary": "叙事工具化模型解释叙事的主要功能从解释现实转向组织情绪和划分阵营。",
+      "status": null,
+      "degree": 22
+    },
+    {
       "id": "episode:EP131",
       "key": "EP131",
       "label": "EP131",
@@ -528,17 +539,6 @@
       "type": "model",
       "route": "models/path-dependence",
       "summary": "路径依赖解释早期技术和叙事选择一旦成功，就会反过来限制后续转向更优路径。",
-      "status": null,
-      "degree": 21
-    },
-    {
-      "id": "model:narrative-instrumentalization",
-      "key": "narrative-instrumentalization",
-      "label": "叙事工具化模型",
-      "fullLabel": "叙事工具化模型",
-      "type": "model",
-      "route": "models/narrative-instrumentalization",
-      "summary": "叙事工具化模型解释叙事的主要功能从解释现实转向组织情绪和划分阵营。",
       "status": null,
       "degree": 21
     },
@@ -3205,6 +3205,28 @@
       "degree": 7
     },
     {
+      "id": "episode:EP202",
+      "key": "EP202",
+      "label": "EP202",
+      "fullLabel": "EP202 · 《牛来》是一坨“翔”，但每一个参与牛来的普通人是真正的“侠者”！",
+      "type": "episode",
+      "route": "episodes/EP202",
+      "summary": "一部叫《牛来》的电影突然火遍全网，有人捧成打破规则的神作，有人骂它粗制滥造。节目不评片子拍得怎么样，只拆它为什么能火成这样。第一层，年轻人手里没有多少正常的情绪出口，围着一件人人都知道很烂的东西起哄，成了最便宜的社交货币，要紧的是我参与过这件事，片子好不好笑排在后面。第二层，那块金灿灿的龙标才是真正的笑点，审核的力气全压在价值导向上，质量这一头就松成了筛子。第三层，主创抛出的只是一个空容器，观众把自己对打破规则的渴望装了进去。真正完成这场行为艺术的，是每一个转发、吐槽、写长文解读的普通人。",
+      "status": "curated",
+      "degree": 7
+    },
+    {
+      "id": "model:safety-valve-governance",
+      "key": "safety-valve-governance",
+      "label": "安全阀治理模型",
+      "fullLabel": "安全阀治理模型",
+      "type": "model",
+      "route": "models/safety-valve-governance",
+      "summary": "安全阀治理模型解释体系会容纳分流焦虑的中间人，并在其越位时进行收束。",
+      "status": null,
+      "degree": 6
+    },
+    {
       "id": "theme:bullshit-politics-and-historical-narratives",
       "key": "bullshit-politics-and-historical-narratives",
       "label": "扯淡政治与历史叙事",
@@ -3399,6 +3421,17 @@
       "type": "concept",
       "route": "concepts/dependent-enterprise",
       "summary": "靠巨头授权生存的企业：只有使用权没有所有权、没有独立出海权、可替代性随同类依附者增加而归零，却承接巨头不要的全部风险。",
+      "status": null,
+      "degree": 6
+    },
+    {
+      "id": "theme:film-industry-and-traffic-logic",
+      "key": "film-industry-and-traffic-logic",
+      "label": "影视工业与流量逻辑",
+      "fullLabel": "影视工业与流量逻辑",
+      "type": "theme",
+      "route": "themes/film-industry-and-traffic-logic",
+      "summary": "关注影视生产如何越来越服从人设、粉丝和宣发流量，而非角色与作品本身。",
       "status": null,
       "degree": 6
     },
@@ -3667,17 +3700,6 @@
       "degree": 6
     },
     {
-      "id": "model:safety-valve-governance",
-      "key": "safety-valve-governance",
-      "label": "安全阀治理模型",
-      "fullLabel": "安全阀治理模型",
-      "type": "model",
-      "route": "models/safety-valve-governance",
-      "summary": "安全阀治理模型解释体系会容纳分流焦虑的中间人，并在其越位时进行收束。",
-      "status": null,
-      "degree": 5
-    },
-    {
       "id": "theme:founder-power-and-feedback",
       "key": "founder-power-and-feedback",
       "label": "创始人权力与组织反馈",
@@ -3806,6 +3828,17 @@
       "type": "model",
       "route": "models/regulatory-cost-arbitrage",
       "summary": "当同一市场存在多条监管路径，低合规成本路径会获得更高试错频率和更强替代能力。",
+      "status": null,
+      "degree": 5
+    },
+    {
+      "id": "concept:compliance-floor",
+      "key": "compliance-floor",
+      "label": "合规及格线",
+      "fullLabel": "合规及格线",
+      "type": "concept",
+      "route": "concepts/compliance-floor",
+      "summary": "合规只是法律强制的最低底线，不等于优质；当消费者为更高品质付溢价，仅做到合规就是变相缩水。",
       "status": null,
       "degree": 5
     },
@@ -3982,17 +4015,6 @@
       "type": "concept",
       "route": "concepts/dependent-innovation",
       "summary": "依附式创新指项目围绕政府、国企或强关系订单做有限改造，而不是面向真实市场独立突破。",
-      "status": null,
-      "degree": 5
-    },
-    {
-      "id": "theme:film-industry-and-traffic-logic",
-      "key": "film-industry-and-traffic-logic",
-      "label": "影视工业与流量逻辑",
-      "fullLabel": "影视工业与流量逻辑",
-      "type": "theme",
-      "route": "themes/film-industry-and-traffic-logic",
-      "summary": "关注影视生产如何越来越服从人设、粉丝和宣发流量，而非角色与作品本身。",
       "status": null,
       "degree": 5
     },
@@ -4510,17 +4532,6 @@
       "type": "concept",
       "route": "concepts/relationship-insurance",
       "summary": "企业不是靠产品和现金流先保命，而是先靠关系、站队和嵌入地方体系给自己买生存保险。",
-      "status": null,
-      "degree": 4
-    },
-    {
-      "id": "concept:compliance-floor",
-      "key": "compliance-floor",
-      "label": "合规及格线",
-      "fullLabel": "合规及格线",
-      "type": "concept",
-      "route": "concepts/compliance-floor",
-      "summary": "合规只是法律强制的最低底线，不等于优质；当消费者为更高品质付溢价，仅做到合规就是变相缩水。",
       "status": null,
       "degree": 4
     },
@@ -5240,6 +5251,17 @@
       "degree": 3
     },
     {
+      "id": "theme:content-regulation-and-short-drama",
+      "key": "content-regulation-and-short-drama",
+      "label": "内容监管与短剧崛起",
+      "fullLabel": "内容监管与短剧崛起",
+      "type": "theme",
+      "route": "themes/content-regulation-and-short-drama",
+      "summary": "讨论长剧、电影、网剧和短剧在不同审核路径下如何重新竞争。",
+      "status": null,
+      "degree": 3
+    },
+    {
       "id": "concept:internal-migration",
       "key": "internal-migration",
       "label": "内移民",
@@ -5779,6 +5801,17 @@
       "degree": 2
     },
     {
+      "id": "concept:dual-track-review-system",
+      "key": "dual-track-review-system",
+      "label": "分层审核制度",
+      "fullLabel": "分层审核制度",
+      "type": "concept",
+      "route": "concepts/dual-track-review-system",
+      "summary": "同一类内容因为投资规模、平台主推程度和发行路径不同，进入不同审核通道。",
+      "status": null,
+      "degree": 2
+    },
+    {
       "id": "model:resonance-channel-model",
       "key": "resonance-channel-model",
       "label": "共振通道模型",
@@ -6043,13 +6076,13 @@
       "degree": 2
     },
     {
-      "id": "theme:content-regulation-and-short-drama",
-      "key": "content-regulation-and-short-drama",
-      "label": "内容监管与短剧崛起",
-      "fullLabel": "内容监管与短剧崛起",
-      "type": "theme",
-      "route": "themes/content-regulation-and-short-drama",
-      "summary": "讨论长剧、电影、网剧和短剧在不同审核路径下如何重新竞争。",
+      "id": "concept:platform-meme-template",
+      "key": "platform-meme-template",
+      "label": "平台模因模板",
+      "fullLabel": "平台模因模板",
+      "type": "concept",
+      "route": "concepts/platform-meme-template",
+      "summary": "能被低成本复刻、改写和接龙的开放框架，是平台热梗扩散的关键接口。",
       "status": null,
       "degree": 2
     },
@@ -6615,17 +6648,6 @@
       "degree": 1
     },
     {
-      "id": "concept:dual-track-review-system",
-      "key": "dual-track-review-system",
-      "label": "分层审核制度",
-      "fullLabel": "分层审核制度",
-      "type": "concept",
-      "route": "concepts/dual-track-review-system",
-      "summary": "同一类内容因为投资规模、平台主推程度和发行路径不同，进入不同审核通道。",
-      "status": null,
-      "degree": 1
-    },
-    {
       "id": "concept:aesthetic-decline-by-abundance",
       "key": "aesthetic-decline-by-abundance",
       "label": "丰裕导致的审美滑坡",
@@ -7084,17 +7106,6 @@
       "type": "model",
       "route": "models/platform-meme-flywheel",
       "summary": "平台模因飞轮解释模板内容、用户复制和平台推流如何把偶然热梗滚成大规模现象。",
-      "status": null,
-      "degree": 1
-    },
-    {
-      "id": "concept:platform-meme-template",
-      "key": "platform-meme-template",
-      "label": "平台模因模板",
-      "fullLabel": "平台模因模板",
-      "type": "concept",
-      "route": "concepts/platform-meme-template",
-      "summary": "能被低成本复刻、改写和接龙的开放框架，是平台热梗扩散的关键接口。",
       "status": null,
       "degree": 1
     },
@@ -15547,6 +15558,41 @@
     {
       "source": "episode:EP201",
       "target": "theme:film-industry-and-traffic-logic",
+      "kind": "episode-theme"
+    },
+    {
+      "source": "episode:EP202",
+      "target": "concept:compliance-floor",
+      "kind": "episode-concept"
+    },
+    {
+      "source": "episode:EP202",
+      "target": "concept:dual-track-review-system",
+      "kind": "episode-concept"
+    },
+    {
+      "source": "episode:EP202",
+      "target": "concept:platform-meme-template",
+      "kind": "episode-concept"
+    },
+    {
+      "source": "episode:EP202",
+      "target": "model:narrative-instrumentalization",
+      "kind": "episode-model"
+    },
+    {
+      "source": "episode:EP202",
+      "target": "model:safety-valve-governance",
+      "kind": "episode-model"
+    },
+    {
+      "source": "episode:EP202",
+      "target": "theme:film-industry-and-traffic-logic",
+      "kind": "episode-theme"
+    },
+    {
+      "source": "episode:EP202",
+      "target": "theme:content-regulation-and-short-drama",
       "kind": "episode-theme"
     },
     {
