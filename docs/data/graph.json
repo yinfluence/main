@@ -2,11 +2,11 @@
   "meta": {
     "title": "颖响力知识图谱",
     "subtitle": "节目、概念、模型、人物、主题之间的可视化连接网络",
-    "nodeCount": 699,
-    "linkCount": 2674,
+    "nodeCount": 700,
+    "linkCount": 2706,
     "typeCounts": {
       "model": 82,
-      "live": 33,
+      "live": 34,
       "theme": 92,
       "episode": 202,
       "concept": 225,
@@ -176,6 +176,17 @@
       "type": "live",
       "route": "lives/LIVE011",
       "summary": "水平对置发动机、雷达、单螺杆压缩机，赢的从来不是账面上更漂亮那一个。",
+      "status": "curated",
+      "degree": 32
+    },
+    {
+      "id": "live:LIVE034",
+      "key": "LIVE034",
+      "label": "LIVE034",
+      "fullLabel": "LIVE034 · 一千倍市盈率的机器人和拿到龙标的那部片，凭什么是同一件事？",
+      "type": "live",
+      "route": "lives/LIVE034",
+      "summary": "十几二十万，就能给一坨东西打上龙标。",
       "status": "curated",
       "degree": 32
     },
@@ -444,6 +455,17 @@
       "degree": 24
     },
     {
+      "id": "model:narrative-instrumentalization",
+      "key": "narrative-instrumentalization",
+      "label": "叙事工具化模型",
+      "fullLabel": "叙事工具化模型",
+      "type": "model",
+      "route": "models/narrative-instrumentalization",
+      "summary": "叙事工具化模型解释叙事的主要功能从解释现实转向组织情绪和划分阵营。",
+      "status": null,
+      "degree": 23
+    },
+    {
       "id": "concept:chokepoint-leverage",
       "key": "chokepoint-leverage",
       "label": "咽喉杠杆",
@@ -453,17 +475,6 @@
       "summary": "控制海峡、运河和关键通道的人，往往能把地理位置转化成定价权、通行权和规则权。",
       "status": null,
       "degree": 23
-    },
-    {
-      "id": "model:narrative-instrumentalization",
-      "key": "narrative-instrumentalization",
-      "label": "叙事工具化模型",
-      "fullLabel": "叙事工具化模型",
-      "type": "model",
-      "route": "models/narrative-instrumentalization",
-      "summary": "叙事工具化模型解释叙事的主要功能从解释现实转向组织情绪和划分阵营。",
-      "status": null,
-      "degree": 22
     },
     {
       "id": "episode:EP131",
@@ -631,6 +642,17 @@
       "degree": 20
     },
     {
+      "id": "episode:EP138",
+      "key": "EP138",
+      "label": "EP138",
+      "fullLabel": "EP138 · 五粮液的大洗澡，散户真的看得懂吗？三大核心乱象把A股玩的明明白白！【EP138】｜左右逢源式操控｜内循环式蓄水池｜散户自愿买单｜抽逃上市公司资金｜利润调节器｜",
+      "type": "episode",
+      "route": "episodes/EP138",
+      "summary": "五粮液财务业绩大幅调整。这不是简单的数字变化。背后是国企换届切割、经销商利润蓄水池和 A 股惩戒失效共同显影。拆成三层看。第一层，新任管理层一次性压低历史业绩，为后续增长铺台阶。第二层，白酒经销商体系长期充当可调节利润的内循环水库。第三层，市场和监管很难形成足够惩罚。最后让普通散户在看似公开的报表里，承担信息和规则劣势。",
+      "status": "curated",
+      "degree": 20
+    },
+    {
       "id": "model:leverage-backfire",
       "key": "leverage-backfire",
       "label": "杠杆反噬",
@@ -693,17 +715,6 @@
       "type": "episode",
       "route": "episodes/EP135",
       "summary": "俄罗斯胜利日阅兵取消了地面重装备方阵。借这件事把俄乌战争解释成一场未来战争预演。低空、低成本、长航程无人机，正在把传统战略纵深变成负担。固定炼油厂、弹药库、铁路枢纽和大型军工厂，反而成了可被持续点名的高价值目标。乌克兰的优势不只是无人机多。而是把战时生产、前线反馈、社会动员和欧洲支持，组合成了更分布式的战争系统。",
-      "status": "curated",
-      "degree": 19
-    },
-    {
-      "id": "episode:EP138",
-      "key": "EP138",
-      "label": "EP138",
-      "fullLabel": "EP138 · 五粮液的大洗澡，散户真的看得懂吗？三大核心乱象把A股玩的明明白白！【EP138】｜左右逢源式操控｜内循环式蓄水池｜散户自愿买单｜抽逃上市公司资金｜利润调节器｜",
-      "type": "episode",
-      "route": "episodes/EP138",
-      "summary": "五粮液财务业绩大幅调整。这不是简单的数字变化。背后是国企换届切割、经销商利润蓄水池和 A 股惩戒失效共同显影。拆成三层看。第一层，新任管理层一次性压低历史业绩，为后续增长铺台阶。第二层，白酒经销商体系长期充当可调节利润的内循环水库。第三层，市场和监管很难形成足够惩罚。最后让普通散户在看似公开的报表里，承担信息和规则劣势。",
       "status": "curated",
       "degree": 19
     },
@@ -818,6 +829,17 @@
       "degree": 17
     },
     {
+      "id": "theme:narrative-speculation-and-retail-traps",
+      "key": "narrative-speculation-and-retail-traps",
+      "label": "投资叙事与散户陷阱",
+      "fullLabel": "投资叙事与散户陷阱",
+      "type": "theme",
+      "route": "themes/narrative-speculation-and-retail-traps",
+      "summary": "当市场热点先由故事驱动、再由散户接棒时，普通人最容易在高潮处接到最后一棒。",
+      "status": null,
+      "degree": 17
+    },
+    {
       "id": "episode:EP133",
       "key": "EP133",
       "label": "EP133",
@@ -902,17 +924,6 @@
       "type": "theme",
       "route": "themes/local-government-financialization",
       "summary": "讨论地方政府如何从传统招商者变成资本玩家，并把补贴、基金和估值故事捆到一起。",
-      "status": null,
-      "degree": 16
-    },
-    {
-      "id": "theme:narrative-speculation-and-retail-traps",
-      "key": "narrative-speculation-and-retail-traps",
-      "label": "投资叙事与散户陷阱",
-      "fullLabel": "投资叙事与散户陷阱",
-      "type": "theme",
-      "route": "themes/narrative-speculation-and-retail-traps",
-      "summary": "当市场热点先由故事驱动、再由散户接棒时，普通人最容易在高潮处接到最后一棒。",
       "status": null,
       "degree": 16
     },
@@ -1016,6 +1027,17 @@
       "degree": 15
     },
     {
+      "id": "episode:EP193",
+      "key": "EP193",
+      "label": "EP193",
+      "fullLabel": "EP193 · 贫困生不配喝9.9元的咖啡？聊聊助学金认定背后的人性bug与制度漏洞",
+      "type": "episode",
+      "route": "episodes/EP193",
+      "summary": "一个女生拿了贫困补贴，每天早晨喝一杯 9.9 元的瑞幸，被人连着取证三十多天之后举报骗补。节目不认这套算法。每月三百块的咖啡不构成奢侈消费，用苦行僧的样子去框贫困生，是拿刻板印象绑架弱势群体，还会逼出更多虚假。私下盯梢取证这件事本身也不值得表扬，它先拆掉的是人和人之间的信任。真正该问的是审核机制，福利部门只核表格合不合规，不去看这个家庭是不是真的出了状况。福利如果只保一个不饿死，那就还停在施粥的年代。",
+      "status": "curated",
+      "degree": 15
+    },
+    {
       "id": "model:feedback-loops",
       "key": "feedback-loops",
       "label": "反馈回路",
@@ -1045,6 +1067,17 @@
       "type": "model",
       "route": "models/rule-anchored-small-state-model",
       "summary": "小国要长期活下来，不能只靠地理好运，更要靠规则信誉、理性政府和可预期的制度自我约束。",
+      "status": null,
+      "degree": 14
+    },
+    {
+      "id": "model:narrative-leverage",
+      "key": "narrative-leverage",
+      "label": "叙事杠杆",
+      "fullLabel": "叙事杠杆",
+      "type": "model",
+      "route": "models/narrative-leverage",
+      "summary": "通过一个足够大的故事，把原本有限的资源、信用和注意力撬成更大的资本、销量或支持度。",
       "status": null,
       "degree": 14
     },
@@ -1181,17 +1214,6 @@
       "degree": 14
     },
     {
-      "id": "episode:EP193",
-      "key": "EP193",
-      "label": "EP193",
-      "fullLabel": "EP193 · 贫困生不配喝9.9元的咖啡？聊聊助学金认定背后的人性bug与制度漏洞",
-      "type": "episode",
-      "route": "episodes/EP193",
-      "summary": "一个女生拿了贫困补贴，每天早晨喝一杯 9.9 元的瑞幸，被人连着取证三十多天之后举报骗补。节目不认这套算法。每月三百块的咖啡不构成奢侈消费，用苦行僧的样子去框贫困生，是拿刻板印象绑架弱势群体，还会逼出更多虚假。私下盯梢取证这件事本身也不值得表扬，它先拆掉的是人和人之间的信任。真正该问的是审核机制，福利部门只核表格合不合规，不去看这个家庭是不是真的出了状况。福利如果只保一个不饿死，那就还停在施粥的年代。",
-      "status": "curated",
-      "degree": 14
-    },
-    {
       "id": "model:chokepoint-order-model",
       "key": "chokepoint-order-model",
       "label": "海峡秩序模型",
@@ -1225,13 +1247,13 @@
       "degree": 13
     },
     {
-      "id": "model:narrative-leverage",
-      "key": "narrative-leverage",
-      "label": "叙事杠杆",
-      "fullLabel": "叙事杠杆",
-      "type": "model",
-      "route": "models/narrative-leverage",
-      "summary": "通过一个足够大的故事，把原本有限的资源、信用和注意力撬成更大的资本、销量或支持度。",
+      "id": "theme:ai-and-human-creativity",
+      "key": "ai-and-human-creativity",
+      "label": "AI替代与人的创造性",
+      "fullLabel": "AI替代与人的创造性",
+      "type": "theme",
+      "route": "themes/ai-and-human-creativity",
+      "summary": "关注自动化扩张之后，人类该如何重新定义自己的不可替代价值。",
       "status": null,
       "degree": 13
     },
@@ -1335,6 +1357,28 @@
       "degree": 13
     },
     {
+      "id": "episode:EP195",
+      "key": "EP195",
+      "label": "EP195",
+      "fullLabel": "EP195 · 竹知了“不能提”的是华删派与岳不群的终极野心！",
+      "type": "episode",
+      "route": "episodes/EP195",
+      "summary": "竹知了这件事很多人看不懂。几毛钱的竹玩具，摇起来那声哇哇被配上发布会画面，视频成片被投诉下架，热度反而更高。好好的市场不抢，非要去告玩梗的人，图的是什么。拿性价比和市场份额这套尺子量华山派，永远量不出结果，它玩的从一开始就不是普通的商业游戏。先画圈子，界限划得越清楚越好，选它的人和还在看性价比的人不是一类。再故意定高价、故意特立独行，看不懂的人自己就走。最里面一层是登顶。左冷禅要的是五岳联盟的盟主，还在江湖这个游戏里玩。岳不群要的是五派合一，从此没人能跟他讨价还价，也没人能随便调侃他。",
+      "status": "curated",
+      "degree": 13
+    },
+    {
+      "id": "episode:EP200",
+      "key": "EP200",
+      "label": "EP200",
+      "fullLabel": "EP200 · 楼市新政再抄底？放弃买房的执念吧！这不是周期，是时代的结束",
+      "type": "episode",
+      "route": "episodes/EP200",
+      "summary": "北方那座最大的城市又出楼市新政，五环以外全面放松，五环以内交满一年社保就能买。消息一出，江浙沪那边的朋友已经出手，北方的朋友追着问是不是要触底反弹。同样的松绑上海广州深圳早就落地过，市场并没有热起来，这一轮真正被搅活的是地方政府手里的流动性，门槛降下来是需要有人接着往里填。更要紧的是撑起过去四十年普涨的那几个条件，今天一个都不在，塌下去不会自己长回来。最难的地方在心态，认定上涨是常态、下跌只是插曲，于是一次次上车。",
+      "status": "curated",
+      "degree": 13
+    },
+    {
       "id": "episode:EP201",
       "key": "EP201",
       "label": "EP201",
@@ -1401,17 +1445,6 @@
       "degree": 12
     },
     {
-      "id": "theme:ai-and-human-creativity",
-      "key": "ai-and-human-creativity",
-      "label": "AI替代与人的创造性",
-      "fullLabel": "AI替代与人的创造性",
-      "type": "theme",
-      "route": "themes/ai-and-human-creativity",
-      "summary": "关注自动化扩张之后，人类该如何重新定义自己的不可替代价值。",
-      "status": null,
-      "degree": 12
-    },
-    {
       "id": "episode:EP041",
       "key": "EP041",
       "label": "EP041",
@@ -1456,6 +1489,17 @@
       "degree": 12
     },
     {
+      "id": "episode:EP142",
+      "key": "EP142",
+      "label": "EP142",
+      "fullLabel": "EP142 · 宇树的高达与追觅的崩老头，他们玩的不是科技，是科技叙事！是爽文短剧！【EP142】｜载人机甲GD01｜王兴兴｜影视道具｜政府展示中心｜IPO估值锚｜引导基金｜俞浩｜天空工场｜",
+      "type": "episode",
+      "route": "episodes/EP142",
+      "summary": "宇树发布 390 万一台的载人机甲 GD01。追觅俞浩搞了天空工场基金。两件事在同一条线上。两位创业者做的不是硬科技，而是一套科技叙事。为政府引导基金、IPO 估值和新媒体话题量身定制。\n\nGD01 的用户不是工厂或消费者，是文旅景区、科技馆和政府展示中心。俞浩自己只出 20%，80% 来自各地引导基金。再用 200 个事业部对标 200 条赛道。这是一套产业生态，引导基金当 LP，IPO 是唯一的退出口。",
+      "status": "curated",
+      "degree": 12
+    },
+    {
       "id": "episode:EP143",
       "key": "EP143",
       "label": "EP143",
@@ -1474,6 +1518,17 @@
       "type": "episode",
       "route": "episodes/EP149",
       "summary": "国内自媒体炒作李显龙绕开北京、中新关系出现大裂痕。这是谣言。李显龙本就没打算去北京开高层会谈，他要的是下沉到中国经济里亲眼考察实况。五天行程，广西看西部陆海新通道与平陆运河，上海看人工智能与外资总部。这趟是务实低调的经济考察。目的是为黄循财政府的下一步和新加坡的投资方向提供依据。再把分散投资风险接到菲律宾选边站和东南亚动荡上。小国夹在中美之间，靠的是平衡和规则。",
+      "status": "curated",
+      "degree": 12
+    },
+    {
+      "id": "episode:EP173",
+      "key": "EP173",
+      "label": "EP173",
+      "fullLabel": "EP173 · 《给阿嬷的情书》是统战电影吗？新加坡热映是\"破防\"还是破例？",
+      "type": "episode",
+      "route": "episodes/EP173",
+      "summary": "东大潮汕片《给阿嬷的情书》在新加坡热映，从限映八场加到破例五十场。一些华文媒体给它贴上统战标签。新加坡不是守不住华语政策而破防，而是堵不如疏。与其禁映把观众逼去别的平台，不如让市场消化。\n\n这部电影真正在问的是什么算根。落叶归根不如落地生根。真正的根是对自己好、能活下去的地方，不是祖先故土。把潮汕话当文化的女孩，狂热是对客家母系的反抗，是没完成的精神弑母。它带统战色彩，仍是好电影，摘掉滤镜照样能看。",
       "status": "curated",
       "degree": 12
     },
@@ -1500,26 +1555,15 @@
       "degree": 12
     },
     {
-      "id": "episode:EP195",
-      "key": "EP195",
-      "label": "EP195",
-      "fullLabel": "EP195 · 竹知了“不能提”的是华删派与岳不群的终极野心！",
-      "type": "episode",
-      "route": "episodes/EP195",
-      "summary": "竹知了这件事很多人看不懂。几毛钱的竹玩具，摇起来那声哇哇被配上发布会画面，视频成片被投诉下架，热度反而更高。好好的市场不抢，非要去告玩梗的人，图的是什么。拿性价比和市场份额这套尺子量华山派，永远量不出结果，它玩的从一开始就不是普通的商业游戏。先画圈子，界限划得越清楚越好，选它的人和还在看性价比的人不是一类。再故意定高价、故意特立独行，看不懂的人自己就走。最里面一层是登顶。左冷禅要的是五岳联盟的盟主，还在江湖这个游戏里玩。岳不群要的是五派合一，从此没人能跟他讨价还价，也没人能随便调侃他。",
-      "status": "curated",
-      "degree": 12
-    },
-    {
-      "id": "episode:EP200",
-      "key": "EP200",
-      "label": "EP200",
-      "fullLabel": "EP200 · 楼市新政再抄底？放弃买房的执念吧！这不是周期，是时代的结束",
-      "type": "episode",
-      "route": "episodes/EP200",
-      "summary": "北方那座最大的城市又出楼市新政，五环以外全面放松，五环以内交满一年社保就能买。消息一出，江浙沪那边的朋友已经出手，北方的朋友追着问是不是要触底反弹。同样的松绑上海广州深圳早就落地过，市场并没有热起来，这一轮真正被搅活的是地方政府手里的流动性，门槛降下来是需要有人接着往里填。更要紧的是撑起过去四十年普涨的那几个条件，今天一个都不在，塌下去不会自己长回来。最难的地方在心态，认定上涨是常态、下跌只是插曲，于是一次次上车。",
-      "status": "curated",
-      "degree": 12
+      "id": "concept:standard-labor-replacement",
+      "key": "standard-labor-replacement",
+      "label": "标准劳动力替代",
+      "fullLabel": "标准劳动力替代",
+      "type": "concept",
+      "route": "concepts/standard-labor-replacement",
+      "summary": "自动化最先替代可重复、可规训、可量化的标准岗位，而这些岗位往往属于普通人。",
+      "status": null,
+      "degree": 11
     },
     {
       "id": "theme:planned-systems-and-innovation",
@@ -1621,6 +1665,17 @@
       "degree": 11
     },
     {
+      "id": "episode:EP118",
+      "key": "EP118",
+      "label": "EP118",
+      "fullLabel": "EP118 · 北大神课被阉割，地震+股市跨界课被举报，中国教育到底缺了什么？【EP118】",
+      "type": "episode",
+      "route": "episodes/EP118",
+      "summary": "北大赵克长的《地震概论》被举报，随后被“去跨界化”。这是中国教育系统不再容纳有生命力教学的一次症状性事件。这门课宝贵的地方不在于教学生炒股。它用地震学、混沌学和股市风险把学科壁垒打穿。让学生更早接触复杂系统、不确定性和跨域思考。恰恰这些，正是标准答案教育最难容忍、也最急需的东西。",
+      "status": "curated",
+      "degree": 11
+    },
+    {
       "id": "episode:EP121",
       "key": "EP121",
       "label": "EP121",
@@ -1639,17 +1694,6 @@
       "type": "episode",
       "route": "episodes/EP125",
       "summary": "35.97 亿元的天价罚单落下，重点不只是哪家罚得最多。借七家外卖平台的不同处罚结果串出一条链。链上是食品安全、平台权力、转单黑产和层层转包。拼多多被顶格重罚，不只因为问题店铺或交易额。它既主动与转单平台深度合作，又出现阻挠执法的行为。整个行业真正可怕的地方，是消费者支付的高价被层层截留。平台、幽灵店铺和转单系统各拿一道，最后真正做货的黑作坊只拿到极低成本。食品安全和履约风险一路向末端下沉。",
-      "status": "curated",
-      "degree": 11
-    },
-    {
-      "id": "episode:EP142",
-      "key": "EP142",
-      "label": "EP142",
-      "fullLabel": "EP142 · 宇树的高达与追觅的崩老头，他们玩的不是科技，是科技叙事！是爽文短剧！【EP142】｜载人机甲GD01｜王兴兴｜影视道具｜政府展示中心｜IPO估值锚｜引导基金｜俞浩｜天空工场｜",
-      "type": "episode",
-      "route": "episodes/EP142",
-      "summary": "宇树发布 390 万一台的载人机甲 GD01。追觅俞浩搞了天空工场基金。两件事在同一条线上。两位创业者做的不是硬科技，而是一套科技叙事。为政府引导基金、IPO 估值和新媒体话题量身定制。\n\nGD01 的用户不是工厂或消费者，是文旅景区、科技馆和政府展示中心。俞浩自己只出 20%，80% 来自各地引导基金。再用 200 个事业部对标 200 条赛道。这是一套产业生态，引导基金当 LP，IPO 是唯一的退出口。",
       "status": "curated",
       "degree": 11
     },
@@ -1676,17 +1720,6 @@
       "degree": 11
     },
     {
-      "id": "episode:EP173",
-      "key": "EP173",
-      "label": "EP173",
-      "fullLabel": "EP173 · 《给阿嬷的情书》是统战电影吗？新加坡热映是\"破防\"还是破例？",
-      "type": "episode",
-      "route": "episodes/EP173",
-      "summary": "东大潮汕片《给阿嬷的情书》在新加坡热映，从限映八场加到破例五十场。一些华文媒体给它贴上统战标签。新加坡不是守不住华语政策而破防，而是堵不如疏。与其禁映把观众逼去别的平台，不如让市场消化。\n\n这部电影真正在问的是什么算根。落叶归根不如落地生根。真正的根是对自己好、能活下去的地方，不是祖先故土。把潮汕话当文化的女孩，狂热是对客家母系的反抗，是没完成的精神弑母。它带统战色彩，仍是好电影，摘掉滤镜照样能看。",
-      "status": "curated",
-      "degree": 11
-    },
-    {
       "id": "episode:EP182",
       "key": "EP182",
       "label": "EP182",
@@ -1709,6 +1742,17 @@
       "degree": 11
     },
     {
+      "id": "episode:EP199",
+      "key": "EP199",
+      "label": "EP199",
+      "fullLabel": "EP199 · 新加坡樟宜海滩赶海风波！中国人组团爆桶遭民众抵制，真的只是个人素质问题吗？",
+      "type": "episode",
+      "route": "episodes/EP199",
+      "summary": "樟宜海滩这次赶海，十几个人是夜里退潮时下去的，一晚上装满七八桶螃蟹贝类。东西拉到牛车水的中餐馆加工，成品视频发上网。新加坡本地社群反应激烈，选区议员出面批评，帮忙加工的餐馆被刷差评。争议卡在一个事实上，樟宜海滩不是海洋保护区，捡的也不是保护物种，这群人确实没违法。可法条没写的地方还有一套规矩，写在当地人心里。潮间带在那里的头一份用处是给人看，国土就那么大，海岸线摊到人均少得可怜，禁不住十几个人搜刮一遍。把这件事说成素质差或者种族歧视，两边都没说到点上。",
+      "status": "curated",
+      "degree": 11
+    },
+    {
       "id": "concept:refuge-premium",
       "key": "refuge-premium",
       "label": "避险溢价",
@@ -1716,17 +1760,6 @@
       "type": "concept",
       "route": "concepts/refuge-premium",
       "summary": "动荡时期，稳定、守规则、能承接资金和人才的节点会获得额外溢价。",
-      "status": null,
-      "degree": 10
-    },
-    {
-      "id": "concept:standard-labor-replacement",
-      "key": "standard-labor-replacement",
-      "label": "标准劳动力替代",
-      "fullLabel": "标准劳动力替代",
-      "type": "concept",
-      "route": "concepts/standard-labor-replacement",
-      "summary": "自动化最先替代可重复、可规训、可量化的标准岗位，而这些岗位往往属于普通人。",
       "status": null,
       "degree": 10
     },
@@ -1742,6 +1775,17 @@
       "degree": 10
     },
     {
+      "id": "concept:premium-narrative",
+      "key": "premium-narrative",
+      "label": "高价叙事",
+      "fullLabel": "高价叙事",
+      "type": "concept",
+      "route": "concepts/premium-narrative",
+      "summary": "企业用定位、符号、方法论和品牌故事为高价格建立解释框架。",
+      "status": null,
+      "degree": 10
+    },
+    {
       "id": "theme:youth-withdrawal-and-lying-flat",
       "key": "youth-withdrawal-and-lying-flat",
       "label": "年轻人退出与躺平",
@@ -1749,6 +1793,17 @@
       "type": "theme",
       "route": "themes/youth-withdrawal-and-lying-flat",
       "summary": "讨论年轻人在主流机会、劳动回报和身份路径收缩后，如何通过低欲望、退出和躺平保留有限主体性。",
+      "status": null,
+      "degree": 10
+    },
+    {
+      "id": "theme:platform-governance-and-folk-discourse",
+      "key": "platform-governance-and-folk-discourse",
+      "label": "平台治理与民间话语",
+      "fullLabel": "平台治理与民间话语",
+      "type": "theme",
+      "route": "themes/platform-governance-and-folk-discourse",
+      "summary": "讨论平台如何识别、容忍、限制和清理具有高传播性的民间表达。",
       "status": null,
       "degree": 10
     },
@@ -1797,6 +1852,17 @@
       "degree": 10
     },
     {
+      "id": "concept:organizational-silence",
+      "key": "organizational-silence",
+      "label": "组织失声",
+      "fullLabel": "组织失声",
+      "type": "concept",
+      "route": "concepts/organizational-silence",
+      "summary": "组织内部真实反馈消失后，成员会等待权威表态，而不是主动修正错误。",
+      "status": null,
+      "degree": 10
+    },
+    {
       "id": "episode:EP006",
       "key": "EP006",
       "label": "EP006",
@@ -1837,17 +1903,6 @@
       "type": "episode",
       "route": "episodes/EP116",
       "summary": "黄循财访中不回祖宅。这不是忘本，而是新加坡作为华人占多数的小国必须维持的边界感。这个国家级选择也能延伸成个人命题。现代人的故乡不必只由血缘坐标决定。能安身、能创造价值的地方，也可以成为真正的归属。",
-      "status": "curated",
-      "degree": 10
-    },
-    {
-      "id": "episode:EP118",
-      "key": "EP118",
-      "label": "EP118",
-      "fullLabel": "EP118 · 北大神课被阉割，地震+股市跨界课被举报，中国教育到底缺了什么？【EP118】",
-      "type": "episode",
-      "route": "episodes/EP118",
-      "summary": "北大赵克长的《地震概论》被举报，随后被“去跨界化”。这是中国教育系统不再容纳有生命力教学的一次症状性事件。这门课宝贵的地方不在于教学生炒股。它用地震学、混沌学和股市风险把学科壁垒打穿。让学生更早接触复杂系统、不确定性和跨域思考。恰恰这些，正是标准答案教育最难容忍、也最急需的东西。",
       "status": "curated",
       "degree": 10
     },
@@ -1896,17 +1951,6 @@
       "degree": 10
     },
     {
-      "id": "episode:EP199",
-      "key": "EP199",
-      "label": "EP199",
-      "fullLabel": "EP199 · 新加坡樟宜海滩赶海风波！中国人组团爆桶遭民众抵制，真的只是个人素质问题吗？",
-      "type": "episode",
-      "route": "episodes/EP199",
-      "summary": "樟宜海滩这次赶海，十几个人是夜里退潮时下去的，一晚上装满七八桶螃蟹贝类。东西拉到牛车水的中餐馆加工，成品视频发上网。新加坡本地社群反应激烈，选区议员出面批评，帮忙加工的餐馆被刷差评。争议卡在一个事实上，樟宜海滩不是海洋保护区，捡的也不是保护物种，这群人确实没违法。可法条没写的地方还有一套规矩，写在当地人心里。潮间带在那里的头一份用处是给人看，国土就那么大，海岸线摊到人均少得可怜，禁不住十几个人搜刮一遍。把这件事说成素质差或者种族歧视，两边都没说到点上。",
-      "status": "curated",
-      "degree": 10
-    },
-    {
       "id": "concept:jurisdiction-arbitrage",
       "key": "jurisdiction-arbitrage",
       "label": "法域套利",
@@ -1914,17 +1958,6 @@
       "type": "concept",
       "route": "concepts/jurisdiction-arbitrage",
       "summary": "企业通过选择更有利法域，获取融资、估值、合规和退出上的制度差价。",
-      "status": null,
-      "degree": 9
-    },
-    {
-      "id": "concept:premium-narrative",
-      "key": "premium-narrative",
-      "label": "高价叙事",
-      "fullLabel": "高价叙事",
-      "type": "concept",
-      "route": "concepts/premium-narrative",
-      "summary": "企业用定位、符号、方法论和品牌故事为高价格建立解释框架。",
       "status": null,
       "degree": 9
     },
@@ -1962,13 +1995,13 @@
       "degree": 9
     },
     {
-      "id": "theme:platform-governance-and-folk-discourse",
-      "key": "platform-governance-and-folk-discourse",
-      "label": "平台治理与民间话语",
-      "fullLabel": "平台治理与民间话语",
+      "id": "theme:youth-dreams-and-safe-paths",
+      "key": "youth-dreams-and-safe-paths",
+      "label": "年轻人梦想与安全路径",
+      "fullLabel": "年轻人梦想与安全路径",
       "type": "theme",
-      "route": "themes/platform-governance-and-folk-discourse",
-      "summary": "讨论平台如何识别、容忍、限制和清理具有高传播性的民间表达。",
+      "route": "themes/youth-dreams-and-safe-paths",
+      "summary": "关注“稳定”如何成为压制年轻人生命力的主流建议。",
       "status": null,
       "degree": 9
     },
@@ -2024,17 +2057,6 @@
       "type": "concept",
       "route": "concepts/quasi-currency-support",
       "summary": "现金不足时，系统用票据、凭证或替代物支撑交易和价格，形成准货币托市。",
-      "status": null,
-      "degree": 9
-    },
-    {
-      "id": "concept:organizational-silence",
-      "key": "organizational-silence",
-      "label": "组织失声",
-      "fullLabel": "组织失声",
-      "type": "concept",
-      "route": "concepts/organizational-silence",
-      "summary": "组织内部真实反馈消失后，成员会等待权威表态，而不是主动修正错误。",
       "status": null,
       "degree": 9
     },
@@ -2204,6 +2226,17 @@
       "degree": 9
     },
     {
+      "id": "episode:EP111",
+      "key": "EP111",
+      "label": "EP111",
+      "fullLabel": "EP111 · 张雪夺冠刷屏：别用 “时代没机会”，掐灭年轻人的追梦底气。",
+      "type": "episode",
+      "route": "episodes/EP111",
+      "summary": "张雪从湘西修车学徒做到世界机车赛冠军。借这段经历正面反驳一种流行叙事，说普通人没机会了，所以最好尽早放弃梦想。时代机会分配不均是事实。但机会不是被动等来的。它靠持续投入、行动，和不肯被安全路径说服。过早把年轻人送进一个他根本不想要的“稳定位置”，很可能比失败更早杀死一个人。",
+      "status": "curated",
+      "degree": 9
+    },
+    {
       "id": "episode:EP127",
       "key": "EP127",
       "label": "EP127",
@@ -2354,17 +2387,6 @@
       "type": "theme",
       "route": "themes/deglobalization-and-cultural-fragmentation",
       "summary": "讨论全球舞台如何从英语中心和统一审美，转向更地方化、更圈层化的表达竞争。",
-      "status": null,
-      "degree": 8
-    },
-    {
-      "id": "theme:youth-dreams-and-safe-paths",
-      "key": "youth-dreams-and-safe-paths",
-      "label": "年轻人梦想与安全路径",
-      "fullLabel": "年轻人梦想与安全路径",
-      "type": "theme",
-      "route": "themes/youth-dreams-and-safe-paths",
-      "summary": "关注“稳定”如何成为压制年轻人生命力的主流建议。",
       "status": null,
       "degree": 8
     },
@@ -2765,17 +2787,6 @@
       "degree": 8
     },
     {
-      "id": "episode:EP111",
-      "key": "EP111",
-      "label": "EP111",
-      "fullLabel": "EP111 · 张雪夺冠刷屏：别用 “时代没机会”，掐灭年轻人的追梦底气。",
-      "type": "episode",
-      "route": "episodes/EP111",
-      "summary": "张雪从湘西修车学徒做到世界机车赛冠军。借这段经历正面反驳一种流行叙事，说普通人没机会了，所以最好尽早放弃梦想。时代机会分配不均是事实。但机会不是被动等来的。它靠持续投入、行动，和不肯被安全路径说服。过早把年轻人送进一个他根本不想要的“稳定位置”，很可能比失败更早杀死一个人。",
-      "status": "curated",
-      "degree": 8
-    },
-    {
       "id": "episode:EP114",
       "key": "EP114",
       "label": "EP114",
@@ -2849,6 +2860,17 @@
       "type": "episode",
       "route": "episodes/EP183",
       "summary": "EP171 讲苏州工业园区怎么诞生，后来的波折在这里。中新集团的股权从新加坡持股65%调整为中方65%。后来又稀释到今天的25%左右。李光耀在回忆录里留下70分、惩罚性试验的评价。苏州一市两强的同质竞争，让园区被自家兄弟截胡。新加坡的管理软件在中国行政体制下水土不服。李光耀主动提出股权置换止损。所谓关门打狗其实是个误会。不是苏州设局逼退，是双方都没料到的制度错配。2009年李光耀说选择苏州是正确的。",
+      "status": "curated",
+      "degree": 8
+    },
+    {
+      "id": "episode:EP202",
+      "key": "EP202",
+      "label": "EP202",
+      "fullLabel": "EP202 · 《牛来》是一坨“翔”，但每一个参与牛来的普通人是真正的“侠者”！",
+      "type": "episode",
+      "route": "episodes/EP202",
+      "summary": "一部叫《牛来》的电影突然火遍全网，有人捧成打破规则的神作，有人骂它粗制滥造。节目不评片子拍得怎么样，只拆它为什么能火成这样。第一层，年轻人手里没有多少正常的情绪出口，围着一件人人都知道很烂的东西起哄，成了最便宜的社交货币，要紧的是我参与过这件事，片子好不好笑排在后面。第二层，那块金灿灿的龙标才是真正的笑点，审核的力气全压在价值导向上，质量这一头就松成了筛子。第三层，片子本身什么都没说清，观众把自己对打破规则的渴望读了进去。真正把这件事做成现象的，是每一个转发、吐槽、写长文解读的普通人。",
       "status": "curated",
       "degree": 8
     },
@@ -3205,17 +3227,6 @@
       "degree": 7
     },
     {
-      "id": "episode:EP202",
-      "key": "EP202",
-      "label": "EP202",
-      "fullLabel": "EP202 · 《牛来》是一坨“翔”，但每一个参与牛来的普通人是真正的“侠者”！",
-      "type": "episode",
-      "route": "episodes/EP202",
-      "summary": "一部叫《牛来》的电影突然火遍全网，有人捧成打破规则的神作，有人骂它粗制滥造。节目不评片子拍得怎么样，只拆它为什么能火成这样。第一层，年轻人手里没有多少正常的情绪出口，围着一件人人都知道很烂的东西起哄，成了最便宜的社交货币，要紧的是我参与过这件事，片子好不好笑排在后面。第二层，那块金灿灿的龙标才是真正的笑点，审核的力气全压在价值导向上，质量这一头就松成了筛子。第三层，片子本身什么都没说清，观众把自己对打破规则的渴望读了进去。真正把这件事做成现象的，是每一个转发、吐槽、写长文解读的普通人。",
-      "status": "curated",
-      "degree": 7
-    },
-    {
       "id": "model:safety-valve-governance",
       "key": "safety-valve-governance",
       "label": "安全阀治理模型",
@@ -3311,6 +3322,17 @@
       "type": "person",
       "route": "people/lee-hsien-loong",
       "summary": "李显龙是新加坡前总理、现任国务资政，节目借他理解新加坡务实外交、国家身份边界和小国平衡逻辑。",
+      "status": null,
+      "degree": 6
+    },
+    {
+      "id": "concept:authority-internalization",
+      "key": "authority-internalization",
+      "label": "权威内化",
+      "fullLabel": "权威内化",
+      "type": "concept",
+      "route": "concepts/authority-internalization",
+      "summary": "外部权威被吸收到人格内部后，个体会在家庭、职场和亲密关系中自动低位化。",
       "status": null,
       "degree": 6
     },
@@ -3465,6 +3487,17 @@
       "type": "person",
       "route": "people/zhang-xuefeng",
       "summary": "张雪峰（张子彪，1984-2026）是考研与升学规划领域的公众人物，节目借他观察教育焦虑、安全阀和稳定路径叙事。",
+      "status": null,
+      "degree": 6
+    },
+    {
+      "id": "concept:long-termism",
+      "key": "long-termism",
+      "label": "长期主义",
+      "fullLabel": "长期主义",
+      "type": "concept",
+      "route": "concepts/long-termism",
+      "summary": "以几十年甚至百年为尺度做决策，前期为长远格局多花成本、多做规划，而不是被短期利益和政绩驱动。",
       "status": null,
       "degree": 6
     },
@@ -3953,17 +3986,6 @@
       "degree": 5
     },
     {
-      "id": "concept:authority-internalization",
-      "key": "authority-internalization",
-      "label": "权威内化",
-      "fullLabel": "权威内化",
-      "type": "concept",
-      "route": "concepts/authority-internalization",
-      "summary": "外部权威被吸收到人格内部后，个体会在家庭、职场和亲密关系中自动低位化。",
-      "status": null,
-      "degree": 5
-    },
-    {
       "id": "concept:pressure-backfire",
       "key": "pressure-backfire",
       "label": "外压反噬",
@@ -4048,17 +4070,6 @@
       "type": "theme",
       "route": "themes/war-system-and-succession-risk",
       "summary": "讨论战争国家在长期高压运转下，如何同时面临兵员枯竭、内部老化与接班断层。",
-      "status": null,
-      "degree": 5
-    },
-    {
-      "id": "concept:long-termism",
-      "key": "long-termism",
-      "label": "长期主义",
-      "fullLabel": "长期主义",
-      "type": "concept",
-      "route": "concepts/long-termism",
-      "summary": "以几十年甚至百年为尺度做决策，前期为长远格局多花成本、多做规划，而不是被短期利益和政绩驱动。",
       "status": null,
       "degree": 5
     },
@@ -4602,6 +4613,17 @@
       "degree": 4
     },
     {
+      "id": "concept:collective-self-domestication",
+      "key": "collective-self-domestication",
+      "label": "群体自我驯化",
+      "fullLabel": "群体自我驯化",
+      "type": "concept",
+      "route": "concepts/collective-self-domestication",
+      "summary": "一个群体靠贬低外圈、强化内部认同来确立优越地位，把成员自愿地圈进一套自我安抚的逻辑里。",
+      "status": null,
+      "degree": 4
+    },
+    {
       "id": "concept:weapons-of-the-weak",
       "key": "weapons-of-the-weak",
       "label": "弱者的武器",
@@ -4877,6 +4899,17 @@
       "degree": 4
     },
     {
+      "id": "episode:EP084",
+      "key": "EP084",
+      "label": "EP084",
+      "fullLabel": "EP084 · 春晚机器人吹上天际，叫好声背后，谁将是最大的受害者？",
+      "type": "episode",
+      "route": "episodes/EP084",
+      "summary": "春晚机器人这波热潮不值得乐观。春晚舞台上被夸张歌颂的，并不是真正具备环境感知和自主决策能力的通用智能。它更像一种“标准劳动力的美学展示”。真正需要警惕的不是机器会不会跳舞。而是重复劳动越来越容易被机器接管之后的事。普通人是否会被推向更低位，却又被迫为这种替代欢呼。",
+      "status": "curated",
+      "degree": 4
+    },
+    {
       "id": "episode:EP089",
       "key": "EP089",
       "label": "EP089",
@@ -4976,6 +5009,17 @@
       "degree": 3
     },
     {
+      "id": "theme:trauma-memory-and-generational-loop",
+      "key": "trauma-memory-and-generational-loop",
+      "label": "创伤记忆与代际循环",
+      "fullLabel": "创伤记忆与代际循环",
+      "type": "theme",
+      "route": "themes/trauma-memory-and-generational-loop",
+      "summary": "讨论旧创伤如何在新的现实压力下被误读、怀旧和再次传递。",
+      "status": null,
+      "degree": 3
+    },
+    {
       "id": "concept:danwei-revival",
       "key": "danwei-revival",
       "label": "单位制回潮",
@@ -5027,6 +5071,17 @@
       "type": "concept",
       "route": "concepts/truth-indifferent-rhetoric",
       "summary": "话术若只追求立场效果和情绪动员，就会对真假本身变得冷漠。",
+      "status": null,
+      "degree": 3
+    },
+    {
+      "id": "concept:dual-track-review-system",
+      "key": "dual-track-review-system",
+      "label": "分层审核制度",
+      "fullLabel": "分层审核制度",
+      "type": "concept",
+      "route": "concepts/dual-track-review-system",
+      "summary": "同一类内容因为投资规模、平台主推程度和发行路径不同，进入不同审核通道。",
       "status": null,
       "degree": 3
     },
@@ -5207,6 +5262,17 @@
       "degree": 3
     },
     {
+      "id": "theme:cross-disciplinary-education-and-report-culture",
+      "key": "cross-disciplinary-education-and-report-culture",
+      "label": "跨学科教育与举报文化",
+      "fullLabel": "跨学科教育与举报文化",
+      "type": "theme",
+      "route": "themes/cross-disciplinary-education-and-report-culture",
+      "summary": "关注大学课堂为何越来越难容纳真正有启发性的跨学科教学。",
+      "status": null,
+      "degree": 3
+    },
+    {
       "id": "person:lei-jun",
       "key": "lei-jun",
       "label": "雷军",
@@ -5335,17 +5401,6 @@
       "type": "concept",
       "route": "concepts/globalization-as-disclosure",
       "summary": "全球化的本质是各国把生产、消费和价格公开披露，形成像上市公司体系那样透明的市场；灰色贸易就是绕开披露、退回不透明的国与国交易。",
-      "status": null,
-      "degree": 3
-    },
-    {
-      "id": "concept:collective-self-domestication",
-      "key": "collective-self-domestication",
-      "label": "群体自我驯化",
-      "fullLabel": "群体自我驯化",
-      "type": "concept",
-      "route": "concepts/collective-self-domestication",
-      "summary": "一个群体靠贬低外圈、强化内部认同来确立优越地位，把成员自愿地圈进一套自我安抚的逻辑里。",
       "status": null,
       "degree": 3
     },
@@ -5614,17 +5669,6 @@
       "degree": 3
     },
     {
-      "id": "episode:EP084",
-      "key": "EP084",
-      "label": "EP084",
-      "fullLabel": "EP084 · 春晚机器人吹上天际，叫好声背后，谁将是最大的受害者？",
-      "type": "episode",
-      "route": "episodes/EP084",
-      "summary": "春晚机器人这波热潮不值得乐观。春晚舞台上被夸张歌颂的，并不是真正具备环境感知和自主决策能力的通用智能。它更像一种“标准劳动力的美学展示”。真正需要警惕的不是机器会不会跳舞。而是重复劳动越来越容易被机器接管之后的事。普通人是否会被推向更低位，却又被迫为这种替代欢呼。",
-      "status": "curated",
-      "degree": 3
-    },
-    {
       "id": "episode:EP085",
       "key": "EP085",
       "label": "EP085",
@@ -5713,17 +5757,6 @@
       "degree": 2
     },
     {
-      "id": "theme:trauma-memory-and-generational-loop",
-      "key": "trauma-memory-and-generational-loop",
-      "label": "创伤记忆与代际循环",
-      "fullLabel": "创伤记忆与代际循环",
-      "type": "theme",
-      "route": "themes/trauma-memory-and-generational-loop",
-      "summary": "讨论旧创伤如何在新的现实压力下被误读、怀旧和再次传递。",
-      "status": null,
-      "degree": 2
-    },
-    {
       "id": "model:trauma-loop",
       "key": "trauma-loop",
       "label": "创伤循环模型",
@@ -5742,6 +5775,17 @@
       "type": "concept",
       "route": "concepts/deposit-funded-debt-rollover",
       "summary": "居民的低息存款被银行拿去置换地方的高息旧债，化债省下来的利息，实际由存钱的人用被压低的收益承担。",
+      "status": null,
+      "degree": 2
+    },
+    {
+      "id": "concept:intergenerational-resentment",
+      "key": "intergenerational-resentment",
+      "label": "代际怨恨继承",
+      "fullLabel": "代际怨恨继承",
+      "type": "concept",
+      "route": "concepts/intergenerational-resentment",
+      "summary": "下一代既受益于父辈资源，又被父辈逻辑伤害时，怨恨会以反叛和复制并存的方式延续。",
       "status": null,
       "degree": 2
     },
@@ -5801,13 +5845,13 @@
       "degree": 2
     },
     {
-      "id": "concept:dual-track-review-system",
-      "key": "dual-track-review-system",
-      "label": "分层审核制度",
-      "fullLabel": "分层审核制度",
+      "id": "concept:consensus-redline",
+      "key": "consensus-redline",
+      "label": "共识红线",
+      "fullLabel": "共识红线",
       "type": "concept",
-      "route": "concepts/dual-track-review-system",
-      "summary": "同一类内容因为投资规模、平台主推程度和发行路径不同，进入不同审核通道。",
+      "route": "concepts/consensus-redline",
+      "summary": "一个地方真正管住行为的有两套规矩，写在纸上的法条，和写在当地人心里的共识，后者没有条文却照样有惩罚。",
       "status": null,
       "degree": 2
     },
@@ -5889,6 +5933,17 @@
       "degree": 2
     },
     {
+      "id": "concept:black-red-promotion",
+      "key": "black-red-promotion",
+      "label": "黑红宣发",
+      "fullLabel": "黑红宣发",
+      "type": "concept",
+      "route": "concepts/black-red-promotion",
+      "summary": "争议、嘲笑和反感也能被平台计入热度，黑红宣发就是把被骂转化为传播资产。",
+      "status": null,
+      "degree": 2
+    },
+    {
       "id": "theme:recycling-and-pollution-transfer",
       "key": "recycling-and-pollution-transfer",
       "label": "回收生意与污染转移",
@@ -5966,6 +6021,17 @@
       "degree": 2
     },
     {
+      "id": "concept:invoice-economy",
+      "key": "invoice-economy",
+      "label": "开票经济",
+      "fullLabel": "开票经济",
+      "type": "concept",
+      "route": "concepts/invoice-economy",
+      "summary": "空壳公司、虚开发票和税收返还能堆出漂亮数字，却未必创造真实商品、服务和财富。",
+      "status": null,
+      "degree": 2
+    },
+    {
       "id": "concept:audience-retargeting",
       "key": "audience-retargeting",
       "label": "客群重写",
@@ -6006,17 +6072,6 @@
       "type": "theme",
       "route": "themes/cross-border-ecommerce-and-manufacturing-trap",
       "summary": "跨境电商被包装成新出路时，制造商往往承担了最多的不确定性，却未必拿到真正稳定的利润。",
-      "status": null,
-      "degree": 2
-    },
-    {
-      "id": "theme:cross-disciplinary-education-and-report-culture",
-      "key": "cross-disciplinary-education-and-report-culture",
-      "label": "跨学科教育与举报文化",
-      "fullLabel": "跨学科教育与举报文化",
-      "type": "theme",
-      "route": "themes/cross-disciplinary-education-and-report-culture",
-      "summary": "关注大学课堂为何越来越难容纳真正有启发性的跨学科教学。",
       "status": null,
       "degree": 2
     },
@@ -6109,6 +6164,17 @@
       "degree": 2
     },
     {
+      "id": "concept:panic-premium",
+      "key": "panic-premium",
+      "label": "情绪溢价",
+      "fullLabel": "情绪溢价",
+      "type": "concept",
+      "route": "concepts/panic-premium",
+      "summary": "价格被恐慌、跟风和错过焦虑推高时，超出基本面的部分就是情绪溢价。",
+      "status": null,
+      "degree": 2
+    },
+    {
       "id": "concept:channel-profit-reservoir",
       "key": "channel-profit-reservoir",
       "label": "渠道利润蓄水池",
@@ -6160,6 +6226,17 @@
       "type": "concept",
       "route": "concepts/time-window-reading",
       "summary": "同一动作在不同周期中的意义不同，判断决策必须先看它发生在哪个时间窗口。",
+      "status": null,
+      "degree": 2
+    },
+    {
+      "id": "concept:random-walk-arrogance",
+      "key": "random-walk-arrogance",
+      "label": "随机漫步式傲慢",
+      "fullLabel": "随机漫步式傲慢",
+      "type": "concept",
+      "route": "concepts/random-walk-arrogance",
+      "summary": "在上升周期中撞上好运的人，容易把随机红利误读成自己掌握了世界规律。",
       "status": null,
       "degree": 2
     },
@@ -6604,17 +6681,6 @@
       "degree": 1
     },
     {
-      "id": "concept:intergenerational-resentment",
-      "key": "intergenerational-resentment",
-      "label": "代际怨恨继承",
-      "fullLabel": "代际怨恨继承",
-      "type": "concept",
-      "route": "concepts/intergenerational-resentment",
-      "summary": "下一代既受益于父辈资源，又被父辈逻辑伤害时，怨恨会以反叛和复制并存的方式延续。",
-      "status": null,
-      "degree": 1
-    },
-    {
       "id": "person:dong-yuhui",
       "key": "dong-yuhui",
       "label": "董宇辉",
@@ -6703,17 +6769,6 @@
       "degree": 1
     },
     {
-      "id": "concept:consensus-redline",
-      "key": "consensus-redline",
-      "label": "共识红线",
-      "fullLabel": "共识红线",
-      "type": "concept",
-      "route": "concepts/consensus-redline",
-      "summary": "一个地方真正管住行为的有两套规矩，写在纸上的法条，和写在当地人心里的共识，后者没有条文却照样有惩罚。",
-      "status": null,
-      "degree": 1
-    },
-    {
       "id": "model:rule-charity-bridge",
       "key": "rule-charity-bridge",
       "label": "规则善意桥接模型",
@@ -6765,17 +6820,6 @@
       "type": "person",
       "route": "people/he-rundong",
       "summary": "何润东是华语影视演员，节目借他在《楚汉传奇》中的项羽形象反照流量影视里角色真实感被人设维护挤压的问题。",
-      "status": null,
-      "degree": 1
-    },
-    {
-      "id": "concept:black-red-promotion",
-      "key": "black-red-promotion",
-      "label": "黑红宣发",
-      "fullLabel": "黑红宣发",
-      "type": "concept",
-      "route": "concepts/black-red-promotion",
-      "summary": "争议、嘲笑和反感也能被平台计入热度，黑红宣发就是把被骂转化为传播资产。",
       "status": null,
       "degree": 1
     },
@@ -6853,17 +6897,6 @@
       "type": "person",
       "route": "people/jin-keyu",
       "summary": "金刻羽是香港科技大学金融学教授，节目借她在保利德夜宴叙事中的位置观察学术名片、官商想象和融资背书如何互相增信。",
-      "status": null,
-      "degree": 1
-    },
-    {
-      "id": "concept:invoice-economy",
-      "key": "invoice-economy",
-      "label": "开票经济",
-      "fullLabel": "开票经济",
-      "type": "concept",
-      "route": "concepts/invoice-economy",
-      "summary": "空壳公司、虚开发票和税收返还能堆出漂亮数字，却未必创造真实商品、服务和财富。",
       "status": null,
       "degree": 1
     },
@@ -7176,17 +7209,6 @@
       "degree": 1
     },
     {
-      "id": "concept:panic-premium",
-      "key": "panic-premium",
-      "label": "情绪溢价",
-      "fullLabel": "情绪溢价",
-      "type": "concept",
-      "route": "concepts/panic-premium",
-      "summary": "价格被恐慌、跟风和错过焦虑推高时，超出基本面的部分就是情绪溢价。",
-      "status": null,
-      "degree": 1
-    },
-    {
       "id": "concept:manufactured-popularity",
       "key": "manufactured-popularity",
       "label": "人气制造",
@@ -7282,17 +7304,6 @@
       "type": "person",
       "route": "people/to-lam",
       "summary": "苏林是越共中央总书记兼越南国家主席，节目借他的一肩挑讨论越南从集体领导回到强人时代的风险。",
-      "status": null,
-      "degree": 1
-    },
-    {
-      "id": "concept:random-walk-arrogance",
-      "key": "random-walk-arrogance",
-      "label": "随机漫步式傲慢",
-      "fullLabel": "随机漫步式傲慢",
-      "type": "concept",
-      "route": "concepts/random-walk-arrogance",
-      "summary": "在上升周期中撞上好运的人，容易把随机红利误读成自己掌握了世界规律。",
       "status": null,
       "degree": 1
     },
@@ -20833,6 +20844,166 @@
     {
       "source": "live:LIVE033",
       "target": "theme:middle-class-descent-and-stratification",
+      "kind": "live-theme"
+    },
+    {
+      "source": "live:LIVE034",
+      "target": "episode:EP202",
+      "kind": "live-episode"
+    },
+    {
+      "source": "live:LIVE034",
+      "target": "episode:EP193",
+      "kind": "live-episode"
+    },
+    {
+      "source": "live:LIVE034",
+      "target": "episode:EP142",
+      "kind": "live-episode"
+    },
+    {
+      "source": "live:LIVE034",
+      "target": "episode:EP195",
+      "kind": "live-episode"
+    },
+    {
+      "source": "live:LIVE034",
+      "target": "episode:EP173",
+      "kind": "live-episode"
+    },
+    {
+      "source": "live:LIVE034",
+      "target": "episode:EP084",
+      "kind": "live-episode"
+    },
+    {
+      "source": "live:LIVE034",
+      "target": "episode:EP118",
+      "kind": "live-episode"
+    },
+    {
+      "source": "live:LIVE034",
+      "target": "episode:EP138",
+      "kind": "live-episode"
+    },
+    {
+      "source": "live:LIVE034",
+      "target": "episode:EP111",
+      "kind": "live-episode"
+    },
+    {
+      "source": "live:LIVE034",
+      "target": "episode:EP199",
+      "kind": "live-episode"
+    },
+    {
+      "source": "live:LIVE034",
+      "target": "episode:EP200",
+      "kind": "live-episode"
+    },
+    {
+      "source": "live:LIVE034",
+      "target": "concept:premium-narrative",
+      "kind": "live-concept"
+    },
+    {
+      "source": "live:LIVE034",
+      "target": "concept:panic-premium",
+      "kind": "live-concept"
+    },
+    {
+      "source": "live:LIVE034",
+      "target": "concept:standard-labor-replacement",
+      "kind": "live-concept"
+    },
+    {
+      "source": "live:LIVE034",
+      "target": "concept:dual-track-review-system",
+      "kind": "live-concept"
+    },
+    {
+      "source": "live:LIVE034",
+      "target": "concept:black-red-promotion",
+      "kind": "live-concept"
+    },
+    {
+      "source": "live:LIVE034",
+      "target": "concept:authority-internalization",
+      "kind": "live-concept"
+    },
+    {
+      "source": "live:LIVE034",
+      "target": "concept:random-walk-arrogance",
+      "kind": "live-concept"
+    },
+    {
+      "source": "live:LIVE034",
+      "target": "concept:collective-self-domestication",
+      "kind": "live-concept"
+    },
+    {
+      "source": "live:LIVE034",
+      "target": "concept:long-termism",
+      "kind": "live-concept"
+    },
+    {
+      "source": "live:LIVE034",
+      "target": "concept:invoice-economy",
+      "kind": "live-concept"
+    },
+    {
+      "source": "live:LIVE034",
+      "target": "concept:consensus-redline",
+      "kind": "live-concept"
+    },
+    {
+      "source": "live:LIVE034",
+      "target": "concept:intergenerational-resentment",
+      "kind": "live-concept"
+    },
+    {
+      "source": "live:LIVE034",
+      "target": "concept:organizational-silence",
+      "kind": "live-concept"
+    },
+    {
+      "source": "live:LIVE034",
+      "target": "model:narrative-leverage",
+      "kind": "live-model"
+    },
+    {
+      "source": "live:LIVE034",
+      "target": "model:narrative-instrumentalization",
+      "kind": "live-model"
+    },
+    {
+      "source": "live:LIVE034",
+      "target": "theme:narrative-speculation-and-retail-traps",
+      "kind": "live-theme"
+    },
+    {
+      "source": "live:LIVE034",
+      "target": "theme:ai-and-human-creativity",
+      "kind": "live-theme"
+    },
+    {
+      "source": "live:LIVE034",
+      "target": "theme:cross-disciplinary-education-and-report-culture",
+      "kind": "live-theme"
+    },
+    {
+      "source": "live:LIVE034",
+      "target": "theme:trauma-memory-and-generational-loop",
+      "kind": "live-theme"
+    },
+    {
+      "source": "live:LIVE034",
+      "target": "theme:platform-governance-and-folk-discourse",
+      "kind": "live-theme"
+    },
+    {
+      "source": "live:LIVE034",
+      "target": "theme:youth-dreams-and-safe-paths",
       "kind": "live-theme"
     },
     {
