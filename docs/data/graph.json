@@ -2,14 +2,14 @@
   "meta": {
     "title": "颖响力知识图谱",
     "subtitle": "节目、概念、模型、人物、主题之间的可视化连接网络",
-    "nodeCount": 700,
-    "linkCount": 2706,
+    "nodeCount": 702,
+    "linkCount": 2715,
     "typeCounts": {
       "model": 82,
       "live": 34,
       "theme": 92,
-      "episode": 202,
-      "concept": 225,
+      "episode": 203,
+      "concept": 226,
       "person": 65
     }
   },
@@ -23,7 +23,7 @@
       "route": "models/risk-transfer-chain",
       "summary": "系统不会立刻吞下风险，而是先沿着银行、企业、票据、供应链和普通人之间不断转手、延后和下沉。",
       "status": null,
-      "degree": 48
+      "degree": 49
     },
     {
       "id": "live:LIVE002",
@@ -444,6 +444,17 @@
       "degree": 25
     },
     {
+      "id": "model:narrative-instrumentalization",
+      "key": "narrative-instrumentalization",
+      "label": "叙事工具化模型",
+      "fullLabel": "叙事工具化模型",
+      "type": "model",
+      "route": "models/narrative-instrumentalization",
+      "summary": "叙事工具化模型解释叙事的主要功能从解释现实转向组织情绪和划分阵营。",
+      "status": null,
+      "degree": 24
+    },
+    {
       "id": "episode:EP154",
       "key": "EP154",
       "label": "EP154",
@@ -453,17 +464,6 @@
       "summary": "香格里拉对话会上，美国防长赫格塞斯讲了一段话。多数解读抓住他“中美关系比多年来都好”的软话，认为是降调求稳。但那只是开场烟雾弹。真正的关键词是后半段的“围栏”。他已把边界划在第一岛链。所谓围栏是划在东亚家门口的高墙，链上地区都成不可逾越的红线。它接进川普的新门罗主义，建墙加打击灰色贸易。美军收拳后撤，让盟友顶前线守墙。东南亚是最后一段未定边界。香会就是逼骑墙国家选边的场，下集再谈各国怎么选。",
       "status": "curated",
       "degree": 24
-    },
-    {
-      "id": "model:narrative-instrumentalization",
-      "key": "narrative-instrumentalization",
-      "label": "叙事工具化模型",
-      "fullLabel": "叙事工具化模型",
-      "type": "model",
-      "route": "models/narrative-instrumentalization",
-      "summary": "叙事工具化模型解释叙事的主要功能从解释现实转向组织情绪和划分阵营。",
-      "status": null,
-      "degree": 23
     },
     {
       "id": "concept:chokepoint-leverage",
@@ -1588,6 +1588,17 @@
       "degree": 11
     },
     {
+      "id": "theme:youth-withdrawal-and-lying-flat",
+      "key": "youth-withdrawal-and-lying-flat",
+      "label": "年轻人退出与躺平",
+      "fullLabel": "年轻人退出与躺平",
+      "type": "theme",
+      "route": "themes/youth-withdrawal-and-lying-flat",
+      "summary": "讨论年轻人在主流机会、劳动回报和身份路径收缩后，如何通过低欲望、退出和躺平保留有限主体性。",
+      "status": null,
+      "degree": 11
+    },
+    {
       "id": "model:authority-misinfluence",
       "key": "authority-misinfluence",
       "label": "权威影响",
@@ -1782,17 +1793,6 @@
       "type": "concept",
       "route": "concepts/premium-narrative",
       "summary": "企业用定位、符号、方法论和品牌故事为高价格建立解释框架。",
-      "status": null,
-      "degree": 10
-    },
-    {
-      "id": "theme:youth-withdrawal-and-lying-flat",
-      "key": "youth-withdrawal-and-lying-flat",
-      "label": "年轻人退出与躺平",
-      "fullLabel": "年轻人退出与躺平",
-      "type": "theme",
-      "route": "themes/youth-withdrawal-and-lying-flat",
-      "summary": "讨论年轻人在主流机会、劳动回报和身份路径收缩后，如何通过低欲望、退出和躺平保留有限主体性。",
       "status": null,
       "degree": 10
     },
@@ -2299,6 +2299,17 @@
       "type": "episode",
       "route": "episodes/EP198",
       "summary": "江西一名儿科医生凌晨接诊两岁患儿，诊断肠梗阻收进住院，交班下班后患儿病情恶化，转院途中死亡。医院赔了一百四十六万，承担八成半责任，首诊医生被以医疗事故罪判了一年，缓刑一年，三年内不得从医。争议不在该不该罚，在罚到哪一步。漏做一项腹股沟查体是过失，把它认成刑法里的严重不负责任，中间还少了尸检这一环，用民事的可能性推出了刑事的确定性。这条线一旦划开，医生最理性的选择就变成自保。检查越开越多，能转诊就转诊，话只说最坏的一面。患者越追责，医生越退缩，先被卡住的是基层医院和最危重的那批人。",
+      "status": "curated",
+      "degree": 9
+    },
+    {
+      "id": "episode:EP203",
+      "key": "EP203",
+      "label": "EP203",
+      "fullLabel": "EP203 · 扒开时代峰峻事件的底层逻辑：对立，是最便宜的流量密码！",
+      "type": "episode",
+      "route": "episodes/EP203",
+      "summary": "重庆时代峰峻楼下的聚集闹成了群体事件，网上吵的几乎全是男女对立。真正在水下的是流量行业玩了十几年的老套路。十几年前在机场安排两拨粉丝同时接机，挤爆玻璃、闹上新闻，路数一模一样。易烊千玺靠一部残障题材的电影重新拿回关注度，那是他一个人的本事，代表不了没出圈的第五代第六代练习生。发作品慢又费钱，搭一个对立的架子最便宜，两边自己就吵起来。围在门口喊老公的粉丝，和举着手机开直播喊正义的男性，都在分这波热度。公司隐身，骂声落在粉丝身上。真正让由头一给就上头的，是大量年轻人失业半失业、情绪没有地方去。",
       "status": "curated",
       "degree": 9
     },
@@ -3018,6 +3029,17 @@
       "degree": 7
     },
     {
+      "id": "theme:film-industry-and-traffic-logic",
+      "key": "film-industry-and-traffic-logic",
+      "label": "影视工业与流量逻辑",
+      "fullLabel": "影视工业与流量逻辑",
+      "type": "theme",
+      "route": "themes/film-industry-and-traffic-logic",
+      "summary": "关注影视生产如何越来越服从人设、粉丝和宣发流量，而非角色与作品本身。",
+      "status": null,
+      "degree": 7
+    },
+    {
       "id": "concept:expectation-selling",
       "key": "expectation-selling",
       "label": "预期贩卖",
@@ -3282,6 +3304,17 @@
       "degree": 6
     },
     {
+      "id": "theme:public-space-and-civic-maturity",
+      "key": "public-space-and-civic-maturity",
+      "label": "公共空间与公民成熟",
+      "fullLabel": "公共空间与公民成熟",
+      "type": "theme",
+      "route": "themes/public-space-and-civic-maturity",
+      "summary": "讨论个体在公共场景里如何同时拥有权利意识、规则意识、义务感和稳定自尊。",
+      "status": null,
+      "degree": 6
+    },
+    {
       "id": "concept:sea-laundering",
       "key": "sea-laundering",
       "label": "海上洗白",
@@ -3447,17 +3480,6 @@
       "degree": 6
     },
     {
-      "id": "theme:film-industry-and-traffic-logic",
-      "key": "film-industry-and-traffic-logic",
-      "label": "影视工业与流量逻辑",
-      "fullLabel": "影视工业与流量逻辑",
-      "type": "theme",
-      "route": "themes/film-industry-and-traffic-logic",
-      "summary": "关注影视生产如何越来越服从人设、粉丝和宣发流量，而非角色与作品本身。",
-      "status": null,
-      "degree": 6
-    },
-    {
       "id": "concept:shadow-fleet",
       "key": "shadow-fleet",
       "label": "影子舰队",
@@ -3531,6 +3553,17 @@
       "type": "theme",
       "route": "themes/housing-burden-and-income-distribution",
       "summary": "讨论住房、税负和可支配收入之间的关系，尤其关注中低收入群体被抽走了多少上升空间。",
+      "status": null,
+      "degree": 6
+    },
+    {
+      "id": "model:attention-commerce-loop",
+      "key": "attention-commerce-loop",
+      "label": "注意力商业闭环",
+      "fullLabel": "注意力商业闭环",
+      "type": "model",
+      "route": "models/attention-commerce-loop",
+      "summary": "注意力商业闭环解释内容如何先制造注意力，再把注意力结算为品牌、交易或平台收益。",
       "status": null,
       "degree": 6
     },
@@ -3773,17 +3806,6 @@
       "type": "theme",
       "route": "themes/public-service-downgrading",
       "summary": "当财政和治理优先考虑控费，公共服务最常见的结果就是标准被整体压低。",
-      "status": null,
-      "degree": 5
-    },
-    {
-      "id": "theme:public-space-and-civic-maturity",
-      "key": "public-space-and-civic-maturity",
-      "label": "公共空间与公民成熟",
-      "fullLabel": "公共空间与公民成熟",
-      "type": "theme",
-      "route": "themes/public-space-and-civic-maturity",
-      "summary": "讨论个体在公共场景里如何同时拥有权利意识、规则意识、义务感和稳定自尊。",
       "status": null,
       "degree": 5
     },
@@ -4070,17 +4092,6 @@
       "type": "theme",
       "route": "themes/war-system-and-succession-risk",
       "summary": "讨论战争国家在长期高压运转下，如何同时面临兵员枯竭、内部老化与接班断层。",
-      "status": null,
-      "degree": 5
-    },
-    {
-      "id": "model:attention-commerce-loop",
-      "key": "attention-commerce-loop",
-      "label": "注意力商业闭环",
-      "fullLabel": "注意力商业闭环",
-      "type": "model",
-      "route": "models/attention-commerce-loop",
-      "summary": "注意力商业闭环解释内容如何先制造注意力，再把注意力结算为品牌、交易或平台收益。",
       "status": null,
       "degree": 5
     },
@@ -6164,6 +6175,17 @@
       "degree": 2
     },
     {
+      "id": "concept:emotion-front-running",
+      "key": "emotion-front-running",
+      "label": "情绪抢跑",
+      "fullLabel": "情绪抢跑",
+      "type": "concept",
+      "route": "concepts/emotion-front-running",
+      "summary": "完整事实还没出来，情绪先被点燃、站队先完成，等反转来了，跟着上头的人只剩挨打脸。",
+      "status": null,
+      "degree": 2
+    },
+    {
       "id": "concept:panic-premium",
       "key": "panic-premium",
       "label": "情绪溢价",
@@ -6204,6 +6226,17 @@
       "type": "concept",
       "route": "concepts/human-centered-contract",
       "summary": "国家信用不仅来自实力，也来自关键时刻愿不愿为具体个体生命履约。",
+      "status": null,
+      "degree": 2
+    },
+    {
+      "id": "concept:manufactured-popularity",
+      "key": "manufactured-popularity",
+      "label": "人气制造",
+      "fullLabel": "人气制造",
+      "type": "concept",
+      "route": "concepts/manufactured-popularity",
+      "summary": "公开场面上的热度不是自己聚起来的，是运营方放风、组织、安排出来的，做出来之后再当成实力证据卖给品牌方和平台。",
       "status": null,
       "degree": 2
     },
@@ -6703,6 +6736,17 @@
       "degree": 1
     },
     {
+      "id": "concept:manufactured-antagonism",
+      "key": "manufactured-antagonism",
+      "label": "对立制造",
+      "fullLabel": "对立制造",
+      "type": "concept",
+      "route": "concepts/manufactured-antagonism",
+      "summary": "热度不够的时候，把人分成对立的两拨比做出好东西便宜得多，架子一搭，两边自己就吵起来，事件也就有了。",
+      "status": null,
+      "degree": 1
+    },
+    {
       "id": "concept:multiethnic-nation-building",
       "key": "multiethnic-nation-building",
       "label": "多元立国",
@@ -7194,28 +7238,6 @@
       "type": "concept",
       "route": "concepts/youth-mobilization",
       "summary": "年轻选民从缺席变成集中出场，长期执政者赖以维持的年龄结构就会塌掉；决定选举的往往不是谁在台上站台，是谁肯出门。",
-      "status": null,
-      "degree": 1
-    },
-    {
-      "id": "concept:emotion-front-running",
-      "key": "emotion-front-running",
-      "label": "情绪抢跑",
-      "fullLabel": "情绪抢跑",
-      "type": "concept",
-      "route": "concepts/emotion-front-running",
-      "summary": "完整事实还没出来，情绪先被点燃、站队先完成，等反转来了，跟着上头的人只剩挨打脸。",
-      "status": null,
-      "degree": 1
-    },
-    {
-      "id": "concept:manufactured-popularity",
-      "key": "manufactured-popularity",
-      "label": "人气制造",
-      "fullLabel": "人气制造",
-      "type": "concept",
-      "route": "concepts/manufactured-popularity",
-      "summary": "公开场面上的热度不是自己聚起来的，是运营方放风、组织、安排出来的，做出来之后再当成实力证据卖给品牌方和平台。",
       "status": null,
       "degree": 1
     },
@@ -15604,6 +15626,51 @@
     {
       "source": "episode:EP202",
       "target": "theme:content-regulation-and-short-drama",
+      "kind": "episode-theme"
+    },
+    {
+      "source": "episode:EP203",
+      "target": "concept:manufactured-antagonism",
+      "kind": "episode-concept"
+    },
+    {
+      "source": "episode:EP203",
+      "target": "concept:manufactured-popularity",
+      "kind": "episode-concept"
+    },
+    {
+      "source": "episode:EP203",
+      "target": "concept:emotion-front-running",
+      "kind": "episode-concept"
+    },
+    {
+      "source": "episode:EP203",
+      "target": "model:attention-commerce-loop",
+      "kind": "episode-model"
+    },
+    {
+      "source": "episode:EP203",
+      "target": "model:narrative-instrumentalization",
+      "kind": "episode-model"
+    },
+    {
+      "source": "episode:EP203",
+      "target": "model:risk-transfer-chain",
+      "kind": "episode-model"
+    },
+    {
+      "source": "episode:EP203",
+      "target": "theme:film-industry-and-traffic-logic",
+      "kind": "episode-theme"
+    },
+    {
+      "source": "episode:EP203",
+      "target": "theme:public-space-and-civic-maturity",
+      "kind": "episode-theme"
+    },
+    {
+      "source": "episode:EP203",
+      "target": "theme:youth-withdrawal-and-lying-flat",
       "kind": "episode-theme"
     },
     {

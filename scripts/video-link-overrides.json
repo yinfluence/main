@@ -974,5 +974,16 @@
       "platform": "youtube",
       "url": "https://www.youtube.com/watch?v=oQNmd54BpCs"
     }
+  },
+  "EP203": {
+    "bilibili": {
+      "platform": "bilibili",
+      "url": "https://www.bilibili.com/video/BV13w8t66EET/",
+      "access": "member"
+    },
+    "youtube": {
+      "platform": "youtube",
+      "url": "https://www.youtube.com/watch?v=5kYfpkGntE0"
+    }
   }
 }
