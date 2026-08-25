@@ -2,14 +2,14 @@
   "meta": {
     "title": "颖响力知识图谱",
     "subtitle": "节目、概念、模型、人物、主题之间的可视化连接网络",
-    "nodeCount": 702,
-    "linkCount": 2715,
+    "nodeCount": 704,
+    "linkCount": 2725,
     "typeCounts": {
       "model": 82,
       "live": 34,
       "theme": 92,
-      "episode": 203,
-      "concept": 226,
+      "episode": 204,
+      "concept": 227,
       "person": 65
     }
   },
@@ -23,7 +23,7 @@
       "route": "models/risk-transfer-chain",
       "summary": "系统不会立刻吞下风险，而是先沿着银行、企业、票据、供应链和普通人之间不断转手、延后和下沉。",
       "status": null,
-      "degree": 49
+      "degree": 50
     },
     {
       "id": "live:LIVE002",
@@ -477,6 +477,17 @@
       "degree": 23
     },
     {
+      "id": "theme:rule-of-law-boundaries-and-social-trust",
+      "key": "rule-of-law-boundaries-and-social-trust",
+      "label": "法治边界与社会信任",
+      "fullLabel": "法治边界与社会信任",
+      "type": "theme",
+      "route": "themes/rule-of-law-boundaries-and-social-trust",
+      "summary": "关注法律灰区如何影响公众的善意、风险感和彼此信任。",
+      "status": null,
+      "degree": 22
+    },
+    {
       "id": "episode:EP131",
       "key": "EP131",
       "label": "EP131",
@@ -519,17 +530,6 @@
       "summary": "灰色贸易的油三四十，按正常价签就是八十一百，这中间差着三成。",
       "status": "curated",
       "degree": 22
-    },
-    {
-      "id": "theme:rule-of-law-boundaries-and-social-trust",
-      "key": "rule-of-law-boundaries-and-social-trust",
-      "label": "法治边界与社会信任",
-      "fullLabel": "法治边界与社会信任",
-      "type": "theme",
-      "route": "themes/rule-of-law-boundaries-and-social-trust",
-      "summary": "关注法律灰区如何影响公众的善意、风险感和彼此信任。",
-      "status": null,
-      "degree": 21
     },
     {
       "id": "theme:maritime-chokepoints-and-route-order",
@@ -752,6 +752,17 @@
       "degree": 18
     },
     {
+      "id": "concept:cost-shifting",
+      "key": "cost-shifting",
+      "label": "成本外移",
+      "fullLabel": "成本外移",
+      "type": "concept",
+      "route": "concepts/cost-shifting",
+      "summary": "组织内部的高额非生产性成本，最终会通过价格、规则或风险转嫁给外部承担者。",
+      "status": null,
+      "degree": 18
+    },
+    {
       "id": "concept:pan-institutional-middle-class",
       "key": "pan-institutional-middle-class",
       "label": "泛体制中产",
@@ -783,17 +794,6 @@
       "summary": "耿同学举报学术造假。不重复图片复用和数据篡改的细节。要把论文造假和产业研发里的参数造假，放进同一套 KPI 逻辑里看。真正危险的不是几篇论文翻车，而是指标先被定死。真实实验达不到时，组织就改数据、锁显示、改测试，让结果看起来达标。某车企超充电池的温度显示被锁死在 71 度。技术卖点、营销节奏和绩效考核一旦压过安全边界，风险就会外溢。它从论文、实验室和发布会进入真实产品，最后由消费者和纳税人承担。",
       "status": "curated",
       "degree": 18
-    },
-    {
-      "id": "concept:cost-shifting",
-      "key": "cost-shifting",
-      "label": "成本外移",
-      "fullLabel": "成本外移",
-      "type": "concept",
-      "route": "concepts/cost-shifting",
-      "summary": "组织内部的高额非生产性成本，最终会通过价格、规则或风险转嫁给外部承担者。",
-      "status": null,
-      "degree": 17
     },
     {
       "id": "theme:local-fiscal-stress-and-hidden-debt",
@@ -1951,6 +1951,17 @@
       "degree": 10
     },
     {
+      "id": "episode:EP204",
+      "key": "EP204",
+      "label": "EP204",
+      "fullLabel": "EP204 · 甲醛白菜最让人无力的，是极限内卷下，没人能独善其身！中国制造的终极困局！",
+      "type": "episode",
+      "route": "episodes/EP204",
+      "summary": "张家口康保县的白菜在装车前整颗蘸进甲醛，路边小药瓶和蓝色大药罐一排摆着，收菜的、装车的、跑长途的都把它当成一道工序。白菜一斤几毛钱，改用冷藏车运费翻一倍，涨价卖不动，不涨价这一趟就白跑，蘸一遍药成了整条链上最划算的选项。难办的地方在这里，守规矩的人早被挤走了，剩下的人不这么干就活不下去，一件本该论对错的事变成了一笔成本账。同一批菜供给出口和会员店时自己收着，供给国内普通超市时换另一套做法，差别在于哪一头的账追得到人。留给普通人的办法只剩一条，在天天要吃要用的那几样上花钱买确定。",
+      "status": "curated",
+      "degree": 10
+    },
+    {
       "id": "concept:jurisdiction-arbitrage",
       "key": "jurisdiction-arbitrage",
       "label": "法域套利",
@@ -2024,6 +2035,17 @@
       "type": "model",
       "route": "models/time-arbitrage-model",
       "summary": "真正高明的行动，不是只比现在谁更强，而是比谁更懂得利用时间差、窗口差和成本差。",
+      "status": null,
+      "degree": 9
+    },
+    {
+      "id": "model:ex-post-accountability-governance",
+      "key": "ex-post-accountability-governance",
+      "label": "事后追责治理模型",
+      "fullLabel": "事后追责治理模型",
+      "type": "model",
+      "route": "models/ex-post-accountability-governance",
+      "summary": "治理可以选择事前管制每个人，也可以选择给自由、事后对违规者施加无法承受的代价；后者往往比前者更省成本也更有效。",
       "status": null,
       "degree": 9
     },
@@ -2336,6 +2358,17 @@
       "degree": 8
     },
     {
+      "id": "concept:price-war-trap",
+      "key": "price-war-trap",
+      "label": "低价竞争陷阱",
+      "fullLabel": "低价竞争陷阱",
+      "type": "concept",
+      "route": "concepts/price-war-trap",
+      "summary": "极致低价可以快速突袭，却可能在长期竞争中压缩技术升级、利润和战略空间。",
+      "status": null,
+      "degree": 8
+    },
+    {
       "id": "theme:east-asia-security-realignment",
       "key": "east-asia-security-realignment",
       "label": "东亚安全重组与日本转向",
@@ -2442,17 +2475,6 @@
       "type": "concept",
       "route": "concepts/time-asymmetry",
       "summary": "真正决定战略胜负的，往往不是一场仗的强弱，而是谁能把时间变成自己的朋友。",
-      "status": null,
-      "degree": 8
-    },
-    {
-      "id": "model:ex-post-accountability-governance",
-      "key": "ex-post-accountability-governance",
-      "label": "事后追责治理模型",
-      "fullLabel": "事后追责治理模型",
-      "type": "model",
-      "route": "models/ex-post-accountability-governance",
-      "summary": "治理可以选择事前管制每个人，也可以选择给自由、事后对违规者施加无法承受的代价；后者往往比前者更省成本也更有效。",
       "status": null,
       "degree": 8
     },
@@ -2919,17 +2941,6 @@
       "degree": 7
     },
     {
-      "id": "concept:price-war-trap",
-      "key": "price-war-trap",
-      "label": "低价竞争陷阱",
-      "fullLabel": "低价竞争陷阱",
-      "type": "concept",
-      "route": "concepts/price-war-trap",
-      "summary": "极致低价可以快速突袭，却可能在长期竞争中压缩技术升级、利润和战略空间。",
-      "status": null,
-      "degree": 7
-    },
-    {
       "id": "model:succession-governance",
       "key": "succession-governance",
       "label": "继承治理模型",
@@ -3014,6 +3025,17 @@
       "type": "concept",
       "route": "concepts/consumer-testbed",
       "summary": "企业把本该在研发和验证阶段承担的安全成本，转移到首批消费者、公共道路和真实事故里去消化。",
+      "status": null,
+      "degree": 7
+    },
+    {
+      "id": "theme:hidden-costs",
+      "key": "hidden-costs",
+      "label": "消费者为哪些隐性成本买单",
+      "fullLabel": "消费者为哪些隐性成本买单",
+      "type": "theme",
+      "route": "themes/hidden-costs",
+      "summary": "讨论消费者支付的价格中，有多少是在承担企业内部看不见的成本。",
       "status": null,
       "degree": 7
     },
@@ -3326,6 +3348,28 @@
       "degree": 6
     },
     {
+      "id": "concept:compliance-cost-gap",
+      "key": "compliance-cost-gap",
+      "label": "合规成本落差",
+      "fullLabel": "合规成本落差",
+      "type": "concept",
+      "route": "concepts/compliance-cost-gap",
+      "summary": "不同制度路径让同一市场里的生产者承担完全不同的时间、资金和不确定性成本。",
+      "status": null,
+      "degree": 6
+    },
+    {
+      "id": "model:regulatory-cost-arbitrage",
+      "key": "regulatory-cost-arbitrage",
+      "label": "合规成本套利模型",
+      "fullLabel": "合规成本套利模型",
+      "type": "model",
+      "route": "models/regulatory-cost-arbitrage",
+      "summary": "当同一市场存在多条监管路径，低合规成本路径会获得更高试错频率和更强替代能力。",
+      "status": null,
+      "degree": 6
+    },
+    {
       "id": "concept:family-succession-fracture",
       "key": "family-succession-fracture",
       "label": "继承性断裂",
@@ -3432,17 +3476,6 @@
       "type": "theme",
       "route": "themes/cash-optionality-and-liquidity-anxiety",
       "summary": "在高波动和低信任时期，流动性比账面资产更能决定一个人和机构的安全感。",
-      "status": null,
-      "degree": 6
-    },
-    {
-      "id": "theme:hidden-costs",
-      "key": "hidden-costs",
-      "label": "消费者为哪些隐性成本买单",
-      "fullLabel": "消费者为哪些隐性成本买单",
-      "type": "theme",
-      "route": "themes/hidden-costs",
-      "summary": "讨论消费者支付的价格中，有多少是在承担企业内部看不见的成本。",
       "status": null,
       "degree": 6
     },
@@ -3861,28 +3894,6 @@
       "type": "concept",
       "route": "concepts/route-substitution-illusion",
       "summary": "新的港口、陆路或航线可以分流局部业务，但很难在短期内替代真正的世界级主通道。",
-      "status": null,
-      "degree": 5
-    },
-    {
-      "id": "concept:compliance-cost-gap",
-      "key": "compliance-cost-gap",
-      "label": "合规成本落差",
-      "fullLabel": "合规成本落差",
-      "type": "concept",
-      "route": "concepts/compliance-cost-gap",
-      "summary": "不同制度路径让同一市场里的生产者承担完全不同的时间、资金和不确定性成本。",
-      "status": null,
-      "degree": 5
-    },
-    {
-      "id": "model:regulatory-cost-arbitrage",
-      "key": "regulatory-cost-arbitrage",
-      "label": "合规成本套利模型",
-      "fullLabel": "合规成本套利模型",
-      "type": "model",
-      "route": "models/regulatory-cost-arbitrage",
-      "summary": "当同一市场存在多条监管路径，低合规成本路径会获得更高试错频率和更强替代能力。",
       "status": null,
       "degree": 5
     },
@@ -4455,6 +4466,17 @@
       "type": "concept",
       "route": "concepts/moral-capital",
       "summary": "长期为他人承担和创造价值，会形成一种不能即时折现却能改变公共评价的道德资本。",
+      "status": null,
+      "degree": 4
+    },
+    {
+      "id": "theme:price-war-and-precision-competition",
+      "key": "price-war-and-precision-competition",
+      "label": "低价竞争与精准打击",
+      "fullLabel": "低价竞争与精准打击",
+      "type": "theme",
+      "route": "themes/price-war-and-precision-competition",
+      "summary": "讨论卷低价与做精准高价值打击之间的差别，以及两种竞争逻辑背后的阶层思维。",
       "status": null,
       "degree": 4
     },
@@ -5049,17 +5071,6 @@
       "type": "concept",
       "route": "concepts/moral-interpretive-authority",
       "summary": "一个群体自认有资格替他人和外部事物定义意义、判定对错，把别人收编进自己的叙事里。",
-      "status": null,
-      "degree": 3
-    },
-    {
-      "id": "theme:price-war-and-precision-competition",
-      "key": "price-war-and-precision-competition",
-      "label": "低价竞争与精准打击",
-      "fullLabel": "低价竞争与精准打击",
-      "type": "theme",
-      "route": "themes/price-war-and-precision-competition",
-      "summary": "讨论卷低价与做精准高价值打击之间的差别，以及两种竞争逻辑背后的阶层思维。",
       "status": null,
       "degree": 3
     },
@@ -7304,6 +7315,17 @@
       "type": "concept",
       "route": "concepts/uncontrolled-production-logic",
       "summary": "当生产门槛极低时，系统不再靠少数专业创作者保证质量，而是靠海量产出后的筛选找到少数可用作品。",
+      "status": null,
+      "degree": 1
+    },
+    {
+      "id": "concept:honest-player-exit",
+      "key": "honest-player-exit",
+      "label": "守规者出局",
+      "fullLabel": "守规者出局",
+      "type": "concept",
+      "route": "concepts/honest-player-exit",
+      "summary": "一个行业里守规矩的人先亏钱、先退出，留下来的人未必更坏，是被筛出来的那一批。",
       "status": null,
       "degree": 1
     },
@@ -15671,6 +15693,56 @@
     {
       "source": "episode:EP203",
       "target": "theme:youth-withdrawal-and-lying-flat",
+      "kind": "episode-theme"
+    },
+    {
+      "source": "episode:EP204",
+      "target": "concept:cost-shifting",
+      "kind": "episode-concept"
+    },
+    {
+      "source": "episode:EP204",
+      "target": "concept:price-war-trap",
+      "kind": "episode-concept"
+    },
+    {
+      "source": "episode:EP204",
+      "target": "concept:compliance-cost-gap",
+      "kind": "episode-concept"
+    },
+    {
+      "source": "episode:EP204",
+      "target": "concept:honest-player-exit",
+      "kind": "episode-concept"
+    },
+    {
+      "source": "episode:EP204",
+      "target": "model:regulatory-cost-arbitrage",
+      "kind": "episode-model"
+    },
+    {
+      "source": "episode:EP204",
+      "target": "model:risk-transfer-chain",
+      "kind": "episode-model"
+    },
+    {
+      "source": "episode:EP204",
+      "target": "model:ex-post-accountability-governance",
+      "kind": "episode-model"
+    },
+    {
+      "source": "episode:EP204",
+      "target": "theme:rule-of-law-boundaries-and-social-trust",
+      "kind": "episode-theme"
+    },
+    {
+      "source": "episode:EP204",
+      "target": "theme:hidden-costs",
+      "kind": "episode-theme"
+    },
+    {
+      "source": "episode:EP204",
+      "target": "theme:price-war-and-precision-competition",
       "kind": "episode-theme"
     },
     {

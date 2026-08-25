@@ -985,5 +985,15 @@
       "platform": "youtube",
       "url": "https://www.youtube.com/watch?v=5kYfpkGntE0"
     }
+  },
+  "EP204": {
+    "bilibili": {
+      "platform": "bilibili",
+      "url": "https://www.bilibili.com/video/BV1nNhG6jEtL/"
+    },
+    "youtube": {
+      "platform": "youtube",
+      "url": "https://www.youtube.com/watch?v=Na2Sk9yA_zI"
+    }
   }
 }
