@@ -316,8 +316,9 @@ scan_lives() {
       # 备好料之后连报 25 次，全写进 status.json 没人看见，两场压了五天没整理。
       # 待办名单没变就不再弹，否则每次唤起弹同一条，很快又会被当成噪音忽略掉。
       LAST=$(cat "logs/.last-pending-lives" 2>/dev/null || echo "")
-      if [[ "$IDS" != "$LAST" ]]; then
-        echo "$IDS" > "logs/.last-pending-lives"
+      echo "$IDS" > "logs/.last-pending-lives"
+      # 名单空了也要记下来（下次真有新场才算变化），但不为一份空名单弹窗
+      if [[ -n "$IDS" && "$IDS" != "$LAST" ]]; then
         popup "颖响力直播 🎙 有 $N 场等着整理" "$IDS
 
 转写稿已经备好，整理要在对话里做（见 sop/08）。"
