@@ -89,7 +89,12 @@ log() { echo "$(date '+%H:%M:%S') $*" >> "$LOG"; }
 # 锁里记 PID 和出生时间：以前是纯目录锁靠 trap 清理，claude 被 kill -9 或者
 # 休眠打断就会留下死锁，之后每一次 launchd 触发都被挡在门外，
 # 整个自动化静默死亡且毫无迹象。现在进程没了或者超龄就当僵死锁清掉。
-LOCK_MAX_AGE=7200   # 锁最多活 2 小时（整理硬上限 1 小时 + 余量）
+# 锁最多活 9 小时。2 小时是按「整理一次 1 小时加余量」算的，可实际最坏路径远不止：
+# 窗口循环本身能转 3 小时 40 分，节目整理最多重试三次（3 × 60 分钟加两次 5 分钟间隔），
+# 2026-08-27 加上直播整理之后又多一条同样长的路。超龄判定只在进程还活着时才误伤，
+# 一旦误伤就是两个实例同时写同一批文件，比留着一把死锁更糟。agent 那头有
+# AGENT_HARD_LIMIT 兜底，不会无限挂，所以这里放宽是安全的
+LOCK_MAX_AGE=32400
 if ! mkdir "$LOCK" 2>/dev/null; then
   OWNER=$(cat "$LOCK/pid" 2>/dev/null || echo "")
   BORN=$(cat "$LOCK/born" 2>/dev/null || echo 0)
@@ -295,12 +300,75 @@ scan_once() {
   esac
 }
 
+# 唤起 agent 整理直播，一轮做完清单里的所有场次。
+# 跟节目那条线共用 watch_agent / verify_online，另外多一道 audit-lives 闸门：
+# agent 的 SUMMARY 只是自我报告，机器检查和线上数据才作数。
+# 返回 0=已上线，20=失败可重试
+curate_lives_once() {
+  local IDS="$1" BEFORE AGENT_PID ACODE SUM
+  BEFORE=$(wc -l < "$LOG" 2>/dev/null || echo 0)
+  claude -p "$(cat "$WEB/scripts/daily-live-prompt.md")" \
+    --dangerously-skip-permissions >> "$LOG" 2>&1 &
+  AGENT_PID=$!
+  if watch_agent "$AGENT_PID"; then
+    wait "$AGENT_PID"; ACODE=$?
+  else
+    wait "$AGENT_PID" 2>/dev/null; ACODE=124
+  fi
+  if [[ $ACODE -ne 0 ]] || ! tail -n +$((BEFORE + 1)) "$LOG" | grep -q "SUMMARY:"; then
+    [[ $ACODE -ne 124 ]] && log "直播整理未确认成功（claude code=${ACODE}，本次输出里没有 SUMMARY）"
+    return 20
+  fi
+  SUM=$(tail -n +$((BEFORE + 1)) "$LOG" | grep "SUMMARY:" | tail -1 | sed 's/^.*SUMMARY: *//')
+  # 机器闸门：整理写坏了（缺链接、要点超 4 条、简介字数不对、tag 没词条）就不算成功。
+  # 直播的字段规矩比节目细，光靠 agent 自查兜不住
+  if ! node scripts/audit-lives.mjs >> "$LOG" 2>&1; then
+    log "直播整理没过 audit-lives，按失败处理：$SUM"
+    return 20
+  fi
+  if ! verify_online; then
+    log "agent 报告成功（${SUM}）但线上复核失败，按失败处理"
+    return 20
+  fi
+  log "直播整理完成且线上复核通过：$SUM"
+  notify "颖响力直播 ✅" "已自动上线：$SUM" "Glass"
+  popup "颖响力直播 ✅ 已上线" "$SUM
+
+线上已复核一致，可以直接看网页。"
+  return 0
+}
+
+# 失败就隔几分钟重试，草稿留在盘上，重扫会重新拾起。上限压死，别在出问题时无限烧钱
+curate_lives() {
+  local IDS="$1" tries=0 code
+  while :; do
+    curate_lives_once "$IDS"
+    code=$?
+    (( code == 0 )) && return 0
+    if (( tries >= RETRY_MAX )); then
+      log "直播整理连续失败 $((tries + 1)) 次，放弃本轮。待办留在 pending-lives.json，下次触发重试"
+      notify "颖响力直播 ⚠️" "整理失败 $((tries + 1)) 次已放弃（${IDS}）" "Basso"
+      popup "颖响力直播 ⚠️ 这几场没上线" "$IDS
+
+连续失败 $((tries + 1)) 次，本轮放弃。待办还在 workbench/pending-lives.json，
+下次触发会重新拾起。原因看 logs/auto-daily-$TODAY.log"  "error"
+      return 20
+    fi
+    tries=$((tries + 1))
+    log "直播整理失败，$((RETRY_GAP / 60)) 分钟后第 $tries 次重试"
+    sleep "$RETRY_GAP"
+  done
+}
+
 # 直播回放的扫描。跟节目是两条独立的线：
 #   - 节目在北京 19-21 点发，直播回放次日凌晨到清晨才传（28 场实测集中在 UTC 15-17 点，
 #     即北京 23:00-01:00，另有少量 UTC 22-23 点）。所以节目那个窗口一场都扫不到
 #   - 直播一周两场（周三、周六），不需要高频扫，每次 auto-daily 被唤起时顺带扫一次就够
-#   - 只备料不整理：下字幕、生成转写稿、写 pending-lives.json，然后通知。
-#     整理要逐句通读两三万字转写稿，按 sop/08 是主线程的活，不交给无人值守的 agent
+#   - 备料完接着整理上线（2026-08-27 改）。原来是只备料不整理，理由是通读两三万字
+#     转写稿该由主线程做。代价是备好的料没人接：LIVE035 从 8-23 起报了 25 次全写进
+#     status.json，LIVE036 跟着压上，两场搁了五天，网页上一场都看不到。现在照节目那条
+#     线的样子唤起 agent，同样有 watch_agent 看护、失败重试和线上独立复核，
+#     另外多一道闸门：agent 说完成之后外层再跑一次 audit-lives，不过就不算成功
 scan_lives() {
   log "=== 扫描新直播 ==="
   python3 scripts/scan-new-lives.py >> "$LOG" 2>&1
@@ -310,23 +378,19 @@ scan_lives() {
       local N IDS LAST
       N=$(python3 -c "import json;print(len(json.load(open('workbench/pending-lives.json'))))" 2>/dev/null || echo "?")
       IDS=$(python3 -c "import json;print(','.join(sorted(x['id'] for x in json.load(open('workbench/pending-lives.json')))))" 2>/dev/null || echo "?")
-      log "发现 $N 场新直播（$IDS），字幕与转写稿已备好，等待整理"
-      notify "颖响力直播 🎙" "发现 $N 场新直播，转写稿已备好，等你来整理" "Glass"
-      # 直播这条线以前只落盘不弹窗，节目那条线成功和失败都弹。结果是 LIVE035
-      # 备好料之后连报 25 次，全写进 status.json 没人看见，两场压了五天没整理。
-      # 待办名单没变就不再弹，否则每次唤起弹同一条，很快又会被当成噪音忽略掉。
+      log "发现 $N 场新直播（${IDS}），字幕与转写稿已备好，开始整理"
+      notify "颖响力直播 🎙" "发现 $N 场新直播（${IDS}），开始整理" "Glass"
       LAST=$(cat "logs/.last-pending-lives" 2>/dev/null || echo "")
       echo "$IDS" > "logs/.last-pending-lives"
-      # 名单空了也要记下来（下次真有新场才算变化），但不为一份空名单弹窗
-      if [[ -n "$IDS" && "$IDS" != "$LAST" ]]; then
-        popup "颖响力直播 🎙 有 $N 场等着整理" "$IDS
-
-转写稿已经备好，整理要在对话里做（见 sop/08）。"
-      fi
+      curate_lives "$IDS"
       ;;
     10) log "无新直播" ;;
     *)  log "直播扫描出错 code=$CODE"
-        notify "颖响力直播 ⚠️" "直播扫描失败 code=${CODE}，请看 logs/" "Basso" ;;
+        notify "颖响力直播 ⚠️" "直播扫描失败 code=${CODE}，请看 logs/" "Basso"
+        popup "颖响力直播 ⚠️ 扫描失败" "扫不到直播，code=${CODE}。
+
+常见原因：B 站 cookie 过期、充电专属失效、风控、网络。
+日志：logs/auto-daily-$TODAY.log" "error" ;;
   esac
   return 0
 }
