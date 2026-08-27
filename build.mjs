@@ -58,7 +58,10 @@ async function buildEpisodeCatalog() {
   try {
     entries = await fs.readdir(rawDir, { withFileTypes: true });
   } catch (error) {
-    if (error?.code !== 'ENOENT') throw error;
+    // EPERM 跟 ENOENT 是同一种情况：读不到 raw 就当它是空的。Cloudflare 的构建
+    // 本来就读不到（目录在仓库外），本地被 macOS 挡住时也照着 CI 的样子来，
+    // 产物才对得上，发布时的 md5 校验才有意义
+    if (error?.code !== 'ENOENT' && error?.code !== 'EPERM') throw error;
     return [];
   }
 
