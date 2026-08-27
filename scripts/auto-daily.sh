@@ -307,10 +307,21 @@ scan_lives() {
   local CODE=$?
   case $CODE in
     0)
-      local N
+      local N IDS LAST
       N=$(python3 -c "import json;print(len(json.load(open('workbench/pending-lives.json'))))" 2>/dev/null || echo "?")
-      log "发现 $N 场新直播，字幕与转写稿已备好，等待整理"
+      IDS=$(python3 -c "import json;print(','.join(sorted(x['id'] for x in json.load(open('workbench/pending-lives.json')))))" 2>/dev/null || echo "?")
+      log "发现 $N 场新直播（$IDS），字幕与转写稿已备好，等待整理"
       notify "颖响力直播 🎙" "发现 $N 场新直播，转写稿已备好，等你来整理" "Glass"
+      # 直播这条线以前只落盘不弹窗，节目那条线成功和失败都弹。结果是 LIVE035
+      # 备好料之后连报 25 次，全写进 status.json 没人看见，两场压了五天没整理。
+      # 待办名单没变就不再弹，否则每次唤起弹同一条，很快又会被当成噪音忽略掉。
+      LAST=$(cat "logs/.last-pending-lives" 2>/dev/null || echo "")
+      if [[ "$IDS" != "$LAST" ]]; then
+        echo "$IDS" > "logs/.last-pending-lives"
+        popup "颖响力直播 🎙 有 $N 场等着整理" "$IDS
+
+转写稿已经备好，整理要在对话里做（见 sop/08）。"
+      fi
       ;;
     10) log "无新直播" ;;
     *)  log "直播扫描出错 code=$CODE"
