@@ -2,11 +2,11 @@
   "meta": {
     "title": "颖响力知识图谱",
     "subtitle": "节目、概念、模型、人物、主题之间的可视化连接网络",
-    "nodeCount": 706,
-    "linkCount": 2790,
+    "nodeCount": 707,
+    "linkCount": 2825,
     "typeCounts": {
       "model": 82,
-      "live": 36,
+      "live": 37,
       "theme": 92,
       "episode": 204,
       "concept": 227,
@@ -147,6 +147,17 @@
       "degree": 35
     },
     {
+      "id": "live:LIVE037",
+      "key": "LIVE037",
+      "label": "LIVE037",
+      "fullLabel": "LIVE037 · 谁在急着把钱挪出去？这轮币圈瞄的就是他们，比特币成了查不到的保险柜",
+      "type": "live",
+      "route": "lives/LIVE037",
+      "summary": "上海浦东有个机构，专门把跑到境外的人民币收回来。",
+      "status": "published",
+      "degree": 35
+    },
+    {
       "id": "live:LIVE024",
       "key": "LIVE024",
       "label": "LIVE024",
@@ -180,6 +191,17 @@
       "degree": 33
     },
     {
+      "id": "theme:middle-class-descent-and-stratification",
+      "key": "middle-class-descent-and-stratification",
+      "label": "中产下坠与分层社会",
+      "fullLabel": "中产下坠与分层社会",
+      "type": "theme",
+      "route": "themes/middle-class-descent-and-stratification",
+      "summary": "当中间层缺乏缓冲带时，经济下行会迅速转成身份下坠、关系断裂和社会分层加固。",
+      "status": null,
+      "degree": 32
+    },
+    {
       "id": "live:LIVE011",
       "key": "LIVE011",
       "label": "LIVE011",
@@ -211,17 +233,6 @@
       "summary": "7 月 31 号那一票之后，九月检察厅正式废止。",
       "status": "curated",
       "degree": 32
-    },
-    {
-      "id": "theme:middle-class-descent-and-stratification",
-      "key": "middle-class-descent-and-stratification",
-      "label": "中产下坠与分层社会",
-      "fullLabel": "中产下坠与分层社会",
-      "type": "theme",
-      "route": "themes/middle-class-descent-and-stratification",
-      "summary": "当中间层缺乏缓冲带时，经济下行会迅速转成身份下坠、关系断裂和社会分层加固。",
-      "status": null,
-      "degree": 31
     },
     {
       "id": "live:LIVE023",
@@ -301,6 +312,17 @@
       "degree": 30
     },
     {
+      "id": "episode:EP156",
+      "key": "EP156",
+      "label": "EP156",
+      "fullLabel": "EP156 · 老中产吸干财富，新中产锁定基本盘。香港不再是避风港？新加坡或成最大赢家？",
+      "type": "episode",
+      "route": "episodes/EP156",
+      "summary": "5月以来一串孤立的金融事件被串成一条线。富途、老虎被罚没22亿，八部门整治非法跨境券商。香港银行倒查内地账户。国务院837号令把个人、技术、人才纳入对外投资监管。\n\n对老中产和高净值人群境外财富的回收。学特朗普“建墙”，逼两头跑的人选边。要么留国内受严管，要么彻底离开。另一边，靠国家拨款和国企流动的新中产正在长出来，因为更稳定可控。老中产去新加坡相对安全，置换会用五到十年完成。",
+      "status": "curated",
+      "degree": 29
+    },
+    {
       "id": "live:LIVE001",
       "key": "LIVE001",
       "label": "LIVE001",
@@ -334,14 +356,14 @@
       "degree": 29
     },
     {
-      "id": "episode:EP156",
-      "key": "EP156",
-      "label": "EP156",
-      "fullLabel": "EP156 · 老中产吸干财富，新中产锁定基本盘。香港不再是避风港？新加坡或成最大赢家？",
-      "type": "episode",
-      "route": "episodes/EP156",
-      "summary": "5月以来一串孤立的金融事件被串成一条线。富途、老虎被罚没22亿，八部门整治非法跨境券商。香港银行倒查内地账户。国务院837号令把个人、技术、人才纳入对外投资监管。\n\n对老中产和高净值人群境外财富的回收。学特朗普“建墙”，逼两头跑的人选边。要么留国内受严管，要么彻底离开。另一边，靠国家拨款和国企流动的新中产正在长出来，因为更稳定可控。老中产去新加坡相对安全，置换会用五到十年完成。",
-      "status": "curated",
+      "id": "concept:hidden-debt",
+      "key": "hidden-debt",
+      "label": "隐形债务",
+      "fullLabel": "隐形债务",
+      "type": "concept",
+      "route": "concepts/hidden-debt",
+      "summary": "表外、体外和合作链条里的债务不在显性报表中充分呈现，却会在危机时重新压回主体。",
+      "status": null,
       "degree": 28
     },
     {
@@ -389,17 +411,6 @@
       "degree": 28
     },
     {
-      "id": "concept:hidden-debt",
-      "key": "hidden-debt",
-      "label": "隐形债务",
-      "fullLabel": "隐形债务",
-      "type": "concept",
-      "route": "concepts/hidden-debt",
-      "summary": "表外、体外和合作链条里的债务不在显性报表中充分呈现，却会在危机时重新压回主体。",
-      "status": null,
-      "degree": 27
-    },
-    {
       "id": "theme:great-power-competition-and-strategic-time",
       "key": "great-power-competition-and-strategic-time",
       "label": "大国竞争与战略时间",
@@ -408,7 +419,7 @@
       "route": "themes/great-power-competition-and-strategic-time",
       "summary": "讨论战争、联盟和国家战略如何被时间窗口、社会成本和长期定力重新塑形。",
       "status": null,
-      "degree": 26
+      "degree": 27
     },
     {
       "id": "theme:dollar-system-and-gray-trade",
@@ -419,7 +430,7 @@
       "route": "themes/dollar-system-and-gray-trade",
       "summary": "讨论石油美元的真实脆弱点，究竟藏在公开统计之外的哪些灰色交易链条里。",
       "status": null,
-      "degree": 26
+      "degree": 27
     },
     {
       "id": "theme:singapore-and-small-state-survival",
@@ -433,6 +444,17 @@
       "degree": 26
     },
     {
+      "id": "model:narrative-instrumentalization",
+      "key": "narrative-instrumentalization",
+      "label": "叙事工具化模型",
+      "fullLabel": "叙事工具化模型",
+      "type": "model",
+      "route": "models/narrative-instrumentalization",
+      "summary": "叙事工具化模型解释叙事的主要功能从解释现实转向组织情绪和划分阵营。",
+      "status": null,
+      "degree": 26
+    },
+    {
       "id": "episode:EP169",
       "key": "EP169",
       "label": "EP169",
@@ -442,17 +464,6 @@
       "summary": "合肥被称为中国最牛风投城市。各地城投照抄，多数抄出一身债和产能过剩。可学的不是城市打法，是背后的投资逻辑。四个显性方法是逆周期抄底不追热点，赌产业链不赌单家公司。还有长期陪跑到成熟才退出，只投接得住的赛道。抄不走的是第五个隐性秘籍。政府能把权力直接变成补贴、报表和销售额。普通人没权力，唯一对应物是信息确定性。普通人要掌握的是别人没有的确定信息，像一级市场那样看清命脉。到那一步，欧印和加杠杆才不是赌博。",
       "status": "curated",
       "degree": 26
-    },
-    {
-      "id": "model:narrative-instrumentalization",
-      "key": "narrative-instrumentalization",
-      "label": "叙事工具化模型",
-      "fullLabel": "叙事工具化模型",
-      "type": "model",
-      "route": "models/narrative-instrumentalization",
-      "summary": "叙事工具化模型解释叙事的主要功能从解释现实转向组织情绪和划分阵营。",
-      "status": null,
-      "degree": 25
     },
     {
       "id": "episode:EP154",
@@ -532,6 +543,17 @@
       "degree": 22
     },
     {
+      "id": "episode:EP136",
+      "key": "EP136",
+      "label": "EP136",
+      "fullLabel": "EP136 · 影子舰队凭什么构架全球灰色贸易网络？1.5亿运力，改写世界贸易与货币规则！【EP136】",
+      "type": "episode",
+      "route": "episodes/EP136",
+      "summary": "把灰色贸易从美元、黄金和大国战略，拉回到最具体的运输工具，影子舰队。它不是单一国家海军，也不是有统一指挥的海盗组织。它是一套脱离西方保险、认证、定位和船东透明规则的平行航运网络。老旧油轮、换旗换名、AIS 静默、船对船转运、原产地文件和离岸服务都在其中。被制裁的石油由此重新洗进全球贸易。它还进一步支撑起绕开 SWIFT 的结算闭环。",
+      "status": "curated",
+      "degree": 22
+    },
+    {
       "id": "episode:EP144",
       "key": "EP144",
       "label": "EP144",
@@ -576,6 +598,17 @@
       "degree": 21
     },
     {
+      "id": "model:strategic-timing",
+      "key": "strategic-timing",
+      "label": "战略时机",
+      "fullLabel": "战略时机",
+      "type": "model",
+      "route": "models/strategic-timing",
+      "summary": "真正决定收益的往往不是是否参与，而是你能否在远早于大众情绪的时点、以合适规模和合适位置进入。",
+      "status": null,
+      "degree": 21
+    },
+    {
       "id": "episode:EP128",
       "key": "EP128",
       "label": "EP128",
@@ -583,17 +616,6 @@
       "type": "episode",
       "route": "episodes/EP128",
       "summary": "从汽车广告和品牌叙事越来越“老干部风”切入。广告审美变化的背后不是广告公司退步。核心消费人群正在向公务员、事业编、国企及相关岗位等泛体制人群迁移。这被概括为“系统回滚”。社会从市场化打拼、能力赚钱和增长想象里退出来。新的分层逻辑以稳定身份、财政兜底和体制位置为核心。后果包括中产门槛收窄、身份压倒财富、代际闭环形成。也包括创新活力降温、三四线城市空心化和人情关系重新压倒规则关系。",
-      "status": "curated",
-      "degree": 21
-    },
-    {
-      "id": "episode:EP136",
-      "key": "EP136",
-      "label": "EP136",
-      "fullLabel": "EP136 · 影子舰队凭什么构架全球灰色贸易网络？1.5亿运力，改写世界贸易与货币规则！【EP136】",
-      "type": "episode",
-      "route": "episodes/EP136",
-      "summary": "把灰色贸易从美元、黄金和大国战略，拉回到最具体的运输工具，影子舰队。它不是单一国家海军，也不是有统一指挥的海盗组织。它是一套脱离西方保险、认证、定位和船东透明规则的平行航运网络。老旧油轮、换旗换名、AIS 静默、船对船转运、原产地文件和离岸服务都在其中。被制裁的石油由此重新洗进全球贸易。它还进一步支撑起绕开 SWIFT 的结算闭环。",
       "status": "curated",
       "degree": 21
     },
@@ -631,6 +653,17 @@
       "degree": 21
     },
     {
+      "id": "concept:cost-shifting",
+      "key": "cost-shifting",
+      "label": "成本外移",
+      "fullLabel": "成本外移",
+      "type": "concept",
+      "route": "concepts/cost-shifting",
+      "summary": "组织内部的高额非生产性成本，最终会通过价格、规则或风险转嫁给外部承担者。",
+      "status": null,
+      "degree": 20
+    },
+    {
       "id": "model:leverage-backfire",
       "key": "leverage-backfire",
       "label": "杠杆反噬",
@@ -653,13 +686,13 @@
       "degree": 20
     },
     {
-      "id": "model:strategic-timing",
-      "key": "strategic-timing",
-      "label": "战略时机",
-      "fullLabel": "战略时机",
-      "type": "model",
-      "route": "models/strategic-timing",
-      "summary": "真正决定收益的往往不是是否参与，而是你能否在远早于大众情绪的时点、以合适规模和合适位置进入。",
+      "id": "concept:middle-class-hard-landing",
+      "key": "middle-class-hard-landing",
+      "label": "中产硬着陆",
+      "fullLabel": "中产硬着陆",
+      "type": "concept",
+      "route": "concepts/middle-class-hard-landing",
+      "summary": "高负债中产一旦失速，下坠往往同时摧毁资产、体面、关系和自我认同。",
       "status": null,
       "degree": 20
     },
@@ -686,13 +719,35 @@
       "degree": 20
     },
     {
-      "id": "concept:cost-shifting",
-      "key": "cost-shifting",
-      "label": "成本外移",
-      "fullLabel": "成本外移",
-      "type": "concept",
-      "route": "concepts/cost-shifting",
-      "summary": "组织内部的高额非生产性成本，最终会通过价格、规则或风险转嫁给外部承担者。",
+      "id": "episode:EP161",
+      "key": "EP161",
+      "label": "EP161",
+      "fullLabel": "EP161 · 买黄金为中国背债？一个视频说明白黄金、美元、石油",
+      "type": "episode",
+      "route": "episodes/EP161",
+      "summary": "重提三个月前的黄金逻辑，反驳美元反比、战争避险和美联储加息三种说法。它们连暴涨都解释不了。真正的推手是灰色贸易。离岸人民币在灰色石油和商品贸易里需要背书，弃美元改用黄金。各国央行为此大量囤金，金价才从1800美元冲到4000多美元。\n\n随后特朗普沿巴拿马、委内瑞拉、伊朗切断灰贸。金价失去支撑转入阴跌，美元顺势回流走强。国内突然推黄金投资，本质是帮囤金最多的央行向散户转嫁风险。也就是为国背债。",
+      "status": "curated",
+      "degree": 20
+    },
+    {
+      "id": "episode:EP185",
+      "key": "EP185",
+      "label": "EP185",
+      "fullLabel": "EP185 · 香港超瑞士、新加坡成全球离岸财富第一？实则只是东大诸多财富的溢出集散地。",
+      "type": "episode",
+      "route": "episodes/EP185",
+      "summary": "香港超过瑞士和新加坡，成为全球第一大离岸财富管理中心。财经媒体一片造势，可这盆冷水得泼。这不是全球资本涌向香港，而是东大财富溢出的集散地。拆开资金来源，内地占六成。主力是后知后觉的中小老板，和围绕公务体系的新中产。台湾资金和回流的灰色贸易资金补足其余。把钱挪到香港，只是从一个棋盘跳进另一个监管更快的棋盘。监管备好的框，迟早统一收网。资产安全从来不靠挪位置。靠的是干净的底子、清晰的架构和个人格局。",
+      "status": "curated",
+      "degree": 20
+    },
+    {
+      "id": "model:value-capture",
+      "key": "value-capture",
+      "label": "价值捕获",
+      "fullLabel": "价值捕获",
+      "type": "model",
+      "route": "models/value-capture",
+      "summary": "价值捕获模型强调商业链条中关键不只是创造了价值，而是谁真正留下了价值。",
       "status": null,
       "degree": 19
     },
@@ -719,17 +774,6 @@
       "degree": 19
     },
     {
-      "id": "concept:middle-class-hard-landing",
-      "key": "middle-class-hard-landing",
-      "label": "中产硬着陆",
-      "fullLabel": "中产硬着陆",
-      "type": "concept",
-      "route": "concepts/middle-class-hard-landing",
-      "summary": "高负债中产一旦失速，下坠往往同时摧毁资产、体面、关系和自我认同。",
-      "status": null,
-      "degree": 19
-    },
-    {
       "id": "episode:EP134",
       "key": "EP134",
       "label": "EP134",
@@ -752,28 +796,6 @@
       "degree": 19
     },
     {
-      "id": "episode:EP161",
-      "key": "EP161",
-      "label": "EP161",
-      "fullLabel": "EP161 · 买黄金为中国背债？一个视频说明白黄金、美元、石油",
-      "type": "episode",
-      "route": "episodes/EP161",
-      "summary": "重提三个月前的黄金逻辑，反驳美元反比、战争避险和美联储加息三种说法。它们连暴涨都解释不了。真正的推手是灰色贸易。离岸人民币在灰色石油和商品贸易里需要背书，弃美元改用黄金。各国央行为此大量囤金，金价才从1800美元冲到4000多美元。\n\n随后特朗普沿巴拿马、委内瑞拉、伊朗切断灰贸。金价失去支撑转入阴跌，美元顺势回流走强。国内突然推黄金投资，本质是帮囤金最多的央行向散户转嫁风险。也就是为国背债。",
-      "status": "curated",
-      "degree": 19
-    },
-    {
-      "id": "episode:EP185",
-      "key": "EP185",
-      "label": "EP185",
-      "fullLabel": "EP185 · 香港超瑞士、新加坡成全球离岸财富第一？实则只是东大诸多财富的溢出集散地。",
-      "type": "episode",
-      "route": "episodes/EP185",
-      "summary": "香港超过瑞士和新加坡，成为全球第一大离岸财富管理中心。财经媒体一片造势，可这盆冷水得泼。这不是全球资本涌向香港，而是东大财富溢出的集散地。拆开资金来源，内地占六成。主力是后知后觉的中小老板，和围绕公务体系的新中产。台湾资金和回流的灰色贸易资金补足其余。把钱挪到香港，只是从一个棋盘跳进另一个监管更快的棋盘。监管备好的框，迟早统一收网。资产安全从来不靠挪位置。靠的是干净的底子、清晰的架构和个人格局。",
-      "status": "curated",
-      "degree": 19
-    },
-    {
       "id": "model:subsidy-capital-flywheel",
       "key": "subsidy-capital-flywheel",
       "label": "补贴资本飞轮",
@@ -792,17 +814,6 @@
       "type": "concept",
       "route": "concepts/pan-institutional-middle-class",
       "summary": "泛体制中产指依靠公务员、事业编、国企及体制相关岗位维持稳定收入、福利和社会体面的中间层。",
-      "status": null,
-      "degree": 18
-    },
-    {
-      "id": "model:value-capture",
-      "key": "value-capture",
-      "label": "价值捕获",
-      "fullLabel": "价值捕获",
-      "type": "model",
-      "route": "models/value-capture",
-      "summary": "价值捕获模型强调商业链条中关键不只是创造了价值，而是谁真正留下了价值。",
       "status": null,
       "degree": 18
     },
@@ -1445,6 +1456,17 @@
       "degree": 13
     },
     {
+      "id": "theme:youth-withdrawal-and-lying-flat",
+      "key": "youth-withdrawal-and-lying-flat",
+      "label": "年轻人退出与躺平",
+      "fullLabel": "年轻人退出与躺平",
+      "type": "theme",
+      "route": "themes/youth-withdrawal-and-lying-flat",
+      "summary": "讨论年轻人在主流机会、劳动回报和身份路径收缩后，如何通过低欲望、退出和躺平保留有限主体性。",
+      "status": null,
+      "degree": 12
+    },
+    {
       "id": "concept:phantom-sales",
       "key": "phantom-sales",
       "label": "虚假销售",
@@ -1588,6 +1610,28 @@
       "degree": 12
     },
     {
+      "id": "episode:EP204",
+      "key": "EP204",
+      "label": "EP204",
+      "fullLabel": "EP204 · 甲醛白菜最让人无力的，是极限内卷下，没人能独善其身！中国制造的终极困局！",
+      "type": "episode",
+      "route": "episodes/EP204",
+      "summary": "张家口康保县的白菜在装车前整颗蘸进甲醛，路边小药瓶和蓝色大药罐一排摆着，收菜的、装车的、跑长途的都把它当成一道工序。白菜一斤几毛钱，改用冷藏车运费翻一倍，涨价卖不动，不涨价这一趟就白跑，蘸一遍药成了整条链上最划算的选项。难办的地方在这里，守规矩的人早被挤走了，剩下的人不这么干就活不下去，一件本该论对错的事变成了一笔成本账。同一批菜供给出口和会员店时自己收着，供给国内普通超市时换另一套做法，差别在于哪一头的账追得到人。留给普通人的办法只剩一条，在天天要吃要用的那几样上花钱买确定。",
+      "status": "curated",
+      "degree": 12
+    },
+    {
+      "id": "concept:refuge-premium",
+      "key": "refuge-premium",
+      "label": "避险溢价",
+      "fullLabel": "避险溢价",
+      "type": "concept",
+      "route": "concepts/refuge-premium",
+      "summary": "动荡时期，稳定、守规则、能承接资金和人才的节点会获得额外溢价。",
+      "status": null,
+      "degree": 11
+    },
+    {
       "id": "concept:standard-labor-replacement",
       "key": "standard-labor-replacement",
       "label": "标准劳动力替代",
@@ -1617,17 +1661,6 @@
       "type": "model",
       "route": "models/technology-wave-cycle",
       "summary": "技术浪潮周期强调方向正确还不够，资本、基础设施、真实应用和时间窗口必须对齐。",
-      "status": null,
-      "degree": 11
-    },
-    {
-      "id": "theme:youth-withdrawal-and-lying-flat",
-      "key": "youth-withdrawal-and-lying-flat",
-      "label": "年轻人退出与躺平",
-      "fullLabel": "年轻人退出与躺平",
-      "type": "theme",
-      "route": "themes/youth-withdrawal-and-lying-flat",
-      "summary": "讨论年轻人在主流机会、劳动回报和身份路径收缩后，如何通过低欲望、退出和躺平保留有限主体性。",
       "status": null,
       "degree": 11
     },
@@ -1797,28 +1830,6 @@
       "degree": 11
     },
     {
-      "id": "episode:EP204",
-      "key": "EP204",
-      "label": "EP204",
-      "fullLabel": "EP204 · 甲醛白菜最让人无力的，是极限内卷下，没人能独善其身！中国制造的终极困局！",
-      "type": "episode",
-      "route": "episodes/EP204",
-      "summary": "张家口康保县的白菜在装车前整颗蘸进甲醛，路边小药瓶和蓝色大药罐一排摆着，收菜的、装车的、跑长途的都把它当成一道工序。白菜一斤几毛钱，改用冷藏车运费翻一倍，涨价卖不动，不涨价这一趟就白跑，蘸一遍药成了整条链上最划算的选项。难办的地方在这里，守规矩的人早被挤走了，剩下的人不这么干就活不下去，一件本该论对错的事变成了一笔成本账。同一批菜供给出口和会员店时自己收着，供给国内普通超市时换另一套做法，差别在于哪一头的账追得到人。留给普通人的办法只剩一条，在天天要吃要用的那几样上花钱买确定。",
-      "status": "curated",
-      "degree": 11
-    },
-    {
-      "id": "concept:refuge-premium",
-      "key": "refuge-premium",
-      "label": "避险溢价",
-      "fullLabel": "避险溢价",
-      "type": "concept",
-      "route": "concepts/refuge-premium",
-      "summary": "动荡时期，稳定、守规则、能承接资金和人才的节点会获得额外溢价。",
-      "status": null,
-      "degree": 10
-    },
-    {
       "id": "concept:subsidy-leverage-engine",
       "key": "subsidy-leverage-engine",
       "label": "补贴杠杆引擎",
@@ -1826,6 +1837,17 @@
       "type": "concept",
       "route": "concepts/subsidy-leverage-engine",
       "summary": "财政补贴被当成种子资金，撬动基金、估值、招商和社会资本，形成杠杆引擎。",
+      "status": null,
+      "degree": 10
+    },
+    {
+      "id": "concept:jurisdiction-arbitrage",
+      "key": "jurisdiction-arbitrage",
+      "label": "法域套利",
+      "fullLabel": "法域套利",
+      "type": "concept",
+      "route": "concepts/jurisdiction-arbitrage",
+      "summary": "企业通过选择更有利法域，获取融资、估值、合规和退出上的制度差价。",
       "status": null,
       "degree": 10
     },
@@ -1995,6 +2017,17 @@
       "degree": 10
     },
     {
+      "id": "episode:EP197",
+      "key": "EP197",
+      "label": "EP197",
+      "fullLabel": "EP197 · 香港储蓄险征税只是开胃菜？资产全透明时代开启，跨境监管下大棋！",
+      "type": "episode",
+      "route": "episodes/EP197",
+      "summary": "香港储蓄型保险要交个税了。保单分红和预缴保费产生的利息，统一按 20% 征收。北京和杭州据说已经有了落地案例。只盯着这 20% 就看浅了。往前数还有离岸信托的个税征管、跨境券商的整顿、新出台的出入境管理条例。这些动作合起来才是一条完整的链。真正要命的不是税率，是保险公司要把账目对税务单位公开。境外资产从一个自己心里有底的黑箱，变成一张别人看得见的名单。今天落地的是个税，明天可以是别的税、别的费、别的核查。把钱搬到境外就能隐身的红利期已经结束，这只是第一回合。",
+      "status": "curated",
+      "degree": 10
+    },
+    {
       "id": "episode:EP198",
       "key": "EP198",
       "label": "EP198",
@@ -2039,17 +2072,6 @@
       "degree": 9
     },
     {
-      "id": "concept:jurisdiction-arbitrage",
-      "key": "jurisdiction-arbitrage",
-      "label": "法域套利",
-      "fullLabel": "法域套利",
-      "type": "concept",
-      "route": "concepts/jurisdiction-arbitrage",
-      "summary": "企业通过选择更有利法域，获取融资、估值、合规和退出上的制度差价。",
-      "status": null,
-      "degree": 9
-    },
-    {
       "id": "concept:state-share-time-bomb",
       "key": "state-share-time-bomb",
       "label": "国资定时炸弹",
@@ -2090,6 +2112,17 @@
       "type": "model",
       "route": "models/screening-machine",
       "summary": "教育和组织把人当作待筛选样本，而非待生长的人来处理的系统逻辑。",
+      "status": null,
+      "degree": 9
+    },
+    {
+      "id": "theme:time-horizon-and-foresight",
+      "key": "time-horizon-and-foresight",
+      "label": "时间尺度与资产前瞻",
+      "fullLabel": "时间尺度与资产前瞻",
+      "type": "theme",
+      "route": "themes/time-horizon-and-foresight",
+      "summary": "讨论人物与企业如何在不同周期里提前摆放自己，而不是等结果发生后再被动解释。",
       "status": null,
       "degree": 9
     },
@@ -2156,6 +2189,28 @@
       "type": "concept",
       "route": "concepts/quasi-currency-support",
       "summary": "现金不足时，系统用票据、凭证或替代物支撑交易和价格，形成准货币托市。",
+      "status": null,
+      "degree": 9
+    },
+    {
+      "id": "theme:capital-exit-and-cross-border-harvest",
+      "key": "capital-exit-and-cross-border-harvest",
+      "label": "资本博弈与美元退出",
+      "fullLabel": "资本博弈与美元退出",
+      "type": "theme",
+      "route": "themes/capital-exit-and-cross-border-harvest",
+      "summary": "危机、停牌或重组时期，真正被争夺的往往不是公司本身，而是跨法域的退出通道和美元化收益。",
+      "status": null,
+      "degree": 9
+    },
+    {
+      "id": "model:asset-preservation-architecture",
+      "key": "asset-preservation-architecture",
+      "label": "资产保全架构",
+      "fullLabel": "资产保全架构",
+      "type": "model",
+      "route": "models/asset-preservation-architecture",
+      "summary": "资产保全架构强调财富安全取决于来源、法域、时间前置和退出节奏的组合。",
       "status": null,
       "degree": 9
     },
@@ -2391,17 +2446,6 @@
       "degree": 9
     },
     {
-      "id": "episode:EP197",
-      "key": "EP197",
-      "label": "EP197",
-      "fullLabel": "EP197 · 香港储蓄险征税只是开胃菜？资产全透明时代开启，跨境监管下大棋！",
-      "type": "episode",
-      "route": "episodes/EP197",
-      "summary": "香港储蓄型保险要交个税了。保单分红和预缴保费产生的利息，统一按 20% 征收。北京和杭州据说已经有了落地案例。只盯着这 20% 就看浅了。往前数还有离岸信托的个税征管、跨境券商的整顿、新出台的出入境管理条例。这些动作合起来才是一条完整的链。真正要命的不是税率，是保险公司要把账目对税务单位公开。境外资产从一个自己心里有底的黑箱，变成一张别人看得见的名单。今天落地的是个税，明天可以是别的税、别的费、别的核查。把钱搬到境外就能隐身的红利期已经结束，这只是第一回合。",
-      "status": "curated",
-      "degree": 9
-    },
-    {
       "id": "episode:EP202",
       "key": "EP202",
       "label": "EP202",
@@ -2453,6 +2497,17 @@
       "type": "concept",
       "route": "concepts/technical-shortcut",
       "summary": "更快落地的技术选择能带来早期优势，也可能在后期变成难以摆脱的路径包袱。",
+      "status": null,
+      "degree": 8
+    },
+    {
+      "id": "theme:trust-and-asset-preservation",
+      "key": "trust-and-asset-preservation",
+      "label": "家族信托与资产保全",
+      "fullLabel": "家族信托与资产保全",
+      "type": "theme",
+      "route": "themes/trust-and-asset-preservation",
+      "summary": "讨论信托、离岸架构、上市与退出动作如何共同决定财富能不能穿越周期。",
       "status": null,
       "degree": 8
     },
@@ -2512,17 +2567,6 @@
       "degree": 8
     },
     {
-      "id": "theme:time-horizon-and-foresight",
-      "key": "time-horizon-and-foresight",
-      "label": "时间尺度与资产前瞻",
-      "fullLabel": "时间尺度与资产前瞻",
-      "type": "theme",
-      "route": "themes/time-horizon-and-foresight",
-      "summary": "讨论人物与企业如何在不同周期里提前摆放自己，而不是等结果发生后再被动解释。",
-      "status": null,
-      "degree": 8
-    },
-    {
       "id": "concept:time-asymmetry",
       "key": "time-asymmetry",
       "label": "时间非对称",
@@ -2534,6 +2578,17 @@
       "degree": 8
     },
     {
+      "id": "concept:useless-class",
+      "key": "useless-class",
+      "label": "无用阶级",
+      "fullLabel": "无用阶级",
+      "type": "concept",
+      "route": "concepts/useless-class",
+      "summary": "无用阶级指在AI与自动化大规模替代劳动后，既无法进入高门槛顶端工作、又被挤出中低端岗位，从生产者沦为系统中“多余的人”的庞大群体。",
+      "status": null,
+      "degree": 8
+    },
+    {
       "id": "concept:pragmatic-legitimacy",
       "key": "pragmatic-legitimacy",
       "label": "务实合法性",
@@ -2541,6 +2596,17 @@
       "type": "concept",
       "route": "concepts/pragmatic-legitimacy",
       "summary": "政权或共同体的稳定感，常来自普通人能持续获得可感的生活改善和秩序保障。",
+      "status": null,
+      "degree": 8
+    },
+    {
+      "id": "concept:cash-optionality",
+      "key": "cash-optionality",
+      "label": "现金选择权",
+      "fullLabel": "现金选择权",
+      "type": "concept",
+      "route": "concepts/cash-optionality",
+      "summary": "现金在高波动时期的核心价值，是保留等待、谈判、退出和重新进入的选择权。",
       "status": null,
       "degree": 8
     },
@@ -2563,6 +2629,17 @@
       "type": "theme",
       "route": "themes/ev-safety-and-consumer-testing",
       "summary": "讨论新能源车与相关电池系统如何把安全验证不足的代价，转移到真实用户和真实事故里。",
+      "status": null,
+      "degree": 8
+    },
+    {
+      "id": "model:primary-market-logic",
+      "key": "primary-market-logic",
+      "label": "一级市场逻辑投二级市场",
+      "fullLabel": "一级市场逻辑投二级市场",
+      "type": "model",
+      "route": "models/primary-market-logic",
+      "summary": "用一级市场逻辑投二级市场，指不靠公开博弈，而是凭别人没有的信息、资源和对企业命脉的掌控，在确定性极高时才重仓下注。",
       "status": null,
       "degree": 8
     },
@@ -2596,28 +2673,6 @@
       "type": "concept",
       "route": "concepts/transfer-payment-dependency",
       "summary": "转移支付依赖指地方运转越来越靠上级财政输血，而不是靠本地产业和税源形成真实闭环。",
-      "status": null,
-      "degree": 8
-    },
-    {
-      "id": "theme:capital-exit-and-cross-border-harvest",
-      "key": "capital-exit-and-cross-border-harvest",
-      "label": "资本博弈与美元退出",
-      "fullLabel": "资本博弈与美元退出",
-      "type": "theme",
-      "route": "themes/capital-exit-and-cross-border-harvest",
-      "summary": "危机、停牌或重组时期，真正被争夺的往往不是公司本身，而是跨法域的退出通道和美元化收益。",
-      "status": null,
-      "degree": 8
-    },
-    {
-      "id": "model:asset-preservation-architecture",
-      "key": "asset-preservation-architecture",
-      "label": "资产保全架构",
-      "fullLabel": "资产保全架构",
-      "type": "model",
-      "route": "models/asset-preservation-architecture",
-      "summary": "资产保全架构强调财富安全取决于来源、法域、时间前置和退出节奏的组合。",
       "status": null,
       "degree": 8
     },
@@ -3029,17 +3084,6 @@
       "degree": 7
     },
     {
-      "id": "theme:trust-and-asset-preservation",
-      "key": "trust-and-asset-preservation",
-      "label": "家族信托与资产保全",
-      "fullLabel": "家族信托与资产保全",
-      "type": "theme",
-      "route": "themes/trust-and-asset-preservation",
-      "summary": "讨论信托、离岸架构、上市与退出动作如何共同决定财富能不能穿越周期。",
-      "status": null,
-      "degree": 7
-    },
-    {
       "id": "theme:education-and-ai-misalignment",
       "key": "education-and-ai-misalignment",
       "label": "教育与AI时代错位",
@@ -3084,28 +3128,6 @@
       "degree": 7
     },
     {
-      "id": "concept:useless-class",
-      "key": "useless-class",
-      "label": "无用阶级",
-      "fullLabel": "无用阶级",
-      "type": "concept",
-      "route": "concepts/useless-class",
-      "summary": "无用阶级指在AI与自动化大规模替代劳动后，既无法进入高门槛顶端工作、又被挤出中低端岗位，从生产者沦为系统中“多余的人”的庞大群体。",
-      "status": null,
-      "degree": 7
-    },
-    {
-      "id": "concept:cash-optionality",
-      "key": "cash-optionality",
-      "label": "现金选择权",
-      "fullLabel": "现金选择权",
-      "type": "concept",
-      "route": "concepts/cash-optionality",
-      "summary": "现金在高波动时期的核心价值，是保留等待、谈判、退出和重新进入的选择权。",
-      "status": null,
-      "degree": 7
-    },
-    {
       "id": "concept:consumer-testbed",
       "key": "consumer-testbed",
       "label": "消费者测试场",
@@ -3117,17 +3139,6 @@
       "degree": 7
     },
     {
-      "id": "model:primary-market-logic",
-      "key": "primary-market-logic",
-      "label": "一级市场逻辑投二级市场",
-      "fullLabel": "一级市场逻辑投二级市场",
-      "type": "model",
-      "route": "models/primary-market-logic",
-      "summary": "用一级市场逻辑投二级市场，指不靠公开博弈，而是凭别人没有的信息、资源和对企业命脉的掌控，在确定性极高时才重仓下注。",
-      "status": null,
-      "degree": 7
-    },
-    {
       "id": "concept:expectation-selling",
       "key": "expectation-selling",
       "label": "预期贩卖",
@@ -3135,6 +3146,17 @@
       "type": "concept",
       "route": "concepts/expectation-selling",
       "summary": "通过出售可理解、可规划、可购买的未来想象，中间人获得影响力和收益。",
+      "status": null,
+      "degree": 7
+    },
+    {
+      "id": "model:attention-commerce-loop",
+      "key": "attention-commerce-loop",
+      "label": "注意力商业闭环",
+      "fullLabel": "注意力商业闭环",
+      "type": "model",
+      "route": "models/attention-commerce-loop",
+      "summary": "注意力商业闭环解释内容如何先制造注意力，再把注意力结算为品牌、交易或平台收益。",
       "status": null,
       "degree": 7
     },
@@ -3344,6 +3366,17 @@
       "type": "theme",
       "route": "themes/bullshit-politics-and-historical-narratives",
       "summary": "讨论对真相冷漠的话术如何进入历史解释和身份动员。",
+      "status": null,
+      "degree": 6
+    },
+    {
+      "id": "model:distributed-warfare-system",
+      "key": "distributed-warfare-system",
+      "label": "分布式战争系统",
+      "fullLabel": "分布式战争系统",
+      "type": "model",
+      "route": "models/distributed-warfare-system",
+      "summary": "分布式战争系统解释无人装备、分散生产、前线反馈和外部供给如何组合成长期战争优势。",
       "status": null,
       "degree": 6
     },
@@ -3634,17 +3667,6 @@
       "degree": 6
     },
     {
-      "id": "model:attention-commerce-loop",
-      "key": "attention-commerce-loop",
-      "label": "注意力商业闭环",
-      "fullLabel": "注意力商业闭环",
-      "type": "model",
-      "route": "models/attention-commerce-loop",
-      "summary": "注意力商业闭环解释内容如何先制造注意力，再把注意力结算为品牌、交易或平台收益。",
-      "status": null,
-      "degree": 6
-    },
-    {
       "id": "concept:balance-sheet-support",
       "key": "balance-sheet-support",
       "label": "资产负债表托底",
@@ -3854,6 +3876,17 @@
       "degree": 6
     },
     {
+      "id": "concept:wealth-repatriation-squeeze",
+      "key": "wealth-repatriation-squeeze",
+      "label": "财富回收挤压",
+      "fullLabel": "财富回收挤压",
+      "type": "concept",
+      "route": "concepts/wealth-repatriation-squeeze",
+      "summary": "财富回收挤压指国家通过收紧跨境通道、倒查境外账户和扩大对外投资监管，把高净值人群游离在监管外的境外财富重新定住、纳入体系并施加补税与缩水压力。",
+      "status": null,
+      "degree": 5
+    },
+    {
       "id": "concept:property-boundary-literacy",
       "key": "property-boundary-literacy",
       "label": "产权意识",
@@ -3887,13 +3920,24 @@
       "degree": 5
     },
     {
-      "id": "model:distributed-warfare-system",
-      "key": "distributed-warfare-system",
-      "label": "分布式战争系统",
-      "fullLabel": "分布式战争系统",
+      "id": "model:individuation-three-stage",
+      "key": "individuation-three-stage",
+      "label": "个体化三阶段模型",
+      "fullLabel": "个体化三阶段模型",
       "type": "model",
-      "route": "models/distributed-warfare-system",
-      "summary": "分布式战争系统解释无人装备、分散生产、前线反馈和外部供给如何组合成长期战争优势。",
+      "route": "models/individuation-three-stage",
+      "summary": "个体化三阶段模型把成长理解为依次消化亲情、权威和自我，而非一次性觉醒。",
+      "status": null,
+      "degree": 5
+    },
+    {
+      "id": "model:follower-advantage-collapse",
+      "key": "follower-advantage-collapse",
+      "label": "跟随者失效",
+      "fullLabel": "跟随者失效",
+      "type": "model",
+      "route": "models/follower-advantage-collapse",
+      "summary": "增量时代跟着别人走最划算，进入存量博弈之后，同一批跟随者从红利分享者变成成本承担者。",
       "status": null,
       "degree": 5
     },
@@ -4448,17 +4492,6 @@
       "degree": 4
     },
     {
-      "id": "concept:wealth-repatriation-squeeze",
-      "key": "wealth-repatriation-squeeze",
-      "label": "财富回收挤压",
-      "fullLabel": "财富回收挤压",
-      "type": "concept",
-      "route": "concepts/wealth-repatriation-squeeze",
-      "summary": "财富回收挤压指国家通过收紧跨境通道、倒查境外账户和扩大对外投资监管，把高净值人群游离在监管外的境外财富重新定住、纳入体系并施加补税与缩水压力。",
-      "status": null,
-      "degree": 4
-    },
-    {
       "id": "concept:wealth-spillover-hub",
       "key": "wealth-spillover-hub",
       "label": "财富溢出集散地",
@@ -4613,28 +4646,6 @@
       "degree": 4
     },
     {
-      "id": "model:individuation-three-stage",
-      "key": "individuation-three-stage",
-      "label": "个体化三阶段模型",
-      "fullLabel": "个体化三阶段模型",
-      "type": "model",
-      "route": "models/individuation-three-stage",
-      "summary": "个体化三阶段模型把成长理解为依次消化亲情、权威和自我，而非一次性觉醒。",
-      "status": null,
-      "degree": 4
-    },
-    {
-      "id": "model:follower-advantage-collapse",
-      "key": "follower-advantage-collapse",
-      "label": "跟随者失效",
-      "fullLabel": "跟随者失效",
-      "type": "model",
-      "route": "models/follower-advantage-collapse",
-      "summary": "增量时代跟着别人走最划算，进入存量博弈之后，同一批跟随者从红利分享者变成成本承担者。",
-      "status": null,
-      "degree": 4
-    },
-    {
       "id": "concept:relationship-insurance",
       "key": "relationship-insurance",
       "label": "关系保险",
@@ -4653,6 +4664,17 @@
       "type": "person",
       "route": "people/jia-guolong",
       "summary": "贾国龙是西贝餐饮集团创始人、董事长，节目借他观察连锁餐饮的创始人权威、品牌溢价和标准化供给争议。",
+      "status": null,
+      "degree": 4
+    },
+    {
+      "id": "concept:symbolic-matricide",
+      "key": "symbolic-matricide",
+      "label": "精神弑母",
+      "fullLabel": "精神弑母",
+      "type": "concept",
+      "route": "concepts/symbolic-matricide",
+      "summary": "精神弑母指人要先在精神上吃掉母系带来的文化、再吐出来给予尊重，才能长成拥有自我的人。",
       "status": null,
       "degree": 4
     },
@@ -4895,6 +4917,17 @@
       "type": "theme",
       "route": "themes/smart-products-and-ownership-boundaries",
       "summary": "讨论商品联网之后，方向盘和开关之外那层控制权归谁，买断和许可的界线被挪到了哪里。",
+      "status": null,
+      "degree": 4
+    },
+    {
+      "id": "concept:attention-trading",
+      "key": "attention-trading",
+      "label": "注意力交易",
+      "fullLabel": "注意力交易",
+      "type": "concept",
+      "route": "concepts/attention-trading",
+      "summary": "创作者把观众的焦虑、兴奋和参与感换成流量、带货、课程或影响力收益。",
       "status": null,
       "degree": 4
     },
@@ -5339,17 +5372,6 @@
       "degree": 3
     },
     {
-      "id": "concept:symbolic-matricide",
-      "key": "symbolic-matricide",
-      "label": "精神弑母",
-      "fullLabel": "精神弑母",
-      "type": "concept",
-      "route": "concepts/symbolic-matricide",
-      "summary": "精神弑母指人要先在精神上吃掉母系带来的文化、再吐出来给予尊重，才能长成拥有自我的人。",
-      "status": null,
-      "degree": 3
-    },
-    {
       "id": "theme:cross-border-ecommerce-and-manufacturing-trap",
       "key": "cross-border-ecommerce-and-manufacturing-trap",
       "label": "跨境电商与制造业困局",
@@ -5746,6 +5768,17 @@
       "degree": 3
     },
     {
+      "id": "concept:war-insulation-collapse",
+      "key": "war-insulation-collapse",
+      "label": "战争隔离叙事破产",
+      "fullLabel": "战争隔离叙事破产",
+      "type": "concept",
+      "route": "concepts/war-insulation-collapse",
+      "summary": "强人体制把战争隔离在电视和宣传里，一旦战火落到公民身边，官方叙事就失去信念支撑。",
+      "status": null,
+      "degree": 3
+    },
+    {
       "id": "concept:enforcement-vacuum",
       "key": "enforcement-vacuum",
       "label": "执法真空",
@@ -5768,13 +5801,13 @@
       "degree": 3
     },
     {
-      "id": "concept:attention-trading",
-      "key": "attention-trading",
-      "label": "注意力交易",
-      "fullLabel": "注意力交易",
+      "id": "concept:capital-wall",
+      "key": "capital-wall",
+      "label": "资本筑墙",
+      "fullLabel": "资本筑墙",
       "type": "concept",
-      "route": "concepts/attention-trading",
-      "summary": "创作者把观众的焦虑、兴奋和参与感换成流量、带货、课程或影响力收益。",
+      "route": "concepts/capital-wall",
+      "summary": "资本筑墙指国家像特朗普建实体墙一样，用监管在资金、技术、人才的跨境流动上立起高墙，逼资产与中国有联系的人在“留下受管”和“离开别回”之间选边。",
       "status": null,
       "degree": 3
     },
@@ -5843,6 +5876,17 @@
       "summary": "“扶老人”争议不是一道简单的站队题。这里追问的是另一个问题。道德鼓励助人，法律又必须精确分责。两者之间有一块最模糊、也最容易打击社会信任的地带，谁来承担。真正值得修补的不是口头道德，而是把好意风险吸收掉的制度接口。",
       "status": "curated",
       "degree": 3
+    },
+    {
+      "id": "concept:haven-inversion",
+      "key": "haven-inversion",
+      "label": "避风港反转",
+      "fullLabel": "避风港反转",
+      "type": "concept",
+      "route": "concepts/haven-inversion",
+      "summary": "避风港反转指一个法域的信息屏障被补齐之后，原本用来藏资产的地方反而成了处置资产最顺手的地方。",
+      "status": null,
+      "degree": 2
     },
     {
       "id": "concept:standard-answer-cage",
@@ -6593,17 +6637,6 @@
       "degree": 2
     },
     {
-      "id": "concept:war-insulation-collapse",
-      "key": "war-insulation-collapse",
-      "label": "战争隔离叙事破产",
-      "fullLabel": "战争隔离叙事破产",
-      "type": "concept",
-      "route": "concepts/war-insulation-collapse",
-      "summary": "强人体制把战争隔离在电视和宣传里，一旦战火落到公民身边，官方叙事就失去信念支撑。",
-      "status": null,
-      "degree": 2
-    },
-    {
       "id": "concept:policy-stalling",
       "key": "policy-stalling",
       "label": "政策拖延术",
@@ -6670,17 +6703,6 @@
       "degree": 2
     },
     {
-      "id": "concept:capital-wall",
-      "key": "capital-wall",
-      "label": "资本筑墙",
-      "fullLabel": "资本筑墙",
-      "type": "concept",
-      "route": "concepts/capital-wall",
-      "summary": "资本筑墙指国家像特朗普建实体墙一样，用监管在资金、技术、人才的跨境流动上立起高墙，逼资产与中国有联系的人在“留下受管”和“离开别回”之间选边。",
-      "status": null,
-      "degree": 2
-    },
-    {
       "id": "concept:ai-terminal-guidance",
       "key": "ai-terminal-guidance",
       "label": "AI末端制导",
@@ -6710,17 +6732,6 @@
       "type": "concept",
       "route": "concepts/half-understood-freedom",
       "summary": "只反抗规训却没有理解边界，自由就容易变成对他人风险的无知转嫁。",
-      "status": null,
-      "degree": 1
-    },
-    {
-      "id": "concept:haven-inversion",
-      "key": "haven-inversion",
-      "label": "避风港反转",
-      "fullLabel": "避风港反转",
-      "type": "concept",
-      "route": "concepts/haven-inversion",
-      "summary": "避风港反转指一个法域的信息屏障被补齐之后，原本用来藏资产的地方反而成了处置资产最顺手的地方。",
       "status": null,
       "degree": 1
     },
@@ -21491,6 +21502,181 @@
       "source": "live:LIVE036",
       "target": "theme:youth-dreams-and-safe-paths",
       "kind": "live-theme"
+    },
+    {
+      "source": "live:LIVE037",
+      "target": "episode:EP197",
+      "kind": "live-episode"
+    },
+    {
+      "source": "live:LIVE037",
+      "target": "episode:EP185",
+      "kind": "live-episode"
+    },
+    {
+      "source": "live:LIVE037",
+      "target": "episode:EP161",
+      "kind": "live-episode"
+    },
+    {
+      "source": "live:LIVE037",
+      "target": "episode:EP136",
+      "kind": "live-episode"
+    },
+    {
+      "source": "live:LIVE037",
+      "target": "episode:EP156",
+      "kind": "live-episode"
+    },
+    {
+      "source": "live:LIVE037",
+      "target": "episode:EP204",
+      "kind": "live-episode"
+    },
+    {
+      "source": "live:LIVE037",
+      "target": "concept:attention-trading",
+      "kind": "live-concept"
+    },
+    {
+      "source": "live:LIVE037",
+      "target": "concept:jurisdiction-arbitrage",
+      "kind": "live-concept"
+    },
+    {
+      "source": "live:LIVE037",
+      "target": "concept:capital-wall",
+      "kind": "live-concept"
+    },
+    {
+      "source": "live:LIVE037",
+      "target": "concept:wealth-repatriation-squeeze",
+      "kind": "live-concept"
+    },
+    {
+      "source": "live:LIVE037",
+      "target": "concept:refuge-premium",
+      "kind": "live-concept"
+    },
+    {
+      "source": "live:LIVE037",
+      "target": "concept:war-insulation-collapse",
+      "kind": "live-concept"
+    },
+    {
+      "source": "live:LIVE037",
+      "target": "concept:hidden-debt",
+      "kind": "live-concept"
+    },
+    {
+      "source": "live:LIVE037",
+      "target": "concept:middle-class-hard-landing",
+      "kind": "live-concept"
+    },
+    {
+      "source": "live:LIVE037",
+      "target": "model:attention-commerce-loop",
+      "kind": "live-model"
+    },
+    {
+      "source": "live:LIVE037",
+      "target": "model:asset-preservation-architecture",
+      "kind": "live-model"
+    },
+    {
+      "source": "live:LIVE037",
+      "target": "model:distributed-warfare-system",
+      "kind": "live-model"
+    },
+    {
+      "source": "live:LIVE037",
+      "target": "model:follower-advantage-collapse",
+      "kind": "live-model"
+    },
+    {
+      "source": "live:LIVE037",
+      "target": "model:individuation-three-stage",
+      "kind": "live-model"
+    },
+    {
+      "source": "live:LIVE037",
+      "target": "theme:capital-exit-and-cross-border-harvest",
+      "kind": "live-theme"
+    },
+    {
+      "source": "live:LIVE037",
+      "target": "theme:dollar-system-and-gray-trade",
+      "kind": "live-theme"
+    },
+    {
+      "source": "live:LIVE037",
+      "target": "theme:trust-and-asset-preservation",
+      "kind": "live-theme"
+    },
+    {
+      "source": "live:LIVE037",
+      "target": "theme:middle-class-descent-and-stratification",
+      "kind": "live-theme"
+    },
+    {
+      "source": "live:LIVE037",
+      "target": "theme:great-power-competition-and-strategic-time",
+      "kind": "live-theme"
+    },
+    {
+      "source": "live:LIVE037",
+      "target": "theme:time-horizon-and-foresight",
+      "kind": "live-theme"
+    },
+    {
+      "source": "live:LIVE037",
+      "target": "model:value-capture",
+      "kind": "live-model"
+    },
+    {
+      "source": "live:LIVE037",
+      "target": "theme:youth-withdrawal-and-lying-flat",
+      "kind": "live-theme"
+    },
+    {
+      "source": "live:LIVE037",
+      "target": "model:primary-market-logic",
+      "kind": "live-model"
+    },
+    {
+      "source": "live:LIVE037",
+      "target": "concept:cost-shifting",
+      "kind": "live-concept"
+    },
+    {
+      "source": "live:LIVE037",
+      "target": "concept:haven-inversion",
+      "kind": "live-concept"
+    },
+    {
+      "source": "live:LIVE037",
+      "target": "concept:cash-optionality",
+      "kind": "live-concept"
+    },
+    {
+      "source": "live:LIVE037",
+      "target": "model:strategic-timing",
+      "kind": "live-model"
+    },
+    {
+      "source": "live:LIVE037",
+      "target": "concept:useless-class",
+      "kind": "live-concept"
+    },
+    {
+      "source": "live:LIVE037",
+      "target": "model:narrative-instrumentalization",
+      "kind": "live-model"
+    },
+    {
+      "source": "live:LIVE037",
+      "target": "concept:symbolic-matricide",
+      "kind": "live-concept"
     },
     {
       "source": "episode:EP120",
