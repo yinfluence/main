@@ -186,34 +186,52 @@ agent_activity_stamp() {
 
 # 盯着整理进程：两个活性信号都停太久，或者总时长超上限，就杀掉并记状态。
 # 返回 0=正常结束，1=被我们杀掉
+#
+# 计时只累加机器醒着的时间，不看挂钟差。2026-08-31 EP205 栽在这里：12:16 唤起整理，
+# 12:17:52 机器进了 Maintenance Sleep，到 13:00 短暂 DarkWake 时看门狗一算挂钟，
+# 得出 44 分钟没有任何写入，把一个只是被冻住的 agent 当卡死杀了。睡眠期间 agent 一条
+# 指令都跑不了，这段时间不该占停滞额度。
+# 做法是每轮量一次两次循环之间的真实间隔，超过 AGENT_TICK_MAX 的部分砍掉：正常一轮
+# 是 sleep 30 加上 agent_activity_stamp 扫盘的几秒，跨过一次睡眠则是几百上千秒。
+# 代价是 agent_activity_stamp 万一扫得特别慢，那一轮也会被砍，看门狗变宽松。宁可宽松，
+# 硬上限还在，最坏是多等一会，不会无限挂。
+AGENT_TICK_MAX=90
+
 watch_agent() {
-  local pid=$1 start last_size last_files last_change now size files mins
-  start=$(date +%s)
+  local pid=$1 prev_tick last_size last_files now size files mins delta
+  local stall=0 awake=0
+  prev_tick=$(date +%s)
   last_size=$(wc -c < "$LOG" 2>/dev/null || echo 0)
   last_files=$(agent_activity_stamp)
-  last_change=$start
   while kill -0 "$pid" 2>/dev/null; do
     sleep 30
     now=$(date +%s)
+    delta=$(( now - prev_tick ))
+    prev_tick=$now
+    (( delta < 0 )) && delta=0
+    (( delta > AGENT_TICK_MAX )) && delta=$AGENT_TICK_MAX
+    awake=$(( awake + delta ))
     size=$(wc -c < "$LOG" 2>/dev/null || echo 0)
     files=$(agent_activity_stamp)
     if [[ "$size" != "$last_size" || "$files" != "$last_files" ]]; then
       last_size=$size
       last_files=$files
-      last_change=$now
+      stall=0
+    else
+      stall=$(( stall + delta ))
     fi
-    if (( now - last_change >= AGENT_STALL_LIMIT )); then
-      mins=$(( (now - last_change) / 60 ))
-      log "整理卡死：日志和文件改动都停了 $mins 分钟，杀掉 pid=$pid"
+    if (( stall >= AGENT_STALL_LIMIT )); then
+      mins=$(( stall / 60 ))
+      log "整理卡死：机器醒着的 $mins 分钟里日志和文件改动都没动，杀掉 pid=$pid"
       kill_tree "$pid"
-      notify "颖响力网页 ⚠️" "整理卡死已终止（$mins 分钟没有任何写入）。草稿留在 content/episodes/，下次扫描会重新拾起" "Basso"
+      notify "颖响力网页 ⚠️" "整理卡死已终止（醒着的 $mins 分钟没有任何写入）。草稿留在 content/episodes/，下次扫描会重新拾起" "Basso"
       return 1
     fi
-    if (( now - start >= AGENT_HARD_LIMIT )); then
-      mins=$(( (now - start) / 60 ))
-      log "整理超时：已跑 $mins 分钟超过上限，杀掉 pid=$pid"
+    if (( awake >= AGENT_HARD_LIMIT )); then
+      mins=$(( awake / 60 ))
+      log "整理超时：醒着的时间已跑满 $mins 分钟超过上限，杀掉 pid=$pid"
       kill_tree "$pid"
-      notify "颖响力网页 ⚠️" "整理超时已终止（跑了 $mins 分钟）。草稿留在 content/episodes/，下次扫描会重新拾起" "Basso"
+      notify "颖响力网页 ⚠️" "整理超时已终止（醒着跑了 $mins 分钟）。草稿留在 content/episodes/，下次扫描会重新拾起" "Basso"
       return 1
     fi
   done
