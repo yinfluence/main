@@ -995,5 +995,15 @@
       "platform": "youtube",
       "url": "https://www.youtube.com/watch?v=Na2Sk9yA_zI"
     }
+  },
+  "EP205": {
+    "bilibili": {
+      "platform": "bilibili",
+      "url": "https://www.bilibili.com/video/BV1dStW6PEo4/"
+    },
+    "youtube": {
+      "platform": "youtube",
+      "url": "https://www.youtube.com/watch?v=kazRcV7MXVw"
+    }
   }
 }
