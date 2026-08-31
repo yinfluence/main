@@ -2,14 +2,14 @@
   "meta": {
     "title": "颖响力知识图谱",
     "subtitle": "节目、概念、模型、人物、主题之间的可视化连接网络",
-    "nodeCount": 707,
-    "linkCount": 2825,
+    "nodeCount": 709,
+    "linkCount": 2837,
     "typeCounts": {
       "model": 82,
       "live": 37,
       "theme": 92,
-      "episode": 204,
-      "concept": 227,
+      "episode": 205,
+      "concept": 228,
       "person": 65
     }
   },
@@ -158,6 +158,17 @@
       "degree": 35
     },
     {
+      "id": "theme:middle-class-descent-and-stratification",
+      "key": "middle-class-descent-and-stratification",
+      "label": "中产下坠与分层社会",
+      "fullLabel": "中产下坠与分层社会",
+      "type": "theme",
+      "route": "themes/middle-class-descent-and-stratification",
+      "summary": "当中间层缺乏缓冲带时，经济下行会迅速转成身份下坠、关系断裂和社会分层加固。",
+      "status": null,
+      "degree": 33
+    },
+    {
       "id": "live:LIVE024",
       "key": "LIVE024",
       "label": "LIVE024",
@@ -189,17 +200,6 @@
       "summary": "把车上那些高精尖扒干净，剩下的跟地里的白菜没区别。",
       "status": "curated",
       "degree": 33
-    },
-    {
-      "id": "theme:middle-class-descent-and-stratification",
-      "key": "middle-class-descent-and-stratification",
-      "label": "中产下坠与分层社会",
-      "fullLabel": "中产下坠与分层社会",
-      "type": "theme",
-      "route": "themes/middle-class-descent-and-stratification",
-      "summary": "当中间层缺乏缓冲带时，经济下行会迅速转成身份下坠、关系断裂和社会分层加固。",
-      "status": null,
-      "degree": 32
     },
     {
       "id": "live:LIVE011",
@@ -1456,6 +1456,17 @@
       "degree": 13
     },
     {
+      "id": "model:technology-wave-cycle",
+      "key": "technology-wave-cycle",
+      "label": "技术浪潮周期",
+      "fullLabel": "技术浪潮周期",
+      "type": "model",
+      "route": "models/technology-wave-cycle",
+      "summary": "技术浪潮周期强调方向正确还不够，资本、基础设施、真实应用和时间窗口必须对齐。",
+      "status": null,
+      "degree": 12
+    },
+    {
       "id": "theme:youth-withdrawal-and-lying-flat",
       "key": "youth-withdrawal-and-lying-flat",
       "label": "年轻人退出与躺平",
@@ -1621,6 +1632,17 @@
       "degree": 12
     },
     {
+      "id": "episode:EP205",
+      "key": "EP205",
+      "label": "EP205",
+      "fullLabel": "EP205 · 不止是AI漫剧停更；中国制造七层内卷之下，每个行业都在重复同一件事！",
+      "type": "episode",
+      "route": "episodes/EP205",
+      "summary": "做AI漫剧的账号成批停更，行业里给的说法是内容同质、观众看腻、涌进来的人太多，这些都停在表面。真正压下来的有七层。五个平台同时下场抢同一批制作者，模型生成一秒的价格从几块钱砍到开源白送，导演十几年的镜头经验被工具打包成一键功能，一个季度新增十二万部剧，万次播放的分账从上百块掉到五块，连卖课的都割不到新人了。再往上，平台拿补贴换数据、拿数据换估值，可灵要分拆上市，估值已经接近整个快手。最上面是持续收紧的合规，逼着行业在极短时间里换玩法，跟不上的直接出局。被挤掉的正是中间那批照着现成路子走的人。",
+      "status": "curated",
+      "degree": 12
+    },
+    {
       "id": "concept:refuge-premium",
       "key": "refuge-premium",
       "label": "避险溢价",
@@ -1650,17 +1672,6 @@
       "type": "theme",
       "route": "themes/planned-systems-and-innovation",
       "summary": "讨论统一目标和强组织动员如何带来短期速度，又如何在长期压缩创新、纠错与自发能动性。",
-      "status": null,
-      "degree": 11
-    },
-    {
-      "id": "model:technology-wave-cycle",
-      "key": "technology-wave-cycle",
-      "label": "技术浪潮周期",
-      "fullLabel": "技术浪潮周期",
-      "type": "model",
-      "route": "models/technology-wave-cycle",
-      "summary": "技术浪潮周期强调方向正确还不够，资本、基础设施、真实应用和时间窗口必须对齐。",
       "status": null,
       "degree": 11
     },
@@ -1837,6 +1848,17 @@
       "type": "concept",
       "route": "concepts/subsidy-leverage-engine",
       "summary": "财政补贴被当成种子资金，撬动基金、估值、招商和社会资本，形成杠杆引擎。",
+      "status": null,
+      "degree": 10
+    },
+    {
+      "id": "concept:price-war-trap",
+      "key": "price-war-trap",
+      "label": "低价竞争陷阱",
+      "fullLabel": "低价竞争陷阱",
+      "type": "concept",
+      "route": "concepts/price-war-trap",
+      "summary": "极致低价可以快速突袭，却可能在长期竞争中压缩技术升级、利润和战略空间。",
       "status": null,
       "degree": 10
     },
@@ -2050,17 +2072,6 @@
       "degree": 10
     },
     {
-      "id": "concept:price-war-trap",
-      "key": "price-war-trap",
-      "label": "低价竞争陷阱",
-      "fullLabel": "低价竞争陷阱",
-      "type": "concept",
-      "route": "concepts/price-war-trap",
-      "summary": "极致低价可以快速突袭，却可能在长期竞争中压缩技术升级、利润和战略空间。",
-      "status": null,
-      "degree": 9
-    },
-    {
       "id": "theme:east-asia-security-realignment",
       "key": "east-asia-security-realignment",
       "label": "东亚安全重组与日本转向",
@@ -2211,6 +2222,17 @@
       "type": "model",
       "route": "models/asset-preservation-architecture",
       "summary": "资产保全架构强调财富安全取决于来源、法域、时间前置和退出节奏的组合。",
+      "status": null,
+      "degree": 9
+    },
+    {
+      "id": "theme:ai-bubble-and-compute-demand",
+      "key": "ai-bubble-and-compute-demand",
+      "label": "AI泡沫与算力需求制造",
+      "fullLabel": "AI泡沫与算力需求制造",
+      "type": "theme",
+      "route": "themes/ai-bubble-and-compute-demand",
+      "summary": "讨论 AI 热潮如何被资本、工具和基础设施共同推高，又如何反过来制造新的算力消费需求。",
       "status": null,
       "degree": 9
     },
@@ -2490,6 +2512,17 @@
       "degree": 8
     },
     {
+      "id": "concept:compliance-cost-gap",
+      "key": "compliance-cost-gap",
+      "label": "合规成本落差",
+      "fullLabel": "合规成本落差",
+      "type": "concept",
+      "route": "concepts/compliance-cost-gap",
+      "summary": "不同制度路径让同一市场里的生产者承担完全不同的时间、资金和不确定性成本。",
+      "status": null,
+      "degree": 8
+    },
+    {
       "id": "concept:technical-shortcut",
       "key": "technical-shortcut",
       "label": "技术捷径",
@@ -2684,17 +2717,6 @@
       "type": "model",
       "route": "models/distribution-bias",
       "summary": "系统会优先保护更强势、更有组织和更能讲故事的环节，而把成本和压力慢慢压向更弱的一端。",
-      "status": null,
-      "degree": 8
-    },
-    {
-      "id": "theme:ai-bubble-and-compute-demand",
-      "key": "ai-bubble-and-compute-demand",
-      "label": "AI泡沫与算力需求制造",
-      "fullLabel": "AI泡沫与算力需求制造",
-      "type": "theme",
-      "route": "themes/ai-bubble-and-compute-demand",
-      "summary": "讨论 AI 热潮如何被资本、工具和基础设施共同推高，又如何反过来制造新的算力消费需求。",
       "status": null,
       "degree": 8
     },
@@ -3062,17 +3084,6 @@
       "degree": 7
     },
     {
-      "id": "concept:compliance-cost-gap",
-      "key": "compliance-cost-gap",
-      "label": "合规成本落差",
-      "fullLabel": "合规成本落差",
-      "type": "concept",
-      "route": "concepts/compliance-cost-gap",
-      "summary": "不同制度路径让同一市场里的生产者承担完全不同的时间、资金和不确定性成本。",
-      "status": null,
-      "degree": 7
-    },
-    {
       "id": "model:succession-governance",
       "key": "succession-governance",
       "label": "继承治理模型",
@@ -3399,6 +3410,17 @@
       "type": "concept",
       "route": "concepts/probabilistic-safety",
       "summary": "风险不是每次都会爆发，但一旦触发就后果极重，因此最容易被组织和用户一起低估。",
+      "status": null,
+      "degree": 6
+    },
+    {
+      "id": "model:follower-advantage-collapse",
+      "key": "follower-advantage-collapse",
+      "label": "跟随者失效",
+      "fullLabel": "跟随者失效",
+      "type": "model",
+      "route": "models/follower-advantage-collapse",
+      "summary": "增量时代跟着别人走最划算，进入存量博弈之后，同一批跟随者从红利分享者变成成本承担者。",
       "status": null,
       "degree": 6
     },
@@ -3876,6 +3898,17 @@
       "degree": 6
     },
     {
+      "id": "model:subsidized-adoption-flywheel",
+      "key": "subsidized-adoption-flywheel",
+      "label": "补贴驱动采纳飞轮",
+      "fullLabel": "补贴驱动采纳飞轮",
+      "type": "model",
+      "route": "models/subsidized-adoption-flywheel",
+      "summary": "补贴驱动采纳飞轮解释平台如何用补贴换取使用量，再把使用量包装成增长证据。",
+      "status": null,
+      "degree": 5
+    },
+    {
       "id": "concept:wealth-repatriation-squeeze",
       "key": "wealth-repatriation-squeeze",
       "label": "财富回收挤压",
@@ -3920,6 +3953,17 @@
       "degree": 5
     },
     {
+      "id": "theme:price-war-and-precision-competition",
+      "key": "price-war-and-precision-competition",
+      "label": "低价竞争与精准打击",
+      "fullLabel": "低价竞争与精准打击",
+      "type": "theme",
+      "route": "themes/price-war-and-precision-competition",
+      "summary": "讨论卷低价与做精准高价值打击之间的差别，以及两种竞争逻辑背后的阶层思维。",
+      "status": null,
+      "degree": 5
+    },
+    {
       "id": "model:individuation-three-stage",
       "key": "individuation-three-stage",
       "label": "个体化三阶段模型",
@@ -3927,17 +3971,6 @@
       "type": "model",
       "route": "models/individuation-three-stage",
       "summary": "个体化三阶段模型把成长理解为依次消化亲情、权威和自我，而非一次性觉醒。",
-      "status": null,
-      "degree": 5
-    },
-    {
-      "id": "model:follower-advantage-collapse",
-      "key": "follower-advantage-collapse",
-      "label": "跟随者失效",
-      "fullLabel": "跟随者失效",
-      "type": "model",
-      "route": "models/follower-advantage-collapse",
-      "summary": "增量时代跟着别人走最划算，进入存量博弈之后，同一批跟随者从红利分享者变成成本承担者。",
       "status": null,
       "degree": 5
     },
@@ -4448,6 +4481,17 @@
       "degree": 5
     },
     {
+      "id": "model:kpi-fraud-equilibrium",
+      "key": "kpi-fraud-equilibrium",
+      "label": "KPI造假均衡",
+      "fullLabel": "KPI造假均衡",
+      "type": "model",
+      "route": "models/kpi-fraud-equilibrium",
+      "summary": "KPI造假均衡解释当达标收益高于真实反馈、造假成本低于合规成本时，整个系统会奖励看起来达标。",
+      "status": null,
+      "degree": 5
+    },
+    {
       "id": "theme:liquor-financialization-and-table-culture",
       "key": "liquor-financialization-and-table-culture",
       "label": "白酒金融化与餐桌秩序",
@@ -4477,17 +4521,6 @@
       "type": "model",
       "route": "models/boundary-governance",
       "summary": "边界治理模型主张在不适、争议和明确伤害之间，先界定边界而非急于二分善恶。",
-      "status": null,
-      "degree": 4
-    },
-    {
-      "id": "model:subsidized-adoption-flywheel",
-      "key": "subsidized-adoption-flywheel",
-      "label": "补贴驱动采纳飞轮",
-      "fullLabel": "补贴驱动采纳飞轮",
-      "type": "model",
-      "route": "models/subsidized-adoption-flywheel",
-      "summary": "补贴驱动采纳飞轮解释平台如何用补贴换取使用量，再把使用量包装成增长证据。",
       "status": null,
       "degree": 4
     },
@@ -4554,17 +4587,6 @@
       "type": "concept",
       "route": "concepts/moral-capital",
       "summary": "长期为他人承担和创造价值，会形成一种不能即时折现却能改变公共评价的道德资本。",
-      "status": null,
-      "degree": 4
-    },
-    {
-      "id": "theme:price-war-and-precision-competition",
-      "key": "price-war-and-precision-competition",
-      "label": "低价竞争与精准打击",
-      "fullLabel": "低价竞争与精准打击",
-      "type": "theme",
-      "route": "themes/price-war-and-precision-competition",
-      "summary": "讨论卷低价与做精准高价值打击之间的差别，以及两种竞争逻辑背后的阶层思维。",
       "status": null,
       "degree": 4
     },
@@ -4690,6 +4712,17 @@
       "degree": 4
     },
     {
+      "id": "theme:content-regulation-and-short-drama",
+      "key": "content-regulation-and-short-drama",
+      "label": "内容监管与短剧崛起",
+      "fullLabel": "内容监管与短剧崛起",
+      "type": "theme",
+      "route": "themes/content-regulation-and-short-drama",
+      "summary": "讨论长剧、电影、网剧和短剧在不同审核路径下如何重新竞争。",
+      "status": null,
+      "degree": 4
+    },
+    {
       "id": "model:platform-legibility-filter",
       "key": "platform-legibility-filter",
       "label": "平台可读性过滤器",
@@ -4796,6 +4829,17 @@
       "type": "concept",
       "route": "concepts/production-risk-outsourcing",
       "summary": "平台和中间层把库存、投流、合规和现金流风险持续压给生产端。",
+      "status": null,
+      "degree": 4
+    },
+    {
+      "id": "concept:honest-player-exit",
+      "key": "honest-player-exit",
+      "label": "守规者出局",
+      "fullLabel": "守规者出局",
+      "type": "concept",
+      "route": "concepts/honest-player-exit",
+      "summary": "一个行业里守规矩的人先亏钱、先退出，留下来的人未必更坏，是被筛出来的那一批。",
       "status": null,
       "degree": 4
     },
@@ -5083,17 +5127,6 @@
       "route": "episodes/EP115",
       "summary": "美军花大价钱营救一名 F-15E 飞行员。要看的不是值不值这道算术题，是两套完全不同的国家逻辑。一套把人、装备和战争都折算成数字，最后只算性价比。另一套把国家与公民的双向契约、生命不可替代性和长期信用当成核心资产。美军看似花大钱救一个人，实际是在给全部军人与社会兑现国家信用。",
       "status": "curated",
-      "degree": 4
-    },
-    {
-      "id": "model:kpi-fraud-equilibrium",
-      "key": "kpi-fraud-equilibrium",
-      "label": "KPI造假均衡",
-      "fullLabel": "KPI造假均衡",
-      "type": "model",
-      "route": "models/kpi-fraud-equilibrium",
-      "summary": "KPI造假均衡解释当达标收益高于真实反馈、造假成本低于合规成本时，整个系统会奖励看起来达标。",
-      "status": null,
       "degree": 4
     },
     {
@@ -5460,17 +5493,6 @@
       "degree": 3
     },
     {
-      "id": "theme:content-regulation-and-short-drama",
-      "key": "content-regulation-and-short-drama",
-      "label": "内容监管与短剧崛起",
-      "fullLabel": "内容监管与短剧崛起",
-      "type": "theme",
-      "route": "themes/content-regulation-and-short-drama",
-      "summary": "讨论长剧、电影、网剧和短剧在不同审核路径下如何重新竞争。",
-      "status": null,
-      "degree": 3
-    },
-    {
       "id": "concept:internal-migration",
       "key": "internal-migration",
       "label": "内移民",
@@ -5566,17 +5588,6 @@
       "type": "theme",
       "route": "themes/bounded-social-experimentation",
       "summary": "制度的韧性，不只看能否创新，也看是否允许试错、限定边界和吸收后果。",
-      "status": null,
-      "degree": 3
-    },
-    {
-      "id": "concept:honest-player-exit",
-      "key": "honest-player-exit",
-      "label": "守规者出局",
-      "fullLabel": "守规者出局",
-      "type": "concept",
-      "route": "concepts/honest-player-exit",
-      "summary": "一个行业里守规矩的人先亏钱、先退出，留下来的人未必更坏，是被筛出来的那一批。",
       "status": null,
       "degree": 3
     },
@@ -7183,6 +7194,17 @@
       "type": "person",
       "route": "people/ferdinand-marcos-jr",
       "summary": "马科斯是菲律宾现任总统，节目借他在台海问题上的表态，观察东南亚国家在中美博弈下被迫选边站的压力。",
+      "status": null,
+      "degree": 1
+    },
+    {
+      "id": "concept:barrier-collapse",
+      "key": "barrier-collapse",
+      "label": "门槛塌陷",
+      "fullLabel": "门槛塌陷",
+      "type": "concept",
+      "route": "concepts/barrier-collapse",
+      "summary": "一个行业赖以收费的经验和资源被工具打包成人人可用的功能之后，入行门槛归零，能比的只剩谁更能压价、谁更能熬。",
       "status": null,
       "degree": 1
     },
@@ -15776,6 +15798,66 @@
     {
       "source": "episode:EP204",
       "target": "theme:price-war-and-precision-competition",
+      "kind": "episode-theme"
+    },
+    {
+      "source": "episode:EP205",
+      "target": "concept:price-war-trap",
+      "kind": "episode-concept"
+    },
+    {
+      "source": "episode:EP205",
+      "target": "concept:honest-player-exit",
+      "kind": "episode-concept"
+    },
+    {
+      "source": "episode:EP205",
+      "target": "concept:compliance-cost-gap",
+      "kind": "episode-concept"
+    },
+    {
+      "source": "episode:EP205",
+      "target": "concept:barrier-collapse",
+      "kind": "episode-concept"
+    },
+    {
+      "source": "episode:EP205",
+      "target": "model:subsidized-adoption-flywheel",
+      "kind": "episode-model"
+    },
+    {
+      "source": "episode:EP205",
+      "target": "model:technology-wave-cycle",
+      "kind": "episode-model"
+    },
+    {
+      "source": "episode:EP205",
+      "target": "model:follower-advantage-collapse",
+      "kind": "episode-model"
+    },
+    {
+      "source": "episode:EP205",
+      "target": "model:kpi-fraud-equilibrium",
+      "kind": "episode-model"
+    },
+    {
+      "source": "episode:EP205",
+      "target": "theme:ai-bubble-and-compute-demand",
+      "kind": "episode-theme"
+    },
+    {
+      "source": "episode:EP205",
+      "target": "theme:price-war-and-precision-competition",
+      "kind": "episode-theme"
+    },
+    {
+      "source": "episode:EP205",
+      "target": "theme:content-regulation-and-short-drama",
+      "kind": "episode-theme"
+    },
+    {
+      "source": "episode:EP205",
+      "target": "theme:middle-class-descent-and-stratification",
       "kind": "episode-theme"
     },
     {
