@@ -1005,5 +1005,15 @@
       "platform": "youtube",
       "url": "https://www.youtube.com/watch?v=kazRcV7MXVw"
     }
+  },
+  "EP206": {
+    "bilibili": {
+      "platform": "bilibili",
+      "url": "https://www.bilibili.com/video/BV1r9tu6NExo/"
+    },
+    "youtube": {
+      "platform": "youtube",
+      "url": "https://www.youtube.com/watch?v=AvDc-pdiJS0"
+    }
   }
 }

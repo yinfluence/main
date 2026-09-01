@@ -2,14 +2,14 @@
   "meta": {
     "title": "颖响力知识图谱",
     "subtitle": "节目、概念、模型、人物、主题之间的可视化连接网络",
-    "nodeCount": 709,
-    "linkCount": 2837,
+    "nodeCount": 713,
+    "linkCount": 2846,
     "typeCounts": {
       "model": 82,
       "live": 37,
       "theme": 92,
-      "episode": 205,
-      "concept": 228,
+      "episode": 206,
+      "concept": 231,
       "person": 65
     }
   },
@@ -675,6 +675,17 @@
       "degree": 20
     },
     {
+      "id": "model:value-capture",
+      "key": "value-capture",
+      "label": "价值捕获",
+      "fullLabel": "价值捕获",
+      "type": "model",
+      "route": "models/value-capture",
+      "summary": "价值捕获模型强调商业链条中关键不只是创造了价值，而是谁真正留下了价值。",
+      "status": null,
+      "degree": 20
+    },
+    {
       "id": "person:donald-trump",
       "key": "donald-trump",
       "label": "特朗普",
@@ -739,17 +750,6 @@
       "summary": "香港超过瑞士和新加坡，成为全球第一大离岸财富管理中心。财经媒体一片造势，可这盆冷水得泼。这不是全球资本涌向香港，而是东大财富溢出的集散地。拆开资金来源，内地占六成。主力是后知后觉的中小老板，和围绕公务体系的新中产。台湾资金和回流的灰色贸易资金补足其余。把钱挪到香港，只是从一个棋盘跳进另一个监管更快的棋盘。监管备好的框，迟早统一收网。资产安全从来不靠挪位置。靠的是干净的底子、清晰的架构和个人格局。",
       "status": "curated",
       "degree": 20
-    },
-    {
-      "id": "model:value-capture",
-      "key": "value-capture",
-      "label": "价值捕获",
-      "fullLabel": "价值捕获",
-      "type": "model",
-      "route": "models/value-capture",
-      "summary": "价值捕获模型强调商业链条中关键不只是创造了价值，而是谁真正留下了价值。",
-      "status": null,
-      "degree": 19
     },
     {
       "id": "theme:institutional-middle-class-and-social-mobility",
@@ -818,6 +818,17 @@
       "degree": 18
     },
     {
+      "id": "theme:narrative-speculation-and-retail-traps",
+      "key": "narrative-speculation-and-retail-traps",
+      "label": "投资叙事与散户陷阱",
+      "fullLabel": "投资叙事与散户陷阱",
+      "type": "theme",
+      "route": "themes/narrative-speculation-and-retail-traps",
+      "summary": "当市场热点先由故事驱动、再由散户接棒时，普通人最容易在高潮处接到最后一棒。",
+      "status": null,
+      "degree": 18
+    },
+    {
       "id": "episode:EP139",
       "key": "EP139",
       "label": "EP139",
@@ -869,17 +880,6 @@
       "type": "concept",
       "route": "concepts/gray-oil-network",
       "summary": "绕开正规结算和监管的石油流动，会在影子体系中重塑货币、制裁和地缘利益。",
-      "status": null,
-      "degree": 17
-    },
-    {
-      "id": "theme:narrative-speculation-and-retail-traps",
-      "key": "narrative-speculation-and-retail-traps",
-      "label": "投资叙事与散户陷阱",
-      "fullLabel": "投资叙事与散户陷阱",
-      "type": "theme",
-      "route": "themes/narrative-speculation-and-retail-traps",
-      "summary": "当市场热点先由故事驱动、再由散户接棒时，普通人最容易在高潮处接到最后一棒。",
       "status": null,
       "degree": 17
     },
@@ -961,6 +961,17 @@
       "degree": 16
     },
     {
+      "id": "theme:state-business-entanglement",
+      "key": "state-business-entanglement",
+      "label": "政企嵌入与企业存续",
+      "fullLabel": "政企嵌入与企业存续",
+      "type": "theme",
+      "route": "themes/state-business-entanglement",
+      "summary": "讨论企业如何依赖地方政府、国资平台或关系结构续命，以及这种绑定如何反过来改写企业目标。",
+      "status": null,
+      "degree": 16
+    },
+    {
       "id": "theme:sanctions-and-power-containment",
       "key": "sanctions-and-power-containment",
       "label": "制裁、遏制与集团竞争",
@@ -1034,17 +1045,6 @@
       "type": "theme",
       "route": "themes/real-estate-deleveraging",
       "summary": "讨论房地产在下行周期里如何通过断供、重组、展期和资产处置逐步暴露风险。",
-      "status": null,
-      "degree": 15
-    },
-    {
-      "id": "theme:state-business-entanglement",
-      "key": "state-business-entanglement",
-      "label": "政企嵌入与企业存续",
-      "fullLabel": "政企嵌入与企业存续",
-      "type": "theme",
-      "route": "themes/state-business-entanglement",
-      "summary": "讨论企业如何依赖地方政府、国资平台或关系结构续命，以及这种绑定如何反过来改写企业目标。",
       "status": null,
       "degree": 15
     },
@@ -1478,6 +1478,17 @@
       "degree": 12
     },
     {
+      "id": "model:principal-agent",
+      "key": "principal-agent",
+      "label": "委托代理问题",
+      "fullLabel": "委托代理问题",
+      "type": "model",
+      "route": "models/principal-agent",
+      "summary": "委托代理模型解释外部顾问或职业代理人的激励，未必与委托方长期价值一致。",
+      "status": null,
+      "degree": 12
+    },
+    {
       "id": "concept:phantom-sales",
       "key": "phantom-sales",
       "label": "虚假销售",
@@ -1694,17 +1705,6 @@
       "type": "theme",
       "route": "themes/data-cosmetics-and-false-prosperity",
       "summary": "讨论地方政府、企业与市场如何用账面数据制造景气感，却把真实风险继续藏在黑箱里。",
-      "status": null,
-      "degree": 11
-    },
-    {
-      "id": "model:principal-agent",
-      "key": "principal-agent",
-      "label": "委托代理问题",
-      "fullLabel": "委托代理问题",
-      "type": "model",
-      "route": "models/principal-agent",
-      "summary": "委托代理模型解释外部顾问或职业代理人的激励，未必与委托方长期价值一致。",
       "status": null,
       "degree": 11
     },
@@ -2479,6 +2479,17 @@
       "degree": 9
     },
     {
+      "id": "episode:EP206",
+      "key": "EP206",
+      "label": "EP206",
+      "fullLabel": "EP206 · 地主家傻儿子卖了霍金价？拆解宇树科技暴涨与王兴兴诡异表情。",
+      "type": "episode",
+      "route": "episodes/EP206",
+      "summary": "宇树科技上市当天开盘冲到一千块，市值一步到位，王兴兴成了九零后首富，人在台上却眉头紧锁。地主家的傻儿子卖出霍金的身价，说的是估值按具身智能龙头给足，公司真正拿得出手的是运动控制，通用智能那部分还远没长出来。价格一次性把往后二三十年的成长预期算完，公司此后每走一步都在给这个价格补课，不是在做新东西。把股价推上去的是上市前就在名单里的机构和国资。它们冲的是账面上的浮盈倍数，拿这份成绩单去募下一期基金、去交差。开盘能交易的只有总股本的七个多点，缺了对手盘，价格只能往一个方向走。",
+      "status": "curated",
+      "degree": 9
+    },
+    {
       "id": "concept:performative-innovation",
       "key": "performative-innovation",
       "label": "表演式创新",
@@ -2684,6 +2695,17 @@
       "type": "theme",
       "route": "themes/film-industry-and-traffic-logic",
       "summary": "关注影视生产如何越来越服从人设、粉丝和宣发流量，而非角色与作品本身。",
+      "status": null,
+      "degree": 8
+    },
+    {
+      "id": "concept:expectation-selling",
+      "key": "expectation-selling",
+      "label": "预期贩卖",
+      "fullLabel": "预期贩卖",
+      "type": "concept",
+      "route": "concepts/expectation-selling",
+      "summary": "通过出售可理解、可规划、可购买的未来想象，中间人获得影响力和收益。",
       "status": null,
       "degree": 8
     },
@@ -3146,17 +3168,6 @@
       "type": "concept",
       "route": "concepts/consumer-testbed",
       "summary": "企业把本该在研发和验证阶段承担的安全成本，转移到首批消费者、公共道路和真实事故里去消化。",
-      "status": null,
-      "degree": 7
-    },
-    {
-      "id": "concept:expectation-selling",
-      "key": "expectation-selling",
-      "label": "预期贩卖",
-      "fullLabel": "预期贩卖",
-      "type": "concept",
-      "route": "concepts/expectation-selling",
-      "summary": "通过出售可理解、可规划、可购买的未来想象，中间人获得影响力和收益。",
       "status": null,
       "degree": 7
     },
@@ -3685,6 +3696,17 @@
       "type": "theme",
       "route": "themes/housing-burden-and-income-distribution",
       "summary": "讨论住房、税负和可支配收入之间的关系，尤其关注中低收入群体被抽走了多少上升空间。",
+      "status": null,
+      "degree": 6
+    },
+    {
+      "id": "theme:capital-packaging-and-credential-borrowing",
+      "key": "capital-packaging-and-credential-borrowing",
+      "label": "资本包装与身份背书",
+      "fullLabel": "资本包装与身份背书",
+      "type": "theme",
+      "route": "themes/capital-packaging-and-credential-borrowing",
+      "summary": "项目、企业和人物通过借用更高等级的身份和场面来获得额外信用。",
       "status": null,
       "degree": 6
     },
@@ -4246,17 +4268,6 @@
       "type": "theme",
       "route": "themes/war-system-and-succession-risk",
       "summary": "讨论战争国家在长期高压运转下，如何同时面临兵员枯竭、内部老化与接班断层。",
-      "status": null,
-      "degree": 5
-    },
-    {
-      "id": "theme:capital-packaging-and-credential-borrowing",
-      "key": "capital-packaging-and-credential-borrowing",
-      "label": "资本包装与身份背书",
-      "fullLabel": "资本包装与身份背书",
-      "type": "theme",
-      "route": "themes/capital-packaging-and-credential-borrowing",
-      "summary": "项目、企业和人物通过借用更高等级的身份和场面来获得额外信用。",
       "status": null,
       "degree": 5
     },
@@ -6835,6 +6846,17 @@
       "degree": 1
     },
     {
+      "id": "concept:one-sided-market",
+      "key": "one-sided-market",
+      "label": "单边市场",
+      "fullLabel": "单边市场",
+      "type": "concept",
+      "route": "concepts/one-sided-market",
+      "summary": "缺了反向下注的力量，价格只能朝一个方向走，涨到哪里没有任何东西拦得住。",
+      "status": null,
+      "degree": 1
+    },
+    {
       "id": "person:dong-yuhui",
       "key": "dong-yuhui",
       "label": "董宇辉",
@@ -6901,6 +6923,17 @@
       "degree": 1
     },
     {
+      "id": "concept:paper-gain-track-record",
+      "key": "paper-gain-track-record",
+      "label": "浮盈业绩",
+      "fullLabel": "浮盈业绩",
+      "type": "concept",
+      "route": "concepts/paper-gain-track-record",
+      "summary": "管别人钱的机构把账面上还没变现的倍数当成成绩单，用它去募下一笔钱，最后到手多少反而排在后面。",
+      "status": null,
+      "degree": 1
+    },
+    {
       "id": "model:symbol-ascension",
       "key": "symbol-ascension",
       "label": "符号登顶",
@@ -6930,6 +6963,17 @@
       "type": "concept",
       "route": "concepts/wage-demand-loop",
       "summary": "工人的工资既是企业的成本，也是整个经济的购买力；把工资压到底，毁掉的是消费市场和经济循环本身。",
+      "status": null,
+      "degree": 1
+    },
+    {
+      "id": "concept:valuation-overdraft",
+      "key": "valuation-overdraft",
+      "label": "估值透支",
+      "fullLabel": "估值透支",
+      "type": "concept",
+      "route": "concepts/valuation-overdraft",
+      "summary": "价格一次性把公司往后几十年做到最好的结果算完，此后的努力只用来兑现，不再产生新的空间。",
       "status": null,
       "degree": 1
     },
@@ -15858,6 +15902,51 @@
     {
       "source": "episode:EP205",
       "target": "theme:middle-class-descent-and-stratification",
+      "kind": "episode-theme"
+    },
+    {
+      "source": "episode:EP206",
+      "target": "concept:valuation-overdraft",
+      "kind": "episode-concept"
+    },
+    {
+      "source": "episode:EP206",
+      "target": "concept:paper-gain-track-record",
+      "kind": "episode-concept"
+    },
+    {
+      "source": "episode:EP206",
+      "target": "concept:one-sided-market",
+      "kind": "episode-concept"
+    },
+    {
+      "source": "episode:EP206",
+      "target": "concept:expectation-selling",
+      "kind": "episode-concept"
+    },
+    {
+      "source": "episode:EP206",
+      "target": "model:principal-agent",
+      "kind": "episode-model"
+    },
+    {
+      "source": "episode:EP206",
+      "target": "model:value-capture",
+      "kind": "episode-model"
+    },
+    {
+      "source": "episode:EP206",
+      "target": "theme:narrative-speculation-and-retail-traps",
+      "kind": "episode-theme"
+    },
+    {
+      "source": "episode:EP206",
+      "target": "theme:state-business-entanglement",
+      "kind": "episode-theme"
+    },
+    {
+      "source": "episode:EP206",
+      "target": "theme:capital-packaging-and-credential-borrowing",
       "kind": "episode-theme"
     },
     {
