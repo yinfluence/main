@@ -6901,3 +6901,19 @@ a.live-inline-link:hover {
   margin-top: 14px;
 }
 
+
+/* 已下架节目页。卡片沿用节目索引的样式，这里只补一条页首说明的排版。 */
+.detail-lead {
+  margin: 10px 0 0;
+  max-width: 62ch;
+  color: var(--muted-strong);
+  font-size: 0.95rem;
+  line-height: 1.75;
+}
+
+/* 已下架页的页内序号标红加粗，后面的 EP 编号保持原色。
+   kicker 本身字号小又带字间距，600 的字重在这个底色上看不清，所以用 700 并把红色压深。 */
+.removed-seq {
+  color: #96281a;
+  font-weight: 700;
+}

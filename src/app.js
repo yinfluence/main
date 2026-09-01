@@ -27,6 +27,15 @@ const HOME_PLATFORM_LINKS = [
 const WEBSITE_LOG_ENTRIES = [
   {
     date: '2026-09-01',
+    title: '新增已下架节目一页，B 站链接全部复核过一遍',
+    items: [
+      '导航里直播回顾下面多了已下架节目。B 站上看不到的 15 期集中列在这里，卡片跟节目索引一样，前面加了这一页内部的序号，序号标红，后面仍是原来的 EP 编号。15 期分成 11-15 集和 1-10 集两组，翻页跟直播回顾一个用法。',
+      '这 15 期是两条线交叉查出来的。一条是把 191 期挂着的 B 站链接逐条查 view 接口，190 期正常。EP120 第一次返回空响应，复查是正常的，官方投稿列表里也在，属于瞬时风控，没有当成下架。另一条是抓 UP 主投稿列表 192 条，用 BV 号跟本地逐条比对，191 条全部对上。挂着的链接一条都没死，这一页的 15 期就是本地原有的 14 期加上 EP192。中间踩过一次坑，第一遍用 EP 编号匹配官方列表，跳出 95 期疑似下架，实际是早期节目标题里不带【EPxxx】，换成 BV 号比对就全对上了。',
+      'EP192 的情况跟另外 14 期不同。它从 2026-08-02 上线那天起，videoLinks 里就只有 YouTube 一条，git 历史两次提交都是这样，网站从来没挂过它的 B 站链接。官方投稿列表里 EP191 和 EP193 都在，唯独跳过 192。'
+    ]
+  },
+  {
+    date: '2026-09-01',
     title: 'EP206 上线，开盘一千块把往后二三十年一次算完',
     items: [
       'EP206 拆宇树科技上市这件事，判断卖出高价对创始人不是好消息。上市前的合理区间在七八十到一百二，开盘一千块把最乐观的结果提前认下来，往后每一步都在给这个价格补课。抬价的是发行前就在名单里的机构和国资，锁定期内卖不掉也要抬，因为要的是账面浮盈倍数和能上报的结果。思考与分析写了三段，价格怎么安排一个社会的未来、谁替别人管钱、谁肯押上全部。',
@@ -1170,6 +1179,7 @@ let episodeIndexQuery = '';
 let episodeIndexAppliedQuery = '';
 let episodeIndexRangeStart = 0;
 let liveIndexRangeStart = 0;
+let removedIndexPageStart = 0;
 let episodeIndexSearchMode = false;
 let episodeIndexFocusSearchOnRender = false;
 let episodeIndexSearchOriginHash = '';
@@ -5337,6 +5347,7 @@ function renderSidebar() {
       <a class="sidebar-link" href="#/">首页 <span class="count-badge">Home</span></a>
       <a class="sidebar-link" href="#/episodes">节目 <span class="count-badge">${site.stats.episodes}</span></a>
       <a class="sidebar-link" href="#/lives">直播回顾 <span class="count-badge">${site.stats.lives || 0}</span></a>
+      <a class="sidebar-link sidebar-link-removed" href="#/removed">已下架节目 <span class="count-badge">${getRemovedEpisodes().length}</span></a>
       <a class="sidebar-link" href="#/concepts">概念 <span class="count-badge">${site.stats.concepts}</span></a>
       <a class="sidebar-link" href="#/models">模型 <span class="count-badge">${site.stats.models}</span></a>
       <a class="sidebar-link" href="#/people">人物 <span class="count-badge">${peopleCount}</span></a>
@@ -5391,6 +5402,164 @@ function renderSidebar() {
     if (!link) return;
     normalizeMobileViewport({ force: true });
   });
+}
+
+// B 站那边没了的节目单独列一页。判定只读 content/episodes 里已经写好的状态，
+// 不在前端连 B 站，所以这一页的准确性取决于巡检脚本有没有把状态写对。
+// 两种情况分开说：一种是本来挂过链接、后来标成 unavailable；另一种是压根没有 bilibili 条目，
+// 例如 EP192 从上线那天起就只有 YouTube。前者叫已下架，后者只能说 B 站上没有。
+function getRemovedEpisodes() {
+  if (!site || !Array.isArray(site.episodes)) return [];
+  return site.episodes
+    .map((episode) => {
+      const links = Array.isArray(episode.videoLinks) ? episode.videoLinks : [];
+      const bilibili = links.find((link) => link && link.platform === 'bilibili');
+      const youtube = links.find((link) => link && link.platform === 'youtube' && link.url);
+      if (bilibili && bilibili.status === 'unavailable') {
+        return { episode, youtube, note: bilibili.note || '已下架', kind: 'removed' };
+      }
+      if (!bilibili || !bilibili.url) {
+        return { episode, youtube, note: 'B 站上没有这一期', kind: 'never' };
+      }
+      return null;
+    })
+    .filter(Boolean)
+    .sort((a, b) => episodeNumberFromId(b.episode.id) - episodeNumberFromId(a.episode.id))
+    // seq 是这一期在「已下架」这一页里的序号，按 EP 从小到大数，最老的是 1。
+    // 列表本身仍然新的在上，所以序号是从大往小排的。
+    .map((entry, index, all) => ({ ...entry, seq: all.length - index }));
+}
+
+function renderRemovedEpisodeList(entries = []) {
+  if (!entries.length) {
+    return '<div class="empty-state">目前没有下架的节目。</div>';
+  }
+
+  return `
+    <div class="list">
+      ${entries.map(({ episode, seq }) => {
+        const episodeHref = routeTo(`episodes/${episode.id}`);
+        return `
+        <article
+          class="list-item episode-index-card removed-episode-card"
+          data-episode-href="${episodeHref}"
+          data-progress-href="${episodeHref}"
+          data-progress-section="true"
+          data-progress-label="${escapeHtml(`${episode.id.replace(/^EP/i, '')}集 ${displayEpisodeTitle(episode.title).replace(/\s+/g, '').slice(0, 12)}`)}"
+        >
+          <div class="episode-index-card-head">
+            <p class="card-kicker episode-index-kicker"><span class="removed-seq">${escapeHtml(String(seq).padStart(2, '0'))}</span> ｜ ${escapeHtml(episode.id)}</p>
+          </div>
+          <a class="card-primary-link" href="${episodeHref}">
+            <h3>${escapeHtml(displayEpisodeTitle(episode.title))}</h3>
+          </a>
+          <p class="episode-index-summary">${escapeHtml(episode.summary || '待整理')}</p>
+          ${linkedChipList('keywords', (episode.tags || []).slice(0, 6), site.keywords)}
+        </article>
+      `;
+      }).join('')}
+    </div>
+  `;
+}
+
+// 已下架的期号很散（EP005 一直到 EP192），按 EP 编号切区间会切出一堆只有一两条的空档，
+// 所以按页内序号 seq 每 10 条一组。轮盘和节目、直播回顾一样，序号大的那一组排在最前面。
+// 卡片上同时显示序号和原来的 EP 编号。
+function buildRemovedPages(entries = [], size = 10) {
+  const total = entries.length;
+  const pages = [];
+  for (let low = 1; low <= total; low += size) {
+    const high = Math.min(low + size - 1, total);
+    const slice = entries.filter((entry) => entry.seq >= low && entry.seq <= high);
+    if (!slice.length) continue;
+    pages.push({
+      start: low,
+      end: high,
+      label: high > low ? `${low}-${high}` : String(low),
+      entries: slice
+    });
+  }
+  return pages.reverse();
+}
+
+function renderRemovedIndex() {
+  const isMobile = window.matchMedia('(max-width: 768px)').matches;
+  const entries = getRemovedEpisodes();
+  const pages = buildRemovedPages(entries);
+  const selectedPage = pages.find((page) => page.start === removedIndexPageStart) || pages[0];
+  const selectedIndex = Math.max(0, pages.findIndex((page) => page.start === selectedPage?.start));
+  const previousPage = selectedIndex > 0 ? pages[selectedIndex - 1] : pages[pages.length - 1] || null;
+  const nextPage = selectedIndex < pages.length - 1 ? pages[selectedIndex + 1] : pages[0] || null;
+  const visible = selectedPage ? selectedPage.entries : entries;
+
+  const wheelMarkup = pages.length > 1 ? `
+    <div class="episode-index-toolbar-shell">
+      <div class="episode-index-toolbar${isMobile ? ' mobile' : ''}">
+        <div class="episode-toolbar-main is-search-collapsed">
+          <div class="episode-range-wheel-wrap">
+            <div class="episode-range-wheel${isMobile ? ' mobile' : ''}" aria-label="已下架节目分组轮盘">
+              ${pages.map((page, index) => `
+                <button
+                  class="episode-range-wheel-option${index === selectedIndex ? ' active' : ''}"
+                  type="button"
+                  data-removed-page="${page.start}"
+                  data-range-wheel-item="true"
+                  aria-label="切换到区间 ${page.label}"
+                  aria-pressed="${index === selectedIndex ? 'true' : 'false'}"
+                >${escapeHtml(`${page.label}集`)}</button>
+              `).join('')}
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  ` : '';
+
+  const footerNavMarkup = pages.length > 1 ? `
+    <div class="episode-range-footer-nav">
+      <button class="range-nav-button range-footer-button" type="button" data-removed-page="${previousPage?.start ?? ''}">${escapeHtml(previousPage ? `${previousPage.label}集` : '—')}</button>
+      <button class="range-nav-button range-footer-button" type="button" data-removed-page="${nextPage?.start ?? ''}">${escapeHtml(nextPage ? `${nextPage.label}集` : '—')}</button>
+    </div>
+  ` : '';
+
+  app.innerHTML = `
+    <section class="detail">
+      <div class="detail-header">
+        <a class="back-link" href="#/">← 返回首页</a>
+        <p class="detail-eyebrow">Removed</p>
+        <h1 class="detail-title">已下架节目</h1>
+        <p class="detail-summary">B 站上已经看不到的 ${entries.length} 期。整理的正文都还在，点进去照常看。</p>
+      </div>
+      ${wheelMarkup}
+      <section class="detail-section episode-index-section">
+        ${renderRemovedEpisodeList(visible)}
+        ${footerNavMarkup}
+      </section>
+    </section>
+  `;
+
+  app.querySelectorAll('[data-removed-page]').forEach((button) => {
+    button.addEventListener('click', () => {
+      const value = Number(button.dataset.removedPage);
+      if (!Number.isFinite(value)) return;
+      removedIndexPageStart = value;
+      renderRemovedIndex();
+      window.requestAnimationFrame(() => {
+        const active = app.querySelector('.episode-range-wheel-option.active');
+        if (active instanceof HTMLElement) centerActiveEpisodeRangeButton(active, 'smooth');
+        syncSectionProgress({ reveal: true });
+      });
+    });
+  });
+
+  const wheel = app.querySelector('.episode-range-wheel');
+  if (wheel instanceof HTMLElement) {
+    setupEpisodeRangeWheelDrag(wheel);
+    window.requestAnimationFrame(() => {
+      const active = wheel.querySelector('.episode-range-wheel-option.active');
+      if (active instanceof HTMLElement) centerActiveEpisodeRangeButton(active);
+    });
+  }
 }
 
 function renderWebsiteLog() {
@@ -8462,6 +8631,7 @@ function renderRoute() {
   document.body.classList.toggle('page-home', !section);
   document.body.classList.toggle('page-episode-index', section === 'episodes' && !id);
   document.body.classList.toggle('page-live-index', section === 'lives' && !id);
+  document.body.classList.toggle('page-removed-index', section === 'removed' && !id);
   document.body.classList.toggle('page-keyword-index', section === 'keywords' && !id);
   document.body.classList.toggle('page-knowledge-detail', ['concepts', 'models', 'themes', 'keywords'].includes(section) && !!id);
   document.body.classList.toggle('page-reference-detail', ['concepts', 'models', 'themes', 'keywords', 'people'].includes(section) && !!id);
@@ -8490,6 +8660,9 @@ function renderRoute() {
       episodeIndexRangeStart = 0;
     }
     renderEpisodeIndex();
+  } else if (section === 'removed' && !id) {
+    if (!(previousRoute.section === 'removed' && !previousRoute.id)) removedIndexPageStart = 0;
+    renderRemovedIndex();
   } else if (section === 'lives' && !id) {
     if (!(previousRoute.section === 'lives' && !previousRoute.id)) liveIndexRangeStart = 0;
     renderLiveIndex();
