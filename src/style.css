@@ -6912,8 +6912,15 @@ a.live-inline-link:hover {
 }
 
 /* 已下架页的页内序号标红加粗，后面的 EP 编号保持原色。
-   kicker 本身字号小又带字间距，600 的字重在这个底色上看不清，所以用 700 并把红色压深。 */
+   kicker 字号小又带字间距，600 的字重看不清，所以用 700。
+   卡片悬停时底色会翻成深蓝黑，深红在那个底上几乎看不见，所以悬停态换成亮一档的珊瑚红。 */
 .removed-seq {
   color: #96281a;
   font-weight: 700;
+  font-size: 1.05em;
+}
+
+.removed-episode-card:hover .removed-seq,
+.removed-episode-card:focus-within .removed-seq {
+  color: #ff7f69;
 }
