@@ -37,13 +37,24 @@ YTDLP = os.path.expanduser('~/bilibili-downloader/.venv/bin/yt-dlp')
 MERGE_WINDOW = 2 * 3600
 
 
+COOKIE_FILE = os.path.join(HERE, '.bili-cookies.txt')
+
+
 def http_json(url, referer=None):
     # 走 curl 而不是 urllib：跟 scan-new-episodes.py 保持一致，
     # 也绕开 launchd 环境下 python 找不到根证书的问题
     cmd = ['curl', '-s', '-H', f'User-Agent: {UA}',
-           '-H', f"Referer: {referer or f'https://space.bilibili.com/{UP_MID}'}", url]
+           '-H', f"Referer: {referer or f'https://space.bilibili.com/{UP_MID}'}"]
+    # view 接口不带登录态会被 412 挡下，返回 HTML 让 json.loads 崩掉。
+    # 长效 cookie 由 scan-new-episodes.py 维护，存在就带上。
+    if os.path.exists(COOKIE_FILE):
+        cmd += ['-b', COOKIE_FILE]
+    cmd.append(url)
     out = subprocess.run(cmd, capture_output=True, text=True, timeout=25).stdout
-    return json.loads(out)
+    try:
+        return json.loads(out)
+    except json.JSONDecodeError:
+        raise RuntimeError(f'接口返回的不是 JSON（多半被风控挡了）: {url}\n{out[:200]}')
 
 
 def fetch_season():

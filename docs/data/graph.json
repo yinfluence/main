@@ -2,11 +2,11 @@
   "meta": {
     "title": "颖响力知识图谱",
     "subtitle": "节目、概念、模型、人物、主题之间的可视化连接网络",
-    "nodeCount": 713,
-    "linkCount": 2846,
+    "nodeCount": 714,
+    "linkCount": 2869,
     "typeCounts": {
       "model": 82,
-      "live": 37,
+      "live": 38,
       "theme": 92,
       "episode": 206,
       "concept": 231,
@@ -166,7 +166,7 @@
       "route": "themes/middle-class-descent-and-stratification",
       "summary": "当中间层缺乏缓冲带时，经济下行会迅速转成身份下坠、关系断裂和社会分层加固。",
       "status": null,
-      "degree": 33
+      "degree": 34
     },
     {
       "id": "live:LIVE024",
@@ -433,17 +433,6 @@
       "degree": 27
     },
     {
-      "id": "theme:singapore-and-small-state-survival",
-      "key": "singapore-and-small-state-survival",
-      "label": "新加坡与小国生存术",
-      "fullLabel": "新加坡与小国生存术",
-      "type": "theme",
-      "route": "themes/singapore-and-small-state-survival",
-      "summary": "讨论新加坡如何把规则、海峡、人才和谨慎外交组合成一套小国长期生存方法。",
-      "status": null,
-      "degree": 26
-    },
-    {
       "id": "model:narrative-instrumentalization",
       "key": "narrative-instrumentalization",
       "label": "叙事工具化模型",
@@ -451,6 +440,17 @@
       "type": "model",
       "route": "models/narrative-instrumentalization",
       "summary": "叙事工具化模型解释叙事的主要功能从解释现实转向组织情绪和划分阵营。",
+      "status": null,
+      "degree": 27
+    },
+    {
+      "id": "theme:singapore-and-small-state-survival",
+      "key": "singapore-and-small-state-survival",
+      "label": "新加坡与小国生存术",
+      "fullLabel": "新加坡与小国生存术",
+      "type": "theme",
+      "route": "themes/singapore-and-small-state-survival",
+      "summary": "讨论新加坡如何把规则、海峡、人才和谨慎外交组合成一套小国长期生存方法。",
       "status": null,
       "degree": 26
     },
@@ -532,6 +532,17 @@
       "degree": 23
     },
     {
+      "id": "live:LIVE038",
+      "key": "LIVE038",
+      "label": "LIVE038",
+      "fullLabel": "LIVE038 · 宇树冲到一千块没人拦得住，因为这个市场十年前就把做空的人赶走了",
+      "type": "live",
+      "route": "lives/LIVE038",
+      "summary": "七八家机构各掏三十亿去稳三百，叠在一起就成了一千。",
+      "status": "published",
+      "degree": 23
+    },
+    {
       "id": "episode:EP131",
       "key": "EP131",
       "label": "EP131",
@@ -587,6 +598,28 @@
       "degree": 22
     },
     {
+      "id": "concept:cost-shifting",
+      "key": "cost-shifting",
+      "label": "成本外移",
+      "fullLabel": "成本外移",
+      "type": "concept",
+      "route": "concepts/cost-shifting",
+      "summary": "组织内部的高额非生产性成本，最终会通过价格、规则或风险转嫁给外部承担者。",
+      "status": null,
+      "degree": 21
+    },
+    {
+      "id": "model:leverage-backfire",
+      "key": "leverage-backfire",
+      "label": "杠杆反噬",
+      "fullLabel": "杠杆反噬",
+      "type": "model",
+      "route": "models/leverage-backfire",
+      "summary": "杠杆反噬解释上行期放大利润的结构，如何在下行期放大亏损、现金流压力和清偿困难。",
+      "status": null,
+      "degree": 21
+    },
+    {
       "id": "theme:maritime-chokepoints-and-route-order",
       "key": "maritime-chokepoints-and-route-order",
       "label": "海峡命门与航运秩序",
@@ -605,6 +638,17 @@
       "type": "model",
       "route": "models/strategic-timing",
       "summary": "真正决定收益的往往不是是否参与，而是你能否在远早于大众情绪的时点、以合适规模和合适位置进入。",
+      "status": null,
+      "degree": 21
+    },
+    {
+      "id": "concept:middle-class-hard-landing",
+      "key": "middle-class-hard-landing",
+      "label": "中产硬着陆",
+      "fullLabel": "中产硬着陆",
+      "type": "concept",
+      "route": "concepts/middle-class-hard-landing",
+      "summary": "高负债中产一旦失速，下坠往往同时摧毁资产、体面、关系和自我认同。",
       "status": null,
       "degree": 21
     },
@@ -653,28 +697,6 @@
       "degree": 21
     },
     {
-      "id": "concept:cost-shifting",
-      "key": "cost-shifting",
-      "label": "成本外移",
-      "fullLabel": "成本外移",
-      "type": "concept",
-      "route": "concepts/cost-shifting",
-      "summary": "组织内部的高额非生产性成本，最终会通过价格、规则或风险转嫁给外部承担者。",
-      "status": null,
-      "degree": 20
-    },
-    {
-      "id": "model:leverage-backfire",
-      "key": "leverage-backfire",
-      "label": "杠杆反噬",
-      "fullLabel": "杠杆反噬",
-      "type": "model",
-      "route": "models/leverage-backfire",
-      "summary": "杠杆反噬解释上行期放大利润的结构，如何在下行期放大亏损、现金流压力和清偿困难。",
-      "status": null,
-      "degree": 20
-    },
-    {
       "id": "model:value-capture",
       "key": "value-capture",
       "label": "价值捕获",
@@ -693,17 +715,6 @@
       "type": "person",
       "route": "people/donald-trump",
       "summary": "特朗普是美国共和党政治人物、第45任与第47任美国总统，节目借他观察美国战略收缩、成本转嫁和规则重定价。",
-      "status": null,
-      "degree": 20
-    },
-    {
-      "id": "concept:middle-class-hard-landing",
-      "key": "middle-class-hard-landing",
-      "label": "中产硬着陆",
-      "fullLabel": "中产硬着陆",
-      "type": "concept",
-      "route": "concepts/middle-class-hard-landing",
-      "summary": "高负债中产一旦失速，下坠往往同时摧毁资产、体面、关系和自我认同。",
       "status": null,
       "degree": 20
     },
@@ -752,6 +763,17 @@
       "degree": 20
     },
     {
+      "id": "concept:pan-institutional-middle-class",
+      "key": "pan-institutional-middle-class",
+      "label": "泛体制中产",
+      "fullLabel": "泛体制中产",
+      "type": "concept",
+      "route": "concepts/pan-institutional-middle-class",
+      "summary": "泛体制中产指依靠公务员、事业编、国企及体制相关岗位维持稳定收入、福利和社会体面的中间层。",
+      "status": null,
+      "degree": 19
+    },
+    {
       "id": "theme:institutional-middle-class-and-social-mobility",
       "key": "institutional-middle-class-and-social-mobility",
       "label": "体制化中产与社会流动",
@@ -759,6 +781,17 @@
       "type": "theme",
       "route": "themes/institutional-middle-class-and-social-mobility",
       "summary": "讨论稳定岗位、公共财政和身份溢价如何重塑中产结构，并收窄普通人的上升路径。",
+      "status": null,
+      "degree": 19
+    },
+    {
+      "id": "theme:narrative-speculation-and-retail-traps",
+      "key": "narrative-speculation-and-retail-traps",
+      "label": "投资叙事与散户陷阱",
+      "fullLabel": "投资叙事与散户陷阱",
+      "type": "theme",
+      "route": "themes/narrative-speculation-and-retail-traps",
+      "summary": "当市场热点先由故事驱动、再由散户接棒时，普通人最容易在高潮处接到最后一棒。",
       "status": null,
       "degree": 19
     },
@@ -803,28 +836,6 @@
       "type": "model",
       "route": "models/subsidy-capital-flywheel",
       "summary": "补贴资本飞轮解释地方财政、产业基金、企业估值和再融资如何互相放大。",
-      "status": null,
-      "degree": 18
-    },
-    {
-      "id": "concept:pan-institutional-middle-class",
-      "key": "pan-institutional-middle-class",
-      "label": "泛体制中产",
-      "fullLabel": "泛体制中产",
-      "type": "concept",
-      "route": "concepts/pan-institutional-middle-class",
-      "summary": "泛体制中产指依靠公务员、事业编、国企及体制相关岗位维持稳定收入、福利和社会体面的中间层。",
-      "status": null,
-      "degree": 18
-    },
-    {
-      "id": "theme:narrative-speculation-and-retail-traps",
-      "key": "narrative-speculation-and-retail-traps",
-      "label": "投资叙事与散户陷阱",
-      "fullLabel": "投资叙事与散户陷阱",
-      "type": "theme",
-      "route": "themes/narrative-speculation-and-retail-traps",
-      "summary": "当市场热点先由故事驱动、再由散户接棒时，普通人最容易在高潮处接到最后一棒。",
       "status": null,
       "degree": 18
     },
@@ -1049,6 +1060,17 @@
       "degree": 15
     },
     {
+      "id": "model:narrative-leverage",
+      "key": "narrative-leverage",
+      "label": "叙事杠杆",
+      "fullLabel": "叙事杠杆",
+      "type": "model",
+      "route": "models/narrative-leverage",
+      "summary": "通过一个足够大的故事，把原本有限的资源、信用和注意力撬成更大的资本、销量或支持度。",
+      "status": null,
+      "degree": 15
+    },
+    {
       "id": "episode:EP123",
       "key": "EP123",
       "label": "EP123",
@@ -1133,17 +1155,6 @@
       "type": "model",
       "route": "models/rule-anchored-small-state-model",
       "summary": "小国要长期活下来，不能只靠地理好运，更要靠规则信誉、理性政府和可预期的制度自我约束。",
-      "status": null,
-      "degree": 14
-    },
-    {
-      "id": "model:narrative-leverage",
-      "key": "narrative-leverage",
-      "label": "叙事杠杆",
-      "fullLabel": "叙事杠杆",
-      "type": "model",
-      "route": "models/narrative-leverage",
-      "summary": "通过一个足够大的故事，把原本有限的资源、信用和注意力撬成更大的资本、销量或支持度。",
       "status": null,
       "degree": 14
     },
@@ -1276,6 +1287,17 @@
       "type": "model",
       "route": "models/black-box-assetization",
       "summary": "把本来难以估值、难以穿透甚至本该暴露风险的东西，装进平台、基金或体外结构里，重新包装成可融资、可讲故事、可继续吸钱的资产。",
+      "status": null,
+      "degree": 13
+    },
+    {
+      "id": "model:technology-wave-cycle",
+      "key": "technology-wave-cycle",
+      "label": "技术浪潮周期",
+      "fullLabel": "技术浪潮周期",
+      "type": "model",
+      "route": "models/technology-wave-cycle",
+      "summary": "技术浪潮周期强调方向正确还不够，资本、基础设施、真实应用和时间窗口必须对齐。",
       "status": null,
       "degree": 13
     },
@@ -1454,17 +1476,6 @@
       "summary": "2026 年 7 月 29 日夜里，曼谷飞北京的泰航 TG674 上坐着一位国内艺人。二十二名买了普通舱票的粉丝和代拍同机跟拍，先挤进贵宾室，被劝离后守在门口。艺人先行登机时，这批人大多没验票就冲进廊桥。机组关了舱门，泰航拒载这二十二人，航班延误一小时多。带回候机厅的冲突里，一名安保做出拉眼角的动作，视频传上网，话题立刻变成泰国歧视中国人。拒载和那个手势是两件事，该负责的人也不同。让它反复发生的原因在行程怎么流出来，那条链子上有经纪公司，也有机场内部人和代拍。",
       "status": "curated",
       "degree": 13
-    },
-    {
-      "id": "model:technology-wave-cycle",
-      "key": "technology-wave-cycle",
-      "label": "技术浪潮周期",
-      "fullLabel": "技术浪潮周期",
-      "type": "model",
-      "route": "models/technology-wave-cycle",
-      "summary": "技术浪潮周期强调方向正确还不够，资本、基础设施、真实应用和时间窗口必须对齐。",
-      "status": null,
-      "degree": 12
     },
     {
       "id": "theme:youth-withdrawal-and-lying-flat",
@@ -1929,6 +1940,17 @@
       "degree": 10
     },
     {
+      "id": "theme:time-horizon-and-foresight",
+      "key": "time-horizon-and-foresight",
+      "label": "时间尺度与资产前瞻",
+      "fullLabel": "时间尺度与资产前瞻",
+      "type": "theme",
+      "route": "themes/time-horizon-and-foresight",
+      "summary": "讨论人物与企业如何在不同周期里提前摆放自己，而不是等结果发生后再被动解释。",
+      "status": null,
+      "degree": 10
+    },
+    {
       "id": "model:political-embedded-enterprise",
       "key": "political-embedded-enterprise",
       "label": "政企嵌入企业模型",
@@ -2072,6 +2094,17 @@
       "degree": 10
     },
     {
+      "id": "episode:EP206",
+      "key": "EP206",
+      "label": "EP206",
+      "fullLabel": "EP206 · 地主家傻儿子卖了霍金价？拆解宇树科技暴涨与王兴兴诡异表情。",
+      "type": "episode",
+      "route": "episodes/EP206",
+      "summary": "宇树科技上市当天开盘冲到一千块，市值一步到位，王兴兴成了九零后首富，人在台上却眉头紧锁。地主家的傻儿子卖出霍金的身价，说的是估值按具身智能龙头给足，公司真正拿得出手的是运动控制，通用智能那部分还远没长出来。价格一次性把往后二三十年的成长预期算完，公司此后每走一步都在给这个价格补课，不是在做新东西。把股价推上去的是上市前就在名单里的机构和国资。它们冲的是账面上的浮盈倍数，拿这份成绩单去募下一期基金、去交差。开盘能交易的只有总股本的七个多点，缺了对手盘，价格只能往一个方向走。",
+      "status": "curated",
+      "degree": 10
+    },
+    {
       "id": "theme:east-asia-security-realignment",
       "key": "east-asia-security-realignment",
       "label": "东亚安全重组与日本转向",
@@ -2105,6 +2138,17 @@
       "degree": 9
     },
     {
+      "id": "concept:delayed-price-discovery",
+      "key": "delayed-price-discovery",
+      "label": "价格发现延迟",
+      "fullLabel": "价格发现延迟",
+      "type": "concept",
+      "route": "concepts/delayed-price-discovery",
+      "summary": "真实价格本来应该尽快显现，但被托价、缓冲、票据和关系安排一层层往后拖，市场只剩名义稳定。",
+      "status": null,
+      "degree": 9
+    },
+    {
       "id": "theme:exam-centered-education-and-person-formation",
       "key": "exam-centered-education-and-person-formation",
       "label": "考试中心教育与人成形",
@@ -2123,17 +2167,6 @@
       "type": "model",
       "route": "models/screening-machine",
       "summary": "教育和组织把人当作待筛选样本，而非待生长的人来处理的系统逻辑。",
-      "status": null,
-      "degree": 9
-    },
-    {
-      "id": "theme:time-horizon-and-foresight",
-      "key": "time-horizon-and-foresight",
-      "label": "时间尺度与资产前瞻",
-      "fullLabel": "时间尺度与资产前瞻",
-      "type": "theme",
-      "route": "themes/time-horizon-and-foresight",
-      "summary": "讨论人物与企业如何在不同周期里提前摆放自己，而不是等结果发生后再被动解释。",
       "status": null,
       "degree": 9
     },
@@ -2189,6 +2222,17 @@
       "type": "theme",
       "route": "themes/new-media-political-mobilization",
       "summary": "候选人和政治叙事不再必须依附旧媒体，而可以直接通过新媒体组织情绪、认同和支持。",
+      "status": null,
+      "degree": 9
+    },
+    {
+      "id": "concept:expectation-selling",
+      "key": "expectation-selling",
+      "label": "预期贩卖",
+      "fullLabel": "预期贩卖",
+      "type": "concept",
+      "route": "concepts/expectation-selling",
+      "summary": "通过出售可理解、可规划、可购买的未来想象，中间人获得影响力和收益。",
       "status": null,
       "degree": 9
     },
@@ -2479,17 +2523,6 @@
       "degree": 9
     },
     {
-      "id": "episode:EP206",
-      "key": "EP206",
-      "label": "EP206",
-      "fullLabel": "EP206 · 地主家傻儿子卖了霍金价？拆解宇树科技暴涨与王兴兴诡异表情。",
-      "type": "episode",
-      "route": "episodes/EP206",
-      "summary": "宇树科技上市当天开盘冲到一千块，市值一步到位，王兴兴成了九零后首富，人在台上却眉头紧锁。地主家的傻儿子卖出霍金的身价，说的是估值按具身智能龙头给足，公司真正拿得出手的是运动控制，通用智能那部分还远没长出来。价格一次性把往后二三十年的成长预期算完，公司此后每走一步都在给这个价格补课，不是在做新东西。把股价推上去的是上市前就在名单里的机构和国资。它们冲的是账面上的浮盈倍数，拿这份成绩单去募下一期基金、去交差。开盘能交易的只有总股本的七个多点，缺了对手盘，价格只能往一个方向走。",
-      "status": "curated",
-      "degree": 9
-    },
-    {
       "id": "concept:performative-innovation",
       "key": "performative-innovation",
       "label": "表演式创新",
@@ -2552,17 +2585,6 @@
       "type": "theme",
       "route": "themes/trust-and-asset-preservation",
       "summary": "讨论信托、离岸架构、上市与退出动作如何共同决定财富能不能穿越周期。",
-      "status": null,
-      "degree": 8
-    },
-    {
-      "id": "concept:delayed-price-discovery",
-      "key": "delayed-price-discovery",
-      "label": "价格发现延迟",
-      "fullLabel": "价格发现延迟",
-      "type": "concept",
-      "route": "concepts/delayed-price-discovery",
-      "summary": "真实价格本来应该尽快显现，但被托价、缓冲、票据和关系安排一层层往后拖，市场只剩名义稳定。",
       "status": null,
       "degree": 8
     },
@@ -2695,17 +2717,6 @@
       "type": "theme",
       "route": "themes/film-industry-and-traffic-logic",
       "summary": "关注影视生产如何越来越服从人设、粉丝和宣发流量，而非角色与作品本身。",
-      "status": null,
-      "degree": 8
-    },
-    {
-      "id": "concept:expectation-selling",
-      "key": "expectation-selling",
-      "label": "预期贩卖",
-      "fullLabel": "预期贩卖",
-      "type": "concept",
-      "route": "concepts/expectation-selling",
-      "summary": "通过出售可理解、可规划、可购买的未来想象，中间人获得影响力和收益。",
       "status": null,
       "degree": 8
     },
@@ -3106,6 +3117,17 @@
       "degree": 7
     },
     {
+      "id": "model:follower-advantage-collapse",
+      "key": "follower-advantage-collapse",
+      "label": "跟随者失效",
+      "fullLabel": "跟随者失效",
+      "type": "model",
+      "route": "models/follower-advantage-collapse",
+      "summary": "增量时代跟着别人走最划算，进入存量博弈之后，同一批跟随者从红利分享者变成成本承担者。",
+      "status": null,
+      "degree": 7
+    },
+    {
       "id": "model:succession-governance",
       "key": "succession-governance",
       "label": "继承治理模型",
@@ -3161,6 +3183,17 @@
       "degree": 7
     },
     {
+      "id": "model:exit-liquidation-waterfall",
+      "key": "exit-liquidation-waterfall",
+      "label": "退出清算瀑布",
+      "fullLabel": "退出清算瀑布",
+      "type": "model",
+      "route": "models/exit-liquidation-waterfall",
+      "summary": "产业项目一旦崩塌，价值会迅速收缩到土地、壳和残余设备，并按优先级把损失一层层向下压。",
+      "status": null,
+      "degree": 7
+    },
+    {
       "id": "concept:consumer-testbed",
       "key": "consumer-testbed",
       "label": "消费者测试场",
@@ -3168,6 +3201,17 @@
       "type": "concept",
       "route": "concepts/consumer-testbed",
       "summary": "企业把本该在研发和验证阶段承担的安全成本，转移到首批消费者、公共道路和真实事故里去消化。",
+      "status": null,
+      "degree": 7
+    },
+    {
+      "id": "concept:liability-firewall",
+      "key": "liability-firewall",
+      "label": "责任隔离墙",
+      "fullLabel": "责任隔离墙",
+      "type": "concept",
+      "route": "concepts/liability-firewall",
+      "summary": "强势方通过不持股、不担保、不当协议主体，把债务、对赌和经营风险全部隔在墙外，自己片叶不沾身。",
       "status": null,
       "degree": 7
     },
@@ -3425,17 +3469,6 @@
       "degree": 6
     },
     {
-      "id": "model:follower-advantage-collapse",
-      "key": "follower-advantage-collapse",
-      "label": "跟随者失效",
-      "fullLabel": "跟随者失效",
-      "type": "model",
-      "route": "models/follower-advantage-collapse",
-      "summary": "增量时代跟着别人走最划算，进入存量博弈之后，同一批跟随者从红利分享者变成成本承担者。",
-      "status": null,
-      "degree": 6
-    },
-    {
       "id": "theme:public-service-downgrading",
       "key": "public-service-downgrading",
       "label": "公共服务降标与治理后果",
@@ -3535,13 +3568,13 @@
       "degree": 6
     },
     {
-      "id": "model:exit-liquidation-waterfall",
-      "key": "exit-liquidation-waterfall",
-      "label": "退出清算瀑布",
-      "fullLabel": "退出清算瀑布",
-      "type": "model",
-      "route": "models/exit-liquidation-waterfall",
-      "summary": "产业项目一旦崩塌，价值会迅速收缩到土地、壳和残余设备，并按优先级把损失一层层向下压。",
+      "id": "concept:homogeneous-competition",
+      "key": "homogeneous-competition",
+      "label": "同质竞争",
+      "fullLabel": "同质竞争",
+      "type": "concept",
+      "route": "concepts/homogeneous-competition",
+      "summary": "同一行政区或同一市场里，两个功能重叠的主体争夺同一批资源时，胜负往往由谁获得体制支持决定，而不是谁质量更好。",
       "status": null,
       "degree": 6
     },
@@ -3630,17 +3663,6 @@
       "type": "concept",
       "route": "concepts/shadow-fleet",
       "summary": "影子舰队是绕开西方保险、认证、定位和船东透明规则的平行航运网络。",
-      "status": null,
-      "degree": 6
-    },
-    {
-      "id": "concept:liability-firewall",
-      "key": "liability-firewall",
-      "label": "责任隔离墙",
-      "fullLabel": "责任隔离墙",
-      "type": "concept",
-      "route": "concepts/liability-firewall",
-      "summary": "强势方通过不持股、不担保、不当协议主体，把债务、对赌和经营风险全部隔在墙外，自己片叶不沾身。",
       "status": null,
       "degree": 6
     },
@@ -4184,13 +4206,13 @@
       "degree": 5
     },
     {
-      "id": "concept:homogeneous-competition",
-      "key": "homogeneous-competition",
-      "label": "同质竞争",
-      "fullLabel": "同质竞争",
+      "id": "concept:identity-over-wealth",
+      "key": "identity-over-wealth",
+      "label": "身份压倒财富",
+      "fullLabel": "身份压倒财富",
       "type": "concept",
-      "route": "concepts/homogeneous-competition",
-      "summary": "同一行政区或同一市场里，两个功能重叠的主体争夺同一批资源时，胜负往往由谁获得体制支持决定，而不是谁质量更好。",
+      "route": "concepts/identity-over-wealth",
+      "summary": "身份压倒财富指稳定身份、编制和圈层位置开始比账面收入更能决定社会评价和生活安全感。",
       "status": null,
       "degree": 5
     },
@@ -4268,6 +4290,17 @@
       "type": "theme",
       "route": "themes/war-system-and-succession-risk",
       "summary": "讨论战争国家在长期高压运转下，如何同时面临兵员枯竭、内部老化与接班断层。",
+      "status": null,
+      "degree": 5
+    },
+    {
+      "id": "concept:attention-trading",
+      "key": "attention-trading",
+      "label": "注意力交易",
+      "fullLabel": "注意力交易",
+      "type": "concept",
+      "route": "concepts/attention-trading",
+      "summary": "创作者把观众的焦虑、兴奋和参与感换成流量、带货、课程或影响力收益。",
       "status": null,
       "degree": 5
     },
@@ -4811,17 +4844,6 @@
       "degree": 4
     },
     {
-      "id": "concept:identity-over-wealth",
-      "key": "identity-over-wealth",
-      "label": "身份压倒财富",
-      "fullLabel": "身份压倒财富",
-      "type": "concept",
-      "route": "concepts/identity-over-wealth",
-      "summary": "身份压倒财富指稳定身份、编制和圈层位置开始比账面收入更能决定社会评价和生活安全感。",
-      "status": null,
-      "degree": 4
-    },
-    {
       "id": "concept:aesthetic-compression",
       "key": "aesthetic-compression",
       "label": "审美压缩",
@@ -4972,17 +4994,6 @@
       "type": "theme",
       "route": "themes/smart-products-and-ownership-boundaries",
       "summary": "讨论商品联网之后，方向盘和开关之外那层控制权归谁，买断和许可的界线被挪到了哪里。",
-      "status": null,
-      "degree": 4
-    },
-    {
-      "id": "concept:attention-trading",
-      "key": "attention-trading",
-      "label": "注意力交易",
-      "fullLabel": "注意力交易",
-      "type": "concept",
-      "route": "concepts/attention-trading",
-      "summary": "创作者把观众的焦虑、兴奋和参与感换成流量、带货、课程或影响力收益。",
       "status": null,
       "degree": 4
     },
@@ -5603,6 +5614,17 @@
       "degree": 3
     },
     {
+      "id": "concept:time-window-reading",
+      "key": "time-window-reading",
+      "label": "时间窗口阅读",
+      "fullLabel": "时间窗口阅读",
+      "type": "concept",
+      "route": "concepts/time-window-reading",
+      "summary": "同一动作在不同周期中的意义不同，判断决策必须先看它发生在哪个时间窗口。",
+      "status": null,
+      "degree": 3
+    },
+    {
       "id": "concept:authoritarian-regression",
       "key": "authoritarian-regression",
       "label": "体制复古",
@@ -5680,6 +5702,17 @@
       "degree": 3
     },
     {
+      "id": "concept:civilization-culture-split",
+      "key": "civilization-culture-split",
+      "label": "文化与文明分离",
+      "fullLabel": "文化与文明分离",
+      "type": "concept",
+      "route": "concepts/civilization-culture-split",
+      "summary": "拥有古老文化符号，不等于形成了保护弱者、约束权力和尊重个体的文明结构。",
+      "status": null,
+      "degree": 3
+    },
+    {
       "id": "concept:cultural-reterritorialization",
       "key": "cultural-reterritorialization",
       "label": "文化再属地化",
@@ -5720,6 +5753,17 @@
       "type": "concept",
       "route": "concepts/tainted-asset-shield",
       "summary": "资产来源若带有旧瑕疵，信托、保险和离岸结构也可能被追穿。",
+      "status": null,
+      "degree": 3
+    },
+    {
+      "id": "concept:information-edge",
+      "key": "information-edge",
+      "label": "信息优势",
+      "fullLabel": "信息优势",
+      "type": "concept",
+      "route": "concepts/information-edge",
+      "summary": "投资真正的优势来自别人没有的确定信息，而不是公开可见的故事和情绪。",
       "status": null,
       "degree": 3
     },
@@ -6098,6 +6142,17 @@
       "degree": 2
     },
     {
+      "id": "concept:valuation-overdraft",
+      "key": "valuation-overdraft",
+      "label": "估值透支",
+      "fullLabel": "估值透支",
+      "type": "concept",
+      "route": "concepts/valuation-overdraft",
+      "summary": "价格一次性把公司往后几十年做到最好的结果算完，此后的努力只用来兑现，不再产生新的空间。",
+      "status": null,
+      "degree": 2
+    },
+    {
       "id": "concept:audience-filter-labor",
       "key": "audience-filter-labor",
       "label": "观众筛选劳动",
@@ -6472,17 +6527,6 @@
       "degree": 2
     },
     {
-      "id": "concept:time-window-reading",
-      "key": "time-window-reading",
-      "label": "时间窗口阅读",
-      "fullLabel": "时间窗口阅读",
-      "type": "concept",
-      "route": "concepts/time-window-reading",
-      "summary": "同一动作在不同周期中的意义不同，判断决策必须先看它发生在哪个时间窗口。",
-      "status": null,
-      "degree": 2
-    },
-    {
       "id": "concept:random-walk-arrogance",
       "key": "random-walk-arrogance",
       "label": "随机漫步式傲慢",
@@ -6512,17 +6556,6 @@
       "type": "person",
       "route": "people/wang-jianlin",
       "summary": "王健林是大连万达集团长期董事长，节目借他观察旧地产企业家在政银地扩张时代形成、又在资本期限反噬中退潮的过程。",
-      "status": null,
-      "degree": 2
-    },
-    {
-      "id": "concept:civilization-culture-split",
-      "key": "civilization-culture-split",
-      "label": "文化与文明分离",
-      "fullLabel": "文化与文明分离",
-      "type": "concept",
-      "route": "concepts/civilization-culture-split",
-      "summary": "拥有古老文化符号，不等于形成了保护弱者、约束权力和尊重个体的文明结构。",
       "status": null,
       "degree": 2
     },
@@ -6589,17 +6622,6 @@
       "type": "theme",
       "route": "themes/new-money-and-family-projection",
       "summary": "当新钱缺少历史层次和价值边界时，最容易把财富投向夸张的家族、身份和延续想象。",
-      "status": null,
-      "degree": 2
-    },
-    {
-      "id": "concept:information-edge",
-      "key": "information-edge",
-      "label": "信息优势",
-      "fullLabel": "信息优势",
-      "type": "concept",
-      "route": "concepts/information-edge",
-      "summary": "投资真正的优势来自别人没有的确定信息，而不是公开可见的故事和情绪。",
       "status": null,
       "degree": 2
     },
@@ -6963,17 +6985,6 @@
       "type": "concept",
       "route": "concepts/wage-demand-loop",
       "summary": "工人的工资既是企业的成本，也是整个经济的购买力；把工资压到底，毁掉的是消费市场和经济循环本身。",
-      "status": null,
-      "degree": 1
-    },
-    {
-      "id": "concept:valuation-overdraft",
-      "key": "valuation-overdraft",
-      "label": "估值透支",
-      "fullLabel": "估值透支",
-      "type": "concept",
-      "route": "concepts/valuation-overdraft",
-      "summary": "价格一次性把公司往后几十年做到最好的结果算完，此后的努力只用来兑现，不再产生新的空间。",
       "status": null,
       "degree": 1
     },
@@ -21847,6 +21858,121 @@
     {
       "source": "live:LIVE037",
       "target": "concept:symbolic-matricide",
+      "kind": "live-concept"
+    },
+    {
+      "source": "live:LIVE038",
+      "target": "episode:EP206",
+      "kind": "live-episode"
+    },
+    {
+      "source": "live:LIVE038",
+      "target": "concept:valuation-overdraft",
+      "kind": "live-concept"
+    },
+    {
+      "source": "live:LIVE038",
+      "target": "concept:attention-trading",
+      "kind": "live-concept"
+    },
+    {
+      "source": "live:LIVE038",
+      "target": "concept:civilization-culture-split",
+      "kind": "live-concept"
+    },
+    {
+      "source": "live:LIVE038",
+      "target": "concept:delayed-price-discovery",
+      "kind": "live-concept"
+    },
+    {
+      "source": "live:LIVE038",
+      "target": "concept:information-edge",
+      "kind": "live-concept"
+    },
+    {
+      "source": "live:LIVE038",
+      "target": "concept:expectation-selling",
+      "kind": "live-concept"
+    },
+    {
+      "source": "live:LIVE038",
+      "target": "concept:middle-class-hard-landing",
+      "kind": "live-concept"
+    },
+    {
+      "source": "live:LIVE038",
+      "target": "model:narrative-instrumentalization",
+      "kind": "live-model"
+    },
+    {
+      "source": "live:LIVE038",
+      "target": "model:narrative-leverage",
+      "kind": "live-model"
+    },
+    {
+      "source": "live:LIVE038",
+      "target": "model:exit-liquidation-waterfall",
+      "kind": "live-model"
+    },
+    {
+      "source": "live:LIVE038",
+      "target": "model:follower-advantage-collapse",
+      "kind": "live-model"
+    },
+    {
+      "source": "live:LIVE038",
+      "target": "theme:narrative-speculation-and-retail-traps",
+      "kind": "live-theme"
+    },
+    {
+      "source": "live:LIVE038",
+      "target": "theme:middle-class-descent-and-stratification",
+      "kind": "live-theme"
+    },
+    {
+      "source": "live:LIVE038",
+      "target": "theme:time-horizon-and-foresight",
+      "kind": "live-theme"
+    },
+    {
+      "source": "live:LIVE038",
+      "target": "concept:identity-over-wealth",
+      "kind": "live-concept"
+    },
+    {
+      "source": "live:LIVE038",
+      "target": "concept:time-window-reading",
+      "kind": "live-concept"
+    },
+    {
+      "source": "live:LIVE038",
+      "target": "model:leverage-backfire",
+      "kind": "live-model"
+    },
+    {
+      "source": "live:LIVE038",
+      "target": "concept:cost-shifting",
+      "kind": "live-concept"
+    },
+    {
+      "source": "live:LIVE038",
+      "target": "concept:liability-firewall",
+      "kind": "live-concept"
+    },
+    {
+      "source": "live:LIVE038",
+      "target": "model:technology-wave-cycle",
+      "kind": "live-model"
+    },
+    {
+      "source": "live:LIVE038",
+      "target": "concept:homogeneous-competition",
+      "kind": "live-concept"
+    },
+    {
+      "source": "live:LIVE038",
+      "target": "concept:pan-institutional-middle-class",
       "kind": "live-concept"
     },
     {
