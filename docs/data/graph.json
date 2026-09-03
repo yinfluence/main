@@ -2,13 +2,13 @@
   "meta": {
     "title": "颖响力知识图谱",
     "subtitle": "节目、概念、模型、人物、主题之间的可视化连接网络",
-    "nodeCount": 714,
-    "linkCount": 2869,
+    "nodeCount": 715,
+    "linkCount": 2878,
     "typeCounts": {
       "model": 82,
       "live": 38,
       "theme": 92,
-      "episode": 206,
+      "episode": 207,
       "concept": 231,
       "person": 65
     }
@@ -23,7 +23,7 @@
       "route": "models/risk-transfer-chain",
       "summary": "系统不会立刻吞下风险，而是先沿着银行、企业、票据、供应链和普通人之间不断转手、延后和下沉。",
       "status": null,
-      "degree": 51
+      "degree": 52
     },
     {
       "id": "live:LIVE002",
@@ -543,6 +543,17 @@
       "degree": 23
     },
     {
+      "id": "concept:cost-shifting",
+      "key": "cost-shifting",
+      "label": "成本外移",
+      "fullLabel": "成本外移",
+      "type": "concept",
+      "route": "concepts/cost-shifting",
+      "summary": "组织内部的高额非生产性成本，最终会通过价格、规则或风险转嫁给外部承担者。",
+      "status": null,
+      "degree": 22
+    },
+    {
       "id": "episode:EP131",
       "key": "EP131",
       "label": "EP131",
@@ -596,17 +607,6 @@
       "summary": "灰色贸易的油三四十，按正常价签就是八十一百，这中间差着三成。",
       "status": "curated",
       "degree": 22
-    },
-    {
-      "id": "concept:cost-shifting",
-      "key": "cost-shifting",
-      "label": "成本外移",
-      "fullLabel": "成本外移",
-      "type": "concept",
-      "route": "concepts/cost-shifting",
-      "summary": "组织内部的高额非生产性成本，最终会通过价格、规则或风险转嫁给外部承担者。",
-      "status": null,
-      "degree": 21
     },
     {
       "id": "model:leverage-backfire",
@@ -972,6 +972,17 @@
       "degree": 16
     },
     {
+      "id": "theme:real-estate-deleveraging",
+      "key": "real-estate-deleveraging",
+      "label": "房地产去杠杆与风险出清",
+      "fullLabel": "房地产去杠杆与风险出清",
+      "type": "theme",
+      "route": "themes/real-estate-deleveraging",
+      "summary": "讨论房地产在下行周期里如何通过断供、重组、展期和资产处置逐步暴露风险。",
+      "status": null,
+      "degree": 16
+    },
+    {
       "id": "theme:state-business-entanglement",
       "key": "state-business-entanglement",
       "label": "政企嵌入与企业存续",
@@ -1045,17 +1056,6 @@
       "type": "model",
       "route": "models/proxy-containment-ring",
       "summary": "代理围堵环解释大国如何通过盟友、代理人和通道控制分摊成本、封堵对手。",
-      "status": null,
-      "degree": 15
-    },
-    {
-      "id": "theme:real-estate-deleveraging",
-      "key": "real-estate-deleveraging",
-      "label": "房地产去杠杆与风险出清",
-      "fullLabel": "房地产去杠杆与风险出清",
-      "type": "theme",
-      "route": "themes/real-estate-deleveraging",
-      "summary": "讨论房地产在下行周期里如何通过断供、重组、展期和资产处置逐步暴露风险。",
       "status": null,
       "degree": 15
     },
@@ -1709,6 +1709,17 @@
       "degree": 11
     },
     {
+      "id": "theme:time-horizon-and-foresight",
+      "key": "time-horizon-and-foresight",
+      "label": "时间尺度与资产前瞻",
+      "fullLabel": "时间尺度与资产前瞻",
+      "type": "theme",
+      "route": "themes/time-horizon-and-foresight",
+      "summary": "讨论人物与企业如何在不同周期里提前摆放自己，而不是等结果发生后再被动解释。",
+      "status": null,
+      "degree": 11
+    },
+    {
       "id": "theme:data-cosmetics-and-false-prosperity",
       "key": "data-cosmetics-and-false-prosperity",
       "label": "数据粉饰与虚假繁荣",
@@ -1940,13 +1951,13 @@
       "degree": 10
     },
     {
-      "id": "theme:time-horizon-and-foresight",
-      "key": "time-horizon-and-foresight",
-      "label": "时间尺度与资产前瞻",
-      "fullLabel": "时间尺度与资产前瞻",
-      "type": "theme",
-      "route": "themes/time-horizon-and-foresight",
-      "summary": "讨论人物与企业如何在不同周期里提前摆放自己，而不是等结果发生后再被动解释。",
+      "id": "model:stability-over-growth-trap",
+      "key": "stability-over-growth-trap",
+      "label": "稳定替代增长陷阱",
+      "fullLabel": "稳定替代增长陷阱",
+      "type": "model",
+      "route": "models/stability-over-growth-trap",
+      "summary": "当系统把稳定当作增长的替代品，短期秩序会被保住，长期造血、流动和创新却会被压低。",
       "status": null,
       "degree": 10
     },
@@ -2171,6 +2182,17 @@
       "degree": 9
     },
     {
+      "id": "concept:time-asymmetry",
+      "key": "time-asymmetry",
+      "label": "时间非对称",
+      "fullLabel": "时间非对称",
+      "type": "concept",
+      "route": "concepts/time-asymmetry",
+      "summary": "真正决定战略胜负的，往往不是一场仗的强弱，而是谁能把时间变成自己的朋友。",
+      "status": null,
+      "degree": 9
+    },
+    {
       "id": "model:time-arbitrage-model",
       "key": "time-arbitrage-model",
       "label": "时间套利模型",
@@ -2189,17 +2211,6 @@
       "type": "model",
       "route": "models/ex-post-accountability-governance",
       "summary": "治理可以选择事前管制每个人，也可以选择给自由、事后对违规者施加无法承受的代价；后者往往比前者更省成本也更有效。",
-      "status": null,
-      "degree": 9
-    },
-    {
-      "id": "model:stability-over-growth-trap",
-      "key": "stability-over-growth-trap",
-      "label": "稳定替代增长陷阱",
-      "fullLabel": "稳定替代增长陷阱",
-      "type": "model",
-      "route": "models/stability-over-growth-trap",
-      "summary": "当系统把稳定当作增长的替代品，短期秩序会被保住，长期造血、流动和创新却会被压低。",
       "status": null,
       "degree": 9
     },
@@ -2523,6 +2534,17 @@
       "degree": 9
     },
     {
+      "id": "episode:EP207",
+      "key": "EP207",
+      "label": "EP207",
+      "fullLabel": "EP207 · 40年房贷奥德赛式死局！一边漩涡一边牺牲，曾经的苏联选了哪条路？",
+      "type": "episode",
+      "route": "episodes/EP207",
+      "summary": "个人住房贷款最长年限从三十年放宽到四十年。消息一出房地产股就涨了，各路解读都说这是月供大降的利好。按一百万算，月供从 4490 降到 3874，每个月少还 616 块。可总利息从 61.66 万涨到了 85.95 万，多付出去二十四万。利率没变，本金没变，变的只有时间，这不叫减负，叫负债延期。银行那一头一分钱没损失。扛不住月供的家庭被拉长的年限接住，坏账率当场稳下来，还多收十年利息。真正被牺牲的是只能选四十年的年轻人。他们拿多出来的十年，去填当下不敢出清的那个窟窿。定这个年限的人，不用还这笔贷款。",
+      "status": "curated",
+      "degree": 9
+    },
+    {
       "id": "concept:performative-innovation",
       "key": "performative-innovation",
       "label": "表演式创新",
@@ -2629,17 +2651,6 @@
       "type": "model",
       "route": "models/human-machine-differentiation",
       "summary": "当机器越来越擅长标准化任务时，人类价值必须转向不可轻易复制的判断与创造。",
-      "status": null,
-      "degree": 8
-    },
-    {
-      "id": "concept:time-asymmetry",
-      "key": "time-asymmetry",
-      "label": "时间非对称",
-      "fullLabel": "时间非对称",
-      "type": "concept",
-      "route": "concepts/time-asymmetry",
-      "summary": "真正决定战略胜负的，往往不是一场仗的强弱，而是谁能把时间变成自己的朋友。",
       "status": null,
       "degree": 8
     },
@@ -3216,6 +3227,17 @@
       "degree": 7
     },
     {
+      "id": "theme:housing-burden-and-income-distribution",
+      "key": "housing-burden-and-income-distribution",
+      "label": "住房税负与收入分配",
+      "fullLabel": "住房税负与收入分配",
+      "type": "theme",
+      "route": "themes/housing-burden-and-income-distribution",
+      "summary": "讨论住房、税负和可支配收入之间的关系，尤其关注中低收入群体被抽走了多少上升空间。",
+      "status": null,
+      "degree": 7
+    },
+    {
       "id": "model:attention-commerce-loop",
       "key": "attention-commerce-loop",
       "label": "注意力商业闭环",
@@ -3223,6 +3245,17 @@
       "type": "model",
       "route": "models/attention-commerce-loop",
       "summary": "注意力商业闭环解释内容如何先制造注意力，再把注意力结算为品牌、交易或平台收益。",
+      "status": null,
+      "degree": 7
+    },
+    {
+      "id": "concept:balance-sheet-support",
+      "key": "balance-sheet-support",
+      "label": "资产负债表托底",
+      "fullLabel": "资产负债表托底",
+      "type": "concept",
+      "route": "concepts/balance-sheet-support",
+      "summary": "通过维持估值、价格和名义成交，先保住报表与抵押体系，再把真实压力向后延。",
       "status": null,
       "degree": 7
     },
@@ -3711,17 +3744,6 @@
       "degree": 6
     },
     {
-      "id": "theme:housing-burden-and-income-distribution",
-      "key": "housing-burden-and-income-distribution",
-      "label": "住房税负与收入分配",
-      "fullLabel": "住房税负与收入分配",
-      "type": "theme",
-      "route": "themes/housing-burden-and-income-distribution",
-      "summary": "讨论住房、税负和可支配收入之间的关系，尤其关注中低收入群体被抽走了多少上升空间。",
-      "status": null,
-      "degree": 6
-    },
-    {
       "id": "theme:capital-packaging-and-credential-borrowing",
       "key": "capital-packaging-and-credential-borrowing",
       "label": "资本包装与身份背书",
@@ -3729,17 +3751,6 @@
       "type": "theme",
       "route": "themes/capital-packaging-and-credential-borrowing",
       "summary": "项目、企业和人物通过借用更高等级的身份和场面来获得额外信用。",
-      "status": null,
-      "degree": 6
-    },
-    {
-      "id": "concept:balance-sheet-support",
-      "key": "balance-sheet-support",
-      "label": "资产负债表托底",
-      "fullLabel": "资产负债表托底",
-      "type": "concept",
-      "route": "concepts/balance-sheet-support",
-      "summary": "通过维持估值、价格和名义成交，先保住报表与抵押体系，再把真实压力向后延。",
       "status": null,
       "degree": 6
     },
@@ -5845,6 +5856,17 @@
       "degree": 3
     },
     {
+      "id": "concept:policy-stalling",
+      "key": "policy-stalling",
+      "label": "政策拖延术",
+      "fullLabel": "政策拖延术",
+      "type": "concept",
+      "route": "concepts/policy-stalling",
+      "summary": "政策不断微调，不是为了真正解决结构问题，而是为了证明自己在行动、同时尽量把问题往后拖。",
+      "status": null,
+      "degree": 3
+    },
+    {
       "id": "concept:enforcement-vacuum",
       "key": "enforcement-vacuum",
       "label": "执法真空",
@@ -6677,17 +6699,6 @@
       "type": "model",
       "route": "models/strategic-counteroffensive-turning-point",
       "summary": "战略反攻拐点解释一场长期战争如何从被动防守、互相僵持走到能打进对方腹地的反攻，并以打到对方首都作为战争接近结束的信号。",
-      "status": null,
-      "degree": 2
-    },
-    {
-      "id": "concept:policy-stalling",
-      "key": "policy-stalling",
-      "label": "政策拖延术",
-      "fullLabel": "政策拖延术",
-      "type": "concept",
-      "route": "concepts/policy-stalling",
-      "summary": "政策不断微调，不是为了真正解决结构问题，而是为了证明自己在行动、同时尽量把问题往后拖。",
       "status": null,
       "degree": 2
     },
@@ -15958,6 +15969,51 @@
     {
       "source": "episode:EP206",
       "target": "theme:capital-packaging-and-credential-borrowing",
+      "kind": "episode-theme"
+    },
+    {
+      "source": "episode:EP207",
+      "target": "concept:policy-stalling",
+      "kind": "episode-concept"
+    },
+    {
+      "source": "episode:EP207",
+      "target": "concept:time-asymmetry",
+      "kind": "episode-concept"
+    },
+    {
+      "source": "episode:EP207",
+      "target": "concept:balance-sheet-support",
+      "kind": "episode-concept"
+    },
+    {
+      "source": "episode:EP207",
+      "target": "concept:cost-shifting",
+      "kind": "episode-concept"
+    },
+    {
+      "source": "episode:EP207",
+      "target": "model:risk-transfer-chain",
+      "kind": "episode-model"
+    },
+    {
+      "source": "episode:EP207",
+      "target": "model:stability-over-growth-trap",
+      "kind": "episode-model"
+    },
+    {
+      "source": "episode:EP207",
+      "target": "theme:real-estate-deleveraging",
+      "kind": "episode-theme"
+    },
+    {
+      "source": "episode:EP207",
+      "target": "theme:time-horizon-and-foresight",
+      "kind": "episode-theme"
+    },
+    {
+      "source": "episode:EP207",
+      "target": "theme:housing-burden-and-income-distribution",
       "kind": "episode-theme"
     },
     {
