@@ -51,9 +51,12 @@ LOCAL_MD5=$(./scripts/site-json-md5.py < docs/data/site.json) \
   || fail "本地 site.json 读取或解析失败"
 LOCAL_EPS=$(python3 -c "import json; print(len(json.load(open('docs/data/site.json'))['episodes']))") \
   || fail "本地 site.json 解析失败"
+#    --max-time 原来是 15 秒。site.json 到 2026-09-05 已经 10.8 MB，一次拉取
+#    正好卡在 15 秒上下，于是内容明明一致也会被判成「拉取失败」，LIVE039 上线
+#    时连着两次栽在这。放宽到 90 秒，比对逻辑一个字没动。
 ONLINE_MD5=""
 for i in 1 2 3 4 5 6; do
-  ONLINE_MD5=$(curl -s --max-time 15 "https://yinfluence.org/data/site.json?nc=$(date +%s)$RANDOM" \
+  ONLINE_MD5=$(curl -s --max-time 90 "https://yinfluence.org/data/site.json?nc=$(date +%s)$RANDOM" \
     | ./scripts/site-json-md5.py || true)
   [ -n "$ONLINE_MD5" ] && [ "$ONLINE_MD5" = "$LOCAL_MD5" ] && break
   echo "  第 $i 次检查：线上内容与本地不一致，20 秒后重试..."
