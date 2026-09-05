@@ -2,11 +2,11 @@
   "meta": {
     "title": "颖响力知识图谱",
     "subtitle": "节目、概念、模型、人物、主题之间的可视化连接网络",
-    "nodeCount": 715,
-    "linkCount": 2878,
+    "nodeCount": 716,
+    "linkCount": 2903,
     "typeCounts": {
       "model": 82,
-      "live": 38,
+      "live": 39,
       "theme": 92,
       "episode": 207,
       "concept": 231,
@@ -356,6 +356,28 @@
       "degree": 29
     },
     {
+      "id": "theme:great-power-competition-and-strategic-time",
+      "key": "great-power-competition-and-strategic-time",
+      "label": "大国竞争与战略时间",
+      "fullLabel": "大国竞争与战略时间",
+      "type": "theme",
+      "route": "themes/great-power-competition-and-strategic-time",
+      "summary": "讨论战争、联盟和国家战略如何被时间窗口、社会成本和长期定力重新塑形。",
+      "status": null,
+      "degree": 28
+    },
+    {
+      "id": "theme:dollar-system-and-gray-trade",
+      "key": "dollar-system-and-gray-trade",
+      "label": "美元体系与灰色贸易",
+      "fullLabel": "美元体系与灰色贸易",
+      "type": "theme",
+      "route": "themes/dollar-system-and-gray-trade",
+      "summary": "讨论石油美元的真实脆弱点，究竟藏在公开统计之外的哪些灰色交易链条里。",
+      "status": null,
+      "degree": 28
+    },
+    {
       "id": "concept:hidden-debt",
       "key": "hidden-debt",
       "label": "隐形债务",
@@ -409,28 +431,6 @@
       "summary": "空调打不开，扶手箱打不开，导航没了，得把护照行驶证传回国内等对方放行。",
       "status": "curated",
       "degree": 28
-    },
-    {
-      "id": "theme:great-power-competition-and-strategic-time",
-      "key": "great-power-competition-and-strategic-time",
-      "label": "大国竞争与战略时间",
-      "fullLabel": "大国竞争与战略时间",
-      "type": "theme",
-      "route": "themes/great-power-competition-and-strategic-time",
-      "summary": "讨论战争、联盟和国家战略如何被时间窗口、社会成本和长期定力重新塑形。",
-      "status": null,
-      "degree": 27
-    },
-    {
-      "id": "theme:dollar-system-and-gray-trade",
-      "key": "dollar-system-and-gray-trade",
-      "label": "美元体系与灰色贸易",
-      "fullLabel": "美元体系与灰色贸易",
-      "type": "theme",
-      "route": "themes/dollar-system-and-gray-trade",
-      "summary": "讨论石油美元的真实脆弱点，究竟藏在公开统计之外的哪些灰色交易链条里。",
-      "status": null,
-      "degree": 27
     },
     {
       "id": "model:narrative-instrumentalization",
@@ -499,6 +499,17 @@
       "degree": 25
     },
     {
+      "id": "live:LIVE039",
+      "key": "LIVE039",
+      "label": "LIVE039",
+      "fullLabel": "LIVE039 · 十七个油田签给美国，两千亿美元直接进国库，这条线从去年十二月就在走",
+      "type": "live",
+      "route": "lives/LIVE039",
+      "summary": "以前那些油卖给古巴，一桶还要倒贴十二美元。",
+      "status": "published",
+      "degree": 25
+    },
+    {
       "id": "theme:rule-of-law-boundaries-and-social-trust",
       "key": "rule-of-law-boundaries-and-social-trust",
       "label": "法治边界与社会信任",
@@ -550,6 +561,17 @@
       "type": "concept",
       "route": "concepts/cost-shifting",
       "summary": "组织内部的高额非生产性成本，最终会通过价格、规则或风险转嫁给外部承担者。",
+      "status": null,
+      "degree": 22
+    },
+    {
+      "id": "theme:maritime-chokepoints-and-route-order",
+      "key": "maritime-chokepoints-and-route-order",
+      "label": "海峡命门与航运秩序",
+      "fullLabel": "海峡命门与航运秩序",
+      "type": "theme",
+      "route": "themes/maritime-chokepoints-and-route-order",
+      "summary": "讨论海峡、运河和关键航道如何把地理位置变成规则、保险、资本和军事的综合权力。",
       "status": null,
       "degree": 22
     },
@@ -620,17 +642,6 @@
       "degree": 21
     },
     {
-      "id": "theme:maritime-chokepoints-and-route-order",
-      "key": "maritime-chokepoints-and-route-order",
-      "label": "海峡命门与航运秩序",
-      "fullLabel": "海峡命门与航运秩序",
-      "type": "theme",
-      "route": "themes/maritime-chokepoints-and-route-order",
-      "summary": "讨论海峡、运河和关键航道如何把地理位置变成规则、保险、资本和军事的综合权力。",
-      "status": null,
-      "degree": 21
-    },
-    {
       "id": "model:strategic-timing",
       "key": "strategic-timing",
       "label": "战略时机",
@@ -671,6 +682,17 @@
       "type": "episode",
       "route": "episodes/EP158",
       "summary": "从一段流传的演讲切入。某蔬菜配送公司前COO宣讲，靠AI把销售额从几亿做到十几亿。员工从3800人砍到2000多，还称这是科技向善。\n\n多数企业的AI转型与技术革命无关。只是通缩下用更少人干同样活的管理优化，而资本市场恰恰奖励消灭就业。这场以AI为名的大裁员正在系统性消灭私营中产。外卖网约车这张安全网也被挤爆。该做的是降杠杆、存生存费，别全职跑外卖。问题不是科技太快，是分配太落后。",
+      "status": "curated",
+      "degree": 21
+    },
+    {
+      "id": "episode:EP161",
+      "key": "EP161",
+      "label": "EP161",
+      "fullLabel": "EP161 · 买黄金为中国背债？一个视频说明白黄金、美元、石油",
+      "type": "episode",
+      "route": "episodes/EP161",
+      "summary": "重提三个月前的黄金逻辑，反驳美元反比、战争避险和美联储加息三种说法。它们连暴涨都解释不了。真正的推手是灰色贸易。离岸人民币在灰色石油和商品贸易里需要背书，弃美元改用黄金。各国央行为此大量囤金，金价才从1800美元冲到4000多美元。\n\n随后特朗普沿巴拿马、委内瑞拉、伊朗切断灰贸。金价失去支撑转入阴跌，美元顺势回流走强。国内突然推黄金投资，本质是帮囤金最多的央行向散户转嫁风险。也就是为国背债。",
       "status": "curated",
       "degree": 21
     },
@@ -737,17 +759,6 @@
       "type": "episode",
       "route": "episodes/EP138",
       "summary": "五粮液财务业绩大幅调整。这不是简单的数字变化。背后是国企换届切割、经销商利润蓄水池和 A 股惩戒失效共同显影。拆成三层看。第一层，新任管理层一次性压低历史业绩，为后续增长铺台阶。第二层，白酒经销商体系长期充当可调节利润的内循环水库。第三层，市场和监管很难形成足够惩罚。最后让普通散户在看似公开的报表里，承担信息和规则劣势。",
-      "status": "curated",
-      "degree": 20
-    },
-    {
-      "id": "episode:EP161",
-      "key": "EP161",
-      "label": "EP161",
-      "fullLabel": "EP161 · 买黄金为中国背债？一个视频说明白黄金、美元、石油",
-      "type": "episode",
-      "route": "episodes/EP161",
-      "summary": "重提三个月前的黄金逻辑，反驳美元反比、战争避险和美联储加息三种说法。它们连暴涨都解释不了。真正的推手是灰色贸易。离岸人民币在灰色石油和商品贸易里需要背书，弃美元改用黄金。各国央行为此大量囤金，金价才从1800美元冲到4000多美元。\n\n随后特朗普沿巴拿马、委内瑞拉、伊朗切断灰贸。金价失去支撑转入阴跌，美元顺势回流走强。国内突然推黄金投资，本质是帮囤金最多的央行向散户转嫁风险。也就是为国背债。",
       "status": "curated",
       "degree": 20
     },
@@ -840,6 +851,17 @@
       "degree": 18
     },
     {
+      "id": "concept:gray-oil-network",
+      "key": "gray-oil-network",
+      "label": "灰色石油网络",
+      "fullLabel": "灰色石油网络",
+      "type": "concept",
+      "route": "concepts/gray-oil-network",
+      "summary": "绕开正规结算和监管的石油流动，会在影子体系中重塑货币、制裁和地缘利益。",
+      "status": null,
+      "degree": 18
+    },
+    {
       "id": "episode:EP139",
       "key": "EP139",
       "label": "EP139",
@@ -884,13 +906,13 @@
       "degree": 17
     },
     {
-      "id": "concept:gray-oil-network",
-      "key": "gray-oil-network",
-      "label": "灰色石油网络",
-      "fullLabel": "灰色石油网络",
-      "type": "concept",
-      "route": "concepts/gray-oil-network",
-      "summary": "绕开正规结算和监管的石油流动，会在影子体系中重塑货币、制裁和地缘利益。",
+      "id": "theme:sanctions-and-power-containment",
+      "key": "sanctions-and-power-containment",
+      "label": "制裁、遏制与集团竞争",
+      "fullLabel": "制裁、遏制与集团竞争",
+      "type": "theme",
+      "route": "themes/sanctions-and-power-containment",
+      "summary": "讨论制裁、门罗主义、海峡与联盟如何共同服务于压制对手集团的全球布局。",
       "status": null,
       "degree": 17
     },
@@ -928,6 +950,17 @@
       "degree": 17
     },
     {
+      "id": "episode:EP168",
+      "key": "EP168",
+      "label": "EP168",
+      "fullLabel": "EP168 · 美伊协议谁赢了？油价为何没涨到300美元？",
+      "type": "episode",
+      "route": "episodes/EP168",
+      "summary": "重读美伊协议，解读和主流叙事相反。主流叙事是美国出问题、川普认输、伊朗大胜。这份协议不是认输，是委内瑞拉模式的 2.0 版。美国要的从来就是打掉最高领导人，换一个能谈的。脏活交给以色列。\n\n没换到合适的，就先签协议，做时间的朋友。油价没涨到 200 至 300 美元，说明需求本来就被高估了。美国还趁机卖委内瑞拉的油去库存。真正被盯住的是灰色贸易，逼伊朗回SWIFT和美元体系才是开战动机。",
+      "status": "curated",
+      "degree": 17
+    },
+    {
       "id": "episode:EP180",
       "key": "EP180",
       "label": "EP180",
@@ -959,6 +992,17 @@
       "summary": "梁文锋一场四小时的内部闭门会文字稿被放了出来。他是量化出身，不靠情怀也不屑对投资人吹牛，这份稿子的可信度比一般的投资人会议高。稿子里最硬的三处，一是算力的账，四张华山派的卡才抵一张英伟达 B 卡，手里一万六千张只折合四五千张，远远不够；二是不够之后只能走别的路子，灰色算力贸易第一次有了明确口径；三是国内七八家都在做同一件事，卡和算力中心的需求被一起做大，这条产业链跟当年的电车长得一模一样。最后问的是这场泄露为什么发生在今天，答案指向月之暗面爆火之后老大地位的松动。",
       "status": "curated",
       "degree": 17
+    },
+    {
+      "id": "model:proxy-containment-ring",
+      "key": "proxy-containment-ring",
+      "label": "代理围堵环",
+      "fullLabel": "代理围堵环",
+      "type": "model",
+      "route": "models/proxy-containment-ring",
+      "summary": "代理围堵环解释大国如何通过盟友、代理人和通道控制分摊成本、封堵对手。",
+      "status": null,
+      "degree": 16
     },
     {
       "id": "theme:local-government-financialization",
@@ -994,17 +1038,6 @@
       "degree": 16
     },
     {
-      "id": "theme:sanctions-and-power-containment",
-      "key": "sanctions-and-power-containment",
-      "label": "制裁、遏制与集团竞争",
-      "fullLabel": "制裁、遏制与集团竞争",
-      "type": "theme",
-      "route": "themes/sanctions-and-power-containment",
-      "summary": "讨论制裁、门罗主义、海峡与联盟如何共同服务于压制对手集团的全球布局。",
-      "status": null,
-      "degree": 16
-    },
-    {
       "id": "episode:EP001",
       "key": "EP001",
       "label": "EP001",
@@ -1036,28 +1069,6 @@
       "summary": "不单独复盘恒大或许家印。把房地产系统性风险，拆成居民、房企和地方政府三层共同加杠杆的结果。地产崩塌的核心不是某个老板突然失误。而是零首付式投机、零资金式房企扩张、土地财政式地方融资彼此强化。再叠加强人老板的一言堂和土地制度反馈缺失，整个行业最终失去了刹车能力。",
       "status": "curated",
       "degree": 16
-    },
-    {
-      "id": "episode:EP168",
-      "key": "EP168",
-      "label": "EP168",
-      "fullLabel": "EP168 · 美伊协议谁赢了？油价为何没涨到300美元？",
-      "type": "episode",
-      "route": "episodes/EP168",
-      "summary": "重读美伊协议，解读和主流叙事相反。主流叙事是美国出问题、川普认输、伊朗大胜。这份协议不是认输，是委内瑞拉模式的 2.0 版。美国要的从来就是打掉最高领导人，换一个能谈的。脏活交给以色列。\n\n没换到合适的，就先签协议，做时间的朋友。油价没涨到 200 至 300 美元，说明需求本来就被高估了。美国还趁机卖委内瑞拉的油去库存。真正被盯住的是灰色贸易，逼伊朗回SWIFT和美元体系才是开战动机。",
-      "status": "curated",
-      "degree": 16
-    },
-    {
-      "id": "model:proxy-containment-ring",
-      "key": "proxy-containment-ring",
-      "label": "代理围堵环",
-      "fullLabel": "代理围堵环",
-      "type": "model",
-      "route": "models/proxy-containment-ring",
-      "summary": "代理围堵环解释大国如何通过盟友、代理人和通道控制分摊成本、封堵对手。",
-      "status": null,
-      "degree": 15
     },
     {
       "id": "model:narrative-leverage",
@@ -1258,6 +1269,17 @@
       "degree": 14
     },
     {
+      "id": "episode:EP174",
+      "key": "EP174",
+      "label": "EP174",
+      "fullLabel": "EP174 · 上任仅45天雷霆反腐，伊拉克总理斩断石油灰色贸易，助力川普布局中东",
+      "type": "episode",
+      "route": "episodes/EP174",
+      "summary": "国际焦点还在伊朗和霍尔木兹，真正在动的是伊拉克。新总理扎伊迪是政治素人、商人背景。上台仅四十五天，六月二十八号发动雷霆反腐。查抄上亿现金、黄金和枪支，逮捕名单近一百二十人。\n\n这场反腐表面清国内腐败，实质是斩断以石油为核心的灰色贸易。伊拉克油田与伊朗连通，混油后成了伊朗规避制裁的通道。扎伊迪切断这条线，把石油体系接入美国公司和美元结算。这是川普建墙分敌我、打灰色贸易那套战略在海湾的一环。",
+      "status": "curated",
+      "degree": 14
+    },
+    {
       "id": "episode:EP200",
       "key": "EP200",
       "label": "EP200",
@@ -1408,17 +1430,6 @@
       "type": "episode",
       "route": "episodes/EP173",
       "summary": "东大潮汕片《给阿嬷的情书》在新加坡热映，从限映八场加到破例五十场。一些华文媒体给它贴上统战标签。新加坡不是守不住华语政策而破防，而是堵不如疏。与其禁映把观众逼去别的平台，不如让市场消化。\n\n这部电影真正在问的是什么算根。落叶归根不如落地生根。真正的根是对自己好、能活下去的地方，不是祖先故土。把潮汕话当文化的女孩，狂热是对客家母系的反抗，是没完成的精神弑母。它带统战色彩，仍是好电影，摘掉滤镜照样能看。",
-      "status": "curated",
-      "degree": 13
-    },
-    {
-      "id": "episode:EP174",
-      "key": "EP174",
-      "label": "EP174",
-      "fullLabel": "EP174 · 上任仅45天雷霆反腐，伊拉克总理斩断石油灰色贸易，助力川普布局中东",
-      "type": "episode",
-      "route": "episodes/EP174",
-      "summary": "国际焦点还在伊朗和霍尔木兹，真正在动的是伊拉克。新总理扎伊迪是政治素人、商人背景。上台仅四十五天，六月二十八号发动雷霆反腐。查抄上亿现金、黄金和枪支，逮捕名单近一百二十人。\n\n这场反腐表面清国内腐败，实质是斩断以石油为核心的灰色贸易。伊拉克油田与伊朗连通，混油后成了伊朗规避制裁的通道。扎伊迪切断这条线，把石油体系接入美国公司和美元结算。这是川普建墙分敌我、打灰色贸易那套战略在海湾的一环。",
       "status": "curated",
       "degree": 13
     },
@@ -1731,6 +1742,17 @@
       "degree": 11
     },
     {
+      "id": "model:stability-over-growth-trap",
+      "key": "stability-over-growth-trap",
+      "label": "稳定替代增长陷阱",
+      "fullLabel": "稳定替代增长陷阱",
+      "type": "model",
+      "route": "models/stability-over-growth-trap",
+      "summary": "当系统把稳定当作增长的替代品，短期秩序会被保住，长期造血、流动和创新却会被压低。",
+      "status": null,
+      "degree": 11
+    },
+    {
       "id": "model:small-state-balancing-model",
       "key": "small-state-balancing-model",
       "label": "小国平衡术",
@@ -1951,17 +1973,6 @@
       "degree": 10
     },
     {
-      "id": "model:stability-over-growth-trap",
-      "key": "stability-over-growth-trap",
-      "label": "稳定替代增长陷阱",
-      "fullLabel": "稳定替代增长陷阱",
-      "type": "model",
-      "route": "models/stability-over-growth-trap",
-      "summary": "当系统把稳定当作增长的替代品，短期秩序会被保住，长期造血、流动和创新却会被压低。",
-      "status": null,
-      "degree": 10
-    },
-    {
       "id": "model:political-embedded-enterprise",
       "key": "political-embedded-enterprise",
       "label": "政企嵌入企业模型",
@@ -2112,6 +2123,17 @@
       "type": "episode",
       "route": "episodes/EP206",
       "summary": "宇树科技上市当天开盘冲到一千块，市值一步到位，王兴兴成了九零后首富，人在台上却眉头紧锁。地主家的傻儿子卖出霍金的身价，说的是估值按具身智能龙头给足，公司真正拿得出手的是运动控制，通用智能那部分还远没长出来。价格一次性把往后二三十年的成长预期算完，公司此后每走一步都在给这个价格补课，不是在做新东西。把股价推上去的是上市前就在名单里的机构和国资。它们冲的是账面上的浮盈倍数，拿这份成绩单去募下一期基金、去交差。开盘能交易的只有总股本的七个多点，缺了对手盘，价格只能往一个方向走。",
+      "status": "curated",
+      "degree": 10
+    },
+    {
+      "id": "episode:EP207",
+      "key": "EP207",
+      "label": "EP207",
+      "fullLabel": "EP207 · 40年房贷奥德赛式死局！一边漩涡一边牺牲，曾经的苏联选了哪条路？",
+      "type": "episode",
+      "route": "episodes/EP207",
+      "summary": "个人住房贷款最长年限从三十年放宽到四十年。消息一出房地产股就涨了，各路解读都说这是月供大降的利好。按一百万算，月供从 4490 降到 3874，每个月少还 616 块。可总利息从 61.66 万涨到了 85.95 万，多付出去二十四万。利率没变，本金没变，变的只有时间，这不叫减负，叫负债延期。银行那一头一分钱没损失。扛不住月供的家庭被拉长的年限接住，坏账率当场稳下来，还多收十年利息。真正被牺牲的是只能选四十年的年轻人。他们拿多出来的十年，去填当下不敢出清的那个窟窿。定这个年限的人，不用还这笔贷款。",
       "status": "curated",
       "degree": 10
     },
@@ -2530,17 +2552,6 @@
       "type": "episode",
       "route": "episodes/EP202",
       "summary": "一部叫《牛来》的电影突然火遍全网，有人捧成打破规则的神作，有人骂它粗制滥造。节目不评片子拍得怎么样，只拆它为什么能火成这样。第一层，年轻人手里没有多少正常的情绪出口，围着一件人人都知道很烂的东西起哄，成了最便宜的社交货币，要紧的是我参与过这件事，片子好不好笑排在后面。第二层，那块金灿灿的龙标才是真正的笑点，审核的力气全压在价值导向上，质量这一头就松成了筛子。第三层，片子本身什么都没说清，观众把自己对打破规则的渴望读了进去。真正把这件事做成现象的，是每一个转发、吐槽、写长文解读的普通人。",
-      "status": "curated",
-      "degree": 9
-    },
-    {
-      "id": "episode:EP207",
-      "key": "EP207",
-      "label": "EP207",
-      "fullLabel": "EP207 · 40年房贷奥德赛式死局！一边漩涡一边牺牲，曾经的苏联选了哪条路？",
-      "type": "episode",
-      "route": "episodes/EP207",
-      "summary": "个人住房贷款最长年限从三十年放宽到四十年。消息一出房地产股就涨了，各路解读都说这是月供大降的利好。按一百万算，月供从 4490 降到 3874，每个月少还 616 块。可总利息从 61.66 万涨到了 85.95 万，多付出去二十四万。利率没变，本金没变，变的只有时间，这不叫减负，叫负债延期。银行那一头一分钱没损失。扛不住月供的家庭被拉长的年限接住，坏账率当场稳下来，还多收十年利息。真正被牺牲的是只能选四十年的年轻人。他们拿多出来的十年，去填当下不敢出清的那个窟窿。定这个年限的人，不用还这笔贷款。",
       "status": "curated",
       "degree": 9
     },
@@ -3469,6 +3480,17 @@
       "degree": 6
     },
     {
+      "id": "concept:great-small-power-leveling",
+      "key": "great-small-power-leveling",
+      "label": "大国小国差距拉平",
+      "fullLabel": "大国小国差距拉平",
+      "type": "concept",
+      "route": "concepts/great-small-power-leveling",
+      "summary": "在不敢动用核武的常规战争里，AI和无人机让小国靠生产与研发能力反超，甚至打到大国本土。",
+      "status": null,
+      "degree": 6
+    },
+    {
       "id": "model:distributed-warfare-system",
       "key": "distributed-warfare-system",
       "label": "分布式战争系统",
@@ -3498,6 +3520,17 @@
       "type": "concept",
       "route": "concepts/probabilistic-safety",
       "summary": "风险不是每次都会爆发，但一旦触发就后果极重，因此最容易被组织和用户一起低估。",
+      "status": null,
+      "degree": 6
+    },
+    {
+      "id": "model:individuation-three-stage",
+      "key": "individuation-three-stage",
+      "label": "个体化三阶段模型",
+      "fullLabel": "个体化三阶段模型",
+      "type": "model",
+      "route": "models/individuation-three-stage",
+      "summary": "个体化三阶段模型把成长理解为依次消化亲情、权威和自我，而非一次性觉醒。",
       "status": null,
       "degree": 6
     },
@@ -3535,6 +3568,17 @@
       "degree": 6
     },
     {
+      "id": "concept:route-substitution-illusion",
+      "key": "route-substitution-illusion",
+      "label": "航线替代幻觉",
+      "fullLabel": "航线替代幻觉",
+      "type": "concept",
+      "route": "concepts/route-substitution-illusion",
+      "summary": "新的港口、陆路或航线可以分流局部业务，但很难在短期内替代真正的世界级主通道。",
+      "status": null,
+      "degree": 6
+    },
+    {
       "id": "model:regulatory-cost-arbitrage",
       "key": "regulatory-cost-arbitrage",
       "label": "合规成本套利模型",
@@ -3557,6 +3601,17 @@
       "degree": 6
     },
     {
+      "id": "model:wall-and-gray-trade-crackdown",
+      "key": "wall-and-gray-trade-crackdown",
+      "label": "建墙与打灰模型",
+      "fullLabel": "建墙与打灰模型",
+      "type": "model",
+      "route": "models/wall-and-gray-trade-crackdown",
+      "summary": "建墙与打灰模型把川普的全球策略概括为两条隐藏逻辑：建墙分清敌我盟友、打击灰色贸易逼交易回归美元。",
+      "status": null,
+      "degree": 6
+    },
+    {
       "id": "concept:exam-centered-discipline",
       "key": "exam-centered-discipline",
       "label": "考试中心化规训",
@@ -3575,6 +3630,17 @@
       "type": "person",
       "route": "people/lee-hsien-loong",
       "summary": "李显龙是新加坡前总理、现任国务资政，节目借他理解新加坡务实外交、国家身份边界和小国平衡逻辑。",
+      "status": null,
+      "degree": 6
+    },
+    {
+      "id": "concept:collective-self-domestication",
+      "key": "collective-self-domestication",
+      "label": "群体自我驯化",
+      "fullLabel": "群体自我驯化",
+      "type": "concept",
+      "route": "concepts/collective-self-domestication",
+      "summary": "一个群体靠贬低外圈、强化内部认同来确立优越地位，把成员自愿地圈进一套自我安抚的逻辑里。",
       "status": null,
       "degree": 6
     },
@@ -3997,17 +4063,6 @@
       "degree": 5
     },
     {
-      "id": "concept:great-small-power-leveling",
-      "key": "great-small-power-leveling",
-      "label": "大国小国差距拉平",
-      "fullLabel": "大国小国差距拉平",
-      "type": "concept",
-      "route": "concepts/great-small-power-leveling",
-      "summary": "在不敢动用核武的常规战争里，AI和无人机让小国靠生产与研发能力反超，甚至打到大国本土。",
-      "status": null,
-      "degree": 5
-    },
-    {
       "id": "theme:price-war-and-precision-competition",
       "key": "price-war-and-precision-competition",
       "label": "低价竞争与精准打击",
@@ -4015,17 +4070,6 @@
       "type": "theme",
       "route": "themes/price-war-and-precision-competition",
       "summary": "讨论卷低价与做精准高价值打击之间的差别，以及两种竞争逻辑背后的阶层思维。",
-      "status": null,
-      "degree": 5
-    },
-    {
-      "id": "model:individuation-three-stage",
-      "key": "individuation-three-stage",
-      "label": "个体化三阶段模型",
-      "fullLabel": "个体化三阶段模型",
-      "type": "model",
-      "route": "models/individuation-three-stage",
-      "summary": "个体化三阶段模型把成长理解为依次消化亲情、权威和自我，而非一次性觉醒。",
       "status": null,
       "degree": 5
     },
@@ -4074,17 +4118,6 @@
       "degree": 5
     },
     {
-      "id": "concept:route-substitution-illusion",
-      "key": "route-substitution-illusion",
-      "label": "航线替代幻觉",
-      "fullLabel": "航线替代幻觉",
-      "type": "concept",
-      "route": "concepts/route-substitution-illusion",
-      "summary": "新的港口、陆路或航线可以分流局部业务，但很难在短期内替代真正的世界级主通道。",
-      "status": null,
-      "degree": 5
-    },
-    {
       "id": "concept:compliance-floor",
       "key": "compliance-floor",
       "label": "合规及格线",
@@ -4118,13 +4151,13 @@
       "degree": 5
     },
     {
-      "id": "model:wall-and-gray-trade-crackdown",
-      "key": "wall-and-gray-trade-crackdown",
-      "label": "建墙与打灰模型",
-      "fullLabel": "建墙与打灰模型",
-      "type": "model",
-      "route": "models/wall-and-gray-trade-crackdown",
-      "summary": "建墙与打灰模型把川普的全球策略概括为两条隐藏逻辑：建墙分清敌我盟友、打击灰色贸易逼交易回归美元。",
+      "id": "concept:symbolic-matricide",
+      "key": "symbolic-matricide",
+      "label": "精神弑母",
+      "fullLabel": "精神弑母",
+      "type": "concept",
+      "route": "concepts/symbolic-matricide",
+      "summary": "精神弑母指人要先在精神上吃掉母系带来的文化、再吐出来给予尊重，才能长成拥有自我的人。",
       "status": null,
       "degree": 5
     },
@@ -4206,17 +4239,6 @@
       "degree": 5
     },
     {
-      "id": "concept:collective-self-domestication",
-      "key": "collective-self-domestication",
-      "label": "群体自我驯化",
-      "fullLabel": "群体自我驯化",
-      "type": "concept",
-      "route": "concepts/collective-self-domestication",
-      "summary": "一个群体靠贬低外圈、强化内部认同来确立优越地位，把成员自愿地圈进一套自我安抚的逻辑里。",
-      "status": null,
-      "degree": 5
-    },
-    {
       "id": "concept:identity-over-wealth",
       "key": "identity-over-wealth",
       "label": "身份压倒财富",
@@ -4224,6 +4246,17 @@
       "type": "concept",
       "route": "concepts/identity-over-wealth",
       "summary": "身份压倒财富指稳定身份、编制和圈层位置开始比账面收入更能决定社会评价和生活安全感。",
+      "status": null,
+      "degree": 5
+    },
+    {
+      "id": "theme:authoritarian-succession-and-state-fragility",
+      "key": "authoritarian-succession-and-state-fragility",
+      "label": "威权继承与国家裂缝",
+      "fullLabel": "威权继承与国家裂缝",
+      "type": "theme",
+      "route": "themes/authoritarian-succession-and-state-fragility",
+      "summary": "讨论强人、神权或高压体制在接班时刻如何暴露出最深的制度脆弱点。",
       "status": null,
       "degree": 5
     },
@@ -4301,6 +4334,17 @@
       "type": "theme",
       "route": "themes/war-system-and-succession-risk",
       "summary": "讨论战争国家在长期高压运转下，如何同时面临兵员枯竭、内部老化与接班断层。",
+      "status": null,
+      "degree": 5
+    },
+    {
+      "id": "concept:institutional-software-transfer",
+      "key": "institutional-software-transfer",
+      "label": "制度软件移植",
+      "fullLabel": "制度软件移植",
+      "type": "concept",
+      "route": "concepts/institutional-software-transfer",
+      "summary": "把治理体系拆成硬件与软件两层：土地、规划、基建可以整体搬运，管理制度背后的人的意识和行政逻辑却难以跨体制移植。",
       "status": null,
       "degree": 5
     },
@@ -4745,17 +4789,6 @@
       "degree": 4
     },
     {
-      "id": "concept:symbolic-matricide",
-      "key": "symbolic-matricide",
-      "label": "精神弑母",
-      "fullLabel": "精神弑母",
-      "type": "concept",
-      "route": "concepts/symbolic-matricide",
-      "summary": "精神弑母指人要先在精神上吃掉母系带来的文化、再吐出来给予尊重，才能长成拥有自我的人。",
-      "status": null,
-      "degree": 4
-    },
-    {
       "id": "person:elon-musk",
       "key": "elon-musk",
       "label": "马斯克",
@@ -4910,13 +4943,13 @@
       "degree": 4
     },
     {
-      "id": "theme:authoritarian-succession-and-state-fragility",
-      "key": "authoritarian-succession-and-state-fragility",
-      "label": "威权继承与国家裂缝",
-      "fullLabel": "威权继承与国家裂缝",
-      "type": "theme",
-      "route": "themes/authoritarian-succession-and-state-fragility",
-      "summary": "讨论强人、神权或高压体制在接班时刻如何暴露出最深的制度脆弱点。",
+      "id": "model:crisis-selection",
+      "key": "crisis-selection",
+      "label": "危机筛选",
+      "fullLabel": "危机筛选",
+      "type": "model",
+      "route": "models/crisis-selection",
+      "summary": "危机筛选解释危机如何把旧中心筛下去，并把边缘角色推向前台。",
       "status": null,
       "degree": 4
     },
@@ -4987,13 +5020,13 @@
       "degree": 4
     },
     {
-      "id": "concept:institutional-software-transfer",
-      "key": "institutional-software-transfer",
-      "label": "制度软件移植",
-      "fullLabel": "制度软件移植",
+      "id": "concept:war-insulation-collapse",
+      "key": "war-insulation-collapse",
+      "label": "战争隔离叙事破产",
+      "fullLabel": "战争隔离叙事破产",
       "type": "concept",
-      "route": "concepts/institutional-software-transfer",
-      "summary": "把治理体系拆成硬件与软件两层：土地、规划、基建可以整体搬运，管理制度背后的人的意识和行政逻辑却难以跨体制移植。",
+      "route": "concepts/war-insulation-collapse",
+      "summary": "强人体制把战争隔离在电视和宣传里，一旦战火落到公民身边，官方叙事就失去信念支撑。",
       "status": null,
       "degree": 4
     },
@@ -5669,17 +5702,6 @@
       "degree": 3
     },
     {
-      "id": "model:crisis-selection",
-      "key": "crisis-selection",
-      "label": "危机筛选",
-      "fullLabel": "危机筛选",
-      "type": "model",
-      "route": "models/crisis-selection",
-      "summary": "危机筛选解释危机如何把旧中心筛下去，并把边缘角色推向前台。",
-      "status": null,
-      "degree": 3
-    },
-    {
       "id": "theme:crisis-era-power-reallocation",
       "key": "crisis-era-power-reallocation",
       "label": "危机时代的权力重排",
@@ -5845,17 +5867,6 @@
       "degree": 3
     },
     {
-      "id": "concept:war-insulation-collapse",
-      "key": "war-insulation-collapse",
-      "label": "战争隔离叙事破产",
-      "fullLabel": "战争隔离叙事破产",
-      "type": "concept",
-      "route": "concepts/war-insulation-collapse",
-      "summary": "强人体制把战争隔离在电视和宣传里，一旦战火落到公民身边，官方叙事就失去信念支撑。",
-      "status": null,
-      "degree": 3
-    },
-    {
       "id": "concept:policy-stalling",
       "key": "policy-stalling",
       "label": "政策拖延术",
@@ -5999,6 +6010,17 @@
       "degree": 2
     },
     {
+      "id": "concept:surface-chaos-deep-order",
+      "key": "surface-chaos-deep-order",
+      "label": "表面乱局深层秩序",
+      "fullLabel": "表面乱局深层秩序",
+      "type": "concept",
+      "route": "concepts/surface-chaos-deep-order",
+      "summary": "政坛看起来吵翻天，其实所有争斗都锁在不可触碰的底层规则之内，乱只发生在上层分权，根基纹丝不动。",
+      "status": null,
+      "degree": 2
+    },
+    {
       "id": "theme:wealth-reproduction-and-ethical-boundaries",
       "key": "wealth-reproduction-and-ethical-boundaries",
       "label": "财富繁殖与伦理边界",
@@ -6039,6 +6061,17 @@
       "type": "concept",
       "route": "concepts/super-intermediary",
       "summary": "在僵持的对立各方之间，靠绝对中立和独家信任渠道居中传话、对齐底线、递台阶的角色，本身不站队、不谋利，只做信息和沟通的枢纽。",
+      "status": null,
+      "degree": 2
+    },
+    {
+      "id": "concept:tributary-mindset",
+      "key": "tributary-mindset",
+      "label": "朝贡思维",
+      "fullLabel": "朝贡思维",
+      "type": "concept",
+      "route": "concepts/tributary-mindset",
+      "summary": "朝贡思维指在大国崛起叙事下，期待周边富裕小国“万国来朝、进贡、祭祖”，把对方当成应归附的藩属或飞地。",
       "status": null,
       "degree": 2
     },
@@ -6417,6 +6450,17 @@
       "degree": 2
     },
     {
+      "id": "concept:energy-exporter-cash-crunch",
+      "key": "energy-exporter-cash-crunch",
+      "label": "能源输出国现金流断裂",
+      "fullLabel": "能源输出国现金流断裂",
+      "type": "concept",
+      "route": "concepts/energy-exporter-cash-crunch",
+      "summary": "靠卖油气过日子的国家像一家靠现金流周转的超市，油价跌破线并持续足够久，社会成本就会失控。",
+      "status": null,
+      "degree": 2
+    },
+    {
       "id": "concept:platform-meme-template",
       "key": "platform-meme-template",
       "label": "平台模因模板",
@@ -6758,6 +6802,17 @@
       "degree": 2
     },
     {
+      "id": "concept:rule-gaming-backfire",
+      "key": "rule-gaming-backfire",
+      "label": "钻规则反噬",
+      "fullLabel": "钻规则反噬",
+      "type": "concept",
+      "route": "concepts/rule-gaming-backfire",
+      "summary": "靠钻规则空子或动用特权改规则获取短期收益，最终赔上信任、口碑和长期竞争力的现象。",
+      "status": null,
+      "degree": 2
+    },
+    {
       "id": "concept:ai-terminal-guidance",
       "key": "ai-terminal-guidance",
       "label": "AI末端制导",
@@ -6802,17 +6857,6 @@
       "degree": 1
     },
     {
-      "id": "concept:surface-chaos-deep-order",
-      "key": "surface-chaos-deep-order",
-      "label": "表面乱局深层秩序",
-      "fullLabel": "表面乱局深层秩序",
-      "type": "concept",
-      "route": "concepts/surface-chaos-deep-order",
-      "summary": "政坛看起来吵翻天，其实所有争斗都锁在不可触碰的底层规则之内，乱只发生在上层分权，根基纹丝不动。",
-      "status": null,
-      "degree": 1
-    },
-    {
       "id": "person:cai-guoqiang",
       "key": "cai-guoqiang",
       "label": "蔡国强",
@@ -6842,17 +6886,6 @@
       "type": "theme",
       "route": "themes/property-rights-and-cultural-plunder",
       "summary": "讨论当产权边界被模糊、托管责任被滥用时，文化资产如何从传承物变成可被随意处置的对象。",
-      "status": null,
-      "degree": 1
-    },
-    {
-      "id": "concept:tributary-mindset",
-      "key": "tributary-mindset",
-      "label": "朝贡思维",
-      "fullLabel": "朝贡思维",
-      "type": "concept",
-      "route": "concepts/tributary-mindset",
-      "summary": "朝贡思维指在大国崛起叙事下，期待周边富裕小国“万国来朝、进贡、祭祖”，把对方当成应归附的藩属或飞地。",
       "status": null,
       "degree": 1
     },
@@ -7315,17 +7348,6 @@
       "type": "concept",
       "route": "concepts/circle-of-competence",
       "summary": "只投自己真正能接得住、能看懂的赛道，而不是看起来更美好、却根本不熟悉的行业。",
-      "status": null,
-      "degree": 1
-    },
-    {
-      "id": "concept:energy-exporter-cash-crunch",
-      "key": "energy-exporter-cash-crunch",
-      "label": "能源输出国现金流断裂",
-      "fullLabel": "能源输出国现金流断裂",
-      "type": "concept",
-      "route": "concepts/energy-exporter-cash-crunch",
-      "summary": "靠卖油气过日子的国家像一家靠现金流周转的超市，油价跌破线并持续足够久，社会成本就会失控。",
       "status": null,
       "degree": 1
     },
@@ -7843,17 +7865,6 @@
       "type": "model",
       "route": "models/combined-penetration",
       "summary": "几条各自都能绕过去的监管线同时落下，游离资产就没有出口，而穿透真正的产出是一份可排序的名单。",
-      "status": null,
-      "degree": 1
-    },
-    {
-      "id": "concept:rule-gaming-backfire",
-      "key": "rule-gaming-backfire",
-      "label": "钻规则反噬",
-      "fullLabel": "钻规则反噬",
-      "type": "concept",
-      "route": "concepts/rule-gaming-backfire",
-      "summary": "靠钻规则空子或动用特权改规则获取短期收益，最终赔上信任、口碑和长期竞争力的现象。",
       "status": null,
       "degree": 1
     },
@@ -22030,6 +22041,131 @@
       "source": "live:LIVE038",
       "target": "concept:pan-institutional-middle-class",
       "kind": "live-concept"
+    },
+    {
+      "source": "live:LIVE039",
+      "target": "episode:EP168",
+      "kind": "live-episode"
+    },
+    {
+      "source": "live:LIVE039",
+      "target": "episode:EP161",
+      "kind": "live-episode"
+    },
+    {
+      "source": "live:LIVE039",
+      "target": "episode:EP174",
+      "kind": "live-episode"
+    },
+    {
+      "source": "live:LIVE039",
+      "target": "episode:EP207",
+      "kind": "live-episode"
+    },
+    {
+      "source": "live:LIVE039",
+      "target": "concept:route-substitution-illusion",
+      "kind": "live-concept"
+    },
+    {
+      "source": "live:LIVE039",
+      "target": "concept:gray-oil-network",
+      "kind": "live-concept"
+    },
+    {
+      "source": "live:LIVE039",
+      "target": "concept:energy-exporter-cash-crunch",
+      "kind": "live-concept"
+    },
+    {
+      "source": "live:LIVE039",
+      "target": "concept:surface-chaos-deep-order",
+      "kind": "live-concept"
+    },
+    {
+      "source": "live:LIVE039",
+      "target": "concept:tributary-mindset",
+      "kind": "live-concept"
+    },
+    {
+      "source": "live:LIVE039",
+      "target": "concept:institutional-software-transfer",
+      "kind": "live-concept"
+    },
+    {
+      "source": "live:LIVE039",
+      "target": "concept:great-small-power-leveling",
+      "kind": "live-concept"
+    },
+    {
+      "source": "live:LIVE039",
+      "target": "concept:war-insulation-collapse",
+      "kind": "live-concept"
+    },
+    {
+      "source": "live:LIVE039",
+      "target": "concept:collective-self-domestication",
+      "kind": "live-concept"
+    },
+    {
+      "source": "live:LIVE039",
+      "target": "concept:symbolic-matricide",
+      "kind": "live-concept"
+    },
+    {
+      "source": "live:LIVE039",
+      "target": "concept:rule-gaming-backfire",
+      "kind": "live-concept"
+    },
+    {
+      "source": "live:LIVE039",
+      "target": "model:wall-and-gray-trade-crackdown",
+      "kind": "live-model"
+    },
+    {
+      "source": "live:LIVE039",
+      "target": "model:proxy-containment-ring",
+      "kind": "live-model"
+    },
+    {
+      "source": "live:LIVE039",
+      "target": "model:crisis-selection",
+      "kind": "live-model"
+    },
+    {
+      "source": "live:LIVE039",
+      "target": "model:individuation-three-stage",
+      "kind": "live-model"
+    },
+    {
+      "source": "live:LIVE039",
+      "target": "model:stability-over-growth-trap",
+      "kind": "live-model"
+    },
+    {
+      "source": "live:LIVE039",
+      "target": "theme:authoritarian-succession-and-state-fragility",
+      "kind": "live-theme"
+    },
+    {
+      "source": "live:LIVE039",
+      "target": "theme:sanctions-and-power-containment",
+      "kind": "live-theme"
+    },
+    {
+      "source": "live:LIVE039",
+      "target": "theme:great-power-competition-and-strategic-time",
+      "kind": "live-theme"
+    },
+    {
+      "source": "live:LIVE039",
+      "target": "theme:dollar-system-and-gray-trade",
+      "kind": "live-theme"
+    },
+    {
+      "source": "live:LIVE039",
+      "target": "theme:maritime-chokepoints-and-route-order",
+      "kind": "live-theme"
     },
     {
       "source": "episode:EP120",
