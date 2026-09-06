@@ -2,14 +2,14 @@
   "meta": {
     "title": "颖响力知识图谱",
     "subtitle": "节目、概念、模型、人物、主题之间的可视化连接网络",
-    "nodeCount": 716,
-    "linkCount": 2903,
+    "nodeCount": 719,
+    "linkCount": 2912,
     "typeCounts": {
       "model": 82,
       "live": 39,
       "theme": 92,
-      "episode": 207,
-      "concept": 231,
+      "episode": 208,
+      "concept": 233,
       "person": 65
     }
   },
@@ -23,7 +23,7 @@
       "route": "models/risk-transfer-chain",
       "summary": "系统不会立刻吞下风险，而是先沿着银行、企业、票据、供应链和普通人之间不断转手、延后和下沉。",
       "status": null,
-      "degree": 52
+      "degree": 53
     },
     {
       "id": "live:LIVE002",
@@ -518,6 +518,17 @@
       "route": "themes/rule-of-law-boundaries-and-social-trust",
       "summary": "关注法律灰区如何影响公众的善意、风险感和彼此信任。",
       "status": null,
+      "degree": 24
+    },
+    {
+      "id": "concept:cost-shifting",
+      "key": "cost-shifting",
+      "label": "成本外移",
+      "fullLabel": "成本外移",
+      "type": "concept",
+      "route": "concepts/cost-shifting",
+      "summary": "组织内部的高额非生产性成本，最终会通过价格、规则或风险转嫁给外部承担者。",
+      "status": null,
       "degree": 23
     },
     {
@@ -552,17 +563,6 @@
       "summary": "七八家机构各掏三十亿去稳三百，叠在一起就成了一千。",
       "status": "published",
       "degree": 23
-    },
-    {
-      "id": "concept:cost-shifting",
-      "key": "cost-shifting",
-      "label": "成本外移",
-      "fullLabel": "成本外移",
-      "type": "concept",
-      "route": "concepts/cost-shifting",
-      "summary": "组织内部的高额非生产性成本，最终会通过价格、规则或风险转嫁给外部承担者。",
-      "status": null,
-      "degree": 22
     },
     {
       "id": "theme:maritime-chokepoints-and-route-order",
@@ -1709,6 +1709,17 @@
       "degree": 11
     },
     {
+      "id": "theme:youth-dreams-and-safe-paths",
+      "key": "youth-dreams-and-safe-paths",
+      "label": "年轻人梦想与安全路径",
+      "fullLabel": "年轻人梦想与安全路径",
+      "type": "theme",
+      "route": "themes/youth-dreams-and-safe-paths",
+      "summary": "关注“稳定”如何成为压制年轻人生命力的主流建议。",
+      "status": null,
+      "degree": 11
+    },
+    {
       "id": "model:authority-misinfluence",
       "key": "authority-misinfluence",
       "label": "权威影响",
@@ -1925,17 +1936,6 @@
       "type": "concept",
       "route": "concepts/premium-narrative",
       "summary": "企业用定位、符号、方法论和品牌故事为高价格建立解释框架。",
-      "status": null,
-      "degree": 10
-    },
-    {
-      "id": "theme:youth-dreams-and-safe-paths",
-      "key": "youth-dreams-and-safe-paths",
-      "label": "年轻人梦想与安全路径",
-      "fullLabel": "年轻人梦想与安全路径",
-      "type": "theme",
-      "route": "themes/youth-dreams-and-safe-paths",
-      "summary": "关注“稳定”如何成为压制年轻人生命力的主流建议。",
       "status": null,
       "degree": 10
     },
@@ -2160,6 +2160,17 @@
       "degree": 9
     },
     {
+      "id": "concept:compliance-cost-gap",
+      "key": "compliance-cost-gap",
+      "label": "合规成本落差",
+      "fullLabel": "合规成本落差",
+      "type": "concept",
+      "route": "concepts/compliance-cost-gap",
+      "summary": "不同制度路径让同一市场里的生产者承担完全不同的时间、资金和不确定性成本。",
+      "status": null,
+      "degree": 9
+    },
+    {
       "id": "concept:phantom-growth",
       "key": "phantom-growth",
       "label": "幻象增长",
@@ -2189,6 +2200,17 @@
       "type": "theme",
       "route": "themes/exam-centered-education-and-person-formation",
       "summary": "关注学校如何把人塑造成服从考试和权威的对象。",
+      "status": null,
+      "degree": 9
+    },
+    {
+      "id": "theme:human-value-and-state-credit",
+      "key": "human-value-and-state-credit",
+      "label": "人的价值与国家信用",
+      "fullLabel": "人的价值与国家信用",
+      "type": "theme",
+      "route": "themes/human-value-and-state-credit",
+      "summary": "讨论国家究竟把个体视为成本、工具，还是视为必须兑现承诺的对象。",
       "status": null,
       "degree": 9
     },
@@ -2556,6 +2578,17 @@
       "degree": 9
     },
     {
+      "id": "episode:EP208",
+      "key": "EP208",
+      "label": "EP208",
+      "fullLabel": "EP208 · 洋大人还真管用？长三角龙头企业星宇疯狂裁员，00后维权方式让全网觉醒！",
+      "type": "episode",
+      "route": "episodes/EP208",
+      "summary": "星宇股份招了 440 名应届生，入职一个月就开始分批约谈，给的是二选一。主动离职拿半个月工资，或者从研发岗调去流水线拿普工的钱。107 人签了字。这批人没走仲裁，把材料整理成上百页再翻成英文。收件方是奔驰大众的合规部门、港交所和常州人社局。十几天里人社局通报、公司致歉、人力总监停职，补偿加到六个月工资兜底。起作用的不是道理，是这家公司靠欧洲订单吃饭，又正在冲港股上市。国内维权耗掉的是个人的时间，企业违法赔的是两个月工资，这笔账一直算得过来。年轻人换了个地方算它。",
+      "status": "curated",
+      "degree": 9
+    },
+    {
       "id": "concept:performative-innovation",
       "key": "performative-innovation",
       "label": "表演式创新",
@@ -2585,17 +2618,6 @@
       "type": "model",
       "route": "models/distributed-innovation",
       "summary": "分布式创新强调多中心试错、失败吸收和真实反馈比单一大计划更能产生韧性。",
-      "status": null,
-      "degree": 8
-    },
-    {
-      "id": "concept:compliance-cost-gap",
-      "key": "compliance-cost-gap",
-      "label": "合规成本落差",
-      "fullLabel": "合规成本落差",
-      "type": "concept",
-      "route": "concepts/compliance-cost-gap",
-      "summary": "不同制度路径让同一市场里的生产者承担完全不同的时间、资金和不确定性成本。",
       "status": null,
       "degree": 8
     },
@@ -2640,17 +2662,6 @@
       "type": "theme",
       "route": "themes/deglobalization-and-cultural-fragmentation",
       "summary": "讨论全球舞台如何从英语中心和统一审美，转向更地方化、更圈层化的表达竞争。",
-      "status": null,
-      "degree": 8
-    },
-    {
-      "id": "theme:human-value-and-state-credit",
-      "key": "human-value-and-state-credit",
-      "label": "人的价值与国家信用",
-      "fullLabel": "人的价值与国家信用",
-      "type": "theme",
-      "route": "themes/human-value-and-state-credit",
-      "summary": "讨论国家究竟把个体视为成本、工具，还是视为必须兑现承诺的对象。",
       "status": null,
       "degree": 8
     },
@@ -4778,6 +4789,17 @@
       "degree": 4
     },
     {
+      "id": "model:rule-bounded-rights-defense",
+      "key": "rule-bounded-rights-defense",
+      "label": "规则边界型维权模型",
+      "fullLabel": "规则边界型维权模型",
+      "type": "model",
+      "route": "models/rule-bounded-rights-defense",
+      "summary": "规则边界型维权模型用权利基础和过程边界区分正当维权与撒泼勒索。",
+      "status": null,
+      "degree": 4
+    },
+    {
       "id": "person:jia-guolong",
       "key": "jia-guolong",
       "label": "贾国龙",
@@ -5368,17 +5390,6 @@
       "type": "concept",
       "route": "concepts/partnership-shift",
       "summary": "亲密关系在中年、资产和责任变化后，常会从浪漫叙事转向合伙治理。",
-      "status": null,
-      "degree": 3
-    },
-    {
-      "id": "model:rule-bounded-rights-defense",
-      "key": "rule-bounded-rights-defense",
-      "label": "规则边界型维权模型",
-      "fullLabel": "规则边界型维权模型",
-      "type": "model",
-      "route": "models/rule-bounded-rights-defense",
-      "summary": "规则边界型维权模型用权利基础和过程边界区分正当维权与撒泼勒索。",
       "status": null,
       "degree": 3
     },
@@ -7110,6 +7121,17 @@
       "degree": 1
     },
     {
+      "id": "concept:gray-layoff",
+      "key": "gray-layoff",
+      "label": "灰色裁员",
+      "fullLabel": "灰色裁员",
+      "type": "concept",
+      "route": "concepts/gray-layoff",
+      "summary": "不走裁员程序，用调岗、降薪、羞辱和恐吓逼员工自己签字走人，赔偿和违法记录一起清零。",
+      "status": null,
+      "degree": 1
+    },
+    {
       "id": "concept:currency-credit-collapse",
       "key": "currency-credit-collapse",
       "label": "货币信用崩塌",
@@ -7557,6 +7579,17 @@
       "type": "concept",
       "route": "concepts/land-recycling-housing",
       "summary": "土地循环住房指在土地稀缺的城市国家里，用有限租约和更新机制让住房资源跨代流动，而不是永久沉淀给先到的一代。",
+      "status": null,
+      "degree": 1
+    },
+    {
+      "id": "concept:external-rule-leverage",
+      "key": "external-rule-leverage",
+      "label": "外部规则杠杆",
+      "fullLabel": "外部规则杠杆",
+      "type": "concept",
+      "route": "concepts/external-rule-leverage",
+      "summary": "本地救济走不通的一方，转而去撬动对手依赖的外部规则，用别人的强制力换回自己没有的强制力。",
       "status": null,
       "degree": 1
     },
@@ -16025,6 +16058,51 @@
     {
       "source": "episode:EP207",
       "target": "theme:housing-burden-and-income-distribution",
+      "kind": "episode-theme"
+    },
+    {
+      "source": "episode:EP208",
+      "target": "concept:external-rule-leverage",
+      "kind": "episode-concept"
+    },
+    {
+      "source": "episode:EP208",
+      "target": "concept:gray-layoff",
+      "kind": "episode-concept"
+    },
+    {
+      "source": "episode:EP208",
+      "target": "concept:compliance-cost-gap",
+      "kind": "episode-concept"
+    },
+    {
+      "source": "episode:EP208",
+      "target": "concept:cost-shifting",
+      "kind": "episode-concept"
+    },
+    {
+      "source": "episode:EP208",
+      "target": "model:rule-bounded-rights-defense",
+      "kind": "episode-model"
+    },
+    {
+      "source": "episode:EP208",
+      "target": "model:risk-transfer-chain",
+      "kind": "episode-model"
+    },
+    {
+      "source": "episode:EP208",
+      "target": "theme:rule-of-law-boundaries-and-social-trust",
+      "kind": "episode-theme"
+    },
+    {
+      "source": "episode:EP208",
+      "target": "theme:youth-dreams-and-safe-paths",
+      "kind": "episode-theme"
+    },
+    {
+      "source": "episode:EP208",
+      "target": "theme:human-value-and-state-credit",
       "kind": "episode-theme"
     },
     {
