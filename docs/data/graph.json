@@ -2,14 +2,14 @@
   "meta": {
     "title": "颖响力知识图谱",
     "subtitle": "节目、概念、模型、人物、主题之间的可视化连接网络",
-    "nodeCount": 719,
-    "linkCount": 2912,
+    "nodeCount": 724,
+    "linkCount": 2923,
     "typeCounts": {
-      "model": 82,
+      "model": 83,
       "live": 39,
       "theme": 92,
-      "episode": 208,
-      "concept": 233,
+      "episode": 209,
+      "concept": 236,
       "person": 65
     }
   },
@@ -433,6 +433,17 @@
       "degree": 28
     },
     {
+      "id": "theme:singapore-and-small-state-survival",
+      "key": "singapore-and-small-state-survival",
+      "label": "新加坡与小国生存术",
+      "fullLabel": "新加坡与小国生存术",
+      "type": "theme",
+      "route": "themes/singapore-and-small-state-survival",
+      "summary": "讨论新加坡如何把规则、海峡、人才和谨慎外交组合成一套小国长期生存方法。",
+      "status": null,
+      "degree": 27
+    },
+    {
       "id": "model:narrative-instrumentalization",
       "key": "narrative-instrumentalization",
       "label": "叙事工具化模型",
@@ -444,17 +455,6 @@
       "degree": 27
     },
     {
-      "id": "theme:singapore-and-small-state-survival",
-      "key": "singapore-and-small-state-survival",
-      "label": "新加坡与小国生存术",
-      "fullLabel": "新加坡与小国生存术",
-      "type": "theme",
-      "route": "themes/singapore-and-small-state-survival",
-      "summary": "讨论新加坡如何把规则、海峡、人才和谨慎外交组合成一套小国长期生存方法。",
-      "status": null,
-      "degree": 26
-    },
-    {
       "id": "episode:EP169",
       "key": "EP169",
       "label": "EP169",
@@ -464,6 +464,17 @@
       "summary": "合肥被称为中国最牛风投城市。各地城投照抄，多数抄出一身债和产能过剩。可学的不是城市打法，是背后的投资逻辑。四个显性方法是逆周期抄底不追热点，赌产业链不赌单家公司。还有长期陪跑到成熟才退出，只投接得住的赛道。抄不走的是第五个隐性秘籍。政府能把权力直接变成补贴、报表和销售额。普通人没权力，唯一对应物是信息确定性。普通人要掌握的是别人没有的确定信息，像一级市场那样看清命脉。到那一步，欧印和加杠杆才不是赌博。",
       "status": "curated",
       "degree": 26
+    },
+    {
+      "id": "theme:rule-of-law-boundaries-and-social-trust",
+      "key": "rule-of-law-boundaries-and-social-trust",
+      "label": "法治边界与社会信任",
+      "fullLabel": "法治边界与社会信任",
+      "type": "theme",
+      "route": "themes/rule-of-law-boundaries-and-social-trust",
+      "summary": "关注法律灰区如何影响公众的善意、风险感和彼此信任。",
+      "status": null,
+      "degree": 25
     },
     {
       "id": "episode:EP154",
@@ -508,17 +519,6 @@
       "summary": "以前那些油卖给古巴，一桶还要倒贴十二美元。",
       "status": "published",
       "degree": 25
-    },
-    {
-      "id": "theme:rule-of-law-boundaries-and-social-trust",
-      "key": "rule-of-law-boundaries-and-social-trust",
-      "label": "法治边界与社会信任",
-      "fullLabel": "法治边界与社会信任",
-      "type": "theme",
-      "route": "themes/rule-of-law-boundaries-and-social-trust",
-      "summary": "关注法律灰区如何影响公众的善意、风险感和彼此信任。",
-      "status": null,
-      "degree": 24
     },
     {
       "id": "concept:cost-shifting",
@@ -741,6 +741,17 @@
       "degree": 20
     },
     {
+      "id": "theme:narrative-speculation-and-retail-traps",
+      "key": "narrative-speculation-and-retail-traps",
+      "label": "投资叙事与散户陷阱",
+      "fullLabel": "投资叙事与散户陷阱",
+      "type": "theme",
+      "route": "themes/narrative-speculation-and-retail-traps",
+      "summary": "当市场热点先由故事驱动、再由散户接棒时，普通人最容易在高潮处接到最后一棒。",
+      "status": null,
+      "degree": 20
+    },
+    {
       "id": "episode:EP132",
       "key": "EP132",
       "label": "EP132",
@@ -792,17 +803,6 @@
       "type": "theme",
       "route": "themes/institutional-middle-class-and-social-mobility",
       "summary": "讨论稳定岗位、公共财政和身份溢价如何重塑中产结构，并收窄普通人的上升路径。",
-      "status": null,
-      "degree": 19
-    },
-    {
-      "id": "theme:narrative-speculation-and-retail-traps",
-      "key": "narrative-speculation-and-retail-traps",
-      "label": "投资叙事与散户陷阱",
-      "fullLabel": "投资叙事与散户陷阱",
-      "type": "theme",
-      "route": "themes/narrative-speculation-and-retail-traps",
-      "summary": "当市场热点先由故事驱动、再由散户接棒时，普通人最容易在高潮处接到最后一棒。",
       "status": null,
       "degree": 19
     },
@@ -1027,6 +1027,17 @@
       "degree": 16
     },
     {
+      "id": "model:narrative-leverage",
+      "key": "narrative-leverage",
+      "label": "叙事杠杆",
+      "fullLabel": "叙事杠杆",
+      "type": "model",
+      "route": "models/narrative-leverage",
+      "summary": "通过一个足够大的故事，把原本有限的资源、信用和注意力撬成更大的资本、销量或支持度。",
+      "status": null,
+      "degree": 16
+    },
+    {
       "id": "theme:state-business-entanglement",
       "key": "state-business-entanglement",
       "label": "政企嵌入与企业存续",
@@ -1069,17 +1080,6 @@
       "summary": "不单独复盘恒大或许家印。把房地产系统性风险，拆成居民、房企和地方政府三层共同加杠杆的结果。地产崩塌的核心不是某个老板突然失误。而是零首付式投机、零资金式房企扩张、土地财政式地方融资彼此强化。再叠加强人老板的一言堂和土地制度反馈缺失，整个行业最终失去了刹车能力。",
       "status": "curated",
       "degree": 16
-    },
-    {
-      "id": "model:narrative-leverage",
-      "key": "narrative-leverage",
-      "label": "叙事杠杆",
-      "fullLabel": "叙事杠杆",
-      "type": "model",
-      "route": "models/narrative-leverage",
-      "summary": "通过一个足够大的故事，把原本有限的资源、信用和注意力撬成更大的资本、销量或支持度。",
-      "status": null,
-      "degree": 15
     },
     {
       "id": "episode:EP123",
@@ -1896,6 +1896,17 @@
       "degree": 11
     },
     {
+      "id": "episode:EP209",
+      "key": "EP209",
+      "label": "EP209",
+      "fullLabel": "EP209 · 52名新加坡人广西被捕！拆解1040传销骗局，这个老骗局为何能骗到南洋？",
+      "type": "episode",
+      "route": "episodes/EP209",
+      "summary": "9 月 4 日新加坡外交部和警方通报，52 名公民在广西涉嫌参与传销被捕。这是新加坡人在海外单次被扣最多的一次。使馆和总领馆探视了全部 52 人，同时讲明不干预中国的司法程序。这批人搞的是 1040 阳光工程，一个在广西活了二十多年的老套路。交 6.98 万元买入伙资格，拉三个人再往下复制。凑够 29 人当上老总，拿满 1040 万出局。它一件东西都不卖，靠的是把北部湾开发和南宁的新楼认领成自己的功劳。骗新加坡人的多半也是新加坡人，亲戚连着亲戚，话又都听得懂。",
+      "status": "curated",
+      "degree": 11
+    },
+    {
       "id": "concept:subsidy-leverage-engine",
       "key": "subsidy-leverage-engine",
       "label": "补贴杠杆引擎",
@@ -1969,6 +1980,17 @@
       "type": "concept",
       "route": "concepts/retail-platform-risk",
       "summary": "散户投资不仅面对标的涨跌，还面对平台信用、对冲、托管和退出风险。",
+      "status": null,
+      "degree": 10
+    },
+    {
+      "id": "concept:expectation-selling",
+      "key": "expectation-selling",
+      "label": "预期贩卖",
+      "fullLabel": "预期贩卖",
+      "type": "concept",
+      "route": "concepts/expectation-selling",
+      "summary": "通过出售可理解、可规划、可购买的未来想象，中间人获得影响力和收益。",
       "status": null,
       "degree": 10
     },
@@ -2281,17 +2303,6 @@
       "degree": 9
     },
     {
-      "id": "concept:expectation-selling",
-      "key": "expectation-selling",
-      "label": "预期贩卖",
-      "fullLabel": "预期贩卖",
-      "type": "concept",
-      "route": "concepts/expectation-selling",
-      "summary": "通过出售可理解、可规划、可购买的未来想象，中间人获得影响力和收益。",
-      "status": null,
-      "degree": 9
-    },
-    {
       "id": "concept:quasi-currency-support",
       "key": "quasi-currency-support",
       "label": "准货币托市",
@@ -2596,6 +2607,17 @@
       "type": "concept",
       "route": "concepts/performative-innovation",
       "summary": "表演式创新指项目主要为了完成指标、包装成果和争取扶持资金，而不以真实突破为中心。",
+      "status": null,
+      "degree": 8
+    },
+    {
+      "id": "model:discipline-failure-loop",
+      "key": "discipline-failure-loop",
+      "label": "惩戒失效循环模型",
+      "fullLabel": "惩戒失效循环模型",
+      "type": "model",
+      "route": "models/discipline-failure-loop",
+      "summary": "违规成本过低时，市场会把规则破坏重新包装成交易机会，反过来奖励下一次违规。",
       "status": null,
       "degree": 8
     },
@@ -3135,17 +3157,6 @@
       "type": "theme",
       "route": "themes/financial-content-and-long-termism",
       "summary": "真正有价值的财经内容应该帮助人建立周期、战略和时机意识，而不是只卖每天的情绪波动。",
-      "status": null,
-      "degree": 7
-    },
-    {
-      "id": "model:discipline-failure-loop",
-      "key": "discipline-failure-loop",
-      "label": "惩戒失效循环模型",
-      "fullLabel": "惩戒失效循环模型",
-      "type": "model",
-      "route": "models/discipline-failure-loop",
-      "summary": "违规成本过低时，市场会把规则破坏重新包装成交易机会，反过来奖励下一次违规。",
       "status": null,
       "degree": 7
     },
@@ -4085,6 +4096,17 @@
       "degree": 5
     },
     {
+      "id": "concept:legal-grey-zone",
+      "key": "legal-grey-zone",
+      "label": "法律灰区",
+      "fullLabel": "法律灰区",
+      "type": "concept",
+      "route": "concepts/legal-grey-zone",
+      "summary": "事实、责任和伤害都不够清晰，却必须被社会和制度处理的边界地带。",
+      "status": null,
+      "degree": 5
+    },
+    {
       "id": "theme:charity-and-moral-capital",
       "key": "charity-and-moral-capital",
       "label": "公益、善意与商业失灵",
@@ -4719,17 +4741,6 @@
       "type": "concept",
       "route": "concepts/truth-indifferent-rhetoric",
       "summary": "话术若只追求立场效果和情绪动员，就会对真假本身变得冷漠。",
-      "status": null,
-      "degree": 4
-    },
-    {
-      "id": "concept:legal-grey-zone",
-      "key": "legal-grey-zone",
-      "label": "法律灰区",
-      "fullLabel": "法律灰区",
-      "type": "concept",
-      "route": "concepts/legal-grey-zone",
-      "summary": "事实、责任和伤害都不够清晰，却必须被社会和制度处理的边界地带。",
       "status": null,
       "degree": 4
     },
@@ -6923,6 +6934,17 @@
       "degree": 1
     },
     {
+      "id": "concept:crackdown-as-proof",
+      "key": "crackdown-as-proof",
+      "label": "打击即证明",
+      "fullLabel": "打击即证明",
+      "type": "concept",
+      "route": "concepts/crackdown-as-proof",
+      "summary": "把查处、否认和外界的反对翻译成自己为真的证据，让最有力的反面消息反过来变成支持。",
+      "status": null,
+      "degree": 1
+    },
+    {
       "id": "concept:one-sided-market",
       "key": "one-sided-market",
       "label": "单边市场",
@@ -7517,6 +7539,28 @@
       "degree": 1
     },
     {
+      "id": "concept:victim-to-recruiter",
+      "key": "victim-to-recruiter",
+      "label": "受害者转招募人",
+      "fullLabel": "受害者转招募人",
+      "type": "concept",
+      "route": "concepts/victim-to-recruiter",
+      "summary": "已经吃过亏的人不退出，反而去拉下一个进来，因为认赔等于承认钱拿不回来。",
+      "status": null,
+      "degree": 1
+    },
+    {
+      "id": "model:trust-network-harvest",
+      "key": "trust-network-harvest",
+      "label": "熟人网络收割模型",
+      "fullLabel": "熟人网络收割模型",
+      "type": "model",
+      "route": "models/trust-network-harvest",
+      "summary": "熟人网络收割模型解释一套骗局为什么优先沿着亲戚朋友扩散，以及它跨境时怎样挑选社群。",
+      "status": null,
+      "degree": 1
+    },
+    {
       "id": "concept:deregulation-as-rescue",
       "key": "deregulation-as-rescue",
       "label": "松绑式救市",
@@ -7876,6 +7920,17 @@
       "type": "person",
       "route": "people/zheng-liwen",
       "summary": "郑丽文是台湾政治人物、中国国民党主席，节目借她观察危机政治中的女性前台化和承压位置变化。",
+      "status": null,
+      "degree": 1
+    },
+    {
+      "id": "concept:policy-veneer",
+      "key": "policy-veneer",
+      "label": "政策外壳",
+      "fullLabel": "政策外壳",
+      "type": "concept",
+      "route": "concepts/policy-veneer",
+      "summary": "把真实的国家战略、政策文件和城市建设认领成自己的成果，用别人的可信度给一件私事背书。",
       "status": null,
       "degree": 1
     },
@@ -16103,6 +16158,61 @@
     {
       "source": "episode:EP208",
       "target": "theme:human-value-and-state-credit",
+      "kind": "episode-theme"
+    },
+    {
+      "source": "episode:EP209",
+      "target": "concept:policy-veneer",
+      "kind": "episode-concept"
+    },
+    {
+      "source": "episode:EP209",
+      "target": "concept:crackdown-as-proof",
+      "kind": "episode-concept"
+    },
+    {
+      "source": "episode:EP209",
+      "target": "concept:victim-to-recruiter",
+      "kind": "episode-concept"
+    },
+    {
+      "source": "episode:EP209",
+      "target": "concept:expectation-selling",
+      "kind": "episode-concept"
+    },
+    {
+      "source": "episode:EP209",
+      "target": "concept:legal-grey-zone",
+      "kind": "episode-concept"
+    },
+    {
+      "source": "episode:EP209",
+      "target": "model:trust-network-harvest",
+      "kind": "episode-model"
+    },
+    {
+      "source": "episode:EP209",
+      "target": "model:narrative-leverage",
+      "kind": "episode-model"
+    },
+    {
+      "source": "episode:EP209",
+      "target": "model:discipline-failure-loop",
+      "kind": "episode-model"
+    },
+    {
+      "source": "episode:EP209",
+      "target": "theme:rule-of-law-boundaries-and-social-trust",
+      "kind": "episode-theme"
+    },
+    {
+      "source": "episode:EP209",
+      "target": "theme:narrative-speculation-and-retail-traps",
+      "kind": "episode-theme"
+    },
+    {
+      "source": "episode:EP209",
+      "target": "theme:singapore-and-small-state-survival",
       "kind": "episode-theme"
     },
     {

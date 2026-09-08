@@ -1015,5 +1015,16 @@
       "platform": "youtube",
       "url": "https://www.youtube.com/watch?v=AvDc-pdiJS0"
     }
+  },
+  "EP209": {
+    "bilibili": {
+      "platform": "bilibili",
+      "url": "https://www.bilibili.com/video/BV1jibG6MEbo/",
+      "access": "member"
+    },
+    "youtube": {
+      "platform": "youtube",
+      "url": "https://www.youtube.com/watch?v=ESBGXyqRqPk"
+    }
   }
 }
