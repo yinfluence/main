@@ -2,11 +2,11 @@
   "meta": {
     "title": "颖响力知识图谱",
     "subtitle": "节目、概念、模型、人物、主题之间的可视化连接网络",
-    "nodeCount": 724,
-    "linkCount": 2923,
+    "nodeCount": 725,
+    "linkCount": 2951,
     "typeCounts": {
       "model": 83,
-      "live": 39,
+      "live": 40,
       "theme": 92,
       "episode": 209,
       "concept": 236,
@@ -433,6 +433,17 @@
       "degree": 28
     },
     {
+      "id": "live:LIVE040",
+      "key": "LIVE040",
+      "label": "LIVE040",
+      "fullLabel": "LIVE040 · 启动条件多加一条发展利益，征用改成了征收，十月一号那部新法到底给谁准备的？",
+      "type": "live",
+      "route": "lives/LIVE040",
+      "summary": "豁免的只有个人家庭生活必需品，存款和黄金都不在里面。",
+      "status": "published",
+      "degree": 28
+    },
+    {
       "id": "theme:singapore-and-small-state-survival",
       "key": "singapore-and-small-state-survival",
       "label": "新加坡与小国生存术",
@@ -455,6 +466,17 @@
       "degree": 27
     },
     {
+      "id": "theme:rule-of-law-boundaries-and-social-trust",
+      "key": "rule-of-law-boundaries-and-social-trust",
+      "label": "法治边界与社会信任",
+      "fullLabel": "法治边界与社会信任",
+      "type": "theme",
+      "route": "themes/rule-of-law-boundaries-and-social-trust",
+      "summary": "关注法律灰区如何影响公众的善意、风险感和彼此信任。",
+      "status": null,
+      "degree": 26
+    },
+    {
       "id": "episode:EP169",
       "key": "EP169",
       "label": "EP169",
@@ -464,17 +486,6 @@
       "summary": "合肥被称为中国最牛风投城市。各地城投照抄，多数抄出一身债和产能过剩。可学的不是城市打法，是背后的投资逻辑。四个显性方法是逆周期抄底不追热点，赌产业链不赌单家公司。还有长期陪跑到成熟才退出，只投接得住的赛道。抄不走的是第五个隐性秘籍。政府能把权力直接变成补贴、报表和销售额。普通人没权力，唯一对应物是信息确定性。普通人要掌握的是别人没有的确定信息，像一级市场那样看清命脉。到那一步，欧印和加杠杆才不是赌博。",
       "status": "curated",
       "degree": 26
-    },
-    {
-      "id": "theme:rule-of-law-boundaries-and-social-trust",
-      "key": "rule-of-law-boundaries-and-social-trust",
-      "label": "法治边界与社会信任",
-      "fullLabel": "法治边界与社会信任",
-      "type": "theme",
-      "route": "themes/rule-of-law-boundaries-and-social-trust",
-      "summary": "关注法律灰区如何影响公众的善意、风险感和彼此信任。",
-      "status": null,
-      "degree": 25
     },
     {
       "id": "episode:EP154",
@@ -1060,6 +1071,17 @@
       "degree": 16
     },
     {
+      "id": "episode:EP123",
+      "key": "EP123",
+      "label": "EP123",
+      "fullLabel": "EP123 · 伊朗为何是世界的“三国荆州”？诸葛亮庞统之争看懂大国博弈底层逻辑。【EP123】",
+      "type": "episode",
+      "route": "episodes/EP123",
+      "summary": "用三国里的荆州困局翻译伊朗的地缘处境。伊朗反复成为中东风暴眼，不只是因为它和美国、以色列对抗。而是因为它同时具备天下枢纽与四战之地这两种属性。更危险的往往不是正面强敌，而是周边邻国对一个强势近邻的集体戒备。从这个意义上说，庞统式的战略收缩和等待时机更值得考虑。它比诸葛亮式死守前沿更能保住长期生存空间。",
+      "status": "curated",
+      "degree": 16
+    },
+    {
       "id": "episode:EP124",
       "key": "EP124",
       "label": "EP124",
@@ -1082,17 +1104,6 @@
       "degree": 16
     },
     {
-      "id": "episode:EP123",
-      "key": "EP123",
-      "label": "EP123",
-      "fullLabel": "EP123 · 伊朗为何是世界的“三国荆州”？诸葛亮庞统之争看懂大国博弈底层逻辑。【EP123】",
-      "type": "episode",
-      "route": "episodes/EP123",
-      "summary": "用三国里的荆州困局翻译伊朗的地缘处境。伊朗反复成为中东风暴眼，不只是因为它和美国、以色列对抗。而是因为它同时具备天下枢纽与四战之地这两种属性。更危险的往往不是正面强敌，而是周边邻国对一个强势近邻的集体戒备。从这个意义上说，庞统式的战略收缩和等待时机更值得考虑。它比诸葛亮式死守前沿更能保住长期生存空间。",
-      "status": "curated",
-      "degree": 15
-    },
-    {
       "id": "episode:EP145",
       "key": "EP145",
       "label": "EP145",
@@ -1111,6 +1122,17 @@
       "type": "episode",
       "route": "episodes/EP146",
       "summary": "央视拿下 2026 到 2031 年四届世界杯转播权，社交媒体一片砍价封神。网传 6000 万美元单届价和 1.1 亿四届打包价，数学冲突。倾向单届价真、打包价假，为的是压低本届广告商预期。三件事咬得紧。FIFA 秘书长和温格先去足协不是央视。温格指导 U14，财政部同步宣布 5 亿元校园足球投入。本是商业谈判，被包装成民族胜利。央视垄断稳赚不赔，观众照样熬夜看广告充会员。体育归体育，商业归商业。",
+      "status": "curated",
+      "degree": 15
+    },
+    {
+      "id": "episode:EP165",
+      "key": "EP165",
+      "label": "EP165",
+      "fullLabel": "EP165 · 从亩产万斤到高中生火箭：为什么越\"严谨\"的数据越容易骗人？",
+      "type": "episode",
+      "route": "episodes/EP165",
+      "summary": "黑龙江五个高二学生“手搓火箭”，青海冷湖发射成功。自媒体捧成中国少年天才吊打西方。发射场、空域审批、固体发动机和燃料都靠商业机构冷湖实验室托底。学生做的是整体设计和参数调整，像夏令营走流程。理科生的吹牛套着数据外壳。建立在虚假前提上的严谨推导，偏差反而最大。钱学森当年用光合作用算亩产上限，被拿去给“亩产万斤”背书。自卑与自大是一体两面，都靠跟人比。真正的自信是平视自己和他人。普通人要保留质疑能力。",
       "status": "curated",
       "degree": 15
     },
@@ -1236,17 +1258,6 @@
       "degree": 14
     },
     {
-      "id": "episode:EP165",
-      "key": "EP165",
-      "label": "EP165",
-      "fullLabel": "EP165 · 从亩产万斤到高中生火箭：为什么越\"严谨\"的数据越容易骗人？",
-      "type": "episode",
-      "route": "episodes/EP165",
-      "summary": "黑龙江五个高二学生“手搓火箭”，青海冷湖发射成功。自媒体捧成中国少年天才吊打西方。发射场、空域审批、固体发动机和燃料都靠商业机构冷湖实验室托底。学生做的是整体设计和参数调整，像夏令营走流程。理科生的吹牛套着数据外壳。建立在虚假前提上的严谨推导，偏差反而最大。钱学森当年用光合作用算亩产上限，被拿去给“亩产万斤”背书。自卑与自大是一体两面，都靠跟人比。真正的自信是平视自己和他人。普通人要保留质疑能力。",
-      "status": "curated",
-      "degree": 14
-    },
-    {
       "id": "episode:EP166",
       "key": "EP166",
       "label": "EP166",
@@ -1276,6 +1287,17 @@
       "type": "episode",
       "route": "episodes/EP174",
       "summary": "国际焦点还在伊朗和霍尔木兹，真正在动的是伊拉克。新总理扎伊迪是政治素人、商人背景。上台仅四十五天，六月二十八号发动雷霆反腐。查抄上亿现金、黄金和枪支，逮捕名单近一百二十人。\n\n这场反腐表面清国内腐败，实质是斩断以石油为核心的灰色贸易。伊拉克油田与伊朗连通，混油后成了伊朗规避制裁的通道。扎伊迪切断这条线，把石油体系接入美国公司和美元结算。这是川普建墙分敌我、打灰色贸易那套战略在海湾的一环。",
+      "status": "curated",
+      "degree": 14
+    },
+    {
+      "id": "episode:EP184",
+      "key": "EP184",
+      "label": "EP184",
+      "fullLabel": "EP184 · 霸占他人车位为何不能执法只能“找单位”？长沙彭女士“威风”谁给的？",
+      "type": "episode",
+      "route": "episodes/EP184",
+      "summary": "长沙彭女士占用他人车位。六轮协查调解全部无效，单位一出意见立马道歉。这个反差里有三层问题。第一层，公职人员怕单位不怕法律。几十年前的单位制保护重新生效，成了法律打不破的高墙。第二层，物权法写得再清楚也没用。交警管不进小区，物业没有执法权，民警只能调解。产权人行使不了权利。第三层，协查通告的措辞偏袒。它暴露出县城婆罗门与普通人的认知割裂。这不是停车纠纷，是社会撕裂刚开始的信号。",
       "status": "curated",
       "degree": 14
     },
@@ -1434,17 +1456,6 @@
       "degree": 13
     },
     {
-      "id": "episode:EP184",
-      "key": "EP184",
-      "label": "EP184",
-      "fullLabel": "EP184 · 霸占他人车位为何不能执法只能“找单位”？长沙彭女士“威风”谁给的？",
-      "type": "episode",
-      "route": "episodes/EP184",
-      "summary": "长沙彭女士占用他人车位。六轮协查调解全部无效，单位一出意见立马道歉。这个反差里有三层问题。第一层，公职人员怕单位不怕法律。几十年前的单位制保护重新生效，成了法律打不破的高墙。第二层，物权法写得再清楚也没用。交警管不进小区，物业没有执法权，民警只能调解。产权人行使不了权利。第三层，协查通告的措辞偏袒。它暴露出县城婆罗门与普通人的认知割裂。这不是停车纠纷，是社会撕裂刚开始的信号。",
-      "status": "curated",
-      "degree": 13
-    },
-    {
       "id": "episode:EP188",
       "key": "EP188",
       "label": "EP188",
@@ -1489,6 +1500,17 @@
       "degree": 13
     },
     {
+      "id": "theme:planned-systems-and-innovation",
+      "key": "planned-systems-and-innovation",
+      "label": "大计划体制与创新约束",
+      "fullLabel": "大计划体制与创新约束",
+      "type": "theme",
+      "route": "themes/planned-systems-and-innovation",
+      "summary": "讨论统一目标和强组织动员如何带来短期速度，又如何在长期压缩创新、纠错与自发能动性。",
+      "status": null,
+      "degree": 12
+    },
+    {
       "id": "theme:youth-withdrawal-and-lying-flat",
       "key": "youth-withdrawal-and-lying-flat",
       "label": "年轻人退出与躺平",
@@ -1507,6 +1529,17 @@
       "type": "model",
       "route": "models/principal-agent",
       "summary": "委托代理模型解释外部顾问或职业代理人的激励，未必与委托方长期价值一致。",
+      "status": null,
+      "degree": 12
+    },
+    {
+      "id": "model:stability-over-growth-trap",
+      "key": "stability-over-growth-trap",
+      "label": "稳定替代增长陷阱",
+      "fullLabel": "稳定替代增长陷阱",
+      "type": "model",
+      "route": "models/stability-over-growth-trap",
+      "summary": "当系统把稳定当作增长的替代品，短期秩序会被保住，长期造血、流动和创新却会被压低。",
       "status": null,
       "degree": 12
     },
@@ -1643,6 +1676,17 @@
       "degree": 12
     },
     {
+      "id": "episode:EP152",
+      "key": "EP152",
+      "label": "EP152",
+      "fullLabel": "EP152 · 出口欧盟规规矩矩，内销全是科技狠活！漳州杨梅双标背后的真相",
+      "type": "episode",
+      "route": "episodes/EP152",
+      "summary": "福建漳州杨梅泡药。骂商人和骂监管都不解决问题。第一层是为什么泡药。采摘期短，常温放一两天，冷链成本翻几倍，消费者又要便宜又要新鲜。违禁保鲜剂几块钱泡几百斤，损耗从50%降到5%。整条链系统性违规，人人装看不见。\n\n第二层是为什么管不住。监管要人，人要经费，经费最后摊进杨梅价格。监管追不上新添加剂，只能选择性执法。治理跑偏就在这儿，迷信事前管制，放弃事后追责。出口欧盟规规矩矩，因为事后索赔没人扛得起。",
+      "status": "curated",
+      "degree": 12
+    },
+    {
       "id": "episode:EP190",
       "key": "EP190",
       "label": "EP190",
@@ -1698,17 +1742,6 @@
       "degree": 11
     },
     {
-      "id": "theme:planned-systems-and-innovation",
-      "key": "planned-systems-and-innovation",
-      "label": "大计划体制与创新约束",
-      "fullLabel": "大计划体制与创新约束",
-      "type": "theme",
-      "route": "themes/planned-systems-and-innovation",
-      "summary": "讨论统一目标和强组织动员如何带来短期速度，又如何在长期压缩创新、纠错与自发能动性。",
-      "status": null,
-      "degree": 11
-    },
-    {
       "id": "theme:youth-dreams-and-safe-paths",
       "key": "youth-dreams-and-safe-paths",
       "label": "年轻人梦想与安全路径",
@@ -1749,17 +1782,6 @@
       "type": "theme",
       "route": "themes/data-cosmetics-and-false-prosperity",
       "summary": "讨论地方政府、企业与市场如何用账面数据制造景气感，却把真实风险继续藏在黑箱里。",
-      "status": null,
-      "degree": 11
-    },
-    {
-      "id": "model:stability-over-growth-trap",
-      "key": "stability-over-growth-trap",
-      "label": "稳定替代增长陷阱",
-      "fullLabel": "稳定替代增长陷阱",
-      "type": "model",
-      "route": "models/stability-over-growth-trap",
-      "summary": "当系统把稳定当作增长的替代品，短期秩序会被保住，长期造血、流动和创新却会被压低。",
       "status": null,
       "degree": 11
     },
@@ -1837,17 +1859,6 @@
       "type": "episode",
       "route": "episodes/EP125",
       "summary": "35.97 亿元的天价罚单落下，重点不只是哪家罚得最多。借七家外卖平台的不同处罚结果串出一条链。链上是食品安全、平台权力、转单黑产和层层转包。拼多多被顶格重罚，不只因为问题店铺或交易额。它既主动与转单平台深度合作，又出现阻挠执法的行为。整个行业真正可怕的地方，是消费者支付的高价被层层截留。平台、幽灵店铺和转单系统各拿一道，最后真正做货的黑作坊只拿到极低成本。食品安全和履约风险一路向末端下沉。",
-      "status": "curated",
-      "degree": 11
-    },
-    {
-      "id": "episode:EP152",
-      "key": "EP152",
-      "label": "EP152",
-      "fullLabel": "EP152 · 出口欧盟规规矩矩，内销全是科技狠活！漳州杨梅双标背后的真相",
-      "type": "episode",
-      "route": "episodes/EP152",
-      "summary": "福建漳州杨梅泡药。骂商人和骂监管都不解决问题。第一层是为什么泡药。采摘期短，常温放一两天，冷链成本翻几倍，消费者又要便宜又要新鲜。违禁保鲜剂几块钱泡几百斤，损耗从50%降到5%。整条链系统性违规，人人装看不见。\n\n第二层是为什么管不住。监管要人，人要经费，经费最后摊进杨梅价格。监管追不上新添加剂，只能选择性执法。治理跑偏就在这儿，迷信事前管制，放弃事后追责。出口欧盟规规矩矩，因为事后索赔没人扛得起。",
       "status": "curated",
       "degree": 11
     },
@@ -3172,6 +3183,17 @@
       "degree": 7
     },
     {
+      "id": "model:regulatory-cost-arbitrage",
+      "key": "regulatory-cost-arbitrage",
+      "label": "合规成本套利模型",
+      "fullLabel": "合规成本套利模型",
+      "type": "model",
+      "route": "models/regulatory-cost-arbitrage",
+      "summary": "当同一市场存在多条监管路径，低合规成本路径会获得更高试错频率和更强替代能力。",
+      "status": null,
+      "degree": 7
+    },
+    {
       "id": "model:succession-governance",
       "key": "succession-governance",
       "label": "继承治理模型",
@@ -3491,6 +3513,17 @@
       "degree": 6
     },
     {
+      "id": "concept:property-boundary-literacy",
+      "key": "property-boundary-literacy",
+      "label": "产权意识",
+      "fullLabel": "产权意识",
+      "type": "concept",
+      "route": "concepts/property-boundary-literacy",
+      "summary": "产权意识指能够清晰区分公共场所与私人商业场所，并据此判断谁有权定规则、什么时候规则可以被挑战。",
+      "status": null,
+      "degree": 6
+    },
+    {
       "id": "theme:bullshit-politics-and-historical-narratives",
       "key": "bullshit-politics-and-historical-narratives",
       "label": "扯淡政治与历史叙事",
@@ -3601,13 +3634,13 @@
       "degree": 6
     },
     {
-      "id": "model:regulatory-cost-arbitrage",
-      "key": "regulatory-cost-arbitrage",
-      "label": "合规成本套利模型",
-      "fullLabel": "合规成本套利模型",
-      "type": "model",
-      "route": "models/regulatory-cost-arbitrage",
-      "summary": "当同一市场存在多条监管路径，低合规成本路径会获得更高试错频率和更强替代能力。",
+      "id": "concept:compliance-floor",
+      "key": "compliance-floor",
+      "label": "合规及格线",
+      "fullLabel": "合规及格线",
+      "type": "concept",
+      "route": "concepts/compliance-floor",
+      "summary": "合规只是法律强制的最低底线，不等于优质；当消费者为更高品质付溢价，仅做到合规就是变相缩水。",
       "status": null,
       "degree": 6
     },
@@ -3784,6 +3817,17 @@
       "type": "concept",
       "route": "concepts/shadow-fleet",
       "summary": "影子舰队是绕开西方保险、认证、定位和船东透明规则的平行航运网络。",
+      "status": null,
+      "degree": 6
+    },
+    {
+      "id": "theme:war-system-and-succession-risk",
+      "key": "war-system-and-succession-risk",
+      "label": "战争体制与接班风险",
+      "fullLabel": "战争体制与接班风险",
+      "type": "theme",
+      "route": "themes/war-system-and-succession-risk",
+      "summary": "讨论战争国家在长期高压运转下，如何同时面临兵员枯竭、内部老化与接班断层。",
       "status": null,
       "degree": 6
     },
@@ -4041,6 +4085,17 @@
       "degree": 6
     },
     {
+      "id": "model:boundary-governance",
+      "key": "boundary-governance",
+      "label": "边界治理模型",
+      "fullLabel": "边界治理模型",
+      "type": "model",
+      "route": "models/boundary-governance",
+      "summary": "边界治理模型主张在不适、争议和明确伤害之间，先界定边界而非急于二分善恶。",
+      "status": null,
+      "degree": 5
+    },
+    {
       "id": "model:subsidized-adoption-flywheel",
       "key": "subsidized-adoption-flywheel",
       "label": "补贴驱动采纳飞轮",
@@ -4063,13 +4118,13 @@
       "degree": 5
     },
     {
-      "id": "concept:property-boundary-literacy",
-      "key": "property-boundary-literacy",
-      "label": "产权意识",
-      "fullLabel": "产权意识",
-      "type": "concept",
-      "route": "concepts/property-boundary-literacy",
-      "summary": "产权意识指能够清晰区分公共场所与私人商业场所，并据此判断谁有权定规则、什么时候规则可以被挑战。",
+      "id": "model:property-defined-rule-domain",
+      "key": "property-defined-rule-domain",
+      "label": "产权定规则",
+      "fullLabel": "产权定规则",
+      "type": "model",
+      "route": "models/property-defined-rule-domain",
+      "summary": "说的是：一个空间里谁有权定规则、规则的合法范围在哪里、不接受规则的正确退出路径，都由这个空间的产权归属决定。",
       "status": null,
       "degree": 5
     },
@@ -4081,6 +4136,39 @@
       "type": "theme",
       "route": "themes/founder-power-and-feedback",
       "summary": "讨论强创始人结构如何影响组织内部的信息流动与纠偏能力。",
+      "status": null,
+      "degree": 5
+    },
+    {
+      "id": "concept:planning-lockin",
+      "key": "planning-lockin",
+      "label": "大计划锁定",
+      "fullLabel": "大计划锁定",
+      "type": "concept",
+      "route": "concepts/planning-lockin",
+      "summary": "宏大目标一旦锁定资源和判断，分散试错与旁路探索就会被压缩。",
+      "status": null,
+      "degree": 5
+    },
+    {
+      "id": "concept:moral-interpretive-authority",
+      "key": "moral-interpretive-authority",
+      "label": "道德解释权",
+      "fullLabel": "道德解释权",
+      "type": "concept",
+      "route": "concepts/moral-interpretive-authority",
+      "summary": "一个群体自认有资格替他人和外部事物定义意义、判定对错，把别人收编进自己的叙事里。",
+      "status": null,
+      "degree": 5
+    },
+    {
+      "id": "concept:moral-capital",
+      "key": "moral-capital",
+      "label": "道德资本",
+      "fullLabel": "道德资本",
+      "type": "concept",
+      "route": "concepts/moral-capital",
+      "summary": "长期为他人承担和创造价值，会形成一种不能即时折现却能改变公共评价的道德资本。",
       "status": null,
       "degree": 5
     },
@@ -4103,6 +4191,17 @@
       "type": "concept",
       "route": "concepts/legal-grey-zone",
       "summary": "事实、责任和伤害都不够清晰，却必须被社会和制度处理的边界地带。",
+      "status": null,
+      "degree": 5
+    },
+    {
+      "id": "concept:distributed-war-industry",
+      "key": "distributed-war-industry",
+      "label": "分布式战时工业",
+      "fullLabel": "分布式战时工业",
+      "type": "concept",
+      "route": "concepts/distributed-war-industry",
+      "summary": "战时生产越能分散到多主体、多地点和快速反馈链条里，越不容易被固定打击瘫痪。",
       "status": null,
       "degree": 5
     },
@@ -4147,17 +4246,6 @@
       "type": "model",
       "route": "models/human-contract-model",
       "summary": "国家信用契约模型解释国家对个体生命的兜底能力如何转化为长期制度信用。",
-      "status": null,
-      "degree": 5
-    },
-    {
-      "id": "concept:compliance-floor",
-      "key": "compliance-floor",
-      "label": "合规及格线",
-      "fullLabel": "合规及格线",
-      "type": "concept",
-      "route": "concepts/compliance-floor",
-      "summary": "合规只是法律强制的最低底线，不等于优质；当消费者为更高品质付溢价，仅做到合规就是变相缩水。",
       "status": null,
       "degree": 5
     },
@@ -4283,6 +4371,17 @@
       "degree": 5
     },
     {
+      "id": "concept:production-risk-outsourcing",
+      "key": "production-risk-outsourcing",
+      "label": "生产端风险外包",
+      "fullLabel": "生产端风险外包",
+      "type": "concept",
+      "route": "concepts/production-risk-outsourcing",
+      "summary": "平台和中间层把库存、投流、合规和现金流风险持续压给生产端。",
+      "status": null,
+      "degree": 5
+    },
+    {
       "id": "theme:authoritarian-succession-and-state-fragility",
       "key": "authoritarian-succession-and-state-fragility",
       "label": "威权继承与国家裂缝",
@@ -4356,17 +4455,6 @@
       "type": "concept",
       "route": "concepts/strategic-depth-inversion",
       "summary": "长航程无人系统让传统纵深从缓冲优势变成固定资产暴露和防护成本。",
-      "status": null,
-      "degree": 5
-    },
-    {
-      "id": "theme:war-system-and-succession-risk",
-      "key": "war-system-and-succession-risk",
-      "label": "战争体制与接班风险",
-      "fullLabel": "战争体制与接班风险",
-      "type": "theme",
-      "route": "themes/war-system-and-succession-risk",
-      "summary": "讨论战争国家在长期高压运转下，如何同时面临兵员枯竭、内部老化与接班断层。",
       "status": null,
       "degree": 5
     },
@@ -4646,17 +4734,6 @@
       "degree": 4
     },
     {
-      "id": "model:boundary-governance",
-      "key": "boundary-governance",
-      "label": "边界治理模型",
-      "fullLabel": "边界治理模型",
-      "type": "model",
-      "route": "models/boundary-governance",
-      "summary": "边界治理模型主张在不适、争议和明确伤害之间，先界定边界而非急于二分善恶。",
-      "status": null,
-      "degree": 4
-    },
-    {
       "id": "concept:wealth-spillover-hub",
       "key": "wealth-spillover-hub",
       "label": "财富溢出集散地",
@@ -4664,17 +4741,6 @@
       "type": "concept",
       "route": "concepts/wealth-spillover-hub",
       "summary": "一个金融节点的繁荣不是因为全球资本看好它，而是因为它恰好承接了某个大经济体溢出和回流的钱。",
-      "status": null,
-      "degree": 4
-    },
-    {
-      "id": "model:property-defined-rule-domain",
-      "key": "property-defined-rule-domain",
-      "label": "产权定规则",
-      "fullLabel": "产权定规则",
-      "type": "model",
-      "route": "models/property-defined-rule-domain",
-      "summary": "说的是：一个空间里谁有权定规则、规则的合法范围在哪里、不接受规则的正确退出路径，都由这个空间的产权归属决定。",
       "status": null,
       "degree": 4
     },
@@ -4690,35 +4756,13 @@
       "degree": 4
     },
     {
-      "id": "concept:planning-lockin",
-      "key": "planning-lockin",
-      "label": "大计划锁定",
-      "fullLabel": "大计划锁定",
+      "id": "concept:danwei-revival",
+      "key": "danwei-revival",
+      "label": "单位制回潮",
+      "fullLabel": "单位制回潮",
       "type": "concept",
-      "route": "concepts/planning-lockin",
-      "summary": "宏大目标一旦锁定资源和判断，分散试错与旁路探索就会被压缩。",
-      "status": null,
-      "degree": 4
-    },
-    {
-      "id": "concept:moral-interpretive-authority",
-      "key": "moral-interpretive-authority",
-      "label": "道德解释权",
-      "fullLabel": "道德解释权",
-      "type": "concept",
-      "route": "concepts/moral-interpretive-authority",
-      "summary": "一个群体自认有资格替他人和外部事物定义意义、判定对错，把别人收编进自己的叙事里。",
-      "status": null,
-      "degree": 4
-    },
-    {
-      "id": "concept:moral-capital",
-      "key": "moral-capital",
-      "label": "道德资本",
-      "fullLabel": "道德资本",
-      "type": "concept",
-      "route": "concepts/moral-capital",
-      "summary": "长期为他人承担和创造价值，会形成一种不能即时折现却能改变公共评价的道德资本。",
+      "route": "concepts/danwei-revival",
+      "summary": "法律失灵的场合里，单位重新成为约束公职人员的最有效抓手，也重新成为护着自己人的保护壳。",
       "status": null,
       "degree": 4
     },
@@ -4752,17 +4796,6 @@
       "type": "model",
       "route": "models/non-monetary-legacy",
       "summary": "非货币遗产强调一个人留下的价值，可能是持续改变了多少人的人生轨迹。",
-      "status": null,
-      "degree": 4
-    },
-    {
-      "id": "concept:distributed-war-industry",
-      "key": "distributed-war-industry",
-      "label": "分布式战时工业",
-      "fullLabel": "分布式战时工业",
-      "type": "concept",
-      "route": "concepts/distributed-war-industry",
-      "summary": "战时生产越能分散到多主体、多地点和快速反馈链条里，越不容易被固定打击瘫痪。",
       "status": null,
       "degree": 4
     },
@@ -4932,17 +4965,6 @@
       "degree": 4
     },
     {
-      "id": "concept:production-risk-outsourcing",
-      "key": "production-risk-outsourcing",
-      "label": "生产端风险外包",
-      "fullLabel": "生产端风险外包",
-      "type": "concept",
-      "route": "concepts/production-risk-outsourcing",
-      "summary": "平台和中间层把库存、投流、合规和现金流风险持续压给生产端。",
-      "status": null,
-      "degree": 4
-    },
-    {
       "id": "concept:honest-player-exit",
       "key": "honest-player-exit",
       "label": "守规者出局",
@@ -4983,6 +5005,28 @@
       "type": "model",
       "route": "models/crisis-selection",
       "summary": "危机筛选解释危机如何把旧中心筛下去，并把边缘角色推向前台。",
+      "status": null,
+      "degree": 4
+    },
+    {
+      "id": "theme:crisis-era-power-reallocation",
+      "key": "crisis-era-power-reallocation",
+      "label": "危机时代的权力重排",
+      "fullLabel": "危机时代的权力重排",
+      "type": "theme",
+      "route": "themes/crisis-era-power-reallocation",
+      "summary": "危机不是简单让所有人一起变弱，而是重新决定谁上前台、谁退到幕后。",
+      "status": null,
+      "degree": 4
+    },
+    {
+      "id": "concept:crisis-power-reallocation",
+      "key": "crisis-power-reallocation",
+      "label": "危机中的权力重排",
+      "fullLabel": "危机中的权力重排",
+      "type": "concept",
+      "route": "concepts/crisis-power-reallocation",
+      "summary": "危机会改变谁在前台、谁承担责任、谁保留资源，从而触发权力位置的重新排序。",
       "status": null,
       "degree": 4
     },
@@ -5295,17 +5339,6 @@
       "degree": 3
     },
     {
-      "id": "concept:danwei-revival",
-      "key": "danwei-revival",
-      "label": "单位制回潮",
-      "fullLabel": "单位制回潮",
-      "type": "concept",
-      "route": "concepts/danwei-revival",
-      "summary": "法律失灵的场合里，单位重新成为约束公职人员的最有效抓手，也重新成为护着自己人的保护壳。",
-      "status": null,
-      "degree": 3
-    },
-    {
       "id": "model:first-principle-thinking",
       "key": "first-principle-thinking",
       "label": "第一性原理决策模型",
@@ -5427,6 +5460,17 @@
       "degree": 3
     },
     {
+      "id": "model:centralized-control-backfire",
+      "key": "centralized-control-backfire",
+      "label": "集中控制反噬",
+      "fullLabel": "集中控制反噬",
+      "type": "model",
+      "route": "models/centralized-control-backfire",
+      "summary": "集中控制把监管便利和低成本做出来，也会把失效点集中到同一个中心节点上。",
+      "status": null,
+      "degree": 3
+    },
+    {
       "id": "concept:inheritance-supply-shock",
       "key": "inheritance-supply-shock",
       "label": "继承供给冲击",
@@ -5489,6 +5533,17 @@
       "type": "concept",
       "route": "concepts/downgrade-equality",
       "summary": "用整体降标换取覆盖面和成本控制时，公平可能变成低标准统一。",
+      "status": null,
+      "degree": 3
+    },
+    {
+      "id": "concept:succession-vacuum",
+      "key": "succession-vacuum",
+      "label": "接班人真空",
+      "fullLabel": "接班人真空",
+      "type": "concept",
+      "route": "concepts/succession-vacuum",
+      "summary": "强人统治越久，越难允许真正二号人物成长，交棒时就越容易出现接班人真空。",
       "status": null,
       "degree": 3
     },
@@ -5724,28 +5779,6 @@
       "degree": 3
     },
     {
-      "id": "theme:crisis-era-power-reallocation",
-      "key": "crisis-era-power-reallocation",
-      "label": "危机时代的权力重排",
-      "fullLabel": "危机时代的权力重排",
-      "type": "theme",
-      "route": "themes/crisis-era-power-reallocation",
-      "summary": "危机不是简单让所有人一起变弱，而是重新决定谁上前台、谁退到幕后。",
-      "status": null,
-      "degree": 3
-    },
-    {
-      "id": "concept:crisis-power-reallocation",
-      "key": "crisis-power-reallocation",
-      "label": "危机中的权力重排",
-      "fullLabel": "危机中的权力重排",
-      "type": "concept",
-      "route": "concepts/crisis-power-reallocation",
-      "summary": "危机会改变谁在前台、谁承担责任、谁保留资源，从而触发权力位置的重新排序。",
-      "status": null,
-      "degree": 3
-    },
-    {
       "id": "concept:pseudo-confidence",
       "key": "pseudo-confidence",
       "label": "伪自信",
@@ -5790,6 +5823,17 @@
       "degree": 3
     },
     {
+      "id": "concept:system-fallback",
+      "key": "system-fallback",
+      "label": "系统兜底",
+      "fullLabel": "系统兜底",
+      "type": "concept",
+      "route": "concepts/system-fallback",
+      "summary": "复杂系统不能只靠一个大脑或一层控制，必须在异常状态下保留可执行的多层接管和降级能力。",
+      "status": null,
+      "degree": 3
+    },
+    {
       "id": "concept:system-rollback",
       "key": "system-rollback",
       "label": "系统回滚",
@@ -5819,6 +5863,17 @@
       "type": "concept",
       "route": "concepts/information-edge",
       "summary": "投资真正的优势来自别人没有的确定信息，而不是公开可见的故事和情绪。",
+      "status": null,
+      "degree": 3
+    },
+    {
+      "id": "concept:licensed-ownership",
+      "key": "licensed-ownership",
+      "label": "许可式所有权",
+      "fullLabel": "许可式所有权",
+      "type": "concept",
+      "route": "concepts/licensed-ownership",
+      "summary": "付的是买断价，拿到的却是一份能被远程收回的使用许可，一部分处置权始终留在卖方手里。",
       "status": null,
       "degree": 3
     },
@@ -5955,6 +6010,17 @@
       "degree": 3
     },
     {
+      "id": "concept:rule-gaming-backfire",
+      "key": "rule-gaming-backfire",
+      "label": "钻规则反噬",
+      "fullLabel": "钻规则反噬",
+      "type": "concept",
+      "route": "concepts/rule-gaming-backfire",
+      "summary": "靠钻规则空子或动用特权改规则获取短期收益，最终赔上信任、口碑和长期竞争力的现象。",
+      "status": null,
+      "degree": 3
+    },
+    {
       "id": "episode:EP017",
       "key": "EP017",
       "label": "EP017",
@@ -6072,6 +6138,17 @@
       "type": "model",
       "route": "models/job-elimination-spiral",
       "summary": "裁员死亡螺旋解释当资本市场奖励消灭就业时，企业会陷入比谁裁得更快的竞赛，裁员压低消费、消费萎缩又触发下一轮裁员，形成越裁越穷的自我强化循环。",
+      "status": null,
+      "degree": 2
+    },
+    {
+      "id": "theme:property-rights-and-cultural-plunder",
+      "key": "property-rights-and-cultural-plunder",
+      "label": "产权失序与文化掠夺",
+      "fullLabel": "产权失序与文化掠夺",
+      "type": "theme",
+      "route": "themes/property-rights-and-cultural-plunder",
+      "summary": "讨论当产权边界被模糊、托管责任被滥用时，文化资产如何从传承物变成可被随意处置的对象。",
       "status": null,
       "degree": 2
     },
@@ -6329,17 +6406,6 @@
       "degree": 2
     },
     {
-      "id": "model:centralized-control-backfire",
-      "key": "centralized-control-backfire",
-      "label": "集中控制反噬",
-      "fullLabel": "集中控制反噬",
-      "type": "model",
-      "route": "models/centralized-control-backfire",
-      "summary": "集中控制把监管便利和低成本做出来，也会把失效点集中到同一个中心节点上。",
-      "status": null,
-      "degree": 2
-    },
-    {
       "id": "concept:envy-driven-smear",
       "key": "envy-driven-smear",
       "label": "嫉妒驱动的污名化",
@@ -6358,17 +6424,6 @@
       "type": "theme",
       "route": "themes/family-control-and-aesthetic-decline",
       "summary": "讨论催婚、控制欲和审美贫瘠如何一起把人的选择压回更封闭、更粗糙的状态。",
-      "status": null,
-      "degree": 2
-    },
-    {
-      "id": "concept:succession-vacuum",
-      "key": "succession-vacuum",
-      "label": "接班人真空",
-      "fullLabel": "接班人真空",
-      "type": "concept",
-      "route": "concepts/succession-vacuum",
-      "summary": "强人统治越久，越难允许真正二号人物成长，交棒时就越容易出现接班人真空。",
       "status": null,
       "degree": 2
     },
@@ -6512,6 +6567,17 @@
       "type": "concept",
       "route": "concepts/upfront-rent-extraction",
       "summary": "平台或技术方在合作方见到利润之前，先按销量刚性抽走硬件款、授权费和渠道费——收益挂销量、与对方盈亏彻底脱钩。",
+      "status": null,
+      "degree": 2
+    },
+    {
+      "id": "concept:youth-mobilization",
+      "key": "youth-mobilization",
+      "label": "青年动员",
+      "fullLabel": "青年动员",
+      "type": "concept",
+      "route": "concepts/youth-mobilization",
+      "summary": "年轻选民从缺席变成集中出场，长期执政者赖以维持的年龄结构就会塌掉；决定选举的往往不是谁在台上站台，是谁肯出门。",
       "status": null,
       "degree": 2
     },
@@ -6670,17 +6736,6 @@
       "degree": 2
     },
     {
-      "id": "concept:system-fallback",
-      "key": "system-fallback",
-      "label": "系统兜底",
-      "fullLabel": "系统兜底",
-      "type": "concept",
-      "route": "concepts/system-fallback",
-      "summary": "复杂系统不能只靠一个大脑或一层控制，必须在异常状态下保留可执行的多层接管和降级能力。",
-      "status": null,
-      "degree": 2
-    },
-    {
       "id": "person:xiao-hong",
       "key": "xiao-hong",
       "label": "肖弘",
@@ -6732,17 +6787,6 @@
       "type": "person",
       "route": "people/xu-jiayin",
       "summary": "许家印是中国恒大集团创办人、原董事会主席，节目借他观察地产高杠杆、一言堂治理和财富保全工具被穿透。",
-      "status": null,
-      "degree": 2
-    },
-    {
-      "id": "concept:licensed-ownership",
-      "key": "licensed-ownership",
-      "label": "许可式所有权",
-      "fullLabel": "许可式所有权",
-      "type": "concept",
-      "route": "concepts/licensed-ownership",
-      "summary": "付的是买断价，拿到的却是一份能被远程收回的使用许可，一部分处置权始终留在卖方手里。",
       "status": null,
       "degree": 2
     },
@@ -6824,17 +6868,6 @@
       "degree": 2
     },
     {
-      "id": "concept:rule-gaming-backfire",
-      "key": "rule-gaming-backfire",
-      "label": "钻规则反噬",
-      "fullLabel": "钻规则反噬",
-      "type": "concept",
-      "route": "concepts/rule-gaming-backfire",
-      "summary": "靠钻规则空子或动用特权改规则获取短期收益，最终赔上信任、口碑和长期竞争力的现象。",
-      "status": null,
-      "degree": 2
-    },
-    {
       "id": "concept:ai-terminal-guidance",
       "key": "ai-terminal-guidance",
       "label": "AI末端制导",
@@ -6897,17 +6930,6 @@
       "type": "concept",
       "route": "concepts/table-order-shift",
       "summary": "餐桌上谁决定喝什么的变化，反映消费权力、性别关系和社交礼仪的秩序转移。",
-      "status": null,
-      "degree": 1
-    },
-    {
-      "id": "theme:property-rights-and-cultural-plunder",
-      "key": "property-rights-and-cultural-plunder",
-      "label": "产权失序与文化掠夺",
-      "fullLabel": "产权失序与文化掠夺",
-      "type": "theme",
-      "route": "themes/property-rights-and-cultural-plunder",
-      "summary": "讨论当产权边界被模糊、托管责任被滥用时，文化资产如何从传承物变成可被随意处置的对象。",
       "status": null,
       "degree": 1
     },
@@ -7480,17 +7502,6 @@
       "type": "concept",
       "route": "concepts/prepaid-levy",
       "summary": "前置征缴指税费按设立时约定的标准先足额收走，不等实际收益兑现，多退少补是以后的事。",
-      "status": null,
-      "degree": 1
-    },
-    {
-      "id": "concept:youth-mobilization",
-      "key": "youth-mobilization",
-      "label": "青年动员",
-      "fullLabel": "青年动员",
-      "type": "concept",
-      "route": "concepts/youth-mobilization",
-      "summary": "年轻选民从缺席变成集中出场，长期执政者赖以维持的年龄结构就会塌掉；决定选举的往往不是谁在台上站台，是谁肯出门。",
       "status": null,
       "degree": 1
     },
@@ -22353,6 +22364,146 @@
     {
       "source": "live:LIVE039",
       "target": "theme:maritime-chokepoints-and-route-order",
+      "kind": "live-theme"
+    },
+    {
+      "source": "live:LIVE040",
+      "target": "episode:EP123",
+      "kind": "live-episode"
+    },
+    {
+      "source": "live:LIVE040",
+      "target": "episode:EP152",
+      "kind": "live-episode"
+    },
+    {
+      "source": "live:LIVE040",
+      "target": "episode:EP165",
+      "kind": "live-episode"
+    },
+    {
+      "source": "live:LIVE040",
+      "target": "episode:EP184",
+      "kind": "live-episode"
+    },
+    {
+      "source": "live:LIVE040",
+      "target": "concept:crisis-power-reallocation",
+      "kind": "live-concept"
+    },
+    {
+      "source": "live:LIVE040",
+      "target": "concept:distributed-war-industry",
+      "kind": "live-concept"
+    },
+    {
+      "source": "live:LIVE040",
+      "target": "concept:youth-mobilization",
+      "kind": "live-concept"
+    },
+    {
+      "source": "live:LIVE040",
+      "target": "concept:licensed-ownership",
+      "kind": "live-concept"
+    },
+    {
+      "source": "live:LIVE040",
+      "target": "concept:danwei-revival",
+      "kind": "live-concept"
+    },
+    {
+      "source": "live:LIVE040",
+      "target": "concept:moral-interpretive-authority",
+      "kind": "live-concept"
+    },
+    {
+      "source": "live:LIVE040",
+      "target": "concept:planning-lockin",
+      "kind": "live-concept"
+    },
+    {
+      "source": "live:LIVE040",
+      "target": "concept:moral-capital",
+      "kind": "live-concept"
+    },
+    {
+      "source": "live:LIVE040",
+      "target": "concept:system-fallback",
+      "kind": "live-concept"
+    },
+    {
+      "source": "live:LIVE040",
+      "target": "concept:property-boundary-literacy",
+      "kind": "live-concept"
+    },
+    {
+      "source": "live:LIVE040",
+      "target": "concept:succession-vacuum",
+      "kind": "live-concept"
+    },
+    {
+      "source": "live:LIVE040",
+      "target": "concept:compliance-floor",
+      "kind": "live-concept"
+    },
+    {
+      "source": "live:LIVE040",
+      "target": "concept:rule-gaming-backfire",
+      "kind": "live-concept"
+    },
+    {
+      "source": "live:LIVE040",
+      "target": "concept:production-risk-outsourcing",
+      "kind": "live-concept"
+    },
+    {
+      "source": "live:LIVE040",
+      "target": "model:boundary-governance",
+      "kind": "live-model"
+    },
+    {
+      "source": "live:LIVE040",
+      "target": "model:stability-over-growth-trap",
+      "kind": "live-model"
+    },
+    {
+      "source": "live:LIVE040",
+      "target": "model:centralized-control-backfire",
+      "kind": "live-model"
+    },
+    {
+      "source": "live:LIVE040",
+      "target": "model:property-defined-rule-domain",
+      "kind": "live-model"
+    },
+    {
+      "source": "live:LIVE040",
+      "target": "model:regulatory-cost-arbitrage",
+      "kind": "live-model"
+    },
+    {
+      "source": "live:LIVE040",
+      "target": "theme:war-system-and-succession-risk",
+      "kind": "live-theme"
+    },
+    {
+      "source": "live:LIVE040",
+      "target": "theme:planned-systems-and-innovation",
+      "kind": "live-theme"
+    },
+    {
+      "source": "live:LIVE040",
+      "target": "theme:property-rights-and-cultural-plunder",
+      "kind": "live-theme"
+    },
+    {
+      "source": "live:LIVE040",
+      "target": "theme:crisis-era-power-reallocation",
+      "kind": "live-theme"
+    },
+    {
+      "source": "live:LIVE040",
+      "target": "theme:rule-of-law-boundaries-and-social-trust",
       "kind": "live-theme"
     },
     {
