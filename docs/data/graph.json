@@ -2,14 +2,14 @@
   "meta": {
     "title": "颖响力知识图谱",
     "subtitle": "节目、概念、模型、人物、主题之间的可视化连接网络",
-    "nodeCount": 725,
-    "linkCount": 2951,
+    "nodeCount": 727,
+    "linkCount": 2962,
     "typeCounts": {
       "model": 83,
       "live": 40,
       "theme": 92,
-      "episode": 209,
-      "concept": 236,
+      "episode": 210,
+      "concept": 237,
       "person": 65
     }
   },
@@ -23,7 +23,7 @@
       "route": "models/risk-transfer-chain",
       "summary": "系统不会立刻吞下风险，而是先沿着银行、企业、票据、供应链和普通人之间不断转手、延后和下沉。",
       "status": null,
-      "degree": 53
+      "degree": 54
     },
     {
       "id": "live:LIVE002",
@@ -540,7 +540,7 @@
       "route": "concepts/cost-shifting",
       "summary": "组织内部的高额非生产性成本，最终会通过价格、规则或风险转嫁给外部承担者。",
       "status": null,
-      "degree": 23
+      "degree": 24
     },
     {
       "id": "model:path-dependence",
@@ -1357,6 +1357,17 @@
       "degree": 13
     },
     {
+      "id": "model:principal-agent",
+      "key": "principal-agent",
+      "label": "委托代理问题",
+      "fullLabel": "委托代理问题",
+      "type": "model",
+      "route": "models/principal-agent",
+      "summary": "委托代理模型解释外部顾问或职业代理人的激励，未必与委托方长期价值一致。",
+      "status": null,
+      "degree": 13
+    },
+    {
       "id": "theme:ev-collapse-and-exit-risk",
       "key": "ev-collapse-and-exit-risk",
       "label": "新能源崩塌与退出风险",
@@ -1518,17 +1529,6 @@
       "type": "theme",
       "route": "themes/youth-withdrawal-and-lying-flat",
       "summary": "讨论年轻人在主流机会、劳动回报和身份路径收缩后，如何通过低欲望、退出和躺平保留有限主体性。",
-      "status": null,
-      "degree": 12
-    },
-    {
-      "id": "model:principal-agent",
-      "key": "principal-agent",
-      "label": "委托代理问题",
-      "fullLabel": "委托代理问题",
-      "type": "model",
-      "route": "models/principal-agent",
-      "summary": "委托代理模型解释外部顾问或职业代理人的激励，未必与委托方长期价值一致。",
       "status": null,
       "degree": 12
     },
@@ -1742,6 +1742,17 @@
       "degree": 11
     },
     {
+      "id": "concept:price-war-trap",
+      "key": "price-war-trap",
+      "label": "低价竞争陷阱",
+      "fullLabel": "低价竞争陷阱",
+      "type": "concept",
+      "route": "concepts/price-war-trap",
+      "summary": "极致低价可以快速突袭，却可能在长期竞争中压缩技术升级、利润和战略空间。",
+      "status": null,
+      "degree": 11
+    },
+    {
       "id": "theme:youth-dreams-and-safe-paths",
       "key": "youth-dreams-and-safe-paths",
       "label": "年轻人梦想与安全路径",
@@ -1918,6 +1929,17 @@
       "degree": 11
     },
     {
+      "id": "episode:EP210",
+      "key": "EP210",
+      "label": "EP210",
+      "fullLabel": "EP210 · 比外包内卷更可怕的，是我们正被世界淘汰！China GT起火事故背后的三重困境",
+      "type": "episode",
+      "route": "episodes/EP210",
+      "summary": "9 月 5 日 China GT 上海站 GT3 组正赛第七圈出了事故。两辆赛车冲出赛道，撞上 91 号法拉利的油箱侧面，车瞬间起火。把被困的英国车手拖出来的是停车赶来的荷兰车手，49 秒里现场只有他一个人在救。赛事的钱花在明星、冠名和流量上，救援据说层层外包，一线的人一天拿六十块。行业越卷越压成本，专业、责任和安全底线跟着被挤掉。拿钱就能摆平一切的习惯，放到把安全当硬底线的国际同行面前，会被直接判不合格。",
+      "status": "curated",
+      "degree": 11
+    },
+    {
       "id": "concept:subsidy-leverage-engine",
       "key": "subsidy-leverage-engine",
       "label": "补贴杠杆引擎",
@@ -1925,17 +1947,6 @@
       "type": "concept",
       "route": "concepts/subsidy-leverage-engine",
       "summary": "财政补贴被当成种子资金，撬动基金、估值、招商和社会资本，形成杠杆引擎。",
-      "status": null,
-      "degree": 10
-    },
-    {
-      "id": "concept:price-war-trap",
-      "key": "price-war-trap",
-      "label": "低价竞争陷阱",
-      "fullLabel": "低价竞争陷阱",
-      "type": "concept",
-      "route": "concepts/price-war-trap",
-      "summary": "极致低价可以快速突袭，却可能在长期竞争中压缩技术升级、利润和战略空间。",
       "status": null,
       "degree": 10
     },
@@ -1980,6 +1991,17 @@
       "type": "model",
       "route": "models/regional-denial-model",
       "summary": "真正有效的区域拒止，不是无上限扩张，而是把对手压在若干区域里，阻止其形成全球联动能力。",
+      "status": null,
+      "degree": 10
+    },
+    {
+      "id": "theme:human-value-and-state-credit",
+      "key": "human-value-and-state-credit",
+      "label": "人的价值与国家信用",
+      "fullLabel": "人的价值与国家信用",
+      "type": "theme",
+      "route": "themes/human-value-and-state-credit",
+      "summary": "讨论国家究竟把个体视为成本、工具，还是视为必须兑现承诺的对象。",
       "status": null,
       "degree": 10
     },
@@ -2237,17 +2259,6 @@
       "degree": 9
     },
     {
-      "id": "theme:human-value-and-state-credit",
-      "key": "human-value-and-state-credit",
-      "label": "人的价值与国家信用",
-      "fullLabel": "人的价值与国家信用",
-      "type": "theme",
-      "route": "themes/human-value-and-state-credit",
-      "summary": "讨论国家究竟把个体视为成本、工具，还是视为必须兑现承诺的对象。",
-      "status": null,
-      "degree": 9
-    },
-    {
       "id": "model:screening-machine",
       "key": "screening-machine",
       "label": "筛选机器模型",
@@ -2310,6 +2321,17 @@
       "type": "theme",
       "route": "themes/new-media-political-mobilization",
       "summary": "候选人和政治叙事不再必须依附旧媒体，而可以直接通过新媒体组织情绪、认同和支持。",
+      "status": null,
+      "degree": 9
+    },
+    {
+      "id": "theme:ev-safety-and-consumer-testing",
+      "key": "ev-safety-and-consumer-testing",
+      "label": "新能源安全边界与消费者测试",
+      "fullLabel": "新能源安全边界与消费者测试",
+      "type": "theme",
+      "route": "themes/ev-safety-and-consumer-testing",
+      "summary": "讨论新能源车与相关电池系统如何把安全验证不足的代价，转移到真实用户和真实事故里。",
       "status": null,
       "degree": 9
     },
@@ -2754,17 +2776,6 @@
       "degree": 8
     },
     {
-      "id": "theme:ev-safety-and-consumer-testing",
-      "key": "ev-safety-and-consumer-testing",
-      "label": "新能源安全边界与消费者测试",
-      "fullLabel": "新能源安全边界与消费者测试",
-      "type": "theme",
-      "route": "themes/ev-safety-and-consumer-testing",
-      "summary": "讨论新能源车与相关电池系统如何把安全验证不足的代价，转移到真实用户和真实事故里。",
-      "status": null,
-      "degree": 8
-    },
-    {
       "id": "model:primary-market-logic",
       "key": "primary-market-logic",
       "label": "一级市场逻辑投二级市场",
@@ -3194,6 +3205,17 @@
       "degree": 7
     },
     {
+      "id": "concept:compliance-floor",
+      "key": "compliance-floor",
+      "label": "合规及格线",
+      "fullLabel": "合规及格线",
+      "type": "concept",
+      "route": "concepts/compliance-floor",
+      "summary": "合规只是法律强制的最低底线，不等于优质；当消费者为更高品质付溢价，仅做到合规就是变相缩水。",
+      "status": null,
+      "degree": 7
+    },
+    {
       "id": "model:succession-governance",
       "key": "succession-governance",
       "label": "继承治理模型",
@@ -3546,6 +3568,17 @@
       "degree": 6
     },
     {
+      "id": "theme:price-war-and-precision-competition",
+      "key": "price-war-and-precision-competition",
+      "label": "低价竞争与精准打击",
+      "fullLabel": "低价竞争与精准打击",
+      "type": "theme",
+      "route": "themes/price-war-and-precision-competition",
+      "summary": "讨论卷低价与做精准高价值打击之间的差别，以及两种竞争逻辑背后的阶层思维。",
+      "status": null,
+      "degree": 6
+    },
+    {
       "id": "model:distributed-warfare-system",
       "key": "distributed-warfare-system",
       "label": "分布式战争系统",
@@ -3630,17 +3663,6 @@
       "type": "concept",
       "route": "concepts/route-substitution-illusion",
       "summary": "新的港口、陆路或航线可以分流局部业务，但很难在短期内替代真正的世界级主通道。",
-      "status": null,
-      "degree": 6
-    },
-    {
-      "id": "concept:compliance-floor",
-      "key": "compliance-floor",
-      "label": "合规及格线",
-      "fullLabel": "合规及格线",
-      "type": "concept",
-      "route": "concepts/compliance-floor",
-      "summary": "合规只是法律强制的最低底线，不等于优质；当消费者为更高品质付溢价，仅做到合规就是变相缩水。",
       "status": null,
       "degree": 6
     },
@@ -4173,17 +4195,6 @@
       "degree": 5
     },
     {
-      "id": "theme:price-war-and-precision-competition",
-      "key": "price-war-and-precision-competition",
-      "label": "低价竞争与精准打击",
-      "fullLabel": "低价竞争与精准打击",
-      "type": "theme",
-      "route": "themes/price-war-and-precision-competition",
-      "summary": "讨论卷低价与做精准高价值打击之间的差别，以及两种竞争逻辑背后的阶层思维。",
-      "status": null,
-      "degree": 5
-    },
-    {
       "id": "concept:legal-grey-zone",
       "key": "legal-grey-zone",
       "label": "法律灰区",
@@ -4378,6 +4389,17 @@
       "type": "concept",
       "route": "concepts/production-risk-outsourcing",
       "summary": "平台和中间层把库存、投流、合规和现金流风险持续压给生产端。",
+      "status": null,
+      "degree": 5
+    },
+    {
+      "id": "concept:honest-player-exit",
+      "key": "honest-player-exit",
+      "label": "守规者出局",
+      "fullLabel": "守规者出局",
+      "type": "concept",
+      "route": "concepts/honest-player-exit",
+      "summary": "一个行业里守规矩的人先亏钱、先退出，留下来的人未必更坏，是被筛出来的那一批。",
       "status": null,
       "degree": 5
     },
@@ -4965,17 +4987,6 @@
       "degree": 4
     },
     {
-      "id": "concept:honest-player-exit",
-      "key": "honest-player-exit",
-      "label": "守规者出局",
-      "fullLabel": "守规者出局",
-      "type": "concept",
-      "route": "concepts/honest-player-exit",
-      "summary": "一个行业里守规矩的人先亏钱、先退出，留下来的人未必更坏，是被筛出来的那一批。",
-      "status": null,
-      "degree": 4
-    },
-    {
       "id": "concept:sample-production-gap",
       "key": "sample-production-gap",
       "label": "送检量产分裂",
@@ -5071,6 +5082,17 @@
       "type": "concept",
       "route": "concepts/cult-branding",
       "summary": "用户从购买者变成主动辩护、传播和站队的信众时，品牌就进入信众化阶段。",
+      "status": null,
+      "degree": 4
+    },
+    {
+      "id": "concept:blood-written-rules",
+      "key": "blood-written-rules",
+      "label": "血写的规则",
+      "fullLabel": "血写的规则",
+      "type": "concept",
+      "route": "concepts/blood-written-rules",
+      "summary": "习以为常的安全规范不是天生的官僚条文，而是灾难死亡换来的制度沉淀；忘掉来历，红线就会被当成可优化的成本。",
       "status": null,
       "degree": 4
     },
@@ -5885,17 +5907,6 @@
       "type": "concept",
       "route": "concepts/academic-shell-game",
       "summary": "学术头衔、行政位置和包装替代真实教学研究时，大学会出现知识空壳化。",
-      "status": null,
-      "degree": 3
-    },
-    {
-      "id": "concept:blood-written-rules",
-      "key": "blood-written-rules",
-      "label": "血写的规则",
-      "fullLabel": "血写的规则",
-      "type": "concept",
-      "route": "concepts/blood-written-rules",
-      "summary": "习以为常的安全规范不是天生的官僚条文，而是灾难死亡换来的制度沉淀；忘掉来历，红线就会被当成可优化的成本。",
       "status": null,
       "degree": 3
     },
@@ -6930,6 +6941,17 @@
       "type": "concept",
       "route": "concepts/table-order-shift",
       "summary": "餐桌上谁决定喝什么的变化，反映消费权力、性别关系和社交礼仪的秩序转移。",
+      "status": null,
+      "degree": 1
+    },
+    {
+      "id": "concept:layered-subcontracting",
+      "key": "layered-subcontracting",
+      "label": "层层转包",
+      "fullLabel": "层层转包",
+      "type": "concept",
+      "route": "concepts/layered-subcontracting",
+      "summary": "一件事一层层往下包，每层抽走差价，到干活的人手里只剩最低的工钱，专业和责任跟着一起被压到最低。",
       "status": null,
       "degree": 1
     },
@@ -16224,6 +16246,61 @@
     {
       "source": "episode:EP209",
       "target": "theme:singapore-and-small-state-survival",
+      "kind": "episode-theme"
+    },
+    {
+      "source": "episode:EP210",
+      "target": "concept:layered-subcontracting",
+      "kind": "episode-concept"
+    },
+    {
+      "source": "episode:EP210",
+      "target": "concept:compliance-floor",
+      "kind": "episode-concept"
+    },
+    {
+      "source": "episode:EP210",
+      "target": "concept:blood-written-rules",
+      "kind": "episode-concept"
+    },
+    {
+      "source": "episode:EP210",
+      "target": "concept:cost-shifting",
+      "kind": "episode-concept"
+    },
+    {
+      "source": "episode:EP210",
+      "target": "concept:price-war-trap",
+      "kind": "episode-concept"
+    },
+    {
+      "source": "episode:EP210",
+      "target": "concept:honest-player-exit",
+      "kind": "episode-concept"
+    },
+    {
+      "source": "episode:EP210",
+      "target": "model:principal-agent",
+      "kind": "episode-model"
+    },
+    {
+      "source": "episode:EP210",
+      "target": "model:risk-transfer-chain",
+      "kind": "episode-model"
+    },
+    {
+      "source": "episode:EP210",
+      "target": "theme:price-war-and-precision-competition",
+      "kind": "episode-theme"
+    },
+    {
+      "source": "episode:EP210",
+      "target": "theme:human-value-and-state-credit",
+      "kind": "episode-theme"
+    },
+    {
+      "source": "episode:EP210",
+      "target": "theme:ev-safety-and-consumer-testing",
       "kind": "episode-theme"
     },
     {

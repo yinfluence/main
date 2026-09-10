@@ -1026,5 +1026,15 @@
       "platform": "youtube",
       "url": "https://www.youtube.com/watch?v=ESBGXyqRqPk"
     }
+  },
+  "EP210": {
+    "bilibili": {
+      "platform": "bilibili",
+      "url": "https://www.bilibili.com/video/BV1AGYg6DEm8/"
+    },
+    "youtube": {
+      "platform": "youtube",
+      "url": "https://www.youtube.com/watch?v=JSpgfEMgAQU"
+    }
   }
 }
