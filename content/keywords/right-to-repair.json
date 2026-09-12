@@ -1,0 +1,71 @@
+{
+  "id": "right-to-repair",
+  "name": "维修权",
+  "kind": "mechanism",
+  "asOf": "2026-09-12",
+  "sources": [
+    {
+      "title": "Motor vehicles – block exemption from European Union competition law | EUR-Lex",
+      "url": "https://eur-lex.europa.eu/EN/legal-content/summary/motor-vehicles-block-exemption-from-european-union-competition-law.html",
+      "note": "核对欧盟汽车业集体豁免规则把独立维修厂获取配件、工具和技术资料列为竞争法关注点"
+    },
+    {
+      "title": "Motor Vehicle Block Exemption Regulation | CCPC",
+      "url": "https://www.ccpc.ie/information-for-businesses/guidance-for-businesses/competition-law-guidance/competition-law-breaches/other-anti-competitive-agreements/motor-vehicle-block-exemption-regulation",
+      "note": "核对车企限制独立维修厂获取维修资料、诊断工具的做法属于竞争法上的问题"
+    },
+    {
+      "title": "Reform of the Motor Vehicle Block Exemption Regulation: Reg. 461/2010 extended until 31 May 2028 - Ballas Pelecanos Law",
+      "url": "https://www.ballas-pelecanos.com/news/reform-of-the-motor-vehicle-block-exemption-regulation-reg-4612010-extended-until-31-may-2028-provision-of-vehicle-generated-data-to-independent-operators-p160.html",
+      "note": "核对 461/2010 号条例延期到 2028 年 5 月 31 日，以及车辆传感器数据可能构成维修的必要输入"
+    }
+  ],
+  "aliases": [
+    "独立维修权",
+    "第三方维修",
+    "Right to Repair"
+  ],
+  "relatedKeywords": [
+    "Univé",
+    "车企出海",
+    "新能源汽车",
+    "保险公司"
+  ],
+  "summary": "维修权指车主可以自己选修理厂、独立修理厂能拿到配件和技术资料的那套安排。节目借它说明中国电车在欧洲只认自家网点，修车变慢变贵，最后引来保险拒保。",
+  "description": "维修权说的是一件东西卖出去以后，谁有资格修它。车主能不能去街边修理厂，修理厂能不能买到原厂配件、拿到诊断工具和技术资料，都属于这个问题。欧盟用竞争法管这件事，汽车业的集体豁免规则把限制独立维修厂获取维修资料、诊断工具列为竞争法上的问题，相关条例已经延期到 2028 年 5 月 31 日，车辆数据的获取也被写进了配套指引。\n\n在 EP211 里，节目把维修权放在中国电车和欧洲规则冲突的第一条。欧洲车企和日韩车企开放第三方维修，普通修理厂就能定损换件。按节目的说法，不少出海的中国品牌只认自家网点，没有权限、没有配件、没有资料，修车时间和费用都失控。这是节目的概括，各品牌的实际安排没有逐家核实。",
+  "mechanismNotes": "输入端是维修渠道被收窄，车坏了只能去品牌自己的网点，配件和资料不外流。过程端是网点少、配件靠远途运输，一次小事故要排队等件，等待期间的代步车、停车和误工费用不断累积。结果端是保险公司的赔付算不出底，只好停保或限保，车主买不到全险，品牌在当地更难卖车，维修权收得越紧，这一圈压力越大。",
+  "programAssociations": [
+    {
+      "title": "只认自家网点的代价",
+      "episodes": [
+        "EP211"
+      ],
+      "note": "EP211 把维修权的垄断列为中国电车在欧洲的第一条售后问题。节目说欧洲本土和日韩车企都开放第三方维修，出海的中国电车却锁死维修通道，接着就是配件依赖海运、维修一等几个月。荷兰保险公司 Univé 公开给的拒保理由正是配件、技术资料和维修网络不足。节目据此判断，维修权这一环没按当地规则走，代价最后通过保险落回车企身上。"
+    }
+  ],
+  "signalNotes": [
+    "车主抱怨修车只能回品牌店、外面修理厂接不了，往往说明配件和技术资料没有对外开放。",
+    "保险公司拒保或加价的理由里出现维修网络不足，问题多半出在维修渠道太窄，事故率未必高。",
+    "欧盟讨论车辆数据该不该向独立修理厂开放时，争的其实是售后这门生意归谁做。"
+  ],
+  "extensionNotes": [
+    {
+      "title": "Univé",
+      "note": "这家荷兰保险公司的拒保理由直指维修网络和技术资料，是维修权问题落到钱上的直接结果。"
+    },
+    {
+      "title": "车企出海",
+      "note": "车能运出去，维修渠道要在当地重新搭，维修权是出海后端最容易被忽视的一环。"
+    },
+    {
+      "title": "远程锁车",
+      "note": "车卖出去以后厂家还握着多少控制权，远程锁车讲的是开不开得动，维修权讲的是谁能修，两条线都落在售后的控制权上。"
+    }
+  ],
+  "episodes": [
+    {
+      "id": "EP211",
+      "note": "节目把出海电车锁死维修通道列为欧洲售后冲突的第一条，修车变慢变贵，最后引来保险公司拒保。"
+    }
+  ]
+}

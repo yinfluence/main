@@ -2,14 +2,14 @@
   "meta": {
     "title": "颖响力知识图谱",
     "subtitle": "节目、概念、模型、人物、主题之间的可视化连接网络",
-    "nodeCount": 727,
-    "linkCount": 2962,
+    "nodeCount": 729,
+    "linkCount": 2971,
     "typeCounts": {
       "model": 83,
       "live": 40,
       "theme": 92,
-      "episode": 210,
-      "concept": 237,
+      "episode": 211,
+      "concept": 238,
       "person": 65
     }
   },
@@ -23,7 +23,7 @@
       "route": "models/risk-transfer-chain",
       "summary": "系统不会立刻吞下风险，而是先沿着银行、企业、票据、供应链和普通人之间不断转手、延后和下沉。",
       "status": null,
-      "degree": 54
+      "degree": 55
     },
     {
       "id": "live:LIVE002",
@@ -444,6 +444,17 @@
       "degree": 28
     },
     {
+      "id": "theme:rule-of-law-boundaries-and-social-trust",
+      "key": "rule-of-law-boundaries-and-social-trust",
+      "label": "法治边界与社会信任",
+      "fullLabel": "法治边界与社会信任",
+      "type": "theme",
+      "route": "themes/rule-of-law-boundaries-and-social-trust",
+      "summary": "关注法律灰区如何影响公众的善意、风险感和彼此信任。",
+      "status": null,
+      "degree": 27
+    },
+    {
       "id": "theme:singapore-and-small-state-survival",
       "key": "singapore-and-small-state-survival",
       "label": "新加坡与小国生存术",
@@ -466,17 +477,6 @@
       "degree": 27
     },
     {
-      "id": "theme:rule-of-law-boundaries-and-social-trust",
-      "key": "rule-of-law-boundaries-and-social-trust",
-      "label": "法治边界与社会信任",
-      "fullLabel": "法治边界与社会信任",
-      "type": "theme",
-      "route": "themes/rule-of-law-boundaries-and-social-trust",
-      "summary": "关注法律灰区如何影响公众的善意、风险感和彼此信任。",
-      "status": null,
-      "degree": 26
-    },
-    {
       "id": "episode:EP169",
       "key": "EP169",
       "label": "EP169",
@@ -486,6 +486,17 @@
       "summary": "合肥被称为中国最牛风投城市。各地城投照抄，多数抄出一身债和产能过剩。可学的不是城市打法，是背后的投资逻辑。四个显性方法是逆周期抄底不追热点，赌产业链不赌单家公司。还有长期陪跑到成熟才退出，只投接得住的赛道。抄不走的是第五个隐性秘籍。政府能把权力直接变成补贴、报表和销售额。普通人没权力，唯一对应物是信息确定性。普通人要掌握的是别人没有的确定信息，像一级市场那样看清命脉。到那一步，欧印和加杠杆才不是赌博。",
       "status": "curated",
       "degree": 26
+    },
+    {
+      "id": "concept:cost-shifting",
+      "key": "cost-shifting",
+      "label": "成本外移",
+      "fullLabel": "成本外移",
+      "type": "concept",
+      "route": "concepts/cost-shifting",
+      "summary": "组织内部的高额非生产性成本，最终会通过价格、规则或风险转嫁给外部承担者。",
+      "status": null,
+      "degree": 25
     },
     {
       "id": "episode:EP154",
@@ -530,17 +541,6 @@
       "summary": "以前那些油卖给古巴，一桶还要倒贴十二美元。",
       "status": "published",
       "degree": 25
-    },
-    {
-      "id": "concept:cost-shifting",
-      "key": "cost-shifting",
-      "label": "成本外移",
-      "fullLabel": "成本外移",
-      "type": "concept",
-      "route": "concepts/cost-shifting",
-      "summary": "组织内部的高额非生产性成本，最终会通过价格、规则或风险转嫁给外部承担者。",
-      "status": null,
-      "degree": 24
     },
     {
       "id": "model:path-dependence",
@@ -1522,6 +1522,17 @@
       "degree": 12
     },
     {
+      "id": "concept:price-war-trap",
+      "key": "price-war-trap",
+      "label": "低价竞争陷阱",
+      "fullLabel": "低价竞争陷阱",
+      "type": "concept",
+      "route": "concepts/price-war-trap",
+      "summary": "极致低价可以快速突袭，却可能在长期竞争中压缩技术升级、利润和战略空间。",
+      "status": null,
+      "degree": 12
+    },
+    {
       "id": "theme:youth-withdrawal-and-lying-flat",
       "key": "youth-withdrawal-and-lying-flat",
       "label": "年轻人退出与躺平",
@@ -1573,6 +1584,17 @@
       "type": "model",
       "route": "models/sanction-parallel-market",
       "summary": "制裁如果没有消灭需求，就会把交易推向更高风险、更高利润、更难监管的平行市场。",
+      "status": null,
+      "degree": 12
+    },
+    {
+      "id": "model:institutional-fit",
+      "key": "institutional-fit",
+      "label": "制度适配",
+      "fullLabel": "制度适配",
+      "type": "model",
+      "route": "models/institutional-fit",
+      "summary": "制度适配解释能力能否兑现，取决于组织被放在怎样的法律、资本和治理环境中。",
       "status": null,
       "degree": 12
     },
@@ -1742,17 +1764,6 @@
       "degree": 11
     },
     {
-      "id": "concept:price-war-trap",
-      "key": "price-war-trap",
-      "label": "低价竞争陷阱",
-      "fullLabel": "低价竞争陷阱",
-      "type": "concept",
-      "route": "concepts/price-war-trap",
-      "summary": "极致低价可以快速突袭，却可能在长期竞争中压缩技术升级、利润和战略空间。",
-      "status": null,
-      "degree": 11
-    },
-    {
       "id": "theme:youth-dreams-and-safe-paths",
       "key": "youth-dreams-and-safe-paths",
       "label": "年轻人梦想与安全路径",
@@ -1804,17 +1815,6 @@
       "type": "model",
       "route": "models/small-state-balancing-model",
       "summary": "小国平衡术解释小国在大国之间维持生存空间，靠位置、合法性和现实利益而非纯姿态。",
-      "status": null,
-      "degree": 11
-    },
-    {
-      "id": "model:institutional-fit",
-      "key": "institutional-fit",
-      "label": "制度适配",
-      "fullLabel": "制度适配",
-      "type": "model",
-      "route": "models/institutional-fit",
-      "summary": "制度适配解释能力能否兑现，取决于组织被放在怎样的法律、资本和治理环境中。",
       "status": null,
       "degree": 11
     },
@@ -2633,6 +2633,17 @@
       "degree": 9
     },
     {
+      "id": "episode:EP211",
+      "key": "EP211",
+      "label": "EP211",
+      "fullLabel": "EP211 · 靠诡计打破的规则，终要用一生偿还！荷兰车险率先拒保中国电车的底层真相",
+      "type": "episode",
+      "route": "episodes/EP211",
+      "summary": "2026 年 8 月中旬，荷兰合作制保险公司 Univé 收紧车险。九个品牌连最基础的险都不再接，另外五个只能买第三者责任险，名单上大多是中国车企。很多人读成贸易打压，保险公司给的理由却是配件、技术资料和维修网络跟不上。车卖得便宜，修一次却要等几个月，代步车和误工的钱都算在保险公司头上，赔付算不出底，只好不接。欧洲汽车业靠一百年攒下的维修和理赔规则运转，低价打开了市场，后端的规则没跟上，账现在开始找上门。",
+      "status": "curated",
+      "degree": 9
+    },
+    {
       "id": "concept:performative-innovation",
       "key": "performative-innovation",
       "label": "表演式创新",
@@ -3183,6 +3194,17 @@
       "degree": 7
     },
     {
+      "id": "theme:price-war-and-precision-competition",
+      "key": "price-war-and-precision-competition",
+      "label": "低价竞争与精准打击",
+      "fullLabel": "低价竞争与精准打击",
+      "type": "theme",
+      "route": "themes/price-war-and-precision-competition",
+      "summary": "讨论卷低价与做精准高价值打击之间的差别，以及两种竞争逻辑背后的阶层思维。",
+      "status": null,
+      "degree": 7
+    },
+    {
       "id": "model:follower-advantage-collapse",
       "key": "follower-advantage-collapse",
       "label": "跟随者失效",
@@ -3289,6 +3311,17 @@
       "type": "concept",
       "route": "concepts/consumer-testbed",
       "summary": "企业把本该在研发和验证阶段承担的安全成本，转移到首批消费者、公共道路和真实事故里去消化。",
+      "status": null,
+      "degree": 7
+    },
+    {
+      "id": "theme:ev-design-and-technology-shortcuts",
+      "key": "ev-design-and-technology-shortcuts",
+      "label": "新能源设计抄近路与技术捷径",
+      "fullLabel": "新能源设计抄近路与技术捷径",
+      "type": "theme",
+      "route": "themes/ev-design-and-technology-shortcuts",
+      "summary": "讨论新能源品牌如何在设计、技术和产品叙事上追求速成，并为此埋下长期反噬。",
       "status": null,
       "degree": 7
     },
@@ -3568,17 +3601,6 @@
       "degree": 6
     },
     {
-      "id": "theme:price-war-and-precision-competition",
-      "key": "price-war-and-precision-competition",
-      "label": "低价竞争与精准打击",
-      "fullLabel": "低价竞争与精准打击",
-      "type": "theme",
-      "route": "themes/price-war-and-precision-competition",
-      "summary": "讨论卷低价与做精准高价值打击之间的差别，以及两种竞争逻辑背后的阶层思维。",
-      "status": null,
-      "degree": 6
-    },
-    {
       "id": "model:distributed-warfare-system",
       "key": "distributed-warfare-system",
       "label": "分布式战争系统",
@@ -3795,17 +3817,6 @@
       "type": "theme",
       "route": "themes/cash-optionality-and-liquidity-anxiety",
       "summary": "在高波动和低信任时期，流动性比账面资产更能决定一个人和机构的安全感。",
-      "status": null,
-      "degree": 6
-    },
-    {
-      "id": "theme:ev-design-and-technology-shortcuts",
-      "key": "ev-design-and-technology-shortcuts",
-      "label": "新能源设计抄近路与技术捷径",
-      "fullLabel": "新能源设计抄近路与技术捷径",
-      "type": "theme",
-      "route": "themes/ev-design-and-technology-shortcuts",
-      "summary": "讨论新能源品牌如何在设计、技术和产品叙事上追求速成，并为此埋下长期反噬。",
       "status": null,
       "degree": 6
     },
@@ -5163,6 +5174,17 @@
       "degree": 4
     },
     {
+      "id": "concept:rule-gaming-backfire",
+      "key": "rule-gaming-backfire",
+      "label": "钻规则反噬",
+      "fullLabel": "钻规则反噬",
+      "type": "concept",
+      "route": "concepts/rule-gaming-backfire",
+      "summary": "靠钻规则空子或动用特权改规则获取短期收益，最终赔上信任、口碑和长期竞争力的现象。",
+      "status": null,
+      "degree": 4
+    },
+    {
       "id": "episode:EP010",
       "key": "EP010",
       "label": "EP010",
@@ -6017,17 +6039,6 @@
       "type": "person",
       "route": "people/zong-qinghou",
       "summary": "宗庆后是娃哈哈集团创始人和上一代民营消费品牌代表，节目借他追溯强创始人成功、旧账累积和交棒失序的源头。",
-      "status": null,
-      "degree": 3
-    },
-    {
-      "id": "concept:rule-gaming-backfire",
-      "key": "rule-gaming-backfire",
-      "label": "钻规则反噬",
-      "fullLabel": "钻规则反噬",
-      "type": "concept",
-      "route": "concepts/rule-gaming-backfire",
-      "summary": "靠钻规则空子或动用特权改规则获取短期收益，最终赔上信任、口碑和长期竞争力的现象。",
       "status": null,
       "degree": 3
     },
@@ -6919,6 +6930,17 @@
       "type": "concept",
       "route": "concepts/standardized-exclusion",
       "summary": "救助和福利只认得出标准化、群体化的困难，突发的、个别的绝境因为填不进表格，被整套体系筛掉。",
+      "status": null,
+      "degree": 1
+    },
+    {
+      "id": "concept:unpriceable-risk",
+      "key": "unpriceable-risk",
+      "label": "不可定价风险",
+      "fullLabel": "不可定价风险",
+      "type": "concept",
+      "route": "concepts/unpriceable-risk",
+      "summary": "损失有多大、多久发生一次都估不出来，加价也接不住，保险公司和资本只能退出的那类风险。",
       "status": null,
       "degree": 1
     },
@@ -16301,6 +16323,51 @@
     {
       "source": "episode:EP210",
       "target": "theme:ev-safety-and-consumer-testing",
+      "kind": "episode-theme"
+    },
+    {
+      "source": "episode:EP211",
+      "target": "concept:unpriceable-risk",
+      "kind": "episode-concept"
+    },
+    {
+      "source": "episode:EP211",
+      "target": "concept:rule-gaming-backfire",
+      "kind": "episode-concept"
+    },
+    {
+      "source": "episode:EP211",
+      "target": "concept:price-war-trap",
+      "kind": "episode-concept"
+    },
+    {
+      "source": "episode:EP211",
+      "target": "concept:cost-shifting",
+      "kind": "episode-concept"
+    },
+    {
+      "source": "episode:EP211",
+      "target": "model:institutional-fit",
+      "kind": "episode-model"
+    },
+    {
+      "source": "episode:EP211",
+      "target": "model:risk-transfer-chain",
+      "kind": "episode-model"
+    },
+    {
+      "source": "episode:EP211",
+      "target": "theme:ev-design-and-technology-shortcuts",
+      "kind": "episode-theme"
+    },
+    {
+      "source": "episode:EP211",
+      "target": "theme:price-war-and-precision-competition",
+      "kind": "episode-theme"
+    },
+    {
+      "source": "episode:EP211",
+      "target": "theme:rule-of-law-boundaries-and-social-trust",
       "kind": "episode-theme"
     },
     {

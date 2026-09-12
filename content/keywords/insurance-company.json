@@ -8,7 +8,22 @@
   ],
   "relatedKeywords": [
     "insurance",
-    "hong-kong-insurance"
+    "hong-kong-insurance",
+    "Univé"
   ],
-  "episodes": []
+  "episodes": [
+    {
+      "id": "EP211",
+      "note": "荷兰保险公司 Univé 因为赔付算不出底，对一批新车品牌停保或只保第三者责任险，节目拿它当欧洲规则反击的第一波。"
+    }
+  ],
+  "programAssociations": [
+    {
+      "title": "算不出底就不承保",
+      "episodes": [
+        "EP211"
+      ],
+      "note": "EP211 讲保险公司敢定价，靠的是上百年的事故率、维修成本和赔付周期数据。荷兰的 Univé 面对一批售后网络跟不上的新品牌，维修一拖几个月，代步车和误工的钱都要自己赔，模型算不住，就对九个品牌停保、五个品牌只保第三者责任险。节目借此说明，保险公司常常比政策更早划出一门生意能不能做的边界。"
+    }
+  ]
 }
