@@ -2,14 +2,14 @@
   "meta": {
     "title": "颖响力知识图谱",
     "subtitle": "节目、概念、模型、人物、主题之间的可视化连接网络",
-    "nodeCount": 729,
-    "linkCount": 2971,
+    "nodeCount": 731,
+    "linkCount": 2980,
     "typeCounts": {
       "model": 83,
       "live": 40,
       "theme": 92,
-      "episode": 211,
-      "concept": 238,
+      "episode": 212,
+      "concept": 239,
       "person": 65
     }
   },
@@ -378,6 +378,17 @@
       "degree": 28
     },
     {
+      "id": "theme:singapore-and-small-state-survival",
+      "key": "singapore-and-small-state-survival",
+      "label": "新加坡与小国生存术",
+      "fullLabel": "新加坡与小国生存术",
+      "type": "theme",
+      "route": "themes/singapore-and-small-state-survival",
+      "summary": "讨论新加坡如何把规则、海峡、人才和谨慎外交组合成一套小国长期生存方法。",
+      "status": null,
+      "degree": 28
+    },
+    {
       "id": "concept:hidden-debt",
       "key": "hidden-debt",
       "label": "隐形债务",
@@ -451,17 +462,6 @@
       "type": "theme",
       "route": "themes/rule-of-law-boundaries-and-social-trust",
       "summary": "关注法律灰区如何影响公众的善意、风险感和彼此信任。",
-      "status": null,
-      "degree": 27
-    },
-    {
-      "id": "theme:singapore-and-small-state-survival",
-      "key": "singapore-and-small-state-survival",
-      "label": "新加坡与小国生存术",
-      "fullLabel": "新加坡与小国生存术",
-      "type": "theme",
-      "route": "themes/singapore-and-small-state-survival",
-      "summary": "讨论新加坡如何把规则、海峡、人才和谨慎外交组合成一套小国长期生存方法。",
       "status": null,
       "degree": 27
     },
@@ -1104,6 +1104,17 @@
       "degree": 16
     },
     {
+      "id": "model:rule-anchored-small-state-model",
+      "key": "rule-anchored-small-state-model",
+      "label": "规则锚定型小国生存",
+      "fullLabel": "规则锚定型小国生存",
+      "type": "model",
+      "route": "models/rule-anchored-small-state-model",
+      "summary": "小国要长期活下来，不能只靠地理好运，更要靠规则信誉、理性政府和可预期的制度自我约束。",
+      "status": null,
+      "degree": 15
+    },
+    {
       "id": "episode:EP145",
       "key": "EP145",
       "label": "EP145",
@@ -1181,13 +1192,13 @@
       "degree": 14
     },
     {
-      "id": "model:rule-anchored-small-state-model",
-      "key": "rule-anchored-small-state-model",
-      "label": "规则锚定型小国生存",
-      "fullLabel": "规则锚定型小国生存",
+      "id": "model:principal-agent",
+      "key": "principal-agent",
+      "label": "委托代理问题",
+      "fullLabel": "委托代理问题",
       "type": "model",
-      "route": "models/rule-anchored-small-state-model",
-      "summary": "小国要长期活下来，不能只靠地理好运，更要靠规则信誉、理性政府和可预期的制度自我约束。",
+      "route": "models/principal-agent",
+      "summary": "委托代理模型解释外部顾问或职业代理人的激励，未必与委托方长期价值一致。",
       "status": null,
       "degree": 14
     },
@@ -1357,17 +1368,6 @@
       "degree": 13
     },
     {
-      "id": "model:principal-agent",
-      "key": "principal-agent",
-      "label": "委托代理问题",
-      "fullLabel": "委托代理问题",
-      "type": "model",
-      "route": "models/principal-agent",
-      "summary": "委托代理模型解释外部顾问或职业代理人的激励，未必与委托方长期价值一致。",
-      "status": null,
-      "degree": 13
-    },
-    {
       "id": "theme:ev-collapse-and-exit-risk",
       "key": "ev-collapse-and-exit-risk",
       "label": "新能源崩塌与退出风险",
@@ -1375,6 +1375,17 @@
       "type": "theme",
       "route": "themes/ev-collapse-and-exit-risk",
       "summary": "聚焦新能源项目在失速、清算和品牌出清阶段，风险如何向债权人、用户和地方政府层层传导。",
+      "status": null,
+      "degree": 13
+    },
+    {
+      "id": "model:institutional-fit",
+      "key": "institutional-fit",
+      "label": "制度适配",
+      "fullLabel": "制度适配",
+      "type": "model",
+      "route": "models/institutional-fit",
+      "summary": "制度适配解释能力能否兑现，取决于组织被放在怎样的法律、资本和治理环境中。",
       "status": null,
       "degree": 13
     },
@@ -1588,17 +1599,6 @@
       "degree": 12
     },
     {
-      "id": "model:institutional-fit",
-      "key": "institutional-fit",
-      "label": "制度适配",
-      "fullLabel": "制度适配",
-      "type": "model",
-      "route": "models/institutional-fit",
-      "summary": "制度适配解释能力能否兑现，取决于组织被放在怎样的法律、资本和治理环境中。",
-      "status": null,
-      "degree": 12
-    },
-    {
       "id": "concept:active-neutrality",
       "key": "active-neutrality",
       "label": "主动中立",
@@ -1782,6 +1782,17 @@
       "type": "model",
       "route": "models/authority-misinfluence",
       "summary": "权威影响模型解释单点权威如何压缩组织独立判断，使成员更容易服从而非纠偏。",
+      "status": null,
+      "degree": 11
+    },
+    {
+      "id": "theme:human-value-and-state-credit",
+      "key": "human-value-and-state-credit",
+      "label": "人的价值与国家信用",
+      "fullLabel": "人的价值与国家信用",
+      "type": "theme",
+      "route": "themes/human-value-and-state-credit",
+      "summary": "讨论国家究竟把个体视为成本、工具，还是视为必须兑现承诺的对象。",
       "status": null,
       "degree": 11
     },
@@ -1991,17 +2002,6 @@
       "type": "model",
       "route": "models/regional-denial-model",
       "summary": "真正有效的区域拒止，不是无上限扩张，而是把对手压在若干区域里，阻止其形成全球联动能力。",
-      "status": null,
-      "degree": 10
-    },
-    {
-      "id": "theme:human-value-and-state-credit",
-      "key": "human-value-and-state-credit",
-      "label": "人的价值与国家信用",
-      "fullLabel": "人的价值与国家信用",
-      "type": "theme",
-      "route": "themes/human-value-and-state-credit",
-      "summary": "讨论国家究竟把个体视为成本、工具，还是视为必须兑现承诺的对象。",
       "status": null,
       "degree": 10
     },
@@ -2640,6 +2640,17 @@
       "type": "episode",
       "route": "episodes/EP211",
       "summary": "2026 年 8 月中旬，荷兰合作制保险公司 Univé 收紧车险。九个品牌连最基础的险都不再接，另外五个只能买第三者责任险，名单上大多是中国车企。很多人读成贸易打压，保险公司给的理由却是配件、技术资料和维修网络跟不上。车卖得便宜，修一次却要等几个月，代步车和误工的钱都算在保险公司头上，赔付算不出底，只好不接。欧洲汽车业靠一百年攒下的维修和理赔规则运转，低价打开了市场，后端的规则没跟上，账现在开始找上门。",
+      "status": "curated",
+      "degree": 9
+    },
+    {
+      "id": "episode:EP212",
+      "key": "EP212",
+      "label": "EP212",
+      "fullLabel": "EP212 · 新加坡高官涨薪64%！高薪养廉的真相，为什么没国家能抄新加坡的作业？",
+      "type": "episode",
+      "route": "episodes/EP212",
+      "summary": "新加坡政府 9 月 8 日宣布调整政治职务薪金，10 月 15 日起生效。初级部长的参考年薪从 110 万新元调到 180 万。总理年薪跟着从 220 万涨到 360 万，涨了 64%。这是 2012 年那次减薪之后，十五年来头一回调整。基准取收入最高的一千名公民年收入中位数，再打六折。方案由独立委员会提出，公式谁都查得到。高薪养廉在新加坡跑得通，靠的是社会差距小、公职队伍小，再加一套独立的反贪机构。换成国土大、贫富差距大的国家，连高薪该对标谁都定不下来。",
       "status": "curated",
       "degree": 9
     },
@@ -3601,6 +3612,17 @@
       "degree": 6
     },
     {
+      "id": "concept:moral-capital",
+      "key": "moral-capital",
+      "label": "道德资本",
+      "fullLabel": "道德资本",
+      "type": "concept",
+      "route": "concepts/moral-capital",
+      "summary": "长期为他人承担和创造价值，会形成一种不能即时折现却能改变公共评价的道德资本。",
+      "status": null,
+      "degree": 6
+    },
+    {
       "id": "model:distributed-warfare-system",
       "key": "distributed-warfare-system",
       "label": "分布式战争系统",
@@ -3685,6 +3707,17 @@
       "type": "concept",
       "route": "concepts/route-substitution-illusion",
       "summary": "新的港口、陆路或航线可以分流局部业务，但很难在短期内替代真正的世界级主通道。",
+      "status": null,
+      "degree": 6
+    },
+    {
+      "id": "person:lawrence-wong",
+      "key": "lawrence-wong",
+      "label": "黄循财",
+      "fullLabel": "黄循财",
+      "type": "person",
+      "route": "people/lawrence-wong",
+      "summary": "黄循财是新加坡总理兼财政部长，节目借他观察新加坡主动中立、国家身份边界和国家信用履约。",
       "status": null,
       "degree": 6
     },
@@ -4195,17 +4228,6 @@
       "degree": 5
     },
     {
-      "id": "concept:moral-capital",
-      "key": "moral-capital",
-      "label": "道德资本",
-      "fullLabel": "道德资本",
-      "type": "concept",
-      "route": "concepts/moral-capital",
-      "summary": "长期为他人承担和创造价值，会形成一种不能即时折现却能改变公共评价的道德资本。",
-      "status": null,
-      "degree": 5
-    },
-    {
       "id": "concept:legal-grey-zone",
       "key": "legal-grey-zone",
       "label": "法律灰区",
@@ -4268,17 +4290,6 @@
       "type": "model",
       "route": "models/human-contract-model",
       "summary": "国家信用契约模型解释国家对个体生命的兜底能力如何转化为长期制度信用。",
-      "status": null,
-      "degree": 5
-    },
-    {
-      "id": "person:lawrence-wong",
-      "key": "lawrence-wong",
-      "label": "黄循财",
-      "fullLabel": "黄循财",
-      "type": "person",
-      "route": "people/lawrence-wong",
-      "summary": "黄循财是新加坡总理兼财政部长，节目借他观察新加坡主动中立、国家身份边界和国家信用履约。",
       "status": null,
       "degree": 5
     },
@@ -6725,6 +6736,17 @@
       "degree": 2
     },
     {
+      "id": "concept:leadership-pipeline",
+      "key": "leadership-pipeline",
+      "label": "梯队接班制",
+      "fullLabel": "梯队接班制",
+      "type": "concept",
+      "route": "concepts/leadership-pipeline",
+      "summary": "把接班做成一套按代际排期的梯队制度，而不是让在位者临时指定继任者。",
+      "status": null,
+      "degree": 2
+    },
+    {
       "id": "person:wang-jianlin",
       "key": "wang-jianlin",
       "label": "王健林",
@@ -7106,6 +7128,17 @@
       "type": "model",
       "route": "models/symbol-ascension",
       "summary": "不在现有的比价体系里争第一，而是先划界限、再筛人、最后把自己变成不能被议价也不能被调侃的符号。",
+      "status": null,
+      "degree": 1
+    },
+    {
+      "id": "concept:position-pricing",
+      "key": "position-pricing",
+      "label": "岗位定价",
+      "fullLabel": "岗位定价",
+      "type": "concept",
+      "route": "concepts/position-pricing",
+      "summary": "薪水先按这个位置值多少来定，拿到的人怎么花、捐不捐，是另一回事。",
       "status": null,
       "degree": 1
     },
@@ -7634,17 +7667,6 @@
       "type": "person",
       "route": "people/to-lam",
       "summary": "苏林是越共中央总书记兼越南国家主席，节目借他的一肩挑讨论越南从集体领导回到强人时代的风险。",
-      "status": null,
-      "degree": 1
-    },
-    {
-      "id": "concept:leadership-pipeline",
-      "key": "leadership-pipeline",
-      "label": "梯队接班制",
-      "fullLabel": "梯队接班制",
-      "type": "concept",
-      "route": "concepts/leadership-pipeline",
-      "summary": "把接班做成一套按代际排期的梯队制度，而不是让在位者临时指定继任者。",
       "status": null,
       "degree": 1
     },
@@ -16368,6 +16390,51 @@
     {
       "source": "episode:EP211",
       "target": "theme:rule-of-law-boundaries-and-social-trust",
+      "kind": "episode-theme"
+    },
+    {
+      "source": "episode:EP212",
+      "target": "concept:position-pricing",
+      "kind": "episode-concept"
+    },
+    {
+      "source": "episode:EP212",
+      "target": "concept:moral-capital",
+      "kind": "episode-concept"
+    },
+    {
+      "source": "episode:EP212",
+      "target": "concept:leadership-pipeline",
+      "kind": "episode-concept"
+    },
+    {
+      "source": "episode:EP212",
+      "target": "model:institutional-fit",
+      "kind": "episode-model"
+    },
+    {
+      "source": "episode:EP212",
+      "target": "model:rule-anchored-small-state-model",
+      "kind": "episode-model"
+    },
+    {
+      "source": "episode:EP212",
+      "target": "model:principal-agent",
+      "kind": "episode-model"
+    },
+    {
+      "source": "episode:EP212",
+      "target": "person:lawrence-wong",
+      "kind": "episode-person"
+    },
+    {
+      "source": "episode:EP212",
+      "target": "theme:singapore-and-small-state-survival",
+      "kind": "episode-theme"
+    },
+    {
+      "source": "episode:EP212",
+      "target": "theme:human-value-and-state-credit",
       "kind": "episode-theme"
     },
     {

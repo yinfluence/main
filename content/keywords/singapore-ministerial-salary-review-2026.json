@@ -1,0 +1,87 @@
+{
+  "id": "singapore-ministerial-salary-review-2026",
+  "name": "新加坡部长薪金检讨",
+  "kind": "event",
+  "asOf": "2026-09-15",
+  "sources": [
+    {
+      "title": "Ministerial Statement by Mr Chan Chun Sing on the 2026 Review of Salaries for Political Appointment Holders and Members of Parliament | Public Service Division",
+      "url": "https://www.psd.gov.sg/newsroom/ministerial-statement-by-coordinating-minister-for-public-services--mr-chan-chun-sing--at-the-government-s-response-to-the--2026-review-of-salaries-for-political-appointment-holders-and-members-of-parliament-/",
+      "note": "核对委员会 2025 年 12 月成立、初级部长基准从 110 万新元调到 180 万、10 月 15 日生效、在任者一次性调整最多 9%、议员月津贴从 13750 新元调到 18500 新元、政治职务每年约多花 500 万新元"
+    },
+    {
+      "title": "PM Lawrence Wong on Government's Response to 2026 Review of Salaries for Political Appointment Holders and Members of Parliament | Prime Minister's Office Singapore",
+      "url": "https://www.pmo.gov.sg/newsroom/pm-lawrence-wong-on-government-response-to-2026-review-of-salaries-for-political-appointment-holders-and-members-of-parliament/",
+      "note": "核对总理年薪按两倍基准算、黄循财表示未来五年捐出本次调整的全部增加部分、2017 年政府未采纳上调建议、2023 年检讨推迟"
+    },
+    {
+      "title": "Singapore opposition backs pay rise, seeks greater transparency on ministers' pay | The Star",
+      "url": "https://www.thestar.com.my/aseanplus/aseanplus-news/2026/09/10/singapore-opposition-backs-pay-rise-seeks-greater-transparency-on-ministers-pay",
+      "note": "核对工人党支持薪金框架原则、分歧在公式、要求公开初级部长总收入"
+    },
+    {
+      "title": "Singapore leaders to take large pay cuts | Al Jazeera",
+      "url": "https://www.aljazeera.com/news/2012/1/5/singapore-leaders-to-take-large-pay-cuts",
+      "note": "核对 2012 年那次调整是减薪，总理年薪降幅约 36%"
+    }
+  ],
+  "aliases": [
+    "部长薪金检讨",
+    "新加坡部长加薪",
+    "2026年政治职务者薪金检讨",
+    "MR4基准"
+  ],
+  "relatedKeywords": [
+    "新加坡",
+    "高薪养廉",
+    "黄循财",
+    "人民行动党",
+    "新加坡内阁改组"
+  ],
+  "summary": "新加坡部长薪金检讨指 2026 年 9 月公布的政治职务薪金调整，初级部长基准涨到 180 万新元、总理年薪到 360 万新元。节目拿它讲高薪养廉怎么算、为什么只适合城市国家。",
+  "description": "新加坡政府 2025 年 12 月成立独立委员会检讨政治职务者和国会议员的薪金，2026 年 9 月 8 日在国会宣布接受建议，10 月 15 日起生效。初级部长的参考年薪从 110 万新元调到 180 万，基准按收入最高的一千名公民年收入中位数打六折算。总理薪水定为基准的两倍，年薪从 220 万新元到 360 万，涨幅 64%。在任部长先一次性调整最多 9%，议员月津贴从 13750 新元调到 18500 新元。上一次调整在 2012 年，那次是减薪，此后 2017 年的上调建议没有采纳，2023 年的检讨推迟。\n\n在 EP212 里，节目把这次调整读成冻结十五年后的首次补调，重点讲公式怎么定、为什么打六折、为什么只有城市国家用得了。黄循财宣布五年内捐出自己加薪的部分，节目借这件事把岗位价值和个人选择分开讲。",
+  "conflictNotes": [
+    "舆论最大的分歧在涨幅本身。一方认为是精英拿纳税人的钱给自己加薪，另一方认为十五年没动过，按公式补调是正常的。",
+    "抢人才是政府给出的主要理由。工人党在国会辩论中支持框架原则，但指出内阁多数人仍出自公共部门，从私营部门转来的只有少数，质疑高薪能不能真的把企业里的人拉进政府。",
+    "总理捐出加薪部分，有人读成作秀，也有人读成对这套框架的背书。黄循财自己强调不想让以后的总理觉得必须照做。"
+  ],
+  "programAssociations": [
+    {
+      "title": "涨 64% 背后的公式和边界",
+      "episodes": [
+        "EP212"
+      ],
+      "note": "EP212 先纠正涨薪是拍脑门的读法，讲清初级部长基准取收入最高一千名公民年收入中位数再打六折，总理按两倍算，方案出自独立委员会并经国会辩论。接着讲打六折背后是跟私企抢人，给不了顶薪也要给体面的收入。最后借黄循财捐出加薪部分，说明薪水认可的是岗位价值，个人怎么花是另一回事。节目的结论是这套办法对新加坡是好事，但只有城市国家用得了。"
+    }
+  ],
+  "aftermathNotes": [
+    "新的国家花红框架从 2027 年 1 月起实行，失业率、中位数和底层收入增长的达标线都收紧了，部长浮动收入跟这些指标挂得更紧。",
+    "政府定下以后每五年由独立委员会检讨一次，两次检讨之间确有需要才调整，这次拖了十五年的情况按规定不该再出现。",
+    "黄循财的捐款承诺以五年为期，到期后会重新考虑，下一任总理是否跟进，他明确表示不设预期。"
+  ],
+  "signalNotes": [
+    "新闻只报涨了多少、没报基准怎么算时，读者容易把按公式调整看成政府自己拍板加薪。",
+    "反对党支持原则、只争公式，说明争议集中在对标哪一档收入，高薪本身在新加坡政坛并没有被否定。",
+    "领导人宣布捐出加薪部分，同时强调不给后任设先例，这是在把个人姿态和制度安排切开。"
+  ],
+  "extensionNotes": [
+    {
+      "title": "高薪养廉",
+      "note": "这次检讨是高薪养廉思路的最新一次落地，公式和适用条件要放回这个概念里看。"
+    },
+    {
+      "title": "新加坡内阁改组",
+      "note": "两个月前的改组讲的是谁来接班，这次薪金检讨讲的是拿什么价码把人留在政府里，两件事连着看。"
+    },
+    {
+      "title": "黄循财",
+      "note": "他在国会宣布接受建议并承诺捐出自己的加薪部分，是这次检讨里最受关注的个人表态。"
+    }
+  ],
+  "episodes": [
+    {
+      "id": "EP212",
+      "note": "节目把这次调整读成冻结十五年后的补调，拆开公式、抢人才和岗位价值三层，并判断它只适合城市国家。"
+    }
+  ]
+}

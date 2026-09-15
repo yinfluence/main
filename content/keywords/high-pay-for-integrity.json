@@ -1,0 +1,73 @@
+{
+  "id": "high-pay-for-integrity",
+  "name": "高薪养廉",
+  "kind": "concept",
+  "asOf": "2026-09-15",
+  "sources": [
+    {
+      "title": "Ministerial Statement by Mr Chan Chun Sing on the 2026 Review of Salaries for Political Appointment Holders and Members of Parliament | Public Service Division",
+      "url": "https://www.psd.gov.sg/newsroom/ministerial-statement-by-coordinating-minister-for-public-services--mr-chan-chun-sing--at-the-government-s-response-to-the--2026-review-of-salaries-for-political-appointment-holders-and-members-of-parliament-/",
+      "note": "核对新加坡政治职务薪金的 clean wage 原则，薪水之外没有隐藏津贴和福利、没有退休金，以及初级部长基准按收入最高一千名公民年收入中位数打六折的算法"
+    },
+    {
+      "title": "Bureaucratic corruption and the rate of temptation: do wages in the civil service affect corruption, and by how much? | Journal of Development Economics",
+      "url": "https://www.sciencedirect.com/science/article/abs/pii/S0304387801001390",
+      "note": "核对公务员相对工资与腐败程度有统计上的关联，但只靠涨工资消除腐败需要相当大的涨幅"
+    },
+    {
+      "title": "2025 TI CPI: Singapore Maintains Global Third Spot and Top Position in Asia Pacific | CPIB",
+      "url": "https://www.cpib.gov.sg/2025-ti-cpi-singapore-maintains-global-third-spot-and-top-position-in-asia-pacific/",
+      "note": "核对新加坡在 2025 年清廉指数中排全球第三"
+    }
+  ],
+  "aliases": [
+    "高薪养廉制度"
+  ],
+  "relatedKeywords": [
+    "新加坡",
+    "城市国家",
+    "新加坡部长薪金检讨",
+    "香港"
+  ],
+  "summary": "高薪养廉指给公职人员接近市场水平的薪水，让他们不必也不值得去拿灰色收入。节目借新加坡这轮部长加薪，说明这套办法只在城市国家跑得通。",
+  "description": "高薪养廉是中文里对一类公职薪酬思路的概括，常被用来形容新加坡和香港给政治职务、公务员开出较高薪水的做法。新加坡官方的说法是明码的干净薪水，薪水之外没有隐藏津贴，也没有退休金。初级部长的基准按收入最高的一千名公民年收入中位数打六折算，2026 年检讨后从 110 万新元调到 180 万。中国历史上清代雍正推行的养廉银，是更早的同类尝试。\n\n在 EP212 里，节目明确认可高薪养廉，同时强调它有很强的适用边界。它要跑通需要两个前提，社会里城乡和阶层差距不大，公职队伍小、成本可控，再配上完全独立的反贪监察机构。高薪负责吸引人，监管负责兜底。节目认为这套办法本质上是城市国家的方子，放到国土大、差距大的国家大概率行不通。",
+  "conceptNotes": [
+    "高薪只管一半。钱给得够，拿灰色收入的理由少了，但拿了会不会被发现要靠独立的反贪机构。新加坡的做法是两样一起上，节目也把监察机构当成这套逻辑成立的条件之一。",
+    "常见的误解是钱给够了人就不贪。公务员工资与腐败的实证研究发现两者有关联，但只靠涨工资要把腐败压下去，涨幅得非常大，队伍规模一大，财政很难扛。",
+    "它跟岗位定价讲的不是一件事。高薪养廉的出发点是防贪和抢人，岗位定价讲的是这个位置本身值多少钱，个人拿到之后捐不捐是另一回事。EP212 两层都讲了。"
+  ],
+  "programAssociations": [
+    {
+      "title": "只在城市国家跑得通的办法",
+      "episodes": [
+        "EP212"
+      ],
+      "note": "EP212 从新加坡初级部长基准上涨 64%、总理年薪到 360 万新元讲起，先说清这笔薪水由独立委员会按公式算出来，政府没有自己拍板。节目认可高薪养廉，但列出两个前提，社会差距小、公职队伍小，再加独立反贪机构。换成大国，高薪对标一线城市高管还是全国平均工资定不下来，部长管几千万人的责任也不在一个量级，所以这份作业抄不走。"
+    }
+  ],
+  "signalNotes": [
+    "有人拿新加坡部长的年薪质疑高薪养廉时，值得先看薪水是谁定的、按什么公式算、有没有公开，这些决定了它是制度安排还是自肥。",
+    "讨论某个大国该不该学高薪养廉，卡住的地方通常是全国该拿哪一档收入当基准。",
+    "一个地方工资涨了、腐败却没少，多半是反贪机构不独立或者查不过来，钱只做了一半的事。"
+  ],
+  "extensionNotes": [
+    {
+      "title": "城市国家",
+      "note": "节目给高薪养廉划的适用范围就是城市国家，看懂这个概念才明白为什么大国照搬会卡住。"
+    },
+    {
+      "title": "新加坡部长薪金检讨",
+      "note": "2026 年这轮检讨是高薪养廉最新的一次落地，公式、涨幅和反对党的质疑都在里面。"
+    },
+    {
+      "title": "香港",
+      "note": "节目把香港和新加坡并列为高薪养廉做得不错的城市经济体，可以对照两地的公职薪酬和廉政机构。"
+    }
+  ],
+  "episodes": [
+    {
+      "id": "EP212",
+      "note": "节目认可新加坡的高薪养廉，同时把它限定为城市国家的办法，大国在对标谁和责任量级上都走不通。"
+    }
+  ]
+}
