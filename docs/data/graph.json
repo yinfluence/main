@@ -2,14 +2,14 @@
   "meta": {
     "title": "颖响力知识图谱",
     "subtitle": "节目、概念、模型、人物、主题之间的可视化连接网络",
-    "nodeCount": 732,
-    "linkCount": 3005,
+    "nodeCount": 733,
+    "linkCount": 3024,
     "typeCounts": {
       "model": 83,
-      "live": 41,
+      "live": 42,
       "theme": 92,
-      "episode": 212,
       "concept": 239,
+      "episode": 212,
       "person": 65
     }
   },
@@ -268,6 +268,17 @@
       "degree": 31
     },
     {
+      "id": "theme:dollar-system-and-gray-trade",
+      "key": "dollar-system-and-gray-trade",
+      "label": "美元体系与灰色贸易",
+      "fullLabel": "美元体系与灰色贸易",
+      "type": "theme",
+      "route": "themes/dollar-system-and-gray-trade",
+      "summary": "讨论石油美元的真实脆弱点，究竟藏在公开统计之外的哪些灰色交易链条里。",
+      "status": null,
+      "degree": 30
+    },
+    {
       "id": "live:LIVE012",
       "key": "LIVE012",
       "label": "LIVE012",
@@ -312,13 +323,13 @@
       "degree": 30
     },
     {
-      "id": "theme:dollar-system-and-gray-trade",
-      "key": "dollar-system-and-gray-trade",
-      "label": "美元体系与灰色贸易",
-      "fullLabel": "美元体系与灰色贸易",
-      "type": "theme",
-      "route": "themes/dollar-system-and-gray-trade",
-      "summary": "讨论石油美元的真实脆弱点，究竟藏在公开统计之外的哪些灰色交易链条里。",
+      "id": "concept:hidden-debt",
+      "key": "hidden-debt",
+      "label": "隐形债务",
+      "fullLabel": "隐形债务",
+      "type": "concept",
+      "route": "concepts/hidden-debt",
+      "summary": "表外、体外和合作链条里的债务不在显性报表中充分呈现，却会在危机时重新压回主体。",
       "status": null,
       "degree": 29
     },
@@ -385,17 +396,6 @@
       "type": "theme",
       "route": "themes/singapore-and-small-state-survival",
       "summary": "讨论新加坡如何把规则、海峡、人才和谨慎外交组合成一套小国长期生存方法。",
-      "status": null,
-      "degree": 28
-    },
-    {
-      "id": "concept:hidden-debt",
-      "key": "hidden-debt",
-      "label": "隐形债务",
-      "fullLabel": "隐形债务",
-      "type": "concept",
-      "route": "concepts/hidden-debt",
-      "summary": "表外、体外和合作链条里的债务不在显性报表中充分呈现，却会在危机时重新压回主体。",
       "status": null,
       "degree": 28
     },
@@ -873,6 +873,17 @@
       "degree": 19
     },
     {
+      "id": "live:LIVE042",
+      "key": "LIVE042",
+      "label": "LIVE042",
+      "fullLabel": "LIVE042 · 北方大城市连家里放一架无人机都不许了！领先多年的技术，会不会像武林一样被禁成表演？",
+      "type": "live",
+      "route": "lives/LIVE042",
+      "summary": "明清时家里藏一面藤牌都可能算谋反，练武的最后只剩铁布衫。",
+      "status": "published",
+      "degree": 19
+    },
+    {
       "id": "model:subsidy-capital-flywheel",
       "key": "subsidy-capital-flywheel",
       "label": "补贴资本飞轮",
@@ -880,6 +891,17 @@
       "type": "model",
       "route": "models/subsidy-capital-flywheel",
       "summary": "补贴资本飞轮解释地方财政、产业基金、企业估值和再融资如何互相放大。",
+      "status": null,
+      "degree": 18
+    },
+    {
+      "id": "theme:local-fiscal-stress-and-hidden-debt",
+      "key": "local-fiscal-stress-and-hidden-debt",
+      "label": "地方财政与隐性债务",
+      "fullLabel": "地方财政与隐性债务",
+      "type": "theme",
+      "route": "themes/local-fiscal-stress-and-hidden-debt",
+      "summary": "地方财政吃紧后，系统会通过更复杂的融资、资产包装和风险转移来维持运转。",
       "status": null,
       "degree": 18
     },
@@ -917,15 +939,15 @@
       "degree": 18
     },
     {
-      "id": "theme:local-fiscal-stress-and-hidden-debt",
-      "key": "local-fiscal-stress-and-hidden-debt",
-      "label": "地方财政与隐性债务",
-      "fullLabel": "地方财政与隐性债务",
-      "type": "theme",
-      "route": "themes/local-fiscal-stress-and-hidden-debt",
-      "summary": "地方财政吃紧后，系统会通过更复杂的融资、资产包装和风险转移来维持运转。",
-      "status": null,
-      "degree": 17
+      "id": "episode:EP180",
+      "key": "EP180",
+      "label": "EP180",
+      "fullLabel": "EP180 · 俄乌惨烈互捅！四方博弈暗流涌动，谁是地堡老头真正的敌人？",
+      "type": "episode",
+      "route": "episodes/EP180",
+      "summary": "俄乌战争像两个互捅的血人。乌克兰无人机在俄罗斯纵深来去自如，炸掉约一成炼油产能。克里米亚的炼油设施和油轮被逐个点名。俄罗斯用多型导弹饱和攻击基辅。乌克兰的重点目标却早被炸完，经济全靠欧盟输血吊命。\n\n重点是东大态度之变。川普撤盘后，接手乌克兰的欧盟正是东大最大的贸易顺差来源。继续挺俄等于把欧盟变成敌人。于是东大表面亲如兄弟，实际处处收手。再叠加油价下行掏空俄财政，预测年底前战争出现阶段性结果。",
+      "status": "curated",
+      "degree": 18
     },
     {
       "id": "theme:southeast-asia-fragmentation-and-bloc-competition",
@@ -979,17 +1001,6 @@
       "type": "episode",
       "route": "episodes/EP168",
       "summary": "重读美伊协议，解读和主流叙事相反。主流叙事是美国出问题、川普认输、伊朗大胜。这份协议不是认输，是委内瑞拉模式的 2.0 版。美国要的从来就是打掉最高领导人，换一个能谈的。脏活交给以色列。\n\n没换到合适的，就先签协议，做时间的朋友。油价没涨到 200 至 300 美元，说明需求本来就被高估了。美国还趁机卖委内瑞拉的油去库存。真正被盯住的是灰色贸易，逼伊朗回SWIFT和美元体系才是开战动机。",
-      "status": "curated",
-      "degree": 17
-    },
-    {
-      "id": "episode:EP180",
-      "key": "EP180",
-      "label": "EP180",
-      "fullLabel": "EP180 · 俄乌惨烈互捅！四方博弈暗流涌动，谁是地堡老头真正的敌人？",
-      "type": "episode",
-      "route": "episodes/EP180",
-      "summary": "俄乌战争像两个互捅的血人。乌克兰无人机在俄罗斯纵深来去自如，炸掉约一成炼油产能。克里米亚的炼油设施和油轮被逐个点名。俄罗斯用多型导弹饱和攻击基辅。乌克兰的重点目标却早被炸完，经济全靠欧盟输血吊命。\n\n重点是东大态度之变。川普撤盘后，接手乌克兰的欧盟正是东大最大的贸易顺差来源。继续挺俄等于把欧盟变成敌人。于是东大表面亲如兄弟，实际处处收手。再叠加油价下行掏空俄财政，预测年底前战争出现阶段性结果。",
       "status": "curated",
       "degree": 17
     },
@@ -1335,6 +1346,17 @@
       "degree": 14
     },
     {
+      "id": "theme:planned-systems-and-innovation",
+      "key": "planned-systems-and-innovation",
+      "label": "大计划体制与创新约束",
+      "fullLabel": "大计划体制与创新约束",
+      "type": "theme",
+      "route": "themes/planned-systems-and-innovation",
+      "summary": "讨论统一目标和强组织动员如何带来短期速度，又如何在长期压缩创新、纠错与自发能动性。",
+      "status": null,
+      "degree": 13
+    },
+    {
       "id": "model:chokepoint-order-model",
       "key": "chokepoint-order-model",
       "label": "海峡秩序模型",
@@ -1544,17 +1566,6 @@
       "degree": 13
     },
     {
-      "id": "theme:planned-systems-and-innovation",
-      "key": "planned-systems-and-innovation",
-      "label": "大计划体制与创新约束",
-      "fullLabel": "大计划体制与创新约束",
-      "type": "theme",
-      "route": "themes/planned-systems-and-innovation",
-      "summary": "讨论统一目标和强组织动员如何带来短期速度，又如何在长期压缩创新、纠错与自发能动性。",
-      "status": null,
-      "degree": 12
-    },
-    {
       "id": "concept:price-war-trap",
       "key": "price-war-trap",
       "label": "低价竞争陷阱",
@@ -1573,6 +1584,17 @@
       "type": "theme",
       "route": "themes/youth-withdrawal-and-lying-flat",
       "summary": "讨论年轻人在主流机会、劳动回报和身份路径收缩后，如何通过低欲望、退出和躺平保留有限主体性。",
+      "status": null,
+      "degree": 12
+    },
+    {
+      "id": "theme:time-horizon-and-foresight",
+      "key": "time-horizon-and-foresight",
+      "label": "时间尺度与资产前瞻",
+      "fullLabel": "时间尺度与资产前瞻",
+      "type": "theme",
+      "route": "themes/time-horizon-and-foresight",
+      "summary": "讨论人物与企业如何在不同周期里提前摆放自己，而不是等结果发生后再被动解释。",
       "status": null,
       "degree": 12
     },
@@ -1764,6 +1786,17 @@
       "degree": 12
     },
     {
+      "id": "episode:EP210",
+      "key": "EP210",
+      "label": "EP210",
+      "fullLabel": "EP210 · 比外包内卷更可怕的，是我们正被世界淘汰！China GT起火事故背后的三重困境",
+      "type": "episode",
+      "route": "episodes/EP210",
+      "summary": "9 月 5 日 China GT 上海站 GT3 组正赛第七圈出了事故。两辆赛车冲出赛道，撞上 91 号法拉利的油箱侧面，车瞬间起火。把被困的英国车手拖出来的是停车赶来的荷兰车手，49 秒里现场只有他一个人在救。赛事的钱花在明星、冠名和流量上，救援据说层层外包，一线的人一天拿六十块。行业越卷越压成本，专业、责任和安全底线跟着被挤掉。拿钱就能摆平一切的习惯，放到把安全当硬底线的国际同行面前，会被直接判不合格。",
+      "status": "curated",
+      "degree": 12
+    },
+    {
       "id": "concept:refuge-premium",
       "key": "refuge-premium",
       "label": "避险溢价",
@@ -1819,17 +1852,6 @@
       "degree": 11
     },
     {
-      "id": "theme:time-horizon-and-foresight",
-      "key": "time-horizon-and-foresight",
-      "label": "时间尺度与资产前瞻",
-      "fullLabel": "时间尺度与资产前瞻",
-      "type": "theme",
-      "route": "themes/time-horizon-and-foresight",
-      "summary": "讨论人物与企业如何在不同周期里提前摆放自己，而不是等结果发生后再被动解释。",
-      "status": null,
-      "degree": 11
-    },
-    {
       "id": "theme:data-cosmetics-and-false-prosperity",
       "key": "data-cosmetics-and-false-prosperity",
       "label": "数据粉饰与虚假繁荣",
@@ -1848,6 +1870,17 @@
       "type": "model",
       "route": "models/small-state-balancing-model",
       "summary": "小国平衡术解释小国在大国之间维持生存空间，靠位置、合法性和现实利益而非纯姿态。",
+      "status": null,
+      "degree": 11
+    },
+    {
+      "id": "concept:expectation-selling",
+      "key": "expectation-selling",
+      "label": "预期贩卖",
+      "fullLabel": "预期贩卖",
+      "type": "concept",
+      "route": "concepts/expectation-selling",
+      "summary": "通过出售可理解、可规划、可购买的未来想象，中间人获得影响力和收益。",
       "status": null,
       "degree": 11
     },
@@ -1940,6 +1973,17 @@
       "degree": 11
     },
     {
+      "id": "episode:EP206",
+      "key": "EP206",
+      "label": "EP206",
+      "fullLabel": "EP206 · 地主家傻儿子卖了霍金价？拆解宇树科技暴涨与王兴兴诡异表情。",
+      "type": "episode",
+      "route": "episodes/EP206",
+      "summary": "宇树科技上市当天开盘冲到一千块，市值一步到位，王兴兴成了九零后首富，人在台上却眉头紧锁。地主家的傻儿子卖出霍金的身价，说的是估值按具身智能龙头给足，公司真正拿得出手的是运动控制，通用智能那部分还远没长出来。价格一次性把往后二三十年的成长预期算完，公司此后每走一步都在给这个价格补课，不是在做新东西。把股价推上去的是上市前就在名单里的机构和国资。它们冲的是账面上的浮盈倍数，拿这份成绩单去募下一期基金、去交差。开盘能交易的只有总股本的七个多点，缺了对手盘，价格只能往一个方向走。",
+      "status": "curated",
+      "degree": 11
+    },
+    {
       "id": "episode:EP209",
       "key": "EP209",
       "label": "EP209",
@@ -1947,17 +1991,6 @@
       "type": "episode",
       "route": "episodes/EP209",
       "summary": "9 月 4 日新加坡外交部和警方通报，52 名公民在广西涉嫌参与传销被捕。这是新加坡人在海外单次被扣最多的一次。使馆和总领馆探视了全部 52 人，同时讲明不干预中国的司法程序。这批人搞的是 1040 阳光工程，一个在广西活了二十多年的老套路。交 6.98 万元买入伙资格，拉三个人再往下复制。凑够 29 人当上老总，拿满 1040 万出局。它一件东西都不卖，靠的是把北部湾开发和南宁的新楼认领成自己的功劳。骗新加坡人的多半也是新加坡人，亲戚连着亲戚，话又都听得懂。",
-      "status": "curated",
-      "degree": 11
-    },
-    {
-      "id": "episode:EP210",
-      "key": "EP210",
-      "label": "EP210",
-      "fullLabel": "EP210 · 比外包内卷更可怕的，是我们正被世界淘汰！China GT起火事故背后的三重困境",
-      "type": "episode",
-      "route": "episodes/EP210",
-      "summary": "9 月 5 日 China GT 上海站 GT3 组正赛第七圈出了事故。两辆赛车冲出赛道，撞上 91 号法拉利的油箱侧面，车瞬间起火。把被困的英国车手拖出来的是停车赶来的荷兰车手，49 秒里现场只有他一个人在救。赛事的钱花在明星、冠名和流量上，救援据说层层外包，一线的人一天拿六十块。行业越卷越压成本，专业、责任和安全底线跟着被挤掉。拿钱就能摆平一切的习惯，放到把安全当硬底线的国际同行面前，会被直接判不合格。",
       "status": "curated",
       "degree": 11
     },
@@ -2028,17 +2061,6 @@
       "degree": 10
     },
     {
-      "id": "concept:expectation-selling",
-      "key": "expectation-selling",
-      "label": "预期贩卖",
-      "fullLabel": "预期贩卖",
-      "type": "concept",
-      "route": "concepts/expectation-selling",
-      "summary": "通过出售可理解、可规划、可购买的未来想象，中间人获得影响力和收益。",
-      "status": null,
-      "degree": 10
-    },
-    {
       "id": "model:political-embedded-enterprise",
       "key": "political-embedded-enterprise",
       "label": "政企嵌入企业模型",
@@ -2090,6 +2112,17 @@
       "type": "episode",
       "route": "episodes/EP088",
       "summary": "上海楼市沪七条的功能是托而不救、托而不解。松动二三线居民来沪买房的门槛，让交易数字别太难看。想卖房跑路、想置换改善的人依然卖不动。像只让吃饭不让排泄的小貔貅。日本三支箭管用，是家庭部门用 30 年把负债表压平。中国楼市八支箭也难找回头路。普通人接下来面对三个字。税压在中小私营业主身上，再传到员工。涨是水电煤气和消费品普涨先于资产反转。托是地价估值被国企互拍撑着走。下行的时候，现金比房子更像权利。",
+      "status": "curated",
+      "degree": 10
+    },
+    {
+      "id": "episode:EP111",
+      "key": "EP111",
+      "label": "EP111",
+      "fullLabel": "EP111 · 张雪夺冠刷屏：别用 “时代没机会”，掐灭年轻人的追梦底气。",
+      "type": "episode",
+      "route": "episodes/EP111",
+      "summary": "张雪从湘西修车学徒做到世界机车赛冠军。借这段经历正面反驳一种流行叙事，说普通人没机会了，所以最好尽早放弃梦想。时代机会分配不均是事实。但机会不是被动等来的。它靠持续投入、行动，和不肯被安全路径说服。过早把年轻人送进一个他根本不想要的“稳定位置”，很可能比失败更早杀死一个人。",
       "status": "curated",
       "degree": 10
     },
@@ -2178,17 +2211,6 @@
       "type": "episode",
       "route": "episodes/EP203",
       "summary": "重庆时代峰峻楼下的聚集闹成了群体事件，网上吵的几乎全是男女对立。真正在水下的是流量行业玩了十几年的老套路。十几年前在机场安排两拨粉丝同时接机，挤爆玻璃、闹上新闻，路数一模一样。易烊千玺靠一部残障题材的电影重新拿回关注度，那是他一个人的本事，代表不了没出圈的第五代第六代练习生。发作品慢又费钱，搭一个对立的架子最便宜，两边自己就吵起来。围在门口喊老公的粉丝，和举着手机开直播喊正义的男性，都在分这波热度。公司隐身，骂声落在粉丝身上。真正让由头一给就上头的，是大量年轻人失业半失业、情绪没有地方去。",
-      "status": "curated",
-      "degree": 10
-    },
-    {
-      "id": "episode:EP206",
-      "key": "EP206",
-      "label": "EP206",
-      "fullLabel": "EP206 · 地主家傻儿子卖了霍金价？拆解宇树科技暴涨与王兴兴诡异表情。",
-      "type": "episode",
-      "route": "episodes/EP206",
-      "summary": "宇树科技上市当天开盘冲到一千块，市值一步到位，王兴兴成了九零后首富，人在台上却眉头紧锁。地主家的傻儿子卖出霍金的身价，说的是估值按具身智能龙头给足，公司真正拿得出手的是运动控制，通用智能那部分还远没长出来。价格一次性把往后二三十年的成长预期算完，公司此后每走一步都在给这个价格补课，不是在做新东西。把股价推上去的是上市前就在名单里的机构和国资。它们冲的是账面上的浮盈倍数，拿这份成绩单去募下一期基金、去交差。开盘能交易的只有总股本的七个多点，缺了对手盘，价格只能往一个方向走。",
       "status": "curated",
       "degree": 10
     },
@@ -2354,6 +2376,17 @@
       "type": "theme",
       "route": "themes/ev-safety-and-consumer-testing",
       "summary": "讨论新能源车与相关电池系统如何把安全验证不足的代价，转移到真实用户和真实事故里。",
+      "status": null,
+      "degree": 9
+    },
+    {
+      "id": "model:institutional-formalism-spiral",
+      "key": "institutional-formalism-spiral",
+      "label": "制度形式主义螺旋",
+      "fullLabel": "制度形式主义螺旋",
+      "type": "model",
+      "route": "models/institutional-formalism-spiral",
+      "summary": "组织一旦开始依赖仪式、排名、头衔和场面来证明自己有效，就会不断加码这些外壳，同时越来越失去真正解决问题的能力。",
       "status": null,
       "degree": 9
     },
@@ -2574,17 +2607,6 @@
       "type": "episode",
       "route": "episodes/EP107",
       "summary": "主流看多黄金唱衰美元，金价却走低。1974 年沙特石油美元协议把石油贸易锁进美元结算，这是美元霸权根基。灰色石油绕开 SWIFT，用黄金或东方大国货币结算。日供给超 380 万桶，占全球贸易 11% 以上。来源几乎全是俄、伊朗、委内瑞拉。非美元结算占比早超 50%。川普打委内瑞拉、伊朗不是收缩，是低成本堵蚂蚁洞的新门罗主义。灰贸一旦无利可图，90% 原油重回美元结算。未来 12 个月美元强黄金弱。",
-      "status": "curated",
-      "degree": 9
-    },
-    {
-      "id": "episode:EP111",
-      "key": "EP111",
-      "label": "EP111",
-      "fullLabel": "EP111 · 张雪夺冠刷屏：别用 “时代没机会”，掐灭年轻人的追梦底气。",
-      "type": "episode",
-      "route": "episodes/EP111",
-      "summary": "张雪从湘西修车学徒做到世界机车赛冠军。借这段经历正面反驳一种流行叙事，说普通人没机会了，所以最好尽早放弃梦想。时代机会分配不均是事实。但机会不是被动等来的。它靠持续投入、行动，和不肯被安全路径说服。过早把年轻人送进一个他根本不想要的“稳定位置”，很可能比失败更早杀死一个人。",
       "status": "curated",
       "degree": 9
     },
@@ -2838,17 +2860,6 @@
       "type": "theme",
       "route": "themes/film-industry-and-traffic-logic",
       "summary": "关注影视生产如何越来越服从人设、粉丝和宣发流量，而非角色与作品本身。",
-      "status": null,
-      "degree": 8
-    },
-    {
-      "id": "model:institutional-formalism-spiral",
-      "key": "institutional-formalism-spiral",
-      "label": "制度形式主义螺旋",
-      "fullLabel": "制度形式主义螺旋",
-      "type": "model",
-      "route": "models/institutional-formalism-spiral",
-      "summary": "组织一旦开始依赖仪式、排名、头衔和场面来证明自己有效，就会不断加码这些外壳，同时越来越失去真正解决问题的能力。",
       "status": null,
       "degree": 8
     },
@@ -3898,6 +3909,17 @@
       "degree": 6
     },
     {
+      "id": "theme:performative-governance-and-ritual-display",
+      "key": "performative-governance-and-ritual-display",
+      "label": "形式主义治理与仪式表演",
+      "fullLabel": "形式主义治理与仪式表演",
+      "type": "theme",
+      "route": "themes/performative-governance-and-ritual-display",
+      "summary": "关注治理如何通过热闹、仪式和可见动作来替代真正的问题解决。",
+      "status": null,
+      "degree": 6
+    },
+    {
       "id": "theme:academic-bureaucracy-and-knowledge-decline",
       "key": "academic-bureaucracy-and-knowledge-decline",
       "label": "学术官僚化与知识退化",
@@ -4195,6 +4217,17 @@
       "degree": 6
     },
     {
+      "id": "theme:liquor-financialization-and-table-culture",
+      "key": "liquor-financialization-and-table-culture",
+      "label": "白酒金融化与餐桌秩序",
+      "fullLabel": "白酒金融化与餐桌秩序",
+      "type": "theme",
+      "route": "themes/liquor-financialization-and-table-culture",
+      "summary": "讨论白酒如何从饮用品变成金融品，又如何因为餐桌权力结构变化而失去旧的消费基础。",
+      "status": null,
+      "degree": 5
+    },
+    {
       "id": "model:boundary-governance",
       "key": "boundary-governance",
       "label": "边界治理模型",
@@ -4448,6 +4481,17 @@
       "degree": 5
     },
     {
+      "id": "model:crisis-selection",
+      "key": "crisis-selection",
+      "label": "危机筛选",
+      "fullLabel": "危机筛选",
+      "type": "model",
+      "route": "models/crisis-selection",
+      "summary": "危机筛选解释危机如何把旧中心筛下去，并把边缘角色推向前台。",
+      "status": null,
+      "degree": 5
+    },
+    {
       "id": "concept:crisis-power-reallocation",
       "key": "crisis-power-reallocation",
       "label": "危机中的权力重排",
@@ -4477,17 +4521,6 @@
       "type": "concept",
       "route": "concepts/new-media-politician",
       "summary": "靠新媒体直接连接受众、绕过传统组织和选举路径崛起的新型权力人物。",
-      "status": null,
-      "degree": 5
-    },
-    {
-      "id": "theme:performative-governance-and-ritual-display",
-      "key": "performative-governance-and-ritual-display",
-      "label": "形式主义治理与仪式表演",
-      "fullLabel": "形式主义治理与仪式表演",
-      "type": "theme",
-      "route": "themes/performative-governance-and-ritual-display",
-      "summary": "关注治理如何通过热闹、仪式和可见动作来替代真正的问题解决。",
       "status": null,
       "degree": 5
     },
@@ -4609,6 +4642,17 @@
       "type": "episode",
       "route": "episodes/EP022",
       "summary": "《人妻约会指南》不是一篇单纯猎奇的网文。它更像一类富裕家庭二代人格结构的外露样本。李新野这类人聪明、见过世面、又强烈厌父。但他们往往并没有真正摆脱上一代的路径和价值观。父辈的短期暴富逻辑、性别物化和自我中心，只是被用更体面的语言重新包装了一遍。",
+      "status": "curated",
+      "degree": 5
+    },
+    {
+      "id": "episode:EP023",
+      "key": "EP023",
+      "label": "EP023",
+      "fullLabel": "EP023 · 国内县级马拉松赛事全取消，背后透露什么？忽然收紧的马拉松。",
+      "type": "episode",
+      "route": "episodes/EP023",
+      "summary": "县区级马拉松被大幅收紧，可以理解为一种低质量文旅发展模式的退潮。很多地方马拉松早就不是“全民运动”或“城市品牌”的成功样板。它是财政卷、隐藏人力成本、上层看业绩下层怨声载道的典型项目。边际收益越来越差，收紧几乎是必然结果。",
       "status": "curated",
       "degree": 5
     },
@@ -4800,17 +4844,6 @@
       "degree": 5
     },
     {
-      "id": "theme:liquor-financialization-and-table-culture",
-      "key": "liquor-financialization-and-table-culture",
-      "label": "白酒金融化与餐桌秩序",
-      "fullLabel": "白酒金融化与餐桌秩序",
-      "type": "theme",
-      "route": "themes/liquor-financialization-and-table-culture",
-      "summary": "讨论白酒如何从饮用品变成金融品，又如何因为餐桌权力结构变化而失去旧的消费基础。",
-      "status": null,
-      "degree": 4
-    },
-    {
       "id": "model:bounded-social-experiment",
       "key": "bounded-social-experiment",
       "label": "边界化社会试验",
@@ -4939,6 +4972,17 @@
       "type": "model",
       "route": "models/rule-bounded-rights-defense",
       "summary": "规则边界型维权模型用权利基础和过程边界区分正当维权与撒泼勒索。",
+      "status": null,
+      "degree": 4
+    },
+    {
+      "id": "model:centralized-control-backfire",
+      "key": "centralized-control-backfire",
+      "label": "集中控制反噬",
+      "fullLabel": "集中控制反噬",
+      "type": "model",
+      "route": "models/centralized-control-backfire",
+      "summary": "集中控制把监管便利和低成本做出来，也会把失效点集中到同一个中心节点上。",
       "status": null,
       "degree": 4
     },
@@ -5086,17 +5130,6 @@
       "degree": 4
     },
     {
-      "id": "model:crisis-selection",
-      "key": "crisis-selection",
-      "label": "危机筛选",
-      "fullLabel": "危机筛选",
-      "type": "model",
-      "route": "models/crisis-selection",
-      "summary": "危机筛选解释危机如何把旧中心筛下去，并把边缘角色推向前台。",
-      "status": null,
-      "degree": 4
-    },
-    {
       "id": "theme:crisis-era-power-reallocation",
       "key": "crisis-era-power-reallocation",
       "label": "危机时代的权力重排",
@@ -5185,6 +5218,17 @@
       "degree": 4
     },
     {
+      "id": "concept:ceremonial-formalism",
+      "key": "ceremonial-formalism",
+      "label": "仪式型形式主义",
+      "fullLabel": "仪式型形式主义",
+      "type": "concept",
+      "route": "concepts/ceremonial-formalism",
+      "summary": "组织越来越依赖场面、仪式和整齐感来证明自己有效，而真实目标和真实功能却被持续挤到后面。",
+      "status": null,
+      "degree": 4
+    },
+    {
       "id": "concept:appeasing-consultant",
       "key": "appeasing-consultant",
       "label": "迎合型顾问",
@@ -5236,17 +5280,6 @@
       "type": "episode",
       "route": "episodes/EP010",
       "summary": "接着娃哈哈往下讲信托。张兰和许家印两次被击穿，性质完全不同。张兰是技术瑕疵，发起人自己控制信托资金，设立环节就违规。许家印更可怕。信托外壳没问题，但注入的钱有瑕疵，司法可以一路往前追溯。此后信托不再是放进去就安全的工具。估计中国 80% 到 90% 的富人资产都有瑕疵。早年低价承接国有资产的源头很难洗干净。香港保险、海外理财同样难逃。决定资产安全的不是结构，而是国家愿不愿意继续往前追。",
-      "status": "curated",
-      "degree": 4
-    },
-    {
-      "id": "episode:EP023",
-      "key": "EP023",
-      "label": "EP023",
-      "fullLabel": "EP023 · 国内县级马拉松赛事全取消，背后透露什么？忽然收紧的马拉松。",
-      "type": "episode",
-      "route": "episodes/EP023",
-      "summary": "县区级马拉松被大幅收紧，可以理解为一种低质量文旅发展模式的退潮。很多地方马拉松早就不是“全民运动”或“城市品牌”的成功样板。它是财政卷、隐藏人力成本、上层看业绩下层怨声载道的典型项目。边际收益越来越差，收紧几乎是必然结果。",
       "status": "curated",
       "degree": 4
     },
@@ -5427,6 +5460,17 @@
       "degree": 3
     },
     {
+      "id": "concept:deposit-funded-debt-rollover",
+      "key": "deposit-funded-debt-rollover",
+      "label": "存款补贴化债",
+      "fullLabel": "存款补贴化债",
+      "type": "concept",
+      "route": "concepts/deposit-funded-debt-rollover",
+      "summary": "居民的低息存款被银行拿去置换地方的高息旧债，化债省下来的利息，实际由存钱的人用被压低的收益承担。",
+      "status": null,
+      "degree": 3
+    },
+    {
       "id": "model:first-principle-thinking",
       "key": "first-principle-thinking",
       "label": "第一性原理决策模型",
@@ -5533,17 +5577,6 @@
       "type": "person",
       "route": "people/hu-chenfeng",
       "summary": "户晨风是中国网络内容创作者和直播博主，节目借他观察破壁式表达、阶层差异可见化和平台治理边界。",
-      "status": null,
-      "degree": 3
-    },
-    {
-      "id": "model:centralized-control-backfire",
-      "key": "centralized-control-backfire",
-      "label": "集中控制反噬",
-      "fullLabel": "集中控制反噬",
-      "type": "model",
-      "route": "models/centralized-control-backfire",
-      "summary": "集中控制把监管便利和低成本做出来，也会把失效点集中到同一个中心节点上。",
       "status": null,
       "degree": 3
     },
@@ -5977,17 +6010,6 @@
       "degree": 3
     },
     {
-      "id": "concept:ceremonial-formalism",
-      "key": "ceremonial-formalism",
-      "label": "仪式型形式主义",
-      "fullLabel": "仪式型形式主义",
-      "type": "concept",
-      "route": "concepts/ceremonial-formalism",
-      "summary": "组织越来越依赖场面、仪式和整齐感来证明自己有效，而真实目标和真实功能却被持续挤到后面。",
-      "status": null,
-      "degree": 3
-    },
-    {
       "id": "concept:hidden-labor-subsidy",
       "key": "hidden-labor-subsidy",
       "label": "隐形人力补贴",
@@ -6050,6 +6072,17 @@
       "type": "concept",
       "route": "concepts/middle-income-trap",
       "summary": "一个经济体长期卡在中等收入区间：低端优势已经用完，高端跃迁又被制度或人才短板锁死，上不去也掉不下来。",
+      "status": null,
+      "degree": 3
+    },
+    {
+      "id": "concept:centralized-control-failure",
+      "key": "centralized-control-failure",
+      "label": "中心失灵",
+      "fullLabel": "中心失灵",
+      "type": "concept",
+      "route": "concepts/centralized-control-failure",
+      "summary": "权力、决策和兜底都集中到一个中心后，系统会更好管理，也更容易把单点故障放大成整体故障。",
       "status": null,
       "degree": 3
     },
@@ -6259,17 +6292,6 @@
       "type": "model",
       "route": "models/trauma-loop",
       "summary": "创伤循环模型解释未被理解和处理的伤害，会以怀旧、灌输和错误想象反复回流。",
-      "status": null,
-      "degree": 2
-    },
-    {
-      "id": "concept:deposit-funded-debt-rollover",
-      "key": "deposit-funded-debt-rollover",
-      "label": "存款补贴化债",
-      "fullLabel": "存款补贴化债",
-      "type": "concept",
-      "route": "concepts/deposit-funded-debt-rollover",
-      "summary": "居民的低息存款被银行拿去置换地方的高息旧债，化债省下来的利息，实际由存钱的人用被压低的收益承担。",
       "status": null,
       "degree": 2
     },
@@ -6908,17 +6930,6 @@
       "type": "concept",
       "route": "concepts/direct-transfer-consumption",
       "summary": "现金直接到普通人手里，会进入日常消费毛细血管，形成朴素但真实的循环。",
-      "status": null,
-      "degree": 2
-    },
-    {
-      "id": "concept:centralized-control-failure",
-      "key": "centralized-control-failure",
-      "label": "中心失灵",
-      "fullLabel": "中心失灵",
-      "type": "concept",
-      "route": "concepts/centralized-control-failure",
-      "summary": "权力、决策和兜底都集中到一个中心后，系统会更好管理，也更容易把单点故障放大成整体故障。",
       "status": null,
       "degree": 2
     },
@@ -22851,6 +22862,101 @@
     {
       "source": "live:LIVE041",
       "target": "theme:homeland-and-civic-belonging",
+      "kind": "live-theme"
+    },
+    {
+      "source": "live:LIVE042",
+      "target": "episode:EP023",
+      "kind": "live-episode"
+    },
+    {
+      "source": "live:LIVE042",
+      "target": "episode:EP111",
+      "kind": "live-episode"
+    },
+    {
+      "source": "live:LIVE042",
+      "target": "episode:EP180",
+      "kind": "live-episode"
+    },
+    {
+      "source": "live:LIVE042",
+      "target": "episode:EP206",
+      "kind": "live-episode"
+    },
+    {
+      "source": "live:LIVE042",
+      "target": "episode:EP210",
+      "kind": "live-episode"
+    },
+    {
+      "source": "live:LIVE042",
+      "target": "concept:ceremonial-formalism",
+      "kind": "live-concept"
+    },
+    {
+      "source": "live:LIVE042",
+      "target": "concept:expectation-selling",
+      "kind": "live-concept"
+    },
+    {
+      "source": "live:LIVE042",
+      "target": "concept:deposit-funded-debt-rollover",
+      "kind": "live-concept"
+    },
+    {
+      "source": "live:LIVE042",
+      "target": "concept:centralized-control-failure",
+      "kind": "live-concept"
+    },
+    {
+      "source": "live:LIVE042",
+      "target": "concept:hidden-debt",
+      "kind": "live-concept"
+    },
+    {
+      "source": "live:LIVE042",
+      "target": "model:centralized-control-backfire",
+      "kind": "live-model"
+    },
+    {
+      "source": "live:LIVE042",
+      "target": "model:institutional-formalism-spiral",
+      "kind": "live-model"
+    },
+    {
+      "source": "live:LIVE042",
+      "target": "model:crisis-selection",
+      "kind": "live-model"
+    },
+    {
+      "source": "live:LIVE042",
+      "target": "theme:planned-systems-and-innovation",
+      "kind": "live-theme"
+    },
+    {
+      "source": "live:LIVE042",
+      "target": "theme:performative-governance-and-ritual-display",
+      "kind": "live-theme"
+    },
+    {
+      "source": "live:LIVE042",
+      "target": "theme:liquor-financialization-and-table-culture",
+      "kind": "live-theme"
+    },
+    {
+      "source": "live:LIVE042",
+      "target": "theme:time-horizon-and-foresight",
+      "kind": "live-theme"
+    },
+    {
+      "source": "live:LIVE042",
+      "target": "theme:local-fiscal-stress-and-hidden-debt",
+      "kind": "live-theme"
+    },
+    {
+      "source": "live:LIVE042",
+      "target": "theme:dollar-system-and-gray-trade",
       "kind": "live-theme"
     },
     {
