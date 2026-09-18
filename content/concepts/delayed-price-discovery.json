@@ -28,6 +28,10 @@
     {
       "id": "EP200",
       "note": "节目把核心地段的企稳称作面上企稳，挂牌量高企之下想卖掉只能比别人便宜，真实价格仍在被往后拖。"
+    },
+    {
+      "id": "EP213",
+      "note": "土地价格按原评估价维持，没有真实买家接手也不减值，真实价格被一直往后拖，拖到风险传进大行和险企的报表里。"
     }
   ],
   "signals": [
@@ -68,7 +72,8 @@
   "relatedConcepts": [
     "balance-sheet-support",
     "hidden-debt",
-    "stratified-pricing-market"
+    "stratified-pricing-market",
+    "price-without-market"
   ],
   "relatedModels": [
     "balance-sheet-maintenance",

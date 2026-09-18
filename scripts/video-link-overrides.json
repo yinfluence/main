@@ -1052,5 +1052,15 @@
       "platform": "youtube",
       "url": "https://www.youtube.com/watch?v=1AP2YUXmVMc"
     }
+  },
+  "EP213": {
+    "bilibili": {
+      "platform": "bilibili",
+      "url": "https://www.bilibili.com/video/BV1tDeu6fEMR/"
+    },
+    "youtube": {
+      "platform": "youtube",
+      "url": "https://www.youtube.com/watch?v=WlofJF-0bAs"
+    }
   }
 }

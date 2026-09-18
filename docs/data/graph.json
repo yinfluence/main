@@ -2,14 +2,14 @@
   "meta": {
     "title": "颖响力知识图谱",
     "subtitle": "节目、概念、模型、人物、主题之间的可视化连接网络",
-    "nodeCount": 733,
-    "linkCount": 3024,
+    "nodeCount": 735,
+    "linkCount": 3034,
     "typeCounts": {
       "model": 83,
       "live": 42,
       "theme": 92,
-      "concept": 239,
-      "episode": 212,
+      "concept": 240,
+      "episode": 213,
       "person": 65
     }
   },
@@ -23,7 +23,7 @@
       "route": "models/risk-transfer-chain",
       "summary": "系统不会立刻吞下风险，而是先沿着银行、企业、票据、供应链和普通人之间不断转手、延后和下沉。",
       "status": null,
-      "degree": 55
+      "degree": 56
     },
     {
       "id": "live:LIVE002",
@@ -279,6 +279,17 @@
       "degree": 30
     },
     {
+      "id": "concept:hidden-debt",
+      "key": "hidden-debt",
+      "label": "隐形债务",
+      "fullLabel": "隐形债务",
+      "type": "concept",
+      "route": "concepts/hidden-debt",
+      "summary": "表外、体外和合作链条里的债务不在显性报表中充分呈现，却会在危机时重新压回主体。",
+      "status": null,
+      "degree": 30
+    },
+    {
       "id": "live:LIVE012",
       "key": "LIVE012",
       "label": "LIVE012",
@@ -321,17 +332,6 @@
       "summary": "五年期存单给你一点六，这个数字一出来，复利这件事就不成立了。",
       "status": "curated",
       "degree": 30
-    },
-    {
-      "id": "concept:hidden-debt",
-      "key": "hidden-debt",
-      "label": "隐形债务",
-      "fullLabel": "隐形债务",
-      "type": "concept",
-      "route": "concepts/hidden-debt",
-      "summary": "表外、体外和合作链条里的债务不在显性报表中充分呈现，却会在危机时重新压回主体。",
-      "status": null,
-      "degree": 29
     },
     {
       "id": "episode:EP156",
@@ -807,6 +807,28 @@
       "degree": 20
     },
     {
+      "id": "live:LIVE042",
+      "key": "LIVE042",
+      "label": "LIVE042",
+      "fullLabel": "LIVE042 · 北方大城市连家里放一架无人机都不许了！领先多年的技术，会不会像武林一样被禁成表演？",
+      "type": "live",
+      "route": "lives/LIVE042",
+      "summary": "明清时家里藏一面藤牌都可能算谋反，练武的最后只剩铁布衫。",
+      "status": "published",
+      "degree": 20
+    },
+    {
+      "id": "theme:local-fiscal-stress-and-hidden-debt",
+      "key": "local-fiscal-stress-and-hidden-debt",
+      "label": "地方财政与隐性债务",
+      "fullLabel": "地方财政与隐性债务",
+      "type": "theme",
+      "route": "themes/local-fiscal-stress-and-hidden-debt",
+      "summary": "地方财政吃紧后，系统会通过更复杂的融资、资产包装和风险转移来维持运转。",
+      "status": null,
+      "degree": 19
+    },
+    {
       "id": "concept:pan-institutional-middle-class",
       "key": "pan-institutional-middle-class",
       "label": "泛体制中产",
@@ -873,17 +895,6 @@
       "degree": 19
     },
     {
-      "id": "live:LIVE042",
-      "key": "LIVE042",
-      "label": "LIVE042",
-      "fullLabel": "LIVE042 · 北方大城市连家里放一架无人机都不许了！领先多年的技术，会不会像武林一样被禁成表演？",
-      "type": "live",
-      "route": "lives/LIVE042",
-      "summary": "明清时家里藏一面藤牌都可能算谋反，练武的最后只剩铁布衫。",
-      "status": "published",
-      "degree": 19
-    },
-    {
       "id": "model:subsidy-capital-flywheel",
       "key": "subsidy-capital-flywheel",
       "label": "补贴资本飞轮",
@@ -891,17 +902,6 @@
       "type": "model",
       "route": "models/subsidy-capital-flywheel",
       "summary": "补贴资本飞轮解释地方财政、产业基金、企业估值和再融资如何互相放大。",
-      "status": null,
-      "degree": 18
-    },
-    {
-      "id": "theme:local-fiscal-stress-and-hidden-debt",
-      "key": "local-fiscal-stress-and-hidden-debt",
-      "label": "地方财政与隐性债务",
-      "fullLabel": "地方财政与隐性债务",
-      "type": "theme",
-      "route": "themes/local-fiscal-stress-and-hidden-debt",
-      "summary": "地方财政吃紧后，系统会通过更复杂的融资、资产包装和风险转移来维持运转。",
       "status": null,
       "degree": 18
     },
@@ -957,6 +957,17 @@
       "type": "theme",
       "route": "themes/southeast-asia-fragmentation-and-bloc-competition",
       "summary": "讨论东南亚如何从缓冲地带变成各方拉扯、重新站队和内部裂变并行发生的高风险区域。",
+      "status": null,
+      "degree": 17
+    },
+    {
+      "id": "theme:real-estate-deleveraging",
+      "key": "real-estate-deleveraging",
+      "label": "房地产去杠杆与风险出清",
+      "fullLabel": "房地产去杠杆与风险出清",
+      "type": "theme",
+      "route": "themes/real-estate-deleveraging",
+      "summary": "讨论房地产在下行周期里如何通过断供、重组、展期和资产处置逐步暴露风险。",
       "status": null,
       "degree": 17
     },
@@ -1049,17 +1060,6 @@
       "degree": 16
     },
     {
-      "id": "theme:real-estate-deleveraging",
-      "key": "real-estate-deleveraging",
-      "label": "房地产去杠杆与风险出清",
-      "fullLabel": "房地产去杠杆与风险出清",
-      "type": "theme",
-      "route": "themes/real-estate-deleveraging",
-      "summary": "讨论房地产在下行周期里如何通过断供、重组、展期和资产处置逐步暴露风险。",
-      "status": null,
-      "degree": 16
-    },
-    {
       "id": "model:narrative-leverage",
       "key": "narrative-leverage",
       "label": "叙事杠杆",
@@ -1133,6 +1133,17 @@
       "type": "model",
       "route": "models/rule-anchored-small-state-model",
       "summary": "小国要长期活下来，不能只靠地理好运，更要靠规则信誉、理性政府和可预期的制度自我约束。",
+      "status": null,
+      "degree": 15
+    },
+    {
+      "id": "model:balance-sheet-maintenance",
+      "key": "balance-sheet-maintenance",
+      "label": "资产负债表维持",
+      "fullLabel": "资产负债表维持",
+      "type": "model",
+      "route": "models/balance-sheet-maintenance",
+      "summary": "当系统进入压力期，各方优先做的不是立刻出清，而是先保住估值、抵押物和报表表面完整。",
       "status": null,
       "degree": 15
     },
@@ -1221,17 +1232,6 @@
       "type": "model",
       "route": "models/principal-agent",
       "summary": "委托代理模型解释外部顾问或职业代理人的激励，未必与委托方长期价值一致。",
-      "status": null,
-      "degree": 14
-    },
-    {
-      "id": "model:balance-sheet-maintenance",
-      "key": "balance-sheet-maintenance",
-      "label": "资产负债表维持",
-      "fullLabel": "资产负债表维持",
-      "type": "model",
-      "route": "models/balance-sheet-maintenance",
-      "summary": "当系统进入压力期，各方优先做的不是立刻出清，而是先保住估值、抵押物和报表表面完整。",
       "status": null,
       "degree": 14
     },
@@ -2028,6 +2028,17 @@
       "degree": 10
     },
     {
+      "id": "concept:delayed-price-discovery",
+      "key": "delayed-price-discovery",
+      "label": "价格发现延迟",
+      "fullLabel": "价格发现延迟",
+      "type": "concept",
+      "route": "concepts/delayed-price-discovery",
+      "summary": "真实价格本来应该尽快显现，但被托价、缓冲、票据和关系安排一层层往后拖，市场只剩名义稳定。",
+      "status": null,
+      "degree": 10
+    },
+    {
       "id": "theme:platform-governance-and-folk-discourse",
       "key": "platform-governance-and-folk-discourse",
       "label": "平台治理与民间话语",
@@ -2237,6 +2248,17 @@
       "degree": 10
     },
     {
+      "id": "episode:EP213",
+      "key": "EP213",
+      "label": "EP213",
+      "fullLabel": "EP213 · 账面好看背后藏巨雷？中国银行保险3600亿增资与828地产新政的底层真相",
+      "type": "episode",
+      "route": "episodes/EP213",
+      "summary": "9 月 6 日，工行、农行、进出口银行和四家国有险企等八家中央金融企业同日宣布补充资本，合计 3600 亿元，其中 3000 亿来自特别国债。这些机构的资本充足率和偿付能力都远高于监管线，缺的东西在账面下面。新房卖不动以后，地方让自家平台接盘托住地价，拿地去银行抵押贷款，贷款又变回出让金。风险顺着同业、理财和债券传到大行和险企。注资不去处理这批资产，只给下游的银行和险企多备一笔能吃下损失的本钱。8 月 28 日的地产新政，收紧的也正是这套拿地抵押的玩法。",
+      "status": "curated",
+      "degree": 10
+    },
+    {
       "id": "theme:east-asia-security-realignment",
       "key": "east-asia-security-realignment",
       "label": "东亚安全重组与日本转向",
@@ -2277,17 +2299,6 @@
       "type": "concept",
       "route": "concepts/phantom-growth",
       "summary": "系统通过报表、交易、融资和场面把增长做出来，但真实产业和真实利润并没有同步长出来。",
-      "status": null,
-      "degree": 9
-    },
-    {
-      "id": "concept:delayed-price-discovery",
-      "key": "delayed-price-discovery",
-      "label": "价格发现延迟",
-      "fullLabel": "价格发现延迟",
-      "type": "concept",
-      "route": "concepts/delayed-price-discovery",
-      "summary": "真实价格本来应该尽快显现，但被托价、缓冲、票据和关系安排一层层往后拖，市场只剩名义稳定。",
       "status": null,
       "degree": 9
     },
@@ -2875,6 +2886,17 @@
       "degree": 8
     },
     {
+      "id": "concept:balance-sheet-support",
+      "key": "balance-sheet-support",
+      "label": "资产负债表托底",
+      "fullLabel": "资产负债表托底",
+      "type": "concept",
+      "route": "concepts/balance-sheet-support",
+      "summary": "通过维持估值、价格和名义成交，先保住报表与抵押体系，再把真实压力向后延。",
+      "status": null,
+      "degree": 8
+    },
+    {
       "id": "model:distribution-bias",
       "key": "distribution-bias",
       "label": "资源分配偏置",
@@ -3399,17 +3421,6 @@
       "type": "model",
       "route": "models/attention-commerce-loop",
       "summary": "注意力商业闭环解释内容如何先制造注意力，再把注意力结算为品牌、交易或平台收益。",
-      "status": null,
-      "degree": 7
-    },
-    {
-      "id": "concept:balance-sheet-support",
-      "key": "balance-sheet-support",
-      "label": "资产负债表托底",
-      "fullLabel": "资产负债表托底",
-      "type": "concept",
-      "route": "concepts/balance-sheet-support",
-      "summary": "通过维持估值、价格和名义成交，先保住报表与抵押体系，再把真实压力向后延。",
       "status": null,
       "degree": 7
     },
@@ -4998,6 +5009,17 @@
       "degree": 4
     },
     {
+      "id": "theme:price-support-and-balance-sheet",
+      "key": "price-support-and-balance-sheet",
+      "label": "价格托底与账面维稳",
+      "fullLabel": "价格托底与账面维稳",
+      "type": "theme",
+      "route": "themes/price-support-and-balance-sheet",
+      "summary": "讨论价格、估值和票面成交如何被维持住，以便先保住报表、抵押物和融资条件。",
+      "status": null,
+      "degree": 4
+    },
+    {
       "id": "person:elon-musk",
       "key": "elon-musk",
       "label": "马斯克",
@@ -5610,17 +5632,6 @@
       "type": "model",
       "route": "models/succession-fracture-model",
       "summary": "继承裂缝模型解释强人或神权体制如何用短期接班换来长期合法性破口。",
-      "status": null,
-      "degree": 3
-    },
-    {
-      "id": "theme:price-support-and-balance-sheet",
-      "key": "price-support-and-balance-sheet",
-      "label": "价格托底与账面维稳",
-      "fullLabel": "价格托底与账面维稳",
-      "type": "theme",
-      "route": "themes/price-support-and-balance-sheet",
-      "summary": "讨论价格、估值和票面成交如何被维持住，以便先保住报表、抵押物和融资条件。",
       "status": null,
       "degree": 3
     },
@@ -7887,6 +7898,17 @@
       "type": "person",
       "route": "people/gianni-infantino",
       "summary": "因凡蒂诺是瑞士法律背景的体育组织行政人物、FIFA 现任主席(2016 年起),节目里他是 FIFA 在华推广动作的最终决策者。",
+      "status": null,
+      "degree": 1
+    },
+    {
+      "id": "concept:price-without-market",
+      "key": "price-without-market",
+      "label": "有价无市资产",
+      "fullLabel": "有价无市资产",
+      "type": "concept",
+      "route": "concepts/price-without-market",
+      "summary": "账面上有一个评估价，市场上却没有人按这个价买，想卖卖不掉的资产。",
       "status": null,
       "degree": 1
     },
@@ -16460,6 +16482,51 @@
       "kind": "episode-theme"
     },
     {
+      "source": "episode:EP213",
+      "target": "concept:price-without-market",
+      "kind": "episode-concept"
+    },
+    {
+      "source": "episode:EP213",
+      "target": "concept:balance-sheet-support",
+      "kind": "episode-concept"
+    },
+    {
+      "source": "episode:EP213",
+      "target": "concept:delayed-price-discovery",
+      "kind": "episode-concept"
+    },
+    {
+      "source": "episode:EP213",
+      "target": "concept:hidden-debt",
+      "kind": "episode-concept"
+    },
+    {
+      "source": "episode:EP213",
+      "target": "model:balance-sheet-maintenance",
+      "kind": "episode-model"
+    },
+    {
+      "source": "episode:EP213",
+      "target": "model:risk-transfer-chain",
+      "kind": "episode-model"
+    },
+    {
+      "source": "episode:EP213",
+      "target": "theme:local-fiscal-stress-and-hidden-debt",
+      "kind": "episode-theme"
+    },
+    {
+      "source": "episode:EP213",
+      "target": "theme:price-support-and-balance-sheet",
+      "kind": "episode-theme"
+    },
+    {
+      "source": "episode:EP213",
+      "target": "theme:real-estate-deleveraging",
+      "kind": "episode-theme"
+    },
+    {
       "source": "live:LIVE001",
       "target": "episode:EP090",
       "kind": "live-episode"
@@ -22887,6 +22954,11 @@
     {
       "source": "live:LIVE042",
       "target": "episode:EP210",
+      "kind": "live-episode"
+    },
+    {
+      "source": "live:LIVE042",
+      "target": "episode:EP213",
       "kind": "live-episode"
     },
     {

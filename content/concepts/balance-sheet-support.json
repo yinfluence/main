@@ -32,6 +32,10 @@
     {
       "id": "EP207",
       "note": "拉长年限让扛不住月供的家庭当场变成还得上，银行的坏账率立刻稳住，风险没有消失，只是被挡在了报表外面。"
+    },
+    {
+      "id": "EP213",
+      "note": "地方平台按原评估价自拿土地再抵押，银行账上多了足额抵押的贷款，平台账上多了一块稳定的土地资产，地价托住了报表就都健康。"
     }
   ],
   "signals": [
@@ -74,7 +78,8 @@
     "hidden-debt",
     "overseas-sink-project",
     "quasi-currency-support",
-    "stratified-pricing-market"
+    "stratified-pricing-market",
+    "price-without-market"
   ],
   "relatedModels": [
     "balance-sheet-maintenance",
