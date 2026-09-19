@@ -94,10 +94,11 @@ for p in eps:
     if n < 200 or n > 250: out.append((d['id'], n))
 print('   ', f'{len(out)} 期超区间: {out[:12]}' if out else '全部在区间内')
 
-print('== 标签能不能显示（tags 要有 content/keywords 词条）==')
+print('== 标签能不能显示（按 docs/data/site.json 构建后的全部词条算）==')
+# 2026-09-18 改：前端匹配的是 site.json 的 keywords，大半来自 keyword-definitions.d 与 content/people，
+# 只查 content/keywords 会把 57 期误报成一个标签都显示不出来
 names = set()
-for p in glob.glob('content/keywords/*.json'):
-    k = json.load(io.open(p, encoding='utf-8'))
+for k in site.get('keywords', []):
     if k.get('name'): names.add(k['name'])
     for a in k.get('aliases', []): names.add(a)
 empty, partial = [], 0

@@ -1,0 +1,117 @@
+{
+  "id": "cuba",
+  "name": "古巴",
+  "kind": "geography",
+  "asOf": "2026-09-19",
+  "sources": [
+    {
+      "title": "GAESA | Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/GAESA",
+      "note": "核对盖萨集团由古巴军方拥有和经营，业务覆盖旅游、零售、物流、外贸和金融，估计控制约四成经济"
+    },
+    {
+      "title": "Washington targets Cuba's military-run business empire | The World",
+      "url": "https://theworld.org/stories/2026/05/28/washington-targets-cubas-military-run-business-empire",
+      "note": "核对 2026 年 5 月美国针对盖萨集团加码制裁"
+    },
+    {
+      "title": "Sugar Industry Collapse in Cuba | Havana Times",
+      "url": "https://havanatimes.org/features/sugar-industry-collapse-in-cuba/",
+      "note": "核对 1989 年古巴出口糖约八百万吨"
+    },
+    {
+      "title": "Sugar production in Cuba has fallen again to its lowest level in over 100 years | CiberCuba",
+      "url": "https://en.cibercuba.com/noticias/2025-08-08-u1-e42839-s27061-nid308606-produccion-azucar-cuba-vuelve-caer-nivel-bajo-100",
+      "note": "核对 2024 至 2025 榨季产糖不足十五万吨，低于计划的二十六万五千吨，国内年消费六七十万吨需要进口"
+    },
+    {
+      "title": "Cuba's economy fell by 5% in 2025, according to an official research center | CiberCuba",
+      "url": "https://en.cibercuba.com/noticias/2026-02-10-u1-e197721-s27061-nid320542-economia-cuba-cayo-5-2025-segun-centro-estudios",
+      "note": "核对 2025 年经济下降约 5%，自 2020 年累计下降约 15%"
+    },
+    {
+      "title": "Cuba Records Real Annual Inflation of 70% in 2025, but the Government Puts It at Just 14% | Translating Cuba",
+      "url": "https://translatingcuba.com/cuba-records-real-annual-inflation-of-70-in-2025-but-the-government-puts-it-at-just-14/",
+      "note": "核对 2025 年官方通胀 14.07%，经济学家帕维尔维达尔估计实际约 70%"
+    },
+    {
+      "title": "Who are US Secretary of State Marco Rubio's parents? | South China Morning Post",
+      "url": "https://www.scmp.com/magazines/style/entertainment/article/3305948/who-are-us-secretary-state-marco-rubios-parents-mario-and-oriales-rubio-moved-miami-cuba-1956-and",
+      "note": "核对卢比奥父母 1956 年从古巴移居迈阿密，早于 1959 年卡斯特罗上台"
+    }
+  ],
+  "summary": "古巴是加勒比海最大的岛国，北距美国佛罗里达一百多公里。LIVE004 说川普的墙修到芬兰以后古巴没了用处，LIVE010 讲军队开的盖萨集团拿走了所有能换外汇的行业，判断古巴会按委内瑞拉那个模板收场。",
+  "description": "古巴位于墨西哥湾口，扼守佛罗里达海峡南侧，1959 年革命后由古巴共产党执政，冷战时期是苏联在西半球最重要的盟友，1962 年导弹危机就发生在这里。苏联解体后经济长期困难，委内瑞拉的石油援助一度撑住它。古巴军方经营的盖萨集团业务覆盖旅游、零售、物流、外贸和金融，外界估计它控制约四成经济。2024 至 2025 年榨季，古巴产糖不足十五万吨，1989 年仅出口就有约八百万吨。\n\n节目两次讲古巴，都放在美国修墙的框架里。LIVE004 说它原是灰色贸易的末梢，前哨价值随墙外移而消失。LIVE010 把重点放在内部，一支能开公司的军队怎样把一个国家的好行业全做烂。",
+  "nodeRole": "古巴的地缘价值来自位置。离佛罗里达最近处一百五十公里上下，冷战时被节目形容成苏联一艘不沉的航母，情报站能盯住整个北美。节目认为这层价值取决于大国的墙修在哪，墙修到芬兰、修到高加索以后，古巴从前哨掉成了圈外，剩下的用处主要是被当作下一个政权更替的样本。",
+  "impactNotes": [
+    "对美国来说，古巴离本土太近，节目提到俄罗斯的核潜艇到古巴基地靠岸、据说中国提供了三百架无人机，后院的风险会被重新计价。无人机那条节目自己标了据说，未经核实。",
+    "对古巴普通人来说，外汇被军方企业截走，政府手里没钱买石油，民间靠佛罗里达那头的小船私运药品、电子产品和汽车零件过日子，节目形容成蚂蚁搬家。",
+    "对拉美其他国家来说，古巴会不会走委内瑞拉那条路，关系到美国在西半球的清场顺序。节目认为伊朗一两年后也可能走这个模板。"
+  ],
+  "programAssociations": [
+    {
+      "title": "墙往外修，前哨就不值钱了",
+      "episodes": [
+        "LIVE004"
+      ],
+      "note": "LIVE004 讲川普修墙的副产品。古巴在灰色贸易里是末梢，从前动它的代价大于收益。墙修到芬兰之后，前哨刺探军情、摇旗呐喊的价值一起消失，古巴开始跟美国谈顶层设计。节目说卢比奥是古巴裔、跟那边有世仇，川普把事情全权交给他，没谈成是因为他知根知底、要得更多。节目拿肯尼迪那年对照，当年核导弹都拉出来了，现在古巴连头版都上不去。"
+    },
+    {
+      "title": "枪杆子做生意，好行业烂在手里",
+      "episodes": [
+        "LIVE010"
+      ],
+      "note": "LIVE010 以古巴为主线。盖萨集团占经济四成左右，按外汇算可能八九成，旅游、加油站、外币商店、电信、金融、能源全在它手里，外汇不结算给政府也不交税。节目用两组数字说代价，糖从八九年出口六百万吨掉到不足二十万吨（公开资料记的八九年出口量约八百万吨），镍从二二年九亿六千万美元跌到不足九千万。再梳理古巴靠苏联、再靠委内瑞拉活着，两个金主都没了，判断它大概率按委内瑞拉模板收场，关键人物是卡斯特罗弟弟的外孙。"
+    }
+  ],
+  "signalNotes": [
+    "美国对盖萨集团出新一轮制裁、细到具体行业时，节目会把它读成政权更替剧本在往前推，卢比奥的分量是判断力度的一个参照。",
+    "有人说古巴穷是被美国制裁出来的，节目的回应是它本身制度出了问题，钱被军方企业拿走，制裁只是外因。这一层是节目观点，外界对制裁影响的评估分歧很大。",
+    "官方通胀和民间物价差得很远时，古巴常被拿来当例子。2025 年官方通胀 14%，有经济学家估计实际接近 70%，节目引的食品涨七成与后者接近。",
+    "节目说俄罗斯的核潜艇到古巴基地靠岸，这类消息出现时，节目会拿冷战时的导弹危机对照，看的是美国后院风险有没有被重新点燃。"
+  ],
+  "extensionNotes": [
+    {
+      "title": "委内瑞拉",
+      "note": "古巴的第二个金主，也是节目给古巴结局找的模板。那边石油换这边的人，节目说守在那位总统身边的是古巴军人。"
+    },
+    {
+      "title": "卢比奥",
+      "note": "节目把他当作推动古巴变局的关键人物。节目说他父母是偷渡出去的，公开记录显示他父母 1956 年就移居迈阿密，早于卡斯特罗上台，这一处和节目说法不一致。"
+    },
+    {
+      "title": "灰色贸易",
+      "note": "LIVE004 把古巴放在灰色贸易的末梢，靠这条线勉强活着。LIVE010 说巴拿马和委内瑞拉先后被动，古巴的第二个金主也没了。"
+    },
+    {
+      "title": "政权更替剧本",
+      "note": "LIVE004 和 LIVE010 都挂了这个模型，古巴被节目当作剧本的下一页。"
+    },
+    {
+      "title": "新门罗主义",
+      "note": "美国把西半球当自家后院清场，古巴是节目眼中这张清单上的一项。"
+    }
+  ],
+  "aliases": [
+    "古巴共和国",
+    "Cuba"
+  ],
+  "relatedKeywords": [
+    "委内瑞拉",
+    "卢比奥",
+    "灰色贸易",
+    "新门罗主义",
+    "围栏论",
+    "特朗普"
+  ],
+  "episodes": [
+    {
+      "id": "LIVE004",
+      "note": "川普的墙修到芬兰，古巴这个前哨没了用处，开始跟美国谈顶层设计。"
+    },
+    {
+      "id": "LIVE010",
+      "note": "主线讲军队开的盖萨集团截走外汇，糖和镍一路崩，古巴大概率按委内瑞拉模板收场。"
+    }
+  ]
+}

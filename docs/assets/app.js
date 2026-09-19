@@ -26,6 +26,21 @@ const HOME_PLATFORM_LINKS = [
 ];
 const WEBSITE_LOG_ENTRIES = [
   {
+    date: '2026-09-19',
+    title: '全站对着字幕逐期核了一遍，化名换成真实对象',
+    items: [
+      '213 期节目和 42 场直播逐期读完字幕，把正文里每个数字、人名、机构名、引述回字幕核对。写反的立场、字幕里没有的细节、串到别期的内容都按原话改了，节目里讲了很久却没收进来的段落补进了观点、背景和直播间问答。原来只有一百来字的 86 期简介补到 200 字以上。核对记录里引用的字幕原句一共 9317 条，用脚本逐条回字幕查过，9289 条在标注行号找到，其余 28 条是记录在引页面原文或用省略号拼接，人工看过不是引错。',
+      '口播里说错的公开事实按外部资料改了，边界里写明原话和依据。例如数据投毒是百万分之一点六不是万分之一点六，马六甲走的是三成海运石油不是五成，澳洲外卖员时薪比最低工资高两成而不是 1.5 倍，五粮液是四季度巨亏而不是二季度两亿，碧桂园那 164 亿美元是债务不是资产，苏联出兵阿富汗在 1979 年底。公司人名的转写错误一并改正，保利德应为宝利德，赵克长应为赵克常，两级全球化应为两极全球化。',
+      '按用户决定，正文里的化名和讳称换成真实对象，丐帮写小米，华山派写华为，东大写中国，朗朗写伊朗。节目没点名、靠上下文或公开报道对应的，第一次出现处标推测。讲小说情节或拿小说人物打比方的句子保留原样。对照表写进了 sop/09，sop/05a 和 sop/08 里正文保留化名的旧规定作废。',
+      '慕容复、黄药师、欧阳锋、丁春秋、鸠摩智、刘正风这 6 个武侠对照，字幕里从没这样用过，是网站以前自己加的，按用户决定删掉词条页，车圈笑傲江湖地图从 12 派减到 6 派，标签旁的江湖徽章同步撤下。笑傲江湖标记原来挂在 7 期没用武侠化名的节目上，又漏了 6 期真在用的，按字幕重排。',
+      '关键词这边，直播里显示不出来的标签新建了 126 个词条，外部事实都挂了来源。已有词条逐条核了节目关联，349 处挂在某一期、那一期却没讲这个词的，撤下 154 处、改写 34 处。皇帝的新衣这个词条原来写成 EP142 的落点，EP142 一次都没提过，真正讲这个故事的是 EP001，已重写。',
+      '修了一个页面问题：概念词和主题词的词条页只显示机制说明那一栏，SOP 要求写的概念说明、主题说明一直没显示，343 个概念词条和 16 个主题词条受影响，现在按类型显示。',
+      'B 站全部 242 个投稿逐条查了接口。5 期会员标记跟实际不符已改，EP013 其实在 B 站上，标题里的小米改成了杂粮，已找回链接；EP192 从没在 B 站上架，补了灰色入口；LIVE038 的发布时间早于开播，按接口改正。',
+      '知识节点的双向引用重新对齐，节目摘掉的概念主题从节点页撤下，漏登记的补上说明；直播的相关节点按正文链接重排，图谱去掉了 200 多条不相干的连线。53 期补上 status 字段，审计脚本的标签检查改按构建后的全部词条算，原来会把 57 期误报成标签全不显示。',
+      'npm run build 通过，audit-episodes 213 期全过，audit-lives 八道检查全过。npm run test:ui 停在关键词首页分组那条断言，属于既有问题。'
+    ]
+  },
+  {
     date: '2026-09-18',
     title: 'EP213 上线，卖不掉的资产，账面价再高也只是数字',
     items: [
@@ -2763,8 +2778,7 @@ function summarizeHomeEpisodeSummary(value, { mobile = false } = {}) {
 
 const JIANGHU_TERMS = [
   '岳不群','华山派','左冷禅','嵩山派','东方不败','任我行','日月神教',
-  '丐帮','帮主','福威镖局','刘正风','恒山派','慕容复','姑苏慕容',
-  '黄药师','桃花岛','欧阳锋','白驼山','丁春秋','星宿派','鸠摩智','大轮明王'
+  '丐帮','帮主','福威镖局','恒山派'
 ];
 const JIANGHU_TERMS_RE = new RegExp('(' + JIANGHU_TERMS.sort((a,b)=>b.length-a.length).map(t=>t.replace(/[.*+?^${}()|[\]\\]/g,'\\$&')).join('|') + ')','g');
 
@@ -4277,17 +4291,18 @@ function renderVideoLinkIcon(link) {
   `;
 }
 
+// 2026-09-19 按字幕重核：只收字幕里确实用武侠化名讲车圈的期。
+// 原名单里 EP013/015/017/035/039/091/131 字幕一次没用，EP153/170/187/192/194/195/203 用了却没收
 const JIANGHU_EPISODES = new Set([
-  'EP013','EP015','EP017','EP035','EP039','EP041',
-  'EP050','EP055','EP062','EP066','EP067','EP074','EP080',
-  'EP091','EP131'
+  'EP041','EP050','EP054','EP055','EP062','EP066','EP067','EP074','EP080',
+  'EP153','EP170','EP187','EP192','EP194','EP195','EP203'
 ]);
 
 // keyword 中文名 → 江湖对照(派系/人物/出处)
 const JIANGHU_KEYWORDS = {
   '华为': { sect: '华山派', role: '岳不群', source: '笑傲江湖', ep: 'EP050' },
   '问界': { sect: '华山派', role: '岳不群', source: '笑傲江湖', ep: 'EP050' },
-  '余承东': { sect: '华山派', role: '岳不群', source: '笑傲江湖', ep: 'EP050' },
+  '余承东': { sect: '华山派', role: '劳德诺（老大嘴，推测）', source: '笑傲江湖', ep: 'EP050' },
   '理想汽车': { sect: '日月神教', role: '东方不败 / 任我行', source: '笑傲江湖', ep: 'EP055' },
   '理想': { sect: '日月神教', role: '东方不败 / 任我行', source: '笑傲江湖', ep: 'EP055' },
   '李想': { sect: '日月神教', role: '东方不败 / 任我行', source: '笑傲江湖', ep: 'EP055' },
@@ -4299,21 +4314,8 @@ const JIANGHU_KEYWORDS = {
   '李斌': { sect: '嵩山派', role: '左冷禅', source: '笑傲江湖', ep: 'EP067' },
   '比亚迪': { sect: '福威镖局', role: '辟邪剑谱源头家族', source: '笑傲江湖', ep: 'EP080' },
   '王传福': { sect: '福威镖局', role: '辟邪剑谱源头家族', source: '笑傲江湖', ep: 'EP080' },
-  '观致': { sect: '衡山派', role: '刘正风', source: '笑傲江湖', ep: 'EP066' },
-  '观致汽车': { sect: '衡山派', role: '刘正风', source: '笑傲江湖', ep: 'EP066' },
   '小鹏': { sect: '恒山派', role: '', source: '笑傲江湖', ep: 'EP074' },
-  '小鹏汽车': { sect: '恒山派', role: '', source: '笑傲江湖', ep: 'EP074' },
-  '哪吒': { sect: '姑苏慕容氏', role: '慕容复', source: '天龙八部', ep: 'EP131', guess: true },
-  '哪吒汽车': { sect: '姑苏慕容氏', role: '慕容复', source: '天龙八部', ep: 'EP131', guess: true },
-  '方运舟': { sect: '姑苏慕容氏', role: '慕容复', source: '天龙八部', ep: 'EP131', guess: true },
-  '特斯拉': { sect: '桃花岛', role: '黄药师', source: '射雕英雄传', guess: true },
-  '恒大': { sect: '白驼山', role: '欧阳锋', source: '射雕英雄传', ep: 'EP035', guess: true },
-  '恒大汽车': { sect: '白驼山', role: '欧阳锋', source: '射雕英雄传', ep: 'EP035', guess: true },
-  '许家印': { sect: '白驼山', role: '欧阳锋', source: '射雕英雄传', ep: 'EP035', guess: true },
-  '宁德时代': { sect: '星宿派', role: '丁春秋', source: '天龙八部', ep: 'EP039', guess: true },
-  '曾毓群': { sect: '星宿派', role: '丁春秋', source: '天龙八部', ep: 'EP039', guess: true },
-  '领克': { sect: '大轮明王', role: '鸠摩智', source: '天龙八部', ep: 'EP091', guess: true },
-  '吉利': { sect: '大轮明王', role: '鸠摩智', source: '天龙八部', ep: 'EP091', guess: true }
+  '小鹏汽车': { sect: '恒山派', role: '', source: '笑傲江湖', ep: 'EP074' }
 };
 
 function getJianghuByName(name) {
@@ -7927,8 +7929,10 @@ function keywordKindConfig(kind) {
 }
 
 function renderKeywordDefinitionContent(keyword) {
+  const extraNotes = keyword.conceptNotes || keyword.themeNotes || keyword.mechanismNotes;
   return `
     ${renderParagraphText(keyword.description)}
+    ${extraNotes ? renderKeywordFieldContent(extraNotes) : ''}
     ${keyword.scopeNote ? `<h3>站内用法</h3>${renderParagraphText(keyword.scopeNote)}` : ''}
   `;
 }
@@ -8186,8 +8190,12 @@ function buildKeywordAnalysisSections(keyword, relatedEpisodes = [], referenceGr
   }
 
   if (keywordKind === 'concept' || keywordKind === 'mechanism' || keywordKind === 'theme') {
+    // 2026-09-19：SOP 01 规定概念词写 conceptNotes、主题词写 themeNotes，
+    // 这里原来只认 mechanismNotes，343 个概念词条和 16 个主题词条的这一栏在页面上一直不显示
+    const kindNoteField = { concept: 'conceptNotes', theme: 'themeNotes', mechanism: 'mechanismNotes' }[keywordKind];
+    const noteField = [kindNoteField, 'mechanismNotes', 'conceptNotes', 'themeNotes'].find((field) => keyword[field]) || kindNoteField;
     return [
-      { title: keywordConfig.definitionTitle, content: renderKeywordDescriptionWithExtra(keyword, 'mechanismNotes') },
+      { title: keywordConfig.definitionTitle, content: renderKeywordDescriptionWithExtra(keyword, noteField) },
       commonProgramSection,
       { title: '常见场景', content: renderKeywordSignalSection(keyword, fallbackSignals) },
       commonExtensionSection

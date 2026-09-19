@@ -1,0 +1,99 @@
+{
+  "id": "quan-qiu-hua",
+  "name": "全球化",
+  "kind": "theme",
+  "asOf": "2026-09-19",
+  "sources": [
+    {
+      "title": "Globalization: A Framework for IMF Involvement | IMF",
+      "url": "https://www.imf.org/external/np/exr/ib/2002/031502.htm",
+      "note": "核对 IMF 对全球化的定义，指各国经济通过贸易和资本流动日益一体化"
+    },
+    {
+      "title": "Finland: Government Closes Entire Land Border with Russia | Library of Congress",
+      "url": "https://www.loc.gov/item/global-legal-monitor/2023-11-28/finland-government-closes-entire-land-border-with-russia/",
+      "note": "核对芬兰 2023 年 11 月底关闭与俄罗斯的全部陆路客运口岸"
+    },
+    {
+      "title": "EU to phase out imports of Russian gas | European Parliament",
+      "url": "https://www.europarl.europa.eu/news/en/press-room/20251211IPR32169/eu-to-phase-out-imports-of-russian-gas",
+      "note": "核对欧盟立法分阶段停止进口俄罗斯管道气和液化气，管道气长约最晚 2027 年 9 月 30 日停止"
+    },
+    {
+      "title": "Russian gas era in Europe ends as Ukraine stops transit | CNBC",
+      "url": "https://www.cnbc.com/2025/01/01/russian-gas-era-in-europe-ends-as-ukraine-stops-transit.html",
+      "note": "核对 2025 年 1 月 1 日经乌克兰过境的俄气合同到期停输，此前战争期间这条管道仍在供气"
+    }
+  ],
+  "summary": "全球化指各国经济靠贸易、资本、技术和人员流动越绑越紧。节目把它当一条跨期问题线，LIVE012 讲它在合拢成墙，LIVE015 讲进这个体系要像上市一样把账摊开。",
+  "description": "国际货币基金组织把全球化定义为各国经济通过贸易和资本流动日益一体化，也包括技术和人员跨境移动。1980 年代以后这个词才常用，冷战结束后进入高峰。\n\n节目谈全球化，关心的是它什么时候停、停了以后规则由谁定。LIVE012 说前几年战争和贸易还能分开，这一年墙开始合拢。LIVE015 把全球化还原成一个全球股市，谁想进来就得像上市公司一样公开数据，灰色那部分就是没守人家规则的部分。两场合起来看，节目认为全球化的前提是透明和互信，这两样一少，墙就来了。",
+  "themeNotes": [
+    "节目看全球化先看顺序。LIVE012 说很多人以为有战争才有墙，顺序是反的，战争打了两年贸易照旧，墙是后来才合拢的。",
+    "第二个观察维度是规则。LIVE015 说灰色这个词已经算客气了，在人家的框架里没守人家的规则就是灰，不反对另建体系，反对的是骑墙。",
+    "第三个维度是谁受益。节目在 LIVE012 讲第零世界时说，AI 和虚拟连接会让一小批人绕开国界抽走财富，墙和全球化的冲突会落到税收上。",
+    "节目把两极全球化看成下一阶段，世界不回到完全封闭，而是分成两个互相设墙的圈子。"
+  ],
+  "programAssociations": [
+    {
+      "title": "全球化下的战争，到墙合拢",
+      "episodes": [
+        "LIVE012"
+      ],
+      "note": "LIVE012 国际局势一章说，那边开打头两年欧盟还在跟俄罗斯做贸易，输油输气管道都在运行，这叫全球化下的战争，只有交战的人痛苦。变化是这一年才发生的，从芬兰到原来边境线上的国家贸易全停，物理一道墙，经济一道墙。节目还讲香港在查所有账户的资金来源，说军事的墙之后是经济的墙，技术的墙、虚拟的墙也在路上。"
+    },
+    {
+      "title": "进全球股市要先上市",
+      "episodes": [
+        "LIVE015"
+      ],
+      "note": "LIVE015 金融市场一章回应观众说灰色这个词用得不对。节目把全球化比成全球股市，上市的代价是原料端和产品端的数据都要摊开，交易所只掌握三分之一的产量，这个交易所明天就完蛋。它借此解释黄金为什么被灰色贸易选中，量一缩价格就得跌，也说明为什么你不能又是上市公司又不是。"
+    }
+  ],
+  "signalNotes": [
+    "口岸关闭、管道停输、银行开始查所有账户的资金来源，这几件事接连出现，节目会读成墙在合拢。",
+    "有人说规则都是别人定的、所以绕开没关系，LIVE015 的回应是全球化本来就要求公开数据，不公开就没法定价。",
+    "谈到出海、转口和海外账户时，节目常把全球化和骑墙放在一起，提醒读者两边都占的空间在变小。"
+  ],
+  "extensionNotes": [
+    {
+      "title": "两极全球化",
+      "note": "LIVE012 的下位词，说的是全球化分成两个互相设墙的阵营。"
+    },
+    {
+      "title": "冷战",
+      "note": "同一场讲这道墙为什么撑不出几十年冷战，可以接着看。"
+    },
+    {
+      "title": "灰色贸易",
+      "note": "LIVE015 用全球股市的比喻给灰色下定义，是这条线上最具体的案例。"
+    },
+    {
+      "title": "第零世界",
+      "note": "节目设想的跨国界财富集团，是全球化走到极端时国家要面对的对手。"
+    }
+  ],
+  "aliases": [
+    "经济全球化",
+    "globalization"
+  ],
+  "relatedKeywords": [
+    "两极全球化",
+    "冷战",
+    "灰色贸易",
+    "第零世界",
+    "欧盟",
+    "隔离墙",
+    "黄金",
+    "837号令"
+  ],
+  "episodes": [
+    {
+      "id": "LIVE012",
+      "note": "讲全球化下的战争贸易照旧，这一年墙才合拢，经济的墙跟着来了。"
+    },
+    {
+      "id": "LIVE015",
+      "note": "把全球化比成全球股市，要进来就得像上市一样公开数据，灰色是没守规则的部分。"
+    }
+  ]
+}

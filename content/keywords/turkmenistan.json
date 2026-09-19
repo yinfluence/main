@@ -1,0 +1,86 @@
+{
+  "id": "turkmenistan",
+  "name": "土库曼斯坦",
+  "kind": "geography",
+  "asOf": "2026-09-19",
+  "sources": [
+    {
+      "title": "Turkmenistan | Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Turkmenistan",
+      "note": "核对 2022 年普查人口约 706 万，1995 年联合国承认其永久中立，天然气储量世界第五，现任总统谢尔达尔·别尔德穆哈梅多夫是前总统之子、父亲任人民委员会主席，四邻与里海"
+    },
+    {
+      "title": "Positive Neutrality Based on Gas Exports | Eurasian Research Institute",
+      "url": "https://www.eurasian-research.org/publication/positive-neutrality-based-on-gas-exports-overview-of-turkmenistans-foreign-policy/",
+      "note": "核对宪法确立永久中立为外交原则，天然气储量居世界前列，能源占出口收入约八成"
+    },
+    {
+      "title": "US strike on Iranian railway bridge hits China-Russia trade corridor near Turkmenistan | bne IntelliNews",
+      "url": "https://www.intellinews.com/us-strike-on-iranian-railway-bridge-hits-china-russia-trade-corridor-near-turkmenistan-453675/",
+      "note": "核对 2026 年 7 月 9 日美军用巡航导弹打击伊朗戈勒斯坦省一座铁路桥，这条线经哈萨克斯坦、土库曼斯坦连接中国，今年海湾港口被封后作用上升，俄罗斯也在用"
+    },
+    {
+      "title": "U.S. Strikes on Iranian Rail and Coastal Infrastructure Put Central Asia's Southern Routes Under Pressure | The Times Of Central Asia",
+      "url": "https://timesca.com/u-s-strikes-on-iranian-rail-and-coastal-infrastructure-put-central-asias-southern-routes-under-pressure/",
+      "note": "核对打击让中亚南向通道承压"
+    }
+  ],
+  "summary": "土库曼斯坦是中亚里海东岸的内陆国，南邻伊朗，以永久中立和天然气出口著称。LIVE022 讲霍尔木兹被掐以后，伊朗新开的中亚线从这里转出去，美国开始炸这条线上的桥。",
+  "description": "土库曼斯坦位于中亚西南部，西临里海，南接伊朗和阿富汗，北邻哈萨克斯坦和乌兹别克斯坦，人口七百多万。它的天然气储量居世界第五，能源占出口收入约八成。1995 年它获联合国承认为永久中立国，宪法把中立写成外交原则，内政封闭，现任总统是前总统之子，父子两代掌权。\n\n在节目里它是一条通道。2026 年海湾港口被封锁之后，从伊朗东北部经土库曼斯坦、哈萨克斯坦到中国的铁路线分量上升，7 月 9 日美军打击了伊朗境内这条线上的一座铁路桥，LIVE022 两天后讲的就是这件事。",
+  "nodeRole": "土库曼斯坦是一个转运节点。伊朗往外走原来只有三条路，暗路是跟伊拉克的混油管道，一条明路往北穿里海去俄罗斯，另一条是霍尔木兹被掐后新开的中亚线，节目说它从土库曼斯坦转出去，基本是往中国走。这条线离海远，不怕封锁，弱点在桥和铁路这些陆上设施。",
+  "impactNotes": [
+    "对伊朗，中亚线是被封港之后的备用出口，桥一断，火车和大卡车过不去，节目说推个小轮车还能过，油和货就运不动了。",
+    "对中国和俄罗斯，这条铁路连着它们和伊朗的陆上贸易，公开报道说俄罗斯从 2025 年底起也用它向伊朗运货，所以打击被外界读成冲着中俄的走廊去的。",
+    "对土库曼斯坦自己，永久中立让它在大国之间不站队，但它的过境线一旦成为打击对象，中立国的身份保护不了通道本身。"
+  ],
+  "programAssociations": [
+    {
+      "title": "陆上备用通道也被炸断",
+      "episodes": [
+        "LIVE022"
+      ],
+      "note": "LIVE022 开场讲伊朗往外走的路被一条条炸断。节目先说暗路，跟伊拉克连着的管道，两国背后的土建承包商都是中国的，油掺着从伊拉克出海，这条已经被打断。再说两条明路，北边穿里海去俄罗斯，外高加索三国拦不住，东边是经土库曼斯坦的中亚线。美国最近炸断了中亚线上一座峡谷大桥，节目说炸的已经不只是军事基地和导弹，开始炸路了，目的是把伊朗整个封起来，逼它换人来谈。节目把这叫委内瑞拉 2.0 模式，还说一座桥就让陆上备用通道失效，航线替代的幻觉在这儿露了底。"
+    }
+  ],
+  "signalNotes": [
+    "海峡或港口被封之后，外界开始讨论经中亚、里海的替代路线，节目会提醒陆路的运量和脆弱性，一座桥、一个隧道就能卡住。",
+    "打击目标从导弹、基地转向桥梁、铁路、码头，节目读成战争目的变了，要的是把对方整个封起来。",
+    "土库曼斯坦很少上新闻，它的名字和伊朗、中国一起出现时，通常是在讲过境运输或天然气管道，读者可以留意那条线通向哪里。",
+    "节目说桥断以后推个小轮车还能过，伊朗方面也说很快能修好，封锁的效果要看打击会不会反复。"
+  ],
+  "extensionNotes": [
+    {
+      "title": "霍尔木兹海峡",
+      "note": "中亚线存在的前提，海峡被掐以后伊朗才把货转向陆路。"
+    },
+    {
+      "title": "伊朗",
+      "note": "节目用朗朗称呼它，这是通行读法。它是这条线的起点，被炸的铁路桥就在它东北部靠近土库曼斯坦的地方。"
+    },
+    {
+      "title": "灰色贸易",
+      "note": "中亚线和伊拉克混油管道是同一张网的两段，节目说美国在一条条掐断。"
+    },
+    {
+      "title": "委内瑞拉模式",
+      "note": "节目给炸路找的目的，封住以后再打出一个肯合作的人，LIVE022 叫它委内瑞拉 2.0。"
+    }
+  ],
+  "aliases": [
+    "土库曼",
+    "Turkmenistan"
+  ],
+  "relatedKeywords": [
+    "伊朗",
+    "霍尔木兹海峡",
+    "灰色贸易",
+    "委内瑞拉模式",
+    "伊拉克"
+  ],
+  "episodes": [
+    {
+      "id": "LIVE022",
+      "note": "霍尔木兹被掐后伊朗新开经土库曼斯坦的中亚线，美国炸断了这条线上的一座大桥。"
+    }
+  ]
+}

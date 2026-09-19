@@ -1,0 +1,103 @@
+{
+  "id": "shi-ye-pai",
+  "name": "什叶派",
+  "kind": "general",
+  "asOf": "2026-09-19",
+  "sources": [
+    {
+      "title": "Islam's Sunni-Shia Divide, Explained | HISTORY",
+      "url": "https://www.history.com/articles/sunni-shia-divide-islam-muslim",
+      "note": "核对什叶派认为先知指定了堂弟兼女婿阿里为继承人，领袖应出自先知家族"
+    },
+    {
+      "title": "What is the Shia-Sunni divide? | The Conversation",
+      "url": "https://theconversation.com/what-is-the-shia-sunni-divide-78216",
+      "note": "核对什叶派约占全球穆斯林一成到一成五"
+    },
+    {
+      "title": "Iraq - The World Factbook 2022 archive | CIA",
+      "url": "https://www.cia.gov/the-world-factbook/about/archives/2022/countries/iraq",
+      "note": "核对伊拉克穆斯林中什叶派约占六成四到六成九"
+    },
+    {
+      "title": "2022 Report on International Religious Freedom: Iran | U.S. Department of State",
+      "url": "https://www.state.gov/reports/2022-report-on-international-religious-freedom/iran",
+      "note": "核对伊朗穆斯林中什叶派约占九成到九成五"
+    },
+    {
+      "title": "Iraq swears in new prime minister as US presses Baghdad to disarm Iran-backed groups | Euronews",
+      "url": "https://www.euronews.com/2026/05/15/iraq-swears-in-new-prime-minister-as-us-presses-baghdad-to-disarm-iran-backed-groups",
+      "note": "核对伊拉克新总理阿里·扎伊迪 2026 年 5 月就任，美国施压巴格达解除亲伊朗武装"
+    },
+    {
+      "title": "Iraqi Corruption Is Fueling Iranian Sanctions Evasion | FDD",
+      "url": "https://www.fdd.org/analysis/2026/05/12/iraqi-corruption-is-fueling-iranian-sanctions-evasion/",
+      "note": "核对 2026 年 5 月内阁表决前一周，美国以纵容伊朗石油掺混伊拉克出口为由制裁伊拉克官员阿里·马阿里季"
+    }
+  ],
+  "summary": "什叶派是伊斯兰教第二大教派，主张领袖只能出自先知家族。LIVE020 讲伊拉克在萨达姆倒台后从逊尼派主导变成什叶派主导，和伊朗越走越近，如今新总理又要投向美国。",
+  "description": "什叶派的名称来自阿里派，意思是追随阿里的人，约占全球穆斯林一成到一成五。什叶派认为先知穆罕默德指定了堂弟兼女婿阿里做继承人，领袖必须出自先知家族，由神意指定。伊朗九成以上的穆斯林是什叶派，伊拉克约三分之二，黎巴嫩、巴林、阿塞拜疆也有大量什叶派人口。\n\n节目谈什叶派的场景是伊拉克和伊朗的这条轴线，以及它背后那张灰色石油网。",
+  "programAssociations": [
+    {
+      "title": "同教派的两个世仇，靠一条管道连起来",
+      "episodes": [
+        "LIVE020"
+      ],
+      "note": "LIVE020 说萨达姆政权倒台后，伊拉克因为境内什叶派人多，从逊尼派主导变成了什叶派主导。两伊打过仗，本是世仇，什叶派上台后反而越走越近，伊拉克成了除伊朗之外跟中国最近的国家。节目接着讲两国管道接到一起，油一混查不出产地，从伊拉克的码头装船运走，结算用人民币。现在新总理要投向美国，节目说一个核心盟友倒戈了，而且倒得比谁都快。教派在这里是两国靠拢的底色，决定倒戈的却是钱和美国的压力。"
+    },
+    {
+      "title": "血统派和离圣地最远的信徒",
+      "episodes": [
+        "LIVE020"
+      ],
+      "note": "观众问答里节目解释两派的分歧在领导人怎么产生，什叶派主张必须由真主指定，只能出在先知家族。节目说伊朗那边从血统上离阿拉伯最远，是波斯人和阿塞拜疆人，反而最虔诚，而守着麦加麦地那的沙特是推选派。节目用离得越远光环越大解释这件事，还举中国国内回族和维吾尔族也有同样的教派区别。"
+    }
+  ],
+  "signalNotes": [
+    "伊拉克政坛出现亲伊朗政党和美国之间的拉锯，总理人选、副部长任命、武装解除这些消息，节目会读成什叶派轴线还能不能保住。公开报道里美国 2026 年 5 月制裁了一名被指纵容伊朗石油掺混的伊拉克官员。",
+    "节目说的小克、朗朗，通行读法分别是伊拉克和伊朗，节目用它们讲同一张什叶派石油网的两头。",
+    "什叶派神权、军队和世俗政府三股势力的说法出现时，节目在 LIVE016 用过这个框架，意思是对外谈判不知道该找谁。",
+    "有人把什叶派和逊尼派的冲突当作一千多年不变的死结，节目的看法是它归根到底是接班问题，今天被地缘和石油重新激活。"
+  ],
+  "extensionNotes": [
+    {
+      "title": "逊尼派",
+      "note": "同一个接班问题的另一种回答，海湾六国的站队要从那边看。"
+    },
+    {
+      "title": "伊朗",
+      "note": "什叶派人口最多的国家，节目里的朗朗，灰色石油网的源头。"
+    },
+    {
+      "title": "伊拉克",
+      "note": "什叶派上台后和伊朗靠拢，节目说管道、港口和油田重建基本都是中国修的，现在新总理转向美国。"
+    },
+    {
+      "title": "灰色贸易",
+      "note": "什叶派两国的管道把油洗白，结算用人民币，是节目讲灰色贸易最具体的一段。"
+    },
+    {
+      "title": "接班人真空",
+      "note": "节目把教派分裂归结为继承人问题，说在宗教里早就吵过一轮。"
+    }
+  ],
+  "aliases": [
+    "什叶",
+    "什叶派穆斯林",
+    "Shia",
+    "Shiite"
+  ],
+  "relatedKeywords": [
+    "逊尼派",
+    "伊朗",
+    "伊拉克",
+    "灰色贸易",
+    "沙特"
+  ],
+  "episodes": [
+    {
+      "id": "LIVE020",
+      "note": "讲伊拉克由逊尼派主导变成什叶派主导后和伊朗靠拢，并解释什叶派坚持血统继承。"
+    }
+  ]
+}

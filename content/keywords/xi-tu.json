@@ -1,0 +1,96 @@
+{
+  "id": "xi-tu",
+  "name": "稀土",
+  "kind": "asset",
+  "asOf": "2026-09-19",
+  "sources": [
+    {
+      "title": "China Imposes Export Controls on Medium and Heavy Rare Earth Materials | Holland & Knight",
+      "url": "https://www.hklaw.com/en/insights/publications/2025/04/china-imposes-export-controls-on-medium-and-heavy-rare-earth-materials",
+      "note": "核对商务部与海关总署 2025 年 4 月 4 日对钐、钆、铽、镝、镥、钪、钇七类中重稀土实施出口管制"
+    },
+    {
+      "title": "Rare Earth Export Restrictions One Year Later | CSIS",
+      "url": "https://www.csis.org/analysis/rare-earth-export-restrictions-one-year-later",
+      "note": "核对 2025 年 10 月扩大的管制措施暂停执行至 2026 年 11 月 10 日，中国约占全球稀土精炼产能九成"
+    },
+    {
+      "title": "Lynas becomes first producer of heavy rare earths outside China | MINING.COM",
+      "url": "https://www.mining.com/lynas-becomes-first-producer-of-heavy-rare-earths-outside-china/",
+      "note": "核对莱纳斯 2025 年在马来西亚产出氧化镝，成为中国以外首家分离重稀土的商业生产商"
+    },
+    {
+      "title": "Pentagon to become largest shareholder in rare earth miner MP Materials | CNBC",
+      "url": "https://www.cnbc.com/2025/07/10/pentagon-to-become-largest-shareholder-in-rare-earth-magnet-maker-mp-materials.html",
+      "note": "核对 2025 年 7 月美国国防部入股 MP Materials 成为最大股东，并承诺十年包销磁材和设定价格底线"
+    }
+  ],
+  "summary": "稀土是十七种金属元素的统称，做永磁体、芯片和军工都离不开。LIVE014 说稀土这一招本身管用，只是使早了，别人把产业链搭起来了，欧盟也醒了，两方变成三方。",
+  "description": "稀土包括镧系十五种元素加钪和钇，按原子量分轻稀土和中重稀土，最大的用途是钕铁硼永磁体，电动车电机、风机、导弹和硬盘都要用。矿藏分布并不稀少，难在分离提纯，中国占全球精炼产能约九成。2025 年 4 月中国对七类中重稀土实施出口管制，10 月又扩大范围，后一轮在中美会谈后暂停到 2026 年 11 月。同一年莱纳斯在马来西亚分离出重稀土，美国国防部入股 MP Materials 并给钕镨设价格底线。\n\nLIVE014 把稀土讲成一场长期的价格战。节目说巴西、马来西亚、澳大利亚都有稀土，可别的公司生产出来也要走这边的体系，价格被打到别人做不下去，重稀土污染重，江西那边不用补贴村民也不用补偿环境。等没人做了，涨价开始，有些品类涨了十倍以上。十倍这个数是口播，没有给出处。",
+  "assetRole": "稀土在节目里是一张战略筹码，和石油、黄金并列的那种。它的价格不完全由供需决定，谁掌握分离产能，谁就能决定什么时候放、什么时候卡。",
+  "programAssociations": [
+    {
+      "title": "先把价格打到没人做，再涨十倍",
+      "episodes": [
+        "LIVE014"
+      ],
+      "note": "LIVE014 产业观察一章先讲 PDD 的玩法，自己不挣钱，用小商贩的钱堆占有率，堆到垄断再赚钱。节目说放到国家层面就是稀土，也能帮人看懂万亿顺差，很多国企就是国际市场上的 PDD。"
+    },
+    {
+      "title": "这招使早了",
+      "episodes": [
+        "LIVE014"
+      ],
+      "note": "下一节说招只能使一次，稀土这一招按正常能拖五年，现在轻稀土的产业链别人已经搭起来了，重稀土慢一些，日本在搭，美国也在本土做。节目说更贵的代价在欧盟，原来欧盟当你是跟美国对抗的挡箭牌，一亮獠牙，欧盟跟美国没那么较劲了，两方变成了三方。"
+    }
+  ],
+  "riskNotes": [
+    "对下游制造商，最大的风险是断供。出口许可一收紧，电机和磁材厂的交货期马上受影响。",
+    "对掌握产能的一方，风险在节目说的使早了。管制越频繁，别国越有动力花钱建替代产能，美国给钕镨设价格底线就是在补贴这件事。",
+    "环境成本是另一头。节目提到重稀土开采污染重，低价里没有算进去的那部分由产地承担。"
+  ],
+  "signalNotes": [
+    "出口管制清单扩大、又在谈判后暂停，节目会把这读成筹码在被使用，每用一次别人就多一分准备。",
+    "中国以外的分离厂投产、政府入股矿企、设价格底线，这类消息在 LIVE014 的框架里说明产业链正在被复制。",
+    "看到稀土和欧盟放在同一条新闻里，节目关心的是欧盟会不会因此转向美国一边。"
+  ],
+  "extensionNotes": [
+    {
+      "title": "欧盟",
+      "note": "节目说稀土这一招最大的代价是把欧盟推醒了。"
+    },
+    {
+      "title": "万亿顺差",
+      "note": "同一种先压价占市场的逻辑，节目用 PDD 把两件事连在一起。"
+    },
+    {
+      "title": "卡脖子",
+      "note": "稀土是中国手里少有的反向卡脖子工具，可以接着看这个词。"
+    },
+    {
+      "title": "马来西亚",
+      "note": "节目提到它也有稀土，现实里莱纳斯在那里建起了中国以外的重稀土分离线。"
+    }
+  ],
+  "aliases": [
+    "稀土元素",
+    "重稀土",
+    "轻稀土",
+    "rare earths"
+  ],
+  "relatedKeywords": [
+    "欧盟",
+    "万亿顺差",
+    "卡脖子",
+    "马来西亚",
+    "澳大利亚",
+    "价格战",
+    "供应链"
+  ],
+  "episodes": [
+    {
+      "id": "LIVE014",
+      "note": "说稀土先压价到没人做再涨价，这招管用但使早了，欧盟醒了，两方变成三方。"
+    }
+  ]
+}

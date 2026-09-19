@@ -1,0 +1,92 @@
+{
+  "id": "patriot-missile",
+  "name": "爱国者导弹",
+  "kind": "product",
+  "asOf": "2026-09-19",
+  "sources": [
+    {
+      "title": "MIM-104 Patriot | Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/MIM-104_Patriot",
+      "note": "核对爱国者是美国的地对空导弹防御系统，雷神公司研制，1980 年代服役，PAC-3 系列拦截弹由洛克希德马丁生产"
+    },
+    {
+      "title": "Trump Tells Zelensky Ukraine Will Be Allowed to Manufacture Patriot Missile Interceptors | TIME",
+      "url": "https://time.com/article/2026/07/08/trump-zelensky-ukraine-patriot-missile-interceptors-russia-nato/",
+      "note": "核对 2026 年 7 月 8 日安卡拉北约峰会期间川普告诉泽连斯基，允许乌克兰生产爱国者拦截弹"
+    },
+    {
+      "title": "Trump grants Ukraine license to build US Patriot missiles at NATO Summit | Army Recognition",
+      "url": "https://www.armyrecognition.com/news/army-news/2026/trump-ukraine-patriot-missile-license-nato-summit",
+      "note": "核对授权转让生产技术，背景是 PAC-3 拦截弹在乌克兰和中东消耗远超产能，乌方每年缺口估计约两千枚"
+    },
+    {
+      "title": "'Cheap' Patriot Interceptor Costing Under $1 Million Now Being Sought By Army | The War Zone",
+      "url": "https://www.twz.com/land/cheap-patriot-interceptor-costing-under-1-million-now-being-sought-by-army",
+      "note": "核对 PAC-3 MSE 单价约四百万美元以上，美国陆军正在寻求单价一百万美元以下的低成本拦截弹"
+    }
+  ],
+  "summary": "爱国者是美国的地对空导弹防御系统，专门拦截飞机和弹道导弹。LIVE022 讲川普在北约峰会上松口，允许乌克兰按美国图纸生产爱国者，节目认为这会让它的价格像无人机一样被做下来。",
+  "description": "爱国者防空系统由雷神公司研制，1980 年代开始服役，由雷达、指挥车和发射车组成，最新一代拦截弹 PAC-3 MSE 由洛克希德马丁生产，公开的单价在四百万美元以上。俄乌战争和中东战事里，它是拦截弹道导弹的主力，消耗远超产能。2026 年 7 月 8 日安卡拉北约峰会期间，川普对泽连斯基说美国将允许乌克兰生产爱国者拦截弹，这是他此前一直拒绝的事。\n\n节目关心的是生产地换了以后价格和战局会怎么变，性能参数没有谈。",
+  "objectRole": "爱国者在现实里改变的是成本对比。一枚几百万美元的拦截弹去打一架便宜的无人机或导弹，防守方越打越穷。节目的推演是交给乌克兰生产以后，一百万的东西可能变成十万，乌克兰就是这样把无人机做便宜的。节目用的一百万只是举例，公开价格要高得多。",
+  "programAssociations": [
+    {
+      "title": "图纸给了乌克兰，价格就会被做下来",
+      "episodes": [
+        "LIVE022"
+      ],
+      "note": "LIVE022 讲土耳其的北约会议，川普和泽连斯基同台答问，冷笑话后面是一条重磅消息，川普允许乌克兰按美国图纸生产爱国者。节目说原来一枚一百万美元，交给乌克兰可能变成十万，乌克兰的军工能力可能因此排进欧洲前几名。川普还说要买乌克兰的无人机扔到中东和东亚，乌克兰再拿钱买美国装备，美元就转起来了。节目读出的信号是川普原来站在普京那边，现在肯这么说，说明泽连斯基的价值在升。同一场接着讲川普向欧洲讨军费，要的是 F35 和爱国者的订单。"
+    }
+  ],
+  "consequenceNotes": [
+    "得到便利的是乌克兰和买家。本地生产解决了拦截弹长期不够用的问题，如果成本真降下来，别的国家也可能转向乌克兰采购。",
+    "美国拿到的是订单和美元周转。节目说川普要的是欧洲多出来的军费拿去买 F35、买爱国者，省钱只是顺带，这是一笔乘二乘三的账，节目自己也说这只是美国的设想。",
+    "失去的是一部分技术控制权。生产技术一旦转出去，价格和产量就不再只由美国军工企业决定，这一层是外界的担忧，节目没有展开。"
+  ],
+  "signalNotes": [
+    "美国对某国放开尖端武器的生产授权，节目读成美国对这个国家的估价在上升，爱国者给乌克兰就是一例。",
+    "拦截弹消耗、库存告急的新闻多起来时，价格就会成为焦点，节目的判断是谁能把东西做便宜，谁在下一轮战争里占便宜。",
+    "北约峰会上出现军费分摊、装备采购的数字，节目提醒看钱最后流回了谁，爱国者和 F35 是最常见的两个去处。",
+    "读者会看到一百万、十万这类数字，要分清是节目举例还是公开报价，PAC-3 MSE 的公开单价在四百万美元以上。"
+  ],
+  "extensionNotes": [
+    {
+      "title": "泽连斯基",
+      "note": "节目说的小泽，通行读法是泽连斯基，这次授权的对象，节目说他的价值在川普眼里正在上升。"
+    },
+    {
+      "title": "北约",
+      "note": "消息发布的场合，同一场会上川普要欧洲把军费从两成往上提。"
+    },
+    {
+      "title": "无人机",
+      "note": "乌克兰把无人机做便宜的经验，是节目推测爱国者也能降价的依据。"
+    },
+    {
+      "title": "俄乌战争",
+      "note": "爱国者在乌克兰用量最大的战场，节目认为战局在变，领导人的算盘也跟着变。"
+    },
+    {
+      "title": "大国小国差距拉平",
+      "note": "节目挂在这一节的概念，小国靠把东西做便宜，追上了原本只有大国才有的能力。"
+    }
+  ],
+  "aliases": [
+    "爱国者",
+    "爱国者防空系统",
+    "Patriot",
+    "PAC-3"
+  ],
+  "relatedKeywords": [
+    "泽连斯基",
+    "北约",
+    "无人机",
+    "俄乌战争",
+    "特朗普"
+  ],
+  "episodes": [
+    {
+      "id": "LIVE022",
+      "note": "川普在北约会上松口允许乌克兰按美国图纸生产爱国者，节目推测一枚可能从一百万降到十万。"
+    }
+  ]
+}

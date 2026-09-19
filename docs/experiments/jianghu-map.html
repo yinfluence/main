@@ -361,7 +361,7 @@
           </g>
         </svg>
 
-        <!-- 派系节点(12 派,卡通/动漫风) -->
+        <!-- 派系节点(6 派,卡通/动漫风) -->
         <div class="pins">
           <!-- 节目原话(7 派) -->
           <a class="pin" data-key="huashan" style="left:80%;top:18%">
@@ -382,11 +382,6 @@
             <span class="name-tag"><span class="sect">日月神教·东方不败</span><span class="real">理想·李想</span></span>
           </a>
 
-          <a class="pin" data-key="liangbi" style="left:34%;top:48%">
-            <span class="face"><img src="assets/jianghu/liangbi.jpg" alt="" loading="lazy"></span>
-            <span class="name-tag"><span class="sect">刘正风</span><span class="real">观致</span></span>
-          </a>
-
           <a class="pin" data-key="gaibang" style="left:60%;top:82%">
             <span class="face"><img src="assets/jianghu/gaibang.jpg" alt="" loading="lazy"></span>
             <span class="name-tag"><span class="sect">丐帮·帮主</span><span class="real">小米·雷军</span></span>
@@ -396,27 +391,6 @@
             <span class="name-tag"><span class="sect">福威镖局</span><span class="real">比亚迪·王传福</span></span>
           </a>
 
-          <!-- 金庸全集扩展(5 派) -->
-          <a class="pin" data-key="muroong" style="left:14%;top:62%">
-            <span class="face"><img src="assets/jianghu/nezha.jpg" alt="" loading="lazy"></span>
-            <span class="name-tag"><span class="sect">姑苏慕容·慕容复</span><span class="real">哪吒·方运舟</span></span>
-          </a>
-          <a class="pin" data-key="haiwai" style="left:94%;top:64%">
-            <span class="face"><img src="assets/jianghu/haiwai.jpg" alt="" loading="lazy"></span>
-            <span class="name-tag"><span class="sect">桃花岛·黄药师</span><span class="real">特斯拉</span></span>
-          </a>
-          <a class="pin" data-key="hengda" style="left:7%;top:46%">
-            <span class="face"><img src="assets/jianghu/hengda.jpg" alt="" loading="lazy"></span>
-            <span class="name-tag"><span class="sect">白驼山·欧阳锋</span><span class="real">恒大·许家印</span></span>
-          </a>
-          <a class="pin" data-key="catl" style="left:42%;top:82%">
-            <span class="face"><img src="assets/jianghu/catl.jpg" alt="" loading="lazy"></span>
-            <span class="name-tag"><span class="sect">星宿派·丁春秋</span><span class="real">宁德时代·曾毓群</span></span>
-          </a>
-          <a class="pin" data-key="linke" style="left:30%;top:14%">
-            <span class="face"><img src="assets/jianghu/linke.jpg" alt="" loading="lazy"></span>
-            <span class="name-tag"><span class="sect">大轮明王·鸠摩智</span><span class="real">领克·吉利</span></span>
-          </a>
         </div>
       </div>
     </div>
@@ -425,17 +399,13 @@
   </div>
 
   <div class="legend">
-    <span><span class="ico ico1"></span>节目原话对照(7)</span>
-    <span><span class="ico ico2"></span>金庸全集扩展(5)</span>
-    <span>· 共 12 派 · 点头像看故事 ·</span>
+    <span><span class="ico ico1"></span>节目原话对照(6)</span>
+    <span>· 点头像看故事 ·</span>
   </div>
 
   <div class="ai-note">
-    <h4>这一版的变化(诚实交代)</h4>
-    12 派分两层:<br>
-    · <b>节目原话(7)</b>:华山派·岳不群、日月神教·东方不败、丐帮帮主、嵩山派·左冷禅、福威镖局、刘正风、恒山派 — 都是 EP 标题或 summary 里出现过的<br>
-    · <b>金庸全集扩展(5)</b>:慕容复、黄药师、欧阳锋、丁春秋、鸠摩智 — 节目讨论过这些车企但没明说武侠对照,按讽刺骨架从金庸全集找的著名角色<br><br>
-    人物图来自手游立绘 / 同人画 / 官方插画,卡通风。其中 <b>慕容复 / 刘正风 / 鸠摩智 / 恒山派</b> 这几张不是完美单人立绘 (慕容复在金庸圈卡通圈很少有人画) ,如果哪张你觉得不行告诉我换。
+    <h4>这一版的变化</h4>
+    2026-09-19 按字幕逐期核对后，只保留节目原话里用过的 6 派：华山派·岳不群、日月神教·东方不败、丐帮·帮主、嵩山派·左冷禅、福威镖局、恒山派。原来的刘正风=观致，以及慕容复、黄药师、欧阳锋、丁春秋、鸠摩智 5 派，字幕里都没有这样的对应，是网站以前自己加的，已经撤下。
   </div>
 
 </div>
@@ -449,21 +419,13 @@
 
 <script>
 const DATA = {
-  // 节目原话(7 派)
+  // 节目原话(6 派)
   huashan: {tag:"华山派",seal:"岳",name:"岳不群",real:"华为 / 问界 · 余承东",ep:"EP050",epTitle:"车圈的'岳不群'到底是谁",body:"君子剑的厉害,不在于剑法,而在于把借来的招式重新命名成自家心法,然后让一个前台人物替整个组织承担情绪动员。真正的内功是营销纪律和话术统一,不是后台工程。",guess:false},
   riyue: {tag:"日月神教",seal:"东",name:"东方不败 / 任我行",real:"理想汽车 · 李想",ep:"EP055",epTitle:"电车圈'日月神教'摇摇欲坠",body:"邪派武功也是早期捷径——增程让你快速登顶,代价是后续选择被锁死。同一人既是东方不败也是任我行,因为信众化品牌的本质就是教主即教派。",guess:false},
   gaibang: {tag:"丐帮·帮主",seal:"帮",name:"帮主",real:"小米汽车 · 雷军",ep:"EP062",epTitle:"电车圈的'丐帮'是谁",body:"丐帮人多势众,问题是袋子里装的是信徒的买命钱。粉丝替品牌做市场教育和产品验证,品牌却公开承认更成熟、更坚固的版本会优先留给欧洲市场。这是江湖最古老的分层。",guess:false},
   songshan: {tag:"嵩山派·左冷禅",seal:"左",name:"左冷禅",real:"蔚来 · 李斌",ep:"EP067",epTitle:"电车圈左冷禅,车不过是单程票",body:"左冷禅一辈子算计的不是练剑,是并派。蔚来的换电也不只是换电——电池、换电站、地方资金被装进体外平台,做成可融资、可估值、可吸金的资产化体系。车不过是这场局的入场券。",guess:false},
   biaoju: {tag:"福威镖局",seal:"镖",name:"福威镖局(辟邪剑谱源头家族)",real:"比亚迪 · 王传福",ep:"EP080",epTitle:"电车圈'福威镖局'是谁",body:"福威镖局是江湖最大秘籍的源头家族。比亚迪靠刀片电池、4S 网络、海外渠道、零公里二手车,把销量与估值维持成难以穿透的系统。头部地位下,积累的是更大的黑箱。注:福威镖局是家族不是门派,节目借的是'辟邪剑谱源头'意象。",guess:false},
-  liangbi: {tag:"刘正风",seal:"刘",name:"刘正风(衡山派长老)",real:"观致汽车",ep:"EP066",epTitle:"观致破产,劣币驱逐良币",body:"刘正风和魔教曲洋因《笑傲江湖曲》结为知音,被五岳与魔教两边夹杀。观致也一样——认真造车的良币在野蛮资本+野蛮市场两边都不被容许,最后只剩残值争抢。",guess:false},
   hengshan: {tag:"恒山派",seal:"恒",name:"恒山派(尼姑山门)",real:"小鹏汽车",ep:"EP074",epTitle:"电车圈'恒山派'科技情趣价值创造者",body:"节目用恒山派讽刺小鹏——'宅男收割机+科技情趣'配上'一群女出家人'是反讽。但讽刺含量适中:小鹏相对克制、不抢盟主,围绕智能驾驶+超充+飞行汽车搭生态,在逆风里活下来。",guess:false},
-
-  // 金庸全集扩展(5 派,非节目原话,按讽刺骨架推测)
-  muroong: {tag:"姑苏慕容氏·燕子坞",seal:"慕",name:"慕容复",real:"哪吒汽车 · 方运舟",ep:"EP131",epTitle:"哪吒汽车暴雷全拆解",body:"慕容复以'复国'为旗号,四处合纵连横、找各方资源,自我包装成姑苏慕容氏贵公子,最后破产疯掉沦为给孩子分糖果的笑柄。哪吒/恒大/威马/赛麟/拜腾/高合——以'造车救国'为名讲故事,找地方政府投资,烧光跑路。骗补阵营都可归入。",guess:true},
-  haiwai: {tag:"桃花岛·东邪",seal:"东",name:"黄药师",real:"特斯拉",ep:"",epTitle:"(节目未明示)",body:"桃花岛主,五绝之一,孤傲海外岛主,自创武功体系,不入中原门派但是行业参照系。特斯拉在中国电车圈本来就是异类——不参与派系内斗,但定价始终是江湖标尺。推测对照。",guess:true},
-  hengda: {tag:"白驼山·西毒",seal:"锋",name:"欧阳锋",real:"恒大汽车 · 许家印",eps:[{id:"EP015",title:"恒大造车初探"},{id:"EP035",title:"恒大暴雷与车圈余波"}],body:"欧阳锋逆练《九阴真经》走火入魔。恒大也一样——地产资本进车圈讲产业故事,借融资飞轮吸地、吸钱、吸股权,最后清算只剩土地和残值。地产逆练造车魂,武功反噬自身。",guess:true},
-  catl: {tag:"星宿派",seal:"丁",name:"丁春秋(星宿老仙)",real:"宁德时代 · 曾毓群",ep:"EP039",epTitle:"宁德时代龙头压低工人议价",body:"星宿派的核心是化功大法+毒功+徒弟拍马屁神功。宁德时代靠电池技术垄断+严苛组织等级+象征性加薪应对结构性不公,把行业繁荣的红利截流给上层,把成本转给基层工人。",guess:true},
-  linke: {tag:"大轮明王",seal:"鸠",name:"鸠摩智",real:"领克 · 吉利",ep:"EP091",epTitle:"领克语音关大灯致命漏洞",body:"鸠摩智贪学少林七十二绝技,内力反噬几乎致死,被段誉北冥神功吸走才解脱。领克为追求'智能体验'把不该开放的车机权限交给语音系统,本该防护的机制反向失效——贪多绝技反噬自身的当代翻版。",guess:true},
 };
 function openDrawer(key){
   const d = DATA[key]; if(!d) return;

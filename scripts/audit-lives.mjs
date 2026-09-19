@@ -12,7 +12,7 @@ const TRADITIONAL = /[夢堅邏輯辯證們發應該學實產國軍經濟體驗�
 
 // 大话题的分类词要跨期通用，别一期一个说法
 const DOMAINS = [
-  '国际局势', '经济结构', '资本与公司', '金融市场', '产业观察', '政企关系',
+  '国际局势', '资本与公司', '金融市场', '产业观察', '政企关系',
   '科技与 AI', '社会心理', '社会分层', '舆论与评价', '文化与规则',
   '长期主义', '国家路径', '体育产业', '个人选择', '时代与个人',
   '慈善与信任', '教育与代际', '城市与生活'
@@ -81,8 +81,14 @@ const [lives, episodes, concepts, models, themes, keywords] = await Promise.all(
 
 // 前端按 name 匹配标签，库里没有词条的 tag 在卡片上根本不渲染。
 // 别名也算命中，否则同一个词换个说法就被判成没词条
+// 2026-09-18 改：前端 renderLinkedChipItems 匹配的是 site.json 里构建后的全部词条，
+// 其中大半来自 scripts/keyword-definitions.d 与 content/people，只查 content/keywords 会误报
 const keywordNames = new Set();
-for (const item of keywords) {
+let builtKeywords = keywords;
+try {
+  builtKeywords = JSON.parse(await fs.readFile(path.join(projectRoot, 'docs/data/site.json'), 'utf8')).keywords || keywords;
+} catch {}
+for (const item of builtKeywords) {
   if (item.name) keywordNames.add(item.name);
   for (const alias of item.aliases || []) keywordNames.add(alias);
 }

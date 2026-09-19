@@ -1,0 +1,86 @@
+{
+  "id": "cayman-islands",
+  "name": "开曼群岛",
+  "kind": "geography",
+  "asOf": "2026-09-19",
+  "sources": [
+    {
+      "title": "Cayman Islands - Corporate - Taxes on corporate income | PwC Worldwide Tax Summaries",
+      "url": "https://taxsummaries.pwc.com/cayman-islands/corporate/taxes-on-corporate-income",
+      "note": "核对开曼不征公司所得税、资本利得税和预提税"
+    },
+    {
+      "title": "Cayman Islands Exempted Company Full Guide | BBCIncorp",
+      "url": "https://bbcincorp.com/offshore/articles/a-guide-to-exempted-company-in-cayman-islands",
+      "note": "核对开曼是港交所认可的上市注册地之一，大量中国公司用开曼豁免公司做控股主体，这是注册代理商的介绍，只作背景参考"
+    },
+    {
+      "title": "Tencent | Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Tencent",
+      "note": "核对腾讯的上市主体腾讯控股注册在开曼群岛"
+    },
+    {
+      "title": "The US is reviewing Benchmark's investment into Chinese AI startup Manus | TechCrunch",
+      "url": "https://techcrunch.com/2025/05/09/the-us-is-reviewing-benchmarks-investment-into-chinese-ai-startup-manus/",
+      "note": "核对 Manus 控股公司注册在开曼，Benchmark 的律师据此认为它不算中国公司"
+    }
+  ],
+  "summary": "开曼群岛是加勒比海上的英国海外领地，不征公司所得税，中国互联网公司的境外控股主体大多注册在这里。LIVE024 讲创业公司只能在开曼设控股主体，又讲小红书靠开曼那家公司打赢了一场期权官司。",
+  "description": "开曼群岛在牙买加西北，由大开曼、小开曼、开曼布拉克三个岛组成，属英国海外领地。当地不征公司所得税和资本利得税，公司法允许设立豁免公司，股东信息不公开，设立快。港交所和美国交易所都接受开曼公司上市，腾讯、阿里这类中国公司的上市主体都注册在这里。\n\n节目提到开曼，都是在讲公司的法律身份。LIVE024 说外资直接投进来要靠外管局换汇，普通创业公司做不到，只能在开曼设个控股主体。Manus 的控股公司就在开曼，美国一方审查它的投资时，投资人也拿这一点辩称它不算中国公司。",
+  "nodeRole": "开曼在全球资本流动里是一个注册地节点。它承载的是股权，业务在别处。美元基金的钱先投进开曼公司，再通过协议流进中国境内，上市也在开曼公司这一层做。节目看重的是这一层带来的管辖权差异，同一家企业，在不同的场合可以被说成开曼公司，也可以被说成中国公司。",
+  "programAssociations": [
+    {
+      "title": "注册在哪，决定在哪打官司",
+      "episodes": [
+        "LIVE024"
+      ],
+      "note": "LIVE024 先讲 Manus，创业公司拿不到外管局换汇的待遇，只能在开曼设控股主体，由真格陪着搭了 VIE。再讲小红书，老板舍不得兑现员工期权，法律团队说你签合同的是开曼那家，跟国内这家没关系，你去开曼告去，这一手赢了官司。节目说对方等到公司上市才出手，港交所材料必然写着开曼那家持有国内公司的大部分股份，两边说法对不上。"
+    }
+  ],
+  "impactNotes": [
+    "对中国创业公司，开曼是拿美元融资和海外上市的入口，成本是公司身份被拆成境内境外两半。",
+    "对员工和小股东，签在开曼公司名下的期权和股权，真要维权就得面对远在加勒比的管辖地，节目说这是一种法域套利。",
+    "对监管方，开曼注册让企业在中美两边都可以换一种说法，美国看它是开曼公司，中国看它的业务在境内，规则收紧时两头都可能被追问。"
+  ],
+  "signalNotes": [
+    "看到一家中国公司的招股书写着开曼注册，读者可以接着找它的 VIE 协议，股权在开曼、业务在境内是这类公司的常态。",
+    "劳动纠纷或期权官司里公司主张由开曼管辖，节目的提醒是等它上市或并购时再算账，那时它最扛不住法律风险。",
+    "美国审查中国 AI 或科技投资的新闻里，开曼注册常被投资方拿来辩护，说明注册地在地缘审查里能起的作用越来越有限。"
+  ],
+  "extensionNotes": [
+    {
+      "title": "VIE架构",
+      "note": "开曼公司是 VIE 结构的顶层，想弄清钱和控制权怎么从开曼走进境内，可以接着读它。"
+    },
+    {
+      "title": "港交所",
+      "note": "开曼公司是港股的常见上市主体，小红书那一段的矛盾就暴露在上市材料里。"
+    },
+    {
+      "title": "新加坡",
+      "note": "Manus 后来把公司搬去新加坡，开曼是注册地，新加坡是人和业务真正落脚的地方。"
+    },
+    {
+      "title": "离岸财富",
+      "note": "开曼和香港、新加坡一样是离岸资金常去的地方，沿它能读到离岸资产的另一条线。"
+    }
+  ],
+  "aliases": [
+    "开曼",
+    "Cayman Islands"
+  ],
+  "relatedKeywords": [
+    "VIE架构",
+    "港交所",
+    "新加坡",
+    "离岸财富",
+    "离岸信托",
+    "腾讯"
+  ],
+  "episodes": [
+    {
+      "id": "LIVE024",
+      "note": "讲创业公司只能在开曼设控股主体，又讲小红书用开曼公司的管辖权打赢期权官司、上市时被反将一军。"
+    }
+  ]
+}

@@ -23,7 +23,8 @@
   "EP169": {
     "bilibili": {
       "platform": "bilibili",
-      "url": "https://www.bilibili.com/video/BV1rn746sELj/"
+      "url": "https://www.bilibili.com/video/BV1rn746sELj/",
+      "access": "member"
     },
     "youtube": {
       "platform": "youtube",
@@ -221,8 +222,7 @@
   "EP140": {
     "bilibili": {
       "platform": "bilibili",
-      "url": "https://www.bilibili.com/video/BV1dF5d6DEu1/?spm_id_from=333.788.top_right_bar_window_dynamic.content.click",
-      "access": "member"
+      "url": "https://www.bilibili.com/video/BV1dF5d6DEu1/?spm_id_from=333.788.top_right_bar_window_dynamic.content.click"
     },
     "youtube": {
       "platform": "youtube",
@@ -232,8 +232,7 @@
   "EP139": {
     "bilibili": {
       "platform": "bilibili",
-      "url": "https://www.bilibili.com/video/BV1c85y6aE44/?spm_id_from=333.1007.top_right_bar_window_dynamic.content.click",
-      "access": "member"
+      "url": "https://www.bilibili.com/video/BV1c85y6aE44/?spm_id_from=333.1007.top_right_bar_window_dynamic.content.click"
     },
     "youtube": {
       "platform": "youtube",
@@ -1061,6 +1060,19 @@
     "youtube": {
       "platform": "youtube",
       "url": "https://www.youtube.com/watch?v=WlofJF-0bAs"
+    }
+  },
+  "EP013": {
+    "bilibili": {
+      "platform": "bilibili",
+      "url": "https://www.bilibili.com/video/BV1hfsNzyEjv/"
+    }
+  },
+  "EP192": {
+    "bilibili": {
+      "platform": "bilibili",
+      "status": "unavailable",
+      "note": "暂未上架"
     }
   }
 }

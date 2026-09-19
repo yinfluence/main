@@ -1,0 +1,82 @@
+{
+  "id": "tsmc",
+  "name": "台积电",
+  "kind": "organization",
+  "asOf": "2026-09-19",
+  "sources": [
+    {
+      "title": "TSMC Intends to Expand Its Investment in the United States to US$165 Billion | TSMC",
+      "url": "https://pr.tsmc.com/english/news/3210",
+      "note": "核对台积电在美国追加一千亿美元投资，总额预计一千六百五十亿美元，包括三座新晶圆厂、两座先进封装厂和一个研发中心"
+    },
+    {
+      "title": "TSMC to make 30% of top chips in U.S. | Axios Phoenix",
+      "url": "https://www.axios.com/local/phoenix/2025/04/17/tsmc-arizona-manufacture-advanced-chips-semiconductor",
+      "note": "核对亚利桑那六座厂全部投产后，约三成最先进制程产能在美国，最先进技术仍在台湾研发和爬坡"
+    },
+    {
+      "title": "Nvidia becomes first public company worth $5 trillion | TechCrunch",
+      "url": "https://techcrunch.com/2025/10/29/nvidia-becomes-first-public-company-worth-5-trillion/",
+      "note": "核对英伟达 2025 年 10 月 29 日成为首家市值五万亿美元的上市公司"
+    },
+    {
+      "title": "TSMC warns US tariffs could derail USD 165 billion Arizona investment | The Tribune",
+      "url": "https://www.tribuneindia.com/news/arizona/tsmc-warns-us-tariffs-could-derail-usd-165-billion-arizona-investment",
+      "note": "核对台积电曾公开表示美国关税可能影响亚利桑那投资计划"
+    }
+  ],
+  "summary": "台积电是全球最大的晶圆代工厂，英伟达等公司设计的高端芯片大多由它制造。LIVE007 说那条五年内必然介入的消息，第二个听众就是台积电这样的供应链，要它把产能分一部分出去。",
+  "description": "台积电全称台湾积体电路制造公司，总部在新竹，只替别人造芯片、不出自己品牌，这种模式叫晶圆代工。先进制程的产能高度集中在台湾，AI 芯片的制造离不开它。它在美国亚利桑那的投资计划总额约一千六百五十亿美元，按公司说法六座厂全部投产后，约三成最先进制程会在美国生产，最前沿的技术仍先在台湾做。\n\nLIVE007 从一条转述的报道讲起，说有亲信透露这趟出访最大的成果是确认中国五年内必然军事介入，节目自己标了据说。节目解读这话说给两拨人听，一拨是 MAGA 基本盘，另一拨是供应链。直播原话用弯弯、那个岛指台湾，本页换成了台湾，台积电是直播点了名的。",
+  "positionNotes": "它站在 AI 产业链最窄的一段。设计可以在很多公司，造最先进的芯片只有少数工厂能做，台积电是其中最大的一家。节目的说法是英伟达那五万亿市值，底下压着的都是台积电的制造能力。",
+  "exposureNotes": "产能集中在一个岛上，地缘风险直接变成全球芯片供应的风险。把产能往美国分，建厂成本更高，关税政策还会变，台积电自己也公开说过关税可能拖累亚利桑那的计划。节目只讲了分出去的压力，没有讲分出去的代价。",
+  "programAssociations": [
+    {
+      "title": "必然两个字，是说给供应链听的",
+      "episodes": [
+        "LIVE007"
+      ],
+      "note": "LIVE007 开场讲出访后放出来的风声，注意那个词是必然。节目说这话不是给中国听的，也不是给民主党听的，在台湾这件事上民主党比共和党更激进。第一个听众是不想打仗、只想卖大豆的 MAGA，第二个是供应链，告诉台积电把产能分一部分到美国去，至少分担风险，不能全押在台湾。节目顺着说 AI 这一轮美股的市值都建在全球算力上，算力的底子是台积电，所以这句话牵动的是第一岛链这堵墙和高科技产业的去向。"
+    }
+  ],
+  "signalNotes": [
+    "美国官员谈到台海时间表、用上必然这类词，节目会接着看台积电有没有加码海外建厂，把风声和产能搬迁连在一起读。",
+    "台积电宣布在美国、日本、欧洲新建工厂，节目读的是供应链在分担风险，商业上的扩张理由放在其次。",
+    "英伟达市值创新高的消息出来，节目会提醒它的制造底子在台积电，AI 行情和一个岛的安全绑在一起。"
+  ],
+  "extensionNotes": [
+    {
+      "title": "英伟达",
+      "note": "节目说英伟达五万亿市值底下压着台积电的制造能力，设计和制造的分工在这里看得最清楚。"
+    },
+    {
+      "title": "第一岛链",
+      "note": "LIVE007 把台积电的产能问题和川普在第一岛链建墙放在一起讲。"
+    },
+    {
+      "title": "芯片",
+      "note": "LIVE011 讲良品率时说人家一块八十、我们一块八千，没点名是哪家，读者可以拿台积电这类头部代工厂的水准去对照。"
+    },
+    {
+      "title": "光刻机",
+      "note": "先进制程离不开光刻机，台积电的领先位置也建在这台设备的供应上。"
+    }
+  ],
+  "aliases": [
+    "TSMC",
+    "台湾积体电路制造",
+    "台湾积体电路制造股份有限公司"
+  ],
+  "relatedKeywords": [
+    "英伟达",
+    "第一岛链",
+    "芯片",
+    "光刻机",
+    "特朗普"
+  ],
+  "episodes": [
+    {
+      "id": "LIVE007",
+      "note": "五年内必然介入的风声第二个说给供应链听，要台积电把产能分一部分出去，不能全押在岛上。"
+    }
+  ]
+}

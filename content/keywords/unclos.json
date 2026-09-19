@@ -1,0 +1,83 @@
+{
+  "id": "unclos",
+  "name": "海洋法",
+  "kind": "mechanism",
+  "asOf": "2026-09-19",
+  "sources": [
+    {
+      "title": "Codifying Coercion: Iran's New Legal Regime and the Law of International Straits | EJIL: Talk!",
+      "url": "https://www.ejiltalk.org/codifying-coercion-irans-new-legal-regime-and-the-law-of-international-straits/",
+      "note": "核对国际海峡的过境通行制度，沿岸国不得妨碍或中止过境通行，第 42 条允许的立法事项里没有收费"
+    },
+    {
+      "title": "The Strait of Hormuz, Korea's Energy Security, and the Limits on Charges for Passage | Foley Hoag",
+      "url": "https://foleyhoag.com/news-and-insights/publications/alerts-and-updates/2026/september/the-strait-of-hormuz-koreas-energy-security-and-the-limits-on-charges-for-passage/",
+      "note": "核对第 26 条不得仅因通过而收费、只能对具体服务收费，伊朗 2026 年 3 月通过海峡过境收费法，伊朗签署但未批准公约，阿曼已批准"
+    },
+    {
+      "title": "Trump and Iran sign ceasefire agreement, including $300B for Iran's reconstruction | Scripps News",
+      "url": "https://www.scrippsnews.com/us-news/iran-war/us-iran-ceasefire-draft-pledges-end-to-hostilities-strait-of-hormuz-reopening",
+      "note": "核对 2026 年 6 月美伊备忘录写入海峡按适用国际法与阿曼协商管理、至少三千亿美元重建资金"
+    }
+  ],
+  "summary": "海洋法通常指 1982 年的《联合国海洋法公约》，它规定船只可以自由通过国际海峡，沿岸国不能仅因通过就收费。LIVE018 认为美伊协议里在海洋法框架下这句限定语，等于不许伊朗在霍尔木兹设卡收钱。",
+  "description": "《联合国海洋法公约》1982 年通过、1994 年生效，规定了领海、专属经济区、公海和国际海峡的规则。用于国际航行的海峡实行过境通行制度，沿岸国不得妨碍，也不得中止。公约第 26 条写明，不得仅因外国船舶通过领海而收费，只能对提供的具体服务收费。运河是人工修建的工程，按各自的条约和国内法收费，不在这套规则里。伊朗签署了公约但没有批准，阿曼已经批准。伊朗议会 2026 年 3 月通过了海峡过境收费法，多数国际法学者认为它违法。\n\n在节目里，海洋法是协议里暗藏的那一手。",
+  "mechanismNotes": [
+    "输入是一句限定语。节目把协议读成在海洋法的框架下，海峡控制权才归属于沿岸国。公开的备忘录文本写的是按适用的国际法、与阿曼协商管理海峡，节目直接把它理解为海洋法。",
+    "过程是把控制权和收费权拆开。按海洋法，天然航道归你也不能收过路费，能收费的只有运河。北部航道可以属于伊朗，南部可以属于阿曼，谁都别想设卡。",
+    "结果是一把可以随时拔出来的规则。伊朗一旦开始收费，美国、以色列或者任何一个国家都能以违反海洋法为由来打它。节目说海峡里最硬的就是这一条规则，舰队反倒其次。",
+    "这套机制的弱点在于伊朗没有批准公约，它可以主张自己不受条约约束。国际法学界的主流看法是过境通行已成为习惯国际法，这层争议节目没有展开。"
+  ],
+  "programAssociations": [
+    {
+      "title": "控制权给了，收费权没给",
+      "episodes": [
+        "LIVE018"
+      ],
+      "note": "LIVE018 把美伊协议拆成四条逐条读。第二条是海峡控制权，很多人以为给了伊朗，节目要大家看那句在海洋法的框架下。按这个框架，天然航道不许收费，控制权归谁都设不了卡，一收费别国就有理由动手。节目说看不懂这一句就会误以为伊朗赢了，并把它和第一条的核、第三条的三千亿放在一起，结论是协议的里子是建墙和掐灰色贸易。这一节接到 EP090 讲过的霍尔木兹油阀和咽喉杠杆。"
+    }
+  ],
+  "signalNotes": [
+    "海峡沿岸国宣布收取过境费、安全费或环保费时，海洋法第 26 条和过境通行制度会被搬出来，节目读到的是一个现成的开战理由。",
+    "协议文本里出现依照国际法、在某某框架下这类限定语，节目提醒要逐字读，限定语往往比主句更能说明谁让了步。",
+    "有人拿苏伊士、巴拿马这些运河收费来类比海峡，读者要分清运河是人修的工程，海峡是天然航道，两者规则不同。",
+    "某国没有批准公约却被要求遵守，讨论会转向习惯国际法，这是这套规则最容易被挑战的地方。"
+  ],
+  "extensionNotes": [
+    {
+      "title": "霍尔木兹海峡",
+      "note": "海洋法在 LIVE018 里落地的地方，控制权和收费权的拆分就是围绕它讲的。"
+    },
+    {
+      "title": "美伊协议",
+      "note": "海洋法这句限定语出自这份协议，节目把四条逐一拆开，海洋法是第二条。"
+    },
+    {
+      "title": "巴拿马运河",
+      "note": "能合法收费的那一类通道，和天然海峡放在一起看，能看出节目说的只有运河能收费是什么意思。"
+    },
+    {
+      "title": "咽喉杠杆",
+      "note": "海峡是天然的咽喉，节目认为海洋法恰好限制了沿岸国把这根杠杆变成收费站。"
+    }
+  ],
+  "aliases": [
+    "联合国海洋法公约",
+    "UNCLOS",
+    "国际海洋法",
+    "过境通行权"
+  ],
+  "relatedKeywords": [
+    "霍尔木兹海峡",
+    "美伊协议",
+    "伊朗",
+    "巴拿马运河",
+    "灰色贸易"
+  ],
+  "episodes": [
+    {
+      "id": "LIVE018",
+      "note": "拆美伊协议第二条，按海洋法天然航道不能收费，控制权归谁都设不了卡。"
+    }
+  ]
+}

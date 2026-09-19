@@ -1,0 +1,92 @@
+{
+  "id": "hong-shan",
+  "name": "红杉",
+  "kind": "organization",
+  "asOf": "2026-09-19",
+  "sources": [
+    {
+      "title": "HongShan | Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/HongShan",
+      "note": "核对 2023 年 6 月红杉资本宣布拆成三家独立机构，中国业务英文名改为 HongShan，中文仍叫红杉，由沈南鹏领导，拆分在 2024 年 3 月底前完成"
+    },
+    {
+      "title": "从Sequoia到HongShan，红杉中国开启新征程 | 新浪财经",
+      "url": "https://finance.sina.cn/stock/vcpe/2023-06-07/detail-imywmksp3867367.d.html",
+      "note": "核对拆分理由是全球投资业务管理复杂、投资组合冲突"
+    },
+    {
+      "title": "The US is reviewing Benchmark's investment into Chinese AI startup Manus | TechCrunch",
+      "url": "https://techcrunch.com/2025/05/09/the-us-is-reviewing-benchmarks-investment-into-chinese-ai-startup-manus/",
+      "note": "核对报道把红杉切断与中国业务的关系放在美国对华投资批评和对外投资新规的背景下"
+    },
+    {
+      "title": "Manus估值36亿了？| 投中网",
+      "url": "https://m.chinaventure.com.cn/news/80-20250427-386071.html",
+      "note": "核对 2024 年 11 月 A 轮由红杉中国、腾讯、王慧文、真格基金参投，投后约 8500 万美元；2025 年 4 月 B 轮 Benchmark 领投，红杉中国跟投"
+    },
+    {
+      "title": "Tencent Leads Buyback of AI Startup Manus From Meta at Original Price | Startup Fortune",
+      "url": "https://startupfortune.com/tencent-leads-buyback-of-ai-startup-manus-from-meta-at-original-price/",
+      "note": "核对红杉中国作为原始投资人参与从 Meta 回购 Manus"
+    }
+  ],
+  "summary": "红杉在这里指红杉中国，2023 年从美国红杉资本拆出来的独立风投机构，英文名 HongShan。LIVE024 讲它是 Manus 的 A 轮投资人，也是回购时要一起擦屁股的三家之一。",
+  "description": "红杉资本创立于美国硅谷，2005 年沈南鹏与之合作成立红杉中国。2023 年 6 月红杉宣布把全球业务拆成三家，美国和欧洲保留 Sequoia Capital 的名字，中国业务英文改叫 HongShan，中文仍用红杉，印度和东南亚改名 Peak XV。拆分的背景之一是美国对中国科技投资的审查越来越严。\n\n直播里说红杉，指的都是中国这一家。LIVE024 把它放进 Manus 的股权史。真格先投，红杉这些后来进场就有了背书。公司被 Meta 收购时红杉按二十亿清出去，回购时又得把钱掏回来。",
+  "positionNotes": "红杉中国在创投链里是给公司定价和背书的头部机构。早期基金押中了，后面跟进的机构往往看红杉有没有进来。它本身是 GP，替背后的 LP 管钱，投资期和退出期都写在合同里，钱退出来了又要掏回去，就得向 LP 交代。",
+  "programAssociations": [
+    {
+      "title": "背书、退出与回购",
+      "episodes": [
+        "LIVE024"
+      ],
+      "note": "LIVE024 说真格肯投以后，红杉这些再进来就有了背书。2024 年 11 月 A 轮红杉、腾讯、真格加王慧文一起进，投后八千五百万美元。Meta 收购时所有老股东按二十亿清出去。回购时节目说腾讯、红杉、真格你们要给我擦屁股，剩余的红杉跟真格也得出一点。节目还推测放消息的多半是真格和红杉，因为它们是 GP，钱退出来又要掏出去，LP 会不满，放话估值没变是为了安抚，节目自陈这是揣测。"
+    }
+  ],
+  "exposureNotes": [
+    "一家美元基金出身的机构拆成中国独立品牌以后，它投的中国公司再被外资收购、再被国内叫停，钱在两边来回，最先要面对的是自己的 LP。",
+    "节目说出主意让肖弘关掉北京公司去新加坡的，未必是他本人，也可能是真格、红杉或者腾讯，有所暗示或者直接明示都有可能。这是节目推测，没有信源。",
+    "节目提到基金有三加二、五加二这样的投资期和退出期，Manus 回购可能让退出期延长，这会影响 LP 什么时候拿回钱。"
+  ],
+  "signalNotes": [
+    "看到一家早期公司连续几轮融资都有红杉，节目的读法是后来的钱在跟它的背书，估值里有一部分是名字的价钱。",
+    "外资机构拆分、改名、剥离中国业务的新闻，可以和红杉 2023 年那次拆分对照着看，背后常有美国对华投资审查的压力。",
+    "并购交易还没完成就有消息流出来，节目会去猜哪一方最需要安抚自己的出资人，在 Manus 这件事里它猜的是真格和红杉。"
+  ],
+  "extensionNotes": [
+    {
+      "title": "真格基金",
+      "note": "Manus 的种子轮投资人，节目说真格先投、红杉再进，是一条背书的链条。"
+    },
+    {
+      "title": "腾讯",
+      "note": "A 轮的同伴，回购时的牵头方，节目把三家放在一起说要替这笔交易擦屁股。"
+    },
+    {
+      "title": "GP与LP",
+      "note": "节目推测放消息是为了安抚 LP，想看懂这一层，要先知道 GP 替谁管钱。"
+    },
+    {
+      "title": "天使投资",
+      "note": "红杉在 Manus 这里接的是天使轮之后的 A 轮，早期投资各轮次的分工可以从这里看。"
+    }
+  ],
+  "aliases": [
+    "红杉中国",
+    "红杉资本中国",
+    "HongShan",
+    "Sequoia China"
+  ],
+  "relatedKeywords": [
+    "真格基金",
+    "腾讯",
+    "GP与LP",
+    "天使投资",
+    "一级市场"
+  ],
+  "episodes": [
+    {
+      "id": "LIVE024",
+      "note": "Manus 的 A 轮投资人，被 Meta 收购时退出，回购时又被节目点名要一起出钱擦屁股。"
+    }
+  ]
+}
