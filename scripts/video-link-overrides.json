@@ -1074,5 +1074,15 @@
       "status": "unavailable",
       "note": "暂未上架"
     }
+  },
+  "EP214": {
+    "bilibili": {
+      "platform": "bilibili",
+      "url": "https://www.bilibili.com/video/BV1qset6bECp/"
+    },
+    "youtube": {
+      "platform": "youtube",
+      "url": "https://www.youtube.com/watch?v=iuKH6oiT3uc"
+    }
   }
 }

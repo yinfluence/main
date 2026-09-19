@@ -2,13 +2,13 @@
   "meta": {
     "title": "颖响力知识图谱",
     "subtitle": "节目、概念、模型、人物、主题之间的可视化连接网络",
-    "nodeCount": 735,
-    "linkCount": 2720,
+    "nodeCount": 737,
+    "linkCount": 2725,
     "typeCounts": {
       "model": 83,
       "live": 42,
-      "concept": 240,
-      "episode": 213,
+      "concept": 241,
+      "episode": 214,
       "theme": 92,
       "person": 65
     }
@@ -488,6 +488,17 @@
       "degree": 23
     },
     {
+      "id": "model:path-dependence",
+      "key": "path-dependence",
+      "label": "路径依赖",
+      "fullLabel": "路径依赖",
+      "type": "model",
+      "route": "models/path-dependence",
+      "summary": "路径依赖解释早期技术和叙事选择一旦成功，就会反过来限制后续转向更优路径。",
+      "status": null,
+      "degree": 23
+    },
+    {
       "id": "episode:EP136",
       "key": "EP136",
       "label": "EP136",
@@ -552,17 +563,6 @@
       "summary": "七八家机构各掏三十亿去稳三百，叠在一起就成了一千。",
       "status": "published",
       "degree": 23
-    },
-    {
-      "id": "model:path-dependence",
-      "key": "path-dependence",
-      "label": "路径依赖",
-      "fullLabel": "路径依赖",
-      "type": "model",
-      "route": "models/path-dependence",
-      "summary": "路径依赖解释早期技术和叙事选择一旦成功，就会反过来限制后续转向更优路径。",
-      "status": null,
-      "degree": 22
     },
     {
       "id": "episode:EP131",
@@ -697,6 +697,17 @@
       "degree": 19
     },
     {
+      "id": "theme:middle-class-descent-and-stratification",
+      "key": "middle-class-descent-and-stratification",
+      "label": "中产下坠与分层社会",
+      "fullLabel": "中产下坠与分层社会",
+      "type": "theme",
+      "route": "themes/middle-class-descent-and-stratification",
+      "summary": "当中间层缺乏缓冲带时，经济下行会迅速转成身份下坠、关系断裂和社会分层加固。",
+      "status": null,
+      "degree": 19
+    },
+    {
       "id": "concept:middle-class-hard-landing",
       "key": "middle-class-hard-landing",
       "label": "中产硬着陆",
@@ -770,17 +781,6 @@
       "type": "model",
       "route": "models/value-capture",
       "summary": "价值捕获模型强调商业链条中关键不只是创造了价值，而是谁真正留下了价值。",
-      "status": null,
-      "degree": 18
-    },
-    {
-      "id": "theme:middle-class-descent-and-stratification",
-      "key": "middle-class-descent-and-stratification",
-      "label": "中产下坠与分层社会",
-      "fullLabel": "中产下坠与分层社会",
-      "type": "theme",
-      "route": "themes/middle-class-descent-and-stratification",
-      "summary": "当中间层缺乏缓冲带时，经济下行会迅速转成身份下坠、关系断裂和社会分层加固。",
       "status": null,
       "degree": 18
     },
@@ -3491,6 +3491,17 @@
       "degree": 6
     },
     {
+      "id": "theme:brand-symbol-and-value",
+      "key": "brand-symbol-and-value",
+      "label": "品牌符号与价值感知",
+      "fullLabel": "品牌符号与价值感知",
+      "type": "theme",
+      "route": "themes/brand-symbol-and-value",
+      "summary": "讨论品牌符号如何塑造用户对价格、品质和价值的判断。",
+      "status": null,
+      "degree": 6
+    },
+    {
       "id": "model:human-machine-differentiation",
       "key": "human-machine-differentiation",
       "label": "人机差异化模型",
@@ -3986,17 +3997,6 @@
       "degree": 5
     },
     {
-      "id": "theme:brand-symbol-and-value",
-      "key": "brand-symbol-and-value",
-      "label": "品牌符号与价值感知",
-      "fullLabel": "品牌符号与价值感知",
-      "type": "theme",
-      "route": "themes/brand-symbol-and-value",
-      "summary": "讨论品牌符号如何塑造用户对价格、品质和价值的判断。",
-      "status": null,
-      "degree": 5
-    },
-    {
       "id": "theme:platform-governance-and-folk-discourse",
       "key": "platform-governance-and-folk-discourse",
       "label": "平台治理与民间话语",
@@ -4378,6 +4378,17 @@
       "type": "episode",
       "route": "episodes/EP179",
       "summary": "新加坡到处是冷气，商场、地铁、写字楼都有，中小学的普通教室却不准装。有中文圈王姓大 V 说是因为穷，可新加坡人均 GDP 亚洲第一，差的不是这点钱。翻过教育官网和当地讨论群，背后是提前设计好的一整套治理逻辑。教育上让孩子从小适应热带气候，建筑上按绿色标准被动降温，健康上靠自然通风减少交叉感染。作息上七点半前到校、下午一两点放学，避开最热的时段，还错开了通勤高峰。新加坡成功靠的不是地理位置和运气，是把细节扣到这个份上的规划能力，和人人追求舒适时还能坚持长远选择的定力。",
+      "status": "curated",
+      "degree": 5
+    },
+    {
+      "id": "episode:EP214",
+      "key": "EP214",
+      "label": "EP214",
+      "fullLabel": "EP214 · 耐克被踢标普100，lululemon市值腰斩销量转跌！人老了？阶层缩了？",
+      "type": "episode",
+      "route": "episodes/EP214",
+      "summary": "耐克被移出标普100，结束了近 18 年的成分股身份，五年里市值跌掉近八成。lululemon 又一次下调全年营收预期，股价单日跌近两成，北美同店销售下滑 12%。常见的解释是产品创新不足、营销和管理失误，可两家一起下滑，背后还有两层原因。一层是品牌绑定的那一代人老了，下一代把上一代的身份勋章看成妈妈牌。另一层是全球中产在收缩，中高端运动服饰属于可选消费，日子一紧最先被砍。市场往两头挤，靠标榜中产身份吃溢价的品牌会一步步失去土壤。",
       "status": "curated",
       "degree": 5
     },
@@ -5713,6 +5724,17 @@
       "degree": 3
     },
     {
+      "id": "theme:consumer-audience-rewrite",
+      "key": "consumer-audience-rewrite",
+      "label": "消费客群重写",
+      "fullLabel": "消费客群重写",
+      "type": "theme",
+      "route": "themes/consumer-audience-rewrite",
+      "summary": "品牌和内容生产者为了继续增长，会主动改写自己想吸引的人以及要卖给他们的身份。",
+      "status": null,
+      "degree": 3
+    },
+    {
       "id": "concept:information-cocoon-breach",
       "key": "information-cocoon-breach",
       "label": "信息茧房破口",
@@ -6644,17 +6666,6 @@
       "type": "concept",
       "route": "concepts/system-fallback",
       "summary": "复杂系统不能只靠一个大脑或一层控制，必须在异常状态下保留可执行的多层接管和降级能力。",
-      "status": null,
-      "degree": 2
-    },
-    {
-      "id": "theme:consumer-audience-rewrite",
-      "key": "consumer-audience-rewrite",
-      "label": "消费客群重写",
-      "fullLabel": "消费客群重写",
-      "type": "theme",
-      "route": "themes/consumer-audience-rewrite",
-      "summary": "品牌和内容生产者为了继续增长，会主动改写自己想吸引的人以及要卖给他们的身份。",
       "status": null,
       "degree": 2
     },
@@ -7601,6 +7612,17 @@
       "type": "concept",
       "route": "concepts/social-currency-pressure",
       "summary": "流行内容成为社交货币后，人们会因怕掉队而被迫参与、理解和复刻。",
+      "status": null,
+      "degree": 1
+    },
+    {
+      "id": "concept:identity-premium",
+      "key": "identity-premium",
+      "label": "身份溢价",
+      "fullLabel": "身份溢价",
+      "type": "concept",
+      "route": "concepts/identity-premium",
+      "summary": "商品价格里超出功能的那一截，买的是让别人看出自己属于哪一类人，这一截随着撑它的阶层一起涨落。",
       "status": null,
       "degree": 1
     },
@@ -15984,6 +16006,31 @@
     {
       "source": "episode:EP213",
       "target": "theme:real-estate-deleveraging",
+      "kind": "episode-theme"
+    },
+    {
+      "source": "episode:EP214",
+      "target": "concept:identity-premium",
+      "kind": "episode-concept"
+    },
+    {
+      "source": "episode:EP214",
+      "target": "model:path-dependence",
+      "kind": "episode-model"
+    },
+    {
+      "source": "episode:EP214",
+      "target": "theme:middle-class-descent-and-stratification",
+      "kind": "episode-theme"
+    },
+    {
+      "source": "episode:EP214",
+      "target": "theme:brand-symbol-and-value",
+      "kind": "episode-theme"
+    },
+    {
+      "source": "episode:EP214",
+      "target": "theme:consumer-audience-rewrite",
       "kind": "episode-theme"
     },
     {

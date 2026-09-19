@@ -1,0 +1,58 @@
+{
+  "id": "sp-100",
+  "name": "标普100",
+  "kind": "general",
+  "asOf": "2026-09-19",
+  "summary": "标普100是从标普500里挑出的约一百家美国大公司组成的指数，节目用耐克被移出它说明一个品牌从巅峰跌出了头部公司的名单。",
+  "description": "标普100（S&P 100）由标普道琼斯指数公司编制，成分股从标普500里选出，大体是市值最大、业务成熟的一百家左右美国公司，常被当成美国头部企业的名单。成分股会随市值和行业代表性调整，被移出通常意味着公司市值排名掉出了前列。2026 年 9 月，耐克被移出，补入的是戴尔、Palo Alto Networks、Arista Networks 和 SanDisk 四家科技公司。",
+  "aliases": [
+    "S&P 100",
+    "标普 100"
+  ],
+  "relatedKeywords": [
+    "耐克",
+    "可选消费"
+  ],
+  "sources": [
+    {
+      "title": "Fortune: Nike exits the S&P 100 after 18 years and a $200 billion market-cap wipeout",
+      "url": "https://fortune.com/2026/09/08/nike-stock-plummets-sp500-market-cap-index/",
+      "note": "核对耐克被移出标普100、在榜近 18 年、市值蒸发约 2000 亿美元。"
+    },
+    {
+      "title": "Yahoo Finance: Nike Exits the S&P 100 Index. 4 Tech Stocks Move In",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/nike-exits-p-100-index-111450130.html",
+      "note": "核对 9 月 4 日公告、9 月 21 日生效，以及戴尔、Palo Alto、Arista、SanDisk 四家科技公司补入。"
+    }
+  ],
+  "programAssociations": [
+    {
+      "title": "被踢出头部名单",
+      "episodes": [
+        "EP214"
+      ],
+      "note": "EP214 用耐克被踢出标普100、结束近 18 年的在榜历史开场，配上五年市值蒸发两千多亿美元的数字，说明一个曾经的全民品牌已经从美国头部公司里掉了出去。节目没有停在股市层面，而是借这个信号往下追问，是这代消费者老了，还是撑着品牌的中产在缩。"
+    }
+  ],
+  "signalNotes": [
+    "一家消费品公司被移出标普100、补进来的全是科技公司时，读者可以把它读成资本眼里的增长重心在换行业。",
+    "指数调整本身只是按市值重排，讨论它时要分清是公司自己出了问题，还是整个行业的估值在往下走。",
+    "新闻里说某公司被踢出指数，往往会引发被动基金卖出，短期股价波动不一定反映经营变化。"
+  ],
+  "extensionNotes": [
+    {
+      "title": "耐克",
+      "note": "2026 年被移出标普100 的公司，是这个指数调整最直接的案例。"
+    },
+    {
+      "title": "K型分化",
+      "note": "科技公司挤进头部、消费品公司掉出去，跟中间层消费变薄是同一段时间里的事。"
+    }
+  ],
+  "episodes": [
+    {
+      "id": "EP214",
+      "note": "耐克被移出标普100 是开场的信号，用来说明一个全民运动品牌已经跌出美国头部公司名单。"
+    }
+  ]
+}
