@@ -2,11 +2,11 @@
   "meta": {
     "title": "颖响力知识图谱",
     "subtitle": "节目、概念、模型、人物、主题之间的可视化连接网络",
-    "nodeCount": 737,
-    "linkCount": 2725,
+    "nodeCount": 738,
+    "linkCount": 2745,
     "typeCounts": {
       "model": 83,
-      "live": 42,
+      "live": 43,
       "concept": 241,
       "episode": 214,
       "theme": 92,
@@ -246,6 +246,17 @@
       "degree": 27
     },
     {
+      "id": "concept:cost-shifting",
+      "key": "cost-shifting",
+      "label": "成本外移",
+      "fullLabel": "成本外移",
+      "type": "concept",
+      "route": "concepts/cost-shifting",
+      "summary": "组织内部的高额非生产性成本，最终会通过价格、规则或风险转嫁给外部承担者。",
+      "status": null,
+      "degree": 26
+    },
+    {
       "id": "theme:singapore-and-small-state-survival",
       "key": "singapore-and-small-state-survival",
       "label": "新加坡与小国生存术",
@@ -323,17 +334,6 @@
       "degree": 26
     },
     {
-      "id": "concept:cost-shifting",
-      "key": "cost-shifting",
-      "label": "成本外移",
-      "fullLabel": "成本外移",
-      "type": "concept",
-      "route": "concepts/cost-shifting",
-      "summary": "组织内部的高额非生产性成本，最终会通过价格、规则或风险转嫁给外部承担者。",
-      "status": null,
-      "degree": 25
-    },
-    {
       "id": "episode:EP169",
       "key": "EP169",
       "label": "EP169",
@@ -387,6 +387,17 @@
       "summary": "豁免的只有个人家庭生活必需品，存款和黄金都不在里面。",
       "status": "published",
       "degree": 25
+    },
+    {
+      "id": "theme:great-power-competition-and-strategic-time",
+      "key": "great-power-competition-and-strategic-time",
+      "label": "大国竞争与战略时间",
+      "fullLabel": "大国竞争与战略时间",
+      "type": "theme",
+      "route": "themes/great-power-competition-and-strategic-time",
+      "summary": "讨论战争、联盟和国家战略如何被时间窗口、社会成本和长期定力重新塑形。",
+      "status": null,
+      "degree": 24
     },
     {
       "id": "theme:rule-of-law-boundaries-and-social-trust",
@@ -464,17 +475,6 @@
       "summary": "7 月 31 号那一票之后，九月检察厅正式废止。",
       "status": "curated",
       "degree": 24
-    },
-    {
-      "id": "theme:great-power-competition-and-strategic-time",
-      "key": "great-power-competition-and-strategic-time",
-      "label": "大国竞争与战略时间",
-      "fullLabel": "大国竞争与战略时间",
-      "type": "theme",
-      "route": "themes/great-power-competition-and-strategic-time",
-      "summary": "讨论战争、联盟和国家战略如何被时间窗口、社会成本和长期定力重新塑形。",
-      "status": null,
-      "degree": 23
     },
     {
       "id": "concept:gray-oil-network",
@@ -620,6 +620,17 @@
       "degree": 21
     },
     {
+      "id": "model:strategic-timing",
+      "key": "strategic-timing",
+      "label": "战略时机",
+      "fullLabel": "战略时机",
+      "type": "model",
+      "route": "models/strategic-timing",
+      "summary": "真正决定收益的往往不是是否参与，而是你能否在远早于大众情绪的时点、以合适规模和合适位置进入。",
+      "status": null,
+      "degree": 21
+    },
+    {
       "id": "live:LIVE041",
       "key": "LIVE041",
       "label": "LIVE041",
@@ -638,17 +649,6 @@
       "type": "person",
       "route": "people/donald-trump",
       "summary": "特朗普是美国共和党政治人物、第45任与第47任美国总统，节目借他观察美国战略收缩、成本转嫁和规则重定价。",
-      "status": null,
-      "degree": 20
-    },
-    {
-      "id": "model:strategic-timing",
-      "key": "strategic-timing",
-      "label": "战略时机",
-      "fullLabel": "战略时机",
-      "type": "model",
-      "route": "models/strategic-timing",
-      "summary": "真正决定收益的往往不是是否参与，而是你能否在远早于大众情绪的时点、以合适规模和合适位置进入。",
       "status": null,
       "degree": 20
     },
@@ -683,6 +683,17 @@
       "route": "episodes/EP185",
       "summary": "财经媒体都在刷一条消息，香港超过瑞士和新加坡，成了全球第一大离岸财富管理中心。全球资本并没有集体涌向香港，香港只是内地财富溢出的集散地。拆开资金来源，内地占六成以上，主力是后知后觉的中小老板和围绕公务体系长起来的新中产。台湾过来的一成多，是跟大陆深度绑定的生意钱，剩下的是从东南亚和迪拜回流的灰色贸易资金。把钱挪到香港，只是从一个棋盘跳进另一个出法律更快的棋盘，监管备好的框迟早统一去查。资产安全靠的是干净的底子和清晰的架构，挪位置没用。",
       "status": "curated",
+      "degree": 20
+    },
+    {
+      "id": "live:LIVE043",
+      "key": "LIVE043",
+      "label": "LIVE043",
+      "fullLabel": "LIVE043 · 打了四年死掉上百万，为什么没人上街？征兵名单上从来没有首都的人",
+      "type": "live",
+      "route": "lives/LIVE043",
+      "summary": "军官私下把士兵叫作灰色的牲口，死一个再从家里抓下一个。",
+      "status": "published",
       "degree": 20
     },
     {
@@ -737,6 +748,17 @@
       "type": "episode",
       "route": "episodes/EP161",
       "summary": "重提三个月前的黄金逻辑，反驳美元反比、战争避险和美联储加息三种说法。它们连暴涨都解释不了。真正的推手是灰色贸易。离岸人民币在灰色石油和商品贸易里需要背书，弃美元改用黄金。各国央行为此大量囤金，金价才从1810美元一路冲到5598美元。美元在石油和商品结算里的份额被挤掉，这才走弱。\n\n随后特朗普沿巴拿马、委内瑞拉、伊朗切断灰贸。金价失去支撑转入阴跌，美元顺势回流走强。国内突然推黄金投资，本质是帮囤金最多的央行向散户转嫁风险。也就是为国背债。",
+      "status": "curated",
+      "degree": 19
+    },
+    {
+      "id": "episode:EP180",
+      "key": "EP180",
+      "label": "EP180",
+      "fullLabel": "EP180 · 俄乌惨烈互捅！四方博弈暗流涌动，谁是地堡老头真正的敌人？",
+      "type": "episode",
+      "route": "episodes/EP180",
+      "summary": "俄乌打成了两个互捅的血人，谁也停不下来。乌克兰的无人机在俄罗斯境内来去自如，一座占全国约一成炼油产能的炼油厂被炸，克里米亚的炼油设施和油轮也一个个被打掉。俄罗斯用多型导弹饱和攻击乌克兰首都，可乌克兰的重点目标早被炸完，经济全靠欧盟输血吊命。\n\n更值得看的是中国态度之变。川普撤盘后，接手乌克兰的欧盟正是中国最大的贸易顺差来源，继续挺俄罗斯等于把欧盟变成敌人。于是中国表面亲如兄弟，实际处处收手，还去经营朝鲜，防着俄罗斯撑不住时临阵倒戈。再叠加油价下行掏空俄罗斯财政，年底前这场仗可能出现阶段性结果。",
       "status": "curated",
       "degree": 19
     },
@@ -796,13 +818,13 @@
       "degree": 18
     },
     {
-      "id": "episode:EP180",
-      "key": "EP180",
-      "label": "EP180",
-      "fullLabel": "EP180 · 俄乌惨烈互捅！四方博弈暗流涌动，谁是地堡老头真正的敌人？",
+      "id": "episode:EP135",
+      "key": "EP135",
+      "label": "EP135",
+      "fullLabel": "EP135 · 红场阅兵取消重装备方阵！俄乌战争彻底反转，我们正在看未来战争预演。【EP135】",
       "type": "episode",
-      "route": "episodes/EP180",
-      "summary": "俄乌打成了两个互捅的血人，谁也停不下来。乌克兰的无人机在俄罗斯境内来去自如，一座占全国约一成炼油产能的炼油厂被炸，克里米亚的炼油设施和油轮也一个个被打掉。俄罗斯用多型导弹饱和攻击乌克兰首都，可乌克兰的重点目标早被炸完，经济全靠欧盟输血吊命。\n\n更值得看的是中国态度之变。川普撤盘后，接手乌克兰的欧盟正是中国最大的贸易顺差来源，继续挺俄罗斯等于把欧盟变成敌人。于是中国表面亲如兄弟，实际处处收手，还去经营朝鲜，防着俄罗斯撑不住时临阵倒戈。再叠加油价下行掏空俄罗斯财政，年底前这场仗可能出现阶段性结果。",
+      "route": "episodes/EP135",
+      "summary": "俄罗斯今年胜利日阅兵取消了地面重装备方阵，官方说是怕乌克兰袭击，背后是打了四年多的仗把家底耗得差不多了。几千美元的无人机飞得低、航程上千公里，绕过防空扎进腹地，广袤国土从优势变成甩不掉的包袱。冷战时建好的炼油厂、管道和军工厂，在地图上标得明明白白。乌克兰把工厂拆散进社区，连手机维修店都在造无人机。美国收缩以后，欧洲接过了援助。俄罗斯却不敢全面动员，历史上每次总动员都迎来帝国崩塌。以后的仗，不再按国土大小和人口多少定输赢。",
       "status": "curated",
       "degree": 18
     },
@@ -848,17 +870,6 @@
       "route": "themes/sanctions-and-power-containment",
       "summary": "讨论制裁、门罗主义、海峡与联盟如何共同服务于压制对手集团的全球布局。",
       "status": null,
-      "degree": 17
-    },
-    {
-      "id": "episode:EP135",
-      "key": "EP135",
-      "label": "EP135",
-      "fullLabel": "EP135 · 红场阅兵取消重装备方阵！俄乌战争彻底反转，我们正在看未来战争预演。【EP135】",
-      "type": "episode",
-      "route": "episodes/EP135",
-      "summary": "俄罗斯今年胜利日阅兵取消了地面重装备方阵，官方说是怕乌克兰袭击，背后是打了四年多的仗把家底耗得差不多了。几千美元的无人机飞得低、航程上千公里，绕过防空扎进腹地，广袤国土从优势变成甩不掉的包袱。冷战时建好的炼油厂、管道和军工厂，在地图上标得明明白白。乌克兰把工厂拆散进社区，连手机维修店都在造无人机。美国收缩以后，欧洲接过了援助。俄罗斯却不敢全面动员，历史上每次总动员都迎来帝国崩塌。以后的仗，不再按国土大小和人口多少定输赢。",
-      "status": "curated",
       "degree": 17
     },
     {
@@ -1368,6 +1379,17 @@
       "degree": 13
     },
     {
+      "id": "episode:EP205",
+      "key": "EP205",
+      "label": "EP205",
+      "fullLabel": "EP205 · 不止是AI漫剧停更；中国制造七层内卷之下，每个行业都在重复同一件事！",
+      "type": "episode",
+      "route": "episodes/EP205",
+      "summary": "做AI漫剧的账号成批停更，行业里的说法是内容同质、观众看腻、人太多，这几条都只说到表面。真正压下来的是七层叠在一起的压力。五个平台同时下场抢同一批制作者，模型生成一秒的价格砍到开源免费，导演十几年的镜头经验被工具打包成一键功能。万次播放的分账从上百块掉到五块，连卖课的都割不到新人了。平台拿补贴换数据、拿数据换估值，最上面是持续收紧的合规，逼着行业极快地换玩法。被挤掉的是中间那批跟随者，能留下的是造工具的人和真会用工具的人，个人电影时代要靠他们来开。",
+      "status": "curated",
+      "degree": 13
+    },
+    {
       "id": "episode:EP210",
       "key": "EP210",
       "label": "EP210",
@@ -1529,17 +1551,6 @@
       "type": "episode",
       "route": "episodes/EP201",
       "summary": "2026 年 7 月 29 日夜里，曼谷飞北京的泰航 TG674 上坐着一位国内艺人。二十二名买了普通舱票的粉丝和代拍同机跟拍，先挤进贵宾室，被劝离后守在门口。艺人先行登机时，这批人大多没验票就冲进廊桥。机组关了舱门，泰航拒载这二十二人，航班延误一小时多。带回候机厅的冲突里，一名安保做出拉眼角的动作，视频传上网，话题立刻变成泰国歧视中国人。拒载和那个手势是两件事，该负责的人也不同。让它反复发生的原因在行程怎么流出来，那条链子上有经纪公司，也有机场内部人和代拍。",
-      "status": "curated",
-      "degree": 12
-    },
-    {
-      "id": "episode:EP205",
-      "key": "EP205",
-      "label": "EP205",
-      "fullLabel": "EP205 · 不止是AI漫剧停更；中国制造七层内卷之下，每个行业都在重复同一件事！",
-      "type": "episode",
-      "route": "episodes/EP205",
-      "summary": "做AI漫剧的账号成批停更，行业里的说法是内容同质、观众看腻、人太多，这几条都只说到表面。真正压下来的是七层叠在一起的压力。五个平台同时下场抢同一批制作者，模型生成一秒的价格砍到开源免费，导演十几年的镜头经验被工具打包成一键功能。万次播放的分账从上百块掉到五块，连卖课的都割不到新人了。平台拿补贴换数据、拿数据换估值，最上面是持续收紧的合规，逼着行业极快地换玩法。被挤掉的是中间那批跟随者，能留下的是造工具的人和真会用工具的人，个人电影时代要靠他们来开。",
       "status": "curated",
       "degree": 12
     },
@@ -1727,6 +1738,17 @@
       "type": "model",
       "route": "models/chokepoint-order-model",
       "summary": "真正决定咽喉通道价值的，不只是地理位置，而是谁定义通行规则、风险定价与法律边界。",
+      "status": null,
+      "degree": 10
+    },
+    {
+      "id": "theme:human-value-and-state-credit",
+      "key": "human-value-and-state-credit",
+      "label": "人的价值与国家信用",
+      "fullLabel": "人的价值与国家信用",
+      "type": "theme",
+      "route": "themes/human-value-and-state-credit",
+      "summary": "讨论国家究竟把个体视为成本、工具，还是视为必须兑现承诺的对象。",
       "status": null,
       "degree": 10
     },
@@ -2017,6 +2039,17 @@
       "degree": 9
     },
     {
+      "id": "theme:east-asia-security-realignment",
+      "key": "east-asia-security-realignment",
+      "label": "东亚安全重组与日本转向",
+      "fullLabel": "东亚安全重组与日本转向",
+      "type": "theme",
+      "route": "themes/east-asia-security-realignment",
+      "summary": "讨论日本重新前台化、台海压力外溢，以及东亚安全合作为何越来越难保持模糊。",
+      "status": null,
+      "degree": 9
+    },
+    {
       "id": "model:black-box-assetization",
       "key": "black-box-assetization",
       "label": "黑箱资产化",
@@ -2057,17 +2090,6 @@
       "type": "model",
       "route": "models/authority-misinfluence",
       "summary": "权威影响模型解释单点权威如何压缩组织独立判断，使成员更容易服从而非纠偏。",
-      "status": null,
-      "degree": 9
-    },
-    {
-      "id": "theme:human-value-and-state-credit",
-      "key": "human-value-and-state-credit",
-      "label": "人的价值与国家信用",
-      "fullLabel": "人的价值与国家信用",
-      "type": "theme",
-      "route": "themes/human-value-and-state-credit",
-      "summary": "讨论国家究竟把个体视为成本、工具，还是视为必须兑现承诺的对象。",
       "status": null,
       "degree": 9
     },
@@ -2446,17 +2468,6 @@
       "degree": 8
     },
     {
-      "id": "theme:east-asia-security-realignment",
-      "key": "east-asia-security-realignment",
-      "label": "东亚安全重组与日本转向",
-      "fullLabel": "东亚安全重组与日本转向",
-      "type": "theme",
-      "route": "themes/east-asia-security-realignment",
-      "summary": "讨论日本重新前台化、台海压力外溢，以及东亚安全合作为何越来越难保持模糊。",
-      "status": null,
-      "degree": 8
-    },
-    {
       "id": "concept:jurisdiction-arbitrage",
       "key": "jurisdiction-arbitrage",
       "label": "法域套利",
@@ -2464,6 +2475,17 @@
       "type": "concept",
       "route": "concepts/jurisdiction-arbitrage",
       "summary": "企业通过选择更有利法域，获取融资、估值、合规和退出上的制度差价。",
+      "status": null,
+      "degree": 8
+    },
+    {
+      "id": "model:follower-advantage-collapse",
+      "key": "follower-advantage-collapse",
+      "label": "跟随者失效",
+      "fullLabel": "跟随者失效",
+      "type": "model",
+      "route": "models/follower-advantage-collapse",
+      "summary": "增量时代跟着别人走最划算，进入存量博弈之后，同一批跟随者从红利分享者变成成本承担者。",
       "status": null,
       "degree": 8
     },
@@ -2519,6 +2541,17 @@
       "type": "concept",
       "route": "concepts/liability-firewall",
       "summary": "强势方通过不持股、不担保、不当协议主体，把债务、对赌和经营风险全部隔在墙外，自己片叶不沾身。",
+      "status": null,
+      "degree": 8
+    },
+    {
+      "id": "model:attention-commerce-loop",
+      "key": "attention-commerce-loop",
+      "label": "注意力商业闭环",
+      "fullLabel": "注意力商业闭环",
+      "type": "model",
+      "route": "models/attention-commerce-loop",
+      "summary": "注意力商业闭环解释内容如何先制造注意力，再把注意力结算为品牌、交易或平台收益。",
       "status": null,
       "degree": 8
     },
@@ -2897,17 +2930,6 @@
       "degree": 7
     },
     {
-      "id": "model:follower-advantage-collapse",
-      "key": "follower-advantage-collapse",
-      "label": "跟随者失效",
-      "fullLabel": "跟随者失效",
-      "type": "model",
-      "route": "models/follower-advantage-collapse",
-      "summary": "增量时代跟着别人走最划算，进入存量博弈之后，同一批跟随者从红利分享者变成成本承担者。",
-      "status": null,
-      "degree": 7
-    },
-    {
       "id": "concept:compliance-cost-gap",
       "key": "compliance-cost-gap",
       "label": "合规成本落差",
@@ -3036,17 +3058,6 @@
       "type": "theme",
       "route": "themes/housing-burden-and-income-distribution",
       "summary": "讨论住房、税负和可支配收入之间的关系，尤其关注中低收入群体被抽走了多少上升空间。",
-      "status": null,
-      "degree": 7
-    },
-    {
-      "id": "model:attention-commerce-loop",
-      "key": "attention-commerce-loop",
-      "label": "注意力商业闭环",
-      "fullLabel": "注意力商业闭环",
-      "type": "model",
-      "route": "models/attention-commerce-loop",
-      "summary": "注意力商业闭环解释内容如何先制造注意力，再把注意力结算为品牌、交易或平台收益。",
       "status": null,
       "degree": 7
     },
@@ -3414,6 +3425,17 @@
       "degree": 6
     },
     {
+      "id": "theme:homeland-and-civic-belonging",
+      "key": "homeland-and-civic-belonging",
+      "label": "故乡想象与公民归属",
+      "fullLabel": "故乡想象与公民归属",
+      "type": "theme",
+      "route": "themes/homeland-and-civic-belonging",
+      "summary": "讨论血缘故乡、文化记忆与现代公民认同之间的边界如何被重新划分。",
+      "status": null,
+      "degree": 6
+    },
+    {
       "id": "person:lawrence-wong",
       "key": "lawrence-wong",
       "label": "黄循财",
@@ -3579,6 +3601,17 @@
       "degree": 6
     },
     {
+      "id": "concept:information-edge",
+      "key": "information-edge",
+      "label": "信息优势",
+      "fullLabel": "信息优势",
+      "type": "concept",
+      "route": "concepts/information-edge",
+      "summary": "投资真正的优势来自别人没有的确定信息，而不是公开可见的故事和情绪。",
+      "status": null,
+      "degree": 6
+    },
+    {
       "id": "concept:wartime-oil-stockpiling",
       "key": "wartime-oil-stockpiling",
       "label": "战备储油",
@@ -3586,6 +3619,17 @@
       "type": "concept",
       "route": "concepts/wartime-oil-stockpiling",
       "summary": "石油进口国把进口量长期维持在真实需求之上，用溢出部分悄悄积累战时储备；危机来临只需停止增储，进口骤降而生产不受伤。",
+      "status": null,
+      "degree": 6
+    },
+    {
+      "id": "theme:war-system-and-succession-risk",
+      "key": "war-system-and-succession-risk",
+      "label": "战争体制与接班风险",
+      "fullLabel": "战争体制与接班风险",
+      "type": "theme",
+      "route": "themes/war-system-and-succession-risk",
+      "summary": "讨论战争国家在长期高压运转下，如何同时面临兵员枯竭、内部老化与接班断层。",
       "status": null,
       "degree": 6
     },
@@ -3931,17 +3975,6 @@
       "degree": 5
     },
     {
-      "id": "theme:homeland-and-civic-belonging",
-      "key": "homeland-and-civic-belonging",
-      "label": "故乡想象与公民归属",
-      "fullLabel": "故乡想象与公民归属",
-      "type": "theme",
-      "route": "themes/homeland-and-civic-belonging",
-      "summary": "讨论血缘故乡、文化记忆与现代公民认同之间的边界如何被重新划分。",
-      "status": null,
-      "degree": 5
-    },
-    {
       "id": "concept:relationship-insurance",
       "key": "relationship-insurance",
       "label": "关系保险",
@@ -4107,17 +4140,6 @@
       "degree": 5
     },
     {
-      "id": "concept:information-edge",
-      "key": "information-edge",
-      "label": "信息优势",
-      "fullLabel": "信息优势",
-      "type": "concept",
-      "route": "concepts/information-edge",
-      "summary": "投资真正的优势来自别人没有的确定信息，而不是公开可见的故事和情绪。",
-      "status": null,
-      "degree": 5
-    },
-    {
       "id": "theme:performative-governance-and-ritual-display",
       "key": "performative-governance-and-ritual-display",
       "label": "形式主义治理与仪式表演",
@@ -4151,13 +4173,13 @@
       "degree": 5
     },
     {
-      "id": "theme:war-system-and-succession-risk",
-      "key": "war-system-and-succession-risk",
-      "label": "战争体制与接班风险",
-      "fullLabel": "战争体制与接班风险",
-      "type": "theme",
-      "route": "themes/war-system-and-succession-risk",
-      "summary": "讨论战争国家在长期高压运转下，如何同时面临兵员枯竭、内部老化与接班断层。",
+      "id": "concept:strategic-depth-inversion",
+      "key": "strategic-depth-inversion",
+      "label": "战略纵深反转",
+      "fullLabel": "战略纵深反转",
+      "type": "concept",
+      "route": "concepts/strategic-depth-inversion",
+      "summary": "长航程无人系统让传统纵深从缓冲优势变成固定资产暴露和防护成本。",
       "status": null,
       "degree": 5
     },
@@ -4932,6 +4954,17 @@
       "degree": 4
     },
     {
+      "id": "concept:information-cocoon-breach",
+      "key": "information-cocoon-breach",
+      "label": "信息茧房破口",
+      "fullLabel": "信息茧房破口",
+      "type": "concept",
+      "route": "concepts/information-cocoon-breach",
+      "summary": "让原本封闭的人群第一次看见自身位置、差异和现实结构的传播裂缝。",
+      "status": null,
+      "degree": 4
+    },
+    {
       "id": "concept:cult-branding",
       "key": "cult-branding",
       "label": "信众化品牌",
@@ -4998,17 +5031,6 @@
       "degree": 4
     },
     {
-      "id": "concept:strategic-depth-inversion",
-      "key": "strategic-depth-inversion",
-      "label": "战略纵深反转",
-      "fullLabel": "战略纵深反转",
-      "type": "concept",
-      "route": "concepts/strategic-depth-inversion",
-      "summary": "长航程无人系统让传统纵深从缓冲优势变成固定资产暴露和防护成本。",
-      "status": null,
-      "degree": 4
-    },
-    {
       "id": "concept:institutional-software-transfer",
       "key": "institutional-software-transfer",
       "label": "制度软件移植",
@@ -5038,6 +5060,17 @@
       "type": "concept",
       "route": "concepts/asset-disposal-channel",
       "summary": "旧出清通道承载不了风险时，系统会发明新的资产处置路径来争取流动性。",
+      "status": null,
+      "degree": 4
+    },
+    {
+      "id": "concept:dignity-pricing",
+      "key": "dignity-pricing",
+      "label": "尊严定价",
+      "fullLabel": "尊严定价",
+      "type": "concept",
+      "route": "concepts/dignity-pricing",
+      "summary": "补贴和分配金额不仅是数字，也在为一个群体的体面和社会位置定价。",
       "status": null,
       "degree": 4
     },
@@ -5636,6 +5669,17 @@
       "degree": 3
     },
     {
+      "id": "concept:time-window-reading",
+      "key": "time-window-reading",
+      "label": "时间窗口阅读",
+      "fullLabel": "时间窗口阅读",
+      "type": "concept",
+      "route": "concepts/time-window-reading",
+      "summary": "同一动作在不同周期中的意义不同，判断决策必须先看它发生在哪个时间窗口。",
+      "status": null,
+      "degree": 3
+    },
+    {
       "id": "concept:sample-production-gap",
       "key": "sample-production-gap",
       "label": "送检量产分裂",
@@ -5735,17 +5779,6 @@
       "degree": 3
     },
     {
-      "id": "concept:information-cocoon-breach",
-      "key": "information-cocoon-breach",
-      "label": "信息茧房破口",
-      "fullLabel": "信息茧房破口",
-      "type": "concept",
-      "route": "concepts/information-cocoon-breach",
-      "summary": "让原本封闭的人群第一次看见自身位置、差异和现实结构的传播裂缝。",
-      "status": null,
-      "degree": 3
-    },
-    {
       "id": "concept:false-premise-rigor",
       "key": "false-premise-rigor",
       "label": "虚假前提的严谨偏差",
@@ -5819,6 +5852,17 @@
       "type": "concept",
       "route": "concepts/bounded-experimentation",
       "summary": "试验可以存在，但必须有范围、预算、反馈和退出标准，不能把整个系统押上去试错。",
+      "status": null,
+      "degree": 3
+    },
+    {
+      "id": "concept:war-insulation-collapse",
+      "key": "war-insulation-collapse",
+      "label": "战争隔离叙事破产",
+      "fullLabel": "战争隔离叙事破产",
+      "type": "concept",
+      "route": "concepts/war-insulation-collapse",
+      "summary": "强人体制把战争隔离在电视和宣传里，一旦战火落到公民身边，官方叙事就失去信念支撑。",
       "status": null,
       "degree": 3
     },
@@ -5907,17 +5951,6 @@
       "type": "person",
       "route": "people/zong-qinghou",
       "summary": "宗庆后是娃哈哈集团创始人和上一代民营消费品牌代表，节目借他追溯强创始人成功、旧账累积和交棒失序的源头。",
-      "status": null,
-      "degree": 3
-    },
-    {
-      "id": "concept:dignity-pricing",
-      "key": "dignity-pricing",
-      "label": "尊严定价",
-      "fullLabel": "尊严定价",
-      "type": "concept",
-      "route": "concepts/dignity-pricing",
-      "summary": "补贴和分配金额不仅是数字，也在为一个群体的体面和社会位置定价。",
       "status": null,
       "degree": 3
     },
@@ -6439,6 +6472,17 @@
       "degree": 2
     },
     {
+      "id": "concept:circle-of-competence",
+      "key": "circle-of-competence",
+      "label": "能力圈",
+      "fullLabel": "能力圈",
+      "type": "concept",
+      "route": "concepts/circle-of-competence",
+      "summary": "只投自己真正能接得住、能看懂的赛道，而不是看起来更美好、却根本不熟悉的行业。",
+      "status": null,
+      "degree": 2
+    },
+    {
       "id": "concept:energy-exporter-cash-crunch",
       "key": "energy-exporter-cash-crunch",
       "label": "能源输出国现金流断裂",
@@ -6560,13 +6604,13 @@
       "degree": 2
     },
     {
-      "id": "concept:time-window-reading",
-      "key": "time-window-reading",
-      "label": "时间窗口阅读",
-      "fullLabel": "时间窗口阅读",
+      "id": "concept:uncontrolled-production-logic",
+      "key": "uncontrolled-production-logic",
+      "label": "失控式生产逻辑",
+      "fullLabel": "失控式生产逻辑",
       "type": "concept",
-      "route": "concepts/time-window-reading",
-      "summary": "同一动作在不同周期中的意义不同，判断决策必须先看它发生在哪个时间窗口。",
+      "route": "concepts/uncontrolled-production-logic",
+      "summary": "当生产门槛极低时，系统不再靠少数专业创作者保证质量，而是靠海量产出后的筛选找到少数可用作品。",
       "status": null,
       "degree": 2
     },
@@ -6743,17 +6787,6 @@
       "type": "model",
       "route": "models/strategic-counteroffensive-turning-point",
       "summary": "战略反攻拐点解释一场长期战争如何从被动防守、互相僵持走到能打进对方腹地的反攻，并以打到对方首都作为战争接近结束的信号。",
-      "status": null,
-      "degree": 2
-    },
-    {
-      "id": "concept:war-insulation-collapse",
-      "key": "war-insulation-collapse",
-      "label": "战争隔离叙事破产",
-      "fullLabel": "战争隔离叙事破产",
-      "type": "concept",
-      "route": "concepts/war-insulation-collapse",
-      "summary": "强人体制把战争隔离在电视和宣传里，一旦战火落到公民身边，官方叙事就失去信念支撑。",
       "status": null,
       "degree": 2
     },
@@ -7440,17 +7473,6 @@
       "degree": 1
     },
     {
-      "id": "concept:circle-of-competence",
-      "key": "circle-of-competence",
-      "label": "能力圈",
-      "fullLabel": "能力圈",
-      "type": "concept",
-      "route": "concepts/circle-of-competence",
-      "summary": "只投自己真正能接得住、能看懂的赛道，而不是看起来更美好、却根本不熟悉的行业。",
-      "status": null,
-      "degree": 1
-    },
-    {
       "id": "theme:deglobalization-and-cultural-fragmentation",
       "key": "deglobalization-and-cultural-fragmentation",
       "label": "逆全球化与文化碎片化",
@@ -7645,17 +7667,6 @@
       "type": "model",
       "route": "models/uncontrolled-production-filter",
       "summary": "当生产近乎无限时，系统价值从生产端转向筛选端，用户注意力会成为关键过滤器。",
-      "status": null,
-      "degree": 1
-    },
-    {
-      "id": "concept:uncontrolled-production-logic",
-      "key": "uncontrolled-production-logic",
-      "label": "失控式生产逻辑",
-      "fullLabel": "失控式生产逻辑",
-      "type": "concept",
-      "route": "concepts/uncontrolled-production-logic",
-      "summary": "当生产门槛极低时，系统不再靠少数专业创作者保证质量，而是靠海量产出后的筛选找到少数可用作品。",
       "status": null,
       "degree": 1
     },
@@ -21556,6 +21567,106 @@
     {
       "source": "live:LIVE042",
       "target": "theme:time-horizon-and-foresight",
+      "kind": "live-theme"
+    },
+    {
+      "source": "live:LIVE043",
+      "target": "episode:EP135",
+      "kind": "live-episode"
+    },
+    {
+      "source": "live:LIVE043",
+      "target": "episode:EP180",
+      "kind": "live-episode"
+    },
+    {
+      "source": "live:LIVE043",
+      "target": "episode:EP205",
+      "kind": "live-episode"
+    },
+    {
+      "source": "live:LIVE043",
+      "target": "concept:strategic-depth-inversion",
+      "kind": "live-concept"
+    },
+    {
+      "source": "live:LIVE043",
+      "target": "concept:dignity-pricing",
+      "kind": "live-concept"
+    },
+    {
+      "source": "live:LIVE043",
+      "target": "concept:war-insulation-collapse",
+      "kind": "live-concept"
+    },
+    {
+      "source": "live:LIVE043",
+      "target": "concept:cost-shifting",
+      "kind": "live-concept"
+    },
+    {
+      "source": "live:LIVE043",
+      "target": "concept:information-cocoon-breach",
+      "kind": "live-concept"
+    },
+    {
+      "source": "live:LIVE043",
+      "target": "concept:information-edge",
+      "kind": "live-concept"
+    },
+    {
+      "source": "live:LIVE043",
+      "target": "concept:time-window-reading",
+      "kind": "live-concept"
+    },
+    {
+      "source": "live:LIVE043",
+      "target": "concept:uncontrolled-production-logic",
+      "kind": "live-concept"
+    },
+    {
+      "source": "live:LIVE043",
+      "target": "concept:circle-of-competence",
+      "kind": "live-concept"
+    },
+    {
+      "source": "live:LIVE043",
+      "target": "model:strategic-timing",
+      "kind": "live-model"
+    },
+    {
+      "source": "live:LIVE043",
+      "target": "model:follower-advantage-collapse",
+      "kind": "live-model"
+    },
+    {
+      "source": "live:LIVE043",
+      "target": "model:attention-commerce-loop",
+      "kind": "live-model"
+    },
+    {
+      "source": "live:LIVE043",
+      "target": "theme:human-value-and-state-credit",
+      "kind": "live-theme"
+    },
+    {
+      "source": "live:LIVE043",
+      "target": "theme:war-system-and-succession-risk",
+      "kind": "live-theme"
+    },
+    {
+      "source": "live:LIVE043",
+      "target": "theme:east-asia-security-realignment",
+      "kind": "live-theme"
+    },
+    {
+      "source": "live:LIVE043",
+      "target": "theme:great-power-competition-and-strategic-time",
+      "kind": "live-theme"
+    },
+    {
+      "source": "live:LIVE043",
+      "target": "theme:homeland-and-civic-belonging",
       "kind": "live-theme"
     },
     {
