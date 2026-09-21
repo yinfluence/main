@@ -2,13 +2,13 @@
   "meta": {
     "title": "颖响力知识图谱",
     "subtitle": "节目、概念、模型、人物、主题之间的可视化连接网络",
-    "nodeCount": 738,
-    "linkCount": 2745,
+    "nodeCount": 741,
+    "linkCount": 2753,
     "typeCounts": {
       "model": 83,
       "live": 43,
-      "concept": 241,
-      "episode": 214,
+      "concept": 243,
+      "episode": 215,
       "theme": 92,
       "person": 65
     }
@@ -2512,6 +2512,17 @@
       "degree": 8
     },
     {
+      "id": "model:screening-machine",
+      "key": "screening-machine",
+      "label": "筛选机器模型",
+      "fullLabel": "筛选机器模型",
+      "type": "model",
+      "route": "models/screening-machine",
+      "summary": "教育和组织把人当作待筛选样本，而非待生长的人来处理的系统逻辑。",
+      "status": null,
+      "degree": 8
+    },
+    {
       "id": "concept:useless-class",
       "key": "useless-class",
       "label": "无用阶级",
@@ -2875,6 +2886,17 @@
       "degree": 8
     },
     {
+      "id": "episode:EP215",
+      "key": "EP215",
+      "label": "EP215",
+      "fullLabel": "EP215 · 衡水中学模式是怎么“破灭”的？当教育没了爱，只剩利益与外包！",
+      "type": "episode",
+      "route": "episodes/EP215",
+      "summary": "衡水中学系考上清华北大的人数从最高时的两百多人掉到四十多人，外界第一反应是这所学校不行了，真正变的却是招生半径。河北从 2021 年起逐年压缩高中跨区招生，2024 年起公办普高只能在本地招，把全省尖子生集中到一所学校的做法走不通，成绩跟着回落。军事化管理这套办法解决的是让大量学生在短时间里保持高强度，那是工业管理的效率。家长仍然愿意送，因为能把管孩子这件事整个交出去，付钱配合，出了事不在自己身上。代价落在孩子身上，学到的是服从和看脸色，以及用分数衡量自己值不值得被爱。",
+      "status": "curated",
+      "degree": 8
+    },
+    {
       "id": "concept:refuge-premium",
       "key": "refuge-premium",
       "label": "避险溢价",
@@ -2930,6 +2952,17 @@
       "degree": 7
     },
     {
+      "id": "model:individuation-three-stage",
+      "key": "individuation-three-stage",
+      "label": "个体化三阶段模型",
+      "fullLabel": "个体化三阶段模型",
+      "type": "model",
+      "route": "models/individuation-three-stage",
+      "summary": "个体化三阶段模型把成长理解为依次消化亲情、权威和自我，而非一次性觉醒。",
+      "status": null,
+      "degree": 7
+    },
+    {
       "id": "concept:compliance-cost-gap",
       "key": "compliance-cost-gap",
       "label": "合规成本落差",
@@ -2948,6 +2981,28 @@
       "type": "model",
       "route": "models/regulatory-cost-arbitrage",
       "summary": "当同一市场存在多条监管路径，低合规成本路径会获得更高试错频率和更强替代能力。",
+      "status": null,
+      "degree": 7
+    },
+    {
+      "id": "concept:exam-centered-discipline",
+      "key": "exam-centered-discipline",
+      "label": "考试中心化规训",
+      "fullLabel": "考试中心化规训",
+      "type": "concept",
+      "route": "concepts/exam-centered-discipline",
+      "summary": "学校生活、身体节奏和人格评价都围绕考试排名组织起来时，教育会退化为规训系统。",
+      "status": null,
+      "degree": 7
+    },
+    {
+      "id": "theme:exam-centered-education-and-person-formation",
+      "key": "exam-centered-education-and-person-formation",
+      "label": "考试中心教育与人成形",
+      "fullLabel": "考试中心教育与人成形",
+      "type": "theme",
+      "route": "themes/exam-centered-education-and-person-formation",
+      "summary": "关注学校如何把人塑造成服从考试和权威的对象。",
       "status": null,
       "degree": 7
     },
@@ -2981,17 +3036,6 @@
       "type": "concept",
       "route": "concepts/authority-internalization",
       "summary": "外部权威被吸收到人格内部后，个体会在家庭、职场和亲密关系中自动低位化。",
-      "status": null,
-      "degree": 7
-    },
-    {
-      "id": "model:screening-machine",
-      "key": "screening-machine",
-      "label": "筛选机器模型",
-      "fullLabel": "筛选机器模型",
-      "type": "model",
-      "route": "models/screening-machine",
-      "summary": "教育和组织把人当作待筛选样本，而非待生长的人来处理的系统逻辑。",
       "status": null,
       "degree": 7
     },
@@ -3403,17 +3447,6 @@
       "degree": 6
     },
     {
-      "id": "model:individuation-three-stage",
-      "key": "individuation-three-stage",
-      "label": "个体化三阶段模型",
-      "fullLabel": "个体化三阶段模型",
-      "type": "model",
-      "route": "models/individuation-three-stage",
-      "summary": "个体化三阶段模型把成长理解为依次消化亲情、权威和自我，而非一次性觉醒。",
-      "status": null,
-      "degree": 6
-    },
-    {
       "id": "theme:public-space-and-civic-maturity",
       "key": "public-space-and-civic-maturity",
       "label": "公共空间与公民成熟",
@@ -3476,28 +3509,6 @@
       "type": "concept",
       "route": "concepts/symbolic-matricide",
       "summary": "精神弑母指人要先在精神上吃掉母系带来的文化、再吐出来给予尊重，才能长成拥有自我的人。",
-      "status": null,
-      "degree": 6
-    },
-    {
-      "id": "concept:exam-centered-discipline",
-      "key": "exam-centered-discipline",
-      "label": "考试中心化规训",
-      "fullLabel": "考试中心化规训",
-      "type": "concept",
-      "route": "concepts/exam-centered-discipline",
-      "summary": "学校生活、身体节奏和人格评价都围绕考试排名组织起来时，教育会退化为规训系统。",
-      "status": null,
-      "degree": 6
-    },
-    {
-      "id": "theme:exam-centered-education-and-person-formation",
-      "key": "exam-centered-education-and-person-formation",
-      "label": "考试中心教育与人成形",
-      "fullLabel": "考试中心教育与人成形",
-      "type": "theme",
-      "route": "themes/exam-centered-education-and-person-formation",
-      "summary": "关注学校如何把人塑造成服从考试和权威的对象。",
       "status": null,
       "degree": 6
     },
@@ -4492,6 +4503,17 @@
       "degree": 4
     },
     {
+      "id": "theme:growth-and-family-boundaries",
+      "key": "growth-and-family-boundaries",
+      "label": "成长与亲情边界",
+      "fullLabel": "成长与亲情边界",
+      "type": "theme",
+      "route": "themes/growth-and-family-boundaries",
+      "summary": "关注个体如何在亲情、权威和自我之间逐步建立成熟边界。",
+      "status": null,
+      "degree": 4
+    },
+    {
       "id": "concept:moral-interpretive-authority",
       "key": "moral-interpretive-authority",
       "label": "道德解释权",
@@ -5269,17 +5291,6 @@
       "type": "concept",
       "route": "concepts/wealth-spillover-hub",
       "summary": "一个金融节点的繁荣不是因为全球资本看好它，而是因为它恰好承接了某个大经济体溢出和回流的钱。",
-      "status": null,
-      "degree": 3
-    },
-    {
-      "id": "theme:growth-and-family-boundaries",
-      "key": "growth-and-family-boundaries",
-      "label": "成长与亲情边界",
-      "fullLabel": "成长与亲情边界",
-      "type": "theme",
-      "route": "themes/growth-and-family-boundaries",
-      "summary": "关注个体如何在亲情、权威和自我之间逐步建立成熟边界。",
       "status": null,
       "degree": 3
     },
@@ -6648,6 +6659,17 @@
       "degree": 2
     },
     {
+      "id": "concept:conditional-love-loop",
+      "key": "conditional-love-loop",
+      "label": "条件化亲情循环",
+      "fullLabel": "条件化亲情循环",
+      "type": "concept",
+      "route": "concepts/conditional-love-loop",
+      "summary": "亲情以爱之名附带控制和评价，下一代若未消化，就会继续复制这套关系。",
+      "status": null,
+      "degree": 2
+    },
+    {
       "id": "concept:external-rule-leverage",
       "key": "external-rule-leverage",
       "label": "外部规则杠杆",
@@ -7264,6 +7286,17 @@
       "degree": 1
     },
     {
+      "id": "concept:education-outsourcing",
+      "key": "education-outsourcing",
+      "label": "教育外包",
+      "fullLabel": "教育外包",
+      "type": "concept",
+      "route": "concepts/education-outsourcing",
+      "summary": "父母把管教孩子的责任连同判断一起交给学校或机构，用付钱和配合换取免责。",
+      "status": null,
+      "degree": 1
+    },
+    {
       "id": "person:jin-keyu",
       "key": "jin-keyu",
       "label": "金刻羽",
@@ -7561,6 +7594,17 @@
       "degree": 1
     },
     {
+      "id": "concept:talent-skimming",
+      "key": "talent-skimming",
+      "label": "掐尖",
+      "fullLabel": "掐尖",
+      "type": "concept",
+      "route": "concepts/talent-skimming",
+      "summary": "把一个区域里最会考试的学生集中到少数学校，再用他们的成绩证明这几所学校的管理有效。",
+      "status": null,
+      "degree": 1
+    },
+    {
       "id": "concept:pre-emptive-screening",
       "key": "pre-emptive-screening",
       "label": "前置筛选",
@@ -7722,17 +7766,6 @@
       "type": "person",
       "route": "people/tian-pujun",
       "summary": "田朴珺是演员、制片人和写作者，节目借她与王石的公共关系讨论伴侣关系如何随资产、权力和自我叙事再定价。",
-      "status": null,
-      "degree": 1
-    },
-    {
-      "id": "concept:conditional-love-loop",
-      "key": "conditional-love-loop",
-      "label": "条件化亲情循环",
-      "fullLabel": "条件化亲情循环",
-      "type": "concept",
-      "route": "concepts/conditional-love-loop",
-      "summary": "亲情以爱之名附带控制和评价，下一代若未消化，就会继续复制这套关系。",
       "status": null,
       "degree": 1
     },
@@ -16042,6 +16075,46 @@
     {
       "source": "episode:EP214",
       "target": "theme:consumer-audience-rewrite",
+      "kind": "episode-theme"
+    },
+    {
+      "source": "episode:EP215",
+      "target": "concept:exam-centered-discipline",
+      "kind": "episode-concept"
+    },
+    {
+      "source": "episode:EP215",
+      "target": "concept:talent-skimming",
+      "kind": "episode-concept"
+    },
+    {
+      "source": "episode:EP215",
+      "target": "concept:education-outsourcing",
+      "kind": "episode-concept"
+    },
+    {
+      "source": "episode:EP215",
+      "target": "concept:conditional-love-loop",
+      "kind": "episode-concept"
+    },
+    {
+      "source": "episode:EP215",
+      "target": "model:screening-machine",
+      "kind": "episode-model"
+    },
+    {
+      "source": "episode:EP215",
+      "target": "model:individuation-three-stage",
+      "kind": "episode-model"
+    },
+    {
+      "source": "episode:EP215",
+      "target": "theme:exam-centered-education-and-person-formation",
+      "kind": "episode-theme"
+    },
+    {
+      "source": "episode:EP215",
+      "target": "theme:growth-and-family-boundaries",
       "kind": "episode-theme"
     },
     {
