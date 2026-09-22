@@ -2,12 +2,22 @@
   "id": "thai-airways",
   "name": "泰国航空",
   "kind": "organization",
-  "asOf": "2026-08-18",
+  "asOf": "2026-09-22",
   "sources": [
     {
       "title": "Thai Airways International - Wikipedia",
       "url": "https://en.wikipedia.org/wiki/Thai_Airways_International",
       "note": "核对成立年份、星空联盟创始成员身份、2020 年进入破产重整与 2025 年退出重整并复牌"
+    },
+    {
+      "title": "Our History - Star Alliance",
+      "url": "https://www.staralliance.com/en/history",
+      "note": "核对星空联盟 1997 年 5 月 14 日成立，泰国航空国际与加拿大航空、汉莎、北欧航空、联合航空同为发起的五家航空公司"
+    },
+    {
+      "title": "THAI to Resume Trading on the Stock Exchange of Thailand on August 4 - 泰国航空官网",
+      "url": "https://www.thaiairways.com/en-th/content/news-and-announcements/thai-to-resume-trading-on-the-stock-exchange-of-thailand-on-august-4/",
+      "note": "核对泰国中央破产法院 2025 年 6 月 16 日裁定结束重整程序，股票于 2025 年 8 月 4 日在泰国证券交易所恢复交易。该页没有提到 1960 年成立这件事"
     }
   ],
   "summary": "泰国的载旗航空公司，站内用它观察承运人在什么情况下可以拒绝一位已经买票的旅客登机。",

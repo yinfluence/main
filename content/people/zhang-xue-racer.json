@@ -4,7 +4,7 @@
   "kind": "person",
   "asOf": "2026-05-11",
   "summary": "张雪是从修车学徒走向摩托车创业和赛道制造的人物，节目借他的经历反驳“普通人已经没有机会”的灭梦叙事。",
-  "description": "张雪是中国摩托车领域的创业者和赛车从业者，新华社报道显示，他从修理铺学徒进入赛车行业，后来在重庆创立张雪机车；2026年3月，其品牌 ZXMOTO 在 WorldSSP 葡萄牙站由车手 Valentin Debise 驾驶赛车取得分站胜利。在颖响力节目语境里，张雪代表的不是轻松逆袭故事，而是普通人在长期投入、行动争取和产业积累中打开机会的可能性。",
+  "description": "张雪是中国摩托车领域的创业者和赛车从业者，新华社报道显示，他 1987 年出生在湖南一个偏远山村，从修理铺学徒进入赛车行业，2024 年 4 月创立张雪机车。2026年3月，其品牌 ZXMOTO 在 WorldSSP 葡萄牙站由车手 Valentin Debise 驾驶赛车取得分站胜利。在颖响力节目语境里，张雪代表的不是轻松逆袭故事，而是普通人在长期投入、行动争取和产业积累中打开机会的可能性。",
   "basicIntro": "张雪出生于1987年，新华社专访称其14岁接触摩托车后进入修理铺当学徒，后来既做车手也做机械师，并于2024年4月在重庆创立张雪机车。WorldSBK 官方赛报显示，2026年3月28日和29日，Valentin Debise 为 ZXMOTO Factory Evan Bros Racing 在 WorldSSP 葡萄牙站连续取得胜利。",
   "programRole": "节目使用张雪时，重点是把他的二十年赛道投入和“追采访车争取机会”的早年故事，放到年轻人机会消失论、稳定路径劝退和教育风险厌恶中讨论。张雪不是被写成万能成功学，而是用来提醒读者：机会不只来自等待，也可能来自长期投入后对关键窗口的抓取。",
   "programAssociations": [
@@ -13,7 +13,7 @@
       "episodes": [
         "EP111"
       ],
-      "note": "EP111 借张雪从湘西修车学徒到张雪机车世界赛场夺冠的故事，具体讲他当年为争取拍摄机会追采访车一百公里，以及后来长期留在摩托车行业死磕制造。节目把这条经历放进年轻人机会消失论里，反驳过早放弃梦想的安全叙事。"
+      "note": "EP111 借张雪从湖南山村的修车学徒到张雪机车世界赛场夺冠的故事，具体讲他当年为争取拍摄机会追采访车一百公里，以及后来长期留在摩托车行业死磕制造。节目把这条经历放进年轻人机会消失论里，反驳过早放弃梦想的安全叙事。"
     }
   ],
   "styleNotes": [
@@ -53,14 +53,14 @@
       "note": "核对张雪早年修车学徒经历、进入赛车行业、2024年创立张雪机车和2026年 WorldSSP 葡萄牙站夺冠背景"
     },
     {
-      "title": "WorldSBK：HISTORY MAKERS: Debise gives ZXMOTO first WorldSSP win at Portimao",
-      "url": "https://www.worldsbk.com/en/news/2026/HISTORY%20MAKERS%20Debise%20gives%20ZXMOTO%20first%20WorldSSP%20win%20after%20Oncu%20crashes%20from%20P1%20at%20Portimao",
-      "note": "核对 2026年3月28日 Valentin Debise 为 ZXMOTO 取得 WorldSSP 首胜"
+      "title": "WorldSBK 赛报：HISTORY MAKERS: Debise gives ZXMOTO first WorldSSP win after Oncu crashes from P1 at Portimao",
+      "url": "https://www.worldsbk.com/en/news/2026/03/28/history-makers-debise-gives-zxmoto-first-worldssp-win-after-oncu-crashes-from-p1-at-portimao/1014351",
+      "note": "核对 2026年3月28日 Portimao 站 WorldSSP 第一场，Valentin Debise 代表 ZXMOTO Factory Evan Bros Racing 夺冠，是 ZXMOTO 在该组别的首胜"
     },
     {
-      "title": "WorldSBK：DEBISE'S DOUBLE: Two races in Portimao, two wins for ZXMOTO",
-      "url": "https://www.worldsbk.com/en/news/2026/DEBISES%2BDOUBLE%2BTwo%2Braces%2Bin%2BPortimao%2Btwo%2Bwins%2Bfor%2BZXMOTO%2Bwhile%2BMasia%2Bmakes%2Ba%2Bmiraculous%2Bpodium%2Bcomeback",
-      "note": "核对 2026年3月29日 ZXMOTO 在葡萄牙站第二场继续取胜"
+      "title": "WorldSBK 官方成绩表：Pirelli Portuguese Round, WorldSSP Results Race 2",
+      "url": "https://resources.worldsbk.com/files/results/2026/POR/SSP/002/CLA/Results.pdf",
+      "note": "核对 2026年3月27日至29日 Pirelli Portuguese Round 第二场 WorldSSP 成绩，Portimao 赛道，53 号 V. Debise 驾 ZXMOTO 820RR 代表 ZXMOTO Factory Evan Bros Racing 排名第一"
     }
   ],
   "episodes": [

@@ -5,19 +5,14 @@
   "asOf": "2026-06-14",
   "sources": [
     {
-      "title": "Hong Kong Monetary Authority - Offshore Renminbi Business",
-      "url": "https://www.hkma.gov.hk/eng/key-functions/international-financial-centre/renminbi-business-in-hong-kong/",
-      "note": "核对离岸人民币结算中心、CNH 市场和清算机制的基础事实"
+      "title": "Dominant Gateway to China - 香港金融管理局",
+      "url": "https://www.hkma.gov.hk/eng/key-functions/international-financial-centre/hong-kong-as-an-international-financial-centre/dominant-gateway-to-china/",
+      "note": "金管局页面写明香港是全球最大的离岸人民币业务枢纽，提供清算结算、融资、资产管理等服务，设有人民币实时全额结算（RTGS）系统；境外最大的人民币资金池在香港，规模约 1 万亿元人民币；按 SWIFT 统计，全球七成以上离岸人民币支付长期经香港处理。"
     },
     {
-      "title": "BIS - Triennial Central Bank Survey (FX turnover)",
-      "url": "https://www.bis.org/statistics/rpfx.htm",
-      "note": "核对人民币在全球外汇交易和跨境结算中的规模与占比"
-    },
-    {
-      "title": "SWIFT - RMB Tracker",
-      "url": "https://www.swift.com/",
-      "note": "核对人民币在国际支付结算中的份额与变化趋势"
+      "title": "Triennial Central Bank Survey: OTC foreign exchange turnover in April 2025 - 国际清算银行",
+      "url": "https://www.bis.org/statistics/rpfx25_fx.htm",
+      "note": "BIS 三年期调查的 2025 年 4 月数据：人民币占全球外汇交易的比重升至 8.5%，延续 2013 年以来的上行；同期美元 89.2%、欧元 28.9%、日元 16.8%、英镑 10.2%。该口径按交易双边计，各币种份额合计为 200%。"
     }
   ],
   "summary": "离岸人民币是境外流通、结算的人民币，节目主要借它解释黄金为何成为人民币在灰色贸易里的新背书物。",
@@ -33,7 +28,7 @@
       "episodes": [
         "EP161"
       ],
-      "note": "EP161 的核心机制：离岸人民币在灰色贸易里需要稳定背书，原来靠美元，大量进入灰贸后改用黄金。央行带头囤金、灰贸参与国跟进，黄金与人民币结算体系建立，金价爆发式走高。节目据此判断，离岸人民币体系的稳固和金价是绑在一起的——灰贸一萎缩，囤金意义下降，背书体系也跟着松动。"
+      "note": "EP161 的核心机制：离岸人民币在灰色贸易里需要稳定背书，原来靠美元，大量进入灰贸后改用黄金。央行带头囤金、灰贸参与国跟进，黄金与人民币结算体系建立，金价爆发式走高。节目据此判断，离岸人民币体系的稳固和金价是绑在一起的。灰贸一萎缩，囤金意义下降，背书体系也跟着松动。"
     }
   ],
   "riskNotes": [

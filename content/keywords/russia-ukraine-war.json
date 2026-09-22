@@ -2,7 +2,7 @@
   "id": "russia-ukraine-war",
   "name": "俄乌战争",
   "kind": "event",
-  "asOf": "2026-05-11",
+  "asOf": "2026-09-22",
   "sources": [
     {
       "title": "War in Ukraine - Global Conflict Tracker",
@@ -10,9 +10,9 @@
       "note": "核对俄乌战争从 2014 年冲突到 2022 年俄罗斯全面入侵后持续升级的基本时间线"
     },
     {
-      "title": "Ukraine Humanitarian Needs and Response Plan 2026 - OCHA",
-      "url": "https://www.unocha.org/publications/report/ukraine/ukraine-humanitarian-needs-and-response-plan-2026-december-2025-enuk",
-      "note": "核对联合国体系对乌克兰持续人道危机和援助响应对象的公开口径。"
+      "title": "Ukraine Humanitarian Needs and Response Plan 2026 (January 2026) - OCHA",
+      "url": "https://www.unocha.org/publications/report/ukraine/ukraine-humanitarian-needs-and-response-plan-2026-january-2026-enuk",
+      "note": "联合国人道事务协调厅 2026 年 1 月发布的乌克兰人道需求与响应计划，核对联合国体系的现行口径：全乌估计 1080 万人需要人道援助，人道机构计划覆盖其中处境最危险的 410 万人；文件另记境内流离失所者超过 370 万，战争进入第五年。"
     },
     {
       "title": "At least 70 killed and over 500 injured in attacks across Ukraine since 1 May - UN Human Rights Monitoring Mission in Ukraine",

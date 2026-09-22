@@ -2,12 +2,22 @@
   "id": "brezhnev",
   "name": "勃列日涅夫",
   "kind": "person",
-  "asOf": "2026-09-03",
+  "asOf": "2026-09-22",
   "sources": [
     {
       "title": "Leonid Brezhnev - Wikipedia",
       "url": "https://en.wikipedia.org/wiki/Leonid_Brezhnev",
       "note": "核对生卒 1906-12-19 至 1982-11-10、1964 年 10 月 14 日政治局投票罢免赫鲁晓夫后接任第一书记、执政十八年、1968 年入侵捷克斯洛伐克、1979 年出兵阿富汗、1965 年柯西金改革被中央委员会取消、七十年代靠向西欧卖石油推迟经济崩溃"
+    },
+    {
+      "title": "Soviet Invasion of Czechoslovakia, 1968 - Office of the Historian, U.S. Department of State",
+      "url": "https://history.state.gov/milestones/1961-1968/soviet-invasion-czechoslavkia",
+      "note": "美国国务院历史文献办公室页面，核对 1968 年 8 月 20 日苏联率华约部队入侵捷克斯洛伐克、当时的苏联领导人是勃列日涅夫，以及勃列日涅夫主义后来成为 1979 年入侵阿富汗的主要理由"
+    },
+    {
+      "title": "Soviet Union timeline - BBC News",
+      "url": "https://www.bbc.co.uk/news/world-europe-17858981",
+      "note": "核对 1964 年赫鲁晓夫被勃列日涅夫取代出任第一书记、柯西金同期出任部长会议主席、1979 年苏军入侵阿富汗、1982 年勃列日涅夫去世后由安德罗波夫接任。这份年表不含出生日期与柯西金改革被取消"
     }
   ],
   "summary": "勃列日涅夫是 1964 到 1982 年在任的苏共中央总书记，执政十八年，节目拿他当拖延型治理的样本。",

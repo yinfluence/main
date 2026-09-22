@@ -2,7 +2,7 @@
   "id": "gorbachev",
   "name": "戈尔巴乔夫",
   "kind": "person",
-  "asOf": "2026-09-03",
+  "asOf": "2026-09-22",
   "sources": [
     {
       "title": "Mikhail Gorbachev - Wikipedia",
@@ -13,6 +13,16 @@
       "title": "Leonid Brezhnev - Wikipedia",
       "url": "https://en.wikipedia.org/wiki/Leonid_Brezhnev",
       "note": "核对停滞时代这一说法由戈尔巴乔夫提出，用来指称勃列日涅夫在位的那段时期"
+    },
+    {
+      "title": "Mikhail Gorbachev - Facts - NobelPrize.org",
+      "url": "https://www.nobelprize.org/prizes/peace/1990/gorbachev/facts/",
+      "note": "诺贝尔奖官网页面，核对 1931 年 3 月 2 日生于普里沃利诺耶、2022 年 8 月 30 日在莫斯科去世、1985 年成为苏联领导人并推行公开性与改革，以及 1990 年获诺贝尔和平奖"
+    },
+    {
+      "title": "Soviet Union timeline - BBC News",
+      "url": "https://www.bbc.co.uk/news/world-europe-17858981",
+      "note": "核对 1982 年勃列日涅夫去世后安德罗波夫接任、1984 年安德罗波夫去世后契尔年科接任、1985 年契尔年科去世后戈尔巴乔夫出任苏共中央总书记。这份年表没有给出 1985 年 3 月 11 日这个具体日期"
     }
   ],
   "summary": "戈尔巴乔夫是 1985 年上台的苏联最后一位最高领导人，停滞时代这个说法就是他提出来的，节目用他说明积重难返之后改革为什么只能激进。",
