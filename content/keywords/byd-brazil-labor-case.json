@@ -1,0 +1,79 @@
+{
+  "id": "byd-brazil-labor-case",
+  "name": "比亚迪巴西工厂劳工案",
+  "kind": "event",
+  "asOf": "2026-09-23",
+  "summary": "2024 年底巴西查出比亚迪工厂工地上的中国工人处于类似奴役的条件，节目拿它说海外员工的处境。",
+  "description": "2024 年 12 月，巴西劳工部门在巴伊亚州卡马萨里的比亚迪新工厂工地上，查出 163 名中国工人处于类似奴役的劳动条件。这些工人由承包商金匠集团招来，被要求交出护照，大部分工资直接汇回中国，还要交一笔干满六个月才退的押金，宿舍床没有床垫。比亚迪表示已与该承包商解约，承包商则否认了这些指控。2025 年 5 月巴西劳工检察院起诉比亚迪和两家承包商，索赔 2.57 亿雷亚尔。2026 年 4 月巴西把比亚迪列入雇用类似奴役劳动的雇主名单。节目把这件事叫作巴西的烂账，用它说明派驻海外的人被当成工具。",
+  "conflictNotes": [
+    "工人是承包商招的，比亚迪说已切断关系，巴西方面仍然把责任追到了比亚迪身上。",
+    "扣护照、押工资在一些中国劳务派遣里被当成惯例，到了巴西法律下就是强迫劳动的证据。",
+    "一家企业靠出海撑增长，派出去的人的待遇却按国内最低的标准来。"
+  ],
+  "programAssociations": [
+    {
+      "title": "派驻海外的人算不算自己人",
+      "episodes": [
+        "EP216"
+      ],
+      "note": "EP216 讲比亚迪利润奖风波时专门说了海外员工，派出去的人护照要上交、工时是当地人的几倍、挣的只有几分之一，还提到去年巴西的那些烂账。节目用这件事说明，这家企业对国内员工和派驻海外的人是同一套逻辑，都是可以多压一点的成本，而对海外市场和当地政府则要让利讨好。"
+    }
+  ],
+  "aftermathNotes": [
+    "巴西把比亚迪列入黑名单，这份名单会影响企业在当地拿贷款和政府合作。",
+    "事件让中国车企出海时的劳务派遣方式被放到当地法律下重新审视。",
+    "它也成了外界质疑中国企业海外用工的一个常被引用的案例。"
+  ],
+  "signalNotes": [
+    "看到海外工地上出现扣护照、工资汇回国内、押金这些安排，按当地法律很可能已经构成强迫劳动。",
+    "企业出事后第一时间说是承包商的问题，说明用工责任层层外包出去了，出了事再往回追。",
+    "一家企业的海外扩张越快，它在当地的劳动、税务和合规问题越容易被放大检查。"
+  ],
+  "extensionNotes": [
+    {
+      "title": "护照",
+      "note": "扣押护照是这起案子最核心的证据，节目也用交护照说派驻海外员工的处境。"
+    },
+    {
+      "title": "车企出海",
+      "note": "这件事是中国车企出海过程里用工合规问题的一个典型样本。"
+    },
+    {
+      "title": "比亚迪",
+      "note": "事件的主体公司，节目把这笔巴西的烂账算进了它最近一年的种种问题里。"
+    }
+  ],
+  "aliases": [
+    "比亚迪巴西劳工事件",
+    "巴西工地劳工案",
+    "卡马萨里工地事件"
+  ],
+  "relatedKeywords": [
+    "byd",
+    "huzhao",
+    "chuhai"
+  ],
+  "sources": [
+    {
+      "title": "BYD Brazil working conditions controversy（Wikipedia）",
+      "url": "https://en.wikipedia.org/wiki/BYD_Brazil_working_conditions_controversy",
+      "note": "核对事件时间、地点、163 名工人、承包商和各方回应。"
+    },
+    {
+      "title": "Brazilian prosecutors sue China's BYD over allegations of slave-like labor conditions（Yahoo/AP）",
+      "url": "https://www.yahoo.com/news/brazilian-prosecutors-sue-chinas-byd-205420440.html",
+      "note": "核对 2025 年 5 月起诉比亚迪及两家承包商、索赔 2.57 亿雷亚尔。"
+    },
+    {
+      "title": "Brazil puts China's BYD on list of shame for workers' past slavery-like conditions（CNBC）",
+      "url": "https://www.cnbc.com/2026/04/07/brazil-puts-chinas-byd-on-list-of-shame-for-workers-past-slavery-like-conditions.html",
+      "note": "核对 2026 年 4 月比亚迪被列入巴西雇主黑名单。"
+    }
+  ],
+  "episodes": [
+    {
+      "id": "EP216",
+      "note": "节目把这件事叫作巴西的烂账，用交护照、工时长、工资低说派驻海外的人被当成工具。"
+    }
+  ]
+}

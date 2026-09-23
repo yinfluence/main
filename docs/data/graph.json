@@ -2,13 +2,13 @@
   "meta": {
     "title": "颖响力知识图谱",
     "subtitle": "节目、概念、模型、人物、主题之间的可视化连接网络",
-    "nodeCount": 741,
-    "linkCount": 2753,
+    "nodeCount": 743,
+    "linkCount": 2762,
     "typeCounts": {
       "model": 83,
       "live": 43,
-      "concept": 243,
-      "episode": 215,
+      "concept": 244,
+      "episode": 216,
       "theme": 92,
       "person": 65
     }
@@ -23,7 +23,7 @@
       "route": "models/risk-transfer-chain",
       "summary": "系统不会立刻吞下风险，而是先沿着银行、企业、票据、供应链和普通人之间不断转手、延后和下沉。",
       "status": null,
-      "degree": 57
+      "degree": 58
     },
     {
       "id": "live:LIVE022",
@@ -100,7 +100,7 @@
       "route": "concepts/hidden-debt",
       "summary": "表外、体外和合作链条里的债务不在显性报表中充分呈现，却会在危机时重新压回主体。",
       "status": null,
-      "degree": 31
+      "degree": 32
     },
     {
       "id": "live:LIVE004",
@@ -191,6 +191,17 @@
       "degree": 28
     },
     {
+      "id": "concept:cost-shifting",
+      "key": "cost-shifting",
+      "label": "成本外移",
+      "fullLabel": "成本外移",
+      "type": "concept",
+      "route": "concepts/cost-shifting",
+      "summary": "组织内部的高额非生产性成本，最终会通过价格、规则或风险转嫁给外部承担者。",
+      "status": null,
+      "degree": 27
+    },
+    {
       "id": "live:LIVE001",
       "key": "LIVE001",
       "label": "LIVE001",
@@ -244,17 +255,6 @@
       "summary": "以前那些油卖给古巴，一桶还要倒贴十二美元。",
       "status": "published",
       "degree": 27
-    },
-    {
-      "id": "concept:cost-shifting",
-      "key": "cost-shifting",
-      "label": "成本外移",
-      "fullLabel": "成本外移",
-      "type": "concept",
-      "route": "concepts/cost-shifting",
-      "summary": "组织内部的高额非生产性成本，最终会通过价格、规则或风险转嫁给外部承担者。",
-      "status": null,
-      "degree": 26
     },
     {
       "id": "theme:singapore-and-small-state-survival",
@@ -411,6 +411,17 @@
       "degree": 24
     },
     {
+      "id": "model:path-dependence",
+      "key": "path-dependence",
+      "label": "路径依赖",
+      "fullLabel": "路径依赖",
+      "type": "model",
+      "route": "models/path-dependence",
+      "summary": "路径依赖解释早期技术和叙事选择一旦成功，就会反过来限制后续转向更优路径。",
+      "status": null,
+      "degree": 24
+    },
+    {
       "id": "model:narrative-instrumentalization",
       "key": "narrative-instrumentalization",
       "label": "叙事工具化模型",
@@ -484,17 +495,6 @@
       "type": "concept",
       "route": "concepts/gray-oil-network",
       "summary": "绕开正规结算和监管的石油流动，会在影子体系中重塑货币、制裁和地缘利益。",
-      "status": null,
-      "degree": 23
-    },
-    {
-      "id": "model:path-dependence",
-      "key": "path-dependence",
-      "label": "路径依赖",
-      "fullLabel": "路径依赖",
-      "type": "model",
-      "route": "models/path-dependence",
-      "summary": "路径依赖解释早期技术和叙事选择一旦成功，就会反过来限制后续转向更优路径。",
       "status": null,
       "degree": 23
     },
@@ -1236,6 +1236,28 @@
       "degree": 13
     },
     {
+      "id": "theme:ev-collapse-and-exit-risk",
+      "key": "ev-collapse-and-exit-risk",
+      "label": "新能源崩塌与退出风险",
+      "fullLabel": "新能源崩塌与退出风险",
+      "type": "theme",
+      "route": "themes/ev-collapse-and-exit-risk",
+      "summary": "聚焦新能源项目在失速、清算和品牌出清阶段，风险如何向债权人、用户和地方政府层层传导。",
+      "status": null,
+      "degree": 13
+    },
+    {
+      "id": "theme:ev-financialization-and-false-sales",
+      "key": "ev-financialization-and-false-sales",
+      "label": "新能源金融化与虚假销量",
+      "fullLabel": "新能源金融化与虚假销量",
+      "type": "theme",
+      "route": "themes/ev-financialization-and-false-sales",
+      "summary": "聚焦新能源车行业如何依靠补贴、融资、渠道黑箱和虚假销售维持增长叙事。",
+      "status": null,
+      "degree": 13
+    },
+    {
       "id": "model:narrative-leverage",
       "key": "narrative-leverage",
       "label": "叙事杠杆",
@@ -1412,28 +1434,6 @@
       "degree": 12
     },
     {
-      "id": "theme:ev-collapse-and-exit-risk",
-      "key": "ev-collapse-and-exit-risk",
-      "label": "新能源崩塌与退出风险",
-      "fullLabel": "新能源崩塌与退出风险",
-      "type": "theme",
-      "route": "themes/ev-collapse-and-exit-risk",
-      "summary": "聚焦新能源项目在失速、清算和品牌出清阶段，风险如何向债权人、用户和地方政府层层传导。",
-      "status": null,
-      "degree": 12
-    },
-    {
-      "id": "theme:ev-financialization-and-false-sales",
-      "key": "ev-financialization-and-false-sales",
-      "label": "新能源金融化与虚假销量",
-      "fullLabel": "新能源金融化与虚假销量",
-      "type": "theme",
-      "route": "themes/ev-financialization-and-false-sales",
-      "summary": "聚焦新能源车行业如何依靠补贴、融资、渠道黑箱和虚假销售维持增长叙事。",
-      "status": null,
-      "degree": 12
-    },
-    {
       "id": "episode:EP041",
       "key": "EP041",
       "label": "EP041",
@@ -1573,6 +1573,17 @@
       "type": "model",
       "route": "models/regional-denial-model",
       "summary": "真正有效的区域拒止，不是无上限扩张，而是把对手压在若干区域里，阻止其形成全球联动能力。",
+      "status": null,
+      "degree": 11
+    },
+    {
+      "id": "concept:phantom-sales",
+      "key": "phantom-sales",
+      "label": "虚假销售",
+      "fullLabel": "虚假销售",
+      "type": "concept",
+      "route": "concepts/phantom-sales",
+      "summary": "企业把并不存在的真实终端需求，包装成销量、出海成绩或渠道消化能力，用来维持估值和融资信心。",
       "status": null,
       "degree": 11
     },
@@ -1782,17 +1793,6 @@
       "type": "model",
       "route": "models/small-state-balancing-model",
       "summary": "小国平衡术解释小国在大国之间维持生存空间，靠位置、合法性和现实利益而非纯姿态。",
-      "status": null,
-      "degree": 10
-    },
-    {
-      "id": "concept:phantom-sales",
-      "key": "phantom-sales",
-      "label": "虚假销售",
-      "fullLabel": "虚假销售",
-      "type": "concept",
-      "route": "concepts/phantom-sales",
-      "summary": "企业把并不存在的真实终端需求，包装成销量、出海成绩或渠道消化能力，用来维持估值和融资信心。",
       "status": null,
       "degree": 10
     },
@@ -2431,6 +2431,17 @@
       "type": "episode",
       "route": "episodes/EP212",
       "summary": "新加坡政治职务集体涨薪，初级部长的薪资基准涨了 64%，总理年薪到 360 万新元，是美国总统法定年薪的七倍多。这是 2012 年那次减薪之后头一回调整。基准取收入最高的一千名公民年收入中位数再打六折，由独立委员会按公式算出，谁都查得到。黄循财说未来五年把多出来的钱全部捐掉，薪水定的是岗位的价，捐不捐是个人的事。高薪养廉在新加坡跑得通，靠的是社会差距小、公职队伍小，再加一套独立的反贪机构。换成国土大、贫富差距大的国家，连高薪该对标谁都定不下来。",
+      "status": "curated",
+      "degree": 9
+    },
+    {
+      "id": "episode:EP216",
+      "key": "EP216",
+      "label": "EP216",
+      "fullLabel": "EP216 · 福威镖局年终奖突然取消！吃上游肉到榨员工血，暴雷结局早已写死！车圈笑傲江湖",
+      "type": "episode",
+      "route": "episodes/EP216",
+      "summary": "比亚迪员工一向把次年九月才发的利润奖当年终奖，今年九月传出这笔钱不发了。奖金要多干大半年才拿得到，工资下月二十二号才发，员工一开始就被当成可压的成本。缺钱要从账期说起，过去拖着供应商的货款，融资成本几乎是零。上面要求结清之后，明账变成了暗账，窟窿只能往两头填。一头给海外市场让利，撑住销量和股价，另一头从员工身上省。当年有汽车厂给工人涨薪，让工人买得起自己造的车。这套对外让利、对内压缩的做法正好反过来，路越走越窄。",
       "status": "curated",
       "degree": 9
     },
@@ -4910,6 +4921,17 @@
       "degree": 4
     },
     {
+      "id": "person:wang-chuanfu",
+      "key": "wang-chuanfu",
+      "label": "王传福",
+      "fullLabel": "王传福",
+      "type": "person",
+      "route": "people/wang-chuanfu",
+      "summary": "王传福是比亚迪创始人、董事长兼总裁，节目借他观察头部新能源车企怎样把制造能力、销量叙事和供应链金融接成扩张系统。",
+      "status": null,
+      "degree": 4
+    },
+    {
       "id": "model:crisis-selection",
       "key": "crisis-selection",
       "label": "危机筛选",
@@ -5731,17 +5753,6 @@
       "type": "concept",
       "route": "concepts/investment-timing-gap",
       "summary": "资本和基础设施先投入，真实应用价值后兑现，中间的时间差会制造估值、现金流和耐心风险。",
-      "status": null,
-      "degree": 3
-    },
-    {
-      "id": "person:wang-chuanfu",
-      "key": "wang-chuanfu",
-      "label": "王传福",
-      "fullLabel": "王传福",
-      "type": "person",
-      "route": "people/wang-chuanfu",
-      "summary": "王传福是比亚迪创始人、董事长兼总裁，节目借他观察头部新能源车企怎样把制造能力、销量叙事和供应链金融接成扩张系统。",
       "status": null,
       "degree": 3
     },
@@ -7139,6 +7150,17 @@
       "type": "person",
       "route": "people/mattias-grafstrom",
       "summary": "格拉夫斯特伦是瑞典/荷兰背景的足球行政人物、FIFA 现任秘书长(2024 年正式任),节目里他是 FIFA 在华推广动作的执行代表。",
+      "status": null,
+      "degree": 1
+    },
+    {
+      "id": "concept:wage-consumption-loop",
+      "key": "wage-consumption-loop",
+      "label": "工资消费循环",
+      "fullLabel": "工资消费循环",
+      "type": "concept",
+      "route": "concepts/wage-consumption-loop",
+      "summary": "工人的工资同时是企业的成本和市场的购买力，收入涨上去，买东西的人才多起来。",
       "status": null,
       "degree": 1
     },
@@ -16115,6 +16137,51 @@
     {
       "source": "episode:EP215",
       "target": "theme:growth-and-family-boundaries",
+      "kind": "episode-theme"
+    },
+    {
+      "source": "episode:EP216",
+      "target": "concept:cost-shifting",
+      "kind": "episode-concept"
+    },
+    {
+      "source": "episode:EP216",
+      "target": "concept:hidden-debt",
+      "kind": "episode-concept"
+    },
+    {
+      "source": "episode:EP216",
+      "target": "concept:phantom-sales",
+      "kind": "episode-concept"
+    },
+    {
+      "source": "episode:EP216",
+      "target": "concept:wage-consumption-loop",
+      "kind": "episode-concept"
+    },
+    {
+      "source": "episode:EP216",
+      "target": "model:risk-transfer-chain",
+      "kind": "episode-model"
+    },
+    {
+      "source": "episode:EP216",
+      "target": "model:path-dependence",
+      "kind": "episode-model"
+    },
+    {
+      "source": "episode:EP216",
+      "target": "person:wang-chuanfu",
+      "kind": "episode-person"
+    },
+    {
+      "source": "episode:EP216",
+      "target": "theme:ev-financialization-and-false-sales",
+      "kind": "episode-theme"
+    },
+    {
+      "source": "episode:EP216",
+      "target": "theme:ev-collapse-and-exit-risk",
       "kind": "episode-theme"
     },
     {
