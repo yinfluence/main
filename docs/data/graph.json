@@ -2,13 +2,13 @@
   "meta": {
     "title": "颖响力知识图谱",
     "subtitle": "节目、概念、模型、人物、主题之间的可视化连接网络",
-    "nodeCount": 743,
-    "linkCount": 2762,
+    "nodeCount": 745,
+    "linkCount": 2773,
     "typeCounts": {
       "model": 83,
       "live": 43,
-      "concept": 244,
-      "episode": 216,
+      "concept": 245,
+      "episode": 217,
       "theme": 92,
       "person": 65
     }
@@ -23,7 +23,7 @@
       "route": "models/risk-transfer-chain",
       "summary": "系统不会立刻吞下风险，而是先沿着银行、企业、票据、供应链和普通人之间不断转手、延后和下沉。",
       "status": null,
-      "degree": 58
+      "degree": 59
     },
     {
       "id": "live:LIVE022",
@@ -697,6 +697,17 @@
       "degree": 20
     },
     {
+      "id": "model:value-capture",
+      "key": "value-capture",
+      "label": "价值捕获",
+      "fullLabel": "价值捕获",
+      "type": "model",
+      "route": "models/value-capture",
+      "summary": "价值捕获模型强调商业链条中关键不只是创造了价值，而是谁真正留下了价值。",
+      "status": null,
+      "degree": 19
+    },
+    {
       "id": "theme:dollar-system-and-gray-trade",
       "key": "dollar-system-and-gray-trade",
       "label": "美元体系与灰色贸易",
@@ -792,17 +803,6 @@
       "type": "model",
       "route": "models/leverage-backfire",
       "summary": "杠杆反噬解释上行期放大利润的结构，如何在下行期放大亏损、现金流压力和清偿困难。",
-      "status": null,
-      "degree": 18
-    },
-    {
-      "id": "model:value-capture",
-      "key": "value-capture",
-      "label": "价值捕获",
-      "fullLabel": "价值捕获",
-      "type": "model",
-      "route": "models/value-capture",
-      "summary": "价值捕获模型强调商业链条中关键不只是创造了价值，而是谁真正留下了价值。",
       "status": null,
       "degree": 18
     },
@@ -1126,6 +1126,17 @@
       "degree": 14
     },
     {
+      "id": "theme:ev-collapse-and-exit-risk",
+      "key": "ev-collapse-and-exit-risk",
+      "label": "新能源崩塌与退出风险",
+      "fullLabel": "新能源崩塌与退出风险",
+      "type": "theme",
+      "route": "themes/ev-collapse-and-exit-risk",
+      "summary": "聚焦新能源项目在失速、清算和品牌出清阶段，风险如何向债权人、用户和地方政府层层传导。",
+      "status": null,
+      "degree": 14
+    },
+    {
       "id": "episode:EP015",
       "key": "EP015",
       "label": "EP015",
@@ -1232,17 +1243,6 @@
       "type": "model",
       "route": "models/feedback-loops",
       "summary": "反馈回路模型解释老板偏好、顾问强化和组织沉默如何形成自我强化的错误循环。",
-      "status": null,
-      "degree": 13
-    },
-    {
-      "id": "theme:ev-collapse-and-exit-risk",
-      "key": "ev-collapse-and-exit-risk",
-      "label": "新能源崩塌与退出风险",
-      "fullLabel": "新能源崩塌与退出风险",
-      "type": "theme",
-      "route": "themes/ev-collapse-and-exit-risk",
-      "summary": "聚焦新能源项目在失速、清算和品牌出清阶段，风险如何向债权人、用户和地方政府层层传导。",
       "status": null,
       "degree": 13
     },
@@ -1434,6 +1434,17 @@
       "degree": 12
     },
     {
+      "id": "theme:state-business-entanglement",
+      "key": "state-business-entanglement",
+      "label": "政企嵌入与企业存续",
+      "fullLabel": "政企嵌入与企业存续",
+      "type": "theme",
+      "route": "themes/state-business-entanglement",
+      "summary": "讨论企业如何依赖地方政府、国资平台或关系结构续命，以及这种绑定如何反过来改写企业目标。",
+      "status": null,
+      "degree": 12
+    },
+    {
       "id": "episode:EP041",
       "key": "EP041",
       "label": "EP041",
@@ -1599,17 +1610,6 @@
       "degree": 11
     },
     {
-      "id": "theme:state-business-entanglement",
-      "key": "state-business-entanglement",
-      "label": "政企嵌入与企业存续",
-      "fullLabel": "政企嵌入与企业存续",
-      "type": "theme",
-      "route": "themes/state-business-entanglement",
-      "summary": "讨论企业如何依赖地方政府、国资平台或关系结构续命，以及这种绑定如何反过来改写企业目标。",
-      "status": null,
-      "degree": 11
-    },
-    {
       "id": "model:institutional-fit",
       "key": "institutional-fit",
       "label": "制度适配",
@@ -1716,6 +1716,17 @@
       "type": "episode",
       "route": "episodes/EP211",
       "summary": "荷兰一家主流保险公司出了新的承保规则，九家车企的车连基础车险都不接，另外五家只能买第三者责任险，名单主体是中国电车，很多人读成贸易打压。欧洲汽车业靠上百年的维修、配件和理赔规则运转，保险公司敢定价，是因为事故率和修车成本都有数。中国电车靠便宜打开市场，维修只认自家网点，配件靠海运，小刮蹭一拖几个月，代步和误工的钱都算在保险公司头上，赔付算不出底，只好不接。这像奥德修斯的木马计，城攻下来了，十年漂流还在后面。",
+      "status": "curated",
+      "degree": 11
+    },
+    {
+      "id": "episode:EP217",
+      "key": "EP217",
+      "label": "EP217",
+      "fullLabel": "EP217 · 华删派再分家！杯酒后刀光剑影，三大底层逻辑彻底崩塌！车圈笑傲江湖",
+      "type": "episode",
+      "route": "episodes/EP217",
+      "summary": "2026 年 9 月 15 日，华为和赛力斯宣布调整问界的合作方式。产品、营销、渠道和服务全交给赛力斯，华为只留技术支持。说是分工调整，背后有三层原因。一层是分账。华为拿走授权费、品牌溢价和渠道分润，赛力斯扛着工厂、折旧和地方的对赌。利润薄到亏钱，只能在配件和品控上省，伤的还是华为的牌子。一层是舆论把这套分账摆上台面，小米又推出同级车，便宜一二十万，溢价站不住了。再一层是行业没了暴利，华为赶在风险暴露前交出经营权。赚钱时拿大头，出事时不沾身。",
       "status": "curated",
       "degree": 11
     },
@@ -2149,6 +2160,17 @@
       "degree": 9
     },
     {
+      "id": "concept:liability-firewall",
+      "key": "liability-firewall",
+      "label": "责任隔离墙",
+      "fullLabel": "责任隔离墙",
+      "type": "concept",
+      "route": "concepts/liability-firewall",
+      "summary": "强势方通过不持股、不担保、不当协议主体，把债务、对赌和经营风险全部隔在墙外，自己片叶不沾身。",
+      "status": null,
+      "degree": 9
+    },
+    {
       "id": "model:political-embedded-enterprise",
       "key": "political-embedded-enterprise",
       "label": "政企嵌入企业模型",
@@ -2490,6 +2512,17 @@
       "degree": 8
     },
     {
+      "id": "concept:premium-narrative",
+      "key": "premium-narrative",
+      "label": "高价叙事",
+      "fullLabel": "高价叙事",
+      "type": "concept",
+      "route": "concepts/premium-narrative",
+      "summary": "企业用定位、符号、方法论和品牌故事为高价格建立解释框架。",
+      "status": null,
+      "degree": 8
+    },
+    {
       "id": "model:follower-advantage-collapse",
       "key": "follower-advantage-collapse",
       "label": "跟随者失效",
@@ -2552,17 +2585,6 @@
       "type": "concept",
       "route": "concepts/cash-optionality",
       "summary": "现金在高波动时期的核心价值，是保留等待、谈判、退出和重新进入的选择权。",
-      "status": null,
-      "degree": 8
-    },
-    {
-      "id": "concept:liability-firewall",
-      "key": "liability-firewall",
-      "label": "责任隔离墙",
-      "fullLabel": "责任隔离墙",
-      "type": "concept",
-      "route": "concepts/liability-firewall",
-      "summary": "强势方通过不持股、不担保、不当协议主体，把债务、对赌和经营风险全部隔在墙外，自己片叶不沾身。",
       "status": null,
       "degree": 8
     },
@@ -2952,17 +2974,6 @@
       "degree": 7
     },
     {
-      "id": "concept:premium-narrative",
-      "key": "premium-narrative",
-      "label": "高价叙事",
-      "fullLabel": "高价叙事",
-      "type": "concept",
-      "route": "concepts/premium-narrative",
-      "summary": "企业用定位、符号、方法论和品牌故事为高价格建立解释框架。",
-      "status": null,
-      "degree": 7
-    },
-    {
       "id": "model:individuation-three-stage",
       "key": "individuation-three-stage",
       "label": "个体化三阶段模型",
@@ -3036,6 +3047,17 @@
       "type": "theme",
       "route": "themes/youth-withdrawal-and-lying-flat",
       "summary": "讨论年轻人在主流机会、劳动回报和身份路径收缩后，如何通过低欲望、退出和躺平保留有限主体性。",
+      "status": null,
+      "degree": 7
+    },
+    {
+      "id": "theme:brand-symbol-and-value",
+      "key": "brand-symbol-and-value",
+      "label": "品牌符号与价值感知",
+      "fullLabel": "品牌符号与价值感知",
+      "type": "theme",
+      "route": "themes/brand-symbol-and-value",
+      "summary": "讨论品牌符号如何塑造用户对价格、品质和价值的判断。",
       "status": null,
       "degree": 7
     },
@@ -3535,17 +3557,6 @@
       "degree": 6
     },
     {
-      "id": "theme:brand-symbol-and-value",
-      "key": "brand-symbol-and-value",
-      "label": "品牌符号与价值感知",
-      "fullLabel": "品牌符号与价值感知",
-      "type": "theme",
-      "route": "themes/brand-symbol-and-value",
-      "summary": "讨论品牌符号如何塑造用户对价格、品质和价值的判断。",
-      "status": null,
-      "degree": 6
-    },
-    {
       "id": "model:human-machine-differentiation",
       "key": "human-machine-differentiation",
       "label": "人机差异化模型",
@@ -3564,6 +3575,17 @@
       "type": "concept",
       "route": "concepts/credential-rent",
       "summary": "一个人的学历、文化、头衔或圈层，不再只是背景，而被当成能持续换钱、换信任和换资源的租值来源。",
+      "status": null,
+      "degree": 6
+    },
+    {
+      "id": "concept:production-risk-outsourcing",
+      "key": "production-risk-outsourcing",
+      "label": "生产端风险外包",
+      "fullLabel": "生产端风险外包",
+      "type": "concept",
+      "route": "concepts/production-risk-outsourcing",
+      "summary": "平台和中间层把库存、投流、合规和现金流风险持续压给生产端。",
       "status": null,
       "degree": 6
     },
@@ -4081,17 +4103,6 @@
       "type": "concept",
       "route": "concepts/globalization-as-disclosure",
       "summary": "全球化的本质是各国把生产、消费和价格公开披露，形成像上市公司体系那样透明的市场；灰色贸易就是绕开披露、退回不透明的国与国交易。",
-      "status": null,
-      "degree": 5
-    },
-    {
-      "id": "concept:production-risk-outsourcing",
-      "key": "production-risk-outsourcing",
-      "label": "生产端风险外包",
-      "fullLabel": "生产端风险外包",
-      "type": "concept",
-      "route": "concepts/production-risk-outsourcing",
-      "summary": "平台和中间层把库存、投流、合规和现金流风险持续压给生产端。",
       "status": null,
       "degree": 5
     },
@@ -5053,6 +5064,17 @@
       "degree": 4
     },
     {
+      "id": "concept:dependent-enterprise",
+      "key": "dependent-enterprise",
+      "label": "依附型企业",
+      "fullLabel": "依附型企业",
+      "type": "concept",
+      "route": "concepts/dependent-enterprise",
+      "summary": "靠巨头授权生存的企业：只有使用权没有所有权、没有独立出海权、可替代性随同类依附者增加而归零，却承接巨头不要的全部风险。",
+      "status": null,
+      "degree": 4
+    },
+    {
       "id": "concept:ceremonial-formalism",
       "key": "ceremonial-formalism",
       "label": "仪式型形式主义",
@@ -5614,6 +5636,17 @@
       "degree": 3
     },
     {
+      "id": "concept:upfront-rent-extraction",
+      "key": "upfront-rent-extraction",
+      "label": "前置抽成",
+      "fullLabel": "前置抽成",
+      "type": "concept",
+      "route": "concepts/upfront-rent-extraction",
+      "summary": "平台或技术方在合作方见到利润之前，先按销量刚性抽走硬件款、授权费和渠道费——收益挂销量、与对方盈亏彻底脱钩。",
+      "status": null,
+      "degree": 3
+    },
+    {
       "id": "theme:intimate-relationships-and-asset-repricing",
       "key": "intimate-relationships-and-asset-repricing",
       "label": "亲密关系与资产再定价",
@@ -5852,17 +5885,6 @@
       "type": "concept",
       "route": "concepts/earnings-big-bath",
       "summary": "业绩大洗澡指企业把历史问题一次性集中确认，把旧账压低成新任期或新叙事的低起点。",
-      "status": null,
-      "degree": 3
-    },
-    {
-      "id": "concept:dependent-enterprise",
-      "key": "dependent-enterprise",
-      "label": "依附型企业",
-      "fullLabel": "依附型企业",
-      "type": "concept",
-      "route": "concepts/dependent-enterprise",
-      "summary": "靠巨头授权生存的企业：只有使用权没有所有权、没有独立出海权、可替代性随同类依附者增加而归零，却承接巨头不要的全部风险。",
       "status": null,
       "degree": 3
     },
@@ -6538,17 +6560,6 @@
       "degree": 2
     },
     {
-      "id": "concept:upfront-rent-extraction",
-      "key": "upfront-rent-extraction",
-      "label": "前置抽成",
-      "fullLabel": "前置抽成",
-      "type": "concept",
-      "route": "concepts/upfront-rent-extraction",
-      "summary": "平台或技术方在合作方见到利润之前，先按销量刚性抽走硬件款、授权费和渠道费——收益挂销量、与对方盈亏彻底脱钩。",
-      "status": null,
-      "degree": 2
-    },
-    {
       "id": "concept:panic-premium",
       "key": "panic-premium",
       "label": "情绪溢价",
@@ -7095,6 +7106,17 @@
       "type": "concept",
       "route": "concepts/stratified-pricing-market",
       "summary": "同一市场内部，不同层级的买家、资产和预期可能运行完全不同的价格逻辑。",
+      "status": null,
+      "degree": 1
+    },
+    {
+      "id": "concept:profit-split-backfire",
+      "key": "profit-split-backfire",
+      "label": "分润反噬",
+      "fullLabel": "分润反噬",
+      "type": "concept",
+      "route": "concepts/profit-split-backfire",
+      "summary": "上游把利润大头拿走，下游只能在质量和成本上找补，最后伤到的是上游自己的品牌。",
       "status": null,
       "degree": 1
     },
@@ -16182,6 +16204,61 @@
     {
       "source": "episode:EP216",
       "target": "theme:ev-collapse-and-exit-risk",
+      "kind": "episode-theme"
+    },
+    {
+      "source": "episode:EP217",
+      "target": "concept:upfront-rent-extraction",
+      "kind": "episode-concept"
+    },
+    {
+      "source": "episode:EP217",
+      "target": "concept:profit-split-backfire",
+      "kind": "episode-concept"
+    },
+    {
+      "source": "episode:EP217",
+      "target": "concept:premium-narrative",
+      "kind": "episode-concept"
+    },
+    {
+      "source": "episode:EP217",
+      "target": "concept:liability-firewall",
+      "kind": "episode-concept"
+    },
+    {
+      "source": "episode:EP217",
+      "target": "concept:production-risk-outsourcing",
+      "kind": "episode-concept"
+    },
+    {
+      "source": "episode:EP217",
+      "target": "concept:dependent-enterprise",
+      "kind": "episode-concept"
+    },
+    {
+      "source": "episode:EP217",
+      "target": "model:risk-transfer-chain",
+      "kind": "episode-model"
+    },
+    {
+      "source": "episode:EP217",
+      "target": "model:value-capture",
+      "kind": "episode-model"
+    },
+    {
+      "source": "episode:EP217",
+      "target": "theme:ev-collapse-and-exit-risk",
+      "kind": "episode-theme"
+    },
+    {
+      "source": "episode:EP217",
+      "target": "theme:state-business-entanglement",
+      "kind": "episode-theme"
+    },
+    {
+      "source": "episode:EP217",
+      "target": "theme:brand-symbol-and-value",
       "kind": "episode-theme"
     },
     {
