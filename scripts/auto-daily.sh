@@ -224,14 +224,14 @@ watch_agent() {
       mins=$(( stall / 60 ))
       log "整理卡死：机器醒着的 $mins 分钟里日志和文件改动都没动，杀掉 pid=$pid"
       kill_tree "$pid"
-      notify "颖响力网页 ⚠️" "整理卡死已终止（醒着的 $mins 分钟没有任何写入）。草稿留在 content/episodes/，下次扫描会重新拾起" "Basso"
+      notify "颖响力网页 ⚠️" "整理卡死已终止（醒着的 $mins 分钟没有任何写入）。草稿和待办留在盘上，下次扫描会重新拾起" "Basso"
       return 1
     fi
     if (( awake >= AGENT_HARD_LIMIT )); then
       mins=$(( awake / 60 ))
       log "整理超时：醒着的时间已跑满 $mins 分钟超过上限，杀掉 pid=$pid"
       kill_tree "$pid"
-      notify "颖响力网页 ⚠️" "整理超时已终止（醒着跑了 $mins 分钟）。草稿留在 content/episodes/，下次扫描会重新拾起" "Basso"
+      notify "颖响力网页 ⚠️" "整理超时已终止（醒着跑了 $mins 分钟）。草稿和待办留在盘上，下次扫描会重新拾起" "Basso"
       return 1
     fi
   done
@@ -396,6 +396,17 @@ scan_lives() {
       local N IDS LAST
       N=$(python3 -c "import json;print(len(json.load(open('workbench/pending-lives.json'))))" 2>/dev/null || echo "?")
       IDS=$(python3 -c "import json;print(','.join(sorted(x['id'] for x in json.load(open('workbench/pending-lives.json')))))" 2>/dev/null || echo "?")
+      # 没转写稿就不唤起 agent。2026-09-24 LIVE044 是充电专属，B 站两天都没生成 AI 字幕，
+      # 这里照样打出"字幕与转写稿已备好"并起了整理，agent 手里没稿子，25 分钟一个字没写被判卡死，
+      # 之后按重试间隔一次次重起，挂了将近两天。同一份 cookie 下 LIVE043 有 ai-zh，说明不是登录问题。
+      # 没收录的场次下次扫描会重新发现、重新下字幕，所以这里跳过就够了，不用另记待办。
+      # 有一场没稿就整轮不做，不拆开：拆开会让后面那场先占掉编号，LIVE 顺序就乱了
+      local WAITING
+      WAITING=$(python3 -c "import json;print(','.join(x['id'] for x in json.load(open('workbench/pending-lives.json')) if not x.get('transcript')))" 2>/dev/null || echo "?")
+      if [[ -n "$WAITING" ]]; then
+        log "发现 $N 场新直播（${IDS}），其中 ${WAITING} 还没有 AI 字幕，本轮不整理，等 B 站生成后下次扫描再拾起"
+        return 0
+      fi
       log "发现 $N 场新直播（${IDS}），字幕与转写稿已备好，开始整理"
       notify "颖响力直播 🎙" "发现 $N 场新直播（${IDS}），开始整理" "Glass"
       LAST=$(cat "logs/.last-pending-lives" 2>/dev/null || echo "")
