@@ -2,11 +2,11 @@
   "meta": {
     "title": "颖响力知识图谱",
     "subtitle": "节目、概念、模型、人物、主题之间的可视化连接网络",
-    "nodeCount": 745,
-    "linkCount": 2773,
+    "nodeCount": 746,
+    "linkCount": 2797,
     "typeCounts": {
       "model": 83,
-      "live": 43,
+      "live": 44,
       "concept": 245,
       "episode": 217,
       "theme": 92,
@@ -334,6 +334,17 @@
       "degree": 26
     },
     {
+      "id": "theme:rule-of-law-boundaries-and-social-trust",
+      "key": "rule-of-law-boundaries-and-social-trust",
+      "label": "法治边界与社会信任",
+      "fullLabel": "法治边界与社会信任",
+      "type": "theme",
+      "route": "themes/rule-of-law-boundaries-and-social-trust",
+      "summary": "关注法律灰区如何影响公众的善意、风险感和彼此信任。",
+      "status": null,
+      "degree": 25
+    },
+    {
       "id": "episode:EP169",
       "key": "EP169",
       "label": "EP169",
@@ -396,17 +407,6 @@
       "type": "theme",
       "route": "themes/great-power-competition-and-strategic-time",
       "summary": "讨论战争、联盟和国家战略如何被时间窗口、社会成本和长期定力重新塑形。",
-      "status": null,
-      "degree": 24
-    },
-    {
-      "id": "theme:rule-of-law-boundaries-and-social-trust",
-      "key": "rule-of-law-boundaries-and-social-trust",
-      "label": "法治边界与社会信任",
-      "fullLabel": "法治边界与社会信任",
-      "type": "theme",
-      "route": "themes/rule-of-law-boundaries-and-social-trust",
-      "summary": "关注法律灰区如何影响公众的善意、风险感和彼此信任。",
       "status": null,
       "degree": 24
     },
@@ -485,6 +485,17 @@
       "route": "lives/LIVE035",
       "summary": "7 月 31 号那一票之后，九月检察厅正式废止。",
       "status": "curated",
+      "degree": 24
+    },
+    {
+      "id": "live:LIVE044",
+      "key": "LIVE044",
+      "label": "LIVE044",
+      "fullLabel": "LIVE044 · 六十平公寓四十年到期，续一次要一百五十万？房子买下了，脚下那块地一直是租的",
+      "type": "live",
+      "route": "lives/LIVE044",
+      "summary": "南京按分摊的地来算，一套高层公寓落到地面上只有零点六平米。",
+      "status": "published",
       "degree": 24
     },
     {
@@ -851,6 +862,17 @@
       "degree": 17
     },
     {
+      "id": "theme:local-fiscal-stress-and-hidden-debt",
+      "key": "local-fiscal-stress-and-hidden-debt",
+      "label": "地方财政与隐性债务",
+      "fullLabel": "地方财政与隐性债务",
+      "type": "theme",
+      "route": "themes/local-fiscal-stress-and-hidden-debt",
+      "summary": "地方财政吃紧后，系统会通过更复杂的融资、资产包装和风险转移来维持运转。",
+      "status": null,
+      "degree": 17
+    },
+    {
       "id": "concept:pan-institutional-middle-class",
       "key": "pan-institutional-middle-class",
       "label": "泛体制中产",
@@ -893,17 +915,6 @@
       "summary": "石油进口量断崖式世界第一的中国，日均消耗近1500万桶。美以与伊朗的军事行动展开、霍尔木兹海峡被封后，进口在三四个月内减少三成多。短期油价、新能源替代和动用战略储备，这三种主流解释都算不平这笔账。剩下最可能的解释，是它的真实需求只有进口量的三分之二左右，多出的部分多年来一直在转成战备储油。海峡一封，它只是停止增储，退回真实需求，所以进口大跌，工业没受什么破坏。台海一旦升级成中大型战争，石油最少要按两年来储。这套储备眼看建成，冲突偏偏在这时爆发，从此永远差一点。",
       "status": "curated",
       "degree": 17
-    },
-    {
-      "id": "theme:local-fiscal-stress-and-hidden-debt",
-      "key": "local-fiscal-stress-and-hidden-debt",
-      "label": "地方财政与隐性债务",
-      "fullLabel": "地方财政与隐性债务",
-      "type": "theme",
-      "route": "themes/local-fiscal-stress-and-hidden-debt",
-      "summary": "地方财政吃紧后，系统会通过更复杂的融资、资产包装和风险转移来维持运转。",
-      "status": null,
-      "degree": 16
     },
     {
       "id": "theme:southeast-asia-fragmentation-and-bloc-competition",
@@ -1522,6 +1533,17 @@
       "degree": 12
     },
     {
+      "id": "episode:EP143",
+      "key": "EP143",
+      "label": "EP143",
+      "fullLabel": "EP143 · 迪士尼父亲崩溃事件：清晰的产权意识与合格的家庭教育【EP143】",
+      "type": "episode",
+      "route": "episodes/EP143",
+      "summary": "上海迪士尼，一位父亲带孩子排了两个多小时的队。眼看买优速通的人一拨拨先进，他冲工作人员大吼这不公平。骂声分两派，一派骂迪士尼把游客分成三六九等，一派骂父亲玻璃心，两派都吵错了方向。优速通不是迪士尼发明的，主题公园行业用了几十年，拿出 15% 到 20% 的接待量卖高价，反倒把普通票价压了下来。迪士尼是私人商业场所，门票只买到进园用设施的权利。最该看的是旁边的孩子，父亲当他的面演示了一套算法，闹得凶规则就会让。尊重别人的产权，就是护住自己的。",
+      "status": "curated",
+      "degree": 12
+    },
+    {
       "id": "episode:EP152",
       "key": "EP152",
       "label": "EP152",
@@ -1566,6 +1588,17 @@
       "degree": 12
     },
     {
+      "id": "theme:planned-systems-and-innovation",
+      "key": "planned-systems-and-innovation",
+      "label": "大计划体制与创新约束",
+      "fullLabel": "大计划体制与创新约束",
+      "type": "theme",
+      "route": "themes/planned-systems-and-innovation",
+      "summary": "讨论统一目标和强组织动员如何带来短期速度，又如何在长期压缩创新、纠错与自发能动性。",
+      "status": null,
+      "degree": 11
+    },
+    {
       "id": "concept:delayed-price-discovery",
       "key": "delayed-price-discovery",
       "label": "价格发现延迟",
@@ -1584,6 +1617,28 @@
       "type": "model",
       "route": "models/regional-denial-model",
       "summary": "真正有效的区域拒止，不是无上限扩张，而是把对手压在若干区域里，阻止其形成全球联动能力。",
+      "status": null,
+      "degree": 11
+    },
+    {
+      "id": "theme:human-value-and-state-credit",
+      "key": "human-value-and-state-credit",
+      "label": "人的价值与国家信用",
+      "fullLabel": "人的价值与国家信用",
+      "type": "theme",
+      "route": "themes/human-value-and-state-credit",
+      "summary": "讨论国家究竟把个体视为成本、工具，还是视为必须兑现承诺的对象。",
+      "status": null,
+      "degree": 11
+    },
+    {
+      "id": "concept:time-asymmetry",
+      "key": "time-asymmetry",
+      "label": "时间非对称",
+      "fullLabel": "时间非对称",
+      "type": "concept",
+      "route": "concepts/time-asymmetry",
+      "summary": "真正决定战略胜负的，往往不是一场仗的强弱，而是谁能把时间变成自己的朋友。",
       "status": null,
       "degree": 11
     },
@@ -1639,17 +1694,6 @@
       "type": "episode",
       "route": "episodes/EP117",
       "summary": "2026 年 4 月 7 日，苏林全票当选越南国家主席，总书记、国家主席、中央军委主席三个位子归到一人手里，1991 年定下、运行了 35 年的四驾马车就此打破。这件事标志着东南亚正在变成新的巴尔干火药桶。美国推新门罗主义，在拆以石油和黄金结算的灰色贸易链。东南亚各国原本平均分布在美中两个支点之间，越南从中间位置快速拉向中国一侧，平衡被打破。公安强人集权能换来短期稳定，可制衡一撤，即便苏林本人清醒，越南也难保不会走回黎笋时期的恶性循环。",
-      "status": "curated",
-      "degree": 11
-    },
-    {
-      "id": "episode:EP143",
-      "key": "EP143",
-      "label": "EP143",
-      "fullLabel": "EP143 · 迪士尼父亲崩溃事件：清晰的产权意识与合格的家庭教育【EP143】",
-      "type": "episode",
-      "route": "episodes/EP143",
-      "summary": "上海迪士尼，一位父亲带孩子排了两个多小时的队。眼看买优速通的人一拨拨先进，他冲工作人员大吼这不公平。骂声分两派，一派骂迪士尼把游客分成三六九等，一派骂父亲玻璃心，两派都吵错了方向。优速通不是迪士尼发明的，主题公园行业用了几十年，拿出 15% 到 20% 的接待量卖高价，反倒把普通票价压了下来。迪士尼是私人商业场所，门票只买到进园用设施的权利。最该看的是旁边的孩子，父亲当他的面演示了一套算法，闹得凶规则就会让。尊重别人的产权，就是护住自己的。",
       "status": "curated",
       "degree": 11
     },
@@ -1720,6 +1764,17 @@
       "degree": 11
     },
     {
+      "id": "episode:EP213",
+      "key": "EP213",
+      "label": "EP213",
+      "fullLabel": "EP213 · 账面好看背后藏巨雷？中国银行保险3600亿增资与828地产新政的底层真相",
+      "type": "episode",
+      "route": "episodes/EP213",
+      "summary": "八家中央金融企业集体补充资本，合计 3600 亿元，国有大行、保险公司和政策性机构都在里面。这些机构的资本充足率和偿付能力都远高于监管线，缺的东西在账面下面。新房卖不动以后，地方让自家平台接盘托住地价，拿地去银行抵押贷款，贷款又变回出让金。钱花掉了，地冻成一座没人接的堰塞湖，风险顺着同业、理财和债券传到大行和险企。注资不去拆这座湖，只给下游的银行和险企多备一笔能吃下损失的本钱。8 月 28 日的地产新政，收紧的也正是这套拿地抵押的玩法。",
+      "status": "curated",
+      "degree": 11
+    },
+    {
       "id": "episode:EP217",
       "key": "EP217",
       "label": "EP217",
@@ -1731,17 +1786,6 @@
       "degree": 11
     },
     {
-      "id": "theme:planned-systems-and-innovation",
-      "key": "planned-systems-and-innovation",
-      "label": "大计划体制与创新约束",
-      "fullLabel": "大计划体制与创新约束",
-      "type": "theme",
-      "route": "themes/planned-systems-and-innovation",
-      "summary": "讨论统一目标和强组织动员如何带来短期速度，又如何在长期压缩创新、纠错与自发能动性。",
-      "status": null,
-      "degree": 10
-    },
-    {
       "id": "concept:price-war-trap",
       "key": "price-war-trap",
       "label": "低价竞争陷阱",
@@ -1749,6 +1793,17 @@
       "type": "concept",
       "route": "concepts/price-war-trap",
       "summary": "极致低价可以快速突袭，却可能在长期竞争中压缩技术升级、利润和战略空间。",
+      "status": null,
+      "degree": 10
+    },
+    {
+      "id": "theme:east-asia-security-realignment",
+      "key": "east-asia-security-realignment",
+      "label": "东亚安全重组与日本转向",
+      "fullLabel": "东亚安全重组与日本转向",
+      "type": "theme",
+      "route": "themes/east-asia-security-realignment",
+      "summary": "讨论日本重新前台化、台海压力外溢，以及东亚安全合作为何越来越难保持模糊。",
       "status": null,
       "degree": 10
     },
@@ -1764,24 +1819,13 @@
       "degree": 10
     },
     {
-      "id": "theme:human-value-and-state-credit",
-      "key": "human-value-and-state-credit",
-      "label": "人的价值与国家信用",
-      "fullLabel": "人的价值与国家信用",
-      "type": "theme",
-      "route": "themes/human-value-and-state-credit",
-      "summary": "讨论国家究竟把个体视为成本、工具，还是视为必须兑现承诺的对象。",
-      "status": null,
-      "degree": 10
-    },
-    {
-      "id": "concept:time-asymmetry",
-      "key": "time-asymmetry",
-      "label": "时间非对称",
-      "fullLabel": "时间非对称",
-      "type": "concept",
-      "route": "concepts/time-asymmetry",
-      "summary": "真正决定战略胜负的，往往不是一场仗的强弱，而是谁能把时间变成自己的朋友。",
+      "id": "model:wall-and-gray-trade-crackdown",
+      "key": "wall-and-gray-trade-crackdown",
+      "label": "建墙与打灰模型",
+      "fullLabel": "建墙与打灰模型",
+      "type": "model",
+      "route": "models/wall-and-gray-trade-crackdown",
+      "summary": "建墙与打灰模型把川普的全球策略概括为两条隐藏逻辑：建墙分清敌我盟友、打击灰色贸易逼交易回归美元。",
       "status": null,
       "degree": 10
     },
@@ -2028,17 +2072,6 @@
       "degree": 10
     },
     {
-      "id": "episode:EP213",
-      "key": "EP213",
-      "label": "EP213",
-      "fullLabel": "EP213 · 账面好看背后藏巨雷？中国银行保险3600亿增资与828地产新政的底层真相",
-      "type": "episode",
-      "route": "episodes/EP213",
-      "summary": "八家中央金融企业集体补充资本，合计 3600 亿元，国有大行、保险公司和政策性机构都在里面。这些机构的资本充足率和偿付能力都远高于监管线，缺的东西在账面下面。新房卖不动以后，地方让自家平台接盘托住地价，拿地去银行抵押贷款，贷款又变回出让金。钱花掉了，地冻成一座没人接的堰塞湖，风险顺着同业、理财和债券传到大行和险企。注资不去拆这座湖，只给下游的银行和险企多备一笔能吃下损失的本钱。8 月 28 日的地产新政，收紧的也正是这套拿地抵押的玩法。",
-      "status": "curated",
-      "degree": 10
-    },
-    {
       "id": "concept:standard-labor-replacement",
       "key": "standard-labor-replacement",
       "label": "标准劳动力替代",
@@ -2046,17 +2079,6 @@
       "type": "concept",
       "route": "concepts/standard-labor-replacement",
       "summary": "自动化最先替代可重复、可规训、可量化的标准岗位，而这些岗位往往属于普通人。",
-      "status": null,
-      "degree": 9
-    },
-    {
-      "id": "theme:east-asia-security-realignment",
-      "key": "east-asia-security-realignment",
-      "label": "东亚安全重组与日本转向",
-      "fullLabel": "东亚安全重组与日本转向",
-      "type": "theme",
-      "route": "themes/east-asia-security-realignment",
-      "summary": "讨论日本重新前台化、台海压力外溢，以及东亚安全合作为何越来越难保持模糊。",
       "status": null,
       "degree": 9
     },
@@ -2079,17 +2101,6 @@
       "type": "concept",
       "route": "concepts/phantom-growth",
       "summary": "系统通过报表、交易、融资和场面把增长做出来，但真实产业和真实利润并没有同步长出来。",
-      "status": null,
-      "degree": 9
-    },
-    {
-      "id": "model:wall-and-gray-trade-crackdown",
-      "key": "wall-and-gray-trade-crackdown",
-      "label": "建墙与打灰模型",
-      "fullLabel": "建墙与打灰模型",
-      "type": "model",
-      "route": "models/wall-and-gray-trade-crackdown",
-      "summary": "建墙与打灰模型把川普的全球策略概括为两条隐藏逻辑：建墙分清敌我盟友、打击灰色贸易逼交易回归美元。",
       "status": null,
       "degree": 9
     },
@@ -2941,6 +2952,17 @@
       "degree": 7
     },
     {
+      "id": "model:wealth-power-reproduction",
+      "key": "wealth-power-reproduction",
+      "label": "财富权力再生产",
+      "fullLabel": "财富权力再生产",
+      "type": "model",
+      "route": "models/wealth-power-reproduction",
+      "summary": "财富权力再生产解释财富如何借婚姻、生育、身份和关系重新转化为下一代权力。",
+      "status": null,
+      "degree": 7
+    },
+    {
       "id": "theme:big-government-and-incentive-reversal",
       "key": "big-government-and-incentive-reversal",
       "label": "大政府与激励反转",
@@ -3102,6 +3124,17 @@
       "type": "theme",
       "route": "themes/small-state-balancing",
       "summary": "讨论新加坡这类小国如何在大国竞争中维持安全、合法性和现实利益。",
+      "status": null,
+      "degree": 7
+    },
+    {
+      "id": "concept:long-termism",
+      "key": "long-termism",
+      "label": "长期主义",
+      "fullLabel": "长期主义",
+      "type": "concept",
+      "route": "concepts/long-termism",
+      "summary": "以几十年甚至百年为尺度做决策，前期为长远格局多花成本、多做规划，而不是被短期利益和政绩驱动。",
       "status": null,
       "degree": 7
     },
@@ -3447,13 +3480,13 @@
       "degree": 6
     },
     {
-      "id": "model:wealth-power-reproduction",
-      "key": "wealth-power-reproduction",
-      "label": "财富权力再生产",
-      "fullLabel": "财富权力再生产",
+      "id": "model:property-defined-rule-domain",
+      "key": "property-defined-rule-domain",
+      "label": "产权定规则",
+      "fullLabel": "产权定规则",
       "type": "model",
-      "route": "models/wealth-power-reproduction",
-      "summary": "财富权力再生产解释财富如何借婚姻、生育、身份和关系重新转化为下一代权力。",
+      "route": "models/property-defined-rule-domain",
+      "summary": "说的是：一个空间里谁有权定规则、规则的合法范围在哪里、不接受规则的正确退出路径，都由这个空间的产权归属决定。",
       "status": null,
       "degree": 6
     },
@@ -3590,6 +3623,17 @@
       "degree": 6
     },
     {
+      "id": "concept:data-fetishism",
+      "key": "data-fetishism",
+      "label": "数据崇拜",
+      "fullLabel": "数据崇拜",
+      "type": "concept",
+      "route": "concepts/data-fetishism",
+      "summary": "把数据、表格、术语和科学帽子当成真理本身，只要有数字有来源就信。",
+      "status": null,
+      "degree": 6
+    },
+    {
       "id": "theme:data-cosmetics-and-false-prosperity",
       "key": "data-cosmetics-and-false-prosperity",
       "label": "数据粉饰与虚假繁荣",
@@ -3685,17 +3729,6 @@
       "type": "person",
       "route": "people/zhang-xuefeng",
       "summary": "张雪峰（张子彪，1984-2026）是考研与升学规划领域的公众人物，节目借他观察教育焦虑、安全阀和稳定路径叙事。",
-      "status": null,
-      "degree": 6
-    },
-    {
-      "id": "concept:long-termism",
-      "key": "long-termism",
-      "label": "长期主义",
-      "fullLabel": "长期主义",
-      "type": "concept",
-      "route": "concepts/long-termism",
-      "summary": "以几十年甚至百年为尺度做决策，前期为长远格局多花成本、多做规划，而不是被短期利益和政绩驱动。",
       "status": null,
       "degree": 6
     },
@@ -3865,6 +3898,17 @@
       "degree": 6
     },
     {
+      "id": "episode:EP077",
+      "key": "EP077",
+      "label": "EP077",
+      "fullLabel": "EP077 · 格陵兰岛，北冰洋航线的命门。会成为新加坡繁荣的颠覆者吗？",
+      "type": "episode",
+      "route": "episodes/EP077",
+      "summary": "海洋时代的每条主航线都有命门，新加坡的繁荣就建在马六甲海峡上。中国为绕开马六甲试过瓜达尔港和马来西亚、泰国的铁路，花费动辄千亿万亿。气候变暖让北冰洋航线的通航时间从很短拉长到大半年甚至全年，欧洲到东亚多了一条路，对新加坡是颠覆性的。这条新航线也有命门，就在格陵兰与冰岛之间的丹麦海峡，二战时俾斯麦号走的就是这里。特朗普想买格陵兰，看中的是这个出口。格陵兰人不卖岛，美国大概率接管防御，这条航线能不能用起来依然迷雾重重。",
+      "status": "curated",
+      "degree": 6
+    },
+    {
       "id": "episode:EP082",
       "key": "EP082",
       "label": "EP082",
@@ -3953,13 +3997,13 @@
       "degree": 5
     },
     {
-      "id": "model:property-defined-rule-domain",
-      "key": "property-defined-rule-domain",
-      "label": "产权定规则",
-      "fullLabel": "产权定规则",
-      "type": "model",
-      "route": "models/property-defined-rule-domain",
-      "summary": "说的是：一个空间里谁有权定规则、规则的合法范围在哪里、不接受规则的正确退出路径，都由这个空间的产权归属决定。",
+      "id": "theme:bullshit-politics-and-historical-narratives",
+      "key": "bullshit-politics-and-historical-narratives",
+      "label": "扯淡政治与历史叙事",
+      "fullLabel": "扯淡政治与历史叙事",
+      "type": "theme",
+      "route": "themes/bullshit-politics-and-historical-narratives",
+      "summary": "讨论对真相冷漠的话术如何进入历史解释和身份动员。",
       "status": null,
       "degree": 5
     },
@@ -4074,6 +4118,17 @@
       "degree": 5
     },
     {
+      "id": "concept:dream-extinguishing",
+      "key": "dream-extinguishing",
+      "label": "灭梦式安全感",
+      "fullLabel": "灭梦式安全感",
+      "type": "concept",
+      "route": "concepts/dream-extinguishing",
+      "summary": "以稳定和现实为名过早熄灭年轻人的热爱，会把安全感变成生命力的折损。",
+      "status": null,
+      "degree": 5
+    },
+    {
       "id": "theme:platform-governance-and-folk-discourse",
       "key": "platform-governance-and-folk-discourse",
       "label": "平台治理与民间话语",
@@ -4103,17 +4158,6 @@
       "type": "concept",
       "route": "concepts/globalization-as-disclosure",
       "summary": "全球化的本质是各国把生产、消费和价格公开披露，形成像上市公司体系那样透明的市场；灰色贸易就是绕开披露、退回不透明的国与国交易。",
-      "status": null,
-      "degree": 5
-    },
-    {
-      "id": "concept:data-fetishism",
-      "key": "data-fetishism",
-      "label": "数据崇拜",
-      "fullLabel": "数据崇拜",
-      "type": "concept",
-      "route": "concepts/data-fetishism",
-      "summary": "把数据、表格、术语和科学帽子当成真理本身，只要有数字有来源就信。",
       "status": null,
       "degree": 5
     },
@@ -4327,17 +4371,6 @@
       "degree": 5
     },
     {
-      "id": "episode:EP077",
-      "key": "EP077",
-      "label": "EP077",
-      "fullLabel": "EP077 · 格陵兰岛，北冰洋航线的命门。会成为新加坡繁荣的颠覆者吗？",
-      "type": "episode",
-      "route": "episodes/EP077",
-      "summary": "海洋时代的每条主航线都有命门，新加坡的繁荣就建在马六甲海峡上。中国为绕开马六甲试过瓜达尔港和马来西亚、泰国的铁路，花费动辄千亿万亿。气候变暖让北冰洋航线的通航时间从很短拉长到大半年甚至全年，欧洲到东亚多了一条路，对新加坡是颠覆性的。这条新航线也有命门，就在格陵兰与冰岛之间的丹麦海峡，二战时俾斯麦号走的就是这里。特朗普想买格陵兰，看中的是这个出口。格陵兰人不卖岛，美国大概率接管防御，这条航线能不能用起来依然迷雾重重。",
-      "status": "curated",
-      "degree": 5
-    },
-    {
       "id": "episode:EP087",
       "key": "EP087",
       "label": "EP087",
@@ -4514,17 +4547,6 @@
       "degree": 4
     },
     {
-      "id": "theme:bullshit-politics-and-historical-narratives",
-      "key": "bullshit-politics-and-historical-narratives",
-      "label": "扯淡政治与历史叙事",
-      "fullLabel": "扯淡政治与历史叙事",
-      "type": "theme",
-      "route": "themes/bullshit-politics-and-historical-narratives",
-      "summary": "讨论对真相冷漠的话术如何进入历史解释和身份动员。",
-      "status": null,
-      "degree": 4
-    },
-    {
       "id": "theme:growth-and-family-boundaries",
       "key": "growth-and-family-boundaries",
       "label": "成长与亲情边界",
@@ -4532,6 +4554,17 @@
       "type": "theme",
       "route": "themes/growth-and-family-boundaries",
       "summary": "关注个体如何在亲情、权威和自我之间逐步建立成熟边界。",
+      "status": null,
+      "degree": 4
+    },
+    {
+      "id": "concept:danwei-revival",
+      "key": "danwei-revival",
+      "label": "单位制回潮",
+      "fullLabel": "单位制回潮",
+      "type": "concept",
+      "route": "concepts/danwei-revival",
+      "summary": "法律失灵的场合里，单位重新成为约束公职人员的最有效抓手，也重新成为护着自己人的保护壳。",
       "status": null,
       "degree": 4
     },
@@ -4690,6 +4723,17 @@
       "degree": 4
     },
     {
+      "id": "concept:child-toolification",
+      "key": "child-toolification",
+      "label": "孩子工具化",
+      "fullLabel": "孩子工具化",
+      "type": "concept",
+      "route": "concepts/child-toolification",
+      "summary": "孩子被降格为家族延续、权力布局、身份展示或欲望满足的工具时，养育就失去主体性。",
+      "status": null,
+      "degree": 4
+    },
+    {
       "id": "concept:sea-laundering",
       "key": "sea-laundering",
       "label": "海上洗白",
@@ -4796,17 +4840,6 @@
       "type": "model",
       "route": "models/aspiration-compounding",
       "summary": "梦想复利模型解释长期投入到真实热爱的方向，会让能力、机会和身份彼此放大。",
-      "status": null,
-      "degree": 4
-    },
-    {
-      "id": "concept:dream-extinguishing",
-      "key": "dream-extinguishing",
-      "label": "灭梦式安全感",
-      "fullLabel": "灭梦式安全感",
-      "type": "concept",
-      "route": "concepts/dream-extinguishing",
-      "summary": "以稳定和现实为名过早熄灭年轻人的热爱，会把安全感变成生命力的折损。",
       "status": null,
       "degree": 4
     },
@@ -5027,6 +5060,17 @@
       "type": "concept",
       "route": "concepts/cult-branding",
       "summary": "用户从购买者变成主动辩护、传播和站队的信众时，品牌就进入信众化阶段。",
+      "status": null,
+      "degree": 4
+    },
+    {
+      "id": "concept:licensed-ownership",
+      "key": "licensed-ownership",
+      "label": "许可式所有权",
+      "fullLabel": "许可式所有权",
+      "type": "concept",
+      "route": "concepts/licensed-ownership",
+      "summary": "付的是买断价，拿到的却是一份能被远程收回的使用许可，一部分处置权始终留在卖方手里。",
       "status": null,
       "degree": 4
     },
@@ -5361,17 +5405,6 @@
       "degree": 3
     },
     {
-      "id": "concept:danwei-revival",
-      "key": "danwei-revival",
-      "label": "单位制回潮",
-      "fullLabel": "单位制回潮",
-      "type": "concept",
-      "route": "concepts/danwei-revival",
-      "summary": "法律失灵的场合里，单位重新成为约束公职人员的最有效抓手，也重新成为护着自己人的保护壳。",
-      "status": null,
-      "degree": 3
-    },
-    {
       "id": "model:first-principle-thinking",
       "key": "first-principle-thinking",
       "label": "第一性原理决策模型",
@@ -5438,17 +5471,6 @@
       "degree": 3
     },
     {
-      "id": "concept:child-toolification",
-      "key": "child-toolification",
-      "label": "孩子工具化",
-      "fullLabel": "孩子工具化",
-      "type": "concept",
-      "route": "concepts/child-toolification",
-      "summary": "孩子被降格为家族延续、权力布局、身份展示或欲望满足的工具时，养育就失去主体性。",
-      "status": null,
-      "degree": 3
-    },
-    {
       "id": "person:hu-chenfeng",
       "key": "hu-chenfeng",
       "label": "户晨风",
@@ -5467,6 +5489,17 @@
       "type": "concept",
       "route": "concepts/succession-fracture",
       "summary": "权力交接一旦脱离公开规则，血缘、密室和派系承认就会把国家合法性撕开裂缝。",
+      "status": null,
+      "degree": 3
+    },
+    {
+      "id": "model:inheritance-distortion-model",
+      "key": "inheritance-distortion-model",
+      "label": "继承扭曲模型",
+      "fullLabel": "继承扭曲模型",
+      "type": "model",
+      "route": "models/inheritance-distortion-model",
+      "summary": "继承扭曲模型解释财富、关系和人格问题一起传递时，继承会变成复制伤害而非接续。",
       "status": null,
       "degree": 3
     },
@@ -5757,6 +5790,17 @@
       "degree": 3
     },
     {
+      "id": "concept:ownership-management-separation",
+      "key": "ownership-management-separation",
+      "label": "所有权与经营权分割",
+      "fullLabel": "所有权与经营权分割",
+      "type": "concept",
+      "route": "concepts/ownership-management-separation",
+      "summary": "家族握住资产所有权和收益权，把投资、信托、税务、运营全部交给专业团队，用制度代替血缘完成传承，这是家族办公室的底层逻辑。",
+      "status": null,
+      "degree": 3
+    },
+    {
       "id": "concept:lying-flat-country",
       "key": "lying-flat-country",
       "label": "躺平国",
@@ -5812,6 +5856,17 @@
       "degree": 3
     },
     {
+      "id": "concept:civilization-culture-split",
+      "key": "civilization-culture-split",
+      "label": "文化与文明分离",
+      "fullLabel": "文化与文明分离",
+      "type": "concept",
+      "route": "concepts/civilization-culture-split",
+      "summary": "拥有古老文化符号，不等于形成了保护弱者、约束权力和尊重个体的文明结构。",
+      "status": null,
+      "degree": 3
+    },
+    {
       "id": "concept:tainted-asset-shield",
       "key": "tainted-asset-shield",
       "label": "瑕疵资产击穿",
@@ -5841,17 +5896,6 @@
       "type": "concept",
       "route": "concepts/false-premise-rigor",
       "summary": "前提被造假时，越严谨的推导越把谎言推得像真的、越难戳破。",
-      "status": null,
-      "degree": 3
-    },
-    {
-      "id": "concept:licensed-ownership",
-      "key": "licensed-ownership",
-      "label": "许可式所有权",
-      "fullLabel": "许可式所有权",
-      "type": "concept",
-      "route": "concepts/licensed-ownership",
-      "summary": "付的是买断价，拿到的却是一份能被远程收回的使用许可，一部分处置权始终留在卖方手里。",
       "status": null,
       "degree": 3
     },
@@ -6083,6 +6127,17 @@
       "type": "concept",
       "route": "concepts/standard-answer-cage",
       "summary": "复杂问题被压缩成唯一正确答案后，人会失去提问、迁移和面对不确定性的能力。",
+      "status": null,
+      "degree": 2
+    },
+    {
+      "id": "theme:wealth-inheritance-and-relational-distortion",
+      "key": "wealth-inheritance-and-relational-distortion",
+      "label": "财富继承与关系扭曲",
+      "fullLabel": "财富继承与关系扭曲",
+      "type": "theme",
+      "route": "themes/wealth-inheritance-and-relational-distortion",
+      "summary": "关注财富传递过程中，关系、人格和价值观如何一起失真。",
       "status": null,
       "degree": 2
     },
@@ -6406,17 +6461,6 @@
       "degree": 2
     },
     {
-      "id": "model:inheritance-distortion-model",
-      "key": "inheritance-distortion-model",
-      "label": "继承扭曲模型",
-      "fullLabel": "继承扭曲模型",
-      "type": "model",
-      "route": "models/inheritance-distortion-model",
-      "summary": "继承扭曲模型解释财富、关系和人格问题一起传递时，继承会变成复制伤害而非接续。",
-      "status": null,
-      "degree": 2
-    },
-    {
       "id": "concept:cross-subsidy-pricing",
       "key": "cross-subsidy-pricing",
       "label": "交叉补贴式价格差异",
@@ -6659,17 +6703,6 @@
       "degree": 2
     },
     {
-      "id": "concept:ownership-management-separation",
-      "key": "ownership-management-separation",
-      "label": "所有权与经营权分割",
-      "fullLabel": "所有权与经营权分割",
-      "type": "concept",
-      "route": "concepts/ownership-management-separation",
-      "summary": "家族握住资产所有权和收益权，把投资、信托、税务、运营全部交给专业团队，用制度代替血缘完成传承，这是家族办公室的底层逻辑。",
-      "status": null,
-      "degree": 2
-    },
-    {
       "id": "concept:leadership-pipeline",
       "key": "leadership-pipeline",
       "label": "梯队接班制",
@@ -6710,17 +6743,6 @@
       "type": "person",
       "route": "people/wang-jianlin",
       "summary": "王健林是大连万达集团长期董事长，节目借他观察旧地产企业家在政银地扩张时代形成、又在资本期限反噬中退潮的过程。",
-      "status": null,
-      "degree": 2
-    },
-    {
-      "id": "concept:civilization-culture-split",
-      "key": "civilization-culture-split",
-      "label": "文化与文明分离",
-      "fullLabel": "文化与文明分离",
-      "type": "concept",
-      "route": "concepts/civilization-culture-split",
-      "summary": "拥有古老文化符号，不等于形成了保护弱者、约束权力和尊重个体的文明结构。",
       "status": null,
       "degree": 2
     },
@@ -6846,6 +6868,17 @@
       "degree": 2
     },
     {
+      "id": "concept:housing-tax-wedge",
+      "key": "housing-tax-wedge",
+      "label": "住房税楔",
+      "fullLabel": "住房税楔",
+      "type": "concept",
+      "route": "concepts/housing-tax-wedge",
+      "summary": "高房价通过土地、税费和配套体系提前抽走居民未来收入，形成隐形住房税楔。",
+      "status": null,
+      "degree": 2
+    },
+    {
       "id": "concept:attention-trading",
       "key": "attention-trading",
       "label": "注意力交易",
@@ -6952,17 +6985,6 @@
       "type": "theme",
       "route": "themes/wealth-reproduction-and-ethical-boundaries",
       "summary": "当财富试图直接进入生育、家族和下一代塑造时，伦理边界会受到最猛烈的冲击。",
-      "status": null,
-      "degree": 1
-    },
-    {
-      "id": "theme:wealth-inheritance-and-relational-distortion",
-      "key": "wealth-inheritance-and-relational-distortion",
-      "label": "财富继承与关系扭曲",
-      "fullLabel": "财富继承与关系扭曲",
-      "type": "theme",
-      "route": "themes/wealth-inheritance-and-relational-distortion",
-      "summary": "关注财富传递过程中，关系、人格和价值观如何一起失真。",
       "status": null,
       "degree": 1
     },
@@ -8151,17 +8173,6 @@
       "type": "concept",
       "route": "concepts/direct-transfer-consumption",
       "summary": "现金直接到普通人手里，会进入日常消费毛细血管，形成朴素但真实的循环。",
-      "status": null,
-      "degree": 1
-    },
-    {
-      "id": "concept:housing-tax-wedge",
-      "key": "housing-tax-wedge",
-      "label": "住房税楔",
-      "fullLabel": "住房税楔",
-      "type": "concept",
-      "route": "concepts/housing-tax-wedge",
-      "summary": "高房价通过土地、税费和配套体系提前抽走居民未来收入，形成隐形住房税楔。",
       "status": null,
       "degree": 1
     },
@@ -21884,6 +21895,126 @@
     {
       "source": "live:LIVE043",
       "target": "theme:homeland-and-civic-belonging",
+      "kind": "live-theme"
+    },
+    {
+      "source": "live:LIVE044",
+      "target": "episode:EP143",
+      "kind": "live-episode"
+    },
+    {
+      "source": "live:LIVE044",
+      "target": "episode:EP213",
+      "kind": "live-episode"
+    },
+    {
+      "source": "live:LIVE044",
+      "target": "episode:EP077",
+      "kind": "live-episode"
+    },
+    {
+      "source": "live:LIVE044",
+      "target": "concept:housing-tax-wedge",
+      "kind": "live-concept"
+    },
+    {
+      "source": "live:LIVE044",
+      "target": "concept:licensed-ownership",
+      "kind": "live-concept"
+    },
+    {
+      "source": "live:LIVE044",
+      "target": "concept:ownership-management-separation",
+      "kind": "live-concept"
+    },
+    {
+      "source": "live:LIVE044",
+      "target": "concept:danwei-revival",
+      "kind": "live-concept"
+    },
+    {
+      "source": "live:LIVE044",
+      "target": "concept:dream-extinguishing",
+      "kind": "live-concept"
+    },
+    {
+      "source": "live:LIVE044",
+      "target": "concept:child-toolification",
+      "kind": "live-concept"
+    },
+    {
+      "source": "live:LIVE044",
+      "target": "concept:long-termism",
+      "kind": "live-concept"
+    },
+    {
+      "source": "live:LIVE044",
+      "target": "concept:civilization-culture-split",
+      "kind": "live-concept"
+    },
+    {
+      "source": "live:LIVE044",
+      "target": "concept:data-fetishism",
+      "kind": "live-concept"
+    },
+    {
+      "source": "live:LIVE044",
+      "target": "concept:time-asymmetry",
+      "kind": "live-concept"
+    },
+    {
+      "source": "live:LIVE044",
+      "target": "model:property-defined-rule-domain",
+      "kind": "live-model"
+    },
+    {
+      "source": "live:LIVE044",
+      "target": "model:wealth-power-reproduction",
+      "kind": "live-model"
+    },
+    {
+      "source": "live:LIVE044",
+      "target": "model:inheritance-distortion-model",
+      "kind": "live-model"
+    },
+    {
+      "source": "live:LIVE044",
+      "target": "model:wall-and-gray-trade-crackdown",
+      "kind": "live-model"
+    },
+    {
+      "source": "live:LIVE044",
+      "target": "theme:local-fiscal-stress-and-hidden-debt",
+      "kind": "live-theme"
+    },
+    {
+      "source": "live:LIVE044",
+      "target": "theme:human-value-and-state-credit",
+      "kind": "live-theme"
+    },
+    {
+      "source": "live:LIVE044",
+      "target": "theme:planned-systems-and-innovation",
+      "kind": "live-theme"
+    },
+    {
+      "source": "live:LIVE044",
+      "target": "theme:rule-of-law-boundaries-and-social-trust",
+      "kind": "live-theme"
+    },
+    {
+      "source": "live:LIVE044",
+      "target": "theme:wealth-inheritance-and-relational-distortion",
+      "kind": "live-theme"
+    },
+    {
+      "source": "live:LIVE044",
+      "target": "theme:bullshit-politics-and-historical-narratives",
+      "kind": "live-theme"
+    },
+    {
+      "source": "live:LIVE044",
+      "target": "theme:east-asia-security-realignment",
       "kind": "live-theme"
     },
     {
