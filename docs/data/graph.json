@@ -2,11 +2,11 @@
   "meta": {
     "title": "颖响力知识图谱",
     "subtitle": "节目、概念、模型、人物、主题之间的可视化连接网络",
-    "nodeCount": 746,
-    "linkCount": 2797,
+    "nodeCount": 747,
+    "linkCount": 2821,
     "typeCounts": {
       "model": 83,
-      "live": 44,
+      "live": 45,
       "concept": 245,
       "episode": 217,
       "theme": 92,
@@ -345,6 +345,17 @@
       "degree": 25
     },
     {
+      "id": "episode:EP154",
+      "key": "EP154",
+      "label": "EP154",
+      "fullLabel": "EP154 · 赫格塞斯新加坡香会“围栏论”真相（上）：川普的全球建墙计划，已修到东亚，围墙就划到中国家门口",
+      "type": "episode",
+      "route": "episodes/EP154",
+      "summary": "香格里拉对话会上，美国防长赫格塞斯讲了一段话。多数解读抓住他要建立建设性战略稳定关系那句软话，认为是降调求稳，其实那只是开场的烟雾弹。关键词是后半段的围栏，他已把边界划在第一岛链，围栏成了修到东亚家门口的高墙。它接的是川普的新门罗主义，一边建墙，一边打击灰色贸易。美军收拳后撤，让盟友顶到前线守墙。芯片按算力替谁干活来管，墙也修到了信息层。东南亚是最后一段还没划定的边界，香会就是逼骑墙国家选边的场子。",
+      "status": "curated",
+      "degree": 25
+    },
+    {
       "id": "episode:EP169",
       "key": "EP169",
       "label": "EP169",
@@ -433,17 +444,6 @@
       "degree": 24
     },
     {
-      "id": "episode:EP154",
-      "key": "EP154",
-      "label": "EP154",
-      "fullLabel": "EP154 · 赫格塞斯新加坡香会“围栏论”真相（上）：川普的全球建墙计划，已修到东亚，围墙就划到中国家门口",
-      "type": "episode",
-      "route": "episodes/EP154",
-      "summary": "香格里拉对话会上，美国防长赫格塞斯讲了一段话。多数解读抓住他要建立建设性战略稳定关系那句软话，认为是降调求稳，其实那只是开场的烟雾弹。关键词是后半段的围栏，他已把边界划在第一岛链，围栏成了修到东亚家门口的高墙。它接的是川普的新门罗主义，一边建墙，一边打击灰色贸易。美军收拳后撤，让盟友顶到前线守墙。芯片按算力替谁干活来管，墙也修到了信息层。东南亚是最后一段还没划定的边界，香会就是逼骑墙国家选边的场子。",
-      "status": "curated",
-      "degree": 24
-    },
-    {
       "id": "live:LIVE010",
       "key": "LIVE010",
       "label": "LIVE010",
@@ -495,6 +495,17 @@
       "type": "live",
       "route": "lives/LIVE044",
       "summary": "南京按分摊的地来算，一套高层公寓落到地面上只有零点六平米。",
+      "status": "published",
+      "degree": 24
+    },
+    {
+      "id": "live:LIVE045",
+      "key": "LIVE045",
+      "label": "LIVE045",
+      "fullLabel": "LIVE045 · 格陵兰没变成美国的地，却拿到了一票否决权！北极航线通往欧洲的口子被谁堵上了？",
+      "type": "live",
+      "route": "lives/LIVE045",
+      "summary": "二战时一艘提尔皮茨号泊在挪威北部，盟国往苏联运货的船队就不敢放开走。",
       "status": "published",
       "degree": 24
     },
@@ -576,6 +587,17 @@
       "degree": 23
     },
     {
+      "id": "concept:chokepoint-leverage",
+      "key": "chokepoint-leverage",
+      "label": "咽喉杠杆",
+      "fullLabel": "咽喉杠杆",
+      "type": "concept",
+      "route": "concepts/chokepoint-leverage",
+      "summary": "控制海峡、运河和关键通道的人，往往能把地理位置转化成定价权、通行权和规则权。",
+      "status": null,
+      "degree": 22
+    },
+    {
       "id": "episode:EP131",
       "key": "EP131",
       "label": "EP131",
@@ -616,17 +638,6 @@
       "type": "theme",
       "route": "themes/narrative-speculation-and-retail-traps",
       "summary": "当市场热点先由故事驱动、再由散户接棒时，普通人最容易在高潮处接到最后一棒。",
-      "status": null,
-      "degree": 21
-    },
-    {
-      "id": "concept:chokepoint-leverage",
-      "key": "chokepoint-leverage",
-      "label": "咽喉杠杆",
-      "fullLabel": "咽喉杠杆",
-      "type": "concept",
-      "route": "concepts/chokepoint-leverage",
-      "summary": "控制海峡、运河和关键通道的人，往往能把地理位置转化成定价权、通行权和规则权。",
       "status": null,
       "degree": 21
     },
@@ -818,6 +829,17 @@
       "degree": 18
     },
     {
+      "id": "theme:sanctions-and-power-containment",
+      "key": "sanctions-and-power-containment",
+      "label": "制裁、遏制与集团竞争",
+      "fullLabel": "制裁、遏制与集团竞争",
+      "type": "theme",
+      "route": "themes/sanctions-and-power-containment",
+      "summary": "讨论制裁、门罗主义、海峡与联盟如何共同服务于压制对手集团的全球布局。",
+      "status": null,
+      "degree": 18
+    },
+    {
       "id": "episode:EP132",
       "key": "EP132",
       "label": "EP132",
@@ -836,6 +858,17 @@
       "type": "episode",
       "route": "episodes/EP135",
       "summary": "俄罗斯今年胜利日阅兵取消了地面重装备方阵，官方说是怕乌克兰袭击，背后是打了四年多的仗把家底耗得差不多了。几千美元的无人机飞得低、航程上千公里，绕过防空扎进腹地，广袤国土从优势变成甩不掉的包袱。冷战时建好的炼油厂、管道和军工厂，在地图上标得明明白白。乌克兰把工厂拆散进社区，连手机维修店都在造无人机。美国收缩以后，欧洲接过了援助。俄罗斯却不敢全面动员，历史上每次总动员都迎来帝国崩塌。以后的仗，不再按国土大小和人口多少定输赢。",
+      "status": "curated",
+      "degree": 18
+    },
+    {
+      "id": "episode:EP168",
+      "key": "EP168",
+      "label": "EP168",
+      "fullLabel": "EP168 · 美伊协议谁赢了？油价为何没涨到300美元？",
+      "type": "episode",
+      "route": "episodes/EP168",
+      "summary": "美伊协议签下来，主流叙事是美国出了问题、川普急着收场、伊朗大获成功。这份协议不是认输，是委内瑞拉模式的 2.0 版。美国要的是打掉最高领导人，换一个能谈的，脏活交给以色列。没换到合适的，就先签协议，做时间的朋友。\n\n封了霍尔木兹，油价也只在 100 美元上下，需求也许本来就被高估，美国还可能趁高价放自己的库存，等委内瑞拉的油回补。真正被盯住的是灰色贸易，逼伊朗回SWIFT和美元体系才是开战动机。中期选举对第二任的川普没那么要紧，更在意的是万斯。",
       "status": "curated",
       "degree": 18
     },
@@ -884,28 +917,6 @@
       "degree": 17
     },
     {
-      "id": "theme:sanctions-and-power-containment",
-      "key": "sanctions-and-power-containment",
-      "label": "制裁、遏制与集团竞争",
-      "fullLabel": "制裁、遏制与集团竞争",
-      "type": "theme",
-      "route": "themes/sanctions-and-power-containment",
-      "summary": "讨论制裁、门罗主义、海峡与联盟如何共同服务于压制对手集团的全球布局。",
-      "status": null,
-      "degree": 17
-    },
-    {
-      "id": "episode:EP168",
-      "key": "EP168",
-      "label": "EP168",
-      "fullLabel": "EP168 · 美伊协议谁赢了？油价为何没涨到300美元？",
-      "type": "episode",
-      "route": "episodes/EP168",
-      "summary": "美伊协议签下来，主流叙事是美国出了问题、川普急着收场、伊朗大获成功。这份协议不是认输，是委内瑞拉模式的 2.0 版。美国要的是打掉最高领导人，换一个能谈的，脏活交给以色列。没换到合适的，就先签协议，做时间的朋友。\n\n封了霍尔木兹，油价也只在 100 美元上下，需求也许本来就被高估，美国还可能趁高价放自己的库存，等委内瑞拉的油回补。真正被盯住的是灰色贸易，逼伊朗回SWIFT和美元体系才是开战动机。中期选举对第二任的川普没那么要紧，更在意的是万斯。",
-      "status": "curated",
-      "degree": 17
-    },
-    {
       "id": "episode:EP189",
       "key": "EP189",
       "label": "EP189",
@@ -924,6 +935,17 @@
       "type": "theme",
       "route": "themes/southeast-asia-fragmentation-and-bloc-competition",
       "summary": "讨论东南亚如何从缓冲地带变成各方拉扯、重新站队和内部裂变并行发生的高风险区域。",
+      "status": null,
+      "degree": 16
+    },
+    {
+      "id": "theme:maritime-chokepoints-and-route-order",
+      "key": "maritime-chokepoints-and-route-order",
+      "label": "海峡命门与航运秩序",
+      "fullLabel": "海峡命门与航运秩序",
+      "type": "theme",
+      "route": "themes/maritime-chokepoints-and-route-order",
+      "summary": "讨论海峡、运河和关键航道如何把地理位置变成规则、保险、资本和军事的综合权力。",
       "status": null,
       "degree": 16
     },
@@ -1012,17 +1034,6 @@
       "type": "theme",
       "route": "themes/real-estate-deleveraging",
       "summary": "讨论房地产在下行周期里如何通过断供、重组、展期和资产处置逐步暴露风险。",
-      "status": null,
-      "degree": 15
-    },
-    {
-      "id": "theme:maritime-chokepoints-and-route-order",
-      "key": "maritime-chokepoints-and-route-order",
-      "label": "海峡命门与航运秩序",
-      "fullLabel": "海峡命门与航运秩序",
-      "type": "theme",
-      "route": "themes/maritime-chokepoints-and-route-order",
-      "summary": "讨论海峡、运河和关键航道如何把地理位置变成规则、保险、资本和军事的综合权力。",
       "status": null,
       "degree": 15
     },
@@ -1280,6 +1291,17 @@
       "degree": 13
     },
     {
+      "id": "theme:state-business-entanglement",
+      "key": "state-business-entanglement",
+      "label": "政企嵌入与企业存续",
+      "fullLabel": "政企嵌入与企业存续",
+      "type": "theme",
+      "route": "themes/state-business-entanglement",
+      "summary": "讨论企业如何依赖地方政府、国资平台或关系结构续命，以及这种绑定如何反过来改写企业目标。",
+      "status": null,
+      "degree": 13
+    },
+    {
       "id": "model:sanction-parallel-market",
       "key": "sanction-parallel-market",
       "label": "制裁平行市场模型",
@@ -1445,17 +1467,6 @@
       "degree": 12
     },
     {
-      "id": "theme:state-business-entanglement",
-      "key": "state-business-entanglement",
-      "label": "政企嵌入与企业存续",
-      "fullLabel": "政企嵌入与企业存续",
-      "type": "theme",
-      "route": "themes/state-business-entanglement",
-      "summary": "讨论企业如何依赖地方政府、国资平台或关系结构续命，以及这种绑定如何反过来改写企业目标。",
-      "status": null,
-      "degree": 12
-    },
-    {
       "id": "episode:EP041",
       "key": "EP041",
       "label": "EP041",
@@ -1599,6 +1610,17 @@
       "degree": 11
     },
     {
+      "id": "theme:east-asia-security-realignment",
+      "key": "east-asia-security-realignment",
+      "label": "东亚安全重组与日本转向",
+      "fullLabel": "东亚安全重组与日本转向",
+      "type": "theme",
+      "route": "themes/east-asia-security-realignment",
+      "summary": "讨论日本重新前台化、台海压力外溢，以及东亚安全合作为何越来越难保持模糊。",
+      "status": null,
+      "degree": 11
+    },
+    {
       "id": "concept:delayed-price-discovery",
       "key": "delayed-price-discovery",
       "label": "价格发现延迟",
@@ -1606,6 +1628,17 @@
       "type": "concept",
       "route": "concepts/delayed-price-discovery",
       "summary": "真实价格本来应该尽快显现，但被托价、缓冲、票据和关系安排一层层往后拖，市场只剩名义稳定。",
+      "status": null,
+      "degree": 11
+    },
+    {
+      "id": "model:wall-and-gray-trade-crackdown",
+      "key": "wall-and-gray-trade-crackdown",
+      "label": "建墙与打灰模型",
+      "fullLabel": "建墙与打灰模型",
+      "type": "model",
+      "route": "models/wall-and-gray-trade-crackdown",
+      "summary": "建墙与打灰模型把川普的全球策略概括为两条隐藏逻辑：建墙分清敌我盟友、打击灰色贸易逼交易回归美元。",
       "status": null,
       "degree": 11
     },
@@ -1797,17 +1830,6 @@
       "degree": 10
     },
     {
-      "id": "theme:east-asia-security-realignment",
-      "key": "east-asia-security-realignment",
-      "label": "东亚安全重组与日本转向",
-      "fullLabel": "东亚安全重组与日本转向",
-      "type": "theme",
-      "route": "themes/east-asia-security-realignment",
-      "summary": "讨论日本重新前台化、台海压力外溢，以及东亚安全合作为何越来越难保持模糊。",
-      "status": null,
-      "degree": 10
-    },
-    {
       "id": "model:chokepoint-order-model",
       "key": "chokepoint-order-model",
       "label": "海峡秩序模型",
@@ -1815,17 +1837,6 @@
       "type": "model",
       "route": "models/chokepoint-order-model",
       "summary": "真正决定咽喉通道价值的，不只是地理位置，而是谁定义通行规则、风险定价与法律边界。",
-      "status": null,
-      "degree": 10
-    },
-    {
-      "id": "model:wall-and-gray-trade-crackdown",
-      "key": "wall-and-gray-trade-crackdown",
-      "label": "建墙与打灰模型",
-      "fullLabel": "建墙与打灰模型",
-      "type": "model",
-      "route": "models/wall-and-gray-trade-crackdown",
-      "summary": "建墙与打灰模型把川普的全球策略概括为两条隐藏逻辑：建墙分清敌我盟友、打击灰色贸易逼交易回归美元。",
       "status": null,
       "degree": 10
     },
@@ -1859,6 +1870,17 @@
       "type": "theme",
       "route": "themes/film-industry-and-traffic-logic",
       "summary": "关注影视生产如何越来越服从人设、粉丝和宣发流量，而非角色与作品本身。",
+      "status": null,
+      "degree": 10
+    },
+    {
+      "id": "model:political-embedded-enterprise",
+      "key": "political-embedded-enterprise",
+      "label": "政企嵌入企业模型",
+      "fullLabel": "政企嵌入企业模型",
+      "type": "model",
+      "route": "models/political-embedded-enterprise",
+      "summary": "企业一旦把自身命运深嵌进地方政府或国资体系，短期会更能续命，长期却更容易沦为政策工具。",
       "status": null,
       "degree": 10
     },
@@ -2182,17 +2204,6 @@
       "degree": 9
     },
     {
-      "id": "model:political-embedded-enterprise",
-      "key": "political-embedded-enterprise",
-      "label": "政企嵌入企业模型",
-      "fullLabel": "政企嵌入企业模型",
-      "type": "model",
-      "route": "models/political-embedded-enterprise",
-      "summary": "企业一旦把自身命运深嵌进地方政府或国资体系，短期会更能续命，长期却更容易沦为政策工具。",
-      "status": null,
-      "degree": 9
-    },
-    {
       "id": "model:institutional-formalism-spiral",
       "key": "institutional-formalism-spiral",
       "label": "制度形式主义螺旋",
@@ -2234,6 +2245,17 @@
       "route": "concepts/organizational-silence",
       "summary": "组织内部真实反馈消失后，成员会等待权威表态，而不是主动修正错误。",
       "status": null,
+      "degree": 9
+    },
+    {
+      "id": "episode:EP005",
+      "key": "EP005",
+      "label": "EP005",
+      "fullLabel": "EP005 · 户晨风，张雪峰被封禁的底层逻辑是什么？有什么区别？",
+      "type": "episode",
+      "route": "episodes/EP005",
+      "summary": "户晨风和张雪峰都被封了，封的方式却不一样，户晨风拿到的是永久封禁。常说的制造阶级对立、劝年轻人躺平，都没说到他被封的原因。他用直播把苹果人和安卓人放进同一个画面，普通年轻人看见了原来看不见的东西，和自己一样的人靠着背后的力量，过上了他们这辈子享受不到的生活。这群年轻人平时不激进，一旦被同一种不满聚起来，就是社会最提防的两类人之一。他找到的通道像当年鲁迅的小说，也像三体里的破壁人，把信息茧房打破了。以后也许还会有更多破壁人出现。",
+      "status": "curated",
       "degree": 9
     },
     {
@@ -2633,17 +2655,6 @@
       "degree": 8
     },
     {
-      "id": "episode:EP005",
-      "key": "EP005",
-      "label": "EP005",
-      "fullLabel": "EP005 · 户晨风，张雪峰被封禁的底层逻辑是什么？有什么区别？",
-      "type": "episode",
-      "route": "episodes/EP005",
-      "summary": "户晨风和张雪峰都被封了，封的方式却不一样，户晨风拿到的是永久封禁。常说的制造阶级对立、劝年轻人躺平，都没说到他被封的原因。他用直播把苹果人和安卓人放进同一个画面，普通年轻人看见了原来看不见的东西，和自己一样的人靠着背后的力量，过上了他们这辈子享受不到的生活。这群年轻人平时不激进，一旦被同一种不满聚起来，就是社会最提防的两类人之一。他找到的通道像当年鲁迅的小说，也像三体里的破壁人，把信息茧房打破了。以后也许还会有更多破壁人出现。",
-      "status": "curated",
-      "degree": 8
-    },
-    {
       "id": "episode:EP008",
       "key": "EP008",
       "label": "EP008",
@@ -3003,6 +3014,17 @@
       "type": "model",
       "route": "models/individuation-three-stage",
       "summary": "个体化三阶段模型把成长理解为依次消化亲情、权威和自我，而非一次性觉醒。",
+      "status": null,
+      "degree": 7
+    },
+    {
+      "id": "theme:public-space-and-civic-maturity",
+      "key": "public-space-and-civic-maturity",
+      "label": "公共空间与公民成熟",
+      "fullLabel": "公共空间与公民成熟",
+      "type": "theme",
+      "route": "themes/public-space-and-civic-maturity",
+      "summary": "讨论个体在公共场景里如何同时拥有权利意识、规则意识、义务感和稳定自尊。",
       "status": null,
       "degree": 7
     },
@@ -3381,6 +3403,28 @@
       "degree": 7
     },
     {
+      "id": "episode:EP077",
+      "key": "EP077",
+      "label": "EP077",
+      "fullLabel": "EP077 · 格陵兰岛，北冰洋航线的命门。会成为新加坡繁荣的颠覆者吗？",
+      "type": "episode",
+      "route": "episodes/EP077",
+      "summary": "海洋时代的每条主航线都有命门，新加坡的繁荣就建在马六甲海峡上。中国为绕开马六甲试过瓜达尔港和马来西亚、泰国的铁路，花费动辄千亿万亿。气候变暖让北冰洋航线的通航时间从很短拉长到大半年甚至全年，欧洲到东亚多了一条路，对新加坡是颠覆性的。这条新航线也有命门，就在格陵兰与冰岛之间的丹麦海峡，二战时俾斯麦号走的就是这里。特朗普想买格陵兰，看中的是这个出口。格陵兰人不卖岛，美国大概率接管防御，这条航线能不能用起来依然迷雾重重。",
+      "status": "curated",
+      "degree": 7
+    },
+    {
+      "id": "episode:EP082",
+      "key": "EP082",
+      "label": "EP082",
+      "fullLabel": "EP082 · 高市狂胜，垂死自民党被谁家华佗治好了？神助攻换来的东亚巨变。",
+      "type": "episode",
+      "route": "episodes/EP082",
+      "summary": "高市早苗以碾压之势胜选，濒死的自民党回光返照。有效的政经预测要站在对方视角，中国恰恰判断错了形势。它逼公明党与高市切割，她转头接上维新会，接连施压反倒把她的人气推过七成。有人说高市在赌，她其实是抢在中道改革联盟刚合并时发动选举，还把去留和党牌绑死。结果自民党一党拿下三分之二以上席位。修宪要参议院配合，短期更像口号，移民政策也不会过于激进，她的首要任务是国内经济。日本正从三十年下行里缓慢爬升，中国却还在承压。",
+      "status": "curated",
+      "degree": 7
+    },
+    {
       "id": "episode:EP092",
       "key": "EP092",
       "label": "EP092",
@@ -3509,17 +3553,6 @@
       "type": "concept",
       "route": "concepts/probabilistic-safety",
       "summary": "风险不是每次都会爆发，但一旦触发就后果极重，因此最容易被组织和用户一起低估。",
-      "status": null,
-      "degree": 6
-    },
-    {
-      "id": "theme:public-space-and-civic-maturity",
-      "key": "public-space-and-civic-maturity",
-      "label": "公共空间与公民成熟",
-      "fullLabel": "公共空间与公民成熟",
-      "type": "theme",
-      "route": "themes/public-space-and-civic-maturity",
-      "summary": "讨论个体在公共场景里如何同时拥有权利意识、规则意识、义务感和稳定自尊。",
       "status": null,
       "degree": 6
     },
@@ -3898,28 +3931,6 @@
       "degree": 6
     },
     {
-      "id": "episode:EP077",
-      "key": "EP077",
-      "label": "EP077",
-      "fullLabel": "EP077 · 格陵兰岛，北冰洋航线的命门。会成为新加坡繁荣的颠覆者吗？",
-      "type": "episode",
-      "route": "episodes/EP077",
-      "summary": "海洋时代的每条主航线都有命门，新加坡的繁荣就建在马六甲海峡上。中国为绕开马六甲试过瓜达尔港和马来西亚、泰国的铁路，花费动辄千亿万亿。气候变暖让北冰洋航线的通航时间从很短拉长到大半年甚至全年，欧洲到东亚多了一条路，对新加坡是颠覆性的。这条新航线也有命门，就在格陵兰与冰岛之间的丹麦海峡，二战时俾斯麦号走的就是这里。特朗普想买格陵兰，看中的是这个出口。格陵兰人不卖岛，美国大概率接管防御，这条航线能不能用起来依然迷雾重重。",
-      "status": "curated",
-      "degree": 6
-    },
-    {
-      "id": "episode:EP082",
-      "key": "EP082",
-      "label": "EP082",
-      "fullLabel": "EP082 · 高市狂胜，垂死自民党被谁家华佗治好了？神助攻换来的东亚巨变。",
-      "type": "episode",
-      "route": "episodes/EP082",
-      "summary": "高市早苗以碾压之势胜选，濒死的自民党回光返照。有效的政经预测要站在对方视角，中国恰恰判断错了形势。它逼公明党与高市切割，她转头接上维新会，接连施压反倒把她的人气推过七成。有人说高市在赌，她其实是抢在中道改革联盟刚合并时发动选举，还把去留和党牌绑死。结果自民党一党拿下三分之二以上席位。修宪要参议院配合，短期更像口号，移民政策也不会过于激进，她的首要任务是国内经济。日本正从三十年下行里缓慢爬升，中国却还在承压。",
-      "status": "curated",
-      "degree": 6
-    },
-    {
       "id": "episode:EP083",
       "key": "EP083",
       "label": "EP083",
@@ -3960,6 +3971,17 @@
       "type": "episode",
       "route": "episodes/EP101",
       "summary": "碧桂园启动最大规模的老兵召回，胖东来把账上 40 亿现金和大部分股权分给员工，不少人把两件事都说成企业有温情。可两家的状态完全不一样。胖东来还在赚钱，却主动分家，于东来只留 5% 股权，一个收款员也能拿到 20 万现金股权。碧桂园销售额连降 7 年，员工从 13 万多裁到 1 万 8000，却靠跟地方政府深度绑定僵而不死，召回的条件是原领导同意。两家走向不同，答案藏在政企关系里，深度绑定短期换来不倒，长期是慢性毒药。胖东来放下了王冠，把财富留给了员工。",
+      "status": "curated",
+      "degree": 6
+    },
+    {
+      "id": "episode:EP113",
+      "key": "EP113",
+      "label": "EP113",
+      "fullLabel": "EP113 · 阿尔忒弥斯2号升空：历史似在重演！美苏争霸里，大约写着中美太空竞赛的结局。【EP113】",
+      "type": "episode",
+      "route": "episodes/EP113",
+      "summary": "阿尔忒弥斯 2 号送 4 名宇航员绕月 10 天，不登月，要刷新载人飞行最远纪录，直播画面的复古色调让人想起阿波罗。美国走 NASA 加 SpaceX 的军民商双轮驱动，像一个能解体的火车头，遇到悬崖，人可以各自带着技术下车，把军工转成民用。苏联举国体制起步快，火车头却坚硬不可控。美国的动力来自个人喜爱和逐利，苏联靠集体意志和螺丝钉式的服从。苏联曾为庆典强发问题航天器，中国的巨型火箭也刚失败。可怕的是对待失败的态度和能动性的缺失。再叠上三分之二魔咒，美苏争霸里大约已经写着这轮竞赛的结局。",
       "status": "curated",
       "degree": 6
     },
@@ -4074,6 +4096,17 @@
       "degree": 5
     },
     {
+      "id": "concept:route-substitution-illusion",
+      "key": "route-substitution-illusion",
+      "label": "航线替代幻觉",
+      "fullLabel": "航线替代幻觉",
+      "type": "concept",
+      "route": "concepts/route-substitution-illusion",
+      "summary": "新的港口、陆路或航线可以分流局部业务，但很难在短期内替代真正的世界级主通道。",
+      "status": null,
+      "degree": 5
+    },
+    {
       "id": "concept:compliance-floor",
       "key": "compliance-floor",
       "label": "合规及格线",
@@ -4103,6 +4136,17 @@
       "type": "model",
       "route": "models/succession-governance",
       "summary": "企业交班真正难的，不是把头衔交出去，而是把旧账、旧利益和旧工具提前制度化处理掉。",
+      "status": null,
+      "degree": 5
+    },
+    {
+      "id": "theme:family-succession-and-governance",
+      "key": "family-succession-and-governance",
+      "label": "家族企业继承与治理断裂",
+      "fullLabel": "家族企业继承与治理断裂",
+      "type": "theme",
+      "route": "themes/family-succession-and-governance",
+      "summary": "讨论创始人家族、接班方式与旧利益安排如何把企业从经营问题推向治理问题。",
       "status": null,
       "degree": 5
     },
@@ -4162,6 +4206,17 @@
       "degree": 5
     },
     {
+      "id": "concept:identity-over-wealth",
+      "key": "identity-over-wealth",
+      "label": "身份压倒财富",
+      "fullLabel": "身份压倒财富",
+      "type": "concept",
+      "route": "concepts/identity-over-wealth",
+      "summary": "身份压倒财富指稳定身份、编制和圈层位置开始比账面收入更能决定社会评价和生活安全感。",
+      "status": null,
+      "degree": 5
+    },
+    {
       "id": "model:exit-liquidation-waterfall",
       "key": "exit-liquidation-waterfall",
       "label": "退出清算瀑布",
@@ -4169,6 +4224,17 @@
       "type": "model",
       "route": "models/exit-liquidation-waterfall",
       "summary": "产业项目一旦崩塌，价值会迅速收缩到土地、壳和残余设备，并按优先级把损失一层层向下压。",
+      "status": null,
+      "degree": 5
+    },
+    {
+      "id": "concept:pressure-backfire",
+      "key": "pressure-backfire",
+      "label": "外压反噬",
+      "fullLabel": "外压反噬",
+      "type": "concept",
+      "route": "concepts/pressure-backfire",
+      "summary": "外部施压本想压制对象，却可能反向提供动员资源、受害叙事和上位机会。",
       "status": null,
       "degree": 5
     },
@@ -4217,6 +4283,17 @@
       "degree": 5
     },
     {
+      "id": "concept:new-media-politician",
+      "key": "new-media-politician",
+      "label": "新媒体政治人物",
+      "fullLabel": "新媒体政治人物",
+      "type": "concept",
+      "route": "concepts/new-media-politician",
+      "summary": "靠新媒体直接连接受众、绕过传统组织和选举路径崛起的新型权力人物。",
+      "status": null,
+      "degree": 5
+    },
+    {
       "id": "theme:performative-governance-and-ritual-display",
       "key": "performative-governance-and-ritual-display",
       "label": "形式主义治理与仪式表演",
@@ -4257,6 +4334,17 @@
       "type": "concept",
       "route": "concepts/strategic-depth-inversion",
       "summary": "长航程无人系统让传统纵深从缓冲优势变成固定资产暴露和防护成本。",
+      "status": null,
+      "degree": 5
+    },
+    {
+      "id": "concept:institutional-software-transfer",
+      "key": "institutional-software-transfer",
+      "label": "制度软件移植",
+      "fullLabel": "制度软件移植",
+      "type": "concept",
+      "route": "concepts/institutional-software-transfer",
+      "summary": "把治理体系拆成硬件与软件两层：土地、规划、基建可以整体搬运，管理制度背后的人的意识和行政逻辑却难以跨体制移植。",
       "status": null,
       "degree": 5
     },
@@ -4422,17 +4510,6 @@
       "type": "episode",
       "route": "episodes/EP112",
       "summary": "茅台大幅上调出厂价，又把经销商从销售关系改成服务关系。这不是单纯涨价，茅台更像在发行自己的一般等价物，酒是基础货币，经销商是商业银行。茅台每年涨 10% 到 15%，银行拆借不到 5%，借钱囤酒就能套利。开瓶率不到两成，这颗雷是三千亿还是万亿没人知道。改革跟当年格力一样是断臂求生，先涨价稳住基本盘，再把货权和定价权收回自己手里，风险留给囤酒的人。高端白酒越贵越没人喝，年轻人不愿意被这套逻辑收割，茅台要跟整个行业切割。",
-      "status": "curated",
-      "degree": 5
-    },
-    {
-      "id": "episode:EP113",
-      "key": "EP113",
-      "label": "EP113",
-      "fullLabel": "EP113 · 阿尔忒弥斯2号升空：历史似在重演！美苏争霸里，大约写着中美太空竞赛的结局。【EP113】",
-      "type": "episode",
-      "route": "episodes/EP113",
-      "summary": "阿尔忒弥斯 2 号送 4 名宇航员绕月 10 天，不登月，要刷新载人飞行最远纪录，直播画面的复古色调让人想起阿波罗。美国走 NASA 加 SpaceX 的军民商双轮驱动，像一个能解体的火车头，遇到悬崖，人可以各自带着技术下车，把军工转成民用。苏联举国体制起步快，火车头却坚硬不可控。美国的动力来自个人喜爱和逐利，苏联靠集体意志和螺丝钉式的服从。苏联曾为庆典强发问题航天器，中国的巨型火箭也刚失败。可怕的是对待失败的态度和能动性的缺失。再叠上三分之二魔咒，美苏争霸里大约已经写着这轮竞赛的结局。",
       "status": "curated",
       "degree": 5
     },
@@ -4613,6 +4690,17 @@
       "degree": 4
     },
     {
+      "id": "concept:outsourced-discernment",
+      "key": "outsourced-discernment",
+      "label": "分辨外包",
+      "fullLabel": "分辨外包",
+      "type": "concept",
+      "route": "concepts/outsourced-discernment",
+      "summary": "个体放弃自我分辨好坏的能力，默认有监管机构替自己事先筛查，自己只管享受结果。",
+      "status": null,
+      "degree": 4
+    },
+    {
       "id": "concept:distributed-war-industry",
       "key": "distributed-war-industry",
       "label": "分布式战时工业",
@@ -4745,17 +4833,6 @@
       "degree": 4
     },
     {
-      "id": "concept:route-substitution-illusion",
-      "key": "route-substitution-illusion",
-      "label": "航线替代幻觉",
-      "fullLabel": "航线替代幻觉",
-      "type": "concept",
-      "route": "concepts/route-substitution-illusion",
-      "summary": "新的港口、陆路或航线可以分流局部业务，但很难在短期内替代真正的世界级主通道。",
-      "status": null,
-      "degree": 4
-    },
-    {
       "id": "model:succession-fracture-model",
       "key": "succession-fracture-model",
       "label": "继承裂缝模型",
@@ -4774,17 +4851,6 @@
       "type": "concept",
       "route": "concepts/family-succession-fracture",
       "summary": "创始人把企业交给下一代时，如果旧账、旧怨和利益结构没有被提前制度化处理，接班很容易从交棒变成脆断。",
-      "status": null,
-      "degree": 4
-    },
-    {
-      "id": "theme:family-succession-and-governance",
-      "key": "family-succession-and-governance",
-      "label": "家族企业继承与治理断裂",
-      "fullLabel": "家族企业继承与治理断裂",
-      "type": "theme",
-      "route": "themes/family-succession-and-governance",
-      "summary": "讨论创始人家族、接班方式与旧利益安排如何把企业从经营问题推向治理问题。",
       "status": null,
       "degree": 4
     },
@@ -4899,17 +4965,6 @@
       "degree": 4
     },
     {
-      "id": "concept:identity-over-wealth",
-      "key": "identity-over-wealth",
-      "label": "身份压倒财富",
-      "fullLabel": "身份压倒财富",
-      "type": "concept",
-      "route": "concepts/identity-over-wealth",
-      "summary": "身份压倒财富指稳定身份、编制和圈层位置开始比账面收入更能决定社会评价和生活安全感。",
-      "status": null,
-      "degree": 4
-    },
-    {
       "id": "concept:identity-bounded-choice",
       "key": "identity-bounded-choice",
       "label": "身份约束型选择",
@@ -4950,17 +5005,6 @@
       "type": "concept",
       "route": "concepts/homogeneous-competition",
       "summary": "同一行政区或同一市场里，两个功能重叠的主体争夺同一批资源时，胜负往往由谁获得体制支持决定，而不是谁质量更好。",
-      "status": null,
-      "degree": 4
-    },
-    {
-      "id": "concept:pressure-backfire",
-      "key": "pressure-backfire",
-      "label": "外压反噬",
-      "fullLabel": "外压反噬",
-      "type": "concept",
-      "route": "concepts/pressure-backfire",
-      "summary": "外部施压本想压制对象，却可能反向提供动员资源、受害叙事和上位机会。",
       "status": null,
       "degree": 4
     },
@@ -5027,17 +5071,6 @@
       "type": "theme",
       "route": "themes/cash-optionality-and-liquidity-anxiety",
       "summary": "在高波动和低信任时期，流动性比账面资产更能决定一个人和机构的安全感。",
-      "status": null,
-      "degree": 4
-    },
-    {
-      "id": "concept:new-media-politician",
-      "key": "new-media-politician",
-      "label": "新媒体政治人物",
-      "fullLabel": "新媒体政治人物",
-      "type": "concept",
-      "route": "concepts/new-media-politician",
-      "summary": "靠新媒体直接连接受众、绕过传统组织和选举路径崛起的新型权力人物。",
       "status": null,
       "degree": 4
     },
@@ -5141,17 +5174,6 @@
       "degree": 4
     },
     {
-      "id": "concept:institutional-software-transfer",
-      "key": "institutional-software-transfer",
-      "label": "制度软件移植",
-      "fullLabel": "制度软件移植",
-      "type": "concept",
-      "route": "concepts/institutional-software-transfer",
-      "summary": "把治理体系拆成硬件与软件两层：土地、规划、基建可以整体搬运，管理制度背后的人的意识和行政逻辑却难以跨体制移植。",
-      "status": null,
-      "degree": 4
-    },
-    {
       "id": "concept:centralized-control-failure",
       "key": "centralized-control-failure",
       "label": "中心失灵",
@@ -5247,6 +5269,17 @@
       "type": "episode",
       "route": "episodes/EP038",
       "summary": "央视一支短剧式纪录片把一个女外卖员拍得从容又漂亮，因为舆情太大被要求下架。片子里的路上没有机动车，主人公是嫌设计师这行不自由才转行的，一万五的相机是三个月买的。真实的外卖员一单挣两三块，一天要跑十个小时以上，摔伤了也得把单送完。听说送餐时限还从30分钟压到了20分钟。靠遮掩维持体面的偷感，整个社会都有。滤镜看久了，人连自己也骗，一边当外卖小哥和牛马，一边讲家国情怀，年轻人的压力很大一部分就来自这种割裂。",
+      "status": "curated",
+      "degree": 4
+    },
+    {
+      "id": "episode:EP056",
+      "key": "EP056",
+      "label": "EP056",
+      "fullLabel": "EP056 · 大国竞争，是必有一战还是必有时间？",
+      "type": "episode",
+      "route": "episodes/EP056",
+      "summary": "战争常被看成军队的较量，往深一层看，大国比的是国力，更是时间。1941 年美国冻结日本资产，禁运石油和钢材，日本海军省算过，当年开打还有机会，拖到 1942 年就毫无胜算，偷袭珍珠港是掐着表开的战。日本想复制日俄战争，在东亚岛链搞区域拒止，等美国像沙俄一样签字放弃远东。美国定了先欧后亚，输几场也能靠工业慢慢补回来。石原莞尔的最终战理论给了日本上下一种假的自信。谁的国力、科技和文化能随着时间不断创新，时间就站在谁那边。",
       "status": "curated",
       "degree": 4
     },
@@ -5372,6 +5405,17 @@
       "degree": 3
     },
     {
+      "id": "theme:wealth-inheritance-and-relational-distortion",
+      "key": "wealth-inheritance-and-relational-distortion",
+      "label": "财富继承与关系扭曲",
+      "fullLabel": "财富继承与关系扭曲",
+      "type": "theme",
+      "route": "themes/wealth-inheritance-and-relational-distortion",
+      "summary": "关注财富传递过程中，关系、人格和价值观如何一起失真。",
+      "status": null,
+      "degree": 3
+    },
+    {
       "id": "concept:wealth-spillover-hub",
       "key": "wealth-spillover-hub",
       "label": "财富溢出集散地",
@@ -5412,17 +5456,6 @@
       "type": "model",
       "route": "models/first-principle-thinking",
       "summary": "第一性原理决策模型解释领导者怎样把复杂局面拆回最根本约束，再集中资源去解决它。",
-      "status": null,
-      "degree": 3
-    },
-    {
-      "id": "concept:outsourced-discernment",
-      "key": "outsourced-discernment",
-      "label": "分辨外包",
-      "fullLabel": "分辨外包",
-      "type": "concept",
-      "route": "concepts/outsourced-discernment",
-      "summary": "个体放弃自我分辨好坏的能力，默认有监管机构替自己事先筛查，自己只管享受结果。",
       "status": null,
       "degree": 3
     },
@@ -5790,6 +5823,17 @@
       "degree": 3
     },
     {
+      "id": "concept:random-walk-arrogance",
+      "key": "random-walk-arrogance",
+      "label": "随机漫步式傲慢",
+      "fullLabel": "随机漫步式傲慢",
+      "type": "concept",
+      "route": "concepts/random-walk-arrogance",
+      "summary": "在上升周期中撞上好运的人，容易把随机红利误读成自己掌握了世界规律。",
+      "status": null,
+      "degree": 3
+    },
+    {
       "id": "concept:ownership-management-separation",
       "key": "ownership-management-separation",
       "label": "所有权与经营权分割",
@@ -6065,17 +6109,6 @@
       "degree": 3
     },
     {
-      "id": "episode:EP056",
-      "key": "EP056",
-      "label": "EP056",
-      "fullLabel": "EP056 · 大国竞争，是必有一战还是必有时间？",
-      "type": "episode",
-      "route": "episodes/EP056",
-      "summary": "战争常被看成军队的较量，往深一层看，大国比的是国力，更是时间。1941 年美国冻结日本资产，禁运石油和钢材，日本海军省算过，当年开打还有机会，拖到 1942 年就毫无胜算，偷袭珍珠港是掐着表开的战。日本想复制日俄战争，在东亚岛链搞区域拒止，等美国像沙俄一样签字放弃远东。美国定了先欧后亚，输几场也能靠工业慢慢补回来。石原莞尔的最终战理论给了日本上下一种假的自信。谁的国力、科技和文化能随着时间不断创新，时间就站在谁那边。",
-      "status": "curated",
-      "degree": 3
-    },
-    {
       "id": "episode:EP085",
       "key": "EP085",
       "label": "EP085",
@@ -6127,17 +6160,6 @@
       "type": "concept",
       "route": "concepts/standard-answer-cage",
       "summary": "复杂问题被压缩成唯一正确答案后，人会失去提问、迁移和面对不确定性的能力。",
-      "status": null,
-      "degree": 2
-    },
-    {
-      "id": "theme:wealth-inheritance-and-relational-distortion",
-      "key": "wealth-inheritance-and-relational-distortion",
-      "label": "财富继承与关系扭曲",
-      "fullLabel": "财富继承与关系扭曲",
-      "type": "theme",
-      "route": "themes/wealth-inheritance-and-relational-distortion",
-      "summary": "关注财富传递过程中，关系、人格和价值观如何一起失真。",
       "status": null,
       "degree": 2
     },
@@ -6688,17 +6710,6 @@
       "type": "concept",
       "route": "concepts/uncontrolled-production-logic",
       "summary": "当生产门槛极低时，系统不再靠少数专业创作者保证质量，而是靠海量产出后的筛选找到少数可用作品。",
-      "status": null,
-      "degree": 2
-    },
-    {
-      "id": "concept:random-walk-arrogance",
-      "key": "random-walk-arrogance",
-      "label": "随机漫步式傲慢",
-      "fullLabel": "随机漫步式傲慢",
-      "type": "concept",
-      "route": "concepts/random-walk-arrogance",
-      "summary": "在上升周期中撞上好运的人，容易把随机红利误读成自己掌握了世界规律。",
       "status": null,
       "degree": 2
     },
@@ -22015,6 +22026,126 @@
     {
       "source": "live:LIVE044",
       "target": "theme:east-asia-security-realignment",
+      "kind": "live-theme"
+    },
+    {
+      "source": "live:LIVE045",
+      "target": "episode:EP077",
+      "kind": "live-episode"
+    },
+    {
+      "source": "live:LIVE045",
+      "target": "episode:EP154",
+      "kind": "live-episode"
+    },
+    {
+      "source": "live:LIVE045",
+      "target": "episode:EP056",
+      "kind": "live-episode"
+    },
+    {
+      "source": "live:LIVE045",
+      "target": "episode:EP082",
+      "kind": "live-episode"
+    },
+    {
+      "source": "live:LIVE045",
+      "target": "episode:EP113",
+      "kind": "live-episode"
+    },
+    {
+      "source": "live:LIVE045",
+      "target": "episode:EP168",
+      "kind": "live-episode"
+    },
+    {
+      "source": "live:LIVE045",
+      "target": "episode:EP005",
+      "kind": "live-episode"
+    },
+    {
+      "source": "live:LIVE045",
+      "target": "concept:chokepoint-leverage",
+      "kind": "live-concept"
+    },
+    {
+      "source": "live:LIVE045",
+      "target": "concept:route-substitution-illusion",
+      "kind": "live-concept"
+    },
+    {
+      "source": "live:LIVE045",
+      "target": "concept:pressure-backfire",
+      "kind": "live-concept"
+    },
+    {
+      "source": "live:LIVE045",
+      "target": "concept:new-media-politician",
+      "kind": "live-concept"
+    },
+    {
+      "source": "live:LIVE045",
+      "target": "concept:identity-over-wealth",
+      "kind": "live-concept"
+    },
+    {
+      "source": "live:LIVE045",
+      "target": "concept:random-walk-arrogance",
+      "kind": "live-concept"
+    },
+    {
+      "source": "live:LIVE045",
+      "target": "concept:outsourced-discernment",
+      "kind": "live-concept"
+    },
+    {
+      "source": "live:LIVE045",
+      "target": "concept:institutional-software-transfer",
+      "kind": "live-concept"
+    },
+    {
+      "source": "live:LIVE045",
+      "target": "model:wall-and-gray-trade-crackdown",
+      "kind": "live-model"
+    },
+    {
+      "source": "live:LIVE045",
+      "target": "model:political-embedded-enterprise",
+      "kind": "live-model"
+    },
+    {
+      "source": "live:LIVE045",
+      "target": "theme:maritime-chokepoints-and-route-order",
+      "kind": "live-theme"
+    },
+    {
+      "source": "live:LIVE045",
+      "target": "theme:sanctions-and-power-containment",
+      "kind": "live-theme"
+    },
+    {
+      "source": "live:LIVE045",
+      "target": "theme:east-asia-security-realignment",
+      "kind": "live-theme"
+    },
+    {
+      "source": "live:LIVE045",
+      "target": "theme:family-succession-and-governance",
+      "kind": "live-theme"
+    },
+    {
+      "source": "live:LIVE045",
+      "target": "theme:state-business-entanglement",
+      "kind": "live-theme"
+    },
+    {
+      "source": "live:LIVE045",
+      "target": "theme:wealth-inheritance-and-relational-distortion",
+      "kind": "live-theme"
+    },
+    {
+      "source": "live:LIVE045",
+      "target": "theme:public-space-and-civic-maturity",
       "kind": "live-theme"
     },
     {
