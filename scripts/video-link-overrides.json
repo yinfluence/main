@@ -1095,5 +1095,25 @@
       "platform": "youtube",
       "url": "https://www.youtube.com/watch?v=iuKH6oiT3uc"
     }
+  },
+  "EP218": {
+    "bilibili": {
+      "platform": "bilibili",
+      "url": "https://www.bilibili.com/video/BV1XnaE6WEoi/"
+    },
+    "youtube": {
+      "platform": "youtube",
+      "url": "https://www.youtube.com/watch?v=lNELKU26wpo"
+    }
+  },
+  "EP219": {
+    "bilibili": {
+      "platform": "bilibili",
+      "url": "https://www.bilibili.com/video/BV1PrYP6qEnV/"
+    },
+    "youtube": {
+      "platform": "youtube",
+      "url": "https://www.youtube.com/watch?v=GeuZuPD2rro"
+    }
   }
 }

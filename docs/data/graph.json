@@ -2,13 +2,13 @@
   "meta": {
     "title": "颖响力知识图谱",
     "subtitle": "节目、概念、模型、人物、主题之间的可视化连接网络",
-    "nodeCount": 747,
-    "linkCount": 2821,
+    "nodeCount": 751,
+    "linkCount": 2841,
     "typeCounts": {
       "model": 83,
       "live": 45,
-      "concept": 245,
-      "episode": 217,
+      "concept": 247,
+      "episode": 219,
       "theme": 92,
       "person": 65
     }
@@ -587,6 +587,17 @@
       "degree": 23
     },
     {
+      "id": "theme:narrative-speculation-and-retail-traps",
+      "key": "narrative-speculation-and-retail-traps",
+      "label": "投资叙事与散户陷阱",
+      "fullLabel": "投资叙事与散户陷阱",
+      "type": "theme",
+      "route": "themes/narrative-speculation-and-retail-traps",
+      "summary": "当市场热点先由故事驱动、再由散户接棒时，普通人最容易在高潮处接到最后一棒。",
+      "status": null,
+      "degree": 22
+    },
+    {
       "id": "concept:chokepoint-leverage",
       "key": "chokepoint-leverage",
       "label": "咽喉杠杆",
@@ -629,17 +640,6 @@
       "summary": "高考季里，接着张雪峰那期的分歧往下讲，不认同把高考只当成选专业、选工作、考公的目的论。按这套思路推到底，教育、高考和考公就是一场合法的文化洗钱。几百万的学区房、补习班和留学，把父母的财富和地位洗成孩子的文凭，再换回下一代的财富和阶层。这场游戏的规则是为富人定的，中产拿全部身家去和别人的零花钱比，越卷越容易输，真正划算的反而是投入很低的底层。与其跟着砸钱，不如换条赛道，从目的论转向决定论，先看孩子擅长什么，把家风留给他。",
       "status": "curated",
       "degree": 22
-    },
-    {
-      "id": "theme:narrative-speculation-and-retail-traps",
-      "key": "narrative-speculation-and-retail-traps",
-      "label": "投资叙事与散户陷阱",
-      "fullLabel": "投资叙事与散户陷阱",
-      "type": "theme",
-      "route": "themes/narrative-speculation-and-retail-traps",
-      "summary": "当市场热点先由故事驱动、再由散户接棒时，普通人最容易在高潮处接到最后一棒。",
-      "status": null,
-      "degree": 21
     },
     {
       "id": "model:strategic-timing",
@@ -807,6 +807,17 @@
       "degree": 19
     },
     {
+      "id": "model:subsidy-capital-flywheel",
+      "key": "subsidy-capital-flywheel",
+      "label": "补贴资本飞轮",
+      "fullLabel": "补贴资本飞轮",
+      "type": "model",
+      "route": "models/subsidy-capital-flywheel",
+      "summary": "补贴资本飞轮解释地方财政、产业基金、企业估值和再融资如何互相放大。",
+      "status": null,
+      "degree": 18
+    },
+    {
       "id": "model:proxy-containment-ring",
       "key": "proxy-containment-ring",
       "label": "代理围堵环",
@@ -882,17 +893,6 @@
       "summary": "钱花在该发生还没发生的时候，效果最大，往后每一步都在变贵。",
       "status": "curated",
       "degree": 18
-    },
-    {
-      "id": "model:subsidy-capital-flywheel",
-      "key": "subsidy-capital-flywheel",
-      "label": "补贴资本飞轮",
-      "fullLabel": "补贴资本飞轮",
-      "type": "model",
-      "route": "models/subsidy-capital-flywheel",
-      "summary": "补贴资本飞轮解释地方财政、产业基金、企业估值和再融资如何互相放大。",
-      "status": null,
-      "degree": 17
     },
     {
       "id": "theme:local-fiscal-stress-and-hidden-debt",
@@ -1126,6 +1126,17 @@
       "degree": 15
     },
     {
+      "id": "theme:local-government-financialization",
+      "key": "local-government-financialization",
+      "label": "地方政府资本化与补贴杠杆",
+      "fullLabel": "地方政府资本化与补贴杠杆",
+      "type": "theme",
+      "route": "themes/local-government-financialization",
+      "summary": "讨论地方政府如何从传统招商者变成资本玩家，并把补贴、基金和估值故事捆到一起。",
+      "status": null,
+      "degree": 14
+    },
+    {
       "id": "model:identity-stratification",
       "key": "identity-stratification",
       "label": "身份型分层",
@@ -1245,17 +1256,6 @@
       "summary": "北京又出楼市新政，五环以外全面放松，五环以内交满一年社保就能买。消息一出，江浙沪那边的朋友已经出手，北方的朋友追着问是不是要触底反弹。同样的松绑上海广州深圳早就落地过，市场并没有热起来，这一轮真正被搅活的是地方政府手里的流动性，门槛降下来是需要有人接着往里填。撑起过去四十年普涨的那几个条件今天一个都不在，这是结构性的，塌下去不会自己长回来，八零后九零后这辈子都很难再等到普涨。最难的地方在心态，认定上涨是常态、下跌只是插曲，于是一次次上车。",
       "status": "curated",
       "degree": 14
-    },
-    {
-      "id": "theme:local-government-financialization",
-      "key": "local-government-financialization",
-      "label": "地方政府资本化与补贴杠杆",
-      "fullLabel": "地方政府资本化与补贴杠杆",
-      "type": "theme",
-      "route": "themes/local-government-financialization",
-      "summary": "讨论地方政府如何从传统招商者变成资本玩家，并把补贴、基金和估值故事捆到一起。",
-      "status": null,
-      "degree": 13
     },
     {
       "id": "model:feedback-loops",
@@ -1463,6 +1463,17 @@
       "type": "model",
       "route": "models/rule-anchored-small-state-model",
       "summary": "小国要长期活下来，不能只靠地理好运，更要靠规则信誉、理性政府和可预期的制度自我约束。",
+      "status": null,
+      "degree": 12
+    },
+    {
+      "id": "concept:phantom-sales",
+      "key": "phantom-sales",
+      "label": "虚假销售",
+      "fullLabel": "虚假销售",
+      "type": "concept",
+      "route": "concepts/phantom-sales",
+      "summary": "企业把并不存在的真实终端需求，包装成销量、出海成绩或渠道消化能力，用来维持估值和融资信心。",
       "status": null,
       "degree": 12
     },
@@ -1676,13 +1687,13 @@
       "degree": 11
     },
     {
-      "id": "concept:phantom-sales",
-      "key": "phantom-sales",
-      "label": "虚假销售",
-      "fullLabel": "虚假销售",
-      "type": "concept",
-      "route": "concepts/phantom-sales",
-      "summary": "企业把并不存在的真实终端需求，包装成销量、出海成绩或渠道消化能力，用来维持估值和融资信心。",
+      "id": "theme:film-industry-and-traffic-logic",
+      "key": "film-industry-and-traffic-logic",
+      "label": "影视工业与流量逻辑",
+      "fullLabel": "影视工业与流量逻辑",
+      "type": "theme",
+      "route": "themes/film-industry-and-traffic-logic",
+      "summary": "关注影视生产如何越来越服从人设、粉丝和宣发流量，而非角色与作品本身。",
       "status": null,
       "degree": 11
     },
@@ -1859,17 +1870,6 @@
       "type": "model",
       "route": "models/small-state-balancing-model",
       "summary": "小国平衡术解释小国在大国之间维持生存空间，靠位置、合法性和现实利益而非纯姿态。",
-      "status": null,
-      "degree": 10
-    },
-    {
-      "id": "theme:film-industry-and-traffic-logic",
-      "key": "film-industry-and-traffic-logic",
-      "label": "影视工业与流量逻辑",
-      "fullLabel": "影视工业与流量逻辑",
-      "type": "theme",
-      "route": "themes/film-industry-and-traffic-logic",
-      "summary": "关注影视生产如何越来越服从人设、粉丝和宣发流量，而非角色与作品本身。",
       "status": null,
       "degree": 10
     },
@@ -2094,6 +2094,28 @@
       "degree": 10
     },
     {
+      "id": "episode:EP218",
+      "key": "EP218",
+      "label": "EP218",
+      "fullLabel": "EP218 · 西贝风波里，最伤人的刀从来都来自“朋友”！",
+      "type": "episode",
+      "route": "episodes/EP218",
+      "summary": "2026 年 9 月 19 日，微博大 V 理记断言西贝两三个月内倒闭，西贝当天就出来辟谣。理记拿不出证据，转头说罗永浩是白手套、去年的预制菜风波有黑幕，随后又去试驾理想和小鹏的新车。对贾国龙，他当不了拉人上岸的恩人，就抢着做第一个当众判死刑的人，借此抬高身价。对罗永浩，他挑最出名的人去骂，算准对方不会接招。当面批评的人伤不了企业的根本。以朋友身份说出口的死期，会让顾客退卡、供应商催款，把还能撑的企业推进挤兑。",
+      "status": "curated",
+      "degree": 10
+    },
+    {
+      "id": "episode:EP219",
+      "key": "EP219",
+      "label": "EP219",
+      "fullLabel": "EP219 · 拆解“赛博炼金术”！从瓜子掺沙到沙里掺瓜子，人形机器人泡沫加速蒸发中国社会财富！",
+      "type": "episode",
+      "route": "episodes/EP219",
+      "summary": "2026 年 9 月，梅卡曼德创始人邵天兰实名揭开人形机器人行业的一套通行做法。企业在补贴高的地方注册数据采集中心，拿补贴回头高价买母公司的机器人，营收和交付一起变好看。机器人摆在办公楼里抓杯子、擦桌子，号称采集训练数据，支出再包装成研发拿减税，最后带着漂亮财报去上市。这像瓜子掺沙，越掺越多，最后成了沙里掺瓜子，只能靠自家机构收货走账。它跟当年新能源骗补不同，节奏快了好几倍，又没有消费者托底，烧掉的是存款、股民本金和地方的钱。",
+      "status": "curated",
+      "degree": 10
+    },
+    {
       "id": "concept:standard-labor-replacement",
       "key": "standard-labor-replacement",
       "label": "标准劳动力替代",
@@ -2222,6 +2244,17 @@
       "type": "concept",
       "route": "concepts/active-neutrality",
       "summary": "真正可持续的中立不是谁都不得罪，而是在坚持规则的前提下主动参与秩序塑造。",
+      "status": null,
+      "degree": 9
+    },
+    {
+      "id": "model:attention-commerce-loop",
+      "key": "attention-commerce-loop",
+      "label": "注意力商业闭环",
+      "fullLabel": "注意力商业闭环",
+      "type": "model",
+      "route": "models/attention-commerce-loop",
+      "summary": "注意力商业闭环解释内容如何先制造注意力，再把注意力结算为品牌、交易或平台收益。",
       "status": null,
       "degree": 9
     },
@@ -2618,17 +2651,6 @@
       "type": "concept",
       "route": "concepts/cash-optionality",
       "summary": "现金在高波动时期的核心价值，是保留等待、谈判、退出和重新进入的选择权。",
-      "status": null,
-      "degree": 8
-    },
-    {
-      "id": "model:attention-commerce-loop",
-      "key": "attention-commerce-loop",
-      "label": "注意力商业闭环",
-      "fullLabel": "注意力商业闭环",
-      "type": "model",
-      "route": "models/attention-commerce-loop",
-      "summary": "注意力商业闭环解释内容如何先制造注意力，再把注意力结算为品牌、交易或平台收益。",
       "status": null,
       "degree": 8
     },
@@ -3117,6 +3139,17 @@
       "degree": 7
     },
     {
+      "id": "theme:data-cosmetics-and-false-prosperity",
+      "key": "data-cosmetics-and-false-prosperity",
+      "label": "数据粉饰与虚假繁荣",
+      "fullLabel": "数据粉饰与虚假繁荣",
+      "type": "theme",
+      "route": "themes/data-cosmetics-and-false-prosperity",
+      "summary": "讨论地方政府、企业与市场如何用账面数据制造景气感，却把真实风险继续藏在黑箱里。",
+      "status": null,
+      "degree": 7
+    },
+    {
       "id": "concept:pragmatic-legitimacy",
       "key": "pragmatic-legitimacy",
       "label": "务实合法性",
@@ -3513,6 +3546,28 @@
       "degree": 7
     },
     {
+      "id": "model:kpi-fraud-equilibrium",
+      "key": "kpi-fraud-equilibrium",
+      "label": "KPI造假均衡",
+      "fullLabel": "KPI造假均衡",
+      "type": "model",
+      "route": "models/kpi-fraud-equilibrium",
+      "summary": "KPI造假均衡解释当达标收益高于真实反馈、造假成本低于合规成本时，整个系统会奖励看起来达标。",
+      "status": null,
+      "degree": 7
+    },
+    {
+      "id": "concept:performative-innovation",
+      "key": "performative-innovation",
+      "label": "表演式创新",
+      "fullLabel": "表演式创新",
+      "type": "concept",
+      "route": "concepts/performative-innovation",
+      "summary": "表演式创新指项目主要为了完成指标、包装成果和争取扶持资金，而不以真实突破为中心。",
+      "status": null,
+      "degree": 6
+    },
+    {
       "id": "model:opaque-withdrawal-governance",
       "key": "opaque-withdrawal-governance",
       "label": "不可读退出治理模型",
@@ -3531,6 +3586,17 @@
       "type": "model",
       "route": "models/property-defined-rule-domain",
       "summary": "说的是：一个空间里谁有权定规则、规则的合法范围在哪里、不接受规则的正确退出路径，都由这个空间的产权归属决定。",
+      "status": null,
+      "degree": 6
+    },
+    {
+      "id": "theme:founder-power-and-feedback",
+      "key": "founder-power-and-feedback",
+      "label": "创始人权力与组织反馈",
+      "fullLabel": "创始人权力与组织反馈",
+      "type": "theme",
+      "route": "themes/founder-power-and-feedback",
+      "summary": "讨论强创始人结构如何影响组织内部的信息流动与纠偏能力。",
       "status": null,
       "degree": 6
     },
@@ -3623,6 +3689,17 @@
       "degree": 6
     },
     {
+      "id": "theme:platform-governance-and-folk-discourse",
+      "key": "platform-governance-and-folk-discourse",
+      "label": "平台治理与民间话语",
+      "fullLabel": "平台治理与民间话语",
+      "type": "theme",
+      "route": "themes/platform-governance-and-folk-discourse",
+      "summary": "讨论平台如何识别、容忍、限制和清理具有高传播性的民间表达。",
+      "status": null,
+      "degree": 6
+    },
+    {
       "id": "model:human-machine-differentiation",
       "key": "human-machine-differentiation",
       "label": "人机差异化模型",
@@ -3663,17 +3740,6 @@
       "type": "concept",
       "route": "concepts/data-fetishism",
       "summary": "把数据、表格、术语和科学帽子当成真理本身，只要有数字有来源就信。",
-      "status": null,
-      "degree": 6
-    },
-    {
-      "id": "theme:data-cosmetics-and-false-prosperity",
-      "key": "data-cosmetics-and-false-prosperity",
-      "label": "数据粉饰与虚假繁荣",
-      "fullLabel": "数据粉饰与虚假繁荣",
-      "type": "theme",
-      "route": "themes/data-cosmetics-and-false-prosperity",
-      "summary": "讨论地方政府、企业与市场如何用账面数据制造景气感，却把真实风险继续藏在黑箱里。",
       "status": null,
       "degree": 6
     },
@@ -3986,17 +4052,6 @@
       "degree": 6
     },
     {
-      "id": "model:kpi-fraud-equilibrium",
-      "key": "kpi-fraud-equilibrium",
-      "label": "KPI造假均衡",
-      "fullLabel": "KPI造假均衡",
-      "type": "model",
-      "route": "models/kpi-fraud-equilibrium",
-      "summary": "KPI造假均衡解释当达标收益高于真实反馈、造假成本低于合规成本时，整个系统会奖励看起来达标。",
-      "status": null,
-      "degree": 6
-    },
-    {
       "id": "model:safety-valve-governance",
       "key": "safety-valve-governance",
       "label": "安全阀治理模型",
@@ -4004,17 +4059,6 @@
       "type": "model",
       "route": "models/safety-valve-governance",
       "summary": "安全阀治理模型解释体系会容纳分流焦虑的中间人，并在其越位时进行收束。",
-      "status": null,
-      "degree": 5
-    },
-    {
-      "id": "concept:performative-innovation",
-      "key": "performative-innovation",
-      "label": "表演式创新",
-      "fullLabel": "表演式创新",
-      "type": "concept",
-      "route": "concepts/performative-innovation",
-      "summary": "表演式创新指项目主要为了完成指标、包装成果和争取扶持资金，而不以真实突破为中心。",
       "status": null,
       "degree": 5
     },
@@ -4037,17 +4081,6 @@
       "type": "concept",
       "route": "concepts/trauma-nostalgia",
       "summary": "旧伤未被理解时，曾经造成伤害的年代会被重新包装成热血、激情和答案。",
-      "status": null,
-      "degree": 5
-    },
-    {
-      "id": "theme:founder-power-and-feedback",
-      "key": "founder-power-and-feedback",
-      "label": "创始人权力与组织反馈",
-      "fullLabel": "创始人权力与组织反馈",
-      "type": "theme",
-      "route": "themes/founder-power-and-feedback",
-      "summary": "讨论强创始人结构如何影响组织内部的信息流动与纠偏能力。",
       "status": null,
       "degree": 5
     },
@@ -4151,6 +4184,17 @@
       "degree": 5
     },
     {
+      "id": "person:jia-guolong",
+      "key": "jia-guolong",
+      "label": "贾国龙",
+      "fullLabel": "贾国龙",
+      "type": "person",
+      "route": "people/jia-guolong",
+      "summary": "贾国龙是西贝餐饮集团创始人、董事长，节目借他观察连锁餐饮的创始人权威、品牌溢价和标准化供给争议。",
+      "status": null,
+      "degree": 5
+    },
+    {
       "id": "concept:unfinished-vehicle",
       "key": "unfinished-vehicle",
       "label": "烂尾车",
@@ -4169,17 +4213,6 @@
       "type": "concept",
       "route": "concepts/dream-extinguishing",
       "summary": "以稳定和现实为名过早熄灭年轻人的热爱，会把安全感变成生命力的折损。",
-      "status": null,
-      "degree": 5
-    },
-    {
-      "id": "theme:platform-governance-and-folk-discourse",
-      "key": "platform-governance-and-folk-discourse",
-      "label": "平台治理与民间话语",
-      "fullLabel": "平台治理与民间话语",
-      "type": "theme",
-      "route": "themes/platform-governance-and-folk-discourse",
-      "summary": "讨论平台如何识别、容忍、限制和清理具有高传播性的民间表达。",
       "status": null,
       "degree": 5
     },
@@ -4312,6 +4345,17 @@
       "type": "model",
       "route": "models/primary-market-logic",
       "summary": "用一级市场逻辑投二级市场，指不靠公开博弈，而是凭别人没有的信息、资源和对企业命脉的掌控，在确定性极高时才重仓下注。",
+      "status": null,
+      "degree": 5
+    },
+    {
+      "id": "concept:appeasing-consultant",
+      "key": "appeasing-consultant",
+      "label": "迎合型顾问",
+      "fullLabel": "迎合型顾问",
+      "type": "concept",
+      "route": "concepts/appeasing-consultant",
+      "summary": "顾问若只服务决策者偏好，就会从外部纠偏者变成权威回声放大器。",
       "status": null,
       "degree": 5
     },
@@ -4855,17 +4899,6 @@
       "degree": 4
     },
     {
-      "id": "person:jia-guolong",
-      "key": "jia-guolong",
-      "label": "贾国龙",
-      "fullLabel": "贾国龙",
-      "type": "person",
-      "route": "people/jia-guolong",
-      "summary": "贾国龙是西贝餐饮集团创始人、董事长，节目借他观察连锁餐饮的创始人权威、品牌溢价和标准化供给争议。",
-      "status": null,
-      "degree": 4
-    },
-    {
       "id": "theme:price-support-and-balance-sheet",
       "key": "price-support-and-balance-sheet",
       "label": "价格托底与账面维稳",
@@ -4884,6 +4917,17 @@
       "type": "concept",
       "route": "concepts/giant-infant-rights-defense",
       "summary": "巨婴式维权指个体把个人便利和情绪包装成权利诉求，却拒绝承担规则、义务和公共后果。",
+      "status": null,
+      "degree": 4
+    },
+    {
+      "id": "person:luo-yonghao",
+      "key": "luo-yonghao",
+      "label": "罗永浩",
+      "fullLabel": "罗永浩",
+      "type": "person",
+      "route": "people/luo-yonghao",
+      "summary": "罗永浩是锤子科技创始人、创业者和直播电商公众人物，节目借他触发西贝争议中的外部质询和价格重估。",
       "status": null,
       "degree": 4
     },
@@ -5130,6 +5174,17 @@
       "degree": 4
     },
     {
+      "id": "model:prototype-production-decoupling",
+      "key": "prototype-production-decoupling",
+      "label": "样机量产脱钩",
+      "fullLabel": "样机量产脱钩",
+      "type": "model",
+      "route": "models/prototype-production-decoupling",
+      "summary": "样机量产脱钩解释送检、展示和量产之间的标准落差如何制造真实安全风险。",
+      "status": null,
+      "degree": 4
+    },
+    {
       "id": "concept:dependent-innovation",
       "key": "dependent-innovation",
       "label": "依附式创新",
@@ -5159,17 +5214,6 @@
       "type": "concept",
       "route": "concepts/ceremonial-formalism",
       "summary": "组织越来越依赖场面、仪式和整齐感来证明自己有效，而真实目标和真实功能却被持续挤到后面。",
-      "status": null,
-      "degree": 4
-    },
-    {
-      "id": "concept:appeasing-consultant",
-      "key": "appeasing-consultant",
-      "label": "迎合型顾问",
-      "fullLabel": "迎合型顾问",
-      "type": "concept",
-      "route": "concepts/appeasing-consultant",
-      "summary": "顾问若只服务决策者偏好，就会从外部纠偏者变成权威回声放大器。",
       "status": null,
       "degree": 4
     },
@@ -5460,6 +5504,17 @@
       "degree": 3
     },
     {
+      "id": "concept:prominence-amplification",
+      "key": "prominence-amplification",
+      "label": "顶流放大镜",
+      "fullLabel": "顶流放大镜",
+      "type": "concept",
+      "route": "concepts/prominence-amplification",
+      "summary": "同样的问题，发生在关注度最高的头部对象身上会被无限放大；热度不等于问题更严重，只是更显眼。",
+      "status": null,
+      "degree": 3
+    },
+    {
       "id": "concept:investment-diversification-hedge",
       "key": "investment-diversification-hedge",
       "label": "分散投资对冲",
@@ -5570,6 +5625,17 @@
       "degree": 3
     },
     {
+      "id": "concept:invoice-economy",
+      "key": "invoice-economy",
+      "label": "开票经济",
+      "fullLabel": "开票经济",
+      "type": "concept",
+      "route": "concepts/invoice-economy",
+      "summary": "空壳公司、虚开发票和税收返还能堆出漂亮数字，却未必创造真实商品、服务和财富。",
+      "status": null,
+      "degree": 3
+    },
+    {
       "id": "concept:inventory-banking",
       "key": "inventory-banking",
       "label": "库存银行化",
@@ -5621,17 +5687,6 @@
       "type": "concept",
       "route": "concepts/clean-label-myth",
       "summary": "把某个高端品牌想象成完全无添加、绝对干净的净土，是一种消费者自造的误区；再好的品牌也有两极分化的产品。",
-      "status": null,
-      "degree": 3
-    },
-    {
-      "id": "person:luo-yonghao",
-      "key": "luo-yonghao",
-      "label": "罗永浩",
-      "fullLabel": "罗永浩",
-      "type": "person",
-      "route": "people/luo-yonghao",
-      "summary": "罗永浩是锤子科技创始人、创业者和直播电商公众人物，节目借他触发西贝争议中的外部质询和价格重估。",
       "status": null,
       "degree": 3
     },
@@ -5955,17 +6010,6 @@
       "degree": 3
     },
     {
-      "id": "model:prototype-production-decoupling",
-      "key": "prototype-production-decoupling",
-      "label": "样机量产脱钩",
-      "fullLabel": "样机量产脱钩",
-      "type": "model",
-      "route": "models/prototype-production-decoupling",
-      "summary": "样机量产脱钩解释送检、展示和量产之间的标准落差如何制造真实安全风险。",
-      "status": null,
-      "degree": 3
-    },
-    {
       "id": "concept:earnings-big-bath",
       "key": "earnings-big-bath",
       "label": "业绩大洗澡",
@@ -6263,17 +6307,6 @@
       "degree": 2
     },
     {
-      "id": "concept:prominence-amplification",
-      "key": "prominence-amplification",
-      "label": "顶流放大镜",
-      "fullLabel": "顶流放大镜",
-      "type": "concept",
-      "route": "concepts/prominence-amplification",
-      "summary": "同样的问题，发生在关注度最高的头部对象身上会被无限放大；热度不等于问题更严重，只是更显眼。",
-      "status": null,
-      "degree": 2
-    },
-    {
       "id": "person:dong-yuhui",
       "key": "dong-yuhui",
       "label": "董宇辉",
@@ -6281,6 +6314,17 @@
       "type": "person",
       "route": "people/dong-yuhui",
       "summary": "董宇辉是直播电商领域的头部公众人物，节目借他观察文化人设、粉丝身份和超级流量如何改写商品价格信号。",
+      "status": null,
+      "degree": 2
+    },
+    {
+      "id": "concept:manufactured-antagonism",
+      "key": "manufactured-antagonism",
+      "label": "对立制造",
+      "fullLabel": "对立制造",
+      "type": "concept",
+      "route": "concepts/manufactured-antagonism",
+      "summary": "热度不够的时候，把人分成对立的两拨比做出好东西便宜得多，架子一搭，两边自己就吵起来，事件也就有了。",
       "status": null,
       "degree": 2
     },
@@ -6490,17 +6534,6 @@
       "type": "concept",
       "route": "concepts/cross-subsidy-pricing",
       "summary": "交叉补贴式价格差异指在总容量有限的场景里，让一小部分高付费用户的超额利润反向补贴基础门票，使普通消费者实际受益。",
-      "status": null,
-      "degree": 2
-    },
-    {
-      "id": "concept:invoice-economy",
-      "key": "invoice-economy",
-      "label": "开票经济",
-      "fullLabel": "开票经济",
-      "type": "concept",
-      "route": "concepts/invoice-economy",
-      "summary": "空壳公司、虚开发票和税收返还能堆出漂亮数字，却未必创造真实商品、服务和财富。",
       "status": null,
       "degree": 2
     },
@@ -7106,17 +7139,6 @@
       "type": "person",
       "route": "people/duan-yongping",
       "summary": "段永平是步步高 / BBK 创始人和投资人，节目借他对照王石，讨论成年人如何按价值排序承担选择后果。",
-      "status": null,
-      "degree": 1
-    },
-    {
-      "id": "concept:manufactured-antagonism",
-      "key": "manufactured-antagonism",
-      "label": "对立制造",
-      "fullLabel": "对立制造",
-      "type": "concept",
-      "route": "concepts/manufactured-antagonism",
-      "summary": "热度不够的时候，把人分成对立的两拨比做出好东西便宜得多，架子一搭，两边自己就吵起来，事件也就有了。",
       "status": null,
       "degree": 1
     },
@@ -7924,6 +7946,17 @@
       "degree": 1
     },
     {
+      "id": "concept:confidence-run",
+      "key": "confidence-run",
+      "label": "信心挤兑",
+      "fullLabel": "信心挤兑",
+      "type": "concept",
+      "route": "concepts/confidence-run",
+      "summary": "一家企业被传要倒，顾客、供应商和员工各自抢着保自己，合起来把还撑得住的企业推倒。",
+      "status": null,
+      "degree": 1
+    },
+    {
       "id": "concept:malevolence-self-fulfilling",
       "key": "malevolence-self-fulfilling",
       "label": "性恶预设的自我实现",
@@ -8206,6 +8239,17 @@
       "type": "concept",
       "route": "concepts/quasi-currency-support",
       "summary": "现金不足时，系统用票据、凭证或替代物支撑交易和价格，形成准货币托市。",
+      "status": null,
+      "degree": 1
+    },
+    {
+      "id": "concept:closed-loop-demand",
+      "key": "closed-loop-demand",
+      "label": "自循环需求",
+      "fullLabel": "自循环需求",
+      "type": "concept",
+      "route": "concepts/closed-loop-demand",
+      "summary": "卖方和买方背后是同一笔钱，订单在体系里转圈，看上去需求旺盛，其实没有真实的终端买家。",
       "status": null,
       "degree": 1
     },
@@ -16281,6 +16325,106 @@
     {
       "source": "episode:EP217",
       "target": "theme:brand-symbol-and-value",
+      "kind": "episode-theme"
+    },
+    {
+      "source": "episode:EP218",
+      "target": "concept:confidence-run",
+      "kind": "episode-concept"
+    },
+    {
+      "source": "episode:EP218",
+      "target": "concept:appeasing-consultant",
+      "kind": "episode-concept"
+    },
+    {
+      "source": "episode:EP218",
+      "target": "concept:manufactured-antagonism",
+      "kind": "episode-concept"
+    },
+    {
+      "source": "episode:EP218",
+      "target": "concept:prominence-amplification",
+      "kind": "episode-concept"
+    },
+    {
+      "source": "episode:EP218",
+      "target": "model:attention-commerce-loop",
+      "kind": "episode-model"
+    },
+    {
+      "source": "episode:EP218",
+      "target": "person:jia-guolong",
+      "kind": "episode-person"
+    },
+    {
+      "source": "episode:EP218",
+      "target": "person:luo-yonghao",
+      "kind": "episode-person"
+    },
+    {
+      "source": "episode:EP218",
+      "target": "theme:founder-power-and-feedback",
+      "kind": "episode-theme"
+    },
+    {
+      "source": "episode:EP218",
+      "target": "theme:platform-governance-and-folk-discourse",
+      "kind": "episode-theme"
+    },
+    {
+      "source": "episode:EP218",
+      "target": "theme:film-industry-and-traffic-logic",
+      "kind": "episode-theme"
+    },
+    {
+      "source": "episode:EP219",
+      "target": "concept:closed-loop-demand",
+      "kind": "episode-concept"
+    },
+    {
+      "source": "episode:EP219",
+      "target": "concept:phantom-sales",
+      "kind": "episode-concept"
+    },
+    {
+      "source": "episode:EP219",
+      "target": "concept:performative-innovation",
+      "kind": "episode-concept"
+    },
+    {
+      "source": "episode:EP219",
+      "target": "concept:invoice-economy",
+      "kind": "episode-concept"
+    },
+    {
+      "source": "episode:EP219",
+      "target": "model:subsidy-capital-flywheel",
+      "kind": "episode-model"
+    },
+    {
+      "source": "episode:EP219",
+      "target": "model:prototype-production-decoupling",
+      "kind": "episode-model"
+    },
+    {
+      "source": "episode:EP219",
+      "target": "model:kpi-fraud-equilibrium",
+      "kind": "episode-model"
+    },
+    {
+      "source": "episode:EP219",
+      "target": "theme:data-cosmetics-and-false-prosperity",
+      "kind": "episode-theme"
+    },
+    {
+      "source": "episode:EP219",
+      "target": "theme:local-government-financialization",
+      "kind": "episode-theme"
+    },
+    {
+      "source": "episode:EP219",
+      "target": "theme:narrative-speculation-and-retail-traps",
       "kind": "episode-theme"
     },
     {
