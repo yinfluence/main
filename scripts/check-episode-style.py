@@ -33,6 +33,10 @@ def check(ep):
                 json.dumps(vps, ensure_ascii=False)
     if '：' in body_only or '；' in body_only: errs.append('正文里有冒号或分号')
     if not d.get('inlineKnowledge'): errs.append('缺 inlineKnowledge')
+    # 人称：正文不出现指主播的称呼（sop/05a「人称：无主语陈述」）。别的直播主播、带货主播不算
+    import re as _re
+    host = _re.findall(r'(?:主播|主持人)(?:认为|说|的|看来|觉得|举|推测|也|自己|本人)|(?:按|照|在)主播', allt)
+    if host: print(f'  ⚠ {eid if "eid" in dir() else ""} 出现「主播/主持人」{len(host)} 处，指节目主讲人的要改成无主语写法，指别的主播的可以留')
     # 概念模型是否落进正文
     site = json.load(io.open('docs/data/site.json', encoding='utf-8'))
     text = json.dumps(d.get('topic'), ensure_ascii=False) + json.dumps(vps, ensure_ascii=False)
