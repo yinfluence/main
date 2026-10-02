@@ -2,11 +2,11 @@
   "meta": {
     "title": "颖响力知识图谱",
     "subtitle": "节目、概念、模型、人物、主题之间的可视化连接网络",
-    "nodeCount": 751,
-    "linkCount": 2841,
+    "nodeCount": 752,
+    "linkCount": 2855,
     "typeCounts": {
       "model": 83,
-      "live": 45,
+      "live": 46,
       "concept": 247,
       "episode": 219,
       "theme": 92,
@@ -829,6 +829,17 @@
       "degree": 18
     },
     {
+      "id": "theme:local-fiscal-stress-and-hidden-debt",
+      "key": "local-fiscal-stress-and-hidden-debt",
+      "label": "地方财政与隐性债务",
+      "fullLabel": "地方财政与隐性债务",
+      "type": "theme",
+      "route": "themes/local-fiscal-stress-and-hidden-debt",
+      "summary": "地方财政吃紧后，系统会通过更复杂的融资、资产包装和风险转移来维持运转。",
+      "status": null,
+      "degree": 18
+    },
+    {
       "id": "model:leverage-backfire",
       "key": "leverage-backfire",
       "label": "杠杆反噬",
@@ -895,17 +906,6 @@
       "degree": 18
     },
     {
-      "id": "theme:local-fiscal-stress-and-hidden-debt",
-      "key": "local-fiscal-stress-and-hidden-debt",
-      "label": "地方财政与隐性债务",
-      "fullLabel": "地方财政与隐性债务",
-      "type": "theme",
-      "route": "themes/local-fiscal-stress-and-hidden-debt",
-      "summary": "地方财政吃紧后，系统会通过更复杂的融资、资产包装和风险转移来维持运转。",
-      "status": null,
-      "degree": 17
-    },
-    {
       "id": "concept:pan-institutional-middle-class",
       "key": "pan-institutional-middle-class",
       "label": "泛体制中产",
@@ -939,6 +939,17 @@
       "degree": 16
     },
     {
+      "id": "theme:real-estate-deleveraging",
+      "key": "real-estate-deleveraging",
+      "label": "房地产去杠杆与风险出清",
+      "fullLabel": "房地产去杠杆与风险出清",
+      "type": "theme",
+      "route": "themes/real-estate-deleveraging",
+      "summary": "讨论房地产在下行周期里如何通过断供、重组、展期和资产处置逐步暴露风险。",
+      "status": null,
+      "degree": 16
+    },
+    {
       "id": "theme:maritime-chokepoints-and-route-order",
       "key": "maritime-chokepoints-and-route-order",
       "label": "海峡命门与航运秩序",
@@ -968,6 +979,17 @@
       "type": "episode",
       "route": "episodes/EP124",
       "summary": "广州地铁四期申报 175 公里，最后只批了 60 公里左右，深圳 18 号线被直接打回。最能赚钱的两座一线城市砍地铁，是因为撑着地铁的两个逻辑都没了。地产不行了，有的地铁口开出来周边一片荒凉，靠大基建拉 GDP 的钱也传不到下面。转移支付的问题更深，营改增之后钱往上收得多，广州赚一块钱只留两毛五，九成省份靠拨款过日子。拨款大到能保命，后进地区就不再自己使劲，县城的中产也从小老板换成了吃财政饭的人。输血撑着虚假的繁荣，养不出有竞争力的城市。",
+      "status": "curated",
+      "degree": 16
+    },
+    {
+      "id": "episode:EP126",
+      "key": "EP126",
+      "label": "EP126",
+      "fullLabel": "EP126 · 成也强人败也一言堂，恒大许家印们的双面人生与崩塌之路！从零首付到零资金，三层杠杆如何炸穿全行业。【EP126】",
+      "type": "episode",
+      "route": "episodes/EP126",
+      "summary": "房地产的系统性风险来自三层主体一起加杠杆。居民从全款买房走到七成按揭，再到一成、五分甚至零首付，买房的人从住的人变成了炒的人。房企一笔钱同时开三个盘，自有投入接近零，追的是盘数，认真做产品的老板陆续退出。地方政府靠城投贷款收地卖地，最后不掏钱还能进账，又扶头部房企当土地银行。裁判归了主队，客队就不来了。第一代地产老板野路子出身，靠一言堂成功，身边只剩听话的人。土地性质这把锁让整套体系没有反馈，列车看见前面的坑，也只能往前冲。",
       "status": "curated",
       "degree": 16
     },
@@ -1027,17 +1049,6 @@
       "degree": 16
     },
     {
-      "id": "theme:real-estate-deleveraging",
-      "key": "real-estate-deleveraging",
-      "label": "房地产去杠杆与风险出清",
-      "fullLabel": "房地产去杠杆与风险出清",
-      "type": "theme",
-      "route": "themes/real-estate-deleveraging",
-      "summary": "讨论房地产在下行周期里如何通过断供、重组、展期和资产处置逐步暴露风险。",
-      "status": null,
-      "degree": 15
-    },
-    {
       "id": "model:balance-sheet-maintenance",
       "key": "balance-sheet-maintenance",
       "label": "资产负债表维持",
@@ -1046,17 +1057,6 @@
       "route": "models/balance-sheet-maintenance",
       "summary": "当系统进入压力期，各方优先做的不是立刻出清，而是先保住估值、抵押物和报表表面完整。",
       "status": null,
-      "degree": 15
-    },
-    {
-      "id": "episode:EP126",
-      "key": "EP126",
-      "label": "EP126",
-      "fullLabel": "EP126 · 成也强人败也一言堂，恒大许家印们的双面人生与崩塌之路！从零首付到零资金，三层杠杆如何炸穿全行业。【EP126】",
-      "type": "episode",
-      "route": "episodes/EP126",
-      "summary": "房地产的系统性风险来自三层主体一起加杠杆。居民从全款买房走到七成按揭，再到一成、五分甚至零首付，买房的人从住的人变成了炒的人。房企一笔钱同时开三个盘，自有投入接近零，追的是盘数，认真做产品的老板陆续退出。地方政府靠城投贷款收地卖地，最后不掏钱还能进账，又扶头部房企当土地银行。裁判归了主队，客队就不来了。第一代地产老板野路子出身，靠一言堂成功，身边只剩听话的人。土地性质这把锁让整套体系没有反馈，列车看见前面的坑，也只能往前冲。",
-      "status": "curated",
       "degree": 15
     },
     {
@@ -1258,6 +1258,17 @@
       "degree": 14
     },
     {
+      "id": "live:LIVE046",
+      "key": "LIVE046",
+      "label": "LIVE046",
+      "fullLabel": "LIVE046 · 首套、120平、150万以内，房贷贴息为什么偏偏瞄准自认是基本盘的那拨人？",
+      "type": "live",
+      "route": "lives/LIVE046",
+      "summary": "五万块分五年按月给，签约当天先锁住两百万。",
+      "status": "published",
+      "degree": 14
+    },
+    {
       "id": "model:feedback-loops",
       "key": "feedback-loops",
       "label": "反馈回路",
@@ -1353,6 +1364,17 @@
       "type": "episode",
       "route": "episodes/EP090",
       "summary": "全球两成以上海运石油走霍尔木兹海峡，很多人以为伊朗一卡住它，全世界就得停摆。物理上它封不死，深水主航道靠阿曼和阿联酋一侧，伊朗自己的石油也要走这条道，封锁只是逼人来谈的筹码。资本上它停不了，海峡不通是因为保险公司撤了战争险，保费涨到足够高，又会有钱回来，越危险越涨价，越涨价越有人走。权力上有人在操盘，川普用美军护航加国家保险背书，把海峡变成美国定规则、定油价的压力阀。再往大看，是反着用的门罗主义，把篱笆修到对手门口。",
+      "status": "curated",
+      "degree": 13
+    },
+    {
+      "id": "episode:EP121",
+      "key": "EP121",
+      "label": "EP121",
+      "fullLabel": "EP121 · 潘石屹，脱离时间去看事件，你根本看不懂他30年的所有选择，和背后极致前瞻性。【EP121】",
+      "type": "episode",
+      "route": "episodes/EP121",
+      "summary": "很多人把潘石屹的三十年读成一个阴谋，1994 年娶张欣是找美籍跳板，2005 年设家族信托是为了把资产掏空。可谁也不知道十年后自己在做什么。阴谋是先知道结果再设计路径，前瞻性只知道某个结果可能出现，提前做点准备。他懂政策周期和中国人的买房习惯，张欣懂全球资本和离岸信托，香港上市、信托和卖楼都是两个人合起来的阳谋。他从 2013、2014 年就琢磨退出，在还能多赚的时候抑制贪婪，今天没人追着他要钱。换一个年份，同一个人也复制不了这个结果。",
       "status": "curated",
       "degree": 13
     },
@@ -1511,17 +1533,6 @@
       "degree": 12
     },
     {
-      "id": "episode:EP121",
-      "key": "EP121",
-      "label": "EP121",
-      "fullLabel": "EP121 · 潘石屹，脱离时间去看事件，你根本看不懂他30年的所有选择，和背后极致前瞻性。【EP121】",
-      "type": "episode",
-      "route": "episodes/EP121",
-      "summary": "很多人把潘石屹的三十年读成一个阴谋，1994 年娶张欣是找美籍跳板，2005 年设家族信托是为了把资产掏空。可谁也不知道十年后自己在做什么。阴谋是先知道结果再设计路径，前瞻性只知道某个结果可能出现，提前做点准备。他懂政策周期和中国人的买房习惯，张欣懂全球资本和离岸信托，香港上市、信托和卖楼都是两个人合起来的阳谋。他从 2013、2014 年就琢磨退出，在还能多赚的时候抑制贪婪，今天没人追着他要钱。换一个年份，同一个人也复制不了这个结果。",
-      "status": "curated",
-      "degree": 12
-    },
-    {
       "id": "episode:EP137",
       "key": "EP137",
       "label": "EP137",
@@ -1606,6 +1617,17 @@
       "type": "episode",
       "route": "episodes/EP201",
       "summary": "2026 年 7 月 29 日夜里，曼谷飞北京的泰航 TG674 上坐着一位国内艺人。二十二名买了普通舱票的粉丝和代拍同机跟拍，先挤进贵宾室，被劝离后守在门口。艺人先行登机时，这批人大多没验票就冲进廊桥。机组关了舱门，泰航拒载这二十二人，航班延误一小时多。带回候机厅的冲突里，一名安保做出拉眼角的动作，视频传上网，话题立刻变成泰国歧视中国人。拒载和那个手势是两件事，该负责的人也不同。让它反复发生的原因在行程怎么流出来，那条链子上有经纪公司，也有机场内部人和代拍。",
+      "status": "curated",
+      "degree": 12
+    },
+    {
+      "id": "episode:EP217",
+      "key": "EP217",
+      "label": "EP217",
+      "fullLabel": "EP217 · 华删派再分家！杯酒后刀光剑影，三大底层逻辑彻底崩塌！车圈笑傲江湖",
+      "type": "episode",
+      "route": "episodes/EP217",
+      "summary": "2026 年 9 月 15 日，华为和赛力斯宣布调整问界的合作方式。产品、营销、渠道和服务全交给赛力斯，华为只留技术支持。说是分工调整，背后有三层原因。一层是分账。华为拿走授权费、品牌溢价和渠道分润，赛力斯扛着工厂、折旧和地方的对赌。利润薄到亏钱，只能在配件和品控上省，伤的还是华为的牌子。一层是舆论把这套分账摆上台面，小米又推出同级车，便宜一二十万，溢价站不住了。再一层是行业没了暴利，华为赶在风险暴露前交出经营权。赚钱时拿大头，出事时不沾身。",
       "status": "curated",
       "degree": 12
     },
@@ -1797,6 +1819,17 @@
       "degree": 11
     },
     {
+      "id": "episode:EP207",
+      "key": "EP207",
+      "label": "EP207",
+      "fullLabel": "EP207 · 40年房贷奥德赛式死局！一边漩涡一边牺牲，曾经的苏联选了哪条路？",
+      "type": "episode",
+      "route": "episodes/EP207",
+      "summary": "个人住房贷款最长年限从三十年放宽到四十年，房地产股应声就涨，各路解读都说月供大降。按一百万算，每月少还616块，总利息却从61.66万涨到85.95万，多付二十四万。利率和本金都没变，变的只有时间，这叫负债延期。银行一分钱没损失，扛不住月供的家庭被接住，坏账率稳了，还多收十年利息。这像奥德修斯过海峡，躲开漩涡就得让六头海怪叼走几个船员，被牺牲的是只能选四十年的年轻人。苏联勃列日涅夫那十八年也是这样拖过来的。定这个年限的人，不用还这笔贷款。",
+      "status": "curated",
+      "degree": 11
+    },
+    {
       "id": "episode:EP211",
       "key": "EP211",
       "label": "EP211",
@@ -1819,13 +1852,13 @@
       "degree": 11
     },
     {
-      "id": "episode:EP217",
-      "key": "EP217",
-      "label": "EP217",
-      "fullLabel": "EP217 · 华删派再分家！杯酒后刀光剑影，三大底层逻辑彻底崩塌！车圈笑傲江湖",
+      "id": "episode:EP219",
+      "key": "EP219",
+      "label": "EP219",
+      "fullLabel": "EP219 · 拆解“赛博炼金术”！从瓜子掺沙到沙里掺瓜子，人形机器人泡沫加速蒸发中国社会财富！",
       "type": "episode",
-      "route": "episodes/EP217",
-      "summary": "2026 年 9 月 15 日，华为和赛力斯宣布调整问界的合作方式。产品、营销、渠道和服务全交给赛力斯，华为只留技术支持。说是分工调整，背后有三层原因。一层是分账。华为拿走授权费、品牌溢价和渠道分润，赛力斯扛着工厂、折旧和地方的对赌。利润薄到亏钱，只能在配件和品控上省，伤的还是华为的牌子。一层是舆论把这套分账摆上台面，小米又推出同级车，便宜一二十万，溢价站不住了。再一层是行业没了暴利，华为赶在风险暴露前交出经营权。赚钱时拿大头，出事时不沾身。",
+      "route": "episodes/EP219",
+      "summary": "2026 年 9 月，梅卡曼德创始人邵天兰实名揭开人形机器人行业的一套通行做法。企业在补贴高的地方注册数据采集中心，拿补贴回头高价买母公司的机器人，营收和交付一起变好看。机器人摆在办公楼里抓杯子、擦桌子，号称采集训练数据，支出再包装成研发拿减税，最后带着漂亮财报去上市。这像瓜子掺沙，越掺越多，最后成了沙里掺瓜子，只能靠自家机构收货走账。它跟当年新能源骗补不同，节奏快了好几倍，又没有消费者托底，烧掉的是存款、股民本金和地方的钱。",
       "status": "curated",
       "degree": 11
     },
@@ -2072,17 +2105,6 @@
       "degree": 10
     },
     {
-      "id": "episode:EP207",
-      "key": "EP207",
-      "label": "EP207",
-      "fullLabel": "EP207 · 40年房贷奥德赛式死局！一边漩涡一边牺牲，曾经的苏联选了哪条路？",
-      "type": "episode",
-      "route": "episodes/EP207",
-      "summary": "个人住房贷款最长年限从三十年放宽到四十年，房地产股应声就涨，各路解读都说月供大降。按一百万算，每月少还616块，总利息却从61.66万涨到85.95万，多付二十四万。利率和本金都没变，变的只有时间，这叫负债延期。银行一分钱没损失，扛不住月供的家庭被接住，坏账率稳了，还多收十年利息。这像奥德修斯过海峡，躲开漩涡就得让六头海怪叼走几个船员，被牺牲的是只能选四十年的年轻人。苏联勃列日涅夫那十八年也是这样拖过来的。定这个年限的人，不用还这笔贷款。",
-      "status": "curated",
-      "degree": 10
-    },
-    {
       "id": "episode:EP209",
       "key": "EP209",
       "label": "EP209",
@@ -2101,17 +2123,6 @@
       "type": "episode",
       "route": "episodes/EP218",
       "summary": "2026 年 9 月 19 日，微博大 V 理记断言西贝两三个月内倒闭，西贝当天就出来辟谣。理记拿不出证据，转头说罗永浩是白手套、去年的预制菜风波有黑幕，随后又去试驾理想和小鹏的新车。对贾国龙，他当不了拉人上岸的恩人，就抢着做第一个当众判死刑的人，借此抬高身价。对罗永浩，他挑最出名的人去骂，算准对方不会接招。当面批评的人伤不了企业的根本。以朋友身份说出口的死期，会让顾客退卡、供应商催款，把还能撑的企业推进挤兑。",
-      "status": "curated",
-      "degree": 10
-    },
-    {
-      "id": "episode:EP219",
-      "key": "EP219",
-      "label": "EP219",
-      "fullLabel": "EP219 · 拆解“赛博炼金术”！从瓜子掺沙到沙里掺瓜子，人形机器人泡沫加速蒸发中国社会财富！",
-      "type": "episode",
-      "route": "episodes/EP219",
-      "summary": "2026 年 9 月，梅卡曼德创始人邵天兰实名揭开人形机器人行业的一套通行做法。企业在补贴高的地方注册数据采集中心，拿补贴回头高价买母公司的机器人，营收和交付一起变好看。机器人摆在办公楼里抓杯子、擦桌子，号称采集训练数据，支出再包装成研发拿减税，最后带着漂亮财报去上市。这像瓜子掺沙，越掺越多，最后成了沙里掺瓜子，只能靠自家机构收货走账。它跟当年新能源骗补不同，节奏快了好几倍，又没有消费者托底，烧掉的是存款、股民本金和地方的钱。",
       "status": "curated",
       "degree": 10
     },
@@ -2578,6 +2589,17 @@
       "degree": 8
     },
     {
+      "id": "model:distributed-innovation",
+      "key": "distributed-innovation",
+      "label": "分布式创新",
+      "fullLabel": "分布式创新",
+      "type": "model",
+      "route": "models/distributed-innovation",
+      "summary": "分布式创新强调多中心试错、失败吸收和真实反馈比单一大计划更能产生韧性。",
+      "status": null,
+      "degree": 8
+    },
+    {
       "id": "concept:premium-narrative",
       "key": "premium-narrative",
       "label": "高价叙事",
@@ -3007,17 +3029,6 @@
       "degree": 7
     },
     {
-      "id": "model:distributed-innovation",
-      "key": "distributed-innovation",
-      "label": "分布式创新",
-      "fullLabel": "分布式创新",
-      "type": "model",
-      "route": "models/distributed-innovation",
-      "summary": "分布式创新强调多中心试错、失败吸收和真实反馈比单一大计划更能产生韧性。",
-      "status": null,
-      "degree": 7
-    },
-    {
       "id": "model:distributed-warfare-system",
       "key": "distributed-warfare-system",
       "label": "分布式战争系统",
@@ -3179,6 +3190,17 @@
       "type": "theme",
       "route": "themes/small-state-balancing",
       "summary": "讨论新加坡这类小国如何在大国竞争中维持安全、合法性和现实利益。",
+      "status": null,
+      "degree": 7
+    },
+    {
+      "id": "concept:information-edge",
+      "key": "information-edge",
+      "label": "信息优势",
+      "fullLabel": "信息优势",
+      "type": "concept",
+      "route": "concepts/information-edge",
+      "summary": "投资真正的优势来自别人没有的确定信息，而不是公开可见的故事和情绪。",
       "status": null,
       "degree": 7
     },
@@ -3601,6 +3623,17 @@
       "degree": 6
     },
     {
+      "id": "concept:deposit-funded-debt-rollover",
+      "key": "deposit-funded-debt-rollover",
+      "label": "存款补贴化债",
+      "fullLabel": "存款补贴化债",
+      "type": "concept",
+      "route": "concepts/deposit-funded-debt-rollover",
+      "summary": "居民的低息存款被银行拿去置换地方的高息旧债，化债省下来的利息，实际由存钱的人用被压低的收益承担。",
+      "status": null,
+      "degree": 6
+    },
+    {
       "id": "theme:price-war-and-precision-competition",
       "key": "price-war-and-precision-competition",
       "label": "低价竞争与精准打击",
@@ -3784,17 +3817,6 @@
       "type": "theme",
       "route": "themes/ev-design-and-technology-shortcuts",
       "summary": "讨论新能源品牌如何在设计、技术和产品叙事上追求速成，并为此埋下长期反噬。",
-      "status": null,
-      "degree": 6
-    },
-    {
-      "id": "concept:information-edge",
-      "key": "information-edge",
-      "label": "信息优势",
-      "fullLabel": "信息优势",
-      "type": "concept",
-      "route": "concepts/information-edge",
-      "summary": "投资真正的优势来自别人没有的确定信息，而不是公开可见的故事和情绪。",
       "status": null,
       "degree": 6
     },
@@ -4085,17 +4107,6 @@
       "degree": 5
     },
     {
-      "id": "concept:deposit-funded-debt-rollover",
-      "key": "deposit-funded-debt-rollover",
-      "label": "存款补贴化债",
-      "fullLabel": "存款补贴化债",
-      "type": "concept",
-      "route": "concepts/deposit-funded-debt-rollover",
-      "summary": "居民的低息存款被银行拿去置换地方的高息旧债，化债省下来的利息，实际由存钱的人用被压低的收益承担。",
-      "status": null,
-      "degree": 5
-    },
-    {
       "id": "concept:moral-capital",
       "key": "moral-capital",
       "label": "道德资本",
@@ -4301,6 +4312,17 @@
       "type": "concept",
       "route": "concepts/future-path-crowding",
       "summary": "所有人都挤向同一条被认为最安全的上升路径时，这条路本身就会因为拥挤而失去原来的安全性。",
+      "status": null,
+      "degree": 5
+    },
+    {
+      "id": "theme:cash-optionality-and-liquidity-anxiety",
+      "key": "cash-optionality-and-liquidity-anxiety",
+      "label": "现金为王与流动性焦虑",
+      "fullLabel": "现金为王与流动性焦虑",
+      "type": "theme",
+      "route": "themes/cash-optionality-and-liquidity-anxiety",
+      "summary": "在高波动和低信任时期，流动性比账面资产更能决定一个人和机构的安全感。",
       "status": null,
       "degree": 5
     },
@@ -5108,17 +5130,6 @@
       "degree": 4
     },
     {
-      "id": "theme:cash-optionality-and-liquidity-anxiety",
-      "key": "cash-optionality-and-liquidity-anxiety",
-      "label": "现金为王与流动性焦虑",
-      "fullLabel": "现金为王与流动性焦虑",
-      "type": "theme",
-      "route": "themes/cash-optionality-and-liquidity-anxiety",
-      "summary": "在高波动和低信任时期，流动性比账面资产更能决定一个人和机构的安全感。",
-      "status": null,
-      "degree": 4
-    },
-    {
       "id": "concept:information-cocoon-breach",
       "key": "information-cocoon-breach",
       "label": "信息茧房破口",
@@ -5214,6 +5225,17 @@
       "type": "concept",
       "route": "concepts/ceremonial-formalism",
       "summary": "组织越来越依赖场面、仪式和整齐感来证明自己有效，而真实目标和真实功能却被持续挤到后面。",
+      "status": null,
+      "degree": 4
+    },
+    {
+      "id": "concept:metric-locking",
+      "key": "metric-locking",
+      "label": "指标锁死",
+      "fullLabel": "指标锁死",
+      "type": "concept",
+      "route": "concepts/metric-locking",
+      "summary": "指标锁死指组织先把达标数字定成必须成立的结果，再让测试、显示和汇报口径围着这个数字改写。",
       "status": null,
       "degree": 4
     },
@@ -5511,6 +5533,17 @@
       "type": "concept",
       "route": "concepts/prominence-amplification",
       "summary": "同样的问题，发生在关注度最高的头部对象身上会被无限放大；热度不等于问题更严重，只是更显眼。",
+      "status": null,
+      "degree": 3
+    },
+    {
+      "id": "concept:defensive-medicine",
+      "key": "defensive-medicine",
+      "label": "防御性医疗",
+      "fullLabel": "防御性医疗",
+      "type": "concept",
+      "route": "concepts/defensive-medicine",
+      "summary": "医生不再围着病人的病情转，而是围着追责风险转，先想怎么做才不担责，再想怎么做对病人好。",
       "status": null,
       "degree": 3
     },
@@ -6054,17 +6087,6 @@
       "degree": 3
     },
     {
-      "id": "concept:metric-locking",
-      "key": "metric-locking",
-      "label": "指标锁死",
-      "fullLabel": "指标锁死",
-      "type": "concept",
-      "route": "concepts/metric-locking",
-      "summary": "指标锁死指组织先把达标数字定成必须成立的结果，再让测试、显示和汇报口径围着这个数字改写。",
-      "status": null,
-      "degree": 3
-    },
-    {
       "id": "theme:smart-products-and-ownership-boundaries",
       "key": "smart-products-and-ownership-boundaries",
       "label": "智能产品与所有权边界",
@@ -6329,17 +6351,6 @@
       "degree": 2
     },
     {
-      "id": "concept:defensive-medicine",
-      "key": "defensive-medicine",
-      "label": "防御性医疗",
-      "fullLabel": "防御性医疗",
-      "type": "concept",
-      "route": "concepts/defensive-medicine",
-      "summary": "医生不再围着病人的病情转，而是围着追责风险转，先想怎么做才不担责，再想怎么做对病人好。",
-      "status": null,
-      "degree": 2
-    },
-    {
       "id": "concept:dual-track-review-system",
       "key": "dual-track-review-system",
       "label": "分层审核制度",
@@ -6479,6 +6490,17 @@
       "type": "concept",
       "route": "concepts/black-red-promotion",
       "summary": "争议、嘲笑和反感也能被平台计入热度，黑红宣发就是把被骂转化为传播资产。",
+      "status": null,
+      "degree": 2
+    },
+    {
+      "id": "concept:gray-layoff",
+      "key": "gray-layoff",
+      "label": "灰色裁员",
+      "fullLabel": "灰色裁员",
+      "type": "concept",
+      "route": "concepts/gray-layoff",
+      "summary": "不走裁员程序，用调岗、降薪、羞辱和恐吓逼员工自己签字走人，赔偿和违法记录一起清零。",
       "status": null,
       "degree": 2
     },
@@ -7326,17 +7348,6 @@
       "type": "concept",
       "route": "concepts/cosmetic-war-imagery",
       "summary": "战争角色被拍成精致、洁净、可嗑的人设时，残酷现实会被化妆品式视觉吞掉。",
-      "status": null,
-      "degree": 1
-    },
-    {
-      "id": "concept:gray-layoff",
-      "key": "gray-layoff",
-      "label": "灰色裁员",
-      "fullLabel": "灰色裁员",
-      "type": "concept",
-      "route": "concepts/gray-layoff",
-      "summary": "不走裁员程序，用调岗、降薪、羞辱和恐吓逼员工自己签字走人，赔偿和违法记录一起清零。",
       "status": null,
       "degree": 1
     },
@@ -22290,6 +22301,76 @@
     {
       "source": "live:LIVE045",
       "target": "theme:public-space-and-civic-maturity",
+      "kind": "live-theme"
+    },
+    {
+      "source": "live:LIVE046",
+      "target": "episode:EP207",
+      "kind": "live-episode"
+    },
+    {
+      "source": "live:LIVE046",
+      "target": "episode:EP219",
+      "kind": "live-episode"
+    },
+    {
+      "source": "live:LIVE046",
+      "target": "episode:EP121",
+      "kind": "live-episode"
+    },
+    {
+      "source": "live:LIVE046",
+      "target": "episode:EP217",
+      "kind": "live-episode"
+    },
+    {
+      "source": "live:LIVE046",
+      "target": "episode:EP126",
+      "kind": "live-episode"
+    },
+    {
+      "source": "live:LIVE046",
+      "target": "concept:deposit-funded-debt-rollover",
+      "kind": "live-concept"
+    },
+    {
+      "source": "live:LIVE046",
+      "target": "concept:information-edge",
+      "kind": "live-concept"
+    },
+    {
+      "source": "live:LIVE046",
+      "target": "concept:metric-locking",
+      "kind": "live-concept"
+    },
+    {
+      "source": "live:LIVE046",
+      "target": "concept:defensive-medicine",
+      "kind": "live-concept"
+    },
+    {
+      "source": "live:LIVE046",
+      "target": "concept:gray-layoff",
+      "kind": "live-concept"
+    },
+    {
+      "source": "live:LIVE046",
+      "target": "model:distributed-innovation",
+      "kind": "live-model"
+    },
+    {
+      "source": "live:LIVE046",
+      "target": "theme:local-fiscal-stress-and-hidden-debt",
+      "kind": "live-theme"
+    },
+    {
+      "source": "live:LIVE046",
+      "target": "theme:cash-optionality-and-liquidity-anxiety",
+      "kind": "live-theme"
+    },
+    {
+      "source": "live:LIVE046",
+      "target": "theme:real-estate-deleveraging",
       "kind": "live-theme"
     },
     {
