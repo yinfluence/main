@@ -24,7 +24,7 @@
 5. 视频链接：
    - B 站链接从 scan 清单取；会员视频（`member:true`）在 videoLinks 和 `scripts/video-link-overrides.json` 都加 `"access":"member"`。
    - YouTube 链接：抓 `https://www.youtube.com/@颖响力/videos` 频道最新视频，按标题里的 EP 号匹配本期，取 watch?v= 链接写入 videoLinks；只改本期，不要全量 sync 覆盖其它期。若匹配不到（YouTube 还没发），videoLinks 里 B 站正常、YouTube 先留空，不要写 unavailable。
-   - 标题按 `sop/02`：取 YouTube/B站主标题 `｜` 前部分，去掉 `【EPxxx】`。
+   - 标题按 `sop/02`：取 YouTube/B站主标题 `｜` 前部分，去掉 `【EPxxx】`。除此之外一个字都不许改，狠话也不许改软（2026-10-02 EP218 的「最杀人的刀」被改成「最伤人」，用户要求改回）。
 
 6. 网页日志：在 `src/app.js` 的 `WEBSITE_LOG_ENTRIES` 顶部加本期条目（date=今天、title、items 列出本期改了什么：新增/回填了哪些概念词条、会员否、相关节目串联）。
 
