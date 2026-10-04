@@ -2,11 +2,11 @@
   "meta": {
     "title": "颖响力知识图谱",
     "subtitle": "节目、概念、模型、人物、主题之间的可视化连接网络",
-    "nodeCount": 753,
-    "linkCount": 2802,
+    "nodeCount": 754,
+    "linkCount": 2817,
     "typeCounts": {
       "model": 83,
-      "live": 46,
+      "live": 47,
       "concept": 247,
       "theme": 92,
       "episode": 220,
@@ -147,6 +147,17 @@
       "degree": 29
     },
     {
+      "id": "theme:singapore-and-small-state-survival",
+      "key": "singapore-and-small-state-survival",
+      "label": "新加坡与小国生存术",
+      "fullLabel": "新加坡与小国生存术",
+      "type": "theme",
+      "route": "themes/singapore-and-small-state-survival",
+      "summary": "讨论新加坡如何把规则、海峡、人才和谨慎外交组合成一套小国长期生存方法。",
+      "status": null,
+      "degree": 28
+    },
+    {
       "id": "live:LIVE021",
       "key": "LIVE021",
       "label": "LIVE021",
@@ -165,17 +176,6 @@
       "type": "concept",
       "route": "concepts/cost-shifting",
       "summary": "组织内部的高额非生产性成本，最终会通过价格、规则或风险转嫁给外部承担者。",
-      "status": null,
-      "degree": 27
-    },
-    {
-      "id": "theme:singapore-and-small-state-survival",
-      "key": "singapore-and-small-state-survival",
-      "label": "新加坡与小国生存术",
-      "fullLabel": "新加坡与小国生存术",
-      "type": "theme",
-      "route": "themes/singapore-and-small-state-survival",
-      "summary": "讨论新加坡如何把规则、海峡、人才和谨慎外交组合成一套小国长期生存方法。",
       "status": null,
       "degree": 27
     },
@@ -244,6 +244,17 @@
       "summary": "据说以前答应给古巴的油凑不齐，要在外面买了补上，一桶倒贴十二美元。",
       "status": "published",
       "degree": 27
+    },
+    {
+      "id": "episode:EP154",
+      "key": "EP154",
+      "label": "EP154",
+      "fullLabel": "EP154 · 赫格塞斯新加坡香会“围栏论”真相（上）：川普的全球建墙计划，已修到东亚，围墙就划到中国家门口",
+      "type": "episode",
+      "route": "episodes/EP154",
+      "summary": "香格里拉对话会上，美国防长赫格塞斯讲了一段话。多数解读抓住他要建立建设性战略稳定关系那句软话，认为是降调求稳。其实那只是开场的烟雾弹。关键词是后半段的围栏，他已把边界划在第一岛链，围栏成了修到东亚家门口的高墙。它接的是川普的新门罗主义，一边建墙，一边打击灰色贸易。美军收拳后撤，让盟友顶到前线守墙。芯片管制也开始按总部认人，墙修到了信息层。东南亚是最后一段还没划定的边界，香会就是逼骑墙国家选边的场子。",
+      "status": "curated",
+      "degree": 26
     },
     {
       "id": "live:LIVE011",
@@ -320,17 +331,6 @@
       "route": "themes/rule-of-law-boundaries-and-social-trust",
       "summary": "关注法律灰区如何影响公众的善意、风险感和彼此信任。",
       "status": null,
-      "degree": 25
-    },
-    {
-      "id": "episode:EP154",
-      "key": "EP154",
-      "label": "EP154",
-      "fullLabel": "EP154 · 赫格塞斯新加坡香会“围栏论”真相（上）：川普的全球建墙计划，已修到东亚，围墙就划到中国家门口",
-      "type": "episode",
-      "route": "episodes/EP154",
-      "summary": "香格里拉对话会上，美国防长赫格塞斯讲了一段话。多数解读抓住他要建立建设性战略稳定关系那句软话，认为是降调求稳。其实那只是开场的烟雾弹。关键词是后半段的围栏，他已把边界划在第一岛链，围栏成了修到东亚家门口的高墙。它接的是川普的新门罗主义，一边建墙，一边打击灰色贸易。美军收拳后撤，让盟友顶到前线守墙。芯片管制也开始按总部认人，墙修到了信息层。东南亚是最后一段还没划定的边界，香会就是逼骑墙国家选边的场子。",
-      "status": "curated",
       "degree": 25
     },
     {
@@ -488,6 +488,17 @@
       "degree": 23
     },
     {
+      "id": "concept:chokepoint-leverage",
+      "key": "chokepoint-leverage",
+      "label": "咽喉杠杆",
+      "fullLabel": "咽喉杠杆",
+      "type": "concept",
+      "route": "concepts/chokepoint-leverage",
+      "summary": "控制海峡、运河和关键通道的人，往往能把地理位置转化成定价权、通行权和规则权。",
+      "status": null,
+      "degree": 23
+    },
+    {
       "id": "live:LIVE010",
       "key": "LIVE010",
       "label": "LIVE010",
@@ -517,17 +528,6 @@
       "type": "theme",
       "route": "themes/narrative-speculation-and-retail-traps",
       "summary": "当市场热点先由故事驱动、再由散户接棒时，普通人最容易在高潮处接到最后一棒。",
-      "status": null,
-      "degree": 22
-    },
-    {
-      "id": "concept:chokepoint-leverage",
-      "key": "chokepoint-leverage",
-      "label": "咽喉杠杆",
-      "fullLabel": "咽喉杠杆",
-      "type": "concept",
-      "route": "concepts/chokepoint-leverage",
-      "summary": "控制海峡、运河和关键通道的人，往往能把地理位置转化成定价权、通行权和规则权。",
       "status": null,
       "degree": 22
     },
@@ -1104,6 +1104,17 @@
       "degree": 15
     },
     {
+      "id": "live:LIVE047",
+      "key": "LIVE047",
+      "label": "LIVE047",
+      "fullLabel": "LIVE047 · F-35座舱盖在香港被扣！一次快递绕路，戳破香港中转神话，全球物流从此墙内墙外两套系统",
+      "type": "live",
+      "route": "lives/LIVE047",
+      "summary": "座舱盖和武器舱门上全是隐身涂层，走的却是普通快递的中转线。",
+      "status": "published",
+      "degree": 15
+    },
+    {
       "id": "theme:local-government-financialization",
       "key": "local-government-financialization",
       "label": "地方政府资本化与补贴杠杆",
@@ -1423,6 +1434,17 @@
       "degree": 13
     },
     {
+      "id": "model:wall-and-gray-trade-crackdown",
+      "key": "wall-and-gray-trade-crackdown",
+      "label": "建墙与打灰模型",
+      "fullLabel": "建墙与打灰模型",
+      "type": "model",
+      "route": "models/wall-and-gray-trade-crackdown",
+      "summary": "建墙与打灰模型把川普的全球策略概括为两条隐藏逻辑：建墙分清敌我盟友、打击灰色贸易逼交易回归美元。",
+      "status": null,
+      "degree": 12
+    },
+    {
       "id": "concept:phantom-sales",
       "key": "phantom-sales",
       "label": "虚假销售",
@@ -1588,6 +1610,17 @@
       "degree": 12
     },
     {
+      "id": "episode:EP219",
+      "key": "EP219",
+      "label": "EP219",
+      "fullLabel": "EP219 · 拆解“赛博炼金术”！从瓜子掺沙到沙里掺瓜子，人形机器人泡沫加速蒸发中国社会财富！",
+      "type": "episode",
+      "route": "episodes/EP219",
+      "summary": "2026 年 9 月，梅卡曼德创始人邵天兰实名质疑人形机器人行业靠数采中心和关联交易做收入。顺着他的说法拆开，是一条五步流水线。企业在补贴高的地方注册数据采集中心，拿补贴回头高价买母公司的机器人。机器人摆在办公楼里抓杯子、擦桌子，号称采集训练数据，支出再包装成研发拿减税，最后带着漂亮财报去上市。这像瓜子掺沙，越掺越多，最后成了沙里掺瓜子，只能靠自家机构收货走账。它跟当年新能源骗补不同，节奏快了好几倍，又没有消费者托底，烧掉的是存款、股民本金和地方的钱。",
+      "status": "curated",
+      "degree": 12
+    },
+    {
       "id": "episode:EP220",
       "key": "EP220",
       "label": "EP220",
@@ -1643,17 +1676,6 @@
       "degree": 11
     },
     {
-      "id": "model:wall-and-gray-trade-crackdown",
-      "key": "wall-and-gray-trade-crackdown",
-      "label": "建墙与打灰模型",
-      "fullLabel": "建墙与打灰模型",
-      "type": "model",
-      "route": "models/wall-and-gray-trade-crackdown",
-      "summary": "建墙与打灰模型把川普的全球策略概括为两条隐藏逻辑：建墙分清敌我盟友、打击灰色贸易逼交易回归美元。",
-      "status": null,
-      "degree": 11
-    },
-    {
       "id": "theme:human-value-and-state-credit",
       "key": "human-value-and-state-credit",
       "label": "人的价值与国家信用",
@@ -1676,6 +1698,17 @@
       "degree": 11
     },
     {
+      "id": "model:small-state-balancing-model",
+      "key": "small-state-balancing-model",
+      "label": "小国平衡术",
+      "fullLabel": "小国平衡术",
+      "type": "model",
+      "route": "models/small-state-balancing-model",
+      "summary": "小国平衡术解释小国在大国之间维持生存空间，靠位置、合法性和现实利益而非纯姿态。",
+      "status": null,
+      "degree": 11
+    },
+    {
       "id": "episode:EP088",
       "key": "EP088",
       "label": "EP088",
@@ -1683,6 +1716,17 @@
       "type": "episode",
       "route": "episodes/EP088",
       "summary": "上海出台楼市沪七条，有人吐槽得很形象，想增肥增不上去，就只让吃饭不让排泄。松的是非沪籍居民来沪买房的门槛，想卖房跑路、想置换改善的人照样卖不动，憋出来的是虚胖。日本三支箭后来管用，是老百姓用30年把债还完了，眼下八支箭也不一定找得到回头路。这两年是税，压在中小私营业主身上。往后是涨，水电煤气和吃穿都要涨价。房地产只剩一个拖字，地价靠国企互拍撑着，只求别今天出事。未来十到二十年留好现金准备过冬，现金就是权力。楼市回暖，也许是下一代人的故事。",
+      "status": "curated",
+      "degree": 11
+    },
+    {
+      "id": "episode:EP120",
+      "key": "EP120",
+      "label": "EP120",
+      "fullLabel": "EP120 · 匈牙利大选欧尔班败选！是人民的巨大胜利，也是四大国家集团拆雷埋雷的终极博弈。",
+      "type": "episode",
+      "route": "episodes/EP120",
+      "summary": "匈牙利这次大选投票率接近 80%，是 1990 年以来最高的一次，年轻人大批出门投票，欧尔班靠的六七十岁以上老人这回被压了下去。马扎尔的地萨党拿下过半选票，初步计票就拿到 199 席里的 138 席，过了三分之二。他第一件事就是修宪，把总理任期限制为两届。放到欧洲看，这是一场拆雷和埋雷的牌局。俄罗斯和特朗普支持欧尔班，想在欧盟里留一颗雷，欧盟用限制拨款去拆，美国民主党那一派也站在拆雷一边。雷拆掉了，欧洲更团结，下一个冲突点可能转向东南亚。匈牙利变回不折腾的普通欧洲国家，对老百姓是好事。",
       "status": "curated",
       "degree": 11
     },
@@ -1775,17 +1819,6 @@
       "degree": 11
     },
     {
-      "id": "episode:EP219",
-      "key": "EP219",
-      "label": "EP219",
-      "fullLabel": "EP219 · 拆解“赛博炼金术”！从瓜子掺沙到沙里掺瓜子，人形机器人泡沫加速蒸发中国社会财富！",
-      "type": "episode",
-      "route": "episodes/EP219",
-      "summary": "2026 年 9 月，梅卡曼德创始人邵天兰实名质疑人形机器人行业靠数采中心和关联交易做收入。顺着他的说法拆开，是一条五步流水线。企业在补贴高的地方注册数据采集中心，拿补贴回头高价买母公司的机器人。机器人摆在办公楼里抓杯子、擦桌子，号称采集训练数据，支出再包装成研发拿减税，最后带着漂亮财报去上市。这像瓜子掺沙，越掺越多，最后成了沙里掺瓜子，只能靠自家机构收货走账。它跟当年新能源骗补不同，节奏快了好几倍，又没有消费者托底，烧掉的是存款、股民本金和地方的钱。",
-      "status": "curated",
-      "degree": 11
-    },
-    {
       "id": "concept:price-war-trap",
       "key": "price-war-trap",
       "label": "低价竞争陷阱",
@@ -1826,17 +1859,6 @@
       "type": "model",
       "route": "models/regional-denial-model",
       "summary": "真正有效的区域拒止，不是无上限扩张，而是把对手压在若干区域里，阻止其形成全球联动能力。",
-      "status": null,
-      "degree": 10
-    },
-    {
-      "id": "model:small-state-balancing-model",
-      "key": "small-state-balancing-model",
-      "label": "小国平衡术",
-      "fullLabel": "小国平衡术",
-      "type": "model",
-      "route": "models/small-state-balancing-model",
-      "summary": "小国平衡术解释小国在大国之间维持生存空间，靠位置、合法性和现实利益而非纯姿态。",
       "status": null,
       "degree": 10
     },
@@ -1947,17 +1969,6 @@
       "type": "episode",
       "route": "episodes/EP114",
       "summary": "地方政府要交出 GDP、税收和招商数字，就在产业园里给出最高八九成的返税。空壳公司扎堆进来虚开发票、走账领返还，没有一件商品流通，账面却年年往上涨。跨境贸易成了新指标以后，同一套办法又用在海南和内地之间的来回贸易上。房企那边，债权人同意减免的债务被记成收入。佳兆业预告 2025 年盈利不少于 500 亿元。这些数字不对应真实财富，缺口靠转移支付、削减公共支出和涨收费来填。老实做实业的企业干不过开票的，宏观判断也跟着失真。",
-      "status": "curated",
-      "degree": 10
-    },
-    {
-      "id": "episode:EP120",
-      "key": "EP120",
-      "label": "EP120",
-      "fullLabel": "EP120 · 匈牙利大选欧尔班败选！是人民的巨大胜利，也是四大国家集团拆雷埋雷的终极博弈。",
-      "type": "episode",
-      "route": "episodes/EP120",
-      "summary": "匈牙利这次大选投票率接近 80%，是 1990 年以来最高的一次，年轻人大批出门投票，欧尔班靠的六七十岁以上老人这回被压了下去。马扎尔的地萨党拿下过半选票，初步计票就拿到 199 席里的 138 席，过了三分之二。他第一件事就是修宪，把总理任期限制为两届。放到欧洲看，这是一场拆雷和埋雷的牌局。俄罗斯和特朗普支持欧尔班，想在欧盟里留一颗雷，欧盟用限制拨款去拆，美国民主党那一派也站在拆雷一边。雷拆掉了，欧洲更团结，下一个冲突点可能转向东南亚。匈牙利变回不折腾的普通欧洲国家，对老百姓是好事。",
       "status": "curated",
       "degree": 10
     },
@@ -2468,6 +2479,17 @@
       "degree": 9
     },
     {
+      "id": "concept:refuge-premium",
+      "key": "refuge-premium",
+      "label": "避险溢价",
+      "fullLabel": "避险溢价",
+      "type": "concept",
+      "route": "concepts/refuge-premium",
+      "summary": "动荡时期，稳定、守规则、能承接资金和人才的节点会获得额外溢价。",
+      "status": null,
+      "degree": 8
+    },
+    {
       "id": "model:discipline-failure-loop",
       "key": "discipline-failure-loop",
       "label": "惩戒失效循环模型",
@@ -2530,6 +2552,17 @@
       "type": "model",
       "route": "models/screening-machine",
       "summary": "教育和组织把人当作待筛选样本，而非待生长的人来处理的系统逻辑。",
+      "status": null,
+      "degree": 8
+    },
+    {
+      "id": "theme:data-cosmetics-and-false-prosperity",
+      "key": "data-cosmetics-and-false-prosperity",
+      "label": "数据粉饰与虚假繁荣",
+      "fullLabel": "数据粉饰与虚假繁荣",
+      "type": "theme",
+      "route": "themes/data-cosmetics-and-false-prosperity",
+      "summary": "讨论地方政府、企业与市场如何用账面数据制造景气感，却把真实风险继续藏在黑箱里。",
       "status": null,
       "degree": 8
     },
@@ -2952,17 +2985,6 @@
       "degree": 8
     },
     {
-      "id": "concept:refuge-premium",
-      "key": "refuge-premium",
-      "label": "避险溢价",
-      "fullLabel": "避险溢价",
-      "type": "concept",
-      "route": "concepts/refuge-premium",
-      "summary": "动荡时期，稳定、守规则、能承接资金和人才的节点会获得额外溢价。",
-      "status": null,
-      "degree": 7
-    },
-    {
       "id": "concept:subsidy-leverage-engine",
       "key": "subsidy-leverage-engine",
       "label": "补贴杠杆引擎",
@@ -3036,6 +3058,17 @@
       "type": "model",
       "route": "models/distributed-warfare-system",
       "summary": "分布式战争系统解释无人装备、分散生产、前线反馈和外部供给如何组合成长期战争优势。",
+      "status": null,
+      "degree": 7
+    },
+    {
+      "id": "concept:probabilistic-safety",
+      "key": "probabilistic-safety",
+      "label": "概率型安全",
+      "fullLabel": "概率型安全",
+      "type": "concept",
+      "route": "concepts/probabilistic-safety",
+      "summary": "风险不是每次都会爆发，但一旦触发就后果极重，因此最容易被组织和用户一起低估。",
       "status": null,
       "degree": 7
     },
@@ -3172,17 +3205,6 @@
       "degree": 7
     },
     {
-      "id": "theme:data-cosmetics-and-false-prosperity",
-      "key": "data-cosmetics-and-false-prosperity",
-      "label": "数据粉饰与虚假繁荣",
-      "fullLabel": "数据粉饰与虚假繁荣",
-      "type": "theme",
-      "route": "themes/data-cosmetics-and-false-prosperity",
-      "summary": "讨论地方政府、企业与市场如何用账面数据制造景气感，却把真实风险继续藏在黑箱里。",
-      "status": null,
-      "degree": 7
-    },
-    {
       "id": "concept:pragmatic-legitimacy",
       "key": "pragmatic-legitimacy",
       "label": "务实合法性",
@@ -3245,6 +3267,17 @@
       "type": "theme",
       "route": "themes/housing-burden-and-income-distribution",
       "summary": "讨论住房、税负和可支配收入之间的关系，尤其关注中低收入群体被抽走了多少上升空间。",
+      "status": null,
+      "degree": 7
+    },
+    {
+      "id": "concept:capital-wall",
+      "key": "capital-wall",
+      "label": "资本筑墙",
+      "fullLabel": "资本筑墙",
+      "type": "concept",
+      "route": "concepts/capital-wall",
+      "summary": "资本筑墙指国家像特朗普建实体墙一样，用监管在资金、技术、人才的跨境流动上立起高墙，逼资产与中国有联系的人在“留下受管”和“离开别回”之间选边。",
       "status": null,
       "degree": 7
     },
@@ -3590,17 +3623,6 @@
       "degree": 6
     },
     {
-      "id": "concept:probabilistic-safety",
-      "key": "probabilistic-safety",
-      "label": "概率型安全",
-      "fullLabel": "概率型安全",
-      "type": "concept",
-      "route": "concepts/probabilistic-safety",
-      "summary": "风险不是每次都会爆发，但一旦触发就后果极重，因此最容易被组织和用户一起低估。",
-      "status": null,
-      "degree": 6
-    },
-    {
       "id": "concept:premium-narrative",
       "key": "premium-narrative",
       "label": "高价叙事",
@@ -3762,17 +3784,6 @@
       "type": "theme",
       "route": "themes/capital-exit-and-cross-border-harvest",
       "summary": "危机、停牌或重组时期，真正被争夺的往往不是公司本身，而是跨法域的退出通道和美元化收益。",
-      "status": null,
-      "degree": 6
-    },
-    {
-      "id": "concept:capital-wall",
-      "key": "capital-wall",
-      "label": "资本筑墙",
-      "fullLabel": "资本筑墙",
-      "type": "concept",
-      "route": "concepts/capital-wall",
-      "summary": "资本筑墙指国家像特朗普建实体墙一样，用监管在资金、技术、人才的跨境流动上立起高墙，逼资产与中国有联系的人在“留下受管”和“离开别回”之间选边。",
       "status": null,
       "degree": 6
     },
@@ -4019,6 +4030,17 @@
       "degree": 5
     },
     {
+      "id": "concept:welfare-ratchet",
+      "key": "welfare-ratchet",
+      "label": "福利棘轮",
+      "fullLabel": "福利棘轮",
+      "type": "concept",
+      "route": "concepts/welfare-ratchet",
+      "summary": "补贴和福利只能加不能减：经济做好选民不加分，砍福利一定下台，政客被锁进透支未来的短期维稳。",
+      "status": null,
+      "degree": 5
+    },
+    {
       "id": "concept:toolified-history",
       "key": "toolified-history",
       "label": "工具化历史",
@@ -4195,6 +4217,17 @@
       "degree": 5
     },
     {
+      "id": "theme:authoritarian-succession-and-state-fragility",
+      "key": "authoritarian-succession-and-state-fragility",
+      "label": "威权继承与国家裂缝",
+      "fullLabel": "威权继承与国家裂缝",
+      "type": "theme",
+      "route": "themes/authoritarian-succession-and-state-fragility",
+      "summary": "讨论强人、神权或高压体制在接班时刻如何暴露出最深的制度脆弱点。",
+      "status": null,
+      "degree": 5
+    },
+    {
       "id": "person:vivian-balakrishnan",
       "key": "vivian-balakrishnan",
       "label": "维文",
@@ -4268,6 +4301,17 @@
       "type": "theme",
       "route": "themes/performative-governance-and-ritual-display",
       "summary": "关注治理如何通过热闹、仪式和可见动作来替代真正的问题解决。",
+      "status": null,
+      "degree": 5
+    },
+    {
+      "id": "concept:blood-written-rules",
+      "key": "blood-written-rules",
+      "label": "血写的规则",
+      "fullLabel": "血写的规则",
+      "type": "concept",
+      "route": "concepts/blood-written-rules",
+      "summary": "习以为常的安全规范不是天生的官僚条文，而是灾难死亡换来的制度沉淀；忘掉来历，红线就会被当成可优化的成本。",
       "status": null,
       "degree": 5
     },
@@ -4734,17 +4778,6 @@
       "degree": 4
     },
     {
-      "id": "concept:welfare-ratchet",
-      "key": "welfare-ratchet",
-      "label": "福利棘轮",
-      "fullLabel": "福利棘轮",
-      "type": "concept",
-      "route": "concepts/welfare-ratchet",
-      "summary": "补贴和福利只能加不能减：经济做好选民不加分，砍福利一定下台，政客被锁进透支未来的短期维稳。",
-      "status": null,
-      "degree": 4
-    },
-    {
       "id": "person:sanae-takaichi",
       "key": "sanae-takaichi",
       "label": "高市早苗",
@@ -5031,17 +5064,6 @@
       "degree": 4
     },
     {
-      "id": "theme:authoritarian-succession-and-state-fragility",
-      "key": "authoritarian-succession-and-state-fragility",
-      "label": "威权继承与国家裂缝",
-      "fullLabel": "威权继承与国家裂缝",
-      "type": "theme",
-      "route": "themes/authoritarian-succession-and-state-fragility",
-      "summary": "讨论强人、神权或高压体制在接班时刻如何暴露出最深的制度脆弱点。",
-      "status": null,
-      "degree": 4
-    },
-    {
       "id": "concept:toxic-recycling",
       "key": "toxic-recycling",
       "label": "污染转移式回收",
@@ -5104,17 +5126,6 @@
       "type": "theme",
       "route": "themes/academic-bureaucracy-and-knowledge-decline",
       "summary": "讨论当高校越来越像官场时，课堂、研究和学问如何被不断挤压。",
-      "status": null,
-      "degree": 4
-    },
-    {
-      "id": "concept:blood-written-rules",
-      "key": "blood-written-rules",
-      "label": "血写的规则",
-      "fullLabel": "血写的规则",
-      "type": "concept",
-      "route": "concepts/blood-written-rules",
-      "summary": "习以为常的安全规范不是天生的官僚条文，而是灾难死亡换来的制度沉淀；忘掉来历，红线就会被当成可优化的成本。",
       "status": null,
       "degree": 4
     },
@@ -6626,6 +6637,17 @@
       "degree": 2
     },
     {
+      "id": "concept:pre-emptive-screening",
+      "key": "pre-emptive-screening",
+      "label": "前置筛选",
+      "fullLabel": "前置筛选",
+      "type": "concept",
+      "route": "concepts/pre-emptive-screening",
+      "summary": "故意设一道门槛或者故意留一个破绽，让不想要的人在接触之前自己走掉，省下后面全部的说服成本。",
+      "status": null,
+      "degree": 2
+    },
+    {
       "id": "concept:panic-premium",
       "key": "panic-premium",
       "label": "情绪溢价",
@@ -7711,17 +7733,6 @@
       "type": "concept",
       "route": "concepts/talent-skimming",
       "summary": "把一个区域里最会考试的学生集中到少数学校，再用他们的成绩证明这几所学校的管理有效。",
-      "status": null,
-      "degree": 1
-    },
-    {
-      "id": "concept:pre-emptive-screening",
-      "key": "pre-emptive-screening",
-      "label": "前置筛选",
-      "fullLabel": "前置筛选",
-      "type": "concept",
-      "route": "concepts/pre-emptive-screening",
-      "summary": "故意设一道门槛或者故意留一个破绽，让不想要的人在接触之前自己走掉，省下后面全部的说服成本。",
       "status": null,
       "degree": 1
     },
@@ -22147,6 +22158,81 @@
     {
       "source": "live:LIVE046",
       "target": "theme:real-estate-deleveraging",
+      "kind": "live-theme"
+    },
+    {
+      "source": "live:LIVE047",
+      "target": "episode:EP154",
+      "kind": "live-episode"
+    },
+    {
+      "source": "live:LIVE047",
+      "target": "episode:EP120",
+      "kind": "live-episode"
+    },
+    {
+      "source": "live:LIVE047",
+      "target": "episode:EP219",
+      "kind": "live-episode"
+    },
+    {
+      "source": "live:LIVE047",
+      "target": "concept:probabilistic-safety",
+      "kind": "live-concept"
+    },
+    {
+      "source": "live:LIVE047",
+      "target": "concept:blood-written-rules",
+      "kind": "live-concept"
+    },
+    {
+      "source": "live:LIVE047",
+      "target": "concept:chokepoint-leverage",
+      "kind": "live-concept"
+    },
+    {
+      "source": "live:LIVE047",
+      "target": "concept:refuge-premium",
+      "kind": "live-concept"
+    },
+    {
+      "source": "live:LIVE047",
+      "target": "concept:capital-wall",
+      "kind": "live-concept"
+    },
+    {
+      "source": "live:LIVE047",
+      "target": "concept:pre-emptive-screening",
+      "kind": "live-concept"
+    },
+    {
+      "source": "live:LIVE047",
+      "target": "concept:welfare-ratchet",
+      "kind": "live-concept"
+    },
+    {
+      "source": "live:LIVE047",
+      "target": "model:wall-and-gray-trade-crackdown",
+      "kind": "live-model"
+    },
+    {
+      "source": "live:LIVE047",
+      "target": "model:small-state-balancing-model",
+      "kind": "live-model"
+    },
+    {
+      "source": "live:LIVE047",
+      "target": "theme:singapore-and-small-state-survival",
+      "kind": "live-theme"
+    },
+    {
+      "source": "live:LIVE047",
+      "target": "theme:authoritarian-succession-and-state-fragility",
+      "kind": "live-theme"
+    },
+    {
+      "source": "live:LIVE047",
+      "target": "theme:data-cosmetics-and-false-prosperity",
       "kind": "live-theme"
     },
     {
