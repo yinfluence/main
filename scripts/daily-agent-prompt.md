@@ -19,7 +19,7 @@
    - 双向回填：写进 concepts/models/themes/keywords 的每个节点，把本期 EPxxx 加进其 `episodes` 数组并写 note。
    - `relatedEpisodes`：从命中的节点反查相关期。
 
-4. 影射类节目（标题/内容用《笑傲江湖》等化名，如华山派/福威镖局/剑宗小厮）：正文保留化名，`topic.boundaries` 必须写"节目全程化名影射、对应关系是公众解读、非事实指控"声明。参考 EP153/EP170/EP187 的既有写法。
+4. 影射类节目（标题/内容用《笑傲江湖》等化名，如华山派/福威镖局/剑宗小厮）：标题照抄不动；正文把化名换成真实对象（2026-09-19 口径，对照表在 sop/09 第三节，节目没明说的加「（推测）」），`topic.boundaries` 必须写明原话用了哪些化名、对应关系是公众解读、非事实指控。参考 EP187、EP216、EP217 的写法。
 
 5. 视频链接：
    - B 站链接从 scan 清单取；会员视频（`member:true`）在 videoLinks 和 `scripts/video-link-overrides.json` 都加 `"access":"member"`。
