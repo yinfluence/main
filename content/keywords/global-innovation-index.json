@@ -1,0 +1,64 @@
+{
+  "id": "global-innovation-index",
+  "name": "全球创新指数",
+  "kind": "general",
+  "asOf": "2026-10-04",
+  "sources": [
+    {
+      "title": "Singapore ranks 5th globally, 2nd in Asia in innovation, with 12 indicators ranked No. 1 worldwide（The Independent SG）",
+      "url": "https://theindependent.sg/singapore-ranks-5th-globally-2nd-in-asia-in-innovation-with-12-indicators-ranked-no-1-worldwide",
+      "note": "核对 2026 年新加坡排名第五、连续四年进前五、79 项指标中 12 项第一、创新投入排第一、亚洲仅次于韩国"
+    },
+    {
+      "title": "Singapore ranks 5th in the 2025 Global Innovation Index（新加坡知识产权局）",
+      "url": "https://www.ipos.gov.sg/news/news-collection/singapore-ranks-5th-in-the-2025-global-innovation-index--climbed-two-spots-in-innovation-outputs-/",
+      "note": "核对指数由世界知识产权组织发布、新加坡 2025 年同样排第五"
+    }
+  ],
+  "summary": "全球创新指数是世界知识产权组织每年发布的经济体创新能力排名，节目拿新加坡 2026 年排第五当切口，讲国家创新和个人处境之间的落差。",
+  "description": "全球创新指数由世界知识产权组织每年发布，从创新投入和创新产出两大块给各经济体打分，2026 年覆盖 139 个经济体、79 项分项指标。投入一块看制度、人才、科研和市场环境，产出一块看技术和创意成果。2026 年新加坡排第五，连续四年进全球前五，12 项指标排全球第一，创新投入一项排第一。\n\n在颖响力语境里，这份榜单是进门的话头。节目先认可新加坡长期投入换来的成绩，再把话题转到榜单照不到的地方，国家层面的创新很亮眼，拿着好学历的中产却在 AI 冲击下变得焦虑。",
+  "programAssociations": [
+    {
+      "title": "国家排名和个人处境的落差",
+      "episodes": [
+        "EP220"
+      ],
+      "note": "EP220 从 2026 年全球创新指数讲起，新加坡排第五、创新投入第一，总理黄循财在视频致辞里说政府二十多年每年投约 1% 的 GDP 做研究和创新。节目随后把视线转到职场，文凭至上的社会培养了大批跟随者，AI 来了以后，国家创新越强，中间层越容易被替下来。"
+    }
+  ],
+  "signalNotes": [
+    "看到一个国家创新排名靠前时，可以顺手看投入和产出两项分别排第几，投入第一不等于产出也第一。",
+    "排名新闻里常出现连续几年进前几这类说法，它更多说明投入的稳定，和普通人收入涨没涨是两回事。",
+    "榜单发布时政府致辞提到的投入比例，往往比名次本身更能说明这个国家打算走多远。"
+  ],
+  "extensionNotes": [
+    {
+      "title": "新加坡",
+      "note": "这份榜单上新加坡的位置，是它靠人才和连接世界活下来的一个结果，可以回到国家页看这条路怎么走过来的。"
+    },
+    {
+      "title": "文凭至上",
+      "note": "榜单照不到的那一面，国家创新越往前走，靠文凭吃饭的中间层越吃力。"
+    },
+    {
+      "title": "黄循财",
+      "note": "他在发布会的视频致辞里讲了二十年投入不断，可以看他在别的场合怎么谈 AI 和就业。"
+    }
+  ],
+  "aliases": [
+    "GII",
+    "Global Innovation Index",
+    "创新指数"
+  ],
+  "relatedKeywords": [
+    "新加坡",
+    "文凭至上",
+    "黄循财"
+  ],
+  "episodes": [
+    {
+      "id": "EP220",
+      "note": "新加坡在 2026 年全球创新指数排第五，节目拿它当切口，转去讲文凭至上在 AI 时代失效。"
+    }
+  ]
+}
