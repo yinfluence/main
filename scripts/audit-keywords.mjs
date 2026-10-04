@@ -198,7 +198,7 @@ function hasMalformedProgramAssociations(keyword) {
     const note = String(item.note || item.body || '').trim();
     if (!title || !note) return true;
     if (item.episodes === undefined) return false;
-    return !Array.isArray(item.episodes) || item.episodes.some((id) => !/^EP\d{3}$/.test(String(id || '').trim()));
+    return !Array.isArray(item.episodes) || item.episodes.some((id) => !/^(EP|LIVE)\d{3}$/.test(String(id || '').trim()));
   });
 }
 
@@ -208,7 +208,7 @@ function hasMissingProgramAssociationEpisodes(keyword) {
   for (const association of keyword.programAssociations) {
     for (const rawId of association?.episodes || []) {
       const id = String(rawId || '').trim();
-      if (/^EP\d{3}$/.test(id) && !topLevelEpisodeIds.has(id)) return true;
+      if (/^(EP|LIVE)\d{3}$/.test(id) && !topLevelEpisodeIds.has(id)) return true;
     }
   }
   return false;
