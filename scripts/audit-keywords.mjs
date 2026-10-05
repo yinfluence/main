@@ -50,7 +50,7 @@ const MIN_SUMMARY_LENGTH = 24;
 const MIN_DESCRIPTION_LENGTH = 90;
 const MIN_PERSON_TOTAL_LENGTH = 420;
 const VALID_KINDS = new Set(['person', 'geography', 'organization', 'product', 'event', 'mechanism', 'asset', 'general', 'concept', 'theme']);
-const PERSON_IDENTITY_PATTERN = /(总统|首相|总理|主席|CEO|首席执行官|创始人|创办人|董事长|教授|教师|导师|导演|作家|作者|署名作者|企业家|创业者|政治人物|历史人物|经济学家|科学家|艺术家|建筑师|策展人|文博|内容创作者|创作者|公众人物|主播|教育家|学者|音乐人|歌手|演员|运动员|赛车手|赛车从业者|校长|外交官|部长|书记|领袖|最高领袖|联合创始人|投资人|企业管理者)/;
+const PERSON_IDENTITY_PATTERN = /(总统|首相|总理|主席|CEO|首席执行官|创始人|创办人|董事长|教授|教师|导师|导演|作家|作者|署名作者|企业家|创业者|政治人物|历史人物|经济学家|科学家|艺术家|建筑师|策展人|文博|内容创作者|创作者|公众人物|主播|教育家|学者|音乐人|歌手|演员|运动员|赛车手|赛车从业者|校长|外交官|部长|书记|领袖|最高领袖|联合创始人|投资人|企业管理者|医生|护士|留学生|学生|博士生|研究生|律师|记者|博主|网红)/;
 const WEAK_SOURCE_HOST_PATTERNS = [
   /baike\.sogou\.com/i,
   /baike\.baidu\.com/i,
