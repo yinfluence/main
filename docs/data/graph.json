@@ -2,14 +2,14 @@
   "meta": {
     "title": "颖响力知识图谱",
     "subtitle": "节目、概念、模型、人物、主题之间的可视化连接网络",
-    "nodeCount": 754,
-    "linkCount": 2816,
+    "nodeCount": 756,
+    "linkCount": 2824,
     "typeCounts": {
       "model": 83,
       "live": 47,
-      "concept": 247,
+      "concept": 248,
       "theme": 92,
-      "episode": 220,
+      "episode": 221,
       "person": 65
     }
   },
@@ -422,6 +422,17 @@
       "degree": 24
     },
     {
+      "id": "model:narrative-instrumentalization",
+      "key": "narrative-instrumentalization",
+      "label": "叙事工具化模型",
+      "fullLabel": "叙事工具化模型",
+      "type": "model",
+      "route": "models/narrative-instrumentalization",
+      "summary": "叙事工具化模型解释叙事的主要功能从解释现实转向组织情绪和划分阵营。",
+      "status": null,
+      "degree": 24
+    },
+    {
       "id": "live:LIVE024",
       "key": "LIVE024",
       "label": "LIVE024",
@@ -473,17 +484,6 @@
       "type": "concept",
       "route": "concepts/gray-oil-network",
       "summary": "绕开正规结算和监管的石油流动，会在影子体系中重塑货币、制裁和地缘利益。",
-      "status": null,
-      "degree": 23
-    },
-    {
-      "id": "model:narrative-instrumentalization",
-      "key": "narrative-instrumentalization",
-      "label": "叙事工具化模型",
-      "fullLabel": "叙事工具化模型",
-      "type": "model",
-      "route": "models/narrative-instrumentalization",
-      "summary": "叙事工具化模型解释叙事的主要功能从解释现实转向组织情绪和划分阵营。",
       "status": null,
       "degree": 23
     },
@@ -2996,6 +2996,17 @@
       "degree": 8
     },
     {
+      "id": "episode:EP221",
+      "key": "EP221",
+      "label": "EP221",
+      "fullLabel": "EP221 · 弯弯的月亮不能从头再来！大家讽的不是那英，是嘴上的那块裹脚布。",
+      "type": "episode",
+      "route": "episodes/EP221",
+      "summary": "2026 年 9 月 25 日，63 岁的刘欢在上海病逝。人刚走，有人翻出他九十年代末唱的《从头再来》，骂他忽悠下岗工人。一个歌手手里没有决定别人命运的权力，时代的账不该记在他头上。那英在成都演唱会上临时加唱半首《弯弯的月亮》送别老友，随即被举报没报批，文旅局专门发了通报，说这不算违规。盯着她的人多半跟她无仇。别的演出改两三句歌词就被整改，同样的规则轮到名人，大家想看它还管不管。规则忽松忽紧、标准因人而异，才是这股怨气的来源。",
+      "status": "curated",
+      "degree": 8
+    },
+    {
       "id": "concept:subsidy-leverage-engine",
       "key": "subsidy-leverage-engine",
       "label": "补贴杠杆引擎",
@@ -3557,6 +3568,17 @@
       "degree": 7
     },
     {
+      "id": "model:safety-valve-governance",
+      "key": "safety-valve-governance",
+      "label": "安全阀治理模型",
+      "fullLabel": "安全阀治理模型",
+      "type": "model",
+      "route": "models/safety-valve-governance",
+      "summary": "安全阀治理模型解释体系会容纳分流焦虑的中间人，并在其越位时进行收束。",
+      "status": null,
+      "degree": 6
+    },
+    {
       "id": "concept:performative-innovation",
       "key": "performative-innovation",
       "label": "表演式创新",
@@ -3630,6 +3652,17 @@
       "type": "concept",
       "route": "concepts/premium-narrative",
       "summary": "企业用定位、符号、方法论和品牌故事为高价格建立解释框架。",
+      "status": null,
+      "degree": 6
+    },
+    {
+      "id": "concept:toolified-history",
+      "key": "toolified-history",
+      "label": "工具化历史",
+      "fullLabel": "工具化历史",
+      "type": "concept",
+      "route": "concepts/toolified-history",
+      "summary": "历史被拿来组织当下身份、敌我和情绪时，就从理解过去变成动员工具。",
       "status": null,
       "degree": 6
     },
@@ -3975,17 +4008,6 @@
       "degree": 6
     },
     {
-      "id": "model:safety-valve-governance",
-      "key": "safety-valve-governance",
-      "label": "安全阀治理模型",
-      "fullLabel": "安全阀治理模型",
-      "type": "model",
-      "route": "models/safety-valve-governance",
-      "summary": "安全阀治理模型解释体系会容纳分流焦虑的中间人，并在其越位时进行收束。",
-      "status": null,
-      "degree": 5
-    },
-    {
       "id": "theme:bullshit-politics-and-historical-narratives",
       "key": "bullshit-politics-and-historical-narratives",
       "label": "扯淡政治与历史叙事",
@@ -4026,17 +4048,6 @@
       "type": "concept",
       "route": "concepts/welfare-ratchet",
       "summary": "补贴和福利只能加不能减：经济做好选民不加分，砍福利一定下台，政客被锁进透支未来的短期维稳。",
-      "status": null,
-      "degree": 5
-    },
-    {
-      "id": "concept:toolified-history",
-      "key": "toolified-history",
-      "label": "工具化历史",
-      "fullLabel": "工具化历史",
-      "type": "concept",
-      "route": "concepts/toolified-history",
-      "summary": "历史被拿来组织当下身份、敌我和情绪时，就从理解过去变成动员工具。",
       "status": null,
       "degree": 5
     },
@@ -4129,6 +4140,17 @@
       "degree": 5
     },
     {
+      "id": "theme:content-regulation-and-short-drama",
+      "key": "content-regulation-and-short-drama",
+      "label": "内容监管与短剧崛起",
+      "fullLabel": "内容监管与短剧崛起",
+      "type": "theme",
+      "route": "themes/content-regulation-and-short-drama",
+      "summary": "讨论长剧、电影、网剧和短剧在不同审核路径下如何重新竞争。",
+      "status": null,
+      "degree": 5
+    },
+    {
       "id": "person:vladimir-putin",
       "key": "vladimir-putin",
       "label": "普京",
@@ -4147,6 +4169,17 @@
       "type": "concept",
       "route": "concepts/globalization-as-disclosure",
       "summary": "全球化的本质是各国把生产、消费和价格公开披露，形成像上市公司体系那样透明的市场；灰色贸易就是绕开披露、退回不透明的国与国交易。",
+      "status": null,
+      "degree": 5
+    },
+    {
+      "id": "concept:weapons-of-the-weak",
+      "key": "weapons-of-the-weak",
+      "label": "弱者的武器",
+      "fullLabel": "弱者的武器",
+      "type": "concept",
+      "route": "concepts/weapons-of-the-weak",
+      "summary": "日常、隐蔽、匿名、非组织化的微观抵抗，比公开对抗更难被传统治理手段处理。",
       "status": null,
       "degree": 5
     },
@@ -4712,6 +4745,17 @@
       "degree": 4
     },
     {
+      "id": "theme:trauma-memory-and-generational-loop",
+      "key": "trauma-memory-and-generational-loop",
+      "label": "创伤记忆与代际循环",
+      "fullLabel": "创伤记忆与代际循环",
+      "type": "theme",
+      "route": "themes/trauma-memory-and-generational-loop",
+      "summary": "讨论旧创伤如何在新的现实压力下被误读、怀旧和再次传递。",
+      "status": null,
+      "degree": 4
+    },
+    {
       "id": "concept:danwei-revival",
       "key": "danwei-revival",
       "label": "单位制回潮",
@@ -4943,17 +4987,6 @@
       "degree": 4
     },
     {
-      "id": "theme:content-regulation-and-short-drama",
-      "key": "content-regulation-and-short-drama",
-      "label": "内容监管与短剧崛起",
-      "fullLabel": "内容监管与短剧崛起",
-      "type": "theme",
-      "route": "themes/content-regulation-and-short-drama",
-      "summary": "讨论长剧、电影、网剧和短剧在不同审核路径下如何重新竞争。",
-      "status": null,
-      "degree": 4
-    },
-    {
       "id": "theme:platform-labor-and-lived-reality",
       "key": "platform-labor-and-lived-reality",
       "label": "平台劳动与真实生存",
@@ -4972,17 +5005,6 @@
       "type": "concept",
       "route": "concepts/anticipatory-governance",
       "summary": "在问题形成之前就把它设计掉，而不是等矛盾积累、民怨爆发后再修补的治理方式。",
-      "status": null,
-      "degree": 4
-    },
-    {
-      "id": "concept:weapons-of-the-weak",
-      "key": "weapons-of-the-weak",
-      "label": "弱者的武器",
-      "fullLabel": "弱者的武器",
-      "type": "concept",
-      "route": "concepts/weapons-of-the-weak",
-      "summary": "日常、隐蔽、匿名、非组织化的微观抵抗，比公开对抗更难被传统治理手段处理。",
       "status": null,
       "degree": 4
     },
@@ -5390,17 +5412,6 @@
       "type": "concept",
       "route": "concepts/wealth-spillover-hub",
       "summary": "一个金融节点的繁荣不是因为全球资本看好它，而是因为它恰好承接了某个大经济体溢出和回流的钱。",
-      "status": null,
-      "degree": 3
-    },
-    {
-      "id": "theme:trauma-memory-and-generational-loop",
-      "key": "trauma-memory-and-generational-loop",
-      "label": "创伤记忆与代际循环",
-      "fullLabel": "创伤记忆与代际循环",
-      "type": "theme",
-      "route": "themes/trauma-memory-and-generational-loop",
-      "summary": "讨论旧创伤如何在新的现实压力下被误读、怀旧和再次传递。",
       "status": null,
       "degree": 3
     },
@@ -6681,6 +6692,17 @@
       "degree": 2
     },
     {
+      "id": "theme:evaluation-and-moral-capital",
+      "key": "evaluation-and-moral-capital",
+      "label": "人物评价与道德资本",
+      "fullLabel": "人物评价与道德资本",
+      "type": "theme",
+      "route": "themes/evaluation-and-moral-capital",
+      "summary": "一个人是否值得被尊重，不能只看商业成绩，还要看他留下了怎样的公共价值。",
+      "status": null,
+      "degree": 2
+    },
+    {
       "id": "concept:three-layer-leverage",
       "key": "three-layer-leverage",
       "label": "三层杠杆",
@@ -7139,6 +7161,17 @@
       "type": "concept",
       "route": "concepts/stock-housing-era",
       "summary": "新房不再是市场主角，成交主要发生在已经建好的房子之间，缺的不再是房子，是能卖得掉的那一小部分好房子。",
+      "status": null,
+      "degree": 1
+    },
+    {
+      "id": "concept:misdirected-reckoning",
+      "key": "misdirected-reckoning",
+      "label": "错位清算",
+      "fullLabel": "错位清算",
+      "type": "concept",
+      "route": "concepts/misdirected-reckoning",
+      "summary": "一段时代的旧账没处去算，最后记到了够得着、又最没权力的那个人头上。",
       "status": null,
       "degree": 1
     },
@@ -7766,17 +7799,6 @@
       "type": "concept",
       "route": "concepts/status-maintenance-debt",
       "summary": "债务不再服务于经营和资产，而是用来维持一个人在社会关系里的身份，一旦还清，身份也就没了。",
-      "status": null,
-      "degree": 1
-    },
-    {
-      "id": "theme:evaluation-and-moral-capital",
-      "key": "evaluation-and-moral-capital",
-      "label": "人物评价与道德资本",
-      "fullLabel": "人物评价与道德资本",
-      "type": "theme",
-      "route": "themes/evaluation-and-moral-capital",
-      "summary": "一个人是否值得被尊重，不能只看商业成绩，还要看他留下了怎样的公共价值。",
       "status": null,
       "degree": 1
     },
@@ -16303,6 +16325,46 @@
     {
       "source": "episode:EP220",
       "target": "theme:middle-class-descent-and-stratification",
+      "kind": "episode-theme"
+    },
+    {
+      "source": "episode:EP221",
+      "target": "concept:misdirected-reckoning",
+      "kind": "episode-concept"
+    },
+    {
+      "source": "episode:EP221",
+      "target": "concept:toolified-history",
+      "kind": "episode-concept"
+    },
+    {
+      "source": "episode:EP221",
+      "target": "concept:weapons-of-the-weak",
+      "kind": "episode-concept"
+    },
+    {
+      "source": "episode:EP221",
+      "target": "model:narrative-instrumentalization",
+      "kind": "episode-model"
+    },
+    {
+      "source": "episode:EP221",
+      "target": "model:safety-valve-governance",
+      "kind": "episode-model"
+    },
+    {
+      "source": "episode:EP221",
+      "target": "theme:content-regulation-and-short-drama",
+      "kind": "episode-theme"
+    },
+    {
+      "source": "episode:EP221",
+      "target": "theme:evaluation-and-moral-capital",
+      "kind": "episode-theme"
+    },
+    {
+      "source": "episode:EP221",
+      "target": "theme:trauma-memory-and-generational-loop",
       "kind": "episode-theme"
     },
     {
