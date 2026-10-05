@@ -2,27 +2,27 @@
   "id": "unive",
   "name": "Univé",
   "kind": "organization",
-  "asOf": "2026-09-12",
+  "asOf": "2026-10-04",
   "sources": [
     {
       "title": "Over Univé I Coöperatieve verzekeraar zonder winstoogmerk - Univé",
       "url": "https://www.unive.nl/over-unive",
-      "note": "核对 Univé 是不以盈利为目的的合作制保险公司、按会员制运作，以及它源自十八世纪末农民互助保险的来历"
+      "note": "核合作制、不以盈利为目的、超过 180 万会员，以及 1794 年 Geert Reinders 联合 20 户农民建储备金的来历。"
     },
     {
-      "title": "Waarom Nederlandse verzekeraar Chinese automerken weigert | VRT NWS",
+      "title": "Waarom Nederlandse verzekeraar Chinese automerken weigert | VRT NWS（2026-08-27）",
       "url": "https://www.vrt.be/vrtnws/nl/2026/08/27/verzekeringsmaatschappijen-nederland-auto-s-chinese-automerken/",
-      "note": "核对九个完全不承保的品牌、五个只保第三者责任险的品牌名单，其中 Lucid 为美国品牌，比亚迪不在名单上"
+      "note": "核完全不承保的 Changan、Hongqi、Jaecoo、Leapmotor、MHero、Omoda、Voyah 加 KGM、VinFast，部分承保的 Dongfeng、Firefly、Nio、Zeekr 和美国 Lucid，比亚迪不在名单上。"
     },
     {
-      "title": "Netherlands Mutual Univé Restricts Cover on Some Chinese Car Brands - Insurance Edge",
+      "title": "Netherlands Mutual Univé Restricts Cover on Some Chinese Car Brands - Insurance Edge（2026-08-20）",
       "url": "https://insurance-edge.net/2026/08/20/netherlands-mutual-unive-restricts-cover-on-some-chinese-car-brands/",
-      "note": "核对 Univé 给出的理由是配件、技术支持和维修网络不足，并表示车企补齐后可以重新评估，不是对车辆质量或安全的判断"
+      "note": "核理由是配件、技术资料和维修网络不足，原句 not a judgment on the quality or safety of a car，品牌补上后 can also be reassessed。"
     },
     {
-      "title": "换个车灯要等200天！荷兰保险公司把中国品牌拉黑：车很好但修不起 - 快科技",
+      "title": "快科技：换个车灯要等200天！荷兰保险公司把中国品牌拉黑（2026-08-28）",
       "url": "https://news.mydrivers.com/1/1147/1147142.htm",
-      "note": "核对国内媒体转述的维修厂等一块电子控制单元近两百天、其间代步车和停车费用由保险公司承担的说法"
+      "note": "核另有 5 个品牌仅可投保基础第三者责任险，以及维修厂等一块电子控制单元的转述。"
     }
   ],
   "aliases": [
@@ -37,10 +37,10 @@
     "新能源汽车"
   ],
   "summary": "Univé 是荷兰的合作制保险公司，2026 年 8 月中旬对九个新车品牌停保、对五个品牌只保第三者责任险。节目借它讲中国电车出海之后，售后跟不上怎样变成保险拒保。",
-  "description": "Univé 是荷兰的合作制保险公司，按会员制运作，不以盈利为目的，前身可以追到十八世纪末的农民互助保险，业务包括车险和财产险等。2026 年 8 月中旬它公布新的车险规则。长安、红旗、零跑、岚图、奇瑞旗下的 Omoda 和 Jaecoo、MHero、韩国的 KGM、越南的 VinFast 九个品牌不再承保，东风、萤火虫、蔚来、极氪和美国的 Lucid 只保法定的第三者责任险，比亚迪不在名单上。它给的理由是配件、技术资料和维修网络不足，小事故也可能拖很久、赔很多，品牌补上这些之后可以重新评估。\n\nEP211 把这份名单当成欧洲旧规则开始回头算账的第一个信号。节目认为拒保是保险公司的止损，名单主体是中国车企，背后是售后体系没有跟着车一起进入欧洲。",
+  "description": "Univé 是荷兰的合作制保险公司，按会员制运作，不以盈利为目的，自称有一百八十多万会员。它的源头是 1794 年 Geert Reinders 召集附近二十户农民建的火灾互助储备金，现在做车险、财产险等业务。2026 年 8 月中旬它公布新的车险规则。长安、红旗、零跑、岚图、奇瑞旗下的 Omoda 和 Jaecoo、MHero、韩国的 KGM、越南的 VinFast 九个品牌不再承保，东风、萤火虫、蔚来、极氪和美国的 Lucid 只保法定的第三者责任险，比亚迪不在名单上。它给的理由是配件、技术资料和维修网络不足，小事故也可能拖很久、赔很多，品牌补上这些之后可以重新评估。\n\nEP211 拿这份名单开场，讲欧洲旧规则开始回头算账。拒保在这里被看成保险公司的止损，名单主体是中国车企，背后是售后体系没有跟着车一起进入欧洲。",
   "positionNotes": [
     "保险公司站在车卖出去之后的那一段。车能不能在当地正常开下去，要看出了事有没有人肯赔、赔得起。",
-    "合作制保险公司的钱来自会员保费，赔付失控直接摊到会员身上，所以它对算不出底的风险比商业公司更谨慎。",
+    "合作制保险公司没有外部股东兜底，赔付失控最后会摊到会员保费上。按这个逻辑，它对算不出底的风险会更谨慎，这是推断，Univé 没有这样说过。",
     "它的承保规则不经过政府，却能直接影响消费者买哪个品牌，作用有时比关税来得更快。"
   ],
   "programAssociations": [
@@ -49,7 +49,7 @@
       "episodes": [
         "EP211"
       ],
-      "note": "EP211 从 Univé 的拒保名单切入。节目把名单读成欧洲汽车业百年秩序的第一波反击，配件靠海运、维修网点少、修理厂拿不到技术资料，一次小刮蹭可能拖几个月，代步车和误工的钱都记在保险公司账上。赔付算不出底，保险公司只能不接。节目据此判断，中国电车靠低价打开了市场，维修和理赔这一段没有跟上，代价正在兑现。"
+      "note": "EP211 从 Univé 的拒保名单切入，把它看成欧洲汽车业百年规则的第一波反击。配件靠国内海运，维修网点少，修理厂拿不到技术资料，一次几百欧就能结案的小刮蹭可能拖几个月，代步车、误工费都由保险公司全额承担。赔付算不出底，保险公司只能不接。由此得出的判断是，中国电车靠低价打开了市场，维修和理赔这一段没有跟上，代价正在兑现，往后还会有更多保险公司跟进，后一句是预测。"
     }
   ],
   "exposureNotes": [
@@ -79,7 +79,7 @@
   "episodes": [
     {
       "id": "EP211",
-      "note": "节目用 Univé 的拒保名单开场，把它当成中国电车出海后售后跟不上、欧洲旧规则开始回头算账的信号。"
+      "note": "用 Univé 的拒保名单开场，讲中国电车出海后售后跟不上、欧洲旧规则开始回头算账。"
     }
   ]
 }
