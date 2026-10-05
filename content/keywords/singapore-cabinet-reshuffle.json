@@ -2,25 +2,35 @@
   "id": "singapore-cabinet-reshuffle",
   "name": "新加坡内阁改组",
   "kind": "event",
-  "asOf": "2026-07-30",
+  "asOf": "2026-10-04",
   "sources": [
     {
       "title": "Changes to Cabinet and Other Appointments, and the Renaming of the Ministry of Trade and Industry (Jul 2026) - Prime Minister's Office Singapore",
       "url": "https://www.pmo.gov.sg/newsroom/changes-to-cabinet-and-other-appointments-and-the-renaming-of-the-ministry-of-trade-and-industry-jul-2026/",
-      "note": "核对本轮改组的公布日期、生效日期与具体任命：沈颖任外交部与内政部第二部长、黄志明任总理公署部长、萧振祥任交通部长兼财政部第二部长、陈诗龙转任贸工部长、刘洁敏任代人力部长，贸易与工业部自 2026 年 10 月 1 日起更名为能源、贸易与工业部。"
+      "note": "核公布和生效日期及任命：「Mr Jeffrey Siow, Mr David Neo, and Ms Sim Ann will be promoted to Ministers」「announced changes to Cabinet……on 22 July 2026」「All appointments will be effective from 27 July 2026」「Ms Sim Ann will be appointed Second Minister for Foreign Affairs, and Second Minister for Home Affairs」「Mr Ng Chee Meng……will be appointed Minister in the Prime Minister's Office」「Mr Jeffrey Siow……Second Minister for Finance」「Ms Jasmin Lau will be appointed Acting Minister for Manpower」「The name change will take effect from 1 October 2026」。"
     },
     {
       "title": "Singapore PM Lawrence Wong steps up renewal pace in cabinet reshuffle - South China Morning Post",
       "url": "https://www.scmp.com/week-asia/politics/article/3361478/singapore-pm-lawrence-wong-steps-renewal-pace-cabinet-reshuffle",
       "note": "核对本轮改组被外界读成新老交替提速，以及多位年轻部长获得晋升的整体判断。"
+    },
+    {
+      "title": "新能源、贸易与工业部成立 新加坡探讨核聚变作为清洁能源选项（商业时报中文版，2026-10-01）",
+      "url": "https://www.businesstimes.com.sg/zh-hans/companies-markets/energy-commodities/singapore-explores-nuclear-fusion-clean-energy-option-under-new-meti",
+      "note": "核改名已生效：「随着前贸易与工业部于周四（10月1日）改组为能源、贸易与工业部（METI）」「能源是关乎新加坡生存的重要资源，需要通过长期规划来保障」。"
+    },
+    {
+      "title": "Jasmin Lau - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Jasmin_Lau",
+      "note": "核刘洁敏 2025 年起任议员：「has served as the Member of Parliament……since 2025」。弱来源，只核当选年份。"
     }
   ],
-  "summary": "新加坡内阁改组指 2026 年 7 月公布、7 月 27 日生效的一轮人事与部门调整，节目拿它当读懂新加坡未来几年执政重心的样本。",
-  "description": "2026 年 7 月，新加坡总理公署公布新一轮内阁改组，多数任命自同年 7 月 27 日生效。主要内容包括：黄循财继续兼任财政部长；沈颖出任外交部第二部长兼内政部第二部长；离开内阁六年的黄志明出任总理公署部长，分管就业保障与职场转型；一批年轻部长和政务官获得晋升，其中 2025 年才首次当选的刘洁敏出任代人力部长；贸易与工业部自 2026 年 10 月 1 日起更名为能源、贸易与工业部。\n\n在颖响力语境里，这份名单不是普通人事新闻，而是一次可读的优先级公示：小国的内阁分工往往比大国更直接地暴露它下一步要押的方向。",
+  "summary": "新加坡内阁改组指 2026 年 7 月 22 日公布、多数任命 7 月 27 日生效的一轮人事和部门调整。EP190 从这份名单拆出财政、人事、东盟和就业四条线，读新加坡接下来几年的执政重心。",
+  "description": "2026 年 7 月 22 日，新加坡总理兼财政部长黄循财宣布新一轮内阁改组，多数任命自 7 月 27 日生效。黄循财继续兼任财政部长。萧振祥、David Neo 和沈颖三人升任部长。萧振祥出任交通部长兼财政部第二部长，沈颖出任外交部第二部长兼内政部第二部长。离开内阁六年的职总秘书长黄志明出任总理公署部长。2025 年才首次当选议员的刘洁敏（Jasmin Lau）出任代人力部长。陈诗龙卸下人力部，专任贸工部（能源与工业）部长。\n\n贸易与工业部自 2026 年 10 月 1 日起更名为能源、贸易与工业部，官方说法是能源对新加坡的经济竞争力和未来越来越要紧。\n\n小国的内阁分工改动不多，每一处都容易看出它下一步要押什么，EP190 就是这样读这份名单的。",
   "conflictNotes": [
-    "最受争议的一点是总理继续兼任财政部长。一种读法是不肯交权，另一种读法是财政这条生命线暂时找不到能接住的人，两种解释指向完全不同的判断。",
-    "新人破格进内阁同样有两种解释：领导人在安插自己的班底，或者执政党的梯队制在赶交接班的时间表。节目认为掌控力增强是结果而不是起点。",
-    "部门更名和外交人事前置看着像常规调整，但放到 2027 年新加坡出任东盟轮值主席国的背景里，更像是为那一年定制的架构。"
+    "最受关注的是总理继续兼任财政部长。一种读法是不肯放权，另一种是财政这条生命线一时找不到能接的人。黄循财在记者会上说一直在物色人选。",
+    "新人破格进内阁也有两种读法：领导人在安插自己的班底，或者人民行动党的梯队制在赶交接班。EP190 倾向后一种，认为掌控力增强只是顺带的结果。",
+    "部门改名、外交人事提前配齐，看着像常规调整。放到 2027 年新加坡出任东盟轮值主席国的背景里，EP190 认为这是为那一年准备的架构。官方给的改名理由只提到能源。"
   ],
   "programAssociations": [
     {
@@ -28,13 +38,13 @@
       "episodes": [
         "EP190"
       ],
-      "note": "EP190 把这次改组拆成四条线：财政部长不放手，是因为小国财政抗风险空间窄、政策连贯性比换人更重要；新人破格上位，是行动党按第五代班子大约 2035 年上位倒推出来的排期；贸工部改名并把能源单独拎出来，是给主席国任期的东盟电网和区域能源合作配架构；黄志明专管就业保障与职场转型，说明未来几年的头等大事落在民生。四条线合起来被概括成两个驱动加一个特殊需要：稳财政、稳就业，外加主席国任期这件必须提前准备的事。"
+      "note": "EP190 把这次改组拆成四条线。财政部长不放手，是因为小国财政没有回旋余地，李显龙 2004 年上任后也攥了好几年。新人破格上位，是按第五代大约 2035 年接班倒推出来的排期，这个年份是推算，黄循财说不设固定时间表。贸工部改名并设双部长，被读成给东盟主席国任期里的东盟电网配架构。黄志明专管就业保障与职场转型，说明未来几年的头等大事是民生。"
     }
   ],
   "aftermathNotes": [
-    "贸易与工业部更名将在 2026 年 10 月 1 日生效，能源从下属板块升格为国家战略板块，这个变化的实际效果要到主席国任期里才看得出来。",
-    "就业保障与职场转型被抬到内阁层级后，工会资源和政府政策资源是否真的打通，是后续可验证的观察点。",
-    "财政部长的接任问题被推迟而不是解决，节目留下的追问是：如果排到时间点仍然没人能接，一个人长期兼两职会不会从稳妥变成风险。"
+    "贸易与工业部已在 2026 年 10 月 1 日改为能源、贸易与工业部。当天陈诗龙在一个核聚变会议上说，能源是关乎新加坡生存的资源，要靠长期规划保障。",
+    "就业保障与职场转型被抬到内阁层级，工会资源和政府政策能不能真正打通，是后面可以检验的地方。",
+    "财政部长的接任被推后，没有解决。EP190 留下的问题是，到了时间点还没人能接，一个人长期兼两职会不会从稳妥变成风险。"
   ],
   "signalNotes": [
     "同一次改组里既动人事又动部门架构时，重点通常不在换了谁，而在那个被单独拎出来的新板块。",
@@ -76,7 +86,7 @@
   "episodes": [
     {
       "id": "EP190",
-      "note": "本期用这份名单拆出财政、人事、东盟和就业四条线，读出新加坡未来几年的执政重心。"
+      "note": "用这份名单拆出财政、人事、东盟和就业四条线，读新加坡接下来几年的执政重心。"
     }
   ]
 }
