@@ -368,59 +368,67 @@
   },
   "革命卫队": {
     "kind": "organization",
-    "asOf": "2026-05-12",
-    "summary": "革命卫队是伊朗与常规军并行的核心武装与安全组织，节目借它理解神权体制在战争与接班压力下靠什么稳盘。",
-    "description": "革命卫队即伊朗伊斯兰革命卫队，是 1979 年伊朗革命后建立的武装力量，与伊朗常规军并行，直接对最高领袖负责。它既承担军事与安全任务，也深度介入政治、代理人网络和经济利益安排，因此不只是“军队的一支”。\n\n节目使用这个词时，重点通常不在军种百科，而在它如何成为神权体制最硬的一层：谁要接班、谁要对外冒险、谁要对内压住裂缝，都绕不开它。",
-    "positionNotes": "在节目里，革命卫队是伊朗体制的硬骨架和稳盘器。它把武装、忠诚、代理战争和内部秩序绑成同一套结构，所以一旦局势进入战时或接班期，它的态度往往比正式制度文本更能决定谁有实际控制力。",
+    "asOf": "2026-10-04",
+    "summary": "革命卫队即伊朗伊斯兰革命卫队，1979 年革命后组建，与常规军并行，直接对最高领袖负责。EP097 讲穆杰塔巴接任最高领袖，短期靠的是他跟革命卫队的关系稳住局面。",
+    "description": "伊斯兰革命卫队（IRGC）是 1979 年伊朗革命后建立的武装力量，定位是保卫革命，直接听命于最高领袖，跟常规军各成体系。它有自己的陆海空部队、负责弹道导弹，下辖巴斯基民兵，海军负责巡逻霍尔木兹海峡，圣城旅在伊拉克、黎巴嫩、叙利亚、也门支持各路武装。两伊战争后它负责战后重建，后来成了伊朗各大经济部门最有力的控制者。2026 年 1 月它参与镇压抗议，欧盟随后把它列为恐怖组织。\n\n2026 年 2 月底美以对伊朗开战，首日空袭中最高领袖阿里·哈梅内伊身亡，3 月 9 日专家会议确定由他的次子穆杰塔巴接任。到 2026 年 6 月，穆杰塔巴仍未公开露面。",
+    "positionNotes": [
+      "伊朗的权力分三块：教士体系、革命卫队和民选政府。总统名义上管政府，可革命卫队不归他管，最高领袖才是它的上级。",
+      "革命卫队同时握着枪和钱。导弹、海峡巡逻和一大块经济都在它手里，谁接班都得先跟它谈妥。"
+    ],
     "programAssociations": [
       {
-        "title": "接班稳盘器",
+        "title": "接班靠它稳盘",
         "episodes": [
           "EP097"
         ],
-        "note": "EP097 讨论穆杰塔巴可能上位时，先讲血缘继承、宗教资格和民族平衡的三重危机，再把革命卫队拉进来说明：短期看，接班安排之所以可能推进，正是因为体制需要先稳住最硬的武装与安全支柱；长期看，这又会让国家更依赖强制稳盘而不是制度化交接。"
+        "note": "EP097 讲哈梅内伊死后，教士们怕聚会被炸，在线上开会选出他的儿子穆杰塔巴。原话把伊朗分成教士体系、伊斯兰革命卫队这个军队体系和总统政府，说总统从来不是最大的官。穆杰塔巴原来在革命卫队有很大权力，如今又和教士集团结合，短期对稳定有帮助，长期却同时动了世袭、宗教资格和族群平衡三处根基。总统刚向邻国道歉，几个小时后革命卫队的导弹照样打过去。原话说石油收入四成进革命卫队，这个比例没找到出处，《经济学人》的说法是 2025 年革命卫队经手约一半石油出口。"
       }
     ],
     "exposureNotes": [
-      "一旦接班人需要先安抚革命卫队，说明国家稳定越来越依赖硬力量，而不是公开可预期的制度。",
-      "它和教士集团捆得越紧，伊朗对外冒险与对内压制就越容易互相加码。",
-      "节目关心的不是它有多强，而是谁必须先得到它的支持才能坐稳最高位置。"
+      "接班人先要拿到革命卫队支持，说明伊朗的权力交接得先过枪杆子这一关。",
+      "总统道歉、革命卫队照打，外界很难判断伊朗的对外承诺到底谁说了算，邻国也就没法跟它谈下去。",
+      "它控制大片经济，打仗和制裁都在改变它的生意，军事决策里掺着经济利益。"
     ],
     "signalNotes": [
-      "当哈梅内伊、世袭、神权裂缝和革命卫队被放在一起时，节目通常已经把伊朗问题从战场推进到政权内部结构。",
-      "如果它与霍尔木兹、代理人网络、地区冲突连着出现，重点往往是伊朗怎样把外部威慑和内部统治捆成同一套安全逻辑。",
-      "读到这个词时要警惕把它简单理解成普通军种；在节目里，它更接近体制硬实力、接班约束和利益网络的总接口。"
+      "伊朗总统或外长的表态跟革命卫队的行动对不上时，以革命卫队的动作为准。",
+      "最高领袖人选跟革命卫队的关系，比他的宗教资历更能说明接班稳不稳。",
+      "海峡里出动的是革命卫队的小快艇，说明伊朗在用不对称的办法施压。"
     ],
     "extensionNotes": [
       {
         "title": "哈梅内伊",
-        "note": "革命卫队的权力位置离不开最高领袖体系，继续读哈梅内伊线，才能看清它为何既是保卫者也是受益者。"
+        "note": "革命卫队直接对最高领袖负责，最高领袖换人，革命卫队站在哪边决定新领袖坐不坐得稳。"
       },
       {
         "title": "世袭",
-        "note": "EP097 的核心风险之一就是血缘继承会让革命卫队短期稳盘、长期透支合法性，这条线适合一起读。"
+        "note": "EP097 的主线，穆杰塔巴子承父位，短期靠革命卫队稳住，长期动摇共和国反王权的立国说法。"
       },
       {
         "title": "霍尔木兹海峡",
-        "note": "节目在海峡风险里常把伊朗的外部施压能力和内部体制硬骨架联动理解，继续读海峡能看见革命卫队的外溢作用。"
+        "note": "革命卫队海军负责巡逻海峡，EP090 讲伊朗能不能封海峡，用的就是这支力量。"
       }
     ],
     "episodes": [
       {
         "id": "EP097",
-        "note": "这期把革命卫队写成伊朗接班期最关键的硬实力稳盘器。"
+        "note": "穆杰塔巴原在革命卫队有很大权力，接任最高领袖后短期靠它和教士集团稳住局面。"
       }
     ],
     "sources": [
       {
-        "title": "Islamic Revolutionary Guard Corps - Encyclopaedia Britannica",
-        "url": "https://www.britannica.com/topic/Islamic-Revolutionary-Guard-Corps",
-        "note": "核对革命卫队建立时间、其独立于常规军并直接对最高领袖负责的组织属性（2026-05-12）"
+        "title": "Council on Foreign Relations：Iran's Revolutionary Guards",
+        "url": "https://www.cfr.org/backgrounders/irans-revolutionary-guards",
+        "note": "核组织和经济角色：「Created after the 1979 revolution, the Islamic Revolutionary Guard Corps answers directly to the Supreme Leader」「naval forces, separate from the naval branch of Iran's regular military……charged with patrolling Iran's maritime borders, including the Strait of Hormuz」「an air force……which runs Iran's ballistic missile program」「the IRGC has become the most powerful controller of all important economic sectors across Iran」。另核欧盟列名：「the European Union is the latest to list the IRGC as a terrorist organization as a result of the guards' role in the crackdowns」。"
       },
       {
-        "title": "The Islamic Revolutionary Guard Corps (IRGC) - Council on Foreign Relations",
-        "url": "https://www.cfr.org/backgrounders/irans-revolutionary-guards",
-        "note": "核对其作为伊朗核心安全组织、代理网络与国内政治经济影响的基本事实（2026-05-12）"
+        "title": "Encyclopaedia Britannica：Islamic Revolutionary Guard Corps",
+        "url": "https://www.britannica.com/topic/Islamic-Revolutionary-Guard-Corps",
+        "note": "原有来源，这轮页面抓取没取到正文，未重新核。"
+      },
+      {
+        "title": "极目新闻：“冒死”接班3个月，伊朗最高领袖穆杰塔巴仍未露面（2026-06-08）",
+        "url": "https://www.ctdsb.net/c1679_202606/2765797.html",
+        "note": "核接班：「当地时间3月9日，伊朗专家会议确定新任伊朗最高领袖人选为穆杰塔巴·哈梅内伊，56岁，是伊朗已故最高领袖阿里·哈梅内伊的次子」「一直未有穆杰塔巴露面的公开报道」。另核首日空袭：「在2月底美以伊战争爆发首日的空袭中，56岁的穆杰塔巴失去了父母、妻子等多位亲人」。"
       }
     ]
   },
