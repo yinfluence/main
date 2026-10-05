@@ -4,7 +4,7 @@ import { fileURLToPath } from 'url';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const rootDir = path.join(__dirname, '..');
-const candidates = [
+const candidates = process.env.AUDIT_SITE_JSON ? [process.env.AUDIT_SITE_JSON] : [
   path.join(rootDir, 'docs', 'data', 'site.json'),
   path.join(rootDir, 'dist', 'data', 'site.json')
 ];

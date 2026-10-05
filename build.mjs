@@ -198,6 +198,17 @@ function keywordAnchor(keyword) {
   };
 }
 
+function mergeDefinitionEpisodes(base = [], extra = []) {
+  const map = new Map();
+  for (const entry of base || []) if (entry?.id) map.set(entry.id, entry);
+  for (const entry of extra || []) {
+    if (!entry?.id) continue;
+    const prev = map.get(entry.id);
+    map.set(entry.id, prev ? { ...prev, ...(entry.note ? { note: entry.note } : {}) } : entry);
+  }
+  return [...map.values()];
+}
+
 function normalizeKeywordProgramEpisodes(keywords) {
   for (const keyword of keywords) {
     const episodeMap = new Map(
@@ -1019,6 +1030,8 @@ async function build() {
           const mergedKeyword = {
             ...definition,
             ...keyword,
+            // 定义文件里人工核过的 episodes（含直播）不能被标签目录整份盖掉
+            episodes: mergeDefinitionEpisodes(keyword.episodes, definition.episodes),
             summary: preferStructuredDefinition
               ? (definition.summary || keyword.summary || makeAutoKeywordSummary(keyword, keywordDefinitions, inheritMaps))
               : (keyword.summary || definition.summary || makeAutoKeywordSummary(keyword, keywordDefinitions, inheritMaps)),
