@@ -178,7 +178,7 @@ function hasOverSplitSingleEpisodePerson(keyword) {
   const associatedEpisodeIds = new Set();
   for (const association of associations) {
     for (const id of association?.episodes || []) {
-      if (/^EP\d{3}$/.test(String(id || '').trim())) associatedEpisodeIds.add(String(id).trim());
+      if (/^(EP\d{3}|LIVE\d{3})$/.test(String(id || '').trim())) associatedEpisodeIds.add(String(id).trim());
     }
   }
   const topLevelEpisodeIds = new Set((keyword.episodes || []).map((episode) => episode?.id).filter(Boolean));

@@ -2,60 +2,65 @@
   "id": "mark-zuckerberg",
   "name": "扎克伯格",
   "kind": "person",
-  "asOf": "2026-05-11",
-  "summary": "扎克伯格是 Meta 创始人、董事长兼 CEO，节目借他代表全球科技平台如何重新定价 AI 初创公司的团队、产品和退出路径。",
-  "description": "扎克伯格（Mark Zuckerberg）是 Meta 的创始人、董事长兼首席执行官。Meta 官方资料称，他 2004 年创办 Facebook，并负责公司整体方向和产品战略。节目语境里，扎克伯格不是传记主角，而是 Manus 进入全球平台视野时的资本和组织参照。",
-  "basicIntro": "扎克伯格是美国科技企业家，Meta 官方投资者资料将他列为 Founder, Chairman and Chief Executive Officer。Facebook 由他于 2004 年创办，后来成为 Meta 旗下核心社交平台之一；公开资料显示，他仍是 Meta 的关键创始人型管理者。",
-  "programRole": "节目使用扎克伯格，是为了让 Manus 这类 AI 初创公司从“某个产品被看见”进入“大平台为什么愿意买人、买团队、买法域和买未来能力”的问题里。扎克伯格在这里承担的是全球平台买方和资本定价者的角色。",
+  "asOf": "2026-10-04",
+  "summary": "扎克伯格是 Facebook 和 Meta 的联合创始人，现任 Meta 董事长兼 CEO。EP057 拿 Meta 收购 Manus 时开出的价码和职位，对比国内大厂怎样对待人才和产品。",
+  "description": "扎克伯格（Mark Zuckerberg）是美国企业家，2004 年在哈佛和室友创办 Facebook，现任 Meta 董事长、CEO 和控股股东。他在节目里只出现在 EP057，作为 Manus 的买家出场。",
+  "basicIntro": "马克·扎克伯格 1984 年 5 月 14 日生，美国企业家。2004 年 2 月他在哈佛和室友一起推出 Facebook，2012 年 5 月带公司上市，现任母公司 Meta Platforms 的董事长、CEO 和控股股东。2025 年 12 月 30 日 Meta 宣布以数十亿美元收购 AI 智能体公司 Manus 的母公司蝴蝶效应，2026 年 4 月 27 日，国家发改委外商投资安全审查工作机制办公室作出禁止投资决定，要求撤销这笔交易。截至 2026 年 9 月底，他仍以 Meta 创始人兼 CEO 身份对外发布公司业务。",
+  "programRole": "EP057 用扎克伯格当国内大厂的对照。字节跳动据说当初只肯出三千万美元，Meta 花了几十亿，还让肖弘出任副总裁。在这期的说法里，扎克伯格买的是肖弘这个人，指望他带 Meta 进入下一轮增长，国内大厂缺的正是这种对人才和顶级产品的尊重。",
   "programAssociations": [
     {
-      "title": "平台买方与创业公司定价",
+      "title": "几十亿与三千万",
       "episodes": [
         "EP057"
       ],
-      "note": "EP057 把 Meta 和扎克伯格放进 Manus 收购传闻中，先说明 Meta 可能看中的不是一个单点功能，而是肖弘、团队和下一轮 AI agent 能力路径；随后节目用这个买方视角反衬国内大厂常见的压价、复制和挖人逻辑。扎克伯格因此成为全球平台如何给 AI 创业公司重估价值的节目锚点。"
+      "note": "EP057 先讲 Meta 收购 Manus 花了几十亿美元，再讲肖弘成了 Meta 副总裁，由此推出扎克伯格要的是这个人，不只是这家公司。对照的是据说字节跳动开价三千万美元，以及国内大厂看懂就复制、挖人再打死的做法。这期还讲到 Manus 先把总部迁到新加坡、关掉北京和武汉办公室，成了完整的新加坡公司，Meta 才投得了、敢快速拍板。"
     }
   ],
   "styleNotes": [
-    "节目里的扎克伯格不是社交媒体争议人物，而是创始人型平台权力的代表：平台可以通过收购把外部创新吸进自己的增长框架。",
-    "他的出现让 Manus 讨论从民族情绪转向公司定价，重点变成谁有能力识别并吸收下一代 AI 产品团队。",
-    "扎克伯格线索带有强买方视角：对创业者而言，被 Meta 看见意味着进入全球估值体系，也意味着公司命运会被大平台战略重新定义。"
+    "买团队连人一起买。EP057 说 Meta 收购 Manus 后让肖弘出任副总裁，看重的是创始人本人。",
+    "肯为看准的产品出高价。几十亿美元和字节跳动的三千万美元，差了几十上百倍。",
+    "决策快。EP057 说新加坡的法律、金融和投资环境托着，Meta 才敢很快拍板。"
   ],
   "methodNotes": [
-    "通过 Meta 的平台规模和资金能力，把外部 AI agent 团队纳入自身 AI 战略，而不是只依靠内部研发排队。",
-    "用收购或整合方式压缩技术追赶时间，使创业公司的产品能力被重新打包为 Meta AI、消费产品和商业产品的一部分。",
-    "在节目归纳里，扎克伯格代表的不是单次交易，而是大型平台把创业者、团队和法域结构一并纳入估值的能力。"
+    "用收购补自己的 AI 产品线，把外部做出来的智能体团队直接收进 Meta。",
+    "给被收购公司的创始人公司内部的高位，让他留下来继续做。",
+    "交易走国际资本和法律通道，找的是法域清楚、能直接投的公司。这条路后来也被中国的外资安全审查拦了下来。"
   ],
   "extensionNotes": [
     {
-      "title": "Meta 与平台资本",
-      "note": "扎克伯格在 EP057 中主要通过 Meta 出场，适合继续看大平台如何用收购吸收外部 AI 能力。"
+      "title": "Meta",
+      "note": "扎克伯格在 EP057 是以 Meta 的身份出场的，收购的后续要看 Meta 这家公司。"
     },
     {
-      "title": "Manus 收购线",
-      "note": "扎克伯格与肖弘、Manus 同读时，重点是创业公司在全球买方眼中被如何定价，而不是人物八卦。"
+      "title": "肖弘",
+      "note": "收购的另一方。EP057 讲他从吉安出来、本科毕业就创业，后来带四十人核心团队迁去新加坡。"
     },
     {
-      "title": "AI 创业退出路径",
-      "note": "EP057 到 EP132 之间的变化说明，大厂买方、美元退出和监管边界会共同决定草根创业能否兑现价值。"
+      "title": "Manus",
+      "note": "EP132 接着讲收购被监管否决，美元基金投早期、卖给美国巨头退出这条路被堵上。"
     }
   ],
   "sources": [
     {
-      "title": "Meta Investor Relations: Mark Zuckerberg",
-      "url": "https://investor.atmeta.com/leadership-and-governance/person-details/default.aspx",
-      "note": "核对扎克伯格为 Meta 创始人、董事长兼 CEO，以及 2004 年创办 Facebook 的官方表述。"
+      "title": "Wikipedia: Mark Zuckerberg",
+      "url": "https://en.wikipedia.org/wiki/Mark_Zuckerberg",
+      "note": "核出生日期 1984-05-14、2004 年 2 月在哈佛与室友推出 Facebook、2012 年 5 月上市、现任 Meta 董事长 CEO 和控股股东。"
     },
     {
-      "title": "Mark Zuckerberg - Encyclopaedia Britannica",
-      "url": "https://www.britannica.com/money/Mark-Zuckerberg",
-      "note": "辅助核对扎克伯格作为 Facebook/Meta 创始人和科技企业家的公开人物基础背景。"
+      "title": "新浪财经转智东西：突发！Meta收购Manus被叫停（2026-04-27）",
+      "url": "https://t.cj.sina.cn/articles/view/5213469505/136bf3b41020015up4",
+      "note": "核 2025 年 12 月 30 日 Meta 宣布收购蝴蝶效应、规模数十亿美元、肖弘原定任副总裁，以及 2026 年 4 月 27 日国家发改委外商投资安全审查工作机制办公室作出禁止投资决定、要求撤销交易。"
+    },
+    {
+      "title": "Unite.AI：Meta 推出 Meta Enterprise Platform（2026-09-28）",
+      "url": "https://www.unite.ai/zh-cn/meta-launches-meta-enterprise-platform-and-taps-mongodb-ceo-to-lead-it/",
+      "note": "核 2026 年 9 月底扎克伯格仍以 Meta 创始人兼 CEO 身份发布公司业务。"
     }
   ],
   "episodes": [
     {
       "id": "EP057",
-      "note": "节目把 Meta 与扎克伯格放进 Manus 传闻中，作为全球平台重新定价 AI 创业公司的参照。"
+      "note": "Meta 花几十亿美元收购 Manus，还让肖弘当副总裁。这期用扎克伯格的出价对比国内大厂的压价和复制。"
     }
   ]
 }
