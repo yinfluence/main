@@ -2,7 +2,7 @@
   "meta": {
     "title": "颖响力知识库",
     "subtitle": "节目、概念、思想模型的结构化索引",
-    "updatedAt": "2026-10-06T03:04:06.354Z"
+    "updatedAt": "2026-10-06T03:29:44.419Z"
   },
   "stats": {
     "episodes": 221,
@@ -13,7 +13,7 @@
     "models": 83,
     "people": 65,
     "themes": 92,
-    "keywords": 1423
+    "keywords": 1430
   },
   "episodes": [
     {
@@ -1551,7 +1551,8 @@
         "新能源汽车",
         "产业基金",
         "零公里二手车",
-        "换电"
+        "换电",
+        "魏建军"
       ],
       "people": [],
       "themes": [
@@ -3325,7 +3326,8 @@
         "森林城市",
         "房地产",
         "房价",
-        "马来西亚"
+        "马来西亚",
+        "马哈蒂尔"
       ],
       "people": [],
       "themes": [
@@ -4175,7 +4177,8 @@
         "锂电池",
         "涨薪",
         "新能源",
-        "宁德时代"
+        "宁德时代",
+        "罗斯福"
       ],
       "people": [],
       "themes": [],
@@ -4931,7 +4934,8 @@
         "迪链",
         "应收账款",
         "现金流",
-        "研发费用资产化"
+        "研发费用资产化",
+        "魏建军"
       ],
       "people": [
         "王传福"
@@ -4957,7 +4961,7 @@
         "EP093"
       ],
       "topic": {
-        "background": "有人问为什么只聊小米，敢不敢聊被说成车圈恒大的比亚迪，口播管它叫迪王。车圈恒大的说法出自长城汽车董事长魏建军，他 2025 年 5 月底说车圈的恒大已经存在，只是还没爆。提到比亚迪就绕不开两件事，一是电车当二手车出口海外，二是零公里二手车，背后都是虚假销售。从9月开始，有关部门严查电车出口和经销商的零公里二手车。比亚迪值得警惕的是一整套结构，虚假销量、应收账款、海外出口、会计处理和供应链金融缠在一起。",
+        "background": "有人问为什么只聊小米，敢不敢聊被说成车圈恒大的比亚迪，口播管它叫迪王。车圈恒大的说法出自长城汽车董事长魏建军，他 2025 年 5 月下旬说车圈的恒大已经存在，只是还没爆。提到比亚迪就绕不开两件事，一是电车当二手车出口海外，二是零公里二手车，背后都是虚假销售。从9月开始，有关部门严查电车出口和经销商的零公里二手车。比亚迪值得警惕的是一整套结构，虚假销量、应收账款、海外出口、会计处理和供应链金融缠在一起。",
         "conflictsIntro": "销量、利润和现金流这三张表，讲的已经不像同一家公司。下面三处分歧决定你把比亚迪当行业龙头，还是当下一个恒大。",
         "conflicts": [
           "高销量究竟来自真实终端需求，还是来自渠道和金融结构的共同堆高。",
@@ -6172,7 +6176,8 @@
         "美国",
         "太平洋战争",
         "区域拒止",
-        "时间"
+        "时间",
+        "罗斯福"
       ],
       "people": [],
       "themes": [
@@ -7350,7 +7355,8 @@
         "宝能",
         "联动云",
         "良币劣币",
-        "资本改造"
+        "资本改造",
+        "奇瑞"
       ],
       "people": [
         "姚振华"
@@ -11395,7 +11401,8 @@
         "电车研发",
         "师徒网络",
         "行业互保",
-        "安全基线"
+        "安全基线",
+        "魏建军"
       ],
       "people": [],
       "themes": [
@@ -12059,7 +12066,9 @@
         "流量影视",
         "黑红营销",
         "古偶",
-        "角色与人设"
+        "角色与人设",
+        "逐玉",
+        "张凌赫"
       ],
       "people": [
         "何润东"
@@ -12080,7 +12089,7 @@
         "EP110"
       ],
       "topic": {
-        "background": "《逐玉》里张凌赫演的武安侯，打完仗脸上还是干净透亮。网友叫他粉底液将军，连官媒都下场评说。十多年前何润东版项羽也被骂太年轻、没霸气，放到今天反而像个武将。这不只是个别演员的问题，根子在观众变了。有调查说，看长剧和网剧的付费观众以女性为主。大家又是看短视频长大的，剧情得尽快给爽点。前些年的大女主靠自己成长，如今要靠男主兜底。逐玉里杀猪出身的女主，一碰上寄养在家里的男主，就成了小娇妻。",
+        "background": "《逐玉》里张凌赫演的武安侯，打完仗脸上还是干净透亮。网友叫他粉底液将军，连官媒都下场评说。十多年前何润东版项羽也被骂太年轻、没霸气，放到今天反而像个武将。这不只是个别演员的问题，根子在观众变了。有调查说，看长剧和网剧的付费观众以女性为主。大家又是看短视频长大的，剧情得尽快给爽点。前些年的大女主靠自己成长，如今要靠男主兜底。逐玉里杀猪出身的女主，一碰上入赘到家里的男主，就成了小娇妻。",
         "conflictsIntro": "一个热梗背后，分歧出在观众、演员、行业和年轻人怎么看战争这四处。",
         "conflicts": [
           "演项羽要像项羽是老规矩，观众却要美颜、要嗑 CP，角色只好给人设让路。",
@@ -12092,7 +12101,8 @@
           "甜宠和古偶可以有，要讨论的是它们成了最安全的标准之后，怎么挤压别的题材。",
           "审查确实影响创作，但行业的自我阉割和资本逻辑同样关键。",
           "吐槽《逐玉》只是入口，要说的是整个行业怎么运转，又把观众往哪带。",
-          "粉底液将军是宣发自造的词、宣发团队改玩黑红，这两处原话是猜测。女性付费客户占主导，原话只说出自调查报告，没给出处。假马公司涨到几十家是听说。本页按观点收。"
+          "粉底液将军是宣发自造的词、宣发团队改玩黑红，这两处原话是猜测。女性付费客户占主导，原话只说出自调查报告，没给出处。假马公司涨到几十家是听说。本页按观点收。",
+          "据说剧集拍得一般、播放量一般，是原话的印象。公开报道里《逐玉》开播第四天平台热度值一度超过《狂飙》的纪录，随后又有人举报数据造假，热度高低本页不下判断。"
         ],
         "mechanism": "文娱产业：《逐玉》男主打仗还带着完美妆造，被网友叫成粉底液将军。 -> 粉丝经济：演员的钱来自粉丝不来自角色，所以人设绝不能为角色让路。 -> 内容创作：剧本跟着 CP 和粉丝情绪改，战争的残酷被美容滤镜冲干净。 -> 资本与公司：审查之外行业还在自我阉割，什么都做成古偶才是最安全的。 -> 舆论传播：黑红也算宣发资产，被骂不要紧，能把路人拖进播放页就行。 -> 文化生态：有流量有资本的冲到前面，真有才华的创作者越来越难出头。",
         "extensions": [
@@ -21860,7 +21870,9 @@
         "补贴退坡",
         "比亚迪",
         "零跑",
-        "极氪"
+        "极氪",
+        "魏建军",
+        "奇瑞"
       ],
       "people": [],
       "themes": [
@@ -23286,7 +23298,8 @@
         "消防规范",
         "社会保障",
         "工会",
-        "法西斯"
+        "法西斯",
+        "罗斯福"
       ],
       "people": [
         "弗朗西丝·帕金斯"
@@ -23428,7 +23441,8 @@
         "隔离墙",
         "苏联加盟共和国",
         "赛力斯",
-        "问界"
+        "问界",
+        "奇瑞"
       ],
       "people": [],
       "themes": [
@@ -23916,7 +23930,8 @@
         "东盟",
         "东盟主席国",
         "职场转型",
-        "务实合法性"
+        "务实合法性",
+        "刘洁敏"
       ],
       "people": [
         "黄循财",
@@ -28297,7 +28312,8 @@
         "岳不群",
         "笑傲江湖",
         "令狐冲",
-        "比亚迪"
+        "比亚迪",
+        "魏建军"
       ],
       "boundaries": [
         "即兴口播，没有成稿。直播一开始通报的迪拜飞特拉维夫航班疑似劫机，当场说信息不一定准确、周六场再展开，本页没有收。观众想听的 F-35 也留到周六。",
@@ -32752,7 +32768,8 @@
         "灰色贸易",
         "算力中心",
         "星球大战计划",
-        "GP与LP"
+        "GP与LP",
+        "奇瑞"
       ],
       "boundaries": [
         "这是直播回放的整理稿。即兴口播，多处自陈是个人判断和外行看法，不是成稿节目",
@@ -32962,7 +32979,8 @@
         "移民",
         "战备",
         "社会测试",
-        "机器人征税"
+        "机器人征税",
+        "罗斯福"
       ],
       "boundaries": [
         "这是直播回放的整理稿。口播即兴，不是成稿节目。判断带着个人色彩，也没有逐条给信源",
@@ -35045,7 +35063,8 @@
         "A股",
         "中产阶级",
         "新媒体政治",
-        "万物互联"
+        "万物互联",
+        "奇瑞"
       ],
       "boundaries": [
         "这是直播回放的整理稿。口播即兴，不是成稿节目，多处自陈是推测",
@@ -73128,15 +73147,15 @@
         "fuwei-biaoju",
         "byd-brazil-labor-case",
         "catl",
+        "chery",
         "ford-five-dollar-day",
         "gongyinglian-jinrong",
         "lirun-jiang",
         "ningwang",
+        "wei-jianjun",
         "youche",
         "zero-mileage-used-cars",
-        "王传福",
-        "new-energy-vehicles",
-        "huashan-pai"
+        "王传福"
       ],
       "parents": [
         "new-energy-vehicles"
@@ -73151,6 +73170,7 @@
         "huawei"
       ],
       "relatedKeywords": [
+        "chery",
         "geli-qiang",
         "gongfeng",
         "guangke-ji",
@@ -73161,8 +73181,7 @@
         "pre-emptive-screening",
         "sailisi",
         "solemnity",
-        "tao-dinglv",
-        "wenjie"
+        "tao-dinglv"
       ],
       "episodes": [
         {
@@ -74475,11 +74494,11 @@
         "fuel-subsidy",
         "indonesia",
         "lingshi-baohu",
+        "mahathir-mohamad",
         "malacca-strait",
         "malaysian-ringgit",
         "najib-razak",
-        "putrajaya",
-        "singapore"
+        "putrajaya"
       ],
       "parents": []
     },
@@ -74892,6 +74911,7 @@
         "singapore",
         "global-innovation-index",
         "hdb-flats",
+        "jasmin-lau",
         "ng-chee-meng",
         "peoples-action-party",
         "sim-ann",
@@ -74899,8 +74919,7 @@
         "singapore-ministerial-salary-review-2026",
         "workforce-transformation",
         "李显龙",
-        "city-state",
-        "wushi-hefaxing"
+        "city-state"
       ],
       "episodes": [
         {
@@ -75718,6 +75737,7 @@
       "relatedKeywords": [
         "singapore",
         "hdb-flats",
+        "jasmin-lau",
         "peoples-action-party",
         "shanghai",
         "黄循财",
@@ -76744,7 +76764,9 @@
       ],
       "relatedKeywords": [
         "catl",
+        "chery",
         "wan-yi-shun-cha",
+        "wei-jianjun",
         "xi-tu",
         "new-energy-vehicles",
         "chuhai",
@@ -77096,6 +77118,147 @@
       "parents": []
     },
     {
+      "id": "chery",
+      "name": "奇瑞",
+      "summary": "奇瑞是 1997 年在安徽芜湖成立的车企，2025 年 9 月在港交所上市。EP176 拿它 6 月七成多销量靠出口，讲出海撑起来的繁荣。EP066 讲它和以色列资本合办的观致，怎样落到了宝能手里。",
+      "description": "奇瑞汽车股份有限公司成立于 1997 年 1 月 8 日，总部在安徽芜湖，董事长尹同跃。2025 年 9 月 25 日在香港联交所主板上市，股票代码 9973，募资约 91.45 亿港元。旗下除了奇瑞品牌，还有星途、捷途、iCAR。和华为合作的鸿蒙智行里，智界系列也由它来做。\n\n它是出口量最大的中国车企之一。2026 年 6 月集团卖出 256612 辆，其中出口 191062 辆。上半年累计出口约 94.4 万辆，将近占总销量的七成。",
+      "aliases": [
+        "奇瑞汽车",
+        "奇瑞集团",
+        "Chery"
+      ],
+      "relatedKeywords": [
+        "byd",
+        "chuhai",
+        "geely",
+        "huawei",
+        "price-war",
+        "sailisi",
+        "wenjie",
+        "姚振华",
+        "宝能",
+        "观致汽车",
+        "new-energy-vehicles"
+      ],
+      "episodes": [
+        {
+          "id": "EP066",
+          "note": "观致是奇瑞和以色列资本合办的，奇瑞亏怕了之后，宝能拿走 51% 控股。"
+        },
+        {
+          "id": "EP176",
+          "note": "6 月 25.7 万辆里 19 万是出口，用来说明销量繁荣靠出海撑着。"
+        },
+        {
+          "id": "EP187",
+          "note": "小齐（推测是奇瑞）和江淮、北汽接连加入华为生态，摊薄了赛力斯的议价权。"
+        },
+        {
+          "id": "LIVE017",
+          "note": "观众问奇瑞，回答是它也靠海外，但走死干型的传统工业路子，跟比亚迪不是一条路。"
+        },
+        {
+          "id": "LIVE027",
+          "note": "赛力斯都亏成那样，奇瑞（推测）这些公司为什么还来，回答是看钱花的是不是自己的。"
+        }
+      ],
+      "kind": "organization",
+      "asOf": "2026-10-06",
+      "positionNotes": [
+        "股东背景偏地方国资。主要股东里有奇瑞控股和芜湖市建设投资公司，上市致辞时尹同跃先谢的是安徽省和芜湖市政府。",
+        "销量重心在海外。2026 年上半年出口约 94.4 万辆。奇瑞自称这是中国车企半年出口首次超过 90 万辆，欧洲销量增长超过两倍。",
+        "既有自主品牌，也替华为生态造车。智界系列由它生产，技术和渠道在鸿蒙智行那一边。2026 年 9 月华为说要把更多资源投到尊界、享界、智界、尚界。",
+        "做过合资高端的尝试。2007 年它和以色列集团合办奇瑞量子，后来改名观致。2017 年宝能拿下观致 51% 股份，成了大股东。"
+      ],
+      "programAssociations": [
+        {
+          "title": "出口撑起来的销量",
+          "episodes": [
+            "EP176",
+            "LIVE017"
+          ],
+          "note": "EP176 拆 2026 年 6 月车企销量。媒体一片暴涨，账摊开看结构并不好。比亚迪四成多靠出口，奇瑞更夸张，25.7 万辆里有 19 万卖到海外。出海也不是给国内泄洪，要另掏几百亿建厂，还要撞上反补贴税和本土化率。LIVE017 有观众问奇瑞怎么样，回答是它也是海外占大头，但属于死干型的传统工业路子。它在当地挨的攻击小，出了事自己能解决。比亚迪走的是马斯克那套，出了事得靠别人兜底。"
+        },
+        {
+          "title": "高端合资怎样变成宝能的局",
+          "episodes": [
+            "EP066"
+          ],
+          "note": "EP066 讲观致的来路。2007 年奇瑞跟以色列资本合办观致，要对标德系豪华车。CEO 来自大众，设计总监来自宝马，三地设研发中心，开局被称作天胡。连着几年亏了 66 亿元，奇瑞慌了，觉得这个方向市场不买账。2017 年宝能姚振华拿 66 亿进来占 51%，奇瑞和以色列方都成了小股东。宝能许诺五年投五百亿，要把观致做成中国的特斯拉，后来观致被申请破产审查。"
+        },
+        {
+          "title": "接入华为的第二批车企",
+          "episodes": [
+            "EP187",
+            "LIVE027"
+          ],
+          "note": "EP187 讲赛力斯给华为做问界，卖得越多亏得越多。早年只有赛力斯一家交出自主权，稀缺性拉满。如今小齐、小江、小北接连入伙，按读音和鸿蒙智行的合作方推测是奇瑞、江淮、北汽。渠道就那么大，多一家摊薄一份，赛力斯的议价权跟着散了，华为哪天也能扶别人接盘。LIVE027 也问到这一点，赛力斯都落到这个地步，奇瑞这些公司为什么还来。回答是先看这钱花的是不是自己的。"
+        }
+      ],
+      "exposureNotes": [
+        "销量越来越靠出口，国内那部分的底子就藏在总数后面。EP176 的读法是表面规模越大，根基越不稳。",
+        "出海要另建工厂和供应链，还要面对欧盟的反补贴税和东南亚的本土化率要求。EP176 说这些都得真金白银去填。",
+        "观致那一段说明，高端合资扛不住长期亏损时，奇瑞选了把控股权让给资本方，自己退成小股东。",
+        "智界由奇瑞生产，技术和渠道在鸿蒙智行手里。EP187 拿赛力斯的处境提醒后来者，入伙的家数越多，每一家的议价权越薄。"
+      ],
+      "signalNotes": [
+        "车企月度销量公告里出口数字远超国内时，先把两部分拆开看，再问海外那部分要多少投入才换得来。",
+        "LIVE017 说的死干型、传统工业路子，指不靠刷单讲故事、出了事自己扛，拿来对照的是比亚迪的做法。",
+        "鸿蒙智行几个界的合作方一调整，问题就落到谁握着品牌和渠道上，奇瑞这样的制造方处在被动的一边。",
+        "一家车企拿高端子品牌去合资或引入资本，要接着看控股权最后落在谁手里。观致的控股权就是这样从奇瑞转到了宝能。"
+      ],
+      "extensionNotes": [
+        {
+          "title": "观致汽车",
+          "note": "奇瑞和以色列集团合办的高端品牌，2017 年被宝能控股。EP066 拿它讲车圈劣币驱逐良币。"
+        },
+        {
+          "title": "赛力斯",
+          "note": "鸿蒙智行最早的合作方。EP187 拿它的亏损给后来入伙的奇瑞们当镜子。"
+        },
+        {
+          "title": "车企出海",
+          "note": "奇瑞将近七成销量在海外。出海要掏多少钱、撞上哪些墙，EP176 在这条线上讲。"
+        },
+        {
+          "title": "比亚迪",
+          "note": "LIVE017 拿它跟奇瑞对比，一个要全资建厂冲世界第一，一个走传统工业路子。"
+        },
+        {
+          "title": "吉利",
+          "note": "LIVE017 说奇瑞在海外出了事自己能解决，就跟吉利一样。三家放在一起，能看出出海的几种做法。"
+        }
+      ],
+      "sources": [
+        {
+          "title": "新华网：奇瑞汽车港交所挂牌上市（2025-09-25）",
+          "url": "http://www.news.cn/auto/20250925/9e87615c090d45698bf304bd9a05ad33/c.html",
+          "note": "核「奇瑞汽车股份有限公司（股票代码：9973.HK）在香港联合交易所主板正式挂牌上市」、发行价 30.75 港元、「募集资金总额约91.45亿港元」、董事长尹同跃、致辞「向安徽省政府和芜湖市政府……致以感谢」。"
+        },
+        {
+          "title": "新浪财经转奇瑞汽车：奇瑞集团6月销量25.7万（2026-07-01）",
+          "url": "https://finance.sina.com.cn/wm/2026-07-01/doc-inifinuh3969006.shtml",
+          "note": "核「2026年6月，奇瑞集团销售汽车256,612辆……其中，出口191,062辆」「1-6月份，集团累计销售汽车1,357,533辆」「上半年累计出口汽车943,817辆」「欧洲销量增长超2倍」。企业自发稿，数字按企业口径。"
+        },
+        {
+          "title": "维基百科：奇瑞汽车",
+          "url": "https://zh.wikipedia.org/zh-cn/%E5%A5%87%E7%91%9E%E6%B1%BD%E8%BD%A6",
+          "note": "弱来源，核成立日期 1997 年 1 月 8 日、总部安徽省芜湖市、旗下星途捷途 iCar 智界等品牌、主要股东含奇瑞控股集团与芜湖市建设投资有限公司。"
+        },
+        {
+          "title": "新浪财经转正商参阅：2026年新能源车的第一颗雷，炸了！（2026-01-04）",
+          "url": "https://finance.sina.com.cn/roll/2026-01-04/doc-inhfcxwn7450287.shtml",
+          "note": "核「2007 年，奇瑞汽车与以色列集团共同出资成立了奇瑞量子汽车有限公司……在 2011 年正式更名为『观致汽车』」「三年累计亏损 66 亿元」「宝能集团斥资 66.3 亿元取得观致 51% 股份」、苏州中院受理观致破产审查申请。"
+        },
+        {
+          "title": "证券日报网：持续加码「四界」 鸿蒙智行完成战略再平衡（2026-09-29）",
+          "url": "http://www.zqrb.cn/auto/qichedongtai/2026-09-29/A1790668008084.html",
+          "note": "核「问界后续将由赛力斯主导、华为终端参与赋能；鸿蒙智行则将分出更多资源与精力，强化对尊界、享界、智界、尚界的投入」，以及「奇瑞汽车董事长尹同跃在发布会上披露，智界全系累计交付即将突破20万辆」。"
+        }
+      ],
+      "parents": []
+    },
+    {
       "kind": "geography",
       "asOf": "2026-10-04",
       "sources": [
@@ -77217,6 +77380,7 @@
         "剑宗小厮"
       ],
       "relatedKeywords": [
+        "chery",
         "geli-qiang",
         "gongfeng",
         "huawei",
@@ -78153,6 +78317,122 @@
       "parents": [
         "singapore"
       ]
+    },
+    {
+      "id": "wei-jianjun",
+      "name": "魏建军",
+      "summary": "魏建军是企业家，长城汽车董事长。2025 年 5 月他说汽车行业的恒大已经存在、只是还没爆。EP015、EP045、LIVE046 拿这句话讲车圈的债务，EP103、EP176 拿他当说破行业问题的人。",
+      "description": "魏建军 1964 年生，河北保定人。1990 年他 26 岁，承包了叔叔创办、已经欠债的乡办企业长城工业公司。后来靠皮卡起家，把它做成了长城汽车。2023 年长城向三个部门举报比亚迪两款插混车涉嫌排放不达标。2025 年 5 月 23 日他接受新浪财经专访，说出了车圈恒大那句话。\n\nEP015、EP045 和 LIVE046 拿这句话讲电车行业的债务风险。EP103 和 EP176 拿他当说破行业问题的人。一处讲他为此挨骂，一处引他说靠补贴的行业长不大。",
+      "aliases": [
+        "魏总",
+        "Wei Jianjun"
+      ],
+      "relatedKeywords": [
+        "byd",
+        "di-fang-zhai",
+        "new-energy-vehicles",
+        "price-war",
+        "subsidy-phaseout",
+        "zero-mileage-used-cars",
+        "恒大"
+      ],
+      "episodes": [
+        {
+          "id": "EP015",
+          "note": "结尾引长城魏总说电车业的恒大已经出现，接着讲地方隐性债务才是最大的黑天鹅。"
+        },
+        {
+          "id": "EP045",
+          "note": "开场拿他提出的车圈恒大当题目，拆比亚迪的虚假销售和应收账款。"
+        },
+        {
+          "id": "EP103",
+          "note": "长城的某位领导（推测是他）公开质疑行业，没换来自查，反倒被围攻。"
+        },
+        {
+          "id": "EP176",
+          "note": "拆完 2026 年上半年销量，结尾引他的话说靠补贴活着的行业长不大。"
+        },
+        {
+          "id": "LIVE046",
+          "note": "观众提到他去年就说车圈有恒大，回应拿王石当年警告地产挨骂作比。"
+        }
+      ],
+      "englishName": "Wei Jianjun",
+      "kind": "person",
+      "asOf": "2026-10-06",
+      "basicIntro": "魏建军，1964 年生，河北保定人，企业家，长城汽车股份有限公司董事长。长城工业公司由他叔叔魏德良 1984 年在保定南大园乡创办，1989 年魏德良车祸去世后陷入亏损。1990 年 7 月，26 岁的魏建军承包公司当了总经理。1996 年长城推出皮卡迪尔，1998 年改制为长城汽车集团，他成为控股股东。2026 年 7 月长城预告上半年净利润同比下降约六成，他当天在微博上作了回应。",
+      "programRole": "几期引他的话，都是拿一位车企老板的公开表态当证据。车圈恒大那一句，被用来说明电车行业的债务和虚假销量，业内人自己也看得见。他公开质疑同行之后挨的骂，被用来说明这个行业里说破问题的人讨不到好。",
+      "programAssociations": [
+        {
+          "title": "车圈的恒大已经存在",
+          "episodes": [
+            "EP015",
+            "EP045",
+            "LIVE046"
+          ],
+          "note": "EP015 讲地方债和电车绑在一起，产业基金入股、零公里二手车把销量做大。结尾引长城汽车的魏总说过，电车业的恒大已经出现了，认为刺破只是时间问题。EP045 开场就拿车圈恒大当题目，回应有人问敢不敢聊比亚迪。LIVE046 有观众说去年魏总就讲过，今天还有人说这是扯淡。回应是拿王石当年警告地产出大问题、结果挨骂作比，魏总不是一般人。他原话没有点名哪一家。"
+        },
+        {
+          "title": "说破的人挨骂，靠补贴的长不大",
+          "episodes": [
+            "EP103",
+            "EP176"
+          ],
+          "note": "EP103 讲电车研发里人人统一口径，问为什么没有同行跳出来揭穿。举的例子是长城的某位领导，推测指魏建军。他说了，没换来任何自查，矛头全对准他，到现在还有人骂他的品牌是垃圾。EP176 拆 2026 年 6 月车企销量，结尾引魏建军的话。大意是一个行业靠补贴和政府奖励活着，背后再搞点猫腻，就长不大。这句话在公开报道里没有查到原文，只能当转述看。"
+        }
+      ],
+      "styleNotes": [
+        "说话直接，敢在公开场合点行业的问题。2025 年 5 月那次专访，媒体说他的很多观点引爆了舆论。",
+        "跟对手正面较劲。2023 年长城举报比亚迪秦 PLUS DM-i、宋 PLUS DM-i 用常压油箱，涉嫌蒸发排放不达标。",
+        "坏消息自己出面讲。2026 年上半年利润下滑，业绩预告发布当天，他就在微博上解释原因，说销量和营收仍在增长。"
+      ],
+      "methodNotes": [
+        "起家靠找空档。1990 年代长城没有轿车生产资质，他去泰国和美国考察后转做皮卡。发动机、变速箱都外购，拼出低价车打开市场。",
+        "一步步把控制权拿到手。1998 年乡政府按贡献给他折算股权。同年又把 21% 股权作价 800 万元转给他，他持股 46%，成了控股股东。",
+        "跟同行较劲走正式程序。举报比亚迪时，2023 年 4 月 11 日先向生态环境部、市场监管总局和工信部递交材料。5 月 25 日才发声明公开。"
+      ],
+      "extensionNotes": [
+        {
+          "title": "恒大",
+          "note": "车圈恒大说法的原型。EP045 拿恒大以价换量、虚假销售的路子去对照比亚迪。"
+        },
+        {
+          "title": "比亚迪",
+          "note": "外界普遍把车圈恒大读成在说它，他原话没有点名。2023 年长城举报的也是它的两款插混车。"
+        },
+        {
+          "title": "零公里二手车",
+          "note": "EP015 和 EP176 都把它算作虚增销量的手段，车圈恒大这句话背后说的就是这类做法。"
+        },
+        {
+          "title": "地方债",
+          "note": "EP015 引他的话之前，先讲地方产业基金怎样入股车企，认为地方隐性债务才是最大的黑天鹅。"
+        }
+      ],
+      "sources": [
+        {
+          "title": "维基百科：魏建军",
+          "url": "https://zh.wikipedia.org/zh-cn/%E9%AD%8F%E5%BB%BA%E5%86%9B",
+          "note": "弱来源，核「魏建军（1964年—），男，河北保定人，中国企业家，现任长城汽车股份有限公司董事长」。1984 年魏德良创办长城工业公司、1989 年车祸去世、「26岁的魏建军……在1990年7月成了长城工业公司的总经理」、1995 年考察泰国美国定皮卡、1996 年皮卡迪尔下线、1998 年获股本权益并以 800 万元受让 21% 股权后持股 46%。"
+        },
+        {
+          "title": "新浪财经转澎湃新闻：「车圈恒大」，究竟是谁（2025-06-15）",
+          "url": "https://finance.sina.com.cn/jjxw/2025-06-15/doc-infacqvk4384358.shtml",
+          "note": "核「2025年5月23日，长城汽车董事长魏建军接受新浪财经的专访……很多观点引爆舆论。其中之一是提到，『现在汽车产业里面的「恒大」，已经存在了，只不过没爆而已』」。"
+        },
+        {
+          "title": "新华网转上海证券报：巨头「开战」！长城汽车举报比亚迪（2023-05-25）",
+          "url": "http://www.xinhuanet.com/auto/20230525/4e1a7b3a69cc407b83eee947d3895dea/c.html",
+          "note": "核「长城汽车4月11日向生态环境部、国家市场监督管理总局、工业和信息化部递交举报材料，就比亚迪秦PLUS DM-i、宋PLUS DM-i采用常压油箱，涉嫌整车蒸发污染物排放不达标的问题进行举报」，5 月 25 日发声明。"
+        },
+        {
+          "title": "经济观察网：魏建军回应长城汽车上半年业绩（2026-07-15）",
+          "url": "https://www.eeo.com.cn/2026/0715/959705.shtml",
+          "note": "核现职与近况：「预计 2026 年上半年净利润为23.5 亿元到 26 亿元，同比减少 58.97% 到 62.92%」「当日，长城汽车董事长魏建军通过微博对公司上半年业绩预告进行了回应」，称销量和营收同比增长。"
+        }
+      ],
+      "parents": []
     },
     {
       "kind": "organization",
@@ -80213,13 +80493,133 @@
         "electronic-geofence",
         "new-energy-vehicles",
         "remote-vehicle-lockout",
+        "wei-jianjun",
         "zhongtai",
         "经销商",
         "海外出口",
         "虚假销售",
         "换电",
-        "资产包",
-        "过剩产能"
+        "资产包"
+      ],
+      "parents": []
+    },
+    {
+      "id": "franklin-roosevelt",
+      "name": "罗斯福",
+      "summary": "富兰克林·罗斯福是美国第 32 任总统，1933 年就任，1945 年在第四个任期内去世。几期节目拿他推行的新政，讲大萧条之后怎样把钱还给工人。EP056 拿他定下的先欧后亚，讲拖得起的一方。",
+      "description": "罗斯福 1882 年生于纽约州海德公园，民主党人，当过纽约州州长。1921 年患病后双腿瘫痪。1932 年大选击败胡佛，上任头一百天推出一批新政法案，后来又签了瓦格纳法和社会保障法。他是美国唯一任期超过两届的总统，带美国打了大半场二战，1945 年 4 月 12 日去世。\n\n劳工部长弗朗西丝·帕金斯是他任命的，她也是美国第一位女性内阁成员。EP186 说新政的工时、最低工资和社保条款，就是她入阁前向他开的条件。",
+      "aliases": [
+        "富兰克林·罗斯福",
+        "小罗斯福",
+        "FDR",
+        "Franklin D. Roosevelt"
+      ],
+      "relatedKeywords": [
+        "a-gen-ting",
+        "catl",
+        "fascism",
+        "frances-perkins",
+        "great-depression",
+        "labor-union",
+        "new-deal",
+        "pearl-harbor",
+        "triangle-shirtwaist-fire"
+      ],
+      "episodes": [
+        {
+          "id": "EP039",
+          "note": "新政靠国家工业复兴法给工会谈判权，用来对照宁德时代的小幅加薪。"
+        },
+        {
+          "id": "EP056",
+          "note": "罗斯福政府先欧后亚，日本排不进首要目标，用来讲拖得起的一方定节奏。"
+        },
+        {
+          "id": "EP186",
+          "note": "帕金斯向罗斯福开出工时、最低工资和社保的条件，新政在革命和法西斯之间走出第三条路。"
+        },
+        {
+          "id": "LIVE026",
+          "note": "美国换了二十年党才等到罗斯福新政，用来对照阿根廷的民粹补贴。"
+        }
+      ],
+      "englishName": "Franklin Delano Roosevelt",
+      "kind": "person",
+      "asOf": "2026-10-06",
+      "basicIntro": "富兰克林·德拉诺·罗斯福，民主党政治人物，美国第 32 任总统。1882 年 1 月 30 日生，1945 年 4 月 12 日因脑溢血去世。1911 到 1913 年任纽约州参议员，1913 年起任海军助理部长。1929 到 1932 年任纽约州州长。1921 年患病后腰部以下终身瘫痪，当时诊断为小儿麻痹症。1933 年就任总统，四次当选，任期从大萧条一直延续到二战末期。",
+      "programRole": "他在这里代表一种走出危机的选法。放任资本和全盘激进两头都走不通时，他的政府靠工会谈判、最低工资和社保，把工人收入和国内消费重新接上。EP056 另取他打二战的办法，说明拖得起的一方不必抢先出手。",
+      "programAssociations": [
+        {
+          "title": "大萧条里把钱还给工人",
+          "episodes": [
+            "EP186",
+            "EP039",
+            "LIVE026"
+          ],
+          "note": "EP186 从 1911 年三角内衣厂大火讲到新政。目睹那场火的帕金斯当上劳工部长，向罗斯福开出硬条件。要限制工时，设最低工资，废除童工，建失业和养老保障。当时还有退伍军人在资本家支持下写信给一位将军，想推翻罗斯福，将军没答应，把事情揭发了。EP039 讲国家工业复兴法给工会谈判权，用来对照宁德时代每月加薪 150 元。LIVE026 说美国换了二十年党才等到罗斯福，靠让普通人有钱把内需做起来。"
+        },
+        {
+          "title": "拖得起的一方定节奏",
+          "episodes": [
+            "EP056"
+          ],
+          "note": "EP056 讲日本为什么急着跟美国开战。罗斯福政府定的是先欧后亚，先收拾德国，有余力再回头打日本，日本根本排不进首要目标。日本自己算出来的战略定力只有一年，美国可以慢慢打。日本像赶火车一样，想靠一场最终战把问题解决掉。"
+        }
+      ],
+      "styleNotes": [
+        "善用广播直接跟民众说话。当州长时就开始炉边谈话，当总统后用它安抚大萧条里惶恐的公众。",
+        "上任先求快。头一百天里推出银行、农业和工业方面的一批法案，1935 年又把新政往偏向劳工的方向推了一步。",
+        "身体受限也不退场。1921 年双腿瘫痪后，他靠长期康复重回政坛，七年后当选纽约州长。"
+      ],
+      "methodNotes": [
+        "借工会和法律给工人撑腰，不由政府直接定工资涨多少。EP039 说新政让工会自己去跟企业谈，政府另设劳工委员会处理纠纷。",
+        "放手给能干的人。EP186 说帕金斯入阁前就开出整套劳工改革条件，他接下了。",
+        "跟最高法院硬碰。第二个任期里，最高法院推翻了多项新政措施，他推动 1937 年的司法程序改革法案去跟法院较劲。",
+        "打仗时先分主次。美国参战后，他和丘吉尔在 1941 年 12 月的阿卡迪亚会议上确认先打德国，对日本先守住。"
+      ],
+      "extensionNotes": [
+        {
+          "title": "罗斯福新政",
+          "note": "他推行的那套改革。EP186、EP039 和 LIVE026 都从这里讲工资、工会和内需。"
+        },
+        {
+          "title": "弗朗西丝·帕金斯",
+          "note": "他任命的劳工部长。EP186 说新政里的工时、最低工资和社保，都出自她开的条件。"
+        },
+        {
+          "title": "大萧条",
+          "note": "他上台时面对的局面。EP186 说病根是工资压得太低，工人买不起自己造的东西。"
+        },
+        {
+          "title": "珍珠港",
+          "note": "美国由此参战。EP056 讲日本为什么急着打这一仗，罗斯福政府却按先欧后亚慢慢来。"
+        },
+        {
+          "title": "阿根廷",
+          "note": "LIVE026 拿同一时期的阿根廷作对照，美国靠新政做起内需，阿根廷走了发补贴的民粹路线。"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Franklin D. Roosevelt | Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Franklin_D._Roosevelt",
+          "note": "核「January 30, 1882 – April 12, 1945」「the 32nd president of the United States, serving from 1933 until his death in 1945」「the only one to have served more than two terms」、纽约州参议员 1911–1913、海军助理部长 1913、「44th governor of New York from 1929 to 1932」、1921 年确诊 polio「permanently paralyzed from the waist down」、州长时开始 fireside chats、「Frances Perkins, as Secretary of Labor, became the first woman appointed to a cabinet position」、Europe first、1937 年 Judicial Procedures Reform Bill。"
+        },
+        {
+          "title": "Franklin D. Roosevelt: Life in Brief | Miller Center, University of Virginia",
+          "url": "https://millercenter.org/president/fdroosevelt/life-in-brief",
+          "note": "核「born in 1882 in Hyde Park, New York」、1921 年患 polio 双腿瘫痪、「First Hundred Days」立法、fireside chats「calmed a worried public」、1935 年转向、瓦格纳法与社会保障法、「In April 1945……collapsed and died of a cerebral hemorrhage」。"
+        },
+        {
+          "title": "Business Plot | Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Business_Plot",
+          "note": "核 EP186 提到的政变图谋：「a political conspiracy in 1933……to overthrow the government of President Franklin D. Roosevelt」，退役少将 Smedley Butler 1934 年向国会委员会作证揭发。"
+        },
+        {
+          "title": "Europe first | Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Europe_first",
+          "note": "核 EP056 的先欧后亚：「At the December 1941 Arcadia Conference between President Franklin Roosevelt and Prime Minister Winston Churchill……the decision for the 'Europe First' strategy was affirmed」。"
+        }
       ],
       "parents": []
     },
@@ -82486,6 +82886,7 @@
       "name": "碧桂园",
       "aliases": [],
       "relatedKeywords": [
+        "mahathir-mohamad",
         "real-estate",
         "佛山",
         "地方政府",
@@ -82589,6 +82990,7 @@
       ],
       "relatedKeywords": [
         "byd-brazil-labor-case",
+        "chery",
         "electronic-geofence",
         "netherlands",
         "odysseus",
@@ -85343,14 +85745,14 @@
         "catl",
         "fascism",
         "frances-perkins",
+        "franklin-roosevelt",
         "gilded-age",
         "great-depression",
         "labor-union",
         "social-safety-net",
         "triangle-shirtwaist-fire",
         "ba-er-ba-di-chan-xin-zheng",
-        "beijing-loushi-xinzheng",
-        "nanjing-xuewei-xinzheng"
+        "beijing-loushi-xinzheng"
       ],
       "episodes": [
         {
@@ -88551,6 +88953,7 @@
       ],
       "relatedKeywords": [
         "er-zhan",
+        "franklin-roosevelt",
         "japan",
         "oil",
         "sui-jing"
@@ -88581,6 +88984,7 @@
         "职业转型"
       ],
       "relatedKeywords": [
+        "jasmin-lau",
         "ng-chee-meng",
         "singapore",
         "singapore-cabinet-reshuffle",
@@ -90046,6 +90450,7 @@
       ],
       "relatedKeywords": [
         "fei-e-po-lai",
+        "franklin-roosevelt",
         "gilded-age",
         "ma-dao-zhan-zheng",
         "new-deal",
@@ -90055,8 +90460,7 @@
         "jiqiren-zhengshui",
         "keiko-fujimori",
         "keir-starmer",
-        "lin-yutang",
-        "peru"
+        "lin-yutang"
       ],
       "episodes": [
         {
@@ -90921,6 +91325,7 @@
       ],
       "relatedKeywords": [
         "fascism",
+        "franklin-roosevelt",
         "gilded-age",
         "new-deal",
         "triangle-shirtwaist-fire",
@@ -91490,6 +91895,7 @@
         "wei-wen",
         "东盟",
         "AI",
+        "jasmin-lau",
         "ng-chee-meng",
         "peoples-action-party",
         "shuttle-diplomacy"
@@ -92650,6 +93056,7 @@
       "relatedKeywords": [
         "碧桂园",
         "地方政府",
+        "mahathir-mohamad",
         "于东来",
         "员工分配",
         "境外债重组",
@@ -93109,6 +93516,7 @@
       "relatedKeywords": [
         "caiyuan",
         "frances-perkins",
+        "franklin-roosevelt",
         "laodong-zhongcai",
         "new-deal",
         "social-safety-net",
@@ -95068,6 +95476,7 @@
       "relatedKeywords": [
         "di-fang-zhai",
         "gold",
+        "mahathir-mohamad",
         "offshore-rmb",
         "tong-suo",
         "wai-hui-liu-chu",
@@ -99454,6 +99863,7 @@
         "某界"
       ],
       "relatedKeywords": [
+        "chery",
         "huawei",
         "pinpai-yijia",
         "sailisi",
@@ -99464,8 +99874,7 @@
         "华为汽车",
         "AI",
         "malacca-strait",
-        "strait-of-hormuz",
-        "new-energy-vehicles"
+        "strait-of-hormuz"
       ],
       "episodes": [
         {
@@ -102573,14 +102982,14 @@
         "dai-yan-ru-gu",
         "futu",
         "huilv",
+        "mahathir-mohamad",
         "offshore-trust",
         "order-837",
         "vie-jia-gou",
         "wai-hui-liu-chu",
         "watanabe-housewives",
         "xianggang",
-        "xiaofei-zhanbi",
-        "gao-jingzhi-renqun"
+        "xiaofei-zhanbi"
       ],
       "episodes": [
         {
@@ -104564,6 +104973,7 @@
       "name": "爱奇艺",
       "aliases": [],
       "relatedKeywords": [
+        "zhu-yu",
         "免费审核员",
         "凯文凯利《失控》",
         "分层审核制度",
@@ -104574,8 +104984,7 @@
         "华谊兄弟",
         "合规成本",
         "审美滑坡",
-        "短剧",
-        "蒙娜丽莎"
+        "短剧"
       ],
       "parents": []
     },
@@ -104592,6 +105001,7 @@
       "relatedKeywords": [
         "bumiputera-quota",
         "fuel-subsidy",
+        "mahathir-mohamad",
         "malaysia",
         "najib-razak",
         "putrajaya",
@@ -105283,6 +105693,7 @@
       "name": "霸王条款",
       "aliases": [],
       "relatedKeywords": [
+        "mahathir-mohamad",
         "境外债重组",
         "森林城市",
         "体外平台",
@@ -105964,6 +106375,7 @@
       "name": "宝能",
       "aliases": [],
       "relatedKeywords": [
+        "chery",
         "后爸输血",
         "姚振华",
         "联动云",
@@ -107101,6 +107513,8 @@
       "name": "避险港",
       "aliases": [],
       "relatedKeywords": [
+        "zhang-linghe",
+        "zhu-yu",
         "中东三角格局",
         "何润东",
         "古偶",
@@ -108196,6 +108610,7 @@
       ],
       "relatedKeywords": [
         "fuel-subsidy",
+        "wei-jianjun",
         "youche",
         "补贴",
         "leapmotor"
@@ -117166,6 +117581,7 @@
         "法西斯主义"
       ],
       "relatedKeywords": [
+        "franklin-roosevelt",
         "great-depression",
         "new-deal",
         "fire-safety-code",
@@ -118541,6 +118957,8 @@
       "name": "粉底液将军",
       "aliases": [],
       "relatedKeywords": [
+        "zhang-linghe",
+        "zhu-yu",
         "AB测试",
         "何润东",
         "古偶",
@@ -118550,8 +118968,7 @@
         "角色与人设",
         "认知扁平化",
         "语言速食化",
-        "酱板鸭",
-        "黑红营销"
+        "酱板鸭"
       ],
       "parents": []
     },
@@ -119163,6 +119580,7 @@
         "Frances Perkins"
       ],
       "relatedKeywords": [
+        "franklin-roosevelt",
         "labor-union",
         "new-deal",
         "social-safety-net",
@@ -122147,6 +122565,8 @@
       "name": "古偶",
       "aliases": [],
       "relatedKeywords": [
+        "zhang-linghe",
+        "zhu-yu",
         "何润东",
         "流量影视",
         "角色与人设",
@@ -122781,6 +123201,7 @@
       "name": "观致汽车",
       "aliases": [],
       "relatedKeywords": [
+        "chery",
         "姚振华",
         "联动云",
         "资本改造",
@@ -125625,6 +126046,8 @@
         "he-rundong"
       ],
       "relatedKeywords": [
+        "zhang-linghe",
+        "zhu-yu",
         "古偶",
         "流量影视",
         "角色与人设",
@@ -125926,6 +126349,8 @@
       "name": "黑红营销",
       "aliases": [],
       "relatedKeywords": [
+        "zhu-yu",
+        "zhang-linghe",
         "何润东",
         "古偶",
         "流量影视",
@@ -126079,6 +126504,7 @@
       "aliases": [],
       "relatedKeywords": [
         "real-estate",
+        "wei-jianjun",
         "恒大汽车",
         "一言堂",
         "三层杠杆",
@@ -127219,6 +127645,7 @@
         "ba-bai",
         "yingshi-touzi",
         "zhongtai",
+        "zhu-yu",
         "chaoshan",
         "zhong-guo-dian-ying",
         "zhou-xingchi",
@@ -127226,8 +127653,7 @@
         "凯文凯利《失控》",
         "分层审核制度",
         "创作自由",
-        "垃圾分拣工",
-        "爱奇艺"
+        "垃圾分拣工"
       ],
       "parents": []
     },
@@ -127759,6 +128185,7 @@
         "Ng Chee Meng"
       ],
       "relatedKeywords": [
+        "jasmin-lau",
         "peoples-action-party",
         "singapore",
         "singapore-cabinet-reshuffle",
@@ -128994,6 +129421,7 @@
         }
       ],
       "relatedKeywords": [
+        "chery",
         "huashan-pai",
         "remote-vehicle-lockout",
         "taishan-pai",
@@ -131715,6 +132143,8 @@
       "name": "角色与人设",
       "aliases": [],
       "relatedKeywords": [
+        "zhang-linghe",
+        "zhu-yu",
         "何润东",
         "古偶",
         "流量影视",
@@ -133383,6 +133813,7 @@
       "name": "境外债重组",
       "aliases": [],
       "relatedKeywords": [
+        "mahathir-mohamad",
         "森林城市",
         "霸王条款",
         "体外平台",
@@ -138779,6 +139210,97 @@
       "parents": []
     },
     {
+      "id": "jasmin-lau",
+      "name": "刘洁敏",
+      "summary": "刘洁敏是新加坡人民行动党政治人物，2025 年首次当选国会议员。2026 年 7 月 27 日起任人力部代部长。EP190 拿她入阁一年就被破格提拔，说明行动党在赶梯队交接。",
+      "description": "刘洁敏当了近二十年公务员，离职前是卫生部副常任秘书。2025 年 4 月辞职参选，同年 5 月随李显龙团队在宏茂桥集选区当选。之后出任教育部兼数码发展及新闻部政务部长。2026 年 7 月 22 日黄循财宣布内阁改组，她接替陈诗龙任人力部代部长。同时升为数码发展及新闻部高级政务部长，卸下教育部的职务。",
+      "aliases": [
+        "Jasmin Lau"
+      ],
+      "relatedKeywords": [
+        "ng-chee-meng",
+        "peoples-action-party",
+        "sim-ann",
+        "singapore",
+        "singapore-cabinet-reshuffle",
+        "workforce-transformation",
+        "李显龙",
+        "黄循财",
+        "asean-chairmanship"
+      ],
+      "episodes": [
+        {
+          "id": "EP190",
+          "note": "她入职一年就当上人力部代部长，被用来说明人民行动党的梯队交接在提速。"
+        }
+      ],
+      "englishName": "Jasmin Lau",
+      "kind": "person",
+      "asOf": "2026-10-06",
+      "basicIntro": "刘洁敏（Jasmin Lau），新加坡政治人物，人民行动党党员。2006 年进入公共服务，先后在财政部、人力部、公共服务署、卫生部和经济发展局任职。离职前是卫生部副常任秘书，2025 年 4 月 1 日辞职。2025 年 5 月 3 日在宏茂桥集选区当选国会议员，代表实里达-实龙岗区。2026 年 7 月 27 日起任人力部代部长，兼数码发展及新闻部高级政务部长。",
+      "programRole": "EP190 拆新加坡这轮内阁改组，她和沈颖是新人快速上位那条线的例子。有人读成黄循财在收拢自己的班底，EP190 说这话只对了一半。更大的原因是人民行动党按梯队接班。新一代按过往节奏要在 2035 年前后上位，现在破格提拔已经算慢了。",
+      "programAssociations": [
+        {
+          "title": "入阁一年就管人力部",
+          "episodes": [
+            "EP190"
+          ],
+          "note": "EP190 讲这次改组的第二个问题。这么多新人快速上位，首次当选的议员也直接进内阁，是不是黄循财在加强控制。举的例子是沈颖升任外交与内政部第二部长，刘洁敏入职一年就当上人力部代部长。两人都被看作黄循财上任后重点培养的梯队。回答是又对又不全对，他个人的控制力确实会更强。背后却是人民行动党从第一代到第五代一以贯之的交接班制度。李显龙的老臣会逐步退成顾问或者退休。"
+        }
+      ],
+      "styleNotes": [
+        "技术官僚出身。从政前一直在政府部门做政策，财政、人力、卫生和投资促进几个口都待过。",
+        "把教育和就业看成一条线。接任时她说技能培训和就业息息相关，会把在教育部攒下的经验带进人力部。",
+        "从政时间短，跟老将搭档起步。她 2025 年进国会，是在李显龙领衔的宏茂桥集选区团队里。"
+      ],
+      "methodNotes": [
+        "上任后先补职场保护的服务。2026 年 9 月 18 日她宣布，2027 年首季度起由新加坡妇女组织理事会提供职场辅导与支援服务。这项服务帮遭遇歧视或骚扰的员工理清有哪些求助选择。",
+        "一人跨两个部。人力部代部长之外，她还兼数码发展及新闻部高级政务部长，人力规划和数码政策落在同一个人身上。",
+        "代部长是转正前的过渡。同一轮改组里，萧振祥、梁振伟就由代部长转为正式部长。"
+      ],
+      "extensionNotes": [
+        {
+          "title": "新加坡内阁改组",
+          "note": "她的任命出自 2026 年 7 月这一轮改组。EP190 把改组拆成几条线来看，新人提拔是其中一条。"
+        },
+        {
+          "title": "沈颖",
+          "note": "同一轮升任的另一位。EP190 把两人一起列为新人快速上位的例子。"
+        },
+        {
+          "title": "人民行动党",
+          "note": "EP190 说破格提拔的根子在行动党的梯队接班制，新一代按过往节奏要在 2035 年前后上位。"
+        },
+        {
+          "title": "黄志明",
+          "note": "同一轮重返内阁，回来抓就业和职场转型，跟她接手的人力部管的是同一摊事。"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Changes to Cabinet and Other Appointments, and the Renaming of the Ministry of Trade and Industry (Jul 2026) - Prime Minister's Office Singapore",
+          "url": "https://www.pmo.gov.sg/newsroom/changes-to-cabinet-and-other-appointments-and-the-renaming-of-the-ministry-of-trade-and-industry-jul-2026/",
+          "note": "核任命：「Ms Jasmin Lau will be appointed Acting Minister for Manpower, and Senior Minister of State in the Ministry of Digital Development and Information. She will relinquish her appointment in the Ministry of Education」，「effective from 27 July 2026」。"
+        },
+        {
+          "title": "联合早报：两名代部长萧振祥梁振伟担正 沈颖升任两部门第二部长（2026-07-22）",
+          "url": "https://www.zaobao.com.sg/news/singapore/story20260722-9403292",
+          "note": "核中文名与履历：「现任教育部兼数码发展及新闻部政务部长刘洁敏，将接替人力部长陈诗龙医生，受委人力部代部长」「近20年的公职生涯中，曾在财政部、人力部、公共服务署、卫生部及经济发展局服务」「技能培训和就业息息相关」。萧振祥、梁振伟由代部长担正。"
+        },
+        {
+          "title": "Jasmin Lau | Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Jasmin_Lau",
+          "note": "弱来源，核「in the civil service since 2006」「deputy secretary for Ministry of Health, before resigning on 1 April 2025」、2025 年随李显龙团队竞选 Ang Mo Kio GRC、代表 Seletar–Serangoon、「Assumed office 3 May 2025」、此后任教育部和数码发展及新闻部政务部长，中文名「刘洁敏」。出生年份页面内 1982 与 1983 两说，正文不写。"
+        },
+        {
+          "title": "联合早报：明年首季推出职场辅导服务 助受歧视或骚扰员工厘清求助选择（2026-09-18）",
+          "url": "https://www.zaobao.com.sg/news/singapore/story20260918-9694391",
+          "note": "核「人力部代部长兼数码发展及新闻部高级政务部长刘洁敏，星期五（9月18日）……致辞时宣布这项服务」「新加坡妇女组织理事会将在2027年首季度推出『职场辅导与支援服务』」。"
+        }
+      ],
+      "parents": []
+    },
+    {
       "kind": "mechanism",
       "asOf": "2026-05-12",
       "sources": [],
@@ -138895,6 +139417,8 @@
       "name": "流量影视",
       "aliases": [],
       "relatedKeywords": [
+        "zhang-linghe",
+        "zhu-yu",
         "何润东",
         "古偶",
         "角色与人设",
@@ -139934,6 +140458,105 @@
         {
           "id": "LIVE026",
           "note": "说英国已在去殖民化，阿根廷着急派军舰占岛，被打回去后岛反而还不回来了。"
+        }
+      ],
+      "parents": []
+    },
+    {
+      "id": "mahathir-mohamad",
+      "name": "马哈蒂尔",
+      "summary": "马哈蒂尔是马来西亚政治人物，1981 到 2003 年、2018 到 2020 年两度任总理。EP031 讲碧桂园森林城市，说他 2018 年重新上台后一句不卖给外国人，让项目两头都卖不动了。",
+      "description": "马哈蒂尔 1925 年 7 月 10 日生于吉打州亚罗士打，医生出身。1981 年出任马来西亚第四任总理，一做 22 年。任内扶持宝腾国产车，建了南北大道、吉隆坡城中城和布城。2016 年因一马发展公司丑闻退出巫统。2018 年带希望联盟赢下大选，92 岁第二次当总理，2020 年下台。2026 年 9 月 28 日妻子西蒂哈斯玛去世，享年 100 岁，101 岁的他第二天住院观察。",
+      "aliases": [
+        "Mahathir Mohamad",
+        "Mahathir bin Mohamad"
+      ],
+      "relatedKeywords": [
+        "anwar-ibrahim",
+        "huilv",
+        "malaysia",
+        "najib-razak",
+        "ziben-guanzhi",
+        "森林城市",
+        "碧桂园",
+        "境外债重组",
+        "霸王条款",
+        "体外平台",
+        "佛山",
+        "清偿率"
+      ],
+      "episodes": [
+        {
+          "id": "EP031",
+          "note": "他 2018 年上台后说森林城市不卖外国人，加上国内收紧换汇，碧桂园的海外项目两头卖不动。"
+        }
+      ],
+      "englishName": "Mahathir Mohamad",
+      "kind": "person",
+      "asOf": "2026-10-06",
+      "basicIntro": "马哈蒂尔·穆罕默德，1925 年 7 月 10 日生于吉打州亚罗士打，马来西亚政治人物，医生出身。1964 年当选国会议员，1974 到 1981 年先后任教育部长、贸工部长，1976 年起任副总理。1981 年 7 月 16 日至 2003 年 10 月 31 日任第四任总理。两任合计执政 24 年，是在任最久的马来西亚总理。2016 年因一马发展公司丑闻退出巫统。2018 年领导希望联盟赢得大选，以 92 岁出任第七任总理，2020 年下台。",
+      "programRole": "EP031 讲碧桂园怎样被两个国家的政策同时闪了一下，他是马来西亚那一头。国内收紧换汇，中国买家的钱出不去。他上台后又说森林城市不卖给外国人，外国客户也不会来买。几千亿的投入就压在了海外。",
+      "programAssociations": [
+        {
+          "title": "森林城市被两头卡住",
+          "episodes": [
+            "EP031"
+          ],
+          "note": "EP031 讲碧桂园最大的麻烦之一是马来西亚的森林城市。项目紧挨新加坡，规划投资约 1000 亿美元，真正掏钱的是国内中产。国家发现居民把人民币换成外币去买房，外汇缺口影响汇率稳定，于是收紧对外投资，先闪了碧桂园一下。接着马哈蒂尔上台，开始新的政策。原话说的是禁止中国人去马来西亚买房，说得比实际重。他 2018 年 8 月 27 日的公开表态是森林城市不得卖给外国人，政府也不给在这里买房的外国人发签证。"
+        }
+      ],
+      "styleNotes": [
+        "讲马来人优先。执政时延续扶持土著的政策，2018 年批森林城市时说项目是给外国人建的，马来西亚人买不起。",
+        "看外资带来什么。他批评森林城市没给马来西亚带来制造业和就业，还担心大批外国人聚居会影响主权。",
+        "不按国际机构的药方办事。1997 年亚洲金融危机时，他用资本管制和刺激措施应对，跟 IMF 开的方子不一样。"
+      ],
+      "methodNotes": [
+        "换届后敢推翻前任的项目。森林城市得到前任总理纳吉布支持，2016 年还被宣布设为免税区，他上台后公开说不卖外国人。",
+        "用国家工程拉工业化。任内用关税扶持宝腾汽车，主导南北大道、吉隆坡城中城和布城这类大工程。",
+        "下台了也不离开政治。2003 年卸任后继续批评继任者，2016 年为一马发展丑闻退出巫统，92 岁又带反对派赢回政权。"
+      ],
+      "extensionNotes": [
+        {
+          "title": "森林城市",
+          "note": "碧桂园在柔佛填海造的项目，他 2018 年那番话直接打在它的销售上。"
+        },
+        {
+          "title": "碧桂园",
+          "note": "EP031 讲它的高杠杆模式，海外这一块的麻烦从森林城市开始。"
+        },
+        {
+          "title": "纳吉布",
+          "note": "支持森林城市的前任总理。2018 年马哈蒂尔正是带着反对派把他的执政联盟赶下台的。"
+        },
+        {
+          "title": "马来西亚",
+          "note": "EP181 讲马来西亚的政坛和大基建留下的债，布城这类工程最早是在他任内启动的。"
+        },
+        {
+          "title": "资本管制",
+          "note": "卡住森林城市的另一头。EP031 说国内收紧换汇，中国买家的钱出不去。"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Mahathir Mohamad | Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Mahathir_Mohamad",
+          "note": "核「born 10 July 1925」「fourth and seventh prime minister of Malaysia from 1981 to 2003 and again from 2018 to 2020」「longest-serving prime minister……24 years」、生于 Alor Setar、1964 年进国会、1974–1978 教育部长、1978–1981 贸工部长、1976 年副总理、任期「16 July 1981」至「31 October 2003」、南北大道与 KLCC、亚洲金融危机「capital controls……diverged from IMF prescriptions」、「quit UMNO over the 1MDB corruption scandal in 2016」带希望联盟赢 2018 年大选、当时 92 岁、宝腾与布城。"
+        },
+        {
+          "title": "美国之音：马哈蒂尔猛批中资房地产项目引多方热议（2018-09-10）",
+          "url": "https://www.voachinese.com/a/malaysia-china-forest-city-20180910/4564618.html",
+          "note": "核 EP031 材料：「8月27日，马来西亚首相马哈蒂尔公开表示：森林城市项目不得向外国人销售，马来西亚政府也不会向在这里购房的外国人发放签证」「森林城市这个项目是给外国人建造的……马来西亚人没有能力去购买」、计划总投资 1000 亿美元、纳吉布 2016 年 3 月宣布免税区、批评项目不带来制造业和就业并影响主权。"
+        },
+        {
+          "title": "星岛头条：大马前总理马哈蒂尔夫人逝世 享嵩寿100岁（2026-09-29）",
+          "url": "https://www.stheadline.com/zh-hans/realtime-world/3620467/%E5%A4%A7%E9%A9%AC%E5%89%8D%E6%80%BB%E7%90%86%E9%A9%AC%E5%93%88%E8%92%82%E5%B0%94%E5%A4%AB%E4%BA%BA%E9%80%9D%E4%B8%96-%E4%BA%AB%E5%B5%A9%E5%AF%BF100%E5%B2%81",
+          "note": "核「马哈蒂尔的夫人西蒂哈斯玛（Siti Hasmah）昨日（28日）上午在国家心脏中心逝世，享嵩寿100岁」「丈夫也已101岁」。"
+        },
+        {
+          "title": "UA.News 转阿纳多卢通讯社：马来西亚前总理马哈蒂尔在妻子去世后住院（2026-09-30）",
+          "url": "https://ua.news/cn/world/eks-premiera-malaiziyi-makhatkhira-gospitalizuvali-pislia-smerti-druzhini-anadolu-agency",
+          "note": "核在世状态：「101岁的马哈蒂尔于周二被送往国家心脏研究所」接受观察，「他的妻子前一天在同一机构去世」，消息出自其子慕克里兹经马新社。"
         }
       ],
       "parents": []
@@ -142583,6 +143206,7 @@
       ],
       "relatedKeywords": [
         "anwar-ibrahim",
+        "mahathir-mohamad",
         "malaysia",
         "putrajaya",
         "bumiputera-quota",
@@ -143721,6 +144345,7 @@
       ],
       "relatedKeywords": [
         "byd",
+        "franklin-roosevelt",
         "new-deal",
         "new-energy-vehicles",
         "ningwang",
@@ -147107,6 +147732,7 @@
       "name": "清偿率",
       "aliases": [],
       "relatedKeywords": [
+        "mahathir-mohamad",
         "债务清算",
         "南沙",
         "境外债重组",
@@ -147173,6 +147799,7 @@
       "relatedKeywords": [
         "系统性风险",
         "real-estate",
+        "mahathir-mohamad",
         "地方债增发",
         "境外债重组",
         "森林城市",
@@ -148281,6 +148908,7 @@
         "People's Action Party"
       ],
       "relatedKeywords": [
+        "jasmin-lau",
         "li-guangyao",
         "ng-chee-meng",
         "sim-ann",
@@ -148914,6 +149542,7 @@
       "relatedKeywords": [
         "fire-safety-code",
         "frances-perkins",
+        "franklin-roosevelt",
         "gilded-age",
         "great-depression",
         "new-deal",
@@ -149407,6 +150036,7 @@
       "name": "森林城市",
       "aliases": [],
       "relatedKeywords": [
+        "mahathir-mohamad",
         "境外债重组",
         "霸王条款",
         "体外平台",
@@ -151111,6 +151741,7 @@
       ],
       "relatedKeywords": [
         "asean-chairmanship",
+        "jasmin-lau",
         "peoples-action-party",
         "singapore",
         "singapore-cabinet-reshuffle",
@@ -156201,6 +156832,7 @@
       "name": "体外平台",
       "aliases": [],
       "relatedKeywords": [
+        "mahathir-mohamad",
         "境外债重组",
         "李斌",
         "森林城市",
@@ -162462,6 +163094,7 @@
       ],
       "relatedKeywords": [
         "asean-chairmanship",
+        "jasmin-lau",
         "ng-chee-meng",
         "peoples-action-party",
         "sim-ann",
@@ -165513,6 +166146,7 @@
         "yao-zhenhua"
       ],
       "relatedKeywords": [
+        "chery",
         "联动云",
         "观致汽车",
         "资本改造",
@@ -167272,6 +167906,7 @@
       "aliases": [],
       "relatedKeywords": [
         "real-estate",
+        "mahathir-mohamad",
         "境外债重组",
         "市场化处置",
         "森林城市",
@@ -171454,6 +172089,92 @@
       "parents": []
     },
     {
+      "id": "zhang-linghe",
+      "name": "张凌赫",
+      "summary": "张凌赫是中国男演员，2026 年在古装剧《逐玉》里演武安侯谢征。EP109 拿他打完仗还白净的扮相，讲演员为什么不敢为角色变丑。",
+      "description": "张凌赫本名张家玮，1997 年生于江苏无锡，大学读南京师范大学时被星探发掘。2020 年以网络剧《少女大人》出道，后来演过《宁安如梦》里的谢危、《度华年》里的裴文宣。2026 年 3 月《逐玉》播出，他的扮相被叫作粉底液将军，一度成了全网热梗。",
+      "aliases": [
+        "张家玮",
+        "Zhang Linghe"
+      ],
+      "relatedKeywords": [
+        "zhu-yu",
+        "何润东",
+        "古偶",
+        "流量影视",
+        "粉底液将军",
+        "角色与人设",
+        "黑红营销",
+        "避险港"
+      ],
+      "episodes": [
+        {
+          "id": "EP109",
+          "note": "他演的武安侯打完仗妆还干净，被叫作粉底液将军。EP109 由此讲演员的钱从粉丝来，不肯为角色变丑。"
+        }
+      ],
+      "englishName": "Zhang Linghe",
+      "kind": "person",
+      "asOf": "2026-10-06",
+      "basicIntro": "张凌赫，本名张家玮，1997 年 12 月 30 日生于江苏无锡，中国男演员。中学读江苏省天一中学，大学进南京师范大学读电气工程与自动化，在校时被星探发掘入行。2020 年以《少女大人》出道，代表作有《宁安如梦》《度华年》《逐玉》。2026 年 5 月 28 日，他在《人民日报海外版》发表署名文章《行动让改变发生》。文章写的是参与绿色能源转型纪录片拍摄的经历。",
+      "programRole": "EP109 用他代表今天的流量演员。演员的钱从粉丝那里来，保住人设就比演得像要紧，扮相宁可精致也不能脏。拿他跟十多年前满脸泥污的何润东版项羽一对照，问题就落到了整个行业怎么给演员付钱上。",
+      "programAssociations": [
+        {
+          "title": "白净的武安侯",
+          "episodes": [
+            "EP109"
+          ],
+          "note": "EP109 开头讲他演的武安侯，身披玄甲，头戴孙悟空那种雉鸡翎。不管骑多久的马、冲杀成什么样，妆都干净透亮，连灰尘都没有。网友调侃三军听令，本帅的粉底液有点花了，明日再战。由此讲演员的商业来源从片酬换成了跟粉丝互动，所以不敢牺牲妆容，连骑马都多改成坐假马道具来拍。假马这一段讲的是行业，没有说他本人。"
+        }
+      ],
+      "styleNotes": [
+        "戏路集中在古偶和偶像剧男主。谢危、裴文宣、谢征都是外形精致的古装男主角。",
+        "扮相贴着原著的设定走。剧粉为他辩护时指出，原著写谢征「俊美清隽」「面若冷玉」。争议其实是古偶和历史剧两套标准撞在了一起。",
+        "面对争议少说话。评论文章说他没有刻意公关，热梗过去两个多月后，用一篇写公益经历的署名文章回应。"
+      ],
+      "methodNotes": [
+        "用作品之外的公开行动回应争议。2026 年 5 月他在《人民日报海外版》撰文，写自己穿上工装、戴好安全帽，跟着一线人员进车间。",
+        "按 EP109 的说法，流量演员靠和粉丝互动赚钱。维持人设是生意的一部分，扮相精致是这门生意的要求。",
+        "从理工科学生转行入圈。大学读电气工程，被星探发现后进了演艺圈，起步作品是网络剧。"
+      ],
+      "extensionNotes": [
+        {
+          "title": "逐玉",
+          "note": "他被叫作粉底液将军的那部剧，人设压过角色这条线从这里展开。"
+        },
+        {
+          "title": "何润东",
+          "note": "网友拿来跟他对比的项羽。两人都挨过骂，一个满脸泥污，一个白净精致，EP109 用这组对照讲行业变了什么。"
+        },
+        {
+          "title": "粉底液将军",
+          "note": "从他的扮相长出来的热梗，后来引出广电总局的健康审美座谈会和官媒评论。"
+        },
+        {
+          "title": "流量影视",
+          "note": "EP109 说演员的钱改从粉丝那里来，人设就不能为角色让路，连骑马都换成了假马。"
+        }
+      ],
+      "sources": [
+        {
+          "title": "维基百科：张凌赫",
+          "url": "https://zh.wikipedia.org/zh-cn/%E5%BC%A0%E5%87%8C%E8%B5%AB",
+          "note": "弱来源，核「张家玮（1997年12月30日—），艺名张凌赫，中国男演员，江苏无锡人，大学时因被星探发掘进入演艺圈」、天一中学、南京师范大学电气工程与自动化、2020 年《少女大人》出道、《宁安如梦》谢危、《度华年》裴文宣、《逐玉》谢征。"
+        },
+        {
+          "title": "光明网转澎湃新闻：《逐玉》谢征被嘲「粉底液将军」，冤吗？（2026-03-25）",
+          "url": "https://m.gmw.cn/2026-03/25/content_1304390926.htm",
+          "note": "核他在《逐玉》饰演武将谢征被戏谑为粉底液将军，以及「原著中对谢征的外貌描述多次提到『俊美清隽』『面若冷玉』」。"
+        },
+        {
+          "title": "川观新闻：张凌赫在《人民日报海外版》撰文（2026-05-28）",
+          "url": "https://cbgc.scol.com.cn/news/7628168",
+          "note": "核 2026 年 5 月 28 日署名文章《行动让改变发生》、「我穿上工装、戴上安全帽，跟着一线工作人员登上升压站、进车间」、「张凌赫没有刻意公关，他用行动作答」、距争议「不过两个多月」。"
+        }
+      ],
+      "parents": []
+    },
+    {
       "id": "张欣",
       "name": "张欣",
       "summary": "张欣是 SOHO 中国联合创始人、潘石屹的妻子，2022 年辞去 CEO；EP121 说潘石屹懂中国的政策和买房习惯，她懂全球资本和离岸信托，两人合起来才有后来的上市、信托和卖楼。",
@@ -175483,6 +176204,102 @@
         "韬光养晦",
         "大国博弈",
         "荆州"
+      ],
+      "parents": []
+    },
+    {
+      "id": "zhu-yu",
+      "name": "逐玉",
+      "summary": "《逐玉》是 2026 年 3 月首播的古装爱情剧，张凌赫、田曦薇主演。男主上了战场脸还白净，被叫作粉底液将军，EP109 从这个梗讲影视圈为什么先保人设、再顾角色。",
+      "description": "《逐玉》改编自晋江文学城作者团子来袭的同名小说，曾庆杰执导，共 40 集。2026 年 3 月 6 日在爱奇艺、腾讯视频和 Netflix 首播，3 月底播完。出品方是爱奇艺、腾讯视频和浩瀚娱乐。故事从杀猪的屠户女樊长玉救下武安侯谢征讲起，谢征化名言正入赘樊家。两人先是假成婚，后来一起上了战场。\n\n播出期间，谢征打完仗妆容还精致，网友叫他粉底液将军。国家广电总局电视剧司 4 月 2 日开了健康审美座谈会，《人民日报》和新华社随后发评论批颜值至上。EP109 拿它当入口，讲角色输给人设这件事。",
+      "aliases": [
+        "《逐玉》",
+        "Pursuit of Jade"
+      ],
+      "relatedKeywords": [
+        "zhang-linghe",
+        "何润东",
+        "华谊兄弟",
+        "古偶",
+        "流量影视",
+        "爱奇艺",
+        "粉底液将军",
+        "角色与人设",
+        "黑红营销",
+        "避险港"
+      ],
+      "episodes": [
+        {
+          "id": "EP109",
+          "note": "男主打完仗妆还没花，被叫作粉底液将军。EP109 从这里讲人设压过角色、行业自我设限和黑红宣发。"
+        }
+      ],
+      "kind": "product",
+      "asOf": "2026-10-06",
+      "objectRole": "它是一部典型的流量古偶，热度主要靠演员的粉丝和男女主的 CP。EP109 的看法是，这类剧先保演员的脸，角色像不像排在后面，所以武将打完仗也不能脏。它的热度本身也有争议。开播第四天平台热度值一度超过《狂飙》的纪录，随后就有网友举报数据造假。",
+      "programAssociations": [
+        {
+          "title": "粉底液将军从哪儿来",
+          "episodes": [
+            "EP109"
+          ],
+          "note": "EP109 开头讲剧里张凌赫演的武安侯。玄甲加雉鸡翎，冲杀之后脸还是白的，网友调侃本帅的粉底液花了、鸣金收兵。观众要美颜和 CP，演员的钱来自粉丝，没人肯为角色变丑。前些年的大女主靠自己，剧里杀猪出身的女主一碰上男主就成了小娇妻。女主说敌人能屠城、武安侯也能屠城，这句台词被拿来说明创作者对战争已经没有感觉。最后猜粉底液将军这个词是宣发自己造的，挨骂也换来了点击。"
+        }
+      ],
+      "consequenceNotes": [
+        "热梗把这部剧推到了很多平时不看国产剧的人面前。EP109 说自己就是这样被拉去看了几集，挨骂也算进了宣发的成绩。",
+        "争议一路升到主管部门。广电总局开座谈会要求演什么像什么，官媒点名批评。EP109 的判断是，这类忧虑靠官媒下场、加强管理解决不了，很多问题正是管多了才出来的。",
+        "演员本人也被推到台前。2026 年 5 月张凌赫在《人民日报海外版》发署名文章，写自己去能源一线拍纪录片。评论把它读成擦掉粉底液。"
+      ],
+      "signalNotes": [
+        "古装剧男主从战场下来满脸干净、发型不乱，网友又翻出老版项羽来比。这时讨论的多半是角色给人设让路。",
+        "一部剧开播几天热度就破纪录，同时有人举报数据造假。热度和观众感受对不上时，接下来常有人追问宣发怎么买量。",
+        "官媒和主管部门为一个娱乐热梗下场时，要分开两层读。一层是审美批评，一层是对整个行业的行政要求。"
+      ],
+      "extensionNotes": [
+        {
+          "title": "粉底液将军",
+          "note": "从这部剧男主身上长出来的热梗。EP109 讲它可能是怎么被造出来的，EP110 接着讲平台怎样挑梗、推梗。"
+        },
+        {
+          "title": "何润东",
+          "note": "网友翻出他在《楚汉传奇》里满脸泥污的项羽来对比。EP109 用这组对照讲老一代演员敢为角色变丑。"
+        },
+        {
+          "title": "华谊兄弟",
+          "note": "华谊持有出品方东阳浩瀚 49.25% 的股份。EP129 开头提到华谊靠这部剧自救，粉底液将军也没救回它。"
+        },
+        {
+          "title": "黑红营销",
+          "note": "EP109 猜粉底液将军是宣发自造的词，被骂上热搜照样能把路人拉进播放页。"
+        }
+      ],
+      "sources": [
+        {
+          "title": "维基百科：逐玉",
+          "url": "https://zh.wikipedia.org/zh-cn/%E9%80%90%E7%8E%89",
+          "note": "弱来源，核基本信息：改编自晋江文学城作者团子来袭同名小说、曾庆杰执导、张凌赫田曦薇领衔、40 集、2026 年 3 月 6 日在爱奇艺腾讯视频 Netflix 首播至 3 月 30 日、出品方爱奇艺腾讯视频浩瀚娱乐；剧情「屠户女樊长玉……发现……武安侯谢征」「化名为言正的谢征……入赘樊家」。"
+        },
+        {
+          "title": "光明网转澎湃新闻：《逐玉》谢征被嘲「粉底液将军」，冤吗？（2026-03-25）",
+          "url": "https://m.gmw.cn/2026-03/25/content_1304390926.htm",
+          "note": "核热梗来由：「由张凌赫饰演的武将谢征，身披玄甲、头戴雉鸡翎……被网友戏谑为……『三军听令，本帅粉底掉了，改日再战』」，网友翻出何润东《楚汉传奇》项羽对比。"
+        },
+        {
+          "title": "联合早报：中国要求电视剧摒弃畸形审美 央媒批「粉底液将军」（2026-04-04）",
+          "url": "https://www.zaobao.com.sg/news/china/story20260404-8841803",
+          "note": "核官方反应：「国家广播电视总局电视剧司星期四（2日）召开电视剧健康审美座谈会」「《人民日报》星期五（4月3日）晚发评论」，新华社同日发文；「3月底完播的古装偶像剧《逐玉》」。"
+        },
+        {
+          "title": "中新网福建转《中国新闻周刊》：华谊兄弟，8年亏光85亿（2026-04-21）",
+          "url": "https://www.fj.chinanews.com.cn/news/2026/2026-04-21/583136.html",
+          "note": "核出品方与热度争议：「东阳浩瀚是三大出品方之一，华谊兄弟持有其49.25%股份」「3月9日，#网友举报逐玉收视率造假#话题登上热搜」「在《逐玉》开播第四日，其平台热度值一度超过电视剧《狂飙》的纪录」。页面为 GBK 编码。"
+        },
+        {
+          "title": "川观新闻：张凌赫在《人民日报海外版》撰文（2026-05-28）",
+          "url": "https://cbgc.scol.com.cn/news/7628168",
+          "note": "核「5月28日，演员张凌赫在《人民日报海外版》发表署名文章《行动让改变发生》」及其内容为参与能源转型纪录片拍摄。"
+        }
       ],
       "parents": []
     },

@@ -1,0 +1,89 @@
+{
+  "id": "jasmin-lau",
+  "name": "刘洁敏",
+  "englishName": "Jasmin Lau",
+  "kind": "person",
+  "asOf": "2026-10-06",
+  "aliases": [
+    "Jasmin Lau"
+  ],
+  "summary": "刘洁敏是新加坡人民行动党政治人物，2025 年首次当选国会议员。2026 年 7 月 27 日起任人力部代部长。EP190 拿她入阁一年就被破格提拔，说明行动党在赶梯队交接。",
+  "description": "刘洁敏当了近二十年公务员，离职前是卫生部副常任秘书。2025 年 4 月辞职参选，同年 5 月随李显龙团队在宏茂桥集选区当选。之后出任教育部兼数码发展及新闻部政务部长。2026 年 7 月 22 日黄循财宣布内阁改组，她接替陈诗龙任人力部代部长。同时升为数码发展及新闻部高级政务部长，卸下教育部的职务。",
+  "basicIntro": "刘洁敏（Jasmin Lau），新加坡政治人物，人民行动党党员。2006 年进入公共服务，先后在财政部、人力部、公共服务署、卫生部和经济发展局任职。离职前是卫生部副常任秘书，2025 年 4 月 1 日辞职。2025 年 5 月 3 日在宏茂桥集选区当选国会议员，代表实里达-实龙岗区。2026 年 7 月 27 日起任人力部代部长，兼数码发展及新闻部高级政务部长。",
+  "programRole": "EP190 拆新加坡这轮内阁改组，她和沈颖是新人快速上位那条线的例子。有人读成黄循财在收拢自己的班底，EP190 说这话只对了一半。更大的原因是人民行动党按梯队接班。新一代按过往节奏要在 2035 年前后上位，现在破格提拔已经算慢了。",
+  "programAssociations": [
+    {
+      "title": "入阁一年就管人力部",
+      "episodes": [
+        "EP190"
+      ],
+      "note": "EP190 讲这次改组的第二个问题。这么多新人快速上位，首次当选的议员也直接进内阁，是不是黄循财在加强控制。举的例子是沈颖升任外交与内政部第二部长，刘洁敏入职一年就当上人力部代部长。两人都被看作黄循财上任后重点培养的梯队。回答是又对又不全对，他个人的控制力确实会更强。背后却是人民行动党从第一代到第五代一以贯之的交接班制度。李显龙的老臣会逐步退成顾问或者退休。"
+    }
+  ],
+  "styleNotes": [
+    "技术官僚出身。从政前一直在政府部门做政策，财政、人力、卫生和投资促进几个口都待过。",
+    "把教育和就业看成一条线。接任时她说技能培训和就业息息相关，会把在教育部攒下的经验带进人力部。",
+    "从政时间短，跟老将搭档起步。她 2025 年进国会，是在李显龙领衔的宏茂桥集选区团队里。"
+  ],
+  "methodNotes": [
+    "上任后先补职场保护的服务。2026 年 9 月 18 日她宣布，2027 年首季度起由新加坡妇女组织理事会提供职场辅导与支援服务。这项服务帮遭遇歧视或骚扰的员工理清有哪些求助选择。",
+    "一人跨两个部。人力部代部长之外，她还兼数码发展及新闻部高级政务部长，人力规划和数码政策落在同一个人身上。",
+    "代部长是转正前的过渡。同一轮改组里，萧振祥、梁振伟就由代部长转为正式部长。"
+  ],
+  "extensionNotes": [
+    {
+      "title": "新加坡内阁改组",
+      "note": "她的任命出自 2026 年 7 月这一轮改组。EP190 把改组拆成几条线来看，新人提拔是其中一条。"
+    },
+    {
+      "title": "沈颖",
+      "note": "同一轮升任的另一位。EP190 把两人一起列为新人快速上位的例子。"
+    },
+    {
+      "title": "人民行动党",
+      "note": "EP190 说破格提拔的根子在行动党的梯队接班制，新一代按过往节奏要在 2035 年前后上位。"
+    },
+    {
+      "title": "黄志明",
+      "note": "同一轮重返内阁，回来抓就业和职场转型，跟她接手的人力部管的是同一摊事。"
+    }
+  ],
+  "relatedKeywords": [
+    "singapore-cabinet-reshuffle",
+    "sim-ann",
+    "peoples-action-party",
+    "黄循财",
+    "ng-chee-meng",
+    "李显龙",
+    "workforce-transformation",
+    "singapore"
+  ],
+  "sources": [
+    {
+      "title": "Changes to Cabinet and Other Appointments, and the Renaming of the Ministry of Trade and Industry (Jul 2026) - Prime Minister's Office Singapore",
+      "url": "https://www.pmo.gov.sg/newsroom/changes-to-cabinet-and-other-appointments-and-the-renaming-of-the-ministry-of-trade-and-industry-jul-2026/",
+      "note": "核任命：「Ms Jasmin Lau will be appointed Acting Minister for Manpower, and Senior Minister of State in the Ministry of Digital Development and Information. She will relinquish her appointment in the Ministry of Education」，「effective from 27 July 2026」。"
+    },
+    {
+      "title": "联合早报：两名代部长萧振祥梁振伟担正 沈颖升任两部门第二部长（2026-07-22）",
+      "url": "https://www.zaobao.com.sg/news/singapore/story20260722-9403292",
+      "note": "核中文名与履历：「现任教育部兼数码发展及新闻部政务部长刘洁敏，将接替人力部长陈诗龙医生，受委人力部代部长」「近20年的公职生涯中，曾在财政部、人力部、公共服务署、卫生部及经济发展局服务」「技能培训和就业息息相关」。萧振祥、梁振伟由代部长担正。"
+    },
+    {
+      "title": "Jasmin Lau | Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Jasmin_Lau",
+      "note": "弱来源，核「in the civil service since 2006」「deputy secretary for Ministry of Health, before resigning on 1 April 2025」、2025 年随李显龙团队竞选 Ang Mo Kio GRC、代表 Seletar–Serangoon、「Assumed office 3 May 2025」、此后任教育部和数码发展及新闻部政务部长，中文名「刘洁敏」。出生年份页面内 1982 与 1983 两说，正文不写。"
+    },
+    {
+      "title": "联合早报：明年首季推出职场辅导服务 助受歧视或骚扰员工厘清求助选择（2026-09-18）",
+      "url": "https://www.zaobao.com.sg/news/singapore/story20260918-9694391",
+      "note": "核「人力部代部长兼数码发展及新闻部高级政务部长刘洁敏，星期五（9月18日）……致辞时宣布这项服务」「新加坡妇女组织理事会将在2027年首季度推出『职场辅导与支援服务』」。"
+    }
+  ],
+  "episodes": [
+    {
+      "id": "EP190",
+      "note": "她入职一年就当上人力部代部长，被用来说明人民行动党的梯队交接在提速。"
+    }
+  ]
+}

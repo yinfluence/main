@@ -1,0 +1,119 @@
+{
+  "id": "franklin-roosevelt",
+  "name": "罗斯福",
+  "englishName": "Franklin Delano Roosevelt",
+  "kind": "person",
+  "asOf": "2026-10-06",
+  "aliases": [
+    "富兰克林·罗斯福",
+    "小罗斯福",
+    "FDR",
+    "Franklin D. Roosevelt"
+  ],
+  "summary": "富兰克林·罗斯福是美国第 32 任总统，1933 年就任，1945 年在第四个任期内去世。几期节目拿他推行的新政，讲大萧条之后怎样把钱还给工人。EP056 拿他定下的先欧后亚，讲拖得起的一方。",
+  "description": "罗斯福 1882 年生于纽约州海德公园，民主党人，当过纽约州州长。1921 年患病后双腿瘫痪。1932 年大选击败胡佛，上任头一百天推出一批新政法案，后来又签了瓦格纳法和社会保障法。他是美国唯一任期超过两届的总统，带美国打了大半场二战，1945 年 4 月 12 日去世。\n\n劳工部长弗朗西丝·帕金斯是他任命的，她也是美国第一位女性内阁成员。EP186 说新政的工时、最低工资和社保条款，就是她入阁前向他开的条件。",
+  "basicIntro": "富兰克林·德拉诺·罗斯福，民主党政治人物，美国第 32 任总统。1882 年 1 月 30 日生，1945 年 4 月 12 日因脑溢血去世。1911 到 1913 年任纽约州参议员，1913 年起任海军助理部长。1929 到 1932 年任纽约州州长。1921 年患病后腰部以下终身瘫痪，当时诊断为小儿麻痹症。1933 年就任总统，四次当选，任期从大萧条一直延续到二战末期。",
+  "programRole": "他在这里代表一种走出危机的选法。放任资本和全盘激进两头都走不通时，他的政府靠工会谈判、最低工资和社保，把工人收入和国内消费重新接上。EP056 另取他打二战的办法，说明拖得起的一方不必抢先出手。",
+  "programAssociations": [
+    {
+      "title": "大萧条里把钱还给工人",
+      "episodes": [
+        "EP186",
+        "EP039",
+        "LIVE026"
+      ],
+      "note": "EP186 从 1911 年三角内衣厂大火讲到新政。目睹那场火的帕金斯当上劳工部长，向罗斯福开出硬条件。要限制工时，设最低工资，废除童工，建失业和养老保障。当时还有退伍军人在资本家支持下写信给一位将军，想推翻罗斯福，将军没答应，把事情揭发了。EP039 讲国家工业复兴法给工会谈判权，用来对照宁德时代每月加薪 150 元。LIVE026 说美国换了二十年党才等到罗斯福，靠让普通人有钱把内需做起来。"
+    },
+    {
+      "title": "拖得起的一方定节奏",
+      "episodes": [
+        "EP056"
+      ],
+      "note": "EP056 讲日本为什么急着跟美国开战。罗斯福政府定的是先欧后亚，先收拾德国，有余力再回头打日本，日本根本排不进首要目标。日本自己算出来的战略定力只有一年，美国可以慢慢打。日本像赶火车一样，想靠一场最终战把问题解决掉。"
+    }
+  ],
+  "styleNotes": [
+    "善用广播直接跟民众说话。当州长时就开始炉边谈话，当总统后用它安抚大萧条里惶恐的公众。",
+    "上任先求快。头一百天里推出银行、农业和工业方面的一批法案，1935 年又把新政往偏向劳工的方向推了一步。",
+    "身体受限也不退场。1921 年双腿瘫痪后，他靠长期康复重回政坛，七年后当选纽约州长。"
+  ],
+  "methodNotes": [
+    "借工会和法律给工人撑腰，不由政府直接定工资涨多少。EP039 说新政让工会自己去跟企业谈，政府另设劳工委员会处理纠纷。",
+    "放手给能干的人。EP186 说帕金斯入阁前就开出整套劳工改革条件，他接下了。",
+    "跟最高法院硬碰。第二个任期里，最高法院推翻了多项新政措施，他推动 1937 年的司法程序改革法案去跟法院较劲。",
+    "打仗时先分主次。美国参战后，他和丘吉尔在 1941 年 12 月的阿卡迪亚会议上确认先打德国，对日本先守住。"
+  ],
+  "extensionNotes": [
+    {
+      "title": "罗斯福新政",
+      "note": "他推行的那套改革。EP186、EP039 和 LIVE026 都从这里讲工资、工会和内需。"
+    },
+    {
+      "title": "弗朗西丝·帕金斯",
+      "note": "他任命的劳工部长。EP186 说新政里的工时、最低工资和社保，都出自她开的条件。"
+    },
+    {
+      "title": "大萧条",
+      "note": "他上台时面对的局面。EP186 说病根是工资压得太低，工人买不起自己造的东西。"
+    },
+    {
+      "title": "珍珠港",
+      "note": "美国由此参战。EP056 讲日本为什么急着打这一仗，罗斯福政府却按先欧后亚慢慢来。"
+    },
+    {
+      "title": "阿根廷",
+      "note": "LIVE026 拿同一时期的阿根廷作对照，美国靠新政做起内需，阿根廷走了发补贴的民粹路线。"
+    }
+  ],
+  "relatedKeywords": [
+    "new-deal",
+    "frances-perkins",
+    "great-depression",
+    "triangle-shirtwaist-fire",
+    "labor-union",
+    "pearl-harbor",
+    "a-gen-ting",
+    "fascism",
+    "catl"
+  ],
+  "sources": [
+    {
+      "title": "Franklin D. Roosevelt | Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Franklin_D._Roosevelt",
+      "note": "核「January 30, 1882 – April 12, 1945」「the 32nd president of the United States, serving from 1933 until his death in 1945」「the only one to have served more than two terms」、纽约州参议员 1911–1913、海军助理部长 1913、「44th governor of New York from 1929 to 1932」、1921 年确诊 polio「permanently paralyzed from the waist down」、州长时开始 fireside chats、「Frances Perkins, as Secretary of Labor, became the first woman appointed to a cabinet position」、Europe first、1937 年 Judicial Procedures Reform Bill。"
+    },
+    {
+      "title": "Franklin D. Roosevelt: Life in Brief | Miller Center, University of Virginia",
+      "url": "https://millercenter.org/president/fdroosevelt/life-in-brief",
+      "note": "核「born in 1882 in Hyde Park, New York」、1921 年患 polio 双腿瘫痪、「First Hundred Days」立法、fireside chats「calmed a worried public」、1935 年转向、瓦格纳法与社会保障法、「In April 1945……collapsed and died of a cerebral hemorrhage」。"
+    },
+    {
+      "title": "Business Plot | Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Business_Plot",
+      "note": "核 EP186 提到的政变图谋：「a political conspiracy in 1933……to overthrow the government of President Franklin D. Roosevelt」，退役少将 Smedley Butler 1934 年向国会委员会作证揭发。"
+    },
+    {
+      "title": "Europe first | Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Europe_first",
+      "note": "核 EP056 的先欧后亚：「At the December 1941 Arcadia Conference between President Franklin Roosevelt and Prime Minister Winston Churchill……the decision for the 'Europe First' strategy was affirmed」。"
+    }
+  ],
+  "episodes": [
+    {
+      "id": "EP186",
+      "note": "帕金斯向罗斯福开出工时、最低工资和社保的条件，新政在革命和法西斯之间走出第三条路。"
+    },
+    {
+      "id": "EP039",
+      "note": "新政靠国家工业复兴法给工会谈判权，用来对照宁德时代的小幅加薪。"
+    },
+    {
+      "id": "LIVE026",
+      "note": "美国换了二十年党才等到罗斯福新政，用来对照阿根廷的民粹补贴。"
+    },
+    {
+      "id": "EP056",
+      "note": "罗斯福政府先欧后亚，日本排不进首要目标，用来讲拖得起的一方定节奏。"
+    }
+  ]
+}
