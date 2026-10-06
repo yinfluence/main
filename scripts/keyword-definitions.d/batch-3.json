@@ -521,60 +521,71 @@
   },
   "波多黎各": {
     "kind": "geography",
-    "summary": "波多黎各是加勒比地区的美国非建制属地，节目借 Bad Bunny 和超级碗中场秀讨论地方文化如何重新进入全球舞台中心。",
-    "description": "波多黎各位于加勒比海，政治上与美国保持属地关系，文化上又有强烈的西语、加勒比和本土身份。节目使用它时，并不是做国别百科，而是把它当成“边缘文化进入中心舞台”的地理身份节点：当波多黎各音乐、语言和群体氛围进入美国最大娱乐舞台，全球化不再只是统一审美，也可能变成多中心文化的并置。",
-    "nodeRole": "波多黎各在这里是文化地缘节点：它既处在美国政治秩序内，又保留强烈地方身份，因此适合观察中心市场如何吸收、误读或重新承认边缘文化。",
+    "summary": "波多黎各是加勒比海上的美国非建制属地，居民是美国公民，日常以西班牙语为主。2026 年超级碗中场秀由波多黎各歌手 Bad Bunny 领衔，EP081 借这场秀讲地方文化重新登上主舞台、以英语为核心的全球化在退潮。",
+    "description": "波多黎各在大安的列斯群岛东端，西邻多米尼加，东接美属维尔京群岛，离迈阿密约 1600 公里，人口约 320 万，首府圣胡安。它被西班牙统治约四百年，1898 年美西战争后归美国，现在是美国的非建制属地，居民有美国公民身份。西班牙语和英语都是官方语言，生活里西班牙语占上风，文化上属于拉丁美洲。\n\n2026 年 2 月 8 日第 60 届超级碗中场秀由 Bad Bunny 领衔，Lady Gaga、瑞奇马丁助阵，几乎全程用西班牙语演唱，是第一次由拉丁裔独唱歌手担纲。特朗普当天发文说这场表演糟糕透顶。",
+    "nodeRole": "波多黎各在政治上属于美国，语言和文化又自成一体。一个这样的地方占了美国最大的娱乐舞台，正好用来观察主流市场怎样接纳一种它听不懂的文化。",
     "programAssociations": [
       {
-        "title": "中场秀里的地方文化回到中心",
+        "title": "十分钟的地方文化",
         "episodes": [
           "EP081"
         ],
-        "note": "EP081 借超级碗中场秀和 Bad Bunny 讨论流行文化转向，具体说波多黎各文化需要放回群体跟唱、共同感受和地方生活氛围里理解。节目归纳出的机制是：全球最大舞台开始容纳更强地方性和身份性，这说明缝合式全球化正在松动，逆全球化时代反而要求个人更主动打开文化边界。"
+        "note": "EP081 先回应很多人说没看懂、质疑 Bad Bunny 凭什么拿格莱美。这类曲子不适合一个人独唱，要去看波多黎各人酒吧里满场跟唱的视频，那股劲才出得来。接着把它放大：一支小众的美洲文化靠十分钟拿走整个北美的注意力，过去二三十年以英语为核心的缝合式全球化在退潮，民族、地方和个体各自登场。时代往本土收缩时，个人反而要保持开放。"
       }
     ],
     "impactNotes": [
-      "它影响的是文化中心和边缘的关系：地方语言、音乐和身份不再只是被翻译成主流审美，而可能短暂定义主舞台。",
-      "它也影响观众的理解门槛：看不懂不等于失败，陌生文化需要从群体生活和历史身份里读。",
-      "它把美国内部的属地身份和全球流行文化连接起来，让娱乐节目变成观察政治身份、语言和文化自信的入口。"
+      "美国主舞台上出现一场几乎全西语的演出，说明英语不再是流行文化唯一的通行证。",
+      "看不懂的观众多了，评价的标准就成了问题，EP081 的说法是先把东西放回它能成立的场合里再评价。",
+      "波多黎各人的公民身份和文化身份分属两边，Bad Bunny 又公开批评移民政策，娱乐话题很快变成美国国内的政治争论。"
     ],
     "signalNotes": [
-      "Bad Bunny、群体跟唱、西语表达和美国主舞台一起出现时，节目要讨论的不是单个歌手红不红，而是地方文化如何占据中心位置。",
-      "观众说“看不懂”时，波多黎各线索提醒读者先判断自己缺的是审美共鸣，还是对地方生活语境的理解。",
-      "当逆全球化和地方身份被放在一起，节目反而会建议个人主动全球化，因为能理解更多文化的人更容易获得认知复利。"
+      "Bad Bunny 用西班牙语唱满中场秀，这件事被拿来讨论时，重点在地方文化怎样占据中心位置。",
+      "有人说看不懂时，先分清缺的是审美上的共鸣，还是对波多黎各生活场景的了解。",
+      "逆全球化和地方身份放在一起谈，EP081 的落点在个人：周期往回收，开放的人才拿得到复利。"
     ],
     "extensionNotes": [
       {
         "title": "Bad Bunny",
-        "note": "Bad Bunny 是 EP081 里波多黎各文化进入美国主舞台的具体人物入口。"
+        "note": "EP081 里把波多黎各文化带上主舞台的具体人物。"
       },
       {
         "title": "逆全球化",
-        "note": "波多黎各线索说明逆全球化不是文化封闭，也可能是地方性重新获得可见度。"
+        "note": "EP081 把这场中场秀读成文化再属地化的信号，逆全球化那一页讲的是同一条线的经济和政治面。"
       },
       {
-        "title": "小国身份",
-        "note": "波多黎各适合与新加坡等小地缘身份对照，继续观察边缘节点如何在大系统里定位自己。"
+        "title": "超级碗中场秀",
+        "note": "中场秀被叫作美国春晚，谁站上去、唱什么语言，本身就是美国文化风向的一个刻度。"
       }
     ],
     "sources": [
       {
-        "title": "Puerto Rico - The World Factbook",
-        "url": "https://www.cia.gov/the-world-factbook/about/archives/2023/countries/puerto-rico/summaries/",
-        "note": "核对波多黎各位于加勒比地区及美国非建制有组织属地的基础政治地理信息"
+        "title": "Puerto Rico - Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Puerto_Rico",
+        "note": "核对位置、人口约 320 万、非建制属地、西英双官方语言、1898 年归美国：organized as an unincorporated territory of the United States……With approximately 3.2 million people……Spanish and English are the official languages。"
       },
       {
-        "title": "Puerto Rico - USAGov",
-        "url": "https://www.usa.gov/states/puerto-rico",
-        "note": "核对美国政府公共入口中波多黎各作为美国领地/地区相关政府信息入口"
+        "title": "Puerto Rico - The World Factbook",
+        "url": "https://www.cia.gov/the-world-factbook/about/archives/2023/countries/puerto-rico/summaries/",
+        "note": "核对非建制属地地位和居民为美国公民（unincorporated territory、U.S. citizens）。"
+      },
+      {
+        "title": "特朗普：Bad Bunny超级碗中场表演糟糕透顶（联合早报，2026-02-09）",
+        "url": "https://www.zaobao.com.sg/news/world/story20260209-8396963",
+        "note": "核对第 60 届超级碗中场秀由波多黎各歌手 Bad Bunny 担任压轴，演唱西班牙语雷鬼音乐，特朗普发文批评。"
+      },
+      {
+        "title": "Super Bowl LX halftime show - Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Super_Bowl_LX_halftime_show",
+        "note": "核对 2026 年 2 月 8 日、Lady Gaga 和 Ricky Martin 助阵、the first time a Latino solo artist headlined、almost entirely in Spanish。"
       }
     ],
     "episodes": [
       {
         "id": "EP081",
-        "note": "这期借 Bad Bunny、波多黎各和超级碗中场秀讨论地方文化进入全球主舞台。"
+        "note": "Bad Bunny 的中场秀要放回波多黎各人跟唱的氛围里听，地方文化占了北美十分钟。"
       }
-    ]
+    ],
+    "asOf": "2026-10-04"
   },
   "博商资管": {
     "kind": "organization",
