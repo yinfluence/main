@@ -1,0 +1,61 @@
+{
+  "id": "inside-out",
+  "name": "头脑特工队",
+  "kind": "product",
+  "asOf": "2026-10-07",
+  "sources": [
+    {
+      "title": "Joy (Inside Out) | Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Joy_(Inside_Out)",
+      "note": "核对 2015 年皮克斯动画，导演彼特·道格特，乐乐是女孩莱莉脑中最早出现、起主导作用的情绪。"
+    },
+    {
+      "title": "Rolling Stone：Inside Out 2 trailer adds Anxiety",
+      "url": "https://www.rollingstone.com/tv-movies/tv-movie-news/inside-out-2-trailer-new-emotion-anxiety-1234874030/",
+      "note": "核对 2024 年续集讲莱莉进入青春期，焦虑等新情绪加入。"
+    }
+  ],
+  "summary": "《头脑特工队》是皮克斯 2015 年的动画电影，把一个女孩脑子里的情绪拍成几个小人。EP222 拿它说明孩子长大后情绪变复杂是正常的事。",
+  "description": "电影讲十一岁女孩莱莉随父母搬家，脑中的乐乐、忧忧、怒怒、怕怕、厌厌五种情绪在总部里争着做主。黄色的乐乐一开始主导一切，后来发现忧忧也有它的用处。2024 年的续集里莱莉进入青春期，焦虑等新情绪住了进来。EP222 借这部动画讲孩子从只有快乐，到各种情绪都进来的过程。",
+  "objectRole": "它是一部给孩子和家长一起看的动画，把情绪变化讲得很直观，常被拿来解释成长中的情绪起伏。",
+  "programAssociations": [
+    {
+      "title": "快乐的小人不会一直做主",
+      "episodes": [
+        "EP222"
+      ],
+      "note": "EP222 讲女儿念叨自己不快乐，家长一度焦虑。随后想到这部动画，最开始只有快乐那个黄色小人，后来别的小人一个个进来。孩子长大，需求、学业和要面对的事都变多，对快乐的评估也在变，这不一定是坏事。"
+    }
+  ],
+  "consequenceNotes": [
+    "家长要是只想让快乐的小人一直做主，就会去挡掉孩子所有不快乐的事，孩子反而少了练习面对的机会。"
+  ],
+  "signalNotes": [
+    "家长用这部电影跟孩子聊情绪时，通常是在承认不快乐也是正常的一部分。"
+  ],
+  "extensionNotes": [
+    {
+      "title": "幸福感",
+      "note": "EP222 用它引出快乐和幸福的分别。"
+    },
+    {
+      "title": "精神三弑",
+      "note": "情绪变复杂是成长的开头，EP063 讲的三关是更长的那一段。"
+    }
+  ],
+  "aliases": [
+    "Inside Out",
+    "《头脑特工队》",
+    "头脑特工队2"
+  ],
+  "relatedKeywords": [
+    "幸福感",
+    "精神三弑"
+  ],
+  "episodes": [
+    {
+      "id": "EP222",
+      "note": "借黄色快乐小人之后别的情绪陆续进来，说明孩子说不快乐多半是成长本来的样子。"
+    }
+  ]
+}

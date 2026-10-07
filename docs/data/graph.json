@@ -2,14 +2,14 @@
   "meta": {
     "title": "颖响力知识图谱",
     "subtitle": "节目、概念、模型、人物、主题之间的可视化连接网络",
-    "nodeCount": 756,
-    "linkCount": 2824,
+    "nodeCount": 758,
+    "linkCount": 2833,
     "typeCounts": {
       "model": 83,
       "live": 47,
-      "concept": 248,
+      "concept": 249,
       "theme": 92,
-      "episode": 221,
+      "episode": 222,
       "person": 65
     }
   },
@@ -136,6 +136,17 @@
       "degree": 30
     },
     {
+      "id": "theme:singapore-and-small-state-survival",
+      "key": "singapore-and-small-state-survival",
+      "label": "新加坡与小国生存术",
+      "fullLabel": "新加坡与小国生存术",
+      "type": "theme",
+      "route": "themes/singapore-and-small-state-survival",
+      "summary": "讨论新加坡如何把规则、海峡、人才和谨慎外交组合成一套小国长期生存方法。",
+      "status": null,
+      "degree": 29
+    },
+    {
       "id": "live:LIVE003",
       "key": "LIVE003",
       "label": "LIVE003",
@@ -145,17 +156,6 @@
       "summary": "躺平不是对抗体系，是一套更高级的非协作体系。",
       "status": "curated",
       "degree": 29
-    },
-    {
-      "id": "theme:singapore-and-small-state-survival",
-      "key": "singapore-and-small-state-survival",
-      "label": "新加坡与小国生存术",
-      "fullLabel": "新加坡与小国生存术",
-      "type": "theme",
-      "route": "themes/singapore-and-small-state-survival",
-      "summary": "讨论新加坡如何把规则、海峡、人才和谨慎外交组合成一套小国长期生存方法。",
-      "status": null,
-      "degree": 28
     },
     {
       "id": "live:LIVE021",
@@ -1434,6 +1434,17 @@
       "degree": 12
     },
     {
+      "id": "theme:human-value-and-state-credit",
+      "key": "human-value-and-state-credit",
+      "label": "人的价值与国家信用",
+      "fullLabel": "人的价值与国家信用",
+      "type": "theme",
+      "route": "themes/human-value-and-state-credit",
+      "summary": "讨论国家究竟把个体视为成本、工具，还是视为必须兑现承诺的对象。",
+      "status": null,
+      "degree": 12
+    },
+    {
       "id": "concept:phantom-sales",
       "key": "phantom-sales",
       "label": "虚假销售",
@@ -1683,17 +1694,6 @@
       "type": "concept",
       "route": "concepts/delayed-price-discovery",
       "summary": "真实价格本来应该尽快显现，但被托价、缓冲、票据和关系安排一层层往后拖，市场只剩名义稳定。",
-      "status": null,
-      "degree": 11
-    },
-    {
-      "id": "theme:human-value-and-state-credit",
-      "key": "human-value-and-state-credit",
-      "label": "人的价值与国家信用",
-      "fullLabel": "人的价值与国家信用",
-      "type": "theme",
-      "route": "themes/human-value-and-state-credit",
-      "summary": "讨论国家究竟把个体视为成本、工具，还是视为必须兑现承诺的对象。",
       "status": null,
       "degree": 11
     },
@@ -2083,6 +2083,17 @@
       "degree": 9
     },
     {
+      "id": "person:lee-kuan-yew",
+      "key": "lee-kuan-yew",
+      "label": "李光耀",
+      "fullLabel": "李光耀",
+      "type": "person",
+      "route": "people/lee-kuan-yew",
+      "summary": "李光耀是新加坡首任总理，1959 年到 1990 年在任，2015 年去世。十期节目和直播拿他解释新加坡为什么能成：多元立国、苏州工业园区、冷气化和提前规划。",
+      "status": null,
+      "degree": 9
+    },
+    {
       "id": "theme:time-horizon-and-foresight",
       "key": "time-horizon-and-foresight",
       "label": "时间尺度与资产前瞻",
@@ -2468,6 +2479,17 @@
       "degree": 9
     },
     {
+      "id": "episode:EP222",
+      "key": "EP222",
+      "label": "EP222",
+      "fullLabel": "EP222 · 新加坡要的到底是幸福，还是快乐？如何理解成长的烦恼与人生的追求。",
+      "type": "episode",
+      "route": "episodes/EP222",
+      "summary": "新加坡前外长杨荣文在彭博社的直播里被人问到，新加坡这么有钱，为何显得不快乐。他重提李光耀的话，政府可以承诺发展、基建和教育，唯独别承诺快乐。他带过的贸工部和外交部加班多、压力大，士气却在全系统数一数二。快乐是当下的情绪，幸福是对整段人生的满意，两者常被混成一回事。孩子长大后说自己不快乐，多半是成长本来的样子。家长不必急着替他挡掉，也不该把他往死里逼。一个国家最后好不好，要看住在这里的人觉得日子值不值得过。",
+      "status": "curated",
+      "degree": 9
+    },
+    {
       "id": "concept:refuge-premium",
       "key": "refuge-premium",
       "label": "避险溢价",
@@ -2501,6 +2523,17 @@
       "degree": 8
     },
     {
+      "id": "model:individuation-three-stage",
+      "key": "individuation-three-stage",
+      "label": "个体化三阶段模型",
+      "fullLabel": "个体化三阶段模型",
+      "type": "model",
+      "route": "models/individuation-three-stage",
+      "summary": "个体化三阶段模型把成长理解为依次消化亲情、权威和自我，而非一次性觉醒。",
+      "status": null,
+      "degree": 8
+    },
+    {
       "id": "model:black-box-assetization",
       "key": "black-box-assetization",
       "label": "黑箱资产化",
@@ -2523,13 +2556,13 @@
       "degree": 8
     },
     {
-      "id": "person:lee-kuan-yew",
-      "key": "lee-kuan-yew",
-      "label": "李光耀",
-      "fullLabel": "李光耀",
-      "type": "person",
-      "route": "people/lee-kuan-yew",
-      "summary": "李光耀是新加坡首任总理，1959 年到 1990 年在任，2015 年去世。十期节目和直播拿他解释新加坡为什么能成：多元立国、苏州工业园区、冷气化和提前规划。",
+      "id": "theme:exam-centered-education-and-person-formation",
+      "key": "exam-centered-education-and-person-formation",
+      "label": "考试中心教育与人成形",
+      "fullLabel": "考试中心教育与人成形",
+      "type": "theme",
+      "route": "themes/exam-centered-education-and-person-formation",
+      "summary": "关注学校如何把人塑造成服从考试和权威的对象。",
       "status": null,
       "degree": 8
     },
@@ -3095,17 +3128,6 @@
       "degree": 7
     },
     {
-      "id": "model:individuation-three-stage",
-      "key": "individuation-three-stage",
-      "label": "个体化三阶段模型",
-      "fullLabel": "个体化三阶段模型",
-      "type": "model",
-      "route": "models/individuation-three-stage",
-      "summary": "个体化三阶段模型把成长理解为依次消化亲情、权威和自我，而非一次性觉醒。",
-      "status": null,
-      "degree": 7
-    },
-    {
       "id": "theme:public-space-and-civic-maturity",
       "key": "public-space-and-civic-maturity",
       "label": "公共空间与公民成熟",
@@ -3150,13 +3172,13 @@
       "degree": 7
     },
     {
-      "id": "theme:exam-centered-education-and-person-formation",
-      "key": "exam-centered-education-and-person-formation",
-      "label": "考试中心教育与人成形",
-      "fullLabel": "考试中心教育与人成形",
-      "type": "theme",
-      "route": "themes/exam-centered-education-and-person-formation",
-      "summary": "关注学校如何把人塑造成服从考试和权威的对象。",
+      "id": "concept:exam-centered-discipline",
+      "key": "exam-centered-discipline",
+      "label": "考试中心化规训",
+      "fullLabel": "考试中心化规训",
+      "type": "concept",
+      "route": "concepts/exam-centered-discipline",
+      "summary": "学校生活、身体节奏和人格评价都围绕考试排名组织起来时，教育会退化为规训系统。",
       "status": null,
       "degree": 7
     },
@@ -3700,17 +3722,6 @@
       "degree": 6
     },
     {
-      "id": "concept:exam-centered-discipline",
-      "key": "exam-centered-discipline",
-      "label": "考试中心化规训",
-      "fullLabel": "考试中心化规训",
-      "type": "concept",
-      "route": "concepts/exam-centered-discipline",
-      "summary": "学校生活、身体节奏和人格评价都围绕考试排名组织起来时，教育会退化为规训系统。",
-      "status": null,
-      "degree": 6
-    },
-    {
       "id": "person:lee-hsien-loong",
       "key": "lee-hsien-loong",
       "label": "李显龙",
@@ -4015,6 +4026,17 @@
       "type": "theme",
       "route": "themes/bullshit-politics-and-historical-narratives",
       "summary": "讨论对真相冷漠的话术如何进入历史解释和身份动员。",
+      "status": null,
+      "degree": 5
+    },
+    {
+      "id": "theme:growth-and-family-boundaries",
+      "key": "growth-and-family-boundaries",
+      "label": "成长与亲情边界",
+      "fullLabel": "成长与亲情边界",
+      "type": "theme",
+      "route": "themes/growth-and-family-boundaries",
+      "summary": "关注个体如何在亲情、权威和自我之间逐步建立成熟边界。",
       "status": null,
       "degree": 5
     },
@@ -4730,17 +4752,6 @@
       "type": "concept",
       "route": "concepts/property-boundary-literacy",
       "summary": "产权意识指能够清晰区分公共场所与私人商业场所，并据此判断谁有权定规则、什么时候规则可以被挑战。",
-      "status": null,
-      "degree": 4
-    },
-    {
-      "id": "theme:growth-and-family-boundaries",
-      "key": "growth-and-family-boundaries",
-      "label": "成长与亲情边界",
-      "fullLabel": "成长与亲情边界",
-      "type": "theme",
-      "route": "themes/growth-and-family-boundaries",
-      "summary": "关注个体如何在亲情、权威和自我之间逐步建立成熟边界。",
       "status": null,
       "degree": 4
     },
@@ -5643,6 +5654,17 @@
       "type": "person",
       "route": "people/elon-musk",
       "summary": "马斯克是特斯拉和 SpaceX 的首席执行官兼最大股东。EP175 借他在 X 上称李光耀天才，引出第一性原理。EP113 把他的 SpaceX 当成美国航天双轮里商业的那一轮。",
+      "status": null,
+      "degree": 3
+    },
+    {
+      "id": "model:teleological-vs-deterministic-parenting",
+      "key": "teleological-vs-deterministic-parenting",
+      "label": "目的论与决定论育儿",
+      "fullLabel": "目的论与决定论育儿",
+      "type": "model",
+      "route": "models/teleological-vs-deterministic-parenting",
+      "summary": "用未来目的倒推现在投入的目的论育儿，对比用孩子既有天赋与兴趣往前推演的决定论育儿。",
       "status": null,
       "degree": 3
     },
@@ -6578,17 +6600,6 @@
       "type": "concept",
       "route": "concepts/rooting-in-place",
       "summary": "一个人的根不在祖先生活过的故土，而在对自己好、能真正生活下去的地方。",
-      "status": null,
-      "degree": 2
-    },
-    {
-      "id": "model:teleological-vs-deterministic-parenting",
-      "key": "teleological-vs-deterministic-parenting",
-      "label": "目的论与决定论育儿",
-      "fullLabel": "目的论与决定论育儿",
-      "type": "model",
-      "route": "models/teleological-vs-deterministic-parenting",
-      "summary": "用未来目的倒推现在投入的目的论育儿，对比用孩子既有天赋与兴趣往前推演的决定论育儿。",
       "status": null,
       "degree": 2
     },
@@ -7997,6 +8008,17 @@
       "type": "concept",
       "route": "concepts/confidence-run",
       "summary": "一家企业被传要倒，顾客、供应商和员工各自抢着保自己，合起来把还撑得住的企业推倒。",
+      "status": null,
+      "degree": 1
+    },
+    {
+      "id": "concept:happiness-pleasure-distinction",
+      "key": "happiness-pleasure-distinction",
+      "label": "幸福与快乐之分",
+      "fullLabel": "幸福与快乐之分",
+      "type": "concept",
+      "route": "concepts/happiness-pleasure-distinction",
+      "summary": "快乐是一时的开心，幸福是对整段人生的满意，两者经常不同步。",
       "status": null,
       "degree": 1
     },
@@ -16365,6 +16387,51 @@
     {
       "source": "episode:EP221",
       "target": "theme:trauma-memory-and-generational-loop",
+      "kind": "episode-theme"
+    },
+    {
+      "source": "episode:EP222",
+      "target": "concept:happiness-pleasure-distinction",
+      "kind": "episode-concept"
+    },
+    {
+      "source": "episode:EP222",
+      "target": "concept:exam-centered-discipline",
+      "kind": "episode-concept"
+    },
+    {
+      "source": "episode:EP222",
+      "target": "model:individuation-three-stage",
+      "kind": "episode-model"
+    },
+    {
+      "source": "episode:EP222",
+      "target": "model:teleological-vs-deterministic-parenting",
+      "kind": "episode-model"
+    },
+    {
+      "source": "episode:EP222",
+      "target": "person:lee-kuan-yew",
+      "kind": "episode-person"
+    },
+    {
+      "source": "episode:EP222",
+      "target": "theme:singapore-and-small-state-survival",
+      "kind": "episode-theme"
+    },
+    {
+      "source": "episode:EP222",
+      "target": "theme:growth-and-family-boundaries",
+      "kind": "episode-theme"
+    },
+    {
+      "source": "episode:EP222",
+      "target": "theme:exam-centered-education-and-person-formation",
+      "kind": "episode-theme"
+    },
+    {
+      "source": "episode:EP222",
+      "target": "theme:human-value-and-state-credit",
       "kind": "episode-theme"
     },
     {
