@@ -2,11 +2,11 @@
   "meta": {
     "title": "颖响力知识图谱",
     "subtitle": "节目、概念、模型、人物、主题之间的可视化连接网络",
-    "nodeCount": 758,
-    "linkCount": 2833,
+    "nodeCount": 759,
+    "linkCount": 2854,
     "typeCounts": {
       "model": 83,
-      "live": 47,
+      "live": 48,
       "concept": 249,
       "theme": 92,
       "episode": 222,
@@ -246,6 +246,17 @@
       "degree": 27
     },
     {
+      "id": "theme:rule-of-law-boundaries-and-social-trust",
+      "key": "rule-of-law-boundaries-and-social-trust",
+      "label": "法治边界与社会信任",
+      "fullLabel": "法治边界与社会信任",
+      "type": "theme",
+      "route": "themes/rule-of-law-boundaries-and-social-trust",
+      "summary": "关注法律灰区如何影响公众的善意、风险感和彼此信任。",
+      "status": null,
+      "degree": 26
+    },
+    {
       "id": "episode:EP154",
       "key": "EP154",
       "label": "EP154",
@@ -323,13 +334,13 @@
       "degree": 26
     },
     {
-      "id": "theme:rule-of-law-boundaries-and-social-trust",
-      "key": "rule-of-law-boundaries-and-social-trust",
-      "label": "法治边界与社会信任",
-      "fullLabel": "法治边界与社会信任",
-      "type": "theme",
-      "route": "themes/rule-of-law-boundaries-and-social-trust",
-      "summary": "关注法律灰区如何影响公众的善意、风险感和彼此信任。",
+      "id": "model:narrative-instrumentalization",
+      "key": "narrative-instrumentalization",
+      "label": "叙事工具化模型",
+      "fullLabel": "叙事工具化模型",
+      "type": "model",
+      "route": "models/narrative-instrumentalization",
+      "summary": "叙事工具化模型解释叙事的主要功能从解释现实转向组织情绪和划分阵营。",
       "status": null,
       "degree": 25
     },
@@ -422,17 +433,6 @@
       "degree": 24
     },
     {
-      "id": "model:narrative-instrumentalization",
-      "key": "narrative-instrumentalization",
-      "label": "叙事工具化模型",
-      "fullLabel": "叙事工具化模型",
-      "type": "model",
-      "route": "models/narrative-instrumentalization",
-      "summary": "叙事工具化模型解释叙事的主要功能从解释现实转向组织情绪和划分阵营。",
-      "status": null,
-      "degree": 24
-    },
-    {
       "id": "live:LIVE024",
       "key": "LIVE024",
       "label": "LIVE024",
@@ -488,6 +488,17 @@
       "degree": 23
     },
     {
+      "id": "theme:narrative-speculation-and-retail-traps",
+      "key": "narrative-speculation-and-retail-traps",
+      "label": "投资叙事与散户陷阱",
+      "fullLabel": "投资叙事与散户陷阱",
+      "type": "theme",
+      "route": "themes/narrative-speculation-and-retail-traps",
+      "summary": "当市场热点先由故事驱动、再由散户接棒时，普通人最容易在高潮处接到最后一棒。",
+      "status": null,
+      "degree": 23
+    },
+    {
       "id": "concept:chokepoint-leverage",
       "key": "chokepoint-leverage",
       "label": "咽喉杠杆",
@@ -519,17 +530,6 @@
       "summary": "按直播里的推演，七八家机构各掏三十亿去稳三百，叠在一起成了一千。",
       "status": "published",
       "degree": 23
-    },
-    {
-      "id": "theme:narrative-speculation-and-retail-traps",
-      "key": "narrative-speculation-and-retail-traps",
-      "label": "投资叙事与散户陷阱",
-      "fullLabel": "投资叙事与散户陷阱",
-      "type": "theme",
-      "route": "themes/narrative-speculation-and-retail-traps",
-      "summary": "当市场热点先由故事驱动、再由散户接棒时，普通人最容易在高潮处接到最后一棒。",
-      "status": null,
-      "degree": 22
     },
     {
       "id": "episode:EP136",
@@ -609,6 +609,17 @@
       "degree": 21
     },
     {
+      "id": "theme:middle-class-descent-and-stratification",
+      "key": "middle-class-descent-and-stratification",
+      "label": "中产下坠与分层社会",
+      "fullLabel": "中产下坠与分层社会",
+      "type": "theme",
+      "route": "themes/middle-class-descent-and-stratification",
+      "summary": "当中间层缺乏缓冲带时，经济下行会迅速转成身份下坠、关系断裂和社会分层加固。",
+      "status": null,
+      "degree": 21
+    },
+    {
       "id": "episode:EP131",
       "key": "EP131",
       "label": "EP131",
@@ -642,6 +653,17 @@
       "degree": 21
     },
     {
+      "id": "live:LIVE048",
+      "key": "LIVE048",
+      "label": "LIVE048",
+      "fullLabel": "LIVE048 · 供养比失衡的真相：虫子长得比树还大！苏联卫星上天，为什么最后倒在一块面包上？",
+      "type": "live",
+      "route": "lives/LIVE048",
+      "summary": "一台挖掘机体制内十万、体制外四十万，倒一手就赚三十万，谁还去琢磨创新。",
+      "status": "published",
+      "degree": 21
+    },
+    {
       "id": "person:donald-trump",
       "key": "donald-trump",
       "label": "特朗普",
@@ -660,17 +682,6 @@
       "type": "model",
       "route": "models/strategic-timing",
       "summary": "真正决定收益的往往不是是否参与，而是你能否在远早于大众情绪的时点、以合适规模和合适位置进入。",
-      "status": null,
-      "degree": 20
-    },
-    {
-      "id": "theme:middle-class-descent-and-stratification",
-      "key": "middle-class-descent-and-stratification",
-      "label": "中产下坠与分层社会",
-      "fullLabel": "中产下坠与分层社会",
-      "type": "theme",
-      "route": "themes/middle-class-descent-and-stratification",
-      "summary": "当中间层缺乏缓冲带时，经济下行会迅速转成身份下坠、关系断裂和社会分层加固。",
       "status": null,
       "degree": 20
     },
@@ -829,6 +840,17 @@
       "degree": 18
     },
     {
+      "id": "concept:pan-institutional-middle-class",
+      "key": "pan-institutional-middle-class",
+      "label": "泛体制中产",
+      "fullLabel": "泛体制中产",
+      "type": "concept",
+      "route": "concepts/pan-institutional-middle-class",
+      "summary": "泛体制中产指依靠公务员、事业编、国企及体制相关岗位维持稳定收入、福利和社会体面的中间层。",
+      "status": null,
+      "degree": 18
+    },
+    {
       "id": "model:leverage-backfire",
       "key": "leverage-backfire",
       "label": "杠杆反噬",
@@ -847,6 +869,17 @@
       "type": "theme",
       "route": "themes/sanctions-and-power-containment",
       "summary": "讨论制裁、门罗主义、海峡与联盟如何共同服务于压制对手集团的全球布局。",
+      "status": null,
+      "degree": 18
+    },
+    {
+      "id": "concept:middle-class-hard-landing",
+      "key": "middle-class-hard-landing",
+      "label": "中产硬着陆",
+      "fullLabel": "中产硬着陆",
+      "type": "concept",
+      "route": "concepts/middle-class-hard-landing",
+      "summary": "高负债中产一旦失速，下坠往往同时摧毁资产、体面、关系和自我认同。",
       "status": null,
       "degree": 18
     },
@@ -880,28 +913,6 @@
       "type": "model",
       "route": "models/subsidy-capital-flywheel",
       "summary": "补贴资本飞轮解释地方财政、产业基金、企业估值和再融资如何互相放大。",
-      "status": null,
-      "degree": 17
-    },
-    {
-      "id": "concept:pan-institutional-middle-class",
-      "key": "pan-institutional-middle-class",
-      "label": "泛体制中产",
-      "fullLabel": "泛体制中产",
-      "type": "concept",
-      "route": "concepts/pan-institutional-middle-class",
-      "summary": "泛体制中产指依靠公务员、事业编、国企及体制相关岗位维持稳定收入、福利和社会体面的中间层。",
-      "status": null,
-      "degree": 17
-    },
-    {
-      "id": "concept:middle-class-hard-landing",
-      "key": "middle-class-hard-landing",
-      "label": "中产硬着陆",
-      "fullLabel": "中产硬着陆",
-      "type": "concept",
-      "route": "concepts/middle-class-hard-landing",
-      "summary": "高负债中产一旦失速，下坠往往同时摧毁资产、体面、关系和自我认同。",
       "status": null,
       "degree": 17
     },
@@ -1423,6 +1434,17 @@
       "degree": 13
     },
     {
+      "id": "theme:planned-systems-and-innovation",
+      "key": "planned-systems-and-innovation",
+      "label": "大计划体制与创新约束",
+      "fullLabel": "大计划体制与创新约束",
+      "type": "theme",
+      "route": "themes/planned-systems-and-innovation",
+      "summary": "讨论统一目标和强组织动员如何带来短期速度，又如何在长期压缩创新、纠错与自发能动性。",
+      "status": null,
+      "degree": 12
+    },
+    {
       "id": "model:wall-and-gray-trade-crackdown",
       "key": "wall-and-gray-trade-crackdown",
       "label": "建墙与打灰模型",
@@ -1621,6 +1643,17 @@
       "degree": 12
     },
     {
+      "id": "episode:EP207",
+      "key": "EP207",
+      "label": "EP207",
+      "fullLabel": "EP207 · 40年房贷奥德赛式死局！一边漩涡一边牺牲，曾经的苏联选了哪条路？",
+      "type": "episode",
+      "route": "episodes/EP207",
+      "summary": "个人住房贷款最长年限从三十年放宽到四十年，房地产股应声就涨，各路解读都说月供大降。按一百万算，每月少还616块，总利息却从61.66万涨到85.95万，多付二十四万。利率和本金都没变，变的只有时间，这叫负债延期。银行一分钱没损失，扛不住月供的家庭被接住，坏账率稳了，还多收十年利息。这像奥德修斯过海峡，躲开漩涡就得让六头海怪叼走六个船员，被牺牲的是只能选四十年的年轻人。苏联勃列日涅夫那十八年也是这样拖过来的。定这个年限的人，不用还这笔贷款。",
+      "status": "curated",
+      "degree": 12
+    },
+    {
       "id": "episode:EP217",
       "key": "EP217",
       "label": "EP217",
@@ -1652,17 +1685,6 @@
       "summary": "2026 年全球创新指数放榜，新加坡排在第五，连续四年进前五，创新投入一项排全球第一。政府二十多年来每年拿出约 1% 的 GDP 投进研究和创新，这份成绩是长期砸钱换来的。国家层面风光，落到职场人身上却没那么轻松。华人社会信了几十年文凭至上，名校文凭被当成终身饭票，教出来的多是按流程办事的跟随者。AI 最先替掉的正是这批靠经验吃饭的中间层，吃香的变成定方向的创新者和会用工具解决问题的应用者。文凭还是敲门砖，学习却没有毕业那一天。",
       "status": "curated",
       "degree": 12
-    },
-    {
-      "id": "theme:planned-systems-and-innovation",
-      "key": "planned-systems-and-innovation",
-      "label": "大计划体制与创新约束",
-      "fullLabel": "大计划体制与创新约束",
-      "type": "theme",
-      "route": "themes/planned-systems-and-innovation",
-      "summary": "讨论统一目标和强组织动员如何带来短期速度，又如何在长期压缩创新、纠错与自发能动性。",
-      "status": null,
-      "degree": 11
     },
     {
       "id": "theme:east-asia-security-realignment",
@@ -1786,17 +1808,6 @@
       "degree": 11
     },
     {
-      "id": "episode:EP207",
-      "key": "EP207",
-      "label": "EP207",
-      "fullLabel": "EP207 · 40年房贷奥德赛式死局！一边漩涡一边牺牲，曾经的苏联选了哪条路？",
-      "type": "episode",
-      "route": "episodes/EP207",
-      "summary": "个人住房贷款最长年限从三十年放宽到四十年，房地产股应声就涨，各路解读都说月供大降。按一百万算，每月少还616块，总利息却从61.66万涨到85.95万，多付二十四万。利率和本金都没变，变的只有时间，这叫负债延期。银行一分钱没损失，扛不住月供的家庭被接住，坏账率稳了，还多收十年利息。这像奥德修斯过海峡，躲开漩涡就得让六头海怪叼走六个船员，被牺牲的是只能选四十年的年轻人。苏联勃列日涅夫那十八年也是这样拖过来的。定这个年限的人，不用还这笔贷款。",
-      "status": "curated",
-      "degree": 11
-    },
-    {
       "id": "episode:EP211",
       "key": "EP211",
       "label": "EP211",
@@ -1859,6 +1870,17 @@
       "type": "model",
       "route": "models/regional-denial-model",
       "summary": "真正有效的区域拒止，不是无上限扩张，而是把对手压在若干区域里，阻止其形成全球联动能力。",
+      "status": null,
+      "degree": 10
+    },
+    {
+      "id": "concept:cash-optionality",
+      "key": "cash-optionality",
+      "label": "现金选择权",
+      "fullLabel": "现金选择权",
+      "type": "concept",
+      "route": "concepts/cash-optionality",
+      "summary": "现金在高波动时期的核心价值，是保留等待、谈判、退出和重新进入的选择权。",
       "status": null,
       "degree": 10
     },
@@ -2138,17 +2160,6 @@
       "degree": 9
     },
     {
-      "id": "concept:cash-optionality",
-      "key": "cash-optionality",
-      "label": "现金选择权",
-      "fullLabel": "现金选择权",
-      "type": "concept",
-      "route": "concepts/cash-optionality",
-      "summary": "现金在高波动时期的核心价值，是保留等待、谈判、退出和重新进入的选择权。",
-      "status": null,
-      "degree": 9
-    },
-    {
       "id": "theme:ev-safety-and-consumer-testing",
       "key": "ev-safety-and-consumer-testing",
       "label": "新能源安全边界与消费者测试",
@@ -2314,6 +2325,17 @@
       "degree": 9
     },
     {
+      "id": "episode:EP063",
+      "key": "EP063",
+      "label": "EP063",
+      "fullLabel": "EP063 · 成为“男人”的三个阶段，“断亲”背后的真相，如何从辛巴变成木法沙……",
+      "type": "episode",
+      "route": "episodes/EP063",
+      "summary": "男人长成自己要过精神上的三关，弑母、弑父、弑自己。弑要先把亲情、权威和自己吃进去看清，再吐出来还它理解和尊重，光切断不算。现在流行的断亲多半只做到离远一点，看清了却吐不出来。弑父这关在中国能过的人只有百分之几。过不去的人见到领导的威严就把自己放低，当了领导又这样对下属。弑自己更难，要看清自己身上所有毛病，还能接受自己。很多心理课程上来就让人剖析自己，前两关没过的人会被掏空，变成别人塑出来的空壳。三关都过了还有一关，理解死亡，向死而生。",
+      "status": "curated",
+      "degree": 9
+    },
+    {
       "id": "episode:EP064",
       "key": "EP064",
       "label": "EP064",
@@ -2343,6 +2365,17 @@
       "type": "episode",
       "route": "episodes/EP080",
       "summary": "比亚迪放进笑傲江湖的排名，只算福威镖局。它本是三四流，靠刀片电池一下进了一线。能做电池又能造车的就那么几家，车生锈、防撞梁薄，同行也不敢开口。它在全国铺 4S 店，放贷款让店主少掏钱。海外一个电池能对应几台车的账，假卖的车再转成零公里二手车，外人看不见真实销量。后端的供应链金融欠着所有人的钱，前端的虚假销售接上补贴和地方政府的账。2026 年 1 月销量据说见了底，可能是在撒泼打滚，逼地方和国家出手。电车公司把测试版当正式版卖，还有人喊着为国测试替它冲在前面。",
+      "status": "curated",
+      "degree": 9
+    },
+    {
+      "id": "episode:EP100",
+      "key": "EP100",
+      "label": "EP100",
+      "fullLabel": "EP100 · 涨20元的农村养老金，让我们看清了一些事。【100期特辑】",
+      "type": "episode",
+      "route": "episodes/EP100",
+      "summary": "有一部分农村老人的养老金今年涨了 20 块，很多人一听就笑了。20 块钱能买半斤肉，或者一盒便宜的降压药。同一阵子胖东来公布分配方案，普通一线员工每人分到价值 20 万的资产份额。交了一辈子公粮的老人，每月养老金一共不过 200 块，这 20 块连象征性的尊重都算不上。\n\n刺激政策讲究乘数效应和资本叠加，钱最后流进少数人的口袋。直接到老人手里的小钱，却会进菜市场和药店，养的是社会最底层。养老金分体制内、体制外和农民三类，差距长期固化，一种看法是，南斯拉夫和罗马尼亚动荡之前都走过这一段。",
       "status": "curated",
       "degree": 9
     },
@@ -2508,6 +2541,17 @@
       "type": "model",
       "route": "models/discipline-failure-loop",
       "summary": "违规成本过低时，市场会把规则破坏重新包装成交易机会，反过来奖励下一次违规。",
+      "status": null,
+      "degree": 8
+    },
+    {
+      "id": "theme:big-government-and-incentive-reversal",
+      "key": "big-government-and-incentive-reversal",
+      "label": "大政府与激励反转",
+      "fullLabel": "大政府与激励反转",
+      "type": "theme",
+      "route": "themes/big-government-and-incentive-reversal",
+      "summary": "当大政府失去高速增长红利后，原本向前看的发展激励会慢慢转成向后看的收缩与回补。",
       "status": null,
       "degree": 8
     },
@@ -2776,17 +2820,6 @@
       "degree": 8
     },
     {
-      "id": "episode:EP063",
-      "key": "EP063",
-      "label": "EP063",
-      "fullLabel": "EP063 · 成为“男人”的三个阶段，“断亲”背后的真相，如何从辛巴变成木法沙……",
-      "type": "episode",
-      "route": "episodes/EP063",
-      "summary": "男人长成自己要过精神上的三关，弑母、弑父、弑自己。弑要先把亲情、权威和自己吃进去看清，再吐出来还它理解和尊重，光切断不算。现在流行的断亲多半只做到离远一点，看清了却吐不出来。弑父这关在中国能过的人只有百分之几。过不去的人见到领导的威严就把自己放低，当了领导又这样对下属。弑自己更难，要看清自己身上所有毛病，还能接受自己。很多心理课程上来就让人剖析自己，前两关没过的人会被掏空，变成别人塑出来的空壳。三关都过了还有一关，理解死亡，向死而生。",
-      "status": "curated",
-      "degree": 8
-    },
-    {
       "id": "episode:EP067",
       "key": "EP067",
       "label": "EP067",
@@ -2849,17 +2882,6 @@
       "type": "episode",
       "route": "episodes/EP098",
       "summary": "伊朗的沙希德 136 无人机被叫作空中小摩托，单架成本约 2 万美元，对手却要用 200 万美元以上的导弹去拦。很多博主把它和拼多多放在一起，说这是第一性原理的新玩法。这套算法前期确实管用，却只是穷人的第一性原理。价格卷到没有利润，也就没有升级。拦截手段越来越便宜，拦你比造你还省钱的时候就破产了，拼多多眼下看着也卷不动了。富人的算法可以看特朗普抓马杜罗，一次可能花掉两亿美元，比起对方保护总统的百亿甚至千亿级开销仍然便宜，要的是这张牌打出去能改写牌局。放到商业上，对应的是从生产管到销售的自有品牌。",
-      "status": "curated",
-      "degree": 8
-    },
-    {
-      "id": "episode:EP100",
-      "key": "EP100",
-      "label": "EP100",
-      "fullLabel": "EP100 · 涨20元的农村养老金，让我们看清了一些事。【100期特辑】",
-      "type": "episode",
-      "route": "episodes/EP100",
-      "summary": "有一部分农村老人的养老金今年涨了 20 块，很多人一听就笑了。20 块钱能买半斤肉，或者一盒便宜的降压药。同一阵子胖东来公布分配方案，普通一线员工每人分到价值 20 万的资产份额。交了一辈子公粮的老人，每月养老金一共不过 200 块，这 20 块连象征性的尊重都算不上。\n\n刺激政策讲究乘数效应和资本叠加，钱最后流进少数人的口袋。直接到老人手里的小钱，却会进菜市场和药店，养的是社会最底层。养老金分体制内、体制外和农民三类，差距长期固化，一种看法是，南斯拉夫和罗马尼亚动荡之前都走过这一段。",
       "status": "curated",
       "degree": 8
     },
@@ -3040,6 +3062,17 @@
       "degree": 8
     },
     {
+      "id": "concept:performative-innovation",
+      "key": "performative-innovation",
+      "label": "表演式创新",
+      "fullLabel": "表演式创新",
+      "type": "concept",
+      "route": "concepts/performative-innovation",
+      "summary": "表演式创新指项目主要为了完成指标、包装成果和争取扶持资金，而不以真实突破为中心。",
+      "status": null,
+      "degree": 7
+    },
+    {
       "id": "concept:subsidy-leverage-engine",
       "key": "subsidy-leverage-engine",
       "label": "补贴杠杆引擎",
@@ -3069,17 +3102,6 @@
       "type": "concept",
       "route": "concepts/great-small-power-leveling",
       "summary": "在不敢动用核武的常规战争里，AI和无人机让小国靠生产与研发能力反超，甚至打到大国本土。",
-      "status": null,
-      "degree": 7
-    },
-    {
-      "id": "theme:big-government-and-incentive-reversal",
-      "key": "big-government-and-incentive-reversal",
-      "label": "大政府与激励反转",
-      "fullLabel": "大政府与激励反转",
-      "type": "theme",
-      "route": "themes/big-government-and-incentive-reversal",
-      "summary": "当大政府失去高速增长红利后，原本向前看的发展激励会慢慢转成向后看的收缩与回补。",
       "status": null,
       "degree": 7
     },
@@ -3601,17 +3623,6 @@
       "degree": 6
     },
     {
-      "id": "concept:performative-innovation",
-      "key": "performative-innovation",
-      "label": "表演式创新",
-      "fullLabel": "表演式创新",
-      "type": "concept",
-      "route": "concepts/performative-innovation",
-      "summary": "表演式创新指项目主要为了完成指标、包装成果和争取扶持资金，而不以真实突破为中心。",
-      "status": null,
-      "degree": 6
-    },
-    {
       "id": "model:opaque-withdrawal-governance",
       "key": "opaque-withdrawal-governance",
       "label": "不可读退出治理模型",
@@ -3755,6 +3766,17 @@
       "degree": 6
     },
     {
+      "id": "concept:identity-over-wealth",
+      "key": "identity-over-wealth",
+      "label": "身份压倒财富",
+      "fullLabel": "身份压倒财富",
+      "type": "concept",
+      "route": "concepts/identity-over-wealth",
+      "summary": "身份压倒财富指稳定身份、编制和圈层位置开始比账面收入更能决定社会评价和生活安全感。",
+      "status": null,
+      "degree": 6
+    },
+    {
       "id": "concept:production-risk-outsourcing",
       "key": "production-risk-outsourcing",
       "label": "生产端风险外包",
@@ -3762,6 +3784,17 @@
       "type": "concept",
       "route": "concepts/production-risk-outsourcing",
       "summary": "平台和中间层把库存、投流、合规和现金流风险持续压给生产端。",
+      "status": null,
+      "degree": 6
+    },
+    {
+      "id": "theme:cash-optionality-and-liquidity-anxiety",
+      "key": "cash-optionality-and-liquidity-anxiety",
+      "label": "现金为王与流动性焦虑",
+      "fullLabel": "现金为王与流动性焦虑",
+      "type": "theme",
+      "route": "themes/cash-optionality-and-liquidity-anxiety",
+      "summary": "在高波动和低信任时期，流动性比账面资产更能决定一个人和机构的安全感。",
       "status": null,
       "degree": 6
     },
@@ -3784,6 +3817,28 @@
       "type": "theme",
       "route": "themes/new-media-political-mobilization",
       "summary": "候选人和政治叙事不再必须依附旧媒体，而可以直接通过新媒体组织情绪、认同和支持。",
+      "status": null,
+      "degree": 6
+    },
+    {
+      "id": "theme:performative-governance-and-ritual-display",
+      "key": "performative-governance-and-ritual-display",
+      "label": "形式主义治理与仪式表演",
+      "fullLabel": "形式主义治理与仪式表演",
+      "type": "theme",
+      "route": "themes/performative-governance-and-ritual-display",
+      "summary": "关注治理如何通过热闹、仪式和可见动作来替代真正的问题解决。",
+      "status": null,
+      "degree": 6
+    },
+    {
+      "id": "concept:blood-written-rules",
+      "key": "blood-written-rules",
+      "label": "血写的规则",
+      "fullLabel": "血写的规则",
+      "type": "concept",
+      "route": "concepts/blood-written-rules",
+      "summary": "习以为常的安全规范不是天生的官僚条文，而是灾难死亡换来的制度沉淀；忘掉来历，红线就会被当成可优化的成本。",
       "status": null,
       "degree": 6
     },
@@ -4206,17 +4261,6 @@
       "degree": 5
     },
     {
-      "id": "concept:identity-over-wealth",
-      "key": "identity-over-wealth",
-      "label": "身份压倒财富",
-      "fullLabel": "身份压倒财富",
-      "type": "concept",
-      "route": "concepts/identity-over-wealth",
-      "summary": "身份压倒财富指稳定身份、编制和圈层位置开始比账面收入更能决定社会评价和生活安全感。",
-      "status": null,
-      "degree": 5
-    },
-    {
       "id": "concept:data-fetishism",
       "key": "data-fetishism",
       "label": "数据崇拜",
@@ -4305,17 +4349,6 @@
       "degree": 5
     },
     {
-      "id": "theme:cash-optionality-and-liquidity-anxiety",
-      "key": "cash-optionality-and-liquidity-anxiety",
-      "label": "现金为王与流动性焦虑",
-      "fullLabel": "现金为王与流动性焦虑",
-      "type": "theme",
-      "route": "themes/cash-optionality-and-liquidity-anxiety",
-      "summary": "在高波动和低信任时期，流动性比账面资产更能决定一个人和机构的安全感。",
-      "status": null,
-      "degree": 5
-    },
-    {
       "id": "model:middle-class-replacement-cycle",
       "key": "middle-class-replacement-cycle",
       "label": "新旧中产置换",
@@ -4345,28 +4378,6 @@
       "type": "theme",
       "route": "themes/ev-design-and-technology-shortcuts",
       "summary": "讨论新能源品牌如何在设计、技术和产品叙事上追求速成，并为此埋下长期反噬。",
-      "status": null,
-      "degree": 5
-    },
-    {
-      "id": "theme:performative-governance-and-ritual-display",
-      "key": "performative-governance-and-ritual-display",
-      "label": "形式主义治理与仪式表演",
-      "fullLabel": "形式主义治理与仪式表演",
-      "type": "theme",
-      "route": "themes/performative-governance-and-ritual-display",
-      "summary": "关注治理如何通过热闹、仪式和可见动作来替代真正的问题解决。",
-      "status": null,
-      "degree": 5
-    },
-    {
-      "id": "concept:blood-written-rules",
-      "key": "blood-written-rules",
-      "label": "血写的规则",
-      "fullLabel": "血写的规则",
-      "type": "concept",
-      "route": "concepts/blood-written-rules",
-      "summary": "习以为常的安全规范不是天生的官僚条文，而是灾难死亡换来的制度沉淀；忘掉来历，红线就会被当成可优化的成本。",
       "status": null,
       "degree": 5
     },
@@ -4976,6 +4987,17 @@
       "degree": 4
     },
     {
+      "id": "concept:signal-price-distortion",
+      "key": "signal-price-distortion",
+      "label": "价格信号扭曲",
+      "fullLabel": "价格信号扭曲",
+      "type": "concept",
+      "route": "concepts/signal-price-distortion",
+      "summary": "价格本应用来传递供需信息，若被流量、叙事或行政力量改写，就会误导生产和消费。",
+      "status": null,
+      "degree": 4
+    },
+    {
       "id": "concept:giant-infant-rights-defense",
       "key": "giant-infant-rights-defense",
       "label": "巨婴式维权",
@@ -5020,6 +5042,17 @@
       "degree": 4
     },
     {
+      "id": "concept:emotion-front-running",
+      "key": "emotion-front-running",
+      "label": "情绪抢跑",
+      "fullLabel": "情绪抢跑",
+      "type": "concept",
+      "route": "concepts/emotion-front-running",
+      "summary": "完整事实还没出来，情绪先被点燃、站队先完成，等反转来了，跟着上头的人只剩挨打脸。",
+      "status": null,
+      "degree": 4
+    },
+    {
       "id": "concept:identity-bounded-choice",
       "key": "identity-bounded-choice",
       "label": "身份约束型选择",
@@ -5049,6 +5082,17 @@
       "type": "concept",
       "route": "concepts/honest-player-exit",
       "summary": "一个行业里守规矩的人先亏钱、先退出，留下来的人未必更坏，是被筛出来的那一批。",
+      "status": null,
+      "degree": 4
+    },
+    {
+      "id": "concept:authoritarian-regression",
+      "key": "authoritarian-regression",
+      "label": "体制复古",
+      "fullLabel": "体制复古",
+      "type": "concept",
+      "route": "concepts/authoritarian-regression",
+      "summary": "一个国家在危机压力下重新启用旧威权体制的组织方式，例如让军队重返行政与商业体系。",
       "status": null,
       "degree": 4
     },
@@ -5559,17 +5603,6 @@
       "degree": 3
     },
     {
-      "id": "concept:signal-price-distortion",
-      "key": "signal-price-distortion",
-      "label": "价格信号扭曲",
-      "fullLabel": "价格信号扭曲",
-      "type": "concept",
-      "route": "concepts/signal-price-distortion",
-      "summary": "价格本应用来传递供需信息，若被流量、叙事或行政力量改写，就会误导生产和消费。",
-      "status": null,
-      "degree": 3
-    },
-    {
       "id": "theme:education-and-ai-misalignment",
       "key": "education-and-ai-misalignment",
       "label": "教育与AI时代错位",
@@ -5680,6 +5713,17 @@
       "degree": 3
     },
     {
+      "id": "concept:energy-exporter-cash-crunch",
+      "key": "energy-exporter-cash-crunch",
+      "label": "能源输出国现金流断裂",
+      "fullLabel": "能源输出国现金流断裂",
+      "type": "concept",
+      "route": "concepts/energy-exporter-cash-crunch",
+      "summary": "靠卖油气过日子的国家像一家靠现金流周转的超市，油价跌破线并持续足够久，社会成本就会失控。",
+      "status": null,
+      "degree": 3
+    },
+    {
       "id": "person:pan-shiyi",
       "key": "pan-shiyi",
       "label": "潘石屹",
@@ -5753,17 +5797,6 @@
       "type": "theme",
       "route": "themes/intimate-relationships-and-asset-repricing",
       "summary": "讨论伴侣关系如何随着财富、权力和人生阶段变化，从情感叙事走向现实协商。",
-      "status": null,
-      "degree": 3
-    },
-    {
-      "id": "concept:emotion-front-running",
-      "key": "emotion-front-running",
-      "label": "情绪抢跑",
-      "fullLabel": "情绪抢跑",
-      "type": "concept",
-      "route": "concepts/emotion-front-running",
-      "summary": "完整事实还没出来，情绪先被点燃、站队先完成，等反转来了，跟着上头的人只剩挨打脸。",
       "status": null,
       "degree": 3
     },
@@ -5874,17 +5907,6 @@
       "type": "concept",
       "route": "concepts/lying-flat-country",
       "summary": "大量绝缘个体以相似生存逻辑和价值判断形成的无形退出共同体。",
-      "status": null,
-      "degree": 3
-    },
-    {
-      "id": "concept:authoritarian-regression",
-      "key": "authoritarian-regression",
-      "label": "体制复古",
-      "fullLabel": "体制复古",
-      "type": "concept",
-      "route": "concepts/authoritarian-regression",
-      "summary": "一个国家在危机压力下重新启用旧威权体制的组织方式，例如让军队重返行政与商业体系。",
       "status": null,
       "degree": 3
     },
@@ -6611,17 +6633,6 @@
       "type": "concept",
       "route": "concepts/circle-of-competence",
       "summary": "只投自己真正能接得住、能看懂的赛道，而不是看起来更美好、却根本不熟悉的行业。",
-      "status": null,
-      "degree": 2
-    },
-    {
-      "id": "concept:energy-exporter-cash-crunch",
-      "key": "energy-exporter-cash-crunch",
-      "label": "能源输出国现金流断裂",
-      "fullLabel": "能源输出国现金流断裂",
-      "type": "concept",
-      "route": "concepts/energy-exporter-cash-crunch",
-      "summary": "靠卖油气过日子的国家像一家靠现金流周转的超市，油价跌破线并持续足够久，社会成本就会失控。",
       "status": null,
       "degree": 2
     },
@@ -22352,6 +22363,111 @@
     {
       "source": "live:LIVE047",
       "target": "theme:data-cosmetics-and-false-prosperity",
+      "kind": "live-theme"
+    },
+    {
+      "source": "live:LIVE048",
+      "target": "episode:EP100",
+      "kind": "live-episode"
+    },
+    {
+      "source": "live:LIVE048",
+      "target": "episode:EP207",
+      "kind": "live-episode"
+    },
+    {
+      "source": "live:LIVE048",
+      "target": "episode:EP063",
+      "kind": "live-episode"
+    },
+    {
+      "source": "live:LIVE048",
+      "target": "concept:energy-exporter-cash-crunch",
+      "kind": "live-concept"
+    },
+    {
+      "source": "live:LIVE048",
+      "target": "concept:pan-institutional-middle-class",
+      "kind": "live-concept"
+    },
+    {
+      "source": "live:LIVE048",
+      "target": "concept:identity-over-wealth",
+      "kind": "live-concept"
+    },
+    {
+      "source": "live:LIVE048",
+      "target": "concept:middle-class-hard-landing",
+      "kind": "live-concept"
+    },
+    {
+      "source": "live:LIVE048",
+      "target": "concept:authoritarian-regression",
+      "kind": "live-concept"
+    },
+    {
+      "source": "live:LIVE048",
+      "target": "concept:signal-price-distortion",
+      "kind": "live-concept"
+    },
+    {
+      "source": "live:LIVE048",
+      "target": "concept:performative-innovation",
+      "kind": "live-concept"
+    },
+    {
+      "source": "live:LIVE048",
+      "target": "concept:emotion-front-running",
+      "kind": "live-concept"
+    },
+    {
+      "source": "live:LIVE048",
+      "target": "concept:blood-written-rules",
+      "kind": "live-concept"
+    },
+    {
+      "source": "live:LIVE048",
+      "target": "concept:cash-optionality",
+      "kind": "live-concept"
+    },
+    {
+      "source": "live:LIVE048",
+      "target": "model:narrative-instrumentalization",
+      "kind": "live-model"
+    },
+    {
+      "source": "live:LIVE048",
+      "target": "theme:big-government-and-incentive-reversal",
+      "kind": "live-theme"
+    },
+    {
+      "source": "live:LIVE048",
+      "target": "theme:performative-governance-and-ritual-display",
+      "kind": "live-theme"
+    },
+    {
+      "source": "live:LIVE048",
+      "target": "theme:middle-class-descent-and-stratification",
+      "kind": "live-theme"
+    },
+    {
+      "source": "live:LIVE048",
+      "target": "theme:planned-systems-and-innovation",
+      "kind": "live-theme"
+    },
+    {
+      "source": "live:LIVE048",
+      "target": "theme:rule-of-law-boundaries-and-social-trust",
+      "kind": "live-theme"
+    },
+    {
+      "source": "live:LIVE048",
+      "target": "theme:narrative-speculation-and-retail-traps",
+      "kind": "live-theme"
+    },
+    {
+      "source": "live:LIVE048",
+      "target": "theme:cash-optionality-and-liquidity-anxiety",
       "kind": "live-theme"
     },
     {
