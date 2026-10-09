@@ -2,14 +2,14 @@
   "meta": {
     "title": "颖响力知识图谱",
     "subtitle": "节目、概念、模型、人物、主题之间的可视化连接网络",
-    "nodeCount": 759,
-    "linkCount": 2854,
+    "nodeCount": 761,
+    "linkCount": 2862,
     "typeCounts": {
       "model": 83,
       "live": 48,
-      "concept": 249,
+      "concept": 250,
       "theme": 92,
-      "episode": 222,
+      "episode": 223,
       "person": 65
     }
   },
@@ -23,7 +23,7 @@
       "route": "models/risk-transfer-chain",
       "summary": "系统不会立刻吞下风险，而是先沿着银行、企业、票据、供应链和普通人之间不断转手、延后和下沉。",
       "status": null,
-      "degree": 58
+      "degree": 59
     },
     {
       "id": "live:LIVE022",
@@ -972,6 +972,17 @@
       "degree": 16
     },
     {
+      "id": "model:balance-sheet-maintenance",
+      "key": "balance-sheet-maintenance",
+      "label": "资产负债表维持",
+      "fullLabel": "资产负债表维持",
+      "type": "model",
+      "route": "models/balance-sheet-maintenance",
+      "summary": "当系统进入压力期，各方优先做的不是立刻出清，而是先保住估值、抵押物和报表表面完整。",
+      "status": null,
+      "degree": 16
+    },
+    {
       "id": "episode:EP001",
       "key": "EP001",
       "label": "EP001",
@@ -1023,17 +1034,6 @@
       "type": "theme",
       "route": "themes/maritime-chokepoints-and-route-order",
       "summary": "讨论海峡、运河和关键航道如何把地理位置变成规则、保险、资本和军事的综合权力。",
-      "status": null,
-      "degree": 15
-    },
-    {
-      "id": "model:balance-sheet-maintenance",
-      "key": "balance-sheet-maintenance",
-      "label": "资产负债表维持",
-      "fullLabel": "资产负债表维持",
-      "type": "model",
-      "route": "models/balance-sheet-maintenance",
-      "summary": "当系统进入压力期，各方优先做的不是立刻出清，而是先保住估值、抵押物和报表表面完整。",
       "status": null,
       "degree": 15
     },
@@ -1731,6 +1731,17 @@
       "degree": 11
     },
     {
+      "id": "concept:cash-optionality",
+      "key": "cash-optionality",
+      "label": "现金选择权",
+      "fullLabel": "现金选择权",
+      "type": "concept",
+      "route": "concepts/cash-optionality",
+      "summary": "现金在高波动时期的核心价值，是保留等待、谈判、退出和重新进入的选择权。",
+      "status": null,
+      "degree": 11
+    },
+    {
       "id": "model:small-state-balancing-model",
       "key": "small-state-balancing-model",
       "label": "小国平衡术",
@@ -1874,13 +1885,13 @@
       "degree": 10
     },
     {
-      "id": "concept:cash-optionality",
-      "key": "cash-optionality",
-      "label": "现金选择权",
-      "fullLabel": "现金选择权",
-      "type": "concept",
-      "route": "concepts/cash-optionality",
-      "summary": "现金在高波动时期的核心价值，是保留等待、谈判、退出和重新进入的选择权。",
+      "id": "theme:institutional-middle-class-and-social-mobility",
+      "key": "institutional-middle-class-and-social-mobility",
+      "label": "体制化中产与社会流动",
+      "fullLabel": "体制化中产与社会流动",
+      "type": "theme",
+      "route": "themes/institutional-middle-class-and-social-mobility",
+      "summary": "讨论稳定岗位、公共财政和身份溢价如何重塑中产结构，并收窄普通人的上升路径。",
       "status": null,
       "degree": 10
     },
@@ -2149,17 +2160,6 @@
       "degree": 9
     },
     {
-      "id": "theme:institutional-middle-class-and-social-mobility",
-      "key": "institutional-middle-class-and-social-mobility",
-      "label": "体制化中产与社会流动",
-      "fullLabel": "体制化中产与社会流动",
-      "type": "theme",
-      "route": "themes/institutional-middle-class-and-social-mobility",
-      "summary": "讨论稳定岗位、公共财政和身份溢价如何重塑中产结构，并收窄普通人的上升路径。",
-      "status": null,
-      "degree": 9
-    },
-    {
       "id": "theme:ev-safety-and-consumer-testing",
       "key": "ev-safety-and-consumer-testing",
       "label": "新能源安全边界与消费者测试",
@@ -2222,6 +2222,17 @@
       "type": "model",
       "route": "models/asset-preservation-architecture",
       "summary": "资产保全架构强调财富安全取决于来源、法域、时间前置和退出节奏的组合。",
+      "status": null,
+      "degree": 9
+    },
+    {
+      "id": "concept:balance-sheet-support",
+      "key": "balance-sheet-support",
+      "label": "资产负债表托底",
+      "fullLabel": "资产负债表托底",
+      "type": "concept",
+      "route": "concepts/balance-sheet-support",
+      "summary": "通过维持估值、价格和名义成交，先保住报表与抵押体系，再把真实压力向后延。",
       "status": null,
       "degree": 9
     },
@@ -2699,17 +2710,6 @@
       "degree": 8
     },
     {
-      "id": "concept:balance-sheet-support",
-      "key": "balance-sheet-support",
-      "label": "资产负债表托底",
-      "fullLabel": "资产负债表托底",
-      "type": "concept",
-      "route": "concepts/balance-sheet-support",
-      "summary": "通过维持估值、价格和名义成交，先保住报表与抵押体系，再把真实压力向后延。",
-      "status": null,
-      "degree": 8
-    },
-    {
       "id": "concept:organizational-silence",
       "key": "organizational-silence",
       "label": "组织失声",
@@ -3062,6 +3062,17 @@
       "degree": 8
     },
     {
+      "id": "episode:EP223",
+      "key": "EP223",
+      "label": "EP223",
+      "fullLabel": "EP223 · 贴息精准锁定了谁？是福利还是老乡别走？背后三大目的全解读。",
+      "type": "episode",
+      "route": "episodes/EP223",
+      "summary": "10 月起首套房贷贴息一个百分点，最长五年，房子要在 120 平米以下、总价 150 万以内，钱九成由中央出。三道门槛把一线城市排除在外，剩下的买家是三四线城市从没买过房、手里攒了二三十万的人。一年一万块左右的补贴，换走的是他们的养老钱、养孩子的钱和应急的钱，还要背上二十年月供，补贴却只管五年。贴息背后有三个目的，按人群精准锁住现金，用成交托住地价和银行的抵押物，再绕开汇率的限制把贷款利率悄悄压低一截。抗风险最弱的人，留住手里的现金比拿这笔补贴要紧。",
+      "status": "curated",
+      "degree": 8
+    },
+    {
       "id": "concept:performative-innovation",
       "key": "performative-innovation",
       "label": "表演式创新",
@@ -3278,6 +3289,17 @@
       "type": "concept",
       "route": "concepts/pragmatic-legitimacy",
       "summary": "政权或共同体的稳定感，常来自普通人能持续获得可感的生活改善和秩序保障。",
+      "status": null,
+      "degree": 7
+    },
+    {
+      "id": "theme:cash-optionality-and-liquidity-anxiety",
+      "key": "cash-optionality-and-liquidity-anxiety",
+      "label": "现金为王与流动性焦虑",
+      "fullLabel": "现金为王与流动性焦虑",
+      "type": "theme",
+      "route": "themes/cash-optionality-and-liquidity-anxiety",
+      "summary": "在高波动和低信任时期，流动性比账面资产更能决定一个人和机构的安全感。",
       "status": null,
       "degree": 7
     },
@@ -3788,17 +3810,6 @@
       "degree": 6
     },
     {
-      "id": "theme:cash-optionality-and-liquidity-anxiety",
-      "key": "cash-optionality-and-liquidity-anxiety",
-      "label": "现金为王与流动性焦虑",
-      "fullLabel": "现金为王与流动性焦虑",
-      "type": "theme",
-      "route": "themes/cash-optionality-and-liquidity-anxiety",
-      "summary": "在高波动和低信任时期，流动性比账面资产更能决定一个人和机构的安全感。",
-      "status": null,
-      "degree": 6
-    },
-    {
       "id": "theme:hidden-costs",
       "key": "hidden-costs",
       "label": "消费者为哪些隐性成本买单",
@@ -4191,6 +4202,17 @@
       "type": "theme",
       "route": "themes/family-succession-and-governance",
       "summary": "讨论创始人家族、接班方式与旧利益安排如何把企业从经营问题推向治理问题。",
+      "status": null,
+      "degree": 5
+    },
+    {
+      "id": "theme:price-support-and-balance-sheet",
+      "key": "price-support-and-balance-sheet",
+      "label": "价格托底与账面维稳",
+      "fullLabel": "价格托底与账面维稳",
+      "type": "theme",
+      "route": "themes/price-support-and-balance-sheet",
+      "summary": "讨论价格、估值和票面成交如何被维持住，以便先保住报表、抵押物和融资条件。",
       "status": null,
       "degree": 5
     },
@@ -4972,17 +4994,6 @@
       "type": "person",
       "route": "people/jia-guolong",
       "summary": "贾国龙是西贝餐饮集团创始人、董事长，2026 年春节前卸下西贝主品牌 CEO。四期节目从他身上看强势老板怎样让组织听不到坏消息，以及预制菜争议里他本人的应对。",
-      "status": null,
-      "degree": 4
-    },
-    {
-      "id": "theme:price-support-and-balance-sheet",
-      "key": "price-support-and-balance-sheet",
-      "label": "价格托底与账面维稳",
-      "fullLabel": "价格托底与账面维稳",
-      "type": "theme",
-      "route": "themes/price-support-and-balance-sheet",
-      "summary": "讨论价格、估值和票面成交如何被维持住，以便先保住报表、抵押物和融资条件。",
       "status": null,
       "degree": 4
     },
@@ -7623,6 +7634,17 @@
       "type": "person",
       "route": "people/liu-daoyu",
       "summary": "刘道玉是武汉大学原校长、教育家，1980 年代推动高校改革，2025 年 11 月去世。EP026 讲杭州小学生列队迎宾时提到一位刚去世的老校长，照亮过很多人，本页按标签认作刘道玉。",
+      "status": null,
+      "degree": 1
+    },
+    {
+      "id": "concept:liquidity-lockup",
+      "key": "liquidity-lockup",
+      "label": "流动性锁定",
+      "fullLabel": "流动性锁定",
+      "type": "concept",
+      "route": "concepts/liquidity-lockup",
+      "summary": "用一点补贴或优惠，把普通家庭随时能用的现金换成房子、长期存单这类一时拿不出来的资产，金融体系再拿这笔被锁住的钱做底子往外放大。",
       "status": null,
       "degree": 1
     },
@@ -16443,6 +16465,46 @@
     {
       "source": "episode:EP222",
       "target": "theme:human-value-and-state-credit",
+      "kind": "episode-theme"
+    },
+    {
+      "source": "episode:EP223",
+      "target": "concept:liquidity-lockup",
+      "kind": "episode-concept"
+    },
+    {
+      "source": "episode:EP223",
+      "target": "concept:cash-optionality",
+      "kind": "episode-concept"
+    },
+    {
+      "source": "episode:EP223",
+      "target": "concept:balance-sheet-support",
+      "kind": "episode-concept"
+    },
+    {
+      "source": "episode:EP223",
+      "target": "model:risk-transfer-chain",
+      "kind": "episode-model"
+    },
+    {
+      "source": "episode:EP223",
+      "target": "model:balance-sheet-maintenance",
+      "kind": "episode-model"
+    },
+    {
+      "source": "episode:EP223",
+      "target": "theme:cash-optionality-and-liquidity-anxiety",
+      "kind": "episode-theme"
+    },
+    {
+      "source": "episode:EP223",
+      "target": "theme:price-support-and-balance-sheet",
+      "kind": "episode-theme"
+    },
+    {
+      "source": "episode:EP223",
+      "target": "theme:institutional-middle-class-and-social-mobility",
       "kind": "episode-theme"
     },
     {
