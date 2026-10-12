@@ -3,7 +3,7 @@
     "title": "颖响力知识图谱",
     "subtitle": "节目、概念、模型、人物、主题之间的可视化连接网络",
     "nodeCount": 764,
-    "linkCount": 2875,
+    "linkCount": 2874,
     "typeCounts": {
       "model": 83,
       "live": 49,
@@ -411,17 +411,6 @@
       "degree": 25
     },
     {
-      "id": "live:LIVE040",
-      "key": "LIVE040",
-      "label": "LIVE040",
-      "fullLabel": "LIVE040 · 启动条件多加一条发展利益，征用改成了征收，十月一号那部新法到底给谁准备的？",
-      "type": "live",
-      "route": "lives/LIVE040",
-      "summary": "免征清单里写的是生活必需的物品和住处，存款和黄金都不在里面。",
-      "status": "published",
-      "degree": 25
-    },
-    {
       "id": "theme:great-power-competition-and-strategic-time",
       "key": "great-power-competition-and-strategic-time",
       "label": "大国竞争与战略时间",
@@ -463,6 +452,17 @@
       "route": "lives/LIVE035",
       "summary": "7 月 31 号那一票拿走了检察官的侦查权，10 月 2 日旧机构正式摘牌。",
       "status": "curated",
+      "degree": 24
+    },
+    {
+      "id": "live:LIVE040",
+      "key": "LIVE040",
+      "label": "LIVE040",
+      "fullLabel": "LIVE040 · 启动条件多加一条发展利益，征用改成了征收，十月一号那部新法到底给谁准备的？",
+      "type": "live",
+      "route": "lives/LIVE040",
+      "summary": "免征清单里写的是生活必需的物品和住处，存款和黄金都不在里面。",
+      "status": "published",
       "degree": 24
     },
     {
@@ -5829,7 +5829,7 @@
       "fullLabel": "亲密关系与资产再定价",
       "type": "theme",
       "route": "themes/intimate-relationships-and-asset-repricing",
-      "summary": "讨论伴侣关系如何随着财富、权力和人生阶段变化，从情感叙事走向现实协商。",
+      "summary": "家底一缩水，夫妻之间谁出钱、谁说了算会重新排一遍。",
       "status": null,
       "degree": 3
     },
@@ -6181,7 +6181,7 @@
       "fullLabel": "安全性与舒适性叙事转移",
       "type": "theme",
       "route": "themes/safety-vs-comfort",
-      "summary": "讨论品牌如何把消费者对产品的关注，从安全和性能转移到更容易被感知的舒适体验上。",
+      "summary": "车企主打舒适和家庭场景，买车的人对安全的注意就被引开了。",
       "status": null,
       "degree": 2
     },
@@ -6241,17 +6241,6 @@
       "degree": 2
     },
     {
-      "id": "theme:property-rights-and-cultural-plunder",
-      "key": "property-rights-and-cultural-plunder",
-      "label": "产权失序与文化掠夺",
-      "fullLabel": "产权失序与文化掠夺",
-      "type": "theme",
-      "route": "themes/property-rights-and-cultural-plunder",
-      "summary": "讨论当产权边界被模糊、托管责任被滥用时，文化资产如何从传承物变成可被随意处置的对象。",
-      "status": null,
-      "degree": 2
-    },
-    {
       "id": "concept:city-soul-gap",
       "key": "city-soul-gap",
       "label": "城市灵魂落差",
@@ -6269,7 +6258,7 @@
       "fullLabel": "城市文明与文化底蕴",
       "type": "theme",
       "route": "themes/urban-civilization-and-cultural-depth",
-      "summary": "关注城市优质度不能只看建设规模，更要看文化连续性与普通人的生活体感。",
+      "summary": "比城市不能只比路和楼，还要看产业能不能造血、文化有没有断、普通人住得安不安稳。",
       "status": null,
       "degree": 2
     },
@@ -6610,7 +6599,7 @@
       "fullLabel": "跨境电商与制造业困局",
       "type": "theme",
       "route": "themes/cross-border-ecommerce-and-manufacturing-trap",
-      "summary": "跨境电商被包装成新出路时，制造商往往承担了最多的不确定性，却未必拿到真正稳定的利润。",
+      "summary": "跨境电商热起来的时候，库存和质量风险一层层往下压，最后落在工厂身上。",
       "status": null,
       "degree": 2
     },
@@ -6621,7 +6610,7 @@
       "fullLabel": "跨境旅游、边检与主权筛查",
       "type": "theme",
       "route": "themes/travel-politics-and-border-screening",
-      "summary": "讨论免签、遣返、旅游安全和政治叙事如何改变普通人对跨境旅行的判断。",
+      "summary": "免签、遣返和旅游安全被裹进国家关系和舆论以后，出门去哪更要靠常识自己判断。",
       "status": null,
       "degree": 2
     },
@@ -6753,7 +6742,7 @@
       "fullLabel": "人物评价与道德资本",
       "type": "theme",
       "route": "themes/evaluation-and-moral-capital",
-      "summary": "一个人是否值得被尊重，不能只看商业成绩，还要看他留下了怎样的公共价值。",
+      "summary": "李亚鹏生意屡败却撑住了一家唇腭裂医院，刘欢去世后被翻出一首旧歌挨骂，两期都在问一个人该怎样被评价。",
       "status": null,
       "degree": 2
     },
@@ -7176,6 +7165,17 @@
       "degree": 1
     },
     {
+      "id": "theme:property-rights-and-cultural-plunder",
+      "key": "property-rights-and-cultural-plunder",
+      "label": "产权失序与文化掠夺",
+      "fullLabel": "产权失序与文化掠夺",
+      "type": "theme",
+      "route": "themes/property-rights-and-cultural-plunder",
+      "summary": "私人文物进了公共机构以后，捐赠人的权利、机构的托管责任和管事人的私利缠在一起。",
+      "status": null,
+      "degree": 1
+    },
+    {
       "id": "concept:super-intermediary",
       "key": "super-intermediary",
       "label": "超级中间人",
@@ -7468,7 +7468,7 @@
       "fullLabel": "家庭控制、婚恋审美与社会退化",
       "type": "theme",
       "route": "themes/family-control-and-aesthetic-decline",
-      "summary": "讨论催婚、控制欲和审美贫瘠如何一起把人的选择压回更封闭、更粗糙的状态。",
+      "summary": "催婚标准来回翻面，父母的控制欲不退，审美又停住了，人的选择被压回更窄的地方。",
       "status": null,
       "degree": 1
     },
@@ -7567,7 +7567,7 @@
       "fullLabel": "老年保障与分配正义",
       "type": "theme",
       "route": "themes/elder-support-and-distributive-justice",
-      "summary": "一个社会如何对待老去的普通人，往往最能看出它的分配偏好和文明程度。",
+      "summary": "养老金涨多少、钱先给谁，看得出一个社会怎样对待老去的普通人。",
       "status": null,
       "degree": 1
     },
@@ -7710,7 +7710,7 @@
       "fullLabel": "模因传播与平台分发",
       "type": "theme",
       "route": "themes/meme-propagation-and-platform-distribution",
-      "summary": "关注热梗如何通过模板复制和平台加权变成大规模现象。",
+      "summary": "热梗靠社交货币和填空模板扩散，哪一条能火，最后由平台的测试和推流决定。",
       "status": null,
       "degree": 1
     },
@@ -7732,7 +7732,7 @@
       "fullLabel": "逆全球化与文化碎片化",
       "type": "theme",
       "route": "themes/deglobalization-and-cultural-fragmentation",
-      "summary": "讨论全球舞台如何从英语中心和统一审美，转向更地方化、更圈层化的表达竞争。",
+      "summary": "流行文化不再只围着英语转，各地的文化和小众群体开始各自登上主舞台。",
       "status": null,
       "degree": 1
     },
@@ -7754,7 +7754,7 @@
       "fullLabel": "品牌扩张与文化错位",
       "type": "theme",
       "route": "themes/brand-expansion-and-cultural-misalignment",
-      "summary": "品牌在扩张时为了换取更大的市场，可能逐步偏离自己原来的精神和使用场景。",
+      "summary": "品牌换了管事的人、换了客群以后，原来的精神和使用场景跟着被改写。",
       "status": null,
       "degree": 1
     },
@@ -7765,7 +7765,7 @@
       "fullLabel": "品牌咨询与品牌溢价",
       "type": "theme",
       "route": "themes/brand-consulting-and-premium",
-      "summary": "讨论品牌咨询如何参与企业定价、价值表达和溢价维持。",
+      "summary": "品牌咨询公司收走的钱和设计的符号，最后怎样压到菜价和顾客的观感上。",
       "status": null,
       "degree": 1
     },
@@ -7787,7 +7787,7 @@
       "fullLabel": "平台注意力与审美滑坡",
       "type": "theme",
       "route": "themes/platform-attention-and-aesthetic-decline",
-      "summary": "关注平台如何用海量内容、即时反馈和算法筛选改变观众审美与耐心。",
+      "summary": "平台把海量短剧推给观众，挑片子的活落到观众身上，耐心和审美跟着往下掉。",
       "status": null,
       "degree": 1
     },
@@ -8150,7 +8150,7 @@
       "fullLabel": "疫情财富与公共代价",
       "type": "theme",
       "route": "themes/pandemic-wealth-and-public-costs",
-      "summary": "公共危机产生的超额财富，往往会被更快地资本化和分配，而公共代价却留在普通人身上。",
+      "summary": "疫情里冒出来的超额利润被各路资本分走，风险留给了打针的普通人。",
       "status": null,
       "degree": 1
     },
@@ -21798,11 +21798,6 @@
     {
       "source": "live:LIVE040",
       "target": "theme:planned-systems-and-innovation",
-      "kind": "live-theme"
-    },
-    {
-      "source": "live:LIVE040",
-      "target": "theme:property-rights-and-cultural-plunder",
       "kind": "live-theme"
     },
     {
