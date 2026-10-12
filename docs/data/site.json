@@ -2,7 +2,7 @@
   "meta": {
     "title": "颖响力知识库",
     "subtitle": "节目、概念、思想模型的结构化索引",
-    "updatedAt": "2026-10-12T20:03:11.325Z"
+    "updatedAt": "2026-10-12T20:04:45.742Z"
   },
   "stats": {
     "episodes": 224,
@@ -43359,7 +43359,7 @@
       ],
       "relatedThemes": [
         "ev-safety-and-consumer-testing",
-        "软件边界与真实道路风险"
+        "新能源安全边界与消费者测试"
       ],
       "relatedPeople": [],
       "liveMentions": [
@@ -48503,13 +48503,13 @@
       ],
       "context": "分两条线。一条在消费和融资里，EP071 的直播间、EP102 的假教授、EP072 的满月夜宴，身份替产品和项目增信。另一条在体制和职场里，EP151 的学术帽子按年龄线一级级卡人，EP220 的名校文凭被当成终身饭票，AI 接走岗位以后，这份租值开始往下掉。",
       "relatedConcepts": [
-        "narrative-instrumentalization",
         "platform-double-standard",
         "beauty-pageant-rent-seeking"
       ],
       "relatedModels": [
         "narrative-leverage",
-        "platform-gatekeeping"
+        "platform-gatekeeping",
+        "narrative-instrumentalization"
       ],
       "relatedThemes": [
         "平台流量与价格失真",
@@ -50018,8 +50018,7 @@
       "context": "教育和职业选择是主场。EP018 讲文理科，EP058 讲旧教育还在批量出机器最擅长的能力，EP111 讲年轻人还没开始长就被送进最稳的位置。EP132 把它推到创业，草根创业的路收窄，理性的年轻人都去考研考公，人人挑风险最低的活法，没人去创新。",
       "relatedConcepts": [
         "industrial-education-lag",
-        "standard-answer-cage",
-        "specific-knowledge"
+        "standard-answer-cage"
       ],
       "relatedModels": [
         "screening-machine",
@@ -51023,8 +51022,8 @@
         "narrative-leverage"
       ],
       "relatedThemes": [
-        "平台治理与民间表达",
-        "年轻人焦虑与机会结构"
+        "平台治理与民间话语",
+        "年轻人梦想与安全路径"
       ],
       "relatedPeople": [
         "hu-chenfeng",
@@ -51822,7 +51821,6 @@
         "海峡命门与航运秩序",
         "东南亚裂变与集团竞争",
         "海南封关与自由港现实",
-        "欧洲内部拆雷与集团博弈",
         "新加坡与小国生存术",
         "制裁、遏制与集团竞争"
       ],
@@ -54215,8 +54213,7 @@
         "东南亚裂变与集团竞争",
         "新加坡与小国生存术",
         "东亚安全重组与日本转向",
-        "海峡命门与航运秩序",
-        "欧洲内部拆雷与集团博弈"
+        "海峡命门与航运秩序"
       ],
       "relatedPeople": [
         "彼得马扎尔",
@@ -54754,8 +54751,7 @@
         "time-arbitrage-model"
       ],
       "relatedThemes": [
-        "投资时机与长期主义",
-        "资本结构与企业命运"
+        "财经表达与长期主义"
       ],
       "relatedPeople": [
         "wang-jianlin"
@@ -57565,8 +57561,7 @@
         "东南亚裂变与集团竞争",
         "海峡命门与航运秩序",
         "东亚安全重组与日本转向",
-        "海南封关与自由港现实",
-        "欧洲内部拆雷与集团博弈"
+        "海南封关与自由港现实"
       ],
       "relatedPeople": [
         "彼得马扎尔",
@@ -57760,7 +57755,6 @@
         "新加坡与小国生存术",
         "东南亚裂变与集团竞争",
         "海南封关与自由港现实",
-        "欧洲内部拆雷与集团博弈",
         "制裁、遏制与集团竞争"
       ],
       "relatedPeople": [
@@ -59058,8 +59052,8 @@
         "narrative-leverage"
       ],
       "relatedThemes": [
-        "平台治理与民间表达",
-        "年轻人焦虑与机会结构"
+        "平台治理与民间话语",
+        "年轻人梦想与安全路径"
       ],
       "relatedPeople": [
         "hu-chenfeng",
@@ -59461,7 +59455,7 @@
       ],
       "relatedThemes": [
         "教育与AI时代错位",
-        "机器人替代与人的位置"
+        "AI替代与人的创造性"
       ],
       "relatedPeople": [
         "李飞飞",
@@ -61005,8 +60999,8 @@
         "time-arbitrage-model"
       ],
       "relatedThemes": [
-        "投资时机与长期主义",
-        "情绪市场与散户陷阱"
+        "财经表达与长期主义",
+        "投资叙事与散户陷阱"
       ],
       "relatedPeople": [],
       "liveMentions": [
