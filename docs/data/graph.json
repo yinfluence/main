@@ -3,7 +3,7 @@
     "title": "颖响力知识图谱",
     "subtitle": "节目、概念、模型、人物、主题之间的可视化连接网络",
     "nodeCount": 764,
-    "linkCount": 2889,
+    "linkCount": 2887,
     "typeCounts": {
       "model": 83,
       "live": 49,
@@ -505,7 +505,7 @@
       "fullLabel": "投资叙事与散户陷阱",
       "type": "theme",
       "route": "themes/narrative-speculation-and-retail-traps",
-      "summary": "当市场热点先由故事驱动、再由散户接棒时，普通人最容易在高潮处接到最后一棒。",
+      "summary": "价格先靠故事推高，先进场的人在高点退出，普通人带着积蓄最后接手。",
       "status": null,
       "degree": 23
     },
@@ -1143,7 +1143,7 @@
       "fullLabel": "地方政府资本化与补贴杠杆",
       "type": "theme",
       "route": "themes/local-government-financialization",
-      "summary": "讨论地方政府如何从传统招商者变成资本玩家，并把补贴、基金和估值故事捆到一起。",
+      "summary": "地方政府从招商者变成资本玩家，把补贴、基金和估值故事捆到一起，企业出事时自己接盘。",
       "status": null,
       "degree": 14
     },
@@ -1473,7 +1473,7 @@
       "fullLabel": "大计划体制与创新约束",
       "type": "theme",
       "route": "themes/planned-systems-and-innovation",
-      "summary": "讨论统一目标和强组织动员如何带来短期速度，又如何在长期压缩创新、纠错与自发能动性。",
+      "summary": "统一目标和强组织动员换来短期速度，长期却压掉创新、纠错和个人的能动性。",
       "status": null,
       "degree": 12
     },
@@ -1737,7 +1737,7 @@
       "fullLabel": "东亚安全重组与日本转向",
       "type": "theme",
       "route": "themes/east-asia-security-realignment",
-      "summary": "讨论日本重新前台化、台海压力外溢，以及东亚安全合作为何越来越难保持模糊。",
+      "summary": "美国往后退，日本走到前台，台海压力外溢到岛链上的各国，东亚安全安排在重排。",
       "status": null,
       "degree": 11
     },
@@ -1781,7 +1781,7 @@
       "fullLabel": "体制化中产与社会流动",
       "type": "theme",
       "route": "themes/institutional-middle-class-and-social-mobility",
-      "summary": "讨论稳定岗位、公共财政和身份溢价如何重塑中产结构，并收窄普通人的上升路径。",
+      "summary": "中产的底盘从市场收入换成编制和财政供养，普通人往上走的路跟着变窄。",
       "status": null,
       "degree": 11
     },
@@ -1946,7 +1946,7 @@
       "fullLabel": "影视工业与流量逻辑",
       "type": "theme",
       "route": "themes/film-industry-and-traffic-logic",
-      "summary": "关注影视生产如何越来越服从人设、粉丝和宣发流量，而非角色与作品本身。",
+      "summary": "影视生产越来越服从人设、粉丝和宣发热度，角色和作品本身退到后面。",
       "status": null,
       "degree": 10
     },
@@ -2545,17 +2545,6 @@
       "degree": 9
     },
     {
-      "id": "episode:EP222",
-      "key": "EP222",
-      "label": "EP222",
-      "fullLabel": "EP222 · 新加坡要的到底是幸福，还是快乐？如何理解成长的烦恼与人生的追求。",
-      "type": "episode",
-      "route": "episodes/EP222",
-      "summary": "新加坡前外长杨荣文在彭博社的直播里被人问到，新加坡这么有钱，为何显得不快乐。他重提李光耀的话，政府可以承诺发展、基建和教育，唯独别承诺快乐。他带过的贸工部和外交部加班多、压力大，士气却在全系统数一数二。快乐是当下的情绪，幸福是对整段人生的满意，两者常被混成一回事。孩子长大后说自己不快乐，多半是成长本来的样子。家长不必急着替他挡掉，也不该把他往死里逼。一个国家最后好不好，要看住在这里的人觉得日子值不值得过。",
-      "status": "curated",
-      "degree": 9
-    },
-    {
       "id": "concept:refuge-premium",
       "key": "refuge-premium",
       "label": "避险溢价",
@@ -2584,7 +2573,7 @@
       "fullLabel": "大政府与激励反转",
       "type": "theme",
       "route": "themes/big-government-and-incentive-reversal",
-      "summary": "当大政府失去高速增长红利后，原本向前看的发展激励会慢慢转成向后看的收缩与回补。",
+      "summary": "大政府失去高速增长的红利后，向前看的发展激励慢慢转成向后看的收缩和回补。",
       "status": null,
       "degree": 8
     },
@@ -2644,28 +2633,6 @@
       "degree": 8
     },
     {
-      "id": "theme:exam-centered-education-and-person-formation",
-      "key": "exam-centered-education-and-person-formation",
-      "label": "考试中心教育与人成形",
-      "fullLabel": "考试中心教育与人成形",
-      "type": "theme",
-      "route": "themes/exam-centered-education-and-person-formation",
-      "summary": "关注学校如何把人塑造成服从考试和权威的对象。",
-      "status": null,
-      "degree": 8
-    },
-    {
-      "id": "theme:brand-symbol-and-value",
-      "key": "brand-symbol-and-value",
-      "label": "品牌符号与价值感知",
-      "fullLabel": "品牌符号与价值感知",
-      "type": "theme",
-      "route": "themes/brand-symbol-and-value",
-      "summary": "讨论品牌符号如何塑造用户对价格、品质和价值的判断。",
-      "status": null,
-      "degree": 8
-    },
-    {
       "id": "model:screening-machine",
       "key": "screening-machine",
       "label": "筛选机器模型",
@@ -2716,7 +2683,7 @@
       "fullLabel": "小国平衡与地缘生存",
       "type": "theme",
       "route": "themes/small-state-balancing",
-      "summary": "讨论新加坡这类小国如何在大国竞争中维持安全、合法性和现实利益。",
+      "summary": "新加坡这类小国怎样在大国竞争里守住安全、合法性和现实利益。",
       "status": null,
       "degree": 8
     },
@@ -3117,6 +3084,17 @@
       "degree": 8
     },
     {
+      "id": "episode:EP222",
+      "key": "EP222",
+      "label": "EP222",
+      "fullLabel": "EP222 · 新加坡要的到底是幸福，还是快乐？如何理解成长的烦恼与人生的追求。",
+      "type": "episode",
+      "route": "episodes/EP222",
+      "summary": "新加坡前外长杨荣文在彭博社的直播里被人问到，新加坡这么有钱，为何显得不快乐。他重提李光耀的话，政府可以承诺发展、基建和教育，唯独别承诺快乐。他带过的贸工部和外交部加班多、压力大，士气却在全系统数一数二。快乐是当下的情绪，幸福是对整段人生的满意，两者常被混成一回事。孩子长大后说自己不快乐，多半是成长本来的样子。家长不必急着替他挡掉，也不该把他往死里逼。一个国家最后好不好，要看住在这里的人觉得日子值不值得过。",
+      "status": "curated",
+      "degree": 8
+    },
+    {
       "id": "episode:EP223",
       "key": "EP223",
       "label": "EP223",
@@ -3260,6 +3238,17 @@
       "degree": 7
     },
     {
+      "id": "theme:exam-centered-education-and-person-formation",
+      "key": "exam-centered-education-and-person-formation",
+      "label": "考试中心教育与人成形",
+      "fullLabel": "考试中心教育与人成形",
+      "type": "theme",
+      "route": "themes/exam-centered-education-and-person-formation",
+      "summary": "学校和家庭围着考试转，把孩子塑造成服从分数和权威的人。",
+      "status": null,
+      "degree": 7
+    },
+    {
       "id": "theme:youth-dreams-and-safe-paths",
       "key": "youth-dreams-and-safe-paths",
       "label": "年轻人梦想与安全路径",
@@ -3267,6 +3256,17 @@
       "type": "theme",
       "route": "themes/youth-dreams-and-safe-paths",
       "summary": "关注“稳定”如何成为压制年轻人生命力的主流建议。",
+      "status": null,
+      "degree": 7
+    },
+    {
+      "id": "theme:brand-symbol-and-value",
+      "key": "brand-symbol-and-value",
+      "label": "品牌符号与价值感知",
+      "fullLabel": "品牌符号与价值感知",
+      "type": "theme",
+      "route": "themes/brand-symbol-and-value",
+      "summary": "品牌符号怎样撑起价格和身份，又在什么时候撑不住。",
       "status": null,
       "degree": 7
     },
@@ -3387,7 +3387,7 @@
       "fullLabel": "住房税负与收入分配",
       "type": "theme",
       "route": "themes/housing-burden-and-income-distribution",
-      "summary": "讨论住房、税负和可支配收入之间的关系，尤其关注中低收入群体被抽走了多少上升空间。",
+      "summary": "住房、税负和可支配收入连在一起，看中低收入的人被抽走了多少往上走的余地。",
       "status": null,
       "degree": 7
     },
@@ -3717,7 +3717,7 @@
       "fullLabel": "创始人权力与组织反馈",
       "type": "theme",
       "route": "themes/founder-power-and-feedback",
-      "summary": "讨论强创始人结构如何影响组织内部的信息流动与纠偏能力。",
+      "summary": "创始人权力太强时，企业内部还剩多少真话，出了错谁能让老板听见。",
       "status": null,
       "degree": 6
     },
@@ -3739,7 +3739,7 @@
       "fullLabel": "低价竞争与精准打击",
       "type": "theme",
       "route": "themes/price-war-and-precision-competition",
-      "summary": "讨论卷低价与做精准高价值打击之间的差别，以及两种竞争逻辑背后的阶层思维。",
+      "summary": "卷低价和做精准的高价值打击，是两种竞争逻辑，后果差得很远。",
       "status": null,
       "degree": 6
     },
@@ -3871,7 +3871,7 @@
       "fullLabel": "消费者为哪些隐性成本买单",
       "type": "theme",
       "route": "themes/hidden-costs",
-      "summary": "讨论消费者支付的价格中，有多少是在承担企业内部看不见的成本。",
+      "summary": "消费者付的价格里，有多少在承担企业和产业链背后看不见的成本。",
       "status": null,
       "degree": 6
     },
@@ -3882,7 +3882,7 @@
       "fullLabel": "新媒体政治动员",
       "type": "theme",
       "route": "themes/new-media-political-mobilization",
-      "summary": "候选人和政治叙事不再必须依附旧媒体，而可以直接通过新媒体组织情绪、认同和支持。",
+      "summary": "政治人物和政治情绪不再靠旧媒体传递，新媒体可以直接组织认同、站队和愤怒。",
       "status": null,
       "degree": 6
     },
@@ -7066,17 +7066,6 @@
       "degree": 2
     },
     {
-      "id": "episode:EP004",
-      "key": "EP004",
-      "label": "EP004",
-      "fullLabel": "EP004 · 上海学生午餐爆雷事件背后的真相，午餐问题的两种解决方案。用西贝能解决吗？",
-      "type": "episode",
-      "route": "episodes/EP004",
-      "summary": "上海绿捷公司供的学生午餐出了事，调查有了结论。体系没问题，餐食符合标准，只有中间传话的几个人出了错。这跟医院出事只追到医生个人是同一套做法，把体系矛盾转化成个人矛盾。有些地方午餐出事是缺钱，上海不缺钱，缺的是钱上面那层权。城市太集中，招标走向垄断就变成权力，家长想让孩子吃好一点也没空间。解法有两个，一是各区政府食堂跟学校吃同样的菜，二是把大食堂拆成小食堂，员工里家长占一半。换西贝来做也一样，它一旦独家供五十万人的饭，也会动餐食标准。两个解法能不能落地，也很难说。",
-      "status": "curated",
-      "degree": 2
-    },
-    {
       "id": "episode:EP039",
       "key": "EP039",
       "label": "EP039",
@@ -8408,6 +8397,17 @@
       "degree": 1
     },
     {
+      "id": "episode:EP004",
+      "key": "EP004",
+      "label": "EP004",
+      "fullLabel": "EP004 · 上海学生午餐爆雷事件背后的真相，午餐问题的两种解决方案。用西贝能解决吗？",
+      "type": "episode",
+      "route": "episodes/EP004",
+      "summary": "上海绿捷公司供的学生午餐出了事，调查有了结论。体系没问题，餐食符合标准，只有中间传话的几个人出了错。这跟医院出事只追到医生个人是同一套做法，把体系矛盾转化成个人矛盾。有些地方午餐出事是缺钱，上海不缺钱，缺的是钱上面那层权。城市太集中，招标走向垄断就变成权力，家长想让孩子吃好一点也没空间。解法有两个，一是各区政府食堂跟学校吃同样的菜，二是把大食堂拆成小食堂，员工里家长占一半。换西贝来做也一样，它一旦独家供五十万人的饭，也会动餐食标准。两个解法能不能落地，也很难说。",
+      "status": "curated",
+      "degree": 1
+    },
+    {
       "id": "episode:EP074",
       "key": "EP074",
       "label": "EP074",
@@ -8574,11 +8574,6 @@
       "source": "episode:EP004",
       "target": "model:value-capture",
       "kind": "episode-model"
-    },
-    {
-      "source": "episode:EP004",
-      "target": "theme:brand-symbol-and-value",
-      "kind": "episode-theme"
     },
     {
       "source": "episode:EP005",
@@ -13826,6 +13821,11 @@
       "kind": "episode-theme"
     },
     {
+      "source": "episode:EP162",
+      "target": "theme:east-asia-security-realignment",
+      "kind": "episode-theme"
+    },
+    {
       "source": "episode:EP163",
       "target": "concept:collective-self-domestication",
       "kind": "episode-concept"
@@ -16488,11 +16488,6 @@
     {
       "source": "episode:EP222",
       "target": "theme:growth-and-family-boundaries",
-      "kind": "episode-theme"
-    },
-    {
-      "source": "episode:EP222",
-      "target": "theme:exam-centered-education-and-person-formation",
       "kind": "episode-theme"
     },
     {
@@ -22828,11 +22823,6 @@
     {
       "source": "episode:EP106",
       "target": "theme:crisis-era-power-reallocation",
-      "kind": "episode-theme"
-    },
-    {
-      "source": "episode:EP162",
-      "target": "theme:east-asia-security-realignment",
       "kind": "episode-theme"
     },
     {
