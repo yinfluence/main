@@ -3,7 +3,7 @@
     "title": "颖响力知识图谱",
     "subtitle": "节目、概念、模型、人物、主题之间的可视化连接网络",
     "nodeCount": 764,
-    "linkCount": 2835,
+    "linkCount": 2833,
     "typeCounts": {
       "model": 83,
       "live": 49,
@@ -510,17 +510,6 @@
       "degree": 23
     },
     {
-      "id": "live:LIVE010",
-      "key": "LIVE010",
-      "label": "LIVE010",
-      "fullLabel": "LIVE010 · 一支能开公司的军队有多可怕：古巴的糖从600万吨掉到20万吨",
-      "type": "live",
-      "route": "lives/LIVE010",
-      "summary": "军队的车没人敢收路桥费，它的成本别人永远比不了。",
-      "status": "curated",
-      "degree": 23
-    },
-    {
       "id": "live:LIVE038",
       "key": "LIVE038",
       "label": "LIVE038",
@@ -572,6 +561,17 @@
       "type": "live",
       "route": "lives/LIVE009",
       "summary": "去年没走正规渠道流出去的钱有一万亿美元，是二零零六年有统计以来最多的一年。",
+      "status": "curated",
+      "degree": 22
+    },
+    {
+      "id": "live:LIVE010",
+      "key": "LIVE010",
+      "label": "LIVE010",
+      "fullLabel": "LIVE010 · 一支能开公司的军队有多可怕：古巴的糖从600万吨掉到20万吨",
+      "type": "live",
+      "route": "lives/LIVE010",
+      "summary": "军队的车没人敢收路桥费，它的成本别人永远比不了。",
       "status": "curated",
       "degree": 22
     },
@@ -917,17 +917,6 @@
       "degree": 17
     },
     {
-      "id": "live:LIVE049",
-      "key": "LIVE049",
-      "label": "LIVE049",
-      "fullLabel": "LIVE049 · 剑柄断了照样抢着买！拆解华删派的辟邪剑谱：这把剑是挤进婆罗门的入场券！车圈笑傲江湖",
-      "type": "live",
-      "route": "lives/LIVE049",
-      "summary": "高端款只做十台，经手的人每台要的回扣比普通款高一百倍。",
-      "status": "published",
-      "degree": 17
-    },
-    {
       "id": "theme:real-estate-deleveraging",
       "key": "real-estate-deleveraging",
       "label": "房地产去杠杆与风险出清",
@@ -1024,6 +1013,17 @@
       "route": "episodes/EP192",
       "summary": "梁文锋一场近四小时的闭门会文字稿被放了出来。他是量化出身，不屑对投资人吹牛，稿子里的话八九成可信。四张华为的卡才抵一张英伟达的卡，手里一万六千张只折合四五千张，缺口要靠别的卡补。由此推断灰色贸易这条路被坐实了，但这一步是推断，稿子没说卡从哪来。国内七八家一起做大模型，卡和算力中心的需求被一起做大，这条产业链跟当年的电车很像。现在的 AI 还没到自我学习那一步，泡沫可能就在眼前。文件偏偏在月之暗面爆火之后流出，一种猜测是投资机构借这次泄露敲打梁文锋。",
       "status": "curated",
+      "degree": 16
+    },
+    {
+      "id": "live:LIVE049",
+      "key": "LIVE049",
+      "label": "LIVE049",
+      "fullLabel": "LIVE049 · 剑柄断了照样抢着买！拆解华删派的辟邪剑谱：这把剑是挤进婆罗门的入场券！车圈笑傲江湖",
+      "type": "live",
+      "route": "lives/LIVE049",
+      "summary": "高端款只做十台，经手的人每台要的回扣比普通款高一百倍。",
+      "status": "published",
       "degree": 16
     },
     {
@@ -2655,17 +2655,6 @@
       "degree": 8
     },
     {
-      "id": "concept:rule-gaming-backfire",
-      "key": "rule-gaming-backfire",
-      "label": "钻规则反噬",
-      "fullLabel": "钻规则反噬",
-      "type": "concept",
-      "route": "concepts/rule-gaming-backfire",
-      "summary": "靠钻规则空子或动用特权改规则获取短期收益，最终赔上信任、口碑和长期竞争力的现象。",
-      "status": null,
-      "degree": 8
-    },
-    {
       "id": "episode:EP005",
       "key": "EP005",
       "label": "EP005",
@@ -3278,6 +3267,17 @@
       "type": "model",
       "route": "models/distribution-bias",
       "summary": "钱和保护先流向更强势、更有组织、更会申报的一端，成本和压力往最弱的一端压。",
+      "status": null,
+      "degree": 7
+    },
+    {
+      "id": "concept:rule-gaming-backfire",
+      "key": "rule-gaming-backfire",
+      "label": "钻规则反噬",
+      "fullLabel": "钻规则反噬",
+      "type": "concept",
+      "route": "concepts/rule-gaming-backfire",
+      "summary": "靠钻规则空子或动用特权改规则获取短期收益，最终赔上信任、口碑和长期竞争力的现象。",
       "status": null,
       "degree": 7
     },
@@ -4795,7 +4795,7 @@
       "fullLabel": "分辨外包",
       "type": "concept",
       "route": "concepts/outsourced-discernment",
-      "summary": "个体放弃自我分辨好坏的能力，默认有监管机构替自己事先筛查，自己只管享受结果。",
+      "summary": "个体放弃自己分辨好坏，默认有监管机构或可信的品牌替自己事先把过关，自己只管享受结果。",
       "status": null,
       "degree": 4
     },
@@ -5192,17 +5192,6 @@
       "type": "concept",
       "route": "concepts/shadow-fleet",
       "summary": "影子舰队是绕开西方保险、认证、定位和船东透明规则的平行航运网络。",
-      "status": null,
-      "degree": 4
-    },
-    {
-      "id": "concept:policy-stalling",
-      "key": "policy-stalling",
-      "label": "政策拖延术",
-      "fullLabel": "政策拖延术",
-      "type": "concept",
-      "route": "concepts/policy-stalling",
-      "summary": "政策不断微调，不是为了真正解决结构问题，而是为了证明自己在行动、同时尽量把问题往后拖。",
       "status": null,
       "degree": 4
     },
@@ -6043,6 +6032,17 @@
       "degree": 3
     },
     {
+      "id": "concept:policy-stalling",
+      "key": "policy-stalling",
+      "label": "政策拖延术",
+      "fullLabel": "政策拖延术",
+      "type": "concept",
+      "route": "concepts/policy-stalling",
+      "summary": "政策一轮轮小修小补，主要用处是表明在干活，同时把该来的调整往后推，结构问题本身没动。",
+      "status": null,
+      "degree": 3
+    },
+    {
       "id": "theme:smart-products-and-ownership-boundaries",
       "key": "smart-products-and-ownership-boundaries",
       "label": "智能产品与所有权边界",
@@ -6291,7 +6291,7 @@
       "fullLabel": "顶流放大镜",
       "type": "concept",
       "route": "concepts/prominence-amplification",
-      "summary": "同样的问题，发生在关注度最高的头部对象身上会被无限放大；热度不等于问题更严重，只是更显眼。",
+      "summary": "同样的问题，落在关注度最高的头部对象身上会被无限放大。热度高说明它显眼，不说明问题更严重。",
       "status": null,
       "degree": 2
     },
@@ -6852,7 +6852,7 @@
       "fullLabel": "伪自信",
       "type": "concept",
       "route": "concepts/pseudo-confidence",
-      "summary": "伪自信指看似强硬、实则依赖外界确认和攻击姿态来遮蔽内在不安的状态。",
+      "summary": "看着强硬，底下靠别人的确认和攻击姿态来盖住自己的不安。",
       "status": null,
       "degree": 2
     },
@@ -12897,6 +12897,11 @@
     },
     {
       "source": "episode:EP142",
+      "target": "concept:self-dealing-incubation-loop",
+      "kind": "episode-concept"
+    },
+    {
+      "source": "episode:EP142",
       "target": "model:narrative-instrumentalization",
       "kind": "episode-model"
     },
@@ -17767,11 +17772,6 @@
     },
     {
       "source": "live:LIVE010",
-      "target": "concept:rule-gaming-backfire",
-      "kind": "live-concept"
-    },
-    {
-      "source": "live:LIVE010",
       "target": "model:teleological-vs-deterministic-parenting",
       "kind": "live-model"
     },
@@ -22532,11 +22532,6 @@
     },
     {
       "source": "live:LIVE049",
-      "target": "concept:policy-stalling",
-      "kind": "live-concept"
-    },
-    {
-      "source": "live:LIVE049",
       "target": "model:symbol-ascension",
       "kind": "live-model"
     },
@@ -22564,11 +22559,6 @@
       "source": "live:LIVE049",
       "target": "theme:dollar-system-and-gray-trade",
       "kind": "live-theme"
-    },
-    {
-      "source": "episode:EP142",
-      "target": "concept:self-dealing-incubation-loop",
-      "kind": "episode-concept"
     },
     {
       "source": "episode:EP043",
