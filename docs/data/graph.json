@@ -3,7 +3,7 @@
     "title": "颖响力知识图谱",
     "subtitle": "节目、概念、模型、人物、主题之间的可视化连接网络",
     "nodeCount": 764,
-    "linkCount": 2808,
+    "linkCount": 2805,
     "typeCounts": {
       "model": 83,
       "live": 49,
@@ -37,17 +37,6 @@
       "degree": 36
     },
     {
-      "id": "live:LIVE020",
-      "key": "LIVE020",
-      "label": "LIVE020",
-      "fullLabel": "LIVE020 · 跟中国走得最近的伊拉克也倒向美国！海湾国家还有谁能守住中立？",
-      "type": "live",
-      "route": "lives/LIVE020",
-      "summary": "据说 2003 年以来，巴格达的领导层把两万亿美元挪作了他用。",
-      "status": "curated",
-      "degree": 35
-    },
-    {
       "id": "live:LIVE022",
       "key": "LIVE022",
       "label": "LIVE022",
@@ -66,6 +55,17 @@
       "type": "live",
       "route": "lives/LIVE005",
       "summary": "当年给被投企业只提一条，上市之前别让任何国资进来。",
+      "status": "curated",
+      "degree": 34
+    },
+    {
+      "id": "live:LIVE020",
+      "key": "LIVE020",
+      "label": "LIVE020",
+      "fullLabel": "LIVE020 · 跟中国走得最近的伊拉克也倒向美国！海湾国家还有谁能守住中立？",
+      "type": "live",
+      "route": "lives/LIVE020",
+      "summary": "据说 2003 年以来，巴格达的领导层把两万亿美元挪作了他用。",
       "status": "curated",
       "degree": 34
     },
@@ -477,17 +477,6 @@
       "degree": 23
     },
     {
-      "id": "live:LIVE029",
-      "key": "LIVE029",
-      "label": "LIVE029",
-      "fullLabel": "LIVE029 · 出国这条路只开了不到三十年，九月十五号新规执行，以后出去可能就没有回头路",
-      "type": "live",
-      "route": "lives/LIVE029",
-      "summary": "拿旅游签证过去看看能不能留下，九月之后可能就踩在违规那条线上。",
-      "status": "curated",
-      "degree": 23
-    },
-    {
       "id": "live:LIVE034",
       "key": "LIVE034",
       "label": "LIVE034",
@@ -598,6 +587,17 @@
       "degree": 22
     },
     {
+      "id": "live:LIVE029",
+      "key": "LIVE029",
+      "label": "LIVE029",
+      "fullLabel": "LIVE029 · 出国这条路只开了不到三十年，九月十五号新规执行，以后出去可能就没有回头路",
+      "type": "live",
+      "route": "lives/LIVE029",
+      "summary": "拿旅游签证过去看看能不能留下，九月之后可能就踩在违规那条线上。",
+      "status": "curated",
+      "degree": 22
+    },
+    {
       "id": "episode:EP131",
       "key": "EP131",
       "label": "EP131",
@@ -661,17 +661,6 @@
       "route": "lives/LIVE015",
       "summary": "跟伊朗说用钴结算，对方不知道钴是什么。说黄金，大字不识的军头也知道值钱。",
       "status": "curated",
-      "degree": 20
-    },
-    {
-      "id": "live:LIVE041",
-      "key": "LIVE041",
-      "label": "LIVE041",
-      "fullLabel": "LIVE041 · 卢比奥飞到利马，秘鲁转身加入美洲之盾！17.8米深的钱凯港，会不会成了建墙的下一站？",
-      "type": "live",
-      "route": "lives/LIVE041",
-      "summary": "按直播里的推演，监管一进港，每样货是什么、有多少吨都得记数，低价运走矿的那条路就断了。",
-      "status": "published",
       "degree": 20
     },
     {
@@ -771,6 +760,17 @@
       "route": "episodes/EP185",
       "summary": "财经媒体都在刷一条消息，香港超过瑞士和新加坡，成了全球第一大离岸财富管理中心。全球资本并没有集体涌向香港，香港只是内地财富溢出的集散地。拆开资金来源，内地约占六成，主力是后知后觉的中小老板和围绕公务体系长起来的新中产。据说台湾过来的有一成多，是跟大陆深度绑定的生意钱，剩下的是从东南亚和迪拜回流的灰色贸易资金。把钱挪到香港，只是从一个棋盘跳进另一个出法律更快的棋盘，监管备好的框迟早统一去查。在亚洲，门槛和成本都高的新加坡反倒更稳妥。资产安全靠的是干净的底子和清晰的架构，挪位置没用。",
       "status": "curated",
+      "degree": 19
+    },
+    {
+      "id": "live:LIVE041",
+      "key": "LIVE041",
+      "label": "LIVE041",
+      "fullLabel": "LIVE041 · 卢比奥飞到利马，秘鲁转身加入美洲之盾！17.8米深的钱凯港，会不会成了建墙的下一站？",
+      "type": "live",
+      "route": "lives/LIVE041",
+      "summary": "按直播里的推演，监管一进港，每样货是什么、有多少吨都得记数，低价运走矿的那条路就断了。",
+      "status": "published",
       "degree": 19
     },
     {
@@ -5548,17 +5548,6 @@
       "degree": 3
     },
     {
-      "id": "concept:succession-vacuum",
-      "key": "succession-vacuum",
-      "label": "接班人真空",
-      "fullLabel": "接班人真空",
-      "type": "concept",
-      "route": "concepts/succession-vacuum",
-      "summary": "强人统治越久，越难允许真正二号人物成长，交棒时就越容易出现接班人真空。",
-      "status": null,
-      "degree": 3
-    },
-    {
       "id": "concept:inventory-banking",
       "key": "inventory-banking",
       "label": "库存银行化",
@@ -5753,17 +5742,6 @@
       "type": "concept",
       "route": "concepts/manufactured-popularity",
       "summary": "公开场面上的热度不是自己聚起来的，是运营方放风、组织、安排出来的，做出来之后再当成实力证据卖给品牌方和平台。",
-      "status": null,
-      "degree": 3
-    },
-    {
-      "id": "concept:screening-sovereignty",
-      "key": "screening-sovereignty",
-      "label": "筛查主权",
-      "fullLabel": "筛查主权",
-      "type": "concept",
-      "route": "concepts/screening-sovereignty",
-      "summary": "免签提供便利，不等于放弃边境筛查；国家仍保留最终入境裁量权。",
       "status": null,
       "degree": 3
     },
@@ -6428,6 +6406,17 @@
       "degree": 2
     },
     {
+      "id": "concept:succession-vacuum",
+      "key": "succession-vacuum",
+      "label": "接班人真空",
+      "fullLabel": "接班人真空",
+      "type": "concept",
+      "route": "concepts/succession-vacuum",
+      "summary": "强人统治越久，越难允许真正二号人物成长，交棒时就越容易出现接班人真空。",
+      "status": null,
+      "degree": 2
+    },
+    {
       "id": "concept:invoice-economy",
       "key": "invoice-economy",
       "label": "开票经济",
@@ -6501,17 +6490,6 @@
       "type": "concept",
       "route": "concepts/pendulum-trap",
       "summary": "社会在不公的自由和低效的监管之间来回摆，两头挨打的都是普通人。EP186 给的出路是一条红线，人的生命和尊严排在效率前面。",
-      "status": null,
-      "degree": 2
-    },
-    {
-      "id": "concept:rooting-in-place",
-      "key": "rooting-in-place",
-      "label": "落地生根胜过落叶归根",
-      "fullLabel": "落地生根胜过落叶归根",
-      "type": "concept",
-      "route": "concepts/rooting-in-place",
-      "summary": "一个人的根不在祖先生活过的故土，而在对自己好、能真正生活下去的地方。",
       "status": null,
       "degree": 2
     },
@@ -6622,6 +6600,17 @@
       "type": "concept",
       "route": "concepts/three-layer-leverage",
       "summary": "居民、企业和地方政府同时用未来现金流为当下扩张融资，风险会从单点违约升级成系统踩踏。",
+      "status": null,
+      "degree": 2
+    },
+    {
+      "id": "concept:screening-sovereignty",
+      "key": "screening-sovereignty",
+      "label": "筛查主权",
+      "fullLabel": "筛查主权",
+      "type": "concept",
+      "route": "concepts/screening-sovereignty",
+      "summary": "免签给的是便利，边境筛查并没有放掉，具体哪个旅客能入境，最后由对方国家说了算。",
       "status": null,
       "degree": 2
     },
@@ -7094,7 +7083,7 @@
       "fullLabel": "超级中间人",
       "type": "concept",
       "route": "concepts/super-intermediary",
-      "summary": "在僵持的对立各方之间，靠绝对中立和独家信任渠道居中传话、对齐底线、递台阶的角色，本身不站队、不谋利，只做信息和沟通的枢纽。",
+      "summary": "对立各方僵持不下时，靠绝对中立和独家信任渠道居中传话、摸清底线、递台阶的角色。它不替任何一方站队，只做信息和沟通的枢纽。",
       "status": null,
       "degree": 1
     },
@@ -7627,6 +7616,17 @@
       "degree": 1
     },
     {
+      "id": "concept:rooting-in-place",
+      "key": "rooting-in-place",
+      "label": "落地生根胜过落叶归根",
+      "fullLabel": "落地生根胜过落叶归根",
+      "type": "concept",
+      "route": "concepts/rooting-in-place",
+      "summary": "一个人的根不在祖先生活过的故土，而在对自己好、能真正生活下去的地方。",
+      "status": null,
+      "degree": 1
+    },
+    {
       "id": "person:ferdinand-marcos-jr",
       "key": "ferdinand-marcos-jr",
       "label": "马科斯",
@@ -7776,7 +7776,7 @@
       "fullLabel": "破规示范型育儿",
       "type": "concept",
       "route": "concepts/rule-breaking-parenting",
-      "summary": "破规示范型育儿指父母为了不让孩子受委屈，当众挑战或破坏公共规则，把巨婴算法当作家庭教育灌进孩子心里。",
+      "summary": "父母为了不让孩子受委屈，当着孩子的面冲撞或破坏公共规则，孩子从中学会的是闹得凶规则就会让。",
       "status": null,
       "degree": 1
     },
@@ -7864,7 +7864,7 @@
       "fullLabel": "散户平台风险",
       "type": "concept",
       "route": "concepts/retail-platform-risk",
-      "summary": "散户投资不仅面对标的涨跌，还面对平台信用、对冲、托管和退出风险。",
+      "summary": "散户买金银这类资产，亏损可能先出在交易场地上。平台不对冲、兑不出来或者直接消失，方向看对也拿不回钱。",
       "status": null,
       "degree": 1
     },
@@ -18917,11 +18917,6 @@
     },
     {
       "source": "live:LIVE020",
-      "target": "concept:succession-vacuum",
-      "kind": "live-concept"
-    },
-    {
-      "source": "live:LIVE020",
       "target": "concept:wartime-oil-stockpiling",
       "kind": "live-concept"
     },
@@ -20163,11 +20158,6 @@
     {
       "source": "live:LIVE029",
       "target": "concept:surface-modernity",
-      "kind": "live-concept"
-    },
-    {
-      "source": "live:LIVE029",
-      "target": "concept:screening-sovereignty",
       "kind": "live-concept"
     },
     {
@@ -21663,11 +21653,6 @@
     {
       "source": "live:LIVE041",
       "target": "concept:gray-oil-network",
-      "kind": "live-concept"
-    },
-    {
-      "source": "live:LIVE041",
-      "target": "concept:rooting-in-place",
       "kind": "live-concept"
     },
     {
