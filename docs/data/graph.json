@@ -2,11 +2,11 @@
   "meta": {
     "title": "颖响力知识图谱",
     "subtitle": "节目、概念、模型、人物、主题之间的可视化连接网络",
-    "nodeCount": 763,
-    "linkCount": 2873,
+    "nodeCount": 764,
+    "linkCount": 2891,
     "typeCounts": {
       "model": 83,
-      "live": 48,
+      "live": 49,
       "concept": 251,
       "theme": 92,
       "episode": 224,
@@ -664,6 +664,17 @@
       "degree": 21
     },
     {
+      "id": "theme:dollar-system-and-gray-trade",
+      "key": "dollar-system-and-gray-trade",
+      "label": "美元体系与灰色贸易",
+      "fullLabel": "美元体系与灰色贸易",
+      "type": "theme",
+      "route": "themes/dollar-system-and-gray-trade",
+      "summary": "讨论石油美元的真实脆弱点，究竟藏在公开统计之外的哪些灰色交易链条里。",
+      "status": null,
+      "degree": 20
+    },
+    {
       "id": "person:donald-trump",
       "key": "donald-trump",
       "label": "特朗普",
@@ -737,17 +748,6 @@
       "type": "model",
       "route": "models/value-capture",
       "summary": "价值捕获模型强调商业链条中关键不只是创造了价值，而是谁真正留下了价值。",
-      "status": null,
-      "degree": 19
-    },
-    {
-      "id": "theme:dollar-system-and-gray-trade",
-      "key": "dollar-system-and-gray-trade",
-      "label": "美元体系与灰色贸易",
-      "fullLabel": "美元体系与灰色贸易",
-      "type": "theme",
-      "route": "themes/dollar-system-and-gray-trade",
-      "summary": "讨论石油美元的真实脆弱点，究竟藏在公开统计之外的哪些灰色交易链条里。",
       "status": null,
       "degree": 19
     },
@@ -903,6 +903,17 @@
       "route": "episodes/EP192",
       "summary": "梁文锋一场近四小时的闭门会文字稿被放了出来。他是量化出身，不屑对投资人吹牛，稿子里的话八九成可信。四张华为的卡才抵一张英伟达的卡，手里一万六千张只折合四五千张，缺口要靠别的卡补。由此推断灰色贸易这条路被坐实了，但这一步是推断，稿子没说卡从哪来。国内七八家一起做大模型，卡和算力中心的需求被一起做大，这条产业链跟当年的电车很像。现在的 AI 还没到自我学习那一步，泡沫可能就在眼前。文件偏偏在月之暗面爆火之后流出，一种猜测是投资机构借这次泄露敲打梁文锋。",
       "status": "curated",
+      "degree": 18
+    },
+    {
+      "id": "live:LIVE049",
+      "key": "LIVE049",
+      "label": "LIVE049",
+      "fullLabel": "LIVE049 · 剑柄断了照样抢着买！拆解华删派的辟邪剑谱：这把剑是挤进婆罗门的入场券！车圈笑傲江湖",
+      "type": "live",
+      "route": "lives/LIVE049",
+      "summary": "普通款做一万件，每件抽十块回扣。高级款只做十件，每件就得抽一千。",
+      "status": "published",
       "degree": 18
     },
     {
@@ -1258,6 +1269,17 @@
       "degree": 14
     },
     {
+      "id": "episode:EP195",
+      "key": "EP195",
+      "label": "EP195",
+      "fullLabel": "EP195 · 竹知了“不能提”的是华删派与岳不群的终极野心！",
+      "type": "episode",
+      "route": "episodes/EP195",
+      "summary": "华为投诉了一批拿竹知了玩梗的视频，很多人看不懂。小米连 are you ok 这种梗都容得下，它为什么偏要较这个真。拿性价比和市场份额这把尺子量华为，永远量不出结果。它从一开始玩的就不是普通的商业游戏。先画圈子，界限划得越清楚越好，选它的人和还在看性价比的人不是一类。再故意定高价、故意特立独行，看不懂的人自己就走。最里面一层是登顶，拿笑傲江湖打比方。左冷禅要做五岳联盟的盟主，还在江湖这个游戏里玩。华为学的是岳不群，要五派合一。没人能跟它讨价还价，也没人能随便调侃它，图的是庄严两个字。",
+      "status": "curated",
+      "degree": 14
+    },
+    {
       "id": "episode:EP200",
       "key": "EP200",
       "label": "EP200",
@@ -1265,6 +1287,17 @@
       "type": "episode",
       "route": "episodes/EP200",
       "summary": "北京又出楼市新政，五环以外全面放松，五环以内交满一年社保就能买。消息一出，江浙沪那边的朋友已经出手，北京的朋友说市场又要热闹起来了。同样的松绑上海广州深圳早就落地过，市场并没有热起来。这一轮真正被搅活的是地方政府手里的流动性，门槛降下来，是为了让新买家进场。撑起过去四十年普涨的那几个条件今天一个都不在。这是结构性的，塌下去不会自己长回来，八零后九零后这辈子都很难再等到普涨。最难的地方在心态，认定上涨是常态、下跌只是插曲，于是一次次上车。",
+      "status": "curated",
+      "degree": 14
+    },
+    {
+      "id": "episode:EP205",
+      "key": "EP205",
+      "label": "EP205",
+      "fullLabel": "EP205 · 不止是AI漫剧停更；中国制造七层内卷之下，每个行业都在重复同一件事！",
+      "type": "episode",
+      "route": "episodes/EP205",
+      "summary": "做AI漫剧的账号成批停更，行业里的说法是内容同质、观众看腻、人太多，这几条都只说到表面。真正压下来的是七层叠在一起的压力。五个平台同时下场抢同一批制作者，模型生成一秒的价格砍到开源免费，导演十几年的镜头经验被工具打包成一键功能。万次播放的分账从上百块掉到五块，连卖课的都割不到新人了。平台拿补贴换数据、拿数据换估值，最上面是持续收紧的合规，逼着行业极快地换玩法。被挤掉的是中间那批跟随者，能留下的是造工具的人和真会用工具的人，个人电影时代要靠他们来开。",
       "status": "curated",
       "degree": 14
     },
@@ -1390,24 +1423,13 @@
       "degree": 13
     },
     {
-      "id": "episode:EP195",
-      "key": "EP195",
-      "label": "EP195",
-      "fullLabel": "EP195 · 竹知了“不能提”的是华删派与岳不群的终极野心！",
+      "id": "episode:EP204",
+      "key": "EP204",
+      "label": "EP204",
+      "fullLabel": "EP204 · 甲醛白菜最让人无力的，是极限内卷下，没人能独善其身！中国制造的终极困局！",
       "type": "episode",
-      "route": "episodes/EP195",
-      "summary": "华为投诉了一批拿竹知了玩梗的视频，很多人看不懂。小米连 are you ok 这种梗都容得下，它为什么偏要较这个真。拿性价比和市场份额这把尺子量华为，永远量不出结果。它从一开始玩的就不是普通的商业游戏。先画圈子，界限划得越清楚越好，选它的人和还在看性价比的人不是一类。再故意定高价、故意特立独行，看不懂的人自己就走。最里面一层是登顶，拿笑傲江湖打比方。左冷禅要做五岳联盟的盟主，还在江湖这个游戏里玩。华为学的是岳不群，要五派合一。没人能跟它讨价还价，也没人能随便调侃它，图的是庄严两个字。",
-      "status": "curated",
-      "degree": 13
-    },
-    {
-      "id": "episode:EP205",
-      "key": "EP205",
-      "label": "EP205",
-      "fullLabel": "EP205 · 不止是AI漫剧停更；中国制造七层内卷之下，每个行业都在重复同一件事！",
-      "type": "episode",
-      "route": "episodes/EP205",
-      "summary": "做AI漫剧的账号成批停更，行业里的说法是内容同质、观众看腻、人太多，这几条都只说到表面。真正压下来的是七层叠在一起的压力。五个平台同时下场抢同一批制作者，模型生成一秒的价格砍到开源免费，导演十几年的镜头经验被工具打包成一键功能。万次播放的分账从上百块掉到五块，连卖课的都割不到新人了。平台拿补贴换数据、拿数据换估值，最上面是持续收紧的合规，逼着行业极快地换玩法。被挤掉的是中间那批跟随者，能留下的是造工具的人和真会用工具的人，个人电影时代要靠他们来开。",
+      "route": "episodes/EP204",
+      "summary": "张家口产区的白菜在装车前整颗蘸进甲醛，路边小药瓶和蓝色大药罐一排摆着，收菜的、装车的、跑长途的都把它当成一道工序。白菜一斤几毛钱，改用冷藏车运费翻一倍，涨价卖不动，不涨价这一趟就白跑，蘸一遍药成了整条链上最划算的选项。守规矩的人早被挤走了，剩下的人不这么干就活不下去，一件本该由制度管住的事，最后变成了一笔成本账。同一个产地给出口和会员店供货时自己收着，给国内普通超市供货时换另一套做法，差别在于哪一头还有一道让人害怕的验收。留给普通人的办法只剩一条，在天天要吃要用的那几样上花钱买确定。",
       "status": "curated",
       "degree": 13
     },
@@ -1419,6 +1441,17 @@
       "type": "episode",
       "route": "episodes/EP210",
       "summary": "9 月 5 日 China GT 上海站 GT3 组正赛第七圈出了事故。两辆赛车冲出赛道，撞上 91 号法拉利的油箱侧面，车瞬间起火。把被困的英国车手拖出来的是停车赶来的荷兰车手，49 秒的施救几乎是他一个人做完的。赛事的钱花在明星、冠名和流量上，救援据说层层外包，一线的人一天拿六十块。行业越卷越压成本，专业、责任和安全底线跟着被挤掉。组委会事后说配置符合国家级赛事的标准，可合规只是最低的那条线。拿钱就能摆平一切的习惯，放到把安全当硬底线的国际同行面前，会被直接判不合格。",
+      "status": "curated",
+      "degree": 13
+    },
+    {
+      "id": "episode:EP217",
+      "key": "EP217",
+      "label": "EP217",
+      "fullLabel": "EP217 · 华删派再分家！杯酒后刀光剑影，三大底层逻辑彻底崩塌！车圈笑傲江湖",
+      "type": "episode",
+      "route": "episodes/EP217",
+      "summary": "2026 年 9 月 15 日，华为和赛力斯宣布调整问界的合作方式。产品、营销、渠道和服务全交给赛力斯，华为只留技术支持。说是分工调整，背后有三层原因。一层是分账。华为拿走授权费、品牌溢价和渠道分润，赛力斯扛着工厂、折旧和地方的对赌。利润薄到亏钱，只能在配件和品控上省，伤的还是华为的牌子。一层是舆论把这套分账摆上台面，小米又推出同级车，便宜一二十万，溢价站不住了。再一层是行业没了暴利，华为赶在风险暴露前交出经营权。赚钱时拿大头，出事时不沾身。",
       "status": "curated",
       "degree": 13
     },
@@ -1654,17 +1687,6 @@
       "degree": 12
     },
     {
-      "id": "episode:EP204",
-      "key": "EP204",
-      "label": "EP204",
-      "fullLabel": "EP204 · 甲醛白菜最让人无力的，是极限内卷下，没人能独善其身！中国制造的终极困局！",
-      "type": "episode",
-      "route": "episodes/EP204",
-      "summary": "张家口产区的白菜在装车前整颗蘸进甲醛，路边小药瓶和蓝色大药罐一排摆着，收菜的、装车的、跑长途的都把它当成一道工序。白菜一斤几毛钱，改用冷藏车运费翻一倍，涨价卖不动，不涨价这一趟就白跑，蘸一遍药成了整条链上最划算的选项。守规矩的人早被挤走了，剩下的人不这么干就活不下去，一件本该由制度管住的事，最后变成了一笔成本账。同一个产地给出口和会员店供货时自己收着，给国内普通超市供货时换另一套做法，差别在于哪一头还有一道让人害怕的验收。留给普通人的办法只剩一条，在天天要吃要用的那几样上花钱买确定。",
-      "status": "curated",
-      "degree": 12
-    },
-    {
       "id": "episode:EP207",
       "key": "EP207",
       "label": "EP207",
@@ -1676,13 +1698,13 @@
       "degree": 12
     },
     {
-      "id": "episode:EP217",
-      "key": "EP217",
-      "label": "EP217",
-      "fullLabel": "EP217 · 华删派再分家！杯酒后刀光剑影，三大底层逻辑彻底崩塌！车圈笑傲江湖",
+      "id": "episode:EP211",
+      "key": "EP211",
+      "label": "EP211",
+      "fullLabel": "EP211 · 靠诡计打破的规则，终要用一生偿还！荷兰车险率先拒保中国电车的底层真相",
       "type": "episode",
-      "route": "episodes/EP217",
-      "summary": "2026 年 9 月 15 日，华为和赛力斯宣布调整问界的合作方式。产品、营销、渠道和服务全交给赛力斯，华为只留技术支持。说是分工调整，背后有三层原因。一层是分账。华为拿走授权费、品牌溢价和渠道分润，赛力斯扛着工厂、折旧和地方的对赌。利润薄到亏钱，只能在配件和品控上省，伤的还是华为的牌子。一层是舆论把这套分账摆上台面，小米又推出同级车，便宜一二十万，溢价站不住了。再一层是行业没了暴利，华为赶在风险暴露前交出经营权。赚钱时拿大头，出事时不沾身。",
+      "route": "episodes/EP211",
+      "summary": "荷兰一家主流保险公司出了新的承保规则，九家车企的车连基础车险都不接，另外五家只能买第三者责任险，名单主体是中国电车，很多人读成贸易打压。欧洲汽车业靠上百年的维修、配件和理赔规则运转，保险公司敢定价，是因为事故率和修车成本都有数。中国电车靠便宜打开市场，维修只认自家网点，配件靠海运，小刮蹭一拖几个月，代步和误工的钱都算在保险公司头上，赔付算不出底，只好不接。这像奥德修斯的木马计，城攻下来了，十年漂流还在后面。",
       "status": "curated",
       "degree": 12
     },
@@ -1749,6 +1771,17 @@
       "type": "concept",
       "route": "concepts/time-asymmetry",
       "summary": "真正决定战略胜负的，往往不是一场仗的强弱，而是谁能把时间变成自己的朋友。",
+      "status": null,
+      "degree": 11
+    },
+    {
+      "id": "theme:institutional-middle-class-and-social-mobility",
+      "key": "institutional-middle-class-and-social-mobility",
+      "label": "体制化中产与社会流动",
+      "fullLabel": "体制化中产与社会流动",
+      "type": "theme",
+      "route": "themes/institutional-middle-class-and-social-mobility",
+      "summary": "讨论稳定岗位、公共财政和身份溢价如何重塑中产结构，并收窄普通人的上升路径。",
       "status": null,
       "degree": 11
     },
@@ -1841,17 +1874,6 @@
       "degree": 11
     },
     {
-      "id": "episode:EP211",
-      "key": "EP211",
-      "label": "EP211",
-      "fullLabel": "EP211 · 靠诡计打破的规则，终要用一生偿还！荷兰车险率先拒保中国电车的底层真相",
-      "type": "episode",
-      "route": "episodes/EP211",
-      "summary": "荷兰一家主流保险公司出了新的承保规则，九家车企的车连基础车险都不接，另外五家只能买第三者责任险，名单主体是中国电车，很多人读成贸易打压。欧洲汽车业靠上百年的维修、配件和理赔规则运转，保险公司敢定价，是因为事故率和修车成本都有数。中国电车靠便宜打开市场，维修只认自家网点，配件靠海运，小刮蹭一拖几个月，代步和误工的钱都算在保险公司头上，赔付算不出底，只好不接。这像奥德修斯的木马计，城攻下来了，十年漂流还在后面。",
-      "status": "curated",
-      "degree": 11
-    },
-    {
       "id": "episode:EP213",
       "key": "EP213",
       "label": "EP213",
@@ -1907,13 +1929,13 @@
       "degree": 10
     },
     {
-      "id": "theme:institutional-middle-class-and-social-mobility",
-      "key": "institutional-middle-class-and-social-mobility",
-      "label": "体制化中产与社会流动",
-      "fullLabel": "体制化中产与社会流动",
+      "id": "theme:ev-safety-and-consumer-testing",
+      "key": "ev-safety-and-consumer-testing",
+      "label": "新能源安全边界与消费者测试",
+      "fullLabel": "新能源安全边界与消费者测试",
       "type": "theme",
-      "route": "themes/institutional-middle-class-and-social-mobility",
-      "summary": "讨论稳定岗位、公共财政和身份溢价如何重塑中产结构，并收窄普通人的上升路径。",
+      "route": "themes/ev-safety-and-consumer-testing",
+      "summary": "讨论新能源车与相关电池系统如何把安全验证不足的代价，转移到真实用户和真实事故里。",
       "status": null,
       "degree": 10
     },
@@ -2167,17 +2189,6 @@
       "type": "model",
       "route": "models/ex-post-accountability-governance",
       "summary": "治理可以选择事前管制每个人，也可以选择给自由、事后对违规者施加无法承受的代价；后者往往比前者更省成本也更有效。",
-      "status": null,
-      "degree": 9
-    },
-    {
-      "id": "theme:ev-safety-and-consumer-testing",
-      "key": "ev-safety-and-consumer-testing",
-      "label": "新能源安全边界与消费者测试",
-      "fullLabel": "新能源安全边界与消费者测试",
-      "type": "theme",
-      "route": "themes/ev-safety-and-consumer-testing",
-      "summary": "讨论新能源车与相关电池系统如何把安全验证不足的代价，转移到真实用户和真实事故里。",
       "status": null,
       "degree": 9
     },
@@ -2589,6 +2600,17 @@
       "degree": 8
     },
     {
+      "id": "concept:probabilistic-safety",
+      "key": "probabilistic-safety",
+      "label": "概率型安全",
+      "fullLabel": "概率型安全",
+      "type": "concept",
+      "route": "concepts/probabilistic-safety",
+      "summary": "风险不是每次都会爆发，但一旦触发就后果极重，因此最容易被组织和用户一起低估。",
+      "status": null,
+      "degree": 8
+    },
+    {
       "id": "model:individuation-three-stage",
       "key": "individuation-three-stage",
       "label": "个体化三阶段模型",
@@ -2629,6 +2651,17 @@
       "type": "theme",
       "route": "themes/exam-centered-education-and-person-formation",
       "summary": "关注学校如何把人塑造成服从考试和权威的对象。",
+      "status": null,
+      "degree": 8
+    },
+    {
+      "id": "theme:brand-symbol-and-value",
+      "key": "brand-symbol-and-value",
+      "label": "品牌符号与价值感知",
+      "fullLabel": "品牌符号与价值感知",
+      "type": "theme",
+      "route": "themes/brand-symbol-and-value",
+      "summary": "讨论品牌符号如何塑造用户对价格、品质和价值的判断。",
       "status": null,
       "degree": 8
     },
@@ -3172,17 +3205,6 @@
       "degree": 7
     },
     {
-      "id": "concept:probabilistic-safety",
-      "key": "probabilistic-safety",
-      "label": "概率型安全",
-      "fullLabel": "概率型安全",
-      "type": "concept",
-      "route": "concepts/probabilistic-safety",
-      "summary": "风险不是每次都会爆发，但一旦触发就后果极重，因此最容易被组织和用户一起低估。",
-      "status": null,
-      "degree": 7
-    },
-    {
       "id": "theme:public-space-and-civic-maturity",
       "key": "public-space-and-civic-maturity",
       "label": "公共空间与公民成熟",
@@ -3249,17 +3271,6 @@
       "degree": 7
     },
     {
-      "id": "theme:brand-symbol-and-value",
-      "key": "brand-symbol-and-value",
-      "label": "品牌符号与价值感知",
-      "fullLabel": "品牌符号与价值感知",
-      "type": "theme",
-      "route": "themes/brand-symbol-and-value",
-      "summary": "讨论品牌符号如何塑造用户对价格、品质和价值的判断。",
-      "status": null,
-      "degree": 7
-    },
-    {
       "id": "concept:authority-internalization",
       "key": "authority-internalization",
       "label": "权威内化",
@@ -3289,6 +3300,17 @@
       "type": "model",
       "route": "models/human-machine-differentiation",
       "summary": "当机器越来越擅长标准化任务时，人类价值必须转向不可轻易复制的判断与创造。",
+      "status": null,
+      "degree": 7
+    },
+    {
+      "id": "concept:identity-over-wealth",
+      "key": "identity-over-wealth",
+      "label": "身份压倒财富",
+      "fullLabel": "身份压倒财富",
+      "type": "concept",
+      "route": "concepts/identity-over-wealth",
+      "summary": "身份压倒财富指稳定身份、编制和圈层位置开始比账面收入更能决定社会评价和生活安全感。",
       "status": null,
       "degree": 7
     },
@@ -3546,6 +3568,17 @@
       "degree": 7
     },
     {
+      "id": "episode:EP050",
+      "key": "EP050",
+      "label": "EP050",
+      "fullLabel": "EP050 · 车圈的“岳不群”到底是谁？19分钟深度探讨，电车行业背后的复杂逻辑……",
+      "type": "episode",
+      "route": "episodes/EP050",
+      "summary": "说起车圈的岳不群，很多人想到雷军和小米汽车，可在个人看来小米来得太晚，撑死算个丐帮。真正的岳不群是华为，名头正，藏得深，野心大，核心是一个假字。它把拿来主义叫作创新，底子是外包码农撑起来的组装公司，产品像拼盘，总差那么一点。出了事就遮车衣、抠车标，什么都能删。前台有余承东（推测）卖力营销，背后据说有水军抹黑对手。嘴上说要做世界最好的企业，王健林们信了，跑出去买世界，它走出去是为了把技术买回来。它想当的是和国家捆在一起的财阀，赢了配享太庙，输了老百姓受罪。",
+      "status": "curated",
+      "degree": 7
+    },
+    {
       "id": "episode:EP065",
       "key": "EP065",
       "label": "EP065",
@@ -3744,6 +3777,17 @@
       "degree": 6
     },
     {
+      "id": "concept:technical-shortcut",
+      "key": "technical-shortcut",
+      "label": "技术捷径",
+      "fullLabel": "技术捷径",
+      "type": "concept",
+      "route": "concepts/technical-shortcut",
+      "summary": "更快落地的技术选择能带来早期优势，也可能在后期变成难以摆脱的路径包袱。",
+      "status": null,
+      "degree": 6
+    },
+    {
       "id": "theme:trust-and-asset-preservation",
       "key": "trust-and-asset-preservation",
       "label": "家族信托与资产保全",
@@ -3799,17 +3843,6 @@
       "degree": 6
     },
     {
-      "id": "concept:identity-over-wealth",
-      "key": "identity-over-wealth",
-      "label": "身份压倒财富",
-      "fullLabel": "身份压倒财富",
-      "type": "concept",
-      "route": "concepts/identity-over-wealth",
-      "summary": "身份压倒财富指稳定身份、编制和圈层位置开始比账面收入更能决定社会评价和生活安全感。",
-      "status": null,
-      "degree": 6
-    },
-    {
       "id": "concept:production-risk-outsourcing",
       "key": "production-risk-outsourcing",
       "label": "生产端风险外包",
@@ -3850,6 +3883,17 @@
       "type": "theme",
       "route": "themes/new-media-political-mobilization",
       "summary": "候选人和政治叙事不再必须依附旧媒体，而可以直接通过新媒体组织情绪、认同和支持。",
+      "status": null,
+      "degree": 6
+    },
+    {
+      "id": "theme:ev-design-and-technology-shortcuts",
+      "key": "ev-design-and-technology-shortcuts",
+      "label": "新能源设计抄近路与技术捷径",
+      "fullLabel": "新能源设计抄近路与技术捷径",
+      "type": "theme",
+      "route": "themes/ev-design-and-technology-shortcuts",
+      "summary": "讨论新能源品牌如何在设计、技术和产品叙事上追求速成，并为此埋下长期反噬。",
       "status": null,
       "degree": 6
     },
@@ -3982,17 +4026,6 @@
       "type": "episode",
       "route": "episodes/EP047",
       "summary": "《华尔街日报》报道，多益网络创始人徐波在美国靠代孕有了一百多个孩子。多益随后声明，一百多个是总数，在美国代孕生的只有 12 个，数字至今各说各的。孩子生下来交给保姆，他本人没去过洛杉矶，当地法官后来驳回了他的亲权申请。徐波据说辍学起家，靠《梦幻西游》发了财，聪明却缺底蕴和底线。钱挣够了，公共价值的出口没找到，他倒回了繁殖。老钱靠长周期的家族竞争筛出领袖，新钱靠数量堆后代，孩子容易变质。真正的爱是爱加目送，父母该帮孩子在下一个路口多看见几扇门。",
-      "status": "curated",
-      "degree": 6
-    },
-    {
-      "id": "episode:EP050",
-      "key": "EP050",
-      "label": "EP050",
-      "fullLabel": "EP050 · 车圈的“岳不群”到底是谁？19分钟深度探讨，电车行业背后的复杂逻辑……",
-      "type": "episode",
-      "route": "episodes/EP050",
-      "summary": "说起车圈的岳不群，很多人想到雷军和小米汽车，可在个人看来小米来得太晚，撑死算个丐帮。真正的岳不群是华为，名头正，藏得深，野心大，核心是一个假字。它把拿来主义叫作创新，底子是外包码农撑起来的组装公司，产品像拼盘，总差那么一点。出了事就遮车衣、抠车标，什么都能删。前台有余承东（推测）卖力营销，背后据说有水军抹黑对手。嘴上说要做世界最好的企业，王健林们信了，跑出去买世界，它走出去是为了把技术买回来。它想当的是和国家捆在一起的财阀，赢了配享太庙，输了老百姓受罪。",
       "status": "curated",
       "degree": 6
     },
@@ -4162,6 +4195,17 @@
       "degree": 5
     },
     {
+      "id": "concept:distributed-war-industry",
+      "key": "distributed-war-industry",
+      "label": "分布式战时工业",
+      "fullLabel": "分布式战时工业",
+      "type": "concept",
+      "route": "concepts/distributed-war-industry",
+      "summary": "战时生产越能分散到多主体、多地点和快速反馈链条里，越不容易被固定打击瘫痪。",
+      "status": null,
+      "degree": 5
+    },
+    {
       "id": "concept:welfare-ratchet",
       "key": "welfare-ratchet",
       "label": "福利棘轮",
@@ -4202,17 +4246,6 @@
       "type": "model",
       "route": "models/centralized-control-backfire",
       "summary": "集中控制把监管便利和低成本做出来，也会把失效点集中到同一个中心节点上。",
-      "status": null,
-      "degree": 5
-    },
-    {
-      "id": "concept:technical-shortcut",
-      "key": "technical-shortcut",
-      "label": "技术捷径",
-      "fullLabel": "技术捷径",
-      "type": "concept",
-      "route": "concepts/technical-shortcut",
-      "summary": "更快落地的技术选择能带来早期优势，也可能在后期变成难以摆脱的路径包袱。",
       "status": null,
       "degree": 5
     },
@@ -4411,17 +4444,6 @@
       "type": "concept",
       "route": "concepts/new-media-politician",
       "summary": "靠新媒体直接连接受众、绕过传统组织和选举路径崛起的新型权力人物。",
-      "status": null,
-      "degree": 5
-    },
-    {
-      "id": "theme:ev-design-and-technology-shortcuts",
-      "key": "ev-design-and-technology-shortcuts",
-      "label": "新能源设计抄近路与技术捷径",
-      "fullLabel": "新能源设计抄近路与技术捷径",
-      "type": "theme",
-      "route": "themes/ev-design-and-technology-shortcuts",
-      "summary": "讨论新能源品牌如何在设计、技术和产品叙事上追求速成，并为此埋下长期反噬。",
       "status": null,
       "degree": 5
     },
@@ -4877,17 +4899,6 @@
       "degree": 4
     },
     {
-      "id": "concept:distributed-war-industry",
-      "key": "distributed-war-industry",
-      "label": "分布式战时工业",
-      "fullLabel": "分布式战时工业",
-      "type": "concept",
-      "route": "concepts/distributed-war-industry",
-      "summary": "战时生产越能分散到多主体、多地点和快速反馈链条里，越不容易被固定打击瘫痪。",
-      "status": null,
-      "degree": 4
-    },
-    {
       "id": "model:layered-market",
       "key": "layered-market",
       "label": "分层市场",
@@ -5247,6 +5258,17 @@
       "type": "concept",
       "route": "concepts/ceremonial-formalism",
       "summary": "组织越来越依赖场面、仪式和整齐感来证明自己有效，而真实目标和真实功能却被持续挤到后面。",
+      "status": null,
+      "degree": 4
+    },
+    {
+      "id": "concept:policy-stalling",
+      "key": "policy-stalling",
+      "label": "政策拖延术",
+      "fullLabel": "政策拖延术",
+      "type": "concept",
+      "route": "concepts/policy-stalling",
+      "summary": "政策不断微调，不是为了真正解决结构问题，而是为了证明自己在行动、同时尽量把问题往后拖。",
       "status": null,
       "degree": 4
     },
@@ -6065,17 +6087,6 @@
       "degree": 3
     },
     {
-      "id": "concept:policy-stalling",
-      "key": "policy-stalling",
-      "label": "政策拖延术",
-      "fullLabel": "政策拖延术",
-      "type": "concept",
-      "route": "concepts/policy-stalling",
-      "summary": "政策不断微调，不是为了真正解决结构问题，而是为了证明自己在行动、同时尽量把问题往后拖。",
-      "status": null,
-      "degree": 3
-    },
-    {
       "id": "theme:smart-products-and-ownership-boundaries",
       "key": "smart-products-and-ownership-boundaries",
       "label": "智能产品与所有权边界",
@@ -6369,6 +6380,17 @@
       "type": "concept",
       "route": "concepts/paper-gain-track-record",
       "summary": "管别人钱的机构把账面上还没变现的倍数当成成绩单，用它去募下一笔钱，最后到手多少反而排在后面。",
+      "status": null,
+      "degree": 2
+    },
+    {
+      "id": "model:symbol-ascension",
+      "key": "symbol-ascension",
+      "label": "符号登顶",
+      "fullLabel": "符号登顶",
+      "type": "model",
+      "route": "models/symbol-ascension",
+      "summary": "不在现有的比价体系里争第一，而是先划界限、再筛人、最后把自己变成不能被议价也不能被调侃的符号。",
       "status": null,
       "degree": 2
     },
@@ -6776,6 +6798,17 @@
       "type": "theme",
       "route": "themes/bounded-social-experimentation",
       "summary": "制度的韧性，不只看能否创新，也看是否允许试错、限定边界和吸收后果。",
+      "status": null,
+      "degree": 2
+    },
+    {
+      "id": "concept:identity-premium",
+      "key": "identity-premium",
+      "label": "身份溢价",
+      "fullLabel": "身份溢价",
+      "type": "concept",
+      "route": "concepts/identity-premium",
+      "summary": "商品价格里超出功能的那一截，买的是让别人看出自己属于哪一类人，这一截随着撑它的阶层一起涨落。",
       "status": null,
       "degree": 2
     },
@@ -7315,17 +7348,6 @@
       "type": "person",
       "route": "people/fengge-wangmingtianya",
       "summary": "峰哥亡命天涯本名周丽峰，是拍社会底层起家的 B 站 UP 主，性压抑理论跟他有关；EP032 从他 2025 年 11 月被全网禁关讲起，拆网络三大理论。",
-      "status": null,
-      "degree": 1
-    },
-    {
-      "id": "model:symbol-ascension",
-      "key": "symbol-ascension",
-      "label": "符号登顶",
-      "fullLabel": "符号登顶",
-      "type": "model",
-      "route": "models/symbol-ascension",
-      "summary": "不在现有的比价体系里争第一，而是先划界限、再筛人、最后把自己变成不能被议价也不能被调侃的符号。",
       "status": null,
       "degree": 1
     },
@@ -7876,17 +7898,6 @@
       "type": "concept",
       "route": "concepts/social-currency-pressure",
       "summary": "流行内容成为社交货币后，人们会因怕掉队而被迫参与、理解和复刻。",
-      "status": null,
-      "degree": 1
-    },
-    {
-      "id": "concept:identity-premium",
-      "key": "identity-premium",
-      "label": "身份溢价",
-      "fullLabel": "身份溢价",
-      "type": "concept",
-      "route": "concepts/identity-premium",
-      "summary": "商品价格里超出功能的那一截，买的是让别人看出自己属于哪一类人，这一截随着撑它的阶层一起涨落。",
       "status": null,
       "degree": 1
     },
@@ -22607,6 +22618,96 @@
     {
       "source": "live:LIVE048",
       "target": "theme:cash-optionality-and-liquidity-anxiety",
+      "kind": "live-theme"
+    },
+    {
+      "source": "live:LIVE049",
+      "target": "episode:EP050",
+      "kind": "live-episode"
+    },
+    {
+      "source": "live:LIVE049",
+      "target": "episode:EP195",
+      "kind": "live-episode"
+    },
+    {
+      "source": "live:LIVE049",
+      "target": "episode:EP204",
+      "kind": "live-episode"
+    },
+    {
+      "source": "live:LIVE049",
+      "target": "episode:EP205",
+      "kind": "live-episode"
+    },
+    {
+      "source": "live:LIVE049",
+      "target": "episode:EP211",
+      "kind": "live-episode"
+    },
+    {
+      "source": "live:LIVE049",
+      "target": "episode:EP217",
+      "kind": "live-episode"
+    },
+    {
+      "source": "live:LIVE049",
+      "target": "concept:probabilistic-safety",
+      "kind": "live-concept"
+    },
+    {
+      "source": "live:LIVE049",
+      "target": "concept:identity-premium",
+      "kind": "live-concept"
+    },
+    {
+      "source": "live:LIVE049",
+      "target": "concept:identity-over-wealth",
+      "kind": "live-concept"
+    },
+    {
+      "source": "live:LIVE049",
+      "target": "concept:technical-shortcut",
+      "kind": "live-concept"
+    },
+    {
+      "source": "live:LIVE049",
+      "target": "concept:policy-stalling",
+      "kind": "live-concept"
+    },
+    {
+      "source": "live:LIVE049",
+      "target": "concept:distributed-war-industry",
+      "kind": "live-concept"
+    },
+    {
+      "source": "live:LIVE049",
+      "target": "model:symbol-ascension",
+      "kind": "live-model"
+    },
+    {
+      "source": "live:LIVE049",
+      "target": "theme:ev-safety-and-consumer-testing",
+      "kind": "live-theme"
+    },
+    {
+      "source": "live:LIVE049",
+      "target": "theme:ev-design-and-technology-shortcuts",
+      "kind": "live-theme"
+    },
+    {
+      "source": "live:LIVE049",
+      "target": "theme:brand-symbol-and-value",
+      "kind": "live-theme"
+    },
+    {
+      "source": "live:LIVE049",
+      "target": "theme:institutional-middle-class-and-social-mobility",
+      "kind": "live-theme"
+    },
+    {
+      "source": "live:LIVE049",
+      "target": "theme:dollar-system-and-gray-trade",
       "kind": "live-theme"
     },
     {
