@@ -3,7 +3,7 @@
     "title": "颖响力知识图谱",
     "subtitle": "节目、概念、模型、人物、主题之间的可视化连接网络",
     "nodeCount": 764,
-    "linkCount": 2851,
+    "linkCount": 2848,
     "typeCounts": {
       "model": 83,
       "live": 49,
@@ -100,7 +100,7 @@
       "route": "concepts/hidden-debt",
       "summary": "表外、体外和合作链条里的债务不在显性报表中充分呈现，却会在危机时重新压回主体。",
       "status": null,
-      "degree": 32
+      "degree": 31
     },
     {
       "id": "live:LIVE004",
@@ -169,17 +169,6 @@
       "degree": 28
     },
     {
-      "id": "concept:cost-shifting",
-      "key": "cost-shifting",
-      "label": "成本外移",
-      "fullLabel": "成本外移",
-      "type": "concept",
-      "route": "concepts/cost-shifting",
-      "summary": "组织内部的高额非生产性成本，最终会通过价格、规则或风险转嫁给外部承担者。",
-      "status": null,
-      "degree": 27
-    },
-    {
       "id": "episode:EP156",
       "key": "EP156",
       "label": "EP156",
@@ -233,6 +222,17 @@
       "summary": "据说以前答应给古巴的油凑不齐，要在外面买了补上，一桶倒贴十二美元。",
       "status": "published",
       "degree": 27
+    },
+    {
+      "id": "concept:cost-shifting",
+      "key": "cost-shifting",
+      "label": "成本外移",
+      "fullLabel": "成本外移",
+      "type": "concept",
+      "route": "concepts/cost-shifting",
+      "summary": "强势一方把本该自己付的成本，借价格、合同、规则或时间推给没得选的人。",
+      "status": null,
+      "degree": 26
     },
     {
       "id": "episode:EP154",
@@ -400,17 +400,6 @@
       "degree": 24
     },
     {
-      "id": "concept:chokepoint-leverage",
-      "key": "chokepoint-leverage",
-      "label": "咽喉杠杆",
-      "fullLabel": "咽喉杠杆",
-      "type": "concept",
-      "route": "concepts/chokepoint-leverage",
-      "summary": "控制海峡、运河和关键通道的人，往往能把地理位置转化成定价权、通行权和规则权。",
-      "status": null,
-      "degree": 24
-    },
-    {
       "id": "live:LIVE012",
       "key": "LIVE012",
       "label": "LIVE012",
@@ -506,6 +495,17 @@
       "type": "theme",
       "route": "themes/narrative-speculation-and-retail-traps",
       "summary": "价格先靠故事推高，先进场的人在高点退出，普通人带着积蓄最后接手。",
+      "status": null,
+      "degree": 23
+    },
+    {
+      "id": "concept:chokepoint-leverage",
+      "key": "chokepoint-leverage",
+      "label": "咽喉杠杆",
+      "fullLabel": "咽喉杠杆",
+      "type": "concept",
+      "route": "concepts/chokepoint-leverage",
+      "summary": "控制海峡、运河和关键通道的人，往往能把地理位置转化成定价权、通行权和规则权。",
       "status": null,
       "degree": 23
     },
@@ -884,17 +884,6 @@
       "degree": 18
     },
     {
-      "id": "episode:EP192",
-      "key": "EP192",
-      "label": "EP192",
-      "fullLabel": "EP192 · 梁文锋说漏嘴的算力乱象！揭露中国AI行业的真实浪费与困境。",
-      "type": "episode",
-      "route": "episodes/EP192",
-      "summary": "梁文锋一场近四小时的闭门会文字稿被放了出来。他是量化出身，不屑对投资人吹牛，稿子里的话八九成可信。四张华为的卡才抵一张英伟达的卡，手里一万六千张只折合四五千张，缺口要靠别的卡补。由此推断灰色贸易这条路被坐实了，但这一步是推断，稿子没说卡从哪来。国内七八家一起做大模型，卡和算力中心的需求被一起做大，这条产业链跟当年的电车很像。现在的 AI 还没到自我学习那一步，泡沫可能就在眼前。文件偏偏在月之暗面爆火之后流出，一种猜测是投资机构借这次泄露敲打梁文锋。",
-      "status": "curated",
-      "degree": 18
-    },
-    {
       "id": "live:LIVE049",
       "key": "LIVE049",
       "label": "LIVE049",
@@ -946,6 +935,17 @@
       "type": "episode",
       "route": "episodes/EP189",
       "summary": "石油进口量断崖式世界第一的中国，日均消耗近1500万桶。美以与伊朗的军事行动展开、霍尔木兹海峡被封后，进口在三四个月内减少三成多。短期油价、新能源替代和动用战略储备，这三种主流解释都算不平这笔账。剩下最可能的解释，是它的真实需求只有进口量的三分之二左右，多出的部分多年来一直在转成战备储油。海峡一封，它只是停止增储，退回真实需求，所以进口大跌，工业没受什么破坏。按个人估计，台海一旦升级成中大型战争，石油最少要按两年来储。这套储备眼看建成，冲突偏偏在这时爆发，从此永远差一点。",
+      "status": "curated",
+      "degree": 17
+    },
+    {
+      "id": "episode:EP192",
+      "key": "EP192",
+      "label": "EP192",
+      "fullLabel": "EP192 · 梁文锋说漏嘴的算力乱象！揭露中国AI行业的真实浪费与困境。",
+      "type": "episode",
+      "route": "episodes/EP192",
+      "summary": "梁文锋一场近四小时的闭门会文字稿被放了出来。他是量化出身，不屑对投资人吹牛，稿子里的话八九成可信。四张华为的卡才抵一张英伟达的卡，手里一万六千张只折合四五千张，缺口要靠别的卡补。由此推断灰色贸易这条路被坐实了，但这一步是推断，稿子没说卡从哪来。国内七八家一起做大模型，卡和算力中心的需求被一起做大，这条产业链跟当年的电车很像。现在的 AI 还没到自我学习那一步，泡沫可能就在眼前。文件偏偏在月之暗面爆火之后流出，一种猜测是投资机构借这次泄露敲打梁文锋。",
       "status": "curated",
       "degree": 17
     },
@@ -1473,7 +1473,7 @@
       "fullLabel": "虚假销售",
       "type": "concept",
       "route": "concepts/phantom-sales",
-      "summary": "企业把并不存在的真实终端需求，包装成销量、出海成绩或渠道消化能力，用来维持估值和融资信心。",
+      "summary": "企业把并不存在的终端需求，包装成销量、出海成绩或订单，用来维持估值和融资。",
       "status": null,
       "degree": 12
     },
@@ -1748,7 +1748,7 @@
       "fullLabel": "时间非对称",
       "type": "concept",
       "route": "concepts/time-asymmetry",
-      "summary": "真正决定战略胜负的，往往不是一场仗的强弱，而是谁能把时间变成自己的朋友。",
+      "summary": "冲突双方对时间的承受力不一样，决定长期胜负的常常是谁能把时间变成自己的朋友。",
       "status": null,
       "degree": 11
     },
@@ -1781,7 +1781,7 @@
       "fullLabel": "主动中立",
       "type": "concept",
       "route": "concepts/active-neutrality",
-      "summary": "真正可持续的中立不是谁都不得罪，而是在坚持规则的前提下主动参与秩序塑造。",
+      "summary": "卡在关键位置上的小国躲不开大国博弈，能长久的中立靠守住规则、主动参与定规则。",
       "status": null,
       "degree": 11
     },
@@ -2133,7 +2133,7 @@
       "fullLabel": "制裁遏制",
       "type": "concept",
       "route": "concepts/sanction-containment",
-      "summary": "制裁的真正作用常常不是逼对手立刻认输，而是长期压低其外延空间、联动能力和做大速度。",
+      "summary": "制裁的深层用途是长期压住对手集团的经济体量，让它整体做不大，没法跟自己势均力敌。",
       "status": null,
       "degree": 9
     },
@@ -2190,17 +2190,6 @@
       "route": "concepts/balance-sheet-support",
       "summary": "通过维持估值、价格和名义成交，先保住报表与抵押体系，再把真实压力向后延。",
       "status": null,
-      "degree": 9
-    },
-    {
-      "id": "episode:EP007",
-      "key": "EP007",
-      "label": "EP007",
-      "fullLabel": "EP007 · 王健林限高一日游背后四点真相，老赖是崩塌的不可逆新阶段。",
-      "type": "episode",
-      "route": "episodes/EP007",
-      "summary": "王健林被限高一天又解除。他这代企业家手里没有技术，会的是跟政府、地方和银行达成潜规则，替各方扛着杠杆和风险，是变相的政府工具。这套认知已经跟社会脱节。王健林式的人并没有消失，均和集团的何旗做产业园，把国家、地方和银行想要的揉成一个故事，拿到钱就跑到了国外。赔了小一千亿的电车老板，也还有各方捧着。限高更像地方上一股势力在试探，像鬣狗看大象虚弱到什么程度。这代老板早把一部分财富转去国外，真正难熬的是精神上的反噬。",
-      "status": "curated",
       "degree": 9
     },
     {
@@ -2706,6 +2695,17 @@
       "type": "episode",
       "route": "episodes/EP005",
       "summary": "户晨风和张雪峰都被封了，封的方式却不一样，户晨风拿到的是永久封禁。常说的制造阶级对立、劝年轻人躺平，都没说到他被封的原因。他用直播把苹果人和安卓人放进同一个画面，普通年轻人看见了原来看不见的东西，和自己一样的人靠着背后的力量，过上了他们这辈子享受不到的生活。这群年轻人平时不激进，一旦被同一种不满聚起来，就是社会最提防的两类人之一。他找到的通道像当年鲁迅的小说，也像三体里的破壁人，把信息茧房打破了。以后也许还会有更多破壁人出现。",
+      "status": "curated",
+      "degree": 8
+    },
+    {
+      "id": "episode:EP007",
+      "key": "EP007",
+      "label": "EP007",
+      "fullLabel": "EP007 · 王健林限高一日游背后四点真相，老赖是崩塌的不可逆新阶段。",
+      "type": "episode",
+      "route": "episodes/EP007",
+      "summary": "王健林被限高一天又解除。他这代企业家手里没有技术，会的是跟政府、地方和银行达成潜规则，替各方扛着杠杆和风险，是变相的政府工具。这套认知已经跟社会脱节。王健林式的人并没有消失，均和集团的何旗做产业园，把国家、地方和银行想要的揉成一个故事，拿到钱就跑到了国外。赔了小一千亿的电车老板，也还有各方捧着。限高更像地方上一股势力在试探，像鬣狗看大象虚弱到什么程度。这代老板早把一部分财富转去国外，真正难熬的是精神上的反噬。",
       "status": "curated",
       "degree": 8
     },
@@ -3326,17 +3326,6 @@
       "degree": 7
     },
     {
-      "id": "episode:EP002",
-      "key": "EP002",
-      "label": "EP002",
-      "fullLabel": "EP002 · 西贝贾国龙背后的底气和资本逻辑，牛马们的预制菜生活还刚刚起步。",
-      "type": "episode",
-      "route": "episodes/EP002",
-      "summary": "贾国龙这回绕过公关团队，御驾亲征罗永浩，急有两个原因。西贝原定 2026 年 IPO，2025 年正在排队，出不起大公关事故，他本人对罗永浩又有很大成见。底气来自背后以北京为首的一帮 PE。这批钱估计 2020 年前就进了场，赶上餐饮上市暂停，LP 的年限早就过了，也急着变现离场。里面有一类资本专门替人平事，第一波顶不住就上场，把水搅浑，去找罗永浩的软肋。资本只保得住一时，西贝能不能上市，还得看消费者买不买单。预制菜本身不是问题，问题在中央厨房的黑箱，更在人均一两百的价格。",
-      "status": "curated",
-      "degree": 7
-    },
-    {
       "id": "episode:EP006",
       "key": "EP006",
       "label": "EP006",
@@ -3884,6 +3873,17 @@
       "route": "themes/ai-bubble-and-compute-demand",
       "summary": "资本先把算力和工具铺开，再用补贴和热度把用量做出来，拿用量讲估值。",
       "status": null,
+      "degree": 6
+    },
+    {
+      "id": "episode:EP002",
+      "key": "EP002",
+      "label": "EP002",
+      "fullLabel": "EP002 · 西贝贾国龙背后的底气和资本逻辑，牛马们的预制菜生活还刚刚起步。",
+      "type": "episode",
+      "route": "episodes/EP002",
+      "summary": "贾国龙这回绕过公关团队，御驾亲征罗永浩，急有两个原因。西贝原定 2026 年 IPO，2025 年正在排队，出不起大公关事故，他本人对罗永浩又有很大成见。底气来自背后以北京为首的一帮 PE。这批钱估计 2020 年前就进了场，赶上餐饮上市暂停，LP 的年限早就过了，也急着变现离场。里面有一类资本专门替人平事，第一波顶不住就上场，把水搅浑，去找罗永浩的软肋。资本只保得住一时，西贝能不能上市，还得看消费者买不买单。预制菜本身不是问题，问题在中央厨房的黑箱，更在人均一两百的价格。",
+      "status": "curated",
       "degree": 6
     },
     {
@@ -8502,11 +8502,6 @@
     },
     {
       "source": "episode:EP002",
-      "target": "concept:cost-shifting",
-      "kind": "episode-concept"
-    },
-    {
-      "source": "episode:EP002",
       "target": "concept:premium-narrative",
       "kind": "episode-concept"
     },
@@ -8643,11 +8638,6 @@
     {
       "source": "episode:EP007",
       "target": "concept:phantom-growth",
-      "kind": "episode-concept"
-    },
-    {
-      "source": "episode:EP007",
-      "target": "concept:hidden-debt",
       "kind": "episode-concept"
     },
     {
@@ -15034,11 +15024,6 @@
       "source": "episode:EP191",
       "target": "theme:hidden-costs",
       "kind": "episode-theme"
-    },
-    {
-      "source": "episode:EP192",
-      "target": "concept:chokepoint-leverage",
-      "kind": "episode-concept"
     },
     {
       "source": "episode:EP192",
