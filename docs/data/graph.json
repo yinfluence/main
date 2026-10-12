@@ -3,7 +3,7 @@
     "title": "颖响力知识图谱",
     "subtitle": "节目、概念、模型、人物、主题之间的可视化连接网络",
     "nodeCount": 764,
-    "linkCount": 2848,
+    "linkCount": 2844,
     "typeCounts": {
       "model": 83,
       "live": 49,
@@ -158,17 +158,6 @@
       "degree": 29
     },
     {
-      "id": "live:LIVE021",
-      "key": "LIVE021",
-      "label": "LIVE021",
-      "fullLabel": "LIVE021 · 号称全产业链，其实是寄生经济！消费只占三成，剩下的去了哪？",
-      "type": "live",
-      "route": "lives/LIVE021",
-      "summary": "你早上本该吃两个煎饼果子，另一个被别的国家吃了。",
-      "status": "curated",
-      "degree": 28
-    },
-    {
       "id": "episode:EP156",
       "key": "EP156",
       "label": "EP156",
@@ -187,6 +176,17 @@
       "type": "live",
       "route": "lives/LIVE001",
       "summary": "巴拿马运河先拿出来试，对方没出声，第二张牌就落到委内瑞拉。",
+      "status": "curated",
+      "degree": 27
+    },
+    {
+      "id": "live:LIVE021",
+      "key": "LIVE021",
+      "label": "LIVE021",
+      "fullLabel": "LIVE021 · 号称全产业链，其实是寄生经济！消费只占三成，剩下的去了哪？",
+      "type": "live",
+      "route": "lives/LIVE021",
+      "summary": "你早上本该吃两个煎饼果子，另一个被别的国家吃了。",
       "status": "curated",
       "degree": 27
     },
@@ -609,17 +609,6 @@
       "degree": 21
     },
     {
-      "id": "live:LIVE015",
-      "key": "LIVE015",
-      "label": "LIVE015",
-      "fullLabel": "LIVE015 · 金价从一千多涨到四千多靠什么？灰色贸易选中了它，量一缩就得跌",
-      "type": "live",
-      "route": "lives/LIVE015",
-      "summary": "跟伊朗说用钴结算，对方不知道钴是什么。说黄金，大字不识的军头也知道值钱。",
-      "status": "curated",
-      "degree": 21
-    },
-    {
       "id": "live:LIVE041",
       "key": "LIVE041",
       "label": "LIVE041",
@@ -682,6 +671,17 @@
       "type": "live",
       "route": "lives/LIVE007",
       "summary": "钱花在该发生还没发生的时候，效果最大，往后每一步都在变贵。",
+      "status": "curated",
+      "degree": 20
+    },
+    {
+      "id": "live:LIVE015",
+      "key": "LIVE015",
+      "label": "LIVE015",
+      "fullLabel": "LIVE015 · 金价从一千多涨到四千多靠什么？灰色贸易选中了它，量一缩就得跌",
+      "type": "live",
+      "route": "lives/LIVE015",
+      "summary": "跟伊朗说用钴结算，对方不知道钴是什么。说黄金，大字不识的军头也知道值钱。",
       "status": "curated",
       "degree": 20
     },
@@ -862,17 +862,6 @@
       "degree": 18
     },
     {
-      "id": "concept:middle-class-hard-landing",
-      "key": "middle-class-hard-landing",
-      "label": "中产硬着陆",
-      "fullLabel": "中产硬着陆",
-      "type": "concept",
-      "route": "concepts/middle-class-hard-landing",
-      "summary": "高负债中产一旦失速，下坠往往同时摧毁资产、体面、关系和自我认同。",
-      "status": null,
-      "degree": 18
-    },
-    {
       "id": "episode:EP168",
       "key": "EP168",
       "label": "EP168",
@@ -1049,6 +1038,17 @@
       "degree": 15
     },
     {
+      "id": "concept:middle-class-hard-landing",
+      "key": "middle-class-hard-landing",
+      "label": "中产硬着陆",
+      "fullLabel": "中产硬着陆",
+      "type": "concept",
+      "route": "concepts/middle-class-hard-landing",
+      "summary": "靠房子、工资和贷款撑着的中产一旦失速，资产、体面、家里的关系和自我认同一起往下掉。",
+      "status": null,
+      "degree": 15
+    },
+    {
       "id": "episode:EP126",
       "key": "EP126",
       "label": "EP126",
@@ -1100,17 +1100,6 @@
       "type": "episode",
       "route": "episodes/EP184",
       "summary": "长沙市体育局干部彭女士占了闵先生的车位，民警、物业、社区前后调解六次，拖了十天，单位牵头后才和解。照闵先生的说法，她此前一直不肯认错，官方通报却写她早就当面道过歉，是闵先生不接受，这个前提两边对不上。由此生出的看法是，公职人员怕单位不怕法律，几十年前那层单位保护又回来了。车位归谁写得清清楚楚，可交警管不进小区，物业没有执法权，民警碰上民事纠纷也只能劝，产权人行使不了自己的权利。通报措辞两头不一样，县城婆罗门和普通人互相看不上，社会撕裂才刚开头。",
-      "status": "curated",
-      "degree": 15
-    },
-    {
-      "id": "live:LIVE008",
-      "key": "LIVE008",
-      "label": "LIVE008",
-      "fullLabel": "LIVE008 · 上了一桌子凉菜，唯独主菜没上：那条管线为什么签不成",
-      "type": "live",
-      "route": "lives/LIVE008",
-      "summary": "灰色贸易的油三四十，按正常价签就是八十一百，这中间差着三成。",
       "status": "curated",
       "degree": 15
     },
@@ -1276,6 +1265,17 @@
       "type": "episode",
       "route": "episodes/EP200",
       "summary": "北京又出楼市新政，五环以外全面放松，五环以内交满一年社保就能买。消息一出，江浙沪那边的朋友已经出手，北京的朋友说市场又要热闹起来了。同样的松绑上海广州深圳早就落地过，市场并没有热起来。这一轮真正被搅活的是地方政府手里的流动性，门槛降下来，是为了让新买家进场。撑起过去四十年普涨的那几个条件今天一个都不在。这是结构性的，塌下去不会自己长回来，八零后九零后这辈子都很难再等到普涨。最难的地方在心态，认定上涨是常态、下跌只是插曲，于是一次次上车。",
+      "status": "curated",
+      "degree": 14
+    },
+    {
+      "id": "live:LIVE008",
+      "key": "LIVE008",
+      "label": "LIVE008",
+      "fullLabel": "LIVE008 · 上了一桌子凉菜，唯独主菜没上：那条管线为什么签不成",
+      "type": "live",
+      "route": "lives/LIVE008",
+      "summary": "灰色贸易的油三四十，按正常价签就是八十一百，这中间差着三成。",
       "status": "curated",
       "degree": 14
     },
@@ -1935,7 +1935,7 @@
       "fullLabel": "预期贩卖",
       "type": "concept",
       "route": "concepts/expectation-selling",
-      "summary": "通过出售可理解、可规划、可购买的未来想象，中间人获得影响力和收益。",
+      "summary": "把说不清的未来压成一个能买的答案，卖给焦虑的人，中间人从中拿影响力和钱。",
       "status": null,
       "degree": 10
     },
@@ -2485,7 +2485,7 @@
       "fullLabel": "避险溢价",
       "type": "concept",
       "route": "concepts/refuge-premium",
-      "summary": "动荡时期，稳定、守规则、能承接资金和人才的节点会获得额外溢价。",
+      "summary": "周边一乱，规则稳、能接住钱和人的地方，会被多付一笔价钱。",
       "status": null,
       "degree": 8
     },
@@ -2518,7 +2518,7 @@
       "fullLabel": "概率型安全",
       "type": "concept",
       "route": "concepts/probabilistic-safety",
-      "summary": "风险不是每次都会爆发，但一旦触发就后果极重，因此最容易被组织和用户一起低估。",
+      "summary": "风险平时很少冒头，一出事就是大事，组织和用户都容易拿平时没事来安慰自己。",
       "status": null,
       "degree": 8
     },
@@ -2672,7 +2672,7 @@
       "fullLabel": "组织失声",
       "type": "concept",
       "route": "concepts/organizational-silence",
-      "summary": "组织内部真实反馈消失后，成员会等待权威表态，而不是主动修正错误。",
+      "summary": "组织里知道问题的人不再开口，都等着权威表态，错误就没人去改。",
       "status": null,
       "degree": 8
     },
@@ -3029,17 +3029,6 @@
       "degree": 8
     },
     {
-      "id": "episode:EP222",
-      "key": "EP222",
-      "label": "EP222",
-      "fullLabel": "EP222 · 新加坡要的到底是幸福，还是快乐？如何理解成长的烦恼与人生的追求。",
-      "type": "episode",
-      "route": "episodes/EP222",
-      "summary": "新加坡前外长杨荣文在彭博社的直播里被人问到，新加坡这么有钱，为何显得不快乐。他重提李光耀的话，政府可以承诺发展、基建和教育，唯独别承诺快乐。他带过的贸工部和外交部加班多、压力大，士气却在全系统数一数二。快乐是当下的情绪，幸福是对整段人生的满意，两者常被混成一回事。孩子长大后说自己不快乐，多半是成长本来的样子。家长不必急着替他挡掉，也不该把他往死里逼。一个国家最后好不好，要看住在这里的人觉得日子值不值得过。",
-      "status": "curated",
-      "degree": 8
-    },
-    {
       "id": "episode:EP223",
       "key": "EP223",
       "label": "EP223",
@@ -3057,7 +3046,7 @@
       "fullLabel": "表演式创新",
       "type": "concept",
       "route": "concepts/performative-innovation",
-      "summary": "表演式创新指项目主要为了完成指标、包装成果和争取扶持资金，而不以真实突破为中心。",
+      "summary": "项目围着指标、汇报和扶持资金转，能拍出来、能验收就行，真突破排在后面。",
       "status": null,
       "degree": 7
     },
@@ -3172,17 +3161,6 @@
       "degree": 7
     },
     {
-      "id": "concept:exam-centered-discipline",
-      "key": "exam-centered-discipline",
-      "label": "考试中心化规训",
-      "fullLabel": "考试中心化规训",
-      "type": "concept",
-      "route": "concepts/exam-centered-discipline",
-      "summary": "学校生活、身体节奏和人格评价都围绕考试排名组织起来时，教育会退化为规训系统。",
-      "status": null,
-      "degree": 7
-    },
-    {
       "id": "theme:exam-centered-education-and-person-formation",
       "key": "exam-centered-education-and-person-formation",
       "label": "考试中心教育与人成形",
@@ -3244,7 +3222,7 @@
       "fullLabel": "身份租值",
       "type": "concept",
       "route": "concepts/credential-rent",
-      "summary": "一个人的学历、文化、头衔或圈层，不再只是背景，而被当成能持续换钱、换信任和换资源的租值来源。",
+      "summary": "学历、头衔、家世、圈层被当成一笔能反复出租的资产，持续换来钱、信任和资源。",
       "status": null,
       "degree": 7
     },
@@ -3255,7 +3233,7 @@
       "fullLabel": "务实合法性",
       "type": "concept",
       "route": "concepts/pragmatic-legitimacy",
-      "summary": "政权或共同体的稳定感，常来自普通人能持续获得可感的生活改善和秩序保障。",
+      "summary": "一个政权让人认，靠的是普通人的日子看得见地变好，收入、住房、护照和安全都算在里面。",
       "status": null,
       "degree": 7
     },
@@ -3546,6 +3524,17 @@
       "degree": 7
     },
     {
+      "id": "episode:EP222",
+      "key": "EP222",
+      "label": "EP222",
+      "fullLabel": "EP222 · 新加坡要的到底是幸福，还是快乐？如何理解成长的烦恼与人生的追求。",
+      "type": "episode",
+      "route": "episodes/EP222",
+      "summary": "新加坡前外长杨荣文在彭博社的直播里被人问到，新加坡这么有钱，为何显得不快乐。他重提李光耀的话，政府可以承诺发展、基建和教育，唯独别承诺快乐。他带过的贸工部和外交部加班多、压力大，士气却在全系统数一数二。快乐是当下的情绪，幸福是对整段人生的满意，两者常被混成一回事。孩子长大后说自己不快乐，多半是成长本来的样子。家长不必急着替他挡掉，也不该把他往死里逼。一个国家最后好不好，要看住在这里的人觉得日子值不值得过。",
+      "status": "curated",
+      "degree": 7
+    },
+    {
       "id": "model:kpi-fraud-equilibrium",
       "key": "kpi-fraud-equilibrium",
       "label": "KPI造假均衡",
@@ -3618,7 +3607,7 @@
       "fullLabel": "高价叙事",
       "type": "concept",
       "route": "concepts/premium-narrative",
-      "summary": "企业用定位、符号、方法论和品牌故事为高价格建立解释框架。",
+      "summary": "企业用定位、符号、方法论和品牌故事，给高出成本的价格配一套说法。",
       "status": null,
       "degree": 6
     },
@@ -3651,7 +3640,7 @@
       "fullLabel": "技术捷径",
       "type": "concept",
       "route": "concepts/technical-shortcut",
-      "summary": "更快落地的技术选择能带来早期优势，也可能在后期变成难以摆脱的路径包袱。",
+      "summary": "抄近路的技术选择能早一步落地、早一步赚钱，代价往往留到后面，变成甩不掉的包袱。",
       "status": null,
       "degree": 6
     },
@@ -3674,6 +3663,17 @@
       "type": "concept",
       "route": "concepts/symbolic-matricide",
       "summary": "精神弑母指人要先在精神上吃掉母系带来的文化、再吐出来给予尊重，才能长成拥有自我的人。",
+      "status": null,
+      "degree": 6
+    },
+    {
+      "id": "concept:exam-centered-discipline",
+      "key": "exam-centered-discipline",
+      "label": "考试中心化规训",
+      "fullLabel": "考试中心化规训",
+      "type": "concept",
+      "route": "concepts/exam-centered-discipline",
+      "summary": "作息、身体、座位和人格评价都围着考试排名来安排，学校就成了一套规训系统。",
       "status": null,
       "degree": 6
     },
@@ -4377,7 +4377,7 @@
       "fullLabel": "未来路径拥堵",
       "type": "concept",
       "route": "concepts/future-path-crowding",
-      "summary": "所有人都挤向同一条被认为最安全的上升路径时，这条路本身就会因为拥挤而失去原来的安全性。",
+      "summary": "人人都挤向同一条被认为最稳的路，这条路就因为挤而不稳了。",
       "status": null,
       "degree": 5
     },
@@ -4927,7 +4927,7 @@
       "fullLabel": "继承性断裂",
       "type": "concept",
       "route": "concepts/family-succession-fracture",
-      "summary": "创始人把企业交给下一代时，如果旧账、旧怨和利益结构没有被提前制度化处理，接班很容易从交棒变成脆断。",
+      "summary": "创始人交棒前没把旧账、旧怨和利益结构理清，接班就从交棒变成脆断。",
       "status": null,
       "degree": 4
     },
@@ -4960,7 +4960,7 @@
       "fullLabel": "巨婴式维权",
       "type": "concept",
       "route": "concepts/giant-infant-rights-defense",
-      "summary": "巨婴式维权指个体把个人便利和情绪包装成权利诉求，却拒绝承担规则、义务和公共后果。",
+      "summary": "把自己的方便和情绪说成权利受侵害，要规则和别人让路，自己的义务和后果一概不认。",
       "status": null,
       "degree": 4
     },
@@ -5136,7 +5136,7 @@
       "fullLabel": "信众化品牌",
       "type": "concept",
       "route": "concepts/cult-branding",
-      "summary": "用户从购买者变成主动辩护、传播和站队的信众时，品牌就进入信众化阶段。",
+      "summary": "用户从买东西的人变成替品牌辩护、传播、站队的人，品牌就成了信众化品牌。",
       "status": null,
       "degree": 4
     },
@@ -16382,11 +16382,6 @@
     },
     {
       "source": "episode:EP222",
-      "target": "concept:exam-centered-discipline",
-      "kind": "episode-concept"
-    },
-    {
-      "source": "episode:EP222",
       "target": "model:individuation-three-stage",
       "kind": "episode-model"
     },
@@ -17547,11 +17542,6 @@
     },
     {
       "source": "live:LIVE008",
-      "target": "concept:middle-class-hard-landing",
-      "kind": "live-concept"
-    },
-    {
-      "source": "live:LIVE008",
       "target": "concept:great-small-power-leveling",
       "kind": "live-concept"
     },
@@ -18357,11 +18347,6 @@
     },
     {
       "source": "live:LIVE015",
-      "target": "concept:middle-class-hard-landing",
-      "kind": "live-concept"
-    },
-    {
-      "source": "live:LIVE015",
       "target": "concept:hidden-debt",
       "kind": "live-concept"
     },
@@ -19093,11 +19078,6 @@
     {
       "source": "live:LIVE021",
       "target": "concept:phantom-growth",
-      "kind": "live-concept"
-    },
-    {
-      "source": "live:LIVE021",
-      "target": "concept:middle-class-hard-landing",
       "kind": "live-concept"
     },
     {
