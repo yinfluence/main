@@ -427,54 +427,74 @@
   },
   "代际财富": {
     "kind": "concept",
-    "asOf": "2026-05-12",
+    "asOf": "2026-10-04",
     "sources": [
       {
-        "title": "Inheritance Taxation in OECD Countries - OECD",
-        "url": "https://www.oecd.org/en/publications/inheritance-taxation-in-oecd-countries_e2879a7d-en/full-report/component-4.html",
-        "note": "核对代际财富转移并不均匀，富裕家庭更可能获得更高价值的赠与和继承。"
+        "title": "Federal Reserve, How Does Intergenerational Wealth Transmission Affect Wealth Concentration?（2018-06-01）",
+        "url": "https://www.federalreserve.gov/econres/notes/feds-notes/how-does-intergenerational-wealth-transmission-affect-wealth-concentration-20180601.htm",
+        "note": "核代际转移集中：「inheritance and gift recipients tend to be wealthier, higher-income and more educated that the average person in the economy, resulting in highly concentrated flows of intergenerational transfers」。"
       },
       {
-        "title": "How Does Intergenerational Wealth Transmission Affect Wealth Concentration? - Federal Reserve",
-        "url": "https://www.federalreserve.gov/econres/notes/feds-notes/how-does-intergenerational-wealth-transmission-affect-wealth-concentration-20180601.htm",
-        "note": "补充核对代际财富传递与财富集中、教育和资产持有差异的关系。"
+        "title": "Wikipedia: Family office",
+        "url": "https://en.wikipedia.org/wiki/Family_office",
+        "note": "核洛克菲勒家族办公室的年代：「The Rockefeller family first pioneered family offices in the late 19th century」。"
       }
     ],
-    "summary": "代际财富是家庭把钱、资产、教育和风险缓冲从上一代传到下一代的过程，在节目里它更重要的意义是解释很多人格、婚恋和自信为什么从一开始就站在不同起点上。",
-    "description": "代际财富并不只等于遗产到账，它还包括父母能否承担试错、能否提供教育与城市经验、能否让下一代少接触现金流恐惧。OECD 和美联储的研究都强调，财富转移在不同家庭间高度不均。EP022 把这个词放进《人妻约会指南》的讨论里，重点不是讲富二代有多少钱，而是指出很多看似属于性格、品味和恋爱观的东西，其实早就被上一代留下来的资源结构和生活位置塑形了。",
+    "summary": "代际财富指一个家庭的钱和资产从上一代传到下一代。EP022 用李新野讲钱传下去了、上一代用钱的方式也跟着传了下去，EP188 讲家族办公室怎样把所有权和经营权分开，让财富跨过血缘这一关。",
+    "description": "代际财富包括遗产、生前赠与，也包括用这笔钱换来的教育和起点。美联储 2018 年一篇研究发现，拿到遗产和赠与的人本来就比一般人更富、收入更高、学历更高，代际转移本身就很集中。\n\nEP022 和 EP188 讲的是这件事里最难的一段：钱传得下去，会不会用钱的人未必传得下去。EP022 从一个富二代的文章讲上一代的习惯怎样传给下一代，EP188 从家族办公室讲制度怎样替代血缘。",
     "signalNotes": [
-      "当一个人把见识、品味和选择自由说得像纯个人能力时，节目常会追问背后有没有代际财富提供的缓冲垫。",
-      "它和婚恋市场、城市经验、留学背景一起出现时，重点往往不是炫富，而是谁从一开始就有资格把关系当成试错游戏。",
-      "如果讨论转向‘我和父辈不一样’，节目通常会继续追问：你摆脱的是父辈价值观，还是只是换了一种更体面的继承包装。"
+      "一个人把见识、品味和底气说成全靠自己时，可以想想他背后有没有上一代留下的缓冲。",
+      "富二代激烈反叛父辈的叙事，值得多看一眼他实际在做的事，EP022 的判断是常常换了时代、走的还是同一条路。",
+      "家族办公室、信托、离岸架构这些词一起出现，讨论的多半是钱怎样绕开下一代能力不足这个问题。"
     ],
     "programAssociations": [
       {
-        "title": "富裕二代的人格并不天然更自由",
+        "title": "恨上一代，又靠上一代的钱活着",
         "episodes": [
           "EP022"
         ],
-        "note": "EP022 借《人妻约会指南》和李新野的自我叙述，具体拆出代际财富怎样提供城市经验、资产底座和关系傲慢，也怎样让人一边厌父辈、一边离不开父辈留下的秩序。节目因此把代际财富写成一种人格背景：它不只给钱，还给出发位置、试错权限和误判他人的资本。"
+        "note": "EP022 讲投资圈疯传的《人妻约会指南》。作者李新野是一代企业家的孩子，痛恨父亲找小妈、抛弃妻子，可他离不开父亲的钱，追的也是短期暴富，走的还是父亲的路。EP022 把这叫作代际之间的短路：传统富商三妻四妾的观念和现代一夫一妻的制度冲突，不是一两代人能修复的。"
+      },
+      {
+        "title": "用制度替代血缘",
+        "episodes": [
+          "EP188"
+        ],
+        "note": "EP188 从新加坡家族办公室的扩张讲起，说它要解决的就是代际传承的死局。长子继承制能防资产被分割，防不住血缘挑出来的人没有能力。家族办公室的做法是所有权和经营权彻底分开，家族握住所有权和收益权，投资、风控、信托、税务交给外部团队。EP188 拿洛克菲勒家族作例子，它在十九世纪末建起家族办公室，口播说如今传到了第七代。"
       }
     ],
     "extensionNotes": [
       {
         "title": "李新野",
-        "note": "这是代际财富在节目里最具体的人物样本，能看清资源如何进入人格和关系判断。"
+        "note": "EP022 的主角，一个讨厌父亲又沿着父亲路径走的二代。"
       },
       {
-        "title": "财富继承与关系扭曲",
-        "note": "代际财富在站内不是孤立经济问题，它常和亲密关系、择偶与自我叙述一起变形。"
+        "title": "家族办公室",
+        "note": "EP188 讲代际传承的制度工具，所有权和经营权分开。"
       },
       {
-        "title": "比特币",
-        "note": "EP022 把比特币和旧式家族财富并列，说明资产类别换了，不代表继承结构就真的被打破。"
+        "title": "老钱",
+        "note": "EP022 和 EP188 都拿老钱新钱作对照，老钱是等出来、靠制度守住的。"
+      },
+      {
+        "title": "二代企业",
+        "note": "钱传到下一代时如果连着一家公司，问题就变成二代企业，EP009、EP078 讲的是这一层。"
       }
     ],
     "episodes": [
       {
         "id": "EP022",
-        "note": "节目借《人妻约会指南》讨论代际财富怎样塑造资源位置、人格和关系判断。"
+        "note": "李新野恨父亲又离不开父亲的钱，走的还是父亲的路，代际之间的短路会一代代传下去。"
+      },
+      {
+        "id": "EP188",
+        "note": "家族办公室把所有权和经营权分开，用制度解决血缘传承守不住财富的死局。"
       }
+    ],
+    "conceptNotes": [
+      "代际财富和继承人是两件事。钱可以一次过户，能不能守住要看接手的人，EP188 说多数富二代不具备掌控庞大资产的能力。",
+      "传下去的不只有钱。EP022 说一代富人运用财富的方式，包括找小妈、抛弃妻子，对二代有潜移默化的影响，这种短路至少传两三代。",
+      "老钱和新钱的分别不在数目。EP022 说靠短期暴富挣来的是 new money，没看过完整周期，想成为 old money 最重要的是等。"
     ]
   },
   "带货造假": {

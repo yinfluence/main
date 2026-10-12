@@ -1,68 +1,72 @@
 {
   "代孕": {
     "kind": "concept",
-    "asOf": "2026-05-11",
+    "asOf": "2026-10-04",
     "sources": [
       {
-        "title": "人类辅助生殖技术管理办法 - 国家卫生健康委员会",
-        "url": "https://www.nhc.gov.cn/wjw/c100221/202201/e61040c5c38c4b4696cdb3ee68ee27e1.shtml",
-        "note": "核对中国医疗机构和医务人员不得实施代孕技术的监管表述。"
+        "title": "维基文库《人类辅助生殖技术管理办法》",
+        "url": "https://zh.wikisource.org/wiki/%E4%BA%BA%E7%B1%BB%E8%BE%85%E5%8A%A9%E7%94%9F%E6%AE%96%E6%8A%80%E6%9C%AF%E7%AE%A1%E7%90%86%E5%8A%9E%E6%B3%95",
+        "note": "核中国禁令：第三条「禁止以任何形式买卖配子、合子、胚胎。医疗机构和医务人员不得实施任何形式的代孕技术」。国家卫健委原页有反爬，抓不到正文。"
       },
       {
-        "title": "Consideration of the gestational carrier: an Ethics Committee opinion - ASRM",
+        "title": "ASRM, Consideration of the gestational carrier: an Ethics Committee opinion (2023)",
         "url": "https://www.asrm.org/practice-guidance/ethics-opinions/consideration-of-the-gestational-carrier-an-ethics-committee-opinion-2023/",
-        "note": "核对妊娠承载者、意向父母、IVF 与伦理保护的基础定义。"
+        "note": "核妊娠代孕定义：「A ‘‘GC’’ is an individual who provides only gestation and does not provide gamete(s) for pregnancy」。"
       },
       {
-        "title": "The Chinese Billionaires Having Dozens of U.S.-Born Babies Via Surrogate - Center for Genetics and Society / The Wall Street Journal",
+        "title": "Center for Genetics and Society 转载《华尔街日报》The Chinese Billionaires Having Dozens of U.S.-Born Babies Via Surrogate（2025-12-13）",
         "url": "https://www.geneticsandsociety.org/article/chinese-billionaires-having-dozens-us-born-babies-surrogate",
-        "note": "核对节目所引徐波相关报道的公开来源；徐波方面回应和法律细节仍需以原报道及后续司法材料为准。"
+        "note": "核报道内容：「Clerks working for family court Judge Amy Pellman were reviewing routine surrogacy petitions」，「Videogame executive Xu Bo, said to have more than 100 children」「A Chinese billionaire was seeking parental rights to at least four unborn children」「He hadn't yet met them, he told the judge」。"
+      },
+      {
+        "title": "证券时报《中国富豪“正告”《华尔街日报》：没有在美代孕拥有超过100个孩子》（2025-12-17）",
+        "url": "https://stcn.com/article/detail/3545174.html",
+        "note": "核多益声明：「徐波先生通过美国代孕所生的孩子数量，仅有12个」，微博原句「从在美国代孕开始，经过多年努力，其实是只有一百多个」。"
       }
     ],
-    "summary": "代孕是由妊娠承载者替意向父母完成孕育与分娩的生育安排，节目借徐波“百子团”把它放进财富扩张、技术控制和孩子工具化的伦理问题。",
-    "description": "代孕通常指一名女性按照安排替他人妊娠并分娩，现代妊娠代孕多与 IVF、胚胎移植、合同安排、亲权认定和跨法域规则相连。不同国家和地区对代孕的允许范围差异很大；在中国现行监管文本中，医疗机构和医务人员不得实施代孕技术。节目语境里，EP047 并不是把代孕写成单纯医学选择，而是借徐波相关报道讨论富豪如何把生育、血缘和儿童未来改造成可扩张的家族工程。",
+    "summary": "代孕是由一名女性替别人怀孕并分娩的生育安排。EP047 借《华尔街日报》对多益网络创始人徐波的报道，讲富豪怎样用代孕批量生孩子，孩子在这种安排里容易变成项目。",
+    "description": "现在常见的是妊娠代孕。先用意向父母或捐赠者的配子做出试管胚胎，再移植到代孕者体内。代孕者只提供妊娠，不提供卵子，和孩子没有血缘关系。各国规定差别很大，洛杉矶的家事法庭把代孕亲权申请当作例行案件处理，中国则明令禁止。2001 年《人类辅助生殖技术管理办法》第三条写明，医疗机构和医务人员不得实施任何形式的代孕技术。\n\n2025 年 12 月《华尔街日报》写了一批去美国代孕的中国富豪，徐波是其中之一，报道说他有一百多个孩子。多益网络随后声明，他在美国代孕所生的只有 12 个，一百多个是总数。",
     "conceptNotes": [
-      "它首先是一种生育安排，不等于一般辅助生殖；节目讨论的是当这种安排被资本和跨境法域放大后，妊娠者、孩子和意向父母之间的权利边界会变得更紧张。",
-      "节目把代孕和“百子团”放在一起时，重点不是猎奇数量，而是财富是否把孩子从独立的人改写成家族资源、权力筹码和管理对象。",
-      "代孕议题容易被简化成技术自由或道德谴责。节目更关心的是：谁有能力购买选择，谁承担身体和法律风险，谁在长大后承受被项目化的后果。"
+      "代孕不等于辅助生殖。试管婴儿在中国是合法的医疗服务，代孕是其中被明令禁止的一种做法。",
+      "代孕讨论里常被漏掉的是代孕者本人。合同、亲权、医疗决定都绕着意向父母转，承担身体风险的人反而最少被提到。",
+      "EP047 盯着的是数量。一个人能用钱买到几十上百次生育时，孩子就容易被当成家族储备，而不是一个个独立的人。"
     ],
     "programAssociations": [
       {
-        "title": "富豪生育与家族工程",
+        "title": "富豪批量生孩子",
         "episodes": [
           "EP047"
         ],
-        "note": "EP047 从《华尔街日报》披露的徐波相关报道切入，讲他据称通过美国代孕体系拥有大量孩子，并把这个案例放进“新钱阶层用财富和技术制造家族延续”的框架。节目归纳的不是医学流程，而是新钱缺乏公共价值出口时，如何把生育改造成数量化、项目化、去人格化的繁殖工程。"
+        "note": "EP047 讲徐波的百子团。他在加州找代孕母亲，走试管、选性别、代孕这一整套，美国市场本来就有成熟的产业链，从卵子捐献到胚胎培育到代孕选择都能买到。孩子生下来交给保姆，他本人一直没去洛杉矶见过。EP047 的判断是，新钱挣够了却找不到公共价值的出口，倒回了繁殖，老钱靠长周期竞争筛出继承人，新钱靠数量堆后代。孩子到底有多少，报道和多益声明至今各说各的。"
       }
     ],
     "signalNotes": [
-      "代孕、IVF、跨境法域和富豪家庭同时出现时，节目通常会把问题从“能不能做到”转向“谁被技术和合同重新分配了身体风险与亲权风险”。",
-      "看到孩子被称作资源储备、家族筹码或未来继承工具时，这个词在节目里指向的已经不是生育困难，而是亲密关系被管理学和资产逻辑吞掉。",
-      "相关讨论如果只强调意向父母的选择自由，读者还要补看妊娠者的医疗决定权、法律代理权和经济诱因是否被充分保护。",
-      "当财富、血缘、数量和美国出生身份被放进同一个叙事，节目是在提醒代孕可能被用来绕开普通家庭无法触及的制度边界。"
+      "代孕、试管和富豪家庭一起出现时，可以先问清楚孩子是在哪个法域出生、亲权怎么认定，这决定了后面的一切纠纷。",
+      "看到孩子被说成储备、筹码、接班人选的时候，生育就已经被当成了资产配置。",
+      "只讲意向父母选择自由的说法，常常没讲代孕者的医疗决定权和经济处境。"
     ],
     "extensionNotes": [
       {
-        "title": "富豪生育",
-        "note": "EP047 的代孕讨论最终落到财富如何重新组织生育、血缘和儿童未来，适合继续看富豪家庭与家族延续线。"
+        "title": "徐波",
+        "note": "EP047 的主角，多益网络创始人，代孕孩子的数量至今各说各的。"
       },
       {
-        "title": "新钱阶层",
-        "note": "节目把徐波式案例归入新钱缺乏边界和底蕴的问题，而不是归入普通医学需求。"
+        "title": "百子团",
+        "note": "EP047 对徐波这批孩子的叫法，代孕在这里是手段，数量才是重点。"
       },
       {
-        "title": "技术中性神话",
-        "note": "代孕可以作为技术中性神话失效的案例：技术能提供操作能力，但不能自动解决伦理、法律和权力不平等。"
+        "title": "育儿工具化",
+        "note": "孩子交给保姆、本人不露面，EP047 把这叫工厂式育儿。"
       },
       {
-        "title": "孩子工具化",
-        "note": "节目最重的判断落在孩子是否被当成项目和资源，这条线可继续接到育儿工具化、家族工程和代际崩塌。"
+        "title": "新钱",
+        "note": "EP047 把徐波的做法归到新钱靠数量延续家族，和老钱靠制度筛选继承人对照。"
       }
     ],
     "episodes": [
       {
         "id": "EP047",
-        "note": "这期借徐波“百子团”相关报道讨论代孕、财富、技术和孩子工具化。"
+        "note": "徐波在美国靠代孕批量生孩子，交给保姆带，新钱用数量堆后代。"
       }
     ]
   },
