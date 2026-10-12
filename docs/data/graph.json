@@ -3,7 +3,7 @@
     "title": "颖响力知识图谱",
     "subtitle": "节目、概念、模型、人物、主题之间的可视化连接网络",
     "nodeCount": 764,
-    "linkCount": 2837,
+    "linkCount": 2835,
     "typeCounts": {
       "model": 83,
       "live": 49,
@@ -620,17 +620,6 @@
       "degree": 21
     },
     {
-      "id": "live:LIVE048",
-      "key": "LIVE048",
-      "label": "LIVE048",
-      "fullLabel": "LIVE048 · 供养比失衡的真相：虫子长得比树还大！苏联卫星上天，为什么最后倒在一块面包上？",
-      "type": "live",
-      "route": "lives/LIVE048",
-      "summary": "一台挖掘机体制内十万、体制外四十万，倒一手就赚三十万，谁还去琢磨创新。",
-      "status": "published",
-      "degree": 21
-    },
-    {
       "id": "theme:dollar-system-and-gray-trade",
       "key": "dollar-system-and-gray-trade",
       "label": "美元体系与灰色贸易",
@@ -693,6 +682,17 @@
       "type": "live",
       "route": "lives/LIVE043",
       "summary": "军官私下把士兵叫作灰色的牲口，死一个再从家里抓下一个。",
+      "status": "published",
+      "degree": 20
+    },
+    {
+      "id": "live:LIVE048",
+      "key": "LIVE048",
+      "label": "LIVE048",
+      "fullLabel": "LIVE048 · 供养比失衡的真相：虫子长得比树还大！苏联卫星上天，为什么最后倒在一块面包上？",
+      "type": "live",
+      "route": "lives/LIVE048",
+      "summary": "一台挖掘机体制内十万、体制外四十万，倒一手就赚三十万，谁还去琢磨创新。",
       "status": "published",
       "degree": 20
     },
@@ -2435,17 +2435,6 @@
       "degree": 9
     },
     {
-      "id": "episode:EP212",
-      "key": "EP212",
-      "label": "EP212",
-      "fullLabel": "EP212 · 新加坡高官涨薪64%！高薪养廉的真相，为什么没国家能抄新加坡的作业？",
-      "type": "episode",
-      "route": "episodes/EP212",
-      "summary": "新加坡政治职务集体涨薪，初级部长的薪资基准涨了 64%，总理年薪到 360 万新元，是美国总统法定年薪的七倍多。这是 2012 年那次减薪之后头一回调整。基准取收入最高的一千名公民年收入中位数再打六折，由独立委员会按公式算出，谁都查得到。黄循财说未来五年把多出来的钱全部捐掉，薪水定的是岗位的价，捐不捐是个人的事。高薪养廉在新加坡跑得通，靠的是社会差距小、公职队伍小，再加一套独立的反贪机构。换成国土大、贫富差距大的国家，连高薪该对标谁都定不下来。",
-      "status": "curated",
-      "degree": 9
-    },
-    {
       "id": "episode:EP216",
       "key": "EP216",
       "label": "EP216",
@@ -3007,6 +2996,17 @@
       "degree": 8
     },
     {
+      "id": "episode:EP212",
+      "key": "EP212",
+      "label": "EP212",
+      "fullLabel": "EP212 · 新加坡高官涨薪64%！高薪养廉的真相，为什么没国家能抄新加坡的作业？",
+      "type": "episode",
+      "route": "episodes/EP212",
+      "summary": "新加坡政治职务集体涨薪，初级部长的薪资基准涨了 64%，总理年薪到 360 万新元，是美国总统法定年薪的七倍多。这是 2012 年那次减薪之后头一回调整。基准取收入最高的一千名公民年收入中位数再打六折，由独立委员会按公式算出，谁都查得到。黄循财说未来五年把多出来的钱全部捐掉，薪水定的是岗位的价，捐不捐是个人的事。高薪养廉在新加坡跑得通，靠的是社会差距小、公职队伍小，再加一套独立的反贪机构。换成国土大、贫富差距大的国家，连高薪该对标谁都定不下来。",
+      "status": "curated",
+      "degree": 8
+    },
+    {
       "id": "episode:EP215",
       "key": "EP215",
       "label": "EP215",
@@ -3190,17 +3190,6 @@
       "type": "model",
       "route": "models/human-machine-differentiation",
       "summary": "机器越来越擅长标准化任务，人的价值要转到机器难以复制的判断和创造上。",
-      "status": null,
-      "degree": 7
-    },
-    {
-      "id": "concept:identity-over-wealth",
-      "key": "identity-over-wealth",
-      "label": "身份压倒财富",
-      "fullLabel": "身份压倒财富",
-      "type": "concept",
-      "route": "concepts/identity-over-wealth",
-      "summary": "身份压倒财富指稳定身份、编制和圈层位置开始比账面收入更能决定社会评价和生活安全感。",
       "status": null,
       "degree": 7
     },
@@ -3718,6 +3707,17 @@
       "type": "model",
       "route": "models/authority-misinfluence",
       "summary": "一个人说了算的组织里，下面的人先猜老板要什么，坏消息到不了上面，错了也没人拦。",
+      "status": null,
+      "degree": 6
+    },
+    {
+      "id": "concept:identity-over-wealth",
+      "key": "identity-over-wealth",
+      "label": "身份压倒财富",
+      "fullLabel": "身份压倒财富",
+      "type": "concept",
+      "route": "concepts/identity-over-wealth",
+      "summary": "身份压倒财富指稳定身份、编制和圈层位置开始比账面收入更能决定社会评价和生活安全感。",
       "status": null,
       "degree": 6
     },
@@ -5048,7 +5048,7 @@
       "fullLabel": "同质竞争",
       "type": "concept",
       "route": "concepts/homogeneous-competition",
-      "summary": "同一行政区或同一市场里，两个功能重叠的主体争夺同一批资源时，胜负往往由谁获得体制支持决定，而不是谁质量更好。",
+      "summary": "几家方向重叠的主体挤在同一块地方、同一个市场，抢同一批客户和资源。拼到最后拼的是价格和谁背后有人撑腰，质量好的一方不一定赢。",
       "status": null,
       "degree": 4
     },
@@ -5488,7 +5488,7 @@
       "fullLabel": "分散投资对冲",
       "type": "concept",
       "route": "concepts/investment-diversification-hedge",
-      "summary": "把投资、产能和合作关系分散到多个国家或对象，是在不确定环境里分担风险，而不是和谁脱钩。",
+      "summary": "把投资、产能和合作关系分到几个国家或几个对象上，在看不清的环境里分担风险。这跟脱钩是两回事。",
       "status": null,
       "degree": 3
     },
@@ -6709,7 +6709,7 @@
       "fullLabel": "人本契约",
       "type": "concept",
       "route": "concepts/human-centered-contract",
-      "summary": "国家信用不仅来自实力，也来自关键时刻愿不愿为具体个体生命履约。",
+      "summary": "国家和公民之间有一份双向契约。个体替国家冒险，国家出事时不把他当成可以丢掉的成本。国家信用一部分就攒在这份契约有没有兑现上。",
       "status": null,
       "degree": 2
     },
@@ -6798,17 +6798,6 @@
       "type": "concept",
       "route": "concepts/sample-production-gap",
       "summary": "送检、展示和量产版本一旦分裂，合格证据就不再能代表消费者真正拿到的产品。",
-      "status": null,
-      "degree": 2
-    },
-    {
-      "id": "concept:leadership-pipeline",
-      "key": "leadership-pipeline",
-      "label": "梯队接班制",
-      "fullLabel": "梯队接班制",
-      "type": "concept",
-      "route": "concepts/leadership-pipeline",
-      "summary": "把接班做成一套按代际排期的梯队制度，而不是让在位者临时指定继任者。",
       "status": null,
       "degree": 2
     },
@@ -7953,6 +7942,17 @@
       "type": "person",
       "route": "people/to-lam",
       "summary": "苏林是越共中央总书记兼越南国家主席，公安系统出身。EP117 借他把三个最高职位收进一人手里，讲越南从集体领导回到强人统治的风险。",
+      "status": null,
+      "degree": 1
+    },
+    {
+      "id": "concept:leadership-pipeline",
+      "key": "leadership-pipeline",
+      "label": "梯队接班制",
+      "fullLabel": "梯队接班制",
+      "type": "concept",
+      "route": "concepts/leadership-pipeline",
+      "summary": "接班按代际排成一套梯队制度，提前定好时间表，不靠在位者临时指定继任者。",
       "status": null,
       "degree": 1
     },
@@ -15947,11 +15947,6 @@
     },
     {
       "source": "episode:EP212",
-      "target": "concept:leadership-pipeline",
-      "kind": "episode-concept"
-    },
-    {
-      "source": "episode:EP212",
       "target": "model:institutional-fit",
       "kind": "episode-model"
     },
@@ -22408,11 +22403,6 @@
     {
       "source": "live:LIVE048",
       "target": "concept:pan-institutional-middle-class",
-      "kind": "live-concept"
-    },
-    {
-      "source": "live:LIVE048",
-      "target": "concept:identity-over-wealth",
       "kind": "live-concept"
     },
     {
