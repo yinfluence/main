@@ -3,7 +3,7 @@
     "title": "颖响力知识图谱",
     "subtitle": "节目、概念、模型、人物、主题之间的可视化连接网络",
     "nodeCount": 764,
-    "linkCount": 2810,
+    "linkCount": 2808,
     "typeCounts": {
       "model": 83,
       "live": 49,
@@ -389,17 +389,6 @@
       "degree": 24
     },
     {
-      "id": "live:LIVE034",
-      "key": "LIVE034",
-      "label": "LIVE034",
-      "fullLabel": "LIVE034 · 一千倍市盈率的机器人和拿到龙标的那部片，凭什么是同一件事？",
-      "type": "live",
-      "route": "lives/LIVE034",
-      "summary": "五年只花几万块做出来的一坨东西，也拿到了龙标。",
-      "status": "curated",
-      "degree": 24
-    },
-    {
       "id": "live:LIVE035",
       "key": "LIVE035",
       "label": "LIVE035",
@@ -495,6 +484,17 @@
       "type": "live",
       "route": "lives/LIVE029",
       "summary": "拿旅游签证过去看看能不能留下，九月之后可能就踩在违规那条线上。",
+      "status": "curated",
+      "degree": 23
+    },
+    {
+      "id": "live:LIVE034",
+      "key": "LIVE034",
+      "label": "LIVE034",
+      "fullLabel": "LIVE034 · 一千倍市盈率的机器人和拿到龙标的那部片，凭什么是同一件事？",
+      "type": "live",
+      "route": "lives/LIVE034",
+      "summary": "五年只花几万块做出来的一坨东西，也拿到了龙标。",
       "status": "curated",
       "degree": 23
     },
@@ -1258,17 +1258,6 @@
       "degree": 14
     },
     {
-      "id": "live:LIVE047",
-      "key": "LIVE047",
-      "label": "LIVE047",
-      "fullLabel": "LIVE047 · 一批F-35零件中转香港后去向不明！全球物流的中转站，还靠得住吗？",
-      "type": "live",
-      "route": "lives/LIVE047",
-      "summary": "座舱盖和武器舱门上全是隐身涂层，交给 UPS 后没有直飞美国，先绕去了韩国。",
-      "status": "published",
-      "degree": 14
-    },
-    {
       "id": "model:wall-and-gray-trade-crackdown",
       "key": "wall-and-gray-trade-crackdown",
       "label": "建墙与打灰模型",
@@ -1408,6 +1397,17 @@
       "type": "live",
       "route": "lives/LIVE046",
       "summary": "三道线一划，一线城市的房子全被排除，剩下的是想回老家买房的打工人。",
+      "status": "published",
+      "degree": 13
+    },
+    {
+      "id": "live:LIVE047",
+      "key": "LIVE047",
+      "label": "LIVE047",
+      "fullLabel": "LIVE047 · 一批F-35零件中转香港后去向不明！全球物流的中转站，还靠得住吗？",
+      "type": "live",
+      "route": "lives/LIVE047",
+      "summary": "座舱盖和武器舱门上全是隐身涂层，交给 UPS 后没有直飞美国，先绕去了韩国。",
       "status": "published",
       "degree": 13
     },
@@ -6302,7 +6302,7 @@
       "fullLabel": "关系合伙人化",
       "type": "concept",
       "route": "concepts/partnership-shift",
-      "summary": "亲密关系在中年、资产和责任变化后，常会从浪漫叙事转向合伙治理。",
+      "summary": "夫妻过到一定年头，关系会从情爱慢慢挪成合伙人。利益绑在一起，谁出钱、谁出力，决定了家里谁说了算。",
       "status": null,
       "degree": 2
     },
@@ -6500,7 +6500,7 @@
       "fullLabel": "两极摇摆困局",
       "type": "concept",
       "route": "concepts/pendulum-trap",
-      "summary": "社会在不公的自由与低效的监管之间来回摆动，两头挨打的都是普通人；破局靠的不是选边，而是一条生命尊严优先的红线。",
+      "summary": "社会在不公的自由和低效的监管之间来回摆，两头挨打的都是普通人。EP186 给的出路是一条红线，人的生命和尊严排在效率前面。",
       "status": null,
       "degree": 2
     },
@@ -6578,28 +6578,6 @@
       "type": "concept",
       "route": "concepts/platform-double-standard",
       "summary": "平台执行规则时若按账号商业价值区别处理，治理就会变成选择性守门。",
-      "status": null,
-      "degree": 2
-    },
-    {
-      "id": "concept:pre-emptive-screening",
-      "key": "pre-emptive-screening",
-      "label": "前置筛选",
-      "fullLabel": "前置筛选",
-      "type": "concept",
-      "route": "concepts/pre-emptive-screening",
-      "summary": "故意设一道门槛或者故意留一个破绽，让不想要的人在接触之前自己走掉，省下后面全部的说服成本。",
-      "status": null,
-      "degree": 2
-    },
-    {
-      "id": "concept:panic-premium",
-      "key": "panic-premium",
-      "label": "情绪溢价",
-      "fullLabel": "情绪溢价",
-      "type": "concept",
-      "route": "concepts/panic-premium",
-      "summary": "价格被恐慌、跟风和错过焦虑推高时，超出基本面的部分就是情绪溢价。",
       "status": null,
       "degree": 2
     },
@@ -7814,13 +7792,24 @@
       "degree": 1
     },
     {
+      "id": "concept:pre-emptive-screening",
+      "key": "pre-emptive-screening",
+      "label": "前置筛选",
+      "fullLabel": "前置筛选",
+      "type": "concept",
+      "route": "concepts/pre-emptive-screening",
+      "summary": "故意设一道门槛或者故意留一个破绽，让不想要的人在接触之前自己走掉，省下后面全部的说服成本。",
+      "status": null,
+      "degree": 1
+    },
+    {
       "id": "concept:prepaid-levy",
       "key": "prepaid-levy",
       "label": "前置征缴",
       "fullLabel": "前置征缴",
       "type": "concept",
       "route": "concepts/prepaid-levy",
-      "summary": "前置征缴指税费按设立时约定的标准先足额收走，不等实际收益兑现，多退少补是以后的事。",
+      "summary": "前置征缴指税费按设立时定下的标准先足额收走，不等实际收益兑现，以后多退少补。这是 EP197 对港险和离岸信托征税的读法。",
       "status": null,
       "degree": 1
     },
@@ -7832,6 +7821,17 @@
       "type": "concept",
       "route": "concepts/youth-mobilization",
       "summary": "年轻选民从缺席变成集中出场，长期执政者赖以维持的年龄结构就会塌掉；决定选举的往往不是谁在台上站台，是谁肯出门。",
+      "status": null,
+      "degree": 1
+    },
+    {
+      "id": "concept:panic-premium",
+      "key": "panic-premium",
+      "label": "情绪溢价",
+      "fullLabel": "情绪溢价",
+      "type": "concept",
+      "route": "concepts/panic-premium",
+      "summary": "价格被热点故事和跟风情绪推高，超出真实需求的那一部分，就是情绪溢价。",
       "status": null,
       "degree": 1
     },
@@ -8359,7 +8359,7 @@
       "fullLabel": "准货币托市",
       "type": "concept",
       "route": "concepts/quasi-currency-support",
-      "summary": "现金不足时，系统用票据、凭证或替代物支撑交易和价格，形成准货币托市。",
+      "summary": "地方手里没现金时，拿房票这类票据顶替现金投放出去，撑住交易和账面价格，这就是准货币托市。",
       "status": null,
       "degree": 1
     },
@@ -20822,11 +20822,6 @@
     },
     {
       "source": "live:LIVE034",
-      "target": "concept:panic-premium",
-      "kind": "live-concept"
-    },
-    {
-      "source": "live:LIVE034",
       "target": "concept:authority-internalization",
       "kind": "live-concept"
     },
@@ -22238,11 +22233,6 @@
     {
       "source": "live:LIVE047",
       "target": "concept:refuge-premium",
-      "kind": "live-concept"
-    },
-    {
-      "source": "live:LIVE047",
-      "target": "concept:pre-emptive-screening",
       "kind": "live-concept"
     },
     {
