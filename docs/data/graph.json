@@ -3,7 +3,7 @@
     "title": "颖响力知识图谱",
     "subtitle": "节目、概念、模型、人物、主题之间的可视化连接网络",
     "nodeCount": 764,
-    "linkCount": 2813,
+    "linkCount": 2810,
     "typeCounts": {
       "model": 83,
       "live": 49,
@@ -70,17 +70,6 @@
       "degree": 34
     },
     {
-      "id": "live:LIVE026",
-      "key": "LIVE026",
-      "label": "LIVE026",
-      "fullLabel": "LIVE026 · 阿根廷当年也是「遥遥领先」的制造业强国，百年之后为何还要靠米莱来补课？",
-      "type": "live",
-      "route": "lives/LIVE026",
-      "summary": "同样给欧洲供货，按直播的讲法，美国熬了二十年等来新政，阿根廷选了发补贴。",
-      "status": "curated",
-      "degree": 33
-    },
-    {
       "id": "live:LIVE037",
       "key": "LIVE037",
       "label": "LIVE037",
@@ -90,6 +79,17 @@
       "summary": "据说上海浦东有个机构，专门把跑到境外的人民币收回来。",
       "status": "published",
       "degree": 33
+    },
+    {
+      "id": "live:LIVE026",
+      "key": "LIVE026",
+      "label": "LIVE026",
+      "fullLabel": "LIVE026 · 阿根廷当年也是「遥遥领先」的制造业强国，百年之后为何还要靠米莱来补课？",
+      "type": "live",
+      "route": "lives/LIVE026",
+      "summary": "同样给欧洲供货，按直播的讲法，美国熬了二十年等来新政，阿根廷选了发补贴。",
+      "status": "curated",
+      "degree": 32
     },
     {
       "id": "concept:hidden-debt",
@@ -334,17 +334,6 @@
       "degree": 25
     },
     {
-      "id": "live:LIVE039",
-      "key": "LIVE039",
-      "label": "LIVE039",
-      "fullLabel": "LIVE039 · 十七个油田交给美国企业投资，两千亿美元直接进国库，这条线去年十二月就在走",
-      "type": "live",
-      "route": "lives/LIVE039",
-      "summary": "据说以前答应给古巴的油凑不齐，要在外面买了补上，一桶倒贴十二美元。",
-      "status": "published",
-      "degree": 25
-    },
-    {
       "id": "theme:great-power-competition-and-strategic-time",
       "key": "great-power-competition-and-strategic-time",
       "label": "大国竞争与战略时间",
@@ -433,6 +422,17 @@
       "degree": 24
     },
     {
+      "id": "live:LIVE039",
+      "key": "LIVE039",
+      "label": "LIVE039",
+      "fullLabel": "LIVE039 · 十七个油田交给美国企业投资，两千亿美元直接进国库，这条线去年十二月就在走",
+      "type": "live",
+      "route": "lives/LIVE039",
+      "summary": "据说以前答应给古巴的油凑不齐，要在外面买了补上，一桶倒贴十二美元。",
+      "status": "published",
+      "degree": 24
+    },
+    {
       "id": "live:LIVE040",
       "key": "LIVE040",
       "label": "LIVE040",
@@ -451,17 +451,6 @@
       "type": "live",
       "route": "lives/LIVE044",
       "summary": "南京按分摊的地来算，一套高层公寓落到地面上只有零点六平米。",
-      "status": "published",
-      "degree": 24
-    },
-    {
-      "id": "live:LIVE045",
-      "key": "LIVE045",
-      "label": "LIVE045",
-      "fullLabel": "LIVE045 · 格陵兰没变成美国的地，却拿到了一票否决权！北极航线通往欧洲的口子被谁堵上了？",
-      "type": "live",
-      "route": "lives/LIVE045",
-      "summary": "二战时一艘提尔皮茨号泊在挪威北部，盟国往苏联运货的船队就不敢放开走。",
       "status": "published",
       "degree": 24
     },
@@ -517,6 +506,17 @@
       "type": "live",
       "route": "lives/LIVE038",
       "summary": "按直播里的推演，七八家机构各掏三十亿去稳三百，叠在一起成了一千。",
+      "status": "published",
+      "degree": 23
+    },
+    {
+      "id": "live:LIVE045",
+      "key": "LIVE045",
+      "label": "LIVE045",
+      "fullLabel": "LIVE045 · 格陵兰没变成美国的地，却拿到了一票否决权！北极航线通往欧洲的口子被谁堵上了？",
+      "type": "live",
+      "route": "lives/LIVE045",
+      "summary": "二战时一艘提尔皮茨号泊在挪威北部，盟国往苏联运货的船队就不敢放开走。",
       "status": "published",
       "degree": 23
     },
@@ -3222,7 +3222,7 @@
       "fullLabel": "中产蓄水池",
       "type": "concept",
       "route": "concepts/middle-class-reservoir",
-      "summary": "中产财富在好年景蓄水、缓冲社会矛盾，在系统缺水时被反向抽回补给主河道——节目认为这是全球共性，不是某一国的问题。",
+      "summary": "中产的财富在好年景蓄水、缓冲社会矛盾，到系统缺水时被反过来抽回去补主河道，EP185 说这是全球的共性，哪一国都一样。",
       "status": null,
       "degree": 7
     },
@@ -4345,17 +4345,6 @@
       "type": "concept",
       "route": "concepts/strategic-depth-inversion",
       "summary": "长航程无人系统让传统纵深从缓冲优势变成固定资产暴露和防护成本。",
-      "status": null,
-      "degree": 5
-    },
-    {
-      "id": "concept:institutional-software-transfer",
-      "key": "institutional-software-transfer",
-      "label": "制度软件移植",
-      "fullLabel": "制度软件移植",
-      "type": "concept",
-      "route": "concepts/institutional-software-transfer",
-      "summary": "把治理体系拆成硬件与软件两层：土地、规划、基建可以整体搬运，管理制度背后的人的意识和行政逻辑却难以跨体制移植。",
       "status": null,
       "degree": 5
     },
@@ -5636,17 +5625,6 @@
       "degree": 3
     },
     {
-      "id": "concept:internal-migration",
-      "key": "internal-migration",
-      "label": "内移民",
-      "fullLabel": "内移民",
-      "type": "concept",
-      "route": "concepts/internal-migration",
-      "summary": "不发生地理迁移，而是从主流劳动、消费、身份和关系规则中退出。",
-      "status": null,
-      "degree": 3
-    },
-    {
       "id": "theme:youth-withdrawal-and-lying-flat",
       "key": "youth-withdrawal-and-lying-flat",
       "label": "年轻人退出与躺平",
@@ -5988,6 +5966,17 @@
       "degree": 3
     },
     {
+      "id": "concept:institutional-software-transfer",
+      "key": "institutional-software-transfer",
+      "label": "制度软件移植",
+      "fullLabel": "制度软件移植",
+      "type": "concept",
+      "route": "concepts/institutional-software-transfer",
+      "summary": "把治理体系拆成硬件和软件两层看。土地、规划、基建可以整体搬过去，管理制度背后人的意识和行政逻辑，很难跨体制移植。",
+      "status": null,
+      "degree": 3
+    },
+    {
       "id": "theme:smart-products-and-ownership-boundaries",
       "key": "smart-products-and-ownership-boundaries",
       "label": "智能产品与所有权边界",
@@ -6005,7 +5994,7 @@
       "fullLabel": "中等收入陷阱",
       "type": "concept",
       "route": "concepts/middle-income-trap",
-      "summary": "一个经济体长期卡在中等收入区间：低端优势已经用完，高端跃迁又被制度或人才短板锁死，上不去也掉不下来。",
+      "summary": "一个经济体长期卡在中等收入区间。低端的优势用完了，往高端跳又被制度或人才短板锁死，上不去，也掉不下来。",
       "status": null,
       "degree": 3
     },
@@ -6523,6 +6512,17 @@
       "type": "concept",
       "route": "concepts/rooting-in-place",
       "summary": "一个人的根不在祖先生活过的故土，而在对自己好、能真正生活下去的地方。",
+      "status": null,
+      "degree": 2
+    },
+    {
+      "id": "concept:internal-migration",
+      "key": "internal-migration",
+      "label": "内移民",
+      "fullLabel": "内移民",
+      "type": "concept",
+      "route": "concepts/internal-migration",
+      "summary": "人不挪地方，从主流的劳动、消费、身份和关系规则里退出来。",
       "status": null,
       "degree": 2
     },
@@ -7215,7 +7215,7 @@
       "fullLabel": "多元立国",
       "type": "concept",
       "route": "concepts/multiethnic-nation-building",
-      "summary": "多元立国指新加坡建国时放弃建华人国家、选择各族同为“新加坡人”的多元化路线，以此换取团结与发展。",
+      "summary": "多元立国指新加坡建国时不建华人国家，让各族同为新加坡人，靠这条路换来团结和发展。",
       "status": null,
       "degree": 1
     },
@@ -7974,7 +7974,7 @@
       "fullLabel": "土地循环住房",
       "type": "concept",
       "route": "concepts/land-recycling-housing",
-      "summary": "土地循环住房指在土地稀缺的城市国家里，用有限租约和更新机制让住房资源跨代流动，而不是永久沉淀给先到的一代。",
+      "summary": "土地循环住房指土地稀缺的城市国家用有限年期的租约，让住房在几代人之间流动，不让先到的一代永久占住。",
       "status": null,
       "degree": 1
     },
@@ -8227,7 +8227,7 @@
       "fullLabel": "语言工具化",
       "type": "concept",
       "route": "concepts/language-toolification",
-      "summary": "语言越来越被当作职业技能、商业通道和现实收益工具，而不只是身份和情感归属。",
+      "summary": "语言越来越被当作职业技能、商业通道和挣钱的工具，身份和情感归属退到后面。",
       "status": null,
       "degree": 1
     },
@@ -19797,11 +19797,6 @@
     },
     {
       "source": "live:LIVE026",
-      "target": "concept:internal-migration",
-      "kind": "live-concept"
-    },
-    {
-      "source": "live:LIVE026",
       "target": "model:aspiration-compounding",
       "kind": "live-model"
     },
@@ -21457,11 +21452,6 @@
     },
     {
       "source": "live:LIVE039",
-      "target": "concept:institutional-software-transfer",
-      "kind": "live-concept"
-    },
-    {
-      "source": "live:LIVE039",
       "target": "concept:great-small-power-leveling",
       "kind": "live-concept"
     },
@@ -22103,11 +22093,6 @@
     {
       "source": "live:LIVE045",
       "target": "concept:outsourced-discernment",
-      "kind": "live-concept"
-    },
-    {
-      "source": "live:LIVE045",
-      "target": "concept:institutional-software-transfer",
       "kind": "live-concept"
     },
     {
