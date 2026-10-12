@@ -22,7 +22,8 @@
     "money-time-price"
   ],
   "models": [
-    "strategic-timing"
+    "strategic-timing",
+    "non-monetary-legacy"
   ],
   "relatedEpisodes": [
     "EP069",

@@ -3,7 +3,7 @@
     "title": "颖响力知识图谱",
     "subtitle": "节目、概念、模型、人物、主题之间的可视化连接网络",
     "nodeCount": 764,
-    "linkCount": 2861,
+    "linkCount": 2850,
     "typeCounts": {
       "model": 83,
       "live": 49,
@@ -378,17 +378,6 @@
       "degree": 25
     },
     {
-      "id": "live:LIVE032",
-      "key": "LIVE032",
-      "label": "LIVE032",
-      "fullLabel": "LIVE032 · 北方大城市楼市又放开，可买了房你也只是等同于京爷，等同于就是不是",
-      "type": "live",
-      "route": "lives/LIVE032",
-      "summary": "三百万的房子降五万十万就有人买，现在得降五十万八十万才走得掉。",
-      "status": "curated",
-      "degree": 25
-    },
-    {
       "id": "live:LIVE036",
       "key": "LIVE036",
       "label": "LIVE036",
@@ -440,6 +429,17 @@
       "type": "live",
       "route": "lives/LIVE024",
       "summary": "当年好像是抖音，只肯出三千万美元，还要控股权。",
+      "status": "curated",
+      "degree": 24
+    },
+    {
+      "id": "live:LIVE032",
+      "key": "LIVE032",
+      "label": "LIVE032",
+      "fullLabel": "LIVE032 · 北方大城市楼市又放开，可买了房你也只是等同于京爷，等同于就是不是",
+      "type": "live",
+      "route": "lives/LIVE032",
+      "summary": "三百万的房子降五万十万就有人买，现在得降五十万八十万才走得掉。",
       "status": "curated",
       "degree": 24
     },
@@ -1225,17 +1225,6 @@
       "degree": 14
     },
     {
-      "id": "episode:EP129",
-      "key": "EP129",
-      "label": "EP129",
-      "fullLabel": "EP129 · 华谊破产、爱奇艺没落，100万审批红线撕开的真相：我们正在从观众，变成垃圾场里的淘金者。",
-      "type": "episode",
-      "route": "episodes/EP129",
-      "summary": "华谊兄弟被申请破产，爱奇艺从长视频霸主跌下来，乱投资、会员不续费这些解释都太表面。根子在合规成本的落差。2024 年起微短剧按投资分层审核，一百万以上的重点剧目跟长剧、电影一样要报备、审查、拿证，少则半年一年，多则几年。三十万以下的交给平台自审，有了 AI 工具，四十八小时就能做完一部。两道门高差太大，大象怎么学也跳不好街舞。短剧靠的是失控逻辑，让一亿人一起画，总有一幅蒙娜丽莎，挑画的活落到了观众身上。审核想当保姆，反把观众赶进了垃圾场，选择自由了，审美却在往下掉。",
-      "status": "curated",
-      "degree": 14
-    },
-    {
       "id": "episode:EP170",
       "key": "EP170",
       "label": "EP170",
@@ -1321,6 +1310,17 @@
       "route": "themes/state-business-entanglement",
       "summary": "讨论企业如何依赖地方政府、国资平台或关系结构续命，以及这种绑定如何反过来改写企业目标。",
       "status": null,
+      "degree": 13
+    },
+    {
+      "id": "episode:EP129",
+      "key": "EP129",
+      "label": "EP129",
+      "fullLabel": "EP129 · 华谊破产、爱奇艺没落，100万审批红线撕开的真相：我们正在从观众，变成垃圾场里的淘金者。",
+      "type": "episode",
+      "route": "episodes/EP129",
+      "summary": "华谊兄弟被申请破产，爱奇艺从长视频霸主跌下来，乱投资、会员不续费这些解释都太表面。根子在合规成本的落差。2024 年起微短剧按投资分层审核，一百万以上的重点剧目跟长剧、电影一样要报备、审查、拿证，少则半年一年，多则几年。三十万以下的交给平台自审，有了 AI 工具，四十八小时就能做完一部。两道门高差太大，大象怎么学也跳不好街舞。短剧靠的是失控逻辑，让一亿人一起画，总有一幅蒙娜丽莎，挑画的活落到了观众身上。审核想当保姆，反把观众赶进了垃圾场，选择自由了，审美却在往下掉。",
+      "status": "curated",
       "degree": 13
     },
     {
@@ -1529,17 +1529,6 @@
       "type": "episode",
       "route": "episodes/EP049",
       "summary": "Anthropic 把一台自动贩卖机交给 AI 经营。记者聊了一百四十句，就让它免费送货。公司加了一个 AI 老板监督，一份伪造的 PDF 又让两个 AI 吵到崩溃，接着免费送。往 AI 里砸的硬件、人员和资本，能不能换回配得上的应用价值，成了更大的问题。\n\n毛病有两个。AI 太好骗，约百万分之一点六的污染数据就能改掉模型的判断。记忆又太短，只能一层层叠老板，叠出冗余。电车困境该追问的，是那辆车为什么停不下来。冷战时里根提出星球大战计划，美国那列车撞墙前能散开，苏联的车一路开进峡谷，先垮的是经济。",
-      "status": "curated",
-      "degree": 12
-    },
-    {
-      "id": "episode:EP076",
-      "key": "EP076",
-      "label": "EP076",
-      "fullLabel": "EP076 · 今天的黄金白银，无论涨跌对散户来说都是陷阱。",
-      "type": "episode",
-      "route": "episodes/EP076",
-      "summary": "铜条那期之后有人追问黄金白银能不能赚钱。从现在开始，绝大多数人怎么做都赔。真正有信用的是纽约贵金属商品交易所，香港的黄金市场已属二级。散户碰得到的水贝料商、私营 App 和实物渠道，都是三四级的私盘。盘主对不对冲全看贪婪，不对冲又扛不住，平台一消失，用户的钱也跟着没了。大赌场和山姆超市反而都在控制贪婪。喊你一起玩的人多半已经重仓在先，你押上的却是全部身家。真正的高手一上来砸进一半资产，其余时间拿好现金，等下一次机会。",
       "status": "curated",
       "degree": 12
     },
@@ -1797,6 +1786,17 @@
       "degree": 11
     },
     {
+      "id": "episode:EP076",
+      "key": "EP076",
+      "label": "EP076",
+      "fullLabel": "EP076 · 今天的黄金白银，无论涨跌对散户来说都是陷阱。",
+      "type": "episode",
+      "route": "episodes/EP076",
+      "summary": "铜条那期之后有人追问黄金白银能不能赚钱。从现在开始，绝大多数人怎么做都赔。真正有信用的是纽约贵金属商品交易所，香港的黄金市场已属二级。散户碰得到的水贝料商、私营 App 和实物渠道，都是三四级的私盘。盘主对不对冲全看贪婪，不对冲又扛不住，平台一消失，用户的钱也跟着没了。大赌场和山姆超市反而都在控制贪婪。喊你一起玩的人多半已经重仓在先，你押上的却是全部身家。真正的高手一上来砸进一半资产，其余时间拿好现金，等下一次机会。",
+      "status": "curated",
+      "degree": 11
+    },
+    {
       "id": "episode:EP088",
       "key": "EP088",
       "label": "EP088",
@@ -1902,7 +1902,7 @@
       "fullLabel": "跟随者失效",
       "type": "model",
       "route": "models/follower-advantage-collapse",
-      "summary": "增量时代跟着别人走最划算，进入存量博弈之后，同一批跟随者从红利分享者变成成本承担者。",
+      "summary": "增量时代跟着别人走最赚钱，进入存量博弈后，同一批跟随者从吃红利的人变成摊成本的人。",
       "status": null,
       "degree": 10
     },
@@ -1951,17 +1951,6 @@
       "degree": 10
     },
     {
-      "id": "episode:EP105",
-      "key": "EP105",
-      "label": "EP105",
-      "fullLabel": "EP105 · 为什么不做一个“正常”的财经博主。如果你厌倦了追涨杀跌，不如静下心一看。",
-      "type": "episode",
-      "route": "episodes/EP105",
-      "summary": "评论区有人问，为什么不老老实实做个财经博主，那样赚钱容易得多。天天讲涨跌的博主做的是情绪价值，给的是钱，给不了财富。博主并不笨，时代进了囚徒困境，连三个月都看不清，没人再听三年的事。财经内容的价值在周期、战略和进出时点。看出来之后还得拿得住，未来三年现金就是你的权力。龙虾这波热点里，第一拨和第三拨都能赚，夹在中间跟风的第二拨最难。判断力要靠读哲学和文学去懂人性。推荐的书有凯文凯利的《失控》，还有一部写三代人穿过两次大战的三部曲。想留给孙辈的，该是家风和思维。",
-      "status": "curated",
-      "degree": 10
-    },
-    {
       "id": "episode:EP114",
       "key": "EP114",
       "label": "EP114",
@@ -2002,17 +1991,6 @@
       "type": "episode",
       "route": "episodes/EP164",
       "summary": "中文自媒体先骂新加坡经济完蛋、组屋崩盘，沦为坡县。骂了多年它也没垮，又改口说它被印度人占领，变成印加坡。两套叙事换汤不换药，根子都是羡慕嫉妒恨。羡慕它人均 GDP 快到十万美元、组屋让国民基本都有房，嫉妒它是以华人为主、跑得最好的国家，恨它独立自主不认朝贡叙事。\n\n新加坡的成功恰恰来自李光耀选择多元立国，而非建华人国家。它还实打实帮过中国搞苏州工业园区。战狼自媒体连帮过自己的友邦都咬，咬到寒心，终会招致反噬。",
-      "status": "curated",
-      "degree": 10
-    },
-    {
-      "id": "episode:EP173",
-      "key": "EP173",
-      "label": "EP173",
-      "fullLabel": "EP173 · 《给阿嬷的情书》是统战电影吗？新加坡热映是\"破防\"还是破例？",
-      "type": "episode",
-      "route": "episodes/EP173",
-      "summary": "中国潮汕片《给阿嬷的情书》在新加坡热映，据说起初只准映八场，又加八场仍然场场火爆，最后破例再加映五十场。一些华文媒体叫它统战片。新加坡的华语政策并没有失守，这次是破例。硬拦只会把观众推去别的平台，当局选了堵不如疏，让市场去消化。电影引出的真问题是根在哪里。按祖先算，人类都来自非洲，根该落在对自己好、能活下去的地方，李显龙也说过要落地生根。在韶关客家环境里长大的那个女孩把潮汕话奉为文化，狂热里藏着对母系客家文化的抵触，精神弑母还没完成。电影确实带统战色彩，摘掉这层滤镜，它仍是一部可看的好电影。",
       "status": "curated",
       "degree": 10
     },
@@ -2215,28 +2193,6 @@
       "degree": 9
     },
     {
-      "id": "episode:EP005",
-      "key": "EP005",
-      "label": "EP005",
-      "fullLabel": "EP005 · 户晨风，张雪峰被封禁的底层逻辑是什么？有什么区别？",
-      "type": "episode",
-      "route": "episodes/EP005",
-      "summary": "户晨风和张雪峰都被封了，封的方式却不一样，户晨风拿到的是永久封禁。常说的制造阶级对立、劝年轻人躺平，都没说到他被封的原因。他用直播把苹果人和安卓人放进同一个画面，普通年轻人看见了原来看不见的东西，和自己一样的人靠着背后的力量，过上了他们这辈子享受不到的生活。这群年轻人平时不激进，一旦被同一种不满聚起来，就是社会最提防的两类人之一。他找到的通道像当年鲁迅的小说，也像三体里的破壁人，把信息茧房打破了。以后也许还会有更多破壁人出现。",
-      "status": "curated",
-      "degree": 9
-    },
-    {
-      "id": "episode:EP006",
-      "key": "EP006",
-      "label": "EP006",
-      "fullLabel": "EP006 · 张雪峰被封背后真相，张彪子与户子被封结果有什么区别？",
-      "type": "episode",
-      "route": "episodes/EP006",
-      "summary": "户晨风和张雪峰都被封。户晨风是某些人的对手，被永封。张雪峰是某些人养的马仔，只是暂封，将来还得放出来。他像《西游记》陈家庄的灵感大王，一条观音莲花池里养大的金鱼，离上面很远，却听得到上面的逻辑，就拿预测换供奉。陈家庄四百多户，每家被要走孩子的机率约二百分之一，风调雨顺却年年都有，村民愿意赌。家长找他选专业，付出的小，买的是孩子的未来。他出事在自大，提前替上面预测决定，像杨修。上面留着这条小鱼，是因为地方需要，没有它们，地方就被破壁人占了。",
-      "status": "curated",
-      "degree": 9
-    },
-    {
       "id": "episode:EP007",
       "key": "EP007",
       "label": "EP007",
@@ -2380,6 +2336,17 @@
       "degree": 9
     },
     {
+      "id": "episode:EP105",
+      "key": "EP105",
+      "label": "EP105",
+      "fullLabel": "EP105 · 为什么不做一个“正常”的财经博主。如果你厌倦了追涨杀跌，不如静下心一看。",
+      "type": "episode",
+      "route": "episodes/EP105",
+      "summary": "评论区有人问，为什么不老老实实做个财经博主，那样赚钱容易得多。天天讲涨跌的博主做的是情绪价值，给的是钱，给不了财富。博主并不笨，时代进了囚徒困境，连三个月都看不清，没人再听三年的事。财经内容的价值在周期、战略和进出时点。看出来之后还得拿得住，未来三年现金就是你的权力。龙虾这波热点里，第一拨和第三拨都能赚，夹在中间跟风的第二拨最难。判断力要靠读哲学和文学去懂人性。推荐的书有凯文凯利的《失控》，还有一部写三代人穿过两次大战的三部曲。想留给孙辈的，该是家风和思维。",
+      "status": "curated",
+      "degree": 9
+    },
+    {
       "id": "episode:EP107",
       "key": "EP107",
       "label": "EP107",
@@ -2457,6 +2424,17 @@
       "degree": 9
     },
     {
+      "id": "episode:EP173",
+      "key": "EP173",
+      "label": "EP173",
+      "fullLabel": "EP173 · 《给阿嬷的情书》是统战电影吗？新加坡热映是\"破防\"还是破例？",
+      "type": "episode",
+      "route": "episodes/EP173",
+      "summary": "中国潮汕片《给阿嬷的情书》在新加坡热映，据说起初只准映八场，又加八场仍然场场火爆，最后破例再加映五十场。一些华文媒体叫它统战片。新加坡的华语政策并没有失守，这次是破例。硬拦只会把观众推去别的平台，当局选了堵不如疏，让市场去消化。电影引出的真问题是根在哪里。按祖先算，人类都来自非洲，根该落在对自己好、能活下去的地方，李显龙也说过要落地生根。在韶关客家环境里长大的那个女孩把潮汕话奉为文化，狂热里藏着对母系客家文化的抵触，精神弑母还没完成。电影确实带统战色彩，摘掉这层滤镜，它仍是一部可看的好电影。",
+      "status": "curated",
+      "degree": 9
+    },
+    {
       "id": "episode:EP193",
       "key": "EP193",
       "label": "EP193",
@@ -2523,17 +2501,6 @@
       "degree": 8
     },
     {
-      "id": "model:discipline-failure-loop",
-      "key": "discipline-failure-loop",
-      "label": "惩戒失效循环模型",
-      "fullLabel": "惩戒失效循环模型",
-      "type": "model",
-      "route": "models/discipline-failure-loop",
-      "summary": "违规成本过低时，市场会把规则破坏重新包装成交易机会，反过来奖励下一次违规。",
-      "status": null,
-      "degree": 8
-    },
-    {
       "id": "theme:big-government-and-incentive-reversal",
       "key": "big-government-and-incentive-reversal",
       "label": "大政府与激励反转",
@@ -2573,7 +2540,7 @@
       "fullLabel": "个体化三阶段模型",
       "type": "model",
       "route": "models/individuation-three-stage",
-      "summary": "个体化三阶段模型把成长理解为依次消化亲情、权威和自我，而非一次性觉醒。",
+      "summary": "成长要依次过三关，消化亲情，消化权威，再面对自己，一次觉醒过不完。",
       "status": null,
       "degree": 8
     },
@@ -2732,6 +2699,17 @@
       "degree": 8
     },
     {
+      "id": "episode:EP005",
+      "key": "EP005",
+      "label": "EP005",
+      "fullLabel": "EP005 · 户晨风，张雪峰被封禁的底层逻辑是什么？有什么区别？",
+      "type": "episode",
+      "route": "episodes/EP005",
+      "summary": "户晨风和张雪峰都被封了，封的方式却不一样，户晨风拿到的是永久封禁。常说的制造阶级对立、劝年轻人躺平，都没说到他被封的原因。他用直播把苹果人和安卓人放进同一个画面，普通年轻人看见了原来看不见的东西，和自己一样的人靠着背后的力量，过上了他们这辈子享受不到的生活。这群年轻人平时不激进，一旦被同一种不满聚起来，就是社会最提防的两类人之一。他找到的通道像当年鲁迅的小说，也像三体里的破壁人，把信息茧房打破了。以后也许还会有更多破壁人出现。",
+      "status": "curated",
+      "degree": 8
+    },
+    {
       "id": "episode:EP008",
       "key": "EP008",
       "label": "EP008",
@@ -2750,17 +2728,6 @@
       "type": "episode",
       "route": "episodes/EP018",
       "summary": "张雪峰解封复播，开始改口说文科也是社会需要的人才。改口不代表说对了，他一直在讲今天缺什么，正好说中家长心里的担心。人的感官一秒收进几十亿比特信息，大脑只处理十比特，做判断靠的是感性，勇敢和仁慈都算不出来，文科离这种判断更近。AI 先替代的是程序员、工程师这些靠计算吃饭的活，语言和艺术反倒难被取代。电力、计算机、金融都热过，等学生毕业又都过剩了。选专业该看五到十年以后，看孩子自己想干什么，蛋糕往往在没人争的地方。",
-      "status": "curated",
-      "degree": 8
-    },
-    {
-      "id": "episode:EP032",
-      "key": "EP032",
-      "label": "EP032",
-      "fullLabel": "EP032 · 峰哥全网禁关，互联网三大理论会消失吗？全新视角拆解民间三论。",
-      "type": "episode",
-      "route": "episodes/EP032",
-      "summary": "峰哥亡命天涯又一次被全网禁关，由此拆解被合称民间三论的三套说法。力工 All-in 偏右偏保守，是小农意识的现代版本，美国阿米什人走的是同一条路，靠宗教和禁欲把财富一代代藏进土地。放到中国，配偶和孩子都可能不认，最大的 bug 是攒到一定程度会碰上统治阶级。安卓人苹果人理论偏中性，核心不是讲道理是让人看见，把牛马和富人的作息折叠进同一个画面。性压抑理论偏左，加那个性字只为传得开，说的其实是生活、思想、教育和经济一起压出来的火气。三者破坏力排序，力工最弱，性压抑最强，因为它背后是反抗。",
       "status": "curated",
       "degree": 8
     },
@@ -3112,7 +3079,7 @@
       "fullLabel": "财富权力再生产",
       "type": "model",
       "route": "models/wealth-power-reproduction",
-      "summary": "财富权力再生产解释财富如何借婚姻、生育、身份和关系重新转化为下一代权力。",
+      "summary": "财富不会自己延续，要借生育、婚姻、文凭和关系重新包装，才能变成下一代的身份和权力。",
       "status": null,
       "degree": 7
     },
@@ -3255,7 +3222,7 @@
       "fullLabel": "人机差异化模型",
       "type": "model",
       "route": "models/human-machine-differentiation",
-      "summary": "当机器越来越擅长标准化任务时，人类价值必须转向不可轻易复制的判断与创造。",
+      "summary": "机器越来越擅长标准化任务，人的价值要转到机器难以复制的判断和创造上。",
       "status": null,
       "degree": 7
     },
@@ -3370,6 +3337,17 @@
       "degree": 7
     },
     {
+      "id": "episode:EP006",
+      "key": "EP006",
+      "label": "EP006",
+      "fullLabel": "EP006 · 张雪峰被封背后真相，张彪子与户子被封结果有什么区别？",
+      "type": "episode",
+      "route": "episodes/EP006",
+      "summary": "户晨风和张雪峰都被封。户晨风是某些人的对手，被永封。张雪峰是某些人养的马仔，只是暂封，将来还得放出来。他像《西游记》陈家庄的灵感大王，一条观音莲花池里养大的金鱼，离上面很远，却听得到上面的逻辑，就拿预测换供奉。陈家庄四百多户，每家被要走孩子的机率约二百分之一，风调雨顺却年年都有，村民愿意赌。家长找他选专业，付出的小，买的是孩子的未来。他出事在自大，提前替上面预测决定，像杨修。上面留着这条小鱼，是因为地方需要，没有它们，地方就被破壁人占了。",
+      "status": "curated",
+      "degree": 7
+    },
+    {
       "id": "episode:EP009",
       "key": "EP009",
       "label": "EP009",
@@ -3469,6 +3447,17 @@
       "degree": 7
     },
     {
+      "id": "episode:EP032",
+      "key": "EP032",
+      "label": "EP032",
+      "fullLabel": "EP032 · 峰哥全网禁关，互联网三大理论会消失吗？全新视角拆解民间三论。",
+      "type": "episode",
+      "route": "episodes/EP032",
+      "summary": "峰哥亡命天涯又一次被全网禁关，由此拆解被合称民间三论的三套说法。力工 All-in 偏右偏保守，是小农意识的现代版本，美国阿米什人走的是同一条路，靠宗教和禁欲把财富一代代藏进土地。放到中国，配偶和孩子都可能不认，最大的 bug 是攒到一定程度会碰上统治阶级。安卓人苹果人理论偏中性，核心不是讲道理是让人看见，把牛马和富人的作息折叠进同一个画面。性压抑理论偏左，加那个性字只为传得开，说的其实是生活、思想、教育和经济一起压出来的火气。三者破坏力排序，力工最弱，性压抑最强，因为它背后是反抗。",
+      "status": "curated",
+      "degree": 7
+    },
+    {
       "id": "episode:EP046",
       "key": "EP046",
       "label": "EP046",
@@ -3509,17 +3498,6 @@
       "type": "episode",
       "route": "episodes/EP094",
       "summary": "养龙虾突然成了热点，有人为它癫狂，有人为装不上焦虑。这只龙虾是 OpenClaw，更像一个 AI 操作系统，拿到最高权限就能跨软件替你干活。它也是吞算力、烧 token 的巨兽，一天可能花掉几十到上百美元。资本砸了多年的算力没人用、没人买，龙虾正好把这笔账盘活。腾讯现场免费帮人装，阿里也上了一键部署，图的是后面的云服务和数据池。盛宴属于资本、大厂和本来就懂行的极客。跟风的人交出了钱、时间和隐私，还没尝到虾味，就先成了龙虾的饲料。",
-      "status": "curated",
-      "degree": 7
-    },
-    {
-      "id": "episode:EP099",
-      "key": "EP099",
-      "label": "EP099",
-      "fullLabel": "EP099 · 抓与放，我们可能已经错过了那个时间窗口，或者那个窗口从未出现。",
-      "type": "episode",
-      "route": "episodes/EP099",
-      "summary": "3 月 13 号国务院常务会议提出，要制定全国统一的地方财政补贴负面清单，地方政府不能再随便发补贴、搞税收返还。很多人鼓掌，说这是终结内卷的好政策。可地方早就不只会修路盖楼拼税收了，现在拿一亿财政做基金就能撬几百亿项目，也能用补贴绑销售，把估值乘几十倍再拿回一部分。地方由此成了企业的隐形合伙人，企业出事就得接盘。电车里剩下的大厂跟多个地方绑在一起，泡泡一破，可能就是下一个恒大。清单收走的是用财政点火的启动权。真正的放是让地方自负盈亏，可存量债务这么大，这个窗口可能已经错过。",
       "status": "curated",
       "degree": 7
     },
@@ -3585,31 +3563,9 @@
       "fullLabel": "KPI造假均衡",
       "type": "model",
       "route": "models/kpi-fraud-equilibrium",
-      "summary": "KPI造假均衡解释当达标收益高于真实反馈、造假成本低于合规成本时，整个系统会奖励看起来达标。",
+      "summary": "达标的好处高于说实话，造假的代价低于合规，同行又都在做，整个系统就会奖励看起来达标的人。",
       "status": null,
       "degree": 7
-    },
-    {
-      "id": "model:safety-valve-governance",
-      "key": "safety-valve-governance",
-      "label": "安全阀治理模型",
-      "fullLabel": "安全阀治理模型",
-      "type": "model",
-      "route": "models/safety-valve-governance",
-      "summary": "安全阀治理模型解释体系会容纳分流焦虑的中间人，并在其越位时进行收束。",
-      "status": null,
-      "degree": 6
-    },
-    {
-      "id": "model:opaque-withdrawal-governance",
-      "key": "opaque-withdrawal-governance",
-      "label": "不可读退出治理模型",
-      "fullLabel": "不可读退出治理模型",
-      "type": "model",
-      "route": "models/opaque-withdrawal-governance",
-      "summary": "当个体通过低参与、低反馈和关系绝缘退出主流系统时，治理系统会失去预判对象。",
-      "status": null,
-      "degree": 6
     },
     {
       "id": "model:property-defined-rule-domain",
@@ -3618,7 +3574,18 @@
       "fullLabel": "产权定规则",
       "type": "model",
       "route": "models/property-defined-rule-domain",
-      "summary": "说的是：一个空间里谁有权定规则、规则的合法范围在哪里、不接受规则的正确退出路径，都由这个空间的产权归属决定。",
+      "summary": "一个空间里谁有权定规则、规则管到哪、不接受时该怎么退出，看这个空间归谁。",
+      "status": null,
+      "degree": 6
+    },
+    {
+      "id": "model:discipline-failure-loop",
+      "key": "discipline-failure-loop",
+      "label": "惩戒失效循环模型",
+      "fullLabel": "惩戒失效循环模型",
+      "type": "model",
+      "route": "models/discipline-failure-loop",
+      "summary": "违规付出的代价太低，破坏规则就成了可以反复用的办法，市场甚至反过来奖励下一次违规。",
       "status": null,
       "degree": 6
     },
@@ -4107,6 +4074,17 @@
       "degree": 6
     },
     {
+      "id": "episode:EP099",
+      "key": "EP099",
+      "label": "EP099",
+      "fullLabel": "EP099 · 抓与放，我们可能已经错过了那个时间窗口，或者那个窗口从未出现。",
+      "type": "episode",
+      "route": "episodes/EP099",
+      "summary": "3 月 13 号国务院常务会议提出，要制定全国统一的地方财政补贴负面清单，地方政府不能再随便发补贴、搞税收返还。很多人鼓掌，说这是终结内卷的好政策。可地方早就不只会修路盖楼拼税收了，现在拿一亿财政做基金就能撬几百亿项目，也能用补贴绑销售，把估值乘几十倍再拿回一部分。地方由此成了企业的隐形合伙人，企业出事就得接盘。电车里剩下的大厂跟多个地方绑在一起，泡泡一破，可能就是下一个恒大。清单收走的是用财政点火的启动权。真正的放是让地方自负盈亏，可存量债务这么大，这个窗口可能已经错过。",
+      "status": "curated",
+      "degree": 6
+    },
+    {
       "id": "episode:EP100",
       "key": "EP100",
       "label": "EP100",
@@ -4127,6 +4105,17 @@
       "summary": "阿尔忒弥斯 2 号送 4 名宇航员绕月 10 天，不登月，要刷新载人飞行最远纪录。直播画面的复古色调让人想起阿波罗。美国走 NASA 加 SpaceX 的军民商双轮驱动，像一个能解体的火车头。遇到悬崖，人可以各自带着技术下车，把军工转成民用。苏联举国体制起步快，火车头却坚硬不可控。美国的动力来自个人喜爱和逐利，苏联靠集体意志和螺丝钉式的服从。据说苏联为赶庆典强发过带着问题的飞船，中国的大型商业火箭也刚失败。失败不可怕，怕的是对待失败的态度和能动性的缺失。再叠上三分之二魔咒，美苏争霸里大约已经写着这轮竞赛的结局。",
       "status": "curated",
       "degree": 6
+    },
+    {
+      "id": "model:safety-valve-governance",
+      "key": "safety-valve-governance",
+      "label": "安全阀治理模型",
+      "fullLabel": "安全阀治理模型",
+      "type": "model",
+      "route": "models/safety-valve-governance",
+      "summary": "体系会留下分流焦虑的中间人和出口，越位了就收住。出口留得太少，压力会挑别的事往外冒。",
+      "status": null,
+      "degree": 5
     },
     {
       "id": "theme:bullshit-politics-and-historical-narratives",
@@ -4223,7 +4212,7 @@
       "fullLabel": "集中控制反噬",
       "type": "model",
       "route": "models/centralized-control-backfire",
-      "summary": "集中控制把监管便利和低成本做出来，也会把失效点集中到同一个中心节点上。",
+      "summary": "把控制权收到中心，换来便宜、好管、能远程锁死，也把所有失效点收到了同一处。",
       "status": null,
       "degree": 5
     },
@@ -4234,7 +4223,7 @@
       "fullLabel": "继承治理模型",
       "type": "model",
       "route": "models/succession-governance",
-      "summary": "企业交班真正难的，不是把头衔交出去，而是把旧账、旧利益和旧工具提前制度化处理掉。",
+      "summary": "企业交班要提前把旧账、旧利益和旧工具处理成规则，光交头衔交不稳。",
       "status": null,
       "degree": 5
     },
@@ -4334,17 +4323,6 @@
       "type": "concept",
       "route": "concepts/data-fetishism",
       "summary": "把数据、表格、术语和科学帽子当成真理本身，只要有数字有来源就信。",
-      "status": null,
-      "degree": 5
-    },
-    {
-      "id": "model:exit-liquidation-waterfall",
-      "key": "exit-liquidation-waterfall",
-      "label": "退出清算瀑布",
-      "fullLabel": "退出清算瀑布",
-      "type": "model",
-      "route": "models/exit-liquidation-waterfall",
-      "summary": "产业项目一旦崩塌，价值会迅速收缩到土地、壳和残余设备，并按优先级把损失一层层向下压。",
       "status": null,
       "degree": 5
     },
@@ -4690,17 +4668,6 @@
       "degree": 5
     },
     {
-      "id": "episode:EP112",
-      "key": "EP112",
-      "label": "EP112",
-      "fullLabel": "EP112 · 茅台是披着白酒外衣的「微型央行」！3000亿到万亿的杠杆盘，一场不能失手的拆弹行动。",
-      "type": "episode",
-      "route": "episodes/EP112",
-      "summary": "茅台上调出厂价，又把经销商从销售关系改成服务关系。这不是单纯涨价，茅台更像在发行自己的一般等价物，酒是基础货币，经销商是商业银行。茅台每年涨 10% 到 15%，银行拆借不到 5%，借钱囤酒就能套利。大部分酒没被喝掉，沉在库房里，这颗雷是三千亿还是万亿没人知道。改革跟当年格力一样是断臂求生。先涨价稳住基本盘，再把货权和定价权收回自己手里，风险留给囤酒的人。高端白酒越贵越没人喝，年轻人不愿意被这套逻辑收割，茅台要跟整个行业切割。",
-      "status": "curated",
-      "degree": 5
-    },
-    {
       "id": "episode:EP119",
       "key": "EP119",
       "label": "EP119",
@@ -4752,17 +4719,6 @@
       "type": "model",
       "route": "models/bounded-social-experiment",
       "summary": "边界化社会试验强调制度创新必须有可承受范围、反馈机制和退出标准。",
-      "status": null,
-      "degree": 4
-    },
-    {
-      "id": "model:subsidized-adoption-flywheel",
-      "key": "subsidized-adoption-flywheel",
-      "label": "补贴驱动采纳飞轮",
-      "fullLabel": "补贴驱动采纳飞轮",
-      "type": "model",
-      "route": "models/subsidized-adoption-flywheel",
-      "summary": "补贴驱动采纳飞轮解释平台如何用补贴换取使用量，再把使用量包装成增长证据。",
       "status": null,
       "degree": 4
     },
@@ -4861,7 +4817,7 @@
       "fullLabel": "非货币遗产",
       "type": "model",
       "route": "models/non-monetary-legacy",
-      "summary": "非货币遗产强调一个人留下的价值，可能是持续改变了多少人的人生轨迹。",
+      "summary": "一个人能留下的，除了钱，还有改变了多少人的命运、传下去的家风和看世界的办法。",
       "status": null,
       "degree": 4
     },
@@ -4960,7 +4916,7 @@
       "fullLabel": "继承裂缝模型",
       "type": "model",
       "route": "models/succession-fracture-model",
-      "summary": "继承裂缝模型解释强人或神权体制如何用短期接班换来长期合法性破口。",
+      "summary": "一个体制没法按公开稳定的规则交棒，就只能靠血缘、密室安排或强人集权顶上，短期稳住了，合法性留下裂缝。",
       "status": null,
       "degree": 4
     },
@@ -5015,7 +4971,7 @@
       "fullLabel": "梦想复利模型",
       "type": "model",
       "route": "models/aspiration-compounding",
-      "summary": "梦想复利模型解释长期投入到真实热爱的方向，会让能力、机会和身份彼此放大。",
+      "summary": "长期投在自己真心愿意吃苦的方向上，能力、机会和身份会互相放大。",
       "status": null,
       "degree": 4
     },
@@ -5104,6 +5060,17 @@
       "type": "concept",
       "route": "concepts/homogeneous-competition",
       "summary": "同一行政区或同一市场里，两个功能重叠的主体争夺同一批资源时，胜负往往由谁获得体制支持决定，而不是谁质量更好。",
+      "status": null,
+      "degree": 4
+    },
+    {
+      "id": "model:exit-liquidation-waterfall",
+      "key": "exit-liquidation-waterfall",
+      "label": "退出清算瀑布",
+      "fullLabel": "退出清算瀑布",
+      "type": "model",
+      "route": "models/exit-liquidation-waterfall",
+      "summary": "项目走到清算，值钱的东西缩到只剩土地和少量资产，损失按偿付顺位一层层往下压，排在最后的人几乎拿不到。",
       "status": null,
       "degree": 4
     },
@@ -5383,6 +5350,17 @@
       "degree": 4
     },
     {
+      "id": "episode:EP112",
+      "key": "EP112",
+      "label": "EP112",
+      "fullLabel": "EP112 · 茅台是披着白酒外衣的「微型央行」！3000亿到万亿的杠杆盘，一场不能失手的拆弹行动。",
+      "type": "episode",
+      "route": "episodes/EP112",
+      "summary": "茅台上调出厂价，又把经销商从销售关系改成服务关系。这不是单纯涨价，茅台更像在发行自己的一般等价物，酒是基础货币，经销商是商业银行。茅台每年涨 10% 到 15%，银行拆借不到 5%，借钱囤酒就能套利。大部分酒没被喝掉，沉在库房里，这颗雷是三千亿还是万亿没人知道。改革跟当年格力一样是断臂求生。先涨价稳住基本盘，再把货权和定价权收回自己手里，风险留给囤酒的人。高端白酒越贵越没人喝，年轻人不愿意被这套逻辑收割，茅台要跟整个行业切割。",
+      "status": "curated",
+      "degree": 4
+    },
+    {
       "id": "episode:EP115",
       "key": "EP115",
       "label": "EP115",
@@ -5456,6 +5434,17 @@
       "type": "concept",
       "route": "concepts/surface-alliance-hedging",
       "summary": "对外维持亲如兄弟的同盟姿态，实际收缩支持、两头下注，把姿态做给利益更大的第三方看。",
+      "status": null,
+      "degree": 3
+    },
+    {
+      "id": "model:subsidized-adoption-flywheel",
+      "key": "subsidized-adoption-flywheel",
+      "label": "补贴驱动采纳飞轮",
+      "fullLabel": "补贴驱动采纳飞轮",
+      "type": "model",
+      "route": "models/subsidized-adoption-flywheel",
+      "summary": "补贴驱动采纳飞轮解释平台如何用补贴换取使用量，再把使用量包装成增长证据。",
       "status": null,
       "degree": 3
     },
@@ -5576,7 +5565,7 @@
       "fullLabel": "国家信用契约模型",
       "type": "model",
       "route": "models/human-contract-model",
-      "summary": "国家信用契约模型解释国家对个体生命的兜底能力如何转化为长期制度信用。",
+      "summary": "国家为一个具体的人付出高代价，全体成员会把它读成对自己也有效的承诺，这份承诺慢慢攒成制度信用。",
       "status": null,
       "degree": 3
     },
@@ -5676,17 +5665,6 @@
       "type": "concept",
       "route": "concepts/unfinished-vehicle",
       "summary": "交付完成并不等于产品完成，品牌、售后、配件和残值体系先崩时，汽车会变成难以退出的烂尾资产。",
-      "status": null,
-      "degree": 3
-    },
-    {
-      "id": "model:profit-reservoir-cycle",
-      "key": "profit-reservoir-cycle",
-      "label": "利润蓄水池循环模型",
-      "fullLabel": "利润蓄水池循环模型",
-      "type": "model",
-      "route": "models/profit-reservoir-cycle",
-      "summary": "企业通过渠道、库存、回款和确认节奏蓄放利润，让业绩在不同周期之间重新分配。",
       "status": null,
       "degree": 3
     },
@@ -5796,7 +5774,7 @@
       "fullLabel": "平台守门结构",
       "type": "model",
       "route": "models/platform-gatekeeping",
-      "summary": "平台守门结构说明平台通过流量、规则和处罚权决定谁可见、谁能赚钱、谁被沉默。",
+      "summary": "平台握着流量、接口和处罚权，决定谁被看见、谁能赚钱、谁被封掉。",
       "status": null,
       "degree": 3
     },
@@ -6016,7 +5994,7 @@
       "fullLabel": "样机量产脱钩",
       "type": "model",
       "route": "models/prototype-production-decoupling",
-      "summary": "样机量产脱钩解释送检、展示和量产之间的标准落差如何制造真实安全风险。",
+      "summary": "送检、展示用的样品和消费者拿到的量产品不是一个东西，中间的标准落差就是风险的来源。",
       "status": null,
       "degree": 3
     },
@@ -6208,6 +6186,17 @@
       "degree": 2
     },
     {
+      "id": "model:opaque-withdrawal-governance",
+      "key": "opaque-withdrawal-governance",
+      "label": "不可读退出治理模型",
+      "fullLabel": "不可读退出治理模型",
+      "type": "model",
+      "route": "models/opaque-withdrawal-governance",
+      "summary": "当个体通过低参与、低反馈和关系绝缘退出主流系统时，治理系统会失去预判对象。",
+      "status": null,
+      "degree": 2
+    },
+    {
       "id": "theme:catering-pricing-logic",
       "key": "catering-pricing-logic",
       "label": "餐饮行业定价逻辑",
@@ -6280,7 +6269,7 @@
       "fullLabel": "第一性原理决策模型",
       "type": "model",
       "route": "models/first-principle-thinking",
-      "summary": "第一性原理决策模型解释领导者怎样把复杂局面拆回最根本约束，再集中资源去解决它。",
+      "summary": "先撇开面子和惯例，问清这个处境里最根本要解决的是什么，再把资源集中砸上去。",
       "status": null,
       "degree": 2
     },
@@ -6380,17 +6369,6 @@
       "type": "concept",
       "route": "concepts/consensus-redline",
       "summary": "一个地方真正管住行为的有两套规矩，写在纸上的法条，和写在当地人心里的共识，后者没有条文却照样有惩罚。",
-      "status": null,
-      "degree": 2
-    },
-    {
-      "id": "model:resonance-channel-model",
-      "key": "resonance-channel-model",
-      "label": "共振通道模型",
-      "fullLabel": "共振通道模型",
-      "type": "model",
-      "route": "models/resonance-channel-model",
-      "summary": "共振通道模型说明内容有效性常取决于是否找到目标人群愿意停留的表达入口。",
       "status": null,
       "degree": 2
     },
@@ -6615,6 +6593,17 @@
       "degree": 2
     },
     {
+      "id": "model:profit-reservoir-cycle",
+      "key": "profit-reservoir-cycle",
+      "label": "利润蓄水池循环模型",
+      "fullLabel": "利润蓄水池循环模型",
+      "type": "model",
+      "route": "models/profit-reservoir-cycle",
+      "summary": "企业借经销商打款、压货和回款节奏把利润蓄起来、放出去，让业绩在不同年份之间挪动。",
+      "status": null,
+      "degree": 2
+    },
+    {
       "id": "concept:pendulum-trap",
       "key": "pendulum-trap",
       "label": "两极摇摆困局",
@@ -6654,7 +6643,7 @@
       "fullLabel": "平台可读性过滤器",
       "type": "model",
       "route": "models/platform-legibility-filter",
-      "summary": "平台会优先处理那些被识别为可能外溢、聚众或失控的表达形态。",
+      "summary": "平台先处理的，是普通人一看就懂、容易聚起情绪、往外扩散的表达。",
       "status": null,
       "degree": 2
     },
@@ -7359,6 +7348,17 @@
       "type": "concept",
       "route": "concepts/wage-consumption-loop",
       "summary": "工人的工资同时是企业的成本和市场的购买力，收入涨上去，买东西的人才多起来。",
+      "status": null,
+      "degree": 1
+    },
+    {
+      "id": "model:resonance-channel-model",
+      "key": "resonance-channel-model",
+      "label": "共振通道模型",
+      "fullLabel": "共振通道模型",
+      "type": "model",
+      "route": "models/resonance-channel-model",
+      "summary": "一个说法能不能打动人，常看它有没有找到目标人群肯停下来看的那种形式。",
       "status": null,
       "degree": 1
     },
@@ -8618,11 +8618,6 @@
     {
       "source": "episode:EP006",
       "target": "model:safety-valve-governance",
-      "kind": "episode-model"
-    },
-    {
-      "source": "episode:EP006",
-      "target": "model:resonance-channel-model",
       "kind": "episode-model"
     },
     {
@@ -11222,6 +11217,11 @@
     },
     {
       "source": "episode:EP098",
+      "target": "model:first-principle-thinking",
+      "kind": "episode-model"
+    },
+    {
+      "source": "episode:EP098",
       "target": "person:donald-trump",
       "kind": "episode-person"
     },
@@ -11433,6 +11433,11 @@
     {
       "source": "episode:EP105",
       "target": "model:strategic-timing",
+      "kind": "episode-model"
+    },
+    {
+      "source": "episode:EP105",
+      "target": "model:non-monetary-legacy",
       "kind": "episode-model"
     },
     {
@@ -14278,11 +14283,6 @@
     {
       "source": "episode:EP173",
       "target": "model:narrative-instrumentalization",
-      "kind": "episode-model"
-    },
-    {
-      "source": "episode:EP173",
-      "target": "model:safety-valve-governance",
       "kind": "episode-model"
     },
     {
@@ -20672,11 +20672,6 @@
     },
     {
       "source": "live:LIVE032",
-      "target": "model:exit-liquidation-waterfall",
-      "kind": "live-model"
-    },
-    {
-      "source": "live:LIVE032",
       "target": "model:balance-sheet-maintenance",
       "kind": "live-model"
     },
@@ -22654,56 +22649,6 @@
       "source": "episode:EP043",
       "target": "concept:weapons-of-the-weak",
       "kind": "episode-concept"
-    },
-    {
-      "source": "episode:EP076",
-      "target": "model:discipline-failure-loop",
-      "kind": "episode-model"
-    },
-    {
-      "source": "episode:EP105",
-      "target": "model:discipline-failure-loop",
-      "kind": "episode-model"
-    },
-    {
-      "source": "episode:EP098",
-      "target": "model:first-principle-thinking",
-      "kind": "episode-model"
-    },
-    {
-      "source": "episode:EP105",
-      "target": "model:non-monetary-legacy",
-      "kind": "episode-model"
-    },
-    {
-      "source": "episode:EP005",
-      "target": "model:opaque-withdrawal-governance",
-      "kind": "episode-model"
-    },
-    {
-      "source": "episode:EP006",
-      "target": "model:opaque-withdrawal-governance",
-      "kind": "episode-model"
-    },
-    {
-      "source": "episode:EP032",
-      "target": "model:opaque-withdrawal-governance",
-      "kind": "episode-model"
-    },
-    {
-      "source": "episode:EP129",
-      "target": "model:opaque-withdrawal-governance",
-      "kind": "episode-model"
-    },
-    {
-      "source": "episode:EP112",
-      "target": "model:profit-reservoir-cycle",
-      "kind": "episode-model"
-    },
-    {
-      "source": "episode:EP099",
-      "target": "model:subsidized-adoption-flywheel",
-      "kind": "episode-model"
     },
     {
       "source": "episode:EP182",
