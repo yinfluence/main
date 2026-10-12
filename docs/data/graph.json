@@ -3,7 +3,7 @@
     "title": "颖响力知识图谱",
     "subtitle": "节目、概念、模型、人物、主题之间的可视化连接网络",
     "nodeCount": 764,
-    "linkCount": 2876,
+    "linkCount": 2875,
     "typeCounts": {
       "model": 83,
       "live": 49,
@@ -2078,7 +2078,7 @@
       "fullLabel": "EP198 · 从韩杰案到防御性医疗，为什么我们正在走向两败俱伤的医患困局？",
       "type": "episode",
       "route": "episodes/EP198",
-      "summary": "江西一名儿科医生凌晨接诊两岁患儿，诊断肠梗阻收进住院，交班下班后患儿病情恶化，转院途中死亡。医院赔了一百四十六万，承担八成半责任，首诊医生以医疗事故罪被判有期徒刑一年，三年内不得从医。争议不在该不该罚，在罚到哪一步。漏做一项腹股沟查体是过失，把它认成刑法里的严重不负责任，中间还少了尸检这一环，用民事的可能性推出了刑事的确定性。这条线一旦划开，医生最理性的选择就变成自保。检查越开越多，能转诊就转诊，话只说最坏的一面。患者越追责，医生越退缩，先被卡住的是基层医院和最危重的那批人。",
+      "summary": "江西一名儿科医生凌晨接诊两岁患儿，下了诊断收进住院，交班下班后患儿病情恶化，转院途中死亡。医院赔了一百四十六万，承担八成半责任，首诊医生以医疗事故罪被判有期徒刑一年，三年内不得从医。争议不在该不该罚，在罚到哪一步。漏做一项腹股沟查体是过失，把它认成刑法里的严重不负责任，中间还少了尸检这一环，用民事的可能性推出了刑事的确定性。这条线一旦划开，医生最理性的选择就变成自保。检查越开越多，能转诊就转诊，话只说最坏的一面。患者越追责，医生越退缩，先被卡住的是基层医院和最危重的那批人。",
       "status": "curated",
       "degree": 10
     },
@@ -2886,17 +2886,6 @@
       "degree": 8
     },
     {
-      "id": "episode:EP100",
-      "key": "EP100",
-      "label": "EP100",
-      "fullLabel": "EP100 · 涨20元的农村养老金，让我们看清了一些事。【100期特辑】",
-      "type": "episode",
-      "route": "episodes/EP100",
-      "summary": "有一部分农村老人的养老金今年涨了 20 块，很多人一听就笑了。20 块钱能买半斤肉，或者一盒便宜的降压药。同一阵子胖东来公布分配方案，普通一线员工每人分到价值 20 万的资产份额。交了一辈子公粮的老人，每月养老金一共不过 200 块，这 20 块连象征性的尊重都算不上。\n\n刺激政策讲究乘数效应和资本叠加，钱最后流进少数人的口袋。直接到老人手里的小钱，却会进菜市场和药店，养的是社会最底层。养老金分体制内、体制外和农民三类，差距长期固化，一种看法是，南斯拉夫和罗马尼亚动荡之前都走过这一段。",
-      "status": "curated",
-      "degree": 8
-    },
-    {
       "id": "episode:EP103",
       "key": "EP103",
       "label": "EP103",
@@ -3590,6 +3579,17 @@
       "degree": 7
     },
     {
+      "id": "episode:EP100",
+      "key": "EP100",
+      "label": "EP100",
+      "fullLabel": "EP100 · 涨20元的农村养老金，让我们看清了一些事。【100期特辑】",
+      "type": "episode",
+      "route": "episodes/EP100",
+      "summary": "有一部分农村老人的养老金今年涨了 20 块，很多人一听就笑了。20 块钱能买半斤肉，或者一盒便宜的降压药。同一阵子胖东来公布分配方案，普通一线员工每人分到价值 20 万的资产份额。交了一辈子公粮的老人，每月养老金一共不过 200 块，这 20 块连象征性的尊重都算不上。\n\n刺激政策讲究乘数效应和资本叠加，钱最后流进少数人的口袋。直接到老人手里的小钱，却会进菜市场和药店，养的是社会最底层。养老金分体制内、体制外和农民三类，差距长期固化，一种看法是，南斯拉夫和罗马尼亚动荡之前都走过这一段。",
+      "status": "curated",
+      "degree": 7
+    },
+    {
       "id": "episode:EP102",
       "key": "EP102",
       "label": "EP102",
@@ -3750,7 +3750,7 @@
       "fullLabel": "故乡想象与公民归属",
       "type": "theme",
       "route": "themes/homeland-and-civic-belonging",
-      "summary": "讨论血缘故乡、文化记忆与现代公民认同之间的边界如何被重新划分。",
+      "summary": "祖籍、血缘和现在住的地方，哪一个才算故乡。一个人可以自己选，一个国家的领导人往往选不了。",
       "status": null,
       "degree": 6
     },
@@ -3937,7 +3937,7 @@
       "fullLabel": "战争体制与接班风险",
       "type": "theme",
       "route": "themes/war-system-and-succession-risk",
-      "summary": "讨论战争国家在长期高压运转下，如何同时面临兵员枯竭、内部老化与接班断层。",
+      "summary": "俄罗斯打成长期消耗战以后，兵源、动员、前线信息和接班人四件事一起出了问题。",
       "status": null,
       "degree": 6
     },
@@ -4146,7 +4146,7 @@
       "fullLabel": "扯淡政治与历史叙事",
       "type": "theme",
       "route": "themes/bullshit-politics-and-historical-narratives",
-      "summary": "讨论对真相冷漠的话术如何进入历史解释和身份动员。",
+      "summary": "不在乎真假、只在乎立场和情绪的说法，怎样被拿来讲历史、讲国家输赢，煽起一阵情绪。",
       "status": null,
       "degree": 5
     },
@@ -4157,7 +4157,7 @@
       "fullLabel": "成长与亲情边界",
       "type": "theme",
       "route": "themes/growth-and-family-boundaries",
-      "summary": "关注个体如何在亲情、权威和自我之间逐步建立成熟边界。",
+      "summary": "一个人怎样从父母和权威里长出来，父母又怎样在孩子面前守住或者交出自己的位置。",
       "status": null,
       "degree": 5
     },
@@ -4267,7 +4267,7 @@
       "fullLabel": "价格托底与账面维稳",
       "type": "theme",
       "route": "themes/price-support-and-balance-sheet",
-      "summary": "讨论价格、估值和票面成交如何被维持住，以便先保住报表、抵押物和融资条件。",
+      "summary": "房价和地价被各种办法托在账面上，银行的抵押物不减值，报表就过得去。代价是真实价格一直出不来。",
       "status": null,
       "degree": 5
     },
@@ -4399,7 +4399,7 @@
       "fullLabel": "威权继承与国家裂缝",
       "type": "theme",
       "route": "themes/authoritarian-succession-and-state-fragility",
-      "summary": "讨论强人、神权或高压体制在接班时刻如何暴露出最深的制度脆弱点。",
+      "summary": "强人或神权体制在换人的时候，平时压住的合法性、宗教权威和族群矛盾会一起翻出来。",
       "status": null,
       "degree": 5
     },
@@ -4740,7 +4740,7 @@
       "fullLabel": "白酒金融化与餐桌秩序",
       "type": "theme",
       "route": "themes/liquor-financialization-and-table-culture",
-      "summary": "讨论白酒如何从饮用品变成金融品，又如何因为餐桌权力结构变化而失去旧的消费基础。",
+      "summary": "白酒从喝的东西变成囤的东西、调利润的东西，酒桌规矩一变，原来的消费底子也松了。",
       "status": null,
       "degree": 4
     },
@@ -4784,7 +4784,7 @@
       "fullLabel": "财经表达与长期主义",
       "type": "theme",
       "route": "themes/financial-content-and-long-termism",
-      "summary": "真正有价值的财经内容应该帮助人建立周期、战略和时机意识，而不是只卖每天的情绪波动。",
+      "summary": "天天讲涨跌的财经内容卖的是情绪，能帮人攒下财富的是看周期、等时机、看准了拿得住。",
       "status": null,
       "degree": 4
     },
@@ -4806,7 +4806,7 @@
       "fullLabel": "创伤记忆与代际循环",
       "type": "theme",
       "route": "themes/trauma-memory-and-generational-loop",
-      "summary": "讨论旧创伤如何在新的现实压力下被误读、怀旧和再次传递。",
+      "summary": "一代人受过的伤没讲清楚，下一代听到的就成了怀旧和热血，或者被记到不相干的人头上。",
       "status": null,
       "degree": 4
     },
@@ -4899,24 +4899,13 @@
       "degree": 4
     },
     {
-      "id": "theme:public-service-downgrading",
-      "key": "public-service-downgrading",
-      "label": "公共服务降标与治理后果",
-      "fullLabel": "公共服务降标与治理后果",
-      "type": "theme",
-      "route": "themes/public-service-downgrading",
-      "summary": "当财政和治理优先考虑控费，公共服务最常见的结果就是标准被整体压低。",
-      "status": null,
-      "degree": 4
-    },
-    {
       "id": "theme:charity-and-moral-capital",
       "key": "charity-and-moral-capital",
       "label": "公益、善意与商业失灵",
       "fullLabel": "公益、善意与商业失灵",
       "type": "theme",
       "route": "themes/charity-and-moral-capital",
-      "summary": "一个人即便在资本世界里不断失败，也可能在公共世界里留下真正深厚的价值。",
+      "summary": "做公益攒下的信任怎样在难处兑现，又怎样被挪去背书。公募慈善的钱，为什么到不了具体的人手里。",
       "status": null,
       "degree": 4
     },
@@ -5037,7 +5026,7 @@
       "fullLabel": "平台劳动与真实生存",
       "type": "theme",
       "route": "themes/platform-labor-and-lived-reality",
-      "summary": "关注平台型劳动如何被宣传美化，以及真实生存条件怎样被遮蔽。",
+      "summary": "外卖、网约车这类平台劳动的真实处境，以及它怎样被宣传拍成一种自由的生活方式。",
       "status": null,
       "degree": 4
     },
@@ -5202,7 +5191,7 @@
       "fullLabel": "学术官僚化与知识退化",
       "type": "theme",
       "route": "themes/academic-bureaucracy-and-knowledge-decline",
-      "summary": "讨论当高校越来越像官场时，课堂、研究和学问如何被不断挤压。",
+      "summary": "高校按头衔、帽子和行政位置分资源以后，造假和占位越来越容易，做学问的人反而上不去。",
       "status": null,
       "degree": 4
     },
@@ -5301,7 +5290,7 @@
       "fullLabel": "AI创业、资本主场与公司身份",
       "type": "theme",
       "route": "themes/ai-capital-and-company-identity",
-      "summary": "讨论 AI 创业公司如何在不同法域、资本环境与身份叙事之间重新安排自己的主场。",
+      "summary": "中国的 AI 创业公司在哪拿钱、在哪注册、最后卖给谁，决定它能不能长大。草根还有没有机会，也看这几样。",
       "status": null,
       "degree": 4
     },
@@ -5312,7 +5301,7 @@
       "fullLabel": "AI替代与人的创造性",
       "type": "theme",
       "route": "themes/ai-and-human-creativity",
-      "summary": "关注自动化扩张之后，人类该如何重新定义自己的不可替代价值。",
+      "summary": "机器和 AI 先替掉能按套路做完的活，人只能往创造、审美和筛选这些地方走。",
       "status": null,
       "degree": 4
     },
@@ -5559,6 +5548,17 @@
       "degree": 3
     },
     {
+      "id": "theme:public-service-downgrading",
+      "key": "public-service-downgrading",
+      "label": "公共服务降标与治理后果",
+      "fullLabel": "公共服务降标与治理后果",
+      "type": "theme",
+      "route": "themes/public-service-downgrading",
+      "summary": "公共医疗的水平怎样被一步步压低。有的是为了把医保的账做平，有的是追责把风险全压到了一线医生身上。",
+      "status": null,
+      "degree": 3
+    },
+    {
       "id": "concept:national-identity-hostage",
       "key": "national-identity-hostage",
       "label": "国家身份绑架",
@@ -5631,7 +5631,7 @@
       "fullLabel": "教育与AI时代错位",
       "type": "theme",
       "route": "themes/education-and-ai-misalignment",
-      "summary": "关注教育仍在训练工业时代人才，而外部世界已经被 AI 重写。",
+      "summary": "学校还在按工业时代的标准挑记得牢、算得快、守规矩的人。这些正是 AI 最先接手的本事。",
       "status": null,
       "degree": 3
     },
@@ -5664,7 +5664,7 @@
       "fullLabel": "跨学科教育与举报文化",
       "type": "theme",
       "route": "themes/cross-disciplinary-education-and-report-culture",
-      "summary": "关注大学课堂为何越来越难容纳真正有启发性的跨学科教学。",
+      "summary": "校园里举报越来越顺手。超纲的课被举报砍掉，同学的日常消费也有人盯梢取证。先退场的是敢讲的老师，还有人与人之间的信任。",
       "status": null,
       "degree": 3
     },
@@ -5785,7 +5785,7 @@
       "fullLabel": "平台流量与价格失真",
       "type": "theme",
       "route": "themes/platform-traffic-and-price-distortion",
-      "summary": "当平台把巨量流量集中到极少数节点，价格、信誉和真伪判断都会开始向流量中心倾斜。",
+      "summary": "流量集中到少数直播间和平台以后，价格不再跟着成本和品质走。平台罚谁护谁，也看谁带来流量。",
       "status": null,
       "degree": 3
     },
@@ -5807,7 +5807,7 @@
       "fullLabel": "汽车研发治理与沉默联盟",
       "type": "theme",
       "route": "themes/automotive-r-and-d-governance",
-      "summary": "讨论汽车研发体系里的送检量产落差、师徒网络、权威压制和系统性失真。",
+      "summary": "车企研发里送检和量产用两套件，师徒互保，老板拍数字倒着凑。问题一层层被包进沉默，最后由车主在路上碰到。",
       "status": null,
       "degree": 3
     },
@@ -5939,7 +5939,7 @@
       "fullLabel": "危机时代的权力重排",
       "type": "theme",
       "route": "themes/crisis-era-power-reallocation",
-      "summary": "危机不是简单让所有人一起变弱，而是重新决定谁上前台、谁退到幕后。",
+      "summary": "转型和危机期，原来站在前面的人退下来，空出的位置由谁接，接过去以后是机会还是靶子。",
       "status": null,
       "degree": 3
     },
@@ -5972,7 +5972,7 @@
       "fullLabel": "消费客群重写",
       "type": "theme",
       "route": "themes/consumer-audience-rewrite",
-      "summary": "品牌和内容生产者为了继续增长，会主动改写自己想吸引的人以及要卖给他们的身份。",
+      "summary": "品牌卖给谁，决定它说什么话、跟谁合作。老客群吃完或者变老以后，品牌要么换一批人卖，要么跟着老客人一起衰下去。",
       "status": null,
       "degree": 3
     },
@@ -6071,7 +6071,7 @@
       "fullLabel": "智能产品与所有权边界",
       "type": "theme",
       "route": "themes/smart-products-and-ownership-boundaries",
-      "summary": "讨论商品联网之后，方向盘和开关之外那层控制权归谁，买断和许可的界线被挪到了哪里。",
+      "summary": "车联了网，最高控制权就留在厂商的云端。付了全款，买到的也只是一份对方随时能收回一部分的许可。",
       "status": null,
       "degree": 3
     },
@@ -6225,7 +6225,7 @@
       "fullLabel": "餐饮行业定价逻辑",
       "type": "theme",
       "route": "themes/catering-pricing-logic",
-      "summary": "讨论餐饮价格背后到底由哪些结构因素共同决定。",
+      "summary": "一家餐厅的菜价里，除了食材和人工，还压着咨询费、品牌符号和背后资本的退出时间表。",
       "status": null,
       "degree": 2
     },
@@ -6456,7 +6456,7 @@
       "fullLabel": "海南封关与自由港现实",
       "type": "theme",
       "route": "themes/hainan-free-port-and-development-reality",
-      "summary": "讨论海南封关、自贸港想象与现实条件之间的落差，以及为什么政策口号难以自动变成结构优势。",
+      "summary": "海南封关以后会不会取代新加坡。免税省钱是真的，港口位置、制造业、金融法治这些底子短时间补不上。",
       "status": null,
       "degree": 2
     },
@@ -6522,7 +6522,7 @@
       "fullLabel": "回收生意与污染转移",
       "type": "theme",
       "route": "themes/recycling-and-pollution-transfer",
-      "summary": "聚焦所谓循环经济如何在补贴和套利驱动下，把风险从台面上的产品转移到看不见的废弃物和弱监管地区。",
+      "summary": "挂着环保名头的回收生意，拿走能卖钱的部分，剩下的毒物流到县城、农村和自家阳台上。",
       "status": null,
       "degree": 2
     },
@@ -6786,7 +6786,7 @@
       "fullLabel": "社会实验与制度弹性",
       "type": "theme",
       "route": "themes/bounded-social-experimentation",
-      "summary": "制度的韧性，不只看能否创新，也看是否允许试错、限定边界和吸收后果。",
+      "summary": "新做法先锁在一座城市里试，输了赔得起。试的时候谁学到了东西，试成了又能不能推到别处去。",
       "status": null,
       "degree": 2
     },
@@ -6907,7 +6907,7 @@
       "fullLabel": "文明叙事、权力结构与弱者处境",
       "type": "theme",
       "route": "themes/civilization-power-and-vulnerable-bodies",
-      "summary": "讨论一个社会如何对待妇女、儿童和弱者，往往比它如何讲述自己的文明更能暴露制度底色。",
+      "summary": "看一个社会的底色，要看它怎样对待妇女和孩子，出了丑事能不能一直追下去。",
       "status": null,
       "degree": 2
     },
@@ -6940,7 +6940,7 @@
       "fullLabel": "新能源技术路线与路径锁定",
       "type": "theme",
       "route": "themes/ev-tech-route",
-      "summary": "讨论新能源品牌如何通过某条技术路线起势，又如何被这条路线反过来限制。",
+      "summary": "新能源车企押哪条技术路线、按什么顺序往前走。早年押中的路线，行业一变也可能把自己锁住。",
       "status": null,
       "degree": 2
     },
@@ -6951,7 +6951,7 @@
       "fullLabel": "新钱阶层与家族幻觉",
       "type": "theme",
       "route": "themes/new-money-and-family-projection",
-      "summary": "当新钱缺少历史层次和价值边界时，最容易把财富投向夸张的家族、身份和延续想象。",
+      "summary": "中国市场上全是新钱。钱挣够以后，有人用生孩子、联姻和排场去堆一个家族，堆出来的多半撑不过几代。",
       "status": null,
       "degree": 2
     },
@@ -7897,7 +7897,7 @@
       "fullLabel": "审美产业与赛事空心化",
       "type": "theme",
       "route": "themes/beauty-industry-and-hollowed-competitions",
-      "summary": "关注选美与模特赛事在关系化、头衔化之后如何失去公信力。",
+      "summary": "选美和模特比赛的冠军越来越看不懂。程序还摆在那里，结果却跟美没了关系，连遮掩的羞耻感都不要了。",
       "status": null,
       "degree": 1
     },
@@ -9368,6 +9368,11 @@
     {
       "source": "episode:EP030",
       "target": "theme:big-government-and-incentive-reversal",
+      "kind": "episode-theme"
+    },
+    {
+      "source": "episode:EP030",
+      "target": "theme:bounded-social-experimentation",
       "kind": "episode-theme"
     },
     {
@@ -11513,6 +11518,11 @@
     {
       "source": "episode:EP106",
       "target": "theme:big-government-and-incentive-reversal",
+      "kind": "episode-theme"
+    },
+    {
+      "source": "episode:EP106",
+      "target": "theme:crisis-era-power-reallocation",
       "kind": "episode-theme"
     },
     {
@@ -22784,21 +22794,6 @@
       "source": "episode:EP078",
       "target": "person:zong-qinghou",
       "kind": "episode-person"
-    },
-    {
-      "source": "episode:EP030",
-      "target": "theme:bounded-social-experimentation",
-      "kind": "episode-theme"
-    },
-    {
-      "source": "episode:EP106",
-      "target": "theme:crisis-era-power-reallocation",
-      "kind": "episode-theme"
-    },
-    {
-      "source": "episode:EP100",
-      "target": "theme:public-service-downgrading",
-      "kind": "episode-theme"
     }
   ]
 }
