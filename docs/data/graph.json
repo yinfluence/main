@@ -3,7 +3,7 @@
     "title": "颖响力知识图谱",
     "subtitle": "节目、概念、模型、人物、主题之间的可视化连接网络",
     "nodeCount": 764,
-    "linkCount": 2891,
+    "linkCount": 2889,
     "typeCounts": {
       "model": 83,
       "live": 49,
@@ -224,17 +224,6 @@
       "degree": 27
     },
     {
-      "id": "live:LIVE034",
-      "key": "LIVE034",
-      "label": "LIVE034",
-      "fullLabel": "LIVE034 · 一千倍市盈率的机器人和拿到龙标的那部片，凭什么是同一件事？",
-      "type": "live",
-      "route": "lives/LIVE034",
-      "summary": "五年只花几万块做出来的一坨东西，也拿到了龙标。",
-      "status": "curated",
-      "degree": 27
-    },
-    {
       "id": "live:LIVE039",
       "key": "LIVE039",
       "label": "LIVE039",
@@ -323,13 +312,13 @@
       "degree": 26
     },
     {
-      "id": "live:LIVE036",
-      "key": "LIVE036",
-      "label": "LIVE036",
-      "fullLabel": "LIVE036 · 甲醛白菜、电车、过审的电影，为什么说它们是同一件事？",
+      "id": "live:LIVE034",
+      "key": "LIVE034",
+      "label": "LIVE034",
+      "fullLabel": "LIVE034 · 一千倍市盈率的机器人和拿到龙标的那部片，凭什么是同一件事？",
       "type": "live",
-      "route": "lives/LIVE036",
-      "summary": "把车上那些高精尖扒干净，剩下的跟地里的白菜没区别。",
+      "route": "lives/LIVE034",
+      "summary": "五年只花几万块做出来的一坨东西，也拿到了龙标。",
       "status": "curated",
       "degree": 26
     },
@@ -407,6 +396,17 @@
       "type": "live",
       "route": "lives/LIVE032",
       "summary": "三百万的房子降五万十万就有人买，现在得降五十万八十万才走得掉。",
+      "status": "curated",
+      "degree": 25
+    },
+    {
+      "id": "live:LIVE036",
+      "key": "LIVE036",
+      "label": "LIVE036",
+      "fullLabel": "LIVE036 · 甲醛白菜、电车、过审的电影，为什么说它们是同一件事？",
+      "type": "live",
+      "route": "lives/LIVE036",
+      "summary": "把车上那些高精尖扒干净，剩下的跟地里的白菜没区别。",
       "status": "curated",
       "degree": 25
     },
@@ -1220,7 +1220,7 @@
       "fullLabel": "EP124 · 广深地铁集体被砍！三四线城市疯狂修！中国转移支付的魔幻反噬藏不住了。",
       "type": "episode",
       "route": "episodes/EP124",
-      "summary": "广州地铁四期申报 175 公里，最终能批的大约只有 60 公里，深圳 18 号线被直接打回。最能赚钱的两座一线城市砍地铁，是因为撑着地铁的两个逻辑都没了。地产不行了，有的地铁口开出来周边一片荒凉，靠大基建拉 GDP 的钱也传不到下面。转移支付的问题藏得更深，营改增之后钱往上收得多。广州赚一块钱只留两毛五，多数省份靠拨款过日子。拨款大到能保命，后进地区就不再自己使劲，县城的中产也从小老板换成了吃财政饭的人。输血撑着虚假的繁荣，养不出有竞争力的城市。",
+      "summary": "广州地铁四期申报 175 公里，最终能批的大约只有 60 公里，深圳 18 号线被直接打回。最能赚钱的两座一线城市砍地铁，是因为撑着地铁的两个逻辑都没了。地产不行了，有的地铁口开出来周边一片荒凉，靠大基建拉 GDP 的钱也传不到下面。转移支付的问题藏得更深，营改增之后钱往上收得多。打个比方，广州赚一块钱只留两毛五，多数省份靠拨款过日子。拨款大到能保命，后进地区就不再自己使劲，县城的中产也从小老板换成了吃财政饭的人。输血撑着虚假的繁荣，养不出有竞争力的城市。",
       "status": "curated",
       "degree": 14
     },
@@ -5867,17 +5867,6 @@
       "degree": 3
     },
     {
-      "id": "concept:collective-self-domestication",
-      "key": "collective-self-domestication",
-      "label": "群体自我驯化",
-      "fullLabel": "群体自我驯化",
-      "type": "concept",
-      "route": "concepts/collective-self-domestication",
-      "summary": "一个群体靠贬低外圈、强化内部认同来确立优越地位，把成员自愿地圈进一套自我安抚的逻辑里。",
-      "status": null,
-      "degree": 3
-    },
-    {
       "id": "concept:talent-siphon",
       "key": "talent-siphon",
       "label": "人才虹吸",
@@ -7865,6 +7854,17 @@
       "type": "concept",
       "route": "concepts/youth-mobilization",
       "summary": "年轻选民从缺席变成集中出场，长期执政者赖以维持的年龄结构就会塌掉；决定选举的往往不是谁在台上站台，是谁肯出门。",
+      "status": null,
+      "degree": 1
+    },
+    {
+      "id": "concept:collective-self-domestication",
+      "key": "collective-self-domestication",
+      "label": "群体自我驯化",
+      "fullLabel": "群体自我驯化",
+      "type": "concept",
+      "route": "concepts/collective-self-domestication",
+      "summary": "一个群体靠贬低外圈、强化内部认同来确立优越地位，把成员自愿地圈进一套自我安抚的逻辑里。",
       "status": null,
       "degree": 1
     },
@@ -21012,11 +21012,6 @@
     },
     {
       "source": "live:LIVE034",
-      "target": "concept:collective-self-domestication",
-      "kind": "live-concept"
-    },
-    {
-      "source": "live:LIVE034",
       "target": "concept:organizational-silence",
       "kind": "live-concept"
     },
@@ -21228,11 +21223,6 @@
     {
       "source": "live:LIVE036",
       "target": "concept:honest-player-exit",
-      "kind": "live-concept"
-    },
-    {
-      "source": "live:LIVE036",
-      "target": "concept:collective-self-domestication",
       "kind": "live-concept"
     },
     {
