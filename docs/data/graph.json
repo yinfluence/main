@@ -3,7 +3,7 @@
     "title": "颖响力知识图谱",
     "subtitle": "节目、概念、模型、人物、主题之间的可视化连接网络",
     "nodeCount": 764,
-    "linkCount": 2833,
+    "linkCount": 2831,
     "typeCounts": {
       "model": 83,
       "live": 49,
@@ -367,17 +367,6 @@
       "degree": 25
     },
     {
-      "id": "live:LIVE029",
-      "key": "LIVE029",
-      "label": "LIVE029",
-      "fullLabel": "LIVE029 · 出国这条路只开了不到三十年，九月十五号新规执行，以后出去可能就没有回头路",
-      "type": "live",
-      "route": "lives/LIVE029",
-      "summary": "拿旅游签证过去看看能不能留下，九月之后可能就踩在违规那条线上。",
-      "status": "curated",
-      "degree": 25
-    },
-    {
       "id": "live:LIVE036",
       "key": "LIVE036",
       "label": "LIVE036",
@@ -418,6 +407,17 @@
       "type": "live",
       "route": "lives/LIVE024",
       "summary": "当年好像是抖音，只肯出三千万美元，还要控股权。",
+      "status": "curated",
+      "degree": 24
+    },
+    {
+      "id": "live:LIVE029",
+      "key": "LIVE029",
+      "label": "LIVE029",
+      "fullLabel": "LIVE029 · 出国这条路只开了不到三十年，九月十五号新规执行，以后出去可能就没有回头路",
+      "type": "live",
+      "route": "lives/LIVE029",
+      "summary": "拿旅游签证过去看看能不能留下，九月之后可能就踩在违规那条线上。",
       "status": "curated",
       "degree": 24
     },
@@ -609,17 +609,6 @@
       "degree": 21
     },
     {
-      "id": "live:LIVE041",
-      "key": "LIVE041",
-      "label": "LIVE041",
-      "fullLabel": "LIVE041 · 卢比奥飞到利马，秘鲁转身加入美洲之盾！17.8米深的钱凯港，会不会成了建墙的下一站？",
-      "type": "live",
-      "route": "lives/LIVE041",
-      "summary": "按直播里的推演，监管一进港，每样货是什么、有多少吨都得记数，低价运走矿的那条路就断了。",
-      "status": "published",
-      "degree": 21
-    },
-    {
       "id": "theme:dollar-system-and-gray-trade",
       "key": "dollar-system-and-gray-trade",
       "label": "美元体系与灰色贸易",
@@ -672,6 +661,17 @@
       "route": "lives/LIVE015",
       "summary": "跟伊朗说用钴结算，对方不知道钴是什么。说黄金，大字不识的军头也知道值钱。",
       "status": "curated",
+      "degree": 20
+    },
+    {
+      "id": "live:LIVE041",
+      "key": "LIVE041",
+      "label": "LIVE041",
+      "fullLabel": "LIVE041 · 卢比奥飞到利马，秘鲁转身加入美洲之盾！17.8米深的钱凯港，会不会成了建墙的下一站？",
+      "type": "live",
+      "route": "lives/LIVE041",
+      "summary": "按直播里的推演，监管一进港，每样货是什么、有多少吨都得记数，低价运走矿的那条路就断了。",
+      "status": "published",
       "degree": 20
     },
     {
@@ -4118,17 +4118,6 @@
       "degree": 5
     },
     {
-      "id": "concept:trauma-nostalgia",
-      "key": "trauma-nostalgia",
-      "label": "创伤式怀旧",
-      "fullLabel": "创伤式怀旧",
-      "type": "concept",
-      "route": "concepts/trauma-nostalgia",
-      "summary": "旧伤未被理解时，曾经造成伤害的年代会被重新包装成热血、激情和答案。",
-      "status": null,
-      "degree": 5
-    },
-    {
       "id": "concept:moral-capital",
       "key": "moral-capital",
       "label": "道德资本",
@@ -4399,7 +4388,7 @@
       "fullLabel": "转移支付依赖",
       "type": "concept",
       "route": "concepts/transfer-payment-dependency",
-      "summary": "转移支付依赖指地方运转越来越靠上级财政输血，而不是靠本地产业和税源形成真实闭环。",
+      "summary": "地方运转越来越靠上级拨款，本地产业和税源长不出来。",
       "status": null,
       "degree": 5
     },
@@ -4734,6 +4723,17 @@
       "degree": 4
     },
     {
+      "id": "concept:trauma-nostalgia",
+      "key": "trauma-nostalgia",
+      "label": "创伤式怀旧",
+      "fullLabel": "创伤式怀旧",
+      "type": "concept",
+      "route": "concepts/trauma-nostalgia",
+      "summary": "旧伤未被理解时，曾经造成伤害的年代会被重新包装成热血、激情和答案。",
+      "status": null,
+      "degree": 4
+    },
+    {
       "id": "concept:danwei-revival",
       "key": "danwei-revival",
       "label": "单位制回潮",
@@ -4762,7 +4762,7 @@
       "fullLabel": "对真相冷漠的话术",
       "type": "concept",
       "route": "concepts/truth-indifferent-rhetoric",
-      "summary": "话术若只追求立场效果和情绪动员，就会对真假本身变得冷漠。",
+      "summary": "说话的人不在乎真假，只在乎能不能打动人、站好队、带起情绪。",
       "status": null,
       "degree": 4
     },
@@ -4828,7 +4828,7 @@
       "fullLabel": "工资需求循环",
       "type": "concept",
       "route": "concepts/wage-demand-loop",
-      "summary": "工人的工资既是企业的成本，也是整个经济的购买力；把工资压到底，毁掉的是消费市场和经济循环本身。",
+      "summary": "工资对单个企业是成本，所有企业的工资加起来是整个市场的购买力。把工资压到底，压掉的是自己的买家。",
       "status": null,
       "degree": 4
     },
@@ -5093,17 +5093,6 @@
       "type": "concept",
       "route": "concepts/crisis-power-reallocation",
       "summary": "危机会改变谁在前台、谁承担责任、谁保留资源，从而触发权力位置的重新排序。",
-      "status": null,
-      "degree": 4
-    },
-    {
-      "id": "concept:toxic-recycling",
-      "key": "toxic-recycling",
-      "label": "污染转移式回收",
-      "fullLabel": "污染转移式回收",
-      "type": "concept",
-      "route": "concepts/toxic-recycling",
-      "summary": "回收若只追求拆解收益和补贴套利，污染就会从原行业转移到更弱的地方和人群。",
       "status": null,
       "degree": 4
     },
@@ -5774,7 +5763,7 @@
       "fullLabel": "前置抽成",
       "type": "concept",
       "route": "concepts/upfront-rent-extraction",
-      "summary": "平台或技术方在合作方见到利润之前，先按销量刚性抽走硬件款、授权费和渠道费——收益挂销量、与对方盈亏彻底脱钩。",
+      "summary": "强势合作方在对方见到利润之前，先按销量把硬件款、授权费和渠道费抽走，收益跟对方盈亏脱钩。",
       "status": null,
       "degree": 3
     },
@@ -5911,13 +5900,24 @@
       "degree": 3
     },
     {
+      "id": "concept:toxic-recycling",
+      "key": "toxic-recycling",
+      "label": "污染转移式回收",
+      "fullLabel": "污染转移式回收",
+      "type": "concept",
+      "route": "concepts/toxic-recycling",
+      "summary": "回收若只追求拆解收益和补贴套利，污染就会从原行业转移到更弱的地方和人群。",
+      "status": null,
+      "degree": 3
+    },
+    {
       "id": "concept:tainted-asset-shield",
       "key": "tainted-asset-shield",
       "label": "瑕疵资产击穿",
       "fullLabel": "瑕疵资产击穿",
       "type": "concept",
       "route": "concepts/tainted-asset-shield",
-      "summary": "资产来源若带有旧瑕疵，信托、保险和离岸结构也可能被追穿。",
+      "summary": "钱的来历带着旧瑕疵，信托、保险和离岸架构都挡不住司法往前追。",
       "status": null,
       "degree": 3
     },
@@ -7050,7 +7050,7 @@
       "fullLabel": "Token消耗闭环",
       "type": "concept",
       "route": "concepts/token-consumption-loop",
-      "summary": "平台把用户行为转化为算力消耗，再把消耗量包装成增长、需求和估值证据。",
+      "summary": "平台把用户的试用和生成变成算力消耗，再把消耗量讲成增长和估值。",
       "status": null,
       "degree": 2
     },
@@ -9688,6 +9688,11 @@
     {
       "source": "episode:EP043",
       "target": "concept:trauma-nostalgia",
+      "kind": "episode-concept"
+    },
+    {
+      "source": "episode:EP043",
+      "target": "concept:weapons-of-the-weak",
       "kind": "episode-concept"
     },
     {
@@ -20227,11 +20232,6 @@
     },
     {
       "source": "live:LIVE029",
-      "target": "concept:trauma-nostalgia",
-      "kind": "live-concept"
-    },
-    {
-      "source": "live:LIVE029",
       "target": "model:ex-post-accountability-governance",
       "kind": "live-model"
     },
@@ -21752,11 +21752,6 @@
     },
     {
       "source": "live:LIVE041",
-      "target": "concept:toxic-recycling",
-      "kind": "live-concept"
-    },
-    {
-      "source": "live:LIVE041",
       "target": "concept:rooting-in-place",
       "kind": "live-concept"
     },
@@ -22559,11 +22554,6 @@
       "source": "live:LIVE049",
       "target": "theme:dollar-system-and-gray-trade",
       "kind": "live-theme"
-    },
-    {
-      "source": "episode:EP043",
-      "target": "concept:weapons-of-the-weak",
-      "kind": "episode-concept"
     },
     {
       "source": "episode:EP182",
