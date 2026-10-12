@@ -3,7 +3,7 @@
     "title": "颖响力知识图谱",
     "subtitle": "节目、概念、模型、人物、主题之间的可视化连接网络",
     "nodeCount": 764,
-    "linkCount": 2842,
+    "linkCount": 2840,
     "typeCounts": {
       "model": 83,
       "live": 49,
@@ -1335,17 +1335,6 @@
       "degree": 13
     },
     {
-      "id": "episode:EP130",
-      "key": "EP130",
-      "label": "EP130",
-      "fullLabel": "EP130 · 马六甲“收费站”24小时闹剧：印尼的野心与新加坡、马来西亚的坚决反对！",
-      "type": "episode",
-      "route": "episodes/EP130",
-      "summary": "印尼财长在研讨会上提议学伊朗在霍尔木兹的做法，给马六甲设收费站，和新加坡、马来西亚三家分钱，不到 24 小时就被本国政府收回。新加坡和马来西亚几乎同声反对。新加坡靠停靠、加油、维修这些服务费吃饭，一收过路费，船会变少，大国也会来抢收费权。马来西亚有丹戎帕拉帕斯这些港口，一种看法是它还替伊朗和中国之间的灰色贸易当白手套，不想得罪贸易伙伴。印尼海岸线最长，却多是浅滩和红树林，建不起大港，只能出来试探。关键水道一个个设卡，全球化的红利就会变成内卷，东南亚也越来越像当年的巴尔干火药桶。",
-      "status": "curated",
-      "degree": 13
-    },
-    {
       "id": "episode:EP146",
       "key": "EP146",
       "label": "EP146",
@@ -1643,6 +1632,17 @@
       "degree": 12
     },
     {
+      "id": "episode:EP199",
+      "key": "EP199",
+      "label": "EP199",
+      "fullLabel": "EP199 · 新加坡樟宜海滩赶海风波！中国人组团爆桶遭民众抵制，真的只是个人素质问题吗？",
+      "type": "episode",
+      "route": "episodes/EP199",
+      "summary": "樟宜海滩这次赶海，十来个人是夜里退潮时下去的，一晚上装满七八桶螃蟹贝类。东西拉到牛车水的中餐馆加工，成品视频发上网。新加坡本地社群反应激烈，选区议员出面批评，帮忙加工的餐馆被刷差评。争议卡在一个事实上，樟宜海滩不是海洋保护区，捡的也不是保护物种，这群人确实没违法。可法条没写的地方还有一套规矩，写在当地人心里。潮间带在那里的头一份用处是给人看，国土就那么大，海岸线摊到人均少得可怜，禁不住十来个人搜刮一遍。把这件事说成素质差或者种族歧视，两边都没说到点上。",
+      "status": "curated",
+      "degree": 12
+    },
+    {
       "id": "episode:EP207",
       "key": "EP207",
       "label": "EP207",
@@ -1808,6 +1808,17 @@
       "degree": 11
     },
     {
+      "id": "episode:EP130",
+      "key": "EP130",
+      "label": "EP130",
+      "fullLabel": "EP130 · 马六甲“收费站”24小时闹剧：印尼的野心与新加坡、马来西亚的坚决反对！",
+      "type": "episode",
+      "route": "episodes/EP130",
+      "summary": "印尼财长在研讨会上提议学伊朗在霍尔木兹的做法，给马六甲设收费站，和新加坡、马来西亚三家分钱，不到 24 小时就被本国政府收回。新加坡和马来西亚几乎同声反对。新加坡靠停靠、加油、维修这些服务费吃饭，一收过路费，船会变少，大国也会来抢收费权。马来西亚有丹戎帕拉帕斯这些港口，一种看法是它还替伊朗和中国之间的灰色贸易当白手套，不想得罪贸易伙伴。印尼海岸线最长，却多是浅滩和红树林，建不起大港，只能出来试探。关键水道一个个设卡，全球化的红利就会变成内卷，东南亚也越来越像当年的巴尔干火药桶。",
+      "status": "curated",
+      "degree": 11
+    },
+    {
       "id": "episode:EP143",
       "key": "EP143",
       "label": "EP143",
@@ -1837,17 +1848,6 @@
       "type": "episode",
       "route": "episodes/EP186",
       "summary": "1911 年三角内衣厂大火烧死 146 人，多数是女工。逃生门被锁着，消防云梯只够到七楼。两个老板无罪释放，还从保险里多赚了上万美元。事后成立的独立调查委员会催出 60 条左右的安全法律。目击者帕金斯二十多年后成了美国首位女内阁成员，她把工时、最低工资和社保写进罗斯福新政。\n\n新政之前矿工拿起武器和私人武装开战，大萧条里还有人想拉将军搞政变，美国夹在苏联式革命和法西斯之间。新政走的是第三条路，把钱还给工人，养起国内的消费市场。这场火烧出一条红线，人命和尊严排在效率前面。今天好像又站在同一个路口。",
-      "status": "curated",
-      "degree": 11
-    },
-    {
-      "id": "episode:EP199",
-      "key": "EP199",
-      "label": "EP199",
-      "fullLabel": "EP199 · 新加坡樟宜海滩赶海风波！中国人组团爆桶遭民众抵制，真的只是个人素质问题吗？",
-      "type": "episode",
-      "route": "episodes/EP199",
-      "summary": "樟宜海滩这次赶海，十来个人是夜里退潮时下去的，一晚上装满七八桶螃蟹贝类。东西拉到牛车水的中餐馆加工，成品视频发上网。新加坡本地社群反应激烈，选区议员出面批评，帮忙加工的餐馆被刷差评。争议卡在一个事实上，樟宜海滩不是海洋保护区，捡的也不是保护物种，这群人确实没违法。可法条没写的地方还有一套规矩，写在当地人心里。潮间带在那里的头一份用处是给人看，国土就那么大，海岸线摊到人均少得可怜，禁不住十来个人搜刮一遍。把这件事说成素质差或者种族歧视，两边都没说到点上。",
       "status": "curated",
       "degree": 11
     },
@@ -2332,17 +2332,6 @@
       "type": "episode",
       "route": "episodes/EP105",
       "summary": "评论区有人问，为什么不老老实实做个财经博主，那样赚钱容易得多。天天讲涨跌的博主做的是情绪价值，给的是钱，给不了财富。博主并不笨，时代进了囚徒困境，连三个月都看不清，没人再听三年的事。财经内容的价值在周期、战略和进出时点。看出来之后还得拿得住，未来三年现金就是你的权力。龙虾这波热点里，第一拨和第三拨都能赚，夹在中间跟风的第二拨最难。判断力要靠读哲学和文学去懂人性。推荐的书有凯文凯利的《失控》，还有一部写三代人穿过两次大战的三部曲。想留给孙辈的，该是家风和思维。",
-      "status": "curated",
-      "degree": 9
-    },
-    {
-      "id": "episode:EP107",
-      "key": "EP107",
-      "label": "EP107",
-      "fullLabel": "EP107 · 未来12个月美元黄金怎么走？看懂川普的石油美元棋局，你就全明白了。",
-      "type": "episode",
-      "route": "episodes/EP107",
-      "summary": "主流都说去美元化不可逆，黄金要迎来大牛市，金价却一路走低。石油用美元结算是美元霸权的根，常说起源于 1974 年的美沙石油美元安排。过去十年冒出一个漏洞。灰色石油绕开海关统计和 SWIFT，用黄金或人民币结算。把它算进去，非美元结算早已过半。特朗普打委内瑞拉、对伊朗下手，是一套新门罗主义。让盟友出钱守墙，用很低的成本把灰色石油堵回墙内。价差一没，九成原油可能回到美元结算。未来 12 个月美元走强、黄金偏弱，前提是这套围堵真能成型。",
       "status": "curated",
       "degree": 9
     },
@@ -2886,6 +2875,17 @@
       "degree": 8
     },
     {
+      "id": "episode:EP107",
+      "key": "EP107",
+      "label": "EP107",
+      "fullLabel": "EP107 · 未来12个月美元黄金怎么走？看懂川普的石油美元棋局，你就全明白了。",
+      "type": "episode",
+      "route": "episodes/EP107",
+      "summary": "主流都说去美元化不可逆，黄金要迎来大牛市，金价却一路走低。石油用美元结算是美元霸权的根，常说起源于 1974 年的美沙石油美元安排。过去十年冒出一个漏洞。灰色石油绕开海关统计和 SWIFT，用黄金或人民币结算。把它算进去，非美元结算早已过半。特朗普打委内瑞拉、对伊朗下手，是一套新门罗主义。让盟友出钱守墙，用很低的成本把灰色石油堵回墙内。价差一没，九成原油可能回到美元结算。未来 12 个月美元走强、黄金偏弱，前提是这套围堵真能成型。",
+      "status": "curated",
+      "degree": 8
+    },
+    {
       "id": "episode:EP116",
       "key": "EP116",
       "label": "EP116",
@@ -3079,7 +3079,7 @@
       "fullLabel": "法域套利",
       "type": "concept",
       "route": "concepts/jurisdiction-arbitrage",
-      "summary": "企业通过选择更有利法域，获取融资、估值、合规和退出上的制度差价。",
+      "summary": "公司或个人把注册地、资产、融资和人放到规则对自己更有利的地方，吃两套制度之间的差价。",
       "status": null,
       "degree": 7
     },
@@ -3799,17 +3799,6 @@
       "degree": 6
     },
     {
-      "id": "concept:shadow-fleet",
-      "key": "shadow-fleet",
-      "label": "影子舰队",
-      "fullLabel": "影子舰队",
-      "type": "concept",
-      "route": "concepts/shadow-fleet",
-      "summary": "影子舰队是绕开西方保险、认证、定位和船东透明规则的平行航运网络。",
-      "status": null,
-      "degree": 6
-    },
-    {
       "id": "concept:wartime-oil-stockpiling",
       "key": "wartime-oil-stockpiling",
       "label": "战备储油",
@@ -4190,7 +4179,7 @@
       "fullLabel": "合规及格线",
       "type": "concept",
       "route": "concepts/compliance-floor",
-      "summary": "合规只是法律强制的最低底线，不等于优质；当消费者为更高品质付溢价，仅做到合规就是变相缩水。",
+      "summary": "合规是法律要的最低门槛，过了线只说明没违规，不说明东西好。把合规当成终点或卖点，品质和安全就会贴着这条线往下滑。",
       "status": null,
       "degree": 5
     },
@@ -4322,7 +4311,7 @@
       "fullLabel": "外压反噬",
       "type": "concept",
       "route": "concepts/pressure-backfire",
-      "summary": "外部施压本想压制对象，却可能反向提供动员资源、受害叙事和上位机会。",
+      "summary": "外部施压本想压住对方，按得太用力，反倒给了对方凝聚人心的材料，或者逼出一条绕开施压者的新路。",
       "status": null,
       "degree": 5
     },
@@ -4668,6 +4657,17 @@
       "degree": 5
     },
     {
+      "id": "episode:EP115",
+      "key": "EP115",
+      "label": "EP115",
+      "fullLabel": "EP115 · 花20亿救1个飞行员？我们看不懂的，从来不是美国，是两套世界规则的致命认知差。",
+      "type": "episode",
+      "route": "episodes/EP115",
+      "summary": "2026 年 4 月 3 日，一架 F-15E 在伊朗上空被击中，美军动用上百人、据说损失超过十亿美元，把失联两天的武器官救了回来。有媒体先转述伊朗媒体，说美军试图炸死自家飞行员，网上读成灭口，人救回来又改口说他握着惊天秘密，两种说法都经不起常识推敲，背后是两套不同的算账方法。一套把人、武器和战争都折成数字，这趟营救血亏。另一套把钱当工具，把国家和公民的双向契约当核心资产，这笔钱是履约金，换来全军的定心丸和对外的威慑。看不懂这场营救，多半是拿自己的规则去套别人。",
+      "status": "curated",
+      "degree": 5
+    },
+    {
       "id": "episode:EP119",
       "key": "EP119",
       "label": "EP119",
@@ -4877,6 +4877,17 @@
       "degree": 4
     },
     {
+      "id": "concept:national-identity-hostage",
+      "key": "national-identity-hostage",
+      "label": "国家身份绑架",
+      "fullLabel": "国家身份绑架",
+      "type": "concept",
+      "route": "concepts/national-identity-hostage",
+      "summary": "把个人的违规、私人冲突或一笔生意抬成国家的荣辱，拿国家身份替具体的人和事兜底。",
+      "status": null,
+      "degree": 4
+    },
+    {
       "id": "concept:child-toolification",
       "key": "child-toolification",
       "label": "孩子工具化",
@@ -4884,17 +4895,6 @@
       "type": "concept",
       "route": "concepts/child-toolification",
       "summary": "孩子被降格为家族延续、权力布局、身份展示或欲望满足的工具时，养育就失去主体性。",
-      "status": null,
-      "degree": 4
-    },
-    {
-      "id": "concept:sea-laundering",
-      "key": "sea-laundering",
-      "label": "海上洗白",
-      "fullLabel": "海上洗白",
-      "type": "concept",
-      "route": "concepts/sea-laundering",
-      "summary": "海上洗白是用静默航行、船对船转运、混油和原产地文件重写来抹掉货物来源的灰色操作。",
       "status": null,
       "degree": 4
     },
@@ -5119,17 +5119,6 @@
       "degree": 4
     },
     {
-      "id": "concept:information-cocoon-breach",
-      "key": "information-cocoon-breach",
-      "label": "信息茧房破口",
-      "fullLabel": "信息茧房破口",
-      "type": "concept",
-      "route": "concepts/information-cocoon-breach",
-      "summary": "让原本封闭的人群第一次看见自身位置、差异和现实结构的传播裂缝。",
-      "status": null,
-      "degree": 4
-    },
-    {
       "id": "concept:cult-branding",
       "key": "cult-branding",
       "label": "信众化品牌",
@@ -5169,7 +5158,7 @@
       "fullLabel": "依附式创新",
       "type": "concept",
       "route": "concepts/dependent-innovation",
-      "summary": "依附式创新指项目围绕政府、国企或强关系订单做有限改造，而不是面向真实市场独立突破。",
+      "summary": "创新附着在政府、国企订单和行政资源上，先让出资方和领导满意，只做不越界的小改造，不去真实市场里独立突破。",
       "status": null,
       "degree": 4
     },
@@ -5192,6 +5181,17 @@
       "type": "concept",
       "route": "concepts/ceremonial-formalism",
       "summary": "组织越来越靠场面、仪式和整齐感证明自己有效，真正要办成的事被挤到后面。",
+      "status": null,
+      "degree": 4
+    },
+    {
+      "id": "concept:shadow-fleet",
+      "key": "shadow-fleet",
+      "label": "影子舰队",
+      "fullLabel": "影子舰队",
+      "type": "concept",
+      "route": "concepts/shadow-fleet",
+      "summary": "影子舰队是绕开西方保险、认证、定位和船东透明规则的平行航运网络。",
       "status": null,
       "degree": 4
     },
@@ -5361,17 +5361,6 @@
       "degree": 4
     },
     {
-      "id": "episode:EP115",
-      "key": "EP115",
-      "label": "EP115",
-      "fullLabel": "EP115 · 花20亿救1个飞行员？我们看不懂的，从来不是美国，是两套世界规则的致命认知差。",
-      "type": "episode",
-      "route": "episodes/EP115",
-      "summary": "2026 年 4 月 3 日，一架 F-15E 在伊朗上空被击中，美军动用上百人、据说损失超过十亿美元，把失联两天的武器官救了回来。有媒体先转述伊朗媒体，说美军试图炸死自家飞行员，网上读成灭口，人救回来又改口说他握着惊天秘密，两种说法都经不起常识推敲，背后是两套不同的算账方法。一套把人、武器和战争都折成数字，这趟营救血亏。另一套把钱当工具，把国家和公民的双向契约当核心资产，这笔钱是履约金，换来全军的定心丸和对外的威慑。看不懂这场营救，多半是拿自己的规则去套别人。",
-      "status": "curated",
-      "degree": 4
-    },
-    {
       "id": "episode:EP147",
       "key": "EP147",
       "label": "EP147",
@@ -5411,7 +5400,7 @@
       "fullLabel": "安全注意力转移",
       "type": "concept",
       "route": "concepts/safety-attention-shift",
-      "summary": "品牌用舒适、家庭和情绪卖点吸引注意力，可能让用户忽略安全和技术底线。",
+      "summary": "车企把消费者的注意力引到看得见、好传播的卖点上，比如外形、舒适，或者一个好听的新词，看不见的结构安全就被放到了后面。",
       "status": null,
       "degree": 3
     },
@@ -5510,7 +5499,7 @@
       "fullLabel": "符号错配",
       "type": "concept",
       "route": "concepts/symbol-mismatch",
-      "summary": "品牌符号、价格带和实际体验不一致时，用户会感到叙事与产品之间的违和。",
+      "summary": "品牌符号传达的东西，和价格、产品或换了一群人之后的实际体验对不上，溢价就失去了依托。",
       "status": null,
       "degree": 3
     },
@@ -5548,17 +5537,6 @@
       "degree": 3
     },
     {
-      "id": "concept:national-identity-hostage",
-      "key": "national-identity-hostage",
-      "label": "国家身份绑架",
-      "fullLabel": "国家身份绑架",
-      "type": "concept",
-      "route": "concepts/national-identity-hostage",
-      "summary": "国家身份绑架指个体把私人冲突抬升为国家受辱，用共同体身份替个人行为兜底。",
-      "status": null,
-      "degree": 3
-    },
-    {
       "id": "model:human-contract-model",
       "key": "human-contract-model",
       "label": "国家信用契约模型",
@@ -5581,6 +5559,17 @@
       "degree": 3
     },
     {
+      "id": "concept:sea-laundering",
+      "key": "sea-laundering",
+      "label": "海上洗白",
+      "fullLabel": "海上洗白",
+      "type": "concept",
+      "route": "concepts/sea-laundering",
+      "summary": "海上洗白是用静默航行、船对船转运、混油和原产地文件重写来抹掉货物来源的灰色操作。",
+      "status": null,
+      "degree": 3
+    },
+    {
       "id": "person:hu-chenfeng",
       "key": "hu-chenfeng",
       "label": "户晨风",
@@ -5598,7 +5587,7 @@
       "fullLabel": "继承裂缝",
       "type": "concept",
       "route": "concepts/succession-fracture",
-      "summary": "权力交接一旦脱离公开规则，血缘、密室和派系承认就会把国家合法性撕开裂缝。",
+      "summary": "一个体制交棒时，职位能指定下来，合法性却不一定跟着过去，原来被强人压住的矛盾会在这时一起裂开。",
       "status": null,
       "degree": 3
     },
@@ -5962,6 +5951,17 @@
       "type": "person",
       "route": "people/xiao-hong",
       "summary": "肖弘是 AI 智能体 Manus 的创始人兼 CEO，江西吉安人。几期节目借 Manus 迁往新加坡、被 Meta 收购又被叫停，看草根创业者靠什么拿到第一笔钱、怎样兑现。",
+      "status": null,
+      "degree": 3
+    },
+    {
+      "id": "concept:information-cocoon-breach",
+      "key": "information-cocoon-breach",
+      "label": "信息茧房破口",
+      "fullLabel": "信息茧房破口",
+      "type": "concept",
+      "route": "concepts/information-cocoon-breach",
+      "summary": "一个原本被隔开的人群，借某种内容第一次看见自己和别人在资源、身份上的落差，这道裂缝就是信息茧房破口。",
       "status": null,
       "degree": 3
     },
@@ -15357,6 +15357,11 @@
     },
     {
       "source": "episode:EP199",
+      "target": "concept:national-identity-hostage",
+      "kind": "episode-concept"
+    },
+    {
+      "source": "episode:EP199",
       "target": "model:property-defined-rule-domain",
       "kind": "episode-model"
     },
@@ -21912,6 +21917,11 @@
     },
     {
       "source": "live:LIVE043",
+      "target": "episode:EP115",
+      "kind": "live-episode"
+    },
+    {
+      "source": "live:LIVE043",
       "target": "concept:strategic-depth-inversion",
       "kind": "live-concept"
     },
@@ -21928,11 +21938,6 @@
     {
       "source": "live:LIVE043",
       "target": "concept:cost-shifting",
-      "kind": "live-concept"
-    },
-    {
-      "source": "live:LIVE043",
-      "target": "concept:information-cocoon-breach",
       "kind": "live-concept"
     },
     {
@@ -22581,23 +22586,8 @@
       "kind": "episode-concept"
     },
     {
-      "source": "episode:EP130",
-      "target": "concept:sea-laundering",
-      "kind": "episode-concept"
-    },
-    {
       "source": "episode:EP142",
       "target": "concept:self-dealing-incubation-loop",
-      "kind": "episode-concept"
-    },
-    {
-      "source": "episode:EP107",
-      "target": "concept:shadow-fleet",
-      "kind": "episode-concept"
-    },
-    {
-      "source": "episode:EP130",
-      "target": "concept:shadow-fleet",
       "kind": "episode-concept"
     },
     {
