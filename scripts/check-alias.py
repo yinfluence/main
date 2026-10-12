@@ -47,7 +47,7 @@ def main():
     for p in files:
         d = json.load(io.open(p, encoding='utf-8'))
         _id = d['id']
-        hits = [t for t in d.get('tags', []) if any(a in t for a in ALIAS)]
+        hits = [t for t in d.get('tags', []) if t not in FALSE_POSITIVE and any(a in t for a in ALIAS)]
         if hits:
             tag_bad[_id] = [(t, next(ALIAS[a] for a in ALIAS if a in t)) for t in hits]
         txt = body_text(d)
