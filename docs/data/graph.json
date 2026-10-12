@@ -3,7 +3,7 @@
     "title": "颖响力知识图谱",
     "subtitle": "节目、概念、模型、人物、主题之间的可视化连接网络",
     "nodeCount": 764,
-    "linkCount": 2844,
+    "linkCount": 2842,
     "typeCounts": {
       "model": 83,
       "live": 49,
@@ -928,17 +928,6 @@
       "degree": 17
     },
     {
-      "id": "episode:EP192",
-      "key": "EP192",
-      "label": "EP192",
-      "fullLabel": "EP192 · 梁文锋说漏嘴的算力乱象！揭露中国AI行业的真实浪费与困境。",
-      "type": "episode",
-      "route": "episodes/EP192",
-      "summary": "梁文锋一场近四小时的闭门会文字稿被放了出来。他是量化出身，不屑对投资人吹牛，稿子里的话八九成可信。四张华为的卡才抵一张英伟达的卡，手里一万六千张只折合四五千张，缺口要靠别的卡补。由此推断灰色贸易这条路被坐实了，但这一步是推断，稿子没说卡从哪来。国内七八家一起做大模型，卡和算力中心的需求被一起做大，这条产业链跟当年的电车很像。现在的 AI 还没到自我学习那一步，泡沫可能就在眼前。文件偏偏在月之暗面爆火之后流出，一种猜测是投资机构借这次泄露敲打梁文锋。",
-      "status": "curated",
-      "degree": 17
-    },
-    {
       "id": "theme:real-estate-deleveraging",
       "key": "real-estate-deleveraging",
       "label": "房地产去杠杆与风险出清",
@@ -1023,6 +1012,17 @@
       "type": "episode",
       "route": "episodes/EP187",
       "summary": "赛力斯预告上半年净亏 15 到 18 亿，去年同期还赚了快 30 亿。它生产的问界交付量却涨了 10%，还霸着豪华 SUV 销冠，卖得越多亏得越多。华为和赛力斯这笔合作，从一开始就不平等。硬件采购、技术授权费、渠道服务费三笔供奉前置，单车 13 到 14 万先进华为的兜。收益挂销量，跟车企盈亏脱钩。重资产、价格战、地方对赌、出海受限的风险全压在赛力斯身上。这不是苹果代工模式，更像苏联与加盟共和国。行业刚起步就进了血海内卷，谁把制造端抱在怀里，谁就在裸泳。依附型车企是制造业民营小老板的缩影。",
+      "status": "curated",
+      "degree": 16
+    },
+    {
+      "id": "episode:EP192",
+      "key": "EP192",
+      "label": "EP192",
+      "fullLabel": "EP192 · 梁文锋说漏嘴的算力乱象！揭露中国AI行业的真实浪费与困境。",
+      "type": "episode",
+      "route": "episodes/EP192",
+      "summary": "梁文锋一场近四小时的闭门会文字稿被放了出来。他是量化出身，不屑对投资人吹牛，稿子里的话八九成可信。四张华为的卡才抵一张英伟达的卡，手里一万六千张只折合四五千张，缺口要靠别的卡补。由此推断灰色贸易这条路被坐实了，但这一步是推断，稿子没说卡从哪来。国内七八家一起做大模型，卡和算力中心的需求被一起做大，这条产业链跟当年的电车很像。现在的 AI 还没到自我学习那一步，泡沫可能就在眼前。文件偏偏在月之暗面爆火之后流出，一种猜测是投资机构借这次泄露敲打梁文锋。",
       "status": "curated",
       "degree": 16
     },
@@ -1643,17 +1643,6 @@
       "degree": 12
     },
     {
-      "id": "episode:EP201",
-      "key": "EP201",
-      "label": "EP201",
-      "fullLabel": "EP201 · 泰航拒载22中国人事件深度复盘：粉丝越界、安保失礼与饭圈生态的三层真相",
-      "type": "episode",
-      "route": "episodes/EP201",
-      "summary": "2026 年 7 月 29 日夜里，曼谷飞北京的泰航 TG674 上坐着一位国内艺人。二十二名买了普通舱票的粉丝和代拍同机跟拍，先挤进贵宾室，被劝离后守在门口。艺人先行登机时，这批人大多没验票就冲进廊桥。机组关了舱门，泰航拒载这二十二人，航班延误一小时多。人被带回候机厅后起了冲突，一名安保做出拉眼角的动作。视频传上网，话题立刻变成泰国歧视中国人。拒载和那个手势是两件事，该负责的人也不同。让它反复发生的原因在行程怎么流出来，那条链子上有经纪公司，也有机场内部人和代拍。",
-      "status": "curated",
-      "degree": 12
-    },
-    {
       "id": "episode:EP207",
       "key": "EP207",
       "label": "EP207",
@@ -1847,7 +1836,7 @@
       "fullLabel": "EP186 · 百年大火里的选择题：人命、效率与一个国家的出路……",
       "type": "episode",
       "route": "episodes/EP186",
-      "summary": "1911 年三角内衣厂大火烧死 146 名女工。逃生门被锁着，消防云梯只够到七楼。两个老板无罪释放，还从保险里多赚了上万美元。事后成立的独立调查委员会催出 60 条左右的安全法律。目击者帕金斯二十多年后成了美国首位女内阁成员，她把工时、最低工资和社保写进罗斯福新政。\n\n新政之前矿工拿起武器和私人武装开战，大萧条里还有人想拉将军搞政变，美国夹在苏联式革命和法西斯之间。新政走的是第三条路，把钱还给工人，养起国内的消费市场。这场火烧出一条红线，人命和尊严排在效率前面。今天好像又站在同一个路口。",
+      "summary": "1911 年三角内衣厂大火烧死 146 人，多数是女工。逃生门被锁着，消防云梯只够到七楼。两个老板无罪释放，还从保险里多赚了上万美元。事后成立的独立调查委员会催出 60 条左右的安全法律。目击者帕金斯二十多年后成了美国首位女内阁成员，她把工时、最低工资和社保写进罗斯福新政。\n\n新政之前矿工拿起武器和私人武装开战，大萧条里还有人想拉将军搞政变，美国夹在苏联式革命和法西斯之间。新政走的是第三条路，把钱还给工人，养起国内的消费市场。这场火烧出一条红线，人命和尊严排在效率前面。今天好像又站在同一个路口。",
       "status": "curated",
       "degree": 11
     },
@@ -1859,6 +1848,17 @@
       "type": "episode",
       "route": "episodes/EP199",
       "summary": "樟宜海滩这次赶海，十来个人是夜里退潮时下去的，一晚上装满七八桶螃蟹贝类。东西拉到牛车水的中餐馆加工，成品视频发上网。新加坡本地社群反应激烈，选区议员出面批评，帮忙加工的餐馆被刷差评。争议卡在一个事实上，樟宜海滩不是海洋保护区，捡的也不是保护物种，这群人确实没违法。可法条没写的地方还有一套规矩，写在当地人心里。潮间带在那里的头一份用处是给人看，国土就那么大，海岸线摊到人均少得可怜，禁不住十来个人搜刮一遍。把这件事说成素质差或者种族歧视，两边都没说到点上。",
+      "status": "curated",
+      "degree": 11
+    },
+    {
+      "id": "episode:EP201",
+      "key": "EP201",
+      "label": "EP201",
+      "fullLabel": "EP201 · 泰航拒载22中国人事件深度复盘：粉丝越界、安保失礼与饭圈生态的三层真相",
+      "type": "episode",
+      "route": "episodes/EP201",
+      "summary": "2026 年 7 月 29 日夜里，曼谷飞北京的泰航 TG674 上坐着一位国内艺人。二十二名买了普通舱票的粉丝和代拍同机跟拍，先挤进贵宾室，被劝离后守在门口。艺人先行登机时，这批人大多没验票就冲进廊桥。机组关了舱门，泰航拒载这二十二人，航班延误一小时多。人被带回候机厅后起了冲突，一名安保做出拉眼角的动作。视频传上网，话题立刻变成泰国歧视中国人。拒载和那个手势是两件事，该负责的人也不同。让它反复发生的原因在行程怎么流出来，那条链子上有经纪公司，也有机场内部人和代拍。",
       "status": "curated",
       "degree": 11
     },
@@ -2639,7 +2639,7 @@
       "fullLabel": "责任隔离墙",
       "type": "concept",
       "route": "concepts/liability-firewall",
-      "summary": "强势方通过不持股、不担保、不当协议主体，把债务、对赌和经营风险全部隔在墙外，自己片叶不沾身。",
+      "summary": "主导一门生意的一方不持股、不担保、不当协议主体，债务、对赌和经营风险都落在合作方名下，自己片叶不沾身。",
       "status": null,
       "degree": 8
     },
@@ -3047,17 +3047,6 @@
       "type": "concept",
       "route": "concepts/performative-innovation",
       "summary": "项目围着指标、汇报和扶持资金转，能拍出来、能验收就行，真突破排在后面。",
-      "status": null,
-      "degree": 7
-    },
-    {
-      "id": "concept:subsidy-leverage-engine",
-      "key": "subsidy-leverage-engine",
-      "label": "补贴杠杆引擎",
-      "fullLabel": "补贴杠杆引擎",
-      "type": "concept",
-      "route": "concepts/subsidy-leverage-engine",
-      "summary": "财政补贴被当成种子资金，撬动基金、估值、招商和社会资本，形成杠杆引擎。",
       "status": null,
       "degree": 7
     },
@@ -3546,6 +3535,17 @@
       "degree": 7
     },
     {
+      "id": "concept:subsidy-leverage-engine",
+      "key": "subsidy-leverage-engine",
+      "label": "补贴杠杆引擎",
+      "fullLabel": "补贴杠杆引擎",
+      "type": "concept",
+      "route": "concepts/subsidy-leverage-engine",
+      "summary": "财政补贴被当成种子资金，撬动基金、估值、招商和社会资本，形成杠杆引擎。",
+      "status": null,
+      "degree": 6
+    },
+    {
       "id": "model:property-defined-rule-domain",
       "key": "property-defined-rule-domain",
       "label": "产权定规则",
@@ -3795,17 +3795,6 @@
       "type": "theme",
       "route": "themes/performative-governance-and-ritual-display",
       "summary": "治理靠热闹、仪式和看得见的动作证明自己有效，问题本身没解决。",
-      "status": null,
-      "degree": 6
-    },
-    {
-      "id": "concept:blood-written-rules",
-      "key": "blood-written-rules",
-      "label": "血写的规则",
-      "fullLabel": "血写的规则",
-      "type": "concept",
-      "route": "concepts/blood-written-rules",
-      "summary": "习以为常的安全规范不是天生的官僚条文，而是灾难死亡换来的制度沉淀；忘掉来历，红线就会被当成可优化的成本。",
       "status": null,
       "degree": 6
     },
@@ -4157,7 +4146,7 @@
       "fullLabel": "道德资本",
       "type": "concept",
       "route": "concepts/moral-capital",
-      "summary": "长期为他人承担和创造价值，会形成一种不能即时折现却能改变公共评价的道德资本。",
+      "summary": "一件件实事攒下的信任，平时折不成现金，到了难处会回来，也会被借去给别的事背书。",
       "status": null,
       "degree": 5
     },
@@ -4190,7 +4179,7 @@
       "fullLabel": "关系保险",
       "type": "concept",
       "route": "concepts/relationship-insurance",
-      "summary": "企业不是靠产品和现金流先保命，而是先靠关系、站队和嵌入地方体系给自己买生存保险。",
+      "summary": "企业到了下行期，能不能被托住，看的是跟地方政府、国资和关键人物绑得多紧，产品和现金流排在后面。",
       "status": null,
       "degree": 5
     },
@@ -4400,6 +4389,17 @@
       "type": "concept",
       "route": "concepts/new-media-politician",
       "summary": "靠新媒体直接连接受众、绕过传统组织和选举路径崛起的新型权力人物。",
+      "status": null,
+      "degree": 5
+    },
+    {
+      "id": "concept:blood-written-rules",
+      "key": "blood-written-rules",
+      "label": "血写的规则",
+      "fullLabel": "血写的规则",
+      "type": "concept",
+      "route": "concepts/blood-written-rules",
+      "summary": "今天习以为常的安全规范，是灾难和死亡换来的。忘了来历，红线就会被当成可以优化掉的成本。",
       "status": null,
       "degree": 5
     },
@@ -4751,7 +4751,7 @@
       "fullLabel": "产权意识",
       "type": "concept",
       "route": "concepts/property-boundary-literacy",
-      "summary": "产权意识指能够清晰区分公共场所与私人商业场所，并据此判断谁有权定规则、什么时候规则可以被挑战。",
+      "summary": "进一个地方、买一件东西之前，先弄清它归谁，由此判断谁有权定规矩、规矩什么时候可以挑战。",
       "status": null,
       "degree": 4
     },
@@ -4806,7 +4806,7 @@
       "fullLabel": "法律灰区",
       "type": "concept",
       "route": "concepts/legal-grey-zone",
-      "summary": "事实、责任和伤害都不够清晰，却必须被社会和制度处理的边界地带。",
+      "summary": "事情让人不舒服，事实和责任又分不清，制度还得给个说法的那块地方。",
       "status": null,
       "degree": 4
     },
@@ -4993,7 +4993,7 @@
       "fullLabel": "前瞻治理",
       "type": "concept",
       "route": "concepts/anticipatory-governance",
-      "summary": "在问题形成之前就把它设计掉，而不是等矛盾积累、民怨爆发后再修补的治理方式。",
+      "summary": "在问题冒头之前就把它设计掉，不等矛盾攒成民怨再去补。",
       "status": null,
       "degree": 4
     },
@@ -5191,7 +5191,7 @@
       "fullLabel": "仪式型形式主义",
       "type": "concept",
       "route": "concepts/ceremonial-formalism",
-      "summary": "组织越来越依赖场面、仪式和整齐感来证明自己有效，而真实目标和真实功能却被持续挤到后面。",
+      "summary": "组织越来越靠场面、仪式和整齐感证明自己有效，真正要办成的事被挤到后面。",
       "status": null,
       "degree": 4
     },
@@ -6016,7 +6016,7 @@
       "fullLabel": "迎合型顾问",
       "type": "concept",
       "route": "concepts/appeasing-consultant",
-      "summary": "顾问若只服务决策者偏好，就会从外部纠偏者变成权威回声放大器。",
+      "summary": "顾问只顺着老板的偏好说话，外部纠偏的人就成了老板意见的回声。",
       "status": null,
       "degree": 3
     },
@@ -15457,11 +15457,6 @@
     },
     {
       "source": "episode:EP201",
-      "target": "concept:blood-written-rules",
-      "kind": "episode-concept"
-    },
-    {
-      "source": "episode:EP201",
       "target": "concept:manufactured-popularity",
       "kind": "episode-concept"
     },
@@ -22603,11 +22598,6 @@
     {
       "source": "episode:EP130",
       "target": "concept:shadow-fleet",
-      "kind": "episode-concept"
-    },
-    {
-      "source": "episode:EP192",
-      "target": "concept:subsidy-leverage-engine",
       "kind": "episode-concept"
     },
     {
