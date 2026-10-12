@@ -3,7 +3,7 @@
     "title": "颖响力知识图谱",
     "subtitle": "节目、概念、模型、人物、主题之间的可视化连接网络",
     "nodeCount": 764,
-    "linkCount": 2805,
+    "linkCount": 2806,
     "typeCounts": {
       "model": 83,
       "live": 49,
@@ -81,17 +81,6 @@
       "degree": 33
     },
     {
-      "id": "live:LIVE026",
-      "key": "LIVE026",
-      "label": "LIVE026",
-      "fullLabel": "LIVE026 · 阿根廷当年也是「遥遥领先」的制造业强国，百年之后为何还要靠米莱来补课？",
-      "type": "live",
-      "route": "lives/LIVE026",
-      "summary": "同样给欧洲供货，按直播的讲法，美国熬了二十年等来新政，阿根廷选了发补贴。",
-      "status": "curated",
-      "degree": 32
-    },
-    {
       "id": "concept:hidden-debt",
       "key": "hidden-debt",
       "label": "隐形债务",
@@ -110,6 +99,17 @@
       "type": "live",
       "route": "lives/LIVE004",
       "summary": "设厂没人问你技术从哪来，工人工资可能只要深圳的一半。",
+      "status": "curated",
+      "degree": 31
+    },
+    {
+      "id": "live:LIVE026",
+      "key": "LIVE026",
+      "label": "LIVE026",
+      "fullLabel": "LIVE026 · 阿根廷当年也是「遥遥领先」的制造业强国，百年之后为何还要靠米莱来补课？",
+      "type": "live",
+      "route": "lives/LIVE026",
+      "summary": "同样给欧洲供货，按直播的讲法，美国熬了二十年等来新政，阿根廷选了发补贴。",
       "status": "curated",
       "degree": 31
     },
@@ -1088,7 +1088,7 @@
       "fullLabel": "EP181 · 东南亚火药桶之大马篇：表面政坛大乱，实则铁桶威权？困住马来西亚成为发达国家的3个致命死穴！",
       "type": "episode",
       "route": "episodes/EP181",
-      "summary": "东南亚火药桶系列讲完印尼，接着讲马来西亚，两国正好互为镜面。印尼表面威权稳固、内里乱，马来西亚表面吵翻天、底下稳。撑住底盘的是马来人的国家这条红线，和九位苏丹轮值的君主联邦制。安华的大联合政府面合心不合，华裔投票率很低，印度裔成了造王者，公正党里又有人出走转投同心党，据说堡垒选区被分走一半，只能拖着不敢大选。早年大基建的旧债没还完，燃油补贴因油价暴涨翻了五到十倍。固打制把大批华裔和印度裔中产推给了新加坡。它不会崩盘，可根基太稳，也锁死了上限，很难跳出中等收入陷阱。",
+      "summary": "东南亚火药桶系列讲完印尼，接着讲马来西亚，两国正好互为镜面。印尼表面威权稳固、内里乱，马来西亚表面吵翻天、底下稳。撑住底盘的是马来人的国家这条红线，和九州统治者轮流当元首的君主联邦制。安华的大联合政府面合心不合，华裔投票率很低，印度裔成了造王者，公正党里又有人出走转投同心党，据说堡垒选区被分走一半，只能拖着不敢大选。早年大基建的旧债没还完，燃油补贴因油价暴涨翻了五到十倍。固打制把大批华裔和印度裔中产推给了新加坡。它不会崩盘，可根基太稳，也锁死了上限，很难跳出中等收入陷阱。",
       "status": "curated",
       "degree": 15
     },
@@ -1309,6 +1309,17 @@
       "type": "episode",
       "route": "episodes/EP146",
       "summary": "央视官宣拿下 2026 到 2031 年四届世界杯转播权，其中两届是女足。社交媒体一片砍价封神。网传 6000 万美元单届价和 1.1 亿美元四届打包价，两个数放在一起算不通。一种看法是单届价是真的，故意放出来压低本届广告商的预期。FIFA 秘书长和温格第一站去的是足协。两天后中央财政宣布 5 亿元校园足球资金，第二天央视官宣，时间点挨得太近。一场商业谈判被包装成民族胜利。央视靠垄断稳赚不赔，观众照样熬夜、看广告、充会员，拿到手的只有一种虚假的自豪感。",
+      "status": "curated",
+      "degree": 13
+    },
+    {
+      "id": "episode:EP163",
+      "key": "EP163",
+      "label": "EP163",
+      "fullLabel": "EP163 · 鹅腿阿姨事件四个切片解读！炒美股的爹不如卖鹅腿的妈！",
+      "type": "episode",
+      "route": "episodes/EP163",
+      "summary": "鹅腿阿姨在清北周边卖了十几年烤腿，2023 年冬在网上出圈，搬到国贸两天就被上班族识破，卖的其实是鸭腿。清华鹅腿群里姨姨、腿腿的叠词刷屏，最会考试的一批学生精神还没断奶，还停在妈妈说考公考编的阶段。排队投喂时的名校自豪感是群体自我驯化，阿姨被收进校园叙事，鹅腿成了我们和别人不一样的火炬。有人把骗局怪到互联网头上，可骗子和信息不对称从来都在，缺的是从小没人教的自我分辨。造假要治，得靠事后监督和事后惩罚，链条再长也追到底，罚到倾家荡产。",
       "status": "curated",
       "degree": 13
     },
@@ -1606,17 +1617,6 @@
       "type": "episode",
       "route": "episodes/EP152",
       "summary": "福建漳州杨梅泡药，骂商人黑心、骂监管不力都解决不了问题。杨梅采摘期短，常温放一两天就烂，全程冷链成本翻好几倍，消费者又要便宜又要新鲜。几块钱的违禁保鲜剂能泡几百斤，损耗从 50% 以上降到 5% 以下，整条链系统性违规，人人装看不见。监管要人，人要经费，经费最后摊进杨梅价格，又永远追不上新添加剂，只能选择性执法。同样的杨梅出口欧盟规规矩矩，因为事后索赔没人扛得起。根子在整个社会默认人性本恶，越管越恶，越恶越管。",
-      "status": "curated",
-      "degree": 12
-    },
-    {
-      "id": "episode:EP163",
-      "key": "EP163",
-      "label": "EP163",
-      "fullLabel": "EP163 · 鹅腿阿姨事件四个切片解读！炒美股的爹不如卖鹅腿的妈！",
-      "type": "episode",
-      "route": "episodes/EP163",
-      "summary": "鹅腿阿姨在清北周边卖了十几年烤腿，2023 年冬在网上出圈，搬到国贸两天就被上班族识破，卖的其实是鸭腿。清华鹅腿群里姨姨、腿腿的叠词刷屏，最会考试的一批学生精神还没断奶，还停在妈妈说考公考编的阶段。排队投喂时的名校自豪感是群体自我驯化，阿姨被收进校园叙事，鹅腿成了我们和别人不一样的火炬。有人把骗局怪到互联网头上，可骗子和信息不对称从来都在，缺的是从小没人教的自我分辨。造假要治，得靠事后监督和事后惩罚，链条再长也追到底，罚到倾家荡产。",
       "status": "curated",
       "degree": 12
     },
@@ -1951,6 +1951,17 @@
       "degree": 10
     },
     {
+      "id": "episode:EP063",
+      "key": "EP063",
+      "label": "EP063",
+      "fullLabel": "EP063 · 成为“男人”的三个阶段，“断亲”背后的真相，如何从辛巴变成木法沙……",
+      "type": "episode",
+      "route": "episodes/EP063",
+      "summary": "男人长成自己要过精神上的三关，弑母、弑父、弑自己。弑要先把亲情、权威和自己吃进去看清，再吐出来还它理解和尊重，光切断不算。现在流行的断亲多半只做到离远一点，看清了却吐不出来。弑父这关在中国能过的人只有百分之几。过不去的人见到领导的威严就把自己放低，当了领导又这样对下属。弑自己更难，要看清自己身上所有毛病，还能接受自己。很多心理课程上来就让人剖析自己，前两关没过的人会被掏空，变成别人塑出来的空壳。三关都过了还有一关，理解死亡，向死而生。",
+      "status": "curated",
+      "degree": 10
+    },
+    {
       "id": "episode:EP114",
       "key": "EP114",
       "label": "EP114",
@@ -2281,17 +2292,6 @@
       "degree": 9
     },
     {
-      "id": "episode:EP063",
-      "key": "EP063",
-      "label": "EP063",
-      "fullLabel": "EP063 · 成为“男人”的三个阶段，“断亲”背后的真相，如何从辛巴变成木法沙……",
-      "type": "episode",
-      "route": "episodes/EP063",
-      "summary": "男人长成自己要过精神上的三关，弑母、弑父、弑自己。弑要先把亲情、权威和自己吃进去看清，再吐出来还它理解和尊重，光切断不算。现在流行的断亲多半只做到离远一点，看清了却吐不出来。弑父这关在中国能过的人只有百分之几。过不去的人见到领导的威严就把自己放低，当了领导又这样对下属。弑自己更难，要看清自己身上所有毛病，还能接受自己。很多心理课程上来就让人剖析自己，前两关没过的人会被掏空，变成别人塑出来的空壳。三关都过了还有一关，理解死亡，向死而生。",
-      "status": "curated",
-      "degree": 9
-    },
-    {
       "id": "episode:EP064",
       "key": "EP064",
       "label": "EP064",
@@ -2534,6 +2534,17 @@
       "degree": 8
     },
     {
+      "id": "concept:symbolic-matricide",
+      "key": "symbolic-matricide",
+      "label": "精神弑母",
+      "fullLabel": "精神弑母",
+      "type": "concept",
+      "route": "concepts/symbolic-matricide",
+      "summary": "精神弑母是成长三关的头一关。把对母亲和亲情的依赖吃进去看清，再吐出来，还它理解和尊重。光是切断或对抗都不算过关。",
+      "status": null,
+      "degree": 8
+    },
+    {
       "id": "model:screening-machine",
       "key": "screening-machine",
       "label": "筛选机器模型",
@@ -2584,7 +2595,7 @@
       "fullLabel": "无用阶级",
       "type": "concept",
       "route": "concepts/useless-class",
-      "summary": "无用阶级指在AI与自动化大规模替代劳动后，既无法进入高门槛顶端工作、又被挤出中低端岗位，从生产者沦为系统中“多余的人”的庞大群体。",
+      "summary": "AI 和自动化大规模替代劳动之后，够不着顶端的高门槛工作，中低端岗位又被挤掉，从生产者变成多余的人的那一大群人。",
       "status": null,
       "degree": 8
     },
@@ -3585,7 +3596,7 @@
       "fullLabel": "工具化历史",
       "type": "concept",
       "route": "concepts/toolified-history",
-      "summary": "历史被拿来组织当下身份、敌我和情绪时，就从理解过去变成动员工具。",
+      "summary": "历史被拿来给当下划敌我、聚人心、证明自己的立场时，就从理解过去变成了动员工具。",
       "status": null,
       "degree": 6
     },
@@ -3619,17 +3630,6 @@
       "type": "theme",
       "route": "themes/trust-and-asset-preservation",
       "summary": "信托、离岸架构、上市和退出要提前搭好，钱的来源要干净，财富才可能穿过周期。",
-      "status": null,
-      "degree": 6
-    },
-    {
-      "id": "concept:symbolic-matricide",
-      "key": "symbolic-matricide",
-      "label": "精神弑母",
-      "fullLabel": "精神弑母",
-      "type": "concept",
-      "route": "concepts/symbolic-matricide",
-      "summary": "精神弑母指人要先在精神上吃掉母系带来的文化、再吐出来给予尊重，才能长成拥有自我的人。",
       "status": null,
       "degree": 6
     },
@@ -5356,7 +5356,7 @@
       "fullLabel": "表层现代化",
       "type": "concept",
       "route": "concepts/surface-modernity",
-      "summary": "把现代化理解成高楼、道路和工程规模，会忽略制度、产业和生活体面的深层现代性。",
+      "summary": "把现代化看成楼高路宽、工程体量大，看不到后面的产业、规则、文化和普通人的日子。",
       "status": null,
       "degree": 3
     },
@@ -5730,7 +5730,7 @@
       "fullLabel": "人才虹吸",
       "type": "concept",
       "route": "concepts/talent-siphon",
-      "summary": "一国用高工资和开放机会，持续吸走邻国被制度排斥的中产人才——培养成本留在母国，产出回报归了邻国。",
+      "summary": "一国靠高工资和开放机会，常年吸走邻国被制度排斥的中产人才。培养的钱母国出，产值记在邻国账上。",
       "status": null,
       "degree": 3
     },
@@ -5752,7 +5752,7 @@
       "fullLabel": "时间窗口阅读",
       "type": "concept",
       "route": "concepts/time-window-reading",
-      "summary": "同一动作在不同周期中的意义不同，判断决策必须先看它发生在哪个时间窗口。",
+      "summary": "同一个动作放在不同年份，意思完全不同。评价一个人的选择，先看它发生在哪个时间窗口，别拿后来的结果倒推动机。",
       "status": null,
       "degree": 3
     },
@@ -6072,17 +6072,6 @@
       "type": "concept",
       "route": "concepts/haven-inversion",
       "summary": "避风港反转指一个法域的信息屏障被补齐之后，原本用来藏资产的地方反而成了处置资产最顺手的地方。",
-      "status": null,
-      "degree": 2
-    },
-    {
-      "id": "concept:surface-chaos-deep-order",
-      "key": "surface-chaos-deep-order",
-      "label": "表面乱局深层秩序",
-      "fullLabel": "表面乱局深层秩序",
-      "type": "concept",
-      "route": "concepts/surface-chaos-deep-order",
-      "summary": "政坛看起来吵翻天，其实所有争斗都锁在不可触碰的底层规则之内，乱只发生在上层分权，根基纹丝不动。",
       "status": null,
       "degree": 2
     },
@@ -6599,7 +6588,7 @@
       "fullLabel": "三层杠杆",
       "type": "concept",
       "route": "concepts/three-layer-leverage",
-      "summary": "居民、企业和地方政府同时用未来现金流为当下扩张融资，风险会从单点违约升级成系统踩踏。",
+      "summary": "居民、房企和地方政府同时突破原有的资金约束加杠杆，一起把繁荣推高，出事时也互相踩踏。",
       "status": null,
       "degree": 2
     },
@@ -6676,7 +6665,7 @@
       "fullLabel": "失控式生产逻辑",
       "type": "concept",
       "route": "concepts/uncontrolled-production-logic",
-      "summary": "当生产门槛极低时，系统不再靠少数专业创作者保证质量，而是靠海量产出后的筛选找到少数可用作品。",
+      "summary": "生产门槛低到人人能做时，质量不再靠少数专业创作者把关，靠的是海量产出之后从里面挑出少数能用的。",
       "status": null,
       "degree": 2
     },
@@ -6786,7 +6775,7 @@
       "fullLabel": "系统兜底",
       "type": "concept",
       "route": "concepts/system-fallback",
-      "summary": "复杂系统不能只靠一个大脑或一层控制，必须在异常状态下保留可执行的多层接管和降级能力。",
+      "summary": "复杂系统不能只靠一个大脑。任何一层失效时，要有别的层能接上，至少把风险收在局部。",
       "status": null,
       "degree": 2
     },
@@ -7011,13 +7000,24 @@
       "degree": 1
     },
     {
+      "id": "concept:surface-chaos-deep-order",
+      "key": "surface-chaos-deep-order",
+      "label": "表面乱局深层秩序",
+      "fullLabel": "表面乱局深层秩序",
+      "type": "concept",
+      "route": "concepts/surface-chaos-deep-order",
+      "summary": "政坛天天吵，吵的是上层谁分得多。立国的底层规则没人碰，碰了的人会被整个体制清出去。",
+      "status": null,
+      "degree": 1
+    },
+    {
       "id": "concept:unpriceable-risk",
       "key": "unpriceable-risk",
       "label": "不可定价风险",
       "fullLabel": "不可定价风险",
       "type": "concept",
       "route": "concepts/unpriceable-risk",
-      "summary": "损失有多大、多久发生一次都估不出来，加价也接不住，保险公司和资本只能退出的那类风险。",
+      "summary": "损失有多大、多久发生一次都估不出来，加价也接不住，承保方只能退出的那类风险。",
       "status": null,
       "degree": 1
     },
@@ -7061,7 +7061,7 @@
       "fullLabel": "餐桌秩序转移",
       "type": "concept",
       "route": "concepts/table-order-shift",
-      "summary": "餐桌上谁决定喝什么的变化，反映消费权力、性别关系和社交礼仪的秩序转移。",
+      "summary": "酒桌上由谁定喝什么，从官最大、岁数最大的人，换成了年轻人先问同桌女生。白酒的销量跟着这套规矩一起变。",
       "status": null,
       "degree": 1
     },
@@ -7094,7 +7094,7 @@
       "fullLabel": "朝贡思维",
       "type": "concept",
       "route": "concepts/tributary-mindset",
-      "summary": "朝贡思维指在大国崛起叙事下，期待周边富裕小国“万国来朝、进贡、祭祖”，把对方当成应归附的藩属或飞地。",
+      "summary": "大国崛起叙事下，期待周边富裕小国万国来朝、进贡祭祖，把对方当成该归附的藩属或飞地。",
       "status": null,
       "degree": 1
     },
@@ -7468,7 +7468,7 @@
       "fullLabel": "科技向善遮羞布",
       "type": "concept",
       "route": "concepts/tech-for-good-veneer",
-      "summary": "科技向善遮羞布指企业把以降本为目的的裁员和自动化，包装成“科技向善”“为下一代”的道德叙事，用价值话语掩盖财富向少数人集中的事实。",
+      "summary": "企业靠 AI 和自动化裁员降本，再把这件事说成科技向善、为了下一代，省下的工资进了公司口袋，被裁的人自己想办法。",
       "status": null,
       "degree": 1
     },
@@ -10268,6 +10268,11 @@
     {
       "source": "episode:EP063",
       "target": "concept:authority-internalization",
+      "kind": "episode-concept"
+    },
+    {
+      "source": "episode:EP063",
+      "target": "concept:symbolic-matricide",
       "kind": "episode-concept"
     },
     {
@@ -13828,6 +13833,11 @@
     {
       "source": "episode:EP163",
       "target": "concept:symbol-mismatch",
+      "kind": "episode-concept"
+    },
+    {
+      "source": "episode:EP163",
+      "target": "concept:symbolic-matricide",
       "kind": "episode-concept"
     },
     {
@@ -19733,11 +19743,6 @@
     {
       "source": "live:LIVE026",
       "target": "concept:chosen-homeland",
-      "kind": "live-concept"
-    },
-    {
-      "source": "live:LIVE026",
-      "target": "concept:surface-chaos-deep-order",
       "kind": "live-concept"
     },
     {
