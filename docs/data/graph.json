@@ -3,7 +3,7 @@
     "title": "颖响力知识图谱",
     "subtitle": "节目、概念、模型、人物、主题之间的可视化连接网络",
     "nodeCount": 764,
-    "linkCount": 2887,
+    "linkCount": 2876,
     "typeCounts": {
       "model": 83,
       "live": 49,
@@ -125,17 +125,6 @@
       "degree": 31
     },
     {
-      "id": "theme:singapore-and-small-state-survival",
-      "key": "singapore-and-small-state-survival",
-      "label": "新加坡与小国生存术",
-      "fullLabel": "新加坡与小国生存术",
-      "type": "theme",
-      "route": "themes/singapore-and-small-state-survival",
-      "summary": "讨论新加坡如何把规则、海峡、人才和谨慎外交组合成一套小国长期生存方法。",
-      "status": null,
-      "degree": 30
-    },
-    {
       "id": "live:LIVE033",
       "key": "LIVE033",
       "label": "LIVE033",
@@ -145,6 +134,17 @@
       "summary": "照这场的推演，一百个亿的项目掏二三十亿就能开工，剩下的钱从你买的那份理财里出。",
       "status": "curated",
       "degree": 30
+    },
+    {
+      "id": "theme:singapore-and-small-state-survival",
+      "key": "singapore-and-small-state-survival",
+      "label": "新加坡与小国生存术",
+      "fullLabel": "新加坡与小国生存术",
+      "type": "theme",
+      "route": "themes/singapore-and-small-state-survival",
+      "summary": "讨论新加坡如何把规则、海峡、人才和谨慎外交组合成一套小国长期生存方法。",
+      "status": null,
+      "degree": 29
     },
     {
       "id": "live:LIVE003",
@@ -235,17 +235,6 @@
       "degree": 27
     },
     {
-      "id": "theme:rule-of-law-boundaries-and-social-trust",
-      "key": "rule-of-law-boundaries-and-social-trust",
-      "label": "法治边界与社会信任",
-      "fullLabel": "法治边界与社会信任",
-      "type": "theme",
-      "route": "themes/rule-of-law-boundaries-and-social-trust",
-      "summary": "关注法律灰区如何影响公众的善意、风险感和彼此信任。",
-      "status": null,
-      "degree": 26
-    },
-    {
       "id": "episode:EP154",
       "key": "EP154",
       "label": "EP154",
@@ -321,6 +310,17 @@
       "summary": "五年只花几万块做出来的一坨东西，也拿到了龙标。",
       "status": "curated",
       "degree": 26
+    },
+    {
+      "id": "theme:rule-of-law-boundaries-and-social-trust",
+      "key": "rule-of-law-boundaries-and-social-trust",
+      "label": "法治边界与社会信任",
+      "fullLabel": "法治边界与社会信任",
+      "type": "theme",
+      "route": "themes/rule-of-law-boundaries-and-social-trust",
+      "summary": "法律管到哪里、管不到哪里。规则被钻空子、被权力压过，或者根本没写进法条时，人和人之间的信任会怎么变。",
+      "status": null,
+      "degree": 25
     },
     {
       "id": "model:narrative-instrumentalization",
@@ -428,7 +428,7 @@
       "fullLabel": "大国竞争与战略时间",
       "type": "theme",
       "route": "themes/great-power-competition-and-strategic-time",
-      "summary": "讨论战争、联盟和国家战略如何被时间窗口、社会成本和长期定力重新塑形。",
+      "summary": "大国之间拼武器，也拼谁更能熬、谁先把成本降下来、谁抓住了时间窗口。",
       "status": null,
       "degree": 24
     },
@@ -609,17 +609,6 @@
       "degree": 21
     },
     {
-      "id": "theme:middle-class-descent-and-stratification",
-      "key": "middle-class-descent-and-stratification",
-      "label": "中产下坠与分层社会",
-      "fullLabel": "中产下坠与分层社会",
-      "type": "theme",
-      "route": "themes/middle-class-descent-and-stratification",
-      "summary": "当中间层缺乏缓冲带时，经济下行会迅速转成身份下坠、关系断裂和社会分层加固。",
-      "status": null,
-      "degree": 21
-    },
-    {
       "id": "episode:EP131",
       "key": "EP131",
       "label": "EP131",
@@ -697,17 +686,6 @@
       "degree": 20
     },
     {
-      "id": "episode:EP128",
-      "key": "EP128",
-      "label": "EP128",
-      "fullLabel": "EP128 · 广告越拍越丑的真相：中国社会正在悄悄发生一场大规模“系统回滚”！泛体制人群正在重构整个社会的底层逻辑。",
-      "type": "episode",
-      "route": "episodes/EP128",
-      "summary": "沃尔沃的广告换上了胡锡进，问界（推测）的广告让模特站在车前给人分层，广告越拍越像在汇报工作。毛病不在广告公司，是核心消费层整个换了一批人。社会在做一次系统回滚，从靠能力赚钱的市场化版本，退回靠身份和体制吃饭的旧版本。三四线城市里，公务员、事业编和国企职工占了中产八成以上，饭碗由转移支付兜着。身份压过财富，中产的入口只剩考编，体制内家庭还把门路传给孩子。代价是创新降温、小城空心、人情重新压过规则。苏联和东欧走过这段路，这种稳定未必撑得了几十年。",
-      "status": "curated",
-      "degree": 20
-    },
-    {
       "id": "episode:EP138",
       "key": "EP138",
       "label": "EP138",
@@ -749,6 +727,28 @@
       "route": "models/value-capture",
       "summary": "价值捕获模型强调商业链条中关键不只是创造了价值，而是谁真正留下了价值。",
       "status": null,
+      "degree": 19
+    },
+    {
+      "id": "theme:middle-class-descent-and-stratification",
+      "key": "middle-class-descent-and-stratification",
+      "label": "中产下坠与分层社会",
+      "fullLabel": "中产下坠与分层社会",
+      "type": "theme",
+      "route": "themes/middle-class-descent-and-stratification",
+      "summary": "当中间层缺乏缓冲带时，经济下行会迅速转成身份下坠、关系断裂和社会分层加固。",
+      "status": null,
+      "degree": 19
+    },
+    {
+      "id": "episode:EP128",
+      "key": "EP128",
+      "label": "EP128",
+      "fullLabel": "EP128 · 广告越拍越丑的真相：中国社会正在悄悄发生一场大规模“系统回滚”！泛体制人群正在重构整个社会的底层逻辑。",
+      "type": "episode",
+      "route": "episodes/EP128",
+      "summary": "沃尔沃的广告换上了胡锡进，问界（推测）的广告让模特站在车前给人分层，广告越拍越像在汇报工作。毛病不在广告公司，是核心消费层整个换了一批人。社会在做一次系统回滚，从靠能力赚钱的市场化版本，退回靠身份和体制吃饭的旧版本。三四线城市里，公务员、事业编和国企职工占了中产八成以上，饭碗由转移支付兜着。身份压过财富，中产的入口只剩考编，体制内家庭还把门路传给孩子。代价是创新降温、小城空心、人情重新压过规则。苏联和东欧走过这段路，这种稳定未必撑得了几十年。",
+      "status": "curated",
       "degree": 19
     },
     {
@@ -961,17 +961,6 @@
       "degree": 17
     },
     {
-      "id": "theme:southeast-asia-fragmentation-and-bloc-competition",
-      "key": "southeast-asia-fragmentation-and-bloc-competition",
-      "label": "东南亚裂变与集团竞争",
-      "fullLabel": "东南亚裂变与集团竞争",
-      "type": "theme",
-      "route": "themes/southeast-asia-fragmentation-and-bloc-competition",
-      "summary": "讨论东南亚如何从缓冲地带变成各方拉扯、重新站队和内部裂变并行发生的高风险区域。",
-      "status": null,
-      "degree": 16
-    },
-    {
       "id": "theme:real-estate-deleveraging",
       "key": "real-estate-deleveraging",
       "label": "房地产去杠杆与风险出清",
@@ -1047,6 +1036,17 @@
       "summary": "赛力斯预告上半年净亏 15 到 18 亿，去年同期还赚了快 30 亿。它生产的问界交付量却涨了 10%，还霸着豪华 SUV 销冠，卖得越多亏得越多。华为和赛力斯这笔合作，从一开始就不平等。硬件采购、技术授权费、渠道服务费三笔供奉前置，单车 13 到 14 万先进华为的兜。收益挂销量，跟车企盈亏脱钩。重资产、价格战、地方对赌、出海受限的风险全压在赛力斯身上。这不是苹果代工模式，更像苏联与加盟共和国。行业刚起步就进了血海内卷，谁把制造端抱在怀里，谁就在裸泳。依附型车企是制造业民营小老板的缩影。",
       "status": "curated",
       "degree": 16
+    },
+    {
+      "id": "theme:southeast-asia-fragmentation-and-bloc-competition",
+      "key": "southeast-asia-fragmentation-and-bloc-competition",
+      "label": "东南亚裂变与集团竞争",
+      "fullLabel": "东南亚裂变与集团竞争",
+      "type": "theme",
+      "route": "themes/southeast-asia-fragmentation-and-bloc-competition",
+      "summary": "讨论东南亚如何从缓冲地带变成各方拉扯、重新站队和内部裂变并行发生的高风险区域。",
+      "status": null,
+      "degree": 15
     },
     {
       "id": "episode:EP126",
@@ -1291,17 +1291,6 @@
       "degree": 14
     },
     {
-      "id": "episode:EP205",
-      "key": "EP205",
-      "label": "EP205",
-      "fullLabel": "EP205 · 不止是AI漫剧停更；中国制造七层内卷之下，每个行业都在重复同一件事！",
-      "type": "episode",
-      "route": "episodes/EP205",
-      "summary": "做AI漫剧的账号成批停更，行业里的说法是内容同质、观众看腻、人太多，这几条都只说到表面。真正压下来的是七层叠在一起的压力。五个平台同时下场抢同一批制作者，模型生成一秒的价格砍到开源免费，导演十几年的镜头经验被工具打包成一键功能。万次播放的分账从上百块掉到五块，连卖课的都割不到新人了。平台拿补贴换数据、拿数据换估值，最上面是持续收紧的合规，逼着行业极快地换玩法。被挤掉的是中间那批跟随者，能留下的是造工具的人和真会用工具的人，个人电影时代要靠他们来开。",
-      "status": "curated",
-      "degree": 14
-    },
-    {
       "id": "live:LIVE046",
       "key": "LIVE046",
       "label": "LIVE046",
@@ -1401,17 +1390,6 @@
       "degree": 13
     },
     {
-      "id": "episode:EP166",
-      "key": "EP166",
-      "label": "EP166",
-      "fullLabel": "EP166 · 山姆被市监总局约谈后，还能去吗？火速换帅背后真相！",
-      "type": "episode",
-      "route": "episodes/EP166",
-      "summary": "山姆中国被市场监管总局约谈，又火速换掉采购与品控负责人，冲上热搜。约谈不等于品控崩塌。山姆是商超顶流，付费会员破千万，自带放大镜，同样的食安问题被无限放大。真正的病根是五年门店翻倍、狂奔百店，管理和品控没跟上。它比普通超市好，但不是零添加净土。合规只是及格线，会员卡图的是超出及格线的放心。约谈反而倒逼它把品控做高。别把信任交给任何品牌。能去还得去，有 Costco 优先 Costco，进门还是要看配料表。",
-      "status": "curated",
-      "degree": 13
-    },
-    {
       "id": "episode:EP188",
       "key": "EP188",
       "label": "EP188",
@@ -1434,13 +1412,13 @@
       "degree": 13
     },
     {
-      "id": "episode:EP210",
-      "key": "EP210",
-      "label": "EP210",
-      "fullLabel": "EP210 · 比外包内卷更可怕的，是我们正被世界淘汰！China GT起火事故背后的三重困境",
+      "id": "episode:EP205",
+      "key": "EP205",
+      "label": "EP205",
+      "fullLabel": "EP205 · 不止是AI漫剧停更；中国制造七层内卷之下，每个行业都在重复同一件事！",
       "type": "episode",
-      "route": "episodes/EP210",
-      "summary": "9 月 5 日 China GT 上海站 GT3 组正赛第七圈出了事故。两辆赛车冲出赛道，撞上 91 号法拉利的油箱侧面，车瞬间起火。把被困的英国车手拖出来的是停车赶来的荷兰车手，49 秒的施救几乎是他一个人做完的。赛事的钱花在明星、冠名和流量上，救援据说层层外包，一线的人一天拿六十块。行业越卷越压成本，专业、责任和安全底线跟着被挤掉。组委会事后说配置符合国家级赛事的标准，可合规只是最低的那条线。拿钱就能摆平一切的习惯，放到把安全当硬底线的国际同行面前，会被直接判不合格。",
+      "route": "episodes/EP205",
+      "summary": "做AI漫剧的账号成批停更，行业里的说法是内容同质、观众看腻、人太多，这几条都只说到表面。真正压下来的是七层叠在一起的压力。五个平台同时下场抢同一批制作者，模型生成一秒的价格砍到开源免费，导演十几年的镜头经验被工具打包成一键功能。万次播放的分账从上百块掉到五块，连卖课的都割不到新人了。平台拿补贴换数据、拿数据换估值，最上面是持续收紧的合规，逼着行业极快地换玩法。被挤掉的是中间那批跟随者，能留下的是造工具的人和真会用工具的人，个人电影时代要靠他们来开。",
       "status": "curated",
       "degree": 13
     },
@@ -1665,6 +1643,17 @@
       "degree": 12
     },
     {
+      "id": "episode:EP166",
+      "key": "EP166",
+      "label": "EP166",
+      "fullLabel": "EP166 · 山姆被市监总局约谈后，还能去吗？火速换帅背后真相！",
+      "type": "episode",
+      "route": "episodes/EP166",
+      "summary": "山姆中国被市场监管总局约谈，又火速换掉采购与品控负责人，冲上热搜。约谈不等于品控崩塌。山姆是商超顶流，付费会员破千万，自带放大镜，同样的食安问题被无限放大。真正的病根是五年门店翻倍、狂奔百店，管理和品控没跟上。它比普通超市好，但不是零添加净土。合规只是及格线，会员卡图的是超出及格线的放心。约谈反而倒逼它把品控做高。别把信任交给任何品牌。能去还得去，有 Costco 优先 Costco，进门还是要看配料表。",
+      "status": "curated",
+      "degree": 12
+    },
+    {
       "id": "episode:EP182",
       "key": "EP182",
       "label": "EP182",
@@ -1694,6 +1683,17 @@
       "type": "episode",
       "route": "episodes/EP207",
       "summary": "个人住房贷款最长年限从三十年放宽到四十年，房地产股应声就涨，各路解读都说月供大降。按一百万算，每月少还616块，总利息却从61.66万涨到85.95万，多付二十四万。利率和本金都没变，变的只有时间，这叫负债延期。银行一分钱没损失，扛不住月供的家庭被接住，坏账率稳了，还多收十年利息。这像奥德修斯过海峡，躲开漩涡就得让六头海怪叼走六个船员，被牺牲的是只能选四十年的年轻人。苏联勃列日涅夫那十八年也是这样拖过来的。定这个年限的人，不用还这笔贷款。",
+      "status": "curated",
+      "degree": 12
+    },
+    {
+      "id": "episode:EP210",
+      "key": "EP210",
+      "label": "EP210",
+      "fullLabel": "EP210 · 比外包内卷更可怕的，是我们正被世界淘汰！China GT起火事故背后的三重困境",
+      "type": "episode",
+      "route": "episodes/EP210",
+      "summary": "9 月 5 日 China GT 上海站 GT3 组正赛第七圈出了事故。两辆赛车冲出赛道，撞上 91 号法拉利的油箱侧面，车瞬间起火。把被困的英国车手拖出来的是停车赶来的荷兰车手，49 秒的施救几乎是他一个人做完的。赛事的钱花在明星、冠名和流量上，救援据说层层外包，一线的人一天拿六十块。行业越卷越压成本，专业、责任和安全底线跟着被挤掉。组委会事后说配置符合国家级赛事的标准，可合规只是最低的那条线。拿钱就能摆平一切的习惯，放到把安全当硬底线的国际同行面前，会被直接判不合格。",
       "status": "curated",
       "degree": 12
     },
@@ -1852,17 +1852,6 @@
       "degree": 11
     },
     {
-      "id": "episode:EP190",
-      "key": "EP190",
-      "label": "EP190",
-      "fullLabel": "EP190 · 新加坡内阁改组解析：财权、人事、东盟、就业，看懂执政走向！",
-      "type": "episode",
-      "route": "episodes/EP190",
-      "summary": "新加坡新一轮内阁改组7月生效，总理黄循财上任两年仍兼任财政部长。外界读成不肯放权，可财政是小国的生命线，地缘动荡和AI升级又逼着整套框架重排。李显龙2004年上任后也把核心经济攥了好几年，等团队成熟才交出去。梯队没长成之前不是不想放，是不敢放。新人破格进内阁，是人民行动党的梯队制在赶交接班，按过往节奏推算，新一代要在 2035 年前后上位。贸工部改名能源、贸易与工业部并设双部长，是给2027年东盟主席国任期提前配架构。黄志明时隔六年重返内阁，回来抓就业和职场转型，说明头等大事落在民生。",
-      "status": "curated",
-      "degree": 11
-    },
-    {
       "id": "episode:EP199",
       "key": "EP199",
       "label": "EP199",
@@ -1925,17 +1914,6 @@
       "type": "model",
       "route": "models/regional-denial-model",
       "summary": "真正有效的区域拒止，不是无上限扩张，而是把对手压在若干区域里，阻止其形成全球联动能力。",
-      "status": null,
-      "degree": 10
-    },
-    {
-      "id": "theme:ev-safety-and-consumer-testing",
-      "key": "ev-safety-and-consumer-testing",
-      "label": "新能源安全边界与消费者测试",
-      "fullLabel": "新能源安全边界与消费者测试",
-      "type": "theme",
-      "route": "themes/ev-safety-and-consumer-testing",
-      "summary": "讨论新能源车与相关电池系统如何把安全验证不足的代价，转移到真实用户和真实事故里。",
       "status": null,
       "degree": 10
     },
@@ -2006,17 +1984,6 @@
       "degree": 10
     },
     {
-      "id": "episode:EP111",
-      "key": "EP111",
-      "label": "EP111",
-      "fullLabel": "EP111 · 张雪夺冠刷屏：别用 “时代没机会”，掐灭年轻人的追梦底气。",
-      "type": "episode",
-      "route": "episodes/EP111",
-      "summary": "张雪机车在世界超级摩托车锦标赛葡萄牙站拿下两个回合的冠军。二十年前，湘西农村辍学的修车学徒张雪骑着拼装旧摩托，追了记者一百公里，这才换来一部纪录片。这也是一代中国人的故事。张雪峰（推测）去世时几万人相送。他那套话是别做梦，脚踏实地求平安，因为你就是个普通人。可他 2020 到 2022 年还在推和地产绑定的专业，又推计算机。如今地产不行了，程序员先被 AI 淘汰。普通人的机会是自己拼出来的。把孩子提前推进不喜欢的稳定位置，人还活着，精神可能先死了。禁锢孩子更多的是父母。",
-      "status": "curated",
-      "degree": 10
-    },
-    {
       "id": "episode:EP114",
       "key": "EP114",
       "label": "EP114",
@@ -2068,6 +2035,17 @@
       "type": "episode",
       "route": "episodes/EP173",
       "summary": "中国潮汕片《给阿嬷的情书》在新加坡热映，据说起初只准映八场，又加八场仍然场场火爆，最后破例再加映五十场。一些华文媒体叫它统战片。新加坡的华语政策并没有失守，这次是破例。硬拦只会把观众推去别的平台，当局选了堵不如疏，让市场去消化。电影引出的真问题是根在哪里。按祖先算，人类都来自非洲，根该落在对自己好、能活下去的地方，李显龙也说过要落地生根。在韶关客家环境里长大的那个女孩把潮汕话奉为文化，狂热里藏着对母系客家文化的抵触，精神弑母还没完成。电影确实带统战色彩，摘掉这层滤镜，它仍是一部可看的好电影。",
+      "status": "curated",
+      "degree": 10
+    },
+    {
+      "id": "episode:EP190",
+      "key": "EP190",
+      "label": "EP190",
+      "fullLabel": "EP190 · 新加坡内阁改组解析：财权、人事、东盟、就业，看懂执政走向！",
+      "type": "episode",
+      "route": "episodes/EP190",
+      "summary": "新加坡新一轮内阁改组7月生效，总理黄循财上任两年仍兼任财政部长。外界读成不肯放权，可财政是小国的生命线，地缘动荡和AI升级又逼着整套框架重排。李显龙2004年上任后也把核心经济攥了好几年，等团队成熟才交出去。梯队没长成之前不是不想放，是不敢放。新人破格进内阁，是人民行动党的梯队制在赶交接班，按过往节奏推算，新一代要在 2035 年前后上位。贸工部改名能源、贸易与工业部并设双部长，是给2027年东盟主席国任期提前配架构。黄志明时隔六年重返内阁，回来抓就业和职场转型，说明头等大事落在民生。",
       "status": "curated",
       "degree": 10
     },
@@ -2166,7 +2144,7 @@
       "fullLabel": "时间尺度与资产前瞻",
       "type": "theme",
       "route": "themes/time-horizon-and-foresight",
-      "summary": "讨论人物与企业如何在不同周期里提前摆放自己，而不是等结果发生后再被动解释。",
+      "summary": "人和企业怎样按周期提前摆放自己，在事情发生之前就做好准备。",
       "status": null,
       "degree": 9
     },
@@ -2189,6 +2167,17 @@
       "type": "model",
       "route": "models/ex-post-accountability-governance",
       "summary": "治理可以选择事前管制每个人，也可以选择给自由、事后对违规者施加无法承受的代价；后者往往比前者更省成本也更有效。",
+      "status": null,
+      "degree": 9
+    },
+    {
+      "id": "theme:ev-safety-and-consumer-testing",
+      "key": "ev-safety-and-consumer-testing",
+      "label": "新能源安全边界与消费者测试",
+      "fullLabel": "新能源安全边界与消费者测试",
+      "type": "theme",
+      "route": "themes/ev-safety-and-consumer-testing",
+      "summary": "讨论新能源车与相关电池系统如何把安全验证不足的代价，转移到真实用户和真实事故里。",
       "status": null,
       "degree": 9
     },
@@ -2402,17 +2391,6 @@
       "degree": 9
     },
     {
-      "id": "episode:EP100",
-      "key": "EP100",
-      "label": "EP100",
-      "fullLabel": "EP100 · 涨20元的农村养老金，让我们看清了一些事。【100期特辑】",
-      "type": "episode",
-      "route": "episodes/EP100",
-      "summary": "有一部分农村老人的养老金今年涨了 20 块，很多人一听就笑了。20 块钱能买半斤肉，或者一盒便宜的降压药。同一阵子胖东来公布分配方案，普通一线员工每人分到价值 20 万的资产份额。交了一辈子公粮的老人，每月养老金一共不过 200 块，这 20 块连象征性的尊重都算不上。\n\n刺激政策讲究乘数效应和资本叠加，钱最后流进少数人的口袋。直接到老人手里的小钱，却会进菜市场和药店，养的是社会最底层。养老金分体制内、体制外和农民三类，差距长期固化，一种看法是，南斯拉夫和罗马尼亚动荡之前都走过这一段。",
-      "status": "curated",
-      "degree": 9
-    },
-    {
       "id": "episode:EP107",
       "key": "EP107",
       "label": "EP107",
@@ -2420,6 +2398,17 @@
       "type": "episode",
       "route": "episodes/EP107",
       "summary": "主流都说去美元化不可逆，黄金要迎来大牛市，金价却一路走低。1974 年美国和沙特签下石油美元协议，买油就得用美元，这是美元霸权的根。过去十年冒出一个漏洞。灰色石油绕开海关统计和 SWIFT，用黄金或人民币结算。把它算进去，非美元结算早已过半。特朗普打委内瑞拉、对伊朗下手，是一套新门罗主义。让盟友出钱守墙，用很低的成本把灰色石油堵回墙内。价差一没，九成原油可能回到美元结算。未来 12 个月美元走强、黄金偏弱，前提是这套围堵真能成型。",
+      "status": "curated",
+      "degree": 9
+    },
+    {
+      "id": "episode:EP111",
+      "key": "EP111",
+      "label": "EP111",
+      "fullLabel": "EP111 · 张雪夺冠刷屏：别用 “时代没机会”，掐灭年轻人的追梦底气。",
+      "type": "episode",
+      "route": "episodes/EP111",
+      "summary": "张雪机车在世界超级摩托车锦标赛葡萄牙站拿下两个回合的冠军。二十年前，湘西农村辍学的修车学徒张雪骑着拼装旧摩托，追了记者一百公里，这才换来一部纪录片。这也是一代中国人的故事。张雪峰（推测）去世时几万人相送。他那套话是别做梦，脚踏实地求平安，因为你就是个普通人。可他 2020 到 2022 年还在推和地产绑定的专业，又推计算机。如今地产不行了，程序员先被 AI 淘汰。普通人的机会是自己拼出来的。把孩子提前推进不喜欢的稳定位置，人还活着，精神可能先死了。禁锢孩子更多的是父母。",
       "status": "curated",
       "degree": 9
     },
@@ -2497,17 +2486,6 @@
       "type": "episode",
       "route": "episodes/EP194",
       "summary": "工农中建四大行把去年 11 月下架的五年期大额存单重新上架，最高利率都是 1.6%。市面把它读成银行提前锁定成本、看好后续加息，这个逻辑正好搞反了。只有预判利率长期往下走，才会急着把当前的资金成本锁死。五年期比三年期只高一点点，等于想锁住这笔钱五年，又不肯为多出来的两年付钱。往下还有两层，储户拿 1.6% 的利息，银行拿这笔钱去置换地方债，化债的成本摊到了每个存钱的人头上。1.6 到 1.8 就是眼下的无风险利率，号称稳定四个点以上的产品，都得先问钱从哪儿赚。",
-      "status": "curated",
-      "degree": 9
-    },
-    {
-      "id": "episode:EP208",
-      "key": "EP208",
-      "label": "EP208",
-      "fullLabel": "EP208 · 洋大人还真管用？长三角龙头企业星宇疯狂裁员，00后维权方式让全网觉醒！",
-      "type": "episode",
-      "route": "episodes/EP208",
-      "summary": "星宇股份招了 440 名应届生，入职一个月就开始分批约谈，给的是二选一。主动离职拿半个月工资，或者从研发岗调去流水线拿普工的钱。107 人签了字。这批人没走仲裁，把材料整理成上百页再翻成英文，同时递给欧盟的合规机构、奔驰大众、港交所和国内劳动部门。8 月 25 日常州人社局通报，两天后公司致歉，补偿加到三个月补贴和最多六个月工资兜底。一种看法是，起作用的是这家公司靠欧洲订单吃饭，又正在冲港股上市。国内维权耗掉的是个人的时间，企业违法赔的是两个月工资。年轻人换了个地方算这笔账，替他们撑腰的是海外买家的规则。",
       "status": "curated",
       "degree": 9
     },
@@ -2650,7 +2628,7 @@
       "fullLabel": "数据粉饰与虚假繁荣",
       "type": "theme",
       "route": "themes/data-cosmetics-and-false-prosperity",
-      "summary": "讨论地方政府、企业与市场如何用账面数据制造景气感，却把真实风险继续藏在黑箱里。",
+      "summary": "地方、企业和学术圈用账面数字制造景气，真实风险留在黑箱里。",
       "status": null,
       "degree": 8
     },
@@ -2727,7 +2705,7 @@
       "fullLabel": "资本包装与身份背书",
       "type": "theme",
       "route": "themes/capital-packaging-and-credential-borrowing",
-      "summary": "项目、企业和人物通过借用更高等级的身份和场面来获得额外信用。",
+      "summary": "项目、企业和人借更高一级的身份和场面，换来本不属于自己的信用。",
       "status": null,
       "degree": 8
     },
@@ -2908,6 +2886,17 @@
       "degree": 8
     },
     {
+      "id": "episode:EP100",
+      "key": "EP100",
+      "label": "EP100",
+      "fullLabel": "EP100 · 涨20元的农村养老金，让我们看清了一些事。【100期特辑】",
+      "type": "episode",
+      "route": "episodes/EP100",
+      "summary": "有一部分农村老人的养老金今年涨了 20 块，很多人一听就笑了。20 块钱能买半斤肉，或者一盒便宜的降压药。同一阵子胖东来公布分配方案，普通一线员工每人分到价值 20 万的资产份额。交了一辈子公粮的老人，每月养老金一共不过 200 块，这 20 块连象征性的尊重都算不上。\n\n刺激政策讲究乘数效应和资本叠加，钱最后流进少数人的口袋。直接到老人手里的小钱，却会进菜市场和药店，养的是社会最底层。养老金分体制内、体制外和农民三类，差距长期固化，一种看法是，南斯拉夫和罗马尼亚动荡之前都走过这一段。",
+      "status": "curated",
+      "degree": 8
+    },
+    {
       "id": "episode:EP103",
       "key": "EP103",
       "label": "EP103",
@@ -3051,13 +3040,13 @@
       "degree": 8
     },
     {
-      "id": "episode:EP203",
-      "key": "EP203",
-      "label": "EP203",
-      "fullLabel": "EP203 · 扒开时代峰峻事件的底层逻辑：对立，是最便宜的流量密码！",
+      "id": "episode:EP208",
+      "key": "EP208",
+      "label": "EP208",
+      "fullLabel": "EP208 · 洋大人还真管用？长三角龙头企业星宇疯狂裁员，00后维权方式让全网觉醒！",
       "type": "episode",
-      "route": "episodes/EP203",
-      "summary": "八月中旬，重庆时代峰峻楼下聚集的青年男性和追星女粉丝起了冲突，警方通报确有其事。网上吵的几乎全是男女对立。一种推断是，水下是流量行业玩了十几年的老套路。易烊千玺靠作品拿回了关注度，公司想借对立把热度引到没出圈的新练习生身上。这个推断没有公开证据。发作品慢又费钱，搭一个对立的架子最便宜，两边自己就吵起来。围在门口喊老公的粉丝，和举着手机开直播喊正义的男性，都在分这波热度。由头一给就上头，是因为大量年轻人失业半失业，情绪没有地方去。",
+      "route": "episodes/EP208",
+      "summary": "星宇股份招了 440 名应届生，入职一个月就开始分批约谈，给的是二选一。主动离职拿半个月工资，或者从研发岗调去流水线拿普工的钱。107 人签了字。这批人没走仲裁，把材料整理成上百页再翻成英文，同时递给欧盟的合规机构、奔驰大众、港交所和国内劳动部门。8 月 25 日常州人社局通报，两天后公司致歉，补偿加到三个月补贴和最多六个月工资兜底。一种看法是，起作用的是这家公司靠欧洲订单吃饭，又正在冲港股上市。国内维权耗掉的是个人的时间，企业违法赔的是两个月工资。年轻人换了个地方算这笔账，替他们撑腰的是海外买家的规则。",
       "status": "curated",
       "degree": 8
     },
@@ -3189,7 +3178,7 @@
       "fullLabel": "公共空间与公民成熟",
       "type": "theme",
       "route": "themes/public-space-and-civic-maturity",
-      "summary": "讨论个体在公共场景里如何同时拥有权利意识、规则意识、义务感和稳定自尊。",
+      "summary": "人在公共场合怎样维护自己的权益，同时守住别人的时间、安全和共同规则。",
       "status": null,
       "degree": 7
     },
@@ -3245,17 +3234,6 @@
       "type": "theme",
       "route": "themes/exam-centered-education-and-person-formation",
       "summary": "学校和家庭围着考试转，把孩子塑造成服从分数和权威的人。",
-      "status": null,
-      "degree": 7
-    },
-    {
-      "id": "theme:youth-dreams-and-safe-paths",
-      "key": "youth-dreams-and-safe-paths",
-      "label": "年轻人梦想与安全路径",
-      "fullLabel": "年轻人梦想与安全路径",
-      "type": "theme",
-      "route": "themes/youth-dreams-and-safe-paths",
-      "summary": "关注“稳定”如何成为压制年轻人生命力的主流建议。",
       "status": null,
       "degree": 7
     },
@@ -3333,17 +3311,6 @@
       "type": "concept",
       "route": "concepts/pragmatic-legitimacy",
       "summary": "政权或共同体的稳定感，常来自普通人能持续获得可感的生活改善和秩序保障。",
-      "status": null,
-      "degree": 7
-    },
-    {
-      "id": "theme:cash-optionality-and-liquidity-anxiety",
-      "key": "cash-optionality-and-liquidity-anxiety",
-      "label": "现金为王与流动性焦虑",
-      "fullLabel": "现金为王与流动性焦虑",
-      "type": "theme",
-      "route": "themes/cash-optionality-and-liquidity-anxiety",
-      "summary": "在高波动和低信任时期，流动性比账面资产更能决定一个人和机构的安全感。",
       "status": null,
       "degree": 7
     },
@@ -3667,6 +3634,17 @@
       "degree": 7
     },
     {
+      "id": "episode:EP203",
+      "key": "EP203",
+      "label": "EP203",
+      "fullLabel": "EP203 · 扒开时代峰峻事件的底层逻辑：对立，是最便宜的流量密码！",
+      "type": "episode",
+      "route": "episodes/EP203",
+      "summary": "八月中旬，重庆时代峰峻楼下聚集的青年男性和追星女粉丝起了冲突，警方通报确有其事。网上吵的几乎全是男女对立。一种推断是，水下是流量行业玩了十几年的老套路。易烊千玺靠作品拿回了关注度，公司想借对立把热度引到没出圈的新练习生身上。这个推断没有公开证据。发作品慢又费钱，搭一个对立的架子最便宜，两边自己就吵起来。围在门口喊老公的粉丝，和举着手机开直播喊正义的男性，都在分这波热度。由头一给就上头，是因为大量年轻人失业半失业，情绪没有地方去。",
+      "status": "curated",
+      "degree": 7
+    },
+    {
       "id": "model:kpi-fraud-equilibrium",
       "key": "kpi-fraud-equilibrium",
       "label": "KPI造假均衡",
@@ -3794,7 +3772,7 @@
       "fullLabel": "家族信托与资产保全",
       "type": "theme",
       "route": "themes/trust-and-asset-preservation",
-      "summary": "讨论信托、离岸架构、上市与退出动作如何共同决定财富能不能穿越周期。",
+      "summary": "信托、离岸架构、上市和退出要提前搭好，钱的来源要干净，财富才可能穿过周期。",
       "status": null,
       "degree": 6
     },
@@ -3821,13 +3799,13 @@
       "degree": 6
     },
     {
-      "id": "theme:youth-withdrawal-and-lying-flat",
-      "key": "youth-withdrawal-and-lying-flat",
-      "label": "年轻人退出与躺平",
-      "fullLabel": "年轻人退出与躺平",
+      "id": "theme:youth-dreams-and-safe-paths",
+      "key": "youth-dreams-and-safe-paths",
+      "label": "年轻人梦想与安全路径",
+      "fullLabel": "年轻人梦想与安全路径",
       "type": "theme",
-      "route": "themes/youth-withdrawal-and-lying-flat",
-      "summary": "讨论年轻人在主流机会、劳动回报和身份路径收缩后，如何通过低欲望、退出和躺平保留有限主体性。",
+      "route": "themes/youth-dreams-and-safe-paths",
+      "summary": "稳妥的路怎样被说成年轻人唯一该走的路，能冒险的通道又怎样一条条变窄。",
       "status": null,
       "degree": 6
     },
@@ -3838,7 +3816,7 @@
       "fullLabel": "平台治理与民间话语",
       "type": "theme",
       "route": "themes/platform-governance-and-folk-discourse",
-      "summary": "讨论平台如何识别、容忍、限制和清理具有高传播性的民间表达。",
+      "summary": "平台和背后的力量怎样识别、容忍、限制和清理传得开的民间表达。",
       "status": null,
       "degree": 6
     },
@@ -3861,6 +3839,17 @@
       "type": "person",
       "route": "people/vivian-balakrishnan",
       "summary": "维文是新加坡外交部长，2015 年起任职，眼科医生出身，父亲是印度泰米尔人，母亲是福建福清籍华人。节目先拿他讲小国守海峡规则，再拿他讲穿梭外交，最后用他驳斥只有华人才厉害的种族叙事。",
+      "status": null,
+      "degree": 6
+    },
+    {
+      "id": "theme:cash-optionality-and-liquidity-anxiety",
+      "key": "cash-optionality-and-liquidity-anxiety",
+      "label": "现金为王与流动性焦虑",
+      "fullLabel": "现金为王与流动性焦虑",
+      "type": "theme",
+      "route": "themes/cash-optionality-and-liquidity-anxiety",
+      "summary": "波动大、信任低的时候，手里随时能用的现金比账面资产更能给人安全。",
       "status": null,
       "degree": 6
     },
@@ -3893,7 +3882,7 @@
       "fullLabel": "新能源设计抄近路与技术捷径",
       "type": "theme",
       "route": "themes/ev-design-and-technology-shortcuts",
-      "summary": "讨论新能源品牌如何在设计、技术和产品叙事上追求速成，并为此埋下长期反噬。",
+      "summary": "车企和科技公司在设计、技术和售后上抄近路，省下的功夫后来变成安全事故、低良率和拒保。",
       "status": null,
       "degree": 6
     },
@@ -3904,7 +3893,7 @@
       "fullLabel": "形式主义治理与仪式表演",
       "type": "theme",
       "route": "themes/performative-governance-and-ritual-display",
-      "summary": "关注治理如何通过热闹、仪式和可见动作来替代真正的问题解决。",
+      "summary": "治理靠热闹、仪式和看得见的动作证明自己有效，问题本身没解决。",
       "status": null,
       "degree": 6
     },
@@ -3970,7 +3959,7 @@
       "fullLabel": "资本博弈与美元退出",
       "type": "theme",
       "route": "themes/capital-exit-and-cross-border-harvest",
-      "summary": "危机、停牌或重组时期，真正被争夺的往往不是公司本身，而是跨法域的退出通道和美元化收益。",
+      "summary": "钱借跨境结构退出、换成美元，这些通道又被一条条查住。",
       "status": null,
       "degree": 6
     },
@@ -3981,7 +3970,7 @@
       "fullLabel": "AI泡沫与算力需求制造",
       "type": "theme",
       "route": "themes/ai-bubble-and-compute-demand",
-      "summary": "讨论 AI 热潮如何被资本、工具和基础设施共同推高，又如何反过来制造新的算力消费需求。",
+      "summary": "资本先把算力和工具铺开，再用补贴和热度把用量做出来，拿用量讲估值。",
       "status": null,
       "degree": 6
     },
@@ -4267,7 +4256,7 @@
       "fullLabel": "家族企业继承与治理断裂",
       "type": "theme",
       "route": "themes/family-succession-and-governance",
-      "summary": "讨论创始人家族、接班方式与旧利益安排如何把企业从经营问题推向治理问题。",
+      "summary": "创始人家族、接班方式和旧利益安排，把企业从经营问题推成治理问题。",
       "status": null,
       "degree": 5
     },
@@ -4311,7 +4300,7 @@
       "fullLabel": "内容监管与短剧崛起",
       "type": "theme",
       "route": "themes/content-regulation-and-short-drama",
-      "summary": "讨论长剧、电影、网剧和短剧在不同审核路径下如何重新竞争。",
+      "summary": "审核路径不同，长剧、电影、短剧和现场演出的成本和玩法跟着变。",
       "status": null,
       "degree": 5
     },
@@ -4620,17 +4609,6 @@
       "type": "episode",
       "route": "episodes/EP056",
       "summary": "战争常被看成军队的较量，往深一层看，大国比的是国力，更是时间。1941 年美国冻结日本资产，禁运石油和钢铁。据说日本海军省算过，当年开打还有机会，拖到 1942 年就毫无胜算，偷袭珍珠港是掐着表开的战。日本想复制日俄战争，在东亚岛链搞区域拒止，等美国像沙俄一样签协议让出这片区域。美国偏不按这个剧本走，定了先欧后亚，输几场也能慢慢造船补回来。石原莞尔的最终战理论让日本上下认定美日必有一战。谁的国力、科技和文化能随着时间不断创新，时间就站在谁那边。",
-      "status": "curated",
-      "degree": 5
-    },
-    {
-      "id": "episode:EP069",
-      "key": "EP069",
-      "label": "EP069",
-      "fullLabel": "EP069 · 金条银条炒飞了，“铜条”都来了，咱炒的是情绪价值……",
-      "type": "episode",
-      "route": "episodes/EP069",
-      "summary": "金条银条之后，连铜条都按斤卖了。一公斤一两百块，卖家却不回收，想回本铜价得涨到每吨 20 万以上。铜价被推高，据说导火索是英伟达一份技术报告。它把数据中心的铜需求写成 50 万吨，后来被扒出单位应是磅，差了 2000 倍。英伟达悄悄改了数字，认知却已经定形，何况有报道说 2026 年铜还会过剩。实体投不动，钱没地方去，市场从价值投资换成了情绪投资。各种金属锭像当年的币一样轮番上场，骗子也越来越多。自以为在倒手的人，和他的下家一样都是韭菜。",
       "status": "curated",
       "degree": 5
     },
@@ -5383,13 +5361,13 @@
       "degree": 4
     },
     {
-      "id": "episode:EP068",
-      "key": "EP068",
-      "label": "EP068",
-      "fullLabel": "EP068 · 年关将至，妈妈们又开始催婚了，新加坡女孩为什么还很“传统”？",
+      "id": "episode:EP069",
+      "key": "EP069",
+      "label": "EP069",
+      "fullLabel": "EP069 · 金条银条炒飞了，“铜条”都来了，咱炒的是情绪价值……",
       "type": "episode",
-      "route": "episodes/EP068",
-      "summary": "年底妈妈们又开始催婚，标准却翻了个面。房子车子可以不要，工作也不那么要紧，男人必须得帅。这种调整没有商量，直接从一个极端跳到另一个极端。两千年帝制没留下平等议事的规则，父母自己思维上不去，就更想控制孩子。丢得最多的是审美，改革开放那些年它一直往上走，最近十几二十年停住了。短视频又把人关进更小的牢笼。一位新加坡女孩说择偶要端正、有事业心，30 岁存 7 万新元就够。这些本是我们三四十年前的常识。富商们修高墙、安排联姻，也没护住哪个家族。父母能做的，是让孩子自己去掌舵。",
+      "route": "episodes/EP069",
+      "summary": "金条银条之后，连铜条都按斤卖了。一公斤一两百块，卖家却不回收，想回本铜价得涨到每吨 20 万以上。铜价被推高，据说导火索是英伟达一份技术报告。它把数据中心的铜需求写成 50 万吨，后来被扒出单位应是磅，差了 2000 倍。英伟达悄悄改了数字，认知却已经定形，何况有报道说 2026 年铜还会过剩。实体投不动，钱没地方去，市场从价值投资换成了情绪投资。各种金属锭像当年的币一样轮番上场，骗子也越来越多。自以为在倒手的人，和他的下家一样都是韭菜。",
       "status": "curated",
       "degree": 4
     },
@@ -5768,6 +5746,17 @@
       "degree": 3
     },
     {
+      "id": "theme:youth-withdrawal-and-lying-flat",
+      "key": "youth-withdrawal-and-lying-flat",
+      "label": "年轻人退出与躺平",
+      "fullLabel": "年轻人退出与躺平",
+      "type": "theme",
+      "route": "themes/youth-withdrawal-and-lying-flat",
+      "summary": "劳动回报和上升通道收窄之后，年轻人用躺平、敷衍和退出主流赛道来保住自己。",
+      "status": null,
+      "degree": 3
+    },
+    {
       "id": "person:pan-shiyi",
       "key": "pan-shiyi",
       "label": "潘石屹",
@@ -6138,6 +6127,17 @@
       "type": "episode",
       "route": "episodes/EP017",
       "summary": "国航 CA139 从杭州飞仁川，航程过半，行李架里一块没在充电的锂电池烧了起来。能过安检就是合格产品，这事跟安检、跟航空公司都没多大关系。锂电池不像油车按工况着火，它按几率自燃，合规查得出来，安全查不出来。当年三星手机被推出来背锅，和北京报纸专给河南人标籍贯，是同一种谬误。机组两分钟才到位，演练不够，这点能改。可不是每次事故背后都藏着大问题，很多事靠的是英国那种渐进和妥协，动不动大改，改完可能还不如不改。一飞机人平安落地，先该庆幸。",
+      "status": "curated",
+      "degree": 3
+    },
+    {
+      "id": "episode:EP068",
+      "key": "EP068",
+      "label": "EP068",
+      "fullLabel": "EP068 · 年关将至，妈妈们又开始催婚了，新加坡女孩为什么还很“传统”？",
+      "type": "episode",
+      "route": "episodes/EP068",
+      "summary": "年底妈妈们又开始催婚，标准却翻了个面。房子车子可以不要，工作也不那么要紧，男人必须得帅。这种调整没有商量，直接从一个极端跳到另一个极端。两千年帝制没留下平等议事的规则，父母自己思维上不去，就更想控制孩子。丢得最多的是审美，改革开放那些年它一直往上走，最近十几二十年停住了。短视频又把人关进更小的牢笼。一位新加坡女孩说择偶要端正、有事业心，30 岁存 7 万新元就够。这些本是我们三四十年前的常识。富商们修高墙、安排联姻，也没护住哪个家族。父母能做的，是让孩子自己去掌舵。",
       "status": "curated",
       "degree": 3
     },
@@ -9721,6 +9721,11 @@
       "kind": "episode-theme"
     },
     {
+      "source": "episode:EP043",
+      "target": "theme:youth-withdrawal-and-lying-flat",
+      "kind": "episode-theme"
+    },
+    {
       "source": "episode:EP044",
       "target": "concept:sanction-containment",
       "kind": "episode-concept"
@@ -10478,11 +10483,6 @@
     {
       "source": "episode:EP069",
       "target": "theme:narrative-speculation-and-retail-traps",
-      "kind": "episode-theme"
-    },
-    {
-      "source": "episode:EP069",
-      "target": "theme:cash-optionality-and-liquidity-anxiety",
       "kind": "episode-theme"
     },
     {
@@ -14016,11 +14016,6 @@
       "kind": "episode-theme"
     },
     {
-      "source": "episode:EP166",
-      "target": "theme:rule-of-law-boundaries-and-social-trust",
-      "kind": "episode-theme"
-    },
-    {
       "source": "episode:EP167",
       "target": "concept:strategic-depth-inversion",
       "kind": "episode-concept"
@@ -15017,11 +15012,6 @@
     },
     {
       "source": "episode:EP190",
-      "target": "theme:southeast-asia-fragmentation-and-bloc-competition",
-      "kind": "episode-theme"
-    },
-    {
-      "source": "episode:EP190",
       "target": "theme:human-value-and-state-credit",
       "kind": "episode-theme"
     },
@@ -15621,11 +15611,6 @@
       "kind": "episode-theme"
     },
     {
-      "source": "episode:EP203",
-      "target": "theme:youth-withdrawal-and-lying-flat",
-      "kind": "episode-theme"
-    },
-    {
       "source": "episode:EP204",
       "target": "concept:cost-shifting",
       "kind": "episode-concept"
@@ -15718,11 +15703,6 @@
     {
       "source": "episode:EP205",
       "target": "theme:content-regulation-and-short-drama",
-      "kind": "episode-theme"
-    },
-    {
-      "source": "episode:EP205",
-      "target": "theme:middle-class-descent-and-stratification",
       "kind": "episode-theme"
     },
     {
@@ -15847,11 +15827,6 @@
     },
     {
       "source": "episode:EP208",
-      "target": "theme:youth-dreams-and-safe-paths",
-      "kind": "episode-theme"
-    },
-    {
-      "source": "episode:EP208",
       "target": "theme:human-value-and-state-credit",
       "kind": "episode-theme"
     },
@@ -15953,11 +15928,6 @@
     {
       "source": "episode:EP210",
       "target": "theme:human-value-and-state-credit",
-      "kind": "episode-theme"
-    },
-    {
-      "source": "episode:EP210",
-      "target": "theme:ev-safety-and-consumer-testing",
       "kind": "episode-theme"
     },
     {
@@ -22827,32 +22797,7 @@
     },
     {
       "source": "episode:EP100",
-      "target": "theme:middle-class-descent-and-stratification",
-      "kind": "episode-theme"
-    },
-    {
-      "source": "episode:EP100",
       "target": "theme:public-service-downgrading",
-      "kind": "episode-theme"
-    },
-    {
-      "source": "episode:EP068",
-      "target": "theme:singapore-and-small-state-survival",
-      "kind": "episode-theme"
-    },
-    {
-      "source": "episode:EP043",
-      "target": "theme:youth-withdrawal-and-lying-flat",
-      "kind": "episode-theme"
-    },
-    {
-      "source": "episode:EP111",
-      "target": "theme:youth-withdrawal-and-lying-flat",
-      "kind": "episode-theme"
-    },
-    {
-      "source": "episode:EP128",
-      "target": "theme:youth-withdrawal-and-lying-flat",
       "kind": "episode-theme"
     }
   ]
