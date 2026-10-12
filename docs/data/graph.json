@@ -3,7 +3,7 @@
     "title": "颖响力知识图谱",
     "subtitle": "节目、概念、模型、人物、主题之间的可视化连接网络",
     "nodeCount": 764,
-    "linkCount": 2874,
+    "linkCount": 2861,
     "typeCounts": {
       "model": 83,
       "live": 49,
@@ -21,9 +21,9 @@
       "fullLabel": "风险转移链条",
       "type": "model",
       "route": "models/risk-transfer-chain",
-      "summary": "系统不会立刻吞下风险，而是先沿着银行、企业、票据、供应链和普通人之间不断转手、延后和下沉。",
+      "summary": "风险很少当场爆掉，多半先在银行、企业、票据、供应链和普通人之间转手、延后，一层层往下沉。",
       "status": null,
-      "degree": 59
+      "degree": 57
     },
     {
       "id": "live:LIVE022",
@@ -235,17 +235,6 @@
       "degree": 27
     },
     {
-      "id": "episode:EP154",
-      "key": "EP154",
-      "label": "EP154",
-      "fullLabel": "EP154 · 赫格塞斯新加坡香会“围栏论”真相（上）：川普的全球建墙计划，已修到东亚，围墙就划到中国家门口",
-      "type": "episode",
-      "route": "episodes/EP154",
-      "summary": "香格里拉对话会上，美国防长赫格塞斯讲了一段话。多数解读抓住他要建立建设性战略稳定关系那句软话，认为是降调求稳。其实那只是开场的烟雾弹。关键词是后半段的围栏，他已把边界划在第一岛链，围栏成了修到东亚家门口的高墙。它接的是川普的新门罗主义，一边建墙，一边打击灰色贸易。美军收拳后撤，让盟友顶到前线守墙。芯片管制也开始按总部认人，墙修到了信息层。东南亚是最后一段还没划定的边界，香会就是逼骑墙国家选边的场子。",
-      "status": "curated",
-      "degree": 26
-    },
-    {
       "id": "live:LIVE011",
       "key": "LIVE011",
       "label": "LIVE011",
@@ -334,6 +323,17 @@
       "degree": 25
     },
     {
+      "id": "episode:EP154",
+      "key": "EP154",
+      "label": "EP154",
+      "fullLabel": "EP154 · 赫格塞斯新加坡香会“围栏论”真相（上）：川普的全球建墙计划，已修到东亚，围墙就划到中国家门口",
+      "type": "episode",
+      "route": "episodes/EP154",
+      "summary": "香格里拉对话会上，美国防长赫格塞斯讲了一段话。多数解读抓住他要建立建设性战略稳定关系那句软话，认为是降调求稳。其实那只是开场的烟雾弹。关键词是后半段的围栏，他已把边界划在第一岛链，围栏成了修到东亚家门口的高墙。它接的是川普的新门罗主义，一边建墙，一边打击灰色贸易。美军收拳后撤，让盟友顶到前线守墙。芯片管制也开始按总部认人，墙修到了信息层。东南亚是最后一段还没划定的边界，香会就是逼骑墙国家选边的场子。",
+      "status": "curated",
+      "degree": 25
+    },
+    {
       "id": "episode:EP169",
       "key": "EP169",
       "label": "EP169",
@@ -341,17 +341,6 @@
       "type": "episode",
       "route": "episodes/EP169",
       "summary": "合肥被称为中国最牛风投城市。各地城投照抄，多数抄出一身债和产能过剩。可学的不是城市打法，是背后的投资逻辑。四个显性方法是逆周期抄底不追热点，赌产业链不赌单家公司。还有长期陪跑到成熟才退出，只投接得住的赛道。抄不走的是第五个隐性秘籍。政府能把权力直接变成补贴、报表和销售额。普通人没权力，唯一对应物是信息确定性。普通人要掌握的是别人没有的确定信息，像一级市场那样看清命脉。到那一步，欧印和加杠杆才不是赌博。",
-      "status": "curated",
-      "degree": 25
-    },
-    {
-      "id": "live:LIVE012",
-      "key": "LIVE012",
-      "label": "LIVE012",
-      "fullLabel": "LIVE012 · 为什么这次不可能有几十年冷战？出生人口从1700万掉到600万，天平撑不住",
-      "type": "live",
-      "route": "lives/LIVE012",
-      "summary": "对手不会等你二十年，他会在这二十年里一直逗弄你。",
       "status": "curated",
       "degree": 25
     },
@@ -430,6 +419,17 @@
       "route": "concepts/chokepoint-leverage",
       "summary": "控制海峡、运河和关键通道的人，往往能把地理位置转化成定价权、通行权和规则权。",
       "status": null,
+      "degree": 24
+    },
+    {
+      "id": "live:LIVE012",
+      "key": "LIVE012",
+      "label": "LIVE012",
+      "fullLabel": "LIVE012 · 为什么这次不可能有几十年冷战？出生人口从1700万掉到600万，天平撑不住",
+      "type": "live",
+      "route": "lives/LIVE012",
+      "summary": "对手不会等你二十年，他会在这二十年里一直逗弄你。",
+      "status": "curated",
       "degree": 24
     },
     {
@@ -598,17 +598,6 @@
       "degree": 22
     },
     {
-      "id": "model:path-dependence",
-      "key": "path-dependence",
-      "label": "路径依赖",
-      "fullLabel": "路径依赖",
-      "type": "model",
-      "route": "models/path-dependence",
-      "summary": "路径依赖解释早期技术和叙事选择一旦成功，就会反过来限制后续转向更优路径。",
-      "status": null,
-      "degree": 21
-    },
-    {
       "id": "episode:EP131",
       "key": "EP131",
       "label": "EP131",
@@ -675,17 +664,6 @@
       "degree": 20
     },
     {
-      "id": "model:strategic-timing",
-      "key": "strategic-timing",
-      "label": "战略时机",
-      "fullLabel": "战略时机",
-      "type": "model",
-      "route": "models/strategic-timing",
-      "summary": "真正决定收益的往往不是是否参与，而是你能否在远早于大众情绪的时点、以合适规模和合适位置进入。",
-      "status": null,
-      "degree": 20
-    },
-    {
       "id": "episode:EP138",
       "key": "EP138",
       "label": "EP138",
@@ -719,13 +697,13 @@
       "degree": 20
     },
     {
-      "id": "model:value-capture",
-      "key": "value-capture",
-      "label": "价值捕获",
-      "fullLabel": "价值捕获",
+      "id": "model:strategic-timing",
+      "key": "strategic-timing",
+      "label": "战略时机",
+      "fullLabel": "战略时机",
       "type": "model",
-      "route": "models/value-capture",
-      "summary": "价值捕获模型强调商业链条中关键不只是创造了价值，而是谁真正留下了价值。",
+      "route": "models/strategic-timing",
+      "summary": "看对方向只是一半，什么时候进、什么时候等、用多大的注，往往更决定结果。",
       "status": null,
       "degree": 19
     },
@@ -824,7 +802,7 @@
       "fullLabel": "代理围堵环",
       "type": "model",
       "route": "models/proxy-containment-ring",
-      "summary": "代理围堵环解释大国如何通过盟友、代理人和通道控制分摊成本、封堵对手。",
+      "summary": "大国靠盟友、代理人和通道控制分摊成本，把对手围在里面，用不着每个节点都亲自出手。",
       "status": null,
       "degree": 18
     },
@@ -858,6 +836,17 @@
       "type": "model",
       "route": "models/leverage-backfire",
       "summary": "杠杆反噬解释上行期放大利润的结构，如何在下行期放大亏损、现金流压力和清偿困难。",
+      "status": null,
+      "degree": 18
+    },
+    {
+      "id": "model:value-capture",
+      "key": "value-capture",
+      "label": "价值捕获",
+      "fullLabel": "价值捕获",
+      "type": "model",
+      "route": "models/value-capture",
+      "summary": "一条商业链条上，创造了价值和留下了价值是两回事，要看钱最后落在谁手里。",
       "status": null,
       "degree": 18
     },
@@ -983,13 +972,24 @@
       "degree": 16
     },
     {
+      "id": "model:path-dependence",
+      "key": "path-dependence",
+      "label": "路径依赖",
+      "fullLabel": "路径依赖",
+      "type": "model",
+      "route": "models/path-dependence",
+      "summary": "早期的选择一旦成功，会沉淀成习惯、资产和期待，反过来限制后来的转向。",
+      "status": null,
+      "degree": 16
+    },
+    {
       "id": "model:balance-sheet-maintenance",
       "key": "balance-sheet-maintenance",
       "label": "资产负债表维持",
       "fullLabel": "资产负债表维持",
       "type": "model",
       "route": "models/balance-sheet-maintenance",
-      "summary": "当系统进入压力期，各方优先做的不是立刻出清，而是先保住估值、抵押物和报表表面完整。",
+      "summary": "系统承压时，各方先保住估值、抵押物和报表的表面完整，出清往后排。",
       "status": null,
       "degree": 16
     },
@@ -1165,7 +1165,7 @@
       "fullLabel": "委托代理问题",
       "type": "model",
       "route": "models/principal-agent",
-      "summary": "委托代理模型解释外部顾问或职业代理人的激励，未必与委托方长期价值一致。",
+      "summary": "出钱或托付的一方和办事的一方不是同一个人，办事的人在乎的东西，常常跟托付他的人要的不一样。",
       "status": null,
       "degree": 14
     },
@@ -1313,17 +1313,6 @@
       "degree": 13
     },
     {
-      "id": "model:narrative-leverage",
-      "key": "narrative-leverage",
-      "label": "叙事杠杆",
-      "fullLabel": "叙事杠杆",
-      "type": "model",
-      "route": "models/narrative-leverage",
-      "summary": "通过一个足够大的故事，把原本有限的资源、信用和注意力撬成更大的资本、销量或支持度。",
-      "status": null,
-      "degree": 13
-    },
-    {
       "id": "theme:state-business-entanglement",
       "key": "state-business-entanglement",
       "label": "政企嵌入与企业存续",
@@ -1332,28 +1321,6 @@
       "route": "themes/state-business-entanglement",
       "summary": "讨论企业如何依赖地方政府、国资平台或关系结构续命，以及这种绑定如何反过来改写企业目标。",
       "status": null,
-      "degree": 13
-    },
-    {
-      "id": "model:sanction-parallel-market",
-      "key": "sanction-parallel-market",
-      "label": "制裁平行市场模型",
-      "fullLabel": "制裁平行市场模型",
-      "type": "model",
-      "route": "models/sanction-parallel-market",
-      "summary": "制裁如果没有消灭需求，就会把交易推向更高风险、更高利润、更难监管的平行市场。",
-      "status": null,
-      "degree": 13
-    },
-    {
-      "id": "episode:EP076",
-      "key": "EP076",
-      "label": "EP076",
-      "fullLabel": "EP076 · 今天的黄金白银，无论涨跌对散户来说都是陷阱。",
-      "type": "episode",
-      "route": "episodes/EP076",
-      "summary": "铜条那期之后有人追问黄金白银能不能赚钱。从现在开始，绝大多数人怎么做都赔。真正有信用的是纽约贵金属商品交易所，香港的黄金市场已属二级。散户碰得到的水贝料商、私营 App 和实物渠道，都是三四级的私盘。盘主对不对冲全看贪婪，不对冲又扛不住，平台一消失，用户的钱也跟着没了。大赌场和山姆超市反而都在控制贪婪。喊你一起玩的人多半已经重仓在先，你押上的却是全部身家。真正的高手一上来砸进一半资产，其余时间拿好现金，等下一次机会。",
-      "status": "curated",
       "degree": 13
     },
     {
@@ -1462,7 +1429,7 @@
       "fullLabel": "规则锚定型小国生存",
       "type": "model",
       "route": "models/rule-anchored-small-state-model",
-      "summary": "小国要长期活下来，不能只靠地理好运，更要靠规则信誉、理性政府和可预期的制度自我约束。",
+      "summary": "小国要长期活下来，靠的是规则信誉、理性的政府和看得见的自我约束，地理上的好运气只是起点。",
       "status": null,
       "degree": 12
     },
@@ -1495,7 +1462,7 @@
       "fullLabel": "小国平衡术",
       "type": "model",
       "route": "models/small-state-balancing-model",
-      "summary": "小国平衡术解释小国在大国之间维持生存空间，靠位置、合法性和现实利益而非纯姿态。",
+      "summary": "小国在大国之间保住生存空间，靠的是位置、内部合法性和实际利益，表态排在后面。",
       "status": null,
       "degree": 12
     },
@@ -1507,6 +1474,28 @@
       "type": "concept",
       "route": "concepts/phantom-sales",
       "summary": "企业把并不存在的真实终端需求，包装成销量、出海成绩或渠道消化能力，用来维持估值和融资信心。",
+      "status": null,
+      "degree": 12
+    },
+    {
+      "id": "model:narrative-leverage",
+      "key": "narrative-leverage",
+      "label": "叙事杠杆",
+      "fullLabel": "叙事杠杆",
+      "type": "model",
+      "route": "models/narrative-leverage",
+      "summary": "一个足够大的故事，能把有限的资源、信用和注意力，撬成更多的资本、销量或支持。",
+      "status": null,
+      "degree": 12
+    },
+    {
+      "id": "model:sanction-parallel-market",
+      "key": "sanction-parallel-market",
+      "label": "制裁平行市场模型",
+      "fullLabel": "制裁平行市场模型",
+      "type": "model",
+      "route": "models/sanction-parallel-market",
+      "summary": "制裁如果没有消灭需求，就会把交易推向更高风险、更高利润、更难监管的平行市场。",
       "status": null,
       "degree": 12
     },
@@ -1540,6 +1529,17 @@
       "type": "episode",
       "route": "episodes/EP049",
       "summary": "Anthropic 把一台自动贩卖机交给 AI 经营。记者聊了一百四十句，就让它免费送货。公司加了一个 AI 老板监督，一份伪造的 PDF 又让两个 AI 吵到崩溃，接着免费送。往 AI 里砸的硬件、人员和资本，能不能换回配得上的应用价值，成了更大的问题。\n\n毛病有两个。AI 太好骗，约百万分之一点六的污染数据就能改掉模型的判断。记忆又太短，只能一层层叠老板，叠出冗余。电车困境该追问的，是那辆车为什么停不下来。冷战时里根提出星球大战计划，美国那列车撞墙前能散开，苏联的车一路开进峡谷，先垮的是经济。",
+      "status": "curated",
+      "degree": 12
+    },
+    {
+      "id": "episode:EP076",
+      "key": "EP076",
+      "label": "EP076",
+      "fullLabel": "EP076 · 今天的黄金白银，无论涨跌对散户来说都是陷阱。",
+      "type": "episode",
+      "route": "episodes/EP076",
+      "summary": "铜条那期之后有人追问黄金白银能不能赚钱。从现在开始，绝大多数人怎么做都赔。真正有信用的是纽约贵金属商品交易所，香港的黄金市场已属二级。散户碰得到的水贝料商、私营 App 和实物渠道，都是三四级的私盘。盘主对不对冲全看贪婪，不对冲又扛不住，平台一消失，用户的钱也跟着没了。大赌场和山姆超市反而都在控制贪婪。喊你一起玩的人多半已经重仓在先，你押上的却是全部身家。真正的高手一上来砸进一半资产，其余时间拿好现金，等下一次机会。",
       "status": "curated",
       "degree": 12
     },
@@ -1643,17 +1643,6 @@
       "degree": 12
     },
     {
-      "id": "episode:EP166",
-      "key": "EP166",
-      "label": "EP166",
-      "fullLabel": "EP166 · 山姆被市监总局约谈后，还能去吗？火速换帅背后真相！",
-      "type": "episode",
-      "route": "episodes/EP166",
-      "summary": "山姆中国被市场监管总局约谈，又火速换掉采购与品控负责人，冲上热搜。约谈不等于品控崩塌。山姆是商超顶流，付费会员破千万，自带放大镜，同样的食安问题被无限放大。真正的病根是五年门店翻倍、狂奔百店，管理和品控没跟上。它比普通超市好，但不是零添加净土。合规只是及格线，会员卡图的是超出及格线的放心。约谈反而倒逼它把品控做高。别把信任交给任何品牌。能去还得去，有 Costco 优先 Costco，进门还是要看配料表。",
-      "status": "curated",
-      "degree": 12
-    },
-    {
       "id": "episode:EP182",
       "key": "EP182",
       "label": "EP182",
@@ -1748,7 +1737,7 @@
       "fullLabel": "海峡秩序模型",
       "type": "model",
       "route": "models/chokepoint-order-model",
-      "summary": "真正决定咽喉通道价值的，不只是地理位置，而是谁定义通行规则、风险定价与法律边界。",
+      "summary": "一条咽喉通道值多少钱，地理位置只是起点，还要看谁定通行规则、谁给风险定价、谁划法律边界。",
       "status": null,
       "degree": 11
     },
@@ -1841,6 +1830,17 @@
       "degree": 11
     },
     {
+      "id": "episode:EP166",
+      "key": "EP166",
+      "label": "EP166",
+      "fullLabel": "EP166 · 山姆被市监总局约谈后，还能去吗？火速换帅背后真相！",
+      "type": "episode",
+      "route": "episodes/EP166",
+      "summary": "山姆中国被市场监管总局约谈，又火速换掉采购与品控负责人，冲上热搜。约谈不等于品控崩塌。山姆是商超顶流，付费会员破千万，自带放大镜，同样的食安问题被无限放大。真正的病根是五年门店翻倍、狂奔百店，管理和品控没跟上。它比普通超市好，但不是零添加净土。合规只是及格线，会员卡图的是超出及格线的放心。约谈反而倒逼它把品控做高。别把信任交给任何品牌。能去还得去，有 Costco 优先 Costco，进门还是要看配料表。",
+      "status": "curated",
+      "degree": 11
+    },
+    {
       "id": "episode:EP186",
       "key": "EP186",
       "label": "EP186",
@@ -1913,7 +1913,7 @@
       "fullLabel": "区域拒止模型",
       "type": "model",
       "route": "models/regional-denial-model",
-      "summary": "真正有效的区域拒止，不是无上限扩张，而是把对手压在若干区域里，阻止其形成全球联动能力。",
+      "summary": "把对手长期压在几个区域里，让它在每一块都占不了上风，各块之间也连不起来，长不成能跨区域联动的集团。",
       "status": null,
       "degree": 10
     },
@@ -1948,28 +1948,6 @@
       "route": "models/political-embedded-enterprise",
       "summary": "企业一旦把自身命运深嵌进地方政府或国资体系，短期会更能续命，长期却更容易沦为政策工具。",
       "status": null,
-      "degree": 10
-    },
-    {
-      "id": "episode:EP057",
-      "key": "EP057",
-      "label": "EP057",
-      "fullLabel": "EP057 · 新加坡AI公司被美国Meta收购，中媒兴奋个什么劲？解读Manus被收购的前因后果。",
-      "type": "episode",
-      "route": "episodes/EP057",
-      "summary": "Meta 花几十亿美元收购 Manus，有人说这是中国 AI 的胜利，可被收的是一家新加坡公司。创始人肖弘 2025 年年中就举家搬去新加坡，关掉北京和武汉的总部，清空国内账号。据说字节跳动当初只肯出三千万美元收购，国内大厂看懂就复制、挖人再打死，美国又限制本国资本投中国 AI，拿了国有基金还得按上游的 KPI 长。新加坡的人才、投资、金融和法律连成一套，Meta 才敢很快拍板，还宣布让肖弘出任副总裁。肖弘本科毕业就出来创业，中国教育没孵出他，是把他挤了出去。",
-      "status": "curated",
-      "degree": 10
-    },
-    {
-      "id": "episode:EP062",
-      "key": "EP062",
-      "label": "EP062",
-      "fullLabel": "EP062 · 电车圈的“丐帮”是谁？帮主 9+plus“袋子”里装的都是信徒的“买命钱”。",
-      "type": "episode",
-      "route": "episodes/EP062",
-      "summary": "小米靠亲民起家，在车圈被叫作丐帮。卢伟冰（推测）去欧洲说，那边的人爱开快车，要给他们准备更坚固的车。他还说到 2027 年才能基本准备好。国内车主于是成了测试员，拿自己的性命替欧洲人试车。雷军嘴上骂黑公关，转身花钱招安黑子，钱不花在车主和产品上。出了事说是新媒体害的。刹车盘太小、车门打不开这些产品问题都不认，又造出丢轮保车这种新词。车一年卖了这么多，利润大了，小米就忘了本。有一天毁掉它的，会是看明白了的米粉。",
-      "status": "curated",
       "degree": 10
     },
     {
@@ -2155,18 +2133,7 @@
       "fullLabel": "时间套利模型",
       "type": "model",
       "route": "models/time-arbitrage-model",
-      "summary": "真正高明的行动，不是只比现在谁更强，而是比谁更懂得利用时间差、窗口差和成本差。",
-      "status": null,
-      "degree": 9
-    },
-    {
-      "id": "model:ex-post-accountability-governance",
-      "key": "ex-post-accountability-governance",
-      "label": "事后追责治理模型",
-      "fullLabel": "事后追责治理模型",
-      "type": "model",
-      "route": "models/ex-post-accountability-governance",
-      "summary": "治理可以选择事前管制每个人，也可以选择给自由、事后对违规者施加无法承受的代价；后者往往比前者更省成本也更有效。",
+      "summary": "两方比的不只是眼下谁强，还有谁拖得起。能把时间拉长的一方，往往不用抢先出手。",
       "status": null,
       "degree": 9
     },
@@ -2199,7 +2166,7 @@
       "fullLabel": "制度适配",
       "type": "model",
       "route": "models/institutional-fit",
-      "summary": "制度适配解释能力能否兑现，取决于组织被放在怎样的法律、资本和治理环境中。",
+      "summary": "能力能不能兑现，要看组织落在什么样的法律、资本和治理环境里。同一个团队、同一套制度，换个地方结果可能完全不同。",
       "status": null,
       "degree": 9
     },
@@ -2210,7 +2177,7 @@
       "fullLabel": "制度形式主义螺旋",
       "type": "model",
       "route": "models/institutional-formalism-spiral",
-      "summary": "组织一旦开始依赖仪式、排名、头衔和场面来证明自己有效，就会不断加码这些外壳，同时越来越失去真正解决问题的能力。",
+      "summary": "组织靠仪式、排名、头衔和场面证明自己在干活，这层外壳会越加越厚，解决问题的本事越来越少。",
       "status": null,
       "degree": 9
     },
@@ -2336,6 +2303,17 @@
       "degree": 9
     },
     {
+      "id": "episode:EP057",
+      "key": "EP057",
+      "label": "EP057",
+      "fullLabel": "EP057 · 新加坡AI公司被美国Meta收购，中媒兴奋个什么劲？解读Manus被收购的前因后果。",
+      "type": "episode",
+      "route": "episodes/EP057",
+      "summary": "Meta 花几十亿美元收购 Manus，有人说这是中国 AI 的胜利，可被收的是一家新加坡公司。创始人肖弘 2025 年年中就举家搬去新加坡，关掉北京和武汉的总部，清空国内账号。据说字节跳动当初只肯出三千万美元收购，国内大厂看懂就复制、挖人再打死，美国又限制本国资本投中国 AI，拿了国有基金还得按上游的 KPI 长。新加坡的人才、投资、金融和法律连成一套，Meta 才敢很快拍板，还宣布让肖弘出任副总裁。肖弘本科毕业就出来创业，中国教育没孵出他，是把他挤了出去。",
+      "status": "curated",
+      "degree": 9
+    },
+    {
       "id": "episode:EP060",
       "key": "EP060",
       "label": "EP060",
@@ -2343,6 +2321,17 @@
       "type": "episode",
       "route": "episodes/EP060",
       "summary": "2026 年 1 月，委内瑞拉总统马杜罗被美军带走，有人说是为了石油，有人说破坏了国际法。这件事要放进区域拒止里看。美国国力撑不起世界警察，就把欧洲、阿拉伯地区和亚洲交给各地盟友，自己先把美洲收拾干净。这套策略是美国最早做成的。1812 年它想吞下加拿大，两年后反被英军打进华盛顿，此后才学会示弱撤兵，靠门罗主义把欧洲挡在美洲之外，安心发育了一百年。美元体系如今也到了出问题的年头，特朗普的新门罗主义像老狮王收回拳头，等挑战者自己着急扑上来。",
+      "status": "curated",
+      "degree": 9
+    },
+    {
+      "id": "episode:EP062",
+      "key": "EP062",
+      "label": "EP062",
+      "fullLabel": "EP062 · 电车圈的“丐帮”是谁？帮主 9+plus“袋子”里装的都是信徒的“买命钱”。",
+      "type": "episode",
+      "route": "episodes/EP062",
+      "summary": "小米靠亲民起家，在车圈被叫作丐帮。卢伟冰（推测）去欧洲说，那边的人爱开快车，要给他们准备更坚固的车。他还说到 2027 年才能基本准备好。国内车主于是成了测试员，拿自己的性命替欧洲人试车。雷军嘴上骂黑公关，转身花钱招安黑子，钱不花在车主和产品上。出了事说是新媒体害的。刹车盘太小、车门打不开这些产品问题都不认，又造出丢轮保车这种新词。车一年卖了这么多，利润大了，小米就忘了本。有一天毁掉它的，会是看明白了的米粉。",
       "status": "curated",
       "degree": 9
     },
@@ -2617,7 +2606,18 @@
       "fullLabel": "筛选机器模型",
       "type": "model",
       "route": "models/screening-machine",
-      "summary": "教育和组织把人当作待筛选样本，而非待生长的人来处理的系统逻辑。",
+      "summary": "教育和组织的头号任务变成排名、分层和输送，人就被当成待筛的样本来处理。",
+      "status": null,
+      "degree": 8
+    },
+    {
+      "id": "model:ex-post-accountability-governance",
+      "key": "ex-post-accountability-governance",
+      "label": "事后追责治理模型",
+      "fullLabel": "事后追责治理模型",
+      "type": "model",
+      "route": "models/ex-post-accountability-governance",
+      "summary": "治理可以事前管住每个人，也可以先给自由、事后让违规者付出扛不起的代价。后一条往往更省钱，也更管用。",
       "status": null,
       "degree": 8
     },
@@ -3145,7 +3145,7 @@
       "fullLabel": "反馈回路",
       "type": "model",
       "route": "models/feedback-loops",
-      "summary": "反馈回路模型解释老板偏好、顾问强化和组织沉默如何形成自我强化的错误循环。",
+      "summary": "老板偏好、顾问附和、内部沉默一圈圈互相加固，错的判断越走越远，坏消息回不到决策的人手里。",
       "status": null,
       "degree": 7
     },
@@ -3189,7 +3189,7 @@
       "fullLabel": "合规成本套利模型",
       "type": "model",
       "route": "models/regulatory-cost-arbitrage",
-      "summary": "当同一市场存在多条监管路径，低合规成本路径会获得更高试错频率和更强替代能力。",
+      "summary": "同一个市场里有几条合规成本不同的路，成本低的那条试错更多、跑得更快，把守规矩的一方挤到角落。",
       "status": null,
       "degree": 7
     },
@@ -3245,17 +3245,6 @@
       "type": "concept",
       "route": "concepts/authority-internalization",
       "summary": "外部权威被吸收到人格内部后，个体会在家庭、职场和亲密关系中自动低位化。",
-      "status": null,
-      "degree": 7
-    },
-    {
-      "id": "model:authority-misinfluence",
-      "key": "authority-misinfluence",
-      "label": "权威影响",
-      "fullLabel": "权威影响",
-      "type": "model",
-      "route": "models/authority-misinfluence",
-      "summary": "权威影响模型解释单点权威如何压缩组织独立判断，使成员更容易服从而非纠偏。",
       "status": null,
       "degree": 7
     },
@@ -3365,7 +3354,7 @@
       "fullLabel": "资源分配偏置",
       "type": "model",
       "route": "models/distribution-bias",
-      "summary": "系统会优先保护更强势、更有组织和更能讲故事的环节，而把成本和压力慢慢压向更弱的一端。",
+      "summary": "钱和保护先流向更强势、更有组织、更会申报的一端，成本和压力往最弱的一端压。",
       "status": null,
       "degree": 7
     },
@@ -3381,17 +3370,6 @@
       "degree": 7
     },
     {
-      "id": "episode:EP003",
-      "key": "EP003",
-      "label": "EP003",
-      "fullLabel": "EP003 · 始祖鸟联合蔡国强喜马拉雅炸山，背后的商业逻辑揭秘。",
-      "type": "episode",
-      "route": "episodes/EP003",
-      "summary": "始祖鸟和蔡国强在喜马拉雅炸山，品牌为什么会同意，答案在股权结构里。2019 年安踏牵头收购后，大中华区单独交给安踏团队运营，总部那封英文道歉信说要跟中国团队沟通、调整做法，等于承认这块不归它管。原有的高端户外客群基本被吃完，要完成 KPI 只能拿新客群，一批是公务群体和它带动的小镇婆罗门，一批是年轻中产，都爱集体叙事和竞争。这正好对上蔡国强不断放大规模的鸡贼路数。规模大到跟自然对抗，灾难就来了，事后顶多罚点钱，没有人真正负责。",
-      "status": "curated",
-      "degree": 7
-    },
-    {
       "id": "episode:EP009",
       "key": "EP009",
       "label": "EP009",
@@ -3399,17 +3377,6 @@
       "type": "episode",
       "route": "episodes/EP009",
       "summary": "娃哈哈即将脆断。宗馥莉接手前它就不是一家好公司，内忧外患早已成形。内忧是 40% 多没清理的国有股权和家族小王国。外患是农夫山泉式现代企业的挤压，加上 AD 钙奶那代产品老去。宗馥莉的水平只有小学二年级。宏胜系外置利润，任人唯亲替换老员工。把农夫山泉树成假想敌，新孵化品牌一个没成。又去碰父亲留给小妈和三个孩子的海外基金，本可拿钱退出的事，升级成两地诉讼。再想把商标转进自己控股的公司，等于逼国资动手。许家印的海外信托在香港被击穿后，宏胜转出去的钱也要说清来路。",
-      "status": "curated",
-      "degree": 7
-    },
-    {
-      "id": "episode:EP011",
-      "key": "EP011",
-      "label": "EP011",
-      "fullLabel": "EP011 · 宗馥莉的未来只有一个结局，两大原因锁定了她命运的抛物线，娃哈哈清算宗家之路已定。",
-      "type": "episode",
-      "route": "episodes/EP011",
-      "summary": "宗馥莉的结局放在两条线上看。一条是心理，宗庆后 40 多岁才发迹，家里很快多了小妈和同父异母的弟妹，她长在这种结构里，又去美国读书，不安全感到了权力位置上，就成了什么都要、不留余地。另一条是宗家的德行，起家靠教育系统借的 14 万，企业做大后，据说员工持股先缩过股，2018 年再按三块钱一股收走，娃哈哈里没听说哪个员工拿到过几千万。卖掉公司、交还股份这两条路她都没走，选了全面对抗。倒查能查到哪一层，要看当年设计股权的人还在不在位，宗家的钱大概率谁都拿不走。",
       "status": "curated",
       "degree": 7
     },
@@ -3432,17 +3399,6 @@
       "type": "episode",
       "route": "episodes/EP016",
       "summary": "湖北推国有三资改革，说白了是政府没钱了。一切国有资源尽可能资产化，天空运营权这类原来不计价的东西，被改成能估值、能抵押的资产。一切国有资产尽可能证券化，闲置楼宇找关联企业签长租约，账上有了租金，再去银行二次贷款。一切国有资金尽可能杠杆化，政府在产业基金里做劣后，撬动民营和金融资本。这是高科技版的砸锅卖铁，铜锅要卖出金价，十几年后的钱今天就取走。造假成本低、收益高，各地于是集体造假。地方债和隐性债是最大的黑天鹅。",
-      "status": "curated",
-      "degree": 7
-    },
-    {
-      "id": "episode:EP019",
-      "key": "EP019",
-      "label": "EP019",
-      "fullLabel": "EP019 · 制裁，与小Lin说有不同的底层逻辑，那些被制裁最最严重的国家，都怎么样了?",
-      "type": "episode",
-      "route": "episodes/EP019",
-      "summary": "小 Lin 说制裁的成功率只有 10% 左右，可欧美这么多国家一直在用，领导人不可能个个都算错。制裁的短期逻辑是胁迫，中期是制造不稳定。更深一层是个人判断，压住对手集团的经济体量，不让它整体做大。一战二战的教训是，世界大战只在两个集团势均力敌时才打得起来。照这个读法，古巴、委内瑞拉不能富，伊朗不能强过沙特，朝鲜不能强过韩国，俄罗斯被制裁磨掉了苏联的家底。按这把尺子量，几年前的制裁成功率接近百分之百，一些国家崛起之后就不好说了。",
       "status": "curated",
       "degree": 7
     },
@@ -3524,17 +3480,6 @@
       "degree": 7
     },
     {
-      "id": "episode:EP050",
-      "key": "EP050",
-      "label": "EP050",
-      "fullLabel": "EP050 · 车圈的“岳不群”到底是谁？19分钟深度探讨，电车行业背后的复杂逻辑……",
-      "type": "episode",
-      "route": "episodes/EP050",
-      "summary": "说起车圈的岳不群，很多人想到雷军和小米汽车，可在个人看来小米来得太晚，撑死算个丐帮。真正的岳不群是华为，名头正，藏得深，野心大，核心是一个假字。它把拿来主义叫作创新，底子是外包码农撑起来的组装公司，产品像拼盘，总差那么一点。出了事就遮车衣、抠车标，什么都能删。前台有余承东（推测）卖力营销，背后据说有水军抹黑对手。嘴上说要做世界最好的企业，王健林们信了，跑出去买世界，它走出去是为了把技术买回来。它想当的是和国家捆在一起的财阀，赢了配享太庙，输了老百姓受罪。",
-      "status": "curated",
-      "degree": 7
-    },
-    {
       "id": "episode:EP065",
       "key": "EP065",
       "label": "EP065",
@@ -3575,17 +3520,6 @@
       "type": "episode",
       "route": "episodes/EP099",
       "summary": "3 月 13 号国务院常务会议提出，要制定全国统一的地方财政补贴负面清单，地方政府不能再随便发补贴、搞税收返还。很多人鼓掌，说这是终结内卷的好政策。可地方早就不只会修路盖楼拼税收了，现在拿一亿财政做基金就能撬几百亿项目，也能用补贴绑销售，把估值乘几十倍再拿回一部分。地方由此成了企业的隐形合伙人，企业出事就得接盘。电车里剩下的大厂跟多个地方绑在一起，泡泡一破，可能就是下一个恒大。清单收走的是用财政点火的启动权。真正的放是让地方自负盈亏，可存量债务这么大，这个窗口可能已经错过。",
-      "status": "curated",
-      "degree": 7
-    },
-    {
-      "id": "episode:EP100",
-      "key": "EP100",
-      "label": "EP100",
-      "fullLabel": "EP100 · 涨20元的农村养老金，让我们看清了一些事。【100期特辑】",
-      "type": "episode",
-      "route": "episodes/EP100",
-      "summary": "有一部分农村老人的养老金今年涨了 20 块，很多人一听就笑了。20 块钱能买半斤肉，或者一盒便宜的降压药。同一阵子胖东来公布分配方案，普通一线员工每人分到价值 20 万的资产份额。交了一辈子公粮的老人，每月养老金一共不过 200 块，这 20 块连象征性的尊重都算不上。\n\n刺激政策讲究乘数效应和资本叠加，钱最后流进少数人的口袋。直接到老人手里的小钱，却会进菜市场和药店，养的是社会最底层。养老金分体制内、体制外和农民三类，差距长期固化，一种看法是，南斯拉夫和罗马尼亚动荡之前都走过这一段。",
       "status": "curated",
       "degree": 7
     },
@@ -3821,6 +3755,17 @@
       "degree": 6
     },
     {
+      "id": "model:authority-misinfluence",
+      "key": "authority-misinfluence",
+      "label": "权威影响",
+      "fullLabel": "权威影响",
+      "type": "model",
+      "route": "models/authority-misinfluence",
+      "summary": "一个人说了算的组织里，下面的人先猜老板要什么，坏消息到不了上面，错了也没人拦。",
+      "status": null,
+      "degree": 6
+    },
+    {
       "id": "concept:production-risk-outsourcing",
       "key": "production-risk-outsourcing",
       "label": "生产端风险外包",
@@ -3975,6 +3920,28 @@
       "degree": 6
     },
     {
+      "id": "episode:EP003",
+      "key": "EP003",
+      "label": "EP003",
+      "fullLabel": "EP003 · 始祖鸟联合蔡国强喜马拉雅炸山，背后的商业逻辑揭秘。",
+      "type": "episode",
+      "route": "episodes/EP003",
+      "summary": "始祖鸟和蔡国强在喜马拉雅炸山，品牌为什么会同意，答案在股权结构里。2019 年安踏牵头收购后，大中华区单独交给安踏团队运营，总部那封英文道歉信说要跟中国团队沟通、调整做法，等于承认这块不归它管。原有的高端户外客群基本被吃完，要完成 KPI 只能拿新客群，一批是公务群体和它带动的小镇婆罗门，一批是年轻中产，都爱集体叙事和竞争。这正好对上蔡国强不断放大规模的鸡贼路数。规模大到跟自然对抗，灾难就来了，事后顶多罚点钱，没有人真正负责。",
+      "status": "curated",
+      "degree": 6
+    },
+    {
+      "id": "episode:EP011",
+      "key": "EP011",
+      "label": "EP011",
+      "fullLabel": "EP011 · 宗馥莉的未来只有一个结局，两大原因锁定了她命运的抛物线，娃哈哈清算宗家之路已定。",
+      "type": "episode",
+      "route": "episodes/EP011",
+      "summary": "宗馥莉的结局放在两条线上看。一条是心理，宗庆后 40 多岁才发迹，家里很快多了小妈和同父异母的弟妹，她长在这种结构里，又去美国读书，不安全感到了权力位置上，就成了什么都要、不留余地。另一条是宗家的德行，起家靠教育系统借的 14 万，企业做大后，据说员工持股先缩过股，2018 年再按三块钱一股收走，娃哈哈里没听说哪个员工拿到过几千万。卖掉公司、交还股份这两条路她都没走，选了全面对抗。倒查能查到哪一层，要看当年设计股权的人还在不在位，宗家的钱大概率谁都拿不走。",
+      "status": "curated",
+      "degree": 6
+    },
+    {
       "id": "episode:EP012",
       "key": "EP012",
       "label": "EP012",
@@ -3982,6 +3949,17 @@
       "type": "episode",
       "route": "episodes/EP012",
       "summary": "深圳地铁董事长辛杰据说失联 28 天，万科对失联一直没有回应。2017 年宝能要收购万科，深圳地铁按每股 22 块接过华润的股权，恒大那百分之十多也转了过来，从此成了后爸。2025 年初辛杰兼任万科董事长，今年输血九次，据说合计 600 多个亿，缺口还有八九百个亿。据说万科在跟银行谈展期十年、下调利率，连利息都还不上了。万科是地产的风向标，可深圳地铁只能丢车保帅，各方盼王石回来接盘，王石在拖。房价远没到底，会分次下跌，最终跌掉六成到七成。",
+      "status": "curated",
+      "degree": 6
+    },
+    {
+      "id": "episode:EP019",
+      "key": "EP019",
+      "label": "EP019",
+      "fullLabel": "EP019 · 制裁，与小Lin说有不同的底层逻辑，那些被制裁最最严重的国家，都怎么样了?",
+      "type": "episode",
+      "route": "episodes/EP019",
+      "summary": "小 Lin 说制裁的成功率只有 10% 左右，可欧美这么多国家一直在用，领导人不可能个个都算错。制裁的短期逻辑是胁迫，中期是制造不稳定。更深一层是个人判断，压住对手集团的经济体量，不让它整体做大。一战二战的教训是，世界大战只在两个集团势均力敌时才打得起来。照这个读法，古巴、委内瑞拉不能富，伊朗不能强过沙特，朝鲜不能强过韩国，俄罗斯被制裁磨掉了苏联的家底。按这把尺子量，几年前的制裁成功率接近百分之百，一些国家崛起之后就不好说了。",
       "status": "curated",
       "degree": 6
     },
@@ -4015,6 +3993,17 @@
       "type": "episode",
       "route": "episodes/EP047",
       "summary": "《华尔街日报》报道，多益网络创始人徐波在美国靠代孕有了一百多个孩子。多益随后声明，一百多个是总数，在美国代孕生的只有 12 个，数字至今各说各的。孩子生下来交给保姆，他本人没去过洛杉矶，当地法官后来驳回了他的亲权申请。徐波据说辍学起家，靠《梦幻西游》发了财，聪明却缺底蕴和底线。钱挣够了，公共价值的出口没找到，他倒回了繁殖。老钱靠长周期的家族竞争筛出领袖，新钱靠数量堆后代，孩子容易变质。真正的爱是爱加目送，父母该帮孩子在下一个路口多看见几扇门。",
+      "status": "curated",
+      "degree": 6
+    },
+    {
+      "id": "episode:EP050",
+      "key": "EP050",
+      "label": "EP050",
+      "fullLabel": "EP050 · 车圈的“岳不群”到底是谁？19分钟深度探讨，电车行业背后的复杂逻辑……",
+      "type": "episode",
+      "route": "episodes/EP050",
+      "summary": "说起车圈的岳不群，很多人想到雷军和小米汽车，可在个人看来小米来得太晚，撑死算个丐帮。真正的岳不群是华为，名头正，藏得深，野心大，核心是一个假字。它把拿来主义叫作创新，底子是外包码农撑起来的组装公司，产品像拼盘，总差那么一点。出了事就遮车衣、抠车标，什么都能删。前台有余承东（推测）卖力营销，背后据说有水军抹黑对手。嘴上说要做世界最好的企业，王健林们信了，跑出去买世界，它走出去是为了把技术买回来。它想当的是和国家捆在一起的财阀，赢了配享太庙，输了老百姓受罪。",
       "status": "curated",
       "degree": 6
     },
@@ -4118,13 +4107,13 @@
       "degree": 6
     },
     {
-      "id": "episode:EP101",
-      "key": "EP101",
-      "label": "EP101",
-      "fullLabel": "EP101 · 为什么烂企业死不了，好企业却要拿现金分家？碧桂园与胖东来：两种命运背后的“政企关系”密码。",
+      "id": "episode:EP100",
+      "key": "EP100",
+      "label": "EP100",
+      "fullLabel": "EP100 · 涨20元的农村养老金，让我们看清了一些事。【100期特辑】",
       "type": "episode",
-      "route": "episodes/EP101",
-      "summary": "网上传碧桂园要启动最大规模的老兵召回，同一个月胖东来把近 40 亿资产分给员工，不少人把两件事都说成企业有温情。可两家的状态完全不一样。胖东来 2025 年销售 235 亿，还在赚钱，却主动分家，于东来只留 5% 左右，一个收款员也能分到 20 万。碧桂园员工从 13 万多裁到 1 万 8000，靠跟地方政府深度绑定僵而不死，召回条件里有一条是原领导同意。两家走向不同，答案藏在政企关系里，深度绑定短期换来不倒，长期是慢性毒药。胖东来放下了王冠，把财富留给了员工。",
+      "route": "episodes/EP100",
+      "summary": "有一部分农村老人的养老金今年涨了 20 块，很多人一听就笑了。20 块钱能买半斤肉，或者一盒便宜的降压药。同一阵子胖东来公布分配方案，普通一线员工每人分到价值 20 万的资产份额。交了一辈子公粮的老人，每月养老金一共不过 200 块，这 20 块连象征性的尊重都算不上。\n\n刺激政策讲究乘数效应和资本叠加，钱最后流进少数人的口袋。直接到老人手里的小钱，却会进菜市场和药店，养的是社会最底层。养老金分体制内、体制外和农民三类，差距长期固化，一种看法是，南斯拉夫和罗马尼亚动荡之前都走过这一段。",
       "status": "curated",
       "degree": 6
     },
@@ -4653,6 +4642,17 @@
       "type": "episode",
       "route": "episodes/EP096",
       "summary": "伊朗战事一升级，新加坡被说成赢麻了。短期确实风光。家族办公室 2020 年约 400 家，2025 年业界估计有 2750 家。迪拜的热钱想走，瑞士太远，新加坡成了首选。霍尔木兹海峡基本关停，航运公司更愿意把节点放在新加坡，能源定价的分量也跟着涨。香港外溢的企业、资金和人才也在往这边搬。时间拉到五到十年，它只算好坏参半。东亚可能是下一个冲突点，出口占 GDP 的 175%，芯片和 AI 的话语权也不够。战争变成定点清除之后，大国的国土优势在缩，小国的机会反倒多了一点。",
+      "status": "curated",
+      "degree": 5
+    },
+    {
+      "id": "episode:EP101",
+      "key": "EP101",
+      "label": "EP101",
+      "fullLabel": "EP101 · 为什么烂企业死不了，好企业却要拿现金分家？碧桂园与胖东来：两种命运背后的“政企关系”密码。",
+      "type": "episode",
+      "route": "episodes/EP101",
+      "summary": "网上传碧桂园要启动最大规模的老兵召回，同一个月胖东来把近 40 亿资产分给员工，不少人把两件事都说成企业有温情。可两家的状态完全不一样。胖东来 2025 年销售 235 亿，还在赚钱，却主动分家，于东来只留 5% 左右，一个收款员也能分到 20 万。碧桂园员工从 13 万多裁到 1 万 8000，靠跟地方政府深度绑定僵而不死，召回条件里有一条是原领导同意。两家走向不同，答案藏在政企关系里，深度绑定短期换来不倒，长期是慢性毒药。胖东来放下了王冠，把财富留给了员工。",
       "status": "curated",
       "degree": 5
     },
@@ -6120,17 +6120,6 @@
       "degree": 3
     },
     {
-      "id": "episode:EP017",
-      "key": "EP017",
-      "label": "EP017",
-      "fullLabel": "EP017 · 国航CA139锂电池引起的飞机客舱起火，16分钟深度分析起火因素与电池起火背后的两个故事。",
-      "type": "episode",
-      "route": "episodes/EP017",
-      "summary": "国航 CA139 从杭州飞仁川，航程过半，行李架里一块没在充电的锂电池烧了起来。能过安检就是合格产品，这事跟安检、跟航空公司都没多大关系。锂电池不像油车按工况着火，它按几率自燃，合规查得出来，安全查不出来。当年三星手机被推出来背锅，和北京报纸专给河南人标籍贯，是同一种谬误。机组两分钟才到位，演练不够，这点能改。可不是每次事故背后都藏着大问题，很多事靠的是英国那种渐进和妥协，动不动大改，改完可能还不如不改。一飞机人平安落地，先该庆幸。",
-      "status": "curated",
-      "degree": 3
-    },
-    {
       "id": "episode:EP068",
       "key": "EP068",
       "label": "EP068",
@@ -7052,6 +7041,17 @@
       "route": "concepts/ai-terminal-guidance",
       "summary": "无人机在末端被干扰、丢失信号和GPS时，改用机载AI自主识别目标完成攻击。",
       "status": null,
+      "degree": 2
+    },
+    {
+      "id": "episode:EP017",
+      "key": "EP017",
+      "label": "EP017",
+      "fullLabel": "EP017 · 国航CA139锂电池引起的飞机客舱起火，16分钟深度分析起火因素与电池起火背后的两个故事。",
+      "type": "episode",
+      "route": "episodes/EP017",
+      "summary": "国航 CA139 从杭州飞仁川，航程过半，行李架里一块没在充电的锂电池烧了起来。能过安检就是合格产品，这事跟安检、跟航空公司都没多大关系。锂电池不像油车按工况着火，它按几率自燃，合规查得出来，安全查不出来。当年三星手机被推出来背锅，和北京报纸专给河南人标籍贯，是同一种谬误。机组两分钟才到位，演练不够，这点能改。可不是每次事故背后都藏着大问题，很多事靠的是英国那种渐进和妥协，动不动大改，改完可能还不如不改。一飞机人平安落地，先该庆幸。",
+      "status": "curated",
       "degree": 2
     },
     {
@@ -8542,11 +8542,6 @@
     },
     {
       "source": "episode:EP003",
-      "target": "model:path-dependence",
-      "kind": "episode-model"
-    },
-    {
-      "source": "episode:EP003",
       "target": "model:feedback-loops",
       "kind": "episode-model"
     },
@@ -8807,11 +8802,6 @@
     },
     {
       "source": "episode:EP011",
-      "target": "model:path-dependence",
-      "kind": "episode-model"
-    },
-    {
-      "source": "episode:EP011",
       "target": "person:zong-fuli",
       "kind": "episode-person"
     },
@@ -8994,11 +8984,6 @@
       "source": "episode:EP017",
       "target": "concept:probabilistic-safety",
       "kind": "episode-concept"
-    },
-    {
-      "source": "episode:EP017",
-      "target": "model:risk-transfer-chain",
-      "kind": "episode-model"
     },
     {
       "source": "episode:EP017",
@@ -9922,11 +9907,6 @@
     },
     {
       "source": "episode:EP050",
-      "target": "model:path-dependence",
-      "kind": "episode-model"
-    },
-    {
-      "source": "episode:EP050",
       "target": "person:yu-chengdong",
       "kind": "episode-person"
     },
@@ -10093,11 +10073,6 @@
     {
       "source": "episode:EP057",
       "target": "model:principal-agent",
-      "kind": "episode-model"
-    },
-    {
-      "source": "episode:EP057",
-      "target": "model:path-dependence",
       "kind": "episode-model"
     },
     {
@@ -10273,11 +10248,6 @@
     {
       "source": "episode:EP062",
       "target": "model:feedback-loops",
-      "kind": "episode-model"
-    },
-    {
-      "source": "episode:EP062",
-      "target": "model:authority-misinfluence",
       "kind": "episode-model"
     },
     {
@@ -10668,11 +10638,6 @@
     {
       "source": "episode:EP076",
       "target": "model:strategic-timing",
-      "kind": "episode-model"
-    },
-    {
-      "source": "episode:EP076",
-      "target": "model:narrative-leverage",
       "kind": "episode-model"
     },
     {
@@ -11317,11 +11282,6 @@
     },
     {
       "source": "episode:EP100",
-      "target": "model:value-capture",
-      "kind": "episode-model"
-    },
-    {
-      "source": "episode:EP100",
       "target": "theme:elder-support-and-distributive-justice",
       "kind": "episode-theme"
     },
@@ -11333,11 +11293,6 @@
     {
       "source": "episode:EP101",
       "target": "model:political-embedded-enterprise",
-      "kind": "episode-model"
-    },
-    {
-      "source": "episode:EP101",
-      "target": "model:risk-transfer-chain",
       "kind": "episode-model"
     },
     {
@@ -11533,6 +11488,11 @@
     {
       "source": "episode:EP107",
       "target": "model:proxy-containment-ring",
+      "kind": "episode-model"
+    },
+    {
+      "source": "episode:EP107",
+      "target": "model:sanction-parallel-market",
       "kind": "episode-model"
     },
     {
@@ -13402,11 +13362,6 @@
     },
     {
       "source": "episode:EP154",
-      "target": "model:strategic-timing",
-      "kind": "episode-model"
-    },
-    {
-      "source": "episode:EP154",
       "target": "person:donald-trump",
       "kind": "episode-person"
     },
@@ -14004,11 +13959,6 @@
       "source": "episode:EP166",
       "target": "concept:clean-label-myth",
       "kind": "episode-concept"
-    },
-    {
-      "source": "episode:EP166",
-      "target": "model:ex-post-accountability-governance",
-      "kind": "episode-model"
     },
     {
       "source": "episode:EP166",
@@ -18103,11 +18053,6 @@
     {
       "source": "live:LIVE012",
       "target": "model:middle-class-replacement-cycle",
-      "kind": "live-model"
-    },
-    {
-      "source": "live:LIVE012",
-      "target": "model:path-dependence",
       "kind": "live-model"
     },
     {
@@ -22753,16 +22698,6 @@
     {
       "source": "episode:EP112",
       "target": "model:profit-reservoir-cycle",
-      "kind": "episode-model"
-    },
-    {
-      "source": "episode:EP019",
-      "target": "model:sanction-parallel-market",
-      "kind": "episode-model"
-    },
-    {
-      "source": "episode:EP107",
-      "target": "model:sanction-parallel-market",
       "kind": "episode-model"
     },
     {

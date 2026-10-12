@@ -25,8 +25,7 @@
     "safety-attention-shift"
   ],
   "models": [
-    "feedback-loops",
-    "authority-misinfluence"
+    "feedback-loops"
   ],
   "relatedEpisodes": [
     "EP013",

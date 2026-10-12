@@ -19,9 +19,7 @@
   "concepts": [
     "probabilistic-safety"
   ],
-  "models": [
-    "risk-transfer-chain"
-  ],
+  "models": [],
   "relatedEpisodes": [
     "EP013",
     "EP091",

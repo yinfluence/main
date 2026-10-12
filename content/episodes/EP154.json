@@ -35,8 +35,7 @@
   "models": [
     "proxy-containment-ring",
     "regional-denial-model",
-    "small-state-balancing-model",
-    "strategic-timing"
+    "small-state-balancing-model"
   ],
   "relatedEpisodes": [
     "EP155",

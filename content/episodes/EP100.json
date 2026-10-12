@@ -22,8 +22,7 @@
     "direct-transfer-consumption"
   ],
   "models": [
-    "distribution-bias",
-    "value-capture"
+    "distribution-bias"
   ],
   "relatedEpisodes": [
     "EP052",

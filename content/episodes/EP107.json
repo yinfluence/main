@@ -23,7 +23,8 @@
     "gray-oil-network"
   ],
   "models": [
-    "proxy-containment-ring"
+    "proxy-containment-ring",
+    "sanction-parallel-market"
   ],
   "relatedEpisodes": [
     "EP090",
