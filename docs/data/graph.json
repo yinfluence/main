@@ -3,7 +3,7 @@
     "title": "颖响力知识图谱",
     "subtitle": "节目、概念、模型、人物、主题之间的可视化连接网络",
     "nodeCount": 764,
-    "linkCount": 2831,
+    "linkCount": 2828,
     "typeCounts": {
       "model": 83,
       "live": 49,
@@ -59,17 +59,6 @@
       "degree": 35
     },
     {
-      "id": "live:LIVE026",
-      "key": "LIVE026",
-      "label": "LIVE026",
-      "fullLabel": "LIVE026 · 阿根廷当年也是「遥遥领先」的制造业强国，百年之后为何还要靠米莱来补课？",
-      "type": "live",
-      "route": "lives/LIVE026",
-      "summary": "同样给欧洲供货，按直播的讲法，美国熬了二十年等来新政，阿根廷选了发补贴。",
-      "status": "curated",
-      "degree": 35
-    },
-    {
       "id": "live:LIVE005",
       "key": "LIVE005",
       "label": "LIVE005",
@@ -77,6 +66,17 @@
       "type": "live",
       "route": "lives/LIVE005",
       "summary": "当年给被投企业只提一条，上市之前别让任何国资进来。",
+      "status": "curated",
+      "degree": 34
+    },
+    {
+      "id": "live:LIVE026",
+      "key": "LIVE026",
+      "label": "LIVE026",
+      "fullLabel": "LIVE026 · 阿根廷当年也是「遥遥领先」的制造业强国，百年之后为何还要靠米莱来补课？",
+      "type": "live",
+      "route": "lives/LIVE026",
+      "summary": "同样给欧洲供货，按直播的讲法，美国熬了二十年等来新政，阿根廷选了发补贴。",
       "status": "curated",
       "degree": 34
     },
@@ -686,17 +686,6 @@
       "degree": 20
     },
     {
-      "id": "live:LIVE048",
-      "key": "LIVE048",
-      "label": "LIVE048",
-      "fullLabel": "LIVE048 · 供养比失衡的真相：虫子长得比树还大！苏联卫星上天，为什么最后倒在一块面包上？",
-      "type": "live",
-      "route": "lives/LIVE048",
-      "summary": "一台挖掘机体制内十万、体制外四十万，倒一手就赚三十万，谁还去琢磨创新。",
-      "status": "published",
-      "degree": 20
-    },
-    {
       "id": "model:strategic-timing",
       "key": "strategic-timing",
       "label": "战略时机",
@@ -793,6 +782,17 @@
       "route": "episodes/EP185",
       "summary": "财经媒体都在刷一条消息，香港超过瑞士和新加坡，成了全球第一大离岸财富管理中心。全球资本并没有集体涌向香港，香港只是内地财富溢出的集散地。拆开资金来源，内地约占六成，主力是后知后觉的中小老板和围绕公务体系长起来的新中产。据说台湾过来的有一成多，是跟大陆深度绑定的生意钱，剩下的是从东南亚和迪拜回流的灰色贸易资金。把钱挪到香港，只是从一个棋盘跳进另一个出法律更快的棋盘，监管备好的框迟早统一去查。在亚洲，门槛和成本都高的新加坡反倒更稳妥。资产安全靠的是干净的底子和清晰的架构，挪位置没用。",
       "status": "curated",
+      "degree": 19
+    },
+    {
+      "id": "live:LIVE048",
+      "key": "LIVE048",
+      "label": "LIVE048",
+      "fullLabel": "LIVE048 · 供养比失衡的真相：虫子长得比树还大！苏联卫星上天，为什么最后倒在一块面包上？",
+      "type": "live",
+      "route": "lives/LIVE048",
+      "summary": "一台挖掘机体制内十万、体制外四十万，倒一手就赚三十万，谁还去琢磨创新。",
+      "status": "published",
       "degree": 19
     },
     {
@@ -1115,17 +1115,6 @@
       "degree": 15
     },
     {
-      "id": "live:LIVE047",
-      "key": "LIVE047",
-      "label": "LIVE047",
-      "fullLabel": "LIVE047 · 一批F-35零件中转香港后去向不明！全球物流的中转站，还靠得住吗？",
-      "type": "live",
-      "route": "lives/LIVE047",
-      "summary": "座舱盖和武器舱门上全是隐身涂层，交给 UPS 后没有直飞美国，先绕去了韩国。",
-      "status": "published",
-      "degree": 15
-    },
-    {
       "id": "theme:local-government-financialization",
       "key": "local-government-financialization",
       "label": "地方政府资本化与补贴杠杆",
@@ -1287,6 +1276,17 @@
       "type": "live",
       "route": "lives/LIVE046",
       "summary": "三道线一划，一线城市的房子全被排除，剩下的是想回老家买房的打工人。",
+      "status": "published",
+      "degree": 14
+    },
+    {
+      "id": "live:LIVE047",
+      "key": "LIVE047",
+      "label": "LIVE047",
+      "fullLabel": "LIVE047 · 一批F-35零件中转香港后去向不明！全球物流的中转站，还靠得住吗？",
+      "type": "live",
+      "route": "lives/LIVE047",
+      "summary": "座舱盖和武器舱门上全是隐身涂层，交给 UPS 后没有直飞美国，先绕去了韩国。",
       "status": "published",
       "degree": 14
     },
@@ -3249,17 +3249,6 @@
       "degree": 7
     },
     {
-      "id": "concept:capital-wall",
-      "key": "capital-wall",
-      "label": "资本筑墙",
-      "fullLabel": "资本筑墙",
-      "type": "concept",
-      "route": "concepts/capital-wall",
-      "summary": "资本筑墙指国家像特朗普建实体墙一样，用监管在资金、技术、人才的跨境流动上立起高墙，逼资产与中国有联系的人在“留下受管”和“离开别回”之间选边。",
-      "status": null,
-      "degree": 7
-    },
-    {
       "id": "model:distribution-bias",
       "key": "distribution-bias",
       "label": "资源分配偏置",
@@ -3839,6 +3828,17 @@
       "type": "theme",
       "route": "themes/capital-exit-and-cross-border-harvest",
       "summary": "钱借跨境结构退出、换成美元，这些通道又被一条条查住。",
+      "status": null,
+      "degree": 6
+    },
+    {
+      "id": "concept:capital-wall",
+      "key": "capital-wall",
+      "label": "资本筑墙",
+      "fullLabel": "资本筑墙",
+      "type": "concept",
+      "route": "concepts/capital-wall",
+      "summary": "用监管在资金、技术和人员出境的路上立起一道墙。资产跟中国有联系的人得选边，要么留下受管，要么走了别回来。",
       "status": null,
       "degree": 6
     },
@@ -5031,17 +5031,6 @@
       "degree": 4
     },
     {
-      "id": "concept:authoritarian-regression",
-      "key": "authoritarian-regression",
-      "label": "体制复古",
-      "fullLabel": "体制复古",
-      "type": "concept",
-      "route": "concepts/authoritarian-regression",
-      "summary": "一个国家在危机压力下重新启用旧威权体制的组织方式，例如让军队重返行政与商业体系。",
-      "status": null,
-      "degree": 4
-    },
-    {
       "id": "concept:homogeneous-competition",
       "key": "homogeneous-competition",
       "label": "同质竞争",
@@ -5878,6 +5867,17 @@
       "degree": 3
     },
     {
+      "id": "concept:authoritarian-regression",
+      "key": "authoritarian-regression",
+      "label": "体制复古",
+      "fullLabel": "体制复古",
+      "type": "concept",
+      "route": "concepts/authoritarian-regression",
+      "summary": "一个国家在危机压力下重新启用旧威权体制的组织方式，例如让军队重返行政与商业体系。",
+      "status": null,
+      "degree": 3
+    },
+    {
       "id": "theme:crisis-era-power-reallocation",
       "key": "crisis-era-power-reallocation",
       "label": "危机时代的权力重排",
@@ -5885,17 +5885,6 @@
       "type": "theme",
       "route": "themes/crisis-era-power-reallocation",
       "summary": "转型和危机期，原来站在前面的人退下来，空出的位置由谁接，接过去以后是机会还是靶子。",
-      "status": null,
-      "degree": 3
-    },
-    {
-      "id": "concept:civilization-culture-split",
-      "key": "civilization-culture-split",
-      "label": "文化与文明分离",
-      "fullLabel": "文化与文明分离",
-      "type": "concept",
-      "route": "concepts/civilization-culture-split",
-      "summary": "拥有古老文化符号，不等于形成了保护弱者、约束权力和尊重个体的文明结构。",
       "status": null,
       "degree": 3
     },
@@ -6857,6 +6846,17 @@
       "degree": 2
     },
     {
+      "id": "concept:civilization-culture-split",
+      "key": "civilization-culture-split",
+      "label": "文化与文明分离",
+      "fullLabel": "文化与文明分离",
+      "type": "concept",
+      "route": "concepts/civilization-culture-split",
+      "summary": "拥有古老文化符号，不等于形成了保护弱者、约束权力和尊重个体的文明结构。",
+      "status": null,
+      "degree": 2
+    },
+    {
       "id": "theme:civilization-power-and-vulnerable-bodies",
       "key": "civilization-power-and-vulnerable-bodies",
       "label": "文明叙事、权力结构与弱者处境",
@@ -6984,7 +6984,7 @@
       "fullLabel": "注意力交易",
       "type": "concept",
       "route": "concepts/attention-trading",
-      "summary": "创作者把观众的焦虑、兴奋和参与感换成流量、带货、课程或影响力收益。",
+      "summary": "创作者把观众的焦虑、兴奋和参与感换成流量和付费，观众拿到的是即时刺激，攒不下判断力。",
       "status": null,
       "degree": 2
     },
@@ -7677,7 +7677,7 @@
       "fullLabel": "门槛塌陷",
       "type": "concept",
       "route": "concepts/barrier-collapse",
-      "summary": "一个行业赖以收费的经验和资源被工具打包成人人可用的功能之后，入行门槛归零，能比的只剩谁更能压价、谁更能熬。",
+      "summary": "一个行业靠来收费的经验和硬成本，被工具打包成人人可用的功能。入行门槛归零，能比的只剩谁更能压价、谁更能熬。",
       "status": null,
       "degree": 1
     },
@@ -7787,7 +7787,7 @@
       "fullLabel": "破壁型表达者",
       "type": "concept",
       "route": "concepts/break-wall-messenger",
-      "summary": "破壁型表达者能把封闭信息、阶层差异和真实感受带到普通人眼前。",
+      "summary": "破壁型表达者能把封闭信息和阶层差距摆到普通人眼前，让人不用讲道理就看懂。",
       "status": null,
       "degree": 1
     },
@@ -19772,11 +19772,6 @@
     },
     {
       "source": "live:LIVE026",
-      "target": "concept:civilization-culture-split",
-      "kind": "live-concept"
-    },
-    {
-      "source": "live:LIVE026",
       "target": "concept:long-termism",
       "kind": "live-concept"
     },
@@ -22337,11 +22332,6 @@
     },
     {
       "source": "live:LIVE047",
-      "target": "concept:capital-wall",
-      "kind": "live-concept"
-    },
-    {
-      "source": "live:LIVE047",
       "target": "concept:pre-emptive-screening",
       "kind": "live-concept"
     },
@@ -22403,11 +22393,6 @@
     {
       "source": "live:LIVE048",
       "target": "concept:middle-class-hard-landing",
-      "kind": "live-concept"
-    },
-    {
-      "source": "live:LIVE048",
-      "target": "concept:authoritarian-regression",
       "kind": "live-concept"
     },
     {
