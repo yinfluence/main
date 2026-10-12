@@ -174,7 +174,7 @@
       "summary": "把每一分钱花到人身上的那种，拿不到公募资格。",
       "points": [
         "也有另一种基金会。每一笔账上写着捐给了谁，发钱的人花的是自己的钱，**管理费几乎为零**。",
-        "这种基金会都很小，拿不到公募资格，每一分钱都得靠自己去凑，[合规式拒绝](concepts/compliance-refusal)挡住的常常就是它们。",
+        "这种基金会都很小，拿不到[公募资格](keywords/public-fundraising-license)，每一分钱都得靠自己去凑。",
         "有头脸人物背书过的大型基金会，今天一样很难活下来。把钱捐给医院的那种，反而活得相当好。",
         "韩红这个人怎么评价，现场给的是好坏参半，往下压是三成好七成坏。[公益、善意与商业失灵](themes/charity-and-moral-capital)里，评价一个人和评价一套制度是两件事。"
       ]
@@ -218,8 +218,7 @@
     "cash-optionality",
     "subsidy-leverage-engine",
     "middle-class-reservoir",
-    "hidden-debt",
-    "compliance-refusal"
+    "hidden-debt"
   ],
   "models": [
     "identity-stratification",

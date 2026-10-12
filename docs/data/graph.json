@@ -3,7 +3,7 @@
     "title": "颖响力知识图谱",
     "subtitle": "节目、概念、模型、人物、主题之间的可视化连接网络",
     "nodeCount": 764,
-    "linkCount": 2828,
+    "linkCount": 2825,
     "typeCounts": {
       "model": 83,
       "live": 49,
@@ -37,17 +37,6 @@
       "degree": 36
     },
     {
-      "id": "live:LIVE022",
-      "key": "LIVE022",
-      "label": "LIVE022",
-      "fullLabel": "LIVE022 · 没有比赛的周末，玫瑰碗变成一个二手市场，世界级球场靠它养活自己",
-      "type": "live",
-      "route": "lives/LIVE022",
-      "summary": "在那儿能淘到五十年前的版画，一件当年从中国出口的瓷器又被背了回来。",
-      "status": "curated",
-      "degree": 36
-    },
-    {
       "id": "live:LIVE020",
       "key": "LIVE020",
       "label": "LIVE020",
@@ -55,6 +44,17 @@
       "type": "live",
       "route": "lives/LIVE020",
       "summary": "据说 2003 年以来，巴格达的领导层把两万亿美元挪作了他用。",
+      "status": "curated",
+      "degree": 35
+    },
+    {
+      "id": "live:LIVE022",
+      "key": "LIVE022",
+      "label": "LIVE022",
+      "fullLabel": "LIVE022 · 没有比赛的周末，玫瑰碗变成一个二手市场，世界级球场靠它养活自己",
+      "type": "live",
+      "route": "lives/LIVE022",
+      "summary": "在那儿能淘到五十年前的版画，一件当年从中国出口的瓷器又被背了回来。",
       "status": "curated",
       "degree": 35
     },
@@ -279,28 +279,6 @@
       "degree": 26
     },
     {
-      "id": "live:LIVE030",
-      "key": "LIVE030",
-      "label": "LIVE030",
-      "fullLabel": "LIVE030 · 四拨人都站错了位置，县城小老板以为自己是中产，中产以为自己是社会底层",
-      "type": "live",
-      "route": "lives/LIVE030",
-      "summary": "五年期存单给你一点六，这个数字一出来，复利这件事就不成立了。",
-      "status": "curated",
-      "degree": 26
-    },
-    {
-      "id": "live:LIVE034",
-      "key": "LIVE034",
-      "label": "LIVE034",
-      "fullLabel": "LIVE034 · 一千倍市盈率的机器人和拿到龙标的那部片，凭什么是同一件事？",
-      "type": "live",
-      "route": "lives/LIVE034",
-      "summary": "五年只花几万块做出来的一坨东西，也拿到了龙标。",
-      "status": "curated",
-      "degree": 26
-    },
-    {
       "id": "theme:rule-of-law-boundaries-and-social-trust",
       "key": "rule-of-law-boundaries-and-social-trust",
       "label": "法治边界与社会信任",
@@ -363,6 +341,28 @@
       "type": "live",
       "route": "lives/LIVE023",
       "summary": "在她的算盘里，这样的人有一百万个，出一个事的几率比坐飞机摔了还低。",
+      "status": "curated",
+      "degree": 25
+    },
+    {
+      "id": "live:LIVE030",
+      "key": "LIVE030",
+      "label": "LIVE030",
+      "fullLabel": "LIVE030 · 四拨人都站错了位置，县城小老板以为自己是中产，中产以为自己是社会底层",
+      "type": "live",
+      "route": "lives/LIVE030",
+      "summary": "五年期存单给你一点六，这个数字一出来，复利这件事就不成立了。",
+      "status": "curated",
+      "degree": 25
+    },
+    {
+      "id": "live:LIVE034",
+      "key": "LIVE034",
+      "label": "LIVE034",
+      "fullLabel": "LIVE034 · 一千倍市盈率的机器人和拿到龙标的那部片，凭什么是同一件事？",
+      "type": "live",
+      "route": "lives/LIVE034",
+      "summary": "五年只花几万块做出来的一坨东西，也拿到了龙标。",
       "status": "curated",
       "degree": 25
     },
@@ -5631,7 +5631,7 @@
       "fullLabel": "零添加迷思",
       "type": "concept",
       "route": "concepts/clean-label-myth",
-      "summary": "把某个高端品牌想象成完全无添加、绝对干净的净土，是一种消费者自造的误区；再好的品牌也有两极分化的产品。",
+      "summary": "把某个高端品牌想象成完全无添加、绝对干净的净土，是消费者自己造出来的误区。再好的品牌，商品也两极分化。",
       "status": null,
       "degree": 3
     },
@@ -6351,17 +6351,6 @@
       "degree": 2
     },
     {
-      "id": "concept:consensus-redline",
-      "key": "consensus-redline",
-      "label": "共识红线",
-      "fullLabel": "共识红线",
-      "type": "concept",
-      "route": "concepts/consensus-redline",
-      "summary": "一个地方真正管住行为的有两套规矩，写在纸上的法条，和写在当地人心里的共识，后者没有条文却照样有惩罚。",
-      "status": null,
-      "degree": 2
-    },
-    {
       "id": "concept:valuation-overdraft",
       "key": "valuation-overdraft",
       "label": "估值透支",
@@ -6413,17 +6402,6 @@
       "type": "concept",
       "route": "concepts/overseas-sink-project",
       "summary": "跨境大项目若依赖旧周期资金和宏大叙事，外部条件反转后会变成难以止损的资产黑洞。",
-      "status": null,
-      "degree": 2
-    },
-    {
-      "id": "concept:compliance-refusal",
-      "key": "compliance-refusal",
-      "label": "合规式拒绝",
-      "fullLabel": "合规式拒绝",
-      "type": "concept",
-      "route": "concepts/compliance-refusal",
-      "summary": "把法律没有禁止的事说成规则不允许，用合规两个字挡住请求，既不必解释动机，也不必承担拒绝的后果。",
       "status": null,
       "degree": 2
     },
@@ -6512,17 +6490,6 @@
       "type": "concept",
       "route": "concepts/inheritance-supply-shock",
       "summary": "老一代集中退出时，沉睡的存量资产会重新进入市场，形成供给冲击。",
-      "status": null,
-      "degree": 2
-    },
-    {
-      "id": "concept:cross-subsidy-pricing",
-      "key": "cross-subsidy-pricing",
-      "label": "交叉补贴式价格差异",
-      "fullLabel": "交叉补贴式价格差异",
-      "type": "concept",
-      "route": "concepts/cross-subsidy-pricing",
-      "summary": "交叉补贴式价格差异指在总容量有限的场景里，让一小部分高付费用户的超额利润反向补贴基础门票，使普通消费者实际受益。",
       "status": null,
       "degree": 2
     },
@@ -7341,6 +7308,17 @@
       "degree": 1
     },
     {
+      "id": "concept:consensus-redline",
+      "key": "consensus-redline",
+      "label": "共识红线",
+      "fullLabel": "共识红线",
+      "type": "concept",
+      "route": "concepts/consensus-redline",
+      "summary": "一个地方真正管住行为的有两套规矩，写在纸上的法条，和写在当地人心里的共识，后者没有条文却照样有惩罚。",
+      "status": null,
+      "degree": 1
+    },
+    {
       "id": "model:resonance-channel-model",
       "key": "resonance-channel-model",
       "label": "共振通道模型",
@@ -7407,6 +7385,17 @@
       "degree": 1
     },
     {
+      "id": "concept:compliance-refusal",
+      "key": "compliance-refusal",
+      "label": "合规式拒绝",
+      "fullLabel": "合规式拒绝",
+      "type": "concept",
+      "route": "concepts/compliance-refusal",
+      "summary": "把法律没有禁止的事说成规则不允许，用合规两个字挡住请求，既不必解释动机，也不必承担拒绝的后果。",
+      "status": null,
+      "degree": 1
+    },
+    {
       "id": "person:he-rundong",
       "key": "he-rundong",
       "label": "何润东",
@@ -7469,6 +7458,17 @@
       "type": "concept",
       "route": "concepts/downgrade-equality",
       "summary": "用整体降标换取覆盖面和成本控制时，公平可能变成低标准统一。",
+      "status": null,
+      "degree": 1
+    },
+    {
+      "id": "concept:cross-subsidy-pricing",
+      "key": "cross-subsidy-pricing",
+      "label": "交叉补贴式价格差异",
+      "fullLabel": "交叉补贴式价格差异",
+      "type": "concept",
+      "route": "concepts/cross-subsidy-pricing",
+      "summary": "总接待量有限的场景里，拿一小部分容量卖高价，高付费用户贡献的超额利润反过来压低基础票价，普通消费者实际受益。",
       "status": null,
       "degree": 1
     },
@@ -8007,7 +8007,7 @@
       "fullLabel": "文化性掠夺",
       "type": "concept",
       "route": "concepts/cultural-plunder",
-      "summary": "产权和语境被强行切断时，文化资产的损失不只是物件流转，而是文明私人基础被抽空。",
+      "summary": "产权和来路被强行切断时，文化资产连同撑着它的私人收藏和家族传承，一起被抽走。",
       "status": null,
       "degree": 1
     },
@@ -19242,11 +19242,6 @@
     },
     {
       "source": "live:LIVE022",
-      "target": "concept:cross-subsidy-pricing",
-      "kind": "live-concept"
-    },
-    {
-      "source": "live:LIVE022",
       "target": "concept:city-soul-gap",
       "kind": "live-concept"
     },
@@ -20332,11 +20327,6 @@
     },
     {
       "source": "live:LIVE030",
-      "target": "concept:compliance-refusal",
-      "kind": "live-concept"
-    },
-    {
-      "source": "live:LIVE030",
       "target": "model:identity-stratification",
       "kind": "live-model"
     },
@@ -20878,11 +20868,6 @@
     {
       "source": "live:LIVE034",
       "target": "concept:dual-track-review-system",
-      "kind": "live-concept"
-    },
-    {
-      "source": "live:LIVE034",
-      "target": "concept:consensus-redline",
       "kind": "live-concept"
     },
     {
