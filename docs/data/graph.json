@@ -3,7 +3,7 @@
     "title": "颖响力知识图谱",
     "subtitle": "节目、概念、模型、人物、主题之间的可视化连接网络",
     "nodeCount": 764,
-    "linkCount": 2825,
+    "linkCount": 2820,
     "typeCounts": {
       "model": 83,
       "live": 49,
@@ -78,7 +78,7 @@
       "route": "lives/LIVE026",
       "summary": "同样给欧洲供货，按直播的讲法，美国熬了二十年等来新政，阿根廷选了发补贴。",
       "status": "curated",
-      "degree": 34
+      "degree": 33
     },
     {
       "id": "live:LIVE037",
@@ -213,17 +213,6 @@
       "degree": 27
     },
     {
-      "id": "live:LIVE039",
-      "key": "LIVE039",
-      "label": "LIVE039",
-      "fullLabel": "LIVE039 · 十七个油田交给美国企业投资，两千亿美元直接进国库，这条线去年十二月就在走",
-      "type": "live",
-      "route": "lives/LIVE039",
-      "summary": "据说以前答应给古巴的油凑不齐，要在外面买了补上，一桶倒贴十二美元。",
-      "status": "published",
-      "degree": 27
-    },
-    {
       "id": "concept:cost-shifting",
       "key": "cost-shifting",
       "label": "成本外移",
@@ -276,6 +265,17 @@
       "route": "lives/LIVE027",
       "summary": "一种猜测是，投资机构能用的手段只剩一个，把内部会议稿放出来敲打一下。",
       "status": "curated",
+      "degree": 26
+    },
+    {
+      "id": "live:LIVE039",
+      "key": "LIVE039",
+      "label": "LIVE039",
+      "fullLabel": "LIVE039 · 十七个油田交给美国企业投资，两千亿美元直接进国库，这条线去年十二月就在走",
+      "type": "live",
+      "route": "lives/LIVE039",
+      "summary": "据说以前答应给古巴的油凑不齐，要在外面买了补上，一桶倒贴十二美元。",
+      "status": "published",
       "degree": 26
     },
     {
@@ -356,17 +356,6 @@
       "degree": 25
     },
     {
-      "id": "live:LIVE034",
-      "key": "LIVE034",
-      "label": "LIVE034",
-      "fullLabel": "LIVE034 · 一千倍市盈率的机器人和拿到龙标的那部片，凭什么是同一件事？",
-      "type": "live",
-      "route": "lives/LIVE034",
-      "summary": "五年只花几万块做出来的一坨东西，也拿到了龙标。",
-      "status": "curated",
-      "degree": 25
-    },
-    {
       "id": "live:LIVE036",
       "key": "LIVE036",
       "label": "LIVE036",
@@ -429,6 +418,17 @@
       "type": "live",
       "route": "lives/LIVE032",
       "summary": "三百万的房子降五万十万就有人买，现在得降五十万八十万才走得掉。",
+      "status": "curated",
+      "degree": 24
+    },
+    {
+      "id": "live:LIVE034",
+      "key": "LIVE034",
+      "label": "LIVE034",
+      "fullLabel": "LIVE034 · 一千倍市盈率的机器人和拿到龙标的那部片，凭什么是同一件事？",
+      "type": "live",
+      "route": "lives/LIVE034",
+      "summary": "五年只花几万块做出来的一坨东西，也拿到了龙标。",
       "status": "curated",
       "degree": 24
     },
@@ -675,17 +675,6 @@
       "degree": 20
     },
     {
-      "id": "live:LIVE043",
-      "key": "LIVE043",
-      "label": "LIVE043",
-      "fullLabel": "LIVE043 · 打了四年死掉上百万，为什么没人上街？征兵名单上从来没有首都的人",
-      "type": "live",
-      "route": "lives/LIVE043",
-      "summary": "军官私下把士兵叫作灰色的牲口，死一个再从家里抓下一个。",
-      "status": "published",
-      "degree": 20
-    },
-    {
       "id": "model:strategic-timing",
       "key": "strategic-timing",
       "label": "战略时机",
@@ -782,6 +771,17 @@
       "route": "episodes/EP185",
       "summary": "财经媒体都在刷一条消息，香港超过瑞士和新加坡，成了全球第一大离岸财富管理中心。全球资本并没有集体涌向香港，香港只是内地财富溢出的集散地。拆开资金来源，内地约占六成，主力是后知后觉的中小老板和围绕公务体系长起来的新中产。据说台湾过来的有一成多，是跟大陆深度绑定的生意钱，剩下的是从东南亚和迪拜回流的灰色贸易资金。把钱挪到香港，只是从一个棋盘跳进另一个出法律更快的棋盘，监管备好的框迟早统一去查。在亚洲，门槛和成本都高的新加坡反倒更稳妥。资产安全靠的是干净的底子和清晰的架构，挪位置没用。",
       "status": "curated",
+      "degree": 19
+    },
+    {
+      "id": "live:LIVE043",
+      "key": "LIVE043",
+      "label": "LIVE043",
+      "fullLabel": "LIVE043 · 打了四年死掉上百万，为什么没人上街？征兵名单上从来没有首都的人",
+      "type": "live",
+      "route": "lives/LIVE043",
+      "summary": "军官私下把士兵叫作灰色的牲口，死一个再从家里抓下一个。",
+      "status": "published",
       "degree": 19
     },
     {
@@ -1269,17 +1269,6 @@
       "degree": 14
     },
     {
-      "id": "live:LIVE046",
-      "key": "LIVE046",
-      "label": "LIVE046",
-      "fullLabel": "LIVE046 · 房贷贴息背后真相：五万块买走你两百万流动性！以为自己是“基本盘”，其实是被盯上的钱袋子",
-      "type": "live",
-      "route": "lives/LIVE046",
-      "summary": "三道线一划，一线城市的房子全被排除，剩下的是想回老家买房的打工人。",
-      "status": "published",
-      "degree": 14
-    },
-    {
       "id": "live:LIVE047",
       "key": "LIVE047",
       "label": "LIVE047",
@@ -1409,6 +1398,17 @@
       "route": "lives/LIVE019",
       "summary": "随便举个数：五百万起的剧本，一轮轮滚成六个亿的盘子，每进一拨人就溢价一次。",
       "status": "curated",
+      "degree": 13
+    },
+    {
+      "id": "live:LIVE046",
+      "key": "LIVE046",
+      "label": "LIVE046",
+      "fullLabel": "LIVE046 · 房贷贴息背后真相：五万块买走你两百万流动性！以为自己是“基本盘”，其实是被盯上的钱袋子",
+      "type": "live",
+      "route": "lives/LIVE046",
+      "summary": "三道线一划，一线城市的房子全被排除，剩下的是想回老家买房的打工人。",
+      "status": "published",
       "degree": 13
     },
     {
@@ -4261,17 +4261,6 @@
       "degree": 5
     },
     {
-      "id": "concept:data-fetishism",
-      "key": "data-fetishism",
-      "label": "数据崇拜",
-      "fullLabel": "数据崇拜",
-      "type": "concept",
-      "route": "concepts/data-fetishism",
-      "summary": "把数据、表格、术语和科学帽子当成真理本身，只要有数字有来源就信。",
-      "status": null,
-      "degree": 5
-    },
-    {
       "id": "concept:pressure-backfire",
       "key": "pressure-backfire",
       "label": "外压反噬",
@@ -4740,7 +4729,7 @@
       "fullLabel": "单位制回潮",
       "type": "concept",
       "route": "concepts/danwei-revival",
-      "summary": "法律失灵的场合里，单位重新成为约束公职人员的最有效抓手，也重新成为护着自己人的保护壳。",
+      "summary": "法律管不住的场合里，单位重新成了约束公职人员最管用的东西，也成了护着自己人的那层壳。",
       "status": null,
       "degree": 4
     },
@@ -5031,6 +5020,17 @@
       "degree": 4
     },
     {
+      "id": "concept:data-fetishism",
+      "key": "data-fetishism",
+      "label": "数据崇拜",
+      "fullLabel": "数据崇拜",
+      "type": "concept",
+      "route": "concepts/data-fetishism",
+      "summary": "把数据、表格、术语和科学的样子当成真理本身，有数字、有来源就信。",
+      "status": null,
+      "degree": 4
+    },
+    {
       "id": "concept:homogeneous-competition",
       "key": "homogeneous-competition",
       "label": "同质竞争",
@@ -5207,17 +5207,6 @@
       "degree": 4
     },
     {
-      "id": "concept:dignity-pricing",
-      "key": "dignity-pricing",
-      "label": "尊严定价",
-      "fullLabel": "尊严定价",
-      "type": "concept",
-      "route": "concepts/dignity-pricing",
-      "summary": "补贴和分配金额不仅是数字，也在为一个群体的体面和社会位置定价。",
-      "status": null,
-      "degree": 4
-    },
-    {
       "id": "theme:ai-capital-and-company-identity",
       "key": "ai-capital-and-company-identity",
       "label": "AI创业、资本主场与公司身份",
@@ -5372,6 +5361,17 @@
       "degree": 3
     },
     {
+      "id": "concept:standard-answer-cage",
+      "key": "standard-answer-cage",
+      "label": "标准答案牢笼",
+      "fullLabel": "标准答案牢笼",
+      "type": "concept",
+      "route": "concepts/standard-answer-cage",
+      "summary": "复杂问题被压缩成唯一正确答案后，人会失去提问、迁移和面对不确定性的能力。",
+      "status": null,
+      "degree": 3
+    },
+    {
       "id": "concept:surface-modernity",
       "key": "surface-modernity",
       "label": "表层现代化",
@@ -5434,17 +5434,6 @@
       "type": "concept",
       "route": "concepts/planning-lockin",
       "summary": "宏大目标一旦锁定资源和判断，分散试错与旁路探索就会被压缩。",
-      "status": null,
-      "degree": 3
-    },
-    {
-      "id": "concept:defensive-medicine",
-      "key": "defensive-medicine",
-      "label": "防御性医疗",
-      "fullLabel": "防御性医疗",
-      "type": "concept",
-      "route": "concepts/defensive-medicine",
-      "summary": "医生不再围着病人的病情转，而是围着追责风险转，先想怎么做才不担责，再想怎么做对病人好。",
       "status": null,
       "degree": 3
     },
@@ -5665,17 +5654,6 @@
       "type": "concept",
       "route": "concepts/internal-migration",
       "summary": "不发生地理迁移，而是从主流劳动、消费、身份和关系规则中退出。",
-      "status": null,
-      "degree": 3
-    },
-    {
-      "id": "concept:energy-exporter-cash-crunch",
-      "key": "energy-exporter-cash-crunch",
-      "label": "能源输出国现金流断裂",
-      "fullLabel": "能源输出国现金流断裂",
-      "type": "concept",
-      "route": "concepts/energy-exporter-cash-crunch",
-      "summary": "靠卖油气过日子的国家像一家靠现金流周转的超市，油价跌破线并持续足够久，社会成本就会失控。",
       "status": null,
       "degree": 3
     },
@@ -5983,7 +5961,7 @@
       "fullLabel": "业绩大洗澡",
       "type": "concept",
       "route": "concepts/earnings-big-bath",
-      "summary": "业绩大洗澡指企业把历史问题一次性集中确认，把旧账压低成新任期或新叙事的低起点。",
+      "summary": "企业把历史问题一次性集中确认，把旧账压成新任期或新叙事的低起点。",
       "status": null,
       "degree": 3
     },
@@ -6153,17 +6131,6 @@
       "degree": 2
     },
     {
-      "id": "concept:standard-answer-cage",
-      "key": "standard-answer-cage",
-      "label": "标准答案牢笼",
-      "fullLabel": "标准答案牢笼",
-      "type": "concept",
-      "route": "concepts/standard-answer-cage",
-      "summary": "复杂问题被压缩成唯一正确答案后，人会失去提问、迁移和面对不确定性的能力。",
-      "status": null,
-      "degree": 2
-    },
-    {
       "id": "concept:surface-chaos-deep-order",
       "key": "surface-chaos-deep-order",
       "label": "表面乱局深层秩序",
@@ -6307,13 +6274,13 @@
       "degree": 2
     },
     {
-      "id": "concept:dual-track-review-system",
-      "key": "dual-track-review-system",
-      "label": "分层审核制度",
-      "fullLabel": "分层审核制度",
+      "id": "concept:defensive-medicine",
+      "key": "defensive-medicine",
+      "label": "防御性医疗",
+      "fullLabel": "防御性医疗",
       "type": "concept",
-      "route": "concepts/dual-track-review-system",
-      "summary": "同一类内容因为投资规模、平台主推程度和发行路径不同，进入不同审核通道。",
+      "route": "concepts/defensive-medicine",
+      "summary": "医生先想怎么做才不担责，再想怎么做对病人好，看病围着法律风险转。",
       "status": null,
       "degree": 2
     },
@@ -6589,6 +6556,17 @@
       "type": "concept",
       "route": "concepts/circle-of-competence",
       "summary": "只投自己真正能接得住、能看懂的赛道，而不是看起来更美好、却根本不熟悉的行业。",
+      "status": null,
+      "degree": 2
+    },
+    {
+      "id": "concept:energy-exporter-cash-crunch",
+      "key": "energy-exporter-cash-crunch",
+      "label": "能源输出国现金流断裂",
+      "fullLabel": "能源输出国现金流断裂",
+      "type": "concept",
+      "route": "concepts/energy-exporter-cash-crunch",
+      "summary": "靠卖油气过日子的国家像一家靠现金流周转的超市，油价跌破线并持续足够久，社会成本就会失控。",
       "status": null,
       "degree": 2
     },
@@ -6896,7 +6874,7 @@
       "fullLabel": "养人蓄水池",
       "type": "concept",
       "route": "concepts/employment-reservoir",
-      "summary": "一家企业被体系保留下来的真正理由，往往不是它能不能盈利，而是它替社会养着大量员工、家庭和消费链条。",
+      "summary": "一家企业被体系保留下来，常常因为它替社会养着大量员工、家庭和消费链条，盈利能力倒在其次。",
       "status": null,
       "degree": 2
     },
@@ -6974,6 +6952,17 @@
       "type": "model",
       "route": "models/capital-entry-window",
       "summary": "资本最容易进入的是缺钱、虚弱的企业；强盈利、强话语权、强后台的企业即使被人眼红，短期也很难被资本切入。",
+      "status": null,
+      "degree": 2
+    },
+    {
+      "id": "concept:dignity-pricing",
+      "key": "dignity-pricing",
+      "label": "尊严定价",
+      "fullLabel": "尊严定价",
+      "type": "concept",
+      "route": "concepts/dignity-pricing",
+      "summary": "补贴和养老金的金额不只是数字，也在给一个群体的体面和社会位置标价。",
       "status": null,
       "degree": 2
     },
@@ -7242,6 +7231,17 @@
       "degree": 1
     },
     {
+      "id": "concept:dual-track-review-system",
+      "key": "dual-track-review-system",
+      "label": "分层审核制度",
+      "fullLabel": "分层审核制度",
+      "type": "concept",
+      "route": "concepts/dual-track-review-system",
+      "summary": "同一类内容因为投资规模、平台主推程度和发行路径不同，进入不同审核通道。",
+      "status": null,
+      "degree": 1
+    },
+    {
       "id": "concept:profit-split-backfire",
       "key": "profit-split-backfire",
       "label": "分润反噬",
@@ -7435,7 +7435,7 @@
       "fullLabel": "货币信用崩塌",
       "type": "concept",
       "route": "concepts/currency-credit-collapse",
-      "summary": "一国货币持续贬值的根源不是外部汇率压力，而是市场对该国财政纪律和治理能力的信心彻底流失。",
+      "summary": "一国货币持续下跌，主因是市场不再相信这个国家的财政纪律和治理能力，外部汇率压力只是表面。",
       "status": null,
       "degree": 1
     },
@@ -7457,7 +7457,7 @@
       "fullLabel": "降标式公平",
       "type": "concept",
       "route": "concepts/downgrade-equality",
-      "summary": "用整体降标换取覆盖面和成本控制时，公平可能变成低标准统一。",
+      "summary": "为了覆盖面和成本控制把标准整体降下来，公平就成了大家统一用低标准。",
       "status": null,
       "degree": 1
     },
@@ -8337,7 +8337,7 @@
       "fullLabel": "直达型消费",
       "type": "concept",
       "route": "concepts/direct-transfer-consumption",
-      "summary": "现金直接到普通人手里，会进入日常消费毛细血管，形成朴素但真实的循环。",
+      "summary": "现金直接到普通人手里，会流进菜市场、药店这些毛细血管，形成朴素但真实的消费循环。",
       "status": null,
       "degree": 1
     },
@@ -19777,11 +19777,6 @@
     },
     {
       "source": "live:LIVE026",
-      "target": "concept:dignity-pricing",
-      "kind": "live-concept"
-    },
-    {
-      "source": "live:LIVE026",
       "target": "concept:useless-class",
       "kind": "live-concept"
     },
@@ -20867,11 +20862,6 @@
     },
     {
       "source": "live:LIVE034",
-      "target": "concept:dual-track-review-system",
-      "kind": "live-concept"
-    },
-    {
-      "source": "live:LIVE034",
       "target": "concept:organizational-silence",
       "kind": "live-concept"
     },
@@ -21487,11 +21477,6 @@
     },
     {
       "source": "live:LIVE039",
-      "target": "concept:energy-exporter-cash-crunch",
-      "kind": "live-concept"
-    },
-    {
-      "source": "live:LIVE039",
       "target": "concept:information-edge",
       "kind": "live-concept"
     },
@@ -21897,11 +21882,6 @@
     },
     {
       "source": "live:LIVE043",
-      "target": "concept:dignity-pricing",
-      "kind": "live-concept"
-    },
-    {
-      "source": "live:LIVE043",
       "target": "concept:war-insulation-collapse",
       "kind": "live-concept"
     },
@@ -22027,12 +22007,12 @@
     },
     {
       "source": "live:LIVE044",
-      "target": "concept:data-fetishism",
+      "target": "concept:time-asymmetry",
       "kind": "live-concept"
     },
     {
       "source": "live:LIVE044",
-      "target": "concept:time-asymmetry",
+      "target": "concept:standard-answer-cage",
       "kind": "live-concept"
     },
     {
@@ -22248,11 +22228,6 @@
     {
       "source": "live:LIVE046",
       "target": "concept:metric-locking",
-      "kind": "live-concept"
-    },
-    {
-      "source": "live:LIVE046",
-      "target": "concept:defensive-medicine",
       "kind": "live-concept"
     },
     {
