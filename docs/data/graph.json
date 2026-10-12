@@ -3,7 +3,7 @@
     "title": "颖响力知识图谱",
     "subtitle": "节目、概念、模型、人物、主题之间的可视化连接网络",
     "nodeCount": 764,
-    "linkCount": 2806,
+    "linkCount": 2805,
     "typeCounts": {
       "model": 83,
       "live": 49,
@@ -257,17 +257,6 @@
       "degree": 26
     },
     {
-      "id": "live:LIVE031",
-      "key": "LIVE031",
-      "label": "LIVE031",
-      "fullLabel": "LIVE031 · 香港保险要交税了，交出去的其实是后台数据，县里现在也看得见你那笔钱",
-      "type": "live",
-      "route": "lives/LIVE031",
-      "summary": "巨额财产来源不明罪的门槛刚从三十万提到三百万，有人还没高兴完。",
-      "status": "curated",
-      "degree": 26
-    },
-    {
       "id": "theme:rule-of-law-boundaries-and-social-trust",
       "key": "rule-of-law-boundaries-and-social-trust",
       "label": "法治边界与社会信任",
@@ -330,6 +319,17 @@
       "type": "live",
       "route": "lives/LIVE030",
       "summary": "五年期存单给你一点六，这个数字一出来，复利这件事就不成立了。",
+      "status": "curated",
+      "degree": 25
+    },
+    {
+      "id": "live:LIVE031",
+      "key": "LIVE031",
+      "label": "LIVE031",
+      "fullLabel": "LIVE031 · 香港保险要交税了，交出去的其实是后台数据，县里现在也看得见你那笔钱",
+      "type": "live",
+      "route": "lives/LIVE031",
+      "summary": "巨额财产来源不明罪的门槛刚从三十万提到三百万，有人还没高兴完。",
       "status": "curated",
       "degree": 25
     },
@@ -3783,7 +3783,7 @@
       "fullLabel": "战备储油",
       "type": "concept",
       "route": "concepts/wartime-oil-stockpiling",
-      "summary": "石油进口国把进口量长期维持在真实需求之上，用溢出部分悄悄积累战时储备；危机来临只需停止增储，进口骤降而生产不受伤。",
+      "summary": "石油进口国让进口量长期高于真实需求，多出的部分悄悄存成战时储备。危机一来只要停止增储，进口就大跌，生产却不受多大影响。",
       "status": null,
       "degree": 6
     },
@@ -4125,17 +4125,6 @@
       "type": "concept",
       "route": "concepts/moral-capital",
       "summary": "一件件实事攒下的信任，平时折不成现金，到了难处会回来，也会被借去给别的事背书。",
-      "status": null,
-      "degree": 5
-    },
-    {
-      "id": "concept:welfare-ratchet",
-      "key": "welfare-ratchet",
-      "label": "福利棘轮",
-      "fullLabel": "福利棘轮",
-      "type": "concept",
-      "route": "concepts/welfare-ratchet",
-      "summary": "补贴和福利只能加不能减：经济做好选民不加分，砍福利一定下台，政客被锁进透支未来的短期维稳。",
       "status": null,
       "degree": 5
     },
@@ -4789,6 +4778,17 @@
       "degree": 4
     },
     {
+      "id": "concept:welfare-ratchet",
+      "key": "welfare-ratchet",
+      "label": "福利棘轮",
+      "fullLabel": "福利棘轮",
+      "type": "concept",
+      "route": "concepts/welfare-ratchet",
+      "summary": "补贴和福利只能加不能减。经济做好选民不一定加分，砍福利一定下台，政客被锁进透支未来的短期维稳。",
+      "status": null,
+      "degree": 4
+    },
+    {
       "id": "concept:wage-demand-loop",
       "key": "wage-demand-loop",
       "label": "工资需求循环",
@@ -5400,7 +5400,7 @@
       "fullLabel": "财富溢出集散地",
       "type": "concept",
       "route": "concepts/wealth-spillover-hub",
-      "summary": "一个金融节点的繁荣不是因为全球资本看好它，而是因为它恰好承接了某个大经济体溢出和回流的钱。",
+      "summary": "一个金融中心排名冲上去，增量主要来自邻近一个大经济体外流和回流的钱，全球资本并没有一起涌进来。",
       "status": null,
       "degree": 3
     },
@@ -7820,7 +7820,7 @@
       "fullLabel": "青年动员",
       "type": "concept",
       "route": "concepts/youth-mobilization",
-      "summary": "年轻选民从缺席变成集中出场，长期执政者赖以维持的年龄结构就会塌掉；决定选举的往往不是谁在台上站台，是谁肯出门。",
+      "summary": "原本不爱投票的年轻人集中出门，长期执政者靠的年龄结构就撑不住了。决定选举的常常是谁肯出门。",
       "status": null,
       "degree": 1
     },
@@ -20413,11 +20413,6 @@
     {
       "source": "live:LIVE031",
       "target": "concept:middle-class-reservoir",
-      "kind": "live-concept"
-    },
-    {
-      "source": "live:LIVE031",
-      "target": "concept:welfare-ratchet",
       "kind": "live-concept"
     },
     {
