@@ -3,7 +3,7 @@
     "title": "颖响力知识图谱",
     "subtitle": "节目、概念、模型、人物、主题之间的可视化连接网络",
     "nodeCount": 764,
-    "linkCount": 2850,
+    "linkCount": 2851,
     "typeCounts": {
       "model": 83,
       "live": 49,
@@ -235,6 +235,17 @@
       "degree": 27
     },
     {
+      "id": "episode:EP154",
+      "key": "EP154",
+      "label": "EP154",
+      "fullLabel": "EP154 · 赫格塞斯新加坡香会“围栏论”真相（上）：川普的全球建墙计划，已修到东亚，围墙就划到中国家门口",
+      "type": "episode",
+      "route": "episodes/EP154",
+      "summary": "香格里拉对话会上，美国防长赫格塞斯讲了一段话。多数解读抓住他要建立建设性战略稳定关系那句软话，认为是降调求稳。其实那只是开场的烟雾弹。关键词是后半段的围栏，他已把边界划在第一岛链，围栏成了修到东亚家门口的高墙。它接的是川普的新门罗主义，一边建墙，一边打击灰色贸易。美军收拳后撤，让盟友顶到前线守墙。芯片管制也开始按总部认人，墙修到了信息层。东南亚是最后一段还没划定的边界，香会就是逼骑墙国家选边的场子。",
+      "status": "curated",
+      "degree": 26
+    },
+    {
       "id": "live:LIVE011",
       "key": "LIVE011",
       "label": "LIVE011",
@@ -320,17 +331,6 @@
       "route": "models/narrative-instrumentalization",
       "summary": "叙事工具化模型解释叙事的主要功能从解释现实转向组织情绪和划分阵营。",
       "status": null,
-      "degree": 25
-    },
-    {
-      "id": "episode:EP154",
-      "key": "EP154",
-      "label": "EP154",
-      "fullLabel": "EP154 · 赫格塞斯新加坡香会“围栏论”真相（上）：川普的全球建墙计划，已修到东亚，围墙就划到中国家门口",
-      "type": "episode",
-      "route": "episodes/EP154",
-      "summary": "香格里拉对话会上，美国防长赫格塞斯讲了一段话。多数解读抓住他要建立建设性战略稳定关系那句软话，认为是降调求稳。其实那只是开场的烟雾弹。关键词是后半段的围栏，他已把边界划在第一岛链，围栏成了修到东亚家门口的高墙。它接的是川普的新门罗主义，一边建墙，一边打击灰色贸易。美军收拳后撤，让盟友顶到前线守墙。芯片管制也开始按总部认人，墙修到了信息层。东南亚是最后一段还没划定的边界，香会就是逼骑墙国家选边的场子。",
-      "status": "curated",
       "degree": 25
     },
     {
@@ -1291,6 +1291,17 @@
       "degree": 14
     },
     {
+      "id": "model:wall-and-gray-trade-crackdown",
+      "key": "wall-and-gray-trade-crackdown",
+      "label": "建墙与打灰模型",
+      "fullLabel": "建墙与打灰模型",
+      "type": "model",
+      "route": "models/wall-and-gray-trade-crackdown",
+      "summary": "川普这一届对外有两条主线：建墙分清敌我，打击灰色贸易，把交易逼回美元。",
+      "status": null,
+      "degree": 13
+    },
+    {
       "id": "theme:ev-financialization-and-false-sales",
       "key": "ev-financialization-and-false-sales",
       "label": "新能源金融化与虚假销量",
@@ -1430,17 +1441,6 @@
       "type": "model",
       "route": "models/rule-anchored-small-state-model",
       "summary": "小国要长期活下来，靠的是规则信誉、理性的政府和看得见的自我约束，地理上的好运气只是起点。",
-      "status": null,
-      "degree": 12
-    },
-    {
-      "id": "model:wall-and-gray-trade-crackdown",
-      "key": "wall-and-gray-trade-crackdown",
-      "label": "建墙与打灰模型",
-      "fullLabel": "建墙与打灰模型",
-      "type": "model",
-      "route": "models/wall-and-gray-trade-crackdown",
-      "summary": "建墙与打灰模型把川普的全球策略概括为两条隐藏逻辑：建墙分清敌我盟友、打击灰色贸易逼交易回归美元。",
       "status": null,
       "degree": 12
     },
@@ -3277,7 +3277,7 @@
       "fullLabel": "政权更替剧本",
       "type": "model",
       "route": "models/regime-replacement-playbook",
-      "summary": "不颠覆整套政权，只反复换掉最高领导人、直到换出一个能合作的为止的低成本施压剧本。",
+      "summary": "不推翻整套政权，只反复换掉最高领导人，直到换上一个肯合作的人。",
       "status": null,
       "degree": 7
     },
@@ -4410,7 +4410,7 @@
       "fullLabel": "一级市场逻辑投二级市场",
       "type": "model",
       "route": "models/primary-market-logic",
-      "summary": "用一级市场逻辑投二级市场，指不靠公开博弈，而是凭别人没有的信息、资源和对企业命脉的掌控，在确定性极高时才重仓下注。",
+      "summary": "用一级市场的办法投二级市场，靠的是别人没有的信息、资源和对企业命脉的掌握，确定性够高才重仓。",
       "status": null,
       "degree": 5
     },
@@ -5092,7 +5092,7 @@
       "fullLabel": "危机筛选",
       "type": "model",
       "route": "models/crisis-selection",
-      "summary": "危机筛选解释危机如何把旧中心筛下去，并把边缘角色推向前台。",
+      "summary": "社会进入危机期，原来掌事的人被动后退，空出来的位置把原本在边上的人推到前台。推上去的是承压的位置，不等于赢。",
       "status": null,
       "degree": 4
     },
@@ -5609,7 +5609,7 @@
       "fullLabel": "继承扭曲模型",
       "type": "model",
       "route": "models/inheritance-distortion-model",
-      "summary": "继承扭曲模型解释财富、关系和人格问题一起传递时，继承会变成复制伤害而非接续。",
+      "summary": "代际传下去的不只是钱，还有父辈用钱的方式、看人的方式和没消化的怨恨。下一代没想通这些，反叛父辈到头来成了换个样子复制父辈。",
       "status": null,
       "degree": 3
     },
@@ -6247,7 +6247,7 @@
       "fullLabel": "创伤循环模型",
       "type": "model",
       "route": "models/trauma-loop",
-      "summary": "创伤循环模型解释未被理解和处理的伤害，会以怀旧、灌输和错误想象反复回流。",
+      "summary": "一代人受过的伤没有被讲清楚，老了以后会被说成成就和热血，再教给下一代，伤害就这样一代代往下传。",
       "status": null,
       "degree": 2
     },
@@ -6346,7 +6346,7 @@
       "fullLabel": "符号登顶",
       "type": "model",
       "route": "models/symbol-ascension",
-      "summary": "不在现有的比价体系里争第一，而是先划界限、再筛人、最后把自己变成不能被议价也不能被调侃的符号。",
+      "summary": "不在比价体系里争第一。先划界限，再筛人，最后把自己做成不能议价、也不能调侃的符号。",
       "status": null,
       "degree": 2
     },
@@ -6962,7 +6962,7 @@
       "fullLabel": "战略反攻拐点",
       "type": "model",
       "route": "models/strategic-counteroffensive-turning-point",
-      "summary": "战略反攻拐点解释一场长期战争如何从被动防守、互相僵持走到能打进对方腹地的反攻，并以打到对方首都作为战争接近结束的信号。",
+      "summary": "长期战争一般要走过被动防守、互相僵持、战略反攻三段。弱势一方以前的打击多半是做样子，到了能拿到结果、还打到对方首都的时候，就接近反攻拐点了。",
       "status": null,
       "degree": 2
     },
@@ -7083,7 +7083,7 @@
       "fullLabel": "边界治理模型",
       "type": "model",
       "route": "models/boundary-governance",
-      "summary": "边界治理模型主张在不适、争议和明确伤害之间，先界定边界而非急于二分善恶。",
+      "summary": "一件事让人不舒服，不等于它越了线。先等事实到位，再看踩在边缘还是越过边缘，前者提醒，后者严惩。",
       "status": null,
       "degree": 1
     },
@@ -7193,7 +7193,7 @@
       "fullLabel": "城市三阶段模型",
       "type": "model",
       "route": "models/city-three-stage-model",
-      "summary": "城市三阶段模型把城市价值分为外表、实力和灵魂，反对只用建设体量评判城市。",
+      "summary": "城市和人一样分三个阶段，先看外表，再拼实力，最后比灵魂。只拿高楼和道路去比，停在第一层。",
       "status": null,
       "degree": 1
     },
@@ -7380,7 +7380,7 @@
       "fullLabel": "规则善意桥接模型",
       "type": "model",
       "route": "models/rule-charity-bridge",
-      "summary": "规则善意桥接模型解释制度如何吸收好意风险，使道德鼓励与法律责任不互相伤害。",
+      "summary": "助人出了事，责任按比例细算，超出的风险由第三方基金接住，好人不必一个人扛。",
       "status": null,
       "degree": 1
     },
@@ -7545,7 +7545,7 @@
       "fullLabel": "跨学科学习模型",
       "type": "model",
       "route": "models/cross-disciplinary-learning",
-      "summary": "跨学科学习模型强调用真实问题打通多个学科，让学生直接接触复杂系统。",
+      "summary": "跨学科学习用一个真实问题把几门学科的原理接起来，让学生学到的是看复杂系统的办法，不只是某一科的答案。",
       "status": null,
       "degree": 1
     },
@@ -7556,7 +7556,7 @@
       "fullLabel": "扩张超速失控模型",
       "type": "model",
       "route": "models/growth-outpaces-controls",
-      "summary": "企业门店或规模狂奔的速度，超过供应链、管理和品控的吸纳能力时，质量问题会作为后遗症集中爆发，而不是品牌一夜变质。",
+      "summary": "门店和规模跑得比供应链、管理和品控快，质量问题会当作后遗症集中冒出来，根子在增速透支了管理。",
       "status": null,
       "degree": 1
     },
@@ -7908,7 +7908,7 @@
       "fullLabel": "失控生产过滤模型",
       "type": "model",
       "route": "models/uncontrolled-production-filter",
-      "summary": "当生产近乎无限时，系统价值从生产端转向筛选端，用户注意力会成为关键过滤器。",
+      "summary": "生产近乎无限时，值钱的环节挪到筛选端，用户的注意力成了平台的过滤器。",
       "status": null,
       "degree": 1
     },
@@ -13363,6 +13363,11 @@
     {
       "source": "episode:EP154",
       "target": "model:small-state-balancing-model",
+      "kind": "episode-model"
+    },
+    {
+      "source": "episode:EP154",
+      "target": "model:wall-and-gray-trade-crackdown",
       "kind": "episode-model"
     },
     {
