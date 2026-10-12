@@ -2,30 +2,34 @@
   "id": "fire-safety-code",
   "name": "消防规范",
   "kind": "general",
-  "asOf": "2026-07-22",
-  "summary": "疏散门向外开、安全通道禁锁、高层自动喷淋这套习以为常的规则体系；EP186 追溯它的源头——1911 年三角大火与 146 条生命。",
-  "description": "消防规范指现代建筑与工作场所必须遵守的一整套防火安全规则：疏散门向外开启且严禁锁闭、高层建筑安装自动喷淋、保持安全通道畅通、设置消防栓和逃生标识等。节目在 EP186 里强调，这套今天写字楼商场里习以为常的规则不是从来就有的：它的直接源头是 1911 年纽约三角内衣厂大火——146 名女工死于锁死的逃生门和够不着的云梯，独立调查委员会据此推动纽约一口气立下 61 条严格法律，现代消防体系由此成形，并扩散到全世界的高楼。",
+  "asOf": "2026-10-04",
+  "summary": "消防规范指疏散门向外开、安全通道禁锁、高层装自动喷淋这套防火规则，EP186 把它追到 1911 年纽约三角内衣厂大火里的 146 条命。",
+  "description": "消防规范指建筑和工作场所必须遵守的防火安全规则，比如疏散门向外开、严禁锁闭，高层装自动喷淋，安全通道保持畅通。\n\nEP186 把这些规则追到 1911 年 3 月 25 日纽约三角内衣厂大火。火灾死了 146 人，多数是年轻女工，通往楼梯的门被锁，消防云梯只够到七楼。火灾之后纽约州成立工厂调查委员会，州议会陆续通过了一批劳动和消防安全法律，后来成了全美的样板。今天写字楼和商场里习以为常的这些规则，EP186 说都是这 146 条命换来的。",
   "programAssociations": [
     {
       "title": "习以为常的规则从哪来",
       "episodes": [
         "EP186"
       ],
-      "note": "EP186 逐条对应了灾难与规则：门被锁死对应疏散门严禁锁闭，云梯只到七楼对应高层自动喷淋，无底线加班对应工时上限，75 美元补偿对应工伤高额赔偿。节目的落点是提醒——把消防规范当成妨碍效率的官僚条文之前，先想想每一条背后是谁的命。"
+      "note": "EP186 把灾难和规则一条条对上。门被锁死，后来有了疏散门向外开、严禁锁闭。云梯只到七楼，后来高层必须装自动喷淋。没有工时限制，后来有了工时上限。遇难家属每家只拿到 75 美元，后来工伤遇难要雇主高额赔偿。结尾说这些都是用鲜血换来的规则，人的生命和尊严要排在效率前面。"
     }
   ],
   "signalNotes": [
-    "安全通道上锁、消防验收走形式的新闻出现时，这个词条提醒规则的来历正在被遗忘。",
-    "评估任何放松安全规制的提议时，先分清它砍的是官僚冗余还是血写的红线。"
+    "安全通道上锁、消防验收走过场的新闻出现时，可以回到 EP186，三角内衣厂那扇锁着的门就是这类事最早的样子。",
+    "有人提议放松安全规制、说它拖累效率时，EP186 给的参照是这些条款当初怎么来的，每一条后面都有一场事故。"
   ],
   "extensionNotes": [
     {
-      "title": "blood-written-rules",
-      "note": "血写的规则概念页把消防规范的生成逻辑抽象成通用框架。"
+      "title": "血写的规则",
+      "note": "消防规范是血写的规则里最典型的一类，先出事，再立规矩。"
     },
     {
-      "title": "triangle-shirtwaist-fire",
-      "note": "三角大火是现代消防规范的起点事件。"
+      "title": "三角内衣厂大火",
+      "note": "EP186 讲的现代消防规范的起点，锁死的门和够不着的云梯都出在这场火里。"
+    },
+    {
+      "title": "弗朗西丝·帕金斯",
+      "note": "她在现场目睹了这场火，二十多年后当上劳工部长，把工时和社保写进罗斯福新政，消防之外的那一半规则从她手里出来。"
     }
   ],
   "aliases": [
@@ -36,11 +40,22 @@
     "triangle-shirtwaist-fire",
     "gilded-age"
   ],
-  "sources": [],
+  "sources": [
+    {
+      "title": "Triangle Shirtwaist Factory fire | Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Triangle_Shirtwaist_Factory_fire",
+      "note": "核死亡人数和锁门。原句：The fire caused the deaths of 146；Because the doors to the stairwells and exits were locked。"
+    },
+    {
+      "title": "Legacy of the Triangle Fire | Cornell University ILR School",
+      "url": "https://trianglefire.ilr.cornell.edu/legacy/index.html",
+      "note": "核火灾后的立法和消防规则影响。原句：leading to the transformation of the labor code of New York State and to the adoption of fire safety measures that served as a model for the whole country；the New York Factory Investigative Commission, which wrote thirty-six of the new labor related bills that the state legislature eventually adopted。"
+    }
+  ],
   "episodes": [
     {
       "id": "EP186",
-      "note": "本期把现代消防规范逐条追溯到三角大火，说明安全常识是 146 条生命换来的。"
+      "note": "把疏散门向外开、高层自动喷淋这些消防规则追到三角内衣厂大火，说安全常识是 146 条命换来的。"
     }
   ]
 }
