@@ -19,7 +19,8 @@
     "社会实验与制度弹性"
   ],
   "concepts": [
-    "downgrade-equality"
+    "downgrade-equality",
+    "bounded-experimentation"
   ],
   "models": [
     "bounded-social-experiment",

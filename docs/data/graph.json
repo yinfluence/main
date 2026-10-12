@@ -3,7 +3,7 @@
     "title": "颖响力知识图谱",
     "subtitle": "节目、概念、模型、人物、主题之间的可视化连接网络",
     "nodeCount": 764,
-    "linkCount": 2840,
+    "linkCount": 2837,
     "typeCounts": {
       "model": 83,
       "live": 49,
@@ -26,17 +26,6 @@
       "degree": 57
     },
     {
-      "id": "live:LIVE022",
-      "key": "LIVE022",
-      "label": "LIVE022",
-      "fullLabel": "LIVE022 · 没有比赛的周末，玫瑰碗变成一个二手市场，世界级球场靠它养活自己",
-      "type": "live",
-      "route": "lives/LIVE022",
-      "summary": "在那儿能淘到五十年前的版画，一件当年从中国出口的瓷器又被背了回来。",
-      "status": "curated",
-      "degree": 37
-    },
-    {
       "id": "live:LIVE002",
       "key": "LIVE002",
       "label": "LIVE002",
@@ -44,6 +33,17 @@
       "type": "live",
       "route": "lives/LIVE002",
       "summary": "县城里四分之三的收入，现在攥在旱涝保收的那一头。",
+      "status": "curated",
+      "degree": 36
+    },
+    {
+      "id": "live:LIVE022",
+      "key": "LIVE022",
+      "label": "LIVE022",
+      "fullLabel": "LIVE022 · 没有比赛的周末，玫瑰碗变成一个二手市场，世界级球场靠它养活自己",
+      "type": "live",
+      "route": "lives/LIVE022",
+      "summary": "在那儿能淘到五十年前的版画，一件当年从中国出口的瓷器又被背了回来。",
       "status": "curated",
       "degree": 36
     },
@@ -279,17 +279,6 @@
       "degree": 26
     },
     {
-      "id": "live:LIVE029",
-      "key": "LIVE029",
-      "label": "LIVE029",
-      "fullLabel": "LIVE029 · 出国这条路只开了不到三十年，九月十五号新规执行，以后出去可能就没有回头路",
-      "type": "live",
-      "route": "lives/LIVE029",
-      "summary": "拿旅游签证过去看看能不能留下，九月之后可能就踩在违规那条线上。",
-      "status": "curated",
-      "degree": 26
-    },
-    {
       "id": "live:LIVE030",
       "key": "LIVE030",
       "label": "LIVE030",
@@ -374,6 +363,17 @@
       "type": "live",
       "route": "lives/LIVE023",
       "summary": "在她的算盘里，这样的人有一百万个，出一个事的几率比坐飞机摔了还低。",
+      "status": "curated",
+      "degree": 25
+    },
+    {
+      "id": "live:LIVE029",
+      "key": "LIVE029",
+      "label": "LIVE029",
+      "fullLabel": "LIVE029 · 出国这条路只开了不到三十年，九月十五号新规执行，以后出去可能就没有回头路",
+      "type": "live",
+      "route": "lives/LIVE029",
+      "summary": "拿旅游签证过去看看能不能留下，九月之后可能就踩在违规那条线上。",
       "status": "curated",
       "degree": 25
     },
@@ -873,17 +873,6 @@
       "degree": 18
     },
     {
-      "id": "live:LIVE049",
-      "key": "LIVE049",
-      "label": "LIVE049",
-      "fullLabel": "LIVE049 · 剑柄断了照样抢着买！拆解华删派的辟邪剑谱：这把剑是挤进婆罗门的入场券！车圈笑傲江湖",
-      "type": "live",
-      "route": "lives/LIVE049",
-      "summary": "高端款只做十台，经手的人每台要的回扣比普通款高一百倍。",
-      "status": "published",
-      "degree": 18
-    },
-    {
       "id": "model:subsidy-capital-flywheel",
       "key": "subsidy-capital-flywheel",
       "label": "补贴资本飞轮",
@@ -925,6 +914,17 @@
       "route": "episodes/EP189",
       "summary": "石油进口量断崖式世界第一的中国，日均消耗近1500万桶。美以与伊朗的军事行动展开、霍尔木兹海峡被封后，进口在三四个月内减少三成多。短期油价、新能源替代和动用战略储备，这三种主流解释都算不平这笔账。剩下最可能的解释，是它的真实需求只有进口量的三分之二左右，多出的部分多年来一直在转成战备储油。海峡一封，它只是停止增储，退回真实需求，所以进口大跌，工业没受什么破坏。按个人估计，台海一旦升级成中大型战争，石油最少要按两年来储。这套储备眼看建成，冲突偏偏在这时爆发，从此永远差一点。",
       "status": "curated",
+      "degree": 17
+    },
+    {
+      "id": "live:LIVE049",
+      "key": "LIVE049",
+      "label": "LIVE049",
+      "fullLabel": "LIVE049 · 剑柄断了照样抢着买！拆解华删派的辟邪剑谱：这把剑是挤进婆罗门的入场券！车圈笑傲江湖",
+      "type": "live",
+      "route": "lives/LIVE049",
+      "summary": "高端款只做十台，经手的人每台要的回扣比普通款高一百倍。",
+      "status": "published",
       "degree": 17
     },
     {
@@ -4140,17 +4140,6 @@
       "degree": 5
     },
     {
-      "id": "concept:distributed-war-industry",
-      "key": "distributed-war-industry",
-      "label": "分布式战时工业",
-      "fullLabel": "分布式战时工业",
-      "type": "concept",
-      "route": "concepts/distributed-war-industry",
-      "summary": "战时生产越能分散到多主体、多地点和快速反馈链条里，越不容易被固定打击瘫痪。",
-      "status": null,
-      "degree": 5
-    },
-    {
       "id": "concept:welfare-ratchet",
       "key": "welfare-ratchet",
       "label": "福利棘轮",
@@ -4239,17 +4228,6 @@
       "degree": 5
     },
     {
-      "id": "concept:dream-extinguishing",
-      "key": "dream-extinguishing",
-      "label": "灭梦式安全感",
-      "fullLabel": "灭梦式安全感",
-      "type": "concept",
-      "route": "concepts/dream-extinguishing",
-      "summary": "以稳定和现实为名过早熄灭年轻人的热爱，会把安全感变成生命力的折损。",
-      "status": null,
-      "degree": 5
-    },
-    {
       "id": "theme:content-regulation-and-short-drama",
       "key": "content-regulation-and-short-drama",
       "label": "内容监管与短剧崛起",
@@ -4323,17 +4301,6 @@
       "type": "person",
       "route": "people/wang-shi",
       "summary": "王石是万科创始人、董事会名誉主席。节目借他看地产老板怎样交棒和退场，交出去的公司出了事，人和家底又怎样被牵回来。",
-      "status": null,
-      "degree": 5
-    },
-    {
-      "id": "concept:crisis-power-reallocation",
-      "key": "crisis-power-reallocation",
-      "label": "危机中的权力重排",
-      "fullLabel": "危机中的权力重排",
-      "type": "concept",
-      "route": "concepts/crisis-power-reallocation",
-      "summary": "危机会改变谁在前台、谁承担责任、谁保留资源，从而触发权力位置的重新排序。",
       "status": null,
       "degree": 5
     },
@@ -4729,7 +4696,7 @@
       "fullLabel": "财富回收挤压",
       "type": "concept",
       "route": "concepts/wealth-repatriation-squeeze",
-      "summary": "财富回收挤压指国家通过收紧跨境通道、倒查境外账户和扩大对外投资监管，把高净值人群游离在监管外的境外财富重新定住、纳入体系并施加补税与缩水压力。",
+      "summary": "监管收紧跨境通道、倒查境外账户、扩大对外投资监管。老中产和高净值人群放在境外的钱被重新定住，接着要补税、罚没，或者缩水。",
       "status": null,
       "degree": 4
     },
@@ -4829,6 +4796,17 @@
       "type": "concept",
       "route": "concepts/outsourced-discernment",
       "summary": "个体放弃自我分辨好坏的能力，默认有监管机构替自己事先筛查，自己只管享受结果。",
+      "status": null,
+      "degree": 4
+    },
+    {
+      "id": "concept:distributed-war-industry",
+      "key": "distributed-war-industry",
+      "label": "分布式战时工业",
+      "fullLabel": "分布式战时工业",
+      "type": "concept",
+      "route": "concepts/distributed-war-industry",
+      "summary": "战时生产越能分散到多主体、多地点和快速反馈链条里，越不容易被固定打击瘫痪。",
       "status": null,
       "degree": 4
     },
@@ -4976,6 +4954,17 @@
       "degree": 4
     },
     {
+      "id": "concept:dream-extinguishing",
+      "key": "dream-extinguishing",
+      "label": "灭梦式安全感",
+      "fullLabel": "灭梦式安全感",
+      "type": "concept",
+      "route": "concepts/dream-extinguishing",
+      "summary": "以稳定和现实为名过早熄灭年轻人的热爱，会把安全感变成生命力的折损。",
+      "status": null,
+      "degree": 4
+    },
+    {
       "id": "theme:platform-labor-and-lived-reality",
       "key": "platform-labor-and-lived-reality",
       "label": "平台劳动与真实生存",
@@ -5097,6 +5086,17 @@
       "degree": 4
     },
     {
+      "id": "concept:crisis-power-reallocation",
+      "key": "crisis-power-reallocation",
+      "label": "危机中的权力重排",
+      "fullLabel": "危机中的权力重排",
+      "type": "concept",
+      "route": "concepts/crisis-power-reallocation",
+      "summary": "危机会改变谁在前台、谁承担责任、谁保留资源，从而触发权力位置的重新排序。",
+      "status": null,
+      "degree": 4
+    },
+    {
       "id": "concept:toxic-recycling",
       "key": "toxic-recycling",
       "label": "污染转移式回收",
@@ -5169,7 +5169,7 @@
       "fullLabel": "依附型企业",
       "type": "concept",
       "route": "concepts/dependent-enterprise",
-      "summary": "靠巨头授权生存的企业：只有使用权没有所有权、没有独立出海权、可替代性随同类依附者增加而归零，却承接巨头不要的全部风险。",
+      "summary": "靠巨头授权活着的企业，核心技术只有使用权，能卖到哪里也要看授权方。同类依附者一多就没了议价权，巨头不要的风险却全落在它身上。",
       "status": null,
       "degree": 4
     },
@@ -5818,7 +5818,7 @@
       "fullLabel": "全民普惠",
       "type": "concept",
       "route": "concepts/universal-provision",
-      "summary": "把一项关键公共品做成全体国民都能享受，而不是按阶层分配的治理选择。",
+      "summary": "最能改善日子的公共品让全体国民都享受到，不按收入、职级分层给，也不拿来当奖励留给少数人。",
       "status": null,
       "degree": 3
     },
@@ -6280,7 +6280,7 @@
       "fullLabel": "电池资产化",
       "type": "concept",
       "route": "concepts/battery-assetization",
-      "summary": "电池被从零部件改造成可估值、可抵押、可融资、可讲收益故事的资产包。",
+      "summary": "电池从整车的一个零部件，被拆出来做成能融资、每年有固定收益的资产包。",
       "status": null,
       "degree": 2
     },
@@ -6500,7 +6500,7 @@
       "fullLabel": "嫉妒驱动的污名化",
       "type": "concept",
       "route": "concepts/envy-driven-smear",
-      "summary": "嫉妒驱动的污名化指因为追不上、得不到，就转而用谣言和贬低去摧毁对方，从而获得心理平衡。",
+      "summary": "追不上、得不到，就转过头用谣言和贬低去毁掉对方，换一点心理平衡。",
       "status": null,
       "degree": 2
     },
@@ -6775,7 +6775,7 @@
       "fullLabel": "审美压缩",
       "type": "concept",
       "route": "concepts/aesthetic-compression",
-      "summary": "社会越功利和高压，审美、协商与细腻判断越容易被压缩成粗糙标准。",
+      "summary": "社会越功利、压力越大，人对美和差异的判断越容易压成几条粗糙标准，择偶看帅不帅，广告只求不出错。",
       "status": null,
       "degree": 2
     },
@@ -9317,6 +9317,11 @@
     },
     {
       "source": "episode:EP030",
+      "target": "concept:bounded-experimentation",
+      "kind": "episode-concept"
+    },
+    {
+      "source": "episode:EP030",
       "target": "model:bounded-social-experiment",
       "kind": "episode-model"
     },
@@ -10843,6 +10848,11 @@
     {
       "source": "episode:EP083",
       "target": "concept:pragmatic-legitimacy",
+      "kind": "episode-concept"
+    },
+    {
+      "source": "episode:EP083",
+      "target": "concept:universal-provision",
       "kind": "episode-concept"
     },
     {
@@ -19217,11 +19227,6 @@
     },
     {
       "source": "live:LIVE022",
-      "target": "concept:crisis-power-reallocation",
-      "kind": "live-concept"
-    },
-    {
-      "source": "live:LIVE022",
       "target": "concept:great-small-power-leveling",
       "kind": "live-concept"
     },
@@ -20218,11 +20223,6 @@
     {
       "source": "live:LIVE029",
       "target": "concept:jurisdiction-arbitrage",
-      "kind": "live-concept"
-    },
-    {
-      "source": "live:LIVE029",
-      "target": "concept:dream-extinguishing",
       "kind": "live-concept"
     },
     {
@@ -22547,11 +22547,6 @@
     },
     {
       "source": "live:LIVE049",
-      "target": "concept:distributed-war-industry",
-      "kind": "live-concept"
-    },
-    {
-      "source": "live:LIVE049",
       "target": "model:symbol-ascension",
       "kind": "live-model"
     },
@@ -22581,18 +22576,8 @@
       "kind": "live-theme"
     },
     {
-      "source": "episode:EP030",
-      "target": "concept:bounded-experimentation",
-      "kind": "episode-concept"
-    },
-    {
       "source": "episode:EP142",
       "target": "concept:self-dealing-incubation-loop",
-      "kind": "episode-concept"
-    },
-    {
-      "source": "episode:EP083",
-      "target": "concept:universal-provision",
       "kind": "episode-concept"
     },
     {
