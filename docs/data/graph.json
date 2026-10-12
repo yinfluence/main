@@ -2,14 +2,14 @@
   "meta": {
     "title": "颖响力知识图谱",
     "subtitle": "节目、概念、模型、人物、主题之间的可视化连接网络",
-    "nodeCount": 761,
-    "linkCount": 2862,
+    "nodeCount": 763,
+    "linkCount": 2873,
     "typeCounts": {
       "model": 83,
       "live": 48,
-      "concept": 250,
+      "concept": 251,
       "theme": 92,
-      "episode": 223,
+      "episode": 224,
       "person": 65
     }
   },
@@ -125,6 +125,17 @@
       "degree": 31
     },
     {
+      "id": "theme:singapore-and-small-state-survival",
+      "key": "singapore-and-small-state-survival",
+      "label": "新加坡与小国生存术",
+      "fullLabel": "新加坡与小国生存术",
+      "type": "theme",
+      "route": "themes/singapore-and-small-state-survival",
+      "summary": "讨论新加坡如何把规则、海峡、人才和谨慎外交组合成一套小国长期生存方法。",
+      "status": null,
+      "degree": 30
+    },
+    {
       "id": "live:LIVE033",
       "key": "LIVE033",
       "label": "LIVE033",
@@ -134,17 +145,6 @@
       "summary": "照这场的推演，一百个亿的项目掏二三十亿就能开工，剩下的钱从你买的那份理财里出。",
       "status": "curated",
       "degree": 30
-    },
-    {
-      "id": "theme:singapore-and-small-state-survival",
-      "key": "singapore-and-small-state-survival",
-      "label": "新加坡与小国生存术",
-      "fullLabel": "新加坡与小国生存术",
-      "type": "theme",
-      "route": "themes/singapore-and-small-state-survival",
-      "summary": "讨论新加坡如何把规则、海峡、人才和谨慎外交组合成一套小国长期生存方法。",
-      "status": null,
-      "degree": 29
     },
     {
       "id": "live:LIVE003",
@@ -433,6 +433,17 @@
       "degree": 24
     },
     {
+      "id": "concept:chokepoint-leverage",
+      "key": "chokepoint-leverage",
+      "label": "咽喉杠杆",
+      "fullLabel": "咽喉杠杆",
+      "type": "concept",
+      "route": "concepts/chokepoint-leverage",
+      "summary": "控制海峡、运河和关键通道的人，往往能把地理位置转化成定价权、通行权和规则权。",
+      "status": null,
+      "degree": 24
+    },
+    {
       "id": "live:LIVE024",
       "key": "LIVE024",
       "label": "LIVE024",
@@ -495,17 +506,6 @@
       "type": "theme",
       "route": "themes/narrative-speculation-and-retail-traps",
       "summary": "当市场热点先由故事驱动、再由散户接棒时，普通人最容易在高潮处接到最后一棒。",
-      "status": null,
-      "degree": 23
-    },
-    {
-      "id": "concept:chokepoint-leverage",
-      "key": "chokepoint-leverage",
-      "label": "咽喉杠杆",
-      "fullLabel": "咽喉杠杆",
-      "type": "concept",
-      "route": "concepts/chokepoint-leverage",
-      "summary": "控制海峡、运河和关键通道的人，往往能把地理位置转化成定价权、通行权和规则权。",
       "status": null,
       "degree": 23
     },
@@ -972,6 +972,17 @@
       "degree": 16
     },
     {
+      "id": "theme:maritime-chokepoints-and-route-order",
+      "key": "maritime-chokepoints-and-route-order",
+      "label": "海峡命门与航运秩序",
+      "fullLabel": "海峡命门与航运秩序",
+      "type": "theme",
+      "route": "themes/maritime-chokepoints-and-route-order",
+      "summary": "讨论海峡、运河和关键航道如何把地理位置变成规则、保险、资本和军事的综合权力。",
+      "status": null,
+      "degree": 16
+    },
+    {
       "id": "model:balance-sheet-maintenance",
       "key": "balance-sheet-maintenance",
       "label": "资产负债表维持",
@@ -1025,17 +1036,6 @@
       "summary": "赛力斯预告上半年净亏 15 到 18 亿，去年同期还赚了快 30 亿。它生产的问界交付量却涨了 10%，还霸着豪华 SUV 销冠，卖得越多亏得越多。华为和赛力斯这笔合作，从一开始就不平等。硬件采购、技术授权费、渠道服务费三笔供奉前置，单车 13 到 14 万先进华为的兜。收益挂销量，跟车企盈亏脱钩。重资产、价格战、地方对赌、出海受限的风险全压在赛力斯身上。这不是苹果代工模式，更像苏联与加盟共和国。行业刚起步就进了血海内卷，谁把制造端抱在怀里，谁就在裸泳。依附型车企是制造业民营小老板的缩影。",
       "status": "curated",
       "degree": 16
-    },
-    {
-      "id": "theme:maritime-chokepoints-and-route-order",
-      "key": "maritime-chokepoints-and-route-order",
-      "label": "海峡命门与航运秩序",
-      "fullLabel": "海峡命门与航运秩序",
-      "type": "theme",
-      "route": "themes/maritime-chokepoints-and-route-order",
-      "summary": "讨论海峡、运河和关键航道如何把地理位置变成规则、保险、资本和军事的综合权力。",
-      "status": null,
-      "degree": 15
     },
     {
       "id": "episode:EP126",
@@ -1445,6 +1445,17 @@
       "degree": 12
     },
     {
+      "id": "model:rule-anchored-small-state-model",
+      "key": "rule-anchored-small-state-model",
+      "label": "规则锚定型小国生存",
+      "fullLabel": "规则锚定型小国生存",
+      "type": "model",
+      "route": "models/rule-anchored-small-state-model",
+      "summary": "小国要长期活下来，不能只靠地理好运，更要靠规则信誉、理性政府和可预期的制度自我约束。",
+      "status": null,
+      "degree": 12
+    },
+    {
       "id": "model:wall-and-gray-trade-crackdown",
       "key": "wall-and-gray-trade-crackdown",
       "label": "建墙与打灰模型",
@@ -1463,6 +1474,17 @@
       "type": "theme",
       "route": "themes/human-value-and-state-credit",
       "summary": "讨论国家究竟把个体视为成本、工具，还是视为必须兑现承诺的对象。",
+      "status": null,
+      "degree": 12
+    },
+    {
+      "id": "model:small-state-balancing-model",
+      "key": "small-state-balancing-model",
+      "label": "小国平衡术",
+      "fullLabel": "小国平衡术",
+      "type": "model",
+      "route": "models/small-state-balancing-model",
+      "summary": "小国平衡术解释小国在大国之间维持生存空间，靠位置、合法性和现实利益而非纯姿态。",
       "status": null,
       "degree": 12
     },
@@ -1698,13 +1720,13 @@
       "degree": 11
     },
     {
-      "id": "model:rule-anchored-small-state-model",
-      "key": "rule-anchored-small-state-model",
-      "label": "规则锚定型小国生存",
-      "fullLabel": "规则锚定型小国生存",
+      "id": "model:chokepoint-order-model",
+      "key": "chokepoint-order-model",
+      "label": "海峡秩序模型",
+      "fullLabel": "海峡秩序模型",
       "type": "model",
-      "route": "models/rule-anchored-small-state-model",
-      "summary": "小国要长期活下来，不能只靠地理好运，更要靠规则信誉、理性政府和可预期的制度自我约束。",
+      "route": "models/chokepoint-order-model",
+      "summary": "真正决定咽喉通道价值的，不只是地理位置，而是谁定义通行规则、风险定价与法律边界。",
       "status": null,
       "degree": 11
     },
@@ -1742,13 +1764,13 @@
       "degree": 11
     },
     {
-      "id": "model:small-state-balancing-model",
-      "key": "small-state-balancing-model",
-      "label": "小国平衡术",
-      "fullLabel": "小国平衡术",
-      "type": "model",
-      "route": "models/small-state-balancing-model",
-      "summary": "小国平衡术解释小国在大国之间维持生存空间，靠位置、合法性和现实利益而非纯姿态。",
+      "id": "concept:active-neutrality",
+      "key": "active-neutrality",
+      "label": "主动中立",
+      "fullLabel": "主动中立",
+      "type": "concept",
+      "route": "concepts/active-neutrality",
+      "summary": "真正可持续的中立不是谁都不得罪，而是在坚持规则的前提下主动参与秩序塑造。",
       "status": null,
       "degree": 11
     },
@@ -1841,6 +1863,17 @@
       "degree": 11
     },
     {
+      "id": "episode:EP224",
+      "key": "EP224",
+      "label": "EP224",
+      "fullLabel": "EP224 · 大国博弈下小国只能站队？新加坡走出来第三条路，先让自己站起来！",
+      "type": "episode",
+      "route": "episodes/EP224",
+      "summary": "9 月 25 日一场华文论坛的炉边对话上，新加坡国防部长陈振声说，小国别天天争论选边站还是靠边站，先得自己站得起来。站不起来，没人逼你选，也没人在乎你站哪边。新加坡只有几百平方公里，没有纵深，没有资源，淡水都靠邻国供应。它用港口、航空和信息网络接上全世界，把世界当成自己的腹地。马六甲坚持不收费，跟伊朗封锁霍尔木兹走的是两条路。门开得大，对影子舰队和灰色贸易反而盯得更紧。别人离不开的连接才是小国的分量，这份分量要一直更新才保得住。",
+      "status": "curated",
+      "degree": 11
+    },
+    {
       "id": "concept:price-war-trap",
       "key": "price-war-trap",
       "label": "低价竞争陷阱",
@@ -1859,17 +1892,6 @@
       "type": "model",
       "route": "models/follower-advantage-collapse",
       "summary": "增量时代跟着别人走最划算，进入存量博弈之后，同一批跟随者从红利分享者变成成本承担者。",
-      "status": null,
-      "degree": 10
-    },
-    {
-      "id": "model:chokepoint-order-model",
-      "key": "chokepoint-order-model",
-      "label": "海峡秩序模型",
-      "fullLabel": "海峡秩序模型",
-      "type": "model",
-      "route": "models/chokepoint-order-model",
-      "summary": "真正决定咽喉通道价值的，不只是地理位置，而是谁定义通行规则、风险定价与法律边界。",
       "status": null,
       "degree": 10
     },
@@ -1925,17 +1947,6 @@
       "type": "model",
       "route": "models/political-embedded-enterprise",
       "summary": "企业一旦把自身命运深嵌进地方政府或国资体系，短期会更能续命，长期却更容易沦为政策工具。",
-      "status": null,
-      "degree": 10
-    },
-    {
-      "id": "concept:active-neutrality",
-      "key": "active-neutrality",
-      "label": "主动中立",
-      "fullLabel": "主动中立",
-      "type": "concept",
-      "route": "concepts/active-neutrality",
-      "summary": "真正可持续的中立不是谁都不得罪，而是在坚持规则的前提下主动参与秩序塑造。",
       "status": null,
       "degree": 10
     },
@@ -2666,6 +2677,17 @@
       "degree": 8
     },
     {
+      "id": "theme:small-state-balancing",
+      "key": "small-state-balancing",
+      "label": "小国平衡与地缘生存",
+      "fullLabel": "小国平衡与地缘生存",
+      "type": "theme",
+      "route": "themes/small-state-balancing",
+      "summary": "讨论新加坡这类小国如何在大国竞争中维持安全、合法性和现实利益。",
+      "status": null,
+      "degree": 8
+    },
+    {
       "id": "concept:information-edge",
       "key": "information-edge",
       "label": "信息优势",
@@ -3315,17 +3337,6 @@
       "degree": 7
     },
     {
-      "id": "theme:small-state-balancing",
-      "key": "small-state-balancing",
-      "label": "小国平衡与地缘生存",
-      "fullLabel": "小国平衡与地缘生存",
-      "type": "theme",
-      "route": "themes/small-state-balancing",
-      "summary": "讨论新加坡这类小国如何在大国竞争中维持安全、合法性和现实利益。",
-      "status": null,
-      "degree": 7
-    },
-    {
       "id": "model:regime-replacement-playbook",
       "key": "regime-replacement-playbook",
       "label": "政权更替剧本",
@@ -3810,6 +3821,17 @@
       "degree": 6
     },
     {
+      "id": "person:vivian-balakrishnan",
+      "key": "vivian-balakrishnan",
+      "label": "维文",
+      "fullLabel": "维文",
+      "type": "person",
+      "route": "people/vivian-balakrishnan",
+      "summary": "维文是新加坡外交部长，2015 年起任职，眼科医生出身，父亲是印度泰米尔人，母亲是福建福清籍华人。节目先拿他讲小国守海峡规则，再拿他讲穿梭外交，最后用他驳斥只有华人才厉害的种族叙事。",
+      "status": null,
+      "degree": 6
+    },
+    {
       "id": "theme:hidden-costs",
       "key": "hidden-costs",
       "label": "消费者为哪些隐性成本买单",
@@ -3850,6 +3872,17 @@
       "type": "concept",
       "route": "concepts/blood-written-rules",
       "summary": "习以为常的安全规范不是天生的官僚条文，而是灾难死亡换来的制度沉淀；忘掉来历，红线就会被当成可优化的成本。",
+      "status": null,
+      "degree": 6
+    },
+    {
+      "id": "concept:shadow-fleet",
+      "key": "shadow-fleet",
+      "label": "影子舰队",
+      "fullLabel": "影子舰队",
+      "type": "concept",
+      "route": "concepts/shadow-fleet",
+      "summary": "影子舰队是绕开西方保险、认证、定位和船东透明规则的平行航运网络。",
       "status": null,
       "degree": 6
     },
@@ -4349,17 +4382,6 @@
       "degree": 5
     },
     {
-      "id": "person:vivian-balakrishnan",
-      "key": "vivian-balakrishnan",
-      "label": "维文",
-      "fullLabel": "维文",
-      "type": "person",
-      "route": "people/vivian-balakrishnan",
-      "summary": "维文是新加坡外交部长，2015 年起任职，眼科医生出身，父亲是印度泰米尔人，母亲是福建福清籍华人。节目先拿他讲小国守海峡规则，再拿他讲穿梭外交，最后用他驳斥只有华人才厉害的种族叙事。",
-      "status": null,
-      "degree": 5
-    },
-    {
       "id": "concept:future-path-crowding",
       "key": "future-path-crowding",
       "label": "未来路径拥堵",
@@ -4411,17 +4433,6 @@
       "type": "model",
       "route": "models/primary-market-logic",
       "summary": "用一级市场逻辑投二级市场，指不靠公开博弈，而是凭别人没有的信息、资源和对企业命脉的掌控，在确定性极高时才重仓下注。",
-      "status": null,
-      "degree": 5
-    },
-    {
-      "id": "concept:shadow-fleet",
-      "key": "shadow-fleet",
-      "label": "影子舰队",
-      "fullLabel": "影子舰队",
-      "type": "concept",
-      "route": "concepts/shadow-fleet",
-      "summary": "影子舰队是绕开西方保险、认证、定位和船东透明规则的平行航运网络。",
       "status": null,
       "degree": 5
     },
@@ -8118,6 +8129,17 @@
       "type": "person",
       "route": "people/yao-zhenhua",
       "summary": "姚振华是宝能集团创始人、董事长，观致汽车实控人；EP066 从他 2026 年初的实名举报讲起，回看观致怎样被宝能改造到只剩残值。",
+      "status": null,
+      "degree": 1
+    },
+    {
+      "id": "concept:world-as-hinterland",
+      "key": "world-as-hinterland",
+      "label": "以世界为腹地",
+      "fullLabel": "以世界为腹地",
+      "type": "concept",
+      "route": "concepts/world-as-hinterland",
+      "summary": "国土小又没纵深的国家，把港口、航线和金融网络接上全世界，让别国的生意和利益都压在自己身上，靠别人离不开它来换安全。",
       "status": null,
       "degree": 1
     },
@@ -16505,6 +16527,61 @@
     {
       "source": "episode:EP223",
       "target": "theme:institutional-middle-class-and-social-mobility",
+      "kind": "episode-theme"
+    },
+    {
+      "source": "episode:EP224",
+      "target": "concept:world-as-hinterland",
+      "kind": "episode-concept"
+    },
+    {
+      "source": "episode:EP224",
+      "target": "concept:chokepoint-leverage",
+      "kind": "episode-concept"
+    },
+    {
+      "source": "episode:EP224",
+      "target": "concept:active-neutrality",
+      "kind": "episode-concept"
+    },
+    {
+      "source": "episode:EP224",
+      "target": "concept:shadow-fleet",
+      "kind": "episode-concept"
+    },
+    {
+      "source": "episode:EP224",
+      "target": "model:small-state-balancing-model",
+      "kind": "episode-model"
+    },
+    {
+      "source": "episode:EP224",
+      "target": "model:rule-anchored-small-state-model",
+      "kind": "episode-model"
+    },
+    {
+      "source": "episode:EP224",
+      "target": "model:chokepoint-order-model",
+      "kind": "episode-model"
+    },
+    {
+      "source": "episode:EP224",
+      "target": "person:vivian-balakrishnan",
+      "kind": "episode-person"
+    },
+    {
+      "source": "episode:EP224",
+      "target": "theme:singapore-and-small-state-survival",
+      "kind": "episode-theme"
+    },
+    {
+      "source": "episode:EP224",
+      "target": "theme:small-state-balancing",
+      "kind": "episode-theme"
+    },
+    {
+      "source": "episode:EP224",
+      "target": "theme:maritime-chokepoints-and-route-order",
       "kind": "episode-theme"
     },
     {
