@@ -3,7 +3,7 @@
     "title": "颖响力知识图谱",
     "subtitle": "节目、概念、模型、人物、主题之间的可视化连接网络",
     "nodeCount": 764,
-    "linkCount": 2820,
+    "linkCount": 2813,
     "typeCounts": {
       "model": 83,
       "live": 49,
@@ -169,17 +169,6 @@
       "degree": 27
     },
     {
-      "id": "live:LIVE001",
-      "key": "LIVE001",
-      "label": "LIVE001",
-      "fullLabel": "LIVE001 · 黄金涨跟打仗没关系？撑住金价的是那条不进交易所的油，川普三张牌就是来断它的",
-      "type": "live",
-      "route": "lives/LIVE001",
-      "summary": "巴拿马运河先拿出来试，对方没出声，第二张牌就落到委内瑞拉。",
-      "status": "curated",
-      "degree": 27
-    },
-    {
       "id": "live:LIVE021",
       "key": "LIVE021",
       "label": "LIVE021",
@@ -202,17 +191,6 @@
       "degree": 27
     },
     {
-      "id": "live:LIVE031",
-      "key": "LIVE031",
-      "label": "LIVE031",
-      "fullLabel": "LIVE031 · 香港保险要交税了，交出去的其实是后台数据，县里现在也看得见你那笔钱",
-      "type": "live",
-      "route": "lives/LIVE031",
-      "summary": "巨额财产来源不明罪的门槛刚从三十万提到三百万，有人还没高兴完。",
-      "status": "curated",
-      "degree": 27
-    },
-    {
       "id": "concept:cost-shifting",
       "key": "cost-shifting",
       "label": "成本外移",
@@ -231,6 +209,17 @@
       "type": "episode",
       "route": "episodes/EP154",
       "summary": "香格里拉对话会上，美国防长赫格塞斯讲了一段话。多数解读抓住他要建立建设性战略稳定关系那句软话，认为是降调求稳。其实那只是开场的烟雾弹。关键词是后半段的围栏，他已把边界划在第一岛链，围栏成了修到东亚家门口的高墙。它接的是川普的新门罗主义，一边建墙，一边打击灰色贸易。美军收拳后撤，让盟友顶到前线守墙。芯片管制也开始按总部认人，墙修到了信息层。东南亚是最后一段还没划定的边界，香会就是逼骑墙国家选边的场子。",
+      "status": "curated",
+      "degree": 26
+    },
+    {
+      "id": "live:LIVE001",
+      "key": "LIVE001",
+      "label": "LIVE001",
+      "fullLabel": "LIVE001 · 黄金涨跟打仗没关系？撑住金价的是那条不进交易所的油，川普三张牌就是来断它的",
+      "type": "live",
+      "route": "lives/LIVE001",
+      "summary": "巴拿马运河先拿出来试，对方没出声，第二张牌就落到委内瑞拉。",
       "status": "curated",
       "degree": 26
     },
@@ -268,14 +257,14 @@
       "degree": 26
     },
     {
-      "id": "live:LIVE039",
-      "key": "LIVE039",
-      "label": "LIVE039",
-      "fullLabel": "LIVE039 · 十七个油田交给美国企业投资，两千亿美元直接进国库，这条线去年十二月就在走",
+      "id": "live:LIVE031",
+      "key": "LIVE031",
+      "label": "LIVE031",
+      "fullLabel": "LIVE031 · 香港保险要交税了，交出去的其实是后台数据，县里现在也看得见你那笔钱",
       "type": "live",
-      "route": "lives/LIVE039",
-      "summary": "据说以前答应给古巴的油凑不齐，要在外面买了补上，一桶倒贴十二美元。",
-      "status": "published",
+      "route": "lives/LIVE031",
+      "summary": "巨额财产来源不明罪的门槛刚从三十万提到三百万，有人还没高兴完。",
+      "status": "curated",
       "degree": 26
     },
     {
@@ -334,17 +323,6 @@
       "degree": 25
     },
     {
-      "id": "live:LIVE023",
-      "key": "LIVE023",
-      "label": "LIVE023",
-      "fullLabel": "LIVE023 · 从物业到法院六道关全落空！要是对方开口先问一句“您哪个单位的”，她当天就会挪车",
-      "type": "live",
-      "route": "lives/LIVE023",
-      "summary": "在她的算盘里，这样的人有一百万个，出一个事的几率比坐飞机摔了还低。",
-      "status": "curated",
-      "degree": 25
-    },
-    {
       "id": "live:LIVE030",
       "key": "LIVE030",
       "label": "LIVE030",
@@ -356,14 +334,14 @@
       "degree": 25
     },
     {
-      "id": "live:LIVE036",
-      "key": "LIVE036",
-      "label": "LIVE036",
-      "fullLabel": "LIVE036 · 甲醛白菜、电车、过审的电影，为什么说它们是同一件事？",
+      "id": "live:LIVE039",
+      "key": "LIVE039",
+      "label": "LIVE039",
+      "fullLabel": "LIVE039 · 十七个油田交给美国企业投资，两千亿美元直接进国库，这条线去年十二月就在走",
       "type": "live",
-      "route": "lives/LIVE036",
-      "summary": "把车上那些高精尖扒干净，剩下的跟地里的白菜没区别。",
-      "status": "curated",
+      "route": "lives/LIVE039",
+      "summary": "据说以前答应给古巴的油凑不齐，要在外面买了补上，一桶倒贴十二美元。",
+      "status": "published",
       "degree": 25
     },
     {
@@ -389,6 +367,17 @@
       "degree": 24
     },
     {
+      "id": "live:LIVE023",
+      "key": "LIVE023",
+      "label": "LIVE023",
+      "fullLabel": "LIVE023 · 从物业到法院六道关全落空！要是对方开口先问一句“您哪个单位的”，她当天就会挪车",
+      "type": "live",
+      "route": "lives/LIVE023",
+      "summary": "在她的算盘里，这样的人有一百万个，出一个事的几率比坐飞机摔了还低。",
+      "status": "curated",
+      "degree": 24
+    },
+    {
       "id": "live:LIVE024",
       "key": "LIVE024",
       "label": "LIVE024",
@@ -396,17 +385,6 @@
       "type": "live",
       "route": "lives/LIVE024",
       "summary": "当年好像是抖音，只肯出三千万美元，还要控股权。",
-      "status": "curated",
-      "degree": 24
-    },
-    {
-      "id": "live:LIVE029",
-      "key": "LIVE029",
-      "label": "LIVE029",
-      "fullLabel": "LIVE029 · 出国这条路只开了不到三十年，九月十五号新规执行，以后出去可能就没有回头路",
-      "type": "live",
-      "route": "lives/LIVE029",
-      "summary": "拿旅游签证过去看看能不能留下，九月之后可能就踩在违规那条线上。",
       "status": "curated",
       "degree": 24
     },
@@ -440,6 +418,17 @@
       "type": "live",
       "route": "lives/LIVE035",
       "summary": "7 月 31 号那一票拿走了检察官的侦查权，10 月 2 日旧机构正式摘牌。",
+      "status": "curated",
+      "degree": 24
+    },
+    {
+      "id": "live:LIVE036",
+      "key": "LIVE036",
+      "label": "LIVE036",
+      "fullLabel": "LIVE036 · 甲醛白菜、电车、过审的电影，为什么说它们是同一件事？",
+      "type": "live",
+      "route": "lives/LIVE036",
+      "summary": "把车上那些高精尖扒干净，剩下的跟地里的白菜没区别。",
       "status": "curated",
       "degree": 24
     },
@@ -507,6 +496,17 @@
       "route": "concepts/chokepoint-leverage",
       "summary": "控制海峡、运河和关键通道的人，往往能把地理位置转化成定价权、通行权和规则权。",
       "status": null,
+      "degree": 23
+    },
+    {
+      "id": "live:LIVE029",
+      "key": "LIVE029",
+      "label": "LIVE029",
+      "fullLabel": "LIVE029 · 出国这条路只开了不到三十年，九月十五号新规执行，以后出去可能就没有回头路",
+      "type": "live",
+      "route": "lives/LIVE029",
+      "summary": "拿旅游签证过去看看能不能留下，九月之后可能就踩在违规那条线上。",
+      "status": "curated",
       "degree": 23
     },
     {
@@ -1258,17 +1258,6 @@
       "degree": 14
     },
     {
-      "id": "live:LIVE008",
-      "key": "LIVE008",
-      "label": "LIVE008",
-      "fullLabel": "LIVE008 · 上了一桌子凉菜，唯独主菜没上：那条管线为什么签不成",
-      "type": "live",
-      "route": "lives/LIVE008",
-      "summary": "灰色贸易的油三四十，按正常价签就是八十一百，这中间差着三成。",
-      "status": "curated",
-      "degree": 14
-    },
-    {
       "id": "live:LIVE047",
       "key": "LIVE047",
       "label": "LIVE047",
@@ -1386,6 +1375,17 @@
       "type": "episode",
       "route": "episodes/EP217",
       "summary": "2026 年 9 月 15 日，华为和赛力斯宣布调整问界的合作方式。产品、营销、渠道和服务全交给赛力斯，华为只留技术支持。说是分工调整，背后有三层原因。一层是分账。华为拿走授权费、品牌溢价和渠道分润，赛力斯扛着工厂、折旧和地方的对赌。利润薄到亏钱，只能在配件和品控上省，伤的还是华为的牌子。一层是舆论把这套分账摆上台面，小米又推出同级车，便宜一二十万，溢价站不住了。再一层是行业没了暴利，华为赶在风险暴露前交出经营权。赚钱时拿大头，出事时不沾身。",
+      "status": "curated",
+      "degree": 13
+    },
+    {
+      "id": "live:LIVE008",
+      "key": "LIVE008",
+      "label": "LIVE008",
+      "fullLabel": "LIVE008 · 上了一桌子凉菜，唯独主菜没上：那条管线为什么签不成",
+      "type": "live",
+      "route": "lives/LIVE008",
+      "summary": "灰色贸易的油三四十，按正常价签就是八十一百，这中间差着三成。",
       "status": "curated",
       "degree": 13
     },
@@ -2600,17 +2600,6 @@
       "degree": 8
     },
     {
-      "id": "concept:information-edge",
-      "key": "information-edge",
-      "label": "信息优势",
-      "fullLabel": "信息优势",
-      "type": "concept",
-      "route": "concepts/information-edge",
-      "summary": "投资真正的优势来自别人没有的确定信息，而不是公开可见的故事和情绪。",
-      "status": null,
-      "degree": 8
-    },
-    {
       "id": "concept:liability-firewall",
       "key": "liability-firewall",
       "label": "责任隔离墙",
@@ -3051,17 +3040,6 @@
       "degree": 7
     },
     {
-      "id": "concept:great-small-power-leveling",
-      "key": "great-small-power-leveling",
-      "label": "大国小国差距拉平",
-      "fullLabel": "大国小国差距拉平",
-      "type": "concept",
-      "route": "concepts/great-small-power-leveling",
-      "summary": "在不敢动用核武的常规战争里，AI和无人机让小国靠生产与研发能力反超，甚至打到大国本土。",
-      "status": null,
-      "degree": 7
-    },
-    {
       "id": "concept:jurisdiction-arbitrage",
       "key": "jurisdiction-arbitrage",
       "label": "法域套利",
@@ -3212,6 +3190,17 @@
       "type": "concept",
       "route": "concepts/consumer-testbed",
       "summary": "企业把本该在研发和验证阶段承担的安全成本，转移到首批消费者、公共道路和真实事故里去消化。",
+      "status": null,
+      "degree": 7
+    },
+    {
+      "id": "concept:information-edge",
+      "key": "information-edge",
+      "label": "信息优势",
+      "fullLabel": "信息优势",
+      "type": "concept",
+      "route": "concepts/information-edge",
+      "summary": "投资真正的优势来自别人没有的确定信息，公开可见的故事和情绪给不了这种优势。",
       "status": null,
       "degree": 7
     },
@@ -4118,6 +4107,17 @@
       "degree": 5
     },
     {
+      "id": "concept:great-small-power-leveling",
+      "key": "great-small-power-leveling",
+      "label": "大国小国差距拉平",
+      "fullLabel": "大国小国差距拉平",
+      "type": "concept",
+      "route": "concepts/great-small-power-leveling",
+      "summary": "在不敢动用核武的常规战争里，AI和无人机让小国靠生产与研发能力反超，甚至打到大国本土。",
+      "status": null,
+      "degree": 5
+    },
+    {
       "id": "concept:moral-capital",
       "key": "moral-capital",
       "label": "道德资本",
@@ -4235,17 +4235,6 @@
       "type": "person",
       "route": "people/vladimir-putin",
       "summary": "普京是俄罗斯总统，2000 年起两度执掌总统职位，2024 年 5 月开始第五个任期。节目借他看一个执政二十多年的强人体系，怎样在俄乌战争里被消耗：没有接班人，战争只能锁在电视里，前线真话传不到他耳中。",
-      "status": null,
-      "degree": 5
-    },
-    {
-      "id": "concept:globalization-as-disclosure",
-      "key": "globalization-as-disclosure",
-      "label": "全球化即公开披露",
-      "fullLabel": "全球化即公开披露",
-      "type": "concept",
-      "route": "concepts/globalization-as-disclosure",
-      "summary": "全球化的本质是各国把生产、消费和价格公开披露，形成像上市公司体系那样透明的市场；灰色贸易就是绕开披露、退回不透明的国与国交易。",
       "status": null,
       "degree": 5
     },
@@ -4987,13 +4976,13 @@
       "degree": 4
     },
     {
-      "id": "concept:identity-bounded-choice",
-      "key": "identity-bounded-choice",
-      "label": "身份约束型选择",
-      "fullLabel": "身份约束型选择",
+      "id": "concept:globalization-as-disclosure",
+      "key": "globalization-as-disclosure",
+      "label": "全球化即公开披露",
+      "fullLabel": "全球化即公开披露",
       "type": "concept",
-      "route": "concepts/identity-bounded-choice",
-      "summary": "一类人因身份限制和认知边界，放弃客观最优选项、集中涌向够近够熟的次优选项，反而让次优节点畸形繁荣。",
+      "route": "concepts/globalization-as-disclosure",
+      "summary": "全球化要求各国把生产、消费和价格公开摆出来，像上市公司体系那样透明。灰色贸易就是绕开这套披露，退回不透明的国与国交易。",
       "status": null,
       "degree": 4
     },
@@ -5922,17 +5911,6 @@
       "degree": 3
     },
     {
-      "id": "concept:false-premise-rigor",
-      "key": "false-premise-rigor",
-      "label": "虚假前提的严谨偏差",
-      "fullLabel": "虚假前提的严谨偏差",
-      "type": "concept",
-      "route": "concepts/false-premise-rigor",
-      "summary": "前提被造假时，越严谨的推导越把谎言推得像真的、越难戳破。",
-      "status": null,
-      "degree": 3
-    },
-    {
       "id": "concept:academic-shell-game",
       "key": "academic-shell-game",
       "label": "学术空壳化",
@@ -6703,6 +6681,17 @@
       "degree": 2
     },
     {
+      "id": "concept:identity-bounded-choice",
+      "key": "identity-bounded-choice",
+      "label": "身份约束型选择",
+      "fullLabel": "身份约束型选择",
+      "type": "concept",
+      "route": "concepts/identity-bounded-choice",
+      "summary": "一类人因身份限制和认知边界，放弃客观最优选项、集中涌向够近够熟的次优选项，反而让次优节点畸形繁荣。",
+      "status": null,
+      "degree": 2
+    },
+    {
       "id": "concept:aesthetic-compression",
       "key": "aesthetic-compression",
       "label": "审美压缩",
@@ -6853,6 +6842,17 @@
       "type": "theme",
       "route": "themes/new-money-and-family-projection",
       "summary": "中国市场上全是新钱。钱挣够以后，有人用生孩子、联姻和排场去堆一个家族，堆出来的多半撑不过几代。",
+      "status": null,
+      "degree": 2
+    },
+    {
+      "id": "concept:false-premise-rigor",
+      "key": "false-premise-rigor",
+      "label": "虚假前提的严谨偏差",
+      "fullLabel": "虚假前提的严谨偏差",
+      "type": "concept",
+      "route": "concepts/false-premise-rigor",
+      "summary": "前提被造假时，越严谨的推导越把谎言推得像真的、越难戳破。",
       "status": null,
       "degree": 2
     },
@@ -7017,7 +7017,7 @@
       "fullLabel": "半懂的自由",
       "type": "concept",
       "route": "concepts/half-understood-freedom",
-      "summary": "只反抗规训却没有理解边界，自由就容易变成对他人风险的无知转嫁。",
+      "summary": "看明白了主流规训的毛病，对自由却没想透，反规训落地就成了放任，代价由最没法选择的人承担。",
       "status": null,
       "degree": 1
     },
@@ -7688,7 +7688,7 @@
       "fullLabel": "民间理论打包",
       "type": "concept",
       "route": "concepts/folk-theory-bundle",
-      "summary": "多个粗糙但易传播的网络解释被打包后，会成为情绪组织和身份识别的话语包。",
+      "summary": "几套粗糙但好传的网络说法被合在一起，成了装下一代人不满和迷茫的话语包。",
       "status": null,
       "degree": 1
     },
@@ -16587,11 +16587,6 @@
     },
     {
       "source": "live:LIVE001",
-      "target": "concept:great-small-power-leveling",
-      "kind": "live-concept"
-    },
-    {
-      "source": "live:LIVE001",
       "target": "concept:information-edge",
       "kind": "live-concept"
     },
@@ -17554,11 +17549,6 @@
       "source": "live:LIVE008",
       "target": "episode:EP120",
       "kind": "live-episode"
-    },
-    {
-      "source": "live:LIVE008",
-      "target": "concept:great-small-power-leveling",
-      "kind": "live-concept"
     },
     {
       "source": "live:LIVE008",
@@ -19407,11 +19397,6 @@
     },
     {
       "source": "live:LIVE023",
-      "target": "concept:identity-bounded-choice",
-      "kind": "live-concept"
-    },
-    {
-      "source": "live:LIVE023",
       "target": "concept:long-termism",
       "kind": "live-concept"
     },
@@ -20177,11 +20162,6 @@
     },
     {
       "source": "live:LIVE029",
-      "target": "concept:identity-bounded-choice",
-      "kind": "live-concept"
-    },
-    {
-      "source": "live:LIVE029",
       "target": "concept:system-rollback",
       "kind": "live-concept"
     },
@@ -20453,11 +20433,6 @@
     {
       "source": "live:LIVE031",
       "target": "concept:middle-class-hard-landing",
-      "kind": "live-concept"
-    },
-    {
-      "source": "live:LIVE031",
-      "target": "concept:globalization-as-disclosure",
       "kind": "live-concept"
     },
     {
@@ -21112,11 +21087,6 @@
     },
     {
       "source": "live:LIVE036",
-      "target": "concept:false-premise-rigor",
-      "kind": "live-concept"
-    },
-    {
-      "source": "live:LIVE036",
       "target": "concept:licensed-ownership",
       "kind": "live-concept"
     },
@@ -21473,11 +21443,6 @@
     {
       "source": "live:LIVE039",
       "target": "concept:ownership-management-separation",
-      "kind": "live-concept"
-    },
-    {
-      "source": "live:LIVE039",
-      "target": "concept:information-edge",
       "kind": "live-concept"
     },
     {
