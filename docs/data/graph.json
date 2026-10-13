@@ -2,14 +2,14 @@
   "meta": {
     "title": "颖响力知识图谱",
     "subtitle": "节目、概念、模型、人物、主题之间的可视化连接网络",
-    "nodeCount": 764,
-    "linkCount": 2805,
+    "nodeCount": 765,
+    "linkCount": 2816,
     "typeCounts": {
       "model": 83,
       "live": 49,
       "concept": 251,
       "theme": 92,
-      "episode": 224,
+      "episode": 225,
       "person": 65
     }
   },
@@ -23,7 +23,7 @@
       "route": "models/risk-transfer-chain",
       "summary": "风险很少当场爆掉，多半先在银行、企业、票据、供应链和普通人之间转手、延后，一层层往下沉。",
       "status": null,
-      "degree": 57
+      "degree": 58
     },
     {
       "id": "live:LIVE002",
@@ -1038,6 +1038,17 @@
       "degree": 15
     },
     {
+      "id": "model:identity-stratification",
+      "key": "identity-stratification",
+      "label": "身份型分层",
+      "fullLabel": "身份型分层",
+      "type": "model",
+      "route": "models/identity-stratification",
+      "summary": "身份型分层说明阶层排序从收入和资产，转向编制、合规位置、圈层资源和稳定预期。",
+      "status": null,
+      "degree": 15
+    },
+    {
       "id": "concept:middle-class-hard-landing",
       "key": "middle-class-hard-landing",
       "label": "中产硬着陆",
@@ -1126,17 +1137,6 @@
       "degree": 14
     },
     {
-      "id": "model:identity-stratification",
-      "key": "identity-stratification",
-      "label": "身份型分层",
-      "fullLabel": "身份型分层",
-      "type": "model",
-      "route": "models/identity-stratification",
-      "summary": "身份型分层说明阶层排序从收入和资产，转向编制、合规位置、圈层资源和稳定预期。",
-      "status": null,
-      "degree": 14
-    },
-    {
       "id": "model:principal-agent",
       "key": "principal-agent",
       "label": "委托代理问题",
@@ -1155,6 +1155,17 @@
       "type": "theme",
       "route": "themes/ev-collapse-and-exit-risk",
       "summary": "聚焦新能源项目在失速、清算和品牌出清阶段，风险如何向债权人、用户和地方政府层层传导。",
+      "status": null,
+      "degree": 14
+    },
+    {
+      "id": "theme:state-business-entanglement",
+      "key": "state-business-entanglement",
+      "label": "政企嵌入与企业存续",
+      "fullLabel": "政企嵌入与企业存续",
+      "type": "theme",
+      "route": "themes/state-business-entanglement",
+      "summary": "讨论企业如何依赖地方政府、国资平台或关系结构续命，以及这种绑定如何反过来改写企业目标。",
       "status": null,
       "degree": 14
     },
@@ -1276,17 +1287,6 @@
       "type": "theme",
       "route": "themes/ev-financialization-and-false-sales",
       "summary": "聚焦新能源车行业如何依靠补贴、融资、渠道黑箱和虚假销售维持增长叙事。",
-      "status": null,
-      "degree": 13
-    },
-    {
-      "id": "theme:state-business-entanglement",
-      "key": "state-business-entanglement",
-      "label": "政企嵌入与企业存续",
-      "fullLabel": "政企嵌入与企业存续",
-      "type": "theme",
-      "route": "themes/state-business-entanglement",
-      "summary": "讨论企业如何依赖地方政府、国资平台或关系结构续命，以及这种绑定如何反过来改写企业目标。",
       "status": null,
       "degree": 13
     },
@@ -1885,6 +1885,17 @@
       "degree": 11
     },
     {
+      "id": "episode:EP225",
+      "key": "EP225",
+      "label": "EP225",
+      "fullLabel": "EP225 · 华删派“断剑”丧事喜办！“免费升级”辟邪剑谱合规持剑人！车圈笑傲江湖群魔乱舞！",
+      "type": "episode",
+      "route": "episodes/EP225",
+      "summary": "2026 年 10 月 8 日，懂车帝发布一段测试，三台尊界 V800 连续急刹，刹车踏板支架在第二到第四脚之间全部断裂。尊界是华为系最贵的一档车，厂家回应说标准比国标还严，给已交车的用户免费升级。车断了照样有人买，因为很多人买的是圈子里的身份，车本身倒在其次。支架为什么会断，要看钱往哪里流。华为把利润留在自己手里，生产层层外包，配件厂的账期被拖到几个月甚至大半年，越贵的车配件越没人用心。人人想走捷径的时候，这样的车最好卖。",
+      "status": "curated",
+      "degree": 11
+    },
+    {
       "id": "concept:price-war-trap",
       "key": "price-war-trap",
       "label": "低价竞争陷阱",
@@ -1914,6 +1925,17 @@
       "type": "model",
       "route": "models/regional-denial-model",
       "summary": "把对手长期压在几个区域里，让它在每一块都占不了上风，各块之间也连不起来，长不成能跨区域联动的集团。",
+      "status": null,
+      "degree": 10
+    },
+    {
+      "id": "theme:ev-safety-and-consumer-testing",
+      "key": "ev-safety-and-consumer-testing",
+      "label": "新能源安全边界与消费者测试",
+      "fullLabel": "新能源安全边界与消费者测试",
+      "type": "theme",
+      "route": "themes/ev-safety-and-consumer-testing",
+      "summary": "讨论新能源车与相关电池系统如何把安全验证不足的代价，转移到真实用户和真实事故里。",
       "status": null,
       "degree": 10
     },
@@ -2123,17 +2145,6 @@
       "type": "model",
       "route": "models/time-arbitrage-model",
       "summary": "两方比的不只是眼下谁强，还有谁拖得起。能把时间拉长的一方，往往不用抢先出手。",
-      "status": null,
-      "degree": 9
-    },
-    {
-      "id": "theme:ev-safety-and-consumer-testing",
-      "key": "ev-safety-and-consumer-testing",
-      "label": "新能源安全边界与消费者测试",
-      "fullLabel": "新能源安全边界与消费者测试",
-      "type": "theme",
-      "route": "themes/ev-safety-and-consumer-testing",
-      "summary": "讨论新能源车与相关电池系统如何把安全验证不足的代价，转移到真实用户和真实事故里。",
       "status": null,
       "degree": 9
     },
@@ -2545,6 +2556,17 @@
       "degree": 8
     },
     {
+      "id": "theme:brand-symbol-and-value",
+      "key": "brand-symbol-and-value",
+      "label": "品牌符号与价值感知",
+      "fullLabel": "品牌符号与价值感知",
+      "type": "theme",
+      "route": "themes/brand-symbol-and-value",
+      "summary": "品牌符号怎样撑起价格和身份，又在什么时候撑不住。",
+      "status": null,
+      "degree": 8
+    },
+    {
       "id": "model:screening-machine",
       "key": "screening-machine",
       "label": "筛选机器模型",
@@ -2596,6 +2618,17 @@
       "type": "concept",
       "route": "concepts/useless-class",
       "summary": "AI 和自动化大规模替代劳动之后，够不着顶端的高门槛工作，中低端岗位又被挤掉，从生产者变成多余的人的那一大群人。",
+      "status": null,
+      "degree": 8
+    },
+    {
+      "id": "concept:consumer-testbed",
+      "key": "consumer-testbed",
+      "label": "消费者测试场",
+      "fullLabel": "消费者测试场",
+      "type": "concept",
+      "route": "concepts/consumer-testbed",
+      "summary": "企业把本该在研发和验证阶段承担的安全成本，转移到首批消费者、公共道路和真实事故里去消化。",
       "status": null,
       "degree": 8
     },
@@ -3128,6 +3161,17 @@
       "degree": 7
     },
     {
+      "id": "concept:technical-shortcut",
+      "key": "technical-shortcut",
+      "label": "技术捷径",
+      "fullLabel": "技术捷径",
+      "type": "concept",
+      "route": "concepts/technical-shortcut",
+      "summary": "抄近路的技术选择能早一步落地、早一步赚钱，代价往往留到后面，变成甩不掉的包袱。",
+      "status": null,
+      "degree": 7
+    },
+    {
       "id": "theme:exam-centered-education-and-person-formation",
       "key": "exam-centered-education-and-person-formation",
       "label": "考试中心教育与人成形",
@@ -3135,17 +3179,6 @@
       "type": "theme",
       "route": "themes/exam-centered-education-and-person-formation",
       "summary": "学校和家庭围着考试转，把孩子塑造成服从分数和权威的人。",
-      "status": null,
-      "degree": 7
-    },
-    {
-      "id": "theme:brand-symbol-and-value",
-      "key": "brand-symbol-and-value",
-      "label": "品牌符号与价值感知",
-      "fullLabel": "品牌符号与价值感知",
-      "type": "theme",
-      "route": "themes/brand-symbol-and-value",
-      "summary": "品牌符号怎样撑起价格和身份，又在什么时候撑不住。",
       "status": null,
       "degree": 7
     },
@@ -3190,17 +3223,6 @@
       "type": "concept",
       "route": "concepts/pragmatic-legitimacy",
       "summary": "一个政权让人认，靠的是普通人的日子看得见地变好，收入、住房、护照和安全都算在里面。",
-      "status": null,
-      "degree": 7
-    },
-    {
-      "id": "concept:consumer-testbed",
-      "key": "consumer-testbed",
-      "label": "消费者测试场",
-      "fullLabel": "消费者测试场",
-      "type": "concept",
-      "route": "concepts/consumer-testbed",
-      "summary": "企业把本该在研发和验证阶段承担的安全成本，转移到首批消费者、公共道路和真实事故里去消化。",
       "status": null,
       "degree": 7
     },
@@ -3608,17 +3630,6 @@
       "type": "theme",
       "route": "themes/homeland-and-civic-belonging",
       "summary": "祖籍、血缘和现在住的地方，哪一个才算故乡。一个人可以自己选，一个国家的领导人往往选不了。",
-      "status": null,
-      "degree": 6
-    },
-    {
-      "id": "concept:technical-shortcut",
-      "key": "technical-shortcut",
-      "label": "技术捷径",
-      "fullLabel": "技术捷径",
-      "type": "concept",
-      "route": "concepts/technical-shortcut",
-      "summary": "抄近路的技术选择能早一步落地、早一步赚钱，代价往往留到后面，变成甩不掉的包袱。",
       "status": null,
       "degree": 6
     },
@@ -5405,6 +5416,17 @@
       "degree": 3
     },
     {
+      "id": "concept:layered-subcontracting",
+      "key": "layered-subcontracting",
+      "label": "层层转包",
+      "fullLabel": "层层转包",
+      "type": "concept",
+      "route": "concepts/layered-subcontracting",
+      "summary": "一件事一层层往下包，每层抽走差价，到干活的人手里只剩最低的工钱，专业和责任跟着一起被压到最低。",
+      "status": null,
+      "degree": 3
+    },
+    {
       "id": "concept:planning-lockin",
       "key": "planning-lockin",
       "label": "大计划锁定",
@@ -5412,6 +5434,17 @@
       "type": "concept",
       "route": "concepts/planning-lockin",
       "summary": "宏大目标一旦锁定资源和判断，分散试错与旁路探索就会被压缩。",
+      "status": null,
+      "degree": 3
+    },
+    {
+      "id": "concept:manufactured-antagonism",
+      "key": "manufactured-antagonism",
+      "label": "对立制造",
+      "fullLabel": "对立制造",
+      "type": "concept",
+      "route": "concepts/manufactured-antagonism",
+      "summary": "热度不够的时候，把人分成对立的两拨比做出好东西便宜得多，架子一搭，两边自己就吵起来，事件也就有了。",
       "status": null,
       "degree": 3
     },
@@ -5742,6 +5775,17 @@
       "type": "concept",
       "route": "concepts/manufactured-popularity",
       "summary": "公开场面上的热度不是自己聚起来的，是运营方放风、组织、安排出来的，做出来之后再当成实力证据卖给品牌方和平台。",
+      "status": null,
+      "degree": 3
+    },
+    {
+      "id": "concept:identity-premium",
+      "key": "identity-premium",
+      "label": "身份溢价",
+      "fullLabel": "身份溢价",
+      "type": "concept",
+      "route": "concepts/identity-premium",
+      "summary": "商品价格里超出功能的那一截，买的是让别人看出自己属于哪一类人，这一截随着撑它的阶层一起涨落。",
       "status": null,
       "degree": 3
     },
@@ -6098,17 +6142,6 @@
       "degree": 2
     },
     {
-      "id": "concept:layered-subcontracting",
-      "key": "layered-subcontracting",
-      "label": "层层转包",
-      "fullLabel": "层层转包",
-      "type": "concept",
-      "route": "concepts/layered-subcontracting",
-      "summary": "一件事一层层往下包，每层抽走差价，到干活的人手里只剩最低的工钱，专业和责任跟着一起被压到最低。",
-      "status": null,
-      "degree": 2
-    },
-    {
       "id": "concept:city-soul-gap",
       "key": "city-soul-gap",
       "label": "城市灵魂落差",
@@ -6193,17 +6226,6 @@
       "type": "person",
       "route": "people/dong-yuhui",
       "summary": "董宇辉是与辉同行的掌门人，从东方甄选走红，以文化感带货出名。EP071 和 EP102 借他直播间 83 元三只老母鸡的争议，讲超级流量怎样改写价格信号。",
-      "status": null,
-      "degree": 2
-    },
-    {
-      "id": "concept:manufactured-antagonism",
-      "key": "manufactured-antagonism",
-      "label": "对立制造",
-      "fullLabel": "对立制造",
-      "type": "concept",
-      "route": "concepts/manufactured-antagonism",
-      "summary": "热度不够的时候，把人分成对立的两拨比做出好东西便宜得多，架子一搭，两边自己就吵起来，事件也就有了。",
       "status": null,
       "degree": 2
     },
@@ -6626,17 +6648,6 @@
       "degree": 2
     },
     {
-      "id": "concept:identity-premium",
-      "key": "identity-premium",
-      "label": "身份溢价",
-      "fullLabel": "身份溢价",
-      "type": "concept",
-      "route": "concepts/identity-premium",
-      "summary": "商品价格里超出功能的那一截，买的是让别人看出自己属于哪一类人，这一截随着撑它的阶层一起涨落。",
-      "status": null,
-      "degree": 2
-    },
-    {
       "id": "concept:identity-bounded-choice",
       "key": "identity-bounded-choice",
       "label": "身份约束型选择",
@@ -6842,6 +6853,17 @@
       "type": "concept",
       "route": "concepts/user-funded-testing",
       "summary": "平台把早期试错成本转给用户，让用户用时间、隐私、劳动和金钱替工具成熟买单。",
+      "status": null,
+      "degree": 2
+    },
+    {
+      "id": "person:yu-chengdong",
+      "key": "yu-chengdong",
+      "label": "余承东",
+      "fullLabel": "余承东",
+      "type": "person",
+      "route": "people/yu-chengdong",
+      "summary": "余承东是华为常务董事、终端BG董事长，长期站在华为手机和汽车的发布会前台。EP050 里那个替华为扛营销的老大嘴，本页推测是他。",
       "status": null,
       "degree": 2
     },
@@ -8195,17 +8217,6 @@
       "type": "person",
       "route": "people/yu-donglai",
       "summary": "于东来是河南许昌胖东来的创始人。EP101 拿他把近 40 亿资产分给员工的安排，和碧桂园继续绑在地方政府身上作对照。",
-      "status": null,
-      "degree": 1
-    },
-    {
-      "id": "person:yu-chengdong",
-      "key": "yu-chengdong",
-      "label": "余承东",
-      "fullLabel": "余承东",
-      "type": "person",
-      "route": "people/yu-chengdong",
-      "summary": "余承东是华为常务董事、终端BG董事长，长期站在华为手机和汽车的发布会前台。EP050 里那个替华为扛营销的老大嘴，本页推测是他。",
       "status": null,
       "degree": 1
     },
@@ -16528,6 +16539,61 @@
     {
       "source": "episode:EP224",
       "target": "theme:maritime-chokepoints-and-route-order",
+      "kind": "episode-theme"
+    },
+    {
+      "source": "episode:EP225",
+      "target": "concept:consumer-testbed",
+      "kind": "episode-concept"
+    },
+    {
+      "source": "episode:EP225",
+      "target": "concept:manufactured-antagonism",
+      "kind": "episode-concept"
+    },
+    {
+      "source": "episode:EP225",
+      "target": "concept:identity-premium",
+      "kind": "episode-concept"
+    },
+    {
+      "source": "episode:EP225",
+      "target": "concept:layered-subcontracting",
+      "kind": "episode-concept"
+    },
+    {
+      "source": "episode:EP225",
+      "target": "concept:technical-shortcut",
+      "kind": "episode-concept"
+    },
+    {
+      "source": "episode:EP225",
+      "target": "model:risk-transfer-chain",
+      "kind": "episode-model"
+    },
+    {
+      "source": "episode:EP225",
+      "target": "model:identity-stratification",
+      "kind": "episode-model"
+    },
+    {
+      "source": "episode:EP225",
+      "target": "person:yu-chengdong",
+      "kind": "episode-person"
+    },
+    {
+      "source": "episode:EP225",
+      "target": "theme:ev-safety-and-consumer-testing",
+      "kind": "episode-theme"
+    },
+    {
+      "source": "episode:EP225",
+      "target": "theme:brand-symbol-and-value",
+      "kind": "episode-theme"
+    },
+    {
+      "source": "episode:EP225",
+      "target": "theme:state-business-entanglement",
       "kind": "episode-theme"
     },
     {
