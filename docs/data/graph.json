@@ -2,11 +2,11 @@
   "meta": {
     "title": "颖响力知识图谱",
     "subtitle": "节目、概念、模型、人物、主题之间的可视化连接网络",
-    "nodeCount": 765,
-    "linkCount": 2816,
+    "nodeCount": 766,
+    "linkCount": 2839,
     "typeCounts": {
       "model": 83,
-      "live": 49,
+      "live": 50,
       "concept": 251,
       "theme": 92,
       "episode": 225,
@@ -510,6 +510,17 @@
       "degree": 23
     },
     {
+      "id": "live:LIVE050",
+      "key": "LIVE050",
+      "label": "LIVE050",
+      "fullLabel": "LIVE050 · 人社部晒出11.2万亿结余，还非拉你参保？拆解社保真相：挣得少按高线交，挣得多有封顶！",
+      "type": "live",
+      "route": "lives/LIVE050",
+      "summary": "北方一座大城市最低工资四千左右，社保最低要按八千多交。",
+      "status": "published",
+      "degree": 23
+    },
+    {
       "id": "episode:EP136",
       "key": "EP136",
       "label": "EP136",
@@ -598,6 +609,17 @@
       "degree": 22
     },
     {
+      "id": "theme:dollar-system-and-gray-trade",
+      "key": "dollar-system-and-gray-trade",
+      "label": "美元体系与灰色贸易",
+      "fullLabel": "美元体系与灰色贸易",
+      "type": "theme",
+      "route": "themes/dollar-system-and-gray-trade",
+      "summary": "讨论石油美元的真实脆弱点，究竟藏在公开统计之外的哪些灰色交易链条里。",
+      "status": null,
+      "degree": 21
+    },
+    {
       "id": "episode:EP131",
       "key": "EP131",
       "label": "EP131",
@@ -607,17 +629,6 @@
       "summary": "《焦点访谈》报道哪吒汽车破产重整，266 亿债权对着不到 1500 万现金。哪吒的窟窿不在创始人和风投，核心推手是地方国资。桐乡给的是常规招商扶持，宜春让财政局下属企业当大股东、代建厂房，南宁换成产投集团出钱，滑进了隐形债务。国资挑电车是图不担责、能记业绩，越想安全越不安全。价格战、一两年一换代的研发和说不清的营销费用一起烧钱，大家只能赌上市。IPO 一停，销量崩到一个月 110 辆。剩下几十家电车企业能活下来的寥寥无几，哪吒只是先倒下的一个。",
       "status": "curated",
       "degree": 21
-    },
-    {
-      "id": "theme:dollar-system-and-gray-trade",
-      "key": "dollar-system-and-gray-trade",
-      "label": "美元体系与灰色贸易",
-      "fullLabel": "美元体系与灰色贸易",
-      "type": "theme",
-      "route": "themes/dollar-system-and-gray-trade",
-      "summary": "讨论石油美元的真实脆弱点，究竟藏在公开统计之外的哪些灰色交易链条里。",
-      "status": null,
-      "degree": 20
     },
     {
       "id": "person:donald-trump",
@@ -662,6 +673,28 @@
       "summary": "跟伊朗说用钴结算，对方不知道钴是什么。说黄金，大字不识的军头也知道值钱。",
       "status": "curated",
       "degree": 20
+    },
+    {
+      "id": "theme:local-fiscal-stress-and-hidden-debt",
+      "key": "local-fiscal-stress-and-hidden-debt",
+      "label": "地方财政与隐性债务",
+      "fullLabel": "地方财政与隐性债务",
+      "type": "theme",
+      "route": "themes/local-fiscal-stress-and-hidden-debt",
+      "summary": "地方财政吃紧后，系统会通过更复杂的融资、资产包装和风险转移来维持运转。",
+      "status": null,
+      "degree": 19
+    },
+    {
+      "id": "model:leverage-backfire",
+      "key": "leverage-backfire",
+      "label": "杠杆反噬",
+      "fullLabel": "杠杆反噬",
+      "type": "model",
+      "route": "models/leverage-backfire",
+      "summary": "杠杆反噬解释上行期放大利润的结构，如何在下行期放大亏损、现金流压力和清偿困难。",
+      "status": null,
+      "degree": 19
     },
     {
       "id": "model:strategic-timing",
@@ -807,17 +840,6 @@
       "degree": 18
     },
     {
-      "id": "theme:local-fiscal-stress-and-hidden-debt",
-      "key": "local-fiscal-stress-and-hidden-debt",
-      "label": "地方财政与隐性债务",
-      "fullLabel": "地方财政与隐性债务",
-      "type": "theme",
-      "route": "themes/local-fiscal-stress-and-hidden-debt",
-      "summary": "地方财政吃紧后，系统会通过更复杂的融资、资产包装和风险转移来维持运转。",
-      "status": null,
-      "degree": 18
-    },
-    {
       "id": "concept:pan-institutional-middle-class",
       "key": "pan-institutional-middle-class",
       "label": "泛体制中产",
@@ -825,17 +847,6 @@
       "type": "concept",
       "route": "concepts/pan-institutional-middle-class",
       "summary": "泛体制中产指依靠公务员、事业编、国企及体制相关岗位维持稳定收入、福利和社会体面的中间层。",
-      "status": null,
-      "degree": 18
-    },
-    {
-      "id": "model:leverage-backfire",
-      "key": "leverage-backfire",
-      "label": "杠杆反噬",
-      "fullLabel": "杠杆反噬",
-      "type": "model",
-      "route": "models/leverage-backfire",
-      "summary": "杠杆反噬解释上行期放大利润的结构，如何在下行期放大亏损、现金流压力和清偿困难。",
       "status": null,
       "degree": 18
     },
@@ -884,6 +895,17 @@
       "degree": 17
     },
     {
+      "id": "theme:real-estate-deleveraging",
+      "key": "real-estate-deleveraging",
+      "label": "房地产去杠杆与风险出清",
+      "fullLabel": "房地产去杠杆与风险出清",
+      "type": "theme",
+      "route": "themes/real-estate-deleveraging",
+      "summary": "讨论房地产在下行周期里如何通过断供、重组、展期和资产处置逐步暴露风险。",
+      "status": null,
+      "degree": 17
+    },
+    {
       "id": "episode:EP132",
       "key": "EP132",
       "label": "EP132",
@@ -915,17 +937,6 @@
       "summary": "石油进口量断崖式世界第一的中国，日均消耗近1500万桶。美以与伊朗的军事行动展开、霍尔木兹海峡被封后，进口在三四个月内减少三成多。短期油价、新能源替代和动用战略储备，这三种主流解释都算不平这笔账。剩下最可能的解释，是它的真实需求只有进口量的三分之二左右，多出的部分多年来一直在转成战备储油。海峡一封，它只是停止增储，退回真实需求，所以进口大跌，工业没受什么破坏。按个人估计，台海一旦升级成中大型战争，石油最少要按两年来储。这套储备眼看建成，冲突偏偏在这时爆发，从此永远差一点。",
       "status": "curated",
       "degree": 17
-    },
-    {
-      "id": "theme:real-estate-deleveraging",
-      "key": "real-estate-deleveraging",
-      "label": "房地产去杠杆与风险出清",
-      "fullLabel": "房地产去杠杆与风险出清",
-      "type": "theme",
-      "route": "themes/real-estate-deleveraging",
-      "summary": "讨论房地产在下行周期里如何通过断供、重组、展期和资产处置逐步暴露风险。",
-      "status": null,
-      "degree": 16
     },
     {
       "id": "theme:maritime-chokepoints-and-route-order",
@@ -1057,6 +1068,17 @@
       "route": "concepts/middle-class-hard-landing",
       "summary": "靠房子、工资和贷款撑着的中产一旦失速，资产、体面、家里的关系和自我认同一起往下掉。",
       "status": null,
+      "degree": 15
+    },
+    {
+      "id": "episode:EP123",
+      "key": "EP123",
+      "label": "EP123",
+      "fullLabel": "EP123 · 伊朗为何是世界的“三国荆州”？诸葛亮庞统之争看懂大国博弈底层逻辑。",
+      "type": "episode",
+      "route": "episodes/EP123",
+      "summary": "美伊停战之后再看伊朗，可以把三国里的荆州整个套上去。荆州是华夏的十字路口，谁拿到谁就有争天下的本钱，可它北有曹操、东有孙权，是个四战之地。伊朗今天也卡在欧亚大陆的十字路口，手里有全球前二十的军力，还想跟美国、以色列掰手腕，像水淹七军时的关羽。真正想拆它的是身后的东吴。沙特、阿联酋怕一个强势的什叶派邻居，宁可出钱让美国往死里打。诸葛亮死守荆州，换来走麦城和白帝城托孤。一种讲法是庞统主张撤回益州修养生息，这和邓小平隐忍发展的思路一致。中国如今想再收缩回去，已经相当难了。",
+      "status": "curated",
       "degree": 15
     },
     {
@@ -1192,17 +1214,6 @@
       "degree": 14
     },
     {
-      "id": "episode:EP123",
-      "key": "EP123",
-      "label": "EP123",
-      "fullLabel": "EP123 · 伊朗为何是世界的“三国荆州”？诸葛亮庞统之争看懂大国博弈底层逻辑。",
-      "type": "episode",
-      "route": "episodes/EP123",
-      "summary": "美伊停战之后再看伊朗，可以把三国里的荆州整个套上去。荆州是华夏的十字路口，谁拿到谁就有争天下的本钱，可它北有曹操、东有孙权，是个四战之地。伊朗今天也卡在欧亚大陆的十字路口，手里有全球前二十的军力，还想跟美国、以色列掰手腕，像水淹七军时的关羽。真正想拆它的是身后的东吴。沙特、阿联酋怕一个强势的什叶派邻居，宁可出钱让美国往死里打。诸葛亮死守荆州，换来走麦城和白帝城托孤。一种讲法是庞统主张撤回益州修养生息，这和邓小平隐忍发展的思路一致。中国如今想再收缩回去，已经相当难了。",
-      "status": "curated",
-      "degree": 14
-    },
-    {
       "id": "episode:EP124",
       "key": "EP124",
       "label": "EP124",
@@ -1291,6 +1302,17 @@
       "degree": 13
     },
     {
+      "id": "episode:EP049",
+      "key": "EP049",
+      "label": "EP049",
+      "fullLabel": "EP049 · AI泡沫要爆了？AI基建、美苏冷战、星球大战、电车困境，也许是一件事……",
+      "type": "episode",
+      "route": "episodes/EP049",
+      "summary": "Anthropic 把一台自动贩卖机交给 AI 经营。记者聊了一百四十句，就让它免费送货。公司加了一个 AI 老板监督，一份伪造的 PDF 又让两个 AI 吵到崩溃，接着免费送。往 AI 里砸的硬件、人员和资本，能不能换回配得上的应用价值，成了更大的问题。\n\n毛病有两个。AI 太好骗，约百万分之一点六的污染数据就能改掉模型的判断。记忆又太短，只能一层层叠老板，叠出冗余。电车困境该追问的，是那辆车为什么停不下来。冷战时里根提出星球大战计划，美国那列车撞墙前能散开，苏联的车一路开进峡谷，先垮的是经济。",
+      "status": "curated",
+      "degree": 13
+    },
+    {
       "id": "episode:EP129",
       "key": "EP129",
       "label": "EP129",
@@ -1298,6 +1320,17 @@
       "type": "episode",
       "route": "episodes/EP129",
       "summary": "华谊兄弟被申请破产，爱奇艺从长视频霸主跌下来，乱投资、会员不续费这些解释都太表面。根子在合规成本的落差。2024 年起微短剧按投资分层审核，一百万以上的重点剧目跟长剧、电影一样要报备、审查、拿证，少则半年一年，多则几年。三十万以下的交给平台自审，有了 AI 工具，四十八小时就能做完一部。两道门高差太大，大象怎么学也跳不好街舞。短剧靠的是失控逻辑，让一亿人一起画，总有一幅蒙娜丽莎，挑画的活落到了观众身上。审核想当保姆，反把观众赶进了垃圾场，选择自由了，审美却在往下掉。",
+      "status": "curated",
+      "degree": 13
+    },
+    {
+      "id": "episode:EP134",
+      "key": "EP134",
+      "label": "EP134",
+      "fullLabel": "EP134 · 躺平不是摆烂，是当代年轻人最隐蔽的弱者武器！主动内移民到躺平国？",
+      "type": "episode",
+      "route": "episodes/EP134",
+      "summary": "劳动节前，政府下场反躺平。表层是要年轻人留住劳动的记忆，将来需要时还叫得回来。更深一层，是躺平里长出了系统控制不了的东西。躺平不等于摆烂，它更像一场内移民。年轻人不出国也不换城市，只是退出内卷的劳动赛道和主流消费，线下断了联系，无数绝缘的个体拼成一个看不透的躺平国。网格化和大数据靠读人的移动来预判，这群人不动，在数据上就消失了，也找不到可谈判、可收买的对象。反躺平越想把人拉回来，这个黑箱反而越大，系统亲手造出了自己最怕的结果。",
       "status": "curated",
       "degree": 13
     },
@@ -1522,17 +1555,6 @@
       "degree": 12
     },
     {
-      "id": "episode:EP049",
-      "key": "EP049",
-      "label": "EP049",
-      "fullLabel": "EP049 · AI泡沫要爆了？AI基建、美苏冷战、星球大战、电车困境，也许是一件事……",
-      "type": "episode",
-      "route": "episodes/EP049",
-      "summary": "Anthropic 把一台自动贩卖机交给 AI 经营。记者聊了一百四十句，就让它免费送货。公司加了一个 AI 老板监督，一份伪造的 PDF 又让两个 AI 吵到崩溃，接着免费送。往 AI 里砸的硬件、人员和资本，能不能换回配得上的应用价值，成了更大的问题。\n\n毛病有两个。AI 太好骗，约百万分之一点六的污染数据就能改掉模型的判断。记忆又太短，只能一层层叠老板，叠出冗余。电车困境该追问的，是那辆车为什么停不下来。冷战时里根提出星球大战计划，美国那列车撞墙前能散开，苏联的车一路开进峡谷，先垮的是经济。",
-      "status": "curated",
-      "degree": 12
-    },
-    {
       "id": "episode:EP078",
       "key": "EP078",
       "label": "EP078",
@@ -1540,6 +1562,17 @@
       "type": "episode",
       "route": "episodes/EP078",
       "summary": "万科系统崩塌，最大的推手被认为是郁亮。王石当年在四五个人里犹豫很久，最后挑了低调、投资财务出身的郁亮。财务和人力出身的人离老板最近，看业务却总在门外，去指挥业务容易跑偏。鹏金所的事对外落在祝九胜身上，可他和郁亮一样做财务投资。照这个推法，事情很难瞒过郁亮。博商资管这类表面独立的公司，据说起于宝万之争时的财务隔离。宝能倒下后它们没拆，郁亮接手后反而铺开，一直在抽万科的血。王石把公司交给国家、自己转成职业经理人，这条路没错，错在挑的人。交给子女多半失败，继承人才是第一代民企最大的问题。",
+      "status": "curated",
+      "degree": 12
+    },
+    {
+      "id": "episode:EP088",
+      "key": "EP088",
+      "label": "EP088",
+      "fullLabel": "EP088 · 上海楼市沪七条有用吗？中国社会恐怖的“税”“涨”“拖”三字诀，解析财经政策背后真相。",
+      "type": "episode",
+      "route": "episodes/EP088",
+      "summary": "上海出台楼市沪七条，有人吐槽得很形象，想增肥增不上去，就只让吃饭不让排泄。松的是非沪籍居民来沪买房的门槛，想卖房跑路、想置换改善的人照样卖不动，憋出来的是虚胖。日本三支箭后来管用，是老百姓用30年把债还完了，眼下八支箭也不一定找得到回头路。这两年是税，压在中小私营业主身上。往后是涨，水电煤气和吃穿都要涨价。房地产只剩一个拖字，地价靠国企互拍撑着，只求别今天出事。未来十到二十年留好现金准备过冬，现金就是权力。楼市回暖，也许是下一代人的故事。",
       "status": "curated",
       "degree": 12
     },
@@ -1562,17 +1595,6 @@
       "type": "episode",
       "route": "episodes/EP117",
       "summary": "2026 年 4 月 7 日，苏林全票当选越南国家主席，总书记、国家主席、中央军委书记三个位子归到一人手里，1991 年以来的四驾马车（2025 年 9 月已扩成五驾）就此打破。这件事标志着东南亚正在变成新的巴尔干火药桶。美国推新门罗主义，在拆以石油和黄金结算的灰色贸易链。东南亚各国原本平均分布在美中两个支点之间，越南从中间位置快速拉向中国一侧，平衡被打破。公安强人集权能换来短期稳定，可制衡一撤，即便苏林本人清醒，越南也难保不会走回黎笋时期的恶性循环。",
-      "status": "curated",
-      "degree": 12
-    },
-    {
-      "id": "episode:EP134",
-      "key": "EP134",
-      "label": "EP134",
-      "fullLabel": "EP134 · 躺平不是摆烂，是当代年轻人最隐蔽的弱者武器！主动内移民到躺平国？",
-      "type": "episode",
-      "route": "episodes/EP134",
-      "summary": "劳动节前，政府下场反躺平。表层是要年轻人留住劳动的记忆，将来需要时还叫得回来。更深一层，是躺平里长出了系统控制不了的东西。躺平不等于摆烂，它更像一场内移民。年轻人不出国也不换城市，只是退出内卷的劳动赛道和主流消费，线下断了联系，无数绝缘的个体拼成一个看不透的躺平国。网格化和大数据靠读人的移动来预判，这群人不动，在数据上就消失了，也找不到可谈判、可收买的对象。反躺平越想把人拉回来，这个黑箱反而越大，系统亲手造出了自己最怕的结果。",
       "status": "curated",
       "degree": 12
     },
@@ -1698,6 +1720,17 @@
       "degree": 12
     },
     {
+      "id": "episode:EP225",
+      "key": "EP225",
+      "label": "EP225",
+      "fullLabel": "EP225 · 华删派“断剑”丧事喜办！“免费升级”辟邪剑谱合规持剑人！车圈笑傲江湖群魔乱舞！",
+      "type": "episode",
+      "route": "episodes/EP225",
+      "summary": "2026 年 10 月 8 日，懂车帝发布一段测试，三台尊界 V800 连续急刹，刹车踏板支架在第二到第四脚之间全部断裂。尊界是华为系最贵的一档车，厂家回应说标准比国标还严，给已交车的用户免费升级。车断了照样有人买，因为很多人买的是圈子里的身份，车本身倒在其次。支架为什么会断，要看钱往哪里流。华为把利润留在自己手里，生产层层外包，配件厂的账期被拖到几个月甚至大半年，越贵的车配件越没人用心。人人想走捷径的时候，这样的车最好卖。",
+      "status": "curated",
+      "degree": 12
+    },
+    {
       "id": "theme:east-asia-security-realignment",
       "key": "east-asia-security-realignment",
       "label": "东亚安全重组与日本转向",
@@ -1786,17 +1819,6 @@
       "degree": 11
     },
     {
-      "id": "episode:EP088",
-      "key": "EP088",
-      "label": "EP088",
-      "fullLabel": "EP088 · 上海楼市沪七条有用吗？中国社会恐怖的“税”“涨”“拖”三字诀，解析财经政策背后真相。",
-      "type": "episode",
-      "route": "episodes/EP088",
-      "summary": "上海出台楼市沪七条，有人吐槽得很形象，想增肥增不上去，就只让吃饭不让排泄。松的是非沪籍居民来沪买房的门槛，想卖房跑路、想置换改善的人照样卖不动，憋出来的是虚胖。日本三支箭后来管用，是老百姓用30年把债还完了，眼下八支箭也不一定找得到回头路。这两年是税，压在中小私营业主身上。往后是涨，水电煤气和吃穿都要涨价。房地产只剩一个拖字，地价靠国企互拍撑着，只求别今天出事。未来十到二十年留好现金准备过冬，现金就是权力。楼市回暖，也许是下一代人的故事。",
-      "status": "curated",
-      "degree": 11
-    },
-    {
       "id": "episode:EP120",
       "key": "EP120",
       "label": "EP120",
@@ -1863,6 +1885,17 @@
       "degree": 11
     },
     {
+      "id": "episode:EP206",
+      "key": "EP206",
+      "label": "EP206",
+      "fullLabel": "EP206 · 地主家傻儿子卖了霍金价？拆解宇树科技暴涨与王兴兴诡异表情。",
+      "type": "episode",
+      "route": "episodes/EP206",
+      "summary": "宇树科技上市当天开盘冲过一千块，市值一步到位，王兴兴成了九零后首富，人在台上却眉头紧锁。地主家的傻儿子卖出霍金的身价，说的是估值按具身智能龙头给足，公司真正拿得出手的是运动控制，通用智能那部分还远没长出来。价格一次性把往后几十年的成长预期算完，公司此后每走一步都在给这个价格补课，不是在做新东西。把股价推上去的是上市前就在名单里的机构和国资。它们冲的是账面上的浮盈倍数，拿这份成绩单去募下一期基金、去交差。开盘能交易的只有总股本的七个多点，缺了对手盘，价格只能往一个方向走。",
+      "status": "curated",
+      "degree": 11
+    },
+    {
       "id": "episode:EP213",
       "key": "EP213",
       "label": "EP213",
@@ -1881,17 +1914,6 @@
       "type": "episode",
       "route": "episodes/EP224",
       "summary": "9 月 25 日一场华文论坛的炉边对话上，新加坡国防部长陈振声说，小国别天天争论选边站还是靠边站，先得自己站得起来。站不起来，没人逼你选，也没人在乎你站哪边。新加坡只有几百平方公里，没有纵深，没有资源，淡水都靠邻国供应。它用港口、航空和信息网络接上全世界，把世界当成自己的腹地。马六甲坚持不收费，跟伊朗封锁霍尔木兹走的是两条路。门开得大，对影子舰队和灰色贸易反而盯得更紧。别人离不开的连接才是小国的分量，这份分量要一直更新才保得住。",
-      "status": "curated",
-      "degree": 11
-    },
-    {
-      "id": "episode:EP225",
-      "key": "EP225",
-      "label": "EP225",
-      "fullLabel": "EP225 · 华删派“断剑”丧事喜办！“免费升级”辟邪剑谱合规持剑人！车圈笑傲江湖群魔乱舞！",
-      "type": "episode",
-      "route": "episodes/EP225",
-      "summary": "2026 年 10 月 8 日，懂车帝发布一段测试，三台尊界 V800 连续急刹，刹车踏板支架在第二到第四脚之间全部断裂。尊界是华为系最贵的一档车，厂家回应说标准比国标还严，给已交车的用户免费升级。车断了照样有人买，因为很多人买的是圈子里的身份，车本身倒在其次。支架为什么会断，要看钱往哪里流。华为把利润留在自己手里，生产层层外包，配件厂的账期被拖到几个月甚至大半年，越贵的车配件越没人用心。人人想走捷径的时候，这样的车最好卖。",
       "status": "curated",
       "degree": 11
     },
@@ -2072,17 +2094,6 @@
       "degree": 10
     },
     {
-      "id": "episode:EP206",
-      "key": "EP206",
-      "label": "EP206",
-      "fullLabel": "EP206 · 地主家傻儿子卖了霍金价？拆解宇树科技暴涨与王兴兴诡异表情。",
-      "type": "episode",
-      "route": "episodes/EP206",
-      "summary": "宇树科技上市当天开盘冲过一千块，市值一步到位，王兴兴成了九零后首富，人在台上却眉头紧锁。地主家的傻儿子卖出霍金的身价，说的是估值按具身智能龙头给足，公司真正拿得出手的是运动控制，通用智能那部分还远没长出来。价格一次性把往后几十年的成长预期算完，公司此后每走一步都在给这个价格补课，不是在做新东西。把股价推上去的是上市前就在名单里的机构和国资。它们冲的是账面上的浮盈倍数，拿这份成绩单去募下一期基金、去交差。开盘能交易的只有总股本的七个多点，缺了对手盘，价格只能往一个方向走。",
-      "status": "curated",
-      "degree": 10
-    },
-    {
       "id": "episode:EP209",
       "key": "EP209",
       "label": "EP209",
@@ -2145,6 +2156,17 @@
       "type": "model",
       "route": "models/time-arbitrage-model",
       "summary": "两方比的不只是眼下谁强，还有谁拖得起。能把时间拉长的一方，往往不用抢先出手。",
+      "status": null,
+      "degree": 9
+    },
+    {
+      "id": "theme:data-cosmetics-and-false-prosperity",
+      "key": "data-cosmetics-and-false-prosperity",
+      "label": "数据粉饰与虚假繁荣",
+      "fullLabel": "数据粉饰与虚假繁荣",
+      "type": "theme",
+      "route": "themes/data-cosmetics-and-false-prosperity",
+      "summary": "地方、企业和学术圈用账面数字制造景气，真实风险留在黑箱里。",
       "status": null,
       "degree": 9
     },
@@ -2266,6 +2288,17 @@
       "type": "episode",
       "route": "episodes/EP041",
       "summary": "有人说电车迭代快，中国设计师已经成了汽车设计的头部，这个说法站不住。电车没了中网，能变的只剩灯组和曲面，底盘又同质，外观变了，根子还是油车那套。小米汽车借保时捷和法拉利的造型，前舱没了发动机，防撞却照搬油车的梁，尾门为了显得不同改出了锐角。据说一款车最快180天就能发布，测试没做完，车主成了测试员。从小只学对错、不学妥协，设计也就少了度。车厂不怕车坏，年轻人把车当快消品，最后替资本买了单。别听人说什么，要看他做过多少测试，别被纸上谈兵的赵括骗了。",
+      "status": "curated",
+      "degree": 9
+    },
+    {
+      "id": "episode:EP044",
+      "key": "EP044",
+      "label": "EP044",
+      "fullLabel": "EP044 · 美国全球战略推演，懂王到底想干什么？逻辑推演杂谈。",
+      "type": "episode",
+      "route": "episodes/EP044",
+      "summary": "看懂美国先要换位思考，站进对方的知识结构和逻辑里。苏联解体后美国面对一个世界性的新华约，它的做法是先出一道怎么活下去的题，让两党当两个考生来答。民主党那一路联合盟友、讲正义，特朗普那一路鞭策盟友，拿利益捆住印度、阿拉伯国家和南美，看着相反，像周伯通左右互搏，外人找不到空档。借一位B站up主的说法，这道题归根到底是社会成本，新的国家安全战略退回美洲，就是先把自家成本降下来，再推高对手的，只要自己不先出事，时间就对美国有利。",
       "status": "curated",
       "degree": 9
     },
@@ -2479,6 +2512,17 @@
       "degree": 8
     },
     {
+      "id": "model:wealth-power-reproduction",
+      "key": "wealth-power-reproduction",
+      "label": "财富权力再生产",
+      "fullLabel": "财富权力再生产",
+      "type": "model",
+      "route": "models/wealth-power-reproduction",
+      "summary": "财富不会自己延续，要借生育、婚姻、文凭和关系重新包装，才能变成下一代的身份和权力。",
+      "status": null,
+      "degree": 8
+    },
+    {
       "id": "theme:big-government-and-incentive-reversal",
       "key": "big-government-and-incentive-reversal",
       "label": "大政府与激励反转",
@@ -2519,6 +2563,17 @@
       "type": "model",
       "route": "models/individuation-three-stage",
       "summary": "成长要依次过三关，消化亲情，消化权威，再面对自己，一次觉醒过不完。",
+      "status": null,
+      "degree": 8
+    },
+    {
+      "id": "model:regulatory-cost-arbitrage",
+      "key": "regulatory-cost-arbitrage",
+      "label": "合规成本套利模型",
+      "fullLabel": "合规成本套利模型",
+      "type": "model",
+      "route": "models/regulatory-cost-arbitrage",
+      "summary": "同一个市场里有几条合规成本不同的路，成本低的那条试错更多、跑得更快，把守规矩的一方挤到角落。",
       "status": null,
       "degree": 8
     },
@@ -2589,17 +2644,6 @@
       "degree": 8
     },
     {
-      "id": "theme:data-cosmetics-and-false-prosperity",
-      "key": "data-cosmetics-and-false-prosperity",
-      "label": "数据粉饰与虚假繁荣",
-      "fullLabel": "数据粉饰与虚假繁荣",
-      "type": "theme",
-      "route": "themes/data-cosmetics-and-false-prosperity",
-      "summary": "地方、企业和学术圈用账面数字制造景气，真实风险留在黑箱里。",
-      "status": null,
-      "degree": 8
-    },
-    {
       "id": "model:stability-over-growth-trap",
       "key": "stability-over-growth-trap",
       "label": "稳定替代增长陷阱",
@@ -2644,6 +2688,17 @@
       "degree": 8
     },
     {
+      "id": "concept:information-edge",
+      "key": "information-edge",
+      "label": "信息优势",
+      "fullLabel": "信息优势",
+      "type": "concept",
+      "route": "concepts/information-edge",
+      "summary": "投资真正的优势来自别人没有的确定信息，公开可见的故事和情绪给不了这种优势。",
+      "status": null,
+      "degree": 8
+    },
+    {
       "id": "concept:liability-firewall",
       "key": "liability-firewall",
       "label": "责任隔离墙",
@@ -2673,6 +2728,17 @@
       "type": "theme",
       "route": "themes/capital-packaging-and-credential-borrowing",
       "summary": "项目、企业和人借更高一级的身份和场面，换来本不属于自己的信用。",
+      "status": null,
+      "degree": 8
+    },
+    {
+      "id": "model:distribution-bias",
+      "key": "distribution-bias",
+      "label": "资源分配偏置",
+      "fullLabel": "资源分配偏置",
+      "type": "model",
+      "route": "models/distribution-bias",
+      "summary": "钱和保护先流向更强势、更有组织、更会申报的一端，成本和压力往最弱的一端压。",
       "status": null,
       "degree": 8
     },
@@ -2728,17 +2794,6 @@
       "type": "episode",
       "route": "episodes/EP018",
       "summary": "张雪峰解封复播，开始改口说文科也是社会需要的人才。改口不代表说对了，他一直在讲今天缺什么，正好说中家长心里的担心。人的感官一秒收进约十亿比特信息，大脑只处理十比特，做判断靠的是感性，勇敢和仁慈都算不出来，文科离这种判断更近。AI 先替代的是程序员、工程师这些靠计算吃饭的活，语言和艺术反倒难被取代。电力、计算机、金融都热过，等学生毕业又都过剩了。选专业该看五到十年以后，看孩子自己想干什么，蛋糕往往在没人争的地方。",
-      "status": "curated",
-      "degree": 8
-    },
-    {
-      "id": "episode:EP044",
-      "key": "EP044",
-      "label": "EP044",
-      "fullLabel": "EP044 · 美国全球战略推演，懂王到底想干什么？逻辑推演杂谈。",
-      "type": "episode",
-      "route": "episodes/EP044",
-      "summary": "看懂美国先要换位思考，站进对方的知识结构和逻辑里。苏联解体后美国面对一个世界性的新华约，它的做法是先出一道怎么活下去的题，让两党当两个考生来答。民主党那一路联合盟友、讲正义，特朗普那一路鞭策盟友，拿利益捆住印度、阿拉伯国家和南美，看着相反，像周伯通左右互搏，外人找不到空档。借一位B站up主的说法，这道题归根到底是社会成本，新的国家安全战略退回美洲，就是先把自家成本降下来，再推高对手的，只要自己不先出事，时间就对美国有利。",
       "status": "curated",
       "degree": 8
     },
@@ -3073,17 +3128,6 @@
       "degree": 7
     },
     {
-      "id": "model:wealth-power-reproduction",
-      "key": "wealth-power-reproduction",
-      "label": "财富权力再生产",
-      "fullLabel": "财富权力再生产",
-      "type": "model",
-      "route": "models/wealth-power-reproduction",
-      "summary": "财富不会自己延续，要借生育、婚姻、文凭和关系重新包装，才能变成下一代的身份和权力。",
-      "status": null,
-      "degree": 7
-    },
-    {
       "id": "concept:jurisdiction-arbitrage",
       "key": "jurisdiction-arbitrage",
       "label": "法域套利",
@@ -3135,17 +3179,6 @@
       "type": "concept",
       "route": "concepts/compliance-cost-gap",
       "summary": "不同制度路径让同一市场里的生产者承担完全不同的时间、资金和不确定性成本。",
-      "status": null,
-      "degree": 7
-    },
-    {
-      "id": "model:regulatory-cost-arbitrage",
-      "key": "regulatory-cost-arbitrage",
-      "label": "合规成本套利模型",
-      "fullLabel": "合规成本套利模型",
-      "type": "model",
-      "route": "models/regulatory-cost-arbitrage",
-      "summary": "同一个市场里有几条合规成本不同的路，成本低的那条试错更多、跑得更快，把守规矩的一方挤到角落。",
       "status": null,
       "degree": 7
     },
@@ -3227,17 +3260,6 @@
       "degree": 7
     },
     {
-      "id": "concept:information-edge",
-      "key": "information-edge",
-      "label": "信息优势",
-      "fullLabel": "信息优势",
-      "type": "concept",
-      "route": "concepts/information-edge",
-      "summary": "投资真正的优势来自别人没有的确定信息，公开可见的故事和情绪给不了这种优势。",
-      "status": null,
-      "degree": 7
-    },
-    {
       "id": "model:regime-replacement-playbook",
       "key": "regime-replacement-playbook",
       "label": "政权更替剧本",
@@ -3267,17 +3289,6 @@
       "type": "theme",
       "route": "themes/housing-burden-and-income-distribution",
       "summary": "住房、税负和可支配收入连在一起，看中低收入的人被抽走了多少往上走的余地。",
-      "status": null,
-      "degree": 7
-    },
-    {
-      "id": "model:distribution-bias",
-      "key": "distribution-bias",
-      "label": "资源分配偏置",
-      "fullLabel": "资源分配偏置",
-      "type": "model",
-      "route": "models/distribution-bias",
-      "summary": "钱和保护先流向更强势、更有组织、更会申报的一端，成本和压力往最弱的一端压。",
       "status": null,
       "degree": 7
     },
@@ -3458,6 +3469,17 @@
       "degree": 7
     },
     {
+      "id": "episode:EP100",
+      "key": "EP100",
+      "label": "EP100",
+      "fullLabel": "EP100 · 涨20元的农村养老金，让我们看清了一些事。【100期特辑】",
+      "type": "episode",
+      "route": "episodes/EP100",
+      "summary": "有一部分农村老人的养老金今年涨了 20 块，很多人一听就笑了。20 块钱能买半斤肉，或者一盒便宜的降压药。同一阵子胖东来公布分配方案，普通一线员工每人分到价值 20 万的资产份额。交了一辈子公粮的老人，每月养老金一共不过 200 块，这 20 块连象征性的尊重都算不上。\n\n刺激政策讲究乘数效应和资本叠加，钱最后流进少数人的口袋。直接到老人手里的小钱，却会进菜市场和药店，养的是社会最底层。养老金分体制内、体制外和农民三类，差距长期固化，一种看法是，南斯拉夫和罗马尼亚动荡之前都走过这一段。",
+      "status": "curated",
+      "degree": 7
+    },
+    {
       "id": "episode:EP102",
       "key": "EP102",
       "label": "EP102",
@@ -3465,6 +3487,17 @@
       "type": "episode",
       "route": "episodes/EP102",
       "summary": "千万粉丝博主相宜的视频里，替一款 DHA 背书的悉尼大学教授，被新京报查出是品牌方花 750 美元雇来的模特，相宜团队称不知情。相宜此前带货的驼奶粉也被打过假，如今直播间照常卖货，平台没做处理。替普通人打假的反诈老陈，反被扣上恶意收割流量的帽子，在带货最大的平台抖音被封。董宇辉的直播间卖 80 块三只的麻黄鸡，被举报后下架，没有道歉。能挣钱的是平台要保护的大熊猫，刺儿头就被弄走。百度的竞价排名、只给舒适不管安全的车厂，走的是同一条路，都没把人当人。",
+      "status": "curated",
+      "degree": 7
+    },
+    {
+      "id": "episode:EP113",
+      "key": "EP113",
+      "label": "EP113",
+      "fullLabel": "EP113 · 阿尔忒弥斯2号升空：历史似在重演！美苏争霸里，大约写着中美太空竞赛的结局。",
+      "type": "episode",
+      "route": "episodes/EP113",
+      "summary": "阿尔忒弥斯 2 号送 4 名宇航员绕月 10 天，不登月，要刷新载人飞行最远纪录。直播画面的复古色调让人想起阿波罗。美国走 NASA 加 SpaceX 的军民商双轮驱动，像一个能解体的火车头。遇到悬崖，人可以各自带着技术下车，把军工转成民用。苏联举国体制起步快，火车头却坚硬不可控。美国的动力来自个人喜爱和逐利，苏联靠集体意志和螺丝钉式的服从。据说苏联为赶庆典强发过带着问题的飞船，中国的大型商业火箭也刚失败。失败不可怕，怕的是对待失败的态度和能动性的缺失。再叠上三分之二魔咒，美苏争霸里大约已经写着这轮竞赛的结局。",
       "status": "curated",
       "degree": 7
     },
@@ -4063,28 +4096,6 @@
       "degree": 6
     },
     {
-      "id": "episode:EP100",
-      "key": "EP100",
-      "label": "EP100",
-      "fullLabel": "EP100 · 涨20元的农村养老金，让我们看清了一些事。【100期特辑】",
-      "type": "episode",
-      "route": "episodes/EP100",
-      "summary": "有一部分农村老人的养老金今年涨了 20 块，很多人一听就笑了。20 块钱能买半斤肉，或者一盒便宜的降压药。同一阵子胖东来公布分配方案，普通一线员工每人分到价值 20 万的资产份额。交了一辈子公粮的老人，每月养老金一共不过 200 块，这 20 块连象征性的尊重都算不上。\n\n刺激政策讲究乘数效应和资本叠加，钱最后流进少数人的口袋。直接到老人手里的小钱，却会进菜市场和药店，养的是社会最底层。养老金分体制内、体制外和农民三类，差距长期固化，一种看法是，南斯拉夫和罗马尼亚动荡之前都走过这一段。",
-      "status": "curated",
-      "degree": 6
-    },
-    {
-      "id": "episode:EP113",
-      "key": "EP113",
-      "label": "EP113",
-      "fullLabel": "EP113 · 阿尔忒弥斯2号升空：历史似在重演！美苏争霸里，大约写着中美太空竞赛的结局。",
-      "type": "episode",
-      "route": "episodes/EP113",
-      "summary": "阿尔忒弥斯 2 号送 4 名宇航员绕月 10 天，不登月，要刷新载人飞行最远纪录。直播画面的复古色调让人想起阿波罗。美国走 NASA 加 SpaceX 的军民商双轮驱动，像一个能解体的火车头。遇到悬崖，人可以各自带着技术下车，把军工转成民用。苏联举国体制起步快，火车头却坚硬不可控。美国的动力来自个人喜爱和逐利，苏联靠集体意志和螺丝钉式的服从。据说苏联为赶庆典强发过带着问题的飞船，中国的大型商业火箭也刚失败。失败不可怕，怕的是对待失败的态度和能动性的缺失。再叠上三分之二魔咒，美苏争霸里大约已经写着这轮竞赛的结局。",
-      "status": "curated",
-      "degree": 6
-    },
-    {
       "id": "model:safety-valve-governance",
       "key": "safety-valve-governance",
       "label": "安全阀治理模型",
@@ -4136,6 +4147,17 @@
       "type": "concept",
       "route": "concepts/moral-capital",
       "summary": "一件件实事攒下的信任，平时折不成现金，到了难处会回来，也会被借去给别的事背书。",
+      "status": null,
+      "degree": 5
+    },
+    {
+      "id": "concept:truth-indifferent-rhetoric",
+      "key": "truth-indifferent-rhetoric",
+      "label": "对真相冷漠的话术",
+      "fullLabel": "对真相冷漠的话术",
+      "type": "concept",
+      "route": "concepts/truth-indifferent-rhetoric",
+      "summary": "说话的人不在乎真假，只在乎能不能打动人、站好队、带起情绪。",
       "status": null,
       "degree": 5
     },
@@ -4514,6 +4536,17 @@
       "degree": 5
     },
     {
+      "id": "episode:EP084",
+      "key": "EP084",
+      "label": "EP084",
+      "fullLabel": "EP084 · 春晚机器人吹上天际，叫好声背后，谁将是最大的受害者？",
+      "type": "episode",
+      "route": "episodes/EP084",
+      "summary": "今年春晚的机器人规模最大、人数最多，有人看成又一次大国崛起。一种看法是，这些机器人基本上各配一个操控员，没有的就跑编好的程序，对环境既不观测也不反应，更像一次标准劳动力的展示。为它叫好最响的是中低收入人群，可机器先替掉的正是重复劳动的岗位。有人指望国家向机器人收税再发给全民。可 GDP 只有三成多回到居民消费，全民发钱都还没有。人要留住位置，得做机器复制不了的东西，世界也许需要第二次文艺复兴，让人重新成为人。",
+      "status": "curated",
+      "degree": 5
+    },
+    {
       "id": "episode:EP087",
       "key": "EP087",
       "label": "EP087",
@@ -4719,17 +4752,6 @@
       "type": "concept",
       "route": "concepts/moral-interpretive-authority",
       "summary": "一个群体自认有资格替他人和外部事物定义意义、判定对错，把别人收编进自己的叙事里。",
-      "status": null,
-      "degree": 4
-    },
-    {
-      "id": "concept:truth-indifferent-rhetoric",
-      "key": "truth-indifferent-rhetoric",
-      "label": "对真相冷漠的话术",
-      "fullLabel": "对真相冷漠的话术",
-      "type": "concept",
-      "route": "concepts/truth-indifferent-rhetoric",
-      "summary": "说话的人不在乎真假，只在乎能不能打动人、站好队、带起情绪。",
       "status": null,
       "degree": 4
     },
@@ -5273,17 +5295,6 @@
       "degree": 4
     },
     {
-      "id": "episode:EP084",
-      "key": "EP084",
-      "label": "EP084",
-      "fullLabel": "EP084 · 春晚机器人吹上天际，叫好声背后，谁将是最大的受害者？",
-      "type": "episode",
-      "route": "episodes/EP084",
-      "summary": "今年春晚的机器人规模最大、人数最多，有人看成又一次大国崛起。一种看法是，这些机器人基本上各配一个操控员，没有的就跑编好的程序，对环境既不观测也不反应，更像一次标准劳动力的展示。为它叫好最响的是中低收入人群，可机器先替掉的正是重复劳动的岗位。有人指望国家向机器人收税再发给全民。可 GDP 只有三成多回到居民消费，全民发钱都还没有。人要留住位置，得做机器复制不了的东西，世界也许需要第二次文艺复兴，让人重新成为人。",
-      "status": "curated",
-      "degree": 4
-    },
-    {
       "id": "episode:EP089",
       "key": "EP089",
       "label": "EP089",
@@ -5544,6 +5555,17 @@
       "type": "person",
       "route": "people/hu-chenfeng",
       "summary": "户晨风是中国网络直播博主，「苹果人」「安卓人」的说法出自他，2025 年 9 月被全网封禁。EP005、EP006 拿他的永久封禁对照张雪峰的暂封，EP032 把他的说法归进民间三论。",
+      "status": null,
+      "degree": 3
+    },
+    {
+      "id": "concept:collective-action-threshold",
+      "key": "collective-action-threshold",
+      "label": "集体行动阈值",
+      "fullLabel": "集体行动阈值",
+      "type": "concept",
+      "route": "concepts/collective-action-threshold",
+      "summary": "同一个动作，参与人数越过某个点，性质就从个人行为变成有组织的活动，管理方的反应也随之从劝一句跳到应激处置。",
       "status": null,
       "degree": 3
     },
@@ -6098,6 +6120,17 @@
       "degree": 3
     },
     {
+      "id": "concept:token-consumption-loop",
+      "key": "token-consumption-loop",
+      "label": "Token消耗闭环",
+      "fullLabel": "Token消耗闭环",
+      "type": "concept",
+      "route": "concepts/token-consumption-loop",
+      "summary": "平台把用户的试用和生成变成算力消耗，再把消耗量讲成增长和估值。",
+      "status": null,
+      "degree": 3
+    },
+    {
       "id": "theme:safety-vs-comfort",
       "key": "safety-vs-comfort",
       "label": "安全性与舒适性叙事转移",
@@ -6373,17 +6406,6 @@
       "degree": 2
     },
     {
-      "id": "concept:collective-action-threshold",
-      "key": "collective-action-threshold",
-      "label": "集体行动阈值",
-      "fullLabel": "集体行动阈值",
-      "type": "concept",
-      "route": "concepts/collective-action-threshold",
-      "summary": "同一个动作，参与人数越过某个点，性质就从个人行为变成有组织的活动，管理方的反应也随之从劝一句跳到应激处置。",
-      "status": null,
-      "degree": 2
-    },
-    {
       "id": "concept:envy-driven-smear",
       "key": "envy-driven-smear",
       "label": "嫉妒驱动的污名化",
@@ -6468,6 +6490,17 @@
       "type": "theme",
       "route": "themes/travel-politics-and-border-screening",
       "summary": "免签、遣返和旅游安全被裹进国家关系和舆论以后，出门去哪更要靠常识自己判断。",
+      "status": null,
+      "degree": 2
+    },
+    {
+      "id": "theme:elder-support-and-distributive-justice",
+      "key": "elder-support-and-distributive-justice",
+      "label": "老年保障与分配正义",
+      "fullLabel": "老年保障与分配正义",
+      "type": "theme",
+      "route": "themes/elder-support-and-distributive-justice",
+      "summary": "养老金涨多少、钱先给谁，看得出一个社会怎样对待老去的普通人。",
       "status": null,
       "degree": 2
     },
@@ -6975,17 +7008,6 @@
       "route": "episodes/EP039",
       "summary": "宁德时代从2026年1月1日起给一到六级员工每月加150元基本工资，约占总工资的2%到2.5%，网上叫好。这家公司2017年就是全球动力电池老大，2023年利润四百多亿，大股东分红五十亿，现金多到只能买理财。2024年还网传它要员工走896、外籍员工不强制，内部人士称非官方通知。大萧条时，美国靠工会谈判给底层涨薪，消费跟着起来。德国走了反路，解散独立工会，资源押在军工上，最后只能对外扩张。福特也给工人涨过薪，让他们买得起自己造的车。普通人收入上不去，内循环起不来，产品只会越卷越便宜、越卷越差。",
       "status": "curated",
-      "degree": 2
-    },
-    {
-      "id": "concept:token-consumption-loop",
-      "key": "token-consumption-loop",
-      "label": "Token消耗闭环",
-      "fullLabel": "Token消耗闭环",
-      "type": "concept",
-      "route": "concepts/token-consumption-loop",
-      "summary": "平台把用户的试用和生成变成算力消耗，再把消耗量讲成增长和估值。",
-      "status": null,
       "degree": 2
     },
     {
@@ -7535,17 +7557,6 @@
       "type": "model",
       "route": "models/growth-outpaces-controls",
       "summary": "门店和规模跑得比供应链、管理和品控快，质量问题会当作后遗症集中冒出来，根子在增速透支了管理。",
-      "status": null,
-      "degree": 1
-    },
-    {
-      "id": "theme:elder-support-and-distributive-justice",
-      "key": "elder-support-and-distributive-justice",
-      "label": "老年保障与分配正义",
-      "fullLabel": "老年保障与分配正义",
-      "type": "theme",
-      "route": "themes/elder-support-and-distributive-justice",
-      "summary": "养老金涨多少、钱先给谁，看得出一个社会怎样对待老去的普通人。",
       "status": null,
       "degree": 1
     },
@@ -22488,6 +22499,121 @@
     },
     {
       "source": "live:LIVE049",
+      "target": "theme:dollar-system-and-gray-trade",
+      "kind": "live-theme"
+    },
+    {
+      "source": "live:LIVE050",
+      "target": "episode:EP044",
+      "kind": "live-episode"
+    },
+    {
+      "source": "live:LIVE050",
+      "target": "episode:EP049",
+      "kind": "live-episode"
+    },
+    {
+      "source": "live:LIVE050",
+      "target": "episode:EP084",
+      "kind": "live-episode"
+    },
+    {
+      "source": "live:LIVE050",
+      "target": "episode:EP088",
+      "kind": "live-episode"
+    },
+    {
+      "source": "live:LIVE050",
+      "target": "episode:EP100",
+      "kind": "live-episode"
+    },
+    {
+      "source": "live:LIVE050",
+      "target": "episode:EP113",
+      "kind": "live-episode"
+    },
+    {
+      "source": "live:LIVE050",
+      "target": "episode:EP123",
+      "kind": "live-episode"
+    },
+    {
+      "source": "live:LIVE050",
+      "target": "episode:EP134",
+      "kind": "live-episode"
+    },
+    {
+      "source": "live:LIVE050",
+      "target": "episode:EP206",
+      "kind": "live-episode"
+    },
+    {
+      "source": "live:LIVE050",
+      "target": "episode:EP225",
+      "kind": "live-episode"
+    },
+    {
+      "source": "live:LIVE050",
+      "target": "concept:token-consumption-loop",
+      "kind": "live-concept"
+    },
+    {
+      "source": "live:LIVE050",
+      "target": "concept:information-edge",
+      "kind": "live-concept"
+    },
+    {
+      "source": "live:LIVE050",
+      "target": "concept:collective-action-threshold",
+      "kind": "live-concept"
+    },
+    {
+      "source": "live:LIVE050",
+      "target": "concept:truth-indifferent-rhetoric",
+      "kind": "live-concept"
+    },
+    {
+      "source": "live:LIVE050",
+      "target": "model:distribution-bias",
+      "kind": "live-model"
+    },
+    {
+      "source": "live:LIVE050",
+      "target": "model:wealth-power-reproduction",
+      "kind": "live-model"
+    },
+    {
+      "source": "live:LIVE050",
+      "target": "model:regulatory-cost-arbitrage",
+      "kind": "live-model"
+    },
+    {
+      "source": "live:LIVE050",
+      "target": "model:leverage-backfire",
+      "kind": "live-model"
+    },
+    {
+      "source": "live:LIVE050",
+      "target": "theme:elder-support-and-distributive-justice",
+      "kind": "live-theme"
+    },
+    {
+      "source": "live:LIVE050",
+      "target": "theme:local-fiscal-stress-and-hidden-debt",
+      "kind": "live-theme"
+    },
+    {
+      "source": "live:LIVE050",
+      "target": "theme:data-cosmetics-and-false-prosperity",
+      "kind": "live-theme"
+    },
+    {
+      "source": "live:LIVE050",
+      "target": "theme:real-estate-deleveraging",
+      "kind": "live-theme"
+    },
+    {
+      "source": "live:LIVE050",
       "target": "theme:dollar-system-and-gray-trade",
       "kind": "live-theme"
     },
