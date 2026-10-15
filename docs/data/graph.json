@@ -2,14 +2,14 @@
   "meta": {
     "title": "颖响力知识图谱",
     "subtitle": "节目、概念、模型、人物、主题之间的可视化连接网络",
-    "nodeCount": 766,
-    "linkCount": 2839,
+    "nodeCount": 768,
+    "linkCount": 2845,
     "typeCounts": {
-      "model": 83,
+      "model": 84,
       "live": 50,
       "concept": 251,
       "theme": 92,
-      "episode": 225,
+      "episode": 226,
       "person": 65
     }
   },
@@ -202,6 +202,17 @@
       "degree": 26
     },
     {
+      "id": "theme:rule-of-law-boundaries-and-social-trust",
+      "key": "rule-of-law-boundaries-and-social-trust",
+      "label": "法治边界与社会信任",
+      "fullLabel": "法治边界与社会信任",
+      "type": "theme",
+      "route": "themes/rule-of-law-boundaries-and-social-trust",
+      "summary": "法律管到哪里、管不到哪里。规则被钻空子、被权力压过，或者根本没写进法条时，人和人之间的信任会怎么变。",
+      "status": null,
+      "degree": 26
+    },
+    {
       "id": "episode:EP154",
       "key": "EP154",
       "label": "EP154",
@@ -255,17 +266,6 @@
       "summary": "一种猜测是，投资机构能用的手段只剩一个，把内部会议稿放出来敲打一下。",
       "status": "curated",
       "degree": 26
-    },
-    {
-      "id": "theme:rule-of-law-boundaries-and-social-trust",
-      "key": "rule-of-law-boundaries-and-social-trust",
-      "label": "法治边界与社会信任",
-      "fullLabel": "法治边界与社会信任",
-      "type": "theme",
-      "route": "themes/rule-of-law-boundaries-and-social-trust",
-      "summary": "法律管到哪里、管不到哪里。规则被钻空子、被权力压过，或者根本没写进法条时，人和人之间的信任会怎么变。",
-      "status": null,
-      "degree": 25
     },
     {
       "id": "model:narrative-instrumentalization",
@@ -2567,6 +2567,17 @@
       "degree": 8
     },
     {
+      "id": "theme:public-space-and-civic-maturity",
+      "key": "public-space-and-civic-maturity",
+      "label": "公共空间与公民成熟",
+      "fullLabel": "公共空间与公民成熟",
+      "type": "theme",
+      "route": "themes/public-space-and-civic-maturity",
+      "summary": "人在公共场合怎样维护自己的权益，同时守住别人的时间、安全和共同规则。",
+      "status": null,
+      "degree": 8
+    },
+    {
       "id": "model:regulatory-cost-arbitrage",
       "key": "regulatory-cost-arbitrage",
       "label": "合规成本套利模型",
@@ -3157,17 +3168,6 @@
       "type": "model",
       "route": "models/distributed-warfare-system",
       "summary": "分布式战争系统解释无人装备、分散生产、前线反馈和外部供给如何组合成长期战争优势。",
-      "status": null,
-      "degree": 7
-    },
-    {
-      "id": "theme:public-space-and-civic-maturity",
-      "key": "public-space-and-civic-maturity",
-      "label": "公共空间与公民成熟",
-      "fullLabel": "公共空间与公民成熟",
-      "type": "theme",
-      "route": "themes/public-space-and-civic-maturity",
-      "summary": "人在公共场合怎样维护自己的权益，同时守住别人的时间、安全和共同规则。",
       "status": null,
       "degree": 7
     },
@@ -3821,6 +3821,17 @@
       "degree": 6
     },
     {
+      "id": "concept:blood-written-rules",
+      "key": "blood-written-rules",
+      "label": "血写的规则",
+      "fullLabel": "血写的规则",
+      "type": "concept",
+      "route": "concepts/blood-written-rules",
+      "summary": "今天习以为常的安全规范，是灾难和死亡换来的。忘了来历，红线就会被当成可以优化掉的成本。",
+      "status": null,
+      "degree": 6
+    },
+    {
       "id": "concept:wartime-oil-stockpiling",
       "key": "wartime-oil-stockpiling",
       "label": "战备储油",
@@ -4096,6 +4107,17 @@
       "degree": 6
     },
     {
+      "id": "episode:EP226",
+      "key": "EP226",
+      "label": "EP226",
+      "fullLabel": "EP226 · 祁连县征用学生宿舍安置滞留游客被狂骂。人命关天的时候，能不能少点赛博伪善？",
+      "type": "episode",
+      "route": "episodes/EP226",
+      "summary": "2026 年国庆假期，十万多游客涌进人口五万多的青海祁连县，酒店民宿全部满房，夜里又下了雨雪。县里打开放假学校的学生宿舍，铺上新被褥安置游客，网上一批大 V 骂它侵犯学生隐私。祁连县夹在几列高山中间，路一封车就开不出去，山里的大风加低温能让人失温送命，学校自带锅炉，是当晚少有能单独供暖的地方。生命和隐私摆在一起，先保命。离现场越远的人越容易只讲立场，靠十五分钟解读攒起来的知识，碰上真实的山和风就成了纸上谈兵。",
+      "status": "curated",
+      "degree": 6
+    },
+    {
       "id": "model:safety-valve-governance",
       "key": "safety-valve-governance",
       "label": "安全阀治理模型",
@@ -4261,6 +4283,17 @@
       "degree": 5
     },
     {
+      "id": "concept:emotion-front-running",
+      "key": "emotion-front-running",
+      "label": "情绪抢跑",
+      "fullLabel": "情绪抢跑",
+      "type": "concept",
+      "route": "concepts/emotion-front-running",
+      "summary": "完整事实还没出来，情绪先被点燃、站队先完成，等反转来了，跟着上头的人只剩挨打脸。",
+      "status": null,
+      "degree": 5
+    },
+    {
       "id": "concept:weapons-of-the-weak",
       "key": "weapons-of-the-weak",
       "label": "弱者的武器",
@@ -4334,17 +4367,6 @@
       "type": "concept",
       "route": "concepts/new-media-politician",
       "summary": "靠新媒体直接连接受众、绕过传统组织和选举路径崛起的新型权力人物。",
-      "status": null,
-      "degree": 5
-    },
-    {
-      "id": "concept:blood-written-rules",
-      "key": "blood-written-rules",
-      "label": "血写的规则",
-      "fullLabel": "血写的规则",
-      "type": "concept",
-      "route": "concepts/blood-written-rules",
-      "summary": "今天习以为常的安全规范，是灾难和死亡换来的。忘了来历，红线就会被当成可以优化掉的成本。",
       "status": null,
       "degree": 5
     },
@@ -4756,6 +4778,17 @@
       "degree": 4
     },
     {
+      "id": "concept:manufactured-antagonism",
+      "key": "manufactured-antagonism",
+      "label": "对立制造",
+      "fullLabel": "对立制造",
+      "type": "concept",
+      "route": "concepts/manufactured-antagonism",
+      "summary": "热度不够的时候，把人分成对立的两拨比做出好东西便宜得多，架子一搭，两边自己就吵起来，事件也就有了。",
+      "status": null,
+      "degree": 4
+    },
+    {
       "id": "concept:legal-grey-zone",
       "key": "legal-grey-zone",
       "label": "法律灰区",
@@ -4983,17 +5016,6 @@
       "type": "concept",
       "route": "concepts/anticipatory-governance",
       "summary": "在问题冒头之前就把它设计掉，不等矛盾攒成民怨再去补。",
-      "status": null,
-      "degree": 4
-    },
-    {
-      "id": "concept:emotion-front-running",
-      "key": "emotion-front-running",
-      "label": "情绪抢跑",
-      "fullLabel": "情绪抢跑",
-      "type": "concept",
-      "route": "concepts/emotion-front-running",
-      "summary": "完整事实还没出来，情绪先被点燃、站队先完成，等反转来了，跟着上头的人只剩挨打脸。",
       "status": null,
       "degree": 4
     },
@@ -5445,17 +5467,6 @@
       "type": "concept",
       "route": "concepts/planning-lockin",
       "summary": "宏大目标一旦锁定资源和判断，分散试错与旁路探索就会被压缩。",
-      "status": null,
-      "degree": 3
-    },
-    {
-      "id": "concept:manufactured-antagonism",
-      "key": "manufactured-antagonism",
-      "label": "对立制造",
-      "fullLabel": "对立制造",
-      "type": "concept",
-      "route": "concepts/manufactured-antagonism",
-      "summary": "热度不够的时候，把人分成对立的两拨比做出好东西便宜得多，架子一搭，两边自己就吵起来，事件也就有了。",
       "status": null,
       "degree": 3
     },
@@ -8063,6 +8074,17 @@
       "type": "concept",
       "route": "concepts/scarcity-narrative-gap",
       "summary": "供给被掐断的恐慌叙事，常常和真实供需、真实价格严重背离，背离本身才是该追问的信号。",
+      "status": null,
+      "degree": 1
+    },
+    {
+      "id": "model:on-site-constraints",
+      "key": "on-site-constraints",
+      "label": "现场约束",
+      "fullLabel": "现场约束",
+      "type": "model",
+      "route": "models/on-site-constraints",
+      "summary": "一个决定好不好，要放回做决定的那个地方、那个时刻去看。离现场越远，越容易拿自己身边的条件替别人出主意。",
       "status": null,
       "degree": 1
     },
@@ -16605,6 +16627,36 @@
     {
       "source": "episode:EP225",
       "target": "theme:state-business-entanglement",
+      "kind": "episode-theme"
+    },
+    {
+      "source": "episode:EP226",
+      "target": "concept:emotion-front-running",
+      "kind": "episode-concept"
+    },
+    {
+      "source": "episode:EP226",
+      "target": "concept:manufactured-antagonism",
+      "kind": "episode-concept"
+    },
+    {
+      "source": "episode:EP226",
+      "target": "concept:blood-written-rules",
+      "kind": "episode-concept"
+    },
+    {
+      "source": "episode:EP226",
+      "target": "model:on-site-constraints",
+      "kind": "episode-model"
+    },
+    {
+      "source": "episode:EP226",
+      "target": "theme:public-space-and-civic-maturity",
+      "kind": "episode-theme"
+    },
+    {
+      "source": "episode:EP226",
+      "target": "theme:rule-of-law-boundaries-and-social-trust",
       "kind": "episode-theme"
     },
     {
