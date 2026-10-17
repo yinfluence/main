@@ -1177,5 +1177,16 @@
       "platform": "youtube",
       "url": "https://www.youtube.com/watch?v=0fzuI5lDY1s"
     }
+  },
+  "EP227": {
+    "bilibili": {
+      "platform": "bilibili",
+      "url": "https://www.bilibili.com/video/BV1oHJv6CEpP/",
+      "access": "member"
+    },
+    "youtube": {
+      "platform": "youtube",
+      "url": "https://www.youtube.com/watch?v=YSgyM1KfKPY"
+    }
   }
 }

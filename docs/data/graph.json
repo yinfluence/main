@@ -2,14 +2,14 @@
   "meta": {
     "title": "颖响力知识图谱",
     "subtitle": "节目、概念、模型、人物、主题之间的可视化连接网络",
-    "nodeCount": 768,
-    "linkCount": 2845,
+    "nodeCount": 769,
+    "linkCount": 2851,
     "typeCounts": {
       "model": 84,
       "live": 50,
       "concept": 251,
       "theme": 92,
-      "episode": 226,
+      "episode": 227,
       "person": 65
     }
   },
@@ -1797,6 +1797,17 @@
       "degree": 11
     },
     {
+      "id": "theme:film-industry-and-traffic-logic",
+      "key": "film-industry-and-traffic-logic",
+      "label": "影视工业与流量逻辑",
+      "fullLabel": "影视工业与流量逻辑",
+      "type": "theme",
+      "route": "themes/film-industry-and-traffic-logic",
+      "summary": "影视生产越来越服从人设、粉丝和宣发热度，角色和作品本身退到后面。",
+      "status": null,
+      "degree": 11
+    },
+    {
       "id": "concept:active-neutrality",
       "key": "active-neutrality",
       "label": "主动中立",
@@ -1962,17 +1973,6 @@
       "degree": 10
     },
     {
-      "id": "theme:film-industry-and-traffic-logic",
-      "key": "film-industry-and-traffic-logic",
-      "label": "影视工业与流量逻辑",
-      "fullLabel": "影视工业与流量逻辑",
-      "type": "theme",
-      "route": "themes/film-industry-and-traffic-logic",
-      "summary": "影视生产越来越服从人设、粉丝和宣发热度，角色和作品本身退到后面。",
-      "status": null,
-      "degree": 10
-    },
-    {
       "id": "concept:expectation-selling",
       "key": "expectation-selling",
       "label": "预期贩卖",
@@ -2112,6 +2112,17 @@
       "type": "concept",
       "route": "concepts/standard-labor-replacement",
       "summary": "自动化最先替代可重复、可规训、可量化的标准岗位，而这些岗位往往属于普通人。",
+      "status": null,
+      "degree": 9
+    },
+    {
+      "id": "theme:public-space-and-civic-maturity",
+      "key": "public-space-and-civic-maturity",
+      "label": "公共空间与公民成熟",
+      "fullLabel": "公共空间与公民成熟",
+      "type": "theme",
+      "route": "themes/public-space-and-civic-maturity",
+      "summary": "人在公共场合怎样维护自己的权益，同时守住别人的时间、安全和共同规则。",
       "status": null,
       "degree": 9
     },
@@ -2563,17 +2574,6 @@
       "type": "model",
       "route": "models/individuation-three-stage",
       "summary": "成长要依次过三关，消化亲情，消化权威，再面对自己，一次觉醒过不完。",
-      "status": null,
-      "degree": 8
-    },
-    {
-      "id": "theme:public-space-and-civic-maturity",
-      "key": "public-space-and-civic-maturity",
-      "label": "公共空间与公民成熟",
-      "fullLabel": "公共空间与公民成熟",
-      "type": "theme",
-      "route": "themes/public-space-and-civic-maturity",
-      "summary": "人在公共场合怎样维护自己的权益，同时守住别人的时间、安全和共同规则。",
       "status": null,
       "degree": 8
     },
@@ -3568,6 +3568,17 @@
       "degree": 7
     },
     {
+      "id": "model:safety-valve-governance",
+      "key": "safety-valve-governance",
+      "label": "安全阀治理模型",
+      "fullLabel": "安全阀治理模型",
+      "type": "model",
+      "route": "models/safety-valve-governance",
+      "summary": "体系会留下分流焦虑的中间人和出口，越位了就收住。出口留得太少，压力会挑别的事往外冒。",
+      "status": null,
+      "degree": 6
+    },
+    {
       "id": "concept:subsidy-leverage-engine",
       "key": "subsidy-leverage-engine",
       "label": "补贴杠杆引擎",
@@ -4118,15 +4129,15 @@
       "degree": 6
     },
     {
-      "id": "model:safety-valve-governance",
-      "key": "safety-valve-governance",
-      "label": "安全阀治理模型",
-      "fullLabel": "安全阀治理模型",
-      "type": "model",
-      "route": "models/safety-valve-governance",
-      "summary": "体系会留下分流焦虑的中间人和出口，越位了就收住。出口留得太少，压力会挑别的事往外冒。",
-      "status": null,
-      "degree": 5
+      "id": "episode:EP227",
+      "key": "EP227",
+      "label": "EP227",
+      "fullLabel": "EP227 · 国乒观赛黑名单引争议！拆解东亚粉丝文化盛行，追星就是亚政治？",
+      "type": "episode",
+      "route": "episodes/EP227",
+      "summary": "2026 年 10 月 6 日 WTT 中国大满贯期间，国乒男队主教练王皓在北京首钢园赛场通道被一群球迷围堵辱骂，三人被行政拘留，中国乒协随后说要推动建立赛场禁入名单。支持的人说乒乓球馆早成了演唱会，反对的人担心看球也会被拉黑。名单能把人挡在门外，挡不住追星的那一整套做法。后援会分工严密，替偶像争出场、争资源，跟对家互撕，跟公共事务里的博弈是一个路数。东亚年轻人参与公共事务的地方太少，热情和组织本事只好放到偶像身上，追星成了一种亚政治。堵住一处，它会换个领域再冒出来。",
+      "status": "curated",
+      "degree": 6
     },
     {
       "id": "theme:bullshit-politics-and-historical-narratives",
@@ -4246,6 +4257,17 @@
       "type": "theme",
       "route": "themes/price-support-and-balance-sheet",
       "summary": "房价和地价被各种办法托在账面上，银行的抵押物不减值，报表就过得去。代价是真实价格一直出不来。",
+      "status": null,
+      "degree": 5
+    },
+    {
+      "id": "concept:giant-infant-rights-defense",
+      "key": "giant-infant-rights-defense",
+      "label": "巨婴式维权",
+      "fullLabel": "巨婴式维权",
+      "type": "concept",
+      "route": "concepts/giant-infant-rights-defense",
+      "summary": "把自己的方便和情绪说成权利受侵害，要规则和别人让路，自己的义务和后果一概不认。",
       "status": null,
       "degree": 5
     },
@@ -4921,6 +4943,17 @@
       "degree": 4
     },
     {
+      "id": "concept:collective-action-threshold",
+      "key": "collective-action-threshold",
+      "label": "集体行动阈值",
+      "fullLabel": "集体行动阈值",
+      "type": "concept",
+      "route": "concepts/collective-action-threshold",
+      "summary": "同一个动作，参与人数越过某个点，性质就从个人行为变成有组织的活动，管理方的反应也随之从劝一句跳到应激处置。",
+      "status": null,
+      "degree": 4
+    },
+    {
       "id": "model:succession-fracture-model",
       "key": "succession-fracture-model",
       "label": "继承裂缝模型",
@@ -4961,17 +4994,6 @@
       "type": "concept",
       "route": "concepts/signal-price-distortion",
       "summary": "价格本应用来传递供需信息，若被流量、叙事或行政力量改写，就会误导生产和消费。",
-      "status": null,
-      "degree": 4
-    },
-    {
-      "id": "concept:giant-infant-rights-defense",
-      "key": "giant-infant-rights-defense",
-      "label": "巨婴式维权",
-      "fullLabel": "巨婴式维权",
-      "type": "concept",
-      "route": "concepts/giant-infant-rights-defense",
-      "summary": "把自己的方便和情绪说成权利受侵害，要规则和别人让路，自己的义务和后果一概不认。",
       "status": null,
       "degree": 4
     },
@@ -5566,17 +5588,6 @@
       "type": "person",
       "route": "people/hu-chenfeng",
       "summary": "户晨风是中国网络直播博主，「苹果人」「安卓人」的说法出自他，2025 年 9 月被全网封禁。EP005、EP006 拿他的永久封禁对照张雪峰的暂封，EP032 把他的说法归进民间三论。",
-      "status": null,
-      "degree": 3
-    },
-    {
-      "id": "concept:collective-action-threshold",
-      "key": "collective-action-threshold",
-      "label": "集体行动阈值",
-      "fullLabel": "集体行动阈值",
-      "type": "concept",
-      "route": "concepts/collective-action-threshold",
-      "summary": "同一个动作，参与人数越过某个点，性质就从个人行为变成有组织的活动，管理方的反应也随之从劝一句跳到应激处置。",
       "status": null,
       "degree": 3
     },
@@ -6611,6 +6622,17 @@
       "type": "concept",
       "route": "concepts/platform-double-standard",
       "summary": "平台执行规则时若按账号商业价值区别处理，治理就会变成选择性守门。",
+      "status": null,
+      "degree": 2
+    },
+    {
+      "id": "concept:youth-mobilization",
+      "key": "youth-mobilization",
+      "label": "青年动员",
+      "fullLabel": "青年动员",
+      "type": "concept",
+      "route": "concepts/youth-mobilization",
+      "summary": "原本不爱投票的年轻人集中出门，长期执政者靠的年龄结构就撑不住了。决定选举的常常是谁肯出门。",
       "status": null,
       "degree": 2
     },
@@ -7854,17 +7876,6 @@
       "type": "concept",
       "route": "concepts/prepaid-levy",
       "summary": "前置征缴指税费按设立时定下的标准先足额收走，不等实际收益兑现，以后多退少补。这是 EP197 对港险和离岸信托征税的读法。",
-      "status": null,
-      "degree": 1
-    },
-    {
-      "id": "concept:youth-mobilization",
-      "key": "youth-mobilization",
-      "label": "青年动员",
-      "fullLabel": "青年动员",
-      "type": "concept",
-      "route": "concepts/youth-mobilization",
-      "summary": "原本不爱投票的年轻人集中出门，长期执政者靠的年龄结构就撑不住了。决定选举的常常是谁肯出门。",
       "status": null,
       "degree": 1
     },
@@ -16657,6 +16668,36 @@
     {
       "source": "episode:EP226",
       "target": "theme:rule-of-law-boundaries-and-social-trust",
+      "kind": "episode-theme"
+    },
+    {
+      "source": "episode:EP227",
+      "target": "concept:collective-action-threshold",
+      "kind": "episode-concept"
+    },
+    {
+      "source": "episode:EP227",
+      "target": "concept:youth-mobilization",
+      "kind": "episode-concept"
+    },
+    {
+      "source": "episode:EP227",
+      "target": "concept:giant-infant-rights-defense",
+      "kind": "episode-concept"
+    },
+    {
+      "source": "episode:EP227",
+      "target": "model:safety-valve-governance",
+      "kind": "episode-model"
+    },
+    {
+      "source": "episode:EP227",
+      "target": "theme:public-space-and-civic-maturity",
+      "kind": "episode-theme"
+    },
+    {
+      "source": "episode:EP227",
+      "target": "theme:film-industry-and-traffic-logic",
       "kind": "episode-theme"
     },
     {
