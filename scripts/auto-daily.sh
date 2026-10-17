@@ -16,6 +16,9 @@
 
 set -uo pipefail
 export PATH="/opt/homebrew/bin:/Users/ziqiguo/.local/bin:/Library/Frameworks/Python.framework/Versions/3.13/bin:/usr/bin:/bin:/usr/sbin:/sbin"
+# launchd 给的文件句柄上限只有 256。2026-10-17 claude 自动升到 2.1.302 后，EP227 整理连挂三次，
+# 一次直接报 "low max file descriptors (Current limit: 256)" 退出，另两次没写出 session 就卡死。
+ulimit -n 10240 2>/dev/null || ulimit -n 4096 2>/dev/null
 # launchd 不带 LANG，sed 会退化成按字节处理多字节字符。项目路径里有「颖响力」和「网页」
 # 两段中文，按字节算出来的 session 目录名多出 10 个横线，指向一个不存在的目录，信号 4
 # 因此从 2026-08-10 加上那天起就没生效过（在终端里核对当然是对的，终端有 LANG）。
@@ -252,7 +255,7 @@ verify_online() {
     [[ -n "$ONLINE_MD5" && "$ONLINE_MD5" == "$LOCAL_MD5" ]] && return 0
     sleep 20
   done
-  log "线上复核失败：线上 $ONLINE_MD5 != 本地 HEAD $LOCAL_MD5（已忽略 updatedAt）"
+  log "线上复核失败：线上 ${ONLINE_MD5} != 本地 HEAD ${LOCAL_MD5}（已忽略 updatedAt）"
   return 1
 }
 
