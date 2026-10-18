@@ -2,11 +2,11 @@
   "meta": {
     "title": "颖响力知识图谱",
     "subtitle": "节目、概念、模型、人物、主题之间的可视化连接网络",
-    "nodeCount": 769,
-    "linkCount": 2851,
+    "nodeCount": 770,
+    "linkCount": 2870,
     "typeCounts": {
       "model": 84,
-      "live": 50,
+      "live": 51,
       "concept": 251,
       "theme": 92,
       "episode": 227,
@@ -631,6 +631,17 @@
       "degree": 21
     },
     {
+      "id": "theme:local-fiscal-stress-and-hidden-debt",
+      "key": "local-fiscal-stress-and-hidden-debt",
+      "label": "地方财政与隐性债务",
+      "fullLabel": "地方财政与隐性债务",
+      "type": "theme",
+      "route": "themes/local-fiscal-stress-and-hidden-debt",
+      "summary": "地方财政吃紧后，系统会通过更复杂的融资、资产包装和风险转移来维持运转。",
+      "status": null,
+      "degree": 20
+    },
+    {
       "id": "person:donald-trump",
       "key": "donald-trump",
       "label": "特朗普",
@@ -673,17 +684,6 @@
       "summary": "跟伊朗说用钴结算，对方不知道钴是什么。说黄金，大字不识的军头也知道值钱。",
       "status": "curated",
       "degree": 20
-    },
-    {
-      "id": "theme:local-fiscal-stress-and-hidden-debt",
-      "key": "local-fiscal-stress-and-hidden-debt",
-      "label": "地方财政与隐性债务",
-      "fullLabel": "地方财政与隐性债务",
-      "type": "theme",
-      "route": "themes/local-fiscal-stress-and-hidden-debt",
-      "summary": "地方财政吃紧后，系统会通过更复杂的融资、资产包装和风险转移来维持运转。",
-      "status": null,
-      "degree": 19
     },
     {
       "id": "model:leverage-backfire",
@@ -829,6 +829,17 @@
       "degree": 19
     },
     {
+      "id": "live:LIVE051",
+      "key": "LIVE051",
+      "label": "LIVE051",
+      "fullLabel": "LIVE051 · 马斯克让跑车翻着跟头飞过五辆车！拆解背后的投资人思维：你抄到A，人家早靠冗余走到了C",
+      "type": "live",
+      "route": "lives/LIVE051",
+      "summary": "一辆普通大小的车里，塞进了整套喷气控制系统，还留着空。",
+      "status": "published",
+      "degree": 19
+    },
+    {
       "id": "model:proxy-containment-ring",
       "key": "proxy-containment-ring",
       "label": "代理围堵环",
@@ -917,6 +928,17 @@
       "degree": 17
     },
     {
+      "id": "episode:EP153",
+      "key": "EP153",
+      "label": "EP153",
+      "fullLabel": "EP153 · 华山派的“T病毒”，伟大定律指引空间堆叠泡药三尸脑神丹，辟邪剑谱洗脑行业自骟成就千年超车梦",
+      "type": "episode",
+      "route": "episodes/EP153",
+      "summary": "华为在一场国际电路研讨会上发表了韬定律，也叫T定律。时间缩微、逻辑折叠这类大词，把它包装成民族复兴的突破。制程好比盖楼，先进制程是把砖做小，空间堆叠是往上摞层。业界早就在做堆叠，卡在散热和良品率，层数越多良率越低。T定律释放的真正信号，是先进光刻机拿不到也造不出，只好改走辟邪剑谱式的自宫路线。它像生化危机里的T病毒，先把别的活路堵死，再借圈外人的情绪逼全行业一起变异。别人炸了高速，自己在山路上开越野车，这算不上弯道超车。",
+      "status": "curated",
+      "degree": 17
+    },
+    {
       "id": "episode:EP155",
       "key": "EP155",
       "label": "EP155",
@@ -994,17 +1016,6 @@
       "degree": 16
     },
     {
-      "id": "episode:EP153",
-      "key": "EP153",
-      "label": "EP153",
-      "fullLabel": "EP153 · 华山派的“T病毒”，伟大定律指引空间堆叠泡药三尸脑神丹，辟邪剑谱洗脑行业自骟成就千年超车梦",
-      "type": "episode",
-      "route": "episodes/EP153",
-      "summary": "华为在一场国际电路研讨会上发表了韬定律，也叫T定律。时间缩微、逻辑折叠这类大词，把它包装成民族复兴的突破。制程好比盖楼，先进制程是把砖做小，空间堆叠是往上摞层。业界早就在做堆叠，卡在散热和良品率，层数越多良率越低。T定律释放的真正信号，是先进光刻机拿不到也造不出，只好改走辟邪剑谱式的自宫路线。它像生化危机里的T病毒，先把别的活路堵死，再借圈外人的情绪逼全行业一起变异。别人炸了高速，自己在山路上开越野车，这算不上弯道超车。",
-      "status": "curated",
-      "degree": 16
-    },
-    {
       "id": "episode:EP187",
       "key": "EP187",
       "label": "EP187",
@@ -1056,6 +1067,17 @@
       "type": "model",
       "route": "models/identity-stratification",
       "summary": "身份型分层说明阶层排序从收入和资产，转向编制、合规位置、圈层资源和稳定预期。",
+      "status": null,
+      "degree": 15
+    },
+    {
+      "id": "theme:state-business-entanglement",
+      "key": "state-business-entanglement",
+      "label": "政企嵌入与企业存续",
+      "fullLabel": "政企嵌入与企业存续",
+      "type": "theme",
+      "route": "themes/state-business-entanglement",
+      "summary": "讨论企业如何依赖地方政府、国资平台或关系结构续命，以及这种绑定如何反过来改写企业目标。",
       "status": null,
       "degree": 15
     },
@@ -1181,17 +1203,6 @@
       "degree": 14
     },
     {
-      "id": "theme:state-business-entanglement",
-      "key": "state-business-entanglement",
-      "label": "政企嵌入与企业存续",
-      "fullLabel": "政企嵌入与企业存续",
-      "type": "theme",
-      "route": "themes/state-business-entanglement",
-      "summary": "讨论企业如何依赖地方政府、国资平台或关系结构续命，以及这种绑定如何反过来改写企业目标。",
-      "status": null,
-      "degree": 14
-    },
-    {
       "id": "episode:EP015",
       "key": "EP015",
       "label": "EP015",
@@ -1199,6 +1210,17 @@
       "type": "episode",
       "route": "episodes/EP015",
       "summary": "地方债最早靠卖地，银行贷款拿地、修路，再把地卖给地产商，风险很低。地产走弱，产业园加金融资本又多是一份PPT，合肥模式接了上来，地方用产业基金入股车企，再把股份抵押给银行换现金。为了让股份值钱，补贴被指向本地车企，零公里二手车、出口回流，加上和换电公司之间的关联交易，一起把销量和利润做了出来。消费者看到的是繁花似锦，看不到底下的账。虚增的销量每个月都得翻倍，迟早被刺破。长城的魏建军说过车圈的恒大已经存在，地方隐性债务才是最大的黑天鹅。",
+      "status": "curated",
+      "degree": 14
+    },
+    {
+      "id": "episode:EP049",
+      "key": "EP049",
+      "label": "EP049",
+      "fullLabel": "EP049 · AI泡沫要爆了？AI基建、美苏冷战、星球大战、电车困境，也许是一件事……",
+      "type": "episode",
+      "route": "episodes/EP049",
+      "summary": "Anthropic 把一台自动贩卖机交给 AI 经营。记者聊了一百四十句，就让它免费送货。公司加了一个 AI 老板监督，一份伪造的 PDF 又让两个 AI 吵到崩溃，接着免费送。往 AI 里砸的硬件、人员和资本，能不能换回配得上的应用价值，成了更大的问题。\n\n毛病有两个。AI 太好骗，约百万分之一点六的污染数据就能改掉模型的判断。记忆又太短，只能一层层叠老板，叠出冗余。电车困境该追问的，是那辆车为什么停不下来。冷战时里根提出星球大战计划，美国那列车撞墙前能散开，苏联的车一路开进峡谷，先垮的是经济。",
       "status": "curated",
       "degree": 14
     },
@@ -1280,6 +1302,17 @@
       "degree": 14
     },
     {
+      "id": "theme:planned-systems-and-innovation",
+      "key": "planned-systems-and-innovation",
+      "label": "大计划体制与创新约束",
+      "fullLabel": "大计划体制与创新约束",
+      "type": "theme",
+      "route": "themes/planned-systems-and-innovation",
+      "summary": "统一目标和强组织动员换来短期速度，长期却压掉创新、纠错和个人的能动性。",
+      "status": null,
+      "degree": 13
+    },
+    {
       "id": "model:wall-and-gray-trade-crackdown",
       "key": "wall-and-gray-trade-crackdown",
       "label": "建墙与打灰模型",
@@ -1299,17 +1332,6 @@
       "route": "themes/ev-financialization-and-false-sales",
       "summary": "聚焦新能源车行业如何依靠补贴、融资、渠道黑箱和虚假销售维持增长叙事。",
       "status": null,
-      "degree": 13
-    },
-    {
-      "id": "episode:EP049",
-      "key": "EP049",
-      "label": "EP049",
-      "fullLabel": "EP049 · AI泡沫要爆了？AI基建、美苏冷战、星球大战、电车困境，也许是一件事……",
-      "type": "episode",
-      "route": "episodes/EP049",
-      "summary": "Anthropic 把一台自动贩卖机交给 AI 经营。记者聊了一百四十句，就让它免费送货。公司加了一个 AI 老板监督，一份伪造的 PDF 又让两个 AI 吵到崩溃，接着免费送。往 AI 里砸的硬件、人员和资本，能不能换回配得上的应用价值，成了更大的问题。\n\n毛病有两个。AI 太好骗，约百万分之一点六的污染数据就能改掉模型的判断。记忆又太短，只能一层层叠老板，叠出冗余。电车困境该追问的，是那辆车为什么停不下来。冷战时里根提出星球大战计划，美国那列车撞墙前能散开，苏联的车一路开进峡谷，先垮的是经济。",
-      "status": "curated",
       "degree": 13
     },
     {
@@ -1412,6 +1434,17 @@
       "degree": 13
     },
     {
+      "id": "episode:EP225",
+      "key": "EP225",
+      "label": "EP225",
+      "fullLabel": "EP225 · 华删派“断剑”丧事喜办！“免费升级”辟邪剑谱合规持剑人！车圈笑傲江湖群魔乱舞！",
+      "type": "episode",
+      "route": "episodes/EP225",
+      "summary": "2026 年 10 月 8 日，懂车帝发布一段测试，三台尊界 V800 连续急刹，刹车踏板支架在第二到第四脚之间全部断裂。尊界是华为系最贵的一档车，厂家回应说标准比国标还严，给已交车的用户免费升级。车断了照样有人买，因为很多人买的是圈子里的身份，车本身倒在其次。支架为什么会断，要看钱往哪里流。华为把利润留在自己手里，生产层层外包，配件厂的账期被拖到几个月甚至大半年，越贵的车配件越没人用心。人人想走捷径的时候，这样的车最好卖。",
+      "status": "curated",
+      "degree": 13
+    },
+    {
       "id": "live:LIVE008",
       "key": "LIVE008",
       "label": "LIVE008",
@@ -1456,17 +1489,6 @@
       "degree": 13
     },
     {
-      "id": "theme:planned-systems-and-innovation",
-      "key": "planned-systems-and-innovation",
-      "label": "大计划体制与创新约束",
-      "fullLabel": "大计划体制与创新约束",
-      "type": "theme",
-      "route": "themes/planned-systems-and-innovation",
-      "summary": "统一目标和强组织动员换来短期速度，长期却压掉创新、纠错和个人的能动性。",
-      "status": null,
-      "degree": 12
-    },
-    {
       "id": "model:rule-anchored-small-state-model",
       "key": "rule-anchored-small-state-model",
       "label": "规则锚定型小国生存",
@@ -1485,6 +1507,17 @@
       "type": "theme",
       "route": "themes/human-value-and-state-credit",
       "summary": "讨论国家究竟把个体视为成本、工具，还是视为必须兑现承诺的对象。",
+      "status": null,
+      "degree": 12
+    },
+    {
+      "id": "theme:institutional-middle-class-and-social-mobility",
+      "key": "institutional-middle-class-and-social-mobility",
+      "label": "体制化中产与社会流动",
+      "fullLabel": "体制化中产与社会流动",
+      "type": "theme",
+      "route": "themes/institutional-middle-class-and-social-mobility",
+      "summary": "中产的底盘从市场收入换成编制和财政供养，普通人往上走的路跟着变窄。",
       "status": null,
       "degree": 12
     },
@@ -1720,17 +1753,6 @@
       "degree": 12
     },
     {
-      "id": "episode:EP225",
-      "key": "EP225",
-      "label": "EP225",
-      "fullLabel": "EP225 · 华删派“断剑”丧事喜办！“免费升级”辟邪剑谱合规持剑人！车圈笑傲江湖群魔乱舞！",
-      "type": "episode",
-      "route": "episodes/EP225",
-      "summary": "2026 年 10 月 8 日，懂车帝发布一段测试，三台尊界 V800 连续急刹，刹车踏板支架在第二到第四脚之间全部断裂。尊界是华为系最贵的一档车，厂家回应说标准比国标还严，给已交车的用户免费升级。车断了照样有人买，因为很多人买的是圈子里的身份，车本身倒在其次。支架为什么会断，要看钱往哪里流。华为把利润留在自己手里，生产层层外包，配件厂的账期被拖到几个月甚至大半年，越贵的车配件越没人用心。人人想走捷径的时候，这样的车最好卖。",
-      "status": "curated",
-      "degree": 12
-    },
-    {
       "id": "theme:east-asia-security-realignment",
       "key": "east-asia-security-realignment",
       "label": "东亚安全重组与日本转向",
@@ -1771,17 +1793,6 @@
       "type": "concept",
       "route": "concepts/time-asymmetry",
       "summary": "冲突双方对时间的承受力不一样，决定长期胜负的常常是谁能把时间变成自己的朋友。",
-      "status": null,
-      "degree": 11
-    },
-    {
-      "id": "theme:institutional-middle-class-and-social-mobility",
-      "key": "institutional-middle-class-and-social-mobility",
-      "label": "体制化中产与社会流动",
-      "fullLabel": "体制化中产与社会流动",
-      "type": "theme",
-      "route": "themes/institutional-middle-class-and-social-mobility",
-      "summary": "中产的底盘从市场收入换成编制和财政供养，普通人往上走的路跟着变窄。",
       "status": null,
       "degree": 11
     },
@@ -1995,6 +2006,17 @@
       "degree": 10
     },
     {
+      "id": "episode:EP041",
+      "key": "EP041",
+      "label": "EP041",
+      "fullLabel": "EP041 · 电车遥遥领先的“致敬”与全面抄袭，能让中国设计成为头部？“速成车”喂养下大倒退的新一代消费者。",
+      "type": "episode",
+      "route": "episodes/EP041",
+      "summary": "有人说电车迭代快，中国设计师已经成了汽车设计的头部，这个说法站不住。电车没了中网，能变的只剩灯组和曲面，底盘又同质，外观变了，根子还是油车那套。小米汽车借保时捷和法拉利的造型，前舱没了发动机，防撞却照搬油车的梁，尾门为了显得不同改出了锐角。据说一款车最快180天就能发布，测试没做完，车主成了测试员。从小只学对错、不学妥协，设计也就少了度。车厂不怕车坏，年轻人把车当快消品，最后替资本买了单。别听人说什么，要看他做过多少测试，别被纸上谈兵的赵括骗了。",
+      "status": "curated",
+      "degree": 10
+    },
+    {
       "id": "episode:EP063",
       "key": "EP063",
       "label": "EP063",
@@ -2112,6 +2134,17 @@
       "type": "concept",
       "route": "concepts/standard-labor-replacement",
       "summary": "自动化最先替代可重复、可规训、可量化的标准岗位，而这些岗位往往属于普通人。",
+      "status": null,
+      "degree": 9
+    },
+    {
+      "id": "model:distributed-innovation",
+      "key": "distributed-innovation",
+      "label": "分布式创新",
+      "fullLabel": "分布式创新",
+      "type": "model",
+      "route": "models/distributed-innovation",
+      "summary": "分布式创新强调多中心试错、失败吸收和真实反馈比单一大计划更能产生韧性。",
       "status": null,
       "degree": 9
     },
@@ -2288,17 +2321,6 @@
       "type": "episode",
       "route": "episodes/EP037",
       "summary": "一份小作文说，上面要深圳以市场化方式处置万科的债务风险。消息一出，万科的债券连崩几天，股价创下十年新低。深圳地铁前后投进去近千亿，剩下能借的额度只有 6 亿多，连年底 57 亿到期债务都不够。据说把万科装进深圳地铁的方案在广东省被否，中金也已介入。一种看法是，当年王石带万科投靠的那个体系也在走弱，万科作为边缘公司第一个被丢下。豪宅热销里有公司拿自己的钱买自己的房。万科和碧桂园只是第二轮下跌的标志，后面还有国有地产公司那一轮。",
-      "status": "curated",
-      "degree": 9
-    },
-    {
-      "id": "episode:EP041",
-      "key": "EP041",
-      "label": "EP041",
-      "fullLabel": "EP041 · 电车遥遥领先的“致敬”与全面抄袭，能让中国设计成为头部？“速成车”喂养下大倒退的新一代消费者。",
-      "type": "episode",
-      "route": "episodes/EP041",
-      "summary": "有人说电车迭代快，中国设计师已经成了汽车设计的头部，这个说法站不住。电车没了中网，能变的只剩灯组和曲面，底盘又同质，外观变了，根子还是油车那套。小米汽车借保时捷和法拉利的造型，前舱没了发动机，防撞却照搬油车的梁，尾门为了显得不同改出了锐角。据说一款车最快180天就能发布，测试没做完，车主成了测试员。从小只学对错、不学妥协，设计也就少了度。车厂不怕车坏，年轻人把车当快消品，最后替资本买了单。别听人说什么，要看他做过多少测试，别被纸上谈兵的赵括骗了。",
       "status": "curated",
       "degree": 9
     },
@@ -2545,17 +2567,6 @@
       "degree": 8
     },
     {
-      "id": "model:distributed-innovation",
-      "key": "distributed-innovation",
-      "label": "分布式创新",
-      "fullLabel": "分布式创新",
-      "type": "model",
-      "route": "models/distributed-innovation",
-      "summary": "分布式创新强调多中心试错、失败吸收和真实反馈比单一大计划更能产生韧性。",
-      "status": null,
-      "degree": 8
-    },
-    {
       "id": "concept:probabilistic-safety",
       "key": "probabilistic-safety",
       "label": "概率型安全",
@@ -2798,6 +2809,17 @@
       "degree": 8
     },
     {
+      "id": "episode:EP013",
+      "key": "EP013",
+      "label": "EP013",
+      "fullLabel": "EP013 · 小米汽车成都烧死人，问题出在哪里？22分钟深度分析，中国电车乱象背后的现状和真相。",
+      "type": "episode",
+      "route": "episodes/EP013",
+      "summary": "成都那起车祸里，小米汽车的车门打不开，人被烧死，不少发声的人事后还被它的法务投诉。它进场时被寄望扭转国产电车的劣币市场，结果学坏人也变成了坏人。电动门全靠电控，电池直接当底板让下层板变薄，马力拉满了，刹车和轮胎却跟不上。几十万辆车已经卖出去，大改设计公司就可能破产，比起改设计，它更可能选择堵住大家的嘴。车和冰箱彩电不同，它会要人命，最该控制的是安全风险。电车眼下便宜靠的是电价，电价背后是超越国家的博弈，谁也保证不了一直便宜。",
+      "status": "curated",
+      "degree": 8
+    },
+    {
       "id": "episode:EP018",
       "key": "EP018",
       "label": "EP018",
@@ -2959,6 +2981,17 @@
       "type": "episode",
       "route": "episodes/EP107",
       "summary": "主流都说去美元化不可逆，黄金要迎来大牛市，金价却一路走低。石油用美元结算是美元霸权的根，常说起源于 1974 年的美沙石油美元安排。过去十年冒出一个漏洞。灰色石油绕开海关统计和 SWIFT，用黄金或人民币结算。把它算进去，非美元结算早已过半。特朗普打委内瑞拉、对伊朗下手，是一套新门罗主义。让盟友出钱守墙，用很低的成本把灰色石油堵回墙内。价差一没，九成原油可能回到美元结算。未来 12 个月美元走强、黄金偏弱，前提是这套围堵真能成型。",
+      "status": "curated",
+      "degree": 8
+    },
+    {
+      "id": "episode:EP113",
+      "key": "EP113",
+      "label": "EP113",
+      "fullLabel": "EP113 · 阿尔忒弥斯2号升空：历史似在重演！美苏争霸里，大约写着中美太空竞赛的结局。",
+      "type": "episode",
+      "route": "episodes/EP113",
+      "summary": "阿尔忒弥斯 2 号送 4 名宇航员绕月 10 天，不登月，要刷新载人飞行最远纪录。直播画面的复古色调让人想起阿波罗。美国走 NASA 加 SpaceX 的军民商双轮驱动，像一个能解体的火车头。遇到悬崖，人可以各自带着技术下车，把军工转成民用。苏联举国体制起步快，火车头却坚硬不可控。美国的动力来自个人喜爱和逐利，苏联靠集体意志和螺丝钉式的服从。据说苏联为赶庆典强发过带着问题的飞船，中国的大型商业火箭也刚失败。失败不可怕，怕的是对待失败的态度和能动性的缺失。再叠上三分之二魔咒，美苏争霸里大约已经写着这轮竞赛的结局。",
       "status": "curated",
       "degree": 8
     },
@@ -3172,6 +3205,17 @@
       "degree": 7
     },
     {
+      "id": "concept:toolified-history",
+      "key": "toolified-history",
+      "label": "工具化历史",
+      "fullLabel": "工具化历史",
+      "type": "concept",
+      "route": "concepts/toolified-history",
+      "summary": "历史被拿来给当下划敌我、聚人心、证明自己的立场时，就从理解过去变成了动员工具。",
+      "status": null,
+      "degree": 7
+    },
+    {
       "id": "concept:compliance-cost-gap",
       "key": "compliance-cost-gap",
       "label": "合规成本落差",
@@ -3201,6 +3245,17 @@
       "type": "concept",
       "route": "concepts/technical-shortcut",
       "summary": "抄近路的技术选择能早一步落地、早一步赚钱，代价往往留到后面，变成甩不掉的包袱。",
+      "status": null,
+      "degree": 7
+    },
+    {
+      "id": "concept:exam-centered-discipline",
+      "key": "exam-centered-discipline",
+      "label": "考试中心化规训",
+      "fullLabel": "考试中心化规训",
+      "type": "concept",
+      "route": "concepts/exam-centered-discipline",
+      "summary": "作息、身体、座位和人格评价都围着考试排名来安排，学校就成了一套规训系统。",
       "status": null,
       "degree": 7
     },
@@ -3256,6 +3311,17 @@
       "type": "concept",
       "route": "concepts/pragmatic-legitimacy",
       "summary": "一个政权让人认，靠的是普通人的日子看得见地变好，收入、住房、护照和安全都算在里面。",
+      "status": null,
+      "degree": 7
+    },
+    {
+      "id": "theme:ev-design-and-technology-shortcuts",
+      "key": "ev-design-and-technology-shortcuts",
+      "label": "新能源设计抄近路与技术捷径",
+      "fullLabel": "新能源设计抄近路与技术捷径",
+      "type": "theme",
+      "route": "themes/ev-design-and-technology-shortcuts",
+      "summary": "车企和科技公司在设计、技术和售后上抄近路，省下的功夫后来变成安全事故、低良率和拒保。",
       "status": null,
       "degree": 7
     },
@@ -3322,17 +3388,6 @@
       "type": "episode",
       "route": "episodes/EP009",
       "summary": "娃哈哈即将脆断。宗馥莉接手前它就不是一家好公司，内忧外患早已成形。内忧是 40% 多没清理的国有股权和家族小王国。外患是农夫山泉式现代企业的挤压，加上 AD 钙奶那代产品老去。宗馥莉的水平只有小学二年级。宏胜系外置利润，任人唯亲替换老员工。把农夫山泉树成假想敌，新孵化品牌一个没成。又去碰父亲留给小妈和三个孩子的海外基金，本可拿钱退出的事，升级成两地诉讼。再想把商标转进自己控股的公司，等于逼国资动手。许家印的海外信托在香港被击穿后，宏胜转出去的钱也要说清来路。",
-      "status": "curated",
-      "degree": 7
-    },
-    {
-      "id": "episode:EP013",
-      "key": "EP013",
-      "label": "EP013",
-      "fullLabel": "EP013 · 小米汽车成都烧死人，问题出在哪里？22分钟深度分析，中国电车乱象背后的现状和真相。",
-      "type": "episode",
-      "route": "episodes/EP013",
-      "summary": "成都那起车祸里，小米汽车的车门打不开，人被烧死，不少发声的人事后还被它的法务投诉。它进场时被寄望扭转国产电车的劣币市场，结果学坏人也变成了坏人。电动门全靠电控，电池直接当底板让下层板变薄，马力拉满了，刹车和轮胎却跟不上。几十万辆车已经卖出去，大改设计公司就可能破产，比起改设计，它更可能选择堵住大家的嘴。车和冰箱彩电不同，它会要人命，最该控制的是安全风险。电车眼下便宜靠的是电价，电价背后是超越国家的博弈，谁也保证不了一直便宜。",
       "status": "curated",
       "degree": 7
     },
@@ -3491,17 +3546,6 @@
       "degree": 7
     },
     {
-      "id": "episode:EP113",
-      "key": "EP113",
-      "label": "EP113",
-      "fullLabel": "EP113 · 阿尔忒弥斯2号升空：历史似在重演！美苏争霸里，大约写着中美太空竞赛的结局。",
-      "type": "episode",
-      "route": "episodes/EP113",
-      "summary": "阿尔忒弥斯 2 号送 4 名宇航员绕月 10 天，不登月，要刷新载人飞行最远纪录。直播画面的复古色调让人想起阿波罗。美国走 NASA 加 SpaceX 的军民商双轮驱动，像一个能解体的火车头。遇到悬崖，人可以各自带着技术下车，把军工转成民用。苏联举国体制起步快，火车头却坚硬不可控。美国的动力来自个人喜爱和逐利，苏联靠集体意志和螺丝钉式的服从。据说苏联为赶庆典强发过带着问题的飞船，中国的大型商业火箭也刚失败。失败不可怕，怕的是对待失败的态度和能动性的缺失。再叠上三分之二魔咒，美苏争霸里大约已经写着这轮竞赛的结局。",
-      "status": "curated",
-      "degree": 7
-    },
-    {
       "id": "episode:EP151",
       "key": "EP151",
       "label": "EP151",
@@ -3601,6 +3645,17 @@
       "degree": 6
     },
     {
+      "id": "theme:bullshit-politics-and-historical-narratives",
+      "key": "bullshit-politics-and-historical-narratives",
+      "label": "扯淡政治与历史叙事",
+      "fullLabel": "扯淡政治与历史叙事",
+      "type": "theme",
+      "route": "themes/bullshit-politics-and-historical-narratives",
+      "summary": "不在乎真假、只在乎立场和情绪的说法，怎样被拿来讲历史、讲国家输赢，煽起一阵情绪。",
+      "status": null,
+      "degree": 6
+    },
+    {
       "id": "model:discipline-failure-loop",
       "key": "discipline-failure-loop",
       "label": "惩戒失效循环模型",
@@ -3645,6 +3700,17 @@
       "degree": 6
     },
     {
+      "id": "concept:truth-indifferent-rhetoric",
+      "key": "truth-indifferent-rhetoric",
+      "label": "对真相冷漠的话术",
+      "fullLabel": "对真相冷漠的话术",
+      "type": "concept",
+      "route": "concepts/truth-indifferent-rhetoric",
+      "summary": "说话的人不在乎真假，只在乎能不能打动人、站好队、带起情绪。",
+      "status": null,
+      "degree": 6
+    },
+    {
       "id": "concept:premium-narrative",
       "key": "premium-narrative",
       "label": "高价叙事",
@@ -3652,17 +3718,6 @@
       "type": "concept",
       "route": "concepts/premium-narrative",
       "summary": "企业用定位、符号、方法论和品牌故事，给高出成本的价格配一套说法。",
-      "status": null,
-      "degree": 6
-    },
-    {
-      "id": "concept:toolified-history",
-      "key": "toolified-history",
-      "label": "工具化历史",
-      "fullLabel": "工具化历史",
-      "type": "concept",
-      "route": "concepts/toolified-history",
-      "summary": "历史被拿来给当下划敌我、聚人心、证明自己的立场时，就从理解过去变成了动员工具。",
       "status": null,
       "degree": 6
     },
@@ -3685,17 +3740,6 @@
       "type": "theme",
       "route": "themes/trust-and-asset-preservation",
       "summary": "信托、离岸架构、上市和退出要提前搭好，钱的来源要干净，财富才可能穿过周期。",
-      "status": null,
-      "degree": 6
-    },
-    {
-      "id": "concept:exam-centered-discipline",
-      "key": "exam-centered-discipline",
-      "label": "考试中心化规训",
-      "fullLabel": "考试中心化规训",
-      "type": "concept",
-      "route": "concepts/exam-centered-discipline",
-      "summary": "作息、身体、座位和人格评价都围着考试排名来安排，学校就成了一套规训系统。",
       "status": null,
       "degree": 6
     },
@@ -3806,17 +3850,6 @@
       "type": "theme",
       "route": "themes/new-media-political-mobilization",
       "summary": "政治人物和政治情绪不再靠旧媒体传递，新媒体可以直接组织认同、站队和愤怒。",
-      "status": null,
-      "degree": 6
-    },
-    {
-      "id": "theme:ev-design-and-technology-shortcuts",
-      "key": "ev-design-and-technology-shortcuts",
-      "label": "新能源设计抄近路与技术捷径",
-      "fullLabel": "新能源设计抄近路与技术捷径",
-      "type": "theme",
-      "route": "themes/ev-design-and-technology-shortcuts",
-      "summary": "车企和科技公司在设计、技术和售后上抄近路，省下的功夫后来变成安全事故、低良率和拒保。",
       "status": null,
       "degree": 6
     },
@@ -4140,17 +4173,6 @@
       "degree": 6
     },
     {
-      "id": "theme:bullshit-politics-and-historical-narratives",
-      "key": "bullshit-politics-and-historical-narratives",
-      "label": "扯淡政治与历史叙事",
-      "fullLabel": "扯淡政治与历史叙事",
-      "type": "theme",
-      "route": "themes/bullshit-politics-and-historical-narratives",
-      "summary": "不在乎真假、只在乎立场和情绪的说法，怎样被拿来讲历史、讲国家输赢，煽起一阵情绪。",
-      "status": null,
-      "degree": 5
-    },
-    {
       "id": "theme:growth-and-family-boundaries",
       "key": "growth-and-family-boundaries",
       "label": "成长与亲情边界",
@@ -4180,17 +4202,6 @@
       "type": "concept",
       "route": "concepts/moral-capital",
       "summary": "一件件实事攒下的信任，平时折不成现金，到了难处会回来，也会被借去给别的事背书。",
-      "status": null,
-      "degree": 5
-    },
-    {
-      "id": "concept:truth-indifferent-rhetoric",
-      "key": "truth-indifferent-rhetoric",
-      "label": "对真相冷漠的话术",
-      "fullLabel": "对真相冷漠的话术",
-      "type": "concept",
-      "route": "concepts/truth-indifferent-rhetoric",
-      "summary": "说话的人不在乎真假，只在乎能不能打动人、站好队、带起情绪。",
       "status": null,
       "degree": 5
     },
@@ -4345,6 +4356,17 @@
       "type": "person",
       "route": "people/wang-shi",
       "summary": "王石是万科创始人、董事会名誉主席。节目借他看地产老板怎样交棒和退场，交出去的公司出了事，人和家底又怎样被牵回来。",
+      "status": null,
+      "degree": 5
+    },
+    {
+      "id": "concept:crisis-power-reallocation",
+      "key": "crisis-power-reallocation",
+      "label": "危机中的权力重排",
+      "fullLabel": "危机中的权力重排",
+      "type": "concept",
+      "route": "concepts/crisis-power-reallocation",
+      "summary": "危机会改变谁在前台、谁承担责任、谁保留资源，从而触发权力位置的重新排序。",
       "status": null,
       "degree": 5
     },
@@ -5126,17 +5148,6 @@
       "type": "model",
       "route": "models/crisis-selection",
       "summary": "社会进入危机期，原来掌事的人被动后退，空出来的位置把原本在边上的人推到前台。推上去的是承压的位置，不等于赢。",
-      "status": null,
-      "degree": 4
-    },
-    {
-      "id": "concept:crisis-power-reallocation",
-      "key": "crisis-power-reallocation",
-      "label": "危机中的权力重排",
-      "fullLabel": "危机中的权力重排",
-      "type": "concept",
-      "route": "concepts/crisis-power-reallocation",
-      "summary": "危机会改变谁在前台、谁承担责任、谁保留资源，从而触发权力位置的重新排序。",
       "status": null,
       "degree": 4
     },
@@ -6296,6 +6307,17 @@
       "degree": 2
     },
     {
+      "id": "concept:aesthetic-decline-by-abundance",
+      "key": "aesthetic-decline-by-abundance",
+      "label": "丰裕导致的审美滑坡",
+      "fullLabel": "丰裕导致的审美滑坡",
+      "type": "concept",
+      "route": "concepts/aesthetic-decline-by-abundance",
+      "summary": "内容数量和选择自由上升，不必然带来审美提升，反而可能训练用户接受更短、更刺激、更套路化的作品。",
+      "status": null,
+      "degree": 2
+    },
+    {
       "id": "concept:paper-gain-track-record",
       "key": "paper-gain-track-record",
       "label": "浮盈业绩",
@@ -6512,6 +6534,17 @@
       "type": "theme",
       "route": "themes/travel-politics-and-border-screening",
       "summary": "免签、遣返和旅游安全被裹进国家关系和舆论以后，出门去哪更要靠常识自己判断。",
+      "status": null,
+      "degree": 2
+    },
+    {
+      "id": "model:cross-disciplinary-learning",
+      "key": "cross-disciplinary-learning",
+      "label": "跨学科学习模型",
+      "fullLabel": "跨学科学习模型",
+      "type": "model",
+      "route": "models/cross-disciplinary-learning",
+      "summary": "跨学科学习用一个真实问题把几门学科的原理接起来，让学生学到的是看复杂系统的办法，不只是某一科的答案。",
       "status": null,
       "degree": 2
     },
@@ -7297,17 +7330,6 @@
       "degree": 1
     },
     {
-      "id": "concept:aesthetic-decline-by-abundance",
-      "key": "aesthetic-decline-by-abundance",
-      "label": "丰裕导致的审美滑坡",
-      "fullLabel": "丰裕导致的审美滑坡",
-      "type": "concept",
-      "route": "concepts/aesthetic-decline-by-abundance",
-      "summary": "内容数量和选择自由上升，不必然带来审美提升，反而可能训练用户接受更短、更刺激、更套路化的作品。",
-      "status": null,
-      "degree": 1
-    },
-    {
       "id": "person:fengge-wangmingtianya",
       "key": "fengge-wangmingtianya",
       "label": "峰哥亡命天涯",
@@ -7568,17 +7590,6 @@
       "type": "concept",
       "route": "concepts/cross-disciplinary-window",
       "summary": "好课堂能打开学科之间的通道，让学生看到真实问题如何跨越单一答案框架。",
-      "status": null,
-      "degree": 1
-    },
-    {
-      "id": "model:cross-disciplinary-learning",
-      "key": "cross-disciplinary-learning",
-      "label": "跨学科学习模型",
-      "fullLabel": "跨学科学习模型",
-      "type": "model",
-      "route": "models/cross-disciplinary-learning",
-      "summary": "跨学科学习用一个真实问题把几门学科的原理接起来，让学生学到的是看复杂系统的办法，不只是某一科的答案。",
       "status": null,
       "degree": 1
     },
@@ -22708,6 +22719,101 @@
     {
       "source": "live:LIVE050",
       "target": "theme:dollar-system-and-gray-trade",
+      "kind": "live-theme"
+    },
+    {
+      "source": "live:LIVE051",
+      "target": "episode:EP013",
+      "kind": "live-episode"
+    },
+    {
+      "source": "live:LIVE051",
+      "target": "episode:EP041",
+      "kind": "live-episode"
+    },
+    {
+      "source": "live:LIVE051",
+      "target": "episode:EP049",
+      "kind": "live-episode"
+    },
+    {
+      "source": "live:LIVE051",
+      "target": "episode:EP113",
+      "kind": "live-episode"
+    },
+    {
+      "source": "live:LIVE051",
+      "target": "episode:EP153",
+      "kind": "live-episode"
+    },
+    {
+      "source": "live:LIVE051",
+      "target": "episode:EP225",
+      "kind": "live-episode"
+    },
+    {
+      "source": "live:LIVE051",
+      "target": "concept:exam-centered-discipline",
+      "kind": "live-concept"
+    },
+    {
+      "source": "live:LIVE051",
+      "target": "concept:aesthetic-decline-by-abundance",
+      "kind": "live-concept"
+    },
+    {
+      "source": "live:LIVE051",
+      "target": "concept:crisis-power-reallocation",
+      "kind": "live-concept"
+    },
+    {
+      "source": "live:LIVE051",
+      "target": "concept:toolified-history",
+      "kind": "live-concept"
+    },
+    {
+      "source": "live:LIVE051",
+      "target": "concept:truth-indifferent-rhetoric",
+      "kind": "live-concept"
+    },
+    {
+      "source": "live:LIVE051",
+      "target": "model:distributed-innovation",
+      "kind": "live-model"
+    },
+    {
+      "source": "live:LIVE051",
+      "target": "model:cross-disciplinary-learning",
+      "kind": "live-model"
+    },
+    {
+      "source": "live:LIVE051",
+      "target": "theme:local-fiscal-stress-and-hidden-debt",
+      "kind": "live-theme"
+    },
+    {
+      "source": "live:LIVE051",
+      "target": "theme:institutional-middle-class-and-social-mobility",
+      "kind": "live-theme"
+    },
+    {
+      "source": "live:LIVE051",
+      "target": "theme:ev-design-and-technology-shortcuts",
+      "kind": "live-theme"
+    },
+    {
+      "source": "live:LIVE051",
+      "target": "theme:state-business-entanglement",
+      "kind": "live-theme"
+    },
+    {
+      "source": "live:LIVE051",
+      "target": "theme:bullshit-politics-and-historical-narratives",
+      "kind": "live-theme"
+    },
+    {
+      "source": "live:LIVE051",
+      "target": "theme:planned-systems-and-innovation",
       "kind": "live-theme"
     },
     {
