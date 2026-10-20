@@ -1,0 +1,92 @@
+{
+  "id": "russia-diesel-deal",
+  "name": "俄罗斯柴油协议",
+  "kind": "event",
+  "asOf": "2026-10-20",
+  "aliases": [
+    "俄柴油协议",
+    "美俄柴油协议",
+    "美国进口俄罗斯柴油",
+    "Russian diesel deal"
+  ],
+  "summary": "俄罗斯柴油协议指 2026 年 10 月川普宣布美国要从俄罗斯进口柴油。EP228 拿它问一个不缺油的国家为什么要买油，拆成选举、盟友和对手阵营三层政治账。",
+  "description": "2026 年 10 月 9 日，川普说已和普京谈成协议，俄罗斯马上供应三十多万吨柴油，11 月以后还有。美国财政部海外资产控制办公室当天发了第 135 号通用许可，放开涉及俄罗斯柴油的部分交易，包括进口到美国。\n\n2022 年的《终止进口俄罗斯石油法》禁止进口俄罗斯能源，总统要解禁得向国会说明理由。两党议员说这次没走这一步，合法性还在争。10 月 12 日川普说自己做了正确的选择，10 月 13 日又改口说这不是一笔美国的交易。谁付钱、油什么时候到，白宫没有回答。",
+  "conflictNotes": [
+    "主流的读法是美国缺油了，要从俄罗斯补货。美国自己汽油柴油都是净出口，这个读法站不住。",
+    "支持的一方说这能在中期选举前压住柴油价格。反对的一方说它松了对俄罗斯的压力，对油价作用有限，还绕过了国会。",
+    "EP228 认为交易成不成都不要紧，要紧的是消息本身，口播同时明说不认同这种拿乌克兰当筹码的做法。"
+  ],
+  "aftermathNotes": [
+    "协议公布后共和党内也有批评声，川普几天之内从坚持改成淡化。",
+    "实际到港的数量和时间没有公开数据，宣布的三十多万吨只是承诺量，交没交付还看不到。"
+  ],
+  "programAssociations": [
+    {
+      "title": "一笔买卖，三层政治账",
+      "episodes": [
+        "EP228"
+      ],
+      "note": "EP228 把这件事拆成三层。最表层是中期选举，农业州正值秋收，柴油价格牵着共和党基本盘的选票，宣布有新货源就能让期货里的多头收手。往里一层是逼欧盟别再一边制裁一边买俄罗斯能源。最深一层是让伊朗和中国这些俄油的伙伴心里打鼓，拆松能源阵营。"
+    }
+  ],
+  "signalNotes": [
+    "协议宣布之后柴油期货先跌、现货到港却迟迟没有，说明这笔交易主要在管预期。",
+    "欧盟接下来是收紧对俄能源进口，还是放松限价，能看出美国这一下施压有没有起作用。",
+    "中国原油进口来源里伊拉克和其他中东国家的份额要是继续上升，就是俄罗斯老客户在重新分散风险。"
+  ],
+  "extensionNotes": [
+    {
+      "title": "中期选举",
+      "note": "柴油价格对农业州选民最敏感，EP228 把稳选举放在第一层。"
+    },
+    {
+      "title": "口头干预",
+      "note": "不花钱只放话就压住期货价格，是这笔协议最先起作用的地方。"
+    },
+    {
+      "title": "楔子战略",
+      "note": "给俄罗斯一个新买家，伊朗和中国这两个老伙伴就得各自重算。"
+    },
+    {
+      "title": "欧盟",
+      "note": "协议的第二层是逼欧盟把对俄制裁做实。"
+    }
+  ],
+  "relatedKeywords": [
+    "trump",
+    "us-midterm-election",
+    "european-union",
+    "iran",
+    "zhong-e-mao-yi",
+    "russia-ukraine-war",
+    "oil"
+  ],
+  "sources": [
+    {
+      "title": "Trump says U.S. to get diesel from Russia, relaxing pressure on Moscow to ease prices before midterms（NPR 2026-10-09）",
+      "url": "https://www.npr.org/2026/10/09/nx-s1-5996912/trump-says-u-s-to-get-diesel-from-russia-relaxing-pressure-on-moscow-to-ease-prices-before-midterms",
+      "note": "核 10 月 9 日川普宣布从俄罗斯拿柴油，报道把动机放在中期选举前压油价。"
+    },
+    {
+      "title": "Trump's Russian Diesel Deal, Explained（美国外交关系委员会）",
+      "url": "https://www.cfr.org/articles/trumps-russian-diesel-deal-explained",
+      "note": "核俄罗斯马上供应三十多万吨、11 月及以后还有，财政部海外资产控制办公室同日发第 135 号通用许可。分析认为协议会削弱西方对俄的经济压力，对降油价作用有限。"
+    },
+    {
+      "title": "Lawmakers Argue Trump's Russia Diesel Deal 'Violates' the Law（TIME 2026-10-13）",
+      "url": "https://time.com/article/2026/10/13/lawmakers-argue-trump-russia-diesel-deal-violates-law-legal-experts/",
+      "note": "核 2022 年《终止进口俄罗斯石油法》禁止进口俄罗斯能源，两党议员说政府没按法律要求向国会说明。"
+    },
+    {
+      "title": "'Not a USA deal': Trump downplays Russian diesel plan in the face of GOP criticism（Yahoo Finance）",
+      "url": "https://finance.yahoo.com/energy/article/not-a-usa-deal-trump-downplays-russian-diesel-plan-in-the-face-of-gop-criticism-182030595.html",
+      "note": "核 10 月 13 日川普改口说这不是一笔美国的交易。"
+    }
+  ],
+  "episodes": [
+    {
+      "id": "EP228",
+      "note": "EP228 的由头，判断美国不缺油，买俄罗斯柴油是一笔稳选举、逼盟友、拆对手的政治账。"
+    }
+  ]
+}

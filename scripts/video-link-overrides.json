@@ -1188,5 +1188,15 @@
       "platform": "youtube",
       "url": "https://www.youtube.com/watch?v=YSgyM1KfKPY"
     }
+  },
+  "EP228": {
+    "bilibili": {
+      "platform": "bilibili",
+      "url": "https://www.bilibili.com/video/BV17FnJ6qE31/"
+    },
+    "youtube": {
+      "platform": "youtube",
+      "url": "https://www.youtube.com/watch?v=5xU__fUuJi0"
+    }
   }
 }

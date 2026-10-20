@@ -2,14 +2,14 @@
   "meta": {
     "title": "颖响力知识图谱",
     "subtitle": "节目、概念、模型、人物、主题之间的可视化连接网络",
-    "nodeCount": 770,
-    "linkCount": 2870,
+    "nodeCount": 773,
+    "linkCount": 2880,
     "typeCounts": {
       "model": 84,
       "live": 51,
-      "concept": 251,
+      "concept": 253,
       "theme": 92,
-      "episode": 227,
+      "episode": 228,
       "person": 65
     }
   },
@@ -268,6 +268,17 @@
       "degree": 26
     },
     {
+      "id": "theme:great-power-competition-and-strategic-time",
+      "key": "great-power-competition-and-strategic-time",
+      "label": "大国竞争与战略时间",
+      "fullLabel": "大国竞争与战略时间",
+      "type": "theme",
+      "route": "themes/great-power-competition-and-strategic-time",
+      "summary": "大国之间拼武器，也拼谁更能熬、谁先把成本降下来、谁抓住了时间窗口。",
+      "status": null,
+      "degree": 25
+    },
+    {
       "id": "model:narrative-instrumentalization",
       "key": "narrative-instrumentalization",
       "label": "叙事工具化模型",
@@ -334,13 +345,13 @@
       "degree": 25
     },
     {
-      "id": "theme:great-power-competition-and-strategic-time",
-      "key": "great-power-competition-and-strategic-time",
-      "label": "大国竞争与战略时间",
-      "fullLabel": "大国竞争与战略时间",
-      "type": "theme",
-      "route": "themes/great-power-competition-and-strategic-time",
-      "summary": "大国之间拼武器，也拼谁更能熬、谁先把成本降下来、谁抓住了时间窗口。",
+      "id": "concept:gray-oil-network",
+      "key": "gray-oil-network",
+      "label": "灰色石油网络",
+      "fullLabel": "灰色石油网络",
+      "type": "concept",
+      "route": "concepts/gray-oil-network",
+      "summary": "绕开正规结算和监管的石油流动，会在影子体系中重塑货币、制裁和地缘利益。",
       "status": null,
       "degree": 24
     },
@@ -442,17 +453,6 @@
       "summary": "南京按分摊的地来算，一套高层公寓落到地面上只有零点六平米。",
       "status": "published",
       "degree": 24
-    },
-    {
-      "id": "concept:gray-oil-network",
-      "key": "gray-oil-network",
-      "label": "灰色石油网络",
-      "fullLabel": "灰色石油网络",
-      "type": "concept",
-      "route": "concepts/gray-oil-network",
-      "summary": "绕开正规结算和监管的石油流动，会在影子体系中重塑货币、制裁和地缘利益。",
-      "status": null,
-      "degree": 23
     },
     {
       "id": "theme:narrative-speculation-and-retail-traps",
@@ -620,6 +620,17 @@
       "degree": 21
     },
     {
+      "id": "person:donald-trump",
+      "key": "donald-trump",
+      "label": "特朗普",
+      "fullLabel": "特朗普",
+      "type": "person",
+      "route": "people/donald-trump",
+      "summary": "特朗普是美国共和党政治人物，第 45 任和第 47 任美国总统。节目讲美国战略时最常拿他说事：新门罗主义收缩防线，让盟友出钱守墙，再沿巴拿马、委内瑞拉、伊朗一路打灰色贸易。",
+      "status": null,
+      "degree": 21
+    },
+    {
       "id": "episode:EP131",
       "key": "EP131",
       "label": "EP131",
@@ -638,17 +649,6 @@
       "type": "theme",
       "route": "themes/local-fiscal-stress-and-hidden-debt",
       "summary": "地方财政吃紧后，系统会通过更复杂的融资、资产包装和风险转移来维持运转。",
-      "status": null,
-      "degree": 20
-    },
-    {
-      "id": "person:donald-trump",
-      "key": "donald-trump",
-      "label": "特朗普",
-      "fullLabel": "特朗普",
-      "type": "person",
-      "route": "people/donald-trump",
-      "summary": "特朗普是美国共和党政治人物，第 45 任和第 47 任美国总统。节目讲美国战略时最常拿他说事：新门罗主义收缩防线，让盟友出钱守墙，再沿巴拿马、委内瑞拉、伊朗一路打灰色贸易。",
       "status": null,
       "degree": 20
     },
@@ -704,6 +704,17 @@
       "type": "model",
       "route": "models/strategic-timing",
       "summary": "看对方向只是一半，什么时候进、什么时候等、用多大的注，往往更决定结果。",
+      "status": null,
+      "degree": 19
+    },
+    {
+      "id": "theme:sanctions-and-power-containment",
+      "key": "sanctions-and-power-containment",
+      "label": "制裁、遏制与集团竞争",
+      "fullLabel": "制裁、遏制与集团竞争",
+      "type": "theme",
+      "route": "themes/sanctions-and-power-containment",
+      "summary": "讨论制裁、门罗主义、海峡与联盟如何共同服务于压制对手集团的全球布局。",
       "status": null,
       "degree": 19
     },
@@ -869,17 +880,6 @@
       "type": "model",
       "route": "models/value-capture",
       "summary": "一条商业链条上，创造了价值和留下了价值是两回事，要看钱最后落在谁手里。",
-      "status": null,
-      "degree": 18
-    },
-    {
-      "id": "theme:sanctions-and-power-containment",
-      "key": "sanctions-and-power-containment",
-      "label": "制裁、遏制与集团竞争",
-      "fullLabel": "制裁、遏制与集团竞争",
-      "type": "theme",
-      "route": "themes/sanctions-and-power-containment",
-      "summary": "讨论制裁、门罗主义、海峡与联盟如何共同服务于压制对手集团的全球布局。",
       "status": null,
       "degree": 18
     },
@@ -1335,6 +1335,17 @@
       "degree": 13
     },
     {
+      "id": "model:narrative-leverage",
+      "key": "narrative-leverage",
+      "label": "叙事杠杆",
+      "fullLabel": "叙事杠杆",
+      "type": "model",
+      "route": "models/narrative-leverage",
+      "summary": "一个足够大的故事，能把有限的资源、信用和注意力，撬成更多的资本、销量或支持。",
+      "status": null,
+      "degree": 13
+    },
+    {
       "id": "episode:EP129",
       "key": "EP129",
       "label": "EP129",
@@ -1540,17 +1551,6 @@
       "type": "concept",
       "route": "concepts/phantom-sales",
       "summary": "企业把并不存在的终端需求，包装成销量、出海成绩或订单，用来维持估值和融资。",
-      "status": null,
-      "degree": 12
-    },
-    {
-      "id": "model:narrative-leverage",
-      "key": "narrative-leverage",
-      "label": "叙事杠杆",
-      "fullLabel": "叙事杠杆",
-      "type": "model",
-      "route": "models/narrative-leverage",
-      "summary": "一个足够大的故事，能把有限的资源、信用和注意力，撬成更多的资本、销量或支持。",
       "status": null,
       "degree": 12
     },
@@ -2123,6 +2123,17 @@
       "type": "episode",
       "route": "episodes/EP209",
       "summary": "9 月 4 日传出消息，52 名新加坡公民在广西涉嫌参与传销被捕。新加坡媒体说，这可能是新加坡人在海外单次被扣最多的一次。使馆和总领馆三次探视了全部 52 人，同时讲明不干预中国的司法程序。这批人搞的是 1040 阳光工程，一个在广西活了二十多年的老套路。交 6.98 万元买入伙资格，拉三个人再往下复制。凑够 29 人当上老总，拿满 1040 万出局。它一件东西都不卖，靠的是把北部湾开发和南宁的新楼认领成自己的功劳。骗新加坡人的很可能也是新加坡人，亲戚连着亲戚，话又都听得懂。",
+      "status": "curated",
+      "degree": 10
+    },
+    {
+      "id": "episode:EP228",
+      "key": "EP228",
+      "label": "EP228",
+      "fullLabel": "EP228 · 美国不缺油为什么买俄罗斯石油？三层逻辑，全是川普的政治算计",
+      "type": "episode",
+      "route": "episodes/EP228",
+      "summary": "2026 年 10 月 9 日，川普宣布要从俄罗斯进口柴油，美国财政部当天发了许可。美国自己产油，汽油柴油都是净出口，这笔买卖按贸易说不通，要按政治账来读。最表层是中期选举，秋收季的农业州盯着柴油价格，放一句话就能让期货里的多头收手。往里一层是逼欧盟别再一边制裁一边买俄罗斯能源。最深一层是借这个信号，让伊朗和中国这些俄油的伙伴心里打鼓，拆松能源阵营。几乎不花一分钱就撬动了三层利益，代价是把乌克兰当成了交易筹码。",
       "status": "curated",
       "degree": 10
     },
@@ -3315,6 +3326,17 @@
       "degree": 7
     },
     {
+      "id": "theme:new-media-political-mobilization",
+      "key": "new-media-political-mobilization",
+      "label": "新媒体政治动员",
+      "fullLabel": "新媒体政治动员",
+      "type": "theme",
+      "route": "themes/new-media-political-mobilization",
+      "summary": "政治人物和政治情绪不再靠旧媒体传递，新媒体可以直接组织认同、站队和愤怒。",
+      "status": null,
+      "degree": 7
+    },
+    {
       "id": "theme:ev-design-and-technology-shortcuts",
       "key": "ev-design-and-technology-shortcuts",
       "label": "新能源设计抄近路与技术捷径",
@@ -3843,13 +3865,13 @@
       "degree": 6
     },
     {
-      "id": "theme:new-media-political-mobilization",
-      "key": "new-media-political-mobilization",
-      "label": "新媒体政治动员",
-      "fullLabel": "新媒体政治动员",
-      "type": "theme",
-      "route": "themes/new-media-political-mobilization",
-      "summary": "政治人物和政治情绪不再靠旧媒体传递，新媒体可以直接组织认同、站队和愤怒。",
+      "id": "concept:new-media-politician",
+      "key": "new-media-politician",
+      "label": "新媒体政治人物",
+      "fullLabel": "新媒体政治人物",
+      "type": "concept",
+      "route": "concepts/new-media-politician",
+      "summary": "靠新媒体直接连接受众、绕过传统组织和选举路径崛起的新型权力人物。",
       "status": null,
       "degree": 6
     },
@@ -4404,17 +4426,6 @@
       "degree": 5
     },
     {
-      "id": "concept:new-media-politician",
-      "key": "new-media-politician",
-      "label": "新媒体政治人物",
-      "fullLabel": "新媒体政治人物",
-      "type": "concept",
-      "route": "concepts/new-media-politician",
-      "summary": "靠新媒体直接连接受众、绕过传统组织和选举路径崛起的新型权力人物。",
-      "status": null,
-      "degree": 5
-    },
-    {
       "id": "model:primary-market-logic",
       "key": "primary-market-logic",
       "label": "一级市场逻辑投二级市场",
@@ -4741,6 +4752,17 @@
       "type": "model",
       "route": "models/bounded-social-experiment",
       "summary": "边界化社会试验强调制度创新必须有可承受范围、反馈机制和退出标准。",
+      "status": null,
+      "degree": 4
+    },
+    {
+      "id": "concept:surface-alliance-hedging",
+      "key": "surface-alliance-hedging",
+      "label": "表面结盟对冲",
+      "fullLabel": "表面结盟对冲",
+      "type": "concept",
+      "route": "concepts/surface-alliance-hedging",
+      "summary": "对外维持亲如兄弟的同盟姿态，实际收缩支持、两头下注，把姿态做给利益更大的第三方看。",
       "status": null,
       "degree": 4
     },
@@ -5434,17 +5456,6 @@
       "type": "concept",
       "route": "concepts/surface-modernity",
       "summary": "把现代化看成楼高路宽、工程体量大，看不到后面的产业、规则、文化和普通人的日子。",
-      "status": null,
-      "degree": 3
-    },
-    {
-      "id": "concept:surface-alliance-hedging",
-      "key": "surface-alliance-hedging",
-      "label": "表面结盟对冲",
-      "fullLabel": "表面结盟对冲",
-      "type": "concept",
-      "route": "concepts/surface-alliance-hedging",
-      "summary": "对外维持亲如兄弟的同盟姿态，实际收缩支持、两头下注，把姿态做给利益更大的第三方看。",
       "status": null,
       "degree": 3
     },
@@ -7572,6 +7583,17 @@
       "degree": 1
     },
     {
+      "id": "concept:verbal-intervention",
+      "key": "verbal-intervention",
+      "label": "口头干预",
+      "fullLabel": "口头干预",
+      "type": "concept",
+      "route": "concepts/verbal-intervention",
+      "summary": "不真正买卖，只靠放出一个消息改变市场对未来的判断，让价格先动起来。",
+      "status": null,
+      "degree": 1
+    },
+    {
       "id": "concept:aestheticized-precarity",
       "key": "aestheticized-precarity",
       "label": "苦难审美化",
@@ -8107,6 +8129,17 @@
       "type": "model",
       "route": "models/on-site-constraints",
       "summary": "一个决定好不好，要放回做决定的那个地方、那个时刻去看。离现场越远，越容易拿自己身边的条件替别人出主意。",
+      "status": null,
+      "degree": 1
+    },
+    {
+      "id": "concept:wedge-strategy",
+      "key": "wedge-strategy",
+      "label": "楔子战略",
+      "fullLabel": "楔子战略",
+      "type": "concept",
+      "route": "concepts/wedge-strategy",
+      "summary": "给对手阵营里的一家单独开出好条件，让各家先算自己的账，阵营从里面松掉。",
       "status": null,
       "degree": 1
     },
@@ -16709,6 +16742,56 @@
     {
       "source": "episode:EP227",
       "target": "theme:film-industry-and-traffic-logic",
+      "kind": "episode-theme"
+    },
+    {
+      "source": "episode:EP228",
+      "target": "concept:verbal-intervention",
+      "kind": "episode-concept"
+    },
+    {
+      "source": "episode:EP228",
+      "target": "concept:new-media-politician",
+      "kind": "episode-concept"
+    },
+    {
+      "source": "episode:EP228",
+      "target": "concept:surface-alliance-hedging",
+      "kind": "episode-concept"
+    },
+    {
+      "source": "episode:EP228",
+      "target": "concept:wedge-strategy",
+      "kind": "episode-concept"
+    },
+    {
+      "source": "episode:EP228",
+      "target": "concept:gray-oil-network",
+      "kind": "episode-concept"
+    },
+    {
+      "source": "episode:EP228",
+      "target": "model:narrative-leverage",
+      "kind": "episode-model"
+    },
+    {
+      "source": "episode:EP228",
+      "target": "person:donald-trump",
+      "kind": "episode-person"
+    },
+    {
+      "source": "episode:EP228",
+      "target": "theme:new-media-political-mobilization",
+      "kind": "episode-theme"
+    },
+    {
+      "source": "episode:EP228",
+      "target": "theme:sanctions-and-power-containment",
+      "kind": "episode-theme"
+    },
+    {
+      "source": "episode:EP228",
+      "target": "theme:great-power-competition-and-strategic-time",
       "kind": "episode-theme"
     },
     {
