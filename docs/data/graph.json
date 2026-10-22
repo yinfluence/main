@@ -2,11 +2,11 @@
   "meta": {
     "title": "颖响力知识图谱",
     "subtitle": "节目、概念、模型、人物、主题之间的可视化连接网络",
-    "nodeCount": 775,
-    "linkCount": 2888,
+    "nodeCount": 776,
+    "linkCount": 2901,
     "typeCounts": {
       "model": 84,
-      "live": 51,
+      "live": 52,
       "concept": 254,
       "theme": 92,
       "episode": 229,
@@ -356,6 +356,17 @@
       "degree": 24
     },
     {
+      "id": "theme:narrative-speculation-and-retail-traps",
+      "key": "narrative-speculation-and-retail-traps",
+      "label": "投资叙事与散户陷阱",
+      "fullLabel": "投资叙事与散户陷阱",
+      "type": "theme",
+      "route": "themes/narrative-speculation-and-retail-traps",
+      "summary": "价格先靠故事推高，先进场的人在高点退出，普通人带着积蓄最后接手。",
+      "status": null,
+      "degree": 24
+    },
+    {
       "id": "live:LIVE012",
       "key": "LIVE012",
       "label": "LIVE012",
@@ -455,17 +466,6 @@
       "degree": 24
     },
     {
-      "id": "theme:narrative-speculation-and-retail-traps",
-      "key": "narrative-speculation-and-retail-traps",
-      "label": "投资叙事与散户陷阱",
-      "fullLabel": "投资叙事与散户陷阱",
-      "type": "theme",
-      "route": "themes/narrative-speculation-and-retail-traps",
-      "summary": "价格先靠故事推高，先进场的人在高点退出，普通人带着积蓄最后接手。",
-      "status": null,
-      "degree": 23
-    },
-    {
       "id": "concept:chokepoint-leverage",
       "key": "chokepoint-leverage",
       "label": "咽喉杠杆",
@@ -474,6 +474,17 @@
       "route": "concepts/chokepoint-leverage",
       "summary": "控制海峡、运河和关键通道的人，往往能把地理位置转化成定价权、通行权和规则权。",
       "status": null,
+      "degree": 23
+    },
+    {
+      "id": "episode:EP136",
+      "key": "EP136",
+      "label": "EP136",
+      "fullLabel": "EP136 · 影子舰队凭什么构架全球灰色贸易网络？1.5亿运力，改写世界贸易与货币规则！",
+      "type": "episode",
+      "route": "episodes/EP136",
+      "summary": "特朗普第二任期盯着两件事，新门罗主义和打击灰色贸易。委内瑞拉已经被控制，按这个思路下一步是伊朗。两国都拿下，灰色贸易的出口就只剩俄罗斯。灰色贸易最要紧的工具是影子舰队，一套脱离西方监管的松散航运网络。船东藏着身份，换名换旗，关掉定位，专运被制裁的油。老油轮深夜在马六甲靠帮倒油，洗掉原油的化学指纹。再开一张假原产地证明，油就送进了中国的炼厂。货款走人民币和黄金，绕开 SWIFT。制裁没切断这门生意，反倒养出了一个平行市场。",
+      "status": "curated",
       "degree": 23
     },
     {
@@ -519,17 +530,6 @@
       "summary": "北方一座大城市最低工资四千左右，社保最低要按八千多交。",
       "status": "published",
       "degree": 23
-    },
-    {
-      "id": "episode:EP136",
-      "key": "EP136",
-      "label": "EP136",
-      "fullLabel": "EP136 · 影子舰队凭什么构架全球灰色贸易网络？1.5亿运力，改写世界贸易与货币规则！",
-      "type": "episode",
-      "route": "episodes/EP136",
-      "summary": "特朗普第二任期盯着两件事，新门罗主义和打击灰色贸易。委内瑞拉已经被控制，按这个思路下一步是伊朗。两国都拿下，灰色贸易的出口就只剩俄罗斯。灰色贸易最要紧的工具是影子舰队，一套脱离西方监管的松散航运网络。船东藏着身份，换名换旗，关掉定位，专运被制裁的油。老油轮深夜在马六甲靠帮倒油，洗掉原油的化学指纹。再开一张假原产地证明，油就送进了中国的炼厂。货款走人民币和黄金，绕开 SWIFT。制裁没切断这门生意，反倒养出了一个平行市场。",
-      "status": "curated",
-      "degree": 22
     },
     {
       "id": "episode:EP144",
@@ -609,6 +609,17 @@
       "degree": 22
     },
     {
+      "id": "theme:local-fiscal-stress-and-hidden-debt",
+      "key": "local-fiscal-stress-and-hidden-debt",
+      "label": "地方财政与隐性债务",
+      "fullLabel": "地方财政与隐性债务",
+      "type": "theme",
+      "route": "themes/local-fiscal-stress-and-hidden-debt",
+      "summary": "地方财政吃紧后，系统会通过更复杂的融资、资产包装和风险转移来维持运转。",
+      "status": null,
+      "degree": 21
+    },
+    {
       "id": "theme:dollar-system-and-gray-trade",
       "key": "dollar-system-and-gray-trade",
       "label": "美元体系与灰色贸易",
@@ -642,13 +653,13 @@
       "degree": 21
     },
     {
-      "id": "theme:local-fiscal-stress-and-hidden-debt",
-      "key": "local-fiscal-stress-and-hidden-debt",
-      "label": "地方财政与隐性债务",
-      "fullLabel": "地方财政与隐性债务",
+      "id": "theme:sanctions-and-power-containment",
+      "key": "sanctions-and-power-containment",
+      "label": "制裁、遏制与集团竞争",
+      "fullLabel": "制裁、遏制与集团竞争",
       "type": "theme",
-      "route": "themes/local-fiscal-stress-and-hidden-debt",
-      "summary": "地方财政吃紧后，系统会通过更复杂的融资、资产包装和风险转移来维持运转。",
+      "route": "themes/sanctions-and-power-containment",
+      "summary": "讨论制裁、门罗主义、海峡与联盟如何共同服务于压制对手集团的全球布局。",
       "status": null,
       "degree": 20
     },
@@ -704,17 +715,6 @@
       "type": "model",
       "route": "models/strategic-timing",
       "summary": "看对方向只是一半，什么时候进、什么时候等、用多大的注，往往更决定结果。",
-      "status": null,
-      "degree": 19
-    },
-    {
-      "id": "theme:sanctions-and-power-containment",
-      "key": "sanctions-and-power-containment",
-      "label": "制裁、遏制与集团竞争",
-      "fullLabel": "制裁、遏制与集团竞争",
-      "type": "theme",
-      "route": "themes/sanctions-and-power-containment",
-      "summary": "讨论制裁、门罗主义、海峡与联盟如何共同服务于压制对手集团的全球布局。",
       "status": null,
       "degree": 19
     },
@@ -983,6 +983,17 @@
       "degree": 16
     },
     {
+      "id": "theme:state-business-entanglement",
+      "key": "state-business-entanglement",
+      "label": "政企嵌入与企业存续",
+      "fullLabel": "政企嵌入与企业存续",
+      "type": "theme",
+      "route": "themes/state-business-entanglement",
+      "summary": "讨论企业如何依赖地方政府、国资平台或关系结构续命，以及这种绑定如何反过来改写企业目标。",
+      "status": null,
+      "degree": 16
+    },
+    {
       "id": "model:balance-sheet-maintenance",
       "key": "balance-sheet-maintenance",
       "label": "资产负债表维持",
@@ -1067,17 +1078,6 @@
       "type": "model",
       "route": "models/identity-stratification",
       "summary": "身份型分层说明阶层排序从收入和资产，转向编制、合规位置、圈层资源和稳定预期。",
-      "status": null,
-      "degree": 15
-    },
-    {
-      "id": "theme:state-business-entanglement",
-      "key": "state-business-entanglement",
-      "label": "政企嵌入与企业存续",
-      "fullLabel": "政企嵌入与企业存续",
-      "type": "theme",
-      "route": "themes/state-business-entanglement",
-      "summary": "讨论企业如何依赖地方政府、国资平台或关系结构续命，以及这种绑定如何反过来改写企业目标。",
       "status": null,
       "degree": 15
     },
@@ -1168,6 +1168,17 @@
       "summary": "明清时家里藏一面藤牌都可能算谋反，练武的最后只剩铁布衫。",
       "status": "published",
       "degree": 15
+    },
+    {
+      "id": "theme:planned-systems-and-innovation",
+      "key": "planned-systems-and-innovation",
+      "label": "大计划体制与创新约束",
+      "fullLabel": "大计划体制与创新约束",
+      "type": "theme",
+      "route": "themes/planned-systems-and-innovation",
+      "summary": "统一目标和强组织动员换来短期速度，长期却压掉创新、纠错和个人的能动性。",
+      "status": null,
+      "degree": 14
     },
     {
       "id": "theme:local-government-financialization",
@@ -1302,15 +1313,26 @@
       "degree": 14
     },
     {
-      "id": "theme:planned-systems-and-innovation",
-      "key": "planned-systems-and-innovation",
-      "label": "大计划体制与创新约束",
-      "fullLabel": "大计划体制与创新约束",
-      "type": "theme",
-      "route": "themes/planned-systems-and-innovation",
-      "summary": "统一目标和强组织动员换来短期速度，长期却压掉创新、纠错和个人的能动性。",
-      "status": null,
-      "degree": 13
+      "id": "episode:EP204",
+      "key": "EP204",
+      "label": "EP204",
+      "fullLabel": "EP204 · 甲醛白菜最让人无力的，是极限内卷下，没人能独善其身！中国制造的终极困局！",
+      "type": "episode",
+      "route": "episodes/EP204",
+      "summary": "张家口产区的白菜在装车前整颗蘸进甲醛，路边小药瓶和蓝色大药罐一排摆着，收菜的、装车的、跑长途的都把它当成一道工序。白菜一斤几毛钱，改用冷藏车运费翻一倍，涨价卖不动，不涨价这一趟就白跑，蘸一遍药成了整条链上最划算的选项。守规矩的人早被挤走了，剩下的人不这么干就活不下去，一件本该由制度管住的事，最后变成了一笔成本账。同一个产地给出口和会员店供货时自己收着，给国内普通超市供货时换另一套做法，差别在于哪一头还有一道让人害怕的验收。留给普通人的办法只剩一条，在天天要吃要用的那几样上花钱买确定。",
+      "status": "curated",
+      "degree": 14
+    },
+    {
+      "id": "episode:EP205",
+      "key": "EP205",
+      "label": "EP205",
+      "fullLabel": "EP205 · 不止是AI漫剧停更；中国制造七层内卷之下，每个行业都在重复同一件事！",
+      "type": "episode",
+      "route": "episodes/EP205",
+      "summary": "做AI漫剧的账号成批停更，行业里的说法是内容同质、观众看腻、人太多，这几条都只说到表面。真正压下来的是七层叠在一起的压力。五个平台同时下场抢同一批制作者，模型生成一秒的价格砍到开源免费，导演十几年的镜头经验被工具打包成一键功能。万次播放的分账从上百块掉到五块，连卖课的都割不到新人了。平台拿补贴换数据、拿数据换估值，最上面是持续收紧的合规，逼着行业极快地换玩法。被挤掉的是中间那批跟随者，能留下的是造工具的人和真会用工具的人，个人电影时代要靠他们来开。",
+      "status": "curated",
+      "degree": 14
     },
     {
       "id": "model:wall-and-gray-trade-crackdown",
@@ -1412,28 +1434,6 @@
       "degree": 13
     },
     {
-      "id": "episode:EP204",
-      "key": "EP204",
-      "label": "EP204",
-      "fullLabel": "EP204 · 甲醛白菜最让人无力的，是极限内卷下，没人能独善其身！中国制造的终极困局！",
-      "type": "episode",
-      "route": "episodes/EP204",
-      "summary": "张家口产区的白菜在装车前整颗蘸进甲醛，路边小药瓶和蓝色大药罐一排摆着，收菜的、装车的、跑长途的都把它当成一道工序。白菜一斤几毛钱，改用冷藏车运费翻一倍，涨价卖不动，不涨价这一趟就白跑，蘸一遍药成了整条链上最划算的选项。守规矩的人早被挤走了，剩下的人不这么干就活不下去，一件本该由制度管住的事，最后变成了一笔成本账。同一个产地给出口和会员店供货时自己收着，给国内普通超市供货时换另一套做法，差别在于哪一头还有一道让人害怕的验收。留给普通人的办法只剩一条，在天天要吃要用的那几样上花钱买确定。",
-      "status": "curated",
-      "degree": 13
-    },
-    {
-      "id": "episode:EP205",
-      "key": "EP205",
-      "label": "EP205",
-      "fullLabel": "EP205 · 不止是AI漫剧停更；中国制造七层内卷之下，每个行业都在重复同一件事！",
-      "type": "episode",
-      "route": "episodes/EP205",
-      "summary": "做AI漫剧的账号成批停更，行业里的说法是内容同质、观众看腻、人太多，这几条都只说到表面。真正压下来的是七层叠在一起的压力。五个平台同时下场抢同一批制作者，模型生成一秒的价格砍到开源免费，导演十几年的镜头经验被工具打包成一键功能。万次播放的分账从上百块掉到五块，连卖课的都割不到新人了。平台拿补贴换数据、拿数据换估值，最上面是持续收紧的合规，逼着行业极快地换玩法。被挤掉的是中间那批跟随者，能留下的是造工具的人和真会用工具的人，个人电影时代要靠他们来开。",
-      "status": "curated",
-      "degree": 13
-    },
-    {
       "id": "episode:EP217",
       "key": "EP217",
       "label": "EP217",
@@ -1496,6 +1496,17 @@
       "type": "live",
       "route": "lives/LIVE047",
       "summary": "座舱盖和武器舱门上全是隐身涂层，交给 UPS 后没有直飞美国，先绕去了韩国。",
+      "status": "published",
+      "degree": 13
+    },
+    {
+      "id": "live:LIVE052",
+      "key": "LIVE052",
+      "label": "LIVE052",
+      "fullLabel": "LIVE052 · 银行还是当铺思维！拆解马云2020年外滩那场发言：我们错过了一次金融弯道超车？",
+      "type": "live",
+      "route": "lives/LIVE052",
+      "summary": "淘宝砍掉了批发商，支付宝想砍的是存款和贷款之间那两三个点。",
       "status": "published",
       "degree": 13
     },
@@ -1694,6 +1705,17 @@
       "type": "episode",
       "route": "episodes/EP199",
       "summary": "樟宜海滩这次赶海，十来个人是夜里退潮时下去的，一晚上装满七八桶螃蟹贝类。东西拉到牛车水的中餐馆加工，成品视频发上网。新加坡本地社群反应激烈，选区议员出面批评，帮忙加工的餐馆被刷差评。争议卡在一个事实上，樟宜海滩不是海洋保护区，捡的也不是保护物种，这群人确实没违法。可法条没写的地方还有一套规矩，写在当地人心里。潮间带在那里的头一份用处是给人看，国土就那么大，海岸线摊到人均少得可怜，禁不住十来个人搜刮一遍。把这件事说成素质差或者种族歧视，两边都没说到点上。",
+      "status": "curated",
+      "degree": 12
+    },
+    {
+      "id": "episode:EP206",
+      "key": "EP206",
+      "label": "EP206",
+      "fullLabel": "EP206 · 地主家傻儿子卖了霍金价？拆解宇树科技暴涨与王兴兴诡异表情。",
+      "type": "episode",
+      "route": "episodes/EP206",
+      "summary": "宇树科技上市当天开盘冲过一千块，市值一步到位，王兴兴成了九零后首富，人在台上却眉头紧锁。地主家的傻儿子卖出霍金的身价，说的是估值按具身智能龙头给足，公司真正拿得出手的是运动控制，通用智能那部分还远没长出来。价格一次性把往后几十年的成长预期算完，公司此后每走一步都在给这个价格补课，不是在做新东西。把股价推上去的是上市前就在名单里的机构和国资。它们冲的是账面上的浮盈倍数，拿这份成绩单去募下一期基金、去交差。开盘能交易的只有总股本的七个多点，缺了对手盘，价格只能往一个方向走。",
       "status": "curated",
       "degree": 12
     },
@@ -1907,17 +1929,6 @@
       "degree": 11
     },
     {
-      "id": "episode:EP206",
-      "key": "EP206",
-      "label": "EP206",
-      "fullLabel": "EP206 · 地主家傻儿子卖了霍金价？拆解宇树科技暴涨与王兴兴诡异表情。",
-      "type": "episode",
-      "route": "episodes/EP206",
-      "summary": "宇树科技上市当天开盘冲过一千块，市值一步到位，王兴兴成了九零后首富，人在台上却眉头紧锁。地主家的傻儿子卖出霍金的身价，说的是估值按具身智能龙头给足，公司真正拿得出手的是运动控制，通用智能那部分还远没长出来。价格一次性把往后几十年的成长预期算完，公司此后每走一步都在给这个价格补课，不是在做新东西。把股价推上去的是上市前就在名单里的机构和国资。它们冲的是账面上的浮盈倍数，拿这份成绩单去募下一期基金、去交差。开盘能交易的只有总股本的七个多点，缺了对手盘，价格只能往一个方向走。",
-      "status": "curated",
-      "degree": 11
-    },
-    {
       "id": "episode:EP213",
       "key": "EP213",
       "label": "EP213",
@@ -2079,6 +2090,17 @@
       "type": "episode",
       "route": "episodes/EP190",
       "summary": "新加坡新一轮内阁改组7月生效，总理黄循财上任两年仍兼任财政部长。外界读成不肯放权，可财政是小国的生命线，地缘动荡和AI升级又逼着整套框架重排。李显龙2004年上任后也把核心经济攥了好几年，等团队成熟才交出去。梯队没长成之前不是不想放，是不敢放。新人破格进内阁，是人民行动党的梯队制在赶交接班，按过往节奏推算，新一代要在 2035 年前后上位。贸工部改名能源、贸易与工业部并设双部长，是给2027年东盟主席国任期提前配架构。黄志明时隔六年重返内阁，回来抓就业和职场转型，说明头等大事落在民生。",
+      "status": "curated",
+      "degree": 10
+    },
+    {
+      "id": "episode:EP194",
+      "key": "EP194",
+      "label": "EP194",
+      "fullLabel": "EP194 · 银行重启五年期存单真相：不是利率要涨，是全民化债，是一场悄无声息的财富转移",
+      "type": "episode",
+      "route": "episodes/EP194",
+      "summary": "工农中建四大行把去年 11 月下架的五年期大额存单重新上架，最高利率都是 1.6%。市面把它读成银行提前锁定成本、看好后续加息，这个逻辑正好搞反了。只有预判利率长期往下走，才会急着把当前的资金成本锁死。五年期比三年期只高一点点，等于想锁住这笔钱五年，又不肯为多出来的两年付钱。往下还有两层，储户拿 1.6% 的利息，银行拿这笔钱去置换地方债，化债的成本摊到了每个存钱的人头上。1.6 到 1.8 就是眼下的无风险利率，号称稳定四个点以上的产品，都得先问钱从哪儿赚。",
       "status": "curated",
       "degree": 10
     },
@@ -2512,17 +2534,6 @@
       "degree": 9
     },
     {
-      "id": "episode:EP194",
-      "key": "EP194",
-      "label": "EP194",
-      "fullLabel": "EP194 · 银行重启五年期存单真相：不是利率要涨，是全民化债，是一场悄无声息的财富转移",
-      "type": "episode",
-      "route": "episodes/EP194",
-      "summary": "工农中建四大行把去年 11 月下架的五年期大额存单重新上架，最高利率都是 1.6%。市面把它读成银行提前锁定成本、看好后续加息，这个逻辑正好搞反了。只有预判利率长期往下走，才会急着把当前的资金成本锁死。五年期比三年期只高一点点，等于想锁住这笔钱五年，又不肯为多出来的两年付钱。往下还有两层，储户拿 1.6% 的利息，银行拿这笔钱去置换地方债，化债的成本摊到了每个存钱的人头上。1.6 到 1.8 就是眼下的无风险利率，号称稳定四个点以上的产品，都得先问钱从哪儿赚。",
-      "status": "curated",
-      "degree": 9
-    },
-    {
       "id": "episode:EP216",
       "key": "EP216",
       "label": "EP216",
@@ -2541,6 +2552,17 @@
       "type": "episode",
       "route": "episodes/EP218",
       "summary": "2026 年 9 月 19 日，微博大 V 理记断言西贝最多再撑两三个月，西贝当天辟谣。他拿不出证据，转头说罗永浩是巨贪的白手套、去年的预制菜风波有黑幕，随后又去试驾理想和小鹏的新车。对贾国龙，他当不了拉人上岸的恩人，就抢着做第一个当众判死刑的人，借此抬高身价。对罗永浩，他挑最出名的人去骂，算准对方不会接招。罗永浩那种当面批评，企业做好经营就扛得住。以朋友身份说出口的死期，会让顾客退卡、供应商催款，把还能撑的企业推进挤兑。",
+      "status": "curated",
+      "degree": 9
+    },
+    {
+      "id": "episode:EP229",
+      "key": "EP229",
+      "label": "EP229",
+      "fullLabel": "EP229 · 从车圈笑傲江湖到《回到未来》，特斯拉飞行车背后，是两个世界的代差！",
+      "type": "episode",
+      "route": "episodes/EP229",
+      "summary": "2026 年 10 月 15 日，特斯拉在得州 SpaceX 的场地发布新一代 Roadster，车顺着坡道倒挂，再靠喷气翻转腾空落地。就在前一天，国内还在吵尊界刹车踏板支架断裂，车企比的是续航、屏幕，还有车里能不能装下床和马桶。两边放在一起，一边还在演武侠，一边已经开进了《回到未来》，差的是做事的方式。这边默认市场就这么大，在固定的地盘里抢份额，那边几家公司共用同一套技术，互相输血、一起长大。拿能不能上牌、能飞几秒去评判它，用的还是旧世界的规则。",
       "status": "curated",
       "degree": 9
     },
@@ -3179,17 +3201,6 @@
       "type": "episode",
       "route": "episodes/EP223",
       "summary": "10 月起首套房贷贴息一个百分点，最长五年，房子要在 120 平米以下、总价 150 万以内，钱九成由中央出。三道门槛把一线城市排除在外，剩下的买家是三四线城市从没买过房、手里攒了二三十万的人。一年一万块左右的补贴，换走的是他们的养老钱、养孩子的钱和应急的钱，还要背上二十年月供，补贴却只管五年。贴息背后有三个目的，按人群精准锁住现金，用成交托住地价和银行的抵押物，再绕开汇率的限制把贷款利率悄悄压低一截。抗风险最弱的人，留住手里的现金比拿这笔补贴要紧。",
-      "status": "curated",
-      "degree": 8
-    },
-    {
-      "id": "episode:EP229",
-      "key": "EP229",
-      "label": "EP229",
-      "fullLabel": "EP229 · 从车圈笑傲江湖到《回到未来》，特斯拉飞行车背后，是两个世界的代差！",
-      "type": "episode",
-      "route": "episodes/EP229",
-      "summary": "2026 年 10 月 15 日，特斯拉在得州 SpaceX 的场地发布新一代 Roadster，车顺着坡道倒挂，再靠喷气翻转腾空落地。就在前一天，国内还在吵尊界刹车踏板支架断裂，车企比的是续航、屏幕，还有车里能不能装下床和马桶。两边放在一起，一边还在演武侠，一边已经开进了《回到未来》，差的是做事的方式。这边默认市场就这么大，在固定的地盘里抢份额，那边几家公司共用同一套技术，互相输血、一起长大。拿能不能上牌、能飞几秒去评判它，用的还是旧世界的规则。",
       "status": "curated",
       "degree": 8
     },
@@ -3964,6 +3975,17 @@
       "degree": 6
     },
     {
+      "id": "concept:money-time-price",
+      "key": "money-time-price",
+      "label": "资金的时间价格",
+      "fullLabel": "资金的时间价格",
+      "type": "concept",
+      "route": "concepts/money-time-price",
+      "summary": "钱的价值不只由数量决定，更由期限、还款压力和附带条件决定。",
+      "status": null,
+      "degree": 6
+    },
+    {
       "id": "theme:ai-bubble-and-compute-demand",
       "key": "ai-bubble-and-compute-demand",
       "label": "AI泡沫与算力需求制造",
@@ -4239,6 +4261,17 @@
       "degree": 5
     },
     {
+      "id": "theme:charity-and-moral-capital",
+      "key": "charity-and-moral-capital",
+      "label": "公益、善意与商业失灵",
+      "fullLabel": "公益、善意与商业失灵",
+      "type": "theme",
+      "route": "themes/charity-and-moral-capital",
+      "summary": "做公益攒下的信任怎样在难处兑现，又怎样被挪去背书。公募慈善的钱，为什么到不了具体的人手里。",
+      "status": null,
+      "degree": 5
+    },
+    {
       "id": "concept:relationship-insurance",
       "key": "relationship-insurance",
       "label": "关系保险",
@@ -4477,17 +4510,6 @@
       "type": "concept",
       "route": "concepts/transfer-payment-dependency",
       "summary": "地方运转越来越靠上级拨款，本地产业和税源长不出来。",
-      "status": null,
-      "degree": 5
-    },
-    {
-      "id": "concept:money-time-price",
-      "key": "money-time-price",
-      "label": "资金的时间价格",
-      "fullLabel": "资金的时间价格",
-      "type": "concept",
-      "route": "concepts/money-time-price",
-      "summary": "钱的价值不只由数量决定，更由期限、还款压力和附带条件决定。",
       "status": null,
       "degree": 5
     },
@@ -4950,17 +4972,6 @@
       "type": "concept",
       "route": "concepts/wage-demand-loop",
       "summary": "工资对单个企业是成本，所有企业的工资加起来是整个市场的购买力。把工资压到底，压掉的是自己的买家。",
-      "status": null,
-      "degree": 4
-    },
-    {
-      "id": "theme:charity-and-moral-capital",
-      "key": "charity-and-moral-capital",
-      "label": "公益、善意与商业失灵",
-      "fullLabel": "公益、善意与商业失灵",
-      "type": "theme",
-      "route": "themes/charity-and-moral-capital",
-      "summary": "做公益攒下的信任怎样在难处兑现，又怎样被挪去背书。公募慈善的钱，为什么到不了具体的人手里。",
       "status": null,
       "degree": 4
     },
@@ -22959,6 +22970,71 @@
     {
       "source": "live:LIVE051",
       "target": "theme:planned-systems-and-innovation",
+      "kind": "live-theme"
+    },
+    {
+      "source": "live:LIVE052",
+      "target": "episode:EP136",
+      "kind": "live-episode"
+    },
+    {
+      "source": "live:LIVE052",
+      "target": "episode:EP194",
+      "kind": "live-episode"
+    },
+    {
+      "source": "live:LIVE052",
+      "target": "episode:EP204",
+      "kind": "live-episode"
+    },
+    {
+      "source": "live:LIVE052",
+      "target": "episode:EP205",
+      "kind": "live-episode"
+    },
+    {
+      "source": "live:LIVE052",
+      "target": "episode:EP206",
+      "kind": "live-episode"
+    },
+    {
+      "source": "live:LIVE052",
+      "target": "episode:EP229",
+      "kind": "live-episode"
+    },
+    {
+      "source": "live:LIVE052",
+      "target": "concept:money-time-price",
+      "kind": "live-concept"
+    },
+    {
+      "source": "live:LIVE052",
+      "target": "theme:charity-and-moral-capital",
+      "kind": "live-theme"
+    },
+    {
+      "source": "live:LIVE052",
+      "target": "theme:local-fiscal-stress-and-hidden-debt",
+      "kind": "live-theme"
+    },
+    {
+      "source": "live:LIVE052",
+      "target": "theme:state-business-entanglement",
+      "kind": "live-theme"
+    },
+    {
+      "source": "live:LIVE052",
+      "target": "theme:planned-systems-and-innovation",
+      "kind": "live-theme"
+    },
+    {
+      "source": "live:LIVE052",
+      "target": "theme:sanctions-and-power-containment",
+      "kind": "live-theme"
+    },
+    {
+      "source": "live:LIVE052",
+      "target": "theme:narrative-speculation-and-retail-traps",
       "kind": "live-theme"
     },
     {
