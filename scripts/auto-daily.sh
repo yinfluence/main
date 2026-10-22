@@ -25,6 +25,14 @@ ulimit -n 10240 2>/dev/null || ulimit -n 4096 2>/dev/null
 # 2026-08-14 EP199 那次误杀就是这么来的：读 SOP 26 分钟不写盘，唯一能救它的信号是坏的。
 export LC_ALL=en_US.UTF-8
 
+# 2026-10-22：B 站一律直连，不走本机代理。用户人在国内，B 站本来不需要代理；
+# 10-20 起夜里代理 127.0.0.1:1082 时好时坏（报 503），B 站请求跟着失败，连续 20 次扫描出错。
+# macOS 上 Python 只有在环境变量里写了代理时才认 no_proxy，所以代理也显式写出来，YouTube 照旧走它。
+export http_proxy="${http_proxy:-http://127.0.0.1:1082}" https_proxy="${https_proxy:-http://127.0.0.1:1082}"
+export HTTP_PROXY="$http_proxy" HTTPS_PROXY="$https_proxy"
+export no_proxy="bilibili.com,.bilibili.com,hdslb.com,.hdslb.com,bilivideo.com,.bilivideo.com,biliapi.net,.biliapi.net,b23.tv,localhost,127.0.0.1"
+export NO_PROXY="$no_proxy"
+
 WEB="/Users/ziqiguo/Documents/Diary/GoldenVault/md/topic/personal/sources/people/颖响力/网页"
 cd "$WEB" || exit 1
 mkdir -p logs
