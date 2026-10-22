@@ -5634,6 +5634,7 @@ function renderSidebar() {
     </div>
     <div class="sidebar-section">
       <a class="sidebar-link" href="#/graph">知识图谱 <span class="count-badge">${graphStatValue()}</span></a>
+      <a class="sidebar-link" href="./yin-view.html">颖观察 <span class="count-badge">七格</span></a>
       <a class="sidebar-link sidebar-link-log" href="#/updates">网页日志 <span class="count-badge">${WEBSITE_LOG_ENTRIES.length}</span></a>
     </div>
   `;

@@ -1,6 +1,7 @@
 import fs from 'fs/promises';
 import path from 'path';
 import { fileURLToPath } from 'url';
+import { execFileSync } from 'child_process';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const contentDir = path.join(__dirname, 'content');
@@ -1098,6 +1099,17 @@ async function build() {
   const assetVersion = Date.now();
   const indexHtml = await buildIndexHtml(assetVersion);
   const siteJson = JSON.stringify(site, null, 2);
+
+  // 颖观察：先由 ../颖观察框架/gen_page.py 重新生成 site/ 下的多页，再整组复制进主站；生成失败就沿用 site/ 里现有的页面
+  const yinViewDir = path.join(__dirname, '..', '颖观察框架');
+  try {
+    execFileSync('python3', [path.join(yinViewDir, 'parse_domains.py')], { stdio: 'pipe' });
+    execFileSync('python3', [path.join(yinViewDir, 'gen_page.py')], { stdio: 'pipe' });
+  } catch (error) {
+    console.error('颖观察生成失败，沿用现有页面：', error.stdout?.toString() || error.message);
+  }
+  const yinViewSite = path.join(yinViewDir, 'site');
+  const yinViewPages = (await fs.readdir(yinViewSite).catch(() => [])).filter((f) => /^yin-view.*\.html$/.test(f));
   const graphJson = JSON.stringify(graph, null, 2);
 
   await Promise.all([
@@ -1114,7 +1126,11 @@ async function build() {
     copyFile(path.join(srcDir, 'style.css'), path.join(docsAssetsDir, 'style.css')),
     copyFileIfPresent(path.join(srcDir, 'assets', 'yinfluence-avatar.png'), path.join(docsAssetsDir, 'yinfluence-avatar.png')),
     fs.writeFile(path.join(docsDataDir, 'site.json'), siteJson, 'utf8'),
-    fs.writeFile(path.join(docsDataDir, 'graph.json'), graphJson, 'utf8')
+    fs.writeFile(path.join(docsDataDir, 'graph.json'), graphJson, 'utf8'),
+    ...yinViewPages.flatMap((f) => [
+      copyFile(path.join(yinViewSite, f), path.join(distDir, f)),
+      copyFile(path.join(yinViewSite, f), path.join(docsDir, f))
+    ])
   ]);
 
   console.log(`Built ${site.meta.title}`);
