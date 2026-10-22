@@ -1198,5 +1198,15 @@
       "platform": "youtube",
       "url": "https://www.youtube.com/watch?v=5xU__fUuJi0"
     }
+  },
+  "EP229": {
+    "bilibili": {
+      "platform": "bilibili",
+      "url": "https://www.bilibili.com/video/BV1sknz6zEn3/"
+    },
+    "youtube": {
+      "platform": "youtube",
+      "url": "https://www.youtube.com/watch?v=yAlDCAdMBiQ"
+    }
   }
 }

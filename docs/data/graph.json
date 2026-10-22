@@ -2,14 +2,14 @@
   "meta": {
     "title": "颖响力知识图谱",
     "subtitle": "节目、概念、模型、人物、主题之间的可视化连接网络",
-    "nodeCount": 773,
-    "linkCount": 2880,
+    "nodeCount": 775,
+    "linkCount": 2888,
     "typeCounts": {
       "model": 84,
       "live": 51,
-      "concept": 253,
+      "concept": 254,
       "theme": 92,
-      "episode": 228,
+      "episode": 229,
       "person": 65
     }
   },
@@ -917,6 +917,17 @@
       "degree": 17
     },
     {
+      "id": "model:path-dependence",
+      "key": "path-dependence",
+      "label": "路径依赖",
+      "fullLabel": "路径依赖",
+      "type": "model",
+      "route": "models/path-dependence",
+      "summary": "早期的选择一旦成功，会沉淀成习惯、资产和期待，反过来限制后来的转向。",
+      "status": null,
+      "degree": 17
+    },
+    {
       "id": "episode:EP132",
       "key": "EP132",
       "label": "EP132",
@@ -968,17 +979,6 @@
       "type": "theme",
       "route": "themes/maritime-chokepoints-and-route-order",
       "summary": "讨论海峡、运河和关键航道如何把地理位置变成规则、保险、资本和军事的综合权力。",
-      "status": null,
-      "degree": 16
-    },
-    {
-      "id": "model:path-dependence",
-      "key": "path-dependence",
-      "label": "路径依赖",
-      "fullLabel": "路径依赖",
-      "type": "model",
-      "route": "models/path-dependence",
-      "summary": "早期的选择一旦成功，会沉淀成习惯、资产和期待，反过来限制后来的转向。",
       "status": null,
       "degree": 16
     },
@@ -2721,6 +2721,17 @@
       "degree": 8
     },
     {
+      "id": "theme:ev-design-and-technology-shortcuts",
+      "key": "ev-design-and-technology-shortcuts",
+      "label": "新能源设计抄近路与技术捷径",
+      "fullLabel": "新能源设计抄近路与技术捷径",
+      "type": "theme",
+      "route": "themes/ev-design-and-technology-shortcuts",
+      "summary": "车企和科技公司在设计、技术和售后上抄近路，省下的功夫后来变成安全事故、低良率和拒保。",
+      "status": null,
+      "degree": 8
+    },
+    {
       "id": "concept:information-edge",
       "key": "information-edge",
       "label": "信息优势",
@@ -3172,6 +3183,17 @@
       "degree": 8
     },
     {
+      "id": "episode:EP229",
+      "key": "EP229",
+      "label": "EP229",
+      "fullLabel": "EP229 · 从车圈笑傲江湖到《回到未来》，特斯拉飞行车背后，是两个世界的代差！",
+      "type": "episode",
+      "route": "episodes/EP229",
+      "summary": "2026 年 10 月 15 日，特斯拉在得州 SpaceX 的场地发布新一代 Roadster，车顺着坡道倒挂，再靠喷气翻转腾空落地。就在前一天，国内还在吵尊界刹车踏板支架断裂，车企比的是续航、屏幕，还有车里能不能装下床和马桶。两边放在一起，一边还在演武侠，一边已经开进了《回到未来》，差的是做事的方式。这边默认市场就这么大，在固定的地盘里抢份额，那边几家公司共用同一套技术，互相输血、一起长大。拿能不能上牌、能飞几秒去评判它，用的还是旧世界的规则。",
+      "status": "curated",
+      "degree": 8
+    },
+    {
       "id": "concept:performative-innovation",
       "key": "performative-innovation",
       "label": "表演式创新",
@@ -3179,6 +3201,17 @@
       "type": "concept",
       "route": "concepts/performative-innovation",
       "summary": "项目围着指标、汇报和扶持资金转，能拍出来、能验收就行，真突破排在后面。",
+      "status": null,
+      "degree": 7
+    },
+    {
+      "id": "theme:price-war-and-precision-competition",
+      "key": "price-war-and-precision-competition",
+      "label": "低价竞争与精准打击",
+      "fullLabel": "低价竞争与精准打击",
+      "type": "theme",
+      "route": "themes/price-war-and-precision-competition",
+      "summary": "卷低价和做精准的高价值打击，是两种竞争逻辑，后果差得很远。",
       "status": null,
       "degree": 7
     },
@@ -3212,6 +3245,17 @@
       "type": "model",
       "route": "models/distributed-warfare-system",
       "summary": "分布式战争系统解释无人装备、分散生产、前线反馈和外部供给如何组合成长期战争优势。",
+      "status": null,
+      "degree": 7
+    },
+    {
+      "id": "concept:premium-narrative",
+      "key": "premium-narrative",
+      "label": "高价叙事",
+      "fullLabel": "高价叙事",
+      "type": "concept",
+      "route": "concepts/premium-narrative",
+      "summary": "企业用定位、符号、方法论和品牌故事，给高出成本的价格配一套说法。",
       "status": null,
       "degree": 7
     },
@@ -3333,17 +3377,6 @@
       "type": "theme",
       "route": "themes/new-media-political-mobilization",
       "summary": "政治人物和政治情绪不再靠旧媒体传递，新媒体可以直接组织认同、站队和愤怒。",
-      "status": null,
-      "degree": 7
-    },
-    {
-      "id": "theme:ev-design-and-technology-shortcuts",
-      "key": "ev-design-and-technology-shortcuts",
-      "label": "新能源设计抄近路与技术捷径",
-      "fullLabel": "新能源设计抄近路与技术捷径",
-      "type": "theme",
-      "route": "themes/ev-design-and-technology-shortcuts",
-      "summary": "车企和科技公司在设计、技术和售后上抄近路，省下的功夫后来变成安全事故、低良率和拒保。",
       "status": null,
       "degree": 7
     },
@@ -3711,17 +3744,6 @@
       "degree": 6
     },
     {
-      "id": "theme:price-war-and-precision-competition",
-      "key": "price-war-and-precision-competition",
-      "label": "低价竞争与精准打击",
-      "fullLabel": "低价竞争与精准打击",
-      "type": "theme",
-      "route": "themes/price-war-and-precision-competition",
-      "summary": "卷低价和做精准的高价值打击，是两种竞争逻辑，后果差得很远。",
-      "status": null,
-      "degree": 6
-    },
-    {
       "id": "concept:truth-indifferent-rhetoric",
       "key": "truth-indifferent-rhetoric",
       "label": "对真相冷漠的话术",
@@ -3729,17 +3751,6 @@
       "type": "concept",
       "route": "concepts/truth-indifferent-rhetoric",
       "summary": "说话的人不在乎真假，只在乎能不能打动人、站好队、带起情绪。",
-      "status": null,
-      "degree": 6
-    },
-    {
-      "id": "concept:premium-narrative",
-      "key": "premium-narrative",
-      "label": "高价叙事",
-      "fullLabel": "高价叙事",
-      "type": "concept",
-      "route": "concepts/premium-narrative",
-      "summary": "企业用定位、符号、方法论和品牌故事，给高出成本的价格配一套说法。",
       "status": null,
       "degree": 6
     },
@@ -4356,6 +4367,17 @@
       "type": "concept",
       "route": "concepts/weapons-of-the-weak",
       "summary": "日常、隐蔽、匿名、非组织化的微观抵抗，比公开对抗更难被传统治理手段处理。",
+      "status": null,
+      "degree": 5
+    },
+    {
+      "id": "concept:homogeneous-competition",
+      "key": "homogeneous-competition",
+      "label": "同质竞争",
+      "fullLabel": "同质竞争",
+      "type": "concept",
+      "route": "concepts/homogeneous-competition",
+      "summary": "几家方向重叠的主体挤在同一块地方、同一个市场，抢同一批客户和资源。拼到最后拼的是价格和谁背后有人撑腰，质量好的一方不一定赢。",
       "status": null,
       "degree": 5
     },
@@ -5042,6 +5064,17 @@
       "degree": 4
     },
     {
+      "id": "person:elon-musk",
+      "key": "elon-musk",
+      "label": "马斯克",
+      "fullLabel": "马斯克",
+      "type": "person",
+      "route": "people/elon-musk",
+      "summary": "马斯克是特斯拉和 SpaceX 的首席执行官兼最大股东。EP175 借他在 X 上称李光耀天才，引出第一性原理。EP113 把他的 SpaceX 当成美国航天双轮里商业的那一轮。",
+      "status": null,
+      "degree": 4
+    },
+    {
       "id": "model:aspiration-compounding",
       "key": "aspiration-compounding",
       "label": "梦想复利模型",
@@ -5126,17 +5159,6 @@
       "type": "concept",
       "route": "concepts/data-fetishism",
       "summary": "把数据、表格、术语和科学的样子当成真理本身，有数字、有来源就信。",
-      "status": null,
-      "degree": 4
-    },
-    {
-      "id": "concept:homogeneous-competition",
-      "key": "homogeneous-competition",
-      "label": "同质竞争",
-      "fullLabel": "同质竞争",
-      "type": "concept",
-      "route": "concepts/homogeneous-competition",
-      "summary": "几家方向重叠的主体挤在同一块地方、同一个市场，抢同一批客户和资源。拼到最后拼的是价格和谁背后有人撑腰，质量好的一方不一定赢。",
       "status": null,
       "degree": 4
     },
@@ -5427,6 +5449,17 @@
       "degree": 4
     },
     {
+      "id": "theme:safety-vs-comfort",
+      "key": "safety-vs-comfort",
+      "label": "安全性与舒适性叙事转移",
+      "fullLabel": "安全性与舒适性叙事转移",
+      "type": "theme",
+      "route": "themes/safety-vs-comfort",
+      "summary": "车企主打舒适和家庭场景，买车的人对安全的注意就被引开了。",
+      "status": null,
+      "degree": 3
+    },
+    {
       "id": "concept:safety-attention-shift",
       "key": "safety-attention-shift",
       "label": "安全注意力转移",
@@ -5687,17 +5720,6 @@
       "type": "concept",
       "route": "concepts/clean-label-myth",
       "summary": "把某个高端品牌想象成完全无添加、绝对干净的净土，是消费者自己造出来的误区。再好的品牌，商品也两极分化。",
-      "status": null,
-      "degree": 3
-    },
-    {
-      "id": "person:elon-musk",
-      "key": "elon-musk",
-      "label": "马斯克",
-      "fullLabel": "马斯克",
-      "type": "person",
-      "route": "people/elon-musk",
-      "summary": "马斯克是特斯拉和 SpaceX 的首席执行官兼最大股东。EP175 借他在 X 上称李光耀天才，引出第一性原理。EP113 把他的 SpaceX 当成美国航天双轮里商业的那一轮。",
       "status": null,
       "degree": 3
     },
@@ -6173,17 +6195,6 @@
       "summary": "平台把用户的试用和生成变成算力消耗，再把消耗量讲成增长和估值。",
       "status": null,
       "degree": 3
-    },
-    {
-      "id": "theme:safety-vs-comfort",
-      "key": "safety-vs-comfort",
-      "label": "安全性与舒适性叙事转移",
-      "fullLabel": "安全性与舒适性叙事转移",
-      "type": "theme",
-      "route": "themes/safety-vs-comfort",
-      "summary": "车企主打舒适和家庭场景，买车的人对安全的注意就被引开了。",
-      "status": null,
-      "degree": 2
     },
     {
       "id": "concept:haven-inversion",
@@ -7392,6 +7403,17 @@
       "type": "concept",
       "route": "concepts/consensus-redline",
       "summary": "一个地方真正管住行为的有两套规矩，写在纸上的法条，和写在当地人心里的共识，后者没有条文却照样有惩罚。",
+      "status": null,
+      "degree": 1
+    },
+    {
+      "id": "concept:shared-tech-tree",
+      "key": "shared-tech-tree",
+      "label": "共享科技树",
+      "fullLabel": "共享科技树",
+      "type": "concept",
+      "route": "concepts/shared-tech-tree",
+      "summary": "几家看着做不同生意的公司，底层共用同一套技术，各自赚钱又互相输送成果，一处突破马上带动其他几处。",
       "status": null,
       "degree": 1
     },
@@ -16792,6 +16814,46 @@
     {
       "source": "episode:EP228",
       "target": "theme:great-power-competition-and-strategic-time",
+      "kind": "episode-theme"
+    },
+    {
+      "source": "episode:EP229",
+      "target": "concept:homogeneous-competition",
+      "kind": "episode-concept"
+    },
+    {
+      "source": "episode:EP229",
+      "target": "concept:premium-narrative",
+      "kind": "episode-concept"
+    },
+    {
+      "source": "episode:EP229",
+      "target": "concept:shared-tech-tree",
+      "kind": "episode-concept"
+    },
+    {
+      "source": "episode:EP229",
+      "target": "model:path-dependence",
+      "kind": "episode-model"
+    },
+    {
+      "source": "episode:EP229",
+      "target": "person:elon-musk",
+      "kind": "episode-person"
+    },
+    {
+      "source": "episode:EP229",
+      "target": "theme:ev-design-and-technology-shortcuts",
+      "kind": "episode-theme"
+    },
+    {
+      "source": "episode:EP229",
+      "target": "theme:safety-vs-comfort",
+      "kind": "episode-theme"
+    },
+    {
+      "source": "episode:EP229",
+      "target": "theme:price-war-and-precision-competition",
       "kind": "episode-theme"
     },
     {

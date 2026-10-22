@@ -1,0 +1,81 @@
+{
+  "id": "tesla-roadster",
+  "name": "特斯拉Roadster",
+  "kind": "product",
+  "asOf": "2026-10-22",
+  "sources": [
+    {
+      "title": "Euronews: Elon Musk unveils new Tesla Roadster that can fly (2026-10-16)",
+      "url": "https://euronews.com/2026/10/16/well-it-worked-elon-musk-unveils-new-tesla-roadster-that-can-fly",
+      "note": "核发布时间和地点：10 月 15 日在得州一处 SpaceX 设施，车冲上陡坡倒挂后翻转腾空，靠高压气罐和喷嘴落地。"
+    },
+    {
+      "title": "Space.com: SpaceX thrusters just made a Tesla Roadster 'fly'",
+      "url": "https://www.space.com/technology/spacex-thrusters-just-made-a-tesla-roadster-fly-and-elon-musks-car-is-still-out-there-in-space",
+      "note": "核演示场地为 SpaceX 麦格雷戈试验场，喷嘴来自 SpaceX，以及会飞的说法源自马斯克 2018 年的玩笑。"
+    },
+    {
+      "title": "ABC: Elon Musk unveils the Roadster, a new Tesla he says is a flying car",
+      "url": "https://abc30.com/story/can-new-tesla-roadster-fly-elon-musk-unveils-what-he-says-is-flying-car/19944143/",
+      "note": "核喷嘴数量与性能说法，商业化时间未给。"
+    }
+  ],
+  "aliases": [
+    "Roadster",
+    "Roadster 2",
+    "新Roadster",
+    "特斯拉飞行车",
+    "Roadster二代"
+  ],
+  "relatedKeywords": [
+    "tesla",
+    "spacex",
+    "elon-musk",
+    "delorean"
+  ],
+  "summary": "特斯拉Roadster 是特斯拉的双门跑车，新一代 2026 年 10 月发布，装了来自 SpaceX 的喷气组件。EP229 拿它跟国内车圈的比拼对照，说两边已经是两个时代。",
+  "description": "Roadster 是特斯拉的跑车车型，初代 2008 年上市，是特斯拉第一款量产车。第二代 2017 年就公布过，交付一再推迟。2026 年 10 月 15 日，特斯拉在得州 SpaceX 的试验场发布新一代 Roadster，演示车顺着坡道爬到竖直、倒挂，再翻转腾空，靠压缩气体喷嘴控制姿态落地。马斯克把它叫作会飞的车，按报道演示车是遥控的，能不能合法上路、什么时候量产都没有定。节目把它当成两个时代的分水岭来看。",
+  "objectRole": "它把火箭公司的喷气控制装进了一辆普通大小的跑车，车不再只是在地面上走的东西。节目看重的是背后几家公司技术互相借用的方式，单一车企很难做到这种软硬件整合。",
+  "programAssociations": [
+    {
+      "title": "两个世界的分水岭",
+      "episodes": [
+        "LIVE051",
+        "EP229"
+      ],
+      "note": "LIVE051 从新 Roadster 竖着爬坡、翻着跟头飞过五辆旧车讲起，说 iPhone 和 OpenAI 都没给过这种割裂感。EP229 把它跟《回到未来》里的德罗宁放在一起，说国内车圈还在武侠世界里比参数，这辆车穿越的是维度，用的是马斯克几家公司共用的那套技术。"
+    }
+  ],
+  "consequenceNotes": [
+    "车要是真能短暂离开地面，交通法规、驾照和保险都得重新回答一辆车是什么。",
+    "喷气控制放进量产车，比的就不只是加速和续航，还有谁手里有火箭公司那样的技术来源。"
+  ],
+  "signalNotes": [
+    "国内车企还在发布会上念零百加速和续航的时候，节目会拿这场只演示、不念参数的发布会来对照，看谁在卖结果。",
+    "看到有人说它不能上牌、只能飞几秒，节目读的是拿旧规则评判新物种的思路。"
+  ],
+  "extensionNotes": [
+    {
+      "title": "德罗宁",
+      "note": "鸥翼门和锐利的造型让人想起《回到未来》里的德罗宁 DMC-12，两辆车都超出了自己所在的时代。"
+    },
+    {
+      "title": "SpaceX",
+      "note": "喷气组件和发布场地都来自 SpaceX，这辆车是两家公司技术交叉最直观的样子。"
+    },
+    {
+      "title": "尊界踏板断裂",
+      "note": "发布会前后，国内正吵着高端车刹车踏板支架断裂，EP229 把两件事放在一起讲割裂感。"
+    }
+  ],
+  "episodes": [
+    {
+      "id": "EP229",
+      "note": "EP229 的起点，新 Roadster 带喷气组件腾空翻转落地，节目说这是两个世界的代差。"
+    },
+    {
+      "id": "LIVE051",
+      "note": "直播先讲过这场发布会，车翻着跟头飞过五辆旧车，装下整套喷气控制还有余量。"
+    }
+  ]
+}
