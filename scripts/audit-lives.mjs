@@ -42,8 +42,14 @@ const RULES = {
   // summary 的区间在 sop/05a，直播沿用节目的规矩。以前这里只检查字段非空，
   // 于是 LIVE029 写了 543 字（超上限一倍多）还是六道全过
   summaryMin: 200,
-  summaryMax: 250
+  summaryMax: 250,
+  // 标题敏感词从 LIVE053 起强制（用户 2026-10-27 定），之前的标题 B 站已经用了，改不回来
+  titleRuleFrom: 53
 };
+
+// 标题会被 B 站原样拿去当投稿名，见 sop/08「标题不能敏感」。清单拦不住换了说法的，
+// 漏掉的说法查到一个补一个
+const TITLE_SENSITIVE = /疯|傻|蠢|渣|骗子|无赖|独裁|暴政|被扣|被抓|被捕|通缉|镇压|中共|共产党|习近平|政权|台独|港独|藏独|疆独/;
 
 // 贴标签式收尾：每段末尾挂一个概念标签升华一下，是最典型的 AI 文风。
 // 一期最多容忍 3 处，其余要改写成有主语有实义动词的句子。
@@ -116,6 +122,12 @@ for (const live of lives.sort((a, b) => a.id.localeCompare(b.id))) {
     if (!live[field]) fail(id, `缺字段 ${field}`);
   }
   if (!(live.boundaries || []).length) fail(id, '缺整理边界');
+
+  const liveNo = Number(id.replace(/\D/g, ''));
+  const sensitive = (live.mainThread || '').match(TITLE_SENSITIVE);
+  if (sensitive && liveNo >= RULES.titleRuleFrom) {
+    fail(id, `标题有敏感词「${sensitive[0]}」，B 站会拿它当投稿名，见 sop/08「标题不能敏感」`);
+  }
 
   // 简介字数。字段非空不等于合规，sop/05a 的区间对直播同样有效
   const summaryLen = (live.summary || '').replace(/\s/g, '').length;
