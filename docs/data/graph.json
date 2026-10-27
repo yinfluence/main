@@ -2,11 +2,11 @@
   "meta": {
     "title": "颖响力知识图谱",
     "subtitle": "节目、概念、模型、人物、主题之间的可视化连接网络",
-    "nodeCount": 779,
-    "linkCount": 2917,
+    "nodeCount": 780,
+    "linkCount": 2929,
     "typeCounts": {
       "model": 84,
-      "live": 52,
+      "live": 53,
       "concept": 255,
       "theme": 92,
       "episode": 231,
@@ -202,6 +202,17 @@
       "degree": 26
     },
     {
+      "id": "theme:great-power-competition-and-strategic-time",
+      "key": "great-power-competition-and-strategic-time",
+      "label": "大国竞争与战略时间",
+      "fullLabel": "大国竞争与战略时间",
+      "type": "theme",
+      "route": "themes/great-power-competition-and-strategic-time",
+      "summary": "大国之间拼武器，也拼谁更能熬、谁先把成本降下来、谁抓住了时间窗口。",
+      "status": null,
+      "degree": 26
+    },
+    {
       "id": "theme:rule-of-law-boundaries-and-social-trust",
       "key": "rule-of-law-boundaries-and-social-trust",
       "label": "法治边界与社会信任",
@@ -266,17 +277,6 @@
       "summary": "一种猜测是，投资机构能用的手段只剩一个，把内部会议稿放出来敲打一下。",
       "status": "curated",
       "degree": 26
-    },
-    {
-      "id": "theme:great-power-competition-and-strategic-time",
-      "key": "great-power-competition-and-strategic-time",
-      "label": "大国竞争与战略时间",
-      "fullLabel": "大国竞争与战略时间",
-      "type": "theme",
-      "route": "themes/great-power-competition-and-strategic-time",
-      "summary": "大国之间拼武器，也拼谁更能熬、谁先把成本降下来、谁抓住了时间窗口。",
-      "status": null,
-      "degree": 25
     },
     {
       "id": "model:narrative-instrumentalization",
@@ -642,6 +642,17 @@
       "degree": 21
     },
     {
+      "id": "theme:sanctions-and-power-containment",
+      "key": "sanctions-and-power-containment",
+      "label": "制裁、遏制与集团竞争",
+      "fullLabel": "制裁、遏制与集团竞争",
+      "type": "theme",
+      "route": "themes/sanctions-and-power-containment",
+      "summary": "讨论制裁、门罗主义、海峡与联盟如何共同服务于压制对手集团的全球布局。",
+      "status": null,
+      "degree": 21
+    },
+    {
       "id": "episode:EP131",
       "key": "EP131",
       "label": "EP131",
@@ -651,17 +662,6 @@
       "summary": "《焦点访谈》报道哪吒汽车破产重整，266 亿债权对着不到 1500 万现金。哪吒的窟窿不在创始人和风投，核心推手是地方国资。桐乡给的是常规招商扶持，宜春让财政局下属企业当大股东、代建厂房，南宁换成产投集团出钱，滑进了隐形债务。国资挑电车是图不担责、能记业绩，越想安全越不安全。价格战、一两年一换代的研发和说不清的营销费用一起烧钱，大家只能赌上市。IPO 一停，销量崩到一个月 110 辆。剩下几十家电车企业能活下来的寥寥无几，哪吒只是先倒下的一个。",
       "status": "curated",
       "degree": 21
-    },
-    {
-      "id": "theme:sanctions-and-power-containment",
-      "key": "sanctions-and-power-containment",
-      "label": "制裁、遏制与集团竞争",
-      "fullLabel": "制裁、遏制与集团竞争",
-      "type": "theme",
-      "route": "themes/sanctions-and-power-containment",
-      "summary": "讨论制裁、门罗主义、海峡与联盟如何共同服务于压制对手集团的全球布局。",
-      "status": null,
-      "degree": 20
     },
     {
       "id": "episode:EP138",
@@ -785,6 +785,17 @@
       "degree": 19
     },
     {
+      "id": "episode:EP168",
+      "key": "EP168",
+      "label": "EP168",
+      "fullLabel": "EP168 · 美伊协议谁赢了？油价为何没涨到300美元？",
+      "type": "episode",
+      "route": "episodes/EP168",
+      "summary": "美伊协议签下来，主流叙事是美国出了问题、川普急着收场、伊朗大获成功。这份协议不是认输，是委内瑞拉模式的 2.0 版。美国要的是打掉最高领导人，换一个能谈的，脏活交给以色列。没换到合适的，就先签协议，做时间的朋友。\n\n封了霍尔木兹，油价也只在 100 美元上下，需求也许本来就被高估，美国还可能趁高价放自己的库存，等委内瑞拉的油回补。真正被盯住的是灰色贸易，逼伊朗回SWIFT和美元体系才是开战动机。中期选举对第二任的川普没那么要紧，更在意的是万斯。",
+      "status": "curated",
+      "degree": 19
+    },
+    {
       "id": "episode:EP180",
       "key": "EP180",
       "label": "EP180",
@@ -892,17 +903,6 @@
       "route": "models/value-capture",
       "summary": "一条商业链条上，创造了价值和留下了价值是两回事，要看钱最后落在谁手里。",
       "status": null,
-      "degree": 18
-    },
-    {
-      "id": "episode:EP168",
-      "key": "EP168",
-      "label": "EP168",
-      "fullLabel": "EP168 · 美伊协议谁赢了？油价为何没涨到300美元？",
-      "type": "episode",
-      "route": "episodes/EP168",
-      "summary": "美伊协议签下来，主流叙事是美国出了问题、川普急着收场、伊朗大获成功。这份协议不是认输，是委内瑞拉模式的 2.0 版。美国要的是打掉最高领导人，换一个能谈的，脏活交给以色列。没换到合适的，就先签协议，做时间的朋友。\n\n封了霍尔木兹，油价也只在 100 美元上下，需求也许本来就被高估，美国还可能趁高价放自己的库存，等委内瑞拉的油回补。真正被盯住的是灰色贸易，逼伊朗回SWIFT和美元体系才是开战动机。中期选举对第二任的川普没那么要紧，更在意的是万斯。",
-      "status": "curated",
       "degree": 18
     },
     {
@@ -1192,6 +1192,17 @@
       "degree": 14
     },
     {
+      "id": "model:wall-and-gray-trade-crackdown",
+      "key": "wall-and-gray-trade-crackdown",
+      "label": "建墙与打灰模型",
+      "fullLabel": "建墙与打灰模型",
+      "type": "model",
+      "route": "models/wall-and-gray-trade-crackdown",
+      "summary": "川普这一届对外有两条主线：建墙分清敌我，打击灰色贸易，把交易逼回美元。",
+      "status": null,
+      "degree": 14
+    },
+    {
       "id": "model:principal-agent",
       "key": "principal-agent",
       "label": "委托代理问题",
@@ -1333,17 +1344,6 @@
       "summary": "做AI漫剧的账号成批停更，行业里的说法是内容同质、观众看腻、人太多，这几条都只说到表面。真正压下来的是七层叠在一起的压力。五个平台同时下场抢同一批制作者，模型生成一秒的价格砍到开源免费，导演十几年的镜头经验被工具打包成一键功能。万次播放的分账从上百块掉到五块，连卖课的都割不到新人了。平台拿补贴换数据、拿数据换估值，最上面是持续收紧的合规，逼着行业极快地换玩法。被挤掉的是中间那批跟随者，能留下的是造工具的人和真会用工具的人，个人电影时代要靠他们来开。",
       "status": "curated",
       "degree": 14
-    },
-    {
-      "id": "model:wall-and-gray-trade-crackdown",
-      "key": "wall-and-gray-trade-crackdown",
-      "label": "建墙与打灰模型",
-      "fullLabel": "建墙与打灰模型",
-      "type": "model",
-      "route": "models/wall-and-gray-trade-crackdown",
-      "summary": "川普这一届对外有两条主线：建墙分清敌我，打击灰色贸易，把交易逼回美元。",
-      "status": null,
-      "degree": 13
     },
     {
       "id": "theme:ev-financialization-and-false-sales",
@@ -1786,6 +1786,17 @@
       "degree": 12
     },
     {
+      "id": "live:LIVE053",
+      "key": "LIVE053",
+      "label": "LIVE053",
+      "fullLabel": "LIVE053 · 川普根本不在乎中期选举！40次中期选举执政党输了37次，丢了国会只会更疯？",
+      "type": "live",
+      "route": "lives/LIVE053",
+      "summary": "两年、六年、四年三种任期叠在一起，总统任期正中间就多出一场大选。",
+      "status": "published",
+      "degree": 12
+    },
+    {
       "id": "theme:east-asia-security-realignment",
       "key": "east-asia-security-realignment",
       "label": "东亚安全重组与日本转向",
@@ -1958,6 +1969,17 @@
       "type": "episode",
       "route": "episodes/EP224",
       "summary": "9 月 25 日一场华文论坛的炉边对话上，新加坡国防部长陈振声说，小国别天天争论选边站还是靠边站，先得自己站得起来。站不起来，没人逼你选，也没人在乎你站哪边。新加坡只有几百平方公里，没有纵深，没有资源，淡水都靠邻国供应。它用港口、航空和信息网络接上全世界，把世界当成自己的腹地。马六甲坚持不收费，跟伊朗封锁霍尔木兹走的是两条路。门开得大，对影子舰队和灰色贸易反而盯得更紧。别人离不开的连接才是小国的分量，这份分量要一直更新才保得住。",
+      "status": "curated",
+      "degree": 11
+    },
+    {
+      "id": "episode:EP228",
+      "key": "EP228",
+      "label": "EP228",
+      "fullLabel": "EP228 · 美国不缺油为什么买俄罗斯石油？三层逻辑，全是川普的政治算计",
+      "type": "episode",
+      "route": "episodes/EP228",
+      "summary": "2026 年 10 月 9 日，川普宣布要从俄罗斯进口柴油，美国财政部当天发了许可。美国自己产油，汽油柴油都是净出口，这笔买卖按贸易说不通，要按政治账来读。最表层是中期选举，秋收季的农业州盯着柴油价格，放一句话就能让期货里的多头收手。往里一层是逼欧盟别再一边制裁一边买俄罗斯能源。最深一层是借这个信号，让伊朗和中国这些俄油的伙伴心里打鼓，拆松能源阵营。几乎不花一分钱就撬动了三层利益，代价是把乌克兰当成了交易筹码。",
       "status": "curated",
       "degree": 11
     },
@@ -2149,17 +2171,6 @@
       "degree": 10
     },
     {
-      "id": "episode:EP228",
-      "key": "EP228",
-      "label": "EP228",
-      "fullLabel": "EP228 · 美国不缺油为什么买俄罗斯石油？三层逻辑，全是川普的政治算计",
-      "type": "episode",
-      "route": "episodes/EP228",
-      "summary": "2026 年 10 月 9 日，川普宣布要从俄罗斯进口柴油，美国财政部当天发了许可。美国自己产油，汽油柴油都是净出口，这笔买卖按贸易说不通，要按政治账来读。最表层是中期选举，秋收季的农业州盯着柴油价格，放一句话就能让期货里的多头收手。往里一层是逼欧盟别再一边制裁一边买俄罗斯能源。最深一层是借这个信号，让伊朗和中国这些俄油的伙伴心里打鼓，拆松能源阵营。几乎不花一分钱就撬动了三层利益，代价是把乌克兰当成了交易筹码。",
-      "status": "curated",
-      "degree": 10
-    },
-    {
       "id": "concept:standard-labor-replacement",
       "key": "standard-labor-replacement",
       "label": "标准劳动力替代",
@@ -2200,6 +2211,17 @@
       "type": "concept",
       "route": "concepts/phantom-growth",
       "summary": "系统通过报表、交易、融资和场面把增长做出来，但真实产业和真实利润并没有同步长出来。",
+      "status": null,
+      "degree": 9
+    },
+    {
+      "id": "concept:symbolic-matricide",
+      "key": "symbolic-matricide",
+      "label": "精神弑母",
+      "fullLabel": "精神弑母",
+      "type": "concept",
+      "route": "concepts/symbolic-matricide",
+      "summary": "精神弑母是成长三关的头一关。把对母亲和亲情的依赖吃进去看清，再吐出来，还它理解和尊重。光是切断或对抗都不算过关。",
       "status": null,
       "degree": 9
     },
@@ -2688,13 +2710,13 @@
       "degree": 8
     },
     {
-      "id": "concept:symbolic-matricide",
-      "key": "symbolic-matricide",
-      "label": "精神弑母",
-      "fullLabel": "精神弑母",
-      "type": "concept",
-      "route": "concepts/symbolic-matricide",
-      "summary": "精神弑母是成长三关的头一关。把对母亲和亲情的依赖吃进去看清，再吐出来，还它理解和尊重。光是切断或对抗都不算过关。",
+      "id": "theme:exam-centered-education-and-person-formation",
+      "key": "exam-centered-education-and-person-formation",
+      "label": "考试中心教育与人成形",
+      "fullLabel": "考试中心教育与人成形",
+      "type": "theme",
+      "route": "themes/exam-centered-education-and-person-formation",
+      "summary": "学校和家庭围着考试转，把孩子塑造成服从分数和权威的人。",
       "status": null,
       "degree": 8
     },
@@ -2739,6 +2761,17 @@
       "type": "theme",
       "route": "themes/small-state-balancing",
       "summary": "新加坡这类小国怎样在大国竞争里守住安全、合法性和现实利益。",
+      "status": null,
+      "degree": 8
+    },
+    {
+      "id": "theme:new-media-political-mobilization",
+      "key": "new-media-political-mobilization",
+      "label": "新媒体政治动员",
+      "fullLabel": "新媒体政治动员",
+      "type": "theme",
+      "route": "themes/new-media-political-mobilization",
+      "summary": "政治人物和政治情绪不再靠旧媒体传递，新媒体可以直接组织认同、站队和愤怒。",
       "status": null,
       "degree": 8
     },
@@ -3348,17 +3381,6 @@
       "degree": 7
     },
     {
-      "id": "theme:exam-centered-education-and-person-formation",
-      "key": "exam-centered-education-and-person-formation",
-      "label": "考试中心教育与人成形",
-      "fullLabel": "考试中心教育与人成形",
-      "type": "theme",
-      "route": "themes/exam-centered-education-and-person-formation",
-      "summary": "学校和家庭围着考试转，把孩子塑造成服从分数和权威的人。",
-      "status": null,
-      "degree": 7
-    },
-    {
       "id": "concept:authority-internalization",
       "key": "authority-internalization",
       "label": "权威内化",
@@ -3403,13 +3425,13 @@
       "degree": 7
     },
     {
-      "id": "theme:new-media-political-mobilization",
-      "key": "new-media-political-mobilization",
-      "label": "新媒体政治动员",
-      "fullLabel": "新媒体政治动员",
-      "type": "theme",
-      "route": "themes/new-media-political-mobilization",
-      "summary": "政治人物和政治情绪不再靠旧媒体传递，新媒体可以直接组织认同、站队和愤怒。",
+      "id": "concept:new-media-politician",
+      "key": "new-media-politician",
+      "label": "新媒体政治人物",
+      "fullLabel": "新媒体政治人物",
+      "type": "concept",
+      "route": "concepts/new-media-politician",
+      "summary": "靠新媒体直接连接受众、绕过传统组织和选举路径崛起的新型权力人物。",
       "status": null,
       "degree": 7
     },
@@ -3799,6 +3821,17 @@
       "degree": 6
     },
     {
+      "id": "theme:family-succession-and-governance",
+      "key": "family-succession-and-governance",
+      "label": "家族企业继承与治理断裂",
+      "fullLabel": "家族企业继承与治理断裂",
+      "type": "theme",
+      "route": "themes/family-succession-and-governance",
+      "summary": "创始人家族、接班方式和旧利益安排，把企业从经营问题推成治理问题。",
+      "status": null,
+      "degree": 6
+    },
+    {
       "id": "theme:trust-and-asset-preservation",
       "key": "trust-and-asset-preservation",
       "label": "家族信托与资产保全",
@@ -3876,6 +3909,17 @@
       "degree": 6
     },
     {
+      "id": "theme:authoritarian-succession-and-state-fragility",
+      "key": "authoritarian-succession-and-state-fragility",
+      "label": "威权继承与国家裂缝",
+      "fullLabel": "威权继承与国家裂缝",
+      "type": "theme",
+      "route": "themes/authoritarian-succession-and-state-fragility",
+      "summary": "强人或神权体制在换人的时候，平时压住的合法性、宗教权威和族群矛盾会一起翻出来。",
+      "status": null,
+      "degree": 6
+    },
+    {
       "id": "person:vivian-balakrishnan",
       "key": "vivian-balakrishnan",
       "label": "维文",
@@ -3905,17 +3949,6 @@
       "type": "theme",
       "route": "themes/hidden-costs",
       "summary": "消费者付的价格里，有多少在承担企业和产业链背后看不见的成本。",
-      "status": null,
-      "degree": 6
-    },
-    {
-      "id": "concept:new-media-politician",
-      "key": "new-media-politician",
-      "label": "新媒体政治人物",
-      "fullLabel": "新媒体政治人物",
-      "type": "concept",
-      "route": "concepts/new-media-politician",
-      "summary": "靠新媒体直接连接受众、绕过传统组织和选举路径崛起的新型权力人物。",
       "status": null,
       "degree": 6
     },
@@ -4283,6 +4316,17 @@
       "degree": 5
     },
     {
+      "id": "concept:manufactured-antagonism",
+      "key": "manufactured-antagonism",
+      "label": "对立制造",
+      "fullLabel": "对立制造",
+      "type": "concept",
+      "route": "concepts/manufactured-antagonism",
+      "summary": "热度不够的时候，把人分成对立的两拨比做出好东西便宜得多，架子一搭，两边自己就吵起来，事件也就有了。",
+      "status": null,
+      "degree": 5
+    },
+    {
       "id": "theme:charity-and-moral-capital",
       "key": "charity-and-moral-capital",
       "label": "公益、善意与商业失灵",
@@ -4345,17 +4389,6 @@
       "type": "model",
       "route": "models/succession-governance",
       "summary": "企业交班要提前把旧账、旧利益和旧工具处理成规则，光交头衔交不稳。",
-      "status": null,
-      "degree": 5
-    },
-    {
-      "id": "theme:family-succession-and-governance",
-      "key": "family-succession-and-governance",
-      "label": "家族企业继承与治理断裂",
-      "fullLabel": "家族企业继承与治理断裂",
-      "type": "theme",
-      "route": "themes/family-succession-and-governance",
-      "summary": "创始人家族、接班方式和旧利益安排，把企业从经营问题推成治理问题。",
       "status": null,
       "degree": 5
     },
@@ -4477,17 +4510,6 @@
       "type": "concept",
       "route": "concepts/crisis-power-reallocation",
       "summary": "危机会改变谁在前台、谁承担责任、谁保留资源，从而触发权力位置的重新排序。",
-      "status": null,
-      "degree": 5
-    },
-    {
-      "id": "theme:authoritarian-succession-and-state-fragility",
-      "key": "authoritarian-succession-and-state-fragility",
-      "label": "威权继承与国家裂缝",
-      "fullLabel": "威权继承与国家裂缝",
-      "type": "theme",
-      "route": "themes/authoritarian-succession-and-state-fragility",
-      "summary": "强人或神权体制在换人的时候，平时压住的合法性、宗教权威和族群矛盾会一起翻出来。",
       "status": null,
       "degree": 5
     },
@@ -4917,17 +4939,6 @@
       "type": "concept",
       "route": "concepts/moral-interpretive-authority",
       "summary": "一个群体自认有资格替他人和外部事物定义意义、判定对错，把别人收编进自己的叙事里。",
-      "status": null,
-      "degree": 4
-    },
-    {
-      "id": "concept:manufactured-antagonism",
-      "key": "manufactured-antagonism",
-      "label": "对立制造",
-      "fullLabel": "对立制造",
-      "type": "concept",
-      "route": "concepts/manufactured-antagonism",
-      "summary": "热度不够的时候，把人分成对立的两拨比做出好东西便宜得多，架子一搭，两边自己就吵起来，事件也就有了。",
       "status": null,
       "degree": 4
     },
@@ -23148,6 +23159,66 @@
     {
       "source": "live:LIVE052",
       "target": "theme:narrative-speculation-and-retail-traps",
+      "kind": "live-theme"
+    },
+    {
+      "source": "live:LIVE053",
+      "target": "episode:EP168",
+      "kind": "live-episode"
+    },
+    {
+      "source": "live:LIVE053",
+      "target": "episode:EP228",
+      "kind": "live-episode"
+    },
+    {
+      "source": "live:LIVE053",
+      "target": "concept:new-media-politician",
+      "kind": "live-concept"
+    },
+    {
+      "source": "live:LIVE053",
+      "target": "concept:symbolic-matricide",
+      "kind": "live-concept"
+    },
+    {
+      "source": "live:LIVE053",
+      "target": "concept:manufactured-antagonism",
+      "kind": "live-concept"
+    },
+    {
+      "source": "live:LIVE053",
+      "target": "model:wall-and-gray-trade-crackdown",
+      "kind": "live-model"
+    },
+    {
+      "source": "live:LIVE053",
+      "target": "theme:new-media-political-mobilization",
+      "kind": "live-theme"
+    },
+    {
+      "source": "live:LIVE053",
+      "target": "theme:sanctions-and-power-containment",
+      "kind": "live-theme"
+    },
+    {
+      "source": "live:LIVE053",
+      "target": "theme:great-power-competition-and-strategic-time",
+      "kind": "live-theme"
+    },
+    {
+      "source": "live:LIVE053",
+      "target": "theme:family-succession-and-governance",
+      "kind": "live-theme"
+    },
+    {
+      "source": "live:LIVE053",
+      "target": "theme:authoritarian-succession-and-state-fragility",
+      "kind": "live-theme"
+    },
+    {
+      "source": "live:LIVE053",
+      "target": "theme:exam-centered-education-and-person-formation",
       "kind": "live-theme"
     },
     {
