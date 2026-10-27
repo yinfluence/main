@@ -28,8 +28,14 @@ export LC_ALL=en_US.UTF-8
 # 2026-10-22：B 站一律直连，不走本机代理。用户人在国内，B 站本来不需要代理；
 # 10-20 起夜里代理 127.0.0.1:1082 时好时坏（报 503），B 站请求跟着失败，连续 20 次扫描出错。
 # macOS 上 Python 只有在环境变量里写了代理时才认 no_proxy，所以代理也显式写出来，YouTube 照旧走它。
-export http_proxy="${http_proxy:-http://127.0.0.1:1082}" https_proxy="${https_proxy:-http://127.0.0.1:1082}"
-export HTTP_PROXY="$http_proxy" HTTPS_PROXY="$https_proxy"
+# 2026-10-27：代理只在 1082 真有程序在听时才写。10-26 起代理没开，这里照样写死 1082，
+# 唤起的 claude 每次都 ECONNREFUSED，连续 93 次整理失败，EP230、EP231 因此没自动上线。
+if nc -z -G 2 127.0.0.1 1082 2>/dev/null; then
+  export http_proxy="${http_proxy:-http://127.0.0.1:1082}" https_proxy="${https_proxy:-http://127.0.0.1:1082}"
+  export HTTP_PROXY="$http_proxy" HTTPS_PROXY="$https_proxy"
+else
+  unset http_proxy https_proxy HTTP_PROXY HTTPS_PROXY all_proxy ALL_PROXY
+fi
 export no_proxy="bilibili.com,.bilibili.com,hdslb.com,.hdslb.com,bilivideo.com,.bilivideo.com,biliapi.net,.biliapi.net,b23.tv,localhost,127.0.0.1"
 export NO_PROXY="$no_proxy"
 
