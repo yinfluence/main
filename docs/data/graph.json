@@ -2,14 +2,14 @@
   "meta": {
     "title": "颖响力知识图谱",
     "subtitle": "节目、概念、模型、人物、主题之间的可视化连接网络",
-    "nodeCount": 776,
-    "linkCount": 2901,
+    "nodeCount": 779,
+    "linkCount": 2917,
     "typeCounts": {
       "model": 84,
       "live": 52,
-      "concept": 254,
+      "concept": 255,
       "theme": 92,
-      "episode": 229,
+      "episode": 231,
       "person": 65
     }
   },
@@ -23,7 +23,7 @@
       "route": "models/risk-transfer-chain",
       "summary": "风险很少当场爆掉，多半先在银行、企业、票据、供应链和普通人之间转手、延后，一层层往下沉。",
       "status": null,
-      "degree": 58
+      "degree": 59
     },
     {
       "id": "live:LIVE002",
@@ -125,6 +125,17 @@
       "degree": 31
     },
     {
+      "id": "theme:singapore-and-small-state-survival",
+      "key": "singapore-and-small-state-survival",
+      "label": "新加坡与小国生存术",
+      "fullLabel": "新加坡与小国生存术",
+      "type": "theme",
+      "route": "themes/singapore-and-small-state-survival",
+      "summary": "讨论新加坡如何把规则、海峡、人才和谨慎外交组合成一套小国长期生存方法。",
+      "status": null,
+      "degree": 30
+    },
+    {
       "id": "live:LIVE033",
       "key": "LIVE033",
       "label": "LIVE033",
@@ -134,17 +145,6 @@
       "summary": "照这场的推演，一百个亿的项目掏二三十亿就能开工，剩下的钱从你买的那份理财里出。",
       "status": "curated",
       "degree": 30
-    },
-    {
-      "id": "theme:singapore-and-small-state-survival",
-      "key": "singapore-and-small-state-survival",
-      "label": "新加坡与小国生存术",
-      "fullLabel": "新加坡与小国生存术",
-      "type": "theme",
-      "route": "themes/singapore-and-small-state-survival",
-      "summary": "讨论新加坡如何把规则、海峡、人才和谨慎外交组合成一套小国长期生存方法。",
-      "status": null,
-      "degree": 29
     },
     {
       "id": "live:LIVE003",
@@ -532,6 +532,17 @@
       "degree": 23
     },
     {
+      "id": "theme:local-fiscal-stress-and-hidden-debt",
+      "key": "local-fiscal-stress-and-hidden-debt",
+      "label": "地方财政与隐性债务",
+      "fullLabel": "地方财政与隐性债务",
+      "type": "theme",
+      "route": "themes/local-fiscal-stress-and-hidden-debt",
+      "summary": "地方财政吃紧后，系统会通过更复杂的融资、资产包装和风险转移来维持运转。",
+      "status": null,
+      "degree": 22
+    },
+    {
       "id": "episode:EP144",
       "key": "EP144",
       "label": "EP144",
@@ -607,17 +618,6 @@
       "summary": "拿旅游签证过去看看能不能留下，九月之后可能就踩在违规那条线上。",
       "status": "curated",
       "degree": 22
-    },
-    {
-      "id": "theme:local-fiscal-stress-and-hidden-debt",
-      "key": "local-fiscal-stress-and-hidden-debt",
-      "label": "地方财政与隐性债务",
-      "fullLabel": "地方财政与隐性债务",
-      "type": "theme",
-      "route": "themes/local-fiscal-stress-and-hidden-debt",
-      "summary": "地方财政吃紧后，系统会通过更复杂的融资、资产包装和风险转移来维持运转。",
-      "status": null,
-      "degree": 21
     },
     {
       "id": "theme:dollar-system-and-gray-trade",
@@ -873,6 +873,17 @@
       "degree": 18
     },
     {
+      "id": "theme:real-estate-deleveraging",
+      "key": "real-estate-deleveraging",
+      "label": "房地产去杠杆与风险出清",
+      "fullLabel": "房地产去杠杆与风险出清",
+      "type": "theme",
+      "route": "themes/real-estate-deleveraging",
+      "summary": "讨论房地产在下行周期里如何通过断供、重组、展期和资产处置逐步暴露风险。",
+      "status": null,
+      "degree": 18
+    },
+    {
       "id": "model:value-capture",
       "key": "value-capture",
       "label": "价值捕获",
@@ -902,17 +913,6 @@
       "type": "model",
       "route": "models/subsidy-capital-flywheel",
       "summary": "补贴资本飞轮解释地方财政、产业基金、企业估值和再融资如何互相放大。",
-      "status": null,
-      "degree": 17
-    },
-    {
-      "id": "theme:real-estate-deleveraging",
-      "key": "real-estate-deleveraging",
-      "label": "房地产去杠杆与风险出清",
-      "fullLabel": "房地产去杠杆与风险出清",
-      "type": "theme",
-      "route": "themes/real-estate-deleveraging",
-      "summary": "讨论房地产在下行周期里如何通过断供、重组、展期和资产处置逐步暴露风险。",
       "status": null,
       "degree": 17
     },
@@ -979,6 +979,17 @@
       "type": "theme",
       "route": "themes/maritime-chokepoints-and-route-order",
       "summary": "讨论海峡、运河和关键航道如何把地理位置变成规则、保险、资本和军事的综合权力。",
+      "status": null,
+      "degree": 16
+    },
+    {
+      "id": "model:identity-stratification",
+      "key": "identity-stratification",
+      "label": "身份型分层",
+      "fullLabel": "身份型分层",
+      "type": "model",
+      "route": "models/identity-stratification",
+      "summary": "身份型分层说明阶层排序从收入和资产，转向编制、合规位置、圈层资源和稳定预期。",
       "status": null,
       "degree": 16
     },
@@ -1067,17 +1078,6 @@
       "type": "theme",
       "route": "themes/southeast-asia-fragmentation-and-bloc-competition",
       "summary": "讨论东南亚如何从缓冲地带变成各方拉扯、重新站队和内部裂变并行发生的高风险区域。",
-      "status": null,
-      "degree": 15
-    },
-    {
-      "id": "model:identity-stratification",
-      "key": "identity-stratification",
-      "label": "身份型分层",
-      "fullLabel": "身份型分层",
-      "type": "model",
-      "route": "models/identity-stratification",
-      "summary": "身份型分层说明阶层排序从收入和资产，转向编制、合规位置、圈层资源和稳定预期。",
       "status": null,
       "degree": 15
     },
@@ -1522,6 +1522,17 @@
       "degree": 12
     },
     {
+      "id": "concept:delayed-price-discovery",
+      "key": "delayed-price-discovery",
+      "label": "价格发现延迟",
+      "fullLabel": "价格发现延迟",
+      "type": "concept",
+      "route": "concepts/delayed-price-discovery",
+      "summary": "真实价格本来应该尽快显现，但被托价、缓冲、票据和关系安排一层层往后拖，市场只剩名义稳定。",
+      "status": null,
+      "degree": 12
+    },
+    {
       "id": "theme:human-value-and-state-credit",
       "key": "human-value-and-state-credit",
       "label": "人的价值与国家信用",
@@ -1797,17 +1808,6 @@
       "degree": 11
     },
     {
-      "id": "concept:delayed-price-discovery",
-      "key": "delayed-price-discovery",
-      "label": "价格发现延迟",
-      "fullLabel": "价格发现延迟",
-      "type": "concept",
-      "route": "concepts/delayed-price-discovery",
-      "summary": "真实价格本来应该尽快显现，但被托价、缓冲、票据和关系安排一层层往后拖，市场只剩名义稳定。",
-      "status": null,
-      "degree": 11
-    },
-    {
       "id": "concept:time-asymmetry",
       "key": "time-asymmetry",
       "label": "时间非对称",
@@ -1826,6 +1826,17 @@
       "type": "concept",
       "route": "concepts/cash-optionality",
       "summary": "现金在高波动时期的核心价值，是保留等待、谈判、退出和重新进入的选择权。",
+      "status": null,
+      "degree": 11
+    },
+    {
+      "id": "theme:ev-safety-and-consumer-testing",
+      "key": "ev-safety-and-consumer-testing",
+      "label": "新能源安全边界与消费者测试",
+      "fullLabel": "新能源安全边界与消费者测试",
+      "type": "theme",
+      "route": "themes/ev-safety-and-consumer-testing",
+      "summary": "讨论新能源车与相关电池系统如何把安全验证不足的代价，转移到真实用户和真实事故里。",
       "status": null,
       "degree": 11
     },
@@ -1980,17 +1991,6 @@
       "type": "model",
       "route": "models/regional-denial-model",
       "summary": "把对手长期压在几个区域里，让它在每一块都占不了上风，各块之间也连不起来，长不成能跨区域联动的集团。",
-      "status": null,
-      "degree": 10
-    },
-    {
-      "id": "theme:ev-safety-and-consumer-testing",
-      "key": "ev-safety-and-consumer-testing",
-      "label": "新能源安全边界与消费者测试",
-      "fullLabel": "新能源安全边界与消费者测试",
-      "type": "theme",
-      "route": "themes/ev-safety-and-consumer-testing",
-      "summary": "讨论新能源车与相关电池系统如何把安全验证不足的代价，转移到真实用户和真实事故里。",
       "status": null,
       "degree": 10
     },
@@ -2215,6 +2215,17 @@
       "degree": 9
     },
     {
+      "id": "theme:brand-symbol-and-value",
+      "key": "brand-symbol-and-value",
+      "label": "品牌符号与价值感知",
+      "fullLabel": "品牌符号与价值感知",
+      "type": "theme",
+      "route": "themes/brand-symbol-and-value",
+      "summary": "品牌符号怎样撑起价格和身份，又在什么时候撑不住。",
+      "status": null,
+      "degree": 9
+    },
+    {
       "id": "theme:time-horizon-and-foresight",
       "key": "time-horizon-and-foresight",
       "label": "时间尺度与资产前瞻",
@@ -2244,6 +2255,28 @@
       "type": "theme",
       "route": "themes/data-cosmetics-and-false-prosperity",
       "summary": "地方、企业和学术圈用账面数字制造景气，真实风险留在黑箱里。",
+      "status": null,
+      "degree": 9
+    },
+    {
+      "id": "model:stability-over-growth-trap",
+      "key": "stability-over-growth-trap",
+      "label": "稳定替代增长陷阱",
+      "fullLabel": "稳定替代增长陷阱",
+      "type": "model",
+      "route": "models/stability-over-growth-trap",
+      "summary": "当系统把稳定当作增长的替代品，短期秩序会被保住，长期造血、流动和创新却会被压低。",
+      "status": null,
+      "degree": 9
+    },
+    {
+      "id": "concept:consumer-testbed",
+      "key": "consumer-testbed",
+      "label": "消费者测试场",
+      "fullLabel": "消费者测试场",
+      "type": "concept",
+      "route": "concepts/consumer-testbed",
+      "summary": "企业把本该在研发和验证阶段承担的安全成本，转移到首批消费者、公共道路和真实事故里去消化。",
       "status": null,
       "degree": 9
     },
@@ -2666,17 +2699,6 @@
       "degree": 8
     },
     {
-      "id": "theme:brand-symbol-and-value",
-      "key": "brand-symbol-and-value",
-      "label": "品牌符号与价值感知",
-      "fullLabel": "品牌符号与价值感知",
-      "type": "theme",
-      "route": "themes/brand-symbol-and-value",
-      "summary": "品牌符号怎样撑起价格和身份，又在什么时候撑不住。",
-      "status": null,
-      "degree": 8
-    },
-    {
       "id": "model:screening-machine",
       "key": "screening-machine",
       "label": "筛选机器模型",
@@ -2699,17 +2721,6 @@
       "degree": 8
     },
     {
-      "id": "model:stability-over-growth-trap",
-      "key": "stability-over-growth-trap",
-      "label": "稳定替代增长陷阱",
-      "fullLabel": "稳定替代增长陷阱",
-      "type": "model",
-      "route": "models/stability-over-growth-trap",
-      "summary": "当系统把稳定当作增长的替代品，短期秩序会被保住，长期造血、流动和创新却会被压低。",
-      "status": null,
-      "degree": 8
-    },
-    {
       "id": "concept:useless-class",
       "key": "useless-class",
       "label": "无用阶级",
@@ -2717,17 +2728,6 @@
       "type": "concept",
       "route": "concepts/useless-class",
       "summary": "AI 和自动化大规模替代劳动之后，够不着顶端的高门槛工作，中低端岗位又被挤掉，从生产者变成多余的人的那一大群人。",
-      "status": null,
-      "degree": 8
-    },
-    {
-      "id": "concept:consumer-testbed",
-      "key": "consumer-testbed",
-      "label": "消费者测试场",
-      "fullLabel": "消费者测试场",
-      "type": "concept",
-      "route": "concepts/consumer-testbed",
-      "summary": "企业把本该在研发和验证阶段承担的安全成本，转移到首批消费者、公共道路和真实事故里去消化。",
       "status": null,
       "degree": 8
     },
@@ -3201,6 +3201,28 @@
       "type": "episode",
       "route": "episodes/EP223",
       "summary": "10 月起首套房贷贴息一个百分点，最长五年，房子要在 120 平米以下、总价 150 万以内，钱九成由中央出。三道门槛把一线城市排除在外，剩下的买家是三四线城市从没买过房、手里攒了二三十万的人。一年一万块左右的补贴，换走的是他们的养老钱、养孩子的钱和应急的钱，还要背上二十年月供，补贴却只管五年。贴息背后有三个目的，按人群精准锁住现金，用成交托住地价和银行的抵押物，再绕开汇率的限制把贷款利率悄悄压低一截。抗风险最弱的人，留住手里的现金比拿这笔补贴要紧。",
+      "status": "curated",
+      "degree": 8
+    },
+    {
+      "id": "episode:EP230",
+      "key": "EP230",
+      "label": "EP230",
+      "fullLabel": "EP230 · 对标新加坡的海南：三大死局卡壳，不上不下的自贸港会烂尾吗？",
+      "type": "episode",
+      "route": "episodes/EP230",
+      "summary": "海南封关以后，贸易额涨五成、企业新增十几万家的说法又在刷屏。免税店一年卖多少钱，说明不了海南起不起得来，要看的是地价、人才、金融三件底层的事，而这三件都卡在中间。地价想降不敢降，财政和早进场的资本先扛不住。人才从外面引不来，自己培养又要十年。资金账户对境外放开、对内地管住，中小企业用起来还不如走香港。政策走了一半停在半路，最后很可能只剩一座面向内地游客的大号免税商场，跟当年遍地开花的开发区没有两样。",
+      "status": "curated",
+      "degree": 8
+    },
+    {
+      "id": "episode:EP231",
+      "key": "EP231",
+      "label": "EP231",
+      "fullLabel": "EP231 · 华删派神剑撞杆起火！139公里时速的剑冢疑点重重，“爱国”门派还是“害国”团伙？",
+      "type": "episode",
+      "route": "episodes/EP231",
+      "summary": "2026 年 10 月 17 日深夜，陕西神木一辆问界撞上路口的交通灯立柱，两三秒火就包住了整辆车，司机没能逃出来。问界的说明是人工驾驶、车速 139.1 公里、起火来自线路短路和油液泄漏，跟电池无关，言下之意全是开车人的错。可监控画面里车一直在刹车减速，撞杆时看着只有三四十公里，铁杆子一点没弯，车却烧到只剩架子。速度是真是假，质量都说不过去。一年前余承东（推测）还在讽刺别家起火，如今轮到自己就怪司机。拿爱国给一家企业撑腰，耗掉的是大家对国产品牌的信任。",
       "status": "curated",
       "degree": 8
     },
@@ -4283,6 +4305,17 @@
       "degree": 5
     },
     {
+      "id": "concept:national-identity-hostage",
+      "key": "national-identity-hostage",
+      "label": "国家身份绑架",
+      "fullLabel": "国家身份绑架",
+      "type": "concept",
+      "route": "concepts/national-identity-hostage",
+      "summary": "把个人的违规、私人冲突或一笔生意抬成国家的荣辱，拿国家身份替具体的人和事兜底。",
+      "status": null,
+      "degree": 5
+    },
+    {
       "id": "concept:compliance-floor",
       "key": "compliance-floor",
       "label": "合规及格线",
@@ -4987,17 +5020,6 @@
       "degree": 4
     },
     {
-      "id": "concept:national-identity-hostage",
-      "key": "national-identity-hostage",
-      "label": "国家身份绑架",
-      "fullLabel": "国家身份绑架",
-      "type": "concept",
-      "route": "concepts/national-identity-hostage",
-      "summary": "把个人的违规、私人冲突或一笔生意抬成国家的荣辱，拿国家身份替具体的人和事兜底。",
-      "status": null,
-      "degree": 4
-    },
-    {
       "id": "concept:child-toolification",
       "key": "child-toolification",
       "label": "孩子工具化",
@@ -5137,6 +5159,28 @@
       "type": "concept",
       "route": "concepts/globalization-as-disclosure",
       "summary": "全球化要求各国把生产、消费和价格公开摆出来，像上市公司体系那样透明。灰色贸易就是绕开这套披露，退回不透明的国与国交易。",
+      "status": null,
+      "degree": 4
+    },
+    {
+      "id": "concept:talent-siphon",
+      "key": "talent-siphon",
+      "label": "人才虹吸",
+      "fullLabel": "人才虹吸",
+      "type": "concept",
+      "route": "concepts/talent-siphon",
+      "summary": "一国靠高工资和开放机会，常年吸走邻国被制度排斥的中产人才。培养的钱母国出，产值记在邻国账上。",
+      "status": null,
+      "degree": 4
+    },
+    {
+      "id": "concept:identity-premium",
+      "key": "identity-premium",
+      "label": "身份溢价",
+      "fullLabel": "身份溢价",
+      "type": "concept",
+      "route": "concepts/identity-premium",
+      "summary": "商品价格里超出功能的那一截，买的是让别人看出自己属于哪一类人，这一截随着撑它的阶层一起涨落。",
       "status": null,
       "degree": 4
     },
@@ -5636,6 +5680,17 @@
       "degree": 3
     },
     {
+      "id": "theme:hainan-free-port-and-development-reality",
+      "key": "hainan-free-port-and-development-reality",
+      "label": "海南封关与自由港现实",
+      "fullLabel": "海南封关与自由港现实",
+      "type": "theme",
+      "route": "themes/hainan-free-port-and-development-reality",
+      "summary": "海南封关以后会不会取代新加坡。免税省钱是真的，港口位置、制造业、金融法治这些底子短时间补不上。",
+      "status": null,
+      "degree": 3
+    },
+    {
       "id": "concept:sea-laundering",
       "key": "sea-laundering",
       "label": "海上洗白",
@@ -5856,17 +5911,6 @@
       "degree": 3
     },
     {
-      "id": "concept:talent-siphon",
-      "key": "talent-siphon",
-      "label": "人才虹吸",
-      "fullLabel": "人才虹吸",
-      "type": "concept",
-      "route": "concepts/talent-siphon",
-      "summary": "一国靠高工资和开放机会，常年吸走邻国被制度排斥的中产人才。培养的钱母国出，产值记在邻国账上。",
-      "status": null,
-      "degree": 3
-    },
-    {
       "id": "concept:manufactured-popularity",
       "key": "manufactured-popularity",
       "label": "人气制造",
@@ -5874,17 +5918,6 @@
       "type": "concept",
       "route": "concepts/manufactured-popularity",
       "summary": "公开场面上的热度不是自己聚起来的，是运营方放风、组织、安排出来的，做出来之后再当成实力证据卖给品牌方和平台。",
-      "status": null,
-      "degree": 3
-    },
-    {
-      "id": "concept:identity-premium",
-      "key": "identity-premium",
-      "label": "身份溢价",
-      "fullLabel": "身份溢价",
-      "type": "concept",
-      "route": "concepts/identity-premium",
-      "summary": "商品价格里超出功能的那一截，买的是让别人看出自己属于哪一类人，这一截随着撑它的阶层一起涨落。",
       "status": null,
       "degree": 3
     },
@@ -6061,6 +6094,17 @@
       "type": "concept",
       "route": "concepts/bounded-experimentation",
       "summary": "试验可以存在，但必须有范围、预算、反馈和退出标准，不能把整个系统押上去试错。",
+      "status": null,
+      "degree": 3
+    },
+    {
+      "id": "person:yu-chengdong",
+      "key": "yu-chengdong",
+      "label": "余承东",
+      "fullLabel": "余承东",
+      "type": "person",
+      "route": "people/yu-chengdong",
+      "summary": "余承东是华为常务董事、终端BG董事长，长期站在华为手机和汽车的发布会前台。EP050 里那个替华为扛营销的老大嘴，本页推测是他。",
       "status": null,
       "degree": 3
     },
@@ -6413,17 +6457,6 @@
       "type": "concept",
       "route": "concepts/state-share-time-bomb",
       "summary": "早年未理顺的国资份额，在企业做大和创始人退场后会变成难以拆除的治理炸弹。",
-      "status": null,
-      "degree": 2
-    },
-    {
-      "id": "theme:hainan-free-port-and-development-reality",
-      "key": "hainan-free-port-and-development-reality",
-      "label": "海南封关与自由港现实",
-      "fullLabel": "海南封关与自由港现实",
-      "type": "theme",
-      "route": "themes/hainan-free-port-and-development-reality",
-      "summary": "海南封关以后会不会取代新加坡。免税省钱是真的，港口位置、制造业、金融法治这些底子短时间补不上。",
       "status": null,
       "degree": 2
     },
@@ -6989,17 +7022,6 @@
       "degree": 2
     },
     {
-      "id": "person:yu-chengdong",
-      "key": "yu-chengdong",
-      "label": "余承东",
-      "fullLabel": "余承东",
-      "type": "person",
-      "route": "people/yu-chengdong",
-      "summary": "余承东是华为常务董事、终端BG董事长，长期站在华为手机和汽车的发布会前台。EP050 里那个替华为扛营销的老大嘴，本页推测是他。",
-      "status": null,
-      "degree": 2
-    },
-    {
       "id": "model:strategic-counteroffensive-turning-point",
       "key": "strategic-counteroffensive-turning-point",
       "label": "战略反攻拐点",
@@ -7108,6 +7130,17 @@
       "summary": "宁德时代从2026年1月1日起给一到六级员工每月加150元基本工资，约占总工资的2%到2.5%，网上叫好。这家公司2017年就是全球动力电池老大，2023年利润四百多亿，大股东分红五十亿，现金多到只能买理财。2024年还网传它要员工走896、外籍员工不强制，内部人士称非官方通知。大萧条时，美国靠工会谈判给底层涨薪，消费跟着起来。德国走了反路，解散独立工会，资源押在军工上，最后只能对外扩张。福特也给工人涨过薪，让他们买得起自己造的车。普通人收入上不去，内循环起不来，产品只会越卷越便宜、越卷越差。",
       "status": "curated",
       "degree": 2
+    },
+    {
+      "id": "concept:halfway-opening",
+      "key": "halfway-opening",
+      "label": "半程开放",
+      "fullLabel": "半程开放",
+      "type": "concept",
+      "route": "concepts/halfway-opening",
+      "summary": "开放政策走了一半就停下，往前怕出事，往后怕前功尽弃，几项关键条件都卡在中间，牌子挂上了，却转不起来。",
+      "status": null,
+      "degree": 1
     },
     {
       "id": "concept:half-understood-freedom",
@@ -16865,6 +16898,86 @@
     {
       "source": "episode:EP229",
       "target": "theme:price-war-and-precision-competition",
+      "kind": "episode-theme"
+    },
+    {
+      "source": "episode:EP230",
+      "target": "concept:halfway-opening",
+      "kind": "episode-concept"
+    },
+    {
+      "source": "episode:EP230",
+      "target": "concept:delayed-price-discovery",
+      "kind": "episode-concept"
+    },
+    {
+      "source": "episode:EP230",
+      "target": "concept:talent-siphon",
+      "kind": "episode-concept"
+    },
+    {
+      "source": "episode:EP230",
+      "target": "model:stability-over-growth-trap",
+      "kind": "episode-model"
+    },
+    {
+      "source": "episode:EP230",
+      "target": "theme:hainan-free-port-and-development-reality",
+      "kind": "episode-theme"
+    },
+    {
+      "source": "episode:EP230",
+      "target": "theme:local-fiscal-stress-and-hidden-debt",
+      "kind": "episode-theme"
+    },
+    {
+      "source": "episode:EP230",
+      "target": "theme:real-estate-deleveraging",
+      "kind": "episode-theme"
+    },
+    {
+      "source": "episode:EP230",
+      "target": "theme:singapore-and-small-state-survival",
+      "kind": "episode-theme"
+    },
+    {
+      "source": "episode:EP231",
+      "target": "concept:consumer-testbed",
+      "kind": "episode-concept"
+    },
+    {
+      "source": "episode:EP231",
+      "target": "concept:national-identity-hostage",
+      "kind": "episode-concept"
+    },
+    {
+      "source": "episode:EP231",
+      "target": "concept:identity-premium",
+      "kind": "episode-concept"
+    },
+    {
+      "source": "episode:EP231",
+      "target": "model:risk-transfer-chain",
+      "kind": "episode-model"
+    },
+    {
+      "source": "episode:EP231",
+      "target": "model:identity-stratification",
+      "kind": "episode-model"
+    },
+    {
+      "source": "episode:EP231",
+      "target": "person:yu-chengdong",
+      "kind": "episode-person"
+    },
+    {
+      "source": "episode:EP231",
+      "target": "theme:ev-safety-and-consumer-testing",
+      "kind": "episode-theme"
+    },
+    {
+      "source": "episode:EP231",
+      "target": "theme:brand-symbol-and-value",
       "kind": "episode-theme"
     },
     {
