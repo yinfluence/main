@@ -2,14 +2,14 @@
   "meta": {
     "title": "颖响力知识图谱",
     "subtitle": "节目、概念、模型、人物、主题之间的可视化连接网络",
-    "nodeCount": 780,
-    "linkCount": 2929,
+    "nodeCount": 782,
+    "linkCount": 2937,
     "typeCounts": {
       "model": 84,
       "live": 53,
-      "concept": 255,
+      "concept": 256,
       "theme": 92,
-      "episode": 231,
+      "episode": 232,
       "person": 65
     }
   },
@@ -158,6 +158,17 @@
       "degree": 29
     },
     {
+      "id": "theme:great-power-competition-and-strategic-time",
+      "key": "great-power-competition-and-strategic-time",
+      "label": "大国竞争与战略时间",
+      "fullLabel": "大国竞争与战略时间",
+      "type": "theme",
+      "route": "themes/great-power-competition-and-strategic-time",
+      "summary": "大国之间拼武器，也拼谁更能熬、谁先把成本降下来、谁抓住了时间窗口。",
+      "status": null,
+      "degree": 27
+    },
+    {
       "id": "episode:EP156",
       "key": "EP156",
       "label": "EP156",
@@ -202,17 +213,6 @@
       "degree": 26
     },
     {
-      "id": "theme:great-power-competition-and-strategic-time",
-      "key": "great-power-competition-and-strategic-time",
-      "label": "大国竞争与战略时间",
-      "fullLabel": "大国竞争与战略时间",
-      "type": "theme",
-      "route": "themes/great-power-competition-and-strategic-time",
-      "summary": "大国之间拼武器，也拼谁更能熬、谁先把成本降下来、谁抓住了时间窗口。",
-      "status": null,
-      "degree": 26
-    },
-    {
       "id": "theme:rule-of-law-boundaries-and-social-trust",
       "key": "rule-of-law-boundaries-and-social-trust",
       "label": "法治边界与社会信任",
@@ -220,6 +220,17 @@
       "type": "theme",
       "route": "themes/rule-of-law-boundaries-and-social-trust",
       "summary": "法律管到哪里、管不到哪里。规则被钻空子、被权力压过，或者根本没写进法条时，人和人之间的信任会怎么变。",
+      "status": null,
+      "degree": 26
+    },
+    {
+      "id": "model:narrative-instrumentalization",
+      "key": "narrative-instrumentalization",
+      "label": "叙事工具化模型",
+      "fullLabel": "叙事工具化模型",
+      "type": "model",
+      "route": "models/narrative-instrumentalization",
+      "summary": "叙事工具化模型解释叙事的主要功能从解释现实转向组织情绪和划分阵营。",
       "status": null,
       "degree": 26
     },
@@ -277,17 +288,6 @@
       "summary": "一种猜测是，投资机构能用的手段只剩一个，把内部会议稿放出来敲打一下。",
       "status": "curated",
       "degree": 26
-    },
-    {
-      "id": "model:narrative-instrumentalization",
-      "key": "narrative-instrumentalization",
-      "label": "叙事工具化模型",
-      "fullLabel": "叙事工具化模型",
-      "type": "model",
-      "route": "models/narrative-instrumentalization",
-      "summary": "叙事工具化模型解释叙事的主要功能从解释现实转向组织情绪和划分阵营。",
-      "status": null,
-      "degree": 25
     },
     {
       "id": "episode:EP169",
@@ -543,6 +543,17 @@
       "degree": 22
     },
     {
+      "id": "person:donald-trump",
+      "key": "donald-trump",
+      "label": "特朗普",
+      "fullLabel": "特朗普",
+      "type": "person",
+      "route": "people/donald-trump",
+      "summary": "特朗普是美国共和党政治人物，第 45 任和第 47 任美国总统。节目讲美国战略时最常拿他说事：新门罗主义收缩防线，让盟友出钱守墙，再沿巴拿马、委内瑞拉、伊朗一路打灰色贸易。",
+      "status": null,
+      "degree": 22
+    },
+    {
       "id": "episode:EP144",
       "key": "EP144",
       "label": "EP144",
@@ -627,17 +638,6 @@
       "type": "theme",
       "route": "themes/dollar-system-and-gray-trade",
       "summary": "讨论石油美元的真实脆弱点，究竟藏在公开统计之外的哪些灰色交易链条里。",
-      "status": null,
-      "degree": 21
-    },
-    {
-      "id": "person:donald-trump",
-      "key": "donald-trump",
-      "label": "特朗普",
-      "fullLabel": "特朗普",
-      "type": "person",
-      "route": "people/donald-trump",
-      "summary": "特朗普是美国共和党政治人物，第 45 任和第 47 任美国总统。节目讲美国战略时最常拿他说事：新门罗主义收缩防线，让盟友出钱守墙，再沿巴拿马、委内瑞拉、伊朗一路打灰色贸易。",
       "status": null,
       "degree": 21
     },
@@ -1544,6 +1544,17 @@
       "degree": 12
     },
     {
+      "id": "concept:time-asymmetry",
+      "key": "time-asymmetry",
+      "label": "时间非对称",
+      "fullLabel": "时间非对称",
+      "type": "concept",
+      "route": "concepts/time-asymmetry",
+      "summary": "冲突双方对时间的承受力不一样，决定长期胜负的常常是谁能把时间变成自己的朋友。",
+      "status": null,
+      "degree": 12
+    },
+    {
       "id": "theme:institutional-middle-class-and-social-mobility",
       "key": "institutional-middle-class-and-social-mobility",
       "label": "体制化中产与社会流动",
@@ -1819,17 +1830,6 @@
       "degree": 11
     },
     {
-      "id": "concept:time-asymmetry",
-      "key": "time-asymmetry",
-      "label": "时间非对称",
-      "fullLabel": "时间非对称",
-      "type": "concept",
-      "route": "concepts/time-asymmetry",
-      "summary": "冲突双方对时间的承受力不一样，决定长期胜负的常常是谁能把时间变成自己的朋友。",
-      "status": null,
-      "degree": 11
-    },
-    {
       "id": "concept:cash-optionality",
       "key": "cash-optionality",
       "label": "现金选择权",
@@ -2013,6 +2013,17 @@
       "type": "model",
       "route": "models/regional-denial-model",
       "summary": "把对手长期压在几个区域里，让它在每一块都占不了上风，各块之间也连不起来，长不成能跨区域联动的集团。",
+      "status": null,
+      "degree": 10
+    },
+    {
+      "id": "model:time-arbitrage-model",
+      "key": "time-arbitrage-model",
+      "label": "时间套利模型",
+      "fullLabel": "时间套利模型",
+      "type": "model",
+      "route": "models/time-arbitrage-model",
+      "summary": "两方比的不只是眼下谁强，还有谁拖得起。能把时间拉长的一方，往往不用抢先出手。",
       "status": null,
       "degree": 10
     },
@@ -2255,17 +2266,6 @@
       "type": "theme",
       "route": "themes/time-horizon-and-foresight",
       "summary": "人和企业怎样按周期提前摆放自己，在事情发生之前就做好准备。",
-      "status": null,
-      "degree": 9
-    },
-    {
-      "id": "model:time-arbitrage-model",
-      "key": "time-arbitrage-model",
-      "label": "时间套利模型",
-      "fullLabel": "时间套利模型",
-      "type": "model",
-      "route": "models/time-arbitrage-model",
-      "summary": "两方比的不只是眼下谁强，还有谁拖得起。能把时间拉长的一方，往往不用抢先出手。",
       "status": null,
       "degree": 9
     },
@@ -3260,6 +3260,17 @@
       "degree": 8
     },
     {
+      "id": "episode:EP232",
+      "key": "EP232",
+      "label": "EP232",
+      "fullLabel": "EP232 · 泽连斯基服软割25%国土换停火？扒一扒简中互联网的造谣自嗨！",
+      "type": "episode",
+      "route": "episodes/EP232",
+      "summary": "网上疯传泽连斯基松了口，愿意拿乌克兰 25% 的国土换停火。顺着找下去，源头是福克斯新闻的一次直播采访。保住 75% 乃至更多国土是主持人抛出的假设，泽连斯基答的是可以按现有战线冻结，前提是拿到美欧实打实的安全保障。这套思路 2024 年底就摆上了台面，底线一直没松，乌克兰不在法律上承认被占领土属于俄罗斯。就算真让出土地，仗也停不下来。俄罗斯的政权信用要靠一场压倒性的胜利来兑现，平局和小胜在国内都交代不过去，时间站在不签字、拖得起的一方。",
+      "status": "curated",
+      "degree": 8
+    },
+    {
       "id": "concept:performative-innovation",
       "key": "performative-innovation",
       "label": "表演式创新",
@@ -3432,6 +3443,17 @@
       "type": "concept",
       "route": "concepts/new-media-politician",
       "summary": "靠新媒体直接连接受众、绕过传统组织和选举路径崛起的新型权力人物。",
+      "status": null,
+      "degree": 7
+    },
+    {
+      "id": "theme:war-system-and-succession-risk",
+      "key": "war-system-and-succession-risk",
+      "label": "战争体制与接班风险",
+      "fullLabel": "战争体制与接班风险",
+      "type": "theme",
+      "route": "themes/war-system-and-succession-risk",
+      "summary": "俄罗斯打成长期消耗战以后，兵源、动员、前线信息和接班人四件事一起出了问题。",
       "status": null,
       "degree": 7
     },
@@ -3876,6 +3898,17 @@
       "degree": 6
     },
     {
+      "id": "person:vladimir-putin",
+      "key": "vladimir-putin",
+      "label": "普京",
+      "fullLabel": "普京",
+      "type": "person",
+      "route": "people/vladimir-putin",
+      "summary": "普京是俄罗斯总统，2000 年起两度执掌总统职位，2024 年 5 月开始第五个任期。节目借他看一个执政二十多年的强人体系，怎样在俄乌战争里被消耗：没有接班人，战争只能锁在电视里，前线真话传不到他耳中。",
+      "status": null,
+      "degree": 6
+    },
+    {
       "id": "model:authority-misinfluence",
       "key": "authority-misinfluence",
       "label": "权威影响",
@@ -3982,17 +4015,6 @@
       "type": "concept",
       "route": "concepts/wartime-oil-stockpiling",
       "summary": "石油进口国让进口量长期高于真实需求，多出的部分悄悄存成战时储备。危机一来只要停止增储，进口就大跌，生产却不受多大影响。",
-      "status": null,
-      "degree": 6
-    },
-    {
-      "id": "theme:war-system-and-succession-risk",
-      "key": "war-system-and-succession-risk",
-      "label": "战争体制与接班风险",
-      "fullLabel": "战争体制与接班风险",
-      "type": "theme",
-      "route": "themes/war-system-and-succession-risk",
-      "summary": "俄罗斯打成长期消耗战以后，兵源、动员、前线信息和接班人四件事一起出了问题。",
       "status": null,
       "degree": 6
     },
@@ -4433,17 +4455,6 @@
       "type": "theme",
       "route": "themes/content-regulation-and-short-drama",
       "summary": "审核路径不同，长剧、电影、短剧和现场演出的成本和玩法跟着变。",
-      "status": null,
-      "degree": 5
-    },
-    {
-      "id": "person:vladimir-putin",
-      "key": "vladimir-putin",
-      "label": "普京",
-      "fullLabel": "普京",
-      "type": "person",
-      "route": "people/vladimir-putin",
-      "summary": "普京是俄罗斯总统，2000 年起两度执掌总统职位，2024 年 5 月开始第五个任期。节目借他看一个执政二十多年的强人体系，怎样在俄乌战争里被消耗：没有接班人，战争只能锁在电视里，前线真话传不到他耳中。",
       "status": null,
       "degree": 5
     },
@@ -8052,6 +8063,17 @@
       "type": "theme",
       "route": "themes/beauty-industry-and-hollowed-competitions",
       "summary": "选美和模特比赛的冠军越来越看不懂。程序还摆在那里，结果却跟美没了关系，连遮掩的羞耻感都不要了。",
+      "status": null,
+      "degree": 1
+    },
+    {
+      "id": "concept:victory-legitimacy",
+      "key": "victory-legitimacy",
+      "label": "胜利合法性",
+      "fullLabel": "胜利合法性",
+      "type": "concept",
+      "route": "concepts/victory-legitimacy",
+      "summary": "一个政权让人忍受牺牲，靠的是许诺一场胜利。仗打完拿不出像样的胜利，平局和小胜都会被当成失败来追问。",
       "status": null,
       "degree": 1
     },
@@ -16989,6 +17011,46 @@
     {
       "source": "episode:EP231",
       "target": "theme:brand-symbol-and-value",
+      "kind": "episode-theme"
+    },
+    {
+      "source": "episode:EP232",
+      "target": "concept:time-asymmetry",
+      "kind": "episode-concept"
+    },
+    {
+      "source": "episode:EP232",
+      "target": "concept:victory-legitimacy",
+      "kind": "episode-concept"
+    },
+    {
+      "source": "episode:EP232",
+      "target": "model:narrative-instrumentalization",
+      "kind": "episode-model"
+    },
+    {
+      "source": "episode:EP232",
+      "target": "model:time-arbitrage-model",
+      "kind": "episode-model"
+    },
+    {
+      "source": "episode:EP232",
+      "target": "person:vladimir-putin",
+      "kind": "episode-person"
+    },
+    {
+      "source": "episode:EP232",
+      "target": "person:donald-trump",
+      "kind": "episode-person"
+    },
+    {
+      "source": "episode:EP232",
+      "target": "theme:war-system-and-succession-risk",
+      "kind": "episode-theme"
+    },
+    {
+      "source": "episode:EP232",
+      "target": "theme:great-power-competition-and-strategic-time",
       "kind": "episode-theme"
     },
     {

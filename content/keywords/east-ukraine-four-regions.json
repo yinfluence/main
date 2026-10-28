@@ -1,0 +1,71 @@
+{
+ "id": "east-ukraine-four-regions",
+ "name": "乌东四州",
+ "kind": "geography",
+ "asOf": "2026-10-28",
+ "aliases": [
+  "乌东四个州",
+  "四个州"
+ ],
+ "summary": "乌东四州指顿涅茨克、卢甘斯克、扎波罗热、赫尔松四个州，俄罗斯 2022 年宣布并入。EP232 从占领成本和停火条件两头讲它。",
+ "description": "乌东四州是乌克兰东部和南部的顿涅茨克州、卢甘斯克州、扎波罗热州和赫尔松州。2022 年 9 月俄罗斯在占领区搞了所谓公投，随后宣布四州并入俄罗斯，乌克兰和多数国家不承认。俄军实际只控制其中一部分。2024 年 6 月普京提出，乌军撤出这四个州的全部地区，是和谈的前提。",
+ "nodeRole": "它是俄乌停火谈判卡住的地方。俄罗斯说那是自己的法定行政区，要乌军全部撤出。乌克兰说那是被非法占领的领土，可以冻结，不能签字认账。",
+ "programAssociations": [
+  {
+   "title": "占下来是赚还是赔",
+   "episodes": [
+    "EP232"
+   ],
+   "note": "EP232 讲，乌东四州加上克里米亚这么大一片地方，治安、重建和民心都要花钱，据说 2025 到 2026 年克里姆林宫给的预算高达数万亿卢布。制裁之下当地工业几乎停摆。普京 2024 年 6 月要乌军撤出整个四州，还只是起步的要价。"
+  }
+ ],
+ "impactNotes": [
+  "俄罗斯要为这片地方长期付治安和重建的钱，还换不来国际承认。",
+  "乌克兰丢了这片地方的人口和工业，但不认账就保住了收回来的依据。",
+  "停火谈判只要绕不开四州归属，双方就很难签和约。"
+ ],
+ "signalNotes": [
+  "谈判消息提到撤出四个州，说的是俄方的开价。",
+  "占领区预算、公投、护照发放这类消息，是俄罗斯在给占领盖章。",
+  "乌克兰说实际控制线、冻结，是在把停火跟领土归属分开谈。"
+ ],
+ "extensionNotes": [
+  {
+   "title": "克里米亚",
+   "note": "2014 年先被吞并，跟四州一起构成俄罗斯要守的那片占领区。"
+  },
+  {
+   "title": "冻结战线",
+   "note": "乌克兰的方案是在四州里的现有战线上停下来，领土归属不谈。"
+  },
+  {
+   "title": "不承认主义",
+   "note": "俄罗斯宣布并入，乌克兰在法律上一直不认。"
+  }
+ ],
+ "relatedKeywords": [
+  "克里米亚",
+  "俄乌战争",
+  "冻结战线",
+  "不承认主义",
+  "普京"
+ ],
+ "episodes": [
+  {
+   "id": "EP232",
+   "note": "普京要乌军撤出整个乌东四州才谈，而俄罗斯守着这片地方每年要往里填大笔钱。"
+  }
+ ],
+ "sources": [
+  {
+   "title": "Wikipedia: Russian annexation of Donetsk, Kherson, Luhansk and Zaporizhzhia oblasts",
+   "url": "https://en.wikipedia.org/wiki/Russian_annexation_of_Donetsk,_Kherson,_Luhansk_and_Zaporizhzhia_oblasts",
+   "note": "核 2022 年 9 月俄罗斯宣布并入四州及国际不承认。"
+  },
+  {
+   "title": "AP via NY1: Putin pledges a cease-fire in Ukraine if Kyiv withdraws from occupied regions and drops NATO bid (2024-06-14)",
+   "url": "https://ny1.com/nyc/all-boroughs/ap-top-news/2024/06/14/putin-pledges-a-cease-fire-in-ukraine-if-kyiv-withdraws-from-occupied-regions-and-drops-nato-bid",
+   "note": "核 2024 年 6 月 14 日普京提出乌军撤出四州、放弃加入北约、解除制裁为停火谈判前提。"
+  }
+ ]
+}

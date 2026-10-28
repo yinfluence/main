@@ -1229,5 +1229,15 @@
       "platform": "youtube",
       "url": "https://www.youtube.com/watch?v=9uxWfpp8E8Q"
     }
+  },
+  "EP232": {
+    "bilibili": {
+      "platform": "bilibili",
+      "url": "https://www.bilibili.com/video/BV12pxE68EH9/"
+    },
+    "youtube": {
+      "platform": "youtube",
+      "url": "https://www.youtube.com/watch?v=BbPoC_p4UBA"
+    }
   }
 }
