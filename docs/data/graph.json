@@ -2,11 +2,11 @@
   "meta": {
     "title": "颖响力知识图谱",
     "subtitle": "节目、概念、模型、人物、主题之间的可视化连接网络",
-    "nodeCount": 782,
-    "linkCount": 2937,
+    "nodeCount": 783,
+    "linkCount": 2945,
     "typeCounts": {
       "model": 84,
-      "live": 53,
+      "live": 54,
       "concept": 256,
       "theme": 92,
       "episode": 232,
@@ -89,7 +89,7 @@
       "route": "concepts/hidden-debt",
       "summary": "表外、体外和合作链条里的债务不在显性报表中充分呈现，却会在危机时重新压回主体。",
       "status": null,
-      "degree": 31
+      "degree": 32
     },
     {
       "id": "live:LIVE004",
@@ -466,6 +466,17 @@
       "degree": 24
     },
     {
+      "id": "theme:local-fiscal-stress-and-hidden-debt",
+      "key": "local-fiscal-stress-and-hidden-debt",
+      "label": "地方财政与隐性债务",
+      "fullLabel": "地方财政与隐性债务",
+      "type": "theme",
+      "route": "themes/local-fiscal-stress-and-hidden-debt",
+      "summary": "地方财政吃紧后，系统会通过更复杂的融资、资产包装和风险转移来维持运转。",
+      "status": null,
+      "degree": 23
+    },
+    {
       "id": "concept:chokepoint-leverage",
       "key": "chokepoint-leverage",
       "label": "咽喉杠杆",
@@ -530,17 +541,6 @@
       "summary": "北方一座大城市最低工资四千左右，社保最低要按八千多交。",
       "status": "published",
       "degree": 23
-    },
-    {
-      "id": "theme:local-fiscal-stress-and-hidden-debt",
-      "key": "local-fiscal-stress-and-hidden-debt",
-      "label": "地方财政与隐性债务",
-      "fullLabel": "地方财政与隐性债务",
-      "type": "theme",
-      "route": "themes/local-fiscal-stress-and-hidden-debt",
-      "summary": "地方财政吃紧后，系统会通过更复杂的融资、资产包装和风险转移来维持运转。",
-      "status": null,
-      "degree": 22
     },
     {
       "id": "person:donald-trump",
@@ -928,6 +928,17 @@
       "degree": 17
     },
     {
+      "id": "theme:state-business-entanglement",
+      "key": "state-business-entanglement",
+      "label": "政企嵌入与企业存续",
+      "fullLabel": "政企嵌入与企业存续",
+      "type": "theme",
+      "route": "themes/state-business-entanglement",
+      "summary": "讨论企业如何依赖地方政府、国资平台或关系结构续命，以及这种绑定如何反过来改写企业目标。",
+      "status": null,
+      "degree": 17
+    },
+    {
       "id": "episode:EP132",
       "key": "EP132",
       "label": "EP132",
@@ -990,17 +1001,6 @@
       "type": "model",
       "route": "models/identity-stratification",
       "summary": "身份型分层说明阶层排序从收入和资产，转向编制、合规位置、圈层资源和稳定预期。",
-      "status": null,
-      "degree": 16
-    },
-    {
-      "id": "theme:state-business-entanglement",
-      "key": "state-business-entanglement",
-      "label": "政企嵌入与企业存续",
-      "fullLabel": "政企嵌入与企业存续",
-      "type": "theme",
-      "route": "themes/state-business-entanglement",
-      "summary": "讨论企业如何依赖地方政府、国资平台或关系结构续命，以及这种绑定如何反过来改写企业目标。",
       "status": null,
       "degree": 16
     },
@@ -1078,6 +1078,17 @@
       "type": "theme",
       "route": "themes/southeast-asia-fragmentation-and-bloc-competition",
       "summary": "讨论东南亚如何从缓冲地带变成各方拉扯、重新站队和内部裂变并行发生的高风险区域。",
+      "status": null,
+      "degree": 15
+    },
+    {
+      "id": "model:wall-and-gray-trade-crackdown",
+      "key": "wall-and-gray-trade-crackdown",
+      "label": "建墙与打灰模型",
+      "fullLabel": "建墙与打灰模型",
+      "type": "model",
+      "route": "models/wall-and-gray-trade-crackdown",
+      "summary": "川普这一届对外有两条主线：建墙分清敌我，打击灰色贸易，把交易逼回美元。",
       "status": null,
       "degree": 15
     },
@@ -1188,17 +1199,6 @@
       "type": "theme",
       "route": "themes/local-government-financialization",
       "summary": "地方政府从招商者变成资本玩家，把补贴、基金和估值故事捆到一起，企业出事时自己接盘。",
-      "status": null,
-      "degree": 14
-    },
-    {
-      "id": "model:wall-and-gray-trade-crackdown",
-      "key": "wall-and-gray-trade-crackdown",
-      "label": "建墙与打灰模型",
-      "fullLabel": "建墙与打灰模型",
-      "type": "model",
-      "route": "models/wall-and-gray-trade-crackdown",
-      "summary": "川普这一届对外有两条主线：建墙分清敌我，打击灰色贸易，把交易逼回美元。",
       "status": null,
       "degree": 14
     },
@@ -1665,6 +1665,17 @@
       "degree": 12
     },
     {
+      "id": "episode:EP120",
+      "key": "EP120",
+      "label": "EP120",
+      "fullLabel": "EP120 · 匈牙利大选欧尔班败选！是人民的巨大胜利，也是四大国家集团拆雷埋雷的终极博弈。",
+      "type": "episode",
+      "route": "episodes/EP120",
+      "summary": "匈牙利这次大选投票率接近 80%，是 1990 年以来最高的一次，年轻人大批出门投票，欧尔班靠的六七十岁以上老人这回被压了下去。马扎尔的蒂萨党拿下过半选票，最终拿到 199 席里的 141 席，过了三分之二。他第一件事就是修宪，把总理任期限制为两届。放到欧洲看，这是一场拆雷和埋雷的牌局。俄罗斯和特朗普支持欧尔班，想在欧盟里留一颗雷，欧盟用限制拨款去拆，美国民主党那一派也站在拆雷一边。雷拆掉了，欧洲更团结，下一个冲突点可能转向东南亚。匈牙利变回不折腾的普通欧洲国家，对老百姓是好事。",
+      "status": "curated",
+      "degree": 12
+    },
+    {
       "id": "episode:EP137",
       "key": "EP137",
       "label": "EP137",
@@ -1863,6 +1874,17 @@
       "degree": 11
     },
     {
+      "id": "model:political-embedded-enterprise",
+      "key": "political-embedded-enterprise",
+      "label": "政企嵌入企业模型",
+      "fullLabel": "政企嵌入企业模型",
+      "type": "model",
+      "route": "models/political-embedded-enterprise",
+      "summary": "企业一旦把自身命运深嵌进地方政府或国资体系，短期会更能续命，长期却更容易沦为政策工具。",
+      "status": null,
+      "degree": 11
+    },
+    {
       "id": "concept:active-neutrality",
       "key": "active-neutrality",
       "label": "主动中立",
@@ -1881,17 +1903,6 @@
       "type": "episode",
       "route": "episodes/EP076",
       "summary": "铜条那期之后有人追问黄金白银能不能赚钱。从现在开始，绝大多数人怎么做都赔。真正有信用的是纽约贵金属商品交易所，香港的黄金市场已属二级。散户碰得到的水贝料商、私营 App 和实物渠道，都是三四级的私盘。盘主对不对冲全看贪婪，不对冲又扛不住，平台一消失，用户的钱也跟着没了。大赌场和山姆超市反而都在控制贪婪。喊你一起玩的人多半已经重仓在先，你押上的却是全部身家。真正的高手一上来砸进一半资产，其余时间拿好现金，等下一次机会。",
-      "status": "curated",
-      "degree": 11
-    },
-    {
-      "id": "episode:EP120",
-      "key": "EP120",
-      "label": "EP120",
-      "fullLabel": "EP120 · 匈牙利大选欧尔班败选！是人民的巨大胜利，也是四大国家集团拆雷埋雷的终极博弈。",
-      "type": "episode",
-      "route": "episodes/EP120",
-      "summary": "匈牙利这次大选投票率接近 80%，是 1990 年以来最高的一次，年轻人大批出门投票，欧尔班靠的六七十岁以上老人这回被压了下去。马扎尔的蒂萨党拿下过半选票，最终拿到 199 席里的 141 席，过了三分之二。他第一件事就是修宪，把总理任期限制为两届。放到欧洲看，这是一场拆雷和埋雷的牌局。俄罗斯和特朗普支持欧尔班，想在欧盟里留一颗雷，欧盟用限制拨款去拆，美国民主党那一派也站在拆雷一边。雷拆掉了，欧洲更团结，下一个冲突点可能转向东南亚。匈牙利变回不折腾的普通欧洲国家，对老百姓是好事。",
       "status": "curated",
       "degree": 11
     },
@@ -2035,17 +2046,6 @@
       "type": "concept",
       "route": "concepts/expectation-selling",
       "summary": "把说不清的未来压成一个能买的答案，卖给焦虑的人，中间人从中拿影响力和钱。",
-      "status": null,
-      "degree": 10
-    },
-    {
-      "id": "model:political-embedded-enterprise",
-      "key": "political-embedded-enterprise",
-      "label": "政企嵌入企业模型",
-      "fullLabel": "政企嵌入企业模型",
-      "type": "model",
-      "route": "models/political-embedded-enterprise",
-      "summary": "企业一旦把自身命运深嵌进地方政府或国资体系，短期会更能续命，长期却更容易沦为政策工具。",
       "status": null,
       "degree": 10
     },
@@ -2497,6 +2497,17 @@
       "type": "episode",
       "route": "episodes/EP105",
       "summary": "评论区有人问，为什么不老老实实做个财经博主，那样赚钱容易得多。天天讲涨跌的博主做的是情绪价值，给的是钱，给不了财富。博主并不笨，时代进了囚徒困境，连三个月都看不清，没人再听三年的事。财经内容的价值在周期、战略和进出时点。看出来之后还得拿得住，未来三年现金就是你的权力。龙虾这波热点里，第一拨和第三拨都能赚，夹在中间跟风的第二拨最难。判断力要靠读哲学和文学去懂人性。推荐的书有凯文凯利的《失控》，还有一部写三代人穿过两次大战的三部曲。想留给孙辈的，该是家风和思维。",
+      "status": "curated",
+      "degree": 9
+    },
+    {
+      "id": "episode:EP106",
+      "key": "EP106",
+      "label": "EP106",
+      "fullLabel": "EP106 · 地方附加税来了：是“新包干”还是“新负担”？为什么中国在大政府逻辑下，改革越改越“闷”？",
+      "type": "episode",
+      "route": "episodes/EP106",
+      "summary": "中国经济这几年闷得说不出来，政策出了不少，总对不上点。很多人怪地方政府和地方债，可那只是果。病根在人，在一大批聪明又有权力的政府人员站到了哪一边。中国从来不是守夜人式的小政府，要供养庞大的人群，只能深度绑定经济。包干制年代地方官像销售经理，帮企业招商引资。后来推进变成风控，协助变成考核，财政只能靠借债透支未来、靠罚款倒查过去。附加税三合一能把约 1 万亿留给地方，可光是 1 到 2 月，地方收支缺口就有一万多亿。接下来三年的主题是涨，涨的是水电油这些基础生活费用。",
       "status": "curated",
       "degree": 9
     },
@@ -3040,17 +3051,6 @@
       "degree": 8
     },
     {
-      "id": "episode:EP106",
-      "key": "EP106",
-      "label": "EP106",
-      "fullLabel": "EP106 · 地方附加税来了：是“新包干”还是“新负担”？为什么中国在大政府逻辑下，改革越改越“闷”？",
-      "type": "episode",
-      "route": "episodes/EP106",
-      "summary": "中国经济这几年闷得说不出来，政策出了不少，总对不上点。很多人怪地方政府和地方债，可那只是果。病根在人，在一大批聪明又有权力的政府人员站到了哪一边。中国从来不是守夜人式的小政府，要供养庞大的人群，只能深度绑定经济。包干制年代地方官像销售经理，帮企业招商引资。后来推进变成风控，协助变成考核，财政只能靠借债透支未来、靠罚款倒查过去。附加税三合一能把约 1 万亿留给地方，可光是 1 到 2 月，地方收支缺口就有一万多亿。接下来三年的主题是涨，涨的是水电油这些基础生活费用。",
-      "status": "curated",
-      "degree": 8
-    },
-    {
       "id": "episode:EP107",
       "key": "EP107",
       "label": "EP107",
@@ -3268,6 +3268,17 @@
       "route": "episodes/EP232",
       "summary": "网上疯传泽连斯基松了口，愿意拿乌克兰 25% 的国土换停火。顺着找下去，源头是福克斯新闻的一次直播采访。保住 75% 乃至更多国土是主持人抛出的假设，泽连斯基答的是可以按现有战线冻结，前提是拿到美欧实打实的安全保障。这套思路 2024 年底就摆上了台面，底线一直没松，乌克兰不在法律上承认被占领土属于俄罗斯。就算真让出土地，仗也停不下来。俄罗斯的政权信用要靠一场压倒性的胜利来兑现，平局和小胜在国内都交代不过去，时间站在不签字、拖得起的一方。",
       "status": "curated",
+      "degree": 8
+    },
+    {
+      "id": "live:LIVE054",
+      "key": "LIVE054",
+      "label": "LIVE054",
+      "fullLabel": "LIVE054 · 一个人的公司拿下三千万农业项目！拆解城投自己招标自己中标，钱最后流到了哪？",
+      "type": "live",
+      "route": "lives/LIVE054",
+      "summary": "转回城投账上的一千多万，填的是饭店欠账和编外人员的工资。",
+      "status": "published",
       "degree": 8
     },
     {
@@ -4899,6 +4910,17 @@
       "degree": 4
     },
     {
+      "id": "concept:layered-subcontracting",
+      "key": "layered-subcontracting",
+      "label": "层层转包",
+      "fullLabel": "层层转包",
+      "type": "concept",
+      "route": "concepts/layered-subcontracting",
+      "summary": "一件事一层层往下包，每层抽走差价，到干活的人手里只剩最低的工钱，专业和责任跟着一起被压到最低。",
+      "status": null,
+      "degree": 4
+    },
+    {
       "id": "concept:property-boundary-literacy",
       "key": "property-boundary-literacy",
       "label": "产权意识",
@@ -5599,17 +5621,6 @@
       "type": "concept",
       "route": "concepts/wealth-spillover-hub",
       "summary": "一个金融中心排名冲上去，增量主要来自邻近一个大经济体外流和回流的钱，全球资本并没有一起涌进来。",
-      "status": null,
-      "degree": 3
-    },
-    {
-      "id": "concept:layered-subcontracting",
-      "key": "layered-subcontracting",
-      "label": "层层转包",
-      "fullLabel": "层层转包",
-      "type": "concept",
-      "route": "concepts/layered-subcontracting",
-      "summary": "一件事一层层往下包，每层抽走差价，到干活的人手里只剩最低的工钱，专业和责任跟着一起被压到最低。",
       "status": null,
       "degree": 3
     },
@@ -23281,6 +23292,46 @@
     {
       "source": "live:LIVE053",
       "target": "theme:exam-centered-education-and-person-formation",
+      "kind": "live-theme"
+    },
+    {
+      "source": "live:LIVE054",
+      "target": "episode:EP106",
+      "kind": "live-episode"
+    },
+    {
+      "source": "live:LIVE054",
+      "target": "episode:EP120",
+      "kind": "live-episode"
+    },
+    {
+      "source": "live:LIVE054",
+      "target": "concept:layered-subcontracting",
+      "kind": "live-concept"
+    },
+    {
+      "source": "live:LIVE054",
+      "target": "concept:hidden-debt",
+      "kind": "live-concept"
+    },
+    {
+      "source": "live:LIVE054",
+      "target": "model:wall-and-gray-trade-crackdown",
+      "kind": "live-model"
+    },
+    {
+      "source": "live:LIVE054",
+      "target": "model:political-embedded-enterprise",
+      "kind": "live-model"
+    },
+    {
+      "source": "live:LIVE054",
+      "target": "theme:local-fiscal-stress-and-hidden-debt",
+      "kind": "live-theme"
+    },
+    {
+      "source": "live:LIVE054",
+      "target": "theme:state-business-entanglement",
       "kind": "live-theme"
     },
     {
