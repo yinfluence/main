@@ -1100,9 +1100,9 @@ async function build() {
   const indexHtml = await buildIndexHtml(assetVersion);
   const siteJson = JSON.stringify(site, null, 2);
 
-  // 颖观察：2026-10-29 起换成问答录。由 ../颖观察框架/book_data/render_book.py 生成 site/yin-view-book.html，
-  // 发布为 yin-view.html。旧版七格页面不再重新生成，docs/ 里已提交的旧页面原样保留。
-  // site/ 里的其他草稿页不复制，免得把没提交的文件带进 docs/ 挡住发布。
+  // 颖观察：2026-10-29 起是问答录，做成主站内的 #/yin-view 页面，套主站的导航和样式。
+  // ../颖观察框架/book_data/render_book.py 生成 site/yin-view-book.json，复制进 data/；
+  // yin-view.html 只留一个跳转页，旧链接照样能打开。旧版七格页面不再生成，docs/ 里已提交的原样保留。
   const yinViewDir = path.join(__dirname, '..', '颖观察框架');
   try {
     execFileSync('python3', [path.join(yinViewDir, 'book_data', 'render_book.py')], { stdio: 'pipe' });
@@ -1110,7 +1110,9 @@ async function build() {
     console.error('颖观察问答录生成失败，沿用现有页面：', error.stdout?.toString() || error.message);
   }
   const yinViewSite = path.join(yinViewDir, 'site');
-  const yinViewPages = [['yin-view-book.html', 'yin-view.html']];
+  const yinViewRedirect = '<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><title>颖观察</title>'
+    + '<meta http-equiv="refresh" content="0; url=./#/yin-view"><script>location.replace("./#/yin-view")</script></head>'
+    + '<body><a href="./#/yin-view">颖观察</a></body></html>';
   const graphJson = JSON.stringify(graph, null, 2);
 
   await Promise.all([
@@ -1128,10 +1130,10 @@ async function build() {
     copyFileIfPresent(path.join(srcDir, 'assets', 'yinfluence-avatar.png'), path.join(docsAssetsDir, 'yinfluence-avatar.png')),
     fs.writeFile(path.join(docsDataDir, 'site.json'), siteJson, 'utf8'),
     fs.writeFile(path.join(docsDataDir, 'graph.json'), graphJson, 'utf8'),
-    ...yinViewPages.flatMap(([from, to]) => [
-      copyFile(path.join(yinViewSite, from), path.join(distDir, to)),
-      copyFile(path.join(yinViewSite, from), path.join(docsDir, to))
-    ])
+    copyFile(path.join(yinViewSite, 'yin-view-book.json'), path.join(dataDir, 'yin-view-book.json')),
+    copyFile(path.join(yinViewSite, 'yin-view-book.json'), path.join(docsDataDir, 'yin-view-book.json')),
+    fs.writeFile(path.join(distDir, 'yin-view.html'), yinViewRedirect, 'utf8'),
+    fs.writeFile(path.join(docsDir, 'yin-view.html'), yinViewRedirect, 'utf8')
   ]);
 
   console.log(`Built ${site.meta.title}`);

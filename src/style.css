@@ -6924,3 +6924,177 @@ a.live-inline-link:hover {
 .removed-episode-card:focus-within .removed-seq {
   color: #ff7f69;
 }
+
+/* 颖观察问答录（2026-10-29）：套主站卡片样式，长页面不吸附滚动 */
+body.page-yin-view {
+  scroll-snap-type: none;
+}
+
+body.page-yin-view .detail-header,
+body.page-yin-view .detail-section {
+  scroll-snap-align: none;
+  scroll-snap-stop: normal;
+}
+
+.yin-view .detail-section {
+  margin-top: 22px;
+}
+
+.yv-toc-chapter {
+  margin-top: 18px;
+}
+
+.yv-toc-chapter-link {
+  display: inline-flex;
+  align-items: baseline;
+  gap: 10px;
+  color: var(--ink-rich);
+  font-size: 19px;
+  font-weight: 700;
+  letter-spacing: 0.01em;
+}
+
+.yv-toc-label,
+.yv-chapter-label {
+  color: var(--gold-deep);
+  font-size: 12.5px;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+}
+
+.yv-toc-section {
+  display: block;
+  margin: 6px 0 0 4px;
+  padding: 8px 14px 9px;
+  border-radius: 14px;
+  color: var(--ink);
+  transition: background 0.18s ease;
+}
+
+.yv-toc-section:hover {
+  background: var(--gold-soft);
+}
+
+.yv-toc-section-title {
+  display: block;
+  font-size: 15.5px;
+  font-weight: 620;
+  color: var(--ink-rich);
+}
+
+.yv-toc-subs {
+  display: block;
+  margin-top: 2px;
+  font-size: 13px;
+  line-height: 1.7;
+  color: var(--muted-strong);
+}
+
+.yv-chapter-label {
+  margin: 0 0 6px;
+}
+
+.yv-section {
+  margin-top: 30px;
+  scroll-margin-top: 16px;
+}
+
+.detail-section .yv-section-title {
+  margin: 0 0 4px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid var(--line);
+  font-size: 22px;
+  font-weight: 720;
+  letter-spacing: 0.005em;
+}
+
+.yv-sub-title {
+  margin: 22px 0 10px;
+  font-size: 16px;
+  font-weight: 680;
+  color: var(--accent);
+  letter-spacing: 0.01em;
+}
+
+.yv-entry {
+  margin: 0 0 14px;
+  padding: 14px 18px 14px;
+  background: rgba(255, 253, 249, 0.72);
+  border: 1px solid var(--line);
+  border-left: 2px solid rgba(184, 138, 60, 0.45);
+  border-radius: 12px;
+}
+
+.detail-section .yv-question {
+  margin: 0 0 8px;
+  font-size: 14.5px;
+  line-height: 1.75;
+  color: var(--muted);
+}
+
+.yv-question-tag {
+  display: inline-block;
+  margin-right: 8px;
+  padding: 1px 9px;
+  border-radius: 999px;
+  background: var(--gold-soft);
+  color: var(--accent);
+  font-size: 12px;
+  font-weight: 650;
+}
+
+.detail-section .yv-context {
+  margin: 0 0 8px;
+  font-size: 13.5px;
+  line-height: 1.7;
+  color: var(--muted-strong);
+}
+
+.detail-section .yv-answer p {
+  margin: 8px 0 0;
+  font-size: 16px;
+  line-height: 1.95;
+  color: rgba(23, 18, 13, 0.84);
+}
+
+.detail-section .yv-answer p:first-child {
+  margin-top: 0;
+}
+
+.yv-source {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 2px 11px;
+  border-radius: 999px;
+  background: var(--gold-soft);
+  color: var(--gold-deep);
+  font-size: 12.5px;
+  font-weight: 600;
+}
+
+.yv-source:hover {
+  background: rgba(169, 120, 31, 0.2);
+  color: var(--accent);
+}
+
+.yv-entry.yv-talk {
+  border-left-color: var(--gold-deep);
+}
+
+@media (max-width: 760px) {
+  .yv-toc-chapter-link {
+    font-size: 17px;
+  }
+
+  .yv-entry {
+    padding: 12px 14px;
+  }
+
+  .detail-section .yv-answer p {
+    font-size: 15.5px;
+  }
+
+  .detail-section .yv-section-title {
+    font-size: 20px;
+  }
+}

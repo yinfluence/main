@@ -1899,6 +1899,7 @@ function getSectionProgressLabel(section) {
       document.body.classList.contains('page-episode-index')
         || document.body.classList.contains('page-live-index')
         || document.body.classList.contains('page-keyword-index')
+        || document.body.classList.contains('page-yin-view')
     ) {
       return explicitLabel;
     }
@@ -1993,6 +1994,7 @@ function getSectionProgressPanelTitle() {
   if (document.body.classList.contains('page-live-index')) return '直播轮盘';
   if (document.body.classList.contains('page-updates')) return '日志日期';
   if (document.body.classList.contains('page-keyword-index')) return '关键词目录';
+  if (document.body.classList.contains('page-yin-view')) return '颖观察目录';
   return '页面章节';
 }
 
@@ -5670,7 +5672,7 @@ function renderSidebar() {
     </div>
     <div class="sidebar-section">
       <a class="sidebar-link" href="#/graph">知识图谱 <span class="count-badge">${graphStatValue()}</span></a>
-      <a class="sidebar-link" href="./yin-view.html">颖观察 <span class="count-badge">问答录</span></a>
+      <a class="sidebar-link" href="#/yin-view">颖观察 <span class="count-badge">问答录</span></a>
       <a class="sidebar-link sidebar-link-log" href="#/updates">网页日志 <span class="count-badge">${WEBSITE_LOG_ENTRIES.length}</span></a>
     </div>
   `;
@@ -5868,6 +5870,157 @@ function renderRemovedIndex() {
     });
   }
 }
+
+// 颖观察问答录（2026-10-29）：数据由 ../颖观察框架/book_data/render_book.py 生成，打开这一页时才加载。
+let yinViewBook = null;
+let yinViewBookLoading = null;
+
+function loadYinViewBook() {
+  if (yinViewBook) return Promise.resolve(yinViewBook);
+  if (!yinViewBookLoading) {
+    yinViewBookLoading = fetch(dataUrl('yin-view-book.json'))
+      .then((response) => {
+        if (!response.ok) throw new Error(`HTTP ${response.status}`);
+        return response.json();
+      })
+      .then((data) => {
+        yinViewBook = data;
+        return data;
+      })
+      .catch((error) => {
+        yinViewBookLoading = null;
+        throw error;
+      });
+  }
+  return yinViewBookLoading;
+}
+
+function renderYinViewEntry(entry, extraClass = '') {
+  return `
+    <article class="yv-entry${extraClass ? ` ${extraClass}` : ''}">
+      ${entry.question ? `<p class="yv-question"><span class="yv-question-tag">网友</span>${escapeHtml(entry.question)}</p>` : ''}
+      ${entry.context ? `<p class="yv-context">${escapeHtml(entry.context)}</p>` : ''}
+      <div class="yv-answer">${(entry.paras || []).map((para) => `<p>${escapeHtml(para)}</p>`).join('')}</div>
+      <a class="yv-source" href="${escapeHtml(entry.route)}">${escapeHtml(entry.source)}</a>
+    </article>
+  `;
+}
+
+function renderYinView(anchor = '') {
+  document.title = `颖观察 · ${site.meta.title}`;
+  const header = (body) => `
+    <div class="detail-header">
+      <div class="back-row">
+        <button type="button" class="back-link back-button" data-nav-back="true">← 返回前一页</button>
+        <a class="back-link secondary" href="#/">返回首页</a>
+      </div>
+      <h1 class="detail-title">颖观察</h1>
+      ${body}
+    </div>
+  `;
+  if (!yinViewBook) {
+    app.innerHTML = `<section class="detail yin-view">${header('<p class="detail-summary">正在加载问答录</p>')}</section>`;
+    loadYinViewBook()
+      .then(() => {
+        if (parseHashRoute(window.location.hash).section === 'yin-view') renderRoute();
+      })
+      .catch(() => {
+        app.innerHTML = `<section class="detail yin-view">${header('<p class="detail-summary">问答录加载失败，请刷新再试。</p>')}</section>`;
+      });
+    return;
+  }
+
+  const book = yinViewBook;
+  const subTitles = (section) => (section.subs || []).map((sub) => sub.title).filter(Boolean);
+  const tocHtml = book.chapters.map((chapter) => `
+    <div class="yv-toc-chapter">
+      <a class="yv-toc-chapter-link" href="#/yin-view/${chapter.anchor}"><span class="yv-toc-label">${escapeHtml(chapter.label)}</span>${escapeHtml(chapter.title)}</a>
+      ${chapter.sections.map((section) => `
+        <a class="yv-toc-section" href="#/yin-view/${section.anchor}">
+          <span class="yv-toc-section-title">${escapeHtml(section.title)}</span>
+          ${subTitles(section).length ? `<span class="yv-toc-subs">${subTitles(section).map(escapeHtml).join('　')}</span>` : ''}
+        </a>
+      `).join('')}
+    </div>
+  `).join('') + (book.talks.length ? `
+    <div class="yv-toc-chapter">
+      <a class="yv-toc-chapter-link" href="#/yin-view/talks"><span class="yv-toc-label">附</span>讲稿</a>
+      ${book.talks.map((talk) => `
+        <a class="yv-toc-section" href="#/yin-view/${talk.anchor}"><span class="yv-toc-section-title">${escapeHtml(talk.title)}</span></a>
+      `).join('')}
+    </div>
+  ` : '');
+
+  app.innerHTML = `
+    <section class="detail yin-view">
+      ${header(`<div class="detail-summary"><p>${escapeHtml(book.subtitle)}。${(book.intro || []).map(escapeHtml).join('')}</p></div>`)}
+      <section class="detail-section yv-toc" id="yv-toc" data-progress-section="true" data-progress-label="目录">
+        <h2>目录</h2>
+        ${tocHtml}
+      </section>
+      ${book.chapters.map((chapter) => `
+        <section class="detail-section yv-chapter" id="yv-${chapter.anchor}">
+          <p class="yv-chapter-label">${escapeHtml(chapter.label)}</p>
+          <h2>${escapeHtml(chapter.title)}</h2>
+          ${chapter.sections.map((section) => `
+            <div class="yv-section" id="yv-${section.anchor}" data-progress-section="true" data-progress-label="${escapeHtml(section.title)}">
+              <h3 class="yv-section-title">${escapeHtml(section.title)}</h3>
+              ${(section.subs || []).map((sub) => `
+                ${sub.title ? `<h4 class="yv-sub-title">${escapeHtml(sub.title)}</h4>` : ''}
+                ${(sub.entries || []).map((entry) => renderYinViewEntry(entry)).join('')}
+              `).join('')}
+            </div>
+          `).join('')}
+        </section>
+      `).join('')}
+      ${book.talks.length ? `
+        <section class="detail-section yv-chapter" id="yv-talks">
+          <p class="yv-chapter-label">附</p>
+          <h2>讲稿</h2>
+          ${book.talks.map((talk) => `
+            <div class="yv-section" id="yv-${talk.anchor}" data-progress-section="true" data-progress-label="${escapeHtml(talk.title)}">
+              <h3 class="yv-section-title">${escapeHtml(talk.title)}</h3>
+              ${renderYinViewEntry(talk, 'yv-talk')}
+            </div>
+          `).join('')}
+        </section>
+      ` : ''}
+      <section class="detail-section yv-after" id="yv-after" data-progress-section="true" data-progress-label="编后记">
+        <h2>编后记</h2>
+        <p>${escapeHtml(book.afterword)}</p>
+      </section>
+    </section>
+  `;
+
+  if (anchor) {
+    // 从别的页面带着节的地址进来：等渲染和转场结束再跳
+    const jump = () => scrollToYinViewAnchor(anchor);
+    window.requestAnimationFrame(() => window.requestAnimationFrame(jump));
+    window.setTimeout(jump, 180);
+    window.setTimeout(jump, 480);
+  }
+}
+
+function scrollToYinViewAnchor(anchor) {
+  const target = document.getElementById(`yv-${anchor}`);
+  if (!target) return false;
+  suspendSnapUntil = Date.now() + 600;
+  scrollWindowInstantly(target.getBoundingClientRect().top + window.scrollY - 16, 0);
+  window.requestAnimationFrame(() => syncSectionProgress());
+  return true;
+}
+
+// 已经在问答录页里时，点目录直接滚过去，不重新渲染整页
+document.addEventListener('click', (event) => {
+  const link = event.target instanceof Element ? event.target.closest('a[href^="#/yin-view/"]') : null;
+  if (!link || parseHashRoute(window.location.hash).section !== 'yin-view' || !yinViewBook) return;
+  const anchor = link.getAttribute('href').split('/').pop();
+  if (!document.getElementById(`yv-${anchor}`)) return;
+  event.preventDefault();
+  scrollToYinViewAnchor(anchor);
+  window.history.replaceState(window.history.state, '', link.getAttribute('href'));
+  lastRenderedHash = window.location.hash;
+});
 
 function renderWebsiteLog() {
   const groups = groupWebsiteLogEntriesByMonth(WEBSITE_LOG_ENTRIES);
@@ -8940,7 +9093,8 @@ function renderRoute() {
     !window.matchMedia('(prefers-reduced-motion: reduce)').matches
   );
   const preRenderTopReset = !routeRestore && Boolean(id) && !usesViewTransition;
-  document.body.classList.toggle('has-assisted-snap', section !== 'graph');
+  document.body.classList.toggle('has-assisted-snap', section !== 'graph' && section !== 'yin-view');
+  document.body.classList.toggle('page-yin-view', section === 'yin-view');
   document.body.classList.toggle('page-home', !section);
   document.body.classList.toggle('page-episode-index', section === 'episodes' && !id);
   document.body.classList.toggle('page-live-index', section === 'lives' && !id);
@@ -8963,6 +9117,8 @@ function renderRoute() {
     renderGraphPage();
   } else if (section === 'updates') {
     renderWebsiteLog();
+  } else if (section === 'yin-view') {
+    renderYinView(id);
   } else if (section === 'home' && id === 'episodes') {
     renderHome('home-episodes');
   } else if (section === 'episodes' && !id) {
