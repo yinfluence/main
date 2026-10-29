@@ -5672,7 +5672,7 @@ function renderSidebar() {
     </div>
     <div class="sidebar-section">
       <a class="sidebar-link" href="#/graph">知识图谱 <span class="count-badge">${graphStatValue()}</span></a>
-      <a class="sidebar-link" href="#/yin-view">颖观察 <span class="count-badge">问答录</span></a>
+      <a class="sidebar-link" href="./yin-view.html">颖观察 <span class="count-badge">问答录</span></a>
       <a class="sidebar-link sidebar-link-log" href="#/updates">网页日志 <span class="count-badge">${WEBSITE_LOG_ENTRIES.length}</span></a>
     </div>
   `;
@@ -5907,6 +5907,9 @@ function renderYinViewEntry(entry, extraClass = '') {
 }
 
 function renderYinView(anchor = '') {
+  // 用户要书页排版：站内地址只跳到独立的问答录页面
+  window.location.replace(`./yin-view.html${anchor ? `#${anchor}` : ''}`);
+  return;
   document.title = `颖观察 · ${site.meta.title}`;
   const header = (body) => `
     <div class="detail-header">
