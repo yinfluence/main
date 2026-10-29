@@ -1100,16 +1100,17 @@ async function build() {
   const indexHtml = await buildIndexHtml(assetVersion);
   const siteJson = JSON.stringify(site, null, 2);
 
-  // 颖观察：先由 ../颖观察框架/gen_page.py 重新生成 site/ 下的多页，再整组复制进主站；生成失败就沿用 site/ 里现有的页面
+  // 颖观察：2026-10-29 起换成问答录。由 ../颖观察框架/book_data/render_book.py 生成 site/yin-view-book.html，
+  // 发布为 yin-view.html。旧版七格页面不再重新生成，docs/ 里已提交的旧页面原样保留。
+  // site/ 里的其他草稿页不复制，免得把没提交的文件带进 docs/ 挡住发布。
   const yinViewDir = path.join(__dirname, '..', '颖观察框架');
   try {
-    execFileSync('python3', [path.join(yinViewDir, 'parse_domains.py')], { stdio: 'pipe' });
-    execFileSync('python3', [path.join(yinViewDir, 'gen_page.py')], { stdio: 'pipe' });
+    execFileSync('python3', [path.join(yinViewDir, 'book_data', 'render_book.py')], { stdio: 'pipe' });
   } catch (error) {
-    console.error('颖观察生成失败，沿用现有页面：', error.stdout?.toString() || error.message);
+    console.error('颖观察问答录生成失败，沿用现有页面：', error.stdout?.toString() || error.message);
   }
   const yinViewSite = path.join(yinViewDir, 'site');
-  const yinViewPages = (await fs.readdir(yinViewSite).catch(() => [])).filter((f) => /^yin-view.*\.html$/.test(f));
+  const yinViewPages = [['yin-view-book.html', 'yin-view.html']];
   const graphJson = JSON.stringify(graph, null, 2);
 
   await Promise.all([
@@ -1127,9 +1128,9 @@ async function build() {
     copyFileIfPresent(path.join(srcDir, 'assets', 'yinfluence-avatar.png'), path.join(docsAssetsDir, 'yinfluence-avatar.png')),
     fs.writeFile(path.join(docsDataDir, 'site.json'), siteJson, 'utf8'),
     fs.writeFile(path.join(docsDataDir, 'graph.json'), graphJson, 'utf8'),
-    ...yinViewPages.flatMap((f) => [
-      copyFile(path.join(yinViewSite, f), path.join(distDir, f)),
-      copyFile(path.join(yinViewSite, f), path.join(docsDir, f))
+    ...yinViewPages.flatMap(([from, to]) => [
+      copyFile(path.join(yinViewSite, from), path.join(distDir, to)),
+      copyFile(path.join(yinViewSite, from), path.join(docsDir, to))
     ])
   ]);
 

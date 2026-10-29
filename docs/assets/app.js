@@ -26,6 +26,15 @@ const HOME_PLATFORM_LINKS = [
 ];
 const WEBSITE_LOG_ENTRIES = [
   {
+    date: '2026-10-29',
+    title: '颖观察换成问答录',
+    items: [
+      '颖观察照《大道：段永平投资问答录》的编法重编成一本问答录，替换原来的七格版。正文七章：做人和成长、人生选择、婚姻家庭与孩子、钱与投资、生意和企业、读书与历史、自述，共 110 条。书后附五篇整期讲稿，第 63、105、76、222、157 期。',
+      '每条是网友的提问加原话回答，回答只删不加，口头语和重复的话删掉，字幕听错的字改过，每段都回字幕核过。节名是一句短判断，小标题把它拆成几层，基本取自原话。国际形势和国家政策、点名的企业和人、家里和观众的私事不收。',
+      '页面左边常驻目录，只展开正在读的这一章；手机上点右下角目录按钮。原来七格版的各页还在，从旧链接能打开。'
+    ]
+  },
+  {
     date: '2026-10-28',
     title: 'EP232 上线，泽连斯基割地求和的传言',
     items: [
@@ -5661,7 +5670,7 @@ function renderSidebar() {
     </div>
     <div class="sidebar-section">
       <a class="sidebar-link" href="#/graph">知识图谱 <span class="count-badge">${graphStatValue()}</span></a>
-      <a class="sidebar-link" href="./yin-view.html">颖观察 <span class="count-badge">七格</span></a>
+      <a class="sidebar-link" href="./yin-view.html">颖观察 <span class="count-badge">问答录</span></a>
       <a class="sidebar-link sidebar-link-log" href="#/updates">网页日志 <span class="count-badge">${WEBSITE_LOG_ENTRIES.length}</span></a>
     </div>
   `;
