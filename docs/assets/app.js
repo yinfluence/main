@@ -5658,9 +5658,9 @@ function renderSidebar() {
       <a class="sidebar-link sidebar-link-removed" href="#/removed">已下架节目 <span class="count-badge">${getRemovedEpisodes().length}</span></a>
       <a class="sidebar-link" href="#/concepts">概念 <span class="count-badge">${site.stats.concepts}</span></a>
       <a class="sidebar-link" href="#/models">模型 <span class="count-badge">${site.stats.models}</span></a>
-      <a class="sidebar-link" href="#/people">人物 <span class="count-badge">${peopleCount}</span></a>
       <a class="sidebar-link" href="#/themes">主题 <span class="count-badge">${site.stats.themes}</span></a>
       <a class="sidebar-link" href="#/keywords">关键词 <span class="count-badge">${site.stats.keywords}</span></a>
+      <a class="sidebar-link sidebar-link-yinview" href="./yin-view.html">颖观察 <span class="count-badge">问答录</span></a>
     </div>
     <div class="sidebar-section">
       <p class="sidebar-title">搜索知识库</p>
@@ -5672,7 +5672,6 @@ function renderSidebar() {
     </div>
     <div class="sidebar-section">
       <a class="sidebar-link" href="#/graph">知识图谱 <span class="count-badge">${graphStatValue()}</span></a>
-      <a class="sidebar-link" href="./yin-view.html">颖观察 <span class="count-badge">问答录</span></a>
       <a class="sidebar-link sidebar-link-log" href="#/updates">网页日志 <span class="count-badge">${WEBSITE_LOG_ENTRIES.length}</span></a>
     </div>
   `;

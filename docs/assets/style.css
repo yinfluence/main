@@ -7098,3 +7098,9 @@ body.page-yin-view .detail-section {
     font-size: 20px;
   }
 }
+
+/* 颖观察入口：鼠标移上去字变金色（2026-10-29） */
+.sidebar-link.sidebar-link-yinview:hover,
+.sidebar-link.sidebar-link-yinview:hover .count-badge {
+  color: #cfa865;
+}
