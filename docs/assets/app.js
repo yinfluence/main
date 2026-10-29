@@ -6005,7 +6005,13 @@ function scrollToYinViewAnchor(anchor) {
   const target = document.getElementById(`yv-${anchor}`);
   if (!target) return false;
   suspendSnapUntil = Date.now() + 600;
-  scrollWindowInstantly(target.getBoundingClientRect().top + window.scrollY - 16, 0);
+  // 卡片有入场动画（往下偏移再归位），算位置时扣掉祖先元素当前的位移
+  let shift = 0;
+  for (let node = target; node && node !== document.body; node = node.parentElement) {
+    const transform = getComputedStyle(node).transform;
+    if (transform && transform !== 'none') shift += new DOMMatrixReadOnly(transform).m42;
+  }
+  scrollWindowInstantly(target.getBoundingClientRect().top - shift + window.scrollY - 16, 0);
   window.requestAnimationFrame(() => syncSectionProgress());
   return true;
 }
