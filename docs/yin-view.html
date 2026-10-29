@@ -1,6 +1,8 @@
-<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>颖观察 · 问答录</title><style>:root{--bg:#efe7da;--ink:#1f1d1a;--muted:#645f59;--line:rgba(112,98,81,.16);--gold:#b2894b;--gold-deep:#8e6932;--soft:rgba(184,138,60,.14);--navy:#161c27;--accent:#6c3f2a;
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>颖观察 · 问答录</title><style>:root{--bg:#f4efe6;--ink:#1f1d1a;--muted:#77706a;--line:rgba(112,98,81,.2);--gold:#b2894b;--gold-deep:#8e6932;--soft:rgba(178,137,75,.08);
 --serif:"Source Han Serif SC","Noto Serif CJK SC","Songti SC",serif;--sans:"PingFang SC","Hiragino Sans GB","Noto Sans CJK SC",sans-serif}
-*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:radial-gradient(circle at top center,rgba(184,138,60,.14),transparent 24%),radial-gradient(circle at 86% 10%,rgba(80,109,148,.07),transparent 20%),linear-gradient(180deg,#f7f1e8 0%,#eee7db 55%,#f5efe8 100%);background-attachment:fixed;color:var(--ink);font-family:var(--serif);font-size:18px;line-height:2}
+@media (prefers-color-scheme:light){:root{--muted:#625b54}}
+@media (prefers-color-scheme:dark){:root{--bg:#15181d;--ink:#e9e2d6;--muted:#9c958a;--line:rgba(245,225,190,.14);--gold:#cfa865;--gold-deep:#ddb878;--soft:rgba(207,168,101,.08)}}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--serif);font-size:18px;line-height:2}
 .layout{display:flex;max-width:1080px;margin:0 auto;gap:40px;padding:0 18px}
 nav{flex:0 0 220px;position:sticky;top:0;align-self:flex-start;height:100vh;overflow:auto;padding:28px 0;font-family:var(--sans)}
 nav .big{font-family:var(--serif);font-size:22px;font-weight:700;margin-bottom:10px;padding-bottom:6px;border-bottom:1px solid var(--gold)}
@@ -70,10 +72,9 @@ h2.part{font-size:24px;margin:48px 0 14px;padding-bottom:6px;border-bottom:1px s
 #totoc{position:fixed;right:16px;bottom:18px;padding:8px 16px;border:1px solid var(--gold);background:var(--bg);color:var(--gold-deep);font-family:var(--sans);font-size:14px;text-decoration:none;border-radius:18px;box-shadow:0 2px 8px rgba(0,0,0,.15)}
 .toc .se span.subs{display:block;font-family:var(--sans);font-size:13px;line-height:1.7;color:var(--muted);margin:0 0 8px 1em}
 .sitebar{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:18px 0 0;font-family:var(--sans)}
-.sitebar .brand{color:var(--navy);font-size:15px;font-weight:700;letter-spacing:.04em;text-decoration:none}
-.sitebar .back-link{display:inline-flex;align-items:center;padding:6px 14px;border-radius:999px;background:var(--soft);color:var(--accent);font-size:13.5px;font-weight:500;text-decoration:none}
-.sitebar .back-link:hover{background:rgba(169,120,31,.2)}
-.ent .a a{color:var(--gold-deep)!important;background:var(--soft);padding:1px 9px;border-radius:999px}
+.sitebar .brand{color:var(--ink);font-size:15px;font-weight:700;letter-spacing:.04em;text-decoration:none}
+.sitebar .back-link{display:inline-flex;align-items:center;padding:6px 14px;border-radius:999px;border:1px solid var(--line);color:var(--gold-deep);font-size:13.5px;text-decoration:none}
+.sitebar .back-link:hover{border-color:var(--gold)}
 </style><!--nav--><style>
 .toc .nolink{display:block;font-size:19px;font-weight:700;color:var(--muted)}
 .toc .nolink b{font-family:var(--sans);color:var(--muted);font-weight:400;margin-right:10px;font-size:15px}
