@@ -1,0 +1,96 @@
+{
+  "id": "lula",
+  "name": "卢拉",
+  "kind": "person",
+  "asOf": "2026-10-30",
+  "sources": [
+    {
+      "title": "Brazil's left-wing president Lula elected for fourth term（NPR，KJZZ 转载）",
+      "url": "https://www.kjzz.org/npr-top-stories/2026-10-25/brazils-left-wing-president-lula-elected-for-fourth-term",
+      "note": "核对 10 月 25 日第二轮投票胜出、第四个任期。"
+    },
+    {
+      "title": "Lula wins Brazil's presidency for a fourth time with 51.8% of the vote（MercoPress）",
+      "url": "https://en.mercopress.com/2026/10/26/lula-wins-brazil-s-presidency-for-a-fourth-time-with-51.8-of-the-vote/comments",
+      "note": "核对得票约 51.8%，对手弗拉维奥·博索纳罗。"
+    },
+    {
+      "title": "Brazil's presidential race heads to Lula-Bolsonaro run-off as right gains ground（NPR，WUNC 转载）",
+      "url": "https://www.wunc.org/2026-10-04/brazils-presidential-race-heads-to-lula-bolsonaro-run-off-as-right-gains-ground",
+      "note": "核对 10 月 4 日第一轮卢拉落后、进入第二轮。"
+    },
+    {
+      "title": "Luiz Inácio Lula da Silva（Wikipedia）",
+      "url": "https://en.wikipedia.org/wiki/Luiz_In%C3%A1cio_Lula_da_Silva",
+      "note": "核对 1945 年生、工人和工会领袖出身、劳工党创始人、2003 到 2010 年和 2023 年起任总统、工厂事故失去一根手指。"
+    }
+  ],
+  "summary": "卢拉是巴西劳工党创始人，2003 到 2010 年和 2023 年起任巴西总统，2026 年 10 月第二轮投票翻盘，拿到第四个任期。节目拿他讲精英一派为什么输给沉在底层的人。",
+  "description": "路易斯·伊纳西奥·卢拉·达席尔瓦 1945 年生，金属工人和工会领袖出身，1980 年参与创立劳工党。2003 到 2010 年两任巴西总统，2022 年击败雅伊尔·博索纳罗再次当选。2026 年 10 月 4 日第一轮他落后，10 月 25 日第二轮以约 51.8% 战胜弗拉维奥·博索纳罗，第四次当选。年轻时在工厂事故里失去一根手指。",
+  "basicIntro": "卢拉 1945 年 10 月出生在巴西东北部的贫苦家庭，少年进工厂当金属工人，1970 年代领导圣保罗工业区的罢工，1980 年参与创立劳工党。2003 到 2010 年任总统。2018 年因腐败案定罪入狱，2019 年获释，2021 年定罪被最高法院撤销。2022 年再次当选，2023 年 1 月就任。2026 年 10 月 25 日第二轮投票胜出，是巴西 1985 年恢复民主以来第一个第一轮落后、第二轮翻盘的候选人。",
+  "programRole": "节目把他当成塞尔维亚的对照。巴西的精英一派还高高在上，拿他缺一根手指取笑，伤的正是劳苦大众的感情，他们没沉到普通人那里去，所以输了。LIVE054 说底层选民看到他只剩九根手指，就认定他是自己人，又追问从底层起来的人有几个最后回报了底层。",
+  "programAssociations": [
+    {
+      "title": "精英输在没下到底层",
+      "episodes": [
+        "EP233",
+        "LIVE054"
+      ],
+      "note": "EP233 讲塞尔维亚学生名单下乡赢了选举，回头说巴西的精英派还没学到这一点，拿卢拉缺一根手指取笑，等于自己给自己下绊子。LIVE054 讲同一场巴西选举，选票最大的一块在沉默的大多数手里，他们最后投给了卢拉，又追问从底层出来的人有几个最后回报了底层。"
+    },
+    {
+      "title": "第一轮之后",
+      "episodes": [
+        "LIVE053"
+      ],
+      "note": "LIVE053 在第二轮投票前讲巴西选情，第一轮博索纳罗领先卢拉，第二轮定在 10 月 25 日，跟塞尔维亚选举同一天。"
+    }
+  ],
+  "styleNotes": [
+    "把出身当成招牌。工人和工会领袖的经历，是他跟底层选民之间最直接的连接。",
+    "选举时打民生牌，讲的是穷人吃饭、最低工资、社会救助。",
+    "屡次跌倒又回来，入狱、定罪撤销、再次当选，政治生命很长。"
+  ],
+  "methodNotes": [
+    "靠工会和劳工党的基层组织动员选民，这套网络从 1980 年代一直延续下来。",
+    "用社会救助项目拉住低收入选民，家庭补助金是他第一个任期的标志政策。",
+    "拉中间派结盟。2022 年他找了曾经的对手、中右翼的阿尔克明做副总统搭档。"
+  ],
+  "extensionNotes": [
+    {
+      "title": "塞尔维亚大选",
+      "note": "同一天投票，节目拿巴西的精英派跟塞尔维亚的学生名单对照，看谁真下到了底层。"
+    },
+    {
+      "title": "基本盘",
+      "note": "LIVE054 说底层选民看到他的九根手指，就认定他是自己人。"
+    },
+    {
+      "title": "长期执政",
+      "note": "他第四次当选，节目没把他当新人，看的是精英一派为什么一直赢不了他。"
+    }
+  ],
+  "aliases": [
+    "Lula",
+    "Luiz Inácio Lula da Silva",
+    "卢拉·达席尔瓦"
+  ],
+  "relatedKeywords": [
+    "塞尔维亚大选",
+    "基本盘"
+  ],
+  "episodes": [
+    {
+      "id": "EP233",
+      "note": "节目说巴西精英派拿卢拉缺一根手指取笑，没沉到普通人那里去，所以卢拉这回赢了。"
+    },
+    {
+      "id": "LIVE053",
+      "note": "第二轮投票前，直播讲第一轮博索纳罗领先、卢拉落后。"
+    },
+    {
+      "id": "LIVE054",
+      "note": "直播说底层选民看到他只剩九根手指，就认定他是自己人。"
+    }
+  ]
+}

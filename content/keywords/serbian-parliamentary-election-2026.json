@@ -1,0 +1,118 @@
+{
+  "id": "serbian-parliamentary-election-2026",
+  "name": "塞尔维亚大选",
+  "kind": "event",
+  "asOf": "2026-10-30",
+  "sources": [
+    {
+      "title": "2026 Serbian parliamentary election（Wikipedia）",
+      "url": "https://en.wikipedia.org/wiki/2026_Serbian_parliamentary_election",
+      "note": "核对 10 月 25 日提前选举、学生名单 141 席、前进党领衔的统一塞尔维亚名单 103 席、海外选票计入后的席位变化。"
+    },
+    {
+      "title": "Student List Wins Outright Majority in Serbian Parliamentary Polls（Balkan Insight）",
+      "url": "https://balkaninsight.com/2026/10/26/student-list-wins-outright-majority-in-serbian-parliamentary-polls/bi/",
+      "note": "核对学生名单得票 52.65%、武契奇领衔的名单 39.2%，学生名单单独过半。"
+    },
+    {
+      "title": "Serbia after Vucic: Who will be PM and when will a government be formed?（Al Jazeera）",
+      "url": "https://www.aljazeera.com/news/2026/10/26/serbia-after-vucic-who-will-be-pm-and-when-will-a-government-be-formed",
+      "note": "核对投票率 68.78% 为三十多年来最高、执政党认输、抗议起因是 2024 年诺维萨德车站雨棚坍塌 16 人遇难。"
+    },
+    {
+      "title": "Serbia's students won the election, now comes the EU's test（EPC）",
+      "url": "https://www.epc.eu/publication/serbias-students-won-the-election-now-comes-the-eus-test/",
+      "note": "核对选举过程有缺陷但差距和投票率让结果确定，入盟是新政府面对的考验。"
+    },
+    {
+      "title": "Students take nationwide door-to-door campaign across Serbia（N1）",
+      "url": "https://n1info.rs/english/news/students-take-nationwide-door-to-door-campaign-across-serbia/",
+      "note": "核对学生名单在全国挨家挨户拉票、下到乡村的竞选方式。"
+    }
+  ],
+  "summary": "塞尔维亚大选指 2026 年 10 月 25 日的提前议会选举，学生名单拿下过半席位，执政十几年的前进党下台。节目拿它看长期执政的党为什么输在不投票的人身上。",
+  "description": "这场选举是提前举行的。2026 年 9 月议会解散，总统武契奇辞职，领衔前进党的统一塞尔维亚名单竞选。对手是学生名单，起于 2024 年 11 月诺维萨德车站雨棚坍塌、16 人遇难后近两年的学生抗议。投票率约 69%，是三十多年来最高，2023 年上一届是 58.8%。学生名单得票约 52%，拿到 250 席里的 141 席，前进党领衔的名单约 39%，103 席，执政党认输。",
+  "conflictNotes": [
+    "执政方手里有国家资源、媒体和成熟的组织，学生名单没钱没团队，竞选拼的是谁能把人从家里叫出来。",
+    "选举规则原本对大党有利，全国一个选区、余票分配偏向大党，学生名单的得票过了半数，这套设计就挡不住了。",
+    "选后有人说是欧盟插手、搞颜色革命，节目认为往欧盟靠是塞尔维亚人自己的选择。"
+  ],
+  "programAssociations": [
+    {
+      "title": "规则是为大党设计的",
+      "episodes": [
+        "LIVE047",
+        "LIVE053"
+      ],
+      "note": "LIVE047 拆塞尔维亚的选举规则，只能选政党名单、交名单要一万个公证签名、余票偏向大党，判断这套规则是为大党设计的，学生名单冲上来以后原来的设计反而挡不住。LIVE053 在投票前一天讲，一边是武契奇换位置争总理，一边是学生组织起来的名单，支持度很高。"
+    },
+    {
+      "title": "沉默的人出了门",
+      "episodes": [
+        "EP233",
+        "LIVE054"
+      ],
+      "note": "EP233 讲结果出来以后为什么会这样。前进党的基本盘没怎么丢，投票率从五成多冲到近七成，多出来的一成多选民几乎都投给了学生。学生骑着自行车下乡，一个村一个村去聊。LIVE054 讲的是同一件事，学生联盟赢在下乡不在钱，没动前进党的票仓，赢在把原来不投票的人叫了出来。"
+    }
+  ],
+  "aftermathNotes": [
+    "学生名单单独过半，可以自己组阁，谁来当总理、怎么组政府还在谈。",
+    "新政府加速入欧的可能变大，科索沃问题和对俄制裁都会摆上谈判桌。",
+    "诺维萨德车站事故的追责，可能随着政府更替提速。"
+  ],
+  "signalNotes": [
+    "学生名单组阁和选总理的进展，能看出这个没有政党经验的联盟撑不撑得住。",
+    "塞尔维亚入盟谈判章节开始推进，或对俄制裁立场松动，说明换党正在变成换方向。",
+    "下一次地方选举的投票率要是掉回五成多，这次出门的沉默选民就没有留下来。"
+  ],
+  "extensionNotes": [
+    {
+      "title": "武契奇",
+      "note": "这场选举是他自己提前办的，结果丢了议会多数。"
+    },
+    {
+      "title": "匈牙利",
+      "note": "半年前欧尔班在高投票率下败选，节目拿它当塞尔维亚的先例。"
+    },
+    {
+      "title": "年轻人投票",
+      "note": "多出来的选民里有从没投过票的年轻人，是这次结果的关键。"
+    },
+    {
+      "title": "欧盟",
+      "note": "新政府往欧盟靠到哪一步，是这场选举之后最大的问题。"
+    }
+  ],
+  "aliases": [
+    "塞尔维亚议会选举",
+    "2026年塞尔维亚议会选举",
+    "塞尔维亚提前选举",
+    "学生名单",
+    "学生联盟"
+  ],
+  "relatedKeywords": [
+    "塞尔维亚",
+    "武契奇",
+    "匈牙利",
+    "年轻人投票",
+    "欧盟"
+  ],
+  "episodes": [
+    {
+      "id": "EP233",
+      "note": "节目拆这场选举的结果，前进党铁杆票没崩，投票率涨了一成多，新出门的选民几乎都投给了学生名单。"
+    },
+    {
+      "id": "LIVE047",
+      "note": "直播拆塞尔维亚偏向大党的选举规则和学生名单冲上来之后的几种走向。"
+    },
+    {
+      "id": "LIVE053",
+      "note": "投票前一天，直播讲武契奇争总理和学生名单两方。"
+    },
+    {
+      "id": "LIVE054",
+      "note": "直播说学生联盟骑车下乡办了两三万场活动，赢在把不投票的人叫了出来。"
+    }
+  ]
+}

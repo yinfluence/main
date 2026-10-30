@@ -2,14 +2,14 @@
   "meta": {
     "title": "颖响力知识图谱",
     "subtitle": "节目、概念、模型、人物、主题之间的可视化连接网络",
-    "nodeCount": 783,
-    "linkCount": 2945,
+    "nodeCount": 785,
+    "linkCount": 2951,
     "typeCounts": {
       "model": 84,
       "live": 54,
-      "concept": 256,
+      "concept": 257,
       "theme": 92,
-      "episode": 232,
+      "episode": 233,
       "person": 65
     }
   },
@@ -554,6 +554,17 @@
       "degree": 22
     },
     {
+      "id": "theme:sanctions-and-power-containment",
+      "key": "sanctions-and-power-containment",
+      "label": "制裁、遏制与集团竞争",
+      "fullLabel": "制裁、遏制与集团竞争",
+      "type": "theme",
+      "route": "themes/sanctions-and-power-containment",
+      "summary": "讨论制裁、门罗主义、海峡与联盟如何共同服务于压制对手集团的全球布局。",
+      "status": null,
+      "degree": 22
+    },
+    {
       "id": "episode:EP144",
       "key": "EP144",
       "label": "EP144",
@@ -638,17 +649,6 @@
       "type": "theme",
       "route": "themes/dollar-system-and-gray-trade",
       "summary": "讨论石油美元的真实脆弱点，究竟藏在公开统计之外的哪些灰色交易链条里。",
-      "status": null,
-      "degree": 21
-    },
-    {
-      "id": "theme:sanctions-and-power-containment",
-      "key": "sanctions-and-power-containment",
-      "label": "制裁、遏制与集团竞争",
-      "fullLabel": "制裁、遏制与集团竞争",
-      "type": "theme",
-      "route": "themes/sanctions-and-power-containment",
-      "summary": "讨论制裁、门罗主义、海峡与联盟如何共同服务于压制对手集团的全球布局。",
       "status": null,
       "degree": 21
     },
@@ -3282,6 +3282,17 @@
       "degree": 8
     },
     {
+      "id": "model:safety-valve-governance",
+      "key": "safety-valve-governance",
+      "label": "安全阀治理模型",
+      "fullLabel": "安全阀治理模型",
+      "type": "model",
+      "route": "models/safety-valve-governance",
+      "summary": "体系会留下分流焦虑的中间人和出口，越位了就收住。出口留得太少，压力会挑别的事往外冒。",
+      "status": null,
+      "degree": 7
+    },
+    {
       "id": "concept:performative-innovation",
       "key": "performative-innovation",
       "label": "表演式创新",
@@ -3753,17 +3764,6 @@
       "summary": "达标的好处高于说实话，造假的代价低于合规，同行又都在做，整个系统就会奖励看起来达标的人。",
       "status": null,
       "degree": 7
-    },
-    {
-      "id": "model:safety-valve-governance",
-      "key": "safety-valve-governance",
-      "label": "安全阀治理模型",
-      "fullLabel": "安全阀治理模型",
-      "type": "model",
-      "route": "models/safety-valve-governance",
-      "summary": "体系会留下分流焦虑的中间人和出口，越位了就收住。出口留得太少，压力会挑别的事往外冒。",
-      "status": null,
-      "degree": 6
     },
     {
       "id": "concept:subsidy-leverage-engine",
@@ -4316,6 +4316,28 @@
       "degree": 6
     },
     {
+      "id": "episode:EP233",
+      "key": "EP233",
+      "label": "EP233",
+      "fullLabel": "EP233 · 武契奇败选！不是票仓崩了，是塞尔维亚沉默的大多数终于出手了！",
+      "type": "episode",
+      "route": "episodes/EP233",
+      "summary": "塞尔维亚 10 月 25 日提前举行议会选举，执政十几年的武契奇和前进党丢掉了议会多数，学生名单拿下 250 席里的 141 席。前进党的铁杆票仓其实没怎么丢，变的是投票率，从上一届的五成多涨到将近七成。多出来的一成多选民，原来觉得投了也没用，这次几乎都投给了学生。学生没钱也没成熟的竞选团队，骑着自行车一个村一个村去找老百姓聊，补上了老党离基层越来越远留下的空当。执政越久积怨越多，能用选票换掉执政党，积怨就有了不流血的去处。",
+      "status": "curated",
+      "degree": 6
+    },
+    {
+      "id": "model:bounded-social-experiment",
+      "key": "bounded-social-experiment",
+      "label": "边界化社会试验",
+      "fullLabel": "边界化社会试验",
+      "type": "model",
+      "route": "models/bounded-social-experiment",
+      "summary": "边界化社会试验强调制度创新必须有可承受范围、反馈机制和退出标准。",
+      "status": null,
+      "degree": 5
+    },
+    {
       "id": "theme:growth-and-family-boundaries",
       "key": "growth-and-family-boundaries",
       "label": "成长与亲情边界",
@@ -4862,17 +4884,6 @@
       "type": "theme",
       "route": "themes/liquor-financialization-and-table-culture",
       "summary": "白酒从喝的东西变成囤的东西、调利润的东西，酒桌规矩一变，原来的消费底子也松了。",
-      "status": null,
-      "degree": 4
-    },
-    {
-      "id": "model:bounded-social-experiment",
-      "key": "bounded-social-experiment",
-      "label": "边界化社会试验",
-      "fullLabel": "边界化社会试验",
-      "type": "model",
-      "route": "models/bounded-social-experiment",
-      "summary": "边界化社会试验强调制度创新必须有可承受范围、反馈机制和退出标准。",
       "status": null,
       "degree": 4
     },
@@ -5922,6 +5933,17 @@
       "degree": 3
     },
     {
+      "id": "concept:youth-mobilization",
+      "key": "youth-mobilization",
+      "label": "青年动员",
+      "fullLabel": "青年动员",
+      "type": "concept",
+      "route": "concepts/youth-mobilization",
+      "summary": "原本不爱投票的年轻人集中出门，长期执政者靠的年龄结构就撑不住了。决定选举的常常是谁肯出门。",
+      "status": null,
+      "degree": 3
+    },
+    {
       "id": "model:circle-grant-loop",
       "key": "circle-grant-loop",
       "label": "圈层拨付闭环",
@@ -5951,6 +5973,17 @@
       "type": "concept",
       "route": "concepts/manufactured-popularity",
       "summary": "公开场面上的热度不是自己聚起来的，是运营方放风、组织、安排出来的，做出来之后再当成实力证据卖给品牌方和平台。",
+      "status": null,
+      "degree": 3
+    },
+    {
+      "id": "theme:bounded-social-experimentation",
+      "key": "bounded-social-experimentation",
+      "label": "社会实验与制度弹性",
+      "fullLabel": "社会实验与制度弹性",
+      "type": "theme",
+      "route": "themes/bounded-social-experimentation",
+      "summary": "新做法先锁在一座城市里试，输了赔得起。试的时候谁学到了东西，试成了又能不能推到别处去。",
       "status": null,
       "degree": 3
     },
@@ -6758,17 +6791,6 @@
       "degree": 2
     },
     {
-      "id": "concept:youth-mobilization",
-      "key": "youth-mobilization",
-      "label": "青年动员",
-      "fullLabel": "青年动员",
-      "type": "concept",
-      "route": "concepts/youth-mobilization",
-      "summary": "原本不爱投票的年轻人集中出门，长期执政者靠的年龄结构就撑不住了。决定选举的常常是谁肯出门。",
-      "status": null,
-      "degree": 2
-    },
-    {
       "id": "concept:channel-profit-reservoir",
       "key": "channel-profit-reservoir",
       "label": "渠道利润蓄水池",
@@ -6831,17 +6853,6 @@
       "type": "concept",
       "route": "concepts/commercial-geofence",
       "summary": "厂商用定位划出一条地理边界，越过它商品就自动降级，划线的依据是自家渠道利益而不是安全。",
-      "status": null,
-      "degree": 2
-    },
-    {
-      "id": "theme:bounded-social-experimentation",
-      "key": "bounded-social-experimentation",
-      "label": "社会实验与制度弹性",
-      "fullLabel": "社会实验与制度弹性",
-      "type": "theme",
-      "route": "themes/bounded-social-experimentation",
-      "summary": "新做法先锁在一座城市里试，输了赔得起。试的时候谁学到了东西，试成了又能不能推到别处去。",
       "status": null,
       "degree": 2
     },
@@ -7612,6 +7623,17 @@
       "type": "concept",
       "route": "concepts/currency-credit-collapse",
       "summary": "一国货币持续下跌，主因是市场不再相信这个国家的财政纪律和治理能力，外部汇率压力只是表面。",
+      "status": null,
+      "degree": 1
+    },
+    {
+      "id": "concept:grassroots-reach-decay",
+      "key": "grassroots-reach-decay",
+      "label": "基层触达衰减",
+      "fullLabel": "基层触达衰减",
+      "type": "concept",
+      "route": "concepts/grassroots-reach-decay",
+      "summary": "一个政党执政越久，中间层越厚，钱和人到得了基层的越来越少，老百姓也越来越够不着它。降到某个点，长期执政的优势就到期了。",
       "status": null,
       "degree": 1
     },
@@ -17062,6 +17084,36 @@
     {
       "source": "episode:EP232",
       "target": "theme:great-power-competition-and-strategic-time",
+      "kind": "episode-theme"
+    },
+    {
+      "source": "episode:EP233",
+      "target": "concept:youth-mobilization",
+      "kind": "episode-concept"
+    },
+    {
+      "source": "episode:EP233",
+      "target": "concept:grassroots-reach-decay",
+      "kind": "episode-concept"
+    },
+    {
+      "source": "episode:EP233",
+      "target": "model:safety-valve-governance",
+      "kind": "episode-model"
+    },
+    {
+      "source": "episode:EP233",
+      "target": "model:bounded-social-experiment",
+      "kind": "episode-model"
+    },
+    {
+      "source": "episode:EP233",
+      "target": "theme:bounded-social-experimentation",
+      "kind": "episode-theme"
+    },
+    {
+      "source": "episode:EP233",
+      "target": "theme:sanctions-and-power-containment",
       "kind": "episode-theme"
     },
     {
