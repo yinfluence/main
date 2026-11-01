@@ -40,6 +40,9 @@ MIXIN_TAB = [46,47,18,2,53,8,23,32,15,50,10,31,58,3,45,35,27,43,5,49,33,9,42,19,
              22,25,54,21,56,59,6,63,57,62,11,36,20,34,44,52]
 
 
+CURL_RETRY_WAITS = (20, 60)  # 接口失败后的等待秒数，测试里会改成 0
+
+
 class BiliError(Exception):
     """请求 B 站失败。带一句人看得懂的原因，不要抛裸 traceback 到日志里。"""
 
@@ -49,15 +52,24 @@ def curl_json(url, cookies, referer='https://www.bilibili.com/'):
     if cookies:
         cmd[1:1] = ['-b', cookies]
     api = url.split('?')[0]
-    try:
-        out = subprocess.run(cmd, capture_output=True, text=True, timeout=60).stdout
-    except subprocess.TimeoutExpired:
-        raise BiliError(f'请求超时 60s: {api}')
-    try:
-        return json.loads(out)
-    except json.JSONDecodeError:
-        # 风控时 B 站回的是 HTML 而不是 JSON。裸 JSONDecodeError 在日志里看不出是什么事
-        raise BiliError(f'返回不是 JSON（风控？）: {api} -> {out.strip()[:80]!r}')
+    # 2026-11-01 18:01 投稿列表接口回了一次空内容，两分钟后同一接口又正常，
+    # 一次没重试整轮就报「扫描出错」。所以超时和非 JSON 都隔一会儿再试，三次都不行才算失败。
+    waits = CURL_RETRY_WAITS
+    for i in range(len(waits) + 1):
+        try:
+            out = subprocess.run(cmd, capture_output=True, text=True, timeout=60).stdout
+        except subprocess.TimeoutExpired:
+            err = f'请求超时 60s: {api}'
+        else:
+            try:
+                return json.loads(out)
+            except json.JSONDecodeError:
+                # 风控时 B 站回的是 HTML 或空内容而不是 JSON
+                err = f'返回不是 JSON（风控？）: {api} -> {out.strip()[:80]!r}'
+        if i < len(waits):
+            print(f'WARN: {err}，{waits[i]} 秒后重试（第 {i + 1} 次）', file=sys.stderr)
+            time.sleep(waits[i])
+    raise BiliError(err)
 
 
 def cookie_has_session(path):
