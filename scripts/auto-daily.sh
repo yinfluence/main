@@ -80,8 +80,10 @@ PY
 # 用户 2026-08-06 要求：节目整理好并上线后要有弹窗，别再只靠翻 status.json。
 # 只用 display dialog，不用 display notification——7-29 到 7-30 的教训是横幅被系统
 # 静默丢掉而 osascript 照样返回 0。dialog 是这台机器上实测确定看得见的通道。
-# 后台起（&）所以不阻塞脚本；giving up after 1800 保证没人在电脑前时半小时自动收掉，
-# 不会留一个 osascript 进程和一块挡屏的窗一直挂着。
+# 后台起（&）所以不阻塞脚本。
+# 2026-11-01 去掉了 giving up after 1800：用户出门两天，10-30 EP233 上线的弹窗
+# 半小时后自己收掉了，回来什么也没看到，以为脚本没跑。弹窗只在终局状态出现，
+# 一天顶多一两个，留着等人回来点「知道了」。
 # 只在两个终局状态弹：上线复核通过、以及重试用尽彻底放弃。中间的重试仍然只落盘，
 # 否则一轮失败会连弹好几次，回到"太吵"的老问题。
 popup() {
@@ -92,9 +94,9 @@ on run argv
   set m to item 2 of argv
   activate
   if (item 3 of argv) is "error" then
-    display dialog m with title t buttons {"知道了"} default button 1 with icon caution giving up after 1800
+    display dialog m with title t buttons {"知道了"} default button 1 with icon caution
   else
-    display dialog m with title t buttons {"知道了"} default button 1 with icon note giving up after 1800
+    display dialog m with title t buttons {"知道了"} default button 1 with icon note
   end if
 end run
 AS
@@ -191,7 +193,7 @@ AGENT_SESSION_DIR="$HOME/.claude/projects/$(printf '%s' "$WEB" | sed 's/[^a-zA-Z
 # 算错了就当场说出来。信号 4 一旦悄悄指向不存在的目录，看门狗会把纯读不写盘的正常整理
 # 判成卡死，而日志上只留一句"卡死"，看不出是检测坏了 —— 2026-08-10 到 08-14 就是这样。
 if [[ ! -d "$AGENT_SESSION_DIR" ]]; then
-  log "WARN: agent session 目录不存在（$AGENT_SESSION_DIR），信号 4 失效，卡死判定会偏严"
+  log "WARN: agent session 目录不存在（${AGENT_SESSION_DIR}），信号 4 失效，卡死判定会偏严"
 fi
 
 agent_activity_stamp() {

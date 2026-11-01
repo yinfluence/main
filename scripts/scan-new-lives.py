@@ -68,6 +68,47 @@ def fetch_season():
     return data['data']['archives']
 
 
+def fetch_recent_uploads_not_in_season(archives):
+    """投稿列表里标题带「直播回放」、还没进合集的新回放。
+
+    2026-11-01 查出来的漏洞：10-31 21点场回放 17:20 UTC 就上传了，UP 主没及时
+    放进合集，只看合集的扫描两次都报「无新场次」。所以合集之外再看投稿列表第一页，
+    只收比合集里最新一条更晚的，免得把从没进合集的老回放翻出来。
+    投稿列表要 wbi 签名和登录态，借 scan-new-episodes.py 现成的函数。
+    """
+    import importlib.util
+    spec = importlib.util.spec_from_file_location(
+        'scan_eps', os.path.join(HERE, 'scan-new-episodes.py'))
+    S = importlib.util.module_from_spec(spec)
+    spec.loader.exec_module(S)
+    cookies, mixin = S.login_cookies()
+    if not cookies:
+        raise RuntimeError('拿不到 B 站登录态')
+    d = S.curl_json('https://api.bilibili.com/x/space/wbi/arc/search?' +
+                    S.wbi_sign({'mid': UP_MID, 'ps': 25, 'pn': 1, 'order': 'pubdate',
+                                'platform': 'web', 'web_location': 1550101}, mixin),
+                    cookies, referer=f'https://space.bilibili.com/{UP_MID}')
+    if d.get('code') != 0:
+        raise RuntimeError(f"投稿列表 code={d.get('code')} {d.get('message')}")
+    return pick_unseasoned((((d.get('data') or {}).get('list') or {}).get('vlist') or []), archives)
+
+
+def pick_unseasoned(vlist, archives):
+    """从投稿列表里挑出不在合集、又比合集最新一条更晚的直播回放。单独拆出来方便测试。"""
+    in_season = {a['bvid'] for a in archives}
+    newest = max((a['pubdate'] for a in archives), default=0)
+    out = []
+    for v in vlist:
+        if '直播回放' not in v.get('title', '') or v['bvid'] in in_season:
+            continue
+        if v.get('created', 0) <= newest:
+            continue
+        secs = sum(int(x) * 60 ** i for i, x in enumerate(reversed(str(v.get('length') or '0').split(':'))))
+        out.append({'bvid': v['bvid'], 'title': v['title'],
+                    'pubdate': v['created'], 'duration': secs})
+    return out
+
+
 def known_bvids():
     """已收录的 bvid。一期可能挂两条链接（合并场），全部收进来。"""
     out = set()
@@ -155,10 +196,19 @@ def main():
         print(f'ERROR: 拉合集失败 {e}', file=sys.stderr)
         return 1
 
+    # 合集之外再兜一次投稿列表。这一步失败不拖垮整次扫描，合集那条照常走。
+    extra = []
+    try:
+        extra = fetch_recent_uploads_not_in_season(archives)
+    except Exception as e:
+        print(f'WARN: 投稿列表兜底没跑成（{e}），只按合集判断', file=sys.stderr)
+    for a in extra:
+        print(f"  投稿列表里有还没进合集的回放：{a['bvid']} {a['title'][:40]}")
+
     known = known_bvids()
-    fresh = [a for a in archives if a['bvid'] not in known]
+    fresh = [a for a in archives + extra if a['bvid'] not in known]
     if not fresh:
-        print(f'无新场次（合集 {len(archives)} 个，已收录 {len(known)} 个 bvid）')
+        print(f'无新场次（合集 {len(archives)} 个，合集外新回放 {len(extra)} 个，已收录 {len(known)} 个 bvid）')
         return 10
 
     groups = group_segments(fresh)
