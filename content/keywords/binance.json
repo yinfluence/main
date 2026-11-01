@@ -1,0 +1,89 @@
+{
+  "id": "binance",
+  "name": "币安",
+  "kind": "organization",
+  "asOf": "2026-11-01",
+  "sources": [
+    {
+      "title": "Binance（英文维基百科）",
+      "url": "https://en.wikipedia.org/wiki/Binance",
+      "note": "核对 2017 年由赵长鹏创办、按交易量是全球最大的加密货币交易所，2023 年与美国司法部和解、赵长鹏认罪并卸任 CEO。"
+    },
+    {
+      "title": "Binance freezes $3B after security incident, suspends withdrawals（Fox Business）",
+      "url": "https://www.foxbusiness.com/technology/binance-says-security-incident-had-estimated-6-3b-impact-3b-assets-frozen",
+      "note": "核对 2026 年 10 月安全事件估算影响约 63 亿美元、约 30 亿美元资产被冻结、提现暂停。"
+    },
+    {
+      "title": "Binance Says a Compromised Engineer's Laptop May Have Opened the $6.3B Drain（Yahoo Finance）",
+      "url": "https://finance.yahoo.com/markets/crypto/articles/binance-says-compromised-engineer-laptop-161203953.html",
+      "note": "核对初步调查认为入口是一名运维工程师被攻破的笔记本电脑，未发现私钥泄露的证据。"
+    },
+    {
+      "title": "Binance Halts Withdrawals After Suspected Hack as Tether, Circle Freeze More Than $2.38B（IBTimes UK）",
+      "url": "https://www.ibtimes.co.uk/binance-suspends-withdrawals-after-security-incident-1828947",
+      "note": "核对稳定币发行方 Tether 和 Circle 冻结了被转走的稳定币。"
+    }
+  ],
+  "summary": "币安是赵长鹏 2017 年创办的加密货币交易所，按交易量排全球第一。LIVE055 借它 2026 年 10 月被盗约 63 亿美元，讲一张不归单一国家管的资金网碍着了谁。",
+  "description": "币安（Binance）2017 年由赵长鹏创办，做现货、合约和各类数字资产的撮合交易，按交易量是全球最大的加密货币交易所。2023 年 11 月它跟美国司法部就反洗钱和制裁违规达成和解，赵长鹏认罪并卸任 CEO，此后仍是大股东。\n\n2026 年 10 月 29 日起，币安关联的几个热钱包出现大规模异常转出。币安次日公开调查，暂停提现，估算总影响约 63 亿美元，其中约 30 亿美元被冻结。初步说法是一名运维工程师的笔记本电脑被攻破，攻击者冒用授权提交转出，私钥没有泄露的证据。\n\nLIVE055 拿这次被盗讲两层。一层是币安绕开银行和外汇监管，最碍事的是管资本进出最严的国家。另一层是钱流进币安以后大多换成美元稳定币，美元反倒是这套体系的受益者。",
+  "positionNotes": [
+    "它连着两头，一头是各国本地货币，一头是比特币和美元稳定币。钱进来换一次币，就绕开了银行和外汇管制。",
+    "节目引用的数字是全球用户 77% 来自新兴市场，2020 年还是 49%，交易用户里新兴市场占 93%。",
+    "它在美国的位置一直在变。LIVE055 的说法是特朗普第一任期对它和赵长鹏很不客气，2025 年天才法案通过以后，稳定币被定成美元的数字形态，币安成了美元在链上的大通道。"
+  ],
+  "programAssociations": [
+    {
+      "title": "一次被盗，打的是一张资金网",
+      "episodes": [
+        "LIVE055"
+      ],
+      "note": "LIVE055 先把 2026 年 10 月这次被盗讲清楚，四十分钟八条公链转出，约三十亿稳定币被冻结，其余拆散转走。接着按查案先看谁受害最大的办法推动机，币安是对资本管制的系统性绕过，最想打它的是资金外流管得最严、外流还在加剧的国家。原话没点名，留给听众自己想。再往下讲美国，钱换成稳定币就是换成美元，美国受的伤没那么大，攻击者很难是它这一类。"
+    }
+  ],
+  "exposureNotes": [
+    "中心化交易所把大量资产放在少数热钱包里，授权系统一旦被冒用，几十分钟就能转走几十亿美元。",
+    "它同时承接正常交易、跨境换汇和灰色资金，电诈集团的钱也从这里走，所以各国对它的态度总是又用又防。",
+    "被转走的资产能不能追回，看币种。稳定币发行方能冻结，比特币这类去中心化的币转走基本就拿不回来。"
+  ],
+  "signalNotes": [
+    "看到币安暂停提现、热钱包异常转出的消息，先分清是交易所自身被攻破，还是用户账户被盗，两种后果完全不同。",
+    "币安跟美国监管的关系一变，往往跟稳定币立法和美元在链上的地位一起变，LIVE055 把天才法案当成转折点。",
+    "资本管制收紧、汇率剧烈波动的国家，民间换币、买稳定币的需求会跟着冒头，币安常在这类新闻里出现。"
+  ],
+  "extensionNotes": [
+    {
+      "title": "稳定币",
+      "note": "这次被冻住的三十亿全是稳定币，币安里的钱多半最后换成稳定币，两样东西要放在一起看。"
+    },
+    {
+      "title": "比特币",
+      "note": "LIVE055 讲有人只把币安当一次性买入的地方，买完比特币拆进冷钱包，几年不动。"
+    },
+    {
+      "title": "汇率",
+      "note": "LIVE055 后半场讲人民币每年升三个半点是为了让钱不往外跑，币安是汇率之外的另一条出口。"
+    },
+    {
+      "title": "资本墙",
+      "note": "币安的存在本身就是绕墙的通道，墙越高的国家越不喜欢它。"
+    }
+  ],
+  "aliases": [
+    "Binance",
+    "必安",
+    "B安"
+  ],
+  "relatedKeywords": [
+    "稳定币",
+    "比特币",
+    "汇率",
+    "特朗普"
+  ],
+  "episodes": [
+    {
+      "id": "LIVE055",
+      "note": "2026 年 10 月被盗约 63 亿美元，借它讲谁最怕这张资金网做大，以及稳定币怎样把钱带回美元。"
+    }
+  ]
+}

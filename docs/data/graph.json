@@ -2,11 +2,11 @@
   "meta": {
     "title": "颖响力知识图谱",
     "subtitle": "节目、概念、模型、人物、主题之间的可视化连接网络",
-    "nodeCount": 785,
-    "linkCount": 2951,
+    "nodeCount": 786,
+    "linkCount": 2967,
     "typeCounts": {
       "model": 84,
-      "live": 54,
+      "live": 55,
       "concept": 257,
       "theme": 92,
       "episode": 233,
@@ -543,6 +543,17 @@
       "degree": 23
     },
     {
+      "id": "theme:dollar-system-and-gray-trade",
+      "key": "dollar-system-and-gray-trade",
+      "label": "美元体系与灰色贸易",
+      "fullLabel": "美元体系与灰色贸易",
+      "type": "theme",
+      "route": "themes/dollar-system-and-gray-trade",
+      "summary": "讨论石油美元的真实脆弱点，究竟藏在公开统计之外的哪些灰色交易链条里。",
+      "status": null,
+      "degree": 22
+    },
+    {
       "id": "person:donald-trump",
       "key": "donald-trump",
       "label": "特朗普",
@@ -642,17 +653,6 @@
       "degree": 22
     },
     {
-      "id": "theme:dollar-system-and-gray-trade",
-      "key": "dollar-system-and-gray-trade",
-      "label": "美元体系与灰色贸易",
-      "fullLabel": "美元体系与灰色贸易",
-      "type": "theme",
-      "route": "themes/dollar-system-and-gray-trade",
-      "summary": "讨论石油美元的真实脆弱点，究竟藏在公开统计之外的哪些灰色交易链条里。",
-      "status": null,
-      "degree": 21
-    },
-    {
       "id": "episode:EP131",
       "key": "EP131",
       "label": "EP131",
@@ -662,6 +662,28 @@
       "summary": "《焦点访谈》报道哪吒汽车破产重整，266 亿债权对着不到 1500 万现金。哪吒的窟窿不在创始人和风投，核心推手是地方国资。桐乡给的是常规招商扶持，宜春让财政局下属企业当大股东、代建厂房，南宁换成产投集团出钱，滑进了隐形债务。国资挑电车是图不担责、能记业绩，越想安全越不安全。价格战、一两年一换代的研发和说不清的营销费用一起烧钱，大家只能赌上市。IPO 一停，销量崩到一个月 110 辆。剩下几十家电车企业能活下来的寥寥无几，哪吒只是先倒下的一个。",
       "status": "curated",
       "degree": 21
+    },
+    {
+      "id": "model:strategic-timing",
+      "key": "strategic-timing",
+      "label": "战略时机",
+      "fullLabel": "战略时机",
+      "type": "model",
+      "route": "models/strategic-timing",
+      "summary": "看对方向只是一半，什么时候进、什么时候等、用多大的注，往往更决定结果。",
+      "status": null,
+      "degree": 20
+    },
+    {
+      "id": "theme:middle-class-descent-and-stratification",
+      "key": "middle-class-descent-and-stratification",
+      "label": "中产下坠与分层社会",
+      "fullLabel": "中产下坠与分层社会",
+      "type": "theme",
+      "route": "themes/middle-class-descent-and-stratification",
+      "summary": "当中间层缺乏缓冲带时，经济下行会迅速转成身份下坠、关系断裂和社会分层加固。",
+      "status": null,
+      "degree": 20
     },
     {
       "id": "episode:EP138",
@@ -704,28 +726,6 @@
       "type": "model",
       "route": "models/leverage-backfire",
       "summary": "杠杆反噬解释上行期放大利润的结构，如何在下行期放大亏损、现金流压力和清偿困难。",
-      "status": null,
-      "degree": 19
-    },
-    {
-      "id": "model:strategic-timing",
-      "key": "strategic-timing",
-      "label": "战略时机",
-      "fullLabel": "战略时机",
-      "type": "model",
-      "route": "models/strategic-timing",
-      "summary": "看对方向只是一半，什么时候进、什么时候等、用多大的注，往往更决定结果。",
-      "status": null,
-      "degree": 19
-    },
-    {
-      "id": "theme:middle-class-descent-and-stratification",
-      "key": "middle-class-descent-and-stratification",
-      "label": "中产下坠与分层社会",
-      "fullLabel": "中产下坠与分层社会",
-      "type": "theme",
-      "route": "themes/middle-class-descent-and-stratification",
-      "summary": "当中间层缺乏缓冲带时，经济下行会迅速转成身份下坠、关系断裂和社会分层加固。",
       "status": null,
       "degree": 19
     },
@@ -906,17 +906,6 @@
       "degree": 18
     },
     {
-      "id": "model:subsidy-capital-flywheel",
-      "key": "subsidy-capital-flywheel",
-      "label": "补贴资本飞轮",
-      "fullLabel": "补贴资本飞轮",
-      "type": "model",
-      "route": "models/subsidy-capital-flywheel",
-      "summary": "补贴资本飞轮解释地方财政、产业基金、企业估值和再融资如何互相放大。",
-      "status": null,
-      "degree": 17
-    },
-    {
       "id": "model:path-dependence",
       "key": "path-dependence",
       "label": "路径依赖",
@@ -924,6 +913,17 @@
       "type": "model",
       "route": "models/path-dependence",
       "summary": "早期的选择一旦成功，会沉淀成习惯、资产和期待，反过来限制后来的转向。",
+      "status": null,
+      "degree": 18
+    },
+    {
+      "id": "model:subsidy-capital-flywheel",
+      "key": "subsidy-capital-flywheel",
+      "label": "补贴资本飞轮",
+      "fullLabel": "补贴资本飞轮",
+      "type": "model",
+      "route": "models/subsidy-capital-flywheel",
+      "summary": "补贴资本飞轮解释地方财政、产业基金、企业估值和再融资如何互相放大。",
       "status": null,
       "degree": 17
     },
@@ -979,6 +979,17 @@
       "type": "episode",
       "route": "episodes/EP189",
       "summary": "石油进口量断崖式世界第一的中国，日均消耗近1500万桶。美以与伊朗的军事行动展开、霍尔木兹海峡被封后，进口在三四个月内减少三成多。短期油价、新能源替代和动用战略储备，这三种主流解释都算不平这笔账。剩下最可能的解释，是它的真实需求只有进口量的三分之二左右，多出的部分多年来一直在转成战备储油。海峡一封，它只是停止增储，退回真实需求，所以进口大跌，工业没受什么破坏。按个人估计，台海一旦升级成中大型战争，石油最少要按两年来储。这套储备眼看建成，冲突偏偏在这时爆发，从此永远差一点。",
+      "status": "curated",
+      "degree": 17
+    },
+    {
+      "id": "episode:EP192",
+      "key": "EP192",
+      "label": "EP192",
+      "fullLabel": "EP192 · 梁文锋说漏嘴的算力乱象！揭露中国AI行业的真实浪费与困境。",
+      "type": "episode",
+      "route": "episodes/EP192",
+      "summary": "梁文锋一场近四小时的闭门会文字稿被放了出来。他是量化出身，不屑对投资人吹牛，稿子里的话八九成可信。四张华为的卡才抵一张英伟达的卡，手里一万六千张只折合四五千张，缺口要靠别的卡补。由此推断灰色贸易这条路被坐实了，但这一步是推断，稿子没说卡从哪来。国内七八家一起做大模型，卡和算力中心的需求被一起做大，这条产业链跟当年的电车很像。现在的 AI 还没到自我学习那一步，泡沫可能就在眼前。文件偏偏在月之暗面爆火之后流出，一种猜测是投资机构借这次泄露敲打梁文锋。",
       "status": "curated",
       "degree": 17
     },
@@ -1049,17 +1060,6 @@
       "degree": 16
     },
     {
-      "id": "episode:EP192",
-      "key": "EP192",
-      "label": "EP192",
-      "fullLabel": "EP192 · 梁文锋说漏嘴的算力乱象！揭露中国AI行业的真实浪费与困境。",
-      "type": "episode",
-      "route": "episodes/EP192",
-      "summary": "梁文锋一场近四小时的闭门会文字稿被放了出来。他是量化出身，不屑对投资人吹牛，稿子里的话八九成可信。四张华为的卡才抵一张英伟达的卡，手里一万六千张只折合四五千张，缺口要靠别的卡补。由此推断灰色贸易这条路被坐实了，但这一步是推断，稿子没说卡从哪来。国内七八家一起做大模型，卡和算力中心的需求被一起做大，这条产业链跟当年的电车很像。现在的 AI 还没到自我学习那一步，泡沫可能就在眼前。文件偏偏在月之暗面爆火之后流出，一种猜测是投资机构借这次泄露敲打梁文锋。",
-      "status": "curated",
-      "degree": 16
-    },
-    {
       "id": "live:LIVE049",
       "key": "LIVE049",
       "label": "LIVE049",
@@ -1067,6 +1067,17 @@
       "type": "live",
       "route": "lives/LIVE049",
       "summary": "高端款只做十台，经手的人每台要的回扣比普通款高一百倍。",
+      "status": "published",
+      "degree": 16
+    },
+    {
+      "id": "live:LIVE055",
+      "key": "LIVE055",
+      "label": "LIVE055",
+      "fullLabel": "LIVE055 · 币安被盗63亿美元！史上最大加密劫案背后真相：黑客图的真是那笔钱吗？",
+      "type": "live",
+      "route": "lives/LIVE055",
+      "summary": "被冻住的那三十亿全是稳定币，链上每一笔都查得到。",
       "status": "published",
       "degree": 16
     },
@@ -1566,6 +1577,17 @@
       "degree": 12
     },
     {
+      "id": "concept:cash-optionality",
+      "key": "cash-optionality",
+      "label": "现金选择权",
+      "fullLabel": "现金选择权",
+      "type": "concept",
+      "route": "concepts/cash-optionality",
+      "summary": "现金在高波动时期的核心价值，是保留等待、谈判、退出和重新进入的选择权。",
+      "status": null,
+      "degree": 12
+    },
+    {
       "id": "model:small-state-balancing-model",
       "key": "small-state-balancing-model",
       "label": "小国平衡术",
@@ -1617,6 +1639,17 @@
       "type": "episode",
       "route": "episodes/EP042",
       "summary": "万达和王健林的事常被问成谁给谁做了局，它背后说的是钱跟钱不一样。同样一千万，十年低息还和一天就还、当天利息十万，是两种钱。他从港股退市，是嫌市盈率低、市值推不上去，想回A股拿更多钱。A股和港股上市先后落空，引资的钱到期要回购，只能接太盟这种周期长、对赌更苛刻的钱。太盟没设套，局是公开摆着的，王健林躬身入局，最后双方都没得利。按个人看法，问题在2015年就埋下了，万达正往全世界扩张时政策有了调整，他在哈佛的一场演讲触动了体系。他没把资产转去国外，还在一笔笔还债，把关了门的马拉松跑完。",
+      "status": "curated",
+      "degree": 12
+    },
+    {
+      "id": "episode:EP076",
+      "key": "EP076",
+      "label": "EP076",
+      "fullLabel": "EP076 · 今天的黄金白银，无论涨跌对散户来说都是陷阱。",
+      "type": "episode",
+      "route": "episodes/EP076",
+      "summary": "铜条那期之后有人追问黄金白银能不能赚钱。从现在开始，绝大多数人怎么做都赔。真正有信用的是纽约贵金属商品交易所，香港的黄金市场已属二级。散户碰得到的水贝料商、私营 App 和实物渠道，都是三四级的私盘。盘主对不对冲全看贪婪，不对冲又扛不住，平台一消失，用户的钱也跟着没了。大赌场和山姆超市反而都在控制贪婪。喊你一起玩的人多半已经重仓在先，你押上的却是全部身家。真正的高手一上来砸进一半资产，其余时间拿好现金，等下一次机会。",
       "status": "curated",
       "degree": 12
     },
@@ -1841,17 +1874,6 @@
       "degree": 11
     },
     {
-      "id": "concept:cash-optionality",
-      "key": "cash-optionality",
-      "label": "现金选择权",
-      "fullLabel": "现金选择权",
-      "type": "concept",
-      "route": "concepts/cash-optionality",
-      "summary": "现金在高波动时期的核心价值，是保留等待、谈判、退出和重新进入的选择权。",
-      "status": null,
-      "degree": 11
-    },
-    {
       "id": "theme:ev-safety-and-consumer-testing",
       "key": "ev-safety-and-consumer-testing",
       "label": "新能源安全边界与消费者测试",
@@ -1893,17 +1915,6 @@
       "route": "concepts/active-neutrality",
       "summary": "卡在关键位置上的小国躲不开大国博弈，能长久的中立靠守住规则、主动参与定规则。",
       "status": null,
-      "degree": 11
-    },
-    {
-      "id": "episode:EP076",
-      "key": "EP076",
-      "label": "EP076",
-      "fullLabel": "EP076 · 今天的黄金白银，无论涨跌对散户来说都是陷阱。",
-      "type": "episode",
-      "route": "episodes/EP076",
-      "summary": "铜条那期之后有人追问黄金白银能不能赚钱。从现在开始，绝大多数人怎么做都赔。真正有信用的是纽约贵金属商品交易所，香港的黄金市场已属二级。散户碰得到的水贝料商、私营 App 和实物渠道，都是三四级的私盘。盘主对不对冲全看贪婪，不对冲又扛不住，平台一消失，用户的钱也跟着没了。大赌场和山姆超市反而都在控制贪婪。喊你一起玩的人多半已经重仓在先，你押上的却是全部身家。真正的高手一上来砸进一半资产，其余时间拿好现金，等下一次机会。",
-      "status": "curated",
       "degree": 11
     },
     {
@@ -2237,6 +2248,17 @@
       "degree": 9
     },
     {
+      "id": "theme:exam-centered-education-and-person-formation",
+      "key": "exam-centered-education-and-person-formation",
+      "label": "考试中心教育与人成形",
+      "fullLabel": "考试中心教育与人成形",
+      "type": "theme",
+      "route": "themes/exam-centered-education-and-person-formation",
+      "summary": "学校和家庭围着考试转，把孩子塑造成服从分数和权威的人。",
+      "status": null,
+      "degree": 9
+    },
+    {
       "id": "person:lee-kuan-yew",
       "key": "lee-kuan-yew",
       "label": "李光耀",
@@ -2512,6 +2534,17 @@
       "degree": 9
     },
     {
+      "id": "episode:EP107",
+      "key": "EP107",
+      "label": "EP107",
+      "fullLabel": "EP107 · 未来12个月美元黄金怎么走？看懂川普的石油美元棋局，你就全明白了。",
+      "type": "episode",
+      "route": "episodes/EP107",
+      "summary": "主流都说去美元化不可逆，黄金要迎来大牛市，金价却一路走低。石油用美元结算是美元霸权的根，常说起源于 1974 年的美沙石油美元安排。过去十年冒出一个漏洞。灰色石油绕开海关统计和 SWIFT，用黄金或人民币结算。把它算进去，非美元结算早已过半。特朗普打委内瑞拉、对伊朗下手，是一套新门罗主义。让盟友出钱守墙，用很低的成本把灰色石油堵回墙内。价差一没，九成原油可能回到美元结算。未来 12 个月美元走强、黄金偏弱，前提是这套围堵真能成型。",
+      "status": "curated",
+      "degree": 9
+    },
+    {
       "id": "episode:EP111",
       "key": "EP111",
       "label": "EP111",
@@ -2622,6 +2655,17 @@
       "degree": 9
     },
     {
+      "id": "episode:EP223",
+      "key": "EP223",
+      "label": "EP223",
+      "fullLabel": "EP223 · 贴息精准锁定了谁？是福利还是老乡别走？背后三大目的全解读。",
+      "type": "episode",
+      "route": "episodes/EP223",
+      "summary": "10 月起首套房贷贴息一个百分点，最长五年，房子要在 120 平米以下、总价 150 万以内，钱九成由中央出。三道门槛把一线城市排除在外，剩下的买家是三四线城市从没买过房、手里攒了二三十万的人。一年一万块左右的补贴，换走的是他们的养老钱、养孩子的钱和应急的钱，还要背上二十年月供，补贴却只管五年。贴息背后有三个目的，按人群精准锁住现金，用成交托住地价和银行的抵押物，再绕开汇率的限制把贷款利率悄悄压低一截。抗风险最弱的人，留住手里的现金比拿这笔补贴要紧。",
+      "status": "curated",
+      "degree": 9
+    },
+    {
       "id": "episode:EP229",
       "key": "EP229",
       "label": "EP229",
@@ -2717,17 +2761,6 @@
       "type": "model",
       "route": "models/technology-wave-cycle",
       "summary": "技术浪潮周期强调方向正确还不够，资本、基础设施、真实应用和时间窗口必须对齐。",
-      "status": null,
-      "degree": 8
-    },
-    {
-      "id": "theme:exam-centered-education-and-person-formation",
-      "key": "exam-centered-education-and-person-formation",
-      "label": "考试中心教育与人成形",
-      "fullLabel": "考试中心教育与人成形",
-      "type": "theme",
-      "route": "themes/exam-centered-education-and-person-formation",
-      "summary": "学校和家庭围着考试转，把孩子塑造成服从分数和权威的人。",
       "status": null,
       "degree": 8
     },
@@ -3051,17 +3084,6 @@
       "degree": 8
     },
     {
-      "id": "episode:EP107",
-      "key": "EP107",
-      "label": "EP107",
-      "fullLabel": "EP107 · 未来12个月美元黄金怎么走？看懂川普的石油美元棋局，你就全明白了。",
-      "type": "episode",
-      "route": "episodes/EP107",
-      "summary": "主流都说去美元化不可逆，黄金要迎来大牛市，金价却一路走低。石油用美元结算是美元霸权的根，常说起源于 1974 年的美沙石油美元安排。过去十年冒出一个漏洞。灰色石油绕开海关统计和 SWIFT，用黄金或人民币结算。把它算进去，非美元结算早已过半。特朗普打委内瑞拉、对伊朗下手，是一套新门罗主义。让盟友出钱守墙，用很低的成本把灰色石油堵回墙内。价差一没，九成原油可能回到美元结算。未来 12 个月美元走强、黄金偏弱，前提是这套围堵真能成型。",
-      "status": "curated",
-      "degree": 8
-    },
-    {
       "id": "episode:EP113",
       "key": "EP113",
       "label": "EP113",
@@ -3223,17 +3245,6 @@
       "type": "episode",
       "route": "episodes/EP221",
       "summary": "2026 年 9 月 25 日，63 岁的刘欢在上海病逝。人刚走，有人翻出他九十年代末唱的《从头再来》，骂他忽悠下岗工人。一个歌手手里没有决定别人命运的权力，时代的账不该记在他头上。那英在成都演唱会上临时加唱半首《弯弯的月亮》送别老友，随即被举报没报批，文旅局专门发了通报，说这不算违规。盯着她的人多半跟她无仇。别的演出改两三句歌词就被整改，同样的规则轮到名人，大家想看它还管不管。规则忽松忽紧、标准因人而异，才是这股怨气的来源。",
-      "status": "curated",
-      "degree": 8
-    },
-    {
-      "id": "episode:EP223",
-      "key": "EP223",
-      "label": "EP223",
-      "fullLabel": "EP223 · 贴息精准锁定了谁？是福利还是老乡别走？背后三大目的全解读。",
-      "type": "episode",
-      "route": "episodes/EP223",
-      "summary": "10 月起首套房贷贴息一个百分点，最长五年，房子要在 120 平米以下、总价 150 万以内，钱九成由中央出。三道门槛把一线城市排除在外，剩下的买家是三四线城市从没买过房、手里攒了二三十万的人。一年一万块左右的补贴，换走的是他们的养老钱、养孩子的钱和应急的钱，还要背上二十年月供，补贴却只管五年。贴息背后有三个目的，按人群精准锁住现金，用成交托住地价和银行的抵押物，再绕开汇率的限制把贷款利率悄悄压低一截。抗风险最弱的人，留住手里的现金比拿这笔补贴要紧。",
       "status": "curated",
       "degree": 8
     },
@@ -3513,6 +3524,28 @@
       "degree": 7
     },
     {
+      "id": "theme:capital-exit-and-cross-border-harvest",
+      "key": "capital-exit-and-cross-border-harvest",
+      "label": "资本博弈与美元退出",
+      "fullLabel": "资本博弈与美元退出",
+      "type": "theme",
+      "route": "themes/capital-exit-and-cross-border-harvest",
+      "summary": "钱借跨境结构退出、换成美元，这些通道又被一条条查住。",
+      "status": null,
+      "degree": 7
+    },
+    {
+      "id": "concept:capital-wall",
+      "key": "capital-wall",
+      "label": "资本筑墙",
+      "fullLabel": "资本筑墙",
+      "type": "concept",
+      "route": "concepts/capital-wall",
+      "summary": "用监管在资金、技术和人员出境的路上立起一道墙。资产跟中国有联系的人得选边，要么留下受管，要么走了别回来。",
+      "status": null,
+      "degree": 7
+    },
+    {
       "id": "concept:rule-gaming-backfire",
       "key": "rule-gaming-backfire",
       "label": "钻规则反噬",
@@ -3755,6 +3788,17 @@
       "degree": 7
     },
     {
+      "id": "episode:EP233",
+      "key": "EP233",
+      "label": "EP233",
+      "fullLabel": "EP233 · 武契奇败选！不是票仓崩了，是塞尔维亚沉默的大多数终于出手了！",
+      "type": "episode",
+      "route": "episodes/EP233",
+      "summary": "塞尔维亚 10 月 25 日提前举行议会选举，执政十几年的武契奇和前进党丢掉了议会多数，学生名单拿下 250 席里的 141 席。前进党的铁杆票仓其实没怎么丢，变的是投票率，从上一届的五成多涨到将近七成。多出来的一成多选民，原来觉得投了也没用，这次几乎都投给了学生。学生没钱也没成熟的竞选团队，骑着自行车一个村一个村去找老百姓聊，补上了老党离基层越来越远留下的空当。执政越久积怨越多，能用选票换掉执政党，积怨就有了不流血的去处。",
+      "status": "curated",
+      "degree": 7
+    },
+    {
       "id": "model:kpi-fraud-equilibrium",
       "key": "kpi-fraud-equilibrium",
       "label": "KPI造假均衡",
@@ -3931,6 +3975,17 @@
       "degree": 6
     },
     {
+      "id": "concept:weapons-of-the-weak",
+      "key": "weapons-of-the-weak",
+      "label": "弱者的武器",
+      "fullLabel": "弱者的武器",
+      "type": "concept",
+      "route": "concepts/weapons-of-the-weak",
+      "summary": "日常、隐蔽、匿名、非组织化的微观抵抗，比公开对抗更难被传统治理手段处理。",
+      "status": null,
+      "degree": 6
+    },
+    {
       "id": "concept:identity-over-wealth",
       "key": "identity-over-wealth",
       "label": "身份压倒财富",
@@ -4037,28 +4092,6 @@
       "type": "person",
       "route": "people/zhang-xuefeng",
       "summary": "张雪峰本名张子彪，考研辅导老师出身，靠分析报考院校和专业走红，2026 年 3 月在苏州猝死；节目先后讲他被封、复播改口、劝人求稳和目的论式的高考观。",
-      "status": null,
-      "degree": 6
-    },
-    {
-      "id": "theme:capital-exit-and-cross-border-harvest",
-      "key": "capital-exit-and-cross-border-harvest",
-      "label": "资本博弈与美元退出",
-      "fullLabel": "资本博弈与美元退出",
-      "type": "theme",
-      "route": "themes/capital-exit-and-cross-border-harvest",
-      "summary": "钱借跨境结构退出、换成美元，这些通道又被一条条查住。",
-      "status": null,
-      "degree": 6
-    },
-    {
-      "id": "concept:capital-wall",
-      "key": "capital-wall",
-      "label": "资本筑墙",
-      "fullLabel": "资本筑墙",
-      "type": "concept",
-      "route": "concepts/capital-wall",
-      "summary": "用监管在资金、技术和人员出境的路上立起一道墙。资产跟中国有联系的人得选边，要么留下受管，要么走了别回来。",
       "status": null,
       "degree": 6
     },
@@ -4316,17 +4349,6 @@
       "degree": 6
     },
     {
-      "id": "episode:EP233",
-      "key": "EP233",
-      "label": "EP233",
-      "fullLabel": "EP233 · 武契奇败选！不是票仓崩了，是塞尔维亚沉默的大多数终于出手了！",
-      "type": "episode",
-      "route": "episodes/EP233",
-      "summary": "塞尔维亚 10 月 25 日提前举行议会选举，执政十几年的武契奇和前进党丢掉了议会多数，学生名单拿下 250 席里的 141 席。前进党的铁杆票仓其实没怎么丢，变的是投票率，从上一届的五成多涨到将近七成。多出来的一成多选民，原来觉得投了也没用，这次几乎都投给了学生。学生没钱也没成熟的竞选团队，骑着自行车一个村一个村去找老百姓聊，补上了老党离基层越来越远留下的空当。执政越久积怨越多，能用选票换掉执政党，积怨就有了不流血的去处。",
-      "status": "curated",
-      "degree": 6
-    },
-    {
       "id": "model:bounded-social-experiment",
       "key": "bounded-social-experiment",
       "label": "边界化社会试验",
@@ -4426,6 +4448,17 @@
       "degree": 5
     },
     {
+      "id": "concept:collective-action-threshold",
+      "key": "collective-action-threshold",
+      "label": "集体行动阈值",
+      "fullLabel": "集体行动阈值",
+      "type": "concept",
+      "route": "concepts/collective-action-threshold",
+      "summary": "同一个动作，参与人数越过某个点，性质就从个人行为变成有组织的活动，管理方的反应也随之从劝一句跳到应激处置。",
+      "status": null,
+      "degree": 5
+    },
+    {
       "id": "model:centralized-control-backfire",
       "key": "centralized-control-backfire",
       "label": "集中控制反噬",
@@ -4499,17 +4532,6 @@
       "type": "concept",
       "route": "concepts/emotion-front-running",
       "summary": "完整事实还没出来，情绪先被点燃、站队先完成，等反转来了，跟着上头的人只剩挨打脸。",
-      "status": null,
-      "degree": 5
-    },
-    {
-      "id": "concept:weapons-of-the-weak",
-      "key": "weapons-of-the-weak",
-      "label": "弱者的武器",
-      "fullLabel": "弱者的武器",
-      "type": "concept",
-      "route": "concepts/weapons-of-the-weak",
-      "summary": "日常、隐蔽、匿名、非组织化的微观抵抗，比公开对抗更难被传统治理手段处理。",
       "status": null,
       "degree": 5
     },
@@ -5093,17 +5115,6 @@
       "type": "concept",
       "route": "concepts/route-substitution-illusion",
       "summary": "新的港口、陆路或航线可以分流局部业务，但很难在短期内替代真正的世界级主通道。",
-      "status": null,
-      "degree": 4
-    },
-    {
-      "id": "concept:collective-action-threshold",
-      "key": "collective-action-threshold",
-      "label": "集体行动阈值",
-      "fullLabel": "集体行动阈值",
-      "type": "concept",
-      "route": "concepts/collective-action-threshold",
-      "summary": "同一个动作，参与人数越过某个点，性质就从个人行为变成有组织的活动，管理方的反应也随之从劝一句跳到应激处置。",
       "status": null,
       "degree": 4
     },
@@ -6538,6 +6549,17 @@
       "degree": 2
     },
     {
+      "id": "concept:compliance-refusal",
+      "key": "compliance-refusal",
+      "label": "合规式拒绝",
+      "fullLabel": "合规式拒绝",
+      "type": "concept",
+      "route": "concepts/compliance-refusal",
+      "summary": "把法律没有禁止的事说成规则不允许，用合规两个字挡住请求，既不必解释动机，也不必承担拒绝的后果。",
+      "status": null,
+      "degree": 2
+    },
+    {
       "id": "person:he-qi",
       "key": "he-qi",
       "label": "何旗",
@@ -7568,17 +7590,6 @@
       "type": "person",
       "route": "people/haibian-de-xisailuo",
       "summary": "海边的西塞罗是微信公众号《海边的西塞罗》的作者，写历史和公共议题。EP048 从他 2025 年 12 月的文章《论扯淡与中式逻辑》讲起，再谈皇汉和 1644 史观。",
-      "status": null,
-      "degree": 1
-    },
-    {
-      "id": "concept:compliance-refusal",
-      "key": "compliance-refusal",
-      "label": "合规式拒绝",
-      "fullLabel": "合规式拒绝",
-      "type": "concept",
-      "route": "concepts/compliance-refusal",
-      "summary": "把法律没有禁止的事说成规则不允许，用合规两个字挡住请求，既不必解释动机，也不必承担拒绝的后果。",
       "status": null,
       "degree": 1
     },
@@ -23384,6 +23395,86 @@
     {
       "source": "live:LIVE054",
       "target": "theme:state-business-entanglement",
+      "kind": "live-theme"
+    },
+    {
+      "source": "live:LIVE055",
+      "target": "episode:EP107",
+      "kind": "live-episode"
+    },
+    {
+      "source": "live:LIVE055",
+      "target": "episode:EP223",
+      "kind": "live-episode"
+    },
+    {
+      "source": "live:LIVE055",
+      "target": "episode:EP076",
+      "kind": "live-episode"
+    },
+    {
+      "source": "live:LIVE055",
+      "target": "episode:EP192",
+      "kind": "live-episode"
+    },
+    {
+      "source": "live:LIVE055",
+      "target": "episode:EP233",
+      "kind": "live-episode"
+    },
+    {
+      "source": "live:LIVE055",
+      "target": "concept:capital-wall",
+      "kind": "live-concept"
+    },
+    {
+      "source": "live:LIVE055",
+      "target": "concept:cash-optionality",
+      "kind": "live-concept"
+    },
+    {
+      "source": "live:LIVE055",
+      "target": "concept:weapons-of-the-weak",
+      "kind": "live-concept"
+    },
+    {
+      "source": "live:LIVE055",
+      "target": "concept:collective-action-threshold",
+      "kind": "live-concept"
+    },
+    {
+      "source": "live:LIVE055",
+      "target": "concept:compliance-refusal",
+      "kind": "live-concept"
+    },
+    {
+      "source": "live:LIVE055",
+      "target": "model:strategic-timing",
+      "kind": "live-model"
+    },
+    {
+      "source": "live:LIVE055",
+      "target": "model:path-dependence",
+      "kind": "live-model"
+    },
+    {
+      "source": "live:LIVE055",
+      "target": "theme:capital-exit-and-cross-border-harvest",
+      "kind": "live-theme"
+    },
+    {
+      "source": "live:LIVE055",
+      "target": "theme:dollar-system-and-gray-trade",
+      "kind": "live-theme"
+    },
+    {
+      "source": "live:LIVE055",
+      "target": "theme:middle-class-descent-and-stratification",
+      "kind": "live-theme"
+    },
+    {
+      "source": "live:LIVE055",
+      "target": "theme:exam-centered-education-and-person-formation",
       "kind": "live-theme"
     },
     {
