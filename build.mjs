@@ -1102,7 +1102,7 @@ async function build() {
 
   // 颖观察：2026-10-29 起是问答录。用户要原来的书页排版，只跟主站做配色和入口的适配，
   // 所以发布 ../颖观察框架/site/yin-view-book.html 为 yin-view.html（render_book.py 生成）。
-  // 站内 #/yin-view 只做跳转。旧版七格页面不再生成，docs/ 里已提交的原样保留。
+  // 站内 #/yin-view 只做跳转。旧版七格页面（yin-view-A 到 G 等）2026-11-01 改成跳转页，指向问答录。
   const yinViewDir = path.join(__dirname, '..', '颖观察框架');
   try {
     execFileSync('python3', [path.join(yinViewDir, 'book_data', 'render_book.py')], { stdio: 'pipe' });
@@ -1127,8 +1127,6 @@ async function build() {
     copyFileIfPresent(path.join(srcDir, 'assets', 'yinfluence-avatar.png'), path.join(docsAssetsDir, 'yinfluence-avatar.png')),
     fs.writeFile(path.join(docsDataDir, 'site.json'), siteJson, 'utf8'),
     fs.writeFile(path.join(docsDataDir, 'graph.json'), graphJson, 'utf8'),
-    copyFile(path.join(yinViewSite, 'yin-view-book.json'), path.join(dataDir, 'yin-view-book.json')),
-    copyFile(path.join(yinViewSite, 'yin-view-book.json'), path.join(docsDataDir, 'yin-view-book.json')),
     copyFile(path.join(yinViewSite, 'yin-view-book.html'), path.join(distDir, 'yin-view.html')),
     copyFile(path.join(yinViewSite, 'yin-view-book.html'), path.join(docsDir, 'yin-view.html'))
   ]);
