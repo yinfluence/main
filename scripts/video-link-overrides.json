@@ -1249,5 +1249,16 @@
       "platform": "youtube",
       "url": "https://www.youtube.com/watch?v=niiZTYQltUM"
     }
+  },
+  "EP234": {
+    "bilibili": {
+      "platform": "bilibili",
+      "url": "https://www.bilibili.com/video/BV1jpxb63E7W/",
+      "access": "member"
+    },
+    "youtube": {
+      "platform": "youtube",
+      "url": "https://www.youtube.com/watch?v=RfPZFHO8CMo"
+    }
   }
 }

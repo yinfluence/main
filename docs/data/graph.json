@@ -2,14 +2,14 @@
   "meta": {
     "title": "颖响力知识图谱",
     "subtitle": "节目、概念、模型、人物、主题之间的可视化连接网络",
-    "nodeCount": 786,
-    "linkCount": 2967,
+    "nodeCount": 787,
+    "linkCount": 2972,
     "typeCounts": {
       "model": 84,
       "live": 55,
       "concept": 257,
       "theme": 92,
-      "episode": 233,
+      "episode": 234,
       "person": 65
     }
   },
@@ -653,6 +653,17 @@
       "degree": 22
     },
     {
+      "id": "model:strategic-timing",
+      "key": "strategic-timing",
+      "label": "战略时机",
+      "fullLabel": "战略时机",
+      "type": "model",
+      "route": "models/strategic-timing",
+      "summary": "看对方向只是一半，什么时候进、什么时候等、用多大的注，往往更决定结果。",
+      "status": null,
+      "degree": 21
+    },
+    {
       "id": "episode:EP131",
       "key": "EP131",
       "label": "EP131",
@@ -662,17 +673,6 @@
       "summary": "《焦点访谈》报道哪吒汽车破产重整，266 亿债权对着不到 1500 万现金。哪吒的窟窿不在创始人和风投，核心推手是地方国资。桐乡给的是常规招商扶持，宜春让财政局下属企业当大股东、代建厂房，南宁换成产投集团出钱，滑进了隐形债务。国资挑电车是图不担责、能记业绩，越想安全越不安全。价格战、一两年一换代的研发和说不清的营销费用一起烧钱，大家只能赌上市。IPO 一停，销量崩到一个月 110 辆。剩下几十家电车企业能活下来的寥寥无几，哪吒只是先倒下的一个。",
       "status": "curated",
       "degree": 21
-    },
-    {
-      "id": "model:strategic-timing",
-      "key": "strategic-timing",
-      "label": "战略时机",
-      "fullLabel": "战略时机",
-      "type": "model",
-      "route": "models/strategic-timing",
-      "summary": "看对方向只是一半，什么时候进、什么时候等、用多大的注，往往更决定结果。",
-      "status": null,
-      "degree": 20
     },
     {
       "id": "theme:middle-class-descent-and-stratification",
@@ -1610,6 +1610,17 @@
       "degree": 12
     },
     {
+      "id": "theme:film-industry-and-traffic-logic",
+      "key": "film-industry-and-traffic-logic",
+      "label": "影视工业与流量逻辑",
+      "fullLabel": "影视工业与流量逻辑",
+      "type": "theme",
+      "route": "themes/film-industry-and-traffic-logic",
+      "summary": "影视生产越来越服从人设、粉丝和宣发热度，角色和作品本身退到后面。",
+      "status": null,
+      "degree": 12
+    },
+    {
       "id": "model:sanction-parallel-market",
       "key": "sanction-parallel-market",
       "label": "制裁平行市场模型",
@@ -1881,17 +1892,6 @@
       "type": "theme",
       "route": "themes/ev-safety-and-consumer-testing",
       "summary": "讨论新能源车与相关电池系统如何把安全验证不足的代价，转移到真实用户和真实事故里。",
-      "status": null,
-      "degree": 11
-    },
-    {
-      "id": "theme:film-industry-and-traffic-logic",
-      "key": "film-industry-and-traffic-logic",
-      "label": "影视工业与流量逻辑",
-      "fullLabel": "影视工业与流量逻辑",
-      "type": "theme",
-      "route": "themes/film-industry-and-traffic-logic",
-      "summary": "影视生产越来越服从人设、粉丝和宣发热度，角色和作品本身退到后面。",
       "status": null,
       "degree": 11
     },
@@ -3876,6 +3876,17 @@
       "degree": 6
     },
     {
+      "id": "concept:moral-capital",
+      "key": "moral-capital",
+      "label": "道德资本",
+      "fullLabel": "道德资本",
+      "type": "concept",
+      "route": "concepts/moral-capital",
+      "summary": "一件件实事攒下的信任，平时折不成现金，到了难处会回来，也会被借去给别的事背书。",
+      "status": null,
+      "degree": 6
+    },
+    {
       "id": "concept:truth-indifferent-rhetoric",
       "key": "truth-indifferent-rhetoric",
       "label": "对真相冷漠的话术",
@@ -4378,17 +4389,6 @@
       "type": "concept",
       "route": "concepts/great-small-power-leveling",
       "summary": "在不敢动用核武的常规战争里，AI和无人机让小国靠生产与研发能力反超，甚至打到大国本土。",
-      "status": null,
-      "degree": 5
-    },
-    {
-      "id": "concept:moral-capital",
-      "key": "moral-capital",
-      "label": "道德资本",
-      "fullLabel": "道德资本",
-      "type": "concept",
-      "route": "concepts/moral-capital",
-      "summary": "一件件实事攒下的信任，平时折不成现金，到了难处会回来，也会被借去给别的事背书。",
       "status": null,
       "degree": 5
     },
@@ -4899,6 +4899,17 @@
       "degree": 5
     },
     {
+      "id": "episode:EP234",
+      "key": "EP234",
+      "label": "EP234",
+      "fullLabel": "EP234 · 刘德华天王光环消耗殆尽！新片可能马屁拍到马腿上？",
+      "type": "episode",
+      "route": "episodes/EP234",
+      "summary": "刘德华主演的抗疫片《白衣逆行者》原名《战疫天使》，2020 年底就在深圳杀青，压了快六年，定档 11 月 6 日上映，评论区几乎全是嘲讽。片子一拖再拖，是因为分寸难拿，送审来回改，改完时观众对那几年的情绪已经掉了头，放在哪个档期片方都怕挨骂。到了刘德华这个咖位，没人逼得了他接戏，接下来就是自己选的路。香港电影产量萎缩、人才断档，不少影人北上只琢磨风口，故事离普通人越来越远，两边观众都不买账。拍不好就该体面退场，给喜欢过自己的观众留点念想。",
+      "status": "curated",
+      "degree": 5
+    },
+    {
       "id": "theme:liquor-financialization-and-table-culture",
       "key": "liquor-financialization-and-table-culture",
       "label": "白酒金融化与餐桌秩序",
@@ -5247,6 +5258,17 @@
       "type": "concept",
       "route": "concepts/identity-premium",
       "summary": "商品价格里超出功能的那一截，买的是让别人看出自己属于哪一类人，这一截随着撑它的阶层一起涨落。",
+      "status": null,
+      "degree": 4
+    },
+    {
+      "id": "concept:time-window-reading",
+      "key": "time-window-reading",
+      "label": "时间窗口阅读",
+      "fullLabel": "时间窗口阅读",
+      "type": "concept",
+      "route": "concepts/time-window-reading",
+      "summary": "同一个动作放在不同年份，意思完全不同。评价一个人的选择，先看它发生在哪个时间窗口，别拿后来的结果倒推动机。",
       "status": null,
       "degree": 4
     },
@@ -5988,6 +6010,17 @@
       "degree": 3
     },
     {
+      "id": "theme:evaluation-and-moral-capital",
+      "key": "evaluation-and-moral-capital",
+      "label": "人物评价与道德资本",
+      "fullLabel": "人物评价与道德资本",
+      "type": "theme",
+      "route": "themes/evaluation-and-moral-capital",
+      "summary": "李亚鹏生意屡败却撑住了一家唇腭裂医院，刘欢去世后被翻出一首旧歌挨骂，两期都在问一个人该怎样被评价。",
+      "status": null,
+      "degree": 3
+    },
+    {
       "id": "theme:bounded-social-experimentation",
       "key": "bounded-social-experimentation",
       "label": "社会实验与制度弹性",
@@ -5995,17 +6028,6 @@
       "type": "theme",
       "route": "themes/bounded-social-experimentation",
       "summary": "新做法先锁在一座城市里试，输了赔得起。试的时候谁学到了东西，试成了又能不能推到别处去。",
-      "status": null,
-      "degree": 3
-    },
-    {
-      "id": "concept:time-window-reading",
-      "key": "time-window-reading",
-      "label": "时间窗口阅读",
-      "fullLabel": "时间窗口阅读",
-      "type": "concept",
-      "route": "concepts/time-window-reading",
-      "summary": "同一个动作放在不同年份，意思完全不同。评价一个人的选择，先看它发生在哪个时间窗口，别拿后来的结果倒推动机。",
       "status": null,
       "degree": 3
     },
@@ -6831,17 +6853,6 @@
       "type": "concept",
       "route": "concepts/human-centered-contract",
       "summary": "国家和公民之间有一份双向契约。个体替国家冒险，国家出事时不把他当成可以丢掉的成本。国家信用一部分就攒在这份契约有没有兑现上。",
-      "status": null,
-      "degree": 2
-    },
-    {
-      "id": "theme:evaluation-and-moral-capital",
-      "key": "evaluation-and-moral-capital",
-      "label": "人物评价与道德资本",
-      "fullLabel": "人物评价与道德资本",
-      "type": "theme",
-      "route": "themes/evaluation-and-moral-capital",
-      "summary": "李亚鹏生意屡败却撑住了一家唇腭裂医院，刘欢去世后被翻出一首旧歌挨骂，两期都在问一个人该怎样被评价。",
       "status": null,
       "degree": 2
     },
@@ -17125,6 +17136,31 @@
     {
       "source": "episode:EP233",
       "target": "theme:sanctions-and-power-containment",
+      "kind": "episode-theme"
+    },
+    {
+      "source": "episode:EP234",
+      "target": "concept:moral-capital",
+      "kind": "episode-concept"
+    },
+    {
+      "source": "episode:EP234",
+      "target": "concept:time-window-reading",
+      "kind": "episode-concept"
+    },
+    {
+      "source": "episode:EP234",
+      "target": "model:strategic-timing",
+      "kind": "episode-model"
+    },
+    {
+      "source": "episode:EP234",
+      "target": "theme:film-industry-and-traffic-logic",
+      "kind": "episode-theme"
+    },
+    {
+      "source": "episode:EP234",
+      "target": "theme:evaluation-and-moral-capital",
       "kind": "episode-theme"
     },
     {
