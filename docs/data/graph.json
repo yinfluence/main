@@ -2,14 +2,14 @@
   "meta": {
     "title": "颖响力知识图谱",
     "subtitle": "节目、概念、模型、人物、主题之间的可视化连接网络",
-    "nodeCount": 787,
-    "linkCount": 2972,
+    "nodeCount": 788,
+    "linkCount": 2978,
     "typeCounts": {
       "model": 84,
       "live": 55,
       "concept": 257,
       "theme": 92,
-      "episode": 234,
+      "episode": 235,
       "person": 65
     }
   },
@@ -169,6 +169,17 @@
       "degree": 27
     },
     {
+      "id": "theme:rule-of-law-boundaries-and-social-trust",
+      "key": "rule-of-law-boundaries-and-social-trust",
+      "label": "法治边界与社会信任",
+      "fullLabel": "法治边界与社会信任",
+      "type": "theme",
+      "route": "themes/rule-of-law-boundaries-and-social-trust",
+      "summary": "法律管到哪里、管不到哪里。规则被钻空子、被权力压过，或者根本没写进法条时，人和人之间的信任会怎么变。",
+      "status": null,
+      "degree": 27
+    },
+    {
       "id": "episode:EP156",
       "key": "EP156",
       "label": "EP156",
@@ -209,17 +220,6 @@
       "type": "concept",
       "route": "concepts/cost-shifting",
       "summary": "强势一方把本该自己付的成本，借价格、合同、规则或时间推给没得选的人。",
-      "status": null,
-      "degree": 26
-    },
-    {
-      "id": "theme:rule-of-law-boundaries-and-social-trust",
-      "key": "rule-of-law-boundaries-and-social-trust",
-      "label": "法治边界与社会信任",
-      "fullLabel": "法治边界与社会信任",
-      "type": "theme",
-      "route": "themes/rule-of-law-boundaries-and-social-trust",
-      "summary": "法律管到哪里、管不到哪里。规则被钻空子、被权力压过，或者根本没写进法条时，人和人之间的信任会怎么变。",
       "status": null,
       "degree": 26
     },
@@ -730,6 +730,17 @@
       "degree": 19
     },
     {
+      "id": "model:path-dependence",
+      "key": "path-dependence",
+      "label": "路径依赖",
+      "fullLabel": "路径依赖",
+      "type": "model",
+      "route": "models/path-dependence",
+      "summary": "早期的选择一旦成功，会沉淀成习惯、资产和期待，反过来限制后来的转向。",
+      "status": null,
+      "degree": 19
+    },
+    {
       "id": "episode:EP128",
       "key": "EP128",
       "label": "EP128",
@@ -902,17 +913,6 @@
       "type": "model",
       "route": "models/value-capture",
       "summary": "一条商业链条上，创造了价值和留下了价值是两回事，要看钱最后落在谁手里。",
-      "status": null,
-      "degree": 18
-    },
-    {
-      "id": "model:path-dependence",
-      "key": "path-dependence",
-      "label": "路径依赖",
-      "fullLabel": "路径依赖",
-      "type": "model",
-      "route": "models/path-dependence",
-      "summary": "早期的选择一旦成功，会沉淀成习惯、资产和期待，反过来限制后来的转向。",
       "status": null,
       "degree": 18
     },
@@ -2061,6 +2061,17 @@
       "degree": 10
     },
     {
+      "id": "model:institutional-fit",
+      "key": "institutional-fit",
+      "label": "制度适配",
+      "fullLabel": "制度适配",
+      "type": "model",
+      "route": "models/institutional-fit",
+      "summary": "能力能不能兑现，要看组织落在什么样的法律、资本和治理环境里。同一个团队、同一套制度，换个地方结果可能完全不同。",
+      "status": null,
+      "degree": 10
+    },
+    {
       "id": "episode:EP041",
       "key": "EP041",
       "label": "EP041",
@@ -2332,17 +2343,6 @@
       "type": "concept",
       "route": "concepts/sanction-containment",
       "summary": "制裁的深层用途是长期压住对手集团的经济体量，让它整体做不大，没法跟自己势均力敌。",
-      "status": null,
-      "degree": 9
-    },
-    {
-      "id": "model:institutional-fit",
-      "key": "institutional-fit",
-      "label": "制度适配",
-      "fullLabel": "制度适配",
-      "type": "model",
-      "route": "models/institutional-fit",
-      "summary": "能力能不能兑现，要看组织落在什么样的法律、资本和治理环境里。同一个团队、同一套制度，换个地方结果可能完全不同。",
       "status": null,
       "degree": 9
     },
@@ -4019,6 +4019,17 @@
       "degree": 6
     },
     {
+      "id": "concept:crisis-power-reallocation",
+      "key": "crisis-power-reallocation",
+      "label": "危机中的权力重排",
+      "fullLabel": "危机中的权力重排",
+      "type": "concept",
+      "route": "concepts/crisis-power-reallocation",
+      "summary": "危机会改变谁在前台、谁承担责任、谁保留资源，从而触发权力位置的重新排序。",
+      "status": null,
+      "degree": 6
+    },
+    {
       "id": "theme:authoritarian-succession-and-state-fragility",
       "key": "authoritarian-succession-and-state-fragility",
       "label": "威权继承与国家裂缝",
@@ -4360,6 +4371,17 @@
       "degree": 6
     },
     {
+      "id": "episode:EP235",
+      "key": "EP235",
+      "label": "EP235",
+      "fullLabel": "EP235 · 先有法还是先有国？波兰政坛动荡对照韩国危机，看懂东西政治文明底层逻辑。",
+      "type": "episode",
+      "route": "episodes/EP235",
+      "summary": "2026 年 10 月底，波兰宪法法院乱成一团。议会今年选出八名新法官，总统纳夫罗茨基拒绝为其中五人主持宣誓，执政联盟和总统一方互指对方夺权，楼里还起了推搡。可两边争的始终是规则怎么解释，没人想靠军队拿下对方。两年前韩国总统尹锡悦同样被朝野对立困住，第一反应却是宣布戒严，跳出制度去压平矛盾。两国宪政转型都只有三四十年，危机里走向相反，差别在文明底色。欧洲先有法后有国，东亚先有国后有法。制度可以照搬，对规则的敬畏要上百年才攒得下来，危机时刻守得住法治才算成熟。",
+      "status": "curated",
+      "degree": 6
+    },
+    {
       "id": "model:bounded-social-experiment",
       "key": "bounded-social-experiment",
       "label": "边界化社会试验",
@@ -4565,17 +4587,6 @@
       "type": "person",
       "route": "people/wang-shi",
       "summary": "王石是万科创始人、董事会名誉主席。节目借他看地产老板怎样交棒和退场，交出去的公司出了事，人和家底又怎样被牵回来。",
-      "status": null,
-      "degree": 5
-    },
-    {
-      "id": "concept:crisis-power-reallocation",
-      "key": "crisis-power-reallocation",
-      "label": "危机中的权力重排",
-      "fullLabel": "危机中的权力重排",
-      "type": "concept",
-      "route": "concepts/crisis-power-reallocation",
-      "summary": "危机会改变谁在前台、谁承担责任、谁保留资源，从而触发权力位置的重新排序。",
       "status": null,
       "degree": 5
     },
@@ -5339,6 +5350,17 @@
       "degree": 4
     },
     {
+      "id": "theme:crisis-era-power-reallocation",
+      "key": "crisis-era-power-reallocation",
+      "label": "危机时代的权力重排",
+      "fullLabel": "危机时代的权力重排",
+      "type": "theme",
+      "route": "themes/crisis-era-power-reallocation",
+      "summary": "转型和危机期，原来站在前面的人退下来，空出的位置由谁接，接过去以后是机会还是靶子。",
+      "status": null,
+      "degree": 4
+    },
+    {
       "id": "concept:system-rollback",
       "key": "system-rollback",
       "label": "系统回滚",
@@ -5434,6 +5456,17 @@
       "type": "concept",
       "route": "concepts/metric-locking",
       "summary": "指标锁死指组织先把达标数字定成必须成立的结果，再让测试、显示和汇报口径围着这个数字改写。",
+      "status": null,
+      "degree": 4
+    },
+    {
+      "id": "concept:institutional-software-transfer",
+      "key": "institutional-software-transfer",
+      "label": "制度软件移植",
+      "fullLabel": "制度软件移植",
+      "type": "concept",
+      "route": "concepts/institutional-software-transfer",
+      "summary": "把治理体系拆成硬件和软件两层看。土地、规划、基建可以整体搬过去，管理制度背后人的意识和行政逻辑，很难跨体制移植。",
       "status": null,
       "degree": 4
     },
@@ -6076,17 +6109,6 @@
       "degree": 3
     },
     {
-      "id": "theme:crisis-era-power-reallocation",
-      "key": "crisis-era-power-reallocation",
-      "label": "危机时代的权力重排",
-      "fullLabel": "危机时代的权力重排",
-      "type": "theme",
-      "route": "themes/crisis-era-power-reallocation",
-      "summary": "转型和危机期，原来站在前面的人退下来，空出的位置由谁接，接过去以后是机会还是靶子。",
-      "status": null,
-      "degree": 3
-    },
-    {
       "id": "concept:toxic-recycling",
       "key": "toxic-recycling",
       "label": "污染转移式回收",
@@ -6226,17 +6248,6 @@
       "type": "concept",
       "route": "concepts/policy-stalling",
       "summary": "政策一轮轮小修小补，主要用处是表明在干活，同时把该来的调整往后推，结构问题本身没动。",
-      "status": null,
-      "degree": 3
-    },
-    {
-      "id": "concept:institutional-software-transfer",
-      "key": "institutional-software-transfer",
-      "label": "制度软件移植",
-      "fullLabel": "制度软件移植",
-      "type": "concept",
-      "route": "concepts/institutional-software-transfer",
-      "summary": "把治理体系拆成硬件和软件两层看。土地、规划、基建可以整体搬过去，管理制度背后人的意识和行政逻辑，很难跨体制移植。",
       "status": null,
       "degree": 3
     },
@@ -17161,6 +17172,36 @@
     {
       "source": "episode:EP234",
       "target": "theme:evaluation-and-moral-capital",
+      "kind": "episode-theme"
+    },
+    {
+      "source": "episode:EP235",
+      "target": "concept:institutional-software-transfer",
+      "kind": "episode-concept"
+    },
+    {
+      "source": "episode:EP235",
+      "target": "concept:crisis-power-reallocation",
+      "kind": "episode-concept"
+    },
+    {
+      "source": "episode:EP235",
+      "target": "model:institutional-fit",
+      "kind": "episode-model"
+    },
+    {
+      "source": "episode:EP235",
+      "target": "model:path-dependence",
+      "kind": "episode-model"
+    },
+    {
+      "source": "episode:EP235",
+      "target": "theme:rule-of-law-boundaries-and-social-trust",
+      "kind": "episode-theme"
+    },
+    {
+      "source": "episode:EP235",
+      "target": "theme:crisis-era-power-reallocation",
       "kind": "episode-theme"
     },
     {

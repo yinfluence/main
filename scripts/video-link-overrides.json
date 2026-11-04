@@ -1260,5 +1260,15 @@
       "platform": "youtube",
       "url": "https://www.youtube.com/watch?v=RfPZFHO8CMo"
     }
+  },
+  "EP235": {
+    "bilibili": {
+      "platform": "bilibili",
+      "url": "https://www.bilibili.com/video/BV1gqxQ6FEgC/"
+    },
+    "youtube": {
+      "platform": "youtube",
+      "url": "https://www.youtube.com/watch?v=wReGdIlzvOY"
+    }
   }
 }
