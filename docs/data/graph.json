@@ -2,11 +2,11 @@
   "meta": {
     "title": "颖响力知识图谱",
     "subtitle": "节目、概念、模型、人物、主题之间的可视化连接网络",
-    "nodeCount": 788,
-    "linkCount": 2978,
+    "nodeCount": 789,
+    "linkCount": 2995,
     "typeCounts": {
       "model": 84,
-      "live": 55,
+      "live": 56,
       "concept": 257,
       "theme": 92,
       "episode": 235,
@@ -917,6 +917,17 @@
       "degree": 18
     },
     {
+      "id": "episode:EP132",
+      "key": "EP132",
+      "label": "EP132",
+      "fullLabel": "EP132 · 是什么堵死了年轻创业者的草根逆袭之路？解读Manus交易撤销。",
+      "type": "episode",
+      "route": "episodes/EP132",
+      "summary": "Meta 收购 Manus 被监管否决，叫停有明确的法律依据。难受的是后果，过去三十年草根创业者成长和兑现的那条路被堵死了。肖弘出身三四线城市吉安，没背景没资源，靠的是美元基金敢投一份 PPT，终局是赴美上市或卖给美国巨头。换成地方国资基金，99% 不会投他，国有资产不能流失，纯软件带不来厂房、就业和税收，退出也看不清。理性的年轻人只好去考研考公。创新资源交给行政和国资之后，关系压过能力，只剩依附式创新和表演式创新。",
+      "status": "curated",
+      "degree": 18
+    },
+    {
       "id": "model:subsidy-capital-flywheel",
       "key": "subsidy-capital-flywheel",
       "label": "补贴资本飞轮",
@@ -924,6 +935,17 @@
       "type": "model",
       "route": "models/subsidy-capital-flywheel",
       "summary": "补贴资本飞轮解释地方财政、产业基金、企业估值和再融资如何互相放大。",
+      "status": null,
+      "degree": 17
+    },
+    {
+      "id": "model:identity-stratification",
+      "key": "identity-stratification",
+      "label": "身份型分层",
+      "fullLabel": "身份型分层",
+      "type": "model",
+      "route": "models/identity-stratification",
+      "summary": "身份型分层说明阶层排序从收入和资产，转向编制、合规位置、圈层资源和稳定预期。",
       "status": null,
       "degree": 17
     },
@@ -936,17 +958,6 @@
       "route": "themes/state-business-entanglement",
       "summary": "讨论企业如何依赖地方政府、国资平台或关系结构续命，以及这种绑定如何反过来改写企业目标。",
       "status": null,
-      "degree": 17
-    },
-    {
-      "id": "episode:EP132",
-      "key": "EP132",
-      "label": "EP132",
-      "fullLabel": "EP132 · 是什么堵死了年轻创业者的草根逆袭之路？解读Manus交易撤销。",
-      "type": "episode",
-      "route": "episodes/EP132",
-      "summary": "Meta 收购 Manus 被监管否决，叫停有明确的法律依据。难受的是后果，过去三十年草根创业者成长和兑现的那条路被堵死了。肖弘出身三四线城市吉安，没背景没资源，靠的是美元基金敢投一份 PPT，终局是赴美上市或卖给美国巨头。换成地方国资基金，99% 不会投他，国有资产不能流失，纯软件带不来厂房、就业和税收，退出也看不清。理性的年轻人只好去考研考公。创新资源交给行政和国资之后，关系压过能力，只剩依附式创新和表演式创新。",
-      "status": "curated",
       "degree": 17
     },
     {
@@ -994,6 +1005,17 @@
       "degree": 17
     },
     {
+      "id": "live:LIVE056",
+      "key": "LIVE056",
+      "label": "LIVE056",
+      "fullLabel": "LIVE056 · 创始人只握一股，就拿走过半投票权！拆解Anthropic招股书：五种股票防的是谁？",
+      "type": "live",
+      "route": "lives/LIVE056",
+      "summary": "能任免董事会多数席位的那份信托，也只有一股，而且不拿分红。",
+      "status": "published",
+      "degree": 17
+    },
+    {
       "id": "theme:maritime-chokepoints-and-route-order",
       "key": "maritime-chokepoints-and-route-order",
       "label": "海峡命门与航运秩序",
@@ -1001,17 +1023,6 @@
       "type": "theme",
       "route": "themes/maritime-chokepoints-and-route-order",
       "summary": "讨论海峡、运河和关键航道如何把地理位置变成规则、保险、资本和军事的综合权力。",
-      "status": null,
-      "degree": 16
-    },
-    {
-      "id": "model:identity-stratification",
-      "key": "identity-stratification",
-      "label": "身份型分层",
-      "fullLabel": "身份型分层",
-      "type": "model",
-      "route": "models/identity-stratification",
-      "summary": "身份型分层说明阶层排序从收入和资产，转向编制、合规位置、圈层资源和稳定预期。",
       "status": null,
       "degree": 16
     },
@@ -1100,6 +1111,17 @@
       "type": "model",
       "route": "models/wall-and-gray-trade-crackdown",
       "summary": "川普这一届对外有两条主线：建墙分清敌我，打击灰色贸易，把交易逼回美元。",
+      "status": null,
+      "degree": 15
+    },
+    {
+      "id": "model:principal-agent",
+      "key": "principal-agent",
+      "label": "委托代理问题",
+      "fullLabel": "委托代理问题",
+      "type": "model",
+      "route": "models/principal-agent",
+      "summary": "出钱或托付的一方和办事的一方不是同一个人，办事的人在乎的东西，常常跟托付他的人要的不一样。",
       "status": null,
       "degree": 15
     },
@@ -1214,17 +1236,6 @@
       "degree": 14
     },
     {
-      "id": "model:principal-agent",
-      "key": "principal-agent",
-      "label": "委托代理问题",
-      "fullLabel": "委托代理问题",
-      "type": "model",
-      "route": "models/principal-agent",
-      "summary": "出钱或托付的一方和办事的一方不是同一个人，办事的人在乎的东西，常常跟托付他的人要的不一样。",
-      "status": null,
-      "degree": 14
-    },
-    {
       "id": "theme:ev-collapse-and-exit-risk",
       "key": "ev-collapse-and-exit-risk",
       "label": "新能源崩塌与退出风险",
@@ -1232,6 +1243,17 @@
       "type": "theme",
       "route": "themes/ev-collapse-and-exit-risk",
       "summary": "聚焦新能源项目在失速、清算和品牌出清阶段，风险如何向债权人、用户和地方政府层层传导。",
+      "status": null,
+      "degree": 14
+    },
+    {
+      "id": "model:narrative-leverage",
+      "key": "narrative-leverage",
+      "label": "叙事杠杆",
+      "fullLabel": "叙事杠杆",
+      "type": "model",
+      "route": "models/narrative-leverage",
+      "summary": "一个足够大的故事，能把有限的资源、信用和注意力，撬成更多的资本、销量或支持。",
       "status": null,
       "degree": 14
     },
@@ -1357,6 +1379,17 @@
       "degree": 14
     },
     {
+      "id": "theme:institutional-middle-class-and-social-mobility",
+      "key": "institutional-middle-class-and-social-mobility",
+      "label": "体制化中产与社会流动",
+      "fullLabel": "体制化中产与社会流动",
+      "type": "theme",
+      "route": "themes/institutional-middle-class-and-social-mobility",
+      "summary": "中产的底盘从市场收入换成编制和财政供养，普通人往上走的路跟着变窄。",
+      "status": null,
+      "degree": 13
+    },
+    {
       "id": "theme:ev-financialization-and-false-sales",
       "key": "ev-financialization-and-false-sales",
       "label": "新能源金融化与虚假销量",
@@ -1364,17 +1397,6 @@
       "type": "theme",
       "route": "themes/ev-financialization-and-false-sales",
       "summary": "聚焦新能源车行业如何依靠补贴、融资、渠道黑箱和虚假销售维持增长叙事。",
-      "status": null,
-      "degree": 13
-    },
-    {
-      "id": "model:narrative-leverage",
-      "key": "narrative-leverage",
-      "label": "叙事杠杆",
-      "fullLabel": "叙事杠杆",
-      "type": "model",
-      "route": "models/narrative-leverage",
-      "summary": "一个足够大的故事，能把有限的资源、信用和注意力，撬成更多的资本、销量或支持。",
       "status": null,
       "degree": 13
     },
@@ -1562,17 +1584,6 @@
       "type": "concept",
       "route": "concepts/time-asymmetry",
       "summary": "冲突双方对时间的承受力不一样，决定长期胜负的常常是谁能把时间变成自己的朋友。",
-      "status": null,
-      "degree": 12
-    },
-    {
-      "id": "theme:institutional-middle-class-and-social-mobility",
-      "key": "institutional-middle-class-and-social-mobility",
-      "label": "体制化中产与社会流动",
-      "fullLabel": "体制化中产与社会流动",
-      "type": "theme",
-      "route": "themes/institutional-middle-class-and-social-mobility",
-      "summary": "中产的底盘从市场收入换成编制和财政供养，普通人往上走的路跟着变窄。",
       "status": null,
       "degree": 12
     },
@@ -2336,6 +2347,17 @@
       "degree": 9
     },
     {
+      "id": "concept:long-termism",
+      "key": "long-termism",
+      "label": "长期主义",
+      "fullLabel": "长期主义",
+      "type": "concept",
+      "route": "concepts/long-termism",
+      "summary": "以几十年甚至百年为尺度做决策，前期为长远格局多花成本、多做规划，而不是被短期利益和政绩驱动。",
+      "status": null,
+      "degree": 9
+    },
+    {
       "id": "concept:sanction-containment",
       "key": "sanction-containment",
       "label": "制裁遏制",
@@ -2853,17 +2875,6 @@
       "degree": 8
     },
     {
-      "id": "concept:long-termism",
-      "key": "long-termism",
-      "label": "长期主义",
-      "fullLabel": "长期主义",
-      "type": "concept",
-      "route": "concepts/long-termism",
-      "summary": "以几十年甚至百年为尺度做决策，前期为长远格局多花成本、多做规划，而不是被短期利益和政绩驱动。",
-      "status": null,
-      "degree": 8
-    },
-    {
       "id": "theme:capital-packaging-and-credential-borrowing",
       "key": "capital-packaging-and-credential-borrowing",
       "label": "资本包装与身份背书",
@@ -3315,6 +3326,17 @@
       "degree": 7
     },
     {
+      "id": "theme:founder-power-and-feedback",
+      "key": "founder-power-and-feedback",
+      "label": "创始人权力与组织反馈",
+      "fullLabel": "创始人权力与组织反馈",
+      "type": "theme",
+      "route": "themes/founder-power-and-feedback",
+      "summary": "创始人权力太强时，企业内部还剩多少真话，出了错谁能让老板听见。",
+      "status": null,
+      "degree": 7
+    },
+    {
       "id": "theme:price-war-and-precision-competition",
       "key": "price-war-and-precision-competition",
       "label": "低价竞争与精准打击",
@@ -3443,6 +3465,17 @@
       "type": "model",
       "route": "models/human-machine-differentiation",
       "summary": "机器越来越擅长标准化任务，人的价值要转到机器难以复制的判断和创造上。",
+      "status": null,
+      "degree": 7
+    },
+    {
+      "id": "concept:identity-over-wealth",
+      "key": "identity-over-wealth",
+      "label": "身份压倒财富",
+      "fullLabel": "身份压倒财富",
+      "type": "concept",
+      "route": "concepts/identity-over-wealth",
+      "summary": "身份压倒财富指稳定身份、编制和圈层位置开始比账面收入更能决定社会评价和生活安全感。",
       "status": null,
       "degree": 7
     },
@@ -3799,6 +3832,17 @@
       "degree": 7
     },
     {
+      "id": "episode:EP235",
+      "key": "EP235",
+      "label": "EP235",
+      "fullLabel": "EP235 · 先有法还是先有国？波兰政坛动荡对照韩国危机，看懂东西政治文明底层逻辑。",
+      "type": "episode",
+      "route": "episodes/EP235",
+      "summary": "2026 年 10 月底，波兰宪法法院乱成一团。议会今年选出八名新法官，总统纳夫罗茨基拒绝为其中五人主持宣誓，执政联盟和总统一方互指对方夺权，楼里还起了推搡。可两边争的始终是规则怎么解释，没人想靠军队拿下对方。两年前韩国总统尹锡悦同样被朝野对立困住，第一反应却是宣布戒严，跳出制度去压平矛盾。两国宪政转型都只有三四十年，危机里走向相反，差别在文明底色。欧洲先有法后有国，东亚先有国后有法。制度可以照搬，对规则的敬畏要上百年才攒得下来，危机时刻守得住法治才算成熟。",
+      "status": "curated",
+      "degree": 7
+    },
+    {
       "id": "model:kpi-fraud-equilibrium",
       "key": "kpi-fraud-equilibrium",
       "label": "KPI造假均衡",
@@ -3854,17 +3898,6 @@
       "degree": 6
     },
     {
-      "id": "theme:founder-power-and-feedback",
-      "key": "founder-power-and-feedback",
-      "label": "创始人权力与组织反馈",
-      "fullLabel": "创始人权力与组织反馈",
-      "type": "theme",
-      "route": "themes/founder-power-and-feedback",
-      "summary": "创始人权力太强时，企业内部还剩多少真话，出了错谁能让老板听见。",
-      "status": null,
-      "degree": 6
-    },
-    {
       "id": "concept:deposit-funded-debt-rollover",
       "key": "deposit-funded-debt-rollover",
       "label": "存款补贴化债",
@@ -3905,6 +3938,17 @@
       "type": "theme",
       "route": "themes/homeland-and-civic-belonging",
       "summary": "祖籍、血缘和现在住的地方，哪一个才算故乡。一个人可以自己选，一个国家的领导人往往选不了。",
+      "status": null,
+      "degree": 6
+    },
+    {
+      "id": "model:succession-governance",
+      "key": "succession-governance",
+      "label": "继承治理模型",
+      "fullLabel": "继承治理模型",
+      "type": "model",
+      "route": "models/succession-governance",
+      "summary": "企业交班要提前把旧账、旧利益和旧工具处理成规则，光交头衔交不稳。",
       "status": null,
       "degree": 6
     },
@@ -3997,17 +4041,6 @@
       "degree": 6
     },
     {
-      "id": "concept:identity-over-wealth",
-      "key": "identity-over-wealth",
-      "label": "身份压倒财富",
-      "fullLabel": "身份压倒财富",
-      "type": "concept",
-      "route": "concepts/identity-over-wealth",
-      "summary": "身份压倒财富指稳定身份、编制和圈层位置开始比账面收入更能决定社会评价和生活安全感。",
-      "status": null,
-      "degree": 6
-    },
-    {
       "id": "concept:production-risk-outsourcing",
       "key": "production-risk-outsourcing",
       "label": "生产端风险外包",
@@ -4092,6 +4125,17 @@
       "type": "concept",
       "route": "concepts/blood-written-rules",
       "summary": "今天习以为常的安全规范，是灾难和死亡换来的。忘了来历，红线就会被当成可以优化掉的成本。",
+      "status": null,
+      "degree": 6
+    },
+    {
+      "id": "model:primary-market-logic",
+      "key": "primary-market-logic",
+      "label": "一级市场逻辑投二级市场",
+      "fullLabel": "一级市场逻辑投二级市场",
+      "type": "model",
+      "route": "models/primary-market-logic",
+      "summary": "用一级市场的办法投二级市场，靠的是别人没有的信息、资源和对企业命脉的掌握，确定性够高才重仓。",
       "status": null,
       "degree": 6
     },
@@ -4371,17 +4415,6 @@
       "degree": 6
     },
     {
-      "id": "episode:EP235",
-      "key": "EP235",
-      "label": "EP235",
-      "fullLabel": "EP235 · 先有法还是先有国？波兰政坛动荡对照韩国危机，看懂东西政治文明底层逻辑。",
-      "type": "episode",
-      "route": "episodes/EP235",
-      "summary": "2026 年 10 月底，波兰宪法法院乱成一团。议会今年选出八名新法官，总统纳夫罗茨基拒绝为其中五人主持宣誓，执政联盟和总统一方互指对方夺权，楼里还起了推搡。可两边争的始终是规则怎么解释，没人想靠军队拿下对方。两年前韩国总统尹锡悦同样被朝野对立困住，第一反应却是宣布戒严，跳出制度去压平矛盾。两国宪政转型都只有三四十年，危机里走向相反，差别在文明底色。欧洲先有法后有国，东亚先有国后有法。制度可以照搬，对规则的敬畏要上百年才攒得下来，危机时刻守得住法治才算成熟。",
-      "status": "curated",
-      "degree": 6
-    },
-    {
       "id": "model:bounded-social-experiment",
       "key": "bounded-social-experiment",
       "label": "边界化社会试验",
@@ -4422,6 +4455,17 @@
       "type": "concept",
       "route": "concepts/manufactured-antagonism",
       "summary": "热度不够的时候，把人分成对立的两拨比做出好东西便宜得多，架子一搭，两边自己就吵起来，事件也就有了。",
+      "status": null,
+      "degree": 5
+    },
+    {
+      "id": "concept:welfare-ratchet",
+      "key": "welfare-ratchet",
+      "label": "福利棘轮",
+      "fullLabel": "福利棘轮",
+      "type": "concept",
+      "route": "concepts/welfare-ratchet",
+      "summary": "补贴和福利只能加不能减。经济做好选民不一定加分，砍福利一定下台，政客被锁进透支未来的短期维稳。",
       "status": null,
       "degree": 5
     },
@@ -4488,17 +4532,6 @@
       "type": "model",
       "route": "models/centralized-control-backfire",
       "summary": "把控制权收到中心，换来便宜、好管、能远程锁死，也把所有失效点收到了同一处。",
-      "status": null,
-      "degree": 5
-    },
-    {
-      "id": "model:succession-governance",
-      "key": "succession-governance",
-      "label": "继承治理模型",
-      "fullLabel": "继承治理模型",
-      "type": "model",
-      "route": "models/succession-governance",
-      "summary": "企业交班要提前把旧账、旧利益和旧工具处理成规则，光交头衔交不稳。",
       "status": null,
       "degree": 5
     },
@@ -4613,17 +4646,6 @@
       "degree": 5
     },
     {
-      "id": "model:primary-market-logic",
-      "key": "primary-market-logic",
-      "label": "一级市场逻辑投二级市场",
-      "fullLabel": "一级市场逻辑投二级市场",
-      "type": "model",
-      "route": "models/primary-market-logic",
-      "summary": "用一级市场的办法投二级市场，靠的是别人没有的信息、资源和对企业命脉的掌握，确定性够高才重仓。",
-      "status": null,
-      "degree": 5
-    },
-    {
       "id": "concept:strategic-depth-inversion",
       "key": "strategic-depth-inversion",
       "label": "战略纵深反转",
@@ -4653,6 +4675,17 @@
       "type": "concept",
       "route": "concepts/chosen-homeland",
       "summary": "故乡不必只由血缘和祖籍决定，也可以由长期生活、责任承担和价值创造重新选择。",
+      "status": null,
+      "degree": 5
+    },
+    {
+      "id": "theme:ai-capital-and-company-identity",
+      "key": "ai-capital-and-company-identity",
+      "label": "AI创业、资本主场与公司身份",
+      "fullLabel": "AI创业、资本主场与公司身份",
+      "type": "theme",
+      "route": "themes/ai-capital-and-company-identity",
+      "summary": "中国的 AI 创业公司在哪拿钱、在哪注册、最后卖给谁，决定它能不能长大。草根还有没有机会，也看这几样。",
       "status": null,
       "degree": 5
     },
@@ -5086,17 +5119,6 @@
       "degree": 4
     },
     {
-      "id": "concept:welfare-ratchet",
-      "key": "welfare-ratchet",
-      "label": "福利棘轮",
-      "fullLabel": "福利棘轮",
-      "type": "concept",
-      "route": "concepts/welfare-ratchet",
-      "summary": "补贴和福利只能加不能减。经济做好选民不一定加分，砍福利一定下台，政客被锁进透支未来的短期维稳。",
-      "status": null,
-      "degree": 4
-    },
-    {
       "id": "concept:wage-demand-loop",
       "key": "wage-demand-loop",
       "label": "工资需求循环",
@@ -5317,6 +5339,17 @@
       "degree": 4
     },
     {
+      "id": "concept:ownership-management-separation",
+      "key": "ownership-management-separation",
+      "label": "所有权与经营权分割",
+      "fullLabel": "所有权与经营权分割",
+      "type": "concept",
+      "route": "concepts/ownership-management-separation",
+      "summary": "家族握住资产所有权和收益权，把投资、信托、税务、运营全部交给专业团队，用制度代替血缘完成传承，这是家族办公室的底层逻辑。",
+      "status": null,
+      "degree": 4
+    },
+    {
       "id": "model:exit-liquidation-waterfall",
       "key": "exit-liquidation-waterfall",
       "label": "退出清算瀑布",
@@ -5493,17 +5526,6 @@
       "degree": 4
     },
     {
-      "id": "theme:ai-capital-and-company-identity",
-      "key": "ai-capital-and-company-identity",
-      "label": "AI创业、资本主场与公司身份",
-      "fullLabel": "AI创业、资本主场与公司身份",
-      "type": "theme",
-      "route": "themes/ai-capital-and-company-identity",
-      "summary": "中国的 AI 创业公司在哪拿钱、在哪注册、最后卖给谁，决定它能不能长大。草根还有没有机会，也看这几样。",
-      "status": null,
-      "degree": 4
-    },
-    {
       "id": "theme:ai-and-human-creativity",
       "key": "ai-and-human-creativity",
       "label": "AI替代与人的创造性",
@@ -5566,6 +5588,17 @@
       "type": "episode",
       "route": "episodes/EP069",
       "summary": "金条银条之后，连铜条都按斤卖了。一公斤一两百块，卖家却不回收，想回本铜价得涨到每吨 20 万以上。铜价被推高，据说导火索是英伟达一份技术报告。它把数据中心的铜需求写成 50 万吨，后来被扒出单位应是磅，差了 2000 倍。英伟达悄悄改了数字，认知却已经定形，何况有报道说 2026 年铜还会过剩。实体投不动，钱没地方去，市场从价值投资换成了情绪投资。各种金属锭像当年的币一样轮番上场，骗子也越来越多。自以为在倒手的人，和他的下家一样都是韭菜。",
+      "status": "curated",
+      "degree": 4
+    },
+    {
+      "id": "episode:EP086",
+      "key": "EP086",
+      "label": "EP086",
+      "fullLabel": "EP086 · 两初中生扶起摔倒老人遭索赔22万，道德与法治间的模糊地带谁来负责？",
+      "type": "episode",
+      "route": "episodes/EP086",
+      "summary": "两个初中生扶起摔倒老人，被索赔 22 万，又让人想起 2006 年的南京彭宇案。老人为避让小轿车摔倒，两个学生转弯靠中线，确实有一点责任。争的是这点责任值不值 22 万。执法方和法院习惯三七、四六和稀泥，次要一方按 5% 或 10% 算更说得过去。修法引入弱势群体之后，事故相关方成了两个对立的群体，灰区更模糊，拍板的只剩法官。新加坡和日本把道德和法律分开，规则写得清楚。补救要把判案标准做细，再从 GDP 里拿一点设助人基金，让好人扶人不用先录像自证清白。",
       "status": "curated",
       "degree": 4
     },
@@ -5779,6 +5812,17 @@
       "degree": 3
     },
     {
+      "id": "concept:state-share-time-bomb",
+      "key": "state-share-time-bomb",
+      "label": "国资定时炸弹",
+      "fullLabel": "国资定时炸弹",
+      "type": "concept",
+      "route": "concepts/state-share-time-bomb",
+      "summary": "早年未理顺的国资份额，在企业做大和创始人退场后会变成难以拆除的治理炸弹。",
+      "status": null,
+      "degree": 3
+    },
+    {
       "id": "person:ali-khamenei",
       "key": "ali-khamenei",
       "label": "哈梅内伊",
@@ -5885,6 +5929,17 @@
       "type": "concept",
       "route": "concepts/unfinished-vehicle",
       "summary": "交付完成并不等于产品完成，品牌、售后、配件和残值体系先崩时，汽车会变成难以退出的烂尾资产。",
+      "status": null,
+      "degree": 3
+    },
+    {
+      "id": "theme:elder-support-and-distributive-justice",
+      "key": "elder-support-and-distributive-justice",
+      "label": "老年保障与分配正义",
+      "fullLabel": "老年保障与分配正义",
+      "type": "theme",
+      "route": "themes/elder-support-and-distributive-justice",
+      "summary": "养老金涨多少、钱先给谁，看得出一个社会怎样对待老去的普通人。",
       "status": null,
       "degree": 3
     },
@@ -6072,17 +6127,6 @@
       "type": "concept",
       "route": "concepts/random-walk-arrogance",
       "summary": "在上升周期中撞上好运的人，容易把随机红利误读成自己掌握了世界规律。",
-      "status": null,
-      "degree": 3
-    },
-    {
-      "id": "concept:ownership-management-separation",
-      "key": "ownership-management-separation",
-      "label": "所有权与经营权分割",
-      "fullLabel": "所有权与经营权分割",
-      "type": "concept",
-      "route": "concepts/ownership-management-separation",
-      "summary": "家族握住资产所有权和收益权，把投资、信托、税务、运营全部交给专业团队，用制度代替血缘完成传承，这是家族办公室的底层逻辑。",
       "status": null,
       "degree": 3
     },
@@ -6340,17 +6384,6 @@
       "degree": 3
     },
     {
-      "id": "episode:EP086",
-      "key": "EP086",
-      "label": "EP086",
-      "fullLabel": "EP086 · 两初中生扶起摔倒老人遭索赔22万，道德与法治间的模糊地带谁来负责？",
-      "type": "episode",
-      "route": "episodes/EP086",
-      "summary": "两个初中生扶起摔倒老人，被索赔 22 万，又让人想起 2006 年的南京彭宇案。老人为避让小轿车摔倒，两个学生转弯靠中线，确实有一点责任。争的是这点责任值不值 22 万。执法方和法院习惯三七、四六和稀泥，次要一方按 5% 或 10% 算更说得过去。修法引入弱势群体之后，事故相关方成了两个对立的群体，灰区更模糊，拍板的只剩法官。新加坡和日本把道德和法律分开，规则写得清楚。补救要把判案标准做细，再从 GDP 里拿一点设助人基金，让好人扶人不用先录像自证清白。",
-      "status": "curated",
-      "degree": 3
-    },
-    {
       "id": "concept:token-consumption-loop",
       "key": "token-consumption-loop",
       "label": "Token消耗闭环",
@@ -6560,17 +6593,6 @@
       "degree": 2
     },
     {
-      "id": "concept:state-share-time-bomb",
-      "key": "state-share-time-bomb",
-      "label": "国资定时炸弹",
-      "fullLabel": "国资定时炸弹",
-      "type": "concept",
-      "route": "concepts/state-share-time-bomb",
-      "summary": "早年未理顺的国资份额，在企业做大和创始人退场后会变成难以拆除的治理炸弹。",
-      "status": null,
-      "degree": 2
-    },
-    {
       "id": "concept:overseas-sink-project",
       "key": "overseas-sink-project",
       "label": "海外沉没项目",
@@ -6732,17 +6754,6 @@
       "type": "model",
       "route": "models/cross-disciplinary-learning",
       "summary": "跨学科学习用一个真实问题把几门学科的原理接起来，让学生学到的是看复杂系统的办法，不只是某一科的答案。",
-      "status": null,
-      "degree": 2
-    },
-    {
-      "id": "theme:elder-support-and-distributive-justice",
-      "key": "elder-support-and-distributive-justice",
-      "label": "老年保障与分配正义",
-      "fullLabel": "老年保障与分配正义",
-      "type": "theme",
-      "route": "themes/elder-support-and-distributive-justice",
-      "summary": "养老金涨多少、钱先给谁，看得出一个社会怎样对待老去的普通人。",
       "status": null,
       "degree": 2
     },
@@ -23552,6 +23563,91 @@
     {
       "source": "live:LIVE055",
       "target": "theme:exam-centered-education-and-person-formation",
+      "kind": "live-theme"
+    },
+    {
+      "source": "live:LIVE056",
+      "target": "episode:EP235",
+      "kind": "live-episode"
+    },
+    {
+      "source": "live:LIVE056",
+      "target": "episode:EP132",
+      "kind": "live-episode"
+    },
+    {
+      "source": "live:LIVE056",
+      "target": "episode:EP086",
+      "kind": "live-episode"
+    },
+    {
+      "source": "live:LIVE056",
+      "target": "concept:ownership-management-separation",
+      "kind": "live-concept"
+    },
+    {
+      "source": "live:LIVE056",
+      "target": "concept:long-termism",
+      "kind": "live-concept"
+    },
+    {
+      "source": "live:LIVE056",
+      "target": "concept:welfare-ratchet",
+      "kind": "live-concept"
+    },
+    {
+      "source": "live:LIVE056",
+      "target": "concept:identity-over-wealth",
+      "kind": "live-concept"
+    },
+    {
+      "source": "live:LIVE056",
+      "target": "concept:state-share-time-bomb",
+      "kind": "live-concept"
+    },
+    {
+      "source": "live:LIVE056",
+      "target": "model:succession-governance",
+      "kind": "live-model"
+    },
+    {
+      "source": "live:LIVE056",
+      "target": "model:principal-agent",
+      "kind": "live-model"
+    },
+    {
+      "source": "live:LIVE056",
+      "target": "model:primary-market-logic",
+      "kind": "live-model"
+    },
+    {
+      "source": "live:LIVE056",
+      "target": "model:identity-stratification",
+      "kind": "live-model"
+    },
+    {
+      "source": "live:LIVE056",
+      "target": "model:narrative-leverage",
+      "kind": "live-model"
+    },
+    {
+      "source": "live:LIVE056",
+      "target": "theme:ai-capital-and-company-identity",
+      "kind": "live-theme"
+    },
+    {
+      "source": "live:LIVE056",
+      "target": "theme:founder-power-and-feedback",
+      "kind": "live-theme"
+    },
+    {
+      "source": "live:LIVE056",
+      "target": "theme:elder-support-and-distributive-justice",
+      "kind": "live-theme"
+    },
+    {
+      "source": "live:LIVE056",
+      "target": "theme:institutional-middle-class-and-social-mobility",
       "kind": "live-theme"
     },
     {

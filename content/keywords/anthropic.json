@@ -1,0 +1,73 @@
+{
+  "id": "anthropic",
+  "name": "Anthropic",
+  "kind": "organization",
+  "asOf": "2026-11-05",
+  "sources": [
+    {
+      "title": "Anthropic（英文维基百科）",
+      "url": "https://en.wikipedia.org/wiki/Anthropic",
+      "note": "核对 2021 年由前 OpenAI 成员创办、Claude 模型的开发方、公益公司身份和长期利益信托的设立。"
+    },
+    {
+      "title": "Anthropic's IPO Filing Shows How Its Trust Could Lose Power（FourWeekMBA）",
+      "url": "https://fourweekmba.com/ai-anthropics-ipo-filing-shows-how-its-trust-could-lose-power/",
+      "note": "核对 2026 年 10 月 S-1 里的 F 股 50.1% 投票权、T 股由长期利益信托持有、信托选任董事会多数。"
+    },
+    {
+      "title": "Anthropic pays each safety trust trustee $400,000 a year, S-1 shows（Crypto Briefing）",
+      "url": "https://cryptobriefing.com/anthropic-safety-trust-trustees-400000-salary/",
+      "note": "报道称招股书显示每名信托受托人年薪约 40 万美元，与 LIVE056 原话只覆盖时间成本的说法不一致。"
+    }
+  ],
+  "summary": "Anthropic 是开发 Claude 的美国 AI 公司，2026 年 10 月提交上市招股书。LIVE056 拿它的五类股票讲一家公司怎样把关掉 AI 的权力留给不图短期回报的人。",
+  "description": "Anthropic 2021 年由一批从 OpenAI 出来的研究人员创办，做大语言模型 Claude，注册为公益公司。2023 年它设了长期利益信托，让一批跟公司没有股权关系的受托人逐步拿到选任董事的权力。\n\n2026 年 10 月 26 日它向美国证监会提交 S-1，申请在纳斯达克上市。招股书里公众买的是 A 股，一股一票。创始人组成的公司持有一股 F 股，在多数股东事项上固定拿 50.1% 投票权。长期利益信托持有 T 股，没有经济权益，负责选任董事会多数席位。\n\nLIVE056 把这套结构拆成三方：创始人握股东层面的表决，信托握董事会，公众和战略投资方拿钱但不拿控制权。原话的判断是，资本天生要快钱，这样设计是为了让 AI 的安全目标排在短期商业利益前面。",
+  "positionNotes": [
+    "它跟 OpenAI 同属头部模型公司，亚马逊、谷歌是它的大股东，按 LIVE056 的说法这些战略投资方只分红不投票。",
+    "上市以后它在纳斯达克规则下属于受控公司，公众股东拿到的是经济收益，控制权留在创始人和信托手里。"
+  ],
+  "programAssociations": [
+    {
+      "title": "五种股票，三方互相制衡",
+      "episodes": [
+        "LIVE056"
+      ],
+      "note": "LIVE056 逐类讲了 A、N、F、T 和员工股，重点在 F 股一股拿 50.1%、七人全票才算数，以及 T 股一股不分红却能任免董事会多数。原话把它比作公司版的三权分立，拿来对照国内只认同股同权的股市，也拿来提醒创业者开公司前先想清楚权力怎么分。"
+    }
+  ],
+  "exposureNotes": [
+    "控制权集中在创始人和信托手里，公众股东遇到分歧时几乎没有办法改变公司方向。",
+    "信托受托人的独立性靠规则维持，招股书披露的报酬和原话说的只覆盖时间成本对不上，这一层值得继续看。"
+  ],
+  "signalNotes": [
+    "看到 AI 公司上市的消息，先翻它的股权类别和董事会怎么选，Anthropic 的写法是把安全目标落在投票权上。",
+    "讨论 AI 失控风险时它常被拿来当例子，说的多半是谁有权在必要的时候让模型停下来。",
+    "它的结构常被拿去跟同股同权、AB 股做对比，读者要留意的是控制权和收益权被拆到了不同的人手里。"
+  ],
+  "extensionNotes": [
+    {
+      "title": "算力",
+      "note": "LIVE056 同一场讲中期选举，说两党最大的分歧就在要不要在美国国内大建算力中心。"
+    },
+    {
+      "title": "对赌",
+      "note": "同一场讲 3+2 基金急着退出、大多要签对赌，跟 Anthropic 把时间拉长的设计正好对着看。"
+    }
+  ],
+  "aliases": [
+    "A公司",
+    "安德饶皮克",
+    "Anthropic PBC"
+  ],
+  "relatedKeywords": [
+    "算力",
+    "马斯克",
+    "对赌"
+  ],
+  "episodes": [
+    {
+      "id": "LIVE056",
+      "note": "拆它 2026 年 10 月招股书里的五类股票，讲创始人、信托和公众三方怎样互相制衡。"
+    }
+  ]
+}
