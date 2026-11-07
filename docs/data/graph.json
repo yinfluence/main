@@ -2,14 +2,14 @@
   "meta": {
     "title": "颖响力知识图谱",
     "subtitle": "节目、概念、模型、人物、主题之间的可视化连接网络",
-    "nodeCount": 789,
-    "linkCount": 2995,
+    "nodeCount": 792,
+    "linkCount": 3001,
     "typeCounts": {
-      "model": 84,
+      "model": 85,
       "live": 56,
-      "concept": 257,
+      "concept": 258,
       "theme": 92,
-      "episode": 235,
+      "episode": 236,
       "person": 65
     }
   },
@@ -70,6 +70,17 @@
       "degree": 34
     },
     {
+      "id": "concept:hidden-debt",
+      "key": "hidden-debt",
+      "label": "隐形债务",
+      "fullLabel": "隐形债务",
+      "type": "concept",
+      "route": "concepts/hidden-debt",
+      "summary": "表外、体外和合作链条里的债务不在显性报表中充分呈现，却会在危机时重新压回主体。",
+      "status": null,
+      "degree": 33
+    },
+    {
       "id": "live:LIVE037",
       "key": "LIVE037",
       "label": "LIVE037",
@@ -79,17 +90,6 @@
       "summary": "据说上海浦东有个机构，专门把跑到境外的人民币收回来。",
       "status": "published",
       "degree": 33
-    },
-    {
-      "id": "concept:hidden-debt",
-      "key": "hidden-debt",
-      "label": "隐形债务",
-      "fullLabel": "隐形债务",
-      "type": "concept",
-      "route": "concepts/hidden-debt",
-      "summary": "表外、体外和合作链条里的债务不在显性报表中充分呈现，却会在危机时重新压回主体。",
-      "status": null,
-      "degree": 32
     },
     {
       "id": "live:LIVE004",
@@ -345,6 +345,17 @@
       "degree": 25
     },
     {
+      "id": "theme:local-fiscal-stress-and-hidden-debt",
+      "key": "local-fiscal-stress-and-hidden-debt",
+      "label": "地方财政与隐性债务",
+      "fullLabel": "地方财政与隐性债务",
+      "type": "theme",
+      "route": "themes/local-fiscal-stress-and-hidden-debt",
+      "summary": "地方财政吃紧后，系统会通过更复杂的融资、资产包装和风险转移来维持运转。",
+      "status": null,
+      "degree": 24
+    },
+    {
       "id": "concept:gray-oil-network",
       "key": "gray-oil-network",
       "label": "灰色石油网络",
@@ -464,17 +475,6 @@
       "summary": "南京按分摊的地来算，一套高层公寓落到地面上只有零点六平米。",
       "status": "published",
       "degree": 24
-    },
-    {
-      "id": "theme:local-fiscal-stress-and-hidden-debt",
-      "key": "local-fiscal-stress-and-hidden-debt",
-      "label": "地方财政与隐性债务",
-      "fullLabel": "地方财政与隐性债务",
-      "type": "theme",
-      "route": "themes/local-fiscal-stress-and-hidden-debt",
-      "summary": "地方财政吃紧后，系统会通过更复杂的融资、资产包装和风险转移来维持运转。",
-      "status": null,
-      "degree": 23
     },
     {
       "id": "concept:chokepoint-leverage",
@@ -961,6 +961,17 @@
       "degree": 17
     },
     {
+      "id": "model:balance-sheet-maintenance",
+      "key": "balance-sheet-maintenance",
+      "label": "资产负债表维持",
+      "fullLabel": "资产负债表维持",
+      "type": "model",
+      "route": "models/balance-sheet-maintenance",
+      "summary": "系统承压时，各方先保住估值、抵押物和报表的表面完整，出清往后排。",
+      "status": null,
+      "degree": 17
+    },
+    {
       "id": "episode:EP153",
       "key": "EP153",
       "label": "EP153",
@@ -1023,17 +1034,6 @@
       "type": "theme",
       "route": "themes/maritime-chokepoints-and-route-order",
       "summary": "讨论海峡、运河和关键航道如何把地理位置变成规则、保险、资本和军事的综合权力。",
-      "status": null,
-      "degree": 16
-    },
-    {
-      "id": "model:balance-sheet-maintenance",
-      "key": "balance-sheet-maintenance",
-      "label": "资产负债表维持",
-      "fullLabel": "资产负债表维持",
-      "type": "model",
-      "route": "models/balance-sheet-maintenance",
-      "summary": "系统承压时，各方先保住估值、抵押物和报表的表面完整，出清往后排。",
       "status": null,
       "degree": 16
     },
@@ -2886,6 +2886,17 @@
       "degree": 8
     },
     {
+      "id": "theme:capital-exit-and-cross-border-harvest",
+      "key": "capital-exit-and-cross-border-harvest",
+      "label": "资本博弈与美元退出",
+      "fullLabel": "资本博弈与美元退出",
+      "type": "theme",
+      "route": "themes/capital-exit-and-cross-border-harvest",
+      "summary": "钱借跨境结构退出、换成美元，这些通道又被一条条查住。",
+      "status": null,
+      "degree": 8
+    },
+    {
       "id": "model:distribution-bias",
       "key": "distribution-bias",
       "label": "资源分配偏置",
@@ -3553,17 +3564,6 @@
       "type": "theme",
       "route": "themes/housing-burden-and-income-distribution",
       "summary": "住房、税负和可支配收入连在一起，看中低收入的人被抽走了多少往上走的余地。",
-      "status": null,
-      "degree": 7
-    },
-    {
-      "id": "theme:capital-exit-and-cross-border-harvest",
-      "key": "capital-exit-and-cross-border-harvest",
-      "label": "资本博弈与美元退出",
-      "fullLabel": "资本博弈与美元退出",
-      "type": "theme",
-      "route": "themes/capital-exit-and-cross-border-harvest",
-      "summary": "钱借跨境结构退出、换成美元，这些通道又被一条条查住。",
       "status": null,
       "degree": 7
     },
@@ -4411,6 +4411,17 @@
       "type": "episode",
       "route": "episodes/EP227",
       "summary": "2026 年 10 月 6 日 WTT 中国大满贯期间，国乒男队主教练王皓在北京首钢园赛场通道被一群球迷围堵辱骂，三人被行政拘留，中国乒协随后说要推动建立赛场禁入名单。支持的人说乒乓球馆早成了演唱会，反对的人担心看球也会被拉黑。名单能把人挡在门外，挡不住追星的那一整套做法。后援会分工严密，替偶像争出场、争资源，跟对家互撕，跟公共事务里的博弈是一个路数。东亚年轻人参与公共事务的地方太少，热情和组织本事只好放到偶像身上，追星成了一种亚政治。堵住一处，它会换个领域再冒出来。",
+      "status": "curated",
+      "degree": 6
+    },
+    {
+      "id": "episode:EP236",
+      "key": "EP236",
+      "label": "EP236",
+      "fullLabel": "EP236 · 人民币大升值！是什么原因？背后有什么逻辑？对普通人有什么影响？",
+      "type": "episode",
+      "route": "episodes/EP236",
+      "summary": "今年以来人民币对美元累计涨了 4.5% 以上，一度创下近三年新高。按课本上的利率平价，这波行情说不通。中国十年期国债收益率 1.63%，美国还在 5% 以上，利差倒挂约 350 个基点，人民币本该承压贬值。企业扎堆结汇是升值预期的产物，算不上源头。国内要靠低利率化债，利率加不上去，钱就有往外跑吃利息的动力，剩下的办法是让人民币每年稳步升值，正好抵掉利差。聪明钱看懂方向后从离岸市场抢跑，涨得比计划快，央行反过来给升值降温。对普通人来说，追涨杀跌是最大的误区。",
       "status": "curated",
       "degree": 6
     },
@@ -7660,6 +7671,17 @@
       "degree": 1
     },
     {
+      "id": "concept:rate-gap-offset-appreciation",
+      "key": "rate-gap-offset-appreciation",
+      "label": "汇率补利差",
+      "fullLabel": "汇率补利差",
+      "type": "concept",
+      "route": "concepts/rate-gap-offset-appreciation",
+      "summary": "本国利率比外国低又不能加息时，让本币按大致等于利差的速度慢慢升值，换成外币多拿的利息被汇率吃掉，钱就没有理由往外跑。",
+      "status": null,
+      "degree": 1
+    },
+    {
       "id": "concept:currency-credit-collapse",
       "key": "currency-credit-collapse",
       "label": "货币信用崩塌",
@@ -8228,6 +8250,17 @@
       "type": "person",
       "route": "people/tian-pujun",
       "summary": "田朴珺是制片人、写作者，王石的妻子，主持访谈节目《共同说》。EP059 借她和王石的关系，看万科旋涡之后家里的钱和位次怎样重排。",
+      "status": null,
+      "degree": 1
+    },
+    {
+      "id": "model:same-direction-game",
+      "key": "same-direction-game",
+      "label": "同向博弈",
+      "fullLabel": "同向博弈",
+      "type": "model",
+      "route": "models/same-direction-game",
+      "summary": "政策定下一个方向，市场看懂以后顺着方向抢跑，把行情做得比政策想要的更快，政策反过来要压住自己定下的方向。",
       "status": null,
       "degree": 1
     },
@@ -17213,6 +17246,36 @@
     {
       "source": "episode:EP235",
       "target": "theme:crisis-era-power-reallocation",
+      "kind": "episode-theme"
+    },
+    {
+      "source": "episode:EP236",
+      "target": "concept:rate-gap-offset-appreciation",
+      "kind": "episode-concept"
+    },
+    {
+      "source": "episode:EP236",
+      "target": "concept:hidden-debt",
+      "kind": "episode-concept"
+    },
+    {
+      "source": "episode:EP236",
+      "target": "model:same-direction-game",
+      "kind": "episode-model"
+    },
+    {
+      "source": "episode:EP236",
+      "target": "model:balance-sheet-maintenance",
+      "kind": "episode-model"
+    },
+    {
+      "source": "episode:EP236",
+      "target": "theme:local-fiscal-stress-and-hidden-debt",
+      "kind": "episode-theme"
+    },
+    {
+      "source": "episode:EP236",
+      "target": "theme:capital-exit-and-cross-border-harvest",
       "kind": "episode-theme"
     },
     {

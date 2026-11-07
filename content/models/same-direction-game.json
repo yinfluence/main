@@ -1,0 +1,40 @@
+{
+  "id": "same-direction-game",
+  "name": "同向博弈",
+  "summary": "政策定下一个方向，市场看懂以后顺着方向抢跑，把行情做得比政策想要的更快，政策反过来要压住自己定下的方向。",
+  "definition": "常见的博弈是多空对垒，一方看涨一方看跌。同向博弈里双方看的是同一个方向，分歧只在速度。政策要的是慢而稳，好让别的目标不受冲击。市场里的聪明钱知道方向有人托底，便提前下注、加大仓位，想一次把差价吃完。行情一快，政策从推动者变成压制者，用手里的工具给自己定的方向降温。越是让人看清方向的政策，越容易被抢跑。",
+  "application": "EP236 讲人民币升值。政策要的是每年刚好抵掉利差的慢涨，外贸企业、离岸游资和海外资金看懂方向以后提前结汇、进场套利，离岸先涨、在岸跟涨，行情超出预期，央行转而降低企业买美元的成本，给升值降温。",
+  "episodes": [
+    {
+      "id": "EP236",
+      "note": "双方都看多人民币，政策要慢涨，聪明钱要快涨。离岸市场管得少、盘子小，成了抢跑的主战场，央行从推着涨变成压着涨。"
+    }
+  ],
+  "signals": [
+    "政策方向公开以后，行情的速度明显快过政策原本的节奏。",
+    "管得少的市场先动，管得多的市场被迫跟上。",
+    "推出过方向的部门，开始出台反方向的降温工具。"
+  ],
+  "boundaries": [
+    "它描述方向一致时的速度之争，方向真的掉头时就不再适用。",
+    "EP236 里政策要慢涨是推演，没有官方表态作证。"
+  ],
+  "questions": [
+    "这个方向是谁定的，市场是不是已经全看懂了？",
+    "抢跑的钱进得越多，掉头时谁最先受伤？",
+    "政策压速度的工具还剩多少，用完了怎么办？"
+  ],
+  "relatedConcepts": [
+    "rate-gap-offset-appreciation",
+    "verbal-intervention"
+  ],
+  "relatedModels": [
+    "time-arbitrage-model",
+    "strategic-timing"
+  ],
+  "relatedThemes": [
+    "资本博弈与美元退出"
+  ],
+  "sourceLabel": "颖响力模型：同向博弈",
+  "sourcePath": "/Users/ziqiguo/Documents/Diary/GoldenVault/md/topic/personal/sources/people/颖响力/网页/content/models/same-direction-game.json"
+}
