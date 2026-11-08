@@ -2,11 +2,11 @@
   "meta": {
     "title": "颖响力知识图谱",
     "subtitle": "节目、概念、模型、人物、主题之间的可视化连接网络",
-    "nodeCount": 792,
-    "linkCount": 3001,
+    "nodeCount": 793,
+    "linkCount": 3022,
     "typeCounts": {
       "model": 85,
-      "live": 56,
+      "live": 57,
       "concept": 258,
       "theme": 92,
       "episode": 236,
@@ -48,6 +48,17 @@
       "degree": 35
     },
     {
+      "id": "concept:hidden-debt",
+      "key": "hidden-debt",
+      "label": "隐形债务",
+      "fullLabel": "隐形债务",
+      "type": "concept",
+      "route": "concepts/hidden-debt",
+      "summary": "表外、体外和合作链条里的债务不在显性报表中充分呈现，却会在危机时重新压回主体。",
+      "status": null,
+      "degree": 34
+    },
+    {
       "id": "live:LIVE005",
       "key": "LIVE005",
       "label": "LIVE005",
@@ -68,17 +79,6 @@
       "summary": "据说 2003 年以来，巴格达的领导层把两万亿美元挪作了他用。",
       "status": "curated",
       "degree": 34
-    },
-    {
-      "id": "concept:hidden-debt",
-      "key": "hidden-debt",
-      "label": "隐形债务",
-      "fullLabel": "隐形债务",
-      "type": "concept",
-      "route": "concepts/hidden-debt",
-      "summary": "表外、体外和合作链条里的债务不在显性报表中充分呈现，却会在危机时重新压回主体。",
-      "status": null,
-      "degree": 33
     },
     {
       "id": "live:LIVE037",
@@ -158,6 +158,17 @@
       "degree": 29
     },
     {
+      "id": "concept:cost-shifting",
+      "key": "cost-shifting",
+      "label": "成本外移",
+      "fullLabel": "成本外移",
+      "type": "concept",
+      "route": "concepts/cost-shifting",
+      "summary": "强势一方把本该自己付的成本，借价格、合同、规则或时间推给没得选的人。",
+      "status": null,
+      "degree": 27
+    },
+    {
       "id": "theme:great-power-competition-and-strategic-time",
       "key": "great-power-competition-and-strategic-time",
       "label": "大国竞争与战略时间",
@@ -213,17 +224,6 @@
       "degree": 27
     },
     {
-      "id": "concept:cost-shifting",
-      "key": "cost-shifting",
-      "label": "成本外移",
-      "fullLabel": "成本外移",
-      "type": "concept",
-      "route": "concepts/cost-shifting",
-      "summary": "强势一方把本该自己付的成本，借价格、合同、规则或时间推给没得选的人。",
-      "status": null,
-      "degree": 26
-    },
-    {
       "id": "model:narrative-instrumentalization",
       "key": "narrative-instrumentalization",
       "label": "叙事工具化模型",
@@ -242,6 +242,17 @@
       "type": "episode",
       "route": "episodes/EP154",
       "summary": "香格里拉对话会上，美国防长赫格塞斯讲了一段话。多数解读抓住他要建立建设性战略稳定关系那句软话，认为是降调求稳。其实那只是开场的烟雾弹。关键词是后半段的围栏，他已把边界划在第一岛链，围栏成了修到东亚家门口的高墙。它接的是川普的新门罗主义，一边建墙，一边打击灰色贸易。美军收拳后撤，让盟友顶到前线守墙。芯片管制也开始按总部认人，墙修到了信息层。东南亚是最后一段还没划定的边界，香会就是逼骑墙国家选边的场子。",
+      "status": "curated",
+      "degree": 26
+    },
+    {
+      "id": "episode:EP169",
+      "key": "EP169",
+      "label": "EP169",
+      "fullLabel": "EP169 · 合肥模式底层逻辑拆解：个人投资的4个实用方法 + 1个核心秘籍",
+      "type": "episode",
+      "route": "episodes/EP169",
+      "summary": "合肥被称为中国最牛风投城市。各地城投照抄，多数抄出一身债和产能过剩。可学的不是城市打法，是背后的投资逻辑。四个显性方法是逆周期抄底不追热点，赌产业链不赌单家公司。还有长期陪跑到成熟才退出，只投接得住的赛道。抄不走的是第五个隐性秘籍。政府能把权力直接变成补贴、报表和销售额。普通人没权力，唯一对应物是信息确定性。普通人要掌握的是别人没有的确定信息，像一级市场那样看清命脉。到那一步，欧印和加杠杆才不是赌博。",
       "status": "curated",
       "degree": 26
     },
@@ -290,14 +301,14 @@
       "degree": 26
     },
     {
-      "id": "episode:EP169",
-      "key": "EP169",
-      "label": "EP169",
-      "fullLabel": "EP169 · 合肥模式底层逻辑拆解：个人投资的4个实用方法 + 1个核心秘籍",
-      "type": "episode",
-      "route": "episodes/EP169",
-      "summary": "合肥被称为中国最牛风投城市。各地城投照抄，多数抄出一身债和产能过剩。可学的不是城市打法，是背后的投资逻辑。四个显性方法是逆周期抄底不追热点，赌产业链不赌单家公司。还有长期陪跑到成熟才退出，只投接得住的赛道。抄不走的是第五个隐性秘籍。政府能把权力直接变成补贴、报表和销售额。普通人没权力，唯一对应物是信息确定性。普通人要掌握的是别人没有的确定信息，像一级市场那样看清命脉。到那一步，欧印和加杠杆才不是赌博。",
-      "status": "curated",
+      "id": "theme:narrative-speculation-and-retail-traps",
+      "key": "narrative-speculation-and-retail-traps",
+      "label": "投资叙事与散户陷阱",
+      "fullLabel": "投资叙事与散户陷阱",
+      "type": "theme",
+      "route": "themes/narrative-speculation-and-retail-traps",
+      "summary": "价格先靠故事推高，先进场的人在高点退出，普通人带着积蓄最后接手。",
+      "status": null,
       "degree": 25
     },
     {
@@ -363,17 +374,6 @@
       "type": "concept",
       "route": "concepts/gray-oil-network",
       "summary": "绕开正规结算和监管的石油流动，会在影子体系中重塑货币、制裁和地缘利益。",
-      "status": null,
-      "degree": 24
-    },
-    {
-      "id": "theme:narrative-speculation-and-retail-traps",
-      "key": "narrative-speculation-and-retail-traps",
-      "label": "投资叙事与散户陷阱",
-      "fullLabel": "投资叙事与散户陷阱",
-      "type": "theme",
-      "route": "themes/narrative-speculation-and-retail-traps",
-      "summary": "价格先靠故事推高，先进场的人在高点退出，普通人带着积蓄最后接手。",
       "status": null,
       "degree": 24
     },
@@ -675,6 +675,28 @@
       "degree": 21
     },
     {
+      "id": "live:LIVE057",
+      "key": "LIVE057",
+      "label": "LIVE057",
+      "fullLabel": "LIVE057 · AI股一夜暴跌！拆解背后真相：算力中心全靠借钱堆起来，这个泡沫为什么挤不得？",
+      "type": "live",
+      "route": "lives/LIVE057",
+      "summary": "Anthropic 和 OpenAI 只签了合同，掏钱盖机房的是一层层另立的项目公司。",
+      "status": "published",
+      "degree": 21
+    },
+    {
+      "id": "model:leverage-backfire",
+      "key": "leverage-backfire",
+      "label": "杠杆反噬",
+      "fullLabel": "杠杆反噬",
+      "type": "model",
+      "route": "models/leverage-backfire",
+      "summary": "杠杆反噬解释上行期放大利润的结构，如何在下行期放大亏损、现金流压力和清偿困难。",
+      "status": null,
+      "degree": 20
+    },
+    {
       "id": "theme:middle-class-descent-and-stratification",
       "key": "middle-class-descent-and-stratification",
       "label": "中产下坠与分层社会",
@@ -719,13 +741,24 @@
       "degree": 20
     },
     {
-      "id": "model:leverage-backfire",
-      "key": "leverage-backfire",
-      "label": "杠杆反噬",
-      "fullLabel": "杠杆反噬",
-      "type": "model",
-      "route": "models/leverage-backfire",
-      "summary": "杠杆反噬解释上行期放大利润的结构，如何在下行期放大亏损、现金流压力和清偿困难。",
+      "id": "concept:pan-institutional-middle-class",
+      "key": "pan-institutional-middle-class",
+      "label": "泛体制中产",
+      "fullLabel": "泛体制中产",
+      "type": "concept",
+      "route": "concepts/pan-institutional-middle-class",
+      "summary": "泛体制中产指依靠公务员、事业编、国企及体制相关岗位维持稳定收入、福利和社会体面的中间层。",
+      "status": null,
+      "degree": 19
+    },
+    {
+      "id": "theme:real-estate-deleveraging",
+      "key": "real-estate-deleveraging",
+      "label": "房地产去杠杆与风险出清",
+      "fullLabel": "房地产去杠杆与风险出清",
+      "type": "theme",
+      "route": "themes/real-estate-deleveraging",
+      "summary": "讨论房地产在下行周期里如何通过断供、重组、展期和资产处置逐步暴露风险。",
       "status": null,
       "degree": 19
     },
@@ -884,28 +917,6 @@
       "degree": 18
     },
     {
-      "id": "concept:pan-institutional-middle-class",
-      "key": "pan-institutional-middle-class",
-      "label": "泛体制中产",
-      "fullLabel": "泛体制中产",
-      "type": "concept",
-      "route": "concepts/pan-institutional-middle-class",
-      "summary": "泛体制中产指依靠公务员、事业编、国企及体制相关岗位维持稳定收入、福利和社会体面的中间层。",
-      "status": null,
-      "degree": 18
-    },
-    {
-      "id": "theme:real-estate-deleveraging",
-      "key": "real-estate-deleveraging",
-      "label": "房地产去杠杆与风险出清",
-      "fullLabel": "房地产去杠杆与风险出清",
-      "type": "theme",
-      "route": "themes/real-estate-deleveraging",
-      "summary": "讨论房地产在下行周期里如何通过断供、重组、展期和资产处置逐步暴露风险。",
-      "status": null,
-      "degree": 18
-    },
-    {
       "id": "model:value-capture",
       "key": "value-capture",
       "label": "价值捕获",
@@ -924,6 +935,17 @@
       "type": "episode",
       "route": "episodes/EP132",
       "summary": "Meta 收购 Manus 被监管否决，叫停有明确的法律依据。难受的是后果，过去三十年草根创业者成长和兑现的那条路被堵死了。肖弘出身三四线城市吉安，没背景没资源，靠的是美元基金敢投一份 PPT，终局是赴美上市或卖给美国巨头。换成地方国资基金，99% 不会投他，国有资产不能流失，纯软件带不来厂房、就业和税收，退出也看不清。理性的年轻人只好去考研考公。创新资源交给行政和国资之后，关系压过能力，只剩依附式创新和表演式创新。",
+      "status": "curated",
+      "degree": 18
+    },
+    {
+      "id": "episode:EP192",
+      "key": "EP192",
+      "label": "EP192",
+      "fullLabel": "EP192 · 梁文锋说漏嘴的算力乱象！揭露中国AI行业的真实浪费与困境。",
+      "type": "episode",
+      "route": "episodes/EP192",
+      "summary": "梁文锋一场近四小时的闭门会文字稿被放了出来。他是量化出身，不屑对投资人吹牛，稿子里的话八九成可信。四张华为的卡才抵一张英伟达的卡，手里一万六千张只折合四五千张，缺口要靠别的卡补。由此推断灰色贸易这条路被坐实了，但这一步是推断，稿子没说卡从哪来。国内七八家一起做大模型，卡和算力中心的需求被一起做大，这条产业链跟当年的电车很像。现在的 AI 还没到自我学习那一步，泡沫可能就在眼前。文件偏偏在月之暗面爆火之后流出，一种猜测是投资机构借这次泄露敲打梁文锋。",
       "status": "curated",
       "degree": 18
     },
@@ -1005,17 +1027,6 @@
       "degree": 17
     },
     {
-      "id": "episode:EP192",
-      "key": "EP192",
-      "label": "EP192",
-      "fullLabel": "EP192 · 梁文锋说漏嘴的算力乱象！揭露中国AI行业的真实浪费与困境。",
-      "type": "episode",
-      "route": "episodes/EP192",
-      "summary": "梁文锋一场近四小时的闭门会文字稿被放了出来。他是量化出身，不屑对投资人吹牛，稿子里的话八九成可信。四张华为的卡才抵一张英伟达的卡，手里一万六千张只折合四五千张，缺口要靠别的卡补。由此推断灰色贸易这条路被坐实了，但这一步是推断，稿子没说卡从哪来。国内七八家一起做大模型，卡和算力中心的需求被一起做大，这条产业链跟当年的电车很像。现在的 AI 还没到自我学习那一步，泡沫可能就在眼前。文件偏偏在月之暗面爆火之后流出，一种猜测是投资机构借这次泄露敲打梁文锋。",
-      "status": "curated",
-      "degree": 17
-    },
-    {
       "id": "live:LIVE056",
       "key": "LIVE056",
       "label": "LIVE056",
@@ -1091,6 +1102,17 @@
       "summary": "被冻住的那三十亿全是稳定币，链上每一笔都查得到。",
       "status": "published",
       "degree": 16
+    },
+    {
+      "id": "theme:local-government-financialization",
+      "key": "local-government-financialization",
+      "label": "地方政府资本化与补贴杠杆",
+      "fullLabel": "地方政府资本化与补贴杠杆",
+      "type": "theme",
+      "route": "themes/local-government-financialization",
+      "summary": "地方政府从招商者变成资本玩家，把补贴、基金和估值故事捆到一起，企业出事时自己接盘。",
+      "status": null,
+      "degree": 15
     },
     {
       "id": "theme:southeast-asia-fragmentation-and-bloc-competition",
@@ -1203,6 +1225,17 @@
       "degree": 15
     },
     {
+      "id": "episode:EP205",
+      "key": "EP205",
+      "label": "EP205",
+      "fullLabel": "EP205 · 不止是AI漫剧停更；中国制造七层内卷之下，每个行业都在重复同一件事！",
+      "type": "episode",
+      "route": "episodes/EP205",
+      "summary": "做AI漫剧的账号成批停更，行业里的说法是内容同质、观众看腻、人太多，这几条都只说到表面。真正压下来的是七层叠在一起的压力。五个平台同时下场抢同一批制作者，模型生成一秒的价格砍到开源免费，导演十几年的镜头经验被工具打包成一键功能。万次播放的分账从上百块掉到五块，连卖课的都割不到新人了。平台拿补贴换数据、拿数据换估值，最上面是持续收紧的合规，逼着行业极快地换玩法。被挤掉的是中间那批跟随者，能留下的是造工具的人和真会用工具的人，个人电影时代要靠他们来开。",
+      "status": "curated",
+      "degree": 15
+    },
+    {
       "id": "live:LIVE042",
       "key": "LIVE042",
       "label": "LIVE042",
@@ -1225,13 +1258,13 @@
       "degree": 14
     },
     {
-      "id": "theme:local-government-financialization",
-      "key": "local-government-financialization",
-      "label": "地方政府资本化与补贴杠杆",
-      "fullLabel": "地方政府资本化与补贴杠杆",
+      "id": "theme:institutional-middle-class-and-social-mobility",
+      "key": "institutional-middle-class-and-social-mobility",
+      "label": "体制化中产与社会流动",
+      "fullLabel": "体制化中产与社会流动",
       "type": "theme",
-      "route": "themes/local-government-financialization",
-      "summary": "地方政府从招商者变成资本玩家，把补贴、基金和估值故事捆到一起，企业出事时自己接盘。",
+      "route": "themes/institutional-middle-class-and-social-mobility",
+      "summary": "中产的底盘从市场收入换成编制和财政供养，普通人往上走的路跟着变窄。",
       "status": null,
       "degree": 14
     },
@@ -1243,6 +1276,17 @@
       "type": "theme",
       "route": "themes/ev-collapse-and-exit-risk",
       "summary": "聚焦新能源项目在失速、清算和品牌出清阶段，风险如何向债权人、用户和地方政府层层传导。",
+      "status": null,
+      "degree": 14
+    },
+    {
+      "id": "theme:ev-financialization-and-false-sales",
+      "key": "ev-financialization-and-false-sales",
+      "label": "新能源金融化与虚假销量",
+      "fullLabel": "新能源金融化与虚假销量",
+      "type": "theme",
+      "route": "themes/ev-financialization-and-false-sales",
+      "summary": "聚焦新能源车行业如何依靠补贴、融资、渠道黑箱和虚假销售维持增长叙事。",
       "status": null,
       "degree": 14
     },
@@ -1368,39 +1412,6 @@
       "degree": 14
     },
     {
-      "id": "episode:EP205",
-      "key": "EP205",
-      "label": "EP205",
-      "fullLabel": "EP205 · 不止是AI漫剧停更；中国制造七层内卷之下，每个行业都在重复同一件事！",
-      "type": "episode",
-      "route": "episodes/EP205",
-      "summary": "做AI漫剧的账号成批停更，行业里的说法是内容同质、观众看腻、人太多，这几条都只说到表面。真正压下来的是七层叠在一起的压力。五个平台同时下场抢同一批制作者，模型生成一秒的价格砍到开源免费，导演十几年的镜头经验被工具打包成一键功能。万次播放的分账从上百块掉到五块，连卖课的都割不到新人了。平台拿补贴换数据、拿数据换估值，最上面是持续收紧的合规，逼着行业极快地换玩法。被挤掉的是中间那批跟随者，能留下的是造工具的人和真会用工具的人，个人电影时代要靠他们来开。",
-      "status": "curated",
-      "degree": 14
-    },
-    {
-      "id": "theme:institutional-middle-class-and-social-mobility",
-      "key": "institutional-middle-class-and-social-mobility",
-      "label": "体制化中产与社会流动",
-      "fullLabel": "体制化中产与社会流动",
-      "type": "theme",
-      "route": "themes/institutional-middle-class-and-social-mobility",
-      "summary": "中产的底盘从市场收入换成编制和财政供养，普通人往上走的路跟着变窄。",
-      "status": null,
-      "degree": 13
-    },
-    {
-      "id": "theme:ev-financialization-and-false-sales",
-      "key": "ev-financialization-and-false-sales",
-      "label": "新能源金融化与虚假销量",
-      "fullLabel": "新能源金融化与虚假销量",
-      "type": "theme",
-      "route": "themes/ev-financialization-and-false-sales",
-      "summary": "聚焦新能源车行业如何依靠补贴、融资、渠道黑箱和虚假销售维持增长叙事。",
-      "status": null,
-      "degree": 13
-    },
-    {
       "id": "episode:EP129",
       "key": "EP129",
       "label": "EP129",
@@ -1474,6 +1485,17 @@
       "type": "episode",
       "route": "episodes/EP217",
       "summary": "2026 年 9 月 15 日，华为和赛力斯宣布调整问界的合作方式。产品、营销、渠道和服务全交给赛力斯，华为只留技术支持。说是分工调整，背后有三层原因。一层是分账。华为拿走授权费、品牌溢价和渠道分润，赛力斯扛着工厂、折旧和地方的对赌。利润薄到亏钱，只能在配件和品控上省，伤的还是华为的牌子。一层是舆论把这套分账摆上台面，小米又推出同级车，便宜一二十万，溢价站不住了。再一层是行业没了暴利，华为赶在风险暴露前交出经营权。赚钱时拿大头，出事时不沾身。",
+      "status": "curated",
+      "degree": 13
+    },
+    {
+      "id": "episode:EP219",
+      "key": "EP219",
+      "label": "EP219",
+      "fullLabel": "EP219 · 拆解“赛博炼金术”！从瓜子掺沙到沙里掺瓜子，人形机器人泡沫加速蒸发中国社会财富！",
+      "type": "episode",
+      "route": "episodes/EP219",
+      "summary": "2026 年 9 月，梅卡曼德创始人邵天兰实名质疑人形机器人行业靠数采中心和关联交易做收入。顺着他的说法拆开，是一条五步流水线。企业在补贴高的地方注册数据采集中心，拿补贴回头高价买母公司的机器人。机器人摆在办公楼里抓杯子、擦桌子，号称采集训练数据，支出再包装成研发拿减税，最后带着漂亮财报去上市。这像瓜子掺沙，越掺越多，最后成了沙里掺瓜子，只能靠自家机构收货走账。它跟当年新能源骗补不同，节奏快了好几倍，又没有消费者托底，烧掉的是存款、股民本金和地方的钱。",
       "status": "curated",
       "degree": 13
     },
@@ -1841,17 +1863,6 @@
       "degree": 12
     },
     {
-      "id": "episode:EP219",
-      "key": "EP219",
-      "label": "EP219",
-      "fullLabel": "EP219 · 拆解“赛博炼金术”！从瓜子掺沙到沙里掺瓜子，人形机器人泡沫加速蒸发中国社会财富！",
-      "type": "episode",
-      "route": "episodes/EP219",
-      "summary": "2026 年 9 月，梅卡曼德创始人邵天兰实名质疑人形机器人行业靠数采中心和关联交易做收入。顺着他的说法拆开，是一条五步流水线。企业在补贴高的地方注册数据采集中心，拿补贴回头高价买母公司的机器人。机器人摆在办公楼里抓杯子、擦桌子，号称采集训练数据，支出再包装成研发拿减税，最后带着漂亮财报去上市。这像瓜子掺沙，越掺越多，最后成了沙里掺瓜子，只能靠自家机构收货走账。它跟当年新能源骗补不同，节奏快了好几倍，又没有消费者托底，烧掉的是存款、股民本金和地方的钱。",
-      "status": "curated",
-      "degree": 12
-    },
-    {
       "id": "episode:EP220",
       "key": "EP220",
       "label": "EP220",
@@ -2061,6 +2072,17 @@
       "degree": 10
     },
     {
+      "id": "model:stability-over-growth-trap",
+      "key": "stability-over-growth-trap",
+      "label": "稳定替代增长陷阱",
+      "fullLabel": "稳定替代增长陷阱",
+      "type": "model",
+      "route": "models/stability-over-growth-trap",
+      "summary": "当系统把稳定当作增长的替代品，短期秩序会被保住，长期造血、流动和创新却会被压低。",
+      "status": null,
+      "degree": 10
+    },
+    {
       "id": "concept:expectation-selling",
       "key": "expectation-selling",
       "label": "预期贩卖",
@@ -2259,6 +2281,17 @@
       "degree": 9
     },
     {
+      "id": "model:technology-wave-cycle",
+      "key": "technology-wave-cycle",
+      "label": "技术浪潮周期",
+      "fullLabel": "技术浪潮周期",
+      "type": "model",
+      "route": "models/technology-wave-cycle",
+      "summary": "技术浪潮周期强调方向正确还不够，资本、基础设施、真实应用和时间窗口必须对齐。",
+      "status": null,
+      "degree": 9
+    },
+    {
       "id": "concept:symbolic-matricide",
       "key": "symbolic-matricide",
       "label": "精神弑母",
@@ -2321,17 +2354,6 @@
       "type": "theme",
       "route": "themes/data-cosmetics-and-false-prosperity",
       "summary": "地方、企业和学术圈用账面数字制造景气，真实风险留在黑箱里。",
-      "status": null,
-      "degree": 9
-    },
-    {
-      "id": "model:stability-over-growth-trap",
-      "key": "stability-over-growth-trap",
-      "label": "稳定替代增长陷阱",
-      "fullLabel": "稳定替代增长陷阱",
-      "type": "model",
-      "route": "models/stability-over-growth-trap",
-      "summary": "当系统把稳定当作增长的替代品，短期秩序会被保住，长期造血、流动和创新却会被压低。",
       "status": null,
       "degree": 9
     },
@@ -2776,17 +2798,6 @@
       "degree": 8
     },
     {
-      "id": "model:technology-wave-cycle",
-      "key": "technology-wave-cycle",
-      "label": "技术浪潮周期",
-      "fullLabel": "技术浪潮周期",
-      "type": "model",
-      "route": "models/technology-wave-cycle",
-      "summary": "技术浪潮周期强调方向正确还不够，资本、基础设施、真实应用和时间窗口必须对齐。",
-      "status": null,
-      "degree": 8
-    },
-    {
       "id": "model:screening-machine",
       "key": "screening-machine",
       "label": "筛选机器模型",
@@ -2794,6 +2805,17 @@
       "type": "model",
       "route": "models/screening-machine",
       "summary": "教育和组织的头号任务变成排名、分层和输送，人就被当成待筛的样本来处理。",
+      "status": null,
+      "degree": 8
+    },
+    {
+      "id": "concept:credential-rent",
+      "key": "credential-rent",
+      "label": "身份租值",
+      "fullLabel": "身份租值",
+      "type": "concept",
+      "route": "concepts/credential-rent",
+      "summary": "学历、头衔、家世、圈层被当成一笔能反复出租的资产，持续换来钱、信任和资源。",
       "status": null,
       "degree": 8
     },
@@ -3337,6 +3359,17 @@
       "degree": 7
     },
     {
+      "id": "concept:subsidy-leverage-engine",
+      "key": "subsidy-leverage-engine",
+      "label": "补贴杠杆引擎",
+      "fullLabel": "补贴杠杆引擎",
+      "type": "concept",
+      "route": "concepts/subsidy-leverage-engine",
+      "summary": "财政补贴被当成种子资金，撬动基金、估值、招商和社会资本，形成杠杆引擎。",
+      "status": null,
+      "degree": 7
+    },
+    {
       "id": "theme:founder-power-and-feedback",
       "key": "founder-power-and-feedback",
       "label": "创始人权力与组织反馈",
@@ -3491,17 +3524,6 @@
       "degree": 7
     },
     {
-      "id": "concept:credential-rent",
-      "key": "credential-rent",
-      "label": "身份租值",
-      "fullLabel": "身份租值",
-      "type": "concept",
-      "route": "concepts/credential-rent",
-      "summary": "学历、头衔、家世、圈层被当成一笔能反复出租的资产，持续换来钱、信任和资源。",
-      "status": null,
-      "degree": 7
-    },
-    {
       "id": "concept:pragmatic-legitimacy",
       "key": "pragmatic-legitimacy",
       "label": "务实合法性",
@@ -3586,6 +3608,17 @@
       "type": "concept",
       "route": "concepts/rule-gaming-backfire",
       "summary": "靠钻规则空子或动用特权改规则获取短期收益，最终赔上信任、口碑和长期竞争力的现象。",
+      "status": null,
+      "degree": 7
+    },
+    {
+      "id": "theme:ai-bubble-and-compute-demand",
+      "key": "ai-bubble-and-compute-demand",
+      "label": "AI泡沫与算力需求制造",
+      "fullLabel": "AI泡沫与算力需求制造",
+      "type": "theme",
+      "route": "themes/ai-bubble-and-compute-demand",
+      "summary": "资本先把算力和工具铺开，再用补贴和热度把用量做出来，拿用量讲估值。",
       "status": null,
       "degree": 7
     },
@@ -3852,17 +3885,6 @@
       "summary": "达标的好处高于说实话，造假的代价低于合规，同行又都在做，整个系统就会奖励看起来达标的人。",
       "status": null,
       "degree": 7
-    },
-    {
-      "id": "concept:subsidy-leverage-engine",
-      "key": "subsidy-leverage-engine",
-      "label": "补贴杠杆引擎",
-      "fullLabel": "补贴杠杆引擎",
-      "type": "concept",
-      "route": "concepts/subsidy-leverage-engine",
-      "summary": "财政补贴被当成种子资金，撬动基金、估值、招商和社会资本，形成杠杆引擎。",
-      "status": null,
-      "degree": 6
     },
     {
       "id": "model:property-defined-rule-domain",
@@ -4169,17 +4191,6 @@
       "type": "concept",
       "route": "concepts/money-time-price",
       "summary": "钱的价值不只由数量决定，更由期限、还款压力和附带条件决定。",
-      "status": null,
-      "degree": 6
-    },
-    {
-      "id": "theme:ai-bubble-and-compute-demand",
-      "key": "ai-bubble-and-compute-demand",
-      "label": "AI泡沫与算力需求制造",
-      "fullLabel": "AI泡沫与算力需求制造",
-      "type": "theme",
-      "route": "themes/ai-bubble-and-compute-demand",
-      "summary": "资本先把算力和工具铺开，再用补贴和热度把用量做出来，拿用量讲估值。",
       "status": null,
       "degree": 6
     },
@@ -4591,6 +4602,17 @@
       "degree": 5
     },
     {
+      "id": "theme:platform-labor-and-lived-reality",
+      "key": "platform-labor-and-lived-reality",
+      "label": "平台劳动与真实生存",
+      "fullLabel": "平台劳动与真实生存",
+      "type": "theme",
+      "route": "themes/platform-labor-and-lived-reality",
+      "summary": "外卖、网约车这类平台劳动的真实处境，以及它怎样被宣传拍成一种自由的生活方式。",
+      "status": null,
+      "degree": 5
+    },
+    {
       "id": "concept:emotion-front-running",
       "key": "emotion-front-running",
       "label": "情绪抢跑",
@@ -4598,6 +4620,17 @@
       "type": "concept",
       "route": "concepts/emotion-front-running",
       "summary": "完整事实还没出来，情绪先被点燃、站队先完成，等反转来了，跟着上头的人只剩挨打脸。",
+      "status": null,
+      "degree": 5
+    },
+    {
+      "id": "concept:identity-premium",
+      "key": "identity-premium",
+      "label": "身份溢价",
+      "fullLabel": "身份溢价",
+      "type": "concept",
+      "route": "concepts/identity-premium",
+      "summary": "商品价格里超出功能的那一截，买的是让别人看出自己属于哪一类人，这一截随着撑它的阶层一起涨落。",
       "status": null,
       "degree": 5
     },
@@ -5251,17 +5284,6 @@
       "degree": 4
     },
     {
-      "id": "theme:platform-labor-and-lived-reality",
-      "key": "platform-labor-and-lived-reality",
-      "label": "平台劳动与真实生存",
-      "fullLabel": "平台劳动与真实生存",
-      "type": "theme",
-      "route": "themes/platform-labor-and-lived-reality",
-      "summary": "外卖、网约车这类平台劳动的真实处境，以及它怎样被宣传拍成一种自由的生活方式。",
-      "status": null,
-      "degree": 4
-    },
-    {
       "id": "concept:anticipatory-governance",
       "key": "anticipatory-governance",
       "label": "前瞻治理",
@@ -5291,17 +5313,6 @@
       "type": "concept",
       "route": "concepts/talent-siphon",
       "summary": "一国靠高工资和开放机会，常年吸走邻国被制度排斥的中产人才。培养的钱母国出，产值记在邻国账上。",
-      "status": null,
-      "degree": 4
-    },
-    {
-      "id": "concept:identity-premium",
-      "key": "identity-premium",
-      "label": "身份溢价",
-      "fullLabel": "身份溢价",
-      "type": "concept",
-      "route": "concepts/identity-premium",
-      "summary": "商品价格里超出功能的那一截，买的是让别人看出自己属于哪一类人，这一截随着撑它的阶层一起涨落。",
       "status": null,
       "degree": 4
     },
@@ -6890,6 +6901,17 @@
       "degree": 2
     },
     {
+      "id": "concept:status-maintenance-debt",
+      "key": "status-maintenance-debt",
+      "label": "人设维持型负债",
+      "fullLabel": "人设维持型负债",
+      "type": "concept",
+      "route": "concepts/status-maintenance-debt",
+      "summary": "债务不再服务于经营和资产，而是用来维持一个人在社会关系里的身份，一旦还清，身份也就没了。",
+      "status": null,
+      "degree": 2
+    },
+    {
       "id": "concept:three-layer-leverage",
       "key": "three-layer-leverage",
       "label": "三层杠杆",
@@ -8118,17 +8140,6 @@
       "type": "concept",
       "route": "concepts/collective-self-domestication",
       "summary": "一个群体靠贬低外圈、强化内部认同来确立优越地位，把成员自愿地圈进一套自我安抚的逻辑里。",
-      "status": null,
-      "degree": 1
-    },
-    {
-      "id": "concept:status-maintenance-debt",
-      "key": "status-maintenance-debt",
-      "label": "人设维持型负债",
-      "fullLabel": "人设维持型负债",
-      "type": "concept",
-      "route": "concepts/status-maintenance-debt",
-      "summary": "债务不再服务于经营和资产，而是用来维持一个人在社会关系里的身份，一旦还清，身份也就没了。",
       "status": null,
       "degree": 1
     },
@@ -23711,6 +23722,111 @@
     {
       "source": "live:LIVE056",
       "target": "theme:institutional-middle-class-and-social-mobility",
+      "kind": "live-theme"
+    },
+    {
+      "source": "live:LIVE057",
+      "target": "episode:EP192",
+      "kind": "live-episode"
+    },
+    {
+      "source": "live:LIVE057",
+      "target": "episode:EP219",
+      "kind": "live-episode"
+    },
+    {
+      "source": "live:LIVE057",
+      "target": "episode:EP169",
+      "kind": "live-episode"
+    },
+    {
+      "source": "live:LIVE057",
+      "target": "episode:EP205",
+      "kind": "live-episode"
+    },
+    {
+      "source": "live:LIVE057",
+      "target": "concept:hidden-debt",
+      "kind": "live-concept"
+    },
+    {
+      "source": "live:LIVE057",
+      "target": "concept:subsidy-leverage-engine",
+      "kind": "live-concept"
+    },
+    {
+      "source": "live:LIVE057",
+      "target": "concept:cost-shifting",
+      "kind": "live-concept"
+    },
+    {
+      "source": "live:LIVE057",
+      "target": "concept:identity-premium",
+      "kind": "live-concept"
+    },
+    {
+      "source": "live:LIVE057",
+      "target": "concept:credential-rent",
+      "kind": "live-concept"
+    },
+    {
+      "source": "live:LIVE057",
+      "target": "concept:pan-institutional-middle-class",
+      "kind": "live-concept"
+    },
+    {
+      "source": "live:LIVE057",
+      "target": "concept:status-maintenance-debt",
+      "kind": "live-concept"
+    },
+    {
+      "source": "live:LIVE057",
+      "target": "model:leverage-backfire",
+      "kind": "live-model"
+    },
+    {
+      "source": "live:LIVE057",
+      "target": "model:technology-wave-cycle",
+      "kind": "live-model"
+    },
+    {
+      "source": "live:LIVE057",
+      "target": "model:stability-over-growth-trap",
+      "kind": "live-model"
+    },
+    {
+      "source": "live:LIVE057",
+      "target": "theme:ai-bubble-and-compute-demand",
+      "kind": "live-theme"
+    },
+    {
+      "source": "live:LIVE057",
+      "target": "theme:local-government-financialization",
+      "kind": "live-theme"
+    },
+    {
+      "source": "live:LIVE057",
+      "target": "theme:platform-labor-and-lived-reality",
+      "kind": "live-theme"
+    },
+    {
+      "source": "live:LIVE057",
+      "target": "theme:institutional-middle-class-and-social-mobility",
+      "kind": "live-theme"
+    },
+    {
+      "source": "live:LIVE057",
+      "target": "theme:real-estate-deleveraging",
+      "kind": "live-theme"
+    },
+    {
+      "source": "live:LIVE057",
+      "target": "theme:narrative-speculation-and-retail-traps",
+      "kind": "live-theme"
+    },
+    {
+      "source": "live:LIVE057",
+      "target": "theme:ev-financialization-and-false-sales",
       "kind": "live-theme"
     },
     {
