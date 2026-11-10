@@ -2,14 +2,14 @@
   "meta": {
     "title": "颖响力知识图谱",
     "subtitle": "节目、概念、模型、人物、主题之间的可视化连接网络",
-    "nodeCount": 793,
-    "linkCount": 3022,
+    "nodeCount": 794,
+    "linkCount": 3029,
     "typeCounts": {
       "model": 85,
       "live": 57,
       "concept": 258,
       "theme": 92,
-      "episode": 236,
+      "episode": 237,
       "person": 65
     }
   },
@@ -23,7 +23,7 @@
       "route": "models/risk-transfer-chain",
       "summary": "风险很少当场爆掉，多半先在银行、企业、票据、供应链和普通人之间转手、延后，一层层往下沉。",
       "status": null,
-      "degree": 59
+      "degree": 60
     },
     {
       "id": "live:LIVE002",
@@ -166,7 +166,7 @@
       "route": "concepts/cost-shifting",
       "summary": "强势一方把本该自己付的成本，借价格、合同、规则或时间推给没得选的人。",
       "status": null,
-      "degree": 27
+      "degree": 28
     },
     {
       "id": "theme:great-power-competition-and-strategic-time",
@@ -222,6 +222,17 @@
       "summary": "这门生意的名字中国人早就有了，叫拥戴之功。",
       "status": "curated",
       "degree": 27
+    },
+    {
+      "id": "theme:narrative-speculation-and-retail-traps",
+      "key": "narrative-speculation-and-retail-traps",
+      "label": "投资叙事与散户陷阱",
+      "fullLabel": "投资叙事与散户陷阱",
+      "type": "theme",
+      "route": "themes/narrative-speculation-and-retail-traps",
+      "summary": "价格先靠故事推高，先进场的人在高点退出，普通人带着积蓄最后接手。",
+      "status": null,
+      "degree": 26
     },
     {
       "id": "model:narrative-instrumentalization",
@@ -299,17 +310,6 @@
       "summary": "一种猜测是，投资机构能用的手段只剩一个，把内部会议稿放出来敲打一下。",
       "status": "curated",
       "degree": 26
-    },
-    {
-      "id": "theme:narrative-speculation-and-retail-traps",
-      "key": "narrative-speculation-and-retail-traps",
-      "label": "投资叙事与散户陷阱",
-      "fullLabel": "投资叙事与散户陷阱",
-      "type": "theme",
-      "route": "themes/narrative-speculation-and-retail-traps",
-      "summary": "价格先靠故事推高，先进场的人在高点退出，普通人带着积蓄最后接手。",
-      "status": null,
-      "degree": 25
     },
     {
       "id": "live:LIVE014",
@@ -653,6 +653,17 @@
       "degree": 22
     },
     {
+      "id": "model:leverage-backfire",
+      "key": "leverage-backfire",
+      "label": "杠杆反噬",
+      "fullLabel": "杠杆反噬",
+      "type": "model",
+      "route": "models/leverage-backfire",
+      "summary": "杠杆反噬解释上行期放大利润的结构，如何在下行期放大亏损、现金流压力和清偿困难。",
+      "status": null,
+      "degree": 21
+    },
+    {
       "id": "model:strategic-timing",
       "key": "strategic-timing",
       "label": "战略时机",
@@ -684,17 +695,6 @@
       "summary": "Anthropic 和 OpenAI 只签了合同，掏钱盖机房的是一层层另立的项目公司。",
       "status": "published",
       "degree": 21
-    },
-    {
-      "id": "model:leverage-backfire",
-      "key": "leverage-backfire",
-      "label": "杠杆反噬",
-      "fullLabel": "杠杆反噬",
-      "type": "model",
-      "route": "models/leverage-backfire",
-      "summary": "杠杆反噬解释上行期放大利润的结构，如何在下行期放大亏损、现金流压力和清偿困难。",
-      "status": null,
-      "degree": 20
     },
     {
       "id": "theme:middle-class-descent-and-stratification",
@@ -2941,6 +2941,17 @@
       "degree": 8
     },
     {
+      "id": "theme:ai-bubble-and-compute-demand",
+      "key": "ai-bubble-and-compute-demand",
+      "label": "AI泡沫与算力需求制造",
+      "fullLabel": "AI泡沫与算力需求制造",
+      "type": "theme",
+      "route": "themes/ai-bubble-and-compute-demand",
+      "summary": "资本先把算力和工具铺开，再用补贴和热度把用量做出来，拿用量讲估值。",
+      "status": null,
+      "degree": 8
+    },
+    {
       "id": "episode:EP005",
       "key": "EP005",
       "label": "EP005",
@@ -3612,17 +3623,6 @@
       "degree": 7
     },
     {
-      "id": "theme:ai-bubble-and-compute-demand",
-      "key": "ai-bubble-and-compute-demand",
-      "label": "AI泡沫与算力需求制造",
-      "fullLabel": "AI泡沫与算力需求制造",
-      "type": "theme",
-      "route": "themes/ai-bubble-and-compute-demand",
-      "summary": "资本先把算力和工具铺开，再用补贴和热度把用量做出来，拿用量讲估值。",
-      "status": null,
-      "degree": 7
-    },
-    {
       "id": "episode:EP006",
       "key": "EP006",
       "label": "EP006",
@@ -3872,6 +3872,17 @@
       "type": "episode",
       "route": "episodes/EP235",
       "summary": "2026 年 10 月底，波兰宪法法院乱成一团。议会今年选出八名新法官，总统纳夫罗茨基拒绝为其中五人主持宣誓，执政联盟和总统一方互指对方夺权，楼里还起了推搡。可两边争的始终是规则怎么解释，没人想靠军队拿下对方。两年前韩国总统尹锡悦同样被朝野对立困住，第一反应却是宣布戒严，跳出制度去压平矛盾。两国宪政转型都只有三四十年，危机里走向相反，差别在文明底色。欧洲先有法后有国，东亚先有国后有法。制度可以照搬，对规则的敬畏要上百年才攒得下来，危机时刻守得住法治才算成熟。",
+      "status": "curated",
+      "degree": 7
+    },
+    {
+      "id": "episode:EP237",
+      "key": "EP237",
+      "label": "EP237",
+      "fullLabel": "EP237 · AI 股史诗级暴跌！是倒车接人，还是车彻底坏了？",
+      "type": "episode",
+      "route": "episodes/EP237",
+      "summary": "11 月 5 日费城半导体指数单日跌了 12.25%，是 2020 年 3 月以来最大的单日跌幅，第二天日本、韩国股市跟着大跌。市场上流行三种说法，AI 泡沫彻底破了，美国人集体反对 AI，选举前后资金砸坑、跌完还会涨回去，三种都没说到点上。跌得最深的是数据中心、芯片和供电散热这些重资产，做模型和应用的公司只跌了几个点。真正的毛病在钱的来路，算力基建拿长期合同做抵押，走表外融资层层加杠杆，跟当年的次贷是同一个配方。短期也许有反弹，现在全力杀进去要小心，活下来比赚快钱要紧。",
       "status": "curated",
       "degree": 7
     },
@@ -5823,6 +5834,17 @@
       "degree": 3
     },
     {
+      "id": "concept:valuation-overdraft",
+      "key": "valuation-overdraft",
+      "label": "估值透支",
+      "fullLabel": "估值透支",
+      "type": "concept",
+      "route": "concepts/valuation-overdraft",
+      "summary": "价格一次性把公司往后几十年做到最好的结果算完，此后的努力只用来兑现，不再产生新的空间。",
+      "status": null,
+      "degree": 3
+    },
+    {
       "id": "model:human-contract-model",
       "key": "human-contract-model",
       "label": "国家信用契约模型",
@@ -6171,6 +6193,17 @@
       "type": "concept",
       "route": "concepts/authoritarian-regression",
       "summary": "一个国家在危机压力下重新启用旧威权体制的组织方式，例如让军队重返行政与商业体系。",
+      "status": null,
+      "degree": 3
+    },
+    {
+      "id": "concept:investment-timing-gap",
+      "key": "investment-timing-gap",
+      "label": "投入兑现时间差",
+      "fullLabel": "投入兑现时间差",
+      "type": "concept",
+      "route": "concepts/investment-timing-gap",
+      "summary": "资本和基础设施先投入，真实应用价值后兑现，中间的时间差会制造估值、现金流和耐心风险。",
       "status": null,
       "degree": 3
     },
@@ -6593,17 +6626,6 @@
       "degree": 2
     },
     {
-      "id": "concept:valuation-overdraft",
-      "key": "valuation-overdraft",
-      "label": "估值透支",
-      "fullLabel": "估值透支",
-      "type": "concept",
-      "route": "concepts/valuation-overdraft",
-      "summary": "价格一次性把公司往后几十年做到最好的结果算完，此后的努力只用来兑现，不再产生新的空间。",
-      "status": null,
-      "degree": 2
-    },
-    {
       "id": "concept:partnership-shift",
       "key": "partnership-shift",
       "label": "关系合伙人化",
@@ -6996,17 +7018,6 @@
       "type": "concept",
       "route": "concepts/conditional-love-loop",
       "summary": "亲情以爱之名附带控制和评价，下一代若未消化，就会继续复制这套关系。",
-      "status": null,
-      "degree": 2
-    },
-    {
-      "id": "concept:investment-timing-gap",
-      "key": "investment-timing-gap",
-      "label": "投入兑现时间差",
-      "fullLabel": "投入兑现时间差",
-      "type": "concept",
-      "route": "concepts/investment-timing-gap",
-      "summary": "资本和基础设施先投入，真实应用价值后兑现，中间的时间差会制造估值、现金流和耐心风险。",
       "status": null,
       "degree": 2
     },
@@ -17287,6 +17298,41 @@
     {
       "source": "episode:EP236",
       "target": "theme:capital-exit-and-cross-border-harvest",
+      "kind": "episode-theme"
+    },
+    {
+      "source": "episode:EP237",
+      "target": "concept:valuation-overdraft",
+      "kind": "episode-concept"
+    },
+    {
+      "source": "episode:EP237",
+      "target": "concept:investment-timing-gap",
+      "kind": "episode-concept"
+    },
+    {
+      "source": "episode:EP237",
+      "target": "concept:cost-shifting",
+      "kind": "episode-concept"
+    },
+    {
+      "source": "episode:EP237",
+      "target": "model:leverage-backfire",
+      "kind": "episode-model"
+    },
+    {
+      "source": "episode:EP237",
+      "target": "model:risk-transfer-chain",
+      "kind": "episode-model"
+    },
+    {
+      "source": "episode:EP237",
+      "target": "theme:ai-bubble-and-compute-demand",
+      "kind": "episode-theme"
+    },
+    {
+      "source": "episode:EP237",
+      "target": "theme:narrative-speculation-and-retail-traps",
       "kind": "episode-theme"
     },
     {
