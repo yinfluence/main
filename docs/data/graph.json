@@ -2,14 +2,14 @@
   "meta": {
     "title": "颖响力知识图谱",
     "subtitle": "节目、概念、模型、人物、主题之间的可视化连接网络",
-    "nodeCount": 794,
-    "linkCount": 3029,
+    "nodeCount": 796,
+    "linkCount": 3036,
     "typeCounts": {
       "model": 85,
       "live": 57,
-      "concept": 258,
+      "concept": 259,
       "theme": 92,
-      "episode": 237,
+      "episode": 238,
       "person": 65
     }
   },
@@ -23,7 +23,7 @@
       "route": "models/risk-transfer-chain",
       "summary": "风险很少当场爆掉，多半先在银行、企业、票据、供应链和普通人之间转手、延后，一层层往下沉。",
       "status": null,
-      "degree": 60
+      "degree": 61
     },
     {
       "id": "live:LIVE002",
@@ -477,6 +477,17 @@
       "degree": 24
     },
     {
+      "id": "theme:dollar-system-and-gray-trade",
+      "key": "dollar-system-and-gray-trade",
+      "label": "美元体系与灰色贸易",
+      "fullLabel": "美元体系与灰色贸易",
+      "type": "theme",
+      "route": "themes/dollar-system-and-gray-trade",
+      "summary": "讨论石油美元的真实脆弱点，究竟藏在公开统计之外的哪些灰色交易链条里。",
+      "status": null,
+      "degree": 23
+    },
+    {
       "id": "concept:chokepoint-leverage",
       "key": "chokepoint-leverage",
       "label": "咽喉杠杆",
@@ -484,6 +495,17 @@
       "type": "concept",
       "route": "concepts/chokepoint-leverage",
       "summary": "控制海峡、运河和关键通道的人，往往能把地理位置转化成定价权、通行权和规则权。",
+      "status": null,
+      "degree": 23
+    },
+    {
+      "id": "theme:sanctions-and-power-containment",
+      "key": "sanctions-and-power-containment",
+      "label": "制裁、遏制与集团竞争",
+      "fullLabel": "制裁、遏制与集团竞争",
+      "type": "theme",
+      "route": "themes/sanctions-and-power-containment",
+      "summary": "讨论制裁、门罗主义、海峡与联盟如何共同服务于压制对手集团的全球布局。",
       "status": null,
       "degree": 23
     },
@@ -543,17 +565,6 @@
       "degree": 23
     },
     {
-      "id": "theme:dollar-system-and-gray-trade",
-      "key": "dollar-system-and-gray-trade",
-      "label": "美元体系与灰色贸易",
-      "fullLabel": "美元体系与灰色贸易",
-      "type": "theme",
-      "route": "themes/dollar-system-and-gray-trade",
-      "summary": "讨论石油美元的真实脆弱点，究竟藏在公开统计之外的哪些灰色交易链条里。",
-      "status": null,
-      "degree": 22
-    },
-    {
       "id": "person:donald-trump",
       "key": "donald-trump",
       "label": "特朗普",
@@ -561,17 +572,6 @@
       "type": "person",
       "route": "people/donald-trump",
       "summary": "特朗普是美国共和党政治人物，第 45 任和第 47 任美国总统。节目讲美国战略时最常拿他说事：新门罗主义收缩防线，让盟友出钱守墙，再沿巴拿马、委内瑞拉、伊朗一路打灰色贸易。",
-      "status": null,
-      "degree": 22
-    },
-    {
-      "id": "theme:sanctions-and-power-containment",
-      "key": "sanctions-and-power-containment",
-      "label": "制裁、遏制与集团竞争",
-      "fullLabel": "制裁、遏制与集团竞争",
-      "type": "theme",
-      "route": "themes/sanctions-and-power-containment",
-      "summary": "讨论制裁、门罗主义、海峡与联盟如何共同服务于压制对手集团的全球布局。",
       "status": null,
       "degree": 22
     },
@@ -1412,6 +1412,17 @@
       "degree": 14
     },
     {
+      "id": "model:sanction-parallel-market",
+      "key": "sanction-parallel-market",
+      "label": "制裁平行市场模型",
+      "fullLabel": "制裁平行市场模型",
+      "type": "model",
+      "route": "models/sanction-parallel-market",
+      "summary": "制裁如果没有消灭需求，就会把交易推向更高风险、更高利润、更难监管的平行市场。",
+      "status": null,
+      "degree": 13
+    },
+    {
       "id": "episode:EP129",
       "key": "EP129",
       "label": "EP129",
@@ -1650,17 +1661,6 @@
       "type": "theme",
       "route": "themes/film-industry-and-traffic-logic",
       "summary": "影视生产越来越服从人设、粉丝和宣发热度，角色和作品本身退到后面。",
-      "status": null,
-      "degree": 12
-    },
-    {
-      "id": "model:sanction-parallel-market",
-      "key": "sanction-parallel-market",
-      "label": "制裁平行市场模型",
-      "fullLabel": "制裁平行市场模型",
-      "type": "model",
-      "route": "models/sanction-parallel-market",
-      "summary": "制裁如果没有消灭需求，就会把交易推向更高风险、更高利润、更难监管的平行市场。",
       "status": null,
       "degree": 12
     },
@@ -2369,6 +2369,17 @@
       "degree": 9
     },
     {
+      "id": "concept:liability-firewall",
+      "key": "liability-firewall",
+      "label": "责任隔离墙",
+      "fullLabel": "责任隔离墙",
+      "type": "concept",
+      "route": "concepts/liability-firewall",
+      "summary": "主导一门生意的一方不持股、不担保、不当协议主体，债务、对赌和经营风险都落在合作方名下，自己片叶不沾身。",
+      "status": null,
+      "degree": 9
+    },
+    {
       "id": "concept:long-termism",
       "key": "long-termism",
       "label": "长期主义",
@@ -2431,6 +2442,17 @@
       "type": "concept",
       "route": "concepts/balance-sheet-support",
       "summary": "通过维持估值、价格和名义成交，先保住报表与抵押体系，再把真实压力向后延。",
+      "status": null,
+      "degree": 9
+    },
+    {
+      "id": "theme:ai-bubble-and-compute-demand",
+      "key": "ai-bubble-and-compute-demand",
+      "label": "AI泡沫与算力需求制造",
+      "fullLabel": "AI泡沫与算力需求制造",
+      "type": "theme",
+      "route": "themes/ai-bubble-and-compute-demand",
+      "summary": "资本先把算力和工具铺开，再用补贴和热度把用量做出来，拿用量讲估值。",
       "status": null,
       "degree": 9
     },
@@ -2886,17 +2908,6 @@
       "degree": 8
     },
     {
-      "id": "concept:liability-firewall",
-      "key": "liability-firewall",
-      "label": "责任隔离墙",
-      "fullLabel": "责任隔离墙",
-      "type": "concept",
-      "route": "concepts/liability-firewall",
-      "summary": "主导一门生意的一方不持股、不担保、不当协议主体，债务、对赌和经营风险都落在合作方名下，自己片叶不沾身。",
-      "status": null,
-      "degree": 8
-    },
-    {
       "id": "theme:capital-packaging-and-credential-borrowing",
       "key": "capital-packaging-and-credential-borrowing",
       "label": "资本包装与身份背书",
@@ -2937,17 +2948,6 @@
       "type": "concept",
       "route": "concepts/organizational-silence",
       "summary": "组织里知道问题的人不再开口，都等着权威表态，错误就没人去改。",
-      "status": null,
-      "degree": 8
-    },
-    {
-      "id": "theme:ai-bubble-and-compute-demand",
-      "key": "ai-bubble-and-compute-demand",
-      "label": "AI泡沫与算力需求制造",
-      "fullLabel": "AI泡沫与算力需求制造",
-      "type": "theme",
-      "route": "themes/ai-bubble-and-compute-demand",
-      "summary": "资本先把算力和工具铺开，再用补贴和热度把用量做出来，拿用量讲估值。",
       "status": null,
       "degree": 8
     },
@@ -3883,6 +3883,17 @@
       "type": "episode",
       "route": "episodes/EP237",
       "summary": "11 月 5 日费城半导体指数单日跌了 12.25%，是 2020 年 3 月以来最大的单日跌幅，第二天日本、韩国股市跟着大跌。市场上流行三种说法，AI 泡沫彻底破了，美国人集体反对 AI，选举前后资金砸坑、跌完还会涨回去，三种都没说到点上。跌得最深的是数据中心、芯片和供电散热这些重资产，做模型和应用的公司只跌了几个点。真正的毛病在钱的来路，算力基建拿长期合同做抵押，走表外融资层层加杠杆，跟当年的次贷是同一个配方。短期也许有反弹，现在全力杀进去要小心，活下来比赚快钱要紧。",
+      "status": "curated",
+      "degree": 7
+    },
+    {
+      "id": "episode:EP238",
+      "key": "EP238",
+      "label": "EP238",
+      "fullLabel": "EP238 · 郎有情妾有意，黄仁勋风波到底是床上那点事，还是生意那盘棋？",
+      "type": "episode",
+      "route": "episodes/EP238",
+      "summary": "黄仁勋承认婚外情，对方黄女士所在的公司被指帮人绕开出口管制，把英伟达芯片转进中国。网上多把它当桃色新闻，笑搞技术的没见过世面。可他是工程师加销售出身，三十年满世界跑客户、陪酒局，把濒临倒闭的公司做到万亿市值，不会栽在新鲜感上。这件事是郎有情妾有意，他要市场份额，对方有东南亚的灰色中转渠道，私交是给合作上的保险，出了事还能说自己被蒙在鼓里。国会已经要他闭门说明，最可能的结局是罚钱立规矩，人留下，权力收窄。",
       "status": "curated",
       "degree": 7
     },
@@ -7700,6 +7711,17 @@
       "type": "concept",
       "route": "concepts/cosmetic-war-imagery",
       "summary": "战争角色被拍成精致、洁净、可嗑的人设时，残酷现实会被化妆品式视觉吞掉。",
+      "status": null,
+      "degree": 1
+    },
+    {
+      "id": "concept:gray-compute-network",
+      "key": "gray-compute-network",
+      "label": "灰色算力网络",
+      "fullLabel": "灰色算力网络",
+      "type": "concept",
+      "route": "concepts/gray-compute-network",
+      "summary": "高端芯片被管制挡住以后，在东南亚由开发商、中间商、分销商和资金方接力完成的一条绕道供应链。",
       "status": null,
       "degree": 1
     },
@@ -17333,6 +17355,41 @@
     {
       "source": "episode:EP237",
       "target": "theme:narrative-speculation-and-retail-traps",
+      "kind": "episode-theme"
+    },
+    {
+      "source": "episode:EP238",
+      "target": "concept:liability-firewall",
+      "kind": "episode-concept"
+    },
+    {
+      "source": "episode:EP238",
+      "target": "concept:gray-compute-network",
+      "kind": "episode-concept"
+    },
+    {
+      "source": "episode:EP238",
+      "target": "model:sanction-parallel-market",
+      "kind": "episode-model"
+    },
+    {
+      "source": "episode:EP238",
+      "target": "model:risk-transfer-chain",
+      "kind": "episode-model"
+    },
+    {
+      "source": "episode:EP238",
+      "target": "theme:sanctions-and-power-containment",
+      "kind": "episode-theme"
+    },
+    {
+      "source": "episode:EP238",
+      "target": "theme:dollar-system-and-gray-trade",
+      "kind": "episode-theme"
+    },
+    {
+      "source": "episode:EP238",
+      "target": "theme:ai-bubble-and-compute-demand",
       "kind": "episode-theme"
     },
     {

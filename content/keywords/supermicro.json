@@ -1,0 +1,69 @@
+{
+  "id": "supermicro",
+  "name": "美超微",
+  "kind": "organization",
+  "asOf": "2026-11-12",
+  "aliases": [
+    "Supermicro",
+    "Super Micro Computer",
+    "超微电脑"
+  ],
+  "sources": [
+    {
+      "title": "Fortune: Supermicro co-founder arrested for smuggling GPUs to China（2026-03-19）",
+      "url": "https://fortune.com/2026/03/19/supermicro-arrested-founder-smuggling-gpu-china/",
+      "note": "核联合创始人廖益贤等三人被控把约 25 亿美元的英伟达服务器经东南亚公司转运中国。"
+    },
+    {
+      "title": "Bloomberg: Super Micro Co-Founder Charged With Smuggling, Departs Board（2026-03-19）",
+      "url": "https://www.bloomberg.com/news/articles/2026-03-19/three-charged-by-us-with-plot-to-illegally-send-ai-tech-to-china",
+      "note": "核起诉时间、该联合创始人离开董事会、公司本身未被指控。"
+    },
+    {
+      "title": "Shacknews: Super Micro co-founder charged with smuggling NVIDIA AI chips to China",
+      "url": "https://www.shacknews.com/article/148393/super-micro-co-founder-charged-smuggling-nvidia-chips-china",
+      "note": "核监控拍到用吹风机揭换序列号标签的细节。"
+    }
+  ],
+  "summary": "美超微是美国服务器制造商，大量组装搭载英伟达芯片的 AI 服务器。EP238 把它 3 月爆出的走私案当作黄仁勋风波的前一个样本。",
+  "description": "美超微（Super Micro Computer）总部在加州圣何塞，1993 年由梁见后等人创办，做服务器和存储设备，这几年靠组装搭载英伟达 GPU 的 AI 服务器快速扩张。2026 年 3 月，美国检方起诉其联合创始人廖益贤等三人，指控他们经一家东南亚公司把约 25 亿美元的英伟达服务器转运到中国，公司本身没有被指控。\n\n节目把这起案子和黄仁勋风波放在一起看，认为走的是同一条东南亚中转通道。",
+  "signalNotes": [
+    "服务器整机先卖到东南亚一家看上去合规的公司，再拆箱换标签运走，这是绕开芯片管制最常见的一种走法。",
+    "案子里被起诉的是个人，公司和上游芯片厂都没被指控，读者能从这里看到责任是怎样停在中间那一层的。",
+    "原话说这位联合创始人是黄仁勋多年的圈内好友，节目借这层老友关系讲彼此默认规则、心照不宣的灰色操作，属于个人看法。"
+  ],
+  "programAssociations": [
+    {
+      "title": "同一条通道上的前一个案子",
+      "episodes": [
+        "EP238"
+      ],
+      "note": "EP238 讲黄仁勋风波时翻出 3 月的美超微案，联合创始人被控通过东南亚空壳公司把 25 亿美元搭载英伟达芯片的服务器转进中国，被查时有人在用吹风机换标签。原话把它叫作老朋友的善意欺骗，这次黄女士事件是老情人的善意欺骗，两件事用的是同一个圈子、同一条东南亚通道，最后都由英伟达说自己不知情。两案的关联是原话的看法。"
+    }
+  ],
+  "extensionNotes": [
+    {
+      "title": "出口管制",
+      "note": "这起案子是管制被绕开的直接证据，接到出口管制能看到禁令和中转之间的来回。"
+    },
+    {
+      "title": "英伟达",
+      "note": "被转运的是搭载英伟达芯片的整机，英伟达表示不为非法运往中国的产品提供服务，它在这类案子里的位置值得单独看。"
+    },
+    {
+      "title": "东南亚",
+      "note": "中转公司设在东南亚，读东南亚这条线能看到算力卡怎样接替石油成了这片地方的灰色生意。"
+    }
+  ],
+  "episodes": [
+    {
+      "id": "EP238",
+      "note": "3 月美超微联合创始人被控经东南亚公司走私 25 亿美元英伟达服务器，被当作黄仁勋风波的前一个样本。"
+    }
+  ],
+  "relatedKeywords": [
+    "英伟达",
+    "出口管制",
+    "黄仁勋"
+  ]
+}
