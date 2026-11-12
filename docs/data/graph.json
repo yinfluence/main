@@ -2,11 +2,11 @@
   "meta": {
     "title": "颖响力知识图谱",
     "subtitle": "节目、概念、模型、人物、主题之间的可视化连接网络",
-    "nodeCount": 796,
-    "linkCount": 3036,
+    "nodeCount": 797,
+    "linkCount": 3052,
     "typeCounts": {
       "model": 85,
-      "live": 57,
+      "live": 58,
       "concept": 259,
       "theme": 92,
       "episode": 238,
@@ -23,7 +23,7 @@
       "route": "models/risk-transfer-chain",
       "summary": "风险很少当场爆掉，多半先在银行、企业、票据、供应链和普通人之间转手、延后，一层层往下沉。",
       "status": null,
-      "degree": 61
+      "degree": 62
     },
     {
       "id": "live:LIVE002",
@@ -312,6 +312,17 @@
       "degree": 26
     },
     {
+      "id": "concept:gray-oil-network",
+      "key": "gray-oil-network",
+      "label": "灰色石油网络",
+      "fullLabel": "灰色石油网络",
+      "type": "concept",
+      "route": "concepts/gray-oil-network",
+      "summary": "绕开正规结算和监管的石油流动，会在影子体系中重塑货币、制裁和地缘利益。",
+      "status": null,
+      "degree": 25
+    },
+    {
       "id": "live:LIVE014",
       "key": "LIVE014",
       "label": "LIVE014",
@@ -367,13 +378,24 @@
       "degree": 24
     },
     {
-      "id": "concept:gray-oil-network",
-      "key": "gray-oil-network",
-      "label": "灰色石油网络",
-      "fullLabel": "灰色石油网络",
-      "type": "concept",
-      "route": "concepts/gray-oil-network",
-      "summary": "绕开正规结算和监管的石油流动，会在影子体系中重塑货币、制裁和地缘利益。",
+      "id": "theme:dollar-system-and-gray-trade",
+      "key": "dollar-system-and-gray-trade",
+      "label": "美元体系与灰色贸易",
+      "fullLabel": "美元体系与灰色贸易",
+      "type": "theme",
+      "route": "themes/dollar-system-and-gray-trade",
+      "summary": "讨论石油美元的真实脆弱点，究竟藏在公开统计之外的哪些灰色交易链条里。",
+      "status": null,
+      "degree": 24
+    },
+    {
+      "id": "theme:sanctions-and-power-containment",
+      "key": "sanctions-and-power-containment",
+      "label": "制裁、遏制与集团竞争",
+      "fullLabel": "制裁、遏制与集团竞争",
+      "type": "theme",
+      "route": "themes/sanctions-and-power-containment",
+      "summary": "讨论制裁、门罗主义、海峡与联盟如何共同服务于压制对手集团的全球布局。",
       "status": null,
       "degree": 24
     },
@@ -477,17 +499,6 @@
       "degree": 24
     },
     {
-      "id": "theme:dollar-system-and-gray-trade",
-      "key": "dollar-system-and-gray-trade",
-      "label": "美元体系与灰色贸易",
-      "fullLabel": "美元体系与灰色贸易",
-      "type": "theme",
-      "route": "themes/dollar-system-and-gray-trade",
-      "summary": "讨论石油美元的真实脆弱点，究竟藏在公开统计之外的哪些灰色交易链条里。",
-      "status": null,
-      "degree": 23
-    },
-    {
       "id": "concept:chokepoint-leverage",
       "key": "chokepoint-leverage",
       "label": "咽喉杠杆",
@@ -495,17 +506,6 @@
       "type": "concept",
       "route": "concepts/chokepoint-leverage",
       "summary": "控制海峡、运河和关键通道的人，往往能把地理位置转化成定价权、通行权和规则权。",
-      "status": null,
-      "degree": 23
-    },
-    {
-      "id": "theme:sanctions-and-power-containment",
-      "key": "sanctions-and-power-containment",
-      "label": "制裁、遏制与集团竞争",
-      "fullLabel": "制裁、遏制与集团竞争",
-      "type": "theme",
-      "route": "themes/sanctions-and-power-containment",
-      "summary": "讨论制裁、门罗主义、海峡与联盟如何共同服务于压制对手集团的全球布局。",
       "status": null,
       "degree": 23
     },
@@ -862,6 +862,17 @@
       "degree": 19
     },
     {
+      "id": "episode:EP192",
+      "key": "EP192",
+      "label": "EP192",
+      "fullLabel": "EP192 · 梁文锋说漏嘴的算力乱象！揭露中国AI行业的真实浪费与困境。",
+      "type": "episode",
+      "route": "episodes/EP192",
+      "summary": "梁文锋一场近四小时的闭门会文字稿被放了出来。他是量化出身，不屑对投资人吹牛，稿子里的话八九成可信。四张华为的卡才抵一张英伟达的卡，手里一万六千张只折合四五千张，缺口要靠别的卡补。由此推断灰色贸易这条路被坐实了，但这一步是推断，稿子没说卡从哪来。国内七八家一起做大模型，卡和算力中心的需求被一起做大，这条产业链跟当年的电车很像。现在的 AI 还没到自我学习那一步，泡沫可能就在眼前。文件偏偏在月之暗面爆火之后流出，一种猜测是投资机构借这次泄露敲打梁文锋。",
+      "status": "curated",
+      "degree": 19
+    },
+    {
       "id": "live:LIVE041",
       "key": "LIVE041",
       "label": "LIVE041",
@@ -935,17 +946,6 @@
       "type": "episode",
       "route": "episodes/EP132",
       "summary": "Meta 收购 Manus 被监管否决，叫停有明确的法律依据。难受的是后果，过去三十年草根创业者成长和兑现的那条路被堵死了。肖弘出身三四线城市吉安，没背景没资源，靠的是美元基金敢投一份 PPT，终局是赴美上市或卖给美国巨头。换成地方国资基金，99% 不会投他，国有资产不能流失，纯软件带不来厂房、就业和税收，退出也看不清。理性的年轻人只好去考研考公。创新资源交给行政和国资之后，关系压过能力，只剩依附式创新和表演式创新。",
-      "status": "curated",
-      "degree": 18
-    },
-    {
-      "id": "episode:EP192",
-      "key": "EP192",
-      "label": "EP192",
-      "fullLabel": "EP192 · 梁文锋说漏嘴的算力乱象！揭露中国AI行业的真实浪费与困境。",
-      "type": "episode",
-      "route": "episodes/EP192",
-      "summary": "梁文锋一场近四小时的闭门会文字稿被放了出来。他是量化出身，不屑对投资人吹牛，稿子里的话八九成可信。四张华为的卡才抵一张英伟达的卡，手里一万六千张只折合四五千张，缺口要靠别的卡补。由此推断灰色贸易这条路被坐实了，但这一步是推断，稿子没说卡从哪来。国内七八家一起做大模型，卡和算力中心的需求被一起做大，这条产业链跟当年的电车很像。现在的 AI 还没到自我学习那一步，泡沫可能就在眼前。文件偏偏在月之暗面爆火之后流出，一种猜测是投资机构借这次泄露敲打梁文锋。",
       "status": "curated",
       "degree": 18
     },
@@ -1038,6 +1038,17 @@
       "degree": 17
     },
     {
+      "id": "theme:southeast-asia-fragmentation-and-bloc-competition",
+      "key": "southeast-asia-fragmentation-and-bloc-competition",
+      "label": "东南亚裂变与集团竞争",
+      "fullLabel": "东南亚裂变与集团竞争",
+      "type": "theme",
+      "route": "themes/southeast-asia-fragmentation-and-bloc-competition",
+      "summary": "讨论东南亚如何从缓冲地带变成各方拉扯、重新站队和内部裂变并行发生的高风险区域。",
+      "status": null,
+      "degree": 16
+    },
+    {
       "id": "theme:maritime-chokepoints-and-route-order",
       "key": "maritime-chokepoints-and-route-order",
       "label": "海峡命门与航运秩序",
@@ -1104,6 +1115,17 @@
       "degree": 16
     },
     {
+      "id": "live:LIVE058",
+      "key": "LIVE058",
+      "label": "LIVE058",
+      "fullLabel": "LIVE058 · 黄仁勋风波怎么收场？拆解四种结局：罚钱留任还是英伟达被拆分，桃色新闻只是添头！",
+      "type": "live",
+      "route": "lives/LIVE058",
+      "summary": "3 月美超微案靠的是老交情，这一回换成新情人，出了事一样能说自己被蒙在鼓里。",
+      "status": "published",
+      "degree": 16
+    },
+    {
       "id": "theme:local-government-financialization",
       "key": "local-government-financialization",
       "label": "地方政府资本化与补贴杠杆",
@@ -1111,17 +1133,6 @@
       "type": "theme",
       "route": "themes/local-government-financialization",
       "summary": "地方政府从招商者变成资本玩家，把补贴、基金和估值故事捆到一起，企业出事时自己接盘。",
-      "status": null,
-      "degree": 15
-    },
-    {
-      "id": "theme:southeast-asia-fragmentation-and-bloc-competition",
-      "key": "southeast-asia-fragmentation-and-bloc-competition",
-      "label": "东南亚裂变与集团竞争",
-      "fullLabel": "东南亚裂变与集团竞争",
-      "type": "theme",
-      "route": "themes/southeast-asia-fragmentation-and-bloc-competition",
-      "summary": "讨论东南亚如何从缓冲地带变成各方拉扯、重新站队和内部裂变并行发生的高风险区域。",
       "status": null,
       "degree": 15
     },
@@ -1302,6 +1313,17 @@
       "degree": 14
     },
     {
+      "id": "model:sanction-parallel-market",
+      "key": "sanction-parallel-market",
+      "label": "制裁平行市场模型",
+      "fullLabel": "制裁平行市场模型",
+      "type": "model",
+      "route": "models/sanction-parallel-market",
+      "summary": "制裁如果没有消灭需求，就会把交易推向更高风险、更高利润、更难监管的平行市场。",
+      "status": null,
+      "degree": 14
+    },
+    {
       "id": "episode:EP015",
       "key": "EP015",
       "label": "EP015",
@@ -1410,17 +1432,6 @@
       "summary": "张家口产区的白菜在装车前整颗蘸进甲醛，路边小药瓶和蓝色大药罐一排摆着，收菜的、装车的、跑长途的都把它当成一道工序。白菜一斤几毛钱，改用冷藏车运费翻一倍，涨价卖不动，不涨价这一趟就白跑，蘸一遍药成了整条链上最划算的选项。守规矩的人早被挤走了，剩下的人不这么干就活不下去，一件本该由制度管住的事，最后变成了一笔成本账。同一个产地给出口和会员店供货时自己收着，给国内普通超市供货时换另一套做法，差别在于哪一头还有一道让人害怕的验收。留给普通人的办法只剩一条，在天天要吃要用的那几样上花钱买确定。",
       "status": "curated",
       "degree": 14
-    },
-    {
-      "id": "model:sanction-parallel-market",
-      "key": "sanction-parallel-market",
-      "label": "制裁平行市场模型",
-      "fullLabel": "制裁平行市场模型",
-      "type": "model",
-      "route": "models/sanction-parallel-market",
-      "summary": "制裁如果没有消灭需求，就会把交易推向更高风险、更高利润、更难监管的平行市场。",
-      "status": null,
-      "degree": 13
     },
     {
       "id": "episode:EP129",
@@ -2094,6 +2105,17 @@
       "degree": 10
     },
     {
+      "id": "concept:liability-firewall",
+      "key": "liability-firewall",
+      "label": "责任隔离墙",
+      "fullLabel": "责任隔离墙",
+      "type": "concept",
+      "route": "concepts/liability-firewall",
+      "summary": "主导一门生意的一方不持股、不担保、不当协议主体，债务、对赌和经营风险都落在合作方名下，自己片叶不沾身。",
+      "status": null,
+      "degree": 10
+    },
+    {
       "id": "model:institutional-fit",
       "key": "institutional-fit",
       "label": "制度适配",
@@ -2101,6 +2123,17 @@
       "type": "model",
       "route": "models/institutional-fit",
       "summary": "能力能不能兑现，要看组织落在什么样的法律、资本和治理环境里。同一个团队、同一套制度，换个地方结果可能完全不同。",
+      "status": null,
+      "degree": 10
+    },
+    {
+      "id": "theme:ai-bubble-and-compute-demand",
+      "key": "ai-bubble-and-compute-demand",
+      "label": "AI泡沫与算力需求制造",
+      "fullLabel": "AI泡沫与算力需求制造",
+      "type": "theme",
+      "route": "themes/ai-bubble-and-compute-demand",
+      "summary": "资本先把算力和工具铺开，再用补贴和热度把用量做出来，拿用量讲估值。",
       "status": null,
       "degree": 10
     },
@@ -2123,6 +2156,17 @@
       "type": "episode",
       "route": "episodes/EP063",
       "summary": "男人长成自己要过精神上的三关，弑母、弑父、弑自己。弑要先把亲情、权威和自己吃进去看清，再吐出来还它理解和尊重，光切断不算。现在流行的断亲多半只做到离远一点，看清了却吐不出来。弑父这关在中国能过的人只有百分之几。过不去的人见到领导的威严就把自己放低，当了领导又这样对下属。弑自己更难，要看清自己身上所有毛病，还能接受自己。很多心理课程上来就让人剖析自己，前两关没过的人会被掏空，变成别人塑出来的空壳。三关都过了还有一关，理解死亡，向死而生。",
+      "status": "curated",
+      "degree": 10
+    },
+    {
+      "id": "episode:EP107",
+      "key": "EP107",
+      "label": "EP107",
+      "fullLabel": "EP107 · 未来12个月美元黄金怎么走？看懂川普的石油美元棋局，你就全明白了。",
+      "type": "episode",
+      "route": "episodes/EP107",
+      "summary": "主流都说去美元化不可逆，黄金要迎来大牛市，金价却一路走低。石油用美元结算是美元霸权的根，常说起源于 1974 年的美沙石油美元安排。过去十年冒出一个漏洞。灰色石油绕开海关统计和 SWIFT，用黄金或人民币结算。把它算进去，非美元结算早已过半。特朗普打委内瑞拉、对伊朗下手，是一套新门罗主义。让盟友出钱守墙，用很低的成本把灰色石油堵回墙内。价差一没，九成原油可能回到美元结算。未来 12 个月美元走强、黄金偏弱，前提是这套围堵真能成型。",
       "status": "curated",
       "degree": 10
     },
@@ -2369,17 +2413,6 @@
       "degree": 9
     },
     {
-      "id": "concept:liability-firewall",
-      "key": "liability-firewall",
-      "label": "责任隔离墙",
-      "fullLabel": "责任隔离墙",
-      "type": "concept",
-      "route": "concepts/liability-firewall",
-      "summary": "主导一门生意的一方不持股、不担保、不当协议主体，债务、对赌和经营风险都落在合作方名下，自己片叶不沾身。",
-      "status": null,
-      "degree": 9
-    },
-    {
       "id": "concept:long-termism",
       "key": "long-termism",
       "label": "长期主义",
@@ -2442,17 +2475,6 @@
       "type": "concept",
       "route": "concepts/balance-sheet-support",
       "summary": "通过维持估值、价格和名义成交，先保住报表与抵押体系，再把真实压力向后延。",
-      "status": null,
-      "degree": 9
-    },
-    {
-      "id": "theme:ai-bubble-and-compute-demand",
-      "key": "ai-bubble-and-compute-demand",
-      "label": "AI泡沫与算力需求制造",
-      "fullLabel": "AI泡沫与算力需求制造",
-      "type": "theme",
-      "route": "themes/ai-bubble-and-compute-demand",
-      "summary": "资本先把算力和工具铺开，再用补贴和热度把用量做出来，拿用量讲估值。",
       "status": null,
       "degree": 9
     },
@@ -2596,17 +2618,6 @@
       "type": "episode",
       "route": "episodes/EP106",
       "summary": "中国经济这几年闷得说不出来，政策出了不少，总对不上点。很多人怪地方政府和地方债，可那只是果。病根在人，在一大批聪明又有权力的政府人员站到了哪一边。中国从来不是守夜人式的小政府，要供养庞大的人群，只能深度绑定经济。包干制年代地方官像销售经理，帮企业招商引资。后来推进变成风控，协助变成考核，财政只能靠借债透支未来、靠罚款倒查过去。附加税三合一能把约 1 万亿留给地方，可光是 1 到 2 月，地方收支缺口就有一万多亿。接下来三年的主题是涨，涨的是水电油这些基础生活费用。",
-      "status": "curated",
-      "degree": 9
-    },
-    {
-      "id": "episode:EP107",
-      "key": "EP107",
-      "label": "EP107",
-      "fullLabel": "EP107 · 未来12个月美元黄金怎么走？看懂川普的石油美元棋局，你就全明白了。",
-      "type": "episode",
-      "route": "episodes/EP107",
-      "summary": "主流都说去美元化不可逆，黄金要迎来大牛市，金价却一路走低。石油用美元结算是美元霸权的根，常说起源于 1974 年的美沙石油美元安排。过去十年冒出一个漏洞。灰色石油绕开海关统计和 SWIFT，用黄金或人民币结算。把它算进去，非美元结算早已过半。特朗普打委内瑞拉、对伊朗下手，是一套新门罗主义。让盟友出钱守墙，用很低的成本把灰色石油堵回墙内。价差一没，九成原油可能回到美元结算。未来 12 个月美元走强、黄金偏弱，前提是这套围堵真能成型。",
       "status": "curated",
       "degree": 9
     },
@@ -3337,6 +3348,17 @@
       "degree": 8
     },
     {
+      "id": "episode:EP238",
+      "key": "EP238",
+      "label": "EP238",
+      "fullLabel": "EP238 · 郎有情妾有意，黄仁勋风波到底是床上那点事，还是生意那盘棋？",
+      "type": "episode",
+      "route": "episodes/EP238",
+      "summary": "黄仁勋承认婚外情，对方黄女士所在的公司被指帮人绕开出口管制，把英伟达芯片转进中国。网上多把它当桃色新闻，笑搞技术的没见过世面。可他是工程师加销售出身，三十年满世界跑客户、陪酒局，把濒临倒闭的公司做到万亿市值，不会栽在新鲜感上。这件事是郎有情妾有意，他要市场份额，对方有东南亚的灰色中转渠道，私交是给合作上的保险，出了事还能说自己被蒙在鼓里。国会已经要他闭门说明，最可能的结局是罚钱立规矩，人留下，权力收窄。",
+      "status": "curated",
+      "degree": 8
+    },
+    {
       "id": "live:LIVE054",
       "key": "LIVE054",
       "label": "LIVE054",
@@ -3645,6 +3667,17 @@
       "degree": 7
     },
     {
+      "id": "episode:EP012",
+      "key": "EP012",
+      "label": "EP012",
+      "fullLabel": "EP012 · 万科，如今的后爸毁灭者，曾经的中国好儿子，命运还有回转可能吗？辛杰董事长又为何失联？",
+      "type": "episode",
+      "route": "episodes/EP012",
+      "summary": "深圳地铁董事长辛杰据说失联 28 天，万科对失联一直没有回应。2017 年宝能要收购万科，深圳地铁按每股 22 块接过华润的股权，恒大那百分之十多也转了过来，从此成了后爸。2025 年初辛杰兼任万科董事长，今年输血九次，据说合计 600 多个亿，缺口还有八九百个亿。据说万科在跟银行谈展期十年、下调利率，连利息都还不上了。万科是地产的风向标，可深圳地铁只能丢车保帅，各方盼王石回来接盘，王石在拖。房价远没到底，会分次下跌，最终跌掉六成到七成。",
+      "status": "curated",
+      "degree": 7
+    },
+    {
       "id": "episode:EP016",
       "key": "EP016",
       "label": "EP016",
@@ -3740,6 +3773,17 @@
       "type": "episode",
       "route": "episodes/EP046",
       "summary": "浙金中心全称浙江金融资产交易中心，这次暴雷涉及金额超过两百亿。买它理财的基本是体制内的大爷大妈和想补贴家用的年轻公务员，图的是国资背景和本省企业，5% 到 7% 的利率也被当成安全。以前是体制内收割体制外，这回轮到体制内自己人互相伤害。平台在 2024 年 10 月就丢了金融资产交易资格，消息藏在 APP 的小角落。第一大股东早换成了民营公司，产品的钱是祥源控股在用，核心的人早知道资产在往外剥离。体制外的韭菜不够吃，长翅膀的老虎就开始大吃小。时代变得越快，现金越是权力。",
+      "status": "curated",
+      "degree": 7
+    },
+    {
+      "id": "episode:EP059",
+      "key": "EP059",
+      "label": "EP059",
+      "fullLabel": "EP059 · “王的女人”还是“田的男人”！背后是避不开的“万科旋涡”。",
+      "type": "episode",
+      "route": "episodes/EP059",
+      "summary": "不少博主把王石和田朴珺读成情爱已经不在、家庭分崩离析。换个前地产人的角度看，两人已从性爱关系走进合伙人关系的早期，只是位置还没坐稳。王石身边多是崇拜他的人，田朴珺身上那股野马劲才拿住了他。早年王石能像佛祖罩住孙猴子，靠的是岁数和对她社交圈的掌控。万科旋涡之后，据推测他花了很多钱把自己和万科的财务切干净，家底缩水，田朴珺在家里的主导权跟着上来。她对外说要找自我，其实是得出去替家里挣钱，王石就在路上等她。",
       "status": "curated",
       "degree": 7
     },
@@ -3883,17 +3927,6 @@
       "type": "episode",
       "route": "episodes/EP237",
       "summary": "11 月 5 日费城半导体指数单日跌了 12.25%，是 2020 年 3 月以来最大的单日跌幅，第二天日本、韩国股市跟着大跌。市场上流行三种说法，AI 泡沫彻底破了，美国人集体反对 AI，选举前后资金砸坑、跌完还会涨回去，三种都没说到点上。跌得最深的是数据中心、芯片和供电散热这些重资产，做模型和应用的公司只跌了几个点。真正的毛病在钱的来路，算力基建拿长期合同做抵押，走表外融资层层加杠杆，跟当年的次贷是同一个配方。短期也许有反弹，现在全力杀进去要小心，活下来比赚快钱要紧。",
-      "status": "curated",
-      "degree": 7
-    },
-    {
-      "id": "episode:EP238",
-      "key": "EP238",
-      "label": "EP238",
-      "fullLabel": "EP238 · 郎有情妾有意，黄仁勋风波到底是床上那点事，还是生意那盘棋？",
-      "type": "episode",
-      "route": "episodes/EP238",
-      "summary": "黄仁勋承认婚外情，对方黄女士所在的公司被指帮人绕开出口管制，把英伟达芯片转进中国。网上多把它当桃色新闻，笑搞技术的没见过世面。可他是工程师加销售出身，三十年满世界跑客户、陪酒局，把濒临倒闭的公司做到万亿市值，不会栽在新鲜感上。这件事是郎有情妾有意，他要市场份额，对方有东南亚的灰色中转渠道，私交是给合作上的保险，出了事还能说自己被蒙在鼓里。国会已经要他闭门说明，最可能的结局是罚钱立规矩，人留下，权力收窄。",
       "status": "curated",
       "degree": 7
     },
@@ -4250,17 +4283,6 @@
       "degree": 6
     },
     {
-      "id": "episode:EP012",
-      "key": "EP012",
-      "label": "EP012",
-      "fullLabel": "EP012 · 万科，如今的后爸毁灭者，曾经的中国好儿子，命运还有回转可能吗？辛杰董事长又为何失联？",
-      "type": "episode",
-      "route": "episodes/EP012",
-      "summary": "深圳地铁董事长辛杰据说失联 28 天，万科对失联一直没有回应。2017 年宝能要收购万科，深圳地铁按每股 22 块接过华润的股权，恒大那百分之十多也转了过来，从此成了后爸。2025 年初辛杰兼任万科董事长，今年输血九次，据说合计 600 多个亿，缺口还有八九百个亿。据说万科在跟银行谈展期十年、下调利率，连利息都还不上了。万科是地产的风向标，可深圳地铁只能丢车保帅，各方盼王石回来接盘，王石在拖。房价远没到底，会分次下跌，最终跌掉六成到七成。",
-      "status": "curated",
-      "degree": 6
-    },
-    {
       "id": "episode:EP019",
       "key": "EP019",
       "label": "EP019",
@@ -4323,17 +4345,6 @@
       "type": "episode",
       "route": "episodes/EP052",
       "summary": "斩杀线本是网游术语，几十人围打 BOSS，血量到线就一起放大招清空。搬来形容中产跌落，中国的情况更狠。没有完善的个人破产制度，连带责任压过破产保护，3000 万资产处理不好，清算时可能反欠 3000 万，这叫宰杀线。不甘归零的人越想翻盘亏得越多，坑大到小钱填不上，就有人铤而走险。斩杀分三轮，资产、自信、夫妻父子的链接依次断掉。K 型消费是中段整个消失，像胖子病了先没了肚子。哪怕从 3000 万跌到 30 万，止了损还能做个相对富足的底层，别用脸着地。",
-      "status": "curated",
-      "degree": 6
-    },
-    {
-      "id": "episode:EP059",
-      "key": "EP059",
-      "label": "EP059",
-      "fullLabel": "EP059 · “王的女人”还是“田的男人”！背后是避不开的“万科旋涡”。",
-      "type": "episode",
-      "route": "episodes/EP059",
-      "summary": "不少博主把王石和田朴珺读成情爱已经不在、家庭分崩离析。换个前地产人的角度看，两人已从性爱关系走进合伙人关系的早期，只是位置还没坐稳。王石身边多是崇拜他的人，田朴珺身上那股野马劲才拿住了他。早年王石能像佛祖罩住孙猴子，靠的是岁数和对她社交圈的掌控。万科旋涡之后，据推测他花了很多钱把自己和万科的财务切干净，家底缩水，田朴珺在家里的主导权跟着上来。她对外说要找自我，其实是得出去替家里挣钱，王石就在路上等她。",
       "status": "curated",
       "degree": 6
     },
@@ -5317,6 +5328,17 @@
       "degree": 4
     },
     {
+      "id": "theme:intimate-relationships-and-asset-repricing",
+      "key": "intimate-relationships-and-asset-repricing",
+      "label": "亲密关系与资产再定价",
+      "fullLabel": "亲密关系与资产再定价",
+      "type": "theme",
+      "route": "themes/intimate-relationships-and-asset-repricing",
+      "summary": "家底一缩水，夫妻之间谁出钱、谁说了算会重新排一遍。",
+      "status": null,
+      "degree": 4
+    },
+    {
       "id": "concept:globalization-as-disclosure",
       "key": "globalization-as-disclosure",
       "label": "全球化即公开披露",
@@ -6098,17 +6120,6 @@
       "degree": 3
     },
     {
-      "id": "theme:intimate-relationships-and-asset-repricing",
-      "key": "intimate-relationships-and-asset-repricing",
-      "label": "亲密关系与资产再定价",
-      "fullLabel": "亲密关系与资产再定价",
-      "type": "theme",
-      "route": "themes/intimate-relationships-and-asset-repricing",
-      "summary": "家底一缩水，夫妻之间谁出钱、谁说了算会重新排一遍。",
-      "status": null,
-      "degree": 3
-    },
-    {
       "id": "concept:youth-mobilization",
       "key": "youth-mobilization",
       "label": "青年动员",
@@ -6494,6 +6505,17 @@
       "degree": 2
     },
     {
+      "id": "concept:super-intermediary",
+      "key": "super-intermediary",
+      "label": "超级中间人",
+      "fullLabel": "超级中间人",
+      "type": "concept",
+      "route": "concepts/super-intermediary",
+      "summary": "对立各方僵持不下时，靠绝对中立和独家信任渠道居中传话、摸清底线、递台阶的角色。它不替任何一方站队，只做信息和沟通的枢纽。",
+      "status": null,
+      "degree": 2
+    },
+    {
       "id": "concept:city-soul-gap",
       "key": "city-soul-gap",
       "label": "城市灵魂落差",
@@ -6699,6 +6721,17 @@
       "type": "concept",
       "route": "concepts/gray-layoff",
       "summary": "不走裁员程序，用调岗、降薪、羞辱和恐吓逼员工自己签字走人，赔偿和违法记录一起清零。",
+      "status": null,
+      "degree": 2
+    },
+    {
+      "id": "concept:gray-compute-network",
+      "key": "gray-compute-network",
+      "label": "灰色算力网络",
+      "fullLabel": "灰色算力网络",
+      "type": "concept",
+      "route": "concepts/gray-compute-network",
+      "summary": "高端芯片被管制挡住以后，在东南亚由开发商、中间商、分销商和资金方接力完成的一条绕道供应链。",
       "status": null,
       "degree": 2
     },
@@ -7407,17 +7440,6 @@
       "degree": 1
     },
     {
-      "id": "concept:super-intermediary",
-      "key": "super-intermediary",
-      "label": "超级中间人",
-      "fullLabel": "超级中间人",
-      "type": "concept",
-      "route": "concepts/super-intermediary",
-      "summary": "对立各方僵持不下时，靠绝对中立和独家信任渠道居中传话、摸清底线、递台阶的角色。它不替任何一方站队，只做信息和沟通的枢纽。",
-      "status": null,
-      "degree": 1
-    },
-    {
       "id": "concept:tributary-mindset",
       "key": "tributary-mindset",
       "label": "朝贡思维",
@@ -7711,17 +7733,6 @@
       "type": "concept",
       "route": "concepts/cosmetic-war-imagery",
       "summary": "战争角色被拍成精致、洁净、可嗑的人设时，残酷现实会被化妆品式视觉吞掉。",
-      "status": null,
-      "degree": 1
-    },
-    {
-      "id": "concept:gray-compute-network",
-      "key": "gray-compute-network",
-      "label": "灰色算力网络",
-      "fullLabel": "灰色算力网络",
-      "type": "concept",
-      "route": "concepts/gray-compute-network",
-      "summary": "高端芯片被管制挡住以后，在东南亚由开发商、中间商、分销商和资金方接力完成的一条绕道供应链。",
       "status": null,
       "degree": 1
     },
@@ -23930,6 +23941,86 @@
     {
       "source": "live:LIVE057",
       "target": "theme:ev-financialization-and-false-sales",
+      "kind": "live-theme"
+    },
+    {
+      "source": "live:LIVE058",
+      "target": "episode:EP238",
+      "kind": "live-episode"
+    },
+    {
+      "source": "live:LIVE058",
+      "target": "episode:EP059",
+      "kind": "live-episode"
+    },
+    {
+      "source": "live:LIVE058",
+      "target": "episode:EP192",
+      "kind": "live-episode"
+    },
+    {
+      "source": "live:LIVE058",
+      "target": "episode:EP107",
+      "kind": "live-episode"
+    },
+    {
+      "source": "live:LIVE058",
+      "target": "episode:EP012",
+      "kind": "live-episode"
+    },
+    {
+      "source": "live:LIVE058",
+      "target": "concept:gray-compute-network",
+      "kind": "live-concept"
+    },
+    {
+      "source": "live:LIVE058",
+      "target": "concept:liability-firewall",
+      "kind": "live-concept"
+    },
+    {
+      "source": "live:LIVE058",
+      "target": "concept:super-intermediary",
+      "kind": "live-concept"
+    },
+    {
+      "source": "live:LIVE058",
+      "target": "concept:gray-oil-network",
+      "kind": "live-concept"
+    },
+    {
+      "source": "live:LIVE058",
+      "target": "model:sanction-parallel-market",
+      "kind": "live-model"
+    },
+    {
+      "source": "live:LIVE058",
+      "target": "model:risk-transfer-chain",
+      "kind": "live-model"
+    },
+    {
+      "source": "live:LIVE058",
+      "target": "theme:ai-bubble-and-compute-demand",
+      "kind": "live-theme"
+    },
+    {
+      "source": "live:LIVE058",
+      "target": "theme:dollar-system-and-gray-trade",
+      "kind": "live-theme"
+    },
+    {
+      "source": "live:LIVE058",
+      "target": "theme:sanctions-and-power-containment",
+      "kind": "live-theme"
+    },
+    {
+      "source": "live:LIVE058",
+      "target": "theme:southeast-asia-fragmentation-and-bloc-competition",
+      "kind": "live-theme"
+    },
+    {
+      "source": "live:LIVE058",
+      "target": "theme:intimate-relationships-and-asset-repricing",
       "kind": "live-theme"
     },
     {
