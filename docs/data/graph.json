@@ -2,14 +2,14 @@
   "meta": {
     "title": "颖响力知识图谱",
     "subtitle": "节目、概念、模型、人物、主题之间的可视化连接网络",
-    "nodeCount": 798,
-    "linkCount": 3075,
+    "nodeCount": 800,
+    "linkCount": 3082,
     "typeCounts": {
       "model": 85,
       "live": 59,
-      "concept": 259,
+      "concept": 260,
       "theme": 92,
-      "episode": 238,
+      "episode": 239,
       "person": 65
     }
   },
@@ -972,6 +972,17 @@
       "degree": 17
     },
     {
+      "id": "theme:southeast-asia-fragmentation-and-bloc-competition",
+      "key": "southeast-asia-fragmentation-and-bloc-competition",
+      "label": "东南亚裂变与集团竞争",
+      "fullLabel": "东南亚裂变与集团竞争",
+      "type": "theme",
+      "route": "themes/southeast-asia-fragmentation-and-bloc-competition",
+      "summary": "讨论东南亚如何从缓冲地带变成各方拉扯、重新站队和内部裂变并行发生的高风险区域。",
+      "status": null,
+      "degree": 17
+    },
+    {
       "id": "model:identity-stratification",
       "key": "identity-stratification",
       "label": "身份型分层",
@@ -1047,17 +1058,6 @@
       "summary": "能任免董事会多数席位的那份信托，也只有一股，而且不拿分红。",
       "status": "published",
       "degree": 17
-    },
-    {
-      "id": "theme:southeast-asia-fragmentation-and-bloc-competition",
-      "key": "southeast-asia-fragmentation-and-bloc-competition",
-      "label": "东南亚裂变与集团竞争",
-      "fullLabel": "东南亚裂变与集团竞争",
-      "type": "theme",
-      "route": "themes/southeast-asia-fragmentation-and-bloc-competition",
-      "summary": "讨论东南亚如何从缓冲地带变成各方拉扯、重新站队和内部裂变并行发生的高风险区域。",
-      "status": null,
-      "degree": 16
     },
     {
       "id": "theme:maritime-chokepoints-and-route-order",
@@ -1445,6 +1445,17 @@
       "degree": 14
     },
     {
+      "id": "model:rule-anchored-small-state-model",
+      "key": "rule-anchored-small-state-model",
+      "label": "规则锚定型小国生存",
+      "fullLabel": "规则锚定型小国生存",
+      "type": "model",
+      "route": "models/rule-anchored-small-state-model",
+      "summary": "小国要长期活下来，靠的是规则信誉、理性的政府和看得见的自我约束，地理上的好运气只是起点。",
+      "status": null,
+      "degree": 13
+    },
+    {
       "id": "concept:time-asymmetry",
       "key": "time-asymmetry",
       "label": "时间非对称",
@@ -1608,17 +1619,6 @@
       "summary": "淘宝砍掉了批发商，支付宝想砍的是存款和贷款之间那两三个点。",
       "status": "published",
       "degree": 13
-    },
-    {
-      "id": "model:rule-anchored-small-state-model",
-      "key": "rule-anchored-small-state-model",
-      "label": "规则锚定型小国生存",
-      "fullLabel": "规则锚定型小国生存",
-      "type": "model",
-      "route": "models/rule-anchored-small-state-model",
-      "summary": "小国要长期活下来，靠的是规则信誉、理性的政府和看得见的自我约束，地理上的好运气只是起点。",
-      "status": null,
-      "degree": 12
     },
     {
       "id": "concept:delayed-price-discovery",
@@ -3612,6 +3612,17 @@
       "degree": 7
     },
     {
+      "id": "theme:authoritarian-succession-and-state-fragility",
+      "key": "authoritarian-succession-and-state-fragility",
+      "label": "威权继承与国家裂缝",
+      "fullLabel": "威权继承与国家裂缝",
+      "type": "theme",
+      "route": "themes/authoritarian-succession-and-state-fragility",
+      "summary": "强人或神权体制在换人的时候，平时压住的合法性、宗教权威和族群矛盾会一起翻出来。",
+      "status": null,
+      "degree": 7
+    },
+    {
       "id": "concept:pragmatic-legitimacy",
       "key": "pragmatic-legitimacy",
       "label": "务实合法性",
@@ -3975,6 +3986,17 @@
       "degree": 7
     },
     {
+      "id": "episode:EP239",
+      "key": "EP239",
+      "label": "EP239",
+      "fullLabel": "EP239 · 印尼政坛地震：吉布兰辞职背后的权力暗战，东南亚要变天了？",
+      "type": "episode",
+      "route": "episodes/EP239",
+      "summary": "11 月 12 日，印尼副总统吉布兰辞职，起因是法院认定他参选时交的高中学历证明不合要求。他是前总统佐科的长子。2024 年佐科把两次败给自己的普拉博沃推上总统位，再把儿子放进副总统的位子，两派靠这笔交易结成联盟。普拉博沃上台后一点点换掉佐科的班底，压缩新首都的预算，11 月初又以窃听罪名抓了佐科的心腹、前警察总长利斯蒂约，学历风波里始终不出声。辞职是两派摊牌的结果。军队借修法重回民事机构，印尼在一步步集权，新加坡、马来西亚和东盟都得重新算风险。",
+      "status": "curated",
+      "degree": 7
+    },
+    {
       "id": "model:kpi-fraud-equilibrium",
       "key": "kpi-fraud-equilibrium",
       "label": "KPI造假均衡",
@@ -4158,17 +4180,6 @@
       "type": "concept",
       "route": "concepts/crisis-power-reallocation",
       "summary": "危机会改变谁在前台、谁承担责任、谁保留资源，从而触发权力位置的重新排序。",
-      "status": null,
-      "degree": 6
-    },
-    {
-      "id": "theme:authoritarian-succession-and-state-fragility",
-      "key": "authoritarian-succession-and-state-fragility",
-      "label": "威权继承与国家裂缝",
-      "fullLabel": "威权继承与国家裂缝",
-      "type": "theme",
-      "route": "themes/authoritarian-succession-and-state-fragility",
-      "summary": "强人或神权体制在换人的时候，平时压住的合法性、宗教权威和族群矛盾会一起翻出来。",
       "status": null,
       "degree": 6
     },
@@ -4609,6 +4620,17 @@
       "type": "model",
       "route": "models/centralized-control-backfire",
       "summary": "把控制权收到中心，换来便宜、好管、能远程锁死，也把所有失效点收到了同一处。",
+      "status": null,
+      "degree": 5
+    },
+    {
+      "id": "model:succession-fracture-model",
+      "key": "succession-fracture-model",
+      "label": "继承裂缝模型",
+      "fullLabel": "继承裂缝模型",
+      "type": "model",
+      "route": "models/succession-fracture-model",
+      "summary": "一个体制没法按公开稳定的规则交棒，就只能靠血缘、密室安排或强人集权顶上，短期稳住了，合法性留下裂缝。",
       "status": null,
       "degree": 5
     },
@@ -5273,13 +5295,13 @@
       "degree": 4
     },
     {
-      "id": "model:succession-fracture-model",
-      "key": "succession-fracture-model",
-      "label": "继承裂缝模型",
-      "fullLabel": "继承裂缝模型",
-      "type": "model",
-      "route": "models/succession-fracture-model",
-      "summary": "一个体制没法按公开稳定的规则交棒，就只能靠血缘、密室安排或强人集权顶上，短期稳住了，合法性留下裂缝。",
+      "id": "concept:succession-fracture",
+      "key": "succession-fracture",
+      "label": "继承裂缝",
+      "fullLabel": "继承裂缝",
+      "type": "concept",
+      "route": "concepts/succession-fracture",
+      "summary": "一个体制交棒时，职位能指定下来，合法性却不一定跟着过去，原来被强人压住的矛盾会在这时一起裂开。",
       "status": null,
       "degree": 4
     },
@@ -5456,6 +5478,17 @@
       "type": "concept",
       "route": "concepts/ownership-management-separation",
       "summary": "家族握住资产所有权和收益权，把投资、信托、税务、运营全部交给专业团队，用制度代替血缘完成传承，这是家族办公室的底层逻辑。",
+      "status": null,
+      "degree": 4
+    },
+    {
+      "id": "concept:authoritarian-regression",
+      "key": "authoritarian-regression",
+      "label": "体制复古",
+      "fullLabel": "体制复古",
+      "type": "concept",
+      "route": "concepts/authoritarian-regression",
+      "summary": "一个国家在危机压力下重新启用旧威权体制的组织方式，例如让军队重返行政与商业体系。",
       "status": null,
       "degree": 4
     },
@@ -5977,17 +6010,6 @@
       "degree": 3
     },
     {
-      "id": "concept:succession-fracture",
-      "key": "succession-fracture",
-      "label": "继承裂缝",
-      "fullLabel": "继承裂缝",
-      "type": "concept",
-      "route": "concepts/succession-fracture",
-      "summary": "一个体制交棒时，职位能指定下来，合法性却不一定跟着过去，原来被强人压住的矛盾会在这时一起裂开。",
-      "status": null,
-      "degree": 3
-    },
-    {
       "id": "model:inheritance-distortion-model",
       "key": "inheritance-distortion-model",
       "label": "继承扭曲模型",
@@ -6237,17 +6259,6 @@
       "type": "concept",
       "route": "concepts/lying-flat-country",
       "summary": "大量绝缘个体以相似生存逻辑和价值判断形成的无形退出共同体。",
-      "status": null,
-      "degree": 3
-    },
-    {
-      "id": "concept:authoritarian-regression",
-      "key": "authoritarian-regression",
-      "label": "体制复古",
-      "fullLabel": "体制复古",
-      "type": "concept",
-      "route": "concepts/authoritarian-regression",
-      "summary": "一个国家在危机压力下重新启用旧威权体制的组织方式，例如让军队重返行政与商业体系。",
       "status": null,
       "degree": 3
     },
@@ -8525,6 +8536,17 @@
       "type": "person",
       "route": "people/yao-zhenhua",
       "summary": "姚振华是宝能集团创始人、董事长，观致汽车实控人；EP066 从他 2026 年初的实名举报讲起，回看观致怎样被宝能改造到只剩残值。",
+      "status": null,
+      "degree": 1
+    },
+    {
+      "id": "concept:legalistic-power-concentration",
+      "key": "legalistic-power-concentration",
+      "label": "依法集权",
+      "fullLabel": "依法集权",
+      "type": "concept",
+      "route": "concepts/legalistic-power-concentration",
+      "summary": "掌权者不靠政变，保留选举和议会的外壳，借修法和合法程序一步步把实权收到自己手里。",
       "status": null,
       "degree": 1
     },
@@ -17412,6 +17434,41 @@
     {
       "source": "episode:EP238",
       "target": "theme:ai-bubble-and-compute-demand",
+      "kind": "episode-theme"
+    },
+    {
+      "source": "episode:EP239",
+      "target": "concept:authoritarian-regression",
+      "kind": "episode-concept"
+    },
+    {
+      "source": "episode:EP239",
+      "target": "concept:legalistic-power-concentration",
+      "kind": "episode-concept"
+    },
+    {
+      "source": "episode:EP239",
+      "target": "concept:succession-fracture",
+      "kind": "episode-concept"
+    },
+    {
+      "source": "episode:EP239",
+      "target": "model:succession-fracture-model",
+      "kind": "episode-model"
+    },
+    {
+      "source": "episode:EP239",
+      "target": "model:rule-anchored-small-state-model",
+      "kind": "episode-model"
+    },
+    {
+      "source": "episode:EP239",
+      "target": "theme:southeast-asia-fragmentation-and-bloc-competition",
+      "kind": "episode-theme"
+    },
+    {
+      "source": "episode:EP239",
+      "target": "theme:authoritarian-succession-and-state-fragility",
       "kind": "episode-theme"
     },
     {
