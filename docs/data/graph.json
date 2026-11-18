@@ -2,14 +2,14 @@
   "meta": {
     "title": "颖响力知识图谱",
     "subtitle": "节目、概念、模型、人物、主题之间的可视化连接网络",
-    "nodeCount": 800,
-    "linkCount": 3082,
+    "nodeCount": 802,
+    "linkCount": 3092,
     "typeCounts": {
       "model": 85,
       "live": 59,
-      "concept": 260,
+      "concept": 261,
       "theme": 92,
-      "episode": 239,
+      "episode": 240,
       "person": 65
     }
   },
@@ -23,7 +23,7 @@
       "route": "models/risk-transfer-chain",
       "summary": "风险很少当场爆掉，多半先在银行、企业、票据、供应链和普通人之间转手、延后，一层层往下沉。",
       "status": null,
-      "degree": 63
+      "degree": 64
     },
     {
       "id": "live:LIVE002",
@@ -334,6 +334,17 @@
       "degree": 25
     },
     {
+      "id": "theme:sanctions-and-power-containment",
+      "key": "sanctions-and-power-containment",
+      "label": "制裁、遏制与集团竞争",
+      "fullLabel": "制裁、遏制与集团竞争",
+      "type": "theme",
+      "route": "themes/sanctions-and-power-containment",
+      "summary": "讨论制裁、门罗主义、海峡与联盟如何共同服务于压制对手集团的全球布局。",
+      "status": null,
+      "degree": 25
+    },
+    {
       "id": "live:LIVE014",
       "key": "LIVE014",
       "label": "LIVE014",
@@ -385,17 +396,6 @@
       "type": "theme",
       "route": "themes/dollar-system-and-gray-trade",
       "summary": "讨论石油美元的真实脆弱点，究竟藏在公开统计之外的哪些灰色交易链条里。",
-      "status": null,
-      "degree": 24
-    },
-    {
-      "id": "theme:sanctions-and-power-containment",
-      "key": "sanctions-and-power-containment",
-      "label": "制裁、遏制与集团竞争",
-      "fullLabel": "制裁、遏制与集团竞争",
-      "type": "theme",
-      "route": "themes/sanctions-and-power-containment",
-      "summary": "讨论制裁、门罗主义、海峡与联盟如何共同服务于压制对手集团的全球布局。",
       "status": null,
       "degree": 24
     },
@@ -499,6 +499,28 @@
       "degree": 24
     },
     {
+      "id": "model:leverage-backfire",
+      "key": "leverage-backfire",
+      "label": "杠杆反噬",
+      "fullLabel": "杠杆反噬",
+      "type": "model",
+      "route": "models/leverage-backfire",
+      "summary": "杠杆反噬解释上行期放大利润的结构，如何在下行期放大亏损、现金流压力和清偿困难。",
+      "status": null,
+      "degree": 23
+    },
+    {
+      "id": "person:donald-trump",
+      "key": "donald-trump",
+      "label": "特朗普",
+      "fullLabel": "特朗普",
+      "type": "person",
+      "route": "people/donald-trump",
+      "summary": "特朗普是美国共和党政治人物，第 45 任和第 47 任美国总统。节目讲美国战略时最常拿他说事：新门罗主义收缩防线，让盟友出钱守墙，再沿巴拿马、委内瑞拉、伊朗一路打灰色贸易。",
+      "status": null,
+      "degree": 23
+    },
+    {
       "id": "concept:chokepoint-leverage",
       "key": "chokepoint-leverage",
       "label": "咽喉杠杆",
@@ -574,28 +596,6 @@
       "summary": "女儿六年前以实习生身份进公司，六年后坐上了营销总监的位置。",
       "status": "published",
       "degree": 23
-    },
-    {
-      "id": "model:leverage-backfire",
-      "key": "leverage-backfire",
-      "label": "杠杆反噬",
-      "fullLabel": "杠杆反噬",
-      "type": "model",
-      "route": "models/leverage-backfire",
-      "summary": "杠杆反噬解释上行期放大利润的结构，如何在下行期放大亏损、现金流压力和清偿困难。",
-      "status": null,
-      "degree": 22
-    },
-    {
-      "id": "person:donald-trump",
-      "key": "donald-trump",
-      "label": "特朗普",
-      "fullLabel": "特朗普",
-      "type": "person",
-      "route": "people/donald-trump",
-      "summary": "特朗普是美国共和党政治人物，第 45 任和第 47 任美国总统。节目讲美国战略时最常拿他说事：新门罗主义收缩防线，让盟友出钱守墙，再沿巴拿马、委内瑞拉、伊朗一路打灰色贸易。",
-      "status": null,
-      "degree": 22
     },
     {
       "id": "episode:EP144",
@@ -1687,6 +1687,17 @@
       "degree": 12
     },
     {
+      "id": "theme:ai-bubble-and-compute-demand",
+      "key": "ai-bubble-and-compute-demand",
+      "label": "AI泡沫与算力需求制造",
+      "fullLabel": "AI泡沫与算力需求制造",
+      "type": "theme",
+      "route": "themes/ai-bubble-and-compute-demand",
+      "summary": "资本先把算力和工具铺开，再用补贴和热度把用量做出来，拿用量讲估值。",
+      "status": null,
+      "degree": 12
+    },
+    {
       "id": "episode:EP040",
       "key": "EP040",
       "label": "EP040",
@@ -1958,17 +1969,6 @@
       "type": "concept",
       "route": "concepts/active-neutrality",
       "summary": "卡在关键位置上的小国躲不开大国博弈，能长久的中立靠守住规则、主动参与定规则。",
-      "status": null,
-      "degree": 11
-    },
-    {
-      "id": "theme:ai-bubble-and-compute-demand",
-      "key": "ai-bubble-and-compute-demand",
-      "label": "AI泡沫与算力需求制造",
-      "fullLabel": "AI泡沫与算力需求制造",
-      "type": "theme",
-      "route": "themes/ai-bubble-and-compute-demand",
-      "summary": "资本先把算力和工具铺开，再用补贴和热度把用量做出来，拿用量讲估值。",
       "status": null,
       "degree": 11
     },
@@ -2292,6 +2292,17 @@
       "degree": 10
     },
     {
+      "id": "episode:EP240",
+      "key": "EP240",
+      "label": "EP240",
+      "fullLabel": "EP240 · 14天吓走黄仁勋：多米诺骨牌已倒，下一场金融危机要来？",
+      "type": "episode",
+      "route": "episodes/EP240",
+      "summary": "10 月 29 日纽约时报披露黄仁勋的一段私情牵涉国家安全，14 天后他辞去英伟达首席执行官、总裁和董事的全部职务，几天里英伟达市值蒸发超过六千亿美元。说美国人容不下华人站不住，他出道那天就是华人。他自己也不干净，跟一家小公司做了四十多亿美元的生意，又被曝和下属有恋情。推他下台的是几拨各有算盘的人，鹰派政客、做空的华尔街、怕吃官司的董事会、要上市的 Anthropic，每家推一把。更大的风险在后面，算力是借债堆起来的，芯片和机房又是抵押物，估值一打折，可能顺着次贷那条路传到银行和普通人身上。",
+      "status": "curated",
+      "degree": 10
+    },
+    {
       "id": "concept:standard-labor-replacement",
       "key": "standard-labor-replacement",
       "label": "标准劳动力替代",
@@ -2299,6 +2310,17 @@
       "type": "concept",
       "route": "concepts/standard-labor-replacement",
       "summary": "自动化最先替代可重复、可规训、可量化的标准岗位，而这些岗位往往属于普通人。",
+      "status": null,
+      "degree": 9
+    },
+    {
+      "id": "theme:founder-power-and-feedback",
+      "key": "founder-power-and-feedback",
+      "label": "创始人权力与组织反馈",
+      "fullLabel": "创始人权力与组织反馈",
+      "type": "theme",
+      "route": "themes/founder-power-and-feedback",
+      "summary": "创始人权力太强时，企业内部还剩多少真话，出了错谁能让老板听见。",
       "status": null,
       "degree": 9
     },
@@ -2794,17 +2816,6 @@
       "type": "model",
       "route": "models/wealth-power-reproduction",
       "summary": "财富不会自己延续，要借生育、婚姻、文凭和关系重新包装，才能变成下一代的身份和权力。",
-      "status": null,
-      "degree": 8
-    },
-    {
-      "id": "theme:founder-power-and-feedback",
-      "key": "founder-power-and-feedback",
-      "label": "创始人权力与组织反馈",
-      "fullLabel": "创始人权力与组织反馈",
-      "type": "theme",
-      "route": "themes/founder-power-and-feedback",
-      "summary": "创始人权力太强时，企业内部还剩多少真话，出了错谁能让老板听见。",
       "status": null,
       "degree": 8
     },
@@ -4569,6 +4580,17 @@
       "degree": 5
     },
     {
+      "id": "concept:valuation-overdraft",
+      "key": "valuation-overdraft",
+      "label": "估值透支",
+      "fullLabel": "估值透支",
+      "type": "concept",
+      "route": "concepts/valuation-overdraft",
+      "summary": "价格一次性把公司往后几十年做到最好的结果算完，此后的努力只用来兑现，不再产生新的空间。",
+      "status": null,
+      "degree": 5
+    },
+    {
       "id": "concept:relationship-insurance",
       "key": "relationship-insurance",
       "label": "关系保险",
@@ -4719,6 +4741,17 @@
       "type": "concept",
       "route": "concepts/homogeneous-competition",
       "summary": "几家方向重叠的主体挤在同一块地方、同一个市场，抢同一批客户和资源。拼到最后拼的是价格和谁背后有人撑腰，质量好的一方不一定赢。",
+      "status": null,
+      "degree": 5
+    },
+    {
+      "id": "concept:investment-timing-gap",
+      "key": "investment-timing-gap",
+      "label": "投入兑现时间差",
+      "fullLabel": "投入兑现时间差",
+      "type": "concept",
+      "route": "concepts/investment-timing-gap",
+      "summary": "资本和基础设施先投入，真实应用价值后兑现，中间的时间差会制造估值、现金流和耐心风险。",
       "status": null,
       "degree": 5
     },
@@ -5251,17 +5284,6 @@
       "degree": 4
     },
     {
-      "id": "concept:valuation-overdraft",
-      "key": "valuation-overdraft",
-      "label": "估值透支",
-      "fullLabel": "估值透支",
-      "type": "concept",
-      "route": "concepts/valuation-overdraft",
-      "summary": "价格一次性把公司往后几十年做到最好的结果算完，此后的努力只用来兑现，不再产生新的空间。",
-      "status": null,
-      "degree": 4
-    },
-    {
       "id": "model:rule-bounded-rights-defense",
       "key": "rule-bounded-rights-defense",
       "label": "规则边界型维权模型",
@@ -5335,6 +5357,17 @@
       "type": "concept",
       "route": "concepts/signal-price-distortion",
       "summary": "价格本应用来传递供需信息，若被流量、叙事或行政力量改写，就会误导生产和消费。",
+      "status": null,
+      "degree": 4
+    },
+    {
+      "id": "concept:succession-vacuum",
+      "key": "succession-vacuum",
+      "label": "接班人真空",
+      "fullLabel": "接班人真空",
+      "type": "concept",
+      "route": "concepts/succession-vacuum",
+      "summary": "强人统治越久，越难允许真正二号人物成长，交棒时就越容易出现接班人真空。",
       "status": null,
       "degree": 4
     },
@@ -5489,17 +5522,6 @@
       "type": "concept",
       "route": "concepts/authoritarian-regression",
       "summary": "一个国家在危机压力下重新启用旧威权体制的组织方式，例如让军队重返行政与商业体系。",
-      "status": null,
-      "degree": 4
-    },
-    {
-      "id": "concept:investment-timing-gap",
-      "key": "investment-timing-gap",
-      "label": "投入兑现时间差",
-      "fullLabel": "投入兑现时间差",
-      "type": "concept",
-      "route": "concepts/investment-timing-gap",
-      "summary": "资本和基础设施先投入，真实应用价值后兑现，中间的时间差会制造估值、现金流和耐心风险。",
       "status": null,
       "degree": 4
     },
@@ -6028,17 +6050,6 @@
       "type": "theme",
       "route": "themes/education-and-ai-misalignment",
       "summary": "学校还在按工业时代的标准挑记得牢、算得快、守规矩的人。这些正是 AI 最先接手的本事。",
-      "status": null,
-      "degree": 3
-    },
-    {
-      "id": "concept:succession-vacuum",
-      "key": "succession-vacuum",
-      "label": "接班人真空",
-      "fullLabel": "接班人真空",
-      "type": "concept",
-      "route": "concepts/succession-vacuum",
-      "summary": "强人统治越久，越难允许真正二号人物成长，交棒时就越容易出现接班人真空。",
       "status": null,
       "degree": 3
     },
@@ -7546,6 +7557,17 @@
       "type": "concept",
       "route": "concepts/proxy-sponsor-shift",
       "summary": "代理人战争中真正出钱撑盘的后台换了人，所有旁观者原本的获利位置和敌我关系随之被迫重写。",
+      "status": null,
+      "degree": 1
+    },
+    {
+      "id": "concept:collateral-spiral",
+      "key": "collateral-spiral",
+      "label": "抵押物踩踏",
+      "fullLabel": "抵押物踩踏",
+      "type": "concept",
+      "route": "concepts/collateral-spiral",
+      "summary": "借款拿资产作抵押，资产一跌价，银行要求补担保，借款人只能贱卖资产，价格被压得更低，下跌自己给自己加速。",
       "status": null,
       "degree": 1
     },
@@ -17469,6 +17491,56 @@
     {
       "source": "episode:EP239",
       "target": "theme:authoritarian-succession-and-state-fragility",
+      "kind": "episode-theme"
+    },
+    {
+      "source": "episode:EP240",
+      "target": "concept:succession-vacuum",
+      "kind": "episode-concept"
+    },
+    {
+      "source": "episode:EP240",
+      "target": "concept:valuation-overdraft",
+      "kind": "episode-concept"
+    },
+    {
+      "source": "episode:EP240",
+      "target": "concept:investment-timing-gap",
+      "kind": "episode-concept"
+    },
+    {
+      "source": "episode:EP240",
+      "target": "concept:collateral-spiral",
+      "kind": "episode-concept"
+    },
+    {
+      "source": "episode:EP240",
+      "target": "model:leverage-backfire",
+      "kind": "episode-model"
+    },
+    {
+      "source": "episode:EP240",
+      "target": "model:risk-transfer-chain",
+      "kind": "episode-model"
+    },
+    {
+      "source": "episode:EP240",
+      "target": "person:donald-trump",
+      "kind": "episode-person"
+    },
+    {
+      "source": "episode:EP240",
+      "target": "theme:ai-bubble-and-compute-demand",
+      "kind": "episode-theme"
+    },
+    {
+      "source": "episode:EP240",
+      "target": "theme:founder-power-and-feedback",
+      "kind": "episode-theme"
+    },
+    {
+      "source": "episode:EP240",
+      "target": "theme:sanctions-and-power-containment",
       "kind": "episode-theme"
     },
     {
