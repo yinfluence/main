@@ -99,6 +99,10 @@
   "publishedAt": "2026-11-18T10:00:08.000Z",
   "videoLinks": [
     {
+      "platform": "bilibili",
+      "url": "https://www.bilibili.com/video/BV1E8sb6kEJx/"
+    },
+    {
       "platform": "youtube",
       "url": "https://www.youtube.com/watch?v=He11tB1sOyM"
     }
