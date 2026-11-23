@@ -2,14 +2,14 @@
   "meta": {
     "title": "颖响力知识图谱",
     "subtitle": "节目、概念、模型、人物、主题之间的可视化连接网络",
-    "nodeCount": 802,
-    "linkCount": 3092,
+    "nodeCount": 804,
+    "linkCount": 3103,
     "typeCounts": {
       "model": 85,
       "live": 59,
-      "concept": 261,
+      "concept": 262,
       "theme": 92,
-      "episode": 240,
+      "episode": 241,
       "person": 65
     }
   },
@@ -191,6 +191,17 @@
       "degree": 27
     },
     {
+      "id": "theme:narrative-speculation-and-retail-traps",
+      "key": "narrative-speculation-and-retail-traps",
+      "label": "投资叙事与散户陷阱",
+      "fullLabel": "投资叙事与散户陷阱",
+      "type": "theme",
+      "route": "themes/narrative-speculation-and-retail-traps",
+      "summary": "价格先靠故事推高，先进场的人在高点退出，普通人带着积蓄最后接手。",
+      "status": null,
+      "degree": 27
+    },
+    {
       "id": "model:narrative-instrumentalization",
       "key": "narrative-instrumentalization",
       "label": "叙事工具化模型",
@@ -233,17 +244,6 @@
       "summary": "这门生意的名字中国人早就有了，叫拥戴之功。",
       "status": "curated",
       "degree": 27
-    },
-    {
-      "id": "theme:narrative-speculation-and-retail-traps",
-      "key": "narrative-speculation-and-retail-traps",
-      "label": "投资叙事与散户陷阱",
-      "fullLabel": "投资叙事与散户陷阱",
-      "type": "theme",
-      "route": "themes/narrative-speculation-and-retail-traps",
-      "summary": "价格先靠故事推高，先进场的人在高点退出，普通人带着积蓄最后接手。",
-      "status": null,
-      "degree": 26
     },
     {
       "id": "episode:EP154",
@@ -1181,6 +1181,17 @@
       "degree": 15
     },
     {
+      "id": "model:narrative-leverage",
+      "key": "narrative-leverage",
+      "label": "叙事杠杆",
+      "fullLabel": "叙事杠杆",
+      "type": "model",
+      "route": "models/narrative-leverage",
+      "summary": "一个足够大的故事，能把有限的资源、信用和注意力，撬成更多的资本、销量或支持。",
+      "status": null,
+      "degree": 15
+    },
+    {
       "id": "episode:EP123",
       "key": "EP123",
       "label": "EP123",
@@ -1309,17 +1320,6 @@
       "type": "theme",
       "route": "themes/ev-financialization-and-false-sales",
       "summary": "聚焦新能源车行业如何依靠补贴、融资、渠道黑箱和虚假销售维持增长叙事。",
-      "status": null,
-      "degree": 14
-    },
-    {
-      "id": "model:narrative-leverage",
-      "key": "narrative-leverage",
-      "label": "叙事杠杆",
-      "fullLabel": "叙事杠杆",
-      "type": "model",
-      "route": "models/narrative-leverage",
-      "summary": "一个足够大的故事，能把有限的资源、信用和注意力，撬成更多的资本、销量或支持。",
       "status": null,
       "degree": 14
     },
@@ -1463,6 +1463,17 @@
       "type": "concept",
       "route": "concepts/time-asymmetry",
       "summary": "冲突双方对时间的承受力不一样，决定长期胜负的常常是谁能把时间变成自己的朋友。",
+      "status": null,
+      "degree": 13
+    },
+    {
+      "id": "theme:film-industry-and-traffic-logic",
+      "key": "film-industry-and-traffic-logic",
+      "label": "影视工业与流量逻辑",
+      "fullLabel": "影视工业与流量逻辑",
+      "type": "theme",
+      "route": "themes/film-industry-and-traffic-logic",
+      "summary": "影视生产越来越服从人设、粉丝和宣发热度，角色和作品本身退到后面。",
       "status": null,
       "degree": 13
     },
@@ -1672,17 +1683,6 @@
       "type": "concept",
       "route": "concepts/phantom-sales",
       "summary": "企业把并不存在的终端需求，包装成销量、出海成绩或订单，用来维持估值和融资。",
-      "status": null,
-      "degree": 12
-    },
-    {
-      "id": "theme:film-industry-and-traffic-logic",
-      "key": "film-industry-and-traffic-logic",
-      "label": "影视工业与流量逻辑",
-      "fullLabel": "影视工业与流量逻辑",
-      "type": "theme",
-      "route": "themes/film-industry-and-traffic-logic",
-      "summary": "影视生产越来越服从人设、粉丝和宣发热度，角色和作品本身退到后面。",
       "status": null,
       "degree": 12
     },
@@ -2068,6 +2068,17 @@
       "type": "episode",
       "route": "episodes/EP228",
       "summary": "2026 年 10 月 9 日，川普宣布要从俄罗斯进口柴油，美国财政部当天发了许可。美国自己产油，汽油柴油都是净出口，这笔买卖按贸易说不通，要按政治账来读。最表层是中期选举，秋收季的农业州盯着柴油价格，放一句话就能让期货里的多头收手。往里一层是逼欧盟别再一边制裁一边买俄罗斯能源。最深一层是借这个信号，让伊朗和中国这些俄油的伙伴心里打鼓，拆松能源阵营。几乎不花一分钱就撬动了三层利益，代价是把乌克兰当成了交易筹码。",
+      "status": "curated",
+      "degree": 11
+    },
+    {
+      "id": "episode:EP241",
+      "key": "EP241",
+      "label": "EP241",
+      "fullLabel": "EP241 · 红果新神《持械入宋》：为什么火的是开滴滴、带娃的外行？",
+      "type": "episode",
+      "route": "episodes/EP241",
+      "summary": "红果上的 AI 短剧《持械入宋》两个多月出了十季，全网播放量报到了 120 亿。做剧的是一群从没学过影视的普通人。里面有开网约车的、送货的、要接孩子的宝妈，团队说自己一分钱都没投流。画面有不少瑕疵，穿越剧情也常见，真正吸引人的是做剧的这群人。平台要的正是这个故事。它想让大批外行带着工具和积蓄进场，再绕开那层能跟平台讲价的中间制作公司。从赛马里跑出来的只是极少数，后来的人多半要花钱买流量，规则一直握在平台手里。",
       "status": "curated",
       "degree": 11
     },
@@ -4118,6 +4129,28 @@
       "degree": 6
     },
     {
+      "id": "person:luo-yonghao",
+      "key": "luo-yonghao",
+      "label": "罗永浩",
+      "fullLabel": "罗永浩",
+      "type": "person",
+      "route": "people/luo-yonghao",
+      "summary": "罗永浩是锤子科技创始人、做过直播带货还债的连续创业者。2025 年 9 月他吐槽西贝几乎全是预制菜还卖得贵，四期西贝节目都从这句话说起；EP110 另拿他讲平台怎样把一个人推成一哥。",
+      "status": null,
+      "degree": 6
+    },
+    {
+      "id": "theme:content-regulation-and-short-drama",
+      "key": "content-regulation-and-short-drama",
+      "label": "内容监管与短剧崛起",
+      "fullLabel": "内容监管与短剧崛起",
+      "type": "theme",
+      "route": "themes/content-regulation-and-short-drama",
+      "summary": "审核路径不同，长剧、电影、短剧和现场演出的成本和玩法跟着变。",
+      "status": null,
+      "degree": 6
+    },
+    {
       "id": "theme:youth-dreams-and-safe-paths",
       "key": "youth-dreams-and-safe-paths",
       "label": "年轻人梦想与安全路径",
@@ -4675,28 +4708,6 @@
       "type": "concept",
       "route": "concepts/giant-infant-rights-defense",
       "summary": "把自己的方便和情绪说成权利受侵害，要规则和别人让路，自己的义务和后果一概不认。",
-      "status": null,
-      "degree": 5
-    },
-    {
-      "id": "person:luo-yonghao",
-      "key": "luo-yonghao",
-      "label": "罗永浩",
-      "fullLabel": "罗永浩",
-      "type": "person",
-      "route": "people/luo-yonghao",
-      "summary": "罗永浩是锤子科技创始人、做过直播带货还债的连续创业者。2025 年 9 月他吐槽西贝几乎全是预制菜还卖得贵，四期西贝节目都从这句话说起；EP110 另拿他讲平台怎样把一个人推成一哥。",
-      "status": null,
-      "degree": 5
-    },
-    {
-      "id": "theme:content-regulation-and-short-drama",
-      "key": "content-regulation-and-short-drama",
-      "label": "内容监管与短剧崛起",
-      "fullLabel": "内容监管与短剧崛起",
-      "type": "theme",
-      "route": "themes/content-regulation-and-short-drama",
-      "summary": "审核路径不同，长剧、电影、短剧和现场演出的成本和玩法跟着变。",
       "status": null,
       "degree": 5
     },
@@ -5405,6 +5416,17 @@
       "degree": 4
     },
     {
+      "id": "model:platform-gatekeeping",
+      "key": "platform-gatekeeping",
+      "label": "平台守门结构",
+      "fullLabel": "平台守门结构",
+      "type": "model",
+      "route": "models/platform-gatekeeping",
+      "summary": "平台握着流量、接口和处罚权，决定谁被看见、谁能赚钱、谁被封掉。",
+      "status": null,
+      "degree": 4
+    },
+    {
       "id": "concept:anticipatory-governance",
       "key": "anticipatory-governance",
       "label": "前瞻治理",
@@ -5911,6 +5933,17 @@
       "degree": 3
     },
     {
+      "id": "person:dong-yuhui",
+      "key": "dong-yuhui",
+      "label": "董宇辉",
+      "fullLabel": "董宇辉",
+      "type": "person",
+      "route": "people/dong-yuhui",
+      "summary": "董宇辉是与辉同行的掌门人，从东方甄选走红，以文化感带货出名。EP071 和 EP102 借他直播间 83 元三只老母鸡的争议，讲超级流量怎样改写价格信号。",
+      "status": null,
+      "degree": 3
+    },
+    {
       "id": "concept:investment-diversification-hedge",
       "key": "investment-diversification-hedge",
       "label": "分散投资对冲",
@@ -6164,17 +6197,6 @@
       "degree": 3
     },
     {
-      "id": "model:platform-gatekeeping",
-      "key": "platform-gatekeeping",
-      "label": "平台守门结构",
-      "fullLabel": "平台守门结构",
-      "type": "model",
-      "route": "models/platform-gatekeeping",
-      "summary": "平台握着流量、接口和处罚权，决定谁被看见、谁能赚钱、谁被封掉。",
-      "status": null,
-      "degree": 3
-    },
-    {
       "id": "theme:automotive-r-and-d-governance",
       "key": "automotive-r-and-d-governance",
       "label": "汽车研发治理与沉默联盟",
@@ -6369,6 +6391,17 @@
       "type": "concept",
       "route": "concepts/appeasing-consultant",
       "summary": "顾问只顺着老板的偏好说话，外部纠偏的人就成了老板意见的回声。",
+      "status": null,
+      "degree": 3
+    },
+    {
+      "id": "concept:user-funded-testing",
+      "key": "user-funded-testing",
+      "label": "用户代偿测试",
+      "fullLabel": "用户代偿测试",
+      "type": "concept",
+      "route": "concepts/user-funded-testing",
+      "summary": "平台把早期试错成本转给用户，让用户用时间、隐私、劳动和金钱替工具成熟买单。",
       "status": null,
       "degree": 3
     },
@@ -6637,17 +6670,6 @@
       "degree": 2
     },
     {
-      "id": "person:dong-yuhui",
-      "key": "dong-yuhui",
-      "label": "董宇辉",
-      "fullLabel": "董宇辉",
-      "type": "person",
-      "route": "people/dong-yuhui",
-      "summary": "董宇辉是与辉同行的掌门人，从东方甄选走红，以文化感带货出名。EP071 和 EP102 借他直播间 83 元三只老母鸡的争议，讲超级流量怎样改写价格信号。",
-      "status": null,
-      "degree": 2
-    },
-    {
       "id": "concept:defensive-medicine",
       "key": "defensive-medicine",
       "label": "防御性医疗",
@@ -6912,6 +6934,17 @@
       "degree": 2
     },
     {
+      "id": "concept:barrier-collapse",
+      "key": "barrier-collapse",
+      "label": "门槛塌陷",
+      "fullLabel": "门槛塌陷",
+      "type": "concept",
+      "route": "concepts/barrier-collapse",
+      "summary": "一个行业靠来收费的经验和硬成本，被工具打包成人人可用的功能。入行门槛归零，能比的只剩谁更能压价、谁更能熬。",
+      "status": null,
+      "degree": 2
+    },
+    {
       "id": "concept:internal-migration",
       "key": "internal-migration",
       "label": "内移民",
@@ -7062,6 +7095,17 @@
       "type": "concept",
       "route": "concepts/aesthetic-compression",
       "summary": "社会越功利、压力越大，人对美和差异的判断越容易压成几条粗糙标准，择偶看帅不帅，广告只求不出错。",
+      "status": null,
+      "degree": 2
+    },
+    {
+      "id": "model:uncontrolled-production-filter",
+      "key": "uncontrolled-production-filter",
+      "label": "失控生产过滤模型",
+      "fullLabel": "失控生产过滤模型",
+      "type": "model",
+      "route": "models/uncontrolled-production-filter",
+      "summary": "生产近乎无限时，值钱的环节挪到筛选端，用户的注意力成了平台的过滤器。",
       "status": null,
       "degree": 2
     },
@@ -7227,17 +7271,6 @@
       "type": "concept",
       "route": "concepts/employment-reservoir",
       "summary": "一家企业被体系保留下来，常常因为它替社会养着大量员工、家庭和消费链条，盈利能力倒在其次。",
-      "status": null,
-      "degree": 2
-    },
-    {
-      "id": "concept:user-funded-testing",
-      "key": "user-funded-testing",
-      "label": "用户代偿测试",
-      "fullLabel": "用户代偿测试",
-      "type": "concept",
-      "route": "concepts/user-funded-testing",
-      "summary": "平台把早期试错成本转给用户，让用户用时间、隐私、劳动和金钱替工具成熟买单。",
       "status": null,
       "degree": 2
     },
@@ -8056,17 +8089,6 @@
       "degree": 1
     },
     {
-      "id": "concept:barrier-collapse",
-      "key": "barrier-collapse",
-      "label": "门槛塌陷",
-      "fullLabel": "门槛塌陷",
-      "type": "concept",
-      "route": "concepts/barrier-collapse",
-      "summary": "一个行业靠来收费的经验和硬成本，被工具打包成人人可用的功能。入行门槛归零，能比的只剩谁更能压价、谁更能熬。",
-      "status": null,
-      "degree": 1
-    },
-    {
       "id": "concept:folk-theory-bundle",
       "key": "folk-theory-bundle",
       "label": "民间理论打包",
@@ -8232,6 +8254,17 @@
       "degree": 1
     },
     {
+      "id": "concept:platform-disintermediation",
+      "key": "platform-disintermediation",
+      "label": "去中间化",
+      "fullLabel": "去中间化",
+      "type": "concept",
+      "route": "concepts/platform-disintermediation",
+      "summary": "平台绕开夹在它和生产者之间的大公司，直接对接成千上万的小生产者。生产者散了，谁也没法跟平台讲价，规则只在平台手里。",
+      "status": null,
+      "degree": 1
+    },
+    {
       "id": "concept:collective-self-domestication",
       "key": "collective-self-domestication",
       "label": "群体自我驯化",
@@ -8283,17 +8316,6 @@
       "type": "concept",
       "route": "concepts/victory-legitimacy",
       "summary": "一个政权让人忍受牺牲，靠的是许诺一场胜利。仗打完拿不出像样的胜利，平局和小胜都会被当成失败来追问。",
-      "status": null,
-      "degree": 1
-    },
-    {
-      "id": "model:uncontrolled-production-filter",
-      "key": "uncontrolled-production-filter",
-      "label": "失控生产过滤模型",
-      "fullLabel": "失控生产过滤模型",
-      "type": "model",
-      "route": "models/uncontrolled-production-filter",
-      "summary": "生产近乎无限时，值钱的环节挪到筛选端，用户的注意力成了平台的过滤器。",
       "status": null,
       "degree": 1
     },
@@ -17541,6 +17563,61 @@
     {
       "source": "episode:EP240",
       "target": "theme:sanctions-and-power-containment",
+      "kind": "episode-theme"
+    },
+    {
+      "source": "episode:EP241",
+      "target": "concept:platform-disintermediation",
+      "kind": "episode-concept"
+    },
+    {
+      "source": "episode:EP241",
+      "target": "concept:barrier-collapse",
+      "kind": "episode-concept"
+    },
+    {
+      "source": "episode:EP241",
+      "target": "concept:user-funded-testing",
+      "kind": "episode-concept"
+    },
+    {
+      "source": "episode:EP241",
+      "target": "model:platform-gatekeeping",
+      "kind": "episode-model"
+    },
+    {
+      "source": "episode:EP241",
+      "target": "model:uncontrolled-production-filter",
+      "kind": "episode-model"
+    },
+    {
+      "source": "episode:EP241",
+      "target": "model:narrative-leverage",
+      "kind": "episode-model"
+    },
+    {
+      "source": "episode:EP241",
+      "target": "person:luo-yonghao",
+      "kind": "episode-person"
+    },
+    {
+      "source": "episode:EP241",
+      "target": "person:dong-yuhui",
+      "kind": "episode-person"
+    },
+    {
+      "source": "episode:EP241",
+      "target": "theme:film-industry-and-traffic-logic",
+      "kind": "episode-theme"
+    },
+    {
+      "source": "episode:EP241",
+      "target": "theme:content-regulation-and-short-drama",
+      "kind": "episode-theme"
+    },
+    {
+      "source": "episode:EP241",
+      "target": "theme:narrative-speculation-and-retail-traps",
       "kind": "episode-theme"
     },
     {
