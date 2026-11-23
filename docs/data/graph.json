@@ -2,12 +2,12 @@
   "meta": {
     "title": "颖响力知识图谱",
     "subtitle": "节目、概念、模型、人物、主题之间的可视化连接网络",
-    "nodeCount": 804,
-    "linkCount": 3103,
+    "nodeCount": 806,
+    "linkCount": 3134,
     "typeCounts": {
       "model": 85,
-      "live": 59,
       "concept": 262,
+      "live": 61,
       "theme": 92,
       "episode": 241,
       "person": 65
@@ -26,6 +26,17 @@
       "degree": 64
     },
     {
+      "id": "concept:hidden-debt",
+      "key": "hidden-debt",
+      "label": "隐形债务",
+      "fullLabel": "隐形债务",
+      "type": "concept",
+      "route": "concepts/hidden-debt",
+      "summary": "表外、体外和合作链条里的债务不在显性报表中充分呈现，却会在危机时重新压回主体。",
+      "status": null,
+      "degree": 36
+    },
+    {
       "id": "live:LIVE002",
       "key": "LIVE002",
       "label": "LIVE002",
@@ -35,17 +46,6 @@
       "summary": "县城里四分之三的收入，现在攥在旱涝保收的那一头。",
       "status": "curated",
       "degree": 36
-    },
-    {
-      "id": "concept:hidden-debt",
-      "key": "hidden-debt",
-      "label": "隐形债务",
-      "fullLabel": "隐形债务",
-      "type": "concept",
-      "route": "concepts/hidden-debt",
-      "summary": "表外、体外和合作链条里的债务不在显性报表中充分呈现，却会在危机时重新压回主体。",
-      "status": null,
-      "degree": 35
     },
     {
       "id": "live:LIVE022",
@@ -177,18 +177,7 @@
       "route": "themes/great-power-competition-and-strategic-time",
       "summary": "大国之间拼武器，也拼谁更能熬、谁先把成本降下来、谁抓住了时间窗口。",
       "status": null,
-      "degree": 27
-    },
-    {
-      "id": "theme:rule-of-law-boundaries-and-social-trust",
-      "key": "rule-of-law-boundaries-and-social-trust",
-      "label": "法治边界与社会信任",
-      "fullLabel": "法治边界与社会信任",
-      "type": "theme",
-      "route": "themes/rule-of-law-boundaries-and-social-trust",
-      "summary": "法律管到哪里、管不到哪里。规则被钻空子、被权力压过，或者根本没写进法条时，人和人之间的信任会怎么变。",
-      "status": null,
-      "degree": 27
+      "degree": 28
     },
     {
       "id": "theme:narrative-speculation-and-retail-traps",
@@ -198,6 +187,17 @@
       "type": "theme",
       "route": "themes/narrative-speculation-and-retail-traps",
       "summary": "价格先靠故事推高，先进场的人在高点退出，普通人带着积蓄最后接手。",
+      "status": null,
+      "degree": 28
+    },
+    {
+      "id": "theme:rule-of-law-boundaries-and-social-trust",
+      "key": "rule-of-law-boundaries-and-social-trust",
+      "label": "法治边界与社会信任",
+      "fullLabel": "法治边界与社会信任",
+      "type": "theme",
+      "route": "themes/rule-of-law-boundaries-and-social-trust",
+      "summary": "法律管到哪里、管不到哪里。规则被钻空子、被权力压过，或者根本没写进法条时，人和人之间的信任会怎么变。",
       "status": null,
       "degree": 27
     },
@@ -244,6 +244,17 @@
       "summary": "这门生意的名字中国人早就有了，叫拥戴之功。",
       "status": "curated",
       "degree": 27
+    },
+    {
+      "id": "theme:local-fiscal-stress-and-hidden-debt",
+      "key": "local-fiscal-stress-and-hidden-debt",
+      "label": "地方财政与隐性债务",
+      "fullLabel": "地方财政与隐性债务",
+      "type": "theme",
+      "route": "themes/local-fiscal-stress-and-hidden-debt",
+      "summary": "地方财政吃紧后，系统会通过更复杂的融资、资产包装和风险转移来维持运转。",
+      "status": null,
+      "degree": 26
     },
     {
       "id": "episode:EP154",
@@ -312,17 +323,6 @@
       "degree": 26
     },
     {
-      "id": "theme:local-fiscal-stress-and-hidden-debt",
-      "key": "local-fiscal-stress-and-hidden-debt",
-      "label": "地方财政与隐性债务",
-      "fullLabel": "地方财政与隐性债务",
-      "type": "theme",
-      "route": "themes/local-fiscal-stress-and-hidden-debt",
-      "summary": "地方财政吃紧后，系统会通过更复杂的融资、资产包装和风险转移来维持运转。",
-      "status": null,
-      "degree": 25
-    },
-    {
       "id": "concept:gray-oil-network",
       "key": "gray-oil-network",
       "label": "灰色石油网络",
@@ -387,6 +387,17 @@
       "summary": "巨额财产来源不明罪的门槛刚从三十万提到三百万，有人还没高兴完。",
       "status": "curated",
       "degree": 25
+    },
+    {
+      "id": "model:leverage-backfire",
+      "key": "leverage-backfire",
+      "label": "杠杆反噬",
+      "fullLabel": "杠杆反噬",
+      "type": "model",
+      "route": "models/leverage-backfire",
+      "summary": "杠杆反噬解释上行期放大利润的结构，如何在下行期放大亏损、现金流压力和清偿困难。",
+      "status": null,
+      "degree": 24
     },
     {
       "id": "theme:dollar-system-and-gray-trade",
@@ -497,17 +508,6 @@
       "summary": "南京按分摊的地来算，一套高层公寓落到地面上只有零点六平米。",
       "status": "published",
       "degree": 24
-    },
-    {
-      "id": "model:leverage-backfire",
-      "key": "leverage-backfire",
-      "label": "杠杆反噬",
-      "fullLabel": "杠杆反噬",
-      "type": "model",
-      "route": "models/leverage-backfire",
-      "summary": "杠杆反噬解释上行期放大利润的结构，如何在下行期放大亏损、现金流压力和清偿困难。",
-      "status": null,
-      "degree": 23
     },
     {
       "id": "person:donald-trump",
@@ -708,6 +708,17 @@
       "degree": 21
     },
     {
+      "id": "model:path-dependence",
+      "key": "path-dependence",
+      "label": "路径依赖",
+      "fullLabel": "路径依赖",
+      "type": "model",
+      "route": "models/path-dependence",
+      "summary": "早期的选择一旦成功，会沉淀成习惯、资产和期待，反过来限制后来的转向。",
+      "status": null,
+      "degree": 20
+    },
+    {
       "id": "theme:middle-class-descent-and-stratification",
       "key": "middle-class-descent-and-stratification",
       "label": "中产下坠与分层社会",
@@ -770,17 +781,6 @@
       "type": "theme",
       "route": "themes/real-estate-deleveraging",
       "summary": "讨论房地产在下行周期里如何通过断供、重组、展期和资产处置逐步暴露风险。",
-      "status": null,
-      "degree": 19
-    },
-    {
-      "id": "model:path-dependence",
-      "key": "path-dependence",
-      "label": "路径依赖",
-      "fullLabel": "路径依赖",
-      "type": "model",
-      "route": "models/path-dependence",
-      "summary": "早期的选择一旦成功，会沉淀成习惯、资产和期待，反过来限制后来的转向。",
       "status": null,
       "degree": 19
     },
@@ -1148,6 +1148,17 @@
       "degree": 16
     },
     {
+      "id": "live:LIVE060",
+      "key": "LIVE060",
+      "label": "LIVE060",
+      "fullLabel": "LIVE060 · 星舰二级飞船首次被筷子夹住！拆解太空算力：运费砍到1%，地面算力中心的贷款还回得来吗？",
+      "type": "live",
+      "route": "lives/LIVE060",
+      "summary": "飞船叫 42 号，取自《银河系漫游指南》里超级计算机算出的终极答案。",
+      "status": "published",
+      "degree": 16
+    },
+    {
       "id": "theme:local-government-financialization",
       "key": "local-government-financialization",
       "label": "地方政府资本化与补贴杠杆",
@@ -1276,6 +1287,17 @@
       "type": "live",
       "route": "lives/LIVE042",
       "summary": "明清时家里藏一面藤牌都可能算谋反，练武的最后只剩铁布衫。",
+      "status": "published",
+      "degree": 15
+    },
+    {
+      "id": "live:LIVE061",
+      "key": "LIVE061",
+      "label": "LIVE061",
+      "fullLabel": "LIVE061 · 化债才是头等大事！拆解A股人工呼吸为什么没喘匀：没有新钱进场，耐心资本都在场外看戏",
+      "type": "live",
+      "route": "lives/LIVE061",
+      "summary": "拿下一家上市公司那天，几个高管庆祝的是提款机来了。",
       "status": "published",
       "degree": 15
     },
@@ -1445,6 +1467,17 @@
       "degree": 14
     },
     {
+      "id": "episode:EP219",
+      "key": "EP219",
+      "label": "EP219",
+      "fullLabel": "EP219 · 拆解“赛博炼金术”！从瓜子掺沙到沙里掺瓜子，人形机器人泡沫加速蒸发中国社会财富！",
+      "type": "episode",
+      "route": "episodes/EP219",
+      "summary": "2026 年 9 月，梅卡曼德创始人邵天兰实名质疑人形机器人行业靠数采中心和关联交易做收入。顺着他的说法拆开，是一条五步流水线。企业在补贴高的地方注册数据采集中心，拿补贴回头高价买母公司的机器人。机器人摆在办公楼里抓杯子、擦桌子，号称采集训练数据，支出再包装成研发拿减税，最后带着漂亮财报去上市。这像瓜子掺沙，越掺越多，最后成了沙里掺瓜子，只能靠自家机构收货走账。它跟当年新能源骗补不同，节奏快了好几倍，又没有消费者托底，烧掉的是存款、股民本金和地方的钱。",
+      "status": "curated",
+      "degree": 14
+    },
+    {
       "id": "model:rule-anchored-small-state-model",
       "key": "rule-anchored-small-state-model",
       "label": "规则锚定型小国生存",
@@ -1467,6 +1500,17 @@
       "degree": 13
     },
     {
+      "id": "concept:cash-optionality",
+      "key": "cash-optionality",
+      "label": "现金选择权",
+      "fullLabel": "现金选择权",
+      "type": "concept",
+      "route": "concepts/cash-optionality",
+      "summary": "现金在高波动时期的核心价值，是保留等待、谈判、退出和重新进入的选择权。",
+      "status": null,
+      "degree": 13
+    },
+    {
       "id": "theme:film-industry-and-traffic-logic",
       "key": "film-industry-and-traffic-logic",
       "label": "影视工业与流量逻辑",
@@ -1474,6 +1518,17 @@
       "type": "theme",
       "route": "themes/film-industry-and-traffic-logic",
       "summary": "影视生产越来越服从人设、粉丝和宣发热度，角色和作品本身退到后面。",
+      "status": null,
+      "degree": 13
+    },
+    {
+      "id": "theme:ai-bubble-and-compute-demand",
+      "key": "ai-bubble-and-compute-demand",
+      "label": "AI泡沫与算力需求制造",
+      "fullLabel": "AI泡沫与算力需求制造",
+      "type": "theme",
+      "route": "themes/ai-bubble-and-compute-demand",
+      "summary": "资本先把算力和工具铺开，再用补贴和热度把用量做出来，拿用量讲估值。",
       "status": null,
       "degree": 13
     },
@@ -1551,17 +1606,6 @@
       "type": "episode",
       "route": "episodes/EP217",
       "summary": "2026 年 9 月 15 日，华为和赛力斯宣布调整问界的合作方式。产品、营销、渠道和服务全交给赛力斯，华为只留技术支持。说是分工调整，背后有三层原因。一层是分账。华为拿走授权费、品牌溢价和渠道分润，赛力斯扛着工厂、折旧和地方的对赌。利润薄到亏钱，只能在配件和品控上省，伤的还是华为的牌子。一层是舆论把这套分账摆上台面，小米又推出同级车，便宜一二十万，溢价站不住了。再一层是行业没了暴利，华为赶在风险暴露前交出经营权。赚钱时拿大头，出事时不沾身。",
-      "status": "curated",
-      "degree": 13
-    },
-    {
-      "id": "episode:EP219",
-      "key": "EP219",
-      "label": "EP219",
-      "fullLabel": "EP219 · 拆解“赛博炼金术”！从瓜子掺沙到沙里掺瓜子，人形机器人泡沫加速蒸发中国社会财富！",
-      "type": "episode",
-      "route": "episodes/EP219",
-      "summary": "2026 年 9 月，梅卡曼德创始人邵天兰实名质疑人形机器人行业靠数采中心和关联交易做收入。顺着他的说法拆开，是一条五步流水线。企业在补贴高的地方注册数据采集中心，拿补贴回头高价买母公司的机器人。机器人摆在办公楼里抓杯子、擦桌子，号称采集训练数据，支出再包装成研发拿减税，最后带着漂亮财报去上市。这像瓜子掺沙，越掺越多，最后成了沙里掺瓜子，只能靠自家机构收货走账。它跟当年新能源骗补不同，节奏快了好几倍，又没有消费者托底，烧掉的是存款、股民本金和地方的钱。",
       "status": "curated",
       "degree": 13
     },
@@ -1654,17 +1698,6 @@
       "degree": 12
     },
     {
-      "id": "concept:cash-optionality",
-      "key": "cash-optionality",
-      "label": "现金选择权",
-      "fullLabel": "现金选择权",
-      "type": "concept",
-      "route": "concepts/cash-optionality",
-      "summary": "现金在高波动时期的核心价值，是保留等待、谈判、退出和重新进入的选择权。",
-      "status": null,
-      "degree": 12
-    },
-    {
       "id": "model:small-state-balancing-model",
       "key": "small-state-balancing-model",
       "label": "小国平衡术",
@@ -1683,17 +1716,6 @@
       "type": "concept",
       "route": "concepts/phantom-sales",
       "summary": "企业把并不存在的终端需求，包装成销量、出海成绩或订单，用来维持估值和融资。",
-      "status": null,
-      "degree": 12
-    },
-    {
-      "id": "theme:ai-bubble-and-compute-demand",
-      "key": "ai-bubble-and-compute-demand",
-      "label": "AI泡沫与算力需求制造",
-      "fullLabel": "AI泡沫与算力需求制造",
-      "type": "theme",
-      "route": "themes/ai-bubble-and-compute-demand",
-      "summary": "资本先把算力和工具铺开，再用补贴和热度把用量做出来，拿用量讲估值。",
       "status": null,
       "degree": 12
     },
@@ -1896,6 +1918,17 @@
       "degree": 12
     },
     {
+      "id": "episode:EP213",
+      "key": "EP213",
+      "label": "EP213",
+      "fullLabel": "EP213 · 账面好看背后藏巨雷？中国银行保险3600亿增资与828地产新政的底层真相",
+      "type": "episode",
+      "route": "episodes/EP213",
+      "summary": "八家中央金融企业集体补充资本，合计 3600 亿元，国有大行、保险公司和政策性机构都在里面。这些机构的资本充足率和偿付能力都远高于监管线，缺的东西在账面下面。新房卖不动以后，地方让自家平台接盘托住地价，拿地去银行抵押贷款，贷款又变回出让金。钱花掉了，地冻成一座没人接的堰塞湖，风险顺着同业、理财和债券传到大行和险企。注资不去拆这座湖，只给下游的银行和险企多备一笔能吃下损失的本钱。8 月 28 日的地产新政，收紧的也正是这套拿地抵押的玩法。",
+      "status": "curated",
+      "degree": 12
+    },
+    {
       "id": "episode:EP220",
       "key": "EP220",
       "label": "EP220",
@@ -1916,6 +1949,28 @@
       "summary": "两年、六年、四年三种任期叠在一起，总统任期正中间就多出一场大选。",
       "status": "published",
       "degree": 12
+    },
+    {
+      "id": "theme:founder-power-and-feedback",
+      "key": "founder-power-and-feedback",
+      "label": "创始人权力与组织反馈",
+      "fullLabel": "创始人权力与组织反馈",
+      "type": "theme",
+      "route": "themes/founder-power-and-feedback",
+      "summary": "创始人权力太强时，企业内部还剩多少真话，出了错谁能让老板听见。",
+      "status": null,
+      "degree": 11
+    },
+    {
+      "id": "concept:price-war-trap",
+      "key": "price-war-trap",
+      "label": "低价竞争陷阱",
+      "fullLabel": "低价竞争陷阱",
+      "type": "concept",
+      "route": "concepts/price-war-trap",
+      "summary": "极致低价可以快速突袭，却可能在长期竞争中压缩技术升级、利润和战略空间。",
+      "status": null,
+      "degree": 11
     },
     {
       "id": "theme:east-asia-security-realignment",
@@ -2039,17 +2094,6 @@
       "degree": 11
     },
     {
-      "id": "episode:EP213",
-      "key": "EP213",
-      "label": "EP213",
-      "fullLabel": "EP213 · 账面好看背后藏巨雷？中国银行保险3600亿增资与828地产新政的底层真相",
-      "type": "episode",
-      "route": "episodes/EP213",
-      "summary": "八家中央金融企业集体补充资本，合计 3600 亿元，国有大行、保险公司和政策性机构都在里面。这些机构的资本充足率和偿付能力都远高于监管线，缺的东西在账面下面。新房卖不动以后，地方让自家平台接盘托住地价，拿地去银行抵押贷款，贷款又变回出让金。钱花掉了，地冻成一座没人接的堰塞湖，风险顺着同业、理财和债券传到大行和险企。注资不去拆这座湖，只给下游的银行和险企多备一笔能吃下损失的本钱。8 月 28 日的地产新政，收紧的也正是这套拿地抵押的玩法。",
-      "status": "curated",
-      "degree": 11
-    },
-    {
       "id": "episode:EP224",
       "key": "EP224",
       "label": "EP224",
@@ -2072,6 +2116,17 @@
       "degree": 11
     },
     {
+      "id": "episode:EP240",
+      "key": "EP240",
+      "label": "EP240",
+      "fullLabel": "EP240 · 14天吓走黄仁勋：多米诺骨牌已倒，下一场金融危机要来？",
+      "type": "episode",
+      "route": "episodes/EP240",
+      "summary": "10 月 29 日纽约时报披露黄仁勋的一段私情牵涉国家安全，14 天后他辞去英伟达首席执行官、总裁和董事的全部职务，几天里英伟达市值蒸发超过六千亿美元。说美国人容不下华人站不住，他出道那天就是华人。他自己也不干净，跟一家小公司做了四十多亿美元的生意，又被曝和下属有恋情。推他下台的是几拨各有算盘的人，鹰派政客、做空的华尔街、怕吃官司的董事会、要上市的 Anthropic，每家推一把。更大的风险在后面，算力是借债堆起来的，芯片和机房又是抵押物，估值一打折，可能顺着次贷那条路传到银行和普通人身上。",
+      "status": "curated",
+      "degree": 11
+    },
+    {
       "id": "episode:EP241",
       "key": "EP241",
       "label": "EP241",
@@ -2081,17 +2136,6 @@
       "summary": "红果上的 AI 短剧《持械入宋》两个多月出了十季，全网播放量报到了 120 亿。做剧的是一群从没学过影视的普通人。里面有开网约车的、送货的、要接孩子的宝妈，团队说自己一分钱都没投流。画面有不少瑕疵，穿越剧情也常见，真正吸引人的是做剧的这群人。平台要的正是这个故事。它想让大批外行带着工具和积蓄进场，再绕开那层能跟平台讲价的中间制作公司。从赛马里跑出来的只是极少数，后来的人多半要花钱买流量，规则一直握在平台手里。",
       "status": "curated",
       "degree": 11
-    },
-    {
-      "id": "concept:price-war-trap",
-      "key": "price-war-trap",
-      "label": "低价竞争陷阱",
-      "fullLabel": "低价竞争陷阱",
-      "type": "concept",
-      "route": "concepts/price-war-trap",
-      "summary": "极致低价可以快速突袭，却可能在长期竞争中压缩技术升级、利润和战略空间。",
-      "status": null,
-      "degree": 10
     },
     {
       "id": "model:follower-advantage-collapse",
@@ -2105,6 +2149,17 @@
       "degree": 10
     },
     {
+      "id": "model:technology-wave-cycle",
+      "key": "technology-wave-cycle",
+      "label": "技术浪潮周期",
+      "fullLabel": "技术浪潮周期",
+      "type": "model",
+      "route": "models/technology-wave-cycle",
+      "summary": "技术浪潮周期强调方向正确还不够，资本、基础设施、真实应用和时间窗口必须对齐。",
+      "status": null,
+      "degree": 10
+    },
+    {
       "id": "model:regional-denial-model",
       "key": "regional-denial-model",
       "label": "区域拒止模型",
@@ -2112,6 +2167,17 @@
       "type": "model",
       "route": "models/regional-denial-model",
       "summary": "把对手长期压在几个区域里，让它在每一块都占不了上风，各块之间也连不起来，长不成能跨区域联动的集团。",
+      "status": null,
+      "degree": 10
+    },
+    {
+      "id": "theme:time-horizon-and-foresight",
+      "key": "time-horizon-and-foresight",
+      "label": "时间尺度与资产前瞻",
+      "fullLabel": "时间尺度与资产前瞻",
+      "type": "theme",
+      "route": "themes/time-horizon-and-foresight",
+      "summary": "人和企业怎样按周期提前摆放自己，在事情发生之前就做好准备。",
       "status": null,
       "degree": 10
     },
@@ -2303,13 +2369,35 @@
       "degree": 10
     },
     {
-      "id": "episode:EP240",
-      "key": "EP240",
-      "label": "EP240",
-      "fullLabel": "EP240 · 14天吓走黄仁勋：多米诺骨牌已倒，下一场金融危机要来？",
+      "id": "episode:EP229",
+      "key": "EP229",
+      "label": "EP229",
+      "fullLabel": "EP229 · 从车圈笑傲江湖到《回到未来》，特斯拉飞行车背后，是两个世界的代差！",
       "type": "episode",
-      "route": "episodes/EP240",
-      "summary": "10 月 29 日纽约时报披露黄仁勋的一段私情牵涉国家安全，14 天后他辞去英伟达首席执行官、总裁和董事的全部职务，几天里英伟达市值蒸发超过六千亿美元。说美国人容不下华人站不住，他出道那天就是华人。他自己也不干净，跟一家小公司做了四十多亿美元的生意，又被曝和下属有恋情。推他下台的是几拨各有算盘的人，鹰派政客、做空的华尔街、怕吃官司的董事会、要上市的 Anthropic，每家推一把。更大的风险在后面，算力是借债堆起来的，芯片和机房又是抵押物，估值一打折，可能顺着次贷那条路传到银行和普通人身上。",
+      "route": "episodes/EP229",
+      "summary": "2026 年 10 月 15 日，特斯拉在得州 SpaceX 的场地发布新一代 Roadster，车顺着坡道倒挂，再靠喷气翻转腾空落地。就在前一天，国内还在吵尊界刹车踏板支架断裂，车企比的是续航、屏幕，还有车里能不能装下床和马桶。两边放在一起，一边还在演武侠，一边已经开进了《回到未来》，差的是做事的方式。这边默认市场就这么大，在固定的地盘里抢份额，那边几家公司共用同一套技术，互相输血、一起长大。拿能不能上牌、能飞几秒去评判它，用的还是旧世界的规则。",
+      "status": "curated",
+      "degree": 10
+    },
+    {
+      "id": "episode:EP237",
+      "key": "EP237",
+      "label": "EP237",
+      "fullLabel": "EP237 · AI 股史诗级暴跌！是倒车接人，还是车彻底坏了？",
+      "type": "episode",
+      "route": "episodes/EP237",
+      "summary": "11 月 5 日费城半导体指数单日跌了 12.25%，是 2020 年 3 月以来最大的单日跌幅，第二天日本、韩国股市跟着大跌。市场上流行三种说法，AI 泡沫彻底破了，美国人集体反对 AI，选举前后资金砸坑、跌完还会涨回去，三种都没说到点上。跌得最深的是数据中心、芯片和供电散热这些重资产，做模型和应用的公司只跌了几个点。真正的毛病在钱的来路，算力基建拿长期合同做抵押，走表外融资层层加杠杆，跟当年的次贷是同一个配方。短期也许有反弹，现在全力杀进去要小心，活下来比赚快钱要紧。",
+      "status": "curated",
+      "degree": 10
+    },
+    {
+      "id": "episode:EP238",
+      "key": "EP238",
+      "label": "EP238",
+      "fullLabel": "EP238 · 郎有情妾有意，黄仁勋风波到底是床上那点事，还是生意那盘棋？",
+      "type": "episode",
+      "route": "episodes/EP238",
+      "summary": "黄仁勋承认婚外情，对方黄女士所在的公司被指帮人绕开出口管制，把英伟达芯片转进中国。网上多把它当桃色新闻，笑搞技术的没见过世面。可他是工程师加销售出身，三十年满世界跑客户、陪酒局，把濒临倒闭的公司做到万亿市值，不会栽在新鲜感上。这件事是郎有情妾有意，他要市场份额，对方有东南亚的灰色中转渠道，私交是给合作上的保险，出了事还能说自己被蒙在鼓里。国会已经要他闭门说明，最可能的结局是罚钱立规矩，人留下，权力收窄。",
       "status": "curated",
       "degree": 10
     },
@@ -2321,17 +2409,6 @@
       "type": "concept",
       "route": "concepts/standard-labor-replacement",
       "summary": "自动化最先替代可重复、可规训、可量化的标准岗位，而这些岗位往往属于普通人。",
-      "status": null,
-      "degree": 9
-    },
-    {
-      "id": "theme:founder-power-and-feedback",
-      "key": "founder-power-and-feedback",
-      "label": "创始人权力与组织反馈",
-      "fullLabel": "创始人权力与组织反馈",
-      "type": "theme",
-      "route": "themes/founder-power-and-feedback",
-      "summary": "创始人权力太强时，企业内部还剩多少真话，出了错谁能让老板听见。",
       "status": null,
       "degree": 9
     },
@@ -2365,17 +2442,6 @@
       "type": "concept",
       "route": "concepts/phantom-growth",
       "summary": "系统通过报表、交易、融资和场面把增长做出来，但真实产业和真实利润并没有同步长出来。",
-      "status": null,
-      "degree": 9
-    },
-    {
-      "id": "model:technology-wave-cycle",
-      "key": "technology-wave-cycle",
-      "label": "技术浪潮周期",
-      "fullLabel": "技术浪潮周期",
-      "type": "model",
-      "route": "models/technology-wave-cycle",
-      "summary": "技术浪潮周期强调方向正确还不够，资本、基础设施、真实应用和时间窗口必须对齐。",
       "status": null,
       "degree": 9
     },
@@ -2424,17 +2490,6 @@
       "degree": 9
     },
     {
-      "id": "theme:time-horizon-and-foresight",
-      "key": "time-horizon-and-foresight",
-      "label": "时间尺度与资产前瞻",
-      "fullLabel": "时间尺度与资产前瞻",
-      "type": "theme",
-      "route": "themes/time-horizon-and-foresight",
-      "summary": "人和企业怎样按周期提前摆放自己，在事情发生之前就做好准备。",
-      "status": null,
-      "degree": 9
-    },
-    {
       "id": "theme:data-cosmetics-and-false-prosperity",
       "key": "data-cosmetics-and-false-prosperity",
       "label": "数据粉饰与虚假繁荣",
@@ -2453,6 +2508,17 @@
       "type": "concept",
       "route": "concepts/consumer-testbed",
       "summary": "企业把本该在研发和验证阶段承担的安全成本，转移到首批消费者、公共道路和真实事故里去消化。",
+      "status": null,
+      "degree": 9
+    },
+    {
+      "id": "concept:information-edge",
+      "key": "information-edge",
+      "label": "信息优势",
+      "fullLabel": "信息优势",
+      "type": "concept",
+      "route": "concepts/information-edge",
+      "summary": "投资真正的优势来自别人没有的确定信息，公开可见的故事和情绪给不了这种优势。",
       "status": null,
       "degree": 9
     },
@@ -2519,6 +2585,17 @@
       "type": "concept",
       "route": "concepts/balance-sheet-support",
       "summary": "通过维持估值、价格和名义成交，先保住报表与抵押体系，再把真实压力向后延。",
+      "status": null,
+      "degree": 9
+    },
+    {
+      "id": "concept:organizational-silence",
+      "key": "organizational-silence",
+      "label": "组织失声",
+      "fullLabel": "组织失声",
+      "type": "concept",
+      "route": "concepts/organizational-silence",
+      "summary": "组织里知道问题的人不再开口，都等着权威表态，错误就没人去改。",
       "status": null,
       "degree": 9
     },
@@ -2787,28 +2864,6 @@
       "degree": 9
     },
     {
-      "id": "episode:EP229",
-      "key": "EP229",
-      "label": "EP229",
-      "fullLabel": "EP229 · 从车圈笑傲江湖到《回到未来》，特斯拉飞行车背后，是两个世界的代差！",
-      "type": "episode",
-      "route": "episodes/EP229",
-      "summary": "2026 年 10 月 15 日，特斯拉在得州 SpaceX 的场地发布新一代 Roadster，车顺着坡道倒挂，再靠喷气翻转腾空落地。就在前一天，国内还在吵尊界刹车踏板支架断裂，车企比的是续航、屏幕，还有车里能不能装下床和马桶。两边放在一起，一边还在演武侠，一边已经开进了《回到未来》，差的是做事的方式。这边默认市场就这么大，在固定的地盘里抢份额，那边几家公司共用同一套技术，互相输血、一起长大。拿能不能上牌、能飞几秒去评判它，用的还是旧世界的规则。",
-      "status": "curated",
-      "degree": 9
-    },
-    {
-      "id": "episode:EP238",
-      "key": "EP238",
-      "label": "EP238",
-      "fullLabel": "EP238 · 郎有情妾有意，黄仁勋风波到底是床上那点事，还是生意那盘棋？",
-      "type": "episode",
-      "route": "episodes/EP238",
-      "summary": "黄仁勋承认婚外情，对方黄女士所在的公司被指帮人绕开出口管制，把英伟达芯片转进中国。网上多把它当桃色新闻，笑搞技术的没见过世面。可他是工程师加销售出身，三十年满世界跑客户、陪酒局，把濒临倒闭的公司做到万亿市值，不会栽在新鲜感上。这件事是郎有情妾有意，他要市场份额，对方有东南亚的灰色中转渠道，私交是给合作上的保险，出了事还能说自己被蒙在鼓里。国会已经要他闭门说明，最可能的结局是罚钱立规矩，人留下，权力收窄。",
-      "status": "curated",
-      "degree": 9
-    },
-    {
       "id": "concept:refuge-premium",
       "key": "refuge-premium",
       "label": "避险溢价",
@@ -2963,17 +3018,6 @@
       "degree": 8
     },
     {
-      "id": "concept:information-edge",
-      "key": "information-edge",
-      "label": "信息优势",
-      "fullLabel": "信息优势",
-      "type": "concept",
-      "route": "concepts/information-edge",
-      "summary": "投资真正的优势来自别人没有的确定信息，公开可见的故事和情绪给不了这种优势。",
-      "status": null,
-      "degree": 8
-    },
-    {
       "id": "theme:capital-packaging-and-credential-borrowing",
       "key": "capital-packaging-and-credential-borrowing",
       "label": "资本包装与身份背书",
@@ -3003,17 +3047,6 @@
       "type": "model",
       "route": "models/distribution-bias",
       "summary": "钱和保护先流向更强势、更有组织、更会申报的一端，成本和压力往最弱的一端压。",
-      "status": null,
-      "degree": 8
-    },
-    {
-      "id": "concept:organizational-silence",
-      "key": "organizational-silence",
-      "label": "组织失声",
-      "fullLabel": "组织失声",
-      "type": "concept",
-      "route": "concepts/organizational-silence",
-      "summary": "组织里知道问题的人不再开口，都等着权威表态，错误就没人去改。",
       "status": null,
       "degree": 8
     },
@@ -3414,17 +3447,6 @@
       "degree": 8
     },
     {
-      "id": "episode:EP237",
-      "key": "EP237",
-      "label": "EP237",
-      "fullLabel": "EP237 · AI 股史诗级暴跌！是倒车接人，还是车彻底坏了？",
-      "type": "episode",
-      "route": "episodes/EP237",
-      "summary": "11 月 5 日费城半导体指数单日跌了 12.25%，是 2020 年 3 月以来最大的单日跌幅，第二天日本、韩国股市跟着大跌。市场上流行三种说法，AI 泡沫彻底破了，美国人集体反对 AI，选举前后资金砸坑、跌完还会涨回去，三种都没说到点上。跌得最深的是数据中心、芯片和供电散热这些重资产，做模型和应用的公司只跌了几个点。真正的毛病在钱的来路，算力基建拿长期合同做抵押，走表外融资层层加杠杆，跟当年的次贷是同一个配方。短期也许有反弹，现在全力杀进去要小心，活下来比赚快钱要紧。",
-      "status": "curated",
-      "degree": 8
-    },
-    {
       "id": "live:LIVE054",
       "key": "LIVE054",
       "label": "LIVE054",
@@ -3656,6 +3678,17 @@
       "degree": 7
     },
     {
+      "id": "theme:cash-optionality-and-liquidity-anxiety",
+      "key": "cash-optionality-and-liquidity-anxiety",
+      "label": "现金为王与流动性焦虑",
+      "fullLabel": "现金为王与流动性焦虑",
+      "type": "theme",
+      "route": "themes/cash-optionality-and-liquidity-anxiety",
+      "summary": "波动大、信任低的时候，手里随时能用的现金比账面资产更能给人安全。",
+      "status": null,
+      "degree": 7
+    },
+    {
       "id": "concept:new-media-politician",
       "key": "new-media-politician",
       "label": "新媒体政治人物",
@@ -3663,6 +3696,17 @@
       "type": "concept",
       "route": "concepts/new-media-politician",
       "summary": "靠新媒体直接连接受众、绕过传统组织和选举路径崛起的新型权力人物。",
+      "status": null,
+      "degree": 7
+    },
+    {
+      "id": "model:primary-market-logic",
+      "key": "primary-market-logic",
+      "label": "一级市场逻辑投二级市场",
+      "fullLabel": "一级市场逻辑投二级市场",
+      "type": "model",
+      "route": "models/primary-market-logic",
+      "summary": "用一级市场的办法投二级市场，靠的是别人没有的信息、资源和对企业命脉的掌握，确定性够高才重仓。",
       "status": null,
       "degree": 7
     },
@@ -3718,6 +3762,17 @@
       "type": "concept",
       "route": "concepts/capital-wall",
       "summary": "用监管在资金、技术和人员出境的路上立起一道墙。资产跟中国有联系的人得选边，要么留下受管，要么走了别回来。",
+      "status": null,
+      "degree": 7
+    },
+    {
+      "id": "concept:money-time-price",
+      "key": "money-time-price",
+      "label": "资金的时间价格",
+      "fullLabel": "资金的时间价格",
+      "type": "concept",
+      "route": "concepts/money-time-price",
+      "summary": "钱的价值不只由数量决定，更由期限、还款压力和附带条件决定。",
       "status": null,
       "degree": 7
     },
@@ -4008,6 +4063,17 @@
       "degree": 7
     },
     {
+      "id": "episode:EP236",
+      "key": "EP236",
+      "label": "EP236",
+      "fullLabel": "EP236 · 人民币大升值！是什么原因？背后有什么逻辑？对普通人有什么影响？",
+      "type": "episode",
+      "route": "episodes/EP236",
+      "summary": "今年以来人民币对美元累计涨了 4.5% 以上，一度创下近三年新高。按课本上的利率平价，这波行情说不通。中国十年期国债收益率 1.63%，美国还在 5% 以上，利差倒挂约 350 个基点，人民币本该承压贬值。企业扎堆结汇是升值预期的产物，算不上源头。国内要靠低利率化债，利率加不上去，钱就有往外跑吃利息的动力，剩下的办法是让人民币每年稳步升值，正好抵掉利差。聪明钱看懂方向后从离岸市场抢跑，涨得比计划快，央行反过来给升值降温。对普通人来说，追涨杀跌是最大的误区。",
+      "status": "curated",
+      "degree": 7
+    },
+    {
       "id": "episode:EP239",
       "key": "EP239",
       "label": "EP239",
@@ -4217,6 +4283,17 @@
       "degree": 6
     },
     {
+      "id": "concept:investment-timing-gap",
+      "key": "investment-timing-gap",
+      "label": "投入兑现时间差",
+      "fullLabel": "投入兑现时间差",
+      "type": "concept",
+      "route": "concepts/investment-timing-gap",
+      "summary": "资本和基础设施先投入，真实应用价值后兑现，中间的时间差会制造估值、现金流和耐心风险。",
+      "status": null,
+      "degree": 6
+    },
+    {
       "id": "concept:crisis-power-reallocation",
       "key": "crisis-power-reallocation",
       "label": "危机中的权力重排",
@@ -4235,17 +4312,6 @@
       "type": "person",
       "route": "people/vivian-balakrishnan",
       "summary": "维文是新加坡外交部长，2015 年起任职，眼科医生出身，父亲是印度泰米尔人，母亲是福建福清籍华人。节目先拿他讲小国守海峡规则，再拿他讲穿梭外交，最后用他驳斥只有华人才厉害的种族叙事。",
-      "status": null,
-      "degree": 6
-    },
-    {
-      "id": "theme:cash-optionality-and-liquidity-anxiety",
-      "key": "cash-optionality-and-liquidity-anxiety",
-      "label": "现金为王与流动性焦虑",
-      "fullLabel": "现金为王与流动性焦虑",
-      "type": "theme",
-      "route": "themes/cash-optionality-and-liquidity-anxiety",
-      "summary": "波动大、信任低的时候，手里随时能用的现金比账面资产更能给人安全。",
       "status": null,
       "degree": 6
     },
@@ -4283,17 +4349,6 @@
       "degree": 6
     },
     {
-      "id": "model:primary-market-logic",
-      "key": "primary-market-logic",
-      "label": "一级市场逻辑投二级市场",
-      "fullLabel": "一级市场逻辑投二级市场",
-      "type": "model",
-      "route": "models/primary-market-logic",
-      "summary": "用一级市场的办法投二级市场，靠的是别人没有的信息、资源和对企业命脉的掌握，确定性够高才重仓。",
-      "status": null,
-      "degree": 6
-    },
-    {
       "id": "concept:wartime-oil-stockpiling",
       "key": "wartime-oil-stockpiling",
       "label": "战备储油",
@@ -4312,17 +4367,6 @@
       "type": "person",
       "route": "people/zhang-xuefeng",
       "summary": "张雪峰本名张子彪，考研辅导老师出身，靠分析报考院校和专业走红，2026 年 3 月在苏州猝死；节目先后讲他被封、复播改口、劝人求稳和目的论式的高考观。",
-      "status": null,
-      "degree": 6
-    },
-    {
-      "id": "concept:money-time-price",
-      "key": "money-time-price",
-      "label": "资金的时间价格",
-      "fullLabel": "资金的时间价格",
-      "type": "concept",
-      "route": "concepts/money-time-price",
-      "summary": "钱的价值不只由数量决定，更由期限、还款压力和附带条件决定。",
       "status": null,
       "degree": 6
     },
@@ -4536,17 +4580,6 @@
       "degree": 6
     },
     {
-      "id": "episode:EP236",
-      "key": "EP236",
-      "label": "EP236",
-      "fullLabel": "EP236 · 人民币大升值！是什么原因？背后有什么逻辑？对普通人有什么影响？",
-      "type": "episode",
-      "route": "episodes/EP236",
-      "summary": "今年以来人民币对美元累计涨了 4.5% 以上，一度创下近三年新高。按课本上的利率平价，这波行情说不通。中国十年期国债收益率 1.63%，美国还在 5% 以上，利差倒挂约 350 个基点，人民币本该承压贬值。企业扎堆结汇是升值预期的产物，算不上源头。国内要靠低利率化债，利率加不上去，钱就有往外跑吃利息的动力，剩下的办法是让人民币每年稳步升值，正好抵掉利差。聪明钱看懂方向后从离岸市场抢跑，涨得比计划快，央行反过来给升值降温。对普通人来说，追涨杀跌是最大的误区。",
-      "status": "curated",
-      "degree": 6
-    },
-    {
       "id": "model:bounded-social-experiment",
       "key": "bounded-social-experiment",
       "label": "边界化社会试验",
@@ -4734,6 +4767,17 @@
       "degree": 5
     },
     {
+      "id": "theme:evaluation-and-moral-capital",
+      "key": "evaluation-and-moral-capital",
+      "label": "人物评价与道德资本",
+      "fullLabel": "人物评价与道德资本",
+      "type": "theme",
+      "route": "themes/evaluation-and-moral-capital",
+      "summary": "李亚鹏生意屡败却撑住了一家唇腭裂医院，刘欢去世后被翻出一首旧歌挨骂，两期都在问一个人该怎样被评价。",
+      "status": null,
+      "degree": 5
+    },
+    {
       "id": "concept:identity-premium",
       "key": "identity-premium",
       "label": "身份溢价",
@@ -4752,17 +4796,6 @@
       "type": "concept",
       "route": "concepts/homogeneous-competition",
       "summary": "几家方向重叠的主体挤在同一块地方、同一个市场，抢同一批客户和资源。拼到最后拼的是价格和谁背后有人撑腰，质量好的一方不一定赢。",
-      "status": null,
-      "degree": 5
-    },
-    {
-      "id": "concept:investment-timing-gap",
-      "key": "investment-timing-gap",
-      "label": "投入兑现时间差",
-      "fullLabel": "投入兑现时间差",
-      "type": "concept",
-      "route": "concepts/investment-timing-gap",
-      "summary": "资本和基础设施先投入，真实应用价值后兑现，中间的时间差会制造估值、现金流和耐心风险。",
       "status": null,
       "degree": 5
     },
@@ -5416,6 +5449,17 @@
       "degree": 4
     },
     {
+      "id": "theme:youth-withdrawal-and-lying-flat",
+      "key": "youth-withdrawal-and-lying-flat",
+      "label": "年轻人退出与躺平",
+      "fullLabel": "年轻人退出与躺平",
+      "type": "theme",
+      "route": "themes/youth-withdrawal-and-lying-flat",
+      "summary": "劳动回报和上升通道收窄之后，年轻人用躺平、敷衍和退出主流赛道来保住自己。",
+      "status": null,
+      "degree": 4
+    },
+    {
       "id": "model:platform-gatekeeping",
       "key": "platform-gatekeeping",
       "label": "平台守门结构",
@@ -5467,17 +5511,6 @@
       "type": "concept",
       "route": "concepts/talent-siphon",
       "summary": "一国靠高工资和开放机会，常年吸走邻国被制度排斥的中产人才。培养的钱母国出，产值记在邻国账上。",
-      "status": null,
-      "degree": 4
-    },
-    {
-      "id": "theme:evaluation-and-moral-capital",
-      "key": "evaluation-and-moral-capital",
-      "label": "人物评价与道德资本",
-      "fullLabel": "人物评价与道德资本",
-      "type": "theme",
-      "route": "themes/evaluation-and-moral-capital",
-      "summary": "李亚鹏生意屡败却撑住了一家唇腭裂医院，刘欢去世后被翻出一首旧歌挨骂，两期都在问一个人该怎样被评价。",
       "status": null,
       "degree": 4
     },
@@ -6153,17 +6186,6 @@
       "degree": 3
     },
     {
-      "id": "theme:youth-withdrawal-and-lying-flat",
-      "key": "youth-withdrawal-and-lying-flat",
-      "label": "年轻人退出与躺平",
-      "fullLabel": "年轻人退出与躺平",
-      "type": "theme",
-      "route": "themes/youth-withdrawal-and-lying-flat",
-      "summary": "劳动回报和上升通道收窄之后，年轻人用躺平、敷衍和退出主流赛道来保住自己。",
-      "status": null,
-      "degree": 3
-    },
-    {
       "id": "person:pan-shiyi",
       "key": "pan-shiyi",
       "label": "潘石屹",
@@ -6633,6 +6655,17 @@
       "type": "concept",
       "route": "concepts/one-sided-market",
       "summary": "缺了反向下注的力量，价格只能朝一个方向走，涨到哪里没有任何东西拦得住。",
+      "status": null,
+      "degree": 2
+    },
+    {
+      "id": "concept:collateral-spiral",
+      "key": "collateral-spiral",
+      "label": "抵押物踩踏",
+      "fullLabel": "抵押物踩踏",
+      "type": "concept",
+      "route": "concepts/collateral-spiral",
+      "summary": "借款拿资产作抵押，资产一跌价，银行要求补担保，借款人只能贱卖资产，价格被压得更低，下跌自己给自己加速。",
       "status": null,
       "degree": 2
     },
@@ -7242,6 +7275,17 @@
       "degree": 2
     },
     {
+      "id": "concept:malevolence-self-fulfilling",
+      "key": "malevolence-self-fulfilling",
+      "label": "性恶预设的自我实现",
+      "fullLabel": "性恶预设的自我实现",
+      "type": "concept",
+      "route": "concepts/malevolence-self-fulfilling",
+      "summary": "当一个社会集体假定人性本恶并据此层层设防，这种防备本身会催生出它所恐惧的不信任，把假设变成现实。",
+      "status": null,
+      "degree": 2
+    },
+    {
       "id": "concept:false-premise-rigor",
       "key": "false-premise-rigor",
       "label": "虚假前提的严谨偏差",
@@ -7590,17 +7634,6 @@
       "type": "concept",
       "route": "concepts/proxy-sponsor-shift",
       "summary": "代理人战争中真正出钱撑盘的后台换了人，所有旁观者原本的获利位置和敌我关系随之被迫重写。",
-      "status": null,
-      "degree": 1
-    },
-    {
-      "id": "concept:collateral-spiral",
-      "key": "collateral-spiral",
-      "label": "抵押物踩踏",
-      "fullLabel": "抵押物踩踏",
-      "type": "concept",
-      "route": "concepts/collateral-spiral",
-      "summary": "借款拿资产作抵押，资产一跌价，银行要求补担保，借款人只能贱卖资产，价格被压得更低，下跌自己给自己加速。",
       "status": null,
       "degree": 1
     },
@@ -8514,17 +8547,6 @@
       "type": "concept",
       "route": "concepts/happiness-pleasure-distinction",
       "summary": "快乐是一时的开心，幸福是对整段人生的满意，两者经常不同步。",
-      "status": null,
-      "degree": 1
-    },
-    {
-      "id": "concept:malevolence-self-fulfilling",
-      "key": "malevolence-self-fulfilling",
-      "label": "性恶预设的自我实现",
-      "fullLabel": "性恶预设的自我实现",
-      "type": "concept",
-      "route": "concepts/malevolence-self-fulfilling",
-      "summary": "当一个社会集体假定人性本恶并据此层层设防，这种防备本身会催生出它所恐惧的不信任，把假设变成现实。",
       "status": null,
       "degree": 1
     },
@@ -24353,6 +24375,161 @@
     {
       "source": "live:LIVE059",
       "target": "theme:trust-and-asset-preservation",
+      "kind": "live-theme"
+    },
+    {
+      "source": "live:LIVE060",
+      "target": "episode:EP240",
+      "kind": "live-episode"
+    },
+    {
+      "source": "live:LIVE060",
+      "target": "episode:EP237",
+      "kind": "live-episode"
+    },
+    {
+      "source": "live:LIVE060",
+      "target": "episode:EP238",
+      "kind": "live-episode"
+    },
+    {
+      "source": "live:LIVE060",
+      "target": "episode:EP229",
+      "kind": "live-episode"
+    },
+    {
+      "source": "live:LIVE060",
+      "target": "concept:collateral-spiral",
+      "kind": "live-concept"
+    },
+    {
+      "source": "live:LIVE060",
+      "target": "concept:investment-timing-gap",
+      "kind": "live-concept"
+    },
+    {
+      "source": "live:LIVE060",
+      "target": "concept:money-time-price",
+      "kind": "live-concept"
+    },
+    {
+      "source": "live:LIVE060",
+      "target": "concept:malevolence-self-fulfilling",
+      "kind": "live-concept"
+    },
+    {
+      "source": "live:LIVE060",
+      "target": "model:leverage-backfire",
+      "kind": "live-model"
+    },
+    {
+      "source": "live:LIVE060",
+      "target": "model:path-dependence",
+      "kind": "live-model"
+    },
+    {
+      "source": "live:LIVE060",
+      "target": "model:technology-wave-cycle",
+      "kind": "live-model"
+    },
+    {
+      "source": "live:LIVE060",
+      "target": "theme:ai-bubble-and-compute-demand",
+      "kind": "live-theme"
+    },
+    {
+      "source": "live:LIVE060",
+      "target": "theme:great-power-competition-and-strategic-time",
+      "kind": "live-theme"
+    },
+    {
+      "source": "live:LIVE060",
+      "target": "theme:founder-power-and-feedback",
+      "kind": "live-theme"
+    },
+    {
+      "source": "live:LIVE060",
+      "target": "theme:evaluation-and-moral-capital",
+      "kind": "live-theme"
+    },
+    {
+      "source": "live:LIVE060",
+      "target": "theme:cash-optionality-and-liquidity-anxiety",
+      "kind": "live-theme"
+    },
+    {
+      "source": "live:LIVE061",
+      "target": "episode:EP236",
+      "kind": "live-episode"
+    },
+    {
+      "source": "live:LIVE061",
+      "target": "episode:EP213",
+      "kind": "live-episode"
+    },
+    {
+      "source": "live:LIVE061",
+      "target": "episode:EP237",
+      "kind": "live-episode"
+    },
+    {
+      "source": "live:LIVE061",
+      "target": "episode:EP219",
+      "kind": "live-episode"
+    },
+    {
+      "source": "live:LIVE061",
+      "target": "concept:hidden-debt",
+      "kind": "live-concept"
+    },
+    {
+      "source": "live:LIVE061",
+      "target": "concept:cash-optionality",
+      "kind": "live-concept"
+    },
+    {
+      "source": "live:LIVE061",
+      "target": "concept:information-edge",
+      "kind": "live-concept"
+    },
+    {
+      "source": "live:LIVE061",
+      "target": "concept:price-war-trap",
+      "kind": "live-concept"
+    },
+    {
+      "source": "live:LIVE061",
+      "target": "concept:organizational-silence",
+      "kind": "live-concept"
+    },
+    {
+      "source": "live:LIVE061",
+      "target": "model:primary-market-logic",
+      "kind": "live-model"
+    },
+    {
+      "source": "live:LIVE061",
+      "target": "theme:local-fiscal-stress-and-hidden-debt",
+      "kind": "live-theme"
+    },
+    {
+      "source": "live:LIVE061",
+      "target": "theme:narrative-speculation-and-retail-traps",
+      "kind": "live-theme"
+    },
+    {
+      "source": "live:LIVE061",
+      "target": "theme:time-horizon-and-foresight",
+      "kind": "live-theme"
+    },
+    {
+      "source": "live:LIVE061",
+      "target": "theme:youth-withdrawal-and-lying-flat",
+      "kind": "live-theme"
+    },
+    {
+      "source": "live:LIVE061",
+      "target": "theme:founder-power-and-feedback",
       "kind": "live-theme"
     },
     {
