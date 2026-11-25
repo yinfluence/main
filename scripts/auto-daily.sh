@@ -104,6 +104,39 @@ AS
 }
 log() { echo "$(date '+%H:%M:%S') $*" >> "$LOG"; }
 
+# 2026-11-25：唤起 claude 之前先确认代理链在跑。
+# 起因：Proxifier 从 11-21 11:33 停到 11-25 08:02，没人发现（proxifier-watch.sh 只会
+# display notification，后台发的通知被系统静默吞掉）。这期间 claude 直接从国内网络
+# 连 Anthropic，每次都是 HTTP 403「the network this request came from isn't allowed」，
+# EP242 自动整理连挂 3 次、consecutive_failures 累到 8。
+# 链路是 Proxifier → 本机 MonoProxy(127.0.0.1:8119) → 远端 SOCKS5，两个程序缺一个都不通。
+# 这里只在它们没运行时用 open -g 后台拉起，不重启、不改规则（重启 Proxifier 会断掉正在跑的 claude）。
+ensure_proxy_chain() {
+  local i
+  for i in 1 2 3 4 5 6 7 8 9 10 11 12; do
+    if pgrep -x Proxifier >/dev/null && nc -z -G 2 127.0.0.1 8119 2>/dev/null; then
+      [[ $i -gt 1 ]] && log "代理链已恢复（第 ${i} 次检查）"
+      return 0
+    fi
+    if [[ $i -eq 1 ]]; then
+      pgrep -x Proxifier >/dev/null || { log "Proxifier 没在运行，后台拉起"; open -g -a Proxifier 2>>"$LOG"; }
+      nc -z -G 2 127.0.0.1 8119 2>/dev/null || { log "MonoProxy(8119) 没在听，后台拉起"; open -g -a MonoProxyMac 2>>"$LOG"; }
+    fi
+    sleep 5
+  done
+  log "代理链 60 秒内没起来（Proxifier 或 MonoProxy 不在），这次不唤起 claude，免得白挨 403"
+  notify "颖响力网页 ⚠️" "代理链没起来，Proxifier 或 MonoProxy 不在运行" "Basso"
+  return 1
+}
+
+# claude 输出里出现地区拦截的 403，说明代理链没生效，单独记一行原因，别只写 code=1
+note_if_region_blocked() {
+  local BEFORE="$1"
+  if tail -n +$((BEFORE + 1)) "$LOG" | grep -q "HTTP 403.*isn't allowed"; then
+    log "失败原因：Anthropic 403 地区拦截，请求没走代理链。查 Proxifier 和 MonoProxy 是否在运行"
+  fi
+}
+
 # 全程锁：已经有实例在做（扫描循环中 / claude 整理中）就不再进来。
 # 锁里记 PID 和出生时间：以前是纯目录锁靠 trap 清理，claude 被 kill -9 或者
 # 休眠打断就会留下死锁，之后每一次 launchd 触发都被挡在门外，
@@ -285,6 +318,7 @@ scan_once() {
   case $CODE in
     0)
       log "发现新一期，唤起 claude 整理上线"
+      ensure_proxy_chain || return 20
       # 后台起 + watch_agent 看护，别裸调用。SUMMARY 只在本次输出里找：
       # grep 整个当天日志的话，同一天第二次整理失败会捡到上一次留下的 SUMMARY 而误判成功
       local BEFORE AGENT_PID ACODE
@@ -318,6 +352,7 @@ scan_once() {
       if [[ $ACODE -ne 124 ]]; then
         # 124 是 watch_agent 杀的，那条路已经记过状态了，别重复记
         log "整理未确认成功（claude code=${ACODE}，本次输出里没有 SUMMARY 标记）"
+        note_if_region_blocked "$BEFORE"
         notify "颖响力网页 ⚠️" "整理未完成（code=${ACODE}），准备重试" "Basso"
       fi
       return 20   # 交给调用方决定要不要重试。草稿还在盘上，重扫会重新拾起
@@ -343,6 +378,7 @@ scan_once() {
 # 返回 0=已上线，20=失败可重试
 curate_lives_once() {
   local IDS="$1" BEFORE AGENT_PID ACODE SUM
+  ensure_proxy_chain || return 20
   BEFORE=$(wc -l < "$LOG" 2>/dev/null || echo 0)
   claude -p "$(cat "$WEB/scripts/daily-live-prompt.md")" \
     --dangerously-skip-permissions >> "$LOG" 2>&1 &
@@ -354,6 +390,7 @@ curate_lives_once() {
   fi
   if [[ $ACODE -ne 0 ]] || ! tail -n +$((BEFORE + 1)) "$LOG" | grep -q "SUMMARY:"; then
     [[ $ACODE -ne 124 ]] && log "直播整理未确认成功（claude code=${ACODE}，本次输出里没有 SUMMARY）"
+    note_if_region_blocked "$BEFORE"
     return 20
   fi
   SUM=$(tail -n +$((BEFORE + 1)) "$LOG" | grep "SUMMARY:" | tail -1 | sed 's/^.*SUMMARY: *//')
