@@ -1,0 +1,73 @@
+{
+  "id": "andres-manuel-lopez-obrador",
+  "name": "洛佩斯",
+  "kind": "person",
+  "asOf": "2026-11-25",
+  "sources": [
+    {
+      "title": "Andrés Manuel López Obrador（Wikipedia）",
+      "url": "https://en.wikipedia.org/wiki/Andr%C3%A9s_Manuel_L%C3%B3pez_Obrador",
+      "note": "核 1953 年生于塔瓦斯科州、国家复兴运动党创始人、2018 年 12 月到 2024 年 9 月任墨西哥总统。"
+    },
+    {
+      "title": "Tajikistan Buys Presidential Plane From Mexico For $92 Million（RFE/RL）",
+      "url": "https://www.rferl.org/amp/tajikistan-buys-mexican-jet/32373692.html",
+      "note": "核 2023 年 4 月专机以约 9200 万美元卖给塔吉克斯坦。"
+    },
+    {
+      "title": "Mexico finally finds buyer for luxury presidential plane（SCMP）",
+      "url": "https://www.scmp.com/news/world/americas/article/3217951/mexico-finally-finds-buyer-luxury-presidential-plane-once-called-insult-people",
+      "note": "核专机 2012 年约 2.2 亿美元购入，卖机款用于建两所医院。"
+    }
+  ],
+  "summary": "洛佩斯是墨西哥前总统，2018 到 2024 年在任。节目讲他把总统专机定成奢靡的象征，卖掉后拿钱建了两所公立医院，给后来的政府定下高层出行能省则省的规矩。",
+  "description": "安德烈斯·曼努埃尔·洛佩斯·奥夫拉多尔（Andrés Manuel López Obrador）1953 年生于塔瓦斯科州，国家复兴运动党创始人，2018 年 12 月到 2024 年 9 月任墨西哥总统。墨西哥人常用他名字的缩写 AMLO 称呼他。他上台就拒用前任买的波音 787 总统专机，折腾几年后在 2023 年卖给塔吉克斯坦。",
+  "basicIntro": "1953 年 11 月出生在墨西哥东南部的塔瓦斯科州。2000 到 2005 年任墨西哥城市长，2006 年、2012 年两次竞选总统失败，2014 年创立国家复兴运动党，2018 年第三次参选当选总统。任期内主打反腐和政府紧缩，2024 年卸任，由同党的辛鲍姆接班。",
+  "programRole": "EP242 里他是辛鲍姆坐经济舱的源头。节目说他上任后把那架有总统套房和大理石浴室的专机定成旧政府奢靡的象征，坚决不用，挂牌卖掉，9200 万美元一分没乱花，全部拿去建医院。墨西哥政府高层出行能省则省、总统出访优先坐商业航班的规矩从这时立下。",
+  "programAssociations": [
+    {
+      "title": "卖专机建医院",
+      "episodes": [
+        "EP242"
+      ],
+      "note": "EP242 往前追了一任。专机是 2012 年买的，花了两亿多美元，跟美国空军一号差不多。他把它当成旧政府奢靡的标志，卖掉的钱建了两所大型公立医院。辛鲍姆接班后没推翻这套做法，执行得更彻底。"
+    }
+  ],
+  "styleNotes": [
+    "把政府紧缩做成看得见的姿态，专机就是他最出名的一件。",
+    "长期以反建制、反腐败的形象经营政治。",
+    "喜欢直接面对民众，在任时几乎每天开早间记者会。"
+  ],
+  "methodNotes": [
+    "拿前任留下的奢侈物件当靶子，用卖掉它来区分新旧两届政府。",
+    "把省下的钱指定用途，落到医院这种老百姓看得见的地方。",
+    "培养同党接班人，让路线延续到下一任。"
+  ],
+  "extensionNotes": [
+    {
+      "title": "辛鲍姆",
+      "note": "他的接班人，把卖专机以后的紧缩规矩接过来，坐经济舱出访。"
+    },
+    {
+      "title": "墨西哥",
+      "note": "他任内墨西哥政府定下高层出行能省则省的规矩。"
+    }
+  ],
+  "aliases": [
+    "AMLO",
+    "López Obrador",
+    "洛佩斯·奥夫拉多尔",
+    "奥夫拉多尔",
+    "洛佩斯斯"
+  ],
+  "relatedKeywords": [
+    "辛鲍姆",
+    "墨西哥"
+  ],
+  "episodes": [
+    {
+      "id": "EP242",
+      "note": "上任后把总统专机定成奢靡的象征，卖了 9200 万美元建两所公立医院，立下高层出行能省则省的规矩。"
+    }
+  ]
+}

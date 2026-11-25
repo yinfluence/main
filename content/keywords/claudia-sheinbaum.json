@@ -1,0 +1,77 @@
+{
+  "id": "claudia-sheinbaum",
+  "name": "辛鲍姆",
+  "kind": "person",
+  "asOf": "2026-11-25",
+  "sources": [
+    {
+      "title": "Claudia Sheinbaum（Wikipedia）",
+      "url": "https://en.wikipedia.org/wiki/Claudia_Sheinbaum",
+      "note": "核 1962 年生于墨西哥城、能源工程博士、2018 到 2023 年任墨西哥城市长、2024 年 10 月 1 日就任总统、墨西哥第一位女总统。"
+    },
+    {
+      "title": "Sheinbaum lands in Shenzhen on a commercial flight（Mexico News Daily）",
+      "url": "https://mexiconewsdaily.com/news/apec-summit-sheinbaum-meets-mexicans-china/",
+      "note": "核 2026 年 11 月坐商业航班到深圳开 APEC。"
+    },
+    {
+      "title": "Sheinbaum leaves Shenzhen after a blitz of bilateral meetings at APEC（Mexico News Daily）",
+      "url": "https://mexiconewsdaily.com/politics/sheinbaum-leaves-china-apec-bilateral-meetings/",
+      "note": "核在深圳跟中国、加拿大、越南、美国等方举行双边会谈。"
+    }
+  ],
+  "summary": "辛鲍姆是墨西哥第一位女总统，2024 年 10 月就任，任期六年。节目拿她坐经济舱来深圳开 APEC，讲中等国家领导人怎样不要面子、在大国之间争实利。",
+  "description": "克劳迪娅·辛鲍姆（Claudia Sheinbaum）1962 年生于墨西哥城，能源工程博士出身，做过墨西哥城市长。她属于国家复兴运动党，是前任总统洛佩斯一手带出来的接班人，2024 年 10 月 1 日就任总统。墨西哥是总统制，没有总理，总统既是国家元首也是政府首脑。2026 年 11 月她坐南航商业航班到深圳出席 APEC 领导人会议。",
+  "basicIntro": "1962 年 6 月出生在墨西哥城，在墨西哥国立自治大学读到能源工程博士，长期做能源和环境研究。2000 年起在洛佩斯任墨西哥城市长时当环境部长，2018 到 2023 年自己当选墨西哥城市长。2024 年 6 月赢得总统选举，10 月 1 日就职，任期到 2030 年，是墨西哥第一位女总统。",
+  "programRole": "EP242 把她当成 APEC 上最特别的领导人。别人都坐专机，她坐南航经济舱中间的座位，二十多个小时经停蒂华纳到深圳。节目说这是延续前任卖专机的规矩，接着讲她在深圳姿态放低，同时跟中美两边谈投资和产能。",
+  "programAssociations": [
+    {
+      "title": "坐经济舱来开 APEC",
+      "episodes": [
+        "EP242"
+      ],
+      "note": "EP242 整期讲她。坐商业航班是从洛佩斯卖专机延续下来的规矩，她执行得更彻底。落地后接待没降格，她跟中国谈产能合作和投资，又排了跟美国的会，几场会谈都冲着具体问题去。节目的结论是她要的是真金白银，面子和嘴上的输赢都不要。"
+    }
+  ],
+  "styleNotes": [
+    "出行和排场上刻意从简，坐商业航班出访是她的常规做法。",
+    "对外姿态放得低，不在合影和表态上争位置。",
+    "接班后没有推翻前任的做法，延续洛佩斯的路线。"
+  ],
+  "methodNotes": [
+    "一边对没有自贸协定的国家加关税保本土产业，一边去这些国家找投资。",
+    "在中美之间两边谈，各自谈产能、投资和贸易安排。",
+    "把政府紧缩从总统自己做起，用看得见的待遇变化给国民交代。"
+  ],
+  "extensionNotes": [
+    {
+      "title": "洛佩斯",
+      "note": "她的前任和政治导师，卖掉总统专机、定下高层出行能省则省的规矩。"
+    },
+    {
+      "title": "墨西哥",
+      "note": "跟美国连着边境和贸易，又想要中国的投资，她的外交是在这两头之间找位置。"
+    },
+    {
+      "title": "APEC",
+      "note": "2026 年在深圳开会，她坐民航来出席。墨西哥被定为 2028 年的主办方。"
+    }
+  ],
+  "aliases": [
+    "Claudia Sheinbaum",
+    "克劳迪娅·辛鲍姆",
+    "谢因鲍姆",
+    "辛鲍姆总统"
+  ],
+  "relatedKeywords": [
+    "洛佩斯",
+    "墨西哥",
+    "APEC"
+  ],
+  "episodes": [
+    {
+      "id": "EP242",
+      "note": "坐南航经济舱中间座位飞二十多个小时到深圳开 APEC，在会上同时跟中美谈投资和产能。"
+    }
+  ]
+}

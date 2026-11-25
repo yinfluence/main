@@ -1,0 +1,73 @@
+{
+  "id": "mexico",
+  "name": "墨西哥",
+  "kind": "geography",
+  "asOf": "2026-11-25",
+  "sources": [
+    {
+      "title": "Mexico（Wikipedia）",
+      "url": "https://en.wikipedia.org/wiki/Mexico",
+      "note": "核总统制、联邦共和国、北部与美国接壤。"
+    },
+    {
+      "title": "Mexico's Congress approves tariff hikes on imports from China and others（AP，Star Tribune 转载）",
+      "url": "https://www.startribune.com/mexicos-congress-approves-tariff-hikes-on-imports-from-china-and-others/601543909",
+      "note": "核 2025 年 12 月国会通过加税，对没有自贸协定国家的 1400 多个税目征 5% 到 50% 的关税，2026 年 1 月起施行。"
+    },
+    {
+      "title": "Mexico to host APEC 2028（Latin Times）",
+      "url": "https://www.latintimes.com/mexico-host-apec-2028-first-time-26-years-sheinbaum-visits-china-601457",
+      "note": "核墨西哥获定为 2028 年 APEC 主办方。"
+    }
+  ],
+  "summary": "墨西哥是北美的联邦共和国，北边跟美国连着三千多公里边境，是美墨加协定成员。节目借它的总统坐经济舱开 APEC，看一个中等国家怎样在中美之间争实利。",
+  "description": "墨西哥是总统制国家，没有总理，总统既是国家元首也是政府首脑，任期六年不得连任。它的出口大头卖给美国，跟美国、加拿大同在美墨加协定里，2026 年这份协定要复审。2025 年 12 月墨西哥国会通过加税，对中国等没有自贸协定国家的汽车、零件、纺织品、钢铁等 1400 多个税目征收最高 50% 的关税，2026 年 1 月起施行。",
+  "nodeRole": "它站在美国市场和中国产能之间。美国要它把中国货挡在外面，本土产业要保护，它自己又需要中国的投资和工厂。加税和招商同时在做，是这个位置逼出来的。",
+  "programAssociations": [
+    {
+      "title": "总统坐经济舱、政府先紧自己",
+      "episodes": [
+        "EP242"
+      ],
+      "note": "EP242 讲墨西哥两任总统接力。洛佩斯卖掉总统专机建两所医院，辛鲍姆坐南航经济舱来深圳开 APEC。节目说墨西哥不是大国但也不穷，这么做是让国民看清政府打算踏实做事。它刚对中国商品加了税，辛鲍姆在深圳照样跟中国谈产能和投资，又排了跟美国的会。"
+    }
+  ],
+  "impactNotes": [
+    "对中国商品加税，一面是保护本土汽车、纺织和钢铁企业，一面是赶在美墨加协定复审前向美国表态。",
+    "总统出访坐商业航班成了政府规矩，紧缩从最高层做起。"
+  ],
+  "signalNotes": [
+    "墨西哥一边加关税、一边去中国招商时，它多半是在美国的要求和本国产业需要之间找平衡，不能只看成跟哪边翻脸。",
+    "讲到美墨加协定复审，墨西哥对中国的动作常常是做给美国看的，这条线要和关税一起读。",
+    "墨西哥领导人在外交场合刻意从简，读的时候要连着国内的紧缩政策看，单看一次出行容易当成作秀。"
+  ],
+  "extensionNotes": [
+    {
+      "title": "辛鲍姆",
+      "note": "现任总统，坐经济舱来深圳开 APEC，同时跟中美谈投资和产能。"
+    },
+    {
+      "title": "洛佩斯",
+      "note": "前任总统，卖掉专机建医院，立下高层出行从简的规矩。"
+    },
+    {
+      "title": "APEC",
+      "note": "墨西哥被定为 2028 年主办方，到时候换它当东道主。"
+    }
+  ],
+  "aliases": [
+    "Mexico",
+    "墨西哥合众国"
+  ],
+  "relatedKeywords": [
+    "辛鲍姆",
+    "洛佩斯",
+    "APEC"
+  ],
+  "episodes": [
+    {
+      "id": "EP242",
+      "note": "两任总统卖专机、坐经济舱，政府先紧自己。刚对中国商品加税，又在 APEC 上同时跟中美谈投资和产能。"
+    }
+  ]
+}

@@ -1,0 +1,73 @@
+{
+  "id": "apec",
+  "name": "APEC",
+  "kind": "organization",
+  "asOf": "2026-11-25",
+  "sources": [
+    {
+      "title": "Asia-Pacific Economic Cooperation（Wikipedia）",
+      "url": "https://en.wikipedia.org/wiki/Asia-Pacific_Economic_Cooperation",
+      "note": "核 1989 年在堪培拉成立、现有 21 个成员经济体、按共识议事、决定不具约束力。"
+    },
+    {
+      "title": "Sheinbaum leaves Shenzhen after a blitz of bilateral meetings at APEC（Mexico News Daily）",
+      "url": "https://mexiconewsdaily.com/politics/sheinbaum-leaves-china-apec-bilateral-meetings/",
+      "note": "核 2026 年领导人会议在深圳举行，各国领导人在会期密集举行双边会谈。"
+    },
+    {
+      "title": "Mexico to host APEC 2028（Latin Times）",
+      "url": "https://www.latintimes.com/mexico-host-apec-2028-first-time-26-years-sheinbaum-visits-china-601457",
+      "note": "核墨西哥获定为 2028 年主办方。"
+    }
+  ],
+  "summary": "APEC 是亚太经济合作组织，21 个成员经济体每年开一次领导人会议。2026 年会议在深圳举行，节目盯的是墨西哥总统怎么坐民航来、怎么在会上谈实利。",
+  "description": "亚太经济合作组织（Asia-Pacific Economic Cooperation）1989 年在澳大利亚堪培拉成立，成员统称经济体，现有 21 个，中国香港和中国台北也以经济体身份参加。它按共识议事，达成的意向不具法律约束力。每年轮流主办领导人非正式会议，2026 年由中国在深圳主办，墨西哥被定为 2028 年主办方。",
+  "positionNotes": [
+    "它不签有约束力的条约，领导人会议的分量更多在会期的双边会谈上，各国领导人借这个场合单独谈贸易和投资。",
+    "主办方要接待二十多位领导人，礼宾规格对谁都一样，是东道主展示分寸的场合。"
+  ],
+  "exposureNotes": [
+    "大国在场时，外界目光都在大国合影和大单上，中等国家的实际收获容易被忽略。",
+    "共识议事意味着它很难推动具体规则，真正的交换多发生在会外。"
+  ],
+  "programAssociations": [
+    {
+      "title": "深圳 APEC 上最特别的领导人",
+      "episodes": [
+        "EP242"
+      ],
+      "note": "EP242 开场说很多人看三个大国怎么谈、合影谁站中间、签了什么单。节目看的是墨西哥总统辛鲍姆，她坐南航经济舱来，落地接待没降格，会上低调地跟中美各谈各的。节目还把三个大国开会比作雅尔塔，留给观众自己判断。"
+    }
+  ],
+  "signalNotes": [
+    "APEC 期间看到中等国家领导人密集排双边会谈，读的是它们借这个场合在大国之间各取所需，不要只看大会的共同宣言。",
+    "东道主对各国领导人的接机和仪仗规格，是看它怎么处理跟有摩擦国家关系的一个窗口。",
+    "合影站位、谁跟谁握手这些画面热度最高，信息量往往最低，看结果要回到会后的投资和贸易安排。"
+  ],
+  "extensionNotes": [
+    {
+      "title": "辛鲍姆",
+      "note": "2026 年深圳会议上坐民航来的墨西哥总统。"
+    },
+    {
+      "title": "墨西哥",
+      "note": "2028 年主办方，到时候轮到它当东道主。"
+    }
+  ],
+  "aliases": [
+    "亚太经合组织",
+    "亚太经济合作组织",
+    "APEC 领导人非正式会议",
+    "派克"
+  ],
+  "relatedKeywords": [
+    "墨西哥",
+    "辛鲍姆"
+  ],
+  "episodes": [
+    {
+      "id": "EP242",
+      "note": "2026 年深圳 APEC，节目把目光放在墨西哥总统身上，她坐民航来，低调地跟中美两边谈投资。"
+    }
+  ]
+}

@@ -2,14 +2,14 @@
   "meta": {
     "title": "颖响力知识图谱",
     "subtitle": "节目、概念、模型、人物、主题之间的可视化连接网络",
-    "nodeCount": 806,
-    "linkCount": 3134,
+    "nodeCount": 809,
+    "linkCount": 3139,
     "typeCounts": {
       "model": 85,
-      "concept": 262,
+      "concept": 264,
       "live": 61,
       "theme": 92,
-      "episode": 241,
+      "episode": 242,
       "person": 65
     }
   },
@@ -1511,6 +1511,17 @@
       "degree": 13
     },
     {
+      "id": "model:small-state-balancing-model",
+      "key": "small-state-balancing-model",
+      "label": "小国平衡术",
+      "fullLabel": "小国平衡术",
+      "type": "model",
+      "route": "models/small-state-balancing-model",
+      "summary": "小国在大国之间保住生存空间，靠的是位置、内部合法性和实际利益，表态排在后面。",
+      "status": null,
+      "degree": 13
+    },
+    {
       "id": "theme:film-industry-and-traffic-logic",
       "key": "film-industry-and-traffic-logic",
       "label": "影视工业与流量逻辑",
@@ -1694,17 +1705,6 @@
       "type": "theme",
       "route": "themes/human-value-and-state-credit",
       "summary": "讨论国家究竟把个体视为成本、工具，还是视为必须兑现承诺的对象。",
-      "status": null,
-      "degree": 12
-    },
-    {
-      "id": "model:small-state-balancing-model",
-      "key": "small-state-balancing-model",
-      "label": "小国平衡术",
-      "fullLabel": "小国平衡术",
-      "type": "model",
-      "route": "models/small-state-balancing-model",
-      "summary": "小国在大国之间保住生存空间，靠的是位置、内部合法性和实际利益，表态排在后面。",
       "status": null,
       "degree": 12
     },
@@ -2512,6 +2512,17 @@
       "degree": 9
     },
     {
+      "id": "theme:small-state-balancing",
+      "key": "small-state-balancing",
+      "label": "小国平衡与地缘生存",
+      "fullLabel": "小国平衡与地缘生存",
+      "type": "theme",
+      "route": "themes/small-state-balancing",
+      "summary": "新加坡这类小国怎样在大国竞争里守住安全、合法性和现实利益。",
+      "status": null,
+      "degree": 9
+    },
+    {
       "id": "concept:information-edge",
       "key": "information-edge",
       "label": "信息优势",
@@ -2985,13 +2996,13 @@
       "degree": 8
     },
     {
-      "id": "theme:small-state-balancing",
-      "key": "small-state-balancing",
-      "label": "小国平衡与地缘生存",
-      "fullLabel": "小国平衡与地缘生存",
-      "type": "theme",
-      "route": "themes/small-state-balancing",
-      "summary": "新加坡这类小国怎样在大国竞争里守住安全、合法性和现实利益。",
+      "id": "concept:pragmatic-legitimacy",
+      "key": "pragmatic-legitimacy",
+      "label": "务实合法性",
+      "fullLabel": "务实合法性",
+      "type": "concept",
+      "route": "concepts/pragmatic-legitimacy",
+      "summary": "一个政权让人认，靠的是普通人的日子看得见地变好，收入、住房、护照和安全都算在里面。",
       "status": null,
       "degree": 8
     },
@@ -3663,17 +3674,6 @@
       "type": "theme",
       "route": "themes/authoritarian-succession-and-state-fragility",
       "summary": "强人或神权体制在换人的时候，平时压住的合法性、宗教权威和族群矛盾会一起翻出来。",
-      "status": null,
-      "degree": 7
-    },
-    {
-      "id": "concept:pragmatic-legitimacy",
-      "key": "pragmatic-legitimacy",
-      "label": "务实合法性",
-      "fullLabel": "务实合法性",
-      "type": "concept",
-      "route": "concepts/pragmatic-legitimacy",
-      "summary": "一个政权让人认，靠的是普通人的日子看得见地变好，收入、住房、护照和安全都算在里面。",
       "status": null,
       "degree": 7
     },
@@ -5148,6 +5148,17 @@
       "type": "episode",
       "route": "episodes/EP214",
       "summary": "耐克被移出标普100，结束了近 18 年的成分股身份，五年里市值跌掉近八成。lululemon 又一次下调全年营收预期，股价单日跌近两成，北美同店销售下滑 12%。常见的解释是产品创新不足、营销和管理失误，可两家一起下滑，背后还有两层原因。一层是品牌绑定的那一代人老了，下一代把上一代的身份勋章看成妈妈牌。另一层是全球中产在收缩，中高端运动服饰属于可选消费，日子一紧最先被砍。市场往两头挤，靠标榜中产身份吃溢价的品牌会一步步失去土壤。",
+      "status": "curated",
+      "degree": 5
+    },
+    {
+      "id": "episode:EP242",
+      "key": "EP242",
+      "label": "EP242",
+      "fullLabel": "EP242 · APEC最特别领导人，卖掉专机建医院，务实远比面子重要。",
+      "type": "episode",
+      "route": "episodes/EP242",
+      "summary": "APEC 在深圳开会，多数人盯着三个大国的合影和签了什么大单。颖响力看的是墨西哥总统辛鲍姆。她坐南航 CZ8032 来深圳，中途经停蒂华纳，二十多个小时坐在经济舱中间的座位上。这套规矩从前任洛佩斯开始。他把两亿多美元买来的总统专机定成旧政府奢靡的象征，挂牌几年卖了 9200 万美元，钱拿去建了两所公立医院。辛鲍姆接着照做，做得更彻底。墨西哥刚对中国商品加了重税，深圳的接待照样一点没降格。她在会上同时跟中美两边谈投资和产能，姿态放得很低，要的是给国民带回实打实的收益。",
       "status": "curated",
       "degree": 5
     },
@@ -8012,6 +8023,17 @@
       "degree": 1
     },
     {
+      "id": "concept:undiscounted-protocol",
+      "key": "undiscounted-protocol",
+      "label": "礼遇不打折",
+      "fullLabel": "礼遇不打折",
+      "type": "concept",
+      "route": "concepts/undiscounted-protocol",
+      "summary": "东道主对来客一律按官方标准接待，不因对方怎么来、两国关系好坏而降格。",
+      "status": null,
+      "degree": 1
+    },
+    {
       "id": "person:li-bin",
       "key": "li-bin",
       "label": "李斌",
@@ -8316,6 +8338,17 @@
       "type": "concept",
       "route": "concepts/retail-platform-risk",
       "summary": "散户买金银这类资产，亏损可能先出在交易场地上。平台不对冲、兑不出来或者直接消失，方向看对也拿不回钱。",
+      "status": null,
+      "degree": 1
+    },
+    {
+      "id": "concept:leader-first-austerity",
+      "key": "leader-first-austerity",
+      "label": "上层先紧",
+      "fullLabel": "上层先紧",
+      "type": "concept",
+      "route": "concepts/leader-first-austerity",
+      "summary": "要过紧日子，先从最高层的待遇砍起，让老百姓亲眼看到紧缩不是只冲着他们来。",
       "status": null,
       "degree": 1
     },
@@ -17640,6 +17673,31 @@
     {
       "source": "episode:EP241",
       "target": "theme:narrative-speculation-and-retail-traps",
+      "kind": "episode-theme"
+    },
+    {
+      "source": "episode:EP242",
+      "target": "concept:leader-first-austerity",
+      "kind": "episode-concept"
+    },
+    {
+      "source": "episode:EP242",
+      "target": "concept:undiscounted-protocol",
+      "kind": "episode-concept"
+    },
+    {
+      "source": "episode:EP242",
+      "target": "concept:pragmatic-legitimacy",
+      "kind": "episode-concept"
+    },
+    {
+      "source": "episode:EP242",
+      "target": "model:small-state-balancing-model",
+      "kind": "episode-model"
+    },
+    {
+      "source": "episode:EP242",
+      "target": "theme:small-state-balancing",
       "kind": "episode-theme"
     },
     {
