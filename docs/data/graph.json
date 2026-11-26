@@ -2,12 +2,12 @@
   "meta": {
     "title": "颖响力知识图谱",
     "subtitle": "节目、概念、模型、人物、主题之间的可视化连接网络",
-    "nodeCount": 809,
-    "linkCount": 3139,
+    "nodeCount": 810,
+    "linkCount": 3154,
     "typeCounts": {
       "model": 85,
       "concept": 264,
-      "live": 61,
+      "live": 62,
       "theme": 92,
       "episode": 242,
       "person": 65
@@ -147,6 +147,17 @@
       "degree": 30
     },
     {
+      "id": "theme:narrative-speculation-and-retail-traps",
+      "key": "narrative-speculation-and-retail-traps",
+      "label": "投资叙事与散户陷阱",
+      "fullLabel": "投资叙事与散户陷阱",
+      "type": "theme",
+      "route": "themes/narrative-speculation-and-retail-traps",
+      "summary": "价格先靠故事推高，先进场的人在高点退出，普通人带着积蓄最后接手。",
+      "status": null,
+      "degree": 29
+    },
+    {
       "id": "live:LIVE003",
       "key": "LIVE003",
       "label": "LIVE003",
@@ -176,17 +187,6 @@
       "type": "theme",
       "route": "themes/great-power-competition-and-strategic-time",
       "summary": "大国之间拼武器，也拼谁更能熬、谁先把成本降下来、谁抓住了时间窗口。",
-      "status": null,
-      "degree": 28
-    },
-    {
-      "id": "theme:narrative-speculation-and-retail-traps",
-      "key": "narrative-speculation-and-retail-traps",
-      "label": "投资叙事与散户陷阱",
-      "fullLabel": "投资叙事与散户陷阱",
-      "type": "theme",
-      "route": "themes/narrative-speculation-and-retail-traps",
-      "summary": "价格先靠故事推高，先进场的人在高点退出，普通人带着积蓄最后接手。",
       "status": null,
       "degree": 28
     },
@@ -323,6 +323,17 @@
       "degree": 26
     },
     {
+      "id": "model:leverage-backfire",
+      "key": "leverage-backfire",
+      "label": "杠杆反噬",
+      "fullLabel": "杠杆反噬",
+      "type": "model",
+      "route": "models/leverage-backfire",
+      "summary": "杠杆反噬解释上行期放大利润的结构，如何在下行期放大亏损、现金流压力和清偿困难。",
+      "status": null,
+      "degree": 25
+    },
+    {
       "id": "concept:gray-oil-network",
       "key": "gray-oil-network",
       "label": "灰色石油网络",
@@ -387,17 +398,6 @@
       "summary": "巨额财产来源不明罪的门槛刚从三十万提到三百万，有人还没高兴完。",
       "status": "curated",
       "degree": 25
-    },
-    {
-      "id": "model:leverage-backfire",
-      "key": "leverage-backfire",
-      "label": "杠杆反噬",
-      "fullLabel": "杠杆反噬",
-      "type": "model",
-      "route": "models/leverage-backfire",
-      "summary": "杠杆反噬解释上行期放大利润的结构，如何在下行期放大亏损、现金流压力和清偿困难。",
-      "status": null,
-      "degree": 24
     },
     {
       "id": "theme:dollar-system-and-gray-trade",
@@ -686,6 +686,17 @@
       "degree": 21
     },
     {
+      "id": "theme:middle-class-descent-and-stratification",
+      "key": "middle-class-descent-and-stratification",
+      "label": "中产下坠与分层社会",
+      "fullLabel": "中产下坠与分层社会",
+      "type": "theme",
+      "route": "themes/middle-class-descent-and-stratification",
+      "summary": "当中间层缺乏缓冲带时，经济下行会迅速转成身份下坠、关系断裂和社会分层加固。",
+      "status": null,
+      "degree": 21
+    },
+    {
       "id": "episode:EP131",
       "key": "EP131",
       "label": "EP131",
@@ -708,6 +719,17 @@
       "degree": 21
     },
     {
+      "id": "theme:real-estate-deleveraging",
+      "key": "real-estate-deleveraging",
+      "label": "房地产去杠杆与风险出清",
+      "fullLabel": "房地产去杠杆与风险出清",
+      "type": "theme",
+      "route": "themes/real-estate-deleveraging",
+      "summary": "讨论房地产在下行周期里如何通过断供、重组、展期和资产处置逐步暴露风险。",
+      "status": null,
+      "degree": 20
+    },
+    {
       "id": "model:path-dependence",
       "key": "path-dependence",
       "label": "路径依赖",
@@ -719,17 +741,6 @@
       "degree": 20
     },
     {
-      "id": "theme:middle-class-descent-and-stratification",
-      "key": "middle-class-descent-and-stratification",
-      "label": "中产下坠与分层社会",
-      "fullLabel": "中产下坠与分层社会",
-      "type": "theme",
-      "route": "themes/middle-class-descent-and-stratification",
-      "summary": "当中间层缺乏缓冲带时，经济下行会迅速转成身份下坠、关系断裂和社会分层加固。",
-      "status": null,
-      "degree": 20
-    },
-    {
       "id": "episode:EP138",
       "key": "EP138",
       "label": "EP138",
@@ -737,6 +748,17 @@
       "type": "episode",
       "route": "episodes/EP138",
       "summary": "五粮液这次把财务业绩大幅下调，让不少人惊掉下巴。前任负责人 2022 年上台，没干几年就被调查，后任把旧账都算在前任头上，给自己留下一个很低的起点。监管也在国资体系里，等于左手管右手。白酒经销商是一个随时能开关的利润蓄水池，要利润就让经销商提前打款，不要就收白条。同样的做法，民企要被追究抽逃资金，国企做了却是肉烂在锅里。A 股的惩戒也跟着失灵，股价跌几个点就过去。普通散户拿几万几十万本金，去跟能改规则的大企业和机构斗，最后都是被收割的命。",
+      "status": "curated",
+      "degree": 20
+    },
+    {
+      "id": "episode:EP158",
+      "key": "EP158",
+      "label": "EP158",
+      "fullLabel": "EP158 · 裁掉1000人涨100亿市值！这才是AI最可怕的地方。戳破科技向善的谎言！",
+      "type": "episode",
+      "route": "episodes/EP158",
+      "summary": "某蔬菜配送公司的前高管在台上分享经验。靠AI把销售额从几亿做到十几亿，员工从3800多人减到2000多人。他说这就是科技向善，为的是孩子将来能找到有价值的工作。\n\n多数企业的AI转型跟人工智能革命关系不大。通缩里用更少的人干更多的活，再贴上AI标签换估值，资本市场恰恰奖励消灭就业。这场以AI为名的大裁员，正在系统地消灭私营中产。外卖、网约车、快递这张最后的安全网，也被挤破了。个人该降杠杆、存够一年生活费，别全职去跑单。问题不是科技太快，是分配制度太落后。",
       "status": "curated",
       "degree": 20
     },
@@ -774,17 +796,6 @@
       "degree": 19
     },
     {
-      "id": "theme:real-estate-deleveraging",
-      "key": "real-estate-deleveraging",
-      "label": "房地产去杠杆与风险出清",
-      "fullLabel": "房地产去杠杆与风险出清",
-      "type": "theme",
-      "route": "themes/real-estate-deleveraging",
-      "summary": "讨论房地产在下行周期里如何通过断供、重组、展期和资产处置逐步暴露风险。",
-      "status": null,
-      "degree": 19
-    },
-    {
       "id": "episode:EP128",
       "key": "EP128",
       "label": "EP128",
@@ -814,17 +825,6 @@
       "type": "episode",
       "route": "episodes/EP157",
       "summary": "高考季里，接着张雪峰那期的分歧往下讲。不认同把高考只当成选专业、选工作、考公的目的论。按这套思路推到底，教育、高考和考公就是一场合法的文化洗钱。几百万的学区房、补习班和留学，把父母的财富和地位洗成孩子的文凭，再换回下一代的财富和阶层。这场游戏的规则是为富人定的。中产拿全部身家去和别人的零花钱比，越卷越容易输，真正划算的反而是投入很低的底层。与其跟着砸钱，不如换条赛道，从目的论转向决定论，先看孩子擅长什么，把家风留给他。",
-      "status": "curated",
-      "degree": 19
-    },
-    {
-      "id": "episode:EP158",
-      "key": "EP158",
-      "label": "EP158",
-      "fullLabel": "EP158 · 裁掉1000人涨100亿市值！这才是AI最可怕的地方。戳破科技向善的谎言！",
-      "type": "episode",
-      "route": "episodes/EP158",
-      "summary": "某蔬菜配送公司的前高管在台上分享经验。靠AI把销售额从几亿做到十几亿，员工从3800多人减到2000多人。他说这就是科技向善，为的是孩子将来能找到有价值的工作。\n\n多数企业的AI转型跟人工智能革命关系不大。通缩里用更少的人干更多的活，再贴上AI标签换估值，资本市场恰恰奖励消灭就业。这场以AI为名的大裁员，正在系统地消灭私营中产。外卖、网约车、快递这张最后的安全网，也被挤破了。个人该降杠杆、存够一年生活费，别全职去跑单。问题不是科技太快，是分配制度太落后。",
       "status": "curated",
       "degree": 19
     },
@@ -1005,6 +1005,17 @@
       "degree": 17
     },
     {
+      "id": "concept:middle-class-hard-landing",
+      "key": "middle-class-hard-landing",
+      "label": "中产硬着陆",
+      "fullLabel": "中产硬着陆",
+      "type": "concept",
+      "route": "concepts/middle-class-hard-landing",
+      "summary": "靠房子、工资和贷款撑着的中产一旦失速，资产、体面、家里的关系和自我认同一起往下掉。",
+      "status": null,
+      "degree": 17
+    },
+    {
       "id": "model:balance-sheet-maintenance",
       "key": "balance-sheet-maintenance",
       "label": "资产负债表维持",
@@ -1067,17 +1078,6 @@
       "type": "theme",
       "route": "themes/maritime-chokepoints-and-route-order",
       "summary": "讨论海峡、运河和关键航道如何把地理位置变成规则、保险、资本和军事的综合权力。",
-      "status": null,
-      "degree": 16
-    },
-    {
-      "id": "concept:middle-class-hard-landing",
-      "key": "middle-class-hard-landing",
-      "label": "中产硬着陆",
-      "fullLabel": "中产硬着陆",
-      "type": "concept",
-      "route": "concepts/middle-class-hard-landing",
-      "summary": "靠房子、工资和贷款撑着的中产一旦失速，资产、体面、家里的关系和自我认同一起往下掉。",
       "status": null,
       "degree": 16
     },
@@ -1269,6 +1269,17 @@
       "degree": 15
     },
     {
+      "id": "episode:EP200",
+      "key": "EP200",
+      "label": "EP200",
+      "fullLabel": "EP200 · 楼市新政再抄底？放弃买房的执念吧！这不是周期，是时代的结束",
+      "type": "episode",
+      "route": "episodes/EP200",
+      "summary": "北京又出楼市新政，五环以外全面放松，五环以内交满一年社保就能买。消息一出，江浙沪那边的朋友已经出手，北京的朋友说市场又要热闹起来了。同样的松绑上海广州深圳早就落地过，市场并没有热起来。这一轮真正被搅活的是地方政府手里的流动性，门槛降下来，是为了让新买家进场。撑起过去四十年普涨的那几个条件今天一个都不在。这是结构性的，塌下去不会自己长回来，八零后九零后这辈子都很难再等到普涨。最难的地方在心态，认定上涨是常态、下跌只是插曲，于是一次次上车。",
+      "status": "curated",
+      "degree": 15
+    },
+    {
       "id": "episode:EP205",
       "key": "EP205",
       "label": "EP205",
@@ -1302,6 +1313,17 @@
       "degree": 15
     },
     {
+      "id": "live:LIVE062",
+      "key": "LIVE062",
+      "label": "LIVE062",
+      "fullLabel": "LIVE062 · 月供拉到40年，攒下的钱全是借的！拆解中产家庭三大缺陷：死要面子、只算小账、还在等救市",
+      "type": "live",
+      "route": "lives/LIVE062",
+      "summary": "小区最低价降到二百九，他的挂牌价只跟着降到三百万。",
+      "status": "published",
+      "degree": 15
+    },
+    {
       "id": "theme:planned-systems-and-innovation",
       "key": "planned-systems-and-innovation",
       "label": "大计划体制与创新约束",
@@ -1320,6 +1342,17 @@
       "type": "theme",
       "route": "themes/institutional-middle-class-and-social-mobility",
       "summary": "中产的底盘从市场收入换成编制和财政供养，普通人往上走的路跟着变窄。",
+      "status": null,
+      "degree": 14
+    },
+    {
+      "id": "concept:cash-optionality",
+      "key": "cash-optionality",
+      "label": "现金选择权",
+      "fullLabel": "现金选择权",
+      "type": "concept",
+      "route": "concepts/cash-optionality",
+      "summary": "现金在高波动时期的核心价值，是保留等待、谈判、退出和重新进入的选择权。",
       "status": null,
       "degree": 14
     },
@@ -1445,17 +1478,6 @@
       "degree": 14
     },
     {
-      "id": "episode:EP200",
-      "key": "EP200",
-      "label": "EP200",
-      "fullLabel": "EP200 · 楼市新政再抄底？放弃买房的执念吧！这不是周期，是时代的结束",
-      "type": "episode",
-      "route": "episodes/EP200",
-      "summary": "北京又出楼市新政，五环以外全面放松，五环以内交满一年社保就能买。消息一出，江浙沪那边的朋友已经出手，北京的朋友说市场又要热闹起来了。同样的松绑上海广州深圳早就落地过，市场并没有热起来。这一轮真正被搅活的是地方政府手里的流动性，门槛降下来，是为了让新买家进场。撑起过去四十年普涨的那几个条件今天一个都不在。这是结构性的，塌下去不会自己长回来，八零后九零后这辈子都很难再等到普涨。最难的地方在心态，认定上涨是常态、下跌只是插曲，于是一次次上车。",
-      "status": "curated",
-      "degree": 14
-    },
-    {
       "id": "episode:EP204",
       "key": "EP204",
       "label": "EP204",
@@ -1496,17 +1518,6 @@
       "type": "concept",
       "route": "concepts/time-asymmetry",
       "summary": "冲突双方对时间的承受力不一样，决定长期胜负的常常是谁能把时间变成自己的朋友。",
-      "status": null,
-      "degree": 13
-    },
-    {
-      "id": "concept:cash-optionality",
-      "key": "cash-optionality",
-      "label": "现金选择权",
-      "fullLabel": "现金选择权",
-      "type": "concept",
-      "route": "concepts/cash-optionality",
-      "summary": "现金在高波动时期的核心价值，是保留等待、谈判、退出和重新进入的选择权。",
       "status": null,
       "degree": 13
     },
@@ -1606,6 +1617,17 @@
       "type": "episode",
       "route": "episodes/EP188",
       "summary": "新加坡单一家族办公室五年从400家涨到约2750家。它不是富豪的炒股团队，是解决代际传承死穴的制度工具。血缘筛选保证不了后代有能力，长子继承制只防住资产被分割，防不住财富在竞争里流失。解法是所有权与经营权彻底分割。家族握住所有权和收益权，投资、风控、信托、税务交给专业团队。老钱扎堆新加坡、瑞士，税收豁免只是推手，它们要的是脱离大国国运周期的中立法域。这与小国对干净长钱的需求双向奔赴。老钱和新钱的真正区别就在这儿，用制度对抗人性和周期。",
+      "status": "curated",
+      "degree": 13
+    },
+    {
+      "id": "episode:EP207",
+      "key": "EP207",
+      "label": "EP207",
+      "fullLabel": "EP207 · 40年房贷奥德赛式死局！一边漩涡一边牺牲，曾经的苏联选了哪条路？",
+      "type": "episode",
+      "route": "episodes/EP207",
+      "summary": "个人住房贷款最长年限从三十年放宽到四十年，房地产股应声就涨，各路解读都说月供大降。按一百万算，每月少还616块，总利息却从61.66万涨到85.95万，多付二十四万。利率和本金都没变，变的只有时间，这叫负债延期。银行一分钱没损失，扛不住月供的家庭被接住，坏账率稳了，还多收十年利息。这像奥德修斯过海峡，躲开漩涡就得让六头海怪叼走六个船员，被牺牲的是只能选四十年的年轻人。苏联勃列日涅夫那十八年也是这样拖过来的。定这个年限的人，不用还这笔贷款。",
       "status": "curated",
       "degree": 13
     },
@@ -1885,17 +1907,6 @@
       "degree": 12
     },
     {
-      "id": "episode:EP207",
-      "key": "EP207",
-      "label": "EP207",
-      "fullLabel": "EP207 · 40年房贷奥德赛式死局！一边漩涡一边牺牲，曾经的苏联选了哪条路？",
-      "type": "episode",
-      "route": "episodes/EP207",
-      "summary": "个人住房贷款最长年限从三十年放宽到四十年，房地产股应声就涨，各路解读都说月供大降。按一百万算，每月少还616块，总利息却从61.66万涨到85.95万，多付二十四万。利率和本金都没变，变的只有时间，这叫负债延期。银行一分钱没损失，扛不住月供的家庭被接住，坏账率稳了，还多收十年利息。这像奥德修斯过海峡，躲开漩涡就得让六头海怪叼走六个船员，被牺牲的是只能选四十年的年轻人。苏联勃列日涅夫那十八年也是这样拖过来的。定这个年限的人，不用还这笔贷款。",
-      "status": "curated",
-      "degree": 12
-    },
-    {
       "id": "episode:EP210",
       "key": "EP210",
       "label": "EP210",
@@ -1991,6 +2002,17 @@
       "type": "model",
       "route": "models/chokepoint-order-model",
       "summary": "一条咽喉通道值多少钱，地理位置只是起点，还要看谁定通行规则、谁给风险定价、谁划法律边界。",
+      "status": null,
+      "degree": 11
+    },
+    {
+      "id": "theme:time-horizon-and-foresight",
+      "key": "time-horizon-and-foresight",
+      "label": "时间尺度与资产前瞻",
+      "fullLabel": "时间尺度与资产前瞻",
+      "type": "theme",
+      "route": "themes/time-horizon-and-foresight",
+      "summary": "人和企业怎样按周期提前摆放自己，在事情发生之前就做好准备。",
       "status": null,
       "degree": 11
     },
@@ -2171,17 +2193,6 @@
       "degree": 10
     },
     {
-      "id": "theme:time-horizon-and-foresight",
-      "key": "time-horizon-and-foresight",
-      "label": "时间尺度与资产前瞻",
-      "fullLabel": "时间尺度与资产前瞻",
-      "type": "theme",
-      "route": "themes/time-horizon-and-foresight",
-      "summary": "人和企业怎样按周期提前摆放自己，在事情发生之前就做好准备。",
-      "status": null,
-      "degree": 10
-    },
-    {
       "id": "model:time-arbitrage-model",
       "key": "time-arbitrage-model",
       "label": "时间套利模型",
@@ -2222,6 +2233,17 @@
       "type": "concept",
       "route": "concepts/liability-firewall",
       "summary": "主导一门生意的一方不持股、不担保、不当协议主体，债务、对赌和经营风险都落在合作方名下，自己片叶不沾身。",
+      "status": null,
+      "degree": 10
+    },
+    {
+      "id": "concept:long-termism",
+      "key": "long-termism",
+      "label": "长期主义",
+      "fullLabel": "长期主义",
+      "type": "concept",
+      "route": "concepts/long-termism",
+      "summary": "以几十年甚至百年为尺度做决策，前期为长远格局多花成本、多做规划，而不是被短期利益和政绩驱动。",
       "status": null,
       "degree": 10
     },
@@ -2530,17 +2552,6 @@
       "type": "concept",
       "route": "concepts/information-edge",
       "summary": "投资真正的优势来自别人没有的确定信息，公开可见的故事和情绪给不了这种优势。",
-      "status": null,
-      "degree": 9
-    },
-    {
-      "id": "concept:long-termism",
-      "key": "long-termism",
-      "label": "长期主义",
-      "fullLabel": "长期主义",
-      "type": "concept",
-      "route": "concepts/long-termism",
-      "summary": "以几十年甚至百年为尺度做决策，前期为长远格局多花成本、多做规划，而不是被短期利益和政绩驱动。",
       "status": null,
       "degree": 9
     },
@@ -3003,6 +3014,17 @@
       "type": "concept",
       "route": "concepts/pragmatic-legitimacy",
       "summary": "一个政权让人认，靠的是普通人的日子看得见地变好，收入、住房、护照和安全都算在里面。",
+      "status": null,
+      "degree": 8
+    },
+    {
+      "id": "theme:cash-optionality-and-liquidity-anxiety",
+      "key": "cash-optionality-and-liquidity-anxiety",
+      "label": "现金为王与流动性焦虑",
+      "fullLabel": "现金为王与流动性焦虑",
+      "type": "theme",
+      "route": "themes/cash-optionality-and-liquidity-anxiety",
+      "summary": "波动大、信任低的时候，手里随时能用的现金比账面资产更能给人安全。",
       "status": null,
       "degree": 8
     },
@@ -3678,17 +3700,6 @@
       "degree": 7
     },
     {
-      "id": "theme:cash-optionality-and-liquidity-anxiety",
-      "key": "cash-optionality-and-liquidity-anxiety",
-      "label": "现金为王与流动性焦虑",
-      "fullLabel": "现金为王与流动性焦虑",
-      "type": "theme",
-      "route": "themes/cash-optionality-and-liquidity-anxiety",
-      "summary": "波动大、信任低的时候，手里随时能用的现金比账面资产更能给人安全。",
-      "status": null,
-      "degree": 7
-    },
-    {
       "id": "concept:new-media-politician",
       "key": "new-media-politician",
       "label": "新媒体政治人物",
@@ -3916,6 +3927,17 @@
       "type": "episode",
       "route": "episodes/EP046",
       "summary": "浙金中心全称浙江金融资产交易中心，这次暴雷涉及金额超过两百亿。买它理财的基本是体制内的大爷大妈和想补贴家用的年轻公务员，图的是国资背景和本省企业，5% 到 7% 的利率也被当成安全。以前是体制内收割体制外，这回轮到体制内自己人互相伤害。平台在 2024 年 10 月就丢了金融资产交易资格，消息藏在 APP 的小角落。第一大股东早换成了民营公司，产品的钱是祥源控股在用，核心的人早知道资产在往外剥离。体制外的韭菜不够吃，长翅膀的老虎就开始大吃小。时代变得越快，现金越是权力。",
+      "status": "curated",
+      "degree": 7
+    },
+    {
+      "id": "episode:EP052",
+      "key": "EP052",
+      "label": "EP052",
+      "fullLabel": "EP052 · 中国中产阶级“斩杀线”与K型消费真相。",
+      "type": "episode",
+      "route": "episodes/EP052",
+      "summary": "斩杀线本是网游术语，几十人围打 BOSS，血量到线就一起放大招清空。搬来形容中产跌落，中国的情况更狠。没有完善的个人破产制度，连带责任压过破产保护，3000 万资产处理不好，清算时可能反欠 3000 万，这叫宰杀线。不甘归零的人越想翻盘亏得越多，坑大到小钱填不上，就有人铤而走险。斩杀分三轮，资产、自信、夫妻父子的链接依次断掉。K 型消费是中段整个消失，像胖子病了先没了肚子。哪怕从 3000 万跌到 30 万，止了损还能做个相对富足的底层，别用脸着地。",
       "status": "curated",
       "degree": 7
     },
@@ -4327,6 +4349,17 @@
       "degree": 6
     },
     {
+      "id": "model:middle-class-replacement-cycle",
+      "key": "middle-class-replacement-cycle",
+      "label": "新旧中产置换",
+      "fullLabel": "新旧中产置换",
+      "type": "model",
+      "route": "models/middle-class-replacement-cycle",
+      "summary": "新旧中产置换解释一个社会怎样用更可控的体制型中产，替换掉靠市场打拼、财富外流不可控的老中产，从而把财富和消费重新锚定在国内。",
+      "status": null,
+      "degree": 6
+    },
+    {
       "id": "theme:performative-governance-and-ritual-display",
       "key": "performative-governance-and-ritual-display",
       "label": "形式主义治理与仪式表演",
@@ -4444,17 +4477,6 @@
       "type": "episode",
       "route": "episodes/EP050",
       "summary": "说起车圈的岳不群，很多人想到雷军和小米汽车，可在个人看来小米来得太晚，撑死算个丐帮。真正的岳不群是华为，名头正，藏得深，野心大，核心是一个假字。它把拿来主义叫作创新，底子是外包码农撑起来的组装公司，产品像拼盘，总差那么一点。出了事就遮车衣、抠车标，什么都能删。前台有余承东（推测）卖力营销，背后据说有水军抹黑对手。嘴上说要做世界最好的企业，王健林们信了，跑出去买世界，它走出去是为了把技术买回来。它想当的是和国家捆在一起的财阀，赢了配享太庙，输了老百姓受罪。",
-      "status": "curated",
-      "degree": 6
-    },
-    {
-      "id": "episode:EP052",
-      "key": "EP052",
-      "label": "EP052",
-      "fullLabel": "EP052 · 中国中产阶级“斩杀线”与K型消费真相。",
-      "type": "episode",
-      "route": "episodes/EP052",
-      "summary": "斩杀线本是网游术语，几十人围打 BOSS，血量到线就一起放大招清空。搬来形容中产跌落，中国的情况更狠。没有完善的个人破产制度，连带责任压过破产保护，3000 万资产处理不好，清算时可能反欠 3000 万，这叫宰杀线。不甘归零的人越想翻盘亏得越多，坑大到小钱填不上，就有人铤而走险。斩杀分三轮，资产、自信、夫妻父子的链接依次断掉。K 型消费是中段整个消失，像胖子病了先没了肚子。哪怕从 3000 万跌到 30 万，止了损还能做个相对富足的底层，别用脸着地。",
       "status": "curated",
       "degree": 6
     },
@@ -4829,17 +4851,6 @@
       "type": "concept",
       "route": "concepts/future-path-crowding",
       "summary": "人人都挤向同一条被认为最稳的路，这条路就因为挤而不稳了。",
-      "status": null,
-      "degree": 5
-    },
-    {
-      "id": "model:middle-class-replacement-cycle",
-      "key": "middle-class-replacement-cycle",
-      "label": "新旧中产置换",
-      "fullLabel": "新旧中产置换",
-      "type": "model",
-      "route": "models/middle-class-replacement-cycle",
-      "summary": "新旧中产置换解释一个社会怎样用更可控的体制型中产，替换掉靠市场打拼、财富外流不可控的老中产，从而把财富和消费重新锚定在国内。",
       "status": null,
       "degree": 5
     },
@@ -6890,6 +6901,17 @@
       "degree": 2
     },
     {
+      "id": "theme:family-control-and-aesthetic-decline",
+      "key": "family-control-and-aesthetic-decline",
+      "label": "家庭控制、婚恋审美与社会退化",
+      "fullLabel": "家庭控制、婚恋审美与社会退化",
+      "type": "theme",
+      "route": "themes/family-control-and-aesthetic-decline",
+      "summary": "催婚标准来回翻面，父母的控制欲不退，审美又停住了，人的选择被压回更窄的地方。",
+      "status": null,
+      "degree": 2
+    },
+    {
       "id": "concept:invoice-economy",
       "key": "invoice-economy",
       "label": "开票经济",
@@ -7898,17 +7920,6 @@
       "type": "concept",
       "route": "concepts/grassroots-reach-decay",
       "summary": "一个政党执政越久，中间层越厚，钱和人到得了基层的越来越少，老百姓也越来越够不着它。降到某个点，长期执政的优势就到期了。",
-      "status": null,
-      "degree": 1
-    },
-    {
-      "id": "theme:family-control-and-aesthetic-decline",
-      "key": "family-control-and-aesthetic-decline",
-      "label": "家庭控制、婚恋审美与社会退化",
-      "fullLabel": "家庭控制、婚恋审美与社会退化",
-      "type": "theme",
-      "route": "themes/family-control-and-aesthetic-decline",
-      "summary": "催婚标准来回翻面，父母的控制欲不退，审美又停住了，人的选择被压回更窄的地方。",
       "status": null,
       "degree": 1
     },
@@ -24588,6 +24599,81 @@
     {
       "source": "live:LIVE061",
       "target": "theme:founder-power-and-feedback",
+      "kind": "live-theme"
+    },
+    {
+      "source": "live:LIVE062",
+      "target": "episode:EP158",
+      "kind": "live-episode"
+    },
+    {
+      "source": "live:LIVE062",
+      "target": "episode:EP207",
+      "kind": "live-episode"
+    },
+    {
+      "source": "live:LIVE062",
+      "target": "episode:EP052",
+      "kind": "live-episode"
+    },
+    {
+      "source": "live:LIVE062",
+      "target": "episode:EP200",
+      "kind": "live-episode"
+    },
+    {
+      "source": "live:LIVE062",
+      "target": "concept:middle-class-hard-landing",
+      "kind": "live-concept"
+    },
+    {
+      "source": "live:LIVE062",
+      "target": "concept:cash-optionality",
+      "kind": "live-concept"
+    },
+    {
+      "source": "live:LIVE062",
+      "target": "concept:long-termism",
+      "kind": "live-concept"
+    },
+    {
+      "source": "live:LIVE062",
+      "target": "model:middle-class-replacement-cycle",
+      "kind": "live-model"
+    },
+    {
+      "source": "live:LIVE062",
+      "target": "model:leverage-backfire",
+      "kind": "live-model"
+    },
+    {
+      "source": "live:LIVE062",
+      "target": "theme:middle-class-descent-and-stratification",
+      "kind": "live-theme"
+    },
+    {
+      "source": "live:LIVE062",
+      "target": "theme:real-estate-deleveraging",
+      "kind": "live-theme"
+    },
+    {
+      "source": "live:LIVE062",
+      "target": "theme:cash-optionality-and-liquidity-anxiety",
+      "kind": "live-theme"
+    },
+    {
+      "source": "live:LIVE062",
+      "target": "theme:time-horizon-and-foresight",
+      "kind": "live-theme"
+    },
+    {
+      "source": "live:LIVE062",
+      "target": "theme:narrative-speculation-and-retail-traps",
+      "kind": "live-theme"
+    },
+    {
+      "source": "live:LIVE062",
+      "target": "theme:family-control-and-aesthetic-decline",
       "kind": "live-theme"
     },
     {
