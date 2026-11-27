@@ -2,14 +2,14 @@
   "meta": {
     "title": "颖响力知识图谱",
     "subtitle": "节目、概念、模型、人物、主题之间的可视化连接网络",
-    "nodeCount": 810,
-    "linkCount": 3154,
+    "nodeCount": 812,
+    "linkCount": 3161,
     "typeCounts": {
       "model": 85,
-      "concept": 264,
+      "concept": 265,
       "live": 62,
       "theme": 92,
-      "episode": 242,
+      "episode": 243,
       "person": 65
     }
   },
@@ -23,7 +23,7 @@
       "route": "models/risk-transfer-chain",
       "summary": "风险很少当场爆掉，多半先在银行、企业、票据、供应链和普通人之间转手、延后，一层层往下沉。",
       "status": null,
-      "degree": 64
+      "degree": 65
     },
     {
       "id": "concept:hidden-debt",
@@ -125,6 +125,17 @@
       "degree": 31
     },
     {
+      "id": "theme:narrative-speculation-and-retail-traps",
+      "key": "narrative-speculation-and-retail-traps",
+      "label": "投资叙事与散户陷阱",
+      "fullLabel": "投资叙事与散户陷阱",
+      "type": "theme",
+      "route": "themes/narrative-speculation-and-retail-traps",
+      "summary": "价格先靠故事推高，先进场的人在高点退出，普通人带着积蓄最后接手。",
+      "status": null,
+      "degree": 30
+    },
+    {
       "id": "theme:singapore-and-small-state-survival",
       "key": "singapore-and-small-state-survival",
       "label": "新加坡与小国生存术",
@@ -145,17 +156,6 @@
       "summary": "照这场的推演，一百个亿的项目掏二三十亿就能开工，剩下的钱从你买的那份理财里出。",
       "status": "curated",
       "degree": 30
-    },
-    {
-      "id": "theme:narrative-speculation-and-retail-traps",
-      "key": "narrative-speculation-and-retail-traps",
-      "label": "投资叙事与散户陷阱",
-      "fullLabel": "投资叙事与散户陷阱",
-      "type": "theme",
-      "route": "themes/narrative-speculation-and-retail-traps",
-      "summary": "价格先靠故事推高，先进场的人在高点退出，普通人带着积蓄最后接手。",
-      "status": null,
-      "degree": 29
     },
     {
       "id": "live:LIVE003",
@@ -257,6 +257,17 @@
       "degree": 26
     },
     {
+      "id": "model:leverage-backfire",
+      "key": "leverage-backfire",
+      "label": "杠杆反噬",
+      "fullLabel": "杠杆反噬",
+      "type": "model",
+      "route": "models/leverage-backfire",
+      "summary": "杠杆反噬解释上行期放大利润的结构，如何在下行期放大亏损、现金流压力和清偿困难。",
+      "status": null,
+      "degree": 26
+    },
+    {
       "id": "episode:EP154",
       "key": "EP154",
       "label": "EP154",
@@ -321,17 +332,6 @@
       "summary": "一种猜测是，投资机构能用的手段只剩一个，把内部会议稿放出来敲打一下。",
       "status": "curated",
       "degree": 26
-    },
-    {
-      "id": "model:leverage-backfire",
-      "key": "leverage-backfire",
-      "label": "杠杆反噬",
-      "fullLabel": "杠杆反噬",
-      "type": "model",
-      "route": "models/leverage-backfire",
-      "summary": "杠杆反噬解释上行期放大利润的结构，如何在下行期放大亏损、现金流压力和清偿困难。",
-      "status": null,
-      "degree": 25
     },
     {
       "id": "concept:gray-oil-network",
@@ -407,6 +407,17 @@
       "type": "theme",
       "route": "themes/dollar-system-and-gray-trade",
       "summary": "讨论石油美元的真实脆弱点，究竟藏在公开统计之外的哪些灰色交易链条里。",
+      "status": null,
+      "degree": 24
+    },
+    {
+      "id": "person:donald-trump",
+      "key": "donald-trump",
+      "label": "特朗普",
+      "fullLabel": "特朗普",
+      "type": "person",
+      "route": "people/donald-trump",
+      "summary": "特朗普是美国共和党政治人物，第 45 任和第 47 任美国总统。节目讲美国战略时最常拿他说事：新门罗主义收缩防线，让盟友出钱守墙，再沿巴拿马、委内瑞拉、伊朗一路打灰色贸易。",
       "status": null,
       "degree": 24
     },
@@ -508,17 +519,6 @@
       "summary": "南京按分摊的地来算，一套高层公寓落到地面上只有零点六平米。",
       "status": "published",
       "degree": 24
-    },
-    {
-      "id": "person:donald-trump",
-      "key": "donald-trump",
-      "label": "特朗普",
-      "fullLabel": "特朗普",
-      "type": "person",
-      "route": "people/donald-trump",
-      "summary": "特朗普是美国共和党政治人物，第 45 任和第 47 任美国总统。节目讲美国战略时最常拿他说事：新门罗主义收缩防线，让盟友出钱守墙，再沿巴拿马、委内瑞拉、伊朗一路打灰色贸易。",
-      "status": null,
-      "degree": 23
     },
     {
       "id": "concept:chokepoint-leverage",
@@ -1390,6 +1390,17 @@
       "degree": 14
     },
     {
+      "id": "theme:ai-bubble-and-compute-demand",
+      "key": "ai-bubble-and-compute-demand",
+      "label": "AI泡沫与算力需求制造",
+      "fullLabel": "AI泡沫与算力需求制造",
+      "type": "theme",
+      "route": "themes/ai-bubble-and-compute-demand",
+      "summary": "资本先把算力和工具铺开，再用补贴和热度把用量做出来，拿用量讲估值。",
+      "status": null,
+      "degree": 14
+    },
+    {
       "id": "episode:EP015",
       "key": "EP015",
       "label": "EP015",
@@ -1540,17 +1551,6 @@
       "type": "theme",
       "route": "themes/film-industry-and-traffic-logic",
       "summary": "影视生产越来越服从人设、粉丝和宣发热度，角色和作品本身退到后面。",
-      "status": null,
-      "degree": 13
-    },
-    {
-      "id": "theme:ai-bubble-and-compute-demand",
-      "key": "ai-bubble-and-compute-demand",
-      "label": "AI泡沫与算力需求制造",
-      "fullLabel": "AI泡沫与算力需求制造",
-      "type": "theme",
-      "route": "themes/ai-bubble-and-compute-demand",
-      "summary": "资本先把算力和工具铺开，再用补贴和热度把用量做出来，拿用量讲估值。",
       "status": null,
       "degree": 13
     },
@@ -1707,6 +1707,17 @@
       "summary": "淘宝砍掉了批发商，支付宝想砍的是存款和贷款之间那两三个点。",
       "status": "published",
       "degree": 13
+    },
+    {
+      "id": "theme:founder-power-and-feedback",
+      "key": "founder-power-and-feedback",
+      "label": "创始人权力与组织反馈",
+      "fullLabel": "创始人权力与组织反馈",
+      "type": "theme",
+      "route": "themes/founder-power-and-feedback",
+      "summary": "创始人权力太强时，企业内部还剩多少真话，出了错谁能让老板听见。",
+      "status": null,
+      "degree": 12
     },
     {
       "id": "concept:delayed-price-discovery",
@@ -1960,17 +1971,6 @@
       "summary": "两年、六年、四年三种任期叠在一起，总统任期正中间就多出一场大选。",
       "status": "published",
       "degree": 12
-    },
-    {
-      "id": "theme:founder-power-and-feedback",
-      "key": "founder-power-and-feedback",
-      "label": "创始人权力与组织反馈",
-      "fullLabel": "创始人权力与组织反馈",
-      "type": "theme",
-      "route": "themes/founder-power-and-feedback",
-      "summary": "创始人权力太强时，企业内部还剩多少真话，出了错谁能让老板听见。",
-      "status": null,
-      "degree": 11
     },
     {
       "id": "concept:price-war-trap",
@@ -4103,6 +4103,17 @@
       "type": "episode",
       "route": "episodes/EP239",
       "summary": "11 月 12 日，印尼副总统吉布兰辞职，起因是法院认定他参选时交的高中学历证明不合要求。他是前总统佐科的长子。2024 年佐科把两次败给自己的普拉博沃推上总统位，再把儿子放进副总统的位子，两派靠这笔交易结成联盟。普拉博沃上台后一点点换掉佐科的班底，压缩新首都的预算，11 月初又以窃听罪名抓了佐科的心腹、前警察总长利斯蒂约，学历风波里始终不出声。辞职是两派摊牌的结果。军队借修法重回民事机构，印尼在一步步集权，新加坡、马来西亚和东盟都得重新算风险。",
+      "status": "curated",
+      "degree": 7
+    },
+    {
+      "id": "episode:EP243",
+      "key": "EP243",
+      "label": "EP243",
+      "fullLabel": "EP243 · 12天黄仁勋闪电复职，别以为尘埃落定！英伟达的串雷刚埋下引信！",
+      "type": "episode",
+      "route": "episodes/EP243",
+      "summary": "黄仁勋用 14 天卸任英伟达首席执行官，又只用 12 天就复职，股价跟着涨回来，不少股民以为事情了结了。董事会公告写得含蓄，意思是有高级官员出面担保，特朗普随后也认了是他办的。总统出手定一家上市公司的 CEO，挖掉的是美股治理权归董事会和股东的那层底。刚拿下中期选举的民主党正缺一个能把全党拧成一股绳的议题，这件事送到了它手里，共和党和政府内部也各有算盘。复职没有拆掉雷，只是把雷埋深了，各方急着让他回去，说明英伟达里面可能还藏着一颗更大的雷。",
       "status": "curated",
       "degree": 7
     },
@@ -8580,6 +8591,17 @@
       "type": "concept",
       "route": "concepts/confidence-run",
       "summary": "一家企业被传要倒，顾客、供应商和员工各自抢着保自己，合起来把还撑得住的企业推倒。",
+      "status": null,
+      "degree": 1
+    },
+    {
+      "id": "concept:executive-overreach",
+      "key": "executive-overreach",
+      "label": "行政越界",
+      "fullLabel": "行政越界",
+      "type": "concept",
+      "route": "concepts/executive-overreach",
+      "summary": "行政权力伸进本该由市场和公司自己决定的事，比如替一家上市公司定掌舵人，规矩被破一次，所有人的预期都要改。",
       "status": null,
       "degree": 1
     },
@@ -17709,6 +17731,41 @@
     {
       "source": "episode:EP242",
       "target": "theme:small-state-balancing",
+      "kind": "episode-theme"
+    },
+    {
+      "source": "episode:EP243",
+      "target": "concept:executive-overreach",
+      "kind": "episode-concept"
+    },
+    {
+      "source": "episode:EP243",
+      "target": "model:risk-transfer-chain",
+      "kind": "episode-model"
+    },
+    {
+      "source": "episode:EP243",
+      "target": "model:leverage-backfire",
+      "kind": "episode-model"
+    },
+    {
+      "source": "episode:EP243",
+      "target": "person:donald-trump",
+      "kind": "episode-person"
+    },
+    {
+      "source": "episode:EP243",
+      "target": "theme:ai-bubble-and-compute-demand",
+      "kind": "episode-theme"
+    },
+    {
+      "source": "episode:EP243",
+      "target": "theme:founder-power-and-feedback",
+      "kind": "episode-theme"
+    },
+    {
+      "source": "episode:EP243",
+      "target": "theme:narrative-speculation-and-retail-traps",
       "kind": "episode-theme"
     },
     {
